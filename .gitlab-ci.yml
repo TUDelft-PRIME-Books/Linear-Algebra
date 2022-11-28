@@ -1,0 +1,26 @@
+stages:
+  - build
+  - deploy
+
+jupyter-build:
+  stage: build
+  image: python:slim
+  script:
+    - pip install -U jupyter-book
+    - pip install -U sphinx-proof
+    - jupyter-book clean .
+    - jupyter-book build .
+  artifacts:
+    paths:
+      - _build/
+
+pages:
+  stage: deploy
+  image: busybox:latest
+  script:
+    - mv _build/html public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
