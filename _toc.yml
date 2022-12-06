@@ -1,6 +1,6 @@
 # In _toc.yml
 format: jb-book
-root: README
+root: index
 options:
   numbered: true
 chapters:
