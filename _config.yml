@@ -1,5 +1,6 @@
 # in _config.yml
 title: "Linear Algebra"
+author: "Daniel Balagué, André Hensbergen, Nikolaas Verhulst, and may other contributors"
 only_build_toc_files: true
 execute:
   execute_notebooks: "off"
