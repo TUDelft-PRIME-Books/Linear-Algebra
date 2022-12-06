@@ -1,0 +1,12 @@
+# In _toc.yml
+format: jb-book
+root: README
+options:
+  numbered: true
+chapters:
+  - file: 'Chapter1/intro.md'
+    sections: 
+      - file: 'Chapter1/Vectors.md'
+      - file: 'Chapter1/Inner_Product.md'
+      - file: 'Chapter1/Cross_Product.md'
+      - file: 'Chapter1/Lines_and_Planes.md'

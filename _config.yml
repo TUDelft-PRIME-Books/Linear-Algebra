@@ -1,0 +1,31 @@
+# in _config.yml
+title: "Linear Algebra"
+only_build_toc_files: true
+execute:
+  execute_notebooks: "off"
+parse:
+    myst_enable_extensions:
+      ## don't forget to list any other extensions you want enabled,
+      ## including those that are enabled by default!
+      - colon_fence 
+      - dollarmath
+      - linkify
+      - substitution
+      - tasklist
+      - amsmath
+    myst_dmath_double_inline: true
+sphinx:
+  config:
+    mathjax3_config: 
+      tex:
+        macros:
+          "N": "\\mathbb{N}"
+          "R": "\\mathbb{R}"
+          "ip" : "\\mathbf{\\cdot}"
+          "vect": ["\\mathbf{#1}",1]
+          "abs": ["\\left\\vert#1\\right\\vert",1]
+          "norm": ["\\left\\Vert#1\\right\\Vert",1]
+          "cp": ["\\times "]
+  extra_extensions:
+    - sphinx_proof
+    - sphinx_togglebutton
