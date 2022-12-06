@@ -21,7 +21,7 @@ sphinx:
         macros:
           "N": "\\mathbb{N}"
           "R": "\\mathbb{R}"
-          "ip" : "\\mathbf{\\cdot}"
+          "ip": "\\mathbf{\\cdot}"
           "vect": ["\\mathbf{#1}",1]
           "abs": ["\\left\\vert#1\\right\\vert",1]
           "norm": ["\\left\\Vert#1\\right\\Vert",1]
