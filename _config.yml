@@ -1,6 +1,6 @@
 # in _config.yml
 title: "Linear Algebra"
-author: "Daniel Balagué, André Hensbergen, Nikolaas Verhulst, and many other contributors"
+author: "Several authors involved"
 only_build_toc_files: true
 execute:
   execute_notebooks: "off"
@@ -15,18 +15,23 @@ parse:
       - tasklist
       - amsmath
     myst_dmath_double_inline: true
+    myst_heading_anchors : 5
 sphinx:
   config:
     mathjax3_config: 
       tex:
         macros:
           "N": "\\mathbb{N}"
+          "C": "\\mathbb{C}"
           "R": "\\mathbb{R}"
-          "ip": "\\mathbf{\\cdot}"
+          "ip" : "\\mathbf{\\cdot}"
           "vect": ["\\mathbf{#1}",1]
-          "abs": ["\\left\\vert#1\\right\\vert",1]
-          "norm": ["\\left\\Vert#1\\right\\Vert",1]
+          "abs": ["\\left\\vert #1 \\right\\vert",1]
+          "norm": ["\\left\\Vert #1 \\right\\Vert",1]
           "cp": ["\\times "]
+          "nicefrac": ["\\frac "]
+          "Span": ["\\text{Span}\\left\\lbrace #1 \\right\\rbrace",1]
   extra_extensions:
     - sphinx_proof
     - sphinx_togglebutton
+    - sphinx_exercise

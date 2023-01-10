@@ -1,6 +1,6 @@
 # In _toc.yml
 format: jb-book
-root: index
+root: README
 options:
   numbered: true
 chapters:
@@ -10,3 +10,11 @@ chapters:
       - file: 'Chapter1/Inner_Product.md'
       - file: 'Chapter1/Cross_Product.md'
       - file: 'Chapter1/Lines_and_Planes.md'
+  - file: 'Chapter2/intro.md'
+    sections:
+      - file: 'Chapter2/LinearSystems.md'
+      - file: 'Chapter2/SolutionSets.md'
+      - file: 'Chapter2/MatrixVectorProduct.md'
+  - file: 'Chapter5/intro.md'
+    sections:
+      - file: 'Chapter5/SymmetricMatrices.md'
