@@ -3,17 +3,11 @@
 
 ::::{prf:definition} 
 
-
-
 Let $\mathbf{v}_1, \ldots, \mathbf{v}_n$ be vectors in $\mathbb{R}^m$. Any expression of the form 
 
-
 $$
-
 x_1 \mathbf{v_1}+\cdots+x_n \mathbf{v_n},
-
 $$
-
 
 where $x_1, \ldots, x_n$ are real numbers, is called a **linear combination** of the vectors $\mathbf{v}_1, \ldots, \mathbf{v}_n$.
 
@@ -21,8 +15,6 @@ where $x_1, \ldots, x_n$ are real numbers, is called a **linear combination** of
 
 
 ::::{prf:example} 
-
-
 
 The vectors $\mathbf{v}_1$ and $\mathbf{v}_2$ are two vectors in the plane $\mathbb{R}^2$. As we can see in {numref}`Figure  %s <Fig:LinearCombinations:LinearCombinations>`, the vector $\mathbf{u}$ is a linear combination of $\mathbf{v}_1$ and $\mathbf{v}_2$ since it can be written as $\mathbf{u}=2\mathbf{v}_1+\mathbf{v}_2$. The vector $\mathbf{w}$ is a linear combination of these two vectors as well. It can be written as $\mathbf{w}=-3\mathbf{v}_1+2\mathbf{v}_2$.
 
@@ -40,41 +32,27 @@ If we want to determine whether a given vector is a linear combination of other 
 
 ::::{prf:example} 
 
-
-
-
-
-
 $$
-
 \mathbf{v_1}=
 \begin{bmatrix} 1 \\ 2 \\ 1 \end{bmatrix} \quad \mathbf{v_2}=
 \begin{bmatrix} 3 \\ 1 \\ 2 \end{bmatrix} \quad \mathbf{b}=
 \begin{bmatrix} -1 \\ 3 \\ 0 \end{bmatrix}
-
 $$
-
 
 Is the vector $\mathbf{b}$ a linear combination of $\mathbf{v}_1$ and $\mathbf{v}_2$? We can use the definition of a linear combination to solve this problem. If $\mathbf{b}$ is in fact a linear combination of the two other vectors, then it can be written as $x_1 \mathbf{v}_1+x_2 \mathbf{v}_2$. This means that we should verify whether the system of equations $x_1 \mathbf{v}_1+x_2 \mathbf{v}_2=\mathbf{b}$ has a solution.
 
 The equation 
 
-
 $$
-
 x_1
 \begin{bmatrix} 1 \\ 2 \\ 1 \end{bmatrix}+x_2
 \begin{bmatrix} 3 \\ 1 \\ 2 \end{bmatrix}=
 \begin{bmatrix} -1 \\ 3 \\ 0 \end{bmatrix}
-
 $$
-
 
 is equivalent to the system 
 
-
 $$
-
 \left\{\begin{array}{l} x_1+3x_2=-1 \\ 2x_1+x_2=3 \\ x_1+2x_2=0\end{array} \right.
 $$
 
@@ -82,29 +60,22 @@ The augmented matrix of this system of equations is equal to
 
 
 $$
-
 \left[\begin{array}{cc|c} 1 & 3 & -1 \\ 2 & 1 & 3 \\ 1 & 2 & 0 \end{array}\right]
 $$
 
 and its reduced echelon form is equal to 
 
-
 $$
-
 \left[\begin{array}{cc|c} 1 & 0 & 2 \\ 0 & 1 & -1 \\ 0 & 0 & 0 \end{array}\right].
-
 $$
 
 This means that $\mathbf{b}$ is indeed a linear combination of $\mathbf{v}_1$ and $\mathbf{v}_2$. 
 
-
 $$
-
 2
 \begin{bmatrix} 1 \\ 2 \\ 1 \end{bmatrix}-
 \begin{bmatrix} 3 \\ 1 \\ 2 \end{bmatrix}=
 \begin{bmatrix} -1 \\ 3 \\ 0 \end{bmatrix}
-
 $$
 
 We have found that $\mathbf{b}$ can be written as $2\mathbf{v}_1-\mathbf{v_2}$.
@@ -114,18 +85,11 @@ We have found that $\mathbf{b}$ can be written as $2\mathbf{v}_1-\mathbf{v_2}$.
 
 ::::{prf:example} 
 
-
-
-
-
-
 $$
-
 \mathbf{v_1}=
 \begin{bmatrix} 1 \\ 0 \\ 2 \end{bmatrix} \quad \mathbf{v_2}=
 \begin{bmatrix} 3 \\ 0 \\ 1 \end{bmatrix} \quad \mathbf{b}=
 \begin{bmatrix} 2 \\ 1 \\ 1 \end{bmatrix}
-
 $$
 
 In this case it is a lot easier to decide whether $\mathbf{b}$ is a linear combination of $\mathbf{v}_1$ and $\mathbf{v}_2$. Since the second component of both $\mathbf{v}_1$ and $\mathbf{v}_2$ is equal to zero, we know that the second component of each linear combination of those vectors will be zero. This means that $\mathbf{b}$ can never be a linear combination of $\mathbf{v}_1$ and $\mathbf{v}_2$.
@@ -140,7 +104,6 @@ In linear algebra it is often important to know whether each vector in $\mathbb{
 ::::{prf:definition} 
 :label: Dfn:LinearCombinations:Span
 
-
 Let $S$ be a set of vectors. The set of all linear combinations $a_1\mathbf{v}_1+a_2\mathbf{v}_2+ \cdots +a_k \mathbf{v}_k$, where $\mathbf{v}_1, \ldots, \mathbf{v}_k$ are vectors in $S$, will be called the **span** of those vectors and will be denoted as $\Span{S}$.
 
 When $S$ is equal to a finite set $\{\mathbf{v}_1, \ldots, \mathbf{v}_k\}$, then we will simply write $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$.
@@ -152,8 +115,6 @@ The span of an empty collection of vectors will be defined as the set that only 
 
 ::::{prf:remark} 
 
-
-
 The collection $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$ always contains all of the vectors $\mathbf{v}_1, \ldots, \mathbf{v}_k$. This is true since each vector $\mathbf{v}_k$ can be written as the linear combination $0\mathbf{v}_1+\cdots+\mathbf{v}_k+\cdots +0\mathbf{v}_k$.
 
 Moreover, the span of any set of vectors always contains the zero vector. Whatever set of vectors we start with, we can always write $\mathbf{0}=0\mathbf{v}_1+0\mathbf{v}_2+\cdots +0\mathbf{v}_k$.
@@ -164,8 +125,6 @@ The following examples will give us a bit of an idea what spans look like.
 
 
 ::::{prf:example} 
-
-
 
 What does the span of a single non-zero vector look like? A linear combination of a vector $\mathbf{v}$ is of the form $x\mathbf{v}$, where $x$ is some real number. Linear combinations of a single vector $\mathbf{v}$ are thus just multiples of that vector. This means that $\Span{\mathbf{v}}$ is simply the collection of all vectors on the line through the origin and with directional vector $\mathbf{v}$ as we can see in {numref}`Figure  %s <Fig:LinearCombinations:SpanOneVectors>`.
 
@@ -181,15 +140,11 @@ The span of a single non-zero vector.
 
 ::::{prf:example} 
 
-
-
 Let $\mathbf{u}$ and $\mathbf{v}$ be two non-zero vectors in $\mathbb{R}^3$, as depicted in {numref}`Figure  %s <Fig:LinearCombinations:SpanTwoVectors>`. What does the span of these vectors look like? By definition, $\Span{\mathbf{u}, \mathbf{v}}$ contains all linear combinations of $\mathbf{u}$ and $\mathbf{v}$. Each of these linear combinations is of the form 
 
 
 $$
-
 x_1\mathbf{u}+x_2\mathbf{v} \quad \textrm{$x_1$, $x_2$ in $\mathbb{R}$}.
-
 $$
 
 This looks like the parametric vector equation of a plane. Since the span must contain the zero vector we find that we obtain a plane through the origin like in {numref}`Figure  %s <Fig:LinearCombinations:SpanTwoVectors>`.
@@ -225,8 +180,6 @@ If two non-zero vectors $\mathbf{u}$ and $\mathbf{v}$ are parallel, then $\mathb
 
 ::::{prf:example} 
 
-
-
 If we start with three non-zero vectors in $\mathbb{R}^3$, then the resulting span may take on different forms. The span of the three vectors in {numref}`Figure  %s <Fig:LinearCombinations:SpanThreeVectors1>`, for example, is equal to the entire space $\mathbb{R}^3$. In {prf:ref}`Section:Basis` we will see why this is the case.
 
 :::{figure} Images/Fig-LinearCombinations-SpanThreeR3.svg
@@ -254,8 +207,6 @@ We will now look at a very specific set of vectors in $\mathbb{R}^n$ of which th
 
 ::::{prf:definition} 
 
-
-
 Suppose we are working in $\mathbb{R}^n$. Let $\mathbf{e}_k$ be the vector of which all components are equal to 0, with the exception that the entry on place $k$ is equal to 1. The vectors $(\mathbf{e}_1, \ldots, \mathbf{e}_n)$ will be called the **standard basis** of $\mathbb{R}^n$.
 
 ::::
@@ -263,40 +214,28 @@ Suppose we are working in $\mathbb{R}^n$. Let $\mathbf{e}_k$ be the vector of wh
 
 ::::{prf:example} 
 
-
-
 The following vectors form the standard basis for $\mathbb{R}^2$. 
 
-
 $$
-
 \mathbf{e}_1=
 \begin{bmatrix} 1 \\ 0 \end{bmatrix} \quad \mathbf{e}_2=
 \begin{bmatrix} 0 \\ 1 \end{bmatrix} \nonumber
-
 $$
-
-
 
 Each vector $\mathbf{v}$ can be written as a linear combination of the vectors $\mathbf{e}_1$ and $\mathbf{e}_2$ in a unique way. Later on we will call each collection of vectors with this property a **basis** for $\mathbb{R}^2$. If 
 
-
 $$
-
 \mathbf{v}=
 \begin{bmatrix} a \\ b \end{bmatrix}, \nonumber
-
 $$
 
 then clearly we have that 
 
 
 $$
-
 \mathbf{v}=a
 \begin{bmatrix} 1 \\ 0 \end{bmatrix}+b
 \begin{bmatrix} 0 \\ 1 \end{bmatrix}. \nonumber
-
 $$
 
 It is easy to see that this is the only linear combination of $\mathbf{e}_1$ and $\mathbf{e}_2$ that is equal to $\mathbf{v}$.
@@ -306,18 +245,13 @@ It is easy to see that this is the only linear combination of $\mathbf{e}_1$ and
 
 ::::{prf:example} 
 
-
-
 The three vectors below form the standard basis for $\mathbb{R}^3$. 
 
-
 $$
-
 \mathbf{e}_1=
 \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix} \quad \mathbf{e}_2=
 \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix} \quad \mathbf{e}_3=
 \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix} \nonumber
-
 $$
 
 Here too, it is true that each vector in $\mathbb{R}^3$ can be written as a unique linear combination of these three vectors.
@@ -328,23 +262,17 @@ Here too, it is true that each vector in $\mathbb{R}^3$ can be written as a uniq
 ::::{prf:proposition} 
 :label: Prop:LinearCombinations:SpanStandardBasis
 
-
 If $(\mathbf{e}_1, \ldots, \mathbf{e}_n)$ is the standard basis for $\mathbb{R}^n$, then $\Span{\mathbf{e}_1, \ldots, \mathbf{e}_n}$ is equal to $\mathbb{R}^n$.
 
 ::::
 
 ::::{prf:proof} 
 
-
-
 Take an arbitrary vector $\mathbf{v}$ in $\mathbb{R}^n$ with 
 
-
 $$
-
 \mathbf{v}=
 \begin{bmatrix} a_1 \\ \vdots \\ a_n \end{bmatrix}.\nonumber
-
 $$
 
 The vector $\mathbf{v}$ can be written as 
@@ -369,15 +297,11 @@ In {prf:ref}`Prop:LinearCombinations:SpanStandardBasis` we saw that the span of 
 ::::{prf:proposition} 
 :label: Prop:LinearCombinations:SpanSolution
 
-
 Let $\mathbf{v}_1, \ldots, \mathbf{v}_k$ be vectors in $\mathbb{R}^n$. Define the matrix $A$ such that 
 
-
 $$
-
 A=
 \begin{bmatrix} \mathbf{v}_1 & \mathbf{v}_2 & \ldots & \mathbf{v}_k \end{bmatrix}.
-
 $$
 
 The collection $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$ is equal to $\mathbb{R}^n$ if and only if the equation $A \mathbf{x}=\mathbf{b}$ has a solution for each $\mathbf{b}$ in $\mathbb{R}^n$.
@@ -386,25 +310,19 @@ The collection $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$ is equal to $\mathbb{
 
 ::::{prf:proof} 
 
-
-
 If $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$ is equal to $\mathbb{R}^n$, then each vector $\mathbf{b}$ is a vector in the span of the vectors $\mathbf{v}_1, \ldots, \mathbf{v}_k$. This means that we can write $\mathbf{b}$ as a linear combination 
 
 
 $$
-
 \mathbf{b}=x_1\mathbf{v}_1+ \ldots + x_k\mathbf{v}_k.
-
 $$
 
 Define the vector $\mathbf{x}$ such that 
 
 
 $$
-
 \mathbf{x}=
 \begin{bmatrix} x_1 \\ \vdots \\ x_k \end{bmatrix}.
-
 $$
 
 By definition of the matrix-vector product we now have
@@ -427,8 +345,6 @@ The equation $A \mathbf{x}=\mathbf{b}$ has a solution for each $\mathbf{b}$ in $
 
 ::::{prf:proof} 
 
-
-
 Suppose that $A$ does not contain a pivot position in each row. By definition of the reduced echelon form we know that the last row of $A$ does not have a pivot position. If $E$ is the reduced echelon form of $A$, then this means that the bottom row of $E$ contains only zeros. Let $\mathbf{e}_n$ be again the vector of which the last entry is equal to 1 and all other entries are equal to zero.
 
 Since $E$ is the reduced form of $A$ we can find a sequence of elementary row operations $R_1, \ldots , R_m$ that transform in $A$ into $E$. Now take the augmented matrix $[E \, | \, \mathbf{e}_n]$ and perform the row operations $R_m^{-1}, \ldots , R_1^{-1}$, where $R_i^{-1}$ is the inverse row operation of $R_i$. We obtain a matrix $[A \, | \, \mathbf{b}]$, where $\mathbf{b}$ is a vector in $R^n$. Because $[E \, | \, \mathbf{e}_n]$ is the reduced echelon form of the augmented matrix $[A \, | \, \mathbf{b}]$ and $[E \, | \, \mathbf{e}_n]$ has a pivot in the last column, we know that $[A \, | \, \mathbf{b}]$ is inconsistent. This means that $A\mathbf{x}=\mathbf{b}$ does not have a solution.
@@ -444,14 +360,9 @@ On the other hand, if we assume that $A\mathbf{x}=\mathbf{b}$ does not have a so
 
 Let $\mathbf{v}_1, \ldots, \mathbf{v}_k$ be vectors in $\mathbb{R}^n$. Define the matrix $A$ such that 
 
-
-
 $$
-
 A=
 \begin{bmatrix} \mathbf{v}_1 & \mathbf{v}_2 & \ldots & \mathbf{v}_k \end{bmatrix}.
-
-
 $$
 
 
@@ -482,8 +393,6 @@ The matrix $A$ has a pivot position in each row.
 
 
 ::::{prf:proof} 
-
-
 
 This follows from {prf:ref}`Prop:LinearCombinations:SpanSolution` and {prf:ref}`Prop:LinearCombinations:PivotInEachRow`.
 
@@ -533,8 +442,6 @@ Since there are only two pivots in the reduced echelon form, we know that $\math
 
 
 ::::{prf:proposition} 
-
-
 
 If $\mathbf{v}_1, \dots ,\mathbf{v}_k$ are vectors in $\mathbb{R}^n$ and $k<n$, then the span of $\mathbf{v}_1, \dots ,\mathbf{v}_k$ is not equal to $\mathbb{R}^n$.
 
