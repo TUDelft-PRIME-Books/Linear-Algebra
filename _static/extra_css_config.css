@@ -1,5 +1,15 @@
+.applet * {
+  width: 50vw;
+  height: 50vw;
+}
+.applet img {
+  display: none;
+}
 @media print {
-    iframe {
-        display: none;
-    }
+  iframe {
+    display: none;
+  }
+  .applet img {
+    display: initial;
+  }
 }
