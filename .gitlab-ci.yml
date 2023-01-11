@@ -6,8 +6,7 @@ jupyter-build:
   stage: build
   image: python:slim
   script:
-    - pip install -U jupyter-book
-    - pip install -U sphinx-proof
+    - pip install -U jupyter-book sphinx-proof sphinx-exercise
     - jupyter-book clean .
     - jupyter-book build .
   artifacts:
