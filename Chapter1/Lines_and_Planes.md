@@ -254,16 +254,26 @@ $$
 
 As we can see in {numref}`Figure %s <Fig:LinesAndPlanes:NormalEquationPlaneOrigin>` all points $Q$ for which the vector that connects the origin to $Q$ is orthogonal to $\mathbf{n}$ form a plane through the origin.
 
+```{applet}
+:url: lines_and_planes/normal_equation_plane_origin
+```
+
 ```{figure} Images/Fig-LinesAndPlanes-NormalEquationPlaneOrigin.svg
 :name: Fig:LinesAndPlanes:NormalEquationPlaneOrigin
+:class: applet-print-figure
 
 A plane through the origin.
 ```
 
 Now let $P$ be the point with coordinates $(0, 2, 1)$ and take an arbitrary point $Q$ in $\mathbb{R}^3$. It is clear from {numref}`Figure %s <Fig:LinesAndPlanes:NormalEquationPlane>` that the vector $\mathbf{PQ}$ is orthogonal to $\mathbf{n}$ if and only if $Q$ is a point on the plane $\mathcal{P}$ orthogonal to $\mathbf{n}$ and through $P$.
 
+```{applet}
+:url: lines_and_planes/normal_equation_plane
+```
+
 ```{figure} Images/Fig-LinesAndPlanes-NormalEquationPlane.svg
 :name: Fig:LinesAndPlanes:NormalEquationPlane
+:class: applet-print-figure
 
 A plane through the point $P$.
 ```
@@ -312,8 +322,13 @@ Each non-zero vector $\mathbf{u}$ that is parallel to a plane $\mathcal{P}$ will
 
 We can always find directional vectors of a plane by taking a vector that connects two distinct points in the plane. If we want to find two directional vectors for the plane $\mathcal{P}$ with Cartesian equation $2x+y+3z=5$, then we can use the point $P=(0, 2, 1)$ that we have been working with and choose two other points that satisfy $2x+y+3z=5$. We can use, for example, the points $Q=(0, 5, 0)$ and $R=(2, 1, 0)$. In {numref}`Figure %s <Fig:LinesAndPlanes:DirectionalVectorsPlane>` you can see that the vectors $\mathbf{PQ}$ and $\mathbf{PR}$ are two vectors that are parallel to the plane, but are not parallel to each other.
 
+```{applet}
+:url: lines_and_planes/directional_vectors_plane
+```
+
 ```{figure} Images/Fig-LinesAndPlanes-DirectionalVectorsPlane.svg
 :name: Fig:LinesAndPlanes:DirectionalVectorsPlane
+:class: applet-print-figure
 
 A parametric vector equation of a plane.
 ```
@@ -374,22 +389,37 @@ We already established that two lines in the plane can have zero, one or infinit
 
 It is of course possible that two planes have no points in common at all. Take a look at {numref}`Figure %s <Fig:LinesAndPlanes:TwoDisjointPlanes>`. There we see two parallel planes that do not coincide. These planes have no points of intersection.
 
+```{applet}
+:url: lines_and_planes/two_disjoint_planes
+```
+
 ```{figure} Images/Fig-LinesAndPlanes-TwoDisjointPlanes.svg
 :name: Fig:LinesAndPlanes:TwoDisjointPlanes
+:class: applet-print-figure
 
 Two planes without a common point in common.
 ```
 
 Two planes in $\mathbb{R}^3$ can never have a single point of intersection. They can, however, have infinitely many common points. This can occur when the two planes have a line of intersection, as we can see in {numref}`Figure %s <Fig:LinesAndPlanes:TwoPlanesLineIntersection>`. On the other hand, it is also possible that two planes coincide, see {numref}`Figure %s <Fig:LinesAndPlanes:TwoPlanesCoincide>`. In this case each point on one of the two planes is an intersection point.
 
+```{applet}
+:url: lines_and_planes/two_plane_line_intersection
+```
+
 ```{figure} Images/Fig-LinesAndPlanes-TwoPlanesLineIntersection.svg
 :name: Fig:LinesAndPlanes:TwoPlanesLineIntersection
+:class: applet-print-figure
 
 Two planes with a line of intersection.
 ```
 
+```{applet}
+:url: lines_and_planes/two_planes_coincide
+```
+
 ```{figure} Images/Fig-LinesAndPlanes-TwoPlanesCoincide.svg
 :name: Fig:LinesAndPlanes:TwoPlanesCoincide
+:class: applet-print-figure
 
 Two planes that coincide.
 ```
@@ -398,24 +428,39 @@ Now what happens when we take three arbitrary planes $\mathcal{P}_1$, $\mathcal{
 
 First of all, it is possible that there are no points that are on $\mathcal{P}_1$, $\mathcal{P}_2$ and $\mathcal{P}_3$ simultaneously. This is the case for the three planes in {numref}`Figure %s <Fig:LinesAndPlanes:DisjointPlanes>`. Notice that $\mathcal{P}_1$ and $\mathcal{P}_2$ do have points in common, but there are no points that are on all three planes.
 
+```{applet}
+:url: lines_and_planes/disjoint_planes
+```
+
 ```{figure} Images/Fig-LinesAndPlanes-DisjointPlanes.svg
 :name: Fig:LinesAndPlanes:DisjointPlanes
+:class: applet-print-figure
 
 Three planes without a point in common.
 ```
 
 In {numref}`Figure %s <Fig:LinesAndPlanes:PlanesPointIntersection>` we see three planes $\mathcal{P}_1$, $\mathcal{P}_2$ and $\mathcal{P}_3$ in $\mathbb{R}^3$ that have exactly one point in common. This is the only possibility where three planes have a finite number of points in common. The number of points in common can never be more than one, but less than infinite.
 
+```{applet}
+:url: lines_and_planes/planes_point_intersection
+```
+
 ```{figure} Images/Fig-LinesAndPlanes-PlanesPointIntersection.svg
 :name: Fig:LinesAndPlanes:PlanesPointIntersection
+:class: applet-print-figure
 
 Three planes with one point in common.
 ```
 
 There are several circumstances where three planes have an infinite number of points in common. It is, for example, possible that the three planes have a common line of intersection, such as in {numref}`Figure %s <Fig:LinesAndPlanes:PlanesLineIntersection>`.
 
+```{applet}
+:url: lines_and_planes/plane_line_intersection
+```
+
 ```{figure} Images/Fig-LinesAndPlanes-PlanesLineIntersection.svg
 :name: Fig:LinesAndPlanes:PlanesLineIntersection
+:class: applet-print-figure
 
 Three planes with line of intersection.
 ```
@@ -433,8 +478,13 @@ Each non-zero vector $\mathbf{u}$ that is parallel to a line $\mathcal{L}$ will 
 
 Let $\mathcal{L}$ be a line in $\mathbb{R}^3$, $\mathbf{v_0}$ a vector that connects the origin to a point on the line and $\mathbf{u}$ a directional vector of $\mathcal{L}$. In {numref}`Figure %s <Fig:LinesAndPlanes:ParametricLineSpace>` we can see that each vector $\mathbf{v}$ that connects the origin to a point on the line $\mathcal{L}$ can be written as the sum of the vector $\mathbf{v_0}$ and a multiple of the vector $\mathbf{u}$. This means that $\mathbf{v}=\mathbf{v_0}+r\mathbf{u}$ for some real number $r$.
 
+```{applet}
+:url: lines_and_planes/parametric_line_space
+```
+
 ```{figure} Images/Fig-LinesAndPlanes-ParametricLineSpace.svg
 :name: Fig:LinesAndPlanes:ParametricLineSpace
+:class: applet-print-figure
 
 The line $\mathcal{L}$ in $\mathbb{R}^3$.
 ```
