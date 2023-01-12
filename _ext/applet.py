@@ -19,9 +19,9 @@ class AppletDirective(Directive):
 		url = self.options['url']
 		description = self.options['description']
 
-		content = f'<h1>HELOOOO</h1> {base_url}{url} (description: {description})'
+		content = f'<div class="applet">\n  <noscript class="loading-lazy">\n    <iframe src="{base_url}{url}" allow="fullscreen" loading="lazy" frameborder="0"></iframe>\n  </noscript>\n</div>'
 
-		return [nodes.raw(rawsource=content)]
+		return [nodes.raw('', content, format='html')]
 
 
 def setup(app):
