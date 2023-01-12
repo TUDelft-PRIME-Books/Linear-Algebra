@@ -410,8 +410,6 @@ Two planes in $\mathbb{R}^3$ can never have a single point of intersection. They
 Two planes with a line of intersection.
 ````
 
-<div style="margin:auto; text-align:center"><iframe height="300px" src="https://3d-graph-yustarandomname.vercel.app/applet/lines_and_planes/two_plane_line_intersection/" width="500px"></iframe></div>
-
 ````{figure}  Images/Fig-LinesAndPlanes-TwoPlanesCoincide.svg
 :name: Fig:LinesAndPlanes:TwoPlanesCoincide
 
