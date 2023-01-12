@@ -1,6 +1,6 @@
 # In _toc.yml
 format: jb-book
-root: README
+root: index.md
 options:
   numbered: true
 chapters:
@@ -13,8 +13,9 @@ chapters:
   - file: 'Chapter2/intro.md'
     sections:
       - file: 'Chapter2/LinearSystems.md'
-      - file: 'Chapter2/SolutionSets.md'
+      - file: 'Chapter2/LinearCombinations.md'
       - file: 'Chapter2/MatrixVectorProduct.md'
+      - file: 'Chapter2/SolutionSets.md'
   - file: 'Chapter5/intro.md'
     sections:
       - file: 'Chapter5/SymmetricMatrices.md'
