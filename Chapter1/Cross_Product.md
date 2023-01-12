@@ -1,11 +1,5 @@
 # The Cross Product 
 
-```{applet}
-	:url: lines_and_planes/parametric_line_space
-	:description: Something something
-```
-
-
 In this section we will look at a specific operation on vectors in $\mathbb{R}^3$. This operation is called the *cross product* and it allows us to construct a vector that is orthogonal to two given vectors. We will use this operation in Section [](./Lines_and_Planes.md) to construct a vector that is orthogonal to a given plane in $\mathbb{R}^3$. This will allow us to describe such a plane with a very simple equation.
 
 
