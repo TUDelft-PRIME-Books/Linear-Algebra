@@ -3,6 +3,26 @@
 The book can be read at
 https://dbalague.pages.ewi.tudelft.nl/openlabook
 
+## How to run
+
+```bash
+pip install -U jupyter-book
+pip install sphinx-proof sphinx-exercise
+```
+
+To run once and see the result:
+
+```bash
+jupyter-book build .
+```
+
+To run with local applets:
+
+```bash
+BASE_URL=http://localhost:3000/applet/ jupyter-book build .
+# Or some other port
+```
+
 ## How to add an applet to an image
 
 Add `:class: applet-print-figure` to an image to have it only show up when the parapraph is printed. Prepend the image with an applet and give the applet the desired url. It should look something like:
