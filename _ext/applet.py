@@ -55,7 +55,10 @@ class AppletDirective(Figure):
 		'''
 		applet_node = nodes.raw(None, applet_html, format='html')
 
-		return [applet_node, figure_node]
+		# Add applet as the first child node of figure
+		figure_node.insert(0, applet_node)
+
+		return [figure_node]
 
 
 def setup(app):
