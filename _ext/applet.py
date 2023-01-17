@@ -1,7 +1,7 @@
 import os
 from docutils import nodes
 from docutils.parsers.rst import Directive, directives
-from docutils.parsers.rst.directives.images import Figure
+from sphinx.directives.patches import Figure
 
 
 DEFAULT_BASE_URL = 'https://openla.ewi.tudelft.nl/applet/'
