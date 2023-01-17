@@ -4,7 +4,7 @@ from docutils import nodes
 from docutils.parsers.rst import directives
 from sphinx.directives.patches import Figure
 
-from applet_settings import parse_options, generate_style
+from utils import parse_options, generate_style
 
 
 DEFAULT_BASE_URL = 'https://openla.ewi.tudelft.nl/applet/'
@@ -13,8 +13,8 @@ DEFAULT_BASE_URL = 'https://openla.ewi.tudelft.nl/applet/'
 class AppletDirective(Figure):
 	option_spec = Figure.option_spec.copy()
 	option_spec.update({
-		'url': directives.unchanged,
-		'fig': directives.unchanged,
+		'url': directives.unchanged_required,
+		'fig': directives.unchanged_required,
 		'title': directives.unchanged,
 		'background': directives.unchanged,
 		'autoPlay': directives.unchanged,
@@ -30,12 +30,10 @@ class AppletDirective(Figure):
 
 
 	def run(self):
-		assert self.options.get('url') is not None
-		assert self.options.get('fig') is not None
-
-		base_url = os.environ.get('BASE_URL', DEFAULT_BASE_URL)
-		url = self.options['url']
-		fig = self.options['fig']
+		url = self.options.get('url')
+		fig = self.options.get('fig')
+		assert url is not None
+		assert fig is not None
 
 		self.arguments = [fig]
 		self.options['class'] = ['applet-print-figure']
@@ -46,6 +44,7 @@ class AppletDirective(Figure):
 		params = '&'.join([f'{key}={quote(value)}' for key, value in params_dict.items()])
 		style = generate_style(self.options.get('width', None), self.options.get('height', None))
 
+		base_url = os.environ.get('BASE_URL', DEFAULT_BASE_URL)
 		full_url = f'{base_url}{url}{"?" if params else ""}{params}'
 		applet_html = f'''
 			<div class="applet" style={style}>
