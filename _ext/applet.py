@@ -16,7 +16,8 @@ class AppletDirective(Directive):
 	def run(self):
 		base_url = os.environ.get('BASE_URL', DEFAULT_BASE_URL)
 		url = self.options['url']
-		description = self.options['description']
+		# description = if self.options['description']
+		# name = self.options['name']
 
 		content = f'<div class="applet">\n  <noscript class="loading-lazy">\n    <iframe src="{base_url}{url}" allow="fullscreen" loading="lazy" frameborder="0"></iframe>\n  </noscript>\n</div>'
 
