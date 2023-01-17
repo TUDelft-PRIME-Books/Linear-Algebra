@@ -2,28 +2,6 @@
 
 In this section we will look at a specific operation on vectors in $\mathbb{R}^3$. This operation is called the *cross product* and it allows us to construct a vector that is orthogonal to two given vectors. We will use this operation in Section [](./Lines_and_Planes.md) to construct a vector that is orthogonal to a given plane in $\mathbb{R}^3$. This will allow us to describe such a plane with a very simple equation.
 
-```{applet}
-:url: dot_product/inner_product_length
-:fig_url: Images/Fig-LinesAndPlanes-NormalEquationPlane.svg
-:name: some_applet_name
-
-Some description here
-```
-
-Second figure
-
-
-<!-- ```{figure} Images/Fig-LinesAndPlanes-NormalEquationPlane.svg
-:name: some_applet_name2
-
-Some description here 2 electric boogaloo
-``` -->
-
-
-A reference here or something idk {numref}`Figure %s <some_applet_name>`
-
-
-
 ````{prf:definition}
 
 Let $\mathbf{u}$ and $\mathbf{v}$ be vectors in $\mathbb{R}^3$ such that

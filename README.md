@@ -33,17 +33,12 @@ watchexec -e py,md -i temp.md -- 'echo -n a >> temp.md && jupyter-book build .'
 
 ## How to add an applet to an image
 
-Add `:class: applet-print-figure` to an image to have it only show up when the parapraph is printed. Prepend the image with an applet and give the applet the desired url. It should look something like:
-
 ````
 ```{applet}
 :url: lines_and_planes/normal_equation_plane_origin
-```
-
-
-```{figure} Images/Fig-LinesAndPlanes-NormalEquationPlane.svg
-:name: Fig:LinesAndPlanes:NormalEquationPlane
-:class: applet-print-figure
+:fig: Images/image_shown_in_print_version.svg
+:name: name_that_is_used_to_refer_to_this_figure
+:title: This title is shown when you full-screen the applet
 
 A plane through the point $P$.
 ```

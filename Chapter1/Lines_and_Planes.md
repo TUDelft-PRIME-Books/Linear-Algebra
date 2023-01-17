@@ -256,7 +256,7 @@ As we can see in {numref}`Figure %s <Fig:LinesAndPlanes:NormalEquationPlaneOrigi
 
 ```{applet}
 :url: lines_and_planes/normal_equation_plane_origin
-:fig_url: Images/Fig-LinesAndPlanes-NormalEquationPlaneOrigin.svg
+:fig: Images/Fig-LinesAndPlanes-NormalEquationPlaneOrigin.svg
 :name: Fig:LinesAndPlanes:NormalEquationPlaneOrigin
 
 A plane through the origin.
@@ -266,7 +266,7 @@ Now let $P$ be the point with coordinates $(0, 2, 1)$ and take an arbitrary poin
 
 ```{applet}
 :url: lines_and_planes/normal_equation_plane
-:fig_url: Images/Fig-LinesAndPlanes-NormalEquationPlane.svg
+:fig: Images/Fig-LinesAndPlanes-NormalEquationPlane.svg
 :name: Fig:LinesAndPlanes:NormalEquationPlane
 
 A plane through the point $P$.
@@ -318,7 +318,7 @@ We can always find directional vectors of a plane by taking a vector that connec
 
 ```{applet}
 :url: lines_and_planes/directional_vectors_plane
-:fig_url: Images/Fig-LinesAndPlanes-DirectionalVectorsPlane.svg
+:fig: Images/Fig-LinesAndPlanes-DirectionalVectorsPlane.svg
 :name: Fig:LinesAndPlanes:DirectionalVectorsPlane
 
 A parametric vector equation of a plane.
@@ -382,7 +382,7 @@ It is of course possible that two planes have no points in common at all. Take a
 
 ```{applet}
 :url: lines_and_planes/two_disjoint_planes
-:fig_url: Images/Fig-LinesAndPlanes-TwoDisjointPlanes.svg
+:fig: Images/Fig-LinesAndPlanes-TwoDisjointPlanes.svg
 :name: Fig:LinesAndPlanes:TwoDisjointPlanes
 
 Two planes without a common point in common.
@@ -392,7 +392,7 @@ Two planes in $\mathbb{R}^3$ can never have a single point of intersection. They
 
 ```{applet}
 :url: lines_and_planes/two_plane_line_intersection
-:fig_url: Images/Fig-LinesAndPlanes-TwoPlanesLineIntersection.svg
+:fig: Images/Fig-LinesAndPlanes-TwoPlanesLineIntersection.svg
 :name: Fig:LinesAndPlanes:TwoPlanesLineIntersection
 
 Two planes with a line of intersection.
@@ -400,7 +400,7 @@ Two planes with a line of intersection.
 
 ```{applet}
 :url: lines_and_planes/two_planes_coincide
-:fig_url: Images/Fig-LinesAndPlanes-TwoPlanesCoincide.svg
+:fig: Images/Fig-LinesAndPlanes-TwoPlanesCoincide.svg
 :name: Fig:LinesAndPlanes:TwoPlanesCoincide
 
 Two planes that coincide.
@@ -412,7 +412,7 @@ First of all, it is possible that there are no points that are on $\mathcal{P}_1
 
 ```{applet}
 :url: lines_and_planes/disjoint_planes
-:fig_url: Images/Fig-LinesAndPlanes-DisjointPlanes.svg
+:fig: Images/Fig-LinesAndPlanes-DisjointPlanes.svg
 :name: Fig:LinesAndPlanes:DisjointPlanes
 
 Three planes without a point in common.
@@ -422,7 +422,7 @@ In {numref}`Figure %s <Fig:LinesAndPlanes:PlanesPointIntersection>` we see three
 
 ```{applet}
 :url: lines_and_planes/planes_point_intersection
-:fig_url: Images/Fig-LinesAndPlanes-PlanesPointIntersection.svg
+:fig: Images/Fig-LinesAndPlanes-PlanesPointIntersection.svg
 :name: Fig:LinesAndPlanes:PlanesPointIntersection
 
 Three planes with one point in common.
@@ -432,7 +432,7 @@ There are several circumstances where three planes have an infinite number of po
 
 ```{applet}
 :url: lines_and_planes/plane_line_intersection
-:fig_url: Images/Fig-LinesAndPlanes-PlanesLineIntersection.svg
+:fig: Images/Fig-LinesAndPlanes-PlanesLineIntersection.svg
 :name: Fig:LinesAndPlanes:PlanesLineIntersection
 
 Three planes with line of intersection.
@@ -453,7 +453,7 @@ Let $\mathcal{L}$ be a line in $\mathbb{R}^3$, $\mathbf{v_0}$ a vector that conn
 
 ```{applet}
 :url: lines_and_planes/parametric_line_space
-:fig_url: Images/Fig-LinesAndPlanes-ParametricLineSpace.svg
+:fig: Images/Fig-LinesAndPlanes-ParametricLineSpace.svg
 :name: Fig:LinesAndPlanes:ParametricLineSpace
 
 The line $\mathcal{L}$ in $\mathbb{R}^3$.

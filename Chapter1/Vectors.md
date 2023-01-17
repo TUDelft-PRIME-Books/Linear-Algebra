@@ -163,7 +163,7 @@ We will sometimes call real numbers *scalars*, because we use them to scale vect
 
 ```{applet}
 :url: vectors/3Daddition
-:fig_url: Images/Fig-Vectors-3Daddition.svg
+:fig: Images/Fig-Vectors-3Daddition.svg
 
 Geometrical interpretation of addition for three-dimensional vectors.
 ```
