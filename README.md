@@ -5,6 +5,8 @@ https://dbalague.pages.ewi.tudelft.nl/openlabook
 
 ## How to run
 
+> ⚠️ This books runs on python ^3.10
+
 ```bash
 pip install -U jupyter-book
 pip install sphinx-proof sphinx-exercise
@@ -60,10 +62,10 @@ Some parameters can be set for an applet. The url parameter is the only required
 :width: 100% # the width of the applet
 :height: 500px # the height of the applet
 :background: #ffffff # the background color of the applet
-:autoPlay: true # if the applet should start playing automatically
-:isPerspectiveCamera: false # if the camera should be a perspective or orthographic camera
-:position: 1,1,1 # the position of the camera related to the origin
-:enablePan: false # if the user can pan the camera (right mouse drag on desktop, two finger drag on mobile)
+:autoPlay: enabled # if the applet should start playing automatically
+:isPerspectiveCamera: disabled # if the camera should be a perspective or orthographic camera
+:position: 1,1,1 # the position of the camera related to the origin. Spaces not allowed
+:enablePan: disabled # if the user can pan the camera (right mouse drag on desktop, two finger drag on mobile)
 :distance: 30 # the distance of the camera from the origin for a *perspective* camera. Distance is a linear value, *higher* is further away.
 :zoom: 30 # the distance of the camera from the origin for a *orthographic* camera. Zoom is a logarithmic value, *lower* is further away.
 ```
