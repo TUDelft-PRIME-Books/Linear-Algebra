@@ -5,19 +5,22 @@ In this section we will look at a specific operation on vectors in $\mathbb{R}^3
 ```{applet}
 :url: dot_product/inner_product_length
 :fig_url: Images/Fig-LinesAndPlanes-NormalEquationPlane.svg
-:fig_name: Fig:LinesAndPlanes:JeMoeder
-:description: some description here
+:name: some_applet_name
+
+Some description here
 ```
 
 Second figure
 
-```{figure} Images/Fig-LinesAndPlanes-NormalEquationPlane.svg
-:name: Fig:LinesAndPlanes:NormalEquationPlane2
-:class: applet-print-figure
-```
+
+<!-- ```{figure} Images/Fig-LinesAndPlanes-NormalEquationPlane.svg
+:name: some_applet_name2
+
+Some description here 2 electric boogaloo
+``` -->
 
 
-A reference here or something idkssaaaaaaas {numref}`Figure %s <Fig:LinesAndPlanes:JeMoeder>`
+A reference here or something idk {numref}`Figure %s <some_applet_name>`
 
 
 

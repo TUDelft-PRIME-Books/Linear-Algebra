@@ -1,26 +1,30 @@
 import os
 from docutils import nodes
 from docutils.parsers.rst import Directive, directives
+from docutils.parsers.rst.directives.images import Figure
 
 
 DEFAULT_BASE_URL = 'https://openla.ewi.tudelft.nl/applet/'
 
 
-class AppletDirective(Directive):
-	option_spec = {
+class AppletDirective(Figure):
+	option_spec = Figure.option_spec.copy()
+	option_spec.update({
 		'url': directives.unchanged,
 		'fig_url': directives.unchanged,
-		'fig_name': directives.unchanged,
-		'description': directives.unchanged
-	}
-	has_content = False
+	})
+	required_arguments = 0
+	# has_content = True
 
 	def run(self):
+		# TODO: assert has content
 		base_url = os.environ.get('BASE_URL', DEFAULT_BASE_URL)
 		url = self.options['url']
 		fig_url = self.options['fig_url']
-		fig_name = self.options['fig_name']
-		description = self.options['description']
+
+		self.arguments = [fig_url]
+		(figure,) = Figure.run(self)
+
 
 		applet_html = f'''
 			<div class="applet">
@@ -31,15 +35,7 @@ class AppletDirective(Directive):
 		'''
 		applet = nodes.raw(None, applet_html, format='html')
 
-		figure = nodes.figure(None)
-
-		img = nodes.image(uri=fig_url)
-
-		figure += applet
-		figure += img
-		figure += nodes.label(None, fig_name)  # ????
-		figure += nodes.caption(text=description)
-		return [figure]
+		return [applet, figure]
 
 
 def setup(app):
