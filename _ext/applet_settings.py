@@ -32,9 +32,6 @@ def parse_value(val: str) -> str:
 
 
 def parse_options(options: dict) -> dict:
-	# if options is None:
-	# 	return {}
-
 	# Settings keys that are passed along to the applet iframe
 	applet_keys = ['title', 'background', 'autoPlay', 'position', 'isPerspectiveCamera', 'enablePan', 'distance', 'zoom']
 

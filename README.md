@@ -5,11 +5,8 @@ https://dbalague.pages.ewi.tudelft.nl/openlabook
 
 ## How to run
 
-> ⚠️ This books runs on python ^3.10
-
 ```bash
-pip install -U jupyter-book
-pip install sphinx-proof sphinx-exercise
+pip install -r requirements.txt
 ```
 
 To run once and see the result:
@@ -28,7 +25,7 @@ BASE_URL=http://localhost:3000/applet/ jupyter-book build .
 To run the book with 'hot-reload':
 
 ```bash
-watchexec -e py,md -i temp.md -- 'echo -n a >> temp.md && jupyter-book build .'
+watchexec -e py,md -- jupyter-book build --all .
 ```
 
 ## How to add an applet to an image
@@ -44,11 +41,11 @@ A plane through the point $P$.
 ```
 ````
 
-> ⚠️ It is not required to add the `base url` and `/applet`. This is handed with an environment variable name `BASE_URL`. The default base url is set to https://openla.ewi.tudelft.nl/applet/
+> ⚠️ The `url` parameter should be the part of the URL after `/applet/`. So if the full URL is `https://openla.ewi.tudelft.nl/applet/lines_and_planes/normal_equation_plane_origin`, you should set the parameter to `lines_and_planes/normal_equation_plane_origin`.
 
 ## Parameters for an applet
 
-Some parameters can be set for an applet. The url parameter is the only required; the rest is optional.
+Some parameters can be set for an applet. Only the `url` and `fig` parameters are required; the rest is optional.
 
 ````bash
 ```{applet}
