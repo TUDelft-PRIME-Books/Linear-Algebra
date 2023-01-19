@@ -35,11 +35,8 @@ The length of a vector via Pythagoras' Theorem
 
 ```{applet}
 :url: dot_product/inner_product_length
-```
-
-```{figure} Images/Fig-InnerProduct-length-3D.svg
+:fig: Images/Fig-InnerProduct-length-3D.svg
 :name: Fig:InnerProduct:length-3D
-:class: applet-print-figure
 
 The length of a vector via Pythagoras' Theorem
 ```
