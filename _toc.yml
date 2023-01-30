@@ -16,6 +16,7 @@ chapters:
       - file: 'Chapter2/LinearCombinations.md'
       - file: 'Chapter2/MatrixVectorProduct.md'
       - file: 'Chapter2/SolutionSets.md'
+      - file: 'Chapter2/LinearIndependence.md'
   - file: 'Chapter5/intro.md'
     sections:
       - file: 'Chapter5/SymmetricMatrices.md'
