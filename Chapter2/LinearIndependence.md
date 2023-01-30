@@ -157,7 +157,7 @@ The set $\left\lbrace\mathbf{v_{1}},\mathbf{v_{2}},\mathbf{v_{3}}\right\rbrace$ 
 ::::{figure} Images/Fig-LinInd-Examplein3D.svg
 :name: Fig:LinInd:Examplein3D
 
-The four vectors from ([iii.](#Item:LinInd:LinDepExin3D) ). Note that $\mathbf{v_{3}}$ lies in the plane spanned by $\mathbf{v_{1}}$ and $\mathbf{v_{2}}$ but $\mathbf{v_{4}}$ does not. This means that $\left\lbrace\mathbf{v_{1}},\mathbf{v_{2}},\mathbf{v_{3}}\right\rbrace$ is linearly dependent but $\left\lbrace\mathbf{v_{1}},\mathbf{v_{2}},\mathbf{v_{4}}\right\rbrace$ is not.
+The four vectors from [iii.](#Item:LinInd:LinDepExin3D). Note that $\mathbf{v_{3}}$ lies in the plane spanned by $\mathbf{v_{1}}$ and $\mathbf{v_{2}}$ but $\mathbf{v_{4}}$ does not. This means that $\left\lbrace\mathbf{v_{1}},\mathbf{v_{2}},\mathbf{v_{3}}\right\rbrace$ is linearly dependent but $\left\lbrace\mathbf{v_{1}},\mathbf{v_{2}},\mathbf{v_{4}}\right\rbrace$ is not.
 ::::
 
 
@@ -418,14 +418,14 @@ Consider the matrices
 
 $$
 
-A=\left[\vect{u_{1}}\\cdots\\mathbf{u_{k}}\right],\quad B=\left[\vect{v_{1}}\\cdots\\mathbf{v_{l}}\right]\quad \text{and}\quad C=[A\B].
+A=\left[\vect{u_{1}}\cdots\mathbf{u_{k}}\right],\quad B=\left[\vect{v_{1}}\cdots\mathbf{v_{l}}\right]\quad \text{and}\quad C=[A\backslash B].
 $$
 
 Bringing $C$ in echelon form gives 
 
 $$
 
-C\sim D=[E\F]
+C\sim D=[E\backslash F]
 $$
 
 where $D$ is the echelon form of $C$, $E$ is an echelon form of $A$, and $F$ is equivalent to $B$. 
