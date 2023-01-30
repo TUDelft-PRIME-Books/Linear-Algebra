@@ -4,6 +4,8 @@ author: "Several authors involved"
 only_build_toc_files: true
 execute:
   execute_notebooks: "off"
+exclude_patterns:
+  - '.venv'
 parse:
     myst_enable_extensions:
       ## don't forget to list any other extensions you want enabled,
@@ -35,3 +37,5 @@ sphinx:
     - sphinx_proof
     - sphinx_togglebutton
     - sphinx_exercise
+  local_extensions:
+    applet: _ext/

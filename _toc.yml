@@ -10,6 +10,7 @@ chapters:
       - file: 'Chapter1/Inner_Product.md'
       - file: 'Chapter1/Cross_Product.md'
       - file: 'Chapter1/Lines_and_Planes.md'
+      - file: 'Chapter1/Testing.md'
   - file: 'Chapter2/intro.md'
     sections:
       - file: 'Chapter2/LinearSystems.md'

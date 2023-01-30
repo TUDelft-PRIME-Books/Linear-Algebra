@@ -1,15 +1,14 @@
 (Sec:DotProduct)=
-# Dot product 
 
-In this  section we will consider other (geometric) properties of vectors, like the *length* of a vector  and the *angle* between two vectors. When the angle between two vectors is equal to $\frac12\pi$,  two vectors are *perpendicular*, which is also known as *orthogonal*. These properties can all be expressed using a new operator: the *inner product*  or *dot product*. 
+# Dot product
 
-We will start by considering vectors in $\mathbb{R}^2$ and $\mathbb{R}^3$.  The translation of the concepts  to the general space $\mathbb{R}^n$ will then become more or less immediate.
+In this section we will consider other (geometric) properties of vectors, like the _length_ of a vector and the _angle_ between two vectors. When the angle between two vectors is equal to $\frac12\pi$, two vectors are _perpendicular_, which is also known as _orthogonal_. These properties can all be expressed using a new operator: the _inner product_ or _dot product_.
 
+We will start by considering vectors in $\mathbb{R}^2$ and $\mathbb{R}^3$. The translation of the concepts to the general space $\mathbb{R}^n$ will then become more or less immediate.
 
 (Subsec:InnerProduct:Length_and_perpendicular)=
-## Length and perpendicularity in $\mathbb{R}^2$ and $\mathbb{R}^3$ 
 
-
+## Length and perpendicularity in $\mathbb{R}^2$ and $\mathbb{R}^3$
 
 The length of a vector
 
@@ -20,7 +19,7 @@ a_{1}\\a_{2}
 \nonumber
 $$
 
-in the plane,   which we denote  by $\norm{\mathbf{v}}$, can be computed using the Pythagorean theorem:
+in the plane, which we denote by $\norm{\mathbf{v}}$, can be computed using the Pythagorean theorem:
 
 ```{math}
 :label: Eq:InnerProduct:length-2D
@@ -28,18 +27,15 @@ in the plane,   which we denote  by $\norm{\mathbf{v}}$, can be computed using t
 \norm{\mathbf{v}} = \sqrt{a_1^2+a_2^2}
 ```
 
-
-
-
-```{figure}  Images/Fig-InnerProduct-Length-2D.svg
+```{figure} Images/Fig-InnerProduct-Length-2D.svg
 :name: Fig:InnerProduct:Length-2D
 
 The length of a vector via Pythagoras' Theorem
 ```
 
-
-
-```{figure}  Images/Fig-InnerProduct-length-3D.svg
+```{applet}
+:url: dot_product/inner_product_length
+:fig: Images/Fig-InnerProduct-length-3D.svg
 :name: Fig:InnerProduct:length-3D
 
 The length of a vector via Pythagoras' Theorem
@@ -52,8 +48,8 @@ $$
  \nonumber
 $$
 
-in  $\mathbb{R}^3$. Look at  {numref}`Figure %s <Fig:InnerProduct:length-3D>`. There are two right triangles:  $\Delta OPQ$  where $\angle OPQ$ is right, and
-$\Delta OQA$  where $\angle OQA$ is right.
+in $\mathbb{R}^3$. Look at {numref}`Figure %s <Fig:InnerProduct:length-3D>`. There are two right triangles: $\Delta OPQ$ where $\angle OPQ$ is right, and
+$\Delta OQA$ where $\angle OQA$ is right.
 
 From
 
@@ -62,7 +58,7 @@ $$
 \nonumber
 $$
 
-where for two points $A$ and $P$, by  $AB$ we denote the length of the vector $\overline{AB}$,
+where for two points $A$ and $P$, by $AB$ we denote the length of the vector $\overline{AB}$,
 and
 
 $$
@@ -79,27 +75,25 @@ we find that
 \norm{\mathbf{v}}= OA = \sqrt{a_1^2 + a_2^2+a_3^2}
 ```
 
-
-```{figure}  Images/Fig-InnerProduct-perp-non-perp.svg
+```{figure} Images/Fig-InnerProduct-perp-non-perp.svg
 :name: Fig:InnerProduct:perp-non-perp
 
 Perpendicular versus non-perpendicular
 ```
 
 Let us now turn our attention to another important geometric concept, namely that of
-perpendicularity. It is clear from {numref}`Figure %s <Fig:InnerProduct:perp-non-perp>` that the vectors  $\begin{bmatrix}2\\3\end{bmatrix}$  and $\begin{bmatrix}-3\\2\end{bmatrix}$ are
-perpendicular, whereas  the vectors $\begin{bmatrix}2\\3\end{bmatrix}$  and $\begin{bmatrix}-1\\3\end{bmatrix}$ are not. But how does this work in $\mathbb{R}^3$?
-Well,  look at  {numref}`Figure %s <Fig:InnerProduct:diagonal-parallelogram>`:
+perpendicularity. It is clear from {numref}`Figure %s <Fig:InnerProduct:perp-non-perp>` that the vectors $\begin{bmatrix}2\\3\end{bmatrix}$ and $\begin{bmatrix}-3\\2\end{bmatrix}$ are
+perpendicular, whereas the vectors $\begin{bmatrix}2\\3\end{bmatrix}$ and $\begin{bmatrix}-1\\3\end{bmatrix}$ are not. But how does this work in $\mathbb{R}^3$?
+Well, look at {numref}`Figure %s <Fig:InnerProduct:diagonal-parallelogram>`:
 
-
-```{figure}  Images/Fig-InnerProduct-diagonal-parallelogram.svg
+```{figure} Images/Fig-InnerProduct-diagonal-parallelogram.svg
 :name: Fig:InnerProduct:diagonal-parallelogram
 
 Diagonal of a rectangle versus diagonal of a parallelogram
 ```
 
 \noindent
-In both pictures,  let  $A$ be the end point of vector $\mathbf{v}$, $B$  the end point of vector $\mathbf{w}$, and $C$  the end point of vector $\mathbf{v}+\mathbf{w}$.  The diagonals are
+In both pictures, let $A$ be the end point of vector $\mathbf{v}$, $B$ the end point of vector $\mathbf{w}$, and $C$ the end point of vector $\mathbf{v}+\mathbf{w}$. The diagonals are
 
 $$
 
@@ -107,7 +101,7 @@ $$
 \nonumber
 $$
 
-In the left picture of {numref}`Figure %s <Fig:InnerProduct:diagonal-parallelogram>` the vectors $\mathbf{v}$ and $\mathbf{w}$ are perpendicular, so the parallelogram  $OACB$  is a rectangle. It follows that
+In the left picture of {numref}`Figure %s <Fig:InnerProduct:diagonal-parallelogram>` the vectors $\mathbf{v}$ and $\mathbf{w}$ are perpendicular, so the parallelogram $OACB$ is a rectangle. It follows that
 the two diagonals have the same length:
 
 ```{math}
@@ -124,26 +118,23 @@ $$
 \nonumber
 $$
 
-
-
-The picture suggests that we are talking about two (non-zero) vectors in the plane, i.e., in $\mathbb{R}^2$.  However, two vectors in $\mathbb{R}^3$  form a parallelogram as well, which becomes a rectangle if and only if the vectors are perpendicular.  We introduce a notation for this: if $ \mathbf{v}$  and $\mathbf{w}$  are perpendicular, we write this as
+The picture suggests that we are talking about two (non-zero) vectors in the plane, i.e., in $\mathbb{R}^2$. However, two vectors in $\mathbb{R}^3$ form a parallelogram as well, which becomes a rectangle if and only if the vectors are perpendicular. We introduce a notation for this: if $ \mathbf{v}$ and $\mathbf{w}$ are perpendicular, we write this as
 
 ```{math}
 :label: Eq:InnerProduct:Orthogonal
 
-\mathbf{v} \perp \mathbf{w}       
+\mathbf{v} \perp \mathbf{w}
 ```
 
-
-Taking  squares in Equation {eq}`EqualDiagonals`, we see that the following holds 
+Taking squares in Equation {eq}`EqualDiagonals`, we see that the following holds
 both in $\mathbb{R}^2$ and in $\mathbb{R}^3$:
 
 $$
- \mathbf{v} \perp \mathbf{w} \iff \norm{\mathbf{v}+\mathbf{w}}^2 = \norm{\mathbf{v}-\mathbf{w}}^2.  $$
-
+ \mathbf{v} \perp \mathbf{w} \iff \norm{\mathbf{v}+\mathbf{w}}^2 = \norm{\mathbf{v}-\mathbf{w}}^2.
+$$
 
 \noindent
-If we write this out for two arbitrary vectors $\mathbf{v}=\begin{bmatrix} a_{1}\\a_{2}\end{bmatrix},\,\mathbf{w}=\begin{bmatrix} b_{1}\\b_{2}\end{bmatrix}$  in $\mathbb{R}^2$\\
+If we write this out for two arbitrary vectors $\mathbf{v}=\begin{bmatrix} a_{1}\\a_{2}\end{bmatrix},\,\mathbf{w}=\begin{bmatrix} b_{1}\\b_{2}\end{bmatrix}$ in $\mathbb{R}^2$\\
 we get the following:
 
 $$
@@ -166,10 +157,10 @@ Likewise, for vectors $\mathbf{v}=\begin{bmatrix} a_{1}\\a_{2}\\a_{3}\end{bmatri
 ```
 
 The derivation is completely analogous to the one above, only now we have one term extra.
-So to check 'algebraically' whether two vectors are perpendicular we just have to compute  $a_1b_1 +a_2b_2\, (\,+\,a_3b_3\,)$
+So to check 'algebraically' whether two vectors are perpendicular we just have to compute $a_1b_1 +a_2b_2\, (\,+\,a_3b_3\,)$
 and see whether this is equal to 0.
 
-This expression is called the *inner product* (or *dot product*)  of the vectors $\mathbf{v}$ and $\mathbf{w}$. We denote it by $\mathbf{v}\ip\mathbf{w}$.
+This expression is called the _inner product_ (or _dot product_) of the vectors $\mathbf{v}$ and $\mathbf{w}$. We denote it by $\mathbf{v}\ip\mathbf{w}$.
 Note that the dot product of a general vector $\mathbf{v}=\begin{bmatrix} a_{1}\\a_{2}\\a_{3}\end{bmatrix}$ in $\mathbb{R}^3$ with itself gives
 
 $$
@@ -177,7 +168,6 @@ $$
    \mathbf{v}\ip\mathbf{v} = a_1^2+a_2^2+a_3^2 = \norm{\mathbf{v}}^2,
 \nonumber
 $$
-
 
 so the length of a vector can be expressed as follows using the dot product
 
@@ -187,15 +177,15 @@ so the length of a vector can be expressed as follows using the dot product
 \norm{\mathbf{v}} = \sqrt{\mathbf{v}\ip\mathbf{v}\,}.
 ```
 
-%\todo{Exercise enlightening the connection $\norm{\vect{v}\pm\vect{w}}$ versus %perpendicularity} 
+%\todo{Exercise enlightening the connection $\norm{\vect{v}\pm\vect{w}}$ versus %perpendicularity}
 
-Using the dot product the concepts length and perpendicular easily  carry over to  any $\mathbb{R}^n$, $n \geq 4$. Let's do it one by one, starting by generalizing the dot product in the next subsection.
+Using the dot product the concepts length and perpendicular easily carry over to any $\mathbb{R}^n$, $n \geq 4$. Let's do it one by one, starting by generalizing the dot product in the next subsection.
 
 (Subsec:Dot_product:InnerProduct_in_Rn)=
-## Dot product  in $\mathbb{R}^n$ 
 
+## Dot product in $\mathbb{R}^n$
 
-````{prf:definition}  
+````{prf:definition}
 :label: Dfn:InnerProduct:DotProduct
 
 
@@ -212,8 +202,7 @@ $\mathbf{w}=\begin{bmatrix}b_{1}\\b_{2}\\ \vdots\\b_{n}\end{bmatrix}$ in $\mathb
 
 ````
 
-
-```{admonition} Exercise  
+```{admonition} Exercise
 :name: Ex:InnerProduct:DotProdTwoVectors
 
 
@@ -247,10 +236,9 @@ is not defined.  In fact, the dot product of a  vector $\mathbf{v}$ in $\mathbb{
 ```
 
 We state the characteristic rules of the dot product in $\mathbb{R}^n$, which in the sequel we will use time and again, in the following
-proposition. 
+proposition.
 
-
-```{prf:proposition}  
+```{prf:proposition}
 :label: Prop:RulesInnerProduct
 
 The following  properties   hold for any vectors $\mathbf{v},\mathbf{v_1},\mathbf{v_2},\mathbf{v_3}$ in $\mathbb{R}^n$ and scalars $c \in \mathbb{R}$:
@@ -265,8 +253,7 @@ The following  properties   hold for any vectors $\mathbf{v},\mathbf{v_1},\mathb
   iv.  $\mathbf{v}\ip\mathbf{v} \geq 0$, and  $\mathbf{v}\ip\mathbf{v} = 0 \iff \mathbf{v} = \mathbf{0}$.
 ```
 
-
-```{prf:proof}  
+```{prf:proof}
 :class: dropdown
 
 The first three properties follow from the corresponding properties of real numbers. For instance, for the first rule we simply use that  $xy = yx$ holds for the product of real numbers.
@@ -284,7 +271,7 @@ be two arbitrary vectors in $\mathbb{R}^n$. Then
 $$\begin{eqnarray*}
      \mathbf{v_1}\ip\mathbf{v_2} &=&
             \begin{bmatrix}a_{1}\\a_{2}\\ \vdots\\a_{n}\end{bmatrix}\ip\begin{bmatrix}b_{1}\\b_{2}\\ \vdots\\b_{n}\end{bmatrix}
-            = a_1b_1 +a_2b_2+ \ldots + a_nb_n  \\ 
+            = a_1b_1 +a_2b_2+ \ldots + a_nb_n  \\
             &=& b_1a_1 +b_2a_2+ \ldots + b_na_n =
                \begin{bmatrix}b_{1}\\b_{2}\\ \vdots\\b_{n}\end{bmatrix}\ip\begin{bmatrix}a_{1}\\a_{2}\\ \vdots\\a_{n}\end{bmatrix} =
                 \mathbf{v_2}\ip\mathbf{v_1}.
@@ -304,14 +291,11 @@ iii. Is proved in the same way as (ii).
 iv.  $\mathbf{v}\ip\mathbf{v} = a_1a_1 +a_2a_2+ \ldots + a_na_n = a_1^2+a_2^2 + \ldots + a_n^2$ is the sum of squares of real numbers, so it is nonnegative. It only becomes 0 if all the squares are 0, which only happens if each entry $a_i$ is equal to zero, that is, if $\mathbf{v} = \mathbf{0}$.
 ```
 
-
-
 ```{admonition} Exercise
 :name: Exc:InnerProduct:CheckPropInnerProd
 
 Prove property (iii).
 ```
-
 
 ```{admonition} Exercise
 :name: Exc:InnerProduct:(v-w)(v+w)
@@ -327,9 +311,7 @@ $$
 
 ```
 
-
-
-```{admonition} Exercise  
+```{admonition} Exercise
 :name: Exc:InnerProduct:PargramRule
 
 Prove the identity
@@ -345,8 +327,8 @@ and explain why it is called the *parallelogram rule*.
 ```
 
 (Subsec:InnerProduct:Orthogonality)=
-## Orthogonality 
 
+## Orthogonality
 
 In $\mathbb{R}^2$ and $\mathbb{R}^3$ the dot product gives an easy way to check whether two vectors are perpendicular:
 
@@ -356,11 +338,9 @@ $$
 \nonumber
 $$
 
-We  use this identity to define the concept of perpendicularity in $\mathbb{R}^n$. It seems a bit 'academic', but in this more general setting the term *orthogonal* is used.
+We use this identity to define the concept of perpendicularity in $\mathbb{R}^n$. It seems a bit 'academic', but in this more general setting the term _orthogonal_ is used.
 
-
-
-```{prf:definition}  
+```{prf:definition}
 :label: Dfn:InnerProduct:Orthogonality
 
 
@@ -369,8 +349,7 @@ Two vectors $\mathbf{v}$  and $\mathbf{w}$ in $\mathbb{R}^n$ are called *orthogo
 
 ```
 
-
-```{admonition} Exercise  
+```{admonition} Exercise
 :name: Ex:InnerProduct:CheckVectorsOrthogonal
 
 Let $\mathbf{u} = \begin{bmatrix} 1\\2\\-1\\-1\end{bmatrix}$,  $\mathbf{v} = \begin{bmatrix} 3\\-1\\2\\-1\end{bmatrix}$,
@@ -403,12 +382,10 @@ In $\mathbb{R}^2$, two nonzero vectors that are orthogonal to the same nonzero v
 
 ```
 
+By definition the zero vector is orthogonal to any vector, since $\mathbf{0}\ip\mathbf{v} = 0$.
+Moreover, the zero vector is the _only_ vector that is orthogonal to itself:
 
-By definition  the zero vector is orthogonal to any vector, since $\mathbf{0}\ip\mathbf{v} = 0$.
-Moreover,  the zero vector is the *only* vector that is orthogonal to itself:
-
-
-```{prf:proposition}  
+```{prf:proposition}
 :label: Prop:InnerProduct:vDotv=0Impliesv=0
 
 
@@ -417,7 +394,7 @@ Suppose  $\mathbf{v} \in \mathbb{R}^n$. \, Then  $\mathbf{v}\perp\mathbf{v} \iff
 
 ```
 
-```{prf:proof}  
+```{prf:proof}
 
 
 
@@ -433,14 +410,10 @@ In {prf:ref}`Prop:RulesInnerProduct` (iv) we already showed that the last equali
 
 ```
 
-The fact that the zero vector is orthogonal to *any* vector is an immediate consequence of the definition, but it
+The fact that the zero vector is orthogonal to _any_ vector is an immediate consequence of the definition, but it
 may seem counter intuitive to you. The following example illustrates a situation where this orthogonality leads to a much nicer outcome.
 
-
-
-
-
-````{admonition} Exercise  
+````{admonition} Exercise
 :name: Ex:PerpendicularLine
 
 Let $\mathbf{n}$ be any nonzero vector in the plane.
@@ -459,13 +432,11 @@ Vectors orthogonal to a non-zero vector $\mathbf{n}$ in the plane
 
 ````
 
-
-We conclude this subsection with another concept that we will come across later in a much more general context. Informally, it is the (orthogonal) projection of a vector onto another vector. More precisely, it is the orthogonal projection of a vector $\mathbf{w}$ onto the line $L$ generated by the nonzero vector $\mathbf{v}$, by which we mean   $L= \{ c\mathbf{v}: c \in \mathbb{R}\}$.
+We conclude this subsection with another concept that we will come across later in a much more general context. Informally, it is the (orthogonal) projection of a vector onto another vector. More precisely, it is the orthogonal projection of a vector $\mathbf{w}$ onto the line $L$ generated by the nonzero vector $\mathbf{v}$, by which we mean $L= \{ c\mathbf{v}: c \in \mathbb{R}\}$.
 
 See {numref}`Figure %s <Fig:InnerProduct:ProjectionVectorLine>`.
 
-
-```{prf:definition}  
+```{prf:definition}
 :label: Dfn:InnerProduct:OrthoProjectionOntoVector
 
 The *orthogonal projection of a vector $\mathbf{w}$ onto the nonzero vector $\mathbf{v}$* is the vector  $\mathbf{\hat{w}} = c\mathbf{v} $ for which
@@ -487,16 +458,13 @@ $$
 
 ```
 
-
-```{figure}  Images/Fig-InnerProduct-ProjectionVectorLine.svg
+```{figure} Images/Fig-InnerProduct-ProjectionVectorLine.svg
 :name: Fig:InnerProduct:ProjectionVectorLine
 
 Projection of a vector $\mathbf{w}$ onto a non-zero vector $\mathbf{v}$
 ```
 
-
-
-```{prf:proposition}  
+```{prf:proposition}
 :label: Prop:InnerProduct:UniqueProjection
 
 
@@ -513,8 +481,7 @@ $$
 
 ```
 
-
-```{prf:proof}  
+```{prf:proof}
 
 
 
@@ -555,7 +522,6 @@ $$
 and indeed  $\mathbf{\hat{w}}$ must be as stated.
 
 ```
-
 
 ```{admonition} Exercise
 :name: Ex:InnerProduct:OrthoProjectionOntoVector
@@ -607,8 +573,7 @@ as required.
 
 ```
 
-
-```{admonition} Exercise  
+```{admonition} Exercise
 :name: Exc:InnerProduct:FindProjectionOntoLine
 
 
@@ -634,16 +599,13 @@ $$
 
 ```
 
-
-
-
-```{admonition} Exercise  
+```{admonition} Exercise
 :name: Exc:InnerProduct:SameProjectionThenWhat
 
 
 
 Suppose $\text{proj}_{\mathbf{v}}(\mathbf{w_1}) = \text{proj}_{\mathbf{v}}(\mathbf{w_2}) $,
-for three vectors $\mathbf{v}, \,\mathbf{w_1},\,\mathbf{w_2}$ in $\mathbb{R}^n$.  
+for three vectors $\mathbf{v}, \,\mathbf{w_1},\,\mathbf{w_2}$ in $\mathbb{R}^n$.
 What does this say about the relative positions of the three vectors?
 
 Verify your statement for the following three vectors
@@ -660,7 +622,8 @@ $$
 ```
 
 (Subsec:InnerProduct:Norm_in_Rn)=
-## Norm in $\mathbb{R}^n$ 
+
+## Norm in $\mathbb{R}^n$
 
 The length of a vector in the plane can be computed using the dot product: for
 $\mathbf{v}=\begin{bmatrix}a_{1}\\a_{2}\end{bmatrix}$ in $\mathbb{R}^2$ we have seen that
@@ -671,12 +634,11 @@ $$
   \nonumber
 $$
 
-The identity  $\norm{\mathbf{v}}  = \sqrt{\mathbf{v}\ip\mathbf{v}}$ also holds in $\mathbb{R}^3$.
+The identity $\norm{\mathbf{v}}  = \sqrt{\mathbf{v}\ip\mathbf{v}}$ also holds in $\mathbb{R}^3$.
 
 It seems natural to extend the concept to $\mathbb{R}^n$. Again, for this more general space a new word is introduced:
 
-
-```{prf:definition}  
+```{prf:definition}
 :label: Dfn:InnerProduct:NormOfVector
 
 
@@ -691,7 +653,8 @@ $$
 
 
 ```
-Expressed in the entries of $\mathbf{v}$  this yields
+
+Expressed in the entries of $\mathbf{v}$ this yields
 
 $$
 
@@ -703,20 +666,19 @@ so for vectors in $\mathbb{R}^2$ and $\mathbb{R}^3$ the norm of a vector is just
 
 As we might expect the norm has many properties in common with length:
 
-
-````{prf:proposition}  
+````{prf:proposition}
 :label: Item:Prop:InnerProduct:PropertiesNorm
 
 For any $\mathbf{v}, \,\mathbf{w} \in \mathbb{R}^{n}$ and all $c \in \mathbb{R}$ the following holds:
 
 i. $\norm{\mathbf{v}}\geq 0$;
 
-ii. Scaling property: 
-```{math} 
+ii. Scaling property:
+```{math}
 :label: Item:Prop:InnerProduct:Scaling
 
 \norm{c\mathbf{v}} = |c|\norm{\mathbf{v}}.
-``` 
+```
 
 iii. Triangle Inequality:
 
@@ -725,23 +687,18 @@ iii. Triangle Inequality:
 
 \norm{\mathbf{v}+\mathbf{w}} \leq \norm{\mathbf{v}}+\norm{\mathbf{w}}.
 ```
-  
+
 ````
 
+The first two of these properties are very easy to prove. The proof of the triangle inequality we postpone until the end of the section. Figure {numref}`Figure %s <Fig:InnerProduct:TriangleInequality>` explains the name.
 
-The first two of these properties are very easy to prove.  The proof of the triangle inequality we postpone until the end of the section. Figure {numref}`Figure %s <Fig:InnerProduct:TriangleInequality>` explains the name.
-
-
-```{figure}  Images/Fig-InnerProduct-TriangleInequality.svg
+```{figure} Images/Fig-InnerProduct-TriangleInequality.svg
 :name: Fig:InnerProduct:TriangleInequality
 
 The Triangle Inequality
 ```
 
-
-
-
-```{admonition} Exercise  
+```{admonition} Exercise
 :name: Ex:InnerProduct:NormsofTwoVectors
 
 We compute the norms of the vectors
@@ -777,12 +734,9 @@ $$
 
 ```
 
+With the tools so far we can define a notion that comes in handy later:
 
-With the tools so far  we can define a  notion that comes in handy later:
-
-
-
-```{prf:definition}  
+```{prf:definition}
 :label: Dfn:InnerProduct:unit vector
 
 
@@ -802,10 +756,7 @@ is called the *unit vector in the direction of $\mathbf{v}$*.
 
 ```
 
-
-
-
-```{prf:proposition}  
+```{prf:proposition}
 :label: Prop:InnerProduct:unit vector for v
 
 
@@ -829,8 +780,7 @@ $$
 
 ```
 
-
-```{prf:proof}  
+```{prf:proof}
 
 
 
@@ -862,13 +812,12 @@ $$
 
 ```
 
-
-```{admonition} Exercise  
+```{admonition} Exercise
 :name: Ex:InnerProduct:UnitVector
 
 
 
-We compute the unit vector $\mathbf{u}$  in the direction of the vector $\mathbf{v} = \begin{bmatrix}1 \\ 2 \\ 4 \\ -2 \end{bmatrix}$  in $\mathbb{R}^4$.  \, 
+We compute the unit vector $\mathbf{u}$  in the direction of the vector $\mathbf{v} = \begin{bmatrix}1 \\ 2 \\ 4 \\ -2 \end{bmatrix}$  in $\mathbb{R}^4$.  \,
 As follows:
 
 $$
@@ -881,7 +830,6 @@ $$
 
 ```
 
-
 %\begin{figure}
 %\begin{center}
 %\includegraphics{Images/Fig-InnerProduct-TriangleInequality.pdf}
@@ -890,18 +838,12 @@ $$
 %\end{center}
 %\end{figure}
 
-
-
-
-
-
 Interestingly, a well known theorem from primary school mathematics also holds in $\mathbb{R}^n$:
 
-
-```{prf:theorem}  
+```{prf:theorem}
 :label: Thm:InnerProduct:Pythagors in Rn
 
- 
+
 
 For any two vectors  $\mathbf{v}$  and $\mathbf{w}$  in $\mathbb{R}^n$ we have
 
@@ -915,8 +857,7 @@ $$
 
 ```
 
-
-```{prf:proof}  
+```{prf:proof}
 
 
 
@@ -940,7 +881,7 @@ Next we subtract $\mathbf{v}\ip\mathbf{v} + \mathbf{w}\ip\mathbf{w}$ from both s
 $$
 
 \begin{array}{rcl}
- \mathbf{v}\ip\mathbf{w}+\mathbf{w}\ip\mathbf{v} = 0 
+ \mathbf{v}\ip\mathbf{w}+\mathbf{w}\ip\mathbf{v} = 0
   &\iff& 2\mathbf{v}\ip\mathbf{w} = 0\\
   &\iff& \mathbf{v}\ip\mathbf{w}= 0\\
   &\iff& \mathbf{v}\perp\mathbf{w}.
@@ -951,9 +892,7 @@ $$
 
 ```
 
-
-
-```{admonition} Exercise  
+```{admonition} Exercise
 :name: Ex:InnerProduct:Pythagoras_in_R^4
 
 
@@ -997,10 +936,9 @@ $$
 
 ```
 
-One of the most basic properties, also one with a wide range of applications, is the so-called  Cauchy-Schwarz Inequality.
+One of the most basic properties, also one with a wide range of applications, is the so-called Cauchy-Schwarz Inequality.
 
-
-```{prf:theorem}  
+```{prf:theorem}
 :label: Thm:InnerProduct:Cauchy-Schwarz
 
 
@@ -1016,9 +954,7 @@ $$
 
 ```
 
-
-
-```{prf:proof}  
+```{prf:proof}
 
 
 
@@ -1031,7 +967,7 @@ If
 
 $$
 
-  \mathbf{v} = \mathbf{0} \Longrightarrow  \norm{\mathbf{v}} = 0 
+  \mathbf{v} = \mathbf{0} \Longrightarrow  \norm{\mathbf{v}} = 0
   \Longrightarrow \norm{\mathbf{v}}\cdot\norm{\mathbf{w}} = 0
 \nonumber
 $$
@@ -1039,7 +975,7 @@ $$
 and also
 
 $$
- 
+
  \mathbf{v} = \mathbf{0} \Longrightarrow  \mathbf{v}\ip \mathbf{w} = 0
   \Longrightarrow  |\mathbf{v}\ip \mathbf{w}| = 0.
 \nonumber
@@ -1105,43 +1041,46 @@ $$
 
 %%\begin{proof}
 %%A short algebraic proof is as follows: \\
-%%We start from $\norm{\vect{u}+t\vect{v}}^2 \geq 0$ for each  $t$ in $\mathbb{R}$.
+%%We start from $\norm{\vect{u}+t\vect{v}}^2 \geq 0$ for each $t$ in $\mathbb{R}$.
 %%Using the fact that
 %%
+
 $$
 
 %%  \norm{\vect{u}+t\vect{v}}^2 =  (\vect{u}+t\vect{v})\ip(\vect{u}+t\vect{v})
-%%$$
+%%
+$$
 
 %%and the properties of the dot product we find that
 %%
+
 $$
 
 %%     \vect{u}\ip\vect{u} +2t\vect{u}\ip\vect{v} + t\vect{v}\ip\vect{v} \geq 0, \text{\, for all }t \text{\, in \,}\mathbb{R}
-%%$$
-
-%%The on the left is a second order polynomial in $t$ with a positive coefficient of $t^2$.  Since this polynomial only takes on nonnegative values it follows that its discriminant must be less than or equal to zero:
 %%
+$$
+
+%%The on the left is a second order polynomial in $t$ with a positive coefficient of $t^2$. Since this polynomial only takes on nonnegative values it follows that its discriminant must be less than or equal to zero:
+%%
+
 $$
 
 %%  D = (2\vect{u}\ip\vect{v})^2 - 4(\vect{u}\ip\vect{u})\cdot(\vect{v}\ip\vect{v}) \leq 0
-%%$$
-
-%%Rewriting, and again using $\norm{\vect{w}}^2 = \vect{w}\ip\vect{w}$ quickly reveals the inequality we set out to prove:
 %%
 $$
 
+%%Rewriting, and again using $\norm{\vect{w}}^2 = \vect{w}\ip\vect{w}$ quickly reveals the inequality we set out to prove:
+%%
+
+$$
+
 %%  (\vect{u}\ip\vect{v})^2 \leq  \norm{\vect{u}}^2\norm{\vect{v}}^2 \iff  |\vect{u}\ip\vect{v}| \leq  \norm{\vect{u}}\norm{\vect{v}}.
-%%$$
+%%
+$$
 
 %%\end{proof}
 
-
-
-
-
-
-```{admonition} Exercise  
+```{admonition} Exercise
 :name: Ex:InnerProduct:Cauchy-Schwarz-Check
 
 
@@ -1165,13 +1104,10 @@ $$
 
 ```
 
-
 With this inequality established, the Triangle Inequality
 {eq}`Item:Prop:InnerProduct:TriangleInequality` is easily proved. Let's repeat it, and prove it.
 
-
-
-```{prf:theorem}  
+```{prf:theorem}
 
 For any two vectors in $\mathbb{R}^n$:
 
@@ -1183,8 +1119,7 @@ $$
 
 ```
 
-
-```{prf:proof}  
+```{prf:proof}
 :class: dropdown
 
 
@@ -1205,9 +1140,7 @@ and this, apart from the factor 2, is  the Cauchy-Schwarz Inequality.
 
 ```
 
-
-
-```{admonition} Exercise  
+```{admonition} Exercise
 :name: Ex:InnerProduct:TriangleInequality
 
 
@@ -1234,28 +1167,24 @@ $$
 ```
 
 (Subsec:InnerProduct:Angles_in_Rn)=
-## Angles in  $\mathbb{R}^n$ 
+
+## Angles in $\mathbb{R}^n$
 
 The first motivation to consider the dot product came from the question of perpendicularity.
 We have seen that the length of a vector can also be computed using a dot product.
 
-Below we will show that not only can the  dot product  be used to mark angles between vectors of $\frac12\pi$
-(namely, when the vectors are perpendicular), but that it is  possible to express the angle between any two (nonzero) vectors into dot products.
+Below we will show that not only can the dot product be used to mark angles between vectors of $\frac12\pi$
+(namely, when the vectors are perpendicular), but that it is possible to express the angle between any two (nonzero) vectors into dot products.
 
-
-
-
-```{figure}  Images/Fig-InnerProduct-AngleAndProjection.svg
+```{figure} Images/Fig-InnerProduct-AngleAndProjection.svg
 :name: Fig:InnerProduct:AngleAndProjection
 
 Angle between two vectors
 ```
 
+First we will show a geometrical characterization of the dot product that holds in $\mathbb{R}^2$ as well as in $\mathbb{R}^3$.
 
-First we will show a geometrical characterization of the dot product that holds in  $\mathbb{R}^2$ as well as in $\mathbb{R}^3$.
-
-
-````{prf:proposition}  
+````{prf:proposition}
 :label: Prop:InnerProduct:DotProdGeometric
 
 
@@ -1282,8 +1211,7 @@ $$
 
 ````
 
-
-```{prf:observation}  
+```{prf:observation}
 :label: Rem:InnerProduct:AngleViaDotProd
 
 
@@ -1306,8 +1234,7 @@ $$
 
 ```
 
-
-````{prf:proof}  
+````{prf:proof}
 
 Now let's derive formula {eq}`Eq:InnerProduct:GeometricDefinition`.
 Assume that $\mathbf{v}$ and $\mathbf{w}$ are nonzero vectors.
@@ -1359,7 +1286,7 @@ So we may conclude that
 
 In the case of an obtuse angle, we use that the projection of $\mathbf{w}$ onto $\mathbf{v}$ is equal to the projection
 of $\mathbf{w}$ onto $-\mathbf{v}$, as it is in fact the projection onto the line consisting of all multiples of $\mathbf{v}$. Now look at the picture on the right of figure \ref{Fig:InnerProduct:AngleAndProjection}. There you see that $\mathbf{w}$  and
-$-\mathbf{v}$ make a sharp angle $\psi = \pi - \phi$, so we can apply Equation (\ref{Eq:InnerProduct:GeometricInterpretation}) to  $\mathbf{w}$  and $-\mathbf{v}$: 
+$-\mathbf{v}$ make a sharp angle $\psi = \pi - \phi$, so we can apply Equation (\ref{Eq:InnerProduct:GeometricInterpretation}) to  $\mathbf{w}$  and $-\mathbf{v}$:
 
 
 $$
@@ -1374,8 +1301,7 @@ $$
 
 ````
 
-
-```{admonition} Exercise  
+```{admonition} Exercise
 :name: Ex:InnerProduct:AnglesInMethaneMolecule
 
 In a methane molecule CH${}_4$  the four H-atoms are positioned in a perfectly symmetrical way around the C-atom.
@@ -1409,13 +1335,9 @@ $$
 
 ```
 
-
-
-
 Since we have defined the dot product and the norm in $\mathbb{R}^n$, we can use the last formula to also define the angle between two vectors in $\mathbb{R}^n$:
 
-
-```{prf:definition}  
+```{prf:definition}
 :label: Dfn:InnerProduct:AngleInRn
 
 
@@ -1438,7 +1360,7 @@ $$
 
 ```
 
-Note that just as before in the plane and in three-dimensional space, for nonzero vectors $\mathbf{v}$ and  $\mathbf{w}$ we have
+Note that just as before in the plane and in three-dimensional space, for nonzero vectors $\mathbf{v}$ and $\mathbf{w}$ we have
 
 $$
 
@@ -1447,9 +1369,7 @@ $$
 \nonumber
 $$
 
-
-
-```{admonition} Exercise  
+```{admonition} Exercise
 :name: Ex:InnerProduct:AngleInRn
 
 

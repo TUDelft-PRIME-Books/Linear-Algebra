@@ -1,1 +1,4 @@
 _build
+.venv
+__pycache__
+temp.md
