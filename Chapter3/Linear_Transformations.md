@@ -900,19 +900,16 @@ $$
     c_1T(\mathbf{x}_1)+c_2T(\mathbf{x}_2)+\ldots +c_kT( \mathbf{x}_k).
 $$
 
-In words:  for any linear transformation 
-
-<table>
-<tr>
-        the image of a linear combination of vectors is equal to<br>
-        the linear combination of their images.
-</tr>
-</table>
-
-
-
 
 ::::::
+
+In words:  for any linear transformation 
+
+<span style="border-style:solid; padding:4px; border-width:2px">
+        the image of a linear combination of vectors is equal to
+        the linear combination of their images.
+</span>
+
 
 
 
