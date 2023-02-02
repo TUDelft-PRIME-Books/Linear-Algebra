@@ -647,26 +647,26 @@ $$
    \begin{array}{ccc}
         & 
         \begin{bmatrix}
-            b_{11} & b_{12}&  \ldots& {\color{blue}b_{1j}} & \ldots&  b_{1p} \\
-            b_{21} & b_{22}&  \ldots&  {\color{blue}b_{2j}} & \ldots&  b_{2p} \\
+            b_{11} & b_{12}&  \ldots& {\color{red}b_{1j}} & \ldots&  b_{1p} \\
+            b_{21} & b_{22}&  \ldots&  {\color{red}b_{2j}} & \ldots&  b_{2p} \\
             \vdots &  \vdots&  \ldots&  & \ldots& \vdots    \\
-            b_{m1} & b_{m2}&  \ldots&  {\color{blue}b_{nj}} &  \ldots& b_{mp}
+            b_{m1} & b_{m2}&  \ldots&  {\color{red}b_{nj}} &  \ldots& b_{mp}
           \end{bmatrix} \\
     \begin{bmatrix}
             a_{11} & a_{12}&  \ldots& \ldots&  a_{1n} \\
             a_{21} & a_{22}&  \ldots& \ldots&  a_{2n} \\
             \vdots &  \vdots&  \ldots& \ldots& \vdots    \\
-              {\color{blue}a_{i1}} &  {\color{blue}a_{i2}}&   {\color{blue}\cdots}& \ldots&   {\color{blue}a_{in}} \\
+              {\color{red}a_{i1}} &  {\color{red}a_{i2}}&   {\color{red}\cdots}& \ldots&   {\color{red}a_{in}} \\
             \vdots &  \vdots&  \ldots& \ldots& \vdots    \\
             a_{m1} & a_{m2}&  \ldots&  \ldots& a_{mn}
     \end{bmatrix} \!\! &  \!
     \begin{bmatrix}
             c_{11} & c_{12}&  \ldots& c_{1j} &\ldots&  c_{1p} \\
-            c_{21} & a_{22}&  \ldots&  c_{2j} &\ldots&  c_{2p} \\
+            c_{21} & c_{22}&  \ldots&  c_{2j} &\ldots&  c_{2p} \\
             \vdots &  \vdots&  \ldots& & \ldots& \vdots    \\
-             c_{i1} &  a_{i2}&  \cdots&{\color{blue}c_{ij}} &\ldots&   c{in} \\
+             c_{i1} &  c_{i2}&  \cdots&{\color{red}c_{ij}} &\ldots&   c_{in} \\
             \vdots &  \vdots&  \ldots& &\ldots& \vdots    \\
-            a_{m1} & a_{m2}&  \ldots&  c_{n} &\ldots& a_{np}
+            c_{m1} & c_{m2}&  \ldots&  c_{n} &\ldots& c_{np}
     \end{bmatrix}
   \end{array}
 
@@ -1340,7 +1340,7 @@ Rules (i), (ii)  are  checked in a straightforward way.  See {ref}`Exc:MatrixOps
 <li>
 
 iii.
-We saw instances of this property already in {prf:ref}`Ex:MatrixOps:AtimesI`  and {ref}`Exc:MatrixOps:I4timesA`. 
+We saw instances of this property already in {prf:ref}`Ex:MatrixOps:AtimesI`  and {numref}`Exc:MatrixOps:I4timesA`. 
 For the general case,  one way to show validity of the first statement is to  note that the $j$-th column of $AI_n$ is $A\mathbf{e_j}$ where $\mathbf{e_j}$ is the $j$-th column of the identity matrix $I_n$.
 This gives the linear combination 
 
