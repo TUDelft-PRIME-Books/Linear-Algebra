@@ -32,6 +32,7 @@ sphinx:
           "norm": ["\\left\\Vert #1 \\right\\Vert",1]
           "cp": ["\\times "]
           "nicefrac": ["\\frac "]
+          "proj": ["\\operatorname{proj} "]
           "Span": ["\\operatorname{Span}\\left\\lbrace #1 \\right\\rbrace",1]
   local_extensions:
     applet: _ext/
