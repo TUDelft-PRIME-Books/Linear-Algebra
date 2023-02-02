@@ -230,7 +230,7 @@ Suppose $\mathbf{v}_{1},\mathbf{v}_{2},\mathbf{v}_{3}$ are vectors in $\mathbb{R
 For example, the equation {eq}`Item:Vectors:Associativity` tells us that we do not have to worry about bracketing when adding vectors. That is, we can first add $\mathbf{v}_{1}$ to $\mathbf{v}_{2}$ and then add $\mathbf{v}_{3}$ to the result or we can first add $\mathbf{v}_{2}$ to $\mathbf{v}_{3}$ and then add the result to $\mathbf{v}_{1}$. In both cases, we will get the same answer.
 
 ````{prf:example} Application
-
+:label: App:Vectors:ChemReac
 
 
 More than three dimensions? How does that make sense? Well, it is actually not so strange at all! Here is an example in which four dimensions occur very naturally. Sodium sulfide ($\ce{Na2S}$) is a chemical used to turn wood into pulp, to bleach textile, and so on. \todo{Comes from wikipedia. Should there be a reference here? How do we deal with references?} It is produced by adding carbon ($\ce{C}$) to sodium sulfate ($\ce{Na_{2}SO_{4}}$), which gives the following reaction:
