@@ -11,8 +11,8 @@ $$
        a_1x_1 &+& a_2x_2 &+& a_3x_3 &=& k_1 \\
       b_1x_1 &+& b_2x_2 &+& b_3x_3 &=& k_2
        \end{array}
-  \right.$$
-
+  \right.
+$$
 
 which we will call a system of two linear equations in three unknowns.
 
