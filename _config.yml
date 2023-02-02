@@ -32,10 +32,10 @@ sphinx:
           "norm": ["\\left\\Vert #1 \\right\\Vert",1]
           "cp": ["\\times "]
           "nicefrac": ["\\frac "]
-          "Span": ["\\text{Span}\\left\\lbrace #1 \\right\\rbrace",1]
+          "Span": ["\\operatorname{Span}\\left\\lbrace #1 \\right\\rbrace",1]
+  local_extensions:
+    applet: _ext/
   extra_extensions:
     - sphinx_proof
     - sphinx_togglebutton
     - sphinx_exercise
-  local_extensions:
-    applet: _ext/
