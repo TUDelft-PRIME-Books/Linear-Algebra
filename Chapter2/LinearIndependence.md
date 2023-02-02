@@ -41,6 +41,7 @@ precisely two vectors, say $\mathbf{u}$ and $\mathbf{v}$. Then $S$ is linearly i
 ::::::
 
 ::::::{prf:proof}
+
 <ul>
 <li>
 
@@ -200,10 +201,9 @@ If $T$ is linearly independent and $S\subseteq T$, then $S$ is linearly independ
 ::::::
 
 ::::::{prf:proof}
-:label: Proof:LinInd:LinDepSets
+%:label: Proof:LinInd:LinDepSets
 
 Exercise.
-
 
 ::::::
 
@@ -230,6 +230,7 @@ has a non-trivial solution.
 ::::::
 
 ::::::{prf:proof}
+
 If $\left\lbrace\mathbf{v_{1}},...,\mathbf{v_{k}}\right\rbrace$ is linearly dependent, one of these vectors, say $\mathbf{v}_{i}$, is linearly dependent on the others, i.e. it is in $\Span{\mathbf{v}_{1},...,\mathbf{v}_{i-1},\mathbf{v}_{i+1},...\mathbf{v}_{k}}$. Therefore, there exist some scalars $c_{1},...,c_{i-1},c_{i+1},...,c_{k}$ such that 
 
 $$
@@ -278,7 +279,7 @@ has a non-trivial solution, i.e. if $A$ has a column without a pivot.
 
 
 ::::::{prf:proof}
-:label: Proof:LinInd:LinIndisColwithoutPivot
+%:label: Proof:LinInd:LinIndisColwithoutPivot
 
 
 Exercise.
@@ -351,7 +352,7 @@ An ordered set $S=(\mathbf{v_{1}},...,\mathbf{v_{n}})$ is linearly dependent if 
 
 
 ::::::{prf:proof}
-:label: Eq:LinInd:vkLinCombofOthers
+%:label: Eq:LinInd:vkLinCombofOthers
 
 Let us assume $v_{k}=c_{1}\mathbf{v}_{1}+\cdots+c_{k-1}\mathbf{v}_{k-1}$ for some scalars $c_{1},...,c_{k-1}$. An arbitrary element $\mathbf{v}$ of $\Span{S}$ is a linear combination of $\mathbf{v}_{1},...,\mathbf{v}_{n}$, so it is 
 
@@ -414,6 +415,7 @@ Suppose $\mathbf{u_{1}},...,\mathbf{u_{k}}$ and $\mathbf{v_{1}},...,\mathbf{v_{l
 
 
 ::::::{prf:proof}
+
 Consider the matrices 
 
 $$
@@ -452,6 +454,7 @@ Let $S$ be a subset of $\mathbb{R}^{n}$. If there are more than $n$ vectors in $
 
 
 ::::::{prf:proof}
+
 Take distinct vectors $\mathbf{v_{1}},...,\mathbf{v_{n+1}}$ in $S$. $\Span{\mathbf{v_{1}},...,\mathbf{v_{n+1}}}$ is contained in $\Span{\mathbf{e_{1}},..,\mathbf{e_{n}}}$ and $n+1>n$, so $\left\lbrace\mathbf{v_{1}},..,\mathbf{v_{n+1}}\right\rbrace$ is linearly dependent by {prf:ref}`Thm:LinInd:TooManyVectsimpliesLinDep`. Since this set is contained in $S$, $S$ must be linearly dependent, too, by {prf:ref}`Prop:LinInd:LinDepSets`.
 
 
