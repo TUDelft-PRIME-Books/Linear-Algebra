@@ -5,6 +5,7 @@
 :fig: Images/image_shown_in_print_version.svg
 :name: name_that_is_used_to_refer_to_this_figure
 :title: This title is shown when you full-screen the applet
+:beta: enabled
 
 A plane through the point $P$.
 ```
