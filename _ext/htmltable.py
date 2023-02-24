@@ -1,7 +1,7 @@
-import sys
 from docutils import nodes
 from docutils.parsers.rst import directives
 from docutils.parsers.rst.directives.tables import Table
+from docutils.parsers.rst import roles
 from docutils.nodes import entry
 
 from sphinx.locale import _
@@ -87,15 +87,19 @@ class HTMLTableDirective(Table):
                 row_node = nodes.row()
                 cell_list = row.find_all('th')
                 for cell in cell_list:
-
                     cell_text = nodes.raw(None,cell.text,format='html')
-                    node_entry = nodes.entry()
-                    node_entry += cell_text
-                    #if len(cell.attrs.items())>0:
-                    node_entry['morecols']=2
-                    #entry= nodes.entry(**cell.attrs)
-                    #entry += cell_text
+                    attrs = {}
+                    if len(cell.attrs) > 0:
+                        for key,value in cell.attrs.items():
+                            if key == 'colspan':
+                                attrs['morecols']=int(value)-1
+                            if key == 'rowspan':
+                                attrs['morerows']=int(value)-1
+                            else:
+                                attrs[key] = str(value)
 
+                    node_entry = nodes.entry(**attrs)
+                    node_entry.extend(cell_text)
                     row_node += node_entry
 
                 th_rows.append(row_node)
@@ -124,6 +128,7 @@ def visit_htmltable_node(self, node):
 
 def depart_htmltable_node(self, node):
     pass
+
 
 def setup(app):
 
