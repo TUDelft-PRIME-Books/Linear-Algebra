@@ -25,7 +25,7 @@ class AppletDirective(Figure):
 		'zoom': directives.unchanged,
 		'height': directives.unchanged,
 		'width': directives.unchanged,
-		'beta': directives.unchanged
+		'unreviewed': directives.unchanged
 	})
 	required_arguments = 0
 
@@ -43,7 +43,7 @@ class AppletDirective(Figure):
 		# Generate GET params and inline styling
 		params_dict = parse_options(self.options)
 		params = '&'.join([f'{key}={quote(value)}' for key, value in params_dict.items()])
-		style = generate_style(self.options.get('width', None), self.options.get('height', None), self.options.get('beta', False))
+		style = generate_style(self.options.get('width', None), self.options.get('height', None), self.options.get('unreviewed', False))
 
 		base_url = os.environ.get('BASE_URL', DEFAULT_BASE_URL)
 		full_url = f'{base_url}{url}{"?" if params else ""}{params}'

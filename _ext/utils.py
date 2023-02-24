@@ -1,7 +1,7 @@
 from typing import Optional
 
 
-def generate_style(height: Optional[str], width: Optional[str], beta: bool):
+def generate_style(height: Optional[str], width: Optional[str], unreviewed: bool):
 	'''
 	Given a height and width, generates an inline style that can be used in HTML.
 	'''
@@ -14,7 +14,7 @@ def generate_style(height: Optional[str], width: Optional[str], beta: bool):
 	if width:
 		styles += f'width: {width};'
 
-	if beta:
+	if unreviewed:
 		styles += 'border: dotted red;'
 
 	return styles
