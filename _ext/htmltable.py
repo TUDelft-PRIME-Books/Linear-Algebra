@@ -2,6 +2,7 @@ import sys
 from docutils import nodes
 from docutils.parsers.rst import directives
 from docutils.parsers.rst.directives.tables import Table
+from docutils.nodes import entry
 
 from sphinx.locale import _
 from bs4 import BeautifulSoup as bs
@@ -9,6 +10,14 @@ from bs4 import BeautifulSoup as bs
 def align(argument):
     return directives.choice(argument, ('left', 'center', 'right'))
 
+class centry(entry):
+
+    basic_attributes = ('ids', 'classes', 'colspan', 'names', 'dupnames')
+    local_attributes = ('backrefs',)
+    list_attributes = basic_attributes + local_attributes
+    known_attributes = list_attributes + ('source',)
+    tagname = 'entry'
+    child_text_separator = '\n\n'
 
 class HTMLTableDirective(Table):
 
@@ -80,17 +89,14 @@ class HTMLTableDirective(Table):
                 for cell in cell_list:
 
                     cell_text = nodes.raw(None,cell.text,format='html')
+                    node_entry = nodes.entry()
+                    node_entry += cell_text
+                    #if len(cell.attrs.items())>0:
+                    node_entry['morecols']=2
+                    #entry= nodes.entry(**cell.attrs)
+                    #entry += cell_text
 
-                    if cell.attrs.__len__() > 0:
-                        entry = nodes.entry()
-                        entry += cell_text
-                        for key,value in cell.attrs.items():
-                            entry.attributes[key]=[value]
-                    else:
-                        entry = nodes.entry()
-                        entry+=cell_text
-
-                    row_node += entry
+                    row_node += node_entry
 
                 th_rows.append(row_node)
 
