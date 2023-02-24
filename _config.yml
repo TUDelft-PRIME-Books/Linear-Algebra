@@ -36,6 +36,7 @@ sphinx:
           "Span": ["\\operatorname{Span}\\left\\lbrace #1 \\right\\rbrace",1]
   local_extensions:
     applet: _ext/
+    htmltable: _ext/
   extra_extensions:
     - sphinx_proof
     - sphinx_togglebutton
