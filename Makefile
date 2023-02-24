@@ -1,0 +1,2 @@
+all :
+	jupyter-book build .
