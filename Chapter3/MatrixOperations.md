@@ -6,7 +6,7 @@
 ## Introduction
 
 
-In Chapter 2 matrices were introduced to represent systems of linear equations. The coefficients of a linear system were put into the coefficient matrix $A$, and a system as a whole could be squeezed into the augmented matrix.  In {ref}`Sec:LinTrafo` we used matrices to construct linear transformations. In this chapter we will study matrices as entities on their own, though every now and then we will keep in mind their role in the two contexts just mentioned.
+In Chapter 2 matrices were introduced to represent systems of linear equations. The coefficients of a linear system were put into the coefficient matrix $A$, and a system as a whole could be squeezed into the augmented matrix.  In {numref}`Sec:LinTrafo` we used matrices to construct linear transformations. In this chapter we will study matrices as entities on their own, though every now and then we will keep in mind their role in the two contexts just mentioned.
 
 
 
@@ -2063,7 +2063,7 @@ $$
 
 And what can we say about $A^{-1}$? 
 
-We will dedicate the  whole next section to this topic.
+We will dedicate {numref}`Sec:MatrixInv` to this topic.
 
 
 ::::::
