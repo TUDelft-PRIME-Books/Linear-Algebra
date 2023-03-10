@@ -4,7 +4,7 @@ from docutils import nodes
 from docutils.parsers.rst import directives
 from sphinx.directives.patches import Figure
 
-from utils import parse_options, generate_style
+from utils import parse_options, generate_style, ReviewStatus
 
 
 DEFAULT_BASE_URL = 'https://openla.ewi.tudelft.nl/applet/'
@@ -25,6 +25,7 @@ class AppletDirective(Figure):
 		'zoom': directives.unchanged,
 		'height': directives.unchanged,
 		'width': directives.unchanged,
+		'status': directives.unchanged
 	})
 	required_arguments = 0
 
@@ -41,13 +42,15 @@ class AppletDirective(Figure):
 
 		# Generate GET params and inline styling
 		params_dict = parse_options(self.options)
+		params_dict['iframe'] = 'true'  # To let the applet know its being run in an iframe
 		params = '&'.join([f'{key}={quote(value)}' for key, value in params_dict.items()])
-		style = generate_style(self.options.get('width', None), self.options.get('height', None))
+		status = ReviewStatus.parse(self.options.get('status', ''))
+		style = generate_style(self.options.get('width', None), self.options.get('height', None), status)
 
 		base_url = os.environ.get('BASE_URL', DEFAULT_BASE_URL)
 		full_url = f'{base_url}{url}{"?" if params else ""}{params}'
 		applet_html = f'''
-			<div class="applet" style={style}>
+			<div class="applet" style="{style}">
 				<noscript class="loading-lazy">
 					<iframe src="{full_url}" allow="fullscreen" loading="lazy" frameborder="0"></iframe>
 				</noscript>
