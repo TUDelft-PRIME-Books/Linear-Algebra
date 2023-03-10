@@ -1,4 +1,4 @@
-
+(Sec:GeomLinTrans)=
 # Some important classes of linear transformations
 
 
