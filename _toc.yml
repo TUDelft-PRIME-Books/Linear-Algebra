@@ -25,6 +25,11 @@ chapters:
       - file: 'Chapter3/MatrixInverse.md'
       - file: 'Chapter3/Injectivity_and_surjectivity.md'
       - file: 'Chapter3/LUdecomp.md'
+  - file: 'Chapter4/intro.md'
+    sections:
+      - file: 'Chapter4/Subspaces_of_Rn.md'
+      - file: 'Chapter4/BasisAndDimension.md'
+      - file: 'Chapter4/ChangeOfBasis.md'
   - file: 'Chapter5/intro.md'
     sections:
       - file: 'Chapter5/SymmetricMatrices.md'

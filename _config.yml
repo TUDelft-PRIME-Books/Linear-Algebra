@@ -23,6 +23,9 @@ sphinx:
     mathjax3_config: 
       tex:
         macros:
+          "CoBmatrix": ["P_{{\\mathcal #2}\\leftarrow{\\mathcal #1}} ",2]
+          "mc": "\\mathcal"
+          "PB": "P_{\\mathcal B}"
           "N": "\\mathbb{N}"
           "C": "\\mathbb{C}"
           "R": "\\mathbb{R}"
@@ -31,12 +34,18 @@ sphinx:
           "abs": ["\\left\\vert #1 \\right\\vert",1]
           "norm": ["\\left\\Vert #1 \\right\\Vert",1]
           "cp": ["\\times "]
+          "Nul": ["\\rm Nul\\, #1", 1]
+          "Col": ["\\rm Col\\, #1", 1]
+          "Row": ["\\rm Row\\, #1", 1]
+          "Rank": ["\\rm rank\\, #1", 1]
           "nicefrac": ["\\frac "]
           "proj": ["\\operatorname{proj} "]
           "Span": ["\\operatorname{Span}\\left\\lbrace #1 \\right\\rbrace",1]
   local_extensions:
     applet: _ext/
     htmltable: _ext/
+    latextable: _ext/
+    review: _ext/
   extra_extensions:
     - sphinx_proof
     - sphinx_togglebutton
