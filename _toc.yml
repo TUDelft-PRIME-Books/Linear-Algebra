@@ -20,8 +20,8 @@ chapters:
   - file: 'Chapter3/intro.md'
     sections:
       - file: 'Chapter3/Linear_Transformations.md'
-      - file: 'Chapter3/GeometryofLinearTransformations.md'
       - file: 'Chapter3/MatrixOperations.md'
+      - file: 'Chapter3/GeometryofLinearTransformations.md'
       - file: 'Chapter3/MatrixInverse.md'
       - file: 'Chapter3/Injectivity_and_surjectivity.md'
       - file: 'Chapter3/LUdecomp.md'
