@@ -42,6 +42,7 @@ class AppletDirective(Figure):
 
 		# Generate GET params and inline styling
 		params_dict = parse_options(self.options)
+		params_dict['iframe'] = 'true'  # To let the applet know its being run in an iframe
 		params = '&'.join([f'{key}={quote(value)}' for key, value in params_dict.items()])
 		status = ReviewStatus.parse(self.options.get('status', ''))
 		style = generate_style(self.options.get('width', None), self.options.get('height', None), status)
