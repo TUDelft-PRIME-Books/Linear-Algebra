@@ -1,3 +1,6 @@
+:::{review}
+:::
+
 # Matrix Factorisation
 
 When solving linear systems, it is very convenient to find an echelon form, so you can solve it using backward substitution. 
@@ -243,9 +246,6 @@ The proof for [iii.](#Item:prop:PropertiesTriangularMatricesInverse) is proposed
 
 
 ::::::
-
-
-
 
 
 
@@ -1034,12 +1034,9 @@ So in total we have to perform
  
 
 $$
-
-
 \frac{4n^3-3n^2-7n}{6}
- 
-
 $$
+
 arithmetic operations to bring the matrix to echelon form.
 
 If we just count the number of arithmetic operations to compute the $LU$ decomposition then we need 
@@ -1065,37 +1062,20 @@ The total number of arithmetic operations needed to solve a linear system with r
 In many applications in engineering, it is required to solve $m$ linear systems, $[A|b_1\,b_2\,\dots b_m]$, that have the same matrix of coefficients. In this situation is where the $LU$ Decomposition comes in handy. In {numref}`tbl:comparison_gausselim_LU` we can see the efficiency of the $LU$ decomposition.
 
 
-
-:::{htmltable} Comparison between solving linear systems with row reduction (RR) and with $LU$ decomposition ($LU$)
-:title: Comparison between solving linear systems with row reduction (RR) and with $LU$ decomposition ($LU$)
+:::{latextable} Comparison between solving linear systems with row reduction (RR) and with $LU$ decomposition ($LU$)
+:header-rows: 2
 :class: longtable table-bordered table-striped table-hover table
-:align: Right
+:align: right
 :name: tbl:comparison_gausselim_LU
 
-<table class="longtable table-bordered table-striped table-hover table">
-<thead>
-<tr> 
-<th> n </th>
-<th colspan="2"> m=5 </th>
-<th colspan="2"> m=10 </th>
-<th colspan="2"> m=50 </th> 
-</tr>
-<tr>
-    <th></th> 
-    <th> RR </th> 
-    <th> LU </th> 
-    <th> RR </th> 
-    <th> LU </th> 
-    <th> RR </th> 
-    <th> LU </th>
-</tr>
-</thead>
-<tbody>
-<tr><td>3 </td> <td>140 </td> <td>88 </td> <td>280 </td> <td>163 </td> <td>1400 </td> <td>763 </tr>
-<tr><td>5 </td> <td>575 </td> <td>295 </td> <td>1150 </td> <td>520 </td> <td>5750 </td> <td>2320 </tr>
-<tr><td>10 </td> <td>4025 </td> <td>1565 </td> <td>8050 </td> <td>2515 </td> <td>40250 </td> <td>10115 </tr>
-</tbody>
-</table>
+\begin{tabular}{rrrrrrr}
+$n$ &   \multicolumn{2}{c}{$m=5$} &   \multicolumn{2}{c}{$m=10$} &   \multicolumn{2}{c}{$m=50$} \\
+& RR & $LU$   & RR & $LU$   & RR & $LU$ \\ 
+$3$ & $140$ & $88$ & $280$ & $163$ & $1400$ & $763$ \\
+$5$ & $575$ & $295$ & $1150$ & $520$ & $5750$ & $2320$ \\
+$10$ & $4025$ & $1565$ & $8050$ & $2515$ & $40250$ & $10115$ \\
+\end{tabular}
+
 :::
 
 </li>
