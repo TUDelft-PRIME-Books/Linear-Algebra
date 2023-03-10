@@ -1,5 +1,5 @@
 _build
 .venv
 __pycache__
-.python-version
 temp.md
+conf.py

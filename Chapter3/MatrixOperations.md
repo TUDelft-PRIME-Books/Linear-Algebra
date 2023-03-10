@@ -632,7 +632,7 @@ This is sometimes called the **row-column expansion** of the product.
 
 
 ::::::{prf:proof}
-We already saw this row-column expansion in Section {ref}`Sec:MatVecProduct`.
+We already saw this row-column expansion in {numref}`Sec:MatVecProduct`.
 
 
 ::::::
@@ -756,64 +756,16 @@ $$
 
 
 
-
-
-
-Some people like the following scheme
-
-$$
-
-   \begin{array}{ccc}
-        & \!
-        \begin{bmatrix}
-            b_{11} & b_{12}&  \ldots& {\color{blue}b_{1j}} & \ldots&  b_{1p} \\
-            b_{21} & b_{22}&  \ldots&  {\color{blue}b_{2j}} & \ldots&  b_{2p} \\
-            \vdots &  \vdots&  \ldots&  & \ldots& \vdots    \\
-            b_{n1} & b_{n2}&  \ldots&  {\color{blue}b_{nj}} &  \ldots& b_{np}
-          \end{bmatrix} \\ 
-    \begin{bmatrix}
-            a_{11} & a_{12}&  \ldots& \ldots&  a_{1n} \\
-            a_{21} & a_{22}&  \ldots& \ldots&  a_{2n} \\
-            \vdots &  \vdots&  \ldots& \ldots& \vdots    \\
-              {\color{blue}a_{i1}} &  {\color{blue}a_{i2}}&   {\color{blue}\cdots}& \ldots&   {\color{blue}a_{in}} \\
-            \vdots &  \vdots&  \ldots& \ldots& \vdots    \\
-            a_{m1} & a_{m2}&  \ldots&  \ldots& a_{mn}
-    \end{bmatrix} \!\! &  \!
-    \begin{bmatrix}
-            c_{11} & c_{12}&  \ldots& c_{1j} &\ldots&  c_{1p} \\
-            c_{21} & a_{22}&  \ldots&  c_{2j} &\ldots&  c_{2p} \\
-            \vdots &  \vdots&  \ldots& & \ldots& \vdots    \\
-             c_{i1} &  a_{i2}&  \cdots&{\color{blue}c_{ij}} &\ldots&   c{in} \\
-            \vdots &  \vdots&  \ldots& &\ldots& \vdots    \\
-            a_{m1} & a_{m2}&  \ldots&  c_{n} &\ldots& a_{np}
-    \end{bmatrix}
-  \end{array}
-
-$$
-
-%As the scheme makes clear in a graphical way the $i$-th row of $AB$   only depends on the $i$-th row
-%of $A$ and the $j$-th column of the product only depends on the $j$-th column
-%of $B$. The last is of course part of the definition.\\
-
-
-
-
-
 ::::::{prf:example}
 :label: Ex:MatrixOps:AtimesI
 
-
-
 $$
-
    \begin{bmatrix} a_{11}& a_{12} & a_{13} \\  a_{21}& a_{22} & a_{23} \\ a_{31}& a_{32} & a_{33} \\ a_{41} & a_{42} & a_{43}   \end{bmatrix} 
    \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 &  0\\ 0 & 0 & 1 \end{bmatrix}
    = \begin{bmatrix} a_{11}& a_{12} & a_{13} \\  a_{21}& a_{22} & a_{23} \\ a_{31}& a_{32} & a_{33} \\ a_{41} & a_{42} & a_{43}   \end{bmatrix}. 
 \nonumber
 
 $$
-
- 
 
 ::::::
 
@@ -1335,7 +1287,7 @@ We need a good perspective to give a proof of the general case.
 
 ::::::{prf:proof}
  (of {prf:ref}`Prop:MatrixOps:ProdProperties`)  
-Rules (i), (ii)  are  checked in a straightforward way.  See {ref}`Exc:MatrixOps:RulesProduct`.
+Rules (i), (ii)  are  checked in a straightforward way.  See {numref}`Exc:MatrixOps:RulesProduct`.
 <ul>
 <li>
 
