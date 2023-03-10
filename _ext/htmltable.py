@@ -1,8 +1,7 @@
 from docutils import nodes
 from docutils.parsers.rst import directives
 from docutils.parsers.rst.directives.tables import Table
-from docutils.parsers.rst import roles
-from docutils.nodes import entry
+from docutils.parsers.rst import Parser
 
 from sphinx.locale import _
 from bs4 import BeautifulSoup as bs
@@ -10,35 +9,26 @@ from bs4 import BeautifulSoup as bs
 def align(argument):
     return directives.choice(argument, ('left', 'center', 'right'))
 
-class centry(entry):
-
-    basic_attributes = ('ids', 'classes', 'colspan', 'names', 'dupnames')
-    local_attributes = ('backrefs',)
-    list_attributes = basic_attributes + local_attributes
-    known_attributes = list_attributes + ('source',)
-    tagname = 'entry'
-    child_text_separator = '\n\n'
-
 class HTMLTableDirective(Table):
 
-    option_spec = {'header-rows': directives.nonnegative_int,
-                'stub-columns': directives.nonnegative_int,
-                'width': directives.length_or_percentage_or_unitless,
-                'widths': directives.value_or(('auto', ),
-                                                directives.positive_int_list),
-                'class': directives.class_option,
-                'name': directives.unchanged,
-                'title' : directives.unchanged,
-                'align': align} 
+    option_spec = Table.option_spec.copy()
+#    option_spec = {'header-rows': directives.nonnegative_int,
+#                'stub-columns': directives.nonnegative_int,
+#                'width': directives.length_or_percentage_or_unitless,
+#                'widths': directives.value_or(('auto', ),
+#                                                directives.positive_int_list),
+#                'class': directives.class_option,
+#                'name': directives.unchanged,
+#                'align': align} 
+    option_spec.update({
+            'header-rows' : directives.unchanged,
+    })
 
     def run(self):
 
         col_widths = []
 
         title, messages = self.make_title()
-
-        node = nodes.Element()
-        self.state.nested_parse(self.content, self.content_offset, node)
 
         html_table_text = self.block_text.split('\n\n')[-1].strip(' ')
         
@@ -63,7 +53,6 @@ class HTMLTableDirective(Table):
 
         num_head_rows = len(table_soup.find('thead').find_all('tr'))
 
-        #table['classes'] += ['colwidths-auto']
         rows = []
 
         # parse the body of the table:
@@ -87,7 +76,12 @@ class HTMLTableDirective(Table):
                 row_node = nodes.row()
                 cell_list = row.find_all('th')
                 for cell in cell_list:
-                    cell_text = nodes.raw(None,cell.text,format='html')
+                    cell_text = nodes.raw(None,cell.text)
+                    cell_text_node = nodes.Element()
+                    self.state.nested_parse(cell_text, 0, cell_text_node)
+                    aux = nodes.Text('')
+                    aux.children = cell_text_node.children
+                    cell_text_node = aux
                     attrs = {}
                     if len(cell.attrs) > 0:
                         for key,value in cell.attrs.items():
@@ -99,7 +93,7 @@ class HTMLTableDirective(Table):
                                 attrs[key] = str(value)
 
                     node_entry = nodes.entry(**attrs)
-                    node_entry.extend(cell_text)
+                    node_entry += cell_text_node
                     row_node += node_entry
 
                 th_rows.append(row_node)
@@ -113,6 +107,9 @@ class HTMLTableDirective(Table):
         tbody.extend(rows[num_head_rows:])
         tgroup += tbody
 
+        if 'align' in self.options:
+            table['align'] = self.options.get('align')
+        table['classes'] += self.options.get('class', [])
         self.set_table_width(table)
         self.add_name(table)
 
