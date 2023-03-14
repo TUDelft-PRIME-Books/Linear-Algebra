@@ -30,13 +30,13 @@ chapters:
       - file: 'Chapter4/Subspaces_of_Rn.md'
       - file: 'Chapter4/BasisAndDimension.md'
       - file: 'Chapter4/ChangeOfBasis.md'
-  - file: 'Chapter5/intro.md'
+  - file: 'Chapter6/intro.md'
     sections:
-      - file: "Chapter5/EigenvaluesEigenvectors.md"
-      - file: "Chapter5/CharPolynomial.md"
-      - file: "Chapter5/Diagonalizability.md"
-      - file: 'Chapter5/SymmetricMatrices.md'
-      - file: 'Chapter5/ComplexEigenvalues.md'
+      - file: "Chapter6/EigenvaluesEigenvectors.md"
+      - file: "Chapter6/CharPolynomial.md"
+      - file: "Chapter6/Diagonalizability.md"
+      - file: 'Chapter6/SymmetricMatrices.md'
+      - file: 'Chapter6/ComplexEigenvalues.md'
   - file: 'Chapter7/intro.md'
     sections:
       - file: 'Chapter7/Orthogonality.md'
