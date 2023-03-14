@@ -180,7 +180,7 @@ If two non-zero vectors $\mathbf{u}$ and $\mathbf{v}$ are parallel, then $\mathb
 
 ::::{prf:example} 
 
-If we start with three non-zero vectors in $\mathbb{R}^3$, then the resulting span may take on different forms. The span of the three vectors in {numref}`Figure  %s <Fig:LinearCombinations:SpanThreeVectors1>`, for example, is equal to the entire space $\mathbb{R}^3$. In {prf:ref}`Section:Basis` we will see why this is the case.
+If we start with three non-zero vectors in $\mathbb{R}^3$, then the resulting span may take on different forms. The span of the three vectors in {numref}`Figure  %s <Fig:LinearCombinations:SpanThreeVectors1>`, for example, is equal to the entire space $\mathbb{R}^3$. In {numref}`Sec:BasisDim` we will see why this is the case.
 
 :::{figure} Images/Fig-LinearCombinations-SpanThreeR3.svg
 :name: Fig:LinearCombinations:SpanThreeVectors1
