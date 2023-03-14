@@ -37,3 +37,6 @@ chapters:
       - file: "Chapter5/Diagonalizability.md"
       - file: 'Chapter5/SymmetricMatrices.md'
       - file: 'Chapter5/ComplexEigenvalues.md'
+  - file : 'Appendices/intro.md'
+    sections:
+      - file: "Appendices/ComplexNumbers.md"
