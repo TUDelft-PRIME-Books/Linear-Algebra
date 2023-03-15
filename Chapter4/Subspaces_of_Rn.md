@@ -37,11 +37,11 @@ $S$ contains the zero vector.
 
  If two vectors $\vect{u}$ and $\vect{v}$ are in $S$, then their sum is in $S$ too:
 
+
 $$
 
 \vect{u} \in S,  \vect{v} \in S \quad \Longrightarrow \quad
 \vect{u}+ \vect{v} \in S.
-\nonumber
 
 $$
 
@@ -107,9 +107,9 @@ $S$ certainly contains the zero vector.
 
 $$
 
-\vect{u} \in S,  \vect{v} \in S \quad
-\Longrightarrow  \vect{u} =  \vect{v}  =  \vect{0} \quad
-\Longrightarrow   \vect{u} +  \vect{v}  =  \vect{0} +  \vect{0} =
+\vect{u} \in S,  \vect{v} \in S  \,\,
+\Longrightarrow \,\, \vect{u} =  \vect{v}  =  \vect{0} \,\,
+\Longrightarrow  \,\, \vect{u} +  \vect{v}  =  \vect{0} +  \vect{0} =
 \vect{0} \in S.
 \nonumber
 
@@ -395,7 +395,6 @@ $$
 \vect{u_1}, \ldots , \vect{u_k} \in S,  c_1, \ldots , c_k \in \R
 \quad \Longrightarrow \quad
 c_1\vect{u_1}+  \ldots + c_k\vect{u_k} \in S.
-\nonumber
 
 $$
 
@@ -429,7 +428,7 @@ $$
 $$
 
 In this situation the vectors are said to **generate** the subspace, or to be a **set of generators** for the subspace.
-Recall  {prf:ref}`Dfn:LinearCombinations:Span`:  the span of zero vectors in $\R^n$ (in other words: the span of the empty set) is defined to be the set $\{\vect{0}\}$.
+Recall  {prf:ref}`Dfn:LinearCombinations:Span`:  the span of zero vectors in $\R^n$ (in other words, the span of the empty set) is defined to be the set $\{\vect{0}\}$.
 
 
 
@@ -534,13 +533,13 @@ Each subspace $S$ in $\R^3$ has one of the following forms:
 \end{tabular}
 :::
 
-In other words:
+In other words
 
 $$
-S = \text{Span}\{\vect{v_i} | i = 1,\ldots, r\} \quad \text{where  } r = 0, 1, 2 \text{  or  } 3,
+S = \text{Span}\{\vect{v}_i\, |\,\ i = 1,\ldots, r\} \quad \text{where  }\, r = 0, 1, 2 \text{  or  } 3,
 $$
 
-and we may assume that the  vectors $v_i$ are linearly independent.
+and we may assume that the  vectors $\vect{v}_i$ are linearly independent.
 
 Once more we recall the convention that the span of zero vectors (i.e., if $r = 0$)  is the set only containing the zero vector.
 
@@ -573,10 +572,7 @@ Again, this may the end point, $S =  \Span{\vect{v}_1,\vect{v}_2}$, and  then we
 If not, $S$ must contain a third linearly independent vector $\vect{v}_3$, and the same argument as before gives that $S$ contains $\text{Span}\{\vect{v}_1,\vect{v}_2,\vect{v}_3\}$. We claim that this implies that
 
 $$
-
 S = \Span{\vect{v}_1,\vect{v}_2,\vect{v}_3} = \R^3, \text{  i.e., we are in case (D)}
-\nonumber
-
 $$
 
 For, if not, there must be a vector   $  \vect{v}_4 \in \R^3$  not in  $\Span{\vect{v}_1,\vect{v}_2,\vect{v}_3}$.
@@ -603,19 +599,13 @@ The  argument can be generalized to prove the following theorem.
 Every subspace of $\R^n$ is of the form
 
 $$
-
-S = \Span{\vect{v}_1, \ldots , \vect{v_r}} \quad \text{for some  } r \leq n,
-\nonumber
-
+S = \Span{\vect{v}_1, \ldots , \vect{v_r}} \quad \text{for some  } \, r \leq n,
 $$
 
 where
 
 $$
-
-\{\vect{v}_1, \ldots , \vect{v_r}\}  \text{    is linearly independent.}
-\nonumber
-
+\{\vect{v}_1, \ldots , \vect{v_r}\} \,  \text{is linearly independent.}
 $$
 
 
@@ -638,22 +628,16 @@ We now turn our attention to two important subspaces closely related to an $m\ti
 ::::::{prf:definition}
 
 
-The **column space** of an $m\times n$ matrix $A= [ \vect{a_1}  \vect{a_2}   \ldots   \vect{a_n} ]$ is the span of the columns of $A$:
+The **column space** of an $m\times n$ matrix $A= [ \vect{a}_1   \vect{a}_2    \ldots     \vect{a}_n ]$ is the span of the columns of $A$:
 
 $$
-
 \Col{A} = \Span{\vect{a}_1,\vect{a}_2,\ldots,\vect{a}_n}.
-\nonumber
-
 $$
 
 The  **null space** of an $m\times n$ matrix $A$ is the solution set of the homogeneous equation $A\vect{x} = \vect{0}$:
 
 $$
-
-\Nul{A} = \{\vect{x} \in \mathbb{R}^n |  A\vect{x} = \vect{0}\}.
-\nonumber
-
+\Nul{A} = \{\vect{x} \in \mathbb{R}^n \,|\,  A\vect{x} = \vect{0}\}.
 $$
 
 
@@ -670,7 +654,7 @@ $$
 
 
 For an $m\times n$ matrix $A$, Col $A$ is the set of all vectors of the form $A\vect{x}$, for  $\vect{x}\in\R^n$.   The column space
-$\Col{A}$   can also be interpreted as the range of the linear transformation $T:\R^n \to \R^m$ defined via
+Col ${A}$   can also be interpreted as the range of the linear transformation $T:\R^n \to \R^m$ defined via
 $T(\vect{x}) = A\vect{x}$.  (Cf. {prf:ref}`Prop:LinTrafo:RangeTA`.)
 
 
@@ -688,10 +672,7 @@ $T(\vect{x}) = A\vect{x}$.  (Cf. {prf:ref}`Prop:LinTrafo:RangeTA`.)
 Note that for an $m\times n $ matrix  $A$  the column space is a subset of $\R^m$ and the null space lives in $\R^n$.  In short:
 
 $$
-
 \Col{A} \subseteq \R^m ,\quad \Nul{A} \subseteq \R^n.
-\nonumber
-
 $$
 
 
@@ -702,7 +683,7 @@ $$
 
 
 
-The next proposition shows that the designation `space' in the above definition is well justified:
+The next proposition shows that the designation 'space' in the above definition is well justified:
 
 
 
@@ -752,33 +733,33 @@ the span of a set of vectors in $\R^m$ is indeed a subspace of $\R^m$.
 <li>
 
 To show that the null space is a subspace, we check the  requirements  of the definition.
-First, $A\vect{0} =\vect{0}$,  so $\vect{0}$ is contained in the null space.
+
+First, 
+
+$$
+  A\vect{0} =\vect{0},
+$$  
+
+so $\vect{0}$ is contained in the null space.
 
 Second,  to show that  $\Nul{A}$ is closed under sums, suppose that
 $\vect{u}$ and   $\vect{v}$  are two vectors in $\Nul{A}$. Then from
 
 $$
-
 A\vect{u} = \vect{0} \quad \text{and} \quad A\vect{v} = \vect{0},
-\nonumber
-
 $$
 
 we deduce
 
 $$
-
 A(\vect{u}+\vect{v}) =  A\vect{u}+ A\vect{v} = \vect{0} +\vect{0} = \vect{0},
-\nonumber
-
 $$
 
 which implies that
 
 $$
 
-\vect{u}+ \vect{v} \text{  also lies in  } \Nul{A}.
-\nonumber
+\vect{u}+ \vect{v} \text{  also lies in  } \Nul\,{A}.
 
 $$
 
@@ -786,10 +767,10 @@ Third, to show that  $\Nul{A}$  is closed under taking scalar multiples,
 suppose that
 $\vect{u}$ is a vector  in $\Nul{A}$, i.e.
 
+
 $$
 
 A\vect{u} = \vect{0}
-\nonumber
 
 $$
 
@@ -799,18 +780,15 @@ Then
 
 $$
 
-A(c\vect{u}) = cA(\vect{u}) = c\vect{0} = \vect{0},
-\nonumber
+A(c\vect{u}) = c\,A(\vect{u}) = c\,\vect{0} = \vect{0},
+
 
 $$
 
 which proves that
 
 $$
-
 c\vect{u} \text{  also lies in  } \text{Nul} A.
-\nonumber
-
 $$
 
 Hence $\Nul{A}$  has all the properties of a subspace.
@@ -832,28 +810,23 @@ Hence $\Nul{A}$  has all the properties of a subspace.
 ::::::{prf:remark}
 
 
-The above proof,  that the null space is a subspace,  was as basic as possible: we started from the definitions (of null space and subspace) and used properties of the matrix product to connect the two.
+The above proof,  that the null space is a subspace,  is as basic as possible. That is, we started from the definitions (of null space and subspace) and used properties of the matrix product to connect the two.
 
-Alternatively we could have used knowledge already acquired:  in {numref}`Section:SolutionSets`  we have seen that the solution set of a homogeneous
+Alternatively we could have used knowledge already acquired earlier. In {numref}`Section:SolutionSets`  we have seen that the solution set of a homogeneous
 system
 
 $$
-
 A\vect{x} = \vect{0}
-\nonumber
-
 $$
 
 can be written in parametric vector form
 
 $$
-
 \vect{x} = c_1\vect{u_1} + c_2\vect{u_2} + \ldots +  c_k\vect{u_k}.
-\nonumber
-
 $$
 
-Thus:  it is the span of a set of vectors, and as such, a subspace.
+Thus:  it is the span of a set of vectors, and as such, 
+by {prf:ref}`Prop:Subspaces:SpanIsSubspace` it is a subspace.
 
 
 
@@ -881,10 +854,7 @@ Suppose that $A$  and $B$ are  matrices for which the product $AB$ is defined.
 Show that the column space of $AB$ is s subset of the column space of $A$, i.e.
 
 $$
-
 \Col{AB} \subseteq \Col{A}.
-\nonumber
-
 $$
 
 </li>
@@ -892,7 +862,7 @@ $$
 <li>
 
 
-Can you find a similar formula relating the null space of $AB$ to the null space of either $A$  or $B$(or both)?
+Can you find a similar formula relating the null space of $AB$ to the null space of either $A$  or $B$  (or both)?
 
 
 </li>
@@ -915,13 +885,11 @@ Can you find a similar formula relating the null space of $AB$ to the null space
 
 
 For an $n\times n$ matrix $A$,  the null space and the column space are both subspaces of (the same) $\R^n$.  Prove or disprove the following statement.
+
 For a square matrix $A$:
 
 $$
-
 A^2 = O \quad \iff \quad  \Col{A}  \subseteq \Nul{A}.
-\nonumber
-
 $$
 
 

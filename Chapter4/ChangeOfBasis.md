@@ -21,10 +21,11 @@ For instance, we can take
 
 $$
   \vect{b}_1 = \begin{bmatrix} 2\\3 \end{bmatrix}, \quad
-  \vect{b}_2 = \begin{bmatrix} 3\\-2 \end{bmatrix}
+  \vect{b}_2 = \begin{bmatrix} 3\\-2 \end{bmatrix}.
 $$
 
-See Figure...
+See {numref}`Figure %s <Fig:ChangeOfBasis:Reflection>`.
+
 
 :::{figure} Images/Fig-ChangeOfBasis-Reflection.svg
 :name: Fig:ChangeOfBasis:Reflection
@@ -101,7 +102,7 @@ To prove that the linear combination is unique, suppose that also
 
 
 $$
-    \vect{v} = d_1\vect{b}_1 + d_2\vect{b}_2 + \ldots + d_m\vect{b}_m  
+    \vect{v} = d_1\vect{b}_1 + d_2\vect{b}_2 + \, \ldots \, + d_m\vect{b}_m  
 $$
 
 
@@ -110,7 +111,7 @@ Then we have to show that in fact
 
 
 $$
-  c_1 = d_1, \quad  c_2 = d_2, \quad .\,.\,.\, \quad , \quad  c_m = d_m.
+  c_1 = d_1, \quad  c_2 = d_2, \quad .\,.\,.\, \quad   c_m = d_m.
 $$
 
 
@@ -129,7 +130,7 @@ $(c_i-d_i)$ must be 0. Thus we find
 
 
 $$
-   (c_1-d_1) = 0, \,\, \ldots\,,  \,\, (c_m-d_m) = 0, 
+   (c_1-d_1) = 0, \quad \ldots  \quad  (c_m-d_m) = 0, 
 $$
 
 
@@ -137,7 +138,7 @@ from which we can conclude that
 
 
 $$
-c_1 = d_1, \, c_2 = d_2, \, \ldots\,, \, c_m =d_m
+c_1 = d_1, \quad c_2 = d_2, \quad \ldots  \quad c_m =d_m.
 $$
 
 
@@ -182,7 +183,7 @@ We find the coordinates of the vectors $\vect{v}= \begin{bmatrix} 6 \\ -2\end{bm
  $\mc{B} = \{\vect{b}_1, \vect{b}_2 \} =
 \left\{ \begin{bmatrix} 1 \\ 3\end{bmatrix}, \begin{bmatrix} 2 \\ 1\end{bmatrix}  \right\}$  of $\R^2$.
 
-For $\vect{v}$  we then have to solve the vector equation
+For $\vect{v}$  we have to solve the vector equation
 
 
 $$
@@ -228,7 +229,6 @@ $$
     \ldots\,,\,
      \begin{bmatrix} 0 \\ 0 \\ 0\\ \vdots \\ 1 \end{bmatrix}
   \right\}.
-  \nonumber
 $$
 
 With respect to the standard basis it is very easy to find coordinates.
@@ -304,7 +304,7 @@ The rule to go from basis $\mc{B}$  to the standard basis can thus be written as
 
 ::::
 
-The procedure of {prf:ref}`Ex:ChangeOfBasis:ToStandardBasis` can be generalized to bases in $\R^n$. Before we state how, we fist define another useful concept.
+The procedure of {prf:ref}`Ex:ChangeOfBasis:ToStandardBasis` can be generalized to bases in $\R^n$. Before we state how, we first define another useful concept.
 
 ::::{prf:definition}
 :label: Dfn:ChangeOfBasis:CoBmatrix
@@ -326,7 +326,6 @@ If ${\mathcal B} = \{\vect{b}_1, \,\vect{b}_2,\, \ldots,\, \vect{b}_n \}$ is a  
 
 $$
    \vect{v} =  P_{\mc{B}} [\vect{v}]_{\mc B}.
-\nonumber
 $$
 
 ::::
@@ -440,7 +439,6 @@ This means that for each vector $\vect{v}$ in $\R^n$ it holds that
 
 $$
    T(\vect{v}) = A\,\vect{v}.
-\nonumber
 $$
 
 In this way we have expressed everything into coordinates with respect to the standard bases $\mc{E}$ and $\mc{E}'$  for  $\R^n$ and $\R^m$ respectively. 
@@ -455,7 +453,6 @@ Then for each  vector $\vect{v}$ in $\R^n$:
 
 $$
   [T(\vect{v})]_{\mc{C}} = \left[[T(\vect{b}_1)]_{\mc{C}} \,\rule[-.5ex]{0ex}{3ex}\,[T(\vect{b}_2)]_{\mc{C}}\,\,\ldots\,\,[T(\vect{b}_n)]_{\mc{C}}\right] [\vect{v}]_{\mc{B}}
-\nonumber
 $$
 
 ::::
@@ -496,7 +493,7 @@ $$
     [T(\vect{v})]_{\mc{C}} &=& \left[ [\,T(\vect{b}_1)]_{\mc{C}}\,\,\,\rule[-1ex]{0ex}{4ex}\,\ldots\,\,[T(\vect{b}_n)]_{\mc{C}}\,\right]
                                     \begin{bmatrix} f_1 \\ \vdots \\ f_n \end{bmatrix} \\ 
     &=& \left[\,[T(\vect{b}_1)]_{\mc{C}}\,\,\,\rule[-0.5ex]{0ex}{3ex}\,\ldots\,\,[T(\vect{b}_n)]_{\mc{C}}\,\right][\vect{v}]_{\mc{B}}
-     \end{array}
+     \end{array}.
 $$
 
 ::::
@@ -509,7 +506,6 @@ Prove the identity
 $$
    [c_1\vect{v}_1 +c_2\vect{v}_2+ \ldots + c_n\vect{v}_n ]_{\mc{B}} = 
    c_1[\vect{v}_1 ]_{\mc{B}} + c_2[\vect{v}_2 ]_{\mc{B}} + \ldots + c_n[\vect{v}_n ]_{\mc{B}}
-\nonumber
 $$
 
 that is used to go from  Equation {eq}`Eq:ChangeOfBasis:LinearityTransform`  to  Equation {eq}`Eq:ChangeOfBasis:LinearityCoords` in the proof of {prf:ref}`Prop:ChangeOfBasis:MatrixOfTrafo`. 
@@ -585,13 +581,13 @@ $$
 ::::{prf:example}
 :label: Ex:ChangeOfBasis:MatrixFRomTb1Tb2
 
-We will  find the matrix of  the linear transformation  ${T:\R^2 \to\R^2}$   sending  $\vect{b}_1 = \begin{bmatrix} 1\\3\end{bmatrix}$\,  to  \,$\begin{bmatrix} 5 \\ 5\end{bmatrix}$\,
-and  \,$\vect{b}_2 = \begin{bmatrix} 2\\1\end{bmatrix}$\,  to  $\begin{bmatrix} 1 \\ -2\end{bmatrix}$ \,
-with respect to the basis $\mathcal{B} =\{ \vect{b}_1, \vect{b}_2\}$.\\ 
+We will  find the matrix of  the linear transformation  ${T:\R^2 \to\R^2}$   sending  $\vect{b}_1 = \begin{bmatrix} 1\\3\end{bmatrix}$  to  $\begin{bmatrix} 5 \\ 5\end{bmatrix}$
+and  $\vect{b}_2 = \begin{bmatrix} 2\\1\end{bmatrix}$  to  $\begin{bmatrix} 1 \\ -2\end{bmatrix}$ 
+with respect to the basis $\mathcal{B} =\{ \vect{b}_1, \vect{b}_2\}$. 
 The only thing that remains to be done before we can write down
 
 $$
-   [T]_{\mc{B}} = \left[\, [T(\vect{b}_1 )]_{\mc{B}}\,\,\,[T(\vect{b}_2 )]_{\mc{B}}\,\right]
+   [T]_{\mc{B}} = \big[\, [T(\vect{b}_1 )]_{\mc{B}}\,\,\,[T(\vect{b}_2 )]_{\mc{B}}\,\big]
 $$
 
 is to find the coordinates of the given images with respect to the basis $\mathcal{B}$. This can be done as in {prf:ref}`Ex:ChangeOfBasis:BasicExampleR2` or by using the change-of-coordinates matrix as in {prf:ref}`Ex:ChangeOfBasis:PropCoB`:
@@ -678,7 +674,7 @@ $$
 From this we can immediately write down the matrix of $R$ with respect to the $\mc{B}$-basis:
 
 $$
-   [R]_{\mc{B}} = \begin{bmatrix} [R(\vect{b}_1)]_{\mc{B}} & [R(\vect{b}_2)]_{\mc{B}} \end{bmatrix}
+   [R]_{\mc{B}} = \big[\, [R(\vect{b}_1)]_{\mc{B}} \,\, [R(\vect{b}_2)]_{\mc{B}} \,\big]
                 = \begin{bmatrix} 1 & -1 \\ 1 & 0 \end{bmatrix}.
 $$
 
@@ -799,7 +795,6 @@ $$
   \begin{bmatrix}  2 & 1\\ -1 & 1\end{bmatrix} =
   \frac{1}{3}\begin{bmatrix}  -5& 2\\ 4 & 11\end{bmatrix}
   \end{array}
-\nonumber
 $$
 
 Verify that the first column indeed corresponds to the image of $\vect{b}_1$ as we found earlier.
@@ -949,7 +944,7 @@ First of all we will extend the notion of a change-of-coordinates matrix.
 ::::{prf:definition}
 :label: Dfn:ChangeOfBasis:CoBmatrixGeneral
 
-Let ${\mathcal B} = \{\vect{b}_1, \ldots, \vect{b}_n \}$ and ${\mathcal C} = \{\vect{c}_1, \ldots, \vect{c}_n \}$ be two bases of $\R^n$.  The \emph{change-of-basis matrix from ${\mathcal B}$ to ${\mathcal C}$}  is the matrix
+Let ${\mathcal B} = \{\vect{b}_1, \ldots, \vect{b}_n \}$ and ${\mathcal C} = \{\vect{c}_1, \ldots, \vect{c}_n \}$ be two bases of $\R^n$.  The **change-of-basis matrix from ${\mathcal B}$ to ${\mathcal C}$**   is the matrix
 
 $$
   P_{\mc{C} \leftarrow \mc{B}} =
@@ -1001,8 +996,8 @@ $$
 The last expression is a linear combination of $n$ vectors in $\R^n$, thus can be written as a matrix-vector product:
 
 $$
-   [\vect{v}]_{\mc C} = \left[\begin{matrix} [\vect{b}_1]_{\mc C}& \ldots & [\vect{b}_n]_{\mc C} \end{matrix}\right]\begin{bmatrix} p_1 \\ \vdots \\ p_n \end{bmatrix} =
-        \CoBmatrix{B}{C}[\vect{v}]_{\mc B}
+   [\vect{v}]_{\mc C} = \big[ \,[\vect{b}_1]_{\mc C}\,\, \ldots \,\, [\vect{b}_n]_{\mc C} \,\big] \begin{bmatrix} p_1 \\ \vdots \\ p_n \end{bmatrix} =
+        \CoBmatrix{B}{C}[\vect{v}]_{\mc B}.
 $$
 
 ::::
@@ -1050,7 +1045,7 @@ is as follows
 
 ::::
 
-The following diagram illustrates what's going on:
+The following diagram, strikingly similar to the diagram in {prf:ref}`Prop:ChangeOfBasis:MatrixChangeStandardBasis`,   illustrates what is going on.
 
 $$
   \begin{array}{ccc}
