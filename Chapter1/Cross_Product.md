@@ -4,7 +4,8 @@ In this section we will look at a specific operation on vectors in $\mathbb{R}^3
 {numref}`Section %s <Section:LinesAndPlanes:Plane>`
 to construct a vector that is orthogonal to a given plane in $\mathbb{R}^3$. This will allow us to describe such a plane with a very simple equation.
 
-````{prf:definition}
+
+::::{prf:definition}
 
 Let $\mathbf{u}$ and $\mathbf{v}$ be vectors in $\mathbb{R}^3$ such that
 
@@ -17,10 +18,11 @@ The *cross product* $\mathbf{u} \cp \mathbf{v}$ is defined as
 $$
 \mathbf{u} \cp \mathbf{v} = \begin{bmatrix} a_2b_3-a_3b_2 \\ a_3b_1-a_1b_3 \\ a_1b_2-a_2b_1 \end{bmatrix}.
 $$
-````
+
+::::
 
 
-````{prf:example}
+::::{prf:example}
 
 Let us compute the cross product of the following vectors $\mathbf{u}$ and $\mathbf{v}$.
 
@@ -35,23 +37,25 @@ $$
 $$
 
 
-You may notice something peculiar here. The vector $\mathbf{u} \cp \mathbf{v}$ is orthogonal to both $\mathbf{u}$ and $\mathbf{v}$. Indeed, the dot product of $\mathbf{u} \cp \mathbf{v}$ and $\mathbf{u}$ is equal to $(-19)\cdot 2+2\cdot 1+9\cdot 4=-38+2+36=0$ and the dot product $\mathbf{u} \cp \mathbf{v}$ and $\mathbf{v}$ is equal to $(-19)\cdot 3+2\cdot 6+9\cdot 5=-57+12+45=0$. This is no coincidence, as we will see in Proposition 
-{prf:ref}`Prop:CrossProduct:Cportho`.
+You may notice something peculiar here. The vector $\mathbf{u} \cp \mathbf{v}$ is orthogonal to both $\mathbf{u}$ and $\mathbf{v}$. Indeed, the dot product of $\mathbf{u} \cp \mathbf{v}$ and $\mathbf{u}$ is equal to $(-19)\cdot 2+2\cdot 1+9\cdot 4=-38+2+36=0$ and the dot product $\mathbf{u} \cp \mathbf{v}$ and $\mathbf{v}$ is equal to $(-19)\cdot 3+2\cdot 6+9\cdot 5=-57+12+45=0$. 
+This is no coincidence, as we will see in {prf:ref}`Prop:CrossProduct:Cportho`.
 
-````
+::::
+
 
 The definition of the cross product does not give us a lot of information about the properties of this vector. We already know that a vector is defined by a direction and a length. Let us try to determine the direction and the length of the cross product of two vectors. We will start with the direction.
 
 
-````{prf:proposition}
+::::{prf:proposition}
 :label: Prop:CrossProduct:Cportho
 
 
 If $\mathbf{u}$ and $\mathbf{v}$ are vectors in $\mathbb{R}^3$, then $\mathbf{u} \cp \mathbf{v}$ is orthogonal to both $\mathbf{u}$ and $\mathbf{v}$.
 
-````
+::::
 
-````{prf:proof}
+
+::::{prf:proof}
 
 Let $\mathbf{u}$ and $\mathbf{v}$ be vectors in $\mathbb{R}^3$ such that
 
@@ -69,23 +73,23 @@ To establish that $\mathbf{u} \cp \mathbf{v}$ and $\mathbf{u}$ are orthogonal we
 
 In a similar way we can prove that the dot product of $\mathbf{u} \cp \mathbf{v}$ and $\mathbf{v}$ is equal to zero.
 
-````
+::::
 
 Knowing that the cross product of two vectors is orthogonal to these vectors does not give us all we need to know about the direction of the cross product. There are two opposite directions that are both orthogonal to two given non-parallel vectors. We can determine the correct direction of the cross product $\mathbf{u}\cp \mathbf{v}$ using the *right-hand rule*.
 
 
-````{figure}  Images/Fig-CrossProduct-Righthandrule.svg
+::::{figure}  Images/Fig-CrossProduct-Righthandrule.svg
 :name: Fig:CrossProduct:RightHandRule
 
 The right-hand rule. Adapted from Acdx, CC BY-SA 3.0 http://creativecommons.org/licenses/by-sa/3.0/, via Wikimedia Commons.
-````
+::::
 
 If we take our right hand, point our index finger in the direction of $\mathbf{u}$ and our middle finger in the direction of $\mathbf{v}$, as depicted in {numref}`Figure %s <Fig:CrossProduct:RightHandRule>`, then the cross product $\mathbf{u}\cp \mathbf{v}$ points in the direction of our thumb.
 
 So far we have established what the direction is of $\mathbf{u}\cp \mathbf{v}$. Now we will take a look at its length.
 
 
-````{prf:proposition}
+::::{prf:proposition}
 :label: Prop:CrossProduct:NormCrossProduct
 
 
@@ -97,9 +101,10 @@ $$
 
 where $\theta$ is the angle between $\mathbf{u}$ and $\mathbf{v}$.
 
-````
+::::
 
-````{prf:proof}
+
+::::{prf:proof}
 
 Let $\mathbf{u}$ and $\mathbf{v}$ be vectors in $\mathbb{R}^3$ such that
 
@@ -127,45 +132,49 @@ $$
 
 since $\sqrt{(\sin(\theta))^2}=|\sin(\theta)|$.
 
-````
+::::
+
 
 Notice some similarities between the formula for the length of the cross product and a formula that we saw in the Section [](./Inner_Product.md). There we encountered the equality $\mathbf{u}\ip\mathbf{v} = \norm{\mathbf{u}}\norm{\mathbf{v}} \cos(\theta)$, where $\theta$ was the angle between $\mathbf{u}$ and $\mathbf{v}$.
 
 We can derive some interesting geometrical results from {prf:ref}`Prop:CrossProduct:NormCrossProduct`.
 
 
-````{prf:proposition}
+::::{prf:proposition}
 
 Two non-zero vectors $\mathbf{u}$ and $\mathbf{v}$ are parallel if and only if $\mathbf{u}\cp \mathbf{v}=\mathbf{0}$.
 
-````
+::::
 
-````{prf:proof}
+
+::::{prf:proof}
 
 Let $\mathbf{u}$ and $\mathbf{v}$ be two non-zero vectors. First of all, the vector $\mathbf{u}\cp \mathbf{v}$ is equal to the zero vector if and only if $\norm{\mathbf{u} \cp \mathbf{v}}=0$. Since $\norm{\mathbf{u}}$ and $\norm{\mathbf{v}}$ are both not equal to zero, it follows from {prf:ref}`Prop:CrossProduct:NormCrossProduct` that $\norm{\mathbf{u} \cp \mathbf{v}}=0$ if and only if $\sin(\theta)=0$, where $\theta$ is the angle between the vectors. This means that $\mathbf{u}\cp \mathbf{v}=\mathbf{0}$ if and only if $\theta$ is equal to either $0$ or $\pi$, which is equivalent to saying that $\mathbf{u}$ and $\mathbf{v}$ have the same direction or the opposite direction. In both cases the vectors are parallel.
 
-````
+::::
 
 
-````{prf:proposition}
+::::{prf:proposition}
 
 If $\mathbf{u}$ and $\mathbf{v}$ are vectors in $\mathbb{R}^3$, then $\norm{\mathbf{u} \cp \mathbf{v}}$ is equal to the area of the parallelogram spanned by $\mathbf{u}$ and $\mathbf{v}$.
 
-```{figure} Images/Fig-CrossProduct-Area.svg
+:::{figure} Images/Fig-CrossProduct-Area.svg
 :name: Fig:CrossProduct:AreaParallelogram
 
 Parallelogram spanned by two vectors.
-```
-````
 
-````{prf:proof}
+:::
+
+::::
+
+::::{prf:proof}
 
 The area of a parallelogram is equal to the product of the length of its base and its height. As we can see in {numref}`Figure %s <Fig:CrossProduct:AreaParallelogram>` the length of the base of the parallelogram is equal to $\norm{\mathbf{u}}$ and the height is equal to $\norm{\mathbf{h}}$. If we look at the right-angled triangle $OPP'$ we see that $\norm{\mathbf{h}}=\norm{\mathbf{v}}\sin{\theta}$. This means that the area of the parallelogram is equal to $\norm{\mathbf{u}} \norm{\mathbf{v}} \sin(\theta)$ (because we use an angle between $0$ and $\pi$ we can omit the absolute-value signs) and thus to $\norm{\mathbf{u} \cp \mathbf{v}}$.
 
-````
+::::
 
 
-````{prf:example}
+::::{prf:example}
 
 What is the area of the parallelogram with vertices $(0,0,0)$, $(1,2,1)$, $(3,1,1)$ and $(4, 3, 2)$?
 
@@ -184,18 +193,20 @@ Therefore,  the area of the parallelogram is equal to
 $$
 \sqrt{1^2+2^2+(-5)^2}=\sqrt{30}.
 $$
-````
+
+::::
 
 
-````{prf:example}
+::::{prf:example}
 
 What is the area of the triangle with vertices $(2,1,0)$, $(2,2,2)$ and $(3, 1, 1)$? Let us denote these points as $P$, $Q$ and $R$ respectively. How can we use the cross product to determine the area of this triangle? In  {numref}`Figure %s <Fig:CrossProduct:AreaTriangle>` we see that the area of the triangle is half the area of the parallelogram spanned by $\overrightarrow{PQ}$ and $\overrightarrow{PR}$, which is equal to $\norm{\overrightarrow{PQ}\cp\overrightarrow{PR}}$.
 
-```{figure} Images/Fig-CrossProduct-TrianglePQR.svg
+:::{figure} Images/Fig-CrossProduct-TrianglePQR.svg
 :name: Fig:CrossProduct:AreaTriangle
 
 Area of the triangle $PQR$.
-```
+
+:::
 
 The vectors $\overrightarrow{PQ}$ and $\overrightarrow{PR}$ have the following entries.
 
@@ -214,25 +225,40 @@ This means that the area of the given triangle is equal to
 $$
 \frac{1}{2}\norm{\overrightarrow{PQ} \cp\overrightarrow{PR}}=\frac{\sqrt{1^2+2^2+(-1)^2}}{2}=\frac{\sqrt{6}}{2}.
 $$
-````
+
+::::
+
 
 Finally, we will take a look at some algebraic properties of the cross product. Most of these are similar to the properties of the dot product, but there is one important difference. The cross product is not commutative. This means that $\mathbf{u}\cp \mathbf{v}$ is not necessarily equal to $\mathbf{v}\cp \mathbf{u}$.
 
 
-````{prf:proposition}
+::::{prf:proposition}
 :label: Prop:CrossProduct:RulesCrossProduct
 
 The following  properties hold for all vectors $\mathbf{v_1}$, $\mathbf{v_2}$ and $\mathbf{v_3}$ in $\mathbb{R}^3$ and scalars $c$ in $\mathbb{R}$.
 
-i. $\mathbf{v_1}\cp\mathbf{v_2} = -\mathbf{v_2}\cp\mathbf{v_1}$.
+<ol type="i">
+<li>
 
-ii. $(c\mathbf{v_1})\cp\mathbf{v_2} = c(\mathbf{v_1}\cp\mathbf{v_2}) = \mathbf{v_1}\cp(c \mathbf{v_2})$.
+$\mathbf{v_1}\cp\mathbf{v_2} = -\mathbf{v_2}\cp\mathbf{v_1}$.
 
-iii. $(\mathbf{v_1}+\mathbf{v_2})\cp\mathbf{v_3} = \mathbf{v_1}\cp\mathbf{v_2}+\mathbf{v_1}\cp\mathbf{v_3}$.
+</li>
+<li>
 
-````
+$(c\mathbf{v_1})\cp\mathbf{v_2} = c(\mathbf{v_1}\cp\mathbf{v_2}) = \mathbf{v_1}\cp(c \mathbf{v_2})$.
 
-````{prf:proof}
+</li>
+<li>
+
+$(\mathbf{v_1}+\mathbf{v_2})\cp\mathbf{v_3} = \mathbf{v_1}\cp\mathbf{v_2}+\mathbf{v_1}\cp\mathbf{v_3}$.
+
+</li>
+</ol>
+
+::::
+
+
+::::{prf:proof}
 
 Let $\mathbf{v_1}$, $\mathbf{v_2}$ and $\mathbf{v_3}$ be vectors in $\mathbb{R}^3$ such that
 
@@ -279,12 +305,13 @@ iii. This follows from the distributivity of the real numbers.
 &= \mathbf{v_1}\cp\mathbf{v_3}+\mathbf{v_2}\cp\mathbf{v_3}.
 \end{align*}
 
-````
-
-In Section {prf:ref}`??` we will take a look at the determinant of a matrix. The entries of a cross product of two vectors can also be computed using determinants.
+::::
 
 
-````{prf:definition}
+In Section {numref}`??` we will take a look at the determinant of a matrix. The entries of a cross product of two vectors can also be computed using determinants.
+
+
+::::{prf:definition}
 
 Let $a$, $b$, $c$ and $d$ be real numbers. The expression
 
@@ -293,10 +320,11 @@ $$
 $$
 
 is equal to the value $ad-bc$. Such an expression is called a *determinant*.
-````
+
+::::
 
 
-````{prf:proposition}
+::::{prf:proposition}
 
 Let $\mathbf{u}$ and $\mathbf{v}$ be vectors in $\mathbb{R}^3$ such that
 
@@ -316,15 +344,17 @@ $$
 x=\begin{vmatrix} a_2 & b_2 \\ a_3 & b_3  \end{vmatrix}, \quad y=-\begin{vmatrix} a_1 & b_1 \\ a_3 & b_3  \end{vmatrix}, \quad z=\begin{vmatrix} a_1 & b_1 \\ a_2 & b_2  \end{vmatrix}.
 $$
 
-````
+::::
 
-````{prf:proof}
+
+::::{prf:proof}
 
 This follows from the definition.
-````
+
+::::
 
 
-````{admonition} Exercise
+::::{prf:example}
 
 Let us compute the cross product of the following vectors $\mathbf{u}$ and $\mathbf{v}$ using determinants.
 
@@ -355,4 +385,4 @@ $$
 \mathbf{u} \cp \mathbf{v} = \begin{bmatrix} 5 \\ 4 \\ -11 \end{bmatrix}.
 $$
 
-````
+::::
