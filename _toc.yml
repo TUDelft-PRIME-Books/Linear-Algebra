@@ -43,8 +43,7 @@ chapters:
   - file: 'Chapter7/intro.md'
     sections:
       - file: 'Chapter7/Orthogonality.md'
-      - file: 'Chapter7/GramShmidt.md'
-      - file: 'Chapter7/LeastSquares.md'
+      - file: 'Chapter7/GramSchmidt.md'
   - file : 'Appendices/intro.md'
     sections:
       - file: "Appendices/ComplexNumbers.md"
