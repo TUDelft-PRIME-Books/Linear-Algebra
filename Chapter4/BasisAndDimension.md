@@ -116,20 +116,20 @@ The  sets  $ {\mathcal A}_1$ and $ {\mathcal A}_3$ each consist of three linearl
 ::::::{prf:definition}
 :label: Dfn:BasisDim:Basis
 
-A set of vectors ${\mathcal B} = \{\vect{b_1}, \vect{b_2}, \ldots, \vect{b_{r}}\}$ is called a **basis** of a subspace $S$ if
+A set of vectors ${\mathcal B} = \{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_r\}$ is called a **basis** of a subspace $S$ if
 
 <ol type = "i">
 
 <li>
 
-$S = \Span{\vect{b_1}, \vect{b_2}, \ldots, \vect{b_{r}}}$.
+$S = \Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_r}$.
 
 
 </li>
 
 <li>
 
- The set $\{\vect{b_1}, \vect{b_2}, \ldots, \vect{b_{r}}\}$ is linearly independent.
+ The set $\{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_r\}$ is linearly independent.
 
 
 
@@ -149,12 +149,11 @@ The **standard basis** for $\R^n$ is given by the set
 
 $$
 
-{\mathcal E} = \{\vect{e_1}, \vect{e_2}, \ldots, \vect{e_n}\}
-\nonumber
+{\mathcal E} = \{\vect{e}_1, \vect{e}_2, \ldots, \vect{e}_n\}
 
 $$
 
-where the vector $e_j$ stands for the $j$-th column of the $n \times n$ identity matrix.
+where the vector $\vect{e}_j$ stands for the $j$-th column of the $n \times n$ identity matrix.
 
 
 ::::::
@@ -326,7 +325,7 @@ For the remaining vectors,  starting from the second vector we act as follows:
 All along the way the span of the vectors remains intact,
 so equal to  $S$, while at the end the remaining generators will form a linearly independent set.
 
-As for the other  statement:  for that we can use an argument as in {prf:ref}`Prop:Subspaces:AllSubspacesR3`.
+As for the other  statemen,   for that we can use an argument as in {prf:ref}`Prop:Subspaces:AllSubspacesR3`.
 As long as the span of the vectors is not the whole subspace we can add a linearly independent vector from $S$.  Since in $\R^n$ there are at most $n$ linearly independent vectors, this process will end after at most $n$ steps.
 
 ::::::
@@ -368,7 +367,7 @@ $$
 \end{bmatrix}
 $$
 
-are obviously independent, and span all of $\R^2$.  It is clear that they cannot span more, so
+are obviously independent, and span all of $\R^2$.  It is that the columns of $A$ cannot span more than  $\R^2$, so we may conclude
 
 $$
 \Col{A} = \R^2
@@ -515,7 +514,7 @@ We typically do this by row reducing the augmented matrix
 
 $$
 
-[ A | \vect{0} ].
+[ A \,|\, \vect{0} ].
 \nonumber
 
 $$
@@ -528,7 +527,7 @@ More importantly, **row reduction does not change the linear relations between t
 Also,  in the final (echelon) matrix
 
 $$
-[ E | \vect{0}]   =
+[ E \,|\, \vect{0}]   =
 \left[\begin{array}{cccc|c} 1 &  -3 & 0  &  2 & 0\\
 0 &   0 & 1  &  1  & 0
 \end{array}
@@ -683,7 +682,8 @@ A \quad \sim \quad E_1A \quad  \sim  \quad E_2E_1 A \quad  \sim \quad \ldots\qua
 
 $$
 
-where the last matrix $E$ is the reduced echelon form of the matrix $A$.\\
+where the last matrix $E$ is the reduced echelon form of the matrix $A$.
+
 Since elementary matrices are invertible, and their product is as well, we have
 
 $$
@@ -829,7 +829,7 @@ To find a basis of the column space we only have to look at the pivot columns of
 
 
 
-To find a basis of the column space by taking the pivot columns is more efficient than do the step-by-step thinning. By omitting the non-pivot columns the thinning is done at one stroke.
+To find a basis of the column space by taking the pivot columns is more efficient than do the thinning step-by-step. By omitting the non-pivot columns the thinning is done at one stroke.
 
 
 
@@ -860,7 +860,7 @@ E =
 0  &  0 & 3 & -2 & 4 \\
 0  &  0 & 0 &  2 & 3 \\
 0  &  0 & 0 &  0 & 0
-\end{bmatrix}
+\end{bmatrix}.
 $$
 
 The pivots are in the first, the third and the fourth column,  so the corresponding columns of $A$  give a basis for $\Col{A}$:
@@ -949,8 +949,8 @@ from the section on linear independence.  Because of its  vital important we res
 
 
 {prf:ref}`Thm:LinInd:TooManyVectsimpliesLinDep`. Let 
-$\vect{u}_{1},...,\vect{u_{k}}$ and $\vect{v}_{1},...,\vect{v_{l}}$ be vectors in $\R^{n}$. 
-If $ k< l$ and $\Span{\vect{u}_{1},...,\vect{u_{k}}}$ contains $\Span{\vect{v}_{1},...,\vect{v_{l}}}$ then the set $\left\lbrace\vect{v}_{1},...,\vect{v_{l}}\right\rbrace$ is linearly dependent.
+$\vect{u}_{1},...,\vect{u}_{k}$ and $\vect{v}_{1},...,\vect{v}_{\ell}$ be vectors in $\R^{n}$. 
+If $ k< \ell$ and $\Span{\vect{u}_{1},...,\vect{u}_{k}}$ contains $\Span{\vect{v}_{1},...,\vect{v}_{\ell}}$ then the set $\left\lbrace\vect{v}_{1},...,\vect{v}_{\ell}\right\rbrace$ is linearly dependent.
 
 
 We can use this as follows.
@@ -958,8 +958,8 @@ We can use this as follows.
 Suppose
 
 $$
-\{\vect{a_1}, \vect{a_2}, \ldots, \vect{a_k} \} \quad \text{and}
-\quad\{\vect{b_1}, \vect{b_2}, \ldots, \vect{b_{\ell}} \}
+\{\vect{a}_1, \vect{a}_2, \ldots, \vect{a}_k \} \quad \text{and}
+\quad \{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \}
 $$
 
 are two bases for the same subspace $S$.
@@ -968,18 +968,15 @@ So, they are both independent sets, and
 
 $$
 
-S = \Span{\vect{a_1}, \vect{a_2}, \ldots, \vect{a_k} } =
-\Span{\vect{b_1}, \vect{b_2}, \ldots, \vect{b_{\ell}} }.
-\nonumber
-
+S = \Span{\vect{a}_1, \vect{a}_2, \ldots, \vect{a}_k } =
+\Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell}}.
 $$
 
 Since
 
 $$
 
-\Span{\vect{b_1}, \vect{b_2}, \ldots, \vect{b_{\ell}}} \subseteq \Span{\vect{a_1}, \vect{a_2}, \ldots, \vect{a_k}}
-\nonumber
+\Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell}} \subseteq \Span{\vect{a}_1, \vect{a}_2, \ldots, \vect{a}_k},
 
 $$
 
@@ -996,7 +993,7 @@ would imply
 
 $$
 
-\text{the set  } \{\vect{b_1}, \vect{b_2}, \ldots, \vect{b_{\ell}} \}
+\text{the set  } \{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \}
 \text{  is linearly dependent.}
 \nonumber
 
@@ -1077,7 +1074,8 @@ c_2
 = c_1\vect{u_1} + c_2\vect{u_2}.
 $$
 
-Thus $(\vect{u}_1, \vect{u}_2)$ is a basis for $\mathcal{P}$.\\
+Thus $(\vect{u}_1, \vect{u}_2)$ is a basis for $\mathcal{P}$.
+
 We can also take $x_1$ and $x_3$ as free variables, and then find
 
 $$
@@ -1111,7 +1109,7 @@ which provides an alternative basis for $\mathcal{P}$.
 
 <li>
 
-Give another basis of the plane $\mathcal P$, which does not contain a vector that is a multiple of one of the vectors $\begin{bmatrix} -1   \\ 2 \\ 0 \end{bmatrix}$,  $\begin{bmatrix}3   \\ 0 \\ 1\end{bmatrix}$ and  $\begin{bmatrix}0 \\ 6\\1\end{bmatrix}$
+Give another basis of the plane $\mathcal P$, which does not contain a vector that is a multiple of one of the vectors $\begin{bmatrix} -1   \\ 2 \\ 0 \end{bmatrix}$,  $\begin{bmatrix}3   \\ 0 \\ 1\end{bmatrix}$ and  $\begin{bmatrix}0 \\ 6\\1\end{bmatrix}$.
 
 </li>
 
@@ -1147,19 +1145,19 @@ Because of Theorem {prf:ref}`Thm:Subspaces:EqualDim` this is a good definition.
 For the trivial subspace $S = \{\vect{0}\}$ we postulated that its basis is the empty set. Thus,
 
 $$
-\text{dim} S = \text{dim}\{\vect{0}\} = 0.
+\text{dim}\, S = \text{dim}\{\vect{0}\} = 0.
 $$
 
-For the other trivial subspace, the whole $\R^n$ itself the standard basis
+For the other trivial subspace, the whole $\R^n$,  the standard basis
 
 $$
-{\mathcal E} = \{\vect{e_1}, \vect{e_2}, \ldots, \vect{e_n}\},
+{\mathcal E} = \{\vect{e}_1, \vect{e}_2, \ldots, \vect{e}_n\},
 $$
 
 has exactly $n$ elements,  So
 
 $$
-\text{dim} \R^n = n
+\text{dim} \,\R^n = n.
 $$
 
 ::::::
@@ -1182,20 +1180,20 @@ The following proposition sometimes helps to show that a set of vectors is a bas
 ::::::{prf:proposition}
 :label: Prop:BasisDim:TwoOfThreeSuffice
 
-For a set of vectors  $ \{\vect{b_1}, \vect{b_2}, \ldots, \vect{b_{\ell}} \} $  in a subspace $S$ of dimension $k$ each pair of the following three properties implies the remaining property.
+For a set of vectors  $ \{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \} $  in a subspace $S$ of dimension $k$ each pair of the following three properties implies the remaining property.
 
 <ol type = "i">
 
 <li>
 
-$\{\vect{b_1}, \vect{b_2}, \ldots, \vect{b_{\ell}} \}$ is linearly  independent;
+$\{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \}$  is linearly  independent;
 
 
 </li>
 
 <li>
 
- $\Span{\vect{b_1}, \vect{b_2}, \ldots, \vect{b_{\ell}}}=S$;
+ $\Span{\{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \}}=S$;
 
 
 </li>
@@ -1220,12 +1218,7 @@ Another way to put it:  once it is known that the dimension of $S$ equals $k$, e
 
 
 
-
-
-
-
 ::::::{prf:proof}
-
 
 
 We first show the "easy" part:
@@ -1234,7 +1227,7 @@ $$
 \text{(i)   and  (ii)} \quad \Longrightarrow \quad   \text{(iii)}.
 $$
 
-Well, if $\{\vect{b_1}, \vect{b_2}, \ldots, \vect{b_{\ell}} \}$ is linearly  independent and spans $S$, then it is a basis for $S$.  Since all bases of $S$ contain  dim$ S = k$  vectors, it follows that $\ell = k$.
+Well, if $\{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \}$ is linearly  independent and spans $S$, then it is a basis for $S$.  Since all bases of $S$ contain  dim$ S = k$  vectors, it follows that $\ell = k$.
 
 Next, let us prove
 
@@ -1242,55 +1235,54 @@ $$
 \text{(i)   and  (iii)} \quad \Longrightarrow \quad   \text{(ii)}.
 $$
 
-So suppose  $\{\vect{b_1}, \vect{b_2}, \ldots, \vect{b_k} \}$ is linearly  independent, and is contained in $S$.  We have to show that
+So suppose  $\{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k \}$ is linearly  independent, and is contained in $S$.  We have to show that
 
 $$
-\Span{\vect{b_1}, \vect{b_2}, \ldots, \vect{b_k} } = S,
+\Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k } = S,
 $$
 
 i.e.,  each vector $\vect{s}$  in $S$  is contained in
-$\Span{\vect{b_1}, \vect{b_2}, \ldots, \vect{b_k} }$. \\
+$\Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k }$. \\
 To show this,  let $\vect{s}$  be an arbitrary vector in $S$.\\
 Furthermore, let
 
 $$
-\{\vect{a_1}, \vect{a_2}, \ldots, \vect{a_k} \}
+\{\vect{a}_1, \vect{a}_2, \ldots, \vect{a_{k} \}
 $$
 
 be any basis of $S$.
 Then we know  (Proposition ??) that the set
 
 $$
-\{\vect{b_1}, \vect{b_2}, \ldots, \vect{b_k},\vect{s}\}
+\{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k,\vect{s}\}
 $$
 
 which contains $k+1$ elements, is contained is $S$, where we have that
 
 $$
-S = \Span{\vect{a_1}, \vect{a_2}, \ldots, \vect{a_k}}.
+S = \Span{\vect{a}_1, \vect{a}_2, \ldots, \vect{a}_k}.
 $$
 
 So
 
 $$
-\{\vect{b_1}, \vect{b_2}, \ldots, \vect{b_k},\vect{s}\} \subseteq \Span{\vect{a_1}, \vect{a_2}, \ldots, \vect{a_k}}
+\{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k, \vect{s}\} \subseteq \Span{\vect{a}_1, \vect{a}_2, \ldots, \vect{a}_k}.
 $$
 
 
 
-Invoking  Proposition ?? we get that $ \{\vect{b_1}, \vect{b_2}, \ldots, \vect{b_k},s \} \text{  is linearly dependent} $.
+Invoking  Proposition ?? we get that $ \{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k,s \} \text{  is linearly dependent} $.
 
-Since we assumed  $ \{\vect{b_1}, \vect{b_2}, \ldots, \vect{b_k} \} \text{  is linearly independent}$,
-and we may conclude that
-
-$
-\vect{s} \in \Span{\vect{b_1}, \vect{b_2}, \ldots, \vect{b_k} }
-$.
-
-Thus  $\Span{\vect{b_1}, \vect{b_2}, \ldots, \vect{b_k} }$ contains each vector in $S$, i.e.
+Since we assumed  $ \{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k\}$    is linearly independent,  and we may conclude that
 
 $$
-\Span{\vect{b_1}, \vect{b_2}, \ldots, \vect{b_k} } = S.
+\vect{s} \in \Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k}.
+$$
+
+Thus  $\Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k }$ contains each vector in $S$, i.e.
+
+$$
+\Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k } = S.
 $$
 
 The remaining part we leave to the reader.
@@ -1344,21 +1336,21 @@ Of course this statement can also be proved by an argument involving pivots.
 ::::::
 
 
-We conclude this subsection with a theorem that relates the column space and the null space of an $m\times n$  matrix $A$. At first sight there does not seem much to relate:  the column space is a subspace of $\R^m$, whereas the null space `lives' in $\R^n$. However, the null space, i.e. the solution set of the equation
+We conclude this subsection with a theorem that relates the column space and the null space of an $m\times n$  matrix $A$. At first sight there does not seem much to relate:  the column space is a subspace of $\R^m$, whereas the null space 'lives' in $\R^n$. However, the null space, i.e. the solution set of the equation
 
 $$
 A\vect{x} = \vect{0},
 $$
 
-does say something about the linear relations between the columns of $A$:
+does say something about the linear relations between the columns of $A$.
 
 $$
 [ \vect{a_1}  \vect{a_2}  \ldots  \vect{a_n} ]\vect{x} = \vect{0} \quad \iff \quad
 x_1\vect{a_1}+ x_2\vect{a_2}+  \ldots +x_n\vect{a_n} = \vect{0}.
 $$
 
-The more linear relations there are, i.e., the larger $\Nul{A}$ is,\\
-the smaller will be $\Span{\vect{a_1},  \vect{a_2},  \ldots,  \vect{a_n}}$, i.e. $\Col{A}$.
+The more linear relations there are, i.e., the larger $\Nul{A}$ is, but
+the smaller will be $\Span{\vect{a}_1,  \vect{a}_2,  \ldots,  \vect{a}_n}$, i.e. $\Col{A}$.
 
 
 ::::::{prf:theorem} Dimension Theorem
@@ -1406,7 +1398,7 @@ If $A$ is a $3\times5$ matrix, the dimension of the null space of $A$ must be at
 Namely,
 
 $$
-\text{Col} A \subseteq \R^3 \quad \text{implies} \quad \text{dim Col} A \leq 3.
+\text{Col}\,A \subseteq \R^3 \quad \text{implies} \quad \text{dim Col}\, A \leq 3.
 $$
 
 From
@@ -1440,7 +1432,7 @@ Since we are used to write vectors in $\R^n$ as column vectors, we define the ro
 The **row space**  of a matrix $A$ is defined as the column space of its transpose:
 
 $$
-\Row{A} = \Col{A^T}.
+\text{Row}\,{A} = \Col{A^T}.
 $$
 
 ::::::
@@ -1466,11 +1458,10 @@ $$
 A^T =
 \begin{bmatrix}
 1 & 2 \\   -3 & -6 \\ 3 & 1 \\ 5 & 5 \\
-\end{bmatrix}
-,
+\end{bmatrix}.
 $$
 
-so we find
+So we find
 
 $$
 \Row{A} =\Span{
@@ -1514,7 +1505,7 @@ M =
 0 & 2 & 3 & 1 & 5 \\
 0 & 0 & 0 & 4 & 7 \\
 0 & 0 & 0 & 0 & 0
-\end{bmatrix}
+\end{bmatrix}.
 $$
 
 The matrix is in  echelon form, so the three pivot columns give a basis for the column space. Thus
@@ -1610,6 +1601,7 @@ where at the last step we used {prf:ref}`Prop:Subspaces:PivotColsBasis`.
 
 
 ::::::{prf:example}
+:label: Ex:Subspaces:Rowspace4x3
 
 Consider the matrix
 
@@ -1657,7 +1649,7 @@ $$
 $$
 
 Note that for a basis of the row space we don't have to go "back" from the rows of the echelon matrix  to the "corresponding" rows of $A$. As a matter of fact,
-this may lead to a wrong conclusion, as there is  no one-to-one correspondence between the rows of $A$ and the rows of $E$: during the row reduction process rows may have been swapped.
+this may lead to a wrong conclusion, as there is  no one-to-one correspondence between the rows of $A$ and the rows of $E$. The reason is that during the row reduction process rows may have been swapped.
 
 ::::::
 
@@ -1706,7 +1698,7 @@ corresponding to the first two rows of $E$. Taking the first two rows of $A$  (w
 ::::::{exercise}
 :label: Exc:BasisDim:ExpressInRowsOfE
 
-In the above example find out how the four rows of the original matrix can be written as linear combinations of the rows of the reduced echelon form.
+In the above {prf:ref}`Ex:Subspaces:Rowspace4x3` find out how the four rows of the original matrix can be written as linear combinations of the rows of the reduced echelon form.
 
 ::::::
 
@@ -1763,7 +1755,7 @@ The last theorem contains two reformulations of old material:
  For each $m\times n$ matrix $A$:
 
 $$
-\text{rank} A = n -  \text{dim }\Nul{A}
+\text{rank}\,A = n -  \text{dim }\Nul{A}
 $$
 
 </li>
@@ -1773,7 +1765,7 @@ $$
 For each $n\times n$ matrix $A$:
 
 $$
-A \text{  is invertible  } \iff \text{ rank} A = n.
+A \text{  is invertible  } \iff \text{ rank}\, A = n.
 $$
 
 </li>
@@ -1799,7 +1791,7 @@ The statements in {prf:ref}`Thm:BasisDim:RankThm` are both reformulations of ear
 Suppose that $A$  and $B$ are  matrices for which the product $AB$ is defined.  Show that
 
 $$
-\text{rank}(AB) \leq \text{rank} A.
+\text{rank}(AB) \leq \text{rank}\,A.
 $$
 
 ::::::
@@ -1811,7 +1803,7 @@ $$
 Suppose that $A$  and $B$ are  matrices for which the product $AB$ is defined.  Show that
 
 $$
-\text{rank}(AB) \leq \text{rank} B.
+\text{rank}(AB) \leq \text{rank}\,B.
 $$
 
 ::::::
@@ -1843,13 +1835,12 @@ $$
 
 The first inequality is the same as the inequality in {numref}`Exc:BasisDim:ProveRankABLeqRankA`
 and the second inequality follows from the same exercise by taking $A = AP$   and  $B = P^{-1}$.
-This proves  $\text{rank}(AP) =   \text{rank}(A)$.\\
+This proves  $\text{rank}(AP) =   \text{rank}(A)$.
 The identity  $\text{rank}(A) =  \text{rank}(PA)$ follows by considering the transpose:
 
 $$
 \text{rank}(PA) = \text{rank}\left((PA)^T\right)
- = \text{rank}\left(A^TP^T\right)
-.
+ = \text{rank}\left(A^TP^T\right).
 $$
 
 Here we have a product  $A^TP^T$  with  $P^T$  invertible, so we can use use the identity that we already proved, and find
@@ -1875,7 +1866,7 @@ $$
 Show that
 
 $$
-\text{rank} A + \text{rank} B \leq n.
+\text{rank}\, A + \text{rank}\, B \leq n.
 $$
 
 Does the conclusion also hold if  $A$ is an  $m\times n$ matrix and

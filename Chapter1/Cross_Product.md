@@ -1,6 +1,8 @@
 # The Cross Product
 
-In this section we will look at a specific operation on vectors in $\mathbb{R}^3$. This operation is called the *cross product* and it allows us to construct a vector that is orthogonal to two given vectors. We will use this operation in Section [](./Lines_and_Planes.md) to construct a vector that is orthogonal to a given plane in $\mathbb{R}^3$. This will allow us to describe such a plane with a very simple equation.
+In this section we will look at a specific operation on vectors in $\mathbb{R}^3$. This operation is called the *cross product* and it allows us to construct a vector that is orthogonal to two given vectors. We will use this operation in
+{numref}`Section %s <Section:LinesAndPlanes:Plane>`
+to construct a vector that is orthogonal to a given plane in $\mathbb{R}^3$. This will allow us to describe such a plane with a very simple equation.
 
 ````{prf:definition}
 
@@ -18,7 +20,7 @@ $$
 ````
 
 
-````{admonition} Exercise
+````{prf:example}
 
 Let us compute the cross product of the following vectors $\mathbf{u}$ and $\mathbf{v}$.
 
@@ -33,7 +35,8 @@ $$
 $$
 
 
-You may notice something peculiar here. The vector $\mathbf{u} \cp \mathbf{v}$ is orthogonal to both $\mathbf{u}$ and $\mathbf{v}$. Indeed, the dot product of $\mathbf{u} \cp \mathbf{v}$ and $\mathbf{u}$ is equal to $(-19)\cdot 2+2\cdot 1+9\cdot 4=-38+2+36=0$ and the dot product $\mathbf{u} \cp \mathbf{v}$ and $\mathbf{v}$ is equal to $(-19)\cdot 3+2\cdot 6+9\cdot 5=-57+12+45=0$. This is no coincidence, as we will see in Proposition \ref{cportho}.
+You may notice something peculiar here. The vector $\mathbf{u} \cp \mathbf{v}$ is orthogonal to both $\mathbf{u}$ and $\mathbf{v}$. Indeed, the dot product of $\mathbf{u} \cp \mathbf{v}$ and $\mathbf{u}$ is equal to $(-19)\cdot 2+2\cdot 1+9\cdot 4=-38+2+36=0$ and the dot product $\mathbf{u} \cp \mathbf{v}$ and $\mathbf{v}$ is equal to $(-19)\cdot 3+2\cdot 6+9\cdot 5=-57+12+45=0$. This is no coincidence, as we will see in Proposition 
+{prf:ref}`Prop:CrossProduct:Cportho`.
 
 ````
 
@@ -41,7 +44,7 @@ The definition of the cross product does not give us a lot of information about 
 
 
 ````{prf:proposition}
-:label: cportho
+:label: Prop:CrossProduct:Cportho
 
 
 If $\mathbf{u}$ and $\mathbf{v}$ are vectors in $\mathbb{R}^3$, then $\mathbf{u} \cp \mathbf{v}$ is orthogonal to both $\mathbf{u}$ and $\mathbf{v}$.
@@ -60,7 +63,7 @@ To establish that $\mathbf{u} \cp \mathbf{v}$ and $\mathbf{u}$ are orthogonal we
 
 \begin{align*}
 (\mathbf{u} \cp \mathbf{v}) \ip \mathbf{u} &=  (a_2b_3-a_3b_2)\cdot a_1+(a_3b_1-a_1b_3)\cdot a_2+(a_1b_2-a_2b_1)\cdot a_3 \\
-&= a_2b_3a_1-a_3b_2a_1+a_3b_1a_2-a_1b_3a_1+a_1b_2a_3-a_2b_1a_3 \\
+&= a_2b_3a_1-a_3b_2a_1+a_3b_1a_2-a_1b_3a_2+a_1b_2a_3-a_2b_1a_3 \\
 &= 0.
 \end{align*}
 
@@ -110,23 +113,23 @@ To avoid having to work with square roots we first compute $\norm{\mathbf{u}\cp 
 \norm{\mathbf{u}\cp \mathbf{v}}^2 &= (a_2b_3-a_3b_2)^2+(a_3b_1-a_1b_3)^2+(a_1b_2-a_2b_1)^2 \\
 &= (a^2_2b^2_3-2a_2b_3a_3b_2+a^2_3b^2_2)+(a^2_3b^2_1-2a_3b_1a_1b_3+a^2_1b^2_3)+(a^2_1b^2_2-2a_1b_2a_2b_1+a^2_2b^2_1)\\
 &= (a^2_1+a^2_2+a^2_3)(b^2_1+b^2_2+b^2_3)-(a_1b_1+a_2b_2+a_3b_3)^2 \\
-&= \norm{\mathbf{u}} \norm{\mathbf{v}}-(\mathbf{u} \ip \mathbf{v})^2 \\
-&= \norm{\mathbf{u}} \norm{\mathbf{v}}-( \norm{\mathbf{u}}  \norm{\mathbf{v}} \cos(\theta))^2 \\
-&= \norm{\mathbf{u}} \norm{\mathbf{v}} (1-(\cos(\theta))^2) \\
-&= \norm{\mathbf{u}} \norm{\mathbf{v}} (\sin(\theta))^2
+&= \norm{\mathbf{u}}^2 \norm{\mathbf{v}}^2-(\mathbf{u} \ip \mathbf{v})^2 \\
+&= \norm{\mathbf{u}}^2 \norm{\mathbf{v}}^2-( \norm{\mathbf{u}}  \norm{\mathbf{v}} \cos(\theta))^2 \\
+&= \norm{\mathbf{u}}^2 \norm{\mathbf{v}}^2 (1-(\cos(\theta))^2) \\
+&= \norm{\mathbf{u}}^2 \norm{\mathbf{v}}^2 (\sin(\theta))^2.
 \end{align*}
 
 If we now take the square root of both sides of the equation we find
 
 $$
-\norm{\mathbf{u} \cp \mathbf{v}}=\norm{\mathbf{u}} \norm{\mathbf{v}} |\sin(\theta)|
+\norm{\mathbf{u} \cp \mathbf{v}}=\norm{\mathbf{u}} \norm{\mathbf{v}} |\sin(\theta)|,
 $$
 
 since $\sqrt{(\sin(\theta))^2}=|\sin(\theta)|$.
 
 ````
 
-Notice some similarities between the formula for the length of the cross product and a formula that we saw in [](./Inner_Product.md). There we encountered the equality $\mathbf{u}\ip\mathbf{v} = \norm{\mathbf{u}}\norm{\mathbf{v}} \cos(\theta)$, where $\theta$ was the angle between $\mathbf{u}$ and $\mathbf{v}$.
+Notice some similarities between the formula for the length of the cross product and a formula that we saw in the Section [](./Inner_Product.md). There we encountered the equality $\mathbf{u}\ip\mathbf{v} = \norm{\mathbf{u}}\norm{\mathbf{v}} \cos(\theta)$, where $\theta$ was the angle between $\mathbf{u}$ and $\mathbf{v}$.
 
 We can derive some interesting geometrical results from {prf:ref}`Prop:CrossProduct:NormCrossProduct`.
 
@@ -157,23 +160,23 @@ Parallelogram spanned by two vectors.
 
 ````{prf:proof}
 
-The area of a parallelogram is equal to the product of the length of its base and its height. As we can see in Figure {numref}`Figure %s <Fig:CrossProduct:AreaParallelogram>` the length of the base of the parallelogram is equal to $\norm{\mathbf{u}}$ and the height is equal to $\norm{\mathbf{h}}$. If we look at the right-angled triangle $OPP'$ we see that $\norm{\mathbf{h}}=\norm{\mathbf{v}}\sin{\theta}$. This means that the area of the parallelogram is equal to $\norm{\mathbf{u}} \norm{\mathbf{v}} \sin(\theta)$ (because we use an angle between $0$ and $\pi$ we can omit the absolute-value signs) and thus to $\norm{\mathbf{u} \cp \mathbf{v}}$.
+The area of a parallelogram is equal to the product of the length of its base and its height. As we can see in {numref}`Figure %s <Fig:CrossProduct:AreaParallelogram>` the length of the base of the parallelogram is equal to $\norm{\mathbf{u}}$ and the height is equal to $\norm{\mathbf{h}}$. If we look at the right-angled triangle $OPP'$ we see that $\norm{\mathbf{h}}=\norm{\mathbf{v}}\sin{\theta}$. This means that the area of the parallelogram is equal to $\norm{\mathbf{u}} \norm{\mathbf{v}} \sin(\theta)$ (because we use an angle between $0$ and $\pi$ we can omit the absolute-value signs) and thus to $\norm{\mathbf{u} \cp \mathbf{v}}$.
 
 ````
 
 
-````{admonition} Exercise
-
-
+````{prf:example}
 
 What is the area of the parallelogram with vertices $(0,0,0)$, $(1,2,1)$, $(3,1,1)$ and $(4, 3, 2)$?
 
-We will denote the points $(1,2,1)$, $(3,1,1)$ and $(4, 3, 2)$ as $P$, $Q$ and $R$ respectively. Because $\mathbf{OR}$ is equal to $\mathbf{OP}+\mathbf{OQ}$ we know that $\mathbf{OR}$ is a diagonal of the parallelogram and that $\mathbf{OP}$ and $\mathbf{OQ}$ are two edges with a common vertex.
+We will denote the points $(1,2,1)$, $(3,1,1)$ and $(4, 3, 2)$ as $P$, $Q$ and $R$ respectively. Because $\overrightarrow{OR}$ is equal to $\overrightarrow{OP}+\overrightarrow{OQ}$ we know that $\overrightarrow{OR}$ is a diagonal of the parallelogram and that $\overrightarrow{OP}$ and $\overrightarrow{OQ}$ are two edges with a common vertex.
 
-This means that the area of the given parallelogram is equal to $\norm{\mathbf{OP}\cp \mathbf{OQ}}$. We find
+This means that the area of the given parallelogram is equal to $\norm{\overrightarrow{OP}\cp \overrightarrow{OQ}}$. We find
 
 $$
-\mathbf{OP}\cp \mathbf{OQ}=\begin{bmatrix} 2\cdot 1-1\cdot 1 \\ 1\cdot 3-1\cdot 1 \\ 1\cdot 1-2\cdot 3 \end{bmatrix}=\begin{bmatrix} 1 \\ 2 \\ -5 \end{bmatrix}.
+\overrightarrow{OP}\cp \overrightarrow{OQ}=
+ \begin{bmatrix} 1 \\ 2 \\ 1 \end{bmatrix} \cp \begin{bmatrix} 3 \\ 1 \\ 1 \end{bmatrix} =
+\begin{bmatrix} 2\cdot 1-1\cdot 1 \\ 1\cdot 3-1\cdot 1 \\ 1\cdot 1-2\cdot 3 \end{bmatrix}=\begin{bmatrix} 1 \\ 2 \\ -5 \end{bmatrix}.
 $$
 
 Therefore,  the area of the parallelogram is equal to
@@ -184,9 +187,9 @@ $$
 ````
 
 
-````{admonition} Exercise
+````{prf:example}
 
-What is the area of the triangle with vertices $(2,1,0)$, $(2,2,2)$ and $(3, 1, 1)$? Let us denote these points as $P$, $Q$ and $R$ respectively. How can we use the cross product to determine the area of this triangle? In Figure {numref}`Figure %s <Fig:CrossProduct:AreaTriangle>` we see that the area of the triangle is half the area of the parallelogram spanned by $\mathbf{PQ}$ and $\mathbf{PR}$, which is equal to $\norm{\mathbf{PQ}\cp\mathbf{PR}}$.
+What is the area of the triangle with vertices $(2,1,0)$, $(2,2,2)$ and $(3, 1, 1)$? Let us denote these points as $P$, $Q$ and $R$ respectively. How can we use the cross product to determine the area of this triangle? In  {numref}`Figure %s <Fig:CrossProduct:AreaTriangle>` we see that the area of the triangle is half the area of the parallelogram spanned by $\overrightarrow{PQ}$ and $\overrightarrow{PR}$, which is equal to $\norm{\overrightarrow{PQ}\cp\overrightarrow{PR}}$.
 
 ```{figure} Images/Fig-CrossProduct-TrianglePQR.svg
 :name: Fig:CrossProduct:AreaTriangle
@@ -194,22 +197,22 @@ What is the area of the triangle with vertices $(2,1,0)$, $(2,2,2)$ and $(3, 1, 
 Area of the triangle $PQR$.
 ```
 
-The vectors $\mathbf{PQ}$ and $\mathbf{PR}$ have the following entries.
+The vectors $\overrightarrow{PQ}$ and $\overrightarrow{PR}$ have the following entries.
 
 $$
-\mathbf{PQ}=\begin{bmatrix} 2-2 \\ 2-1 \\ 2-0 \end{bmatrix}=\begin{bmatrix} 0 \\ 1 \\ 2 \end{bmatrix} \quad \mathbf{PR}=\begin{bmatrix} 3-2 \\ 1-1 \\ 1-0 \end{bmatrix}=\begin{bmatrix} 1 \\ 0 \\ 1 \end{bmatrix}.
+\overrightarrow{PQ}=\begin{bmatrix} 2-2 \\ 2-1 \\ 2-0 \end{bmatrix}=\begin{bmatrix} 0 \\ 1 \\ 2 \end{bmatrix}, \quad \overrightarrow{PR}=\begin{bmatrix} 3-2 \\ 1-1 \\ 1-0 \end{bmatrix}=\begin{bmatrix} 1 \\ 0 \\ 1 \end{bmatrix}.
 $$
 
 The cross product of these two vectors is equal to
 
 $$
-\mathbf{PQ} \cp\mathbf{PR}=\begin{bmatrix} 1\cdot 1-2\cdot 0 \\ 2\cdot 1-0\cdot 1 \\ 0\cdot 0-1\cdot 1 \end{bmatrix}=\begin{bmatrix} 1 \\ 2 \\ -1 \end{bmatrix}.
+\overrightarrow{PQ} \cp\overrightarrow{PR}=\begin{bmatrix} 1\cdot 1-2\cdot 0 \\ 2\cdot 1-0\cdot 1 \\ 0\cdot 0-1\cdot 1 \end{bmatrix}=\begin{bmatrix} 1 \\ 2 \\ -1 \end{bmatrix}.
 $$
 
 This means that the area of the given triangle is equal to
 
 $$
-\frac{\norm{\mathbf{PQ} \cp\mathbf{PR}}}{2}=\frac{\sqrt{1^2+2^2+(-1)^2}}{2}=\frac{\sqrt{6}}{2}.
+\frac{1}{2}\norm{\overrightarrow{PQ} \cp\overrightarrow{PR}}=\frac{\sqrt{1^2+2^2+(-1)^2}}{2}=\frac{\sqrt{6}}{2}.
 $$
 ````
 
@@ -219,7 +222,7 @@ Finally, we will take a look at some algebraic properties of the cross product. 
 ````{prf:proposition}
 :label: Prop:CrossProduct:RulesCrossProduct
 
-The following  properties hold for all vectors $\mathbf{v_1}$, $\mathbf{v_2}$ and $\mathbf{v_3}$ in $\mathbb{R}^3$ and scalar $c$ in $\mathbb{R}$.
+The following  properties hold for all vectors $\mathbf{v_1}$, $\mathbf{v_2}$ and $\mathbf{v_3}$ in $\mathbb{R}^3$ and scalars $c$ in $\mathbb{R}$.
 
 i. $\mathbf{v_1}\cp\mathbf{v_2} = -\mathbf{v_2}\cp\mathbf{v_1}$.
 
@@ -241,24 +244,31 @@ $$
 
 i. Intuitively, this follows from the right-hand rule. If we switch our index and middle finger, then our thumb points in the opposite direction. This equality is easy to prove if we use the definition of the cross product and rearrange the components a little.
 
-\begin{align*}
-\mathbf{v_1}\cp\mathbf{v_2} &= \begin{bmatrix} a_2b_3-a_3b_2 \\ a_3b_1-a_1b_3 \\ a_1b_2-a_2b_1 \end{bmatrix} \\
-&= \begin{bmatrix} -(a_3b_2-a_2b_3) \\ -(a_1b_3-a_3b_1) \\ -(a_2b_1-a_1b_2) \end{bmatrix} \\
-&= -\begin{bmatrix} a_3b_2-a_2b_3 \\ a_1b_3-a_3b_1 \\ a_2b_1-a_1b_2 \end{bmatrix} \\
-&= -\mathbf{v_2}\cp\mathbf{v_1}
-\end{align*}
+$$
+  \begin{array}{rcccr}
+    \mathbf{v_1}\cp\mathbf{v_2} &=& \begin{bmatrix} a_2b_3-a_3b_2 \\ a_3b_1-a_1b_3 \\ a_1b_2-a_2b_1 \end{bmatrix} &=&
+\begin{bmatrix} -(a_3b_2-a_2b_3) \\ -(a_1b_3-a_3b_1) \\ -(a_2b_1-a_1b_2) \end{bmatrix} \\
+&=& -\begin{bmatrix} a_3b_2-a_2b_3 \\ a_1b_3-a_3b_1 \\ a_2b_1-a_1b_2 \end{bmatrix} 
+&=& -\mathbf{v_2}\cp\mathbf{v_1}.
+  \end{array}
+$$
+
 
 ii. Here too, we can use our intuition. We know that the length of the cross product is equal to the area of a parallelogram. If we make one side of the parallelogram $c$ times longer, then we multiply the area with a factor $c$ too. Using the definition of the cross product and factoring out the constant $c$ we find the following equalities.
 
-\begin{align*}
-(c\mathbf{v_1})\cp\mathbf{v_2} &= \begin{bmatrix} c(a_2)b_3-(ca_3)b_2 \\ c(a_3)b_1-(ca_1)b_3 \\ c(a_1)b_2-(ca_2)b_1 \end{bmatrix} \\
-&= \begin{bmatrix} c(a_2b_3-a_3b_2) \\ c(a_3b_1-a_1b_3) \\ c(a_1b_2-a_2b_1) \end{bmatrix} \\
-&= c\begin{bmatrix} a_2b_3-a_3b_2 \\ a_3b_1-a_1b_3 \\ a_1b_2-a_2b_1 \end{bmatrix} \\
-&= c(\mathbf{v_1}\cp\mathbf{v_2}) \\
-&= \begin{bmatrix} c(a_2b_3-a_3b_2) \\ c(a_3b_1-a_1b_3) \\ c(a_1b_2-a_2b_1) \end{bmatrix} \\
-&= \begin{bmatrix} a_2(cb_3)-a_3(cb_2) \\ a_3(cb_1)-a_1(cb_3) \\ a_1(cb_2)-a_2(cb_1) \end{bmatrix} \\
-&= \mathbf{v_1}\cp(c \mathbf{v_2})
-\end{align*}
+$$
+  \begin{array}{rcccr}
+   (c\mathbf{v_1})\cp\mathbf{v_2} &=& \begin{bmatrix} (ca_2)b_3-(ca_3)b_2 \\ (ca_3)b_1-(ca_1)b_3 \\ (ca_1)b_2-(ca_2)b_1 \end{bmatrix} 
+&=& \begin{bmatrix} c(a_2b_3-a_3b_2) \\ c(a_3b_1-a_1b_3) \\ c(a_1b_2-a_2b_1) \end{bmatrix} \\
+&=& c\begin{bmatrix} a_2b_3-a_3b_2 \\ a_3b_1-a_1b_3 \\ a_1b_2-a_2b_1 \end{bmatrix} 
+&=& c(\mathbf{v_1}\cp\mathbf{v_2})\\ 
+&=& \begin{bmatrix} c(a_2b_3-a_3b_2) \\ c(a_3b_1-a_1b_3) \\ c(a_1b_2-a_2b_1) \end{bmatrix} 
+&=& \begin{bmatrix} a_2(cb_3)-a_3(cb_2) \\ a_3(cb_1)-a_1(cb_3) \\ a_1(cb_2)-a_2(cb_1) \end{bmatrix} \\
+&=& \mathbf{v_1}\cp(c \mathbf{v_2}).
+  \end{array}
+$$
+
+
 
 iii. This follows from the distributivity of the real numbers.
 
@@ -266,7 +276,7 @@ iii. This follows from the distributivity of the real numbers.
 (\mathbf{v_1}+\mathbf{v_2})\cp \mathbf{v_3} &= \begin{bmatrix} (a_2+b_2)c_3-(a_3+b_3)c_2 \\ (a_3+b_3)c_1-(a_1+b_1)c_3 \\ (a_1+b_1)c_2-(a_2+b_2)c_1 \end{bmatrix} \\
 &= \begin{bmatrix} a_2c_3+b_2c_3-a_3c_2-b_3c_2 \\ a_3c_1+b_3c_1-a_1c_3-b_1c_3 \\ a_1c_2+b_1c_2-a_2c_1-b_2c_1 \end{bmatrix} \\
 &= \begin{bmatrix} a_2c_3-a_3c_2 \\ a_3c_1-a_1c_3 \\ a_1c_2-a_2c_1 \end{bmatrix}+\begin{bmatrix} b_2c_3-b_3c_2 \\ b_3c_1-b_1c_3 \\ b_1c_2-b_2c_1 \end{bmatrix} \\
-&= \mathbf{v_1}\cp\mathbf{v_3}+\mathbf{v_2}\cp\mathbf{v_3}
+&= \mathbf{v_1}\cp\mathbf{v_3}+\mathbf{v_2}\cp\mathbf{v_3}.
 \end{align*}
 
 ````
@@ -303,7 +313,7 @@ $$
 then
 
 $$
-x=\begin{vmatrix} a_2 & b_2 \\ a_3 & b_3  \end{vmatrix} \quad y=-\begin{vmatrix} a_1 & b_1 \\ a_3 & b_3  \end{vmatrix} \quad z=\begin{vmatrix} a_1 & b_1 \\ a_2 & b_2  \end{vmatrix}.
+x=\begin{vmatrix} a_2 & b_2 \\ a_3 & b_3  \end{vmatrix}, \quad y=-\begin{vmatrix} a_1 & b_1 \\ a_3 & b_3  \end{vmatrix}, \quad z=\begin{vmatrix} a_1 & b_1 \\ a_2 & b_2  \end{vmatrix}.
 $$
 
 ````
@@ -319,7 +329,7 @@ This follows from the definition.
 Let us compute the cross product of the following vectors $\mathbf{u}$ and $\mathbf{v}$ using determinants.
 
 $$
-\mathbf{u}=\begin{bmatrix} 2 \\ 3 \\ 2 \end{bmatrix} \textrm{ and } \mathbf{v}=\begin{bmatrix} 5 \\ 2 \\ 3 \end{bmatrix}
+\mathbf{u}=\begin{bmatrix} 2 \\ 3 \\ 2 \end{bmatrix} \textrm{ and } \mathbf{v}=\begin{bmatrix} 5 \\ 2 \\ 3 \end{bmatrix}.
 $$
 
 The first entry of $\mathbf{u} \cp \mathbf{v}$ is equal to
