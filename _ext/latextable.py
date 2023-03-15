@@ -98,6 +98,8 @@ class LaTeXTableDirective(Table):
             i=0
             for cell in cell_list:
 
+                col_align = 'left'
+
                 match table_args[i]:
                     case 'r': 
                         col_align = 'right'
