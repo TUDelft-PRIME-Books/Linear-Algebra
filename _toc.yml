@@ -30,6 +30,9 @@ chapters:
       - file: 'Chapter4/Subspaces_of_Rn.md'
       - file: 'Chapter4/BasisAndDimension.md'
       - file: 'Chapter4/ChangeOfBasis.md'
+  - file: 'Chapter5/intro.md'
+    sections:
+      - file: "Chapter5/DeterminantsGeometric.md"
   - file: 'Chapter6/intro.md'
     sections:
       - file: "Chapter6/EigenvaluesEigenvectors.md"
