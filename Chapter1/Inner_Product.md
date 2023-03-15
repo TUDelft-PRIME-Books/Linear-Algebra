@@ -58,7 +58,7 @@ $$
 \nonumber
 $$
 
-where for two points $A$ and $P$, by $AB$ we denote the length of the vector $\overline{AB}$,
+where for two points $A$ and $P$, by $AB$ we denote the length of the vector $\overrightarrow{AB}$,
 and
 
 $$
@@ -92,12 +92,12 @@ Well, look at {numref}`Figure %s <Fig:InnerProduct:diagonal-parallelogram>`:
 Diagonal of a rectangle versus diagonal of a parallelogram
 ```
 
-\noindent
+
 In both pictures, let $A$ be the end point of vector $\mathbf{v}$, $B$ the end point of vector $\mathbf{w}$, and $C$ the end point of vector $\mathbf{v}+\mathbf{w}$. The diagonals are
 
 $$
 
-  \overline{OC} = \mathbf{v}+\mathbf{w} \quad \text{and} \quad \overline{BA} = \mathbf{v}-\mathbf{w}
+  \overrightarrow{OC} = \mathbf{v}+\mathbf{w} \quad \text{and} \quad \overrightarrow{BA} = \mathbf{v}-\mathbf{w}
 \nonumber
 $$
 
@@ -133,15 +133,15 @@ $$
  \mathbf{v} \perp \mathbf{w} \iff \norm{\mathbf{v}+\mathbf{w}}^2 = \norm{\mathbf{v}-\mathbf{w}}^2.
 $$
 
-\noindent
-If we write this out for two arbitrary vectors $\mathbf{v}=\begin{bmatrix} a_{1}\\a_{2}\end{bmatrix},\,\mathbf{w}=\begin{bmatrix} b_{1}\\b_{2}\end{bmatrix}$ in $\mathbb{R}^2$\\
+
+If we write this out for two arbitrary vectors $\mathbf{v}=\begin{bmatrix} a_{1}\\a_{2}\end{bmatrix},\mathbf{w}=\begin{bmatrix} b_{1}\\b_{2}\end{bmatrix}$ in $\mathbb{R}^2$ 
 we get the following:
 
 $$
  \begin{array}{rcl} \mathbf{v} \perp \mathbf{w}  &\iff
         &\norm{\mathbf{v}+\mathbf{w}}^2 = \norm{\mathbf{v}-\mathbf{w}}^2\\
         &\iff      &(a_1+b_1)^2 + (a_2+b_2)^2 = (a_1-b_1)^2 + (a_2-b_2)^2\\
-        &\iff      &a_1^2+2a_1b_1 + b_1^2 + a_2^2+2a_2b_2 + b_2^2 = a_1^2 -2a_1b_1+b_1^2+ a_2^2 -2a_2b_2b_2^2\\
+        &\iff      &a_1^2+2a_1b_1 + b_1^2 + a_2^2+2a_2b_2 + b_2^2 = a_1^2 -2a_1b_1+b_1^2+ a_2^2 -2a_2b_2+b_2^2\\
         &\iff      &4(a_1b_1 +a_2b_2)=0 \\
         &\iff      &a_1b_1 +a_2b_2=0.
  \end{array}
@@ -202,10 +202,8 @@ $\mathbf{w}=\begin{bmatrix}b_{1}\\b_{2}\\ \vdots\\b_{n}\end{bmatrix}$ in $\mathb
 
 ````
 
-```{admonition} Exercise
+```{prf:example}
 :name: Ex:InnerProduct:DotProdTwoVectors
-
-
 
 The dot product of the two vectors
 
@@ -349,7 +347,7 @@ Two vectors $\mathbf{v}$  and $\mathbf{w}$ in $\mathbb{R}^n$ are called *orthogo
 
 ```
 
-```{admonition} Exercise
+```{prf:example}
 :name: Ex:InnerProduct:CheckVectorsOrthogonal
 
 Let $\mathbf{u} = \begin{bmatrix} 1\\2\\-1\\-1\end{bmatrix}$,  $\mathbf{v} = \begin{bmatrix} 3\\-1\\2\\-1\end{bmatrix}$,
@@ -359,7 +357,6 @@ We compute
 $$
 
   \mathbf{u}\ip\mathbf{v} = 3-2-2+1 = 0,
-\nonumber
 $$
 
 
@@ -390,7 +387,7 @@ Moreover, the zero vector is the _only_ vector that is orthogonal to itself:
 
 
 
-Suppose  $\mathbf{v} \in \mathbb{R}^n$. \, Then  $\mathbf{v}\perp\mathbf{v} \iff \mathbf{v} = \mathbf{0}$.
+Suppose  $\mathbf{v} \in \mathbb{R}^n$.  Then  $\mathbf{v}\perp\mathbf{v} \iff \mathbf{v} = \mathbf{0}$.
 
 ```
 
@@ -413,7 +410,7 @@ In {prf:ref}`Prop:RulesInnerProduct` (iv) we already showed that the last equali
 The fact that the zero vector is orthogonal to _any_ vector is an immediate consequence of the definition, but it
 may seem counter intuitive to you. The following example illustrates a situation where this orthogonality leads to a much nicer outcome.
 
-````{admonition} Exercise
+````{prf:example}
 :name: Ex:PerpendicularLine
 
 Let $\mathbf{n}$ be any nonzero vector in the plane.
@@ -523,7 +520,7 @@ and indeed  $\mathbf{\hat{w}}$ must be as stated.
 
 ```
 
-```{admonition} Exercise
+```{prf:example}
 :name: Ex:InnerProduct:OrthoProjectionOntoVector
 
 
@@ -603,9 +600,8 @@ $$
 :name: Exc:InnerProduct:SameProjectionThenWhat
 
 
-
 Suppose $\text{proj}_{\mathbf{v}}(\mathbf{w_1}) = \text{proj}_{\mathbf{v}}(\mathbf{w_2}) $,
-for three vectors $\mathbf{v}, \,\mathbf{w_1},\,\mathbf{w_2}$ in $\mathbb{R}^n$.
+for three nonzero vectors $\mathbf{v}, \,\mathbf{w_1},\,\mathbf{w_2}$ in $\mathbb{R}^n$.
 What does this say about the relative positions of the three vectors?
 
 Verify your statement for the following three vectors
@@ -690,7 +686,7 @@ iii. Triangle Inequality:
 
 ````
 
-The first two of these properties are very easy to prove. The proof of the triangle inequality we postpone until the end of the section. Figure {numref}`Figure %s <Fig:InnerProduct:TriangleInequality>` explains the name.
+The first two of these properties are very easy to prove. The proof of the triangle inequality we postpone until the end of the section.  {numref}`Figure %s <Fig:InnerProduct:TriangleInequality>` explains the name.
 
 ```{figure} Images/Fig-InnerProduct-TriangleInequality.svg
 :name: Fig:InnerProduct:TriangleInequality
@@ -698,7 +694,7 @@ The first two of these properties are very easy to prove. The proof of the trian
 The Triangle Inequality
 ```
 
-```{admonition} Exercise
+```{prf:example}
 :name: Ex:InnerProduct:NormsofTwoVectors
 
 We compute the norms of the vectors
@@ -812,12 +808,12 @@ $$
 
 ```
 
-```{admonition} Exercise
+```{prf:example}
 :name: Ex:InnerProduct:UnitVector
 
 
 
-We compute the unit vector $\mathbf{u}$  in the direction of the vector $\mathbf{v} = \begin{bmatrix}1 \\ 2 \\ 4 \\ -2 \end{bmatrix}$  in $\mathbb{R}^4$.  \,
+We compute the unit vector $\mathbf{u}$  in the direction of the vector $\mathbf{v} = \begin{bmatrix}1 \\ 2 \\ 4 \\ -2 \end{bmatrix}$  in $\mathbb{R}^4$.   
 As follows:
 
 $$
@@ -838,10 +834,10 @@ $$
 %\end{center}
 %\end{figure}
 
-Interestingly, a well known theorem from primary school mathematics also holds in $\mathbb{R}^n$:
+Interestingly, Pythagoras' theorem  also holds in $\mathbb{R}^n$.
 
 ```{prf:theorem}
-:label: Thm:InnerProduct:Pythagors in Rn
+:label: Thm:InnerProduct:PythagorasInRn
 
 
 
@@ -922,7 +918,7 @@ Furthermore
 $$
 
  \mathbf{v}+\mathbf{w} = \begin{bmatrix} 4 \\ 1 \\ 4 \\ 6 \end{bmatrix} \Longrightarrow \norm{\mathbf{v}+\mathbf{w}} = \sqrt{4^2+1^2+4^2+6^2} = \sqrt{69}
-\nonumber
+
 $$
 
 and we see that indeed
@@ -1080,7 +1076,7 @@ $$
 
 %%\end{proof}
 
-```{admonition} Exercise
+```{prf:example}
 :name: Ex:InnerProduct:Cauchy-Schwarz-Check
 
 
@@ -1090,6 +1086,7 @@ We verify that the inequality holds for the vectors
 and $\mathbf{w} = \begin{bmatrix} -5 \\ 4 \\-3 \\ 0 \end{bmatrix}$ in $\mathbb{R}^4$.
 
 As follows
+
 $$
   \mathbf{v}\ip\mathbf{w} = -5-8-9 = -22,
   \quad \norm{\mathbf{v}} = \sqrt{30}, \quad \norm{\mathbf{w}} = \sqrt{50}
@@ -1098,7 +1095,7 @@ $$
 and we see that indeed
 
 $$
-|\mathbf{v}\ip\mathbf{w}| = 22 \leq  \norm{\mathbf{v}}\, \norm{\mathbf{w}} = \sqrt{1500}.
+|\mathbf{v}\ip\mathbf{w}| = 22 \leq  \norm{\mathbf{v}}\,\norm{\mathbf{w}} = \sqrt{1500}.
 $$
 
 
@@ -1140,7 +1137,7 @@ and this, apart from the factor 2, is  the Cauchy-Schwarz Inequality.
 
 ```
 
-```{admonition} Exercise
+```{prf:example}
 :name: Ex:InnerProduct:TriangleInequality
 
 
@@ -1199,7 +1196,7 @@ For two nonzero vectors $\mathbf{v}$ and $\mathbf{w}$ in either $\mathbb{R}^2$ o
 
 where $\varphi$ is the angle between $\mathbf{v}$ and $\mathbf{w}$.
 
-Note that is in line with the special case of two perpendicular vectors:
+Note that this is in line with the special case of two perpendicular vectors:
 
 $$
 
@@ -1285,8 +1282,10 @@ So we may conclude that
 
 
 In the case of an obtuse angle, we use that the projection of $\mathbf{w}$ onto $\mathbf{v}$ is equal to the projection
-of $\mathbf{w}$ onto $-\mathbf{v}$, as it is in fact the projection onto the line consisting of all multiples of $\mathbf{v}$. Now look at the picture on the right of figure \ref{Fig:InnerProduct:AngleAndProjection}. There you see that $\mathbf{w}$  and
-$-\mathbf{v}$ make a sharp angle $\psi = \pi - \phi$, so we can apply Equation (\ref{Eq:InnerProduct:GeometricInterpretation}) to  $\mathbf{w}$  and $-\mathbf{v}$:
+of $\mathbf{w}$ onto $-\mathbf{v}$, as it is in fact the projection onto the line consisting of all multiples of $\mathbf{v}$. Now look at the picture on the right of figure  {numref}`Figure %s <Fig:InnerProduct:AngleAndProjection>`
+. There you see that $\mathbf{w}$  and
+$-\mathbf{v}$ make a sharp angle $\psi = \pi - \phi$, so we can apply 
+Equation {eq}`Eq:InnerProduct:GeometricInterpretation` to  $\mathbf{w}$  and $-\mathbf{v}$:
 
 
 $$
@@ -1369,10 +1368,8 @@ $$
 \nonumber
 $$
 
-```{admonition} Exercise
+```{prf:example}
 :name: Ex:InnerProduct:AngleInRn
-
-
 
 Let  $\mathbf{e_1}$ be the vector in $\mathbb{R}^n$ with first entry equal to 1 and all other entries equal to 0, and $\mathbf{v}$ be the vector with all entries equal to 1.  We find the angle between $\mathbf{e_1}$ and $\mathbf{v}$  in all cases $n = 2,\, 3,\,4,\,\ldots$.
 
