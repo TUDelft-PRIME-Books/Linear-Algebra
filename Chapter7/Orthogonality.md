@@ -65,6 +65,7 @@ As we have seen in Section, both the column space and null space of any $n\times
 
 
 :::{prf:proposition}
+:label: Prop:Orthogonality:OrthoComplementNulA
 
 For any $n\times m$ matrix $M$ we have $\mathrm{Col}(A^{T})^{\bot}=\mathrm{Nul}(A)$ and $\mathrm{Col}(A)^{\bot}=\mathrm{Nul}(A^{T})$.
 

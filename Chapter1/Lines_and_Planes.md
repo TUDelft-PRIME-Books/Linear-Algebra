@@ -8,7 +8,7 @@ Throughout this book we will regularly work with geometrical objects in $\mathbb
 
 We all know what a line looks like, but in mathematics we want to define everything in a precise way. Therefore, we will define lines in $\mathbb{R}^2$ as follows.
 
-```{prf:definition}
+:::{prf:definition}
 
 A line $\mathcal{L}$ in the plane $\mathbb{R}^2$ is a collection of points $(x, y)$ that satisfy an equation of the form
 
@@ -19,41 +19,41 @@ $$
 
  where $a$ and $b$ are not both zero. This equation is called a *Cartesian equation* of $\mathcal{L}$.
 
-```
+:::
 
 The point $(4, 1)$, for example, is a point on the line with equation $2x-3y=5$ because $2\cdot 4-3\cdot 1=5$, but $(6,-1)$ is not since $2\cdot 6-3\cdot (-1)$ is equal to 15 and not to 5. If we draw all points of a given line $\mathcal{L}$ in the plane $\mathbb{R}^2$, then we obtain a graphical representation of the line. In {numref}`Figure %s <Fig:LinesAndPlanes:LineInPlane>` we see the line with Cartesian equation $2x-3y=5$.
 
-```{figure} Images/Fig-LinesAndPlanes-LineInPlane.svg
+:::{figure} Images/Fig-LinesAndPlanes-LineInPlane.svg
 :name: Fig:LinesAndPlanes:LineInPlane
 
 The line $2x-3y=5$ in the plane.
-```
+:::
 
 ## Intersecting lines
 
 Two lines can have a point of intersection. Let $\mathcal{L}_1$ and $\mathcal{L}_2$ be the lines defined by the equations $x+2y=5$ and $3x-y=1$. The point $(1, 2)$ is clearly a point on both lines. It satisfies the equation $x+2y=5$ and the equation $3x-y=1$. In {numref}`Figure %s <Fig:LinesAndPlanes:PointIntersection>` we can see that this is the unique point of intersection.
 
-```{figure} Images/Fig-LinesAndPlanes-PointIntersection.svg
+:::{figure} Images/Fig-LinesAndPlanes-PointIntersection.svg
 :name: Fig:LinesAndPlanes:PointIntersection
 
 Intersecting lines.
-```
+:::
 
 In the previous example there was exactly one point of intersection. This is not the only possibility. Two lines can have no points of intersection at all or infinitely many. If $\mathcal{L}_3$ is the line given by the equation $x+2y=2$, then $\mathcal{L}_1$ and $\mathcal{L}_3$ do not intersect. This can be seen in {numref}`Figure %s <Fig:LinesAndPlanes:ParallelLines>`, but also becomes clear when you take a good look at both equations. The lines $\mathcal{L}_1$ and $\mathcal{L}_3$ are defined by the equations $x+2y=5$ and $x+2y=2$ respectively. Since there are no values of $x$ and $y$ for which $x+2y$ is both equal to $5$ and $2$, the two lines cannot have a point in common.
 
-```{figure} Images/Fig-LinesAndPlanes-ParallelLines.svg
+:::{figure} Images/Fig-LinesAndPlanes-ParallelLines.svg
 :name: Fig:LinesAndPlanes:ParallelLines
 
 Parallel lines.
-```
+:::
 
 Finally, let us take a look at the line $\mathcal{L}_2$, which was defined by the equation $3x-y=1$, and the line $\mathcal{L}_4$ given by the equation $-6x+2y=-2$ (see {numref}`Figure %s <Fig:LinesAndPlanes:CoincidingLines>`). The equation of $\mathcal{L}_4$ is a multiple of the equation of $\mathcal{L}_2$. This means that each point $(x, y)$ that satisfies one equation automatically satisfies the other, so the lines $\mathcal{L}_2$ and $\mathcal{L}_4$ coincide. Therefore, the lines $\mathcal{L}_2$ and $\mathcal{L}_4$ have infinitely many points of intersection.
 
-```{figure} Images/Fig-LinesAndPlanes-CoincidingLines.svg
+:::{figure} Images/Fig-LinesAndPlanes-CoincidingLines.svg
 :name: Fig:LinesAndPlanes:CoincidingLines
 
 Coinciding lines.
-```
+:::
 
 (Subsec:LinesAndPlanes:ParametricLine)=
 
@@ -68,10 +68,10 @@ $$
 
 of which the components $x$ and $y$ satisfy the equation $x+2y=5$. This means that the line $\mathcal{L}_1$ consists of all vectors that connect the origin with a point on the line. When we think of a line as a collection of vectors we can describe that line with a _parametric vector equation_. To do this, we need a vector that connects the origin to a point on the line and a non-zero vector $\mathbf{u}$ parallel to the line.
 
-```{prf:definition}
+:::{prf:definition}
 
 Each non-zero vector $\mathbf{u}$ that is parallel to a line $\mathcal{L}$ will be called a *directional vector* of that line.
-```
+:::
 
 The point $(5, 0)$ satisfies the equation $x+2y=5$, so it is a point on $\mathcal{L}_1$. Therefore, the vector
 
@@ -88,11 +88,11 @@ $$
 
 is a vector parallel to the same line.
 
-```{figure} Images/Fig-LinesAndPlanes-VectorEquation.svg
+:::{figure} Images/Fig-LinesAndPlanes-VectorEquation.svg
 :name: Fig:LinesAndPlanes:VectorEquation
 
 The line $\mathcal{L}_1$.
-```
+:::
 
 How do we obtain all vectors on the line $\mathcal{L}_1$? Let us start with the vector
 
@@ -128,7 +128,7 @@ $$
 
 where $r$ is a real number.
 
-```{prf:definition}
+:::{prf:definition}
 
 If $\mathbf{v_0}=\begin{bmatrix} x_0 \\ y_0 \end{bmatrix}$ is a vector on the line $\mathcal{L}$ and $\mathbf{u}=\begin{bmatrix} a \\ b \end{bmatrix}$ is a directional vector of $\mathcal{L}$, then the equation
 
@@ -138,9 +138,9 @@ $$
 
 will be called a *parametric vector equation* of $\mathcal{L}$.
 
-```
+:::
 
-```{admonition} Exercise
+:::{exercise}
 
 Let $\mathcal{L}$ be the line through the points $P=(2, 1)$ and $Q=(6, 4)$. How do we find a parametric vector equation of this line? We need a vector that connects the origin to a point on the line and a vector parallel to the line. For the first vector we can simply use the coordinates of either $P$ or $Q$. We can use either point, but let us choose $P$. We can construct a vector parallel to the line $\mathcal{L}$ by connecting two distinct points on the line by an arrow. We can use for instance the vector $\mathbf{PQ}$ that starts in $P$ and ends in $Q$.
 
@@ -154,7 +154,7 @@ $$
 \begin{bmatrix} x \\ y \end{bmatrix}=\begin{bmatrix} 2 \\ 1 \end{bmatrix}+r\begin{bmatrix} 4 \\ 3 \end{bmatrix} \qquad \textrm{$r$ in $\mathbb{R}$}
 $$
 
-```
+:::
 
 (Subsection:LinesAndPlanes:NormalLine)=
 
@@ -162,11 +162,11 @@ $$
 
 Finally, we will take a look at a _normal equation_ of a line in $\mathbb{R}^2$. To obtain a parametric vector equation of a line, we used a vector parallel to that line. For the normal equation of a line we use a vector that is orthogonal to the line.
 
-```{prf:definition}
+:::{prf:definition}
 
 Any non-zero vector $\mathbf{n}$ that is orthogonal to a line $\mathcal{L}$ will be called a *normal vector* of that line.
 
-```
+:::
 
 Let $\mathbf{n}$ be a normal vector of a line $\mathcal{L}$ and $P$ a point on $\mathcal{L}$. Whenever we take a point $Q$ on $\mathcal{L}$, the vector $\mathbf{PQ}$ is orthogonal to $\mathbf{n}$. This means that the inner product of these vectors is zero. We find that whenever a point $Q$ is on the line $\mathcal{L}$ it satisfies
 
@@ -174,11 +174,11 @@ $$
 \mathbf{PQ}\ip \mathbf{n}=0.
 $$
 
-```{figure} Images/Fig-LinesAndPlanes-NormalEquationLine.svg
+:::{figure} Images/Fig-LinesAndPlanes-NormalEquationLine.svg
 :name: Fig:LinesAndPlanes:NormalEquationLine
 
 Normal equation.
-```
+:::
 
 Let $\mathbf{v_0}$ be the vector that connects the origin to the point $P$. We can see in {numref}`Figure %s <Fig:LinesAndPlanes:NormalEquationLine>` that a vector $\mathbf{v}$ is on the line $\mathcal{L}$ whenever
 
@@ -186,7 +186,7 @@ $$
 (\mathbf{v}-\mathbf{v_0})\ip\mathbf{n}=0.
 $$
 
-```{prf:definition}
+:::{prf:definition}
 
 Let $\mathcal{L}$ be a line in $\mathbb{R}^2$. If $\mathbf{v_0}$ is a vector on $\mathcal{L}$ and $\mathbf{n}$ is a normal vector of $\mathcal{L}$, then
 
@@ -195,9 +195,9 @@ $$
 $$
 
 will be called a *normal equation* of $\mathcal{L}$.
-```
+:::
 
-````{admonition} Exercise
+::::{exercise}
 
 The line $\mathcal{L}_1$ can be described by the following parametric vector equation.
 
@@ -207,11 +207,11 @@ $$
 
 Let us try to find a Cartesian equation for the line $\mathcal{L}$ through the point $P=(1, 7)$ and orthogonal to $\mathcal{L}_1$. We will start with a normal equation and then derive a Cartesian equation from that.
 
-```{figure} Images/Fig-LinesAndPlanes-OrthogonalLines.svg
+:::{figure} Images/Fig-LinesAndPlanes-OrthogonalLines.svg
 :name: Fig:LinesAndPlanes:OrthogonalLines
 
 A line orthogonal to $\mathcal{L}_1$.
-```
+:::
 
 Because $\mathcal{L}$ needs to be orthogonal to $\mathcal{L}_1$ we can use the directional vector $\mathbf{n}=\begin{bmatrix} -2 \\ 1 \end{bmatrix}$ as a normal vector for $\mathcal{L}$. Define $\mathbf{v_0}$ as $\begin{bmatrix} 1 \\ 7 \end{bmatrix}$. By computing the inner product we can transform the normal equation
 
@@ -227,13 +227,13 @@ $$
 
  After some calculations we find the Cartesian equation $-2x+y=5$. In Figure \ref{Fig:LinesAndPlanes:OrthogonalLines} you can see both lines.
 
-````
+::::
 
 ## Planes in the space $\mathbb{R}^3$
 
 We already saw that when we are working in $\mathbb{R}^2$, we can describe lines using a Cartesian equation, a parametric vector equation or a normal equation. Planes in the three-dimensional space $\mathbb{R}^3$ can be described in similar ways. We will start by defining planes using the _Cartesian equation_ and then we will explain the geometrical interpretation of this equation.
 
-```{prf:definition}
+:::{prf:definition}
 
 A plane $\mathcal{P}$ in the space $\mathbb{R}^3$ is a collection of points $(x, y, z)$ that satisfy an equation of the form
 
@@ -242,7 +242,7 @@ ax+by+cz=d,
 $$
 
  where $a$, $b$ and $c$ are not all zero. This equation is called a *Cartesian equation* of $\mathcal{P}$.
-```
+:::
 
 The Cartesian equation of a plane in $\mathbb{R}^3$ resembles the Cartesian equation of a line in $\mathbb{R}^2$. So, how is it that such an equation describes a plane and not a line in $\mathbb{R}^3$? We can clarify this by looking at a _normal equation_ of a plane.
 
@@ -254,23 +254,23 @@ $$
 
 As we can see in {numref}`Figure %s <Fig:LinesAndPlanes:NormalEquationPlaneOrigin>` all points $Q$ for which the vector that connects the origin to $Q$ is orthogonal to $\mathbf{n}$ form a plane through the origin.
 
-```{applet}
+:::{applet}
 :url: lines_and_planes/normal_equation_plane_origin
 :fig: Images/Fig-LinesAndPlanes-NormalEquationPlaneOrigin.svg
 :name: Fig:LinesAndPlanes:NormalEquationPlaneOrigin
 
 A plane through the origin.
-```
+:::
 
 Now let $P$ be the point with coordinates $(0, 2, 1)$ and take an arbitrary point $Q$ in $\mathbb{R}^3$. It is clear from {numref}`Figure %s <Fig:LinesAndPlanes:NormalEquationPlane>` that the vector $\mathbf{PQ}$ is orthogonal to $\mathbf{n}$ if and only if $Q$ is a point on the plane $\mathcal{P}$ orthogonal to $\mathbf{n}$ and through $P$.
 
-```{applet}
+:::{applet}
 :url: lines_and_planes/normal_equation_plane
 :fig: Images/Fig-LinesAndPlanes-NormalEquationPlane.svg
 :name: Fig:LinesAndPlanes:NormalEquationPlane
 
 A plane through the point $P$.
-```
+:::
 
 What is the Cartesian equation of this plane? If the coordinates of $Q$ are $(x, y, z)$, then $\mathbf{PQ}$ is orthogonal to $\mathbf{n}$ if and only if $\mathbf{PQ}\ip \mathbf{n}=0$. If we compute this inner product we obtain the following result.
 
@@ -286,14 +286,14 @@ This means that $Q$ is on the plane $\mathcal{P}$ through $P$ and orthogonal to 
 
 A line can be defined as a collection of points and as the collection of vectors that connect the origin to a point on the line. Similarly, we can identify the plane $\mathcal{P}$ as the collection of all vectors $\mathbf{v}$ that connect the origin to a point on $\mathcal{P}$. In this case we will say that $\mathbf{v}$ is a vector on the plane $\mathcal{P}$.
 
-```{prf:definition}
+:::{prf:definition}
 
 Any non-zero vector $\mathbf{n}$ that is orthogonal to a plane $\mathcal{P}$ will be called a *normal vector* of that plane.
-```
+:::
 
 Let $\mathbf{n}$ be a normal vector for a given plane $\mathcal{P}$ and $\mathbf{v_0}$ a vector on $\mathcal{P}$. {numref}`Figure %s <Fig:LinesAndPlanes:NormalEquationPlane>` tells us that any other vector $\mathbf{v}$ is on $\mathcal{P}$ whenever $(\mathbf{v}-\mathbf{v_0})\ip\mathbf{n}=0$.
 
-```{prf:definition}
+:::{prf:definition}
 
 Let $\mathcal{P}$ be a plane in $\mathbb{R}^3$. If $\mathbf{v_0}$ is a vector on $\mathcal{P}$ and $\mathbf{n}$ is a normal vector of $\mathcal{P}$, then
 
@@ -303,26 +303,26 @@ $$
 
  will be called a *normal equation* of $\mathcal{P}$.
 
-```
+:::
 
 ## Parametric vector equation of a plane
 
 Finally, let us take a look at a _parametric vector equation_ of a plane. Such an equation will be very similar to a parametric vector equation of a line in the plane $\mathbb{R}^2$, but in this case we will need two directional vectors instead of one.
 
-```{prf:definition}
+:::{prf:definition}
 
 Each non-zero vector $\mathbf{u}$ that is parallel to a plane $\mathcal{P}$ will be called a *directional vector* of that plane.
-```
+:::
 
 We can always find directional vectors of a plane by taking a vector that connects two distinct points in the plane. If we want to find two directional vectors for the plane $\mathcal{P}$ with Cartesian equation $2x+y+3z=5$, then we can use the point $P=(0, 2, 1)$ that we have been working with and choose two other points that satisfy $2x+y+3z=5$. We can use, for example, the points $Q=(0, 5, 0)$ and $R=(2, 1, 0)$. In {numref}`Figure %s <Fig:LinesAndPlanes:DirectionalVectorsPlane>` you can see that the vectors $\mathbf{PQ}$ and $\mathbf{PR}$ are two vectors that are parallel to the plane, but are not parallel to each other.
 
-```{applet}
+:::{applet}
 :url: lines_and_planes/directional_vectors_plane
 :fig: Images/Fig-LinesAndPlanes-DirectionalVectorsPlane.svg
 :name: Fig:LinesAndPlanes:DirectionalVectorsPlane
 
 A parametric vector equation of a plane.
-```
+:::
 
 Any vector $\mathbf{v}$ on the plane $\mathcal{P}$ can now be written in the form
 
@@ -332,7 +332,7 @@ $$
 
 where $r$ and $s$ are arbitrary real numbers.
 
-```{prf:definition}
+:::{prf:definition}
 
 If $\mathbf{v_0}=\begin{bmatrix} x_0 \\ y_0 \\ z_0 \end{bmatrix}$ is a vector on the plane $\mathcal{P}$ and $\mathbf{u_1}=\begin{bmatrix} a_1 \\ b_1 \\ c_1 \end{bmatrix}$ and $\mathbf{u_2}=\begin{bmatrix} a_2 \\ b_2 \\ c_2 \end{bmatrix}$ are directional vectors of $\mathcal{P}$ that are not parallel, then the equation
 
@@ -341,9 +341,9 @@ $$
 $$
 
  will be called a *parametric vector equation* of $\mathcal{P}$.
-```
+:::
 
-```{admonition} Exercise
+:::{exercise}
 
 In this example we will construct a parametric vector equation and a normal equation for the plane through the points $P=(1, 1, 1)$, $Q=(1, 2, 2)$ and $R=(3, 1, 2)$. The vectors $\mathbf{PQ}$ and $\mathbf{PR}$ can serve as directional vectors. We find that
 
@@ -372,7 +372,7 @@ x+2y-2z=1
 $$
 
 is a normal equation of the plane that contains $P$, $Q$ and $R$.
-```
+:::
 
 ## Intersecting planes
 
@@ -380,63 +380,63 @@ We already established that two lines in the plane can have zero, one or infinit
 
 It is of course possible that two planes have no points in common at all. Take a look at {numref}`Figure %s <Fig:LinesAndPlanes:TwoDisjointPlanes>`. There we see two parallel planes that do not coincide. These planes have no points of intersection.
 
-```{applet}
+:::{applet}
 :url: lines_and_planes/two_disjoint_planes
 :fig: Images/Fig-LinesAndPlanes-TwoDisjointPlanes.svg
 :name: Fig:LinesAndPlanes:TwoDisjointPlanes
 
 Two planes without a common point in common.
-```
+:::
 
 Two planes in $\mathbb{R}^3$ can never have a single point of intersection. They can, however, have infinitely many common points. This can occur when the two planes have a line of intersection, as we can see in {numref}`Figure %s <Fig:LinesAndPlanes:TwoPlanesLineIntersection>`. On the other hand, it is also possible that two planes coincide, see {numref}`Figure %s <Fig:LinesAndPlanes:TwoPlanesCoincide>`. In this case each point on one of the two planes is an intersection point.
 
-```{applet}
+:::{applet}
 :url: lines_and_planes/two_plane_line_intersection
 :fig: Images/Fig-LinesAndPlanes-TwoPlanesLineIntersection.svg
 :name: Fig:LinesAndPlanes:TwoPlanesLineIntersection
 
 Two planes with a line of intersection.
-```
+:::
 
-```{applet}
+:::{applet}
 :url: lines_and_planes/two_planes_coincide
 :fig: Images/Fig-LinesAndPlanes-TwoPlanesCoincide.svg
 :name: Fig:LinesAndPlanes:TwoPlanesCoincide
 
 Two planes that coincide.
-```
+:::
 
 Now what happens when we take three arbitrary planes $\mathcal{P}_1$, $\mathcal{P}_2$ and $\mathcal{P}_3$ in the space $\mathbb{R}^3$? How many points can we find that are on all three planes?
 
 First of all, it is possible that there are no points that are on $\mathcal{P}_1$, $\mathcal{P}_2$ and $\mathcal{P}_3$ simultaneously. This is the case for the three planes in {numref}`Figure %s <Fig:LinesAndPlanes:DisjointPlanes>`. Notice that $\mathcal{P}_1$ and $\mathcal{P}_2$ do have points in common, but there are no points that are on all three planes.
 
-```{applet}
+:::{applet}
 :url: lines_and_planes/disjoint_planes
 :fig: Images/Fig-LinesAndPlanes-DisjointPlanes.svg
 :name: Fig:LinesAndPlanes:DisjointPlanes
 
 Three planes without a point in common.
-```
+:::
 
 In {numref}`Figure %s <Fig:LinesAndPlanes:PlanesPointIntersection>` we see three planes $\mathcal{P}_1$, $\mathcal{P}_2$ and $\mathcal{P}_3$ in $\mathbb{R}^3$ that have exactly one point in common. This is the only possibility where three planes have a finite number of points in common. The number of points in common can never be more than one, but less than infinite.
 
-```{applet}
+:::{applet}
 :url: lines_and_planes/planes_point_intersection
 :fig: Images/Fig-LinesAndPlanes-PlanesPointIntersection.svg
 :name: Fig:LinesAndPlanes:PlanesPointIntersection
 
 Three planes with one point in common.
-```
+:::
 
 There are several circumstances where three planes have an infinite number of points in common. It is, for example, possible that the three planes have a common line of intersection, such as in {numref}`Figure %s <Fig:LinesAndPlanes:PlanesLineIntersection>`.
 
-```{applet}
+:::{applet}
 :url: lines_and_planes/plane_line_intersection
 :fig: Images/Fig-LinesAndPlanes-PlanesLineIntersection.svg
 :name: Fig:LinesAndPlanes:PlanesLineIntersection
 
 Three planes with line of intersection.
-```
+:::
 
 It is of course also possible that the three planes coincide. In this case the points that all three planes have in common do not form a line, but an entire plane in $\mathbb{R}^3$. Take for example the planes that are defined by the Cartesian equations $-x+2y+z=1$, $2x-4y-2z=-2$ and $-3x+6y+3z=3$. Since the three equations are multiples of each other we know that they all describe the same collection of points.
 
@@ -444,22 +444,22 @@ It is of course also possible that the three planes coincide. In this case the p
 
 There are multiple ways to describe a line in $\mathbb{R}^3$, but for us the parametric will suffice. In {numref}`Subsec:LinesAndPlanes:ParametricLine` we saw that we can describe a line in $\mathbb{R}^2$ with a parametric vector equation using a vector $\mathbf{v_0}$ that connects the origin to a point on the line and a vector parallel to the given line. The same idea works in the space $\mathbb{R}^3$.
 
-```{prf:definition}
+:::{prf:definition}
 
 Each non-zero vector $\mathbf{u}$ that is parallel to a line $\mathcal{L}$ will be called a *directional vector* of that line.
-```
+:::
 
 Let $\mathcal{L}$ be a line in $\mathbb{R}^3$, $\mathbf{v_0}$ a vector that connects the origin to a point on the line and $\mathbf{u}$ a directional vector of $\mathcal{L}$. In {numref}`Figure %s <Fig:LinesAndPlanes:ParametricLineSpace>` we can see that each vector $\mathbf{v}$ that connects the origin to a point on the line $\mathcal{L}$ can be written as the sum of the vector $\mathbf{v_0}$ and a multiple of the vector $\mathbf{u}$. This means that $\mathbf{v}=\mathbf{v_0}+r\mathbf{u}$ for some real number $r$.
 
-```{applet}
+:::{applet}
 :url: lines_and_planes/parametric_line_space
 :fig: Images/Fig-LinesAndPlanes-ParametricLineSpace.svg
 :name: Fig:LinesAndPlanes:ParametricLineSpace
 
 The line $\mathcal{L}$ in $\mathbb{R}^3$.
-```
+:::
 
-```{prf:definition}
+:::{prf:definition}
 
 If $\mathbf{v_0}=\begin{bmatrix} x_0 \\ y_0 \\ z_0 \end{bmatrix}$ is a vector on the line $\mathcal{L}$ and $\mathbf{u}=\begin{bmatrix} a \\ b \\ c \end{bmatrix}$ is a directional vector of $\mathcal{L}$, then the equation
 
@@ -468,9 +468,9 @@ $$
 $$
 
 will be called a *parametric vector equation* of $\mathcal{L}$.
-```
+:::
 
-```{admonition} Exercise
+:::{exercise}
 
 How can we find a parametric vector equation for the line $\mathcal{L}$ that contains the points $P=(1, 2, 4)$ and $Q=(5, 3, 1)$? The vector $\mathbf{PQ}$ is parallel to $\mathcal{L}$ and therefore a directional vector. The components of this vector are equal to
 
@@ -485,4 +485,4 @@ $$
 $$
 
 is thus a possible parametric vector equation of $\mathcal{L}$.
-```
+:::
