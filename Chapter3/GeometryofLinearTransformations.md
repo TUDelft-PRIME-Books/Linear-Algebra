@@ -19,7 +19,7 @@ $$
 
 Geometrically, this is the linear transformation which squashes the plane flat onto the $x$-axis. In slightly less informal terms, it is the transformation which projects the plane onto the $x$-axis. 
 
-Using the orthogonal projections defined in {numref}`??`, this can be generalised as follows. If $\mathbf{v}$ if a vector in $\mathbb{R}^{n}$, then 
+Using the orthogonal projections defined in {numref}`Dfn:InnerProduct:OrthoProjectionOntoVector`, this can be generalised as follows. If $\mathbf{v}$ if a vector in $\mathbb{R}^{n}$, then 
 
 $$
 T_{\mathbf{v}}:\mathbb{R}^{n}\to\mathbb{R}^{n},\quad\mathbf{w}\mapsto\text{proj}_{\mathbf{v}}(\mathbf{w})
@@ -71,7 +71,7 @@ which finishes the proof.
 
 
 
-The following proposition allows us to quickly find the standard matrix of the projection onto an arbitrary line in $\mathbb{R}^{2}$. This will be useful later on in this section. 
+The following proposition allows us to quickly find the standard matrix of the projection onto an arbitrary line in $\mathbb{R}^{2}$. This will be useful later on in this section, e.g. in the proof of {prf:ref}`Prop:GeomLinTrans:MatofReflinPlane`. 
 
 
 
@@ -138,21 +138,14 @@ v_{1}v_{2}&v_{2}^{2}
 $$
 
 
-
-
 ::::::
-
-
-
 
 
 ::::::{prf:proof}
-Exercise.
 
+It suffices to find the cosine and sine of the angle $\mathcal{L}$ makes with the positive $x$-axis in terms of $v_{1}$ and $v_{2}$. We leave this as an exercise.
 
 ::::::
-
-
 
 
 One salient fact about these projections is that they act as the identity on their range. That is, for any vector $\mathbf{w}$ in the range of $T$ we have $T(T(\mathbf{w}))=T(\mathbf{w})$. This leads us to the following definition:
@@ -168,25 +161,20 @@ A linear transformation $T:\mathbb{R}^{n}\to\mathbb{R}^{n}$ is called a **projec
 
 
 
-
-
 ::::::{prf:proposition}
 :label: Prop:GeomLinTrans:ProjSquaredisProj
 
-An $n\times n$-matrix $P$ is the standard matrix of a projection if and only if $P^{2}=P$.
+An $n\times n$-matrix $P$ is the standard matrix of a projection if and only if $P^{2}=P$. 
 
 
 ::::::
-
-
 
 
 
 ::::::{prf:proof}
 
 
-
-Exercise
+We leave this as an exercise.
 
 
 ::::::
@@ -194,7 +182,7 @@ Exercise
 
 
 
-It turns out that not all projections look like the ones discussed in Section {numref}`??`, not even if we restrict ourselves to the plane. Consider for example the following construction. Let $\mathbf{v}$ be any non-zero vector in $\mathbb{R}^{2}$ and let $\mathcal{L}$ be the line through $\mathbf{v}$ and the origin. Let $\mathbf{w}$ be a vector in $\mathbb{R}^{2}$ which does not lie on $\mathcal{L}$. For any vector $\mathbf{u}$, we define $\mathcal{L}_{\mathbf{u}}$ as the line through $\mathbf{u}$ in the direction $\mathbf{w}$. We now define the transformation $T$ which maps a vector $\mathbf{u}$ to the intersection of $\mathcal{L}_{\mathbf{u}}$ and $\mathcal{L}$. For 
+It turns out that not all projections look like the ones discussed in Section {numref}`??`, not even if we restrict ourselves to a plane. Consider for example the following construction. Let $\mathbf{v}$ be any non-zero vector in $\mathbb{R}^{2}$ and let $\mathcal{L}$ be the line through $\mathbf{v}$ and the origin. Let $\mathbf{w}$ be a vector in $\mathbb{R}^{2}$ which does not lie on $\mathcal{L}$. For any vector $\mathbf{u}$, we define $\mathcal{L}_{\mathbf{u}}$ as the line through $\mathbf{u}$ in the direction $\mathbf{w}$. We now define the transformation $T$ which maps a vector $\mathbf{u}$ to the intersection of $\mathcal{L}_{\mathbf{u}}$ and $\mathcal{L}$. For 
 
 $$
 \mathbf{v}=\begin{bmatrix}2\\1\end{bmatrix}\quad\text{and}\quad\mathbf{w}=\begin{bmatrix}-2\\1\end{bmatrix}
@@ -282,7 +270,7 @@ P:\mathbb{R}^{3}\to\mathbb{R}^{3},\quad\mathbf{w}\mapsto \proj_{\mathbf{v}}(\mat
 $$
 
 gives the orthogonal projection of the vector $\mathbf{w}$ on $\mathcal{L}$. 
-We can also consider the orthogonal projection on a plane in three dimensional space. Suppose the plane $\mathcal{P}$ is spanned by $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ and assume $\mathbf{v}_{1}\ip\mathbf{v}_{2}=0$, that is, assume $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ are orthogona and non-zerol. Then 
+We can also consider the orthogonal projection on a plane in three dimensional space. Suppose the plane $\mathcal{P}$ is spanned by $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ and assume $\mathbf{v}_{1}\ip\mathbf{v}_{2}=0$, that is, assume $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ are orthogonal and non-zero. Then 
 
 $$
 P:\mathbb{R}^{3}\to\mathbb{R}^{3},\mathbf{w}\mapsto \proj_{\mathbf{v}_{1}}(\mathbf{w})+\proj_{\mathbf{v}_{2}}(\mathbf{w})
@@ -307,7 +295,7 @@ vectors in $\mathbb{R}^{n}$ which are all orthogonal to each other,
 i.e. $\mathbf{v}_{i} \ip\mathbf{v}_{j}=0$ for all $i$ and $j$. 
 Put $V=\Span{\mathbf{v}_{1},...,\mathbf{v}_{k}}$. 
 For any vector $\mathbf{w}$ in $\mathbb{R}^{n}$ we can define the 
-orthogonal projection on $V$ as 
+**orthogonal projection** on $V$ as 
 
 $$
 \proj_{V}(\mathbf{w})=\proj_{\mathbf{v}_{1}}(\mathbf{w})+\proj_{\mathbf{v}_{2}}(\mathbf{w})+\cdots+\proj_{\mathbf{v}_{k}}(\mathbf{w}).
@@ -375,7 +363,7 @@ Keeping this in mind, it makes sense to define general reflections as follows.
 
 
 ::::::{prf:definition}
-If $T:\mathbb{R}^{n}\to\mathbb{R}^{n}$ is the projection on $\text{range}(T)$ with standard matrix $P$, then 
+If $T:\mathbb{R}^{n}\to\mathbb{R}^{n}$ is the orthogonal projection on $\text{range}(T)$ with standard matrix $P$, then 
 
 $$
 S:\mathbb{R}^{n}\to\mathbb{R}^{n},\mathbf{v}\mapsto (2P-I)\mathbf{v}
@@ -489,56 +477,66 @@ For large $n$ it is hard to picture what a reflection in $n$-dimensional space d
 :name: Fig:GeomLinTrans:3DReflalongPlane
 
 Reflection along the plane $\mathcal{P}$ in $\mathbb{R}^{3}$.
+
 ::::
 
 
+One particularly interesting aspect of reflections is that they preserve lengths of vectors and angles between vectors. This is a consequence of {prf:ref}`Prop:GeomLinTrans:ReflDotProd`.
 
 
+::::{prf:proposition}
+:label: Prop:GeomLinTrans:ReflDotProd
+
+
+If $S$ is a defined on $\R^{n}$, then for any $\vect{w}_{1},\vect{w}_{2}$ in $\R^{n}$ we have:
+
+$$S(\vect{w}_{1})\cdot S(\vect{w}_{2})=\vect{w}_{1}\cdot\vect{w}_{2}.$$
+
+
+::::
+
+:::{prf:proof}
+
+By definition, there is an orthogonal projection with standard matrix $P$ such that $S(\vect{w})=(2P-I)\vect{w}$. We assume $P$ is the projection on the span of a single vector $\vect{v}$. If there are more, the computations become considerably messier, but neither harder nor more enlightening. 
+
+$$\begin{align*}
+S(\vect{w}_{1})\cdot S(\vect{w}_{2})&=(2P-I)\vect{w}_{1}\cdot(2P-I)\vect{w}_{2}\\
+&=(2\left(\frac{\vect{w_{1}}\cdot\vect{v}}{\vect{v}\cdot\vect{v}}\right)\vect{v}-\vect{w}_{1})\cdot (2\left(\frac{\vect{w_{2}}\cdot\vect{v}}{\vect{v}\cdot\vect{v}}\right)\vect{v}-\vect{w}_{2})\\
+&=4\left(\frac{\vect{w}_{1}\cdot \vect{v}}{\vect{v}\cdot\vect{v}}\right)\left(\frac{\vect{w}_{2}\cdot \vect{v}}{\vect{v}\cdot\vect{v}}\right)\vect{v}\cdot\vect{v}-2\left(\frac{\vect{w}_{2}\cdot \vect{v}}{\vect{v}\cdot\vect{v}}\right)\vect{w}_{1}\cdot\vect{v}-2\left(\frac{\vect{w}_{1}\cdot \vect{v}}{\vect{v}\cdot\vect{v}}\right)\vect{w}_{2}\cdot\vect{v}+\vect{w}_{1}\cdot\vect{w}_{2}\\
+&=\vect{w}_{1}\cdot\vect{w}_{2}
+\end{align*}$$
+
+which proves the claim.
+
+:::
 
 
 ## Rotations
 
 
-
-A third important class of linear transformations are the rotations. Let us start with the definition.
+As we have seen in {prf:ref}`Prop:GeomLinTrans:ReflDotProd`, reflections preserve the dot product and therefore lengths of vectors and the angles between vectors. However, there are other transformations that do so. These other transformations are the rotations. Let us start with the definition.
 
 
 
 ::::::{prf:definition}
-A **rotation** is a transformation $T:\mathbb{R}^{n}\to\mathbb{R}^{n}$ such that for any $\mathbf{v}_{1},\mathbf{v}_{2}$ in $\mathbb{R}^{n}$ we have:
-<ul>
-<li>
+A **rotation** is a transformation $T:\mathbb{R}^{n}\to\mathbb{R}^{n}$ that is not a reflection but such that for any $\mathbf{v}_{1},\mathbf{v}_{2}$ in $\mathbb{R}^{n}$ we have:
 
-$\lVert \mathbf{v}_{1}\rVert=\lVert T(\mathbf{v}_{1})\rVert$;
+$$T(\vect{v}_{1})\cdot T(\vect{v}_{2})=\vect{v}_{1}\cdot\vect{v}_{2}.$$
 
-
-</li>
-<li>
-
- the angle between $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ is the angle between $T(\mathbf{v}_{1})$ and $T(\mathbf{v}_{2})$.
-
-
-
-</li>
-</ul>
-
-
+For convenience, we will also call the identity transformation a rotation, even though it is the reflection over all of $\mathbb{R}^{n}$.
 
 ::::::
-
-
 
 
 
 
 ::::::{prf:proposition}
+:label: Prop:GeomLinTrans:RotsAreLinTrans
+
 Rotations are linear transformations.
 
 
 ::::::
-
-
-
 
 
 ::::::{prf:proof}
@@ -561,15 +559,13 @@ This then implies $T(c\mathbf{v})-cT(\mathbf{v})=\mathbf{0}$ whence $T(c\mathbf{
 
 ::::::
 
+In fact, the proof of {prf:ref}`Prop:GeomLinTrans:RotsAreLinTrans` only uses the fact that rotations preserve the inner product. It therefore also shows that reflections are linear transformations, but we have already established that using a simpler argument.  
 
-
-
-There is a convenient description of the standard matrices for rotations in the plane.
-
-
+The name *rotation* is inspired by the following observation about rotations in the plane.
 
 ::::::{prf:proposition}
-For any $\theta$, the rotation over $\theta$ in the plane has standard matrix
+
+For any real number $\theta$, the rotation over the angle $\theta$ in the plane has standard matrix
 
 
 $$
@@ -580,18 +576,11 @@ R_{\theta}=\begin{bmatrix}
 
 $$
 
-
-
+This is indeed the standard matrix of a rotation.
 
 ::::::
 
-
-
-
-
 ::::::{prf:proof}
-
-
 
  Suppose we take the vector $\mathbf{e}_{1}$ and rotate it (counterclockwise) over an angle $\theta$. Where do we end up? By definition, the $x$-coordinate of our new location will be $\cos(\theta)$ and its $y$-coordinate will be $\sin(\theta)$. Similarly, if we start with the vector $\mathbf{e}_{2}$ and rotate that over the angle $\theta$, the $x$-coordinate of our new point will be $-\sin(\theta)$. This is illustrated in {numref}`Figure %s <Fig:GeomLinTrans:RotinPlane>`.
 
@@ -602,28 +591,18 @@ $$
 The rotation over the angle $\theta$ working on $\mathbf{e}_{1}$ and $\mathbf{e}_{2}$. Note that the distance between $R_{\theta}\mathbf{e}_{2}$ and the vertical axis is $\sin(\theta)$ but, as $R_{\theta}\mathbf{e}_{2}$ lies to the left of the vertical axis, the first entry of $R_{\theta}\mathbf{e}_{2}$ is $-\sin(\theta)$.
 ::::
 
-
-
-
+To show that $R_{\theta}$ is indeed the standard matrix of a rotation, we first note that it is only a reflection if it is the identity matrix. We leave it as an exercise to check that $(R_{\theta}\vect{v}_{1})\cdot (R_{\theta}\vect{v}_{2})=\vect{v}_{1}\cdot \vect{v}_{2}$ for any $\vect{v}_{1},\vect{v}_{2}$ in $\R^{2}$.
 ::::::
 
 
-
-
 Alternatively, one can describe a rotation in the plane as a combination of two reflections. We make this precise in the following proposition, which is illustrated in {numref}`Figure %s <Fig:GeomLinTrans:RotisDoubleRefl>`. 
-
-
 
 ::::::{prf:proposition}
 :label: Prop:GeomLinTrans:RotisDoubleRefl
 
 Any rotation in the plane is the composition of two reflections.
 
-
 ::::::
-
-
-
 
 
 ::::::{prf:proof}
@@ -652,8 +631,6 @@ R_{\mathcal{L}_{2}}R_{\mathcal{L}_{1}}=\begin{bmatrix}
 \end{bmatrix}=R_{\theta}.
 
 $$
-
-
 
 
 ::::::
