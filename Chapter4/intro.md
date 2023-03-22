@@ -1,4 +1,4 @@
-# Basis and Dimension
+# Subspaces
 
 :::{tableofcontents}
 :::

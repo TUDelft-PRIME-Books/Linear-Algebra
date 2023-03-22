@@ -123,6 +123,17 @@ $$
    \begin{bmatrix}2&1\\1&-2 \end{bmatrix}^{-1}.   
 $$
 
+
+In {numref}`Figure %s <Fig:GramSchmidt:GS-step123>`
+the image of the unit circle under the transformation  $\vect{x} \mapsto A\vect{x}$ is shown. $\vect{q}_1$ and $\vect{q}_2$  are two orthonormal unit eigenvectors.
+
+:::{figure} Images/Fig-SymmetricMat-Evectors.svg
+:name: Fig:SymmetricMat:Evectors
+
+The transformation  $T(\vect{x}) =  \begin{bmatrix} 1&2\\2&-2 \end{bmatrix}\vect{x}$.
+:::
+
+
 Furthermore, if we normalize the eigenvectors, i.e., the columns of $P$, we find the following diagonalization of $A$ with an orthogonal matrix $Q$:
 
 $$

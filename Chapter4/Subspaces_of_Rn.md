@@ -37,6 +37,7 @@ $S$ contains the zero vector.
 
  If two vectors $\vect{u}$ and $\vect{v}$ are in $S$, then their sum is in $S$ too:
 
+<BR>
 
 $$
 
@@ -50,6 +51,8 @@ $$
 <li>
 
  If a vector  $\vect{u}$ is in $S$, then every scalar multiple of $\vect{u}$ is in $S$ too:
+
+<BR>
 
 $$
 
@@ -105,13 +108,14 @@ $S$ certainly contains the zero vector.
 
  If two vectors $\vect{u}$ and $\vect{v}$ are in $S$, then their sum is in $S$ too:
 
+<BR>
+
 $$
 
 \vect{u} \in S,  \vect{v} \in S  \,\,
 \Longrightarrow \,\, \vect{u} =  \vect{v}  =  \vect{0} \,\,
 \Longrightarrow  \,\, \vect{u} +  \vect{v}  =  \vect{0} +  \vect{0} =
 \vect{0} \in S.
-\nonumber
 
 $$
 
@@ -120,6 +124,8 @@ $$
 <li>
 
  If a vector  $\vect{u}$ is in $S$, then every scalar multiple of $\vect{u}$ is in $S$ too:  again
+
+<BR>
 
 $$
 
@@ -361,7 +367,6 @@ taking $c_1 = c$, $c_2  = 0$ it follows that for  $\vect{u} \in S$
 $$
 
 c\vect{u}  = c\vect{u}+0\vect{u}  \in S, \text{  so  }S\text{  has property (iii)}.
-\nonumber
 
 $$
 
@@ -369,8 +374,7 @@ Finally, to show that $S$ contains the zero vector, let $\vect{u}$ be any vector
 
 $$
 
-\vect{0} = 0\vect{u}, \quad \text{so  } \vect{0} \text{  lies in  }S.
-\nonumber
+\vect{0} = 0\vect{u}, \quad \text{so  } \,\,\vect{0} \text{  lies in  }S.
 
 $$
 
@@ -690,7 +694,9 @@ The next proposition shows that the designation 'space' in the above definition 
 ::::::{prf:proposition}
 
 
- Let $A$ be an  $m\times n$ matrix.<ol type = "i">
+ Let $A$ be an  $m\times n$ matrix.
+ 
+ <ol type = "i">
 
 <li>
 
@@ -745,6 +751,8 @@ so $\vect{0}$ is contained in the null space.
 Second,  to show that  $\Nul{A}$ is closed under sums, suppose that
 $\vect{u}$ and   $\vect{v}$  are two vectors in $\Nul{A}$. Then from
 
+<BR>
+
 $$
 A\vect{u} = \vect{0} \quad \text{and} \quad A\vect{v} = \vect{0},
 $$
@@ -767,6 +775,7 @@ Third, to show that  $\Nul{A}$  is closed under taking scalar multiples,
 suppose that
 $\vect{u}$ is a vector  in $\Nul{A}$, i.e.
 
+<BR>
 
 $$
 
