@@ -224,8 +224,8 @@ The two definitions of sum and scalar multiple are called **componentwise** defi
 ::::::{prf:proposition}
 Suppose $A, B$ and $C$  are $m\times n$ matrices and let $c_{1},c_{2}$ be  two real numbers.
 Then we have:
-\begin{multicols}{2}
-	<ul>
+
+<ul>
 <li>
 
 $A+O_{mn}=A=O_{mn}+A$
@@ -269,7 +269,7 @@ $c_{1}(c_{2}A)=(c_{1}c_{2})A$.
 </li>
 </ul>
 
-\end{multicols}
+
 
 
 ::::::
