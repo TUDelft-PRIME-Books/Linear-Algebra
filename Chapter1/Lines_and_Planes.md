@@ -470,6 +470,7 @@ $$
 will be called a *parametric vector equation* of $\mathcal{L}$.
 :::
 
+
 :::{exercise}
 
 How can we find a parametric vector equation for the line $\mathcal{L}$ that contains the points $P=(1, 2, 4)$ and $Q=(5, 3, 1)$? The vector $\mathbf{PQ}$ is parallel to $\mathcal{L}$ and therefore a directional vector. The components of this vector are equal to

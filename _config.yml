@@ -46,6 +46,8 @@ sphinx:
             \newcommand{\CoMatrix}[2]{P_{{\mathcal #2}\leftarrow{\mathcal #1}}} 
     mathjax3_config: 
       tex:
+        inlineMath: [ ['$','$'], ['\(','\)'] ]
+        displayMath: [ ['$$','$$'], ['\[','\]'] ]
         macros:
           "CoBmatrix": ["P_{{\\mathcal #2}\\leftarrow{\\mathcal #1}} ",2]
           "mc": "\\mathcal"
@@ -71,6 +73,7 @@ sphinx:
     htmltable: _ext/
     latextable: _ext/
     review: _ext/
+    parentheses_list: _ext/
   extra_extensions:
     - sphinx_proof
     - sphinx_togglebutton

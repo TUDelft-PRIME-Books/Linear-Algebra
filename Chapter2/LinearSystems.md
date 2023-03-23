@@ -1,3 +1,8 @@
+---
+csp:
+  frame-ancestors: 'self' https://embed.grasple.com/;
+---
+
 (Section:LinSystems)=
 # Systems of Linear Equations 
 
@@ -159,6 +164,10 @@ which are both true identities.
 ::::
 
 The solution set may be empty, as in the following example
+
+
+<iframe height="560" src="https://embed.grasple.com/exercises/f415547f-d55d-41a5-9d4d-f6cde5d48de7?id=75499" title="Grasple Exercise 75499" width="100%"></iframe>
+
 
 
 ::::{prf:example} 

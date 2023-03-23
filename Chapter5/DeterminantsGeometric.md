@@ -546,7 +546,8 @@ $|D|$, i.e.  the absolute value of the determinant,  is equal to the volume of t
 <li>
 
 :::{latextable}
-\begin{tabular}[t]{lcl} $D=0 $ & $\iff $&   the matrix  $A$  is singular  \\
+
+\begin{tabular}{lcl} $D=0 $ & $\iff $&   the matrix  $A$  is singular  \\
 & $\iff $&  the vectors  $\{\vect{a}, \vect{b},\vect{c}\}$   are linearly dependent.
 \end{tabular}
 :::
@@ -554,7 +555,8 @@ $|D|$, i.e.  the absolute value of the determinant,  is equal to the volume of t
 Equivalently:
 
 :::{latextable}
-\begin{tabular}[t]{lcl} $D\neq 0 $ & $\iff $&   the matrix  $A$  is invertible  \\
+
+\begin{tabular}{lcl} $D\neq 0 $ & $\iff $&   the matrix  $A$  is invertible  \\
 & $\iff $&  the vectors  $\{\vect{a}, \vect{b},\vect{c}\}$   are linearly independent.
 \end{tabular}
 :::
