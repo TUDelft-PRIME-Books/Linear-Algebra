@@ -45,9 +45,6 @@ $$
   \left(\begin{bmatrix} 1 \\ 1   \\1    \end{bmatrix},  \begin{bmatrix} 4 \\ -5   \\ -1    \end{bmatrix}  \right).
 $$
 
-:::{figure}
-
-:::
 
 ::::
 

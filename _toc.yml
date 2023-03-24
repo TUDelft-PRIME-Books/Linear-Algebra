@@ -30,6 +30,12 @@ chapters:
       - file: 'Chapter4/Subspaces_of_Rn.md'
       - file: 'Chapter4/BasisAndDimension.md'
       - file: 'Chapter4/ChangeOfBasis.md'
+  - file: 'Chapter5/intro.md'
+    sections:
+      - file: "Chapter5/DeterminantsGeometric.md"
+      - file: "Chapter5/DeterminantsViaCofactors.md"
+      - file: "Chapter5/DeterminantsViaRowReduction.md"
+      - file: "Chapter5/DeterminantsDitjesEnDatjes.md"
   - file: 'Chapter6/intro.md'
     sections:
       - file: "Chapter6/EigenvaluesEigenvectors.md"
@@ -40,6 +46,7 @@ chapters:
   - file: 'Chapter7/intro.md'
     sections:
       - file: 'Chapter7/Orthogonality.md'
+      - file: 'Chapter7/GramSchmidt.md'
   - file : 'Appendices/intro.md'
     sections:
       - file: "Appendices/ComplexNumbers.md"

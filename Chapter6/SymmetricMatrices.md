@@ -4,10 +4,6 @@
 ## Introduction 
 
 
-
-
-
-
 ::::{prf:definition} 
 :label: Dfn:SymmetricMat:SymmetricMatrix
 
@@ -477,7 +473,7 @@ $$
 One more example before we get to the proof (or you jump over to {numref}`SubSec:SymmetricMat:SpectralDecomp`).
 
 ::::{prf:example}
-:label: Ex:SymmetricMat:OrthogDiag3x3
+:label: Ex:SymmetricMat:OrthogDiag3x3bis
  
 Let the symmetric matrix $A$  be given by  $     A = \begin{bmatrix} 
      1 & 2 & 2 & 0 \\ 2 & -1 & 0 & 2 \\ 2 & 0 & -1 & -2 \\ 0 & 2 & -2 & 1
@@ -654,6 +650,9 @@ This proves that $A$ is diagonalizable, with  $Q = Q_1Q_2 \cdots Q_{n-1}$  as a 
 
 Moreover,  since the product of orthogonal matrices is orthogonal, $A$ is in fact orthogonally diagonalizable.
 
+::::
+
+
 :::{prf:example}
 :label: Ex:SymmetricMat:ConstructDiag
 
@@ -804,7 +803,7 @@ The importance of the step-by-step reduction is that it shows that from the 'min
 :::
 
 
-::::
+
   
 
 
