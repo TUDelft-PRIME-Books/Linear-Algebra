@@ -73,12 +73,14 @@ Conversely, every orthogonally diagonalizable matrix is symmetric.
 
 ::::
 
-So, for a symmetric matrix always  an orthonormal basis of eigenvectors exists.  For the inertia tensor of a 3D body such a basis corresponds to the (perpendicular) principle axes.
+So, for a symmetric matrix  an orthonormal basis of eigenvectors always exists.  For the inertia tensor of a 3D body such a basis corresponds to the (perpendicular) principle axes.
 
 
 ::::{prf:proof}  Of the converse of {prf:ref}`Thm:SymmetricMat:OrthogDiag`.
 
-This is just a one line proof.   If  $A = QDQ^{-1} = QDQ^T$ 
+Recall that an orthogonal matrix is a matrix $Q$ for which  $Q^{-1} = Q^T$.
+
+With this reminder it is just a one line proof.   If  $A = QDQ^{-1} = QDQ^T$, 
 
 then  $A^T = (QDQ^{-1} )^T = (Q^{-1} )^TD^TQ^T = (Q^T)^TD^TQ^T = QDQ^T = A$.
 
@@ -276,10 +278,11 @@ $$
   \overline{\overline{\mathbf{u}}^{T}\mathbf{v}} = \overline{\mathbf{v}}^T  \mathbf{u}.  
 $$
 
-Now suppose that  $\lambda$ is an eigenvalue of the symmetric matrix $A$, and  $\mathbf{v}$ is a nonzero (possible complex) eigenvector of $A$ for the eigenvalue $\lambda$.   Note that, since  $A$ is real and symmetric,  $\overline{{A}^T} = A^T = A$.
+Now suppose that  $\lambda$ is an eigenvalue of the symmetric matrix $A$, and  $\mathbf{v}$ is a nonzero (possibly complex) eigenvector of $A$ for the eigenvalue $\lambda$.   Note that, since  $A$ is real and symmetric,  $\overline{{A}^T} = A^T = A$.
 To prove that $\lambda$ is real, we will show that $\overline{\lambda} = \lambda$.
 
 We  use kind of the same 'trick' as in {prf:ref}`Prop:SymmetricMat:OrthogonalEigenvectors`  Equation  {eq}`Eq:SymmetricMat:Av1v2`.
+<BR>
 On the one hand 
 
 $$
@@ -290,7 +293,7 @@ $$
 On the other hand, 
 
 $$
- \overline{(A \mathbf{v})^T} \mathbf{v} = \overline{\mathbf{v}^T A^T}\mathbf{v} = \overline{\mathbf{v}^T} \overline{{A}^T} \mathbf{v}  = 
+ \overline{(A \mathbf{v})^T} \mathbf{v} = \overline{\mathbf{v}^T A^T}\mathbf{v} = \overline{\mathbf{v}^T}\,\overline{{A}^T} \mathbf{v}  = 
  \overline{\mathbf{v}}^T A\mathbf{v}  =  \overline{\mathbf{v}}^T  \lambda\mathbf{v}  = \lambda\overline{\mathbf{v}}^T \mathbf{v}.
 $$
 
@@ -332,7 +335,7 @@ Obviously, an elementary approach like this will soon get very complicated for l
 ::::
  
 
-Lastly we come to the third of 'the big three' of symmetric matrices.
+Lastly we come to the third of three essential properties of symmetric matrices.
 
 ::::{prf:proposition} 
 :label: Prop:SymmetricMat:AlgGeomMultiplicity
@@ -341,7 +344,7 @@ For each  eigenvalue of a symmetric matrix the geometric multiplicity is equal t
 
 ::::
 
-The proof of this proposition we will  incorporate in the proof of the main theorem in 
+We will  incorporate the proof of this proposition  in the proof of the main theorem in 
 {numref}`Subsection %s <SubSec:SymmetricMat:OrthogDiag>`. For now, we will look at a few examples.  
 
 
@@ -353,7 +356,7 @@ is diagonalizable and has mutually orthogonal eigenvectors.
 
 We first compute the characteristic polynomial.
 
-Expansion along the first row gives
+Expansion along the first column gives
     
 $$
       \begin{array}{rcl}
@@ -374,8 +377,8 @@ So $A$ has the real eigenvalues  $\lambda_{1} = 1$,   $\lambda_2 = 6$  and $\lam
 The eigenvectors are found to be
 
 $$
-   \mathbf{v}_1 = \begin{bmatrix} 1 \\ 2 \\ -1 \end{bmatrix} \text{ for } \lambda_1 = 1, \quad
-   \mathbf{v}_1 = \begin{bmatrix} 2 \\-1 \\ 0 \end{bmatrix} \text{ for } \lambda_2, \quad  
+   \mathbf{v}_1 = \begin{bmatrix} 2 \\-1 \\ 0 \end{bmatrix} \text{ for } \lambda_1 = 1, \quad
+   \mathbf{v}_2 = \begin{bmatrix} 1 \\ 2 \\ -1 \end{bmatrix} \text{ for } \lambda_2, \quad  
    \mathbf{v}_3 = \begin{bmatrix} 1 \\ 2 \\ 5 \end{bmatrix} \text{ for } \lambda_3. 
 \nonumber
 $$
@@ -400,7 +403,7 @@ For $\lambda = -2$ we find via row reduction
     
 $$
     [A - (-2)I\,|\,\mathbf{0}] = 
-    \left[\begin{array}{ccc|c} 2+2&2&4&0\\2 & -1+2 & 2 &0\\ 4&2&2+2&0\end{array}\right]       \sim
+    \left[\begin{array}{ccc|c} 4&2&4&0\\2 & 1 & 2 &0\\ 4&2&4&0\end{array}\right]       \sim
     \left[\begin{array}{ccc|c} 2&1&2&0\\0&0&0&0 \\0&0&0&0\end{array}\right]    \nonumber
 $$
 
@@ -416,18 +419,16 @@ Lastly we leave it to you to check that an eigenvector for $\lambda_3 = 7$ is gi
 ## Orthogonal Diagonalizability of Symmetric Matrices  
 
 
-Let us restate the main theorem about symmetric matrices.
+Let us restate the main theorem ({prf:ref}`Thm:SymmetricMat:OrthogDiag`) about symmetric matrices:
 
-::::{prf:theorem} 
-:label: Thm:SymmetricMat:OrthogDiag2
- 
-A matrix $A$ is symmetric if and only if it is orthogonally diagonalizable.
+<BR>
 
-::::
+**A matrix $A$ is symmetric if and only if it is orthogonally diagonalizable.**
 
-Note that this also establishes the property that for each eigenvalue of a symmetric matrix 
-the geometric muliplicity equals the algebraic multiplicity 
-({prf:ref}`Prop:SymmetricMat:OrthogonalEigenvectors`).
+<BR>
+
+Note that this also establishes the property that for each eigenvalue of a symmetric matrix the geometric muliplicity equals the algebraic multiplicity 
+({prf:ref}`Prop:SymmetricMat:AlgGeomMultiplicity`).
 
 
 
@@ -454,14 +455,14 @@ For the eigenspace  $E_{-2} = \Span{\mathbf{v}_1, \mathbf{v}_2}$  we can use Gra
 $$
   \mathbf{u}_1 = \mathbf{v}_1, \quad \mathbf{u}_2 = 
          \mathbf{v}_2 - \dfrac{\mathbf{v}_2 \ip \mathbf{u}_1}{\mathbf{u}_1 \ip \mathbf{u}_1} \mathbf{u}_1 
-         = \dfrac12\begin{bmatrix} 1 \\ -4 \\ 1\end{bmatrix}
+         = \dfrac12\begin{bmatrix} 1 \\ -4 \\ 1\end{bmatrix}.
 $$
 
 Normalizing the orthogonal basis $\{\mathbf{u}_1, \mathbf{u}_2, \mathbf{v}_3\}$  and putting them side by side in a matrix yields the orthogonal matrix
 
 $$
   Q = \begin{bmatrix} \dfrac{1}{\sqrt{2}} & \dfrac{1}{\sqrt{18}} & \dfrac{2}{3} \\ 
-  0 & \dfrac{-4}{\sqrt{18}} & \dfrac{-1}{3}\\ \dfrac{-1}{\sqrt{2}} &  \dfrac{1}{\sqrt{18}} & \dfrac{2}{3}
+  0 & \dfrac{-4}{\sqrt{18}} & \dfrac{1}{3}\\ \dfrac{-1}{\sqrt{2}} &  \dfrac{1}{\sqrt{18}} & \dfrac{2}{3}
   \end{bmatrix}.
 $$
 
@@ -479,7 +480,7 @@ One more example before we get to the proof (or you jump over to {numref}`SubSec
 :label: Ex:SymmetricMat:OrthogDiag3x3
  
 Let the symmetric matrix $A$  be given by  $     A = \begin{bmatrix} 
-     1 & 2 & 2 & 0 \\ 2 & -1 & 2 & 0 \\ 2 & 0 & -1 & -2 \\ 0 & 2 & -2 & 1
+     1 & 2 & 2 & 0 \\ 2 & -1 & 0 & 2 \\ 2 & 0 & -1 & -2 \\ 0 & 2 & -2 & 1
     \end{bmatrix}$.
 
 The hard part is to find the eigenvalues.  (I.e., how to solve an equation of the order four?!)
@@ -490,7 +491,7 @@ It appears that $A$ has the double eigenvalues $\lambda_{1,2} = 3$ and  $\lambda
 To find the eigenvectors for  the eigenvalue 3 we row reduce the  matrix $(A - 3I)$.
 
 $$
-\left[\begin{array}{cccc}1-3 & 2 & 2 & 0\\ 2 & -1-3 & 2 & 0 \\ 2 & 0 & -1-3 & -2 \\ 0 & 2 & -2 & 1-3  \end{array} \right]  \sim 
+\left[\begin{array}{cccc}1-3 & 2 & 2 & 0\\ 2 & -1-3 & 0 & 2 \\ 2 & 0 & -1-3 & -2 \\ 0 & 2 & -2 & 1-3  \end{array} \right]  \quad  \sim \ldots \sim  \quad
 \left[\begin{array}{cccc}1 & 0 & -2 & -1\\ 0 & 1 & -1 & -1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0  \end{array} \right].  
 $$
 
@@ -521,13 +522,13 @@ $$
 Likewise we can first find a 'natural' basis for the eigenspace  $E_{-3}$ by row reducing  $(A - (-3I))$:
 
 $$
-\left[\begin{array}{cccc}1+3 & 2 & 2 & 0\\ 2 & -1+3 & 2 & 0 \\ 2 & 0 & -1+3 & -2 \\ 0 & 2 & -2 & 1+3  \end{array} \right] \quad  \sim 
+(A - (-3I)) = \left[\begin{array}{cccc}4 & 2 & 2 & 0\\ 2 & 2 & 0 & 2 \\ 2 & 0 & 2 & -2 \\ 0 & 2 & -2 & 4  \end{array} \right] \quad  \sim \ldots \sim  \quad
 \left[\begin{array}{cccc}1 & 0 & 1 & -1\\ 0 & 1 & -1 & 2 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0  \end{array} \right].  
 $$
 
 Two independent eigenvectors:   $\vect{v}_3 = \left[\begin{array}{c} -1 \\ 1 \\ 1 \\ 0  \end{array} \right]$ and $\vect{v}_4 = \left[\begin{array}{c} 1 \\ -2 \\ 0 \\ 1  \end{array} \right]$.
 
-Again these can be orthogonalized, and then we find the following complete set of  of eigenvectors, i.e., a basis for $\R^4$:
+Again these can be orthogonalized, and then we find the following complete set of  eigenvectors, i.e., a basis for $\R^4$:
 
 $$
   \vect{u}_1 = \begin{bmatrix} 1 \\ 1 \\ 0\\ 1\end{bmatrix}, \quad
@@ -553,7 +554,7 @@ And now it's time for the proof of the main theorem.
 ::::{prf:proof}   Of {prf:ref}`Thm:SymmetricMat:OrthogDiag`
  
 
-Suppose that $A$ is a symmetric $n \times n$  matrix.  We know there are $n$ real eigenvalues
+Suppose that $A$ is a symmetric $n \times n$  matrix.  We know there are $n$ real, possibly multiple,  eigenvalues
 $\lambda_1, \lambda_2, \ldots, \lambda_n$. 
 Suppose  $\vect{q}_1$ is an eigenvector for $\lambda_1$ with unit length.
 We can extend  $\{\vect{q}_1\}$ to an orthonormal basis  $(\vect{q}_1,\vect{q}_2,\ldots,\vect{q}_n)$.
@@ -562,9 +563,9 @@ Let $Q_1$ be the matrix with the columns $\vect{q}_1,\vect{q}_2,\ldots,\vect{q}_
 It can be shown that  $A_1 = Q_1^{-1}AQ_1 = Q_1^TAQ_1$  is of the form
 
 $$
-   \left[\begin{array}{cccc} \lambda_1 & 0   & \ldots & 0 &0 \\ 
+   \left[\begin{array}{ccc} \lambda_1 & 0   & \ldots & 0  \\ 
     0 &   \\
-     \vdots   & & B_1 & & \\ 
+     \vdots   & & B_1 &  \\ 
     0 & 
    \end{array}\right]
 $$
@@ -600,9 +601,9 @@ We can apply the same construction to  $B_1$, yielding
 
 $$
    B_2 = (\tilde{Q}_2)^{-1}B_1\tilde{Q}_2
-   =    \left[\begin{array}{cccc} \lambda_2 & 0   & \ldots & 0 &0 \\ 
+   =    \left[\begin{array}{cccc} \lambda_2 & 0   & \ldots & 0  \\ 
     0 &   \\
-     \vdots   & & \tilde{B}_2 & & \\ 
+     \vdots   & & \tilde{B}_2 &  \\ 
     0 & 
    \end{array}\right].
 $$
@@ -613,9 +614,9 @@ If we then define
 
 $$
    Q_2 = 
-    \left[\begin{array}{cccc} 1 & 0   & \ldots & 0 &0 \\ 
+    \left[\begin{array}{cccc} 1 & 0   & \ldots & 0  \\ 
     0 &   \\
-     \vdots   & & \tilde{Q}_2 & & \\ 
+     \vdots   & & \tilde{Q}_2 &  \\ 
     0 & 
    \end{array}\right]
    
@@ -626,9 +627,9 @@ it follows that
 
 $$
   A_2 = Q_2^{-1}A_1Q_2 = 
-  \left[\begin{array}{ccccccc} 
-    \lambda_1 &      0    & 0  & \ldots & 0 &0 \\ 
-       0      & \lambda_2 & 0  & \ldots & 0 &0 \\ 
+  \left[\begin{array}{cccccc} 
+    \lambda_1 &      0    & 0  & \ldots & 0  \\ 
+       0      & \lambda_2 & 0  & \ldots & 0  \\ 
        0      &  0  \\
     \vdots & \vdots & & \tilde{B_2}  \\
     0 & 0 &   
@@ -744,9 +745,9 @@ If we normalize and use them as the columns of $\tilde{Q}_2$ as in the proof, we
 $$
 
    Q_2 = \left[\begin{array}{cccc} 1 & 0 & 0 & 0 \\
-                  0 & \dfrac{1}{\sqrt{6}} &  \dfrac{\sqrt{2}}{\sqrt{3}} & -\dfrac{1}{\sqrt{6}} \\
+                  0 & \dfrac{1}{\sqrt{6}} &  \dfrac{\sqrt{2}}{\sqrt{3}} & \dfrac{1}{\sqrt{6}} \\
                   0 & \dfrac{-1}{\sqrt{2}} &  0 & \dfrac{1}{\sqrt{2}} \\
-                  0 & \dfrac{1}{\sqrt{3}} &  \dfrac{1}{\sqrt{3}} & -\dfrac{1}{\sqrt{3}}
+                  0 & \dfrac{-1}{\sqrt{3}} &  \dfrac{1}{\sqrt{3}} & -\dfrac{1}{\sqrt{3}}
                                     \end{array}   \right].
                                     
 $$

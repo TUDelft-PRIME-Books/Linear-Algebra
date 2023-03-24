@@ -490,7 +490,8 @@ Prove statements (i) and (iii) of {prf:ref}`Prop:MatrixOps:Transpose`.
 
 
 ::::::{prf:example}
-Find $X$ if  $A + 2X^T + B = C$, where
+
+We will solve  the equation $A + 2X^T + B = C$ for $X$, where
 
 $$
 
@@ -507,7 +508,7 @@ We will extricate $X$  step by step:
 
 $$
 
-  A + 2X^T + B = C \quad \iff \quad 2X^T = C-A-B \quad \iff \quad X^T = \tfrac12(C-A-B).  
+  A + 2X^T + B = C \,\, \iff \,\,2X^T = C-A-B \,\, \iff \,\, X^T = \tfrac12(C-A-B).  
 \nonumber
 
 $$
@@ -597,7 +598,7 @@ $$
 
   \begin{bmatrix} 1 & -3 \\ -1 & 2 \\ 3& -2 \end{bmatrix} \begin{bmatrix} 1\\  2 \end{bmatrix} 
   = 1\begin{bmatrix} 1  \\ -1  \\ 3\end{bmatrix} +
-  2\begin{bmatrix}  -3 \\ 2 \\  -2 \end{bmatrix} \,\,=\, \begin{bmatrix} -5  \\ 3  \\ -1\end{bmatrix}
+  2\begin{bmatrix}  -3 \\ 2 \\  -2 \end{bmatrix} \,\,=\, \begin{bmatrix} -5  \\ 3  \\ -1\end{bmatrix}.
 
 $$
 
@@ -774,7 +775,7 @@ $$
 
 
 
-This example  illustrates the existence of a `unit element' with respect to the multiplication. To identify it we first introduce some more terminology.
+This example  illustrates the existence of a *unit element*  with respect to the multiplication. To identify it we first introduce some more terminology.
 
 
 
@@ -794,7 +795,7 @@ A square matrix where all non-diagonal elements are equal to 0 is called a **dia
 
 
 ::::::{prf:remark}
-The other diagonal of a square matrix, the one from bottom left to top right, plays a minor role. For this reason we don't reserve a name for it.  By  `diagonal'  we will always mean: main diagonal.
+The other diagonal of a square matrix, the one from bottom left to top right, plays a minor role. For this reason we don't reserve a name for it.  By  'diagonal'  we will always mean: main diagonal.
 
 
 ::::::
@@ -916,7 +917,7 @@ $$
                             0 & 0 & 0 & 1
             \end{bmatrix}
             \quad \text{and} \quad
-   A = \begin{bmatrix} a_{11}& a_{12} & a_{13} \\  a_{21}& a_{22} & a_{23} \\ a_{31}& a_{32} & a_{33} \\ a_{41} & a_{42} & a_{43}   \end{bmatrix}          
+   A = \begin{bmatrix} a_{11}& a_{12} & a_{13} \\  a_{21}& a_{22} & a_{23} \\ a_{31}& a_{32} & a_{33} \\ a_{41} & a_{42} & a_{43}   \end{bmatrix}.          
 \nonumber
 
 $$
