@@ -1,0 +1,10 @@
+.logo {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  max-width: 300px;
+  max-height: 300px;
+  padding: 10px; /* Adjust this value to create the minimum white space equal to the height of the letter 'T' in the logo */
+  background-color: white;
+  box-sizing: content-box;
+}
