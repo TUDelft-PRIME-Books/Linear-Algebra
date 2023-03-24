@@ -4,10 +4,18 @@ author: "Dani Balagué Guardia, André Hensbergen, Nikolaas Verhulst, Tom Vroegr
 only_build_toc_files: true
 logo: "https://d2k0ddhflgrk1i.cloudfront.net/Websections/Huisstijl/Bouwstenen/Logo/Descriptor/TUDelft_logo_descriptor_rgb.png"
 html:
+  theme_options:
+    use_sidenotes: true
+  use_repository_button: true
   extra_footer: |
     <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
   extra_css:
     - TUDelft_logo.css
+    - margin_nodes.css
+repository:
+  url: https://gitlab.ewi.tudelft.nl/dbalague/openlabook
+  branch: main
+
 execute:
   execute_notebooks: "off"
 exclude_patterns:
@@ -26,6 +34,7 @@ parse:
     myst_heading_anchors : 5
 sphinx:
   config:
+    language: en
     latex_elements:
           preamble: |
             \usepackage{chemmacros}
@@ -84,3 +93,8 @@ sphinx:
     - sphinx_proof
     - sphinx_togglebutton
     - sphinx_exercise
+#    - sphinx_panels
+
+latex:
+  latex_engine: pdflatex
+  use_jupyterbook_latex: true
