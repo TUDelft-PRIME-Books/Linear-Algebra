@@ -30,6 +30,7 @@ If two vectors $\vect{u}$ and $\vect{v}$ are in $S$, then their sum is in $S$ to
 <br>
 <br>
 
+<BR>
 
 $$
 \vect{u} \in S,  \vect{v} \in S \quad \Longrightarrow \quad
@@ -42,6 +43,8 @@ $$
 If a vector  $\vect{u}$ is in $S$, then every scalar multiple of $\vect{u}$ is in $S$ too:
 <br>
 <br>
+
+<BR>
 
 $$
 \vect{u} \in S,  c \in \R \quad \Longrightarrow \quad
@@ -77,6 +80,8 @@ $S$ certainly contains the zero vector.
 If two vectors $\vect{u}$ and $\vect{v}$ are in $S$, then their sum is in $S$ too:
 <br><br>
 
+<BR>
+
 $$
 
 \vect{u} \in S,  \vect{v} \in S  \,\,
@@ -91,6 +96,8 @@ $$
 
 If a vector  $\vect{u}$ is in $S$, then every scalar multiple of $\vect{u}$ is in $S$ too:  again
 <br><br>
+
+<BR>
 
 $$
 \vect{u} \in S\quad
@@ -232,7 +239,9 @@ $$
 Finally, to show that $S$ contains the zero vector, let $\vect{u}$ be any vector in $S$, which is possible since $S$ is non-empty. Then from property (iii), taking $c = 0$ it follows that
 
 $$
-\vect{0} = 0\vect{u}, \quad \text{so  } \vect{0} \text{  lies in  }S.
+
+\vect{0} = 0\vect{u}, \quad \text{so  } \,\,\vect{0} \text{  lies in  }S.
+
 $$
 
 ::::::
@@ -519,6 +528,8 @@ so $\vect{0}$ is contained in the null space.
 Second,  to show that  $\Nul{A}$ is closed under sums, suppose that
 $\vect{u}$ and   $\vect{v}$  are two vectors in $\Nul{A}$. Then from
 
+<BR>
+
 $$
 A\vect{u} = \vect{0} \quad \text{and} \quad A\vect{v} = \vect{0},
 $$
@@ -539,6 +550,7 @@ Third, to show that  $\Nul{A}$  is closed under taking scalar multiples,
 suppose that
 $\vect{u}$ is a vector  in $\Nul{A}$, i.e.
 
+<BR>
 
 $$
 A\vect{u} = \vect{0}

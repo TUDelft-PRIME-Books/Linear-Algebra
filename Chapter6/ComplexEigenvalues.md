@@ -18,8 +18,8 @@ $$
 Completing the square we see that
 
 $$
-p_A(\lambda) = 0 \quad\iff\quad \lambda^2 - 4\lambda +5 = (\lambda -2)^2 + 1 = 0
-\quad\iff\quad  \lambda = 2 \pm i.
+p_A(\lambda) = 0 \,\, \iff \,\, \lambda^2 - 4\lambda +5 = (\lambda -2)^2 + 1 = 0
+\,\, \iff \,\,  \lambda = 2 \pm i.
 $$
 
 So the eigenvalues are complex numbers.  Can we still find eigenvectors?  We sure can, but they will not be real vectors.  To find an eigenvector for  $\lambda_1 = 2+i$, as before we have
@@ -35,12 +35,12 @@ $$
 =
 \left[\begin{array}{cc|c} -1 - i & -2& 0 \\ 1 & 1-i & 0 \end{array}\right]
 \sim
-\left[\begin{array}{cc|c} 0 &\fbox{0}& 0 \\ 1 & 1-i & 0 \end{array}\right]
+\left[\begin{array}{cc|c} 0 & \color{blue}& 0 \\ 1 & 1-i & 0 \end{array}\right]
 ,
 $$
 
 where the row operation we invoke is:  add the second row $(1+i)$ times to the first row.
-The 0 in the box is the result of the calculation of
+The blue {\color{blue}0}  box is the result of the calculation of
 
 $$
 -2 + (1+i)(1-i).
@@ -48,6 +48,7 @@ $$
 
 We can read off a solution (equal to complex eigenvector)
 $\vect{v} = \left[\begin{array}{c}  -1+i \\1 \end{array}\right]$.
+
 To check that  we have indeed an eigenvector is also slightly more involved than in the real case.
 
 $$
@@ -133,7 +134,9 @@ $\quad\overline{A} = \left[\begin{array}{ccc} \overline{a_{11}} & \ldots & \over
 </li>
 <li>
 
-  If $A$ and $C$  are two matrices for which that the product  $AC$ exists, then  $\overline{AC} = \overline{A}  \overline{C}$.
+  If $A$ and $C$  are two matrices for which that the product  $AC$ exists, 
+  <BR> 
+  then  $\overline{AC} = \overline{A}  \overline{C}$.
 
 </li>
 </ol>
@@ -148,7 +151,7 @@ The statements follow immediately from the definitions of the sum and product of
 
 $$
 \overline{z+w} = \overline{z} + \overline{w} \quad\text{and} \quad
-\overline{z\cdot w} = \overline{z}\cdot\overline{w},  \quad \text{for all }  z,w \in \C
+\overline{z\cdot w} = \overline{z}\cdot\overline{w},  \quad \text{for all }  z,w \in \C.
 $$
 
 ::::::
@@ -187,7 +190,7 @@ Suppose  $A(\vect{u}+i\vect{w}) = (\alpha + \beta i)(\vect{u}+i\vect{w})$.
 Complex conjugation yields that
 
 $$
-\overline{A(\vect{u}+i\vect{w})} = \overline{A}\overline{(\vect{u}+i\vect{w})} =
+\overline{A(\vect{u}+i\vect{w})} = \overline{A}\,\overline{(\vect{u}+i\vect{w})} =
 A(\vect{u}-i\vect{w}),
 $$
 
@@ -195,7 +198,7 @@ since $A$ is a real matrix, and  $\vect{u}$ and $\vect{v}$ are supposed to be re
 At the same time
 
 $$
-\overline{A(\vect{u}+i\vect{w})}
+\overline{A(\vect{u}+i\vect{w})} = 
 \overline{(\alpha + \beta i)(\vect{u}+i\vect{w})} = (\alpha - \beta i)(\vect{u}-i\vect{w}).
 $$
 
@@ -206,7 +209,7 @@ $$
 A(\vect{u}-i\vect{w}) = (\alpha - \beta i)(\vect{u}-i\vect{w}),
 $$
 
-shows that  $A$ has the eigenvalue  $\overline{\lambda} = a - bi$  with the corresponding eigenvector
+shows that  $A$ has the eigenvalue  $\overline{\lambda} = \alpha - \beta i$  with the corresponding eigenvector
 $\vect{u}-i\vect{w}$.
 
 ::::::
@@ -227,7 +230,7 @@ $$
 \lambda_{1,2} = a \pm bi.
 $$
 
-From row reduction of the augmented matrix  $[A - (a+bi)I | \vect{0}]$
+From row reduction of the augmented matrix  $[A - (a+bi)I | \vect{0}] = $
 
 $$
 \left[\begin{array}{cc|c} a-(a+bi) & -b &0\\ b & a-(a+bi)&0 \end{array}\right] =
@@ -309,12 +312,17 @@ a scaling (stretching/dilatation) with a factor $r$.
 
 ::::::
 
-The scaling factor $r$  and the angle $\phi$  are exactly the polar coordinates of the eigenvalue $\lambda = a + bi$.
+The scaling factor $r$  and the angle $\varphi$  are exactly the polar coordinates of the eigenvalue $\lambda = a + bi$.
 That is,
-
 
 $$
 a + bi = r(a/r + b/r i) = r (\cos(\varphi) + i \sin(\varphi).
+$$
+
+Thus
+
+$$
+  r = |\lambda|, \quad \varphi = \text{arg}\,\lambda.
 $$
 
 {prf:ref}`Prop:ComplexEV:Rotation` can be generalized as follows. If a real $n \times n$ matrix $A$ has a non-real eigenvalue, there is always a rotation 'hidden' in the  transformation $T: \vect{x} \mapsto A\vect{x}$.
@@ -375,21 +383,21 @@ as
 
 
 $$
-A [\vect{u} \vect{w}] = [\vect{u} \vect{w}] \left[\begin{array}{cc} \alpha & -\beta \\ \beta & \alpha \end{array}\right]
+A [\,\vect{u}\,\, \vect{w}\,] = [\,\vect{u}\,\, \vect{w}\,] \left[\begin{array}{cc} \alpha & -\beta \\ \beta & \alpha \end{array}\right]
 $$
 
 
-So if we define  $P$ to be the matrix  $[\vect{u} \vect{w}]$ then we have $AP = PA$.  This more or less settles the following proposition.
+So if we define  $P$ to be the matrix  $[\,\vect{u}\,\, \vect{w}\,]$ then we have $AP = PA$.  This more or less settles the following proposition.
 
 
 ::::::{prf:proposition}
 :label: Prop:ComplexEV:HiddenRotation
 
-Suppose  $A$ is a $2 \times 2$ matrix with eigenvalues $\alpha \pm \beta i$,  with $\beta \neq 0$.
+Suppose  $A$ is a $2 \times 2$ matrix with eigenvalues $\alpha \pm \beta i$,  with $\beta \neq 0$. <BR>
 Then  $A$ can be written as
 
 $$
-A = PCP^{-1}P\left[\begin{array}{cc} \alpha & -\beta \\ \beta & \alpha \end{array}\right]
+A = PCP^{-1} = P\left[\begin{array}{cc} \alpha & -\beta \\ \beta & \alpha \end{array}\right]
 P^{-1}
 $$
 
@@ -410,7 +418,7 @@ We can formulated this as there being a **hidden rotation**  in $A$.
 To be specific,
 
 $$
-P =   [  \vect{u}      \vect{w} ] =\left[\begin{array}{cc}u_1 & w_1 \\ u_2&w_2 \end{array}\right],
+P =   [ \,\vect{u}\,\, \vect{w}\, ] =\left[\begin{array}{cc}u_1 & w_1 \\ u_2&w_2 \end{array}\right],
 $$
 
 where $\vect{u} + i \vect{w}$ is an eigenvector for  $\lambda = \alpha - \beta i$.
@@ -496,9 +504,9 @@ $$
 A = PDP^{-1} \quad \text{for} \quad  D = \left[\begin{array}{cccc} \lambda_1 & 0 & \ldots & 0 \\
 0 & \lambda_2 & \ldots & 0 \\
 \vdots & \vdots & \ddots & \vdots \\
-0 & 0 & \ldots & \lambda_n\end{array}\right]
-\quad \text{and} \quad
-P = [  \vect{v}_1  \vect{v}_2   \ldots   \vect{v}_n].
+0 & 0 & \ldots & \lambda_n\end{array}\right],
+ \quad
+P = [  \,\vect{v}_1\,\,  \vect{v}_2 \,  \ldots \,  \vect{v}_n\,].
 $$
 
 ::::::
@@ -508,9 +516,8 @@ $$
 :label: Ex:ComplexEV:FirstExampleCtd
 
 The matrix  $A = \left[\begin{array}{cc} 1 & -2 \\ 1 & 3  \end{array}\right]$
-of {prf:ref}`Ex:ComplexEV:FirstExample`  has eigenvalues  $\lambda_1 = 2 + i$,
-$\lambda_2 = 2 - i$  with corresponding eigenvectors  
-$\vect{v}_1 = \left[\begin{array}{c}  -1+i \\1 \end{array}\right]$,
+of {prf:ref}`Ex:ComplexEV:FirstExample`  has the eigenvalues  $\lambda_1 = 2 + i$,
+$\lambda_2 = 2 - i$  with corresponding eigenvectors  $\vect{v}_1 = \left[\begin{array}{c}  -1+i \\1 \end{array}\right]$,
 $\vect{v}_2 = \left[\begin{array}{c}  -1-i \\1 \end{array}\right]$.
 
 It follows that
