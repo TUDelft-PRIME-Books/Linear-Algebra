@@ -947,11 +947,13 @@ Every basis of a fixed subspace $S$ in $\R^n$  has the same number of elements.
 The proof is an immediate consequence of {prf:ref}`Thm:LinInd:TooManyVectsimpliesLinDep`
 from the section on linear independence.  Because of its  vital important we restate it here.
 
+:::{margin}
 
 {prf:ref}`Thm:LinInd:TooManyVectsimpliesLinDep`. Let 
 $\vect{u}_{1},...,\vect{u}_{k}$ and $\vect{v}_{1},...,\vect{v}_{\ell}$ be vectors in $\R^{n}$. 
 If $ k< \ell$ and $\Span{\vect{u}_{1},...,\vect{u}_{k}}$ contains $\Span{\vect{v}_{1},...,\vect{v}_{\ell}}$ then the set $\left\lbrace\vect{v}_{1},...,\vect{v}_{\ell}\right\rbrace$ is linearly dependent.
 
+:::
 
 We can use this as follows.
 
