@@ -412,7 +412,7 @@ If  the matrix $A$  is invertible,  then  $\text{det}\big(A^{-1}\big)= \dfrac{1}
 
 ::::::{prf:proof}
 
-We can ombine the three properties
+We can combine the three properties
 
 
 i. $AA^{-1} = I$, &nbsp; ii. $\det{(AA^{-1})} = \det{A}(A)\det{\left(A^{-1}\right)}$ 
