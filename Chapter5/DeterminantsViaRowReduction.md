@@ -1,12 +1,5 @@
 # Determinants via row reduction
 
-<div style="border: 2px">
-Dear reviewers,
-I have chosen for a setting where all essential things,
-i.e. row and column reduction -- with examples --  
-and the two `main' theorems  stated at the beginning, are handled first.
-As a consequence technical stuff is put at the end.
-</div>
 
 In this section we will first consider the effect of row operations on the value of a determinant.
 This leads the way to a more efficient way to compute $n\times n$ determinants.
@@ -16,12 +9,12 @@ It also leads the way to  two very important properties of determinants, namely
 <ul>
 <li>
 
-The product rule:  $\det{AB} = \det{A}\cdot\det{B}$.
+The product rule:  $\det{(AB)} = \det{A}\cdot\det{B}$.
 
 </li>
 <li>
 
-Matrix  $A$ is invertible if and only if $\det{A} \neq 0$ .
+The matrix  $A$ is invertible if and only if $\det{A} \neq 0$ .
 
 </li>
 </ul>
@@ -106,7 +99,7 @@ $$
 </li>
 <li>
 
-and the first and the fourth row are swapped:
+the first and the fourth row are swapped:
 
 $$
 \left|\begin{array}{rrrr}
@@ -151,7 +144,7 @@ $$
 Then we have
 
 $$
-\det{E_1A} = c \det{A}, \quad \det{E_2A} = \det{A}, \quad \det{E_3A} = -\det{A}.
+\det{(E_1A)} = c \det{A}, \quad \det{(E_2A)} = \det{A}, \quad \det{(E_3A)} = -\det{A}.
 $$
 
 Since
@@ -166,7 +159,7 @@ we see that in all three cases we have that
 :::{math}
 :label: Eq:DetRowReduction:ElementaryMatrices
 
-\det{E_iA} = \det{E_i} \cdot \det{A}.
+\det{(E_iA)} = \det{E_i} \cdot \det{A}.
 
 :::
 
@@ -231,8 +224,8 @@ $$
 \det{A} = \text{det}\big(A^T\big)
 $$
 
-every rule involving row operations may be transformed into a rule about column operation.  It is here that computing a determinant differs strikingly from the reduction of an (augmented) matrix to an echelon matrix.  Another more subtle difference is that
-a row operation  applied to a matrix leads to an **equivalent** matrix, which we denote by the symbol  $\sim$, whereas row or column manipulations on a determinant give equal values all the time.
+every rule involving row operations may be transformed into a rule about column operations.  It is here that computing a determinant differs strikingly from the reduction of an (augmented) matrix to an echelon matrix.  Another more subtle difference is that
+a row operation  applied to a matrix leads to an **equivalent** matrix, which we denote by the symbol  $\sim$, whereas row or column manipulations on a determinant give **equal values** all the time.
 
 ::::::
 
@@ -275,10 +268,17 @@ If a matrix  $A$  has two equal rows  (or columns),  then  $\det{A} = 0$.
 
 Suppose the $i$th and the $j$th row of $A$ are equal,  and  let  $\det{A} = D$.  Let $B$ be the matrix $A$ with the $i$th and $j$th row interchanged.
 
-On the one hand,  $B = A$,  so    $\det{B} = \det{A} = D$,
+On the one hand,  $B = A$,  so    
+
+$$
+  \det{B} = \det{A} = D,
+$$
 
 on the other hand, because of {prf:ref}`Prop:DetRowReduction:RowOps`, Rule 2, we have
-$\det{B} = -\det{A} = -D$.
+
+$$
+ \det{B} = -\det{A} = -D.
+$$
 
 We may conclude  $D = -D$,  which is only possible if  $D = \det{A} = 0$.
 
@@ -315,7 +315,7 @@ In the previous section we have already seen that the statement is true for tria
 Now suppose $A$ is any $n \times n$ matrix.  Via row reduction $A$ can be brought to echelon form $F$,
 and for a square matrix the echelon form is an upper triangular matrix  (with possibly zeros on the diagonal).
 
-So   "$F$ is invertible"  is equivalent to  "det$(F) \neq 0$".
+So   '$F$ is invertible'  is equivalent to  '$\det{F} \neq 0$'.
 
 The row operations transforming  $A$ to $F$  can be performed by multiplications with elementary matrices $E_1, \ldots E_k$.
 
@@ -323,15 +323,17 @@ We have seen  (Equation {eq}`Eq:DetRowReduction:ElementaryMatrices`  in {prf:ref
 that
 
 $$
-\det{E_iA} = \det{E_i} \cdot \det{A}.
+\det{(E_iA)} = \det{E_i} \cdot \det{A}.
 $$
 
 Furthermore,  the determinant of an elementary matrix is nonzero. Namely, for a row scaling it is equal to $c$, for a row swap it is equal to $(-1)$, and for adding a row to another row it is equal to 1.
 Hence,  if $m$  of the row operations are row scalings and $\ell$ of the row operations are row swaps, then
 
 $$
-\text{det}\big(E_kE_{k-1}\cdots E_1A\big)=  c_1\cdots c_m \cdot (-1)^{\ell} \det{A}  = \alpha \det{A}, \quad \text{with} \quad \alpha \neq 0.
+\text{det}\big(E_kE_{k-1}\cdots E_1A\big)=  c_1\cdots c_m \cdot (-1)^{\ell} \det{A}  = \alpha \det{A}, 
 $$
+
+with $\alpha \neq 0$.
 
 So if  $E_kE_{k-1}\cdots E_1A = F$, where $F$ is an echelon matrix, we see that
 
@@ -341,13 +343,11 @@ $$
 
 We conclude that
 
-:::{latextable}
+$$
+  A \,\text{is invertible}  \,\,\iff\,\, F \,\text{is invertible} \,\,\iff\,\,
+    \det{F}  \neq 0\,\,\iff\,\,  \det{A} \neq 0$.
+$$
 
-\begin{tabular}{rclclcl}
-$A$ is invertible  &$\iff$& $F$ is invertible &$\iff$&  det$(F) \neq 0$  &$\iff$&  det$(A) \neq 0$.
-\end{tabular}
-
-:::
 
 ::::::
 
@@ -357,7 +357,7 @@ $A$ is invertible  &$\iff$& $F$ is invertible &$\iff$&  det$(F) \neq 0$  &$\iff$
 For two $n\times n$ matrices $A$ and $B$  it always holds that
 
 $$
-\det{AB} = \det{A}\cdot\det{B}
+\det{(AB)} = \det{A}\cdot\det{B}
 $$
 
 ::::::
@@ -370,24 +370,23 @@ It will also hold if $A$ is not invertible, as in that case $AB$  is also not in
 and we know that   the determinant  of any non-invertible matrix is zero. So then
 
 $$
-\det{AB} = 0 = \det{A}\cdot\det{B}.
+\det{(AB)} = 0 = \det{A}\cdot\det{B}.
 $$
 
 
-Hence suppose that the matrix  $A$  is invertible.   In that case,  $A$ can be written as a product of elementary matrices.
+Hence suppose that the matrix  $A$  is invertible.   In that case  (cf.{prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations`),  $A$ can be written as a product of elementary matrices.
 
 $$
 A = E_1E_2\ldots E_k
 $$
 
-(This is one of the last equivalencies for invertible matrices in {prf:ref}`Thm:Invertibility:`.)
 
-So then, step by step
+So then, step by step we find that
 
 $$
 \begin{array}{rl}
-\det{A}  & = \det{E_1E_2\cdots E_k} = \det{E_1(E_2\cdots E_k)} =  \\
-& = \det{E_1} \det{E_2\cdots E_k}  = \ldots = \det{E_1} \det{E_2} \cdots \det{E_k},
+\det{A}  & = \det{(E_1E_2\cdots E_k)} = \det{E_1(E_2\cdots E_k)} =  \\
+& = \det{E_1} \det{(E_2\cdots E_k)}  = \ldots = \det{E_1} \det{E_2} \cdots \det{E_k},
 \end{array}
 $$
 
@@ -395,7 +394,7 @@ and also
 
 $$
 \begin{array}{rl}
-\det{AB} & =  \det{E_1E_2\cdots E_kB} = \det{E_1} \det{E_2\cdots E_kB} = \ldots = \\
+\det{(AB)} & =  \det{(E_1E_2\cdots E_kB)} = \det{E_1} \det{(E_2\cdots E_kB)} = \ldots = \\
 & = \det{E_1} \det{E_2} \cdots \det{E_k} \det{B} = \det{A}\det{B}.
 \end{array}
 $$
@@ -413,13 +412,12 @@ If  the matrix $A$  is invertible,  then  $\text{det}\big(A^{-1}\big)= \dfrac{1}
 
 ::::::{prf:proof}
 
-Combine the three properties
+We can combine the three properties
 
-$$
-\text{(i) } AA^{-1} = I \quad \text{(ii) }  \text{det}(AA^{-1}) = \text{det}(A)\text{det}\left(A^{-1}\right)
- \quad \text{and}
-\quad \text{(iii) }  \text{det}(I) = 1.
-$$
+
+i. $AA^{-1} = I$, &nbsp; ii. $\det{(AA^{-1})} = \det{A}(A)\det{\left(A^{-1}\right)}$ 
+&nbsp; and &nbsp; iii.  $\det{I} = 1$.
+
 
 As follows:
 
@@ -428,7 +426,7 @@ $$
  =  \text{det}(AA^{-1}) = \text{det}(I) = 1,
 $$
 
-so
+so indeed
 
 $$
 \text{det}\left(A^{-1}\right)
@@ -450,15 +448,17 @@ For each $n \times n$ matrix  $A$ it holds that  $\text{det}\big(A^k\big)= \big(
 <li>
 
 For each two $n \times n$ matrices  $A$ and $B$ it holds that
+<BR>
+
 
 $$
-\det{A+B} = \det{A}+\det{B}.
+\det{(A+B)} = \det{A}+\det{B}.
 $$
 
 </li>
 <li>
 
-For each $n \times n$ matrix  $A$ it holds that  $\det{-A} = -\det{A}$.
+For each $n \times n$ matrix  $A$ it holds that  $\det{(-A)} = -\det{A}$.
 
 </li>
 </ol>
@@ -485,9 +485,9 @@ Then
 :label: Eq:DetExtras:SumofCols
 
 \begin{array}{l}
-\det{[\vect{a}_1     \ldots  \vect{b}+\vect{c}      \ldots     \vect{a}_n]} =  \\
-\qquad \qquad \qquad \det{[\vect{a}_1     \ldots  \vect{b}      \ldots     \vect{a}_n]} +
-\det{[\vect{a}_1     \ldots  \vect{c}      \ldots     \vect{a}_n]}
+\det{[\vect{a}_1  \,\,   \ldots \,\, \vect{b}+\vect{c}   \,\,   \ldots  \,\,   \vect{a}_n]} =  \\
+\qquad \qquad \qquad \det{[\vect{a}_1   \,\,   \ldots  \,\,  \vect{b}     \,\,   \ldots   \,\,    \vect{a}_n]} +
+\det{[\vect{a}_1    \,\,   \ldots \,\, \vect{c}   \,\,     \ldots    \,\,   \vect{a}_n]}
 \end{array}
 
 :::
@@ -495,7 +495,7 @@ Then
 ::::::
 
 
-So, click here for the the proof of {prf:ref}`Prop:DetRowReduction:RowOps` and {prf:ref}`Prop:DetRowReduction:SumofCols`.
+So, click here for the  proof of {prf:ref}`Prop:DetRowReduction:RowOps` and {prf:ref}`Prop:DetRowReduction:SumofCols`.
 
 
 ::::::{prf:proof}
@@ -506,14 +506,14 @@ For an $n \times n$ matrix  $A = [\vect{a}_1 \vect{a}_2  \ldots \vect{a}_n]\quad
 :::{paren-list}
 :start: 1
 
-- $\det{[\vect{a}_1     \vect{a}_2    \ldots c \vect{a}_k      \ldots     \vect{a}_n]} =
-c  \det{[\vect{a}_1     \vect{a}_2    \ldots \vect{a}_k      \ldots     \vect{a}_n]}$;
+- $\det{[\vect{a}_1   \,  \vect{a}_2  \,  \ldots \, c \vect{a}_k  \,    \ldots  \,   \vect{a}_n]} =
+c  \det{[\vect{a}_1   \,  \vect{a}_2  \,  \ldots \, \vect{a}_k  \,    \ldots \,    \vect{a}_n]}$;
 
-- $\det{[\vect{a}_1    \ldots     \vect{a}_k      \ldots     \vect{a}_j    \ldots    \vect{a}_n]} =
+- $\det{[\vect{a}_1  \,  \ldots  \,   \vect{a}_k  \,    \ldots  \,   \vect{a}_j  \,   \ldots \,   \vect{a}_n]} =
 -\det{[\vect{a}_1    \ldots     \vect{a}_j     \ldots     \vect{a}_k    \ldots    \vect{a}_n]}$;
 
-- $\det{[\vect{a}_1    \ldots     \vect{a}_j      \ldots     \vect{a}_k + c\vect{a}_j    \ldots    \vect{a}_n]} =
-\det{[\vect{a}_1    \ldots     \vect{a}_j     \ldots     \vect{a}_k    \ldots    \vect{a}_n]}$.
+- $\det{[\vect{a}_1 \,  \ldots   \,  \vect{a}_j   \,   \ldots  \,   \vect{a}_k + c\vect{a}_j  \,  \ldots  \,  \vect{a}_n]} =
+\det{[\vect{a}_1 \,    \ldots  \,   \vect{a}_j   \,  \ldots  \,   \vect{a}_k   \, \ldots  \,  \vect{a}_n]}$.
 
 :::
 
@@ -542,7 +542,7 @@ $$
 = c  \det{A}.
 $$
 
-This is proved by expansion along the $i$th column, much in the same way as rule 1. is proved by expansion along a row.
+{prf:ref}`Prop:DetRowReduction:SumofCols` is proved much in the same way as rule (1) by expansion along the $k$th column, .
 
 :::{paren-list}
 :start: 2
@@ -595,13 +595,13 @@ a_{32} &a_{31} &a_{33} &a_{34}  \\
 a_{42} &a_{41} &a_{43} &a_{44}
 \end{array} \right]
  \\
-\Big\Downarrow & & \Big\Downarrow  \\
+\Big\Downarrow && \Big\Downarrow  \\
 A_{3,1} = \left[\begin{array}{rrr}
 a_{12}  &a_{13} &a_{14}  \\
 a_{22}  &a_{23} &a_{24}  \\
 a_{42}  &a_{43} &a_{44}
 \end{array} \right]
-  & &
+  &= &
 A_{3,2}^{\ast} = \left[\begin{array}{rrr}
 a_{12}  &a_{13} &a_{14}  \\
 a_{22}  &a_{23} &a_{24}  \\
@@ -627,7 +627,7 @@ $$
 - \text{det}\big({A}\big).
 $$
 
-The same argument works for the interchanging of two consecutive rows, and as stated the swapping of two arbitrary rows can be accomplished via an odd number of 'consecutive swaps'.  Convince yourself of this!
+The same argument works for the interchanging of two arbitrary consecutive columns, and as stated the swapping of two arbitrary columns can be accomplished via an odd number of 'consecutive swaps'.  Convince yourself of this!
 
 
 And lastly we have to prove
@@ -640,38 +640,21 @@ And lastly we have to prove
 :::
 
 
-First we prove the  linearity property of {prf:ref}`Prop:DetRowRed:Linearity`, which states that
-
-
-:::{math}
-:label: Eq:DetExtras:Linearity
-
-\begin{array}{l}
-\det{[\vect{a}_1     \ldots  \vect{b}+\vect{c}      \ldots     \vect{a}_n]} =  \\
-\qquad \qquad \qquad \det{[\vect{a}_1     \ldots  \vect{b}      \ldots     \vect{a}_n]} +
-\det{[\vect{a}_1     \ldots  \vect{c}      \ldots     \vect{a}_n]}
-\end{array}
-
-:::
-
-
-This property is proved in the same way as rule (1), i.e., by expansion of the three determinants along their $k$th columns.
-
-Second,  from Rule (2) it follows as in {prf:ref}`Cor:DetRowReduction:EqualRows`  that a determinant with two equal columns has the value 0.
+First Rule (2) implies, as in {prf:ref}`Cor:DetRowReduction:EqualRows`,  that a determinant with two equal columns has the value 0.
 
 We then proceed as follows for Rule (3):
 
 $$
 \begin{array}{l}
-\det{[\vect{a}_1    \ldots     \vect{a}_j      \ldots     \vect{a}_k + c\vect{a}_j    \ldots    \vect{a}_n]} = \\
+\det{[\vect{a}_1  \,  \ldots \,    \vect{a}_j  \,    \ldots  \,   \vect{a}_k + c\vect{a}_j   \, \ldots  \,  \vect{a}_n]} = \\
 \quad =
-\det{[\vect{a}_1    \ldots     \vect{a}_j     \ldots     \vect{a}_k    \ldots    \vect{a}_n]} +
-\det{[\vect{a}_1    \ldots     \vect{a}_j      \ldots      c \vect{a}_j    \ldots    \vect{a}_n]}  \\
+\det{[\vect{a}_1  \,  \ldots  \,  \vect{a}_j   \,  \ldots  \,   \vect{a}_k  \,  \ldots  \,  \vect{a}_n]} +
+\det{[\vect{a}_1   \, \ldots  \,   \vect{a}_j  \,    \ldots   \,   c \vect{a}_j    \,\ldots  \,  \vect{a}_n]}  \\
 \quad =
-\det{[\vect{a}_1    \ldots     \vect{a}_j     \ldots     \vect{a}_k    \ldots    \vect{a}_n]} +
-c \det{[\vect{a}_1    \ldots     \vect{a}_j      \ldots      \vect{a}_j    \ldots    \vect{a}_n]}\\
+\det{[\vect{a}_1 \,   \ldots  \,   \vect{a}_j  \,   \ldots  \,   \vect{a}_k  \,  \ldots  \,  \vect{a}_n]} +
+c \det{[\vect{a}_1  \,  \ldots  \,   \vect{a}_j   \,   \ldots  \,    \vect{a}_j  \,  \ldots  \,  \vect{a}_n]}\\
 \quad =
-\det{[\vect{a}_1    \ldots     \vect{a}_j     \ldots     \vect{a}_k    \ldots    \vect{a}_n]}.
+\det{[\vect{a}_1  \,  \ldots \,    \vect{a}_j  \,   \ldots   \,  \vect{a}_k  \,  \ldots   \, \vect{a}_n]} + 0.
 \end{array}
 $$
 

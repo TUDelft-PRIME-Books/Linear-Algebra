@@ -142,10 +142,10 @@ will be called a *parametric vector equation* of $\mathcal{L}$.
 
 :::{exercise}
 
-Let $\mathcal{L}$ be the line through the points $P=(2, 1)$ and $Q=(6, 4)$. How do we find a parametric vector equation of this line? We need a vector that connects the origin to a point on the line and a vector parallel to the line. For the first vector we can simply use the coordinates of either $P$ or $Q$. We can use either point, but let us choose $P$. We can construct a vector parallel to the line $\mathcal{L}$ by connecting two distinct points on the line by an arrow. We can use for instance the vector $\mathbf{PQ}$ that starts in $P$ and ends in $Q$.
+Let $\mathcal{L}$ be the line through the points $P=(2, 1)$ and $Q=(6, 4)$. How do we find a parametric vector equation of this line? We need a vector that connects the origin to a point on the line and a vector parallel to the line. For the first vector we can simply use the coordinates of either $P$ or $Q$. We can use either point, but let us choose $P$. We can construct a vector parallel to the line $\mathcal{L}$ by connecting two distinct points on the line by an arrow. We can use for instance the vector $\overrightarrow{PQ}$ that starts in $P$ and ends in $Q$.
 
 $$
-\mathbf{PQ}=\begin{bmatrix} 6 \\ 4 \end{bmatrix}-\begin{bmatrix} 2 \\ 1 \end{bmatrix}=\begin{bmatrix} 4 \\ 3 \end{bmatrix}
+\overrightarrow{PQ}=\begin{bmatrix} 6 \\ 4 \end{bmatrix}-\begin{bmatrix} 2 \\ 1 \end{bmatrix}=\begin{bmatrix} 4 \\ 3 \end{bmatrix}
 $$
 
  If we use these vectors, then we find the following parametric equation.
@@ -168,10 +168,10 @@ Any non-zero vector $\mathbf{n}$ that is orthogonal to a line $\mathcal{L}$ will
 
 :::
 
-Let $\mathbf{n}$ be a normal vector of a line $\mathcal{L}$ and $P$ a point on $\mathcal{L}$. Whenever we take a point $Q$ on $\mathcal{L}$, the vector $\mathbf{PQ}$ is orthogonal to $\mathbf{n}$. This means that the inner product of these vectors is zero. We find that whenever a point $Q$ is on the line $\mathcal{L}$ it satisfies
+Let $\mathbf{n}$ be a normal vector of a line $\mathcal{L}$ and $P$ a point on $\mathcal{L}$. Whenever we take a point $Q$ on $\mathcal{L}$, the vector $\overrightarrow{PQ}$ is orthogonal to $\mathbf{n}$. This means that the inner product of these vectors is zero. We find that whenever a point $Q$ is on the line $\mathcal{L}$ it satisfies
 
 $$
-\mathbf{PQ}\ip \mathbf{n}=0.
+\overrightarrow{PQ}\ip \mathbf{n}=0.
 $$
 
 :::{figure} Images/Fig-LinesAndPlanes-NormalEquationLine.svg
@@ -225,7 +225,8 @@ $$
 (x-1)\cdot(-2)+(y-7)\cdot(1)=0.
 $$
 
- After some calculations we find the Cartesian equation $-2x+y=5$. In Figure \ref{Fig:LinesAndPlanes:OrthogonalLines} you can see both lines.
+ After some calculations we find the Cartesian equation $-2x+y=5$. In {numref}`Figure %s <Fig:LinesAndPlanes:OrthogonalLines>` you can see both lines.
+
 
 ::::
 
@@ -246,7 +247,7 @@ $$
 
 The Cartesian equation of a plane in $\mathbb{R}^3$ resembles the Cartesian equation of a line in $\mathbb{R}^2$. So, how is it that such an equation describes a plane and not a line in $\mathbb{R}^3$? We can clarify this by looking at a _normal equation_ of a plane.
 
-In {numref}`Subsection %s <Subsection:LinesAndPlanes:NormalLine>` we saw that, given a point $P$ and a vector $\mathbf{n}$ in the plane, the collection of all points $Q$ for which the vector $\mathbf{PQ}$ is orthogonal to $\mathbf{n}$ forms a line through $P$. In the space $\mathbb{R}^3$ this is no longer true. Let us investigate what the result is when we make a similar construction with a vector $\mathbf{n}$ in $\mathbb{R}^3$, say
+In {numref}`Subsection %s <Subsection:LinesAndPlanes:NormalLine>` we saw that, given a point $P$ and a vector $\mathbf{n}$ in the plane, the collection of all points $Q$ for which the vector $\overrightarrow{PQ}$ is orthogonal to $\mathbf{n}$ forms a line through $P$. In the space $\mathbb{R}^3$ this is no longer true. Let us investigate what the result is when we make a similar construction with a vector $\mathbf{n}$ in $\mathbb{R}^3$, say
 
 $$
 \mathbf{n}=\begin{bmatrix} 2 \\ 1 \\ 3 \end{bmatrix}.
@@ -262,7 +263,7 @@ As we can see in {numref}`Figure %s <Fig:LinesAndPlanes:NormalEquationPlaneOrigi
 A plane through the origin.
 :::
 
-Now let $P$ be the point with coordinates $(0, 2, 1)$ and take an arbitrary point $Q$ in $\mathbb{R}^3$. It is clear from {numref}`Figure %s <Fig:LinesAndPlanes:NormalEquationPlane>` that the vector $\mathbf{PQ}$ is orthogonal to $\mathbf{n}$ if and only if $Q$ is a point on the plane $\mathcal{P}$ orthogonal to $\mathbf{n}$ and through $P$.
+Now let $P$ be the point with coordinates $(0, 2, 1)$ and take an arbitrary point $Q$ in $\mathbb{R}^3$. It is clear from {numref}`Figure %s <Fig:LinesAndPlanes:NormalEquationPlane>` that the vector $\overrightarrow{PQ}$ is orthogonal to $\mathbf{n}$ if and only if $Q$ is a point on the plane $\mathcal{P}$ orthogonal to $\mathbf{n}$ and through $P$.
 
 :::{applet}
 :url: lines_and_planes/normal_equation_plane
@@ -272,7 +273,7 @@ Now let $P$ be the point with coordinates $(0, 2, 1)$ and take an arbitrary poin
 A plane through the point $P$.
 :::
 
-What is the Cartesian equation of this plane? If the coordinates of $Q$ are $(x, y, z)$, then $\mathbf{PQ}$ is orthogonal to $\mathbf{n}$ if and only if $\mathbf{PQ}\ip \mathbf{n}=0$. If we compute this inner product we obtain the following result.
+What is the Cartesian equation of this plane? If the coordinates of $Q$ are $(x, y, z)$, then $\overrightarrow{PQ}$ is orthogonal to $\mathbf{n}$ if and only if $\overrightarrow{PQ}\ip \mathbf{n}=0$. If we compute this inner product we obtain the following result.
 
 \begin{align*}
 (\mathbf{v}-\mathbf{v_0})\ip \mathbf{n} &= \begin{bmatrix} x-0 \\ y-2 \\ z-1 \end{bmatrix} \ip \begin{bmatrix} 2 \\ 1 \\ 3 \end{bmatrix} \\
@@ -314,7 +315,7 @@ Finally, let us take a look at a _parametric vector equation_ of a plane. Such a
 Each non-zero vector $\mathbf{u}$ that is parallel to a plane $\mathcal{P}$ will be called a *directional vector* of that plane.
 :::
 
-We can always find directional vectors of a plane by taking a vector that connects two distinct points in the plane. If we want to find two directional vectors for the plane $\mathcal{P}$ with Cartesian equation $2x+y+3z=5$, then we can use the point $P=(0, 2, 1)$ that we have been working with and choose two other points that satisfy $2x+y+3z=5$. We can use, for example, the points $Q=(0, 5, 0)$ and $R=(2, 1, 0)$. In {numref}`Figure %s <Fig:LinesAndPlanes:DirectionalVectorsPlane>` you can see that the vectors $\mathbf{PQ}$ and $\mathbf{PR}$ are two vectors that are parallel to the plane, but are not parallel to each other.
+We can always find directional vectors of a plane by taking a vector that connects two distinct points in the plane. If we want to find two directional vectors for the plane $\mathcal{P}$ with Cartesian equation $2x+y+3z=5$, then we can use the point $P=(0, 2, 1)$ that we have been working with and choose two other points that satisfy $2x+y+3z=5$. We can use, for example, the points $Q=(0, 5, 0)$ and $R=(2, 1, 0)$. In {numref}`Figure %s <Fig:LinesAndPlanes:DirectionalVectorsPlane>` you can see that the vectors $\overrightarrow{PQ}$ and $\overrightarrow{PR}$ are two vectors that are parallel to the plane, but are not parallel to each other.
 
 :::{applet}
 :url: lines_and_planes/directional_vectors_plane
@@ -327,7 +328,7 @@ A parametric vector equation of a plane.
 Any vector $\mathbf{v}$ on the plane $\mathcal{P}$ can now be written in the form
 
 $$
-\mathbf{v_0}+r\mathbf{PQ}+s\mathbf{PR}
+\mathbf{v_0}+r\overrightarrow{PQ}+s\overrightarrow{PR}
 $$
 
 where $r$ and $s$ are arbitrary real numbers.
@@ -345,10 +346,10 @@ $$
 
 :::{exercise}
 
-In this example we will construct a parametric vector equation and a normal equation for the plane through the points $P=(1, 1, 1)$, $Q=(1, 2, 2)$ and $R=(3, 1, 2)$. The vectors $\mathbf{PQ}$ and $\mathbf{PR}$ can serve as directional vectors. We find that
+In this example we will construct a parametric vector equation and a normal equation for the plane through the points $P=(1, 1, 1)$, $Q=(1, 2, 2)$ and $R=(3, 1, 2)$. The vectors $\overrightarrow{PQ}$ and $\overrightarrow{PR}$ can serve as directional vectors. We find that
 
 $$
-\mathbf{PQ}=\begin{bmatrix} 1-1 \\ 2-1 \\ 2-1 \end{bmatrix}=\begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix} \quad \mathbf{PR}=\begin{bmatrix} 3-1 \\ 1-1 \\ 2-1 \end{bmatrix}=\begin{bmatrix} 2 \\ 0 \\ 1 \end{bmatrix}.
+\overrightarrow{PQ}=\begin{bmatrix} 1-1 \\ 2-1 \\ 2-1 \end{bmatrix}=\begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix} \quad \overrightarrow{PR}=\begin{bmatrix} 3-1 \\ 1-1 \\ 2-1 \end{bmatrix}=\begin{bmatrix} 2 \\ 0 \\ 1 \end{bmatrix}.
 $$
 
 This means that
@@ -359,10 +360,10 @@ $$
 
 is a parametric vector equation of the plane through the given points.
 
-In order to find a normal equation we need to construct a normal vector. We can do this by computing the cross product of the two directional vectors. After all, we know that the cross product of $\mathbf{PQ}\cp\mathbf{PR}$ is orthogonal to $\mathbf{PQ}$ and $\mathbf{PR}$ and thus to the entire plane. We find
+In order to find a normal equation we need to construct a normal vector. We can do this by computing the cross product of the two directional vectors. After all, we know that the cross product of $\overrightarrow{PQ}\cp\overrightarrow{PR}$ is orthogonal to $\overrightarrow{PQ}$ and $\overrightarrow{PR}$ and thus to the entire plane. We find
 
 $$
-\mathbf{PQ}\cp\mathbf{PR}=\begin{bmatrix} 1\cdot 1-1\cdot 0 \\ 1\cdot 2-0\cdot 1 \\ 0\cdot 0-1\cdot 2 \end{bmatrix}=\begin{bmatrix} 1 \\ 2 \\ -2 \end{bmatrix}.
+\overrightarrow{PQ}\cp\overrightarrow{PR}=\begin{bmatrix} 1\cdot 1-1\cdot 0 \\ 1\cdot 2-0\cdot 1 \\ 0\cdot 0-1\cdot 2 \end{bmatrix}=\begin{bmatrix} 1 \\ 2 \\ -2 \end{bmatrix}.
 $$
 
 Because the point $P(1, 1, 1)$ needs to be on the plane we can conclude that
@@ -371,7 +372,7 @@ $$
 x+2y-2z=1
 $$
 
-is a normal equation of the plane that contains $P$, $Q$ and $R$.
+is an equation of the plane that contains $P$, $Q$ and $R$.
 :::
 
 ## Intersecting planes
@@ -473,10 +474,10 @@ will be called a *parametric vector equation* of $\mathcal{L}$.
 
 :::{exercise}
 
-How can we find a parametric vector equation for the line $\mathcal{L}$ that contains the points $P=(1, 2, 4)$ and $Q=(5, 3, 1)$? The vector $\mathbf{PQ}$ is parallel to $\mathcal{L}$ and therefore a directional vector. The components of this vector are equal to
+How can we find a parametric vector equation for the line $\mathcal{L}$ that contains the points $P=(1, 2, 4)$ and $Q=(5, 3, 1)$? The vector $\overrightarrow{PQ}$ is parallel to $\mathcal{L}$ and therefore a directional vector. The components of this vector are equal to
 
 $$
-\mathbf{PQ}=\begin{bmatrix} 5-1 \\ 3-2 \\ 1-4 \end{bmatrix}=\begin{bmatrix} 4 \\ 1 \\ -3 \end{bmatrix}.
+\overrightarrow{PQ}=\begin{bmatrix} 5-1 \\ 3-2 \\ 1-4 \end{bmatrix}=\begin{bmatrix} 4 \\ 1 \\ -3 \end{bmatrix}.
 $$
 
 The equation

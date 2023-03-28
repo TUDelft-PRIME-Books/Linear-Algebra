@@ -3,7 +3,31 @@
 
 ## Introduction
 
-Lesley Matrices  and  Markov Matrices
+For a linear transformation $T: \R^n \to \R^n$, instead of looking at the image of subsets under $T$, we may also follow the 'path' of one vector $\vect{x}_0$ under repeated application of $T$.  In case $T$ is represented by the matrix $A$ this means we will study the sequence
+
+$$
+   \vect{x}_0,\,\, \vect{x}_1,\,\,\vect{x}_2,\,\,\ldots \,\,\, = \,\,\,\vect{x}_0,\,\,A\vect{x}_0,\,\,A^2\vect{x}_0,\,\ldots
+$$
+
+
+Lesley Matrices  and  Markov Matrices.
+
+Both lead to a so-called discrete dynamical system.
+
+::::{prf:definition}
+:label: Def:DynSystDiscr:DiscreteDynSyst
+
+Suppose $A$ is an $n \times n$ matrix, and $\vect{s}$ a vector in $\R^n$.
+
+The **discrete dynamical system** with matrix $A$ and initial state $\vect{s}$ is the prcess described by 
+
+$$
+  \vect{x}_0 = \vect{s}, \quad \vect{x}_{k+1} = A\vect{x}_k, \,\,k = 0,1,2,\ldots
+$$
+
+::::
+
+In this subsection we will address the questions whether we can give an 'explicit' expression for the general state $\mathbf{x}_k$, and what is the behaviour 'on the long run,  i.e., when $k \to \infty$.
 
 ## The case where $A$ is diagonalizable
 
@@ -92,14 +116,15 @@ From Equation {eq}`Eq:DynSystDiscrete:GenSolDiagble` it follows that if **all** 
 Let $A$ be the matrix of a dynamical system. 
 The origin is called **asymptotically stable**  if all solutions $\vect{x}_k$  go to $\vect{0}$ if $k \to \infty$.  If for some starting values $\vect{x}_0 \ \vect{s}$ the solution $\vect{x}_k$ becomes arbitrarily large, i.e., if $\norm{\vect{x}_k} \to \infty$ for $k \to \infty$, then the dynamical system is called **unstable**. In the borderline case where the highest absolute value of the eigenvalues is exactly 1, the origin is just called **stable**.
 
-In the literature there is  quite a bit of terminology to describe the behaviour
-of dynamical systems. 
+
 In the case of asymptotic stability will call the origin an **attractor**, in the of instability we say the origin is a **repeller**.  
 ::::
 
 ::::{prf:remark}
 
-This definition of stable and unstable suffices for *linear* dynamical systems.  For nonlinear systems a more subtle definition is needed. 
+This definition of stable and unstable suffices for *linear* dynamical systems.  For nonlinear systems a more subtle definition is needed.
+
+Furthermore,  in the literature there is  quite a bit of terminology to describe the behaviour of dynamical systems around the origin. Apart from dynamical systems in the plane, where we can nicely visualize what is going on, we will stick to the two qualifications attractor and repellor.
 
 ::::
 

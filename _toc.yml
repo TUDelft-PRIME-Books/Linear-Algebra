@@ -35,7 +35,7 @@ chapters:
       - file: "Chapter5/DeterminantsGeometric.md"
       - file: "Chapter5/DeterminantsViaCofactors.md"
       - file: "Chapter5/DeterminantsViaRowReduction.md"
-      - file: "Chapter5/DeterminantsDitjesEnDatjes.md"
+      - file: "Chapter5/DeterminantsExtras.md"
   - file: 'Chapter6/intro.md'
     sections:
       - file: "Chapter6/EigenvaluesEigenvectors.md"

@@ -25,11 +25,11 @@ Note that this definition implies that a symmetric matrix must be a square matri
 The matrices
 
 $$
-  A_1 = \begin{bmatrix} 2&\color{blue}3&\color{red}4\\\color{blue}3&1&5 \\\color{red}4&5&7  \end{bmatrix} \quad \text{and} \quad 
+  A_1 = \begin{bmatrix} 2&\color{blue}3&\color{red}4\\\color{blue}3&1&\color{green}5 \\\color{red}4&\color{green}5&7  \end{bmatrix} \quad \text{and} \quad 
   A_2 = \begin{bmatrix} 0&2&3&4\\
-    2&0&\color{blue}1&5 \\
-    3&\color{blue}1&0&\color{red}6 \\
-    4&5&\color{red}6&7\end{bmatrix}
+    2&0&1&5 \\
+    3&1&0&6 \\
+    4&5&6&7\end{bmatrix}
 $$
 
 are symmetric.  The matrices
@@ -132,6 +132,9 @@ The transformation  $T(\vect{x}) =  \begin{bmatrix} 1&2\\2&-2 \end{bmatrix}\vect
 :::
 
 
+[To team building:  this one should be transformed into a mioving picture:  two perpendicular vectors rotating around the origin, shown with their images, with stress on the moment they become eigenvectors.  If unclear: contact me, A.T.H.]
+
+
 Furthermore, if we normalize the eigenvectors, i.e., the columns of $P$, we find the following diagonalization of $A$ with an orthogonal matrix $Q$:
 
 $$
@@ -226,10 +229,6 @@ If $\vect{u}$ is an eigenvector of $A$ for the eigenvalue $\lambda$, and $\vect{
 ::::
 
 
-Figure!
-
-Here should come a moving picture with the biped starting with  $\mathbf{e}_1, \mathbf{e}_2$
-rotating around the origin, and temporarily standing still when eigenvectors are met.
 
 
 
@@ -274,7 +273,7 @@ $$
   \overline{\overline{\mathbf{u}}^{T}\mathbf{v}} = \overline{\mathbf{v}}^T  \mathbf{u}.  
 $$
 
-Now suppose that  $\lambda$ is an eigenvalue of the symmetric matrix $A$, and  $\mathbf{v}$ is a nonzero (possibly complex) eigenvector of $A$ for the eigenvalue $\lambda$.   Note that, since  $A$ is real and symmetric,  $\overline{{A}^T} = A^T = A$.
+Now suppose that  $\lambda$ is an eigenvalue of the symmetric matrix $A$, and  $\mathbf{v}$ is a nonzero (possibly complex) eigenvector of $A$ for the eigenvalue $\lambda$.   Note that, since  $A$ is real and symmetric,  $\overline{{A}^T} = \overline{A} = A$.
 To prove that $\lambda$ is real, we will show that $\overline{\lambda} = \lambda$.
 
 We  use kind of the same 'trick' as in {prf:ref}`Prop:SymmetricMat:OrthogonalEigenvectors`  Equation  {eq}`Eq:SymmetricMat:Av1v2`.
@@ -289,7 +288,7 @@ $$
 On the other hand, 
 
 $$
- \overline{(A \mathbf{v})^T} \mathbf{v} = \overline{\mathbf{v}^T A^T}\mathbf{v} = \overline{\mathbf{v}^T}\,\overline{{A}^T} \mathbf{v}  = 
+ \overline{(A \mathbf{v})^T} \mathbf{v} = \overline{\mathbf{v}^T A^T}\mathbf{v} = \overline{\mathbf{v}^T}\,\overline{{A}^T} \mathbf{v}  = \overline{\mathbf{v}}^T\,\overline{A} \mathbf{v}  = 
  \overline{\mathbf{v}}^T A\mathbf{v}  =  \overline{\mathbf{v}}^T  \lambda\mathbf{v}  = \lambda\overline{\mathbf{v}}^T \mathbf{v}.
 $$
 
@@ -374,8 +373,8 @@ The eigenvectors are found to be
 
 $$
    \mathbf{v}_1 = \begin{bmatrix} 2 \\-1 \\ 0 \end{bmatrix} \text{ for } \lambda_1 = 1, \quad
-   \mathbf{v}_2 = \begin{bmatrix} 1 \\ 2 \\ -1 \end{bmatrix} \text{ for } \lambda_2, \quad  
-   \mathbf{v}_3 = \begin{bmatrix} 1 \\ 2 \\ 5 \end{bmatrix} \text{ for } \lambda_3. 
+   \mathbf{v}_2 = \begin{bmatrix} 1 \\ 2 \\ 5 \end{bmatrix} \text{ for } \lambda_2, \quad  
+   \mathbf{v}_3 = \begin{bmatrix} 1 \\ 2 \\ -1 \end{bmatrix} \text{ for } \lambda_3. 
 \nonumber
 $$
 
@@ -417,15 +416,11 @@ Lastly we leave it to you to check that an eigenvector for $\lambda_3 = 7$ is gi
 
 Let us restate the main theorem ({prf:ref}`Thm:SymmetricMat:OrthogDiag`) about symmetric matrices:
 
-<BR>
 
-**A matrix $A$ is symmetric if and only if it is orthogonally diagonalizable.**
-
-<BR>
+A matrix $A$ is symmetric if and only if it is orthogonally diagonalizable.
 
 Note that this also establishes the property that for each eigenvalue of a symmetric matrix the geometric muliplicity equals the algebraic multiplicity 
 ({prf:ref}`Prop:SymmetricMat:AlgGeomMultiplicity`).
-
 
 
 We will put the intricate proof at the end, and consider two  examples first.
@@ -487,15 +482,15 @@ It appears that $A$ has the double eigenvalues $\lambda_{1,2} = 3$ and  $\lambda
 To find the eigenvectors for  the eigenvalue 3 we row reduce the  matrix $(A - 3I)$.
 
 $$
-\left[\begin{array}{cccc}1-3 & 2 & 2 & 0\\ 2 & -1-3 & 0 & 2 \\ 2 & 0 & -1-3 & -2 \\ 0 & 2 & -2 & 1-3  \end{array} \right]  \quad  \sim \ldots \sim  \quad
+\left[\begin{array}{cccc}1-3 & 2 & 2 & 0\\ 2 & -1-3 & 0 & 2 \\ 2 & 0 & -1-3 & -2 \\ 0 & 2 & -2 & 1-3  \end{array} \right]  \,\,  \sim \,\,\ldots\,\, \sim  \,\,
 \left[\begin{array}{cccc}1 & 0 & -2 & -1\\ 0 & 1 & -1 & -1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0  \end{array} \right].  
 $$
 
 We can read off two linearly independent eigenvectors
 
 $$
-\vect{v}_1 = \left[\begin{array}{c} 2 \\ 1 \\ 1 \\ 0  \end{array} \right], \quad 
-\vect{v}_2 = \left[\begin{array}{c} 1 \\ 1 \\ 0 \\ 1  \end{array} \right].  
+\vect{v}_1 = \left[\begin{array}{c} 1 \\ 1 \\ 0 \\ 1   \end{array} \right], \quad 
+\vect{v}_2 = \left[\begin{array}{c} 2 \\ 1 \\ 1 \\ 0 \end{array} \right].  
 $$
 
 As in {prf:ref}`Ex:SymmetricMat:OrthogDiag3x3` we can construct an orthogonal basis for the eigenspace $E_{3}$:
@@ -503,15 +498,7 @@ As in {prf:ref}`Ex:SymmetricMat:OrthogDiag3x3` we can construct an orthogonal ba
 $$
   \mathbf{u}_1 = \mathbf{v}_1, \quad \mathbf{u}_2 = 
          \mathbf{v}_2 - \dfrac{\mathbf{v}_2 \ip \mathbf{u}_1}{\mathbf{u}_1 \ip \mathbf{u}_1} \mathbf{u}_1 
-         = \dfrac12\begin{bmatrix} 0 \\ 1 \\ -1\\ 1\end{bmatrix}
-$$
-
-Changing the order of  $\vect{v}_1, \vect{v}_2$  before applying Gram-Schmidt would give the slightly simpler basis
-
-$$
-  \mathbf{u}_1 = \mathbf{v}_2 = \begin{bmatrix} 1 \\ 1 \\ 0\\ 1\end{bmatrix}, \quad \mathbf{u}_2 = 
-         \mathbf{v}_2 - \dfrac{\mathbf{v}_2 \ip \mathbf{u}_1}{\mathbf{u}_1 \ip \mathbf{u}_1} \mathbf{u}_1 
-         = \dfrac12\begin{bmatrix} 1 \\ 0 \\ 1\\ -1\end{bmatrix}
+         = \begin{bmatrix} 1 \\ 0 \\ 1\\ -1\end{bmatrix}
 $$
 
 
@@ -829,9 +816,9 @@ This is of the form
 
 $$
   \begin{array}{rcl}
-  A &=& [\,\mathbf{q}_1\,\mathbf{q}_2\,]\begin{bmatrix} 2 & 0 \\ 0 & -3 \end{bmatrix}
-             [\,\mathbf{q}_1\,\mathbf{q}_2\,]^T =
-     [\,2\mathbf{q}_1\,(-3)\mathbf{q}_2]\begin{bmatrix}\mathbf{q}_1^T \\ \mathbf{q}_2^T  \end{bmatrix}.   
+  A &=& [\,\mathbf{q}_1\,\,\mathbf{q}_2\,]\begin{bmatrix} 2 & 0 \\ 0 & -3 \end{bmatrix}
+             [\,\mathbf{q}_1\,\,\mathbf{q}_2\,]^T =
+     [\,2\mathbf{q}_1\,\,(-3)\mathbf{q}_2]\begin{bmatrix}\mathbf{q}_1^T \\ \mathbf{q}_2^T  \end{bmatrix}.   
      \end{array}
 $$
 
@@ -871,16 +858,21 @@ So we have  that this symmetric matrix can be written as a linear combination of
 
 The construction we performed in the last example can be generalized. As is the content of the last theorem in this section.
 
-::::{prf:theorem} 
-:label: Thm:SymmetricMat:OrthogDecomp2
+::::{prf:theorem}   Spectral Theorem for Symmetric Matrices
+:label: Thm:SymmetricMat:SpectralDecomp
 
 Every $n \times n$ symmetric matrix  $A$ is the linear combination 
 
-$$
+:::{math}
+:label Eq:SymmetricMat:SpectralDecomp
+
     A = \lambda_1P_1 +  \lambda_2P_2 + \ldots +  \lambda_nP_n
-$$
+
+:::
 
 of $n$  matrices $P_i$ that represent orthogonal projections onto one-dimensional subspaces that are mutually orthogonal.
+
+Formula  {eq}`Eq:SymmetricMat:SpectralDecomp`  is referred to as being a **spectral decomposition** of the matrix $A$.
 ::::
 
 ::::{prf:proof}
@@ -906,4 +898,86 @@ where  the vectors  $\mathbf{q}_i$  of course are the (orthonormal) columns of t
 The eigenvalues of the matrix $A=\begin{bmatrix} 2 & 1 & 0 \\ 1 & 3 &  1\\ 0 & 1& 2 \end{bmatrix}$ are 1, 2 and 4. 
 
 Find the spectral decomposition of   $A$.
+::::
+
+
+If in {prf:ref}`Thm:SymmetricMat:SpectralDecomp`  the projections onto eigenvectors for the same eigenvalue are grouped together, then the following alternative form of the spectral decomposition results.
+
+
+::::{prf:corollary} Spectral Theorem, alternative version
+:label: Cor:SymmetricMat:SpectralThm-2
+
+Every symmetric $n \times n$ matrix $A$ can be written as a linear combination of the orthogonal projections onto its (orthogonal) eigenspaces.  
+
+$$
+   A = \lambda_1 P_1 + \, \ldots \, + \lambda_k P_k.
+$$
+
+::::
+
+::::{prf:proof}
+
+We know that
+
+$$
+    A = \lambda_1P_1 +   \ldots +  \lambda_nP_n = 
+        \lambda_1\vect{q}_1\vect{q}_1^T +   \ldots +  \lambda_n\vect{q}_n\vect{q}_n^T.
+$$
+
+If all eigenvalues $\lambda_1, \ldots, \lambda_n$ are different that's just it.
+
+If  $\lambda_i$  is an eigenvalue of multiplicity $m$ with $m$ orthonormal eigenvectors
+$\vect{q}_1, \ldots, \vect{q}_m$, then
+
+$$
+  \lambda_i\vect{q}_1\vect{q}_1^T + \,\ldots\,+ \lambda_i\vect{q}_m\vect{q}_m^T =
+  \lambda_i [\,\vect{q}_1\,\,\cdots\,\,\vect{q}_m]  [\,\vect{q}_1\,\,\cdots\,\,\vect{q}_m]^T = \lambda_i Q_iQ_i^T. 
+$$
+
+$P_i = Q_iQ_i^T$ is precisely the orthogonal projection onto the 
+eigenspace $E_{\lambda_i}$.
+::::
+
+The following example provides an illustration.
+
+::::{prf:example} 
+For the matrix  $A = \begin{bmatrix} 
+     1 & 2 & 2 & 0 \\ 2 & -1 & 0 & 2 \\ 2 & 0 & -1 & -2 \\ 0 & 2 & -2 & 1
+    \end{bmatrix}$  we had already found the orthogonal decomposition $A = QDQ^{-1}= QDQ^T$ with
+
+$$
+  Q = \left[\,\vect{q}_1\,\,\vect{q}_2\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_3\,\,\vect{q}_4\,\right]
+  =   \dfrac{1}{\sqrt{3}}\left[\begin{array}{cccc} 1 & 0 & 1 & 1 \\
+                 -1 & 1 & 1 & 0 \\ -1 & -1 & 0 & 1 \\ 0 & -1 & 1 & -1
+      \end{array} \right]
+$$
+
+and
+
+$$
+      D = \left[\begin{array}{cccc} -3 & 0 & 0 & 0 \\
+       0 & -3 & 0 & 0 \\ 0 & 0 & 3 & 0\\ 0 & 0 & 0 & 3
+                \end{array}\right].
+$$
+
+The  spectral decomposition according to {prf:ref}`Cor:SymmetricMat:SpectralThm-2` then becomes
+
+$$
+   A = (-3) \left[\vect{q}_1\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_2\,\right]\left[\vect{q}_1\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_2\,\right]^T +
+   3 \left[\vect{q}_3\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_4\,\right]\left[\vect{q}_3\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_4\,\right]^T = \quad\quad
+$$
+ 
+$$
+  = (-3)\begin{bmatrix} 1/3 & -1/3 & -1/3 &   0 \\
+                       -1/3 &  2/3 &   0  & -1/3 \\
+                       -1/3 &   0  &  2/3 &  1/3 \\
+                          0 & -1/3 &  1/3 &  1/3 
+  \end{bmatrix} + 
+      3 \begin{bmatrix} 2/3 &  1/3 &  1/3 &   0  \\
+                        1/3 &  1/3 &   0  &  1/3 \\
+                        1/3 &   0  &  1/3 & -1/3 \\
+                          0 &  1/3 & -1/3 &  2/3 
+  \end{bmatrix}.
+$$
+
 ::::
