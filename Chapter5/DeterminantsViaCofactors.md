@@ -1,14 +1,14 @@
 (Sec:DeterminantsViaCofactors)=
 # Determinants via cofactor expansion
 
-In {numref}`Sec:DetGeometric` we have define determinants of 2 by 2 and 3 by 3 matrices in a geometric way.
+In {numref}`Sec:DetGeometric` we have defined determinants of 2 by 2 and 3 by 3 matrices in a geometric way.
 We start with the general definition straightaway.
 
 
 ::::::{prf:definition}
 :label: Dfn:DetCofactors:SubmatrixAij
 
-Let $A$ be an  $n\times n$ matrix, with  $n \geq 2$.  The **submatrix** $A_{ij}$  is the $(n-1) \times (n-1)$  matrix that remains if the $i$th row and the $j$th column of $A$ are deleted.
+Let $A$ be an  $n\times n$ matrix, with  $n \geq 2$.  The **submatrix** $A_{ij}$  is the $(n-1) \times (n-1)$  matrix that remains when the $i$th row and the $j$th column of $A$ are deleted.
 
 ::::::
 
@@ -22,7 +22,6 @@ $   we have that
 
 $$
 A_{13} = \left[\begin{array}{ccc}    1 & 2  & 4 \\ 2 & 1  & 3 \\ 6 & 4& 5   \end{array}\right]
-
 \quad \text{and} \quad
 A_{42} =   \left[\begin{array}{ccc} 2  & 0 & 4 \\  1  & 3 & 4 \\ 2  & 0 & 3
 \end{array}\right]
@@ -38,7 +37,7 @@ $$
 
 
 Let $A$ be an  $n\times n$ matrix, with  $n \geq 3$.
-The **determinant** of $A$, which we denote by either det$(A)$ or  $|A|$,  is defined by
+The **determinant** of $A$, which we denote by either $\det{A}$ or  $|A|$,  is defined by
 
 $$
 |A| = \det{A} = \sum_{i=1}^n   (-1)^{1+i} a_{i1}\det{A_{i1}} = \sum_{i=1}^n   a_{i1} C_{i1}.
@@ -137,15 +136,18 @@ $$
 
 and
 
-$$
+:::::{math}
+:label: Eq:DetCofactors:3x3determinant
+
 \left|\begin{array}{rrr} a_{11} & a_{12} & a_{13} \\
 a_{21} & a_{22} & a_{23} \\
 a_{31} & a_{32} & a_{33}
 \end{array}\right|
 \begin{array}{lcl}
-&=&   a_{11}a_{22}a_{33}  a_{11}a_{23}a_{32} +a_ {12}a_{23}a_{31} \\
+&=&   a_{11}a_{22}a_{33} - a_{11}a_{23}a_{32} +a_ {12}a_{23}a_{31} \\
 & & \quad - a_{12}a_{21}a_{33} + a_{13}a_{21}a_{32} - a_{13}a_{22}a_{31}. \end{array}
-$$
+
+:::::
 
 They contain $2=2\cdot1$  resp. $6 = 3\cdot2\cdot1$  products.
 For a larger  matrix  the work involved quickly runs out of hand.  Luckily there are several shortcuts to compute a determinant.  The first important one is that the first column does not play any special role.  The determinant can be found by expanding along any column, and also along any row.  This is the content of the first theorem.
@@ -192,11 +194,11 @@ $ along its third row.
 $$
 \left|\begin{array}{rrr} a_{11} & a_{12} & a_{13} \\
 a_{21} & a_{22} & a_{23} \\
-a_{31} & a_{32} & a_{33}
+\color{blue}a_{31} & \color{blue}a_{32} & \color{blue}a_{33}
 \end{array}\right|=
-a_{31}\left|\begin{array}{cc}a_{12} & a_{13}\\ a_{22} & a_{23}\end{array}\right|-
-a_{32}\left|\begin{array}{cc}a_{11} & a_{13}\\ a_{21} & a_{23}\end{array}\right|+
-a_{33}\left|\begin{array}{cc}a_{11} & a_{12}\\ a_{21} & a_{22}\end{array}\right|
+{\color{blue}a_{31}}\left|\begin{array}{cc}a_{12} & a_{13}\\ a_{22} & a_{23}\end{array}\right|-
+{\color{blue}a_{32}}\left|\begin{array}{cc}a_{11} & a_{13}\\ a_{21} & a_{23}\end{array}\right|+
+{\color{blue}a_{33}}\left|\begin{array}{cc}a_{11} & a_{12}\\ a_{21} & a_{22}\end{array}\right|
 $$
 
 
@@ -215,11 +217,11 @@ $$
 Cofactor expansion  along the second column yields
 
 $$
-\left|\begin{array}{rrr} a_{11} & a_{12} & a_{13} \\
-a_{21} & a_{22} & a_{23} \\
-a_{31} & a_{32} & a_{33}
+\left|\begin{array}{rrr} a_{11} & \color{blue}a_{12} & a_{13} \\
+a_{21} & \color{blue}a_{22} & a_{23} \\
+a_{31} & \color{blue}a_{32} & a_{33}
 \end{array}\right|=
--a_{12}\left|\begin{array}{cc}a_{21} & a_{23}\\ a_{31} & a_{33}\end{array}\right|+a_{22}\left|\begin{array}{cc}a_{11} & a_{13}\\ a_{31} & a_{33}\end{array}\right|-a_{32}\left|\begin{array}{cc}a_{11} & a_{13}\\ a_{21} & a_{23}\end{array}\right|
+-{\color{blue}a_{12}}\left|\begin{array}{cc}a_{21} & a_{23}\\ a_{31} & a_{33}\end{array}\right|+{\color{blue}a_{22}}\left|\begin{array}{cc}a_{11} & a_{13}\\ a_{31} & a_{33}\end{array}\right|-{\color{blue}a_{32}}\left|\begin{array}{cc}a_{11} & a_{13}\\ a_{21} & a_{23}\end{array}\right|
 $$
 
 
@@ -233,12 +235,13 @@ $$
 \end{array}
 $$
 
-These are the same six products with the same signs as we found with the first expansion.
+These are the same six products with the same signs as we found with the first expansion
+(Equation {eq}`Eq:DetCofactors:3x3determinant`).
 
 ::::::
 
 
-In the following example we use the freedom of choice  to compute a determinant of a matrix that contains a lot of zeros.
+In the following example we use this freedom of choice  to compute a determinant of a matrix that contains a lot of zeros.
 
 
 
@@ -327,14 +330,13 @@ The next example is meant to illustrate a more general property.
 :label: Ex:DetCofactors:Triangular
 
 
-The determinant of the matrix  
-$A = \left[\begin{array}{cccc}
+The determinant of the matrix   $A = \left[\begin{array}{cccc}
 2 & 3 & -1 & 2 \\
 0 & 3 & 5 & -9 \\
 0 & 0 & 4 & 2 \\
 0  & 0 & 0 & -1
 \end{array} \right]$  
-can be quickly found by expanding along columns, from left to right:
+can be quickly found by expanding along columns from left to right.
 
 $$
 \left|\begin{array}{cccc}
@@ -348,7 +350,7 @@ $$
 2 \cdot 3 \cdot 4 \cdot (-1).
 $$
 
-Alternatively, we can expand along rows from bottom till top:
+Alternatively, we can expand along rows from bottom till top.
 
 $$
 \left|\begin{array}{cccc}
@@ -378,14 +380,16 @@ $$
 a_{ij} = 0 \quad \text{if} \quad i > j.
 $$
 
-In the same manner we can define **lower triangular matrices**.  A triangular matrix is a matrix that is either an upper triangular or a  lower triangular matrix.
+In the same manner we can define **lower triangular matrices**.  
+
+A **triangular matrix** is a matrix that is either an upper triangular or a  lower triangular matrix.
 
 ::::::
 
 
 Note that a diagonal matrix is both upper and lower triangular.
 
-The property we hinted at  in {prf:ref}`Ex:DetCofactors:Triangular` is the following:
+The property we hinted at  in {prf:ref}`Ex:DetCofactors:Triangular` is captured in the following proposition.
 
 
 ::::::{prf:proposition}
@@ -407,8 +411,7 @@ expand along the rows from top to bottom.
 ::::::
 
 
-In {numref}`Sec:DetGeometric`  we saw that for $2 \times 2$ and $3 \times 3$ matrices we have
-a matrix $A$ is invertible  $\quad \iff \quad  \det{A} \neq 0$.
+In {numref}`Sec:DetGeometric`  we have seen that for $2 \times 2$ and $3 \times 3$ matrices we have a matrix $A$ is invertible  if and only if   $\det{A} \neq 0$.
 
 From {prf:ref}`Prop:DetCofactors:TriangularMatrices` it follows that this property still holds for **triangular** matrices.
 
@@ -424,7 +427,7 @@ A triangular matrix is invertible if and only if it has a non-zero determinant.
 
 ::::::{prf:proof}
 
-Let us first consider the case of an  $n \times n$ upper triangular matrix  $U$,  with entries  $u_{ij}$.  Such a matrix is an echelon matrix  (Cf. Chapter \rule{1ex}{1ex} \rule{1ex}{1ex}).  It is invertible if and only if it has $n$ linearly independent columns, which is the case if all diagonal elements $u_{ii}$ are nonzero.  And this last is equivalent to
+Let us first consider the case of an  $n \times n$ upper triangular matrix  $U$,  with entries  $u_{ij}$.  Such a matrix is an echelon matrix.  It is invertible if and only if it has $n$ linearly independent columns, which is the case if all diagonal elements $u_{ii}$ are nonzero.  And this last is equivalent to
 
 $$
 u_{11}\cdot u_{22}  \cdot  \ldots \cdot u_{nn} = \det{U} \neq 0.
@@ -471,7 +474,7 @@ $$
 \end{array}
 $$
 
-For  the determinant of  the transpose  $A^T$  we find, expanding along the first **column**:
+For  the determinant of  the transpose  $A^T$  we find, expanding along the first column:
 
 $$
 \begin{array}{rcl}

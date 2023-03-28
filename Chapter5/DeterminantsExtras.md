@@ -1,5 +1,5 @@
 (Sec:DetExtras)=
-# Overview
+# Miscellaneous applications of determinants
 
 In this section we will address the following matters:
 <ul>
@@ -51,7 +51,7 @@ Let  $A$ be an $n\times n$ matrix, and $\vect{v}$ a vector in $\R^n$.  Then  $A^
 If  $\vect{e}_j$  denotes the $j$th vector of the standard basis of $\R^n$, then we have 
 
 $$ 
-\det{A^{(i)}(\vect{e}_j)} = (-1)^{j+i} \det{A_{ji}} = C_{ji} 
+\det{(A^{(i)}(\vect{e}_j))} = (-1)^{j+i} \det{A_{ji}} = C_{ji} 
 $$ 
 
 where $A_{ji}$   is the submatrix  and  $C_{ji}$ the cofactor as introduced in the definition of the $n \times n$ determinant ({prf:ref}`Dfn:DetCofactors:Determinant`). 
@@ -86,7 +86,7 @@ $$
 Expanding along the fourth column  gives 
 
 $$ 
-\det{A^{(4)}(\vect{e}_2)} = \left|\begin{array}{rrrr} 
+\det{(A^{(4)}(\vect{e}_2))} = \left|\begin{array}{rrrr} 
 a_{11} &a_{12} &a_{13} &0  \\ 
 a_{21} &a_{22} &a_{23} &1  \\ 
 a_{31} &a_{32} &a_{33} &0  \\ 
@@ -96,7 +96,6 @@ a_{11} &a_{12} &a_{13} \\
 a_{31} &a_{32} &a_{33}  \\ 
 a_{41} &a_{42} &a_{43} 
 \end{array} \right|= C_{24}. 
-\nonumber 
 $$ 
 
 ::::::
@@ -111,7 +110,6 @@ Suppose  $A$ is an invertible matrix.  Then each linear system
 
 $$ 
 A\vect{x} = \vect{b} 
-\nonumber 
 $$ 
 
 has a unique solution. The $i$th entry of this solution is given by 
@@ -182,7 +180,7 @@ The proof -- you may skip it of course -- rests rather nicely on properties of t
 ::::::{prf:proof}
 
 Suppose $\vect{x} = \vect{c} = \left[\begin{array}{c}  c_1 \\ \vdots\\ c_n\end{array} \right]
-$ is the unique solution of the linear system $A\vect{x} = \vect{b}$, with the invertible matrix $A = [ \vect{a}_1  \ldots  \vect{a}_n ]$. 
+$ is the unique solution of the linear system $A\vect{x} = \vect{b}$, with the invertible matrix $A = [ \vect{a}_1 \, \ldots \,  \vect{a}_2 \, \ldots \,\vect{a}_n ]$. 
  
 We show that Formula {eq}`Eq:DeterminantsMisc:Cramer` holds for $c_1$. The argument can be copied for the other $c_i$. 
  
@@ -192,8 +190,7 @@ $$
 \begin{array}{ccl} 
 A\vect{c} = \vect{b} &\iff \quad & c_1\vect{a}_1+c_2\vect{a}_2 + \ldots + c_n\vect{a}_n =\vect{b} \\ 
 &\iff \quad & c_1\vect{a}_1+c_2\vect{a}_2 + \ldots + c_n\vect{a}_n - \vect{b} = \vect{0}. 
-\end{array} 
-\nonumber 
+\end{array}
 $$ 
  
 The smart next move  is to replace the first column of $A$ by the zero column disguised as 
@@ -205,8 +202,8 @@ $$
 So we have 
 
 $$ 
-\det{c_1\vect{a}_1+c_2\vect{a}_2 + \ldots + c_n\vect{a}_n - \vect{b}, \vect{a}_2, \ldots, \vect{a}_n} 
-=\det{\vect{0}, \vect{a}_2, \ldots,\vect{a}_n}  = 0. 
+\det{[c_1\vect{a}_1+c_2\vect{a}_2 + \,\ldots\, + c_n\vect{a}_n - \vect{b} \,\,\vect{a}_2\,\, \ldots \,\, \vect{a}_n]} 
+=\det{[\vect{0}, \,\,\vect{a}_2,\,\, \ldots\,\,\vect{a}_n]}  = 0. 
 $$ 
 
 By the linearity property (in all of the columns) of the determinant we may deduce 
@@ -215,7 +212,7 @@ By the linearity property (in all of the columns) of the determinant we may dedu
 :::{math}
 :label: Eq:DeterminantsMisc:ProofCramer
 
-c_1\det{A} + c_2\det{A^{(1)}(\vect{a}_2)}  + \ldots + c_n\det{A^{(1)}(\vect{a}_n)}  - \det{A^{(1)}(\vect{b})} = 0. 
+c_1\det{A} + c_2\det{(A^{(1)}(\vect{a}_2))}  + \ldots + c_n\det{(A^{(1)}(\vect{a}_n))}  - \det{(A^{(1)}(\vect{b}))} = 0. 
 
 :::
 
@@ -229,8 +226,8 @@ $$
 since in the matrix $A^{(1)}(\vect{a}_i)$  the first column and the $i$th column are identical. Hence all but the first and last determinant in Equation {eq}`Eq:DeterminantsMisc:ProofCramer`  drop out and we can conclude that indeed 
 
 $$ 
-c_1\det{A}  - \det{A^{(1)}(\vect{b})} = 0 
-\quad \iff \quad c_1 = \dfrac{\det{A^{(1)}(\vect{b})}}{\det{A}}. 
+c_1\det{A}  - \det{(A^{(1)}(\vect{b}))} = 0 
+\quad \iff \quad c_1 = \dfrac{\det{(A^{(1)}(\vect{b}))}}{\det{A}}. 
 $$ 
 
 ::::::
@@ -259,10 +256,13 @@ $$
 ::::::{prf:proof}
 
 The $j$th column $\vect{b}_j$ of $B = A^{-1}$ is the solution of the linear system  $A\vect{x} = \vect{e}_j$. 
+
 Cramer's rule then gives that  $b_{ij}$,  the $i$th entry of this column,  is equal to 
+
 $$ 
 b_{ij} = \dfrac{\det{A^{(i)}(\vect{e}_j)}}{\det{A}} = \dfrac{C_{ji}}{\det{A}}. 
 $$ 
+
 For the last step we used {prf:ref}`Prop:DetExtras:ReplaceColGivesCofactor`. 
 
 ::::::
@@ -371,6 +371,8 @@ $A$ is replaced by the $k$th row of $A$.  Since the matrix $\tilde{A}$ has two e
 ::::::
 
 
+::::{prf:remark}
+
 A few remarks, amongst which rather a downer, to conclude this subsection.
 
 <ul>
@@ -420,18 +422,20 @@ $$
 A\vect{x} = \vect{b} 
 $$  
 
-of four equations in four unknowns, to find the solution using Cramer's rule, one needs to compute five  $4 \times 4$  determinants.  Using the  good-old method  using  the augmented matrix   $[A|\vect{b}]$  only asks for one row reduction process.  And also the comparison between the efforts required when   computing the inverse via the adjugate matrix versus the  row reduction of the augmented matrix   $[A|I]$  works out rather favorably for the latter. 
+of four equations in four unknowns, to find the solution using Cramer's rule, one needs to compute five  $4 \times 4$  determinants.  Using the  good-old method  using  the augmented matrix   $[\,A\,|\,\vect{b}\,]$  only asks for one row reduction process.  And also the comparison between the efforts required when   computing the inverse via the adjugate matrix versus the  row reduction of the augmented matrix   $[\,A\,|\,I\,]$  works out rather favorably for the latter. 
  
 </li>
 </ul>
 
+::::
 
 
-## Determinants and volume
+(SubSec:DetExtras:Volume+Orientation)=
+## Volume and Orientation Revisited
 
 We have seen in {numref}`Sec:DetGeometric` how determinants popped up in the context of areas of parallelograms and volumes of parallelepipeds.
 
-In {numref}`Sec:Vectors` we used the inner product to define length, distance and orthogonality in $\R^n$.  Determinants are the means to define the concepts of volume and orientation in $n$ dimensions.
+In {numref}`Sec:DotProduct` we used the dot product to define length, distance and orthogonality in $\R^n$.  Determinants are the means to define the concepts of volume and orientation in $n$ dimensions.
 
 
 ::::::{prf:definition} Volume and orientation in $\R^n$ 
@@ -445,8 +449,9 @@ $$
 $$ 
 
 The **volume** of such a parallelepiped is defined by 
+
 $$ 
-\text{Vol}(\mathcal{E}) = |\det{\vect{v_1}, \ldots, \vect{v}_n}|. 
+\text{Vol}(\mathcal{E}) = |\det{[\,\vect{v_1}\, \,\ldots \,\, \vect{v}_n\,]}|. 
 $$ 
 
 So, it is the absolute value of a determinant. 
@@ -455,7 +460,7 @@ If, furthermore,  the vectors in $(\vect{v_1}, \ldots, \vect{v}_n)$  are linearl
  
 $(\vect{v_1}, \ldots, \vect{v}_n)$ is **positively oriented** $\quad$ if $ \quad \det{\vect{v_1}, \ldots, \vect{v}_n}>0$. 
  
-And of course, the set is called **negatively oriented** if this determinant is negative. 
+If this determinant is negative the set is called **negatively oriented**. 
 
 ::::::
 
@@ -463,7 +468,7 @@ And of course, the set is called **negatively oriented** if this determinant is 
 ::::::{prf:proposition}
 :label: Prop:DetExras:DetAsBlowupFactor
  
-Suppose $T$ is a linear transformation from $\R^2$ to $\R^2$, with standard matrix $A = [\vect{a}_1   \vect{a}_2]$, so 
+Suppose $T$ is a linear transformation from $\R^2$ to $\R^2$, with standard matrix $A = [\,\vect{a}_1 \,\,  \vect{a}_2\,]$, so 
 
 $$ 
 T(\vect{x}) = A\vect{x}, \quad  \text{for} \quad  \vect{x} \text{  in  } \R^2. 
@@ -500,12 +505,11 @@ The image of the standard grid
 ::::
 
  
-First we show that the formula holds if  $R$  is the unit square, i.e., the parallelogram generated by $\vect{e}_1$  and $\vect{e}_2$. \\ 
-The unit square is mapped onto the parallelogram $S$ generated by $T(\vect{e}_1)=\vect{a}_1$  and $T(\vect{e}_2)=\vect{a}_2$. It follows 
+First we show that the formula holds if  $R$  is the unit square, i.e., the parallelogram generated by $\vect{e}_1$  and $\vect{e}_2$.   The unit square is mapped onto the parallelogram $S$ generated by $T(\vect{e}_1)=\vect{a}_1$  and $T(\vect{e}_2)=\vect{a}_2$. It follows 
 that 
 
 $$ 
-A(S) = |\det{\vect{a}_1, \vect{a}_2}|  = |\det{A}| = |\det{A}| \cdot A(R), 
+A(S) = |\det{[\,\vect{a}_1\,\, \vect{a}_2\,]}|  = |\det{A}| = |\det{A}| \cdot A(R), 
 $$ 
 
 since $A(R) = 1$. 
@@ -513,7 +517,7 @@ since $A(R) = 1$.
 This then also holds for any square $R$ with sides of length $r$ that are parallel to the axes.  Namely,  such a square has area $r^2$ and can be described as the square with vertices 
 
 $$ 
-\vect{p},\quad  \vect{p}+ r\vect{e}_1, \quad \vect{p}+ r\vect{e}_1+r\vect{e}_2) \quad\text{and}\quad  \vect{p}+ r\vect{e}_2. 
+\vect{p},\quad  \vect{p}+ r\vect{e}_1, \quad \vect{p}+ r\vect{e}_1+r\vect{e}_2 \quad\text{and}\quad  \vect{p}+ r\vect{e}_2. 
 $$ 
 
 These are mapped to 
@@ -525,7 +529,7 @@ $$
 This is a parallelogram with sides  $rA\vect{e}_1 = r\vect{a}_1$  and  $rA\vect{e}_2 =r \vect{a}_2$, which has area 
 
 $$ 
-A(S) =  |\det{r\vect{a}_1, r\vect{a}_2}|   = r^2 |\det{A}| =   |\det{A}|\cdot A(R). 
+A(S) =  |\det{[\,r\vect{a}_1\,\, r\vect{a}_2\,]}|   = r^2 |\det{A}| =   |\det{A}|\cdot A(R). 
 $$ 
  
 See {numref}`Figure %s <Fig:DetExtras:ImageOfSquare>` 
@@ -536,21 +540,21 @@ See {numref}`Figure %s <Fig:DetExtras:ImageOfSquare>`
 :name: Fig:DetExtras:ImageOfSquare
 
 
-The image of a square with 'corner' $\vect{p}$  and radius $r$
+The image of a square with 'corner' $\vect{p}$  and side length $r$
 ::::
 
 For a general (reasonable) region $R$  we sketch the idea and omit the technical details. 
 
 The region $R$ can be approximated arbitrarily close by a collection of smaller and smaller  squares  $R_i$ of which the interiors do not overlap. 
 See {numref}`Figure %s <Fig:DetExtras:Subdivision>`. 
-In $\R^2$ areas of more general regions than parallelograms can be computed by subdividing and/or approximating them by parallelograms. 
+The limit of the area of these aproximations when the grid get finer and finer gives the area of $R$.
 We can do the same in higher dimensions, but picturing the process becomes elusive. 
  
 
 ::::{figure} Images/Fig-DetExtras-Subdivision.svg
 :name: Fig:DetExtras:Subdivision
 
-Approximating a region by smaller and smaller squares
+Approximating a region by smaller and smaller squares.
 
 ::::
 
@@ -573,9 +577,79 @@ $$
 it is true that
 
 $$
-\text{Vol}(S) = |\det{A}|\cdot \text{Vol}(R),  \quad \text{where  } S \text{  is the image of
-}R: \quad S = T(R).
+\text{Vol}(S) = |\det{A}|\cdot \text{Vol}(R),
 $$
+
+where  $S$   is the image of $R$ under $T$, i.e., $S = T(R)$. 
+
+
+To conclude the meaning of the determinant of $A$ for the linear transformation 
+$T(\vect{x}) = A\vect{x}$ we look at the *orientation*.
+
+::::{prf:proposition}
+ Suppose $A = [\,\vect{a}_1\,\,\vect{a}_2\,\,\ldots\,\,\vect{a}_n\, ]$ is the standard matrix of the linear transformation $T: \R^n \to R^n$.  So we have
+
+$$
+   T(\vect{x}) = A\vect{x}.
+$$
+
+Suppose  $(\vect{v}_1,\,\vect{v}_2,\,\ldots\,,\,\vect{v}_n)$  is an ordered set of vectors in $\R^n$.
+
+Then the following holds.
+
+If  $\det{A} > 0$ the set $(T(\vect{v}_1),\,\vect{v}_2,\,\ldots\,,\,\vect{v}_n)$  has the same orientation as the set $(\vect{v}_1,\,\vect{v}_2,\,\ldots\,,\,\vect{v}_n)$.
+
+If  $\det{A} < 0$ the set $(T(\vect{v}_1),\,\vect{v}_2,\,\ldots\,,\,\vect{v}_n)$  has the opposite orientation as the set $(\vect{v}_1,\,\vect{v}_2,\,\ldots\,,\,\vect{v}_n)$.
+
+In short: the transformation $T(\vect{x}) = A\vect{x}$  **preserves** the orientation if   
+$\det{A} > 0$ and **reverses** the orientation if  $\det{A} < 0$.
+::::
+
+::::{prf:proof}
+
+This follows immediately from the product rule of determinants.
+
+$$
+ \begin{array}{rcl}
+ \det{\left[\,T(\vect{v}_1)\,\,T(\vect{v}_2)\,\,\ldots\,\,T(\vect{v}_n)\,  \right]} &=&
+ \det{\left[\,A\vect{v}_1\,\,A\vect{v}_2\,\,\ldots\,\,A\vect{v}_n\,  \right]} \\
+ &=& 
+ \det{A}\,\det{\left[\,\vect{v}_1\,\,\vect{v}_2\,\,\ldots\,\,\vect{v}_n\,  \right]}.
+ \end{array}
+$$
+
+::::
+
+A nice illustration of what this means in $\R^2$ is given by the following example.
+
+::::{prf:example}
+
+Consider the two linear transformations from $\R^2$ to $\R^2$ with matrices
+
+$$
+  A = \begin{bmatrix} 1 & 3 \\ 3 & 1 \end{bmatrix}, \quad
+  B = \begin{bmatrix} 3 & 1 \\ 1 & 3 \end{bmatrix}.
+$$
+
+Note that
+
+$$
+ \det{A} = -8 < 0 \quad \text{and} \quad \det{B} = 8 > 0.
+$$
+
+{numref}`Figure %s <Fig:DetExtras:Orientation>` visualizes what is going on.
+
+:::{figure} Images/Fig-DetExtras-Orientation.svg
+:name: Fig:DetExtras:Orientation
+
+Images under transformations with negative and positive determinant.
+:::
+
+[to team visuals:  please turn into (a) moving picture(s)]
+
+
+::::
+
 
 
 
@@ -585,7 +659,7 @@ In {numref}`Sec:DetGeometric`  we defined the determinant of the ordered set $(\
 
 $$
 \begin{array}{rcl}
-\det{\vect{a},\vect{b},\vect{c}} &=& (\vect{a}\times\vect{b})\ip\vect{c} =
+\det{(\vect{a},\vect{b},\vect{c})} &=& (\vect{a}\times\vect{b})\ip\vect{c} =
 \left|\begin{array}{ccc}  a_1 & b_1 &c_1 \\ a_2 & b_2 &c_2 \\ a_3 & b_3 & c_3   \end{array}\right|\\
 &=&
 \left|\begin{array}{cc}  a_2 & a_3   \\b_2 & b_3      \end{array}\right| c_1
@@ -635,7 +709,7 @@ we can define
 a_{11} & a_{12} & \ldots & a_{1,(n-1)} & \vect{e}_1 \\ 
 a_{21} & a_{22} & \ldots & a_{2,(n-1)} & \vect{e}_2 \\ 
 \vdots & \vdots &        &    \vdots   &  \vdots \\ 
-a_{n1} & a_{n2} & \ldots & a_{2,(n-1)} & \vect{e}_n 
+a_{n1} & a_{n2} & \ldots & a_{n,(n-1)} & \vect{e}_n 
 \end{array}\right|. 
 
 :::
@@ -656,7 +730,7 @@ $\vect{a}_i \perp\vect{a^{\ast}}_n$ ,  for   $i = 1,2,\ldots, n-1$ .
 </li>
 <li>
 
-$ \{\vect{a}_1, \ldots, \vect{a}_{n-1}\}$   is linearly dependent if and only if   $\det{\left[\vect{a}_1, \ldots, \vect{a}_{n-1}, \vect{a^{\ast}}_n\right]
+$ \{\vect{a}_1, \, \ldots, \,\vect{a}_{n-1}\}$   is linearly dependent if and only if   $\det{\left[\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\, \vect{a^{\ast}}_n\right]
 } = 0$ . 
  
 
@@ -669,7 +743,7 @@ If   $ \{\vect{a}_1, \ldots, \vect{a}_{n-1}\}$   is linearly independent, then  
 </li>
 <li>
 
-The norm of the vector  $\vect{a^{\ast}}_n$   is equal to the  $(n-1)$ -dimensional volume of the  $(n-1)$ -dimensional parallelepiped  generated by  $\vect{a}_1, \ldots, \vect{a}_{n-1}$ . 
+The norm of the vector  $\vect{a^{\ast}}_n$   is equal to the  $(n-1)$ -dimensional volume of the  $(n-1)$-dimensional parallelepiped  generated by  $\vect{a}_1, \ldots, \vect{a}_{n-1}$ . 
  
 </li>
 </ol>
@@ -712,26 +786,25 @@ This shows that the construction also works in $\R^2$.
 ::::::
 
 
-::::::{prf:proof} (Proof of {prf:ref}`Prop:DetExtras:Properties-ndimCrossProd`)
+::::::{prf:proof} (of {prf:ref}`Prop:DetExtras:Properties-ndimCrossProd`)
 
 The properties follow from the observation that for each vector $\vect{v}$ in $\R^n$ 
  
+
 $$ 
 \begin{array}{rcl} 
-\vect{a^{\ast}}_n \ip \vect{v} 
-&=&  \vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1})\ip\vect{v} \\ 
+ \vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1})\ip\vect{v} 
 &=& \left|\begin{array}{ccccc} 
 a_{11} & a_{12} & \ldots & a_{1,(n-1)} & v_1 \\ 
 a_{21} & a_{22} & \ldots & a_{2,(n-1)} & v_2 \\ 
 \vdots & \vdots &        &    \vdots   &  \vdots \\ 
 a_{n1} & a_{n2} & \ldots & a_{2,(n-1)} & v_n 
 \end{array}\right|\\ 
-&=& \det{\vect{a}_1, \ldots, \vect{a}_{n-1},\vect{v}}. 
+&=& \det{[\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\,\vect{v}\,]}. 
 \end{array} 
-\nonumber 
 $$ 
  
-This  immediate generalization of the identity  $(\vect{a}\times\vect{b})\ip\vect{c} = \det{[\vect{a},\vect{b},\vect{c}] }$ follows if 
+This  immediate generalization of the identity  $(\vect{a}\times\vect{b})\ip\vect{c} = \det{[\,\vect{a}\,\,\vect{b}\,\,\vect{c}\,] }$ follows if 
 we write Equation {eq}`Eq:DetExtras:DetCrossProd-ndim`    as in equation {eq}`Eq:DetExtras:DetCrossProd`. 
 <ol type = "i">
 
@@ -739,14 +812,18 @@ we write Equation {eq}`Eq:DetExtras:DetCrossProd-ndim`    as in equation {eq}`Eq
 
 Take any of the vectors   $a_j$ . Then 
 
+<BR>
+
 $$ 
-\vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1})  \ip \vect{a}_j= \det{ \left[\vect{a}_1, \ldots, \vect{a}_{n-1},\vect{a}_j \right]
+\vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1})  \ip \vect{a}_j= \det{ \left[\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\,\vect{a}_j\, \right]
  } = 0, 
 $$  
 
 since the determinant has two equal columns. 
 So indeed 
  
+<BR>
+
 $$ 
 \vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1})  \perp \vect{a}_j,\quad j = 1, \ldots, n-1. 
 $$
@@ -761,22 +838,24 @@ $$
 a_{11} & a_{12} & \ldots & a_{1,(n-1)} \\ 
 a_{21} & a_{22} & \ldots & a_{2,(n-1)}  \\ 
 \vdots & \vdots &        &      \vdots \\ 
-a_{n1} & a_{n2} & \ldots & a_{2,(n-1)} 
+a_{n1} & a_{n2} & \ldots & a_{n,(n-1)} 
 \end{bmatrix} 
 $$ 
 
 are linearly dependent.  Then for  each vector  $\vect{v}$  in  $\R^n$
 
+<BR>
+
 $$ 
-\vect{a^{\ast} }_n \ip \vect{v}  =  \det{ \left[\vect{a}_1, \ldots, \vect{a}_{n-1},\vect{v} \right]
+\vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1})  \ip \vect{v}  =  \det{ \left[\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\,\vect{v}\, \right]
  }  =  0. 
 $$ 
 
-This implies that  $\vect{a^{\ast}}_n$   must be the zero vector. 
+This implies that  $\vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1}) $   must be the zero vector. 
  
-Conversely, if the vectors   $\{ \vect{a}_1, \ldots, \vect{a}_{n-1} \}$   are linearly independent, 
-then the  $n \times (n-1)$  matrix   $A = [ \vect{a}_1   \ldots   \vect{a}_{n-1}  ] $  
-has rank  $n-1$ .  The matrix  $A$  must have  $n-1$  linearly independent rows.  Say, if we delete the  $k$ -th row we have an  $(n-1) \times (n-1)$  sub-matrix  with independent rows. 
+Conversely, if the vectors   $\{ \vect{a}_1, \,\ldots\, \, , \vect{a}_{n-1} \}$   are linearly independent, 
+then the  $n \times (n-1)$  matrix   $A = [ \,\vect{a}_1 \,\,  \ldots \,\,  \vect{a}_{n-1} \,] $  
+has rank  $n-1$ .  The matrix  $A$  must have  $n-1$  linearly independent rows.  Say, if we delete the  $k$th row we have an  $(n-1) \times (n-1)$  sub-matrix  with independent rows. 
 Then the coefficient of  $\vect{e}_k$  in the expansion of 
  $ \vect{N} ( \vect{a}_1, \ldots, \vect{a}_{n-1} ) $ , 
 which is precisely the determinant of this submatrix, is nonzero. 
@@ -787,25 +866,27 @@ which is precisely the determinant of this submatrix, is nonzero.
 
 This is a consequence of the observation 
  
+<BR>
+
 $$ 
-\det{ \left[\vect{a}_1, \ldots, \vect{a}_{n-1},\vect{a^{\ast}}_n \right]
- } = \vect{a^{\ast}}_n \ip \vect{a^{\ast}}_n 
-= \norm{\vect{a^{\ast}}_n}^2 \geq 0 
+\det{ \left[\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\,\vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1})\, \right]
+ } = \vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1}) \ip \vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1})
+= \norm{\vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1})}^2 \geq 0, 
 $$ 
 
-and the already established fact that   $\vect{a^{\ast}}_n  \neq \vect{0}$  
-if    $\{\vect{a}_1, \ldots, \vect{a}_{n-1}\}$   is linearly independent. 
+and the already established fact that   $\vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1}) \neq \vect{0}$  
+if    $\{\vect{a}_1,\, \ldots\,,\, \vect{a}_{n-1}\}$   is linearly independent. 
  
 </li>
 <li>
 
 We sketch the idea, which we lend from volume versus area considerations in  $\R^2$   and  $\R^3$ . 
-We defined the volume of the  $n$ -dimensional parallelepiped  $\mathcal{P} \left(\vect{a}_1, \ldots, \vect{a}_{n} \right) $  
+We defined the volume of the  $n$-dimensional parallelepiped  $\mathcal{P} \left(\vect{a}_1, \ldots, \vect{a}_{n} \right) $  
 generated by the   $n$   vectors  $\vect{a}_1, \ldots, \vect{a}_{n}$   as the absolute value of the determinant: 
  
 $$ 
 \text{Vol}\left(\mathcal{P}(\vect{a}_1, \ldots, \vect{a}_{n}) \right)
- = |\det{\left[\vect{a}_1, \ldots, \vect{a}_{n}\right]
+ = |\det{\left[\,\vect{a}_1\,\, \ldots\,\, \,\vect{a}_{n}\,\right]
  }|. 
 $$ 
 
@@ -828,6 +909,8 @@ $$
 If we apply this to the vector   $\vect{a}_{n} = \vect{a^{\ast}}_n = \vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1})$ , which is orthogonal to all vectors 
  $\vect{a}_1, \ldots, \vect{a}_{n-1}$ , we have on the one hand that 
  
+<BR>
+
 $$ 
 \text{Vol}\left(\mathcal{P}(\vect{a}_1, \ldots, \vect{a}_{n-1}, \vect{a^{\ast}}_n) \right)
  = 
@@ -836,12 +919,14 @@ $$
 $$ 
 
 and on the other hand 
- 
+
+<BR>
+
 $$ 
 \begin{array}{rcl} 
-\text{Vol}\left(\mathcal{P}(\vect{a}_1, \ldots, \vect{a}_{n-1}, \vect{a^{\ast}}_n \right)
+\text{Vol}\left(\mathcal{P}(\vect{a}_1, \ldots, \vect{a}_{n-1}, \vect{a^{\ast}}_n) \right)
  &=& 
-|\det{ \left[\vect{a}_1, \ldots, \vect{a}_{n-1}, \vect{a^{\ast}}_n \right]
+|\det{ \left[\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\, \vect{a^{\ast}}_n\, \right]
  }| \\ 
 &=& 
 | \vect{a^{\ast}}_n\ip \vect{a^{\ast}}_n| = \norm{\vect{a^{\ast}}_n}^2. 
@@ -851,6 +936,8 @@ $$
 Equating the two expressions for  $\text{Vol} \left(\mathcal{P} (\vect{a}_1, \ldots, \vect{a}_{n-1}, \vect{a^{\ast}}_n) \right) $  
 we conclude that indeed 
  
+<BR>
+
 $$ 
 \norm{\vect{a^{\ast}}_{n}} = \text{Vol} \left(\mathcal{P} (\vect{a}_1, \ldots, \vect{a}_{n-1}) \right)
 . 

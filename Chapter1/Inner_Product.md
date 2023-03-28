@@ -1143,7 +1143,7 @@ $$
 
 is positive if the angle is sharp, zero if the angle is right, and negative if the angle is obtuse.
 
-In the case of a sharp angle, by considering the right triangle  $\Delta OAB$,  where $A$ is the end point of $\mathbf{\hat{v}}$,  $B$  the end point of $\mathbf{w}$ we see that on the one hand
+In the case of a sharp angle, by considering the right triangle  $\Delta OAB$,  where $A$ is the end point of $\mathbf{\hat{w}}$,  $B$  the end point of $\mathbf{w}$ we see that on the one hand
 
 $$
 
@@ -1186,6 +1186,16 @@ $$
 $$
 
 ::::
+
+
+::::{prf:observation}
+:label: Rem:InnerProduct:Interpretation|w|cos(theta)
+
+Note that the absolute value of $\norm{\mathbf{w}}\norm{\mathbf{v}}\cos(\varphi)$
+is the length of the orthogonal projection of $\vect{w}$  onto $\vect{v}$.
+
+::::
+
 
 :::{exercise}
 :label: Ex:InnerProduct:AnglesInMethaneMolecule
