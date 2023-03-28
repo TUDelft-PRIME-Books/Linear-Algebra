@@ -645,12 +645,15 @@ $$
 Images under transformations with negative and positive determinant.
 :::
 
-[to team visuals:  please turn into (a) moving picture(s)]
-
-
 ::::
 
+::::{margin} 
+:::{admonition} TODO
 
+to team visuals:  please turn into (a) moving picture(s)
+
+:::
+::::
 
 
 ## Determinant and cross product
