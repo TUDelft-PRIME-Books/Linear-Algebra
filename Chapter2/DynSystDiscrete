@@ -1,0 +1,85 @@
+(Sec:DynSystDiscrete)=
+# Discrete Dynamical Systems
+
+## Introduction
+
+Lesley Matrices  and  Markov Matrices
+
+## The case where $A$ is diagonalizable
+
+If the matrix $A$ is diagonalizable the behaviour of the dynamical system can be made completely transparent.
+
+::::{prf:prop}
+:label: Prop:DynSystDiscrete:DiagCase
+
+Suppose  $A$ is an $n\times n$ diagonalizable matrix.
+Let $(\vect{v}_1, \ldots, \vect{v}_n)$ be a basis of eigenvectors, and let 
+$\lambda_1, \ldots, \lambda_n$ be the corresponding eigenvalues.
+
+Then the behaviour of the dynamical system 
+
+$$
+  \vect{x}_{0} = \vect{s}, \quad, \vect{x}_{k+1} = A\vect{x}_k,  k = 0,1,2,\ldots
+$$
+
+is as follows.
+
+
+If    
+
+:::{math}
+:label: Eq:DynSystDiscrete:InitCoords
+$$
+ \vect{s} =  c_1\vect{v}_1 + c_2\vecy{v}_2 +  \ldots + c_n\vect{v}_n,
+$$
+
+then
+
+$$
+ \vect{x}_k =  c_1\lambda_1^k\vect{v}_1 + c_2\lambda_2^k\vecy{v}_2 +  \ldots + c_n\lambda_n^k\vect{v}_n.
+$$
+
+::::
+
+The coordinates  $c_1,c_2,\ldots,c_n$  in {eq}`Eq:DynSystDiscrete:InitCoords` are uniquely determined, since $(\vect{v}_1, \ldots, \vect{v}_n)$ is a basis.
+
+
+::::{prf:proof}
+
+There is nothing much to prove.
+
+The vectors $\vect{v}_i$  being eigenvectors for the corresponding $\lambda_i$ means that
+
+$$
+  A\vect{v}_i = \lambda_i\vect{v}_i.
+$$
+
+Thus
+
+$$
+  A^2\vect{v}_i = A(A\vect{v}_i) = A(\lambda_i\vect{v}_i) = \lambda_iA\vect{v}_i 
+  =  \lambda_i^2\vect{v}_i,
+$$
+
+and in general
+
+$$
+    A^k\vect{v}_i  =  \lambda_i^k\vect{v}_i, \quad  k = 1,2,\ldots
+$$
+
+By properties of the matrix product it readily follows that
+
+$$
+   \begin{array}{rcl}
+     A^k\vect{s} &=& A^{k}(c_1\vect{v}_1 + \ldots + c_n\vect{v}_n)  \\
+     & = & c_1A^{k}\vect{v}_1 + \ldots + c_nA^{k}\vect{v}_n \\
+     & = & c_1\lambda_1^{k}\vect{v}_1 + \ldots + c_n\lambda_n^{k}\vect{v}_n
+$$
+
+
+::::
+
+## The matrix $A$ has a complex eigenvalue
+
+
+

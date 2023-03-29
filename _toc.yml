@@ -33,6 +33,9 @@ chapters:
   - file: 'Chapter5/intro.md'
     sections:
       - file: "Chapter5/DeterminantsGeometric.md"
+      - file: "Chapter5/DeterminantsViaCofactors.md"
+      - file: "Chapter5/DeterminantsViaRowReduction.md"
+      - file: "Chapter5/DeterminantsExtras.md"
   - file: 'Chapter6/intro.md'
     sections:
       - file: "Chapter6/EigenvaluesEigenvectors.md"
@@ -44,6 +47,10 @@ chapters:
     sections:
       - file: 'Chapter7/Orthogonality.md'
       - file: 'Chapter7/GramSchmidt.md'
+      - file: 'Chapter7/LeastSquares.md'
+  - file: 'Chapter8/intro.md'
+    sections:
+      - file: 'Chapter8/DynSystDiscrete.md'
   - file : 'Appendices/intro.md'
     sections:
       - file: "Appendices/ComplexNumbers.md"

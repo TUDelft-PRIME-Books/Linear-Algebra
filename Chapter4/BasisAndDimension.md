@@ -375,7 +375,7 @@ $$
 
 and the two chosen columns give a possible basis   (see {numref}`Figure %s <Fig:BasisDim:BasisColA>`).
 
-This would also be the basis we get when we apply the thinning process of Proposition {prf:ref}`Prop:BasisDim:Thinning`: to find a basis for the column space we then start with the set of four columns and from left to right delete columns that are linear combinations of their predecessors.  We have
+This would also be the basis we get when we apply the thinning process of {prf:ref}`Prop:BasisDim:Thinning`: to find a basis for the column space we then start with the set of four columns and from left to right delete columns that are linear combinations of their predecessors.  We have
 
 $$
 \vect{a_2}  = -3\vect{a_1} \quad \text{and} \quad \vect{a_4} \in \Span{\vect{a_1}, \vect{a_3}},
@@ -938,6 +938,14 @@ Every basis of a fixed subspace $S$ in $\R^n$  has the same number of elements.
 
 
 
+::::{margin}
+
+:::{admonition} {prf:ref}`Thm:LinInd:TooManyVectsimpliesLinDep`. 
+
+Let $\vect{u}_{1},...,\vect{u}_{k}$ and $\vect{v}_{1},...,\vect{v}_{\ell}$ be vectors in $\R^{n}$. 
+If $ k< \ell$ and $\Span{\vect{u}_{1},...,\vect{u}_{k}}$ contains $\Span{\vect{v}_{1},...,\vect{v}_{\ell}}$ then the set $\left\lbrace\vect{v}_{1},...,\vect{v}_{\ell}\right\rbrace$ is linearly dependent.
+
+::::
 
 
 ::::::{prf:proof}
@@ -945,12 +953,7 @@ Every basis of a fixed subspace $S$ in $\R^n$  has the same number of elements.
 
 
 The proof is an immediate consequence of {prf:ref}`Thm:LinInd:TooManyVectsimpliesLinDep`
-from the section on linear independence.  Because of its  vital important we restate it here.
-
-
-{prf:ref}`Thm:LinInd:TooManyVectsimpliesLinDep`. Let 
-$\vect{u}_{1},...,\vect{u}_{k}$ and $\vect{v}_{1},...,\vect{v}_{\ell}$ be vectors in $\R^{n}$. 
-If $ k< \ell$ and $\Span{\vect{u}_{1},...,\vect{u}_{k}}$ contains $\Span{\vect{v}_{1},...,\vect{v}_{\ell}}$ then the set $\left\lbrace\vect{v}_{1},...,\vect{v}_{\ell}\right\rbrace$ is linearly dependent.
+from the section on linear independence.  Because of its  vital important we restate it here (check the side note).
 
 
 We can use this as follows.
@@ -1135,7 +1138,7 @@ The **dimension** of a subspace $S$ is the number of elements in a
 
 ::::::
 
-Because of Theorem {prf:ref}`Thm:Subspaces:EqualDim` this is a good definition.
+Because of {prf:ref}`Thm:Subspaces:EqualDim` this is a good definition.
 
 
 ::::::{prf:example}
@@ -1295,7 +1298,7 @@ The remaining part we leave to the reader.
 :label: Exc:BasisDim:ProofOf2OutOf3
 
 
-In Proposition {prf:ref}`Prop:BasisDim:TwoOfThreeSuffice`  prove
+In {prf:ref}`Prop:BasisDim:TwoOfThreeSuffice`  prove
 
 $$
 \text{(ii)   and   (iii)}    \Rightarrow      \text{(i)}.
@@ -1307,7 +1310,7 @@ $$
 
 ::::::{prf:remark}
 
-Take another look at Example {prf:ref}`Ex:PlaneWithBases`.  We constructed a basis for the plane $\mathcal P$ given by the equation
+Take another look at {prf:ref}`Ex:PlaneWithBases`.  We constructed a basis for the plane $\mathcal P$ given by the equation
 
 $$
 2x_1 + x_2 - 6x_3 = 0.
@@ -1319,7 +1322,7 @@ $$
 \text{dim}{\mathcal P} = 2.
 $$
 
-From the Proposition {prf:ref}`Prop:BasisDim:TwoOfThreeSuffice` it follows that  **any** set of two linearly independent vectors in $\mathcal{P}$ is a basis for $\mathcal{P}$.
+From the {prf:ref}`Prop:BasisDim:TwoOfThreeSuffice` it follows that  **any** set of two linearly independent vectors in $\mathcal{P}$ is a basis for $\mathcal{P}$.
 
 ::::::
 

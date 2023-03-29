@@ -323,11 +323,11 @@ $$
 The Gram-Schmidt process leads to the following interesting decomposition of an $n \times m$ matrix $A$ with linearly independent columns.
 
 
-::::{prf:theorem}
+::::{prf:theorem}  QR decomposition
 :label: Thm:GramSchmidt:QR-decomp    
 
 Suppose $A$ is an $n \times m$ matrix of rank $m$.
-Then 
+Then $A$ can be written as
 
 $$
 

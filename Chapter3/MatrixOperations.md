@@ -224,8 +224,8 @@ The two definitions of sum and scalar multiple are called **componentwise** defi
 ::::::{prf:proposition}
 Suppose $A, B$ and $C$  are $m\times n$ matrices and let $c_{1},c_{2}$ be  two real numbers.
 Then we have:
-\begin{multicols}{2}
-	<ul>
+
+<ul>
 <li>
 
 $A+O_{mn}=A=O_{mn}+A$
@@ -269,7 +269,7 @@ $c_{1}(c_{2}A)=(c_{1}c_{2})A$.
 </li>
 </ul>
 
-\end{multicols}
+
 
 
 ::::::
@@ -285,7 +285,7 @@ An operator of which the usefulness is not immediately clear, but which fits wel
 ::::::{prf:definition}
 The **transpose** of an $m \times n$ matrix $A$  with entries $a_{ij}$ is the
 $n \times m$ matrix $B$ with entries $b_{ij}$  defined by 
-$  b_{ij} = a_{ji}$.  It is denoted by $B = A^T$.
+$  b_{ij} = a_{ji}$. &nbsp; It is denoted by $B = A^T$.
 
 
 ::::::
@@ -324,13 +324,16 @@ The following rules involving the three operators defined so far in this section
 
 
 Let $A$ and $B$ be $m\times n$ matrices and $c$ a scalar. Then we have
+
 <ul>
-<li>
+
+<li>  
 
 $(cA)^T = c A^T$
 
 </li>
-<li>
+
+<li> 
 
 $(A+B)^T = A^T  + B^T$
 
@@ -338,7 +341,6 @@ $(A+B)^T = A^T  + B^T$
 <li>
 
 $(A^T)^T = A$.
-
 
 </li>
 </ul>
@@ -488,7 +490,8 @@ Prove statements (i) and (iii) of {prf:ref}`Prop:MatrixOps:Transpose`.
 
 
 ::::::{prf:example}
-Find $X$ if  $A + 2X^T + B = C$, where
+
+We will solve  the equation $A + 2X^T + B = C$ for $X$, where
 
 $$
 
@@ -505,7 +508,7 @@ We will extricate $X$  step by step:
 
 $$
 
-  A + 2X^T + B = C \quad \iff \quad 2X^T = C-A-B \quad \iff \quad X^T = \tfrac12(C-A-B).  
+  A + 2X^T + B = C \,\, \iff \,\,2X^T = C-A-B \,\, \iff \,\, X^T = \tfrac12(C-A-B).  
 \nonumber
 
 $$
@@ -595,7 +598,7 @@ $$
 
   \begin{bmatrix} 1 & -3 \\ -1 & 2 \\ 3& -2 \end{bmatrix} \begin{bmatrix} 1\\  2 \end{bmatrix} 
   = 1\begin{bmatrix} 1  \\ -1  \\ 3\end{bmatrix} +
-  2\begin{bmatrix}  -3 \\ 2 \\  -2 \end{bmatrix} \,\,=\, \begin{bmatrix} -5  \\ 3  \\ -1\end{bmatrix}
+  2\begin{bmatrix}  -3 \\ 2 \\  -2 \end{bmatrix} \,\,=\, \begin{bmatrix} -5  \\ 3  \\ -1\end{bmatrix}.
 
 $$
 
@@ -772,7 +775,7 @@ $$
 
 
 
-This example  illustrates the existence of a `unit element' with respect to the multiplication. To identify it we first introduce some more terminology.
+This example  illustrates the existence of a *unit element*  with respect to the multiplication. To identify it we first introduce some more terminology.
 
 
 
@@ -792,7 +795,7 @@ A square matrix where all non-diagonal elements are equal to 0 is called a **dia
 
 
 ::::::{prf:remark}
-The other diagonal of a square matrix, the one from bottom left to top right, plays a minor role. For this reason we don't reserve a name for it.  By  `diagonal'  we will always mean: main diagonal.
+The other diagonal of a square matrix, the one from bottom left to top right, plays a minor role. For this reason we don't reserve a name for it.  By  'diagonal'  we will always mean: main diagonal.
 
 
 ::::::
@@ -904,7 +907,6 @@ The **identity matrix**  $I_n$  is the $n \times n$ diagonal matrix with 1's on 
 ::::::{exercise}
 :label: Exc:MatrixOps:I4timesA
 
-
 Let  
 
 $$
@@ -915,7 +917,7 @@ $$
                             0 & 0 & 0 & 1
             \end{bmatrix}
             \quad \text{and} \quad
-   A = \begin{bmatrix} a_{11}& a_{12} & a_{13} \\  a_{21}& a_{22} & a_{23} \\ a_{31}& a_{32} & a_{33} \\ a_{41} & a_{42} & a_{43}   \end{bmatrix}          
+   A = \begin{bmatrix} a_{11}& a_{12} & a_{13} \\  a_{21}& a_{22} & a_{23} \\ a_{31}& a_{32} & a_{33} \\ a_{41} & a_{42} & a_{43}   \end{bmatrix}.          
 \nonumber
 
 $$
@@ -1172,10 +1174,10 @@ Now let us  have a look which of the rules of the products of numbers also hold 
 
 For all $m \times n$ matrices $A,A_1,A_2$, all  $n \times p$ matrices $B,B_1,B_2$,
 all $p \times q$ matrices $C$ and all real numbers $c$ the following are true:
-<ul>
+<ol type = "i">
 <li>
 
-$A(B_1+B_2) = AB_1 + AB_2$\, and \,$(A_1+A_2)B = A_1B+A_2B$;
+$A(B_1+B_2) = AB_1 + AB_2$ and $(A_1+A_2)B = A_1B+A_2B$;
 		
 
 </li>
@@ -1187,7 +1189,7 @@ $A(cB) = c(AB) = (cA)B$;
 </li>
 <li>
 
-$AI_n = A$ and $I_mA = A$\quad(the identity matrix $I$ acts as a **unit element**);
+$AI_n = A$ and $I_mA = A$ (the identity matrix $I$ acts as a **unit element**);
 		
 
 </li>
@@ -1197,7 +1199,7 @@ $A(BC) = (AB)C$.
 	
 
 </li>
-</ul>
+</ol>
 
 
 
@@ -1210,7 +1212,7 @@ $A(BC) = (AB)C$.
 
 
 ::::::{prf:example}
-As an illustration of rule (iv): we compute the two triple products for the three matrices
+As an illustration of rule iv. we compute the two triple products for the three matrices
 
 $$
 
@@ -1266,7 +1268,7 @@ $$
 
 $$
 
-So the products are indeed equal. But it is not immediately clear how:  the value 14 on position (2,2) comes about in two ways
+So the products are indeed equal. But it is not immediately clear how. For instance,  the value 14 on position (2,2) comes about in two ways
 
 $$
 
@@ -1283,18 +1285,16 @@ We need a good perspective to give a proof of the general case.
 
 
 
-
-
 ::::::{prf:proof}
  (of {prf:ref}`Prop:MatrixOps:ProdProperties`)  
-Rules (i), (ii)  are  checked in a straightforward way.  See {numref}`Exc:MatrixOps:RulesProduct`.
-<ul>
-<li>
+Rules i. and ii.  are  checked in a straightforward way.  See {numref}`Exc:MatrixOps:RulesProduct`.
+<ol type = "i"  start = "3">
 
-iii.
+<li> 
 We saw instances of this property already in {prf:ref}`Ex:MatrixOps:AtimesI`  and {numref}`Exc:MatrixOps:I4timesA`. 
 For the general case,  one way to show validity of the first statement is to  note that the $j$-th column of $AI_n$ is $A\mathbf{e_j}$ where $\mathbf{e_j}$ is the $j$-th column of the identity matrix $I_n$.
 This gives the linear combination 
+<BR>
 
 $$
 
@@ -1308,11 +1308,10 @@ The identity   $\quad I_mA = A\quad$  is shown in an analogous way, working row 
 
 
 </li>
-<li>
 
-iv.
+<li>
 First we observe that both triple products yield $m \times q$ matrices.
-Then the identity can be proved  column by column', as the previous one. 
+Then the identity can be proved  'column by column', as the previous one. 
 
 We are done if we can show that  
 
@@ -1322,11 +1321,12 @@ $$
  k\text{-th column of  }A(BC) &=&  k\text{-th column of  }(AB)C \\
                                &=&  (AB)( k\text{-th column of  }C) = (AB)\mathbf{c}_k,
  \end{array}
-\nonumber
-
 $$
+
 for $ k = 1,2,\ldots q $. '$\quad$
 Now recall that (by definition) 
+
+<BR>
 
 $$
  
@@ -1334,6 +1334,7 @@ $$
 \nonumber
 
 $$
+
 so
 
 $$
@@ -1343,6 +1344,8 @@ $$
 
 $$
 Making extensive use of the  rule
+
+<BR>
 
 $$
 
@@ -1366,7 +1369,7 @@ $$
 $$
 
 </li>
-</ul>
+</ol>
 
 
 
@@ -1381,8 +1384,9 @@ $$
 :label: Exc:MatrixOps:RulesProduct
 
 
-Prove rules (i) and  (ii).
-Recall: matrices are equal when they have the same size and the entries
+Prove rules i.  and  ii. of {prf:ref}`Prop:MatrixOps:ProdProperties`.
+
+Recall that matrices are equal when they have the same size and the entries
 on corresponding positions are equal (which may be checked column by column or row by row).
 
 
@@ -1397,13 +1401,12 @@ on corresponding positions are equal (which may be checked column by column or r
 :label: Rem:MatrixOps:ProdTransformation
 
 
-The proof of (iv) can be seen in another light. In {ref}`Sec:LinTrafo` we saw that an $m\times n$ matrix $A$ defines a transformation $T$ from  $\mathbb{R}^n$ to
+The proof of {prf:ref}`Prop:MatrixOps:ProdProperties` iv.  can be seen in another light. In {ref}`Sec:LinTrafo` we saw that an $m\times n$ matrix $A$ defines a transformation $T$ from  $\mathbb{R}^n$ to
 $\mathbb{R}^m$,  namely
 
 $$
 
   \text{for  } \mathbf{x} \in \mathbb{R}^n: \quad \mathbf{x} \mapsto T(\mathbf{x}) = A\mathbf{x}.
-\nonumber
 
 $$
   
@@ -1518,9 +1521,12 @@ and the corresponding linear transformations
 
 $$
  
-   T_A: \mathbb{R}^2 \to \mathbb{R}^2, \quad \mathbf{x} \mapsto T_A(\mathbf{x}) = A \mathbf{x}, 
-   \quad T_B: \mathbb{R}^2 \to \mathbb{R}^2, \quad \mathbf{x} \mapsto T_B(\mathbf{x}) = B \mathbf{x}.  
-\nonumber
+   T_A: \mathbb{R}^2 \to \mathbb{R}^2, \quad \mathbf{x} \mapsto T_A(\mathbf{x}) = A \mathbf{x} 
+$$
+
+and
+
+$$T_B: \mathbb{R}^2 \to \mathbb{R}^2, \quad \mathbf{x} \mapsto T_B(\mathbf{x}) = B \mathbf{x}.  
 
 $$
 
@@ -1530,8 +1536,6 @@ $$
 
    \mathbf{x} = \begin{bmatrix} x_1\\ x_2  \end{bmatrix} \quad \mapsto \quad A\mathbf{x} = \begin{bmatrix} 2 & 0 \\ 0 & 1  \end{bmatrix} \begin{bmatrix} x_1\\ x_2  \end{bmatrix}  \,\, = \,\,
    \begin{bmatrix} 2x_1\\ x_2  \end{bmatrix} 
-\nonumber
-
 $$
 
 and likewise 
@@ -1571,16 +1575,14 @@ Note that  $T_A$ is a transformation that 'stretches' horizontally, and $T_B$ is
 ::::::{exercise}
 :label: Exc:MatrixOps:NonCommutativeRowOps
 
- Another way to understand why $AB\neq BA$: 
+ Another way to understand why $AB\neq BA$ is the following.
 
 Recall that the matrices  
  
 $$
 
    E_1 =  \begin{bmatrix} 1 & 0 \\ 2 & 1  \end{bmatrix} \quad \text{and} \quad
-   E_2 =  \begin{bmatrix} 3 & 0 \\ 0 & 1  \end{bmatrix} 
-\nonumber
- 
+   E_2 =  \begin{bmatrix} 3 & 0 \\ 0 & 1  \end{bmatrix}  
 $$
 
  perform row operations, when multiplied with a $2 \times n$ matrix $A$.
@@ -1616,13 +1618,13 @@ $$
 The second major difference between the product of numbers and the product of matrices:  for two (e.g. real) numbers $a$  and $b$ it is known that
 
 $$
-  \text{if} \quad a \neq 0 \text{and}  \quad b \neq 0 \text{then}  \quad ab \neq 0,
+  \text{if} \quad a \neq 0 \quad  \text{and}  \quad b \neq 0\quad  \text{then}  \quad ab \neq 0,
 $$
 
 or, equivalently,
 
 $$
-  ab = 0  \quad \Rightarrow   \quad a = 0 \text{  or  } b = 0.
+  ab = 0  \quad \Rightarrow   \quad a = 0 \,\,\text{  or  } \,\,b = 0.
 $$
 
 As the following example shows, things are different in the realm of matrices.
@@ -1643,7 +1645,7 @@ So the product of two nonzero matrices may be the zero matrix.
 
 
 
-The following example shows that things are even `worse':
+The following example shows that things are even 'worse':
 
 
 ::::::{prf:example}
@@ -1653,8 +1655,6 @@ $$
   \begin{bmatrix} 1 & -3 & 2 \\ 1 & -3 & 2 \\ 1 & -3 & 2  \end{bmatrix}
   \begin{bmatrix}1 & -3 & 2 \\ 1 & -3 & 2 \\ 1 & -3 & 2  \end{bmatrix} =
   \begin{bmatrix} 0 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix},
-\nonumber
-
 $$
 
 which shows that we cannot even conclude from  $A\cdot A = O$  that  $A$ itself must be the zero matrix. 
@@ -1662,7 +1662,58 @@ which shows that we cannot even conclude from  $A\cdot A = O$  that  $A$ itself 
 
 ::::::
 
+And here is another example of a nonzero matrix whose square is the zero matrix.  In this case it can be seen geometrically what is going on.
 
+::::::{prf:example}
+
+
+For the matrix  $A = \begin{bmatrix} 0 & 1 \\ 0 & 0  \end{bmatrix}$  we again have that
+
+$$
+  A^2 = \begin{bmatrix} 0 & 1 \\ 0 & 0  \end{bmatrix}^2 = \begin{bmatrix} 0 & 0 \\ 0 & 0  \end{bmatrix}.
+$$
+
+It holds that
+
+$$
+  A = A_2A_1  = \begin{bmatrix} 0 & 0 \\ 0 & 1  \end{bmatrix}\begin{bmatrix} 0 & 1 \\ -1 & 0  \end{bmatrix} 
+$$
+
+Now consider the transformations  corresponding to these matrices.
+
+$$ 
+T_1(\vect{x}) = A_1\vect{x} = \begin{bmatrix} 0 & 0 \\ 0 & 1  \end{bmatrix}\begin{bmatrix} x_1 \\ x_2  \end{bmatrix} = \begin{bmatrix} 0\\ x_2 \end{bmatrix}
+$$
+
+is the projection onto the $x_2$-axis, and
+
+$$ 
+T_2(\vect{x}) = A_2\vect{x} = \begin{bmatrix} 0 & 1 \\ -1 & 0 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2  \end{bmatrix} = \begin{bmatrix} x_2\\ -x_1 \end{bmatrix}
+$$
+
+is the clockwise rotation about an angle $\frac12\pi$.
+
+Now let us  step by step what is the effect of the transformation  $T_2T_1T_2T_1$, corresponding to $A^2$.
+
+An arbitrary vector $\vect{x}$ is sent to a vector $T_1(\vect{x})$ on the $x_2$ axis by $T_1$.
+
+The rotation sends this to a vector $T_2(T_1(\vect{x}))$ on the $x_1$-axis.  Projecting onto the $x_2$-axis again,  will bring this to   $T_1(T_2(T_1(\vect{x}))) = \vect{0}$.  
+Lastly,  applying $T_2$ leaves the zero vector where it is.
+
+So  $A^2\vect{x} = T_2(T_1(T_2(T_1(\vect{x})))) = \vect{0}$, for each vector $\vect{x}$.
+
+See {numref}`Figure %s <Fig:MatrixOps:NilPotent>`.
+
+:::::{figure} Images/Fig-MatrixOps-Nilpotent.svg
+:name: Fig:MatrixOps:Nilpotent
+
+Visualisation of  $\vect{x} \mapsto A^2\vect{x}$.
+:::::
+
+
+
+
+::::::
 
 
 
@@ -1715,8 +1766,9 @@ In fact, all statements can be related to one of the first two.
 
 For each statement counterexamples can be given, as we already did for the first two.
 To get more insight in what is really going on, we can also 
-try to find out how the third till the sixth statement relate to the first two statements.\\
-For instance,  the third statement is closely related to the first. Let us check where `things go wrong'.
+try to find out how the third till the sixth statement relate to the first two statements.
+
+For instance,  the third statement is closely related to the first. Let us check where 'things go wrong'.
 
 
 $$
@@ -1725,8 +1777,6 @@ $$
       (A+B)(A+B)& = A(A+B) +B(A+B)\\
                 & = A^2 + AB + BA + B^2 
   \end{array}
-\nonumber
-
 $$
 
 The last expression is equal to
@@ -1734,8 +1784,6 @@ The last expression is equal to
 $$
 
  A^2 + 2AB + B^2
-\nonumber
-
 $$
 
 if and only if
@@ -1743,8 +1791,6 @@ if and only if
 $$
 
  AB + BA = 2AB \quad \iff \quad BA = AB.
-\nonumber
-
 $$
 
 So any pair of two matrices  $A$ and $B$ with
@@ -1752,8 +1798,6 @@ So any pair of two matrices  $A$ and $B$ with
 $$
 
   AB \neq BA
-\nonumber
-
 $$
 
 provides a counterexample where
@@ -1761,28 +1805,23 @@ provides a counterexample where
 $$
 
   (A+B)(A+B) \neq A^2 + 2AB + B^2.
-\nonumber
-
 $$
 
 
 
-Likewise,  (v) follows from (ii): 
+Likewise,  v. follows from ii. Namely, 
 
 $$
 
   AB = AC \iff AB - AC = O \iff A(B-C) = O.
-\nonumber
-
 $$
 
-According to (ii) from the last equation we **cannot** deduce 
+According to ii. from the last equation we **cannot** deduce 
 that
 
 $$
 
  \text{either  } A = O \quad \text{or}\quad B-C = O.
-\nonumber
 
 $$
 
@@ -1792,8 +1831,6 @@ We can create a counterexample by taking for
 $$
  
   AB = O,
-\nonumber
-
 $$
 
 and we let  $C$ be the zero matrix.
@@ -1802,17 +1839,13 @@ Then  $B \neq C$, whereas
 $$
 
   AB = AC =  O \quad  \text{and (by assumption)} \quad A \neq O.
-\nonumber
-
 $$
 
-Statement  (vi)  also relates to (ii):
+Statement  vi. also relates to ii. Namely,
 
 $$
 
   A^2 = I \quad \iff \quad A^2 - I = (A+I)(A-I) = O
-\nonumber
-
 $$
 
 from which we cannot conclude that one of the factors 
@@ -1830,7 +1863,7 @@ $(A+I)$  or $(A-I)$  must be the zero matrix.  In this case we do not get a coun
 :label: Exc:MatrixOps:CounterExamples
 
 
-<ul>
+<ol type = "i"> 
 <li>
 
 Give a $2 \times 2$ matrix $A \neq \pm\, I$ for which $A^2 = I$.
@@ -1850,7 +1883,7 @@ Give a $2 \times 2$ matrix $B$ for which $B^2 = -I$.
 	
 
 </li>
-</ul>
+</ol>
 
 
 

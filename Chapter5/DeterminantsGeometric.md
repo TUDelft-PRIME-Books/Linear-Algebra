@@ -28,7 +28,7 @@ $$
 
 we might end up with an expression containing all the entries  $a_{ij}$ that tells us whether  $A$ is invertible or not.
 In this section we will use a geometric approach to derive such an expression, and will again call this the determinant of the matrix $A$. Its formula, when looked at from the right perspective, shows an opportunity to  generalize the concept to higher dimensions.
-We will follow that route in the second section  ``. . . . . "
+We will follow that route in {numref}`Section %s <Sec:DeterminantsViaCofactors>`.
 
 We will start by introducing determinants as a way to compute areas (in the plane) and volumes (in the space $\R^3$).
 
@@ -101,8 +101,8 @@ Now what about the sign here?
 
 ::::::{prf:proposition}
 
-$ad - bc = \norm{\vect{u}}\norm{\vect{v}}\sin(\varphi)$,  where $\varphi$ is the  angle from  $\vect{u}$ counterclockwise to $\vect{v}$.
-(We will call this the ** directed angle** from  $\vect{u}$  to $\vect{v}$.)
+$ad - bc = \norm{\vect{u}}\norm{\vect{v}}\sin(\varphi)$,  where $\varphi$ is the  angle from  $\vect{u}$ counterclockwise to $\vect{v}$. 
+We will call this the **directed angle** from  $\vect{u}$  to $\vect{v}$.
 
 ::::::
 
@@ -175,13 +175,13 @@ $ and $\vect{v}=\left[\begin{array}{c} c \\ d \end{array}\right]
 $ in $\R^2$  is defined as
 
 $$
-\det{\vect{u},\vect{v}} = ad - bc.
+\det{(\vect{u},\vect{v})} = ad - bc.
 $$
 
 Alternatively, the determinant can be seen as an operator working on $2 \times 2$ matrices, coming with its own notation:
 
 $$
-\det{[ \vect{u}  \vect{v} ]}  = \det{\left[\begin{array}{cc} a & c \\ b & d \end{array}\right]}  =
+\det{\big([\, \vect{u} \,\, \vect{v}\, ]\big)}  = \det{\left(\left[\begin{array}{cc} a & c \\ b & d \end{array}\right]\right)}  =
 \left|\begin{array}{cc} a & c \\ b & d \end{array}\right|= ad-bc.
 $$
 
@@ -199,8 +199,8 @@ In fact, we can use the determinant to define the orientation of two vectors in 
 :label: Dfn:DetGeometric:Orientation2
 
 The ordered set  $(\vect{u},\vect{v})$  of two linearly independent vectors $\vect{u}$ and $\vect{v}$ is said to be **positively oriented**
-if  $\det{\vect{u},\vect{v}} > 0$, and **negatively oriented**
-if det($\vect{u},\vect{v}) < 0$.
+if  $\det{(\vect{u},\vect{v})} > 0$, and **negatively oriented**
+if $\det{(\vect{u},\vect{v})} < 0$.
 
 ::::::
 
@@ -214,22 +214,22 @@ Two by two determinants obey the following rules:
 <ol type = "i">
 <li>
 
-$\det{\vect{v},\vect{u}}  = - \det{\vect{u},\vect{v}}$.
+$\det{(\vect{v},\vect{u})}  = - \det{(\vect{u},\vect{v})}$.
 
 </li>
 <li>
 
-$\det{\vect{u},\vect{v}+\vect{w}} = \det{\vect{u},\vect{v}} + \det{\vect{u},\vect{w}}$.
+$\det{(\vect{u},\vect{v}+\vect{w})} = \det{(\vect{u},\vect{v})} + \det{(\vect{u},\vect{w})}$.
 
 </li>
 <li>
 
-$\det{\vect{u},k\vect{v}} = k \det{\vect{u},\vect{v}}$, $k \in \R$.
+$\det{(\vect{u},k\vect{v})} = k \det{(\vect{u},\vect{v})}$, $k \in \R$.
 
 </li>
 <li>
 
-$\det{\vect{e_1},\vect{e_2}} = 1$.
+$\det{(\vect{e_1},\vect{e_2})} = 1$.
 
 </li>
 </ol>
@@ -300,12 +300,12 @@ Three of the four properties are rather obvious:
 </li>
 <li>
 
-$\det{\vect{e_1},\vect{e_2}} $  is the area of the unit square.
+$\det{(\vect{e_1},\vect{e_2})} $  is the area of the unit square.
 
 </li>
 <li>
 
-$\det{\vect{u},k\vect{v}} = k\times\det{\vect{u},\vect{v}}$, $k \in \R$.
+$\det{(\vect{u},k\vect{v})} = k\times\det{(\vect{u},\vect{v})}$, $k \in \R$.
 
 Giving one of the vectors a factor $k$ changes the area with a factor  $|k|$.  If $k > 0$, the orientation of the two vector does not change, so the determinant gets a factor $|k|$ which in this case is equal to $k$.  If however $k < 0$, then the orientation does change, so  the determinant gets a factor $-|k|$, which in this case is again equal to $k$.
 
@@ -317,7 +317,7 @@ The remaining property,
 <ol type = "i">
 <li>
 
-$\det{\vect{u},\vect{v}+\vect{w}} = \det{\vect{u},\vect{v}} + \det{\vect{u},\vect{w}}$,
+$\det{(\vect{u},\vect{v}+\vect{w})} = \det{(\vect{u},\vect{v})} + \det{(\vect{u},\vect{w})}$,
 
 </li>
 </ol>
@@ -338,9 +338,9 @@ So there
 
 $$
 \begin{array}{lcl}
-\det{\vect{u},\vect{v}} + \det{\vect{u},\vect{w}} &=&
+\det{(\vect{u},\vect{v})} + \det{(\vect{u},\vect{w})} &=&
 \text{area}(OABC) + \text{area}(CBDE) \\
-&=& \text{area}(OADE) = \det{\vect{u},\vect{v}+\vect{w}},
+&=& \text{area}(OADE) = \det{(\vect{u},\vect{v}+\vect{w})},
 \end{array}
 $$
 
@@ -351,10 +351,10 @@ So there
 
 $$
 \begin{array}{lcl}
-\det{\vect{u},\vect{v}} + \det{\vect{u},\vect{w}} &=&
+\det{(\vect{u},\vect{v})} + \det{(\vect{u},\vect{w})} &=&
 \text{area}(OAFC) - \text{area}(OBDA) \\
 &=& \text{area}(OAFC) - \text{area}(CGEF) \\
-&=& \text{area}(OAEG) = \det{\vect{u},\vect{v}+\vect{w}}
+&=& \text{area}(OAEG) = \det{(\vect{u},\vect{v}+\vect{w})}
 \end{array}
 $$
 
@@ -450,7 +450,7 @@ The last proposition sets the way to take the determinant one dimension higher.
 The **determinant** of the ordered set of three vectors $\vect{a}, \vect{b}$ and $ \vect{c}$ in $\R^3$ is defined by the expression
 
 $$
-\det{\vect{a}, \vect{b},\vect{c}} = \vect{a}\ip(\vect{b} \times  \vect{c}).
+\det{(\vect{a}, \vect{b},\vect{c})} = \vect{a}\ip(\vect{b} \times  \vect{c}).
 $$
 
 Note that the determinant is a real number.
@@ -460,10 +460,10 @@ Alternatively, we can define the determinant as a function working on $3 \times 
 If we put
 
 $$
-A = [ \vect{a}\quad \vect{b}\quad\vect{c} ] = \left[\begin{array}{ccc} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2\\ a_3 & b_3 & c_3 \end{array} \right] ,
+A = [ \,\vect{a}\,\,\vect{b}\,\,\vect{c}\,] = \left[\begin{array}{ccc} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2\\ a_3 & b_3 & c_3 \end{array} \right] ,
 $$
 
-then
+then we define
 
 $$
 \det{A} = \left|\begin{array}{ccc} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2\\ a_3 & b_3 & c_3 \end{array} \right|= \vect{a}\ip(\vect{b} \times  \vect{c}).
@@ -532,7 +532,7 @@ The next proposition summarizes  the relevant properties of $3 \times 3$ determi
 For the determinant
 
 $$
-D = \det{A} = \det{\left[\vect{a}\quad \vect{b}\quad\vect{c} \right]
+D = \det{A} = \det{\left[\,\vect{a}\,\, \vect{b}\,\,\vect{c}\, \right]
 } = \left|\begin{array}{ccc} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2\\ a_3 & b_3 & c_3 \end{array} \right|
 $$
 
@@ -546,7 +546,8 @@ $|D|$, i.e.  the absolute value of the determinant,  is equal to the volume of t
 <li>
 
 :::{latextable}
-\begin{tabular}[t]{lcl} $D=0 $ & $\iff $&   the matrix  $A$  is singular  \\
+
+\begin{tabular}{lcl} $D=0 $ & $\iff $&   the matrix  $A$  is singular  \\
 & $\iff $&  the vectors  $\{\vect{a}, \vect{b},\vect{c}\}$   are linearly dependent.
 \end{tabular}
 :::
@@ -554,7 +555,8 @@ $|D|$, i.e.  the absolute value of the determinant,  is equal to the volume of t
 Equivalently:
 
 :::{latextable}
-\begin{tabular}[t]{lcl} $D\neq 0 $ & $\iff $&   the matrix  $A$  is invertible  \\
+
+\begin{tabular}{lcl} $D\neq 0 $ & $\iff $&   the matrix  $A$  is invertible  \\
 & $\iff $&  the vectors  $\{\vect{a}, \vect{b},\vect{c}\}$   are linearly independent.
 \end{tabular}
 :::

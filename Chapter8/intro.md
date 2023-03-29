@@ -1,4 +1,4 @@
-# Subspaces
+# Dynamical Systems
 
 :::{tableofcontents}
 :::

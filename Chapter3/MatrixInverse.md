@@ -4,7 +4,7 @@
 ## Introduction
 
 
-In {ref}`Sec:MatrixOps` we defined the sum and product of  matrices (of compatible sizes), and we saw that to a certain extent matrix algebra is guided by the same rules as the arithmetic of real numbers.  We can also subtract  two matrices via
+In {numref}`Sec:MatrixOps` we defined the sum and product of  matrices (of compatible sizes), and we saw that to a certain extent matrix algebra is guided by the same rules as the arithmetic of real numbers.  We can also subtract  two matrices via
 
 $$
 
@@ -705,7 +705,7 @@ $$
 $$
 
 only has the trivial solution, which proves that indeed the columns of $A$ are linearly independent.
-\medskip
+
 For the converse, suppose that $A$ has linearly independent columns.
 Then the reduced echelon form of $A$ must be the identity matrix.
 This implies that for each $\mathbf{b}$ in $\mathbb{R}^n$ 
@@ -1282,15 +1282,12 @@ $$
 
 $$
 
-For the existence of a solution of this equation Prop.\,{prf:ref}`Prop:MatrixInv:InvertibleIndepCols` tells us
+For the existence of a solution of this equation {prf:ref}`Prop:MatrixInv:InvertibleIndepCols` tells us
 it is \underline{necessary} that $A$ has independent columns, and  we can furthermore read off that the columns of the matrix 
 $X$ will be the (unique)  solutions of the linear systems
 
 $$
-
    A\mathbf{x_k} = \mathbf{e_k}, \quad \text{  where  }  k = 1,2,\ldots, n.
- 
-
 $$
 
 So let us first focus on this equation by considering a fairly general $3\times 3$ matrix $A$.
@@ -1555,7 +1552,7 @@ $$
 
 as well.
 
-To understand that this is indeed true, we recall ({prf:ref}`Dfn:Matrixproduct:ElementaryMatrix`) that row operations can be effectuated via multiplications with elementary matrices.  Furthermore, since the matrix product is defined column by column, i.e.
+To understand that this is indeed true, we recall ({prf:ref}`Dfn:MatrixOps:ElementaryMatrix`) that row operations can be effectuated via multiplications with elementary matrices.  Furthermore, since the matrix product is defined column by column, i.e.
 
 $$
 
@@ -1669,138 +1666,107 @@ To help understand the above exposition let us run through the whole procedure f
 
 
 We want to compute the inverse of the matrix  
-$$A =  \begin{bmatrix}
+
+$$
+A =  \begin{bmatrix}
               1 &  4  \\  2 & 6
     \end{bmatrix}.
- 
-
 $$
 
 The short way:
 
 $$
-
  \begin{array}{rcl}
-  
 \left[\begin{array}{rrr|r}1 &  4 & 1 &  0\\2 & 6 & 0 & 1
 \end{array}\right]\begin{array}{l}
 [R_1] \\
 [R_2-2R_1] \\
 \end{array}\!\!\!   
     &\sim&
-     
 \left[\begin{array}{rrr|r}1 &  4 & 1 &  0\\0 & -2 & -2 & 1
 \end{array}\right]\begin{array}{l}
 [R_1+2R_2] \\
 [R_2] \\
 \end{array} \\ 
     &\sim&
-     
 \left[\begin{array}{rrr|r}1 &  0 & -3 &  2\\0 & -2 & -2 & 1
 \end{array}\right]\begin{array}{l}
 [R_1] \\
-[$(-\nicefrac12)$R_1] \\
+[(-\frac12)R_1] \\
 \end{array} \,\,\,\,\,
     \sim \,\,
-     
 \left[\begin{array}{rrr|r}1 &  0 & -3 &  2\\0 & 1 & 1 & -\nicefrac12
 \end{array}\right]
     \end{array}
- 
-
 $$
 
 So: 
 
 $$
-
   A^{-1} =  \begin{bmatrix}
               -3 &  2  \\  1 & -\nicefrac12
     \end{bmatrix}.
- 
-
 $$
 
 End of story.
 
-\medskip
+
 To see how  the proof of {prf:ref}`Prop:MatrixInv:Algorithm` works for this specific matrix, we will
 give a derivation using  elementary matrices.  
 
 First step: row replacement with entry on  position (1,1) as a first pivot:
 
 $$
-
   \begin{bmatrix}
               1 &  0  \\  -2 & 1
     \end{bmatrix}\,
-     
 \left[\begin{array}{rrr|r}1 &  4 & 1 &  0\\2 & 6 & 0 & 1
 \end{array}\right]     \,\,=\,\,
-      
 \left[\begin{array}{rrr|r}1 &  4 & 1 &  0\\0 & -2 & -2 & 1
 \end{array}\right], \quad E_1 = \begin{bmatrix} 1 &  0  \\  -2 & 1 \end{bmatrix}.
-
-
 $$
 
 Second step: another row replacement,  using the entry on  position (2,2) as  pivot:
 
 $$
-
   \begin{bmatrix}
               1 &  2  \\  0 & 1
     \end{bmatrix}\,
-      
 \left[\begin{array}{rrr|r}1 &  4 & 1 &  0\\0 & -2 & -2 & 1
 \end{array}\right]
      \,\,=\,\,
-    
 \left[\begin{array}{rrr|r}1 &  0 & -3 &  2\\0 & -2 & -2 & 1
 \end{array}\right], \quad E_2 = \begin{bmatrix} 1 &  2 \\  0 & 1 \end{bmatrix}.
-
-
 $$
 
 Third step:  the scaling of the second row:
 
 $$
-
   \begin{bmatrix}
               1 &  0  \\  0 & -\nicefrac12
     \end{bmatrix}\,
-    
 \left[\begin{array}{rrr|r}1 &  0 & -3 &  2\\0 & -2 & -2 & 1
 \end{array}\right]
     \,\,=\,\,
-    
 \left[\begin{array}{rrr|r}1 &  0 & -3 &  2\\0 & 1 & 1 & -\nicefrac12
 \end{array}\right],\quad E_3 = \begin{bmatrix} 1 &  0  \\   0 & -\nicefrac12 \end{bmatrix}. 
- 
-
 $$
 
 All in all
 
 $$
-
  (E_3E_2E_1)A = \left(\begin{bmatrix}    1 &  0  \\  0 & -\nicefrac12    \end{bmatrix}
     \begin{bmatrix} 1 &  2  \\  0 & 1  \end{bmatrix}
      \begin{bmatrix}  1 &  0  \\  -2 & 1 \end{bmatrix}\right)\,A
      = 
       \begin{bmatrix}   -3 &  2  \\  1 & -\nicefrac12  \end{bmatrix}A
      = I 
- 
-
 $$
 
 which reconfirms
 
 $$
-
    E_3E_2E_1 = A^{-1} = \begin{bmatrix}   -3 &  2  \\  1 & -\tfrac12  \end{bmatrix}.
-
-
 $$
 
 
@@ -1808,19 +1774,7 @@ $$
 ::::::
 
 
-
-
-
-
-
-
-
-
-
-
 (Subsec:MatrixInverse:Summary)=
-
-
 ## Characterizations of invertibility
 
 In the previous subsections quite a few properties of invertible matrices came along, either explicitly or implicitly. For future reference we list them in a theorem.
@@ -1828,13 +1782,8 @@ In the previous subsections quite a few properties of invertible matrices came a
 Recall: by definition a (square) matrix $A$ is invertible (or: regular) if and only if there exists a matrix $B$ for which
 
 $$
-
   AB = BA= I.
-
-
 $$
-
-
 
 
 ::::::{prf:theorem}
@@ -1849,17 +1798,15 @@ So, each of the following properties is a characterization of invertibility of a
 
 $A$\, is invertible;
 		
-
 </li>
 <li>
 
  there exists a matrix $B$ for which $AB = I$;
 		
-
 </li>
 <li>
 
- for each $\mathbf{b}\in\mathbb{R}^n$ the linear system $A\mathbf{x} = \mathbf{b}$ has a unique solution;
+for each $\mathbf{b}\in\mathbb{R}^n$ the linear system $A\mathbf{x} = \mathbf{b}$ has a unique solution;
 		
 
 </li>
@@ -1879,18 +1826,14 @@ $A$ has independent columns;
 
 $A$ can be written as a product of elementary matrices:
 
-$$A = E_1E_2\cdots E_k.		$$
+$$
+A = E_1E_2\cdots E_k.		
+$$
 
 </li>
 </ul>
 
-
-
 ::::::
-
-
-
-
 
 
 ::::::{prf:proof}
@@ -1928,15 +1871,14 @@ $A$ has independent rows;
 </li>
 <li>
 
- each column of the matrix $A$ is a pivot column;
+each column of the matrix $A$ is a pivot column;
 		
 
 </li>
 <li>
 
- the columns of $A$ span the whole $\mathbb{R}^n$.
+the columns of $A$ span the whole $\mathbb{R}^n$.
 	
-
 </li>
 </ul>
 
@@ -1944,3 +1886,15 @@ Again it may very well be that you have to resort to previous sections.
 
 
 ::::::
+
+
+
+
+
+
+
+
+
+
+\end{document}
+

@@ -187,6 +187,7 @@ Add reference to Section Sec:GeomLinTrans
 In Section we have already briefly toched upon orthogonal projections in higher dimension. Now that we know about orthogonal bases, we can make this more concrete.
 
 :::{prf:definition}
+:label: Dfn:Orthogonality:OrthoProjection
 
 Let $V$ be a subspace of $\R{n}$ and let $\vect{v}_{1},...,\vect{v}_{k}$ be an orthogonal basis for $V$. For any $\vect{w}$ in $\R^{n}$, we define the *orthogonal projection* of $\vect{w}$ on $V$ as
 
@@ -252,6 +253,7 @@ A vector, its orthogonal projection on a subspace, and the difference of the two
 {prf:ref}`Thm:Ortho:OrthoDecomp` is quite a powerful tool. For example, it allows us to establish the following useful facts. Of particular interest is [iii.](#It:Ortho:ProjIsClosest), which states in essence that $\proj_{V}(\vect{w})$ is the best approximation of $\vect{w}$ with a vector from $V$ or, in other words, that the projection of $\vect{w}$ onto $V$ is the point in $V$ which is closest to $\vect{w}$.
 
 :::{prf:Proposition}
+:label: Prop:Orthogonality:BestApprox
 
 Let $V$ be a subspace of $\R^{n}$ and let $\vect{w}$ be an arbitrary vector in $\R^{n}$. Then: 
 
