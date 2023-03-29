@@ -47,3 +47,4 @@ chapters:
   - file : 'Appendices/intro.md'
     sections:
       - file: "Appendices/ComplexNumbers.md"
+      - file: "Appendices/InverseMatrixTheorem.md"

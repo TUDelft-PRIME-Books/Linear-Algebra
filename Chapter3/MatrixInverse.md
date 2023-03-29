@@ -1878,10 +1878,8 @@ $A$ has independent columns;
 <li>
 
 $A$ can be written as a product of elementary matrices:
-		      $$A = E_1E_2\cdots E_k.		
-		       
-		      
-$$
+
+$$A = E_1E_2\cdots E_k.		$$
 
 </li>
 </ul>
@@ -1946,15 +1944,3 @@ Again it may very well be that you have to resort to previous sections.
 
 
 ::::::
-
-
-
-
-
-
-
-
-
-
-\end{document}
-
