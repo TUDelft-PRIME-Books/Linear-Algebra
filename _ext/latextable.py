@@ -48,15 +48,13 @@ class LaTeXTableDirective(Table):
 
         table = nodes.table()
 
-        attrs = {'colwidth' : 1 ,'align' : 'right'}
+        attrs = {'colwidth' : 1 }
         tgroup = nodes.tgroup()
         table += tgroup
 
         for i in range(max_num_cols):
 
-
             colspec = nodes.colspec(**attrs)
-            colspec['align'] = "right"
             tgroup += colspec
 
         # parse the body of the table:
@@ -89,7 +87,7 @@ class LaTeXTableDirective(Table):
         return [table]+messages
 
     
-    def parse_rows(self,row_list : list,table_args: list) -> str:
+    def parse_rows(self,row_list : list,table_args: str) -> list:
 
         rows = []
         for row in row_list:
@@ -98,18 +96,9 @@ class LaTeXTableDirective(Table):
             i=0
             for cell in cell_list:
 
-                col_align = 'left'
-
-                match table_args[i]:
-                    case 'r': 
-                        col_align = 'right'
-                    case 'c':
-                        col_align = 'center'
-                    case 'l':
-                        col_align = 'left'
-
+                col_align = 'cell-text-left'  # Default value
+                align_arg = table_args[i]
                 attrs = {}
-                attrs['align'] = f'{col_align}'
                 cell_text = str(cell)
                 cell_text = cell_text.strip(' ')
 
@@ -119,10 +108,19 @@ class LaTeXTableDirective(Table):
                 if cell_entry_properties != None:
                     colspan = cell_entry_properties.groups()[0]
                     cell_align = cell_entry_properties.groups()[1]
+                    if cell_align != align_arg:
+                        align_arg = cell_align
                     cell_text = cell_entry_properties.groups()[2]
                     attrs['morecols']=int(colspan)-1
-                    attrs['align'] = f"{cell_align}"
                 
+                match align_arg:
+                    case 'r': 
+                        col_align = 'cell-text-right'
+                    case 'c':
+                        col_align = 'cell-text-center'
+                    case 'l':
+                        col_align = 'cell-text-left'
+
                 # TODO
                 # Search for multi row
                 
@@ -136,6 +134,7 @@ class LaTeXTableDirective(Table):
                 entry = nodes.entry()
                 for attr, value in attrs.items():
                     entry[attr] = value
+                entry['classes'].append(col_align)
                 entry += cell_text_node
                 row_node += entry
                 i+=1
