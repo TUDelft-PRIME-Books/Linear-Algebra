@@ -864,7 +864,7 @@ The construction we performed in the last example can be generalized. As is the 
 Every $n \times n$ symmetric matrix  $A$ is the linear combination 
 
 :::{math}
-:label Eq:SymmetricMat:SpectralDecomp
+:label: Eq:SymmetricMat:SpectralDecomp
 
     A = \lambda_1P_1 +  \lambda_2P_2 + \ldots +  \lambda_nP_n
 
