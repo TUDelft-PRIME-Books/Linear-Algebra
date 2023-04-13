@@ -1,6 +1,8 @@
+current: all
+
 new:
 	jupyter-book build  . 
-config:
-	jupyter-book config sphinx .
-all : config
+all : 
 	jupyter-book build --all . 
+pdf:
+	jupyter-book build --builder pdflatex --path-output ${HOME}/test/jpbooks .
