@@ -1291,9 +1291,11 @@ Rules i. and ii.  are  checked in a straightforward way.  See {numref}`Exc:Matri
 <ol type = "i"  start = "3">
 
 <li> 
+
 We saw instances of this property already in {prf:ref}`Ex:MatrixOps:AtimesI`  and {numref}`Exc:MatrixOps:I4timesA`. 
 For the general case,  one way to show validity of the first statement is to  note that the $j$-th column of $AI_n$ is $A\mathbf{e_j}$ where $\mathbf{e_j}$ is the $j$-th column of the identity matrix $I_n$.
 This gives the linear combination 
+
 <BR>
 
 $$
@@ -1302,6 +1304,7 @@ $$
 \nonumber
 
 $$
+
 which shows that the  $j$-th column of $AI_n$ is equal to the  $j$-th column of $A$.  And this holds for any column. 
 
 The identity   $\quad I_mA = A\quad$  is shown in an analogous way, working row by row.
@@ -1310,10 +1313,13 @@ The identity   $\quad I_mA = A\quad$  is shown in an analogous way, working row 
 </li>
 
 <li>
+
 First we observe that both triple products yield $m \times q$ matrices.
 Then the identity can be proved  'column by column', as the previous one. 
 
 We are done if we can show that  
+
+<BR>
 
 $$
  
@@ -1323,7 +1329,8 @@ $$
  \end{array}
 $$
 
-for $ k = 1,2,\ldots q $. '$\quad$
+for $ k = 1,2,\ldots q $. 
+
 Now recall that (by definition) 
 
 <BR>
@@ -1401,7 +1408,7 @@ on corresponding positions are equal (which may be checked column by column or r
 :label: Rem:MatrixOps:ProdTransformation
 
 
-The proof of {prf:ref}`Prop:MatrixOps:ProdProperties` iv.  can be seen in another light. In {ref}`Sec:LinTrafo` we saw that an $m\times n$ matrix $A$ defines a transformation $T$ from  $\mathbb{R}^n$ to
+The proof of {prf:ref}`Prop:MatrixOps:ProdProperties` iv.  can be seen in another light. In the Section {ref}`Sec:LinTrafo` we saw that an $m\times n$ matrix $A$ defines a transformation $T$ from  $\mathbb{R}^n$ to
 $\mathbb{R}^m$,  namely
 
 $$
@@ -1462,12 +1469,11 @@ $$
 
 $$
 
-it is clear than
+it is clear that
 
 $$
 
-  AB \neq BA
-\nonumber
+  AB \neq BA,
 
 $$
 

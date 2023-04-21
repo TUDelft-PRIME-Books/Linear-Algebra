@@ -200,8 +200,9 @@ $$
 
 ::::::
 
+
  
-{prf:ref}`Prop:DetExtras:DetAsScaleFactorR2`  can be generalized to higher dimensions.  
+{prf:ref}`Prop:DetExtras:ScaleFactorR2`  can be generalized to higher dimensions.  
 For $n = 3$ area becomes volume, and for higher dimensions we use the definition of $n$-dimensional volume as in {prf:ref}`Dfn:DetExtras:VolumeRn`.
  
 
@@ -309,6 +310,8 @@ $$
 
 Images under transformations with negative and positive determinant.
 :::
+
+The images of a unit vector that rotates counterclockwise under transformation $B$ move around clockwise, i.e., in the opposite  orientation/direction. Under transformation $A$ the images will go around the origin counterclockwise.
 
 ::::
 
@@ -772,9 +775,9 @@ Conversely, we can write the cross product  in terms containing determinants.
 \left[\begin{array}{c}b_1 \\ b_2 \\ b_3         \end{array}\right] 
 &=& \left[\begin{array}{c}a_2b_3-a_3b_2 \\ a_3b_1 - a_1b_3 \\ a_2b_1-a_2b_1        \end{array}\right] \\ 
 &=& 
-\left|\begin{array}{cc}  a_2 & a_3   \\b_2 & b_3      \end{array}\right|\vect{e}_1 
-- \left|\begin{array}{cc}  a_1 & a_3   \\b_1 & b_3      \end{array}\right|\vect{e}_2 
-+ \left|\begin{array}{cc}  a_1 & a_2   \\b_1 & b_2      \end{array}\right|\vect{e}_3. 
+\left|\begin{array}{cc}  a_2 & b_2   \\a_3 & b_3      \end{array}\right|\vect{e}_1 
+- \left|\begin{array}{cc}  a_1 & b_1   \\ a_3 & b_3      \end{array}\right|\vect{e}_2 
++ \left|\begin{array}{cc}  a_1 & b_1   \\a_2 & b_2      \end{array}\right|\vect{e}_3. 
 \end{array} 
  
 :::
@@ -848,9 +851,11 @@ The norm of the vector  $\vect{a}^{\ast}_n$   is equal to the  $(n-1)$-dimension
 ::::::
 
 
-In fact,  for an independent set of vectors $\{\vect{a}_1, \ldots, \vect{a}_{n-1}\}$ in $\R^n$, these properties uniquely determine $\vect{a}^{\ast}_n$
+For an independent set of vectors $\{\vect{a}_1, \ldots, \vect{a}_{n-1}\}$ in $\R^n$, the  properties of {prf:ref}`Prop:DetExtras:Properties-ndimCrossProd` uniquely determine $\vect{a}^{\ast}_n$
 as the vector $\vect{v}$ that is orthogonal to $ \vect{a}_1, \ldots, \vect{a}_{n-1}$, has a prescribed length, and makes the  ordered set
 $(\vect{a}_1, \ldots, \vect{a}_{n-1}, \vect{v}) $ positively oriented.
+
+In fact, for a linearly dependent set of vectors this is also true, since from property iv. it follows that in that case  $\vect{a}^{\ast}_n = \vect{0}$.
 
 
 ::::::{prf:example}

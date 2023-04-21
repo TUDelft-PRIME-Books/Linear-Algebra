@@ -29,7 +29,7 @@ is equivalent to
 
 $(A-\lambda I)\vect{x} = \vect{0}, \quad$ for a nonzero vector $ \vect{x}$.
 
-We also know  (Section  , Matrix Inverse) that such a nonzero solution exists only if
+We also know  ({prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations`) that such a nonzero solution exists only if
 
 the matrix  $A - \lambda I$  is **not** invertible,
 
@@ -45,7 +45,7 @@ $$
 ::::::{prf:example}
 :label: Ex:EigenValues:FirstCharPoly
 
-Consider the matrix $A = \begin{bmatrix} 1 & 4 \\ 1 & 1 \end{bmatrix}$.  We evaluate det$(A - \lambda I)$:
+Consider the matrix $A = \begin{bmatrix} 1 & 4 \\ 1 & 1 \end{bmatrix}$.  We evaluate det$(A - \lambda I)$.
 
 $$
 \begin{vmatrix} 1-\lambda & 4 \\ 1 & 1-\lambda \end{vmatrix} = (1-\lambda) (1-\lambda) - 4 = \lambda^2 -2\lambda -3.
@@ -75,7 +75,9 @@ $$
 \begin{vmatrix} 0-\lambda & -1\\ 1 & 0-\lambda \end{vmatrix} =  \lambda^2 +1.
 $$
 
-Since this polynomial has no zeros, the matrix $A$ has no eigenvalues.  We have already seen a geometric argument when   we considered this matrix in Example {prf:ref}`Ex:EigenValues:Rotation`:   $R$  is the matrix of a rotation.  In the remark immediately after that example we  mentioned that it is possible to treat  $\lambda = \pm i$  as eigenvalues of the matrix $R$.  Of course these are exactly the \empl{complex} zeros of the polynomial   $p(\lambda) = \lambda^2 + 1$.
+Since this polynomial has no zeros, the matrix $A$ has no eigenvalues.  We have already seen a geometric argument when   we considered this matrix in Example {prf:ref}`Ex:EigenValues:Rotation`:   $R$  is the matrix of a rotation.  
+
+In the remark immediately after that example we  mentioned that it is possible to treat  $\lambda = \pm i$  as eigenvalues of the matrix $R$.  Of course these are exactly the *complex* zeros of the polynomial   $p(\lambda) = \lambda^2 + 1$.
 
 ::::::
 
@@ -89,14 +91,20 @@ $U = \begin{bmatrix} u_{11} & u_{12} & u_{13}  \\
 0    & u_{22} & u_{23}  \\
 0   &   0    & u_{33}
 \end{bmatrix}$, 
-i.e., an arbitrary $3 \times 3$ upper triangular matrix.\\
+i.e., an arbitrary $3 \times 3$ upper triangular matrix.
+
 Since $U - \lambda I$ is also an upper triangular matrix, we find that
 
 $$
 \text{det}(U - \lambda I) = ( u_{11}-\lambda)( u_{22}-\lambda)( u_{33}-\lambda).
 $$
 
-The last expression becomes 0  exactly for the values $\lambda_1 = u_{11}, \lambda_2 = u_{22}$  and $\lambda_3 = u_{33}$.
+The last expression becomes 0  exactly for the values
+
+$$
+ \lambda_1 = u_{11}, \lambda_2 = u_{22}$,    $\lambda_3 = u_{33}.
+$$
+
 So for a $3 \times 3$ upper triangular matrix the eigenvalues are the diagonal entries.
 
 ::::::
@@ -191,7 +199,7 @@ The characteristic polynomial of the $n \times n$ matrix $A$ is
 </li>
 <li>
 
-the zeros of this polynomial are exactly the eigenvalues of the matrix $A$.
+the *zeros* of this polynomial are  the *eigenvalues* of the matrix $A$.
 
 </li>
 </ul>
@@ -227,9 +235,8 @@ Let's look at one other example before we give the characteristic polynomial a c
 ::::::{prf:example}
 :label: Ex:EigenValues:SecondCharPoly
 
-We find the characteristic polynomial of the matrix
+We find the characteristic polynomial of the matrix $A = \begin{bmatrix} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{bmatrix}$.
 
-$A = \begin{bmatrix} 4 & -1 & 2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{bmatrix}$.\\
 Because of the zeros in the second row a good start is to expand along this row:
 
 $$
@@ -264,7 +271,7 @@ $$
 
 
 From the examples so far it seems we have solved the question of how to find the eigenvalues. However, there is a proviso:
-if we start with a `full' $3 \times 3$ matrix $A$, there may be nothing better to do than to compute  det$(A - \lambda I)$
+if we start with a 'full' $3 \times 3$ matrix $A$, there may be nothing better to do than to compute  det$(A - \lambda I)$
 by iteratively expanding across columns or rows. We then end up with a  cubic polynomial, not in factorized form.
 In general it will be quite a hard task to compute its zeros.  Obviously, things  get even worse in higher  dimensions.
 
@@ -407,7 +414,13 @@ p_A(\lambda) = c_n\lambda^n + c_{n-1}\lambda^{n-1} + \ldots + c_2\lambda^2 +c_1\
 Then the following identities hold for  the  coefficients $c_n, c_{n-1}$ and  $c_0$:
 
 $$
-c_n = (-1)^n, \quad c_{n-1} = (-1)^{n-1} (a_{11}+a_{22}+\ldots + a_{nn}), \quad \text{and} \quad  c_0 = \text{det}(A).
+c_n = (-1)^n, \quad c_{n-1} = (-1)^{n-1} (a_{11}+a_{22}+\ldots + a_{nn}) 
+$$
+
+and
+
+$$
+  c_0 = \text{det}(A).
 $$
 
 ::::::
@@ -444,6 +457,7 @@ When we expand
 $ \quad  \text{det}(A - \lambda I) = \left|\begin{array}{ccc} a_{11}- \lambda  & a_{12} & a_{13} \\
 a_{21} & a_{22}- \lambda  & a_{23} \\
 a_{31} & a_{32} & a_{33}- \lambda  \end{array}\right|\quad $
+
 along its first row we find
 
 $$
@@ -534,7 +548,8 @@ $$
 p_A(\lambda) = (-1)^n \lambda^n + (-1)^{n-1}\text{tr}(A) \lambda^{n-1} + \ldots + \Det{A},
 $$
 
-we read off the  identities put forward in \refeq{Eq:Eigenvalues:SumEigenvaluesAndTrace}.
+we read off the identities put forward in 
+Equation {eq}`Eq:Eigenvalues:SumEigenvaluesAndTrace`.
 
 ::::::
 
@@ -546,12 +561,19 @@ The identity involving the sum gives a easy check on the eigenvalues;  with the 
 :label: Ex:Eigenvalues:SumEigenvaluesAndTrace
 
 In {prf:ref}`Ex:EigenValues:SecondCharPoly` we found that the eigenvalues of the matrix
-$A = \begin{bmatrix} 4 & -1 & 2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{bmatrix}$ were $\lambda_{1,3} = 3$, $\lambda_{2} = 2$.
+$A = \begin{bmatrix} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{bmatrix}$  &nbsp; are $\lambda_{1,3} = 3$, $\lambda_{2} = 2$.
 
 We see that indeed
 
 $$
 \lambda_1+\lambda_2+\lambda_3 = 3 +2 + 3 = 8 = 4+3+1 = \text{tr}(A).
+$$
+
+And also  
+
+$$
+  \text{det}\,A = 3 \begin{vmatrix} 4 & -2 \\ 1 &  1 \end{vmatrix} = 3\cdot (4+2) = 18 =
+  \lambda_1\lambda_2\lambda_3.
 $$
 
 ::::::

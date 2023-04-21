@@ -1289,7 +1289,7 @@ $$
 $$
 
 For the existence of a solution of this equation {prf:ref}`Prop:MatrixInv:InvertibleIndepCols` tells us
-it is <u>unnecessary</u>  that $A$ has independent columns, and  we can furthermore read off that the columns of the matrix 
+it is <u>necessary</u>  that $A$ has independent columns, and  we can furthermore read off that the columns of the matrix 
 $X$ will be the (unique)  solutions of the linear systems
 
 $$
@@ -1830,7 +1830,7 @@ $A$ has independent columns;
 
 <li>
 
-The equation $A\vect{x} = \vect{0}$ has only the trivial solution $\vect{x} = \vect{0};
+The equation $A\vect{x} = \vect{0}$ has only the trivial solution $\vect{x} = \vect{0}$;
 		
 </li>
 

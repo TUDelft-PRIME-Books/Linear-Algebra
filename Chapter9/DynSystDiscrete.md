@@ -3,7 +3,7 @@
 
 ## Introduction
 
-For a linear transformation $T: \R^n \to \R^n$, instead of looking at the image of subsets under $T$, we may also follow the 'path' of one vector $\vect{x}_0$ under repeated application of $T$.  In case $T$ is represented by the matrix $A$ this means we will study the sequence
+For a linear transformation $T: \R^n \to \R^n$, instead of looking at the images of subsets under $T$, we may also follow the 'path' of one vector $\vect{x}_0$ under repeated application of $T$.  In case $T$ is represented by the matrix $A$ this means we will study the sequence
 
 $$
    \vect{x}_0,\,\, \vect{x}_1,\,\,\vect{x}_2,\,\,\ldots \,\,\, = \,\,\,\vect{x}_0,\,\,A\vect{x}_0,\,\,A^2\vect{x}_0,\,\ldots
@@ -32,12 +32,12 @@ $$
    \end{array}.  
 $$
 
-The table has to be read column by column.  For instance, the meaning of the first column is that  of the age group  'young', 30\% reaches the adolescent state.  And from the third column it can be read off that 
-individuals of the age group 'full grown'  reproduce 4 offspring and with probability 40% reach 'old age'.  The graph in {numref}`Figure %s <Fig:DynSystDiscrete:Leslie>` visualizes the table.
+The table has to be read column by column.  For instance, the meaning of the first column is that  of the age group  'young', 30% reaches the adolescent state.  And from the third column it can be read off that 
+individuals of the age group 'full grown'  reproduce 4 offspring and with probability 40% reach 'old age'.  The graph in {numref}`Figure %s <Fig:DynSystDiscrete:Leslie1>` visualizes the table.
 
 
 :::{figure} Images/Fig-DynSystDiscrete-LeslieGraph.svg
-:name: Fig:DynSystDiscrete:Leslie
+:name: Fig:DynSystDiscrete:Leslie1
 
 :::
 
@@ -82,11 +82,38 @@ $$
 
 ::::
 
-In this subsection we will address the questions whether we can give an 'explicit' expression for the general state $\mathbf{x}_k$, and what is the behaviour 'on the 'long run',  i.e., when $k \to \infty$.
+In this subsection we will address the questions whether we can give an 'explicit' expression for the general state $\mathbf{x}_k$, and what is the behaviour 'on the long run',  i.e., when $k \to \infty$.
 
-## The case where $A$ is diagonalizable
+## Stability of Dynamical Systems
 
-If the matrix $A$ is diagonalizable, that is, if a basis of eigenvectors exists, the behaviour of the dynamical system can be made completely transparent.
+Let us start with  a definition straightaway.
+
+::::{prf:definition}
+:label: Def:DynSystDiscrete:Stable
+
+Let $A$ be the matrix of a dynamical system. 
+The origin is called **asymptotically stable**  if all solutions $\vect{x}_k$  go to $\vect{0}$ if $k \to \infty$.  
+
+If for some starting values $\vect{x}_0 = \vect{s}$ the solution $\vect{x}_k$ becomes arbitrarily large, i.e.,  $\norm{\vect{x}_k} \to \infty$ for $k \to \infty$, then the dynamical system is called **unstable**. 
+
+In the borderline case where
+$\norm{\vect{x}_k}$  remains bounded, but does not approach zero for all starting values,
+the origin is just called **stable**.
+
+In the case of asymptotic stability we will call the origin an **attractor**, in the case of instability we say the origin is a **repeller**.  
+::::
+
+::::{prf:remark}
+
+This definition of stable and unstable suffices for the dynamical systems we consider,
+which are in fact *linear* dynamical systems.  For more general dynamial systems a more subtle definition is needed.
+
+In the literature there is  quite a bit of terminology to describe the behaviour of dynamical systems around the origin. Apart from dynamical systems in the plane, where we can nicely visualize what is going on, we will stick to the two qualifications attractor and repellor.
+
+::::
+
+
+If the matrix $A$ is diagonalizable, that is, if a basis of eigenvectors exists, the behaviour of the dynamical system can be fully disclosed.
 
 ::::{prf:proposition}
 :label: Prop:DynSystDiscrete:DiagCase
@@ -125,7 +152,7 @@ The last expression for  $\vect{x}_k$ is often refered to as being the **general
 
 ::::
 
-Note that the coordinates  $c_1,c_2,\ldots,c_n$  in {eq}`Eq:DynSystDiscrete:InitCoords` are uniquely determined, since $(\vect{v}_1, \ldots, \vect{v}_n)$ is assumed to be a basis.
+Note that the coordinates  $c_1,c_2,\ldots,c_n$  in Equation {eq}`Eq:DynSystDiscrete:InitCoords` are uniquely determined, since $(\vect{v}_1, \ldots, \vect{v}_n)$ is assumed to be a basis.
 
 
 ::::{prf:proof}
@@ -163,29 +190,13 @@ $$
 
 ::::
 
-From Equation {eq}`Eq:DynSystDiscrete:GenSolDiagble` it follows that if **all** eigenvalues have an absolute value smaller than 1, **all** solutions will approach the origin $\vect{0}$ if  $k \to \infty$.  In this case the origin is called (asymptotically) stable.  
+From Equation {eq}`Eq:DynSystDiscrete:GenSolDiagble` it follows that if **all** eigenvalues have an absolute value smaller than 1, **all** solutions will approach the origin $\vect{0}$ if  $k \to \infty$.  So then  the origin is asymptotically stable.  
 
-::::{prf:definition}
-:label: Def:DynSystDiscrete:Stable
-
-Let $A$ be the matrix of a dynamical system. 
-The origin is called **asymptotically stable**  if all solutions $\vect{x}_k$  go to $\vect{0}$ if $k \to \infty$.  If for some starting values $\vect{x}_0 = \vect{s}$ the solution $\vect{x}_k$ becomes arbitrarily large, i.e., if $\norm{\vect{x}_k} \to \infty$ for $k \to \infty$, then the dynamical system is called **unstable**. In the borderline case where the highest absolute value of the eigenvalues is exactly 1, the origin is just called **stable**.
-
-
-In the case of asymptotic stability we will call the origin an **attractor**, in the case of instability we say the origin is a **repeller**.  
-::::
-
-::::{prf:remark}
-
-This definition of stable and unstable suffices for *linear* dynamical systems.  For nonlinear systems a more subtle definition is needed.
-
-Furthermore,  in the literature there is  quite a bit of terminology to describe the behaviour of dynamical systems around the origin. Apart from dynamical systems in the plane, where we can nicely visualize what is going on, we will stick to the two qualifications attractor and repellor.
-
-::::
 
 The following proposition is an almost immediate consequence of Equation {eq}`Eq:DynSystDiscrete:GenSolDiagble`. 
 
 ::::{prf:proposition}
+:label: Prop:DynSystDiscrete:DiagCase2
 
 Suppose the matrix $A$ is diagonalizable, with eigenvalues $\lambda_i$ ordered by absolute value,
 
@@ -219,27 +230,64 @@ Then
 ::::
 
 
-::::{prf:remark}
+::::{prf:remark} 
 
-The same conclusions as in {prf:ref}`Prop:DynSystDiscrete:DiagCase` may be drawn in the case of multiple eigenvalues or complex eigenvalues.  For  complex eigenvalues $|\lambda_i|$ then denotes the modulus of the number $\lambda_i$. 
+Statement i. and ii. in {prf:ref}`Prop:DynSystDiscrete:DiagCase2` still hold in the case of repeated eigenvalues or complex eigenvalues.  For  complex eigenvalues $|\lambda_i|$  denotes the modulus of the number $\lambda_i$. 
 
-That is,  if the matrix has the (possibly complex) eigenvalues  $\lambda_1, \ldots, \lambda_n$, the origin is an asymptotically stable point if all $|\lambda_i|$ are smaller than 1, and the origin is an unstable point if at least one of the eigenvalues has a modulus greater than 1.
 
-The argument for a matrix  with multiple eigenvalues becomes more involved, as we cannot use   Equation {eq}`Eq:DynSystDiscrete:GenSolDiagble` anymore.
+
+Thus, if the matrix has the (possibly complex) eigenvalues  $\lambda_1, \ldots, \lambda_n$, the origin is an asymptotically stable point if all $|\lambda_i|$ are smaller than 1, and the origin is an unstable point if at least one of the eigenvalues has a modulus greater than 1.   The argument for a matrix  with a repeated eigenvalue that does not provide a complete set of eigenvectors becomes more involved, as we cannot use   Equation {eq}`Eq:DynSystDiscrete:GenSolDiagble` anymore.
+
+Property  iii. may fail if $\lambda_1$ is a double eigenvalue of modulus or absolute value 1.  An example where this happens is given by the matrix
+
+$$
+   A = \left[\begin{array}{cc}  
+                          1 & 1 \\
+                          0 & 1
+      \end{array}\right].
+$$
+
+This matrix has the double eigenvalue $\lambda = 1$, with only one independent eigenvector.
+
+It can be shown that  
+
+$$
+   A^k = \left[\begin{array}{cc}  
+                          1 & k \\
+                          0 & 1
+      \end{array}\right],
+$$
+
+so
+
+$$
+  A^k \vect{x}_0 = \left[\begin{array}{cc}  
+                          1 & k \\
+                          0 & 1
+      \end{array}\right]\left[\begin{array}{c}  
+                          s_1 \\
+                          s_2
+      \end{array}\right] = \left[\begin{array}{c}  
+                          s_1+ks_2 \\
+                          s_2
+      \end{array}\right].
+$$
+
+For starting values with $s_2 \neq 0$  this will not be bounded.
 
 ::::
 
 ::::{prf:example} 
 :label: Ex:DynSystDiscrete:PopulationModel-2
 
-In the population model of example {prf:ref}`Ex:DynSystDiscrete:PopulationModel` we introduced the dynamical system with matrix 
+In the population model of  {prf:ref}`Ex:DynSystDiscrete:PopulationModel` we introduced the dynamical system with matrix 
 
 $$
    M =   \left[\begin{array}{cccc}   0   &  0   &  4   &  2 \\
                                     0.3  &  0   &  0   &  0 \\
                                      0   & 0.6  &  0   &  0  \\
                                      0   &  0   &  0.4 & 0.1 
-                      \end{array}\right].
+         \end{array}\right].
 $$
 
 Numerical computations show that the eigenvalues are given by
@@ -265,10 +313,10 @@ $$
   \vect{x}_1 = \left[\begin{array}{cc} 14000\\300\\600\\1100 \end{array}\right] , \quad \vect{x}_{10} = \left[\begin{array}{cc} 5910 \\ 684 \\ 965 \\ 573 \end{array}\right] , \quad \vect{x}_{50} = \left[\begin{array}{cc} 910 \\ 282 \\ 179\\ 82 \end{array}\right].
 $$
 
-The trajectories in $\R^4$ are hard to plot. Instead we can plot the progressions of the four age groups.  {numref}`Figure %s <Fig:DynSystDiscrete:Leslie>` shows these in time slots of five years.
+The trajectories in $\R^4$ are hard to plot. Instead we can plot the progressions of the four age groups.  {numref}`Figure %s <Fig:DynSystDiscrete:Leslie2>` shows these in time slots of five years.
 
 :::{figure} Images/Fig-DynSystDiscrete-Leslie-2.svg
-:name: Fig:DynSystDiscrete:Leslie
+:name: Fig:DynSystDiscrete:Leslie2
 
 The evolvement in time of the population model
 :::
@@ -277,9 +325,9 @@ The evolvement in time of the population model
 What is not so clear in the picture is that for large $k$ the state vectors $\vect{x}_k$ are approximately eigenvectors for the matrix $M$. For instance,  
 
 $$
-  \vect{x}_{70} = \left[\begin{array}{cc}  612 \\190\\119\\55 \end{array}\right] \approx 612\cdot\left[\begin{array}{cc}  1.000 \\0.345 \\0.194\\ 0.090 \end{array}\right], \quad
-  \vect{x}_{75} = \left[\begin{array}{cc}  499 \\156\\98\\45 \end{array}\right]
-  \approx 499\cdot\left[\begin{array}{cc}  1.00 \\0.313 \\0.196\\ 0.090 \end{array}\right],
+  \vect{x}_{70} = \left[\begin{array}{c}  612 \\190\\119\\55 \end{array}\right] \approx 612\cdot\left[\begin{array}{c}  1.000 \\0.345 \\0.194\\ 0.090 \end{array}\right], \quad
+  \vect{x}_{75} = \left[\begin{array}{c}  499 \\156\\98\\45 \end{array}\right]
+  \approx 499\cdot\left[\begin{array}{c}  1.00 \\0.313 \\0.196\\ 0.090 \end{array}\right],
 $$
 
 where up to three decimals
@@ -350,8 +398,7 @@ A very simple dynamical system
 
 
 It seems clear from the picture, and it is clear from the general solution
-% {eq}`Eq:DysSystDiscrete:SimplestSystem` 
-
+ 
 $$
    \vect{x}_k = A^k \vect{x}_0 = \left[\begin{array}{cc} 1.2^kx_0 \\ 0.8^k y_0 \end{array}\right]
 $$
@@ -414,7 +461,7 @@ For large values of $k$ the second term becomes negligible compared to the first
 
 ::::
 
-In the third example the matrix  $A$ has complex eigenvalues.
+In the next example the matrix  $A$ has complex eigenvalues.
 
 
 
@@ -527,7 +574,7 @@ has the following eigenvalues and eigenvectors
 $$
   \lambda_1 = 1,\,\,\vect{v}_1 =  \left[\begin{array}{c} 1 \\ 1 \end{array}\right],
   \quad
-  \lambda_2 = 2,\,\,\vect{v}_2 =  \left[\begin{array}{c} 2 \\ 3 \end{array}\right]
+  \lambda_2 = 2,\,\,\vect{v}_2 =  \left[\begin{array}{c} 2 \\ 3 \end{array}\right].
 $$
 
 Describe and sketch the trajectories starting from the 'states'
@@ -559,7 +606,7 @@ Are the paths periodic?  That is, will $\vect{x}_k$  return to the starting valu
 A  **linear $n$th order difference equation** is an equation of the form
 
 $$
-  y(k) = a_1y(k-1) + a_2y(k-2) + \ldots + a_ny(k-n), \quad k = n,n+1,n+2, \ldots
+  y(k) = a_1y(k-1) + a_2y(k-2) + \ldots + a_ny(k-n), \quad k = n,n+1, \ldots
 $$
 
 where   the  **coefficients**  $a_i$ are real numbers.
@@ -570,6 +617,34 @@ $$
    y(0) = s_0,\,\,y(1) = s_1,\,\, \ldots \,\, , \,\, y(n-1) = s_{n-1}.
 $$
 
+::::
+
+Note that the initial values are precisely enough to determine $y(n),y(n+1), \ldots$.
+
+::::{prf:example}
+
+Consider the linear difference equation
+
+$$
+  y(k) = y(k-1) - 2y(k-2) + 3y(k-3), \quad k = 3,4, \ldots
+$$
+
+ with  the initial values 
+
+$$
+   y(0) = 4,\,\,y(1) = 5,\,\,  y(2) = 6.
+$$
+
+
+Then
+
+$$
+   \begin{array}{ccccl}
+          y(3) &=& y(2) - 2y(1) + 3y(0) &=& 6 - 10 + 12 = 8, \\
+          y(4) &=& y(3) - 2y(2) + 3y(1) &=& 8 - 12 + 15 = 11, \\
+          y(5) &=& y(4) - 2y(3) + 3y(2) &=& 11 - 16 + 18 = 13, \quad \text{etc.}
+   \end{array}
+$$
 ::::
 
 
@@ -652,7 +727,7 @@ $$
    c = \tfrac1{\sqrt{5}}.
 $$ 
 
-We call the formula  surprising, since at first sight the expression on the right in equation {eq}`Eq:DynSystDiscrete:Fibonacci` is not an integer, where the Fibonacci numbers clearly  are integers.
+We call the formula  surprising, since at first sight the expression on the right in equation {eq}`Eq:DynSystDiscrete:Fibonacci` is not an integer, where from the definition it immediately follows that the Fibonacci numbers are integers.
 
 However, the computation of the complicated expression for $k = 2$
 
