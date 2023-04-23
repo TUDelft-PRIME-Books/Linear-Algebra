@@ -358,7 +358,7 @@ To not clutter and to emphasise the triangular/trapezoidal matrices, we use empt
 
 
 
-Suppose that $A=LU$ so that a linear system of equations $A\mathbf{x}=\mathbf{b}$ can be written as $LU\mathbf{x}=\mathbf{b}$. Then, by setting $\mathbf{y} = U\mathbf{x}$, we can solve the linear in two steps:
+Suppose that $A=LU$ so that a linear system of equations $A\mathbf{x}=\mathbf{b}$ can be written as $LU\mathbf{x}=\mathbf{b}$. Then, by setting $\mathbf{y} = U\mathbf{x}$, we can solve the linear system in two steps:
 
 <ol type = "i">
 <li>
@@ -526,7 +526,6 @@ which is also lower triangular (we knew it from {prf:ref}`prop:PropertiesTriangu
 ::::::
 
 
-
 ::::::{prf:remark}
 Pay attention!
 
@@ -538,7 +537,7 @@ In practice, we do not need to compute the product of the matrices $F^{(k)}$, an
 
 
 
-The following example shows how we implement the $LU$ decomposition in practice.
+The following example shows how we implement the $LU$ decomposition in practice,  when no row exchanges are needed.
 
 
 
@@ -631,7 +630,21 @@ $$
 
 ::::::
 
+We can see that, when no row exchanges are needed, finding an LU decomposition is a quick process. However, the process is slightly different when that is not the case.
 
+::::{prf:example}
+
+Find an $LU$ decomposition of the matrix
+
+$$
+A = \begin{bmatrix}
+0 & 1 & 2 \\
+3 & 4 & 5 \\
+6 & 7 & 8
+\end{bmatrix}.
+$$
+
+::::
 
 
 At this point, there are important questions that we still need to address: when does a matrix have an $LU$ decomposition? Can a matrix have more than one $LU$ decomposition? It would be convenient if there exists an $LU$ decomposition, that such decomposition is unique.  Before answering these questions, we need to understand how to find an echelon form of a matrix without exchanging any rows in a general case.  As above, we will use a $3\times 3$ matrix as an example, but the idea works the same way for an $n\times n$ matrix.

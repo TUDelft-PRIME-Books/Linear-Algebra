@@ -17,6 +17,9 @@ execute:
   execute_notebooks: "off"
 exclude_patterns:
   - '.venv'
+  - Chapter8/*
+  - Chapter7/LeastSquares.md
+#  - Chapter3/LUdecomp.md
 parse:
     myst_enable_extensions:
       ## don't forget to list any other extensions you want enabled,
@@ -55,9 +58,9 @@ sphinx:
             \newcommand{\Det}[1]{\text{det}\left(#1\right)}
             \newcommand{\proj}{\text{proj} }
             \newcommand{\nicefrac}{\frac }
-            \newcommand{\mc}{\mathcal}                                                                                                     
-            \newcommand{\PB}{P_{\mathcal{B}}}                                                                                              
-            \newcommand{\CoMatrix}[2]{P_{{\mathcal #2}\leftarrow{\mathcal #1}}} 
+            \newcommand{\mc}{\mathcal}
+            \newcommand{\PB}{P_{\mathcal{B}}}
+            \newcommand{\CoMatrix}[2]{P_{{\mathcal #2}\leftarrow{\mathcal #1}}}
     mathjax3_config: 
       tex:
         inlineMath: [ ['$','$'], ['\(','\)'] ]
@@ -93,6 +96,7 @@ sphinx:
     - sphinx_togglebutton
     - sphinx_exercise
     - sphinx.ext.imgconverter
+
 
 latex:
   latex_engine: pdflatex
