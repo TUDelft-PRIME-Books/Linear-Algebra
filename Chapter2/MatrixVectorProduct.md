@@ -1,8 +1,8 @@
 (Sec:MatVecProduct)=
-# The matrix-vector product  $A\mathbf{x}$  
+# The matrix-vector product  $A\vect{x}$  
 
 In this section we will introduce another interpretation/representation of a system of linear equations.  
-We'll define the product of an $m\times n$ matrix $A$ with a vector $\mathbf{x}$ in $\mathbb{R}^n$. In the next chapter this will also be the stepping stone to the general matrix-matrix product. 
+We'll define the product of an $m\times n$ matrix $A$ with a vector $\vect{x}$ in $\mathbb{R}^n$. In the next chapter this will also be the stepping stone to the general matrix-matrix product. 
 
 
 ::::{prf:definition} 
@@ -148,8 +148,10 @@ $$
 
 ::::
 
-From the above it follows that the  `matrix-vector equation'
+::::{prf:remark}
+:label: Rem:MatVecProd:EquivalentEquations
 
+From the above it follows that the  `matrix-vector equation'
 $$
  \left[\begin{array}{ccccc}
             a_{11} & a_{12}&  \ldots& \ldots&  a_{1n} \\
@@ -199,6 +201,7 @@ $$
 
 As we will see later these different interpretations may lead to different insights. 
 
+::::
 
 ::::{prf:example} 
 :label: Ex:MatVecProd:FromLinSystemToMatVecEquation

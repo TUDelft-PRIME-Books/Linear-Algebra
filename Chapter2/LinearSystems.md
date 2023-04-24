@@ -73,8 +73,6 @@ is not linear because of the nonlinear term $2x_1x_2$.
 ::::{prf:definition} 
 :label: Dfn:LinSystems:LinearSystem
 
-
-
 A set of one or more linear equations is called a  **system of linear equations**  (or **linear system**, for short). In the case of $m$ linear equations in the variables $x_1,x_2,\ldots, x_n$ we speak of a **system of $m$ equations in $n$ unknowns**.
 The most general system then looks as follows:
 

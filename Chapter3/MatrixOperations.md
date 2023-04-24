@@ -1161,6 +1161,7 @@ Rules i. and ii.  are  checked in a straightforward way.  See {numref}`Exc:Matri
 We saw instances of this property already in {prf:ref}`Ex:MatrixOps:AtimesI`  and {numref}`Exc:MatrixOps:I4timesA`. 
 For the general case,  one way to show validity of the first statement is to  note that the $j$-th column of $AI_n$ is $A\mathbf{e_j}$ where $\mathbf{e_j}$ is the $j$-th column of the identity matrix $I_n$.
 This gives the linear combination 
+
 <BR>
 
 $$
@@ -1181,6 +1182,8 @@ Then the identity can be proved  'column by column', as the previous one.
 
 We are done if we can show that  
 
+<BR>
+
 $$
  \begin{array}{rcl}
  k\text{-th column of  }A(BC) &=&  k\text{-th column of  }(AB)C \\
@@ -1188,7 +1191,8 @@ $$
  \end{array}
 $$
 
-for $ k = 1,2,\ldots q $. '$\quad$
+for $ k = 1,2,\ldots q $. 
+
 Now recall that (by definition) 
 
 <BR>
@@ -1256,7 +1260,7 @@ on corresponding positions are equal (which may be checked column by column or r
 :label: Rem:MatrixOps:ProdTransformation
 
 
-The proof of {prf:ref}`Prop:MatrixOps:ProdProperties` iv.  can be seen in another light. In {ref}`Sec:LinTrafo` we saw that an $m\times n$ matrix $A$ defines a transformation $T$ from  $\mathbb{R}^n$ to
+The proof of {prf:ref}`Prop:MatrixOps:ProdProperties` iv.  can be seen in another light. In the Section {ref}`Sec:LinTrafo` we saw that an $m\times n$ matrix $A$ defines a transformation $T$ from  $\mathbb{R}^n$ to
 $\mathbb{R}^m$,  namely
 
 $$
@@ -1303,10 +1307,12 @@ A = \begin{bmatrix} 2 & 2 & 1\\ 3 & 3 & 0 \end{bmatrix} \quad \text{and} \quad
    B = \begin{bmatrix} 1 & 3 \\ 3 & 1 \\ 4 & 0 \end{bmatrix}
 $$
 
-it is clear than
+it is clear that
 
 $$
-AB \neq BA
+
+  AB \neq BA,
+
 $$
 
 simply because  the two products are not of the same size:  $AB$ is a $2\times 2$ matrix,  $BA$ a $3\times3$ matrix.

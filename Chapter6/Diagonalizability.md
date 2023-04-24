@@ -150,7 +150,7 @@ Fill in the details of the last remark.
 
 
 One way to understand the similarity of similar matrices comes from considering the linear transformations they represent.
-In Section ...  it was shown that if $T:\R^n\to\R^n$ is the linear transformation that has $A$ as its standard matrix, and  $P = P_{\mathcal{B}}$ is the change-of-coordinates matrix from the basis $\mathcal{B}$ to the standard matrix, then the matrix of $T$ with respect to basis $\mathcal{B}$ is given by
+In  {numref}`Section %s <Subsec:ChangeOfBasis:RelationTETB>`  it is shown that if $T:\R^n\to\R^n$ is the linear transformation that has $A$ as its standard matrix, and  $P = P_{\mathcal{B}}$ is the change-of-coordinates matrix from the basis $\mathcal{B}$ to the standard matrix, then the matrix of $T$ with respect to basis $\mathcal{B}$ is given by
 
 $$
 [T]_{\mathcal{B}} = P^{-1}AP.
@@ -162,9 +162,7 @@ $$
 B = PAP^{-1}
 $$
 
-then $A$ and $B$ are in fact matrices of the same linear transformation, only with respect to different bases.
-
-The fact that - for one thing - they share the same eigenvalues is then not very surprising.
+then $A$ and $B$ are in fact matrices of the same linear transformation, only with respect to different bases. The fact that - for one thing - they share the same eigenvalues is then not very surprising.
 
 The following proposition captures some other properties that similar matrices share.
 
@@ -263,7 +261,7 @@ We then say that  $PDP^{-1}$ is a **diagonalization**  of $A$.
 ::::::
 
 
-An equivalent alternative characterization of diagonalizability is the following proposition.
+An equivalent alternative characterization of diagonalizability is given in the following proposition.
 
 
 ::::::{prf:proposition}
@@ -370,7 +368,7 @@ $$
 Thus   $A = PDP^{-1}$  has the eigenvalues $d_i$ with corresponding  eigenvectors $P\vect{e}_i = \vect{p}_i$.
 Thus the $n$ columns of $P$, which are linearly independent since $P$ is invertible, give a basis of eigenvectors for $A$.
 
-The other half is a bit more involved.  It relies on the transformation formula of matrix representations (\ref{}).
+The other half is a bit more involved.  It relies on the transformation formula of matrix representations (see {prf:ref}`Prop:ChangeOfBasis:MatrixChangeStandardBasis`).
 
 Let  $T: \R^n \to \R^n$ be the linear transformation with standard matrix $A$,  i.e., $T(\vect{x}) = A\vect{x}$, and suppose $A$  has $n$ linearly independent eigenvectors $\vect{v}_1, \ldots, \vect{v}_n$.  Let $\lambda_1, \ldots, \lambda_n$ denote the eigenvalues.
 So $A\vect{v}_i =\lambda_i\vect{v}_i$.
@@ -547,7 +545,7 @@ An $n \times n$ matrix $A$ is (real) diagonalizable if and only if it satisfies 
 
 <li>
 
-The characteristic polynomial of $A$ has exactly $n$ roots, counting multiplicities.
+The characteristic polynomial of $A$ has exactly $n$ (real) roots, counting multiplicities.
 
 </li>
 
@@ -634,7 +632,7 @@ since the internal factors $P^{-1}P$ reduce to the identity matrix $I$,  and $ID
 
 Check for yourself what happens if $k = 0$. 
 
-The advantage: normally,  multiplication of two $n \times n$ matrices requires $n$ multiplications per entry (or $2n-1$ operations, if additions are counted as well), and there are $n\times n$ entries to be computed. So for the $k$th power that requires about $k\times n^3$ multiplications of numbers.
+The advantage is the following. Normally,  multiplication of two $n \times n$ matrices requires $n$ multiplications per entry (or $2n-1$ operations, if additions are counted as well), and there are $n\times n$ entries to be computed. So for the $k$th power that requires about $k\times n^3$ multiplications of numbers.
 To compute $PD^kP^{-1}$ we need $n$ $k$th powers to find $D^k$, and we are left with one 'simple' matrix product $PD^k$ and one 'full' matrix product.
 
 ::::::
@@ -643,14 +641,13 @@ To compute $PD^kP^{-1}$ we need $n$ $k$th powers to find $D^k$, and we are left 
 ::::::{prf:example}
 :label: Eq:Diagonalizable:10thPowerofA
 
-We compute $A^{10}$  for the matrix  
-$A = \left[\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array} \right]$ 
+We compute $A^{10}$  for the matrix  $A = \left[\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array} \right]$ 
 of {prf:ref}`Ex:Diagonalizable:CheckPDPinv`.
 
-There we already settled that
+There we already settled that $A = PDP^{-1}$, with
 
 $$
-A = PDP^{-1}, \quad \text{with} \quad  P = \left[\begin{array}{cc} 2 & -2 \\ 1 & 1 \end{array}
+  P = \left[\begin{array}{cc} 2 & -2 \\ 1 & 1 \end{array}
 \right]
 ,
 \quad D = \left[\begin{array}{cc} 3&0 \\ 0 & -1 \end{array}
@@ -669,14 +666,14 @@ We see that
 
 A^{10} =  \left[\begin{array}{cc} 2 & -2 \\ 1 & 1 \end{array} \right]
 \left[\begin{array}{cc} 3^{10}&0 \\ 0 & (-1 )^{10} \end{array} \right]
-\dfrac14\left[\begin{array}{cc} 1 &  2 \\ -1 & 2 \end{array} \right]
+\dfrac14\left[\begin{array}{cc} 1 &  2 \\ -1 & 2 \end{array} \right].
 
 
 :::
 
 
 
-Which can be evaluated to yield
+This can be evaluated to yield
 
 $$
 A^{10} = \frac14 \left[\begin{array}{cc} 2\cdot 3^{10} & -2 \\ 3^{10} & 1\end{array}

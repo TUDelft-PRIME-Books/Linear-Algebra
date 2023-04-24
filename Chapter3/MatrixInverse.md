@@ -541,7 +541,10 @@ $$
 Since all solutions  $\mathbf{c_j}$ are unique, the solution of the equation 
 
 $$
-  A\mathbf{x} = I
+
+  AX = I
+ 
+
 $$
 
 is unique as well.
@@ -585,7 +588,7 @@ $$
   X = A^{-1}B.
 $$
 
-If the matrix $B$ has only one column, i.e., if it is a vector, then
+In particular, if the matrix $B$ has only one column, i.e., if it is a vector, then
 
 $$
   AX = \mathbf{b} \quad \text{has the unique solution} \quad X = A^{-1}\mathbf{b}.
@@ -775,7 +778,7 @@ $$
 
 ::::::{prf:proof}
 All statements can be proved by verifying that the relevant products are equal to $I$.
-<ul>
+<ol type="i">
 <li>
 
 The matrix $A^{-1}$ exists, and so does  $\dfrac1c A^{-1}$.  We find:
@@ -783,22 +786,32 @@ The matrix $A^{-1}$ exists, and so does  $\dfrac1c A^{-1}$.  We find:
 $$
    (cA) \cdot \dfrac1c A^{-1} = c\cdot \dfrac1c A\cdot A^{-1} = 1 \cdot I = I,
 $$
-
+  
+  
 and likewise  $\dfrac1c A^{-1}\cdot (cA) = I$,
-which proves that indeed \,$\dfrac1c A^{-1} = (cA)^{-1}$.  
+
+which proves that indeed $\dfrac1c A^{-1} = (cA)^{-1}$.  
+  
 
 </li>
 <li>
 
-Since it is given  that $A^{-1}$ exists we can proceed as follows, where we  make use of the  characteristic property
-$B^TA^T = (AB)^T$:
+  Since it is given  that $A^{-1}$ exists we can proceed as follows, where we  make use of the  characteristic property
+  $  B^TA^T = (AB)^T$
   
+<BR>
+
 $$
-      (A^{-1})^TA^T = ( AA^{-1})^T = I^T = I  \quad \text{  and  } \quad
-       A^T(A^{-1})^T =( A^{-1}A)^T = I^T = I,
+      (A^{-1})^TA^T = ( AA^{-1})^T = I^T = I  
 $$
 
-which settles the second statement.  To prove (iii), see {numref}`Exc:MatrixInv:Ainvinv`.
+and
+
+$$
+      A^T(A^{-1})^T =( A^{-1}A)^T = I^T = I, 
+$$
+
+  which settles the second statement.  To prove iii., see {numref}`Exc:MatrixInv:Ainvinv`.
 
 
 </li>
@@ -848,7 +861,10 @@ $$
   \begin{bmatrix} 1 & 0 & 0  \\ 0 & 1 & 0 \\ 0 & 0 & 1\end{bmatrix},
 $$
 
-as well as  $B^TA^T = I$,  which proves that $B^T = (A^{-1})^T$.  As we already saw that $B^T = (A^T)^{-1}$, the matter is settled:
+as well as  $B^TA^T = I$,  which proves that $B^T = (A^{-1})^T$.
+
+
+As we already saw that $B^T = (A^T)^{-1}$, the matter is settled:
 
 $$
   (A^{-1})^T =  (A^T)^{-1}.
@@ -857,7 +873,8 @@ $$
 ::::::
 
 
-The last property we mention and prove is the product rule for the matrix inverse:
+The last property we mention and prove is the product rule for the matrix inverse.
+
 
 
 ::::::{prf:proposition}
@@ -918,9 +935,9 @@ In case it is true, give an argument, when false, give a counterexample.
 :label: Exc:MatrixInv:ConverseProdRule
 
 
-Prove the following converse of  {prf:ref}`Prop:MatrixInv:ProductRule`:
+Prove the following converse of  {prf:ref}`Prop:MatrixInv:ProductRule`.
 
-if  $A$ and $B$ are $n\times n$ matrices for which the product $AB$ is invertible, then $A$ and $B$ are both invertible.
+If  $A$ and $B$ are $n\times n$ matrices for which the product $AB$ is invertible, then $A$ and $B$ are both invertible.
 
 Make sure that you do not use $A^{-1}$ or $B^{-1}$ prematurely, i.e., before you have established that they exist.
 
@@ -946,14 +963,16 @@ $$
 $$
 
 For the existence of a solution of this equation {prf:ref}`Prop:MatrixInv:InvertibleIndepCols` tells us
-it is \underline{necessary} that $A$ has independent columns, and  we can furthermore read off that the columns of the matrix 
+it is <u>necessary</u>  that $A$ has independent columns, and  we can furthermore read off that the columns of the matrix 
 $X$ will be the (unique)  solutions of the linear systems
 
 $$
-   A\mathbf{x_k} = \mathbf{e_k}, \quad \text{  where  }  k = 1,2,\ldots, n.
+   A\mathbf{x_k} = \mathbf{e_k}, 
 $$
 
-So let us first focus on this equation by considering a fairly general $3\times 3$ matrix $A$.
+where $k = 1,2,\ldots, n$.
+
+Let us first focus on this equation by considering a fairly general $3\times 3$ matrix $A$.
 
 
 
@@ -985,22 +1004,30 @@ Instead of finding the solution $X$ column by column, which gives three linear s
 
 $$
 \left[\begin{array}{rrr|r}1 &  1 & 4  & 1\\1 & -1 & -1 & 0\\2 & -2 & -4 & 0\\\end{array}\right], \quad
-\left[\begin{array}{rrr|r}1 &  1 & 4  & 0\\1 & -1 & -1 & 1\\2 & -2 & -4 & 0\\\end{array}\right], \quad \text{and}  \quad
+  
+\left[\begin{array}{rrr|r}1 &  1 & 4  & 0\\1 & -1 & -1 & 1\\2 & -2 & -4 & 0\\\end{array}\right], \quad 
+  
 \left[\begin{array}{rrr|r}1 &  1 & 4  & 0\\1 & -1 & -1 & 0\\2 & -2 & -4 & 1\\\end{array}\right],                   
 $$
 
 we can solve the three linear systems simultaneously  using  a combined augmented matrix which we may denote by either
 
 $$
-\left[\begin{array}{rrrrrrr|r}1 &  1 & 4  & 1 & 0 & 0\\1 & -1 & -1 & 0 & 1 & 0\\2 & -2 & -4 & 0 & 0 & 1\\\end{array}\right]\quad \text{or} \quad
-\left[\begin{array}{rrrrr|r}1 &  1 & 4  & 1 & 0 & 0\\1 & -1 & -1 & 0 & 1 & 0\\2 & -2 & -4 & 0 & 0 & 1\\\end{array}\right]= \left[\, A \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,I\,\right].
+
+   
+\left[\begin{array}{rrr|r|r|r}1 &  1 & 4  & 1 & 0 & 0\\1 & -1 & -1 & 0 & 1 & 0\\2 & -2 & -4 & 0 & 0 & 1\\\end{array}\right]\quad \text{or} \quad
+   
+\left[\begin{array}{rrr|rrr}1 &  1 & 4  & 1 & 0 & 0\\1 & -1 & -1 & 0 & 1 & 0\\2 & -2 & -4 & 0 & 0 & 1\\\end{array}\right]= \left[\, A \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,I\,\right].
+ 
+
 $$
 
 Let us first row reduce this matrix and then draw conclusions:
 
 $$
     \left[\, A \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,I\,\right]=
-\left[\begin{array}{rrrrr|r}1 &  1 & 4  & 1 & 0 & 0\\1 & -1 & -1 & 0 & 1 & 0\\2 & -2 & -4 & 0 & 0 & 1
+     
+\left[\begin{array}{rrr|rrr}1 &  1 & 4  & 1 & 0 & 0\\1 & -1 & -1 & 0 & 1 & 0\\2 & -2 & -4 & 0 & 0 & 1
 \end{array}\right]\begin{array}{l}
 [R_1] \\
 {[R_2-1R_1]} \\
@@ -1010,7 +1037,7 @@ $$
 
 $$
    \sim  
-\left[\begin{array}{rrrrr|r}1 &  1 & 4  & 1 & 0 & 0\\0 & -2 & -5 & -1 & 1 & 0\\0 & -4 & -12 & -2 & 0 & 1
+\left[\begin{array}{rrr|rrr}1 &  1 & 4  & 1 & 0 & 0\\0 & -2 & -5 & -1 & 1 & 0\\0 & -4 & -12 & -2 & 0 & 1
 \end{array}\right]\begin{array}{l}
 [R_1+\nicefrac12R_2] \\
 {[R_2]} \\
@@ -1020,7 +1047,7 @@ $$
 
 $$
    \sim 
-\left[\begin{array}{rrrrr|r}1 &  0 & 3/2  & 1/2 & 1/2 & 0\\0 & -2 & -5 & -1 & 1 & 0\\0 & 0 & -2 & 0 & -2 & 1
+\left[\begin{array}{rrr|rrr}1 &  0 & 3/2  & 1/2 & 1/2 & 0\\0 & -2 & -5 & -1 & 1 & 0\\0 & 0 & -2 & 0 & -2 & 1
 \end{array}\right]\begin{array}{l}
 [R_1+\nicefrac34R_3] \\
 {[R_2-\nicefrac52R_3]} \\
@@ -1031,7 +1058,7 @@ $$
 
 $$
  \sim  
-\left[\begin{array}{rrrrr|r}1 &  0 & 0  & 1/2 & -1 & 3/4\\0 & -2 & 0  & -1 & 6 & -5/2\\0 & 0  & -2  & 0 & -2 & 1
+\left[\begin{array}{rrr|rrr}1 &  0 & 0  & 1/2 & -1 & 3/4\\0 & -2 & 0  & -1 & 6 & -5/2\\0 & 0  & -2  & 0 & -2 & 1
 \end{array}\right]\begin{array}{l}
 [R_1] \\
 {[(-\nicefrac12)R_1]} \\
@@ -1042,7 +1069,7 @@ $$
 
 $$
  \sim  
-\left[\begin{array}{rrrrr|r}1 &  0 & 0  & 1/2 & -1 & 3/4\\0 & 1 & 0 & 1/2 & -3 & 5/4\\0 & 0 & 1 & 0 & 1 & -1/2
+\left[\begin{array}{rrr|rrr}1 &  0 & 0  & 1/2 & -1 & 3/4\\0 & 1 & 0 & 1/2 & -3 & 5/4\\0 & 0 & 1 & 0 & 1 & -1/2
 \end{array}\right] = \left[\, I \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,B\,\right].
 $$
 
@@ -1154,21 +1181,24 @@ $$
 we also have
 
 $$
-  E\left[\, A_1 \quad \rule[-.5ex]{0.1ex}{2.5ex}\quad\,A_2\,\right]=
-   \left[\, EA_1 \quad \rule[-.5ex]{0.1ex}{2.5ex}\quad\,\,EA_2\,\right].
+
+  E\left[\, A_1 \,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\,\,A_2\,\right]=
+   \left[\, EA_1 \,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\,\,\,EA_2\,\right].
+ 
+
 $$
 
 A series of $k$ row operations can be mimicked by $k$ multiplications with elementary matrices:
 
 $$
  \begin{array}{ccl}
-   \left[\, A \quad \rule[-.5ex]{0.1ex}{2.5ex}\quad I\,\right]&\sim& 
-   \left[\, E_1A \quad \rule[-.5ex]{0.1ex}{2.5ex}\quad E_1I\,\right]  \sim  
-   \left[\,E_2 E_1A \quad \rule[-.5ex]{0.1ex}{2.5ex}\quad \,E_2E_1I\,\right]\sim
+   \left[\, A \,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\, I\,\right]&\sim& 
+   \left[\, E_1A \,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\, E_1I\,\right]  \sim  
+   \left[\,E_2 E_1A \,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\, \,E_2E_1I\,\right]\sim
    \ldots  \sim \\
    &\sim&
-   \left[\,E_k\cdots E_2 E_1A \quad \rule[-.5ex]{0.1ex}{2.5ex}\quad E_k\cdots E_2E_1I\,\right]   =
-    \left[\, I \quad \rule[-.5ex]{0.1ex}{2.5ex}\quad B\,\right]. 
+   \left[\,E_k\cdots E_2 E_1A \,\,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\,\, E_k\cdots E_2E_1I\,\right]   =
+    \left[\, I \,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\,B\,\right]. 
  \end{array}
 $$
 
@@ -1208,7 +1238,9 @@ For non-square matrices this statement is not correct. See exercises in Grasple 
 If $A$ is not invertible, then the outcome of the row reduction of
 
 $$
-    \left[\, A \quad \rule[-.5ex]{0.1ex}{2.5ex}\quad\,I\,\right]
+
+    \left[\, A \,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\,I\,\right]
+
 $$
 
 will also lead to the correct answer:  as soon as it is clear that $A$ cannot be row reduced to $I$ we can conclude that $A$ is not invertible.
@@ -1238,25 +1270,25 @@ The short way:
 
 $$
  \begin{array}{rcl}
-\left[\begin{array}{rrr|r}1 &  4 & 1 &  0\\2 & 6 & 0 & 1
+\left[\begin{array}{rr|rr}1 &  4 & 1 &  0\\2 & 6 & 0 & 1
 \end{array}\right]\begin{array}{l}
 [R_1] \\
 {[R_2-2R_1]} \\
 \end{array}\!\!\!   
     &\sim&
-\left[\begin{array}{rrr|r}1 &  4 & 1 &  0\\0 & -2 & -2 & 1
+\left[\begin{array}{rr|rr}1 &  4 & 1 &  0\\0 & -2 & -2 & 1
 \end{array}\right]\begin{array}{l}
 [R_1+2R_2] \\
 {[R_2]} \\
 \end{array} \\ 
     &\sim&
-\left[\begin{array}{rrr|r}1 &  0 & -3 &  2\\0 & -2 & -2 & 1
+\left[\begin{array}{rr|rr}1 &  0 & -3 &  2\\0 & -2 & -2 & 1
 \end{array}\right]\begin{array}{l}
 [R_1] \\
-{[(-\frac12)R_1]} \\
-\end{array} \,\,\,\,\,
-    \sim \,\,
-\left[\begin{array}{rrr|r}1 &  0 & -3 &  2\\0 & 1 & 1 & -\nicefrac12
+[(-\frac12)R_1] \\
+\end{array} \\ 
+    &\sim&
+\left[\begin{array}{rr|rr}1 &  0 & -3 &  2\\0 & 1 & 1 & -\nicefrac12
 \end{array}\right]
     \end{array}
 $$
@@ -1275,15 +1307,15 @@ End of story.
 To see how  the proof of {prf:ref}`Prop:MatrixInv:Algorithm` works for this specific matrix, we will
 give a derivation using  elementary matrices.  
 
-First step: row replacement with entry on  position (1,1) as a first pivot:
+First step: row replacement with the entry on  position (1,1) as a first pivot:
 
 $$
   \begin{bmatrix}
               1 &  0  \\  -2 & 1
     \end{bmatrix}\,
-\left[\begin{array}{rrr|r}1 &  4 & 1 &  0\\2 & 6 & 0 & 1
+\left[\begin{array}{rr|rr}1 &  4 & 1 &  0\\2 & 6 & 0 & 1
 \end{array}\right]     \,\,=\,\,
-\left[\begin{array}{rrr|r}1 &  4 & 1 &  0\\0 & -2 & -2 & 1
+\left[\begin{array}{rr|rr}1 &  4 & 1 &  0\\0 & -2 & -2 & 1
 \end{array}\right], \quad E_1 = \begin{bmatrix} 1 &  0  \\  -2 & 1 \end{bmatrix}.
 $$
 
@@ -1293,10 +1325,10 @@ $$
   \begin{bmatrix}
               1 &  2  \\  0 & 1
     \end{bmatrix}\,
-\left[\begin{array}{rrr|r}1 &  4 & 1 &  0\\0 & -2 & -2 & 1
+\left[\begin{array}{rr|rr}1 &  4 & 1 &  0\\0 & -2 & -2 & 1
 \end{array}\right]
      \,\,=\,\,
-\left[\begin{array}{rrr|r}1 &  0 & -3 &  2\\0 & -2 & -2 & 1
+\left[\begin{array}{rr|rr}1 &  0 & -3 &  2\\0 & -2 & -2 & 1
 \end{array}\right], \quad E_2 = \begin{bmatrix} 1 &  2 \\  0 & 1 \end{bmatrix}.
 $$
 
@@ -1306,10 +1338,10 @@ $$
   \begin{bmatrix}
               1 &  0  \\  0 & -\nicefrac12
     \end{bmatrix}\,
-\left[\begin{array}{rrr|r}1 &  0 & -3 &  2\\0 & -2 & -2 & 1
+\left[\begin{array}{rr|rr}1 &  0 & -3 &  2\\0 & -2 & -2 & 1
 \end{array}\right]
     \,\,=\,\,
-\left[\begin{array}{rrr|r}1 &  0 & -3 &  2\\0 & 1 & 1 & -\nicefrac12
+\left[\begin{array}{rr|rr}1 &  0 & -3 &  2\\0 & 1 & 1 & -\nicefrac12
 \end{array}\right],\quad E_3 = \begin{bmatrix} 1 &  0  \\   0 & -\nicefrac12 \end{bmatrix}. 
 $$
 
@@ -1321,7 +1353,7 @@ $$
      \begin{bmatrix}  1 &  0  \\  -2 & 1 \end{bmatrix}\right)\,A
      = 
       \begin{bmatrix}   -3 &  2  \\  1 & -\nicefrac12  \end{bmatrix}A
-     = I 
+     = I, 
 $$
 
 which reconfirms
@@ -1340,7 +1372,7 @@ $$
 
 In the previous subsections quite a few properties of invertible matrices came along, either explicitly or implicitly. For future reference we list them in a theorem.
 
-Recall: by definition a (square) matrix $A$ is invertible (or: regular) if and only if there exists a matrix $B$ for which
+Recall that by definition a (square) matrix $A$ is invertible (or regular) if and only if there exists a matrix $B$ for which
 
 $$
   AB = BA= I.
@@ -1381,11 +1413,19 @@ $A$ is row equivalent to the identity matrix $I_n$;
 
 $A$ has independent columns;
 		
-
 </li>
+
+<li>
+
+The equation $A\vect{x} = \vect{0}$ has only the trivial solution $\vect{x} = \vect{0}$;
+		
+</li>
+
 <li>
 
 $A$ can be written as a product of elementary matrices:
+
+<BR>
 
 $$
 A = E_1E_2\cdots E_k.		
