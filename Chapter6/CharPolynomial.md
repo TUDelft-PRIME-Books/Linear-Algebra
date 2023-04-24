@@ -102,7 +102,7 @@ $$
 The last expression becomes 0  exactly for the values
 
 $$
- \lambda_1 = u_{11}, \lambda_2 = u_{22}$,    $\lambda_3 = u_{33}.
+ \lambda_1 = u_{11}, \lambda_2 = u_{22},\qquad    \lambda_3 = u_{33}.
 $$
 
 So for a $3 \times 3$ upper triangular matrix the eigenvalues are the diagonal entries.
