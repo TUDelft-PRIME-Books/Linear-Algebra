@@ -155,8 +155,9 @@ A\vect{v} = \left[\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array}\right]
 $$
 
 since such a $c$ should simultaneously satisfy  $2c = -6$  and  $(-2)c = 0$.
+<BR>
 So  $\vect{v} = \begin{bmatrix} 2\\-2 \end{bmatrix}$ is not an  eigenvector of $A$.
-See also Figure {numref}`Figure %s <Fig:Eigenvalues:Eigenvector-no-Eigenvector>`
+See also  {numref}`Figure %s <Fig:Eigenvalues:Eigenvector-no-Eigenvector>`
 
 
 ::::{figure} Images/Fig-Eigenvalues-Eigenvector-no-Eigenvector.svg
@@ -394,7 +395,7 @@ for the eigenvalue $\lambda_1 = -1$.
 We know that we can do so by row reducing the homogeneous linear system  $[A - (-1)I | \vect{0}]$.
 
 $$
-[A - (-1)I | \vect{0}] = \left[\begin{array}{ccc|c} 2 & 2 & 2 &0\\ 2 & 2 & 2 &0\\ 2 & 2 & 2&0  \end{array}\right]
+[A - (-1)I \,|\, \vect{0}] = \left[\begin{array}{ccc|c} 2 & 2 & 2 &0\\ 2 & 2 & 2 &0\\ 2 & 2 & 2&0  \end{array}\right]
  \sim
 \left[\begin{array}{ccc|c} 1 & 1 & 1 &0\\ 0 & 0 & 0 &0\\ 0 & 0 & 0  &0\end{array}\right]
 .
@@ -558,8 +559,7 @@ This is a matrix of rank 2, and $\begin{bmatrix} 1  \\1\\1 \end{bmatrix}$ can be
 ::::::{prf:proposition}
 :label: Prop:Eigenvalues:IndepEigenvectors
 
-Suppose that $\vect{v}_1,   \ldots,   \vect{v}_k$  are (nonzero) eigenvectors of the matrix $A$ for the $k$  **different** eigenvalues $\lambda_1, \ldots, \lambda_k$.
-
+Suppose that $\vect{v}_1,   \ldots,   \vect{v}_k$  are (nonzero) eigenvectors of the matrix $A$ for  $k$  **different** eigenvalues $\lambda_1, \ldots, \lambda_k$.
 Then $\{ \vect{v}_1,  \ldots,  \vect{v}_k  \}$ is a linearly independent set.
 
 ::::::
@@ -567,7 +567,8 @@ Then $\{ \vect{v}_1,  \ldots,  \vect{v}_k  \}$ is a linearly independent set.
 
 ::::::{prf:proof}
 
-%:label: Eq:v_l-in-Span
+<BR>
+
 We will show that the set $\{ \vect{v}_1,  \ldots,  \vect{v}_k  \}$  cannot be linearly dependent.
 Namely, if it were, then one of the vectors would be a linear combination of its predecessors.  Suppose  $\vect{v}_{\ell}$,
 is the first one,
@@ -576,32 +577,42 @@ i.e.  $\vect{v}_{\ell} \in \Span{\vect{v}_1,  \ldots,  \vect{v}_{\ell-1}}$, wher
 So, let
 
 
+
 :::{math}
 :label: Eq:v_l-in-Span
 
-\vect{v}_{\ell} = c_1 \vect{v}_1 +   \ldots + c_{\ell-1}  v_{\ell-1}.
+\vect{v}_{\ell} = c_1 \vect{v}_1 +   \ldots + c_{\ell-1}  \vect{v}_{\ell-1}.
+
 
 :::
 
 
 Then
 
+
 $$
-\lambda_{\ell}\vect{v}_{\ell} = c_1 \lambda_{\ell}\vect{v}_1 +   \ldots + c_{\ell-1} \lambda_{\ell} v_{\ell-1}.
+\lambda_{\ell}\vect{v}_{\ell} = c_1 \lambda_{\ell}\vect{v}_1 +   \ldots + c_{\ell-1} \lambda_{\ell} \vect{v}_{\ell-1}.
 $$
 
 On the other hand, if we multiply both sides of Equation {eq}`Eq:v_l-in-Span` by $A$, we find that
 
 
+$$
+
+A\vect{v}_{\ell} = \underline{\lambda_{\ell}\vect{v}_{\ell}}=  A(c_1 \vect{v}_1 +   \ldots + c_{\ell-1}  \vect{v}_{\ell-1}) = \underline{c_1 \lambda_1\vect{v}_1 +   \ldots + c_{\ell-1} \lambda_{\ell-1} \vect{v}_{\ell-1}}.
+
+$$
+
+
+From this we extricate
+
 :::{math}
 :label: Eq:v_l-in-Span_2
 
-A\vect{v}_{\ell} = \underline{\lambda_{\ell}\vect{v}_{\ell}}=  A(c_1 \vect{v}_1 +   \ldots + c_{\ell-1}  \vect{v}_{\ell-1}) = \underline{c_1 \lambda_1\vect{v}_1 +   \ldots + c_{\ell-1} \lambda_{\ell-1} v_{\ell-1}}.
-
+\lambda_{\ell}\vect{v}_{\ell} =  c_1 \lambda_1\vect{v}_1 +   \ldots + c_{\ell-1} \lambda_{\ell-1} \vect{v}_{\ell-1}.
 :::
 
-
-Subtracting the underlined parts of Equation {eq}`Eq:v_l-in-Span_2` from Equation {eq}`Eq:v_l-in-Span`   gives
+Subtracting  Equation {eq}`Eq:v_l-in-Span_2` from Equation {eq}`Eq:v_l-in-Span`  gives
 
 $$
 \lambda_{\ell}\vect{v}_{\ell} - \lambda_{\ell}\vect{v}_{\ell} = \vect{0} =
@@ -612,7 +623,7 @@ So,  a linear combination of the vectors $\vect{v}_1,  \ldots,  \vect{v}_{\ell-1
 Because of the assumption of linear independence of  the first $\ell-1$ vectors  $\vect{v}_1,   \ldots ,  \vect{v}_{\ell-1}$, it follows that all coefficients must be zero, i.e.
 
 $$
-c_1(\lambda_1 - \lambda_{\ell}) = 0,  \quad \ldots  \quad,  \quad  c_{\ell-1}(\lambda_{\ell-1} - \lambda_{\ell}) = 0.
+c_1(\lambda_1 - \lambda_{\ell}) = 0,  \quad \ldots  \,,  \quad  c_{\ell-1}(\lambda_{\ell-1} - \lambda_{\ell}) = 0.
 $$
 
 Since  all $\lambda_i$  are different, all differences $(\lambda_1 - \lambda_{\ell}), \ldots, (\lambda_{\ell-1} - \lambda_{\ell})$
@@ -621,13 +632,13 @@ are nonzero,
 and we can conclude that
 
 $$
-c_1 = 0, \ldots, c_{\ell -1} = 0.
+c_1 = 0, \,\ldots,\,c_{\ell -1} = 0.
 $$
 
 But then
 
 $$
-\vect{v}_{\ell} = c_1 \vect{v}_1 +   \ldots + c_{\ell-1}  v_{\ell-1} = \vect{0},
+\vect{v}_{\ell} = c_1 \vect{v}_1 +   \ldots + c_{\ell-1}  \vect{v}_{\ell-1} = \vect{0},
 $$
 
 which is impossible, as the assumption was that  $\vect{v}_{\ell}$  is an eigenvector.
@@ -757,11 +768,10 @@ This non-trivial solution $\vect{v}$ is then an eigenvector for the eigenvalue 0
 
 All steps can be reversed:
 if $\vect{v}$ is an eigenvector for the eigenvalue 0,  then  $A\vect{v} = 0\vect{v}=\vect{0} $,  for a nonzero vector $\vect{v}$.
-
+<BR>
 This implies that the matrix $A$ has linearly dependent columns. And that in its turn is equivalent to the statement that the matrix $A$ is singular.
 
 ::::::
-
 
 
 ::::::{prf:example}

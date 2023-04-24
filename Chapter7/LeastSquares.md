@@ -4,19 +4,23 @@
 (SubSec:LeastSquares:Introduction)=
 ## Introduction 
 
-In Chapter 2, especially {numref}`Section %s <Section:LinSystems>`,  we studied linear systems.  One way to write them down was  as a matrix-vector equation:  $A\vect{x} = \vect{b}$
+In Chapter 2, especially {numref}`Section %s <Section:LinSystems>`,  we studied linear systems.  One way to write them down was  as a matrix-vector equation:  $A\vect{x} = \vect{b}$. We saw that a linear system could be either consistent or inconsistent. And if a system was inconsistent, that would then be the end of the story.
 
-A linear system could be either consistent or inconsistent. If a system were inconsistent, that would be end of story.
+In this section we will reconsider the inconsistent situation and ask ourselves the question whether there is a vector $\vect{x}$  that is in a  sense the 'best possible' alternative to a solution.
 
-In this section we will reconsider the inconsistent situation and ask ourselves the question whether there is a vector $\vect{x}$  that is in a  sense the 'best possible' solution.
-
-One common situation where an inconsistent linear system arises quite naturally is the following.
+One common situation where an inconsistent linear system arises quite naturally is fitting a line through a set of points.
 Suppose $n \geq 3$ points  $(x_1,y_1), \ldots, (x_n,y_n)$ in the plane are given. 
 Which line best fits  this set of points?
 
-There are different ways to define what is the *best* line.   For instance,  we may mean the line that minimizes the sum of the distances of the points to the line.
-Or,  we can take  the line for which the sum of vertical distances from the points to the line is minimal.
-See Figure . . .
+There are different ways to define what is the *best* line.   For instance,  we may mean the line that minimizes the sum of the distances of the points to the line.  From a purely geometric point of view that seems the most natural way.
+Or,  we can take  the line for which the sum of vertical distances from the points to the line, i.e.,
+
+$$
+  S = \sum_{i=1}^{n} |y_i - (a + bx_i)|
+$$
+
+is minimal. This approach makes sense in a physicial context where typically the $x$-variable may be an input variable over which a researcher has control, and $y$ is some output variable which may be liable to fluctuations and/or uncertainties.
+See {numref}`Figure %s <Fig:LeastSquares:BestLines>` for both interpretations of 'best'.
 
 :::{figure} Images/Fig-LeastSquares-BestLines.svg
 :name: Fig:LeastSquares:BestLines
@@ -25,10 +29,10 @@ What is the best best line?
 :::
 
 
-Both are sensible ideas.  However, to turn these two ideas into an algorithm to find the best line  not as straightforward as the computations that come up if we put the question into the realm of linear algebra.
+Both are sensible ideas.  However, to turn any of these two ideas into an algorithm to find the best line is not as straightforward as the computations that come up if we put the question into the realm of linear algebra.
 And there it will turn out to be the problem of an inconsistent linear system.
 
-Ideally we would find parameter  $a$ and $b$ such that the line with the equation
+Ideally there are parameters  $a$ and $b$ such that the line with the equation
 
 $$ 
     y = ax + b
@@ -63,7 +67,7 @@ will be satisfied simultaneously.  This only happens if the matrix-vector equati
        \end{array}\right] 
 :::
 
-is consistent.
+is consistent. Which generally is not the case.
 
 
 
@@ -72,63 +76,120 @@ We will come back to this question in   {numref}`Subsection %s <SubSec:LeastSqua
 
 
 (SubSec:LeastSquares:NormalEquations)=
-## Normal Equations
+## Least Squares Solutions
 
-We start by defining what we consider to be the 'optimal' solution of a linear system   $A\vect{x} = \vect{b}$. 
+Let $A$ be an $m \times n$ matrix with columns $\vect{a}_1, \ldots, \vect{a}_n$. 
+<BR>
+We have seen ({numref}`Section %s <Sec:MatVecProduct>`,  {prf:ref}`Rem:MatVecProd:EquivalentEquations`) that the  linear system  
+
+$$
+  A\vect{x} = \vect{b}
+$$
+
+is equivalent to the vector equation
+
+$$
+  x_1\vect{a}_1 + \ldots + x_1\vect{a}_n = \vect{b}.
+$$
+
+What we can do if the linear system is inconsistent, thus if 
+
+$$
+  \vect{b} \neq \Span{\vect{a}_1, ... , \vect{a}_n},
+$$
+
+is to try to find the *best approximation* of the vector $\vect{b}$ with a vector in 
+$\Span{\vect{a}_1, ... , \vect{a}_n}$.   This is the idea behind the following definition.
+
 
 ::::{prf:definition} 
-:label: Dfn:LeastSquares:LS-Solution
 
 Let $A$ be an $m\times n$ matrix and $\vect{b}$  a vector in $\R^{m}$.
-A vector  $\hat{\vect{x}}$ is called a **least squares solution**  of the linear system   $A\vect{x} = \vect{b}$
-if for every  $\vect{x}$ in $\R^n$  the inequality
+A vector  $\hat{\vect{x}}$ is called a **least squares solution**  of the linear system   $A\vect{x} = \vect{b}$  if for every  $\vect{x}$ in $\R^n$  the inequality
 
 $$
    \norm{A\hat{\vect{x}} - \vect{b}} \leq \norm{A\vect{x} - \vect{b}}
 $$
-
 holds.
 
+The vector  $ A\hat{\vect{x}} - \vect{b} $ is   called the vector of the **residues**, and the norm of this vector, i.e.,
+
+$$
+    \norm{A\hat{\vect{x}} - \vect{b}} 
+$$
+
+is called the **least squares error**.
+
 ::::
+
+
 
 ::::{prf:remark}
 :label:  Rem:LeastSquares:BestLinComb
 
-Note that  
+By definition $A\hat{\vect{x}} = \hat{x}_1\vect{a}_1  + \ldots + \hat{x}_n\vect{a}_n$ is best approximation of $\vect{b}$ with vectors in $\Span{\vect{a}_1, ... , \vect{a}_n}$.
+
+By minimizing $\norm{A\vect{x} - \vect{b}}$ we are in fact minimizing the sum of the squares of the errors.  This explains the name *least squares error*.
 
 $$
    A\hat{\vect{x}} - \vect{b} = \hat{x}_1\vect{a}_1 + \ldots +  \hat{x}_n\vect{a}_n - \vect{b}.
 $$ 
 
 So a least squares solution yields a linear combination  of the columns of $A$ that has a minimal distance to 
-$\vect{b}$.   The distance between two vectors  $\vect{u}$ and $\vect{v}$ in $\R^n$ is defined as   
+$\vect{b}$.   
+
+For a *consistent*  linear system a least squares solution will be an actual solution,
+i.e.  $A\hat{\vect{x}} - \vect{b} = \vect{0}$.  In this case the least squares error
 
 $$
-   \norm{\vect{u} - \vect{v}} = \sqrt{(u_1-v_1)^2 + (u_2-v_2)^2 + \ldots + (u_n-v_n)^2},
+  \norm{A\hat{\vect{x}} - \vect{b}} =\norm{\vect{b} - \vect{b}} =\norm{\vect{0}} 
 $$
 
-so in a way we are minimizing a sum of of squares This explains the name *least squares* solution.
+will be zero.
+::::
 
-In the situation where we want to fit a line, and we have the linear system as in Equation 
-{eq}`Eq:LeastSquares:Linefit`, the expression  $\norm{A\vect{x} - \vect{b}}$  comes down to
+::::{prf:remark}
+:label:  Rem:LeastSquares:Linefit
+
+In the situation where we want to fit a line  $y = ax + b$, we can take as 'best' parameters the *least squares* solution of the linear system as in Equation 
+{eq}`Eq:LeastSquares:Linefit`, 
+
+$$
+  \left[\begin{array}{cc} 
+        1 & x_1 \\ 1 & x_2 \\ \vdots & \vdots \\ 1 & x_n 
+       \end{array}\right]
+       \left[\begin{array}{c} 
+        a \\ b
+       \end{array}\right] =
+        \left[\begin{array}{c} 
+        y_1 \\ y_2 \\  \vdots \\ y_n 
+       \end{array}\right]. 
+$$
+
+The interpretation of the 'error vector' $A\vect{x} - \vect{b}$ then becomes
+
+$$
+   \left[\begin{array}{c} 
+        a+bx_1 - y_1 \\ a+bx_2 - y_2 \\ \vdots  \\ a+bx_n - y_n 
+       \end{array}\right]
+$$
+
+and the error  $\norm{A\vect{x} - \vect{b}}$  comes down to
 
 $$
   \sqrt{ \big(y_1 - (ax_1+b)\big)^2 + \ldots + \big(y_n - (ax_n+b)\big)^2}.
 $$
 
-The differences  
+The least squares solution $(\hat{a},\hat{b})$  minimizes this error, so in fact it minimizes the sum of the squares
 
 $$
- y_i - (ax_i+b)
-$$ 
-
-are called the *residues*.  So if we use this approach to find a best possible solution, we are in fact minimizing the sum of the squares of the residues.
-
-
+   \sum_{i=1}^{n}  \big(y_i - (ax_i+b)\big)^2.
+$$
+  
 ::::
 
 
-The questions we will answer in this subsection are
+The questions we will address  are
 
 <ol type ="i">
 <li>
@@ -139,17 +200,19 @@ Does a least squares solution always *exist*?
 
 <li>
 
+How to *compute* the least squares solution(s)?
+
+</li> 
+
+<li>
+
 If a least squares solution exists,  is it *unique*?
 
 </li>
 
-<li>
-
-How to *compute* the least squares solution(s)?
-
-</li>
 
 </ol>
+
 
 So let us consider these questions one by one.
 
@@ -162,13 +225,26 @@ For each linear system $A\vect{x} = \vect{b}$, where $A$ is an $m \times n$ matr
 
 ::::{prf:proof}
 In {prf:ref}`Rem:LeastSquares:BestLinComb` it was noted that a least squares solution corresponds to the vector in Col $A$  that is closest to $\vect{b}$.   
-From Section {numref}`Sec:Orthogonality` (Orthogonality), {prf:ref}`Prop:Orthogonality:BestApprox`  we know that the vector in Col $A$  that is closest to $\vect{b}$  is precisely the orthogonal projection of $\vect{x}$ onto the Span$\{\vect{a}_1,\ldots,\vect{a}_n\}$.
+
+The vector in Col $A$  that is closest to $\vect{b}$  is precisely the orthogonal projection of $\vect{x}$ onto Col $A$.  (See {numref}`Sec:Orthogonality` (Orthogonality), {prf:ref}`Prop:Orthogonality:BestApprox`.)
 
 This projection, a linear combination of the colums of $A$, always exists.
 
 The coefficients of this linear combination then give a least squares solution.  
 
 Lastly, these coefficients are unique if and only if the columns of $A$ are linearly independent. 
+
+::::
+
+
+::::{margin}
+
+:::{admonition} {prf:ref}`Dfn:Orthogonality:OrthoProjection`. 
+
+Let $V$ be a subspace of $\R{n}$ and let $\vect{v}_{1},...,\vect{v}_{k}$ be an orthogonal basis for $V$. For any $\vect{w}$ in $\R^{n}$, we define the *orthogonal projection* of $\vect{w}$ on $V$ as
+
+$$\proj_{V}(w)=\frac{\vect{w}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{w}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}_{k}.$$
+
 
 ::::
 
@@ -185,17 +261,15 @@ $$
        \end{array}
   \right.$$
 
-According to {prf:ref}`Prop:LeastSquares:Existence` the least squares solution contains the coefficients of the orthogonal projection of  the vector 
+According to {prf:ref}`Prop:LeastSquares:Existence` the least squares solution consists of the coefficients of the orthogonal projection of  the vector 
 $
   \vect{b} = \left[ \begin{array}{c} 9 \\ 7 \\ 11 \end{array}   \right]
 $
-onto
-$
- \Span{\vect{a}_1, \vect{a}_2} = 
-\Span{\left[ \begin{array}{c} 1 \\ 2 \\ 3 \end{array}   \right], \left[ \begin{array}{c} 1 \\ -2 \\ 1 \end{array} \right]}
-$.
+onto  $\Span{\vect{a}_1, \vect{a}_2} = \Span{\left[ \begin{array}{c} 1 \\ 2 \\ 3 \end{array}   \right], \left[ \begin{array}{c} 1 \\ -2 \\ 1 \end{array} \right]}$.
 
-Since the vectors $\vect{a}_1$ and $\vect{a}_2$ are orthogonal, this projection is given by
+In this first example we have chosen  $\vect{a}_1$ and $\vect{a}_2$ are *orthogonal*. 
+
+So by the projection formula for an orthogonal basis (see side note), this projection is given by
 
 $$
    \dfrac{\vect{b}\ip\vect{a}_1}{\vect{a}_1\ip\vect{a}_1}\vect{a}_1 +
@@ -203,7 +277,7 @@ $$
    \dfrac{56}{14}\vect{a}_1 + \dfrac{6}{6}\vect{a}_2 = 4\vect{a}_1 + 1\vect{a}_2.
 $$
 
-So the least squares solution is found to be  $\hat{\vect{x}} = \left[ \begin{array}{c} 4 \\ 1 \end{array}   \right]$.
+And then the least squares solution is found to be  $\hat{\vect{x}} = \left[ \begin{array}{c} 4 \\ 1 \end{array}   \right]$.
 
 For this vector we find 
 
@@ -219,44 +293,11 @@ $$
 In {prf:ref}`Ex:LeastSquares:OrthogExample` the coefficients of the orthogonal projection were quickly found due to the fact that the vectors  $\vect{a}_1$ and $\vect{a}_2$ were orthogonal. 
 In  {numref}`Section %s <Sec:Gram-Schmidt>` we saw how we can construct an orthogonal basis from an arbitrary basis. And then we can use the projection formula of  {numref}`Section %s <Sec:Orthogonality>` to find the orthogonal projection.  However, we will see that this is an unnecessary detour.
 
-::::{prf:proposition} 
-:label: Prop:LeastSquares:InvertibleATA
 
-Suppose  $A$ is an $m \times n$ matrix.  If  the columns of $A$ are linearly independent then
-the matrix  $A^TA$  is invertible.
+(SubSec:LeastSquares:NormalEquations)=
+## Normal Equations
 
-::::
-
-
-::::{prf:proof}
-
-In fact, something stronger holds:  
-
-:::{math} 
-:label: Eq:LeastSquares:InvertibilityATA
-
-   A\vect{x}= \vect{0}  \quad \iff \quad A^TA\vect{x} = \vect{0}.
-:::
-
-First  if  $A\vect{x}= \vect{0}$,  then clearly   $A^TA\vect{x} = A^T\vect{0} = \vect{0}$.
-
-To prove the converse, suppose $A^TA\vect{x} = \vect{0}$,  then $\vect{x}^TA^TA\vect{x} = \vect{x}^T\vect{0} = \vect{0}$ too.  
-
-Now realize that  $\vect{x}^TA^TA\vect{x} = (A\vect{x})^TA\vect{x} = \norm{A\vect{x}}^2$.
-
-So  $A^TA\vect{x} = \vect{0}$  implies $\norm{A\vect{x}^2} = 0$, and thus it follows that  $\vect{x}=0$.
-
-
-The equivalence  {eq}`Eq:LeastSquares:InvertibilityATA` implies:  if  $A$ has linearly independent columns,
-then  $A\vect{x} = \vect{0}$ has  $\vect{x}= \vect{0}$ as only solution, so $A^TA\vect{x} = \vect{0}$  has
-$\vect{x}= \vect{0}$ as only solution.  This means that  $A^TA$ is invertible. These steps can be reversed, showing that  $A$ has linearly independent columns if  $A^TA$ is invertible.
-
-
-::::
-
-
-
-
+There is a direct way to find the coefficients of the orthogonal projection onto Col$ A$ if the columns are not orthogonal.
 
 
 
@@ -275,7 +316,7 @@ Then the  system of linear equations
 A^TA\vect{x} = A^T\vect{b}
 :::
 
-is always  consistent.  This system is called the system of *normal equations*.
+is always  consistent.  The equations in this system are called the  **normal equations**.
 
 Any solution $\hat{\vect{x}}$ of the normal equations is a least squares solution.
 
@@ -296,7 +337,7 @@ $$
         x_1  &+&  2x_2  & +& x_3& =& 20 \\
         2x_1 &+&  x_2 &+& x_3&=& 20 \\
         3x_1 &+&2 x_2 & +& 4x_3&=& 40\\
-        2x_1 &+& x_2 & +& 3x_3&=& 30
+        2x_1 &+& x_2 & +& 3x_3&=& 30.
        \end{array}
   \right.
   $$
@@ -324,7 +365,14 @@ $$
   \right].
 $$
 
-The least squares solution is the last column in this matrix.
+The least squares solution can be read off from the last column in this matrix.
+
+$$
+  \hat{\vect{x}} =  \left[       \begin{array}{c} 
+         16/3 \\   5 \\   4
+       \end{array}
+  \right]. 
+$$
 
 ::::
 
@@ -340,7 +388,9 @@ $$
    c_1\vect{a}_1 + \ldots + c_n\vect{a}_n
 $$
 
-for certain constants  $c_1, \ldots c_n$.  If $A$ has independent columns, these constants are unique.
+for certain constants  $c_1, \ldots c_n$.  
+% If $A$ has independent columns, these constants are unique.
+
 
 By the definition of the orthogonal projection we have that $(\vect{b} - (c_1\vect{a}_1 + \ldots + c_n\vect{a}_n))$ lies in the orthogonal complement of Col$ A$, i.e.,
 
@@ -384,11 +434,75 @@ $$
 
 So, to find the least squares solution(s) of the linear system   $A\vect{x} = \vect{b}$,  we have to solve the normal equations
 
-$$
+:::{math}
+:name: Eq:LeastSquares:NormalEquations
+
   A^TA \vect{x} = A^T\vect{b}.
-$$
+
+:::
 
 ::::
+
+If $\vect{c} =  \left[  \begin{array}{c}   c_1 \\ c_2 \\ \ldots \\ c_n   \end{array} \right]$  is the least squares solution of the linear system  $A\vect{c} = \vect{b}$,
+then  the orthogonal projection of
+$\vect{b}$ of Col$ A$ is given by 
+
+$$
+  \text{\proj}_{\text{Col} A}(\vect{b}) = c_1\vect{a}_1 + \ldots + c_n\vect{a}_n = A \vect{c}.
+$$
+
+If the columns  $\vect{a}_1, \ldots, \vect{a}_n$  of $A$ are linearly independent, the coefficients  $c_i$ are the coordinates with respect to the basis  $(\vect{a}_1, \ldots, \vect{a}_n)$, hence they are unique.  Thus in that case the normal equations
+
+$$
+  A^TA \vect{x} = A^T\vect{b}
+$$
+
+must have a unique solution.
+
+There is another way to see this, which follows from the next proposition.
+
+::::{prf:proposition}   
+:label: Prop:LeastSquares:InvertibleATA
+
+Suppose  $A$ is an $m \times n$ matrix.  If  the columns of $A$ are linearly independent then
+the matrix  $A^TA$  is invertible.
+
+::::
+
+
+::::{prf:proof}
+
+In fact, something stronger holds:  
+
+:::{math} 
+:label: Eq:LeastSquares:InvertibilityATA
+
+   A\vect{x}= \vect{0}  \quad \iff \quad A^TA\vect{x} = \vect{0}.
+:::
+
+First  if  $A\vect{x}= \vect{0}$,  then clearly   $A^TA\vect{x} = A^T\vect{0} = \vect{0}$.
+
+To prove the converse, suppose $A^TA\vect{x} = \vect{0}$,  then $\vect{x}^TA^TA\vect{x} = \vect{x}^T\vect{0} = \vect{0}$ too.  
+
+Now realize that  $\vect{x}^TA^TA\vect{x} = (A\vect{x})^TA\vect{x} = \norm{A\vect{x}}^2$.
+
+So  $A^TA\vect{x} = \vect{0}$  implies $\norm{A\vect{x}}^2 = 0$, and that means that  $A\vect{x}$ must be the zero vector$.
+
+
+The equivalence  {eq}`Eq:LeastSquares:InvertibilityATA` implies:  if  $A$ has linearly independent columns,
+then  $A\vect{x} = \vect{0}$ has  $\vect{x}= \vect{0}$ as only solution, so $A^TA\vect{x} = \vect{0}$  has
+$\vect{x}= \vect{0}$ as only solution.  This means that  $A^TA$ is invertible. 
+::::
+
+::::{exercise}
+
+Prove the following converse of {prf:ref}`Prop:LeastSquares:InvertibleATA`.
+
+For any $m \times n$ matrix $A$,   if  $A^TA$  is invertible, then the columns of $A$ must be linearly independent.
+
+::::
+ 
+
 
 
 
@@ -489,7 +603,7 @@ $$
   \left[  \begin{array}{c}  \vect{a}_1^T\vect{b} \\ \vect{a}_2^T\vect{b} \\ \ldots \\ \vect{a}_n^T\vect{b}   \end{array} \right].
 $$
 
-Since the columns are orthogaonal, all products  $\vect{a}_i^{T}\vect{a}_j = \vect{a}_i\ip\vect{a}_j$ with  $i \neq j$  are zero.  
+Since the columns are orthogonal, all products  $\vect{a}_i^{T}\vect{a}_j = \vect{a}_i\ip\vect{a}_j$ with  $i \neq j$  are zero.  
 
 Expressing the equation using  inner products we find
 
@@ -514,8 +628,8 @@ $$
      \dfrac{\vect{b}\ip\vect{a}_n}{\vect{a}_n\ip\vect{a}_n}\vect{a}_n. 
 $$
 
-::::{prf:example}
-:label: Ex:LeastSquares:QR
+::::{exercise}
+:label: Exc:LeastSquares:QR
 
 
 Show that Formula {eq}`Eq:LeastSquares:ProjbColA`  for a matrix $A$ with linearly independent columns and  QR decomposition $A = QR$  (see {prf:ref}`Thm:GramSchmidt:QR-decomp`)  simplifies  to  

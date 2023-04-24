@@ -17,6 +17,9 @@ execute:
   execute_notebooks: "off"
 exclude_patterns:
   - '.venv'
+  - Chapter8/*
+  - Chapter7/LeastSquares.md
+#  - Chapter3/LUdecomp.md
 parse:
     myst_enable_extensions:
       ## don't forget to list any other extensions you want enabled,
@@ -47,17 +50,19 @@ sphinx:
             \newcommand{\cp}{\times }
             \newcommand{\norm}[1]{\left\Vert{#1}\right\Vert}
             \newcommand{\abs}[1]{\left\vert{#1}\right\vert}
-            \newcommand{\Span}[1]{\text{Span}\left\lbrace#1\right\rbrace}
+            \newcommand{\Span}[1]{\operatorname{Span}\left\lbrace#1\right\rbrace}
             \newcommand{\Col}[1]{\ensuremath{{\rm Col\,}{#1}}}
             \newcommand{\Nul}[1]{\ensuremath{{\rm Nul\,}{#1}}}
             \newcommand{\Rank}[1]{\ensuremath{{\rm rank\,}{#1}}}
             \newcommand{\Row}[1]{\ensuremath{{\rm Row\,}{#1}}}
-            \newcommand{\Det}[1]{\text{det}\left(#1\right)}
-            \newcommand{\proj}{\text{proj} }
+            \newcommand{\Det}[1]{\operatorname{det}\left(#1\right)}
+            \newcommand{\Re}[1]{\operatorname{Re}\left(#1\right)}
+            \newcommand{\Im}[1]{\operatorname{Im}\left(#1\right)}
+            \newcommand{\proj}{\operatorname{proj} }
             \newcommand{\nicefrac}{\frac }
-            \newcommand{\mc}{\mathcal}                                                                                                     
-            \newcommand{\PB}{P_{\mathcal{B}}}                                                                                              
-            \newcommand{\CoMatrix}[2]{P_{{\mathcal #2}\leftarrow{\mathcal #1}}} 
+            \newcommand{\mc}{\mathcal}
+            \newcommand{\PB}{P_{\mathcal{B}}}
+            \newcommand{\CoMatrix}[2]{P_{{\mathcal #2}\leftarrow{\mathcal #1}}}
     mathjax3_config: 
       tex:
         inlineMath: [ ['$','$'], ['\(','\)'] ]
@@ -82,6 +87,8 @@ sphinx:
           "proj": ["\\operatorname{proj} "]
           "Span": ["\\operatorname{Span}\\left\\lbrace #1 \\right\\rbrace",1]
           "Det": ["\\operatorname{det}\\left(#1\\right)",1]
+          "Re": ["\\operatorname{Re}\\left(#1\\right)",1]
+          "Im": ["\\operatorname{Im}\\left(#1\\right)",1]
   local_extensions:
     applet: _ext/
     htmltable: _ext/
@@ -93,6 +100,7 @@ sphinx:
     - sphinx_togglebutton
     - sphinx_exercise
     - sphinx.ext.imgconverter
+
 
 latex:
   latex_engine: pdflatex

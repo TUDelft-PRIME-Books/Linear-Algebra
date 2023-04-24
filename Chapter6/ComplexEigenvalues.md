@@ -35,12 +35,12 @@ $$
 =
 \left[\begin{array}{cc|c} -1 - i & -2& 0 \\ 1 & 1-i & 0 \end{array}\right]
 \sim
-\left[\begin{array}{cc|c} 0 & \color{blue}& 0 \\ 1 & 1-i & 0 \end{array}\right]
+\left[\begin{array}{cc|c} 0 & \color{blue}0 & 0 \\ 1 & 1-i & 0 \end{array}\right]
 ,
 $$
 
 where the row operation we invoke is:  add the second row $(1+i)$ times to the first row.
-The blue {\color{blue}0}  box is the result of the calculation of
+The blue 0  is the result of the calculation of
 
 $$
 -2 + (1+i)(1-i).
@@ -87,13 +87,13 @@ $$
 Then the vector $\vect{u} = \left[\begin{array}{c} -2 \\ 1+i  \end{array}\right] $  is a natural candidate for
 an eigenvector.
 
-At first sight it then  seems that we have found two linearly independent eigenvectors for the eigenvalue $\lambda_1 = 2+i$.
+At first sight it  seems that we have found two linearly independent eigenvectors for the eigenvalue $\lambda_1 = 2+i$.
 However, closer inspection shows that
 
 $$
 \vect{u} = \left[\begin{array}{c} -2 \\ 1+i  \end{array}\right]
 =  (1+i)  \left[\begin{array}{c}  -1+i \\1 \end{array}\right]
- = (1+i)\vect{v}
+ = (1+i)\vect{v},
 $$
 
 so the two vectors are complex multiples of each other, and hence are not linearly independent.
@@ -206,11 +206,10 @@ $$
 Equating the last expressions of both derivations yields the desired result.
 
 $$
-A(\vect{u}-i\vect{w}) = (\alpha - \beta i)(\vect{u}-i\vect{w}),
+A(\vect{u}-i\vect{w}) = (\alpha - \beta i)(\vect{u}-i\vect{w}).
 $$
 
-shows that  $A$ has the eigenvalue  $\overline{\lambda} = \alpha - \beta i$  with the corresponding eigenvector
-$\vect{u}-i\vect{w}$.
+This states exactly that  $A$ has the eigenvalue  $\overline{\lambda} = \alpha - \beta i$  with the corresponding eigenvector $\vect{u}-i\vect{w}$.
 
 ::::::
 
