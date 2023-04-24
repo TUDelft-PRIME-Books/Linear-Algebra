@@ -50,19 +50,20 @@ sphinx:
             \newcommand{\cp}{\times }
             \newcommand{\norm}[1]{\left\Vert{#1}\right\Vert}
             \newcommand{\abs}[1]{\left\vert{#1}\right\vert}
-            \newcommand{\Span}[1]{\operatorname{Span}\left\lbrace#1\right\rbrace}
+            \renewcommand{\Span}[1]{\operatorname{Span}\left\lbrace#1\right\rbrace}
             \newcommand{\Col}[1]{\ensuremath{{\rm Col\,}{#1}}}
             \newcommand{\Nul}[1]{\ensuremath{{\rm Nul\,}{#1}}}
             \newcommand{\Rank}[1]{\ensuremath{{\rm rank\,}{#1}}}
             \newcommand{\Row}[1]{\ensuremath{{\rm Row\,}{#1}}}
             \newcommand{\Det}[1]{\operatorname{det}\left(#1\right)}
-            \newcommand{\Re}[1]{\operatorname{Re}\left(#1\right)}
-            \newcommand{\Im}[1]{\operatorname{Im}\left(#1\right)}
-            \newcommand{\proj}{\operatorname{proj} }
+            \renewcommand{\det}[1]{\operatorname{det}\left(#1\right)}
+            \renewcommand{\Re}[1]{\operatorname{Re}\left(#1\right)}
+            \renewcommand{\Im}[1]{\operatorname{Im}\left(#1\right)}
+            \renewcommand{\proj}{\operatorname{proj} }
             \newcommand{\nicefrac}{\frac }
             \newcommand{\mc}{\mathcal}
             \newcommand{\PB}{P_{\mathcal{B}}}
-            \newcommand{\CoMatrix}[2]{P_{{\mathcal #2}\leftarrow{\mathcal #1}}}
+            \newcommand{\CoBmatrix}[2]{P_{{\mathcal #2}\leftarrow{\mathcal #1}}}
     mathjax3_config: 
       tex:
         inlineMath: [ ['$','$'], ['\(','\)'] ]
