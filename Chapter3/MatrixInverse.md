@@ -1003,30 +1003,25 @@ also holds. In which case we can truthfully assert that $B = A^{-1}$.
 Instead of finding the solution $X$ column by column, which gives three linear systems with the same coefficient matrix,
 
 $$
-\left[\begin{array}{rrr|r}1 &  1 & 4  & 1\\1 & -1 & -1 & 0\\2 & -2 & -4 & 0\\\end{array}\right], \quad
-  
-\left[\begin{array}{rrr|r}1 &  1 & 4  & 0\\1 & -1 & -1 & 1\\2 & -2 & -4 & 0\\\end{array}\right], \quad 
-  
+\left[\begin{array}{rrr|r}1 &  1 & 4  & 1\\1 & -1 & -1 & 0\\2 & -2 & -4 & 0\\\end{array}\right],
+\quad
+\left[\begin{array}{rrr|r}1 &  1 & 4  & 0\\1 & -1 & -1 & 1\\2 & -2 & -4 & 0\\\end{array}\right], 
+\quad 
 \left[\begin{array}{rrr|r}1 &  1 & 4  & 0\\1 & -1 & -1 & 0\\2 & -2 & -4 & 1\\\end{array}\right],                   
 $$
 
 we can solve the three linear systems simultaneously  using  a combined augmented matrix which we may denote by either
 
 $$
-
-   
-\left[\begin{array}{rrr|r|r|r}1 &  1 & 4  & 1 & 0 & 0\\1 & -1 & -1 & 0 & 1 & 0\\2 & -2 & -4 & 0 & 0 & 1\\\end{array}\right]\quad \text{or} \quad
-   
+\left[\begin{array}{rrr|r|r|r}1 &  1 & 4  & 1 & 0 & 0\\1 & -1 & -1 & 0 & 1 & 0\\2 & -2 & -4 & 0 & 0 & 1\\\end{array}\right]
+\quad \text{or} \quad   
 \left[\begin{array}{rrr|rrr}1 &  1 & 4  & 1 & 0 & 0\\1 & -1 & -1 & 0 & 1 & 0\\2 & -2 & -4 & 0 & 0 & 1\\\end{array}\right]= \left[\, A \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,I\,\right].
- 
-
 $$
 
 Let us first row reduce this matrix and then draw conclusions:
 
 $$
-    \left[\, A \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,I\,\right]=
-     
+\left[\, A \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,I\,\right]=
 \left[\begin{array}{rrr|rrr}1 &  1 & 4  & 1 & 0 & 0\\1 & -1 & -1 & 0 & 1 & 0\\2 & -2 & -4 & 0 & 0 & 1
 \end{array}\right]\begin{array}{l}
 [R_1] \\
@@ -1271,34 +1266,40 @@ The short way:
 $$
  \begin{array}{rcl}
 \left[\begin{array}{rr|rr}1 &  4 & 1 &  0\\2 & 6 & 0 & 1
-\end{array}\right]\begin{array}{l}
+\end{array}\right]
+\begin{array}{l}
 [R_1] \\
 {[R_2-2R_1]} \\
-\end{array}\!\!\!   
-    &\sim&
-\left[\begin{array}{rr|rr}1 &  4 & 1 &  0\\0 & -2 & -2 & 1
-\end{array}\right]\begin{array}{l}
+\end{array} \!\!\!   
+&\sim&
+\left[\begin{array}{rr|rr}
+    1 &  4 & 1 &  0 \\
+    0 & -2 & -2 & 1
+\end{array}\right]
+\begin{array}{l}
 [R_1+2R_2] \\
 {[R_2]} \\
 \end{array} \\ 
     &\sim&
 \left[\begin{array}{rr|rr}1 &  0 & -3 &  2\\0 & -2 & -2 & 1
-\end{array}\right]\begin{array}{l}
+\end{array}\right]
+\begin{array}{l}
 [R_1] \\
-[(-\frac12)R_1] \\
+{[(-\frac12)R_1]} \\
 \end{array} \\ 
     &\sim&
 \left[\begin{array}{rr|rr}1 &  0 & -3 &  2\\0 & 1 & 1 & -\nicefrac12
 \end{array}\right]
-    \end{array}
+\end{array}
 $$
 
 So: 
 
 $$
-  A^{-1} =  \begin{bmatrix}
-              -3 &  2  \\  1 & -\nicefrac12
-    \end{bmatrix}.
+A^{-1} =
+\begin{bmatrix}
+  -3 &  2  \\  1 & -\frac12
+\end{bmatrix}.
 $$
 
 End of story.

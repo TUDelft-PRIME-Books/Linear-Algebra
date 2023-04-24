@@ -151,7 +151,8 @@ $$
 ::::{prf:remark}
 :label: Rem:MatVecProd:EquivalentEquations
 
-From the above it follows that the  `matrix-vector equation'
+From the above it follows that the  "matrix-vector equation"
+
 $$
  \left[\begin{array}{ccccc}
             a_{11} & a_{12}&  \ldots& \ldots&  a_{1n} \\
