@@ -330,7 +330,7 @@ Furthermore,  the determinant of an elementary matrix is nonzero. Namely, for a 
 Hence,  if $m$  of the row operations are row scalings and $\ell$ of the row operations are row swaps, then
 
 $$
-\text{det}\big(E_kE_{k-1}\cdots E_1A\big)=  c_1\cdots c_m \cdot (-1)^{\ell} \det{A}  = \alpha \det{A}, 
+\det{\left(E_kE_{k-1}\cdots E_1A\right)}=  c_1\cdots c_m \cdot (-1)^{\ell} \det{A}  = \alpha \det{A}, 
 $$
 
 with $\alpha \neq 0$.
@@ -344,8 +344,7 @@ $$
 We conclude that
 
 $$
-  A \,\text{is invertible}  \,\,\iff\,\, F \,\text{is invertible} \,\,\iff\,\,
-    \det{F}  \neq 0\,\,\iff\,\,  \det{A} \neq 0$.
+  A \,\text{is invertible}  \,\,\iff\,\, F \,\text{is invertible} \,\,\iff\,\, \det{F}  \neq 0\,\,\iff\,\,  \det{A} \neq 0.
 $$
 
 

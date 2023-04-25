@@ -402,8 +402,8 @@ $$
 
 \left[\begin{array}{rrr}3 & 1 & -2\\2 & 4 & 1\\1 & 2 & 1\end{array} \right]  \begin{array}{l}
 [R_1] \\
-[R_2-2/3R_1] \\
-[R_3-1/3R_1] \\
+{[R_2-2/3R_1]} \\
+{[R_3-1/3R_1]} \\
 \end{array}\sim
 \begin{bmatrix}
 3 & 1 & -2 \\
@@ -454,8 +454,8 @@ $$
 
 \left[\begin{array}{rrr}3 & 1 & -2\\0 &{10}/{3}&{7}/{3}\\0 &{5}/{3}&{5}/{3}\end{array} \right]  \begin{array}{l}
 [R_1] \\
-[R_2] \\
-[R_3-1/2R_2] \\
+{[R_2]} \\
+{[R_3-1/2R_2]} \\
 \end{array}\sim
 \begin{bmatrix}
 3 & 1 & -2 \\
@@ -571,8 +571,8 @@ The changes we make are the following:
 \begin{align*}
 \left[\begin{array}{rrr}5 & 5 & 5\\3 & 4 & 1\\2 & 1 & 3\end{array} \right]  \begin{array}{l}
 [R_1] \\
-[R_2-\mathbf{3/5}R_1] \\
-[R_3-\mathbf{2/5}R_1] \\
+{[R_2-\mathbf{3/5}R_1]} \\
+{[R_3-\mathbf{2/5}R_1]} \\
 \end{array} &\sim 
 \begin{bmatrix}
 5 & 5 & 5 \\
@@ -587,11 +587,10 @@ L =
 \mathbf{3/5} & 1 & 0 \\
 \mathbf{2/5} & \ast & 1
 \end{bmatrix} , \\
-
 \left[\begin{array}{rrr}5 & 5 & 5\\0 & 1 & -2\\0 & -1 & 1\end{array} \right]  \begin{array}{l}
 [R_1] \\
-[R_2] \\
-[R_3-(\mathbf{-1})R_2] \\
+{[R_2]} \\
+{[R_3-(\mathbf{-1})R_2]} \\
 \end{array} 
 &\sim 
 \begin{bmatrix}
@@ -702,8 +701,8 @@ $$
 \left[\begin{array}{rrr}a^{(0)}_{11}& a^{(0)}_{12}& a^{(0)}_{13}\\a^{(0)}_{21}& a^{(0)}_{22}& a^{(0)}_{23}\\a^{(0)}_{31}& a^{(0)}_{32}&
 a^{(0)}_{33}\end{array} \right]  \begin{array}{l}
 [R_1] \\
-[R_2-m_{21}R_1] \\
-[R_3-m_{31}R_1] \\
+{[R_2-m_{21}R_1]} \\
+{[R_3-m_{31}R_1]} \\
 \end{array} \sim 
 \begin{bmatrix}
 a^{(0)}_{11}&a^{(0)}_{12}&a^{(0)}_{13} \\ 
@@ -725,8 +724,8 @@ $$
 
 \left[\begin{array}{rrr}a^{(0)}_{11}&a^{(0)}_{12}&a^{(0)}_{13}\\0&a^{(1)}_{22}&a^{(1)}_{23}\\0&a^{(1)}_{32}&a^{(1)}_{33}\end{array} \right]  \begin{array}{l}
 [R_1] \\
-[R_2] \\
-[R_3-m_{32}R_2] \\
+{[R_2]} \\
+{[R_3-m_{32}R_2]} \\
 \end{array}\sim
 \begin{bmatrix}
 a^{(0)}_{11}&a^{(0)}_{12}&a^{(0)}_{13} \\
@@ -1062,33 +1061,29 @@ Let's count the number of operations in a general case, and we can see how advan
 <ul>
 <li>
 
- For the products/divisions we have:
+For the products/divisions we have:
 
 \begin{align*}
-
 \sum_{i=1}^{n-1}(n-i)(n-i+2) &= \sum_{i+1}^{n-1} i^{2} - 2 i n + n^{2} - 2 i + 2 n \\
 &=\sum_{i=1}^{n-1}(n^2-2ni+i^2)+\sum_{i=1}^{n-1}(2n-2i)\\
 &=\sum_{i=1}^{n-1}(n-i)^2 + 2\sum_{i=1}^{n-1}(n-i) \\
 &=\sum_{i=1}^{n-1}i^2 +2\sum_{i=1}^{n-1}i \\
 &\frac{n(n-1)(2n-1)}{6}+2\frac{n(n-1)}{2} \\
 &\frac{2n^3+3n^2-5n}{6}.
-
 \end{align*}
 
 </li>
 <li>
 
- For the additions/subtractions we have:
+For the additions/subtractions we have:
 
 \begin{align*}
-
 \sum_{i=1}^{n-1}(n-i)(n-i+1) &= \sum_{i=1}^{n-1} i^{2} - 2 i n + n^{2} - i + n \\
 &=\sum_{i=1}^{n-1}(n^2-2in+i^2) + \sum_{i=1}^{n-1}(n-i) \\
 &=\sum_{i=1}^{n-1}(n-i)^2 + \sum_{i=1}^{n-1}(n-i)\\
 &=\sum_{i=1}^{n-1}i^2 + \sum_{i=1}^{n-1}i \\
 &=\frac{n(n-1)(2n-1)}{6}+\frac{n(n-1)}{2}\\
 &=\frac{n^3-n}{3}.
-
 \end{align*}
 
 </li>
@@ -1107,12 +1102,9 @@ If we just count the number of arithmetic operations to compute the $LU$ decompo
  
 
 $$
-
-
 \frac{4n^3-3n^2-n}{6}
- 
-
 $$
+
 arithmetic operations.
 
 Using similar reasoning we can calculate the number of arithmetic operations needed to solve an upper triangular linear system, which gives us $n^2$. And solving a lower triangular system with ones in the main diagonal requires $n^2-n$ arithmetic operations.
@@ -1148,14 +1140,12 @@ $10$ & $4025$ & $1565$ & $8050$ & $2515$ & $40250$ & $10115$ \\
 For the products/divisions we have:
 
 \begin{align*}
-
 \sum_{i=1}^{n-1}(n-i)(n-i+2) &= \sum_{i+1}^{n-1} i^{2} - 2 i n + n^{2} - 2 i + 2 n \\
 &=\sum_{i=1}^{n-1}(n^2-2ni+i^2)+\sum_{i=1}^{n-1}(2n-2i)\\
 &=\sum_{i=1}^{n-1}(n-i)^2 + 2\sum_{i=1}^{n-1}(n-i) \\
 &=\sum_{i=1}^{n-1}i^2 +2\sum_{i=1}^{n-1}i \\
 &\frac{n(n-1)(2n-1)}{6}+2\frac{n(n-1)}{2} \\
 &\frac{2n^3+3n^2-5n}{6}.
-
 \end{align*}
 
 </li>
@@ -1164,14 +1154,12 @@ For the products/divisions we have:
 For the additions/subtractions we have:
 
 \begin{align*}
-
 \sum_{i=1}^{n-1}(n-i)(n-i+1) &= \sum_{i=1}^{n-1} i^{2} - 2 i n + n^{2} - i + n \\
 &=\sum_{i=1}^{n-1}(n^2-2in+i^2) + \sum_{i=1}^{n-1}(n-i) \\
 &=\sum_{i=1}^{n-1}(n-i)^2 + \sum_{i=1}^{n-1}(n-i)\\
 &=\sum_{i=1}^{n-1}i^2 + \sum_{i=1}^{n-1}i \\
 &=\frac{n(n-1)(2n-1)}{6}+\frac{n(n-1)}{2}\\
 &=\frac{n^3-n}{3}.
-
 \end{align*}
 
 </li>
@@ -1193,6 +1181,3 @@ Check that the number of arithmetic operations needed to solve a linear system u
 
 </li>
 </ol>
-
-
-

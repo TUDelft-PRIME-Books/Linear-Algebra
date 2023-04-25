@@ -17,12 +17,11 @@ The determinant as a uniform scale factor for an arbitrary linear transformation
 </li>
 <li>
 
- The generalization of the formula 
+The generalization of the formula 
 
- $$ 
-\left[\begin{array}{cc} a &  b \\  c & d\end{array}   \right]
-^{-1} = \dfrac{1}{ad-bc}  \left[\begin{array}{cc} d & -b \\ -c & a\end{array}   \right]
- 
+$$ 
+\left[\begin{array}{cc} a &  b \\  c & d\end{array} \right]^{-1} 
+= \dfrac{1}{ad-bc}  \left[\begin{array}{cc} d & -b \\ -c & a\end{array}   \right]
 $$  
 
 to  $n\times n$  matrices. 
