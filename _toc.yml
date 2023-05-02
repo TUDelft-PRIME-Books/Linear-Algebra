@@ -45,6 +45,7 @@ chapters:
       - file: 'Chapter6/ComplexEigenvalues.md'
   - file: 'Chapter7/intro.md'
     sections:
+      - file: 'Chapter7/OrthoComp.md'
       - file: 'Chapter7/Orthogonality.md'
       - file: 'Chapter7/GramSchmidt.md'
       - file: 'Chapter7/LeastSquares.md'
