@@ -1,4 +1,4 @@
-current: all
+current: new
 
 new:
 	jupyter-book build  . 
