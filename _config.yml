@@ -17,7 +17,6 @@ execute:
   execute_notebooks: "off"
 exclude_patterns:
   - '.venv'
-#  - Chapter3/LUdecomp.md
 parse:
     myst_enable_extensions:
       ## don't forget to list any other extensions you want enabled,
