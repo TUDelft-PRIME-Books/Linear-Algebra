@@ -5,10 +5,42 @@
 
 When solving linear systems, it is very convenient to find an echelon form, so you can solve it using backward substitution as shown in {prf:ref}`Ex:LinSystems:I`. 
 
-In this section we will learn how to solve an $n\times n$ linear system $A\mathbf{x}=\mathbf{b}$ for which there is a unique solution, by decomposing (or factorising) the matrix $A$ into a product of two matrices. There are several methods for factorising matrices. The factorisations that we will see in this section use **direct methods**. Direct methods are methods that produce the exact solution in a finite number of steps.
+Consider the system $A\mathbf{x} = \mathbf{b}$ where 
 
-There are special cases where solving linear systems can be done quickly. These cases involve triangular or trapezoidal matrices. In general, when the matrix associated with an $m\times n$ linear system is a trapezoidal matrix we can use backward or forward substitution for solving them. The most common factorisation methods make use of these kind of matrices. This is why we will first introduce the idea of a trapezoidal and triangular matrices and then discuss the corresponding factorisation methods and their applications.
+$$A = 
+\begin{bmatrix}
+1 & 1 & 1 \\
+0 & 2 & 6 \\
+-1 & -1 & 3
+\end{bmatrix},
+\qquad
+\mathbf{b} = 
+\begin{bmatrix} 
+3 \\ 2 \\1
+\end{bmatrix}.
+$$
 
+In this section we will learn how to solve an $m\times n$ linear system $A\mathbf{x}=\mathbf{b}$ by decomposing (or factorising) a matrix into a product of two matrices. In the previous example we can express $A$ as 
+
+$$
+A = 
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+-1 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 \\
+0 & 2 & 6 \\
+0 & 0 & 4
+\end{bmatrix}.
+$$
+
+There are several methods for factorising matrices. The factorisations that we will see in this section use **direct methods**. Direct methods are methods that produce the exact solution in a finite number of steps.
+
+There are special cases where solving linear systems can be done quickly. These cases involve triangular or trapezoidal matrices. In general, when the matrix associated with an $m\times n$ linear system is a trapezoidal matrix we can use backward or forward substitution for solving them. Remember the echelon forms from {numref}`Subsec:LinSystems:RowReduction`? Echelon forms are trapezoidal matrices. 
+
+The most common factorisation methods make use of this kind of matrices. This is why we will first introduce the idea of a trapezoidal and triangular matrix and then discuss the corresponding factorisation methods and their applications.
 
 
 ## Trapezoidal and Triangular matrices
@@ -27,7 +59,7 @@ Now we are ready to define the objects that we will
 <ul>
 <li>
 
-We say that an $m\times n$ matrix $U$ is an **upper trapezoidal matrix** if all the entries below the main diagonal are zero. I.e., an upper trapezoidal matrix that has the form 
+We say that an $m\times n$ matrix $U$ is an **upper trapezoidal matrix** if all the entries below the main diagonal are zero. In other words, an upper trapezoidal matrix that has the form 
 
 
 $$
@@ -258,22 +290,22 @@ $$
 
 which is upper triangular. It is left to the reader to check that $AA^{-1}=I$.
 
-
 ::::::
 
-Before we start the proof, we will introduce the following notation. We will 
 
 ::::::{prf:proof} (of {prf:ref}`prop:PropertiesTriangularMatrices`)
 
 The proof of <a href="#Item:prop:PropertiesTriangularMatrices_sum">i.</a> follows from the fact that matrices are added component-wise. Therefore, the entries below the main diagonal of $A+B$ will be zero since both $A$ and $B$ have zero entries below the main diagonal.
  
-To prove <a href="#Item:prop:PropertiesTriangularMatrices_product">ii.</a> we fix $j < n$ and compute $AB_{(j+k)j}$ for $k=1,2,\dots, n-j$. In other words, we compute the entries below the main diagonal in column $j$:
+To prove <a href="#Item:prop:PropertiesTriangularMatrices_product">ii.</a> we fix $j < n$ and compute $AB_{(j+k)j}$ for $k=1,2,\dots, m-j$. In other words, we compute the entries below the main diagonal in column $j$:
 
 $$
-AB_{(j+k)j} = \sum_{l=1}^{n} a_{(j+k)l}b_{lj}
+AB_{(j+k)j} = \sum_{l=1}^{n} a_{(j+k)l}b_{lj}.
 $$
 
-We observe that for $l\le j$ the components $a_{(i+k)l}$ are zero, and for $l>j$ the components $b_{lj}0$ are zero. Therefore,
+If we define $A = \begin{bmatrix}\mathbf{a}_1 & \mathbf{a}_2 & \cdots & \mathbf{a}_n \end{bmatrix}$ an $m\times n$ upper trapezoidal matrix, and $B=\begin{bmatrix}\mathbf{b}_1 & \mathbf{b}_2 & \cdots & \mathbf{b}_p \end{bmatrix}$ and $n\times p$ upper trapezoidal matrix, then we can understand the previous sum as the the result of the dot product of the vectors corresponding to $\mathbf{a}_{j+k}^T$ and $\mathbf{b}_j$.
+
+We observe that for $l\le j$ the components $a_{(j+k)l}$ are zero, and for $l>j$ the components $b_{lj}0$ are zero. Therefore,
 
 \begin{align*}
 AB_{(j+k)j} &= \sum_{l=1}^{n} a_{(j+k)l}b_{lj} \\
@@ -291,11 +323,7 @@ The proof for <a href="#Item:prop:PropertiesTriangularMatricesInverse">iii.</a> 
 
 ## LU Decomposition
 
-
-
-As mentioned at the begining of this section, one of the the easiest way to solve a linear system is to factorise the matrix of coefficients by "splitting" it into a product of two trapezoidal matrices. For the following factorisation, we will name these matrices $L$ and $U$, and they will have the property that $L$ is lower triangular and $U$ is upper trapezoidal.  As you probably have guessed, we call this factorisation an $LU$ decomposition.
-
-
+As mentioned at the begining of this section, one of the ways to solve a linear system is to factorise the matrix of coefficients by "splitting" it into a product of two trapezoidal matrices. For the following factorisation, we will name these matrices $L$ and $U$, and they will have the property that $L$ is lower triangular and $U$ is upper trapezoidal.  As you probably have guessed, we call this factorisation an $LU$ decomposition.
 
 ::::::{prf:definition}
 Let $A$ be an $m\times n$ matrix. We call a $LU$
@@ -379,8 +407,9 @@ Suppose that $A=LU$ so that a linear system of equations $A\mathbf{x}=\mathbf{b}
 
 At this point the reader may think that such a decomposition involves a lot of work.  However, it takes (roughly) the same number of operations as for finding an echelon form (see {numref}`Subsec:LinSystems:RowReduction`). In addition, this method has the advantage that once the decomposition of a matrix $A$ has been found, then it is faster to solve multiple systems involving the matrix $A$. And why is that? Well, if one thinks about it, once we have an $LU$ decomposition of $A$ then we just need to solve linear systems that involve trapezoidal/triangular matrices, which are "faster" to solve than solving $A\mathbf{x}=\mathbf{b}$. We will formalise this concept below.
 
-First, we will start with a particular case of an LU decomposition and then we will move to the more general setting. Let's see how to find an LU decomposition with a complete example for the case when one does not need to exchange rows (which is not always possible), and with a square matrix of coefficients.
+The $LU$ decomposition is a particular case of the more general algorithm that we find in {numref}`Sec:PLUDecomp`
 
+The idea behind an $LU$ decomposition is to find an echelon form of the matrix of coefficients without exchanging rows, while keeping track of those changes. Let's see how to find an $LU$ decomposition with a complete example using an square matrix of coefficients. Along the rest of this subsection, we will assume that we perform **no row scaling when preforming row operations**.
 
 ::::::{prf:example} 
 We consider the matrix 
@@ -487,9 +516,9 @@ U &= F^{(2)}F^{(1)}A =
 0 & -1/2 & 1
 \end{bmatrix}
 \begin{bmatrix}
-3 & 1 & -2 \\
-0 & {10}/{3} & {7}/{3} \\
-0 & {5}/{3} & {5}/{3}
+1 & 0 & 0 \\
+-2/3 & 1 & 0 \\
+-1/3 & 0 & 1 
 \end{bmatrix}
 \begin{bmatrix}
 3 & 1 & -2 \\
@@ -534,11 +563,7 @@ In practice, we do not need to compute the product of the matrices $F^{(k)}$, an
 
 ::::::
 
-
-
-
-The following example shows how we implement the $LU$ decomposition in practice,  when no row exchanges are needed.
-
+The following example shows how we implement the $LU$ decomposition in practice. Remember that no row exchanges are needed.
 
 
 ::::::{prf:example}
@@ -629,163 +654,61 @@ $$
 
 ::::::
 
-We can see that, when no row exchanges are needed, finding an LU decomposition is a quick process. However, the process is slightly different when that is not the case.
 
-::::{prf:example}
+At this point, there are important questions that we still need to address: when does a matrix have an $LU$ decomposition? Can a matrix have more than one $LU$ decomposition? It would be convenient if there is an $LU$ decomposition, that such decomposition is unique.  
 
-Find an $LU$ decomposition of the matrix
-
-$$
-A = \begin{bmatrix}
-0 & 1 & 2 \\
-3 & 4 & 5 \\
-6 & 7 & 8
-\end{bmatrix}.
-$$
-
-::::
-
-
-At this point, there are important questions that we still need to address: when does a matrix have an $LU$ decomposition? Can a matrix have more than one $LU$ decomposition? It would be convenient if there exists an $LU$ decomposition, that such decomposition is unique.  Before answering these questions, we need to understand how to find an echelon form of a matrix without exchanging any rows in a general case.  As above, we will use a $3\times 3$ matrix as an example, but the idea works the same way for an $n\times n$ matrix.
-
-
-
-::::::{prf:example}
-:label: ex:echelonformforLUdecomp
-
-
-Suppose that we have a $3\times 3$ non-singular matrix 
- 
-$$
-A =
-\begin{bmatrix}
-a_{11} & a_{12} & a_{13} \\
-a_{21} & a_{22} & a_{23} \\
-a_{31} & a_{32} & a_{33} 
-\end{bmatrix}
-.
-$$
-
-Since $A$ is non-singular,
-there is a pivot position in every row which will allow us to follow the algorithm below. To track the changes, denote by $A^{(0)}=A$. In other words,
-
-$$
-A^{(0)}=
-\begin{bmatrix}
-a^{(0)}_{11}&a^{(0)}_{12}&a^{(0)}_{13} \\
-a^{(0)}_{21}&a^{(0)}_{22}&a^{(0)}_{23} \\
-a^{(0)}_{31}&a^{(0)}_{32}&a^{(0)}_{33}
-\end{bmatrix}
- = 
-\begin{bmatrix}
-a_{11} & a_{12} & a_{13} \\
-a_{21} & a_{22} & a_{23} \\
-a_{31} & a_{32} &
-a_{33} 
-\end{bmatrix}
-.
-$$
-
-
-
-In the first step of finding an echelon form (without exchanging rows), we subtract the first row multiplied by
-$m_{21}={a^{(0)}_{21}}/{a^{(0)}_{11}}$ 
-to the second one, and we subtract the
-first row multiplied by $m_{31} = {a^{(0)}_{31}}/{a^{(0)}_{11}}$
-to the third
-row. We call the $m_{ij}$ multipliers. Using these multipliers we obtain
-$A^{(1)}$:
- 
-
-$$
-\left[\begin{array}{rrr}a^{(0)}_{11}& a^{(0)}_{12}& a^{(0)}_{13}\\a^{(0)}_{21}& a^{(0)}_{22}& a^{(0)}_{23}\\a^{(0)}_{31}& a^{(0)}_{32}&
-a^{(0)}_{33}\end{array} \right]  \begin{array}{l}
-[R_1] \\
-{[R_2-m_{21}R_1]} \\
-{[R_3-m_{31}R_1]} \\
-\end{array} \sim 
-\begin{bmatrix}
-a^{(0)}_{11}&a^{(0)}_{12}&a^{(0)}_{13} \\ 
-0&a^{(1)}_{22}&a^{(1)}_{23} \\
-0&a^{(1)}_{32}&a^{(1)}_{33}
-\end{bmatrix}
- =
-A^{(1)}
-$$
-
-
-
-And with a second step, when subtracting the second row of $A^{(1)}$ multiplied
-by $m_{32} = {a^{(1)}_{32}}/{a^{(1)}_{22}}$ to the third one,
-we obtain an echelon form:
- 
-
-$$
-
-\left[\begin{array}{rrr}a^{(0)}_{11}&a^{(0)}_{12}&a^{(0)}_{13}\\0&a^{(1)}_{22}&a^{(1)}_{23}\\0&a^{(1)}_{32}&a^{(1)}_{33}\end{array} \right]  \begin{array}{l}
-[R_1] \\
-{[R_2]} \\
-{[R_3-m_{32}R_2]} \\
-\end{array}\sim
-\begin{bmatrix}
-a^{(0)}_{11}&a^{(0)}_{12}&a^{(0)}_{13} \\
-0&a^{(1)}_{22}&a^{(1)}_{23} \\
-0&0&a^{(2)}_{33}
-\end{bmatrix}
- = A^{(2)}
-$$
-
-
-In the previous computations, $a^{(1)}_{22} = a^{(0)}_{22}-m_{21}a^{(0)}_{12}$,
-$a^{(1)}_{32} = a^{(0)}_{32}-m_{31}a^{(0)}_{12}$, etc.
-
-
-::::::
-
-
-
-
-With the previous example we got acquainted with the notation that we will use. And now we are ready for answering the questions above.
-
+The case when there is a unique $LU$ decomposition is very special, as the following result indicates.
 
 
 ::::::{prf:theorem}
 :label: thm:existence_and_uniqueness_LU
 
 
-Suppose that $A$ is a
-non-singular $n\times n$ matrix with real entries. Then
+Suppose that $A$ is an
+ $m\times n$ matrix with real entries. Then
 <ol type = "i">
 <li id="Item:thm:existence_and_uniqueness_LU:existence">
 
- If we can find an echelon form for the matrix $A$ without exchanging rows, then there exists an $LU$ decomposition of $A$, and it has the form
+If we can find an echelon form for the matrix $A$ without exchanging rows, then there exists an $LU$ decomposition of $A$, and it has the form
  
 
 $$
-
-
 L=
 \begin{bmatrix}
 1 \\
 m_{21} &  1 \\
 \vdots &  m_{32} &\ddots  \\
 \vdots &  \vdots &\ddots & \ddots  & \\
-m_{n1} & m_{n2} & \cdots & m_{n(n-1)}    &  1 
+m_{m1} & m_{m2} & \cdots & m_{m(m-1)}    &  1 
 \end{bmatrix}
-, \qquad 
+, \quad 
 U=
 \begin{bmatrix}
 a^{(0)}_{11} & a^{(0)}_{12} & \cdots & a^{(0)}_{1n}\\
-& a^{(1)}_{22} & \cdots & a^{(1)}_{2n} \\
+& a^{(1)}_{22} & \cdots & a^{(1)}_{2n}  \\
 &             & \ddots  & \vdots \\
-&             &              &a^{(n-1)}_{nn}
-\end{bmatrix}
+&             &              &a^{(n-1)}_{nn} \\
+\\\\
+\end{bmatrix}\quad (m>n),
 $$
+
+or
+
+$$
+\begin{bmatrix}
+a^{(0)}_{11} & a^{(0)}_{12} & \cdots & a^{(0)}_{1m} &\cdots &a_{1n}^{(0)}\\
+& a^{(1)}_{22} & \cdots & a^{(1)}_{2m} & \cdots & a_{2n}^{(1)}\\
+&             & \ddots  & \vdots & & \vdots\\
+&             &              &a^{(m-1)}_{mm} & \cdots & a_{mn}^{(m-1)}\\
+\end{bmatrix}\quad (m<n),
+$$
+
+where the values $m_{ij}$ are the corresponding multiplers and the superscripts in $a_{ij}^{(k)}$ indicate that the value has been obtained after performing $k$ row operations.
 
 </li>
 <li id="Item:thm:existence_and_uniqueness_LU:uniqueness">
 
-The $LU$ decomposition is unique.
+If $A$ is an $n\times n$ non-singular matrix, then the $LU$ decomposition is unique.
 
 </li>
 </ol>
@@ -844,20 +767,16 @@ For this identity to hold true, we need all $\blacksquare$ to be one and all $\a
 
 
 $$
-
-
 L^{-1}_{2}L_1 = U_{2}U^{-1}_{1} = I,
-
-
 $$
 
 
 which leads us to $L^{-1}_2=L^{-1}_1$ so $L_2=L_1$, and 
 $U^{-1}_2=U^{-1}_1$ so $U_2=U_1$. This is a contradiction with the statement that $A$ had two different $LU$ decompositions.
 
-To prove <a href="#Item:thm:existence_and_uniqueness_LU:existence">i. </a>, suppose that $A$ is non-singular and that we can find an echelon form of $A$ without exchanging rows. Following the notation introduced in {prf:ref}`ex:echelonformforLUdecomp`, we can write the $k$-th step as a product of matrices:
+To prove <a href="#Item:thm:existence_and_uniqueness_LU:existence">i. </a>, suppose that we can find an echelon form of $A$ without exchanging rows. For simplicity on the notation, we will prove the case of a squared matrix but the reader can easily adapt the proof for the non-suqared case. 
 
-
+We can write the $k$-th step as a product of matrices:
 
 \begin{align*}
 &
@@ -892,32 +811,24 @@ a^{(0)}_{11} & \cdots & a^{(0)}_{1k} & a^{(0)}_{1(k+1)} & \cdots & a^{(0)}_{1n} 
 
 
 
-We denote the previous product by $A^{(k)}=E^{(k)}A^{(k-1)}$. Since finding an echelon form is an iterative process, we can find $A^{(n)}$ by multiplying $A^(0)$ by the corresponding $E^{(k)}$ matrices to the left:
+We denote the previous product by $A^{(k)}=F^{(k)}A^{(k-1)}$. Since finding an echelon form is an iterative process, we can find $A^{(n)}$ by multiplying $A^{(0)}$ by the corresponding $F^{(k)}$ matrices to the left:
 
 
 $$
-
-
 A^{(n)} = F^{(n-1)}F^{(n-2)}\cdots F^{(3)}F^{(2)}F^{(1)}A^{(0)}  
-
-
 $$
 
 
-Since $A^{(n-1)}$ is an upper triangular matrix, we can take it as $U$. Since all matrices $E^{(k)}$ are invertible, we can recover $A^{(0)}$ multiplying $U$ to the left by the corresponding inverse matrices:
+Since $A^{(n)}$ is an upper triangular matrix, we can take it as $U$. Since all matrices $F^{(k)}$ are invertible, we can recover $A^{(0)}$ multiplying $U$ to the left by the corresponding inverse matrices:
 
 
 $$
-
-
-A=A^{(0)}={F^{(1)}}^{-1}{F^{(2)}}^{-1}\cdots{F^{(n-1)}}^{-1}{F^{(n-1)}}^{-1}A^{(n)}
-
-
+A=A^{(0)}={F^{(1)}}^{-1}{F^{(2)}}^{-1}\cdots{F^{(n-2)}}^{-1}{F^{(n-1)}}^{-1}A^{(n)}
 $$
 
 
-So we can define $L={F^{(1)}}^{-1}{F^{(2)}}^{-1}\cdots{F^{(n-1)}}^{-1}{F^{(n-1)}}^{-1}$.
-We just need to see that $L$ is, indeed, lower triangular with ones under the diagonal, and it has the multipliers $m_{ij}$ in the entries below it. To see that, we write $F^{(k)} = I - M_k E_k$ where 
+So we can define $L={F^{(1)}}^{-1}{F^{(2)}}^{-1}\cdots{F^{(n-2)}}^{-1}{F^{(n-1)}}^{-1}$.
+We just need to see that $L$ is, indeed, lower triangular with ones on the diagonal, and that it has the multipliers $m_{ij}$ in the entries below it. To see that, we write $F^{(k)} = I - M_k E_k$ where 
 
 $$
 M_k = 
@@ -931,7 +842,23 @@ M_k =
 .
 $$
 
-Observing that
+Observe that the matrix $I-M_kE_k$ is the matrix
+
+$$
+\begin{bmatrix}
+1 &  &  &  &  &  \\
+ & \ddots &  &  &  &  \\
+ &  & 1 & & & \\
+ &  & -m_{(k+1)k} &  \\
+ &  & -m_{(k+2)k} & \ddots &  \\
+ &  & \vdots &  &  & \ddots \\
+ &  & -m_{nk} & & & & 1
+\end{bmatrix},
+$$
+
+and that $E_iM_j = 0$ for $i \le j$.
+
+Now, we take the following product:
 
 \begin{align*}
 (I-M_kE_k)(I+M_kE_k) &= I - M_kE_k + M_kE_k -M_kE_kM_kE_k \\
@@ -973,35 +900,216 @@ m_{n1} & m_{n2} & \cdots & m_{n(n-1)}    &  1
 
 ::::::
 
+(Sec:PLUDecomp)=
+## PLU Decomposition
+
+The LU decomposition is quite limitting in the sense that it requires to be able to find an echelon form of the matrix of coefficients without exchanging any rows in the process. Clearly, it is not always possible to find an echelon form of a matrix without exchanging rows. Let's see what happens when we encounter this situation.
+
+::::{prf:example}
+
+We can try to find an $LU$ decomposition of the matrix
+
+$$
+A = \begin{bmatrix}
+0 & 1 & 2 \\
+3 & 4 & 5 \\
+6 & 7 & 8
+\end{bmatrix}.
+$$
+
+In this case, we can not find an echelon form for this matrix without exchanging rows. Let's perform the following row operations:
+
+\begin{align*}
+&\begin{bmatrix}
+0 & 1 & 2 \\
+3 & 4 & 5 \\
+6 & 7 & 8
+\end{bmatrix}
+\begin{array}{l}
+[R_1] \\
+{[R_2]}\\ 
+{[R_3-2 R_2]} 
+\end{array} &\sim & 
+\begin{bmatrix}
+0 & 1 & 2 \\
+3 & 4 & 5 \\
+0 & -1 & -2
+\end{bmatrix}
+\begin{array}{l}
+[R_1 \leftrightarrow R_2] \\
+{[R_2 \leftrightarrow R_1]} \\
+{[R_3]} \\
+\end{array} \\
+&\begin{bmatrix}
+3 & 4 & 5 \\
+0 & 1 & 2 \\
+0 & -1 & -2
+\end{bmatrix}
+\begin{array}{l}
+[R_1]\\
+{[R_2]} \\
+{[R_3 + R_2]}
+\end{array} &\sim &
+\begin{bmatrix}
+3 & 4 & 5 \\
+0 & 1 & 2 \\
+0 & 0 & 0
+\end{bmatrix}
+\end{align*}
+
+Observe that we obtained an upper triangular matrix $U$ (echelon form). However, if we consider the changes we performed to the matrix $A$, we will see that
+
+$$
+\begin{bmatrix}
+1 & 0 & 0\\
+0 & 1 & 0 \\
+0 & 1 & 1
+\end{bmatrix}
+\begin{bmatrix}
+0 & 1 & 0 \\
+1 & 0 & 0 \\
+0 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & -2 & 1
+\end{bmatrix}
+=
+\begin{bmatrix}
+0 & 1 & 0 \\
+1 & 0 & 0 \\
+1 & -2 & 1
+\end{bmatrix}
+$$
+
+is not a lower triangular matrix.
+
+:::::
+
+To to find a lower triangular matrix we observe the following fact: subtracting $2$ times the second row to the third and then echanging the first and second rows is equivalent to first exhanging the first and second rows and then subtracting $2$ times the first row to the third. In other words,
+
+$$
+\begin{bmatrix}
+0 & 1 & 0 \\
+1 & 0 & 0 \\
+0 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & -2 & 1
+\end{bmatrix}=
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+-2 & 0 & 1
+\end{bmatrix} 
+\begin{bmatrix}
+0 & 1 & 0 \\
+1 & 0 & 0 \\
+0 & 0 & 1
+\end{bmatrix}.
+$$
+
+So we found an alternative order of row operations that brought us to the same echelon form. The key idea is to **perform all the row exchanges first** and **then add multiples of one row to another** to obtain an echelon form. Let's see the results: 
+
+:::{math}
+:label: eq:LUDecomp:almostPLU
+
+\begin{array}{rcl}
+\begin{bmatrix}
+1 & 0 & 0\\
+0 & 1 & 0 \\
+0 & 1 & 1
+\end{bmatrix}
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+-2 & 0 & 1
+\end{bmatrix} 
+\begin{bmatrix}
+0 & 1 & 0 \\
+1 & 0 & 0 \\
+0 & 0 & 1
+\end{bmatrix}A &= \begin{bmatrix}
+3 & 4 & 5 \\
+0 & 1 & 2 \\
+0 & 0 & 0
+\end{bmatrix} \\\\
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+-2 & 1 & 1
+\end{bmatrix}
+\begin{bmatrix}
+0 & 1 & 0 \\
+1 & 0 & 0 \\
+0 & 0 & 1
+\end{bmatrix}A &= 
+\begin{bmatrix}
+3 & 4 & 5 \\
+0 & 1 & 2 \\
+0 & 0 & 0
+\end{bmatrix}
+\end{array}
+
+:::
 
 
+Now we see that on the left-hand side of {eq}`eq:LUDecomp:almostPLU` we obtain a lower triangular matrix, for which we can find an inverse to obtain:
 
+$$
+\begin{bmatrix}
+0 & 1 & 0 \\
+1 & 0 & 0 \\
+0 & 0 & 1
+\end{bmatrix}A = 
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+2 & -1 & 1
+\end{bmatrix}
+\begin{bmatrix}
+3 & 4 & 5 \\
+0 & 1 & 2 \\
+0 & 0 & 0
+\end{bmatrix}
+$$
 
+This is not an $LU$ decomposition, but almost! This is what we call a **PLU** decomposition. The following result summarizes it:
 
-## Application of the $LU$ decomposition
+:::::{prf:theorem} Existence of a PLU Decomposition
+:label: LUDecomp:existencePLU
 
+Suppose that $A$ is an $m\times n$ matrix with real coefficients. Then there exist matrices $P$, $L$ and $U$ such that 
 
-One way to measure the performance of an algorithm is counting the number of arithmetic operations\footnote{In some books they use the word flop (floating point operations).} that are necessary for solving a problem. By arithmetic operations we will take into account sums, products, multiplications and divisions. Suppose that we want to solve the linear system $A\mathbf{x}=\mathbf{b}$ by taking the augmented matrix $[ A | \mathbf{b}]$, finding an echelon form with the same solution set, and then using backward substitution.
+$$ PA = LU, $$
+
+where $P$ is a matrix that exchanges the rows of $A$, $L$ is obtained inverting the product matrices that perform row operations that only add multiples of a row to other rows, and $U$ is the corresponding echelon form of $A$.
+
+:::::
+
+## Application of the (P)LU decomposition
+
+One way to measure the performance of an algorithm is counting the number of arithmetic operations [^flopnote] that are necessary for solving a problem. By arithmetic operations we will take into account sums, products, multiplications and divisions. Suppose that we want to solve the linear system $A\mathbf{x}=\mathbf{b}$ by taking the augmented matrix $[ A | \mathbf{b}]$, finding an echelon form with the same solution set, and then using backward substitution.
 
 In the worst-case scenario, for a $3\times 3$ matrix $A$, ($3\times 4$ augmented matrix), we need the following number of arithmetic operations:
 <ul>
 <li>
 
- To convert the components $a_{21}$ and $a_{31}$ to a zero value, we need to compute two $m_{ij}$(two divisions), then we need to multiply each component of the first row, starting at $a_{12}$, by each $m_{ij}$(this happens twice, so $2\times 3=6$ products) and then we need to subtract the resulting values to the corresponding components in each row ($2\times 3=6$ subtractions). Therefore, we need a total of $14$ arithmetic operations(8 products/divisions and 6 additions/subtractions).
+To convert the components $a_{21}$ and $a_{31}$ to a zero value, we need to compute two $m_{ij}$(two divisions), then we need to multiply each component of the first row, starting at $a_{12}$, by each $m_{ij}$(this happens twice, so $2\times 3=6$ products) and then we need to subtract the resulting values to the corresponding components in each row ($2\times 3=6$ subtractions). Therefore, we need a total of $14$ arithmetic operations(8 products/divisions and 6 additions/subtractions).
 
 
 </li>
 <li>
 
- To convert the component $a_{32}$ to a zero value, we need to compute one $m_{ij}$(one division), then we need to multiply each component of the second row starting at $a_{23}$(this is 2 products), and then we need to subtract the resulting values to the corresponding components in the third row (2 subtractions). This totals 5 arithmetic operations.
-
+To convert the component $a_{32}$ to a zero value, we need to compute one $m_{ij}$(one division), then we need to multiply each component of the second row starting at $a_{23}$(this is 2 products), and then we need to subtract the resulting values to the corresponding components in the third row (2 subtractions). This totals 5 arithmetic operations.
 
 </li>
 </ul>
 
-
-
-So just to bring the augmented matrix to an echelon form requires 19 arithmetic operations (17 multiplications/divisions and 11 additions/subtractions).
+So just to bring the augmented matrix to an echelon form requires 19 arithmetic operations (11 multiplications/divisions and 8 additions/subtractions).
 
 Now, to solve the system we use backward substitution:
 <ul>
@@ -1048,15 +1156,14 @@ Supposing that $A=LU$ and that $L$ and $U$ are given, then, we solve first $L\ma
 </ul>
 
 
-So when the matrix $A$ is factorised, the number of operations required to solve the system is significantly lower.
+So when the matrix $A$ is already $LU$ factorised, the number of operations required to solve the system is significantly lower.
 
-Suppose now that $A$ is a non-singular $n\times n$ matrix.
-Let's count the number of operations in a general case, and we can see how advantageous it is to factorise our matrix $A$.
+Suppose now that $A$ is a non-singular $n\times n$ matrix.  Let's count the number of operations in a general case, and we can see how advantageous it is to factorise our matrix $A$.
 
 <ul>
 <li>
 
- For solving the system directly, for each column $j$ we need to compute the $m_{ij}$($(n-1)$ divisions), then multiply $m_{ij}$ by all the components of row $i$ except for the first $i$, so that is $(n-i)(n-i+1)$ products, and then we need to perform the same number of subtractions. This totals $(n-i)(n-i+2)$ products/divisions and $(n-i)(n-i+2)$ additions/subtractions. Now we need to add these values for all the rows.
+For solving the system directly, for each column $j$ we need to compute the $m_{ij}$($(n-1)$ divisions), then multiply $m_{ij}$ by all the components of row $i$ except for the first $i$, so that is $(n-i)(n-i+1)$ products, and then we need to perform the same number of subtractions. This totals $(n-i)(n-i+2)$ products/divisions and $(n-i)(n-i+2)$ additions/subtractions. Now we need to add these values for all the columns.
 
 <ul>
 <li>
@@ -1098,7 +1205,7 @@ $$
 
 arithmetic operations to bring the matrix to echelon form.
 
-If we just count the number of arithmetic operations to compute the $LU$ decomposition then we need 
+If we just count the number of arithmetic operations to compute the $LU$ decomposition, then we need 
  
 
 $$
@@ -1107,15 +1214,15 @@ $$
 
 arithmetic operations.
 
-Using similar reasoning we can calculate the number of arithmetic operations needed to solve an upper triangular linear system, which gives us $n^2$. And solving a lower triangular system with ones in the main diagonal requires $n^2-n$ arithmetic operations.
+Using similar reasoning, we can calculate the number of arithmetic operations needed to solve an upper triangular linear system, which gives us $n^2$. And solving a lower triangular system with ones in the main diagonal requires $n^2-n$ arithmetic operations.
  
 :::{prf:remark}
 
-The total number of arithmetic operations needed to solve a linear system with row reduction (without exchanging rows), and with $LU$ is the same. We leave the proof as an exercise for the reader.
+The total number of arithmetic operations needed in order to solve a linear system with row reduction (without exchanging rows), and with $LU$ is the same. We leave the proof as an exercise for the reader.
 
 :::
 
-In many applications in engineering, it is required to solve $m$ linear systems, $[A|b_1\,b_2\,\dots b_m]$, that have the same matrix of coefficients. In this situation is where the $LU$ Decomposition comes in handy. In {numref}`tbl:comparison_gausselim_LU` we can see the efficiency of the $LU$ decomposition.
+In many applications in engineering, it is required to solve $m$ linear systems, $[A|\mathbf{b}_1\,\mathbf{b}_2\,\dots \mathbf{b}_m]$, that have the same matrix of coefficients. In this situation is where the $LU$ Decomposition comes in handy. In {numref}`tbl:comparison_gausselim_LU` we can see the comparison in the number of operations need to solve several linear systems when using row reduction and $LU$ decomposition.
 
 
 :::{latextable} Comparison between solving linear systems with row reduction (RR) and with $LU$ decomposition ($LU$)
@@ -1128,39 +1235,11 @@ In many applications in engineering, it is required to solve $m$ linear systems,
 $n$ &   \multicolumn{2}{c}{$m=5$} &   \multicolumn{2}{c}{$m=10$} &   \multicolumn{2}{c}{$m=50$} \\
 & RR & $LU$   & RR & $LU$   & RR & $LU$ \\ 
 $3$ & $140$ & $88$ & $280$ & $163$ & $1400$ & $763$ \\
-$5$ & $575$ & $295$ & $1150$ & $520$ & $5750$ & $2320$ \\
-$10$ & $4025$ & $1565$ & $8050$ & $2515$ & $40250$ & $10115$ \\
+$5$ & $575$ & $295$ & $1,150$ & $520$ & $5,750$ & $2,320$ \\
+$10$ & $4,025$ & $1,565$ & $8,050$ & $2,515$ & $40,250$ & $10,115$ \\
 \end{tabular}
 
 :::
-
-</li>
-<li>
-
-For the products/divisions we have:
-
-\begin{align*}
-\sum_{i=1}^{n-1}(n-i)(n-i+2) &= \sum_{i+1}^{n-1} i^{2} - 2 i n + n^{2} - 2 i + 2 n \\
-&=\sum_{i=1}^{n-1}(n^2-2ni+i^2)+\sum_{i=1}^{n-1}(2n-2i)\\
-&=\sum_{i=1}^{n-1}(n-i)^2 + 2\sum_{i=1}^{n-1}(n-i) \\
-&=\sum_{i=1}^{n-1}i^2 +2\sum_{i=1}^{n-1}i \\
-&\frac{n(n-1)(2n-1)}{6}+2\frac{n(n-1)}{2} \\
-&\frac{2n^3+3n^2-5n}{6}.
-\end{align*}
-
-</li>
-<li>
-
-For the additions/subtractions we have:
-
-\begin{align*}
-\sum_{i=1}^{n-1}(n-i)(n-i+1) &= \sum_{i=1}^{n-1} i^{2} - 2 i n + n^{2} - i + n \\
-&=\sum_{i=1}^{n-1}(n^2-2in+i^2) + \sum_{i=1}^{n-1}(n-i) \\
-&=\sum_{i=1}^{n-1}(n-i)^2 + \sum_{i=1}^{n-1}(n-i)\\
-&=\sum_{i=1}^{n-1}i^2 + \sum_{i=1}^{n-1}i \\
-&=\frac{n(n-1)(2n-1)}{6}+\frac{n(n-1)}{2}\\
-&=\frac{n^3-n}{3}.
-\end{align*}
 
 </li>
 </ul>
@@ -1181,3 +1260,5 @@ Check that the number of arithmetic operations needed to solve a linear system u
 
 </li>
 </ol>
+
+[^flopnote]: In some books they use the abbreviation flop (floating point operations).
