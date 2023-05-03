@@ -338,13 +338,11 @@ with $L$ being an $m\times m$ lower triangular matrix and $U$ an $m\times n$ upp
 $$
 L=
 \begin{bmatrix}
-l_{11}\\
-l_{21} & l_{22} \\
-l_{31} & l_{32} & l_{33} \\
-\vdots & \vdots
-&
-\vdots & \ddots\\
-l_{m1} & l_{m2} & l_{m3} & \dots & l_{mm}
+1\\
+l_{21} & 1 \\
+l_{31} & l_{32} & \ddots  \\
+\vdots & \vdots & \ddots & \ddots\\
+l_{m1} & l_{m2} &  \cdots & l_{m(m-1)} & 1
 \end{bmatrix}
 ,
 \quad
