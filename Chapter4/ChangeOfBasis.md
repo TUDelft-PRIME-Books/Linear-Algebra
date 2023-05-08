@@ -111,7 +111,7 @@ Then we have to show that in fact
 
 
 $$
-  c_1 = d_1, \quad  c_2 = d_2, \quad .\,.\,.\, \quad   c_m = d_m.
+  c_1 = d_1, \quad  c_2 = d_2, \quad .\,.\,.\,\,, \quad   c_m = d_m.
 $$
 
 
@@ -130,7 +130,7 @@ $(c_i-d_i)$ must be 0. Thus we find
 
 
 $$
-   (c_1-d_1) = 0, \quad \ldots  \quad  (c_m-d_m) = 0, 
+   (c_1-d_1) = 0, \quad \ldots\,,  \quad  (c_m-d_m) = 0, 
 $$
 
 
@@ -138,7 +138,7 @@ from which we can conclude that
 
 
 $$
-c_1 = d_1, \quad c_2 = d_2, \quad \ldots  \quad c_m =d_m.
+c_1 = d_1, \quad c_2 = d_2, \quad \ldots\,,  \quad c_m =d_m.
 $$
 
 
@@ -291,7 +291,7 @@ Then it follows that
 
 $$
    \vect{w} = f_1\begin{bmatrix} 1 \\ 3\end{bmatrix} + f_2 \begin{bmatrix} 2 \\ 1\end{bmatrix} 
-            = \begin{bmatrix} 1 & 2 \\ 3 & 1\end{bmatrix}  \begin{bmatrix} f_1 \\ f_2\end{bmatrix}
+            = \begin{bmatrix} 1 & 2 \\ 3 & 1\end{bmatrix}  \begin{bmatrix} f_1 \\ f_2\end{bmatrix}.
 $$
 
 The rule to go from basis $\mc{B}$  to the standard basis can thus be written as
@@ -509,6 +509,7 @@ $$
 $$
 
 that is used to go from  Equation {eq}`Eq:ChangeOfBasis:LinearityTransform`  to  Equation {eq}`Eq:ChangeOfBasis:LinearityCoords` in the proof of {prf:ref}`Prop:ChangeOfBasis:MatrixOfTrafo`. 
+
 **Hint:** first show the correctness of the identities
 
 $$ 
@@ -528,16 +529,16 @@ $$
 Let $T:\R^n \to \R^m$ be a linear transformation, and let $\mc{B} = \{\vect{b}_1,\ldots,\vect{b}_n\}$ be a basis for $\R^n$,  $\mc{C}$  a basis for $\R^m$. Then the **matrix of $T$ with respect to bases $\mc{B}$ and $\mc{C}$** is defined by
 
 $$
-   [T]_{\mc{C}\leftarrow \mc{B}} = \left[\,[T(\vect{b}_1) ]_{\mc{C}}\,\,
-   [T(\vect{b}_2 )]_{\mc{C}}\,\,\ldots \,\,[T(\vect{b}_n) ]_{\mc{C}}\,\right].
+   [T]_{\mc{C}\leftarrow \mc{B}} = \big[\,[T(\vect{b}_1) ]_{\mc{C}}\,\,
+   [T(\vect{b}_2 )]_{\mc{C}}\,\,\ldots \,\,[T(\vect{b}_n) ]_{\mc{C}}\,\big].
 $$
 
 In the case where $n = m$  and  $\mc{B} = \mc{C}$ we will use the slightly simpler notation
 
 $$
      [T]_{\mc{B}} = [T]_{\mc{B}\leftarrow \mc{B}} =\,
-     \left[\,\,[T(\vect{b}_1) ]_{\mc{B}}\,\,\,
-   [T(\vect{b}_2) ]_{\mc{B}}\,\,\,\ldots \,\,\,[T(\vect{b}_n) ]_{\mc{B}}\,\,\right],
+     \big[\,\,[T(\vect{b}_1) ]_{\mc{B}}\,\,\,
+   [T(\vect{b}_2) ]_{\mc{B}}\,\,\,\ldots \,\,\,[T(\vect{b}_n) ]_{\mc{B}}\,\,\big],
 $$
 
 and call this simply **the matrix of $T$ with respect to basis $\mathcal{B}$**.
@@ -584,6 +585,7 @@ $$
 We will  find the matrix of  the linear transformation  ${T:\R^2 \to\R^2}$   sending  $\vect{b}_1 = \begin{bmatrix} 1\\3\end{bmatrix}$  to  $\begin{bmatrix} 5 \\ 5\end{bmatrix}$
 and  $\vect{b}_2 = \begin{bmatrix} 2\\1\end{bmatrix}$  to  $\begin{bmatrix} 1 \\ -2\end{bmatrix}$ 
 with respect to the basis $\mathcal{B} =\{ \vect{b}_1, \vect{b}_2\}$. 
+
 The only thing that remains to be done before we can write down
 
 $$
@@ -782,7 +784,7 @@ We see that the matrix  $P^{-1}AP$ does the job:
 :::
 
 
-For the given transformation and  basis  we find
+For the given transformation and  basis we find
 
 $$
 \begin{array}{rcl}
@@ -793,7 +795,7 @@ $$
    \dfrac{1}{3}\begin{bmatrix}  1 & -1\\ 1 & 2\end{bmatrix}
   \begin{bmatrix}  1 & 4 \\ 2 & 1\end{bmatrix}
   \begin{bmatrix}  2 & 1\\ -1 & 1\end{bmatrix} =
-  \frac{1}{3}\begin{bmatrix}  -5& 2\\ 4 & 11\end{bmatrix}
+  \dfrac{1}{3}\begin{bmatrix}  -5& 2\\ 4 & 11\end{bmatrix}
   \end{array}
 $$
 
@@ -826,16 +828,16 @@ of $T$ with respect to the basis $\mc{B}$ is given by
 The following diagram illustrates what is going on:
 
 $$
-  \begin{array}{ccc}
-      \R^n & \underrightarrow {\rule{3em}{0ex} T \rule{3em}{0ex}} & \R^n \\[5ex]
-      \vect{x} = P[\vect{x}]_{\mc{B}} & \underrightarrow {\rule{3em}{0ex} A\rule{3em}{0ex}} & 
-      \begin{array}[t]{l}A\vect{x} = T(\vect{x} ) \\ = AP[\vect{x}]_{\mc{B}} \end{array} \\[1ex]
-      P_{\mc{B}}\left  \uparrow \rule{0ex}{4em} \right. \rule{2em}{0ex}   &  &  P^{-1}_{\mc{B}}\,\left  \downarrow \rule{0ex}{4em} \right.\,
-      \left  \uparrow \rule{0ex}{4em} \right.P_{\mc{B}}  \\
-       [\vect{x}]_{\mc{B}} & \underrightarrow {\rule{3em}{0ex} [T]_{\mc{B}} \rule{3em}{0ex}} & \quad
-       \begin{array}{l}[T(\vect{x})]_{\mc{B}} \\
-       = P^{-1}AP[\vect{x})]_{\mc{B}}\end{array}
-  \end{array}
+\begin{array}{ccc}
+\R^n & \underrightarrow {\rule{3em}{0ex} T \rule{3em}{0ex}} & \R^n \\[5ex]
+\vect{x} = P[\vect{x}]_{\mc{B}} & \underrightarrow {\rule{3em}{0ex} A\rule{3em}{0ex}} & 
+\begin{array}[t]{l}A\vect{x} = T(\vect{x} ) \\ = AP[\vect{x}]_{\mc{B}} \end{array} \\[1ex]
+P_{\mc{B}}\left  \uparrow \rule{0ex}{4em} \right. \rule{2em}{0ex}   &  &  P^{-1}_{\mc{B}}\,\left  \downarrow \rule{0ex}{4em} \right.\,
+\left  \uparrow \rule{0ex}{4em} \right.P_{\mc{B}}  \\
+   {[\vect{x}]}_{\mc{B}} & \underrightarrow {\rule{3em}{0ex} [T]_{\mc{B}} \rule{3em}{0ex}} & \quad
+   \begin{array}{l}[T(\vect{x})]_{\mc{B}} \\
+   = P^{-1}AP[\vect{x})]_{\mc{B}}\end{array}
+\end{array}
 $$
 
 ::::
@@ -967,7 +969,7 @@ Again, as the name suggests, the change-of-basis matrix can be used to switch fr
 If ${\mathcal B} = \{\vect{b}_1, \ldots, \vect{b}_n \}$ and ${\mathcal C} = \{\vect{c}_1, \ldots, \vect{c}_n \}$ are two  bases of $\R^n$, then for any vector $\vect{v}$ in $\R^n$ it holds that
 
 $$
-     [\vect{v}]_{\mc C} = \CoBmatrix{B}{C} [\vect{v}]_{\mc B}.
+     [\vect{v}]_{\mc{C}} = \CoBmatrix{B}{C} [\vect{v}]_{\mc{B}}.
 $$
 
 ::::

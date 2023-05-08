@@ -206,7 +206,14 @@ A vector and its orthogonal projection on the subspace $V$.
 
 Let us revisit the plane $\mathcal{P}$ with basis $\mathcal{B}=\left\{\vect{v}_{1},\vect{v}_{2}\right\}$ from {prf:ref}`Ex:Ortho:ExOfOrthoBase`. Take a vector, say, $\vect{w}=\begin{bmatrix}-1\\1\\2\end{bmatrix}$. We find $\vect{w}\ip\vect{v}_{1}=-2,\vect{w}\ip\vect{v}_{2}=-4,$ and $\vect{v}_{1}\ip\vect{v}_{1}=2,\vect{v}_{2}\ip\vect{v}_{2}=6$. Consequently,
 
-$$\proj_{\mathcal{P}}(\vect{w})=\frac{\vect{w}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\frac{\vect{w}\ip\vect{v}_{2}}{\vect{v}_{2}\ip\vect{v}_{2}}\vect{v}_{2}=-\frac{2}{2}\vect{v}_{1}-\frac{4}{6}\vect{v}_{2}=\begin{bmatrix}-\frac{5}{3}\\-\frac{1}{3}\\\frac{4}{3}\end{bmatrix}$$
+$$
+\proj_{\mathcal{P}}(\vect{w})=\frac{\vect{w}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\frac{\vect{w}\ip\vect{v}_{2}}{\vect{v}_{2}\ip\vect{v}_{2}}\vect{v}_{2}=-\frac{2}{2}\vect{v}_{1}-\frac{4}{6}\vect{v}_{2}=
+\begin{bmatrix}
+    -\frac{5}{3} \\
+    {-\frac{1}{3}} \\
+    {\frac{4}{3}}
+\end{bmatrix}
+$$
 
 is the orthogonal projection of $\vect{w}$ on $\mathcal{P}$.
 
@@ -231,10 +238,10 @@ In fact, $\hat{\vect{w}}=\proj_{V}(\vect{w})$. This is called the *orthogonal de
 
 Fix an orthogonal basis $\vect{v}_{1},..,\vect{v}_{k}$ for $V$ and put $\vect{x}=\vect{w}-\proj_{V}(\vect{w})$. Clearly, $\proj_{V}(\vect{w})$ is in $V$. If we can show $\vect{x}\bot \vect{v}_{i}$ for any $i$, it will follow that $\vect{x}$ is in $V^{\bot}$. This follows readily: 
 
-$$\begin{align*}
-    \vect{x}\ip \vect{v}_{i}&=\left(\vect{w}-\frac{\vect{w}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{w}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}_{k}\right)\ip\vect{v}_{i}\\
-    &=\vect{w}\ip\vect{v}_{i}-\frac{\vect{w}\ip\vect{v}_{i}}{\vect{v}_{i}\ip\vect{v}_{i}}(\vect{v}_{i}\ip\vect{v}_{i})=0.
-\end{align*}$$
+\begin{align*}
+\vect{x}\ip \vect{v}_{i}&=\left(\vect{w}-\frac{\vect{w}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{w}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}_{k}\right)\ip\vect{v}_{i}\\
+&=\vect{w}\ip\vect{v}_{i}-\frac{\vect{w}\ip\vect{v}_{i}}{\vect{v}_{i}\ip\vect{v}_{i}}(\vect{v}_{i}\ip\vect{v}_{i})=0.
+\end{align*}
 
 The only thing left to show is that this decomposition is unique. Suppose $\vect{w}=\hat{\vect{w}}_{1}+\vect{x}_{1}$ and $\vect{w}=\hat{\vect{w}}_{2}+\vect{x}_{2}$ where $\hat{\vect{w}}_{1},\hat{\vect{w}}_{2}$ are in $V$ and $\vect{x}_{1},\vect{x}_{2}$ are in $V^{\bot}$. Then
 
@@ -288,21 +295,21 @@ Let $\vect{w}=\proj_{V}(\vect{w})+\vect{x}$ where $\vect{x}$ is in $V^{\bot}$.
 
 Since the inproduct of any vector with itself is non-negative, we find:
 
-$$\begin{align*}
+\begin{align*}
 \norm{\vect{w}}&=\sqrt{\vect{w}\ip\vect{w}}=\sqrt{(\proj_{V}(\vect{w})+\vect{x})\ip(\proj_{V}(\vect{w})+\vect{x})}\\
 &=\sqrt{\proj_{V}(\vect{w})\ip\proj_{V}(\vect{w})+\vect{x}\ip\vect{x}}\\
 &\geq\sqrt{\proj_{V}(\vect{w})\ip\proj_{V}(\vect{w})}=\norm{\proj_{V}(\vect{w})}
-\end{align*}$$
+\end{align*}
 
 </li>
 <li>
 
 We have:
 
-$$\begin{align*}
+\begin{align*}
 \vect{w}\ip\proj_{V}(\vect{w})&=(\proj_{V}(\vect{w})+\vect{x})\ip\proj_{V}(\vect{w})\\
 &=\proj_{V}(\vect{w})\ip\proj_{V}(\vect{w})\geq 0.
-\end{align*}$$
+\end{align*}
 
 Furthermore, $\proj_{V}(\vect{w})\ip\proj_{V}(\vect{w})=0$ implies $\proj_{V}(\vect{w})=\vect{0}$, so $\vect{w}=\vect{x}$ which is in $V^{\bot}$.
 
@@ -313,10 +320,10 @@ Furthermore, $\proj_{V}(\vect{w})\ip\proj_{V}(\vect{w})=0$ implies $\proj_{V}(\v
 
 We find, for arbitrary $\vect{v}$ in $V$:
 
-$$\begin{align*}
+\begin{align*}
 \norm{\vect{w}-\vect{v}}&=\sqrt{(\proj_{V}(\vect{w})+\vect{x}-\vect{v})\ip(\proj_{V}(\vect{w})+\vect{x}-\vect{v})}\\
 &=\sqrt{(\proj_{V}(\vect{w})-\vect{v})\ip(\proj_{V}(\vect{w})-\vect{v})+\vect{x}\ip\vect{x}}
-\end{align*}$$
+\end{align*}
 
 Again using the fact that the inproduct of any vector with itself is non-negative, we conclude that this is minimal when $\proj_{V}(\vect{w})-\vect{v}=\vect{0}$, i.e. when $\proj_{V}(\vect{w})=\vect{v}$.
 

@@ -58,7 +58,6 @@ The crucial thing about symmetric matrices is stated in the  main theorem of thi
 
 Every symmetric matrix $A$ is orthogonally diagonalizable.
 
-
 By this we mean: there exist an *orthogonal* matrix $Q$ and a diagonal matrix $D$ for which
 
 $$
@@ -67,6 +66,8 @@ $$
 
 Conversely, every orthogonally diagonalizable matrix is symmetric.
 
+This theorem is known as the *Spectral Theorem for Symmetric Matrices*.
+In other context the word *Spectrum* of a transformation is used for the set of eigenvalues.
 ::::
 
 So, for a symmetric matrix  an orthonormal basis of eigenvectors always exists.  For the inertia tensor of a 3D body such a basis corresponds to the (perpendicular) principle axes.
@@ -212,7 +213,7 @@ it follows that indeed
 
 $$
 \mathbf{v_1} \ip \mathbf{v}_2 = 0,
-\nonumber
+
 $$
 
 as was to be shown.
@@ -858,7 +859,7 @@ So we have  that this symmetric matrix can be written as a linear combination of
 
 The construction we performed in the last example can be generalized. As is the content of the last theorem in this section.
 
-::::{prf:theorem}   Spectral Theorem for Symmetric Matrices
+::::{prf:theorem}   Spectral Decomposition of Symmetric Matrices
 :label: Thm:SymmetricMat:SpectralDecomp
 
 Every $n \times n$ symmetric matrix  $A$ is the linear combination 

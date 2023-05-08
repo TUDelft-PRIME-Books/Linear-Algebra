@@ -499,12 +499,14 @@ $$S(\vect{w}_{1})\cdot S(\vect{w}_{2})=\vect{w}_{1}\cdot\vect{w}_{2}.$$
 
 By definition, there is an orthogonal projection with standard matrix $P$ such that $S(\vect{w})=(2P-I)\vect{w}$. We assume $P$ is the projection on the span of a single vector $\vect{v}$. If there are more, the computations become considerably messier, but neither harder nor more enlightening. 
 
-$$\begin{align*}
+
+\begin{align*}
 S(\vect{w}_{1})\cdot S(\vect{w}_{2})&=(2P-I)\vect{w}_{1}\cdot(2P-I)\vect{w}_{2}\\
 &=(2\left(\frac{\vect{w_{1}}\cdot\vect{v}}{\vect{v}\cdot\vect{v}}\right)\vect{v}-\vect{w}_{1})\cdot (2\left(\frac{\vect{w_{2}}\cdot\vect{v}}{\vect{v}\cdot\vect{v}}\right)\vect{v}-\vect{w}_{2})\\
 &=4\left(\frac{\vect{w}_{1}\cdot \vect{v}}{\vect{v}\cdot\vect{v}}\right)\left(\frac{\vect{w}_{2}\cdot \vect{v}}{\vect{v}\cdot\vect{v}}\right)\vect{v}\cdot\vect{v}-2\left(\frac{\vect{w}_{2}\cdot \vect{v}}{\vect{v}\cdot\vect{v}}\right)\vect{w}_{1}\cdot\vect{v}-2\left(\frac{\vect{w}_{1}\cdot \vect{v}}{\vect{v}\cdot\vect{v}}\right)\vect{w}_{2}\cdot\vect{v}+\vect{w}_{1}\cdot\vect{w}_{2}\\
 &=\vect{w}_{1}\cdot\vect{w}_{2}
-\end{align*}$$
+\end{align*}
+
 
 which proves the claim.
 

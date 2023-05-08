@@ -30,7 +30,7 @@ watchexec -e py,md -- jupyter-book build --all .
 
 ## How to add an applet to an image
 
-````
+````md
 ```{applet}
 :url: lines_and_planes/normal_equation_plane_origin
 :fig: Images/image_shown_in_print_version.svg
@@ -47,10 +47,12 @@ A plane through the point $P$.
 
 Some parameters can be set for an applet. Only the `url` and `fig` parameters are required; the rest is optional.
 
-````bash
+````md
 ```{applet}
 :url: lines_and_planes/normal_equation_plane_origin # Required url
+:fig: Images/lines_and_planes/normal_equation_plane_origin.svg  # Image shown in print version
 :title: hello # a string that will be shown as the title of the applet when the aplet is in fullscreen mode
+:status: reviewed # default is "unreviewed". Other options are "in-review" and "reviewed"
 :width: 100% # the width of the applet
 :height: 500px # the height of the applet
 :background: #ffffff # the background color of the applet
