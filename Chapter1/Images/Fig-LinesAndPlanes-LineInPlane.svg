@@ -51,7 +51,7 @@
 <path style="fill:none;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 0.000624076 80.699215 L 159.401285 80.699215 " transform="matrix(0.995379,0,0,-0.995379,23.745473,181.693487)"/>
 <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 184.394531 101.367188 L 181.222656 99.78125 L 182.410156 101.367188 L 181.222656 102.957031 "/>
 <path style="fill:none;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 7.335299 -0.00183406 L 7.335299 159.402752 " transform="matrix(0.995379,0,0,-0.995379,23.745473,181.693487)"/>
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 31.046875 21.042969 L 29.460938 24.21875 L 31.046875 23.027344 L 32.632812 24.21875 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 31.046875 21.042969 L 29.460938 24.21875 L 31.046875 23.027344 L 32.632813 24.21875 "/>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
   <use xlink:href="#glyph0-1" x="64.645594" y="115.236016"/>
 </g>

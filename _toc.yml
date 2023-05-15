@@ -51,7 +51,11 @@ chapters:
       - file: 'Chapter7/LeastSquares.md'
   - file: 'Chapter8/intro.md'
     sections:
-      - file: 'Chapter8/DynSystDiscrete.md'
+      - file: 'Chapter8/SymmetricMatrices.md'
+      - file: 'Chapter8/QuadraticForms.md'
+  - file: 'Chapter9/intro.md'
+    sections:
+      - file: 'Chapter9/DynSystDiscrete.md'
   - file : 'Appendices/intro.md'
     sections:
       - file: "Appendices/ComplexNumbers.md"

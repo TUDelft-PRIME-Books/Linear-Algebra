@@ -1,4 +1,4 @@
-# Dynamical Systems
+# Symmetric Matrices
 
 :::{tableofcontents}
 :::

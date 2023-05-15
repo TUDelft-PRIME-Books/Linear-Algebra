@@ -198,15 +198,15 @@ $\mathbf{w}=\begin{bmatrix}b_{1}\\b_{2}\\ \vdots\\b_{n}\end{bmatrix}$ in $\mathb
 The dot product of the two vectors
 
 $$
-  \mathbf{v_1}=\begin{bmatrix} 5\\3\\4\\-2\end{bmatrix}
+  \mathbf{v}_1=\begin{bmatrix} 5\\3\\4\\-2\end{bmatrix}
   \quad \text{and}\quad
-  \mathbf{v_2}=\begin{bmatrix} 2\\3\\0\\1\end{bmatrix}
+  \mathbf{v}_2=\begin{bmatrix} 2\\3\\0\\1\end{bmatrix}
 $$
 
 is given by
 
 $$
-  \mathbf{v_1}\ip\mathbf{v_2} =
+  \mathbf{v}_1\ip\mathbf{v}_2 =
   5\cdot2 + 3\cdot3 +4\cdot0 + (-2)\cdot1
   = 17
 $$
@@ -214,9 +214,9 @@ $$
 And the dot product of the two vectors
 
 $$
-  \mathbf{v_1}=\begin{bmatrix} 5\\3\\4\\-2\end{bmatrix}
+  \mathbf{v}_1=\begin{bmatrix} 5\\3\\4\\-2\end{bmatrix}
   \quad \text{and}\quad
-  \mathbf{v_3}=\begin{bmatrix} -4\\3\\2\end{bmatrix}
+  \mathbf{v}_3=\begin{bmatrix} -4\\3\\2\end{bmatrix}
 $$
 
 is not defined.  In fact, the dot product of a  vector $\mathbf{v}$ in $\mathbb{R}^m$ and a  vector $\mathbf{w}$ in $\mathbb{R}^n$ is only defined if $m = n$.
@@ -229,14 +229,14 @@ proposition.
 :::{prf:proposition}
 :label: Prop:RulesInnerProduct
 
-The following  properties   hold for any vectors $\mathbf{v},\mathbf{v_1},\mathbf{v_2},\mathbf{v_3}$ in $\mathbb{R}^n$ and scalars $c \in \mathbb{R}$:
+The following  properties   hold for any vectors $\mathbf{v},\mathbf{v}_1,\mathbf{v}_2,\mathbf{v}_3$ in $\mathbb{R}^n$ and scalars $c \in \mathbb{R}$:
 
 
-  i. $\mathbf{v_1}\ip\mathbf{v_2} = \mathbf{v_2}\ip\mathbf{v_1}$.
+  i. $\mathbf{v}_1\ip\mathbf{v}_2 = \mathbf{v}_2\ip\mathbf{v}_1$.
 
-  ii. $(c\mathbf{v_1})\ip\mathbf{v_2} = c(\mathbf{v_1}\ip\mathbf{v_2}) = \mathbf{v_1}\ip(c \mathbf{v_2})$.
+  ii. $(c\mathbf{v}_1)\ip\mathbf{v}_2 = c(\mathbf{v}_1\ip\mathbf{v}_2) = \mathbf{v}_1\ip(c \mathbf{v}_2)$.
 
-  iii. $(\mathbf{v_1}+\mathbf{v_2})\ip\mathbf{v_3} = \mathbf{v_1}\ip\mathbf{v_3}+\mathbf{v_2}\ip\mathbf{v_3}$.
+  iii. $(\mathbf{v}_1+\mathbf{v}_2)\ip\mathbf{v}_3 = \mathbf{v}_1\ip\mathbf{v}_3+\mathbf{v}_2\ip\mathbf{v}_3$.
 
   iv.  $\mathbf{v}\ip\mathbf{v} \geq 0$, and  $\mathbf{v}\ip\mathbf{v} = 0 \iff \mathbf{v} = \mathbf{0}$.
 :::
@@ -249,30 +249,34 @@ The first three properties follow from the corresponding properties of real numb
 i. Let
 
 $$
-\mathbf{v_1}=\begin{bmatrix} a_1\\a_2\\ \vdots\\ a_n\end{bmatrix}
+\mathbf{v}_1=\begin{bmatrix} a_1\\a_2\\ \vdots\\ a_n\end{bmatrix}
   \quad \text{and}\quad
   \mathbf{v}_2=\begin{bmatrix}  b_1 \\ b_2 \\ \vdots \\ b_n \end{bmatrix}
 $$
 
 be two arbitrary vectors in $\mathbb{R}^n$. Then
 
-$$\begin{eqnarray*}
-     \mathbf{v_1}\ip\mathbf{v_2} &=&
-            \begin{bmatrix}a_{1}\\a_{2}\\ \vdots\\a_{n}\end{bmatrix}\ip\begin{bmatrix}b_{1}\\b_{2}\\ \vdots\\b_{n}\end{bmatrix}
+
+\begin{align*}
+\mathbf{v}_1 \ip \mathbf{v}_2 &= 
+\begin{bmatrix}a_{1} \\ a_{2}\\ \vdots\\a_{n}\end{bmatrix} \ip \begin{bmatrix}b_{1} \\ b_{2}\\ \vdots \\ b_{n}\end{bmatrix}
             = a_1b_1 +a_2b_2+ \ldots + a_nb_n  \\
-            &=& b_1a_1 +b_2a_2+ \ldots + b_na_n =
-               \begin{bmatrix}b_{1}\\b_{2}\\ \vdots\\b_{n}\end{bmatrix}\ip\begin{bmatrix}a_{1}\\a_{2}\\ \vdots\\a_{n}\end{bmatrix} =
-                \mathbf{v_2}\ip\mathbf{v_1}.
-\end{eqnarray*}
-$$
+      &= b_1a_1 +b_2a_2+ \ldots + b_na_n =
+               \begin{bmatrix}b_{1} \\ b_{2}\\ \vdots \\ b_{n}\end{bmatrix}\ip\begin{bmatrix}a_{1} \\ a_{2}\\ \vdots\\ a_{n}\end{bmatrix} = \mathbf{v}_2\ip\mathbf{v}_1.
+\end{align*}
 
-ii. Taking  $\mathbf{v_1}$, $\mathbf{v_2}$ as before
 
-$$\begin{eqnarray*}
-            (c\mathbf{v_1})\ip\mathbf{v_2} &=&  \begin{bmatrix}ca_{1}\\ca_{2}\\ \vdots\\ca_{n}\end{bmatrix}\ip\begin{bmatrix}b_{1}\\b_{2}\\                                 \vdots\\b_{n}\end{bmatrix}\\
-            &=& (ca_1b_1) + (ca_2b_2)+ \ldots + (ca_n)b_n \\
-            &=& c\,(a_1b_1 +a_2b_2+ \ldots + a_nb_n) = c\, (\mathbf{v_1}\ip\mathbf{v_2})
-\end{eqnarray*}$$
+ii. Taking  $\mathbf{v}_1$, $\mathbf{v}_2$ as before
+
+
+\begin{align*}
+  (c\mathbf{v}_1)\ip\mathbf{v}_2 &=  
+  \begin{bmatrix}ca_{1}\\ca_{2}\\ \vdots\\ca_{n}\end{bmatrix}\ip
+  \begin{bmatrix}b_{1}\\b_{2}\\ \vdots\\b_{n}\end{bmatrix}\\ 
+  &= (ca_1b_1) + (ca_2b_2)+ \ldots + (ca_n)b_n \\
+  &= c\,(a_1b_1 +a_2b_2+ \ldots + a_nb_n) = c\, (\mathbf{v}_1\ip\mathbf{v}_2)
+\end{align*}
+
 
 iii. Is proved in the same way as (ii).
 
@@ -291,7 +295,7 @@ Prove property (iii).
 Prove the identity
 
 $$
-  (\mathbf{v_1}+\mathbf{v_2})\ip(\mathbf{v_1}-\mathbf{v_2}) = \mathbf{v_1}\ip\mathbf{v_1}-\mathbf{v_2}\ip\mathbf{v_2}.
+  (\mathbf{v}_1+\mathbf{v}_2)\ip(\mathbf{v}_1-\mathbf{v}_2) = \mathbf{v}_1\ip\mathbf{v}_1-\mathbf{v}_2\ip\mathbf{v}_2.
 $$
 
 %Explain why it is called the \emph{parallelogram rule}.
@@ -305,7 +309,7 @@ Prove the identity
 
 $$
 
-  \norm{\mathbf{v_1}+\mathbf{v_2}}^2 + \norm{\mathbf{v_1}-\mathbf{v_2}}^2   = 2 (\norm{\mathbf{v_1}}^2 + \norm{\mathbf{v_2}}^2),
+  \norm{\mathbf{v}_1+\mathbf{v}_2}^2 + \norm{\mathbf{v}_1-\mathbf{v}_2}^2   = 2 (\norm{\mathbf{v}_1}^2 + \norm{\mathbf{v}_2}^2),
 $$
 
 and explain why it is called the *parallelogram rule*.
@@ -1217,10 +1221,10 @@ $$
     \norm{v_i - v_j} = \sqrt{2^2 + 2^2 + 0^2} = \sqrt{8}, \text{ for } i \neq j.
 $$
 
-The angle between for instance $\mathbf{v_1}$ and $\mathbf{v_3}$ is determined by
+The angle between for instance $\mathbf{v}_1$ and $\mathbf{v}_3$ is determined by
 
 $$
-   \cos(\varphi) = \dfrac{\mathbf{v_1}\ip\mathbf{v_3}}{\norm{\mathbf{v_1}}\norm{\mathbf{v_3}}} = \dfrac{-1}{\sqrt{3}\cdot\sqrt{3}} = -\frac13.
+   \cos(\varphi) = \dfrac{\mathbf{v}_1\ip\mathbf{v}_3}{\norm{\mathbf{v}_1}\norm{\mathbf{v}_3}} = \dfrac{-1}{\sqrt{3}\cdot\sqrt{3}} = -\frac13.
 $$
 
 So

@@ -107,10 +107,8 @@ $$
 for some vectors $\mathbf{v}_{1},...\mathbf{v}_{k},\mathbf{w}$ in $\mathbb{R}^{n}$. The expression $\mathbf{w}+t_{1}\mathbf{v}_{1}+\cdots+t_{k}\mathbf{v}_{k}$ is a parametrised vector with parameters $t_{1},...,t_{k}$. In {prf:ref}`Example:SolSet:TwoLinesinR3b`, we have
 
 $$
-
     n=3,\quad k=1,\quad \mathbf{v}_{1}=
 \begin{bmatrix}-4\\3\\1\end{bmatrix},\quad\text{and}\quad\mathbf{w}=
-    
 \begin{bmatrix}
         -a\\a\\0
     \end{bmatrix}.
@@ -142,7 +140,6 @@ x_{1}&+&3x_{2}&-&x_{3}&=&0\\
 We find two free variables and the following solution set:
 
 $$
-
     \left\{\begin{bmatrix}-3s+t\\s\\t\end{bmatrix}\mid s,t\in\mathbb{R}\right\}=
     \left\{s
 \begin{bmatrix}-3\\1\\0\end{bmatrix}
@@ -165,7 +162,6 @@ x_{1}&+&3x_{2}&-&x_{3}&=&a\\
 The solution set now becomes 
  
 $$
-
 \left\{\begin{bmatrix}-3s+t+a\\s\\t\end{bmatrix}\mid s,t\in\mathbb{R}\right\}=\left\{
 \begin{bmatrix}a\\0\\0\end{bmatrix}
 +s
@@ -282,7 +278,7 @@ $$
 \left\{\begin{array}{ccccccccccccc}
 a_{11}c'_{1}&+&\cdots &+&a_{1n}c'_{n}&=&a_{11}(c_{1}+d_{1})&+&\cdots &+&a_{1n}(c_{n}+d_{n})&=&b_{1}+0\\
 a_{21}c'_{1}&+&\cdots &+&a_{2n}c'_{n}&=&a_{21}(c_{1}+d_{1})&+&\cdots &+&a_{2n}(c_{n}+d_{n})&=&b_{2}+0\\
-&&&&&&&\vdots&&&&&&&&&&&\\
+&&&&&&\vdots&&&&&&\\
 a_{m1}c'_{1}&+&\cdots &+&a_{mn}c'_{n}&=&a_{m1}(c_{1}+d_{1})&+&\cdots &+&a_{mn}(c_{n}+d_{n})&=&b_{m}+0\\
 \end{array}\right.
 $$
@@ -408,27 +404,24 @@ $$
 This system can be solved as follows, using the row reduction algorithm we have seen in Section {prf:ref}`??`:
 
 $$
-
 \left[\begin{array}{rrrr|r}2&0&-2&0&0\\1&0&-1&0&0\\4&0&0&-2&0\\0&1&0&-1&0\\\end{array}\right]\begin{array}{l}
 [R_1] \\
-[R_2-\frac{1}{2}R_1] \\
-[R_3-2R_1] \\
-[R_4] \\
+{[R_2-\frac{1}{2}R_1]} \\
+{[R_3-2R_1]} \\
+{[R_4]} 
 \end{array} \sim 
-
 \left[\begin{array}{rrrr|r}2&0&-2&0&0\\0&0&0&0&0\\0&0&4&-2&0\\0&1&0&-1&0\\\end{array}\right]\begin{array}{l}
 [R_1] \\
-[R_2\leftrightarrow R_4] \\
-[R_3] \\
-[R_4\leftrightarrow R_2]
+{[R_2\leftrightarrow R_4]} \\
+{[R_3]} \\
+{[R_4\leftrightarrow R_2]}
 \end{array} \sim
-
-\left[\begin{array}{rrrr|r}2&0&-2&0&0\\0&1&0&-1&0\\0&0&4&-2&0\\0&0&0&0&0\\\end{array}\right]$$
+\left[\begin{array}{rrrr|r}2&0&-2&0&0\\0&1&0&-1&0\\0&0&4&-2&0\\0&0&0&0&0\\\end{array}\right]
+$$
 
 Now we can conclude that the solution set looks as follows:
 
 $$
-
     \left\{\begin{bmatrix} 
         \frac{1}{2}t\\t\\\frac{1}{2}t\\t
     \end{bmatrix}\mid t\in \mathbb{R}\right\},\quad\text{which is the same as}\quad
