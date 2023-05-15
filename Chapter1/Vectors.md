@@ -87,7 +87,7 @@ $$
 
 which is precisely $2\mathbf{v}_{3}$.
 
-We have found that the geometrical notion of an arrow in the plane with a certain length pointing in a certain direction is captured perfectly by the algebraic notion of its vector. Moreover, the natural operations of stretching and combining arrows can easily be done algebraically. In fact, there is no reason why we should restrict ourselves to arrows in the plane. We can just as well take arrows in three dimensional space and glue them together or stretch them. In {numref}`Subsection %s <Subsec:Vectors:ndim>` we will formalise this notion to $n$ dimensions -- and we will see that it is not so strange to have more than $3$ dimensions!
+We have found that the geometrical notion of an arrow in the plane with a certain length pointing in a certain direction is captured perfectly by the algebraic notion of its vector. Moreover, the natural operations of stretching and combining arrows can easily be done algebraically. In fact, there is no reason why we should restrict ourselves to arrows in the plane. We can just as well take arrows in three dimensional space and glue them together or stretch them. In {numref}`Subsection %s <Subsec:Vectors:ndim>` we will formalize this notion to $n$ dimensions -- and we will see that it is not so strange to have more than $3$ dimensions!
 
 (Subsec:Vectors:ndim)=
 
@@ -203,7 +203,7 @@ Suppose $\mathbf{v}_{1},\mathbf{v}_{2},\mathbf{v}_{3}$ are vectors in $\mathbb{R
 
 	(\mathbf{v}_{1}+\mathbf{v}_{2})+\mathbf{v}_{3}=\mathbf{v}_{1}+(\mathbf{v}_{2}+\mathbf{v}_{3})
 	```
-3. Commutativity
+3. Commutativity:
 	```{math}
 	:label: Item:Vectors:Commutativity
 
@@ -314,7 +314,7 @@ its end point will be precisely $P$.
 
 By fixing our origin $O$, we have therefore introduced a natural correspondence between points in the plane and vectors with two components: a point $P=(a_{1},a_{2})$ corresponds to the vector pointing from $O$ to $P$, which is given by $\mathbf{v}$.
 
-In a similar vein, we can associate vectors with three components to points in three-dimensional space. We again fix an origin $O=(0,0,0)$. Any other point $P$ is given by its displacement from $O$ to the right ($a_{1}$), up ($a_{2}$), and forward ($a_{3}$). To this point, we can associate the vector
+In a similar vein, we can associate vectors with three components to points in three-dimensional space. We again fix an origin $O=(0,0,0)$. Any other point $P$ is given by its displacement from $O$ to the right ($a_{1}$), up ($a_{2}$), and backward ($a_{3}$). To this point, we can associate the vector
 
 $$
 
