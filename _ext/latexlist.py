@@ -58,52 +58,17 @@ class LatexList(Directive):
 
         return [list_node]
 
-    def run_latex(self):
-            enumerated = 'enumerated' in self.options
-            list_type = self.options.get('type', '')
+    def visit_LatexListItem(self, node):
+        if self.builder.format == 'latex':
+            pass
+        else:
+            self.body.append(self.starttag(node, 'li', '', CLASS='latex-list'))
 
-            if enumerated:
-                list_node = nodes.enumerated_list()
-                if list_type == 'i':
-                    list_node['enumtype'] = 'lowerroman'
-                elif list_type == 'a':
-                    list_node['enumtype'] = 'loweralpha'
-                else:
-                    list_node['enumtype'] = 'arabic'
-            else:
-                list_node = nodes.bullet_list()
-
-            item_node = None
-            for line in self.content:
-                if line.startswith('\\item'):
-                    if item_node:
-                        list_node += item_node
-                    item_node = LatexListItem()
-                    para = nodes.paragraph()
-                    content = line[5:].strip()
-                    self.state.nested_parse(StringList([content]), self.content_offset, para)
-                    item_node += para
-                elif line.startswith('\\label{'):
-                    label_id = line[7:-1]
-                    item_node['ids'].append(label_id)
-                else:
-                    para = nodes.paragraph()
-                    content = line.strip()
-                    self.state.nested_parse(StringList([content]), self.content_offset, para)
-                    item_node += para
-
-            if item_node:
-                list_node += item_node
-
-            latex_list = nodes.raw(text='', format='latex')
-            latex_list += list_node
-            return [latex_list]
-
-def visit_LatexListItem(self, node):
-    self.body.append(self.starttag(node, 'li', '', CLASS='latex-list'))
-
-def depart_LatexListItem(self, node):
-    self.body.append('</li>\n')
+    def depart_LatexListItem(self, node):
+        if self.builder.format == 'latex':
+            pass
+        else:
+            self.body.append('</li>\n')
 
 def find_list_item(doctree, label):
     for node in doctree.traverse(LatexListItem):
@@ -149,5 +114,6 @@ roles.register_local_role('itemref', itemref_role)
 
 def setup(app):
     app.add_node(LatexListItem,
-                 html=(visit_LatexListItem, depart_LatexListItem))
+                 html=(LatexList.visit_LatexListItem, 
+                       LatexList.depart_LatexListItem))
     app.add_directive('latexlist', LatexList)
