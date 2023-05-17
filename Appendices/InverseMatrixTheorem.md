@@ -35,6 +35,7 @@ For an $n\times n$ matrix $A$, the following are equivalent:
 
 ::::
 
+%{prf:ref}`Exc:BasisDim:ProveRankABLeqRankA`.
 
 :::{prf:proof}
 
@@ -42,16 +43,3 @@ For the equivalence of {itemref}`It:Appendices:InvDef` through {itemref}`It:Appe
 
 :::
 
-
-%:::{prf:proof}
-
-%For the equivalence of {itemref}`It:Appendices:InvDef` through {itemref}`It:Appendices:InvDefColSpanRn`, see {prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations` and {prf:ref}`Exc:BasisDim:ProveRankABLeqRankA`. For {itemref}`It:Appendices:InvIffFullRank`. For {itemref}`It:Appendices:InvIffZeroNoEV`, see {prf:ref}`Prop:EigenValues:Singularity`.
-
-%:::
-
-
-%:::{prf:proof}
-
-%For the equivalence of  through, see {prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations` and {prf:ref}`Exc:BasisDim:ProveRankABLeqRankA`. For , see {prf:ref}`Thm:BasisDim:RankThm`. For, see {prf:ref}`Prop:EigenValues:Singularity`.
-
-%:::
