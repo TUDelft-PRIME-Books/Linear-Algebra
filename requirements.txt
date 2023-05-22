@@ -1,3 +1,6 @@
-jupyter-book
-sphinx-proof
-sphinx-exercise
+beautifulsoup4
+docutils
+jupyter_book
+roman
+Sphinx
+TexSoup
