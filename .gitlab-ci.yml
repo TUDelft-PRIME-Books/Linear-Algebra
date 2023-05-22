@@ -6,7 +6,7 @@ jupyter-build:
   stage: build
   image: python:slim
   script:
-    - pip install -U jupyter-book==0.15.1 sphinx-proof sphinx-exercise texsoup
+    - pip install -r requirements.txt
     - jupyter-book clean .
     - jupyter-book build .
   artifacts:
