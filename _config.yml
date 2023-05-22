@@ -96,6 +96,7 @@ sphinx:
     latextable: _ext/
     review: _ext/
     parentheses_list: _ext/
+    latexlist: _ext/
   extra_extensions:
     - sphinx_proof
     - sphinx_togglebutton
