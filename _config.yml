@@ -94,6 +94,7 @@ sphinx:
     applet: _ext/
     htmltable: _ext/
     latextable: _ext/
+    latexlist: _ext/
     review: _ext/
     parentheses_list: _ext/
   extra_extensions:
