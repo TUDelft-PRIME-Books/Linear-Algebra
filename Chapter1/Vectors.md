@@ -14,7 +14,7 @@ We therefore have a need for something more general. Something which allows us t
 
 ## Arrows in the plane
 
-Consider an arrow in the plane $\mathbf{v}_{1}$ as in {numref}`Figure %s <Fig:Vectors:ArrowinPlane>`.
+Consider an arrow $\mathbf{v}_{1}$ in the plane as in {numref}`Figure %s <Fig:Vectors:ArrowinPlane>`.
 
 ```{figure} Images/Fig-Vectors-ArrowinPlane.svg
 :name: Fig:Vectors:ArrowinPlane
@@ -76,7 +76,7 @@ $$
 \end{bmatrix}=\mathbf{v}_{1}+\mathbf{v}_{2}.
 $$
 
-As you see, it is very easy to find the sum of two arrows using our new notation. The same holds true for the stretching of an arrow. Let us try, for example, to stretch $\mathbf{v}_{3}$ to $2$ times its length, that is, let us try to find $2\mathbf{v}_{3}$. This gives an arrow pointing two units to the left and two units straight up. If we multiply both entries of $\mathbf{v}_{3}$ with 2, we find a new vector $\mathbf{v}_{4}$ with:
+As you see, it is very easy to find the sum of two arrows using our new notation. The same holds true for the stretching of an arrow. Let us try, for example, to stretch $\mathbf{v}_{3}$ to $2$ times its length, that is, let us try to find $2\mathbf{v}_{3}$. This gives an arrow pointing two units to the left and two units straight up. If we multiply both entries of $\mathbf{v}_{3}$ by $2$, we find a new vector $\mathbf{v}_{4}$ with:
 
 $$
 
@@ -221,9 +221,7 @@ Suppose $\mathbf{v}_{1},\mathbf{v}_{2},\mathbf{v}_{3}$ are vectors in $\mathbb{R
 
 ```{prf:proof}
 
-
-
-\todo[inline]{At the moment no proof.}
+Exercise. (Grasple 62390)
 
 ```
 
@@ -233,7 +231,7 @@ For example, the equation {eq}`Item:Vectors:Associativity` tells us that we do n
 :label: App:Vectors:ChemReac
 
 
-More than three dimensions? How does that make sense? Well, it is actually not so strange at all! Here is an example in which four dimensions occur very naturally. Sodium sulfide ($\ce{Na2S}$) is a chemical used to turn wood into pulp, to bleach textile, and so on. \todo{Comes from wikipedia. Should there be a reference here? How do we deal with references?} It is produced by adding carbon ($\ce{C}$) to sodium sulfate ($\ce{Na_{2}SO_{4}}$), which gives the following reaction:
+More than three dimensions? How does that make sense? Well, it is actually not so strange at all! Here is an example in which four dimensions occur very naturally. Sodium sulfide ($\ce{Na2S}$) is a chemical used to turn wood into pulp, to bleach textile, and so on. It is produced by adding carbon ($\ce{C}$) to sodium sulfate ($\ce{Na_{2}SO_{4}}$), which gives the following reaction:
 
 ```{math}
 :label: Eq:Vectors:ChemReac
@@ -293,7 +291,7 @@ The reaction under consideration here is a very simple one. It is not at all rar
 
 ## Points and vectors
 
-Vectors are quite easy to work with, even in more than three dimensions. It will therefore be convenient to relate the familiar concepts from plain old plane geometry and the somewhat more advanced three-dimensional geometry in terms of vectors. In this section, we will establish a link between points and vectors by introducing a sort of common anchor point for all vectors. In Section\todo{Add reference.}, we will relate lines and planes to vectors.
+Vectors are quite easy to work with, even in more than three dimensions. It will therefore be convenient to relate the familiar concepts from plain old plane geometry and the somewhat more advanced three-dimensional geometry in terms of vectors. In this section, we will establish a link between points and vectors by introducing a sort of common anchor point for all vectors. In {numref}`Section:LinesAndPlanes:Plane`, we will relate lines and planes to vectors.
 
 Suppose we fix an arbitrary point in the plane. Let us call it the _origin_ and write it as $O$. Every other point can now be fully determined by its displacement from $O$. In other words, any point $P$ in the place can be described by saying how far it is to the right of $O$ and how far it is up from $O$. If $a_{1}$ is the former quantity and $a_{2}$ is the latter, we will write $P=(a_{1},a_{2})$. If $P$ happens to be to the left of the origin, $a_{1}$ will be negative. Similarly, if $P$ is lower than $O$, $a_{2}$ will be negative. In {numref}`Figure %s <Fig:Vectors:PointandVect>`, you can see the point $P=(-1,2)$. For the point $O$ itself, we have $O=(0,0)$ since the displacement from $O$ to $O$ is $0$ in both directions.
 
