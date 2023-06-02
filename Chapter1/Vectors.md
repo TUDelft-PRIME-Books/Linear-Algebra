@@ -221,7 +221,9 @@ Suppose $\mathbf{v}_{1},\mathbf{v}_{2},\mathbf{v}_{3}$ are vectors in $\mathbb{R
 
 ```{prf:proof}
 
-Exercise. (Grasple 62390)
+Exercise. 
+
+%(Grasple 62390)
 
 ```
 
