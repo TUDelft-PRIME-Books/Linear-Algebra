@@ -4,7 +4,7 @@ Suppose we have, say, three brands competing with each other in some niche of th
 
 One of the salient factors of this simple model is that no customers are entering or leaving the market. That is, when a customer starts for example with brand A, he will, after one month, either use brand A, B, or C. In other words, the probabilities of him using any single brand sum to 1. This leads us to the following definition.
 
-:::{prf:def}
+:::{prf:definition}
 
 We call a vector $\vect{v}$ in $\R^{n}$ a **probability vector** if the sum of its entries is 1 and none of the entries are negative.
 
@@ -22,7 +22,7 @@ Clearly, for brands B and C there must are similar probability vectors, say $\ve
 
 In a general situation with $n$ brands, we will find $n$ vectors in $\R^{n}$. Together, this yields an $n\times n$-matrix.
 
-:::{prf:def}
+:::{prf:definition}
 
 A **stochastic matrix** is a square matrix, each column of which is a probability vector.
 
