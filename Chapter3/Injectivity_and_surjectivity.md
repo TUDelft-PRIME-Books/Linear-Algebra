@@ -501,7 +501,7 @@ Similarly, if $T$ is surjective, then the standard matrix $A$ of $T$ has a pivot
 
 ::::::
 
-The content of {prf:ref}`Prop:InjSurj:BijIsInv` is that, intuitively, a transformation is bijective if and only if it can be undone by some linear transformation. 
+The content of {prf:ref}`Prop:InjSurj:BijIsInv` is, intuitively, that a transformation is bijective if and only if it can be undone by some linear transformation. 
 
 
 :::{prf:proposition}
