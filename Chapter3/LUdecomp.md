@@ -1,6 +1,7 @@
 :::{review}
 :::
 
+(Sec:MatFactor)=
 # Matrix Factorisation
 
 When solving linear systems, it is very convenient to find an echelon form, so you can solve it using backward substitution as shown in {prf:ref}`Ex:LinSystems:I`. 

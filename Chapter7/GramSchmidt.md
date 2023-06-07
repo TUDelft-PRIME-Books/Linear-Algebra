@@ -317,7 +317,7 @@ $$
 
 ::::
 
-
+(Sec:Gram-Schmidt:QRdecomp)=
 ## The QR decomposition
 
 The Gram-Schmidt process leads to the following interesting decomposition of an $n \times m$ matrix $A$ with linearly independent columns.

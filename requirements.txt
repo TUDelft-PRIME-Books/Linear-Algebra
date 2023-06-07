@@ -3,6 +3,4 @@ docutils
 jupyter_book
 roman
 Sphinx
-sphinx-proof
-sphinx-exercise
 TexSoup

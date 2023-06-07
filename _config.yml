@@ -80,10 +80,10 @@ sphinx:
           "abs": ["\\left\\vert #1 \\right\\vert",1]
           "norm": ["\\left\\Vert #1 \\right\\Vert",1]
           "cp": ["\\times "]
-          "Nul": ["\\rm Nul\\, #1", 1]
-          "Col": ["\\rm Col\\, #1", 1]
-          "Row": ["\\rm Row\\, #1", 1]
-          "Rank": ["\\rm rank\\, #1", 1]
+          "Nul": ["{\\rm Nul}\\, #1", 1]
+          "Col": ["{\\rm Col}\\, #1", 1]
+          "Row": ["{\\rm Row}\\, #1", 1]
+          "Rank": ["{\\rm rank}\\, #1", 1]
           "nicefrac": ["\\frac "]
           "proj": ["\\operatorname{proj} "]
           "Span": ["\\operatorname{Span}\\left\\lbrace #1 \\right\\rbrace",1]
@@ -96,6 +96,8 @@ sphinx:
     latextable: _ext/
     review: _ext/
     parentheses_list: _ext/
+    latexlist: _ext/
+    grasple_exercise: _ext/
   extra_extensions:
     - sphinx_proof
     - sphinx_togglebutton
