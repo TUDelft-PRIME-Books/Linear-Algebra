@@ -37,9 +37,88 @@ A =
 \end{bmatrix}.
 $$
 
+When the factorisation is given, solving the system is quicker since we can solve it using backward and forward substitution. There is no need to look for an echelon form and then apply backward substitution. 
+
+Considering the matrix above and the system 
+
+$$
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+-1 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+1 & 1 & 1 \\
+0 & 2 & 6 \\
+0 & 0 & 4
+\end{bmatrix}
+\begin{bmatrix}
+x_1\\ x_2 \\ x_3 
+\end{bmatrix} = 
+\begin{bmatrix} 
+3 \\ 2 \\1
+\end{bmatrix},
+$$
+
+by setting $\mathbf{y} = \begin{bmatrix} 1 & 1 & 1 \\ 0 & 2 & 6 \\ 0 & 0 & 4 \end{bmatrix} \begin{bmatrix} x_1\\ x_2 \\ x_3 \end{bmatrix}$ we have 
+
+$$
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+-1 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+y_1\\y_2\\y_3
+\end{bmatrix} =
+\begin{bmatrix} 
+3 \\ 2 \\1
+\end{bmatrix}.
+$$
+
+With forward substitution we can find the solution:
+
+$$
+\begin{bmatrix}
+y_1\\y_2\\y_3
+\end{bmatrix} =
+\begin{bmatrix}
+3 \\ 2 \\ 4
+\end{bmatrix},
+$$
+
+Then, solving
+
+$$
+\begin{bmatrix}
+1 & 1 & 1 \\
+0 & 2 & 6 \\
+0 & 0 & 4
+\end{bmatrix}
+\begin{bmatrix}
+x_1\\ x_2 \\ x_3 
+\end{bmatrix} = 
+\begin{bmatrix}
+3 \\ 2 \\ 4
+\end{bmatrix},
+$$
+
+we obtain 
+
+$$
+\begin{bmatrix}
+x_1 \\ x_2 \\ x_3
+\end{bmatrix}
+\begin{bmatrix}
+4 \\ -2 \\ 1
+\end{bmatrix},
+$$
+
+which is the solution to our original system. Since the factorisation was given, we did not have to solve the system from scratch by trying to find an echelon form.
+
 There are several methods for factorising matrices. The factorisations that we will see in this section use **direct methods**. Direct methods are methods that produce the exact solution in a finite number of steps.
 
-There are special cases where solving linear systems can be done quickly. These cases involve triangular or trapezoidal matrices. In general, when the matrix associated with an $m\times n$ linear system is a trapezoidal matrix we can use backward or forward substitution for solving them. Remember the echelon forms from {numref}`Subsec:LinSystems:RowReduction`? Echelon forms are trapezoidal matrices. 
+There are special cases where solving linear systems can be done quickly. These cases involve triangular or trapezoidal matrices (we will discuss these matrices in the next section). In general, when the matrix associated with an $m\times n$ linear system is a trapezoidal matrix we can use backward or forward substitution for solving them. Remember the echelon forms from {numref}`Subsec:LinSystems:RowReduction`? Echelon forms are trapezoidal matrices.
 
 The most common factorisation methods make use of this kind of matrices. This is why we will first introduce the idea of a trapezoidal and triangular matrix and then discuss the corresponding factorisation methods and their applications.
 
@@ -54,7 +133,7 @@ For an $m\times n$ matrix $A$, we call the elements $a_{ii}$ the **diagonal elem
 
 :::
 
-Now we are ready to define the objects that we will 
+Now we are ready to define the objects that we will use during this section.
 
 ::::::{prf:definition} Trapezoidal and Triangular Matrices
 <ul>
@@ -87,7 +166,7 @@ U=
 \end{bmatrix}  \quad \text{for }\,\, m>n,
 $$
 
-where the $\blacksquare$ represent any real number in the main diagonal, and $\ast$ represent any real number above the main diagonal. If the matrix is a squared matrix, then it is called **upper triangular**.
+where the $\blacksquare$ represent any real number in the main diagonal, and the $\ast$ represent any real number above the main diagonal. If the matrix is a square matrix, then it is an **upper triangular** matrix.
 
 
 </li>
@@ -120,7 +199,7 @@ L=
 \end{bmatrix}  \quad \text{for }\,\, m>n,
 $$
 
-where the $\blacksquare$ represent any real number in the main diagonal, and $\ast$ represent any real number below the main diagonal. If the matrix is a squared matrix, then it is called **lower triangular**.
+where the $\blacksquare$ represent any real number in the main diagonal, and the $\ast$ represent any real number below the main diagonal. If the matrix is a square matrix, then it is a **lower triangular** matrix.
 
 </li>
 </ul>
@@ -128,17 +207,16 @@ where the $\blacksquare$ represent any real number in the main diagonal, and $\a
 ::::::
 
 
-Observe that, when all $\ast$ are zero and the matrix is squared, then the matrix is a diagonal matrix.
+Observe that, when all $\ast$ are zero and the matrix is square, then the matrix is a diagonal matrix.
 
 
 ::::::{prf:example}
 
-Below there are examples of triangular matrices.
+Below there are examples of trapezoidal matrices.
 
-<ul>
-<li>
+:::{latexlist}
 
-The matrix 
+\item The matrix 
 
 $$
 \begin{bmatrix}
@@ -149,13 +227,9 @@ $$
 $$
 
 
-is a $3\times 3$ both upper and lower triangular matrix.
+is a $3\times 3$ both upper and lower triangular matrix and, therefore, it is a diagonal matrix.
 
-</li>
-<li>
-
-The matrix 
- 
+\item The matrix 
 
 $$
 \begin{bmatrix}
@@ -166,13 +240,9 @@ $$
 \end{bmatrix}
 $$
 
-
 is a $4\times 4$ lower triangular matrix.
 
-</li>
-<li>
-
-The matrix 
+\item  The matrix 
 
 $$
 \begin{bmatrix}
@@ -186,8 +256,7 @@ $$
 
 is a $5\times 4$ upper trapezoidal matrix.
 
-</li>
-</ul>
+:::
 
 ::::::
 
@@ -201,36 +270,34 @@ Trapezoidal matrices have nice properties with respect to their sum and their pr
 :label: prop:PropertiesTriangularMatrices
 
 
-Let $A$ and $B$ be two upper trapezoidal (resp. lower trapezoidal) matrices. Then the following properties hold:
-
-<ol type = "i">
-<li id="Item:prop:PropertiesTriangularMatrices_sum">
-
-$A+B$ is an upper (resp. lower) trapezoidal matrix (whenever the sum makes sense).
+Let $A$ and $B$ be two upper trapezoidal matrices. Then the following properties hold:
 
 
-</li>
-<li id="Item:prop:PropertiesTriangularMatrices_product">
+:::{latexlist}
+:enumerated: true
+:type: i
 
-$AB$ is an upper (resp. lower) trapezoidal matrix (whenever the product makes sense).
+\item $A+B$ is an upper  trapezoidal matrix (whenever the sum makes sense).
+\label{Item:prop:PropertiesTriangularMatrices_sum}
 
+\item $AB$ is an upper trapezoidal matrix (whenever the product makes sense).
+\label{Item:prop:PropertiesTriangularMatrices_product}
 
-</li>
-<li id="Item:prop:PropertiesTriangularMatricesInverse">
-
-If $A$ is an invertible upper (resp. lower) triangular matrix, then $A^{-1}$ is upper (resp. lower) triangular matrix.
-
-</li>
-</ol>
-
-
+:::
 
 ::::::
 
+::::{prf:proposition}
+:label: Prop:LUDecomp:PropertiesTriangularMatricesInverse
+
+If $A$ is an invertible upper triangular matrix, then $A^{-1}$ is upper triangular matrix.
+
+::::
 
 
+The proof of {prf:ref}`Prop:LUDecomp:PropertiesTriangularMatricesInverse` is technical and it involves computations . 
 
-The proof is technical and it involves computations (especially <a href="#Item:prop:PropertiesTriangularMatricesInverse">iii.</a>). So the reader may skip this proof and convince themselves that the properties hold true by looking at the following example.
+So the reader may skip this proof and convince themselves that the properties hold true by looking at the following example.
 
 
 
@@ -296,9 +363,9 @@ which is upper triangular. It is left to the reader to check that $AA^{-1}=I$.
 
 ::::::{prf:proof} (of {prf:ref}`prop:PropertiesTriangularMatrices`)
 
-The proof of <a href="#Item:prop:PropertiesTriangularMatrices_sum">i.</a> follows from the fact that matrices are added component-wise. Therefore, the entries below the main diagonal of $A+B$ will be zero since both $A$ and $B$ have zero entries below the main diagonal.
+The proof of {itemref}`Item:prop:PropertiesTriangularMatrices_sum` follows from the fact that matrices are added component-wise. Therefore, the entries below the main diagonal of $A+B$ will be zero since both $A$ and $B$ have zero entries below the main diagonal.
  
-To prove <a href="#Item:prop:PropertiesTriangularMatrices_product">ii.</a> we fix $j < n$ and compute $AB_{(j+k)j}$ for $k=1,2,\dots, m-j$. In other words, we compute the entries below the main diagonal in column $j$:
+To prove {itemref}`Item:prop:PropertiesTriangularMatrices_product` we fix $j < n$ and compute $AB_{(j+k)j}$ for $k=1,2,\dots, m-j$. In other words, we compute the entries below the main diagonal in column $j$:
 
 $$
 AB_{(j+k)j} = \sum_{l=1}^{n} a_{(j+k)l}b_{lj}.
@@ -314,7 +381,7 @@ AB_{(j+k)j} &= \sum_{l=1}^{n} a_{(j+k)l}b_{lj} \\
 &= 0.        
 \end{align*}
  
-The proof for <a href="#Item:prop:PropertiesTriangularMatricesInverse">iii.</a> is proposed as an exercise. See 
+The proof for {prf:ref}`Item:prop:PropertiesTriangularMatricesInverse` is proposed as an exercise. See 
 <a href="#Item:prove_statment_c_properties_triangular_matrices">Exercise 1</a>.
 
 
@@ -387,21 +454,14 @@ To not clutter and to emphasise the triangular/trapezoidal matrices, we use empt
 
 Suppose that $A=LU$ so that a linear system of equations $A\mathbf{x}=\mathbf{b}$ can be written as $LU\mathbf{x}=\mathbf{b}$. Then, by setting $\mathbf{y} = U\mathbf{x}$, we can solve the linear system in two steps:
 
-<ol type = "i">
-<li>
+:::{latexlist}
+:enumerated: true
+:type: i
 
- Solve the system $L\mathbf{y}=\mathbf{b}$ and find $\mathbf{y}$.
+\item Solve the system $L\mathbf{y}=\mathbf{b}$ and find $\mathbf{y}$.
+\item Solve the system $U\mathbf{x}=\mathbf{y}$ to find $\mathbf{x}$.
 
-
-</li>
-<li>
-
- Solve the system $U\mathbf{x}=\mathbf{y}$ to find $\mathbf{x}$.
-
-
-</li>
-</ol>
-
+:::
 
 
 At this point the reader may think that such a decomposition involves a lot of work.  However, it takes (roughly) the same number of operations as for finding an echelon form (see {numref}`Subsec:LinSystems:RowReduction`). In addition, this method has the advantage that once the decomposition of a matrix $A$ has been found, then it is faster to solve multiple systems involving the matrix $A$. And why is that? Well, if one thinks about it, once we have an $LU$ decomposition of $A$ then we just need to solve linear systems that involve trapezoidal/triangular matrices, which are "faster" to solve than solving $A\mathbf{x}=\mathbf{b}$. We will formalise this concept below.
@@ -902,7 +962,7 @@ m_{n1} & m_{n2} & \cdots & m_{n(n-1)}    &  1
 (Sec:PLUDecomp)=
 ## PLU Decomposition
 
-The LU decomposition is quite limitting in the sense that it requires to be able to find an echelon form of the matrix of coefficients without exchanging any rows in the process. Clearly, it is not always possible to find an echelon form of a matrix without exchanging rows. Let's see what happens when we encounter this situation.
+The LU decomposition is quite limiting in the sense that it requires to be able to find an echelon form of the matrix of coefficients without exchanging any rows in the process. Clearly, it is not always possible to find an echelon form of a matrix without exchanging rows. Let's see what happens when we encounter this situation.
 
 ::::{prf:example}
 
@@ -986,7 +1046,9 @@ is not a lower triangular matrix.
 
 :::::
 
-To to find a lower triangular matrix we observe the following fact: subtracting $2$ times the second row to the third and then echanging the first and second rows is equivalent to first exhanging the first and second rows and then subtracting $2$ times the first row to the third. In other words,
+To find a lower triangular matrix we observe the following fact: subtracting $2$ times the second row to the third and then exchanging the first and second rows is equivalent to first exchanging the first and second rows and then subtracting $2$ times the first row to the third.
+
+::::{prf:example}
 
 $$
 \begin{bmatrix}
@@ -1011,7 +1073,9 @@ $$
 \end{bmatrix}.
 $$
 
-So we found an alternative order of row operations that brought us to the same echelon form. The key idea is to **perform all the row exchanges first** and **then add multiples of one row to another** to obtain an echelon form. Let's see the results: 
+::::
+
+So we found an alternative order of row operations that brought us to the same echelon form. The key idea is to **perform all the row exchanges first** and **then add multiples of one row to another** to obtain an echelon form. Let's see the results:
 
 :::{math}
 :label: eq:LUDecomp:almostPLU
@@ -1085,7 +1149,7 @@ Suppose that $A$ is an $m\times n$ matrix with real coefficients. Then there exi
 
 $$ PA = LU, $$
 
-where $P$ is a matrix that exchanges the rows of $A$, $L$ is obtained inverting the product matrices that perform row operations that only add multiples of a row to other rows, and $U$ is the corresponding echelon form of $A$.
+where $P$ is an $m\times m$ matrix that exchanges the rows of $A$, $L$ is an $m\times m$ lower triangular matrix obtained inverting the product matrices that perform row operations to that only add multiples of a row to other rows in the matrix $PA$, and the matrix $U$ is an $m\times n$ upper-trapezoidal matrix (echelon form) that is obtained after performing the corresponding row operations to $PA$.
 
 :::::
 
@@ -1250,7 +1314,7 @@ $10$ & $4,025$ & $1,565$ & $8,050$ & $2,515$ & $40,250$ & $10,115$ \\
 <ol type="1">
 <li id="Item:prove_statment_c_properties_triangular_matrices">
 
- Prove statement <a href="#Item:prop:PropertiesTriangularMatricesInverse">iii.</a> of {prf:ref}`prop:PropertiesTriangularMatrices` about properties of triangular matrices. **Hint:** Write the matrix $[A\vert I]$ and apply row operations to compute $A^{-1}$. The idea is similar to the one used in the proof of {prf:ref}`thm:existence_and_uniqueness_LU`.
+ Prove {prf:ref}`Prop:LUDecomp:PropertiesTriangularMatricesInverse`. **Hint:** Write the matrix $[A\vert I]$ and apply row operations to compute $A^{-1}$. The idea is similar to the one used in the proof of {prf:ref}`thm:existence_and_uniqueness_LU`.
 
 </li>
 <li>
