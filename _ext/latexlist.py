@@ -35,23 +35,31 @@ class LatexList(Directive):
             list_node = nodes.bullet_list()
 
         item_node = None
+        self.item_content = r""
         for line in self.content:
             if line.startswith('\\item'):
+
+                if self.item_content != "":
+                    para = nodes.paragraph()
+                    self.state.nested_parse(StringList([self.item_content]), self.content_offset, para)
+                    item_node += para
+                    self.item_content = r""
+
                 if item_node:
                     list_node += item_node
                 item_node = LatexListItem()
                 para = nodes.paragraph()
-                content = line[5:].strip()
-                self.state.nested_parse(StringList([content]), self.content_offset, para)
-                item_node += para
+                self.item_content += line[5:].strip() + "\n"
             elif line.startswith('\\label{'):
                 label_id = line[7:-1]
                 item_node['ids'].append(label_id)
             else:
-                para = nodes.paragraph()
-                content = line.strip()
-                self.state.nested_parse(StringList([content]), self.content_offset, para)
-                item_node += para
+                self.item_content += line.strip() + "\n"
+
+        # Add the last list item to the list as it is not covered with the current code.
+        para = nodes.paragraph()
+        self.state.nested_parse(StringList([self.item_content]), self.content_offset, para)
+        item_node += para
 
         if item_node:
             list_node += item_node
