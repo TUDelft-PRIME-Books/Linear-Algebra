@@ -16,7 +16,7 @@ ad-bc \neq 0.
 :::
 
 
-The expression $ad-bc$ we called the determinant of the matrix $A$.   Formula {eq}`Eq:DetGeometric:DetNonzero` is also equivalent to the statement that the columns of the matrix $A$ are linearly independent.
+We called the expression $ad-bc$  the *determinant* of the matrix $A$.   Formula {eq}`Eq:DetGeometric:DetNonzero` is also equivalent to the statement that the columns of the matrix $A$ are linearly independent.
 
 Likewise, by row reducing  a general $3 \times 3$ matrix
 
@@ -65,7 +65,7 @@ is given by  $|ad-bc|$, i.e., the absolute value of $ad-bc$.
 
 ::::::{prf:proof}
 
-The quickest way to prove this is to translate it to the cross product. We  introduce the vectors
+The quickest way to prove this is to translate it to the cross product  ({numref}`Section %s <Sec:CrossProduct>). To make use of the cross product we  introduce the vectors
 
 $$
 \tilde{\vect{u}} = \left[\begin{array}{c} a \\ b \\ 0 \end{array}\right]
@@ -73,7 +73,7 @@ $$
 \tilde{\vect{v}} = \left[\begin{array}{c} c \\ d \\ 0 \end{array}\right]
 $$
 
-
+as in  {numref}`Figure %s <Fig:DetGeometric:OrientedArea1>`.
 
 ::::{figure} Images/Fig-DetGeometric-OrientedArea1.svg
 :name: Fig:DetGeometric:OrientedArea1
@@ -81,16 +81,15 @@ $$
 Oriented area
 ::::
 
+So we embed the plane $\R^2$ as the $x$-$y$-plane into $\R^3$.
 
-See {numref}`Figure %s <Fig:DetGeometric:OrientedArea1>`
 We then  have
 
 $$
-\tilde{\vect{u}} \times \tilde{\vect{v}} = \left[\begin{array}{c} 0 \\ 0 \\ ad-bc \end{array}\right]
-.
+\tilde{\vect{u}} \times \tilde{\vect{v}} = \left[\begin{array}{c} 0 \\ 0 \\ ad-bc \end{array}\right].
 $$
 
-The length of this cross product, which is given by $|ad-bc|$,  gives the area of the parallelogram.
+The length of this cross product is equal to $|ad-bc|$.  This   gives the area of the parallelogram spanned by the vectors $\tilde{\vect{u}}$ and  $\tilde{\vect{v}}$, and this is an identical copy of the original parallelogram spanned by  $\vect{u}$ and  $\vect{v}$.
 
 ::::::
 
@@ -128,7 +127,7 @@ where  $\vect{u}^{\perp}$  is the vector that is perpendicular to $\vect{u}$, po
 :name: Fig:DetGeometric:AreaPargram
 
 
-Area equals base length time height
+Area equals base length times height
 ::::
 
 
@@ -139,7 +138,7 @@ ad-bc = \vect{u}^{\perp} \ip \vect{v} = \norm{\vect{u}^{\perp}} \norm{\vect{v}}\
 $$
 
 where  $\vartheta$ is the angle between  $\vect{u}^{\perp}$  and $\vect{v}$.
-Here $\norm{\vect{v}}\cos(\vartheta)$  is $(\pm)$ the length of the projection of $\vect{v}$ onto the line perpendicular to $\vect{u}$, which can be interpreted as the height of the parallelogram.  So then
+Here $h = \norm{\vect{v}}\cos(\vartheta)$  is $(\pm)$ the length of the projection of $\vect{v}$ onto the line perpendicular to $\vect{u}$, which can be interpreted as the height of the parallelogram.  So then
 
 $$
 \norm{\vect{u}^{\perp}} \norm{\vect{v}}\cos(\vartheta) = \norm{\vect{u}} \norm{\vect{v}}\cos(\vartheta) = \pm \text{(base length)} \times \text{height} =   \pm \text{area of } OACB.
@@ -190,7 +189,7 @@ $$
 
 
 Apart from the area, the determinant also says something about the relative position of the two vectors $\vect{u}$ and $\vect{v}$.
-In fact, we can use the determinant to define the orientation of two vectors in the plane (and later:  of $n$ vectors in $\R^n$).
+In fact, we can use the determinant to *define* the orientation of two vectors in the plane (and later:  of $n$ vectors in $\R^n$).
 
 
 
@@ -266,7 +265,7 @@ $\begin{vmatrix} 1 & 0 \\ 0 & 1\end{vmatrix} =  1$.
 
 
 
-These properties are easily verified by applying the definition
+These properties are verified by applying the definition
 
 $$
 \left|\begin{array}{cc} a & c \\ b & d \end{array}\right| = ad-bc.
@@ -283,26 +282,25 @@ Verify the four properties of {prf:ref}`Prop:DetGeometric:Properties2by2Det`
 
 ::::::
 
-However, they can also be looked at from the geometric interpretation 'signed area'.
-If you are interested, you may have a look at the proof.
+The properties have a clear geometric interpretation using the notion of 'signed area'.
+The following alternative proof uses this geometric viewpoint.
 
 
 
 ::::::{prf:proof}
 
 
-Three of the four properties are rather obvious:
+Three of the four properties are quickly settled.
 <ol type = "i">
 <li>
 
- Interchanging $\vect{u}$  and $\vect{v}$ changes the orientation. The signed area  changes sign.
+ Interchanging $\vect{u}$  and $\vect{v}$ does not alter the parallelogram.  However, it changes the orientation of the two vectors, and thus  signed area changes sign.
 
 </li>
-<li>
+</ol>
 
-$\det{(\vect{e_1},\vect{e_2})} $  is the area of the unit square.
+<ol type = "i" start = "3">
 
-</li>
 <li>
 
 $\det{(\vect{u},k\vect{v})} = k\times\det{(\vect{u},\vect{v})}$, $k \in \R$.
@@ -310,11 +308,17 @@ $\det{(\vect{u},k\vect{v})} = k\times\det{(\vect{u},\vect{v})}$, $k \in \R$.
 Giving one of the vectors a factor $k$ changes the area with a factor  $|k|$.  If $k > 0$, the orientation of the two vector does not change, so the determinant gets a factor $|k|$ which in this case is equal to $k$.  If however $k < 0$, then the orientation does change, so  the determinant gets a factor $-|k|$, which in this case is again equal to $k$.
 
 </li>
+<li>
+
+$\det{(\vect{e_1},\vect{e_2})} $  is the area of the unit square.
+
+</li>
+
 </ol>
 
 
 The remaining property,
-<ol type = "i">
+<ol type = "i" start = "2">
 <li>
 
 $\det{(\vect{u},\vect{v}+\vect{w})} = \det{(\vect{u},\vect{v})} + \det{(\vect{u},\vect{w})}$,
@@ -329,7 +333,7 @@ is the most interesting one.  The two pictures of {numref}`Figure %s <Fig:DetGeo
 ::::{figure} Images/Fig-DetGeometric-SumRule.svg
 :name: Fig:DetGeometric:Linearity
 
-The sum rule in a picture. Note, this is a 2D picture.
+The sum rule in a picture. Note, this is a **2D picture**.
 ::::
 
 
@@ -540,7 +544,7 @@ the following properties hold
 <ol type = "i">
 <li>
 
-$|D|$, i.e.  the absolute value of the determinant,  is equal to the volume of the parallelepiped with the edges  $\vect{a},\vect{b}$ and $\vect{c}$.
+$|D|$,   the absolute value of the determinant,  is equal to the volume of the parallelepiped with the edges  $\vect{a},\vect{b}$ and $\vect{c}$.
 
 </li>
 <li>
