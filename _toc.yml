@@ -52,9 +52,11 @@ chapters:
     sections:
       - file: 'Chapter8/SymmetricMatrices.md'
       - file: 'Chapter8/QuadraticForms.md'
+      - file: 'Chapter8/SingularValueDecomp.md'
   - file: 'Chapter9/intro.md'
     sections:
       - file: 'Chapter9/DynSystDiscrete.md'
   - file : 'Appendices/intro.md'
     sections:
       - file: "Appendices/ComplexNumbers.md"
+      - file: "Appendices/SVDProof.md"

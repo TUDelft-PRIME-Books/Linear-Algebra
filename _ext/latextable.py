@@ -2,7 +2,6 @@ import re
 from docutils import nodes
 from docutils.parsers.rst import directives
 from docutils.parsers.rst.directives.tables import Table
-from docutils.parsers.rst import Parser
 
 from sphinx.locale import _
 from TexSoup import TexSoup
@@ -26,6 +25,69 @@ class LaTeXTableDirective(Table):
                 'align': align} 
 
     def run(self):
+        env = self.state.document.settings.env
+        builder_name = env.app.builder.name
+
+        if builder_name == 'latex':
+            return self.run_latex()
+        else:
+            return self.run_html()
+
+    def run_latex(self):
+        title, messages = self.make_title()
+
+        header_rows = self.options.get('header-rows', 0)
+
+        table_text = self.block_text.split('\n\n')[-1].strip(' ')
+
+        table_soup = TexSoup(table_text)
+        tabular = table_soup.find('tabular')
+        args = str(tabular.args).strip('{}')
+
+        table_contents = "".join(str(content) for content in tabular.contents[1:])
+
+        table_rows = table_contents.split('\\\\')
+
+        max_num_cols = len(args)
+
+        table = nodes.table()
+
+        attrs = {'colwidth': 1}
+        tgroup = nodes.tgroup()
+        table += tgroup
+
+        for i in range(max_num_cols):
+            colspec = nodes.colspec(**attrs)
+            tgroup += colspec
+
+        # Parse the body of the table:
+        body_rows = table_rows[header_rows:-1]
+        rows = self.parse_rows(body_rows, args, 'latex')
+
+        # Parse the header rows:
+        if header_rows != 0:
+            th_rows_list = table_rows[:header_rows]
+            th_rows = self.parse_rows(th_rows_list, args, 'latex')
+
+            rows = th_rows + rows
+            thead = nodes.thead()
+            thead.extend(rows[:header_rows])
+            tgroup += thead
+
+        tbody = nodes.tbody()
+        tbody.extend(rows[header_rows:])
+        tgroup += tbody
+
+        self.set_table_width(table)
+        self.add_name(table)
+
+        table['classes'] += self.options.get('class', [])
+        if title:
+            table.insert(0, title)
+
+        return [table] + messages
+
+    def run_html(self):
 
         title, messages = self.make_title()
 
@@ -48,15 +110,13 @@ class LaTeXTableDirective(Table):
 
         table = nodes.table()
 
-        attrs = {'colwidth' : 1 ,'align' : 'right'}
+        attrs = {'colwidth' : 1 }
         tgroup = nodes.tgroup()
         table += tgroup
 
         for i in range(max_num_cols):
 
-
             colspec = nodes.colspec(**attrs)
-            colspec['align'] = "right"
             tgroup += colspec
 
         # parse the body of the table:
@@ -88,8 +148,7 @@ class LaTeXTableDirective(Table):
 
         return [table]+messages
 
-    
-    def parse_rows(self,row_list : list,table_args: list) -> str:
+    def parse_rows(self,row_list : list,table_args: str, builder: str = 'html') -> list:
 
         rows = []
         for row in row_list:
@@ -98,18 +157,9 @@ class LaTeXTableDirective(Table):
             i=0
             for cell in cell_list:
 
-                col_align = 'left'
-
-                match table_args[i]:
-                    case 'r': 
-                        col_align = 'right'
-                    case 'c':
-                        col_align = 'center'
-                    case 'l':
-                        col_align = 'left'
-
+                col_align = 'cell-text-left'  # Default value
+                align_arg = table_args[i]
                 attrs = {}
-                attrs['align'] = f'{col_align}'
                 cell_text = str(cell)
                 cell_text = cell_text.strip(' ')
 
@@ -119,23 +169,38 @@ class LaTeXTableDirective(Table):
                 if cell_entry_properties != None:
                     colspan = cell_entry_properties.groups()[0]
                     cell_align = cell_entry_properties.groups()[1]
+                    if cell_align != align_arg:
+                        align_arg = cell_align
                     cell_text = cell_entry_properties.groups()[2]
                     attrs['morecols']=int(colspan)-1
-                    attrs['align'] = f"{cell_align}"
                 
+                match align_arg:
+                    case 'r': 
+                        col_align = 'cell-text-right'
+                    case 'c':
+                        col_align = 'cell-text-center'
+                    case 'l':
+                        col_align = 'cell-text-left'
+
                 # TODO
                 # Search for multi row
-                
-                cell_text = nodes.raw(None,cell_text)
-                cell_text_node = nodes.Element()
-                self.state.nested_parse(cell_text, 0, cell_text_node)
-                aux = nodes.Text('')
-                aux.children = cell_text_node.children
-                cell_text_node = aux
+
+
+                if builder == 'html':
+                    cell_text = nodes.raw(None, cell_text)
+                    cell_text_node = nodes.Element()
+                    self.state.nested_parse(cell_text, 0, cell_text_node)
+
+                    aux = nodes.Text('')
+                    aux.children = cell_text_node.children
+                    cell_text_node = aux
+                elif builder == 'latex':
+                    cell_text_node = nodes.raw(None, cell_text, format='latex')
 
                 entry = nodes.entry()
                 for attr, value in attrs.items():
                     entry[attr] = value
+                entry['classes'].append(col_align)
                 entry += cell_text_node
                 row_node += entry
                 i+=1
@@ -145,18 +210,13 @@ class LaTeXTableDirective(Table):
         return rows
 
 
-def visit_htmltable_node(self, node):
-    pass
-
-def depart_htmltable_node(self, node):
-    pass
-
 
 def setup(app):
+    app.add_directive('latextable', LaTeXTableDirective)
 
-    app.add_directive('latextable',LaTeXTableDirective)
     return {
         'version': '0.1.1',
         'parallel_read_safe': True,
         'parallel_write_safe': True,
     }
+

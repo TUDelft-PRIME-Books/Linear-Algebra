@@ -453,3 +453,20 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 
 ::::
 
+## Grasple Exercises
+
+%<iframe id="grasple_exercise_221" height="560" src="https://embed.grasple.com/exercises/2fe8b445-bb2e-412b-a2b8-593e2a0214cf?id=76698" title="Grasple Exercise 76698" width="100%"></iframe>
+%<hr style="height:5px; border-width:5px">
+%<iframe id="grasple_exercise_222" height="560" src="https://embed.grasple.com/exercises/f365becd-ee34-4fe9-854c-38fd188bb397?id=76699" title="Grasple Exercise 76699" width="100%"></iframe>
+
+::::{grasple} https://embed.grasple.com/exercises/2fe8b445-bb2e-412b-a2b8-593e2a0214cf?id=76698
+:label: grasple_exercise_221
+
+::::
+
+::::{grasple} https://embed.grasple.com/exercises/f365becd-ee34-4fe9-854c-38fd188bb397?id=76699
+:label: grasple_exercise_222
+
+::::
+
+See {grasple_ref}`grasple_exercise_221`, and {grasple_ref}`grasple_exercise_222`.

@@ -71,15 +71,7 @@ As a first example consider the following.
 
 
 The transformation  corresponding to the matrix 
-
-$$
-A = 
-\begin{bmatrix}
- 1 & 2 & 0\\ 1 & 2 & 1 
-\end{bmatrix}
-$$
-
-is defined by
+$A = \begin{bmatrix} 1 & 2 & 0\\ 1 & 2 & 1 \end{bmatrix}$ is defined by
 
 $$
    T_A(\mathbf{x}) = 
@@ -237,11 +229,9 @@ $$
 \begin{bmatrix}
         1 & 0 \\ 0 & 1 \\ 0 & 0 
 \end{bmatrix}
-     
 \begin{bmatrix}
         x \\ y 
 \end{bmatrix}    = 
-     
 \begin{bmatrix}
         x \\ y \\0
 \end{bmatrix}.
@@ -558,22 +548,18 @@ $$
     T\left(\begin{bmatrix}
         x_1 \\ y_1
 \end{bmatrix} +
-    
 \begin{bmatrix}
         x_2 \\ y_2
 \end{bmatrix} \right)= 
     T \left(\begin{bmatrix}
         x_1+x_2 \\ y_1+y_2 
 \end{bmatrix}\right)= 
-    
 \begin{bmatrix}
             x_1 + x_2 \\ y_1 + y_2 \\ 0
 \end{bmatrix} = 
-    
 \begin{bmatrix}
             x_1 \\ y_1 \\ 0
 \end{bmatrix} + 
-    
 \begin{bmatrix}
             x_2 \\ y_2 \\ 0
 \end{bmatrix}.
@@ -599,7 +585,6 @@ $$
     T \left(\begin{bmatrix}
         c x_1 \\  cy_1
 \end{bmatrix}\right)= 
-    
 \begin{bmatrix}
         c x_1 \\ c y_1 \\ 0
 \end{bmatrix} = 
@@ -626,16 +611,12 @@ Consider the mapping
  $T:\mathbb{R}^2\rightarrow\mathbb{R}^2$ that sends each vector $ \begin{bmatrix}
  x \\ y 
 \end{bmatrix}$ 
-in $\mathbb{R}^2$ to the vector 
-$ \begin{bmatrix}
- x+y \\ xy 
-\end{bmatrix}$:
+in $\mathbb{R}^2$ to the vector $\begin{bmatrix} x+y \\ xy \end{bmatrix}$:
 
 $$
   T:  \begin{bmatrix}
  x \\ y 
 \end{bmatrix} \mapsto 
-  
 \begin{bmatrix}
  x+y \\ xy 
 \end{bmatrix}
@@ -647,7 +628,6 @@ $$
     T \left(\begin{bmatrix}
  1 \\ 1 
 \end{bmatrix} + 
-    
 \begin{bmatrix}
  1 \\ 2 
 \end{bmatrix}\right)=
@@ -669,15 +649,12 @@ $$
    T \left(\begin{bmatrix}
  1 \\ 2 
 \end{bmatrix}\right)= 
-   
 \begin{bmatrix}
  2 \\ 1 
 \end{bmatrix} + 
-       
 \begin{bmatrix}
  3 \\ 2 
 \end{bmatrix} = 
-       
 \begin{bmatrix}
  5 \\ 3 
 \end{bmatrix}
@@ -698,7 +675,6 @@ $$
 \left(\begin{bmatrix}
  3 \\ 3 
 \end{bmatrix}\right)= 
-   
 \begin{bmatrix}
  6 \\ 9 
 \end{bmatrix}
@@ -711,7 +687,6 @@ $$
 \begin{bmatrix}
  2 \\ 1 
 \end{bmatrix} = 
-   
 \begin{bmatrix}
  6 \\ 3 
 \end{bmatrix}.
@@ -751,7 +726,6 @@ $$
 \begin{bmatrix}
  x \\ y 
 \end{bmatrix}  \mapsto 
-  
 \begin{bmatrix}
  x \\ y \\ 0 
 \end{bmatrix}
@@ -759,7 +733,6 @@ $$
 \begin{bmatrix}
  1 & 0 \\ 0&1 \\ 0&0 
 \end{bmatrix} 
-   
 \begin{bmatrix}
  x \\ y 
 \end{bmatrix} 
@@ -1010,7 +983,6 @@ $$
 \begin{bmatrix}
  2 \\ -2 
 \end{bmatrix}= 
- 
 \begin{bmatrix}
  7 \\ 6 
 \end{bmatrix}.
@@ -1034,8 +1006,9 @@ the  standard basis for $\mathbb{R}^n$  which was introduced in the section {ref
 
 Recall that this is the set of vectors 
 
-\begin{equation}
-\label{Eq:LinTrafo:StandardBasis}
+:::{math}
+:label: Eq:LinTrafo:StandardBasis
+
 \left(\vect{e}_1,\mathbf{e}_2, \ldots, \mathbf{e}_n\right)=
 \left(\begin{bmatrix}
  1 \\ 0 \\ 0 \\ \vdots \\ 0 
@@ -1047,7 +1020,8 @@ Recall that this is the set of vectors
 \begin{bmatrix}
  0 \\ 0 \\ 0 \\ \vdots \\ 1 
 \end{bmatrix}\right).
-\end{equation}
+
+:::
 
 The next example gives an illustration of the above, and it also leads the way to 
 the construction of a matrix for an arbitrary linear transformation.
@@ -1103,7 +1077,6 @@ $$
 \begin{bmatrix}
 4 \\3 
 \end{bmatrix} \,\,=\,\,\,
-               
 \begin{bmatrix}
 1 &4 \\2 &3
 \end{bmatrix}\mathbf{x}.
@@ -1162,9 +1135,11 @@ Each linear transformation $T$ from $\mathbb{R}^n$ to $\mathbb{R}^m$ is a matrix
 More specific: if $T: \mathbb{R}^n \to \mathbb{R}^m$ is linear, then for each $\mathbf{x}$ in $\mathbb{R}^n$
 
 $$
-
   T(\mathbf{x}) = A\mathbf{x}, \quad \text{where} \quad 
-  A =  \begin{bmatrix} T(\mathbf{e}_1) & T(\mathbf{e}_2) & \ldots & T(\mathbf{e}_n) \end{bmatrix}.
+  A = 
+\begin{bmatrix}
+ T(\mathbf{e}_1) & T(\mathbf{e}_2) & \ldots & T(\mathbf{e}_n) 
+\end{bmatrix}.
 $$
 
 
@@ -1174,17 +1149,11 @@ $$
 
 
 
- 
-
-
-
-
 ::::::{prf:proof}
 We can more or less copy the derivation in {prf:ref}`Ex:LinTrafo:StandardMatrixIntro`.
 First of all, any vector $\mathbf{x}$ is a linear combination of the standard basis:
 
 $$
-
   \mathbf{x} =  
 \begin{bmatrix}
 x_1\\x_2\\ \vdots \\ x_n 

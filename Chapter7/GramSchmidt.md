@@ -317,7 +317,7 @@ $$
 
 ::::
 
-
+(Sec:Gram-Schmidt:QRdecomp)=
 ## The QR decomposition
 
 The Gram-Schmidt process leads to the following interesting decomposition of an $n \times m$ matrix $A$ with linearly independent columns.
@@ -470,11 +470,12 @@ The following example provides an illustration of this last proposition.
 Consider the matrix  
 
 $$
-   
-    A= \begin{bmatrix}  1 & 3 & 3\\ 
-                        1 & 3 & 1\\
-                       -1 &-2 & 4  \\
-                       1 & 0 &-4 \end{bmatrix}.
+A= \begin{bmatrix}  
+  1 & 3 & 3\\ 
+  1 & 3 & 1\\
+  -1 &-2 & 4  \\
+  1 & 0 &-4 
+\end{bmatrix}.
 $$
 
 From   {prf:ref}`Ex:GramSchmidt:Orthogonalize`  and 
@@ -483,7 +484,6 @@ we know that applying the Gram-Schmidt process to the columns of $A$
 leads to the matrix
 
 $$ 
-
  Q = \begin{bmatrix} 
         \dfrac{1}{2} & \dfrac{1}{\sqrt{6}} & \dfrac{2}{\sqrt{14}}\\ 
         \dfrac{1}{2} & \dfrac{1}{\sqrt{6}} & 0\\
@@ -528,7 +528,6 @@ Let $Q$ be the matrix coming from the Gram-Schmidt process, followed by rescalin
 Since  by construction 
 
 $$ 
-
   \vect{q}_i \perp \text{span}\{\vect{q}_1,\ldots,\vect{q}_{i-1}\} = \text{span}\{\vect{a}_1,\ldots,\vect{a}_{i-1}\}
 $$
 

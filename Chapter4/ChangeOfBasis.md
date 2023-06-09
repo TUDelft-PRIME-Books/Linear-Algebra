@@ -828,16 +828,16 @@ of $T$ with respect to the basis $\mc{B}$ is given by
 The following diagram illustrates what is going on:
 
 $$
-  \begin{array}{ccc}
-      \R^n & \underrightarrow {\rule{3em}{0ex} T \rule{3em}{0ex}} & \R^n \\[5ex]
-      \vect{x} = P[\vect{x}]_{\mc{B}} & \underrightarrow {\rule{3em}{0ex} A\rule{3em}{0ex}} & 
-      \begin{array}[t]{l}A\vect{x} = T(\vect{x} ) \\ = AP[\vect{x}]_{\mc{B}} \end{array} \\[1ex]
-      P_{\mc{B}}\left  \uparrow \rule{0ex}{4em} \right. \rule{2em}{0ex}   &  &  P^{-1}_{\mc{B}}\,\left  \downarrow \rule{0ex}{4em} \right.\,
-      \left  \uparrow \rule{0ex}{4em} \right.P_{\mc{B}}  \\
-       [\vect{x}]_{\mc{B}} & \underrightarrow {\rule{3em}{0ex} [T]_{\mc{B}} \rule{3em}{0ex}} & \quad
-       \begin{array}{l}[T(\vect{x})]_{\mc{B}} \\
-       = P^{-1}AP[\vect{x})]_{\mc{B}}\end{array}
-  \end{array}
+\begin{array}{ccc}
+\R^n & \underrightarrow {\rule{3em}{0ex} T \rule{3em}{0ex}} & \R^n \\[5ex]
+\vect{x} = P[\vect{x}]_{\mc{B}} & \underrightarrow {\rule{3em}{0ex} A\rule{3em}{0ex}} & 
+\begin{array}[t]{l}A\vect{x} = T(\vect{x} ) \\ = AP[\vect{x}]_{\mc{B}} \end{array} \\[1ex]
+P_{\mc{B}}\left  \uparrow \rule{0ex}{4em} \right. \rule{2em}{0ex}   &  &  P^{-1}_{\mc{B}}\,\left  \downarrow \rule{0ex}{4em} \right.\,
+\left  \uparrow \rule{0ex}{4em} \right.P_{\mc{B}}  \\
+   {[\vect{x}]}_{\mc{B}} & \underrightarrow {\rule{3em}{0ex} [T]_{\mc{B}} \rule{3em}{0ex}} & \quad
+   \begin{array}{l}[T(\vect{x})]_{\mc{B}} \\
+   = P^{-1}AP[\vect{x})]_{\mc{B}}\end{array}
+\end{array}
 $$
 
 ::::
@@ -969,7 +969,7 @@ Again, as the name suggests, the change-of-basis matrix can be used to switch fr
 If ${\mathcal B} = \{\vect{b}_1, \ldots, \vect{b}_n \}$ and ${\mathcal C} = \{\vect{c}_1, \ldots, \vect{c}_n \}$ are two  bases of $\R^n$, then for any vector $\vect{v}$ in $\R^n$ it holds that
 
 $$
-     [\vect{v}]_{\mc C} = \CoBmatrix{B}{C} [\vect{v}]_{\mc B}.
+     [\vect{v}]_{\mc{C}} = \CoBmatrix{B}{C} [\vect{v}]_{\mc{B}}.
 $$
 
 ::::

@@ -542,15 +542,12 @@ where $r=|z|$ is the modulus of $z$ and $\theta=\arg(z)$ is an argument of $z$.
 
 We can now see what happens to the product of two complex numbers. Suppose we have the complex number $z$ with modulus $|z|=r$ and argument $\arg(z)=\theta$. Hence, $z=r\cos(\theta) + i r\sin(\theta)$. The second complex number we consider is $w$ with modulus $|w|=s$ and argument $\arg(w) = \phi$; thus $w=s\cos(\phi) + i s \sin(\phi)$. We can then calculate the product using the addition formulas for cosine and sine.
 
-:::{math}
-:label: Eq:ComplexNumbers:calcproduct
-
-\begin{align*}
-zw &= (r\cos(\theta) + i r \sin(\theta)) (s\cos(\phi) + is \sin(\phi)) 
-\\&= rs \cos(\theta) \cos(\phi) + irs \cos(\theta) \sin(\phi) + irs \sin(\theta) \cos(\phi) + i^2 rs \sin(\theta) \sin(\phi)  \nonumber
-\\&= rs( \cos(\theta) \cos(\phi) - \sin(\theta) \sin(\phi)) + irs (\cos(\theta) \sin(\phi) + \sin(\theta) \cos(\phi))\nonumber
-\\&= rs \cos(\theta + \phi) + irs \sin(\theta+\phi) \nonumber
-\end{align*}
+\begin{align}
+zw &= (r\cos(\theta) + i r \sin(\theta)) (s\cos(\phi) + is \sin(\phi))\label{Eq:ComplexNumbers:calcproduct} \\
+&= rs \cos(\theta) \cos(\phi) + irs \cos(\theta) \sin(\phi) + irs \sin(\theta) \cos(\phi) + i^2 rs \sin(\theta) \sin(\phi)  \nonumber\\
+&= rs( \cos(\theta) \cos(\phi) - \sin(\theta) \sin(\phi)) + irs (\cos(\theta) \sin(\phi) + \sin(\theta) \cos(\phi))\nonumber\\
+&= rs \cos(\theta + \phi) + irs \sin(\theta+\phi) \nonumber
+\end{align}
 
 :::
 

@@ -116,7 +116,7 @@ The  sets  $ {\mathcal A}_1$ and $ {\mathcal A}_3$ each consist of three linearl
 ::::::{prf:definition}
 :label: Dfn:BasisDim:Basis
 
-A set of vectors ${\mathcal B} = \{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_r\}$ is called a **basis** of a subspace $S$ if
+A set of vectors ${\mathcal B} = \lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_r\rbrace$ is called a **basis** of a subspace $S$ if
 
 <ol type = "i">
 
@@ -129,7 +129,7 @@ $S = \Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_r}$.
 
 <li>
 
- The set $\{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_r\}$ is linearly independent.
+ The set $\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_r\rbrace$ is linearly independent.
 
 
 
@@ -149,7 +149,7 @@ The **standard basis** for $\R^n$ is given by the set
 
 $$
 
-{\mathcal E} = \{\vect{e}_1, \vect{e}_2, \ldots, \vect{e}_n\}
+{\mathcal E} = \lbrace\vect{e}_1, \vect{e}_2, \ldots, \vect{e}_n\rbrace
 
 $$
 
@@ -235,12 +235,12 @@ Because of {prf:ref}`Thm:Subspaces:AllSubspacesRn`, which states that any subspa
 
 $$
 S = \Span{\vect{v}_1, \ldots, \vect{v}_r} \quad \text{with  }
-\{\vect{v}_1, \ldots, \vect{v}_r\} \text{  linearly independent}
+\lbrace\vect{v}_1, \ldots, \vect{v}_r\rbrace \text{  linearly independent}
 $$
 
 a basis for a subspace always exists.
 
-If $S$ is not the trivial subspace $\{\vect{0}\}$ a basis is not unique.
+If $S$ is not the trivial subspace $\lbrace\vect{0}\rbrace$ a basis is not unique.
 
 (For the trivial subspace the only basis is the empty set.)
 
@@ -472,7 +472,7 @@ spans the null space. It is also linearly independent, so it is a basis.
 :name: Fig:BasisDim:BasisColA
 
 
-The  basis $\{\vect{a}_1,\vect{a}_3\}$ of $\Col{A}$.
+The  basis $\lbrace\vect{a}_1,\vect{a}_3\rbrace$ of $\Col{A}$.
 ::::
 
 
@@ -961,8 +961,8 @@ We can use this as follows.
 Suppose
 
 $$
-\{\vect{a}_1, \vect{a}_2, \ldots, \vect{a}_k \} \quad \text{and}
-\quad \{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \}
+\lbrace\vect{a}_1, \vect{a}_2, \ldots, \vect{a}_k \rbrace \quad \text{and}
+\quad \lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace
 $$
 
 are two bases for the same subspace $S$.
@@ -996,7 +996,7 @@ would imply
 
 $$
 
-\text{the set  } \{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \}
+\text{the set  } \lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace
 \text{  is linearly dependent.}
 \nonumber
 
@@ -1141,16 +1141,16 @@ Because of {prf:ref}`Thm:Subspaces:EqualDim` this is a good definition.
 :label: Ex:BasisDim:BasesTrivialSubspaces
 
 
-For the trivial subspace $S = \{\vect{0}\}$ we postulated that its basis is the empty set. Thus,
+For the trivial subspace $S = \lbrace\vect{0}\rbrace$ we postulated that its basis is the empty set. Thus,
 
 $$
-\text{dim}\, S = \text{dim}\{\vect{0}\} = 0.
+\text{dim}\, S = \text{dim}\lbrace\vect{0}\rbrace = 0.
 $$
 
 For the other trivial subspace, the whole $\R^n$,  the standard basis
 
 $$
-{\mathcal E} = \{\vect{e}_1, \vect{e}_2, \ldots, \vect{e}_n\},
+{\mathcal E} = \lbrace\vect{e}_1, \vect{e}_2, \ldots, \vect{e}_n\rbrace,
 $$
 
 has exactly $n$ elements,  So
@@ -1179,20 +1179,20 @@ The following proposition sometimes helps to show that a set of vectors is a bas
 ::::::{prf:proposition}
 :label: Prop:BasisDim:TwoOfThreeSuffice
 
-For a set of vectors  $ \{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \} $  in a subspace $S$ of dimension $k$ each pair of the following three properties implies the remaining property.
+For a set of vectors  $ \lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace $  in a subspace $S$ of dimension $k$ each pair of the following three properties implies the remaining property.
 
 <ol type = "i">
 
 <li>
 
-$\{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \}$  is linearly  independent;
+$\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace$  is linearly  independent;
 
 
 </li>
 
 <li>
 
- $\Span{\{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \}}=S$;
+ $\Span{\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace}=S$;
 
 
 </li>
@@ -1226,7 +1226,7 @@ $$
 \text{(i)   and  (ii)} \quad \Longrightarrow \quad   \text{(iii)}.
 $$
 
-Well, if $\{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \}$ is linearly  independent and spans $S$, then it is a basis for $S$.  Since all bases of $S$ contain  dim$ S = k$  vectors, it follows that $\ell = k$.
+Well, if $\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace$ is linearly  independent and spans $S$, then it is a basis for $S$.  Since all bases of $S$ contain  dim$ S = k$  vectors, it follows that $\ell = k$.
 
 Next, let us prove
 
@@ -1234,7 +1234,7 @@ $$
 \text{(i)   and  (iii)} \quad \Longrightarrow \quad   \text{(ii)}.
 $$
 
-So suppose  $\{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k \}$ is linearly  independent, and is contained in $S$.  We have to show that
+So suppose  $\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k \rbrace$ is linearly  independent, and is contained in $S$.  We have to show that
 
 $$
 \Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k } = S,
@@ -1246,14 +1246,14 @@ To show this,  let $\vect{s}$  be an arbitrary vector in $S$.\\
 Furthermore, let
 
 $$
-\{\vect{a}_1, \vect{a}_2, \ldots, \vect{a_{k} \}
+\lbrace\vect{a}_1, \vect{a}_2, \ldots, \vect{a}_{k} \rbrace
 $$
 
 be any basis of $S$.
 Then we know  (Proposition ??) that the set
 
 $$
-\{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k,\vect{s}\}
+\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k,\vect{s}\rbrace
 $$
 
 which contains $k+1$ elements, is contained is $S$, where we have that
@@ -1265,14 +1265,15 @@ $$
 So
 
 $$
-\{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k, \vect{s}\} \subseteq \Span{\vect{a}_1, \vect{a}_2, \ldots, \vect{a}_k}.
+\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k, \vect{s}\rbrace \subseteq \Span{\vect{a}_1, \vect{a}_2, \ldots, \vect{a}_k}.
 $$
 
 
+Invoking  Proposition ?? we get that
+$\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k \rbrace$ 
+is linearly dependent.
 
-Invoking  Proposition ?? we get that $ \{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k,s \} \text{  is linearly dependent} $.
-
-Since we assumed  $ \{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k\}$    is linearly independent,  and we may conclude that
+Since we assumed  $ \lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k\rbrace$    is linearly independent, we may conclude that
 
 $$
 \vect{s} \in \Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k}.
@@ -1285,7 +1286,6 @@ $$
 $$
 
 The remaining part we leave to the reader.
-
 
 ::::::
 

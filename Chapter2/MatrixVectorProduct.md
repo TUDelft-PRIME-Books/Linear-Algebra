@@ -13,26 +13,20 @@ We'll define the product of an $m\times n$ matrix $A$ with a vector $\vect{x}$ i
 The product $A\mathbf{x}$ of an $m\times n$ matrix 
 
 $$
-
  A = [\mathbf{a_1} \,\,\mathbf{a_2}\, \ldots\, \mathbf{a_n}]
-
 $$
 
 with a vector
 
 $$
- 
  \mathbf{x} = 
 \begin{bmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{bmatrix}\in \mathbb{R}^n
-
 $$
 
 is defined as 
 
 $$
-
   A\mathbf{x} = x_1\mathbf{a_1} + x_2\mathbf{a_2} + \ldots + x_n\mathbf{a_n}.
-
 $$
 
 So: $A\mathbf{x}$ is the linear combination of the columns of the matrix $A$ with the entries of the vector $\mathbf{x}$ as coefficients.
@@ -78,7 +72,6 @@ The interpretation of  $A\mathbf{x}$  as a linear combination of the columns of 
 The product of a matrix and a vector can also be computed as follows:
 
 $$
-
 \left[\begin{array}{ccccc}
             a_{11} & a_{12}&  \ldots& \ldots&  a_{1n} \\
             a_{21} & a_{22}&  \ldots& \ldots&  a_{2n} \\
@@ -88,13 +81,12 @@ $$
    \right]  
 \begin{bmatrix}    x_1 \\ x_2 \\ \vdots \\ \vdots \\ x_n  \end{bmatrix}
    =
-   
-\begin{bmatrix}    a_{11}x_1 + a_{12}x_2 +   \ldots+ a_{1n}x_n \\ 
-                       a_{21}x_1 + a_{22}x_2 +   \ldots+ a_{2n}x_n \\
-                          \vdots\\
-                           a_{m1}x_1 + a_{m2}x_2 +   \ldots+ a_{mn}x_n                    
-   \end{bmatrix}.
-
+\begin{bmatrix}
+    a_{11}x_1 + a_{12}x_2 +   \ldots+ a_{1n}x_n \\ 
+    a_{21}x_1 + a_{22}x_2 +   \ldots+ a_{2n}x_n \\
+                \vdots\\
+    a_{m1}x_1 + a_{m2}x_2 +   \ldots+ a_{mn}x_n 
+\end{bmatrix}.
 $$
 
 
@@ -104,21 +96,16 @@ $$
 
 ::::{prf:proof} 
 
-
-
 The vector on the left-hand side of the identity is by definition equal to the linear combination
 
 $$
- 
   x_1
 \begin{bmatrix}  a_{11} \\  a_{21}  \\  \vdots    \\ a_{m1}  \end{bmatrix} +
- 
   x_2
 \begin{bmatrix}  a_{12} \\  a_{22}  \\  \vdots    \\ a_{m2}  \end{bmatrix} +
   \,\,\ldots\,\, +
   x_n
 \begin{bmatrix}  a_{1n} \\  a_{2n}  \\  \vdots    \\ a_{mn}  \end{bmatrix}. 
-
 $$
 
 And this is indeed equal to the vector on the right.
@@ -154,21 +141,17 @@ $$
 We find a matrix-vector product using the row-column rule:
 
 $$
-
-  
 \begin{bmatrix}  3 & 4 & 5 \\ 1 & 0 & -1 \\
                    2 & 2 & 4 \\ 5 & -5 & 2\end{bmatrix}
-                   
 \begin{bmatrix}  3 \\ 1 \\ -4 \end{bmatrix}
        =
-       
 \begin{bmatrix}  3\cdot3\!\! &+&\!\! 4\cdot1\!\! &+&\!\! 5\cdot(-4) \\ 
                         1\cdot3\!\! &+& \!\!0\cdot1\!\! &+&\!\! (-1)\cdot(-4) \\
                         2\cdot3 \!\!&+&\!\! 2\cdot1 \!\! &+&\!\! 4\cdot(-4)\\ 
                         5\cdot3 \!\!&+& \!\!\!(-5)\cdot1 \!\!\! &+&\!\! 2\cdot(-4)  \end{bmatrix}
      =
 \begin{bmatrix}  -7 \\ 7 \\ -8\\ 2\end{bmatrix}.          
-  
+
 $$
 
 
@@ -189,14 +172,12 @@ $$
    \right]   
 \begin{bmatrix}    x_1 \\ x_2 \\ \vdots \\ \vdots \\ x_n  \end{bmatrix}
    =
-   
 \begin{bmatrix}    b_1 \\ b_2 \\ \vdots\\ b_m\end{bmatrix}
 $$
 
 and the linear system 
 
 $$
-
    \left\{\begin{array}{ccccccccc}
             a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  b_1 \\
             a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! b_2 \\
@@ -362,7 +343,6 @@ $$
 \begin{bmatrix}    c_1 \\ c_2 \\ \vdots \\ \vdots \\ c_n  \end{bmatrix}, \quad 
    \mathbf{c'} = 
 \begin{bmatrix}    c'_1 \\ c'_2 \\ \vdots \\ \vdots \\ c'_n  \end{bmatrix}
-
 $$
 
 and let $A$ and $\mathbf{b}$ have the obvious meanings.
@@ -370,15 +350,12 @@ and let $A$ and $\mathbf{b}$ have the obvious meanings.
 It is then given that both
 
 $$
-
   A\mathbf{c} = \mathbf{b} \quad \text{and} \quad  A\mathbf{c'} = \mathbf{b}.
-
 $$
 
 From the rules just found it follows that
 
 $$
-
  A(\mathbf{c} -\mathbf{c'}) = A\mathbf{c}  -A\mathbf{c'} = 
  \mathbf{b} - \mathbf{b} = \mathbf{0},
 
@@ -387,9 +364,7 @@ $$
 which show that the vector  
 
 $$
-
    (\mathbf{c} -\mathbf{c'}) = \mathbf{d}
-
 $$
 
 is a solution of the homogeneous system. 
@@ -405,7 +380,6 @@ On the other hand,  if  $\mathbf{c'}$  is a solution of the linear system
 
 $$
  A\mathbf{x} = \mathbf{b}
-
 $$
  
 and $\mathbf{d}$ is a solution of the homogeneous system
@@ -417,22 +391,18 @@ $$
 then  
 
 $$
-
 A(\mathbf{c'}+\mathbf{d}) = A\mathbf{c'}+A\mathbf{d} = \mathbf{b} + \mathbf{0} = \mathbf{b},
 $$
 
 so 
 
 $$
-
   \mathbf{c} = \mathbf{c'} + \mathbf{d}
-
 $$
 
 is a solution of the system 
 
 $$
-
  A\mathbf{x} = \mathbf{b}.
 $$
 
@@ -459,7 +429,8 @@ $$
             \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\cdots\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
             a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! p_m \\
           \end{array}
-   \right.$$
+   \right.
+$$
 
 is consistent and the linear system 
 
@@ -471,7 +442,8 @@ $$
             \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\cdots\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
             a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! q_m \\
           \end{array}
-   \right.$$
+   \right.
+$$
 
 is inconsistent.   Show that the system
 
@@ -483,7 +455,8 @@ $$
             \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\cdots\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
             a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! r_m \\
           \end{array}
-   \right.$$
+   \right.
+$$
 
 where  $r_i = p_i - q_i,\,i=1,\ldots,\,m$ \, is inconsistent.
 
