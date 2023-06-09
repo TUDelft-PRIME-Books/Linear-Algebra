@@ -1,5 +1,5 @@
 (Sec:BasisChange)=
-# Change of basis
+# Change of Basis
 
 ## Introduction
 
@@ -168,7 +168,7 @@ and the vector
 
 
 $$
-  [\vect{v}]_{\mc B} = \begin{bmatrix} c_1 \\ c_2 \\ \vdots \\ c_m\end{bmatrix},
+  [\vect{v}]_{\mc B} = \begin{bmatrix} c_1 \\ c_2 \\ \vdots \\ c_m\end{bmatrix}
 $$
 
 is called the **coordinate  vector of $\vect{v}$ with respect to the basis $\mc{B}$**.
@@ -187,7 +187,7 @@ For $\vect{v}$  we have to solve the vector equation
 
 
 $$
-   c_1\begin{bmatrix} 1 \\ 3\end{bmatrix}  + c_2\begin{bmatrix} 2 \\ 1\end{bmatrix}\,\,=\,\,\begin{bmatrix}6 \\ -2\end{bmatrix}
+   c_1\begin{bmatrix} 1 \\ 3\end{bmatrix}  + c_2\begin{bmatrix} 2 \\ 1\end{bmatrix}\,\,=\,\,\begin{bmatrix}6 \\ -2\end{bmatrix}.
 $$
 
 
@@ -219,16 +219,16 @@ $$
 The basis $(\vect{b}_1,\vect{b}_2)$ of {prf:ref}`Ex:ChangeOfBasis:BasicExampleR2`.
 ::::
 
-Recall that  **standard basis** of $\R^n$ is given by:
+Recall that  the **standard basis** of $\R^n$ is given by:
 
 $$ 
   \mathcal{E} = \{\vect{e_1}, \vect{e_2}, \ldots, \vect{e_n}\} =
-    \left\{ 
+    \left( 
      \begin{bmatrix} 1 \\ 0 \\ 0\\ \vdots \\ 0 \end{bmatrix},\,
      \begin{bmatrix} 0 \\ 1 \\ 0\\ \vdots \\ 0 \end{bmatrix},\,
-    \ldots\,,\,
+    \,\,\ldots\,,\,\,
      \begin{bmatrix} 0 \\ 0 \\ 0\\ \vdots \\ 1 \end{bmatrix}
-  \right\}.
+  \right).
 $$
 
 With respect to the standard basis it is very easy to find coordinates.

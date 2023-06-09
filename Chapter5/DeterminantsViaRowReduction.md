@@ -21,7 +21,7 @@ The matrix  $A$ is invertible if and only if $\det{A} \neq 0$ .
 
 
 We have seen in {numref}`Sec:DeterminantsViaCofactors` that the  cofactor expansion of an $n \times n$ determinant works best using a row (or a column)  with many, preferably $n-1$, zeros.  When solving a linear system,  or  finding the inverse of a matrix, we have seen how to create zeros via row reduction. The important thing:  row reducing an augmented matrix does not alter the solution(s) of the corresponding linear system.  The next proposition
-describes the effect of row operations on an determinant.
+describes the effect of row operations on a determinant.
 
 
 ::::::{prf:proposition} How row operations affect a determinant
@@ -50,7 +50,7 @@ When two rows of $A$ are swapped, the determinant changes sign.
 ::::::
 
 
-We postpone the proof and first look at examples and a few consequences.
+We postpone the proof till the end of this section and first look at examples and a few consequences.
 
 
 ::::::{prf:example}
@@ -224,8 +224,8 @@ $$
 \det{A} = \text{det}\big(A^T\big)
 $$
 
-every rule involving row operations may be transformed into a rule about column operations.  It is here that computing a determinant differs strikingly from the reduction of an (augmented) matrix to an echelon matrix.  Another more subtle difference is that
-a row operation  applied to a matrix leads to an **equivalent** matrix, which we denote by the symbol  $\sim$, whereas row or column manipulations on a determinant give **equal values** all the time.
+every rule involving row operations may be transformed into a rule about column operations.  It is here that computing a determinant differs strikingly from the reduction of an (augmented) matrix to an echelon matrix.  Another, more subtle difference is that
+a row operation  applied to a matrix leads to an **equivalent** matrix, which we denote by the symbol  $\sim$, whereas row or column operations on a determinant give **equal values** all the time.  So then we write $=$.
 
 ::::::
 
@@ -266,28 +266,32 @@ If a matrix  $A$  has two equal rows  (or columns),  then  $\det{A} = 0$.
 
 ::::::{prf:proof}
 
-Suppose the $i$th and the $j$th row of $A$ are equal,  and  let  $\det{A} = D$.  Let $B$ be the matrix $A$ with the $i$th and $j$th row interchanged.
+Suppose the $i$th and the $j$th row of $A$ are equal,  and  let  $\det{A} = d$.  Let $B$ be the matrix $A$ with the $i$th and $j$th row interchanged.
 
 On the one hand,  $B = A$,  so    
 
 $$
-  \det{B} = \det{A} = D,
+  \det{B} = \det{A} = d,
 $$
 
 on the other hand, because of {prf:ref}`Prop:DetRowReduction:RowOps`, Rule 2, we have
 
 $$
- \det{B} = -\det{A} = -D.
+ \det{B} = -\det{A} = -d.
 $$
 
-We may conclude  $D = -D$,  which is only possible if  $D = \det{A} = 0$.
+We may conclude  $d = -d$,  which is only possible if  
+
+$$
+ d = \det{A} = 0.
+$$
 
 ::::::
 
 
 ::::::{exercise}
 
-Give an alternative proof of {prf:ref}`Cor:DetRowReduction:EqualRows` using Rule 1 and Rule 2 of {prf:ref}`Prop:DetRowReduction:RowOps`.
+Give an alternative proof of {prf:ref}`Cor:DetRowReduction:EqualRows` using Rule i. and Rule ii. of {prf:ref}`Prop:DetRowReduction:RowOps`.
 
 ::::::
 
@@ -299,7 +303,10 @@ With the knowledge built so far we can show the important property that was alre
 
 For any square matrix $A$:
 
-$A$ is invertible  $\quad \iff \quad  \det{A} \neq 0$.
+$$
+   A \,\,\text{is invertible} \quad \iff \quad  \det{A} \neq 0.
+$$  
+
 
 ::::::
 
@@ -326,7 +333,7 @@ $$
 \det{(E_iA)} = \det{E_i} \cdot \det{A}.
 $$
 
-Furthermore,  the determinant of an elementary matrix is nonzero. Namely, for a row scaling it is equal to $c$, for a row swap it is equal to $(-1)$, and for adding a row to another row it is equal to 1.
+Furthermore,  the determinant of an elementary matrix is nonzero. Namely, for a row scaling it is equal to $c$, for a row swap it is equal to $(-1)$, and for adding a multiple of a row to another row it is equal to 1.
 Hence,  if $m$  of the row operations are row scalings and $\ell$ of the row operations are row swaps, then
 
 $$
@@ -374,10 +381,10 @@ $$
 $$
 
 
-Hence suppose that the matrix  $A$  is invertible.   In that case  (cf.{prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations`),  $A$ can be written as a product of elementary matrices.
+Hence suppose that the matrix  $A$  is invertible.   In that case  (cf. {prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations`)   $A$ can be written as a product of elementary matrices.
 
 $$
-A = E_1E_2\ldots E_k
+A = E_1E_2\ldots E_k.
 $$
 
 
@@ -385,7 +392,7 @@ So then, step by step we find that
 
 $$
 \begin{array}{rl}
-\det{A}  & = \det{(E_1E_2\cdots E_k)} = \det{E_1(E_2\cdots E_k)} =  \\
+\det{A}  & = \det{(E_1E_2\cdots E_k)} = \det{(E_1(E_2\cdots E_k))} =  \\
 & = \det{E_1} \det{(E_2\cdots E_k)}  = \ldots = \det{E_1} \det{E_2} \cdots \det{E_k},
 \end{array}
 $$
@@ -394,8 +401,10 @@ and also
 
 $$
 \begin{array}{rl}
-\det{(AB)} & =  \det{(E_1E_2\cdots E_kB)} = \det{E_1} \det{(E_2\cdots E_kB)} = \ldots = \\
-& = \det{E_1} \det{E_2} \cdots \det{E_k} \det{B} = \det{A}\det{B}.
+\det{(AB)} & =  \det{(E_1E_2\cdots E_kB)} = \det{E_1} \det{(E_2\cdots E_kB)}  \\
+& = \ldots = \\
+& = \det{E_1} \det{E_2} \cdots \det{E_k} \det{B} \\
+& = \det{A}\det{B}.
 \end{array}
 $$
 
@@ -415,7 +424,7 @@ If  the matrix $A$  is invertible,  then  $\text{det}\big(A^{-1}\big)= \dfrac{1}
 We can combine the three properties
 
 
-i. $AA^{-1} = I$, &nbsp; ii. $\det{(AA^{-1})} = \det{A}(A)\det{\left(A^{-1}\right)}$ 
+i. $AA^{-1} = I$, &nbsp; ii. $\det{(AA^{-1})} = \det{A}\det{\left(A^{-1}\right)}$ 
 &nbsp; and &nbsp; iii.  $\det{I} = 1$.
 
 
@@ -442,14 +451,21 @@ For each of the following statements decide whether they are true or false.  In 
 
 <li>
 
-For each $n \times n$ matrix  $A$ it holds that  $\text{det}\big(A^k\big)= \big(\det{A}\big)^k$.
+For each $n \times n$ matrix  $A$ it holds that 
+
+<BR>
+
+$$
+\text{det}\big(A^k\big)= \big(\det{A}\big)^k.
+$$
+
 
 </li>
 <li>
 
 For each two $n \times n$ matrices  $A$ and $B$ it holds that
-<BR>
 
+<BR>
 
 $$
 \det{(A+B)} = \det{A}+\det{B}.
@@ -458,7 +474,13 @@ $$
 </li>
 <li>
 
-For each $n \times n$ matrix  $A$ it holds that  $\det{(-A)} = -\det{A}$.
+For each $n \times n$ matrix  $A$ it holds that  
+
+<BR>
+
+$$
+\det{(-A)} = -\det{A}.
+$$
 
 </li>
 </ol>
@@ -501,7 +523,7 @@ So, click here for the  proof of {prf:ref}`Prop:DetRowReduction:RowOps` and {prf
 ::::::{prf:proof}
 
 For typographical reasons we will prove the three rules stated as column operations.
-For an $n \times n$ matrix  $A = [\vect{a}_1 \vect{a}_2  \ldots \vect{a}_n]\quad$  the rules can then be formulated as
+For an $n \times n$ matrix  $A = [\vect{a}_1 \vect{a}_2  \ldots \vect{a}_n]$  the rules can then be formulated as
 
 :::{paren-list}
 :start: 1
@@ -523,7 +545,7 @@ So, let us consider them one by one.
 :::{paren-list}
 :start: 1
 
-- If a column  is scaled with a factor $c$, the determinant is also scaled with a factor $c$.
+- If a column  is scaled with a factor $c$, then the determinant is also scaled with a factor $c$.
 
 :::
 
@@ -542,7 +564,7 @@ $$
 = c  \det{A}.
 $$
 
-{prf:ref}`Prop:DetRowReduction:SumofCols` is proved much in the same way as rule (1) by expansion along the $k$th column, .
+{prf:ref}`Prop:DetRowReduction:SumofCols` is proved in much the same way as rule (1) by expansion along the $k$th column.
 
 :::{paren-list}
 :start: 2
@@ -561,20 +583,20 @@ first settle the rule when the first two columns are interchanged;
 </li>
 <li>
 
-next consider the swapping of two arbitrary consecutive columns;
+next consider the swapping of two arbitrary *consecutive* columns;
 
 </li>
 <li>
 
-finally note that any column swap is the result of an **odd** number of swaps of consecutive columns.
+finally note that any column swap is the result of an *odd* number of swaps of consecutive columns.
 
 </li>
 </ul>
 
-We will consider the swapping of the first two columns in complete detail.  Let $A^{\ast}$ be the result of swapping the first two columns of the matrix $A$.  The crucial thing to note is that
+We will consider the swapping of the first two columns in complete detail.  Let $A^{\ast}$ be the result of swapping the first two columns of the matrix $A$.  The crucial thing to note here is that, for each value of $i$, 
 
 $$
-a_{i2}^{\ast} = a_{i1} \quad \text{and} \quad  A_{i2}^{\ast} = A_{i1}
+a_{i2}^{\ast} = a_{i1} \quad \text{and} \quad  A_{i2}^{\ast} = A_{i1}.
 $$
 
 To make this explicit for a $4\times 4$  matrix:
@@ -627,10 +649,13 @@ $$
 - \text{det}\big({A}\big).
 $$
 
-The same argument works for the interchanging of two arbitrary consecutive columns, and as stated the swapping of two arbitrary columns can be accomplished via an odd number of 'consecutive swaps'.  Convince yourself of this!
+The same argument works for the interchanging of two arbitrary consecutive columns.
+<BR> As stated the swapping of two arbitrary columns can be accomplished via an odd number of 'consecutive swaps',  so then the determinant changes sign an odd number of times.
+And for  an odd number $n$  we have that  $(-1)^n = -1$. <BR>
+Convince yourself of this!
 
 
-And lastly we have to prove
+Lastly we have to prove
 
 :::{paren-list}
 :start: 3

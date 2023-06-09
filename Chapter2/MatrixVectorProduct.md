@@ -1,5 +1,5 @@
 (Sec:MatVecProduct)=
-# The matrix-vector product  $A\vect{x}$  
+# The Matrix-Vector Product  $A\vect{x}$  
 
 In this section we will introduce another interpretation/representation of a system of linear equations.  
 We'll define the product of an $m\times n$ matrix $A$ with a vector $\vect{x}$ in $\mathbb{R}^n$. In the next chapter this will also be the stepping stone to the general matrix-matrix product. 
@@ -15,7 +15,7 @@ The product $A\mathbf{x}$ of an $m\times n$ matrix
 $$
 
  A = [\mathbf{a_1} \,\,\mathbf{a_2}\, \ldots\, \mathbf{a_n}]
- \nonumber
+
 $$
 
 with a vector
@@ -24,7 +24,7 @@ $$
  
  \mathbf{x} = 
 \begin{bmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{bmatrix}\in \mathbb{R}^n
- \nonumber
+
 $$
 
 is defined as 
@@ -32,7 +32,7 @@ is defined as
 $$
 
   A\mathbf{x} = x_1\mathbf{a_1} + x_2\mathbf{a_2} + \ldots + x_n\mathbf{a_n}.
- \nonumber
+
 $$
 
 So: $A\mathbf{x}$ is the linear combination of the columns of the matrix $A$ with the entries of the vector $\mathbf{x}$ as coefficients.
@@ -55,7 +55,7 @@ $$
 \begin{bmatrix} 10 \\ 20 \\ 15  \\ 0  \end{bmatrix} +
 \begin{bmatrix} -3 \\  -1 \\  -5 \\  -1 \end{bmatrix} 
       = 
-\begin{bmatrix} 7 \\  19 \\  10 \\  -1 \end{bmatrix}.
+\begin{bmatrix} 7 \\  19 \\  10 \\  -1 \end{bmatrix},
 $$
 
 and
@@ -72,10 +72,10 @@ $$
 
 The interpretation of  $A\mathbf{x}$  as a linear combination of the columns of $A$ is important to keep in mind. That is, to not forget it after the following slightly easier way to compute the matrix-vector product.
 
-::::{prf:proposition} 
+::::{prf:proposition}   Row-column rule
 :label: Prop:MatVecProd:Row-ColumnRule
 
- Row-column rule
+The product of a matrix and a vector can also be computed as follows:
 
 $$
 
@@ -94,7 +94,7 @@ $$
                           \vdots\\
                            a_{m1}x_1 + a_{m2}x_2 +   \ldots+ a_{mn}x_n                    
    \end{bmatrix}.
- \nonumber
+
 $$
 
 
@@ -106,7 +106,7 @@ $$
 
 
 
-The vector on the right-hand side of the identity is equal to the linear combination
+The vector on the left-hand side of the identity is by definition equal to the linear combination
 
 $$
  
@@ -115,19 +115,23 @@ $$
  
   x_2
 \begin{bmatrix}  a_{12} \\  a_{22}  \\  \vdots    \\ a_{m2}  \end{bmatrix} +
- 
-  \ldots +
+  \,\,\ldots\,\, +
   x_n
 \begin{bmatrix}  a_{1n} \\  a_{2n}  \\  \vdots    \\ a_{mn}  \end{bmatrix}. 
- \nonumber
-$$
-
-Note that the entry on the $i$-th position of the product
 
 $$
 
-  a_{i1}x_1 + a_{i2}x_2 +   \ldots+ a_{in}x_n 
- \nonumber
+And this is indeed equal to the vector on the right.
+
+::::
+
+
+Note that the entry on the $i$-th position of the product, which is given by
+
+$$
+
+  a_{i1}x_1 + a_{i2}x_2 +   \,\,\ldots\,\,+ a_{in}x_n, 
+
 $$
 
 is the 'row-column product'
@@ -135,13 +139,11 @@ is the 'row-column product'
 $$
 
   
-\begin{bmatrix}  a_{i1} & a_{i2} & \ldots & a_{in}  \end{bmatrix}  
-\begin{bmatrix}    x_1 \\ x_2 \\ \vdots \\ \vdots \\ x_n  \end{bmatrix}
- \nonumber
+\begin{bmatrix}  a_{i1} & a_{i2} & \ldots & \ldots & a_{in}  \end{bmatrix}  
+\begin{bmatrix}    x_1 \\ x_2 \\ \vdots \\ \vdots \\ x_n  \end{bmatrix}.
+
 $$
 
-
-::::
 
 
 ::::{prf:example} 
@@ -149,7 +151,7 @@ $$
 
 
 
-We find the product using the row-column rule:
+We find a matrix-vector product using the row-column rule:
 
 $$
 
@@ -166,7 +168,7 @@ $$
                         5\cdot3 \!\!&+& \!\!\!(-5)\cdot1 \!\!\! &+&\!\! 2\cdot(-4)  \end{bmatrix}
      =
 \begin{bmatrix}  -7 \\ 7 \\ -8\\ 2\end{bmatrix}.          
- \nonumber   
+  
 $$
 
 
@@ -175,9 +177,9 @@ $$
 ::::{prf:remark}
 :label: Rem:MatVecProd:EquivalentEquations
 
-From the above it follows that the  `matrix-vector equation'
-$$
+From the above it follows that the  matrix-vector equation
 
+$$
  \left[\begin{array}{ccccc}
             a_{11} & a_{12}&  \ldots& \ldots&  a_{1n} \\
             a_{21} & a_{22}&  \ldots& \ldots&  a_{2n} \\
@@ -189,7 +191,6 @@ $$
    =
    
 \begin{bmatrix}    b_1 \\ b_2 \\ \vdots\\ b_m\end{bmatrix}
- \nonumber
 $$
 
 and the linear system 
@@ -297,14 +298,14 @@ $A\,(c\mathbf{x}) = c\,A\mathbf{x}$.
 
 ::::{prf:proof} 
 
-Let's prove the first of the statements; the other statement goes in a similar fashion. 
+We will prove the first of the two statements; the other statement goes in a similar fashion. 
 There are several ways to derive the formula. Via the linear combination idea it may be the easiest.
 So assume  
 
 $$
   A = [\,\mathbf{a_1}\,\,\,\mathbf{a_2}\,\,\,\ldots\,\,\,\mathbf{a_n}\,], \quad \mathbf{x} =  
 \begin{bmatrix}    x_1 \\ x_2 \\ \vdots \\ \vdots \\ x_n  \end{bmatrix},
-  \quad \text{and}\quad
+  \quad 
   \mathbf{y} =  
 \begin{bmatrix}    y_1 \\ y_2 \\ \vdots \\ \vdots \\ y_n  \end{bmatrix}.
 $$
@@ -316,18 +317,23 @@ $$
   A\,
 \begin{bmatrix}    x_1+y_1 \\ x_2+y_2 \\ \vdots \\ \vdots \\ x_n+y_n  \end{bmatrix} =
   (x_1+y_1 )\mathbf{a_1} + (x_2+y_2 )\mathbf{a_2} + \ldots
-  + (x_n+y_n )\mathbf{a_n}
+  + (x_n+y_n )\mathbf{a_n}.
 $$
 
-which is obviously equal to
+Changing the order of the terms, putting the terms involving $x_i$ to the front, shows that the last expression is  equal to
 
 $$
  \big(x_1\mathbf{a_1} + x_2\mathbf{a_2} + \ldots
   + x_n\mathbf{a_n}\big)+
   \big(y_1\mathbf{a_1} + y_2\mathbf{a_2} + \ldots
-  + y_n\mathbf{a_n}\big)= A\mathbf{x} + A\mathbf{y}.
+  + y_n\mathbf{a_n}\big).
 $$
 
+The last sum of two vectors can be identified as being
+
+$$
+  A\mathbf{x} + A\mathbf{y}.
+$$
 ::::
 
 
@@ -340,8 +346,7 @@ Prove statement (ii) of the previous proposition.
 ::::
 
 
-Using the above rules we can give shorter proofs of statements concerning linear systems.  We illustrate this by having a second look at 
-Proposition {prf:ref}`Prop:SolSet:SolplusHom`:
+Using the above rules we can give shorter proofs of statements concerning linear systems.  We illustrate this by having a second look at  {prf:ref}`Prop:SolSet:SolplusHom`:
 
 ::::{prf:example} 
 :label: Ex:MatVecProduct:SolplusHomRevisited
@@ -357,7 +362,7 @@ $$
 \begin{bmatrix}    c_1 \\ c_2 \\ \vdots \\ \vdots \\ c_n  \end{bmatrix}, \quad 
    \mathbf{c'} = 
 \begin{bmatrix}    c'_1 \\ c'_2 \\ \vdots \\ \vdots \\ c'_n  \end{bmatrix}
- \nonumber
+
 $$
 
 and let $A$ and $\mathbf{b}$ have the obvious meanings.
@@ -367,7 +372,7 @@ It is then given that both
 $$
 
   A\mathbf{c} = \mathbf{b} \quad \text{and} \quad  A\mathbf{c'} = \mathbf{b}.
- \nonumber
+
 $$
 
 From the rules just found it follows that
@@ -375,8 +380,8 @@ From the rules just found it follows that
 $$
 
  A(\mathbf{c} -\mathbf{c'}) = A\mathbf{c}  -A\mathbf{c'} = 
- \mathbf{b} - \mathbf{b} = 0,
- \nonumber
+ \mathbf{b} - \mathbf{b} = \mathbf{0},
+
 $$
 
 which show that the vector  
@@ -384,7 +389,7 @@ which show that the vector
 $$
 
    (\mathbf{c} -\mathbf{c'}) = \mathbf{d}
- \nonumber
+
 $$
 
 is a solution of the homogeneous system. 
@@ -392,22 +397,21 @@ Of course
 
 $$
 
-  (\mathbf{c} -\mathbf{c'}) = \mathbf{d} \iff  \mathbf{c} = \mathbf{c'}+\mathbf{d}   \iff c_i = c'_i + d_i,\,i=1,\ldots, n,
- \nonumber
+  (\mathbf{c} -\mathbf{c'}) = \mathbf{d} \iff  \mathbf{c} = \mathbf{c'}+\mathbf{d}   \,\,\iff \,\,c_i = c'_i + d_i,\,i=1,\ldots, n.
+
 $$
 
 On the other hand,  if  $\mathbf{c'}$  is a solution of the linear system  
 
 $$
  A\mathbf{x} = \mathbf{b}
- \nonumber
+
 $$
  
 and $\mathbf{d}$ is a solution of the homogeneous system
 
 $$
 A\mathbf{x} = \mathbf{0},
- \nonumber
 $$
 
 then  
@@ -415,7 +419,6 @@ then
 $$
 
 A(\mathbf{c'}+\mathbf{d}) = A\mathbf{c'}+A\mathbf{d} = \mathbf{b} + \mathbf{0} = \mathbf{b},
- \nonumber
 $$
 
 so 
@@ -423,7 +426,7 @@ so
 $$
 
   \mathbf{c} = \mathbf{c'} + \mathbf{d}
- \nonumber
+
 $$
 
 is a solution of the system 
@@ -431,7 +434,6 @@ is a solution of the system
 $$
 
  A\mathbf{x} = \mathbf{b}.
- \nonumber
 $$
 
 The proof is basically the same as before, but using the matrix-vector product it can be written more concisely.
@@ -459,8 +461,7 @@ $$
           \end{array}
    \right.$$
 
-is consistent
-and  linear system 
+is consistent and the linear system 
 
 $$
    \left\{\begin{array}{ccccccccc}

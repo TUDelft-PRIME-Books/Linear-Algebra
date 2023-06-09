@@ -20,7 +20,7 @@ $$
 $$
 
 is minimal. This approach makes sense in a physicial context where typically the $x$-variable may be an input variable over which a researcher has control, and $y$ is some output variable which may be liable to fluctuations and/or uncertainties.
-See {numref}`Figure %s <Fig:LeastSquares:BestLines>` for both interpretations of 'best'.
+See {numref}`Figure %s <Fig:LeastSquares:BestLines>` for both interpretations of 'best' line.
 
 :::{figure} Images/Fig-LeastSquares-BestLines.svg
 :name: Fig:LeastSquares:BestLines
@@ -112,7 +112,7 @@ $$
 $$
 holds.
 
-The vector  $ A\hat{\vect{x}} - \vect{b} $ is   called the vector of the **residues**, and the norm of this vector, i.e.,
+The vector  $ A\hat{\vect{x}} - \vect{b} $ is   called the vector of the **errors**, and the norm of this vector, i.e.,
 
 $$
     \norm{A\hat{\vect{x}} - \vect{b}} 
@@ -122,12 +122,41 @@ is called the **least squares error**.
 
 ::::
 
+::::{prf:example}
+:label: Ex:LeastSquares:4x3Example
 
+
+Consider the linear system  $A\vect{x} = \vect{b}$, with
+
+$$
+A = \left[\begin{array}{ccc} 
+         1 & 2 & 1  \\ 2 & 1 & 1  \\ 3 & 2 & 1 \\ 2 & 1 & 3 
+       \end{array}\right], \quad \vect{b} = 
+       \left[\begin{array}{c}  20 \\ 20 \\ 40 \\ 30 \end{array}\right]. 
+$$
+
+For the trial solution  $x_1 = 5, x_2 = 4, x_3 = 5$, the error vector and its norm are computed as
+
+$$
+  \vect{v} = \left[\begin{array}{ccc} 
+         1 & 2 & 1  \\ 2 & 1 & 1  \\ 3 & 2 & 1 \\ 2 & 1 & 3 
+       \end{array}\right] \left[\begin{array}{c}  5 \\ 4 \\ 5 \end{array}\right] - \left[\begin{array}{c}  20 \\ 20 \\ 40 \\ 30 \end{array}\right]
+       =  \left[\begin{array}{c}  18 \\ 19 \\ 43 \\  29 \end{array}\right] - \left[\begin{array}{c}  20 \\ 20 \\ 40 \\ 30 \end{array}\right] =
+       \left[\begin{array}{c}  -2  \\ -1 \\ 3 \\ -1 \end{array}\right]
+$$
+
+and
+
+$$
+    \norm{\vect{v}} = \sqrt{15}.
+$$
+
+::::
 
 ::::{prf:remark}
 :label:  Rem:LeastSquares:BestLinComb
 
-By definition $A\hat{\vect{x}} = \hat{x}_1\vect{a}_1  + \ldots + \hat{x}_n\vect{a}_n$ is best approximation of $\vect{b}$ with vectors in $\Span{\vect{a}_1, ... , \vect{a}_n}$.
+By definition $A\hat{\vect{x}} = \hat{x}_1\vect{a}_1  + \ldots + \hat{x}_n\vect{a}_n$ is the best approximation of $\vect{b}$ with vectors in $\Span{\vect{a}_1, ... , \vect{a}_n}$.
 
 By minimizing $\norm{A\vect{x} - \vect{b}}$ we are in fact minimizing the sum of the squares of the errors.  This explains the name *least squares error*.
 
@@ -214,7 +243,8 @@ If a least squares solution exists,  is it *unique*?
 </ol>
 
 
-So let us consider these questions one by one.
+The next proposition provides the answers to question i. and question iii.
+
 
 ::::{prf:proposition} 
 :label: Prop:LeastSquares:Existence
@@ -267,9 +297,9 @@ $
 $
 onto  $\Span{\vect{a}_1, \vect{a}_2} = \Span{\left[ \begin{array}{c} 1 \\ 2 \\ 3 \end{array}   \right], \left[ \begin{array}{c} 1 \\ -2 \\ 1 \end{array} \right]}$.
 
-In this first example we have chosen  $\vect{a}_1$ and $\vect{a}_2$ are *orthogonal*. 
+In this first example we have chosen  $\vect{a}_1$ and $\vect{a}_2$ that are *orthogonal*. 
 
-So by the projection formula for an orthogonal basis (see side note), this projection is given by
+So by the projection formula for an orthogonal basis (see side note), the projection is given by
 
 $$
    \dfrac{\vect{b}\ip\vect{a}_1}{\vect{a}_1\ip\vect{a}_1}\vect{a}_1 +
@@ -283,7 +313,7 @@ For this vector we find
 
 $$
   A\hat{\vect{x}} = \left[ \begin{array}{c} 5  \\ 6 \\ 13 \end{array}   \right], \quad
-  \norm{A\hat{\vect{x}} - \vect{b}} = \sqrt{(-4)^2 + (-1)^2 + 2^2 } = \sqrt{21}.
+  \text{with} \,\,\norm{A\hat{\vect{x}} - \vect{b}} = \sqrt{(-4)^2 + (-1)^2 + 2^2 } = \sqrt{21}.
 $$
 
  {prf:ref}`Prop:LeastSquares:Existence` tells us this is the closest we can get.
@@ -306,7 +336,7 @@ There is a direct way to find the coefficients of the orthogonal projection onto
 ::::{prf:theorem} Normal Equations
 :label: Thm:LeastSquares:NormalEquations
 
-Suppose  $A$ is an $m \times n$  matrix and  $\vect{b}$  in a vector in $\R^m$.
+Suppose  $A$ is an $m \times n$  matrix and  $\vect{b}$  is a vector in $\R^m$.
 
 Then the  system of linear equations
 
@@ -320,11 +350,9 @@ is always  consistent.  The equations in this system are called the  **normal eq
 
 Any solution $\hat{\vect{x}}$ of the normal equations is a least squares solution.
 
-Moreover, if the columns of $A$ are linearly independent, then the solution $\hat{\vect{x}}$ is unique. 
-
 ::::
 
-Before having look at a proof consider the following example.
+Before having a look at the proof consider the following example.
 
 ::::{prf:example}
 :label: Ex:LeastSquares:NormalEqs-1
@@ -368,11 +396,23 @@ $$
 The least squares solution can be read off from the last column in this matrix.
 
 $$
-  \hat{\vect{x}} =  \left[       \begin{array}{c} 
+  \hat{\vect{x}} =  \left[\begin{array}{c} 
          16/3 \\   5 \\   4
        \end{array}
   \right]. 
 $$
+
+The error vector and the least squares error are  found to be
+
+$$
+ \vect{v} = A\hat{\vect{x}} - \vect{b} = \left[ \begin{array}{c} 
+         -2/3 \\   -1/3  \\   2 \\ -7/3
+       \end{array}
+  \right], \quad \norm{\vect{v}} = \sqrt{10}. 
+$$
+
+This is slightly better than the 'trial solution' in {prf:ref}`Ex:LeastSquares:4x3Example`,
+where the norm of the error vector was found to be $\sqrt{15}$.
 
 ::::
 
@@ -409,7 +449,14 @@ for the unknowns  $c_1, \ldots, c_n$.
 These equations can be rewritten as
 
 $$
-    \vect{a}_i^T\vect{a}_1\, c_1 + \ldots + \vect{a}_i^T\vect{a}_n\, c_n = \vect{a}_i^T\vect{b}.
+    \vect{a}_i^T\vect{b} - \vect{a}_i^T\vect{a}_1\, c_1 - \vect{a}_i^T\vect{a}_2\, c_2 -\ldots - \vect{a}_i^T\vect{a}_n\, c_n = 0,
+$$
+
+and further to
+
+
+$$
+    \vect{a}_i^T\vect{a}_1\, c_1 + \ldots + \vect{a}_i^T\vect{a}_n\, c_n = \vect{a}_i^T\vect{b}, \quad i = 1, \ldots, n.
 $$
 
 In matrix-vector form this becomes
@@ -438,17 +485,16 @@ So, to find the least squares solution(s) of the linear system   $A\vect{x} = \v
 :name: Eq:LeastSquares:NormalEquations
 
   A^TA \vect{x} = A^T\vect{b}.
-
 :::
 
 ::::
 
-If $\vect{c} =  \left[  \begin{array}{c}   c_1 \\ c_2 \\ \ldots \\ c_n   \end{array} \right]$  is the least squares solution of the linear system  $A\vect{c} = \vect{b}$,
+If $\vect{c} =  \left[  \begin{array}{c}   c_1 \\ c_2 \\ \vdots \\ c_n   \end{array} \right]$  is the least squares solution of the linear system  $A\vect{c} = \vect{b}$,
 then  the orthogonal projection of
 $\vect{b}$ of Col$ A$ is given by 
 
 $$
-  \text{\proj}_{\text{Col} A}(\vect{b}) = c_1\vect{a}_1 + \ldots + c_n\vect{a}_n = A \vect{c}.
+  \text{proj}_{\text{Col} A}(\vect{b}) = c_1\vect{a}_1 + \ldots + c_n\vect{a}_n = A \vect{c}.
 $$
 
 If the columns  $\vect{a}_1, \ldots, \vect{a}_n$  of $A$ are linearly independent, the coefficients  $c_i$ are the coordinates with respect to the basis  $(\vect{a}_1, \ldots, \vect{a}_n)$, hence they are unique.  Thus in that case the normal equations
@@ -470,6 +516,7 @@ the matrix  $A^TA$  is invertible.
 ::::
 
 
+
 ::::{prf:proof}
 
 In fact, something stronger holds:  
@@ -482,11 +529,13 @@ In fact, something stronger holds:
 
 First  if  $A\vect{x}= \vect{0}$,  then clearly   $A^TA\vect{x} = A^T\vect{0} = \vect{0}$.
 
-To prove the converse, suppose $A^TA\vect{x} = \vect{0}$,  then $\vect{x}^TA^TA\vect{x} = \vect{x}^T\vect{0} = \vect{0}$ too.  
+To prove the converse, suppose $A^TA\vect{x} = \vect{0}$.
+
+Then &nbsp; $\vect{x}^TA^TA\vect{x} = \vect{x}^T\vect{0} = \vect{0}$ &nbsp; too.  
 
 Now realize that  $\vect{x}^TA^TA\vect{x} = (A\vect{x})^TA\vect{x} = \norm{A\vect{x}}^2$.
 
-So  $A^TA\vect{x} = \vect{0}$  implies $\norm{A\vect{x}}^2 = 0$, and that means that  $A\vect{x}$ must be the zero vector$.
+So  $A^TA\vect{x} = \vect{0}$  implies $\norm{A\vect{x}}^2 = 0$, and that means that  $A\vect{x}$ must be the zero vector.
 
 
 The equivalence  {eq}`Eq:LeastSquares:InvertibilityATA` implies:  if  $A$ has linearly independent columns,
@@ -496,9 +545,9 @@ $\vect{x}= \vect{0}$ as only solution.  This means that  $A^TA$ is invertible.
 
 ::::{exercise}
 
-Prove the following converse of {prf:ref}`Prop:LeastSquares:InvertibleATA`.
+Prove the converse of {prf:ref}`Prop:LeastSquares:InvertibleATA`.
 
-For any $m \times n$ matrix $A$,   if  $A^TA$  is invertible, then the columns of $A$ must be linearly independent.
+For any $m \times n$ matrix $A$,   if  $A^TA$  is invertible, then the columns of $A$ must be linearly independent.  (Note that the matrix $A$ is not supposed to be a square matrix.)
 
 ::::
  
@@ -513,7 +562,7 @@ of the orthogonal projection
 
 
 $$
-   \text{proj}_{\text{Col}\,A}(\vect{b}) = c_1\vect{a}_1 + c_2\vect{a}_2 + \ldots c_n\vect{a}_n = A \vect{c}
+   \text{proj}_{\text{Col}\,A}(\vect{b}) = c_1\vect{a}_1 + c_2\vect{a}_2 + \ldots + c_n\vect{a}_n = A \vect{c}, \quad \vect{c} = \begin{bmatrix} c_1 \\ \vdots \\ c_n\end{bmatrix},
 $$
 
 of $\vect{b}$ onto the column space of $A$.
@@ -538,22 +587,22 @@ So for a matrix $A$ with linearly independent columns the projection of a vector
 
 
 
-We already knew how to find this projection if the columns are orthogonal. Using the normal equations we don't need orthogonality.  
+We already knew how to find this projection if the columns are orthogonal. Using the normal equations we don't need orthogonality.   
 
 Applying {prf:ref}`Thm:LeastSquares:NormalEquations` to  the earlier example 
 ({prf:ref}`Ex:LeastSquares:OrthogExample`), 
-shows that in the case of orthogonal vectors there is actually nothing new.
+shows that in the case of *orthogonal* vectors there is actually nothing new.
 
 ::::{prf:example}
 :label: Ex:LeastSquares:OrthogExample2
 
-Find the least squares solution of the linear system 
+Let us again find, but now using  {prf:ref}`Thm:LeastSquares:NormalEquations`,  the least squares solution of the linear system
 
 $$
-  \left\{       \begin{array}{ccccccc} 
+  \left\{\begin{array}{ccccccc} 
         x_1 &+&  x_2  &=& 9 \\
         2x_1 &-& 2x_2 &=& 7 \\
-        3x_1 &+& x_2 &=& 11
+        3x_1 &+& x_2 &=& 11.
        \end{array}
   \right.
 $$
@@ -573,18 +622,17 @@ $$
   \right].
 $$
 
-Note that the orthogonality of the columns lead to a  coefficient matrix  $A^TA$ that is a diagonal matrix.
-Whence  the normal equations can be solved in one stroke.
+Note that the orthogonality of the columns leads to a  coefficient matrix  $A^TA$ that is a diagonal matrix.
+The normal equations can be solved in one stroke.
 
-This yields (again) yields the least squares 
+This (again) yields the least squares 
 solution  $\hat{x} =\left[\begin{array}{c} 4 \\ 1  \end{array}   \right]$.
-
 
 ::::
 
 The previous example can be generalized as follows.
 
-If the columns  $\{\vect{a}_1, \ldots, \vect{a}_n\}$ of an $m \times n$ matrix $A$  form a set of non-zero, orthogonal vectors in $\R^m$,  then the orthogonal projection 
+If the columns  $\{\vect{a}_1, \ldots, \vect{a}_n\}$ of an $m \times n$ matrix $A$  form a set of non-zero, *orthogonal* vectors in $\R^m$,  then the orthogonal projection 
 
 $$
    c_1\vect{a}_1 + c_2\vect{a}_2 + \ldots c_n\vect{a}_n
@@ -618,7 +666,7 @@ $$
   \left[  \begin{array}{c}  \vect{a}_1\ip\vect{b} \\ \vect{a}_2\ip\vect{b} \\ \vdots \\ \vect{a}_n\ip\vect{b}   \end{array} \right].
 $$
 
-Which leads to  the good old expressions  $x_i = \dfrac{\vect{a}_i\ip\vect{b}}{\vect{a}_i\ip\vect{a}_i}$.
+Which leads to  the good old expressions  $x_i = \dfrac{\vect{a}_i\ip\vect{b}}{\vect{a}_i\ip\vect{a}_i} =  \dfrac{\vect{b}\ip\vect{a}_i}{\vect{a}_i\ip\vect{a}_i}$.  
 
 As before ({prf:ref}`Dfn:Orthogonality:OrthoProjection`) the orthogonal projection becomes
 
@@ -662,7 +710,7 @@ $$
 
 Note that the columns of $A$ are indeed linearly dependent.
 
-For the least squares solution we have to solve the system with augmented matrix
+For the least squares solution we have to solve the system with the  augmented matrix
 
 $$
    \left[\,A^TA \,| \,A^T \vect{b}\,\right] = 
@@ -692,7 +740,7 @@ $$
 
 
 
-We can ask the question: what is the least squares solution *of minimal length*?
+%We can ask the question: what is the least squares solution *of minimal length*?
 
 For this low-dimensional problem we can draw a picture.
 
@@ -701,17 +749,12 @@ For this low-dimensional problem we can draw a picture.
 :::{figure} Images/Fig-LeastSquares-SmallestLS.svg
 :name: Fig:LeastSquares:SmallestLS
 
-Smallest least squares solution
+Multiple least squares solutions
 :::
 
 
 The least squares solutions are depicted as the line $\ell:  \vect{x} = \hat{\vect{x}}_0 + c\left[\begin{array}{c}  2 \\  1 \end{array}\right]$.
-
-The solution of smallest length is found by intersecting the normal 
-line $m:  \vect{x} = k\left[\begin{array}{c}  1 \\  -2 \end{array}\right]$ with $\ell$. 
-
-Since the two lines are orthogonal, this is precisely the orthogonal projection  of the 'arbitrary' least squares solution $\hat{\vect{x}}_0$  onto the line $m$'. 
-This give the (unique) solution of shortest length $\hat{\vect{x}}_1 = \dfrac25\left[\begin{array}{c}  1 \\  -2 \end{array}\right]$
+ 
 
 ::::
 
@@ -723,32 +766,22 @@ $$
 $$
 
 the 'homogeneous' part  $\vect{x}_H = c\left[\begin{array}{c}  2 \\  1 \end{array}\right]$ is the null space of  $A^TA$.  Because of the equivalence {eq}`Eq:LeastSquares:InvertibilityATA` this is equal to the null space of $A$.
-To find the point on this line closest to the origin, we intersect with the orthogonal complement of this null space.  Now from  {numref}`Section %s <Sec:Orthogonality>`, {prf:ref}`Prop:Orthogonality:OrthoComplementNulA`, we know that 
+Now from  {numref}`Section %s <Sec:Orthogonality>`, {prf:ref}`Prop:Orthogonality:OrthoComplementNulA`, we know that 
 
 $$
-   (\text{Nul}\,A)^{\perp} = \text{Row}\,A
+   (\text{Nul}\,A)^{\perp} = \text{Row}\,A = \Span{\begin{bmatrix} 1 \\ -2\end{bmatrix}}
 $$
 
-This means that the intersection of  $\hat{\vect{x}}_0 + \text{Nul}\,A$  and  $\text{Row} A$  is the projection of $\hat{\vect{x}}_0$  onto the row space of $A$.  This is exactly what is visualized 
-in {numref}`Figure %s <Fig:LeastSquares:SmallestLS>`.
+which is visualized in {numref}`Figure %s <Fig:LeastSquares:SmallestLS>`.
 
 
-We put the conclusion of this into a proposition.
-
-::::{prf:proposition}
-:label: Prop:LeastSquares:SmallestLS
-
-Consider the linear system  $A\vect{x} = \vect{b}$, with  $A$ an $m \times n$ matrix, and $\vect{b}$ a vector in $\R^m$. The least squares solution *of smallest norm* can be found by the orthogonal projection of *any* least squares solution $\hat{\vect{x}}$ onto the row space of $A$. 
-
-::::
-
-Let us give one more example to illustrate this proposition.
+Let us give one more example to illustrate matters.
 
 
 ::::{prf:example}
 :label: Ex:LeastSquares:NonUnique2
 
-We find the smallest least squares solution of the linear system  $A\vect{x} = \vect{b}$, where
+We find the least squares solutions of the linear system  $A\vect{x} = \vect{b}$, where
 
 $$
    A = \left[\begin{array}{ccc} 
@@ -775,9 +808,9 @@ The augmented matrix can be row reduced  to
 
 $$
    \left[  \begin{array}{ccc|c} 
-        1 & 0 & 3 & 5 \\
-        0 & 1 & -1 & -1 \\
-        0 & 0 & 0 & 0
+        1 & 0 &  1  & 3 \\
+        0 & 1 & -1  & -1 \\
+        0 & 0 &  0  & 0
        \end{array}
   \right].
 $$
@@ -790,57 +823,26 @@ $$
 
 As in {prf:ref}`Ex:LeastSquares:NonUnique` the 'homogeneous' part  $\vect{x}_H = c\left[\begin{array}{c}  1 \\ -1 \\ -1 \end{array}\right]$ is the null space of  $A^TA$, which is equal to the null space of $A$.
 
-To find the smallest least squares solution we have to orthogonally project the vector
-$\hat{\vect{x}}_0 = \left[\begin{array}{c}  3 \\ -1 \\ 0 \end{array}\right]$  onto the row space of $A$.
-
-The row space of $A$ is spanned by the two linearly independent vectors
+For instance, by taking  $c=0$ and $c = -1$ we find the two least squares solutions
 
 $$
-  \vect{r}_1 = \left[\begin{array}{c}  1 \\ 1 \\ 0 \end{array}\right]  \quad \text{and} \quad \vect{r}_2 = \left[\begin{array}{c}  1 \\ 0 \\ 1 \end{array}\right]
-$$
-
-For this we can use Formula  {eq}`Eq:LeastSquares:ProjbColA`  where now
-
-$$
-   A = \left[\,\vect{r}_1\,\,\vect{r}_2\,  \right] =
-     \left[\begin{array}{cc}  1 &1 \\ 1 & 0 \\ 0 & 1 \end{array}\right], \quad
-     \vect{b} = \left[\begin{array}{c}  3 \\ -1 \\ 0 \end{array}\right].
-$$
-
-This gives the required least squares solution
-
-$$
-   \hat{\vect{x}}_1 = \left[\begin{array}{cc}  1 &1 \\ 1 & 0 \\ 0 & 1 \end{array}\right]
-   \left[\begin{array}{cc}  2 &1 \\ 1 & 2 \end{array}\right]^{-1}
-   \left[\begin{array}{ccc}  1 &1 &0\\ 1 & 0 & 1 \end{array}\right]
-   \left[\begin{array}{c}  3 \\ -1 \\ 0 \end{array}\right] = \ldots = 
-   \dfrac{1}{3}\left[\begin{array}{c}  5 \\ 1 \\ 4 \end{array}\right].
+   \hat{\vect{x}}_1 = \left[\begin{array}{c}  3 \\ -1 \\ 0 \end{array}\right], \quad \hat{\vect{x}}_2 = \left[\begin{array}{c}  2 \\ 0 \\ 1 \end{array}\right].
 $$
 
 
-
-Since 
-
-$$
-  A\hat{\vect{x}}_0 =  \left[\begin{array}{cc}  1 &1&0 \\ 1 & 1&0 \\ 1 & 0 & 1 \\ 1 & 0 & 1\end{array}\right]
-  \left[\begin{array}{c}  3 \\ -1 \\ 0 \end{array}\right] = \left[\begin{array}{c}  2 \\ 2 \\ 3 \\ 3 \end{array}\right]   
-$$
-
-and
+For both we find the least squares error
 
 $$
-  A\hat{\mathbf{x}}_1 =
-  \dfrac{1}{3}\left[\begin{array}{cc}  1 &1&0 \\ 1 & 1&0 \\ 1 & 0 & 1 \\ 1 & 0 & 1\end{array}\right]
-  \left[\begin{array}{c}  5 \\ 1 \\ 4 \end{array}\right] = \dfrac13\left[\begin{array}{c}  4 \\ 4 \\ 6 \\ 6 \end{array}\right] = \left[\begin{array}{c}  2 \\ 2 \\ 3 \\ 3 \end{array}\right] 
+  \norm{A\hat{\vect{x}}_i - \vect{b}} = 
+  \norm{\left[\begin{array}{c}  2\\2\\3\\3 \end{array}\right] - \left[\begin{array}{c}   1 \\ 3 \\ 2 \\ 4\end{array}\right]} = \sqrt{4} = 2.
 $$
 
-are equal, the two vectors $\hat{\vect{x}}_0$  and  $\hat{\vect{x}}_1$  give the same (minimal) 'error' $\norm{A\vect{x} - \vect{b}}$.  As they should!
 ::::
 
 (SubSec:LeastSquares:LinearModels)=
 ## Linear Models
 
-In {numref}`SubSec:LeastSquares:Introduction` we introduced the model to fit a line 
+In {numref}`SubSec:LeastSquares:Introduction` we looked at ways to fit a line 
 $y = a + bx$ to a set of points $(x_i, y_i), i = 1, \ldots, n$  in the plane.  In statistics this plays an important role in so-called *regression models*.
 
 One way to define the best fitting line  $y = \hat{a}+\hat{b}x$ is to let $(\hat{a},\hat{b})$ be the least squares solution to the set of $n$ linear equations 
@@ -878,7 +880,13 @@ The points and the 'first guess' are depicted in {numref}`Figure %s <Fig:LeastSq
 First guess for best line
 :::
 
-For this line the sum of the squares of the residues becomes
+For this line the sum of the squares of the errors
+
+$$
+  y_i - (0.25x + 1.75),
+$$
+
+which is this context are called **residues**, becomes
 
 $$
   \sum_{i=1}^4 (y_i - (0.25x + 1.75))^2 = 0^2 + 0.25^2 + 0.25^2 + 0^2 = 0.125
@@ -894,9 +902,9 @@ $$
    = \left[\begin{array}{c} 
          y_1  \\   y_2 \\ y_3 \\ y_4 
        \end{array}\right], \quad
-       \,\, \text{so} \,
+       \,\, \text{i.e.,} \,\,
      \left[\begin{array}{cc} 
-         1 & 2  \\ 1 &  2 \\ 1 &  4 \\ 1 &  5 
+         1 & 1  \\ 1 &  2 \\ 1 &  4 \\ 1 &  5 
        \end{array}\right]
        \left[\begin{array}{c}  a \\ b \end{array}\right] 
    = \left[\begin{array}{c} 
@@ -928,8 +936,7 @@ Least square line
 
 
 
-
-For the line  $y = \hat{a}  + \hat{b}x$  the sum of the squares of the residues  (i.e., the vertical differences of the four points to the line) becomes
+For the line  $y = \hat{a}  + \hat{b}x$  the sum of the squares of the residues becomes
 
 $$
    (2 - (1.6+0.3\cdot1))^2 + (2 - (1.6+0.3\cdot2))^2 + (3 - (1.6+0.3\cdot4))^2 + (3 - (1.6+0.3\cdot5))^2 = 0.1^2 + 0.2^2 + 0.2^2 + 0.1^2 = 0.1.
@@ -1027,10 +1034,10 @@ $$
           \sum y_i \\ \sum x_iy_i  \end{array}\right]   
     = 
    \left[\begin{array}{c} 
-          \Sigma_y \\ \Sigma_{xy}  \end{array}\right],       
+          \Sigma_y \\ \Sigma_{xy}  \end{array}\right].       
 $$
 
-this leads to the normal equations
+This leads to the normal equations
 
 $$
   \left[\begin{array}{cc} 
@@ -1061,7 +1068,7 @@ we see the expressions  {eq}`Eq:Leastquares:GeneralLinefit`  readily appearing.
 
 
 
-Fitting a line to a set of points, may be looked at as fitting a linear combination of the functions $f_0(x) = 1$ and $f_1(x) = x$.
+Fitting a line to a set of points, may be looked upon as fitting a linear combination of the functions $f_0(x) = 1$ and $f_1(x) = x$.
 Depending on the context we may also consider fitting a 
 linear combination of the functions $f_0(x) = 1$, $f_1(x) = x$ and $f_2(x) = x^2$, i.e., a  quadratic function.  In other words, a parabola  $y = a_0 + a_1x + a_2x^2$. 
 And we may even go beyond that.  Then we get a more general  *linear model*.
@@ -1072,10 +1079,10 @@ And we may even go beyond that.  Then we get a more general  *linear model*.
 Suppose $k$ functions  $f_1(x), \ldots, f_k(x)$ 
 and  $n$ points $(x_1,y_1), \ldots, (x_n,y_n)$ in the plane are given.
 
-The **linear model** refers to the 'best' linear combination, in the least squares sense,   
+The **linear model** refers to the 'best' linear combination, in the least squares sense,  of the form 
 
 $$
-  y = c_1f_1(x) + c_2f_2(x) + \ldots + c_kf_k(x).
+  c_1f_1(x) + c_2f_2(x) + \ldots + c_kf_k(x).
 $$
 
 That is, the linear combination that minimizes 
@@ -1083,15 +1090,20 @@ That is, the linear combination that minimizes
 :::{math}
 :label: Eq:LeastSquares:SumResidues
 
-  \sum_{i=1}^n  \big(y_i - (c_1f_1(x_i) + c_2f_2(x_i) + \ldots + c_kf_k(x_i))\,\big)^2.
+  \sum_{i=1}^n  \big(y_i - (c_1f_1(x_i) + c_2f_2(x_i) + \ldots + c_kf_k(x_i))\,\big)^2,
 
 :::
 
-This is the sum of the squares of the **residues**. 
+the sum of the squares of the errors/residues
+
+$$
+   y_i - \big(c_1f_1(x_i) + c_2f_2(x_i) + \ldots + c_kf_k(x_i)\big).
+$$
 
 ::::
 
-The epithet 'linear' refers to the fact that the parameters  $c_1, \ldots, c_k$ appear in the model linearly. 
+The epithet *linear* refers to the fact that the parameters  $c_1, \ldots, c_k$ appear in the model linearly.  The functions  $f_i$ that are used in the model  definitely don't have to be linear.
+
 
 ::::{prf:remark}
 
@@ -1122,8 +1134,7 @@ in {eq}`Eq:LeastSquares:SumResidues` coincide with the least squares solution of
 
 In practice the points  $(x_1,y_2), \ldots, (x_n,y_n)$ are often called the **data**, sometimes considered to be a **sample** from some space.
 The  variable  $x$ is then considered as the **input variable**  and
-the $y$ as the **output variable**.  Lastly the matrix on the left of Equation
-{eq}`Eq:LeastSquares:DesignMatrix`  is sometimes refered to as the **design matrix**.
+the $y$ as the **output variable**.  Lastly the matrix in the expression on the left of Equation {eq}`Eq:LeastSquares:DesignMatrix`  is sometimes refered to as the **design matrix**.
 
 ::::
 
@@ -1138,15 +1149,17 @@ Several generalizations are possible.  We mention two.
 <li>
   The input  may be multivariate.  The  set of data points then has the form
   
-  $$
+:::{math}
+:label: Eq:LeastSquares:Data-n-dim
+
      \begin{array}{c} (x_{11},x_{12},\ldots,x_{1k},y_1)  \\     
                       (x_{21},x_{22},\ldots,x_{2k},y_2)\\
                           \vdots \quad\quad \vdots \quad\quad \vdots\\
                       (x_{n1},x_{n2},\ldots,x_{nk},y_2).
      \end{array}                
-  $$
+:::
 
- We want the linear combination
+ We want to find the linear combination
 
 
 <BR>
@@ -1158,7 +1171,7 @@ Several generalizations are possible.  We mention two.
 
   that best fits these data.
 
-  For instance,  to find the linear function that best fits the data,  we can take $f_0(x_1,\ldots,x_k) = 1$ and $f_i(x_1,\ldots,x_k) = x_i$, for $i = 1, \ldots, \ell$.    
+  For instance,  to find the linear function that best fits the data in {eq}`Eq:LeastSquares:Data-n-dim`,  we can take $f_0(x_1,\ldots,x_k) = 1$ and $f_i(x_1,\ldots,x_k) = x_i$, for $i = 1, \ldots, k$.    
 
   In a least squares model  we then look for the parameters $\beta_1, \ldots, \beta_{\ell}$ that minimize  
   
@@ -1176,10 +1189,100 @@ Several generalizations are possible.  We mention two.
 
   In a *weighted least squares model*  the terms in the 
   sum {eq}`Eq:LeastSquares:GeneralModel` 
-  get different weights $w_i$.  When building a statistical model this may be desirable when some data give more 'information'. This happens if the variance of the observations that led to them seems smaller than the variance of other observations.
+  get different weights $w_i$.  When building a statistical model this may be desirable when some data give more 'information'. 
+  
+  Then the expression we want to minimize is given by
+  
+  <BR>
+
+  $$
+    \sum_{i=1}^{n}  {\color{blue}w_i} \big(y_i - \beta_1f_1(x_{11},\ldots, x_{1k}) \,-\, \ldots \,-\,
+     \beta_{\ell}f_{\ell}(x_{11},\ldots, x_{1k})\big)^2.
+  $$
+  
+  This approach may be relevant if the variance of the observations that led to them seems smaller than the variance of other observations.
 
 </li>
 
 </ol>
 
+To illustrate matters we present two examples.
 
+::::{prf:example}   Fitting a plane
+
+Suppose  $n$ points  $(x_i,y_i,z_i)$, $i = 1, \ldots , n$  are given and we want  to fit a plane through these.  In other words, we want to find a linear combination
+
+$$
+  L(x,y) = a + bx + cy
+$$
+
+of the functions  $f_0(x,y) = 1$, $f_1(x,y) = x$ and $f_2(x,y) = y$ that fits these points best.
+
+In the least square sense we would then have to solve the normal equations for the linear system
+
+$$
+ \left\{ \begin{align}
+          a + bx_1 + cy_1 & = z_1 \\
+          a + bx_2 + cy_2 & = z_2 \\
+          \quad \vdots \quad \vdots \quad & = \,\, \vdots \\
+          a + bx_n + cy_n & = z_n 
+          \end{align} \right.
+          \quad \,\,\text{i.e.,} \quad
+ \left[ \begin{array}{ccc}
+             1 & x_1 & y_1 \\
+             1 & x_2 & y_2 \\
+             \vdots & & \vdots  \\
+             1 & x_n & y_n
+         \end{array}\right]
+  \left[ \begin{array}{c} a \\b \\c \end{array}\right] = 
+  \left[ \begin{array}{c} z_1 \\z_2 \\ \vdots \\ z_n \end{array}\right].
+$$
+
+::::
+
+::::{prf:example}
+  Suppose we have $n$ data points  $(x_i,y_i)$, $i = 1,\ldots,n$, and we expect a relation $ y = ax^r$ between them.  REFER TO PHYSICS
+
+  One way to go about to find suitable parameters $a$ and $b$ is to transform both $x$ and $y$ to log-scale by introducing the new variable 
+  
+  $$
+     z = \log(y) = \ln(y).
+  $$
+
+The relations between  $x$ and $z$  then transforms to
+
+  $$
+   z = \ln(y) = \ln(a) + r \ln(x).   
+  $$
+
+We can find the least squares  linear fit to the points $(\ln(x_i), z_i)$.
+
+$$ 
+    z = \alpha + \beta x
+$$
+
+for the points  
+
+$$
+  (\ln(x_1), \ln(y_1)), \ldots (\ln(x_n), \ln(y_n)).
+$$
+
+
+At the end we have to  'transform back' to find the 'best power fit'
+
+$$
+   y = ax^b, \quad   a = e^{\alpha},\,\,r = \beta.
+$$
+
+{numref}`Figure %s  <Fig:LeastSquares:Powerfit>` shows what's going on. 
+The first plot shows the points $(x_i,y_i)$,  the second plot shows the points
+$(\ln(x_i), \ln(y_i))$, and the last two plots give the points with the two fits.
+
+
+:::{figure} Images/Fig-LeastSquares-PowerFit.svg
+:name: Fig:LeastSquares:Powerfit
+
+Least squares fitting via logarithmic scale
+:::
+
+::::

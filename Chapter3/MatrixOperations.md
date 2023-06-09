@@ -1,5 +1,5 @@
 (Sec:MatrixOps)=
-# Matrix operations
+# Matrix Operations
 
 
 

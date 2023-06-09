@@ -28,7 +28,7 @@ $$
 A\vect{v} = \lambda_1\vect{v}    \quad\iff\quad  (A -  \lambda_1I)\vect{v} = \vect{0}.
 $$
 
-So we have to solve a homogeneous  system of linear equations, where now the coefficient matrix contains complex numbers.  This slightly complicates the computation, but for this $2 \times 2$ matrix things don't get too bad:
+So we have to solve a homogeneous  system of linear equations, where now the coefficient matrix contains complex numbers.  This slightly complicates the computation, but for this $2 \times 2$ matrix things don't get too bad.
 
 $$
 \left[\begin{array}{cc|c} 1 - (2+i) & -2& 0 \\ 1 & 3- (2+i) & 0 \end{array}\right]
@@ -46,7 +46,7 @@ $$
 -2 + (1+i)(1-i).
 $$
 
-We can read off a solution (equal to complex eigenvector)
+We can read off a solution (i.e.,  complex eigenvector) &nbsp;
 $\vect{v} = \left[\begin{array}{c}  -1+i \\1 \end{array}\right]$.
 
 To check that  we have indeed an eigenvector is also slightly more involved than in the real case.
@@ -134,9 +134,9 @@ $\quad\overline{A} = \left[\begin{array}{ccc} \overline{a_{11}} & \ldots & \over
 </li>
 <li>
 
-  If $A$ and $C$  are two matrices for which that the product  $AC$ exists, 
+  If $A$ and $C$  are two matrices for which the product  $AC$ exists, 
   <BR> 
-  then  $\overline{AC} = \overline{A}  \overline{C}$.
+  then  $\overline{AC} = \overline{A}$ $\overline{C}$.
 
 </li>
 </ol>
@@ -163,7 +163,7 @@ With this we can put the outcomes in {prf:ref}`Ex:ComplexEV:FirstExample` in a b
 ::::::{prf:proposition}
 :label: Prop:ComplexEV:Conjugation
 
-Suppose  $A$ is a real matrix, and  $\lambda = \alpha + \beta i$, with   $\beta \neq 0$, is an eigenvalue of $A$.
+Suppose  $A$ is a *real* matrix, and  $\lambda = \alpha + \beta i$, with   $\beta \neq 0$, is an eigenvalue of $A$.
 Then the following properties hold
 <ol type = "i">
 <li>
@@ -173,7 +173,11 @@ $\overline{\lambda} = \alpha - \beta i$ is an eigenvalue too.
 </li>
 <li>
 
-If  $\vect{v} = \vect{u}+i\vect{w}$, where  $\vect{u}$ and $\vect{w}$  are real vectors, is an eigenvector for $\lambda$, then
+If  $\vect{v} = \vect{u}+i\vect{w}$, where  $\vect{u}$ and $\vect{w}$  are real vectors, is an eigenvector
+
+<BR>
+
+for $\lambda$, then
 $\overline{\vect{v}} = \vect{u}-i\vect{w}$ is an eigenvector for $\overline{\lambda}$.
 
 </li>
@@ -229,13 +233,18 @@ $$
 \lambda_{1,2} = a \pm bi.
 $$
 
-From row reduction of the augmented matrix  $[A - (a+bi)I | \vect{0}] = $
+From row reduction of the augmented matrix  
 
-$$
-\left[\begin{array}{cc|c} a-(a+bi) & -b &0\\ b & a-(a+bi)&0 \end{array}\right] =
-\left[\begin{array}{cc|c} -bi & -b&0 \\ b & -bi&0 \end{array}\right] \sim
-\left[\begin{array}{cc|c} bi & b &0\\ 0 & 0&0 \end{array}\right]
-$$
+
+\begin{eqnarray*}
+   [A - (a+bi)I | \vect{0}] &=& 
+\left[\begin{array}{cc|c} a-(a+bi) & -b &0\\ b & a-(a+bi)&0 \end{array}\right]\\
+&=&
+\left[\begin{array}{cc|c} -bi & -b&0 \\ b & -bi&0 \end{array}\right] \\
+&\sim&
+\left[\begin{array}{cc|c} bi & b &0\\ 0 & 0&0 \end{array}\right],
+\end{eqnarray*}
+
 
 we see that  $\vect{v} = \left[\begin{array}{c} 1 \\ -i \end{array}\right]$
 is an eigenvector for $\lambda_1 = a+bi$.  By taking conjugates
@@ -261,18 +270,18 @@ T(\vect{x}) = \left[\begin{array}{cc} a & -b \\ b & a \end{array}\right]
 \vect{x}, \quad  a,b \in \R, \quad b \neq 0,
 $$
 
-can be described as  a rotation followed by a "scaling" or "stretching".
+can be described as  a rotation followed by a "scaling".
 
 In fact, it holds that
 
-$\left[\begin{array}{cc} a & -b \\ b & a \end{array}\right] = r  \left[\begin{array}{cc} \cos({\varphi}) & -\sin({\varphi}) \\ \sin({\varphi}) & \cos({\varphi}) \end{array}\right]
+$A = \left[\begin{array}{cc} a & -b \\ b & a \end{array}\right] = r  \left[\begin{array}{cc} \cos({\varphi}) & -\sin({\varphi}) \\ \sin({\varphi}) & \cos({\varphi}) \end{array}\right]
 $,  for some $r > 0$ and angle  $\varphi$.
 
 ::::::
 
 ::::::{prf:proof}
 
-Both columns have length  $r = \sqrt{a^2 + (\pm b)^2} = \sqrt{a^2 + b^2}$.
+Both columns of $A$ have length  $r = \sqrt{a^2 + (\pm b)^2} = \sqrt{a^2 + b^2}$.
 
 If we take out  this factor, we get
 
@@ -315,10 +324,10 @@ The scaling factor $r$  and the angle $\varphi$  are exactly the polar coordinat
 That is,
 
 $$
-a + bi = r(a/r + b/r i) = r (\cos(\varphi) + i \sin(\varphi).
+a + bi = r(a/r + b/r i) = r (\cos(\varphi) + i \sin(\varphi)),
 $$
 
-Thus
+where
 
 $$
   r = |\lambda|, \quad \varphi = \text{arg}\,\lambda.
@@ -329,7 +338,7 @@ $$
 
 ::::::{prf:proposition}
 
-Suppose the real  $n \times n$ matrix $A$ has a complex eigenvalue $\lambda = \alpha - \beta i$, with $\beta \neq 0$.   Then there exist two linearly independent real vectors  $\vect{u}$ and $\vect{w}$  for which
+Suppose the real  $n \times n$ matrix $A$ has a complex eigenvalue $\lambda = \alpha - \beta i$, with $\beta \neq 0$.   Then there exist two linearly independent *real* vectors  $\vect{u}$ and $\vect{w}$  for which
 
 $$
 \begin{cases}
@@ -350,7 +359,7 @@ So,  $\vect{v} = \vect{u}+i\vect{w}$, for real vectors $\vect{u}$  and $\vect{w}
 Note that $\vect{v}$ cannot be a real vector.
 
 $\vect{u}$  and $\vect{w}$ must be linearly independent, because if $\vect{w}= \vect{0}$, then $\vect{v}$ would be a real eigenvector,  and if  $\vect{u}= k\vect{w}$ for some $k$ in $\R$,  then $\vect{v} = (k+i)\vect{w}$, and then
-$\vect{w}$ would be a real eigenvector for the complex eigenvalue $\lambda$.  And that is unheard of.
+$\vect{w}$ would be a real eigenvector for the complex eigenvalue $\lambda$ of the real matrix $A$.  And that is unheard of.
 
 So we conclude that  $\vect{u}$   and   $\vect{w}$ must be linearly independent.
 
@@ -386,7 +395,13 @@ A [\,\vect{u}\,\, \vect{w}\,] = [\,\vect{u}\,\, \vect{w}\,] \left[\begin{array}{
 $$
 
 
-So if we define  $P$ to be the matrix  $[\,\vect{u}\,\, \vect{w}\,]$ then we have $AP = PA$.  This more or less settles the following proposition.
+So if we define  $P$ to be the matrix  $[\,\vect{u}\,\, \vect{w}\,]$ then we have $AP = PC$, where
+
+$$
+  C =  \left[\begin{array}{cc} \alpha & -\beta \\ \beta & \alpha \end{array}\right].
+$$
+  
+This more or less settles the following proposition.
 
 
 ::::::{prf:proposition}
@@ -421,6 +436,7 @@ P =   [ \,\vect{u}\,\, \vect{w}\, ] =\left[\begin{array}{cc}u_1 & w_1 \\ u_2&w_2
 $$
 
 where $\vect{u} + i \vect{w}$ is an eigenvector for  $\lambda = \alpha - \beta i$.
+<BR>
 Let us illustrate matters with the following example.
 
 
@@ -438,15 +454,24 @@ $$
  + i\left[\begin{array}{c} 0 \\ -1  \end{array}\right].
 $$
 
-We check the identity  $P^{-1}AP =\left[\begin{array}{cc} 2 & -1 \\ 1 & 2 \end{array}\right]$.
+We check the identity  
+
+$$
+P^{-1}AP = \left[\begin{array}{cc} \alpha & -\beta \\ \beta & \alpha \end{array}\right] = \left[\begin{array}{cc} 2 & -1 \\ 1 & 2 \end{array}\right].
+$$
 
 According to {prf:ref}`Prop:ComplexEV:HiddenRotation`   we can take
 
 $$
-P = \left[\begin{array}{cc} -2 & 0 \\ 1 & -1 \end{array}\right]
-\quad \text{with} \quad P^{-1} = \dfrac12\left[\begin{array}{cc} -1 & 0 \\ -1 & -2 \end{array}\right]
-.
+P = \left[\begin{array}{cc} -2 & 0 \\ 1 & -1 \end{array}\right],
 $$
+
+with
+
+$$
+P^{-1} = \dfrac12\left[\begin{array}{cc} -1 & 0 \\ -1 & -2 \end{array}\right].
+$$
+
 
 We then get
 

@@ -125,7 +125,7 @@ $$
 
 For instance,  on the diagonal all signs are $+$.
 
-For the $4\times 4$  {prf:ref}`Ex:DetCofactor:4x4Det` we could took advantage of the two zeros in the first column.
+For the $4\times 4$  {prf:ref}`Ex:DetCofactor:4x4Det` we could take advantage of the two zeros in the first column.
 For an  $n\times n$ matrix without zeros the complete expansion will contain $n\cdot (n-1) \cdot \ldots \cdot 3 \cdot 2 \cdot 1 = n!$ products.
 We have already seen in the previous section
 
@@ -208,8 +208,8 @@ a_{32}( a_{11} a_{23} - a_{21}a_{13}) +
 a_{33}( a_{11} a_{22} - a_{21}a_{12}) \\
 =&  a_{31} a_{12} a_{23} -  a_{31} a_{22}a_{13}
 -a_{32} a_{11} a_{23} +a_{32} a_{21}a_{13} +
-a_{33}a_{11} a_{22} - a_{33}a_{21}a_{12}
-\end{array}.
+a_{33}a_{11} a_{22} - a_{33}a_{21}a_{12}.
+\end{array}
 $$
 
 
@@ -462,7 +462,7 @@ $$
 Take the matrix  $A = \left[\begin{array}{ccc}  1 & 3 & 4 \\ 5 & 6 & 7 \\ 2 & 1 & 0  \end{array} \right]
 $.
 
-Expanding along the first row we find that
+Expanding along the first *row* we find that
 
 $$
 \begin{array}{rcl}
@@ -474,7 +474,7 @@ $$
 \end{array}
 $$
 
-For  the determinant of  the transpose  $A^T$  we find, expanding along the first column:
+For  the determinant of  the transpose  $A^T$  we find, expanding along the first *column*:
 
 $$
 \begin{array}{rcl}
