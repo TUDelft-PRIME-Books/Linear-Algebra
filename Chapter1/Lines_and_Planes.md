@@ -17,7 +17,7 @@ $$
 ax+by=c,
 $$
 
- where $a$ and $b$ are not both zero. This equation is called a *Cartesian equation* of $\mathcal{L}$.
+ where $a$ and $b$ are not both zero. This equation is called a **Cartesian equation** of $\mathcal{L}$.
 
 :::
 
@@ -70,7 +70,7 @@ of which the components $x$ and $y$ satisfy the equation $x+2y=5$. This means th
 
 :::{prf:definition}
 
-Each non-zero vector $\mathbf{u}$ that is parallel to a line $\mathcal{L}$ will be called a *directional vector* of that line.
+Each non-zero vector $\mathbf{u}$ that is parallel to a line $\mathcal{L}$ will be called a **directional vector** of that line.
 :::
 
 The point $(5, 0)$ satisfies the equation $x+2y=5$, so it is a point on $\mathcal{L}_1$. Therefore, the vector
@@ -136,7 +136,7 @@ $$
 \begin{bmatrix} x \\ y \end{bmatrix}=\begin{bmatrix} x_0 \\ y_0 \end{bmatrix}+r\begin{bmatrix} a \\ b \end{bmatrix} \qquad \textrm{$r$ in $\mathbb{R}$}
 $$
 
-will be called a *parametric vector equation* of $\mathcal{L}$.
+will be called a **parametric vector equation** of $\mathcal{L}$.
 
 :::
 
@@ -145,13 +145,13 @@ will be called a *parametric vector equation* of $\mathcal{L}$.
 Let $\mathcal{L}$ be the line through the points $P=(2, 1)$ and $Q=(6, 4)$. How do we find a parametric vector equation of this line? We need a vector that connects the origin to a point on the line and a vector parallel to the line. For the first vector we can simply use the coordinates of either $P$ or $Q$. We can use either point, but let us choose $P$. We can construct a vector parallel to the line $\mathcal{L}$ by connecting two distinct points on the line by an arrow. We can use for instance the vector $\overrightarrow{PQ}$ that starts in $P$ and ends in $Q$.
 
 $$
-\overrightarrow{PQ}=\begin{bmatrix} 6 \\ 4 \end{bmatrix}-\begin{bmatrix} 2 \\ 1 \end{bmatrix}=\begin{bmatrix} 4 \\ 3 \end{bmatrix}
+\overrightarrow{PQ}=\begin{bmatrix} 6 \\ 4 \end{bmatrix}-\begin{bmatrix} 2 \\ 1 \end{bmatrix}=\begin{bmatrix} 4 \\ 3 \end{bmatrix}.
 $$
 
  If we use these vectors, then we find the following parametric equation.
 
 $$
-\begin{bmatrix} x \\ y \end{bmatrix}=\begin{bmatrix} 2 \\ 1 \end{bmatrix}+r\begin{bmatrix} 4 \\ 3 \end{bmatrix} \qquad \textrm{$r$ in $\mathbb{R}$}
+\begin{bmatrix} x \\ y \end{bmatrix}=\begin{bmatrix} 2 \\ 1 \end{bmatrix}+r\begin{bmatrix} 4 \\ 3 \end{bmatrix} \qquad \textrm{$r$ in $\mathbb{R}$.}
 $$
 
 :::
@@ -164,7 +164,7 @@ Finally, we will take a look at a _normal equation_ of a line in $\mathbb{R}^2$.
 
 :::{prf:definition}
 
-Any non-zero vector $\mathbf{n}$ that is orthogonal to a line $\mathcal{L}$ will be called a *normal vector* of that line.
+Any non-zero vector $\mathbf{n}$ that is orthogonal to a line $\mathcal{L}$ will be called a **normal vector** of that line.
 
 :::
 
@@ -194,7 +194,7 @@ $$
 (\mathbf{v}-\mathbf{v_0})\ip\mathbf{n}=0
 $$
 
-will be called a *normal equation* of $\mathcal{L}$.
+will be called a **normal equation** of $\mathcal{L}$.
 :::
 
 ::::{exercise}
@@ -202,7 +202,7 @@ will be called a *normal equation* of $\mathcal{L}$.
 The line $\mathcal{L}_1$ can be described by the following parametric vector equation.
 
 $$
-\begin{bmatrix} x \\ y \end{bmatrix}=\begin{bmatrix} 5 \\ 0 \end{bmatrix}+r\begin{bmatrix} -2 \\ 1 \end{bmatrix} \qquad \textrm{$r$ in $\mathbb{R}$}
+\begin{bmatrix} x \\ y \end{bmatrix}=\begin{bmatrix} 5 \\ 0 \end{bmatrix}+r\begin{bmatrix} -2 \\ 1 \end{bmatrix} \qquad \textrm{$r$ in $\mathbb{R}$.}
 $$
 
 Let us try to find a Cartesian equation for the line $\mathcal{L}$ through the point $P=(1, 7)$ and orthogonal to $\mathcal{L}_1$. We will start with a normal equation and then derive a Cartesian equation from that.
@@ -242,7 +242,7 @@ $$
 ax+by+cz=d,
 $$
 
- where $a$, $b$ and $c$ are not all zero. This equation is called a *Cartesian equation* of $\mathcal{P}$.
+ where $a$, $b$ and $c$ are not all zero. This equation is called a **Cartesian equation** of $\mathcal{P}$.
 :::
 
 The Cartesian equation of a plane in $\mathbb{R}^3$ resembles the Cartesian equation of a line in $\mathbb{R}^2$. So, how is it that such an equation describes a plane and not a line in $\mathbb{R}^3$? We can clarify this by looking at a _normal equation_ of a plane.
@@ -285,11 +285,11 @@ This means that $Q$ is on the plane $\mathcal{P}$ through $P$ and orthogonal to 
 
 ## Normal equation of a plane
 
-A line can be defined as a collection of points and as the collection of vectors that connect the origin to a point on the line. Similarly, we can identify the plane $\mathcal{P}$ as the collection of all vectors $\mathbf{v}$ that connect the origin to a point on $\mathcal{P}$. In this case we will say that $\mathbf{v}$ is a vector on the plane $\mathcal{P}$.
+A line can be defined as a collection of points and as the collection of vectors that connect the origin to points on the line. Similarly, we can identify the plane $\mathcal{P}$ as the collection of all vectors $\mathbf{v}$ that connect the origin to points on $\mathcal{P}$. In this case we will say that $\mathbf{v}$ is a vector on the plane $\mathcal{P}$.
 
 :::{prf:definition}
 
-Any non-zero vector $\mathbf{n}$ that is orthogonal to a plane $\mathcal{P}$ will be called a *normal vector* of that plane.
+Any non-zero vector $\mathbf{n}$ that is orthogonal to a plane $\mathcal{P}$ will be called a **normal vector** of that plane.
 :::
 
 Let $\mathbf{n}$ be a normal vector for a given plane $\mathcal{P}$ and $\mathbf{v_0}$ a vector on $\mathcal{P}$. {numref}`Figure %s <Fig:LinesAndPlanes:NormalEquationPlane>` tells us that any other vector $\mathbf{v}$ is on $\mathcal{P}$ whenever $(\mathbf{v}-\mathbf{v_0})\ip\mathbf{n}=0$.
@@ -312,10 +312,10 @@ Finally, let us take a look at a _parametric vector equation_ of a plane. Such a
 
 :::{prf:definition}
 
-Each non-zero vector $\mathbf{u}$ that is parallel to a plane $\mathcal{P}$ will be called a *directional vector* of that plane.
+Each non-zero vector $\mathbf{u}$ that is parallel to a plane $\mathcal{P}$ will be called a **directional vector** of that plane.
 :::
 
-We can always find directional vectors of a plane by taking a vector that connects two distinct points in the plane. If we want to find two directional vectors for the plane $\mathcal{P}$ with Cartesian equation $2x+y+3z=5$, then we can use the point $P=(0, 2, 1)$ that we have been working with and choose two other points that satisfy $2x+y+3z=5$. We can use, for example, the points $Q=(0, 5, 0)$ and $R=(2, 1, 0)$. In {numref}`Figure %s <Fig:LinesAndPlanes:DirectionalVectorsPlane>` you can see that the vectors $\overrightarrow{PQ}$ and $\overrightarrow{PR}$ are two vectors that are parallel to the plane, but are not parallel to each other.
+We can find directional vectors of a plane by taking  vectors that connects two distinct points in the plane. If we want to find two directional vectors for the plane $\mathcal{P}$ with Cartesian equation $2x+y+3z=5$, then we can use the point $P=(0, 2, 1)$ that we have been working with and choose two other points that satisfy $2x+y+3z=5$. We can use, for example, the points $Q=(0, 5, 0)$ and $R=(2, 1, 0)$. In {numref}`Figure %s <Fig:LinesAndPlanes:DirectionalVectorsPlane>` you can see that the vectors $\overrightarrow{PQ}$ and $\overrightarrow{PR}$ are two vectors that are parallel to the plane, but are not parallel to each other.
 
 :::{applet}
 :url: lines_and_planes/directional_vectors_plane
@@ -341,7 +341,7 @@ $$
 \begin{bmatrix} x \\ y \\ z \end{bmatrix}=\begin{bmatrix} x_0 \\ y_0 \\ z_0 \end{bmatrix}+r\begin{bmatrix} a_1 \\ b_1 \\ c_1  \end{bmatrix}+s\begin{bmatrix} a_2 \\ b_2 \\ c_2  \end{bmatrix} \qquad \textrm{$r, s$ in $\mathbb{R}$}
 $$
 
- will be called a *parametric vector equation* of $\mathcal{P}$.
+ will be called a **parametric vector equation** of $\mathcal{P}$.
 :::
 
 :::{exercise}
@@ -369,7 +369,13 @@ $$
 Because the point $P(1, 1, 1)$ needs to be on the plane we can conclude that
 
 $$
-x+2y-2z=1
+x+2y-2z = 1+2\cdot1-2\cdot1,
+$$
+
+so
+
+$$
+x+2y-2z = 1
 $$
 
 is an equation of the plane that contains $P$, $Q$ and $R$.
@@ -474,7 +480,7 @@ will be called a *parametric vector equation* of $\mathcal{L}$.
 
 :::{exercise}
 
-How can we find a parametric vector equation for the line $\mathcal{L}$ that contains the points $P=(1, 2, 4)$ and $Q=(5, 3, 1)$? The vector $\overrightarrow{PQ}$ is parallel to $\mathcal{L}$ and therefore a directional vector. The components of this vector are equal to
+How can we find a parametric vector equation for the line $\mathcal{L}$ that contains the points $P=(1, 2, 4)$ and $Q=(5, 3, 1)$? <BR> The vector $\overrightarrow{PQ}$ is parallel to $\mathcal{L}$ and therefore a directional vector. The components of this vector are equal to
 
 $$
 \overrightarrow{PQ}=\begin{bmatrix} 5-1 \\ 3-2 \\ 1-4 \end{bmatrix}=\begin{bmatrix} 4 \\ 1 \\ -3 \end{bmatrix}.

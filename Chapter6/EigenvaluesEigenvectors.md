@@ -84,7 +84,7 @@ Such a (nonzero) vector $\vect{v}$ is then called an **eigenvector** of $A$ for 
 
 ::::::
 
-The reason to require that an eigenvector has to be nonzero is that otherwise **every**  number $c$ would be an eigenvalue.
+The reason to require that an eigenvector has to be nonzero is that otherwise *every*  number $c$ would be an eigenvalue.
 Namely,  $A\vect{0} = \vect{0} = c\vect{0}$ for any real number $c$.
 Thus then the concept of an eigenvalue would be a rather empty notion.
 
@@ -119,7 +119,7 @@ How to find the eigenvector(s) for a given eigenvalue.
 </ul>
 
 
-The (harder) question how to actually find the eigenvalues we postpone untill section ({numref}`Sec:EV:CharPoly`).
+The (harder) question how to actually find the eigenvalues we postpone untill the next section.
 
 In the second half of this section we will consider a few general properties of eigenvalues and eigenvectors.
 
@@ -271,7 +271,7 @@ $$
 $$
 
 So  $-1$ is an eigenvalue of the matrix $\left[\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array}\right] $ and a corresponding eigenvector is the vector
-$\left[\begin{array}{c} 2  \\ -1 \end{array}\right]$.  Note that the total set of eigenvectors is the set of all multiples of the vector $\left[\begin{array}{c} 2  \\ -1 \end{array}\right]$.  Well, to be precise, all **nonzero** multiples.
+$\left[\begin{array}{c} 2  \\ -1 \end{array}\right]$.  Note that the total set of eigenvectors is the set of all multiples of the vector $\left[\begin{array}{c} 2  \\ -1 \end{array}\right]$.  Well, to be precise, all *nonzero* multiples.
 
 ::::::
 
@@ -336,7 +336,7 @@ $$
 (A-2I)\vect{v} = \vect{0}.
 $$
 
-::::::
+
 
 
 
@@ -356,7 +356,7 @@ $$
 \left[\begin{array}{cccc} 1 & 1 & -2  \\ 0 & -3 & 2 \\ 0 & 0 & -2 \end{array}\right].
 $$
 
-This last matrix has rank 3, so its nulspace contains only the zero vector.  Thus there are no nonzero solutions for the equation  $A\vect{v} - 2\vect{v} = \vect{0}$, and we conclude that 2 is **not** an eigenvalue of $A$.
+This last matrix has rank 3, so its nulspace contains only the zero vector.  Thus there are no nonzero solutions for the equation  $A\vect{v} - 2\vect{v} = \vect{0}$, and we conclude that 2 is *not* an eigenvalue of $A$.
 
 For the other candidate we proceed in the same manner.  Now we have to find the nulspace of the matrix
 
@@ -381,6 +381,7 @@ A\vect{v} =  \begin{bmatrix} -2 & 1 & 2 \\ 0 & -1 & 2 \\ -1 & 1 & 0 \end{bmatrix
 \begin{bmatrix} 0 \\ -4 \\ 2\end{bmatrix} = (-2) \begin{bmatrix} 0 \\ 2 \\ -1\end{bmatrix} = (-2)\vect{v}.
 $$
 
+::::::
 
 In the following example the matrix has an eigenvalue for which there appear to be two linearly independent eigenvectors.
 
@@ -392,7 +393,7 @@ In the following example the matrix has an eigenvalue for which there appear to 
 We will find all eigenvectors of the matrix  $A = \begin{bmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1  \end{bmatrix}$
 for the eigenvalue $\lambda_1 = -1$.
 
-We know that we can do so by row reducing the homogeneous linear system  $[A - (-1)I | \vect{0}]$.
+We know that we can do so by row reducing the augmented matrix  $[A - (-1)I | \vect{0}]$.
 
 $$
 [A - (-1)I \,|\, \vect{0}] = \left[\begin{array}{ccc|c} 2 & 2 & 2 &0\\ 2 & 2 & 2 &0\\ 2 & 2 & 2&0  \end{array}\right]
@@ -401,7 +402,7 @@ $$
 .
 $$
 
-Check that two independent eigenvectors are given by
+You can check that two independent eigenvectors are given by
 
 $$
 \vect{v}_1 = \left[\begin{array}{c}1 \\0\\ -1  \end{array}\right]
@@ -526,7 +527,7 @@ So an eigenspace is just the set of all eigenvectors for a given eigenvalue, wit
 :label: Ex:EigenValues:TwodimEigenspaceCtd
 
 The matrix  $A = \begin{bmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1  \end{bmatrix}$
-has the eigenvalues $\lambda_1 = -1$  and  $\lambda_2=5$.
+has the eigenvalues $\lambda_1 = -1$  and  $\lambda_2=5$. <BR>
 We have seen ({prf:ref}`Ex:EigenValues:TwodimEigenspace`) that all
 eigenvectors for $\lambda = -1$  are linear combinations of the two linearly independent eigenvectors
 
@@ -578,21 +579,23 @@ So, let
 
 
 
-:::{math}
-:label: Eq:v_l-in-Span
+$$
 
 \vect{v}_{\ell} = c_1 \vect{v}_1 +   \ldots + c_{\ell-1}  \vect{v}_{\ell-1}.
+$$
 
 
-:::
 
 
 Then
 
 
-$$
+:::{math}
+:label: Eq:v_l-in-Span
+
 \lambda_{\ell}\vect{v}_{\ell} = c_1 \lambda_{\ell}\vect{v}_1 +   \ldots + c_{\ell-1} \lambda_{\ell} \vect{v}_{\ell-1}.
-$$
+
+:::
 
 On the other hand, if we multiply both sides of Equation {eq}`Eq:v_l-in-Span` by $A$, we find that
 
@@ -791,9 +794,12 @@ so this vector is  an eigenvector for the eigenvalue 0.
 ::::::{exercise}
 :label: Exc:EigenValues:EigenvaluesInverse
 
-Prove the following statement.
+Prove the following statements.
 
 If the matrix $A$ is invertible, and $\lambda$ is an eigenvalue of $A$,  then $\dfrac{1}{\lambda}$  is an eigenvalue of the inverse of $A$.
+
+Moreover,  if  $\vect{v}$ is an eigenvector of $A$ for eigenvalue $\lambda$, then $\vect{v}$ is also an eigenvector of $A^{-1}$ for eigenvalue $\lambda^{-1}$.
+
 
 ::::::
 

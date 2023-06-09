@@ -1,3 +1,4 @@
+(Chapter:Determinants)=
 # Determinants
 
 ```{tableofcontents}

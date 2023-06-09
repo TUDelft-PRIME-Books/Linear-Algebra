@@ -259,9 +259,9 @@ $$
 c_1\vect{u_1}+  \ldots + c_k\vect{u_k} \in S.
 $$
 
-So we can more generally say:  a subspace is closed under taking linear combinations.
-This also means that if $\vect{u_1}, \ldots , \vect{u_k} $  are vectors in a subspace $S$, then
-$\Span{\vect{u_1}, \ldots , \vect{u_k}} $ is contained in $S$.
+So we can more generally say:  a subspace is closed under taking linear combinations. <BR>
+This also means that if $\vect{u_1}, \ldots , \vect{u_k} $  are vectors in a subspace $S$, <BR>
+then $\Span{\vect{u_1}, \ldots , \vect{u_k}} $ is contained in $S$.
 
 ::::::
 

@@ -146,7 +146,7 @@ $$
 
   \left\{\begin{array}{ccccccc}
     2\cdot 5&+&3\cdot(-3)&+&  (-1)&=&0\\
-    3\cdot 5&+& (-3)&+& 5\cdot(-1)&=&7.\\
+    3\cdot 5&+& (-3)&+& 5\cdot(-1)&=&7\\
   \end{array}\right.$$
 
 which are both true identities.
@@ -402,7 +402,7 @@ $$
    \left\{\begin{array}{ccccccc}
              x_1 &+&  3x_2 &-&  2x_3 &=&  4 \\
             3x_1 &+&  7x_2 &-&  2x_3 &=&  8 \\
-            2x_1 &+& 10x_2 &-&  9x_2 &=& 4
+            2x_1 &+& 10x_2 &-&  9x_3 &=& 4
           \end{array}
    \right.$$
 
@@ -415,13 +415,13 @@ $$
   \left\{\begin{array}{ccccccc}
              x_1 &+&  3x_2 &-&  2x_3 &=&  4 \\
             3x_1 &+&  7x_2 &-&  2x_3 &=&  8 \\
-            2x_1 &+& 10x_2 &-&  9x_2 &=& 4
+            2x_1 &+& 10x_2 &-&  9x_3 &=& 4
           \end{array}
    \right.   \quad \Longrightarrow \quad
    \left\{\begin{array}{ccccccccccccc}
              x_1 &+&  3x_2 &-&  2x_3 &=&  4 \\
                  & & -2x_2 &+&  4x_3 &=&  -4 \\
-                 & &  4x_2 &-&  5x_2 &=& -4
+                 & &  4x_2 &-&  5x_3 &=& -4
           \end{array}
    \right.$$
 
@@ -465,13 +465,13 @@ $$
    \left\{\begin{array}{ccccccccccccc}
              x_1 &+&  3x_2 &-&  2x_3 &=&  4 \\
                  & & -2x_2 &+&  4x_3 &=&  -4 \\
-                 & &  4x_2 &-&  5x_2 &=& -4
+                 & &  4x_2 &-&  5x_3 &=& -4
           \end{array}
    \right.    \quad \Longrightarrow \quad
    \left\{\begin{array}{ccccccc}
              x_1 &+&  3x_2 &-&  2x_3 &=&  4 \\
             3x_1 &+&  7x_2 &-&  2x_3 &=&  8 \\
-            2x_1 &+& 10x_2 &-&  9x_2 &=& 4
+            2x_1 &+& 10x_2 &-&  9x_3 &=& 4
           \end{array}
    \right.$$
 
@@ -484,13 +484,13 @@ $$
    \left\{\begin{array}{ccccccc}
              x_1 &+&  3x_2 &-&  2x_3 &=&  4 \\
             3x_1 &+&  7x_2 &-&  2x_3 &=&  8 \\
-            2x_1 &+& 10x_2 &-&  9x_2 &=& 4
+            2x_1 &+& 10x_2 &-&  9x_3 &=& 4
           \end{array}
    \right.  \quad \Longleftrightarrow \quad
    \left\{\begin{array}{ccccccccccccc}
              x_1 &+&  3x_2 &-&  2x_3 &=&  4 \\
                  & & -2x_2 &+&  4x_3 &=&  -4 \\
-                 & &  4x_2 &-&  5x_2 &=& -4
+                 & &  4x_2 &-&  5x_3 &=& -4
           \end{array}
    \right.$$
 
@@ -573,13 +573,13 @@ $$
  \left\{\begin{array}{cccccccccccccccccccccc}
              x_1 &+&  3x_2 &-&  2x_3 &=&  4  & \quad[E_1]\\
                  & & -2x_2 &+&  4x_3 &=&  -4 & \quad[-\frac12E_2]\\
-                 & &  4x_2 &-&  5x_2 &=& -4  &\quad[E_3]
+                 & &  4x_2 &-&  5x_3 &=& -4  &\quad[E_3]
           \end{array}
    \right.    \quad \Longleftrightarrow \quad
   \left\{\begin{array}{ccccccccccccc}
              x_1 &+&  3x_2 &-&  2x_3 &=&  4 \\
                  & &   x_2 &-&  2x_3 &=&  2 \\
-                 & &  4x_2 &-&  5x_2 &=& -4
+                 & &  4x_2 &-&  5x_3 &=& -4
           \end{array}
    \right.   
 $$
@@ -591,14 +591,14 @@ $$
    \left\{\begin{array}{cccccccccccccccccccccc}
              x_1 &+&  3x_2 &-&  2x_3 &=&  4 & \quad[E_1]\\
                  & &   x_2 &-&  2x_3 &=&  2 & \quad[E_2]\\
-                 & &  4x_2 &-&  5x_2 &=& -4 & \quad[E_3-4 E_2]
+                 & &  4x_2 &-&  5x_3 &=& -4 & \quad[E_3-4 E_2]
           \end{array}
    \right.  
     \quad \Longleftrightarrow \quad
      \left\{\begin{array}{ccccccccccccc}
              x_1 &+&  3x_2 &-&  2x_3 &=&  4 \\
                  & &   x_2 &-&  2x_3 &=&  2 \\
-                 & &       & &  3x_2 &=& -12
+                 & &       & &  3x_3 &=& -12
           \end{array}
    \right.$$
 
@@ -850,7 +850,7 @@ Before that, we define the concept of one of the most basic building blocks in l
 
 
 
-An $m \times n$  **matrix** $A$ is an rectangular array of numbers  $a_{ij}, 1\leq i \leq m, 1 \leq j \leq n$.
+An $m \times n$  **matrix** $A$ is a rectangular array of numbers  $a_{ij}, 1\leq i \leq m, 1 \leq j \leq n$.
 
 $$
    A = \left[\begin{array}{cccc}
@@ -1038,7 +1038,7 @@ The right moment to start this back substitution is when the augmented matrix ha
 (Subsec:LinSystems:RowReduction)=
 ## Row reduction and echelon forms 
 
-In subsection {numref}`Subsec:LinSystems:Elimination`  we have solved linear systems by eliminating variables from the equations. It would be nice to have a clear mark where we can stop rewriting the given system, to forestall ending up in a never ending loop.  When we use the notation of an augmented matrix we can identify such a mark.
+In  {numref}`Subsec:LinSystems:Elimination`  we have solved linear systems by eliminating variables from the equations. It would be nice to have a clear mark where we can stop rewriting the given system, to forestall ending up in a never ending loop.  When we use the notation of an augmented matrix we can identify such a mark.
 We first need a few more definitions.
 
 
@@ -1204,6 +1204,10 @@ Interchanging (or: swapping) two rows.
 
 ::::
 
+::::{prf:remark}
+
+Note that these row operations match exactly the row operations of {prf:ref}`Prop:LinSystems:ElimOperations`.  This proposition stated that the row operations do not change the solutions of the corresponding linear system.
+::::
 
 ::::{prf:definition} 
 :label: Ex:LinSystems:RowEquivalent
@@ -1218,7 +1222,7 @@ If two matrices $A$ and $B$ are row equivalent we denote this by  $A \sim B$.
 
 ::::{prf:remark} 
 
-if two augmented matrices are row equivalent it means that the linear systems they represent are equivalent (i.e., have the same solution set).
+If two augmented matrices are row equivalent it means that the linear systems they represent are equivalent (i.e., have the same solution set).
 
 ::::
 
@@ -1226,7 +1230,7 @@ if two augmented matrices are row equivalent it means that the linear systems th
 Above we applied row operations to an augmented matrix, to work our way to the solution of a system of equations.
 In fact we simplified the system and the matrix along parallel paths.  From now on we will simplify a system by working almost always with the corresponding augmented matrix. 
 
-In the future (chapter or section . . . .) we will also apply row reduction to matrices in other contexts, i.c. for other purposes.
+In later chapters we will also apply row reduction to matrices in other contexts, i.c. for other purposes.
 
 
 
@@ -1252,7 +1256,7 @@ $$
    -2 & 2 & 2 & -4 & -6 \\
    3 & -3 & -1 & 5 & 4
 \end{array}\right]\begin{array}{l}
-   {[\frac14R_0]} \\
+   {[\frac14R_1]} \\
    {[R_2]} \\
    {[R_3]}
 \end{array} \\
@@ -1269,7 +1273,7 @@ $$
     &\sim&
 \left[\begin{array}{rrrrr}
    1 & -1 & -1 & 2 & 3 \\
-   0 & 0 & 0 & 0 & 4 \\
+   0 & 0 & 0 & 0 & 8 \\
    3 & -3 & -1 & 5 & 4
 \end{array}\right]\begin{array}{l}
    {[R_1]} \\
@@ -1279,7 +1283,7 @@ $$
     &\sim&
 \left[\begin{array}{rrrrr}
    1 & -1 & -1 & 2 & 3 \\
-   0 & 0 & 0 & 0 & 4 \\
+   0 & 0 & 0 & 0 & 8 \\
    0 & 0 & 2 & -1 & -5
 \end{array}\right]\begin{array}{l}
 {[R_1]} \\
@@ -1290,12 +1294,12 @@ $$
 \left[\begin{array}{rrrrr}
    1 & -1 & -1 & 2 & 3 \\
    0 & 0 & 2 & -1 & -5 \\
-   0 & 0 & 0 & 0 & 4
+   0 & 0 & 0 & 0 & 8
 \end{array}\right]= E
   \end{array}
 $$
 
-Here a row swap was essential to bring the matrix into echelon form.  Sometimes a row swap may just be convenient to simplify the computations. Note that we have also introduced a notation for a row swap. It is a good practice use a notation like this when you do a row reduction process yourself.
+Here a row swap was essential to bring the matrix into echelon form.  Sometimes a row swap may just be convenient to simplify the computations. Note that we have also introduced a notation for a row swap. It is good practice to use a notation like this when you do a row reduction process yourself.
 To speed up the process it may be preferable to combine row operations that do not interfere. In this example the second and the third step both involved
 adding multiples of the first row to the other rows. This can be done simultaneously:
 
@@ -1362,11 +1366,11 @@ We continue with the part of the matrix below and to the right of the first pivo
 $$
    \left[\begin{array}{cccc} 
              \tilde{a}_{22}&  \tilde{a}_{23}&  \ldots&   \tilde{a}_{2n} \\
-             \tilde{a}_{32}&   \tilde{a}_{43}& \ldots&   \tilde{a}_{3n} \\
+             \tilde{a}_{32}&   \tilde{a}_{33}& \ldots&   \tilde{a}_{3n} \\
                 \vdots     &  \vdots         &  \ldots&  \vdots    \\
            \tilde{a}_{m2}&  \tilde{a}_{m3}&  \ldots&   \tilde{a}_{mn}
           \end{array}
-   \right]
+   \right].
 $$
 
 And so on, until we get to the last row, or until we get to a row below which all rows only contain zeros.
@@ -1698,7 +1702,7 @@ $$
 [R_1-2R_3] \\
 {[R_2+1R_3]} \\
 {[R_3]} \\
-\end{array} \sim \quad
+\end{array} \,\, \sim \,\,
 \left[\begin{array}{rrrrr}3 & 2 &1 &0&-6\\0 & 2 & -2 &0 & 3\\0 & 0 & 0 &3 & 2
 \end{array}\right]\begin{array}{l}
 [R_1-1R_2] \\
@@ -1714,12 +1718,12 @@ $$
 \sim \quad
 \left[\begin{array}{rrrrr}3 & 0 &3 &0&-9\\0 & 2 & -2 &-0 & 3\\0 & 0 & 0 &3 & 2
 \end{array}\right]\begin{array}{l}
-[\nicefrac13R_0] \\
-{[\nicefrac{1}{2}R_1]} \\
-{[\nicefrac13R_2]} \\
+[\nicefrac13R_1] \\
+{[\nicefrac{1}{2}R_2]} \\
+{[\nicefrac13R_3]} \\
 \end{array} \quad
  \sim   \quad
-\left[\begin{array}{rrrrr}1 & 0 &1 &0&-3\\0 & 1 & -1 &-0 & 3/2\\0 & 0 & 0 &1 & 2/3
+\left[\begin{array}{rrrrr}1 & 0 &1 &0&-3\\0 & 1 & -1 &0 & 3/2\\0 & 0 & 0 &1 & 2/3
 \end{array}\right]$$
 
 ::::
@@ -1785,7 +1789,7 @@ $$
 \left[\begin{array}{rrrr}2 & -1 & 0 & 1\\0 & 5 & 0 & 15\\0 & 0 & 1 & -1
 \end{array}\right]\begin{array}{l}
 [R_1] \\
-{[(\nicefrac15)R_1]} \\
+{[(\nicefrac15)R_2]} \\
 {[R_3]} \\
 \end{array} \quad\sim 
 \left[\begin{array}{rrrr}2 & -1 & 0 & 1\\0 & 1 & 0 & 3\\0 & 0 & 1 & -1
@@ -1801,7 +1805,7 @@ $$
     \sim 
 \left[\begin{array}{rrrr}2 & 0 & 0 & 4\\0 & 1 & 0 & 3\\0 & 0 & 1 & -1
 \end{array}\right]\begin{array}{l}
-[(\nicefrac12)R_0] \\
+[(\nicefrac12)R_1] \\
 {[R_2]} \\
 {[R_3]} \\
 \end{array} \quad \sim 
@@ -1816,7 +1820,7 @@ $$
 \left[\begin{array}{rrrr}2 & -1 & -1 & 2\\1 & 2 & 4 & 4\\4 & -2 & -4 & 6
 \end{array}\right]\begin{array}{l}
 [R_1\leftrightarrow R_2] \\
-{[R_2\leftrightarrow R_1]}
+{[R_2\leftrightarrow R_1] }\\
 [R_3] \\
 \end{array} \sim 
 \left[\begin{array}{rrrr}1 & 2 & 4 & 4\\2 & -1 & -1 & 2\\4 & -2 & -4 & 6
@@ -1864,17 +1868,18 @@ $$
 
 $$
     \sim
-\left[\begin{array}{rrrr}1 & 0 & 0 & 2\\0 & 1 & 0 & 3\\0 & 0 & 1 & -1
+\left[\begin{array}{rrr}1 & 0 & 0 & 2\\0 & 1 & 0 & 3\\0 & 0 & 1 & -1
 \end{array}\right], \text{  the same outcome as before.} \rule{5em}{0ex}
 $$
 
-
+ the same outcome as before.
 ::::
 
 The following algorithm summarizes the solution method for a linear system.
 
 
 ::::{prf:algorithm} 
+:label:  Alg:LinSystems:ElimMethod
 
 
 Elimination method to solve a linear system. 
@@ -1926,13 +1931,14 @@ A system of linear equations has either zero, or one, or infinitely many solutio
 
 
 
-This just depends on the outcome of the elimination method.
-If (iii) occurs, the number of solutions is zero;  if (iv) occurs and there are no free variables, there is just one solution, and if there is at least one free variable, the solution set automatically contains infinitely many solutions.
+This just depends on the outcome of the elimination method  
+(i.e. {prf:ref}`Alg:LinSystems:ElimMethod`).
+If iii. occurs, the number of solutions is zero;  if iv. occurs and there are no free variables, there is just one solution, and if there is at least one free variable, the solution set automatically contains infinitely many solutions.
 
 ::::
 
 
-Note that to answer the question which of the three cases -- zero solutions, a  unique solution or infinitely many solutions -- holds, it is suffices to reduce the augmented matrix to just any echelon form.  From this echelon form it can already be decided whether the system is consistent, and if it is, whether there are free variables.
+Note that to answer the question which of the three cases -- zero solutions, a  unique solution or infinitely many solutions -- holds, it suffices to reduce the augmented matrix to just any echelon form.  From this echelon form it can already be decided whether the system is consistent, and if it is, whether there are free variables.
 
 
 
@@ -1961,9 +1967,10 @@ $$
 \left[\begin{array}{rrr|r}1 & 3 & 1 &5\\2 & 1 & -1 &4\\3 & -1 & -3 &3
 \end{array}\right]\begin{array}{l}
 [R_1] \\
-{[R_2-2R_1]} \\
-{[R_3-3R_1]} \\
+[R_2-2R_1] \\
+[R_3-3R_1] \\
 \end{array} \sim 
+       
 \left[\begin{array}{rrr|r}1 & 3 & 1 &5\\0 & -5& -3 &-6\\0 & -10 & -6 &-12
 \end{array}\right]\begin{array}{l}
 [R_1] \\
@@ -1972,9 +1979,12 @@ $$
 \end{array} \sim 
 \left[\begin{array}{rrr|r}1 & 3 & 1 &5\\0 & -5& -3 &-6\\0 & 0 & 0 &0
 \end{array}\right] 
+\end{array}
 $$
 
-As the system is clearly consistent, and there will be a free variable,  we can conclude that the system has infinitely many solutions.
+
+
+From the echelon matrix at the end we can see that the system is *consistent*, and there will be a *free variable*.  We can conclude that the system has infinitely many solutions.
 
 ::::
 
@@ -1991,8 +2001,13 @@ $$
   E_1 = \left[\begin{array}{rrr|r}\blacksquare&\ast&\ast&\ast\\0  &\blacksquare&\ast&\ast\\0  &  0 &\blacksquare&\ast\\0  & 0 & 0 & 0\\0  & 0 & 0 & 0\\\end{array}\right], 
                    \quad
   E_2 =   \left[\begin{array}{rrrr|r}\blacksquare&\ast&\ast&\ast&\ast\\0  &\blacksquare&\ast&\ast&\ast\\0  &  0 & 0 &\blacksquare&\ast\\0  & 0 & 0 &0 & 0\\\end{array}\right], 
-                         \quad
-  E_3 =   \left[\begin{array}{rrr|r}\blacksquare&\ast&\ast&\ast\\0  &\blacksquare&\ast&\ast\\0  & 0 &\blacksquare&\ast\\0  & 0 & 0 &\blacksquare\\0  & 0  &0 & 0\\\end{array}\right]                      
+                                             
+$$
+
+and 
+
+$$
+E_3 =   \left[\begin{array}{rrr|r}\blacksquare&\ast&\ast&\ast\\0  &\blacksquare&\ast&\ast\\0  & 0 &\blacksquare&\ast\\0  & 0 & 0 &\blacksquare\\0  & 0  &0 & 0\\\end{array}\right],                     
 $$
 
 where  $\blacksquare$ denotes an arbitrary nonzero number, and  $\ast$ just any real number.
@@ -2050,9 +2065,7 @@ If $m < n$, there must be at least one column without a pivot. This implies that
 
 
 
-A geometric interpretation of the last proposition: 
-
-suppose $n = 3$. 
+For geometric interpretation of the last proposition,  suppose $n = 3$. <BR>
 The solution set of a linear equation  
 
 $$

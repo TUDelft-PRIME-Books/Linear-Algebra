@@ -67,7 +67,7 @@ $$
 Conversely, every orthogonally diagonalizable matrix is symmetric.
 
 This theorem is known as the *Spectral Theorem for Symmetric Matrices*.
-In other context the word *Spectrum* of a transformation is used for the set of eigenvalues.
+In other contexts the word *spectrum* of a transformation is used for the set of eigenvalues.
 ::::
 
 So, for a symmetric matrix  an orthonormal basis of eigenvectors always exists.  For the inertia tensor of a 3D body such a basis corresponds to the (perpendicular) principle axes.
@@ -101,7 +101,6 @@ The eigenvalues are found via
 $$
  \det{(A - \lambda I)} = \begin{vmatrix} 1-\lambda&2\\2&-2-\lambda \end{vmatrix} 
    = (1-\lambda)(-2-\lambda) -4 =   \lambda^2 +\lambda -6 =  (\lambda-2)(\lambda+3) .
-\nonumber
 $$
 
 They are  $\lambda_1 = 2$ and $\lambda_2 = -3$.
@@ -133,7 +132,13 @@ The transformation  $T(\vect{x}) =  \begin{bmatrix} 1&2\\2&-2 \end{bmatrix}\vect
 :::
 
 
-[To team building:  this one should be transformed into a mioving picture:  two perpendicular vectors rotating around the origin, shown with their images, with stress on the moment they become eigenvectors.  If unclear: contact me, A.T.H.]
+::{margin} TODO
+
+To the Visuals Team: this figure should be transformed into a moving picture:  two perpendicular vectors rotating around the origin, shown with their images, with stress on the moment they become eigenvectors.  
+
+::
+
+  
 
 
 Furthermore, if we normalize the eigenvectors, i.e., the columns of $P$, we find the following diagonalization of $A$ with an orthogonal matrix $Q$:
@@ -155,7 +160,7 @@ $$
 
 Suppose $A$ is a symmetric matrix.
   
-If $\mathbf{v}_1$  and $\mathbf{v}_2$  are eigenvectors of $A$ for different eigenvalues,  then  $\mathbf{v}_1\perp \mathbf{v}_2$.
+If $\mathbf{v}_1$  and $\mathbf{v}_2$  are eigenvectors of $A$ for *different* eigenvalues,  then  $\mathbf{v}_1\perp \mathbf{v}_2$.
 ::::
 
 
@@ -242,7 +247,7 @@ All eigenvalues of symmetric matrices are real.
 
 ::::
 
-The easiest proof is via complex numbers.  Skip it if you like.
+The easiest proof is via complex numbers.  Feel free to skip it, in particular when you don't feel comfortable with complex numbers.
 
 
 ::::{prf:proof} 
@@ -260,11 +265,10 @@ If we take  $\mathbf{v}$  equal  to $\mathbf{u}$ we get
 
 $$
   \overline{\mathbf{u}}^{T}\mathbf{u} = \overline{u_1}u_1 + \overline{u_2}u_2 + \ldots +  \overline{u_n}u_n =
-                          |u_1|^2 + |u_2|^2 + \ldots + |u_n|^2.
+                          |u_1|^2 + |u_2|^2 + \ldots + |u_n|^2,
 $$
 
-were $|u_i|$  denotes the modulus of the complex number $u_i$.  This sum of squares is
-a non-negative real number. We also see that 
+where $|u_i|$  denotes the modulus of the complex number $u_i$.  This sum of squares (of real numbers) is a non-negative real number. We also see that 
 $\overline{\mathbf{u}}^{T}\mathbf{u} = 0$  only holds if $\mathbf{u} = \mathbf{0}$.
 
 
@@ -340,7 +344,7 @@ For each  eigenvalue of a symmetric matrix the geometric multiplicity is equal t
 
 ::::
 
-We will  incorporate the proof of this proposition  in the proof of the main theorem in 
+We will  incorporate the proof of this proposition  into the proof of the main theorem in 
 {numref}`Subsection %s <SubSec:SymmetricMat:OrthogDiag>`. For now, we will look at a few examples.  
 
 
@@ -535,7 +539,7 @@ $$
 
 And now it's time for the proof of the main theorem. 
 
-::::{prf:proof}   Of {prf:ref}`Thm:SymmetricMat:OrthogDiag`
+::::{prf:proof}   (of {prf:ref}`Thm:SymmetricMat:OrthogDiag`.)
  
 
 Suppose that $A$ is a symmetric $n \times n$  matrix.  We know there are $n$ real, possibly multiple,  eigenvalues
@@ -689,7 +693,7 @@ $$
              -1/\sqrt{3} & 1/\sqrt{2} & -1/\sqrt{6} & 0 \\
              -1/\sqrt{3} & 0 & 2/\sqrt{6} & 0 \\
              0 & 0 & 0 & 1    
-        \end{bmatrix}
+        \end{bmatrix}.
 $$
 
 Next we compute  
@@ -727,7 +731,7 @@ $$
                                     \end{array}   \right].
 $$
 
-If we normalize and use them as the columns of $\tilde{Q}_2$ as in the proof, we find as second matrix in that construction
+If we normalize and use them as the columns of $\tilde{Q}_2$ as in the proof of {prf:ref}SymmetricMat:OrthogDiag`, we find as second matrix in that construction
 
 $$
 
@@ -741,22 +745,27 @@ $$
 
 And then
 
-$$
-   A_2 = Q_2^TQ_1^T A Q_1Q_2 = \left[\begin{array}{cccc} -3 & 0 & 0 & 0 \\
-       0 & -3 & 0 & 0 \\ 0 & 0 & 3 & 0\\ 0 & 0 & 0 & 3
-                                    \end{array}   \right] = D!
-$$
+::{math}
+:label: Eq:SymmetricMat:DefineA2
+
+A_2 = Q_2^TQ_1^T A Q_1Q_2 = 
+       \left[\begin{array}{cccc}
+       -3 & 0 & 0 & 0 \\
+        0 &-3 & 0 & 0 \\ 
+        0 & 0 & 3 & 0 \\ 
+        0 & 0 & 0 & 3
+     \end{array}   \right] = D!
+::
 
 For this example  the matrix has the second double eigenvalue $\lambda_{3,4} = 3$.  Because of that, the construction takes one step less than in the general case.  
-Defining  $Q = Q_1Q_2$, we see that 
+Defining  $Q = Q_1Q_2$, can conclude from {eq}`Eq:SymmetricMat:DefineA2` that 
 
 $$
   Q^{-1}AQ = D, \,\,\text{ so }\,\,
   A = QDQ^{-1} = QDQ^T  
 $$
 
-for the matrix  $Q = Q_1Q_2$, which is the matrix
-
+for the matrix  $Q = Q_1Q_2$. This is the matrix
 
 $$
   Q =  \left[\begin{array}{cccc} \dfrac{1}{\sqrt{3}} & 0 & \dfrac{1}{\sqrt{3}} & \dfrac{1}{\sqrt{3}} \\
@@ -784,8 +793,7 @@ $$
 
 Note:  given the eigenvalues, these eigenvectors could have been found more efficiently by solving the systems
 $(A - \lambda_iI)\vect{x} = \vect{0}$, and then orthogonalize by the Gram-Schmidt procedure. As is done in 
-{prf:ref}`Ex:SymmetricMat:OrthogDiag3x3`.
-
+{prf:ref}`Ex:SymmetricMat:OrthogDiag3x3`.  <BR> 
 The importance of the step-by-step reduction is that it shows that from the 'minimal' assumptions of symmetry and the existence of real eigenvalues it is possible to create an orthogonal diagonalization.
 
 :::
@@ -818,8 +826,8 @@ This is of the form
 $$
   \begin{array}{rcl}
   A &=& [\,\mathbf{q}_1\,\,\mathbf{q}_2\,]\begin{bmatrix} 2 & 0 \\ 0 & -3 \end{bmatrix}
-             [\,\mathbf{q}_1\,\,\mathbf{q}_2\,]^T =
-     [\,2\mathbf{q}_1\,\,(-3)\mathbf{q}_2]\begin{bmatrix}\mathbf{q}_1^T \\ \mathbf{q}_2^T  \end{bmatrix}.   
+             \big[\,\mathbf{q}_1\,\,\mathbf{q}_2\,\big]^T =
+     \big[\,2\mathbf{q}_1\,\,(-3)\mathbf{q}_2\big]\begin{bmatrix}\mathbf{q}_1^T \\ \mathbf{q}_2^T  \end{bmatrix}.   
      \end{array}
 $$
 
@@ -849,7 +857,7 @@ $$
    \mathbf{q}_2\mathbf{q}_2^T = \frac15 \begin{bmatrix} 1 & -2  \\ -2 & 4 \end{bmatrix}
 $$
 
-represent the orthogonal projections on the one-dimensional subspaces  $\Span{\mathbf{q}_1}$  and  $\Span{\mathbf{q}_2}$.
+represent the orthogonal projections onto the one-dimensional subspaces  $\Span{\mathbf{q}_1}$  and  $\Span{\mathbf{q}_2}$.
 
 Furthermore these one-dimensional subspaces are orthogonal to each other.
 
@@ -892,7 +900,6 @@ $$
 where  the vectors  $\mathbf{q}_i$  of course are the (orthonormal) columns of the diagonalizing matrix $Q$. This is indeed a linear combination of orthogonal projections, as was to be shown.
 ::::
 
-[to the reviewers] Also include a remark about the non-uniqueness and a way to make it unique by aggregating the projections corresponding to the same eigenvalue?
 
 ::::{exercise}
 
@@ -911,9 +918,10 @@ If in {prf:ref}`Thm:SymmetricMat:SpectralDecomp`  the projections onto eigenvect
 Every symmetric $n \times n$ matrix $A$ can be written as a linear combination of the orthogonal projections onto its (orthogonal) eigenspaces.  
 
 $$
-   A = \lambda_1 P_1 + \, \ldots \, + \lambda_k P_k.
+   A = \lambda_1 P_1 + \, \ldots \, + \lambda_k P_k,
 $$
 
+where  $P_i$ denotes the orthogonal projection onto the eigenspace $E_{\lambda_i}$.
 ::::
 
 ::::{prf:proof}
@@ -965,7 +973,7 @@ The  spectral decomposition according to {prf:ref}`Cor:SymmetricMat:SpectralThm-
 
 $$
    A = (-3) \left[\vect{q}_1\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_2\,\right]\left[\vect{q}_1\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_2\,\right]^T +
-   3 \left[\vect{q}_3\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_4\,\right]\left[\vect{q}_3\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_4\,\right]^T = \quad\quad
+   3 \left[\vect{q}_3\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_4\,\right]\left[\vect{q}_3\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_4\,\right]^T = \,\,\ldots\,\,  = 
 $$
  
 $$
