@@ -1,5 +1,5 @@
 (Sec:CrossProduct)=
-# The Cross Product
+# Cross Product
 
 In this section we will look at a specific operation on vectors in $\mathbb{R}^3$. This operation is called the *cross product* and it allows us to construct a vector that is orthogonal to two given vectors. We will use this operation in
 {numref}`Section %s <Section:LinesAndPlanes:Plane>`
@@ -7,6 +7,7 @@ to construct a vector that is orthogonal to a given plane in $\mathbb{R}^3$. Thi
 
 
 ::::{prf:definition}
+:label: Def:CrossProduct:Crossproduct
 
 Let $\mathbf{u}$ and $\mathbf{v}$ be vectors in $\mathbb{R}^3$ such that
 
@@ -251,7 +252,7 @@ $(c\mathbf{v_1})\cp\mathbf{v_2} = c(\mathbf{v_1}\cp\mathbf{v_2}) = \mathbf{v_1}\
 </li>
 <li>
 
-$(\mathbf{v_1}+\mathbf{v_2})\cp\mathbf{v_3} = \mathbf{v_1}\cp\mathbf{v_2}+\mathbf{v_1}\cp\mathbf{v_3}$.
+$(\mathbf{v_1}+\mathbf{v_2})\cp\mathbf{v_3} = \mathbf{v_1}\cp\mathbf{v_3}+\mathbf{v_2}\cp\mathbf{v_3}$.
 
 </li>
 </ol>
@@ -309,7 +310,7 @@ iii. This follows from the distributivity of the real numbers.
 ::::
 
 
-In Section {numref}`??` we will take a look at the determinant of a matrix. The entries of a cross product of two vectors can also be computed using determinants.
+In {numref}`Chapter:Determinants`  we will take a look at the determinant of a matrix.  For $2 \times 2$ matrices the definition is as follows.
 
 
 ::::{prf:definition}
@@ -324,6 +325,7 @@ is equal to the value $ad-bc$. Such an expression is called a *determinant*.
 
 ::::
 
+The entries of the cross product of two vectors can also be computed using determinants.
 
 ::::{prf:proposition}
 

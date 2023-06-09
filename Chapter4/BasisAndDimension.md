@@ -1019,10 +1019,6 @@ $$
 
 
 
-
-
-
-
 ::::::{prf:example}
 :label: Ex:PlaneWithBases
 
