@@ -96,6 +96,16 @@ In this case it is a lot easier to decide whether $\mathbf{b}$ is a linear combi
 
 ::::
 
+
+::::{grasple} https://embed.grasple.com/exercises/ac63b286-09e1-46e5-91fc-952b54436293?id=78560
+:label: grasple_exercise_2_2_1
+
+
+::::
+
+
+
+
 ## Span 
 
 In linear algebra it is often important to know whether each vector in $\mathbb{R}^n$ can be written as a linear combination of a set of given vectors. In order to investigate when it is possible to write any given vector as a linear combination of a set of given vectors we introduce the notion of a **span**.
@@ -201,6 +211,15 @@ The span of three  vectors lying in the same plane.
 There is also a possibility where the span of three non-zero vectors in $\mathbb{R}^3$ is equal to a line through the origin. Can you figure out when this happens?
 
 ::::
+
+::::{grasple} https://embed.grasple.com/exercises/676d672c-74fc-4545-99ba-6b308af566ce?id=78542
+:label: grasple_exercise_2_2_2
+
+::::
+
+
+
+
 
 We will now look at a very specific set of vectors in $\mathbb{R}^n$ of which the span is always the entire space $\mathbb{R}^n$.
 
@@ -455,18 +474,48 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 
 ## Grasple Exercises
 
+::::{grasple} https://embed.grasple.com/exercises/b760d9b9-d0ba-4875-b828-397e7a045283?id=70175
+:label: grasple_exercise_2_2_3
+
+::::
+
+% ------------------------------------------------
+
+::::{grasple} https://embed.grasple.com/exercises/493831d9-ab4a-4f78-b9ea-7b707aa9f4c2?id=70174
+:label: grasple_exercise_2_2_4
+
+::::
+
+::::{grasple} https://embed.grasple.com/exercises/b4f4dc1f-4f56-41e8-b16d-a2694e90890c?id=70181
+:label: grasple_exercise_2_2_5
+
+::::
+
+% ------------------------------------------------
+
+::::{grasple} https://embed.grasple.com/exercises/45bc5527-e79b-4198-b6b7-9b3168d9d1ff?id=70182
+:label: grasple_exercise_2_2_6
+
+::::
+
+% ------------------------------------------------
+
+
 %<iframe id="grasple_exercise_221" height="560" src="https://embed.grasple.com/exercises/2fe8b445-bb2e-412b-a2b8-593e2a0214cf?id=76698" title="Grasple Exercise 76698" width="100%"></iframe>
 %<hr style="height:5px; border-width:5px">
 %<iframe id="grasple_exercise_222" height="560" src="https://embed.grasple.com/exercises/f365becd-ee34-4fe9-854c-38fd188bb397?id=76699" title="Grasple Exercise 76699" width="100%"></iframe>
 
-::::{grasple} https://embed.grasple.com/exercises/2fe8b445-bb2e-412b-a2b8-593e2a0214cf?id=76698
-:label: grasple_exercise_221
+%::::{grasple} https://embed.grasple.com/exercises/2fe8b445-bb2e-412b-a2b8-593e2a0214cf?id=76698
+%:label: grasple_exercise_221
 
-::::
+%::::
 
-::::{grasple} https://embed.grasple.com/exercises/f365becd-ee34-4fe9-854c-38fd188bb397?id=76699
-:label: grasple_exercise_222
 
-::::
 
-See {grasple_ref}`grasple_exercise_221`, and {grasple_ref}`grasple_exercise_222`.
+
+%::::{grasple} https://embed.grasple.com/exercises/f365becd-ee34-4fe9-854c-38fd188bb397?id=76699
+%:label: grasple_exercise_222
+
+%::::
+
+%See {grasple_ref}`grasple_exercise_221`, and {grasple_ref}`grasple_exercise_222`.
