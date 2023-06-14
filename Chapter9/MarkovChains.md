@@ -2,7 +2,9 @@
 
 Suppose we have, say, three brands competing with each other in some niche of the market. Every month, a certain percentage of customers changes brands. What percentage of the market will each brand control after a given nubmer of months? What will be the market share of each brand in the long run? To answer these kind of questions, we need Markov chains.
 
-One of the salient factors of this simple model is that no customers are entering or leaving the market. That is, when a customer starts for example with brand A, he will, after one month, either use brand A, B, or C. In other words, the probabilities of him using any single brand sum to 1. This leads us to the following definition.
+## Markov chains
+
+Assume we have a certain population divided into $n$ classes, say, by the brand they use. For every person using brand $i$, there is a certain chance $p_{ji}$ that he ends up using brand $j$ after a month. If we assume for the moment that nobody leaves or enters the population, every one must end up using *some* brand. So $\sum_{j=1}^{n}p_{ji}=1$. Keeping in mind that every probability is a number between $0$ and $1$, we get to the following definition.
 
 :::{prf:definition}
 
@@ -18,9 +20,7 @@ p_{21}\\
 p_{31}
 \end{bmatrix}.$$
 
-Clearly, for brands B and C there must are similar probability vectors, say $\vect{p}_{2}$ and $\vect{p}_{3}$.
-
-In a general situation with $n$ brands, we will find $n$ vectors in $\R^{n}$. Together, this yields an $n\times n$-matrix.
+Clearly, for brands B and C there must are similar probability vectors, say $\vect{p}_{2}$ and $\vect{p}_{3}$. If we take these three probability vectors together, they form a matrix.
 
 :::{prf:definition}
 
@@ -46,4 +46,390 @@ c_{1}
 \end{bmatrix}
 $$
 
-where $P=[\vect{p}_{1},\vect{p}_{2},\vect{p}_{3}]$ is the stochastic matrix associated to our model. 
+where $P=[\vect{p}_{1},\vect{p}_{2},\vect{p}_{3}]$ is the stochastic matrix associated to our model.  We have now found the updated state after one month.
+
+Often, it is more convenient to work with percentages instead of absolute numbers. This can be easily done by deviding $a_{0}$, $b_{0}$, and $c_{0}$ by the total population $a_{0}+b_{0}+c_{0}$. In doing so, we make sure that 
+
+$$\vect{x}_{0}=\frac{1}{a_{0}+b_{0}+c_{0}}\begin{bmatrix}
+a_{0}\\
+b_{0}\\
+c_{0}
+\end{bmatrix}$$
+
+is a probability vector. It turns out that the new vector $\vect{x}_{1}$ is also a probability vector, as per the next proposition.
+
+
+:::{prf:proposition}
+:label: Prop:MarkovChains:StoMatPreservesProbVect
+
+Suppose $P$ is a stochastic matrix. If $\vect{x}$ is a probability vector, then so is $P\vect{x}$.
+
+:::
+
+:::{prf:proof}
+
+Note first that every entry of a stochastic matrix or a probability vector is non-negative. Consequently, every entry of $P\vect{x}$ is also non-negative.
+
+ Since $P$ is a stochastic matrix, $\sum_{i=1}^{n} P_{ij}=1$ for every $j$. Therefore,
+
+$$
+\begin{align*}
+    \sum_{i=1}^{n}(P\vect{x})_{i}&=\sum_{i=1}^{n}\left(\sum_{j=1}^{n}P_{ij}\vect{x}_{j}\right)\\
+    &=\sum_{j=1}^{n} \vect{x}_{j}\sum_{i=1}^{n} P_{ij}\\
+    &=\sum_{j=1}^{n}\vect{x}_{j}=1
+\end{align*}
+$$
+
+which had to be proven.
+
+:::
+
+
+:::{prf:Remark}
+
+{prf:ref}`Prop:MarkovChains:StoMatPreservesProbVect` implies that the product of two stochastic amtrices is again stochastic. In particular, any power of a stochastic matrix is again a stochastic matrix.
+
+:::
+
+Such situations are common enough to warrant dedicated terminology.
+
+:::{prf:definition}
+
+A **Markov chain** is a sequence $\vect{x}_{0},\vect{x}_{1},...$ of probability vectors such that $\vect{x}_{i}=P\vect{x}_{i-1}$ for any $i>0$. The $\vect{x}_{i}$ are called the **state vectors** of the Markov chain.
+
+:::
+
+
+:::{prf:Example}
+:label: Ex:MarkovChains:MarkovChain
+
+Suppose we have three brands, A, B, and C. Let us assume that 80\% of the customers of A and B will still use the same brand after a month and that the customers that switch away choose randomly between the alternatives. Finally, let us say that C retains 70\% of its customers, that 20\% of its customers leave for A, and that 10\% leave for B.
+
+This gives us the following stochastic matrix:
+
+$$P=\begin{bmatrix}
+0.8&0.1&0.2\\
+0.1&0.8&0.1\\
+0.1&0.1&0.7
+\end{bmatrix}.$$
+
+Ifwe, for example, assume that the three brands start out with equal market shares, we find
+
+$$
+\vect{x}_{0}=\begin{bmatrix}
+1/3\\
+1/3\\
+1/3
+\end{bmatrix}\quad\text{so}\quad \vect{x}_{1}=P\vect{x}_{0}=\begin{bmatrix}
+11/30\\
+10/30\\
+9/30
+\end{bmatrix},\quad \vect{x}_{3}=P\vect{x}_{2}=\begin{bmatrix}
+116/300\\
+100/300\\
+84/300
+\end{bmatrix},
+$$
+
+and so on. We can see that brand A consistently wins market share at the cost of brand C, while brand B keeps a constant customer base. Note, however, that C will never have no market share, as it will, every month, gain 10\% of both A and B's customer base.
+
+:::
+
+## Steady states
+
+Consider again the simple model of {prf:ref}`Ex:MarkovChains:MarkovChain`. What will happen if this model runs for a long time? We expect that C will lose market share to A, but how much? When, if ever, will the process stabilise? These are the questions we will deal with in this section.
+
+:::{prf:Definition}
+
+Let $P$ be a stochastic matrix. A probability vector $\vect{x}$ is called a **steady state** for $P$ if $P\vect{x}=\vect{x}$. That is, if it is an eigenvector with eigenvalue 1.
+
+:::
+
+If a Markov chain with stochastic matrix $P$ has arrived in a steady state of $P$, it is easy to see what will happen: nothing. The Markov chain will stay in that steady state forever. And for any stochastic matrix there really is a steady state, as we will show now.
+
+:::{prf:Proposition}
+:label: Prop:MarkovChains:StoMat1EV
+
+If $P$ is a stochastic matrix, then $1$ is an eigenvalue of $P$. Moreover, there is an eigenvector with eigenvalue $1$ that contains no negative entries.
+
+:::
+
+:::{prf:proof}
+
+ We have to show that $\Det{P-I}=0$. We show this by proving that $P-I$ has a row without a pivot; it is therefore not row equivalent to the identity matrix, so it is not invertible hence its determinant is $0$.
+
+We have 
+
+$$
+P-I=\begin{bmatrix}
+P_{11}-1&P_{12}&P_{13}&\cdots&P_{1n}\\
+P_{21}&P_{22}-1&P_{23}&\cdots&P_{2n}\\
+P_{31}&P_{32}&P_{33}-1&\cdots&P_{3n}\\
+\vdots&\vdots&\vdots&\ddots&\vdots\\
+P_{n1}&P_{n2}&P_{n3}&\cdots&P_{nn}-1
+\end{bmatrix},
+$$
+
+so if we add all other rows to the last one we find
+
+$$
+P-I\sim\begin{bmatrix}
+P_{11}-1&P_{12}&P_{13}&\cdots&P_{1n}\\
+P_{21}&P_{22}-1&P_{23}&\cdots&P_{2n}\\
+P_{31}&P_{32}&P_{33}-1&\cdots&P_{3n}\\
+\vdots&\vdots&\vdots&\ddots&\vdots\\
+\sum_{i=1}^{n}P_{i1}-1&\sum_{i=1}^{n}P_{i2}-1&\sum_{i=1}^{n}P_{i3}-1&\cdots&\sum_{i=1}^{n}P_{in}-1
+\end{bmatrix}.
+$$
+
+But, since $P$ is stochastic, $\sum_{i=1}^{n}P_{ij}=1$ for any $j$. Therefore, the last row of the given matrix is a zero row, which proves our claim.
+
+Finally, we need to show that there is an eigenvector with eigenvalue $1$ containing no negative entries. The argument for this is considerably harder.
+
+Suppose $\vect{x}$ is an eigenvector associated to $1$. If $\vect{x}$ contains no positive entries, then $-\vect{x}$ is an eigenvector associated to $1$ with no negative entries and we are done. Assume therefore that $\vect{x}$ has some positive and some negative entries. Since $\vect{x}$ is an eigenvector with eigenvalue $1$, we have $\sum_{j=1}^{n}P_{ij}\vect{x}_{j}=\vect{x}_{i}$ for any $i$. Let $\mathcal{I}$ be the set of all indices for which $\vect{x}_{i}$ is negative. Then we find
+
+$$
+\sum_{i\text{ in }\mathcal{I}}\left(\sum_{j=1}^{n}P_{ij}\vect{x}_{j}\right)=\sum_{i\text{ in }\mathcal{I}} \vect{x}_{i}.
+$$
+
+Let us now bring all the $x_{i}$ with $i$ in $\mathcal{I}$ to the right. This yields:
+
+$$
+\sum_{\substack{i \text{ in }\mathcal{I}\\j\text{ not in }\mathcal{I}}}P_{ij}\vect{x}_{j}=\sum_{i \text{ in } \mathcal{I}}\left(1-\sum_{j\text{ in }\mathcal{I}}P_{ij}\right)\vect{x}_{i}.
+$$
+
+Since $\sum_{j\text{ in }\mathcal{I}}P_{ij}\leq \sum_{j=1}^{n}P_{ij}=1$ and since $\vect{x}_{i}$ is negative for $i$ in $\mathcal{I}$, the right hand side of our equation is not positive. But on the left hand side, we sum non-negative elements, so the whole left hand side is not negative. Since it is both non-negative and non-positive, it must be $0$. As all $P_{ij}$ are non-negative, it follows on the one hand that $P_{ij}=0$ for $i$ in $\mathcal{I}$ and $j$ not in $\mathcal{I}$, and on the other hand that $P_{ij}=0$ for $i$ not in $\mathcal{I}$ and $j$ in $\mathcal{I}$.
+
+Define now the vector $\vect{y}$ by putting 
+
+$$
+\vect{y}_{i}=\begin{cases}
+-\vect{x}_{i}&\text{ if $i$ is in $\mathcal{I}$,}\\
+0&\text{otherwise.}
+\end{cases}
+$$
+
+If $i$ is in $\mathcal{I}$, then we have just seen that $P_{ij}=0$ for $j$ not in $\mathcal{I}$, so for such $i$ we have:
+
+$$
+\begin{align*}
+(P\vect{y})_{i}=\sum_{j=1}^{n}P_{ij}\vect{y}_{j}&=\sum_{j\text{ in }\mathcal{I}}P_{ij}\vect{y}_{j}+\sum_{j\text{ not in }\mathcal{I}}P_{ij}\vect{y}_{j}=-\sum_{j\text{ in }\mathcal{I}}P_{ij}\vect{x}_{j}\\
+&=-\sum_{j\text{ in }\mathcal{I}}P_{ij}\vect{x}_{j}-\sum_{j\text{ not in }\mathcal{I}}P_{ij}\vect{x}_{j}=-(P\vect{x})_{i}=-\vect{x}_{i}=\vect{y}_{i}.
+\end{align*}
+$$
+
+If $i$ is not in $\mathcal{I}$, then $P_{ij}=0$ for all $j$ in $\mathcal{I}$. We conclude
+
+$$
+\begin{align*}
+(P\vect{y})_{i}=\sum_{j=1}^{n}P_{ij}\vect{y}_{j}&=\sum_{j\text{ in }\mathcal{I}}P_{ij}\vect{y}_{j}+\sum_{j\text{ not in }\mathcal{I}}P_{ij}\vect{y}_{j}=\sum_{j\text{ not in }\mathcal{I}}P_{ij}\vect{y}_{j}\\
+&=\vect{0}=\vect{y}_{i}
+\end{align*}
+$$
+
+since all the $\vect{y}_{j}$ in the last sum are $0$.
+
+Together, these equations show that $P\vect{y}=\vect{y}$. Since all entries of $\vect{y}$ are non-negative by construction, this finishes our proof.
+
+:::
+
+
+:::{prf:Remark}
+
+As an immediate consequence of {prf:ref}`Prop:MarkovChains:StoMat1EV`, any stochastic $n\times n$-matrix $P$ has a steady state $\vect{x}$ in $\R^{n}$. Indeed, we can find an eigenvector $\vect{v}$ of $P$ with eigenvalue $1$ and then scale it by $1/\sum_{i=1}^{n}\vect{v}_{i}$. This gives us a new vector $\vect{x}$ which is still an eigenvector with eigenvalue $1$ and for which $\sum_{i=1}^{n}\vect{x}_{i}=1$. That is, it is a steady state.
+
+:::
+
+:::{prf:Example}
+
+Let us revisit the matrix
+
+$$P=\begin{bmatrix}
+0.8&0.1&0.2\\
+0.1&0.8&0.1\\
+0.1&0.1&0.7
+\end{bmatrix}$$
+
+from {prf:ref}`Prop:MarkovChains:StoMat1EV`. With standard computations, we find that the eigenspace of eigenvalue 1 is spanned by 
+
+$$\vect{v}=\begin{bmatrix}
+5\\
+4\\
+3
+\end{bmatrix}. \quad\text{Hence, the probability vector}\quad \vect{x}=\frac{1}{3+4+5}\begin{bmatrix}
+5\\
+4\\
+3
+\end{bmatrix}$$
+
+is a steady state for $P$.
+
+:::
+
+There may, in general, be many steady states for a Markov chain. In the most extreme case, where the probability matrix is $I_{n}$, *every* state is a steady state. Why is this? Suppose we have three brands ($1,2,$ and $3$) and $P_{ij}$ is the probability matrix that a customer switches from brand $i$ to brand $j$ after $1$ month. Then $P=I_{3}$ means that no customer ever switches so the starting market shares, whatever they are, will be the same as the final market shares. 
+
+However, if it is at all possible, for every two brands $i$ and $j$, that a customer of $i$ ends up using $j$ after some time, then something remarkable happens: there is only one steady state and, no matter what the starting market shares are, they will converge towards this single steady state. That is the content of {prf:ref}`Thm:MarkovChains:PerronFrobenius`. But first some terminology.
+
+:::{prf:definition}
+
+A stochastic matrix is called **regular** if there is some natural number $k$ such that $P^{k}_{ij}>0$ for all $i$ and $j$, i.e. iff all entries of the $k$-th power of $P$ are positive.
+
+:::
+
+:::{prf:definition}
+
+Let $\vect{x}$ be a vector and let $\vect{x}_{0},\vect{x}_{1},\vect{x}_{2},...$ be a sequence of vectors. We say that the sequence $(\vect{x}_{n})_{n\text{ in }\mathbb{N}}$ **converges** to $\vect{x}$ if the sequence of real numbers $(\norm{\vect{x_{n}}-\vect{x}})_{n\text{ in }\mathbb{N}}$ converges to $0$. 
+
+:::
+
+Intuitively, $(\vect{x}_{n})_{n\text{ in }\mathbb{N}}$ converges to $\vect{x}$ if the distance between $\vect{x}$ and $\vect{x}_{n}$ becomes arbitrarily small for large enough $n$. In other words, if $\vect{x}_{n}$ comes arbitrarily close to $\vect{x}$.
+
+
+:::{prf:Theorem} Perron-Frobenius
+:label: Thm:MarkovChains:PerronFrobenius
+
+If $P$ is a regular stochastic matrix, then it has a unique steady state $\vect{x}$. Furthermore, for any probability vector $\vect{x}_{0}$, the sequence defined by $\vect{x}_{n}=P\vect{x}_{n-1}$ for $i>0$ converges to $\vect{x}$.
+
+:::
+
+:::{prf:proof}
+
+The proof is quite complicated and falls outside the scope of this text.
+
+:::
+
+Note that regularity is a sufficient but not a necessary condition for a stochastic matrix to have a single steady state. This can be seen in {prf:ref}`Ex:MarkovChains:MarkovChainonNodes`.
+
+
+:::{prf:example}
+:label: Ex:MarkovChains:MarkovChainonNodes
+
+Let us consider the following toy problem. Suppose four nodes are connected in a circle. One move can get us from a given node to  neighbouring node. If we make $k$ random moves, where will we end up with what probability? We can model this problem with a stochastic matrix $P$, for which the $i,j$-th entry is the probability of getting from the $i$-th to the $j$-th node in one move. This gives us 
+
+$$
+P=\begin{bmatrix}
+    0&\frac{1}{2}&0&\frac{1}{2}\\
+    \frac{1}{2}&0&\frac{1}{2}&0\\
+    0&\frac{1}{2}&0&\frac{1}{2}\\
+    \frac{1}{2}&0&\frac{1}{2}&0
+\end{bmatrix},\quad\text{hence}\quad P^{2}=\begin{bmatrix}
+    \frac{1}{2}&0&\frac{1}{2}&0\\
+    0&\frac{1}{2}&0&\frac{1}{2}\\
+    \frac{1}{2}&0&\frac{1}{2}&0\\
+    0&\frac{1}{2}&0&\frac{1}{2}
+\end{bmatrix},
+$$
+
+$P^{3}=P$, $P^{4}=P^{2}$ etc. Since every power of $P$ contains some $0$ entry, $P$ is not regular. Nevertheless, there is only a single steady state, namely 
+
+$$
+\vect{x}=\begin{bmatrix}\frac{1}{4}\\\frac{1}{4}\\\frac{1}{4}\\\frac{1}{4}\end{bmatrix}.
+$$
+
+Suppose, for instance, that we start at node $1$. This means that our starting state will be
+
+$$
+\vect{x}_{0}=\begin{bmatrix}
+1\\0\\0\\0
+\end{bmatrix},\quad\text{so}\quad \vect{x}_{1}=\begin{bmatrix}
+0\\
+\frac{1}{2}\\
+0\\
+\frac{1}{2}
+\end{bmatrix},\quad\vect{x}_{3}=\begin{bmatrix}
+\frac{1}{2}\\
+0\\
+\frac{1}{2}\\
+0
+\end{bmatrix},
+$$
+
+and $\vect{x}_{n}=\vect{x}_{n-2}$ for $n$ greater than $3$. This gives us complete information about with what probility we will be where after how many moves.
+
+What makes this Markov chain behave so weirdly is the fact that any two nodes are either only connected by paths of even length or only by paths of odd length. Let us now apply an apparently innocuous change: if we are at node $1$, we now have a $1/3$ chance of staying in $1$. The chances of going from $1$ to either $2$ or $4$ are also $1/3$. The new stochastic matrix becomes
+
+$$
+P=\begin{bmatrix}
+    \frac{1}{3}&\frac{1}{2}&0&\frac{1}{2}\\
+    \frac{1}{3}&0&\frac{1}{2}&0\\
+    0&\frac{1}{2}&0&\frac{1}{2}\\
+    \frac{1}{3}&0&\frac{1}{2}&0
+\end{bmatrix}.
+$$
+
+Using a computer, we find the following powers of $P$:
+
+$$
+P^{2}=\frac{1}{36}\begin{bmatrix}
+16&6&18&6\\
+4&15&0&15\\
+12&0&18&0\\
+4&15&0&15
+\end{bmatrix}\quad\text{and}\quad 
+P^{3}=\frac{1}{108}\begin{bmatrix}
+28&51&18&51\\
+34&6&45&6\\
+12&45&0&45\\
+34&6&45&6
+\end{bmatrix}$$
+
+which still contain $0$ entries, but also
+
+$$
+P^{4}=\frac{1}{648}\begin{bmatrix}
+260&138&306&138\\
+92&237&36&237\\
+204&36&270&36\\
+92&237&36&237
+\end{bmatrix}
+$$
+
+and this matrix, finally, contains only strictly positive elements. So $P$ really is regular.
+
+As you can see, computing the powers of a stochastic matrix by hand quickly becomes difficult. However, because we are dealing with a regular stochastic matrix, we can still predict what will happen after a long time. We just need to find the steady state, i.e. we need to solve $P\vect{x}=\vect{x}$. This is a standard computation, which yields, as it should, a single solution:
+
+$$
+\vect{x}=\begin{bmatrix}
+\frac{1}{3}\\
+\frac{2}{9}\\
+\frac{2}{9}\\
+\frac{2}{9}
+\end{bmatrix}.
+$$
+
+From it, we can read off that, should we let this process continue for a long time, we will have a $1$ in $3$ chance of landing in node $1$ and a $2$ in $9$ chance for each other node. 
+
+For example, if we start in node $3$, we find the following process:
+
+$$
+\vect{x}_{0}=\begin{bmatrix}
+0\\
+0\\
+1\\
+0
+\end{bmatrix},\vect{x}_{1}=\begin{bmatrix}
+0\\
+\frac{1}{2}\\
+0\\
+\frac{1}{2}
+\end{bmatrix},\vect{x}_{2}=\begin{bmatrix}
+\frac{1}{2}\\
+0\\
+\frac{1}{2}\\
+0
+\end{bmatrix},\vect{x}_{3}=\begin{bmatrix}
+\frac{1}{6}\\
+\frac{5}{12}\\
+0\\
+\frac{5}{12}
+\end{bmatrix},...,\vect{x}_{50}\approx\begin{bmatrix}
+0.3335\\
+0.2221\\
+0.2224\\
+0.2221
+\end{bmatrix},...
+$$
+
+so the distributino after $50$ moves is already quite close to the steady state. Remark that nodes $2$ and $4$ have the exact same probability in every state.
+
+:::
