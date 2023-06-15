@@ -14,8 +14,8 @@ chapters:
     sections:
       - file: 'Chapter2/LinearSystems.md'
       - file: 'Chapter2/LinearCombinations.md'
-      - file: 'Chapter2/MatrixVectorProduct.md'
       - file: 'Chapter2/SolutionSets.md'
+      - file: 'Chapter2/MatrixVectorProduct.md'
       - file: 'Chapter2/LinearIndependence.md'
   - file: 'Chapter3/intro.md'
     sections:
