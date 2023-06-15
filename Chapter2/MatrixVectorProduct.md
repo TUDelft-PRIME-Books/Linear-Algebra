@@ -446,3 +446,164 @@ $$
 where  $r_i = p_i - q_i,\,i=1,\ldots,\,m$ \, is inconsistent.
 
 ::::
+
+We now revisit the question we left open at the end of {numref}`Sec:LinearCombinations`: when is the span of a set of vectors in $\R^{n}$ all of $\R^{n}$?
+
+::::{prf:proposition} 
+:label: Prop:LinearCombinations:SpanSolution
+
+Let $\mathbf{v}_1, \ldots, \mathbf{v}_k$ be vectors in $\mathbb{R}^n$. Define the matrix $A$ such that 
+
+$$
+A=
+\begin{bmatrix} \mathbf{v}_1 & \mathbf{v}_2 & \ldots & \mathbf{v}_k \end{bmatrix}.
+$$
+
+The collection $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$ is equal to $\mathbb{R}^n$ if and only if the equation $A \mathbf{x}=\mathbf{b}$ has a solution for each $\mathbf{b}$ in $\mathbb{R}^n$.
+
+::::
+
+::::{prf:proof} 
+
+If $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$ is equal to $\mathbb{R}^n$, then each vector $\mathbf{b}$ is a vector in the span of the vectors $\mathbf{v}_1, \ldots, \mathbf{v}_k$. This means that we can write $\mathbf{b}$ as a linear combination 
+
+
+$$
+\mathbf{b}=x_1\mathbf{v}_1+ \ldots + x_k\mathbf{v}_k.
+$$
+
+Define the vector $\mathbf{x}$ such that 
+
+
+$$
+\mathbf{x}=
+\begin{bmatrix} x_1 \\ \vdots \\ x_k \end{bmatrix}.
+$$
+
+By definition of the matrix-vector product we now have
+\begin{align*}
+A\mathbf{x} &= x_1\mathbf{v}_1+ \ldots + x_k\mathbf{v}_k \\
+ &= \mathbf{b}
+\end{align*}
+The proof of the other implication is similar.
+
+::::
+
+
+::::{prf:proposition} 
+:label: Prop:LinearCombinations:PivotInEachRow
+
+
+The equation $A \mathbf{x}=\mathbf{b}$ has a solution for each $\mathbf{b}$ in $\mathbb{R}^n$ if and only if $A$ has a pivot position in each row.
+
+::::
+
+::::{prf:proof} 
+
+Suppose that $A$ does not contain a pivot position in each row. By definition of the reduced echelon form we know that the last row of $A$ does not have a pivot position. If $E$ is the reduced echelon form of $A$, then this means that the bottom row of $E$ contains only zeros. Let $\mathbf{e}_n$ be again the vector of which the last entry is equal to 1 and all other entries are equal to zero.
+
+Since $E$ is the reduced form of $A$ we can find a sequence of elementary row operations $R_1, \ldots , R_m$ that transform in $A$ into $E$. Now take the augmented matrix $[E \, | \, \mathbf{e}_n]$ and perform the row operations $R_m^{-1}, \ldots , R_1^{-1}$, where $R_i^{-1}$ is the inverse row operation of $R_i$. We obtain a matrix $[A \, | \, \mathbf{b}]$, where $\mathbf{b}$ is a vector in $R^n$. Because $[E \, | \, \mathbf{e}_n]$ is the reduced echelon form of the augmented matrix $[A \, | \, \mathbf{b}]$ and $[E \, | \, \mathbf{e}_n]$ has a pivot in the last column, we know that $[A \, | \, \mathbf{b}]$ is inconsistent. This means that $A\mathbf{x}=\mathbf{b}$ does not have a solution.
+
+On the other hand, if we assume that $A\mathbf{x}=\mathbf{b}$ does not have a solution for some $\mathbf{b}$ in $\mathbb{R}^n$, then the reduced echelon form $[E \, | \, \mathbf{c}]$ of the augmented matrix $[A \, | \, \mathbf{b}]$ has a pivot in the last column. Let us assume that this pivot is located in row $m$. The matrix $E$ cannot have a pivot in row $m$, but $E$ is also the reduced echelon form of $A$. This means that $A$ has no pivot position in row $m$.
+
+::::
+
+
+::::{prf:proposition} 
+:label: Prop:LinearCombinations:PivotSpanSolution
+
+
+Let $\mathbf{v}_1, \ldots, \mathbf{v}_k$ be vectors in $\mathbb{R}^n$. Define the matrix $A$ such that 
+
+$$
+A=
+\begin{bmatrix} \mathbf{v}_1 & \mathbf{v}_2 & \ldots & \mathbf{v}_k \end{bmatrix}.
+$$
+
+
+The following statements are equivalent: 
+
+<ol type ="i">
+<li>
+
+The cset $\Span{\vect{v}_1, \ldots, \vect{v}_k}$ is equal to $\R^n$. 
+
+
+</li>
+<li>
+
+The equation $A \vect{x}=\vect{b}$ has a solution for each $\vect{b}$ in $\R^n$.
+
+
+</li>
+<li>
+
+The matrix $A$ has a pivot position in each row.
+
+
+</li>
+</ol>
+
+::::
+
+
+::::{prf:proof} 
+
+This follows from {prf:ref}`Prop:LinearCombinations:SpanSolution` and {prf:ref}`Prop:LinearCombinations:PivotInEachRow`.
+
+::::
+
+
+::::{prf:example} 
+
+
+
+Is the span of the following three vectors equal to $\mathbb{R}^3$? 
+
+
+$$
+
+\mathbf{v}_1=
+\begin{bmatrix} 1 \\ 1 \\ -1 \end{bmatrix} \quad \mathbf{v}_2=
+\begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix} \quad \mathbf{v}_3=
+\begin{bmatrix} 3 \\5 \\-1 \end{bmatrix}
+
+$$
+
+We can use {prf:ref}`Prop:LinearCombinations:PivotSpanSolution` to solve this problem. We will first use these vectors as the columns of a matrix $A$. 
+
+
+$$
+
+A=
+\begin{bmatrix} 1 & 0 & 3 \\ 1 & 1 & 5 \\ -1 & 1 & -1 \end{bmatrix}
+
+$$
+
+The three given vectors span the entire space $\mathbb{R}^3$ if and only if the matrix $A$ has three pivot positions. Using elementary row operations we find that A has the following reduced echelon form. 
+
+
+$$
+
+A=
+\begin{bmatrix} 1 & 0 & 3 \\ 1 & 1 & 5 \\ -1 & 1 & -1 \end{bmatrix}\sim 
+\begin{bmatrix} 1 & 0 & 3 \\ 0 & 1 & 2 \\ 0 & 0 & 0 \end{bmatrix}
+
+$$
+
+Since there are only two pivots in the reduced echelon form, we know that $\mathbf{v}_1$, $\mathbf{v}_2$ and $\mathbf{v}_3$ do not span the space $\mathbb{R}^3$.
+
+::::
+
+
+::::{prf:proposition} 
+
+If $\mathbf{v}_1, \dots ,\mathbf{v}_k$ are vectors in $\mathbb{R}^n$ and $k<n$, then the span of $\mathbf{v}_1, \dots ,\mathbf{v}_k$ is not equal to $\mathbb{R}^n$.
+
+::::
+
+::::{prf:proof} 
+
+Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix $A$. By definition, the matrix $A$ is an $n\times k$ matrix. Let $E$ be the reduced echelon form of $A$. Since $E$ has $k$ columns we know that $E$ can have at most $k$ pivots. Because $k<n$ this means that the number of pivots is less than $n$. Therefore, we find that the number of pivots is less than the number of rows in $E$. This implies that it is impossible for $E$ to have a pivot in each row. {prf:ref}`Prop:LinearCombinations:PivotSpanSolution` now tells us that the span of the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ cannot be equal to $\mathbb{R}^n$.
+
+::::
