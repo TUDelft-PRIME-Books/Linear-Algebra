@@ -1,0 +1,13 @@
+\documentclass[tikz,border=2mm]{standalone}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz-cd}
+
+\begin{document}
+
+\begin{tikzcd}[column sep=large, row sep=large, baseline=(current bounding box.center)]
+\mathbb{R}^n \arrow{r}[above]{A} \arrow{d}[left]{V^T} & \mathbb{R}^m \\
+\mathbb{R}^n \arrow{r}[below]{S} & \mathbb{R}^m \arrow{u}[right]{U}
+\end{tikzcd}
+
+\end{document}

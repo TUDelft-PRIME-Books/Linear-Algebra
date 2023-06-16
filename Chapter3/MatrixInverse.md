@@ -1,5 +1,5 @@
 (Sec:MatrixInv)=
-# The inverse of a matrix
+# The Inverse of a Matrix
 
 ## Introduction
 
@@ -861,10 +861,9 @@ $$
   \begin{bmatrix} 1 & 0 & 0  \\ 0 & 1 & 0 \\ 0 & 0 & 1\end{bmatrix},
 $$
 
-as well as  $B^TA^T = I$,  which proves that $B^T = (A^{-1})^T$.
+as well as  $B^TA^T = I$,  which proves that $B^T = (A^T)^{-1}$.  
 
-
-As we already saw that $B^T = (A^T)^{-1}$, the matter is settled:
+As we already saw that $B^T = (A^{-1})^{T}$, the matter is settled:
 
 $$
   (A^{-1})^T =  (A^T)^{-1}.
@@ -891,9 +890,9 @@ $$
 
 
 ::::::{prf:proof}
-Again we just check that the  properties of the definition hold:
+Again we just check that the  properties of the definition hold.
 
-suppose that $A$ and $B$ are invertible with inverses $A^{-1}$ and $B^{-1}$.
+Suppose that $A$ and $B$ are invertible with inverses $A^{-1}$ and $B^{-1}$.
 
 Then using the associative property we find
 
@@ -1390,7 +1389,7 @@ So, each of the following properties is a characterization of invertibility of a
 <ul>
 <li>
 
-$A$\, is invertible;
+$A$ is invertible;
 		
 </li>
 <li>

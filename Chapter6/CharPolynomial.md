@@ -91,7 +91,7 @@ $U = \begin{bmatrix} u_{11} & u_{12} & u_{13}  \\
 0    & u_{22} & u_{23}  \\
 0   &   0    & u_{33}
 \end{bmatrix}$, 
-i.e., an arbitrary $3 \times 3$ upper triangular matrix.
+ an arbitrary $3 \times 3$ upper triangular matrix.
 
 Since $U - \lambda I$ is also an upper triangular matrix, we find that
 
@@ -102,7 +102,7 @@ $$
 The last expression becomes 0  exactly for the values
 
 $$
- \lambda_1 = u_{11}, \lambda_2 = u_{22},\qquad    \lambda_3 = u_{33}.
+ \lambda_1 = u_{11}, \,\,\lambda_2 = u_{22},    \,\,\lambda_3 = u_{33}.
 $$
 
 So for a $3 \times 3$ upper triangular matrix the eigenvalues are the diagonal entries.
@@ -190,16 +190,21 @@ Let us put the important properties  of the characteristic polynomial that we ha
 ::::::{prf:theorem}
 :label: Thm:CharPoly:BasicProperties
 
-The characteristic polynomial of the $n \times n$ matrix $A$ is
+The characteristic polynomial of the $n \times n$ matrix $A$ 
 <ul>
 <li>
 
- a polynomial of degree $n$, and
+ is a polynomial of degree $n$, 
 
 </li>
+</ul>
+
+and
+
+<ul>
 <li>
 
-the *zeros* of this polynomial are  the *eigenvalues* of the matrix $A$.
+its *zeros*  are  the *eigenvalues* of the matrix $A$.
 
 </li>
 </ul>
@@ -223,10 +228,12 @@ $$
 Since $A$ is invertible, $A$ can be row reduced to the echelon matrix $E = I$, the identity matrix, and
 
 $$
-\det{(E-\lambda I)} = (\lambda - 1)^2 \neq \det{(A - \lambda I)}.
+\det{(E-\lambda I)} = (\lambda - 1)^2,
 $$
 
-If we want to find  the characteristic polynomial via row reduction of  det$(A - \lambda I)$  we have to include $\lambda$ right from the beginning.
+which has nothing to do with  $\det{(A - \lambda I)}$. 
+
+So, if you want to find  the characteristic polynomial via row reduction of  det$(A - \lambda I)$  you  *have to include $\lambda$ right from the beginning*.
 
 Let's look at one other example before we give the characteristic polynomial a closer look.
 
@@ -293,7 +300,7 @@ Another natural question is how many **independent** eigenvectors  there are for
 The **algebraic multiplicity** of an eigenvalue $\lambda_k$ is the number of factors  $(\lambda - \lambda_k)$ appearing in the characteristic polynomial.
 
 The **geometric multiplicity** of an eigenvalue $\lambda_k$ is the dimension of the eigenspace corresponding to $\lambda_k$.
-In other words, it is the number of independent eigenvectors for $\lambda.$
+In other words, it is the number of independent eigenvectors for $\lambda_k$.
 
 ::::::
 
@@ -342,7 +349,7 @@ At this moment it is not so easy to prove the following proposition, of which th
 ::::::{prf:proposition}
 :label: Prop:EigenValues:SmallerGeomMultiplicity
 
-For every eigenvalue of a matrix $A$, the geometric multiplicity is at most equal to the algebraic multiplicity:
+For every eigenvalue of a matrix $A$, the geometric multiplicity is at most equal to the algebraic multiplicity.  So we always have
 
 $1 \quad \leq \quad$  geometric multiplicity of  $\lambda \quad \leq\quad $  algebraic multiplicity of $\lambda$.
 
@@ -470,7 +477,7 @@ a_{31}  & a_{32}  \end{array}\right|.
 $$
 
 The highest power of $\lambda$ coming from the second and the third terms is $\lambda^1$,  so the coefficients of $\lambda^3$  and of $\lambda^2$
-are completely determined by the first term, and a better look at that term yields that these two coefficients in fact come from the product $(a_{11}-\lambda)(a_{22}-\lambda)(a_{33}-\lambda)$.  For a general  $n\times n$ matrix $A$ the first two coefficients also come from the 'diagonal product' of  $\det{A - \lambda I}$.
+are completely determined by the first term. A closer look at that term yields that these two coefficients in fact come from the product $(a_{11}-\lambda)(a_{22}-\lambda)(a_{33}-\lambda)$.  For a general  $n\times n$ matrix $A$ the first two coefficients also come from the 'diagonal product' of  $\det{A - \lambda I}$.
 
 Expanding this product further we see that
 

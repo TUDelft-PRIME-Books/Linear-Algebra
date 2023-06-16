@@ -1,6 +1,6 @@
 
 (Sec:Gram-Schmidt)=
-# Gram-Schmidt process
+# The Gram-Schmidt Process
 
 
 ## Introduction
@@ -42,7 +42,7 @@ $$
 If we prefer vectors without fractions, we can rescale the second vector, and then find the orthogonal basis
 
 $$
-  \left(\begin{bmatrix} 1 \\ 1   \\1    \end{bmatrix},  \begin{bmatrix} 4 \\ -5   \\ -1    \end{bmatrix}  \right).
+  \left(\begin{bmatrix} 2 \\ 1   \\3    \end{bmatrix},  \begin{bmatrix} 4 \\ -5   \\ -1    \end{bmatrix}  \right).
 $$
 
 
@@ -171,7 +171,7 @@ $$
  \vect{b}_{j+1} = \vect{a}_{j+1} - \text{proj}_{W_j}(\vect{a}_{j+1}).
 $$
 
-Namely, the projection  $\text{proj}_{W_j}(\vect{a}_{j+1})$  can be computed using the already created **orthogonal** basis
+Namely, the projection  $\text{proj}_{W_j}(\vect{a}_{j+1})$  can be computed using the already created *orthogonal* basis
 $(\vect{b}_1, \ldots, \vect{b}_j)$ of $W_j$.  See  {numref}`Figure %s <Fig:GramSchmidt:GS-step123>`
 
 
@@ -317,7 +317,7 @@ $$
 
 ::::
 
-
+(Sec:Gram-Schmidt:QRdecomp)=
 ## The QR decomposition
 
 The Gram-Schmidt process leads to the following interesting decomposition of an $n \times m$ matrix $A$ with linearly independent columns.

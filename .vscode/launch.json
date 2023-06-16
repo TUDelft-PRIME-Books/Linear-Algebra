@@ -11,10 +11,11 @@
             "program": "build.py",
             "args" : [
                 "build",
+                "--all",
                 ".",
             ],
             "console": "integratedTerminal",
-            "justMyCode": true
+            "justMyCode": false
         }
     ]
 }

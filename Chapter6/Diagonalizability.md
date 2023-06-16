@@ -24,7 +24,7 @@ It is true we already used the symbol $\sim$  earlier to denote row equivalence 
 
 ::::::{prf:remark}
 
-In the definition it seems as if $A$ and $B$ play a different role, but that is not the case:
+In the definition it seems as if $A$ and $B$ play a different role, but that is not the case.  This can be seen as follows:
 
 $$
 A \sim B  \quad \iff \quad B = PAP^{-1}
@@ -37,7 +37,7 @@ $$
 B = PAP^{-1} \quad \iff \quad A =  QBQ^{-1}, \quad \text{where  } Q = P^{-1},
 $$
 
-so  similarity works both ways:
+so  similarity works both ways, that is, 
 
 $$
 A \sim B  \quad \iff \quad   B \sim A.
@@ -105,10 +105,10 @@ Suppose  $A = PBP^{-1}$.
 Then we have
 
 $$
-\det{(A - \lambda I)} = \det{(PBP^{-1} - \lambda I)} = \det{(B - \lambda I)}
+\det{(A - \lambda I)} = \det{(PBP^{-1} - \lambda I)} = \det{(B - \lambda I)}.
 $$
 
-As follows:
+The second equality is shown in the following chain of identities.
 
 $$
 \begin{array}{rcl}
@@ -126,7 +126,11 @@ $$
 I = PIP^{-1}.
 $$
 
-In the other steps we used the rule   $\det{(AB)} = \det{A}\det{B}$   and its consequence that for invertible matrices $P$ it holds that  $\det{(P^{-1})} = \dfrac{1}{\det{P}}$.
+In the other steps we used the rule   $\det{(AB)} = \det{A}\det{B}$   and its consequence that for invertible matrices $P$ we have
+
+$$
+   \det{(P^{-1})} = \dfrac{1}{\det{P}}.
+$$
 
 
 ::::::
@@ -134,10 +138,14 @@ In the other steps we used the rule   $\det{(AB)} = \det{A}\det{B}$   and its co
 
 
 
-From {prf:ref}`Prop:Diagonalizable:SimilarCharpoly` it follows that similar matrices have the same eigenvalues with the same algebraic multiplicities.  From {prf:ref}`Prop:Diagonalizable:SimilarEigenvalues` it follows that they also have the same geometric multiplicities:
+From {prf:ref}`Prop:Diagonalizable:SimilarCharpoly` it follows that similar matrices have the same eigenvalues with the same algebraic multiplicities.  
 
+From {prf:ref}`Prop:Diagonalizable:SimilarEigenvalues` it follows that they also have the same geometric multiplicities. That is, 
+<BR>
 if $\vect{v}_1, \ldots, \vect{v}_m$  are linearly independent eigenvectors of $B$ for the eigenvalue $\lambda_k$,  and $A = PBP^{-1}$,
-then $P\vect{v}_1, \ldots, P\vect{v}_m$  are linearly independent eigenvectors of $A$, and vice versa.
+then $P\vect{v}_1, \ldots, P\vect{v}_m$  are linearly independent eigenvectors of $A$.
+<BR>
+And vice versa.
 
 
 
@@ -194,6 +202,14 @@ $A$  and $B$ have the same rank.
 
 ::::::
 
+::::::{margin}
+
+:::{admonition} {prf:ref}`Exc:BasisDim:ProveRankAPEqualToRankPA`. 
+
+If  $A$ and $P$  are $n\times n$ matrices with $P$ invertible
+then $\text{rank}(AP) = \text{rank}(A) =\text{rank}(PA)$.
+
+::::::
 
 ::::::{prf:proof}
 
@@ -202,14 +218,22 @@ Suppose  $A = PBP^{-1}$.
 <ol type = "i">
 <li>
 
-As in the proof of the equality of the characteristic polynomials ({prf:ref}`Prop:Diagonalizable:SimilarCharpoly`) we have:
+As in the proof of the equality of the characteristic polynomials ({prf:ref}`Prop:Diagonalizable:SimilarCharpoly`) we have: 
+
+<BR>
+
 if  $A = PBP^{-1}$,
 then
+
+<BR>
 
 $$
 \det{A} = \det{(PBP^{-1})}  = \det{P}\det{B}\det{(P^{-1})},
 $$
+
 which can be rewritten as follows
+
+<BR>
 
 $$
 \det{P}\det{B}\det{(P^{-1})} = \det{P}\det{B}(\det{P})^{-1} = \det{B}.
@@ -225,23 +249,19 @@ matrix $A$ is invertible $\quad \iff \quad \det{(A)} \neq 0$.
 </li>
 <li>
 
-We can use the identities of {prf:ref}`Exc:BasisDim:ProveRankAPEqualToRankPA` from the section  'Basis and Dimension' that state:
+We can use the identities of {prf:ref}`Exc:BasisDim:ProveRankAPEqualToRankPA` from the section  'Basis and Dimension' (see margin).  Since $P$ and $P^{-1}$ are both invertible we find:  if  $A = PBP^{-1}$,  
 
-<div style="padding: 10px; border: 2px solid;">
+<BR>
 
-if  $A$ and $P$  are $n\times n$ matrices with $P$ invertible
-then $\text{rank}(AP) = \text{rank}(A) =\text{rank}(PA)$.
-
-</div>
-
-Since $P$ and $P^{-1}$ are both invertible we find:
-
-if  $A = PBP^{-1}$,  then $\text{rank}(A) = \text{rank}(PBP^{-1})  = \text{rank}(PB) = \text{rank}(B)$.
+then $\text{rank}(A) = \text{rank}(PBP^{-1})  = \text{rank}(PB) = \text{rank}(B)$.
 
 </li>
 </ol>
 
 ::::::
+
+
+
 
 
 ## Diagonalizability
@@ -398,7 +418,7 @@ D = [T]_{\mathcal{B}} = P^{-1}[T]_{\mathcal{E}}P = P^{-1}AP,
 where $P = P_{\mathcal{E} \leftarrow \mathcal{B}} =  [ \vect{v}_1    \vect{v}_2    \ldots    \vect{v}_n]$
 is the change-of-coordinates matrix from $\mathcal{B}$ to the standard basis.
 
-Lastly, the identity $D=P^{-1}AP$ in Equation {eq}`Eq:Diagonalizable:PinvAP` is equivalent to     $A = PDP^{-1}.$
+Lastly, the identity $D=P^{-1}AP$ in Equation {eq}`Eq:Diagonalizable:PinvAP` is equivalent to  $A = PDP^{-1}$.
 
 ::::::
 
@@ -419,12 +439,11 @@ P = \left[\begin{array}{cc}\vect{v}_1 & \vect{v}_2\end{array} \right]
 \right]
 $$
 
-Let's check that this is okay:
+We will check that this is okay.   To start with, 
 
 $$
 P^{-1} = \dfrac14\left[\begin{array}{cc} 1 &  2 \\ -1 & 2 \end{array}
-\right]
-,
+\right],
 $$
 
 so
@@ -540,7 +559,7 @@ These  examples show the two causes why a matrix may not be diagonalizable, as i
 ::::::{prf:theorem}
 :label: Thm:Diagonalizable:ThirdCharacterization
 
-An $n \times n$ matrix $A$ is (real) diagonalizable if and only if it satisfies the following two conditions
+The  $n \times n$ matrix $A$ is (real) diagonalizable if and only if it satisfies the following two conditions.
 <ol type = "i">
 
 <li>
@@ -573,7 +592,7 @@ Namely, since eigenvectors for different eigenvalues are automatically linearly 
 
 We saw that there is a weak connection between eigenvalues and (non-)invertibility:
 
-a matrix is singular if and only if it has the eigenvalue $0$.
+{prf:ref}`Prop:EigenValues:Singularity` states: a matrix is singular if and only if it has the eigenvalue $0$.
 
 
 The following exercise shows that there is no relation between diagonalizability and invertibility.
@@ -807,29 +826,29 @@ D^k = \left[\begin{array}{cc} 1^k&0\\0&0.7^k\end{array}
 $$
 
 
-By computing $P^{-1}$ and the product of the three matrices $P$, $D$ and $P^{-1}$ we find that
+By computing $P^{-1}$ and the product of the three matrices $P$, $D$ and $P^{-1}$ we find that if   $ k \to \infty$,
 
 $$
 M^k  = PD^kP^{-1} \longrightarrow       P\left[\begin{array}{cc} 1&0\\0&0\end{array}
 \right]
 P^{-1}
-= \frac13 \left[\begin{array}{cc} 2&1 \\ 2&1\end{array}
-\right]
-, \quad \text{if  } k \to \infty,
+= \frac13 \left[\begin{array}{cc} 2&2 \\ 1&1\end{array}
+\right].
+ 
 $$
 
-and we see that
+We may conclude that, for  $ k \to \infty$,
 
 $$
-\vect{x}_k = M^k\vect{x}_0 \longrightarrow \frac13 \left[\begin{array}{cc} 2&1 \\ 2&1\end{array}
+\vect{x}_k = M^k\vect{x}_0 \longrightarrow \frac13 \left[\begin{array}{cc} 2&2 \\ 1&1\end{array}
 \right]
 \left[\begin{array}{c} x_{0} \\y_{0}\end{array}
 \right]
  =
-\frac13\left[\begin{array}{c} 2x_{0}+y_{0} \\ 2x_{0}+y_{0}\end{array}
+\frac13\left[\begin{array}{c} 2x_{0}+2y_{0} \\ x_{0}+y_{0}\end{array}
 \right]
  =
-\tfrac13(x_{0}+y_{0}) \left[\begin{array}{c} 2 \\ 3\end{array}
+\frac13(x_{0}+y_{0}) \left[\begin{array}{c} 2 \\ 1\end{array}
 \right]
 .
 $$
@@ -839,7 +858,7 @@ steady state distribution where city $A$ has twice as many inhabitants as city $
 the total number of inhabitants of the two cities is still the same as at the beginning:
 
 $$
-x_{\infty} + y_{\infty} = \tfrac23(x_{0}+y_{0}) + \tfrac13(x_{0}+y_{0}) = x_{0}+y_{0}.
+x_{\infty} + y_{\infty} = \tfrac13(2x_{0}+2y_{0}) + \tfrac13(x_{0}+y_{0}) = x_{0}+y_{0}.
 $$
 
 ::::::

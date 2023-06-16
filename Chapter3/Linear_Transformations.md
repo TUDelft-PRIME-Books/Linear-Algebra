@@ -145,7 +145,7 @@ According to the definition of the matrix-vector product we can also write
 We recall that for a transformation $T$  from a domain $D$ to  a codomain $E$ the range $R= R_T$ is defined as the set of all images of elements of $D$ in $E$:
 
 $$
-   R_T = \{\text{ all images  } T(x) \text{  for  } x \text{  in  }D\}.
+   R_T = \{\text{ all images  } T(x), \, \text{  for  } x \text{  in  }D\}.
 $$
 
 
@@ -164,8 +164,7 @@ $$
 \Span{ \begin{bmatrix} 1\\ 1   \end{bmatrix}, \begin{bmatrix} 2 \\  2  \end{bmatrix}, \begin{bmatrix} 0\\  1  \end{bmatrix}}.
 $$
 
-In a later chapter {ref}`Sec:SubspacesRn` Subspaces we will call this the **column space** of the matrix $A$.
-
+In a later chapter  ({numref}`Sec:SubspacesRn`, <FONT color ="#0076C2"> Subspaces in $\R^n$</FONT>)  we will call this the **column space** of the matrix $A$.
 
 
 ::::::
@@ -300,8 +299,7 @@ $$
 \end{bmatrix}.
 $$
 
-First we observe that the range of this transformation consists of all multiples of the vector 
-$ \begin{bmatrix} 1 \\ 0 \end{bmatrix} $, 
+First we observe that the range of this transformation consists of all multiples of the vector $ \begin{bmatrix} 1 \\ 0 \end{bmatrix} $, 
 
 i.e. the $x$-axis in the plane.
 
@@ -459,7 +457,7 @@ The $M$ stands for migration matrix. \, Obviously this model can  be generalized
 ## Linear Transformations
 
 In the previous section we saw that the matrix transformation $\mathbf{y}=A\mathbf{x}$ can also be seen as a mapping $T(\mathbf{x}) = A\mathbf{x}$.  
-This mapping has two characteristic properties that that we will focus on in this section.
+This mapping has two characteristic properties that we will focus on in this section.
 
 
 
@@ -472,6 +470,8 @@ This mapping has two characteristic properties that that we will focus on in thi
 
  For all vectors $\mathbf{v}_1,\,\mathbf{v}_2$ in $\mathbb{R}^n$: 
   
+<BR>
+
 $$
      T(\mathbf{v}_1+\mathbf{v}_2) = T(\mathbf{v}_1) + T(\mathbf{v}_2).
 $$
@@ -480,7 +480,9 @@ $$
 <li>
 
  For all vectors $\mathbf{v}$ in $\mathbb{R}^n$ and all scalars $c$ in $\mathbb{R}$:
-  
+
+<BR>
+
 $$
      T(c\mathbf{v}) = c\,T(\mathbf{v}).
 $$
@@ -501,10 +503,9 @@ $$
 :label: Exc:LinTrafo:ImageofZeroVector
 
 
-Show that a linear transformation from $\mathbb{R}^n$ to $\mathbb{R}^m$ always sends the zero vector to the zero vector,
-
-i.e., \,   if \, $  T:\mathbb{R}^n \to\mathbb{R}^m$  \,  is a       linear transformation, \, then \, 
-   $T(\mathbf{0}_n) = \mathbf{0}_m$.
+Show that a linear transformation from $\mathbb{R}^n$ to $\mathbb{R}^m$ always sends the zero vector in $\R^n$ to the zero vector in $\R^m$,
+<BR>
+i.e.,    if  $  T:\mathbb{R}^n \to\mathbb{R}^m$    is a  linear transformation,  then   $T(\mathbf{0}_n) = \mathbf{0}_m$.
 
 
 ::::::
@@ -528,7 +529,9 @@ $\begin{bmatrix}
 \end{bmatrix}$ in $\mathbb{R}^3$. 
 Let us check  that this a linear map.
 
-For that, we need to check the two properties in the definition. For property (i) we take two vectors 
+For that, we need to check the two properties in the definition. 
+<BR>
+For property (i) we take two arbitrary vectors 
 
 $$ 
 \begin{bmatrix}
@@ -675,7 +678,7 @@ $$
 \begin{bmatrix}
  6 \\ 9 
 \end{bmatrix}
-   \quad\neq\quad 
+   \,\,\neq\,\,
    3\,T
 \left(\begin{bmatrix}
  1 \\ 1 
@@ -736,7 +739,7 @@ $$
 $$
 
 
-As we will see: **any** linear transformation from $\mathbb{R}^n$ to $\mathbb{R}^m$ is a  matrix transformation. The converse is true as well. This is the context of the next proposition.
+As we will see: **any** linear transformation from $\mathbb{R}^n$ to $\mathbb{R}^m$ is a  matrix transformation. The converse is true as well. This is the content of the next proposition.
  
 
 
@@ -755,20 +758,16 @@ Each matrix transformation is a linear transformation.
 
 
 ::::::{prf:proof}
-This is a direct consequence of  two properties of the matrix-vector product ({prf:ref}`Prop:MatVecProduct:Linearity`)
+This is a direct consequence of the two properties of the matrix-vector product ({prf:ref}`Prop:MatVecProduct:Linearity`) that say
 
 $$
   A\,(\mathbf{x}+\mathbf{y} ) = A\mathbf{x} + A\mathbf{y} \quad \text{and} \quad
    A\,(c\mathbf{x}) = c\,A\mathbf{x}.
 $$
 
-
-
 ::::::
 
 
-
- 
 
 
 ::::::{prf:proposition}
@@ -776,18 +775,20 @@ $$
 
 
 Suppose  $T:  \mathbb{R}^n\to\mathbb{R}^m$  and  $S:\mathbb{R}^m\to\mathbb{R}^p$ are linear transformations.
-Then the transformation  $ST:\mathbb{R}^n\to\mathbb{R}^p $ defined by
+Then the transformation  $S\circ T:\mathbb{R}^n\to\mathbb{R}^p $ defined by
 
 $$
-ST(\mathbf{x}) = S(T(\mathbf{x}))
+S\circ T(\mathbf{x}) = S(T(\mathbf{x}))
 $$
 
 is a linear transformation from $\mathbb{R}^n$ to $\mathbb{R}^p$.
 
-
 ::::::
 
+::::::{prf:remark}
 
+The transformation  $S\circ T$ is called the **composition**  of the two transformations  $S$ and $T$.   It is which is best read as  *"$S$  after  $T$"*.
+::::::
 
 
 
@@ -804,18 +805,18 @@ and likewise for $S$.  Then
 
 $$
  \begin{array}{rl}
-  ST(\mathbf{x}+\mathbf{y})  = S(T(\mathbf{x}+\mathbf{y})) = S( T(\mathbf{x})+T(\mathbf{y})) \!\!\!\!& 
+  S\circ T(\mathbf{x}+\mathbf{y})  = S(T(\mathbf{x}+\mathbf{y})) = S( T(\mathbf{x})+T(\mathbf{y})) \!\!\!\!& 
   = S(T(\mathbf{x})) + S(T(\mathbf{y})) \\
-  & = ST(\mathbf{x}) + ST(\mathbf{y}) \end{array}
+  & = S\circ T(\mathbf{x}) + S\circ T(\mathbf{y}) \end{array}
 $$
 
 and
 
 $$
-  ST(c\mathbf{x}) =  S(T(c\mathbf{x})) =  S(cT(\mathbf{x})) = cS(T(\mathbf{x})) = c ST(\mathbf{x}).
+  S\circ T(c\mathbf{x}) =  S(T(c\mathbf{x})) =  S(cT(\mathbf{x})) = c\,S(T(\mathbf{x})) = c\,S\circ T(\mathbf{x}).
 $$
 
-Hence $ST$ satisfies the two requirements of a linear transformation.
+Hence $S\circ T$ satisfies the two requirements of a linear transformation.
 
 
 ::::::
@@ -859,7 +860,7 @@ And now, let us return to matrix transformations.
 
 
 We have seen that every matrix transformation is a linear transformation. In this subsection we will show that conversely
-every linear transformation $T:\mathbb{R}^n \to \mathbb{R}^m$ is  can be represented as a matrix transformation.
+every linear transformation $T:\mathbb{R}^n \to \mathbb{R}^m$  can be represented by a matrix transformation.
 
 The key to construct a matrix that represents a given linear transformation lies in the following proposition.
 
@@ -869,27 +870,23 @@ The key to construct a matrix that represents a given linear transformation lies
 :label: Prop:LinTrafo:ExtendedLinearity
 
 
-Suppose  $T:\mathbb{R}^n\rightarrow\mathbb{R}^m$ is a linear transformation.  Then the following property holds: \,for 
+Suppose  $T:\mathbb{R}^n\rightarrow\mathbb{R}^m$ is a linear transformation.  Then the following property holds: for 
 each set of vectors $\mathbf{x}_1,  \ldots, \mathbf{x}_k$ in $\mathbb{R}^n$ and each set of numbers  $c_1,\ldots,c_k$ in $\mathbb{R}$:
 
-$$
+:::::{math}
+:label: Eq:LinTrafo:LinComb
+
    T(c_1\mathbf{x}_1+c_2 \mathbf{x}_2+\ldots +c_k \mathbf{x}_k) =
     c_1T(\mathbf{x}_1)+c_2T(\mathbf{x}_2)+\ldots +c_kT( \mathbf{x}_k).
-$$
+
+:::::
 
 
 ::::::
 
 In words:  for any linear transformation 
-
-<span style="border-style:solid; padding:4px; border-width:2px">
-        the image of a linear combination of vectors is equal to
-        the linear combination of their images.
-</span>
-
-
-
-
+<BR>
+*the image of a linear combination of vectors is equal to the linear combination of their images*.
 
 
 
@@ -903,7 +900,7 @@ $$
     T(c\mathbf{x}) = c T(\mathbf{x}).
 $$
 
-First apply rule (i) to split the term on the left into $k$ terms:
+First apply rule (i) to split the term on the left in {eq}`Eq:LinTrafo:LinComb` into $k$ terms:
 
 $$
 \begin{array}{ccl}
@@ -931,15 +928,15 @@ and then apply rule (ii) to each term.
 Suppose  $T: \mathbb{R}^3 \to \mathbb{R}^2$  is a linear transformation, and we know that for
 
 $$
-  \mathbf{a}_1 = 
+  \vect{a}_1 = 
 \begin{bmatrix}
  1 \\ 0 \\ 0 
 \end{bmatrix}, \quad 
-  \mathbf{a}_2 = 
+  \vect{a}_2 = 
 \begin{bmatrix}
  1 \\ 1 \\ 0 
 \end{bmatrix},
-  \quad \mathbf{a}_3 = 
+  \quad \vect{a}_3 = 
 \begin{bmatrix}
  1 \\ 1 \\ 1 
 \end{bmatrix}
@@ -948,14 +945,14 @@ $$
 the images under $T$  are given by 
 
 $$
-  T(\mathbf{a}_1)  = b_1 = 
+  T(\vect{a}_1)  = \vect{b}_1 = 
 \begin{bmatrix}
  1 \\ 2 
-\end{bmatrix}, \quad T(\mathbf{a}_2)  = b_2 = 
+\end{bmatrix}, \quad T(\vect{a}_2)  = \vect{b}_2 = 
 \begin{bmatrix}
  3 \\ -1 
 \end{bmatrix},
-  \quad \text{and} \quad  T(\mathbf{a}_3)  = b_3 = 
+  \quad \text{and} \quad  T(\vect{a}_3)  = \vect{b}_3 = 
 \begin{bmatrix}
  2 \\ -2 
 \end{bmatrix}.
@@ -964,16 +961,16 @@ $$
 Then for the vector  
 
 $$
- \mathbf{v} = 
+ \vect{v} = 
 \begin{bmatrix}
  4 \\ 1 \\ -1 
-\end{bmatrix} = 3 \mathbf{a}_1 + 2 \mathbf{a}_2 -1  \mathbf{a}_3
+\end{bmatrix} = 3 \vect{a}_1 + 2 \vect{a}_2 - 1 \vect{a}_3
 $$
 
 it follows that
 
 $$
- T(\mathbf{v}) =   3 \mathbf{b}_1 + 2 \mathbf{b}_2  + (-1) \mathbf{b}_3 = 
+ T(\vect{v}) =   3 \vect{b}_1 + 2 \vect{b}_2  + (-1) \vect{b}_3 = 
  3 
 \begin{bmatrix}
  1 \\ 2 
@@ -1001,10 +998,11 @@ $$
 The central idea  illustrated  in {prf:ref}`Ex:LinTrafo:ExtendedLinearity`, which is in fact a direct consequence of {prf:ref}`Prop:LinTrafo:ExtendedLinearity`, is the following:
 
 a linear transformation $T$ from $\mathbb{R}^n$  to $\mathbb{R}^m$ is completely specified by the images
-$ T(\mathbf{a}_1), T(\mathbf{a}_2), \ldots , T(\mathbf{a}_n)$  of a set of vectors  $\{\mathbf{a}_1, \mathbf{a}_2, \ldots, \mathbf{a}_n\}$ that spans $\mathbb{R}^n$. %his idea is also hovering over  {prf:ref}`Ex:LinTrafo:ExtendedLinearity`.
+$ T(\mathbf{a}_1), T(\mathbf{a}_2), \ldots , T(\mathbf{a}_n)$  of a set of vectors  $\{\mathbf{a}_1, \mathbf{a}_2, \ldots, \mathbf{a}_n\}$ that spans $\mathbb{R}^n$. <BR>
+This idea is also hovering over  {prf:ref}`Ex:LinTrafo:ExtendedLinearity`.
 
 The simplest set of vectors that spans the whole space $\mathbb{R}^n$ is 
-the  standard basis for $\mathbb{R}^n$  which was introduced in {ref}`Sec:LinearCombinations`. 
+the  standard basis for $\mathbb{R}^n$  which was introduced in the section {ref}`Sec:LinearCombinations`. 
 
 Recall that this is the set of vectors 
 
@@ -1234,7 +1232,7 @@ is called the **standard matrix** of  $T$.
 
 
 
-In  {ref}`Sec:GeomLinTrans` (The Geometry of Linear Transformations)  you will learn how to build  standard matrices for rotations, reflections and other geometrical mappings.
+In the section {ref}`Sec:GeomLinTrans`  you will learn how to build  standard matrices for rotations, reflections and other geometrical mappings.
 For now let us look at a more "algebraic" example.
 
 
@@ -1342,7 +1340,7 @@ $$
 $$
 
 From {prf:ref}`Prop:LinTrafo:CompositionLintrafos`  we know that the composition
-$ST: \mathbb{R}^2 \to \mathbb{R}^3$ is also a linear transformation.  What is the (standard) matrix of $ST$?
+$S\circ T: \mathbb{R}^2 \to \mathbb{R}^3$ is also a linear transformation.  What is the (standard) matrix of $S\circ T$?
 
 For this we need the images  of the unit vectors  $\mathbf{e}_1$  and  $\mathbf{e}_2$  in $\mathbb{R}^2$.
 For each vector we first apply $T$ and then $S$. For $\mathbf{e}_1$ this gives
@@ -1400,12 +1398,12 @@ $$
 \end{bmatrix}.
 $$
 
-So the matrix of $ST$ becomes
+So the matrix of $\circ $ becomes
 
 $$
-  [ST] \,= \,
+  [S\circ T] \,= \,
 \begin{bmatrix}
-ST(\mathbf{e_1})&ST(\mathbf{e_2})
+S\circ T(\mathbf{e_1})&S\circ T(\mathbf{e_2})
 \end{bmatrix} \,\,=\,\,
 \begin{bmatrix}
  2 &1 \\ 0&-2 \\ -1&2
