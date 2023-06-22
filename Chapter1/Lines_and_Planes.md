@@ -140,7 +140,7 @@ will be called a **parametric vector equation** of $\mathcal{L}$.
 
 :::
 
-:::{exercise}
+:::{prf:example}
 
 Let $\mathcal{L}$ be the line through the points $P=(2, 1)$ and $Q=(6, 4)$. How do we find a parametric vector equation of this line? We need a vector that connects the origin to a point on the line and a vector parallel to the line. For the first vector we can simply use the coordinates of either $P$ or $Q$. We can use either point, but let us choose $P$. We can construct a vector parallel to the line $\mathcal{L}$ by connecting two distinct points on the line by an arrow. We can use for instance the vector $\overrightarrow{PQ}$ that starts in $P$ and ends in $Q$.
 
@@ -177,7 +177,7 @@ $$
 :::{figure} Images/Fig-LinesAndPlanes-NormalEquationLine.svg
 :name: Fig:LinesAndPlanes:NormalEquationLine
 
-Normal equation.
+Line $\mathcal{L}$ with normal vector $\vect{n}$.
 :::
 
 Let $\mathbf{v_0}$ be the vector that connects the origin to the point $P$. We can see in {numref}`Figure %s <Fig:LinesAndPlanes:NormalEquationLine>` that a vector $\mathbf{v}$ is on the line $\mathcal{L}$ whenever
@@ -190,14 +190,19 @@ $$
 
 Let $\mathcal{L}$ be a line in $\mathbb{R}^2$. If $\mathbf{v_0}$ is a vector on $\mathcal{L}$ and $\mathbf{n}$ is a normal vector of $\mathcal{L}$, then
 
-$$
-(\mathbf{v}-\mathbf{v_0})\ip\mathbf{n}=0
-$$
 
-will be called a **normal equation** of $\mathcal{L}$.
+
+::{math}
+:label: Eq:LinesAndPlanes:NormalEquationPlane
+
+(\mathbf{v}-\mathbf{v_0})\ip\mathbf{n}=0
+::
+
+will be called a **normal equation** of $\mathcal{P}$.
 :::
 
-::::{exercise}
+
+::::{prf:example}
 
 The line $\mathcal{L}_1$ can be described by the following parametric vector equation.
 
@@ -292,7 +297,10 @@ A line can be defined as a collection of points and as the collection of vectors
 Any non-zero vector $\mathbf{n}$ that is orthogonal to a plane $\mathcal{P}$ will be called a **normal vector** of that plane.
 :::
 
-Let $\mathbf{n}$ be a normal vector for a given plane $\mathcal{P}$ and $\mathbf{v_0}$ a vector on $\mathcal{P}$. {numref}`Figure %s <Fig:LinesAndPlanes:NormalEquationPlane>` tells us that any other vector $\mathbf{v}$ is on $\mathcal{P}$ whenever $(\mathbf{v}-\mathbf{v_0})\ip\mathbf{n}=0$.
+Let $\mathbf{n}$ be a normal vector for a given plane $\mathcal{P}$ and $\mathbf{v_0}$ a vector on $\mathcal{P}$. {numref}`Figure %s <Fig:LinesAndPlanes:NormalEquationPlane>` tells us that any other vector $\mathbf{v}$ is on $\mathcal{P}$ whenever 
+
+
+$(\mathbf{v}-\mathbf{v_0})\ip\mathbf{n}=0$.
 
 :::{prf:definition}
 
@@ -305,6 +313,47 @@ $$
  will be called a *normal equation* of $\mathcal{P}$.
 
 :::
+
+::::{prf:remark}
+
+For 
+
+$$
+  \vect{n} = \begin{bmatrix}  n_1 \\  _2 \\ n_3
+            \end{bmatrix}, \quad
+  \vect{v}_0 = \begin{bmatrix}  x_0 \\  y_0 \\ z_0
+            \end{bmatrix}, \quad
+  \vect{v}= \begin{bmatrix}  x  \\  y  \\ z 
+            \end{bmatrix}            
+$$
+
+Equation {eq}`Eq:LinesAndPlanes:NormalEquation` becomes
+
+$$
+   n_1(x-x_0) + n_2(y-y_0) + n_3 (z-z_0) = 0.
+$$
+
+This can be rewritten as
+
+$$
+  n_1x + n_2y + n_3z = n_1x_0 + n_2y_0 + n_3z_0 = k \quad \text{(constant)}.
+$$
+
+The important observation is that in the  Cartesian equation
+
+$$
+  ax + by + cz = k,
+$$
+
+vor a plane $\mathcal{P}$, the vector  
+
+$$
+   \vect{n} = \begin{bmatrix} a \\ b \\ c  \end{bmatrix}
+$$
+
+is always a vector normal to (= perpendicular to)  the plane $\mathcal{P}$.
+
+
 
 ## Parametric vector equation of a plane
 
@@ -344,7 +393,7 @@ $$
  will be called a **parametric vector equation** of $\mathcal{P}$.
 :::
 
-:::{exercise}
+:::{prf:example}
 
 In this example we will construct a parametric vector equation and a normal equation for the plane through the points $P=(1, 1, 1)$, $Q=(1, 2, 2)$ and $R=(3, 1, 2)$. The vectors $\overrightarrow{PQ}$ and $\overrightarrow{PR}$ can serve as directional vectors. We find that
 
@@ -478,7 +527,7 @@ will be called a *parametric vector equation* of $\mathcal{L}$.
 :::
 
 
-:::{exercise}
+:::{prf:example}
 
 How can we find a parametric vector equation for the line $\mathcal{L}$ that contains the points $P=(1, 2, 4)$ and $Q=(5, 3, 1)$? <BR> The vector $\overrightarrow{PQ}$ is parallel to $\mathcal{L}$ and therefore a directional vector. The components of this vector are equal to
 

@@ -39,7 +39,7 @@ $$
  \vect{x}_k =  c_1\lambda_1^k\vect{v}_1 + c_2\lambda_2^k\vecy{v}_2 +  \ldots + c_n\lambda_n^k\vect{v}_n.
 $$
 
-::::
+:::
 
 The coordinates  $c_1,c_2,\ldots,c_n$  in {eq}`Eq:DynSystDiscrete:InitCoords` are uniquely determined, since $(\vect{v}_1, \ldots, \vect{v}_n)$ is a basis.
 

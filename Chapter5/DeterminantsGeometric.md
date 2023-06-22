@@ -27,7 +27,8 @@ a_{31} & a_{32} & a_{33}\end{array}   \right]
 $$
 
 we might end up with an expression containing all the entries  $a_{ij}$ that tells us whether  $A$ is invertible or not.
-In this section we will use a geometric approach to derive such an expression, and will again call this the determinant of the matrix $A$. Its formula, when looked at from the right perspective, shows an opportunity to  generalize the concept to higher dimensions.
+In this section we will use a geometric approach to derive such an expression, and will again call this the determinant of the matrix $A$. Its formula
+(Equation {eq}`Eq:DetGeometric:3x3Det`), when looked at from the right perspective, shows an opportunity to  generalize the concept to higher dimensions.
 We will follow that route in {numref}`Section %s <Sec:DeterminantsViaCofactors>`.
 
 We will start by introducing determinants as a way to compute areas (in the plane) and volumes (in the space $\R^3$).
@@ -57,7 +58,7 @@ The  parallelogram OACB
 
 The area of the parallelogram  $OACB$, spanned by the vectors   $ \vect{u} =\left[\begin{array}{c} a \\ b \end{array}\right]$  and 
 $\vect{v}=\left[\begin{array}{c} c \\ d \end{array}\right]$ 
-is given by  $|ad-bc|$, i.e., the absolute value of $ad-bc$.
+is given by  $|ad-bc|$, i.e., the absolute value of &nbsp;  $ad-bc$.
 
 ::::::
 
@@ -65,7 +66,7 @@ is given by  $|ad-bc|$, i.e., the absolute value of $ad-bc$.
 
 ::::::{prf:proof}
 
-The quickest way to prove this is to translate it to the cross product  ({numref}`Section %s <Sec:CrossProduct>). To make use of the cross product we  introduce the vectors
+The quickest way to prove this is to translate it to the cross product  ({numref}`Sec:CrossProduct`). To make use of the cross product we  introduce the vectors.
 
 $$
 \tilde{\vect{u}} = \left[\begin{array}{c} a \\ b \\ 0 \end{array}\right]
@@ -73,7 +74,7 @@ $$
 \tilde{\vect{v}} = \left[\begin{array}{c} c \\ d \\ 0 \end{array}\right]
 $$
 
-as in  {numref}`Figure %s <Fig:DetGeometric:OrientedArea1>`.
+Thus we embed the plane into $\R^3$ as the $x_1$-$x-2$-plane.  See  {numref}`Figure %s <Fig:DetGeometric:OrientedArea1>`.
 
 ::::{figure} Images/Fig-DetGeometric-OrientedArea1.svg
 :name: Fig:DetGeometric:OrientedArea1
@@ -127,7 +128,7 @@ where  $\vect{u}^{\perp}$  is the vector that is perpendicular to $\vect{u}$, po
 :name: Fig:DetGeometric:AreaPargram
 
 
-Area equals base length times height
+The parallegram $OABC$ and the orthogonal vector $\vect{u}^{\perp}$
 ::::
 
 
@@ -141,7 +142,11 @@ where  $\vartheta$ is the angle between  $\vect{u}^{\perp}$  and $\vect{v}$.
 Here $h = \norm{\vect{v}}\cos(\vartheta)$  is $(\pm)$ the length of the projection of $\vect{v}$ onto the line perpendicular to $\vect{u}$, which can be interpreted as the height of the parallelogram.  So then
 
 $$
-\norm{\vect{u}^{\perp}} \norm{\vect{v}}\cos(\vartheta) = \norm{\vect{u}} \norm{\vect{v}}\cos(\vartheta) = \pm \text{(base length)} \times \text{height} =   \pm \text{area of } OACB.
+\begin{array}{rcl}
+\norm{\vect{u}^{\perp}} \norm{\vect{v}}\cos(\vartheta) 
+  &=& \norm{\vect{u}} \norm{\vect{v}}\cos(\vartheta) \\
+  &=& \pm \text{(base length)} \times \text{height} \\
+  &=&   \pm \text{area of } OACB.
 $$
 
 After some rewriting
@@ -479,17 +484,24 @@ $$
 ::::::{prf:proposition}
 :label: Prop:DetGeometric:ColExpand
 
-$$
+:::::{math}
+:label: Eq:DetGeometric:3x3Det 
+
 \left|\begin{array}{ccc} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2\\ a_3 & b_3 & c_3 \end{array} \right|=
 a_1\left|\begin{array}{cc}  b_2 & c_2\\  b_3 & c_3 \end{array} \right|-
 a_2 \left|\begin{array}{cc}  b_1 & c_1 \\ b_3 & c_3 \end{array} \right|+
 a_3 \left|\begin{array}{cc}  b_1 & c_1 \\ b_2 & c_2\end{array} \right|.
+::::
+
+The last expression can be further evaluated as
+
 $$
 
-This can be further evaluated as
+a_1b_2c_3 - a_1b_3c_2 - a_2b_1c_3 +a_2b_3c_1 + a_3b_1c_2 - a_3b_2c_1.
+$$
 
 $$
-\left|\begin{array}{ccc} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2\\ a_3 & b_3 & c_3 \end{array} \right|=   a_1b_2c_3 - a_1b_3c_2 - a_2b_1c_3 +a_2b_3c_1 + a_3b_1c_2 - a_3b_2c_1.
+  \begin{array}
 $$
 
 ::::::
