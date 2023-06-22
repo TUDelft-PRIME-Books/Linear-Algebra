@@ -358,6 +358,14 @@ $$
 
 and conclude that  $\mathbf{u}$ and $\mathbf{v}$ are orthogonal, $\mathbf{u}$ and $\mathbf{w}$ are not orthogonal, <BR>  $\mathbf{v}$ and $\mathbf{w}$  are orthogonal.
 
+::::{grasple} https://embed.grasple.com/exercises/83c8e82a-ed9c-451f-b552-631b6160e270?id=78789
+
+:label: grasple_exercise_1_2_1
+
+::::
+
+
+
 In $\mathbb{R}^2$,  two nonzero vectors that are orthogonal to the same nonzero vector $\mathbf{v}$ are automatically multiples of each other (i.e. have either the same or the opposite direction). In $\mathbb{R}^n$ with  $n \geq 3$ this no longer holds. In this example both  vectors $\mathbf{u}$ and  $\mathbf{w}$ are orthogonal to the vector $\mathbf{v}$, but $\mathbf{u} \neq c\mathbf{w}$.
 
 :::
@@ -389,7 +397,7 @@ In {prf:ref}`Prop:RulesInnerProduct` (iv) we already showed that the last equali
 
 :::
 
-The fact that the zero vector is orthogonal to _any_ vector is an immediate consequence of the definition, but it
+The fact that the zero vector is orthogonal to *any* vector is an immediate consequence of the definition, but it
 may seem counter intuitive to you. The following example illustrates a situation where this orthogonality leads to a much nicer outcome.
 
 ::::{prf:example}
@@ -720,6 +728,12 @@ $$
 
 ::::
 
+
+::::{grasple} https://embed.grasple.com/exercises/5bc4274c-56a0-461b-bd3d-9f8bdb8f44e0?id=69740
+
+:label: grasple_exercise_1_2_2
+
+::::
 
 From the rules of the norm the following rules of the distance function can be deduced
 
@@ -1363,3 +1377,125 @@ For $n\geq3$ we don't get easy answers, but as $\frac{1}{\sqrt{n}} \downarrow 0$
 we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost' orthogonal.
 
 :::
+
+## Grasple Exercises
+
+::::{grasple} https://embed.grasple.com/exercises/59912254-6fc8-43c7-9c44-1ea7eab1c236?id=62409
+
+:label: grasple_exercise_1_2_3
+
+::::
+
+
+::::{grasple} https://embed.grasple.com/exercises/7b49e0f5-ae8b-4e92-8878-665dc080b7ee?id=65601
+
+:label: grasple_exercise_1_2_4
+
+::::
+
+
+::::{grasple} https://embed.grasple.com/exercises/c8b4eed4-179f-42ab-9ec9-07f66445c960?id=69482
+
+:label: grasple_exercise_1_2_5
+
+::::
+
+
+::::{grasple} https://embed.grasple.com/exercises/b5a4e1c0-92ca-4307-9eb0-25a3a5807fc7?id=62415
+
+:label: grasple_exercise_1_2_6
+
+::::
+
+
+::::{grasple} https://embed.grasple.com/exercises/30a7abfe-9d40-4faa-a848-83bd67e024a0?id=62406
+
+:label: grasple_exercise_1_2_7
+
+::::
+
+
+::::{grasple} https://embed.grasple.com/exercises/34bbb9e1-207e-4c06-8686-1c32b3f3d0aa?id=78751
+
+:label: grasple_exercise_1_2_8
+
+::::
+
+
+::::{grasple} https://embed.grasple.com/exercises/7dc339bb-fe79-4eb9-914c-ea1a7ca85a85?id=69737
+
+:label: grasple_exercise_1_2_9
+
+::::
+
+
+::::{grasple} https://embed.grasple.com/exercises/d4dd1154-a3ec-497e-bc73-1cd96529f0e7?id=69741
+
+:label: grasple_exercise_1_2_10
+
+::::
+
+
+::::{grasple} https://embed.grasple.com/exercises/c2242315-7e4f-463b-b3cf-09e9e15c8b2b?id=69739
+
+:label: grasple_exercise_1_2_11
+
+::::
+
+
+::::{grasple} https://embed.grasple.com/exercises/67334454-d109-45a2-b640-545041ff896d?id=62416
+
+:label: grasple_exercise_1_2_12
+
+::::
+
+
+::::{grasple} https://embed.grasple.com/exercises/9705b078-6c91-42c6-9768-8a043115b881?id=62658
+
+:label: grasple_exercise_1_2_13
+
+::::
+
+::::{grasple} https://embed.grasple.com/exercises/531d3be2-dd62-4c21-b023-70e0b63809be?id=78747
+
+:label: grasple_exercise_1_2_14
+
+::::
+
+
+::::{grasple} https://embed.grasple.com/exercises/61ecdf6-4cfb-41ba-bc16-685fe8532471?id=62414
+
+:label: grasple_exercise_1_2_15
+
+::::
+
+
+::::{grasple} https://embed.grasple.com/exercises/c4d2743f-5f14-4812-9531-1a40c28c15cb?id=62413
+
+:label: grasple_exercise_1_2_16
+
+::::
+
+
+
+::::{grasple} https://embed.grasple.com/exercises/407cb45d-2baf-4b0d-a1eb-6e51186e19f3?id=69738
+
+:label: grasple_exercise_1_2_17
+
+::::
+
+
+
+::::{grasple} https://embed.grasple.com/exercises/c4c1c609-b1dd-4588-865f-53d7e8221f88?id=62689
+
+:label: grasple_exercise_1_2_18
+
+::::
+
+
+
+::::{grasple} https://embed.grasple.com/exercises/2a2423c3-0907-40b7-bd5f-7607baf7cc09?id=62668
+
+:label: grasple_exercise_1_2_19
+
+::::
