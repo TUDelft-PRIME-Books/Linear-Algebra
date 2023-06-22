@@ -89,6 +89,12 @@ which is precisely $2\mathbf{v}_{3}$.
 
 We have found that the geometrical notion of an arrow in the plane with a certain length pointing in a certain direction is captured perfectly by the algebraic notion of its vector. Moreover, the natural operations of stretching and combining arrows can easily be done algebraically. In fact, there is no reason why we should restrict ourselves to arrows in the plane. We can just as well take arrows in three dimensional space and glue them together or stretch them. In {numref}`Subsection %s <Subsec:Vectors:ndim>` we will formalise this notion to $n$ dimensions -- and we will see that it is not so strange to have more than $3$ dimensions!
 
+::::{grasple} https://embed.grasple.com/exercises/553450f1-e960-4bac-9bb4-074fe8106369?id=78688
+
+:label: grasple_exercise_1_1_1
+
+::::
+
 (Subsec:Vectors:ndim)=
 
 ## Vectors and $\mathbb{R}^{n}$
@@ -331,3 +337,82 @@ $$
 a_{1}\\\vdots\\ a_{n}
 \end{bmatrix}.
 $$
+
+
+## Grasple Exercises
+
+::::{grasple} https://embed.grasple.com/exercises/a962fb8c-89b0-4b97-b76e-8f53335cf301?id=70140 
+
+:label: grasple_exercise_1_1_2
+
+::::
+
+
+::::{grasple} https://embed.grasple.com/exercises/670148b0-07cb-4f0c-861f-0ac6fbc83fb2?id=70141
+
+:label: grasple_exercise_1_1_3
+
+::::
+
+
+::::{grasple} https://embed.grasple.com/exercises/f85678d3-21f1-484f-a589-4e2fc5b0f76d?id=73610
+
+:label: grasple_exercise_1_1_4
+
+::::
+
+
+::::{grasple} https://embed.grasple.com/exercises/9c3a037d-7bcb-49c7-a167-baffbae14d46?id=70142
+
+:label: grasple_exercise_1_1_5
+
+::::
+
+
+::::{grasple} https://embed.grasple.com/exercises/a33e81af-5670-421f-96a0-d4ed40f5e79b?id=74451
+
+:label: grasple_exercise_1_1_6
+
+::::
+
+
+::::{grasple} https://embed.grasple.com/exercises/b212a5ff-ea16-47a9-bc71-8e2b21944c9d?id=69732
+
+:label: grasple_exercise_1_1_7
+
+::::
+
+
+::::{grasple} https://embed.grasple.com/exercises/a56eb5e4-62c9-4dfa-9f9c-e53c1f1c913a?id=69479
+
+:label: grasple_exercise_1_1_8
+
+::::
+
+
+::::{grasple} https://embed.grasple.com/exercises/e1df17bf-cfb6-4dde-ae63-c424b5e149ba?id=73622
+
+:label: grasple_exercise_1_1_9
+
+::::
+
+
+::::{grasple} https://embed.grasple.com/exercises/553450f1-e960-4bac-9bb4-074fe8106369?id=78688
+
+:label: grasple_exercise_1_1_10
+
+::::
+
+
+::::{grasple} https://embed.grasple.com/exercises/ff44880f-1ce0-428e-8bb2-42898b66e76f?id=78691
+
+:label: grasple_exercise_1_1_11
+
+::::
+
+
+::::{grasple} https://embed.grasple.com/exercises/65b17e6e-b9e1-44de-9445-578c5ee1f633?id=62390	
+
+:label: grasple_exercise_1_1_12
+
+::::
