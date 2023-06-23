@@ -196,6 +196,7 @@ This might look a bit scary, but is really just what we did in the plane, just w
 Since vector addition and scalar multiplication will be used all the time in this text, it will be convenient to know how to work with these operations. Luckily, it turns out that they satisfy most of the calculation rules that you are familiar with from standard arithmetic, as you can see from the following:
 
 ````{prf:proposition}
+:label:  Prop:Vectors:BasicRules
 
 
 
@@ -342,77 +343,82 @@ $$
 ## Grasple Exercises
 
 ::::{grasple} https://embed.grasple.com/exercises/a962fb8c-89b0-4b97-b76e-8f53335cf301?id=70140 
-
 :label: grasple_exercise_1_1_2
+:dropdown:
+:description: To compute combinations  $c_1\vect{u}+c_2\vect{v}$.
 
 ::::
 
 
 ::::{grasple} https://embed.grasple.com/exercises/670148b0-07cb-4f0c-861f-0ac6fbc83fb2?id=70141
-
 :label: grasple_exercise_1_1_3
+:dropdown:
+:description: To compute combinations  $c_1\vect{u}+c_2\vect{v}$.
 
 ::::
 
 
 ::::{grasple} https://embed.grasple.com/exercises/f85678d3-21f1-484f-a589-4e2fc5b0f76d?id=73610
-
 :label: grasple_exercise_1_1_4
+:dropdown:
+:description: To compute   $\vect{u}-\vect{v}$ and $\vect{v}-\vect{u}$ in $\R^4$.
 
 ::::
 
 
 ::::{grasple} https://embed.grasple.com/exercises/9c3a037d-7bcb-49c7-a167-baffbae14d46?id=70142
-
 :label: grasple_exercise_1_1_5
+:dropdown:
+:description: To solve for $\vect{x}$ an equation  $a(\vect{x}-\vect{u})= b(\vect{x}-\vect{v}) + c\vect{u}+d\vect{u}$.
 
 ::::
 
 
 ::::{grasple} https://embed.grasple.com/exercises/a33e81af-5670-421f-96a0-d4ed40f5e79b?id=74451
-
 :label: grasple_exercise_1_1_6
+:dropdown:
+:description: Expressing  $\vect{w}$  as $c_1\vect{u} +c_2\vect{v}$ from a picture. 
 
 ::::
 
 
 ::::{grasple} https://embed.grasple.com/exercises/b212a5ff-ea16-47a9-bc71-8e2b21944c9d?id=69732
-
 :label: grasple_exercise_1_1_7
+:dropdown:
+:description: Computing the vector from  $A$ to $B$.
 
 ::::
 
 
 ::::{grasple} https://embed.grasple.com/exercises/a56eb5e4-62c9-4dfa-9f9c-e53c1f1c913a?id=69479
-
 :label: grasple_exercise_1_1_8
+:dropdown:
+:description:  To check whether two vectors are on the same line through $(0,0)$.
 
 ::::
 
 
 ::::{grasple} https://embed.grasple.com/exercises/e1df17bf-cfb6-4dde-ae63-c424b5e149ba?id=73622
-
 :label: grasple_exercise_1_1_9
+:dropdown:
+:description: When do two vectors (with a parameter $k$) lie on a line through $(0,0)$?
+
 
 ::::
 
 
 ::::{grasple} https://embed.grasple.com/exercises/553450f1-e960-4bac-9bb4-074fe8106369?id=78688
-
 :label: grasple_exercise_1_1_10
+:dropdown:
+:description: Another hexagone 'puzzle'.
 
 ::::
 
 
 ::::{grasple} https://embed.grasple.com/exercises/ff44880f-1ce0-428e-8bb2-42898b66e76f?id=78691
-
 :label: grasple_exercise_1_1_11
+:dropdown:
+:description: To prove the basic properties ({prf:ref}`Prop:Vectors:BasicRules`) of vector sum and multiple.
 
 ::::
 
-
-::::{grasple} https://embed.grasple.com/exercises/65b17e6e-b9e1-44de-9445-578c5ee1f633?id=62390	
-
-:label: grasple_exercise_1_1_12
-
-::::
