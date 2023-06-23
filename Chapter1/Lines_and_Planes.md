@@ -393,6 +393,7 @@ $$
 
 is always a vector normal to (= perpendicular to)  the plane $\mathcal{P}$.
 
+::::
 
 
 ## Parametric vector equation of a plane
