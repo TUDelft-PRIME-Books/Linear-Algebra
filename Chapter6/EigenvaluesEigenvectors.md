@@ -451,7 +451,7 @@ $\vect{0} \in S$, by definition.  We added it explicitly.
 
 <li>
 
-If  $\vect{u}$ and $\vect{v}$ are vectors in $S$,  so $A\vect{u}=\lambda\vect{u}$  and $A\vect{v}=\lambda\vect{u}$,
+If  $\vect{u}$ and $\vect{v}$ are vectors in $S$,  so $A\vect{u}=\lambda\vect{u}$  and $A\vect{v}=\lambda\vect{v}$,
 
 then
 
