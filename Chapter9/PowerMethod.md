@@ -408,7 +408,7 @@ Then the power method applied to $A^{-1}$  converges (apart from the usual excep
 
 ::::{prf:proof}
 
-We make us of the property in {numref}`Exc:EigenValues:EigenvaluesInverse` in 
+We make use of the property in {numref}`Exc:EigenValues:EigenvaluesInverse` in 
 {numref}`Sec:EV-basics`, which states that  $A^{-1}$ has the eigenvalues 
 
 
@@ -433,9 +433,21 @@ This is then an eigenvector of $A$  for  the smallest eigenvalue  $\lambda_n$.
 
 ::::
 
+::::{prf:remark}
 
+From a computational point of view, in the case of a large matrix $A$,  it might be advantageous to compute  $\vect{y}_{k+1}$   from $\vect{y}_{k}$  by solving the equation
 
+$$
+  A\vect{y}_{k+1} = \vect{y}_k,
+$$
 
+rather than computing 
+$$
+\vect{y}_{k+1} = A^{-1}\vect{y}_k.
+$$
+
+If the matrix $A$ is sparse, i.e., has relatively few non-zero entries, its
+ inverse  may very well be a 'full' matrix.
 ::::{prf:example}
 :label:  Ex:PowerMethod:FirstExampleContd
 

@@ -314,6 +314,16 @@ In {prf:ref}`Prop:LinearCombinations:SpanStandardBasis` we saw that the span of 
 
 ## Grasple Exercises
 
+::::{grasple} https://embed.grasple.com/exercises/9c780d10-9a8f-4fd6-9471-3f1a0e46c009?id=70171
+:label: grasple_exercise_2_2_7
+
+::::
+
+::::{grasple} https://embed.grasple.com/exercises/f74168ff-a448-4420-88d9-ebe7365a00a9?id=70172
+:label: grasple_exercise_2_2_8
+
+::::
+
 ::::{grasple} https://embed.grasple.com/exercises/b760d9b9-d0ba-4875-b828-397e7a045283?id=70175
 :label: grasple_exercise_2_2_3
 
@@ -321,10 +331,37 @@ In {prf:ref}`Prop:LinearCombinations:SpanStandardBasis` we saw that the span of 
 
 % ------------------------------------------------
 
+::::{grasple} https://embed.grasple.com/exercises/a8175390-3844-408c-b192-c4b05f9beb7b?id=70170
+:label: grasple_exercise_2_2_9
+
+::::
+
+
+::::{grasple} https://embed.grasple.com/exercises/fab5c526-91ed-407b-9faa-645f40c22b8b?id=70169
+:label: grasple_exercise_2_2_10
+
+::::
+
+::::{grasple} https://embed.grasple.com/exercises/2167085c-2498-4694-9eac-abfeeb0ec307?id=70162
+:label: grasple_exercise_2_2_11
+
+::::
+
+
+
+% ------------------------------------------------
+
 ::::{grasple} https://embed.grasple.com/exercises/493831d9-ab4a-4f78-b9ea-7b707aa9f4c2?id=70174
 :label: grasple_exercise_2_2_4
 
 ::::
+
+
+::::{grasple} https://embed.grasple.com/exercises/c008320d-9d0e-463f-8bb7-344988f10438?id=70176
+:label: grasple_exercise_2_2_12 
+
+::::
+
 
 ::::{grasple} https://embed.grasple.com/exercises/b4f4dc1f-4f56-41e8-b16d-a2694e90890c?id=70181
 :label: grasple_exercise_2_2_5

@@ -132,10 +132,15 @@ First we show that the formula holds if  $R$  is the unit square, i.e., the para
 that 
 
 $$ 
-\text{area}(S) = |\det{[\,\vect{a}_1\,\, \vect{a}_2\,]}|  = |\det{A}| = |\det{A}| \cdot \text{area}(R), 
+\text{area}(S) = |\det{[\,\vect{a}_1\,\, \vect{a}_2\,]}|  = |\det{A}|,
+
 $$ 
 
-since the area of $R$ is equal to 1.  
+and since the area of $R$ is equal to 1, we have
+
+$$
+   |\det{A}| = |\det{A}| \cdot 1 =  |\det{A}| \cdot \text{area}(R). 
+$$  
  
 This then also holds for any square $R$ with sides of length $r$ that are parallel to the axes.  Namely,  such a square has area $r^2$ and can be described as the square with vertices 
 
@@ -352,6 +357,9 @@ $$
 ::::::
 
 Suppose that  $A$ is an invertible $n \times n$ matrix.  Then we know that the linear system  $A\vect{x} = \vect{b}$ has a unique solution for each $\vect{b}$ in $\R^n$. And we also know that the determinant of $A$ is not equal to zero.
+<BR>
+The next proposition gives a 'ready made' formula for the solution.
+
 
 ::::::{prf:theorem}  Cramer's Rule
 :label: Thm:DetExtras:Cramer
@@ -709,7 +717,6 @@ $A$ is replaced by the $k$th column of $A$.  Since this matrix has two equal col
 
 
 For  $n = 2$  {prf:ref}`Prop:DetExtras:Inverse`  gives us back the old formula for the inverse. 
- 
 That is,  if we define the determinant of a  $1 \times 1$  matrix   $A = [a]$  as the number  $a$ . 
  
 
@@ -873,14 +880,14 @@ b & \vect{e}_2
 \end{array}\right|=  a\vect{e}_1 - b\vect{e}_2 = \left[\begin{array}{c}    -b \\ a          \end{array}\right|. 
 $$ 
 
-This is indeed an vector orthogonal to $\vect{v}$ with the same 'one-dimensional volume', i.e., length,  as the vector $\vect{v}$. 
+This is indeed a vector orthogonal to $\vect{v}$ with the same 'one-dimensional volume', i.e., length,  as the vector $\vect{v}$. 
 
 Moreover,  $\left(\vect{v}, \vect{w}\right)
  =  \left(\left[\begin{array}{c}   a \\ b   \end{array}\right]
 ,  \left[\begin{array}{c} -b \\ a   \end{array}\right]
  \right)
 $ 
-is positively oriented. 
+is positively oriented, as can be seen by making a sketch. 
 
 This shows that the construction also works in $\R^2$. 
 

@@ -1,8 +1,15 @@
+# Author: Dani Balagué Guardia 
+# Date: June 22, 2023
+# Description: This code generates an admonition to include Grasple
+#              exercises in a Jupyter Book
+
 from docutils import nodes
 from docutils.parsers.rst import Directive
 from docutils.parsers.rst import directives
 from docutils import nodes
 from docutils.parsers.rst import roles
+from docutils.statemachine import ViewList
+
 import re
 
 exercise_titles = {}
@@ -11,7 +18,9 @@ class Grasple(Directive):
     required_arguments = 1
     optional_arguments = 0
     final_argument_whitespace = True
-    option_spec = {'label': directives.unchanged}
+    option_spec = {'label': directives.unchanged, 
+                   'dropdown': directives.flag, 
+                   'description': directives.unchanged}
     has_content = True
     counter = {}
 
@@ -19,7 +28,6 @@ class Grasple(Directive):
 
     def run(self):
         try:
-            # Get the chapter number from the path. Not ideal but it works for now. 
             current_source = self.state.document.current_source
 
             m = self.RE_CHAPTER_NUMBER.search(current_source)
@@ -29,36 +37,56 @@ class Grasple(Directive):
             else:
                 section_number = 0
 
-            # Increment the counter for this section
             Grasple.counter[section_number] = Grasple.counter.get(section_number, 0) + 1
 
-            # Get the exercise number for this section
             exercise_number = Grasple.counter[section_number]
 
-            # Create the title node, including the exercise number
             title_text = f'Grasple Exercise {section_number}.{exercise_number}'
             title_node = nodes.title(title_text, title_text)
 
-            # Create the content node
-            iframe_src = self.arguments[0]  # Get the URL of the iframe from the directive argument
+            iframe_src = self.arguments[0]
             iframe_html = f"""
             <iframe src="{iframe_src}" width="95%" height="560px">
             </iframe>
             """
-            content_node = nodes.raw('', iframe_html, format='html')
 
-            # Create the exercise node (an admonition) and add the title and content
-            exercise_node = nodes.admonition()
-            exercise_node += title_node
-            exercise_node += content_node
+            if 'dropdown' in self.options:
+                # Create the admonition node (an admonition) and add the title
+                exercise_node = nodes.admonition()
+                exercise_node += title_node
+
+                # Use nested_parse to parse the description as reStructuredText
+                description = self.options.get('description', '')
+                if description:
+                    viewlist = ViewList()
+                    viewlist.append(description, '<description>')
+                    desc_node = nodes.Element()
+                    self.state.nested_parse(viewlist, 0, desc_node)
+                    # Add the parsed description to the admonition node
+                    exercise_node.extend(desc_node.children)
+
+                # Add the iframe inside a details tag, but outside the summary tag
+                iframe_html = f"""
+                <details>
+                    <summary>Show/Hide Content</summary>
+                    {iframe_html}
+                </details>
+                """
+                content_node = nodes.raw('', iframe_html, format='html')
+                exercise_node += content_node
+            else:
+                content_node = nodes.raw('', iframe_html, format='html')
+                exercise_node = nodes.admonition()
+                exercise_node += title_node
+                exercise_node += content_node
 
             label = self.options.get('label', None)
             if label is not None:
-                label = f"{label}"  # Prepend "grasple-" to the label
+                label = f"{label}"
                 target_node = nodes.target('', '', ids=[label])
                 exercise_node.insert(0, target_node)
                 self.state.document.note_explicit_target(target_node)
-                exercise_titles[label] = title_text  # Store the title in the global dictionary
+                exercise_titles[label] = title_text
 
             return [exercise_node]
         except Exception as e:
