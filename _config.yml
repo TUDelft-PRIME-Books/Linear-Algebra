@@ -97,11 +97,11 @@ sphinx:
     review: _ext/
     parentheses_list: _ext/
     latexlist: _ext/
-    grasple_exercise: _ext/
   extra_extensions:
     - sphinx_proof
     - sphinx_togglebutton
     - sphinx_exercise
+    - sphinx_grasple
     - sphinx.ext.imgconverter
 
 latex:
