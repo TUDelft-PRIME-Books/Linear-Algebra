@@ -164,13 +164,13 @@ we see that in all three cases we have that
 :::
 
 
-These are the basics for the general product rule that states that
+These are the basics for the general product rule we will see later, that states that
 
 $$
 \text{det}(AB) = \text{det}(A) \text{det} (B)
 $$
 
-for arbitrary $n\times n$ matrices $A$ and $B$.
+for *arbitrary*  $n\times n$ matrices $A$ and $B$.
 
 ::::::
 
@@ -322,7 +322,8 @@ In the previous section we have already seen that the statement is true for tria
 Now suppose $A$ is any $n \times n$ matrix.  Via row reduction $A$ can be brought to echelon form $F$,
 and for a square matrix the echelon form is an upper triangular matrix  (with possibly zeros on the diagonal).
 
-So   '$F$ is invertible'  is equivalent to  '$\det{F} \neq 0$'.
+From {prf:ref}`Prop:DetCofactors:InvertibleTriangular` we know that for a triangular matrix $F$  we have <BR>
+  '$F$ is invertible'  is equivalent to  '$\det{F} \neq 0$'.
 
 The row operations transforming  $A$ to $F$  can be performed by multiplications with elementary matrices $E_1, \ldots E_k$.
 
@@ -487,7 +488,7 @@ $$
 ::::::
 
 
-We will conclude this section, for the interested reader,  with the proof of the properties of {prf:ref}`Prop:DetRowReduction:RowOps`.
+We will conclude this section, for the interested reader,  with a proof of the properties of {prf:ref}`Prop:DetRowReduction:RowOps`.
 In fact we will prove the column version, and we add one related rule that will be of use both immediately in the proof and also later on.
 
 
@@ -522,19 +523,23 @@ So, click here for the  proof of {prf:ref}`Prop:DetRowReduction:RowOps` and {prf
 ::::::{prf:proof}
 
 For typographical reasons we will prove the three rules stated as column operations.
-For an $n \times n$ matrix  $A = [\vect{a}_1 \vect{a}_2  \ldots \vect{a}_n]$  the rules can then be formulated as
+For an $n \times n$ matrix  
+
+$$
+ 
+ A = [\vect{a}_1 \,\,\vect{a}_2  \,\,\ldots\,\, \vect{a}_n]
+$$  
+  
+the rules can then be formulated as
 
 :::{paren-list}
 :start: 1
 
-- $\det{[\vect{a}_1   \,  \vect{a}_2  \,  \ldots \, c \vect{a}_k  \,    \ldots  \,   \vect{a}_n]} =
-c  \det{[\vect{a}_1   \,  \vect{a}_2  \,  \ldots \, \vect{a}_k  \,    \ldots \,    \vect{a}_n]}$;
+- $\det{[\vect{a}_1   \,  \vect{a}_2  \,  \ldots \, c \vect{a}_k  \,    \ldots  \,   \vect{a}_n]} = c  \det{A}$; 
 
-- $\det{[\vect{a}_1  \,  \ldots  \,   \vect{a}_k  \,    \ldots  \,   \vect{a}_j  \,   \ldots \,   \vect{a}_n]} =
--\det{[\vect{a}_1    \ldots     \vect{a}_j     \ldots     \vect{a}_k    \ldots    \vect{a}_n]}$;
+-  $\det{[\vect{a}_1  \,  \ldots  \,   \vect{a}_k  \,    \ldots  \,   \vect{a}_j  \,   \ldots \,   \vect{a}_n]} = - \det{A}$;
 
-- $\det{[\vect{a}_1 \,  \ldots   \,  \vect{a}_j   \,   \ldots  \,   \vect{a}_k + c\vect{a}_j  \,  \ldots  \,  \vect{a}_n]} =
-\det{[\vect{a}_1 \,    \ldots  \,   \vect{a}_j   \,  \ldots  \,   \vect{a}_k   \, \ldots  \,  \vect{a}_n]}$.
+- $\det{[\vect{a}_1 \,  \ldots   \,  \vect{a}_j   \,   \ldots  \,   \vect{a}_k + c\vect{a}_j  \,  \ldots  \,  \vect{a}_n]} = \det{A}$.
 
 :::
 

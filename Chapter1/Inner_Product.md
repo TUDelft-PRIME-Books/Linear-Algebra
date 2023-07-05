@@ -730,9 +730,9 @@ $$
 
 
 ::::{grasple} https://embed.grasple.com/exercises/5bc4274c-56a0-461b-bd3d-9f8bdb8f44e0?id=69740
-
 :label: grasple_exercise_1_2_2
-
+:dropdown:
+:description: Computing the distance between two vectors in $\R^3$.
 ::::
 
 From the rules of the norm the following rules of the distance function can be deduced
@@ -1381,121 +1381,148 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ## Grasple Exercises
 
 ::::{grasple} https://embed.grasple.com/exercises/59912254-6fc8-43c7-9c44-1ea7eab1c236?id=62409
-
 :label: grasple_exercise_1_2_3
+:dropdown:
+:description: To compute dot products in $\R^2$, $\R^3$ and $\R^4$.
 
 ::::
 
 
 ::::{grasple} https://embed.grasple.com/exercises/7b49e0f5-ae8b-4e92-8878-665dc080b7ee?id=65601
-
 :label: grasple_exercise_1_2_4
+:dropdown:
+:description: To find a vector orthogonal to a given vector in $\R^2$.
 
 ::::
 
 
 ::::{grasple} https://embed.grasple.com/exercises/c8b4eed4-179f-42ab-9ec9-07f66445c960?id=69482
-
 :label: grasple_exercise_1_2_5
+:dropdown:
+:description: To find a vector orthogonal to two given vectors in $\R^2$.
 
 ::::
 
 
 ::::{grasple} https://embed.grasple.com/exercises/b5a4e1c0-92ca-4307-9eb0-25a3a5807fc7?id=62415
-
 :label: grasple_exercise_1_2_6
+:dropdown:
+:description: To find a vector orthogonal to a given vector in $\R^3$.
 
 ::::
 
 
 ::::{grasple} https://embed.grasple.com/exercises/30a7abfe-9d40-4faa-a848-83bd67e024a0?id=62406
-
 :label: grasple_exercise_1_2_7
+:dropdown:
+:description: To compute the norm of vectors in $\R^2$, $\R^3$, $\R^4$.  
 
 ::::
 
 
 ::::{grasple} https://embed.grasple.com/exercises/34bbb9e1-207e-4c06-8686-1c32b3f3d0aa?id=78751
-
 :label: grasple_exercise_1_2_8
+:dropdown:
+:description: To find a vector orthogonal to a given vector in $\R^4$.
+
+
+
+::::{grasple} https://embed.grasple.com/exercises/7dc339bb-fe79-4eb9-914c-ea1a7ca85a85?id=69737
+:label: grasple_exercise_1_2_9
+:dropdown:
+:description: To find the norm of the 'all one' vector in $\mathbb{R}^n$.
 
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/7dc339bb-fe79-4eb9-914c-ea1a7ca85a85?id=69737
-
-:label: grasple_exercise_1_2_9
+::::{grasple} https://embed.grasple.com/exercises/8de90b0e-e89a-49a6-aa63-1b1e39f6e98e?id=79262
+:label: grasple_exercise_1_2_10
+:dropdown:
+:description: To find the distance between two vectors in $\mathbb{R}^4$.
 
 ::::
 
 
 ::::{grasple} https://embed.grasple.com/exercises/d4dd1154-a3ec-497e-bc73-1cd96529f0e7?id=69741
+:label: grasple_exercise_1_2_11
+:dropdown:
+:description: Find $h$ such that the distance between two points has a given value $d$.
 
-:label: grasple_exercise_1_2_10
 
 ::::
 
 
 ::::{grasple} https://embed.grasple.com/exercises/c2242315-7e4f-463b-b3cf-09e9e15c8b2b?id=69739
-
-:label: grasple_exercise_1_2_11
+:label: grasple_exercise_1_2_12
+:dropdown:
+:description: To find a unit vector on a given line through $(0,0)$.
 
 ::::
 
 
 ::::{grasple} https://embed.grasple.com/exercises/67334454-d109-45a2-b640-545041ff896d?id=62416
-
-:label: grasple_exercise_1_2_12
+:label: grasple_exercise_1_2_13
+:dropdown:
+:description: Find $\text{proj}_{\mathbf{v}}(\mathbf{w})$ in $\R^2$.
 
 ::::
 
 
 ::::{grasple} https://embed.grasple.com/exercises/9705b078-6c91-42c6-9768-8a043115b881?id=62658
-
-:label: grasple_exercise_1_2_13
+:label: grasple_exercise_1_2_14
+:dropdown:
+:description: Find $\text{proj}_{\mathbf{v}}(\mathbf{w})$ in $\R^4$.
 
 ::::
 
 ::::{grasple} https://embed.grasple.com/exercises/531d3be2-dd62-4c21-b023-70e0b63809be?id=78747
-
-:label: grasple_exercise_1_2_14
+:label: grasple_exercise_1_2_15
+:dropdown:
+:description: Regarding norm and orthogonality of $\vect{u}$, $\vect{v}$, $\vect{u}-\vect{v}$  and  $\vect{u}+\vect{v}$.
 
 ::::
 
 
 ::::{grasple} https://embed.grasple.com/exercises/61ecdf6-4cfb-41ba-bc16-685fe8532471?id=62414
-
-:label: grasple_exercise_1_2_15
+:label: grasple_exercise_1_2_16
+:dropdown:
+:description: To show that $(\vect{u}+\vect{v})\ip(\vect{u}-\vect{v}) = \norm{\vect{u}}^2 - \norm{\vect{v}}^2$.
 
 ::::
 
 
 ::::{grasple} https://embed.grasple.com/exercises/c4d2743f-5f14-4812-9531-1a40c28c15cb?id=62413
-
-:label: grasple_exercise_1_2_16
+:label: grasple_exercise_1_2_17
+:dropdown:
+:description: To prove that $(\vect{v}+\vect{w})\ip\vect{x} = \vect{v}\ip\vect{x}+\vect{w}\ip\vect{x}$.
 
 ::::
 
 
 
 ::::{grasple} https://embed.grasple.com/exercises/407cb45d-2baf-4b0d-a1eb-6e51186e19f3?id=69738
-
-:label: grasple_exercise_1_2_17
+:label: grasple_exercise_1_2_18
+:dropdown:
+:description: What to conclude from  $\norm{\vect{u}+\vect{v}} = \norm{\vect{u}}+\norm{\vect{v}}$?
 
 ::::
 
 
 
 ::::{grasple} https://embed.grasple.com/exercises/c4c1c609-b1dd-4588-865f-53d7e8221f88?id=62689
+:label: grasple_exercise_1_2_19
+:dropdown:
+:description:  To prove that  $-1 \leq \dfrac{\vect{u}\ip\vect{u}}{\norm{\vect{u}}\,\norm{\vect{v}}} \leq  1$.
 
-:label: grasple_exercise_1_2_18
 
 ::::
 
 
 
 ::::{grasple} https://embed.grasple.com/exercises/2a2423c3-0907-40b7-bd5f-7607baf7cc09?id=62668
+:label: grasple_exercise_1_2_20
+:dropdown:
+:description: What to conclude from  $\text{proj}_{\mathbf{v}}(\mathbf{w_1} ) = \text{proj}_{\mathbf{v}}(\mathbf{w}_2)$?
 
-:label: grasple_exercise_1_2_19
 
 ::::
