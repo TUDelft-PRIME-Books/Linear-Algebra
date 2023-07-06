@@ -97,9 +97,10 @@ In this case it is a lot easier to decide whether $\mathbf{b}$ is a linear combi
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/ac63b286-09e1-46e5-91fc-952b54436293?id=78560
+::::{grasple}
+:url: https://embed.grasple.com/exercises/ac63b286-09e1-46e5-91fc-952b54436293?id=78560
 :label: grasple_exercise_2_2_1
-
+:dropdown:
 
 ::::
 
@@ -212,8 +213,10 @@ There is also a possibility where the span of three non-zero vectors in $\mathbb
 
 ::::
 
-::::{grasple} https://embed.grasple.com/exercises/676d672c-74fc-4545-99ba-6b308af566ce?id=78542
+::::{grasple}
+:url: https://embed.grasple.com/exercises/676d672c-74fc-4545-99ba-6b308af566ce?id=78542
 :label: grasple_exercise_2_2_2
+:dropdown:
 
 ::::
 
@@ -474,36 +477,48 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 
 ## Grasple Exercises
 
-::::{grasple} https://embed.grasple.com/exercises/9c780d10-9a8f-4fd6-9471-3f1a0e46c009?id=70171
+::::{grasple}
+:url: https://embed.grasple.com/exercises/9c780d10-9a8f-4fd6-9471-3f1a0e46c009?id=70171
 :label: grasple_exercise_2_2_7
+:dropdown:
 
 ::::
 
-::::{grasple} https://embed.grasple.com/exercises/f74168ff-a448-4420-88d9-ebe7365a00a9?id=70172
+::::{grasple}
+:url: https://embed.grasple.com/exercises/f74168ff-a448-4420-88d9-ebe7365a00a9?id=70172
 :label: grasple_exercise_2_2_8
+:dropdown:
 
 ::::
 
-::::{grasple} https://embed.grasple.com/exercises/b760d9b9-d0ba-4875-b828-397e7a045283?id=70175
+::::{grasple}
+:url: https://embed.grasple.com/exercises/b760d9b9-d0ba-4875-b828-397e7a045283?id=70175
 :label: grasple_exercise_2_2_3
+:dropdown:
 
 ::::
 
 % ------------------------------------------------
 
-::::{grasple} https://embed.grasple.com/exercises/a8175390-3844-408c-b192-c4b05f9beb7b?id=70170
+::::{grasple}
+:url: https://embed.grasple.com/exercises/a8175390-3844-408c-b192-c4b05f9beb7b?id=70170
 :label: grasple_exercise_2_2_9
+:dropdown:
 
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/fab5c526-91ed-407b-9faa-645f40c22b8b?id=70169
+::::{grasple}
+:url: https://embed.grasple.com/exercises/fab5c526-91ed-407b-9faa-645f40c22b8b?id=70169
 :label: grasple_exercise_2_2_10
+:dropdown:
 
 ::::
 
-::::{grasple} https://embed.grasple.com/exercises/2167085c-2498-4694-9eac-abfeeb0ec307?id=70162
+::::{grasple}
+:url: https://embed.grasple.com/exercises/2167085c-2498-4694-9eac-abfeeb0ec307?id=70162
 :label: grasple_exercise_2_2_11
+:dropdown:
 
 ::::
 
@@ -511,27 +526,35 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 
 % ------------------------------------------------
 
-::::{grasple} https://embed.grasple.com/exercises/493831d9-ab4a-4f78-b9ea-7b707aa9f4c2?id=70174
+::::{grasple}
+:url: https://embed.grasple.com/exercises/493831d9-ab4a-4f78-b9ea-7b707aa9f4c2?id=70174
 :label: grasple_exercise_2_2_4
+:dropdown:
 
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/c008320d-9d0e-463f-8bb7-344988f10438?id=70176
+::::{grasple}
+:url: https://embed.grasple.com/exercises/c008320d-9d0e-463f-8bb7-344988f10438?id=70176
 :label: grasple_exercise_2_2_12 
+:dropdown:
 
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/b4f4dc1f-4f56-41e8-b16d-a2694e90890c?id=70181
+::::{grasple}
+:url: https://embed.grasple.com/exercises/b4f4dc1f-4f56-41e8-b16d-a2694e90890c?id=70181
 :label: grasple_exercise_2_2_5
+:dropdown:
 
 ::::
 
 % ------------------------------------------------
 
-::::{grasple} https://embed.grasple.com/exercises/45bc5527-e79b-4198-b6b7-9b3168d9d1ff?id=70182
+::::{grasple}
+:url: https://embed.grasple.com/exercises/45bc5527-e79b-4198-b6b7-9b3168d9d1ff?id=70182
 :label: grasple_exercise_2_2_6
+:dropdown:
 
 ::::
 
@@ -542,7 +565,8 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 %<hr style="height:5px; border-width:5px">
 %<iframe id="grasple_exercise_222" height="560" src="https://embed.grasple.com/exercises/f365becd-ee34-4fe9-854c-38fd188bb397?id=76699" title="Grasple Exercise 76699" width="100%"></iframe>
 
-%::::{grasple} https://embed.grasple.com/exercises/2fe8b445-bb2e-412b-a2b8-593e2a0214cf?id=76698
+%::::{grasple}
+%:url: https://embed.grasple.com/exercises/2fe8b445-bb2e-412b-a2b8-593e2a0214cf?id=76698
 %:label: grasple_exercise_221
 
 %::::
@@ -550,7 +574,8 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 
 
 
-%::::{grasple} https://embed.grasple.com/exercises/f365becd-ee34-4fe9-854c-38fd188bb397?id=76699
+%::::{grasple}
+%:url: https://embed.grasple.com/exercises/f365becd-ee34-4fe9-854c-38fd188bb397?id=76699
 %:label: grasple_exercise_222
 
 %::::
