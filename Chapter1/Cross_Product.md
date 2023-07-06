@@ -399,14 +399,16 @@ $$
 
 ## Grasple Exercises
 
-::::{grasple} https://embed.grasple.com/exercises/c5058abb-3d5b-4e8c-b836-40aeff08a301?id=65634
+::::{grasple}
+:url: https://embed.grasple.com/exercises/c5058abb-3d5b-4e8c-b836-40aeff08a301?id=65634
 :label: grasple_exercise_1_3_1
 :dropdown:
 :description: Just to compute $\vect{u}\times\vect{v}$.
 
 ::::
 
-::::{grasple} https://embed.grasple.com/exercises/529702ff-6fc3-46ab-a148-7d93d081870b?id=63138
+::::{grasple}
+:url: https://embed.grasple.com/exercises/529702ff-6fc3-46ab-a148-7d93d081870b?id=63138
 :label: grasple_exercise_1_3_2
 :dropdown:
 :description: Compute $\vect{u}\times\vect{v}$ and  $\vect{v}\times\vect{u}$.
@@ -414,7 +416,8 @@ $$
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/48448d89-c286-45c5-9af4-780329a8821f?id=65637
+::::{grasple}
+:url: https://embed.grasple.com/exercises/48448d89-c286-45c5-9af4-780329a8821f?id=65637
 :label: grasple_exercise_1_3_3
 :dropdown:
 :description: Compute $\vect{u}\times\vect{v}$  when $\vect{u}= c\vect{v}$.  
@@ -422,7 +425,8 @@ $$
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/f6c1bb4b-e63e-492e-910a-5a8c433de281?id=75093
+::::{grasple}
+:url: https://embed.grasple.com/exercises/f6c1bb4b-e63e-492e-910a-5a8c433de281?id=75093
 :label: grasple_exercise_1_3_4
 :dropdown:
 :description: Cross product in $\R^4$?
@@ -430,7 +434,8 @@ $$
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/84b635e4-2278-4882-915d-6f8b253213a3?id=78749
+::::{grasple}
+:url: https://embed.grasple.com/exercises/84b635e4-2278-4882-915d-6f8b253213a3?id=78749
 :label: grasple_exercise_1_3_5
 :dropdown:
 :description: Find alle values of  parameter $p$ for which either $\vect{u}\ip\vect{v}= 0$ or $\vect{u}\times\vect{v} = \vect{0}$.
@@ -438,7 +443,8 @@ $$
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/6b660feb-fc36-47a0-bf86-e424d28edf6f?id=63354
+::::{grasple}
+:url: https://embed.grasple.com/exercises/6b660feb-fc36-47a0-bf86-e424d28edf6f?id=63354
 :label: grasple_exercise_1_3_6
 :dropdown:
 :description: To compute the area of a  paralellogram given by four points in $\R^3$.
@@ -446,7 +452,8 @@ $$
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/8a0fc383-dd10-4f31-931a-c62c0d650bd9?id=63479
+::::{grasple}
+:url: https://embed.grasple.com/exercises/8a0fc383-dd10-4f31-931a-c62c0d650bd9?id=63479
 :label: grasple_exercise_1_3_7
 :dropdown:
 :description: To compute the area of a  triangle given by three points in $\R^3$. 
@@ -454,7 +461,8 @@ $$
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/3e62cc2d-5860-43c2-b8aa-e54ab3a9a981?id=79268
+::::{grasple}
+:url: https://embed.grasple.com/exercises/3e62cc2d-5860-43c2-b8aa-e54ab3a9a981?id=79268
 :label: grasple_exercise_1_3_8
 :dropdown:
 :description: To compute and compare $(\vect{u}\times\vect{v})\times\vect{w}$ and $\vect{u}\times(\vect{v}\times\vect{w})$.
@@ -462,7 +470,8 @@ $$
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/122013a2-1012-4203-99c7-ed5deafd82a4?id=78786
+::::{grasple}
+:url: https://embed.grasple.com/exercises/122013a2-1012-4203-99c7-ed5deafd82a4?id=78786
 :label: grasple_exercise_1_3_9
 :dropdown:
 :description: What to conclude from $\vect{a}\ip\vect{c} = \vect{b}\ip\vect{c}$,  from  $\vect{a}\times\vect{c} = \vect{b}\times\vect{c}$, from  both\,?
