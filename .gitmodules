@@ -1,3 +1,3 @@
 [submodule "sphinx_grasple"]
-  path = sphing_grasple
+  path = sphinx_grasple
   url = https://github.com/dbalague/sphinx-grasple.git
