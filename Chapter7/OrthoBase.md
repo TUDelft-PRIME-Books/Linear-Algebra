@@ -64,7 +64,7 @@ We can remedy this by considering the basis $\mathcal{B}_{2}=\left\{\vect{u}_{1}
 
 $$\vect{u}_{1}=\frac{\vect{v}_{1}}{\norm{\vect{v}_{1}}}=\frac{1}{\sqrt{2}}\begin{bmatrix}1\\-1\\0\end{bmatrix}\quad\text{and}\quad \vect{u}_{2}=\frac{\vect{v}_{2}}{\norm{\vect{v}_{2}}}=\frac{1}{\sqrt{6}}\begin{bmatrix}1\\1\\-2\end{bmatrix}.$$
 
-This new basis $\mathcal{B}_{2}$ is an orthonormal basis. We have kept the directions of $\vect{v}_{1}$ and $\vect{v}_{2}$, but we have made sure that their norms are now 1.
+This new basis $\mathcal{B}_{2}$ is an orthonormal basis. We have kept the directions of $\vect{v}_{1}$ and $\vect{v}_{2}$, but we have made sure that their norms are now $1$.
 
 :::
 
@@ -95,6 +95,8 @@ by the orthogonality of $\left\{\vect{v}_{1},...,\vect{v}_{k}\right\}$. This imp
 If $\vect{v}_{1},...,\vect{v}_{k}$ is orthonormal, then $\vect{v}_{j}\ip\vect{v}_{j}=1$ for every $j$, so this reduces to $c_{j}=\vect{v}\ip\vect{v}_{j}$.
 
 :::
+
+In this theorem, it is vital that $\vect{v}$ is known to be in $V$. If $\vect{v}$ is not in $V$, then it can definitely not be expressed as a linear combination of basis elements of $V$.  However, the right hand side appearing in {prf:ref}`Thm:OrthoBase:WeightsOrthoBase` is still very important. It comes back in {prf:ref}`Thm:OrthoBase:OrthoDecomp`.
  
 ### Orthogonal projections revisited
 
@@ -167,7 +169,7 @@ Furthermore, $\vect{u}_{V}\ip\vect{u}_{V}=0$ implies $\vect{u}_{V}=\vect{0}$, so
 <li>
 
 
-We find, for arbitrary $\vect{v}$ in $V$:
+For arbitrary $\vect{v}$ in $V$, $\vect{u}_{V}-\vect{v}$ is in $V$. As $\vect{u}_{V^{\bot}}$ is in $V^{\bot}$, this implies $(\vect{u}_{V}-\vect{v})\ip \vect{u}_{V^{\bot}}=0$. Therefore, 
 
 $$\begin{align*}
 \norm{\vect{u}-\vect{v}}&=\sqrt{(\vect{u}_{V}+\vect{u}_{V^{\bot}}-\vect{v})\ip(\vect{u}_{V}+\vect{u}_{V^{\bot}}-\vect{v})}\\
@@ -202,10 +204,10 @@ $$\vect{w}=\frac{\vect{u}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{
 
 Since all the $\vect{v}_{i}$'s are in $V$, so is $\vect{w}$. It suffices to show that $\vect{u}-\vect{w}$ is in $V^{\bot}$, because then $\vect{u}=\vect{w}+(\vect{u}-\vect{w})$ must be the decomposition as in {prf:ref}`Prop:OrthoComp:PrthoDecomp`.
 
-To prove this, we check that $\vect{w}$ is orthogonal to all the $\vect{v}_{i}$'s, which form a basis of $V$. This follows readily: 
+To prove this, we check that $\vect{u}-\vect{w}$ is orthogonal to all the $\vect{v}_{i}$'s, which form a basis of $V$. This follows readily: 
 
 $$\begin{align*}
-    \vect{w}\ip \vect{v}_{i}&=\left(\vect{u}-\frac{\vect{u}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{u}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}_{k}\right)\ip\vect{v}_{i}\\
+    (\vect{u}-\vect{w})\ip \vect{v}_{i}&=\left(\vect{u}-\frac{\vect{u}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{u}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}_{k}\right)\ip\vect{v}_{i}\\
     &=\vect{u}\ip\vect{v}_{i}-\frac{\vect{u}\ip\vect{v}_{i}}{\vect{v}_{i}\ip\vect{v}_{i}}(\vect{v}_{i}\ip\vect{v}_{i})=0.
 \end{align*}$$
 
@@ -222,7 +224,7 @@ A vector and its orthogonal projection on the subspace $V$. Note that this proje
 :::{prf:example}
 :label: Ex:OrthoBase:ExofOrthoProj
 
-Let us revisit the plane $\mathcal{P}$ with basis $\mathcal{B}=\left\{\vect{v}_{1},\vect{v}_{2}\right\}$ from {prf:ref}`Ex:OrthoBase:ExOfOrthoBase`, i.e.
+Let us revisit the plane $\mathcal{P}$ with orthogonal basis $\mathcal{B}=\left\{\vect{v}_{1},\vect{v}_{2}\right\}$ from {prf:ref}`Ex:OrthoBase:ExOfOrthoBase`, i.e.
 
 $$\vect{v}_{1}=
 \begin{bmatrix}
@@ -372,7 +374,7 @@ A matrix for which the columns are orthogonal is not necessarily an orthogonal m
 
 :::
 
-Let us consier some examples and non-examples.
+Let us consider some examples and non-examples.
 
 :::{prf:example}
 
@@ -456,7 +458,14 @@ that is, when $\left\{\vect{v}_{1},\vect{v}_{2},...,\vect{v}_{k}\right\}$ is an 
 
 :::
 
-The main reason orthogonal matrices are so useful is that they preserve lengths and angles. That this is so is shown in {prf:ref}`Prop:OrthoBase:OrthoMatandInnerProd`.
+:::{prf:corollary}
+:label: Cor:OrthoBase:TransisInv
+
+A square matrix $A$ is orthogonal if and only if $A^{T}=A^{-1}$.
+
+:::
+
+The main reason orthogonal matrices are so useful is that they preserve lengths and angles. That this is so, is shown in {prf:ref}`Prop:OrthoBase:OrthoMatandInnerProd`.
 
 :::{prf:proposition}
 :label: Prop:OrthoBase:OrthoMatandInnerProd
@@ -473,7 +482,7 @@ $(A\vect{v}_{1})\ip(A\vect{v}_{2})=\vect{v}_{1}\ip\vect{v}_{2}$,
 
 <li>
 
-$\norm{A\vect{v}_{1}}=\norm{vect{v}_{1}}$,
+$\norm{A\vect{v}_{1}}=\norm{\vect{v}_{1}}$,
 
 </li>
 
@@ -493,7 +502,13 @@ Using $A^{T}A=I_{n}$, we find:
 
 $$(A\vect{v}_{1})\ip(A\vect{v}_{2})=(A\vect{v}_{1})^{T}(A\vect{v}_{2})=\vect{v}_{1}^{T}A^{T}A\vect{v}_{2}=\vect{v}_{1}^{T}\vect{v}_{2}=\vect{v}_{1}\ip\vect{v}_{2},$$
 
-which establishes [i.](#It:OrthoBase:OrthoMatandInnerProd). The other points are direct consequences of [i.](#It:OrthoBase:OrthoMatandInnerProd); we leave their proofs to the reader.
+which establishes [i.](#It:OrthoBase:OrthoMatandInnerProd) The other points are direct consequences of [i.](#It:OrthoBase:OrthoMatandInnerProd); we leave their proofs to the reader.
+
+:::
+
+:::{prf:Remark}
+
+Many statements about orthogonal matrices still hold for non-square matrices, as long as the columns form an orthonormal set. Both {prf:ref}`Prop:OrthoBase:OrthoMat` and {prf:ref}`Prop:OrthoBase:OrthoMatandInnerProd` remain precisely the same, with the same proof, for an $m\times n$ matrix $A$. {prf:ref}`Cor:OrthoBase:TransisInv` doesn't hold for non-square matrices, as the inverse of a non-square matrix cannot exist.
 
 :::
 
@@ -507,6 +522,6 @@ An $n\times n$-matrix $A$ is orthogonal if and only if its rows are orthonormal.
 
 :::{prf:proof}
 
-We know that $A$ is orthogonal if and only if $A^{T}A=I_{n}$. But this implies $A^{T}=A^{-1}$ and therefore also $AA^{T}=I_{n}$. Since $(A^{T})^{T}A^{T}=AA^{T}=I_{n}$, $A^{T}$ must be orthogonal by {pref:ref}`Prop:OrthoBase:OrthoMat`. Hence the columns of $A^{T}$, which are the rows of $A$, must be orthonormal.
+We know that $A$ is orthogonal if and only if $A^{T}A=I_{n}$. But this implies $A^{T}=A^{-1}$ and therefore also $AA^{T}=I_{n}$. Since $(A^{T})^{T}A^{T}=AA^{T}=I_{n}$, $A^{T}$ must be orthogonal by {prf:ref}`Prop:OrthoBase:OrthoMat`. Hence the columns of $A^{T}$, which are the rows of $A$, must be orthonormal.
 
 :::

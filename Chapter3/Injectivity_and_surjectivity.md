@@ -302,10 +302,10 @@ $$
 so the system $A\mathbf{x}=\mathbf{u}$ can only be solved if $a_{1}+a_{2}=0$. This transformation is therefore not surjective.
 
 
-::::{figure} Images/Fig-InjSurj-NonInjEx.svg
+::::{figure} Images/Fig-InjSurj-NonSurjEx.svg
 :name: Fig:InjSurj:NonSurjEx
 
-The transformation $T$ from {prf:ref}`Ex:InjSurj:SurjEx` [i.](#Item:InjSurj:NonSurjEx) .  The green line on the right is the collection of all $\mathbf{b}$ for which the system $A\mathbf{x}=\mathbf{b}$ is consistent where $A$ is the standard matrix of $T$. Since this is not all of $\mathbb{R}^{2}$, $T$ is not surjective.
+The transformation $T$ from {prf:ref}`Ex:InjSurj:SurjEx` [i.](#Item:InjSurj:NonSurjEx) .  The green line is the collection of all $\mathbf{b}$ for which the system $A\mathbf{x}=\mathbf{b}$ is consistent where $A$ is the standard matrix of $T$. Since this is not all of $\mathbb{R}^{2}$, $T$ is not surjective.
 ::::
 
 </li>

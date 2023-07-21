@@ -1,7 +1,7 @@
 (Sec:OrthoComp)=
 # Orthogonal complements
 
-In this section, we will introduce the orthogonal complement of a subspace. This concept will help us compute orthogonal projections easily.
+In this section, we will introduce the orthogonal complement of a subspace. This concept will help us define orthogonal projections easily.
 
 :::{prf:definition}
 
@@ -17,11 +17,16 @@ in other words, it is the set of all vectors that are orthogonal to all of $V$.
 
 :::
 
-:::{prf:remark}
+:::{prf:Proposition}
 
 For a vector to be in $V^{\bot}$, it suffices that it is orthogonal to all elements in a basis of $V$ or, slightly more general, to all elements in a spanning set of $V$. 
 
 :::
+
+:::{prf:Proof}
+Exercise
+:::
+
 
 Let us consider some simple examples.
 
@@ -47,7 +52,7 @@ a_{2}
 \end{bmatrix}.
 $$
 
-Then $\vect{u}$ is in $V^{\bot}$ is and only if $\vect{u}\ip\vect{v}=a_{1}+2a_{2}=0$. So we find that $V^{\bot}$ is the plane described by the equation $a_{1}+2a_{2}=0$. The vector $\vect{v}$ is a normal vector to this plane.
+Then $\vect{u}$ is in $V^{\bot}$ if and only if $\vect{u}\ip\vect{v}=a_{1}+2a_{2}=0$. So we find that $V^{\bot}$ is the line described by the equation $a_{1}+2a_{2}=0$. The vector $\vect{v}$ is a normal vector to this line.
 
 </li>
 
@@ -75,9 +80,9 @@ $V^{\bot}$ now consists of those vectors $\vect{u}$ that satisfy both $\vect{u}\
 $$
 V^{\bot}=\left\{
     \begin{bmatrix}
-    1t\\
+    -t\\
     2t\\
-    2t
+    0
     \end{bmatrix}
     \mid t\in\R
 \right\},
@@ -99,7 +104,7 @@ Both examples are illustrated in {numref}`Figure %s <Fig:OrthoComp:OrthoComp>`.
 The orthogonal complement of a 1-dimensional subspace of $\R^{2}$ (left) and of a 2-dimensional subspace of $\R^{3}$ (right).
 ```
 
-In {prf:ref}`Ex:OrthoComp:OrthoCompOfVect`, we found $V^{\bot}$ to be once a plane through the origin and once a line through the origin. It was therefore, in both cases, a subspace. This is not a coincidence, as {prf:ref}`Prop:OrthoComp:OrthoComplisSpace` shows.
+In {prf:ref}`Ex:OrthoComp:OrthoCompOfVect`, we twice found $V^{\bot}$ to be a subspace. This is not a coincidence, as {prf:ref}`Prop:OrthoComp:OrthoComplisSpace` shows.
 
 :::{prf:proposition}
 :label: Prop:OrthoComp:OrthoComplisSpace
@@ -119,13 +124,13 @@ If $\vect{v}$ is both in $V$ and $V^{\bot}$, then $\vect{v}\ip\vect{v}=0$ so $\v
 
 :::
 
-As we have seen in {numref}`Sec:SubspacesRn`, both the column space and null space of any $n\times m$ matrix are subspaces of $\R^{n}$ and $\R^{m}$, respectively. It turns out that the transposition ${}^{T}$ and the orthogonal complement ${}^{\bot}$ relate these two spaces to each other.
+As we have seen in {numref}`Sec:SubspacesRn`, the column space and null space of any $n\times m$ matrix are subspaces of $\R^{n}$ and $\R^{m}$, respectively. It turns out that the transposition ${}^{T}$ and the orthogonal complement ${}^{\bot}$ relate these two spaces to each other.
 
 
 :::{prf:proposition}
 :label: Prop:OrthoComp:OrthoComplementNulA
 
-For any $n\times m$ matrix $A$ we have $\mathrm{Col}(A^{T})^{\bot}=\mathrm{Nul}(A)$ and $\mathrm{Col}(A)^{\bot}=\mathrm{Nul}(A^{T})$.
+For any matrix $A$ we have $\mathrm{Col}(A^{T})^{\bot}=\mathrm{Nul}(A)$ and $\mathrm{Col}(A)^{\bot}=\mathrm{Nul}(A^{T})$.
 
 :::
 
@@ -167,10 +172,10 @@ $$
 4\\
 -1\\
 -3
-\end{bmatrix}, \quad\text{and}\quad\vect{v}_{3}
+\end{bmatrix}, \quad\text{and}\quad\vect{v}_{3}=
 \begin{bmatrix}
 4\\
-11\
+11\\
 2\\
 9\\
 1
@@ -220,7 +225,7 @@ If $V$ is a subspace of $\R^{n}$, then $\dim(V)+\dim(V^{\bot})=n$.
 :class: dropdown
 
 
-Let $A$ be a matrix for which the columns are a basis of $V$. Then $n$ is the number of rows of $A$ which in turn is the number of columns of $A^{T}$. By {prf:ref}`Thm:BasisDim:DimensionTheorem` and {prf:ref}`Prop:OrthoComp:OrthoComplementNulA`, we find 
+Let $A$ be a matrix for which the columns are a basis of $V$. Then $n$ is the number of rows of $A$ which in turn is the number of columns of $A^{T}$. By {prf:ref}`Thm:BasisDim:DimensionTheorem`, $\dim(\mathrm{Col}(A^{T}))+\dim(\mathrm{Nul}(A^{T}))$ is the number of columns of $A^{T}$, which is the number of rows of $A$. Using {prf:ref}`Prop:OrthoComp:OrthoComplementNulA`, this yields 
 
 $$
 n=\dim(\mathrm{Col}(A^{T}))+\dim(\mathrm{Nul}(A^{T}))=\dim(\mathrm{Col}(A^{T}))+\dim(\mathrm{Col}(A)^{\bot}).
@@ -273,3 +278,43 @@ Putting $\vect{u}_{V}=c_{1}\vect{v}_{1}+\cdots+c_{k}\vect{v}_{k}$ and $\vect{u}_
 
 A subspace $V$, a vector $\vect{u}$ and the orthogonal decomposition of $\vect{u}$ with respect to $V$.
 ```
+
+:::{prf:Example}
+
+Consider the vectors
+
+$$
+\vect{v}_{1}=\begin{bmatrix}
+1\\
+1\\
+1
+\end{bmatrix}
+,\quad \vect{v}_{2}=\begin{bmatrix}
+2\\
+-1\\
+2
+\end{bmatrix}
+,\quad\text{and}\quad\vect{u}=\begin{bmatrix}
+2\\
+-3\\
+4
+\end{bmatrix}
+$$
+
+and let $V$ be the subspace  of $\R^{3}$ spanned by $\vect{v}_{1}$ and $\vect{v}_{2}$. Put 
+$$
+\vect{u}_{V}=\begin{bmatrix}
+3\\
+-3\\
+3
+\end{bmatrix}\quad\text{and}\quad
+\vect{u}_{V^{\bot}}=\begin{bmatrix}
+-1\\
+0\\
+1
+\end{bmatrix}.
+$$
+
+It is easy to check that, as the notation suggests, $\vect{u}_{V}$ is in $V$ (since $\vect{u}_{V}=-\vect{v}_{1}+2\vect{v}_{2}$) and $\vect{u}_{V^{\bot}}$ is in $V^{\bot}$ (since $\vect{u}_{V^{\bot}}\ip\vect{v}_{1}=0=\vect{u}_{V^{\bot}}\ip\vect{v}_{2}$). So $\vect{u}=\vect{u}_{V}+\vect{u}_{V^{\bot}}$ is the orthogonal decomposition of $\vect{u}$ with respect to $V$. How we can compute such a decomposition will be shown in {numref}`Section %s <Sec:OrthoBase>`.
+
+:::
