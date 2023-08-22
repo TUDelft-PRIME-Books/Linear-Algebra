@@ -10,7 +10,7 @@ $$
    A - B = A + (-1)B,
 $$
 
-but we did not mention division of matrices. 
+but we did not mention division of matrices. <BR>
 For two numbers  $a$ and $b$, with $a \neq 0$, the equation
 
 $$
@@ -340,7 +340,7 @@ We leave the verification as an exercise.
 :label: Exc:MatrixInv:CheckBA=I
 
  
-Show that matrix $B$  proposed in {prf:ref}`Prop:MatrixInv:Inverse2x2` indeed  satisfies
+Verify that the matrix $B$  proposed in {prf:ref}`Prop:MatrixInv:Inverse2x2` indeed  satisfies
 
 $$
   AB = BA = I.
@@ -591,7 +591,7 @@ $$
 In particular, if the matrix $B$ has only one column, i.e., if it is a vector, then
 
 $$
-  AX = \mathbf{b} \quad \text{has the unique solution} \quad X = A^{-1}\mathbf{b}.
+  A\mathbf{x} = \mathbf{b} \quad \text{has the unique solution} \quad \mathbf{x} = A^{-1}\mathbf{b}.
 $$
 
 
@@ -666,7 +666,7 @@ $$
  and likewise
  
 $$
-  \mathbf{x_2}=  \frac{1}{2}\begin{bmatrix}-4 & 2 \\ 3 & -1 \end{bmatrix}
+  \mathbf{x_2}=  A^{-1}\mathbf{b_2}= \frac{1}{2}\begin{bmatrix}-4 & 2 \\ 3 & -1 \end{bmatrix}
   \begin{bmatrix}2  \\ 10 \end{bmatrix} =
   \begin{bmatrix}6  \\ -2 \end{bmatrix}.
 $$
@@ -699,28 +699,48 @@ A = I.
 $$
 'Fallacious proof':  
 
-$$
-  A^2 = A  \quad\Longrightarrow \quad A^{-1}A^2 = A^{-1}A = I  \quad \Longrightarrow \quad A = I,
-$$
+Assume   $A^2 = A$. 
 
-since 
+Then 
 
 $$
-  A^{-1}A^2 = A^{-1}(A\,A) = (A^{-1}A)A = IA = A.
+   A^{-1}A^2 = A^{-1}A = I.
+$$
+
+On the other hand
+
+$$
+   A^{-1}A^2 = A^{-1}(A\,A) = (A^{-1}A)A = IA = A.
+$$
+
+So
+
+$$
+   I = A^{-1}A^2  = A,
+$$
+
+which 'proves' that  $A=I$.  
+
+
+
+Somewhere something **must** have gone wrong, as the following counterexample shows. 
+
+For the matrix  $B = \begin{bmatrix} \frac12 & \frac12 \\ \frac12 & \frac12  \end{bmatrix}$ 
+
+it can be checked that
+
+$$
+   B^2 = B,
+$$   
+
+
+whereas obviously
+
+$$
+   B \neq O, \quad B \neq I.
 $$
 
 
-Somewhere something **must** have gone wrong, as the following counterexample shows:
-
-$$
-  \begin{bmatrix} \frac12 & \frac12 \\ \frac12 & \frac12  \end{bmatrix}^2
-  =
-  \begin{bmatrix} \frac12 & \frac12 \\ \frac12 & \frac12  \end{bmatrix}
-  \quad\text{whereas} \quad
-  \begin{bmatrix} \frac12 & \frac12 \\ \frac12 & \frac12  \end{bmatrix}
-  \neq
-  \begin{bmatrix} 1 & 0 \\ 0 & 1  \end{bmatrix}
-$$
 
 So, where exactly did it go wrong?!
 
@@ -797,7 +817,7 @@ which proves that indeed $\dfrac1c A^{-1} = (cA)^{-1}$.
 <li>
 
   Since it is given  that $A^{-1}$ exists we can proceed as follows, where we  make use of the  characteristic property
-  $  B^TA^T = (AB)^T$
+  $  B^TA^T = (AB)^T$.
   
 <BR>
 
@@ -962,7 +982,7 @@ $$
 $$
 
 For the existence of a solution of this equation {prf:ref}`Prop:MatrixInv:InvertibleIndepCols` tells us
-it is <u>necessary</u>  that $A$ has independent columns, and  we can furthermore read off that the columns of the matrix 
+it is <u>necessary</u>  that $A$ has linearly independent columns, and  we can furthermore read off that the columns of the matrix 
 $X$ will be the (unique)  solutions of the linear systems
 
 $$
@@ -1122,7 +1142,7 @@ It wasn't, as the next proposition shows.
 :label: Prop:MatrixInv:Algorithm
 
 
-A square matrix  $A$ is invertible if and only it has independent columns.
+A square matrix  $A$ is invertible if and only it has linearly independent columns.
 
 In that case the inverse can be found by reducing the matrix 
 
@@ -1147,7 +1167,7 @@ $$
 
 
 ::::::{prf:proof}
-We have already seen ({prf:ref}`Prop:MatrixInv:InvertibleIndepCols`) that an invertible matrix has independent columns,
+We have already seen ({prf:ref}`Prop:MatrixInv:InvertibleIndepCols`) that an invertible matrix linearly independent columns,
 which implies that the reduced echelon form of $A$ is indeed the identity matrix. And then it is clear that via row operations we get
 
 $$
@@ -1284,7 +1304,7 @@ $$
 \end{array}\right]
 \begin{array}{l}
 [R_1] \\
-{[(-\frac12)R_1]} \\
+{[(-\frac12)R_2]} \\
 \end{array} \\ 
     &\sim&
 \left[\begin{array}{rr|rr}1 &  0 & -3 &  2\\0 & 1 & 1 & -\nicefrac12
@@ -1384,8 +1404,8 @@ $$
 
 
 For an $n\times n$ matrix $A$, the following statements are equivalent. 
-
-So, each of the following properties is a characterization of invertibility of a square matrix $A$:
+<BR>
+That is, each of the following properties is a characterization of invertibility of a square matrix $A$:
 <ul>
 <li>
 
@@ -1411,25 +1431,20 @@ $A$ is row equivalent to the identity matrix $I_n$;
 </li>
 <li>
 
-$A$ has independent columns;
+$A$ has linearly independent columns;
 		
 </li>
 
 <li>
 
-The equation $A\vect{x} = \vect{0}$ has only the trivial solution $\vect{x} = \vect{0}$;
+the equation $A\vect{x} = \vect{0}$ has only the trivial solution $\vect{x} = \vect{0}$;
 		
 </li>
 
 <li>
 
-$A$ can be written as a product of elementary matrices:
+$A$ can be written as a product of elementary matrices: $A = E_1E_2\cdots E_k$.
 
-<BR>
-
-$$
-A = E_1E_2\cdots E_k.		
-$$
 
 </li>
 </ul>
@@ -1460,13 +1475,13 @@ Show that invertibility of an $n\times n$ matrix $A$ is also equivalent to
 <ul>
 <li>
 
- There is a matrix $B$ such that $BA = I$ ;
+ there exists a matrix $B$ such that $BA = I$;
 		
 
 </li>
 <li>
 
-$A$ has independent rows;
+$A$ has linearly independent rows;
 		
 
 </li>

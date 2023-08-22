@@ -886,10 +886,10 @@ $$
   y_i - (0.25x + 1.75),
 $$
 
-which is this context are called **residues**, becomes
+which in this context are called **residues**, becomes
 
 $$
-  \sum_{i=1}^4 (y_i - (0.25x + 1.75))^2 = 0^2 + 0.25^2 + 0.25^2 + 0^2 = 0.125
+  \sum_{i=1}^4 (y_i - (0.25x + 1.75))^2 = 0^2 + 0.25^2 + 0.25^2 + 0^2 = 0.125.
 $$
 
 To find the least squares line we consider the four equations in the form
@@ -920,10 +920,10 @@ $$
         4 &   12 &   10 \\
         12 &   46 &   33 
        \end{array}
-  \right]
+  \right],
 $$
 
-gives a unique least squares solution, and it is $\hat{a} = 1.6$, $\hat{b} = 0.3$.
+give  a unique least squares solution, and it is $\hat{a} = 1.6$, $\hat{b} = 0.3$.
 
 {numref}`Figure %s <Fig:LeastSquares:LSline>` shows both lines.
 
@@ -942,14 +942,14 @@ $$
    (2 - (1.6+0.3\cdot1))^2 + (2 - (1.6+0.3\cdot2))^2 + (3 - (1.6+0.3\cdot4))^2 + (3 - (1.6+0.3\cdot5))^2 = 0.1^2 + 0.2^2 + 0.2^2 + 0.1^2 = 0.1.
 $$
 
-This is indeed slightly better than with the line found 'at first sight'.
+This is indeed slightly better than with the line found 'at first sight', where the sum was equal to  $0.125$.
 ::::
 
 We can even find a ready-made formula for the least squares line through $n$ given points 
 $(x_1,y_1), (x_2, y_2), \ldots, (x_n, y_n)$. 
 
 ::::{prf:example}
-The coefficients least squares line  $y = \hat{a}  + \hat{b}x$ for the set of points
+The coefficients of the least squares line  $y = \hat{a}  + \hat{b}x$ for the set of points
 $(x_1,y_1), (x_2, y_2), \ldots, (x_n, y_n)$  are given by
 
 $$
@@ -1028,7 +1028,7 @@ $$
             \vdots   & \vdots \\
          1 & x_n     \end{array}\right]^T 
     \left[\begin{array}{c} 
-          y_1 \\ y_2 \\  \vdots \\  \vdots   \\ y_n  \end{array}\right]     
+          y_1 \\ y_2 \\   \vdots   \\ y_n  \end{array}\right]     
     = 
     \left[\begin{array}{c} 
           \sum y_i \\ \sum x_iy_i  \end{array}\right]   
@@ -1057,7 +1057,7 @@ $$
          \Sigma_x & \Sigma_{xx}     \end{array}\right] ^{-1} =
     \dfrac{1}{n\Sigma_{xx} - \Sigma_x^2}  \left[\begin{array}{cc} 
          \Sigma_{xx}  & -\Sigma_x \\
-         -\Sigma_x &   n  \end{array}\right]     
+         -\Sigma_x &   n  \end{array}\right],     
 $$
 
 we see the expressions  {eq}`Eq:Leastquares:GeneralLinefit`  readily appearing.
@@ -1070,8 +1070,9 @@ we see the expressions  {eq}`Eq:Leastquares:GeneralLinefit`  readily appearing.
 
 Fitting a line to a set of points, may be looked upon as fitting a linear combination of the functions $f_0(x) = 1$ and $f_1(x) = x$.
 Depending on the context we may also consider fitting a 
-linear combination of the functions $f_0(x) = 1$, $f_1(x) = x$ and $f_2(x) = x^2$, i.e., a  quadratic function.  In other words, a parabola  $y = a_0 + a_1x + a_2x^2$. 
-And we may even go beyond that.  Then we get a more general  *linear model*.
+linear combination of a larger set of 'basic' functions. <BR>
+For instance, when we use $f_0(x) = 1$, $f_1(x) = x$ and $f_2(x) = x^2$, we are in fact looking for  a  quadratic function  $y = a_0 + a_1x + a_2x^2$ that best fits the set of points. <BR>
+And we may even go beyond that.  Then we get a more general so-called *linear model*.
 
 ::::{prf:definition} Linear Model
 :label: Def:LeastSquares:LinModel
@@ -1102,7 +1103,7 @@ $$
 
 ::::
 
-The epithet *linear* refers to the fact that the parameters  $c_1, \ldots, c_k$ appear in the model linearly.  The functions  $f_i$ that are used in the model  definitely don't have to be linear.
+The epithet *linear* refers to the fact that the parameters  $c_1, \ldots, c_k$ appear in the model in a linear way.  The functions  $f_i$ that are used in the model  definitely don't have to be linear.
 
 
 ::::{prf:remark}
@@ -1155,11 +1156,11 @@ Several generalizations are possible.  We mention two.
      \begin{array}{c} (x_{11},x_{12},\ldots,x_{1k},y_1)  \\     
                       (x_{21},x_{22},\ldots,x_{2k},y_2)\\
                           \vdots \quad\quad \vdots \quad\quad \vdots\\
-                      (x_{n1},x_{n2},\ldots,x_{nk},y_2).
+                      (x_{n1},x_{n2},\ldots,x_{nk},y_2),
      \end{array}                
 :::
 
- We want to find the linear combination
+ and we want to find the linear combination
 
 
 <BR>
@@ -1171,7 +1172,13 @@ Several generalizations are possible.  We mention two.
 
   that best fits these data.
 
-  For instance,  to find the linear function that best fits the data in {eq}`Eq:LeastSquares:Data-n-dim`,  we can take $f_0(x_1,\ldots,x_k) = 1$ and $f_i(x_1,\ldots,x_k) = x_i$, for $i = 1, \ldots, k$.    
+  For instance,  to find the linear function 
+  
+  $$
+    y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_k x_k
+  $$
+  
+  that best fits the data in {eq}`Eq:LeastSquares:Data-n-dim`,  we can take $f_0(x_1,\ldots,x_k) = 1$ and $f_i(x_1,\ldots,x_k) = x_i$, for $i = 1, \ldots, k$.    
 
   In a least squares model  we then look for the parameters $\beta_1, \ldots, \beta_{\ell}$ that minimize  
   
@@ -1264,14 +1271,14 @@ $$
 for the points  
 
 $$
-  (\ln(x_1), \ln(y_1)), \ldots (\ln(x_n), \ln(y_n)).
+  (\ln(x_1), \ln(y_1)), \quad  \ldots\,, \quad  (\ln(x_n), \ln(y_n)).
 $$
 
-
-At the end we have to  'transform back' to find the 'best power fit'
+If we have found the least squares parameters $\hat{\alpha}$ and $\hat{\beta}$ for the transformed problem, at the end we have to  'transform back' to find the 'best power fit'.
 
 $$
-   y = ax^b, \quad   a = e^{\alpha},\,\,r = \beta.
+  ln(y) = \hat{\alpha} + \hat{\beta}\ln(x) 
+   \quad \Longrightarrow \quad y = ax^b, \,\,  a = e^{\hat{\alpha}},\,\,r = \hat{\beta}.
 $$
 
 {numref}`Figure %s  <Fig:LeastSquares:Powerfit>` shows what's going on. 

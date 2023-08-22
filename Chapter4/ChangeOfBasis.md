@@ -72,8 +72,10 @@ then any vector $\vect{v}$  in $S$ can  written as a linear combination of
 $\vect{b}_1, \vect{b}_2,\ldots,\vect{b}_m$ in a **unique** way, i.e.
 
 $$
-  \vect{v} = c_1\vect{b}_1 + c_2\vect{b}_2 + \ldots + c_m\vect{b}_m, \quad \text{for unique constants} \quad c_1,c_2,\ldots,c_m.
+  \vect{v} = c_1\vect{b}_1 + c_2\vect{b}_2 + \ldots + c_m\vect{b}_m, 
 $$
+
+for *unique* constants   $c_1,c_2,\ldots,c_m$ in $\R$.
 
 ::::
 
@@ -216,19 +218,19 @@ $$
 :name: Fig:ChangeOfBasis:AlternativeBasis
 
 
-The basis $(\vect{b}_1,\vect{b}_2)$ of {prf:ref}`Ex:ChangeOfBasis:BasicExampleR2`.
+The basis $\{\vect{b}_1,\vect{b}_2\}$ of {prf:ref}`Ex:ChangeOfBasis:BasicExampleR2`.
 ::::
 
-Recall that  the **standard basis** of $\R^n$ is given by:
+Recall that  the **standard basis** of $\R^n$ is given by
 
 $$ 
   \mathcal{E} = \{\vect{e_1}, \vect{e_2}, \ldots, \vect{e_n}\} =
-    \left( 
+    \left\{ 
      \begin{bmatrix} 1 \\ 0 \\ 0\\ \vdots \\ 0 \end{bmatrix},\,
      \begin{bmatrix} 0 \\ 1 \\ 0\\ \vdots \\ 0 \end{bmatrix},\,
     \,\,\ldots\,,\,\,
      \begin{bmatrix} 0 \\ 0 \\ 0\\ \vdots \\ 1 \end{bmatrix}
-  \right).
+  \right\}.
 $$
 
 With respect to the standard basis it is very easy to find coordinates.
@@ -404,7 +406,7 @@ We conclude this subsection with an example from physics.
 ::::{prf:example}
 :label: Ex:ChangeOfBasis:Lorentz
 
-Suppose $(x,y,z,t)$   and  $(x',y,z',t')$  are the coordinates of an event in two frames with the origins coinciding at  $t = t'= 0$  where the primed frame is seen from the unprimed frame as moving with speed  $v$  along the $x$-axis.
+Suppose $(x,y,z,t)$   and  $(x',y',z',t')$  are the coordinates of an event in two frames with the origins coinciding at  $t = t'= 0$  where the primed frame is seen from the unprimed frame as moving with speed  $v$  along the $x$-axis.
 
 The connection between two  systems can be rewritten by a four-dimensional 'space-time' coordinate transformation
 
@@ -420,8 +422,8 @@ $$
 Here  $c$ is the speed of light, and  $\gamma = \left(\sqrt{1 - \dfrac{v^2}{c^2}}\right)^{-1}$ the so-called Lorentz factor.
 
 
-Systems that move with a constant velocity with respect to each other are called **inertial systema**. 
-In each reference frame, an observer can use a local coordinate system (usually Cartesian coordinates in this context) to measure lengths, and a clock to measure time intervals. An event is something that happens at a point in space at an instant of time, or more formally a point in space-time. The transformation connects the space and time coordinates of an event as measured by an observer in each frame.
+Systems that move with a constant velocity with respect to each other are called **inertial systems**. 
+In each reference frame, an observer can use a local coordinate system (usually Cartesian coordinates in this context) to measure lengths, and a clock to measure time intervals. An event is something that happens at a point in space at an instant of time, or more formally a point in space-time. The transformation connects the space and time coordinates of an event as measured by an observers in the different frames.
 
 ::::
 
@@ -429,11 +431,12 @@ In each reference frame, an observer can use a local coordinate system (usually 
 
 In {numref}`Sec:LinTrafo` we have seen that every linear transformation $T:\R^n \to \R^m$ can be represented by its standard matrix
 
-:::{math}
+::::{math}
 :label: Eq:ChangeOfBasis:StandardMatrix
 
- A = \begin{bmatrix} T(\vect{e}_1) & T(\vect{e}_2) & \ldots & T(\vect{e}_n) \end{bmatrix}.
-:::
+A = \begin{bmatrix} T(\vect{e}_1) & T(\vect{e}_2) & \ldots & T(\vect{e}_n) \end{bmatrix}.
+
+::::  
 
 This means that for each vector $\vect{v}$ in $\R^n$ it holds that
 
@@ -459,12 +462,13 @@ $$
 
 ::::{prf:proof} 
 
-We  use the definition of the coordinate vector and the linearity of the transformation. In fact we can play copycat with the proof of  Equation {eq}`Eq:ChangeOfBasis:StandardMatrix` in the section of linear transformations.
+We  use the definition of the coordinate vector and the linearity of the transformation. In fact we can play copycat with the proof of 
+{prf:ref}`Thm:LinTrafo:LinTrafo=MatrixTrafo` in the section of linear transformations.
 
 Indeed, suppose that $\vect{v}$ is a vector in $\R^n$, and that
 
 $$
-    [\vect{v}]_{\mc{B}} = \begin{bmatrix} f_1 \\ \vdots \\ f_n \end{bmatrix} \quad \text{i.e.,} \quad
+    [\vect{v}]_{\mc{B}} = \begin{bmatrix} f_1 \\ \vdots \\ f_n \end{bmatrix}, \quad \text{so} \quad
     \vect{v} = f_1\vect{b}_1 + f_2\vect{b}_2 + \ldots + f_n\vect{b}_n.
 $$
 
@@ -565,7 +569,7 @@ $$
     \left\{\begin{bmatrix} 2\\3 \end{bmatrix}, \,\begin{bmatrix} 3\\-2 \end{bmatrix}  \right\}.
 $$
 
-Recall that this basis was chosen so that    $\vect{b}_1$  lies on $L$ and $ \vect{b}_2$ is perpendicular to $L$, from which we deduced that 
+Recall that this basis was chosen so that  $\vect{b}_1$  lies on $\mathcal{L}$ and $ \vect{b}_2$ is perpendicular to $\mathcal{L}$, from which we deduced that 
 
 $$
    T(\vect{b}_1) = \vect{b}_1 \quad \text{and} \quad T(\vect{b}_2) = -\vect{b}_2.
@@ -601,7 +605,7 @@ $$
 and
 
 $$
-  \left[T(\vect{b}_2) \right]_{\mc{B}}=   (P_{\mc{B}})^{-1} [T(\vect{b}_2)  = -\dfrac{1}{5} \begin{bmatrix}1 & -2 \\ -3 & 1  \end{bmatrix}
+  \left[T(\vect{b}_2) \right]_{\mc{B}}=   (P_{\mc{B}})^{-1} T(\vect{b}_2)  = -\dfrac{1}{5} \begin{bmatrix}1 & -2 \\ -3 & 1  \end{bmatrix}
   \begin{bmatrix} 1 \\ -2\end{bmatrix} = \begin{bmatrix} -1 \\ 1\end{bmatrix},
 $$
 
@@ -836,7 +840,7 @@ P_{\mc{B}}\left  \uparrow \rule{0ex}{4em} \right. \rule{2em}{0ex}   &  &  P^{-1}
 \left  \uparrow \rule{0ex}{4em} \right.P_{\mc{B}}  \\
    {[\vect{x}]}_{\mc{B}} & \underrightarrow {\rule{3em}{0ex} [T]_{\mc{B}} \rule{3em}{0ex}} & \quad
    \begin{array}{l}[T(\vect{x})]_{\mc{B}} \\
-   = P^{-1}AP[\vect{x})]_{\mc{B}}\end{array}
+   = P^{-1}AP[\vect{x}]_{\mc{B}}\end{array}
 \end{array}
 $$
 
@@ -909,9 +913,9 @@ and we can write down  the standard matrix in one stroke:
 :label: Eq:ChangeOfBasis:ProjMatrix
 
 [T]_{\mc{E}} = P_{\mc{B}}[T]_{\mc{B}}\left(P_{\mc{B}}\right)^{-1} =
-\begin{bmatrix}2 & 1 & 1\\0& 1& -1\\1&0&2  \end{bmatrix}
+\begin{bmatrix}2 & 1 & 1\\0& 1& -1\\1&0&-2  \end{bmatrix}
 \begin{bmatrix}1 & 0 & 0\\0& 1& 0\\0&0&0  \end{bmatrix}
-\begin{bmatrix}2 & 1 & 1\\0& 1& -1\\1&0&2  \end{bmatrix}^{-1}
+\begin{bmatrix}2 & 1 & 1\\0& 1& -1\\1&0&-2  \end{bmatrix}^{-1}
 :::
 
 ::::
@@ -939,7 +943,7 @@ A subsection with the general transformation formula is still under construction
 ## General transformation formula for matrices of linear transformation
 
 
-In the previous section we studied the relations of the  coordinates with respect to the standard basis and one other alternative basis $\mc{B}$. In this section we go one step further and omit the restriction that one of the bases is the standard basis.  We will see that the generalizations will be pretty straightforward.
+In the previous subsections we studied the relations of the  coordinates with respect to the standard basis and one other alternative basis $\mc{B}$. In this section we go one step further and omit the restriction that one of the bases is the standard basis.  We will see that the generalizations are be pretty straightforward.
 
 First of all we will extend the notion of a change-of-coordinates matrix.
 
@@ -1055,7 +1059,7 @@ $$
       \R^n_{\mc{B}} & \underrightarrow {\rule{3em}{0ex} A\rule{3em}{0ex}} & \R^m_{\mc{C}} \\[1ex]
       P_{\mc{B}\leftarrow\mc{B'}}\left  \uparrow \rule{0ex}{4em} \right. \rule{2em}{0ex}   &  & \rule{2em}{0ex} \left  \uparrow \rule{0ex}{4em} \right.P_{\mc{C}\leftarrow\mc{C'}}  \\
       \R^n_{\mc{B}' } & \underrightarrow {\rule{3em}{0ex} A' \rule{3em}{0ex}} & \R^m_{\mc{C}'} \\[1ex]
-      [\vect{x}]_{\mc{B}'} & &  [T\vect{x}]_{\mc{C}'}
+      [\vect{x}]_{\mc{B}'} & &  [T(\vect{x})]_{\mc{C}'}
   \end{array}
 $$
 
@@ -1094,7 +1098,7 @@ $$
 </li>
 <li>
 
-Convert to coordinates with respect to basis $\mc{C}$:
+Convert to coordinates with respect to basis $\mc{C}'$:
 
 $$
     [T(\vect{x})]_{\mc{C}'} = P_{\mc{C}'\leftarrow\mc{C}}  [T(\vect{x})]_{\mc{C}}

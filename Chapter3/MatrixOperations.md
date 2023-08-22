@@ -583,12 +583,12 @@ $$
             b_{11} & b_{12}&  \ldots& {\color{red}b_{1j}} & \ldots&  b_{1p} \\
             b_{21} & b_{22}&  \ldots&  {\color{red}b_{2j}} & \ldots&  b_{2p} \\
             \vdots &  \vdots&  \ldots&  & \ldots& \vdots    \\
-            b_{m1} & b_{m2}&  \ldots&  {\color{red}b_{nj}} &  \ldots& b_{mp}
+            b_{n1} & b_{n2}&  \ldots&  {\color{red}b_{nj}} &  \ldots& b_{np}
           \end{bmatrix} \\
     \begin{bmatrix}
             a_{11} & a_{12}&  \ldots& \ldots&  a_{1n} \\
             a_{21} & a_{22}&  \ldots& \ldots&  a_{2n} \\
-            \vdots &  \vdots&  \ldots& \ldots& \vdots    \\
+            \cdots &  \ddots&  \ldots& \ldots& \vdots    \\
               {\color{red}a_{i1}} &  {\color{red}a_{i2}}&   {\color{red}\cdots}& \ldots&   {\color{red}a_{in}} \\
             \vdots &  \vdots&  \ldots& \ldots& \vdots    \\
             a_{m1} & a_{m2}&  \ldots&  \ldots& a_{mn}
@@ -597,9 +597,9 @@ $$
             c_{11} & c_{12}&  \ldots& c_{1j} &\ldots&  c_{1p} \\
             c_{21} & c_{22}&  \ldots&  c_{2j} &\ldots&  c_{2p} \\
             \vdots &  \vdots&  \ldots& & \ldots& \vdots    \\
-             c_{i1} &  c_{i2}&  \cdots&{\color{red}c_{ij}} &\ldots&   c_{in} \\
+             c_{i1} &  c_{i2}&  \cdots&{\color{red}c_{ij}} &\ldots&   c_{ip} \\
             \vdots &  \vdots&  \ldots& &\ldots& \vdots    \\
-            c_{m1} & c_{m2}&  \ldots&  c_{n} &\ldots& c_{np}
+            c_{m1} & c_{m2}&  \ldots&  c_{mn} &\ldots& c_{mp}
     \end{bmatrix}
   \end{array}
 
@@ -763,7 +763,8 @@ The $n \times n$  zero matrix  $O_{nn}$  is a diagonal matrix.
 :label: Exc:MatrixOps:InterpretATB
 
 
-Suppose $A = \begin{bmatrix} \mathbf{a_1} & \mathbf{a_2} & \ldots & \mathbf{a_n} \end{bmatrix} $ is an  $m\times n$ matrix $A$ and $B= \begin{bmatrix} \mathbf{b_1} & \mathbf{b_2} & \ldots & \mathbf{b_p} \end{bmatrix} $  an  $m\times p$ matrix. Show that
+Suppose $A = \begin{bmatrix} \mathbf{a_1} & \mathbf{a_2} & \ldots & \mathbf{a_n} \end{bmatrix} $ is an  $m\times n$ matrix   and <BR> 
+$B= \begin{bmatrix} \mathbf{b_1} & \mathbf{b_2} & \ldots & \mathbf{b_p} \end{bmatrix} $  an  $n\times p$ matrix. Show that
 
 $$
   A^TB = %\begin{bmatrix} \vect{a_1}^T \vect{b_1}  & \vect{a_1}^T \vect{b_2} & \ldots &  \vect{a_1}^T \vect{b_p} \\
@@ -1508,10 +1509,11 @@ $$
 It holds that
 
 $$
-A = A_2A_1  = \begin{bmatrix} 0 & 0 \\ 0 & 1  \end{bmatrix}\begin{bmatrix} 0 & 1 \\ -1 & 0  \end{bmatrix} 
+A = A_2A_1  = \begin{bmatrix} 0 & 1 \\ -1 & 0  \end{bmatrix}\begin{bmatrix} 0 & 0 \\ 0 & 1  \end{bmatrix} 
 $$
 
-Now consider the transformations  corresponding to these matrices.
+Now consider the transformations  corresponding to the matrices
+$A_1$ and $A_2$.
 
 $$ 
 T_1(\vect{x}) = A_1\vect{x} = \begin{bmatrix} 0 & 0 \\ 0 & 1  \end{bmatrix}\begin{bmatrix} x_1 \\ x_2  \end{bmatrix} = \begin{bmatrix} 0\\ x_2 \end{bmatrix}
@@ -1525,7 +1527,7 @@ $$
 
 is the clockwise rotation about an angle $\frac12\pi$.
 
-Now let us  step by step what is the effect of the transformation  $T_2T_1T_2T_1$, corresponding to $A^2$.
+Now let us see, step by step, what is the effect of the transformation  $T_2T_1T_2T_1$, corresponding to $A^2$.
 
 An arbitrary vector $\vect{x}$ is sent to a vector $T_1(\vect{x})$ on the $x_2$ axis by $T_1$.
 
@@ -1610,16 +1612,22 @@ $$
   \end{array}
 $$
 
-The last expression is equal to
+The last expression is only equal to
 
 $$
  A^2 + 2AB + B^2
 $$
 
-if and only if
+if 
 
 $$
- AB + BA = 2AB \quad \iff \quad BA = AB.
+ AB + BA = 2AB  
+$$
+
+And that is only the case if 
+
+$$
+   BA = AB.
 $$
 
 So any pair of two matrices  $A$ and $B$ with
@@ -1666,10 +1674,10 @@ $$
 Statement  vi. also relates to ii. Namely,
 
 $$
-  A^2 = I \quad \iff \quad A^2 - I = (A+I)(A-I) = O
+  A^2 = I \quad \iff \quad A^2 - I = (A+I)(A-I) = O.
 $$
 
-from which we cannot conclude that one of the factors 
+From the last equality we **cannot** conclude that one of the factors 
 $(A+I)$  or $(A-I)$  must be the zero matrix.  In this case we do not get a counterexample for free.  You are asked to construct  counterexamples in {numref}`Exc:MatrixOps:CounterExamples`.
 
 
@@ -1773,7 +1781,7 @@ B^TA^T =  \begin{bmatrix} 1 & 12  \\ -6 & 1  \\ -2 & 4  \end{bmatrix}  =
 $$
 
 Careful inspection learns that  for the two matrix products exactly the same sums and products of numbers have to be computed.
-For instance, in both products the 12 is the sum of products
+For instance, in both products $12$ is the sum of products
 
 $$
 12 = 1\cdot1 +4\cdot(-1) +5\cdot3 =  1\cdot1 +(-1)\cdot4 +3\cdot5. 
@@ -1841,7 +1849,7 @@ We already defined $A^2$ for a square matrix $A$.
 We can extend this to higher powers of $A$ in an obvious way:
 
 $$
-A^3 = A(A^2),\quad A^4 = A(A^3), \quad \text{  and so on.}
+A^3 = A(A^2),\quad A^4 = A(A^3), \,\,.\,.\,.\,. 
 $$
 
 Since 

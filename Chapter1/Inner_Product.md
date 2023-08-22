@@ -266,21 +266,40 @@ be two arbitrary vectors in $\mathbb{R}^n$. Then
 \end{align*}
 
 
+ii. For two vectors $\vect{v}_1 = \begin{bmatrix}a_{1} \\ a_{2}\\ \vdots\\ a_{n}\end{bmatrix}$, $\vect{v}_2 = \begin{bmatrix}b_{1} \\ b_{2}\\ \vdots\\ b_{n}\end{bmatrix}$, and  constants   $c$ we see that
+
 $$\begin{eqnarray*}
-            (c\mathbf{v_1})\ip\mathbf{v_2} &=&  \begin{bmatrix}ca_{1}\\ca_{2}\\ \vdots\\ca_{n}\end{bmatrix}\ip\begin{bmatrix}b_{1}\\b_{2}\\                                 \vdots\\b_{n}\end{bmatrix}\\
-            &=& (ca_1)b_1 + (ca_2)b_2+ \ldots + (ca_n)b_n \\
+            (c\mathbf{v_1})\ip\mathbf{v_2} &=&  \begin{bmatrix}ca_{1}\\ca_{2}\\ \vdots\\ca_{n}\end{bmatrix}\ip\begin{bmatrix}b_{1}\\b_{2}\\       \vdots\\b_{n}\end{bmatrix} = (ca_1)b_1 + (ca_2)b_2+ \ldots + (ca_n)b_n \\
             &=& c\,(a_1b_1 +a_2b_2+ \ldots + a_nb_n) = c\, (\mathbf{v_1}\ip\mathbf{v_2})
-\end{eqnarray*}$$
+\end{eqnarray*}
+$$
 
 iii. Is proved in the same way as (ii).
 
-iv.  $\mathbf{v}\ip\mathbf{v} = a_1a_1 +a_2a_2+ \ldots + a_na_n = a_1^2+a_2^2 + \ldots + a_n^2$ is the sum of squares of real numbers, so it is nonnegative. It only becomes 0 if all the squares are 0, which only happens if each entry $a_i$ is equal to zero, that is, if $\mathbf{v} = \mathbf{0}$.
+iv. This consists of two statement.  For the first, we note that
+
+$$
+ \mathbf{v}\ip\mathbf{v} = a_1a_1 +a_2a_2+ \ldots + a_na_n = a_1^2+a_2^2 + \ldots + a_n^2
+$$
+ is the sum of squares of real numbers, so it is nonnegative. That is,  
+
+$$
+  \mathbf{v}\ip\mathbf{v} \geq 0.
+$$
+
+To prove the second statement, we see that
+
+$$
+  \mathbf{v}\ip\mathbf{v} =  a_1^2+a_2^2 + \ldots + a_n^2 = 0
+$$
+
+if and only  if all the squares are 0, which only happens if each entry $a_i$ is equal to zero, that is, if $\mathbf{v} = \mathbf{0}$.
 :::
 
 :::{exercise}
 :label: Exc:InnerProduct:CheckPropInnerProd
 
-Prove property (iii).
+Prove property iii.
 :::
 
 :::{exercise}
@@ -368,15 +387,11 @@ and conclude that  $\mathbf{u}$ and $\mathbf{v}$ are orthogonal, $\mathbf{u}$ an
 
 In $\mathbb{R}^2$,  two nonzero vectors that are orthogonal to the same nonzero vector $\mathbf{v}$ are automatically multiples of each other (i.e. have either the same or the opposite direction). In $\mathbb{R}^n$ with  $n \geq 3$ this no longer holds. In this example both  vectors $\mathbf{u}$ and  $\mathbf{w}$ are orthogonal to the vector $\mathbf{v}$, but $\mathbf{u} \neq c\mathbf{w}$.
 
-:::
 
-By definition the zero vector is orthogonal to any vector, since $\mathbf{0}\ip\mathbf{v} = 0$.
-Moreover, the zero vector is the _only_ vector that is orthogonal to itself:
+By definition the zero vector is orthogonal to any vector, since $\mathbf{0}\ip\mathbf{v} = 0$. Moreover, the zero vector is the *only* vector that is orthogonal to itself, which is the content of the next proposition.
 
 :::{prf:proposition}
 :label: Prop:InnerProduct:vDotv=0Impliesv=0
-
-
 
 Suppose  $\mathbf{v} \in \mathbb{R}^n$.  Then  $\mathbf{v}\perp\mathbf{v} \iff \mathbf{v} = \mathbf{0}$.
 
@@ -716,7 +731,7 @@ $$
 :label: Ex:InnerProduct:Distance
 
 For the vectors  $\vect{u} = \begin{bmatrix}1 \\ 3 \\ 2 \\ 4 \end{bmatrix}$ and
-$\vect{u} = \begin{bmatrix}5 \\ 1 \\ 3 \\ 4 \end{bmatrix}$ in $\R^4$
+$\vect{v} = \begin{bmatrix}5 \\ 1 \\ 3 \\ 4 \end{bmatrix}$ in $\R^4$
 
 the distance is given by
 
@@ -779,7 +794,7 @@ With the tools so far we can define a notion that comes in handy later.
 
 
 
-A *unit vector* is a vector of norm 1.
+A **unit vector** is a vector of norm 1.
 
 Moreover, for any nonzero vector $\mathbf{v}$,
 the vector
@@ -1233,7 +1248,7 @@ $$
 
 is positive if the angle is acute, zero if the angle is right, and negative if the angle is obtuse.
 
-In the case of a acute angle, by considering the right triangle  $\Delta OAB$,  where $A$ is the end point of $\mathbf{\hat{w}}$ and  $B$ is  the end point of $\mathbf{w}$,  we see that on the one hand
+In the case of an acute angle, by considering the right triangle  $\Delta OAB$,  where $A$ is the end point of $\mathbf{\hat{w}}$ and  $B$ is  the end point of $\mathbf{w}$,  we see that on the one hand
 
 $$
 
@@ -1262,7 +1277,7 @@ So we may conclude that
 In the case of an obtuse angle, we use that the projection of $\mathbf{w}$ onto $\mathbf{v}$ is equal to the projection
 of $\mathbf{w}$ onto $-\mathbf{v}$, as it is in fact the projection onto the line consisting of all multiples of $\mathbf{v}$. Now look at the picture on the right of figure  {numref}`Figure %s <Fig:InnerProduct:AngleAndProjection>`
 . There you see that $\mathbf{w}$  and
-$-\mathbf{v}$ make a acute angle $\psi = \pi - \phi$, so we can apply 
+$-\mathbf{v}$ make an acute angle $\psi = \pi - \phi$, so we can apply 
 Equation {eq}`Eq:InnerProduct:GeometricInterpretation` to  $\mathbf{w}$  and $-\mathbf{v}$:
 
 
@@ -1411,6 +1426,12 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 
 ::::
 
+::::{grasple} https://embed.grasple.com/exercises/34bbb9e1-207e-4c06-8686-1c32b3f3d0aa?id=78751
+:label: grasple_exercise_1_2_8
+:dropdown:
+:description: To find a vector orthogonal to a given vector in $\R^4$.
+
+::::
 
 ::::{grasple} https://embed.grasple.com/exercises/30a7abfe-9d40-4faa-a848-83bd67e024a0?id=62406
 :label: grasple_exercise_1_2_7
@@ -1418,13 +1439,6 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 :description: To compute the norm of vectors in $\R^2$, $\R^3$, $\R^4$.  
 
 ::::
-
-
-::::{grasple} https://embed.grasple.com/exercises/34bbb9e1-207e-4c06-8686-1c32b3f3d0aa?id=78751
-:label: grasple_exercise_1_2_8
-:dropdown:
-:description: To find a vector orthogonal to a given vector in $\R^4$.
-
 
 
 ::::{grasple} https://embed.grasple.com/exercises/7dc339bb-fe79-4eb9-914c-ea1a7ca85a85?id=69737

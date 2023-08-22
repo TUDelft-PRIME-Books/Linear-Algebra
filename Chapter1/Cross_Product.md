@@ -47,6 +47,12 @@ This is no coincidence, as we will see in {prf:ref}`Prop:CrossProduct:Cportho`.
 
 ::::
 
+::::{grasple} https://embed.grasple.com/exercises/c5058abb-3d5b-4e8c-b836-40aeff08a301?id=65634
+:label: grasple_exercise_1_3_1
+:dropdown:
+:description: Just to compute $\vect{u}\times\vect{v}$.
+
+::::
 
 The definition of the cross product does not give us a lot of information about the properties of this vector. We already know that a vector is defined by a direction and a length. Let us try to determine the direction and the length of the cross product of two vectors. We will start with the direction.
 
@@ -399,12 +405,7 @@ $$
 
 ## Grasple Exercises
 
-::::{grasple} https://embed.grasple.com/exercises/c5058abb-3d5b-4e8c-b836-40aeff08a301?id=65634
-:label: grasple_exercise_1_3_1
-:dropdown:
-:description: Just to compute $\vect{u}\times\vect{v}$.
 
-::::
 
 ::::{grasple} https://embed.grasple.com/exercises/529702ff-6fc3-46ab-a148-7d93d081870b?id=63138
 :label: grasple_exercise_1_3_2
