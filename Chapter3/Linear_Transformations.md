@@ -1407,7 +1407,8 @@ $$
 
 ## Grasple Exercises
 
-::::::{grasple} https://embed.grasple.com/exercises/97a589a8-54f9-4688-bd4d-a17a9585813b?id=69465
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/97a589a8-54f9-4688-bd4d-a17a9585813b?id=69465
 :label: grasple_exercise_3_1_1 
 :dropdown:
 :description: This is {prf:ref}`Ex:LinTrafo:SecondMatrixTrafo`.
@@ -1415,7 +1416,8 @@ $$
 ::::::
 
 
-::::::{grasple} https://embed.grasple.com/exercises/3f14573a-1d4c-4a4b-ae48-ccb168005702?id=70373
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/3f14573a-1d4c-4a4b-ae48-ccb168005702?id=70373
 :label: grasple_exercise_3_1_2
 :dropdown:
 :description: To specify the domain and the codomain of a linear transformation
@@ -1424,7 +1426,8 @@ $$
 
 
 
-::::::{grasple} https://embed.grasple.com/exercises/b80d9889-bd46-45c6-a9cb-d056aa315232?id=70374
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/b80d9889-bd46-45c6-a9cb-d056aa315232?id=70374
 :label: grasple_exercise_3_1_3
 :dropdown:
 :description: To find the size of the matrix of a linear transformation
@@ -1432,7 +1435,8 @@ $$
 ::::::
 
 
-::::::{grasple} https://embed.grasple.com/exercises/be6a768d-c60d-4ed6-81a7-5dea71b4a1a5?id=70375
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/be6a768d-c60d-4ed6-81a7-5dea71b4a1a5?id=70375
 :label: grasple_exercise_3_1_4
 :dropdown:
 :description: To find image of two vectors under   $T(\vect{x}) = A\vect{x}$.  
@@ -1441,7 +1445,8 @@ $$
 ::::::
 
 
-::::::{grasple} https://embed.grasple.com/exercises/
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/
 :label: grasple_exercise_3_1_5
 :dropdown:
 :description: For linear map $T$,  find $T(c\vect{u})$ and $T(\vect{u}+\vect{v})$ if  $T(\vect{u})$  and $T(\vect{v})$  are given.
@@ -1451,7 +1456,8 @@ $$
 ::::::
 
 
-::::::{grasple} https://embed.grasple.com/exercises/93048f7c-b755-4445-a532-949f34136096?id=70398
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/93048f7c-b755-4445-a532-949f34136096?id=70398
 :label: grasple_exercise_3_1_6
 :dropdown:
 :description: For linear map $T:\R^2 \to \R^2$, find $T((x1,x2))$   if  $T(\vect{e}_1)$  and $T(\vect{e}_2)$  are given
@@ -1459,7 +1465,8 @@ $$
 
 ::::::
 
-::::::{grasple} https://embed.grasple.com/exercises/2af6559f-8871-494d-abce-d4263d530c69?id=70381
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/2af6559f-8871-494d-abce-d4263d530c69?id=70381
 :label: grasple_exercise_3_1_7
 :dropdown:
 :description: Find all vectors $\vect{w}$ for which $T(\vect{w}) = \vect{u}$.
@@ -1467,7 +1474,8 @@ $$
 ::::::
 
 
-::::::{grasple} https://embed.grasple.com/exercises/ce6e4a52-c985-43ee-92cb-2762a467ac5a?id=70383
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/ce6e4a52-c985-43ee-92cb-2762a467ac5a?id=70383
 :label: grasple_exercise_3_1_8
 :dropdown:
 :description:  Find vectors $\vect{w}$ for which $T(\vect{w}) = \vect{u}$.
@@ -1475,7 +1483,8 @@ $$
 ::::::
 
 
-::::::{grasple} https://embed.grasple.com/exercises/37b6bd46-8cfc-4c98-a5e8-53aa41c87dcf?id=70384
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/37b6bd46-8cfc-4c98-a5e8-53aa41c87dcf?id=70384
 :label: grasple_exercise_3_1_10
 :dropdown:
 :description: Find vectors $\vect{w}$ for which $T(\vect{w}) = \vect{u}$.
@@ -1485,7 +1494,8 @@ $$
 
 
 
-::::::{grasple} https://embed.grasple.com/exercises/c5b2a642-fd50-43f6-9346-c37a0ffe1a40?id=70386
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/c5b2a642-fd50-43f6-9346-c37a0ffe1a40?id=70386
 :label: grasple_exercise_3_1_10
 :dropdown:
 :description: Find vectors $\vect{w}$ for which $T(\vect{w}) = \vect{u}$.
@@ -1495,7 +1505,8 @@ $$
 
 
 
-::::::{grasple} https://embed.grasple.com/exercises/c3d009c0-62d6-4ae3-8ca1-04a5d2730455?id=70406
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/c3d009c0-62d6-4ae3-8ca1-04a5d2730455?id=70406
 :label: grasple_exercise_3_1_11
 :dropdown:
 :description: To show that a given transformation is non-linear.
@@ -1505,7 +1516,8 @@ $$
 ::::::
 
 
-::::::{grasple} https://embed.grasple.com/exercises/b9a4b128-f2c2-4612-a7f5-271c4e69aa70?id=70418
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/b9a4b128-f2c2-4612-a7f5-271c4e69aa70?id=70418
 :label: grasple_exercise_3_1_12
 :dropdown:
 :description: Finding an image and a pre-image of $T:\R^2 \to \R^2$  using a picture.
@@ -1516,7 +1528,8 @@ $$
 
 
 
-::::::{grasple} https://embed.grasple.com/exercises/4058e54a-74f2-414e-9693-420abbc62677?id=70391
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/4058e54a-74f2-414e-9693-420abbc62677?id=70391
 :label: grasple_exercise_3_1_13
 :dropdown:
 :description: To give a geometric description of $T: \vect{x} \mapsto A\vect{x}$.
@@ -1526,7 +1539,8 @@ $$
 
 
 
-::::::{grasple} https://embed.grasple.com/exercises/990bf561-629e-430f-b8d0-e757c63fe15c?id=70392
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/990bf561-629e-430f-b8d0-e757c63fe15c?id=70392
 :label: grasple_exercise_3_1_14
 :dropdown:
 :description: To give a geometric description of $T: \vect{x} \mapsto A\vect{x}$.
@@ -1534,7 +1548,8 @@ $$
 ::::::
 
 
-::::::{grasple} https://embed.grasple.com/exercises/4e5d3f55-9257-4023-9739-5df0a1a9f277?id=70410
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/4e5d3f55-9257-4023-9739-5df0a1a9f277?id=70410
 :label: grasple_exercise_3_1_15
 :dropdown:
 :description: To find the matrix of the transformation that send $(x,y)$ to $x\vect{a}_1 + y\vect{a}_2$.
@@ -1543,7 +1558,8 @@ $$
 
 
 
-::::::{grasple} https://embed.grasple.com/exercises/9efa96e2-483d-4b2c-a58a-ba197bc09a81?id=70411
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/9efa96e2-483d-4b2c-a58a-ba197bc09a81?id=70411
 :label: grasple_exercise_3_1_16
 :dropdown:
 :description: To find the matrix of the transformation that send $(x,y)$ to $x\vect{a}_1 + y\vect{a}_2$.
@@ -1552,7 +1568,8 @@ $$
 
 
 
-::::::{grasple} https://embed.grasple.com/exercises/729cba57-72d1-4d54-8cf9-c9946952bf9d?id=70412
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/729cba57-72d1-4d54-8cf9-c9946952bf9d?id=70412
 :label: grasple_exercise_3_1_17
 :dropdown:
 :description: To rewrite  $T:\R^3 \to \R^2$  to standard form.
@@ -1562,7 +1579,8 @@ $$
 
 
 
-::::::{grasple} https://embed.grasple.com/exercises/
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/
 :label: grasple_exercise_3_1_18
 :dropdown:
 :description: To find the standard matrix for $T:\R^4 \to \R$.
@@ -1572,7 +1590,8 @@ $$
 
 
 
-::::::{grasple} https://embed.grasple.com/exercises/34bb6386-7e7c-411b-83a1-09bbaf1106c5?id=70415
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/34bb6386-7e7c-411b-83a1-09bbaf1106c5?id=70415
 :label: grasple_exercise_3_1_19
 :dropdown:
 :description: To find the standard matrix for  $T:\R^2 \to \R^2$  if  $T(\vect{v}_1)$ and $T(\vect{v}_2)$ are given.  
@@ -1581,14 +1600,16 @@ $$
 ::::::
 
 
-::::::{grasple} https://embed.grasple.com/exercises/ce
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/ce
 :label: grasple_exercise_3_1_20
 :dropdown:
 :description: To find the standard matrix for  $T:\R^2 \to \R^3$  if  $T(\vect{v}_1)$ and $T(\vect{v}_2)$ are given.  
 
 
 ::::::
-::::::{grasple} https://embed.grasple.com/exercises/ce8ba17c-0a17-4d5e-b4b7-5c277c7e8df8?id=70416
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/ce8ba17c-0a17-4d5e-b4b7-5c277c7e8df8?id=70416
 :label: grasple_exercise_3_1_21
 :dropdown:
 :description:  If  $T(\vect{0}) = \vect{0}$,  is $T$ (always) linear? 
@@ -1598,7 +1619,8 @@ $$
 ::::::
 
 
-::::::{grasple} https://embed.grasple.com/exercises/3f992e7a-19e3-4b83-8d90-db86e323ea94?id=69296
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/3f992e7a-19e3-4b83-8d90-db86e323ea94?id=69296
 :label: grasple_exercise_3_1_22
 :dropdown:
 :description: To show that  $T(\vect{0}) = \vect{0}$  for a linear transformation.
@@ -1607,7 +1629,8 @@ $$
 ::::::
 
 
-::::::{grasple} https://embed.grasple.com/exercises/94d618e0-de21-491c-ad44-8e29974e0303?id=71098
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/94d618e0-de21-491c-ad44-8e29974e0303?id=71098
 :label: grasple_exercise_3_1_23
 :dropdown:
 :description: (T/F) If $\{\vect{v}_1,\vect{v}_2,\vect{v}_3\}$ is linearly dependent, then  $\{T(\vect{v}_1),T(\vect{v}_2),T(\vect{v}_3)\}$ is also linearly dependent?
@@ -1617,7 +1640,8 @@ $$
 
 
 
-::::::{grasple} https://embed.grasple.com/exercises/f983b627-10c2-4dd6-a273-2a33e99d0ded?id=71101
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/f983b627-10c2-4dd6-a273-2a33e99d0ded?id=71101
 :label: grasple_exercise_3_1_24
 :dropdown:
 :description:  (T/F) If $\{\vect{v}_1,\vect{v}_2,\vect{v}_3\}$ is linearly independent, then  $\{T(\vect{v}_1),T(\vect{v}_2),T(\vect{v}_3)\}$ is also linearly independent?

@@ -476,6 +476,54 @@ $$
 ::::::
 
 
+## Grasple Exercises
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/bc898154-3f5e-45bd-8993-28a74bf34b5f?id=70278
+:label: grasple_exercise_3_2_1 
+:dropdown:
+:description: To compute the sum of two matrices
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/bf170c2b-127b-4ce7-bd75-c9c9bdfb12f9?id=70277
+:label: grasple_exercise_3_2_2 
+:dropdown:
+:description: To compute $c_1A + c_2B$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/dd83bd83-0ce4-4dd7-84de-3472c24acbc0?id=70279
+:label: grasple_exercise_3_2_3 
+:dropdown:
+:description: To compute $c_1A + c_2B$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/3e5f0674-1e9f-4349-867f-6b1d638e744b?id=82934
+:label: grasple_exercise_3_2_4 
+:dropdown:
+:description: To solve eqautions involving sum and transpose
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/
+:label: grasple_exercise_3_2_5 
+:dropdown:
+:description: True/False questions involving sum and transpose
+
+::::::
+
+
+
 
 
 
@@ -1882,5 +1930,16 @@ And what can we say about $A^{-1}$?
 
 We will dedicate {numref}`Sec:MatrixInv` to this topic.
 
+::::::
+
+
+
+## Grasple Exercises
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/bc898154-3f5e-45bd-8993-28a74bf34b5f?id=70278
+:label: grasple_exercise_3_2_1 
+:dropdown:
+:description: To compute the sum of two matrices
 
 ::::::

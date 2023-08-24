@@ -2080,7 +2080,8 @@ can be seen as  a plane in $\mathbb{R}^3$.  The previous proposition tells us:  
 The first **16** exercises are quite starightfordwardly computational.
 The remaining exercises tend to be more theoretic.
 
-::::{grasple} https://embed.grasple.com/exercises/8dee65d-a165-4534-89ee-76967d660c9c?id=69544
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/8dee65d-a165-4534-89ee-76967d660c9c?id=69544
 :label: grasple_exercise_2_1_1 
 :dropdown:
 :description: Solving a linear system of 2 equations in 2 unknowns.
@@ -2088,7 +2089,8 @@ The remaining exercises tend to be more theoretic.
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/4bd179e9-99a6-436a-a178-9ad77210f86b?id=71057
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/4bd179e9-99a6-436a-a178-9ad77210f86b?id=71057
 :label: grasple_exercise_2_1_1B 
 :dropdown:
 :description: To determine the number of sulutions of a $2\times 2$ linear system.
@@ -2096,7 +2098,8 @@ The remaining exercises tend to be more theoretic.
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/9bb8381d-f1a2-4e58-8928-4985cce492c4?id=76019
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/9bb8381d-f1a2-4e58-8928-4985cce492c4?id=76019
 :label: grasple_exercise_2_1_2 
 :dropdown:
 :description: Identifying the size of a linear system
@@ -2105,7 +2108,8 @@ The remaining exercises tend to be more theoretic.
 
 
 
-::::{grasple} https://embed.grasple.com/exercises/42f38f80-f854-469d-b1e6-893539fd3572?id=82676
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/42f38f80-f854-469d-b1e6-893539fd3572?id=82676
 :label: grasple_exercise_2_1_3
 :dropdown:
 :description: $3 \times 3$  linear system 'in triangular form' 
@@ -2114,7 +2118,8 @@ The remaining exercises tend to be more theoretic.
 
 
 
-::::{grasple} https://embed.grasple.com/exercises/0d23f4f3-5798-4a7a-b40e-f163f7e2b37f?id=82667
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/0d23f4f3-5798-4a7a-b40e-f163f7e2b37f?id=82667
 :label: grasple_exercise_2_1_4 
 :dropdown:
 :description:  Decent $3 \times 3$  linear system.
@@ -2123,7 +2128,8 @@ The remaining exercises tend to be more theoretic.
 
 
 
-::::{grasple} https://embed.grasple.com/exercises/99536b94-713b-4bae-874c-62958af0f5fe?id=80875
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/99536b94-713b-4bae-874c-62958af0f5fe?id=80875
 :label: grasple_exercise_2_1_5 
 :dropdown:
 :description: Decent $3 \times 4$  linear system.
@@ -2132,14 +2138,16 @@ The remaining exercises tend to be more theoretic.
 
 
 
-::::{grasple} https://embed.grasple.com/exercises/ff8bfe99-7a87-4711-b589-7ba70a857a39?id=80876
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/ff8bfe99-7a87-4711-b589-7ba70a857a39?id=80876
 :label: grasple_exercise_2_1_6 
 :dropdown:
 :description:  Two $3\times 3$ systems with the same coefficient matrix
 
 ::::
 
-::::{grasple} https://embed.grasple.com/exercises/e1ffae46-da26-42b6-98ad-957478b6d58c?id=76653
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/e1ffae46-da26-42b6-98ad-957478b6d58c?id=76653
 :label: grasple_exercise_2_1_7 
 :dropdown:
 :description:  
@@ -2148,14 +2156,16 @@ The remaining exercises tend to be more theoretic.
 
 
 
-::::{grasple} https://embed.grasple.com/exercises/c01e55fb-21d2-4539-a870-353a40d51db0?id=69506
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/c01e55fb-21d2-4539-a870-353a40d51db0?id=69506
 :label: grasple_exercise_2_1_8 
 :dropdown:
 :description: To check whether a linear system is consistent 
 
 ::::
 
-::::{grasple} https://embed.grasple.com/exercises/796aca3d-2b17-4e17-bad7-a83c23c88db8?id=69545
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/796aca3d-2b17-4e17-bad7-a83c23c88db8?id=69545
 :label: grasple_exercise_2_1_9 
 :dropdown:
 :description: To check whether a linear system is consistent 
@@ -2163,7 +2173,8 @@ The remaining exercises tend to be more theoretic.
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/cc6ad-095e-4704-9445-8fcb4e9c4b8e?id=69587
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/cc6ad-095e-4704-9445-8fcb4e9c4b8e?id=69587
 :label: grasple_exercise_2_1_10
 :dropdown:
 :description: To recognize row operations  
@@ -2171,7 +2182,8 @@ The remaining exercises tend to be more theoretic.
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/204cb1ad-0608-40ce-bb56-a2a6c6e8f1af?id=69559
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/204cb1ad-0608-40ce-bb56-a2a6c6e8f1af?id=69559
 :label: grasple_exercise_2_1_11 
 :dropdown:
 :description: To find the row reduced echelon form 
@@ -2179,7 +2191,8 @@ The remaining exercises tend to be more theoretic.
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/a05fdf80-1325-4e86-874e-cd858133ad46?id=69558
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/a05fdf80-1325-4e86-874e-cd858133ad46?id=69558
 :label: grasple_exercise_2_1_12 
 :dropdown:
 :description: To find the row reduced echelon form
@@ -2188,7 +2201,8 @@ The remaining exercises tend to be more theoretic.
 
 
 
-::::{grasple} https://embed.grasple.com/exercises/73ced8a4-d6f8-494f-b58a-9e2f4053cd5b?id=82689
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/73ced8a4-d6f8-494f-b58a-9e2f4053cd5b?id=82689
 :label: grasple_exercise_2_1_13 
 :dropdown:
 :description: To find the row reduced echelon form
@@ -2196,14 +2210,16 @@ The remaining exercises tend to be more theoretic.
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/2b25fdf4-e662-4859-9f30-8838a1a7079f?id=69562
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/2b25fdf4-e662-4859-9f30-8838a1a7079f?id=69562
 :label: grasple_exercise_2_1_14 
 :dropdown:
 :description:  To find the row reduced echelon form
 
 ::::
 
-::::{grasple} https://embed.grasple.com/exercises/1dad6770-3b71-4c80-ae78-e63d2cfd93e9?id=69563
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/1dad6770-3b71-4c80-ae78-e63d2cfd93e9?id=69563
 :label: grasple_exercise_2_1_15 
 :dropdown:
 :description:  Row reduced echelon form of a $3 \times 5$ matrix
@@ -2211,7 +2227,8 @@ The remaining exercises tend to be more theoretic.
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/8d249aed-fa38-4a70-8271-8be07187dd06?id=69541
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/8d249aed-fa38-4a70-8271-8be07187dd06?id=69541
 :label: grasple_exercise_2_1_16
 :dropdown:
 :description:  Solving a linear system using the augmented matrix
@@ -2222,7 +2239,8 @@ The remaining exercises tend to be more theoretic.
 The remaining exercises are a bit more theoretical
 
 
-::::{grasple} https://embed.grasple.com/exercises/34663755-68a2-46ec-a3e7-0ad78ba9bdcd?id=71059
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/34663755-68a2-46ec-a3e7-0ad78ba9bdcd?id=71059
 :label: grasple_exercise_2_1_T1
 :dropdown:
 :description: To solve a linear system by geometric considerations.
@@ -2231,7 +2249,8 @@ The remaining exercises are a bit more theoretical
 
 
 
-::::{grasple} https://embed.grasple.com/exercises/3077fca5-9295-4634-a72d-18eca315de59?id=69743
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/3077fca5-9295-4634-a72d-18eca315de59?id=69743
 :label: grasple_exercise_2_1_T2 
 :dropdown:
 :description:  How many pivots can an $m\times n$ matrix have?
@@ -2239,7 +2258,8 @@ The remaining exercises are a bit more theoretical
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/e9b7c9da-fe93-46a3-bde7-6bd8c4583aa8?id=68838
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/e9b7c9da-fe93-46a3-bde7-6bd8c4583aa8?id=68838
 :label: grasple_exercise_2_1_T3 
 :dropdown:
 :description: To determine which variables can be taken as free variables
@@ -2249,13 +2269,15 @@ The remaining exercises are a bit more theoretical
 
 Four exercises about linear systems with a parameter.
 
-::::{grasple} https://embed.grasple.com/exercises/e906b587-b749-438a-a97b-4a4ef917a7b2?id=69744 
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/e906b587-b749-438a-a97b-4a4ef917a7b2?id=69744 
 :label: grasple_exercise_2_1_T4A 
 :dropdown:
 :description: A $2\times 2$ linear system with a parameter $h$.
 
 ::::
-::::{grasple} https://embed.grasple.com/exercises/9a51faa0-98f0-4934-81b5-7d78d7fef7ec?id=69745
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/9a51faa0-98f0-4934-81b5-7d78d7fef7ec?id=69745
 :label: grasple_exercise_2_1_T4B
 :dropdown:
 :description:  A $2\times 2$ linear system with a parameter $h$.
@@ -2263,7 +2285,8 @@ Four exercises about linear systems with a parameter.
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/12852bd2-dfc4-41e4-8e53-c0c5664d2537?id=69746
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/12852bd2-dfc4-41e4-8e53-c0c5664d2537?id=69746
 :label: grasple_exercise_2_1_T4C
 :dropdown:
 :description:  Yet another $2\times 2$ linear system with a parameter $h$.
@@ -2273,7 +2296,8 @@ Four exercises about linear systems with a parameter.
 
 
 
-::::{grasple} https://embed.grasple.com/exercises/69589418-544a-46c7-9d36-517b3db92bd1?id=69747
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/69589418-544a-46c7-9d36-517b3db92bd1?id=69747
 :label: grasple_exercise_2_1_T4D
 :dropdown:
 :description:  Fourth and last $2\times 2$ linear system with a parameter $h$.
@@ -2288,7 +2312,8 @@ Three exercises about linear systems and pivots.
 
 
 
-::::{grasple} https://embed.grasple.com/exercises/9e6cf6e3-80d2-4552-b668-cfc3bcdad27a?id=69748 
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/9e6cf6e3-80d2-4552-b668-cfc3bcdad27a?id=69748 
 :label: grasple_exercise_2_1_T5B 
 :dropdown:
 :description:  Linear systems and pivots
@@ -2296,7 +2321,8 @@ Three exercises about linear systems and pivots.
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/5eb59a87-6524-4563-9c86-f54e6fdca71d?id=69749
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/5eb59a87-6524-4563-9c86-f54e6fdca71d?id=69749
 :label: grasple_exercise_2_1_T5C 
 :dropdown:
 :description:   Linear systems and pivots
@@ -2304,7 +2330,8 @@ Three exercises about linear systems and pivots.
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/9fdb7774-56f2-4a04-ae4a-a28fd4d2fd97?id=69750
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/9fdb7774-56f2-4a04-ae4a-a28fd4d2fd97?id=69750
 :label: grasple_exercise_2_1_T5D 
 :dropdown:
 :description:   Linear systems and pivots
@@ -2313,7 +2340,8 @@ Three exercises about linear systems and pivots.
 
 
 
-::::{grasple} https://embed.grasple.com/exercises/ec78c509-6e28-441b-bace-9d2b24f14d63?id=70366
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/ec78c509-6e28-441b-bace-9d2b24f14d63?id=70366
 :label: grasple_exercise_2_1_T16 
 :dropdown:
 :description:   Checking whether a matrix is in (reduced) echelon form.
@@ -2322,14 +2350,16 @@ Three exercises about linear systems and pivots.
 
 
 
-::::{grasple} https://embed.grasple.com/exercises/ec78c509-6e28-441b-bace-9d2b24f14d63?id=70366
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/ec78c509-6e28-441b-bace-9d2b24f14d63?id=70366
 :label: grasple_exercise_2_1_T17 
 :dropdown:
 :description:   About the structures of reduced echelon forms
 
 ::::
 
-::::{grasple} https://embed.grasple.com/exercises/23a43d40-9e2d-4d92-bf63-40519dcb7d65?id=82692
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/23a43d40-9e2d-4d92-bf63-40519dcb7d65?id=82692
 :label: grasple_exercise_2_1_T18  
 :dropdown:
 :description:   To determine (in)consistency without computations  ('by inspection')
@@ -2337,7 +2367,8 @@ Three exercises about linear systems and pivots.
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/dbeb91c3-4834-4204-9b0f-ca7bf4bd5ecd?id=71103
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/dbeb91c3-4834-4204-9b0f-ca7bf4bd5ecd?id=71103
 :label: grasple_exercise_2_1_T19  
 :dropdown:
 :description:   To check whether matrices are (row) equivalent.
