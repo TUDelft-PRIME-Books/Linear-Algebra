@@ -621,8 +621,8 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/
-42d254e8-e577-4bb1-b365-110f9805c1cf?id=78848
+::::{grasple}
+:url: https://embed.grasple.com/exercises/42d254e8-e577-4bb1-b365-110f9805c1cf?id=78848
 :label: grasple_exercise_1_4_8
 :dropdown:
 :description: To show that two lines have 0, 1 or $\infty$ points in common.
@@ -682,7 +682,8 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 
 ::::
 
-::::{grasple} https://embed.grasple.com/exercises/f02eebc1-b919-4070-a87a-f04bb620cc8d?id=80872
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/f02eebc1-b919-4070-a87a-f04bb620cc8d?id=80872
 :label: grasple_exercise_1_4_14
 :dropdown:
 :description: To give a  cartesian equation for  a plane  containing a given point $A$ and with a given normal vector $\vect{n}$.

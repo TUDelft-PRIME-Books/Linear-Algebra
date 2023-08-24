@@ -49,7 +49,7 @@ This is no coincidence, as we will see in {prf:ref}`Prop:CrossProduct:Cportho`.
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/c5058abb-3d5b-4e8c-b836-40aeff08a301?id=65634
-:label: grasple_exercise_1_3_1
+:label: grasple_exercise_1_3_A
 :dropdown:
 :description: Just to compute $\vect{u}\times\vect{v}$.
 
@@ -412,6 +412,7 @@ $$
 :dropdown:
 :description: Just to compute $\vect{u}\times\vect{v}$.
 
+::::
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/529702ff-6fc3-46ab-a148-7d93d081870b?id=63138
