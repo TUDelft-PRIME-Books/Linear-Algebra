@@ -197,7 +197,8 @@ This might look a bit scary, but is really just what we did in the plane, just w
 %\end{app}
 
 
-::::{grasple} https://embed.grasple.com/exercises/a962fb8c-89b0-4b97-b76e-8f53335cf301?id=70140 
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/a962fb8c-89b0-4b97-b76e-8f53335cf301?id=70140 
 :label: grasple_exercise_1_1_2
 :dropdown:
 :description: To compute combinations  $c_1\vect{u}+c_2\vect{v}$.
