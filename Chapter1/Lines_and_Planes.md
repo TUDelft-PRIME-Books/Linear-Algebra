@@ -156,8 +156,9 @@ $$
 
 ::::
 
-::::{grasple} https://embed.grasple.com/exercises/b110d6af-8cf7-4385-92f4-6f0ee364c860?id=63490
-:label:grasple_exercise_1_4_1
+::::{grasple}
+:url: https://embed.grasple.com/exercises/b110d6af-8cf7-4385-92f4-6f0ee364c860?id=63490
+:label: grasple_exercise_1_4_1
 :dropdown:
 :description: To find a parametric equation for a line.
 
@@ -240,21 +241,6 @@ $$
 
 ::::
 
-::::{grasple} https://embed.grasple.com/exercises/b110d6af-8cf7-4385-92f4-6f0ee364c860?id=63490
-:label:grasple_exercise_1_4_1
-:dropdown:
-:description: To find a parametric equation of a line
-
-::::
-
-::::{grasple} https://embed.grasple.com/exercises/b110d6af-8cf7-4385-92f4-6f0ee364c860?id=63490
-
-:label:grasple_exercise_1_4_1
-
-::::
-
-
-
 
 ## Planes in the space $\mathbb{R}^3$
 
@@ -309,7 +295,8 @@ What is the Cartesian equation of this plane? If the coordinates of $Q$ are $(x,
 
 This means that $Q$ is on the plane $\mathcal{P}$ through $P$ and orthogonal to $\mathbf{n}$ if and only if its coordinates satisfy $2x+y+3z-5=0$ or $2x+y+3z=5$. Hence, we obtain a Cartesian equation of $\mathcal{P}$.
 
-::::{grasple} https://embed.grasple.com/exercises/9b9d1faa-013e-4c46-8863-53c3fdfeff4a?id=79284
+::::{grasple}
+:url: https://embed.grasple.com/exercises/9b9d1faa-013e-4c46-8863-53c3fdfeff4a?id=79284
 :label: grasple_exercise_1_4_2
 :dropdown:
 :description: To find a Cartesian equation for a plane.
@@ -588,7 +575,8 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 
 ## Grasple exercises
 
-::::{grasple} https://embed.grasple.com/exercises/d9a13ea7-786d-4935-8531-2ba3ec41c930?id=67061
+::::{grasple}
+:url: https://embed.grasple.com/exercises/d9a13ea7-786d-4935-8531-2ba3ec41c930?id=67061
 :label: grasple_exercise_1_4_3
 :dropdown:
 :description: Find a vector on a line, and a direction vector in the line.
@@ -596,7 +584,8 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/a96fb8c3-000c-4d62-be3c-36dc47ced610?id=67694
+::::{grasple}
+:url: https://embed.grasple.com/exercises/a96fb8c3-000c-4d62-be3c-36dc47ced610?id=67694
 :label: grasple_exercise_1_4_4
 :dropdown:
 :description: Give a parametric vector equation for the line  $ax+by = k$.
@@ -604,7 +593,8 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/1c6242a7-85e4-4bef-b05b-4c6693170bfc?id=67268
+::::{grasple}
+:url: https://embed.grasple.com/exercises/1c6242a7-85e4-4bef-b05b-4c6693170bfc?id=67268
 :label: grasple_exercise_1_4_5
 :dropdown:
 :description: When are two lines in $\R^2$ not parallel?
@@ -612,7 +602,8 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/74dbf343-63db-46cf-9517-ab2694d616fb?id=71058
+::::{grasple}
+:url: https://embed.grasple.com/exercises/74dbf343-63db-46cf-9517-ab2694d616fb?id=71058
 :label: grasple_exercise_1_4_6
 :dropdown:
 :description: To find the intersection of  two lines from a picture.
@@ -621,11 +612,11 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 
 
 
-::::{grasple} https://embed.grasple.com/exercises/c86f64d5-5d64-403e-98f7-9d8e8c4b90fb?id=78903
+::::{grasple}
+:url: https://embed.grasple.com/exercises/c86f64d5-5d64-403e-98f7-9d8e8c4b90fb?id=78903
 :label: grasple_exercise_1_4_7
 :dropdown:
 :description: To find out whether two lines are perpendicular or parallel (or none)
-
 
 ::::
 
@@ -639,7 +630,8 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/2b9cb96e-caa3-4f1c-8f65-a77be3f70050?id=67065
+::::{grasple}
+:url: https://embed.grasple.com/exercises/2b9cb96e-caa3-4f1c-8f65-a77be3f70050?id=67065
 :label: grasple_exercise_1_4_9
 :dropdown:
 :description: To find the parametric vector equation of a plane given by three points
@@ -647,7 +639,8 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/35559ca4-9c46-4d25-a6ed-d44c4eb6d33b?id=67067
+::::{grasple}
+:url: https://embed.grasple.com/exercises/35559ca4-9c46-4d25-a6ed-d44c4eb6d33b?id=67067
 :label: grasple_exercise_1_4_10
 :dropdown:
 :description: To give a normal vector for a plane given by three points
@@ -655,7 +648,8 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/67cbf60d-ce34-49f0-b833-715784647873?id=67257
+::::{grasple}
+:url: https://embed.grasple.com/exercises/67cbf60d-ce34-49f0-b833-715784647873?id=67257
 :label: grasple_exercise_1_4_11
 :dropdown:
 :description: To give a Cartesian equation for a plane with given parametric vector equation.
@@ -663,22 +657,24 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/bbb3c082-b8d1-42d6-b718-b37d5ba26363?id=67260
+::::{grasple}
+:url: https://embed.grasple.com/exercises/bbb3c082-b8d1-42d6-b718-b37d5ba26363?id=67260
 :label: grasple_exercise_1_4_12
 :dropdown:
-:description: To find plane $V$ parallel to $W: ax+by+cz=k$ and containing a point $P$.
+:description: To find plane $V$ parallel to $W$  $ax+by+cz=k$ and containing a point $P$.
 
 
 ::::
 
-::::{grasple} https://embed.grasple.com/exercises/23faf686-3fb3-4280-aa26-f14be36f5aae?id=78870
+::::{grasple}
+:url: https://embed.grasple.com/exercises/23faf686-3fb3-4280-aa26-f14be36f5aae?id=78870
 :label: grasple_exercise_1_4_13
 :dropdown:
-:description: 
 
 ::::
 
-::::{grasple} https://embed.grasple.com/exercises/0b29e241-4c23-4321-be4c-9a7f8cd80b5c?id=67697
+::::{grasple}
+:url: https://embed.grasple.com/exercises/0b29e241-4c23-4321-be4c-9a7f8cd80b5c?id=67697
 :label: grasple_exercise_1_4_14
 :dropdown:
 :description: To give a parametric vector equation for  a plane  $ax+by+cz=k$.

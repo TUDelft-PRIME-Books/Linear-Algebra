@@ -1,12 +1,14 @@
 stages:
   - build
   - deploy
-
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+  
 jupyter-build:
   stage: build
   image: python:slim
   script:
-    - pip install -r requirements.txt
+    - sh install.sh
     - jupyter-book clean .
     - jupyter-book build .
   artifacts:
