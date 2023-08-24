@@ -93,6 +93,8 @@ We have found that the geometrical notion of an arrow in the plane with a certai
 :url: https://embed.grasple.com/exercises/553450f1-e960-4bac-9bb4-074fe8106369?id=78688
 :label: grasple_exercise_1_1_1
 :dropdown:
+:description: Expressing vectors in other vectors
+
 
 ::::
 
@@ -193,6 +195,15 @@ This might look a bit scary, but is really just what we did in the plane, just w
 %\caption{A 20x10 picture. Every point is described by two numbers giving its location and three numbers giving its colour.}
 %\end{figure}
 %\end{app}
+
+
+::::{grasple} https://embed.grasple.com/exercises/a962fb8c-89b0-4b97-b76e-8f53335cf301?id=70140 
+:label: grasple_exercise_1_1_2
+:dropdown:
+:description: To compute combinations  $c_1\vect{u}+c_2\vect{v}$.
+
+::::
+
 
 Since vector addition and scalar multiplication will be used all the time in this text, it will be convenient to know how to work with these operations. Luckily, it turns out that they satisfy most of the calculation rules that you are familiar with from standard arithmetic, as you can see from the following:
 
@@ -343,13 +354,6 @@ $$
 
 ## Grasple Exercises
 
-::::{grasple}
-:url: https://embed.grasple.com/exercises/a962fb8c-89b0-4b97-b76e-8f53335cf301?id=70140 
-:label: grasple_exercise_1_1_2
-:dropdown:
-:description: To compute combinations  $c_1\vect{u}+c_2\vect{v}$.
-
-::::
 
 
 ::::{grasple}
@@ -392,7 +396,7 @@ $$
 :url: https://embed.grasple.com/exercises/b212a5ff-ea16-47a9-bc71-8e2b21944c9d?id=69732
 :label: grasple_exercise_1_1_7
 :dropdown:
-:description: Computing the vector from  $A$ to $B$.
+:description: Computing the vector from point  $A$ to point  $B$.
 
 ::::
 
@@ -417,7 +421,7 @@ $$
 
 
 ::::{grasple}
-:url: https://embed.grasple.com/exercises/553450f1-e960-4bac-9bb4-074fe8106369?id=78688
+:url: https://embed.grasple.com/exercises/ff44880f-1ce0-428e-8bb2-42898b66e76f?id=78691
 :label: grasple_exercise_1_1_10
 :dropdown:
 :description: Another hexagon 'puzzle'.
@@ -426,7 +430,7 @@ $$
 
 
 ::::{grasple}
-:url: https://embed.grasple.com/exercises/ff44880f-1ce0-428e-8bb2-42898b66e76f?id=78691
+:url: https://embed.grasple.com/exercises/65b17e6e-b9e1-44de-9445-578c5ee1f633?id=62390
 :label: grasple_exercise_1_1_11
 :dropdown:
 :description: To prove the basic properties ({prf:ref}`Prop:Vectors:BasicRules`) of vector sum and multiple.

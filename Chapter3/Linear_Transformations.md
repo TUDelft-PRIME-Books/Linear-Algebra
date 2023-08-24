@@ -18,7 +18,7 @@ the left-hand side $A\mathbf{x}$
 can be seen as a mapping that  sends an "input"  $\mathbf{x}$  to an "output" $\mathbf{y}= A\mathbf{x}$.
 
 For instance, in computer graphics, typically points describing a 3D object have to be converted to points in 2D, to be able to visualize them on a screen.  Or, in a dynamical system, a 
-matrix $A$ may describe how a system evolves from a "state" $\mathbf{x}_{k}$ at time $k$ to a state $\mathbf{x}_{k+1} $at time $k+1$ via :
+matrix $A$ may describe how a system evolves from a "state" $\mathbf{x}_{k}$ at time $k$ to a state $\mathbf{x}_{k+1}$  at time $k+1$ via :
 
 $$
     \mathbf{x}_{k+1} = A\mathbf{x}_{k}.
@@ -164,7 +164,7 @@ $$
 \Span{ \begin{bmatrix} 1\\ 1   \end{bmatrix}, \begin{bmatrix} 2 \\  2  \end{bmatrix}, \begin{bmatrix} 0\\  1  \end{bmatrix}}.
 $$
 
-In a later chapter  ({numref}`Sec:SubspacesRn`, <FONT color ="#0076C2"> Subspaces in $\R^n$</FONT>)  we will call this the **column space** of the matrix $A$.
+In a later chapter  ({numref}`Sec:SubspacesRn`, <FONT color ="#0076C2"> Subspaces of $\R^n$</FONT>)  we will call this the **column space** of the matrix $A$.
 
 
 ::::::
@@ -201,9 +201,6 @@ $$
 
 
 ::::::
-
-
-
 
 
 
@@ -250,7 +247,7 @@ The embedding of $\mathbb{R}^2$  into $\mathbb{R}^3$
 
 
 
-The range of this transformation is the the span of the two vectors
+The range of this transformation is the span of the two vectors
 
 $$
    \mathbf{e}_1  = 
@@ -263,13 +260,10 @@ $$
 \end{bmatrix},
 $$
 
-which is the the $xy$-plane in $\mathbb{R}^3$.
+which is the  $xy$-plane in $\mathbb{R}^3$.
 
 
 ::::::
-
-
-
 
 
 For $2\times2$ and $3\times3$ matrices the transformations often have a geometric interpretation, as the following example illustrates. 
@@ -300,7 +294,6 @@ $$
 $$
 
 First we observe that the range of this transformation consists of all multiples of the vector $ \begin{bmatrix} 1 \\ 0 \end{bmatrix} $, 
-
 i.e. the $x$-axis in the plane.
 
 Second,  let us find the set of points/vectors  that is mapped to an arbitrary point 
@@ -341,15 +334,7 @@ See {numref}`Figure %s <Fig:LinTrafo:SkewProjection>`.
 The transformation of {prf:ref}`Eq:LinTrafo:SkewProjection`
 ::::
 
-
-
-
-
 ::::::
-
-
-
-
 
 
 
@@ -394,7 +379,7 @@ We close this subsection with an example of a matrix transformation representing
 :label: Ex:LinTrafo:MigrationModel
 
 
-Consider a model with two cities between which over a fixed period of time migrations take place.  Say in a period of ten years 90\% of the inhabitants in city $A$ stay in city $A$ and 10\% move to city $B$, and from city $B$ 20\% of the citizens move to $A$.   
+Consider a model with two cities between which over a fixed period of time migrations take place.  Say in a period of ten years 90\% of the inhabitants in city $A$ stay in city $A$ and 10\% move to city $B$. From city $B$ 20\% of the citizens move to $A$,  so 80\% stay in city $B$. <BR>   
 The following table contains the relevant statistics:
 
 $$
@@ -441,15 +426,12 @@ $$
 \end{bmatrix} = M \mathbf{x}_{k}.
 $$
 
-The $M$ stands for migration matrix. \, Obviously this model can  be generalized to a "world" with any number of cities.
+The $M$ stands for migration matrix. 
+
+Obviously this model can  be generalized to a "world" with any number of cities.
 
 
 ::::::
-
-
-
-
-
 
 
 
@@ -457,7 +439,7 @@ The $M$ stands for migration matrix. \, Obviously this model can  be generalized
 ## Linear Transformations
 
 In the previous section we saw that the matrix transformation $\mathbf{y}=A\mathbf{x}$ can also be seen as a mapping $T(\mathbf{x}) = A\mathbf{x}$.  
-This mapping has two characteristic properties that we will focus on in this section.
+This mapping has two characteristic properties on which we will focus in this section.
 
 
 
@@ -490,22 +472,16 @@ $$
 </li>
 </ol>
 
-
-
 ::::::
-
-
-
-
 
 
 ::::::{exercise}
 :label: Exc:LinTrafo:ImageofZeroVector
 
 
-Show that a linear transformation from $\mathbb{R}^n$ to $\mathbb{R}^m$ always sends the zero vector in $\R^n$ to the zero vector in $\R^m$,
+Show that a linear transformation from $\mathbb{R}^n$ to $\mathbb{R}^m$ always sends the zero vector in $\R^n$ to the zero vector in $\R^m$.
 <BR>
-i.e.,    if  $  T:\mathbb{R}^n \to\mathbb{R}^m$    is a  linear transformation,  then   $T(\mathbf{0}_n) = \mathbf{0}_m$.
+Thus,    if  $  T:\mathbb{R}^n \to\mathbb{R}^m$    is a  linear transformation,  then   $T(\mathbf{0}_n) = \mathbf{0}_m$.
 
 
 ::::::
@@ -600,9 +576,6 @@ So indeed $T$ has the two properties of a linear transformation.
 
 
 ::::::
-
-
-
 
 
 
@@ -797,7 +770,7 @@ The transformation  $S\circ T$ is called the **composition**  of the two transfo
 Suppose that
 
 $$
-  T(\mathbf{x}+\mathbf{y}) = T(\mathbf{x})+T(\mathbf{y})\quad \text{and} \quad T(c\mathbf{x}) = cT(\mathbf{x}, \quad \text{for  } \mathbf{x}, \mathbf{y} \quad \text{in  } \mathbb{R}^n, 
+  T(\mathbf{x}+\mathbf{y}) = T(\mathbf{x})+T(\mathbf{y})\quad \text{and} \quad T(c\mathbf{x}) = cT(\mathbf{x}), \quad \text{for}\,\, \mathbf{x}, \mathbf{y} \quad \text{in  } \mathbb{R}^n, 
       \,\, c \text{  in  } \mathbb{R}
 $$
 
@@ -896,7 +869,7 @@ Suppose $T:\mathbb{R}^n\rightarrow\mathbb{R}^m$ is a linear transformation.
 So we have
 
 $$
-  \text{(i)  }T(\mathbf{x}+\mathbf{y}) = T(\mathbf{x})+T(\mathbf{y}) \quad\text{and} \quad \text{(ii)  }
+  \text{(i)}T(\mathbf{x}+\mathbf{y}) = T(\mathbf{x})+T(\mathbf{y}) \quad\text{and} \quad \text{(ii)  }
     T(c\mathbf{x}) = c T(\mathbf{x}).
 $$
 
@@ -1134,13 +1107,16 @@ Each linear transformation $T$ from $\mathbb{R}^n$ to $\mathbb{R}^m$ is a matrix
 
 More specific: if $T: \mathbb{R}^n \to \mathbb{R}^m$ is linear, then for each $\mathbf{x}$ in $\mathbb{R}^n$
 
-$$
+:::::{math}
+:label: Eq:Lintrafo:StandardMatrix
+
   T(\mathbf{x}) = A\mathbf{x}, \quad \text{where} \quad 
   A = 
 \begin{bmatrix}
  T(\mathbf{e}_1) & T(\mathbf{e}_2) & \ldots & T(\mathbf{e}_n) 
 \end{bmatrix}.
-$$
+
+:::::
 
 
 
@@ -1394,7 +1370,7 @@ $$
  2  \\ 4 \\ 0
 \end{bmatrix}=
 \begin{bmatrix}
- 1  \\ -2 \\ 2
+ 2  \\ -2 \\ 2
 \end{bmatrix}.
 $$
 
@@ -1406,11 +1382,11 @@ $$
 S\circ T(\mathbf{e_1})&S\circ T(\mathbf{e_2})
 \end{bmatrix} \,\,=\,\,
 \begin{bmatrix}
- 2 &1 \\ 0&-2 \\ -1&2
+ 2 &2 \\ 0&-2 \\ -1&2
 \end{bmatrix}. 
 $$
 
-In the section {ref}`Sec:MatrixOps` we will define the product of two matrices in such a way that
+In the section {ref}`Sec:MatrixOps` we will define the product of two matrices precisely in such a way that
 
 $$
 \begin{bmatrix}
@@ -1420,7 +1396,7 @@ $$
  1&2 \\ 3&4 \\ 1&0 
 \end{bmatrix} = 
 \begin{bmatrix}
- 2 &1 \\ 0&-2 \\ -1&2
+ 2 &2 \\ 0&-2 \\ -1&2
 \end{bmatrix}.
 $$
 
@@ -1428,5 +1404,248 @@ $$
 
 ::::::
 
+
+## Grasple Exercises
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/97a589a8-54f9-4688-bd4d-a17a9585813b?id=69465
+:label: grasple_exercise_3_1_1 
+:dropdown:
+:description: This is {prf:ref}`Ex:LinTrafo:SecondMatrixTrafo`.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/3f14573a-1d4c-4a4b-ae48-ccb168005702?id=70373
+:label: grasple_exercise_3_1_2
+:dropdown:
+:description: To specify the domain and the codomain of a linear transformation
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/b80d9889-bd46-45c6-a9cb-d056aa315232?id=70374
+:label: grasple_exercise_3_1_3
+:dropdown:
+:description: To find the size of the matrix of a linear transformation
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/be6a768d-c60d-4ed6-81a7-5dea71b4a1a5?id=70375
+:label: grasple_exercise_3_1_4
+:dropdown:
+:description: To find image of two vectors under   $T(\vect{x}) = A\vect{x}$.  
+
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/
+:label: grasple_exercise_3_1_5
+:dropdown:
+:description: For linear map $T$,  find $T(c\vect{u})$ and $T(\vect{u}+\vect{v})$ if  $T(\vect{u})$  and $T(\vect{v})$  are given.
+
+
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/93048f7c-b755-4445-a532-949f34136096?id=70398
+:label: grasple_exercise_3_1_6
+:dropdown:
+:description: For linear map $T:\R^2 \to \R^2$, find $T((x1,x2))$   if  $T(\vect{e}_1)$  and $T(\vect{e}_2)$  are given
+
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/2af6559f-8871-494d-abce-d4263d530c69?id=70381
+:label: grasple_exercise_3_1_7
+:dropdown:
+:description: Find all vectors $\vect{w}$ for which $T(\vect{w}) = \vect{u}$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/ce6e4a52-c985-43ee-92cb-2762a467ac5a?id=70383
+:label: grasple_exercise_3_1_8
+:dropdown:
+:description:  Find vectors $\vect{w}$ for which $T(\vect{w}) = \vect{u}$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/37b6bd46-8cfc-4c98-a5e8-53aa41c87dcf?id=70384
+:label: grasple_exercise_3_1_10
+:dropdown:
+:description: Find vectors $\vect{w}$ for which $T(\vect{w}) = \vect{u}$.
+
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/c5b2a642-fd50-43f6-9346-c37a0ffe1a40?id=70386
+:label: grasple_exercise_3_1_10
+:dropdown:
+:description: Find vectors $\vect{w}$ for which $T(\vect{w}) = \vect{u}$.
+
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/c3d009c0-62d6-4ae3-8ca1-04a5d2730455?id=70406
+:label: grasple_exercise_3_1_11
+:dropdown:
+:description: To show that a given transformation is non-linear.
+
+
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/b9a4b128-f2c2-4612-a7f5-271c4e69aa70?id=70418
+:label: grasple_exercise_3_1_12
+:dropdown:
+:description: Finding an image and a pre-image of $T:\R^2 \to \R^2$  using a picture.
+ 
+
+::::::
+
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/4058e54a-74f2-414e-9693-420abbc62677?id=70391
+:label: grasple_exercise_3_1_13
+:dropdown:
+:description: To give a geometric description of $T: \vect{x} \mapsto A\vect{x}$.
+
+::::::
+
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/990bf561-629e-430f-b8d0-e757c63fe15c?id=70392
+:label: grasple_exercise_3_1_14
+:dropdown:
+:description: To give a geometric description of $T: \vect{x} \mapsto A\vect{x}$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/4e5d3f55-9257-4023-9739-5df0a1a9f277?id=70410
+:label: grasple_exercise_3_1_15
+:dropdown:
+:description: To find the matrix of the transformation that send $(x,y)$ to $x\vect{a}_1 + y\vect{a}_2$.
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/9efa96e2-483d-4b2c-a58a-ba197bc09a81?id=70411
+:label: grasple_exercise_3_1_16
+:dropdown:
+:description: To find the matrix of the transformation that send $(x,y)$ to $x\vect{a}_1 + y\vect{a}_2$.
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/729cba57-72d1-4d54-8cf9-c9946952bf9d?id=70412
+:label: grasple_exercise_3_1_17
+:dropdown:
+:description: To rewrite  $T:\R^3 \to \R^2$  to standard form.
+
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/
+:label: grasple_exercise_3_1_18
+:dropdown:
+:description: To find the standard matrix for $T:\R^4 \to \R$.
+
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/34bb6386-7e7c-411b-83a1-09bbaf1106c5?id=70415
+:label: grasple_exercise_3_1_19
+:dropdown:
+:description: To find the standard matrix for  $T:\R^2 \to \R^2$  if  $T(\vect{v}_1)$ and $T(\vect{v}_2)$ are given.  
+
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/ce
+:label: grasple_exercise_3_1_20
+:dropdown:
+:description: To find the standard matrix for  $T:\R^2 \to \R^3$  if  $T(\vect{v}_1)$ and $T(\vect{v}_2)$ are given.  
+
+
+::::::
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/ce8ba17c-0a17-4d5e-b4b7-5c277c7e8df8?id=70416
+:label: grasple_exercise_3_1_21
+:dropdown:
+:description:  If  $T(\vect{0}) = \vect{0}$,  is $T$ (always) linear? 
+
+
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/3f992e7a-19e3-4b83-8d90-db86e323ea94?id=69296
+:label: grasple_exercise_3_1_22
+:dropdown:
+:description: To show that  $T(\vect{0}) = \vect{0}$  for a linear transformation.
+
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/94d618e0-de21-491c-ad44-8e29974e0303?id=71098
+:label: grasple_exercise_3_1_23
+:dropdown:
+:description: (T/F) If $\{\vect{v}_1,\vect{v}_2,\vect{v}_3\}$ is linearly dependent, then  $\{T(\vect{v}_1),T(\vect{v}_2),T(\vect{v}_3)\}$ is also linearly dependent?
+
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/f983b627-10c2-4dd6-a273-2a33e99d0ded?id=71101
+:label: grasple_exercise_3_1_24
+:dropdown:
+:description:  (T/F) If $\{\vect{v}_1,\vect{v}_2,\vect{v}_3\}$ is linearly independent, then  $\{T(\vect{v}_1),T(\vect{v}_2),T(\vect{v}_3)\}$ is also linearly independent?
+
+::::::
 
 

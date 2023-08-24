@@ -164,7 +164,7 @@ where the vector $\vect{e}_j$ stands for the $j$-th column of the $n \times n$ i
 
 
 
-This basis was already defined in {numref}`Sec:LinTrafo`, along with the **standard matrix** of a linear transformation.
+This basis was already defined in {numref}`Sec:LinTrafo`, along with the standard matrix of a linear transformation.
 
 
 ::::::
@@ -259,12 +259,16 @@ Suppose $S = \Span{\mathcal A} = \Span{\vect{a}_1, \vect{a}_2, \ldots, \vect{a}_
 
 Then the set ${\mathcal A}$ can be thinned to a basis of $S$, i.e. there is a subset
 
+<BR>
+
 $$
 
 {\mathcal B} \subseteq \mathcal{A}
 
 $$
-such that
+such that 
+
+<BR>
 
 $$
 
@@ -278,7 +282,7 @@ $$
 
 If $S$ is a subspace in $\R^n$ then any linear independent set $\mathcal{A}$ of vectors in $S$ can be extended to a basis of $S$.
 
-So, there is a set $\mathcal{B}$  containing $\mathcal{A}$ which is a basis for $S$.
+So, there exists a set $\mathcal{B}$  containing $\mathcal{A}$ which is a basis for $S$.
 
 </li>
 </ol>
@@ -325,22 +329,15 @@ For the remaining vectors,  starting from the second vector we act as follows:
 All along the way the span of the vectors remains intact,
 so equal to  $S$, while at the end the remaining generators will form a linearly independent set.
 
-As for the other  statemen,   for that we can use an argument as in {prf:ref}`Prop:Subspaces:AllSubspacesR3`.
+As for the other  statement,   for that we can use an argument as in {prf:ref}`Prop:Subspaces:AllSubspacesR3`.
 As long as the span of the vectors is not the whole subspace we can add a linearly independent vector from $S$.  Since in $\R^n$ there are at most $n$ linearly independent vectors, this process will end after at most $n$ steps.
 
 ::::::
 
 
 
-
-
-
-
-
 ::::::{prf:example}
 :label: Ex:TwoByFour
-
-
 
 
 
@@ -367,7 +364,7 @@ $$
 \end{bmatrix}
 $$
 
-are obviously independent, and span all of $\R^2$.  It is that the columns of $A$ cannot span more than  $\R^2$, so we may conclude
+are obviously independent, and span all of $\R^2$.  Since the columns of $A$ cannot span more than  $\R^2$, we may conclude
 
 $$
 \Col{A} = \R^2
@@ -378,24 +375,24 @@ and the two chosen columns give a possible basis   (see {numref}`Figure %s <Fig:
 This would also be the basis we get when we apply the thinning process of {prf:ref}`Prop:BasisDim:Thinning`: to find a basis for the column space we then start with the set of four columns and from left to right delete columns that are linear combinations of their predecessors.  We have
 
 $$
-\vect{a_2}  = -3\vect{a_1} \quad \text{and} \quad \vect{a_4} \in \Span{\vect{a_1}, \vect{a_3}},
+\vect{a}_2  = -3\vect{a}_1 \quad \text{and} \quad \vect{a}_4 \in \Span{\vect{a}_1, \vect{a}_3},
 $$
 
 since
 
 $$
-\Span{\vect{a_1}, \vect{a_3}} = \mathbb{R}^2.
+\Span{\vect{a}_1, \vect{a}_3} = \mathbb{R}^2.
 $$
 
 So we can thin the set of four columns as follows
 
 $$
-\Span{\vect{a_1},\vect{a_2},\vect{a_3},\vect{a_4}} =
-\Span{\vect{a_1},\vect{a_3},\vect{a_4}} =
-\Span{\vect{a_1},\vect{a_3}},
+\Span{\vect{a}_1,\vect{a}_2,\vect{a}_3,\vect{a}_4} =
+\Span{\vect{a}_1,\vect{a}_3,\vect{a}_4} =
+\Span{\vect{a}_1,\vect{a}_3},
 $$
 
-where the two vectors $\vect{a_1},\vect{a_3}$ are linearly independent.
+where the two vectors $\vect{a}_1,\vect{a}_3$ are linearly independent.
 
 Once it is known that  $ \Col{A}= \R^2$, **any** set of two independent vectors (not necessarily columns of $A$) may be taken as a basis.
 
@@ -533,7 +530,8 @@ $$
 \end{array}
 \right]
 =
-\left[\begin{array}{cccc|c} \vect{e_1} &  \vect{e_2} & \vect{e_3}  &  \vect{e_4} & \vect{0}
+\left[\begin{array}{cccc|c} \vect{e}_1 &  \vect{e}_2 & \vect{e}_3  &  
+\vect{e}_4 & \vect{0}
 \end{array}
 \right]
 $$
@@ -544,7 +542,7 @@ the relation
 
 $$
 
-\vect{e_4} = 2\vect{e_1} + \vect{e_3}
+\vect{e}_4 = 2\vect{e}_1 + \vect{e}_3
 \nonumber
 
 $$
@@ -553,7 +551,7 @@ can be read off.  The same relation holds between the columns of $A$:
 
 
 $$
-\vect{a_4} =
+\vect{a}_4 =
 \begin{bmatrix}
 5  \\ 5
 \end{bmatrix}
@@ -566,7 +564,7 @@ $$
 \begin{bmatrix}
 3  \\ 1
 \end{bmatrix}
-= 2\vect{a_1} + \vect{a_3},
+= 2\vect{a}_1 + \vect{a}_3,
 $$
 
 a relation that is easily overlooked at first sight.
@@ -635,7 +633,7 @@ $$
 
 A =
 \begin{bmatrix}
-\vect{a_1}&\vect{a_2}&\ldots &\vect{a_n}
+\vect{a}_1&\vect{a}_2&\ldots &\vect{a}_n
 \end{bmatrix}
 .
 \nonumber
@@ -646,12 +644,12 @@ We have seen before that a non-trivial linear relation
 
 $$
 
-c_1\vect{a_1} + c_2\vect{a_2}+ \ldots + c_n\vect{a_n} =  \vect{0}
+c_1\vect{a}_1 + c_2\vect{a}_2+ \ldots + c_n\vect{a}_n =  \vect{0}
 \nonumber
 
 $$
 
-between vectors $\vect{a_1},\vect{a_2},\ldots,\vect{a_n}$  corresponds to a non-trivial solution
+between vectors $\vect{a}_1,\vect{a}_2,\ldots,\vect{a}_n$  corresponds to a non-trivial solution
 
 $$
 
@@ -825,7 +823,7 @@ $$
 
 
 
-To find a basis of the column space we only have to look at the pivot columns of any (row) equivalent echelon matrix. For a basis of the null space it is preferable to work with the equivalent **reduced** echelon matrix.
+To find a basis of the column space we only have to look at the pivot columns of *any* (row) equivalent echelon matrix. The *corresponding* columns of $A$ provide a basis for the column space of $A$. For a basis of the null space it is preferable to work with the equivalent *reduced* echelon matrix.
 
 
 
@@ -1070,7 +1068,7 @@ c_2
 \begin{bmatrix}
 3 \\ 0 \\ 1
 \end{bmatrix}
-= c_1\vect{u_1} + c_2\vect{u_2}.
+= c_1\vect{u}_1 + c_2\vect{u}_2.
 $$
 
 Thus $(\vect{u}_1, \vect{u}_2)$ is a basis for $\mathcal{P}$.
@@ -1080,7 +1078,7 @@ We can also take $x_1$ and $x_3$ as free variables, and then find
 $$
 {\mathcal P} = \Span{
 \begin{bmatrix}
--1   \\ 2 \\ 0
+1   \\ -2 \\ 0
 \end{bmatrix}
 ,
 \begin{bmatrix}
@@ -1095,11 +1093,6 @@ which provides an alternative basis for $\mathcal{P}$.
 
 
 
-
-
-
-
-
 ::::::{exercise}
 :label: Exc:BasisDim:OtherBasesForPlane
 
@@ -1108,7 +1101,7 @@ which provides an alternative basis for $\mathcal{P}$.
 
 <li>
 
-Give another basis of the plane $\mathcal P$, which does not contain a vector that is a multiple of one of the vectors $\begin{bmatrix} -1   \\ 2 \\ 0 \end{bmatrix}$,  $\begin{bmatrix}3   \\ 0 \\ 1\end{bmatrix}$ and  $\begin{bmatrix}0 \\ 6\\1\end{bmatrix}$.
+Give another basis of the plane $\mathcal P$, which does not contain a vector that is a multiple of one of the vectors $\begin{bmatrix} 1   \\ -2 \\ 0 \end{bmatrix}$,  $\begin{bmatrix}3   \\ 0 \\ 1\end{bmatrix}$ and  $\begin{bmatrix}0 \\ 6\\1\end{bmatrix}$.
 
 </li>
 
@@ -1130,7 +1123,7 @@ Show that  **any** set of two independent vectors in the plane $\mathcal P$ gene
 ::::::{prf:definition}
 
 The **dimension** of a subspace $S$ is the number of elements in a
-(i.e., any) basis for $S$.   Notation:  $\text{dim}\, S$.
+(i.e., any) basis for $S$. &nbsp;  Notation: &nbsp; dim $S$.
 
 ::::::
 
@@ -1192,7 +1185,7 @@ $\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace$  is linearly  i
 
 <li>
 
- $\Span{\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace}=S$;
+ $\Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell}}=S$;
 
 
 </li>
@@ -1241,8 +1234,8 @@ $$
 $$
 
 i.e.,  each vector $\vect{s}$  in $S$  is contained in
-$\Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k }$. \\
-To show this,  let $\vect{s}$  be an arbitrary vector in $S$.\\
+$\Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k }$.  <BR>
+To show this,  let $\vect{s}$  be an arbitrary vector in $S$.  
 Furthermore, let
 
 $$
@@ -1250,13 +1243,13 @@ $$
 $$
 
 be any basis of $S$.
-Then we know  (Proposition ??) that the set
+Then the set
 
 $$
 \lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k,\vect{s}\rbrace
 $$
 
-which contains $k+1$ elements, is contained is $S$, where we have that
+which contains $k+1$ elements, is contained in the set 
 
 $$
 S = \Span{\vect{a}_1, \vect{a}_2, \ldots, \vect{a}_k}.
@@ -1269,8 +1262,8 @@ $$
 $$
 
 
-Invoking  Proposition ?? we get that
-$\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k \rbrace$ 
+Invoking  {prf:ref}`Thm:LinInd:TooManyVectsimpliesLinDep`   we get that
+$\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k, \vect{s} \rbrace$ 
 is linearly dependent.
 
 Since we assumed  $ \lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k\rbrace$    is linearly independent, we may conclude that
@@ -1279,7 +1272,7 @@ $$
 \vect{s} \in \Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k}.
 $$
 
-Thus  $\Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k }$ contains each vector in $S$, i.e.
+Thus we have shown that  $\Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k }$ indeed contains each vector in $S$, i.e.
 
 $$
 \Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k } = S.
@@ -1297,7 +1290,7 @@ The remaining part we leave to the reader.
 In {prf:ref}`Prop:BasisDim:TwoOfThreeSuffice`  prove
 
 $$
-\text{(ii)   and   (iii)}    \Rightarrow      \text{(i)}.
+\text{(ii)   and   (iii)}  \quad  \Longrightarrow \quad     \text{(i)}.
 $$
 
 ::::::
@@ -1318,7 +1311,7 @@ $$
 \text{dim}{\mathcal P} = 2.
 $$
 
-From the {prf:ref}`Prop:BasisDim:TwoOfThreeSuffice` it follows that  **any** set of two linearly independent vectors in $\mathcal{P}$ is a basis for $\mathcal{P}$.
+From the {prf:ref}`Prop:BasisDim:TwoOfThreeSuffice` it follows that  *any* set of two linearly independent vectors in $\mathcal{P}$ is a basis for $\mathcal{P}$.
 
 ::::::
 
@@ -1326,9 +1319,9 @@ From the {prf:ref}`Prop:BasisDim:TwoOfThreeSuffice` it follows that  **any** set
 
 ::::::{prf:example}
 
-Any set of $n$ independent vectors in $\R^n$ spans $\R^n$.
+Any set $S$ of $n$ independent vectors in $\R^n$ spans $\R^n$.
 
-Namely we know that dim$ \R^n = n$, so such a set satisfies (i) and (iii).
+Namely we know that $\R^n$ has dimension $n$, so such a set$S$ satisfies (i) and (iii).
 
 Of course this statement can also be proved by an argument involving pivots.
 
@@ -1344,8 +1337,8 @@ $$
 does say something about the linear relations between the columns of $A$.
 
 $$
-[ \vect{a_1}  \vect{a_2}  \ldots  \vect{a_n} ]\vect{x} = \vect{0} \quad \iff \quad
-x_1\vect{a_1}+ x_2\vect{a_2}+  \ldots +x_n\vect{a_n} = \vect{0}.
+[ \vect{a}_1  \vect{a}_2  \ldots  \vect{a}_n ]\vect{x} = \vect{0} \quad \iff \quad
+x_1\vect{a}_1+ x_2\vect{a}_2+  \ldots +x_n\vect{a}_n = \vect{0}.
 $$
 
 The more linear relations there are, i.e., the larger $\Nul{A}$ is, but
@@ -1474,7 +1467,7 @@ $$
 },
 $$
 
-thus \Row{A} is a subspace of $\R^4$  of dimension 2.
+thus $\Row{A}$ is a subspace of $\R^4$  of dimension 2.
 
 ::::::
 
@@ -1814,7 +1807,7 @@ The following proposition combines the results of the last two exercises.
 ::::::{prf:proposition}
 :label: Exc:BasisDim:ProveRankAPEqualToRankPA
 
-Suppose that $A$  and $P$ are  $n\times n$ matrices and $P$ is invertible. Then
+Suppose that $A$  and $P$ are  $n\times n$ matrices and $P$ is *invertible*. Then
 
 $$
 \text{rank}(AP) =   \text{rank}(A) =  \text{rank}(PA).
@@ -1834,7 +1827,7 @@ $$
 
 The first inequality is the same as the inequality in {numref}`Exc:BasisDim:ProveRankABLeqRankA`
 and the second inequality follows from the same exercise by taking $A = AP$   and  $B = P^{-1}$.
-This proves  $\text{rank}(AP) =   \text{rank}(A)$.
+This proves  $\text{rank}(AP) =   \text{rank}(A)$. <BR>
 The identity  $\text{rank}(A) =  \text{rank}(PA)$ follows by considering the transpose:
 
 $$
@@ -1842,7 +1835,7 @@ $$
  = \text{rank}\left(A^TP^T\right).
 $$
 
-Here we have a product  $A^TP^T$  with  $P^T$  invertible, so we can use use the identity that we already proved, and find
+Here we have a product  $A^TP^T$  with  $P^T$  invertible, so we can use use the identities that we already proved, and find
 
 $$
 \text{rank}\left(A^TP^T\right)

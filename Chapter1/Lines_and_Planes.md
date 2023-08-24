@@ -344,7 +344,7 @@ Let $\mathcal{P}$ be a plane in $\mathbb{R}^3$. If $\mathbf{v_0}$ is a vector on
 For 
 
 $$
-  \vect{n} = \begin{bmatrix}  n_1 \\  _2 \\ n_3
+  \vect{n} = \begin{bmatrix}  n_1 \\  n_2 \\ n_3
             \end{bmatrix}, \quad
   \vect{v}_0 = \begin{bmatrix}  x_0 \\  y_0 \\ z_0
             \end{bmatrix}, \quad
@@ -621,8 +621,8 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 ::::
 
 
-::::{grasple}
-:url: https://embed.grasple.com/exercises/
+::::{grasple} https://embed.grasple.com/exercises/
+42d254e8-e577-4bb1-b365-110f9805c1cf?id=78848
 :label: grasple_exercise_1_4_8
 :dropdown:
 :description: To show that two lines have 0, 1 or $\infty$ points in common.
@@ -679,5 +679,12 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 :dropdown:
 :description: To give a parametric vector equation for  a plane  $ax+by+cz=k$.
 
+
+::::
+
+::::{grasple} https://embed.grasple.com/exercises/f02eebc1-b919-4070-a87a-f04bb620cc8d?id=80872
+:label: grasple_exercise_1_4_14
+:dropdown:
+:description: To give a  cartesian equation for  a plane  containing a given point $A$ and with a given normal vector $\vect{n}$.
 
 ::::
