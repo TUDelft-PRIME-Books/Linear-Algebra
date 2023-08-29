@@ -295,7 +295,7 @@ If $A$ is an invertible upper triangular matrix, then $A^{-1}$ is upper triangul
 ::::
 
 
-The proof of {prf:ref}`Prop:LUDecomp:PropertiesTriangularMatricesInverse` is technical and it involves computations . 
+The proof of {prf:ref}`Prop:LUDecomp:PropertiesTriangularMatricesInverse` is technical and it involves computations. We leave it as an exercise (see <a href="#Item:prove_statment_c_properties_triangular_matrices">Exercise 1</a>). 
 
 So the reader may skip this proof and convince themselves that the properties hold true by looking at the following example.
 
@@ -381,8 +381,7 @@ AB_{(j+k)j} &= \sum_{l=1}^{n} a_{(j+k)l}b_{lj} \\
 &= 0.        
 \end{align*}
  
-The proof for {prf:ref}`Item:prop:PropertiesTriangularMatricesInverse` is proposed as an exercise. See 
-<a href="#Item:prove_statment_c_properties_triangular_matrices">Exercise 1</a>.
+
 
 
 ::::::
@@ -1310,18 +1309,14 @@ $10$ & $4,025$ & $1,565$ & $8,050$ & $2,515$ & $40,250$ & $10,115$ \\
 
 ## Theoretical Exercises
 
+:::{latexlist}
+:enumerated: true
 
-<ol type="1">
-<li id="Item:prove_statment_c_properties_triangular_matrices">
+\item Prove {prf:ref}`Prop:LUDecomp:PropertiesTriangularMatricesInverse`. **Hint:** Write the matrix $[A\vert I]$ and apply row operations to compute $A^{-1}$. The idea is similar to the one used in the proof of {prf:ref}`thm:existence_and_uniqueness_LU`.
+\label{Item:prove_statment_c_properties_triangular_matrices}
 
- Prove {prf:ref}`Prop:LUDecomp:PropertiesTriangularMatricesInverse`. **Hint:** Write the matrix $[A\vert I]$ and apply row operations to compute $A^{-1}$. The idea is similar to the one used in the proof of {prf:ref}`thm:existence_and_uniqueness_LU`.
+\item Check that the number of arithmetic operations needed to solve a linear system using row reduction (without exchanging rows) and with $LU$ decomposition is the same.
 
-</li>
-<li>
-
-Check that the number of arithmetic operations needed to solve a linear system using row reduction (without exchanging rows) and with $LU$ decomposition is the same.
-
-</li>
-</ol>
+:::
 
 [^flopnote]: In some books they use the abbreviation flop (floating point operations).

@@ -7,7 +7,7 @@
 
 Subspaces are structures that appear in many different subfields of linear algebra.
 For instance, as solution sets of homogeneous systems of linear equations, and as ranges of linear transformations, to mention two situations that we have already come across.
-In this section we will define them and analyze their basic properties, in {numref}`Sec:BasisDim` we will consider the important attributes basis and dimension.
+In this section we will define them and analyze their basic properties. In {numref}`Sec:BasisDim` we will consider the important attributes basis and dimension.
 
 
 ## Definition of subspace and basic properties
@@ -27,10 +27,8 @@ $S$ contains the zero vector.
 <li>
 
 If two vectors $\vect{u}$ and $\vect{v}$ are in $S$, then their sum is in $S$ too:
-<br>
-<br>
 
-<BR>
+<br>
 
 $$
 \vect{u} \in S,  \vect{v} \in S \quad \Longrightarrow \quad
@@ -41,10 +39,8 @@ $$
 <li>
 
 If a vector  $\vect{u}$ is in $S$, then every scalar multiple of $\vect{u}$ is in $S$ too:
-<br>
-<br>
 
-<BR>
+<br>
 
 $$
 \vect{u} \in S,  c \in \R \quad \Longrightarrow \quad
@@ -59,7 +55,7 @@ $$
 
 ::::::{prf:remark}
 
-Property (ii) is also expressed as: a subspace is closed under sums.  Likewise property (iii) says that a subspace is closed under taking scalar multiples.
+Property (ii) is also expressed as: a subspace is *closed under sums*.  Likewise property (iii) says that a subspace is *closed under taking scalar multiples*.
 
 ::::::
 
@@ -78,9 +74,8 @@ $S$ certainly contains the zero vector.
 <li>
 
 If two vectors $\vect{u}$ and $\vect{v}$ are in $S$, then their sum is in $S$ too:
-<br><br>
 
-<BR>
+<br>
 
 $$
 
@@ -94,10 +89,9 @@ $$
 
 <li>
 
-If a vector  $\vect{u}$ is in $S$, then every scalar multiple of $\vect{u}$ is in $S$ too:  again
-<br><br>
+If a vector  $\vect{u}$ is in $S$, then every scalar multiple of $\vect{u}$ is in $S$ too:  
 
-<BR>
+<br>
 
 $$
 \vect{u} \in S\quad
@@ -136,7 +130,7 @@ $$
 ::::{figure} Images/Fig-Subspaces-Lines.svg
 :name: Fig:Subspaces:Lines
 
-A line  is a subspace if and only if it goes through (0,0)
+A line is a subspace of $\R^2$ if and only if it goes through (0,0)
 ::::
 
 ::::::
@@ -174,13 +168,13 @@ Also give a set with only the properties (i) and (iii).
 
 ::::::{prf:example}
 
-A disk  $D: x^2 + y^2 \leq a^2$, where $a$ is some positive number, is not a subspace of $\R^2$.  It has neither of the properties
+A disk  $D$ specified by the inequality $x^2 + y^2 \leq a^2$, where $a$ is some positive number, is not a subspace of $\R^2$.  It has neither of the properties
 (ii) and (iii).  See {numref}`Figure %s <Fig:Subspaces:SubspacesDisk>`.
 
 ::::{figure} Images/Fig-Subspaces-Disk.svg
 :name: Fig:Subspaces:SubspacesDisk
 
-A disk is not a subspace.
+A disk is not a subspace of $\R^2$.
 ::::
 
 ::::::
@@ -194,7 +188,7 @@ A non-empty subset  $S$ of $\R^n$ is a subspace if and only if
 :::{math}
 :label: Eq:Subspaces:SpanClosed
 
-\text{for all  } \vect{u},  \vect{v} \in S,  c_1, c_2 \in \R \text{  we have  }
+\text{for all  } \vect{u},  \vect{v} \in S,  c_1, c_2 \in \R\,\,\text{  it holds that  }\,\,
 c_1\vect{u}+ c_2 \vect{v} \in S.
 
 :::
@@ -236,7 +230,7 @@ $$
 c\vect{u}  = c\vect{u}+0\vect{u}  \in S, \text{  so  }S\text{  has property (iii)}.
 $$
 
-Finally, to show that $S$ contains the zero vector, let $\vect{u}$ be any vector in $S$, which is possible since $S$ is non-empty. Then from property (iii), taking $c = 0$ it follows that
+Finally, to show that $S$ contains the zero vector, let $\vect{u}$ be any vector in $S$, which is possible since $S$ is non-empty. Then from property (iii), taking $c = 0$, it follows that
 
 $$
 
@@ -251,17 +245,17 @@ $$
 ::::::{prf:remark}
 
 
-By repeatedly applying the last proposition, for a subspace $S$ we have:
+By repeatedly applying the last proposition, we find for any subspace $S$
 
 $$
-\vect{u_1}, \ldots , \vect{u_k} \in S,  c_1, \ldots , c_k \in \R
+\vect{u}_1, \ldots , \vect{u}_k \in S,  c_1, \ldots , c_k \in \R
 \quad \Longrightarrow \quad
-c_1\vect{u_1}+  \ldots + c_k\vect{u_k} \in S.
+c_1\vect{u}_1+  \ldots + c_k\vect{u}_k \in S.
 $$
 
-So we can more generally say:  a subspace is closed under taking linear combinations. <BR>
-This also means that if $\vect{u_1}, \ldots , \vect{u_k} $  are vectors in a subspace $S$, <BR>
-then $\Span{\vect{u_1}, \ldots , \vect{u_k}} $ is contained in $S$.
+So we can more generally say that  a subspace is *closed under taking linear combinations*. <BR>
+This also means that if $\vect{u}_1, \ldots , \vect{u}_k $  are vectors in a subspace $S$, <BR>
+then $\Span{\vect{u}_1, \ldots , \vect{u}_k} $ is contained in $S$.
 
 ::::::
 
@@ -274,10 +268,10 @@ In fact, the standard example of a subspace is as given in the next proposition.
 :label: Prop:Subspaces:SpanIsSubspace
 
 
-If  $\vect{v}_1,\vect{v}_2, \ldots , \vect{v_r}$ are vectors in $\R^n$, then
+If  $\vect{v}_1,\vect{v}_2, \ldots , \vect{v}_r$ are vectors in $\R^n$, then
 
 $$
-\Span{\vect{v}_1,\vect{v}_2, \ldots , \vect{v_r}} \quad \text{is a subspace in  } \R^n.
+\Span{\vect{v}_1,\vect{v}_2, \ldots , \vect{v}_r} \quad \text{is a subspace in  } \R^n.
 $$
 
 In this situation the vectors are said to **generate** the subspace, or to be a **set of generators** for the subspace.
@@ -299,21 +293,21 @@ Next let us  check the  three properties in {prf:ref}`Dfn:Subspaces:Subspace`  i
 Property (i):
 
 $$
-\vect{0} = 0\vect{v}_1+0\vect{v}_2+ \ldots + 0\vect{v_r}, \quad \text{so} \quad
-\vect{0} \in \text{Span} \{ \vect{v}_1,\vect{v}_2, \ldots , \vect{v_r} \}.
+\vect{0} = 0\vect{v}_1+0\vect{v}_2+ \ldots + 0\vect{v}_r, \quad \text{so} \quad
+\vect{0} \in \text{Span} \{ \vect{v}_1,\vect{v}_2, \ldots , \vect{v}_r \}.
 $$
 
 For property (ii) we just have to note that the sum of two linear combinations
 
 $$
-(c_1\vect{v}_1+ \ldots + c_r\vect{v_r})\quad \text{and} \quad (d_1\vect{v}_1+ \ldots + d_r\vect{v_r})
+(c_1\vect{v}_1+ \ldots + c_r\vect{v}_r)\quad \text{and} \quad (d_1\vect{v}_1+ \ldots + d_r\vect{v}_r)
 $$
 
-of a set of vectors $ \{ \vect{v}_1,\vect{v}_2, \ldots , \vect{v_r} \}$  is again a linear combination of these vectors. This is quite straightforward:
+of a set of vectors $ \{ \vect{v}_1,\vect{v}_2, \ldots , \vect{v}_r \}$  is again a linear combination of these vectors. This is quite straightforward:
 
 $$
-(c_1\vect{v}_1+ \ldots + c_r\vect{v_r}) + (d_1\vect{v}_1+ \ldots + d_r\vect{v_r}) =
-(c_1+d_1)\vect{v}_1+ \ldots + (c_r+d_r)\vect{v_r}.
+(c_1\vect{v}_1+ \ldots + c_r\vect{v}_r) + (d_1\vect{v}_1+ \ldots + d_r\vect{v}_r) =
+(c_1+d_1)\vect{v}_1+ \ldots + (c_r+d_r)\vect{v}_r.
 $$
 
 Likewise you can check property (iii).  This is {numref}`Exc:Subspaces:CheckPropiii`.
@@ -341,7 +335,7 @@ Give a proof of property (iii).
 ::::::{prf:remark}
 
 In the previous proposition we do not impose any restrictions on the set of vectors
-$\{ \vect{v}_1,\vect{v}_2, \ldots , \vect{v_r} \}$. In the sequel we will see that it will be advantageous to have a **linear independent** set of generators.
+$\{ \vect{v}_1,\vect{v}_2, \ldots , \vect{v}_r \}$. In the sequel we will see that it will be advantageous to have a **linear independent** set of generators.
 
 ::::::
 
@@ -417,13 +411,13 @@ The  argument can be generalized to prove the following theorem.
 Every subspace of $\R^n$ is of the form
 
 $$
-S = \Span{\vect{v}_1, \ldots , \vect{v_r}} \quad \text{for some  } \, r \leq n,
+S = \Span{\vect{v}_1, \ldots , \vect{v}_r} \quad \text{for some  } \, r \leq n,
 $$
 
 where
 
 $$
-\{\vect{v}_1, \ldots , \vect{v_r}\} \,  \text{is linearly independent.}
+\{\vect{v}_1, \ldots , \vect{v}_r\} \,\,  \text{is linearly independent.}
 $$
 
 ::::::
@@ -440,7 +434,7 @@ We now turn our attention to two important subspaces closely related to an $m\ti
 
 ::::::{prf:definition}
 
-The **column space** of an $m\times n$ matrix $A= [ \vect{a}_1   \vect{a}_2    \ldots     \vect{a}_n ]$ is the span of the columns of $A$:
+The **column space** of an $m\times n$ matrix $A=  \begin{bmatrix} \vect{a}_1 &  \vect{a}_2    & \ldots &    \vect{a}_n \end{bmatrix}$  is the span of the columns of $A$:
 
 $$
 \Col{A} = \Span{\vect{a}_1,\vect{a}_2,\ldots,\vect{a}_n}.
@@ -459,7 +453,7 @@ $$
 
 For an $m\times n$ matrix $A$, Col $A$ is the set of all vectors of the form $A\vect{x}$, for  $\vect{x}\in\R^n$.   The column space
 Col ${A}$   can also be interpreted as the range of the linear transformation $T:\R^n \to \R^m$ defined via
-$T(\vect{x}) = A\vect{x}$.  (Cf. {prf:ref}`Prop:LinTrafo:RangeTA`.)
+$T(\vect{x}) = A\vect{x}$.  &nbsp; (Cf. {prf:ref}`Prop:LinTrafo:RangeTA`.)
 
 ::::::
 
@@ -488,6 +482,9 @@ Let $A$ be an  $m\times n$ matrix.
 The column space of  $A$ is a subspace of $\R^m$.
 
 </li>
+
+<BR>
+
 <li>
 
 The null space of  $A$ is a subspace of $\R^n$.
@@ -585,8 +582,6 @@ Hence $\Nul{A}$  has all the properties of a subspace.
 
 The above proof,  that the null space is a subspace,  is as basic as possible. That is, we started from the definitions (of null space and subspace) and used properties of the matrix product to connect the two.
 
-The above proof,  that the null space is a subspace,  is as basic as possible. That is, we started from the definitions (of null space and subspace) and used properties of the matrix product to connect the two.
-
 Alternatively we could have used knowledge already acquired earlier. In {numref}`Section:SolutionSets`  we have seen that the solution set of a homogeneous
 system
 
@@ -618,7 +613,7 @@ Suppose that $A$  and $B$ are  matrices for which the product $AB$ is defined.
 
 <li>
 
-Show that the column space of $AB$ is s subset of the column space of $A$, i.e.
+Show that the column space of $AB$ is a subset of the column space of $A$, i.e.
 <br><br>
 
 $$

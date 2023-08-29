@@ -266,21 +266,40 @@ be two arbitrary vectors in $\mathbb{R}^n$. Then
 \end{align*}
 
 
+ii. For two vectors $\vect{v}_1 = \begin{bmatrix}a_{1} \\ a_{2}\\ \vdots\\ a_{n}\end{bmatrix}$, $\vect{v}_2 = \begin{bmatrix}b_{1} \\ b_{2}\\ \vdots\\ b_{n}\end{bmatrix}$, and  constants   $c$ we see that
+
 $$\begin{eqnarray*}
-            (c\mathbf{v_1})\ip\mathbf{v_2} &=&  \begin{bmatrix}ca_{1}\\ca_{2}\\ \vdots\\ca_{n}\end{bmatrix}\ip\begin{bmatrix}b_{1}\\b_{2}\\                                 \vdots\\b_{n}\end{bmatrix}\\
-            &=& (ca_1)b_1 + (ca_2)b_2+ \ldots + (ca_n)b_n \\
+            (c\mathbf{v_1})\ip\mathbf{v_2} &=&  \begin{bmatrix}ca_{1}\\ca_{2}\\ \vdots\\ca_{n}\end{bmatrix}\ip\begin{bmatrix}b_{1}\\b_{2}\\       \vdots\\b_{n}\end{bmatrix} = (ca_1)b_1 + (ca_2)b_2+ \ldots + (ca_n)b_n \\
             &=& c\,(a_1b_1 +a_2b_2+ \ldots + a_nb_n) = c\, (\mathbf{v_1}\ip\mathbf{v_2})
-\end{eqnarray*}$$
+\end{eqnarray*}
+$$
 
 iii. Is proved in the same way as (ii).
 
-iv.  $\mathbf{v}\ip\mathbf{v} = a_1a_1 +a_2a_2+ \ldots + a_na_n = a_1^2+a_2^2 + \ldots + a_n^2$ is the sum of squares of real numbers, so it is nonnegative. It only becomes 0 if all the squares are 0, which only happens if each entry $a_i$ is equal to zero, that is, if $\mathbf{v} = \mathbf{0}$.
+iv. This consists of two statement.  For the first, we note that
+
+$$
+ \mathbf{v}\ip\mathbf{v} = a_1a_1 +a_2a_2+ \ldots + a_na_n = a_1^2+a_2^2 + \ldots + a_n^2
+$$
+ is the sum of squares of real numbers, so it is nonnegative. That is,  
+
+$$
+  \mathbf{v}\ip\mathbf{v} \geq 0.
+$$
+
+To prove the second statement, we see that
+
+$$
+  \mathbf{v}\ip\mathbf{v} =  a_1^2+a_2^2 + \ldots + a_n^2 = 0
+$$
+
+if and only  if all the squares are 0, which only happens if each entry $a_i$ is equal to zero, that is, if $\mathbf{v} = \mathbf{0}$.
 :::
 
 :::{exercise}
 :label: Exc:InnerProduct:CheckPropInnerProd
 
-Prove property (iii).
+Prove property iii.
 :::
 
 :::{exercise}
@@ -358,9 +377,11 @@ $$
 
 and conclude that  $\mathbf{u}$ and $\mathbf{v}$ are orthogonal, $\mathbf{u}$ and $\mathbf{w}$ are not orthogonal, <BR>  $\mathbf{v}$ and $\mathbf{w}$  are orthogonal.
 
-::::{grasple} https://embed.grasple.com/exercises/83c8e82a-ed9c-451f-b552-631b6160e270?id=78789
-
+::::{grasple}
+:url: https://embed.grasple.com/exercises/83c8e82a-ed9c-451f-b552-631b6160e270?id=78789
 :label: grasple_exercise_1_2_1
+:dropdown:
+:description:
 
 ::::
 
@@ -368,15 +389,11 @@ and conclude that  $\mathbf{u}$ and $\mathbf{v}$ are orthogonal, $\mathbf{u}$ an
 
 In $\mathbb{R}^2$,  two nonzero vectors that are orthogonal to the same nonzero vector $\mathbf{v}$ are automatically multiples of each other (i.e. have either the same or the opposite direction). In $\mathbb{R}^n$ with  $n \geq 3$ this no longer holds. In this example both  vectors $\mathbf{u}$ and  $\mathbf{w}$ are orthogonal to the vector $\mathbf{v}$, but $\mathbf{u} \neq c\mathbf{w}$.
 
-:::
 
-By definition the zero vector is orthogonal to any vector, since $\mathbf{0}\ip\mathbf{v} = 0$.
-Moreover, the zero vector is the _only_ vector that is orthogonal to itself:
+By definition the zero vector is orthogonal to any vector, since $\mathbf{0}\ip\mathbf{v} = 0$. Moreover, the zero vector is the *only* vector that is orthogonal to itself, which is the content of the next proposition.
 
 :::{prf:proposition}
 :label: Prop:InnerProduct:vDotv=0Impliesv=0
-
-
 
 Suppose  $\mathbf{v} \in \mathbb{R}^n$.  Then  $\mathbf{v}\perp\mathbf{v} \iff \mathbf{v} = \mathbf{0}$.
 
@@ -712,11 +729,15 @@ $$
 
 ::::
 
+TATATA
+
+
+
 ::::{prf:example}
 :label: Ex:InnerProduct:Distance
 
 For the vectors  $\vect{u} = \begin{bmatrix}1 \\ 3 \\ 2 \\ 4 \end{bmatrix}$ and
-$\vect{u} = \begin{bmatrix}5 \\ 1 \\ 3 \\ 4 \end{bmatrix}$ in $\R^4$
+$\vect{v} = \begin{bmatrix}5 \\ 1 \\ 3 \\ 4 \end{bmatrix}$ in $\R^4$
 
 the distance is given by
 
@@ -729,10 +750,12 @@ $$
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/5bc4274c-56a0-461b-bd3d-9f8bdb8f44e0?id=69740
+::::{grasple}
+:url: https://embed.grasple.com/exercises/5bc4274c-56a0-461b-bd3d-9f8bdb8f44e0?id=69740
 :label: grasple_exercise_1_2_2
 :dropdown:
 :description: Computing the distance between two vectors in $\R^3$.
+
 ::::
 
 From the rules of the norm the following rules of the distance function can be deduced
@@ -760,7 +783,7 @@ Rule iii. is again called the *Triangle Inequality*.
 
 Check the three properties of the distance function as stated in 
 {prf:ref}`Prop:InnerProduct:PropertiesNorm`. &nbsp;
-For Rule iii., only show how it  follows from the corresponding Rule iii.m in
+For Rule iii., only show how it  follows from the corresponding Rule iii. in
 that same proposition. 
 ::::
 
@@ -779,7 +802,7 @@ With the tools so far we can define a notion that comes in handy later.
 
 
 
-A *unit vector* is a vector of norm 1.
+A **unit vector** is a vector of norm 1.
 
 Moreover, for any nonzero vector $\mathbf{v}$,
 the vector
@@ -1233,7 +1256,7 @@ $$
 
 is positive if the angle is acute, zero if the angle is right, and negative if the angle is obtuse.
 
-In the case of a acute angle, by considering the right triangle  $\Delta OAB$,  where $A$ is the end point of $\mathbf{\hat{w}}$ and  $B$ is  the end point of $\mathbf{w}$,  we see that on the one hand
+In the case of an acute angle, by considering the right triangle  $\Delta OAB$,  where $A$ is the end point of $\mathbf{\hat{w}}$ and  $B$ is  the end point of $\mathbf{w}$,  we see that on the one hand
 
 $$
 
@@ -1262,7 +1285,7 @@ So we may conclude that
 In the case of an obtuse angle, we use that the projection of $\mathbf{w}$ onto $\mathbf{v}$ is equal to the projection
 of $\mathbf{w}$ onto $-\mathbf{v}$, as it is in fact the projection onto the line consisting of all multiples of $\mathbf{v}$. Now look at the picture on the right of figure  {numref}`Figure %s <Fig:InnerProduct:AngleAndProjection>`
 . There you see that $\mathbf{w}$  and
-$-\mathbf{v}$ make a acute angle $\psi = \pi - \phi$, so we can apply 
+$-\mathbf{v}$ make an acute angle $\psi = \pi - \phi$, so we can apply 
 Equation {eq}`Eq:InnerProduct:GeometricInterpretation` to  $\mathbf{w}$  and $-\mathbf{v}$:
 
 
@@ -1380,7 +1403,8 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 
 ## Grasple Exercises
 
-::::{grasple} https://embed.grasple.com/exercises/59912254-6fc8-43c7-9c44-1ea7eab1c236?id=62409
+::::{grasple}
+:url: https://embed.grasple.com/exercises/59912254-6fc8-43c7-9c44-1ea7eab1c236?id=62409
 :label: grasple_exercise_1_2_3
 :dropdown:
 :description: To compute dot products in $\R^2$, $\R^3$ and $\R^4$.
@@ -1388,7 +1412,8 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/7b49e0f5-ae8b-4e92-8878-665dc080b7ee?id=65601
+::::{grasple}
+:url: https://embed.grasple.com/exercises/7b49e0f5-ae8b-4e92-8878-665dc080b7ee?id=65601
 :label: grasple_exercise_1_2_4
 :dropdown:
 :description: To find a vector orthogonal to a given vector in $\R^2$.
@@ -1396,7 +1421,8 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/c8b4eed4-179f-42ab-9ec9-07f66445c960?id=69482
+::::{grasple}
+:url: https://embed.grasple.com/exercises/c8b4eed4-179f-42ab-9ec9-07f66445c960?id=69482
 :label: grasple_exercise_1_2_5
 :dropdown:
 :description: To find a vector orthogonal to two given vectors in $\R^2$.
@@ -1404,15 +1430,24 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/b5a4e1c0-92ca-4307-9eb0-25a3a5807fc7?id=62415
+::::{grasple}
+:url: https://embed.grasple.com/exercises/b5a4e1c0-92ca-4307-9eb0-25a3a5807fc7?id=62415
 :label: grasple_exercise_1_2_6
 :dropdown:
 :description: To find a vector orthogonal to a given vector in $\R^3$.
 
 ::::
 
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/34bbb9e1-207e-4c06-8686-1c32b3f3d0aa?id=78751
+:label: grasple_exercise_1_2_8
+:dropdown:
+:description: To find a vector orthogonal to a given vector in $\R^4$.
 
-::::{grasple} https://embed.grasple.com/exercises/30a7abfe-9d40-4faa-a848-83bd67e024a0?id=62406
+::::
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/30a7abfe-9d40-4faa-a848-83bd67e024a0?id=62406
 :label: grasple_exercise_1_2_7
 :dropdown:
 :description: To compute the norm of vectors in $\R^2$, $\R^3$, $\R^4$.  
@@ -1420,14 +1455,8 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/34bbb9e1-207e-4c06-8686-1c32b3f3d0aa?id=78751
-:label: grasple_exercise_1_2_8
-:dropdown:
-:description: To find a vector orthogonal to a given vector in $\R^4$.
-
-
-
-::::{grasple} https://embed.grasple.com/exercises/7dc339bb-fe79-4eb9-914c-ea1a7ca85a85?id=69737
+::::{grasple}
+:url: https://embed.grasple.com/exercises/7dc339bb-fe79-4eb9-914c-ea1a7ca85a85?id=69737
 :label: grasple_exercise_1_2_9
 :dropdown:
 :description: To find the norm of the 'all one' vector in $\mathbb{R}^n$.
@@ -1435,7 +1464,8 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/8de90b0e-e89a-49a6-aa63-1b1e39f6e98e?id=79262
+::::{grasple}
+:url: https://embed.grasple.com/exercises/8de90b0e-e89a-49a6-aa63-1b1e39f6e98e?id=79262
 :label: grasple_exercise_1_2_10
 :dropdown:
 :description: To find the distance between two vectors in $\mathbb{R}^4$.
@@ -1443,16 +1473,17 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/d4dd1154-a3ec-497e-bc73-1cd96529f0e7?id=69741
+::::{grasple}
+:url: https://embed.grasple.com/exercises/d4dd1154-a3ec-497e-bc73-1cd96529f0e7?id=69741
 :label: grasple_exercise_1_2_11
 :dropdown:
 :description: Find $h$ such that the distance between two points has a given value $d$.
 
-
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/c2242315-7e4f-463b-b3cf-09e9e15c8b2b?id=69739
+::::{grasple}
+:url: https://embed.grasple.com/exercises/c2242315-7e4f-463b-b3cf-09e9e15c8b2b?id=69739
 :label: grasple_exercise_1_2_12
 :dropdown:
 :description: To find a unit vector on a given line through $(0,0)$.
@@ -1460,7 +1491,8 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/67334454-d109-45a2-b640-545041ff896d?id=62416
+::::{grasple}
+:url: https://embed.grasple.com/exercises/67334454-d109-45a2-b640-545041ff896d?id=62416
 :label: grasple_exercise_1_2_13
 :dropdown:
 :description: Find $\text{proj}_{\mathbf{v}}(\mathbf{w})$ in $\R^2$.
@@ -1468,30 +1500,36 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/9705b078-6c91-42c6-9768-8a043115b881?id=62658
+::::{grasple}
+:url: https://embed.grasple.com/exercises/9705b078-6c91-42c6-9768-8a043115b881?id=62658
 :label: grasple_exercise_1_2_14
 :dropdown:
 :description: Find $\text{proj}_{\mathbf{v}}(\mathbf{w})$ in $\R^4$.
 
 ::::
 
-::::{grasple} https://embed.grasple.com/exercises/531d3be2-dd62-4c21-b023-70e0b63809be?id=78747
+::::{grasple}
+:url: https://embed.grasple.com/exercises/531d3be2-dd62-4c21-b023-70e0b63809be?id=78747
 :label: grasple_exercise_1_2_15
 :dropdown:
 :description: Regarding norm and orthogonality of $\vect{u}$, $\vect{v}$, $\vect{u}-\vect{v}$  and  $\vect{u}+\vect{v}$.
 
 ::::
 
+61ecdf6-4cfb-41ba-bc16-685fe8532471?id=62414
 
-::::{grasple} https://embed.grasple.com/exercises/61ecdf6-4cfb-41ba-bc16-685fe8532471?id=62414
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/161ecdf6-4cfb-41ba-bc16-685fe8532471?id=62414
 :label: grasple_exercise_1_2_16
 :dropdown:
-:description: To show that $(\vect{u}+\vect{v})\ip(\vect{u}-\vect{v}) = \norm{\vect{u}}^2 - \norm{\vect{v}}^2$.
+:description: To show that $(\vect{v}+\vect{w})\ip(\vect{v}-\vect{w}) = \norm{\vect{v}}^2 - \norm{\vect{w}}^2$.
 
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/c4d2743f-5f14-4812-9531-1a40c28c15cb?id=62413
+::::{grasple}
+:url: https://embed.grasple.com/exercises/c4d2743f-5f14-4812-9531-1a40c28c15cb?id=62413
 :label: grasple_exercise_1_2_17
 :dropdown:
 :description: To prove that $(\vect{v}+\vect{w})\ip\vect{x} = \vect{v}\ip\vect{x}+\vect{w}\ip\vect{x}$.
@@ -1500,29 +1538,30 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 
 
 
-::::{grasple} https://embed.grasple.com/exercises/407cb45d-2baf-4b0d-a1eb-6e51186e19f3?id=69738
+::::{grasple}
+:url: https://embed.grasple.com/exercises/407cb45d-2baf-4b0d-a1eb-6e51186e19f3?id=69738
 :label: grasple_exercise_1_2_18
 :dropdown:
-:description: What to conclude from  $\norm{\vect{u}+\vect{v}} = \norm{\vect{u}}+\norm{\vect{v}}$?
+:description: What to conclude from  $\norm{\vect{v}+\vect{w}} = \norm{\vect{v}}+\norm{\vect{w}}$?
 
 ::::
 
 
 
-::::{grasple} https://embed.grasple.com/exercises/c4c1c609-b1dd-4588-865f-53d7e8221f88?id=62689
+::::{grasple}
+:url: https://embed.grasple.com/exercises/c4c1c609-b1dd-4588-865f-53d7e8221f88?id=62689
 :label: grasple_exercise_1_2_19
 :dropdown:
 :description:  To prove that  $-1 \leq \dfrac{\vect{u}\ip\vect{u}}{\norm{\vect{u}}\,\norm{\vect{v}}} \leq  1$.
 
-
 ::::
 
 
 
-::::{grasple} https://embed.grasple.com/exercises/2a2423c3-0907-40b7-bd5f-7607baf7cc09?id=62668
+::::{grasple}
+:url: https://embed.grasple.com/exercises/2a2423c3-0907-40b7-bd5f-7607baf7cc09?id=62668
 :label: grasple_exercise_1_2_20
 :dropdown:
 :description: What to conclude from  $\text{proj}_{\mathbf{v}}(\mathbf{w_1} ) = \text{proj}_{\mathbf{v}}(\mathbf{w}_2)$?
-
 
 ::::

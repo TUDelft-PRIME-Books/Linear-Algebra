@@ -476,6 +476,54 @@ $$
 ::::::
 
 
+## Grasple Exercises
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/bc898154-3f5e-45bd-8993-28a74bf34b5f?id=70278
+:label: grasple_exercise_3_2_1 
+:dropdown:
+:description: To compute the sum of two matrices
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/bf170c2b-127b-4ce7-bd75-c9c9bdfb12f9?id=70277
+:label: grasple_exercise_3_2_2 
+:dropdown:
+:description: To compute $c_1A + c_2B$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/dd83bd83-0ce4-4dd7-84de-3472c24acbc0?id=70279
+:label: grasple_exercise_3_2_3 
+:dropdown:
+:description: To compute $c_1A + c_2B$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/3e5f0674-1e9f-4349-867f-6b1d638e744b?id=82934
+:label: grasple_exercise_3_2_4 
+:dropdown:
+:description: To solve eqautions involving sum and transpose
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/
+:label: grasple_exercise_3_2_5 
+:dropdown:
+:description: True/False questions involving sum and transpose
+
+::::::
+
+
+
 
 
 
@@ -583,12 +631,12 @@ $$
             b_{11} & b_{12}&  \ldots& {\color{red}b_{1j}} & \ldots&  b_{1p} \\
             b_{21} & b_{22}&  \ldots&  {\color{red}b_{2j}} & \ldots&  b_{2p} \\
             \vdots &  \vdots&  \ldots&  & \ldots& \vdots    \\
-            b_{m1} & b_{m2}&  \ldots&  {\color{red}b_{nj}} &  \ldots& b_{mp}
+            b_{n1} & b_{n2}&  \ldots&  {\color{red}b_{nj}} &  \ldots& b_{np}
           \end{bmatrix} \\
     \begin{bmatrix}
             a_{11} & a_{12}&  \ldots& \ldots&  a_{1n} \\
             a_{21} & a_{22}&  \ldots& \ldots&  a_{2n} \\
-            \vdots &  \vdots&  \ldots& \ldots& \vdots    \\
+            \cdots &  \ddots&  \ldots& \ldots& \vdots    \\
               {\color{red}a_{i1}} &  {\color{red}a_{i2}}&   {\color{red}\cdots}& \ldots&   {\color{red}a_{in}} \\
             \vdots &  \vdots&  \ldots& \ldots& \vdots    \\
             a_{m1} & a_{m2}&  \ldots&  \ldots& a_{mn}
@@ -597,9 +645,9 @@ $$
             c_{11} & c_{12}&  \ldots& c_{1j} &\ldots&  c_{1p} \\
             c_{21} & c_{22}&  \ldots&  c_{2j} &\ldots&  c_{2p} \\
             \vdots &  \vdots&  \ldots& & \ldots& \vdots    \\
-             c_{i1} &  c_{i2}&  \cdots&{\color{red}c_{ij}} &\ldots&   c_{in} \\
+             c_{i1} &  c_{i2}&  \cdots&{\color{red}c_{ij}} &\ldots&   c_{ip} \\
             \vdots &  \vdots&  \ldots& &\ldots& \vdots    \\
-            c_{m1} & c_{m2}&  \ldots&  c_{n} &\ldots& c_{np}
+            c_{m1} & c_{m2}&  \ldots&  c_{mn} &\ldots& c_{mp}
     \end{bmatrix}
   \end{array}
 
@@ -763,7 +811,8 @@ The $n \times n$  zero matrix  $O_{nn}$  is a diagonal matrix.
 :label: Exc:MatrixOps:InterpretATB
 
 
-Suppose $A = \begin{bmatrix} \mathbf{a_1} & \mathbf{a_2} & \ldots & \mathbf{a_n} \end{bmatrix} $ is an  $m\times n$ matrix $A$ and $B= \begin{bmatrix} \mathbf{b_1} & \mathbf{b_2} & \ldots & \mathbf{b_p} \end{bmatrix} $  an  $m\times p$ matrix. Show that
+Suppose $A = \begin{bmatrix} \mathbf{a_1} & \mathbf{a_2} & \ldots & \mathbf{a_n} \end{bmatrix} $ is an  $m\times n$ matrix   and <BR> 
+$B= \begin{bmatrix} \mathbf{b_1} & \mathbf{b_2} & \ldots & \mathbf{b_p} \end{bmatrix} $  an  $n\times p$ matrix. Show that
 
 $$
   A^TB = %\begin{bmatrix} \vect{a_1}^T \vect{b_1}  & \vect{a_1}^T \vect{b_2} & \ldots &  \vect{a_1}^T \vect{b_p} \\
@@ -1508,10 +1557,11 @@ $$
 It holds that
 
 $$
-A = A_2A_1  = \begin{bmatrix} 0 & 0 \\ 0 & 1  \end{bmatrix}\begin{bmatrix} 0 & 1 \\ -1 & 0  \end{bmatrix} 
+A = A_2A_1  = \begin{bmatrix} 0 & 1 \\ -1 & 0  \end{bmatrix}\begin{bmatrix} 0 & 0 \\ 0 & 1  \end{bmatrix} 
 $$
 
-Now consider the transformations  corresponding to these matrices.
+Now consider the transformations  corresponding to the matrices
+$A_1$ and $A_2$.
 
 $$ 
 T_1(\vect{x}) = A_1\vect{x} = \begin{bmatrix} 0 & 0 \\ 0 & 1  \end{bmatrix}\begin{bmatrix} x_1 \\ x_2  \end{bmatrix} = \begin{bmatrix} 0\\ x_2 \end{bmatrix}
@@ -1525,7 +1575,7 @@ $$
 
 is the clockwise rotation about an angle $\frac12\pi$.
 
-Now let us  step by step what is the effect of the transformation  $T_2T_1T_2T_1$, corresponding to $A^2$.
+Now let us see, step by step, what is the effect of the transformation  $T_2T_1T_2T_1$, corresponding to $A^2$.
 
 An arbitrary vector $\vect{x}$ is sent to a vector $T_1(\vect{x})$ on the $x_2$ axis by $T_1$.
 
@@ -1610,16 +1660,22 @@ $$
   \end{array}
 $$
 
-The last expression is equal to
+The last expression is only equal to
 
 $$
  A^2 + 2AB + B^2
 $$
 
-if and only if
+if 
 
 $$
- AB + BA = 2AB \quad \iff \quad BA = AB.
+ AB + BA = 2AB  
+$$
+
+And that is only the case if 
+
+$$
+   BA = AB.
 $$
 
 So any pair of two matrices  $A$ and $B$ with
@@ -1666,10 +1722,10 @@ $$
 Statement  vi. also relates to ii. Namely,
 
 $$
-  A^2 = I \quad \iff \quad A^2 - I = (A+I)(A-I) = O
+  A^2 = I \quad \iff \quad A^2 - I = (A+I)(A-I) = O.
 $$
 
-from which we cannot conclude that one of the factors 
+From the last equality we **cannot** conclude that one of the factors 
 $(A+I)$  or $(A-I)$  must be the zero matrix.  In this case we do not get a counterexample for free.  You are asked to construct  counterexamples in {numref}`Exc:MatrixOps:CounterExamples`.
 
 
@@ -1773,7 +1829,7 @@ B^TA^T =  \begin{bmatrix} 1 & 12  \\ -6 & 1  \\ -2 & 4  \end{bmatrix}  =
 $$
 
 Careful inspection learns that  for the two matrix products exactly the same sums and products of numbers have to be computed.
-For instance, in both products the 12 is the sum of products
+For instance, in both products $12$ is the sum of products
 
 $$
 12 = 1\cdot1 +4\cdot(-1) +5\cdot3 =  1\cdot1 +(-1)\cdot4 +3\cdot5. 
@@ -1841,7 +1897,7 @@ We already defined $A^2$ for a square matrix $A$.
 We can extend this to higher powers of $A$ in an obvious way:
 
 $$
-A^3 = A(A^2),\quad A^4 = A(A^3), \quad \text{  and so on.}
+A^3 = A(A^2),\quad A^4 = A(A^3), \,\,.\,.\,.\,. 
 $$
 
 Since 
@@ -1873,6 +1929,211 @@ $$
 And what can we say about $A^{-1}$? 
 
 We will dedicate {numref}`Sec:MatrixInv` to this topic.
+
+::::::
+
+
+
+## Grasple Exercises
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/262bcea8-548b-45c2-8c37-b4cb3cb03ddc?id=70281
+:label: grasple_exercise_3_2_6
+:dropdown:
+:description: To compute a product $AB$ 
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/718bda8a-9e75-495a-8aea-506788d46432?id=70282
+:label: grasple_exercise_3_2_7
+:dropdown:
+:description: To compute a product $AB$ 
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/e5799b3f-53f6-4095-bb96-bc2f4febde30?id=70284
+:label: grasple_exercise_3_2_8
+:dropdown:
+:description: To compute a product $AB$ 
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/9d1526f4-777b-4a41-8b8e-c0746f7503c9?id=70285
+:label: grasple_exercise_3_2_9
+:dropdown:
+:description: To compute a product $AB$ 
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/d03c79a5-4936-41ae-8129-96ea9dee875a?id=82963
+:label: grasple_exercise_3_2_10
+:dropdown:
+:description: To compute several matrix products.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/9fd59a3b-bdc6-42c5-af90-da9b0541437b?id=70291
+:label: grasple_exercise_3_2_11
+:dropdown:
+:description: To compute $\vect{u}^T\vect{v}$ and  $\vect{u}\vect{v}^T$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/6e4d152b-1eae-480b-a40c-ca8846ed6612?id=70286
+:label: grasple_exercise_3_2_12
+:dropdown:
+:description: To find $k$  for which  $AB=BA$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/65f960ef-01a1-4c81-b053-8c93c66504db?id=70287
+:label: grasple_exercise_3_2_13
+:dropdown:
+:description: To find $k$  for which  $AB=BA$.
+ 
+
+::::::
+
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/d2ccfcf5-7aaf-4859-8219-392abad68e79?id=82853
+:label: grasple_exercise_3_2_14
+:dropdown:
+:description: To find two products $AD_1$  and  $D_2A$.
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/2fc08e2c-b3ad-4a2b-8077-ce66abc466d7?id=82936
+:label: grasple_exercise_3_2_15
+:dropdown:
+:description: To find a high power of a special matrix
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/6bd96baf-1862-40c7-a21d-24c1dada9078?id=82937
+:label: grasple_exercise_3_2_16
+:dropdown:
+:description: To find a high power of a special matrix.
+
+::::::
+
+The remaining exercises are less of a compuational character.
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/786324ef-8706-4f4d-ac06-f6b4360a70d8?id=69285
+:label: grasple_exercise_3_2_17
+:dropdown:
+:description: Is the zero matrix a diagonal matrix?
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/
+:label: grasple_exercise_3_2_18
+:dropdown:
+:description: To explain why a certain product does not exist.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/cdb5014d-eace-489e-9616-45e03bb6e95e?id=69295
+:label: grasple_exercise_3_2_19
+:dropdown:
+:description: To find a matrix $A \neq \pm I$ for which $A^2 = I$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/  7f91a5d2-e1c9-422e-b0f9-ba0b22936e2a?id=69456
+:label: grasple_exercise_3_2_20
+:dropdown:
+:description: To show that  $(cA)^T = cA^T$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/78c129ac-644d-4fbd-bf47-c2283d0e1f7a?id=69460
+:label: grasple_exercise_3_2_21
+:dropdown:
+:description: To show:  $A^TA = D \iff A$  has orthogonal columns.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/9fe5f92d-54f9-4794-a2e8-c21a24a5a8cf?id=70288
+:label: grasple_exercise_3_2_22
+:dropdown:
+:description: To find the size of $C$ if $AC = B$.
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/bbed8637-4110-4e90-a1dc-a5960a405caf?id=70289
+:label: grasple_exercise_3_2_23
+:dropdown:
+:description: Number of columns of $C$  is  $AC=B$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/eb4b9e6e-0436-466c-bb1f-7e596b43ec34?id=70290
+:label: grasple_exercise_3_2_24
+:dropdown:
+:description: To find the number of rows of $B$ if  $BC$ is an $m\times n$ matrix. 
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/deea79ca-ba41-46fc-b75b-4cd109fc0513?id=71118
+:label: grasple_exercise_3_2_25
+:dropdown:
+:description: Finding  $E$  such that $EA = M$ &nbsp;  (or  $AE = M$).
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/0b27fa70-e097-4090-b57e-7225019a4624?id=78589
+:label: grasple_exercise_3_2_26
+:dropdown:
+:description: A bit like the previous one  'by inspection'.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/958761d7-421f-40f1-b3be-3535bf71422b?id=82968
+:label: grasple_exercise_3_2_27
+:dropdown:
+:description: Two True/False questions about products and symmmetric matrices.
 
 
 ::::::

@@ -97,9 +97,12 @@ In this case it is a lot easier to decide whether $\mathbf{b}$ is a linear combi
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/ac63b286-09e1-46e5-91fc-952b54436293?id=78560
-:label: grasple_exercise_2_2_1
 
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/ac63b286-09e1-46e5-91fc-952b54436293?id=78560
+:label: grasple_exercise_2_2_A
+:dropdown:
+:description: Expressing a vector as a linear combination of other vectors
 
 ::::
 
@@ -125,9 +128,17 @@ The span of an empty collection of vectors will be defined as the set that only 
 
 ::::{prf:remark} 
 
-The collection $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$ always contains all of the vectors $\mathbf{v}_1, \ldots, \mathbf{v}_k$. This is true since each vector $\mathbf{v}_k$ can be written as the linear combination $0\mathbf{v}_1+\cdots+\mathbf{v}_k+\cdots +0\mathbf{v}_k$.
+The collection $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$ always contains all of the vectors $\mathbf{v}_1, \ldots, \mathbf{v}_k$.     This is true since each vector $\mathbf{v}_i$ can be written as the linear combination 
 
-Moreover, the span of any set of vectors always contains the zero vector. Whatever set of vectors we start with, we can always write $\mathbf{0}=0\mathbf{v}_1+0\mathbf{v}_2+\cdots +0\mathbf{v}_k$.
+$$
+  0\mathbf{v}_1+\cdots+1\mathbf{v}_i+\cdots +0\mathbf{v}_k.
+$$
+
+Moreover, the span of any set of vectors always contains the zero vector. Whatever set of vectors we start with, we can always write 
+
+$$
+   \mathbf{0}=0\mathbf{v}_1+0\mathbf{v}_2+\cdots +0\mathbf{v}_k.
+$$
 
 ::::
 
@@ -212,8 +223,11 @@ There is also a possibility where the span of three non-zero vectors in $\mathbb
 
 ::::
 
-::::{grasple} https://embed.grasple.com/exercises/676d672c-74fc-4545-99ba-6b308af566ce?id=78542
-:label: grasple_exercise_2_2_2
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/676d672c-74fc-4545-99ba-6b308af566ce?id=78542
+:label: grasple_exercise_2_2_B
+:dropdown:
+:description: Interpretation of Span$\{\vect{v}_1,\vect{v_2},\vect{v}_3\}$.
 
 ::::
 
@@ -314,85 +328,103 @@ In {prf:ref}`Prop:LinearCombinations:SpanStandardBasis` we saw that the span of 
 
 ## Grasple Exercises
 
-::::{grasple} https://embed.grasple.com/exercises/9c780d10-9a8f-4fd6-9471-3f1a0e46c009?id=70171
-:label: grasple_exercise_2_2_7
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/9c780d10-9a8f-4fd6-9471-3f1a0e46c009?id=70171
+:label: grasple_exercise_2_2_1
+:dropdown:
+:description: Is $\vect{b}$ an element of Span$\{\vect{a}_1,\vect{a}_2,\vect{a}_3\}$?
 
 ::::
 
-::::{grasple} https://embed.grasple.com/exercises/f74168ff-a448-4420-88d9-ebe7365a00a9?id=70172
-:label: grasple_exercise_2_2_8
+::::{grasple} 
+:url: https://embed.grasple.f74168ff-a448-4420-88d9-ebe7365a00a9?id=70172com/exercises/
+:label: grasple_exercise_2_2_2
+:dropdown:
+:description: Is $\vect{b}$ an element of Span$\{\vect{a}_1,\vect{a}_2,\vect{a}_3\}$?
 
 ::::
 
-::::{grasple} https://embed.grasple.com/exercises/b760d9b9-d0ba-4875-b828-397e7a045283?id=70175
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/b760d9b9-d0ba-4875-b828-397e7a045283?id=70175
 :label: grasple_exercise_2_2_3
+:dropdown:
+:description: Generate your own linear combinations
 
 ::::
 
 % ------------------------------------------------
 
-::::{grasple} https://embed.grasple.com/exercises/a8175390-3844-408c-b192-c4b05f9beb7b?id=70170
-:label: grasple_exercise_2_2_9
-
-::::
-
-
-::::{grasple} https://embed.grasple.com/exercises/fab5c526-91ed-407b-9faa-645f40c22b8b?id=70169
-:label: grasple_exercise_2_2_10
-
-::::
-
-::::{grasple} https://embed.grasple.com/exercises/2167085c-2498-4694-9eac-abfeeb0ec307?id=70162
-:label: grasple_exercise_2_2_11
-
-::::
-
-
-
-% ------------------------------------------------
-
-::::{grasple} https://embed.grasple.com/exercises/493831d9-ab4a-4f78-b9ea-7b707aa9f4c2?id=70174
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/a8175390-3844-408c-b192-c4b05f9beb7b?id=70170
 :label: grasple_exercise_2_2_4
+:dropdown:
+:description: Is the span of two vectors always a plane?
 
 ::::
 
 
-::::{grasple} https://embed.grasple.com/exercises/c008320d-9d0e-463f-8bb7-344988f10438?id=70176
-:label: grasple_exercise_2_2_12 
-
-::::
-
-
-::::{grasple} https://embed.grasple.com/exercises/b4f4dc1f-4f56-41e8-b16d-a2694e90890c?id=70181
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/fab5c526-91ed-407b-9faa-645f40c22b8b?id=70169
 :label: grasple_exercise_2_2_5
+:dropdown:
+:description: Checking whether a vector is in the span of other vectors.
 
 ::::
 
-% ------------------------------------------------
-
-::::{grasple} https://embed.grasple.com/exercises/45bc5527-e79b-4198-b6b7-9b3168d9d1ff?id=70182
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/2167085c-2498-4694-9eac-abfeeb0ec307?id=70162
 :label: grasple_exercise_2_2_6
+:dropdown:
+:description: About the interpratation of  Span$\{\vect{a}_1,\vect{a}_2\}$. 
+
+::::
+
+
+% ------------------------------------------------
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/493831d9-ab4a-4f78-b9ea-7b707aa9f4c2?id=70174 
+:label: grasple_exercise_2_2_7
+:dropdown:
+:description: Checking whether a vector is a linear combination of the columns of a matrix $A$.
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/c008320d-9d0e-463f-8bb7-344988f10438?id=70176
+:label: grasple_exercise_2_2_8 
+:dropdown:
+:description: About the difference between $\{\vect{a}_1,\vect{a}_2,\vect{a}_3\}$ and Span$\{\vect{a}_1,\vect{a}_2,\vect{a}_3\}$.
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/b4f4dc1f-4f56-41e8-b16d-a2694e90890c?id=70181
+:label: grasple_exercise_2_2_9
+:dropdown:
+:description: When do the columns of a matrix span all of $\R^m$?
 
 ::::
 
 % ------------------------------------------------
 
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/45bc5527-e79b-4198-b6b7-9b3168d9d1ff?id=70182
+:label: grasple_exercise_2_2_10
+:dropdown:
+:description: About removing vectors without reducing the span.
 
-%<iframe id="grasple_exercise_221" height="560" src="https://embed.grasple.com/exercises/2fe8b445-bb2e-412b-a2b8-593e2a0214cf?id=76698" title="Grasple Exercise 76698" width="100%"></iframe>
-%<hr style="height:5px; border-width:5px">
-%<iframe id="grasple_exercise_222" height="560" src="https://embed.grasple.com/exercises/f365becd-ee34-4fe9-854c-38fd188bb397?id=76699" title="Grasple Exercise 76699" width="100%"></iframe>
+::::
 
-%::::{grasple} https://embed.grasple.com/exercises/2fe8b445-bb2e-412b-a2b8-593e2a0214cf?id=76698
-%:label: grasple_exercise_221
+% ------------------------------------------------
 
-%::::
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/7fcebe18-474c-4995-9c81-f1da7ab4cc5e?id=70360
+:label: grasple_exercise_2_2_11
+:dropdown:
+:description: Conversion between vector equation and linear system.
 
 
-
-
-%::::{grasple} https://embed.grasple.com/exercises/f365becd-ee34-4fe9-854c-38fd188bb397?id=76699
-%:label: grasple_exercise_222
-
-%::::
-
-%See {grasple_ref}`grasple_exercise_221`, and {grasple_ref}`grasple_exercise_222`.
+::::

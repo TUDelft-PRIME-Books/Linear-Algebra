@@ -10,7 +10,7 @@ $$
    A - B = A + (-1)B,
 $$
 
-but we did not mention division of matrices. 
+but we did not mention division of matrices. <BR>
 For two numbers  $a$ and $b$, with $a \neq 0$, the equation
 
 $$
@@ -340,7 +340,7 @@ We leave the verification as an exercise.
 :label: Exc:MatrixInv:CheckBA=I
 
  
-Show that matrix $B$  proposed in {prf:ref}`Prop:MatrixInv:Inverse2x2` indeed  satisfies
+Verify that the matrix $B$  proposed in {prf:ref}`Prop:MatrixInv:Inverse2x2` indeed  satisfies
 
 $$
   AB = BA = I.
@@ -591,7 +591,7 @@ $$
 In particular, if the matrix $B$ has only one column, i.e., if it is a vector, then
 
 $$
-  AX = \mathbf{b} \quad \text{has the unique solution} \quad X = A^{-1}\mathbf{b}.
+  A\mathbf{x} = \mathbf{b} \quad \text{has the unique solution} \quad \mathbf{x} = A^{-1}\mathbf{b}.
 $$
 
 
@@ -666,7 +666,7 @@ $$
  and likewise
  
 $$
-  \mathbf{x_2}=  \frac{1}{2}\begin{bmatrix}-4 & 2 \\ 3 & -1 \end{bmatrix}
+  \mathbf{x_2}=  A^{-1}\mathbf{b_2}= \frac{1}{2}\begin{bmatrix}-4 & 2 \\ 3 & -1 \end{bmatrix}
   \begin{bmatrix}2  \\ 10 \end{bmatrix} =
   \begin{bmatrix}6  \\ -2 \end{bmatrix}.
 $$
@@ -699,28 +699,48 @@ A = I.
 $$
 'Fallacious proof':  
 
-$$
-  A^2 = A  \quad\Longrightarrow \quad A^{-1}A^2 = A^{-1}A = I  \quad \Longrightarrow \quad A = I,
-$$
+Assume   $A^2 = A$. 
 
-since 
+Then 
 
 $$
-  A^{-1}A^2 = A^{-1}(A\,A) = (A^{-1}A)A = IA = A.
+   A^{-1}A^2 = A^{-1}A = I.
+$$
+
+On the other hand
+
+$$
+   A^{-1}A^2 = A^{-1}(A\,A) = (A^{-1}A)A = IA = A.
+$$
+
+So
+
+$$
+   I = A^{-1}A^2  = A,
+$$
+
+which 'proves' that  $A=I$.  
+
+
+
+Somewhere something **must** have gone wrong, as the following counterexample shows. 
+
+For the matrix  $B = \begin{bmatrix} \frac12 & \frac12 \\ \frac12 & \frac12  \end{bmatrix}$ 
+
+it can be checked that
+
+$$
+   B^2 = B,
+$$   
+
+
+whereas obviously
+
+$$
+   B \neq O, \quad B \neq I.
 $$
 
 
-Somewhere something **must** have gone wrong, as the following counterexample shows:
-
-$$
-  \begin{bmatrix} \frac12 & \frac12 \\ \frac12 & \frac12  \end{bmatrix}^2
-  =
-  \begin{bmatrix} \frac12 & \frac12 \\ \frac12 & \frac12  \end{bmatrix}
-  \quad\text{whereas} \quad
-  \begin{bmatrix} \frac12 & \frac12 \\ \frac12 & \frac12  \end{bmatrix}
-  \neq
-  \begin{bmatrix} 1 & 0 \\ 0 & 1  \end{bmatrix}
-$$
 
 So, where exactly did it go wrong?!
 
@@ -797,7 +817,7 @@ which proves that indeed $\dfrac1c A^{-1} = (cA)^{-1}$.
 <li>
 
   Since it is given  that $A^{-1}$ exists we can proceed as follows, where we  make use of the  characteristic property
-  $  B^TA^T = (AB)^T$
+  $  B^TA^T = (AB)^T$.
   
 <BR>
 
@@ -962,7 +982,7 @@ $$
 $$
 
 For the existence of a solution of this equation {prf:ref}`Prop:MatrixInv:InvertibleIndepCols` tells us
-it is <u>necessary</u>  that $A$ has independent columns, and  we can furthermore read off that the columns of the matrix 
+it is <u>necessary</u>  that $A$ has linearly independent columns, and  we can furthermore read off that the columns of the matrix 
 $X$ will be the (unique)  solutions of the linear systems
 
 $$
@@ -1122,7 +1142,7 @@ It wasn't, as the next proposition shows.
 :label: Prop:MatrixInv:Algorithm
 
 
-A square matrix  $A$ is invertible if and only it has independent columns.
+A square matrix  $A$ is invertible if and only it has linearly independent columns.
 
 In that case the inverse can be found by reducing the matrix 
 
@@ -1147,7 +1167,7 @@ $$
 
 
 ::::::{prf:proof}
-We have already seen ({prf:ref}`Prop:MatrixInv:InvertibleIndepCols`) that an invertible matrix has independent columns,
+We have already seen ({prf:ref}`Prop:MatrixInv:InvertibleIndepCols`) that an invertible matrix linearly independent columns,
 which implies that the reduced echelon form of $A$ is indeed the identity matrix. And then it is clear that via row operations we get
 
 $$
@@ -1284,7 +1304,7 @@ $$
 \end{array}\right]
 \begin{array}{l}
 [R_1] \\
-{[(-\frac12)R_1]} \\
+{[(-\frac12)R_2]} \\
 \end{array} \\ 
     &\sim&
 \left[\begin{array}{rr|rr}1 &  0 & -3 &  2\\0 & 1 & 1 & -\nicefrac12
@@ -1384,8 +1404,8 @@ $$
 
 
 For an $n\times n$ matrix $A$, the following statements are equivalent. 
-
-So, each of the following properties is a characterization of invertibility of a square matrix $A$:
+<BR>
+That is, each of the following properties is a characterization of invertibility of a square matrix $A$:
 <ul>
 <li>
 
@@ -1411,25 +1431,20 @@ $A$ is row equivalent to the identity matrix $I_n$;
 </li>
 <li>
 
-$A$ has independent columns;
+$A$ has linearly independent columns;
 		
 </li>
 
 <li>
 
-The equation $A\vect{x} = \vect{0}$ has only the trivial solution $\vect{x} = \vect{0}$;
+the equation $A\vect{x} = \vect{0}$ has only the trivial solution $\vect{x} = \vect{0}$;
 		
 </li>
 
 <li>
 
-$A$ can be written as a product of elementary matrices:
+$A$ can be written as a product of elementary matrices: $A = E_1E_2\cdots E_k$.
 
-<BR>
-
-$$
-A = E_1E_2\cdots E_k.		
-$$
 
 </li>
 </ul>
@@ -1460,13 +1475,13 @@ Show that invertibility of an $n\times n$ matrix $A$ is also equivalent to
 <ul>
 <li>
 
- There is a matrix $B$ such that $BA = I$ ;
+ there exists a matrix $B$ such that $BA = I$;
 		
 
 </li>
 <li>
 
-$A$ has independent rows;
+$A$ has linearly independent rows;
 		
 
 </li>
@@ -1489,13 +1504,222 @@ Again it may very well be that you have to resort to previous sections.
 ::::::
 
 
+## Grasple Exercises
+
+The first **XXXX** exercises are quite starightfordwardly computational.
+The remaining exercises tend to be more theoretic.
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/6683a2f9-7b6b-4dd1-bec1-1e8b894fa3bb?id=71086
+:label: grasple_exercise_3_4_1
+:dropdown:
+:description: To compute the inverse of a $2 \times 2$ matrix.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/1bbca38b-a734-4049-b8a2-f79d4bf1b098?id=71087
+:label: grasple_exercise_3_4_2
+:dropdown:
+:description: To compute the inverse of a $2 \times 2$ matrix.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/045cd1
+:label: grasple_exercise_3_4_3
+:dropdown:
+:description: To compute the inverse of a $2 \times 2$ matrix.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/82c06a56-8ee8-4f36-8173-e5d56da1e8e3?id=71073
+:label: grasple_exercise_3_4_4  
+:dropdown:
+:description: To compute step by step the inverse of a $3 \times 3$ matrix.
+
+::::::
 
 
 
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/551172d9-861c-4958-9b17-dfa828acdabe?id=71088
+:label: grasple_exercise_3_4_5  
+:dropdown:
+:description: To compute the inverse of a $3 \times 3$ matrix.
+
+::::::
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/9174c68c-e2d5-4c23-af96-e3fe3dd36f42?id=71089
+:label: grasple_exercise_3_4_6 
+:dropdown:
+:description:  To compute the inverse of a $3 \times 3$ matrix.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/800dc2f9-227e-401b-818b-093fc9647dd9?id=83083
+:label: grasple_exercise_3_4_7 
+:dropdown:
+:description: To compute the inverse of a $4 \times 4$ matrix.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/9146f49d-74a5-4fda-a641-181c4536fe01?id=83086
+:label: grasple_exercise_3_4_8 
+:dropdown:
+:description: To find  $p$ for which a matrix $A$ is singular.
+
+::::::
+
+The remaining exercises have more theoretic flavour.
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/677aa3ee-4594-4d77-ace6-583a1efcba59?id=71090
+:label: grasple_exercise_3_4_9 
+:dropdown:
+:description: True/False question about invertibility versus 
+consistent linear systems.
+
+::::::
 
 
 
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/f789ebd5-171b-4556-83a9-eefc5ef830ef?id=71092
+:label: grasple_exercise_3_4_10 
+:dropdown:
+:description: To show:  if $A$ is invertible, the so is $A^T$.
+
+::::::
 
 
-\end{document}
 
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/29dc7c2f-6636-493e-9c97-da1847a336b7?id=68908
+:label: grasple_exercise_3_4_11 
+:dropdown:
+:description: To show:  if $AB$ is invertible, then so are $A$ and $B$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/8f3feb75-b41b-42e0-b574-f6442da253ce?id=70272
+:label: grasple_exercise_3_4_12 
+:dropdown:
+:description: What about  $(AB)^{-1} = A^{-1}B^{-1}$? 
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/5185c5c0-4d92-4e0e-92a7-6dc5eed8f7cf?id=68896
+:label: grasple_exercise_3_4_13
+:dropdown:
+:description: What about  $((AB)^T)^{-1} = (A^T)^{-1}(B^T)^{-1}$? 
+
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/ee4bb61e-6939-4074-a556-b82f3d0e8c28?id=71091
+:label: grasple_exercise_3_4_14
+:dropdown:
+:description: True/False: Every elementary matrix is invertible.
+
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/1732d75b-2027-4a92-b8bb-c98bda62475d?id=71093
+:label: grasple_exercise_3_4_15
+:dropdown:
+:description: True/False:  If $A$ and $B$ are invertible, then so is  $A+B$.
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/f8602d4f-57b7-4752-9edc-69c83069fe36?id=71095
+:label: grasple_exercise_3_4_16
+:dropdown:
+:description: True/False:  If $A$ and $B$ are singular, then so is  $A+B$.
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/a8ea864d-1164-4afc-9a24-c0a126ee8e54?id=71097
+:label: grasple_exercise_3_4_17
+:dropdown:
+:description: True/False: If $A$ is row equivalent to $I$, then so is $A^2$. 
+
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/73a16f62-28d7-4a4c-baf5-7ce3be9272ce?id=71104
+:label: grasple_exercise_3_4_18
+:dropdown:
+:description: To find 'by inspection' inverses of elemenatry matrices.
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/a8c2b8ed-9961-4779-8841-491a9529b71c?id=71466
+:label: grasple_exercise_3_4_19
+:dropdown:
+:description: To find the inverses of $AE$ and $EA$, when $A^{-1}$  is given.
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/dfe429bd-1ab9-47f7-8f6c-06150c468645?id=71468
+:label: grasple_exercise_3_4_20
+:dropdown:
+:description: Finding the inverses of (almost) elementary matrices. 
+
+
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/9ef02e7b-00d9-485a-bc13-1dfd191427d3?id=71457
+:label: grasple_exercise_3_4_21
+:dropdown:
+:description: To explore invertibility for a $2\times 3$ matrix
+
+
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/9af5928a-7ecb-478e-a896-7c66d16d9d09?id=71463
+:label: grasple_exercise_3_4_22 
+:dropdown:
+:description: Distilling  $A^{-1}$ from a relation  $c_2A^2 + c_1A + c_0I = 0$.
+
+
+::::::
