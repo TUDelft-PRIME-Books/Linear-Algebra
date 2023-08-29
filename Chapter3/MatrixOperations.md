@@ -1937,9 +1937,203 @@ We will dedicate {numref}`Sec:MatrixInv` to this topic.
 ## Grasple Exercises
 
 ::::::{grasple} 
-:url: https://embed.grasple.com/exercises/bc898154-3f5e-45bd-8993-28a74bf34b5f?id=70278
-:label: grasple_exercise_3_2_1 
+:url: https://embed.grasple.com/exercises/262bcea8-548b-45c2-8c37-b4cb3cb03ddc?id=70281
+:label: grasple_exercise_3_2_6
 :dropdown:
-:description: To compute the sum of two matrices
+:description: To compute a product $AB$ 
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/718bda8a-9e75-495a-8aea-506788d46432?id=70282
+:label: grasple_exercise_3_2_7
+:dropdown:
+:description: To compute a product $AB$ 
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/e5799b3f-53f6-4095-bb96-bc2f4febde30?id=70284
+:label: grasple_exercise_3_2_8
+:dropdown:
+:description: To compute a product $AB$ 
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/9d1526f4-777b-4a41-8b8e-c0746f7503c9?id=70285
+:label: grasple_exercise_3_2_9
+:dropdown:
+:description: To compute a product $AB$ 
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/d03c79a5-4936-41ae-8129-96ea9dee875a?id=82963
+:label: grasple_exercise_3_2_10
+:dropdown:
+:description: To compute several matrix products.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/9fd59a3b-bdc6-42c5-af90-da9b0541437b?id=70291
+:label: grasple_exercise_3_2_11
+:dropdown:
+:description: To compute $\vect{u}^T\vect{v}$ and  $\vect{u}\vect{v}^T$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/6e4d152b-1eae-480b-a40c-ca8846ed6612?id=70286
+:label: grasple_exercise_3_2_12
+:dropdown:
+:description: To find $k$  for which  $AB=BA$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/65f960ef-01a1-4c81-b053-8c93c66504db?id=70287
+:label: grasple_exercise_3_2_13
+:dropdown:
+:description: To find $k$  for which  $AB=BA$.
+ 
+
+::::::
+
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/d2ccfcf5-7aaf-4859-8219-392abad68e79?id=82853
+:label: grasple_exercise_3_2_14
+:dropdown:
+:description: To find two products $AD_1$  and  $D_2A$.
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/2fc08e2c-b3ad-4a2b-8077-ce66abc466d7?id=82936
+:label: grasple_exercise_3_2_15
+:dropdown:
+:description: To find a high power of a special matrix
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/6bd96baf-1862-40c7-a21d-24c1dada9078?id=82937
+:label: grasple_exercise_3_2_16
+:dropdown:
+:description: To find a high power of a special matrix.
+
+::::::
+
+The remaining exercises are less of a compuational character.
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/786324ef-8706-4f4d-ac06-f6b4360a70d8?id=69285
+:label: grasple_exercise_3_2_17
+:dropdown:
+:description: Is the zero matrix a diagonal matrix?
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/
+:label: grasple_exercise_3_2_18
+:dropdown:
+:description: To explain why a certain product does not exist.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/cdb5014d-eace-489e-9616-45e03bb6e95e?id=69295
+:label: grasple_exercise_3_2_19
+:dropdown:
+:description: To find a matrix $A \neq \pm I$ for which $A^2 = I$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/  7f91a5d2-e1c9-422e-b0f9-ba0b22936e2a?id=69456
+:label: grasple_exercise_3_2_20
+:dropdown:
+:description: To show that  $(cA)^T = cA^T$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/78c129ac-644d-4fbd-bf47-c2283d0e1f7a?id=69460
+:label: grasple_exercise_3_2_21
+:dropdown:
+:description: To show:  $A^TA = D \iff A$  has orthogonal columns.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/9fe5f92d-54f9-4794-a2e8-c21a24a5a8cf?id=70288
+:label: grasple_exercise_3_2_22
+:dropdown:
+:description: To find the size of $C$ if $AC = B$.
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/bbed8637-4110-4e90-a1dc-a5960a405caf?id=70289
+:label: grasple_exercise_3_2_23
+:dropdown:
+:description: Number of columns of $C$  is  $AC=B$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/eb4b9e6e-0436-466c-bb1f-7e596b43ec34?id=70290
+:label: grasple_exercise_3_2_24
+:dropdown:
+:description: To find the number of rows of $B$ if  $BC$ is an $m\times n$ matrix. 
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/deea79ca-ba41-46fc-b75b-4cd109fc0513?id=71118
+:label: grasple_exercise_3_2_25
+:dropdown:
+:description: Finding  $E$  such that $EA = M$ &nbsp;  (or  $AE = M$).
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/0b27fa70-e097-4090-b57e-7225019a4624?id=78589
+:label: grasple_exercise_3_2_26
+:dropdown:
+:description: A bit like the previous one  'by inspection'.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/958761d7-421f-40f1-b3be-3535bf71422b?id=82968
+:label: grasple_exercise_3_2_27
+:dropdown:
+:description: Two True/False questions about products and symmmetric matrices.
+
 
 ::::::

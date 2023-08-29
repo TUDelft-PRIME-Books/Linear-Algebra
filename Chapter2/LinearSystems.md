@@ -154,6 +154,15 @@ which are both true identities.
 ::::
 
 
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/8159aed6-a915-4cc1-bf75-f243702de530?id=83000
+:label: grasple_exercise_2_1_A 
+:dropdown:
+:description:  To check whether a vector is a solution of a linear system.
+
+::::
+
+
 The solution set may be empty, as in the following example
 
 ::::{prf:example} 

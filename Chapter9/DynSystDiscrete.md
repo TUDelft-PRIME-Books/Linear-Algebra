@@ -299,12 +299,12 @@ an eigenvector for this eigenvalue,  then
 
 $$
   \norm{\vect{x}_{k}} = \norm{\lambda_j^k\vect{v}_j} = 
-  |lambda_j|^k \norm{\vect{v}_j}  \longrightarrow \infty,
+  |\lambda_j|^k \norm{\vect{v}_j}  \longrightarrow \infty,
 $$
 
 if  $k \to \infty$.
 
-If the largest eigenvalue has ansolute value 1,  then we can again resort to 
+If the largest eigenvalue has absolute value 1,  then we can again resort to 
 Equation {eq}`Eq:DynSystDiscrete:GenSolDiagble` to conclude that all sequences will remain bounded.  Furthermore, starting from an eigenvector $\mathbf{v}$ for an eigenvalue of absolute value 1 it is seen that the process will not converge to the zero vector.
 
 ::::
@@ -444,7 +444,7 @@ where $A$ is a $2\times 2$ matrix.
 The set of points  
 
 $$
- \mathbf{x}_0 \,(\,= \vect{s}), \,\, \mathbf{x}_1, \, \mathbf{x}_2, \, \mathbf{x}_3, \ldots  
+ \mathbf{x}_0 \,(\,= \vect{s}), \,\, \mathbf{x}_1, \, \mathbf{x}_2, \, \mathbf{x}_3, \, \ldots  
 $$
 
 in $\R^2$  is called the **trajectory** or **path**  starting from $\mathbf{s}$.
@@ -840,7 +840,7 @@ Using a diagonalization we will show the surprising formula
 :::
 
 
-We call the formula  surprising, since at first sight the expression on the right in equation {eq}`Eq:DynSystDiscrete:Fibonacci` is not an integer, where from the definition it immediately follows that the Fibonacci numbers are *integers*.
+We call the formula  surprising, since at first sight the expression on the right in equation {eq}`Eq:DynSystDiscrete:Fibonacci` is not an integer, where from the definition {eq}`Eq:DynSystDiscrete:DfnFibo` it immediately follows that the Fibonacci numbers are *integers*.
 
 However, the computation of the complicated expression for $k = 3$
 

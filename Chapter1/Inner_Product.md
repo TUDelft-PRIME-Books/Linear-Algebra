@@ -729,6 +729,10 @@ $$
 
 ::::
 
+TATATA
+
+
+
 ::::{prf:example}
 :label: Ex:InnerProduct:Distance
 
@@ -779,7 +783,7 @@ Rule iii. is again called the *Triangle Inequality*.
 
 Check the three properties of the distance function as stated in 
 {prf:ref}`Prop:InnerProduct:PropertiesNorm`. &nbsp;
-For Rule iii., only show how it  follows from the corresponding Rule iii.m in
+For Rule iii., only show how it  follows from the corresponding Rule iii. in
 that same proposition. 
 ::::
 
@@ -1512,12 +1516,14 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 
 ::::
 
+61ecdf6-4cfb-41ba-bc16-685fe8532471?id=62414
+
 
 ::::{grasple}
-:url: https://embed.grasple.com/exercises/61ecdf6-4cfb-41ba-bc16-685fe8532471?id=62414
+:url: https://embed.grasple.com/exercises/161ecdf6-4cfb-41ba-bc16-685fe8532471?id=62414
 :label: grasple_exercise_1_2_16
 :dropdown:
-:description: To show that $(\vect{u}+\vect{v})\ip(\vect{u}-\vect{v}) = \norm{\vect{u}}^2 - \norm{\vect{v}}^2$.
+:description: To show that $(\vect{v}+\vect{w})\ip(\vect{v}-\vect{w}) = \norm{\vect{v}}^2 - \norm{\vect{w}}^2$.
 
 ::::
 
@@ -1536,7 +1542,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 :url: https://embed.grasple.com/exercises/407cb45d-2baf-4b0d-a1eb-6e51186e19f3?id=69738
 :label: grasple_exercise_1_2_18
 :dropdown:
-:description: What to conclude from  $\norm{\vect{u}+\vect{v}} = \norm{\vect{u}}+\norm{\vect{v}}$?
+:description: What to conclude from  $\norm{\vect{v}+\vect{w}} = \norm{\vect{v}}+\norm{\vect{w}}$?
 
 ::::
 
