@@ -115,8 +115,8 @@ Then in general the sequence constructed by the Power Method Algorithm, will con
 To be more specific,  the sequence $\vect{x}_k$ will converge a dominant eigenvector $\vect{v}_1$ if  the initial  vector $\vect{x}_0$ does not lie in 
 $\text{Span}\{\vect{v}_2, \vect{v}_3, \ldots, \vect{v}_n\}$.
 
-Moreover, if $\vect{x}$ is the result after a (sufficiently) large number of runs of the algorithm, <BR>
-(an approximation of) the dominant eigenvalue is the entry with the highest absolute value of the vector  $\vect{y} = A\vect{x}$.
+Moreover, suppose $\vect{x}$ is the result after a (sufficiently) large number of runs of the algorithm. <BR>
+Then (an approximation of) the dominant eigenvalue is the entry with the highest absolute value of the vector  $\vect{y} = A\vect{x}$.
 
 
 ::::
@@ -242,11 +242,11 @@ $$
          1 \\ 1 \\ 1        \end{bmatrix}.
 $$
 
-We will continue refreshing the vector $\vect{x}$ until two consectutive
+We will continue refreshing the vector $\vect{x}$ until two consecutive
 iterates satisfy
 
 $$
-  \norm{\vect{x}_{k+1} - \vect{x}_{k+1}} \leq 10^{-4}.
+  \norm{\vect{x}_{k+1} - \vect{x}_{k}} \leq 10^{-4}.
 $$
 
 This restriction is met after 23 iterations.  The current value of $\vect{x}_{23}$,
@@ -422,14 +422,14 @@ $$
    \frac{1}{|\lambda_1|}\leq \frac{1}{|\lambda_{2}|} \leq \,\ldots\, \leq \,\frac{1}{|\lambda_{n-1}|} \,< \, \frac{1}{|\lambda_n|}.
 $$
 
-Thus,  $A^{-1}$  has the dominant eigenvalue $\dfrac{1}{\lambda_n} = \lambda_n^{-1}$
+Thus,  $A^{-1}$  has the dominant eigenvalue $\dfrac{1}{\lambda_n} = \lambda_n^{-1}$.
 
 Moreover,  in the same exercise it is stated that the eigenvectors of  $A^{-1}$  for eigenvalue $\lambda_n^{-1}$ are exactly the eigenvectors of $A$ for 
 eigenvalue $\lambda_n$.
 
 
 Thus if we apply the algorithm of the power method to the matrix $A^{-1}$, we will find an eigenvector  $\mathbf{v}_n$ of $A^{-1}$ for the eigenvalue $\lambda_n^{-1}$. <BR>
-This is then an eigenvector of $A$  for  the smallest eigenvalue  $\lambda_n$.
+This is then also an eigenvector of $A$  for  the smallest eigenvalue  $\lambda_n$.
 
 ::::
 
@@ -583,10 +583,10 @@ $$
 From which we conclude that $\vect{x}_{40}$ is close to an eigenvector of $A$ for the eigenvalue $\lambda \approx -0.2287 + 3 = 2.7713$.
 
 In fact, using any computer algebra program we can find  that the eigenvalues of
-$A$ are  $
+$A$ are  
 
 $$
- \lambda_{1,2}-2.6489 \pm 4.8444i$, \quad \lambda_3 = 2.7713,\quad \lambda_4 = -0.4735.
+ \lambda_{1,2}-2.6489 \pm 4.8444i, \quad \lambda_3 = 2.7713,\quad \lambda_4 = -0.4735.
  $$
  
  Since  $\lambda_{1}$ and $\lambda_{2}$ are the dominant eigenvalues of $A$, the eigenvalue $\lambda_3$  would not have been found using the power method or the inverse power method directly to $A$.
