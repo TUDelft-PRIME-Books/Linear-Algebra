@@ -1504,8 +1504,6 @@ Again it may very well be that you have to resort to previous sections.
 ::::::
 
 
-
-
 ## Grasple Exercises
 
 The first **XXXX** exercises are quite starightfordwardly computational.

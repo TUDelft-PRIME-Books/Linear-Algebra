@@ -1,6 +1,12 @@
 # Injectivity, Surjectivity, and Bijectivity
 
-When studying a linear transformation, two questions come up naturally: "Is every element in the codomain the image of some element in the domain?" and "Is every elment in the range the image of **exactly one** element in the domain?" These two questions give rise to the concepts of injective and surjective linear transformations. The two concepts are very closely related and for most statements about injective linear transformations you can find an analogous statement about surjective linear transformations and vice versa.
+Since matrices correspond to linear transformations, we can translate questions about matrices to questions about linear transformations. For example: under what conditions on $A$ is the system $A\vect{x}=\vect{b}$ consistent for all $\vect{b}$? This question, which deals with a matrix $A$, is equivalent to the following question about linear transformations: when is every element in the codomain of a linear tranformation the image of some element in the domain?
+
+Or, similarly: under what conditions on $A$ is every consistent system $A\vect{x}=\vect{b}$ uniquely solvable? In the language of linear transformations, this becomes: is every element in the range of a linear transformation the image of a unique element in the domain?
+
+These two questions give rise to the concepts of injective and surjective linear transformations. The two concepts are very closely related and for most statements about injective linear transformations you can find an analogous statement about surjective linear transformations and vice versa.
+
+%When studying a linear transformation, the following questions come up naturally: "Is every element in the codomain the image of some element in the domain?" and "Is every element in the range the image of **exactly one** element in the domain?" These two questions give rise to the concepts of injective and surjective linear transformations. The two concepts are very closely related and for most statements about injective linear transformations you can find an analogous statement about surjective linear transformations and vice versa.
 
 
 (Subsec:InjSurj:Inj)=
@@ -37,7 +43,7 @@ $$
 \mathbf{v}_{1}=\begin{bmatrix}1\\2\end{bmatrix},\quad\mathbf{v}_{2}=\begin{bmatrix}-3\\-2\end{bmatrix},\quad\text{and}\quad\mathbf{u}=\begin{bmatrix}-1\\1\end{bmatrix}
 $$
 
-we find $T(\mathbf{v}_{1})=\mathbf{u}=T(\mathbf{v}_{2})$. Consequently, if we know that, for some input vector $\mathbf{v}$, the transformation $T$  gives $\mathbf{u}$ as output, we have no way of knowing whether the original input was $\mathbf{v}_{1}$ or $\mathbf{v}_{2}$. In fact, there are infinitely many possible inputs that yield $\mathbf{u}$ as output. To find them, it suffices to solve the system $A\mathbf{x}=\mathbf{u}$. We find
+we find $T(\mathbf{v}_{1})=\mathbf{u}=T(\mathbf{v}_{2})$. Consequently, i $T(\vect{v})=\vect{u}$, we have no way of knowing whether the $\vect{v}=\mathbf{v}_{1}$ or $\vect{v}=\mathbf{v}_{2}$. Or perhaps some other vector, because there are infinitely many possible inputs that yield $\mathbf{u}$ as output. To find them, it suffices to solve the system $A\mathbf{x}=\mathbf{u}$. We find
 
 
 $$
@@ -57,7 +63,7 @@ so any vector  $\mathbf{v}=\begin{bmatrix}a_{1}\\a_{2}\end{bmatrix}$ with $a_{1}
 ::::{figure} Images/Fig-InjSurj-NonInjEx.svg
 :name: Fig:InjSurj:NonInjEx
 
-The transformation $T$ from {prf:ref}`Ex:InjSurj:InjEx` [i.](#Item:InjSurj:NonInjEx) . All vectors on the black line on the left, in particular $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$, are mapped to the vector $\mathbf{u}$ on the right. Similarly, all vectors on the blue line are mapped to $\mathbf{0}$. Since there is not just one vector on the these lines, $T$ is not injective.
+The transformation $T$ from {prf:ref}`Ex:InjSurj:InjEx` [i.](#Item:InjSurj:NonInjEx) . All vectors on the black line on the left, in particular $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$, are mapped to the vector $\mathbf{u}$ on the right. Similarly, all vectors on the blue line are mapped to $\mathbf{0}$. Since there is not just one vector on these lines, $T$ is not injective.
 ::::
 
 
@@ -65,14 +71,16 @@ The transformation $T$ from {prf:ref}`Ex:InjSurj:InjEx` [i.](#Item:InjSurj:NonIn
 </li>
 <li id="Item:InjSurj:InjEx">
 
-Consider now 
+Consider now the transformation
 
 $$
 T:\mathbb{R}^{2}\to\mathbb{R}^{2},\quad\mathbf{v}\mapsto A\mathbf{v}\quad\quad\text{where}\quad\quad A=\begin{bmatrix}
 	1&-1\\
 	1&1
-	\end{bmatrix}.
+	\end{bmatrix}
 $$
+
+which is illustrated in {numref}`Figure %s <Fig:InjSurj:InjEx>`.
 
 This is an injective transformation. Indeed, if we take an arbitrary vector $\mathbf{v}=\begin{bmatrix}a_{1}\\a_{2}\end{bmatrix}$ in $\mathbb{R}^{2}$ and we try to solve $A\mathbf{x}=\mathbf{u}$, we find 
 
@@ -86,7 +94,7 @@ $$
 \end{array}\right].
 $$
 
-This system is consistent regardless of $a_{1}$ and $a_{2}$ and there are no free variables, so there is always a **unique** solution. This means that there is only one $\mathbf{x}$ with $T(\mathbf{x})=A\mathbf{x}=\mathbf{u}$, hence $T$ is injective.
+There are no free variables, so if there is a solution to the system $A\vect{x}=\vect{v}$ (which, in this case, is true for all $\vect{v}$) it will be unique. This means that there is only one $\mathbf{x}$ with $T(\mathbf{x})=A\mathbf{x}=\mathbf{u}$, hence $T$ is injective.
 
 ::::{figure} Images/Fig-InjSurj-InjEx.svg
 :name: Fig:InjSurj:InjEx
@@ -95,6 +103,32 @@ The transformation $T$ from {prf:ref}`Ex:InjSurj:InjEx` [ii.](#Item:InjSurj:InjE
 ::::
 
 </li>
+
+<li id="Item:InjSurj:InjExNonEqDim">
+
+Let us consider now a transformation for which the domain and the codomain are different. Take, for example, 
+
+$$S:\R^{2}\to\R^{3},\vect{v}\mapsto A\vect{v}\quad\text{where}\quad A=\begin{bmatrix}
+1&0\\
+0&1\\
+0&0
+\end{bmatrix}.$$
+
+Then $S$ is an injective transformation. Indeed, take an arbitrary vector
+
+$$\vect{v}=\begin{bmatrix}
+a_{1}\\
+a_{2}\\
+a_{3}
+\end{bmatrix}\text{ in }\R^{3}.\quad\text{Then}\quad\left[\begin{array}{cc|c}
+	1&0&a_{1}\\
+	0&1&a_{2}\\
+	0&0&a_{3}
+	\end{array}\right]$$
+
+</li>
+has, when it is consistent, a unique solution as there are no free variables. 
+
 </ol>
 
 ::::::
@@ -138,7 +172,7 @@ T\left(\begin{bmatrix}0\\0\\a_{3}\end{bmatrix}\right)=\mathbf{0}\quad\text{for a
 $$
 
 
-Note that $S$ is injective. This is not a coincidence, as {prf:ref}`Prop:InjSurj:CompInjFirstInj` shows.
+Note that $S$ is injective by {prf:ref}`Ex:InjSurj:InjEx` [iii.](#Item:InjSurj:InjExNonEqDim) This is not a coincidence, as {prf:ref}`Prop:InjSurj:CompInjFirstInj` shows.
 
 
 ::::::
@@ -154,7 +188,7 @@ If $S:\mathbb{R}^{l}\to\mathbb{R}^{m}$ and $T:\mathbb{R}^{m}\to\mathbb{R}^{n}$ a
 
 
 ::::::{prf:proof}
-Suppose $S$ is not injective. Then there are $\mathbf{v}_{1}\neq\mathbf{v}_{2}$ in $\mathbb{R}^{l}$ such that $S(\mathbf{v}_{1})=S(\mathbf{v}_{2})$. But then $T(S(\mathbf{v}_{1}))=T(S(\mathbf{v}_{2}))$ which contradicts the assumption that $T\circ S$ is injective.
+Suppose $T\circ S$ is injective but $S$ is not. Then there are $\mathbf{v}_{1}\neq\mathbf{v}_{2}$ in $\mathbb{R}^{l}$ such that $S(\mathbf{v}_{1})=S(\mathbf{v}_{2})$. But then $T(S(\mathbf{v}_{1}))=T(S(\mathbf{v}_{2}))$ which contradicts the assumption that $T\circ S$ is injective.
 
 ::::::
 
@@ -227,7 +261,7 @@ Assume now that $T(\mathbf{v})=\mathbf{0}$ implies $\mathbf{v}=\mathbf{0}$. If $
 ## Surjectivity
 
 
-In this section, we will talk about surjectivity. It is a natural complement to the concept of injectivity -- the yin to its yang, if you will.
+In this section, we will talk about surjectivity. It is a natural complement to the concept of injectivity -- the yin to its yang, if you will. This duality becomes apparent when comparing {prf:ref}`Prop:InjSurj:InjChars` to {prf:ref}`Prop:InjSurj:SurjChars`.
 
 
 ::::::{prf:definition}
@@ -268,10 +302,10 @@ $$
 so the system $A\mathbf{x}=\mathbf{u}$ can only be solved if $a_{1}+a_{2}=0$. This transformation is therefore not surjective.
 
 
-::::{figure} Images/Fig-InjSurj-NonInjEx.svg
+::::{figure} Images/Fig-InjSurj-NonSurjEx.svg
 :name: Fig:InjSurj:NonSurjEx
 
-The transformation $T$ from {prf:ref}`Ex:InjSurj:SurjEx` [i.](#Item:InjSurj:NonSurjEx) .  The green line on the right is the collection of all $\mathbf{b}$ for which the system $A\mathbf{x}=\mathbf{b}$ is consistent where $A$ is the standard matrix of $T$. Since this is not all of $\mathbb{R}^{2}$, $T$ is not surjective.
+The transformation $T$ from {prf:ref}`Ex:InjSurj:SurjEx` [i.](#Item:InjSurj:NonSurjEx) .  The green line is the collection of all $\mathbf{b}$ for which the system $A\mathbf{x}=\mathbf{b}$ is consistent where $A$ is the standard matrix of $T$. Since this is not all of $\mathbb{R}^{2}$, $T$ is not surjective.
 ::::
 
 </li>
@@ -286,7 +320,7 @@ A=\begin{bmatrix}
 	\end{bmatrix},
 $$
 
-the system $A\mathbf{x}=\mathbf{u}$ is solvable for any $\mathbf{u}$ in $\mathbb{R}^{2}$. Consequently, the linear transformation  
+the system $A\mathbf{x}=\mathbf{u}$ is consistent for any $\mathbf{u}$ in $\mathbb{R}^{2}$. Consequently, the linear transformation  
 
 $$
 T:\mathbb{R}^{2}\to\mathbb{R}^{2},\quad\mathbf{v}\mapsto A\mathbf{v}
@@ -466,3 +500,48 @@ It suffices to show that $T$ is injective if and only if it is surjective. Assum
 Similarly, if $T$ is surjective, then the standard matrix $A$ of $T$ has a pivot in each column. Again, the number of columns is the same as the number of rows, so there is also a pivot in every row and we conclude that $T$ must be injective.
 
 ::::::
+
+The content of {prf:ref}`Prop:InjSurj:BijIsInv` is, intuitively, that a transformation is bijective if and only if it can be undone by some linear transformation. 
+
+
+:::{prf:proposition}
+:label: Prop:InjSurj:BijIsInv
+
+For a linear transformation $T:\R^{n}\to\R^{n}$ with standard matrix $A$ the following are equivalent:
+
+<ol type="i">
+<li id="It:InjSurj:TBij">
+
+$T$ is bijective.
+
+</li>
+
+<li id="It:InjSurj:AInv">
+
+$A$ is invertible.
+
+</li>
+
+<li id="It:InjSurj:TInv">
+
+There exists a transformation $S:\R^{n}\to\R^{n}$ such that 
+
+$$ST(\vect{v})=\vect{v}=TS(\vect{v})$$
+
+for any vector $\vect{v}$ in $\R^{n}$.
+
+</li>
+
+:::
+
+:::{prf:proof}
+
+By {prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations`, we know that $A$ is invertible if and only if the system $\vect{x}=\vect{b}$ has a unique solution for each $\vect{b}$ in $\R^{n}$. The existence of a solution is equivalent to surjectivity of $T$ and its uniqueness is equivalent to injectivity of $T$. This establishes the equivalence of [i.](#It:InjSurj:TBij) and [ii.](#It:InjSurj:AInv)
+
+We will now show that [ii.](#It:InjSurj:AInv) and [iii.](#It:InjSurj:TInv) are equivalent, too. The invertibility of $A$ is equivalent to the existence of an $n\times n$-matrix $B$ such that $AB=I$. Define 
+
+$$S:\R^{n}\to\R^{n},\vect{v}\mapsto B\vect{v}.$$
+
+Then $TS(\vect{v})=AB\vect{v}=\vect{v}$ for any $\vect{v}$ in $\R^{n}$. The only thing left to show is $ST(\vect{v})=\vect{v}$ or, in other words, $BA(\vect{v})=\vect{v}$ for any $\vect{v}$ in $\R^{n}$. For this, we argue as follows. Since $AB=I$, $ABA=A$ follows. But then $A(BA-I)=0$, hence $A((BA-I)\vect{v})=\vect{0}$ for all $\vect{v}$ in $\R^{n}.$ Since $A$ is invertible, $A\vect{x}=\vect{0}$ only has the trivial solution $\vect{x}=\vect{0}$. Therefore $(BA-I)\vect{v}=\vect{0}$ for all $\vect{v}$ which implies $BA\vect{v}=\vect{v}$ for all $\vect{v}$ in $\R^{n}$.
+
+:::

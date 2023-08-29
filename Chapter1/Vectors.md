@@ -14,7 +14,7 @@ We therefore have a need for something more general. Something which allows us t
 
 ## Arrows in the plane
 
-Consider an arrow in the plane $\mathbf{v}_{1}$ as in {numref}`Figure %s <Fig:Vectors:ArrowinPlane>`.
+Consider an arrow $\mathbf{v}_{1}$ in the plane as in {numref}`Figure %s <Fig:Vectors:ArrowinPlane>`.
 
 ```{figure} Images/Fig-Vectors-ArrowinPlane.svg
 :name: Fig:Vectors:ArrowinPlane
@@ -76,7 +76,7 @@ $$
 \end{bmatrix}=\mathbf{v}_{1}+\mathbf{v}_{2}.
 $$
 
-As you see, it is very easy to find the sum of two arrows using our new notation. The same holds true for the stretching of an arrow. Let us try, for example, to stretch $\mathbf{v}_{3}$ to $2$ times its length, that is, let us try to find $2\mathbf{v}_{3}$. This gives an arrow pointing two units to the left and two units straight up. If we multiply both entries of $\mathbf{v}_{3}$ with 2, we find a new vector $\mathbf{v}_{4}$ with:
+As you see, it is very easy to find the sum of two arrows using our new notation. The same holds true for the stretching of an arrow. Let us try, for example, to stretch $\mathbf{v}_{3}$ to $2$ times its length, that is, let us try to find $2\mathbf{v}_{3}$. This gives an arrow pointing two units to the left and two units straight up. If we multiply both entries of $\mathbf{v}_{3}$ by $2$, we find a new vector $\mathbf{v}_{4}$ with:
 
 $$
 
@@ -87,7 +87,7 @@ $$
 
 which is precisely $2\mathbf{v}_{3}$.
 
-We have found that the geometrical notion of an arrow in the plane with a certain length pointing in a certain direction is captured perfectly by the algebraic notion of its vector. Moreover, the natural operations of stretching and combining arrows can easily be done algebraically. In fact, there is no reason why we should restrict ourselves to arrows in the plane. We can just as well take arrows in three dimensional space and glue them together or stretch them. In {numref}`Subsection %s <Subsec:Vectors:ndim>` we will formalise this notion to $n$ dimensions -- and we will see that it is not so strange to have more than $3$ dimensions!
+We have found that the geometrical notion of an arrow in the plane with a certain length pointing in a certain direction is captured perfectly by the algebraic notion of its vector. Moreover, the natural operations of stretching and combining arrows can easily be done algebraically. In fact, there is no reason why we should restrict ourselves to arrows in the plane. We can just as well take arrows in three dimensional space and glue them together or stretch them. In {numref}`Subsection %s <Subsec:Vectors:ndim>` we will formalize this notion to $n$ dimensions -- and we will see that it is not so strange to have more than $3$ dimensions!
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/553450f1-e960-4bac-9bb4-074fe8106369?id=78688
@@ -223,7 +223,7 @@ Suppose $\mathbf{v}_{1},\mathbf{v}_{2},\mathbf{v}_{3}$ are vectors in $\mathbb{R
 
 	(\mathbf{v}_{1}+\mathbf{v}_{2})+\mathbf{v}_{3}=\mathbf{v}_{1}+(\mathbf{v}_{2}+\mathbf{v}_{3})
 	```
-3. Commutativity
+3. Commutativity:
 	```{math}
 	:label: Item:Vectors:Commutativity
 
@@ -241,9 +241,9 @@ Suppose $\mathbf{v}_{1},\mathbf{v}_{2},\mathbf{v}_{3}$ are vectors in $\mathbb{R
 
 ```{prf:proof}
 
+Exercise. 
 
-
-\todo[inline]{At the moment no proof.}
+%(Grasple 62390)
 
 ```
 
@@ -253,7 +253,7 @@ For example, the equation {eq}`Item:Vectors:Associativity` tells us that we do n
 :label: App:Vectors:ChemReac
 
 
-More than three dimensions? How does that make sense? Well, it is actually not so strange at all! Here is an example in which four dimensions occur very naturally. Sodium sulfide ($\ce{Na2S}$) is a chemical used to turn wood into pulp, to bleach textile, and so on. \todo{Comes from wikipedia. Should there be a reference here? How do we deal with references?} It is produced by adding carbon ($\ce{C}$) to sodium sulfate ($\ce{Na_{2}SO_{4}}$), which gives the following reaction:
+More than three dimensions? How does that make sense? Well, it is actually not so strange at all! Here is an example in which four dimensions occur very naturally. Sodium sulfide ($\ce{Na2S}$) is a chemical used to turn wood into pulp, to bleach textile, and so on. It is produced by adding carbon ($\ce{C}$) to sodium sulfate ($\ce{Na_{2}SO_{4}}$), which gives the following reaction:
 
 ```{math}
 :label: Eq:Vectors:ChemReac
@@ -313,7 +313,7 @@ The reaction under consideration here is a very simple one. It is not at all rar
 
 ## Points and vectors
 
-Vectors are quite easy to work with, even in more than three dimensions. It will therefore be convenient to relate the familiar concepts from plain old plane geometry and the somewhat more advanced three-dimensional geometry in terms of vectors. In this section, we will establish a link between points and vectors by introducing a sort of common anchor point for all vectors. In Section\todo{Add reference.}, we will relate lines and planes to vectors.
+Vectors are quite easy to work with, even in more than three dimensions. It will therefore be convenient to relate the familiar concepts from plain old plane geometry and the somewhat more advanced three-dimensional geometry in terms of vectors. In this section, we will establish a link between points and vectors by introducing a sort of common anchor point for all vectors. In {numref}`Section:LinesAndPlanes:Plane`, we will relate lines and planes to vectors.
 
 Suppose we fix an arbitrary point in the plane. Let us call it the _origin_ and write it as $O$. Every other point can now be fully determined by its displacement from $O$. In other words, any point $P$ in the place can be described by saying how far it is to the right of $O$ and how far it is up from $O$. If $a_{1}$ is the former quantity and $a_{2}$ is the latter, we will write $P=(a_{1},a_{2})$. If $P$ happens to be to the left of the origin, $a_{1}$ will be negative. Similarly, if $P$ is lower than $O$, $a_{2}$ will be negative. In {numref}`Figure %s <Fig:Vectors:PointandVect>`, you can see the point $P=(-1,2)$. For the point $O$ itself, we have $O=(0,0)$ since the displacement from $O$ to $O$ is $0$ in both directions.
 
@@ -334,7 +334,7 @@ its end point will be precisely $P$.
 
 By fixing our origin $O$, we have therefore introduced a natural correspondence between points in the plane and vectors with two components: a point $P=(a_{1},a_{2})$ corresponds to the vector pointing from $O$ to $P$, which is given by $\mathbf{v}$.
 
-In a similar vein, we can associate vectors with three components to points in three-dimensional space. We again fix an origin $O=(0,0,0)$. Any other point $P$ is given by its displacement from $O$ to the right ($a_{1}$), up ($a_{2}$), and forward ($a_{3}$). To this point, we can associate the vector
+In a similar vein, we can associate vectors with three components to points in three-dimensional space. We again fix an origin $O=(0,0,0)$. Any other point $P$ is given by its displacement from $O$ to the right ($a_{1}$), up ($a_{2}$), and backward ($a_{3}$). To this point, we can associate the vector
 
 $$
 
