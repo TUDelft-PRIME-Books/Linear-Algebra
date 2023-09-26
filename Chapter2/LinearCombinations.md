@@ -375,7 +375,7 @@ In {prf:ref}`Prop:LinearCombinations:SpanStandardBasis` we saw that the span of 
 :url: https://embed.grasple.com/exercises/2167085c-2498-4694-9eac-abfeeb0ec307?id=70162
 :label: grasple_exercise_2_2_6
 :dropdown:
-:description: About the interpretation of  Span$\{\vect{a}_1,\vect{a}_2\}$. 
+:description: About the interpratation of  Span$\{\vect{a}_1,\vect{a}_2\}$. 
 
 ::::
 
