@@ -510,6 +510,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 ::::
 
 
+
 ::::{grasple} 
 :url: https://embed.grasple.com/exercises/021bb82e-7af3-4c84-86b8-0dcd22bf555b?id=84556
 :label: grasple_exercise_2_3_9 
