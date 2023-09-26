@@ -157,6 +157,32 @@ $$
 
 ::::
 
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/e9b864bf-de65-4b67-92d2-7075121ae5e5?id=70222
+:label: grasple_exercise_2_4_1T
+:dropdown:
+:description: To check whether $A\vect{x}$  exists, and if so, to compute it. 
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/848de922-1bd5-48a2-806d-a2b94bd40a4b?id=70223
+:label: grasple_exercise_2_4_2T
+:dropdown:
+:description:  To check whether $A\vect{x}$  exists, and if so, to compute it.
+
+::::
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/8eb9d800-ebd8-4805-8d56-eac5150f405d?id=85094
+:label: grasple_exercise_2_4_3  T
+:dropdown:
+:description:  To check whether $A\vect{x}$  exists, and if so, to compute it.
+
+::::
+
 ::::{prf:remark}
 :label: Rem:MatVecProd:EquivalentEquations
 
@@ -253,6 +279,14 @@ $$
 
 ::::
 
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/d9a8f246-359c-4666-bb8c-2f573e192e5c?id=68857
+:label: grasple_exercise_2_4_4T
+:dropdown:
+:description: Rewriting a linear system to a matrix-vector equation
+
+::::
 
 
 ::::{prf:proposition} 
@@ -541,7 +575,7 @@ The following statements are equivalent:
 <ol type ="i">
 <li>
 
-The cset $\Span{\vect{v}_1, \ldots, \vect{v}_k}$ is equal to $\R^n$. 
+The set $\Span{\vect{v}_1, \ldots, \vect{v}_k}$ is equal to $\R^n$. 
 
 
 </li>
@@ -620,5 +654,107 @@ If $\mathbf{v}_1, \dots ,\mathbf{v}_k$ are vectors in $\mathbb{R}^n$ and $k<n$, 
 ::::{prf:proof} 
 
 Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix $A$. By definition, the matrix $A$ is an $n\times k$ matrix. Let $E$ be the reduced echelon form of $A$. Since $E$ has $k$ columns we know that $E$ can have at most $k$ pivots. Because $k<n$ this means that the number of pivots is less than $n$. Therefore, we find that the number of pivots is less than the number of rows in $E$. This implies that it is impossible for $E$ to have a pivot in each row. {prf:ref}`Prop:LinearCombinations:PivotSpanSolution` now tells us that the span of the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ cannot be equal to $\mathbb{R}^n$.
+
+::::
+
+
+## Grasple Exercises
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/5708acc0-9a35-429b-85ff-43139eed1722?id=85086
+:label: grasple_exercise_2_4_1
+:dropdown:
+:description: For a given matrix  $A$, does the equation $A\vect{x}=\vect{b}$ have a solution for every $\vect{b}$?
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/3cb73c25-fa69-4cf1-a686-1e71f2f0bf89?id=85092
+:label: grasple_exercise_2_4_2
+:dropdown:
+:description: For a given matrix  $A$, does the equation $A\vect{x}=\vect{b}$ have a solution for every $\vect{b}$?
+
+::::
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/56cf013b-dc6a-4774-ac1e-fa694b16a2a8?id=85089
+:label: grasple_exercise_2_4_3
+:dropdown:
+:description:For a given matrix  $A$, does the equation $A\vect{x}=\vect{b}$ have a solution for every $\vect{b}$?
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/dba850cd-e353-4339-9811-656a565e7270?id=85091
+:label: grasple_exercise_2_4_4
+:dropdown:
+:description: Using a vector equation to find solution of a linear system.
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/a5715fe9-74ae-4df5-857f-2c6ed1cc9cdc?id=68889
+:label: grasple_exercise_2_4_5
+:dropdown:
+:description: A statement concerning two systems  $A\vect{x}=\vect{p}$, $A\vect{x}=\vect{q}$.
+
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/6332f523-a152-4be7-b160-bb0bab18a4a0?id=69773
+:label: grasple_exercise_2_4_6
+:dropdown:
+:description: If $A\vect{x}=\vect{b}$  has a unique solution, what about $A\vect{x}=\vect{0}$?
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/cd77f0bd-bd35-4674-9524-38a9446cd076?id=70183
+:label: grasple_exercise_2_4_7
+:dropdown:
+:description:  What if the zero vector is a solution to $A\vect{x}=\vect{b}$? 
+
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/5bdcebc9-3ab6-4b64-9f30-033cb9f79b80?id=76273
+:label: grasple_exercise_2_4_8
+:dropdown:
+:description: About the 'sum' of two systems  $A_1\vect{x}=\vect{b}_1$, $A_2\vect{x}=\vect{b}_2$.
+
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/5ccac4fe-bf25-471e-b268-5add4b06ecfe?id=76278
+:label: grasple_exercise_2_4_9
+:dropdown:
+:description: About the 'stack' of two systems  $A_1\vect{x}=\vect{b}_1$, $A_2\vect{x}=\vect{b}_2$.
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/e8dfc02b-2628-44f0-8a57-bed3fb0cbb26?id=77658
+:label: grasple_exercise_2_4_10
+:dropdown:
+:description: What if  $A\vect{v}= A\vect{w} = \vect{b}$? 
+
+::::
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/525d98b9-7cd3-40be-80e9-6d2f65f26002?id=77661
+:label: grasple_exercise_2_4_11
+:dropdown:
+:description: Given  $ A\vect{v} = A\vect{w} = \vect{b}$, how to create more solutions. 
 
 ::::
