@@ -1,6 +1,6 @@
 # in _config.yml
 title: "Linear Algebra"
-author: "Dani Balagué Guardia, André Hensbergen, Nikolaas Verhulst, Tom Vroegrijk, and many collaborators."
+author: "Created by a team of lecturers and developers from the Delft Institute of Applied Mathematics from the TU Delft University of Technology. TODO create and add link to authors document."
 only_build_toc_files: true
 
 html:
