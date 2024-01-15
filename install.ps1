@@ -29,7 +29,7 @@ catch {
 }
 finally{
 	cd ..
-	rm -rf sphinx-grasple
+	#rm -rf sphinx-grasple
 	Write-Host 
 	Write-Host "sphinx-grasple package installed"
 	Write-Host "Ready!"
