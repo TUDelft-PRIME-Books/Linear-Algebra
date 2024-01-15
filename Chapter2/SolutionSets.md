@@ -1,9 +1,9 @@
 (Section:SolutionSets)=
 # The solution set of a system of  linear equations 
 
-As we have seen in Section {prf:ref}`??`, the solutions of a single linear equation with $2$ variables form a line in the plane. Similarly, the solutions of a single linear equation in $3$ variables form a plane in three-dimensional space. If we want to know which points lie in the intersection of two planes, we therefore have to find those points that solve two equations simultaneously. This raises some very natural questions: what is the set of vectors that satisfy a number of given equations? What does this set look like geometrically?
+As we have seen in  {numref}`Section %s <Section:LinesAndPlanes>`, the solutions of a single linear equation with $2$ variables form a line in the plane. Similarly, the solutions of a single linear equation in $3$ variables form a plane in three-dimensional space. If we want to know which points lie in the intersection of two planes, we therefore have to find those points that solve two equations simultaneously. This raises some very natural questions: what is the set of vectors that satisfy a number of given equations? What does this set look like geometrically?
 
-We have already studied the easiest case, that of two equations in $\mathbb{R}^{2}$, in Section \todo{insert reference}. We have seen there that there are three possibilities. The first one is that the equations describe parallel lines. In that case, there is no point of intersection and therefore no common solution of the two equations. The solution set is therefore empty. In the second case, the lines described by the equations cross in a single point $(v_{1},v_{2})$. The solution set therefore consists of the single vector 
+In {numref}`Section %s <Section:LinesAndPlanes>` we have already studied the easiest case, that of two equations in $\mathbb{R}^{2}$. We have seen there that there are three possibilities. The first one is that the equations describe parallel lines. In that case, there is no point of intersection and therefore no common solution of the two equations. The solution set is therefore empty. In the second case, the lines described by the equations cross in a single point $(v_{1},v_{2})$. The solution set therefore consists of the single vector 
 $\mathbf{v}=\begin{bmatrix}v_{1}\\v_{2}\end{bmatrix}$. In the final case, the two equations describe the same line. The solution set of the system of equations is then the infinite set of vectors which lie on the line. 
 
 In this section, we will study solution sets of linear systems in higher dimensions. But first, let us get a clear idea of how we find and write down a solution set.
@@ -11,7 +11,7 @@ In this section, we will study solution sets of linear systems in higher dimensi
 (Subsec:SolSet:WritingSolSets)=
 ## Writing down solution sets 
 
-In Section {prf:ref}`??`, we saw how to solve a system of linear equations: we reduced the augmented matrix to echelon form and expressed the basic variables in terms of the free variables. This means that any choice of numbers for the basic variables determines a solution. We can conveniently write down the set of all such solutions by using a parametrized vector. What we mean by that is best illustrated with a couple of examples.
+In {numref}`Section %s <Section:LinSystems>`, we saw how to solve a system of linear equations: we reduced the augmented matrix to echelon form and expressed the basic variables in terms of the free variables. This means that any choice of numbers for the free variables determines a solution. We can conveniently write down the set of all such solutions by using a parametrized vector. What we mean by that is best illustrated with a couple of examples.
 
 
 ::::{prf:example} 
@@ -29,7 +29,7 @@ x_{1}&+&x_{2}&+&x_{3}&=&0
 
 :::
 
- If we apply the algorithm from Section \todo{insert reference}, we find that $x_{3}$ is a free variable. So for every $t$ in $\mathbb{R}$ we can put $x_{3}=t$ and find a solution: $x_{1}=-4t$, $x_{2}=3t$, $x_{3}=t$. The solution set $S$ of our linear system can therefore be written in the following way: 
+ If we apply  {prf:ref}`Alg:LinSystems:ElimMethod`, we find that we can take $x_{3}$ as a free variable. So for every $t$ in $\mathbb{R}$ we can put $x_{3}=t$ and find a solution: $x_{1}=-4t$, $x_{2}=3t$, $x_{3}=t$. The solution set $S$ of our linear system can therefore be written in the following way: 
  
 $$
      S=\left\{\begin{bmatrix}-4t\\3t\\t\end{bmatrix}\mid t\in\mathbb{R}\right\}=
@@ -88,7 +88,7 @@ to an element of the solution set from {prf:ref}`Example:SolSet:TwoLinesinR3`. T
 :::{figure} Images/Fig-SolSet-TwoLinesinR3.svg
 :name: Fig:SolSet:TwoLinesinR3
 
-The solution set for the two systems of equations from {prf:ref}`Example:SolSet:TwoLinesinR3` and  {prf:ref}`Example:SolSet:TwoLinesinR3b`. In blue we see the solution set of the original system {eq}`Eq:SolSet:HomSys2D`, in green that of the system with the non-zero right hand side {eq}`Eq:SolSet:NonHomSys2D`.
+The solution sets for the two systems of equations from {prf:ref}`Example:SolSet:TwoLinesinR3` and  {prf:ref}`Example:SolSet:TwoLinesinR3b`. In blue we see the solution set of the original system {eq}`Eq:SolSet:HomSys2D`, in green that of the system with the non-zero right hand side {eq}`Eq:SolSet:NonHomSys2D`.
 :::
 
 ::::
@@ -194,7 +194,7 @@ $$
 The solution set for the two systems of equations from {prf:ref}`Ex:Solset:TwoPlanesinR3`.
 :::
 
-Note that, if we had changed the right hand side of our first equation to $a$ and the second one to anything but $2a$, the system would have had no solutions at all. The two equations would in that case describe two parallel planes.
+Note that, if we had changed the right hand side of our first equation to $a$,  $a\neq0$, and the second one to anything but $2a$, the system would have had no solutions at all. The two equations would in that case describe two parallel planes.
 
 ::::
 
@@ -202,7 +202,7 @@ From these examples, it seems like linear systems in which the constant terms ar
 
 ## Homogeneous linear systems 
 
-Our first aim in this section is to show that the intuition from Section {numref}`Subsec:SolSet:WritingSolSets` holds in general. We first introduce some terminology to avoid the long and clumsy phrase **linear system with all constant terms equal to $0$**.
+Our first aim in this section is to show that the intuition from  {numref}`Subsec:SolSet:WritingSolSets` holds in general. We first introduce some terminology to avoid the long and clumsy phrase **linear system with all constant terms equal to $0$**.
 
 
 ::::{prf:definition} 
@@ -400,8 +400,7 @@ $$
 0x_{1}&+&1x_{2}&-&0x_{3}&-&1x_{4}&=&0
 \end{array}\right..
 $$
-
-This system can be solved as follows, using the row reduction algorithm we have seen in Section {prf:ref}`??`:
+This system can be solved as follows, using the row reduction algorithm of {numref}`Section %s <Section:LinSystems>`: 
 
 $$
 \left[\begin{array}{rrrr|r}2&0&-2&0&0\\1&0&-1&0&0\\4&0&0&-2&0\\0&1&0&-1&0\\\end{array}\right]\begin{array}{l}
@@ -460,7 +459,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/44dcb893-3beb-46a2-bddd-75f830cba5de?id=83499
 :label: grasple_exercise_2_3_3 
 :dropdown:
-:description: Solution set of a system of 2 equations in 3 unknowns
+:description: Solution set of a system of 2 equations in 2 unknowns
 
 ::::
 
@@ -510,10 +509,18 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 ::::
 
 
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/196ac202-23e4-4c94-842b-e50410fedea0?id=87438
+:label: grasple_exercise_2_3_9 
+:dropdown:
+:description: Different parametrised vector solutions
+
+::::
+
 
 ::::{grasple} 
 :url: https://embed.grasple.com/exercises/021bb82e-7af3-4c84-86b8-0dcd22bf555b?id=84556
-:label: grasple_exercise_2_3_9 
+:label: grasple_exercise_2_3_10 
 :dropdown:
 :description: Combining solutions of a linear system (1)
 
@@ -522,7 +529,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 
 ::::{grasple} 
 :url: https://embed.grasple.com/exercises/5d723e95-a4e5-4594-970e-6332e4953e73?id=84559
-:label: grasple_exercise_2_3_10 
+:label: grasple_exercise_2_3_11 
 :dropdown:
 :description: Combining solutions of a linear system (2)
 
@@ -530,7 +537,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 
 ::::{grasple} 
 :url: https://embed.grasple.com/exercises/297528c4-7ea0-426b-aaa0-85dbcbfa97af?id=83227
-:label: grasple_exercise_2_3_11 
+:label: grasple_exercise_2_3_12 
 :dropdown:
 :description: Combining solutions of a linear system (3)
 

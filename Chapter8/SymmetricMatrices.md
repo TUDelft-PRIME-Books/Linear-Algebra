@@ -428,7 +428,7 @@ Note that this also establishes the property that for each eigenvalue of a symme
 ({prf:ref}`Prop:SymmetricMat:AlgGeomMultiplicity`).
 
 
-We will put the intricate proof at the end, and consider two  examples first.
+We will put the intricate proof at the end of the subsection, and first consider two  examples.
 
 The first example is a continuation of the earlier  {prf:ref}`Ex:SymmetricMat:DoubleEV`.
 
@@ -470,7 +470,8 @@ $$
 ::::
 
 
-One more example before we get to the proof (or you jump over to {numref}`SubSec:SymmetricMat:SpectralDecomp`).
+One more example before we get to the proof (or you jump over to 
+{numref}`SubSec:SymmetricMat:SpectralDecomp`).
 
 ::::{prf:example}
 :label: Ex:SymmetricMat:OrthogDiag3x3bis
@@ -539,7 +540,7 @@ $$
 
 And now it's time for the proof of the main theorem. 
 
-::::{prf:proof}   (of {prf:ref}`Thm:SymmetricMat:OrthogDiag`.)
+::::{prf:proof}   (of {prf:ref}`Thm:SymmetricMat:OrthogDiag`)
  
 
 Suppose that $A$ is a symmetric $n \times n$  matrix.  We know there are $n$ real, possibly multiple,  eigenvalues
@@ -645,7 +646,7 @@ Moreover,  since the product of orthogonal matrices is orthogonal, $A$ is in fac
 ::::
 
 
-:::{prf:example}
+::::{prf:example}
 :label: Ex:SymmetricMat:ConstructDiag
 
 We will illustrate the proof for the matrix 
@@ -731,7 +732,7 @@ $$
                                     \end{array}   \right].
 $$
 
-If we normalize and use them as the columns of $\tilde{Q}_2$ as in the proof of {prf:ref}SymmetricMat:OrthogDiag`, we find as second matrix in that construction
+If we normalize and use them as the columns of $\tilde{Q}_2$ as in the proof of {prf:ref}`Thm:SymmetricMat:OrthogDiag`, we find as second matrix in that construction
 
 $$
 
@@ -745,7 +746,7 @@ $$
 
 And then
 
-::{math}
+:::{math} 
 :label: Eq:SymmetricMat:DefineA2
 
 A_2 = Q_2^TQ_1^T A Q_1Q_2 = 
@@ -755,10 +756,11 @@ A_2 = Q_2^TQ_1^T A Q_1Q_2 =
         0 & 0 & 3 & 0 \\ 
         0 & 0 & 0 & 3
      \end{array}   \right] = D!
-::
+:::
 
 For this example  the matrix has the second double eigenvalue $\lambda_{3,4} = 3$.  Because of that, the construction takes one step less than in the general case.  
 Defining  $Q = Q_1Q_2$, can conclude from {eq}`Eq:SymmetricMat:DefineA2` that 
+
 
 $$
   Q^{-1}AQ = D, \,\,\text{ so }\,\,
@@ -796,7 +798,7 @@ $(A - \lambda_iI)\vect{x} = \vect{0}$, and then orthogonalize by the Gram-Schmid
 {prf:ref}`Ex:SymmetricMat:OrthogDiag3x3`.  <BR> 
 The importance of the step-by-step reduction is that it shows that from the 'minimal' assumptions of symmetry and the existence of real eigenvalues it is possible to create an orthogonal diagonalization.
 
-:::
+::::
 
 
 

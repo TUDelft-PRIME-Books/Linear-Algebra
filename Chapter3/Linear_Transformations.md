@@ -219,8 +219,8 @@ $$
 leads to the transformation
 
 $$
- T_A: \mathbb{R}^2 \to \mathbb{R}^3, \quad  
- T_A \left(\begin{bmatrix}
+ T: \mathbb{R}^2 \to \mathbb{R}^3, \quad  
+ T \left(\begin{bmatrix}
         x \\ y 
 \end{bmatrix}\right)= 
 \begin{bmatrix}
@@ -285,7 +285,7 @@ $$
 is the mapping
 
 $$
-  T_A: \mathbb{R}^2 \to \mathbb{R}^2, \quad  T_A\left(\begin{bmatrix}
+  T: \mathbb{R}^2 \to \mathbb{R}^2, \quad  T\left(\begin{bmatrix}
         x \\ y 
 \end{bmatrix}\right)= 
 \begin{bmatrix}
@@ -324,6 +324,8 @@ $$
    x + y = c.
 $$
 
+So what the mapping does is to send all points on a line $\mathcal{L}:x + y = c$  to the point $(c,0)$, which is the intersecting of this line with the $x$-axis. <BR>
+An alternative way to describe it: it is the skew projection, in the direction $\begin{bmatrix} 1 \\ -1 \end{bmatrix}$  onto the $x$-axis. 
 See {numref}`Figure %s <Fig:LinTrafo:SkewProjection>`.
 
 
@@ -760,7 +762,7 @@ is a linear transformation from $\mathbb{R}^n$ to $\mathbb{R}^p$.
 
 ::::::{prf:remark}
 
-The transformation  $S\circ T$ is called the **composition**  of the two transformations  $S$ and $T$.   It is which is best read as  *"$S$  after  $T$"*.
+The transformation  $S\circ T$ is called the **composition**  of the two transformations  $S$ and $T$.   It is best read as  *"$S$  after  $T$"*.
 ::::::
 
 
@@ -858,7 +860,6 @@ each set of vectors $\mathbf{x}_1,  \ldots, \mathbf{x}_k$ in $\mathbb{R}^n$ and 
 ::::::
 
 In words:  for any linear transformation 
-<BR>
 *the image of a linear combination of vectors is equal to the linear combination of their images*.
 
 
@@ -1247,7 +1248,7 @@ $$
 \end{bmatrix}.
 $$
 
-So we find that 
+So we find that the matrix $[T]$  of $T$ is given by
 
 $$
   [T] =   
@@ -1271,12 +1272,25 @@ is the standard matrix of $T$.
 
 
 In the previous example we could have found the matrix just  by inspection. 
-Can you fill in the blanks in the following equation? 
+
+For the slightly different transformation  $T:\R \to \R$  given by
+
+$$
+   T:  
+\begin{bmatrix}
+x \\ y \\ z 
+\end{bmatrix} \mapsto 
+\begin{bmatrix}
+3x-z \\ y+4z \\ x-y+2z 
+\end{bmatrix},
+$$
+
+can you fill in the blanks in the following equation? 
 
 
 $$
 \begin{bmatrix}
-x-y \\ 2y+3z \\ x+y-z 
+3x-z \\ y+4z \\ x-y+2z 
 \end{bmatrix} = 
 \begin{bmatrix}
 .. & .. & .. \\ .. & .. & .. \\ .. & .. & .. 
@@ -1294,7 +1308,7 @@ If you can, you will have shown that $T$ is a matrix transformation, and as a di
 
 
 
-To conclude we consider an example that refers back to {prf:ref}`Prop:LinTrafo:CompositionLintrafos`, and which will to a large extent pave the road to the product of two matrices.
+To conclude we consider an example that refers back to {prf:ref}`Prop:LinTrafo:CompositionLintrafos`, and which will to a large extent pave the road for the product of two matrices.
 
 
 
@@ -1552,7 +1566,7 @@ $$
 :url: https://embed.grasple.com/exercises/4e5d3f55-9257-4023-9739-5df0a1a9f277?id=70410
 :label: grasple_exercise_3_1_15
 :dropdown:
-:description: To find the matrix of the transformation that send $(x,y)$ to $x\vect{a}_1 + y\vect{a}_2$.
+:description: To find the matrix of the transformation that sends $(x,y)$ to $x\vect{a}_1 + y\vect{a}_2$.
 
 ::::::
 
@@ -1562,7 +1576,7 @@ $$
 :url: https://embed.grasple.com/exercises/9efa96e2-483d-4b2c-a58a-ba197bc09a81?id=70411
 :label: grasple_exercise_3_1_16
 :dropdown:
-:description: To find the matrix of the transformation that send $(x,y)$ to $x\vect{a}_1 + y\vect{a}_2$.
+:description: To find the matrix of the transformation that sends $(x,y)$ to $x\vect{a}_1 + y\vect{a}_2$.
 
 ::::::
 
@@ -1580,7 +1594,7 @@ $$
 
 
 ::::::{grasple} 
-:url: https://embed.grasple.com/exercises/
+:url: https://embed.grasple.com/exercises/b4bb3730-f14c-4a60-a8b8-6b895cf93ac5?id=70413
 :label: grasple_exercise_3_1_18
 :dropdown:
 :description: To find the standard matrix for $T:\R^4 \to \R$.
@@ -1601,7 +1615,7 @@ $$
 
 
 ::::::{grasple} 
-:url: https://embed.grasple.com/exercises/ce
+:url: https://embed.grasple.com/exercises/ce8ba17c-0a17-4d5e-b4b7-5c277c7e8df8?id=
 :label: grasple_exercise_3_1_20
 :dropdown:
 :description: To find the standard matrix for  $T:\R^2 \to \R^3$  if  $T(\vect{v}_1)$ and $T(\vect{v}_2)$ are given.  

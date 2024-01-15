@@ -943,7 +943,7 @@ A subsection with the general transformation formula is still under construction
 ## General transformation formula for matrices of linear transformation
 
 
-In the previous subsections we studied the relations of the  coordinates with respect to the standard basis and one other alternative basis $\mc{B}$. In this section we go one step further and omit the restriction that one of the bases is the standard basis.  We will see that the generalizations are be pretty straightforward.
+In the previous subsections we studied the relations of the  coordinates with respect to the standard basis and one other alternative basis $\mc{B}$. In this section we go one step further and omit the restriction that one of the bases is the standard basis.  We will see that the generalizations are pretty straightforward.
 
 First of all we will extend the notion of a change-of-coordinates matrix.
 

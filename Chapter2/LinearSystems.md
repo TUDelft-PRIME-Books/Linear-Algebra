@@ -13,13 +13,15 @@ In Chapter 1 the question whether  two lines or two planes intersect or do not i
 
 $$
   \left\{       \begin{array}{ccccccc} 
-       a_1x_1 &+& a_2x_2 &+& a_3x_3 &=& k_1 \\
-      b_1x_1 &+& b_2x_2 &+& b_3x_3 &=& k_2
+       a_1x_1 &+& a_2x_2 &+& a_3x_3 &=& b_1 \\
+      b_1x_1 &+& b_2x_2 &+& b_3x_3 &=& b_2
        \end{array}
   \right.
 $$
 
-which we will call a system of two linear equations in three unknowns.
+which we will call a system of two linear equations in three unknowns.  
+
+Note that we have adapted the names of the variables from  $x,y,z$  to $x_1,x_2, x_3$.  This notation is more convenient when we come across equations with more than three variables.
 
 
 ::::{prf:definition} 
@@ -31,7 +33,7 @@ A **linear equation** is an equation that can be written in the form
 
 $$
 
-   a_1x_1 + a_2x_2 + \ldots + a_nx_n = k.
+   a_1x_1 + a_2x_2 + \cdots + a_nx_n = b.
 $$
 
 The numbers  $a_1,a_2,\ldots,a_n$ are called the **coefficients** and the variables $x_1,x_2, \ldots, x_n$ the **unknowns**.  The term $k$ is referred to as the **constant term**.
@@ -79,10 +81,10 @@ The most general system then looks as follows:
 $$
 
    \left\{\begin{array}{ccccccccc}
-            a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  b_1 \\
-            a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! b_2 \\
+            a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \cdots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  b_1 \\
+            a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\cdots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! b_2 \\
             \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\cdots\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
-            a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! b_m \\
+            a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \cdots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! b_m \\
           \end{array}
    \right.$$
 
@@ -98,7 +100,7 @@ Of course, if we have equations we want to solve them.  Here is what we mean by 
 
 
 
-A **solution** of a linear system  is an ordered list of $n$  values  $(c_1,  c_2, \ldots, c_n)$, or, depending on the context, a vector $\begin{bmatrix}c_1 \\ c_2 \\ \vdots \\ c_n  \end{bmatrix}$  such that substitution of
+A **solution** of a linear system  is an ordered list of $n$  values  $(c_1,  c_2, \ldots, c_n)$, or, depending on the context, a vector $\begin{bmatrix}c_1 \\ c_2 \\ \vdots \\ c_n  \end{bmatrix}$,  such that substitution of
 
 
 $$
@@ -222,7 +224,7 @@ The simplest inconsistent system may well be the system with the one equation
 
 $$
 
-   0x_1 + 0x_2 + \ldots + 0x_n = 1
+   0x_1 + 0x_2 + \cdots + 0x_n = 1
 $$
 
 As we will see later, this conflicting equation in a way pops up in any inconsistent system.
@@ -283,7 +285,7 @@ so
 
 $$
 
-  (7 - 4c_1 -5c_2 + c_4, c_1, c_2, c_3, c_4)
+  (7 - 4c_1 -5c_2 + c_4, \,c_1, \,c_2,\,c_3, \,c_4)
 $$
 
 is indeed a solution of the given equation. 
@@ -333,11 +335,16 @@ $$
     4x_1&-&7x_2&=& 2
     \end{array}\right.$$
 
-First method:  from the first equation it follows that
+First method:  from the first equation it follows that 
 
 $$
+  2x_1 = -2 + 5x_2.
+$$
 
-  2x_1 = -2 + 5x_2 \iff x_1 = -1 + \tfrac52 x_2
+From this it follows that 
+ 
+$$ 
+   x_1 = -1 + \tfrac52 x_2.
 $$
 
 Substitution of the expression for $x_1$ into the second equation yields
@@ -569,7 +576,7 @@ The other two statements are rather obvious.
 
 
 
-Let's take up the example at the point where we left it and work our way to its solution.
+Let's take up {prf:ref}`Ex:LinSystems:EliminationFirst` at the point where we left it and work our way to its solution.
 Also let us introduce a notation that makes it easier for the reader  to see what's going on.  And also for yourself, in case you look back at your computations later, or if you want to check your computations.  The '$E$' stands for: 'Equation'.
 
 We scale the second equation with a factor $-\frac12$
@@ -698,7 +705,7 @@ and from the last equation it immediately follows that there are no solutions, i
 
 ::::
 
-Let's look at one more example. Here we will see how to find the solution that contains a free variable.
+Let's look at one more example. Here we will see how to find a solution that contains a free variable.
 
 
 
@@ -822,7 +829,7 @@ If an equation
 
 $$
 
-  0x_1 + 0x_2 + \ldots + 0x_n = b,
+  0x_1 + 0x_2 + \cdots + 0x_n = b,
 $$
 
 with  $b\neq 0$  pops up, the system is inconsistent.
@@ -856,7 +863,7 @@ Before that, we define the concept of one of the most basic building blocks in l
 
 
 
-An $m \times n$  **matrix** $A$ is a rectangular array of numbers  $a_{ij}, 1\leq i \leq m, 1 \leq j \leq n$.
+An $m \times n$  **matrix** $A$ is a rectangular array of numbers  $a_{ij}$, $1\leq i \leq m$, $1 \leq j \leq n$.
 
 $$
    A = \left[\begin{array}{cccc}
@@ -1100,8 +1107,9 @@ $$
                          0  & 0  &0  & 0  \end{bmatrix}                       
 $$
 
-
 ::::
+
+
 
 In a similar manner we can define the concept of a **column echelon matrix**.
 However, since we will only consider row echelon matrices we will not do this. In the sequel we will drop the epithet 'row'  and simply speak of echelon form and echelon matrix.
@@ -1111,7 +1119,7 @@ However, since we will only consider row echelon matrices we will not do this. I
 ::::{prf:definition} 
 :label: Dfn:LinSystems:Pivot
 
-A **pivot** of a row in an echelon matrix is the first nonzero element of the row. Sometimes we also refer to it as the **leading entry**.
+A **pivot** of a row in an echelon matrix is the first nonzero element (the so-called *leading entry*) of the row. 
 
 ::::
 
@@ -1124,30 +1132,31 @@ A **pivot** of a row in an echelon matrix is the first nonzero element of the ro
 The following three matrices are in echelon form:
 
 $$
- \left[\begin{array}{rrr}1 & 2 & 3 \\ 0 & 3 & 2 \\ 0 & 0 & 0 \end{array}  \right], \quad
- \left[\begin{array}{rr}1 & 0 \\ 0 & 1 \\ 0 & 0 \\ 0 & 0 \end{array}  \right], \quad
- \left[\begin{array}{rrrrr}1 & 1 & 0 &  2 &  0\\ 0 & 0 & 1 & 4 & 0\\ 0 & 0 & 0 & 0 & 1\end{array}  \right]
+ A_1 = \left[\begin{array}{rrr}1 & 2 & 3 \\ 0 & 3 & 2 \\ 0 & 0 & 0 \end{array}  \right], \quad
+ A_2 = \left[\begin{array}{rr}1 & 0 \\ 0 & 1 \\ 0 & 0 \\ 0 & 0 \end{array}  \right], \quad
+ A_3 = \left[\begin{array}{rrrrr}1 & 1 & 0 &  2 &  0\\ 0 & 0 & 1 & 4 & 0\\ 0 & 0 & 0 & 0 & 1\end{array}  \right]
 $$
 
 The following two matrices are not in echelon form
 
 $$
- \left[\begin{array}{rrr}0 & 0 & 0 \\ 0 & 1 & 2 \\ 0 & 0 & 1 \end{array}  \right], \quad
- \left[\begin{array}{rrr}1 & 0 & 0 \\ 0 & 1 & 1  \\ 0 &1 & 0 \end{array}  \right].
+ A_4 = \left[\begin{array}{rrr}0 & 0 & 0 \\ 0 & 1 & 2 \\ 0 & 0 & 1 \end{array}  \right], \quad
+ A_5 = \left[\begin{array}{rrr}1 & 0 & 0 \\ 0 & 1 & 1  \\ 0 &1 & 0 \end{array}  \right].
 $$
 
+Namely, in matrix $A_4$  the second row is a non-zero row that is below the all-zero first row.  And in matrix  $A_5$ the third row does not start with *more* zeros than the second row. 
+
+::::
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/a6512aec-5f2d-4e3c-9c26-a0a22815480e?id=86165
+:label: grasple_exercise_2_1_D
+:dropdown:
+:description:  To check whether a matrix is in echelon form.
 
 ::::
 
 
-::::{exercise} 
-:label: Exc:LinSystems:CheckNonEchelon
-
-
-
-Explain why the last two matrices in the example are not echelon matrices.
-
-::::
 
 
 ::::{prf:example} 
@@ -1238,7 +1247,13 @@ In fact we simplified the system and the matrix along parallel paths.  From now 
 
 In later chapters we will also apply row reduction to matrices in other contexts, i.c. for other purposes.
 
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/100dee65-a3fa-4747-9806-425aabb199f1?id=86189
+:label: grasple_exercise_2_1_B 
+:dropdown:
+:description:  To perform row operations on a matrix.
 
+::::
 
 ::::{prf:example} 
 :label: Ex:LinSystems:RowReduction-1
@@ -1466,18 +1481,18 @@ Apart from the second step, where two rows were scaled, in each step one pivot w
 ::::{prf:remark} 
 :label: Rem:LinSystems:RowReduceEndpoint
 
-The last matrix can really be seen as a natural end point of the reduction process: 
+The last matrix can really be seen as a natural end point of the reduction process. 
 
 <ul>
 <li>
 
-the pivots are all 1,  the simplest non-zero number
+The pivots are all 1,  the simplest non-zero number.
 
 
 </li>
 <li>
 
-if we try to create more zeros, we can only do so in the fourth column. But then we we will lose one or more of the zeros in the first three columns. 
+If we try to create more zeros, we can only do so in the fourth column. But then we we will lose one or more of the zeros in the first three columns. 
 
 
 </li>
@@ -1579,14 +1594,14 @@ the first and the third are echelon matrices, and only the third is a  reduced e
 
 
 
-::::{exercise} 
-:label: Exc:LinSystems:CheckNotReducedEchelon
-
-
-
-Explain why.
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/ec78c509-6e28-441b-bace-9d2b24f14d63?id=70366
+:label: grasple_exercise_2_1_C
+:dropdown:
+:description:   Checking whether a matrix is in (reduced) echelon form.
 
 ::::
+
 
 The big advantage of reduced echelon matrices, already hinted at in {prf:ref}`Rem:LinSystems:SolutionFromRREF`,  is the following:
 
@@ -1647,8 +1662,8 @@ and we add:  '$x_3$  and $x_5$ are free'.
 
 
 
-The row reduction of the augmented matrix to  echelon form corresponds to the forward substitution as in {prf:ref}`Ex:LinSystems:SolWithBacksubst1` and  {prf:ref}`Ex:LinSystems:SolWithBacksubst2`.  There we found the solution by back-substitution.  When the augmented matrix is reduced to  reduced echelon form
-we have in fact incorporated this back-substitution part and can write down the general solution directly.
+The row reduction of the augmented matrix to  echelon form corresponds to the forward substitution as in {prf:ref}`Ex:LinSystems:SolWithBacksubst1` and  {prf:ref}`Ex:LinSystems:SolWithBacksubst2`.  There we found the solution by back-substitution.  When the augmented matrix is reduced to reduced echelon form
+we have in fact incorporated this back-substitution part and can write down the general solution directly.  We think that to solve a system 'with pen and paper', working with the reduced echelon matrix is less error prone. This holds in particular for a system where the solution contains one or more free variables.  
 
 
 
@@ -1875,7 +1890,7 @@ $$
 $$
     \sim
 \left[\begin{array}{rrr}1 & 0 & 0 & 2\\0 & 1 & 0 & 3\\0 & 0 & 1 & -1
-\end{array}\right], \text{  the same outcome as before.} \rule{5em}{0ex}
+\end{array}\right],  \rule{19em}{0ex}
 $$
 
  the same outcome as before.
@@ -1920,6 +1935,24 @@ The word 'elimination'  refers to the fact that the zeros that are created in th
 
 ::::
 
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/c242961e-d472-49b4-88e0-80cac8c617f9?id=87134
+:label: grasple_exercise_2_1_E
+:dropdown:
+:description:   Applying the algorithm to compute a solution of a linear system.
+
+::::
+
+
+
+::::{prf:remark} Row reduced echelon matrix versus back substitution
+:label: Rem:LinSystems:RowRedVersusBackSubstitution
+
+We started this section by solving a linear system by reducing it to an equivalent system in echelon form, and then use back-substitution.  This is still a viable option.  The advantage of the method described in {prf:ref}`Alg:LinSystems:ElimMethod` is that it avoids the clutter back substitution may lead to in the case of free variables. 
+
+::::
+
+
 The following important general statement about the solution set of linear systems has already been lurking in the background all the time.
 
 
@@ -1937,8 +1970,7 @@ A system of linear equations has either zero, or one, or infinitely many solutio
 
 
 
-This just depends on the outcome of the elimination method  
-(i.e. {prf:ref}`Alg:LinSystems:ElimMethod`).
+This just depends on the outcome of the elimination method (i.e. {prf:ref}`Alg:LinSystems:ElimMethod`).
 If iii. occurs, the number of solutions is zero;  if iv. occurs and there are no free variables, there is just one solution, and if there is at least one free variable, the solution set automatically contains infinitely many solutions.
 
 ::::
@@ -2023,18 +2055,25 @@ Then the first system has a unique solution, the second system has infinitely ma
 ::::
 
 
-::::{exercise} 
-:label: Exc:LinSystems:Check(In)Consistency
 
-
-
-Explain why.
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/fdf71712-2d0a-4bf2-bfb5-cdcac02f55df?id=70143
+:label: grasple_exercise_2_1_F
+:dropdown:
+:description:   Conclusions about the solutions from the structure of the echelon form.
 
 ::::
 
+%::::{exercise} 
+%:label: Exc:LinSystems:Check(In)Consistency
+%
+%Explain why.
+%
+%::::
+
 
 ::::{prf:proposition} 
-:label: Prop:LinSystems:UniqueSolutionImpliesSquareMatrix
+:label: Prop:LinSystems:UniqueSolutionImpliesSize
 
 
 
@@ -2086,11 +2125,11 @@ can be seen as  a plane in $\mathbb{R}^3$.  The previous proposition tells us:  
 
 ## Grasple Exercises
 
-The first **16** exercises are quite starightfordwardly computational.
-The remaining exercises tend to be more theoretic.
+The first exercises are quite straightfordwardly computational.
+The remaining exercises tend to be a bit more theoretic.
 
 ::::{grasple} 
-:url: https://embed.grasple.com/exercises/8dee65d-a165-4534-89ee-76967d660c9c?id=69544
+:url: https://embed.grasple.com/exercises/c8dee65d-a165-4534-89ee-76967d660c9c?id=69544
 :label: grasple_exercise_2_1_1 
 :dropdown:
 :description: Solving a linear system of 2 equations in 2 unknowns.
@@ -2131,7 +2170,7 @@ The remaining exercises tend to be more theoretic.
 :url: https://embed.grasple.com/exercises/0d23f4f3-5798-4a7a-b40e-f163f7e2b37f?id=82667
 :label: grasple_exercise_2_1_4 
 :dropdown:
-:description:  Decent $3 \times 3$  linear system.
+:description:  To solve a $3 \times 3$  linear system.
 
 ::::
 
@@ -2141,7 +2180,7 @@ The remaining exercises tend to be more theoretic.
 :url: https://embed.grasple.com/exercises/99536b94-713b-4bae-874c-62958af0f5fe?id=80875
 :label: grasple_exercise_2_1_5 
 :dropdown:
-:description: Decent $3 \times 4$  linear system.
+:description: To solve a  $3 \times 4$  linear system.
 
 ::::
 
@@ -2151,7 +2190,7 @@ The remaining exercises tend to be more theoretic.
 :url: https://embed.grasple.com/exercises/ff8bfe99-7a87-4711-b589-7ba70a857a39?id=80876
 :label: grasple_exercise_2_1_6 
 :dropdown:
-:description:  Two $3\times 3$ systems with the same coefficient matrix
+:description:  Two $3\times 3$ systems with the same coefficient matrix.
 
 ::::
 
@@ -2159,7 +2198,7 @@ The remaining exercises tend to be more theoretic.
 :url: https://embed.grasple.com/exercises/e1ffae46-da26-42b6-98ad-957478b6d58c?id=76653
 :label: grasple_exercise_2_1_7 
 :dropdown:
-:description:  
+:description:  To write down the augmented matrix of a linear system.
 
 ::::
 
@@ -2183,7 +2222,7 @@ The remaining exercises tend to be more theoretic.
 
 
 ::::{grasple} 
-:url: https://embed.grasple.com/exercises/cc6ad-095e-4704-9445-8fcb4e9c4b8e?id=69587
+:url: https://embed.grasple.com/exercises/447cc6ad-095e-4704-9445-8fcb4e9c4b8e?id=69587
 :label: grasple_exercise_2_1_10
 :dropdown:
 :description: To recognize row operations  
@@ -2244,6 +2283,15 @@ The remaining exercises tend to be more theoretic.
 
 ::::
 
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/8d249aed-fa38-4a70-8271-8be07187dd06?id=69541
+:label: grasple_exercise_2_1_17
+:dropdown:
+:description:  Solving a linear system using the augmented matrix
+
+::::
+
+
 
 The remaining exercises are a bit more theoretical
 
@@ -2303,8 +2351,6 @@ Four exercises about linear systems with a parameter.
 ::::
 
 
-
-
 ::::{grasple} 
 :url: https://embed.grasple.com/exercises/69589418-544a-46c7-9d36-517b3db92bd1?id=69747
 :label: grasple_exercise_2_1_T4D
@@ -2315,9 +2361,6 @@ Four exercises about linear systems with a parameter.
 
 
 Three exercises about linear systems and pivots.
-
-
-
 
 
 
@@ -2348,22 +2391,11 @@ Three exercises about linear systems and pivots.
 ::::
 
 
-
 ::::{grasple} 
-:url: https://embed.grasple.com/exercises/ec78c509-6e28-441b-bace-9d2b24f14d63?id=70366
-:label: grasple_exercise_2_1_T16 
-:dropdown:
-:description:   Checking whether a matrix is in (reduced) echelon form.
-
-::::
-
-
-
-::::{grasple} 
-:url: https://embed.grasple.com/exercises/ec78c509-6e28-441b-bace-9d2b24f14d63?id=70366
+:url: https://embed.grasple.com/exercises/d8ed4c96-da3f-4fb4-baa4-77c99cfdfeae?id=70370
 :label: grasple_exercise_2_1_T17 
 :dropdown:
-:description:   About the structures of reduced echelon forms
+:description:   How many 'different' echelon forms
 
 ::::
 
@@ -2375,10 +2407,18 @@ Three exercises about linear systems and pivots.
 
 ::::
 
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/63dd8fd-fdbd-4d59-b49e-1d52977a1a8e?id=87122
+:label: grasple_exercise_2_1_T19  
+:dropdown:
+:description:   Freedom of free variables?
+
+::::
+
 
 ::::{grasple} 
 :url: https://embed.grasple.com/exercises/dbeb91c3-4834-4204-9b0f-ca7bf4bd5ecd?id=71103
-:label: grasple_exercise_2_1_T19  
+:label: grasple_exercise_2_1_T20  
 :dropdown:
 :description:   To check whether matrices are (row) equivalent.
 

@@ -106,6 +106,13 @@ In this case it is a lot easier to decide whether $\mathbf{b}$ is a linear combi
 
 ::::
 
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/bd263ac1-b906-48dc-a898-d959254d9681?id=70163
+:label: grasple_exercise_2_2_B
+:dropdown:
+:description: Expressing a vector as a linear combination of other vectors
+
+::::
 
 
 
@@ -225,7 +232,7 @@ There is also a possibility where the span of three non-zero vectors in $\mathbb
 
 ::::{grasple} 
 :url: https://embed.grasple.com/exercises/676d672c-74fc-4545-99ba-6b308af566ce?id=78542
-:label: grasple_exercise_2_2_B
+:label: grasple_exercise_2_2_C
 :dropdown:
 :description: Interpretation of Span$\{\vect{v}_1,\vect{v_2},\vect{v}_3\}$.
 
@@ -375,7 +382,7 @@ In {prf:ref}`Prop:LinearCombinations:SpanStandardBasis` we saw that the span of 
 :url: https://embed.grasple.com/exercises/2167085c-2498-4694-9eac-abfeeb0ec307?id=70162
 :label: grasple_exercise_2_2_6
 :dropdown:
-:description: About the interpratation of  Span$\{\vect{a}_1,\vect{a}_2\}$. 
+:description: About the interpretation of  Span$\{\vect{a}_1,\vect{a}_2\}$. 
 
 ::::
 

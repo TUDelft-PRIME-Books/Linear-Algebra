@@ -435,7 +435,7 @@ $$
 
 For a lower triangular matrix  $L$  a similar argument can be given.
 
-(Or we can consider  $L^T$, which is an upper triangular matrix.)
+(Or we can consider  $L^T$, which is an upper triangular matrix. And make use of the next proposition that is coming.)
 
 ::::::
 

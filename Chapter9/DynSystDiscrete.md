@@ -81,7 +81,7 @@ We will study this model more closely in {prf:ref}`Ex:DynSystDiscrete:Population
 ::::{prf:example}
 :label: ExDynSystDiscrete:PageRank
 
-A 'real' example is given by the PageRank algorithm to rank pages on the internet (and which made Google great). The whole internet is modeled as a graph, a set of 'nodes' (= sites) connected by  'edges' (= links).  The basice idea is to start from an arbitrary initial situation of a large amount of 'visitors' on the sites and simulate  random walks for each visitor where at each step each visitor chooses an arbitrary site that is connected to his present site.  By running many cycles,  modeled by   products
+A 'real' example is given by the PageRank algorithm to rank pages on the internet (and which made Google great). The whole internet is modeled as a graph, a set of 'nodes' (= sites) connected by  'edges' (= links).  The basic idea is to start from an arbitrary initial situation with a large amount of 'visitors' on the sites and simulate  random walks for each visitor where at each step each visitor chooses an arbitrary site that is connected to his present site.  Next  many cycles are run/simulated,  modeled by products
 
 $$
    \vect{x}_{k+1} = M\vect{x}_k
@@ -138,7 +138,7 @@ In the case of asymptotic stability we will call the origin an **attractor**, in
 This definition of stable and unstable suffices for the dynamical systems we will consider here,
 which are in fact *linear* dynamical systems.  Note that according to this definition  asymtotic stability implies stability.
     
-If the initial state is $\vect{s} = \vect{0}$,  all vectors  $\vect{x}_k$ will be $\vect{0}$, so the system is at rest/in equilibrium. For this reason the origin is sometimes called a *stationary point* or *equilibrium points*.  Asymptotic stability means that when  due to some 'distortion' the system gets away from this equilibrium point, it will eventually return to it.
+If the initial state is $\vect{s} = \vect{0}$,  all vectors  $\vect{x}_k$ will be $\vect{0}$, so the system is at rest/in equilibrium. For this reason the origin is sometimes called a *stationary point* or *equilibrium point*.  Asymptotic stability means that when  due to some 'distortion' the system gets away from this equilibrium point, it will eventually return to it.
 
 ::::
 
@@ -302,7 +302,7 @@ $$
   |\lambda_j|^k \norm{\vect{v}_j}  \longrightarrow \infty,
 $$
 
-if  $k \to \infty$.
+if  $k \to \infty$.  This means that the system is *unstable*.
 
 If the largest eigenvalue has absolute value 1,  then we can again resort to 
 Equation {eq}`Eq:DynSystDiscrete:GenSolDiagble` to conclude that all sequences will remain bounded.  Furthermore, starting from an eigenvector $\mathbf{v}$ for an eigenvalue of absolute value 1 it is seen that the process will not converge to the zero vector.
@@ -402,7 +402,7 @@ The evolvement in time of the population model
 :::
 
 
-What is not so clear in the picture is that for large $k$ the state vectors $\vect{x}_k$ are approximately eigenvectors for the matrix $M$. However, numerical values shed light onto this phenomenon.  For instance, the last two 'states' are given by  
+What is not so clear in the picture is that for large $k$ the state vectors $\vect{x}_k$ are approximately eigenvectors for the matrix $M$. However, numerical values shed light on this phenomenon.  For instance, the last two 'states' are given by  
 
 $$
   \vect{x}_{69}  \approx 681 \left[\begin{array}{c}  0.627 \\0.195\\0.122\\0.057 \end{array}\right], \quad 
@@ -411,12 +411,14 @@ $$
 
 The numbers in the vectors are the *fractions* of the total population per age group.
 
-Now up to four decimals
+It holds that the last vector
 
 $$
-   \vect{v}_{1} = \left[\begin{array}{c} 0.6259 \\ 0.1954 \\ 0.1220 \\0.0567 \end{array}\right]
-$$   
+    \left[\begin{array}{c}  0.626 \\0.195\\0.122\\0.057 \end{array}\right] \approx
+    \vect{v}_{1} = \left[\begin{array}{c} 0.6259 \\ 0.1954 \\ 0.1220 \\0.0567 \end{array}\right], 
+$$
 
+where up to four decimals $\vect{v}_1$ 
 is an eigenvector of $M$ for its largest eigenvalue $\lambda_1 = 0.9606$.
 
 Moreover, we observe that the decrease in the total population from $k = 69$ to $k = 70$ is given by
@@ -471,11 +473,11 @@ Starting from any vector  $\vect{x}_0 = \left[\begin{array}{cc} x_0 \\ y_0 \end{
   \left[\begin{array}{cc} x_0 \\ y_0 \end{array}\right]  \, \longrightarrow \,
   \left[\begin{array}{cc} 1.2x_0 \\ 0.8y_0 \end{array}\right]  \, \longrightarrow \,
   \left[\begin{array}{cc} (1.2)^2x_0 \\ (0.8)^2y_0 \end{array}\right]  \, \longrightarrow \,
-  \left[\begin{array}{cc} (1.2)^3x_0 \\ (0.8)^3y_0 \end{array}\right]  \, \ldots 
+  \left[\begin{array}{cc} (1.2)^3x_0 \\ (0.8)^3y_0 \end{array}\right]  \,\,\, \ldots 
 :::
 
 In each step the $x$-coordinate gets a factor $1.2$  and the $y$-coordinate is reduced by a factor $0.8$. <BR>
-In  {numref}`Fig:DynSystDiscrete:SimplestSystem` the paths are shown for the starting points $(0, \pm 8)$, $(\pm 1,\pm 8)$,  $(\pm 2,\pm 8)$, and $(\pm 1,0)$.  The paths, consisting of isolated points, are denoted by asterisks. The  line segments are only drawn to make clear how the dynamical system moves from one point to the next.
+In  {numref}`Fig:DynSystDiscrete:SimplestSystem` the paths are shown for the starting points $(0, \pm 8)$, $(\pm 1,\pm 8)$,  $(\pm 2,\pm 8)$, and $(\pm 1,0)$.  The paths, consisting of isolated points, are denoted by dots. The  line segments are only drawn to make clear how the dynamical system moves from one point to the next.
 
 
 :::{figure} Images/Fig-DynSystDiscrete-SimplestSystem.svg
@@ -548,11 +550,11 @@ $$
   \vect{x}_k = 0.9^k\left(c_1 \vect{v}_1 +  \left(\dfrac{0.6}{0.9}\right)^kc_2\vect{v}_2\right).
 $$
 
-For large values of $k$ the second term becomes negligible compared to the first, so ultimately the points  $\mathbf{x}_k$  will move towards the origin in the direction of the eigenvector $\vect{v}_1$, the eigenvector corresponding to the largest eigenvalue.  Which can be cleary observed in {numref}`Fig:DynSystDiscrete:NiceNode`.
+For large values of $k$ the second term within the parentheses becomes negligible compared to the first, so ultimately the points  $\mathbf{x}_k$  will move towards the origin in the direction of the eigenvector $\vect{v}_1$, the eigenvector corresponding to the largest eigenvalue.  Which can be clearly observed in {numref}`Fig:DynSystDiscrete:NiceNode`.
 
 ::::
 
-In the next example the matrix  $A$ has complex eigenvalues.
+In the third example the matrix  $A$ has complex eigenvalues.
 
 
 

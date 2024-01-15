@@ -204,6 +204,14 @@ so are the vectors $\vect{b}_1, \ldots, \vect{b}_j, \vect{b}_{j+1}$.
 ::::
 
 
+::::{grasple}
+:url: https://embed.grasple.com/exercises/bb336bca-f300-48ba-8744-e38ad3a7bcd0?id=87814
+:label: grasple_exercise_7_3_A
+:dropdown:
+:description: Gram-Schmidt D.I.Y.
+
+::::
+
 
 The following example shows what happens if the Gram-Schmidt construction also works for
 a subspace $W = \text{span}\{\vect{a}_1, \ldots, \vect{a}_m\}$  where the vectors  $\vect{a}_i$ are not linearly independent.
@@ -316,6 +324,16 @@ $$
 $$
 
 ::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/40c42331-9c9f-45ca-b498-83a8ba884a57?id=87816
+:label: grasple_exercise_7_3_B
+:dropdown:
+:description: Finding an orthonormal basis
+
+::::
+
 
 (Sec:Gram-Schmidt:QRdecomp)=
 ## The QR decomposition
@@ -543,3 +561,192 @@ $QQ^TA = A$.
 Warning:  the columns of $Q$ being orthonormal is equivalent to  $Q^TQ = I$.  However, in the case where $Q$ is not a square matrix, this does  not  imply that  $QQ^T = I$.
 
 ::::
+
+
+## Grasple Exercises
+
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/b07d879b-8d64-401d-9175-c346d4cbab9e?id=87823
+:label: grasple_exercise_7_3_1 
+:dropdown:
+:description: Performing one step in the Gram-Schmidt process.
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/6fd2eb99-c2be-4bc2-887b-1c0bfccbdcf9?id=87837
+:label: grasple_exercise_7_3_2
+:dropdown:
+:description: Applying the Gram-Schmidt process for two vectors in $\R^3$.
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/15070d4c-f241-423d-a0af-3f1b4b57a397?id=87828
+:label: grasple_exercise_7_3_3 
+:dropdown:
+:description: Applying Gram-Schmidt for two vectors in $\R^4$.
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/eb46b234-d281-4d02-a92c-d0c4575ffe9c?id=87825
+:label: grasple_exercise_7_3_4 
+:dropdown:
+:description: Applying the Gram-Schmidt process for three vectors in $\R^4$.
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/63090a52-ba10-4881-b9c2-35ae64e79ffd?id=87827
+:label: grasple_exercise_7_3_5 
+:dropdown:
+:description: Orthogonal basis for span$\{\mathbf{a}_1, \mathbf{a}_2,\mathbf{a}_3\}$ in $\R^3$.
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/81e5b0f8-9d1a-4ff7-973f-e8b8cb84d42f?id=87838
+:label: grasple_exercise_7_3_6
+:dropdown:
+:description: Finding an orthonormal basis for span$\{\mathbf{a}_1, \mathbf{a}_2\}$ in $\R^3$.
+
+::::
+
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/6d39de25-aeaa-4ed0-8abd-7e98f4a0ef15?id=87705
+:label: grasple_exercise_7_3_7 
+:dropdown:
+:description: Applying Gram-Schmidt for three vectors in $\R^4$.
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/11b3cc56-0c2d-4ea8-b5ef-e5f26d58f362?id=87741
+:label: grasple_exercise_7_3_8 
+:dropdown:
+:description: Applying Gram-Schmidt for three vectors in $\R^5$.
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/319f882b-8498-492b-a97c-c1ce346a66f8?id=57189
+:label: grasple_exercise_7_3_9 
+:dropdown:
+:description: Finding the QR-decomposition of a $2\times2$ matrix.
+
+::::
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/98d48efb-0be6-4dee-a905-55dff061ce17?id=90209
+:label: grasple_exercise_7_3_10 
+:dropdown:
+:description: Finding the QR-decomposition of a $3\times2$ matrix.
+
+::::
+
+
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/d4466fcf-11be-4578-ac9e-3a570710a154?id=87629
+:label: grasple_exercise_7_3_11 
+:dropdown:
+:description: Finding the QR-decomposition of a $3\times3$ matrix.
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/b7be453d-4fd1-4c41-a3be-72e909ed0220?id=87646
+:label: grasple_exercise_7_3_12 
+:dropdown:
+:description: Finding the QR-decomposition of a $3\times3$ matrix. 
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/2f957bf7-b1f1-424f-ad39-57af14cd1d86?id=87820
+:label: grasple_exercise_7_3_13
+:dropdown:
+:description:   Finding the QR-decomposition of a $4\times3$ matrix. 
+
+::::
+
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/fb9adc06-f068-4c5b-96ac-575415620c82?id=87821
+:label: grasple_exercise_7_3_14 
+:dropdown:
+:description: T/F question about properties of Gram Schmidt process
+
+::::
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/8a85a120-ef0c-41ec-9f60-ca492a35865a?id=87822
+:label: grasple_exercise_7_3_15 
+:dropdown:
+:description: From orthogonal to orthonormal
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/c02e84cd-aa51-4d2a-8585-0cd56fa08ec6?id=87824  
+:label: grasple_exercise_7_3_16 
+:dropdown:
+:description:  What about GS for a linearly dependent set?
+
+::::
+
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/
+:label: grasple_exercise_7_3_17 
+:dropdown:
+:description: GS for set of linearly dependent set of vectors
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/12bda5c2-8ec2-44b2-b5c6-ec2cc4bb71d0?id=87841
+:label: grasple_exercise_7_3_18
+:dropdown:
+:description: To build an orthogogonal basis for column space of a matrix. 
+
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/a8741f26-64c7-4245-839a-8c5131bea496?id=87742
+:label: grasple_exercise_7_3_19 
+:dropdown:
+:description: Ponderings about the QR-decomposition (of a $4 \times 2$ matrix $A$)
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/24a2c96f-0618-4a90-8229-ce04b1dd4640?id=87747 
+:label: grasple_exercise_7_3_20
+:dropdown:
+:description: How many QR-decompositions are there for an $m \times n$ matrix?
+
+::::
+
+

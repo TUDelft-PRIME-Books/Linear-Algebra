@@ -229,6 +229,15 @@ is indeed a basis for $\R^4$.
 
 ::::::
 
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/7ecdf0d8-e529-4589-82f6-7207f229cd87?id=88187
+:label: grasple_exercise_4_2_A
+:dropdown:
+:description:  To check whether a set of three vectors forms a basis for $\R^3$.
+
+
+::::::
+
 
 
 Because of {prf:ref}`Thm:Subspaces:AllSubspacesRn`, which states that any subspace $S$ of $\R^n$ is of the form
@@ -337,7 +346,7 @@ As long as the span of the vectors is not the whole subspace we can add a linear
 
 
 ::::::{prf:example}
-:label: Ex:TwoByFour
+:label: Ex:BasisDim:TwoByFour
 
 
 
@@ -481,13 +490,18 @@ The  basis $\lbrace\vect{a}_1,\vect{a}_3\rbrace$ of $\Col{A}$.
 ::::::
 
 
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/6c836722-f664-434d-bf7d-3a4f86ff0187?id=88188
+:label: grasple_exercise_4_2_B
+:dropdown:
+:description:  To find a basis for span$\{\vect{b}_1, \ldots, \vect{b}_5\}$ by thinning.
+
+::::::
 
 
 
 
-
-
-The above example lends itself to a few more observations that lead to an efficient way to find bases for the column space and the null space of any matrix.
+The above example ({prf:ref}`Ex:BasisDim:TwoByFour`) lends itself to a few more observations that lead to a more efficient way to find bases for the column space and the null space of any matrix.
 
 
 
@@ -694,7 +708,7 @@ $$
 This settles statement (ii).
 
 We continue, to prove (i) as well.
-We have just shown that the linear relations of the columns of $A$ are exactly the same as the linear relations of the columns of its equivalent reduced echelon form.  In a reduced echelon matrix it is clear that the pivots columns give a maximal independent set of columns, i.e., a maximal set of columns for which there are no non-trivial linear relations.  The same can then be said about the corresponding columns of $A$.
+We have just shown that the linear relations of the columns of $A$ are exactly the same as the linear relations of the columns of its equivalent reduced echelon form.  In a reduced echelon matrix it is clear that the pivot columns give a maximal independent set of columns, i.e., a maximal set of columns for which there are no non-trivial linear relations.  The same can then be said about the corresponding columns of $A$.
 
 ::::::
 
@@ -1002,7 +1016,7 @@ $$
 
 So  $\ell > k$ leads to a contradiction.
 
-Reversing the two sets we  also see that  $k > \ell$ is impossible, and we can conclude that we must have
+Reversing the two sets we see that  $k > \ell$ is also impossible, and we can conclude that we must have
 
 $$
 
@@ -1321,7 +1335,7 @@ From the {prf:ref}`Prop:BasisDim:TwoOfThreeSuffice` it follows that  *any* set o
 
 Any set $S$ of $n$ independent vectors in $\R^n$ spans $\R^n$.
 
-Namely we know that $\R^n$ has dimension $n$, so such a set$S$ satisfies (i) and (iii).
+Namely we know that $\R^n$ has dimension $n$, so such a set $S$ satisfies (i) and (iii).
 
 Of course this statement can also be proved by an argument involving pivots.
 
@@ -1337,11 +1351,11 @@ $$
 does say something about the linear relations between the columns of $A$.
 
 $$
-[ \vect{a}_1  \vect{a}_2  \ldots  \vect{a}_n ]\vect{x} = \vect{0} \quad \iff \quad
+[ \,\vect{a}_1 \,\, \vect{a}_2 \,\, \ldots \,\, \vect{a}_n\, ]\vect{x} = \vect{0} \quad \iff \quad
 x_1\vect{a}_1+ x_2\vect{a}_2+  \ldots +x_n\vect{a}_n = \vect{0}.
 $$
 
-The more linear relations there are, i.e., the larger $\Nul{A}$ is, but
+The more linear relations there are, i.e., the larger $\Nul{A}$ is, 
 the smaller will be $\Span{\vect{a}_1,  \vect{a}_2,  \ldots,  \vect{a}_n}$, i.e. $\Col{A}$.
 
 
@@ -1472,7 +1486,7 @@ thus $\Row{A}$ is a subspace of $\R^4$  of dimension 2.
 ::::::
 
 
-This is the same matrix $A$ as in {prf:ref}`Ex:TwoByFour`, where we found that the column space is the whole $\R^2$, which gives a first instance of the property
+This is the same matrix $A$ as in {prf:ref}`Ex:BasisDim:TwoByFour`, where we found that the column space is the whole $\R^2$, which gives a first instance of the property
 
 $$
 \text{dim } \Row{A} = \text{dim } \Col{A},
@@ -1863,5 +1877,268 @@ $$
 
 Does the conclusion also hold if  $A$ is an  $m\times n$ matrix and
 $B$ is an  $n\times m$ matrix?
+
+::::::
+
+
+## Grasple Exercises
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/9387d1c3-03b4-41ff-b7b6-bb0d0ee3c771?id=70632
+:label: grasple_exercise_4_2_1
+:dropdown:
+:description:  To check whether three vectors constitute a basis for $\R^3$.
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/7bf4ef59-9f95-4697-9309-f06078856988?id=70633
+:label: grasple_exercise_4_2_2
+:dropdown:
+:description:  To check whether three vectors constitute a basis for $\R^3$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/2ea2e118-a471-4688-9d89-87cd49cfddc2?id=70634
+:label: grasple_exercise_4_2_3
+:dropdown:
+:description:  To check whether a set of vectors forms a basis for $\R^3$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/1c00677f-eadb-4a13-84aa-5c7b07774f21?id=88189
+:label: grasple_exercise_4_2_4 
+:dropdown:
+:description:  To find a basis for span$\{\vect{b}_1, \ldots, \vect{b}_5\}$ by thinning.
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/ae1a690e-1e4d-40be-94d7-cf91121134f0?id=70649
+:label: grasple_exercise_4_2_5
+:dropdown:
+:description:  Finding bases for Col$(A)$ and Nul$(A)$.
+
+::::::
+
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/9440dca7-7d2d-4f74-8679-c966be28d73f?id=70638
+:label: grasple_exercise_4_2_6
+:dropdown:
+:description:  Finding bases for Col$(A)$ and Nul$(A)$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/3d5483ab-4a1f-4caf-b979-9a4518551416?id=70640
+:label: grasple_exercise_4_2_7
+:dropdown:
+:description:  Finding bases for Col$(A)$ and Nul$(A)$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/b85a9ef2-3b82-47d9-89f3-212a435b8be2?id=70642
+:label: grasple_exercise_4_2_8
+:dropdown:
+:description:  To find a basis for a subspace of $\R^4$
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/04d804ff-16ea-44ee-ac76-452a73a88859?id=70653
+:label: grasple_exercise_4_2_9
+:dropdown:
+:description:  To find a basis and the dimension of span$\{\vect{v}_1, ... , \vect{v}_4\}$  (in $\R^4$)
+
+::::::
+
+
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/89d912e-6ac2-4f48-b92b-11ab33d5c949?id=70655
+:label: grasple_exercise_4_2_10
+:dropdown:
+:description:  To find rank$(A)$ and dim Nul$(A)$ for a given matrix.
+
+::::::
+
+
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/610e51bc-c62f-4da2-81f3-eeef106bba84?id=83409
+:label: grasple_exercise_4_2_11
+:dropdown:
+:description:  Find rank$(A)$ for a matrix $A$ containing a parameter $h$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/98aae0f1-3cd9-43d8-aa9f-7c884f2c9527?id=83411
+:label: grasple_exercise_4_2_12
+:dropdown:
+:description:  Find rank$(A)$ for a matrix $A$ containing a parameter $h$.
+
+::::::
+
+
+The exercises below are more theoretical.
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/9dc4b61f-1ded-496c-82e1-8413bc0fa5e7?id=70644
+:label: grasple_exercise_4_2_13
+:dropdown:
+:description:  Can a subspace in $\R^3$ have a basis consisting of four vectors?
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/dc1ffd49-1c32-407a-9042-f386b85c771d?id=70645
+:label: grasple_exercise_4_2_14
+:dropdown:
+:description:  Can a basis contain the zero vector?
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/3576e4c9-2084-4e3f-af61-08f09d63ad82?id=70646
+:label: grasple_exercise_4_2_15
+:dropdown:
+:description:  Which of four statements about Col$(A)$ is correct?
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/37a433f6-b15f-4b8a-8232-4098fe82e6c9?id=70647
+:label: grasple_exercise_4_2_16
+:dropdown:
+:description:  Which of five statements about Col$(A)$ is incorrect?
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/2940572e-f3bf-40e9-bf01-c2244c6f9aa5?id=70648
+:label: grasple_exercise_4_2_17
+:dropdown:
+:description:  Which of four statements about Nul$(A)$ is incorrect?
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/2f4a3540-9454-4b49-ac4c-0aae22fd5b50?id=70657
+:label: grasple_exercise_4_2_18
+:dropdown:
+:description: To find the rank of a matrix with certain properties 
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/b07a06d8-ea95-4798-9ae7-7d4bdea040de?id=70658
+:label: grasple_exercise_4_2_19
+:dropdown:
+:description: To find the rank of a matrix with certain properties 
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/547dd05d-c9da-4e7a-8deb-e4e8715e0f02?id=70660
+:label: grasple_exercise_4_2_20
+:dropdown:
+:description:   To find the dimension of the null space of a matrix with certain properties 
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/e8051821-b278-4895-ad3e-bc40ba99e1dc?id=70659
+:label: grasple_exercise_4_2_21
+:dropdown:
+:description:   Does there exist a $3 \times 4$ matrix with dim Nul$(A) =$ dim Col$(A) = 2$?
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/edb07654-fb52-4049-af08-e6333fd2d96e?id=83377
+:label: grasple_exercise_4_2_22
+:dropdown:
+:description:   Which three columns of a $4 \times 5$ matrix can be taken as a basis for its column space?
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/af70726a-1610-4515-8f43-c11e109ca5cd?id=83396
+:label: grasple_exercise_4_2_23
+:dropdown:
+:description:   To give an example of a matrix $A$ with certain properties
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/3a957728-2365-4e80-820b-2d0f9dcf6ec3?id=83399
+:label: grasple_exercise_4_2_24
+:dropdown:
+:description:   To give an example of a matrix $A$ with certain properties
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/429fda86-ad72-402d-ab47-58ae103b36fc?id=83402
+:label: grasple_exercise_4_2_25
+:dropdown:
+:description:  Comparing the null spaces of two  ($4\times 4$) matrices. 
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/608b1140-590f-468c-b704-eb922aa7fca4?id=83407
+:label: grasple_exercise_4_2_26
+:dropdown:
+:description:  Comparing the null spaces of two  ($3\times 5$) matrices. 
+
+::::::
+
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/d88ce866-54b2-48aa-bfe2-26116c2c6c34?id=83404
+:label: grasple_exercise_4_2_27
+:dropdown:
+:description:  Comparing the spans of two  sets of vectors.
 
 ::::::

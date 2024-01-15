@@ -191,8 +191,8 @@ The steps involved are:
 :::{paren-list}
 :start: 1
 
-- take out a factor 5 from the first row, 
-- subtract the first row 3 times from the second row and 2 times from the third row  (or: add it $(-3)$  times and  $(-2)$ times respectively)  
+- take out a factor $5$ from the first row, 
+- subtract the first row $3$ times from the second row and $2$ times from the third row  (or: add it $(-3)$  times and  $(-2)$ times respectively)  
 - expand along the first column.  
 
 :::
@@ -334,7 +334,7 @@ $$
 \det{(E_iA)} = \det{E_i} \cdot \det{A}.
 $$
 
-Furthermore,  the determinant of an elementary matrix is nonzero. Namely, for a row scaling it is equal to $c$, for a row swap it is equal to $(-1)$, and for adding a multiple of a row to another row it is equal to 1.
+Furthermore,  the determinant of an elementary matrix is nonzero. Namely, for a row scaling it is equal to $c$, for a row swap it is equal to $(-1)$, and for adding a multiple of a row to another row it is equal to $1$.
 Hence,  if $m$  of the row operations are row scalings and $\ell$ of the row operations are row swaps, then
 
 $$

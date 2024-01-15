@@ -128,7 +128,7 @@ where  $\vect{u}^{\perp}$  is the vector that is perpendicular to $\vect{u}$, po
 :name: Fig:DetGeometric:AreaPargram
 
 
-The parallegram $OABC$ and the orthogonal vector $\vect{u}^{\perp}$
+The parallelogram $OACB$ and the orthogonal vector $\vect{u}^{\perp}$
 ::::
 
 
@@ -147,6 +147,7 @@ $$
   &=& \norm{\vect{u}} \norm{\vect{v}}\cos(\vartheta) \\
   &=& \pm \text{(base length)} \times \text{height} \\
   &=&   \pm \text{area of } OACB.
+\end{array}  
 $$
 
 After some rewriting
@@ -194,7 +195,7 @@ $$
 
 
 Apart from the area, the determinant also says something about the relative position of the two vectors $\vect{u}$ and $\vect{v}$.
-In fact, we can use the determinant to *define* the orientation of two vectors in the plane (and later:  of $n$ vectors in $\R^n$).
+In fact, we can use the determinant to *define* the orientation of two vectors in the plane (and, later, also of $n$ vectors in $\R^n$).
 
 
 
@@ -299,7 +300,7 @@ Three of the four properties are quickly settled.
 <ol type = "i">
 <li>
 
- Interchanging $\vect{u}$  and $\vect{v}$ does not alter the parallelogram.  However, it changes the orientation of the two vectors, and thus  signed area changes sign.
+ Interchanging $\vect{u}$  and $\vect{v}$ does not alter the parallelogram.  However, it changes the orientation of the two vectors, and thus the signed area changes sign.
 
 </li>
 </ol>
@@ -310,7 +311,7 @@ Three of the four properties are quickly settled.
 
 $\det{(\vect{u},k\vect{v})} = k\times\det{(\vect{u},\vect{v})}$, $k \in \R$.
 
-Giving one of the vectors a factor $k$ changes the area with a factor  $|k|$.  If $k > 0$, the orientation of the two vector does not change, so the determinant gets a factor $|k|$ which in this case is equal to $k$.  If however $k < 0$, then the orientation does change, so  the determinant gets a factor $-|k|$, which in this case is again equal to $k$.
+Giving one of the vectors a factor $k$ changes the area with a factor  $|k|$.  If $k > 0$, the orientation of the two vector does not change, so the determinant gets a factor $|k|$, which in this case is equal to $k$.  If however $k < 0$, then the orientation does change, so  the determinant gets a factor $-|k|$, which in this case is again equal to $k$.
 
 </li>
 <li>
@@ -491,17 +492,13 @@ $$
 a_1\left|\begin{array}{cc}  b_2 & c_2\\  b_3 & c_3 \end{array} \right|-
 a_2 \left|\begin{array}{cc}  b_1 & c_1 \\ b_3 & c_3 \end{array} \right|+
 a_3 \left|\begin{array}{cc}  b_1 & c_1 \\ b_2 & c_2\end{array} \right|.
-::::
+:::::
 
 The last expression can be further evaluated as
 
 $$
 
 a_1b_2c_3 - a_1b_3c_2 - a_2b_1c_3 +a_2b_3c_1 + a_3b_1c_2 - a_3b_2c_1.
-$$
-
-$$
-  \begin{array}
 $$
 
 ::::::
@@ -561,30 +558,21 @@ $|D|$,   the absolute value of the determinant,  is equal to the volume of the p
 </li>
 <li>
 
-:::{latextable}
+$D=0$ if and only if     the matrix  $A$  is singular.
 
-\begin{tabular}{lcl} $D=0 $ & $\iff $&   the matrix  $A$  is singular  \\
-& $\iff $&  the vectors  $\{\vect{a}, \vect{b},\vect{c}\}$   are linearly dependent.
-\end{tabular}
-:::
+Equivalently,
 
-Equivalently:
+$D\neq 0$  if and only if  the matrix  $A$  is invertible, thus if   
+the vectors  $\{\vect{a}, \vect{b},\vect{c}\}$   are linearly independent.
 
-:::{latextable}
-
-\begin{tabular}{lcl} $D\neq 0 $ & $\iff $&   the matrix  $A$  is invertible  \\
-& $\iff $&  the vectors  $\{\vect{a}, \vect{b},\vect{c}\}$   are linearly independent.
-\end{tabular}
-:::
 
 </li>
 <li>
 
-$D > 0 \quad \iff \quad  $ the ordered set   $(\vect{a},\vect{b},\vect{c})$  is positively oriented.
-
-That is,  oriented in the same way as the basis   $(\vect{e}_1,\vect{e}_2,\vect{e}_3)$.
+$D > 0$  if and only if the ordered set   $(\vect{a},\vect{b},\vect{c})$  is positively oriented.  That is,  oriented in the same way as the basis   $(\vect{e}_1,\vect{e}_2,\vect{e}_3)$.
 
 </li>
+
 <li>
 
 $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array} \right| = 1$.
