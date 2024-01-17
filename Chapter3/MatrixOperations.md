@@ -509,13 +509,13 @@ $$
 :url: https://embed.grasple.com/exercises/3e5f0674-1e9f-4349-867f-6b1d638e744b?id=82934
 :label: grasple_exercise_3_2_4 
 :dropdown:
-:description: To solve eqautions involving sum and transpose
+:description: To solve equations involving sum and transpose
 
 ::::::
 
 
 ::::::{grasple} 
-:url: https://embed.grasple.com/exercises/
+:url: https://embed.grasple.com/exercises/52a8c0e8-09e8-4c46-aa43-0cee2a93e7c4?id=82931
 :label: grasple_exercise_3_2_5 
 :dropdown:
 :description: True/False questions involving sum and transpose

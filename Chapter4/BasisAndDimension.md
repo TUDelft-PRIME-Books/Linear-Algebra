@@ -140,6 +140,7 @@ $S = \Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_r}$.
 ::::::
 
 
+
 ::::::{prf:definition}
 :label: Dfn:BasisDim:StandardBasis
 
@@ -163,8 +164,7 @@ where the vector $\vect{e}_j$ stands for the $j$-th column of the $n \times n$ i
 ::::::{prf:remark}
 
 
-
-This basis was already defined in {numref}`Sec:LinTrafo`, along with the standard matrix of a linear transformation.
+This basis was already defined in {numref}`Sec:LinTrafo`, Equation {eq}`Eq:LinTrafo:StandardBasis`, along with the standard matrix of a linear transformation.
 
 
 ::::::
@@ -250,7 +250,6 @@ $$
 a basis for a subspace always exists.
 
 If $S$ is not the trivial subspace $\lbrace\vect{0}\rbrace$ a basis is not unique.
-
 (For the trivial subspace the only basis is the empty set.)
 
 
@@ -1186,7 +1185,7 @@ The following proposition sometimes helps to show that a set of vectors is a bas
 ::::::{prf:proposition}
 :label: Prop:BasisDim:TwoOfThreeSuffice
 
-For a set of vectors  $ \lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace $  in a subspace $S$ of dimension $k$ each pair of the following three properties implies the remaining property.
+For a set of vectors  $ \lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace $  in a subspace $S$ *of dimension $k$* each pair of the following three properties implies the remaining property.
 
 <ol type = "i">
 
@@ -1233,7 +1232,7 @@ $$
 \text{(i)   and  (ii)} \quad \Longrightarrow \quad   \text{(iii)}.
 $$
 
-Well, if $\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace$ is linearly  independent and spans $S$, then it is a basis for $S$.  Since all bases of $S$ contain  dim$ S = k$  vectors, it follows that $\ell = k$.
+Well, if $\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace$ is linearly  independent and spans $S$, then it is a basis for $S$.  Since all bases of $S$ contain  dim $S = k$  vectors, it follows that $\ell = k$.
 
 Next, let us prove
 
@@ -1965,20 +1964,13 @@ $B$ is an  $n\times m$ matrix?
 
 ::::::
 
-
-
-
-
 ::::::{grasple} 
-:url: https://embed.grasple.com/exercises/89d912e-6ac2-4f48-b92b-11ab33d5c949?id=70655
+:url: https://embed.grasple.com/exercises/789d912e-6ac2-4f48-b92b-11ab33d5c949?id=70655
 :label: grasple_exercise_4_2_10
 :dropdown:
 :description:  To find rank$(A)$ and dim Nul$(A)$ for a given matrix.
 
 ::::::
-
-
-
 
 
 ::::::{grasple} 

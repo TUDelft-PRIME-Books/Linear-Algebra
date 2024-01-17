@@ -123,7 +123,7 @@ In fact, the latter does not satisfy **any** of the three properties of a subspa
 In the  picture on the right, for two vectors $\vect{u}$ and $\vect{v}$ on the line $\mathcal L$,
 
 $$
-\vect{u}+\vect{v} \text{  and  }  -\tfrac32\vect{u} \text{    do not lie on  }{\mathcal L}
+\vect{u}+\vect{v} \text{ \,   and \,  }  -\tfrac32\vect{u} \text{ \,    do not lie on  \,}{\mathcal L}
 $$
 
 
@@ -514,13 +514,13 @@ the span of a set of vectors in $\R^m$ is indeed a subspace of $\R^m$.
 
 To show that the null space is a subspace, we check the  requirements  of the definition.
 
-First, 
+First, for $\mathbf{v} = 0$,
 
 $$
-  A\vect{0} =\vect{0},
+  A\vect{v} =  A\vect{0} = \vect{0},
 $$  
 
-so $\vect{0}$ is contained in the null space.
+so $\vect{v} = \vect{0}$  is contained in the null space.
 
 Second,  to show that  $\Nul{A}$ is closed under sums, suppose that
 $\vect{u}$ and   $\vect{v}$  are two vectors in $\Nul{A}$. Then from
@@ -676,8 +676,8 @@ $$
 ::::::
 
 
-::::::{grasple} 
-:url: https://embed.grasple.com/9470136c-b9ce-4664-937c-fad9da7963cb?id=70622
+::::::{grasple}            
+:url: https://embed.grasple.com/exercises/9470136c-b9ce-4664-937c-fad9da7963cb?id=70622
 :label: grasple_exercise_4_1_4
 :dropdown:
 :description: To decide whether a vector $\vect{p}$ is in Col$(A)$.

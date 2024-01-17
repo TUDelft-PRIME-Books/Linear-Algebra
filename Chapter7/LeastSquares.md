@@ -256,7 +256,7 @@ For each linear system $A\vect{x} = \vect{b}$, where $A$ is an $m \times n$ matr
 ::::{prf:proof}
 In {prf:ref}`Rem:LeastSquares:BestLinComb` it was noted that a least squares solution corresponds to the vector in Col $A$  that is closest to $\vect{b}$.   
 
-The vector in Col $A$  that is closest to $\vect{b}$  is precisely the orthogonal projection of $\vect{x}$ onto Col $A$.  (See {numref}`Sec:Orthogonality` (Orthogonality), {prf:ref}`Prop:Orthogonality:BestApprox`.)
+The vector in Col $A$  that is closest to $\vect{b}$  is precisely the orthogonal projection of $\vect{x}$ onto Col $A$.  (See {numref}`Sec:OrthoComp`), {prf:ref}`Prop:Orthogonality:BestApprox`.)
 
 This projection, a linear combination of the colums of $A$, always exists.
 
@@ -267,11 +267,12 @@ Lastly, these coefficients are unique if and only if the columns of $A$ are line
 ::::
 
 
+
 ::::{margin}
 
-:::{admonition} {prf:ref}`Dfn:Orthogonality:OrthoProjection`. 
+:::{admonition} {eq}`Eq:OrthoBase:OrthoProj`. 
 
-Let $V$ be a subspace of $\R{n}$ and let $\vect{v}_{1},...,\vect{v}_{k}$ be an orthogonal basis for $V$. For any $\vect{w}$ in $\R^{n}$, we define the *orthogonal projection* of $\vect{w}$ on $V$ as
+Let $V$ be a subspace of $\R{n}$ and let $\vect{v}_{1},...,\vect{v}_{k}$ be an orthogonal basis for $V$. For any $\vect{w}$ in $\R^{n}$,  the *orthogonal projection* of $\vect{w}$ on $V$ is given by
 
 $$\proj_{V}(w)=\frac{\vect{w}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{w}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}_{k}.$$
 
@@ -1248,15 +1249,15 @@ $$
 ::::
 
 ::::{prf:example}
-  Suppose we have $n$ data points  $(x_i,y_i)$, $i = 1,\ldots,n$, and we expect a relation $ y = ax^r$ between them.  REFER TO PHYSICS
+  Suppose we have $n$ data points  $(x_i,y_i)$, $i = 1,\ldots,n$, and taking physical conditions into account, we expect a relation of the form $ y = ax^r$ between them. 
 
-  One way to go about to find suitable parameters $a$ and $b$ is to transform both $x$ and $y$ to log-scale by introducing the new variable 
+  One way to go about to find suitable parameters $a$ and $r$ is to transform both $x$ and $y$ to log-scale by introducing the new variable 
   
   $$
      z = \log(y) = \ln(y).
   $$
 
-The relations between  $x$ and $z$  then transforms to
+The relation between  $x$ and $y$  then transforms to
 
   $$
    z = \ln(y) = \ln(a) + r \ln(x).   
@@ -1277,7 +1278,7 @@ $$
 If we have found the least squares parameters $\hat{\alpha}$ and $\hat{\beta}$ for the transformed problem, at the end we have to  'transform back' to find the 'best power fit'.
 
 $$
-  ln(y) = \hat{\alpha} + \hat{\beta}\ln(x) 
+  \ln(y) = \hat{\alpha} + \hat{\beta}\ln(x) 
    \quad \Longrightarrow \quad y = ax^b, \,\,  a = e^{\hat{\alpha}},\,\,r = \hat{\beta}.
 $$
 

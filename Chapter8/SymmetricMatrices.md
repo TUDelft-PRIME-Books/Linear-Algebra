@@ -755,9 +755,10 @@ A_2 = Q_2^TQ_1^T A Q_1Q_2 =
         0 &-3 & 0 & 0 \\ 
         0 & 0 & 3 & 0 \\ 
         0 & 0 & 0 & 3
-     \end{array}   \right] = D!
+     \end{array}   \right] = D,
 :::
 
+indeed a *diagonal* matrix. <BR>
 For this example  the matrix has the second double eigenvalue $\lambda_{3,4} = 3$.  Because of that, the construction takes one step less than in the general case.  
 Defining  $Q = Q_1Q_2$, can conclude from {eq}`Eq:SymmetricMat:DefineA2` that 
 

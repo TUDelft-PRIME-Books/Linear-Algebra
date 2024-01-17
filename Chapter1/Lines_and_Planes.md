@@ -1,9 +1,9 @@
-# Lines and Planes
+(Sec:LinesAndPlanes)=
+# Lines and Planes 
 
 Throughout this book we will regularly work with geometrical objects in $\mathbb{R}^n$ that are generalisations of lines and planes. In this section we will take a look at how lines and planes can be represented by various equations in $\mathbb{R}^2$ and $\mathbb{R}^3$. We will use these representations later on to obtain a better understanding of concepts like _subspaces_ and _solution sets_ of systems of equations.
 
-(Section:LinesAndPlanes:Plane)=
-
+(SubSec:LinesAndPlanes:Plane)=
 ## Lines in the plane $\mathbb{R}^2$
 
 We all know what a line looks like, but in mathematics we want to define everything in a precise way. Therefore, we will define lines in $\mathbb{R}^2$ as follows.

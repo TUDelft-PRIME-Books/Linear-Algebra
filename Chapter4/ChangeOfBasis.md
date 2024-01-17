@@ -147,6 +147,8 @@ $$
 and we are done.
 ::::
 
+
+
 In this subsection we will be interested mainly in the case where the subspace $S$ is the whole of $\R^n$.
 
 {prf:ref}`Prop:ChangeOfBasis:UniqueCoords` shows that the following definition makes sense.
@@ -220,6 +222,28 @@ $$
 
 The basis $\{\vect{b}_1,\vect{b}_2\}$ of {prf:ref}`Ex:ChangeOfBasis:BasicExampleR2`.
 ::::
+
+
+::::::{prf:remark}
+:label: Rem:ChangeOfBasis:ConventionBasis
+
+A note of warning.  Strictly speaking a basis is an *ordered*  set of vectors.  By the we mean that the set $\mathcal{B} = \{\vect{b}_1,\vect{b}_2\}$  and the set  $\mathcal{B}' = \{\vect{b}_2,\vect{b}_1\}$ are the same. However,
+as bases we should consider them as different. This becomes important when we work with coordinates. 
+<BR>
+$[\vect{v}]_{\mathcal{B}} = \begin{bmatrix}c_1\\c_2 \end{bmatrix}$ means  that $\vect{v} = c_1\vect{b}_1+c_2\vect{b}_2$, 
+<BR>
+whereas 
+$[\vect{v}]_{\mathcal{B}'} = \begin{bmatrix}c_1\\c_2 \end{bmatrix}$ should be interpreted $\vect{v} = c_1\vect{b}_2+c_2\vect{b}_1$. 
+<BR>
+To avoid ambiguities like this the way out is to use the notation
+
+$$
+  \mathcal{B} = \big(\vect{b}_1,\vect{b}_2, \ldots, \vect{b}_n\big), 
+$$
+
+when we talk about a basis.
+However, we won't, as is quite customary. In case of a basis we will always tacitly assume that the vectors are ordered as they are written down.
+::::::
 
 Recall that  the **standard basis** of $\R^n$ is given by
 
@@ -490,7 +514,7 @@ Now we take the coordinate vectors with respect to basis $\mc{C}$:
 
 (See {numref}`Exc:ChangeOfBasis:LinearityOfCoords`.)
 
-Noting that the term on the right-hand side of the equation is a linear combination of $m$-vectors, we can write this as
+Noting that the term on the right-hand side of Equation {eq}`Eq:ChangeOfBasis:LinearityCoords` is a linear combination of $m$-vectors, we can write this as
 
 $$
     \begin{array}{rcl}

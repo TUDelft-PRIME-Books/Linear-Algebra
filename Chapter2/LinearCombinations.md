@@ -153,6 +153,7 @@ The following examples will give us a bit of an idea what spans look like.
 
 
 ::::{prf:example} 
+:label: Ex:LinearCombinations:SpanOfOneVector
 
 What does the span of a single non-zero vector look like? A linear combination of a vector $\mathbf{v}$ is of the form $x\mathbf{v}$, where $x$ is some real number. Linear combinations of a single vector $\mathbf{v}$ are thus just multiples of that vector. This means that $\Span{\mathbf{v}}$ is simply the collection of all vectors on the line through the origin and with directional vector $\mathbf{v}$ as we can see in {numref}`Figure  %s <Fig:LinearCombinations:SpanOneVectors>`.
 
@@ -167,6 +168,7 @@ The span of a single non-zero vector.
 
 
 ::::{prf:example} 
+:label: Ex:LinearCombinations:SpanOfTwoVectors 
 
 Let $\mathbf{u}$ and $\mathbf{v}$ be two non-zero vectors in $\mathbb{R}^3$, as depicted in {numref}`Figure  %s <Fig:LinearCombinations:SpanTwoVectors>`. What does the span of these vectors look like? By definition, $\Span{\mathbf{u}, \mathbf{v}}$ contains all linear combinations of $\mathbf{u}$ and $\mathbf{v}$. Each of these linear combinations is of the form 
 

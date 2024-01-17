@@ -5,7 +5,7 @@
 
 ## Introduction
 
-In Section \ref{Sec:OrthoProj} we have seen that orthogonal bases are nice to work with. Both for finding coordinates and also for finding orthogonal projections. 
+In Section {numref}`Sec:OrthoBase` we have seen that orthogonal bases are nice to work with. Both for finding coordinates and also for finding orthogonal projections. 
 
 In this section  an algorithm is presented to construct an orthogonal basis from  an arbitrary basis of a subspace $W$ in $\R^n$.
 

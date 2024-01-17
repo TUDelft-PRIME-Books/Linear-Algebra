@@ -19,7 +19,10 @@ $$
 
 Geometrically, this is the linear transformation which squashes the plane flat onto the $x$-axis. In slightly less informal terms, it is the transformation which projects the plane onto the $x$-axis. 
 
-Using the orthogonal projections defined in {numref}`Dfn:InnerProduct:OrthoProjectionOntoVector`, this can be generalised as follows. If $\mathbf{v}$ if a vector in $\mathbb{R}^{n}$, then 
+Using the orthogonal projections defined 
+in {prf:ref}`Dfn:InnerProduct:OrthoProjectionOntoVector`, this can be generalised as follows. If $\mathbf{v}$ if a vector in $\mathbb{R}^{n}$, then 
+
+
 
 $$
 T_{\mathbf{v}}:\mathbb{R}^{n}\to\mathbb{R}^{n},\quad\mathbf{w}\mapsto\text{proj}_{\mathbf{v}}(\mathbf{w})

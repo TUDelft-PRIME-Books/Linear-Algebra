@@ -1242,7 +1242,9 @@ $$
    \text{if} \quad AB = I \quad \text{then} \quad BA = I.
 $$
 
-For non-square matrices this statement is not correct. See exercises in Grasple  ({\tt \#60136, \#61170}).
+For non-square matrices this statement is not correct. The interested reader is invited  to take a look at the last exercises in the Grasple subsection 
+{numref}`Subsec:MatrixInverse:Grasple`.
+%{prf:ref}`grasple_exercise_3_4_23`  and {prf:ref}`grasple_exercise_3_4_24`.
 
 ::::::
 
@@ -1503,10 +1505,10 @@ Again it may very well be that you have to resort to previous sections.
 
 ::::::
 
-
+(Subsec:MatrixInverse:Grasple)=
 ## Grasple Exercises
 
-The first **XXXX** exercises are quite starightfordwardly computational.
+The first exercises are quite straightfordwardly computational.
 The remaining exercises tend to be more theoretic.
 
 ::::::{grasple} 
@@ -1709,10 +1711,7 @@ consistent linear systems.
 :dropdown:
 :description: To explore invertibility for a $2\times 3$ matrix
 
-
-
 ::::::
-
 
 
 ::::::{grasple} 
@@ -1720,6 +1719,28 @@ consistent linear systems.
 :label: grasple_exercise_3_4_22 
 :dropdown:
 :description: Distilling  $A^{-1}$ from a relation  $c_2A^2 + c_1A + c_0I = 0$.
+
+::::::
+
+In the last two exercises (non-)invertibility of non-square matrices is considered. 
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/4e9b4ec1-f775-430f-b81f-c76c42fcbc76?id=60136
+:label: grasple_exercise_3_4_23
+:dropdown:
+:description: To explore invertibility for a $3\times 2$ matrix
+
+
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/ca504661-cc62-454f-8035-04a9bef85f91?id=61170
+:label: grasple_exercise_3_4_24 
+:dropdown:
+:description: To explore invertibility for a $2\times 3$ matrix
 
 
 ::::::

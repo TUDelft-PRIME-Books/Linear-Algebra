@@ -1,6 +1,6 @@
 # Linear independence 
 
-As we have seen in Section , the multiples of a non-zero vector form a line. We have also seen there that, if we consider vectors of the form $c_{1}\mathbf{v}_{1}+c_{2}\mathbf{v}_{2}$ for some vectors $\mathbf{v}_{1},\mathbf{v}_{2}$ and constants $c_{1},c_{2}$ we usually get a plane. But sometimes we don't! For example, if $d\mathbf{v}_{1}=\mathbf{v}_{2}$ for some constant $d$, then all vectors of the given form can be rewritten as $(c_{1}+c_{2}d)\mathbf{v}_{1}$, so they are all contained in the line through the origin and in the direction of $\mathbf{v}_{1}$. Every vector we can make as a linear combination of $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ can also be made with $\mathbf{v}_{1}$ alone. The vector $\mathbf{v}_{2}$ is superfluous. This situation can be seen in {numref}`Figure %s <Fig:LinInd:Examplein1D>`.
+As we have seen ({prf:ref}`Ex:LinearCombinations:SpanOfOneVector` and {prf:ref}`Ex:LinearCombinations:SpanOfTwoVectors`), the multiples of a non-zero vector form a line. We have also seen there that, if we consider the set of all vectors of the form $c_{1}\mathbf{v}_{1}+c_{2}\mathbf{v}_{2}$, for some vectors $\mathbf{v}_{1},\mathbf{v}_{2}$ and constants $c_{1},c_{2}$, we usually get a plane. But sometimes we don't! For example, if $d\mathbf{v}_{1}=\mathbf{v}_{2}$ for some constant $d$, then all vectors of the given form can be rewritten as $(c_{1}+c_{2}d)\mathbf{v}_{1}$, so they are all contained in the line through the origin and in the direction of $\mathbf{v}_{1}$. Every vector we can make as a linear combination of $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ can also be made with $\mathbf{v}_{1}$ alone. The vector $\mathbf{v}_{2}$ is superfluous. This situation can be seen in {numref}`Figure %s <Fig:LinInd:Examplein1D>`.
 
 ::::{figure} Images/Fig-LinInd-Examplein1D.svg
 :name: Fig:LinInd:Examplein1D
@@ -226,10 +226,12 @@ If $T$ is linearly independent and $S\subseteq T$, then $S$ is linearly independ
 
 ::::::
 
-::::::{prf:proof}
-:label: Proof:LinInd:LinDepSets
+We leave the verifications of these statements to the reader.
 
-Exercise.
+::::::{prf:exercise}
+:label: Ex:LinInd:LinDepSets
+
+Prove {prf:ref}`Prop:LinInd:LinDepSets` 
 
 ::::::
 
@@ -302,16 +304,15 @@ has a non-trivial solution, i.e. if $A$ has a column without a pivot.
 ::::::
 
 
+Again we leave the verification to the diligent reader.
 
+::::::{prf:exercise}
+:label: Exc:LinInd:LinDepSets
 
-::::::{prf:proof}
-:label: Proof:LinInd:LinIndisColwithoutPivot
-
-
-Exercise.
-
+Prove {prf:ref}`Cor:LinInd:LinIndisColwithoutPivot` 
 
 ::::::
+
 
 
 
@@ -390,7 +391,7 @@ An ordered set $S=(\mathbf{v}_{1},...,\mathbf{v}_{n})$ is linearly dependent if 
 
 
 ::::::{prf:proof}
-:label: Eq:LinInd:vkLinCombofOthers
+
 
 Let us assume $\mathbf{v}_{k}=c_{1}\mathbf{v}_{1}+\cdots+c_{k-1}\mathbf{v}_{k-1}$ for some scalars $c_{1},...,c_{k-1}$. An arbitrary element $\mathbf{v}$ of $\Span{S}$ is a linear combination of $\mathbf{v}_{1},...,\mathbf{v}_{n}$, so it is 
 
