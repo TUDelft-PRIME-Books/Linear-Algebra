@@ -1637,8 +1637,6 @@ consistent linear systems.
 :label: grasple_exercise_3_4_14
 :dropdown:
 :description: True/False: Every elementary matrix is invertible.
-
-
 ::::::
 
 
@@ -1647,7 +1645,6 @@ consistent linear systems.
 :label: grasple_exercise_3_4_15
 :dropdown:
 :description: True/False:  If $A$ and $B$ are invertible, then so is  $A+B$.
-
 ::::::
 
 
@@ -1657,7 +1654,6 @@ consistent linear systems.
 :label: grasple_exercise_3_4_16
 :dropdown:
 :description: True/False:  If $A$ and $B$ are singular, then so is  $A+B$.
-
 ::::::
 
 
@@ -1667,8 +1663,6 @@ consistent linear systems.
 :label: grasple_exercise_3_4_17
 :dropdown:
 :description: True/False: If $A$ is row equivalent to $I$, then so is $A^2$. 
-
-
 ::::::
 
 
@@ -1678,7 +1672,6 @@ consistent linear systems.
 :label: grasple_exercise_3_4_18
 :dropdown:
 :description: To find 'by inspection' inverses of elemenatry matrices.
-
 ::::::
 
 
@@ -1688,59 +1681,34 @@ consistent linear systems.
 :label: grasple_exercise_3_4_19
 :dropdown:
 :description: To find the inverses of $AE$ and $EA$, when $A^{-1}$  is given.
-
 ::::::
-
-
 
 ::::::{grasple} 
 :url: https://embed.grasple.com/exercises/dfe429bd-1ab9-47f7-8f6c-06150c468645?id=71468
 :label: grasple_exercise_3_4_20
 :dropdown:
 :description: Finding the inverses of (almost) elementary matrices. 
-
-
-
 ::::::
-
-
-
-::::::{grasple} 
-:url: https://embed.grasple.com/exercises/9ef02e7b-00d9-485a-bc13-1dfd191427d3?id=71457
-:label: grasple_exercise_3_4_21
-:dropdown:
-:description: To explore invertibility for a $2\times 3$ matrix
-
-::::::
-
 
 ::::::{grasple} 
 :url: https://embed.grasple.com/exercises/9af5928a-7ecb-478e-a896-7c66d16d9d09?id=71463
-:label: grasple_exercise_3_4_22 
+:label: grasple_exercise_3_4_21
 :dropdown:
 :description: Distilling  $A^{-1}$ from a relation  $c_2A^2 + c_1A + c_0I = 0$.
-
 ::::::
 
 In the last two exercises (non-)invertibility of non-square matrices is considered. 
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/ca504661-cc62-454f-8035-04a9bef85f91?id=61170
+:label: grasple_exercise_3_4_22
+:dropdown:
+:description: To explore invertibility for a $2\times 3$ matrix
+::::::
 
 ::::::{grasple} 
 :url: https://embed.grasple.com/exercises/4e9b4ec1-f775-430f-b81f-c76c42fcbc76?id=60136
 :label: grasple_exercise_3_4_23
 :dropdown:
 :description: To explore invertibility for a $3\times 2$ matrix
-
-
-
-::::::
-
-
-
-::::::{grasple} 
-:url: https://embed.grasple.com/exercises/ca504661-cc62-454f-8035-04a9bef85f91?id=61170
-:label: grasple_exercise_3_4_24 
-:dropdown:
-:description: To explore invertibility for a $2\times 3$ matrix
-
-
 ::::::
