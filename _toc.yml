@@ -41,7 +41,6 @@ chapters:
       - file: "Chapter6/EigenvaluesEigenvectors.md"
       - file: "Chapter6/CharPolynomial.md"
       - file: "Chapter6/Diagonalizability.md"
-      - file: 'Chapter6/SymmetricMatrices.md'
       - file: 'Chapter6/ComplexEigenvalues.md'
   - file: 'Chapter7/intro.md'
     sections:
