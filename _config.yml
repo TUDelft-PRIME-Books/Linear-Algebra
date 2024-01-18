@@ -9,6 +9,7 @@ html:
   use_repository_button: true
   extra_footer: |
     <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+  use_multitoc_numbering: true
 repository:
   url: https://gitlab.ewi.tudelft.nl/prime/openlabook
   branch: main
@@ -33,6 +34,7 @@ sphinx:
   config:
     html_static_path: 
       - _static
+    numfig_secnum_depth: 2
     language: en
     latex_elements:
           preamble: |
