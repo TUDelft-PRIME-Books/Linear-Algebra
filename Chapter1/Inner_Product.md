@@ -243,7 +243,6 @@ The following  properties   hold for any vectors $\mathbf{v},\mathbf{v}_1,\mathb
 :::
 
 :::{prf:proof}
-:class: dropdown
 
 The first three properties follow from the corresponding properties of real numbers. For instance, for the first rule we simply use that  $xy = yx$ holds for the product of real numbers.
 
@@ -301,6 +300,35 @@ if and only  if all the squares are 0, which only happens if each entry $a_i$ is
 :label: Exc:InnerProduct:CheckPropInnerProd
 
 Prove property iii.
+:::
+
+:::{solution} Exc:InnerProduct:CheckPropInnerProd
+:class: dropdown
+
+Let
+
+$$
+\mathbf{v}_1=\begin{bmatrix} a_1\\a_2\\ \vdots\\ a_n\end{bmatrix}
+  \quad \text{and}\quad
+  \mathbf{v}_2=\begin{bmatrix}  b_1 \\ b_2 \\ \vdots \\ b_n \end{bmatrix}
+  \quad \text{and}\quad
+    \mathbf{v}_3=\begin{bmatrix}  c_1 \\ c_2 \\ \vdots \\ c_n \end{bmatrix}
+
+$$
+
+be three arbitrary vectors in $\mathbb{R}^n$. Then
+
+\begin{align*}
+\left(\mathbf{v}_1 + \mathbf{v}_2 \right) \ip \mathbf{v}_3 &= 
+\left(\begin{bmatrix}a_{1} \\ a_{2}\\ \vdots\\a_{n}\end{bmatrix} + \begin{bmatrix}b_{1} \\ b_{2}\\ \vdots \\ b_{n}\end{bmatrix} \right) \ip \begin{bmatrix}  c_1 \\ c_2 \\ \vdots \\ c_n \end{bmatrix} \\
+&= \begin{bmatrix} a_1+b_1\\a_2+b_2\\ \vdots\\ a_n+b_n\end{bmatrix}\ip \begin{bmatrix}  c_1 \\ c_2 \\ \vdots \\ c_n \end{bmatrix} \\
+            &= (a_1+b_1)c_1 +(a_2+b_2)c_2+ \ldots + (a_n+b_n)c_n  \\
+      &= a_1c_1 +b_1c_1+a_2c_2+b_2c_2 \ldots + a_nc_n+b_nc_n \\
+      &= a_1c_1 +a_2c_2+\ldots + a_nc_n +b_1c_1+b_2c_2 \ldots +b_nc_n \\
+      &= \begin{bmatrix}a_{1} \\ a_{2}\\ \vdots\\a_{n}\end{bmatrix}\ip\begin{bmatrix}  c_1 \\ c_2 \\ \vdots \\ c_n \end{bmatrix}+\begin{bmatrix}  b_1 \\ b_2 \\ \vdots \\ b_n \end{bmatrix}\ip\begin{bmatrix}  c_1 \\ c_2 \\ \vdots \\ c_n \end{bmatrix} \\
+      &= \mathbf{v}_1\ip\mathbf{v}_3+\mathbf{v}_2\ip\mathbf{v}_3.
+\end{align*}
+
 :::
 
 :::{exercise}
@@ -1127,8 +1155,6 @@ $$
 :::
 
 :::{prf:proof}
-:class: dropdown
-
 
 Since all  terms involved are non-negative we may as well show that the inequality holds for the squares:
 

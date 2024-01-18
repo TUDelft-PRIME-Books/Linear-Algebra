@@ -148,7 +148,6 @@ Check for yourself that the vectors $\vect{b}_1,\vect{b}_2, \vect{b}_3$  are ind
 
 
 ::::{prf:proof} 
-:class: dropdown
 of {prf:ref}`Thm:GramSchmidt:GramSchmidt`
 
 Let  $W_j$ be the subspace spanned by the first $j$ vectors  $\vect{a}_1, \ldots, \vect{a}_j$,   for  $j = 1,2\ldots,m$.
