@@ -3,63 +3,67 @@ format: jb-book
 root: index.md
 options:
   numbered: true
-chapters:
-  - file: 'Chapter1/intro.md'
-    sections: 
-      - file: 'Chapter1/Vectors.md'
-      - file: 'Chapter1/Inner_Product.md'
-      - file: 'Chapter1/Cross_Product.md'
-      - file: 'Chapter1/Lines_and_Planes.md'
-  - file: 'Chapter2/intro.md'
-    sections:
-      - file: 'Chapter2/LinearSystems.md'
-      - file: 'Chapter2/LinearCombinations.md'
-      - file: 'Chapter2/SolutionSets.md'
-      - file: 'Chapter2/MatrixVectorProduct.md'
-      - file: 'Chapter2/LinearIndependence.md'
-  - file: 'Chapter3/intro.md'
-    sections:
-      - file: 'Chapter3/Linear_Transformations.md'
-      - file: 'Chapter3/MatrixOperations.md'
-      - file: 'Chapter3/GeometryofLinearTransformations.md'
-      - file: 'Chapter3/MatrixInverse.md'
-      - file: 'Chapter3/Injectivity_and_surjectivity.md'
-      - file: 'Chapter3/LUdecomp.md'
-  - file: 'Chapter4/intro.md'
-    sections:
-      - file: 'Chapter4/Subspaces_of_Rn.md'
-      - file: 'Chapter4/BasisAndDimension.md'
-      - file: 'Chapter4/ChangeOfBasis.md'
-  - file: 'Chapter5/intro.md'
-    sections:
-      - file: "Chapter5/DeterminantsGeometric.md"
-      - file: "Chapter5/DeterminantsViaCofactors.md"
-      - file: "Chapter5/DeterminantsViaRowReduction.md"
-      - file: "Chapter5/DeterminantsExtras.md"
-  - file: 'Chapter6/intro.md'
-    sections:
-      - file: "Chapter6/EigenvaluesEigenvectors.md"
-      - file: "Chapter6/CharPolynomial.md"
-      - file: "Chapter6/Diagonalizability.md"
-      - file: 'Chapter6/ComplexEigenvalues.md'
-  - file: 'Chapter7/intro.md'
-    sections:
-      - file: 'Chapter7/OrthoComp.md'
-      - file: 'Chapter7/OrthoBase.md'
-      - file: 'Chapter7/GramSchmidt.md'
-      - file: 'Chapter7/LeastSquares.md'
-  - file: 'Chapter8/intro.md'
-    sections:
-      - file: 'Chapter8/SymmetricMatrices.md'
-      - file: 'Chapter8/QuadraticForms.md'
-      - file: 'Chapter8/SingularValueDecomp.md'
-  - file: 'Chapter9/intro.md'
-    sections:
-      - file: 'Chapter9/DynSystDiscrete.md'
-      - file: 'Chapter9/MarkovChains.md'
-      - file: 'Chapter9/PowerMethod.md'
-  - file : 'Appendices/intro.md'
-    sections:
+parts:
+  - caption: Main content
+    numbered: True
+    chapters:
+      - file: 'Chapter1/intro.md'
+        sections:
+          - file: 'Chapter1/Vectors.md'
+          - file: 'Chapter1/Inner_Product.md'
+          - file: 'Chapter1/Cross_Product.md'
+          - file: 'Chapter1/Lines_and_Planes.md'
+      - file: 'Chapter2/intro.md'
+        sections:
+          - file: 'Chapter2/LinearSystems.md'
+          - file: 'Chapter2/LinearCombinations.md'
+          - file: 'Chapter2/SolutionSets.md'
+          - file: 'Chapter2/MatrixVectorProduct.md'
+          - file: 'Chapter2/LinearIndependence.md'
+      - file: 'Chapter3/intro.md'
+        sections:
+          - file: 'Chapter3/Linear_Transformations.md'
+          - file: 'Chapter3/MatrixOperations.md'
+          - file: 'Chapter3/GeometryofLinearTransformations.md'
+          - file: 'Chapter3/MatrixInverse.md'
+          - file: 'Chapter3/Injectivity_and_surjectivity.md'
+          - file: 'Chapter3/LUdecomp.md'
+      - file: 'Chapter4/intro.md'
+        sections:
+          - file: 'Chapter4/Subspaces_of_Rn.md'
+          - file: 'Chapter4/BasisAndDimension.md'
+          - file: 'Chapter4/ChangeOfBasis.md'
+      - file: 'Chapter5/intro.md'
+        sections:
+          - file: "Chapter5/DeterminantsGeometric.md"
+          - file: "Chapter5/DeterminantsViaCofactors.md"
+          - file: "Chapter5/DeterminantsViaRowReduction.md"
+          - file: "Chapter5/DeterminantsExtras.md"
+      - file: 'Chapter6/intro.md'
+        sections:
+          - file: "Chapter6/EigenvaluesEigenvectors.md"
+          - file: "Chapter6/CharPolynomial.md"
+          - file: "Chapter6/Diagonalizability.md"
+          - file: 'Chapter6/ComplexEigenvalues.md'
+      - file: 'Chapter7/intro.md'
+        sections:
+          - file: 'Chapter7/OrthoComp.md'
+          - file: 'Chapter7/OrthoBase.md'
+          - file: 'Chapter7/GramSchmidt.md'
+          - file: 'Chapter7/LeastSquares.md'
+      - file: 'Chapter8/intro.md'
+        sections:
+          - file: 'Chapter8/SymmetricMatrices.md'
+          - file: 'Chapter8/QuadraticForms.md'
+          - file: 'Chapter8/SingularValueDecomp.md'
+      - file: 'Chapter9/intro.md'
+        sections:
+          - file: 'Chapter9/DynSystDiscrete.md'
+          - file: 'Chapter9/MarkovChains.md'
+          - file: 'Chapter9/PowerMethod.md'
+  - caption: Appendices
+    numbered: True
+    chapters:
       - file: "Appendices/ComplexNumbers.md"
       - file: "Appendices/SVDProof.md"
       - file: "Appendices/InverseMatrixTheorem.md"

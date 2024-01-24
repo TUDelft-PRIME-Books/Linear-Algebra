@@ -45,7 +45,6 @@ For any subspace $V$ of $\R^{n}$, the orthogonal complement $V^{\bot}$ is a subs
 :::
 
 :::{prf:proof}
-:class: dropdown
 
 Since the zero vector is orthogonal to any vector, it is in $V^{\bot}$. Suppose now that $\vect{u}_{1}$ and $\vect{u}_{2}$ are in $V^{\bot}$. Then, for arbitrary $\vect{v}$ in $V$, $(\vect{u}_{1}+\vect{u}_{2})\ip \vect{v}=\vect{u}_{1}\ip\vect{v}+\vect{u}_{2}\ip\vect{v}=0$, so $\vect{u}_{1}+\vect{u}_{2}$ is in $V^{\bot}$.
 
@@ -72,7 +71,6 @@ For any $n\times m$ matrix $M$ we have $\mathrm{Col}(A^{T})^{\bot}=\mathrm{Nul}(
 :::
 
 :::{prf:proof}
-:class: dropdown
  
 Note that the second claim is easily derived from the first by substituting $A^{T}$ for $A$. Let $\vect{r}_{1},...,\vect{r}_{n}$ be the rows of $A$. Then $\vect{r}_{1}^{T},...,\vect{r}_{n}^{T}$ are the columns of $A^{T}$. For any vector $\vect{x}$ in $\R^{m}$, we have 
 
@@ -111,7 +109,6 @@ An orthogonal set $S$ which does not contain $\vect{0}$ is linearly independent.
 :::
 
 :::{prf:proof}
-:class: dropdown
 
 Assume $S$ is linearly dependent. Then there are vectors $\vect{v}_{1},...,\vect{v}_{n}$ in $S$ and scalars $c_{1},...,c_{n}$, not all zero, such that $\vect{0}=c_{1}\vect{v}_{1}+\cdots +c_{n}\vect{v}_{n}.$ But then, for any $i$:
 
@@ -164,7 +161,6 @@ $$\vect{v}=(\vect{v}\ip\vect{v}_{1})\vect{v}_{1}+\cdots +(\vect{v}\ip\vect{v}_{k
 :::
 
 :::{prf:proof}
-:class: dropdown
 
 Since $\vect{v}_{1},...,\vect{v}_{k}$ is a basis for $V$ and $\vect{v}$ is in $V$, there are scalars $c_{1},...,c_{k}$ such that $\vect{v}=c_{1}\vect{v}_{1}+\cdots +c_{k}\vect{v}_{k}$. We only have to show that these scalars are as claimed. For any $j$ between $1$ and $k$,
 
@@ -234,7 +230,6 @@ In fact, $\hat{\vect{w}}=\proj_{V}(\vect{w})$. This is called the *orthogonal de
 
 
 :::{prf:proof}
-:class: dropdown
 
 Fix an orthogonal basis $\vect{v}_{1},..,\vect{v}_{k}$ for $V$ and put $\vect{x}=\vect{w}-\proj_{V}(\vect{w})$. Clearly, $\proj_{V}(\vect{w})$ is in $V$. If we can show $\vect{x}\bot \vect{v}_{i}$ for any $i$, it will follow that $\vect{x}$ is in $V^{\bot}$. This follows readily: 
 
@@ -286,7 +281,6 @@ For any $\vect{v}$ in $V$, $\norm{\vect{w}-\vect{v}}\leq\norm{\vect{w}-\proj_{V}
 :::
 
 :::{prf:proof}
-:class: dropdown
 
 Let $\vect{w}=\proj_{V}(\vect{w})+\vect{x}$ where $\vect{x}$ is in $V^{\bot}$. 
 
