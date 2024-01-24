@@ -495,7 +495,7 @@ Since $(2 + \sqrt{5})> 0$ and $(2 - \sqrt{5})<2-2=0$ we may again conclude that 
 
 The diagonal matrices do not seem to have much in common.  However, they do.
 
-It can be shown that if for a symmetric $n\times n$ matrix  $A$ it holds that if
+It can be shown that if for a symmetric $n\times n$ matrix  $A$ it holds that 
 
 $$
   P_1^TAP_1 = D_1 \quad \text{and} \quad P_2^TAP_2 = D_2,
@@ -757,8 +757,8 @@ In the plane all *non-degenerate* conic sections may be described by a quadratic
 
 ::::
 
-where at least one the parameters $a,b,c$ is not equal to zero.
-
+where the parameter $f$ at least one the parameters $a,b,c$  are not equal to zero.
+ and
 ::::{prf:example}
 
 The curve given by the equation  $x_1^2 + x_2^2 - 25 = 0$  is a circle with radius 5.

@@ -730,10 +730,6 @@ $$
 
 ::::
 
-TATATA
-
-
-
 ::::{prf:example}
 :label: Ex:InnerProduct:Distance
 
@@ -1284,7 +1280,7 @@ So we may conclude that
 
 
 In the case of an obtuse angle, we use that the projection of $\mathbf{w}$ onto $\mathbf{v}$ is equal to the projection
-of $\mathbf{w}$ onto $-\mathbf{v}$, as it is in fact the projection onto the line consisting of all multiples of $\mathbf{v}$. Now look at the picture on the right of figure  {numref}`Figure %s <Fig:InnerProduct:AngleAndProjection>`
+of $\mathbf{w}$ onto $-\mathbf{v}$, as it is in fact the projection onto the line consisting of all multiples of $\mathbf{v}$. Now look at the picture on the right of   {numref}`Figure %s <Fig:InnerProduct:AngleAndProjection>`
 . There you see that $\mathbf{w}$  and
 $-\mathbf{v}$ make an acute angle $\psi = \pi - \phi$, so we can apply 
 Equation {eq}`Eq:InnerProduct:GeometricInterpretation` to  $\mathbf{w}$  and $-\mathbf{v}$:
