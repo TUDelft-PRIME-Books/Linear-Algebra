@@ -6,7 +6,7 @@
 ## Introduction
 
 Subspaces are structures that appear in many different subfields of linear algebra.
-For instance, as solution sets of homogeneous systems of linear equations, and as ranges of linear transformations, to mention two situations that we have already come across.
+For instance, they appear as solution sets of homogeneous systems of linear equations, and as ranges of linear transformations, to mention two situations that we have already come across.
 In this section we will define them and analyze their basic properties. In {numref}`Sec:BasisDim` we will consider the important attributes basis and dimension.
 
 
