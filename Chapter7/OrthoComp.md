@@ -298,6 +298,7 @@ $$
 $$
 
 and let $V$ be the subspace  of $\R^{3}$ spanned by $\vect{v}_{1}$ and $\vect{v}_{2}$. Put 
+
 $$
 \vect{u}_{V}=\begin{bmatrix}
 3\\
@@ -314,3 +315,29 @@ $$
 It is easy to check that, as the notation suggests, $\vect{u}_{V}$ is in $V$ (since $\vect{u}_{V}=-\vect{v}_{1}+2\vect{v}_{2}$) and $\vect{u}_{V^{\bot}}$ is in $V^{\bot}$ (since $\vect{u}_{V^{\bot}}\ip\vect{v}_{1}=0=\vect{u}_{V^{\bot}}\ip\vect{v}_{2}$). So $\vect{u}=\vect{u}_{V}+\vect{u}_{V^{\bot}}$ is the orthogonal decomposition of $\vect{u}$ with respect to $V$. How we can compute such a decomposition will be shown in {numref}`Section %s <Sec:OrthoBase>`.
 
 :::
+
+## Grasple Exercises
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/f216b122-e2f3-4cd4-9268-7a814e12cec3?id=91429
+:label: grasple_exercise_7_1_1 
+
+:description: Find a basis for the orthogonal complement of the span.
+
+::::
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/3e9132d6-c280-4361-a653-002ad50b4784?id=91433
+:label: grasple_exercise_7_1_2 
+
+:description: Find a basis for the orthogonal complement of the column space.
+
+::::
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/3e9132d6-c280-4361-a653-002ad50b4784?id=91433
+:label: grasple_exercise_7_1_3
+
+:description: Find a geometric description of $V^{\bot}$.
+
+::::
