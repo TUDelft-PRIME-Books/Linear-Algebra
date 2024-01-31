@@ -314,3 +314,5 @@ $$
 It is easy to check that, as the notation suggests, $\vect{u}_{V}$ is in $V$ (since $\vect{u}_{V}=-\vect{v}_{1}+2\vect{v}_{2}$) and $\vect{u}_{V^{\bot}}$ is in $V^{\bot}$ (since $\vect{u}_{V^{\bot}}\ip\vect{v}_{1}=0=\vect{u}_{V^{\bot}}\ip\vect{v}_{2}$). So $\vect{u}=\vect{u}_{V}+\vect{u}_{V^{\bot}}$ is the orthogonal decomposition of $\vect{u}$ with respect to $V$. How we can compute such a decomposition will be shown in {numref}`Sec:OrthoBase`.
 
 :::
+
+This is a test line to see of a commit by Dennis works.
