@@ -315,4 +315,28 @@ It is easy to check that, as the notation suggests, $\vect{u}_{V}$ is in $V$ (si
 
 :::
 
-This is a test line to see of a commit by Dennis works.
+## Grasple Exercises
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/f216b122-e2f3-4cd4-9268-7a814e12cec3?id=91429
+:label: grasple_exercise_7_1_1 
+
+:description: Find a basis for the orthogonal complement of the span.
+
+::::
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/3e9132d6-c280-4361-a653-002ad50b4784?id=91433
+:label: grasple_exercise_7_1_2 
+
+:description: Find a basis for the orthogonal complement of the column space.
+
+::::
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/3e9132d6-c280-4361-a653-002ad50b4784?id=91433
+:label: grasple_exercise_7_1_3
+
+:description: Find a geometric description of $V^{\bot}$.
+
+::::
