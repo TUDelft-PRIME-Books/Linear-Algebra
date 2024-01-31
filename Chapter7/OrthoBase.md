@@ -182,18 +182,18 @@ $$\begin{align*}
 
  Naturally, we want to know how to find such an orthogonal projection. If we have an orthogonal basis for $V$, there turns out to be a convenient way to compute it, as per {prf:ref}`Thm:OrthoBase:OrthoDecomp`.
 
-:::{prf:Theorem}
+::::{prf:Theorem}
 :label: Thm:OrthoBase:OrthoDecomp
 
 Suppose $V$ is a subspace of $\R^{n}$ with orthogonal basis $\vect{v}_{1},...,\vect{v}_{k}$ and let $\vect{u}$ be a vector in $\R^{n}$. Then  
 
-::{math} 
+:::{math} 
 :label: Eq:OrthoBase:OrthoProj
 
 \vect{u}_{V}=\text{proj}_V(\vect{u}) = \frac{\vect{u}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{u}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}_{k}.
-::
-
 :::
+
+::::
 
 
 :::{prf:proof}
