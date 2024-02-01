@@ -191,6 +191,7 @@ Suppose $V$ is a subspace of $\R^{n}$ with orthogonal basis $\vect{v}_{1},...,\v
 :label: Eq:OrthoBase:OrthoProj
 
 \vect{u}_{V}=\text{proj}_V(\vect{u}) = \frac{\vect{u}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{u}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}_{k}.
+
 :::
 
 ::::
@@ -525,3 +526,29 @@ An $n\times n$-matrix $A$ is orthogonal if and only if its rows are orthonormal.
 We know that $A$ is orthogonal if and only if $A^{T}A=I_{n}$. But this implies $A^{T}=A^{-1}$ and therefore also $AA^{T}=I_{n}$. Since $(A^{T})^{T}A^{T}=AA^{T}=I_{n}$, $A^{T}$ must be orthogonal by {prf:ref}`Prop:OrthoBase:OrthoMat`. Hence the columns of $A^{T}$, which are the rows of $A$, must be orthonormal.
 
 :::
+
+## Grasple Exercises
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/c443c628-427c-4ba6-a55b-d7fd0a562904?id=87842
+:label: grasple_exercise_7_2_1 
+:dropdown:
+:description: Orthogonal basis and scalar multiplication.
+
+::::
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/825980e7-e25f-497e-a077-e009cedd55c4?id=87843
+:label: grasple_exercise_7_2_2 
+:dropdown:
+:description: Projection formula with non-orthogonal basis.
+::::
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/c815026e-df41-461c-b0dc-0b06a387d0c9?id=91876
+:label: grasple_exercise_7_2_3 
+:dropdown:
+:description: Alternative definition of orthogonal matrix.
+
+::::
