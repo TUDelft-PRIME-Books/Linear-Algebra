@@ -302,7 +302,7 @@ if and only  if all the squares are 0, which only happens if each entry $a_i$ is
 Prove property iii.
 :::
 
-:::{solution} `Exc:InnerProduct:CheckPropInnerProd`
+:::{solution} 'Exc:InnerProduct:CheckPropInnerProd'
 :class: dropdown
 
 Let
