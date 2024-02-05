@@ -5,7 +5,7 @@ In this section we will introduce another interpretation/representation of a sys
 We'll define the product of an $m\times n$ matrix $A$ with a vector $\vect{x}$ in $\mathbb{R}^n$. In the next chapter this will also be the stepping stone to the general matrix-matrix product. 
 
 
-(Sec:MatVecProduct)=
+(Subsec:MatVecProduct)=
 ## Definition of the Matrix-Vector Product 
 
 ::::{prf:definition} 

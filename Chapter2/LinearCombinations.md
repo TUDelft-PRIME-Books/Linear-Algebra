@@ -1,5 +1,5 @@
 (Sec:LinearCombinations)=
-# Linear combinations 
+# Linear Combinations 
 
 ::::{prf:definition} 
 

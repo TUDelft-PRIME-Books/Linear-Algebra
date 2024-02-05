@@ -7,7 +7,7 @@ csp:
 # Systems of Linear Equations 
 
 (Subsec:LinSystems:Intro)=
-## Introduction.  Consistent and Inconsistent Linear Systems 
+## Consistent and Inconsistent Linear Systems 
 
 In Chapter 1 the question whether  two lines or two planes intersect or do not intersect was touched upon. In the case of two planes  the question can be resolved by finding equations for the planes and checking whether there are points that simultaneously satisfy these two equations. We can write this in the form
 
