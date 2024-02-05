@@ -485,11 +485,17 @@ Show that a linear transformation from $\mathbb{R}^n$ to $\mathbb{R}^m$ always s
 <BR>
 Thus,    if  $  T:\mathbb{R}^n \to\mathbb{R}^m$    is a  linear transformation,  then   $T(\mathbf{0}_n) = \mathbf{0}_m$.
 
-
 ::::::
 
+::::::{solution} Exc:LinTrafo:ImageofZeroVector
+:class: dropdown
 
+If $  T:\mathbb{R}^n \to\mathbb{R}^m$ is linear, and $\vect{v}$ is any vector in $\R^n$,  then $\mathbf{0}_n = 0\vect{v}$.  From the second property in  {prf:ref}`Dfn:LinTrafo:LinTrafo` it follows that 
 
+$$
+  T(\mathbf{0}_n) = T(0\vect{v}) = 0\,T(\vect{v}) = \mathbf{0}_m.
+$$
+::::::
 
 
 
@@ -677,7 +683,7 @@ $$
 
 
 ::::::{exercise}
-:label: Exc:LinTrafo:T(0)=0
+:label: Exc:LinTrafo:T(x)=x+p
 
 
 Let  $\mathbf{p}$ be a nonzero vector in $\mathbb{R}^2$. Is the translation
@@ -688,12 +694,22 @@ $$
 
 a linear transformation?
 
-
 ::::::
 
+::::::{solution} Exc:LinTrafo:T(x)=x+p
+:class: dropdown
+
+The transformation defined by  $T(\vect{x}) = \vect{x} + \vect{p}$, with $\vect{p}\neq \vect{0}$ does not have any of the two properties of a linear transformation.
+
+For instance, since  $\vect{p}+\vect{p} \neq \vect{p}$,
+
+$$
+  T(\vect{x}+\vect{y}) = \vect{x}+\vect{y} + \vect{p} \neq
+  T(\vect{x})+T(\vect{y}) = \vect{x}+ \vect{p} +\vect{y} + \vect{p}.
+$$
 
 
-
+::::::
 
 Note that {prf:ref}`Ex:LinTrafo:FirstLinearMap` was in fact the first example of a matrix transformation in the {ref}`Subsec:LinTrafo:MatrixTrafo`:
 
@@ -726,10 +742,6 @@ Each matrix transformation is a linear transformation.
 
 
 ::::::
-
-
-
-
 
 
 ::::::{prf:proof}
@@ -766,8 +778,6 @@ The transformation  $S\circ T$ is called the **composition**  of the two transfo
 ::::::
 
 
-
-
 ::::::{prf:proof}
 Suppose that
 
@@ -802,9 +812,9 @@ Hence $S\circ T$ satisfies the two requirements of a linear transformation.
 In words:  the composition/concatenation of two linear transformations is itself a linear transformation.
 
 
+::::::{exercise} 
+:label: Exc:LinTrafo:CombiningLinTrafos
 
-
-::::::{exercise}
 There are other ways to combine linear transformations.  
 
 The sum $S = T_1 + T_2$ of two linear transformation  $T_1,T_2: \mathbb{R}^n \to \mathbb{R}^m$ is defined as follows
@@ -821,10 +831,52 @@ $$
 
 Show that $S$ and $T_3$ are again linear transformations.
 
-
 ::::::
 
+::::::{solution} Exc:LinTrafo:CombiningLinTrafos
+:class: dropdown
 
+The properties of the linear transformatiuon $T_1$ and $T_2$ carry over to $S$ and $T_3$ in the following way.
+We check the properties one by one. 
+
+For the sum $S$ we have 
+
+<ol type="i">
+<li>
+
+ For all vectors $\mathbf{v}_1,\,\mathbf{v}_2$ in $\R^n$ <BR> 
+
+
+$$
+   \begin{array}{rcl}
+     S(\mathbf{v}_1+\mathbf{v}_2) &=& T_1(\mathbf{v}_1+\mathbf{v}_2) +
+     T_2(\mathbf{v}_1+\mathbf{v}_2)\\
+     &=& T_1(\mathbf{v}_1) + T_1(\mathbf{v}_2) + T_2(\mathbf{v}_1) + T_2(\mathbf{v}_2)\\
+     &=& T_1(\mathbf{v}_1) + T_2(\mathbf{v}_1) + T_1(\mathbf{v}_2)  + T_2(\mathbf{v}_2)\\
+     &=& S(\mathbf{v}_1)+S(\mathbf{v}_2).
+   \end{array}
+$$
+
+</li>
+<li>
+
+ And likewise, for all vectors $\mathbf{v}$ in $\mathbb{R}^n$ and all scalars $c$ in $\mathbb{R}$: <BR>
+%$S(c\mathbf{v}) = T_1(c\mathbf{v})+T_2(c\mathbf{v}) = cT_1(\mathbf{v})+cT_2(\mathbf{v}) = c\big(T_1(\mathbf{v})+cT_2(\mathbf{v})\big)= cS(\mathbf{v})$.
+
+$$
+   \begin{array}{rcl}
+     S(c\mathbf{v}) &=& T_1(c\mathbf{v})+T_2(c\mathbf{v}) \\
+     &=& cT_1(\mathbf{v})+cT_2(\mathbf{v}) \\
+     &=& c \big(T_1(\mathbf{v})+cT_2(\mathbf{v})\big)\\
+     &=& cS(\mathbf{v}).
+   \end{array}
+$$
+
+</li>
+</ol>
+
+The linearity of $T_3$ is verified in a similar manner.
+::::::
 
 
 And now, let us return to matrix transformations.
@@ -870,7 +922,7 @@ Suppose $T:\mathbb{R}^n\rightarrow\mathbb{R}^m$ is a linear transformation.
 So we have
 
 $$
-  \text{(i)}T(\mathbf{x}+\mathbf{y}) = T(\mathbf{x})+T(\mathbf{y}) \quad\text{and} \quad \text{(ii)  }
+  \text{(i) } T(\mathbf{x}+\mathbf{y}) = T(\mathbf{x})+T(\mathbf{y}) \quad\text{and} \quad \text{(ii)  }
     T(c\mathbf{x}) = c T(\mathbf{x}).
 $$
 
@@ -1089,12 +1141,36 @@ A = \begin{bmatrix}
 \end{bmatrix}.
 $$
 
-
-
 ::::::
 
 
 
+
+::::::{solution}  Exc:LinTrafo:MatrixForFirstExample
+:class: dropdown
+
+Consider the linear transformation 
+$T:\mathbb{R}^2\rightarrow\mathbb{R}^3$ that sends each vector $ \begin{bmatrix}
+ x \\ y 
+\end{bmatrix}$ 
+in $\mathbb{R}^2$ to the vector $\begin{bmatrix} x \\ y \\ 0 \end{bmatrix}$. &nbsp; It holds that
+
+$$
+   T(\vect{e}_1) = T\left(\begin{bmatrix} 1\\ 0 \end{bmatrix}\right) = 
+   \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}, \quad
+   T(\vect{e}_2) = T\left(\begin{bmatrix} 0\\ 1 \end{bmatrix}\right) = 
+   \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}.
+$$
+
+We find that for an arbitray vector $\begin{bmatrix} x\\ y \end{bmatrix} = x\begin{bmatrix} 1\\ 0 \end{bmatrix}+y\begin{bmatrix} 0\\ 1 \end{bmatrix}$ it holds that
+
+$$
+  T\left(\begin{bmatrix} x\\ y \end{bmatrix}\right) =
+   xT(\vect{e}_1) + yT(\vect{e}_2) = x\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}+ y\begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix} =
+   \begin{bmatrix} 1 & 0 \\ 0 & 1\\ 0 & 0 \end{bmatrix}\begin{bmatrix} x\\ y \end{bmatrix}.
+$$
+
+::::::
 
 The reasoning of {prf:ref}`Ex:LinTrafo:StandardMatrixIntro` can be generalized.  This is the content of the next theorem.
 
@@ -1106,7 +1182,7 @@ The reasoning of {prf:ref}`Ex:LinTrafo:StandardMatrixIntro` can be generalized. 
 
 Each linear transformation $T$ from $\mathbb{R}^n$ to $\mathbb{R}^m$ is a matrix transformation. 
 
-More specific: if $T: \mathbb{R}^n \to \mathbb{R}^m$ is linear, then for each $\mathbf{x}$ in $\mathbb{R}^n$
+More specific,  if $T: \mathbb{R}^n \to \mathbb{R}^m$ is linear, then for each $\mathbf{x}$ in $\mathbb{R}^n$
 
 :::::{math}
 :label: Eq:Lintrafo:StandardMatrix
@@ -1414,17 +1490,19 @@ $$
 \end{bmatrix}.
 $$
 
+
+
 ::::::
 
 
 ## Grasple Exercises
 
-::::::{grasple} 
-:url: https://embed.grasple.com/exercises/97a589a8-54f9-4688-bd4d-a17a9585813b?id=69465
-:label: grasple_exercise_3_1_1 
-:dropdown:
-:description: This is {prf:ref}`Ex:LinTrafo:SecondMatrixTrafo`.
-::::::
+%::::::{grasple} 
+%:url: https://embed.grasple.com/exercises/97a589a8-54f9-4688-bd4d-a17a9585813b?id=69465
+%:label: grasple_exercise_3_1_1 
+%:dropdown:
+%:description: This is {prf:ref}`Ex:LinTrafo:SecondMatrixTrafo`.
+%::::::
 
 
 ::::::{grasple} 
