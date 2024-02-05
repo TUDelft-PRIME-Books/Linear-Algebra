@@ -872,7 +872,7 @@ Prove the last statement of the previous proposition.
 ::::::{solution} Exc:MatrixInv:Ainvinv
 :class: dropdown
 
-For the inverse  $C = (A^{-1}){-1}$  of  $A^{-1}$, it should hold that
+For the inverse  $C = (A^{-1})^{-1}$  of  $A^{-1}$, it should hold that
 
 $$
  CA^{-1} = A^{-1}C = I.
