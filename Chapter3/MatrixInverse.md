@@ -339,8 +339,7 @@ We leave the verification as an exercise.
 ::::::{exercise}
 :label: Exc:MatrixInv:CheckBA=I
 
- 
-Verify that the matrix $B$  proposed in {prf:ref}`Prop:MatrixInv:Inverse2x2` indeed  satisfies
+Verify that the matrix $B=A^{-1}$  proposed in {prf:ref}`Prop:MatrixInv:Inverse2x2` indeed  satisfies
 
 $$
   AB = BA = I.
@@ -348,9 +347,32 @@ $$
 
 Also check that the first matrix in {prf:ref}`Ex:FirstInverse` illustrates the formula. 
 
-
 ::::::
 
+::::::{solution} Exc:MatrixInv:CheckBA=I
+:class: dropdown
+
+$$
+\begin{array}{rcl} BA &=& 
+\dfrac{1}{ad-bc}\begin{bmatrix} d &-b \\ -c & a \end{bmatrix}
+\begin{bmatrix} a & b \\ c & d \end{bmatrix}\\
+ &=&
+\dfrac{1}{ad-bc}\begin{bmatrix} da-bc &db- bd \\ -ca+ac & -cb+ad \end{bmatrix} \\
+&=&
+\begin{bmatrix} \dfrac{da-bc}{ad-bc} &0 \\ 0 & \dfrac{-cb+ad}{ad-bc} \end{bmatrix} = \begin{bmatrix} 1&0 \\ 0 & 1 \end{bmatrix}.
+\end{array}
+$$
+
+Which is one of the two identities.
+
+Applying the formula of {prf:ref}`Prop:MatrixInv:Inverse2x2`  to the matrix $A = \begin{bmatrix} 1 & 2 \\ 3 & 5 \end{bmatrix}$ of {prf:ref}`Ex:FirstInverse` gives
+
+$$
+ A^{-1} = \dfrac{1}{1\cdot5 - 2\cdot 3}\begin{bmatrix} 5 & -2 \\ -3&1 \end{bmatrix} = -\begin{bmatrix} 5 & -2 \\ -3&1 \end{bmatrix} =  \begin{bmatrix} -5 & 2 \\ 3&-1 \end{bmatrix}, 
+$$
+
+which is indeed the matrix $B$ that was proposed there.
+::::::
 
 ::::::{prf:remark}
 :label: Rem:MatrixInvDetZeroDependentColumns
@@ -843,12 +865,22 @@ $$
 ::::::{exercise}
 :label: Exc:MatrixInv:Ainvinv
 
-
 Prove the last statement of the previous proposition.
-
 
 ::::::
 
+::::::{solution} Exc:MatrixInv:Ainvinv
+:class: dropdown
+
+For the inverse  $C = (A^{-1}){-1}$  of  $A^{-1}$, it should hold that
+
+$$
+ CA^{-1} = A^{-1}C = I.
+$$
+
+The matrix $C = A$ has these properties.
+
+::::::
 
 The next example gives an illustration of [ii.](#Item:MatrixInv:TransposeInverse) in {prf:ref}`Prop:MatrixInv:ElemProperties`.
 
@@ -950,19 +982,23 @@ In case it is true, give an argument, when false, give a counterexample.
 ::::::
 
 
-::::::{exercise}
-:label: Exc:MatrixInv:ConverseProdRule
+::::::{solution} Exc:MatrixInv:(AB)Tinv
+:class: dropdown
 
+The statement is *true*. <BR>
+From the two properties
 
-Prove the following converse of  {prf:ref}`Prop:MatrixInv:ProductRule`.
+$$
+   (AB)^T = B^TA^T, \quad (AB)^{-1} = B^{-1}A^{-1}
+$$
 
-If  $A$ and $B$ are $n\times n$ matrices for which the product $AB$ is invertible, then $A$ and $B$ are both invertible.
+it follows that
 
-Make sure that you do not use $A^{-1}$ or $B^{-1}$ prematurely, i.e., before you have established that they exist.
-
+$$
+    ((AB)^T)^{-1} = (B^TA^T)^{-1} = (A^T)^{-1}(B^T)^{-1}.
+$$
 
 ::::::
-
 
 
 
@@ -1388,6 +1424,45 @@ $$
 
 ::::::
 
+::::::{exercise} 
+:label: Exc:MatrixInv:ConverseProdRule
+
+
+Prove the following converse of  {prf:ref}`Prop:MatrixInv:ProductRule`.
+
+If  $A$ and $B$ are $n\times n$ matrices for which the product $AB$ is invertible, then $A$ and $B$ are both invertible.
+
+Make sure that you do not use $A^{-1}$ or $B^{-1}$ prematurely, i.e., before you have established that they exist.
+
+
+::::::
+
+::::::{solution} Exc:MatrixInv:ConverseProdRule
+:class: dropdown
+
+Suppose $A$ and $B$ are two $n \times n$ matrices for which $AB$ is invertible.  Let $C=(AB)^{-1}$  be the inverse of $AB$.  We claim that
+$BC$ is the inverse of $A$.  
+
+Now since
+
+$$
+ A(BC) = (AB)C = AB(AB)^{-1} = I,
+ $$
+ 
+it follows from {prf:ref}`Rem:MatrixInv:RightInvLeftInv` that  $(BC)A=I$ also holds.  So we have  
+
+$$
+ A(BC) = (BC)A = I,
+$$
+
+which means that $A$ is invertible and has as inverse the matrix $BC$.
+
+In the same vein it is shown that $CA$ is the inverse of $B$.
+
+
+::::::
+
+
 
 (Subsec:MatrixInverse:Summary)=
 ## Characterizations of invertibility
@@ -1587,7 +1662,9 @@ The remaining exercises have more theoretic flavour.
 :url: https://embed.grasple.com/exercises/677aa3ee-4594-4d77-ace6-583a1efcba59?id=71090
 :label: grasple_exercise_3_4_9 
 :dropdown:
-:description: True/False question about invertibility versus consistent linear systems.
+:description: True/False question about invertibility versus 
+consistent linear systems.
+
 ::::::
 
 
@@ -1597,6 +1674,7 @@ The remaining exercises have more theoretic flavour.
 :label: grasple_exercise_3_4_10 
 :dropdown:
 :description: 'To show: if $A$ is invertible, then so is $A^T$.'
+
 ::::::
 
 
@@ -1605,7 +1683,7 @@ The remaining exercises have more theoretic flavour.
 :url: https://embed.grasple.com/exercises/29dc7c2f-6636-493e-9c97-da1847a336b7?id=68908
 :label: grasple_exercise_3_4_11 
 :dropdown:
-:description: 'To show: if $AB$ is invertible, then so are $A$ and $B$.'
+:description: 'To show:  if $AB$ is invertible, then so are $A$ and $B$.'
 
 ::::::
 
@@ -1641,7 +1719,7 @@ The remaining exercises have more theoretic flavour.
 :url: https://embed.grasple.com/exercises/1732d75b-2027-4a92-b8bb-c98bda62475d?id=71093
 :label: grasple_exercise_3_4_15
 :dropdown:
-:description: 'True/False: If $A$ and $B$ are invertible, then so is $A+B$.'
+:description: 'True/False:  If $A$ and $B$ are invertible, then so is  $A+B$.'
 ::::::
 
 
@@ -1650,7 +1728,7 @@ The remaining exercises have more theoretic flavour.
 :url: https://embed.grasple.com/exercises/f8602d4f-57b7-4752-9edc-69c83069fe36?id=71095
 :label: grasple_exercise_3_4_16
 :dropdown:
-:description: 'True/False: If $A$ and $B$ are singular, then so is $A+B$.'
+:description: 'True/False:  If $A$ and $B$ are singular, then so is  $A+B$.'
 ::::::
 
 
@@ -1659,7 +1737,7 @@ The remaining exercises have more theoretic flavour.
 :url: https://embed.grasple.com/exercises/a8ea864d-1164-4afc-9a24-c0a126ee8e54?id=71097
 :label: grasple_exercise_3_4_17
 :dropdown:
-:description: 'True/False: If $A$ is row equivalent to $I$, then so is $A^2$.'
+:description: 'True/False: If $A$ is row equivalent to $I$, then so is $A^2$. '
 ::::::
 
 
