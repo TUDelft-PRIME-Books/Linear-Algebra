@@ -185,7 +185,7 @@ We leave this as an exercise.
 
 
 
-It turns out that not all projections look like the ones discussed in Section {numref}`??`, not even if we restrict ourselves to a plane. Consider for example the following construction. Let $\mathbf{v}$ be any non-zero vector in $\mathbb{R}^{2}$ and let $\mathcal{L}$ be the line through $\mathbf{v}$ and the origin. Let $\mathbf{w}$ be a vector in $\mathbb{R}^{2}$ which does not lie on $\mathcal{L}$. For any vector $\mathbf{u}$, we define $\mathcal{L}_{\mathbf{u}}$ as the line through $\mathbf{u}$ in the direction $\mathbf{w}$. We now define the transformation $T$ which maps a vector $\mathbf{u}$ to the intersection of $\mathcal{L}_{\mathbf{u}}$ and $\mathcal{L}$. For 
+It turns out that not all projections look like the ones discussed in Section {numref}`Sec:DotProduct`, not even if we restrict ourselves to a plane. Consider for example the following construction. Let $\mathbf{v}$ be any non-zero vector in $\mathbb{R}^{2}$ and let $\mathcal{L}$ be the line through $\mathbf{v}$ and the origin. Let $\mathbf{w}$ be a vector in $\mathbb{R}^{2}$ which does not lie on $\mathcal{L}$. For any vector $\mathbf{u}$, we define $\mathcal{L}_{\mathbf{u}}$ as the line through $\mathbf{u}$ in the direction $\mathbf{w}$. We now define the transformation $T$ which maps a vector $\mathbf{u}$ to the intersection of $\mathcal{L}_{\mathbf{u}}$ and $\mathcal{L}$. For 
 
 $$
 \mathbf{v}=\begin{bmatrix}2\\1\end{bmatrix}\quad\text{and}\quad\mathbf{w}=\begin{bmatrix}-2\\1\end{bmatrix}
