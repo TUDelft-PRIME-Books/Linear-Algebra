@@ -229,6 +229,42 @@ is indeed a basis for $\R^4$.
 
 ::::::
 
+::::::{solution} Exc:BasisDim:CheckStandardBasis
+:class: dropdown
+
+The set is linearly independent:
+
+$$
+ x_1\begin{bmatrix}
+1 \\ 0 \\ 0 \\ 0
+\end{bmatrix}
++x_2
+\begin{bmatrix}
+0 \\ 1 \\ 0 \\ 0
+\end{bmatrix}
++x_3
+\begin{bmatrix}
+0 \\ 0 \\ 1 \\ 0
+\end{bmatrix}
++x_4
+\begin{bmatrix}
+0 \\ 0 \\ 0 \\ 1
+\end{bmatrix} = 
+\begin{bmatrix}
+x_1 \\x_2\\x_3\\x_4 
+\end{bmatrix} = \begin{bmatrix}
+0 \\ 0 \\ 0 \\ 0
+\end{bmatrix} \quad \iff \quad \vect{x} = \begin{bmatrix}
+x_1 \\x_2\\x_3\\x_4 
+\end{bmatrix} = \vect{0}. 
+$$
+
+The set $\{vect{e}_1, \vect{e}_2, \vect{e}_3, \vect{e}_4\}$ also spans the whole $\R^4$, as for any  vector $\vect{x} = \begin{bmatrix}x_1 \\x_2\\x_3\\x_4 \end{bmatrix}$  <br>
+it holds that 
+$\vect{x} = x_1\vect{e}_1 + x_2\vect{e}_2 + x_3\vect{e}_3 + x_4\vect{e}_4$. 
+
+::::::
+
 ::::::{grasple} 
 :url: https://embed.grasple.com/exercises/7ecdf0d8-e529-4589-82f6-7207f229cd87?id=88187
 :label: grasple_exercise_4_2_A
@@ -306,7 +342,7 @@ So, there exists a set $\mathcal{B}$  containing $\mathcal{A}$ which is a basis 
 
 The ideas are quite straightforward.
 
-As for the thinning, first of all: if one of the vectors in $\mathcal A$ is the zero vector, then we can omit that vector.
+As for the thinning, first of all, if one of the vectors in $\mathcal A$ is the zero vector, then we can omit that vector.
 
 For the remaining vectors,  starting from the second vector we act as follows:
 
@@ -596,7 +632,7 @@ The observations in the last remark are formalized in the following proposition.
 
 
 ::::::{prf:proposition}
-:label: Prop:Subspaces:PivotColsBasis
+:label: Prop:BasisDim:PivotColsBasis
 
 
 
@@ -719,7 +755,7 @@ We have just shown that the linear relations of the columns of $A$ are exactly t
 
 
 ::::::{prf:example}
-:label: Ex:FourByFour
+:label: Ex:BasisDim:FourByFour
 
 
 
@@ -815,7 +851,7 @@ Note that the number of vectors in this basis for $\Col{A}$  is equal to the num
 
 
 ::::::{exercise}
-:label: Exc:BasisDim:TF:ColA=ColE
+:label: Exc:BasisDim:TF-ColA-ColE
 
 
 
@@ -832,7 +868,13 @@ $$
 ::::::
 
 
+::::::{solution} Exc:BasisDim:TF-ColA-ColE
+:class: dropdown 
 
+The statement is *false*. <BR>
+For instance, look at {prf:ref}`Ex:BasisDim:FourByFour`.  In that example all vectors in $\Col{(E)}$ have a zero on position four, and there are (many) vectors in $\Col{(A)}$ that have a nonzero fourth entry.  So definitely $\Col{(A)} \neq \Col{(E)}$
+
+::::::
 
 
 
@@ -856,9 +898,9 @@ $$
 A =
 \begin{bmatrix}
 1  &  1 & 2 &  1 & -1 \\
-2  &  2 & 7 &  0 &  2 \\
-1  &  1 & 5 &  1 & 6 \\
-3  &  3 & 9 & -1 & -2
+2  &  2 & 7 &  0 &  3 \\
+1  &  1 & 5 &  1 & 5 \\
+3  &  3 & 9 & -1 & 1
 \end{bmatrix}
 $$
 
@@ -868,8 +910,8 @@ $$
 E =
 \begin{bmatrix}
 1  &  1 & 2 &  1 & -1 \\
-0  &  0 & 3 & -2 & 4 \\
-0  &  0 & 0 &  2 & 3 \\
+0  &  0 & 3 & -2 & 5 \\
+0  &  0 & 0 &  2 & 1 \\
 0  &  0 & 0 &  0 & 0
 \end{bmatrix}.
 $$
@@ -922,6 +964,40 @@ Find a basis for the null space of the matrix in the previous example.
 
 
 
+::::::{solution}  Exc:BasisDim:FinishExampleNulspace
+:class: dropdown
+
+We row reduce the matrix  $E = \begin{bmatrix}
+1  &  1 & 2 &  1 & -1 \\
+0  &  0 & 3 & -2 & 5 \\
+0  &  0 & 0 &  2 & 1 \\
+0  &  0 & 0 &  0 & 0
+\end{bmatrix}$ further to row reduced echelon form.
+
+A short computation yields
+
+$$
+ E = \begin{bmatrix}
+1  &  1 & 2 &  1 & -1 \\
+0  &  0 & 3 & -2 & 5 \\
+0  &  0 & 0 &  2 & 1 \\
+0  &  0 & 0 &  0 & 0
+\end{bmatrix} \quad \sim \quad  E_2 = \begin{bmatrix}
+1  &  1 & 0 &  1 & -5.5 \\
+0  &  0 & 1 &  0 & 2 \\
+0  &  0 & 0 &  1 & 0.5 \\
+0  &  0 & 0 &  0 & 0
+\end{bmatrix}
+$$
+
+We can read off that a basis for $\Col{(E)} = \Col{(A)}$ is given by
+
+$$
+  \mathcal{B} = \left\{\begin{bmatrix} -1 \\1\\0\\0\\0\end{bmatrix}, \,
+   \begin{bmatrix} 11/2\\0 \\-2\\-1/2\\1 \end{bmatrix} \right\}.
+$$
+
+::::::
 
 
 
@@ -931,7 +1007,7 @@ A non-trivial subspace of $\R^n$  has infinitely many bases. They do share one f
 
 
 ::::::{prf:theorem}
-:label: Thm:Subspaces:EqualDim
+:label: Thm:BasisDim:EqualDim
 
 
 
@@ -1140,7 +1216,7 @@ The **dimension** of a subspace $S$ is the number of elements in a
 
 ::::::
 
-Because of {prf:ref}`Thm:Subspaces:EqualDim` this is a good definition.
+Because of {prf:ref}`Thm:BasisDim:EqualDim` this is a good definition.
 
 
 ::::::{prf:example}
@@ -1175,6 +1251,16 @@ You can look upon the dimension of a subspace as a means to describe its size.  
 Is the following statement true or false? 
 
 The dimension of the vector  $\vect{u} = \begin{bmatrix} 3\\4 \end{bmatrix} $  is 2.
+
+::::::
+
+::::::{solution} Exc:BasisDim:TF:DimOfVector
+:class:  dropdown
+
+The  statement is *false*.  The attribute dimension is only defined for *subspaces*.
+
+A correct statement would be: 
+the *size* of the vector  $\vect{u} = \begin{bmatrix} 3\\4 \end{bmatrix} $  is equal to 2.
 
 ::::::
 
@@ -1375,7 +1461,7 @@ $$
 
 The proof consists of combining several properties of this section.
 
-We have  seen ({prf:ref}`Prop:Subspaces:PivotColsBasis`) that  the dimension of the column space is equal to the number of pivots. Say, this number is given by $p$.
+We have  seen ({prf:ref}`Prop:BasisDim:PivotColsBasis`) that  the dimension of the column space is equal to the number of pivots. Say, this number is given by $p$.
 
 Likewise, the dimension of the null space is equal to the number of free variables in the solution of
 
@@ -1592,21 +1678,21 @@ $$
 \Row{A} =  \Row{E}.
 $$
 
-For an echelon matrix it is very easy to find a basis of the row space.  As in  {prf:ref}`Ex:RowSpaceEchelonMatrix`:  just take the nonzero rows (written as columns).
+For an echelon matrix it is very easy to find a basis of the row space.  As in  {prf:ref}`Ex:RowSpaceEchelonMatrix`, we can just take the nonzero rows (written as columns).
 The nonzero rows are the rows that start with a pivot, so we find
 
 $$
 \text{dim }\Row{A} = \text{dim }\Row{E}= \text{ number of pivots } = \text{dim } \Col{A},
 $$
 
-where at the last step we used {prf:ref}`Prop:Subspaces:PivotColsBasis`.
+where at the last step we used {prf:ref}`Prop:BasisDim:PivotColsBasis`.
 
 ::::::
 
 
 
 ::::::{prf:example}
-:label: Ex:Subspaces:Rowspace4x3
+:label: Ex:BasisDim:Rowspace4x3
 
 Consider the matrix
 
@@ -1620,7 +1706,7 @@ A =
 \end{bmatrix}
 $$
 
-of {prf:ref}`Ex:FourByFour`.
+of {prf:ref}`Ex:BasisDim:FourByFour`.
 In this example we have seen that
 
 $$
@@ -1708,6 +1794,22 @@ In the above {prf:ref}`Ex:Subspaces:Rowspace4x3` find out how the four rows of t
 ::::::
 
 
+::::::{solution} Exc:BasisDim:ExpressInRowsOfE
+:class: dropdown
+
+It can be done 'by inspection'
+
+$$
+   \begin{array}{ccl}
+      [1, 1, 1] &=& 1\cdot [1,1,1] \,\, (+0\cdot [0, 0, 1] + 0\cdot [0,0,0])\\
+      [2, 2, 2] &=& 2\cdot [1,1,1]  \\
+      [3, 3, 4] &=& 3\cdot [1,1,1] + 1\cdot [0,0,1]
+   \end{array}   
+$$
+
+::::::
+
+
 For future reference this seems to be **the** place for yet another definition:
 
 ::::::{prf:definition}
@@ -1721,17 +1823,17 @@ $$
 ::::::
 
 
-::::::{exercise}
-:label: Exc:BasisDim:TF:RankEqualsNrOfPivots
+::::::{prf:proposition}
+:label: Prop:BasisDim:RankEqualsNrOfPivots
 
-
-Is the following statement true or false? 
 
 The rank of a matrix $A$ is equal to the number of pivots.
 
 ::::::
 
 
+
+Namely, by {prf:ref}`Prop:BasisDim:PivotColsBasis` the dimension of the column space of a matrix is equal to the number of pivots.
 
 
 ::::::{exercise}
@@ -1744,6 +1846,18 @@ $$
 \text{rank}\left(A^T\right)
  = \text{rank}(A).
 $$
+
+::::::
+
+
+
+::::::{solution} Exc:BasisDim:TF:RankAEqualsRankAT
+:class:  dropdown
+
+The rank of $A^T$  is the dimension of the column space of $A^T$, which is  the dimension of the row space of $A$.  <BR>
+The rank of $A$  is the dimension of the column space of $A$.
+ <BR>
+By {prf:ref}`Prop:BasisDim:EqualDimRowColSpace`  dim Row$(A) = $ dim Row$(A)$.
 
 ::::::
 
@@ -1791,7 +1905,7 @@ The statements in {prf:ref}`Thm:BasisDim:RankThm` are both reformulations of ear
 
 
 ::::::{exercise}
-:label: Exc:BasisDim:ProveRankABLeqRankA
+:label: Exc:BasisDim:RankABLeqRankA
 
 Suppose that $A$  and $B$ are  matrices for which the product $AB$ is defined.  Show that
 
@@ -1801,9 +1915,20 @@ $$
 
 ::::::
 
+::::::{solution} Exc:BasisDim:RankABLeqRankA
+:class: dropdown
+
+The statement in {numref}`Exc:Subspaces:ColABinColA`  that says $\Col{AB} \subseteq \Col{A}$ immediately gives that
+
+$$
+\text{rank}(AB) = \text{dim Col}(AB) \leq \text{dim Col}(A) =\text{rank}\,A.
+$$
+
+
+::::::
 
 ::::::{exercise}
-:label: Exc:BasisDim:ProveRankABLeqRankB
+:label: Exc:BasisDim:RankABLeqRankB
 
 Suppose that $A$  and $B$ are  matrices for which the product $AB$ is defined.  Show that
 
@@ -1818,7 +1943,7 @@ The following proposition combines the results of the last two exercises.
 
 
 ::::::{prf:proposition}
-:label: Exc:BasisDim:ProveRankAPEqualToRankPA
+:label: Exc:BasisDim:RankAPEqualToRankPA
 
 Suppose that $A$  and $P$ are  $n\times n$ matrices and $P$ is *invertible*. Then
 
@@ -1832,13 +1957,13 @@ $$
 
 ::::::{prf:proof}
 
-Suppose $A$ and $P$ are as stated.  Then by  {numref}`Exc:BasisDim:ProveRankABLeqRankA`
+Suppose $A$ and $P$ are as stated.  Then by  {numref}`Exc:BasisDim:RankABLeqRankA`
 
 $$
 \text{rank}(AP) \leq \text{rank}(A) = \text{rank}(APP^{-1}) \leq \text{rank}(AP)
 $$
 
-The first inequality is the same as the inequality in {numref}`Exc:BasisDim:ProveRankABLeqRankA`
+The first inequality is the same as the inequality in {numref}`Exc:BasisDim:RankABLeqRankA`
 and the second inequality follows from the same exercise by taking $A = AP$   and  $B = P^{-1}$.
 This proves  $\text{rank}(AP) =   \text{rank}(A)$. <BR>
 The identity  $\text{rank}(A) =  \text{rank}(PA)$ follows by considering the transpose:
