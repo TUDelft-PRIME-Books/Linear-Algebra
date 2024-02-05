@@ -344,6 +344,38 @@ $$
 
 :::
 
+
+:::{solution} Exc:InnerProduct:(v-w)(v+w)
+:class: dropdown
+
+First of all, because of rule i. and rule iii. of {prf:ref}`Prop:RulesInnerProduct`
+it holds that 
+
+$$
+   \mathbf{v}_1\ip(\mathbf{v}_2+\mathbf{v}_3) = \mathbf{v}_1\ip\mathbf{v}_2+\mathbf{v}_1\ip\mathbf{v}_3
+$$
+
+and it also follows from ii. and iii. that 
+
+$$
+   \mathbf{v}_1\ip(\mathbf{v}_2-\mathbf{v}_3) = \mathbf{v}_1\ip(\mathbf{v}_2+(-1)\mathbf{v}_3) =\mathbf{v}_1\ip\mathbf{v}_2+\mathbf{v}_1\ip(-1\mathbf{v}_3) = \mathbf{v}_1\ip\mathbf{v}_2-\mathbf{v}_1\ip\mathbf{v}_3
+$$
+
+Then the statement is proved by the following chain of identities
+
+$$
+  \begin{array}{rcl}(\mathbf{v}_1+\mathbf{v}_2)\ip(\mathbf{v}_1-\mathbf{v}_2) &=&
+    \mathbf{v}_1\ip(\mathbf{v}_1-\mathbf{v}_2) + \mathbf{v}_2\ip(\mathbf{v}_1-\mathbf{v}_2) \\
+    &=& \mathbf{v}_1\ip\mathbf{v}_1-\mathbf{v}_1\ip\mathbf{v}_2
+    + \mathbf{v}_2\ip\mathbf{v}_1-\mathbf{v}_2\ip\mathbf{v}_2\\
+    &=& \mathbf{v}_1\ip\mathbf{v}_1-\mathbf{v}_2\ip\mathbf{v}_2.
+  \end{array}
+
+$$
+:::
+
+
+
 :::{exercise}
 :label: Exc:InnerProduct:PargramRule
 
@@ -355,6 +387,25 @@ $$
 $$
 
 and explain why it is called the *parallelogram rule*.
+
+:::
+
+
+
+:::{solution} Exc:InnerProduct:PargramRule
+:class: dropdown
+
+Again it's a chain of identities using basic properties of the dot product. 
+
+$$
+  \begin{array}{rcl} \norm{\mathbf{v}_1+\mathbf{v}_2}^2 + \norm{\mathbf{v}_1-\mathbf{v}_2}^2&=&  (\mathbf{v}_1+\mathbf{v}_2)\cdot(\mathbf{v}_1+\mathbf{v}_2) + 
+      (\mathbf{v}_1-\mathbf{v}_2)\cdot(\mathbf{v}_1-\mathbf{v}_2)     \\
+    &=& \mathbf{v}_1\cdot\mathbf{v}_1 +2\mathbf{v}_1\cdot\mathbf{v}_2 + \mathbf{v}_1\cdot\mathbf{v}_2 + \mathbf{v}_1\cdot\mathbf{v}_1 -2\mathbf{v}_1\cdot\mathbf{v}_2 + \mathbf{v}_2\cdot\mathbf{v}_2  \\
+    &=&   2\,mathbf{v}_1\cdot\mathbf{v}_1 +2\,\mathbf{v}_2\cdot\mathbf{v}_2    \\
+    &=&   2 (\norm{\mathbf{v}_1}^2 + \norm{\mathbf{v}_2}^2).
+  \end{array}
+
+$$
 
 :::
 
@@ -407,10 +458,10 @@ $$
 and conclude that  $\mathbf{u}$ and $\mathbf{v}$ are orthogonal, $\mathbf{u}$ and $\mathbf{w}$ are not orthogonal, <BR>  $\mathbf{v}$ and $\mathbf{w}$  are orthogonal.
 
 ::::{grasple}
-:url: https://embed.grasple.com/exercises/83c8e82a-ed9c-451f-b552-631b6160e270?id=78789
-:label: grasple_exercise_1_2_1
+:url: https://embed.grasple.com/exercises/59912254-6fc8-43c7-9c44-1ea7eab1c236?id=62409
+:label: grasple_exercise_1_2_1T
 :dropdown:
-:description:
+:description: To compute some dot products in $\R^2, \R^3, \R^4$.
 
 ::::
 
@@ -424,7 +475,7 @@ By definition the zero vector is orthogonal to any vector, since $\mathbf{0}\ip\
 :::{prf:proposition}
 :label: Prop:InnerProduct:vDotv=0Impliesv=0
 
-Suppose  $\mathbf{v} \in \mathbb{R}^n$.  Then  $\mathbf{v}\perp\mathbf{v} \iff \mathbf{v} = \mathbf{0}$.
+Suppose  $\mathbf{v} \in \mathbb{R}^n$. &nbsp; Then  $\mathbf{v}\perp\mathbf{v} \iff \mathbf{v} = \mathbf{0}$.
 
 :::
 
@@ -439,7 +490,7 @@ $$
  \mathbf{v}\perp\mathbf{v} \iff \mathbf{v}\ip\mathbf{v}=0
 $$
 
-In {prf:ref}`Prop:RulesInnerProduct` (iv) we already showed that the last equality only holds for $\mathbf{v} = \mathbf{0}$.
+In {prf:ref}`Prop:RulesInnerProduct` iv. it was stated that the last equality only holds for $\mathbf{v} = \mathbf{0}$.
 
 :::
 
@@ -594,36 +645,22 @@ as required.
 
 :::
 
-:::{exercise}
-:label: Exc:InnerProduct:FindProjectionOntoLine
 
 
-
-Find the projection $\mathbf{w} = \text{proj}_{\mathbf{v}}(\mathbf{u})$  of the vector
-
-$$
-
-  \mathbf{u} = \begin{bmatrix} 11\\ 8 \\ -5\end{bmatrix}  \text{ onto the vector }
-  \mathbf{v} = \begin{bmatrix} 1\\2 \\ -3\end{bmatrix},
-$$
-
-and show that
-
-$$
-
-  \norm{\mathbf{w}} \leq \norm{\mathbf{u}}.
-$$
-
-% (Answer: $\vect{w} =  \begin{bmatrix} 3\\6 \\ -9\end{bmatrix}$.\,)
-
-:::
+::::{grasple}
+:url: https://embed.grasple.com/exercises/88c460cd-36ee-49b0-8fb8-d29b55ad253a?id=84822
+:label: grasple_exercise_1_2_2T 
+:dropdown:
+:description: Computing the projection of a vector $\vect{w}$ onto a vector $\vect{v}
+$.
+::::
 
 :::{exercise}
-:label: Exc:InnerProduct:SameProjectionThenWhat
+:label: Exc:InnerProduct:SameProjectionThenWhat  
 
 
-Suppose $\text{proj}_{\mathbf{v}}(\mathbf{w_1}) = \text{proj}_{\mathbf{v}}(\mathbf{w_2}) $,
-for three nonzero vectors $\mathbf{v}, \,\mathbf{w_1},\,\mathbf{w_2}$ in $\mathbb{R}^n$.
+Suppose $\text{proj}_{\mathbf{v}}(\mathbf{w}_1) = \text{proj}_{\mathbf{v}}(\mathbf{w}_2) $,
+for three nonzero vectors $\mathbf{v}, \,\mathbf{w}_1,\,\mathbf{w}_2$ in $\mathbb{R}^n$.
 What does this say about the relative positions of the three vectors?
 
 Verify your statement for the following three vectors
@@ -631,12 +668,58 @@ Verify your statement for the following three vectors
 $$
 
  \mathbf{v} = \begin{bmatrix} 1\\ 1 \\ -2 \\ -3\end{bmatrix}, \quad
- \mathbf{w_1} = \begin{bmatrix} 6\\ 4 \\ -7 \\ -7\end{bmatrix}, \quad
- \mathbf{w_2} = \begin{bmatrix} 5\\ 6 \\ -2 \\ -10\end{bmatrix}.
+ \mathbf{w}_1 = \begin{bmatrix} 6\\ 4 \\ -7 \\ -7\end{bmatrix}, \quad
+ \mathbf{w}_2 = \begin{bmatrix} 5\\ 6 \\ -2 \\ -10\end{bmatrix}.
 $$
 
 
 :::
+
+
+:::{solution} Exc:InnerProduct:SameProjectionThenWhat
+:class: dropdown
+
+Suppose $\text{proj}_{\mathbf{v}}(\mathbf{w}_1) = \text{proj}_{\mathbf{v}}(\mathbf{w}_2) $.  Thus  $\dfrac{\mathbf{w}_1\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}} \mathbf{v} = \dfrac{\mathbf{w}_2\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}} \mathbf{v}$.
+
+Since    $\mathbf{v}$ is not the zero vector this implies that
+$\mathbf{w}_1\ip\mathbf{v} = \mathbf{w}_2\ip\mathbf{v}$.  In other words,
+
+$$
+  \mathbf{w}_1\ip\mathbf{v} - \mathbf{w}_2\ip\mathbf{v} =
+  (\mathbf{w}_1 - \mathbf{w}_2)\ip \mathbf{v} = 0,
+$$
+
+which expresses that &nbsp; $(\mathbf{w}_1 - \mathbf{w}_2)\perp \vect{v}$.
+
+
+For the given vectors  $\mathbf{v}, \mathbf{w}_1, \mathbf{w}_2$ we find
+
+$$
+  \dfrac{\mathbf{w}_1\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}} \mathbf{v} = 
+       \frac{\mathbf{w}_2\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}} \mathbf{v} =
+       \dfrac{45}{15}\mathbf{v}
+$$
+
+and    
+
+$$
+\mathbf{w}_1 - \mathbf{w}_2 = \begin{bmatrix} 6\\ 4 \\ -7 \\ -7\end{bmatrix} - \begin{bmatrix} 5\\ 6 \\ -2 \\ -10 \end{bmatrix} = 
+  \begin{bmatrix} 1\\ -2 \\ -5 \\ 3\end{bmatrix}.
+$$
+  
+We see   $  (\mathbf{w}_1 - \mathbf{w}_2)\ip \mathbf{v} = 1 - 2 + 10 + 9 = 0$,
+so indeed $(\mathbf{w}_1 - \mathbf{w}_2)$ and $\vect{v}$ are orthogonal.
+
+{numref}`Figure %s <Fig:InnerProduct:SameProj>`shows what's going on.
+
+:::{figure} Images/Fig-InnerProduct-SameProj.svg
+:name: Fig:InnerProduct:SameProj
+
+Two vectors $\vect{w}_1$, $\vect{w}_2 $  with the same projection onto $\vect{v}$.
+
+:::
+
+
 
 (Subsec:InnerProduct:Norm_in_Rn)=
 
@@ -804,10 +887,10 @@ Rule iii. is again called the *Triangle Inequality*.
 ::::
 
 ::::{exercise}
-:label: Exc:InnerProduct:ProofPropDist
+:label: Exc:InnerProduct:ProofPropDist  
 
-Check the three properties of the distance function as stated in 
-{prf:ref}`Prop:InnerProduct:PropertiesNorm`. &nbsp;
+Check the three properties  of the distance function as stated in 
+{prf:ref}`Prop:InnerProduct:PropertiesDistance`. &nbsp;
 For Rule iii., only show how it  follows from the corresponding Rule iii. in
 that same proposition. 
 ::::
