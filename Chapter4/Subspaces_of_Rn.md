@@ -123,7 +123,7 @@ In fact, the latter does not satisfy **any** of the three properties of a subspa
 In the  picture on the right, for two vectors $\vect{u}$ and $\vect{v}$ on the line $\mathcal L$,
 
 $$
-\vect{u}+\vect{v} \, \text{ and   } \, -\tfrac32\vect{u} \, \text{    do not lie on   } \,{\mathcal L}
+\vect{u}+\vect{v} \text{ \,   and \,  }  -\tfrac32\vect{u} \text{ \,    do not lie on  \,}{\mathcal L}
 $$
 
 
@@ -147,6 +147,25 @@ It is good practice to keep these examples in mind as typical examples of subspa
 ::::::
 
 
+::::::{exercise}
+:label: Exc:Subspaces:NonSubspacesR2
+
+<ol type = "i">
+<li>
+
+Give an example of a subset in $\R^2$ that has property (i) and (ii), but not property (iii).
+
+</li>
+<li>
+
+Also give a set with only the properties (i) and (iii).
+
+</li>
+</ol>
+
+::::::
+
+
 ::::::{prf:example}
 
 A disk  $D$ specified by the inequality $x^2 + y^2 \leq a^2$, where $a$ is some positive number, is not a subspace of $\R^2$.  It has neither of the properties
@@ -160,52 +179,6 @@ A disk is not a subspace of $\R^2$.
 
 ::::::
 
-
-::::::{exercise}
-:label: Exc:Subspaces:NonSubspacesR2
-
-<ol type = "a">
-<li>
-
-Give an example of a subset in $\R^2$ that has property i and ii, but not property iii.
-
-</li>
-<li>
-
-Also give a set with only the properties i and iii.
-
-</li>
-</ol>
-
-::::::
-
-
-::::::{solution} Exc:Subspaces:NonSubspacesR2
-:class: dropdown
-
-We first give an example of a subset of $\R^2$ that only has properties i. and ii.
-
-Let  $S_1$  be the vectors in $\R^2$ with non-negative entries.  So, $S_1$ is the first quadrant of the $x_1$-$x_2$-plane. <BR>
-For two vectors in $S_1$ their sum still lies in $S_1$.
-However,  if $\vect{v}\neq \vect{0}$ lies in $S_1$ and $c$ is negative, then $c\vect{v}$ is not in $S_1$.
-
-An example of a subset of $\R^2$ that only has properties i. and iii. is the following:   
-
-$$
-  S_2 = \left\{ \begin{bmatrix}x_1 \\ x_2  \end{bmatrix}\,:\,\,
-  x_1x_2 = 0 \right\}.
-$$
-
-So $S_2$ consists of the two coordinate axes. <BR>
-$S_2$ contains the origin, and is closed under taking multiples. <BR>
-However for the two vectors $\vect{e}_1, \vect{e}_2$ in $S_2$ the sum is not:
-
-$$
- \vect{e}_1 + \vect{e}_2 = \begin{bmatrix} 1 \\ 0 \end{bmatrix} +
-  \begin{bmatrix} 0 \\ 1 \end{bmatrix} = \begin{bmatrix} 1 \\ 1 \end{bmatrix}.
-$$
-
-::::::
 
 ::::::{prf:proposition}
 :label: Prop:Subspaces:SpanClosed
@@ -619,10 +592,10 @@ $$
 can be written in parametric vector form
 
 $$
-\vect{x} = c_1\vect{u}_1 + c_2\vect{u}_2 + \ldots +  c_k\vect{u}_k.
+\vect{x} = c_1\vect{u_1} + c_2\vect{u_2} + \ldots +  c_k\vect{u_k}.
 $$
 
-Thus:  it is the span of a set of vectors, and as such 
+Thus:  it is the span of a set of vectors, and as such, 
 by {prf:ref}`Prop:Subspaces:SpanIsSubspace` it is a subspace.
 
 
@@ -658,47 +631,6 @@ Can you find a similar formula relating the null space of $AB$ to the null space
 
 ::::::
 
-::::::{solution} Exc:Subspaces:ColABinColA
-:class: dropdown
-
-Suppose that $A$ is an $m\times n$  and $B$ an $n \times p$  matrix.
-Thus $AB$ is an $m\times p$ matrix. 
-
-<ol type = "i">
-
-<li>
-
-The column space of an $m\times n$ matrix $M$, consists of all vectors
-$\vect{w} = M\vect{v}$, where  $\vect{v}$ is a vector in $\R^n$.
-
-Suppose  $\vect{w}$ is a vector in Col$(AB)$, so  $\vect{w} = AB\vect{v}$ for some vector $\vect{v}$ in $\R^p$. <BR>
-Then also  $\vect{w} = A(B\vect{v})$, where $B\vect{v}$ is a vector in $\R^n$, which proves that $\vect{w} \in $ Col$(A)$.
-
-With this we have shown that every vector in Col$(AB)$ also lies in Col$(A)$, i.e.,
-
-$$
-\Col{(AB)} \subseteq \Col{(A)}.
-$$
-
-</li>
-<li>
-
-The nulspace of an $m\times n$  matrix $M$ consists of all vectors $\vect{v}$ in $\R^n$ for which $M\vect{v} = \vect{0}$.  &nbsp;
-We show that 
-
-$$
-\Nul{(B)} \subseteq \Nul{(AB)}.
-$$
-
-Suppose $\vect{v}$ is an element of $\Nul{(B)}$. &nbsp;
-Then  $B\vect{v}= \vect{0}$, so a fortiori $AB\vect{v}= A\vect{0} =\vect{0}$, and so $\vect{v}$ lies in $\Nul{(AB)}$.
-
-</li>
-</ol>
-
-
-::::::
-
 
 ::::::{exercise}
 :label: Exc:Subspaces:WhatIfAAeq0
@@ -708,33 +640,8 @@ For an $n\times n$ matrix $A$,  the null space and the column space are both sub
 For a square matrix $A$:
 
 $$
-A^2 = O \quad \iff \quad  \Col{(A)}  \subseteq \Nul{(A)}.
+A^2 = O \quad \iff \quad  \Col{A}  \subseteq \Nul{A}.
 $$
-
-::::::
-
-::::::{solution} Exc:Subspaces:WhatIfAAeq0
-:class: dropdown
-
-First we show that
-
-$$
-A^2 = O \quad \Rightarrow \quad  \Col{(A)}  \subseteq \Nul{(A)}.
-$$
-
-Let $\vect{w}\in\Col{(A)}$. <BR>
-Then there is a vector $\vect{v}$ in $\R^n$ for which  $\vect{w} = A\vect{v}$.  <BR>
-It follows that  $A\vect{w} = A^2\vect{v} = O\vect{v} = \vect{0}$.   Thus  $\vect{w} \in \Nul{(A)}$.
-
-Next we have to we show that
-
-$$
-\Col{(A)}  \subseteq \Nul{(A)} \quad \Rightarrow \quad  A^2 = O.
-$$
-
-If we can show that  $A^2\vect{x}= \vect{0}$ for every vector $\vect{x}$ in $\R^n$, we're done. <br>
-So let  $\vect{x}$ be any vector in $\R^n$.  Then $\vect{y} =A\vect{x}$ lies in the column space of $A$, which is contained in the nulspace of $A$. <br>
-So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = O$.
 
 ::::::
 
@@ -855,7 +762,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 :url: https://embed.grasple.com/exercises/3b5196d2-1219-494e-a445-9dcadd8f19a0?id=88181
 :label: grasple_exercise_4_1_13
 :dropdown:
-:description:  To check whether certain subsets $S_i$  of $\mathbb{R}^3$ are subspaces. 
+:description:  To check whether certain subsets $S_i$  of $\mathbb{R}^3$ are subspaces 
 
 ::::::
 
@@ -863,6 +770,6 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 :url: https://embed.grasple.com/exercises/66eb42d3-ed92-45aa-8576-d6c4b86c8502?id=88184
 :label: grasple_exercise_4_1_14
 :dropdown:
-:description:  To check whether  certain subsets $S_i$  of $\mathbb{R}^3$ are subspaces. 
+:description:  To check whether  certain subsets $S_i$  of $\mathbb{R}^3$ are subspaces 
 
 ::::::
