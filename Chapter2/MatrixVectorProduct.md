@@ -685,7 +685,7 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 :url: https://embed.grasple.com/exercises/56cf013b-dc6a-4774-ac1e-fa694b16a2a8?id=85089
 :label: grasple_exercise_2_4_3
 :dropdown:
-:description:For a given matrix  $A$, does the equation $A\vect{x}=\vect{b}$ have a solution for every $\vect{b}$?
+:description: For a given matrix  $A$, does the equation $A\vect{x}=\vect{b}$ have a solution for every $\vect{b}$?
 
 ::::
 
