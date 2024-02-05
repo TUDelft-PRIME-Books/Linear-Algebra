@@ -2078,7 +2078,7 @@ The remaining exercises are less of a compuational character.
 :url: https://embed.grasple.com/exercises/78c129ac-644d-4fbd-bf47-c2283d0e1f7a?id=69460
 :label: grasple_exercise_3_2_21
 :dropdown:
-:description: To show:  $A^TA = D \iff A$  has orthogonal columns.
+:description: 'To show: $A^TA = D \iff A$  has orthogonal columns.'
 
 ::::::
 
