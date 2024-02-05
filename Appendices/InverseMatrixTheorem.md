@@ -38,7 +38,7 @@ For an $n\times n$ matrix $A$, the following are equivalent:
 
 :::{prf:proof}
 
-For the equivalence of {itemref}`It:Appendices:InvDef` through {itemref}`It:Appendices:InvDefColSpanRn`, see {prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations` and {numref}`Exc:BasisDim:ProveRankABLeqRankA`. Statement {itemref}`It:Appendices:InvIffFullRank` is part of {prf:ref}`Thm:BasisDim:RankThm`. {prf:ref}`Thm:DetRowReduction:Invertibility` says precisely that invertibility is equivalent to {itemref}`It:Appendices:InvIffDetNeq0`. For {itemref}`It:Appendices:InvIffZeroNoEV`, see {prf:ref}`Prop:EigenValues:Singularity`.
+For the equivalence of {itemref}`It:Appendices:InvDef` through {itemref}`It:Appendices:InvDefColSpanRn`, see {prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations` and {numref}`Exc:BasisDim:RankABLeqRankA`. Statement {itemref}`It:Appendices:InvIffFullRank` is part of {prf:ref}`Thm:BasisDim:RankThm`. {prf:ref}`Thm:DetRowReduction:Invertibility` says precisely that invertibility is equivalent to {itemref}`It:Appendices:InvIffDetNeq0`. For {itemref}`It:Appendices:InvIffZeroNoEV`, see {prf:ref}`Prop:EigenValues:Singularity`.
 
 :::
 
