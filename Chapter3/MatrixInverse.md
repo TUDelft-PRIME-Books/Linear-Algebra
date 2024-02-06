@@ -149,7 +149,7 @@ For non-square matrices things are even worse. In this section we will only cons
 (Subsec:MatrixInv:DefInverse)=
 
 
-## Definition and basic properties of the inverse
+## Definition and Basic Properties of the Inverse
 
 
 ::::::{prf:definition}
@@ -1005,7 +1005,7 @@ $$
 (Subsec:MatrixInverse:ComputeInverse)=
 
 
-## How to compute the inverse
+## How to Compute the Inverse
 
 The construction of the inverse of a matrix was already present implicitly in {prf:ref}`Prop:MatrixInv:InvertibleIndepCols`.
 
@@ -1465,7 +1465,7 @@ In the same vein it is shown that $CA$ is the inverse of $B$.
 
 
 (Subsec:MatrixInverse:Summary)=
-## Characterizations of invertibility
+## Characterizations of Invertibility
 
 In the previous subsections quite a few properties of invertible matrices came along, either explicitly or implicitly. For future reference we list them in a theorem.
 

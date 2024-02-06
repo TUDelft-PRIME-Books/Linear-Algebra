@@ -123,7 +123,7 @@ There are special cases where solving linear systems can be done quickly. These 
 The most common factorisation methods make use of this kind of matrices. This is why we will first introduce the idea of a trapezoidal and triangular matrix and then discuss the corresponding factorisation methods and their applications.
 
 
-## Trapezoidal and Triangular matrices
+## Trapezoidal and Triangular Matrices
 
 At this point one probably figured out that when we find an echelon form for an $m\times n$ matrix, that echelon form is actually a trapezoidal matrix. However, to talk about trapezoidal matrices, first we need to revisit the concept of "main diagonal" of a matrix introduced in {prf:ref}`Def:MatrixOps:MainDiagonal`. We will extend this concept to non-square matrices.
 
@@ -1152,7 +1152,7 @@ where $P$ is an $m\times m$ matrix that exchanges the rows of $A$, $L$ is an $m\
 
 :::::
 
-## Application of the (P)LU decomposition
+## Application of the (P)LU Decomposition
 
 One way to measure the performance of an algorithm is counting the number of arithmetic operations [^flopnote] that are necessary for solving a problem. By arithmetic operations we will take into account sums, products, multiplications and divisions. Suppose that we want to solve the linear system $A\mathbf{x}=\mathbf{b}$ by taking the augmented matrix $[ A | \mathbf{b}]$, finding an echelon form with the same solution set, and then using backward substitution.
 

@@ -38,7 +38,7 @@ which makes them the protagonists of the more general linear algebra concept of 
 
 
 (Subsec:MatrixTrafo)=
-## Matrix  transformations
+## Matrix Transformations
 
 Let $A$ be an $m\times n$ matrix.  We can in a natural way associate a transformation $T_A:\mathbb{R}^n \to \mathbb{R}^m$ to the matrix $A$.
 
@@ -883,7 +883,7 @@ And now, let us return to matrix transformations.
 
 
 (Subsec:LinTrafo:LinTrafoeqMatrixTrafo)=
-## Standard Matrix for  a Linear Transformation
+## Standard Matrix for a Linear Transformation
 
 
 We have seen that every matrix transformation is a linear transformation. In this subsection we will show that conversely

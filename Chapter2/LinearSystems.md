@@ -400,7 +400,7 @@ $$
 
 
 (Subsec:LinSystems:Elimination)=
-## Solving a linear system by elimination 
+## Solving a Linear System by Elimination 
 
 We start with an example of three equations in three unknowns:
 
@@ -851,7 +851,7 @@ If no such equation appears, the general solution can be found by back substitut
 In theory  the method works for any linear system, however large, though with pen and paper it soon becomes cumbersome.  In the next subsection we will use an appropriate representation of a linear system to solve it in a more efficient way.  And we will also see  how the procedure of back-substitution can be incorporated in the elimination process.
 
 (Subsec:LinSystems:AugmentedMatrix)=
-## Augmented matrices 
+## Augmented Matrices 
 
 We will introduce a convenient shorthand notation for  linear systems. This notation  contains the essentials of the system in a structured way.  
 
@@ -1049,7 +1049,7 @@ The right moment to start this back substitution is when the augmented matrix ha
 
 
 (Subsec:LinSystems:RowReduction)=
-## Row reduction and echelon forms 
+## Row Reduction and Echelon Forms 
 
 In  {numref}`Subsec:LinSystems:Elimination`  we have solved linear systems by eliminating variables from the equations. It would be nice to have a clear mark where we can stop rewriting the given system, to forestall ending up in a never ending loop.  When we use the notation of an augmented matrix we can identify such a mark.
 We first need a few more definitions.

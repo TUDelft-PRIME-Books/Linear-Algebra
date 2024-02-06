@@ -1,5 +1,5 @@
 (Sec:GeomLinTrans)=
-# Some important classes of linear transformations
+# Some Important Classes of Linear Transformations
 
 
 
@@ -659,7 +659,7 @@ In the plane, you can only rotate around the origin. Things get considerably mor
 
 
 
-## Shear transformations
+## Shear Transformations
 
 
 

@@ -7,7 +7,7 @@ In this section we will look at a specific operation on vectors in $\mathbb{R}^3
 to construct a vector that is orthogonal to a given plane in $\mathbb{R}^3$. This will allow us to describe such a plane with a very simple equation.
 
 
-## Definition and basic properties
+## Definition and Basic Properties
 
 ::::{prf:definition}
 :label: Def:CrossProduct:Crossproduct
@@ -150,7 +150,7 @@ since $\sqrt{(\sin(\theta))^2}=|\sin(\theta)|$.
 Notice some similarities between the formula for the length of the cross product and a formula that we saw in the Section [](./Inner_Product.md). There we encountered the equality $\mathbf{u}\ip\mathbf{v} = \norm{\mathbf{u}}\norm{\mathbf{v}} \cos(\theta)$, where $\theta$ was the angle between $\mathbf{u}$ and $\mathbf{v}$.
 
 
-## Geometrical properties of the cross product
+## Geometrical Properties of the Cross Product
 
 We can derive some interesting geometrical results from {prf:ref}`Prop:CrossProduct:NormCrossProduct`.
 

@@ -6,7 +6,7 @@ In this section we will consider other (geometric) properties of vectors, like t
 We will start by considering vectors in $\mathbb{R}^2$ and $\mathbb{R}^3$. The translation of the concepts to the general space $\mathbb{R}^n$ will then become more or less immediate.
 
 (Subsec:InnerProduct:Length_and_perpendicular)=
-## Length and perpendicularity in $\mathbb{R}^2$ and $\mathbb{R}^3$
+## Length and Perpendicularity in $\mathbb{R}^2$ and $\mathbb{R}^3$
 
 The length of a vector
 
@@ -174,7 +174,7 @@ Using the dot product the concepts length and perpendicular easily carry over to
 
 (Subsec:Dot_product:InnerProduct_in_Rn)=
 
-## Dot product in $\mathbb{R}^n$
+## Dot Product in $\mathbb{R}^n$
 
 ::::{prf:definition}
 :label: Dfn:InnerProduct:DotProduct
