@@ -766,7 +766,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
-:url: https://embed.grasple.com/exercises/
+:url: https://embed.grasple.com/exercises/8f89db8f-777f-4f11-9e09-23ddacf7a08d?id=87428
 :label: grasple_exercise_2_5_25
 :dropdown:
 :description: What about linear combinations of (four) linearly independent vectors?
@@ -775,7 +775,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 
 
 ::::::{grasple}
-:url: https://embed.grasple.com/exercises/
+:url: https://embed.grasple.com/exercises/43810ef4-d9c7-4097-8d05-f91dd67bbb43?id=68868
 :label: grasple_exercise_2_5_26
 :dropdown:
 :description: What about subsets and unions of sets of linearly independent vectors?

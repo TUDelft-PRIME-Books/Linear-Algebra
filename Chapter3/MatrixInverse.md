@@ -872,7 +872,7 @@ Prove the last statement of the previous proposition.
 ::::::{solution} Exc:MatrixInv:Ainvinv
 :class: dropdown
 
-For the inverse  $C = (A^{-1})^{-1}$  of  $A^{-1}$, it should hold that
+For the inverse  $C = (A^{-1})^{-1}$  of  $A^{-1}$,  it should hold that
 
 $$
  CA^{-1} = A^{-1}C = I.
@@ -1279,7 +1279,7 @@ $$
 $$
 
 For non-square matrices this statement is not correct. The interested reader is invited  to take a look at the last exercises in the Grasple subsection 
-{numref}`Subsec:MatrixInverse:Grasple`.
+({numref}`Subsec:MatrixInverse:Grasple`).
 %{prf:ref}`grasple_exercise_3_4_23`  and {prf:ref}`grasple_exercise_3_4_24`.
 
 ::::::
