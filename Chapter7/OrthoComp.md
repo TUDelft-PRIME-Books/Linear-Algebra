@@ -1,5 +1,5 @@
 (Sec:OrthoComp)=
-# Orthogonal complements
+# Orthogonal Complements
 
 In this section, we will introduce the orthogonal complement of a subspace. This concept will help us define orthogonal projections easily.
 
