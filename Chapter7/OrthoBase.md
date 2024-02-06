@@ -543,6 +543,7 @@ We know that $A$ is orthogonal if and only if $A^{T}A=I_{n}$. But this implies $
 :label: grasple_exercise_7_2_2 
 :dropdown:
 :description: Projection formula with non-orthogonal basis.
+
 ::::
 
 ::::{grasple} 
