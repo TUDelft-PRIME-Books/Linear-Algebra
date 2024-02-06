@@ -1,5 +1,4 @@
 (Sec:OrthoBase)=
-
 # Orthogonal and orthonormal bases
 
 ## Orthogonal and orthonormal bases
