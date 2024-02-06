@@ -329,7 +329,7 @@ $(A^T)^T = A$.
 
 ::::::{prf:proof}
 We will prove the second statement and leave the other two to the diligent reader. See 
-{numref}`Exc:MatrixOps:CheckSumRules`.
+{numref}`Exc:MatrixOps:CheckTransposeRules`.
 
 So, suppose $A$ and $B$ are two $m \times n$ matrices.
 Then $A+B$ is an $m \times n$ matrix too, hence  $(A+B)^T$ is an $n \times m$ matrix.  The matrix $A^T  + B^T$  on the right-hand side of the equation is the sum of two  $n \times m$ matrices, which is again an  $n \times m$ matrix. So the matrices on both sides of the equation 
@@ -432,17 +432,51 @@ with on position $(2,3)$ the value  <span style="border-style:solid; padding:4px
 
 
 ::::::{exercise}
-:label: Exc:MatrixOps:CheckSumRules
-
+:label: Exc:MatrixOps:CheckTransposeRules
 
 Prove statements (i) and (iii) of {prf:ref}`Prop:MatrixOps:Transpose`.
 
-
 ::::::
 
+::::::{solution} Exc:MatrixOps:CheckTransposeRules
+:class:  dropdown
 
+Suppose  $A = \left[\begin{array}{cccc}
+            a_{11} & a_{12}&  \ldots&   a_{1n}   \\
+            a_{21} & a_{22}&  \ldots&   a_{2n}   \\
+            \vdots &  \vdots&  \cdots&  \vdots    \\
+            a_{m1} & a_{m2}&  \ldots&   a_{mn}    
+          \end{array}
+   \right]$  is an arbitrary $m \times n$ matrix.  Then
 
+$$
+  \begin{array}{rcl}
+  (cA)^T &=&  \left[\begin{array}{cccc}
+            ca_{11} & ca_{12}&  \ldots& ca_{1n}   \\
+            ca_{21} & ca_{22}&  \ldots& ca_{2n}   \\
+            \vdots &  \vdots&  \cdots&  \vdots    \\
+            ca_{m1} & ca_{m2}&  \ldots& ca_{mn}    
+          \end{array}^T
+   \right] =
+   \left[\begin{array}{cccc}
+            ca_{11} & ca_{21}&  \ldots& ca_{m1}   \\
+            ca_{12} & ca_{22}&  \ldots& ca_{m2}   \\
+            \vdots &  \vdots&  \cdots&  \vdots    \\
+            ca_{1n} & ca_{2n}&  \ldots& ca_{mn}    
+          \end{array}
+   \right] \\
+   &=&
+   c \left[\begin{array}{cccc}
+            a_{11} & a_{21}&  \ldots& a_{m1}   \\
+            a_{12} & a_{22}&  \ldots& a_{m2}   \\
+            \vdots &  \vdots&  \cdots&  \vdots    \\
+            a_{1n} & a_{2n}&  \ldots& a_{mn}    
+          \end{array}
+   \right]  = c\,A^T
+   \end{array}
+$$
 
+::::::
 
 
 ::::::{prf:example}
@@ -2078,7 +2112,7 @@ The remaining exercises are less of a compuational character.
 :url: https://embed.grasple.com/exercises/78c129ac-644d-4fbd-bf47-c2283d0e1f7a?id=69460
 :label: grasple_exercise_3_2_21
 :dropdown:
-:description: To show:  $A^TA = D \iff A$  has orthogonal columns.
+:description: 'To show:  $A^TA = D \iff A$  has orthogonal columns.'
 
 ::::::
 

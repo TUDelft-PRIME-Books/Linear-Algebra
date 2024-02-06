@@ -1,5 +1,5 @@
 (Sec:DetExtras)=
-# Miscellaneous applications of determinants
+# Miscellaneous Applications of Determinants
 
 In this section we will address the following matters:
 <ul>

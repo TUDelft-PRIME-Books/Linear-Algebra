@@ -1,5 +1,5 @@
 (Sec:DetGeometric)=
-# Determinants as areas or volumes
+# Determinants as Areas or Volumes
 
 
 ## Introduction

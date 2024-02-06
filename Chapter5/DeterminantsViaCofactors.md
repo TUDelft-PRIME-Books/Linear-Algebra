@@ -1,5 +1,5 @@
 (Sec:DeterminantsViaCofactors)=
-# Determinants via cofactor expansion
+# Determinants via Cofactor Expansion
 
 In {numref}`Sec:DetGeometric` we have defined determinants of 2 by 2 and 3 by 3 matrices in a geometric way.
 We start with the general definition straightaway.

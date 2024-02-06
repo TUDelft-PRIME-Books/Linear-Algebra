@@ -5,7 +5,7 @@ In this section we will introduce another interpretation/representation of a sys
 We'll define the product of an $m\times n$ matrix $A$ with a vector $\vect{x}$ in $\mathbb{R}^n$. In the next chapter this will also be the stepping stone to the general matrix-matrix product. 
 
 
-(Sec:MatVecProduct)=
+(Subsec:MatVecProduct)=
 ## Definition of the Matrix-Vector Product 
 
 ::::{prf:definition} 
@@ -364,6 +364,40 @@ Prove statement (ii) of the previous proposition.
 ::::
 
 
+::::{solution} Exc:MatVecProduct:CheckLinearity(ii)
+:class: dropdown
+
+Assume  
+
+$$
+  A = [\,\mathbf{a_1}\,\,\,\mathbf{a_2}\,\,\,\ldots\,\,\,\mathbf{a_n}\,], \quad \mathbf{x} =  
+\begin{bmatrix}    x_1 \\ x_2 \\ \vdots \\ \vdots \\ x_n  \end{bmatrix},
+$$
+
+and let $c$ be any real number.
+
+Then 
+
+$$
+  A\,(c\mathbf{x}) = 
+  A\,
+\begin{bmatrix}    cx_1 \\ cx_2 \\ \vdots \\ \vdots \\ cx_n  \end{bmatrix} =
+  cx_1\mathbf{a_1} + cx_2\mathbf{a_2} + \ldots
+  + cx_n\mathbf{a_n}.
+$$
+
+In the last expression we can take the common factor $c$ out to the front,
+and we see that it becomes equal to
+
+$$
+  c(x_1\mathbf{a_1} + x_2\mathbf{a_2} + \ldots
+  + x_n\mathbf{a_n}) = cA\mathbf{x}.
+$$
+
+
+::::
+
+
 Using the above rules we can give shorter proofs of statements concerning linear systems.  We illustrate this by having a second look at  {prf:ref}`Prop:SolSet:SolplusHom`:
 
 ::::{prf:example} 
@@ -498,6 +532,47 @@ $$
 where  $r_i = p_i - q_i,\,i=1,\ldots,\,m$ \, is inconsistent.
 
 ::::
+
+
+
+::::{solution}  Exc:MatVecProduct:PracticeWithProp
+:class: dropdown
+
+We start with some notations.
+
+$$
+ A = \left[\begin{array}{cccc}
+            a_{11} & a_{12}&  \ldots&   a_{1n}   \\
+            a_{21} & a_{22}&  \ldots&   a_{2n}   \\
+            \vdots &  \vdots&  \cdots&  \vdots    \\
+            a_{m1} & a_{m2}&  \ldots&   a_{mn}    
+          \end{array}   \right], 
+          \quad \mathbf{p} = 
+          \left[\begin{array}{c}
+            p_1 \\ p_2 \\ \vdots \\ p_n 
+          \end{array}\right], 
+          \quad \mathbf{q} = 
+          \left[\begin{array}{c}
+            q_1 \\ q_2 \\ \vdots \\ q_n 
+          \end{array}\right]        
+          \quad \mathbf{r} = 
+          \left[\begin{array}{c}
+            r_1 \\ r_2 \\ \vdots \\ r_n 
+          \end{array}\right].
+$$
+
+In matrix-vector form the assumptions are that  the system  $A\vect{x}=\vect{p}$ is consistent and that the system $A\vect{x}=\vect{q}$ is inconsistent. Morever,  $\vect{r} = \vect{p} - \vect{q}$.
+
+We have to show that the system  $A\vect{x}=\vect{r}$ cannot be consistent. 
+
+Let $\vect{x}_1$ be a solution for the (consistent) system $A\vect{x}=\vect{p}$.
+If $\vect{x}_2$ would be a solution for the  system $A\vect{x}=\vect{r}$, i.e.,
+if $A\vect{x}_2=\vect{r}$,  then  $A(\vect{x}_1 -\vect{x}_2) = A\vect{x}_1 - A\vect{x}_2 = \vect{p} - \vect{r} = \vect{q}$, <BR>
+ so then the system  $A\vect{x}=\vect{q}$ would be consistent.  This is in clear contradiction we the assumption that the last system is inconsistent. <BR>
+ So a solution for the system $A\vect{x}=\vect{r}$ cannot exist.
+
+::::
+
 
 We now revisit the question we left open at the end of {numref}`Sec:LinearCombinations`: when is the span of a set of vectors in $\R^{n}$ all of $\R^{n}$?
 
@@ -685,7 +760,7 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 :url: https://embed.grasple.com/exercises/56cf013b-dc6a-4774-ac1e-fa694b16a2a8?id=85089
 :label: grasple_exercise_2_4_3
 :dropdown:
-:description:For a given matrix  $A$, does the equation $A\vect{x}=\vect{b}$ have a solution for every $\vect{b}$?
+:description: For a given matrix  $A$, does the equation $A\vect{x}=\vect{b}$ have a solution for every $\vect{b}$?
 
 ::::
 

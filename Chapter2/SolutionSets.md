@@ -1,5 +1,5 @@
 (Section:SolutionSets)=
-# The solution set of a system of  linear equations 
+# The Solution Set of a System of  Linear Equations 
 
 As we have seen in  {numref}`Sec:LinesAndPlanes`, the solutions of a single linear equation with $2$ variables form a line in the plane. Similarly, the solutions of a single linear equation in $3$ variables form a plane in three-dimensional space. If we want to know which points lie in the intersection of two planes, we therefore have to find those points that solve two equations simultaneously. This raises some very natural questions: what is the set of vectors that satisfy a number of given equations? What does this set look like geometrically?
 

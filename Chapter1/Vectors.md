@@ -314,7 +314,7 @@ The reaction under consideration here is a very simple one. It is not at all rar
 
 ## Points and vectors
 
-Vectors are quite easy to work with, even in more than three dimensions. It will therefore be convenient to relate the familiar concepts from plain old plane geometry and the somewhat more advanced three-dimensional geometry in terms of vectors. In this section, we will establish a link between points and vectors by introducing a sort of common anchor point for all vectors. In {numref}`Section:LinesAndPlanes:Plane`, we will relate lines and planes to vectors.
+Vectors are quite easy to work with, even in more than three dimensions. It will therefore be convenient to relate the familiar concepts from plain old plane geometry and the somewhat more advanced three-dimensional geometry in terms of vectors. In this section, we will establish a link between points and vectors by introducing a sort of common anchor point for all vectors. In {numref}`SubSec:LinesAndPlanes:Plane`, we will relate lines and planes to vectors.
 
 Suppose we fix an arbitrary point in the plane. Let us call it the _origin_ and write it as $O$. Every other point can now be fully determined by its displacement from $O$. In other words, any point $P$ in the place can be described by saying how far it is to the right of $O$ and how far it is up from $O$. If $a_{1}$ is the former quantity and $a_{2}$ is the latter, we will write $P=(a_{1},a_{2})$. If $P$ happens to be to the left of the origin, $a_{1}$ will be negative. Similarly, if $P$ is lower than $O$, $a_{2}$ will be negative. In {numref}`Figure %s <Fig:Vectors:PointandVect>`, you can see the point $P=(-1,2)$. For the point $O$ itself, we have $O=(0,0)$ since the displacement from $O$ to $O$ is $0$ in both directions.
 

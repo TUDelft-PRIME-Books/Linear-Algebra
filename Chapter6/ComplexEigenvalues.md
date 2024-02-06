@@ -1,5 +1,5 @@
 (Section:ComplexEV)=
-# Complex eigenvalues (and eigenvectors)
+# Complex Eigenvalues (and Eigenvectors)
 
 
 In the previous sections we hinted at the possibility to allow eigenvalues to be complex numbers.  For an  $n\times n$ matrix $A$  the eigenvalues are the zeros of the characteristic polynomial $p_A(\lambda)$ of $A$.  Even if the matrix is real, these zeros may be complex.  We start with an example to explore this until now unknown territory.

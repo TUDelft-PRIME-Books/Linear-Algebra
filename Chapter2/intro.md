@@ -1,7 +1,7 @@
-Vectors, Linear Combinations and Linear Independence
+Systems of Linear Equations, Vector Equations and Matrix Equations 
 ============
 
-Hello, here is where the introduction for the chapter goes.
+%Hello, here is where the introduction for the chapter goes.
 
 ```{tableofcontents}
 ```

@@ -1,5 +1,5 @@
 (Sec:SymmetricMat)=
-# Symmetric matrices 
+# Symmetric Matrices 
 
 ## Introduction 
 

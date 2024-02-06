@@ -560,7 +560,7 @@ The same classification is used for symmetric matrices.  E.g.,  $A$ is a **posit
 
 ::::
 
-Note that every quadratic form  $\vect{x}^TA\vect{x}$ gets the value $0$  if  $\vect{x}$ is the zero vector.
+Note that every quadratic form  $\vect{x}^TA\vect{x}$ gets the value $0$  if  $\vect{x}$ is the zero vector. That is the reason we exclude the zero vector in the definition of positive/negative definite.
 
 The classification of a quadratic form follows immediately from the eigenvalues of its matrix.
 
@@ -757,8 +757,9 @@ In the plane all *non-degenerate* conic sections may be described by a quadratic
 
 ::::
 
-where the parameter $f$ at least one the parameters $a,b,c$  are not equal to zero.
- and
+where both the parameter $f$ and at least one the parameters $a,b,c$  are not equal to zero.  
+% When $f$ is equal to zero the conic section is sometimes called *degenerate*. 
+
 ::::{prf:example}
 
 The curve given by the equation  $x_1^2 + x_2^2 - 25 = 0$  is a circle with radius 5.

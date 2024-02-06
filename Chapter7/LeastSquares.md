@@ -840,6 +840,127 @@ $$
 
 ::::
 
+
+
+## Grasple Exercises 
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/9666528f-1e81-4273-b571-8dae64a7972c?id=91139
+:label: grasple_exercise_7_4_1
+:dropdown:
+:description: About the interpretation of a least squares solution.
+
+::::
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/c96c0359-9599-4fd4-b5b2-bd7f9d2da463?id=91141
+:label: grasple_exercise_7_4_2
+:dropdown:
+:description: About the uniqueness of a least squares solution.
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/6068f5ac-3eb3-40a1-8686-ddbf05f172b2?id=91165
+:label: grasple_exercise_7_4_3
+:dropdown:
+:description: About least squares solutions and normal equations.
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/a0878702-dcc0-4216-b2d6-0b1d7d1b046e?id=91142
+:label: grasple_exercise_7_4_4
+:dropdown:
+:description: Finding the LS solution for 3x2 systems in three steps
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/6a0628e8-065d-4390-b0c4-8ff131761de4?id=91161
+:label: grasple_exercise_7_4_5
+:dropdown:
+:description: LS solution + LS error for $3\times 2$ system.
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/1d9a943a-b51f-48c9-99a9-691b80b8df60?id=91159
+:label: grasple_exercise_7_4_6
+:dropdown:
+:description: LS solution + LS error for $4\times 2$ system.
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/d7480f19-afdb-474d-8542-299fc21a1952?id=91908
+:label: grasple_exercise_7_4_7
+:dropdown:
+:description: LS solution + LS error for $4\times 3$ system.
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/c6a52270-1c43-46a2-9dda-f1ab8b366066?id=91146
+:label: grasple_exercise_7_4_8
+:dropdown:
+:description: On the connection between orthogonal projections and least squares problems.
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/743d744c-1bcb-460a-973e-3e693e86e20d?id=91157  
+:label: grasple_exercise_7_4_9
+:dropdown: 
+:description: LS solutions + LS error for $3\times 2$ system.
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/b081f76a-0e03-48cc-b27b-afab51ac2c91?id=91155
+:label: grasple_exercise_7_4_10
+:dropdown:
+:description:  LS solutions + LS error for $4\times 3$ system.
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/679d1581-08bc-416b-89bf-766faad9f118?id=91394
+:label: grasple_exercise_7_4_11
+:dropdown:
+:description:  Finding the LS solution for $4\times 3$ system  (involving quite some reduction work)
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/3d0a7884-09ee-4f89-a2e5-1c1476d7e2a3?id=91448
+:label: grasple_exercise_7_4_12
+:dropdown:
+:description:  Finding the LS solution for $4\times 3$ system  (with some tricky reduction work)
+
+::::
+
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/396fd7a0-10cf-4b49-bb9e-fbc4acc2a06a?id=91148
+:label: grasple_exercise_7_4_13
+:dropdown:
+:description:  What is the quickest way to find the least squares solution?
+
+::::
+
+
+
 (SubSec:LeastSquares:LinearModels)=
 ## Linear Models
 
@@ -1292,5 +1413,59 @@ $(\ln(x_i), \ln(y_i))$, and the last two plots give the points with the two fits
 
 Least squares fitting via logarithmic scale
 :::
+
+::::
+
+
+## Grasple Exercises (for Linear Models)
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/6a2b9aeb-3c59-4b8f-8d7c-e51f651998fd?id=91883
+:label: grasple_exercise_7_4_14
+:dropdown:
+:description:   On the precise definition of the least squares line.
+
+::::
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/254298e0-f091-4a9d-8e8a-31cc3cf11f16?id=91884
+:label: grasple_exercise_7_4_15
+:dropdown:
+:description: Design matrix and input vector for the regression line through a set of points.  
+
+::::
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/dad8ca0a-ef17-4757-803c-26b8ae9804de?id=91886
+:label: grasple_exercise_7_4_16
+:dropdown:
+:description: Fitting a line through set of points and compute the residual vector
+
+::::
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/9ad7148d-ef39-46ef-8f14-20e97511655d?id=91889
+:label: grasple_exercise_7_4_17
+:dropdown:
+:description: Fitting a parabola to a set of points. 
+
+::::
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/222ee704-85f5-470a-b48f-f88d9900a8d1?id=91890
+:label: grasple_exercise_7_4_18
+:dropdown:
+:description: Fitting a quadratic polynomial to a set of points 
+
+::::
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/ff6329bd-f5b3-41ce-828f-2086cf651181?id=91898
+:label: grasple_exercise_7_4_19
+:dropdown:
+:description: Design matrix to fit  y = ax + bx^3  to a set of points 
+
+::::
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/f75014bf-0e90-43e7-acf4-216cb38ffd11?id=91903
+:label: grasple_exercise_7_4_20
+:dropdown:
+:description: Design matrix to fit  y = c1 e^t + c2  cos(x) + c3 sin(x) to a set of points
 
 ::::

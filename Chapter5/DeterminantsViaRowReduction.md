@@ -1,4 +1,4 @@
-# Determinants via row reduction
+# Determinants via Row Reduction
 
 
 In this section we will first consider the effect of row operations on the value of a determinant.
