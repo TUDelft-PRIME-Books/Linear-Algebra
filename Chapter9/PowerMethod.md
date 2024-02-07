@@ -4,7 +4,7 @@
 The eigenvalues of an $n\times n$  matrix $A$ to a large extent characterize the matrix.  In theory they can be found as the zeros of the characteristic polynomial.  Already for $n \geq 3$  it is not an easy matter to find the exact zeros, and for $n\geq 5$ it is close to impossible. 
 One way to go about then is to use a numerical method to solve an  equation of degree $n$. Alternatively, there are algorithms more in the vein of linear algebra to find approximations of one or more eigenvalues. The simplest of these is the *power method*.  This method often provides at least the eigenvalue of the largest absolute value (or, modulus).  Note that this is in fact the most important eigenvalue concerning the stability or instability of the linear dynamical system connected to $A$.
 
-## The basics
+## The Basics
 
 
 The idea behind the power method is really very simple.
@@ -370,7 +370,7 @@ $$
 ::::
 
 (Sec:PowerMethodExtras)=
-## Some extensions
+## Some Extensions
 
 
 In the previous section the power method was used find the dominant (real) eigenvalue of a matrix $A$. <BR>

@@ -12,7 +12,7 @@ We therefore have a need for something more general. Something which allows us t
 
 (Subsec:Vectors:Plane)=
 
-## Arrows in the plane
+## Arrows in the Plane
 
 Consider an arrow $\mathbf{v}_{1}$ in the plane as in {numref}`Figure %s <Fig:Vectors:ArrowinPlane>`.
 
@@ -312,7 +312,7 @@ The reaction under consideration here is a very simple one. It is not at all rar
 
 ````
 
-## Points and vectors
+## Points and Vectors
 
 Vectors are quite easy to work with, even in more than three dimensions. It will therefore be convenient to relate the familiar concepts from plain old plane geometry and the somewhat more advanced three-dimensional geometry in terms of vectors. In this section, we will establish a link between points and vectors by introducing a sort of common anchor point for all vectors. In {numref}`SubSec:LinesAndPlanes:Plane`, we will relate lines and planes to vectors.
 

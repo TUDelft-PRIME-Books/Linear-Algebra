@@ -10,7 +10,7 @@ For instance, they appear as solution sets of homogeneous systems of linear equa
 In this section we will define them and analyze their basic properties. In {numref}`Sec:BasisDim` we will consider the important attributes basis and dimension.
 
 
-## Definition of subspace and basic properties
+## Definition of Subspace and Basic Properties
 
 
 ::::::{prf:definition}
@@ -453,7 +453,7 @@ $$
 It may seem that with the above complete description of all possible subspaces in $\R^n$
 the story of subspaces can be closed.  However, subspaces will appear in different contexts in various guises, each valuable in its own right.   One of these we will focus on immediately.
 
-## Column space and null space of a matrix
+## Column Space and Null Space of a Matrix
 
 We now turn our attention to two important subspaces closely related to an $m\times n$ matrix $A$.
 

@@ -1,6 +1,6 @@
 # Orthogonality
 
-%This is the intro to chapter 7
+The concept of orthogonality is revisited. We see how we can find an optimally convenient basis to describe a subspace.
 
 :::{tableofcontents}
 :::

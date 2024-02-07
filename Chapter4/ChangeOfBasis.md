@@ -60,7 +60,7 @@ $$
 
 In this section we will explain how such a change of basis works.
 
-## Coordinates with respect to a basis
+## Coordinates with Respect to a Basis
 
 We start with a proposition.
 
@@ -451,7 +451,7 @@ In each reference frame, an observer can use a local coordinate system (usually 
 
 ::::
 
-## The matrix of a linear transformation with respect to a basis
+## The Matrix of a Linear Transformation with Respect to a Basis
 
 In {numref}`Sec:LinTrafo` we have seen that every linear transformation $T:\R^n \to \R^m$ can be represented by its standard matrix
 
@@ -714,7 +714,7 @@ In {prf:ref}`Ex:ChangeOfBasis:Reflection` and {prf:ref}`Ex:ChangeOfBasis:Rotatio
 
 
 (Subsec:ChangeOfBasis:RelationTETB)=
-## The relation between $[T]_{\mc{E}}$ and $[T]_{\mc{B}}$
+## The Relation between $[T]_{\mc{E}}$ and $[T]_{\mc{B}}$
 
 We have seen how to convert vectors from one coordinate system (i.e., basis) to another, and also how to construct the matrix of a linear transformation with respect to an arbitrary basis.  In this section we will present a ready-made formula that connects the  matrices with respect to two different bases.  We will restrict ourselves to the common situation where we have a transformation from $\R^n$ to itself, and  where one of the bases is the standard basis. 
 
@@ -964,7 +964,7 @@ A subsection with the general transformation formula is still under construction
 
 
 (Subsec:ChangeOfBasis:GeneralTransformationFormula)=
-## General transformation formula for matrices of linear transformation
+## General Transformation Formula for Matrices of Linear Transformation
 
 
 In the previous subsections we studied the relations of the  coordinates with respect to the standard basis and one other alternative basis $\mc{B}$. In this section we go one step further and omit the restriction that one of the bases is the standard basis.  We will see that the generalizations are pretty straightforward.
