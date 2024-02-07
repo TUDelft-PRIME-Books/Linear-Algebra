@@ -77,32 +77,34 @@ Perpendicular versus non-perpendicular
 :::
 
 Let us now turn our attention to another important geometric concept, namely that of
-perpendicularity. It is clear from {numref}`Figure %s <Fig:InnerProduct:perp-non-perp>` that the vectors $\begin{bmatrix}2\\3\end{bmatrix}$ and $\begin{bmatrix}-3\\2\end{bmatrix}$ are
-perpendicular, whereas the vectors $\begin{bmatrix}2\\3\end{bmatrix}$ and $\begin{bmatrix}-1\\3\end{bmatrix}$ are not. But how does this work in $\mathbb{R}^3$?
-Well, look at {numref}`Figure %s <Fig:InnerProduct:diagonal-parallelogram>`:
-
-:::{figure} Images/Fig-InnerProduct-diagonal-parallelogram.svg
-:name: Fig:InnerProduct:diagonal-parallelogram
-
-Diagonal of a rectangle versus diagonal of a parallelogram
-:::
-
-
-In both pictures, let $A$ be the end point of vector $\mathbf{v}$, $B$ the end point of vector $\mathbf{w}$, and $C$ the end point of vector $\mathbf{v}+\mathbf{w}$. The diagonals are
-
-$$
-
-  \overrightarrow{OC} = \mathbf{v}+\mathbf{w} \quad \text{and} \quad \overrightarrow{BA} = \mathbf{v}-\mathbf{w}.
-$$
-
-In the left picture of {numref}`Figure %s <Fig:InnerProduct:diagonal-parallelogram>` the vectors $\mathbf{v}$ and $\mathbf{w}$ are perpendicular, so the parallelogram $OACB$ is a rectangle. It follows that
-the two diagonals have the same length:
+perpendicularity. It is clear from {numref}`Figure %s <Fig:InnerProduct:perp-non-perp>` that the vectors $\begin{bmatrix}2\\3\end{bmatrix}$ and $\begin{bmatrix}-3\\2\end{bmatrix}$ are perpendicular, whereas the vectors $\begin{bmatrix}2\\3\end{bmatrix}$ and $\begin{bmatrix}-1\\3\end{bmatrix}$ are not. <BR>
+There is another way to look at this, which will be useful for the definition of perpendicularity in higher dimensions. To that end, consider {numref}`Figure %s <Fig:InnerProduct:diagonal-parallelogram>`. Here you see two vectors $\vect{v}$ and $\vect{w}$ and the paralellogram they span. You also see the diagonals of this paralellogram, which are given by $\vect{v}+\vect{w}$ and $\vect{v}-\vect{w}$. Two vectors are perpendicular if and only if the paralellogram they span is a rectangle, and this is exacty the situation where the diagonals have the same length, i.e.,
 
 :::{math}
 :label: EqualDiagonals
 
 \norm{\mathbf{v}+\mathbf{w}} = \norm{\mathbf{v}-\mathbf{w}}.
 :::
+
+%In the picture on the right the vectors are not perpendicular and
+%
+%$$
+%
+%  \norm{\mathbf{v}+\mathbf{w}} \neq \norm{\mathbf{v}-\mathbf{w}}.
+%$$
+
+:::{figure} Images/Fig-InnerProduct-diagonal-parallelogram.svg
+:name: Fig:InnerProduct:diagonal-parallelogram
+
+The parallelogram spanned by $\vect{v}$ and $\vect{w}$ and its diagonals. How should you choose  $\vect{v}$ and $\vect{w}$ such taht the diagonals have the same length?
+:::
+
+%::: OLD: two figures rectangle / non-rectangle
+%:::{figure} Images/Fig-InnerProduct-diagonal-parallelogram.svg
+%:name: Fig:InnerProduct:diagonal-parallelogram%
+%
+%Diagonal of a rectangle versus diagonal of a parallelogram
+%:::
 
 In the picture on the right the vectors are not perpendicular and
 
@@ -111,7 +113,7 @@ $$
   \norm{\mathbf{v}+\mathbf{w}} \neq \norm{\mathbf{v}-\mathbf{w}}.
 $$
 
-The picture suggests that we are talking about two (non-zero) vectors in the plane, i.e., in $\mathbb{R}^2$. However, two vectors in $\mathbb{R}^3$ form a parallelogram as well, which becomes a rectangle if and only if the vectors are perpendicular. We introduce a notation for this: if $ \mathbf{v}$ and $\mathbf{w}$ are perpendicular, we write this as
+So far we have been talking about two (non-zero) vectors in the plane, i.e., in $\mathbb{R}^2$. However, two vectors in $\mathbb{R}^3$ form a parallelogram as well, which also becomes a rectangle if and only if the vectors are perpendicular. We introduce a notation for this: if $ \mathbf{v}$ and $\mathbf{w}$ are perpendicular, we write this as
 
 :::{math}
 :label: Eq:InnerProduct:Orthogonal
@@ -501,7 +503,7 @@ may seem counter intuitive to you. The following example illustrates a situation
 :label: Ex:PerpendicularLine
 
 Let $\mathbf{n}$ be any nonzero vector in the plane.
-The set of vectors that are orthogonal to $\mathbf{n}$ all lie on a line through the origin. (See {numref}` Figure %s <Fig:InnerProduct:PerpendicularLine>`.)  If we agree that  $\mathbf{0}\perp\mathbf{n}$, it will be the whole line.
+The set of vectors that are orthogonal to $\mathbf{n}$ all lie on a line through the origin. (See {numref}`Figure %s <Fig:InnerProduct:PerpendicularLine>`.)  If we agree that  $\mathbf{0}\perp\mathbf{n}$, it will be the whole line.
 The vector $\mathbf{n}$ is often said to be  a *normal* vector to the line.
 
 
