@@ -6,7 +6,7 @@ In this section we will consider other (geometric) properties of vectors, like t
 We will start by considering vectors in $\mathbb{R}^2$ and $\mathbb{R}^3$. The translation of the concepts to the general space $\mathbb{R}^n$ will then become more or less immediate.
 
 (Subsec:InnerProduct:Length_and_perpendicular)=
-## Length and Perpendicularity in $\mathbb{R}^2$ and $\mathbb{R}^3$
+## Length and perpendicularity in $\mathbb{R}^2$ and $\mathbb{R}^3$
 
 The length of a vector
 
@@ -77,7 +77,7 @@ Perpendicular versus non-perpendicular
 :::
 
 Let us now turn our attention to another important geometric concept, namely that of
-perpendicularity. It is clear from {numref}`Figure %s <Fig:InnerProduct:perp-non-perp>` that the vectors $\begin{bmatrix}2\\3\end{bmatrix}$ and $\begin{bmatrix}-3\\2\end{bmatrix}$ are perpendicular, whereas the vectors $\begin{bmatrix}2\\3\end{bmatrix}$ and $\begin{bmatrix}-1\\3\end{bmatrix}$ are not. <BR>
+perpendicularity. It is clear from {numref}`Figure %s <Fig:InnerProduct:perp-non-perp>` that the vectors $\begin{bmatrix}2\\3\end{bmatrix}$ and $\begin{bmatrix}-3\\2\end{bmatrix}$ are perpendicular, whereas the vectors $\begin{bmatrix}2\\3\end{bmatrix}$ and $\begin{bmatrix}-1\\3\end{bmatrix}$ are not.  <BR> 
 There is another way to look at this, which will be useful for the definition of perpendicularity in higher dimensions. To that end, consider {numref}`Figure %s <Fig:InnerProduct:diagonal-parallelogram>`. Here you see two vectors $\vect{v}$ and $\vect{w}$ and the paralellogram they span. You also see the diagonals of this paralellogram, which are given by $\vect{v}+\vect{w}$ and $\vect{v}-\vect{w}$. Two vectors are perpendicular if and only if the paralellogram they span is a rectangle, and this is exacty the situation where the diagonals have the same length, i.e.,
 
 :::{math}
@@ -178,7 +178,7 @@ Using the dot product the concepts length and perpendicular easily carry over to
 
 (Subsec:Dot_product:InnerProduct_in_Rn)=
 
-## Dot Product in $\mathbb{R}^n$
+## Dot product in $\mathbb{R}^n$
 
 ::::{prf:definition}
 :label: Dfn:InnerProduct:DotProduct
