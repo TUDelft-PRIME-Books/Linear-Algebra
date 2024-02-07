@@ -115,6 +115,8 @@ $$
 
 So far we have been talking about two (non-zero) vectors in the plane, i.e., in $\mathbb{R}^2$. However, two vectors in $\mathbb{R}^3$ form a parallelogram as well, which also becomes a rectangle if and only if the vectors are perpendicular. We introduce a notation for this: if $ \mathbf{v}$ and $\mathbf{w}$ are perpendicular, we write this as
 
+
+
 :::{math}
 :label: Eq:InnerProduct:Orthogonal
 
