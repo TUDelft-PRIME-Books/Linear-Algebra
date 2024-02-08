@@ -207,7 +207,7 @@ $T$ is injective;
 	
 
 </li>
-<li>
+<li id="Item:InjSurj:InjisUniqueSol">
 
 $A\mathbf{x}=\mathbf{b}$ has, for every $\mathbf{b}$ in $\mathbb{R}^{n}$, **at most** one solution;
 
@@ -222,11 +222,25 @@ $A$ has a pivot in every **column**.
 ::::::
 
 
-::::::{prf:proof}
-Exercise.
+::::{exercise}
+:label: Exc:InjSurj:InjChars
+
+Prove {prf:ref}`Prop:InjSurj:InjChars`.
+
+::::
 
 
-::::::
+:::{solution} Exc:InjSurj:InjChars
+:class: dropdown
+
+Assume $T$ is injective and $A\vect{x}=\vect{b}$ has solutions $\vect{x}_{1}$ and $\vect{x}_{2}$. Then $T(\vect{x}_{1})=T(\vect{x}_{2})$, so $\vect{x}_{1}=\vect{x}_{2}$ by injectivity of $T$. Similarly, if we assume that $A\vect{x}=\vect{b}$ has at most one solution, then $T(\vect{x}_{1})=T(\vect{x}_{2})$ would imply $\vect{x}_{1}=\vect{x}_{2}$, hence $T$ is injective.
+
+If $A$ has a column without pivot, then there is a free variable. Consequently, if $A\vect{x}=\vect{b}$ has a solution, it has infinitely many, contradicting [ii.](#Item:InjSurj:InjisUniqueSol). Similarly, if $A\vect{x}=\vect{b}$ has at most one solution, then there cannot be a free variable, hence $A$ has no column without pivot.
+
+
+
+
+:::
 
 
 ::::::{prf:corollary}
