@@ -238,8 +238,6 @@ Assume $T$ is injective and $A\vect{x}=\vect{b}$ has solutions $\vect{x}_{1}$ an
 If $A$ has a column without pivot, then there is a free variable. Consequently, if $A\vect{x}=\vect{b}$ has a solution, it has infinitely many, contradicting [ii.](#Item:InjSurj:InjisUniqueSol). Similarly, if $A\vect{x}=\vect{b}$ has at most one solution, then there cannot be a free variable, hence $A$ has no column without pivot.
 
 
-
-
 :::
 
 
@@ -442,10 +440,23 @@ $A$ has a pivot in every **row**.
 ::::::
 
 
-::::::{prf:proof}
-Exercise.
+::::{exercise}
+:label: Exc:InjSurj:SurjChars
 
-::::::
+Prove {prf:ref}`Prop:InjSurj:SurjChars`.
+
+::::
+
+
+:::{solution} Exc:InjSurj:SurjChars
+:class: dropdown
+
+Assume $T$ is surjective and take an arbitrary $\vect{b}$ in $\R^{n}$. Then there is an $\vect{x}$ in $\mathbb{R}^{m}$ such that $T(\vect{x})=\vect{b}$, i.e. $\vect{x}$ is a solution of $A\vect{x}=\vect{b}$. Similarly, if $A\vect{x}=\vect{b}$ has a solution for any $\vect{b}$ in $\R^{n}$, then $\vect{b}=T(\vect{x})$ which establishes surjectivity of $T$.
+
+If $A$ has a row without pivot, then, for a well-chosen $\vect{b}$, a pivot can appear in the last column of the augmented matrix $[A|\vect{b}]$. This means that $\A\vect{x}=\vect{b}$ has no solutions. Similarly, if $A\vect{x}=\vect{b}$ always has a solution, then $[A|\vect{b}]$ can never have a pivot in the lost column. Consequently, $A$ must have a pivot in every row.
+
+
+:::
 
 
 ::::::{prf:corollary}
@@ -559,3 +570,37 @@ $$S:\R^{n}\to\R^{n},\vect{v}\mapsto B\vect{v}.$$
 Then $TS(\vect{v})=AB\vect{v}=\vect{v}$ for any $\vect{v}$ in $\R^{n}$. The only thing left to show is $ST(\vect{v})=\vect{v}$ or, in other words, $BA(\vect{v})=\vect{v}$ for any $\vect{v}$ in $\R^{n}$. For this, we argue as follows. Since $AB=I$, $ABA=A$ follows. But then $A(BA-I)=0$, hence $A((BA-I)\vect{v})=\vect{0}$ for all $\vect{v}$ in $\R^{n}.$ Since $A$ is invertible, $A\vect{x}=\vect{0}$ only has the trivial solution $\vect{x}=\vect{0}$. Therefore $(BA-I)\vect{v}=\vect{0}$ for all $\vect{v}$ which implies $BA\vect{v}=\vect{v}$ for all $\vect{v}$ in $\R^{n}$.
 
 :::
+
+## Grasple Exercises
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/a5fcbee0-9af1-4596-b3d4-05dcdf7640b3?id=92235
+:label: grasple_exercise_3_5_1 
+:dropdown:
+:description: Is $T$ injective, surjective, bijective, or neither?
+
+::::
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/ba7d83d3-c00a-4d8b-910e-84e6a12b28e4?id=92236
+:label: grasple_exercise_3_5_2
+:dropdown:
+:description: Is $T$ injective, surjective, bijective, or neither?
+
+::::
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/a92c3a97-1bf0-47dc-a549-c1130d053e33?id=92237
+:label: grasple_exercise_3_5_3
+:dropdown:
+:description: Is $T$ injective, surjective, bijective, or neither?
+
+::::
+
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/a18a8d11-11f0-4bce-96f9-39946d6543a9?id=92238
+:label: grasple_exercise_3_5_4
+:dropdown:
+:description: What can we conclude if the composition of two transformations is bijective?
+
+::::
