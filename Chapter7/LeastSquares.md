@@ -322,7 +322,7 @@ $$
 
 
 In {prf:ref}`Ex:LeastSquares:OrthogExample` the coefficients of the orthogonal projection were quickly found due to the fact that the vectors  $\vect{a}_1$ and $\vect{a}_2$ were orthogonal. 
-In  {numref}`Section %s <Sec:Gram-Schmidt>` we saw how we can construct an orthogonal basis from an arbitrary basis. And then we can use the projection formula of  {numref}`Section %s <Sec:Orthogonality>` to find the orthogonal projection.  However, we will see that this is an unnecessary detour.
+In  {numref}`Section %s <Sec:Gram-Schmidt>` we saw how we can construct an orthogonal basis from an arbitrary basis. And then we can use the projection formula of  {numref}`Section %s <Sec:OrthoBase>` to find the orthogonal projection.  However, we will see that this is an unnecessary detour.
 
 
 (SubSec:LeastSquares:NormalEquations)=
@@ -423,7 +423,7 @@ where the norm of the error vector was found to be $\sqrt{15}$.
 As usual we denote the columns of the $m \times n$ matrix $A$ by  $\vect{a}_1, \ldots, \vect{a}_n$.
 
 From the section about orthogonal projections, we know that the orthogonal projection of $\vect{b}$ 
-onto the column space of $A$ exists and is unique. (cf. {prf:ref}`Thm:Ortho:OrthoDecomp`.) This projection will be a vector of the form
+onto the column space of $A$ exists and is unique. (cf. {prf:ref}`Thm:OrthoBase:OrthoDecomp`.) This projection will be a vector of the form
 
 $$
    c_1\vect{a}_1 + \ldots + c_n\vect{a}_n
@@ -467,7 +467,7 @@ $$
      \vect{a}_1^T\vect{a}_1 &  \vect{a}_1^T\vect{a}_2 & \ldots & \vect{a}_1^T\vect{a}_n \\
      \vect{a}_2^T\vect{a}_1 &  \vect{a}_2^T\vect{a}_2 & \ldots & \vect{a}_2^T\vect{a}_n \\
         \vdots        &  \vdots        & & \vdots      \\
-     \vect{a}_n^T\vect{a}_1 &  \vect{a}_n^T\vect{a}_2 & \ldots & \vect{a}_1^T\vect{a}_n \\
+     \vect{a}_n^T\vect{a}_1 &  \vect{a}_n^T\vect{a}_2 & \ldots & \vect{a}_n^T\vect{a}_n \\
   \end{array} \right]
   \left[  \begin{array}{c}   c_1 \\ c_2 \\ \ldots \\ c_n   \end{array} \right] =
   
@@ -498,7 +498,7 @@ $$
   \text{proj}_{\text{Col} A}(\vect{b}) = c_1\vect{a}_1 + \ldots + c_n\vect{a}_n = A \vect{c}.
 $$
 
-If the columns  $\vect{a}_1, \ldots, \vect{a}_n$  of $A$ are linearly independent, the coefficients  $c_i$ are the coordinates with respect to the basis  $(\vect{a}_1, \ldots, \vect{a}_n)$, hence they are unique.  Thus in that case the normal equations
+If the columns  $\vect{a}_1, \ldots, \vect{a}_n$  of $A$ are linearly independent, the coefficients  $c_i$ are the coordinates with respect to the basis  ${\vect{a}_1, \ldots, \vect{a}_n\}$, hence they are unique.  Thus in that case the normal equations
 
 $$
   A^TA \vect{x} = A^T\vect{b}
@@ -545,6 +545,7 @@ $\vect{x}= \vect{0}$ as only solution.  This means that  $A^TA$ is invertible.
 ::::
 
 ::::{exercise}
+:label: Exc:LeastSquares:InvertibleATA
 
 Prove the converse of {prf:ref}`Prop:LeastSquares:InvertibleATA`.
 
@@ -552,7 +553,28 @@ For any $m \times n$ matrix $A$,   if  $A^TA$  is invertible, then the columns o
 
 ::::
  
+::::{solution} Exc:LeastSquares:InvertibleATA
+:class: dropdown
 
+Suppose that $A$ is an  $m \times n$ matrix $A$ for which  $A^TA$ is invertible.
+To prove that $A$ has linearly independent columns we have to show that the equation
+
+$$
+  A\vect{x} = \vect{0}
+$$
+
+has only the trivial solution $\vect{x} = \vect{0}$. 
+
+So suppose that  $ A\vect{c} = \vect{0}$ for some vector $\vect{c} \in \R^{n}$.
+Then a fortiori
+
+$$
+  A^TA\vect{c} = A^T\vect{0} = \vect{0}. 
+$$
+
+The assumption that $A^TA$ is invertible implies that indeed  $\vect{c} = \vect{0}$.
+
+::::
 
 
 
@@ -669,7 +691,7 @@ $$
 
 Which leads to  the good old expressions  $x_i = \dfrac{\vect{a}_i\ip\vect{b}}{\vect{a}_i\ip\vect{a}_i} =  \dfrac{\vect{b}\ip\vect{a}_i}{\vect{a}_i\ip\vect{a}_i}$.  
 
-As before ({prf:ref}`Dfn:Orthogonality:OrthoProjection`) the orthogonal projection becomes
+As before ({prf:ref}`Thm:OrthoBase:OrthoDecomp`) the orthogonal projection becomes
 
 $$
    \text{proj}(\vect{b}) =  \dfrac{\vect{b}\ip\vect{a}_1}{\vect{a}_1\ip\vect{a}_1}\vect{a}_1 +
@@ -688,6 +710,48 @@ $$
 $$
 
 Also explain this simpler formula by interpreting the $QR$ decomposition in a suitable way.
+::::
+
+::::{solution}  Exc:LeastSquares:QR
+:class: dropdown
+
+This involves some elementary matrix operations. <BR>
+Suppose  $A = QR$, where $Q^TQ = I$, and $R$ is an upper triangular matrix with a positive diagonal.  So $R$ is invertible. <BR>
+
+Substitution of $A=QR$ into  {eq}`Eq:LeastSquares:ProjbColA`
+
+$$
+ \hat{\vect{b}} = \text{proj}_{\text{Col }A}(\vect{b}) = A(A^TA)^{-1}A^T \vect{b}
+$$
+
+gives
+
+$$
+  \hat{\vect{b}} =  QR \left[(QR)^T(QR)\right]^{-1}\vect{b} 
+  = QR\left[R^TQ^TQR\right]^{-1} (R^TQ^T)\vect{b}. 
+$$
+
+Using  $Q^TQ = I$ and $\left[R^TR\right]^{-1} = R^{-1}(R^T)^{-1}$  this can be simplified further to
+
+$$
+  \hat{\vect{b}} = QR \left[R^TR\right]^{-1}R^TQ^T\vect{b} =QRR^{-1}(R^T)^{-1}R^TQ^T\vect{b} = QQ^T\vect{b}
+$$
+The interpretation is as follows.  The columns $\vect{q}_i$ of $Q$ form an orthonormal basis for the column space of $A$.  So  the orthogonal projection onto Col$(A$) is the same as the orthogonal projection onto Col$(Q)$.  It can be shown that for a matrix with orthonormal column the projection formula
+
+$$
+ \begin{array}{lcl}
+  \hat{\vect{b}} = \proj_{\Col{(Q)}}(\vect{b}) &=& (\vect{b}\cdot\vect{q}_1)\vect{q}_1 + \cdots +   (\vect{b}\cdot\vect{q}_n)\vect{q}_n\\&=& \vect{q}_1(\vect{b}\cdot\vect{q}_1) + \cdots +  \vect{q}_n (\vect{b}\cdot\vect{q}_n)\\
+  &= &  \vect{q}_1(\vect{q}_1^T\vect{b}) + \cdots + \vect{q}_n(\vect{q}_n^T\vect{b})\\
+  &= &  \left[\vect{q}_1\vect{q}_1^T + \cdots + \vect{q}_n\vect{q}_n^T\right]\,\vect{b}
+  \end{array}
+$$
+
+can be written in a very concise way as 
+
+$$
+   \hat{\vect{b}} =  QQ^T\vect{b}.
+$$
+
 ::::
 
 To conclude this section we will consider the situation where the matrix $A$ has linearly *dependent* columns.
@@ -766,8 +830,8 @@ $$
    \vect{x} = \hat{\vect{x}}_0 + c\left[\begin{array}{c}  2 \\  1 \end{array}\right],
 $$
 
-the 'homogeneous' part  $\vect{x}_H = c\left[\begin{array}{c}  2 \\  1 \end{array}\right]$ is the null space of  $A^TA$.  Because of the equivalence {eq}`Eq:LeastSquares:InvertibilityATA` this is equal to the null space of $A$.
-Now from  {numref}`Section %s <Sec:Orthogonality>`, {prf:ref}`Prop:Orthogonality:OrthoComplementNulA`, we know that 
+the 'homogeneous' part  $\vect{x}_H = c\left[\begin{array}{c}  2 \\  1 \end{array}\right]$ is the nulspace of  $A^TA$.  Because of the equivalence {eq}`Eq:LeastSquares:InvertibilityATA` this is equal to the nulspace of $A$.
+Now from  {numref}`Section %s <Sec:OrthoComp>`, {prf:ref}`Prop:OrthoComp:OrthoComplementNulA`, we know that 
 
 $$
    (\text{Nul}\,A)^{\perp} = \text{Row}\,A = \Span{\begin{bmatrix} 1 \\ -2\end{bmatrix}}
@@ -822,7 +886,7 @@ $$
    \hat{\vect{x}} = \hat{\vect{x}}_0 + \vect{x}_H = \left[\begin{array}{c}  3 \\ -1 \\ 0 \end{array}\right] + c\left[\begin{array}{c}  1 \\ -1 \\ -1 \end{array}\right], \,\, c \in \R.
 $$
 
-As in {prf:ref}`Ex:LeastSquares:NonUnique` the 'homogeneous' part  $\vect{x}_H = c\left[\begin{array}{c}  1 \\ -1 \\ -1 \end{array}\right]$ is the null space of  $A^TA$, which is equal to the null space of $A$.
+As in {prf:ref}`Ex:LeastSquares:NonUnique` the 'homogeneous' part  $\vect{x}_H = c\left[\begin{array}{c}  1 \\ -1 \\ -1 \end{array}\right]$ is the nulspace of  $A^TA$, which is equal to the nulspace of $A$.
 
 For instance, by taking  $c=0$ and $c = -1$ we find the two least squares solutions
 
