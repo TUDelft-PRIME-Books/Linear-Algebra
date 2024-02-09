@@ -3,12 +3,29 @@
 The book can be read at
 https://prime.pages.ewi.tudelft.nl/openlabook
 
-## How to run
-
+# Setup
+Clone the repository:
 ```bash
-pip install -r requirements.txt
+git clone --recursive https://gitlab.ewi.tudelft.nl/prime/openlabook.git
 ```
 
+Or if the repository is already cloned, download the grasple submodule like this:
+```bash
+git submodule init
+git submodule update
+```
+
+&nbsp;
+
+Then install the packages:
+```bash
+pip install -r requirements.txt
+pip install sphinx-grasple/
+```
+(^ Don't forget the trailing slash)
+
+
+# Usage
 To run once and see the result:
 
 ```bash
@@ -28,7 +45,7 @@ To run the book with 'hot-reload':
 watchexec -e py,md -- jupyter-book build --all .
 ```
 
-## How to add an applet to an image
+## Applet directive
 
 ````md
 ```{applet}
