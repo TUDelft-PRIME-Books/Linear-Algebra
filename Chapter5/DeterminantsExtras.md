@@ -859,9 +859,8 @@ The norm of the vector  $\vect{a}^{\ast}_n$   is equal to the  $(n-1)$-dimension
 
 For an independent set of vectors $\{\vect{a}_1, \ldots, \vect{a}_{n-1}\}$ in $\R^n$, the  properties of {prf:ref}`Prop:DetExtras:Properties-ndimCrossProd` uniquely determine $\vect{a}^{\ast}_n$
 as the vector $\vect{v}$ that is orthogonal to $ \vect{a}_1, \ldots, \vect{a}_{n-1}$, has a prescribed length, and makes the  ordered set
-$(\vect{a}_1, \ldots, \vect{a}_{n-1}, \vect{v}) $ positively oriented.
-
-In fact, for a linearly dependent set of vectors this is also true, since from property iv. it follows that in that case  $\vect{a}^{\ast}_n = \vect{0}$.
+$(\vect{a}_1, \ldots, \vect{a}_{n-1}, \vect{v}) $ positively oriented. <BR>
+For a linearly dependent set of vectors  property iv. implies that  $\vect{a}^{\ast}_n = \vect{0}$.
 
 
 ::::::{prf:example}

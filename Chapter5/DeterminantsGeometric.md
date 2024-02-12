@@ -74,7 +74,7 @@ $$
 \tilde{\vect{v}} = \left[\begin{array}{c} c \\ d \\ 0 \end{array}\right]
 $$
 
-Thus we embed the plane into $\R^3$ as the $x_1$-$x-2$-plane.  See  {numref}`Figure %s <Fig:DetGeometric:OrientedArea1>`.
+Thus we embed the plane into $\R^3$ as the $x_1$-$x_2$-plane.  See  {numref}`Figure %s <Fig:DetGeometric:OrientedArea1>`.
 
 ::::{figure} Images/Fig-DetGeometric-OrientedArea1.svg
 :name: Fig:DetGeometric:OrientedArea1
@@ -144,7 +144,7 @@ Here $h = \norm{\vect{v}}\cos(\vartheta)$  is $(\pm)$ the length of the projecti
 $$
 \begin{array}{rcl}
 \norm{\vect{u}^{\perp}} \norm{\vect{v}}\cos(\vartheta) 
-  &=& \norm{\vect{u}} \norm{\vect{v}}\cos(\vartheta) \\
+  &=& \norm{\vect{u}}\times \norm{\vect{v}}\cos(\vartheta) \\
   &=& \pm \text{(base length)} \times \text{height} \\
   &=&   \pm \text{area of } OACB.
 \end{array}  
@@ -286,7 +286,7 @@ $$
 
 Verify the four properties of {prf:ref}`Prop:DetGeometric:Properties2by2Det`
 
-::::::
+:::::: 
 
 The properties have a clear geometric interpretation using the notion of 'signed area'.
 The following alternative proof uses this geometric viewpoint.

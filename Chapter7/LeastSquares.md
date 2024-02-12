@@ -4,7 +4,7 @@
 (SubSec:LeastSquares:Introduction)=
 ## Introduction 
 
-In Chapter 2, especially {numref}`Section %s <Section:LinSystems>`,  we studied linear systems.  One way to write them down was  as a matrix-vector equation:  $A\vect{x} = \vect{b}$. We saw that a linear system could be either consistent or inconsistent. And if a system was inconsistent, that would then be the end of the story.
+In Chapter 2, especially {numref}`Section %s <Section:LinSystems>`,  we studied linear systems.  One way to write them down was  as a matrix-vector equation  $A\vect{x} = \vect{b}$. We saw that a linear system could be either consistent or inconsistent. And if a system was inconsistent, that would then be the end of the story.
 
 In this section we will reconsider the inconsistent situation and ask ourselves the question whether there is a vector $\vect{x}$  that is in a  sense the 'best possible' alternative to a solution.
 
@@ -160,12 +160,13 @@ By definition $A\hat{\vect{x}} = \hat{x}_1\vect{a}_1  + \ldots + \hat{x}_n\vect{
 
 By minimizing $\norm{A\vect{x} - \vect{b}}$ we are in fact minimizing the sum of the squares of the errors.  This explains the name *least squares error*.
 
+From
+
 $$
-   A\hat{\vect{x}} - \vect{b} = \hat{x}_1\vect{a}_1 + \ldots +  \hat{x}_n\vect{a}_n - \vect{b}.
+   \norm{A\hat{\vect{x}} - \vect{b}} = \norm{\hat{x}_1\vect{a}_1 + \ldots +  \hat{x}_n\vect{a}_n - \vect{b}}
 $$ 
 
-So a least squares solution yields a linear combination  of the columns of $A$ that has a minimal distance to 
-$\vect{b}$.   
+we read off that a least squares solution yields a linear combination  of the columns of $A$ that has a minimal distance to $\vect{b}$.   
 
 For a *consistent*  linear system a least squares solution will be an actual solution,
 i.e.  $A\hat{\vect{x}} - \vect{b} = \vect{0}$.  In this case the least squares error
@@ -736,7 +737,7 @@ Using  $Q^TQ = I$ and $\left[R^TR\right]^{-1} = R^{-1}(R^T)^{-1}$  this can be s
 $$
   \hat{\vect{b}} = QR \left[R^TR\right]^{-1}R^TQ^T\vect{b} =QRR^{-1}(R^T)^{-1}R^TQ^T\vect{b} = QQ^T\vect{b}
 $$
-The interpretation is as follows.  The columns $\vect{q}_i$ of $Q$ form an orthonormal basis for the column space of $A$.  So  the orthogonal projection onto Col$(A$) is the same as the orthogonal projection onto Col$(Q)$.  It can be shown that for a matrix with orthonormal column the projection formula
+The interpretation is as follows.  The columns $\vect{q}_i$ of $Q$ form an orthonormal basis for the column space of $A$.  So  the orthogonal projection onto Col$(A$) is the same as the orthogonal projection onto Col$(Q)$. For a matrix with *orthonormal* columns the projection formula
 
 $$
  \begin{array}{lcl}

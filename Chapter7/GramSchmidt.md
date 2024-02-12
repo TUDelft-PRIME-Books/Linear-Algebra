@@ -14,7 +14,7 @@ As a starter have a look at the following example
 ::::{prf:example}
 
 Let  $W$ be the subspace in $\R^3$ spanned by the two vectors  $\vect{a}_1 = \begin{bmatrix} 2 \\ 1   \\3    \end{bmatrix}$  and   $\vect{a}_2 = \begin{bmatrix} 3 \\ -2   \\1    \end{bmatrix}$.
-We want to construct an orthogonal basis $(\vect{b}_1,\vect{b}_2 )$  for $W$.
+We want to construct an orthogonal basis $\{\vect{b}_1,\vect{b}_2 \}$  for $W$.
 
 For the first vector of this 'new' basis we can simply take  $\vect{b}_1 = \vect{a}_1$.
 
@@ -42,7 +42,7 @@ $$
 If we prefer vectors without fractions, we can rescale the second vector, and then find the orthogonal basis
 
 $$
-  \left(\begin{bmatrix} 2 \\ 1   \\3    \end{bmatrix},  \begin{bmatrix} 4 \\ -5   \\ -1    \end{bmatrix}  \right).
+  \{\vect{b}_1, 2\vect{b}_2\} = \left\{\begin{bmatrix} 2 \\ 1   \\3    \end{bmatrix},  \begin{bmatrix} 4 \\ -5   \\ -1    \end{bmatrix}  \right\}.
 $$
 
 
@@ -53,7 +53,7 @@ $$
 ::::{prf:theorem} 
 :label: Thm:GramSchmidt:GramSchmidt  
 
-Suppose  $W$  is a subspace in $\R^n$ with basis $(\vect{a}_1,\ldots,\vect{a}_m)$. Construct the set of vectors 
+Suppose  $W$  is a subspace in $\R^n$ with basis $\{\vect{a}_1,\ldots,\vect{a}_m\}$. Construct the set of vectors 
 $\vect{b}_1,\ldots,\vect{b}_m$ according to the following rules
 
 
@@ -79,7 +79,7 @@ Then  all along the way
 
 $$
 
-(\vect{b}_1, \ldots, \vect{b}_j)
+\{\vect{b}_1, \ldots, \vect{b}_j\}
 $$
 
 is an orthogonal basis for 
@@ -90,7 +90,7 @@ $$
 $$
 
 
-In particular, in the end  $(\vect{b}_1,\ldots,\vect{b}_m)$
+In particular, in the end  $\{\vect{b}_1,\ldots,\vect{b}_m\}$
 will be an orthogonal basis for $\text{span}\{\vect{a}_1, \ldots, \vect{a}_m\} = W$.
 
 ::::
@@ -161,7 +161,7 @@ $$
 
 
 In the other steps, assume that we have so far created the orthogonal basis 
-$(\vect{b}_1, \ldots,\vect{b}_j )$  for  $W_j$.
+$\{\vect{b}_1, \ldots,\vect{b}_j \}$  for  $W_j$.
 
 Then in fact 
 
@@ -254,8 +254,8 @@ discard $\vect{b}_4$ from our basis.
 The conclusion is that  
 
 $$
- \left(\vect{b}_1,\vect{b}_3\right) = \left(\begin{bmatrix} 1 \\ -1   \\ 2 \\ 3    \end{bmatrix},
-          \begin{bmatrix} -1 \\ 1   \\ 1 \\ 0    \end{bmatrix}\right)
+ \left\{\vect{b}_1,\vect{b}_3\right\} = \left\{\begin{bmatrix} 1 \\ -1   \\ 2 \\ 3    \end{bmatrix},
+          \begin{bmatrix} -1 \\ 1   \\ 1 \\ 0    \end{bmatrix}\right\}
 $$
 
 is an orthogonal basis for span$\{\vect{a}_1,\ldots, \vect{a}_4\}$.
@@ -268,7 +268,7 @@ is an orthogonal basis for span$\{\vect{a}_1,\ldots, \vect{a}_4\}$.
 The idea of {prf:ref}`Ex:GramSchmidt:NonOrthog` can be generalized as follows.
 Suppose  $W = \text{span}\{\vect{a}_1,\ldots,\vect{a}_m\}$, where the vectors $\vect{a}_i$ are not
 necessarily linearly independent.
-If we apply the Gram-Schmidt construction and discard the zero vector if it comes up, then we end up with an orthogonal basis $(\vect{b}_1,\ldots,\vect{b}_k)$  for  $W$.  Note that   $k < m$ occurs precisely when the original generating set of vectors $\{\vect{a}_1,\ldots,\vect{a}_m\}$ is linearly dependent.
+If we apply the Gram-Schmidt construction and discard the zero vector if it comes up, then we end up with an orthogonal basis $\{\vect{b}_1,\ldots,\vect{b}_k\}$  for  $W$.  Note that   $k < m$ occurs precisely when the original generating set of vectors $\{\vect{a}_1,\ldots,\vect{a}_m\}$ is linearly dependent.
 
 %::::
 
@@ -278,7 +278,7 @@ If we apply the Gram-Schmidt construction and discard the zero vector if it come
 ::::{prf:remark}
 :label: Rem:GramSchmidt:OrthonormalBasis
 
-By applying the Gram-Schmidt process to a linearly independent set of vectors $\{\vect{a}_1,\ldots,\vect{a}_m\}$ we  get a orthogonal basis  $(\vect{b}_1,\ldots,\vect{b}_m)$ for the subspace  $W =  \text{span}\{\vect{a}_1,\ldots,\vect{a}_m\}$.   
+By applying the Gram-Schmidt process to a linearly independent set of vectors $\{\vect{a}_1,\ldots,\vect{a}_m\}$ we  get a orthogonal basis  $\{\vect{b}_1,\ldots,\vect{b}_m\}$ for the subspace  $W =  \text{span}\{\vect{a}_1,\ldots,\vect{a}_m\}$.   
 
 By rescaling the vectors  $\vect{b}_i$  as follows
 
@@ -312,14 +312,14 @@ $$
 
 $$
 
-   \left(\begin{bmatrix} 1 \\ 1   \\-1  \\1   \end{bmatrix}, \begin{bmatrix} 1 \\ 1 \\0 \\-2  \end{bmatrix},   \begin{bmatrix} 2 \\ 0   \\3  \\1  \end{bmatrix}\right).   
+   \left\{\begin{bmatrix} 1 \\ 1   \\-1  \\1   \end{bmatrix}, \begin{bmatrix} 1 \\ 1 \\0 \\-2  \end{bmatrix},   \begin{bmatrix} 2 \\ 0   \\3  \\1  \end{bmatrix}\right\}.   
 $$
 
 Rescaling (or normalizing) gives the orthonormal basis
 
 $$
 
-   \left( \dfrac{1}{2}\begin{bmatrix} 1 \\ 1   \\-1  \\1   \end{bmatrix}, \quad \dfrac{1}{\sqrt{6}}\begin{bmatrix} 1 \\ 1 \\0 \\-2  \end{bmatrix},   \quad  \dfrac{1}{\sqrt{14}}\begin{bmatrix} 2 \\ 0   \\3  \\1  \end{bmatrix}\right).    
+   \left\{ \dfrac{1}{2}\begin{bmatrix} 1 \\ 1   \\-1  \\1   \end{bmatrix}, \quad \dfrac{1}{\sqrt{6}}\begin{bmatrix} 1 \\ 1 \\0 \\-2  \end{bmatrix},   \quad  \dfrac{1}{\sqrt{14}}\begin{bmatrix} 2 \\ 0   \\3  \\1  \end{bmatrix}\right\}.    
 $$
 
 ::::
@@ -351,7 +351,7 @@ $$
    A = QR,
 $$
 
-where $Q$ is an $n \times m$ matrix with orthonormal columns, and  $R$ is an upper triangular $m \times m$ matrix, with positive diagonal entries. 
+where $Q$ is an $n \times m$ matrix with *orthonormal columns*, and  $R$ is an *upper triangular* $m \times m$ matrix, with positive diagonal entries. 
 
 
 The matrix $Q$  is found by applying the Gram-Schmidt process to the (linearly independent) columns  $\vect{a}_1,\ldots,\vect{a}_m$  of the matrix $A$ and then renormalizing.
@@ -423,12 +423,15 @@ $$
 
 where $CD$ is an upper triangular matrix with  positive diagonal entries.
 
-Multiplying both sides with the inverse of  $CD$  will give us the matrix $R$, which is still an upper triangular matrix with  positive diagonal entries.
+Multiplying both sides with the inverse of  $CD$  gives 
 
 $$
 
-  Q = A(CD) \iff A = Q(CD)^{-1} = QR.
+  Q = A(CD) \iff A = Q(CD)^{-1} = QR,
 $$
+
+where $R = (CD)^{-1}$  is still an upper triangular matrix with  positive diagonal entries.
+
 
 ::::
 

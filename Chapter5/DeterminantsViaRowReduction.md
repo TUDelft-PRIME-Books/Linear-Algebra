@@ -289,9 +289,40 @@ $$
 ::::::
 
 
-::::::{exercise}
+::::::{exercise} 
+:label: Exc:DetRowReduction:EqualRows
 
 Give an alternative proof of {prf:ref}`Cor:DetRowReduction:EqualRows` using Rule i. and Rule ii. of {prf:ref}`Prop:DetRowReduction:RowOps`.
+
+::::::
+
+
+::::::{solution} Exc:DetRowReduction:EqualRows
+:class: dropdown
+
+Suppose  $A$ is a matrix with two equal rows,  say  row $i$ and row $j$ are equal.
+
+If we subtract the $i$th row from the $j$th row, we get a matrix $A_2$ with $j$th row equal to zero, and with  det$(A_2) = $ det$(A)$. If we take the factor $0$ out, we see that det$(A_2) = 0$.
+
+For instance, with a $4\times 4$ matrix with equal second and fourth row we would have
+
+$$
+  \begin{vmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\
+                  \color{blue}a_{21} & \color{blue}a_{22} & \color{blue}a_{23} & \color{blue}a_{24} \\
+                  a_{31} & a_{32} & a_{33} & a_{34} \\
+                  \color{blue}a_{21} & \color{blue}a_{22} & \color{blue}a_{23} & \color{blue}a_{24} 
+                  \end{vmatrix} = 
+                  \begin{vmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\
+                  a_{21} & a_{22} & a_{23} & a_{24} \\
+                  a_{31} & a_{32} & a_{33} & a_{34} \\
+                  \color{blue}0 & \color{blue}0 &\color{blue} 0 & \color{blue}0 
+                  \end{vmatrix} = 
+                  {\color{blue}0}\begin{vmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\
+                  a_{21} & a_{22} & a_{23} & a_{24} \\
+                  a_{31} & a_{32} & a_{33} & a_{34} \\
+                  \ast & \ast &\ast &\ast 
+                  \end{vmatrix} = 0.
+$$
 
 ::::::
 
@@ -445,6 +476,7 @@ $$
 ::::::
 
 ::::::{exercise}
+:label: Exc:DetRowReduction:PropNonProp
 
 For each of the following statements decide whether they are true or false.  In case true, give an argument, in case false, give a counterexample.
 <ol type = "a">
@@ -486,6 +518,71 @@ $$
 </ol>
 
 ::::::
+
+
+::::::{solution} Exc:DetRowReduction:PropNonProp
+:class: dropdown
+
+We treat the statements one by 
+<ol type = "a">
+
+<li>
+
+For each $n \times n$ matrix  $A$ it holds that 
+
+<BR>
+
+$$
+\text{det}\big(A^k\big)= \big(\det{A}\big)^k.
+$$
+
+
+This is true, and follows from repeatedly using the property $\det(AB) = \det(A)\det(B)$.  Namely,
+
+<BR>
+
+$$
+  \det(A^k) = \det(A\cdot A \cdot A \cdots A) = 
+  \det(A)\cdot\det(A)\cdot\det(A)\cdots\det(A).
+$$
+
+</li>
+<li>
+
+For each two $n \times n$ matrices  $A$ and $B$ it holds that
+
+<BR>
+
+$$
+\det{(A+B)} = \det{A}+\det{B}.
+$$
+
+This statement is false. A trivial counterexample:  $A = I$, $B = -I$.
+</li>
+<li>
+
+For each $n \times n$ matrix  $A$ it holds that  
+
+<BR>
+
+$$
+\det{(-A)} = -\det{A}.
+$$
+
+
+This is not true in general.  The correct statement would be: for an $n \times n$ matrix $A$ <BR>
+
+$$
+  \det{(-A)} = (-1)^n\det{(A)}.
+$$  
+
+One way to see this is true is to write  $-A = (-I)A$ and use the product rule ({prf:ref}`Eq:DetRowReduction:ProductRule`).
+
+</li>
+</ol>
+
+::::::
+
 
 
 We will conclude this section, for the interested reader,  with a proof of the properties of {prf:ref}`Prop:DetRowReduction:RowOps`.
