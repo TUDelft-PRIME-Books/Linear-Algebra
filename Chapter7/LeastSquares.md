@@ -1117,10 +1117,9 @@ give  a unique least squares solution, and it is $\hat{a} = 1.6$, $\hat{b} = 0.3
 :::{figure} Images/Fig-LeastSquares-LSline.svg
 :name: Fig:LeastSquares:LSline
 
-Least square line
+Least squares line
+
 :::
-
-
 
 
 For the line  $y = \hat{a}  + \hat{b}x$  the sum of the squares of the residues becomes

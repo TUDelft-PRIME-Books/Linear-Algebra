@@ -557,7 +557,14 @@ $$
 \det{(A+B)} = \det{A}+\det{B}.
 $$
 
-This statement is false. A trivial counterexample:  $A = I$, $B = -I$.
+This statement is false. A trivial counterexample is given by   $A = B = I_n$, for $n \geq 2$.  Namely, for these matrices we see that
+
+<BR>
+
+$$
+  \det{A} + \det{B} = 1 + 1 = 2 \neq \det{(A+B)} = \det{(2I)} = 2^n.
+$$
+
 </li>
 <li>
 
