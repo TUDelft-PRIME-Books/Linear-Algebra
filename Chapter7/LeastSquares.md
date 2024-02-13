@@ -1114,7 +1114,7 @@ give  a unique least squares solution, and it is $\hat{a} = 1.6$, $\hat{b} = 0.3
 
 {numref}`Figure %s <Fig:LeastSquares:LSline>` shows both lines.
 
-:::{figure} Images/Fig-LeastSquares-LSline.svg
+:::{figure} Images/Fig-LeastSquares-LSLine.svg
 :name: Fig:LeastSquares:LSline
 
 Least squares line
