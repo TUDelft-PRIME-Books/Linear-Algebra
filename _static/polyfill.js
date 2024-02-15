@@ -3,16 +3,16 @@
     ? (module.exports = t())
     : 'function' == typeof define && define.amd
     ? define(t)
-    : ((e || self).loadingAttributePolyfill = t());
+    : ((e || self).loadingAttributePolyfill = t())
 })(this, function () {
   var e,
     t = 'loading' in HTMLImageElement.prototype,
     r = 'loading' in HTMLIFrameElement.prototype,
-    o = 'onscroll' in window;
+    o = 'onscroll' in window
   function a(e) {
     var t,
       r,
-      o = [];
+      o = []
     'picture' === e.parentNode.tagName.toLowerCase() &&
       ((r = (t = e.parentNode).querySelector('source[data-lazy-remove]')) &&
         t.removeChild(r),
@@ -23,13 +23,13 @@
       o.forEach(function (e) {
         e.hasAttribute('data-lazy-srcset') &&
           (e.setAttribute('srcset', e.getAttribute('data-lazy-srcset')),
-          e.removeAttribute('data-lazy-srcset'));
+          e.removeAttribute('data-lazy-srcset'))
       }),
       e.setAttribute('src', e.getAttribute('data-lazy-src')),
-      e.removeAttribute('data-lazy-src');
+      e.removeAttribute('data-lazy-src')
   }
   function n(a) {
-    var n = document.createElement('div');
+    var n = document.createElement('div')
     for (
       n.innerHTML = (function (a) {
         var n = a.textContent || a.innerHTML,
@@ -38,7 +38,7 @@
             ((n.match(/width=['"](\d+)['"]/) || !1)[1] || 1) +
             ' ' +
             ((n.match(/height=['"](\d+)['"]/) || !1)[1] || 1) +
-            '%27%3E%3C/svg%3E';
+            '%27%3E%3C/svg%3E'
         return (
           ((/<img/gim.test(n) && !t) || (/<iframe/gim.test(n) && !r)) &&
             o &&
@@ -60,12 +60,12 @@
                       ' src="' + i + '" data-lazy-src='
                     )),
           n
-        );
+        )
       })(a);
       n.firstChild;
 
     ) {
-      var i = n.firstChild;
+      var i = n.firstChild
       if (
         o &&
         void 0 !== e &&
@@ -76,12 +76,12 @@
           ('iframe' === i.tagName.toLowerCase() && !r))
       ) {
         var c =
-          'picture' === i.tagName.toLowerCase() ? n.querySelector('img') : i;
-        e.observe(c);
+          'picture' === i.tagName.toLowerCase() ? n.querySelector('img') : i
+        e.observe(c)
       }
-      a.parentNode.insertBefore(i, a);
+      a.parentNode.insertBefore(i, a)
     }
-    a.parentNode.removeChild(a);
+    a.parentNode.removeChild(a)
   }
   window.NodeList &&
     !NodeList.prototype.forEach &&
@@ -91,16 +91,16 @@
         function (e, t) {
           e.forEach(function (e) {
             if (0 !== e.intersectionRatio) {
-              var r = e.target;
-              t.unobserve(r), a(r);
+              var r = e.target
+              t.unobserve(r), a(r)
             }
-          });
+          })
         },
         { rootMargin: '0px 0px 256px 0px', threshold: 0.01 }
-      ));
+      ))
   var i = function () {
     document.querySelectorAll('noscript.loading-lazy').forEach(function (e) {
-      return n(e);
+      return n(e)
     }),
       void 0 !== window.matchMedia &&
         window.matchMedia('print').addListener(function (e) {
@@ -110,21 +110,21 @@
                 'img[loading="lazy"][data-lazy-src],iframe[loading="lazy"][data-lazy-src]'
               )
               .forEach(function (e) {
-                a(e);
-              });
-        });
-  };
+                a(e)
+              })
+        })
+  }
   return (
     /comp|inter/.test(document.readyState)
       ? i()
       : 'addEventListener' in document
       ? document.addEventListener('DOMContentLoaded', function () {
-          i();
+          i()
         })
       : document.attachEvent('onreadystatechange', function () {
-          'complete' === document.readyState && i();
+          'complete' === document.readyState && i()
         }),
     { prepareElement: n }
-  );
-});
+  )
+})
 //# sourceMappingURL=loading-attribute-polyfill.umd.js.map

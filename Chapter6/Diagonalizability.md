@@ -1,76 +1,59 @@
 (Sec:Diagonalize)=
+
 # Diagonalizability
 
-
 ## Similar matrices
-
-
 
 ::::::{prf:definition}
 :label: Dfn:Diagonalizable:SimalarMatrices
 
-Two $n \times n$ matrices $A$  and $B$  are called  **similar** if they are related via the property
+Two $n \times n$ matrices $A$ and $B$ are called **similar** if they are related via the property
 
 $$
 B = PAP^{-1} \quad \text{for some invertible matrix  } P.
 $$
 
-Notation:  $A \sim B$.
+Notation: $A \sim B$.
 
 ::::::
 
-
-It is true we already used the symbol $\sim$  earlier to denote row equivalence of (augmented) matrices.  When we use it, it  will always be clear from the context what is the meaning at that instance.
+It is true we already used the symbol $\sim$ earlier to denote row equivalence of (augmented) matrices. When we use it, it will always be clear from the context what is the meaning at that instance.
 
 ::::::{prf:remark}
 
-In the definition it seems as if $A$ and $B$ play a different role, but that is not the case.  This can be seen as follows:
+In the definition it seems as if $A$ and $B$ play a different role, but that is not the case. This can be seen as follows:
 
 $$
 A \sim B  \quad \iff \quad B = PAP^{-1}
 \quad \iff \quad  P^{-1}BP =  P^{-1}(PAP^{-1})P = A.
 $$
 
-Since  $(P^{-1})^{-1} = P$, we see that
+Since $(P^{-1})^{-1} = P$, we see that
 
 $$
 B = PAP^{-1} \quad \iff \quad A =  QBQ^{-1}, \quad \text{where  } Q = P^{-1},
 $$
 
-so  similarity works both ways, that is, 
+so similarity works both ways, that is,
 
 $$
 A \sim B  \quad \iff \quad   B \sim A.
 $$
 
-
-
-
 ::::::
 
-
-
-
-Similar matrices have similar properties.  Especially as regards eigenvalues and eigenvectors.
-
-
+Similar matrices have similar properties. Especially as regards eigenvalues and eigenvectors.
 
 ::::::{prf:proposition}
 :label: Prop:Diagonalizable:SimilarEigenvalues
 
-If $A = PBP^{-1}$,  then  $A$ and $B$  have the same eigenvalues.
+If $A = PBP^{-1}$, then $A$ and $B$ have the same eigenvalues.
 
-Moreover,  if  $\vect{v}$ is an eigenvector of $B$,  then $P\vect{v}$ is an eigenvector of $A$.
+Moreover, if $\vect{v}$ is an eigenvector of $B$, then $P\vect{v}$ is an eigenvector of $A$.
 
 ::::::
 
-
-
-
-
-
 ::::::{prf:proof}
-
 
 Suppose $\lambda$ is an eigenvalue of $B$, and $\vect{v}$ is a corresponding eigenvector. We then see that
 
@@ -80,14 +63,11 @@ AP\vect{v} = (PBP^{-1})P\vect{v} = PB\vect{v} =
 P(\lambda\vect{v}) =  \lambda P\vect{v}
 $$
 
-So   $AP\vect{v} = \lambda P\vect{v} $, and $P\vect{v} $  is an eigenvector provided it is not the zero vector.
+So $AP\vect{v} = \lambda P\vect{v} $, and $P\vect{v} $  is an eigenvector provided it is not the zero vector.
 Since $P$ is supposed to be invertible, and $\vect{v}$ is not the zero vector, it is true that
-$P\vect{v} $  is not the zero vector, and we are done.
+$P\vect{v} $ is not the zero vector, and we are done.
 
 ::::::
-
-
-
 
 ::::::{prf:proposition}
 :label: Prop:Diagonalizable:SimilarCharpoly
@@ -96,11 +76,9 @@ Similar matrices have the same characteristic polynomial.
 
 ::::::
 
-
 ::::::{prf:proof}
 
-
-Suppose  $A = PBP^{-1}$.
+Suppose $A = PBP^{-1}$.
 
 Then we have
 
@@ -120,34 +98,28 @@ $$
 \end{array}
 $$
 
-In fact, the first step contains the 'smart move',  to bring in convenient factors  $P$ and $P^{-1}$  via
+In fact, the first step contains the 'smart move', to bring in convenient factors $P$ and $P^{-1}$ via
 
 $$
 I = PIP^{-1}.
 $$
 
-In the other steps we used the rule   $\det{(AB)} = \det{A}\det{B}$   and its consequence that for invertible matrices $P$ we have
+In the other steps we used the rule $\det{(AB)} = \det{A}\det{B}$ and its consequence that for invertible matrices $P$ we have
 
 $$
    \det{(P^{-1})} = \dfrac{1}{\det{P}}.
 $$
 
-
 ::::::
 
+From {prf:ref}`Prop:Diagonalizable:SimilarCharpoly` it follows that similar matrices have the same eigenvalues with the same algebraic multiplicities.
 
-
-
-From {prf:ref}`Prop:Diagonalizable:SimilarCharpoly` it follows that similar matrices have the same eigenvalues with the same algebraic multiplicities.  
-
-From {prf:ref}`Prop:Diagonalizable:SimilarEigenvalues` it follows that they also have the same geometric multiplicities. That is, 
+From {prf:ref}`Prop:Diagonalizable:SimilarEigenvalues` it follows that they also have the same geometric multiplicities. That is,
 <BR>
-if $\vect{v}_1, \ldots, \vect{v}_m$  are linearly independent eigenvectors of $B$ for the eigenvalue $\lambda_k$,  and $A = PBP^{-1}$,
-then $P\vect{v}_1, \ldots, P\vect{v}_m$  are linearly independent eigenvectors of $A$.
+if $\vect{v}_1, \ldots, \vect{v}_m$ are linearly independent eigenvectors of $B$ for the eigenvalue $\lambda_k$, and $A = PBP^{-1}$,
+then $P\vect{v}_1, \ldots, P\vect{v}_m$ are linearly independent eigenvectors of $A$.
 <BR>
 And vice versa.
-
-
 
 ::::::{exercise}
 :label: Exc:Diagonalizable:GeomMultForSimilarMatrices
@@ -156,15 +128,14 @@ Fill in the details of the last remark.
 
 ::::::
 
-
 One way to understand the similarity of similar matrices comes from considering the linear transformations they represent.
-In  {numref}`Section %s <Subsec:ChangeOfBasis:RelationTETB>`  it is shown that if $T:\R^n\to\R^n$ is the linear transformation that has $A$ as its standard matrix, and  $P = P_{\mathcal{B}}$ is the change-of-coordinates matrix from the basis $\mathcal{B}$ to the standard matrix, then the matrix of $T$ with respect to basis $\mathcal{B}$ is given by
+In {numref}`Section %s <Subsec:ChangeOfBasis:RelationTETB>` it is shown that if $T:\R^n\to\R^n$ is the linear transformation that has $A$ as its standard matrix, and $P = P_{\mathcal{B}}$ is the change-of-coordinates matrix from the basis $\mathcal{B}$ to the standard matrix, then the matrix of $T$ with respect to basis $\mathcal{B}$ is given by
 
 $$
 [T]_{\mathcal{B}} = P^{-1}AP.
 $$
 
-This means that if $A$ and $B$  are related via
+This means that if $A$ and $B$ are related via
 
 $$
 B = PAP^{-1}
@@ -174,10 +145,7 @@ then $A$ and $B$ are in fact matrices of the same linear transformation, only wi
 
 The following proposition captures some other properties that similar matrices share.
 
-
-
 ::::::{prf:proposition}
-
 
 Suppose $A$ and $B$ are similar matrices. Then the following statements are true.
 
@@ -189,13 +157,12 @@ $\det{A} = \det{B}$.
 </li>
 <li>
 
-If $A$ is invertible, then $B$ is invertible  (and vice versa).
-
+If $A$ is invertible, then $B$ is invertible (and vice versa).
 
 </li>
 <li>
 
-$A$  and $B$ have the same rank.
+$A$ and $B$ have the same rank.
 
 </li>
 </ol>
@@ -204,25 +171,25 @@ $A$  and $B$ have the same rank.
 
 ::::::{margin}
 
-:::{admonition} {prf:ref}`Exc:BasisDim:ProveRankAPEqualToRankPA`. 
+:::{admonition} {prf:ref}`Exc:BasisDim:ProveRankAPEqualToRankPA`.
 
-If  $A$ and $P$  are $n\times n$ matrices with $P$ invertible
+If $A$ and $P$ are $n\times n$ matrices with $P$ invertible
 then $\text{rank}(AP) = \text{rank}(A) =\text{rank}(PA)$.
 
 ::::::
 
 ::::::{prf:proof}
 
-Suppose  $A = PBP^{-1}$.
+Suppose $A = PBP^{-1}$.
 
 <ol type = "i">
 <li>
 
-As in the proof of the equality of the characteristic polynomials ({prf:ref}`Prop:Diagonalizable:SimilarCharpoly`) we have: 
+As in the proof of the equality of the characteristic polynomials ({prf:ref}`Prop:Diagonalizable:SimilarCharpoly`) we have:
 
 <BR>
 
-if  $A = PBP^{-1}$,
+if $A = PBP^{-1}$,
 then
 
 <BR>
@@ -249,7 +216,7 @@ matrix $A$ is invertible $\quad \iff \quad \det{(A)} \neq 0$.
 </li>
 <li>
 
-We can use the identities of {prf:ref}`Exc:BasisDim:ProveRankAPEqualToRankPA` from the section  'Basis and Dimension' (see margin).  Since $P$ and $P^{-1}$ are both invertible we find:  if  $A = PBP^{-1}$,  
+We can use the identities of {prf:ref}`Exc:BasisDim:ProveRankAPEqualToRankPA` from the section 'Basis and Dimension' (see margin). Since $P$ and $P^{-1}$ are both invertible we find: if $A = PBP^{-1}$,
 
 <BR>
 
@@ -260,41 +227,32 @@ then $\text{rank}(A) = \text{rank}(PBP^{-1})  = \text{rank}(PB) = \text{rank}(B)
 
 ::::::
 
-
-
-
-
 ## Diagonalizability
-
 
 ::::::{prf:definition}
 :label: Dfn:Eigenvalues:Diagonalizability
 
-A matrix is $A$ is called **diagonalizable**  if it is similar to a diagonal matrix. That means that a diagonal matrix $D$ and an invertible matrix $P$ exist such that
+A matrix is $A$ is called **diagonalizable** if it is similar to a diagonal matrix. That means that a diagonal matrix $D$ and an invertible matrix $P$ exist such that
 
 $$
 A = PDP^{-1}.
 $$
 
-We then say that  $PDP^{-1}$ is a **diagonalization**  of $A$.
+We then say that $PDP^{-1}$ is a **diagonalization** of $A$.
 
 ::::::
 
-
 An equivalent alternative characterization of diagonalizability is given in the following proposition.
-
 
 ::::::{prf:proposition}
 :label: Prop:Eigenvalues:DiagbleVersusEigenvectors
 
-A matrix $A$ is diagonalizable if and only if  $A$ has $n$ linearly independent eigenvectors.
+A matrix $A$ is diagonalizable if and only if $A$ has $n$ linearly independent eigenvectors.
 Such a set of eigenvectors then forms a basis for $\R^n$.
 
 ::::::
 
-
 Since this proposition is such a pillar on which much of the theory of matrices rests, and diagonalizable matrices are important because they are in many respects easy to work with, we give two proofs.
-
 
 ::::::{prf:proof}
 
@@ -328,30 +286,28 @@ $$
 PD =  [d_1\vect{p}_1 \quad  d_2\vect{p}_2  \quad  \cdots  \quad d_n\vect{p_n}].
 $$
 
-Comparing $AP$ and $PD$ column by column we see that $A\vect{p}_i = d_i\vect{p}_i$ for $n$  linearly independent vectors in $\R^n$;  namely, an invertible matrix $P$ has linearly independent columns.
+Comparing $AP$ and $PD$ column by column we see that $A\vect{p}_i = d_i\vect{p}_i$ for $n$ linearly independent vectors in $\R^n$; namely, an invertible matrix $P$ has linearly independent columns.
 
 ::::::
 
-
 The second proof has a geometric flavour.
-
 
 ::::::{prf:proof}
 
 First we show that diagonalizability implies the existence of $n$ linearly independent eigenvectors.
 
-If $A = PDP^{-1}$  then by {prf:ref}`Prop:Eigenvalues:DiagbleVersusEigenvectors`  $A$ and $D$  have the same eigenvalues and the relation between the eigenvectors is:
+If $A = PDP^{-1}$ then by {prf:ref}`Prop:Eigenvalues:DiagbleVersusEigenvectors` $A$ and $D$ have the same eigenvalues and the relation between the eigenvectors is:
 
 <ul>
 <li>
 
-if  $\vect{v}$  is an eigenvector of  $D$  for the eigenvalue  $\lambda$
-then  $ P\vect{v}$  is an eigenvector of  $A$  for the same  $\lambda$.
+if $\vect{v}$ is an eigenvector of $D$ for the eigenvalue $\lambda$
+then $ P\vect{v}$ is an eigenvector of $A$ for the same $\lambda$.
 
 </li>
 </ul>
 
-The eigenvalues  of $D$ are simply the diagonal entries $d_i$ with the vectors $\vect{e}_i$ of the standard basis as corresponding eigenvectors.
+The eigenvalues of $D$ are simply the diagonal entries $d_i$ with the vectors $\vect{e}_i$ of the standard basis as corresponding eigenvectors.
 
 $$
 \left[\begin{array}{cccc}
@@ -385,12 +341,12 @@ d_1 & 0 &  \ldots & 0 \\
 \quad \text{etc.}
 $$
 
-Thus   $A = PDP^{-1}$  has the eigenvalues $d_i$ with corresponding  eigenvectors $P\vect{e}_i = \vect{p}_i$.
+Thus $A = PDP^{-1}$ has the eigenvalues $d_i$ with corresponding eigenvectors $P\vect{e}_i = \vect{p}_i$.
 Thus the $n$ columns of $P$, which are linearly independent since $P$ is invertible, give a basis of eigenvectors for $A$.
 
-The other half is a bit more involved.  It relies on the transformation formula of matrix representations (see {prf:ref}`Prop:ChangeOfBasis:MatrixChangeStandardBasis`).
+The other half is a bit more involved. It relies on the transformation formula of matrix representations (see {prf:ref}`Prop:ChangeOfBasis:MatrixChangeStandardBasis`).
 
-Let  $T: \R^n \to \R^n$ be the linear transformation with standard matrix $A$,  i.e., $T(\vect{x}) = A\vect{x}$, and suppose $A$  has $n$ linearly independent eigenvectors $\vect{v}_1, \ldots, \vect{v}_n$.  Let $\lambda_1, \ldots, \lambda_n$ denote the eigenvalues.
+Let $T: \R^n \to \R^n$ be the linear transformation with standard matrix $A$, i.e., $T(\vect{x}) = A\vect{x}$, and suppose $A$ has $n$ linearly independent eigenvectors $\vect{v}_1, \ldots, \vect{v}_n$. Let $\lambda_1, \ldots, \lambda_n$ denote the eigenvalues.
 So $A\vect{v}_i =\lambda_i\vect{v}_i$.
 
 For the basis $\mathcal{B} = (\vect{v}_1, \ldots, \vect{v}_n)$ we then see that
@@ -404,8 +360,7 @@ $$
 0 & 0 & 0 & \ldots & \lambda_n \end{bmatrix},
 $$
 
-and the transformation formula  gives
-
+and the transformation formula gives
 
 :::{math}
 :label: Eq:Diagonalizable:PinvAP
@@ -414,20 +369,18 @@ D = [T]_{\mathcal{B}} = P^{-1}[T]_{\mathcal{E}}P = P^{-1}AP,
 
 :::
 
-
 where $P = P_{\mathcal{E} \leftarrow \mathcal{B}} =  [ \vect{v}_1    \vect{v}_2    \ldots    \vect{v}_n]$
 is the change-of-coordinates matrix from $\mathcal{B}$ to the standard basis.
 
-Lastly, the identity $D=P^{-1}AP$ in Equation {eq}`Eq:Diagonalizable:PinvAP` is equivalent to  $A = PDP^{-1}$.
+Lastly, the identity $D=P^{-1}AP$ in Equation {eq}`Eq:Diagonalizable:PinvAP` is equivalent to $A = PDP^{-1}$.
 
 ::::::
-
 
 ::::::{prf:example}
 :label: Ex:Diagonalizable:CheckPDPinv
 
-We verify the relation  $A = PDP^{-1}$  for the matrix $A = \begin{bmatrix} 1 & 4 \\ 1 & 1 \end{bmatrix}$ we studied before.
-We found that $A$ has the eigenvalues $\lambda_1 = 3$,  $\lambda_2 = -1$, with corresponding eigenvectors $\vect{v}_1 = \begin{bmatrix} 2 \\1 \end{bmatrix}$  and  $\vect{v}_2 = \begin{bmatrix} -2 \\1 \end{bmatrix}$.
+We verify the relation $A = PDP^{-1}$ for the matrix $A = \begin{bmatrix} 1 & 4 \\ 1 & 1 \end{bmatrix}$ we studied before.
+We found that $A$ has the eigenvalues $\lambda_1 = 3$, $\lambda_2 = -1$, with corresponding eigenvectors $\vect{v}_1 = \begin{bmatrix} 2 \\1 \end{bmatrix}$ and $\vect{v}_2 = \begin{bmatrix} -2 \\1 \end{bmatrix}$.
 
 Thus for a diagonalization of $A$ we can take
 
@@ -439,7 +392,7 @@ P = \left[\begin{array}{cc}\vect{v}_1 & \vect{v}_2\end{array} \right]
 \right]
 $$
 
-We will check that this is okay.   To start with, 
+We will check that this is okay. To start with,
 
 $$
 P^{-1} = \dfrac14\left[\begin{array}{cc} 1 &  2 \\ -1 & 2 \end{array}
@@ -474,7 +427,7 @@ $$
 
 as it should.
 
-Note that the diagonalization is not unique:  the order of the eigenvalues is free to choose, and the eigenvectors may be scaled.
+Note that the diagonalization is not unique: the order of the eigenvalues is free to choose, and the eigenvectors may be scaled.
 However, the order of the eigenvectors in $P$ must correspond to the order of the eigenvalues on the diagonal of $D$.
 For instance, for the matrix $A$ at hand, an alternative diagonalization is given by
 
@@ -490,76 +443,69 @@ $$
 
 ::::::
 
-Are all matrices diagonalizable?  Most certainly not, as the following two examples, studied before,  show.
-
+Are all matrices diagonalizable? Most certainly not, as the following two examples, studied before, show.
 
 ::::::{prf:example}
 :label: Ex:Diagonalizable:RotationCtd
 
-The matrix $R = \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}$ of {prf:ref}`Ex:EigenValues:Rotation` does not have any (real) eigenvalues, so also no eigenvectors.  Hence it cannot be diagonalized.
+The matrix $R = \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}$ of {prf:ref}`Ex:EigenValues:Rotation` does not have any (real) eigenvalues, so also no eigenvectors. Hence it cannot be diagonalized.
 
 ::::::
-
 
 ::::::{prf:remark}
 :label: Rem:Diagonalizable:RotationCtd
 
 Things would be different if we would allow complex eigenvalues and eigenvectors. We will devote a special
-section to this. And then it will appear that the matrix $R$  is **complex diagonalizable**.
+section to this. And then it will appear that the matrix $R$ is **complex diagonalizable**.
 
 ::::::
 
-
-In the previous example there were not enough eigenvalues for the matrix $A$ to be real diagonalizable. In the following example there  is another reason why a matrix can fail to be diagonalizable.
-
-
+In the previous example there were not enough eigenvalues for the matrix $A$ to be real diagonalizable. In the following example there is another reason why a matrix can fail to be diagonalizable.
 
 ::::::{prf:example}
 
-The matrix 
+The matrix
 $A = \left[\begin{array}{cc} 2 & 1 \\ 0 & 2 \end{array}
-\right]$ 
-has the double eigenvalue  $\lambda_1 = \lambda_2 = 2$.
+\right]$
+has the double eigenvalue $\lambda_1 = \lambda_2 = 2$.
 Since  
 $A - 2I = \left[\begin{array}{cc} 0 & 1 \\ 0 & 0 \end{array}
-\right]$ 
+\right]$
 has rank 1, there is only one independent eigenvector.
 Thus there does not exist a basis of eigenvectors for $A$, and consequently the matrix $A$ is not diagonalizable.
 
 ::::::
-
 
 ::::::{prf:example}
 :label: Ex:Diagonalizable:SecondCharPolyCtd2
 
 The matrix
 $A = \left[\begin{array}{ccc} 4 & -1 & 2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{array}
-\right]$ 
+\right]$
 of {prf:ref}`Ex:EigenValues:SecondCharPoly`
-and  {prf:ref}`Ex:EigenValues:SecondCharPolyContinued`
-provides another example of this phenomenon.  It has the two eigenvalues, $\lambda_1=3$, of algebraic multiplicity 2, and  $\lambda_2 = 2$, of  algebraic multiplicity 1.
-There is only one independent eigenvector for $\lambda_{1}$. This, together with the single independent eigenvector for $\lambda_2$ is a maximal set of two linearly independent eigenvectors for $A$.  So, $A$ is not diagonalizable.
+and {prf:ref}`Ex:EigenValues:SecondCharPolyContinued`
+provides another example of this phenomenon. It has the two eigenvalues, $\lambda_1=3$, of algebraic multiplicity 2, and $\lambda_2 = 2$, of algebraic multiplicity 1.
+There is only one independent eigenvector for $\lambda_{1}$. This, together with the single independent eigenvector for $\lambda_2$ is a maximal set of two linearly independent eigenvectors for $A$. So, $A$ is not diagonalizable.
 
 ::::::
-
 
 ::::::{exercise}
 :label: Exc:Diagonalizable
 
-Is the matrix 
+Is the matrix
 $A = \left[\begin{array}{cccc}1 & 1 & 0 & 1 \\ 0 & 2 & 0 & 0\\
-0 & 0 & 2 & 1 \\ 0 & 0 & 0 & 1 \end{array} \right]$ 
+0 & 0 & 2 & 1 \\ 0 & 0 & 0 & 1 \end{array} \right]$
 diagonalizable?
 
 ::::::
 
-These  examples show the two causes why a matrix may not be diagonalizable, as is made explicit in the following proposition.
-
+These examples show the two causes why a matrix may not be diagonalizable, as is made explicit in the following proposition.
 
 ::::::{prf:theorem}
 :label: Thm:Diagonalizable:ThirdCharacterization
 
-The  $n \times n$ matrix $A$ is (real) diagonalizable if and only if it satisfies the following two conditions.
+The $n \times n$ matrix $A$ is (real) diagonalizable if and only if it satisfies the following two conditions.
+
 <ol type = "i">
 
 <li>
@@ -577,31 +523,28 @@ For each eigenvalue the geometric multiplicity is equal to the algebraic multipl
 
 ::::::
 
-
 ::::::{prf:proof}
 
 First we show that a diagonalizable matrix satisfies the two conditions.
 
-If $A$ is diagonalizable, then there must be $n$ independent eigenvectors.  The sum of the dimensions $m_k$ of the eigenspaces $E_{\lambda_i}$, i.e., the sum of the geometric multiplicities must therefore be equal to $n$. Since the algebraic multiplicities are at least as large as the geometric multiplicities, the sum of the algebraic multiplicities must be $\geq n$. Since this sum cannot be larger, it  means that the sum is equal to $n$. Thus all  algebraic multiplicities must in fact be equal to the corresponding geometric multiplicities. This settles properties (i) and (ii).
+If $A$ is diagonalizable, then there must be $n$ independent eigenvectors. The sum of the dimensions $m_k$ of the eigenspaces $E_{\lambda_i}$, i.e., the sum of the geometric multiplicities must therefore be equal to $n$. Since the algebraic multiplicities are at least as large as the geometric multiplicities, the sum of the algebraic multiplicities must be $\geq n$. Since this sum cannot be larger, it means that the sum is equal to $n$. Thus all algebraic multiplicities must in fact be equal to the corresponding geometric multiplicities. This settles properties (i) and (ii).
 
-Conversely,  conditions (i) en (ii) immediately imply that there must be $n$ linearly independent eigenvectors.
+Conversely, conditions (i) en (ii) immediately imply that there must be $n$ linearly independent eigenvectors.
 Namely, since eigenvectors for different eigenvalues are automatically linearly independent, bases for the eigenspaces put together give exactly $n$ linearly independent eigenvectors.
 
 ::::::
-
 
 We saw that there is a weak connection between eigenvalues and (non-)invertibility:
 
 {prf:ref}`Prop:EigenValues:Singularity` states: a matrix is singular if and only if it has the eigenvalue $0$.
 
-
 The following exercise shows that there is no relation between diagonalizability and invertibility.
-
 
 ::::::{exercise}
 :label: Exc:Diagonalizable:Invertibility
 
 Give examples of
+
 <ol type = "i">
 
 <li>
@@ -612,34 +555,31 @@ A matrix that is diagonalizable but not invertible.
 
 <li>
 
-A matrix  that is invertible but not diagonalizable.
+A matrix that is invertible but not diagonalizable.
 
 </li>
 
 <li>
 
-A matrix  that is not invertible and not diagonalizable.
+A matrix that is not invertible and not diagonalizable.
 
 </li>
 
 <li>
 
-A matrix  that is both invertible and  diagonalizable.
+A matrix that is both invertible and diagonalizable.
 
 </li>
 </ol>
 
-
 ::::::
 
-We stated that diagonalizable matrices have nice properties.  Here is one:  for diagonalizable matrices finding (high) powers can be done very efficiently.
-
-
+We stated that diagonalizable matrices have nice properties. Here is one: for diagonalizable matrices finding (high) powers can be done very efficiently.
 
 ::::::{prf:example}
 :label: Ex:Diagonalizable:EasyPowers
 
-If $A = PDP^{-1}$ then $A^k =  PD^kP^{-1}$,  for  $k = 0, 1,2,3, \ldots$
+If $A = PDP^{-1}$ then $A^k =  PD^kP^{-1}$, for $k = 0, 1,2,3, \ldots$
 
 For instance,
 
@@ -647,20 +587,19 @@ $$
 A^3 = (PDP^{-1})(PDP^{-1})(PDP^{-1}) = PD  (P^{-1}P)D (P^{-1}P)D P^{-1}  = PD^3P^{-1},
 $$
 
-since the internal factors $P^{-1}P$ reduce to the identity matrix $I$,  and $ID = D$.
+since the internal factors $P^{-1}P$ reduce to the identity matrix $I$, and $ID = D$.
 
-Check for yourself what happens if $k = 0$. 
+Check for yourself what happens if $k = 0$.
 
-The advantage is the following. Normally,  multiplication of two $n \times n$ matrices requires $n$ multiplications per entry (or $2n-1$ operations, if additions are counted as well), and there are $n\times n$ entries to be computed. So for the $k$th power that requires about $k\times n^3$ multiplications of numbers.
+The advantage is the following. Normally, multiplication of two $n \times n$ matrices requires $n$ multiplications per entry (or $2n-1$ operations, if additions are counted as well), and there are $n\times n$ entries to be computed. So for the $k$th power that requires about $k\times n^3$ multiplications of numbers.
 To compute $PD^kP^{-1}$ we need $n$ $k$th powers to find $D^k$, and we are left with one 'simple' matrix product $PD^k$ and one 'full' matrix product.
 
 ::::::
 
-
 ::::::{prf:example}
 :label: Eq:Diagonalizable:10thPowerofA
 
-We compute $A^{10}$  for the matrix  $A = \left[\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array} \right]$ 
+We compute $A^{10}$ for the matrix $A = \left[\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array} \right]$
 of {prf:ref}`Ex:Diagonalizable:CheckPDPinv`.
 
 There we already settled that $A = PDP^{-1}$, with
@@ -679,18 +618,14 @@ $$
 
 We see that
 
-
 :::{math}
 :label: Eq:Diagonalizable:10thPowerofA
 
-A^{10} =  \left[\begin{array}{cc} 2 & -2 \\ 1 & 1 \end{array} \right]
+A^{10} = \left[\begin{array}{cc} 2 & -2 \\ 1 & 1 \end{array} \right]
 \left[\begin{array}{cc} 3^{10}&0 \\ 0 & (-1 )^{10} \end{array} \right]
-\dfrac14\left[\begin{array}{cc} 1 &  2 \\ -1 & 2 \end{array} \right].
-
+\dfrac14\left[\begin{array}{cc} 1 & 2 \\ -1 & 2 \end{array} \right].
 
 :::
-
-
 
 This can be evaluated to yield
 
@@ -715,7 +650,7 @@ A^{10} = \frac{3^{10}}{4} \left[\begin{array}{cc} 2 & 4 \\ 1 & 1 \end{array}
 .
 $$
 
-Note that we could have found any power of $A$ just as easily:  replacing  $10$ by $n$ in Equation {eq}`Eq:Diagonalizable:10thPowerofA`  gives
+Note that we could have found any power of $A$ just as easily: replacing $10$ by $n$ in Equation {eq}`Eq:Diagonalizable:10thPowerofA` gives
 
 $$
 \begin{array}{rcl}
@@ -734,9 +669,7 @@ $$
 
 ::::::
 
-
-To conclude this section we return to the 'toy' migration model of this chapter to  illustrate  the power of diagonalization.
-
+To conclude this section we return to the 'toy' migration model of this chapter to illustrate the power of diagonalization.
 
 ::::::{prf:example}
 :label: Ex:Diagonalize:DiagonalizeMigration
@@ -777,7 +710,7 @@ $$
 .
 $$
 
-It can be shown that $M$  has the eigenvalues $\lambda_1 = 1$ and $\lambda_2 = 0.7$, with corresponding eigenvectors
+It can be shown that $M$ has the eigenvalues $\lambda_1 = 1$ and $\lambda_2 = 0.7$, with corresponding eigenvectors
 
 $$
 \vect{v}_1 = \left[\begin{array}{c} 2 \\1\end{array}
@@ -788,7 +721,7 @@ $$
  \quad \text{respectively.}
 $$
 
-Since $\{\vect{v}_1, \vect{v}_2\}$ is a basis of eigenvectors,  the matrix  $M$ is diagonalizable, and in fact we have
+Since $\{\vect{v}_1, \vect{v}_2\}$ is a basis of eigenvectors, the matrix $M$ is diagonalizable, and in fact we have
 
 $$
 M = PDP^{-1} = \left[\begin{array}{cc} 2 &1\\1&-1\end{array}
@@ -814,7 +747,7 @@ $$
 \vect{x}_k = M^k\vect{x}_0 = PD^kP^{-1}\vect{x}_0.
 $$
 
-In this case we can clearly see what happens in the long run, i.e. when we let $k$  go to infinity:
+In this case we can clearly see what happens in the long run, i.e. when we let $k$ go to infinity:
 
 $$
 D^k = \left[\begin{array}{cc} 1^k&0\\0&0.7^k\end{array}
@@ -825,8 +758,7 @@ D^k = \left[\begin{array}{cc} 1^k&0\\0&0.7^k\end{array}
 , \quad \text{if  } k \to \infty.
 $$
 
-
-By computing $P^{-1}$ and the product of the three matrices $P$, $D$ and $P^{-1}$ we find that if   $ k \to \infty$,
+By computing $P^{-1}$ and the product of the three matrices $P$, $D$ and $P^{-1}$ we find that if $ k \to \infty$,
 
 $$
 M^k  = PD^kP^{-1} \longrightarrow       P\left[\begin{array}{cc} 1&0\\0&0\end{array}
@@ -834,10 +766,11 @@ M^k  = PD^kP^{-1} \longrightarrow       P\left[\begin{array}{cc} 1&0\\0&0\end{ar
 P^{-1}
 = \frac13 \left[\begin{array}{cc} 2&2 \\ 1&1\end{array}
 \right].
- 
+
+
 $$
 
-We may conclude that, for  $ k \to \infty$,
+We may conclude that, for $ k \to \infty$,
 
 $$
 \vect{x}_k = M^k\vect{x}_0 \longrightarrow \frac13 \left[\begin{array}{cc} 2&2 \\ 1&1\end{array}
@@ -854,7 +787,7 @@ $$
 $$
 
 The interpretation: in the long run the distribution of the people over the two cities approaches the
-steady state distribution where city $A$ has twice as many inhabitants as city $B$.  Moreover,
+steady state distribution where city $A$ has twice as many inhabitants as city $B$. Moreover,
 the total number of inhabitants of the two cities is still the same as at the beginning:
 
 $$
