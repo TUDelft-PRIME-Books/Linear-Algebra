@@ -1,4 +1,5 @@
 (Sec:ProofSVD)=
+
 # Proof of the existence of SVD
 
 This appendix is devoted to construct the proof of {prf:ref}`Thm:SVD:ExistenceSVD`. Some new definitions will be given.
@@ -11,7 +12,7 @@ $$
 \norm{A} = \max_{{\mathbf{v}\in \mathbb{R}^n},\norm{\mathbf{v}}=1} \norm{A\mathbf{v}}.
 $$
 
-We define the the **norm of a linear transformation** $T$ 
+We define the the **norm of a linear transformation** $T$
 as the norm of its standard matrix. That is
 
 $$\norm{T} = \norm{A}$$
@@ -32,7 +33,7 @@ is a continuous function.
 The matrix norm is sometimes called **induced norm**.
 :::
 
-:::{prf:definition} 
+:::{prf:definition}
 
 Suppose that $T:V\subset\mathbb{R}^n \to \mathbb{R}^m$ is a linear transformation with standard matrix $A$. Then we define $\norm{T}$ restricted in $V$ as
 
@@ -50,7 +51,7 @@ Suppose that $A$ is the standard matrix of a linear transformation $T:\mathbb{R}
 
 Since the construction will be iterative we will define, for convenience, $V^{(1)} = \mathbb{R}^n$.
 
-Let's consider "the unit sphere" in $V^{(1)}$. That is 
+Let's consider "the unit sphere" in $V^{(1)}$. That is
 
 $$
 S^{(1)} = \lbrace \mathbf{v} \in V^{(1)} \,|\, \norm{\mathbf{v}}=1\rbrace
@@ -70,7 +71,7 @@ $$
 
 and the restriction of $T$ onto the subspace $V^{(2)}$. Then choose $\mathbf{v}_2$ such that $s_2 = \norm{T_{|V^{(2)}}} = \norm{A\mathbf{v}_2}$.
 
-Notice that, by construction, $\mathbf{v}_1 \perp \mathbf{v}_2$.  If $s_2=0$ then we are done, as $A\mathbf{v} = \mathbf{0}$ for all $\mathbf{v}\in V^{(2)}$. Suppose that $s_2 >0$, and define $\mathbf{u}_2 = \frac{1}{s_2}A\mathbf{v}_2$.
+Notice that, by construction, $\mathbf{v}_1 \perp \mathbf{v}_2$. If $s_2=0$ then we are done, as $A\mathbf{v} = \mathbf{0}$ for all $\mathbf{v}\in V^{(2)}$. Suppose that $s_2 >0$, and define $\mathbf{u}_2 = \frac{1}{s_2}A\mathbf{v}_2$.
 
 Observe that since $S^{(2)} \subset S^{(1)}$ we have that $\displaystyle\max_{\mathbf{v}\in S^{(2)},\norm{\mathbf{v}}=1} \norm{A\mathbf{v}} \le \max_{\mathbf{v}\in S^{(1)},\norm{\mathbf{v}}=1}\norm{A\mathbf{v}}$. Therefore, $s_2 \le s_1$.
 
@@ -81,7 +82,6 @@ In addition, we can prove that $\mathbf{u}_1\perp \mathbf{u}_2$.
 Prove that $\mathbf{u}_1\perp \mathbf{u}_2$. Notice that we cannot use the same argument as in {numref}`Subsec:SVD:Algorithm` since we can not use {prf:ref}`Propo:SVD:singularvalues` (it assumes that the singular value decomposition exists, and this is what we are trying to prove).
 
 :::
-
 
 Suppose that we repeat this process $r$ times. That is, we found $\mathbf{v}_1, \dots, \mathbf{v}_r$, and $\mathbf{u}_1,\dots,\mathbf{u}_r$, and the values $s_1>s_2>\cdots>s_r>0$. Now we define $V^{(r+1)} = \Span{\mathbf{v}_1,\dots,\mathbf{v}_r}^{\perp}$ and we consider again the unit sphere in this subspace:
 

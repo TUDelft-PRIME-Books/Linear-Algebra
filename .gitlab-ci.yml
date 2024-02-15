@@ -3,7 +3,7 @@ stages:
   - deploy
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
-  
+
 jupyter-build:
   stage: build
   image: python:slim

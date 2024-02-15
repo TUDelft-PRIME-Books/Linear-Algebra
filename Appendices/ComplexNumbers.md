@@ -4,7 +4,7 @@
 
 Consider the equation
 
-:::{math} 
+:::{math}
 :label: Eq:ComplexNumbers:abc-eq
 ax^2+bx+c=0,
 
@@ -12,9 +12,9 @@ ax^2+bx+c=0,
 
 where $a\neq0$. Previously you probably learned that Equation {eq}`Eq:ComplexNumbers:abc-eq` only has solutions when $D=b^2-4ac$ was non-negative and in that case you would have the two solutions
 
-:::{math} 
+:::{math}
 :label: Eq:ComplexNumbers:abc-sol
-x_{1,2}=\frac{-b\pm\sqrt{D}}{2a}.
+$x_{1,2}=\frac{-b\pm\sqrt{D}}{2a}.$
 
 :::
 
@@ -40,11 +40,11 @@ $$
 
 The square root of $-1$ obviously is a problem. Therefore we introduce the special number $i$:
 
-::::{prf:definition} 
+::::{prf:definition}
 
 The **imaginary unit** $i$ is a number defined by the equation
 
-:::{math} 
+:::{math}
 :label: Eq:ComplexNumbers:def-i
 
 i^2=-1.
@@ -53,15 +53,14 @@ i^2=-1.
 
 ::::
 
-
 Because $i$ is defined to be a number (mind you, it is not a real number), we also assume $i$ behaves just like any normal number.
 
 Using the imaginary unit $i$ we can prove the following theorem:
 
-::::{prf:theorem} 
+::::{prf:theorem}
 :label: Thm:ComplexNumbers:roots
 
-Let $a$ be a _positive_ real number. Then the two numbers $x_-=-ai$ and $x_+=ai$ are solutions to the equation $x^2=-a^2$. 
+Let $a$ be a _positive_ real number. Then the two numbers $x_-=-ai$ and $x_+=ai$ are solutions to the equation $x^2=-a^2$.
 
 ::::
 
@@ -87,9 +86,9 @@ We also find that $x_+=ai$ is a solution to the equation $x^2=-a^2$.
 
 This means we can rewrite our two solutions as
 
-\begin{equation*}
+$$
 x_{1,2}=\pm i.
-\end{equation*}
+$$
 
 Doesn't this already look simpler?
 
@@ -104,7 +103,7 @@ We are going to do this by first rewriting $p$ to the form $p(z) = (z+p)^2+q$ fo
 
 Expanding gives that we want $z^2+2z+5=z^2+2pz + (p^2+q)$, thus $2=2p$ and $5=p^2+q$. The first equation gives us $p=1$. Plugging this into the second equation, we obtain $5=1+q$, so $q=4$. Therefore, $z^2+2z+5=(z+1)^2+4$.
 
-To solve $z^2+2z+5=0$, we can now write 
+To solve $z^2+2z+5=0$, we can now write
 
 \begin{align*}
 z^2+2z+5 &=0 \\
@@ -118,14 +117,13 @@ Note that we used {prf:ref}`Thm:ComplexNumbers:roots`.
 
 ::::
 
-Going from $z^2+2z+5$ to $(z+1)^2+4$ is called _completing the square_. You can also immediately see that the minimal value of the parabola $y=z^2+2z+5$ for real values of $z$ equals 4 (as $(z+1)^2\geq 0$ for all real $z$), and the minimum is obtained when $z=-1$. 
+Going from $z^2+2z+5$ to $(z+1)^2+4$ is called _completing the square_. You can also immediately see that the minimal value of the parabola $y=z^2+2z+5$ for real values of $z$ equals 4 (as $(z+1)^2\geq 0$ for all real $z$), and the minimum is obtained when $z=-1$.
 
 In general, you can write any polynomial $az^2+bz+c$ in the form $a ((z+p)^2+q)$ by first factoring out the $a$, subsequently choosing the $p$ such that the linear term (the term involving $z$) is correct, and letting $q$ be the remainder. Using this form, you can then determine the zeros of the polynomial.
 
 As you can see in {prf:ref}`Ex:ComplexNumbers:compsquare`, we now found two numbers that are of the form $a+bi$, where $a$ and $b$ are real numbers (for short $a\in\mathbb{R}$ and $b\in\mathbb{R}$). A number like this is called a _complex number_:
 
-
-::::{prf:definition} 
+::::{prf:definition}
 
 A **complex number** is a number of the form
 
@@ -139,11 +137,9 @@ The set of all complex numbers is denoted by the symbol $\mathbb{C}$, and is cal
 
 ::::
 
-
 Such complex numbers we usually denote with the letter $z$ (if we only have one). A complex number also has some special parts, which we define next:
 
-
-::::{prf:definition} 
+::::{prf:definition}
 
 If $z=a+bi$ is a complex number (with $a\in\mathbb{R}$ and $b\in\mathbb{R}$), the **real part** $\Re{z}$ is defined as
 
@@ -151,7 +147,7 @@ $$
 \Re{z}=a,
 $$
 
-and the **imaginary part** $\Im{z}$ is defined as 
+and the **imaginary part** $\Im{z}$ is defined as
 
 $$
 \Im{z}=b.
@@ -161,7 +157,7 @@ $$
 
 To make everything concise, we also define the relation between the set of real numbersr $\mathbb{R}$ and the set of complex numbers $\mathbb{C}$:
 
-::::{prf:definition} 
+::::{prf:definition}
 
 Assume $x\in\mathbb{R}$. Then we define that $x\in\mathbb{C}$ with $\Re{x}=x$ and $\Im{x}=0$.
 
@@ -178,14 +174,11 @@ Visualisation of the complex plane $\mathbb{C}$.
 
 :::
 
-
-
 **Operations with complex numbers**
 
 With complex numbers we can do the same operations as with real numbers:
 
-
-::::{prf:theorem} 
+::::{prf:theorem}
 :label: Thm:ComplexNumbers:ops
 
 If $z=a+bi$ and $w=c+di$ are complex numbers (with $a,b,c,d\in\mathbb{R}$), then the following numbers are again complex numbers:
@@ -243,11 +236,9 @@ Finally we look into the _division_:
 
 ::::
 
-
 Besides these four standard operations we have one more:
 
-
-::::{prf:definition} 
+::::{prf:definition}
 
 If $z=a+bi$ is a complex number (with $a,b\in\mathbb{R}$), the **complex conjugate** $\overline{z}$ is defined as
 
@@ -260,7 +251,6 @@ which is also a complex number.
 ::::
 
 We can combine the complex conjugate with the first four operations, which gives the following theorem:
-
 
 ::::{prf:theorem}
 :label: Thm:ComplexNumbers:conjops
@@ -380,11 +370,9 @@ z\overline{z} &= (a+bi)(a-bi) \\
 &= \Re{z}^2+\Im{z}^2.
 \end{align*}
 
-
 ::::
 
 From the second identity above we can even deduce the next theorem:
-
 
 ::::{prf:theorem}
 :label: Thm:ComplexNumbers:realz
@@ -407,7 +395,6 @@ If $z\notin\mathbb{R}$, then $\Im{z}\neq0$. The second identity of {prf:ref}`Thm
 
 First, we look at the complex conjugation. This is a relatively straightforward case, as it involves only a single number. Recall that the complex conjugate $\bar z$ changes the sign of the imaginary part of the number $z$. That is $\overline{a+bi} = a-bi$. As the imaginary part of a complex number corresponds to the second coordinate of its representation in the complex plane, this implies that the number is reflected in the real axis (the horizontal axis). See {numref}`Figure %s <Fig:ComplexNumbers:complexconj>`.
 
-
 :::{figure} Images/Fig-ComplexNumbers-complexconj.svg
 :name: Fig:ComplexNumbers:complexconj
 
@@ -415,11 +402,9 @@ Complex conjugation reflects a number in the real axis.
 
 :::
 
-
 **Geometric interpretation of addition**
 
 The geometric interpretation of adding complex numbers should look familiar to you. Indeed if we add $z=a+bi$ and $w=c+di$ the new number is $z+w=(a+c)+(b+d)i$, so we add the real and imaginary parts. This means we add the coordinates of the corresponding points, just as if we were adding vectors. Thus, geometrically we can add two complex numbers by following the parallelogram rule. That is, the lines from the origin to the two complex numbers form two sides of a parallelogram with vertices $0$, $z$, $z+w$, and $w$. See {numref}`Figure %s <Fig:ComplexNumbers:complexadd>`.
-
 
 :::{figure} Images/Fig-ComplexNumbers-complexadd.svg
 :name: Fig:ComplexNumbers:complexadd
@@ -427,7 +412,6 @@ The geometric interpretation of adding complex numbers should look familiar to y
 Adding complex numbers follows the parallelogram rule.
 
 :::
-
 
 If we want to interpet the other operations such as multiplication easily, we first need another way of writing complex numbers. But before we do that we will turn our attention first to solving equations.
 
@@ -451,7 +435,7 @@ $$
 p(z) = a_n z^n + a_{n-1} z^{n-1} + \cdots + a_1 z + a_0,
 $$
 
-where the coefficients $a_n, a_{n-1}, \ldots, a_0$ are complex numbers and $a_n\neq 0$. Then you can factor the polynomial in linear terms, that is 
+where the coefficients $a_n, a_{n-1}, \ldots, a_0$ are complex numbers and $a_n\neq 0$. Then you can factor the polynomial in linear terms, that is
 
 $$
 p(z) = a_n (z-b_1)(z-b_2) \cdots (z-b_n)
@@ -461,11 +445,9 @@ for some complex numbers $b_1, b_2, \ldots, b_n$.
 
 ::::
 
-
-Observe that this factorization means that $b_1, b_2, \ldots, b_n$ are the zeros (= roots) of the polynomial $p(z)$. It might happen that the $b$'s are complex numbers, even if $a_1, a_2, \ldots, a_n$ are real. 
+Observe that this factorization means that $b_1, b_2, \ldots, b_n$ are the zeros (= roots) of the polynomial $p(z)$. It might happen that the $b$'s are complex numbers, even if $a_1, a_2, \ldots, a_n$ are real.
 
 We will not discuss the proof of this theorem, as that requires much more mathematics. However, we will illustrate the theorem using some examples.
-
 
 ::::{prf:example}
 
@@ -473,21 +455,18 @@ Consider $p(z)=z^2+3z+2$. Then we know that we can factor the polynomial as $p(z
 
 ::::
 
-
 ::::{prf:example}
 :label: Ex:ComplexNumbers:polycomplcon
 
-Consider the equation $z^2=-1$. We can always rewrite an equation to an equation where one side is equal to zero by moving everything to one side. Thus this equation corresponds to $z^2+1=0$. We can now factor $z^2+1$ to $(z+i)(z-i)$ and thus find that $i$ and $-i$ are the two solutions to this equation. 
+Consider the equation $z^2=-1$. We can always rewrite an equation to an equation where one side is equal to zero by moving everything to one side. Thus this equation corresponds to $z^2+1=0$. We can now factor $z^2+1$ to $(z+i)(z-i)$ and thus find that $i$ and $-i$ are the two solutions to this equation.
 
 ::::
-
 
 ::::{prf:example}
 
-While a polynomial of degree $n$ can be factored in $n$ linear terms, and we have $n$ values $b_i$, this does not mean that there are $n$ distinct zeros. For example $p(z) = z^2+2z+4$ can be factored as $p(z)=(z+2)^2$ and thus only has $z=-2$ as a solution. However, the term $(z+2)$ occurs twice in the factorization. We therefore say that the multiplicity of the zero $-2$ is equal to two. 
+While a polynomial of degree $n$ can be factored in $n$ linear terms, and we have $n$ values $b_i$, this does not mean that there are $n$ distinct zeros. For example $p(z) = z^2+2z+4$ can be factored as $p(z)=(z+2)^2$ and thus only has $z=-2$ as a solution. However, the term $(z+2)$ occurs twice in the factorization. We therefore say that the multiplicity of the zero $-2$ is equal to two.
 
 ::::
-
 
 In particular, we see that any polynomial of degree $n$ has $n$ complex zeros _counting multiplicity_:
 
@@ -526,7 +505,7 @@ Because $p(z_1)=0$ for $j\in\{1,\ldots,k\}$, we must have that $\alpha_1\in\{1,\
 :::{math}
 :label: Eq:ComplexNumbers:factorsb1
 
-p(z) = a_n (z-z_1)^{\alpha_1}(z-b_{\alpha_1+1}) \cdots (z-b_n).
+$p(z) = a_n (z-z_1)^{\alpha_1}(z-b*{\alpha_1+1}) \cdots (z-b_n).$
 
 :::
 
@@ -535,7 +514,7 @@ We can repeat the above argument for $z_2$: we must have that $\alpha_2\in\{1,\l
 :::{math}
 :label: Eq:ComplexNumbers:factorsb2
 
-p(z) = a_n (z-z_1)^{\alpha_1}(z-z_2)^{\alpha_2}(z-b_{\alpha_1+\alpha_2+1}) \cdots (z-b_n).
+$p(z) = a_n (z-z_1)^{\alpha_1}(z-z_2)^{\alpha_2}(z-b_{\alpha_1+\alpha_2+1}) \cdots (z-b_n).$
 
 :::
 
@@ -555,18 +534,15 @@ The third degree polynomial $p(z) = z^3-4z^2$ can be factored as $p(z) = z^2(z-4
 
 ::::
 
-
 {prf:ref}`Ex:ComplexNumbers:polycomplcon` showed that both $z=i$ and its complex conjugate $\overline{z}=-i$ where roots of the polynomial $p(z)=z^2+1$. One might wonder whether it is always the case that both $z$ and its complex conjugate $\overline{z}$ are both roots of a given polynomial. It can be shown that this is the case if all coefficients are real valued.
-
 
 ::::{prf:theorem}
 :label: Thm:ComplexNumbers:realpoly
 
-Let $p$ be a polynomial with _real_ coefficients. 
+Let $p$ be a polynomial with _real_ coefficients.
 If $p(z)=0$, then $p(\overline{z})=0$ as well, and the algebraic multiplicities of $z$ and $\overline{z}$ are the same.
 
 ::::
-
 
 ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:realpoly`
 
@@ -577,14 +553,18 @@ First we show that $p(\overline{z})=0$ by considering $\overline{p(z)}$ twice:
 $$
 \overline{p(z)} = \overline{0} = 0,
 $$
+
 but also
+
+$$
 \begin{align*}
-\overline{p(z)} &= \overline{\sum_{j=0}^na_jz^j} \\
+\overline{p(z)} &= \overline{\sum*{j=0}^na_jz^j} \\
 &= \sum_{j=0}^n\overline{a_jz^j} \\
 &= \sum_{j=0}^na_j\overline{z^j} \\
 &= \sum_{j=0}^na_j\overline{z}^j \\
 &= p(\overline{z}).
 \end{align*}
+$$
 
 Combining these two results gives the desired $p(\overline{z})=0$.
 
@@ -621,19 +601,16 @@ As all terms except the first term $(\overline{z}-\overline{z_1})^{\alpha_1}$ ar
 
 ::::
 
-
 **Polynomial Division**
 
-Next, we consider a method you can use whenever you know one root of a polynomial. The fundamental theorem of Algebra says that if $p(z)$ is a polynomial such that $p(b)=0$ for some $b$, then $p(z) = a_n(z-b)(z-b_2)\cdots (z-b_n) = (z-b) q(z)$ for another polynomial $q(z)=a_n(z-b_2)\cdots  (z-b_n)$. 
+Next, we consider a method you can use whenever you know one root of a polynomial. The fundamental theorem of Algebra says that if $p(z)$ is a polynomial such that $p(b)=0$ for some $b$, then $p(z) = a_n(z-b)(z-b_2)\cdots (z-b_n) = (z-b) q(z)$ for another polynomial $q(z)=a_n(z-b_2)\cdots  (z-b_n)$.
 Thus, we divide the polynomial $p(z)$ by $(z-b)$ in this case and obtain a new polynomial. To find the zeros of $p$ we now just have to find the zeros of the quotient $\nicefrac{p(z)}{z-b}$ and add $b$ to this list.
 
 To divide a polynomial by another polynomial you can use a long division. Let us recall how this worked for ordinary fractions.
 
-
 :::: {prf:example}
 
-Let us calculate $\frac{97813}{382}$.  In {numref}`Figure %s <Fig:ComplexNumbers:longdivisionnum>` on the left, you see the American notation for Long division, on the right the corresponding Dutch notation. Everything in red is usually not written down, but included here to clarify what happens. (Note that the calculations in the middle are true regardless of whether the red parts are included or not.)
-
+Let us calculate $\frac{97813}{382}$. In {numref}`Figure %s <Fig:ComplexNumbers:longdivisionnum>` on the left, you see the American notation for Long division, on the right the corresponding Dutch notation. Everything in red is usually not written down, but included here to clarify what happens. (Note that the calculations in the middle are true regardless of whether the red parts are included or not.)
 
 :::{figure} Images/Fig-ComplexNumbers-longdivisionnum.svg
 :name: Fig:ComplexNumbers:longdivisionnum
@@ -651,14 +628,11 @@ First, subtract as many multiples of $100\cdot 382$ from 97813 as possible (or m
 
 ::::
 
-
-We can do the same thing for polynomials. 
-
+We can do the same thing for polynomials.
 
 ::::{prf:example}
 
 Consider $p(z) = z^3+3z^2+z-5$. You may notice that $z=1$ is a root; $p(1)=0$. Thus $z-1$ must be a factor. If we calculate this division we obtain (on the left again US notation, on the right Dutch notation):
-
 
 :::{figure} Images/Fig-ComplexNumbers-longdivisionpoly.svg
 :name: Fig:ComplexNumbers:longdivisionpoly
@@ -679,16 +653,13 @@ As a consequence, we see that $z^3+3z^2+z-5=(z-1)(z^2+4z+5)$, so it equals $0$ i
 
 ::::
 
-
 ## The polar form of complex numbers
-
 
 **Modulus and argument**
 
 To consider the multiplication of complex numbers, it is best to first consider the polar coordinates of a complex number. Polar coordinates is a concept that works for points in a plane. The idea is that instead of looking at the $x$ and $y$ coordinates of a point, we describe the point by the distance to the origin and the direction from the origin.
 
-The distance from zero to the point in the complex plane, we call the _modulus_ $|z|$. By using Pythagoras theorem and with $z=a+bi$, it holds that $|z|=\sqrt{a^2+b^2}$ and equivalently $|z|=\sqrt{z\overline{z}}$. We often denote the modulus by the symbol $r$, so $r=|z|$. The direction is designated by the angle measured from the positive real axis in a counterclockwise direction towards the ray from zero through the point. This angle, we call the _argument_ or $\arg(z)$ as seen in {numref}`Figure %s <Fig:ComplexNumbers:modarg>`. We often denote the argument by the symbol $\theta$, so $\theta=\arg(z)$. The argument uses the convention similar to the unit circle: the direction straight the right corresponds to 0 radians, up corresponds to  $\frac{1}{2}\pi$ radians, to the left to  $\pi$ radians and down to $\frac{3}{2}\pi$ radians.
-
+The distance from zero to the point in the complex plane, we call the _modulus_ $|z|$. By using Pythagoras theorem and with $z=a+bi$, it holds that $|z|=\sqrt{a^2+b^2}$ and equivalently $|z|=\sqrt{z\overline{z}}$. We often denote the modulus by the symbol $r$, so $r=|z|$. The direction is designated by the angle measured from the positive real axis in a counterclockwise direction towards the ray from zero through the point. This angle, we call the _argument_ or $\arg(z)$ as seen in {numref}`Figure %s <Fig:ComplexNumbers:modarg>`. We often denote the argument by the symbol $\theta$, so $\theta=\arg(z)$. The argument uses the convention similar to the unit circle: the direction straight the right corresponds to 0 radians, up corresponds to $\frac{1}{2}\pi$ radians, to the left to $\pi$ radians and down to $\frac{3}{2}\pi$ radians.
 
 :::{figure} Images/Fig-ComplexNumbers-modarg.svg
 :name: Fig:ComplexNumbers:modarg
@@ -697,15 +668,12 @@ The polar coordinates of a point in the complex plane $\C$ are the distance $r=|
 
 :::
 
-
-Notice that the argument is not uniquely defined, as you can always go a full circle extra and add $2\pi$ radians to the angle. For example, the number $1$ has argument 0 (as it is on the positive real axis), but also $2\pi$, $4\pi$, and $-2\pi$ (etc.). In order to make a uniform choice, we sometimes work with the principal value of the argument, which is by definition the unique value of the argument between $-\pi$ and $\pi$. 
-We write the principal value using a capital A. Thus we have $-\pi < \Arg{z} \leq \pi$. 
-
+Notice that the argument is not uniquely defined, as you can always go a full circle extra and add $2\pi$ radians to the angle. For example, the number $1$ has argument 0 (as it is on the positive real axis), but also $2\pi$, $4\pi$, and $-2\pi$ (etc.). In order to make a uniform choice, we sometimes work with the principal value of the argument, which is by definition the unique value of the argument between $-\pi$ and $\pi$.
+We write the principal value using a capital A. Thus we have $-\pi < \Arg{z} \leq \pi$.
 
 :::: {prf:example}
 
 Suppose $z=3+3i$. We find by using Pythagoras that the modulus (the distance to the origin) equals $|z|=\sqrt{3^2+3^2}=3\sqrt{2}$. The argument, the corresponding angle, equals $\frac14\pi$ as you can see in {numref}`Figure %s <Fig:ComplexNumbers:polarex1>`.
-
 
 :::{figure} Images/Fig-ComplexNumbers-polarex1.svg
 :name: Fig:ComplexNumbers:polarex1
@@ -715,7 +683,6 @@ The complex number $3+3i$.
 :::
 
 ::::
-
 
 ::::{prf:example}
 
@@ -735,11 +702,9 @@ The complex number $2+3i$.
 
 ::::
 
-
 ::::{prf:example}
 
-As a final example we consider $v=-1+2i$. Using Pythagoras theorem once again, we find that $|v|=\sqrt{(-1)^2+2^2} = \sqrt{5}$. For the argument, we obtain that, just as in the previous example, $\tan(\arg(v)) = \frac{2}{-1}$, so we would expect that $\arg(v) = \arctan( -2) \approx -1.10715$. But this answer is negative, while we can see in {numref}`Figure %s <Fig:ComplexNumbers:polarex3>` that the true argument is something between $\frac12\pi$ and $\pi$. Thus, this argument cannot be correct. If we multiply both the real and imaginary parts of a complex number by $-1$, then the quotient stays the same. Thus in this case the arctangent gives the argument of $1-2i$ instead. Fortunately, we can easily find the correct argument as it is exactly $\pi$ higher. We find $\arg(v) = \arctan(-2) + \pi \approx 2.03444$. 
-
+As a final example we consider $v=-1+2i$. Using Pythagoras theorem once again, we find that $|v|=\sqrt{(-1)^2+2^2} = \sqrt{5}$. For the argument, we obtain that, just as in the previous example, $\tan(\arg(v)) = \frac{2}{-1}$, so we would expect that $\arg(v) = \arctan( -2) \approx -1.10715$. But this answer is negative, while we can see in {numref}`Figure %s <Fig:ComplexNumbers:polarex3>` that the true argument is something between $\frac12\pi$ and $\pi$. Thus, this argument cannot be correct. If we multiply both the real and imaginary parts of a complex number by $-1$, then the quotient stays the same. Thus in this case the arctangent gives the argument of $1-2i$ instead. Fortunately, we can easily find the correct argument as it is exactly $\pi$ higher. We find $\arg(v) = \arctan(-2) + \pi \approx 2.03444$.
 
 :::{figure} Images/Fig-ComplexNumbers-polarex3.svg
 :name: Fig:ComplexNumbers:polarex3
@@ -749,7 +714,6 @@ The complex number $-1+2i$.
 :::
 
 ::::
-
 
 You always have to check whether the value you find with the arctangent gives the correct angle. As the range of the arctangent is $\left(-\frac12\pi,\frac12\pi\right)$ you can only find the correct argument if the complex number is to the right of the imaginary axis, that is, if the real part is positive.
 
@@ -775,7 +739,6 @@ $$
 
 In particular, we see that the complex number with modulus $r$ and argument $\theta$ equals $r\bigl(\cos(\theta) + i\sin(\theta)\bigr)$ and vice versa. The form $r\cos(\theta) + ir\sin(\theta)$ is called the _polar form_ of the complex number:
 
-
 ::::{prf:definition}
 
 The **polar form** of a complex number $z=a+bi$ is defined as
@@ -787,7 +750,6 @@ $$
 where $r=|z|$ is the modulus of $z$ and $\theta=\arg(z)$ is an argument of $z$.
 
 ::::
-
 
 **Geometric interpretation of conjugation, multiplication and division**
 
@@ -812,8 +774,8 @@ We can now see what happens to the product of two complex numbers. Suppose we ha
 :label: Eq:ComplexNumbers:calcproduct
 
 \begin{align*}
-zw &= (r\cos(\theta) + i r \sin(\theta)) (s\cos(\phi) + is \sin(\phi)) 
-\\&= rs \cos(\theta) \cos(\phi) + irs \cos(\theta) \sin(\phi) + irs \sin(\theta) \cos(\phi) + i^2 rs \sin(\theta) \sin(\phi)  \nonumber
+zw &= (r\cos(\theta) + i r \sin(\theta)) (s\cos(\phi) + is \sin(\phi))
+\\&= rs \cos(\theta) \cos(\phi) + irs \cos(\theta) \sin(\phi) + irs \sin(\theta) \cos(\phi) + i^2 rs \sin(\theta) \sin(\phi) \nonumber
 \\&= rs( \cos(\theta) \cos(\phi) - \sin(\theta) \sin(\phi)) + irs (\cos(\theta) \sin(\phi) + \sin(\theta) \cos(\phi))\nonumber
 \\&= rs \cos(\theta + \phi) + irs \sin(\theta+\phi) \nonumber
 \end{align*}
@@ -822,54 +784,37 @@ zw &= (r\cos(\theta) + i r \sin(\theta)) (s\cos(\phi) + is \sin(\phi))
 
 We recognize this product as the number with modulus $|zw|=rs$ and argument $\arg(zw) = \theta+\phi$. In particular we find:
 
-
 ::::{prf:theorem}
 :label: Thm:ComplexNumbers:polarmultdiv
 
 If you take the complex conjugate of a complex number $z$, the modulus remains the same and the argument is negated:
 
 <ul>
-<li> 
+<li>$|\overline{z}| = |z|$,</li>
 
-$|\overline{z}| = |z|$,
-
-</li>
-
-<li>
-
-$\arg(\overline{z}) = -\arg(z)$.
-
-</li>
+<li>$\arg(\overline{z}) = -\arg(z)$.</li>
 </ul>
 
 If you multiply two complex numbers $z$ and $w$, you multiply the moduli and add the arguments:
 
 <ul>
-<li> 
+<li>$|zw| = |z| \cdot |w|$,</li>
 
-$|zw| = |z| \cdot |w|$,
-
-</li>
-
-<li>
-
-$\arg(zw) = \arg(z) + \arg(w)$.
-
-</li>
+<li>$\arg(zw) = \arg(z) + \arg(w)$.</li>
 </ul>
 
-If you divide the complex number $z$ by the complex number $w\neq0$ you divide the modulus of $z$ by the modulus of $w$ and subtract the argument of $w$ from the argument of $z$: 
+If you divide the complex number $z$ by the complex number $w\neq0$ you divide the modulus of $z$ by the modulus of $w$ and subtract the argument of $w$ from the argument of $z$:
 
 <ul>
 <li>
 
- $\left|\frac{z}{w}\right| = \frac{|z|}{|w|}$, 
+$\left|\frac{z}{w}\right| = \frac{|z|}{|w|}$,
 
 </li>
 
 <li>
 
-$\arg\left(\frac{z}{w}\right) = \arg(z) - \arg(w)$. 
+$\arg\left(\frac{z}{w}\right) = \arg(z) - \arg(w)$.
 
 </li>
 </ul>
@@ -926,10 +871,9 @@ Dividig complex numbers means substracting the arguments and dividing the moduli
 
 **Euler's formula for the polar form of a complex number**
 
-Given that the polar coordinates of a complex number are so convenient and that the polar form $r\left(\cos(\theta) + i\sin(\theta)\right)$ is such a long expression to write down, we would like to have a simple way of representing the complex number with given modulus $r$ and argument $\theta$. 
+Given that the polar coordinates of a complex number are so convenient and that the polar form $r\left(\cos(\theta) + i\sin(\theta)\right)$ is such a long expression to write down, we would like to have a simple way of representing the complex number with given modulus $r$ and argument $\theta$.
 
 Therefore we introduce the following identity:
-
 
 ::::{prf:definition}
 
@@ -945,7 +889,7 @@ which is called **Euler's formula**.
 
 Using this definition we even can prove the following theorem:
 
-::::{prf:theorem} 
+::::{prf:theorem}
 :label: Thm:ComplexNumbers:re
 
 Let $z=a+bi$ with $a,b\in\mathbb{R}$ and define $r=|z|$ and $\theta=\arg{z}$. Then
@@ -968,7 +912,7 @@ $$
 
 We can even show that the following property of the derivative still is true:
 
-::::{prf:theorem} 
+::::{prf:theorem}
 :label: Thm:ComplexNumbers:re_diff
 
 Let $\theta\in\mathbb{R}$. Then
@@ -1001,11 +945,11 @@ $$
 (re^{i\theta}) (se^{i\phi} )= rse^{i(\theta+\phi)}.
 $$
 
-This corresponds precisely with the rules for multiplying exponentials. 
+This corresponds precisely with the rules for multiplying exponentials.
 
-Thus, you can calculate with this strange notation $re^{i\theta}$ for complex numbers just as you would if you were indeed taking imaginary powers of $e$ ($=2.71828\ldots$). Some deep mathematics show that the definition given here is the only reasonable way to define taking imaginary exponents. 
+Thus, you can calculate with this strange notation $re^{i\theta}$ for complex numbers just as you would if you were indeed taking imaginary powers of $e$ ($=2.71828\ldots$). Some deep mathematics show that the definition given here is the only reasonable way to define taking imaginary exponents.
 
-In practice, this polar notation of complex numbers is convenient to use when you take products or powers, whereas the $a+bi$ notation is more convenient when you have to add complex numbers. 
+In practice, this polar notation of complex numbers is convenient to use when you take products or powers, whereas the $a+bi$ notation is more convenient when you have to add complex numbers.
 
 ::::{prf:example}
 
@@ -1016,7 +960,6 @@ $$
 $$
 
 ::::
-
 
 ::::{prf:example}
 
@@ -1029,15 +972,13 @@ $$
 
 ::::
 
-
 **De Moivre and other trigonometric identities**
 
-The notation invented by Euler of $e^{i\theta} = \cos(\theta) + i\sin(\theta)$ allows us to quickly derive trigonometric identities. The most famous one is De Moivre's identity $e^{in\theta} = (e^{i\theta})^n$, which seems obvious now, but was discovered by De Moivre decades before the exponential notation was introduced and is a lot more impressive in the form 
+The notation invented by Euler of $e^{i\theta} = \cos(\theta) + i\sin(\theta)$ allows us to quickly derive trigonometric identities. The most famous one is De Moivre's identity $e^{in\theta} = (e^{i\theta})^n$, which seems obvious now, but was discovered by De Moivre decades before the exponential notation was introduced and is a lot more impressive in the form
 
 $$
 \cos(n\theta) + i \sin(n\theta) = \big(\cos(\theta) + i \sin(\theta)\big)^n.
 $$
-
 
 ::::{prf:example}
 
@@ -1057,19 +998,17 @@ Comparing the real and imaginary parts on both sides of this equation we find
 
 ::::
 
-
 You can also easily derive other formulas.
-
 
 ::::{prf:example}
 
-Formulas for $\cos(\theta+\phi)$ and $\sin(\theta+\phi)$ are often used in calculus courses. These formulas can be derived using De Moivre's identity. 
+Formulas for $\cos(\theta+\phi)$ and $\sin(\theta+\phi)$ are often used in calculus courses. These formulas can be derived using De Moivre's identity.
 
 \begin{align*}
 \cos(\theta+\phi) + i \sin(\theta +\phi) &= e^{i(\theta+ \phi)} \\
 &= e^{i\theta} e^{i\phi} \\
 &= \big(\cos(\theta) + i \sin(\theta)\big) \big(\cos(\phi) + i \sin(\phi)\big)
-\\&=  \cos(\theta) \cos(\phi) + i \cos(\theta) \sin(\phi) + i \sin(\theta) \cos(\phi) + i^2 \sin(\theta) \sin(\phi) 
+\\&= \cos(\theta) \cos(\phi) + i \cos(\theta) \sin(\phi) + i \sin(\theta) \cos(\phi) + i^2 \sin(\theta) \sin(\phi)
 \\&=\cos(\theta) \cos(\phi) - \sin(\theta) \sin(\phi) + i \big(\sin(\theta) \cos(\phi) +\cos(\theta) \sin(\phi)\big)
 \end{align*}
 
@@ -1077,11 +1016,9 @@ Thus $\cos(\theta+\phi) = \cos(\theta) \cos(\phi) - \sin(\theta) \sin(\phi)$ and
 
 ::::
 
-
 **Solving $z^n=w$**
 
 The most basic equations we want to solve are of the form $z^n=w$ for a given complex number $w$, where $z$ is the variable we want to solve for. Let's consider an example:
-
 
 ::::{prf:example}
 :label: Ex:ComplexNumbers:threesolutions
@@ -1099,15 +1036,15 @@ Taking a cube root, we find $r=2\sqrt{2}$. Note that $r>0$ is real, so here we n
 
 Moreover, we have $3\phi = \frac34\pi$, so $\phi = \frac14\pi$. This gives the solution $z=2\sqrt{2} e^{\frac14 \pi i}$. But this is just one solution and there ought to be two more by the fundamental theorem of algebra. So what are the remaining two?
 
-As you know, the argument is only defined up to a multiple of $2\pi$. Thus, when we get the equation $3\phi = \frac34\pi$, we should actually write $3\phi = \frac34\pi + 2\pi k$ for some integer $k$. Dividing this by $3$ gives $\phi = \frac14\pi + \frac23 \pi k$. We see that different values of $k$ give different values of $\phi$. For $k=0$, we obtain $\phi=\frac14\pi$ as before. For $k=1$, we obtain $\phi = \frac14\pi + \frac23\pi = \frac{11}{12}\pi$. For $k=2$, we have $\phi = \frac14\pi + \frac43\pi = \frac{19}{12}\pi$. For $k=3$, we obtain $\phi = \frac14\pi + 2\pi$. This gives the same complex number as $\phi=\frac14\pi$, as the argument is shifted by one full period. Indeed, if we add a multiple of $3$ to $k$, the argument of $\phi$ is shifted by a multiple of $2\pi$ and thus the corresponding solution $z$ does not change. Therefore, only the cases $k=0$, $1$, and $2$ suffice to obtain all solutions. 
+As you know, the argument is only defined up to a multiple of $2\pi$. Thus, when we get the equation $3\phi = \frac34\pi$, we should actually write $3\phi = \frac34\pi + 2\pi k$ for some integer $k$. Dividing this by $3$ gives $\phi = \frac14\pi + \frac23 \pi k$. We see that different values of $k$ give different values of $\phi$. For $k=0$, we obtain $\phi=\frac14\pi$ as before. For $k=1$, we obtain $\phi = \frac14\pi + \frac23\pi = \frac{11}{12}\pi$. For $k=2$, we have $\phi = \frac14\pi + \frac43\pi = \frac{19}{12}\pi$. For $k=3$, we obtain $\phi = \frac14\pi + 2\pi$. This gives the same complex number as $\phi=\frac14\pi$, as the argument is shifted by one full period. Indeed, if we add a multiple of $3$ to $k$, the argument of $\phi$ is shifted by a multiple of $2\pi$ and thus the corresponding solution $z$ does not change. Therefore, only the cases $k=0$, $1$, and $2$ suffice to obtain all solutions.
 
-The three solutions, $z_0$, $z_1$ and $z_2$, to the equation $z^3=-16+16i$ thus are 
+The three solutions, $z_0$, $z_1$ and $z_2$, to the equation $z^3=-16+16i$ thus are
 
 $$
 \begin{array}{lllllllll}
-z_0&=&2\sqrt{2} e^{\frac14\pi i} &=&  2\sqrt{2}\left( \cos\left(\frac14\pi\right) +  i\sin\left(\frac14\pi\right) \right) & = & 2+2i, \\ 
+z_0&=&2\sqrt{2} e^{\frac14\pi i} &=&  2\sqrt{2}\left( \cos\left(\frac14\pi\right) +  i\sin\left(\frac14\pi\right) \right) & = & 2+2i, \\
 z_1&=& 2\sqrt{2} e^{\frac{11}{12}\pi i} &=& 2\sqrt{2} \left(\cos\left(\frac{11}{12}\pi\right) + i\sin\left(\frac{11}{12}\pi\right)\right) & = & (-1-\sqrt{3})+(-1+\sqrt{3})i, \\
-z_2&=& 2\sqrt{2} e^{\frac{19}{12}\pi i} &=& 2\sqrt{2}\left(\cos\left(\frac{19}{12}\pi\right) +i\sin\left(\frac{19}{12}\pi\right)\right) &=& (-1+\sqrt{3})+(-1-\sqrt{3})i. 
+z_2&=& 2\sqrt{2} e^{\frac{19}{12}\pi i} &=& 2\sqrt{2}\left(\cos\left(\frac{19}{12}\pi\right) +i\sin\left(\frac{19}{12}\pi\right)\right) &=& (-1+\sqrt{3})+(-1-\sqrt{3})i.
 \end{array}
 $$
 
@@ -1121,15 +1058,14 @@ The three solutions from {prf:ref}`Ex:ComplexNumbers:threesolutions`.
 
 ::::
 
-
 We can generalize the method for solving $z^n=w$ from the example above:
 
 ```{prf:algorithm} Solving $z^n=w$
 
 <ol>
-<li> 
+<li>
 
-Write $z=re^{i\phi}$ (for unknown $r$ and $\phi$) and express the right hand side $w$ in polar coordinates. 
+Write $z=re^{i\phi}$ (for unknown $r$ and $\phi$) and express the right hand side $w$ in polar coordinates.
 
 </li>
 <li>
@@ -1139,19 +1075,19 @@ Obtain equations for the modulus $r$ and argument $\phi$ by equating the modulus
 </li>
 <li>
 
-Solve for $r$ (you only need the single positive real solution). 
-
-</li>
-
-<li> 
-
-Solve for $\phi$, remembering to add $+2\pi k$ first to the right hand side. 
+Solve for $r$ (you only need the single positive real solution).
 
 </li>
 
 <li>
 
-You obtain all solutions to the equation by taking $n$ (the degree of the equation) subsequent values of $k$ in your expression of $\phi$. 
+Solve for $\phi$, remembering to add $+2\pi k$ first to the right hand side.
+
+</li>
+
+<li>
+
+You obtain all solutions to the equation by taking $n$ (the degree of the equation) subsequent values of $k$ in your expression of $\phi$.
 
 </li>
 
@@ -1169,10 +1105,9 @@ Combine the solution for $r$ and the $n$ values for $\phi$ to obtain the $n$ sol
 
 Quite often, you come across expressions where a cosine and a sine of identical frequency are added. If you plot a function of the form $f(t)=b\cos(\omega t) + c\sin(\omega t)$, you notice that it becomes a new single wave. You can use complex numbers in a smart way to rewrite $f(t)$ to the form $A \cos(\omega t -\phi)$ as a single cosine with shifted argument. The variable $A$ gives the amplitude of the combined wave and the variable $\phi$ gives the phase-shift.
 
-
 ::::{prf:example}
 
-Take $f(t) = \cos(2t) + \sqrt{3} \sin(2t)$. If you plot the graph of this function (see {numref}`Figure %s <Fig:ComplexNumbers:sinusoid>`), you notice it is a single wave. 
+Take $f(t) = \cos(2t) + \sqrt{3} \sin(2t)$. If you plot the graph of this function (see {numref}`Figure %s <Fig:ComplexNumbers:sinusoid>`), you notice it is a single wave.
 
 Indeed, we have
 
@@ -1192,16 +1127,15 @@ The graph of the sum of a cosine and a sine of identical period is a sinusoid as
 
 ::::
 
-
 ::::{prf:example}
 
-In the same way you can add two cosines (or sines) with shifted arguments. 
+In the same way you can add two cosines (or sines) with shifted arguments.
 
 \begin{align*}
 \cos\left(t+\frac13\pi\right) + \cos\left(t-\frac13\pi\right) &= \Re{e^{i\left(t+\frac13\pi\right)}} + \Re{e^{i\left(t-\frac13\pi\right)}}
 \\&= \Re{\left(e^{\frac13 \pi i} +e^{-\frac13\pi i}\right) e^{it}}
 \\&= \Re{ \left( \left( \frac12+\frac12\sqrt{3} i\right) + \left(\frac12 -\frac12\sqrt{3}i\right)\right)e^{it}}
-\\&= \Re{   e^{it}}\\&= \cos(t).  
+\\&= \Re{ e^{it}}\\&= \cos(t).  
 \end{align*}
 
 ::::
@@ -1212,7 +1146,7 @@ In the same way you can add two cosines (or sines) with shifted arguments.
 
 To find Euler's formula, consider the initial value problem
 
-:::{math} 
+:::{math}
 :label: Eq:ComplexNumbers:exp_de
 
 \left\{\begin{array}{rcl}
@@ -1240,13 +1174,12 @@ q(\theta) = \cos(\theta)+i\sin(\theta).
 
 :::
 
-
 Let us calculate first the value of $q$ in $\theta=0$:
 
 \begin{align*}
 q(0) &= \cos(0)+i\sin(0) \\
- &= 1-0i \\
-  &= 1. 
+&= 1-0i \\
+&= 1.
 \end{align*}
 
 This indicates that $q$ satisfies the same initial condition from Equation {eq}`Eq:ComplexNumbers:exp_de` as the function $y$ from Equation {eq}`Eq:ComplexNumbers:exp_sol`. Could it also be that $q$ is a solution to the differential equation from Equation {eq}`Eq:ComplexNumbers:exp_de`? Let us investigate by looking at the first derivative of $q$:
@@ -1273,9 +1206,9 @@ $$
 Euler's formula can also be derived using series. You may already be familiar with the following three series
 
 \begin{align*}
-e^x &= \sum_{n=0}^\infty\frac{x^n}{n!}, \\
-\cos(x) &= \sum_{k=0}^\infty(-1)^k\frac{x^{2k}}{(2k)!}, \\
-\sin(x) &= \sum_{l=0}^\infty(-1)^l\frac{x^{2l+1}}{(2l+1)!}.
+e^x &= \sum*{n=0}^\infty\frac{x^n}{n!}, \\
+\cos(x) &= \sum*{k=0}^\infty(-1)^k\frac{x^{2k}}{(2k)!}, \\
+\sin(x) &= \sum\_{l=0}^\infty(-1)^l\frac{x^{2l+1}}{(2l+1)!}.
 \end{align*}
 
 We can use these series to derive Euler's formula.
@@ -1283,9 +1216,9 @@ We can use these series to derive Euler's formula.
 First consider the following 12 powers of the complex number $\theta i$ with $\theta\in\mathbb{R}$:
 
 \begin{align*}
-(\theta i)^0 &= 1           & (\theta i)^4 &= \theta^4 & (\theta i)^8 &= \theta^8 \\
-(\theta i)^1 &= \theta i    & (\theta i)^5 &= \theta^5 i & (\theta i)^9 &= \theta^9 i \\
-(\theta i)^2 &= -\theta^2   & (\theta i)^6 &= -\theta^6 & (\theta i)^{10} &= -\theta^{10}i \\
+(\theta i)^0 &= 1 & (\theta i)^4 &= \theta^4 & (\theta i)^8 &= \theta^8 \\
+(\theta i)^1 &= \theta i & (\theta i)^5 &= \theta^5 i & (\theta i)^9 &= \theta^9 i \\
+(\theta i)^2 &= -\theta^2 & (\theta i)^6 &= -\theta^6 & (\theta i)^{10} &= -\theta^{10}i \\
 (\theta i)^3 &= -\theta^3 i & (\theta i)^7 &= -\theta^7 i & (\theta i)^{11} &= -\theta^{11}i \\
 \end{align*}
 
@@ -1293,6 +1226,7 @@ Do you notice the pattern that _even_ powers give _real_ numbers and _odd_ power
 
 Now let us consider $e^{\theta i}$ and expand the series of the exponential function using these patterns:
 
+$$
 \begin{align*}
 e^{\theta i} &= \sum_{n=0}^\infty\frac{(\theta i)^n}{n!} & &\text{Using the series of $e^x$} \\
 &= \sum_{\substack{n=0\\n~{\rm even}}}^\infty\frac{(\theta i)^n}{n!}+\sum_{\substack{n=0\\n~{\rm odd}}}^\infty\frac{(\theta i)^n}{n!} & &\text{Using the odd/even pattern seen above.} \\
@@ -1301,11 +1235,11 @@ e^{\theta i} &= \sum_{n=0}^\infty\frac{(\theta i)^n}{n!} & &\text{Using the seri
 &= \sum_{k=0}^\infty(-1)^{k}\frac{\theta^{2k}}{(2k)!}+i\sum_{l=0}^\infty(-1)^l\frac{\theta^{2l+1}}{(2l+1)!} & &\text{Taking $i$ out of the second series.} \\
 &= \cos(\theta)+i\sin(\theta). & &\text{Using the series of $\cos(x)$ and $\sin(x)$.}
 \end{align*}
+$$
 
 As you can see we have arrived at Euler's formula.
 
 ## Exercises
-
 
 ::::::{exercise}
 :label: Exc:ComplexNumbers:eval_aplusbi
@@ -1407,7 +1341,6 @@ $z^2+4z-12$
 
 :::::
 
-
 :::::{exercise}
 :label: Exc:ComplexNumbers:division
 
@@ -1436,7 +1369,6 @@ $p(z)=z^4+z^3-3z^2+5z-2$ and $q(z)=z^2-z+1$
 </ol>
 
 :::::
-
 
 :::::{exercise}
 :label: Exc:ComplexNumbers:roots
@@ -1469,7 +1401,6 @@ $p(z)=z^4-5z^3+2z^2+22z-20$ with $p(3+i)=0 $
 
 :::::
 
-
 :::::{exercise}
 :label: Exc:ComplexNumbers:argmod
 
@@ -1493,7 +1424,6 @@ $z=3+\sqrt{3}i$
 
 :::::
 
-
 :::::{exercise}
 :label: Exc:ComplexNumbers:polarform
 
@@ -1516,7 +1446,6 @@ $3\sqrt{3}-3i$
 </ol>
 
 :::::
-
 
 :::::{exercise}
 :label: Exc:ComplexNumbers:polar_abi
@@ -1558,7 +1487,6 @@ $2e^{-\frac13\pi i}$
 </ol>
 
 :::::
-
 
 :::::{exercise}
 :label: Exc:ComplexNumbers:polarform_calc
@@ -1615,7 +1543,6 @@ In other words to express $\cos(4\theta)$ and $\sin(4\theta)$ in terms of $\cos(
 
 :::::
 
-
 :::::{exercise}
 :label: Exc:ComplexNumbers:solve_euler
 
@@ -1645,10 +1572,7 @@ $z^3=4\cos(\frac{\pi}{6})+4i\sin(\frac{\pi}{6})$
 
 :::::
 
-
 ## Solutions
-
-
 
 ::::{solution} Exc:ComplexNumbers:eval_aplusbi
 :class: dropdown
@@ -1719,7 +1643,6 @@ $3 + 4i$
 
 ::::
 
-
 :::::{solution} Exc:ComplexNumbers:complete
 :class: dropdown
 
@@ -1746,7 +1669,6 @@ $2, -6$
 </ol>
 
 :::::
-
 
 :::::{solution} Exc:ComplexNumbers:division
 :class: dropdown
@@ -1775,7 +1697,6 @@ $h(z)$ is not a polynomial.
 
 :::::
 
-
 :::::{solution} Exc:ComplexNumbers:roots
 :class: dropdown
 
@@ -1803,7 +1724,6 @@ The roots of $p(z)$ are $3+i, 3-i, 1, -2$, all with multiplicity 1.
 
 :::::
 
-
 :::::{solution} Exc:ComplexNumbers:argmod
 :class: dropdown
 
@@ -1825,7 +1745,6 @@ $|z|=2\sqrt{3}$ and $\Arg{z}=\frac{\pi}{6}$ or $\arg(z)=\frac{\pi}{6}+2k\pi$ for
 
 :::::
 
-
 :::::{solution} Exc:ComplexNumbers:polarform
 :class: dropdown
 
@@ -1846,7 +1765,6 @@ $6 \cos(\frac{-\pi}{6})+ i 6 \sin(\frac{-\pi}{6})$
 </ol>
 
 :::::
-
 
 :::::{solution} Exc:ComplexNumbers:polar_abi
 :class: dropdown
@@ -1886,7 +1804,6 @@ $1-\sqrt{3} i$
 </ol>
 
 :::::
-
 
 :::::{solution} Exc:ComplexNumbers:polarform_calc
 :class: dropdown
@@ -1940,7 +1857,6 @@ and
 $\sin(4\theta)=4\cos^3(\theta)\sin(\theta)-4\cos(\theta)\sin^3(\theta)$.
 
 :::::
-
 
 :::::{solution} Exc:ComplexNumbers:solve_euler
 :class: dropdown

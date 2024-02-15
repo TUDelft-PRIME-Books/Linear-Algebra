@@ -1,6 +1,6 @@
 (Sec:SingValDec)=
-# Singular Value Decomposition (SVD)
 
+# Singular Value Decomposition (SVD)
 
 We have seen already how to factorise matrices in {numref}`Sec:MatFactor`, with the $LU$ and the $PLU$ factorisations. Another type of factorisation is the QR Decomposition in {numref}`Sec:Gram-Schmidt:QRdecomp`. In this section we will learn a new type of factorisation: the **singular value decomposition** (SVD). We will start with a few more properties of certain symmetric matrices followed by an algorithm for finding a SVD. The last two subsections will be devoted to understanding the decomposition and applications.
 
@@ -45,9 +45,9 @@ A^TA \mathbf{u} = A^T(A\mathbf{u}) = A^T\mathbf{0} = \mathbf{0}.
 $$
 
 So $\mathbf{u} \in \Nul{A^TA}$.
-Suppose that $\mathbf{v}\in \Nul{A^TA}$ Then, observe that 
+Suppose that $\mathbf{v}\in \Nul{A^TA}$ Then, observe that
 
-$$ 
+$$
 0 = \mathbf{v}^TA^TA\mathbf{v} = \norm{A\mathbf{v}}^2,
 $$
 
@@ -65,7 +65,6 @@ $$0\le \mathbf{u}^TA^TA\mathbf{u} = \mathbf{u}^T\mathbf{u} = \lambda \norm{\math
 
 Since $\mathbf{u}\ne \mathbf{0}$ it follows that $\lambda \ge 0$.
 
-
 \item Let $\lambda$ be an non-zero eigenvalue of $A^TA$ with associated eigenvector $\mathbf{u}$. We will see that $\lambda$ is also an eigenvalue of $AA^T$. By definition of eigenvalue we have $A^TA\mathbf{u} = \lambda\mathbf{u}$. Then, multiplying by $A$ on both sides of the previous identity we obtain:
 
 $$AA^TA\mathbf{u} = \lambda A\mathbf{u}.$$
@@ -80,8 +79,8 @@ To prove the reverse, one can follow a similar argument.
 
 We want to stress out the importance of property {itemref}`Item:Prop:SVD:propsymmat:nonzeroeigvals`. We knew from {numref}`Sec:SymmetricMat` that the eigenvalues of a symmetric matrix were real. The previous proposition tells us that, in addition, **the eigenvalues of the symmetric matrix $A^TA$ are real and non-negative**. This is a property that will be key for the singular value decomposition.
 
-
 (Subsec:SVD:Algorithm)=
+
 ## SVD (Algorithm)
 
 As stated at the beginning of this section, the objective is to factor an $m\times n$ matrix $A$ with rank $p$. In this case, we will factorise it as a product of three matrices $U$, $S$, $V$ in the following manner:
@@ -102,10 +101,9 @@ with the following properties
 
 Let $r=\min\{m,n\}$. The numbers $s_1 \ge s_2 \ge \cdots \ge s_p > s_{p+1}= 0 = \stackrel{r-p}{\cdots} = s_{r}$ are the **singular values of $A$**.
 
-
 In other words, the decomposition would look like this:
 
-$$ 
+$$
 U\begin{bmatrix}
 s_1 & 0 & \cdots & \cdots& 0 \\
 0  & s_2 & \ddots &  & \vdots \\
@@ -117,7 +115,7 @@ $$
 
 or
 
-$$ 
+$$
 U\begin{bmatrix}
 s_1 & 0 & \cdots & \cdots& 0 \\
 0  & s_2 & \ddots &  & \vdots \\
@@ -136,14 +134,14 @@ Observe that with the choices above we obtain the following property.
 ::::{prf:proposition} Computing Singular Values
 :label: Propo:SVD:singularvalues
 
-Let $A$ be an $m\times n$ matrix with rank $p$ and let $r=\min\{m,n\}$. Let $U$ be an $m\times m$ orthogonal matrix whose columns represent an orthonormal basis of $\mathbb{R}^m$, $V$ an $n\times n$ orthogonal matrix whose columns represent an orthonormal basis of $\mathbb{R}^n$, and $S$ an $m\times n$ matrix with zeros in every component except in $S_{ii}$ for $i=1,\dots,p$ where $S_{ii}=s_i$ are the singular values in descendent order. Suppose that $A=USV^T$. Then, 
+Let $A$ be an $m\times n$ matrix with rank $p$ and let $r=\min\{m,n\}$. Let $U$ be an $m\times m$ orthogonal matrix whose columns represent an orthonormal basis of $\mathbb{R}^m$, $V$ an $n\times n$ orthogonal matrix whose columns represent an orthonormal basis of $\mathbb{R}^n$, and $S$ an $m\times n$ matrix with zeros in every component except in $S_{ii}$ for $i=1,\dots,p$ where $S_{ii}=s_i$ are the singular values in descendent order. Suppose that $A=USV^T$. Then,
 $s_i=\sqrt{\lambda_i}$ where $\lambda_i$ is a nonzero eigenvalue of $A^TA$ for $i=1,\dots, p$. The remaining $r-p$ singular values are zero.
 
 ::::
 
 ::::{prf:proof}
 
-With these choices for $U$, $S$ and $V$ and $r=\min\{m,n\}$ we have that 
+With these choices for $U$, $S$ and $V$ and $r=\min\{m,n\}$ we have that
 
 $$
 A^TA= (USV^T)^T(USV) = VS^T(U^TU)SV^T = V(S^TS)V^T
@@ -165,7 +163,6 @@ By property {itemref}`Item:Prop:SVD:propsymmat:samerankAandATA` of {prf:ref}`Pro
 
 ::::
 
-
 Now we are ready to find a singular value decomposition of $A$.
 
 ::::{prf:algorithm}
@@ -185,10 +182,9 @@ Now we are ready to find a singular value decomposition of $A$.
 
 ::::
 
+::::{note}
 
-::::{note} 
-
-Notice that, with our choice of $V$, the vectors $\{\mathbf{v}_1,\dots,\mathbf{v}_n\}$ form an orthonormal basis of $\mathbb{R}^n$. Now let's consider the vectors $\mathbf{u}_i = \frac{1}{s_i}A\mathbf{v}_i$ and $\mathbf{u}_j = \frac{1}{s_j}A\mathbf{v}_j$. We can see that 
+Notice that, with our choice of $V$, the vectors $\{\mathbf{v}_1,\dots,\mathbf{v}_n\}$ form an orthonormal basis of $\mathbb{R}^n$. Now let's consider the vectors $\mathbf{u}_i = \frac{1}{s_i}A\mathbf{v}_i$ and $\mathbf{u}_j = \frac{1}{s_j}A\mathbf{v}_j$. We can see that
 
 $$
 \mathbf{u}_i\cdot\mathbf{u}_j = \frac{1}{s_is_j}A\mathbf{v}_i\cdot A\mathbf{v}_j = \frac{1}{s_is_j}\mathbf{v}_i^TA^TA\mathbf{v}_j = \frac{s_j}{s_i}\mathbf{v}_i^T\mathbf{v}_j = \frac{s_j}{s_i}\mathbf{v}_i\cdot \mathbf{v}_j = \begin{cases}1&i=j\\0& i\neq j\end{cases}
@@ -214,20 +210,24 @@ The details on why this algorithm works will be given in {numref}`Sec:ProofSVD`.
 
 Let's find the singular values of the matrix
 
-$$A = \begin{bmatrix} 
+$$
+A = \begin{bmatrix}
 5 & -1 \\
 -3 & 2 \\
 -1 & 3
-\end{bmatrix},$$
+\end{bmatrix},
+$$
 
 and then construct the matrix $S$ according to the description above.
 
 Following the steps mentioned above, we compute $A^TA$:
 
-$$A^TA = \begin{bmatrix}
+$$
+A^TA = \begin{bmatrix}
 35 & -14 \\
 -14 & 14
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 
 The eigenvalues, sorted by value, are:
 
@@ -235,26 +235,26 @@ $$
 \lambda_1 \ge \lambda_2
 $$
 
-with $\lambda_1 = 42$, $\lambda_2 = 7$. 
+with $\lambda_1 = 42$, $\lambda_2 = 7$.
 
 The singular values are $s_1 = \sqrt{42}$, and $s_2=\sqrt{7}$.
 
-Our matrix $S$ is 
+Our matrix $S$ is
 
 :::{math}
 :label: Ex:SVD:S
-S = \begin{bmatrix} 
-        \sqrt{42} & 0 \\
-        0 & \sqrt{7} \\
-        0 & 0
-        \end{bmatrix}.
+S = \begin{bmatrix}
+\sqrt{42} & 0 \\
+0 & \sqrt{7} \\
+0 & 0
+\end{bmatrix}.
 :::
 
 ::::
 
 Now let's find $V$.
 
-:::{prf:remark} 
+:::{prf:remark}
 
 When finding a orthogonal diagonalisation of $QDQ^T=A^TA$ different choices for orthonormal eigenvectors lead to different matrices $Q$, the choice for $Q$ is not unique! And neither is the singular value decomposition.
 
@@ -281,7 +281,7 @@ Therefore, our matrix $V$ will be
 :::{math}
 :label: Ex:SVD:matrixV
 
-V = 
+V =
 \frac{1}{\sqrt{5}}\begin{bmatrix}
 2 & 1\\
 -1 & 2
@@ -301,7 +301,6 @@ This is where the properties described in {prf:ref}`Prop:SVD:propsymmat` come in
 
 Since the vectors $\mathbf{u}_i$ are unit eigenvectors of $AA^T$, completing the orthonormal set to an orthonormal basis of $\mathbb{R}^m$ leads to an orthogonal diagonalisation of $AA^T=U\tilde{D}U^T$. The elements in the main diagonal of $\tilde{D}$ are $\lambda_i>0$ for $i \le \Rank A$ and $0$ for $i>\Rank A$ where $\lambda_i$ is an eigenvalue of $A^TA$ (which were already computed).
 
-
 ::::{prf:example}
 
 Let's find a matrix $U$ that will provide an SVD for our set of examples.
@@ -314,10 +313,10 @@ Since $A = \begin{bmatrix}
 
 $$
 \mathbf{u}_1 = \frac{1}{s_1}\mathbf{v}_1  = \frac{1}{\sqrt{42}}\left( \frac{1}{\sqrt{5}}
-\begin{bmatrix} 
+\begin{bmatrix}
 11 \\ -8 \\ -1
 \end{bmatrix} \right) = \frac{1}{\sqrt{210}}
-\begin{bmatrix} 
+\begin{bmatrix}
 11 \\ -8 \\ -1
 \end{bmatrix}
 $$
@@ -344,34 +343,33 @@ $$
 
 Then, we can write $U$ as
 
-
 :::{math}
 :label: Ex:SVD:matrixU
 
 U = \begin{bmatrix}
-\frac{11}{\sqrt{210}} &  \frac{3}{\sqrt{35}} &  \frac{1}{\sqrt{6}} \\
--\frac{8}{\sqrt{210}} &  \frac{1}{\sqrt{35}} &  \frac{2}{\sqrt{6}} \\
--\frac{1}{\sqrt{210}} &   \frac{5}{\sqrt{35}} &  \frac{-1}{\sqrt{6}} \\
+\frac{11}{\sqrt{210}} & \frac{3}{\sqrt{35}} & \frac{1}{\sqrt{6}} \\
+-\frac{8}{\sqrt{210}} & \frac{1}{\sqrt{35}} & \frac{2}{\sqrt{6}} \\
+-\frac{1}{\sqrt{210}} & \frac{5}{\sqrt{35}} & \frac{-1}{\sqrt{6}} \\
 \end{bmatrix}
 
 :::
 
 ::::
 
-With the matrices $S$, $U$ and $V$ described in {eq}`Ex:SVD:S`, {eq}`Ex:SVD:matrixV`, and {eq}`Ex:SVD:matrixU`, we have that 
+With the matrices $S$, $U$ and $V$ described in {eq}`Ex:SVD:S`, {eq}`Ex:SVD:matrixV`, and {eq}`Ex:SVD:matrixU`, we have that
 
 $$
-\begin{bmatrix} 
+\begin{bmatrix}
 5 & -1 \\
 -3 & 2 \\
 -1 & 3
-\end{bmatrix} = 
+\end{bmatrix} =
 \begin{bmatrix}
 \frac{11}{\sqrt{210}} &  \frac{3}{\sqrt{35}} &  \frac{1}{\sqrt{6}} \\
 -\frac{8}{\sqrt{210}} &  \frac{1}{\sqrt{35}} &  \frac{2}{\sqrt{6}} \\
--\frac{1}{\sqrt{210}} &   \frac{5}{\sqrt{35}} &  \frac{-1}{\sqrt{6}} 
+-\frac{1}{\sqrt{210}} &   \frac{5}{\sqrt{35}} &  \frac{-1}{\sqrt{6}}
 \end{bmatrix}
-\begin{bmatrix} 
+\begin{bmatrix}
         \sqrt{42} & 0 \\
         0 & \sqrt{7} \\
         0 & 0
@@ -383,6 +381,7 @@ $$
 $$
 
 (Subsec:SVDGeometrically)=
+
 ## Understanding SVD Geometrically
 
 In this section we will have a deeper look to the decomposition and its meaning. As we have done previously, let's think about our $m\times n$ matrix $A$ as the standard matrix of a linear transformation from $R^n$ to $R^m$.
@@ -409,7 +408,7 @@ A = \begin{bmatrix}
 \end{bmatrix}.
 $$
 
-The singular values for this matrix are $s_1 = 2\sqrt{2}$, and $s_2 = \sqrt{2}$. We choose 
+The singular values for this matrix are $s_1 = 2\sqrt{2}$, and $s_2 = \sqrt{2}$. We choose
 
 $$
 V =\begin{bmatrix} \frac{1}{2} \, \sqrt{2} & \frac{1}{2} \, \sqrt{2} \\
@@ -429,9 +428,9 @@ $$
 
 Notice that $V^T$ corresponds to a transformation consisting in a reflection over the line $y=x$ followed by a rotation of angle $-\frac{\pi}{4}$. So the unit circle is mapped on the unit circle.
 
-The matrix $S$ contains the singular values. We can observe that the unit circle is mapped into an ellipse whose positive semi-axes have length equal to the singular values. 
+The matrix $S$ contains the singular values. We can observe that the unit circle is mapped into an ellipse whose positive semi-axes have length equal to the singular values.
 
-Finally, the matrix $U$ can be interpreted as a reflection over the line $y=x$. 
+Finally, the matrix $U$ can be interpreted as a reflection over the line $y=x$.
 
 :::{figure} s
 :name: Fig:SVD:decompositioneffects
@@ -444,18 +443,18 @@ In general, since $V^T$ is an orthogonal matrix, it will map the $\mathbb{R}^n$ 
 
 ## SVD (Mathematical Details)
 
-In the previous subsections we have explored how to compute a singular value decomposition and we understood it geometrically. We also saw that if an SVD exists, then it is not unique. In this subsection we discuss the existence. 
+In the previous subsections we have explored how to compute a singular value decomposition and we understood it geometrically. We also saw that if an SVD exists, then it is not unique. In this subsection we discuss the existence.
 
 ::::{prf:theorem} Existence of SVD
 :label: Thm:SVD:ExistenceSVD
 
-Let $A$ be an $m\times n$ matrix of rank $p$ with real coefficients. Then there exist orthogonal matrices $V$ and $U$ with real coefficients, with dimensions $n\times n$ and $m\times m$ respectively, and unique real numbers $s_1\ge s_2 \ge \cdots \ge s_p > 0$ such that 
+Let $A$ be an $m\times n$ matrix of rank $p$ with real coefficients. Then there exist orthogonal matrices $V$ and $U$ with real coefficients, with dimensions $n\times n$ and $m\times m$ respectively, and unique real numbers $s_1\ge s_2 \ge \cdots \ge s_p > 0$ such that
 
 $$
 A = USV^T,
 $$
 
-where S is an $m\times n$ matrix whose components $S_{ii}=s_i$ for $i = 1,\dots ,p$ and zeros everywhere else. 
+where S is an $m\times n$ matrix whose components $S_{ii}=s_i$ for $i = 1,\dots ,p$ and zeros everywhere else.
 
 ::::
 

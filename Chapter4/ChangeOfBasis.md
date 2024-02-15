@@ -1,13 +1,14 @@
-(Sec:BasisChange)=
+\_(Sec:BasisChange)=
+
 # Change of Basis
 
 ## Introduction
 
-As we have seen,  we have freedom of choice with respect to a basis for $\R^n$ or a subspace $S$ of $\R^n$.
+As we have seen, we have freedom of choice with respect to a basis for $\R^n$ or a subspace $S$ of $\R^n$.
 Depending on the context one basis may be much more convenient than another.
 As a simple example -- we will come back to it later in this section ({prf:ref}`Ex:ChangeOfBasis:MatrixFRomTb1Tb2`) -- consider the reflection along a line through the origin in the plane.
 
-For instance, consider the line $\mathcal{L}$ described by the equation $3x - 2y = 0$.  We know that the reflection along this line is a linear transformation. The images of the unit vectors  $\vect{e}_1$ and $\vect{e}_2$  are not immediately clear. So it takes some effort to find the standard matrix
+For instance, consider the line $\mathcal{L}$ described by the equation $3x - 2y = 0$. We know that the reflection along this line is a linear transformation. The images of the unit vectors $\vect{e}_1$ and $\vect{e}_2$ are not immediately clear. So it takes some effort to find the standard matrix
 
 $$
  \begin{bmatrix}
@@ -15,8 +16,8 @@ $$
  \end{bmatrix}.
 $$
 
-A basis that fits better here would be a basis $\{\vect{b}_1, \vect{b}_2\}$  where $\vect{b}_1$ is a direction vector for the line, and
-   $\vect{b}_2$  a non-zero vector perpendicular to the line.
+A basis that fits better here would be a basis $\{\vect{b}_1, \vect{b}_2\}$ where $\vect{b}_1$ is a direction vector for the line, and
+$\vect{b}_2$ a non-zero vector perpendicular to the line.
 For instance, we can take
 
 $$
@@ -26,7 +27,6 @@ $$
 
 See {numref}`Figure %s <Fig:ChangeOfBasis:Reflection>`.
 
-
 :::{figure} Images/Fig-ChangeOfBasis-Reflection.svg
 :name: Fig:ChangeOfBasis:Reflection
 
@@ -35,28 +35,22 @@ Reflection along the line $\mc{L}$
 
 From the geometry involved it follows that
 
-
 $$
    T(\vect{b}_1) = \vect{b}_1 \quad \text{and} \quad T(\vect{b}_2) = -\vect{b}_2.
 $$
 
-
-If we work with the basis $\mathcal B$  the transformation takes on a very simple form.
+If we work with the basis $\mathcal B$ the transformation takes on a very simple form.
 Any vector $\vect{v}$ can be written as
-
 
 $$
   \vect{v} = c_1\vect{b}_1 + c_2\vect{b}_2,
 $$
 
-
 and then
-
 
 $$
      T(\vect{v}) =  T(c_1\vect{b}_1 + c_2\vect{b}_2) = c_1\vect{b}_1 -  c_2\vect{b}_2.
 $$
-
 
 In this section we will explain how such a change of basis works.
 
@@ -68,14 +62,14 @@ We start with a proposition.
 :label: Prop:ChangeOfBasis:UniqueCoords
 
 If $\mc{B} = \{\vect{b}_1, \vect{b}_2,\ldots,\vect{b}_m\}$ is a basis for a subspace $S$ in $\R^n$,
-then any vector $\vect{v}$  in $S$ can  written as a linear combination of
+then any vector $\vect{v}$ in $S$ can written as a linear combination of
 $\vect{b}_1, \vect{b}_2,\ldots,\vect{b}_m$ in a **unique** way, i.e.
 
 $$
-  \vect{v} = c_1\vect{b}_1 + c_2\vect{b}_2 + \ldots + c_m\vect{b}_m, 
+  \vect{v} = c_1\vect{b}_1 + c_2\vect{b}_2 + \ldots + c_m\vect{b}_m,
 $$
 
-for *unique* constants   $c_1,c_2,\ldots,c_m$ in $\R$.
+for _unique_ constants $c_1,c_2,\ldots,c_m$ in $\R$.
 
 ::::
 
@@ -83,71 +77,55 @@ for *unique* constants   $c_1,c_2,\ldots,c_m$ in $\R$.
 
 From the definition of a basis it follows that
 
-
 $$
    S = \Span{\vect{b}_1, \ldots, \vect{b}_m} \quad \text{with} \quad
               \{\vect{b}_1, \ldots, \vect{b}_m\} \text{ linearly independent}.
 $$
 
-
-Let $ \vect{v}$ be an arbitrary element of $S$. As  $ \vect{v} \in \Span{\vect{b}_1, \ldots, \vect{b}_m}$,
-
+Let $ \vect{v}$ be an arbitrary element of $S$. As $ \vect{v} \in \Span{\vect{b}\_1, \ldots, \vect{b}\_m}$,
 
 $$
-   \vect{v} = c_1\vect{b}_1 + c_2\vect{b}_2 + \ldots + c_m\vect{b}_m  
+   \vect{v} = c_1\vect{b}_1 + c_2\vect{b}_2 + \ldots + c_m\vect{b}_m
 $$
-
 
 for some constants $c_1,c_2,\ldots,c_m$.
 
 To prove that the linear combination is unique, suppose that also
 
-
 $$
-    \vect{v} = d_1\vect{b}_1 + d_2\vect{b}_2 + \, \ldots \, + d_m\vect{b}_m  
+    \vect{v} = d_1\vect{b}_1 + d_2\vect{b}_2 + \, \ldots \, + d_m\vect{b}_m
 $$
 
-
-for  constants  $d_1,d_2,\ldots,d_m$.
+for constants $d_1,d_2,\ldots,d_m$.
 Then we have to show that in fact
-
 
 $$
   c_1 = d_1, \quad  c_2 = d_2, \quad .\,.\,.\,\,, \quad   c_m = d_m.
 $$
 
-
-This can be done as follows:  subtracting the two expressions for $\vect{v}$ gives
-
+This can be done as follows: subtracting the two expressions for $\vect{v}$ gives
 
 $$
   \vect{0} = \vect{v} - \vect{v} =  (c_1-d_1)\vect{b}_1 + (c_2-d_2)\vect{b}_2 + \ldots + (c_m-d_m)\vect{b}_m.
 $$
-
 
 So, we have a linear combination of the vectors $\vect{b}_i$ equal to the zero vector $\vect{0}$.
 
 From the linear independence of the vectors $\vect{b}_1, \vect{b}_2,\ldots,\vect{b}_m$ it then follows that all the coefficients
 $(c_i-d_i)$ must be 0. Thus we find
 
-
 $$
-   (c_1-d_1) = 0, \quad \ldots\,,  \quad  (c_m-d_m) = 0, 
+   (c_1-d_1) = 0, \quad \ldots\,,  \quad  (c_m-d_m) = 0,
 $$
 
-
-from which we can conclude that  
-
+from which we can conclude that
 
 $$
 c_1 = d_1, \quad c_2 = d_2, \quad \ldots\,,  \quad c_m =d_m.
 $$
 
-
 and we are done.
 ::::
-
-
 
 In this subsection we will be interested mainly in the case where the subspace $S$ is the whole of $\R^n$.
 
@@ -157,99 +135,88 @@ In this subsection we will be interested mainly in the case where the subspace $
 :label: Dfn:ChangeOfBasis:Coordinates
 
 Let $\mc{B} = \{\vect{b}_1, \vect{b}_2,\ldots,\vect{b}_m\}$ be a basis for a subspace $S$ in $\R^n$,
-and  $\vect{v}$ a vector  in $S$.
-Then the coefficients  $c_1,c_2, \ldots, c_m$ for which
-
+and $\vect{v}$ a vector in $S$.
+Then the coefficients $c_1,c_2, \ldots, c_m$ for which
 
 $$
   \vect{v} = c_1\vect{b}_1 + c_2\vect{b}_2 + \ldots + c_m\vect{b}_m
 $$
 
-
-are called the **coordinates of  the vector $\vect{v}$ with respect to the basis $\mc{B}$**,
+are called the **coordinates of the vector $\vect{v}$ with respect to the basis $\mc{B}$**,
 
 and the vector
-
 
 $$
   [\vect{v}]_{\mc B} = \begin{bmatrix} c_1 \\ c_2 \\ \vdots \\ c_m\end{bmatrix}
 $$
 
-is called the **coordinate  vector of $\vect{v}$ with respect to the basis $\mc{B}$**.
+is called the **coordinate vector of $\vect{v}$ with respect to the basis $\mc{B}$**.
 
 ::::
-
 
 ::::{prf:example}
 :label: Ex:ChangeOfBasis:BasicExampleR2
 
-We find the coordinates of the vectors $\vect{v}= \begin{bmatrix} 6 \\ -2\end{bmatrix}$  and $\vect{w}=\begin{bmatrix} -2 \\ 4\end{bmatrix}$ with respect to the basis
- $\mc{B} = \{\vect{b}_1, \vect{b}_2 \} =
-\left\{ \begin{bmatrix} 1 \\ 3\end{bmatrix}, \begin{bmatrix} 2 \\ 1\end{bmatrix}  \right\}$  of $\R^2$.
+We find the coordinates of the vectors $\vect{v}= \begin{bmatrix} 6 \\ -2\end{bmatrix}$ and $\vect{w}=\begin{bmatrix} -2 \\ 4\end{bmatrix}$ with respect to the basis
+$\mc{B} = \{\vect{b}_1, \vect{b}_2 \} =
+\left\{ \begin{bmatrix} 1 \\ 3\end{bmatrix}, \begin{bmatrix} 2 \\ 1\end{bmatrix}  \right\}$ of $\R^2$.
 
-For $\vect{v}$  we have to solve the vector equation
-
+For $\vect{v}$ we have to solve the vector equation
 
 $$
    c_1\begin{bmatrix} 1 \\ 3\end{bmatrix}  + c_2\begin{bmatrix} 2 \\ 1\end{bmatrix}\,\,=\,\,\begin{bmatrix}6 \\ -2\end{bmatrix}.
 $$
 
-
 The solution $c_1 = -2,\,c_2 = 4$ gives the answer:
-
 
 $$
   [\vect{v}]_{\mc B} = \begin{bmatrix} -2 \\ 4\end{bmatrix}.
 $$
 
-
-Likewise the vector  $\vect{w}$  has the coordinate vector
-$ [\vect{w}]_{\mc B} = \begin{bmatrix} 2 \\ -2\end{bmatrix}$.
+Likewise the vector $\vect{w}$ has the coordinate vector
+$ [\vect{w}]\_{\mc B} = \begin{bmatrix} 2 \\ -2\end{bmatrix}$.
 
 Namely,
-
 
 $$
    \begin{bmatrix} -2 \\ 4\end{bmatrix} = 2\begin{bmatrix} 1 \\ 3\end{bmatrix} +(-2)\begin{bmatrix} 2 \\ 1\end{bmatrix}, \quad\text{i.e. }\,
      \vect{w} = 2\vect{b}_1 + (-2) \vect{b}_2.
 $$
 
-{numref}`Figure %s <Fig:ChangeOfBasis:AlternativeBasis>`  may help to see what is going on geometrically.
+{numref}`Figure %s <Fig:ChangeOfBasis:AlternativeBasis>` may help to see what is going on geometrically.
 
 :::{figure} Images/Fig-ChangeOfBasis-AlternativeBasis.svg
 :name: Fig:ChangeOfBasis:AlternativeBasis
 
-
 The basis $\{\vect{b}_1,\vect{b}_2\}$ of {prf:ref}`Ex:ChangeOfBasis:BasicExampleR2`.
 ::::
-
 
 ::::::{prf:remark}
 :label: Rem:ChangeOfBasis:ConventionBasis
 
-A note of warning.  Strictly speaking a basis is an *ordered*  set of vectors.  By the we mean that the set $\mathcal{B} = \{\vect{b}_1,\vect{b}_2\}$  and the set  $\mathcal{B}' = \{\vect{b}_2,\vect{b}_1\}$ are the same. However,
-as bases we should consider them as different. This becomes important when we work with coordinates. 
+A note of warning. Strictly speaking a basis is an _ordered_ set of vectors. By the we mean that the set $\mathcal{B} = \{\vect{b}_1,\vect{b}_2\}$ and the set $\mathcal{B}' = \{\vect{b}_2,\vect{b}_1\}$ are the same. However,
+as bases we should consider them as different. This becomes important when we work with coordinates.
 <BR>
-$[\vect{v}]_{\mathcal{B}} = \begin{bmatrix}c_1\\c_2 \end{bmatrix}$ means  that $\vect{v} = c_1\vect{b}_1+c_2\vect{b}_2$, 
+$[\vect{v}]_{\mathcal{B}} = \begin{bmatrix}c_1\\c_2 \end{bmatrix}$ means that $\vect{v} = c_1\vect{b}_1+c_2\vect{b}_2$,
 <BR>
-whereas 
-$[\vect{v}]_{\mathcal{B}'} = \begin{bmatrix}c_1\\c_2 \end{bmatrix}$ should be interpreted $\vect{v} = c_1\vect{b}_2+c_2\vect{b}_1$. 
+whereas
+$[\vect{v}]_{\mathcal{B}'} = \begin{bmatrix}c_1\\c_2 \end{bmatrix}$ should be interpreted $\vect{v} = c_1\vect{b}_2+c_2\vect{b}_1$.
 <BR>
 To avoid ambiguities like this the way out is to use the notation
 
 $$
-  \mathcal{B} = \big(\vect{b}_1,\vect{b}_2, \ldots, \vect{b}_n\big), 
+  \mathcal{B} = \big(\vect{b}_1,\vect{b}_2, \ldots, \vect{b}_n\big),
 $$
 
 when we talk about a basis.
 However, we won't, as is quite customary. In case of a basis we will always tacitly assume that the vectors are ordered as they are written down.
 ::::::
 
-Recall that  the **standard basis** of $\R^n$ is given by
+Recall that the **standard basis** of $\R^n$ is given by
 
-$$ 
+$$
   \mathcal{E} = \{\vect{e_1}, \vect{e_2}, \ldots, \vect{e_n}\} =
-    \left\{ 
+    \left\{
      \begin{bmatrix} 1 \\ 0 \\ 0\\ \vdots \\ 0 \end{bmatrix},\,
      \begin{bmatrix} 0 \\ 1 \\ 0\\ \vdots \\ 0 \end{bmatrix},\,
     \,\,\ldots\,,\,\,
@@ -262,8 +229,7 @@ With respect to the standard basis it is very easy to find coordinates.
 ::::{prf:example}
 :label: Ex:ChangeOfBasis:CoordsStandardBasis
 
-If  $\vect{v} = \begin{bmatrix} a_1 \\ a_2 \\a_3\end{bmatrix}$ is an arbitrary vector in $\R^3$,  then
-
+If $\vect{v} = \begin{bmatrix} a_1 \\ a_2 \\a_3\end{bmatrix}$ is an arbitrary vector in $\R^3$, then
 
 $$
    \vect{v} = a_1 \begin{bmatrix} 1 \\ 0 \\ 0\end{bmatrix} +
@@ -272,21 +238,17 @@ $$
               a_1 \vect{e}_1 + a_2 \vect{e}_2 +  a_3  \vect{e}_3.
 $$
 
-
 This means that
-
 
 $$
   [\vect{v}]_{\mc{E}} = \begin{bmatrix} a_1 \\ a_2 \\a_3\end{bmatrix} = \vect{v}.
 $$
 
-
 So with respect to the standard basis any vector in $\R^3$ is at the same time its coordinate vector.
 
 ::::
 
-
-In fact, this last observation holds more general.  That is the content of the following proposition.
+In fact, this last observation holds more general. That is the content of the following proposition.
 
 ::::{prf:proposition}
 :label: Prop:ChangeOfBasis:CoordsStandardBasis
@@ -297,35 +259,35 @@ $$
    [\vect{v}]_{\mc{E}} =  \vect{v},
 $$
 
-where  $\mc{E}$ is the standard basis of $\R^n$.
+where $\mc{E}$ is the standard basis of $\R^n$.
 ::::
 
 In {prf:ref}`Ex:ChangeOfBasis:BasicExampleR2` we have seen that finding the coordinates of a vector with respect to the basis
 $\mc{B} = \{\vect{b}_1, \vect{b}_2 \} =
-\left\{ \begin{bmatrix} 1 \\ 3\end{bmatrix}, \begin{bmatrix} 2 \\ 1\end{bmatrix}  \right\}$ amounts to solving a vector equation. The converse, finding  $[\vect{w}]_{\mc{E}}$ when $[\vect{w}]_{\mc{B}}$ is given, requires less work. The following example illustrates this.
+\left\{ \begin{bmatrix} 1 \\ 3\end{bmatrix}, \begin{bmatrix} 2 \\ 1\end{bmatrix}  \right\}$ amounts to solving a vector equation. The converse, finding $[\vect{w}]_{\mc{E}}$ when $[\vect{w}]_{\mc{B}}$ is given, requires less work. The following example illustrates this.
 
 ::::{prf:example}
 :label: Ex:ChangeOfBasis:ToStandardBasis
-Suppose that with respect to the basis  $\mc{B} =      \left\{ \begin{bmatrix} 1 \\ 3\end{bmatrix}, \begin{bmatrix} 2 \\ 1\end{bmatrix}  \right\}$
-it is given that 
+Suppose that with respect to the basis $\mc{B} =      \left\{ \begin{bmatrix} 1 \\ 3\end{bmatrix}, \begin{bmatrix} 2 \\ 1\end{bmatrix}  \right\}$
+it is given that
 
 $$
- [\vect{w}]_{\mc{B}} = \begin{bmatrix} f_1 \\ f_2\end{bmatrix}. 
+ [\vect{w}]_{\mc{B}} = \begin{bmatrix} f_1 \\ f_2\end{bmatrix}.
 $$
 
 Then it follows that
 
 $$
-   \vect{w} = f_1\begin{bmatrix} 1 \\ 3\end{bmatrix} + f_2 \begin{bmatrix} 2 \\ 1\end{bmatrix} 
+   \vect{w} = f_1\begin{bmatrix} 1 \\ 3\end{bmatrix} + f_2 \begin{bmatrix} 2 \\ 1\end{bmatrix}
             = \begin{bmatrix} 1 & 2 \\ 3 & 1\end{bmatrix}  \begin{bmatrix} f_1 \\ f_2\end{bmatrix}.
 $$
 
-The rule to go from basis $\mc{B}$  to the standard basis can thus be written as
+The rule to go from basis $\mc{B}$ to the standard basis can thus be written as
 
 :::{math}
 :label: Eq:ChangeOfBasis:ToStandardBasis
 
-[\vect{w}]_{\mc E} = P[\vect{w}]_{\mc{B}},  \quad \text{where}\quad P = \left[\,\vect{b}_1 \,\,\vect{b}_2 \,\right].
+[\vect{w}]_{\mc E} = P[\vect{w}]_{\mc{B}}, \quad \text{where}\quad P = \left[\,\vect{b}_1 \,\,\vect{b}_2 \,\right].
 :::
 
 ::::
@@ -348,7 +310,7 @@ $$
 ::::{prf:proposition}
 :label: Prop:ChangeOfBasis:ToStandardBasis
 
-If ${\mathcal B} = \{\vect{b}_1, \,\vect{b}_2,\, \ldots,\, \vect{b}_n \}$ is a  basis of $\R^n$, then for any vector $\vect{v}$ in $\R^n$ it holds that
+If ${\mathcal B} = \{\vect{b}_1, \,\vect{b}_2,\, \ldots,\, \vect{b}_n \}$ is a basis of $\R^n$, then for any vector $\vect{v}$ in $\R^n$ it holds that
 
 $$
    \vect{v} =  P_{\mc{B}} [\vect{v}]_{\mc B}.
@@ -370,11 +332,12 @@ $$
          \vect{v} = p_1\vect{b}_1+ p_2\vect{b}_2+\ldots + p_n\vect{b}_n,
 $$
 
-and this linear combination of $n$ vectors in $\R^n$  can be written as a matrix-vector product:
+and this linear combination of $n$ vectors in $\R^n$ can be written as a matrix-vector product:
 
 $$
    \vect{v} = \left[\begin{matrix} \vect{b}_1 \,\,\vect{b}_2  \,\,\ldots\,\,  \vect{b}_n \end{matrix}\right]\begin{bmatrix} p_1 \\  p_2 \\ \vdots \\ p_n \end{bmatrix} = P_{\mc{B}} [\vect{v}]_{\mc B}.
 $$
+
 ::::
 
 ::::{exercise}
@@ -383,15 +346,15 @@ $$
 Show that every change-of-coordinates matrix $P_{\mc{B}}$ is invertible.
 ::::
 
-The following proposition is an immediate consequence of 
+The following proposition is an immediate consequence of
 {prf:ref}`Prop:ChangeOfBasis:ToStandardBasis` and {numref}`Exc:ChangeOfBasis:InvertiblePB`.
 
 ::::{prf:proposition}
 
-Suppose  $\mc{B}$ is a basis for $\R^n$, and  $P_{\mc{B}}$ is the change-of-coordinates matrix.  Then the coordinates of any vector $\vect{v}$ with respect to basis $\mc{B}$ are given by
+Suppose $\mc{B}$ is a basis for $\R^n$, and $P_{\mc{B}}$ is the change-of-coordinates matrix. Then the coordinates of any vector $\vect{v}$ with respect to basis $\mc{B}$ are given by
 
 $$
-   [\vect{v}]_{\mc B} = P^{-1}_{\mc{B}} \vect{v}. 
+   [\vect{v}]_{\mc B} = P^{-1}_{\mc{B}} \vect{v}.
 $$
 
 ::::
@@ -399,11 +362,11 @@ $$
 ::::{prf:example}
 :label: Ex:ChangeOfBasis:PropCoB
 
-Have another look at {prf:ref}`Ex:ChangeOfBasis:BasicExampleR2` where we found the coordinates of the vector $ \vect{v}= \begin{bmatrix} 6 \\ -2\end{bmatrix}$  with respect to the  basis
- $\mc{B} = \{\vect{b}_1, \vect{b}_2 \} =
+Have another look at {prf:ref}`Ex:ChangeOfBasis:BasicExampleR2` where we found the coordinates of the vector $ \vect{v}= \begin{bmatrix} 6 \\ -2\end{bmatrix}$ with respect to the basis
+$\mc{B} = \{\vect{b}_1, \vect{b}_2 \} =
     \left\{ \begin{bmatrix} 1 \\ 3\end{bmatrix}, \begin{bmatrix} 2 \\ 1\end{bmatrix}  \right\}$.
 
-The change-of-coordinates matrix from basis  $\mc{B}$  to the standard basis is given by
+The change-of-coordinates matrix from basis $\mc{B}$ to the standard basis is given by
 
 $$
   P_{\mc{B}} =  \begin{bmatrix} \vect{b}_1 & \vect{b}_2 \end{bmatrix} = \begin{bmatrix} 1& 2 \\ 3&1\end{bmatrix}
@@ -415,7 +378,7 @@ $$
    P^{-1}_{\mc{B}} =  \begin{bmatrix} 1& 2 \\ 3&1\end{bmatrix}^{-1} = -\frac15 \begin{bmatrix} 1& -2 \\ -3&1\end{bmatrix}.
 $$
 
-So  the coordinates of the vector $\vect{v}$ can now also be found as follows:
+So the coordinates of the vector $\vect{v}$ can now also be found as follows:
 
 $$
    [\vect{v}]_{\mc{B}} = P^{-1}_{\mc{B}}[\vect{v}]_{\mc{E}}
@@ -423,6 +386,7 @@ $$
                        = -\frac15\begin{bmatrix} 10 \\ -20\end{bmatrix}
                        = \begin{bmatrix} -2 \\ 4\end{bmatrix}.
 $$
+
 ::::
 
 We conclude this subsection with an example from physics.
@@ -430,9 +394,9 @@ We conclude this subsection with an example from physics.
 ::::{prf:example}
 :label: Ex:ChangeOfBasis:Lorentz
 
-Suppose $(x,y,z,t)$   and  $(x',y',z',t')$  are the coordinates of an event in two frames with the origins coinciding at  $t = t'= 0$  where the primed frame is seen from the unprimed frame as moving with speed  $v$  along the $x$-axis.
+Suppose $(x,y,z,t)$ and $(x',y',z',t')$ are the coordinates of an event in two frames with the origins coinciding at $t = t'= 0$ where the primed frame is seen from the unprimed frame as moving with speed $v$ along the $x$-axis.
 
-The connection between two  systems can be rewritten by a four-dimensional 'space-time' coordinate transformation
+The connection between two systems can be rewritten by a four-dimensional 'space-time' coordinate transformation
 
 $$
   \begin{cases}
@@ -443,10 +407,9 @@ $$
   \end{cases}
 $$
 
-Here  $c$ is the speed of light, and  $\gamma = \left(\sqrt{1 - \dfrac{v^2}{c^2}}\right)^{-1}$ the so-called Lorentz factor.
+Here $c$ is the speed of light, and $\gamma = \left(\sqrt{1 - \dfrac{v^2}{c^2}}\right)^{-1}$ the so-called Lorentz factor.
 
-
-Systems that move with a constant velocity with respect to each other are called **inertial systems**. 
+Systems that move with a constant velocity with respect to each other are called **inertial systems**.
 In each reference frame, an observer can use a local coordinate system (usually Cartesian coordinates in this context) to measure lengths, and a clock to measure time intervals. An event is something that happens at a point in space at an instant of time, or more formally a point in space-time. The transformation connects the space and time coordinates of an event as measured by an observers in the different frames.
 
 ::::
@@ -458,9 +421,11 @@ In {numref}`Sec:LinTrafo` we have seen that every linear transformation $T:\R^n 
 ::::{math}
 :label: Eq:ChangeOfBasis:StandardMatrix
 
+$$
 A = \begin{bmatrix} T(\vect{e}_1) & T(\vect{e}_2) & \ldots & T(\vect{e}_n) \end{bmatrix}.
+$$
 
-::::  
+::::
 
 This means that for each vector $\vect{v}$ in $\R^n$ it holds that
 
@@ -468,15 +433,15 @@ $$
    T(\vect{v}) = A\,\vect{v}.
 $$
 
-In this way we have expressed everything into coordinates with respect to the standard bases $\mc{E}$ and $\mc{E}'$  for  $\R^n$ and $\R^m$ respectively. 
+In this way we have expressed everything into coordinates with respect to the standard bases $\mc{E}$ and $\mc{E}'$ for $\R^n$ and $\R^m$ respectively.
 
-We will see that formula {eq}`Eq:ChangeOfBasis:StandardMatrix` can be generalized almost automatically to arbitrary bases  for  $\R^n$ and $\R^m$.
+We will see that formula {eq}`Eq:ChangeOfBasis:StandardMatrix` can be generalized almost automatically to arbitrary bases for $\R^n$ and $\R^m$.
 
 ::::{prf:proposition}
 :label: Prop:ChangeOfBasis:MatrixOfTrafo
 
-Suppose that  $T:\R^n \to \R^m$ is a linear transformation,  that $\mc{B} =\{\vect{b}_1, \ldots, \vect{b}_n\}$  is a basis for  $\R^n$ and $\mc{C}$   a basis for $\R^m$.
-Then for each  vector $\vect{v}$ in $\R^n$:
+Suppose that $T:\R^n \to \R^m$ is a linear transformation, that $\mc{B} =\{\vect{b}_1, \ldots, \vect{b}_n\}$ is a basis for $\R^n$ and $\mc{C}$ a basis for $\R^m$.
+Then for each vector $\vect{v}$ in $\R^n$:
 
 $$
   [T(\vect{v})]_{\mc{C}} = \left[[T(\vect{b}_1)]_{\mc{C}} \,\rule[-.5ex]{0ex}{3ex}\,[T(\vect{b}_2)]_{\mc{C}}\,\,\ldots\,\,[T(\vect{b}_n)]_{\mc{C}}\right] [\vect{v}]_{\mc{B}}
@@ -484,9 +449,9 @@ $$
 
 ::::
 
-::::{prf:proof} 
+::::{prf:proof}
 
-We  use the definition of the coordinate vector and the linearity of the transformation. In fact we can play copycat with the proof of 
+We use the definition of the coordinate vector and the linearity of the transformation. In fact we can play copycat with the proof of
 {prf:ref}`Thm:LinTrafo:LinTrafo=MatrixTrafo` in the section of linear transformations.
 
 Indeed, suppose that $\vect{v}$ is a vector in $\R^n$, and that
@@ -501,7 +466,10 @@ Because of the linearity of $T$ we then have
 :::{math}
 :label: Eq:ChangeOfBasis:LinearityTransform
 
+$$
 T(\vect{v}) = f_1T(\vect{b}_1) + f_2T(\vect{b}_2) + \ldots + f_nT(\vect{b}_n).
+$$
+
 :::
 
 Now we take the coordinate vectors with respect to basis $\mc{C}$:
@@ -509,7 +477,10 @@ Now we take the coordinate vectors with respect to basis $\mc{C}$:
 :::{math}
 :label: Eq:ChangeOfBasis:LinearityCoords
 
-[T(\vect{v})]_{\mc{C}} =   f_1[T(\vect{b}_1)]_{\mc{C}} +   f_2[T(\vect{b}_2)]_{\mc{C}}   + \ldots +  f_n[T(\vect{b}_n)]_{\mc{C}}.
+$$
+[T(\vect{v})]_{\mc{C}} = f_1[T(\vect{b}_1)]_{\mc{C}} + f_2[T(\vect{b}_2)]_{\mc{C}} + \ldots + f_n[T(\vect{b}_n)]_{\mc{C}}.
+$$
+
 :::
 
 (See {numref}`Exc:ChangeOfBasis:LinearityOfCoords`.)
@@ -519,7 +490,7 @@ Noting that the term on the right-hand side of Equation {eq}`Eq:ChangeOfBasis:Li
 $$
     \begin{array}{rcl}
     [T(\vect{v})]_{\mc{C}} &=& \left[ [\,T(\vect{b}_1)]_{\mc{C}}\,\,\,\rule[-1ex]{0ex}{4ex}\,\ldots\,\,[T(\vect{b}_n)]_{\mc{C}}\,\right]
-                                    \begin{bmatrix} f_1 \\ \vdots \\ f_n \end{bmatrix} \\ 
+                                    \begin{bmatrix} f_1 \\ \vdots \\ f_n \end{bmatrix} \\
     &=& \left[\,[T(\vect{b}_1)]_{\mc{C}}\,\,\,\rule[-0.5ex]{0ex}{3ex}\,\ldots\,\,[T(\vect{b}_n)]_{\mc{C}}\,\right][\vect{v}]_{\mc{B}}
      \end{array}.
 $$
@@ -532,36 +503,36 @@ $$
 Prove the identity
 
 $$
-   [c_1\vect{v}_1 +c_2\vect{v}_2+ \ldots + c_n\vect{v}_n ]_{\mc{B}} = 
+   [c_1\vect{v}_1 +c_2\vect{v}_2+ \ldots + c_n\vect{v}_n ]_{\mc{B}} =
    c_1[\vect{v}_1 ]_{\mc{B}} + c_2[\vect{v}_2 ]_{\mc{B}} + \ldots + c_n[\vect{v}_n ]_{\mc{B}}
 $$
 
-that is used to go from  Equation {eq}`Eq:ChangeOfBasis:LinearityTransform`  to  Equation {eq}`Eq:ChangeOfBasis:LinearityCoords` in the proof of {prf:ref}`Prop:ChangeOfBasis:MatrixOfTrafo`. 
+that is used to go from Equation {eq}`Eq:ChangeOfBasis:LinearityTransform` to Equation {eq}`Eq:ChangeOfBasis:LinearityCoords` in the proof of {prf:ref}`Prop:ChangeOfBasis:MatrixOfTrafo`.
 
 **Hint:** first show the correctness of the identities
 
-$$ 
-   [\vect{v}_1 +\vect{v}_2 ]_{\mc{B}} = 
-   [\vect{v}_1 ]_{\mc{B}} + [\vect{v}_2 ]_{\mc{B}} 
+$$
+   [\vect{v}_1 +\vect{v}_2 ]_{\mc{B}} =
+   [\vect{v}_1 ]_{\mc{B}} + [\vect{v}_2 ]_{\mc{B}}
    \quad \text{and} \quad
    [c\vect{v} ]_{\mc{B}} = c[\vect{v}]_{\mc{B}}.
 $$
 
 ::::
 
-{prf:ref}`Prop:ChangeOfBasis:MatrixOfTrafo`  is fairly general.  We will mostly use it in the situation where the linear transformation goes from $\R^n$ to itself,  and where we use the same basis $\mc{B}$ in the domain and codomain.  However, we introduce a  new notation for the general case first.
+{prf:ref}`Prop:ChangeOfBasis:MatrixOfTrafo` is fairly general. We will mostly use it in the situation where the linear transformation goes from $\R^n$ to itself, and where we use the same basis $\mc{B}$ in the domain and codomain. However, we introduce a new notation for the general case first.
 
 ::::{prf:definition}
 :label: Dfn:ChangeOfBasis:Matrix-wrt-Basis
 
-Let $T:\R^n \to \R^m$ be a linear transformation, and let $\mc{B} = \{\vect{b}_1,\ldots,\vect{b}_n\}$ be a basis for $\R^n$,  $\mc{C}$  a basis for $\R^m$. Then the **matrix of $T$ with respect to bases $\mc{B}$ and $\mc{C}$** is defined by
+Let $T:\R^n \to \R^m$ be a linear transformation, and let $\mc{B} = \{\vect{b}_1,\ldots,\vect{b}_n\}$ be a basis for $\R^n$, $\mc{C}$ a basis for $\R^m$. Then the **matrix of $T$ with respect to bases $\mc{B}$ and $\mc{C}$** is defined by
 
 $$
    [T]_{\mc{C}\leftarrow \mc{B}} = \big[\,[T(\vect{b}_1) ]_{\mc{C}}\,\,
    [T(\vect{b}_2 )]_{\mc{C}}\,\,\ldots \,\,[T(\vect{b}_n) ]_{\mc{C}}\,\big].
 $$
 
-In the case where $n = m$  and  $\mc{B} = \mc{C}$ we will use the slightly simpler notation
+In the case where $n = m$ and $\mc{B} = \mc{C}$ we will use the slightly simpler notation
 
 $$
      [T]_{\mc{B}} = [T]_{\mc{B}\leftarrow \mc{B}} =\,
@@ -573,7 +544,7 @@ and call this simply **the matrix of $T$ with respect to basis $\mathcal{B}$**.
 
 ::::
 
-If we let $\mc{B}$ be the standard basis $\mc{E}$ of $\R^n$ and $\mc{C}$ is the standard basis $\mc{E'}$ of $\R^m$   we get the following 
+If we let $\mc{B}$ be the standard basis $\mc{E}$ of $\R^n$ and $\mc{C}$ is the standard basis $\mc{E'}$ of $\R^m$ we get the following
 
 $$
     [T]_{\mc{E}'\leftarrow \mc{E}}   \,=\,\,
@@ -586,14 +557,14 @@ This is the "good old" standard matrix as in {numref}`Subsec:LinTrafo:LinTrafoeq
 ::::{prf:example}
 :label: Ex:ChangeOfBasis:Reflection
 
-Let us have a second look at the transformation mentioned in the introduction, i.e., the reflection in the plane along the line  $3x-2y=0$.    We found that the reflection behaves in a very simple way with respect to the basis
+Let us have a second look at the transformation mentioned in the introduction, i.e., the reflection in the plane along the line $3x-2y=0$. We found that the reflection behaves in a very simple way with respect to the basis
 
 $$
-   \mc{B} = \{\vect{b}_1, \vect{b}_2  \} = 
+   \mc{B} = \{\vect{b}_1, \vect{b}_2  \} =
     \left\{\begin{bmatrix} 2\\3 \end{bmatrix}, \,\begin{bmatrix} 3\\-2 \end{bmatrix}  \right\}.
 $$
 
-Recall that this basis was chosen so that  $\vect{b}_1$  lies on $\mathcal{L}$ and $ \vect{b}_2$ is perpendicular to $\mathcal{L}$, from which we deduced that 
+Recall that this basis was chosen so that $\vect{b}_1$ lies on $\mathcal{L}$ and $ \vect{b}\_2$ is perpendicular to $\mathcal{L}$, from which we deduced that
 
 $$
    T(\vect{b}_1) = \vect{b}_1 \quad \text{and} \quad T(\vect{b}_2) = -\vect{b}_2.
@@ -610,9 +581,9 @@ $$
 ::::{prf:example}
 :label: Ex:ChangeOfBasis:MatrixFRomTb1Tb2
 
-We will  find the matrix of  the linear transformation  ${T:\R^2 \to\R^2}$   sending  $\vect{b}_1 = \begin{bmatrix} 1\\3\end{bmatrix}$  to  $\begin{bmatrix} 5 \\ 5\end{bmatrix}$
-and  $\vect{b}_2 = \begin{bmatrix} 2\\1\end{bmatrix}$  to  $\begin{bmatrix} 1 \\ -2\end{bmatrix}$ 
-with respect to the basis $\mathcal{B} =\{ \vect{b}_1, \vect{b}_2\}$. 
+We will find the matrix of the linear transformation ${T:\R^2 \to\R^2}$ sending $\vect{b}_1 = \begin{bmatrix} 1\\3\end{bmatrix}$ to $\begin{bmatrix} 5 \\ 5\end{bmatrix}$
+and $\vect{b}_2 = \begin{bmatrix} 2\\1\end{bmatrix}$ to $\begin{bmatrix} 1 \\ -2\end{bmatrix}$
+with respect to the basis $\mathcal{B} =\{ \vect{b}_1, \vect{b}_2\}$.
 
 The only thing that remains to be done before we can write down
 
@@ -670,7 +641,7 @@ $$
 
 ::::
 
-In the next example we will find the matrix of the rotation $R$ about the origin through an angle $\frac13\pi$. In {numref}`Sec:GeomLinTrans`  we have already seen  the standard matrix of this linear transformation, involving sines and cosines. As the example shows  a change of basis may lead to an interesting alternative.
+In the next example we will find the matrix of the rotation $R$ about the origin through an angle $\frac13\pi$. In {numref}`Sec:GeomLinTrans` we have already seen the standard matrix of this linear transformation, involving sines and cosines. As the example shows a change of basis may lead to an interesting alternative.
 
 ::::{prf:example}
 :label: Ex:ChangeOfBasis:Rotation
@@ -681,10 +652,9 @@ $$
   \left\{\vect{b}_1, \vect{b}_2 \right\} = \left\{ \begin{bmatrix} 2 \\ 0  \end{bmatrix}, \begin{bmatrix} -1 \\ \sqrt{3}  \end{bmatrix} \right\}.
 $$
 
-Note that $\vect{b}_1$ and $  \vect{b}_2$ are two vectors of length 2 subtending an angle
-$\frac23\pi$.  See {numref}`Figure %s <Fig:ChangeOfBasis-TriangularGrid>`.
-The vector $\vect{b}_1+\vect{b}_2 = \begin{bmatrix} 1 \\ \sqrt{3}  \end{bmatrix}$, is also indicated in the figure. 
-
+Note that $\vect{b}_1$ and $ \vect{b}\_2$ are two vectors of length 2 subtending an angle
+$\frac23\pi$. See {numref}`Figure %s <Fig:ChangeOfBasis-TriangularGrid>`.
+The vector $\vect{b}_1+\vect{b}_2 = \begin{bmatrix} 1 \\ \sqrt{3}  \end{bmatrix}$, is also indicated in the figure.
 
 :::{figure} Images/Fig-ChangeOfBasis-TriangularGrid.svg
 :name: Fig:ChangeOfBasis-TriangularGrid
@@ -693,7 +663,7 @@ Rotation in disguise
 
 :::
 
-Now let us find the matrix of the rotation $R$ with respect to basis $\mc{B}$.  From the figure we read off
+Now let us find the matrix of the rotation $R$ with respect to basis $\mc{B}$. From the figure we read off
 
 $$
   R(\vect{b}_1) =  \vect{b}_1+\vect{b}_2
@@ -710,20 +680,20 @@ $$
 
 ::::
 
-In {prf:ref}`Ex:ChangeOfBasis:Reflection` and {prf:ref}`Ex:ChangeOfBasis:Rotation`, the reflection and the rotation, we came up first with   bases that fitted the geometric context. And then we found the (very simple) matrix with respect to these bases. However, usually we  prefer to have the standard matrix.  In the last section we will see how a change of basis effects the matrix of a linear transformation.
-
+In {prf:ref}`Ex:ChangeOfBasis:Reflection` and {prf:ref}`Ex:ChangeOfBasis:Rotation`, the reflection and the rotation, we came up first with bases that fitted the geometric context. And then we found the (very simple) matrix with respect to these bases. However, usually we prefer to have the standard matrix. In the last section we will see how a change of basis effects the matrix of a linear transformation.
 
 (Subsec:ChangeOfBasis:RelationTETB)=
+
 ## The Relation between $[T]_{\mc{E}}$ and $[T]_{\mc{B}}$
 
-We have seen how to convert vectors from one coordinate system (i.e., basis) to another, and also how to construct the matrix of a linear transformation with respect to an arbitrary basis.  In this section we will present a ready-made formula that connects the  matrices with respect to two different bases.  We will restrict ourselves to the common situation where we have a transformation from $\R^n$ to itself, and  where one of the bases is the standard basis. 
+We have seen how to convert vectors from one coordinate system (i.e., basis) to another, and also how to construct the matrix of a linear transformation with respect to an arbitrary basis. In this section we will present a ready-made formula that connects the matrices with respect to two different bases. We will restrict ourselves to the common situation where we have a transformation from $\R^n$ to itself, and where one of the bases is the standard basis.
 
 We start with an example that illustrates the underlying ideas.
 
 ::::{prf:example}
 :label: Ex:ChangeOfBasis:MatrixChangeBasisR2
 
-Consider the linear transformation  $T:\R^2\to\R^2$ with the standard matrix
+Consider the linear transformation $T:\R^2\to\R^2$ with the standard matrix
 $A = \begin{bmatrix}  1 & 4 \\ 2 & 1\end{bmatrix}$, i.e.
 
 $$
@@ -747,7 +717,7 @@ $$
    P = \PB = \begin{bmatrix}  2 & 1\\ -1 & 1\end{bmatrix}.
 $$
 
-To obtain the matrix  $[T]_{\mc{B}}$  we need the coordinate vectors
+To obtain the matrix $[T]_{\mc{B}}$ we need the coordinate vectors
 
 $$
    [T(\vect{b}_1)]_{\mc{B}} \quad \text{and} \quad [T(\vect{b}_2)]_{\mc{B}}.
@@ -756,7 +726,7 @@ $$
 Let us start with the vector $\vect{b}_1$:
 
 $$
-   T(\vect{b}_1)= A\vect{b}_1  = \begin{bmatrix}  1 & 4 \\ 2 & 1\end{bmatrix} \begin{bmatrix}  2\\ -1 \end{bmatrix} =  \begin{bmatrix}  -2\\ 3 \end{bmatrix}, 
+   T(\vect{b}_1)= A\vect{b}_1  = \begin{bmatrix}  1 & 4 \\ 2 & 1\end{bmatrix} \begin{bmatrix}  2\\ -1 \end{bmatrix} =  \begin{bmatrix}  -2\\ 3 \end{bmatrix},
   \,\text{ so }\,
    \left[T(\vect{b}_1)\right]_{\mc{B}} =    P^{-1} \begin{bmatrix}  -2\\ 3 \end{bmatrix}
    = \begin{bmatrix}  -\nicefrac{5}{3}\\ \nicefrac{4}{3} \end{bmatrix}.
@@ -770,11 +740,10 @@ $$
    \left[T(\vect{x}) \right]_{\mc{B}} =  [T]_{\mc{B}}\,\left[\vect{x} \right]_{\mc{B}}.
 $$
 
-
 <ol type="i">
 <li>
 
-First we find the coordinates of  the vector $\vect{x}$ with respect to the standard basis $\mc{E}$:
+First we find the coordinates of the vector $\vect{x}$ with respect to the standard basis $\mc{E}$:
 
 $$
     \vect{x} =   P\left[\vect{x}\right]_{\mc{B}}
@@ -802,23 +771,22 @@ $$
 </li>
 </ol>
 
-We see that the matrix  $P^{-1}AP$ does the job:
+We see that the matrix $P^{-1}AP$ does the job:
 
 :::{math}
 :label: Eq:ChangeOfBasis:PAPinv
 
-[T]_{\mc{B}} \,=\, P^{-1}AP.
+[T]\_{\mc{B}} \,=\, P^{-1}AP.
 
 :::
 
-
-For the given transformation and  basis we find
+For the given transformation and basis we find
 
 $$
 \begin{array}{rcl}
    [T]_{\mc{B}} &=& \begin{bmatrix}  2 & 1\\ -1 & 1\end{bmatrix}^{-1}
   \begin{bmatrix}  1 & 4 \\ 2 & 1\end{bmatrix}
-  \begin{bmatrix}  2 & 1\\ -1 & 1\end{bmatrix}\\ 
+  \begin{bmatrix}  2 & 1\\ -1 & 1\end{bmatrix}\\
   &=&
    \dfrac{1}{3}\begin{bmatrix}  1 & -1\\ 1 & 2\end{bmatrix}
   \begin{bmatrix}  1 & 4 \\ 2 & 1\end{bmatrix}
@@ -833,23 +801,23 @@ Verify that the first column indeed corresponds to the image of $\vect{b}_1$ as 
 
 ::::{warning}
 
-Note that the product  $PAP^{-1}$ in Equation {eq}`Eq:ChangeOfBasis:PAPinv` cannot be simplified to $PP^{-1}A$, which would be equal to $A$ itself!
+Note that the product $PAP^{-1}$ in Equation {eq}`Eq:ChangeOfBasis:PAPinv` cannot be simplified to $PP^{-1}A$, which would be equal to $A$ itself!
 
 ::::
 
-{prf:ref}`Ex:ChangeOfBasis:MatrixChangeBasisR2`  contains an informal proof, or rather, a "proof by example", of the following proposition.
+{prf:ref}`Ex:ChangeOfBasis:MatrixChangeBasisR2` contains an informal proof, or rather, a "proof by example", of the following proposition.
 
 ::::{prf:proposition}
 :label: Prop:ChangeOfBasis:MatrixChangeStandardBasis
 
-Suppose $\mc{B}$ is a  basis of $\R^n$, and $P = P_{\mc{B}}$ is the change-of-coordinates matrix.
+Suppose $\mc{B}$ is a basis of $\R^n$, and $P = P_{\mc{B}}$ is the change-of-coordinates matrix.
 If $T:\R^n \to \R^n$ is a linear transformation with standard matrix $A$, then the matrix
 of $T$ with respect to the basis $\mc{B}$ is given by
 
 :::{math}
 :label: Eq:ChangeOfBasis:MatrixChangeStandardBasis
 
-[T]_{\mc{B}} = P^{-1}AP.
+$[T]_{\mc{B}} = P^{-1}AP.$
 
 :::
 
@@ -858,7 +826,7 @@ The following diagram illustrates what is going on:
 $$
 \begin{array}{ccc}
 \R^n & \underrightarrow {\rule{3em}{0ex} T \rule{3em}{0ex}} & \R^n \\[5ex]
-\vect{x} = P[\vect{x}]_{\mc{B}} & \underrightarrow {\rule{3em}{0ex} A\rule{3em}{0ex}} & 
+\vect{x} = P[\vect{x}]_{\mc{B}} & \underrightarrow {\rule{3em}{0ex} A\rule{3em}{0ex}} &
 \begin{array}[t]{l}A\vect{x} = T(\vect{x} ) \\ = AP[\vect{x}]_{\mc{B}} \end{array} \\[1ex]
 P_{\mc{B}}\left  \uparrow \rule{0ex}{4em} \right. \rule{2em}{0ex}   &  &  P^{-1}_{\mc{B}}\,\left  \downarrow \rule{0ex}{4em} \right.\,
 \left  \uparrow \rule{0ex}{4em} \right.P_{\mc{B}}  \\
@@ -881,7 +849,7 @@ and as such gives a quick way to go from an alternative basis to the standard ba
 ::::{exercise}
 :label: Exc:ChangeOfBasis:ProjectionOntoPlane
 
-Suppose  $P$ is an invertible matrix.
+Suppose $P$ is an invertible matrix.
 
 Show that for matrices $A$ and $B$
 
@@ -918,7 +886,7 @@ $$
    \vect{b}_3 = \begin{bmatrix}1\\-1\\-2  \end{bmatrix}.
 $$
 
-The orthogonal projection maps  $\vect{b}_3$ to the origin and leaves the other two basis vectors invariant:
+The orthogonal projection maps $\vect{b}_3$ to the origin and leaves the other two basis vectors invariant:
 
 $$
   T(\vect{b}_1) = \vect{b}_1, \quad  T(\vect{b}_2) = \vect{b}_2, \quad
@@ -931,57 +899,55 @@ $$
   [T]_{\mc{B}} =  \begin{bmatrix}1 & 0 & 0\\0& 1& 0\\0&0&0  \end{bmatrix},
 $$
 
-and we can write down  the standard matrix in one stroke:
+and we can write down the standard matrix in one stroke:
 
 :::{math}
 :label: Eq:ChangeOfBasis:ProjMatrix
 
 [T]_{\mc{E}} = P_{\mc{B}}[T]_{\mc{B}}\left(P_{\mc{B}}\right)^{-1} =
-\begin{bmatrix}2 & 1 & 1\\0& 1& -1\\1&0&-2  \end{bmatrix}
-\begin{bmatrix}1 & 0 & 0\\0& 1& 0\\0&0&0  \end{bmatrix}
-\begin{bmatrix}2 & 1 & 1\\0& 1& -1\\1&0&-2  \end{bmatrix}^{-1}
+\begin{bmatrix}2 & 1 & 1\\0& 1& -1\\1&0&-2 \end{bmatrix}
+\begin{bmatrix}1 & 0 & 0\\0& 1& 0\\0&0&0 \end{bmatrix}
+\begin{bmatrix}2 & 1 & 1\\0& 1& -1\\1&0&-2 \end{bmatrix}^{-1}
 :::
 
 ::::
-
 
 ::::{prf:example}
 :label: Exc:ChangeOfBasis:CheckIdempotent
 
 As was shown in {prf:ref}`Prop:GeomLinTrans:ProjSquaredisProj` of {numref}`Subsec:GeomLinTrans:Proj` the matrix $A$ of a projection has to satisfy the identity
-$A^2=A$.  Show that the matrix $[T]_{\mc{E}}$ of {numref}`Exc:ChangeOfBasis:ProjectionOntoPlane` indeed satisfies this identity.
+$A^2=A$. Show that the matrix $[T]_{\mc{E}}$ of {numref}`Exc:ChangeOfBasis:ProjectionOntoPlane` indeed satisfies this identity.
 
 (To verify this you don't have to compute the matrix as given by Equation {eq}`Eq:ChangeOfBasis:ProjMatrix` explicitly.)
 
 ::::
 
-In the last subsection we will generalize the formula to the  more  general situation of a linear transformation from $\R^n$ to $\R^m$ and  arbitrary bases $\mc{B},\mc{B}'$  for  $\R^n$, and 
-$\mc{C},\mc{C}'$  for  $\R^m$.
+In the last subsection we will generalize the formula to the more general situation of a linear transformation from $\R^n$ to $\R^m$ and arbitrary bases $\mc{B},\mc{B}'$ for $\R^n$, and
+$\mc{C},\mc{C}'$ for $\R^m$.
 
 <div style="color: red; font-size: 30px; text-align: center">
 A subsection with the general transformation formula is still under construction.
 </div>
 
-
 (Subsec:ChangeOfBasis:GeneralTransformationFormula)=
+
 ## General Transformation Formula for Matrices of Linear Transformation
 
-
-In the previous subsections we studied the relations of the  coordinates with respect to the standard basis and one other alternative basis $\mc{B}$. In this section we go one step further and omit the restriction that one of the bases is the standard basis.  We will see that the generalizations are pretty straightforward.
+In the previous subsections we studied the relations of the coordinates with respect to the standard basis and one other alternative basis $\mc{B}$. In this section we go one step further and omit the restriction that one of the bases is the standard basis. We will see that the generalizations are pretty straightforward.
 
 First of all we will extend the notion of a change-of-coordinates matrix.
 
 ::::{prf:definition}
 :label: Dfn:ChangeOfBasis:CoBmatrixGeneral
 
-Let ${\mathcal B} = \{\vect{b}_1, \ldots, \vect{b}_n \}$ and ${\mathcal C} = \{\vect{c}_1, \ldots, \vect{c}_n \}$ be two bases of $\R^n$.  The **change-of-basis matrix from ${\mathcal B}$ to ${\mathcal C}$**   is the matrix
+Let ${\mathcal B} = \{\vect{b}_1, \ldots, \vect{b}_n \}$ and ${\mathcal C} = \{\vect{c}_1, \ldots, \vect{c}_n \}$ be two bases of $\R^n$. The **change-of-basis matrix from ${\mathcal B}$ to ${\mathcal C}$** is the matrix
 
 $$
   P_{\mc{C} \leftarrow \mc{B}} =
       \left[\,[\vect{b}_1]_{\mc{C}} \,\, [\vect{b}_2]_{\mc{C}}  \,\, \rule[-1ex]{0ex}{3ex}\,\,\, \ldots \,\,\,[\vect{b}_n]_{\mc{C}}\right].
 $$
 
-Note that in the situation where $\mc{C}$ is the standard basis, we have that 
+Note that in the situation where $\mc{C}$ is the standard basis, we have that
 
 $$
    P_{\mc{C} \leftarrow \mc{B}} = P_{\mc{E} \leftarrow \mc{B}} =  P_{\mc{B}}.
@@ -994,7 +960,7 @@ Again, as the name suggests, the change-of-basis matrix can be used to switch fr
 ::::{prf:proposition}
 :label: Prop:ChangeOfBasis:CoBmatrix
 
-If ${\mathcal B} = \{\vect{b}_1, \ldots, \vect{b}_n \}$ and ${\mathcal C} = \{\vect{c}_1, \ldots, \vect{c}_n \}$ are two  bases of $\R^n$, then for any vector $\vect{v}$ in $\R^n$ it holds that
+If ${\mathcal B} = \{\vect{b}_1, \ldots, \vect{b}_n \}$ and ${\mathcal C} = \{\vect{c}_1, \ldots, \vect{c}_n \}$ are two bases of $\R^n$, then for any vector $\vect{v}$ in $\R^n$ it holds that
 
 $$
      [\vect{v}]_{\mc{C}} = \CoBmatrix{B}{C} [\vect{v}]_{\mc{B}}.
@@ -1032,10 +998,9 @@ $$
 
 ::::
 
-
 ::::{exercise}
 
-Suppose $\mc{B}$ and $\mc{C}$ are two bases  of $\R^n$.
+Suppose $\mc{B}$ and $\mc{C}$ are two bases of $\R^n$.
 Show that the change-of-coordinates matrix $P_{\mc{C}\leftarrow\mc{B}}$ is invertible, and that
 
 $$
@@ -1046,11 +1011,11 @@ $$
 
 ::::{exercise}
 
-Suppose $\mc{B}, \mc{C}$ and $\mc{D}$ are three bases  of $\R^n$.
-What is the relation between the 
-change-of-coordinates matrices 
-$ P_{\mc{B}\leftarrow\mc{C}}, \quad
-   P_{\mc{B}\leftarrow\mc{D}} \quad \text{and} \quad P_{\mc{C}\leftarrow\mc{D}}$?
+Suppose $\mc{B}, \mc{C}$ and $\mc{D}$ are three bases of $\R^n$.
+What is the relation between the
+change-of-coordinates matrices
+$ P*{\mc{B}\leftarrow\mc{C}}, \quad
+P*{\mc{B}\leftarrow\mc{D}} \quad \text{and} \quad P\_{\mc{C}\leftarrow\mc{D}}$?
 
 ::::
 
@@ -1060,22 +1025,24 @@ becomes very natural. As is stated in the next theorem.
 ::::{prf:theorem}
 :label: EThmChangeOfBasis:MatrixChangeGeneralBasis
 
-Suppose $\mc{B}$ and $\mc{B}'$ are two bases  of $\R^n$,
-and  $\mc{C}$ and $\mc{C}'$ are two bases  of $\R^m$.
+Suppose $\mc{B}$ and $\mc{B}'$ are two bases of $\R^n$,
+and $\mc{C}$ and $\mc{C}'$ are two bases of $\R^m$.
 If $T:\R^n \to \R^m$ is a linear transformation, then the relation between the two
-matrices  $A = [T]_{\mc{C}\leftarrow \mc{B}}$ and $A' = [T]_{\mc{C}'\leftarrow \mc{B}'}$
+matrices $A = [T]_{\mc{C}\leftarrow \mc{B}}$ and $A' = [T]_{\mc{C}'\leftarrow \mc{B}'}$
 is as follows
 
 :::{math}
 :label: Eq:ChangeOfBasis:MatrixChangeGeneralBasis
 
+$
 [T]_{\mc{C}'\leftarrow \mc{B}'} = P_{\mc{C}'\leftarrow\mc{C}}[T]_{\mc{C}\leftarrow \mc{B}} P_{\mc{B}\leftarrow\mc{B}'} =
 \left(P_{\mc{C} \leftarrow\mc{C}'}\right)^{-1}[T]_{\mc{C}\leftarrow \mc{B}} P_{\mc{B}\leftarrow\mc{B}'}.
+$
 :::
 
 ::::
 
-The following diagram, strikingly similar to the diagram in {prf:ref}`Prop:ChangeOfBasis:MatrixChangeStandardBasis`,   illustrates what is going on.
+The following diagram, strikingly similar to the diagram in {prf:ref}`Prop:ChangeOfBasis:MatrixChangeStandardBasis`, illustrates what is going on.
 
 $$
   \begin{array}{ccc}
@@ -1089,12 +1056,14 @@ $$
 
 ::::{prf:proof}
 
+<!-- prettier-ignore -->
 To find $[T(\vect{x})]_{\mc{C}'}$ when $ [\vect{x}]_{\mc{B}'}$ is given one can either
 
 <ul>
 <li>
 
-Multiply by  $A'= [T]_{\mc{C}'\leftarrow \mc{B}'} $
+<!-- prettier-ignore -->
+Multiply by $A'= [T]_{\mc{C}'\leftarrow \mc{B}'} $
 
 </li>
 </ul>
@@ -1139,7 +1108,7 @@ $$
    \left( P_{\mc{C}\leftarrow\mc{C}'}\right)^{-1}AP_{\mc{B}\leftarrow\mc{B'}}  [\vect{x}]_{\mc{B}'}
 $$
 
-for each coordinate vector $[\vect{x}]_{\mc{B}'} $, that is, for each vector in $\R^n$,  it follows that the two matrices
+for each coordinate vector $[\vect{x}]_{\mc{B}'} $, that is, for each vector in $\R^n$, it follows that the two matrices
 
 $$
    [T]_{\mc{C}'\leftarrow \mc{B}'} \quad \text{and} \quad

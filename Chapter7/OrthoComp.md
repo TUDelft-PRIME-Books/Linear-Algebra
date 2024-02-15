@@ -1,15 +1,17 @@
 (Sec:OrthoComp)=
+
 # Orthogonal Complements
 
 In this section, we will introduce the orthogonal complement of a subspace. This concept will help us define orthogonal projections easily.
 
 :::{prf:definition}
 
-Suppose $V$ is a subspace of $\R^{n}$. Then the **orthogonal complement** of $V$ is the set 
+Suppose $V$ is a subspace of $\R^{n}$. Then the **orthogonal complement** of $V$ is the set
 
 $$
 
 V^{\bot}=\left\{\vect{u}\in\R^{n}\mid \vect{u}\ip\vect{v}=0\text{ for all } \vect{v}\text{ in }V\right\}.
+
 
 $$
 
@@ -20,7 +22,7 @@ in other words, it is the set of all vectors that are orthogonal to all of $V$.
 ::::{prf:Proposition}
 :label: Prop:OrthoComp:OrthotoSpanningSet
 
-For a vector to be in $V^{\bot}$, it suffices that it is orthogonal to all elements in a basis of $V$ or, slightly more general, to all elements in a spanning set of $V$. 
+For a vector to be in $V^{\bot}$, it suffices that it is orthogonal to all elements in a basis of $V$ or, slightly more general, to all elements in a spanning set of $V$.
 
 ::::
 
@@ -31,7 +33,6 @@ Prove {prf:ref}`Prop:OrthoComp:OrthotoSpanningSet`.
 
 ::::
 
-
 :::{solution} Exc:OrthoComp:OrthotoSpanningSet
 :class: dropdown
 
@@ -40,7 +41,6 @@ Assume the vector $\vect{u}$ is orthogonal to every $\vect{v}_{i}$. If $\vect{v}
 :::
 
 Let us consider some simple examples.
-
 
 :::{prf:Example}
 :label: Ex:OrthoComp:OrthoCompOfVect
@@ -109,7 +109,7 @@ Both examples are illustrated in {numref}`Figure %s <Fig:OrthoComp:OrthoComp>`.
 
 :::
 
-```{figure}  Images/Fig-OrthoComp-OrthoComp.svg
+```{figure} Images/Fig-OrthoComp-OrthoComp.svg
 :name: Fig:OrthoComp:OrthoComp
 
 The orthogonal complement of a 1-dimensional subspace of $\R^{2}$ (left) and of a 2-dimensional subspace of $\R^{3}$ (right).
@@ -136,7 +136,6 @@ If $\vect{v}$ is both in $V$ and $V^{\bot}$, then $\vect{v}\ip\vect{v}=0$ so $\v
 
 As we have seen in {numref}`Sec:SubspacesRn`, the column space and null space of any $n\times m$ matrix are subspaces of $\R^{n}$ and $\R^{m}$, respectively. It turns out that the transposition ${}^{T}$ and the orthogonal complement ${}^{\bot}$ relate these two spaces to each other.
 
-
 :::{prf:proposition}
 :label: Prop:OrthoComp:OrthoComplementNulA
 
@@ -145,8 +144,8 @@ For any matrix $A$ we have $\mathrm{Col}(A^{T})^{\bot}=\mathrm{Nul}(A)$ and $\ma
 :::
 
 :::{prf:proof}
- 
-Note that the second claim is easily derived from the first by substituting $A^{T}$ for $A$. Let $\vect{r}_{1},...,\vect{r}_{n}$ be the rows of $A$. Then $\vect{r}_{1}^{T},...,\vect{r}_{n}^{T}$ are the columns of $A^{T}$. For any vector $\vect{x}$ in $\R^{m}$, we have 
+
+Note that the second claim is easily derived from the first by substituting $A^{T}$ for $A$. Let $\vect{r}_{1},...,\vect{r}_{n}$ be the rows of $A$. Then $\vect{r}_{1}^{T},...,\vect{r}_{n}^{T}$ are the columns of $A^{T}$. For any vector $\vect{x}$ in $\R^{m}$, we have
 
 $$A\vect{x}=\begin{bmatrix}\vect{r}_{1}\vect{x}\\\vdots\\\vect{r}_{n}\vect{x}\end{bmatrix}=\begin{bmatrix}\vect{r}_{1}^{T}\ip\vect{x}\\\vdots\\\vect{r}_{n}^{T}\ip\vect{x}\end{bmatrix}.$$
 
@@ -160,7 +159,7 @@ Since, for any matrix $A$, the rows of $A$ are the columns of $A^{T}$, $\mathrm{
 
 :::
 
-The strength of {prf:ref}`Prop:OrthoComp:OrthoComplementNulA` lies mainly in the fact that it allows us to actually find the orthogonal complement of a given subspace. 
+The strength of {prf:ref}`Prop:OrthoComp:OrthoComplementNulA` lies mainly in the fact that it allows us to actually find the orthogonal complement of a given subspace.
 
 :::{prf:Example}
 
@@ -222,8 +221,6 @@ $$
 
 :::
 
-
-
 :::{prf:proposition}
 
 If $V$ is a subspace of $\R^{n}$, then $\dim(V)+\dim(V^{\bot})=n$.
@@ -232,8 +229,7 @@ If $V$ is a subspace of $\R^{n}$, then $\dim(V)+\dim(V^{\bot})=n$.
 
 :::{prf:proof}
 
-
-Let $A$ be a matrix for which the columns are a basis of $V$. Then $n$ is the number of rows of $A$ which in turn is the number of columns of $A^{T}$. By {prf:ref}`Thm:BasisDim:DimensionTheorem`, $\dim(\mathrm{Col}(A^{T}))+\dim(\mathrm{Nul}(A^{T}))$ is the number of columns of $A^{T}$, which is the number of rows of $A$. Using {prf:ref}`Prop:OrthoComp:OrthoComplementNulA`, this yields 
+Let $A$ be a matrix for which the columns are a basis of $V$. Then $n$ is the number of rows of $A$ which in turn is the number of columns of $A^{T}$. By {prf:ref}`Thm:BasisDim:DimensionTheorem`, $\dim(\mathrm{Col}(A^{T}))+\dim(\mathrm{Nul}(A^{T}))$ is the number of columns of $A^{T}$, which is the number of rows of $A$. Using {prf:ref}`Prop:OrthoComp:OrthoComplementNulA`, this yields
 
 $$
 n=\dim(\mathrm{Col}(A^{T}))+\dim(\mathrm{Nul}(A^{T}))=\dim(\mathrm{Col}(A^{T}))+\dim(\mathrm{Col}(A)^{\bot}).
@@ -256,7 +252,7 @@ Let $V$ be a subspace of $\R^{n}$. For an arbitrary vector $\vect{u}$ in $\R^{n}
 
 :::{prf:proof}
 
-Let $\vect{v}_{1},...,\vect{v}_{k}$ be a basis for $V$ and let $\vect{v}_{k+1},...,\vect{v}_{n}$ be a basis for $V^{\bot}$. We claim that the vectors $\vect{v}_{1},...,\vect{v}_{k},\vect{v}_{k+1},...,\vect{v}_{n}$ are linearly independent. Indeed, if there were a linear combination 
+Let $\vect{v}_{1},...,\vect{v}_{k}$ be a basis for $V$ and let $\vect{v}_{k+1},...,\vect{v}_{n}$ be a basis for $V^{\bot}$. We claim that the vectors $\vect{v}_{1},...,\vect{v}_{k},\vect{v}_{k+1},...,\vect{v}_{n}$ are linearly independent. Indeed, if there were a linear combination
 
 $$
 c_{1}\vect{v}_{1}+\cdots+c_{k}\vect{v}_{k}+c_{k+1}\vect{v}_{k+1}+\cdots +c_{n}\vect{v}_{n}=\vect{0}
@@ -280,7 +276,7 @@ Putting $\vect{u}_{V}=c_{1}\vect{v}_{1}+\cdots+c_{k}\vect{v}_{k}$ and $\vect{u}_
 
 :::
 
-```{figure}  Images/Fig-OrthoComp-OrthoDecomp.svg
+```{figure} Images/Fig-OrthoComp-OrthoDecomp.svg
 :name: Fig:OrthoBase:OrthoDecomp
 
 A subspace $V$, a vector $\vect{u}$ and the orthogonal decomposition of $\vect{u}$ with respect to $V$.
@@ -308,7 +304,8 @@ $$
 \end{bmatrix}
 $$
 
-and let $V$ be the subspace  of $\R^{3}$ spanned by $\vect{v}_{1}$ and $\vect{v}_{2}$. Put 
+and let $V$ be the subspace of $\R^{3}$ spanned by $\vect{v}_{1}$ and $\vect{v}_{2}$. Put
+
 $$
 \vect{u}_{V}=\begin{bmatrix}
 3\\
@@ -328,23 +325,23 @@ It is easy to check that, as the notation suggests, $\vect{u}_{V}$ is in $V$ (si
 
 ## Grasple Exercises
 
-::::{grasple} 
+::::{grasple}
 :url: https://embed.grasple.com/exercises/f216b122-e2f3-4cd4-9268-7a814e12cec3?id=91429
-:label: grasple_exercise_7_1_1 
+:label: grasple_exercise_7_1_1
 :dropdown:
 :description: Find a basis for the orthogonal complement of the span.
 
 ::::
 
-::::{grasple} 
+::::{grasple}
 :url: https://embed.grasple.com/exercises/3e9132d6-c280-4361-a653-002ad50b4784?id=91433
-:label: grasple_exercise_7_1_2 
+:label: grasple_exercise_7_1_2
 :dropdown:
 :description: Find a basis for the orthogonal complement of the column space.
 
 ::::
 
-::::{grasple} 
+::::{grasple}
 :url: https://embed.grasple.com/exercises/3e9132d6-c280-4361-a653-002ad50b4784?id=91433
 :label: grasple_exercise_7_1_3
 :dropdown:

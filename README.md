@@ -4,12 +4,15 @@ The book can be read at
 https://prime.pages.ewi.tudelft.nl/openlabook
 
 # Setup
+
 Clone the repository:
+
 ```bash
 git clone --recursive https://gitlab.ewi.tudelft.nl/prime/openlabook.git
 ```
 
 Or if the repository is already cloned, download the grasple submodule like this:
+
 ```bash
 git submodule init
 git submodule update
@@ -18,14 +21,16 @@ git submodule update
 &nbsp;
 
 Then install the packages:
+
 ```bash
 pip install -r requirements.txt
 pip install sphinx-grasple/
 ```
+
 (^ Don't forget the trailing slash)
 
-
 # Usage
+
 To run once and see the result:
 
 ```bash

@@ -1,10 +1,10 @@
 .enumerated-list {
-    list-style-type: none;
-    counter-reset: enumerated-item;
+  list-style-type: none;
+  counter-reset: enumerated-item;
 }
 
 .enumerated-list li::before {
-    content: counter(enumerated-item) ".";
-    counter-increment: enumerated-item;
-    margin-right: 10px;
+  content: counter(enumerated-item) '.';
+  counter-increment: enumerated-item;
+  margin-right: 10px;
 }

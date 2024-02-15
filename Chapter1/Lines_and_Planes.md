@@ -1,9 +1,11 @@
 (Sec:LinesAndPlanes)=
-# Lines and Planes 
+
+# Lines and Planes
 
 Throughout this book we will regularly work with geometrical objects in $\mathbb{R}^n$ that are generalisations of lines and planes. In this section we will take a look at how lines and planes can be represented by various equations in $\mathbb{R}^2$ and $\mathbb{R}^3$. We will use these representations later on to obtain a better understanding of concepts like _subspaces_ and _solution sets_ of systems of equations.
 
 (SubSec:LinesAndPlanes:Plane)=
+
 ## Lines in the Plane $\mathbb{R}^2$
 
 We all know what a line looks like, but in mathematics we want to define everything in a precise way. Therefore, we will define lines in $\mathbb{R}^2$ as follows.
@@ -17,7 +19,7 @@ $$
 ax+by=c,
 $$
 
- where $a$ and $b$ are not both zero. This equation is called a **Cartesian equation** of $\mathcal{L}$.
+where $a$ and $b$ are not both zero. This equation is called a **Cartesian equation** of $\mathcal{L}$.
 
 ::::
 
@@ -148,7 +150,7 @@ $$
 \overrightarrow{PQ}=\begin{bmatrix} 6 \\ 4 \end{bmatrix}-\begin{bmatrix} 2 \\ 1 \end{bmatrix}=\begin{bmatrix} 4 \\ 3 \end{bmatrix}.
 $$
 
- If we use these vectors, then we find the following parametric equation.
+If we use these vectors, then we find the following parametric equation.
 
 $$
 \begin{bmatrix} x \\ y \end{bmatrix}=\begin{bmatrix} 2 \\ 1 \end{bmatrix}+r\begin{bmatrix} 4 \\ 3 \end{bmatrix} \qquad \textrm{$r$ in $\mathbb{R}$.}
@@ -197,8 +199,6 @@ $$
 
 Let $\mathcal{L}$ be a line in $\mathbb{R}^2$. If $\mathbf{v_0}$ is a vector on $\mathcal{L}$ and $\mathbf{n}$ is a normal vector of $\mathcal{L}$, then
 
-
-
 :::{math}
 :label: Eq:LinesAndPlanes:NormalEquationLine
 
@@ -207,7 +207,6 @@ Let $\mathcal{L}$ be a line in $\mathbb{R}^2$. If $\mathbf{v_0}$ is a vector on 
 
 will be called a **normal equation** of $\mathcal{L}$.
 ::::
-
 
 ::::{prf:example}
 
@@ -231,16 +230,15 @@ $$
 (\mathbf{v}-\mathbf{v_0})\ip\mathbf{n}=0
 $$
 
- into a Cartesian equation. Let $\mathbf{v}$ be the vector $\begin{bmatrix} x \\ y \end{bmatrix}$. Since $\mathbf{v}-\mathbf{v_0}$ is equal to $\begin{bmatrix} x-1 \\ y-7 \end{bmatrix}$ we can rewrite the normal equation of $\mathcal{L}$ as
+into a Cartesian equation. Let $\mathbf{v}$ be the vector $\begin{bmatrix} x \\ y \end{bmatrix}$. Since $\mathbf{v}-\mathbf{v_0}$ is equal to $\begin{bmatrix} x-1 \\ y-7 \end{bmatrix}$ we can rewrite the normal equation of $\mathcal{L}$ as
 
 $$
 (x-1)\cdot(-2)+(y-7)\cdot(1)=0.
 $$
 
- After some calculations we find the Cartesian equation $-2x+y=5$. In {numref}`Figure %s <Fig:LinesAndPlanes:OrthogonalLines>` you can see both lines.
+After some calculations we find the Cartesian equation $-2x+y=5$. In {numref}`Figure %s <Fig:LinesAndPlanes:OrthogonalLines>` you can see both lines.
 
 ::::
-
 
 ## Planes in the Space $\mathbb{R}^3$
 
@@ -254,7 +252,7 @@ $$
 ax+by+cz=d,
 $$
 
- where $a$, $b$ and $c$ are not all zero. This equation is called a **Cartesian equation** of $\mathcal{P}$.
+where $a$, $b$ and $c$ are not all zero. This equation is called a **Cartesian equation** of $\mathcal{P}$.
 ::::
 
 The Cartesian equation of a plane in $\mathbb{R}^3$ resembles the Cartesian equation of a line in $\mathbb{R}^2$. So, how is it that such an equation describes a plane and not a line in $\mathbb{R}^3$? We can clarify this by looking at a _normal equation_ of a plane.
@@ -305,13 +303,6 @@ This means that $Q$ is on the plane $\mathcal{P}$ through $P$ and orthogonal to 
 
 ::::
 
-
-
-
-
-
-
-
 ## Normal Equation of a Plane
 
 A line can be defined as a collection of points and as the collection of vectors that connect the origin to points on the line. Similarly, we can identify the plane $\mathcal{P}$ as the collection of all vectors $\mathbf{v}$ that connect the origin to points on $\mathcal{P}$. In this case we will say that $\mathbf{v}$ is a vector on the plane $\mathcal{P}$.
@@ -321,8 +312,7 @@ A line can be defined as a collection of points and as the collection of vectors
 Any non-zero vector $\mathbf{n}$ that is orthogonal to a plane $\mathcal{P}$ will be called a **normal vector** of that plane.
 ::::
 
-Let $\mathbf{n}$ be a normal vector for a given plane $\mathcal{P}$ and $\mathbf{v_0}$ a vector on $\mathcal{P}$. {numref}`Figure %s <Fig:LinesAndPlanes:NormalEquationPlane>` tells us that any other vector $\mathbf{v}$ is on $\mathcal{P}$ whenever 
-
+Let $\mathbf{n}$ be a normal vector for a given plane $\mathcal{P}$ and $\mathbf{v_0}$ a vector on $\mathcal{P}$. {numref}`Figure %s <Fig:LinesAndPlanes:NormalEquationPlane>` tells us that any other vector $\mathbf{v}$ is on $\mathcal{P}$ whenever
 
 $(\mathbf{v}-\mathbf{v_0})\ip\mathbf{n}=0$.
 
@@ -337,21 +327,21 @@ Let $\mathcal{P}$ be a plane in $\mathbb{R}^3$. If $\mathbf{v_0}$ is a vector on
 
 :::
 
- will be called a *normal equation* of $\mathcal{P}$.
+will be called a _normal equation_ of $\mathcal{P}$.
 
 ::::
 
 ::::{prf:remark}
 
-For 
+For
 
 $$
   \vect{n} = \begin{bmatrix}  n_1 \\  n_2 \\ n_3
             \end{bmatrix}, \quad
   \vect{v}_0 = \begin{bmatrix}  x_0 \\  y_0 \\ z_0
             \end{bmatrix}, \quad
-  \vect{v}= \begin{bmatrix}  x  \\  y  \\ z 
-            \end{bmatrix}            
+  \vect{v}= \begin{bmatrix}  x  \\  y  \\ z
+            \end{bmatrix}
 $$
 
 Equation {eq}`Eq:LinesAndPlanes:NormalEquationPlane` becomes
@@ -366,24 +356,23 @@ $$
   n_1x + n_2y + n_3z = n_1x_0 + n_2y_0 + n_3z_0,
 $$
 
-where the term  $n_1x_0 + n_2y_0 + n_3z_0$  is just a constant.
+where the term $n_1x_0 + n_2y_0 + n_3z_0$ is just a constant.
 
-The important observation is that in the  Cartesian equation
+The important observation is that in the Cartesian equation
 
 $$
   ax + by + cz = k,
 $$
 
-for a plane $\mathcal{P}$, the vector  
+for a plane $\mathcal{P}$, the vector
 
 $$
    \vect{n} = \begin{bmatrix} a \\ b \\ c  \end{bmatrix}
 $$
 
-is always a vector normal to (= perpendicular to)  the plane $\mathcal{P}$.
+is always a vector normal to (= perpendicular to) the plane $\mathcal{P}$.
 
 ::::
-
 
 ## Parametric Vector Equation of a Plane
 
@@ -394,7 +383,7 @@ Finally, let us take a look at a _parametric vector equation_ of a plane. Such a
 Each non-zero vector $\mathbf{u}$ that is parallel to a plane $\mathcal{P}$ will be called a **directional vector** of that plane.
 :::
 
-We can find directional vectors of a plane by taking  vectors that connects two distinct points in the plane. If we want to find two directional vectors for the plane $\mathcal{P}$ with Cartesian equation $2x+y+3z=5$, then we can use the point $P=(0, 2, 1)$ that we have been working with and choose two other points that satisfy $2x+y+3z=5$. We can use, for example, the points $Q=(0, 5, 0)$ and $R=(2, 1, 0)$. In {numref}`Figure %s <Fig:LinesAndPlanes:DirectionalVectorsPlane>` you can see that the vectors $\overrightarrow{PQ}$ and $\overrightarrow{PR}$ are two vectors that are parallel to the plane, but are not parallel to each other.
+We can find directional vectors of a plane by taking vectors that connects two distinct points in the plane. If we want to find two directional vectors for the plane $\mathcal{P}$ with Cartesian equation $2x+y+3z=5$, then we can use the point $P=(0, 2, 1)$ that we have been working with and choose two other points that satisfy $2x+y+3z=5$. We can use, for example, the points $Q=(0, 5, 0)$ and $R=(2, 1, 0)$. In {numref}`Figure %s <Fig:LinesAndPlanes:DirectionalVectorsPlane>` you can see that the vectors $\overrightarrow{PQ}$ and $\overrightarrow{PR}$ are two vectors that are parallel to the plane, but are not parallel to each other.
 
 :::{applet}
 :url: lines_and_planes/directional_vectors_plane
@@ -421,7 +410,7 @@ $$
 \begin{bmatrix} x \\ y \\ z \end{bmatrix}=\begin{bmatrix} x_0 \\ y_0 \\ z_0 \end{bmatrix}+r\begin{bmatrix} a_1 \\ b_1 \\ c_1  \end{bmatrix}+s\begin{bmatrix} a_2 \\ b_2 \\ c_2  \end{bmatrix} \qquad \textrm{$r, s$ in $\mathbb{R}$}
 $$
 
- will be called a **parametric vector equation** of $\mathcal{P}$.
+will be called a **parametric vector equation** of $\mathcal{P}$.
 :::
 
 :::{prf:example}
@@ -539,7 +528,7 @@ There are multiple ways to describe a line in $\mathbb{R}^3$, but for us the par
 
 :::{prf:definition}
 
-Each non-zero vector $\mathbf{u}$ that is parallel to a line $\mathcal{L}$ will be called a *directional vector* of that line.
+Each non-zero vector $\mathbf{u}$ that is parallel to a line $\mathcal{L}$ will be called a _directional vector_ of that line.
 :::
 
 Let $\mathcal{L}$ be a line in $\mathbb{R}^3$, $\mathbf{v_0}$ a vector that connects the origin to a point on the line and $\mathbf{u}$ a directional vector of $\mathcal{L}$. In {numref}`Figure %s <Fig:LinesAndPlanes:ParametricLineSpace>` we can see that each vector $\mathbf{v}$ that connects the origin to a point on the line $\mathcal{L}$ can be written as the sum of the vector $\mathbf{v_0}$ and a multiple of the vector $\mathbf{u}$. This means that $\mathbf{v}=\mathbf{v_0}+r\mathbf{u}$ for some real number $r$.
@@ -561,9 +550,8 @@ $$
 \begin{bmatrix} x \\ y \\ z \end{bmatrix}=\begin{bmatrix} x_0 \\ y_0 \\ z_0 \end{bmatrix}+r\begin{bmatrix} a \\ b \\ c \end{bmatrix} \qquad \textrm{$r$ in $\mathbb{R}$}
 $$
 
-will be called a *parametric vector equation* of $\mathcal{L}$.
+will be called a _parametric vector equation_ of $\mathcal{L}$.
 :::
-
 
 :::{prf:example}
 
@@ -582,7 +570,6 @@ $$
 is thus a possible parametric vector equation of $\mathcal{L}$.
 :::
 
-
 ## Grasple Exercises
 
 ::::{grasple}
@@ -593,15 +580,13 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 
 ::::
 
-
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/a96fb8c3-000c-4d62-be3c-36dc47ced610?id=67694
 :label: grasple_exercise_1_4_4
 :dropdown:
-:description: Give a parametric vector equation for the line  $ax+by = k$.
+:description: Give a parametric vector equation for the line $ax+by = k$.
 
 ::::
-
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/1c6242a7-85e4-4bef-b05b-4c6693170bfc?id=67268
@@ -611,16 +596,13 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 
 ::::
 
-
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/74dbf343-63db-46cf-9517-ab2694d616fb?id=71058
 :label: grasple_exercise_1_4_6
 :dropdown:
-:description: To find the intersection of  two lines from a picture.
+:description: To find the intersection of two lines from a picture.
 
 ::::
-
-
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/c86f64d5-5d64-403e-98f7-9d8e8c4b90fb?id=78903
@@ -630,7 +612,6 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 
 ::::
 
-
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/42d254e8-e577-4bb1-b365-110f9805c1cf?id=78848
 :label: grasple_exercise_1_4_8
@@ -638,7 +619,6 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 :description: To show that two lines have 0, 1 or $\infty$ points in common.
 
 ::::
-
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/2b9cb96e-caa3-4f1c-8f65-a77be3f70050?id=67065
@@ -648,7 +628,6 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 
 ::::
 
-
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/35559ca4-9c46-4d25-a6ed-d44c4eb6d33b?id=67067
 :label: grasple_exercise_1_4_10
@@ -656,7 +635,6 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 :description: To give a normal vector for a plane given by three points
 
 ::::
-
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/67cbf60d-ce34-49f0-b833-715784647873?id=67257
@@ -666,13 +644,11 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 
 ::::
 
-
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/bbb3c082-b8d1-42d6-b718-b37d5ba26363?id=67260
 :label: grasple_exercise_1_4_12
 :dropdown:
-:description: To find plane $V$ parallel to $W$  $ax+by+cz=k$ and containing a point $P$.
-
+:description: To find plane $V$ parallel to $W$ $ax+by+cz=k$ and containing a point $P$.
 
 ::::
 
@@ -687,15 +663,14 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 :url: https://embed.grasple.com/exercises/0b29e241-4c23-4321-be4c-9a7f8cd80b5c?id=67697
 :label: grasple_exercise_1_4_14
 :dropdown:
-:description: To give a parametric vector equation for  a plane  $ax+by+cz=k$.
-
+:description: To give a parametric vector equation for a plane $ax+by+cz=k$.
 
 ::::
 
-::::{grasple} 
+::::{grasple}
 :url: https://embed.grasple.com/exercises/f02eebc1-b919-4070-a87a-f04bb620cc8d?id=80872
 :label: grasple_exercise_1_4_14
 :dropdown:
-:description: To give a  cartesian equation for  a plane  containing a given point $A$ and with a given normal vector $\vect{n}$.
+:description: To give a cartesian equation for a plane containing a given point $A$ and with a given normal vector $\vect{n}$.
 
 ::::
