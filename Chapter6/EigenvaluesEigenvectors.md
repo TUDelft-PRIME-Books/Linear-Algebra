@@ -5,6 +5,7 @@
 
 ## Introduction
 
+
 In matrix algebra there are two basic equations.  One we have amply studied in {numref}`Section:LinSystems`: 
 
 $$
@@ -750,7 +751,7 @@ By definition an eigenvector cannot be the zero vector.    There is not such a r
 
 
 ::::::{prf:proposition}
-:label: Prop:EigenValues:Singularity
+:label: Prop:EigenValues:SingularMatrix
 
 A matrix $A$ is invertible if and only if 0 is not an eigenvalue of $A$.
 Equivalently: a matrix $A$ is singular (non-invertible) if and only if 0 is  an eigenvalue of $A$.
@@ -778,10 +779,10 @@ This implies that the matrix $A$ has linearly dependent columns. And that in its
 
 
 ::::::{prf:example}
-:label: Ex:EigenValues:Singularity
+:label: Ex:EigenValues:SingularMatrix
 
 The matrix $A = \begin{bmatrix} 1 & 3 \\ 2 & 6 \end{bmatrix}$
-has rank 1, so according to {prf:ref}`Prop:EigenValues:Singularity` it has eigenvalue 0.
+has rank 1, so according to {prf:ref}`Prop:EigenValues:SingularMatrix` it has eigenvalue 0.
 
 The equation  $A\vect{x} = \vect{0}$ has the nonzero solution
 $\vect{x} = \begin{bmatrix} 3 \\ -1 \end{bmatrix}$,
@@ -800,6 +801,32 @@ If the matrix $A$ is invertible, and $\lambda$ is an eigenvalue of $A$,  then $\
 
 Moreover,  if  $\vect{v}$ is an eigenvector of $A$ for eigenvalue $\lambda$, then $\vect{v}$ is also an eigenvector of $A^{-1}$ for eigenvalue $\lambda^{-1}$.
 
+
+::::::
+
+
+::::::{solution} Exc:EigenValues:EigenvaluesInverse
+:class:  dropdown
+
+Suppose the nonzero vector $\vect{v}$ is an eigenvector for the eigenvalue $\lambda$ of the invertible matrix $A$.  From {prf:ref}`Prop:EigenValues:SingularMatrix` we know that $\lambda \neq 0$. Thus from
+
+$$
+   A\vect{v} = \lambda\vect{v}
+$$
+
+it follows that 
+
+$$
+   A^{-1}A\vect{v} = \vect{v} = A^{-1}\lambda\vect{v} = \lambda A^{-1}\vect{v}.
+$$
+
+And lastly, since $\lambda \neq 0$, we may divide by $\lambda$:
+
+$$
+   \vect{v} =  \lambda A^{-1}\vect{v}  \quad \iff \quad  \frac{1}{\lambda}\vect{v} = A^{-1}\vect{v} \quad \iff \quad A^{-1}\vect{v} = \frac{1}{\lambda}\vect{v},
+$$
+
+which settles at one stroke that the (same) vector $\vect{v}$ is an eigenvector of the inverse matrix  $A^{-1}$ for the eigenvalue $\lambda^{-1}$.
 
 ::::::
 
@@ -833,5 +860,90 @@ i.e., the component of $\vect{w}$ in the direction of the first basis vector is 
 $(-1)$.
 
 In a later section we will study matrices $A$ for which such a basis of eigenvectors exists  (and call them diagonalizable).
+
+::::::
+
+
+## Grasple Exercises 
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/c99f6e1b-cec6-4be8-828f-7f93fde00a3b?id=91537
+:label: grasple_exercise_6_1_1
+:dropdown:
+:description:  To check whether a vector is an eigenvector of a matrix.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/d858b381-992c-4af3-972d-62a39c4b7a09?id=91538
+:label: grasple_exercise_6_1_2
+:dropdown:
+:description:  To check whether a vector is an eigenvector of a matrix.
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/51a282db-b59f-4bd3-b4b8-fa1f38e402cc?id=91539
+:label: grasple_exercise_6_1_3
+:dropdown:
+:description:  To check whether a vector is an eigenvector of a matrix. 
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/fcb91395-9bf7-4fbe-8cb5-100e2c2ad010?id=91540
+:label: grasple_exercise_6_1_4
+:dropdown:
+:description:  To check whether a vector is an eigenvector of a matrix. 
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/860849b2-5787-47d1-9ae8-a663123a86d6?id=91541
+:label: grasple_exercise_6_1_5
+:dropdown:
+:description:  Is a given $\lambda$ an eigenvalue of a matrix? If so, give an eigenvector.
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/fa1470cd-81c9-4926-a8a4-587939f4d891?id=91542
+:label: grasple_exercise_6_1_6
+:dropdown:
+:description:   Is a given $\lambda$ an eigenvalue of a matrix? If so, give an eigenvector.
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/2faed848-2a76-4853-a998-4167399c1f68?id=91543
+:label: grasple_exercise_6_1_7
+:dropdown:
+:description:   Is a given $\lambda$ an eigenvalue of a matrix? If so, give an eigenvector.
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/bb20d21d-7eb6-4e3e-8104-05d276883162?id=91544
+:label: grasple_exercise_6_1_8
+:dropdown:
+:description:   Is a given $\lambda$ an eigenvalue of a matrix? If so, give an eigenvector.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/79980409-fec9-4ab0-9fe1-d1a3d334bb0a?id=92492
+:label: grasple_exercise_6_1_9
+:dropdown:
+:description:   If $\vect{v}$ is an eigenvector of $A$, is it also an eigenvector of $A^T$?
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/a467e69f-6a78-4595-a22f-5b68314c04d4?id=92494
+:label: grasple_exercise_6_1_10
+:dropdown:
+:description:  If $W$ is an eigenspace of $A$, is it also an eigenspace of $2A$? And of $A^2$?  
 
 ::::::

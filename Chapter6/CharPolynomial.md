@@ -6,6 +6,8 @@ Until now we have seen how we can check whether a real number is an eigenvalue, 
 
 In this section we will show that **the eigenvalues are exactly the zeros of a polynomial function** intricately connected with the matrix $A$. So intricately that it is called the characteristic polynomial of $A$.
 
+(Subsec:EV:DefCharPoly)=
+## The definition of the characteristic polynomial
 
 ::::::{prf:proposition}
 :label: Prop:Eigenvalues:DetAminusLambdaI
@@ -294,6 +296,8 @@ contains two factors  $(\lambda - 3)$  and only one factor $(\lambda - 2)$.  In 
 
 Another natural question is how many **independent** eigenvectors  there are for an eigenvalue $\lambda$.  This we will refer to as the geometric multiplicity.
 
+(Subsec:EV:AlgGeomMultiplicity)=
+## Algebraic and geometric muliplicity
 
 ::::::{prf:definition}
 
@@ -379,29 +383,21 @@ The eigenvalue $\lambda = -1$ has both algebraic multiplicity and geometric mult
 
 The following exercise, which is  meant to shed some more light on the concepts just introduced, requires few technicalities.
 
-::::::{exercise}
-:label: Exc:EigenValues:AlgAndGeomMultiplicity
-
-Consider the matrix $A = \begin{bmatrix}1&1&0&1 \\ 0&2&0&0\\0&0&2&1 \\ 0&0&0&1 \end{bmatrix}$.
-<ul>
-<li>
-
-Find the eigenvalues of $A$ and their algebraic multiplicities.
-
-</li>
-<li>
-
-Find the geometric multiplicities.
-
-</li>
-</ul>
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/6e01d5c1-897b-44bf-bbb2-4653ff095f48?id=92498
+:label: grasple_exercise_6_1_A
+:dropdown:
+:description:  Finding eigenvalues and multiplicities for a $4\times 4$ upper triangular  matrix $A$.
 
 ::::::
 
 
-In the proof of {prf:ref}`Prop:EigenValues:CharPoly` it was mentioned that for an $n \times n$ matrix $A$ the coefficient of the highest power $\lambda^n$  is equal to  $(-1)^n$.
-In the remaining part of this subsection we will find expressions for two other coefficients of the characteristic polynomial. The results we mention are interesting in themselves, but they are not essential for the sequel.
 
+In the proof of {prf:ref}`Prop:EigenValues:CharPoly` it was mentioned that for an $n \times n$ matrix $A$ the coefficient of the highest power $\lambda^n$  is equal to  $(-1)^n$.
+In the next subsection we will find expressions for two other coefficients of the characteristic polynomial. The results we mention are interesting in themselves, but they are not essential for the sequel.
+
+(Subsec:EV:SpecPropCharPoly)=
+## Some special properties of the characteristic polynomial
 
 ::::::{prf:proposition}
 :label: Eq:EigenValues:CharPolyA
@@ -457,7 +453,11 @@ $$
 $$
 
 For the other  coefficient we will not give the slightly technical  argument for an $n\times n$ matrix.  The idea will be pretty much clear when we consider a general $3 \times 3$ matrix
-$A = \left[\begin{array}{ccc} a_{11} & a_{12} & a_{13} \\a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33}  \end{array}\right] $.
+
+$$
+ A = \left[\begin{array}{ccc} a_{11} & a_{12} & a_{13} \\a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33}  \end{array}\right].
+$$ 
+
 
 
 When we expand
@@ -482,10 +482,10 @@ are completely determined by the first term. A closer look at that term yields t
 Expanding this product further we see that
 
 $$
-(a_{11}-\lambda)(a_{22}-\lambda)(a_{33}-\lambda) = -\lambda^3 + (a_{11} + a_{22} + a_{33}) \lambda^2 +  \ldots \lambda + \ldots ,
+(a_{11}-\lambda)(a_{22}-\lambda)(a_{33}-\lambda) = -\lambda^3 + (a_{11} + a_{22} + a_{33}) \lambda^2 +  \ldots \lambda + \ldots 
 $$
 
-thus the coefficients $c_3$  and $c_2$ of $\lambda^3$  and $\lambda^2$ are indeed as stated, i.e.
+Thus the coefficients $c_3$  and $c_2$ of $\lambda^3$  and $\lambda^2$ are indeed as stated, i.e.
 
 $$
 c_3 = -1 = (-1)^3, \quad  c_2 = a_{11} + a_{22} + a_{33} = (-1)^2(a_{11} + a_{22} + a_{33}).
@@ -531,7 +531,7 @@ This is more a statement about algebra, in particular about polynomials, than ab
 The Fundamental Theorem of Algebra states that
 every polynomial $p(z)$ of degree $n$ with  coefficients in $\mathbb{C}$ has $n$ complex roots/zeros $z_1,z_2,\ldots,z_n$, counting multiplicities.   Consequently, $p(z)$ can be completely  factorized in $n$ linear factors $(z-z_i)$.
 
-For the characteristic polynomial $p(z)$ of a matrix $A$ the zeros coincide with the eigenvalues  $\lambda_i$ of $A$.
+For the characteristic polynomial $p_A(z)$ of a matrix $A$ the zeros coincide with the eigenvalues  $\lambda_i$ of $A$.
 Since the characteristic polynomial has highest coefficient $(-1)^n$ we find that
 
 $$
@@ -555,7 +555,7 @@ $$
 p_A(\lambda) = (-1)^n \lambda^n + (-1)^{n-1}\text{tr}(A) \lambda^{n-1} + \ldots + \Det{A},
 $$
 
-we read off the identities put forward in 
+we readily read off the identities put forward in 
 Equation {eq}`Eq:Eigenvalues:SumEigenvaluesAndTrace`.
 
 ::::::
@@ -568,19 +568,167 @@ The identity involving the sum gives a easy check on the eigenvalues;  with the 
 :label: Ex:Eigenvalues:SumEigenvaluesAndTrace
 
 In {prf:ref}`Ex:EigenValues:SecondCharPoly` we found that the eigenvalues of the matrix
-$A = \begin{bmatrix} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{bmatrix}$  &nbsp; are $\lambda_{1,3} = 3$, $\lambda_{2} = 2$.
+$A = \begin{bmatrix} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{bmatrix}$  &nbsp; are &nbsp; $\lambda_{1,3} = 3$, $\lambda_{2} = 2$.
 
 We see that indeed
 
 $$
-\lambda_1+\lambda_2+\lambda_3 = 3 +2 + 3 = 8 = 4+3+1 = \text{tr}(A).
+\lambda_1+\lambda_2+\lambda_3 = 3 +2 + 3 = 8 = 4+3+1 = \text{tr}(A),
 $$
 
-And also  
+and also  
 
 $$
-  \text{det}\,A = 3 \begin{vmatrix} 4 & -2 \\ 1 &  1 \end{vmatrix} = 3\cdot (4+2) = 18 =
-  \lambda_1\lambda_2\lambda_3.
+  \text{det}\,A = 3 \begin{vmatrix} 4 & -2 \\ 1 &  1 \end{vmatrix} = 3\cdot (4+2) = 18 = 3\cdot3\cdot2 =   \lambda_1\lambda_2\lambda_3.
 $$
+
+::::::
+
+The last  'mind blowing' property of the characteristic polynomial we will only illustrate by an example.
+
+::::::{prf:example}
+:label: Ex:Eigenvalues:CayleyHamilton
+
+Consider the matrix $A = \begin{bmatrix} 1 & 2 \\ 4 & 5 \end{bmatrix}$.
+Its characterictic polynomial is computed as
+
+$$
+  \det{(A-\lambda I)} = \begin{vmatrix} 1-\lambda & 2 \\ 3 & 5-\lambda \end{vmatrix}
+  = (1-\lambda)(5-\lambda) - 8= \lambda^2 - 6\lambda - 3.
+$$
+
+Now if we replace  in this last expression  $\lambda$ by the matrix $A$, where we then interpret the term $3$ as the matrix $3I$, we get
+
+$$
+ A^2 - 6A - 3I = \begin{bmatrix} 9 & 12 \\ 24 & 33 \end{bmatrix} -
+ \begin{bmatrix} 6 & 12 \\ 24 & 30 \end{bmatrix} - \begin{bmatrix} 3 & 0 \\ 0 & 3 \end{bmatrix} = \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix}.
+$$
+
+So, interpreting the constant term as we did, we have for this matrix $A$ established the property
+
+$$
+   p_A(A) = O,
+$$
+
+the zero matrix.
+
+::::::
+
+That this is not a coincidence is the content of the following theorem, the proof of which is beyond the scope of this linear algebra book. (The interested reader can of course search the internet on "Cayley-Hamilton".)
+
+::::::{prf:theorem}  Cayley-Hamilton
+:label: Thm:Eigenvalues:CayleyHamilton
+
+
+Every matrix $A$ is a zero of its characteristic polynomial.
+::::::
+
+
+## Grasple Exercises 
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/6e01d5c1-897b-44bf-bbb2-4653ff095f48?id=92498
+:label: grasple_exercise_6_2_1 
+:dropdown:
+:description:  To find the characteristic polynomial of a $2\times 2$ matrix $A$.
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/b43cd5dc-3fff-432a-bdec-d56e38c39e89?id=91450
+:label: grasple_exercise_6_2_2
+:dropdown:
+:description:  To find the eigenvalues of a $2\times 2$ matrix $A$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/b89efbb3-c5cc-4fab-874b-8dd285644ab2?id=91452
+:label: grasple_exercise_6_2_3 
+:dropdown:
+:description:  To find the eigenvalues of a $3\times 3$ matrix $A$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/137aaf98-60d5-4aab-82f4-10ea40811a7b?id=91453
+:label: grasple_exercise_6_2_4 
+:dropdown:
+:description:  To find the eigenvalues of a $3\times 3$ matrix $A$.
+
+::::::
+
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/3597a3e9-17b7-491c-89a7-4f33f1a4fb8c?id=91482
+:label: grasple_exercise_6_2_5 
+:dropdown:
+:description:  To find the eigenvalues of a $4\times 4$ matrix $A$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/9e16e7ab-87f1-448c-a52a-a8d6c1470c4b?id=91483
+:label: grasple_exercise_6_2_6
+:dropdown:
+:description:  Is an eigenvalue of a matrix $A$ always an eigenvalue of $A^T$?
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/2c30dad3-17a4-4f20-b277-fd13e0c93e9f?id=92384
+:label: grasple_exercise_6_2_7 
+:dropdown:
+:description:  Finding the geometric multiplicities of the eigenvalues of a $3\times3$ matrix $A$. 
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/e35e7cfb-2a21-4849-ae48-6c7a94e85707?id=92409
+:label: grasple_exercise_6_2_8
+:dropdown:
+:description:  Finding the geometric multiplicity of the eigenvalue of a $3\times3$ matrix $A$. 
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/eb3e8ea4-3a0b-4767-aa62-0d8b05e35dda?id=91484
+:label: grasple_exercise_6_2_9
+:dropdown:
+:description:  To find the eigenvalues and their multiplicities of an almost upper triangular $4 \times 4$ matrix $A$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/e9044c04-4bfb-474e-8823-bff6449b92ab?id=92210
+:label: grasple_exercise_6_2_10 
+:dropdown:
+:description:  To find the the geometric multiplicity of the single eigenvalue of an almost diagonal matrix $A$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/82387c7b-49c8-4438-b72c-e1d023fb2780?id=92211
+:label: grasple_exercise_6_2_11
+:dropdown:
+:description:  To find the the geometric multiplicities of the eigenvalues of an almost diagonal matrix $A$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/b846c6e6-f2c6-4d5b-bc40-adaed4cf6276?id=92490
+:label: grasple_exercise_6_2_12
+:dropdown:
+:description:  To find the 2nd and 3rd eigenvalue of $3\times 3$ matrix with known determinant and trace.
 
 ::::::
