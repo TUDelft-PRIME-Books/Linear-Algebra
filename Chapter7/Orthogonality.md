@@ -1,14 +1,17 @@
 (Sec:Orthogonality)=
+
 # Orthogonality
+
 ## Orthogonal complements
 
 :::{prf:definition}
 
-Suppose $V$ is a subspace of $\R^{n}$. Then the *orthogonal complement* of $V$ is the set 
+Suppose $V$ is a subspace of $\R^{n}$. Then the _orthogonal complement_ of $V$ is the set
 
 $$
 
 V^{\bot}=\left\{\vect{u}\in\R^{n}\mid \vect{u}\ip\vect{v}=0\text{ for all } \vect{v}\text{ in }V\right\}.
+
 
 $$
 
@@ -29,7 +32,7 @@ Then $\vect{u}$ is in $V^{\bot}$ is and only if $\vect{u}\ip\vect{v}=a_{1}+2a_{2
 
 :::
 
-```{figure}  Images/Fig-Ortho-OrthoComp.svg
+```{figure} Images/Fig-Ortho-OrthoComp.svg
 :name: Fig:Ortho:OrthoComp
 
 The orthogonal complement of a 1-dimensional subspace of $\R^{2}$ (left) and a of a 2-dimensional subspace of $\R^{3}$ (right).
@@ -62,7 +65,6 @@ Add reference to Section Sec:SubspacesRn
 
 As we have seen in Section, both the column space and null space of any $n\times m$ matrix are subspaces of $\R^{n}$ and $\R^{m}$, respectively. It turns out that the transposition ${}^{T}$ and the orthogonal complement ${}^{\bot}$ relate these two spaces to each other.
 
-
 :::{prf:proposition}
 :label: Prop:Orthogonality:OrthoComplementNulA
 
@@ -71,8 +73,8 @@ For any $n\times m$ matrix $M$ we have $\mathrm{Col}(A^{T})^{\bot}=\mathrm{Nul}(
 :::
 
 :::{prf:proof}
- 
-Note that the second claim is easily derived from the first by substituting $A^{T}$ for $A$. Let $\vect{r}_{1},...,\vect{r}_{n}$ be the rows of $A$. Then $\vect{r}_{1}^{T},...,\vect{r}_{n}^{T}$ are the columns of $A^{T}$. For any vector $\vect{x}$ in $\R^{m}$, we have 
+
+Note that the second claim is easily derived from the first by substituting $A^{T}$ for $A$. Let $\vect{r}_{1},...,\vect{r}_{n}$ be the rows of $A$. Then $\vect{r}_{1}^{T},...,\vect{r}_{n}^{T}$ are the columns of $A^{T}$. For any vector $\vect{x}$ in $\R^{m}$, we have
 
 $$A\vect{x}=\begin{bmatrix}\vect{r}_{1}\vect{x}\\\vdots\\\vect{r}_{n}\vect{x}\end{bmatrix}=\begin{bmatrix}\vect{r}_{1}^{T}\ip\vect{x}\\\vdots\\\vect{r}_{n}^{T}\ip\vect{x}\end{bmatrix}.$$
 
@@ -84,14 +86,14 @@ Now, $\vect{x}$ is in $\mathrm{Nul}(A)$ precisely when $A\vect{x}=\vect{0}$ or, 
 
 :::{prf:definition}
 
-A subset $S$ of $\R^{n}$ is called *orthogonal* if any two distinct vectors $\vect{v}_{1}$ and $\vect{v}_{2}$ in $S$ are orthogonal to each other. If $S$ is a basis for a subspace $V$ and $S$ is orthogonal, we say it is an *orthogonal basis* for $V$.
+A subset $S$ of $\R^{n}$ is called _orthogonal_ if any two distinct vectors $\vect{v}_{1}$ and $\vect{v}_{2}$ in $S$ are orthogonal to each other. If $S$ is a basis for a subspace $V$ and $S$ is orthogonal, we say it is an _orthogonal basis_ for $V$.
 
 :::
 
 :::{prf:Example}
 :label: Ex:Ortho:ExOfOrthoBase
 
-Consider the plane 
+Consider the plane
 
 $$\mathcal{P}=\left\{\begin{bmatrix}x\\y\\z\end{bmatrix}\mid x+y+z=0\right\}\text{ and the vectors }\vect{v}_{1}=\begin{bmatrix}1\\-1\\0\end{bmatrix},\quad \vect{v}_{2}=\begin{bmatrix}1\\1\\-2\end{bmatrix}.$$
 
@@ -99,7 +101,7 @@ Both $\vect{v}_{1}$ and $\vect{v}_{2}$ lie in $\mathcal{P}$. The set $\mathcal{B
 
 :::
 
-Since $\vect{0}$ is orthogonal to every vector, adding it to a set or removing it from a set does not change whether the set is orthogonal or not. 
+Since $\vect{0}$ is orthogonal to every vector, adding it to a set or removing it from a set does not change whether the set is orthogonal or not.
 
 :::{prf:proposition}
 :label: Prop:Ortho:OrthoSetLinInd
@@ -118,11 +120,11 @@ Since no $\vect{v}_{i}$ is $\vect{0}$, all $\vect{v}_{i}\ip\vect{v}_{i}$ are non
 
 :::
 
-As a consequence of {prf:ref}`Prop:Ortho:OrthoSetLinInd`, any orthogonal set that does not contain $\vect{0}$ is an orthogonal basis for its span. 
+As a consequence of {prf:ref}`Prop:Ortho:OrthoSetLinInd`, any orthogonal set that does not contain $\vect{0}$ is an orthogonal basis for its span.
 
 :::{prf:definition}
 
-An orthogonal basis is called *orthonormal* if all elements in the basis have norm $1$.
+An orthogonal basis is called _orthonormal_ if all elements in the basis have norm $1$.
 
 :::
 
@@ -135,9 +137,9 @@ If $\vect{v}_{1},...,\vect{v}_{n}$ is an orthogonal basis for a subspace $V$, th
 :::{prf:example}
 :label: Ex:Ortho:OrthonormalBase
 
-Consider the plane $\mathcal{P}$, the vectors $\vect{v}_{1},\vect{v}_{2}$ and the basis $\mathcal{B}$ from {prf:ref}`Ex:Ortho:ExOfOrthoBase`. This $\mathcal{B}$ is an orthogonal basis, but $\norm{\vect{v}_{1}}=\sqrt{2}$ and $\norm{\vect{v}_{2}}=\sqrt{6}$ so it is not orthonormal. 
+Consider the plane $\mathcal{P}$, the vectors $\vect{v}_{1},\vect{v}_{2}$ and the basis $\mathcal{B}$ from {prf:ref}`Ex:Ortho:ExOfOrthoBase`. This $\mathcal{B}$ is an orthogonal basis, but $\norm{\vect{v}_{1}}=\sqrt{2}$ and $\norm{\vect{v}_{2}}=\sqrt{6}$ so it is not orthonormal.
 
-We can remedy this by considering the basis $\mathcal{B}_{2}=\left\{\vect{u}_{1},\vect{u}_{2}\right\}$ where 
+We can remedy this by considering the basis $\mathcal{B}_{2}=\left\{\vect{u}_{1},\vect{u}_{2}\right\}$ where
 
 $$\vect{u}_{1}=\frac{\vect{v}_{1}}{\norm{\vect{v}_{1}}}=\frac{1}{\sqrt{2}}\begin{bmatrix}1\\-1\\0\end{bmatrix}\quad\text{and}\quad \vect{u}_{2}=\frac{\vect{v}_{2}}{\norm{\vect{v}_{2}}}=\frac{1}{\sqrt{6}}\begin{bmatrix}1\\1\\-2\end{bmatrix}.$$
 
@@ -171,7 +173,7 @@ by the orthogonality of $\left\{\vect{v}_{1},...,\vect{v}_{k}\right\}$. This imp
 If $\vect{v}_{1},...,\vect{v}_{k}$ is orthonormal, then $\vect{v}_{j}\ip\vect{v}_{j}=1$ for every $j$, so this reduces to $c_{j}=\vect{v}\ip\vect{v}_{j}$.
 
 :::
- 
+
 ## Orthogonal projections revisited
 
 ```{margin} TODO
@@ -185,14 +187,13 @@ In Section we have already briefly toched upon orthogonal projections in higher 
 :::{prf:definition}
 :label: Dfn:Orthogonality:OrthoProjection
 
-Let $V$ be a subspace of $\R{n}$ and let $\vect{v}_{1},...,\vect{v}_{k}$ be an orthogonal basis for $V$. For any $\vect{w}$ in $\R^{n}$, we define the *orthogonal projection* of $\vect{w}$ on $V$ as
+Let $V$ be a subspace of $\R{n}$ and let $\vect{v}_{1},...,\vect{v}_{k}$ be an orthogonal basis for $V$. For any $\vect{w}$ in $\R^{n}$, we define the _orthogonal projection_ of $\vect{w}$ on $V$ as
 
 $$\proj_{V}(w)=\frac{\vect{w}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{w}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}_{k}.$$
 
 :::
 
-
-```{figure}  Images/Fig-Ortho-DecompAs2Proj.svg
+```{figure} Images/Fig-Ortho-DecompAs2Proj.svg
 :name: Fig:Ortho:DecompAs2Proj
 
 A vector and its orthogonal projection on the subspace $V$.
@@ -220,23 +221,22 @@ This orthogonal projection can be thought of as the best approximation of $\vect
 :::{prf:Theorem}
 :label: Thm:Ortho:OrthoDecomp
 
-Suppose $V$ is a subpsace of $\R^{n}$ and $\vect{w}$ is a vector in $\R^{n}$. Then there is a unique decomposition 
+Suppose $V$ is a subpsace of $\R^{n}$ and $\vect{w}$ is a vector in $\R^{n}$. Then there is a unique decomposition
 
 $$\vect{w}=\hat{\vect{w}}+\vect{x}\quad\text{where $\hat{\vect{w}}$ is in $V$ and $\vect{x}$ is in $V^{\bot}$.}$$
 
-In fact, $\hat{\vect{w}}=\proj_{V}(\vect{w})$. This is called the *orthogonal decomposition* of $\vect{w}$ with respect to $V$.
+In fact, $\hat{\vect{w}}=\proj_{V}(\vect{w})$. This is called the _orthogonal decomposition_ of $\vect{w}$ with respect to $V$.
 
 :::
 
-
 :::{prf:proof}
 
-Fix an orthogonal basis $\vect{v}_{1},..,\vect{v}_{k}$ for $V$ and put $\vect{x}=\vect{w}-\proj_{V}(\vect{w})$. Clearly, $\proj_{V}(\vect{w})$ is in $V$. If we can show $\vect{x}\bot \vect{v}_{i}$ for any $i$, it will follow that $\vect{x}$ is in $V^{\bot}$. This follows readily: 
+Fix an orthogonal basis $\vect{v}_{1},..,\vect{v}_{k}$ for $V$ and put $\vect{x}=\vect{w}-\proj_{V}(\vect{w})$. Clearly, $\proj_{V}(\vect{w})$ is in $V$. If we can show $\vect{x}\bot \vect{v}_{i}$ for any $i$, it will follow that $\vect{x}$ is in $V^{\bot}$. This follows readily:
 
 \begin{align*}
-\vect{x}\ip \vect{v}_{i}&=\left(\vect{w}-\frac{\vect{w}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{w}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}_{k}\right)\ip\vect{v}_{i}\\
+\vect{x}\ip \vect{v}*{i}&=\left(\vect{w}-\frac{\vect{w}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{w}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}_{k}\right)\ip\vect{v}_{i}\\
 &=\vect{w}\ip\vect{v}_{i}-\frac{\vect{w}\ip\vect{v}_{i}}{\vect{v}_{i}\ip\vect{v}_{i}}(\vect{v}_{i}\ip\vect{v}_{i})=0.
-\end{align*}
+\end{align_}
 
 The only thing left to show is that this decomposition is unique. Suppose $\vect{w}=\hat{\vect{w}}_{1}+\vect{x}_{1}$ and $\vect{w}=\hat{\vect{w}}_{2}+\vect{x}_{2}$ where $\hat{\vect{w}}_{1},\hat{\vect{w}}_{2}$ are in $V$ and $\vect{x}_{1},\vect{x}_{2}$ are in $V^{\bot}$. Then
 
@@ -246,7 +246,7 @@ Since $V$ is a subspace, the left hand side is in $V$ and since $V^{\bot}$ is a 
 
 :::
 
-```{figure}  Images/Fig-Ortho-OrthoDecomp.svg
+```{figure} Images/Fig-Ortho-OrthoDecomp.svg
 :name: Fig:Ortho:OrthoDecomp
 
 A vector, its orthogonal projection on a subspace, and the difference of the two. Note that the difference between the vector and its projection on $V$ if orthogonal to $V$, i.e. it is in $V^{\bot}$.
@@ -257,7 +257,7 @@ A vector, its orthogonal projection on a subspace, and the difference of the two
 :::{prf:Proposition}
 :label: Prop:Orthogonality:BestApprox
 
-Let $V$ be a subspace of $\R^{n}$ and let $\vect{w}$ be an arbitrary vector in $\R^{n}$. Then: 
+Let $V$ be a subspace of $\R^{n}$ and let $\vect{w}$ be an arbitrary vector in $\R^{n}$. Then:
 
 <ol type="i">
 <li>
@@ -282,28 +282,32 @@ For any $\vect{v}$ in $V$, $\norm{\vect{w}-\vect{v}}\leq\norm{\vect{w}-\proj_{V}
 
 :::{prf:proof}
 
-Let $\vect{w}=\proj_{V}(\vect{w})+\vect{x}$ where $\vect{x}$ is in $V^{\bot}$. 
+Let $\vect{w}=\proj_{V}(\vect{w})+\vect{x}$ where $\vect{x}$ is in $V^{\bot}$.
 
 <ol type="i">
 <li>
 
 Since the inproduct of any vector with itself is non-negative, we find:
 
+$$
 \begin{align*}
 \norm{\vect{w}}&=\sqrt{\vect{w}\ip\vect{w}}=\sqrt{(\proj_{V}(\vect{w})+\vect{x})\ip(\proj_{V}(\vect{w})+\vect{x})}\\
 &=\sqrt{\proj_{V}(\vect{w})\ip\proj_{V}(\vect{w})+\vect{x}\ip\vect{x}}\\
 &\geq\sqrt{\proj_{V}(\vect{w})\ip\proj_{V}(\vect{w})}=\norm{\proj_{V}(\vect{w})}
 \end{align*}
+$$
 
 </li>
 <li>
 
 We have:
 
+$$
 \begin{align*}
 \vect{w}\ip\proj_{V}(\vect{w})&=(\proj_{V}(\vect{w})+\vect{x})\ip\proj_{V}(\vect{w})\\
 &=\proj_{V}(\vect{w})\ip\proj_{V}(\vect{w})\geq 0.
 \end{align*}
+$$
 
 Furthermore, $\proj_{V}(\vect{w})\ip\proj_{V}(\vect{w})=0$ implies $\proj_{V}(\vect{w})=\vect{0}$, so $\vect{w}=\vect{x}$ which is in $V^{\bot}$.
 
@@ -314,10 +318,12 @@ Furthermore, $\proj_{V}(\vect{w})\ip\proj_{V}(\vect{w})=0$ implies $\proj_{V}(\v
 
 We find, for arbitrary $\vect{v}$ in $V$:
 
+$$
 \begin{align*}
 \norm{\vect{w}-\vect{v}}&=\sqrt{(\proj_{V}(\vect{w})+\vect{x}-\vect{v})\ip(\proj_{V}(\vect{w})+\vect{x}-\vect{v})}\\
 &=\sqrt{(\proj_{V}(\vect{w})-\vect{v})\ip(\proj_{V}(\vect{w})-\vect{v})+\vect{x}\ip\vect{x}}
 \end{align*}
+$$
 
 Again using the fact that the inproduct of any vector with itself is non-negative, we conclude that this is minimal when $\proj_{V}(\vect{w})-\vect{v}=\vect{0}$, i.e. when $\proj_{V}(\vect{w})=\vect{v}$.
 

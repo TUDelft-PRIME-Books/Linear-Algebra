@@ -35,15 +35,15 @@ parts:
           - file: 'Chapter4/ChangeOfBasis.md'
       - file: 'Chapter5/intro.md'
         sections:
-          - file: "Chapter5/DeterminantsGeometric.md"
-          - file: "Chapter5/DeterminantsViaCofactors.md"
-          - file: "Chapter5/DeterminantsViaRowReduction.md"
-          - file: "Chapter5/DeterminantsExtras.md"
+          - file: 'Chapter5/DeterminantsGeometric.md'
+          - file: 'Chapter5/DeterminantsViaCofactors.md'
+          - file: 'Chapter5/DeterminantsViaRowReduction.md'
+          - file: 'Chapter5/DeterminantsExtras.md'
       - file: 'Chapter6/intro.md'
         sections:
-          - file: "Chapter6/EigenvaluesEigenvectors.md"
-          - file: "Chapter6/CharPolynomial.md"
-          - file: "Chapter6/Diagonalizability.md"
+          - file: 'Chapter6/EigenvaluesEigenvectors.md'
+          - file: 'Chapter6/CharPolynomial.md'
+          - file: 'Chapter6/Diagonalizability.md'
           - file: 'Chapter6/ComplexEigenvalues.md'
       - file: 'Chapter7/intro.md'
         sections:
@@ -64,6 +64,6 @@ parts:
   - caption: Appendices
     numbered: True
     chapters:
-      - file: "Appendices/ComplexNumbers.md"
-      - file: "Appendices/SVDProof.md"
-      - file: "Appendices/InverseMatrixTheorem.md"
+      - file: 'Appendices/ComplexNumbers.md'
+      - file: 'Appendices/SVDProof.md'
+      - file: 'Appendices/InverseMatrixTheorem.md'

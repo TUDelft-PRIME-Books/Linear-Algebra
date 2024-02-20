@@ -4,7 +4,7 @@ Suppose we have, say, three brands competing with each other in some niche of th
 
 ## Markov Chains
 
-Assume we have a certain population divided into $n$ classes, say, by the brand they use. For every person using brand $i$, there is a certain chance $p_{ji}$ that he ends up using brand $j$ after a month. If we assume for the moment that nobody leaves or enters the population, every one must end up using *some* brand. So $\sum_{j=1}^{n}p_{ji}=1$. Keeping in mind that every probability is a number between $0$ and $1$, we get to the following definition.
+Assume we have a certain population divided into $n$ classes, say, by the brand they use. For every person using brand $i$, there is a certain chance $p_{ji}$ that he ends up using brand $j$ after a month. If we assume for the moment that nobody leaves or enters the population, every one must end up using _some_ brand. So $\sum_{j=1}^{n}p_{ji}=1$. Keeping in mind that every probability is a number between $0$ and $1$, we get to the following definition.
 
 :::{prf:definition}
 
@@ -14,11 +14,13 @@ We call a vector $\vect{v}$ in $\R^{n}$ a **probability vector** if the sum of i
 
 Perhaps the chance that a customer of A remains with A after one month is $p_{11}$, the chance that he uses B after one month is $p_{21}$, and the chance that he uses C after one month is $p_{31}$. Then the probability vector associated to A will be
 
-$$\vect{p}_{1}=\begin{bmatrix}
+$$
+\vect{p}_{1}=\begin{bmatrix}
 p_{11}\\
 p_{21}\\
 p_{31}
-\end{bmatrix}.$$
+\end{bmatrix}.
+$$
 
 Clearly, for brands B and C there must be similar probability vectors, say $\vect{p}_{2}$ and $\vect{p}_{3}$. If we take these three probability vectors together, they form a matrix.
 
@@ -46,18 +48,19 @@ c_{1}
 \end{bmatrix}
 $$
 
-where $P=[\vect{p}_{1}\,\vect{p}_{2}\,\vect{p}_{3}]$ is the stochastic matrix associated to our model.  We have now found the updated state after one month.
+where $P=[\vect{p}_{1}\,\vect{p}_{2}\,\vect{p}_{3}]$ is the stochastic matrix associated to our model. We have now found the updated state after one month.
 
-Often, it is more convenient to work with percentages instead of absolute numbers. This can be easily done by dividing $a_{0}$, $b_{0}$, and $c_{0}$ by the total population $a_{0}+b_{0}+c_{0}$. In doing so, we make sure that 
+Often, it is more convenient to work with percentages instead of absolute numbers. This can be easily done by dividing $a_{0}$, $b_{0}$, and $c_{0}$ by the total population $a_{0}+b_{0}+c_{0}$. In doing so, we make sure that
 
-$$\vect{x}_{0}=\frac{1}{a_{0}+b_{0}+c_{0}}\begin{bmatrix}
+$$
+\vect{x}_{0}=\frac{1}{a_{0}+b_{0}+c_{0}}\begin{bmatrix}
 a_{0}\\
 b_{0}\\
 c_{0}
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 
 is a probability vector. It turns out that the new vector $\vect{x}_{1}$ is also a probability vector, as per the next proposition.
-
 
 :::{prf:proposition}
 :label: Prop:MarkovChains:StoMatPreservesProbVect
@@ -70,7 +73,7 @@ Suppose $P$ is a stochastic matrix. If $\vect{x}$ is a probability vector, then 
 
 Note first that every entry of a stochastic matrix or a probability vector is non-negative. Consequently, every entry of $P\vect{x}$ is also non-negative.
 
- Since $P$ is a stochastic matrix, $\sum_{i=1}^{n} P_{ij}=1$ for every $j$. Therefore,
+Since $P$ is a stochastic matrix, $\sum_{i=1}^{n} P_{ij}=1$ for every $j$. Therefore,
 
 $$
 \begin{align*}
@@ -83,7 +86,6 @@ $$
 which had to be proven.
 
 :::
-
 
 :::{prf:Remark}
 
@@ -99,7 +101,6 @@ Let $P$ be a stochastic matrix. A **Markov chain** is a sequence $\vect{x}_{0},\
 
 :::
 
-
 :::{prf:Example}
 :label: Ex:MarkovChains:MarkovChain
 
@@ -107,11 +108,13 @@ Suppose we have three brands, A, B, and C. Let us assume that 80\% of the custom
 
 This gives us the following stochastic matrix:
 
-$$P=\begin{bmatrix}
+$$
+P=\begin{bmatrix}
 0.8&0.1&0.2\\
 0.1&0.8&0.1\\
 0.1&0.1&0.7
-\end{bmatrix}.$$
+\end{bmatrix}.
+$$
 
 If we, for example, assume that the three brands start out with equal market shares, we find
 
@@ -160,7 +163,6 @@ Showing that $1$ is an eigenvalue is a very non-trivial exercise. Showing that t
 
 :::
 
-
 :::{prf:Remark}
 
 As an immediate consequence of {prf:ref}`Prop:MarkovChains:StoMat1EV`, any stochastic $n\times n$-matrix $P$ has a steady state $\vect{x}$ in $\R^{n}$. Indeed, we can find an eigenvector $\vect{v}$ of $P$ with eigenvalue $1$ and then scale it by $1/\sum_{i=1}^{n}\vect{v}_{i}$. This gives us a new vector $\vect{x}$ which is still an eigenvector with eigenvalue $1$ and for which $\sum_{i=1}^{n}\vect{x}_{i}=1$. That is, it is a steady state.
@@ -171,15 +173,18 @@ As an immediate consequence of {prf:ref}`Prop:MarkovChains:StoMat1EV`, any stoch
 
 Let us revisit the matrix
 
-$$P=\begin{bmatrix}
+$$
+P=\begin{bmatrix}
 0.8&0.1&0.2\\
 0.1&0.8&0.1\\
 0.1&0.1&0.7
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 
-from {prf:ref}`Prop:MarkovChains:StoMat1EV`. With standard computations, we find that the eigenspace of eigenvalue 1 is spanned by 
+from {prf:ref}`Prop:MarkovChains:StoMat1EV`. With standard computations, we find that the eigenspace of eigenvalue 1 is spanned by
 
-$$\vect{v}=\begin{bmatrix}
+$$
+\vect{v}=\begin{bmatrix}
 5\\
 4\\
 3
@@ -187,13 +192,14 @@ $$\vect{v}=\begin{bmatrix}
 5\\
 4\\
 3
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 
 is a steady state for $P$.
 
 :::
 
-There may, in general, be many steady states for a Markov chain. In the most extreme case, where the probability matrix is $I_{n}$, *every* state is a steady state. Why is this? Suppose we have three brands ($1,2,$ and $3$) and $P_{ij}$ is the probability that a customer switches from brand $i$ to brand $j$ after $1$ month. Then $P=I_{3}$ means that no customer ever switches, so the starting market shares, whatever they are, will be the same as the final market shares. 
+There may, in general, be many steady states for a Markov chain. In the most extreme case, where the probability matrix is $I_{n}$, _every_ state is a steady state. Why is this? Suppose we have three brands ($1,2,$ and $3$) and $P_{ij}$ is the probability that a customer switches from brand $i$ to brand $j$ after $1$ month. Then $P=I_{3}$ means that no customer ever switches, so the starting market shares, whatever they are, will be the same as the final market shares.
 
 However, if it is at all possible, for every two brands $i$ and $j$, that a customer of $i$ ends up using $j$ after some time, then something remarkable happens: there is only one steady state and, no matter what the starting market shares are, they will converge towards this single steady state. That is the content of {prf:ref}`Thm:MarkovChains:PerronFrobenius`. But first some terminology.
 
@@ -205,12 +211,11 @@ A stochastic matrix is called **regular** if there is some natural number $k$ su
 
 :::{prf:definition}
 
-Let $\vect{x}$ be a vector and let $\vect{x}_{0},\vect{x}_{1},\vect{x}_{2},...$ be a sequence of vectors. We say that the sequence $(\vect{x}_{n})_{n\text{ in }\mathbb{N}}$ **converges** to $\vect{x}$ if the sequence of real numbers $(\norm{\vect{x_{n}}-\vect{x}})_{n\text{ in }\mathbb{N}}$ converges to $0$. 
+Let $\vect{x}$ be a vector and let $\vect{x}_{0},\vect{x}_{1},\vect{x}_{2},...$ be a sequence of vectors. We say that the sequence $(\vect{x}_{n})_{n\text{ in }\mathbb{N}}$ **converges** to $\vect{x}$ if the sequence of real numbers $(\norm{\vect{x_{n}}-\vect{x}})_{n\text{ in }\mathbb{N}}$ converges to $0$.
 
 :::
 
 Intuitively, $(\vect{x}_{n})_{n\text{ in }\mathbb{N}}$ converges to $\vect{x}$ if the distance between $\vect{x}$ and $\vect{x}_{n}$ becomes arbitrarily small for large enough $n$. In other words, if $\vect{x}_{n}$ comes arbitrarily close to $\vect{x}$.
-
 
 :::{prf:Theorem} Perron-Frobenius
 :label: Thm:MarkovChains:PerronFrobenius
@@ -227,7 +232,6 @@ The proof is quite complicated and falls outside the scope of this text.
 
 Note that regularity is a sufficient but not a necessary condition for a stochastic matrix to have a single steady state. This can be seen in {prf:ref}`Ex:MarkovChains:MarkovChainonNodes`.
 
-
 ::::{prf:example}
 :label: Ex:MarkovChains:MarkovChainonNodes
 
@@ -240,7 +244,7 @@ The problem from {prf:ref}`Ex:MarkovChains:MarkovChainonNodes` illustrated.
 
 :::
 
- Suppose four nodes are connected in a circle. One move can get us from a given node to a neighbouring node. If we make $k$ random moves, where will we end up with what probability? We can model this problem with a stochastic matrix $P$, for which the $i,j$-th entry is the probability of getting from the $i$-th to the $j$-th node in one move. This gives us 
+Suppose four nodes are connected in a circle. One move can get us from a given node to a neighbouring node. If we make $k$ random moves, where will we end up with what probability? We can model this problem with a stochastic matrix $P$, for which the $i,j$-th entry is the probability of getting from the $i$-th to the $j$-th node in one move. This gives us
 
 $$
 P=\begin{bmatrix}
@@ -256,7 +260,7 @@ P=\begin{bmatrix}
 \end{bmatrix},
 $$
 
-$P^{3}=P$, $P^{4}=P^{2}$ etc. Since every power of $P$ contains some $0$ entry, $P$ is not regular. Nevertheless, there is only a single steady state, namely 
+$P^{3}=P$, $P^{4}=P^{2}$ etc. Since every power of $P$ contains some $0$ entry, $P$ is not regular. Nevertheless, there is only a single steady state, namely
 
 $$
 \vect{x}=\begin{bmatrix}\frac{1}{4}\\\frac{1}{4}\\\frac{1}{4}\\\frac{1}{4}\end{bmatrix}.
@@ -310,13 +314,14 @@ P^{2}=\frac{1}{36}\begin{bmatrix}
 4&15&0&15\\
 12&0&18&0\\
 4&15&0&15
-\end{bmatrix}\quad\text{and}\quad 
+\end{bmatrix}\quad\text{and}\quad
 P^{3}=\frac{1}{108}\begin{bmatrix}
 28&51&18&51\\
 34&6&45&6\\
 12&45&0&45\\
 34&6&45&6
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 
 which still contain $0$ entries, but also
 
@@ -342,7 +347,7 @@ $$
 \end{bmatrix}.
 $$
 
-From it, we can read off that, should we let this process continue for a long time, we will have a $1$ in $3$ chance of landing in node $1$ and a $2$ in $9$ chance for each other node. 
+From it, we can read off that, should we let this process continue for a long time, we will have a $1$ in $3$ chance of landing in node $1$ and a $2$ in $9$ chance for each other node.
 
 For example, if we start in node $3$, we find the following process:
 

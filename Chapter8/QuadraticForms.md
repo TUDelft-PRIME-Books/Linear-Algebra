@@ -1,37 +1,36 @@
 (Sec:QuadraticForm)=
+
 # Quadratic Forms
 
 (Subsec:Terminology)=
+
 ## Introduction and Terminology
 
-The simplest functions from $\R^n$ to $\R$ are linear functions 
+The simplest functions from $\R^n$ to $\R$ are linear functions
 
 $$
    f(x_1,\ldots,x_n) = \sum_{i=1}^n a_ix_i +b \, =\, a_1x_2 + a_2x_2 + \ldots + a_nx_n + b.
 $$
 
- 
+In short $f(\mathbf{x}) = \mathbf{a}^T\mathbf{x} + b$, for some vector $\mathbf{a}$ in $\R^n$ and some number $b$ in $\R$.
 
-In short  $f(\mathbf{x}) = \mathbf{a}^T\mathbf{x} + b$,  for some vector $\mathbf{a}$ in $\R^n$ and some number $b$ in $\R$.
+This is the common notion of linearity in calculus. To be linear in the linear algebra sense the constant term must be zero.
 
-This is the common notion of linearity in calculus.  To be linear in the linear algebra sense the constant term must be zero.
-
-After that come the *quadratic functions*  
+After that come the _quadratic functions_
 
 ::::{math}
 :label: Eq:QuadForms:GeneralQuadForm
 
-   q(x_1,\ldots,x_n) = \sum_{i,j=1}^{n} a_{ij}x_ix_j + \sum_{i=1}^{n} b_ix_i + c,
+q(x*1,\ldots,x_n) = \sum*{i,j=1}^{n} a*{ij}x_ix_j + \sum*{i=1}^{n} b_ix_i + c,
 ::::
 
-where all parameters  $a_{ij}$, $b_i$ and $c$ are real numbers.
+where all parameters $a_{ij}$, $b_i$ and $c$ are real numbers.
 
-A quadratic function in the two variables  $x_1$, $x_2$  thus becomes
+A quadratic function in the two variables $x_1$, $x_2$ thus becomes
 
 $$
    q(x_1,x_2) = a_{11}x_1^2  + a_{12}x_1x_2 + a_{21}x_2x_1 + a_{22}x_2^2 + b_1x_1 + b_2x_2 + c,
 $$
-
 
 Note that this can be written as
 
@@ -39,35 +38,34 @@ $$
   q(x_1,x_2) = \begin{bmatrix} x_1 & x_2 \end{bmatrix} \begin{bmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} + \begin{bmatrix} b_1 & b_2 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} + c.
 $$
 
-
 In general, a shorthand representation of Equation {eq}`Eq:QuadForms:GeneralQuadForm` becomes
 
 $$
  q(\mathbf{x}) = \mathbf{x}^TA\mathbf{x} + \mathbf{b}^T\mathbf{x} + c,
 $$
- 
+
 for an $n\times n$ matrix $A$, a vector $\vect{b}$ in $\R^n$, and a number $c$ in $\R$.
 
-The part  $\mathbf{x}^TA\mathbf{x}$ is called a **quadratic form**.
+The part $\mathbf{x}^TA\mathbf{x}$ is called a **quadratic form**.
 
 ::::{prf:example}
 :label: Ex:QuadForms:Diagonalize
 
-For the matrix  $A = \begin{bmatrix} 1 & 2 \\ 4 & 3 \end{bmatrix}$  the corresponding quadratic form is 
+For the matrix $A = \begin{bmatrix} 1 & 2 \\ 4 & 3 \end{bmatrix}$ the corresponding quadratic form is
 
 $$
   \begin{array}{rcl}
-  q(\vect{x}) =  \begin{bmatrix} x_1 & x_2 \end{bmatrix} \begin{bmatrix} 1 & 2 \\ 4& 5 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} 
+  q(\vect{x}) =  \begin{bmatrix} x_1 & x_2 \end{bmatrix} \begin{bmatrix} 1 & 2 \\ 4& 5 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}
    &=& \begin{bmatrix} x_1 & x_2 \end{bmatrix} \begin{bmatrix} x_1 + 2x_2 \\ 4x_1+ 5x_2 \end{bmatrix} \\
    &=& x_1^2 + (2+4)x_1x_2 + 5x_2^2 \\
    &=& x_1^2 + 6x_1x_2 + 5x_2^2.
    \end{array}
 $$
 
-Note that the last expression does not uniquely determine the matrix.  We can split the coefficient $6$ of the term  $x_1x_2$ in a different way and will end up with a different matrix.  If we distribute it evenly over  $x_1x_2$ and $x_2x_1$ we get a *symmetric* matrix.
+Note that the last expression does not uniquely determine the matrix. We can split the coefficient $6$ of the term $x_1x_2$ in a different way and will end up with a different matrix. If we distribute it evenly over $x_1x_2$ and $x_2x_1$ we get a _symmetric_ matrix.
 
 $$
-  \begin{array}{rcl}  
+  \begin{array}{rcl}
   x_1^2 + 6x_1x_2 + 5x_2^2 &=& x_1^2 + (3+3)x_1x_2 + 5x_2^2 \\
    &=& x_1^2 + 3x_1x_2 + 3x_2x_1 + 5x_2^2 \\
    &=& x_1(x_1 + 3x_2) + x_2(3x_1 + 5x_2) \\
@@ -75,24 +73,23 @@ $$
   &=&\begin{bmatrix} x_1 & x_2 \end{bmatrix} \begin{bmatrix} 1 & 3 \\ 3 & 5 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}.
    \end{array}
 $$
+
 ::::
 
 The above example leads to the first proposition about quadratic forms.
 
 ::::{prf:proposition}
-:label:  Prop:QuadForms:SymmMatrixA
-Every  quadratic form $q(\mathbf{x})$  can be written uniquely as  
+:label: Prop:QuadForms:SymmMatrixA
+Every quadratic form $q(\mathbf{x})$ can be written uniquely as
 
 $$
   q(\mathbf{x}) = \mathbf{x}^TA\mathbf{x}
 $$
- 
-for a *symmetric* matrix $A$.
 
-This symmetric matrix $A$ is then called **the matrix of the quadratic form**. 
+for a _symmetric_ matrix $A$.
+
+This symmetric matrix $A$ is then called **the matrix of the quadratic form**.
 ::::
-
-
 
 ::::{prf:example}
 
@@ -102,86 +99,81 @@ $$
     q(x_1,x_2,x_3) = x_1^2 + 2x_2^2 + 5 x_3^2  - 4 x_1x_2 + 6 x_2x_3.
 $$
 
-So we need a symmmetric matric  $A = \begin{bmatrix} a_{11} & a_{12} & a_{13} \\ 
+So we need a symmmetric matric $A = \begin{bmatrix} a_{11} & a_{12} & a_{13} \\ 
                                                      a_{12} & a_{22} & a_{23} \\
                                                      a_{13} & a_{23} & a_{33}
                                      \end{bmatrix}$.
 
-From  
-
+From
 
 $$
- 
+
   \mathbf{x}^TA\mathbf{x} =  a_{11}x_1^2 + a_{22}x_2^2 + a_{33}x_3^2 + 2a_{12}x_1x_2 + 2a_{13}x_1x_3 + 2a_{23}x_2x_3
 $$
 
-we read off 
+we read off
 
-$$ 
+$$
 a_{11} = 1, \,  a_{22} = 2, \,  a_{33} = 5, \,\,\text{and}\,\,
  a_{12} = -2, \,  a_{13} = 0, \,  a_{23} = 3.
 $$
 
-So  $A = \begin{bmatrix} 1 & -2 & 0 \\ 
+So $A = \begin{bmatrix} 1 & -2 & 0 \\ 
                         -2 &  2 & 3 \\
                          0 &  3 & 5 
          \end{bmatrix}$.
 
 ::::
 
-
-
-If we restrict ourselves to two variables we see that 
-the graph of a linear function  $z = a_1x_1 + a_2x_2 + b$ is a plane.
-
+If we restrict ourselves to two variables we see that
+the graph of a linear function $z = a_1x_1 + a_2x_2 + b$ is a plane.
 
 :::{figure} Images/Fig-QuadForms-Plane1.svg
 :name: Fig:QuadForms:Plane1
 
-The plane  $z = \frac13x_1 - x_2 +2$
+The plane $z = \frac13x_1 - x_2 +2$
 :::
 
-
 The graph of a quadratic function is a curved surface.
-{numref}`Figure %s <Fig:QuadForms:QuadSurface1>`  and 
+{numref}`Figure %s <Fig:QuadForms:QuadSurface1>` and
 {numref}`Figure %s <Fig:QuadForms:QuadSurface2>` show two of these quadratic surfaces.
 
 :::{figure} Images/Fig-QuadForms-QuadSurface1.svg
 :name: Fig:QuadForms:QuadSurface1
 
-The surface  $z = -\frac13x_1^2 + \frac13x_2^2 + 2 $
+The surface $z = -\frac13x_1^2 + \frac13x_2^2 + 2 $
 :::
 
 :::{figure} Images/Fig-QuadForms-QuadSurface2.svg
 :name: Fig:QuadForms:QuadSurface2
 
-The surface  $z = -\frac12x_1^2 - \frac14x_2^2 + x_1 - x_2 + 2$
+The surface $z = -\frac12x_1^2 - \frac14x_2^2 + x_1 - x_2 + 2$
 :::
 
-The shape of the surfaces is in most cases determined by the quadratic part  $\vect{x}^TA\vect{x}$.  The linear part is then only relevant for the position.
+The shape of the surfaces is in most cases determined by the quadratic part $\vect{x}^TA\vect{x}$. The linear part is then only relevant for the position.
 
 ::::{prf:example}
-:label:  Es:QuadForms:Shift
+:label: Es:QuadForms:Shift
 
-   Consider the quadratic surface  described by  
+Consider the quadratic surface described by
 
 $$
    z = x_1^2 + 2x_1x_2 + 3 x_2^2.
 $$
 
-We will we apply the shift  
+We will we apply the shift
 
-$$ 
+$$
 \tilde{x}_1 = x_1-3,  \,\, \tilde{x}_2 = x_2 + 2,
 $$
 
 so
 
 $$
- x_1 =  \tilde{x}_1+3, \,\,x_2 = \tilde{x}_2- 2.  
+ x_1 =  \tilde{x}_1+3, \,\,x_2 = \tilde{x}_2- 2.
 $$
 
-In the new variables  $(\tilde{x}_1,\tilde{x}_2)$  we get
+In the new variables $(\tilde{x}_1,\tilde{x}_2)$ we get
 
 $$
    \begin{array}[t]{rcl} z &=&(\tilde{x}_1+3)^2 + 2(\tilde{x}_1+3)(\tilde{x}_2- 2) + 3 (\tilde{x}_2- 2)^2  \\
@@ -189,7 +181,7 @@ $$
    \end{array}
 $$
 
-Note that the quadratic parts are the same, 
+Note that the quadratic parts are the same,
 
 $$
 x_1^2 + 2x_1x_2 - 3 x_2^2 \quad \text{versus} \quad \tilde{x}_1^2 + 2\tilde{x}_1\tilde{x}_2 - 3 \tilde{x}_2^2.
@@ -197,53 +189,51 @@ $$
 
 ::::
 
-
-
 ::::{prf:example}
 
-The surfaces  defined by
+The surfaces defined by
 
 $$
    \mathcal{S}_1: z = 2x_1^2 - 2x_1x_2 + x_2^2  \quad \text{and} \quad
    \mathcal{S}_2: z = 2x_1^2 - 2x_1x_2 + x_2^2 + 8x - 6y + 4
 $$
 
-are shifted versions of the same surface.  Namely,
+are shifted versions of the same surface. Namely,
 
 $$
    2x_1^2 - 2x_1x_2 + x_2^2 + 8x - 6y + 4 = 2(x_1+1)^2 - 2(x_1+1)(x_2-2) + (x_2-2)^2 - 6.
 $$
 
-Thus  $\mathcal{S}_2$  is also described by
+Thus $\mathcal{S}_2$ is also described by
 
 $$
-  z + 6 = 2(x_1+1)^2 - 2(x_1+1)(x_2-2) + (x_2-2)^2 
+  z + 6 = 2(x_1+1)^2 - 2(x_1+1)(x_2-2) + (x_2-2)^2
 $$
 
-This means that if $\mathcal{S}_1$ is translated over the vector 
-$\left[\begin{array}{c} -1 \\ 2 \\ -6 \end{array}\right]$ it becomes the  surface $\mathcal{S}_2$.
+This means that if $\mathcal{S}_1$ is translated over the vector
+$\left[\begin{array}{c} -1 \\ 2 \\ -6 \end{array}\right]$ it becomes the surface $\mathcal{S}_2$.
 ::::
 
-For the rest of the section we will therefore only look at the quadratic part $\vect{x}^TA\vect{x}$.  
+For the rest of the section we will therefore only look at the quadratic part $\vect{x}^TA\vect{x}$.
 
-One of the  simplest quadratic forms results when we take $A = I = I_n$, the identity matrix.
+One of the simplest quadratic forms results when we take $A = I = I_n$, the identity matrix.
 Then we have
 
 $$
   q(\vect{x}) = \vect{x}^TI_n\vect{x} = \vect{x}^T\vect{x} =x_1^2 + x_2^2 + \ldots + x_n^2 = \vect{x}\ip\vect{x}.
 $$
 
-For this quadratic form, it is clear that it will only take on nonnegative values. And that 
+For this quadratic form, it is clear that it will only take on nonnegative values. And that
 
 $$
    q(\vect{x}) = 0   \quad \iff \quad  \vect{x}=\vect{0}.
 $$
 
-Such a quadratic form is called *positive definite*.
+Such a quadratic form is called _positive definite_.
 In the next subsection we will learn how to find out whether an arbitrary quadratic form has this property.
 
-
 (Subsec:SignOfQuadForm)=
+
 ## Diagonalization of quadratic forms
 
 Let us first consider an example, to get some feeling for what is going on.
@@ -254,18 +244,18 @@ Let us first consider an example, to get some feeling for what is going on.
 Consider the quadratic form
 
 $$
-   q(x_1,x_2) = x_1^2 + 4x_1x_2 + 3x_2^2 = 
+   q(x_1,x_2) = x_1^2 + 4x_1x_2 + 3x_2^2 =
    \begin{bmatrix}x_1 & x_2 \end{bmatrix} \begin{bmatrix}1 & 2 \\ 2 & 3 \end{bmatrix}\begin{bmatrix}x_1 \\ x_2 \end{bmatrix} = \vect{x}^TA\vect{x} .
 $$
 
 At first sight you might think that this quadratic form only takes on nonnegative values.
-One way to show that this is not actually true is by *completing squares*.
+One way to show that this is not actually true is by _completing squares_.
 
 $$
   x_1^2 + 4x_1x_2 + 3x_2^2 = (x_1 + 2x_2)^2 - 4x_2^2 + 3x_2^2 = (x_1 + 2x_2)^2 - x_2^2.
 $$
 
-For the last expression, that does not contain a *cross term*, we can see how we can get a negative outcome. We can make the first term equal to $0$ by taking  $x_2 = 1$ and $x_1 = -2$,  and then have 
+For the last expression, that does not contain a _cross term_, we can see how we can get a negative outcome. We can make the first term equal to $0$ by taking $x_2 = 1$ and $x_1 = -2$, and then have
 
 $$
   q(x_1,x_2) = q(-2,1) = (-2+2\cdot1)^2 - 1^2 = -1 < 0.
@@ -274,13 +264,13 @@ $$
 ::::
 
 One way to describe in a more abstract/general way what we did in {prf:ref}`Ex:QuadForms:CompleteSquares` is the following.
-We can introduce new variables  $y_1, y_2$ via the *substitution*
+We can introduce new variables $y_1, y_2$ via the _substitution_
 
 $$
    \left\{ \begin{array}{rr}
               y_1 =& x_1 + 2x_2 \\
               y_2 =& x_2.
-            \end{array}  
+            \end{array}
       \right.
 $$
 
@@ -290,22 +280,22 @@ $$
       \vect{y} = \left[\begin{array}{c} y_1  \\ y_2 \end{array}\right] =  \left[\begin{array}{cc} 1 & 2  \\ 0 & 1 \end{array}\right]\left[\begin{array}{c} x_1  \\ x_2 \end{array}\right] = M\vect{x}.
 $$
 
-Then  in terms of the new variables the quadratic form becomes
+Then in terms of the new variables the quadratic form becomes
 
 $$
-  q(\vect{x}) = (x_1 + 2x_2)^2 - x_2^2 = y_1^2 - y_2^2 = 
+  q(\vect{x}) = (x_1 + 2x_2)^2 - x_2^2 = y_1^2 - y_2^2 =
   \begin{bmatrix}y_1 & y_2 \end{bmatrix} \begin{bmatrix}1  & 0 \\ 0 &-1 \end{bmatrix}\begin{bmatrix}y_1 \\ y_2 \end{bmatrix} = \vect{y}^TD\vect{y}.
 $$
 
 <BR>
 
 Actually, it proves slightly advantageous to express the substitution as
-$\vect{x} = P\vect{y}$ for an invertible matrix $P$.  We then have the following proposition.
+$\vect{x} = P\vect{y}$ for an invertible matrix $P$. We then have the following proposition.
 
-::::{prf:proposition}  Quadratic form under a substitution
+::::{prf:proposition} Quadratic form under a substitution
 :label: Prop:QuadForms:Substitution
 
-The substitution  $\vect{x} = P\vect{y}$  brings the quadratic form  
+The substitution $\vect{x} = P\vect{y}$ brings the quadratic form
 
 $$
   q(\vect{x}) = \vect{x}^TA\vect{x}
@@ -319,17 +309,16 @@ $$
 
 ::::
 
-
 ::::{prf:proof}
 
-If  we put  $\vect{x} = P\vect{y}$  we get
+If we put $\vect{x} = P\vect{y}$ we get
 
 $$
     q(\vect{x}) = \vect{x}^TA\vect{x} =
       (P\vect{y})^TA(P\vect{y}) = \vect{y}^TP^T A P \vect{y}.
 $$
 
-So in terms of $\vect{y}$  we have the quadratic form
+So in terms of $\vect{y}$ we have the quadratic form
 
 $$
    \tilde{q}(\vect{y}) = \vect{y}^T \tilde{A} \vect{y}
@@ -340,11 +329,11 @@ where
 $$
    \tilde{A} = P^T A P.
 $$
+
 ::::
 
-
 ::::{prf:example}
-:label:  Ex:QuadForms:CompleteSquaresCtd
+:label: Ex:QuadForms:CompleteSquaresCtd
 
 In {prf:ref}`Ex:QuadForms:CompleteSquares` we considered the substitution
 
@@ -356,7 +345,7 @@ or, equivalently
 
 $$
   \vect{x} = \left[\begin{array}{cc} 1 & 2  \\ 0 & 1 \end{array}\right]^{-1}\vect{y} =
-             \left[\begin{array}{cc} 1 & -2  \\ 0 & 1 \end{array}\right]\vect{y} = P \vect{y} 
+             \left[\begin{array}{cc} 1 & -2  \\ 0 & 1 \end{array}\right]\vect{y} = P \vect{y}
 $$
 
 to the quadratic form
@@ -364,7 +353,6 @@ to the quadratic form
 $$
   q(\vect{x}) = \vect{x}^T\left[\begin{array}{cc} 1 & 2  \\ 2 & 3 \end{array}\right]\vect{x}.
 $$
-
 
 We then have
 
@@ -387,47 +375,46 @@ This agrees with what we derived in {prf:ref}`Ex:QuadForms:CompleteSquares`.
 ::::
 
 The technique of completing the squares is one way to 'diagonalize' a quadratic form. It may be turned into an algotithm that also works for quadratic forms in $n$ variables, but
-we will not pursuit that track.  There is a route that is more in line with the properties of symmetric matrices.  
+we will not pursuit that track. There is a route that is more in line with the properties of symmetric matrices.
 
-Suppose  $A$ is a symmetric matrix.  We have seen (cf. {prf:ref}`Thm:SymmetricMat:OrthogDiag`)  that it can be written as
+Suppose $A$ is a symmetric matrix. We have seen (cf. {prf:ref}`Thm:SymmetricMat:OrthogDiag`) that it can be written as
 
 $$
 A = QDQ^{-1}
 $$
 
-for an orthogonal matrix $Q$.  The diagonal matrix  $D$ has the eigenvalues of $A$ on its diagonal.
+for an orthogonal matrix $Q$. The diagonal matrix $D$ has the eigenvalues of $A$ on its diagonal.
 
-Since $Q$  is an orthogonal matrix, we have
+Since $Q$ is an orthogonal matrix, we have
 
 $$
    A = QDQ^{-1} = QDQ^T.
 $$
 
-If we compare this to {prf:ref}`Prop:QuadForms:Substitution`  the following proposition results.
+If we compare this to {prf:ref}`Prop:QuadForms:Substitution` the following proposition results.
 
-::::{prf:proposition} 
+::::{prf:proposition}
 :label: Prop:QuadForms:Diagonalize
 
-Suppose $q(\vect{x})$ is a quadratic form with matrix  $A$,  i.e., 
+Suppose $q(\vect{x})$ is a quadratic form with matrix $A$, i.e.,
 
 $$
     q(\vect{x}) = \vect{x}^TA\vect{x}.
 $$
 
-Let  $Q$ be an orthogonal matrix diagonalizing $A$. <BR> 
-Applying the substitution  $\vect{x} = Q\vect{y}$  then yields the quadratic form
+Let $Q$ be an orthogonal matrix diagonalizing $A$. <BR>
+Applying the substitution $\vect{x} = Q\vect{y}$ then yields the quadratic form
 
 $$
   \vect{y}^TD\vect{y} = \lambda_1y_1^2 + \lambda_2y_2^2 + \ldots + \lambda_ny_n^2,
 $$
 
-where $\lambda_1, \ldots, \lambda_n$ are the *eigenvalues* of the matrix $A$.
+where $\lambda_1, \ldots, \lambda_n$ are the _eigenvalues_ of the matrix $A$.
 ::::
 
 ::::{prf:proof}
 
-
-If we make the substitution  $\vect{x} = Q\vect{y}$  we find that
+If we make the substitution $\vect{x} = Q\vect{y}$ we find that
 
 $$
   \vect{x}^TA\vect{x} = (Q\vect{y})^TQDQ^{-1}(Q\vect{y}) = \vect{y}^TQ^TQD
@@ -437,25 +424,24 @@ $$
 The last expression is indeed of the form
 
 $$
-  \vect{y}^T\begin{bmatrix} 
+  \vect{y}^T\begin{bmatrix}
                  \lambda_1 & 0 & \ldots & 0 \\
                  0 & \lambda_2 & \ldots & 0 \\
-                 \vdots & \vdots & \ddots & \vdots \\  
+                 \vdots & \vdots & \ddots & \vdots \\
                  0 & 0 & \ldots & 0
-            \end{bmatrix}\vect{y} = 
-            \lambda_1y_1^2 + \lambda_2y_2^2 + \ldots + \lambda_ny_n^2, 
+            \end{bmatrix}\vect{y} =
+            \lambda_1y_1^2 + \lambda_2y_2^2 + \ldots + \lambda_ny_n^2,
 $$
 
-where  $\lambda_1,\lambda_2, \ldots, \lambda_n$  are the eigenvalues of $A$.
+where $\lambda_1,\lambda_2, \ldots, \lambda_n$ are the eigenvalues of $A$.
 
 ::::
 
 Let us see how the construction of {prf:ref}`Prop:QuadForms:Diagonalize` works out in an earlier example.
 
-
 ::::{prf:example}
 
-Consider again the matrix  $A = \left[\begin{array}{cc} 1 & 2  \\ 2 & 3 \end{array}\right]$  of {prf:ref}`Ex:QuadForms:CompleteSquaresCtd`.
+Consider again the matrix $A = \left[\begin{array}{cc} 1 & 2  \\ 2 & 3 \end{array}\right]$ of {prf:ref}`Ex:QuadForms:CompleteSquaresCtd`.
 
 Its characteristic polynomial is given by
 
@@ -463,15 +449,14 @@ $$
   p_A(\lambda) = (1-\lambda)(3-\lambda)-4 = \lambda^2 - 4\lambda - 1.
 $$
 
-The eigenvalues  are
+The eigenvalues are
 
 $$
    \lambda_1 = 2 + \sqrt{5}, \quad \lambda_2 = 2 + \sqrt{5}.
 $$
 
-So  if we take $Q = \begin{bmatrix} \vect{q}_1 & \vect{q}_2 \end{bmatrix}$, where
-$\vect{q}_1$ and $\vect{q}_2$ are corresponding eigenvectors of unit length,  we find that the substitution  $\vect{x} = Q\vect{y}$ leads to 
-
+So if we take $Q = \begin{bmatrix} \vect{q}_1 & \vect{q}_2 \end{bmatrix}$, where
+$\vect{q}_1$ and $\vect{q}_2$ are corresponding eigenvectors of unit length, we find that the substitution $\vect{x} = Q\vect{y}$ leads to
 
 $$
   \vect{x}^TA\vect{x}  \,\stackrel{\scriptsize \vect{x} = Q\vect{y}}{\longrightarrow}\,
@@ -482,131 +467,131 @@ Since $(2 + \sqrt{5})> 0$ and $(2 - \sqrt{5})<2-2=0$ we may again conclude that 
 
 ::::
 
-
 ::::{prf:remark}
- In {prf:ref}`Ex:QuadForms:CompleteSquaresCtd` and {prf:ref}`Ex:QuadForms:Diagonalize` we applied  two different substitutions to the same quadratic form with the matrix  $A = \left[\begin{array}{cc} 1 & 2  \\ 2 & 3 \end{array}\right]$.
+In {prf:ref}`Ex:QuadForms:CompleteSquaresCtd` and {prf:ref}`Ex:QuadForms:Diagonalize` we applied two different substitutions to the same quadratic form with the matrix $A = \left[\begin{array}{cc} 1 & 2  \\ 2 & 3 \end{array}\right]$.
 
- They led to the two different quadratic forms 
+They led to the two different quadratic forms
 
- $$
-   \vect{y}^TD_1\vect{y} = \vect{y}^T\begin{bmatrix}1 & 0\\ 0 & -1 \end{bmatrix}\vect{y} \quad \text{and} \quad
-   \vect{y}^TD_2\vect{y} = \vect{y}^T\begin{bmatrix}2 + \sqrt{5} & 0\\ 0 & 2 - \sqrt{5}\end{bmatrix}\vect{y}.
- $$  
+$$
+  \vect{y}^TD_1\vect{y} = \vect{y}^T\begin{bmatrix}1 & 0\\ 0 & -1 \end{bmatrix}\vect{y} \quad \text{and} \quad
+  \vect{y}^TD_2\vect{y} = \vect{y}^T\begin{bmatrix}2 + \sqrt{5} & 0\\ 0 & 2 - \sqrt{5}\end{bmatrix}\vect{y}.
+$$
 
-The diagonal matrices do not seem to have much in common.  However, they do.
+The diagonal matrices do not seem to have much in common. However, they do.
 
-It can be shown that if for a symmetric $n\times n$ matrix  $A$ it holds that 
+It can be shown that if for a symmetric $n\times n$ matrix $A$ it holds that
 
 $$
   P_1^TAP_1 = D_1 \quad \text{and} \quad P_2^TAP_2 = D_2,
 $$
 
-for two invertible matrices $P_1$, $P_2$, 
-then the *signs* of the values on the diagonals of $D_1$ and $D_2$ match in the following sense: <BR> if  $p_1$, $p_2$ denote the numbers of positive diagonal elements of $D_1, D_2$,  and $n_i$ are the numbers of negative diagonal elements, then
+for two invertible matrices $P_1$, $P_2$,
+then the _signs_ of the values on the diagonals of $D_1$ and $D_2$ match in the following sense: <BR> if $p_1$, $p_2$ denote the numbers of positive diagonal elements of $D_1, D_2$, and $n_i$ are the numbers of negative diagonal elements, then
 
 $$
   p_1 = p_2 \quad \text{and} \quad n_1 = n_2.
 $$
 
-It follows that also the numbers of zeros on the diagonal, $n - p_i - n_i$, $i = 1,2$,  must be equal for the two matrices.
+It follows that also the numbers of zeros on the diagonal, $n - p_i - n_i$, $i = 1,2$, must be equal for the two matrices.
 
-In the two examples we see that  $p_1 = p_2 = 1$  and also  $n_1 = n_2 = 1$, in accordance with the statement.
+In the two examples we see that $p_1 = p_2 = 1$ and also $n_1 = n_2 = 1$, in accordance with the statement.
 
-The property is known as *Sylvester's Law of Inertia*.
+The property is known as _Sylvester's Law of Inertia_.
 
 ::::
 
 (Subsec:PosDefMatrices)=
+
 ## Positive definite matrices
 
 Let's start with a list of definitions.
 
-::::{prf:definition}  Classification of Quadratic Forms
+::::{prf:definition} Classification of Quadratic Forms
 :label: Dfn:QuadForms:DefiniteMatrix
 
-Let $A$ be a symmetric matrix and  $q_A(\vect{x}) = \vect{x}^TA\vect{x}$ the corresponding quadratic form.
+Let $A$ be a symmetric matrix and $q_A(\vect{x}) = \vect{x}^TA\vect{x}$ the corresponding quadratic form.
 
 <ul>
 
-<li>  
+<li>
 
-$q_A$ is called  **positive definite**    if $q_A(\vect{x}) > 0$ for all $\vect{x} \neq \vect{0}$.
-
-</li>
-
-<li>  
-
-$q_A$ is called  **positive semi-definite**    if $q_A(\vect{x}) \geq 0$ for all $\vect{x} $.
+$q_A$ is called **positive definite** if $q_A(\vect{x}) > 0$ for all $\vect{x} \neq \vect{0}$.
 
 </li>
 
-<li>  
+<li>
 
-$q_A$ is called  **negative definite**    if $q_A(\vect{x}) < 0$ for all $\vect{x} \neq \vect{0}$.
+$q_A$ is called **positive semi-definite** if $q_A(\vect{x}) \geq 0$ for all $\vect{x} $.
 
 </li>
 
-<li>  
+<li>
 
-$q_A$ is called  **negative semi-definite**    if $q_A(\vect{x}) \leq 0$ for all $\vect{x} $.
+$q_A$ is called **negative definite** if $q_A(\vect{x}) < 0$ for all $\vect{x} \neq \vect{0}$.
+
+</li>
+
+<li>
+
+$q_A$ is called **negative semi-definite** if $q_A(\vect{x}) \leq 0$ for all $\vect{x} $.
 
 </li>
 
 </ul>
 
-If none of the above applies, then $q_A$ is called an **indefinite**  quadratic form.
+If none of the above applies, then $q_A$ is called an **indefinite** quadratic form.
 
-The same classification is used for symmetric matrices.  E.g.,  $A$ is a **positive definite matrix**  if the corresponding quadratic form is positive definite.
+The same classification is used for symmetric matrices. E.g., $A$ is a **positive definite matrix** if the corresponding quadratic form is positive definite.
 
 ::::
 
-Note that every quadratic form  $\vect{x}^TA\vect{x}$ gets the value $0$  if  $\vect{x}$ is the zero vector. That is the reason we exclude the zero vector in the definition of positive/negative definite.
+Note that every quadratic form $\vect{x}^TA\vect{x}$ gets the value $0$ if $\vect{x}$ is the zero vector. That is the reason we exclude the zero vector in the definition of positive/negative definite.
 
 The classification of a quadratic form follows immediately from the eigenvalues of its matrix.
 
 ::::{prf:theorem}
 :label: Thm:QuadForms:Classification
 
-Suppose    $q_A(\vect{x}) = \vect{x}^TA\vect{x}$  for the symmetric $n \times n$ matrix $A$. 
-Let  $\lambda_1, \ldots, \lambda_n$ be the complete set of (real) eigenvalues of $A$
+Suppose $q_A(\vect{x}) = \vect{x}^TA\vect{x}$ for the symmetric $n \times n$ matrix $A$.
+Let $\lambda_1, \ldots, \lambda_n$ be the complete set of (real) eigenvalues of $A$
 
-Then 
+Then
 
 <ul>
 
-<li>  
+<li>
 
-$q_A$ is   **positive definite**    if  and only if all eigenvalues are positive.
-
-</li>
-
-<li>  
-
-$q_A$ is   **positive semi-definite**    if   and only if  all eigenvalues are nonnegative.
+$q_A$ is **positive definite** if and only if all eigenvalues are positive.
 
 </li>
 
-<li>  
+<li>
 
-$q_A$ is   **negative definite**    if   and only if  all eigenvalues are negative.
+$q_A$ is **positive semi-definite** if and only if all eigenvalues are nonnegative.
 
 </li>
 
-<li>  
+<li>
 
-$q_A$ is   **negative semi-definite**    if   and only if  all eigenvalues are nonpositive.
+$q_A$ is **negative definite** if and only if all eigenvalues are negative.
+
+</li>
+
+<li>
+
+$q_A$ is **negative semi-definite** if and only if all eigenvalues are nonpositive.
 
 </li>
 
 </ul>
 
-And lastly 
+And lastly
 
 <ul>
 
-<li>  
+<li>
 
-$q_A$ is   **indefinite**    if   at least one  eigenvalue is positive, and at least one eigenvalue is negative.
+$q_A$ is **indefinite** if at least one eigenvalue is positive, and at least one eigenvalue is negative.
 
 </li>
 </ul>
@@ -615,17 +600,17 @@ $q_A$ is   **indefinite**    if   at least one  eigenvalue is positive, and at l
 
 ::::{prf:proof}
 
-This immediately follows from  {prf:ref}`Prop:QuadForms:Diagonalize`. If we make the substitution $\vect{x} = Q\vect{y}$  with the matrix $Q$ of the orthogonal diagonalization, i.e., 
+This immediately follows from {prf:ref}`Prop:QuadForms:Diagonalize`. If we make the substitution $\vect{x} = Q\vect{y}$ with the matrix $Q$ of the orthogonal diagonalization, i.e.,
 
 $$
-  A = QDQ^{-1} = QDQ^T, \quad 
-  D = \left[\begin{array}{cccc} 
-  \lambda_1 & 0 & \ldots & 0  \\ 
+  A = QDQ^{-1} = QDQ^T, \quad
+  D = \left[\begin{array}{cccc}
+  \lambda_1 & 0 & \ldots & 0  \\
   0 & \lambda_2 & \ldots & 0 \\
   \vdots & \vdots & \ddots &\vdots\\
   0 & 0 & \ldots & \lambda_n
   \end{array}\right],
-  $$
+$$
 
 the quadratic form transforms to
 
@@ -633,24 +618,23 @@ $$
   \tilde{q}(\vect{y}) = \vect{y}^TD\vect{y} = \lambda_1y_1^2 + \ldots + \lambda_ny_n^2.
 $$
 
-Let us consider the case where all eigenvalues $\lambda_i$ are *positive*.
-Then the  expression for  $\tilde{q}(\vect{y})$  is positive for all $\vect{y} \neq \vect{0}$.  It remains to show that then also $q(\vect{x}) > 0$  for all vectors $\vect{x}\neq \vect{0}$.
+Let us consider the case where all eigenvalues $\lambda_i$ are _positive_.
+Then the expression for $\tilde{q}(\vect{y})$ is positive for all $\vect{y} \neq \vect{0}$. It remains to show that then also $q(\vect{x}) > 0$ for all vectors $\vect{x}\neq \vect{0}$.
 
- Since  $Q$ is an orthogonal matrix it is also an invertible matrix.  So  any *nonzero* vector $\vect{x}$  can be written as 
-
-$$
-  \vect{x} = Q\vect{y} 
-$$
-
-for a (unique) *nonzero* vector $\vect{y}$.
-
-As a consequence, for any nonzero vector $\vect{x}$  we have
+Since $Q$ is an orthogonal matrix it is also an invertible matrix. So any _nonzero_ vector $\vect{x}$ can be written as
 
 $$
-   \vect{x}^TA\vect{x} = (Q\vect{y})^TA(Q\vect{y}) = 
+  \vect{x} = Q\vect{y}
+$$
+
+for a (unique) _nonzero_ vector $\vect{y}$.
+
+As a consequence, for any nonzero vector $\vect{x}$ we have
+
+$$
+   \vect{x}^TA\vect{x} = (Q\vect{y})^TA(Q\vect{y}) =
    \vect{y}^TQ^TAQ\vect{y} = \vect{y}^TD\vect{y} > 0.
 $$
-
 
 Likewise the other possibilities of the signs of the eigenvalues may be checked.
 
@@ -659,7 +643,7 @@ Likewise the other possibilities of the signs of the eigenvalues may be checked.
 ::::{exercise}
 :label: Exc:QuadForms:CheckTheorem
 
-Verify the validity of the second statement made in {prf:ref}`Thm:QuadForms:Classification`.  
+Verify the validity of the second statement made in {prf:ref}`Thm:QuadForms:Classification`.
 
 ::::
 
@@ -699,7 +683,7 @@ as follows
 :::{math}
 :label: Eq:QuadForms:CompleteSquares2
 
-  q(x_1,x_2,x_3) = 2(x_1 - \tfrac12x_2 - \tfrac12x_3)^2 + \tfrac12(x_2 - x_3)^2.   
+q(x_1,x_2,x_3) = 2(x_1 - \tfrac12x_2 - \tfrac12x_3)^2 + \tfrac12(x_2 - x_3)^2.
 
 :::
 
@@ -707,27 +691,26 @@ as follows
 
 <li>
 
-What is the corresponding transformation $\vect{y} = P\vect{x}$ that brings the quadratic form in diagonal form  $\vect{y}^TD_2\vect{y}$, and what is the diagonal matrix $D_2$?
-
-</li>
-
-
-<li>
-
- By inspection of $D_2$ find the classification of $q$.
+What is the corresponding transformation $\vect{y} = P\vect{x}$ that brings the quadratic form in diagonal form $\vect{y}^TD_2\vect{y}$, and what is the diagonal matrix $D_2$?
 
 </li>
 
 <li>
 
- By inspection of Equation {eq}`Eq:QuadForms:CompleteSquares2`,  find a nonzero vector
- $\vect{x}$  for which   $q(\vect{x}) = 0$.
+By inspection of $D_2$ find the classification of $q$.
 
 </li>
 
 <li>
 
- Check that the vector you found in  iii. is an eigenvector of the matrix of the quadratic form,  i.e.,  $A = \left[\begin{array}{cc} 2 & -1 & -1  \\ -1 & 1 & 0 \\ -1 & 0 & 1 \end{array}\right]$.
+By inspection of Equation {eq}`Eq:QuadForms:CompleteSquares2`, find a nonzero vector
+$\vect{x}$ for which $q(\vect{x}) = 0$.
+
+</li>
+
+<li>
+
+Check that the vector you found in iii. is an eigenvector of the matrix of the quadratic form, i.e., $A = \left[\begin{array}{cc} 2 & -1 & -1  \\ -1 & 1 & 0 \\ -1 & 0 & 1 \end{array}\right]$.
 
 </li>
 
@@ -736,75 +719,74 @@ What is the corresponding transformation $\vect{y} = P\vect{x}$ that brings the 
 ::::
 
 (Subsec:ConicSections)=
+
 ## Conic Sections
 
-A *conic section*  or *conic* is a curve that results when a circular cone is intersected with a plane. Figure ... shows the different shapes when the plane is *not* going through the apex.  The resulting curve is then either  a *hyperbola*, a *parabola* or an *ellipse*, with as special ellipse the *circle*.  If the plane does  go through the apex of the cone the conic section is called **degenerate**. 
-
+A _conic section_ or _conic_ is a curve that results when a circular cone is intersected with a plane. Figure ... shows the different shapes when the plane is _not_ going through the apex. The resulting curve is then either a _hyperbola_, a _parabola_ or an _ellipse_, with as special ellipse the _circle_. If the plane does go through the apex of the cone the conic section is called **degenerate**.
 
 ::::{exercise}
 
-Describe the (three)  possible degenerate forms of conic sections. That is, what are the three different forms that result when a cone is intersected with a plane that goes through the apex?
+Describe the (three) possible degenerate forms of conic sections. That is, what are the three different forms that result when a cone is intersected with a plane that goes through the apex?
 
 ::::
 
-
-In the plane all *non-degenerate* conic sections may be described by a quadratic equation
+In the plane all _non-degenerate_ conic sections may be described by a quadratic equation
 
 ::::{math}
 :label: Eq:ConicSec:MostGeneralFormula
 
-   ax_1^2 + b x_1x_2 + cx_2^2 + dx_1 + ex_2 + f = 0,
+ax_1^2 + b x_1x_2 + cx_2^2 + dx_1 + ex_2 + f = 0,
 
 ::::
 
-where both the parameter $f$ and at least one the parameters $a,b,c$  are not equal to zero.  
-% When $f$ is equal to zero the conic section is sometimes called *degenerate*. 
+where both the parameter $f$ and at least one the parameters $a,b,c$ are not equal to zero.  
+% When $f$ is equal to zero the conic section is sometimes called _degenerate_.
 
 ::::{prf:example}
 
-The curve given by the equation  $x_1^2 + x_2^2 - 25 = 0$  is a circle with radius 5.
+The curve given by the equation $x_1^2 + x_2^2 - 25 = 0$ is a circle with radius 5.
 
-The equation  $x_1^2 - x_2 - 2x_1 + 5 = 0$  gives a parabola with vertex ('top')  at  $(1, 4)$ and the line $x_1 = 1$ as axis of symmetry.
+The equation $x_1^2 - x_2 - 2x_1 + 5 = 0$ gives a parabola with vertex ('top') at $(1, 4)$ and the line $x_1 = 1$ as axis of symmetry.
 
 ::::
 
-If the parameters  $d$ and $e$ in Equation {eq}`Eq:ConicSec:MostGeneralFormula` are zero, the equation
+If the parameters $d$ and $e$ in Equation {eq}`Eq:ConicSec:MostGeneralFormula` are zero, the equation
 
 ::::{math}
 :label: Eq:ConicSec:CentralConic
 
-   ax_1^2 + bx_1x_2 + cx_2^2 + f = 0
+ax_1^2 + bx_1x_2 + cx_2^2 + f = 0
 
 ::::
 
-is said to represent a **central conic**. &nbsp;  When  $b = 0$ as well,
+is said to represent a **central conic**. &nbsp; When $b = 0$ as well,
 
 ::::{math}
 :label: Eq:ConicSec:StandardConic
 
-   ax_1^2 + cx_2^2 + f = 0
+ax_1^2 + cx_2^2 + f = 0
 
 ::::
 
-defines a central conic in **standard position**.  Such a conic is symmetric with respect to both coordinate axes.
+defines a central conic in **standard position**. Such a conic is symmetric with respect to both coordinate axes.
 
-If  all parameters $a,c,f$ in {eq}`Eq:ConicSec:StandardConic` are nonzero  the equation can be rewritten in one of the two  **standard forms**
+If all parameters $a,c,f$ in {eq}`Eq:ConicSec:StandardConic` are nonzero the equation can be rewritten in one of the two **standard forms**
 
 ::::{math}
 :label: Eq:QuadForms:StandardForms
 
-   (I) \,\, \dfrac{x_1^2}{r_1^2} + \dfrac{x_2^2}{r_2^2} = 1, \quad\quad 
-   (II) \,\, \dfrac{x_1^2}{r_1^2} - \dfrac{x_2^2}{r_2^2} = \pm 1, 
+(I) \,\, \dfrac{x_1^2}{r_1^2} + \dfrac{x_2^2}{r_2^2} = 1, \quad\quad
+(II) \,\, \dfrac{x_1^2}{r_1^2} - \dfrac{x_2^2}{r_2^2} = \pm 1,
 ::::
 
 where we may assume that $ r_1,r_2 > 0$.
 
-In case $(I)$  the equation describes an ellipse if  $r_1 \neq r_2$ and a circle if $r_1 = r_2$.
+In case $(I)$ the equation describes an ellipse if $r_1 \neq r_2$ and a circle if $r_1 = r_2$.
 <BR>
-In case $(II)$  the resulting curve is a hyperbola, with the lines $x_2 = \pm\dfrac{r_2}{r_1}x_1$
-as asymptotes. 
+In case $(II)$ the resulting curve is a hyperbola, with the lines $x_2 = \pm\dfrac{r_2}{r_1}x_1$
+as asymptotes.
 <BR>
-Both curves have the coordinates axes as axes of symmetry. In this context they are also called the **principal axes**.  See {numref}`Figure %s <Fig:QuadForms:EllipseHyperbola>`.
+Both curves have the coordinates axes as axes of symmetry. In this context they are also called the **principal axes**. See {numref}`Figure %s <Fig:QuadForms:EllipseHyperbola>`.
 
 :::{figure} Images/Fig-QuadForms-EllipseHyperbola.svg
 :name: Fig:QuadForms:EllipseHyperbola
@@ -812,11 +794,10 @@ Both curves have the coordinates axes as axes of symmetry. In this context they 
 (Standard) Hyperbola and Ellipse
 :::
 
-
 ::::{exercise}
 :label: Exc:QuadForms:DegenerateStandardForm
 
-What happens if in Equation {eq}`Eq:ConicSec:CentralConic`  the coefficient $f$ is equal to zero? <BR>
+What happens if in Equation {eq}`Eq:ConicSec:CentralConic` the coefficient $f$ is equal to zero? <BR>
 (There are actually three cases to consider!)
 
 ::::
@@ -827,16 +808,16 @@ What happens if in Equation {eq}`Eq:ConicSec:CentralConic`  the coefficient $f$ 
 The equation
 
 $$
-   4x_1^2 + 9x_2^2 - 25 = 0 
+   4x_1^2 + 9x_2^2 - 25 = 0
 $$
 
 can be rewritten as
 
 $$
-   \dfrac{4x_1^2}{25} + \dfrac{9x_2^2}{25} = 1, 
+   \dfrac{4x_1^2}{25} + \dfrac{9x_2^2}{25} = 1,
 $$
 
-and a bit further to the standard form 
+and a bit further to the standard form
 
 $$
    \dfrac{x_1^2}{(5/2)^2} + \dfrac{x_2^2}{(5/3)^2} = 1.
@@ -844,8 +825,6 @@ $$
 
 The corresponding curve is an ellipse with the coordinate axes as principal axes and
 with $-5/2 \leq x_1 \leq 5/2$ and $-5/3 \leq x_2 \leq 5/3$.
-
-
 
 Likewise
 
@@ -859,44 +838,35 @@ $$
    x_2 = \pm \sqrt{9 + 4x_1^2} = \pm2x_1\sqrt{\dfrac{9}{4x_1^2} + 1}
 $$
 
-it is seen that the lines  $x_2 = \pm 2x_1$  are asymptotes. 
-Namely,  if  $x_1 \to \pm \infty$, then
+it is seen that the lines $x_2 = \pm 2x_1$ are asymptotes.
+Namely, if $x_1 \to \pm \infty$, then
 
 $$
    \sqrt{\dfrac{9}{4x_1^2} + 1} \,\to\, \sqrt{0+1} = 1.
 $$
 
-
-
-
 ::::
-
-
-
-
-
 
 If in {eq}`Eq:ConicSec:CentralConic` the parameter $b$ is not equal to zero, the principal axes can be found by diagonalization of the quadratic form
 
 $$
-  ax_1^2 + bx_1x_2 + cx_2^2 = 
+  ax_1^2 + bx_1x_2 + cx_2^2 =
   \begin{bmatrix} x_1 & x_2 \end{bmatrix}\begin{bmatrix} a & \tfrac12b \\ \tfrac12b & c\end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}.
 $$
 
 The next proposition explains how. <BR  >
-For notational convenience we denote  the coefficient in the cross term as $2b$.
+For notational convenience we denote the coefficient in the cross term as $2b$.
 
- 
-::::{prf:proposition} 
+::::{prf:proposition}
 :label: Prop:QuadForms:PrincipleAxesR2
 
 Suppose the conic $\mathcal{C}$ is defined by the equation
 
 $$
-  ax_1^2 + 2bx_1x_2 + cx_2^2 = k, 
-  $$
+  ax_1^2 + 2bx_1x_2 + cx_2^2 = k,
+$$
 
-where  $a,b,c$ are not all equal to zero, and $k \neq 0$.
+where $a,b,c$ are not all equal to zero, and $k \neq 0$.
 
 Then the principal axes are the lines generated by the eigenvectors of the matrix
 
@@ -904,11 +874,9 @@ $$
   A = \begin{bmatrix} a & b \\ b & c \end{bmatrix}.
 $$
 
-
 ::::
 
 The following examples illustrate proposition {prf:ref}`Prop:QuadForms:PrincipleAxesR2`.
-
 
 ::::{prf:example}
 :label: Ex:QuadForms:PrinciplesAxes1
@@ -918,16 +886,16 @@ We consider the quadratic form
 :::{math}
 :label: Eq:QuadForms:ConicExample1
 
-  x_1^2 - 4x_1x_2 + x_2^2 = 4.
+x_1^2 - 4x_1x_2 + x_2^2 = 4.
 :::
 
-Since  
+Since
 
 $$
  x_1^2 - 4x_1x_2 + x_2^2 = \begin{bmatrix} x_1 & x_2 \end{bmatrix}\begin{bmatrix} 1 & -2 \\ -2 & 1\end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix},
 $$
 
-{prf:ref}`Prop:QuadForms:PrincipleAxesR2`  tells us we have to look for eigenvectors of the matrix
+{prf:ref}`Prop:QuadForms:PrincipleAxesR2` tells us we have to look for eigenvectors of the matrix
 
 $$
   A = \begin{bmatrix} 1 & -2 \\ -2 & 1\end{bmatrix}.
@@ -948,10 +916,10 @@ $$
   D = \begin{bmatrix} 3 & 0 \\ 0 & -1\end{bmatrix}.
 $$
 
-The substitution  $\vect{x} = Q\vect{y}$  yields
+The substitution $\vect{x} = Q\vect{y}$ yields
 
-$$ 
-  \vect{x}^T A \vect{x} = \vect{y}^T Q^TAQ \vect{y} = \vect{y}^T D \vect{y} 
+$$
+  \vect{x}^T A \vect{x} = \vect{y}^T Q^TAQ \vect{y} = \vect{y}^T D \vect{y}
   = 3y_1^2 - y_2^2.
 $$
 
@@ -961,14 +929,14 @@ $$
   3y_1^2 - y_2^2 = 4.
 $$
 
-From this we can already conclude that the curve defined by Equation {eq}`Eq:QuadForms:ConicExample1`  is a hyperbola. The principal axes in the $x_1$-$x_2$-plane are the lines given by
+From this we can already conclude that the curve defined by Equation {eq}`Eq:QuadForms:ConicExample1` is a hyperbola. The principal axes in the $x_1$-$x_2$-plane are the lines given by
 
 $$
-   \mathcal{L}_1: \begin{bmatrix} x_1 \\ x_2\end{bmatrix} = c \begin{bmatrix} 1 \\ -1\end{bmatrix} \quad \text{and} \quad 
+   \mathcal{L}_1: \begin{bmatrix} x_1 \\ x_2\end{bmatrix} = c \begin{bmatrix} 1 \\ -1\end{bmatrix} \quad \text{and} \quad
     \mathcal{L}_2: \begin{bmatrix} x_1 \\ x_2\end{bmatrix} = c \begin{bmatrix} 1 \\ 1\end{bmatrix}
 $$
 
-The asymptotes in the coordinates  $y_1, y_2$ are the lines
+The asymptotes in the coordinates $y_1, y_2$ are the lines
 
 $$
   y_2 = \pm\sqrt{3} y_1, \,\, \text{or} \,\,\,
@@ -982,8 +950,8 @@ $$
      \begin{bmatrix} \cos\left(-\frac14\pi\right) & -\sin\left(-\frac14\pi\right) \\ \sin\left(-\frac14\pi\right) & \cos\left(-\frac14\pi\right)\end{bmatrix}\begin{bmatrix} y_1 \\ y_2\end{bmatrix}
 $$
 
-we find the asymptotes in the $x_1$-$x_2$-plane by rotating the lines 
-$y_2 = \pm\sqrt{3}y_1$ over an angle $-\frac14\pi$.  This leads to the direction vectors of the asymptotes in the $x_1$-$x_2$-plane
+we find the asymptotes in the $x_1$-$x_2$-plane by rotating the lines
+$y_2 = \pm\sqrt{3}y_1$ over an angle $-\frac14\pi$. This leads to the direction vectors of the asymptotes in the $x_1$-$x_2$-plane
 as
 
 $$
@@ -992,11 +960,10 @@ $$
   \dfrac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\ -1 & 1\end{bmatrix}\begin{bmatrix} 1 \\ -3\end{bmatrix} = \dfrac{1}{\sqrt{2}} \begin{bmatrix} -2 \\ -4\end{bmatrix}.
 $$
 
-They can be simplified to the direction vectors  $ \begin{bmatrix} 2 \\ 1\end{bmatrix}$
-and $\begin{bmatrix} 1 \\ 2\end{bmatrix}$. 
+They can be simplified to the direction vectors $ \begin{bmatrix} 2 \\ 1\end{bmatrix}$
+and $\begin{bmatrix} 1 \\ 2\end{bmatrix}$.
 
 ::::
-
 
 ::::{prf:example}
 :label: Ex:QuadForms:PrinciplesAxes2
@@ -1006,7 +973,7 @@ We consider the quadratic form
 :::{math}
 :label: Eq:QuadForms:ConicExample2
 
-  3x_1^2 + 4x_1x_2 + 6x_2^2 = 36.
+3x_1^2 + 4x_1x_2 + 6x_2^2 = 36.
 :::
 
 Here we have
@@ -1015,57 +982,52 @@ $$
   3x_1^2 + 4x_1x_2 + 6x_2^2 = \begin{bmatrix} x_1 & x_2 \end{bmatrix}\begin{bmatrix} 3 & 2 \\ 2 & 6\end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix},
 $$
 
- so now we have to look for eigenvalues and eigenvectors of the matrix
+so now we have to look for eigenvalues and eigenvectors of the matrix
 
 $$
   A = \begin{bmatrix} 3 & 2 \\ 2 & 6\end{bmatrix}.
 $$
 
-They are found to be  
+They are found to be
 
 $$
   \lambda_1 = 2,\,\vect{v}_1 = \begin{bmatrix} 2 \\ -1\end{bmatrix},\quad
   \lambda_2 = 7,\,\vect{v}_2 = \begin{bmatrix} 1 \\ 2\end{bmatrix}.
 $$
 
-We  orthogonally diagonalize $A$  as 
+We orthogonally diagonalize $A$ as
 
 $$
   A = QDQ^{-1} = QDQ^T, \quad Q = \frac{1}{\sqrt{5}}\begin{bmatrix} 2 & 1 \\ -1 & 2\end{bmatrix}, \,\,
   D = \begin{bmatrix} 2 & 0 \\ 0 & 7\end{bmatrix}.
 $$
 
-The substitution  $\vect{x} = Q\vect{y}$  yields the quadratic form
+The substitution $\vect{x} = Q\vect{y}$ yields the quadratic form
 
-$$ 
+$$
    2y_1^2 + 7y_2^2 = 36,
 $$
 
 or
 
-$$ 
+$$
    \dfrac{y_1^2}{(3\sqrt{2})^2} + \dfrac{y_2^2}{(6/\sqrt{7})^2} = 1.
 $$
 
-
-This is an ellipse in the $y_1$-$y_2$-plane with long axis $6\sqrt{2}$, the length of the line segment from  $(-3\sqrt{2},0)$ to $(3\sqrt{2},0)$, and  short axis  $\dfrac{12}{\sqrt{7}}$.
+This is an ellipse in the $y_1$-$y_2$-plane with long axis $6\sqrt{2}$, the length of the line segment from $(-3\sqrt{2},0)$ to $(3\sqrt{2},0)$, and short axis $\dfrac{12}{\sqrt{7}}$.
 
 For the ellipse in the $x_1$-$x_2$-plane we find the principle axes
 
-$$ 
+$$
   \begin{bmatrix} x_1 \\ x_2\end{bmatrix} = c\vect{v}_1 = c\begin{bmatrix} 2 \\ -1\end{bmatrix} \quad \text{and}\quad \begin{bmatrix} x_1 \\ x_2\end{bmatrix} = c\vect{v}_2 = c\begin{bmatrix} 1 \\ 2\end{bmatrix}.
 $$
 
-See Figure  {numref}`Fig:QuadForms:Ellipses`
-
-
-
+See Figure {numref}`Fig:QuadForms:Ellipses`
 
 :::{figure} Images/Fig-QuadForms-Ellipses(2).svg
 :name: Fig:QuadForms:Ellipses
 
 The two ellipses
 :::
-
 
 ::::

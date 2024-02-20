@@ -1,4 +1,5 @@
 (Sec:OrthoBase)=
+
 # Orthogonal and Orthonormal bases
 
 ## Orthogonal and Orthonormal bases
@@ -12,7 +13,7 @@ A subset $S$ of $\R^{n}$ is called **orthogonal** if any two distinct vectors $\
 :::{prf:Example}
 :label: Ex:OrthoBase:ExOfOrthoBase
 
-Consider the plane 
+Consider the plane
 
 $$\mathcal{P}=\left\{\begin{bmatrix}x\\y\\z\end{bmatrix}\mid x+y+z=0\right\}\text{ and the vectors }\vect{v}_{1}=\begin{bmatrix}1\\-1\\0\end{bmatrix},\quad \vect{v}_{2}=\begin{bmatrix}1\\1\\-2\end{bmatrix}.$$
 
@@ -20,7 +21,7 @@ Both $\vect{v}_{1}$ and $\vect{v}_{2}$ lie in $\mathcal{P}$. The set $\mathcal{B
 
 :::
 
-Since $\vect{0}$ is orthogonal to every vector, adding it to a set or removing it from a set does not change whether the set is orthogonal or not. 
+Since $\vect{0}$ is orthogonal to every vector, adding it to a set or removing it from a set does not change whether the set is orthogonal or not.
 
 :::{prf:proposition}
 :label: Prop:OrthoBase:OrthoSetLinInd
@@ -39,7 +40,7 @@ Since no $\vect{v}_{i}$ is $\vect{0}$, all $\vect{v}_{i}\ip\vect{v}_{i}$ are non
 
 :::
 
-As a consequence of {prf:ref}`Prop:OrthoBase:OrthoSetLinInd`, any orthogonal set that does not contain $\vect{0}$ is an orthogonal basis for its span. 
+As a consequence of {prf:ref}`Prop:OrthoBase:OrthoSetLinInd`, any orthogonal set that does not contain $\vect{0}$ is an orthogonal basis for its span.
 
 :::{prf:definition}
 
@@ -56,9 +57,9 @@ If $\vect{v}_{1},...,\vect{v}_{n}$ is an orthogonal basis for a subspace $V$, th
 :::{prf:example}
 :label: Ex:OrthoBase:OrthonormalBase
 
-Consider the plane $\mathcal{P}$, the vectors $\vect{v}_{1},\vect{v}_{2}$ and the basis $\mathcal{B}$ from {prf:ref}`Ex:OrthoBase:ExOfOrthoBase`. This $\mathcal{B}$ is an orthogonal basis, but $\norm{\vect{v}_{1}}=\sqrt{2}$ and $\norm{\vect{v}_{2}}=\sqrt{6}$ so it is not orthonormal. 
+Consider the plane $\mathcal{P}$, the vectors $\vect{v}_{1},\vect{v}_{2}$ and the basis $\mathcal{B}$ from {prf:ref}`Ex:OrthoBase:ExOfOrthoBase`. This $\mathcal{B}$ is an orthogonal basis, but $\norm{\vect{v}_{1}}=\sqrt{2}$ and $\norm{\vect{v}_{2}}=\sqrt{6}$ so it is not orthonormal.
 
-We can remedy this by considering the basis $\mathcal{B}_{2}=\left\{\vect{u}_{1},\vect{u}_{2}\right\}$ where 
+We can remedy this by considering the basis $\mathcal{B}_{2}=\left\{\vect{u}_{1},\vect{u}_{2}\right\}$ where
 
 $$\vect{u}_{1}=\frac{\vect{v}_{1}}{\norm{\vect{v}_{1}}}=\frac{1}{\sqrt{2}}\begin{bmatrix}1\\-1\\0\end{bmatrix}\quad\text{and}\quad \vect{u}_{2}=\frac{\vect{v}_{2}}{\norm{\vect{v}_{2}}}=\frac{1}{\sqrt{6}}\begin{bmatrix}1\\1\\-2\end{bmatrix}.$$
 
@@ -93,8 +94,8 @@ If $\vect{v}_{1},...,\vect{v}_{k}$ is orthonormal, then $\vect{v}_{j}\ip\vect{v}
 
 :::
 
-In this theorem, it is vital that $\vect{v}$ is known to be in $V$. If $\vect{v}$ is not in $V$, then it can definitely not be expressed as a linear combination of basis elements of $V$.  However, the right hand side appearing in {prf:ref}`Thm:OrthoBase:WeightsOrthoBase` is still very important. It comes back in {prf:ref}`Thm:OrthoBase:OrthoDecomp`.
- 
+In this theorem, it is vital that $\vect{v}$ is known to be in $V$. If $\vect{v}$ is not in $V$, then it can definitely not be expressed as a linear combination of basis elements of $V$. However, the right hand side appearing in {prf:ref}`Thm:OrthoBase:WeightsOrthoBase` is still very important. It comes back in {prf:ref}`Thm:OrthoBase:OrthoDecomp`.
+
 ## Orthogonal Projections Revisited
 
 In {numref}`Subsec:GeomLinTrans:Proj`, we have already briefly touched upon orthogonal projections in higher dimension. Now that we know about orthogonal bases, we can make this more concrete. Let us start with a general definition of the orthogonal projection.
@@ -111,7 +112,7 @@ We now establish the following useful facts about the orthogonal projection. Of 
 :::{prf:Proposition}
 :label: Prop:Orthogonality:BestApprox
 
-Let $V$ be a subspace of $\R^{n}$ and let $\vect{u}$ be an arbitrary vector in $\R^{n}$ with orthogonal decomposition $\vect{u}=\vect{u}_{V}+\vect{u}_{V^{\bot}}$. Then: 
+Let $V$ be a subspace of $\R^{n}$ and let $\vect{u}$ be an arbitrary vector in $\R^{n}$ with orthogonal decomposition $\vect{u}=\vect{u}_{V}+\vect{u}_{V^{\bot}}$. Then:
 
 <ol type="i">
 <li>
@@ -143,35 +144,40 @@ Recall that the inner product of any vector with itself is non-negative and that
 
 We find:
 
-$$\begin{align*}
+$$
+\begin{align*}
 \norm{\vect{u}}&=\sqrt{\vect{u}\ip\vect{u}}=\sqrt{(\vect{u}_{V}+\vect{u}_{V^{\bot}})\ip(\vect{u}_{V}+\vect{u}_{V^{\bot}})}\\
 &=\sqrt{\vect{u}_{V}\ip\vect{u}_{V}+2\vect{u}_{V}\ip\vect{u}_{V^{\bot}}+\vect{u}_{V^{\bot}}\ip\vect{u}_{V^{\bot}}}=\sqrt{\vect{u}_{V}\ip\vect{u}_{V}+\vect{u}_{V^{\bot}}\ip\vect{u}_{V^{\bot}}}\\
 &\geq\sqrt{\vect{u}_{V}\ip\vect{u}_{V}}=\norm{\vect{u}_{V}}
-\end{align*}$$
+\end{align*}
+$$
 
 </li>
 <li>
 
 We have:
 
-$$\begin{align*}
+$$
+\begin{align*}
 \vect{u}\ip\vect{u}_{V}&=(\vect{u}_{V}+\vect{u}_{V^{\bot}})\ip\vect{u}_{V}\\
 &=\vect{u}_{V}\ip\vect{u}_{V}\geq 0.
-\end{align*}$$
+\end{align*}
+$$
 
 Furthermore, $\vect{u}_{V}\ip\vect{u}_{V}=0$ implies $\vect{u}_{V}=\vect{0}$, so $\vect{u}=\vect{u}_{V^{\bot}}$ which is in $V^{\bot}$.
 
 </li>
 <li>
 
+For arbitrary $\vect{v}$ in $V$, $\vect{u}_{V}-\vect{v}$ is in $V$. As $\vect{u}_{V^{\bot}}$ is in $V^{\bot}$, this implies $(\vect{u}_{V}-\vect{v})\ip \vect{u}_{V^{\bot}}=0$. Therefore,
 
-For arbitrary $\vect{v}$ in $V$, $\vect{u}_{V}-\vect{v}$ is in $V$. As $\vect{u}_{V^{\bot}}$ is in $V^{\bot}$, this implies $(\vect{u}_{V}-\vect{v})\ip \vect{u}_{V^{\bot}}=0$. Therefore, 
-
-$$\begin{align*}
+$$
+\begin{align*}
 \norm{\vect{u}-\vect{v}}&=\sqrt{(\vect{u}_{V}+\vect{u}_{V^{\bot}}-\vect{v})\ip(\vect{u}_{V}+\vect{u}_{V^{\bot}}-\vect{v})}\\
 &=\sqrt{(\vect{u}_{V}-\vect{v})\ip(\vect{u}_{V}-\vect{v})+\vect{u}_{V^{\bot}}\ip\vect{u}_{V^{\bot}}}\\
 &\geq\sqrt{\vect{u}_{V^{\bot}}\ip\vect{u}_{V^{\bot}}}=\norm{\vect{u}-\vect{u}_{V}}.
-\end{align*}$$
+\end{align*}
+$$
 
 </li>
 
@@ -179,43 +185,44 @@ $$\begin{align*}
 
 :::
 
- Naturally, we want to know how to find such an orthogonal projection. If we have an orthogonal basis for $V$, there turns out to be a convenient way to compute it, as per {prf:ref}`Thm:OrthoBase:OrthoDecomp`.
+Naturally, we want to know how to find such an orthogonal projection. If we have an orthogonal basis for $V$, there turns out to be a convenient way to compute it, as per {prf:ref}`Thm:OrthoBase:OrthoDecomp`.
 
 ::::{prf:Theorem}
 :label: Thm:OrthoBase:OrthoDecomp
 
-Suppose $V$ is a subspace of $\R^{n}$ with orthogonal basis $\vect{v}_{1},...,\vect{v}_{k}$ and let $\vect{u}$ be a vector in $\R^{n}$. Then  
+Suppose $V$ is a subspace of $\R^{n}$ with orthogonal basis $\vect{v}_{1},...,\vect{v}_{k}$ and let $\vect{u}$ be a vector in $\R^{n}$. Then
 
-:::{math} 
+:::{math}
 :label: Eq:OrthoBase:OrthoProj
 
-\vect{u}_{V}=\text{proj}_V(\vect{u}) = \frac{\vect{u}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{u}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}_{k}.
+\vect{u}_{V}=\text{proj}\_V(\vect{u}) = \frac{\vect{u}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{u}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}\_{k}.
 
 :::
 
 ::::
 
-
 :::{prf:proof}
 
-Put 
+Put
 
 $$\vect{w}=\frac{\vect{u}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{u}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}_{k}.$$
 
 Since all the $\vect{v}_{i}$'s are in $V$, so is $\vect{w}$. It suffices to show that $\vect{u}-\vect{w}$ is in $V^{\bot}$, because then $\vect{u}=\vect{w}+(\vect{u}-\vect{w})$ must be the decomposition as in {prf:ref}`Prop:OrthoComp:PrthoDecomp`.
 
-To prove this, we check that $\vect{u}-\vect{w}$ is orthogonal to all the $\vect{v}_{i}$'s, which form a basis of $V$. This follows readily: 
+To prove this, we check that $\vect{u}-\vect{w}$ is orthogonal to all the $\vect{v}_{i}$'s, which form a basis of $V$. This follows readily:
 
-$$\begin{align*}
+$$
+\begin{align*}
     (\vect{u}-\vect{w})\ip \vect{v}_{i}&=\left(\vect{u}-\frac{\vect{u}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{u}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}_{k}\right)\ip\vect{v}_{i}\\
     &=\vect{u}\ip\vect{v}_{i}-\frac{\vect{u}\ip\vect{v}_{i}}{\vect{v}_{i}\ip\vect{v}_{i}}(\vect{v}_{i}\ip\vect{v}_{i})=0.
-\end{align*}$$
+\end{align*}
+$$
 
 :::
 
 It is worthwhile to compare this result to the formula for the projection of one vector on another given in {prf:ref}`Prop:InnerProduct:UniqueProjection`. What {prf:ref}`Thm:OrthoBase:OrthoDecomp` states is essentially this: if $V$ has an orthogonal basis $\vect{v}_{1},...,\vect{v}_{k}$, then the projection of any vector $\vect{u}$ onto $V$ is the sum of the projections of $\vect{u}$ on the $\vect{v}_{i}$'s. This is illustrated in {numref}`Figure %s <Fig:OrthoBase:DecompAs2Proj>`
 
-```{figure}  Images/Fig-OrthoBase-DecompAs2Proj.svg
+```{figure} Images/Fig-OrthoBase-DecompAs2Proj.svg
 :name: Fig:OrthoBase:DecompAs2Proj
 
 A vector and its orthogonal projection on the subspace $V$. Note that this projection is the sum of the projections of $\vect{u}$ on the orthogonal basis $\vect{v}_{1},\vect{v}_{2}$.
@@ -226,7 +233,8 @@ A vector and its orthogonal projection on the subspace $V$. Note that this proje
 
 Let us revisit the plane $\mathcal{P}$ with orthogonal basis $\mathcal{B}=\left\{\vect{v}_{1},\vect{v}_{2}\right\}$ from {prf:ref}`Ex:OrthoBase:ExOfOrthoBase`, i.e.
 
-$$\vect{v}_{1}=
+$$
+\vect{v}_{1}=
 \begin{bmatrix}
     1\\
     -1\\
@@ -241,9 +249,10 @@ $$\vect{v}_{1}=
     -1\\
     1\\
     2
-\end{bmatrix}.$$
+\end{bmatrix}.
+$$
 
- We find $\vect{u}\ip\vect{v}_{1}=-2,\vect{u}\ip\vect{v}_{2}=-4,$ and $\vect{v}_{1}\ip\vect{v}_{1}=2,\vect{v}_{2}\ip\vect{v}_{2}=6$. Consequently,
+We find $\vect{u}\ip\vect{v}_{1}=-2,\vect{u}\ip\vect{v}_{2}=-4,$ and $\vect{v}_{1}\ip\vect{v}_{1}=2,\vect{v}_{2}\ip\vect{v}_{2}=6$. Consequently,
 
 $$\vect{u}_{\mathcal{P}}=\frac{\vect{u}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\frac{\vect{u}\ip\vect{v}_{2}}{\vect{v}_{2}\ip\vect{v}_{2}}\vect{v}_{2}=-\frac{2}{2}\vect{v}_{1}-\frac{4}{6}\vect{v}_{2}=\begin{bmatrix}-\frac{5}{3}\\\frac{1}{3}\\\frac{4}{3}\end{bmatrix}$$
 
@@ -251,17 +260,17 @@ is the orthogonal projection of $\vect{u}$ on $\mathcal{P}$.
 
 :::
 
-
 :::{prf:remark}
 
-If $V$ is a subspace of $\R^{n}$, then 
+If $V$ is a subspace of $\R^{n}$, then
 
 $$T:\R^{n}\to\R^{n},\vect{u}\mapsto\vect{u}_{V}$$
 
- is a linear transformation. It is called the **orthogonal projection** on $V$. The standard matrix of this transformation is the matrix for which the $i$-th column is:
+is a linear transformation. It is called the **orthogonal projection** on $V$. The standard matrix of this transformation is the matrix for which the $i$-th column is:
 
- $$ \frac{\vect{e}_{i}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{e}_{i}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}_{k}.
- $$
+$$
+\frac{\vect{e}_{i}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{e}_{i}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}_{k}.
+$$
 
 Here the $\vect{v}_{1},...,\vect{v}_{k}$ are an arbitrary orthogonal basis for $V$.
 
@@ -276,7 +285,8 @@ $$\vect{e}_{1}\ip\vect{v}_{1}=1\quad\text{and}\quad \vect{e}_{1}\ip\vect{v}_{2}=
 
 so the first column of the standard matrix will be :
 
-$$\frac{1}{2}
+$$
+\frac{1}{2}
 \begin{bmatrix}
     1\\\
     -1\\
@@ -290,15 +300,17 @@ $$\frac{1}{2}
     \frac{2}{3}\\
     -\frac{1}{3}\\
     -\frac{1}{3}
-\end{bmatrix}.$$
+\end{bmatrix}.
+$$
 
-Similarly, we find 
+Similarly, we find
 
 $$\vect{e}_{2}\ip\vect{v}_{1}=-1\quad\text{and}\quad \vect{e}_{2}\ip\vect{v}_{2}=1.$$
 
 so the second column of the standard matrix will be :
 
-$$\frac{-1}{2}
+$$
+\frac{-1}{2}
 \begin{bmatrix}
     1\\\
     -1\\
@@ -312,15 +324,17 @@ $$\frac{-1}{2}
     -\frac{1}{3}\\
     \frac{2}{3}\\
     -\frac{1}{3}
-\end{bmatrix}.$$
+\end{bmatrix}.
+$$
 
-Finally, 
+Finally,
 
 $$\vect{e}_{3}\ip\vect{v}_{1}=0\quad\text{and}\quad \vect{e}_{3}\ip\vect{v}_{2}=-2$$
 
 so the last column of the standard matrix will be:
 
-$$\frac{0}{2}
+$$
+\frac{0}{2}
 \begin{bmatrix}
     1\\\
     -1\\
@@ -333,7 +347,8 @@ $$\frac{0}{2}
     -\frac{1}{3}\\
     -\frac{1}{3}\\
     \frac{2}{3}
-\end{bmatrix}.$$
+\end{bmatrix}.
+$$
 
 Let us verify that, for the vector $\vect{u}$ from {prf:ref}`Ex:OrthoBase:ExofOrthoProj` we do indeed get the right answer:
 
@@ -350,13 +365,12 @@ T(\vect{u})=\frac{1}{3}\begin{bmatrix}
 \end{bmatrix}=
 \frac{1}{3}\begin{bmatrix}
     -5\\
-    1\\ 
+    1\\
     4
 \end{bmatrix}.
 $$
 
 :::
-
 
 ## Orthogonal Matrices
 
@@ -388,14 +402,16 @@ The identity matrix $I_{n}$ is an orthogonal matrix for any $n$.
 
 <li id="It:OrthoBase:ColsNotNormal">
 
-The matrix 
+The matrix
 
-$$A=\begin{bmatrix}
+$$
+A=\begin{bmatrix}
 1&1\\
 1&-1
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 
-is *not* orthogonal. Its columns are pairwise orthogonal, but neither columns has norm 1. Indeed, the norm of both columns is $\sqrt{2}$.
+is _not_ orthogonal. Its columns are pairwise orthogonal, but neither columns has norm 1. Indeed, the norm of both columns is $\sqrt{2}$.
 
 </li>
 
@@ -403,10 +419,12 @@ is *not* orthogonal. Its columns are pairwise orthogonal, but neither columns ha
 
 If we consider the matrix from [ii.](#It:OrthoBase:ColsNotNorm) but we divide both columns by their norms, we obtain:
 
-$$B=\begin{bmatrix}
+$$
+B=\begin{bmatrix}
 \frac{1}{\sqrt{2}}&\frac{1}{\sqrt{2}}\\
 \frac{1}{\sqrt{2}}&-\frac{1}{\sqrt{2}}
-\end{bmatrix}.$$
+\end{bmatrix}.
+$$
 
 This matrix really is orthogonal.
 
@@ -427,7 +445,7 @@ An $n\times n$-matrix $A$ is orthogonal if and only if $A^{T}A=I_{n}$.
 
 :::{prf:proof}
 
-Let $\vect{v}_{1},\vect{v}_{2}...,\vect{v}_{n}$ be the columns of $A$, so $\vect{v}_{1}^{T},\vect{v}_{2}^{T},...,\vect{v}_{n}^{T}$ are the rows of $A^{T}$. Consequently, 
+Let $\vect{v}_{1},\vect{v}_{2}...,\vect{v}_{n}$ be the columns of $A$, so $\vect{v}_{1}^{T},\vect{v}_{2}^{T},...,\vect{v}_{n}^{T}$ are the rows of $A^{T}$. Consequently,
 
 $$
 A^{T}A=\begin{bmatrix}
@@ -512,7 +530,7 @@ Many statements about orthogonal matrices still hold for non-square matrices, as
 
 :::
 
-You could of course also consider matrices for which the *rows* are orthonormal. It turns out, however, that this yields the exact same concept.
+You could of course also consider matrices for which the _rows_ are orthonormal. It turns out, however, that this yields the exact same concept.
 
 :::{prf:proposition}
 
@@ -528,26 +546,25 @@ We know that $A$ is orthogonal if and only if $A^{T}A=I_{n}$. But this implies $
 
 ## Grasple Exercises
 
-
-::::{grasple} 
+::::{grasple}
 :url: https://embed.grasple.com/exercises/c443c628-427c-4ba6-a55b-d7fd0a562904?id=87842
-:label: grasple_exercise_7_2_1 
+:label: grasple_exercise_7_2_1
 :dropdown:
 :description: Orthogonal basis and scalar multiplication.
 
 ::::
 
-::::{grasple} 
+::::{grasple}
 :url: https://embed.grasple.com/exercises/825980e7-e25f-497e-a077-e009cedd55c4?id=87843
-:label: grasple_exercise_7_2_2 
+:label: grasple_exercise_7_2_2
 :dropdown:
 :description: Projection formula with non-orthogonal basis.
 
 ::::
 
-::::{grasple} 
+::::{grasple}
 :url: https://embed.grasple.com/exercises/c815026e-df41-461c-b0dc-0b06a387d0c9?id=91876
-:label: grasple_exercise_7_2_3 
+:label: grasple_exercise_7_2_3
 :dropdown:
 :description: Alternative definition of orthogonal matrix.
 
