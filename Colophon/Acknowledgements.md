@@ -45,7 +45,7 @@ J. (Jenneke) van der Poel
 
 J.A. (Hans) Verheij
 
-Carin de Vries
+[C. (Caren) de Vries](https://www.linkedin.com/in/caren-de-vries-b67908249)
 
 ## Reviewers
 
