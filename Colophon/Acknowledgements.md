@@ -23,6 +23,8 @@ Jarno Berger
 
 [Abel de Bruijn](https://www.linkedin.com/in/abeldebruijn/)
 
+[Dr. F.J. Fokko van de Bult](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/analysis/people/dr-fj-fokko-van-de-bult)
+
 [Rens Dur BSc](https://www.linkedin.com/in/rensdur/)
 
 [Pauline Hengst](https://www.linkedin.com/in/p-hengst/)
