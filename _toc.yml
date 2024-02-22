@@ -67,3 +67,7 @@ parts:
       - file: 'Appendices/ComplexNumbers.md'
       - file: 'Appendices/SVDProof.md'
       - file: 'Appendices/InverseMatrixTheorem.md'
+  - caption: Colophon
+    numbered: False
+    chapters:
+      - file: 'Colophon/Acknowledgements.md'
