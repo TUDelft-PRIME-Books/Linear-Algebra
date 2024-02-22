@@ -49,7 +49,7 @@ Jarno Berger
 
 [Dr.ir. J.G. (Johannes) Maks](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/drir-jg-johannes-maks)
 
-[Dr. W.M. (Willem) Schouten-Straatman]https://www.linkedin.com/in/willem-schouten-straatman/)
+[Dr. W.M. (Willem) Schouten-Straatman](https://www.linkedin.com/in/willem-schouten-straatman/)
 
 [Dr.ir. R.F. (René) Swarttouw](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/analysis/people/dr-rf-rene-swarttouw)
 
@@ -65,7 +65,7 @@ Jenneke van der Poel
 
 Hans Verheij
 
-## Support (including technical)
+## Support and others
 
 [Dr. D. (Dani) Balagué Guardia](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/dr-d-dani-balague-guardia)
 
