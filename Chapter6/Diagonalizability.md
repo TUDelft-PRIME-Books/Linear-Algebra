@@ -534,48 +534,48 @@ We saw that there is a weak connection between eigenvalues and (non-)invertibili
 
 {prf:ref}`Prop:EigenValues:SingularMatrix` states: a matrix is singular if and only if it has the eigenvalue $0$.
 
-The following exercise shows that there is no relation between diagonalizability and invertibility.
 
-::::::{exercise}
-:label: Exc:Diagonalizable:Invertibility
+In exercise 11 (NO REFERENCING FOR GRASPLE EXC!)  you are invited to investigate the connection (or no-connection) between diagonalizability and invertibility.
 
-Give examples of
+%::::::{exercise}
+%:label: Exc:Diagonalizable:Invertibility
+%
+%Give examples of
+%
+%<ol type = "i">
+%
+%<li>
+%
+%A matrix that is diagonalizable but not invertible.
+%
+%</li>
+%
+%<li>
+%
+%A matrix that is invertible but not diagonalizable.
+%
+%</li>
+%
+%<li>
+%
+%A matrix that is not invertible and not diagonalizable.
+%
+%</li>
+%
+%<li>
+%
+%A matrix that is both invertible and diagonalizable.
+%
+%</li>
+%</ol>
 
-<ol type = "i">
-
-<li>
-
-A matrix that is diagonalizable but not invertible.
-
-</li>
-
-<li>
-
-A matrix that is invertible but not diagonalizable.
-
-</li>
-
-<li>
-
-A matrix that is not invertible and not diagonalizable.
-
-</li>
-
-<li>
-
-A matrix that is both invertible and diagonalizable.
-
-</li>
-</ol>
-
-::::::
 
 We stated that diagonalizable matrices have nice properties. Here is one: for diagonalizable matrices finding (high) powers can be done very efficiently.
 
 ::::::{prf:example}
 :label: Ex:Diagonalizable:EasyPowers
 
-If $A = PDP^{-1}$ then $A^k =  PD^kP^{-1}$, for $k = 0, 1,2,3, \ldots$
+If $A = PDP^{-1}$ then $A^k =  PD^kP^{-1}$, for $k = 0,1,2,3, \ldots$
 
 For instance,
 
@@ -789,5 +789,102 @@ the total number of inhabitants of the two cities is still the same as at the be
 $$
 x_{\infty} + y_{\infty} = \tfrac13(2x_{0}+2y_{0}) + \tfrac13(x_{0}+y_{0}) = x_{0}+y_{0}.
 $$
+
+::::::
+
+## Grasple Exercises 
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/bd1c8f7a-917f-431f-889b-463ab7a7c6f6?id=91486
+:label: grasple_exercise_6_3_1
+:dropdown:
+:description: Given a $2\times 2$ matrix $A$ and 'diagonalizer' $P$, to find the diagonal matrix $D$ such that $A=PDP^{-1}$.  
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/5bcb24df-9cfd-4e4b-bcae-b550fb0fad63?id=91488
+:label: grasple_exercise_6_3_2 
+:dropdown:
+:description:  To find a diagonalization of a $2\times 2$ matrix (insofar it exists).
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/c0d56365-5434-45b0-9c82-805112428024?id=91489
+:label: grasple_exercise_6_3_3 
+:dropdown:
+:description:  To find a diagonalization of a $2\times 2$ matrix (insofar it exists).
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/5a71e703-acd5-48b1-9b6d-8a51f4f8cf95?id=91501
+:label: grasple_exercise_6_3_4 
+:dropdown:
+:description: To investigate the diagonalizability of a ($3 \times 3$) matrix. 
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/537a306b-47d1-422a-bc15-c7a75b81c24b?id=91496
+:label: grasple_exercise_6_3_5 
+:dropdown:
+:description:  To investigate the diagonalizability of a ($3 \times 3$) matrix.
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/5a71e703-acd5-48b1-9b6d-8a51f4f8cf95?id=91501
+:label: grasple_exercise_6_3_6
+:dropdown:
+:description:  To investigate the diagonalizability of a ($3 \times 3$) matrix.
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/
+:label: grasple_exercise_6_3_7 
+:dropdown:
+:description:  To investigate the diagonalizability of a ($3 \times 3$) matrix. 
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/534ce865-0960-403a-affc-0f23f2d14110?id=91521
+:label: grasple_exercise_6_3_8 
+:dropdown:
+:description: For which $\alpha$ is given (upper triangular) $4 \times 4$ matrix diagonalizable?
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/f3cdb060-469a-4a30-be46-1ecc7197d66a?id=91522
+:label: grasple_exercise_6_3_9 
+:dropdown:
+:description: True/False question (about a $4\times4$ matrix with $3$ distinct eigenvalues).  
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/d1cb7e54-6c99-4a01-b161-832b37d650d0?id=91523
+:label: grasple_exercise_6_3_10 
+:dropdown:
+:description:  True/False question (invertibilty implies diagonalizability?)
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/4398c155-7971-42f6-b809-31ae507c0326?id=87331
+:label: grasple_exercise_6_3_11 
+:dropdown:
+:description:  Creating examples of all cases (non-)invertible versus (non-)diagonalizable.
+
+::::::
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/9aca77fa-a7c8-4998-be00-a55c19e9fd70?id=62419
+:label: grasple_exercise_6_3_12 
+:dropdown:
+:description:  To draw conclusions from a diagonalization  $A = PDP^{-1}$.
 
 ::::::

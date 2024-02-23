@@ -107,6 +107,8 @@ $\vect{v}_2 =\left[\begin{array}{c} -2 \\ 1-i \end{array}\right] $.
 Note that the two eigenvalues are each others complex conjugate, and that the same holds for the corresponding eigenvectors,
 that is, if we define the complex conjugate of a vector component wise.
 
+## Vectors and matrices with complex entries
+
 We need a few definitions to settle matters a bit more formally. In the remainder of this section matrices (so in particular vectors) are allowed to have as entries complex numbers. If the entries are supposed to be real numbers we explicitly state this by speaking of a real matrix (or a real vector).
 
 ::::::{prf:definition}
@@ -470,6 +472,8 @@ $$
 
 We conclude this section by reconsidering diagonalizability of real matrices if we allow complex eigenvalues.
 
+## Complex diagonalizability
+
 Let us first generalize the definition:
 
 ::::::{prf:definition}
@@ -486,13 +490,15 @@ We then say that $PDP^{-1}$ is a **diagonalization** of $A$.
 
 ::::::
 
-Just like in the real case it has all to do with the existence of enough (possibly complex) eigenvectors. The derivation is the same, we only repeat the statement.
+
+
+Just like in the real case diagonalizability has all to do with the existence of enough (possibly complex) eigenvectors. The derivation is the same as in {numref}`Section %s <Sec:Diagonalize>`, we only repeat the conclusion.
 
 ::::::{prf:proposition}
 
 An $n\times n$ matrix is (complex) diagonalizable if and only if there exists a basis of eigenvectors for $\mathbb{C}^n$.
 
-In that case, if $\vect{v}_1, \ldots, \vect{v}_n$ are $n$ independent eigenvectors for the eigenvalues $\lambda_1, \ldots, \lambda_n$,
+In that case, if $\vect{v}_1, \ldots, \vect{v}_n$ are $n$ linearly independent eigenvectors for the eigenvalues $\lambda_1, \ldots, \lambda_n$,
 then
 
 $$
@@ -511,7 +517,7 @@ $$
 
 The matrix $A = \left[\begin{array}{cc} 1 & -2 \\ 1 & 3  \end{array}\right]$
 of {prf:ref}`Ex:ComplexEV:FirstExample` has the eigenvalues $\lambda_1 = 2 + i$,
-$\lambda_2 = 2 - i$ with corresponding eigenvectors $\vect{v}_1 = \left[\begin{array}{c}  -1+i \\1 \end{array}\right]$,
+$\lambda_2 = 2 - i$,  with corresponding eigenvectors $\vect{v}_1 = \left[\begin{array}{c}  -1+i \\1 \end{array}\right]$,
 $\vect{v}_2 = \left[\begin{array}{c}  -1-i \\1 \end{array}\right]$.
 
 It follows that
@@ -529,11 +535,17 @@ Which you are challenged to check by a careful calculation.
 ::::::
 
 ::::::{prf:remark}
+:label:  Rem:Diagonalizable:RealVersusComplexDiagonalizable
 
 <ul>
 <li>
 
-Of course, since the real numbers are contained in the complex numbers, a matrix that is real diagonalizable is automatically complex diagonalizable.
+When the context requires it, we will specify whether we mean **real diagonalizable** or **complex diagonalizable**.
+
+</li>
+<li>
+
+Since the real numbers are contained in the complex numbers, a matrix that is real diagonalizable is automatically complex diagonalizable.
 
 </li>
 <li>
@@ -545,6 +557,7 @@ The definition also makes sense for matrices with complex numbers as entries. Ho
 
 ::::::
 
+
 For a matrix to be real diagonalizable {prf:ref}`Thm:Diagonalizable:ThirdCharacterization` states that two conditions must be satisfied. One is that the characteristic polynomial of $A$ must have $n$ real roots, counting multiplicities. The second is that for each eigenvalue the geometric multiplicity must be equal to the algebraic multiplicity.
 The Fundamental Theorem of Algebra guarantees that each polynomial of degree $n$ has $n$ roots. So if we allow complex eigenvalues, the first condition is automatically satisfied. We thus find the following criterion for complex diagonalizability of a (possibly complex) matrix $A$.
 
@@ -554,3 +567,107 @@ The Fundamental Theorem of Algebra guarantees that each polynomial of degree $n$
 A matrix $A$ is complex diagonalizable if and only if for each eigenvalue the geometric multiplicity is equal to the algebraic multiplicity.
 
 ::::::
+
+
+
+## Grasple Exercises 
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/bf1aef1c-7948-4b32-951e-d79940282bfb?id=91545
+:label: grasple_exercise_6_4_1
+:dropdown:
+:description:   Given a complex eigenvector of  a $2\times 2$ matrix, find the corresponding eigenvalue.  
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/4e7c813d-ce37-42a2-be36-9dffb42d5f0b?id=91546
+:label: grasple_exercise_6_4_2
+:dropdown:
+:description: Given a complex eigenvector of  a $2\times 2$ matrix, find the corresponding eigenvalue.  
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/66dcb059-1c37-477c-9f23-8bd1bb26fb44?id=92368
+:label: grasple_exercise_6_4_3
+:dropdown:
+:description:   To find the (complex) eigenvalues of a $2 \times 2$ matrix $A$.
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/507921c2-d568-44d9-a254-536440ca613e?id=91553
+:label: grasple_exercise_6_4_4
+:dropdown:
+:description:   To find the (complex) eigenvalues of a $2 \times 2$ matrix $A$.
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/593e9ddd-a7b8-4617-958e-95f328e28e80?id=91547
+:label: grasple_exercise_6_4_5
+:dropdown:
+:description:   To find the (complex) eigenvalues and bases of their eigenspaces of a $2 \times 2$ matrix  $A$.
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/f60a57c2-b0b3-45de-b18c-e0da1bbef601?id=91555
+:label: grasple_exercise_6_4_6
+:dropdown:
+:description:  Given a complex  eigenvector of a real $2 \times$ matrix, point out other eigenvectors.
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/440c03f9-9a5a-40a6-aa1a-77660a588b20?id=91556
+:label: grasple_exercise_6_4_7
+:dropdown:
+:description: To find an invertible matrix $P$ and a scaling-rotation matrix $C$ for which $A = PCP^{-1}$.
+   
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/f3a6972e-f17b-4984-b0ee-38012ec542b3?id=91563
+:label: grasple_exercise_6_4_8
+:dropdown:
+:description:  To find the complex eigenvalues of a $2 \times 2$ matrix (of a special form). 
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/79c7c433-fbcc-41b8-85d2-b1938a26d40e?id=91566
+:label: grasple_exercise_6_4_9
+:dropdown:
+:description: T/F? Every real $5 \times 5$ matrix has at least one real eigenvalue.
+  
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/1720d806-7602-41b3-9beb-569967e74c84?id=92543
+:label: grasple_exercise_6_4_10
+:dropdown:
+:description: To find a complex diagonalization of a real  $2\times 2$ matrix (eigenvalues given).  
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/510f78e6-717e-4550-8564-7bbf2c2cf673?id=55388
+:label: grasple_exercise_6_4_11
+:dropdown:
+:description: To find a complex diagonalization of a real  $3\times 3$ matrix (one eigenvalue given).  
+
+::::::
+
+
+
+
+
+
+
+
+

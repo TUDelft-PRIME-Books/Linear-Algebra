@@ -1574,7 +1574,7 @@ corresponding to the first two rows of $E$. Taking the first two rows of $A$ (wr
 ::::::{exercise}
 :label: Exc:BasisDim:ExpressInRowsOfE
 
-In the above {prf:ref}`Ex:Subspaces:Rowspace4x3` find out how the four rows of the original matrix can be written as linear combinations of the rows of the reduced echelon form.
+In the above {prf:ref}`Ex:BasisDim:Rowspace4x3` find out how the four rows of the original matrix can be written as linear combinations of the rows of the reduced echelon form.
 
 ::::::
 
