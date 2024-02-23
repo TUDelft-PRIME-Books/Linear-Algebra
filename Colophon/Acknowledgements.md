@@ -9,17 +9,17 @@ Below you can find a list of contributors to this book. The contributors are gro
 
 [Dr. F.J. (Fokko) van de Bult](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/analysis/people/dr-fj-fokko-van-de-bult)
 
-[Drs. A.T. (André) Hensbergen](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/drs-at-andre-hensbergen)
+[Drs. A.T. (André) Hensbergen](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/drs-at-andre-hensbergen) (principle author)
 
 [Dr.ir. D. (Dennis) den Ouden-van der Horst](https://www.linkedin.com/in/dennis-den-ouden-614b5813/)
 
-[Dr. N.D. (Nikolaas) Verhulst](https://www.linkedin.com/in/nikolaas-verhulst-0aa912130/)
+[Dr. N.D. (Nikolaas) Verhulst](https://www.linkedin.com/in/nikolaas-verhulst-0aa912130/) (principle author)
 
 [Dr. T.W.C. (Tom) Vroegrijk](https://www.linkedin.com/in/tomvroegrijk/)
 
 ## Graphics
 
-Jarno Berger
+[J. (Jarno) Berger](https://www.linkedin.com/in/jarno-berger-2919a12b6/)
 
 [A. (Abel) de Bruijn BSc](https://www.linkedin.com/in/abeldebruijn/)
 
@@ -39,17 +39,23 @@ Jarno Berger
 
 ## Exercises
 
+[Drs. A.T. (André) Hensbergen](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/drs-at-andre-hensbergen)
+
 J. (Jenneke) van der Poel
 
 [Dr. I.M. (Iris) Smit](https://www.linkedin.com/in/iris-marjan-smit-61440588/)
 
 J.A. (Hans) Verheij
 
+[Dr. N.D. (Nikolaas) Verhulst](https://www.linkedin.com/in/nikolaas-verhulst-0aa912130/)
+
 [C. (Caren) de Vries](https://www.linkedin.com/in/caren-de-vries-b67908249)
 
 ## Reviewers
 
 [Dr. S.K.J. (Sven) Aerts](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/dr-skj-sven-aerts)
+
+Amin Ayman
 
 [Dr. F.J. (Fokko) van de Bult](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/analysis/people/dr-fj-fokko-van-de-bult)
 
@@ -63,9 +69,7 @@ J.A. (Hans) Verheij
 
 [Dr.ir. R.F. (René) Swarttouw](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/analysis/people/dr-rf-rene-swarttouw)
 
-Mehrdad ...
-
-Amin ...
+[Mehrdad Mihankhah](https://www.linkedin.com/in/mehrdad-mihankhah/)
 
 ## Support and others
 
