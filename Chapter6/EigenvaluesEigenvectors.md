@@ -19,6 +19,10 @@ A\vect{v} = c\vect{v} \quad \text{for some real number  } c \in \R.
 $$
 
 A setting in which this equation plays a role is the following.
+
+::::::{prf:example}
+:label: Ex:EigenValues:ToyMigrationModel
+
 In {numref}`Sec:LinTrafo` we introduced a simple migration model where
 
 $$
@@ -62,6 +66,9 @@ $$
 have this property. Note that these represent the situation where city $A$ has twice as many citizens as city $B$. For this distribution of people over the two cities the outflow of $10 \%$ from $A$ to $B$ is exactly balanced by the outflow of $20 \%$ from $B$ to $A$.
 
 Anyone interested to enlarge upon a more real-life application?
+
+::::::
+
 
 (Subsec:EV-basics)=
 
@@ -547,7 +554,7 @@ Then
 :::{math}
 :label: Eq:v_l-in-Span
 
-\lambda*{\ell}\vect{v}*{\ell} = c*1 \lambda*{\ell}\vect{v}_1 + \ldots + c_{\ell-1} \lambda*{\ell} \vect{v}*{\ell-1}.
+\lambda_{\ell}\vect{v}_{\ell} = c_1 \lambda_{\ell}\vect{v}_1 + \ldots + c_{\ell-1} \lambda_{\ell} \vect{v}_{\ell-1}.
 
 :::
 
@@ -565,7 +572,7 @@ From this we extricate
 :::{math}
 :label: Eq:v_l-in-Span_2
 
-\lambda*{\ell}\vect{v}*{\ell} = c*1 \lambda_1\vect{v}\_1 + \ldots + c*{\ell-1} \lambda*{\ell-1} \vect{v}*{\ell-1}.
+\lambda_{\ell}\vect{v}_{\ell} = c_1 \lambda_1\vect{v}_1 + \ldots + c_{\ell-1} \lambda_{\ell-1} \vect{v}_{\ell-1}.
 :::
 
 Subtracting Equation {eq}`Eq:v_l-in-Span_2` from Equation {eq}`Eq:v_l-in-Span` gives

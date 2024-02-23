@@ -275,10 +275,10 @@ $$
 p_A(\lambda) = (\lambda-3)^2(\lambda -2)
 $$
 
-contains two factors $(\lambda - 3)$ and only one factor $(\lambda - 2)$. In algebra it is then said that $\lambda = 3$ is a zero/root of multiplicity 2 of the polynomial $p_A$, and $\lambda = 2$ has multiplicity 1.
+contains two factors $(\lambda - 3)$ and only one factor $(\lambda - 2)$. In algebra it is then said that $\lambda = 3$ is a zero/root of multiplicity 2 of the polynomial $p_A$, and likewise the root $\lambda = 2$ has multiplicity 1.
 
 
-Another natural question is how many **independent** eigenvectors  there are for an eigenvalue $\lambda$.  This we will refer to as the geometric multiplicity.
+Another natural question is how many linearly **independent** eigenvectors  there are for an eigenvalue $\lambda$.  This we will refer to as the geometric multiplicity.
 
 (Subsec:EV:AlgGeomMultiplicity)=
 ## Algebraic and geometric muliplicity
@@ -369,7 +369,7 @@ The following exercise, which is meant to shed some more light on the concepts j
 :url: https://embed.grasple.com/exercises/6e01d5c1-897b-44bf-bbb2-4653ff095f48?id=92498
 :label: grasple_exercise_6_1_A
 :dropdown:
-:description:  Finding eigenvalues and multiplicities for a $4\times 4$ upper triangular  matrix $A$.
+:description:  Finding eigenvalues and their multiplicities for an upper triangular matrix $A$.
 
 ::::::
 
@@ -389,7 +389,7 @@ Suppose the characteristic polynomial of the $n \times n$ matrix $A$ is given by
 :::{math}
 :label: Eq:EigenValues:CharPolyA
 
-p*A(\lambda) = c_n\lambda^n + c*{n-1}\lambda^{n-1} + \ldots + c_2\lambda^2 +c_1\lambda + c_0.
+p_A(\lambda) = c_n\lambda^n + c_{n-1}\lambda^{n-1} + \ldots + c_2\lambda^2 +c_1\lambda + c_0.
 
 :::
 
@@ -457,7 +457,7 @@ a_{31}  & a_{32}  \end{array}\right|.
 $$
 
 The highest power of $\lambda$ coming from the second and the third terms is $\lambda^1$, so the coefficients of $\lambda^3$ and of $\lambda^2$
-are completely determined by the first term. A closer look at that term yields that these two coefficients in fact come from the product $(a_{11}-\lambda)(a_{22}-\lambda)(a_{33}-\lambda)$. For a general $n\times n$ matrix $A$ the first two coefficients also come from the 'diagonal product' of $\det{A - \lambda I}$.
+are completely determined by the first term. A closer look at that term yields that these two coefficients in fact come from the product $(a_{11}-\lambda)(a_{22}-\lambda)(a_{33}-\lambda)$. For a general $n\times n$ matrix $A$ the first two coefficients also come from the 'diagonal product' of $\det{(A - \lambda I)}$.
 
 Expanding this product further we see that
 
@@ -494,9 +494,10 @@ For an $n\times n$ matrix $A$, let $\lambda_1,\lambda_2,  \ldots , \lambda_n$ be
 :::{math}
 :label: Eq:Eigenvalues:SumEigenvaluesAndTrace
 
-$
-\sum_{i = 1}^{n} \lambda_i = \text{tr}(A) \quad \text{and} \quad \prod*{i = 1}^{n} \lambda_i = \text{det}(A).
-$
+
+\sum_{i = 1}^{n} \lambda_i = \text{tr}(A) \quad \text{and} \quad \prod_{i = 1}^{n} \lambda_i = \text{det}(A).
+
+
 :::
 
 ::::::

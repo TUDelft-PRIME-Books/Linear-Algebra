@@ -115,9 +115,8 @@ $$
 From {prf:ref}`Prop:Diagonalizable:SimilarCharpoly` it follows that similar matrices have the same eigenvalues with the same algebraic multiplicities.
 
 From {prf:ref}`Prop:Diagonalizable:SimilarEigenvalues` it follows that they also have the same geometric multiplicities. That is,
-<BR>
 if $\vect{v}_1, \ldots, \vect{v}_m$ are linearly independent eigenvectors of $B$ for the eigenvalue $\lambda_k$, and $A = PBP^{-1}$,
-then $P\vect{v}_1, \ldots, P\vect{v}_m$ are linearly independent eigenvectors of $A$.
+then the vectors $P\vect{v}_1, \ldots, P\vect{v}_m$ are linearly independent eigenvectors of $A$.
 <BR>
 And vice versa.
 
@@ -171,7 +170,7 @@ $A$ and $B$ have the same rank.
 
 ::::::{margin}
 
-:::{admonition} {prf:ref}`Exc:BasisDim:ProveRankAPEqualToRankPA`.
+:::{admonition} {prf:ref}`Prop:BasisDim:RankAPEqualToRankPA`.
 
 If $A$ and $P$ are $n\times n$ matrices with $P$ invertible
 then $\text{rank}(AP) = \text{rank}(A) =\text{rank}(PA)$.
@@ -216,10 +215,7 @@ matrix $A$ is invertible $\quad \iff \quad \det{(A)} \neq 0$.
 </li>
 <li>
 
-We can use the identities of {prf:ref}`Exc:BasisDim:ProveRankAPEqualToRankPA` from the section 'Basis and Dimension' (see margin). Since $P$ and $P^{-1}$ are both invertible we find: if $A = PBP^{-1}$,
-
-<BR>
-
+We can use the identities of {prf:ref}`Prop:BasisDim:RankAPEqualToRankPA` from the section 'Basis and Dimension' (see margin). Since $P$ and $P^{-1}$ are both invertible we find: if $A = PBP^{-1}$,
 then $\text{rank}(A) = \text{rank}(PBP^{-1})  = \text{rank}(PB) = \text{rank}(B)$.
 
 </li>
@@ -259,7 +255,7 @@ Since this proposition is such a pillar on which much of the theory of matrices 
 The first proof is algebraic. First we note that
 
 $$
-A = PDP^{-1} \quad \iff \quad AP = PDP^{-1}P  \quad \iff \quad AP = PD.
+A = PDP^{-1} \,\, \iff \,\, AP = PDP^{-1}P  \,\, \iff \,\, AP = PD.
 $$
 
 Next we write out these last matrix products column by column:
@@ -536,7 +532,7 @@ Namely, since eigenvectors for different eigenvalues are automatically linearly 
 
 We saw that there is a weak connection between eigenvalues and (non-)invertibility:
 
-{prf:ref}`Prop:EigenValues:Singularity` states: a matrix is singular if and only if it has the eigenvalue $0$.
+{prf:ref}`Prop:EigenValues:SingularMatrix` states: a matrix is singular if and only if it has the eigenvalue $0$.
 
 The following exercise shows that there is no relation between diagonalizability and invertibility.
 
@@ -669,7 +665,7 @@ $$
 
 ::::::
 
-To conclude this section we return to the 'toy' migration model of this chapter to illustrate the power of diagonalization.
+To conclude this section we return to the 'toy' migration model ({prf:ref}`Ex:EigenValues:ToyMigrationModel`) of this chapter to illustrate the power of diagonalization.
 
 ::::::{prf:example}
 :label: Ex:Diagonalize:DiagonalizeMigration

@@ -1709,7 +1709,7 @@ $$
 The following proposition combines the results of the last two exercises.
 
 ::::::{prf:proposition}
-:label: Exc:BasisDim:RankAPEqualToRankPA
+:label: Prop:BasisDim:RankAPEqualToRankPA
 
 Suppose that $A$ and $P$ are $n\times n$ matrices and $P$ is _invertible_. Then
 
