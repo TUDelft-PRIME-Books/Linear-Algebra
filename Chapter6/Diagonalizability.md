@@ -843,7 +843,7 @@ $$
 ::::::
 
 ::::::{grasple} 
-:url: https://embed.grasple.com/exercises/
+:url: https://embed.grasple.com/exercises/70b5964e-b6c7-4a64-a2e3-d10dc915f324?id=91503
 :label: grasple_exercise_6_3_7 
 :dropdown:
 :description:  To investigate the diagonalizability of a ($3 \times 3$) matrix. 
