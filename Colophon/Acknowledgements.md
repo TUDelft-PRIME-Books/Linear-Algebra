@@ -57,7 +57,7 @@ J.A. (Hans) Verheij
 
 [Dr. S.K.J. (Sven) Aerts](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/dr-skj-sven-aerts)
 
-Amin Ayman
+A. (Amin) Ayman
 
 [Dr. F.J. (Fokko) van de Bult](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/analysis/people/dr-fj-fokko-van-de-bult)
 
