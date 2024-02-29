@@ -2,6 +2,7 @@
 title: "Linear Algebra"
 author: 'a team of lecturers and developers from the Delft Institute of Applied Mathematics from the TU Delft University of Technology.'
 only_build_toc_files: true
+logo: TUDelft_logo_descriptor_rgb.png
 
 html:
   theme_options:
@@ -33,6 +34,11 @@ parse:
     myst_heading_anchors : 5
 sphinx:
   config:
+    html_theme_options:
+      logo:
+        text: "Linear Algebra"
+        image_light: TUDelft_logo_descriptor_rgb.png
+        image_dark: TUDelft_logo_descriptor_white.png
     html_static_path: 
       - _static
     numfig_secnum_depth: 2
