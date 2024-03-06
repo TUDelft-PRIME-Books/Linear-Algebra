@@ -1,6 +1,12 @@
 # in _config.yml
 title: "Linear Algebra"
-author: 'a team of lecturers and developers from the Delft Institute of Applied Mathematics from the TU Delft University of Technology.'
+author: 'a team of lecturers and developers from the Delft Institute of Applied Mathematics from the TU Delft University of Technology.</br>
+        <div style="font-size:150%;font-weight:bold">Have you spotted a mistake or an error on this page?
+        Click <a id="mailer">here</a> to tell us!</div>
+        <script>
+        var mailer = document.getElementById("mailer");
+        mailer.href = "mailto:openlinearalgebrabook@tudelft.nl?subject=Mistake/Error found at " + window.location.href
+        </script>'
 only_build_toc_files: true
 copyright: "2024"
 
