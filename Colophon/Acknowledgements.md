@@ -53,6 +53,8 @@ J.A. (Hans) Verheij
 
 [C. (Caren) de Vries](https://www.linkedin.com/in/caren-de-vries-b67908249)
 
+[V. (Vincent) Wassenaar BSc](https://www.linkedin.com/in/vincent-wassenaar-015508a4/)
+
 ## Reviewers
 
 [Dr. S.K.J. (Sven) Aerts](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/dr-skj-sven-aerts)
