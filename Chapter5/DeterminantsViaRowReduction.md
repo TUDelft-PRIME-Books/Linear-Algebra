@@ -490,14 +490,7 @@ We treat the statements one by
 
 <li>
 
-For each $n \times n$ matrix $A$ it holds that
-
-<BR>
-
-$$
-\text{det}\big(A^k\big)= \big(\det{A}\big)^k.
-$$
-
+For each $n \times n$ matrix $A$ it holds that $\text{det}\big(A^k\big)= \big(\det{A}\big)^k$. 
 This is true, and follows from repeatedly using the property $\det(AB) = \det(A)\det(B)$. Namely,
 
 <BR>
