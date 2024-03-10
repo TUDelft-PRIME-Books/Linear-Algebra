@@ -82,7 +82,7 @@ $$
               \{\vect{b}_1, \ldots, \vect{b}_m\} \text{ linearly independent}.
 $$
 
-Let $ \vect{v}$ be an arbitrary element of $S$. As $ \vect{v} \in \Span{\vect{b}\1, \ldots, \vect{b}_m}$,
+Let $ \vect{v}$ be an arbitrary element of $S$. As $ \vect{v} \in \Span{\vect{b}_1, \ldots, \vect{b}_m}$,
 
 $$
    \vect{v} = c_1\vect{b}_1 + c_2\vect{b}_2 + \ldots + c_m\vect{b}_m
@@ -344,6 +344,22 @@ $$
 :label: Exc:ChangeOfBasis:InvertiblePB
 
 Show that every change-of-coordinates matrix $P_{\mc{B}}$ is invertible.
+::::
+
+
+::::{solution} Exc:ChangeOfBasis:InvertiblePB
+:class: dropdown
+
+Let $\mc{B} = \{\vect{b}_1,\vect{b}_2, \ldots, \vect{b}_n\}$ be any basis of $\R^n$.
+<BR>
+By definition 
+
+$$
+   P_{\mc{B}} = [\,\vect{b}_1\,\,\vect{b}_2\,\,\ldots\,\,\vect{b}_n\,].
+$$
+
+This is an $n \times n$ matrix with $n$ linearly independent columns, so it is an invertible matrix.
+
 ::::
 
 The following proposition is an immediate consequence of
@@ -843,7 +859,7 @@ $$
 and as such gives a quick way to go from an alternative basis to the standard basis.
 
 ::::{exercise}
-:label: Exc:ChangeOfBasis:ProjectionOntoPlane
+:label: Exc:ChangeOfBasis:PinvAPversusPBinvP
 
 Suppose $P$ is an invertible matrix.
 
@@ -854,6 +870,21 @@ $$
 $$
 
 ::::
+
+
+
+::::{solution} Exc:ChangeOfBasis:PinvAPversusPBinvP
+:class: dropdown
+
+Multiply both sides from the left by $P$ and from the right by $P^{-1}$,
+and use that $P^{-1}P = PP^{-1} = I$:
+
+$$
+   B = P^{-1}AP  \iff  PBP^{-1} = P(P^{-1}AP)P^{-1} = PP^{-1}APP^{-1} = A.
+$$
+
+::::
+
 
 ::::{prf:example}
 :label: Ex:ChangeOfBasis:MatrixOrthProjection
