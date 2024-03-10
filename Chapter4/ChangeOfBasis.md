@@ -1,4 +1,4 @@
-\_(Sec:BasisChange)=
+(Sec:BasisChange)=
 
 # Change of Basis
 
@@ -421,9 +421,7 @@ In {numref}`Sec:LinTrafo` we have seen that every linear transformation $T:\R^n 
 ::::{math}
 :label: Eq:ChangeOfBasis:StandardMatrix
 
-$$
 A = \begin{bmatrix} T(\vect{e}_1) & T(\vect{e}_2) & \ldots & T(\vect{e}_n) \end{bmatrix}.
-$$
 
 ::::
 
@@ -817,7 +815,7 @@ of $T$ with respect to the basis $\mc{B}$ is given by
 :::{math}
 :label: Eq:ChangeOfBasis:MatrixChangeStandardBasis
 
-$[T]_{\mc{B}} = P^{-1}AP.$
+[T]_{\mc{B}} = P^{-1}AP.
 
 :::
 
@@ -912,22 +910,32 @@ and we can write down the standard matrix in one stroke:
 
 ::::
 
-::::{prf:example}
+::::{exercise}
 :label: Exc:ChangeOfBasis:CheckIdempotent
 
 As was shown in {prf:ref}`Prop:GeomLinTrans:ProjSquaredisProj` of {numref}`Subsec:GeomLinTrans:Proj` the matrix $A$ of a projection has to satisfy the identity
-$A^2=A$. Show that the matrix $[T]_{\mc{E}}$ of {numref}`Exc:ChangeOfBasis:ProjectionOntoPlane` indeed satisfies this identity.
+$A^2=A$. Show that the matrix $[T]_{\mc{E}}$ of {prf:ref}`Ex:ChangeOfBasis:MatrixOrthProjection` indeed satisfies this identity.
 
-(To verify this you don't have to compute the matrix as given by Equation {eq}`Eq:ChangeOfBasis:ProjMatrix` explicitly.)
+(To verify this you don't have to compute the matrix as given by Equation {eq}`Eq:ChangeOfBasis:ProjMatrix` explicitly!)
+
+::::
+
+::::{solution} Exc:ChangeOfBasis:CheckIdempotent
+:class: dropdown
+
+Obviously the matrix  $B = [T]_{\mc{B}} =  \begin{bmatrix}1 & 0 & 0\\0& 1& 0\\0&0&0  \end{bmatrix}$   has the property  $B^2 = B$.
+
+It follows that the matrix  $A = P_{\mathcal{B}} B P_{\mathcal{B}}^{-1} = PBP^{-1}$ has it too:
+
+$$
+   A^2 = PBP^{-1}PBP^{-1} = PB^2 P^{-1} = PBP^{-1} = A. 
+$$
 
 ::::
 
 In the last subsection we will generalize the formula to the more general situation of a linear transformation from $\R^n$ to $\R^m$ and arbitrary bases $\mc{B},\mc{B}'$ for $\R^n$, and
 $\mc{C},\mc{C}'$ for $\R^m$.
 
-<div style="color: red; font-size: 30px; text-align: center">
-A subsection with the general transformation formula is still under construction.
-</div>
 
 (Subsec:ChangeOfBasis:GeneralTransformationFormula)=
 
@@ -1014,8 +1022,8 @@ $$
 Suppose $\mc{B}, \mc{C}$ and $\mc{D}$ are three bases of $\R^n$.
 What is the relation between the
 change-of-coordinates matrices
-$ P*{\mc{B}\leftarrow\mc{C}}, \quad
-P*{\mc{B}\leftarrow\mc{D}} \quad \text{and} \quad P\_{\mc{C}\leftarrow\mc{D}}$?
+$ P_{\mc{B}\leftarrow\mc{C}}, \quad
+P_{\mc{B}\leftarrow\mc{D}} \quad \text{and} \quad P_{\mc{C}\leftarrow\mc{D}}$?
 
 ::::
 
@@ -1023,7 +1031,7 @@ With the chosen notation for the change-of-coordinates matrix, the transformatio
 becomes very natural. As is stated in the next theorem.
 
 ::::{prf:theorem}
-:label: EThmChangeOfBasis:MatrixChangeGeneralBasis
+:label: ThmChangeOfBasis:MatrixChangeGeneralBasis
 
 Suppose $\mc{B}$ and $\mc{B}'$ are two bases of $\R^n$,
 and $\mc{C}$ and $\mc{C}'$ are two bases of $\R^m$.
@@ -1034,10 +1042,9 @@ is as follows
 :::{math}
 :label: Eq:ChangeOfBasis:MatrixChangeGeneralBasis
 
-$
 [T]_{\mc{C}'\leftarrow \mc{B}'} = P_{\mc{C}'\leftarrow\mc{C}}[T]_{\mc{C}\leftarrow \mc{B}} P_{\mc{B}\leftarrow\mc{B}'} =
 \left(P_{\mc{C} \leftarrow\mc{C}'}\right)^{-1}[T]_{\mc{C}\leftarrow \mc{B}} P_{\mc{B}\leftarrow\mc{B}'}.
-$
+
 :::
 
 ::::
@@ -1117,3 +1124,140 @@ $$
 
 must be equal.
 ::::
+
+## Grasple Exercises
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/b19d38ef-60cf-4581-a4b2-9aa2efcf6f30?id=90868
+:label: grasple_exercise_4_3_1
+:dropdown:
+:description: To find $[\vect{x}]_{\mathcal{B}}$ for some vector $\vect{x}$ and basis $\mathcal{B}$ in $\R^2$.
+
+::::
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/3008a6aa-58ee-4182-8fd1-9d452ac3e9f0?id=90867
+:label: grasple_exercise_4_3_2
+:dropdown:
+:description: One more like the previous.
+
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/18d96cbf-6158-4800-9a10-3ec7f6e933f8?id=90885
+:label: grasple_exercise_4_3_3
+:dropdown:
+:description: To find  $[\vect{v}_i]_{\mathcal{B}}$ for several vectors $\vect{v}_i$ in $\R^2$.
+
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/dfad4903-b2a8-4f67-979e-5651cf4072ec?id=90872
+:label: grasple_exercise_4_3_4
+:dropdown:
+:description: Finding $[\vect{x}]_{\mathcal{B}}$ using a figure.
+
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/d6e53d94-578e-48fe-96b6-aca26f4eca1c?id=90870
+:label: grasple_exercise_4_3_5
+:dropdown:
+:description: One more like the previous.
+
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/75c6d18b-8a54-4592-97f4-edd77169cc10?id=90876
+:label: grasple_exercise_4_3_6
+:dropdown:
+:description: Given $\vect{x} $  and some basis  $\mathcal{B}$ for a subspace in $\R^3$, to find $[\vect{x}]_{\mathcal{B}}$.
+
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/39e1af19-0a32-456b-a414-20056e6b7f16?id=85157
+:label: grasple_exercise_4_3_7
+:dropdown:
+:description: Expressing a vector $\vect{v} \in \R^3$  in  a basis $\mathcal{B} = \{\vect{b}_1,\vect{b}_2,\vect{b}_3\}$.
+
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/b03d9983-3ef2-4d45-82b3-6c1762510561?id=90875
+:label: grasple_exercise_4_3_8
+:dropdown:
+:description: To explain the relation between $\vect{x}$  and $[\vect{x}]_{\mathcal{B}}$.
+
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/784bba91-a0be-4076-9918-63b8ab2fbc49?id=90881
+:label: grasple_exercise_4_3_9
+:dropdown:
+:description: To find out how coordinates change when a basis is reordered.
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/d8894445-4426-4694-8500-229cd47a5288?id=85165
+:label: grasple_exercise_4_3_10
+:dropdown:
+:description: To commute between  $[\vect{v}]_{\mathcal{B}}$  and $[\vect{v}]_{\mathcal{C}}$  in $\R^2$.  
+
+:::: 
+
+
+The rest of the exercises are about matrix representations of linear transformations.
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/2de2a3b5-1d3f-4e79-9421-393d59b9dc87?id=93047
+:label: grasple_exercise_4_3_11
+:dropdown:
+:description:  To transform from $[T]_{\mathcal{E}}$  to  $[T]_{\mathcal{B}}$  for $T$ from $\R^2$ to $\R^2$.
+
+:::: 
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/01e5c371-0139-458c-8f0a-25f35bc03fcb?id=93053
+:label: grasple_exercise_4_3_12
+:dropdown:
+:description: To transform from $[T]_{\mathcal{E}}$  to  $[T]_{\mathcal{B}_2\leftarrow\mathcal{B}_1}$ for $T$ from $\R^2$ to $\R^3$.
+
+:::: 
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/dd1af96d-34d7-407e-9877-c1e8b6495e6f?id=85167
+:label: grasple_exercise_4_3_13
+:dropdown:
+:description: To compute $[T]_{\mathcal{C}\leftarrow\mathcal{B}}$  for $T$ from $\R^2$ to $\R^2$  with respect to several bases. 
+
+:::: 
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/933f3e07-36b6-4db5-a47d-91e276185269?id=85159
+:label: grasple_exercise_4_3_14
+:dropdown:
+:description: To compute $[T]_{\mathcal{C}\leftarrow\mathcal{B}}$, for $T$ from $\R^2$ to $\R^2$.  with respect to several bases. 
+
+:::: 
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/7985ac3f-c432-4b48-9ef1-8ce0914b0f97?id=85162
+:label: grasple_exercise_4_3_15
+:dropdown:
+:description: Like the previous,  for a linear transformation $T$ from $\R^3$ to $\R^2$.
+
+:::: 
