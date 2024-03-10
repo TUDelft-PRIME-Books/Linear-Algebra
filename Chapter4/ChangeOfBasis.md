@@ -82,7 +82,7 @@ $$
               \{\vect{b}_1, \ldots, \vect{b}_m\} \text{ linearly independent}.
 $$
 
-Let $ \vect{v}$ be an arbitrary element of $S$. As $ \vect{v} \in \Span{\vect{b}\_1, \ldots, \vect{b}\_m}$,
+Let $ \vect{v}$ be an arbitrary element of $S$. As $ \vect{v} \in \Span{\vect{b}\1, \ldots, \vect{b}_m}$,
 
 $$
    \vect{v} = c_1\vect{b}_1 + c_2\vect{b}_2 + \ldots + c_m\vect{b}_m
@@ -100,7 +100,7 @@ for constants $d_1,d_2,\ldots,d_m$.
 Then we have to show that in fact
 
 $$
-  c_1 = d_1, \quad  c_2 = d_2, \quad .\,.\,.\,\,, \quad   c_m = d_m.
+  c_1 = d_1, \quad  c_2 = d_2, \quad \ldots , \quad   c_m = d_m.
 $$
 
 This can be done as follows: subtracting the two expressions for $\vect{v}$ gives
@@ -174,7 +174,7 @@ $$
 $$
 
 Likewise the vector $\vect{w}$ has the coordinate vector
-$ [\vect{w}]\_{\mc B} = \begin{bmatrix} 2 \\ -2\end{bmatrix}$.
+$ [\vect{w}]_{\mc B} = \begin{bmatrix} 2 \\ -2\end{bmatrix}$.
 
 Namely,
 
@@ -194,7 +194,7 @@ The basis $\{\vect{b}_1,\vect{b}_2\}$ of {prf:ref}`Ex:ChangeOfBasis:BasicExample
 ::::::{prf:remark}
 :label: Rem:ChangeOfBasis:ConventionBasis
 
-A note of warning. Strictly speaking a basis is an _ordered_ set of vectors. By the we mean that the set $\mathcal{B} = \{\vect{b}_1,\vect{b}_2\}$ and the set $\mathcal{B}' = \{\vect{b}_2,\vect{b}_1\}$ are the same. However,
+A note of warning. Strictly speaking a basis is an _ordered_ set of vectors. By this we mean that the set $\mathcal{B} = \{\vect{b}_1,\vect{b}_2\}$ and the set $\mathcal{B}' = \{\vect{b}_2,\vect{b}_1\}$ are the same. However,
 as bases we should consider them as different. This becomes important when we work with coordinates.
 <BR>
 $[\vect{v}]_{\mathcal{B}} = \begin{bmatrix}c_1\\c_2 \end{bmatrix}$ means that $\vect{v} = c_1\vect{b}_1+c_2\vect{b}_2$,
@@ -369,7 +369,7 @@ $\mc{B} = \{\vect{b}_1, \vect{b}_2 \} =
 The change-of-coordinates matrix from basis $\mc{B}$ to the standard basis is given by
 
 $$
-  P_{\mc{B}} =  \begin{bmatrix} \vect{b}_1 & \vect{b}_2 \end{bmatrix} = \begin{bmatrix} 1& 2 \\ 3&1\end{bmatrix}
+  P_{\mc{B}} =  \begin{bmatrix} \vect{b}_1 & \vect{b}_2 \end{bmatrix} = \begin{bmatrix} 1& 2 \\ 3&1\end{bmatrix}.
 $$
 
 The inverse matrix then becomes
@@ -403,7 +403,7 @@ $$
      x'= \gamma (x - vt) \\
      y'= y \\
      z'= z \\
-     t'= \gamma \left( t - \frac{c}{v^2} x \right)
+     t'= \gamma \left( t - \dfrac{c}{v^2} x \right)
   \end{cases}
 $$
 
@@ -464,9 +464,8 @@ Because of the linearity of $T$ we then have
 :::{math}
 :label: Eq:ChangeOfBasis:LinearityTransform
 
-$$
+
 T(\vect{v}) = f_1T(\vect{b}_1) + f_2T(\vect{b}_2) + \ldots + f_nT(\vect{b}_n).
-$$
 
 :::
 
@@ -475,9 +474,8 @@ Now we take the coordinate vectors with respect to basis $\mc{C}$:
 :::{math}
 :label: Eq:ChangeOfBasis:LinearityCoords
 
-$$
 [T(\vect{v})]_{\mc{C}} = f_1[T(\vect{b}_1)]_{\mc{C}} + f_2[T(\vect{b}_2)]_{\mc{C}} + \ldots + f_n[T(\vect{b}_n)]_{\mc{C}}.
-$$
+
 
 :::
 
@@ -489,8 +487,8 @@ $$
     \begin{array}{rcl}
     [T(\vect{v})]_{\mc{C}} &=& \left[ [\,T(\vect{b}_1)]_{\mc{C}}\,\,\,\rule[-1ex]{0ex}{4ex}\,\ldots\,\,[T(\vect{b}_n)]_{\mc{C}}\,\right]
                                     \begin{bmatrix} f_1 \\ \vdots \\ f_n \end{bmatrix} \\
-    &=& \left[\,[T(\vect{b}_1)]_{\mc{C}}\,\,\,\rule[-0.5ex]{0ex}{3ex}\,\ldots\,\,[T(\vect{b}_n)]_{\mc{C}}\,\right][\vect{v}]_{\mc{B}}
-     \end{array}.
+    &=& \left[\,[T(\vect{b}_1)]_{\mc{C}}\,\,\,\rule[-0.5ex]{0ex}{3ex}\,\ldots\,\,[T(\vect{b}_n)]_{\mc{C}}\,\right][\vect{v}]_{\mc{B}}.
+     \end{array}
 $$
 
 ::::
@@ -518,7 +516,7 @@ $$
 
 ::::
 
-{prf:ref}`Prop:ChangeOfBasis:MatrixOfTrafo` is fairly general. We will mostly use it in the situation where the linear transformation goes from $\R^n$ to itself, and where we use the same basis $\mc{B}$ in the domain and codomain. However, we introduce a new notation for the general case first.
+{prf:ref}`Prop:ChangeOfBasis:MatrixOfTrafo` is fairly general. We will mostly use it in the situation where the linear transformation goes from $\R^n$ to itself, and where we use the same basis $\mc{B}$ in the domain and codomain. Before we do so, we introduce a new notation for the general case.
 
 ::::{prf:definition}
 :label: Dfn:ChangeOfBasis:Matrix-wrt-Basis
@@ -542,7 +540,7 @@ and call this simply **the matrix of $T$ with respect to basis $\mathcal{B}$**.
 
 ::::
 
-If we let $\mc{B}$ be the standard basis $\mc{E}$ of $\R^n$ and $\mc{C}$ is the standard basis $\mc{E'}$ of $\R^m$ we get the following
+If we let $\mc{B}$ be the standard basis $\mc{E}$ of $\R^n$ and $\mc{C}$ is the standard basis $\mc{E'}$ of $\R^m$ we get the following:
 
 $$
     [T]_{\mc{E}'\leftarrow \mc{E}}   \,=\,\,
@@ -684,7 +682,7 @@ In {prf:ref}`Ex:ChangeOfBasis:Reflection` and {prf:ref}`Ex:ChangeOfBasis:Rotatio
 
 ## The Relation between $[T]_{\mc{E}}$ and $[T]_{\mc{B}}$
 
-We have seen how to convert vectors from one coordinate system (i.e., basis) to another, and also how to construct the matrix of a linear transformation with respect to an arbitrary basis. In this section we will present a ready-made formula that connects the matrices with respect to two different bases. We will restrict ourselves to the common situation where we have a transformation from $\R^n$ to itself, and where one of the bases is the standard basis.
+We have seen how to convert vectors from one coordinate system (i.e., basis) to another, and also how to construct the matrix of a linear transformation with respect to an arbitrary basis. In this section we will present a ready-made formula that connects the matrices with respect to two different bases. In this subsection we will restrict ourselves to the common situation of a linear transformation from $\R^n$ to itself,  where one of the bases is the standard basis.
 
 We start with an example that illustrates the underlying ideas.
 
@@ -774,7 +772,7 @@ We see that the matrix $P^{-1}AP$ does the job:
 :::{math}
 :label: Eq:ChangeOfBasis:PAPinv
 
-[T]\_{\mc{B}} \,=\, P^{-1}AP.
+[T]_{\mc{B}} \,=\, P^{-1}AP.
 
 :::
 
@@ -933,7 +931,7 @@ $$
 
 ::::
 
-In the last subsection we will generalize the formula to the more general situation of a linear transformation from $\R^n$ to $\R^m$ and arbitrary bases $\mc{B},\mc{B}'$ for $\R^n$, and
+In the last subsection we will generalize the formula to the more general situation of a linear transformation from $\R^n$ to $\R^m$ and arbitrary bases $\mc{B},\mc{B}'$ for $\R^n$, and bases
 $\mc{C},\mc{C}'$ for $\R^m$.
 
 
@@ -948,7 +946,7 @@ First of all we will extend the notion of a change-of-coordinates matrix.
 ::::{prf:definition}
 :label: Dfn:ChangeOfBasis:CoBmatrixGeneral
 
-Let ${\mathcal B} = \{\vect{b}_1, \ldots, \vect{b}_n \}$ and ${\mathcal C} = \{\vect{c}_1, \ldots, \vect{c}_n \}$ be two bases of $\R^n$. The **change-of-basis matrix from ${\mathcal B}$ to ${\mathcal C}$** is the matrix
+Let ${\mathcal B} = \{\vect{b}_1, \ldots, \vect{b}_n \}$ and ${\mathcal C} = \{\vect{c}_1, \ldots, \vect{c}_n \}$ be two bases of $\R^n$. The **change-of-coordinates matrix from ${\mathcal B}$ to ${\mathcal C}$** is the matrix
 
 $$
   P_{\mc{C} \leftarrow \mc{B}} =
