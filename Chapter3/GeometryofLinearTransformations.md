@@ -44,15 +44,23 @@ is a linear transformation.
 
 ::::::{prf:proof}
 The proof is a simple application of the definitions. For any $\mathbf{w}_{1},\mathbf{w}_{2}$ in $\mathbb{R}^{n}$, we have
+
+$$
 \begin{align*}
-T*{\mathbf{v}}(\mathbf{w}_{1}+\mathbf{w}_{2})&=\proj*{\mathbf{v}}(\mathbf{w}*{1}+\mathbf{w}_{2})=\frac{(\mathbf{w}_{1}+\mathbf{w}_{2})\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}}\mathbf{v}=\frac{\mathbf{w}_{1}\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}}\mathbf{v}+\frac{\mathbf{w}_{2}\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}}\mathbf{v}\\
+T_{\mathbf{v}}(\mathbf{w}_{1}+\mathbf{w}_{2})&=\proj_{\mathbf{v}}(\mathbf{w}_{1}+\mathbf{w}_{2})=\frac{(\mathbf{w}_{1}+\mathbf{w}_{2})\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}}\mathbf{v}=\frac{\mathbf{w}_{1}\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}}\mathbf{v}+\frac{\mathbf{w}_{2}\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}}\mathbf{v}\\
 &=\proj_{\mathbf{v}}(\mathbf{w}_{1})+\proj_{\mathbf{v}}(\mathbf{w}_{2})=T_{\mathbf{v}}(\mathbf{w}_{1})+T_{\mathbf{v}}(\mathbf{w}_{2}).
 \end{align*}
+$$
+
 Similarly, for any $\mathbf{w}$ in $\mathbb{R}^{n}$ and any $c$ in $\mathbb{R}$ we have
+
+$$
 \begin{align*}
-T*{\mathbf{v}}(c\mathbf{w})&=\proj*{\mathbf{v}}(c\mathbf{w})=\frac{(c\mathbf{w})\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}}=c\,\frac{\mathbf{w}\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}}\mathbf{v}\\
-&=c\,\proj*{\mathbf{v}}(\mathbf{w})=c\,T*{\mathbf{v}}(\mathbf{w}),
+T_{\mathbf{v}}(c\mathbf{w})&=\proj_{\mathbf{v}}(c\mathbf{w})=\frac{(c\mathbf{w})\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}}=c\,\frac{\mathbf{w}\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}}\mathbf{v}\\
+&=c\,\proj_{\mathbf{v}}(\mathbf{w})=c\,T_{\mathbf{v}}(\mathbf{w}),
 \end{align*}
+$$
+
 which finishes the proof.
 
 ::::::

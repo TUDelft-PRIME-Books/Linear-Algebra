@@ -61,6 +61,7 @@ parts:
           - file: 'Chapter9/DynSystDiscrete.md'
           - file: 'Chapter9/MarkovChains.md'
           - file: 'Chapter9/PowerMethod.md'
+          - file: 'Chapter9/DynSystContinuous.md'
   - caption: Appendices
     numbered: True
     chapters:
