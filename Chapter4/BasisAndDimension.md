@@ -6,7 +6,7 @@
 
 The space $\R^n$ is sometimes called "$n$-dimensional space". What do people mean by that?
 When, for instance, we have a plane in $\R^3$, and we look at it "from the inside" (like Flat-landers so to speak),
-things just look as if we `lived' in the plane $\R^2$.
+things just look as if we 'lived' in the plane $\R^2$.
 If you want to know about Flat-landers:
 <a href=https://en.wikisource.org/wiki/Flatland_(second_edition)>Flatland on Wikisource</a>, (or: ISBN:9789085711971).
 
@@ -227,7 +227,7 @@ x_1 \\x_2\\x_3\\x_4
 \end{bmatrix} = \vect{0}.
 $$
 
-The set $\{vect{e}_1, \vect{e}_2, \vect{e}_3, \vect{e}_4\}$ also spans the whole $\R^4$, as for any vector $\vect{x} = \begin{bmatrix}x_1 \\x_2\\x_3\\x_4 \end{bmatrix}$ <br>
+The set $\{\vect{e}_1, \vect{e}_2, \vect{e}_3, \vect{e}_4\}$ also spans the whole $\R^4$, as for any vector $\vect{x} = \begin{bmatrix}x_1 \\x_2\\x_3\\x_4 \end{bmatrix}$ <br>
 it holds that
 $\vect{x} = x_1\vect{e}_1 + x_2\vect{e}_2 + x_3\vect{e}_3 + x_4\vect{e}_4$.
 
@@ -758,7 +758,7 @@ $$
 :class: dropdown
 
 The statement is _false_. <BR>
-For instance, look at {prf:ref}`Ex:BasisDim:FourByFour`. In that example all vectors in $\Col{(E)}$ have a zero on position four, and there are (many) vectors in $\Col{(A)}$ that have a nonzero fourth entry. So definitely $\Col{(A)} \neq \Col{(E)}$
+For instance, look at {prf:ref}`Ex:BasisDim:FourByFour`. In that example all vectors in $\Col{(E)}$ have a zero on position four, and there are (many) vectors in $\Col{(A)}$ that have a nonzero fourth entry. So definitely $\Col{(A)} \neq \Col{(E)}$.
 
 ::::::
 
@@ -994,7 +994,7 @@ c_2
 = c_1\vect{u}_1 + c_2\vect{u}_2.
 $$
 
-Thus $(\vect{u}_1, \vect{u}_2)$ is a basis for $\mathcal{P}$.
+Thus $\{\vect{u}_1, \vect{u}_2\}$  is a basis for $\mathcal{P}$.
 
 We can also take $x_1$ and $x_3$ as free variables, and then find
 
@@ -1128,15 +1128,15 @@ Another way to put it: once it is known that the dimension of $S$ equals $k$, ea
 We first show the "easy" part:
 
 $$
-\text{(i)   and  (ii)} \quad \Longrightarrow \quad   \text{(iii)}.
+\text{i.   and  ii.} \quad \Longrightarrow \quad   \text{iii.}
 $$
 
-Well, if $\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace$ is linearly independent and spans $S$, then it is a basis for $S$. Since all bases of $S$ contain dim $S = k$ vectors, it follows that $\ell = k$.
+Well, if $\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace$ is linearly independent and spans $S$, then it is a basis for $S$. Since all bases of $S$ contain the same number $k = $ dim $S$ vectors, it follows that $\ell = k$.
 
 Next, let us prove
 
 $$
-\text{(i)   and  (iii)} \quad \Longrightarrow \quad   \text{(ii)}.
+\text{i.   and  iii.} \quad \Longrightarrow \quad   \text{ii.}
 $$
 
 So suppose $\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k \rbrace$ is linearly independent, and is contained in $S$. We have to show that
@@ -1177,7 +1177,7 @@ Invoking {prf:ref}`Thm:LinInd:TooManyVectsimpliesLinDep` we get that
 $\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k, \vect{s} \rbrace$
 is linearly dependent.
 
-Since we assumed $ \lbrace\vect{b}\_1, \vect{b}\_2, \ldots, \vect{b}\_k\rbrace$ is linearly independent, we may conclude that
+Since we assumed $ \lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k\rbrace$ is linearly independent, we may conclude that
 
 $$
 \vect{s} \in \Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k}.
@@ -1199,7 +1199,7 @@ The remaining part we leave to the reader.
 In {prf:ref}`Prop:BasisDim:TwoOfThreeSuffice` prove
 
 $$
-\text{(ii)   and   (iii)}  \quad  \Longrightarrow \quad     \text{(i)}.
+\text{ii.   and   iii.}  \quad  \Longrightarrow \quad     \text{i.}
 $$
 
 ::::::
@@ -1226,7 +1226,7 @@ From the {prf:ref}`Prop:BasisDim:TwoOfThreeSuffice` it follows that _any_ set of
 
 Any set $S$ of $n$ independent vectors in $\R^n$ spans $\R^n$.
 
-Namely we know that $\R^n$ has dimension $n$, so such a set $S$ satisfies (i) and (iii).
+Namely we know that $\R^n$ has dimension $n$, so such a set $S$ satisfies i. and iii. of {prf:ref}`Prop:BasisDim:TwoOfThreeSuffice`.
 
 Of course this statement can also be proved by an argument involving pivots.
 
@@ -1442,7 +1442,7 @@ $$
 \Row{B} \subseteq  \Row{A}.
 $$
 
-Since the equivalence works two-ways we can interchange $A$ and $B$ and conclude that also
+Since the equivalence works  both ways we can interchange $A$ and $B$ and conclude that also
 
 $$
 \Row{A}  \subseteq  \Row{B},
@@ -1526,7 +1526,7 @@ $$
 }.
 $$
 
-Note that for a basis of the row space we don't have to go "back" from the rows of the echelon matrix to the "corresponding" rows of $A$. As a matter of fact,
+Note that for a basis of the row space we don't have to go "back" from the rows of the echelon matrix to the corresponding rows of $A$. As a matter of fact,
 this may lead to a wrong conclusion, as there is no one-to-one correspondence between the rows of $A$ and the rows of $E$. The reason is that during the row reduction process rows may have been swapped.
 
 ::::::
@@ -1762,7 +1762,7 @@ $$
 \text{rank}\, A + \text{rank}\, B \leq n.
 $$
 
-Does the conclusion also hold if $A$ is an $m\times n$ matrix and
+Does the conclusion also hold when $A$ is an $m\times n$ matrix and
 $B$ is an $n\times m$ matrix?
 
 ::::::

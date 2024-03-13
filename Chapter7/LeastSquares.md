@@ -481,7 +481,7 @@ $$
   \text{proj}_{\text{Col} A}(\vect{b}) = c_1\vect{a}_1 + \ldots + c_n\vect{a}_n = A \vect{c}.
 $$
 
-If the columns $\vect{a}_1, \ldots, \vect{a}_n$ of $A$ are linearly independent, the coefficients $c_i$ are the coordinates with respect to the basis ${\vect{a}_1, \ldots, \vect{a}_n\}$, hence they are unique. Thus in that case the normal equations
+If the columns $\vect{a}_1, \ldots, \vect{a}_n$ of $A$ are linearly independent, the coefficients $c_i$ are the coordinates with respect to the basis $\{\vect{a}_1, \ldots, \vect{a}_n\}$, hence they are unique. Thus in that case the normal equations
 
 $$
   A^TA \vect{x} = A^T\vect{b}
@@ -623,7 +623,7 @@ Note that the orthogonality of the columns leads to a coefficient matrix $A^TA$ 
 The normal equations can be solved in one stroke.
 
 This (again) yields the least squares
-solution $\hat{x} =\left[\begin{array}{c} 4 \\ 1  \end{array}   \right]$.
+solution $\hat{\vect{x}} =\left[\begin{array}{c} 4 \\ 1  \end{array}   \right]$.
 
 ::::
 
@@ -632,7 +632,7 @@ The previous example can be generalized as follows.
 If the columns $\{\vect{a}_1, \ldots, \vect{a}_n\}$ of an $m \times n$ matrix $A$ form a set of non-zero, _orthogonal_ vectors in $\R^m$, then the orthogonal projection
 
 $$
-   c_1\vect{a}_1 + c_2\vect{a}_2 + \ldots c_n\vect{a}_n
+   c_1\vect{a}_1 + c_2\vect{a}_2 + \cdots + c_n\vect{a}_n
 $$
 
 of a vector $\vect{b}$ in $\R^m$ onto Col $A$ is found by solving the normal equations
@@ -663,7 +663,7 @@ $$
   \left[  \begin{array}{c}  \vect{a}_1\ip\vect{b} \\ \vect{a}_2\ip\vect{b} \\ \vdots \\ \vect{a}_n\ip\vect{b}   \end{array} \right].
 $$
 
-Which leads to the good old expressions $x_i = \dfrac{\vect{a}_i\ip\vect{b}}{\vect{a}_i\ip\vect{a}_i} =  \dfrac{\vect{b}\ip\vect{a}_i}{\vect{a}_i\ip\vect{a}_i}$.
+Which leads to the good old expressions &nbsp; $c_i = \dfrac{\vect{a}_i\ip\vect{b}}{\vect{a}_i\ip\vect{a}_i} =  \dfrac{\vect{b}\ip\vect{a}_i}{\vect{a}_i\ip\vect{a}_i}$.
 
 As before ({prf:ref}`Thm:OrthoBase:OrthoDecomp`) the orthogonal projection becomes
 
@@ -905,7 +905,7 @@ $$
 :url: https://embed.grasple.com/exercises/6a0628e8-065d-4390-b0c4-8ff131761de4?id=91161
 :label: grasple_exercise_7_4_5
 :dropdown:
-:description: LS solution + LS error for $3\times 2$ system.
+:description: LS solution + LS error for a 3x2 system.
 
 ::::
 
@@ -913,7 +913,7 @@ $$
 :url: https://embed.grasple.com/exercises/1d9a943a-b51f-48c9-99a9-691b80b8df60?id=91159
 :label: grasple_exercise_7_4_6
 :dropdown:
-:description: LS solution + LS error for $4\times 2$ system.
+:description: LS solution + LS error for a 4x4 system.
 
 ::::
 
@@ -921,7 +921,7 @@ $$
 :url: https://embed.grasple.com/exercises/d7480f19-afdb-474d-8542-299fc21a1952?id=91908
 :label: grasple_exercise_7_4_7
 :dropdown:
-:description: LS solution + LS error for $4\times 3$ system.
+:description: LS solution + LS error for a 4x3 system.
 
 ::::
 
@@ -937,7 +937,7 @@ $$
 :url: https://embed.grasple.com/exercises/743d744c-1bcb-460a-973e-3e693e86e20d?id=91157  
 :label: grasple_exercise_7_4_9
 :dropdown:
-:description: LS solutions + LS error for $3\times 2$ system.
+:description: LS solution + LS error for a 3x2 system.
 
 ::::
 
@@ -945,7 +945,7 @@ $$
 :url: https://embed.grasple.com/exercises/b081f76a-0e03-48cc-b27b-afab51ac2c91?id=91155
 :label: grasple_exercise_7_4_10
 :dropdown:
-:description: LS solutions + LS error for $4\times 3$ system.
+:description: LS solutions + LS error for a 4x3 system.
 
 ::::
 
@@ -953,7 +953,7 @@ $$
 :url: https://embed.grasple.com/exercises/679d1581-08bc-416b-89bf-766faad9f118?id=91394
 :label: grasple_exercise_7_4_11
 :dropdown:
-:description: Finding the LS solution for $4\times 3$ system (involving quite some reduction work)
+:description: Finding the LS solution for a 4x3 system (involving quite some reduction work)
 
 ::::
 
@@ -961,7 +961,7 @@ $$
 :url: https://embed.grasple.com/exercises/3d0a7884-09ee-4f89-a2e5-1c1476d7e2a3?id=91448
 :label: grasple_exercise_7_4_12
 :dropdown:
-:description: Finding the LS solution for $4\times 3$ system (with some tricky reduction work)
+:description: Finding the LS solution for a 4x3 system (with some tricky reduction work)
 
 ::::
 
@@ -1457,13 +1457,13 @@ Least squares fitting via logarithmic scale
 :url: https://embed.grasple.com/exercises/ff6329bd-f5b3-41ce-828f-2086cf651181?id=91898
 :label: grasple_exercise_7_4_19
 :dropdown:
-:description: Design matrix to fit y = ax + bx^3 to a set of points
+:description: Design matrix to fit $y = ax + bx^3$ to a set of points
 
 ::::
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/f75014bf-0e90-43e7-acf4-216cb38ffd11?id=91903
 :label: grasple_exercise_7_4_20
 :dropdown:
-:description: Design matrix to fit y = c1 e^t + c2 cos(x) + c3 sin(x) to a set of points
+:description: Design matrix to fit $y = c_1 e^t + c_2 \cos(x) + c_3 \sin(x)$ to a set of points
 
 ::::

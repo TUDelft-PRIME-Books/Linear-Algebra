@@ -27,6 +27,8 @@ Below you can find a list of contributors to this book. The contributors are gro
 
 [R.C.M. (Rens) Dur BSc](https://www.linkedin.com/in/rensdur/)
 
+[B.E. (Beryl) van Gelderen BSc](https://www.linkedin.com/in/berylvg/)
+
 [P.F. (Pauline) Hengst](https://www.linkedin.com/in/p-hengst/)
 
 [Dr.ir. T.M.L. (Teun) Janssen](https://www.tudelft.nl/en/eemcs/the-faculty/departments/applied-mathematics/people/dr-ir-tml-teun-janssen)
@@ -51,11 +53,13 @@ J.A. (Hans) Verheij
 
 [C. (Caren) de Vries](https://www.linkedin.com/in/caren-de-vries-b67908249)
 
+[V. (Vincent) Wassenaar BSc](https://www.linkedin.com/in/vincent-wassenaar-015508a4/)
+
 ## Reviewers
 
 [Dr. S.K.J. (Sven) Aerts](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/dr-skj-sven-aerts)
 
-Amin Ayman
+A. (Amin) Ayman
 
 [Dr. F.J. (Fokko) van de Bult](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/analysis/people/dr-fj-fokko-van-de-bult)
 
@@ -69,7 +73,7 @@ Amin Ayman
 
 [Dr.ir. R.F. (René) Swarttouw](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/analysis/people/dr-rf-rene-swarttouw)
 
-[Mehrdad Mihankhah](https://www.linkedin.com/in/mehrdad-mihankhah/)
+[M. (Mehrdad) Mihankhah](https://www.linkedin.com/in/mehrdad-mihankhah/)
 
 ## Support and others
 

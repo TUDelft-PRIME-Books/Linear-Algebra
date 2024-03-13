@@ -4,6 +4,10 @@ root: index.md
 options:
   numbered: true
 parts:
+  - caption:
+    numbered: False
+    chapters:
+      - file: Introduction.md
   - caption: Main content
     numbered: True
     chapters:
