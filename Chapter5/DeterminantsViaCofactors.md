@@ -2,6 +2,11 @@
 
 # Determinants via Cofactor Expansion
 
+(Sec:DetCofactors:Definition)=
+
+## Definition of an $n \times n$ determinant
+
+
 In {numref}`Sec:DetGeometric` we have defined determinants of 2 by 2 and 3 by 3 matrices in a geometric way.
 We start with the general definition straightaway.
 
@@ -132,7 +137,7 @@ and
 :::::{math}
 :label: Eq:DetCofactors:3x3determinant
 
-$
+
 \left|\begin{array}{rrr} a_{11} & a_{12} & a_{13} \\
 a_{21} & a_{22} & a_{23} \\
 a_{31} & a_{32} & a_{33}
@@ -140,7 +145,7 @@ a_{31} & a_{32} & a_{33}
 \begin{array}{lcl}
 &=&   a_{11}a_{22}a_{33} - a_{11}a_{23}a_{32} +a_ {12}a_{23}a_{31} \\
 & & \quad - a_{12}a_{21}a_{33} + a_{13}a_{21}a_{32} - a_{13}a_{22}a_{31}. \end{array}
-$
+
 :::::
 
 They contain $2=2\cdot1$ resp. $6 = 3\cdot2\cdot1$ products.
@@ -301,6 +306,10 @@ $$
 
 ::::::
 
+(Sec:DetCofactors:Triangular)=
+
+## Determinants of Triangular Matrices
+
 The next example is meant to illustrate a more general property.
 
 ::::::{prf:example}
@@ -406,6 +415,11 @@ For a lower triangular matrix $L$ a similar argument can be given.
 
 We need to know a little more about determinants to establish this connection with invertibility for all matrices.
 
+(Sec:DetCofactors:Transpose)=
+
+## The Determinant of the Transpose of a Matrix
+
+
 The last property that may be expected to hold as a consequence of {prf:ref}`Thm:DetCofactors:RowOrColumnExpansion` where the rows and the columns play complementary roles is the following.
 
 ::::::{prf:proposition}
@@ -455,3 +469,65 @@ Which gives the same value.
 In fact, by looking at the structure rather than at the numbers, we see the example illustrates that the theorem holds for
 $3 \times 3$ determinants since it holds for $2 \times 2$ determinants.
 In a similar way, the property $\text{det}\big(A^T\big) = \text{det}(A)$ for $4 \times 4$ matrices follows from the correctness for $3 \times 3$ matrices, and this can be (either formally or informally) lifted up to determinants of an arbitrary size.
+
+
+## Grasple Exercises
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/34eb983b-c7e7-40f3-a983-6bfb970f6836?id=93135
+:label: grasple_exercise_5_2_1
+:dropdown:
+:description: To compute the determinant of 2x2 matrix
+
+::::::
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/b86bd320-47cd-45cb-ab88-81b20a48c427?id=93136
+:label: grasple_exercise_5_2_2
+:dropdown:
+:description: To compute the determinant of 3x3 matrix
+
+::::::
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/2f993d71-6a19-435d-a449-cc0dbb8237d5?id=93137
+:label: grasple_exercise_5_2_3
+:dropdown:
+:description: To compute the determinant of 4x4 matrix (with many zeros)
+
+::::::
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/40de4737-1823-425b-b997-a07c53cb2f96?id=93138
+:label: grasple_exercise_5_2_4
+:dropdown:
+:description: To compute the determinant of 4x4 matrix.
+
+::::::
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/57cd522b-6096-416a-a739-fea5cbbc77c9?id=93139
+:label: grasple_exercise_5_2_5
+:dropdown:
+:description: To compute the determinant of an almost upper triangular 4x4 matrix 
+
+::::::
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/25c54a22-eb00-4cbf-ac0c-21b4974a48ff?id=92927
+:label: grasple_exercise_5_2_6
+:dropdown:
+:description: To compute the determinant of 5x5 'structured' matrix
+
+::::::
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/48fedcac-0039-4eaa-9f71-20fa86ed4536?id=93142
+:label: grasple_exercise_5_2_7
+:dropdown:
+:description: To compute the determinant of the products of certain matrices.
+
+::::::
