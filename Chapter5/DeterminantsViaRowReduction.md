@@ -18,6 +18,8 @@ The matrix $A$ is invertible if and only if $\det{A} \neq 0$ .
 </li>
 </ul>
 
+## How Row Operations affect a Determinant
+
 We have seen in {numref}`Sec:DeterminantsViaCofactors` that the cofactor expansion of an $n \times n$ determinant works best using a row (or a column) with many, preferably $n-1$, zeros. When solving a linear system, or finding the inverse of a matrix, we have seen how to create zeros via row reduction. The important thing: row reducing an augmented matrix does not alter the solution(s) of the corresponding linear system. The next proposition
 describes the effect of row operations on a determinant.
 
@@ -300,6 +302,8 @@ $$
 $$
 
 ::::::
+
+## Determinants versus Invertibility
 
 With the knowledge built so far we can show the important property that was already hinted at in {numref}`Sec:DeterminantsViaCofactors`.
 
@@ -738,3 +742,168 @@ $$
 This settles all matters.
 
 ::::::
+
+
+## Grasple Exercises
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/993b010f-3351-4b98-b9b7-1d04c1c959be?id=93143
+:label: grasple_exercise_5_3_1
+:dropdown:
+:description: Relatively simple 4x4 determinant
+
+::::::
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/2d51357d-e56d-4de5-a882-493a795fd222?id=93144
+:label: grasple_exercise_5_3_2
+:dropdown:
+:description: Slightly less simple 4x4 determinant
+
+::::::
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/9974012a-1ac9-439f-919f-2647be1ba4ba?id=92965
+:label: grasple_exercise_5_3_3
+:dropdown:
+:description: To compute a 5x5 determinant with entries in {-2,-1,0,1,2}
+
+::::::
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/4a01fc67-0acc-44aa-9ba2-18c1accae720?id=93145
+:label: grasple_exercise_5_3_4
+:dropdown:
+:description: Finding a structured 5x5 determinant in a smart way
+
+::::::
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/35bff21c-6434-4e4a-b154-965de08479c0?id=93146
+:label: grasple_exercise_5_3_5
+:dropdown:
+:description: Checking linear (in)dependence of $\vect{a}_1,\vect{a}_2,\vect{a}_3$ in $\mathbb{R}^3$ via determinants.
+
+::::::
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/7c4c18ba-96ba-432a-97b0-0a269a0a9f55?id=93147
+:label: grasple_exercise_5_3_6
+:dropdown:
+:description: Checking linear (in)dependence of $\vect{a}_1,\vect{a}_2,\vect{a}_3,\vect{a}_4$ in $\mathbb{R}^4$ via determinants.
+
+::::::
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/5deab9d8-20f3-4b59-b54e-3b61c981c8c7?id=93148
+:label: grasple_exercise_5_3_7
+:dropdown:
+:description: Checking invertibility of a matrix $A$ via det($A$).
+
+::::::
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/5deab9d8-20f3-4b59-b54e-3b61c981c8c7?id=93148
+:label: grasple_exercise_5_3_8
+:dropdown:
+:description: Find $h$ (in matrix $A$) such that $A$ is invertible.
+
+::::::
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/f2e09cfe-9d88-4f7b-a295-bad7feda89e5?id=93150
+:label: grasple_exercise_5_3_9
+:dropdown:
+:description: Finding a parameter $\alpha$ for which a 4x4 determinant has a given value
+
+::::::
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/a5713d1f-696b-42e5-ab74-553eec26b00b?id=93151
+:label: grasple_exercise_5_3_10
+:dropdown:
+:description: To compute det$\left(PBP^{-1}\right)$,  for given $P$ and $B$.
+
+::::::
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/9ab31fa4-6686-4865-8d43-602dc1fe670e?id=93152
+:label: grasple_exercise_5_3_11
+:dropdown:
+:description: To compute det$\left(A^3\right)$ for a given matrix $A$
+
+::::::
+
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/8db6831f-2671-443a-af64-799d1d0d9179?id=93154
+:label: grasple_exercise_5_3_12
+:dropdown:
+:description: To find  det$\left(kA^TB^{-1}\right)$, for  3x3 matrices $A$  and $B$
+
+::::::
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/116e83e9-1db7-47ce-a2f3-ad398aee0201?id=93155
+:label: grasple_exercise_5_3_13
+:dropdown:
+:description: What can det($A$) be, if  $A^2 = kA$?
+
+::::::
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/821d81b1-2cec-4fa4-b4a7-b1f9c32d6e06?id=93156
+:label: grasple_exercise_5_3_14
+:dropdown:
+:description: What about det($A+B$) = det($A$) + det($B$)?
+
+::::::
+
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/5b89a008-2e3d-48a5-a764-0b1b6a3ec4dc?id=93157
+:label: grasple_exercise_5_3_15 
+:dropdown:
+:description: (True/False) det$(A) = 0 \iff A$  has a zero row?
+
+::::::
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/1fcb337d-f906-423a-acd5-8d8c69d4d04b?id=93158
+:label: grasple_exercise_5_3_16
+:dropdown:
+:description: What happens to a determinant under certain row or column operation(s)?
+
+
+::::::
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/e0bfbb0c-002f-485f-9b2f-5249938b6e40?id=93162
+:label: grasple_exercise_5_3_17
+:dropdown:
+:description: What happens to det($A$) if the last column becomes the first?
+
+::::::
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/41f5ca17-ab3e-4487-b5fa-ee325cae85aa?id=93164
+:label: grasple_exercise_5_3_18
+:dropdown:
+:description: What happens to det($A$) if the order of the rows is reversed?
+
+::::::
+
