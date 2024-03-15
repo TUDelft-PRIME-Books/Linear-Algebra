@@ -514,10 +514,10 @@ $ be any $4 \times 4$ matrix.
 Then &nbsp;
 $
 A^{(4)}(\vect{e}_2) = \left[\begin{array}{rrrr}
-a_{11} &a*{12} &a*{13} &0 \\
-a*{21} &a*{22} &a*{23} &1 \\
-a*{31} &a*{32} &a*{33} &0 \\
-a*{41} &a*{42} &a\_{43} &0
+a_{11} &a_{12} &a_{13} &0 \\
+a_{21} &a_{22} &a_{23} &1 \\
+a_{31} &a_{32} &a_{33} &0 \\
+a_{41} &a_{42} &a_{43} &0
 \end{array} \right].$
 
 Expanding along the fourth column gives
@@ -708,6 +708,8 @@ The comparison between the efforts required to compute the inverse via the adjug
 
 ::::::
 
+(Subsec-DetExtras-DetAndCrossProd)=
+
 ## Determinant and cross product
 
 In {numref}`Sec:CrossProduct` the cross product of two vectors $\mathbf{u}$ and $\mathbf{v}$ in $\R^3$ is defined. It is the unique vector $\mathbf{w}$ that is (1) orthogonal to $\mathbf{u}$ and $\mathbf{v}$, with (2) length equal to the area of the parallelogram with sides $\mathbf{u}$ and $\mathbf{v}$, and (3) such that the triple $(\mathbf{u},\mathbf{v},\mathbf{w})$ is 'righthanded' (= positively oriented).
@@ -731,7 +733,6 @@ Conversely, we can write the cross product in terms containing determinants.
 :::{math}
 :label: Eq:DetExtras:DetCrossProd
 
-$$
 \begin{array}{rcl}
 \left[\begin{array}{c} a_1 \\ a_2 \\ a_3         \end{array}\right] \times
 \left[\begin{array}{c}b_1 \\ b_2 \\ b_3         \end{array}\right]
@@ -741,7 +742,7 @@ $$
 - \left|\begin{array}{cc}  a_1 & b_1   \\ a_3 & b_3      \end{array}\right|\vect{e}_2
 + \left|\begin{array}{cc}  a_1 & b_1   \\a_2 & b_2      \end{array}\right|\vect{e}_3.
 \end{array}
-$$
+
 
 :::
 
@@ -765,14 +766,12 @@ define
 :::{math}
 :label: Eq:DetExtras:DetCrossProd-ndim
 
-$$
 \vect{a}^{\ast}_n = \vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1}) =  \left|\begin{array}{ccccc}
 a_{11} & a_{12} & \ldots & a_{1,(n-1)} & \vect{e}_1 \\
 a_{21} & a_{22} & \ldots & a_{2,(n-1)} & \vect{e}_2 \\
 \vdots & \vdots &        &    \vdots   &  \vdots \\
 a_{n1} & a_{n2} & \ldots & a_{n,(n-1)} & \vect{e}_n
 \end{array}\right|.
-$$
 
 :::
 
@@ -913,12 +912,12 @@ The properties follow from the observation that for each vector $\vect{v}$ in $\
 \begin{array}{rcl}
 \vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1})\ip\vect{v}
 &=& \left|\begin{array}{ccccc}
-a*{11} & a*{12} & \ldots & a*{1,(n-1)} & v_1 \\
-a*{21} & a*{22} & \ldots & a*{2,(n-1)} & v*2 \\
+a_{11} & a_{12} & \ldots & a_{1,(n-1)} & v_1 \\
+a_{21} & a_{22} & \ldots & a_{2,(n-1)} & v_2 \\
 \vdots & \vdots & & \vdots & \vdots \\
-a*{n1} & a*{n2} & \ldots & a*{2,(n-1)} & v*n
+a_{n1} & a_{n2} & \ldots & a_{2,(n-1)} & v_n
 \end{array}\right|\\
-&=& \det{[\,\vect{a}\_1\,\, \ldots\,\, \vect{a}*{n-1}\,\,\vect{v}\,]}.
+&=& \det{[\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\,\vect{v}\,]}.
 \end{array}
 :::::
 
@@ -1081,3 +1080,70 @@ $$
 </ol>
  
 ::::::
+
+
+## Grasple Exercises
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/ddb8daf3-3773-44c9-8df0-fe3084a6e7c4?id=93170
+:label: grasple_exercise_5_4_1
+:dropdown:
+:description: To compute the area of a triangle with sides $\vect{u}$ and $\vect{v}$ in the plane.
+::::::
+
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/8d7a0672-6283-4bb1-9b43-b41a03067e40?id=93171
+:label: grasple_exercise_5_4_2
+:dropdown:
+:description: To find a point $C$ on a line, such that  the area of a triangle $ABC$ has a given value.
+
+::::::
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/62770bc4-da31-4212-a713-bb2843b0e580?id=93172
+:label: grasple_exercise_5_4_3
+:dropdown:
+:description: Which points lie on the same side of a plane?
+
+::::::
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/f787e084-9a77-40b4-b755-97890b98cfb6?id=93176
+:label: grasple_exercise_5_4_4
+:dropdown:
+:description: To solve a 3x3 system using Cramer's rule.
+
+::::::
+
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/3add427a-88a3-4da0-8f0a-2bf8bb8781dd?id=93179
+:label: grasple_exercise_5_4_5
+:dropdown:
+:description: Finding two entries in the inverse of a 4x4 matrix  (using the adjoint matrix).
+
+::::::
+
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/8d4a98f7-50ac-4705-8b34-680b7b8395d9?id=93181
+:label: grasple_exercise_5_4_6
+:dropdown:
+:description: To find a vector orthogonal to $\vect{v}_1,\vect{v}_2,\vect{v}_3$ in $\mathbb{R}^4$, with good orientation.
+
+::::::
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/
+:label: grasple_exercise_5_4_7
+:dropdown:
+:description: To compute the normal vector  $N(\vect{a}_1,\vect{a}_2,\vect{a}_3)$ as in {numref}`Subsection %s <Subsec-DetExtras-DetAndCrossProd>`
+
+::::::
+
