@@ -147,6 +147,34 @@ showing that $\vect{y}$ is indeed a solution. This observation leads us to the f
 
 :::{prf:proposition}
 
-If $\lambda is an eigenvalue of $A$ with associated eigenvector $\vect{v}$, then $\vect{y}=\vect{v}e^{\lambda t}$ is a solution of the system of linear differential equations $\vect{x}'=A\vect{x}$.
+If $\lambda$ is an eigenvalue of $A$ with associated eigenvector $\vect{v}$, then $\vect{y}=\vect{v}e^{\lambda t}$ is a solution of the system of linear differential equations $\vect{x}'=A\vect{x}$.
+
+:::
+
+We now know how to solve systems of linear differential equations. But we know more. We also know how a solution $f(t)$ to such a system will behave as $t$ goes to infinity. In practical applications, $t$ usually is time, so this gives us predictions for what happens after a long time.
+
+:::{prf:Example}
+
+Suppose some airborn disease is affecting a population. To keep matters simple, we will assume that the population is constant and that recovery grants full immunity. Let $S(t)$ be the number of susceptible members and $I(t)$ the number of infected members of the population at time $t$. If $\alpha>0$ is the recovery rate and $\beta>0$ is the infection rate, then we find:
+
+$$
+\begin{align*}
+S'(T)&=-\beta S(t)\\
+I'(t)&=\beta S-\alpha I(t) 
+\end{align*}
+\quad\text{so we need the matrix}\quad
+A=\begin{bmatrix}
+-\beta&0\\
+\beta &-\alpha
+\end{bmatrix}.
+$$
+
+Since $A$ is an upper diagonal matrix, we can conclude that its eigenvalues are $-\beta$ and $-\alpha$. Therefore, a solution to the system of linear differential equations $\vect{y}'=A\vect{y}$ is given by 
+
+$$
+\vect{y}=c_{1}\vect{v}_{-\beta}e^{-\beta t}+c_{2}\vect{v}_{-\alpha}e^{-\alpha t}
+$$
+
+where $c_{1}$ and $c_{2}$ are some constants while $\vect{v}_{-\beta}$ and $\vect{v}_{-\alpha}$ are the eigenvectors of $A$ corresponding $-\beta $ and $-\alpha$, respectively.
 
 :::
