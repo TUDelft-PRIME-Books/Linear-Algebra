@@ -158,10 +158,10 @@ We now know how to solve systems of linear differential equations. But we know m
 Suppose some airborn disease is affecting a population. To keep matters simple, we will assume that the population is constant and that recovery grants full immunity. Let $S(t)$ be the number of susceptible members and $I(t)$ the number of infected members of the population at time $t$. If $\alpha>0$ is the recovery rate and $\beta>0$ is the infection rate, then we find:
 
 $$
-\begin{align*}
-S'(T)&=-\beta S(t)\\
-I'(t)&=\beta S-\alpha I(t) 
-\end{align*}
+\begin{array}
+S'(T)&=&-\beta S(t)&\\
+I'(t)&=&\beta S&-\alpha I(t) 
+\end{array}
 \quad\text{so we need the matrix}\quad
 A=\begin{bmatrix}
 -\beta&0\\
