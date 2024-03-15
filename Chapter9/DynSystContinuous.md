@@ -159,10 +159,19 @@ Suppose some airborn disease is affecting a population. To keep matters simple, 
 
 $$
 \begin{array}
-S'(T)&=&-\beta S(t)&\\
-I'(t)&=&\beta S&-\alpha I(t) 
+S'(t)&=&-\beta S(t)&\\
+I'(t)&=&\beta S(t)&-\alpha I(t) 
 \end{array}
-\quad\text{so we need the matrix}\quad
+$$
+
+Define
+
+$$
+\vect{y}=\begin{bmatrix}
+S(t)\\
+I(t)
+\end{bmatrix}
+\quad\text{and}\quad
 A=\begin{bmatrix}
 -\beta&0\\
 \beta &-\alpha
@@ -175,6 +184,6 @@ $$
 \vect{y}=c_{1}\vect{v}_{-\beta}e^{-\beta t}+c_{2}\vect{v}_{-\alpha}e^{-\alpha t}
 $$
 
-where $c_{1}$ and $c_{2}$ are some constants while $\vect{v}_{-\beta}$ and $\vect{v}_{-\alpha}$ are the eigenvectors of $A$ corresponding $-\beta $ and $-\alpha$, respectively.
+where $c_{1}$ and $c_{2}$ are some constants while $\vect{v}_{-\beta}$ and $\vect{v}_{-\alpha}$ are the eigenvectors of $A$ corresponding $-\beta $ and $-\alpha$, respectively. In particular, if $t$ gets very large, we find very large but negative exponents on the right hand side. That is, both $\lim_{t\to\infty}S(t)$ and $\lim_{t\to\infty} I(t)$ are $0$. This makes perfect sense intuitively, as we expect all members of the population to get infected and recover. After that, they are neither susceptible nor infected anymore.
 
 :::
