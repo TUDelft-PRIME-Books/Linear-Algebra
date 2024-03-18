@@ -150,7 +150,7 @@ which are both true identities.
 
 ::::
 
-The solution set may be empty, as in the following example
+The solution set may be empty, as in the following example.
 
 ::::{prf:example}
 :label: Ex:LinSystems:EmptySolutionSet
@@ -1119,7 +1119,7 @@ Interchanging (or: swapping) two rows.
 
 ::::{prf:remark}
 
-Note that these row operations match exactly the row operations of {prf:ref}`Prop:LinSystems:ElimOperations`. This proposition stated that the row operations do not change the solutions of the corresponding linear system.
+Note that these row operations match exactly the operations of {prf:ref}`Prop:LinSystems:ElimOperations`. This proposition stated that the row operations do not change the solutions of the corresponding linear system.
 ::::
 
 ::::{prf:definition}
