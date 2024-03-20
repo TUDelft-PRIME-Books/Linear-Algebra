@@ -466,3 +466,88 @@ The proof of this theorem is not trivial and it requires some work. If the reade
 What we can take out of this theorem is that there always exists a singular value decomposition of a matrix.
 
 ## Linear Least Squares Revisited
+
+
+## Grasple Exercises
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/3fdad317-fc18-4f88-b416-87cbd1d5e708?id=93495
+:label: grasple_exercise_8_3_1
+:dropdown:
+:description: Finding maximal value of $\norm{A\vect{x}}$, if $\norm{\vect{x}}$ ,  $A$ a 3x2 matrix.
+::::
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/e4c651aa-a998-4e19-957b-20ddf41509bf?id=93468
+:label: grasple_exercise_8_3_2
+:dropdown:
+:description: To find the singular values of a 2x2 matrix $A$
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/79d22478-56e3-49ee-9b19-77ab1ad06eaf?id=93470
+:label: grasple_exercise_8_3_3
+:dropdown:
+:description:  To compute an SVD for a 2x2 matrix $A$. 
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/47ebaa77-9f3c-4363-a57e-d37242c6e598?id=93471
+:label: grasple_exercise_8_3_4
+:dropdown:
+:description: To compute an SVD for a 3x2 matrix $A$.
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/10affbae-4221-40f8-bf0e-df626a0e64ae?id=93479
+:label: grasple_exercise_8_3_5
+:dropdown:
+:description: To compute an SVD for a 2x3 matrix $A$ (of rank 1).
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/37ea17f1-1bfb-4a19-b9e2-1292a593dfa3?id=93480
+:label: grasple_exercise_8_3_6
+:dropdown:
+:description: To compute an SVD for a 3x2 matrix $A$ (of rank 1).
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/20dd219a-35f3-48d7-ad9d-35038047336b?id=92586
+:label: grasple_exercise_8_3_7
+:dropdown:
+:description: To compute an SVD for a a matrix $A$ with orthogonal columns.
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/9848d7be-1530-46b0-941f-9ae76e95abfa?id=93481
+:label: grasple_exercise_8_3_8
+:dropdown:
+:description: To draw conclusion about $A$ from a given SVD of $A$.
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/27adae2a-db2a-46fa-800f-49e4c0dfe4fa?id=93487
+:label: grasple_exercise_8_3_9
+:dropdown:
+:description: If $A = U\SigmaV^T$   for an  mxn matrix $A$, what are the sizes of  $U$, $Σ$ and $V$?
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/caac29d1-9700-4a30-8c7c-19ea6148258f?id=93490
+:label: grasple_exercise_8_3_10
+:dropdown:
+:description: To describe the meaning of the singular values of a matrix.
+::::
+
+
+
+
