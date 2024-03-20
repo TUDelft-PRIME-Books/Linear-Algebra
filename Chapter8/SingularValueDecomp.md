@@ -2,11 +2,11 @@
 
 # Singular Value Decomposition (SVD)
 
-We have seen already how to factorise matrices in {numref}`Sec:MatFactor`, with the $LU$ and the $PLU$ factorisations. Another type of factorisation is the QR Decomposition in {numref}`Sec:Gram-Schmidt:QRdecomp`. In this section we will learn a new type of factorisation: the **singular value decomposition** (SVD). We will start with a few more properties of certain symmetric matrices followed by an algorithm for finding a SVD. The last two subsections will be devoted to understanding the decomposition and applications.
+We have seen already how to factorise matrices in {numref}`Sec:MatFactor`, with the $LU$ and the $PLU$ factorisations. Another type of factorisation is the QR Decomposition in {numref}`Sec:Gram-Schmidt:QRdecomp`. In this section we will learn a new type of factorisation: the **singular value decomposition** (SVD). We will start with a few more properties of certain symmetric matrices followed by an algorithm for finding an SVD. The last two subsections will be devoted to understanding the decomposition and applications.
 
 ## More on Symmetric Matrices
 
-Before we get into the singular value decomposition, we will need to further explore symmetric matrices. Let's start with a few properties that will be quite useful.
+Before we get into the singular value decomposition, we will need to further explore symmetric matrices a bit. Let's start with a few properties that will be quite useful.
 
 :::::{prf:proposition}
 :label: Prop:SVD:propsymmat
@@ -18,8 +18,8 @@ Let $A$ be an $m\times n$ matrix with real entries. Then the following propertie
 :type: i
 
 \item The matrices $AA^T$ and $A^TA$ are symmetric.
-\item $\Nul{A} = \Nul{A^TA}$.
-\item $\Rank{A} = \Rank{A^TA}$
+\item $\Nul{A} = \Nul{(A^TA)}$.
+\item $\Rank{A} = \Rank{(A^TA)}$
 \label{Item:Prop:SVD:propsymmat:samerankAandATA}
 \item The eigenvalues of $A^TA$ are real and nonnegative.
 \label{Item:Prop:SVD:propsymmat:nonzeroeigvals}
@@ -36,7 +36,10 @@ Let $A$ be an $m\times n$ matrix with real entries. Then the following propertie
 :type: i
 
 \item Let's prove that $A^TA$ is symmetric. The proof for $AA^T$ is similar.
-$$(A^TA)^T = A^T(A^T)^T = A^TA.$$
+
+$$
+ (A^TA)^T = A^T(A^T)^T = A^TA.
+$$
 
 \item Let $\mathbf{u} \in \Nul{A}$. Then,
 
@@ -44,24 +47,24 @@ $$
 A^TA \mathbf{u} = A^T(A\mathbf{u}) = A^T\mathbf{0} = \mathbf{0}.
 $$
 
-So $\mathbf{u} \in \Nul{A^TA}$.
-Suppose that $\mathbf{v}\in \Nul{A^TA}$ Then, observe that
+So $\mathbf{u} \in \Nul{(A^TA)}$.
+Suppose that $\mathbf{v}\in \Nul{(A^TA)}$,  i.e., $A^TA\vect{v} = \vect{0}$.  Then, observe that
 
 $$
 0 = \mathbf{v}^TA^TA\mathbf{v} = \norm{A\mathbf{v}}^2,
 $$
 
-which implies that $A\mathbf{v}=\mathbf{0}$ and $\mathbf{v}\in\Nul{A}$.
+which implies that  $\norm{A\mathbf{v}}=0$, so $A\mathbf{v}=\mathbf{0}$ and $\mathbf{v}$ lies in $\Nul{A}$.
 
 \item Observe that since $A$ is an $m\times n$ matrix, we have that $A^TA$ is $n\times n$. Now, using {prf:ref}`Thm:BasisDim:RankThm` we have
 
 $$
-\Rank{A} = n - \dim{\Nul{A}} = n - \dim{\Nul{A^TA}} = \Rank{A^TA}.
+\Rank{A} = n - \dim{\Nul{A}} = n - \dim{\Nul{(A^TA)}} = \Rank{(A^TA)}.
 $$
 
 \item Since $A^TA$ is symmetric, the eigenvalues are real due to {prf:ref}`Prop:SymmetricMat:RealEigenvalues`. To see that they are non-negative, let $\mathbf{u}$ be an eigenvector of $A^TA$ with associated eigenvalue $\lambda$. Then,
 
-$$0\le \mathbf{u}^TA^TA\mathbf{u} = \mathbf{u}^T\mathbf{u} = \lambda \norm{\mathbf{u}}^2.$$
+$$0\le \norm{A\vect{u}}^2 = \mathbf{u}^TA^TA\mathbf{u} = \mathbf{u}^T\lambda \mathbf{u} = \lambda \norm{\mathbf{u}}^2.$$
 
 Since $\mathbf{u}\ne \mathbf{0}$ it follows that $\lambda \ge 0$.
 
@@ -71,13 +74,13 @@ $$AA^TA\mathbf{u} = \lambda A\mathbf{u}.$$
 
 Observe that if $A\mathbf{u}=\mathbf{0}$ then $A^TA\mathbf{u} = \mathbf{0}$ and $\lambda =0$, which contradicts the hypothesis of $\lambda \ne 0$. Therefore, $A\mathbf{u}\ne \mathbf{0}$ and $A\mathbf{u}$ is an eigenvector of $AA^T$ with associated eigenvalue $\lambda$.
 
-To prove the reverse, one can follow a similar argument.
+To prove the converse, one can follow a similar argument.
 
 :::
 
 ::::
 
-We want to stress out the importance of property {itemref}`Item:Prop:SVD:propsymmat:nonzeroeigvals`. We knew from {numref}`Sec:SymmetricMat` that the eigenvalues of a symmetric matrix were real. The previous proposition tells us that, in addition, **the eigenvalues of the symmetric matrix $A^TA$ are real and non-negative**. This is a property that will be key for the singular value decomposition.
+We want to stress out the importance of property {itemref}`Item:Prop:SVD:propsymmat:nonzeroeigvals`. We know from {numref}`Sec:SymmetricMat` that the eigenvalues of a symmetric matrix are real. The previous proposition tells us that, in addition, **the eigenvalues of the symmetric matrix $A^TA$ are real and non-negative**. This is a property that will be the key for the singular value decomposition.
 
 (Subsec:SVD:Algorithm)=
 
@@ -95,11 +98,11 @@ with the following properties
 
 \item $V$ is an $n\times n$ orthogonal matrix,
 
-\item $S$ is an $m\times n$ matrix has zeros in every entry except in the components $S_{ii}=s_i$ for $i=1,2,\dots,p=\Rank{A}$, with $s_1\ge s_2\ge\cdots\ge s_p > 0$.
+\item $S$ is an $m\times n$ matrix that has zeros in every entry except in the components $S_{ii}=s_i$ for $i=1,2,\dots,p=\Rank{A}$, with moreover  $s_1\ge s_2\ge\cdots\ge s_p > 0$.
 
 :::
 
-Let $r=\min\{m,n\}$. The numbers $s_1 \ge s_2 \ge \cdots \ge s_p > s_{p+1}= 0 = \stackrel{r-p}{\cdots} = s_{r}$ are the **singular values of $A$**.
+Let $r=\min\{m,n\}$. The numbers $s_1 \ge s_2 \ge \cdots \ge s_p > s_{p+1}= 0 = \stackrel{r-p}{\cdots} = s_{r}$ are called the **singular values of $A$**.
 
 In other words, the decomposition would look like this:
 
@@ -200,11 +203,11 @@ $$
 
 we see that, in addition, $\mathbf{u}_i$ is a unit eigenvector of $AA^T$ with associated eigenvalue $\lambda_i$.
 
-Therefore, if need to complete the the orthonormal set $\lbrace \mathbf{u}_1,\dots, \mathbf{u}_r$ to an orthonormal basis of $\mathbb{R}^n$ we just need to find an orthonormal basis of $\Nul A$.
+Therefore, if need to complete the the orthonormal set $\lbrace \mathbf{u}_1,\dots, \mathbf{u}_r\rbrace$ to an orthonormal basis of $\mathbb{R}^n$ we just need to find an orthonormal basis of $\Nul A$.
 
 ::::
 
-The details on why this algorithm works will be given in {numref}`Sec:ProofSVD`. For now, let's apply this algorithm in one particular example.
+The details on why this algorithm works will be given in one of the appendices ({numref}`Sec:ProofSVD`). For now, let's apply this algorithm in one particular example.
 
 ::::{prf:example}
 
@@ -295,7 +298,7 @@ Now let's construct $U$ according to {prf:ref}`Alg:SVD:SVDalgorithm`.
 
 :::{prf:remark}
 
-This is where the properties described in {prf:ref}`Prop:SVD:propsymmat` come in handy. Specially property {itemref}`Item:Prop:SVD:propsymmat:sameeigvals`. Notice that in our previous example, our matrix $A$ has dimensions $3\times 2$. This means that we will need to complete the set of vectors $\{\mathbf{u}_1,\mathbf{u}_2\}$ to an orthonormal basis of $\mathbb{R}^3$. According to {prf:ref}`Propo:SVD:singularvalues`, the matrix $AA^T$ has one zero eigenvalue. Therefore, it will be enough to find an orthonormal basis for $\Nul A$.
+This is where the properties described in {prf:ref}`Prop:SVD:propsymmat` come in handy. Especially property {itemref}`Item:Prop:SVD:propsymmat:sameeigvals`. Notice that in our previous example, our matrix $A$ has size $3\times 2$. This means that we will need to complete the set of vectors $\{\mathbf{u}_1,\mathbf{u}_2\}$ to an orthonormal basis of $\mathbb{R}^3$. According to {prf:ref}`Propo:SVD:singularvalues`, the matrix $AA^T$ has one zero eigenvalue. Therefore, it will be enough to find an orthonormal basis for $\Nul A$.
 
 :::
 
@@ -384,9 +387,9 @@ $$
 
 ## Understanding SVD Geometrically
 
-In this section we will have a deeper look to the decomposition and its meaning. As we have done previously, let's think about our $m\times n$ matrix $A$ as the standard matrix of a linear transformation from $R^n$ to $R^m$.
+In this section we will have a deeper look to the decomposition and its meaning. As we have done previously, let's think about our $m\times n$ matrix $A$ as the standard matrix of a linear transformation from $\R^n$ to $\R^m$.
 
-Observe that, in order to find a SVD in the previous example for a matrix $A$ we took the matrices $U$, whose columns represent an orthogonal basis of $R^m$; and $V$, whose columns represent an orthogonal basis of $R^n$. Then, we think of our decomposition $USV^T$ as a composition of transformations that we can visualise using the graph in {numref}`Figure %s <Fig:SVD:decomposition>`:
+Observe that, in order to find a SVD in the previous example for a matrix $A$ we took the matrices $U$, whose columns represent an orthogonal basis of $\R^m$; and $V$, whose columns represent an orthogonal basis of $\R^n$. Then, we think of our decomposition $USV^T$ as a composition of transformations that we can visualise using the graph in {numref}`Figure %s <Fig:SVD:decomposition>`:
 
 :::{figure} Images/Fig-SVD-Decomposition.svg
 :width: 300px
@@ -428,7 +431,7 @@ $$
 
 Notice that $V^T$ corresponds to a transformation consisting in a reflection over the line $y=x$ followed by a rotation of angle $-\frac{\pi}{4}$. So the unit circle is mapped on the unit circle.
 
-The matrix $S$ contains the singular values. We can observe that the unit circle is mapped into an ellipse whose positive semi-axes have length equal to the singular values.
+The matrix $S$ contains the singular values. We can observe that the unit circle is mapped into an ellipse whose positive semi-axes have lengths equal to the singular values.
 
 Finally, the matrix $U$ can be interpreted as a reflection over the line $y=x$.
 
