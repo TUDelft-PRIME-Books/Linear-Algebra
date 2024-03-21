@@ -2,7 +2,7 @@
 
 # The Power Method
 
-The eigenvalues of an $n\times n$ matrix $A$ to a large extent characterize the matrix. In theory they can be found as the zeros of the characteristic polynomial. Already for $n \geq 3$ it is not an easy matter to find the exact zeros, and for $n\geq 5$ it is close to impossible.
+The eigenvalues of an $n\times n$ matrix $A$ to a large extent characterize the matrix. In theory they can be found as the zeros of the characteristic polynomial. Already for $n = 3$ it is not an easy matter to find the exact zeros, and for $n\geq 5$ it is close to impossible.
 One way to go about then is to use a numerical method to solve an equation of degree $n$. Alternatively, there are algorithms more in the vein of linear algebra to find approximations of one or more eigenvalues. The simplest of these is the _power method_. This method often provides at least the eigenvalue of the largest absolute value (or, modulus). Note that this is in fact the most important eigenvalue concerning the stability or instability of the linear dynamical system connected to $A$.
 
 ## The Basics
@@ -16,13 +16,14 @@ $$
     \vect{x}_0 = \vect{s}, \quad \vect{x}_{k+1} = A\vect{x}_k,\,\,  k = 1,2,3,\ldots
 $$
 
-We know from {prf:ref}`Prop:DynSystDiscrete:DiagCase` in {numref}`Sec:DynSystDiscrete` that for a diagonalizable matrix $A$ with eigenvalues
+We know from {prf:ref}`Prop:DynSystDiscrete:DiagCase` in {numref}`Sec:DynSystDiscrete` that for a *diagonalizable* matrix $A$ with eigenvalues
 $\lambda_1, \ldots, \lambda_n$, the $k$-th vector in the process is given by
 
 ::::{math}
 :label: Eq:PowerMethod:GenSol
 
-$\vect{x}_k =  A^k\vect{x}_0 = c_1\lambda_1^k\vect{v}_1 + c_2\lambda_2^k\vect{v}_2 +  \ldots + c_n\lambda_n^k\vect{v}_n,$
+\vect{x}_k =  A^k\vect{x}_0 = c_1\lambda_1^k\vect{v}_1 + c_2\lambda_2^k\vect{v}_2 +  \ldots + c_n\lambda_n^k\vect{v}_n,
+
 ::::
 
 where $\vect{v}_1, \ldots, \vect{v}_n$ are corresponding eigenvectors. <BR>
@@ -38,7 +39,8 @@ We can rewrite Equation {eq}`Eq:PowerMethod:GenSol` as
 ::::{math}
 :label: Eq:PowerMethod:GenSol-2
 
-$\vect{x}_k =  \lambda_1^k\left(c_1\vect{v}_1 + c_2(\lambda_2/\lambda_1)^k\vect{v}_2 +  \ldots + c_n(\lambda_n/\lambda_1)^k\vect{v}_n\right).$
+\vect{x}_k =  \lambda_1^k\left(c_1\vect{v}_1 + c_2(\lambda_2/\lambda_1)^k\vect{v}_2 +  \ldots + c_n(\lambda_n/\lambda_1)^k\vect{v}_n\right).
+
 ::::
 
 If the coefficient $c_1$ is not equal to zero,
@@ -111,8 +113,7 @@ Then in general the sequence constructed by the Power Method Algorithm, will con
 To be more specific, the sequence $\vect{x}_k$ will converge a dominant eigenvector $\vect{v}_1$ if the initial vector $\vect{x}_0$ does not lie in
 $\text{Span}\{\vect{v}_2, \vect{v}_3, \ldots, \vect{v}_n\}$.
 
-Moreover, suppose $\vect{x}$ is the result after a (sufficiently) large number of runs of the algorithm. <BR>
-Then (an approximation of) the dominant eigenvalue is the entry with the highest absolute value of the vector $\vect{y} = A\vect{x}$.
+Moreover, suppose $\vect{x}$ is the result after a (sufficiently) large number of runs of the algorithm.  Then (an approximation of) the dominant eigenvalue is the entry with the highest absolute value of the vector $\vect{y} = A\vect{x}$.
 
 ::::
 
@@ -137,7 +138,7 @@ $$
    \vect{x}_0 = c_1\vect{v}_1 + c_2\vect{v}_2 +  \ldots + c_n\vect{v}_n, \quad c_1 \neq 0
 $$
 
-the vectors $\vect{x}_k$ in the long run behaves as $c_1\lambda_1^k\vect{v}_1$. <BR>
+the vectors $\vect{x}_k$ in the long run behave as $c_1\lambda_1^k\vect{v}_1$. <BR>
 The effect of the scalings is that all along the way we keep vectors with largest entry 1. Thus the scaled process will converge to the dominant eigenvector with largest entry 1.
 
 ::::
@@ -198,7 +199,7 @@ $$
 And then after $k$ steps, if we would not rescale, we would get
 
 $$
-  \vect{x}_k = A^k\vect{x}_0 = = c_19^k\begin{bmatrix} 1 \\ 2 \end{bmatrix} + c_24^k\begin{bmatrix} 2 \\ -1 \end{bmatrix}
+  \vect{x}_k = A^k\vect{x}_0 =  c_19^k\begin{bmatrix} 1 \\ 2 \end{bmatrix} + c_24^k\begin{bmatrix} 2 \\ -1 \end{bmatrix}
   = 9^k \left( c_1\begin{bmatrix} 1 \\ 2 \end{bmatrix} +
    c_2\left(\frac49\right)^k\begin{bmatrix} 2 \\ -1 \end{bmatrix}  \right).
 $$
@@ -387,7 +388,7 @@ $$
   |\lambda_1| \geq |\lambda_2| \geq  \ldots \geq |\lambda_{n-1}| > |\lambda_{n}| > 0.
 $$
 
-Here $|\lambda|$ denotes the modulus of $\lambda$. <BR>
+Here, again,  $|\lambda|$ denotes the modulus of  $\lambda$. <BR>
 Note that the last two _strict_ inequalities
 imply that $A$ has a single smallest eigenvalue which is not equal to $0$.
 <BR>
@@ -576,8 +577,8 @@ $$
  \lambda_{1,2}=-2.6489 \pm 4.8444i, \quad \lambda_3 = 2.7713,\quad \lambda_4 = -0.4735.
 $$
 
-Since $\lambda_{1}$ and $\lambda_{2}$ are the dominant eigenvalues of $A$, the eigenvalue $\lambda_3$ would not have been found using the power method or the inverse power method applied directly to $A$.
+Since $|\lambda_{1,2}| > |\lambda_{3}| > |\lambda_{4}|$, the eigenvalue $\lambda_3$ would not have been found using either the power method or the inverse power method applied directly to $A$.
 
 ::::
 
-For the moment I think this is enough. I can add the strategy to handle a dominant eigenvalue that is complex. But should I?
+For the moment I think this is enough. I can add the strategy to handle a dominant eigenvalue that is complex, as in the last example. But should I?
