@@ -317,10 +317,10 @@ Since $A = \begin{bmatrix}
 $$
 \mathbf{u}_1 = \frac{1}{s_1}\mathbf{v}_1  = \frac{1}{\sqrt{42}}\left( \frac{1}{\sqrt{5}}
 \begin{bmatrix}
-11 \\ -8 \\ -1
+11 \\ -8 \\ -5
 \end{bmatrix} \right) = \frac{1}{\sqrt{210}}
 \begin{bmatrix}
-11 \\ -8 \\ -1
+11 \\ -8 \\ -5
 \end{bmatrix}
 $$
 
@@ -352,7 +352,7 @@ Then, we can write $U$ as
 U = \begin{bmatrix}
 \frac{11}{\sqrt{210}} & \frac{3}{\sqrt{35}} & \frac{1}{\sqrt{6}} \\
 -\frac{8}{\sqrt{210}} & \frac{1}{\sqrt{35}} & \frac{2}{\sqrt{6}} \\
--\frac{1}{\sqrt{210}} & \frac{5}{\sqrt{35}} & \frac{-1}{\sqrt{6}} \\
+-\frac{5}{\sqrt{210}} & \frac{5}{\sqrt{35}} & \frac{-1}{\sqrt{6}} \\
 \end{bmatrix}
 
 :::
@@ -370,7 +370,7 @@ $$
 \begin{bmatrix}
 \frac{11}{\sqrt{210}} &  \frac{3}{\sqrt{35}} &  \frac{1}{\sqrt{6}} \\
 -\frac{8}{\sqrt{210}} &  \frac{1}{\sqrt{35}} &  \frac{2}{\sqrt{6}} \\
--\frac{1}{\sqrt{210}} &   \frac{5}{\sqrt{35}} &  \frac{-1}{\sqrt{6}}
+-\frac{5}{\sqrt{210}} &   \frac{5}{\sqrt{35}} &  \frac{-1}{\sqrt{6}}
 \end{bmatrix}
 \begin{bmatrix}
         \sqrt{42} & 0 \\
@@ -389,7 +389,8 @@ $$
 
 In this section we will have a deeper look to the decomposition and its meaning. As we have done previously, let's think about our $m\times n$ matrix $A$ as the standard matrix of a linear transformation from $\R^n$ to $\R^m$.
 
-Observe that, in order to find a SVD in the previous example for a matrix $A$ we took the matrices $U$, whose columns represent an orthogonal basis of $\R^m$; and $V$, whose columns represent an orthogonal basis of $\R^n$. Then, we think of our decomposition $USV^T$ as a composition of transformations that we can visualise using the graph in {numref}`Figure %s <Fig:SVD:decomposition>`:
+By definition, the matrices $U$ and $V$ in the SVD of an $m\times n$ matrix $A$ 
+are orthogonal matrices. Thus the columns of $U$ give an orthonormal basis of $\R^m$,  the columns of $V$ an orthonormal basis of $\R^n$. Then, we think of our decomposition $USV^T$ as a composition of transformations that we can visualise using the graph in {numref}`Figure %s <Fig:SVD:decomposition>`:
 
 :::{figure} Images/Fig-SVD-Decomposition.svg
 :width: 300px
@@ -484,21 +485,20 @@ What we can take out of this theorem is that there always exists a singular valu
 :description: To find the singular values of a 2x2 matrix $A$
 ::::
 
+::::{grasple}
+:url: https://embed.grasple.com/exercises/47ebaa77-9f3c-4363-a57e-d37242c6e598?id=93471
+:label: grasple_exercise_8_3_3
+:dropdown:
+:description: To compute the singular values of a 3x2 matrix $A$.
+::::
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/79d22478-56e3-49ee-9b19-77ab1ad06eaf?id=93470
-:label: grasple_exercise_8_3_3
-:dropdown:
-:description:  To compute an SVD for a 2x2 matrix $A$. 
-::::
-
-
-::::{grasple}
-:url: https://embed.grasple.com/exercises/47ebaa77-9f3c-4363-a57e-d37242c6e598?id=93471
 :label: grasple_exercise_8_3_4
 :dropdown:
-:description: To compute an SVD for a 3x2 matrix $A$.
+:description:  To compute an SVD for a 2x3 matrix $A$. 
 ::::
+
 
 
 ::::{grasple}
@@ -521,7 +521,7 @@ What we can take out of this theorem is that there always exists a singular valu
 :url: https://embed.grasple.com/exercises/20dd219a-35f3-48d7-ad9d-35038047336b?id=92586
 :label: grasple_exercise_8_3_7
 :dropdown:
-:description: To compute an SVD for a a matrix $A$ with orthogonal columns.
+:description: To compute an SVD for a matrix $A$ with orthogonal columns.
 ::::
 
 
@@ -529,7 +529,7 @@ What we can take out of this theorem is that there always exists a singular valu
 :url: https://embed.grasple.com/exercises/9848d7be-1530-46b0-941f-9ae76e95abfa?id=93481
 :label: grasple_exercise_8_3_8
 :dropdown:
-:description: To draw conclusion about $A$ from a given SVD of $A$.
+:description: To draw conclusion(s) about $A$ from a given SVD of $A$.
 ::::
 
 
@@ -537,7 +537,7 @@ What we can take out of this theorem is that there always exists a singular valu
 :url: https://embed.grasple.com/exercises/27adae2a-db2a-46fa-800f-49e4c0dfe4fa?id=93487
 :label: grasple_exercise_8_3_9
 :dropdown:
-:description: If $A = U\SigmaV^T$   for an  mxn matrix $A$, what are the sizes of  $U$, $Σ$ and $V$?
+:description: If $A = U\Sigma V^T$   for an  mxn matrix $A$, what are the sizes of  $U$, $Σ$ and $V$?
 ::::
 
 
