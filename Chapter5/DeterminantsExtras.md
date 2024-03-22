@@ -306,14 +306,6 @@ The images of a unit vector that rotates counterclockwise under transformation $
 
 ::::
 
-::::{margin}
-:::{admonition} TODO
-
-to team visuals: please turn into (a) moving picture(s)
-
-:::
-::::
-
 (Subsec:DetExtra:Cramer)=
 
 ## Cramer's rule
