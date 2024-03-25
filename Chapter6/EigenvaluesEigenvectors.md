@@ -262,7 +262,7 @@ $$
 $$
 
 So $-1$ is an eigenvalue of the matrix $\left[\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array}\right] $ and a corresponding eigenvector is the vector
-$\left[\begin{array}{c} 2 \\ -1 \end{array}\right]$.  Note that the full set of eigenvectors for the eigenvalue $\lamba = -1$ is the set of all multiples of the vector $\left[\begin{array}{c} 2  \\ -1 \end{array}\right]$. Well, to be precise, all _nonzero_ multiples.
+$\left[\begin{array}{c} 2 \\ -1 \end{array}\right]$.  Note that the full set of eigenvectors for the eigenvalue $\lambda = -1$ is the set of all multiples of the vector $\left[\begin{array}{c} 2  \\ -1 \end{array}\right]$. Well, to be precise, all _nonzero_ multiples.
 
 ::::::
 
@@ -295,6 +295,15 @@ has non-trivial solutions.
 Moreover, these non-trivial solutions are exactly the corresponding eigenvectors.
 
 ::::::
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/0a053b62-1e2c-4994-93eb-10e8f99a88dc?id=93701
+:label: grasple_exercise_6_1_T1
+:dropdown:
+:description: Te verify whether a number is an eigenvalue of a (2x2) matrix.
+
+::::::
+
 
 Note that the proposition handles our third question as well. If $\lambda$ has been shown to be an eigenvalue of $A$, then the corresponding eigenvectors are the (nonzero) solutions of the homogeneous linear system {eq}`Eq:Eigenvalues:EigenvalueEquation`.
 
@@ -523,6 +532,14 @@ This is a matrix of rank 2, and $\begin{bmatrix} 1  \\1\\1 \end{bmatrix}$ can be
 
 ::::::
 
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/363143ee-08c2-4905-9801-474ed10f59e9?id=93697
+:label: grasple_exercise_6_1_T2
+:dropdown:
+:description: To give a basis for the eigenspace for a given $\lambda$  for a 3x3 matrix $A$.
+
+::::::
+
 ::::::{prf:proposition}
 :label: Prop:Eigenvalues:IndepEigenvectors
 
@@ -735,43 +752,7 @@ so this vector is an eigenvector for the eigenvalue 0.
 
 ::::::
 
-::::::{exercise}
-:label: Exc:EigenValues:EigenvaluesInverse
 
-Prove the following statements.
-
-If the matrix $A$ is invertible, and $\lambda$ is an eigenvalue of $A$, then $\dfrac{1}{\lambda}$ is an eigenvalue of the inverse of $A$.
-
-Moreover,  if  $\vect{v}$ is an eigenvector of $A$ for eigenvalue $\lambda$, then $\vect{v}$ is also an eigenvector of $A^{-1}$ for eigenvalue $\lambda^{-1}$.
-
-
-::::::
-
-
-::::::{solution} Exc:EigenValues:EigenvaluesInverse
-:class:  dropdown
-
-Suppose the nonzero vector $\vect{v}$ is an eigenvector for the eigenvalue $\lambda$ of the invertible matrix $A$.  From {prf:ref}`Prop:EigenValues:SingularMatrix` we know that $\lambda \neq 0$. Thus from
-
-$$
-   A\vect{v} = \lambda\vect{v}
-$$
-
-it follows that 
-
-$$
-   A^{-1}A\vect{v} = \vect{v} = A^{-1}\lambda\vect{v} = \lambda A^{-1}\vect{v}.
-$$
-
-And lastly, since $\lambda \neq 0$, we may divide by $\lambda$:
-
-$$
-   \vect{v} =  \lambda A^{-1}\vect{v}  \quad \iff \quad  \frac{1}{\lambda}\vect{v} = A^{-1}\vect{v} \quad \iff \quad A^{-1}\vect{v} = \frac{1}{\lambda}\vect{v},
-$$
-
-which settles at one stroke that the (same) vector $\vect{v}$ is an eigenvector of the inverse matrix  $A^{-1}$ for the eigenvalue $\lambda^{-1}$.
-
-::::::
 
 A matrix gives rise to a linear transformation.
 Eigenvalues and eigenvectors make transparent how a matrix/transformation 'works'. The next exposition captures some of the ideas of the rest of the chapter.
@@ -886,5 +867,45 @@ In a later section we will study matrices $A$ for which such a basis of eigenvec
 :label: grasple_exercise_6_1_10
 :dropdown:
 :description:  If $W$ is an eigenspace of $A$, is it also an eigenspace of $2A$? And of $A^2$?  
+
+::::::
+
+
+To conclude, one non-Grasple exercise
+
+::::::{exercise}
+:label: Exc:EigenValues:EigenvaluesInverse
+
+Prove the following statements.
+
+If the matrix $A$ is invertible, and $\lambda$ is an eigenvalue of $A$, then $\dfrac{1}{\lambda}$ is an eigenvalue of the inverse of $A$.
+
+Moreover,  if  $\vect{v}$ is an eigenvector of $A$ for eigenvalue $\lambda$, then $\vect{v}$ is also an eigenvector of $A^{-1}$ for eigenvalue $\lambda^{-1}$.
+
+::::::
+
+
+::::::{solution} Exc:EigenValues:EigenvaluesInverse
+:class:  dropdown
+
+Suppose the nonzero vector $\vect{v}$ is an eigenvector for the eigenvalue $\lambda$ of the invertible matrix $A$.  From {prf:ref}`Prop:EigenValues:SingularMatrix` we know that $\lambda \neq 0$. From
+
+$$
+   A\vect{v} = \lambda\vect{v}
+$$
+
+it follows that 
+
+$$
+   A^{-1}A\vect{v} = \vect{v} = A^{-1}\lambda\vect{v} = \lambda A^{-1}\vect{v}.
+$$
+
+And lastly, since $\lambda \neq 0$, we may divide by $\lambda$:
+
+$$
+   \vect{v} =  \lambda A^{-1}\vect{v}  \quad \iff \quad  \frac{1}{\lambda}\vect{v} = A^{-1}\vect{v} \quad \iff \quad A^{-1}\vect{v} = \frac{1}{\lambda}\vect{v},
+$$
+
+which settles at one stroke that the (same) vector $\vect{v}$ is an eigenvector of the inverse matrix  $A^{-1}$ for the eigenvalue $\lambda^{-1}$.
 
 ::::::
