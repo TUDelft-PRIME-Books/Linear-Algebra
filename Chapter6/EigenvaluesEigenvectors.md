@@ -300,7 +300,7 @@ Moreover, these non-trivial solutions are exactly the corresponding eigenvectors
 :url: https://embed.grasple.com/exercises/0a053b62-1e2c-4994-93eb-10e8f99a88dc?id=93701
 :label: grasple_exercise_6_1_T1
 :dropdown:
-:description: Te verify whether a number is an eigenvalue of a (2x2) matrix.
+:description: To verify whether a number is an eigenvalue of a (2x2) matrix.
 
 ::::::
 
