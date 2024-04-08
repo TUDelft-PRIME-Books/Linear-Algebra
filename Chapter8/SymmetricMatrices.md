@@ -122,11 +122,6 @@ the image of the unit circle under the transformation $\vect{x} \mapsto A\vect{x
 The transformation $T(\vect{x}) =  \begin{bmatrix} 1&2\\2&-2 \end{bmatrix}\vect{x}$.
 :::
 
-::{margin} TODO
-
-To the Visuals Team: this figure should be transformed into a moving picture: two perpendicular vectors rotating around the origin, shown with their images, with stress on the moment they become eigenvectors.
-
-::
 
 Furthermore, if we normalize the eigenvectors, i.e., the columns of $P$, we find the following diagonalization of $A$ with an orthogonal matrix $Q$:
 
@@ -159,36 +154,36 @@ The trick is to consider the expression
 :::{math}
 :label: Eq:SymmetricMat:Av1v2
 
-(A\mathbf{v_1}) \ip \mathbf{v}\_2.
+(A\mathbf{v}_1) \ip \mathbf{v}_2.
 
 :::
 
 On the one hand
 
 $$
-   (A\mathbf{v_1}) \ip \mathbf{v}_2 = (\lambda_1\mathbf{v_1}) \ip \mathbf{v}_2 =  \lambda_1(\mathbf{v_1} \ip \mathbf{v}_2).
+   (A\mathbf{v}_1) \ip \mathbf{v}_2 = (\lambda_1\mathbf{v}_1) \ip \mathbf{v}_2 =  \lambda_1(\mathbf{v}_1 \ip \mathbf{v}_2).
 \nonumber
 $$
 
 On the other hand
 
 $$
-   (A\mathbf{v_1}) \ip \mathbf{v}_2 = (A\mathbf{v_1})^T \mathbf{v}_2 =\mathbf{v_1}^TA^T \mathbf{v}_2.
+   (A\mathbf{v}_1) \ip \mathbf{v}_2 = (A\mathbf{v}_1)^T \mathbf{v}_2 =\mathbf{v}_1^TA^T \mathbf{v}_2.
 \nonumber
 $$
 
 Since we assumed that $A^T = A$ we can extend the chain of identities:
 
 $$
-  \mathbf{v_1}^TA^T \mathbf{v}_2 =   \mathbf{v_1}^T A \mathbf{v}_2 =\mathbf{v_1}^T (A \mathbf{v}_2) =
-  \mathbf{v_1}^T (\lambda_2 \mathbf{v}_2) =  \lambda_2(\mathbf{v_1}^T  \mathbf{v}_2) =  \lambda_2(\mathbf{v_1} \ip \mathbf{v}_2).
+  \mathbf{v}_1^TA^T \mathbf{v}_2 =   \mathbf{v}_1^T A \mathbf{v}_2 =\mathbf{v}_1^T (A \mathbf{v}_2) =
+  \mathbf{v}_1^T (\lambda_2 \mathbf{v}_2) =  \lambda_2(\mathbf{v}_1^T  \mathbf{v}_2) =  \lambda_2(\mathbf{v}_1 \ip \mathbf{v}_2).
 \nonumber
 $$
 
 So we have shown that
 
 $$
-    (A\mathbf{v_1}) \ip \mathbf{v}_2  = \lambda_1(\mathbf{v_1} \ip \mathbf{v}_2) = \lambda_2(\mathbf{v_1} \ip \mathbf{v}_2).
+    (A\mathbf{v}_1) \ip \mathbf{v}_2  = \lambda_1(\mathbf{v}_1 \ip \mathbf{v}_2) = \lambda_2(\mathbf{v}_1 \ip \mathbf{v}_2).
 \nonumber
 $$
 
@@ -202,8 +197,7 @@ $$
 it follows that indeed
 
 $$
-\mathbf{v_1} \ip \mathbf{v}_2 = 0,
-
+\mathbf{v}_1\ip \mathbf{v}_2 = 0,
 
 $$
 
@@ -212,11 +206,46 @@ as was to be shown.
 ::::
 
 ::::{exercise}
-:label: Exc:MatrixMat:uTAv
+:label: Exc:SymmetricMat:uTAv
 
 Prove the following slight generalization of {prf:ref}`Prop:SymmetricMat:OrthogonalEigenvectors`.
 
 If $\vect{u}$ is an eigenvector of $A$ for the eigenvalue $\lambda$, and $\vect{v}$ is an eigenvector of $A^T$ for a different eigenvalue $\mu$, then $\vect{u} \perp \vect{v}$.
+
+::::
+
+::::{solution} Exc:SymmetricMat:uTAv
+:class: dropdown
+
+The proof is completely analogous to the proof of {prf:ref}`Prop:SymmetricMat:OrthogonalEigenvectors`.
+Suppose  
+
+$$
+  A\mathbf{u} = \lambda\mathbf{u},\quad A\mathbf{v} = \mu\mathbf{v},\quad\text{  where} \,\,\,\lambda \neq \mu.
+$$
+
+We consider the expression  $\mathbf{u}^T\ip A \mathbf{v} = \mathbf{u}T A \mathbf{v}$.
+
+On the one hand  
+
+:::{math}
+:label: eq:SymmetricMat:uTAv3
+
+  \mathbf{u}\ip A \mathbf{v} = \mathbf{u}^T (A\mathbf{v}) = \mathbf{u}^T  \mu \mathbf{v} = \mu \mathbf{u}T\mathbf{v}  = \mu (\mathbf{u}\mathbf{v})
+
+:::
+
+On the other hand
+:::{math}
+:label: eq:SymmetricMat:uTAv4
+
+  \mathbf{u}\ip A \mathbf{v} = \mathbf{u}^T\ A^T \mathbf{v} = (A\mathbf{u})^T\mathbf{v} = 
+  \lambda \mathbf{u}^T\mathbf{v} = \lambda (\mathbf{u}\mathbf{v})
+
+:::
+
+Comparing {eq}`eq:SymmetricMat:uTAv3`  and  {eq}`eq:SymmetricMat:uTAv4`  we can conlude that $\mathbf{u}\ip\mathbf{v} = 0$,  i.e.,  $\mathbf{u}$ and $\mathbf{v}$
+are indeed orthogonal.
 
 ::::
 
@@ -509,7 +538,7 @@ And now it's time for the proof of the main theorem.
 Suppose that $A$ is a symmetric $n \times n$ matrix. We know there are $n$ real, possibly multiple, eigenvalues
 $\lambda_1, \lambda_2, \ldots, \lambda_n$.
 Suppose $\vect{q}_1$ is an eigenvector for $\lambda_1$ with unit length.
-We can extend $\{\vect{q}_1\}$ to an orthonormal basis $(\vect{q}_1,\vect{q}_2,\ldots,\vect{q}_n)$.
+We can extend $\{\vect{q}_1\}$ to an orthonormal basis $\{\vect{q}_1,\vect{q}_2,\ldots,\vect{q}_n\}$.
 Let $Q_1$ be the matrix with the columns $\vect{q}_1,\vect{q}_2,\ldots,\vect{q}_n$.
 
 It can be shown that $A_1 = Q_1^{-1}AQ_1 = Q_1^TAQ_1$ is of the form
