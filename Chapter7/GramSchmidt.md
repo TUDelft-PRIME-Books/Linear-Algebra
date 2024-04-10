@@ -22,10 +22,10 @@ As a second basis vector we can take
 :::{math}
 :label: Eq:GramSchmidt:Step2
 
-$
+
   \vect{b}_2 = \vect{a}_2 - \text{proj}_{\vect{a}_1}(\vect{a}_2) = 
                \vect{a}_2 - \dfrac{\vect{a}_2\ip\vect{a}_1}{\vect{a}_1\ip\vect{a}_1}    \vect{a}_1.
-$
+
 :::
 
 It is then clear that $\vect{b}_2$ is in span$\{\vect{a}_1, \vect{a}_2\}$, and by the property of the orthogonal projection $\text{proj}_{\vect{a}_1}(\vect{a}_2)$ it follows that $\vect{b}_2 \perp \vect{b}_1$.
