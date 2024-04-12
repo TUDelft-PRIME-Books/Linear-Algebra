@@ -631,7 +631,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 
 
 ::::::{grasple} 
-:url: https://embed.grasple.com/exercises/3597a3e9-17b7-491c-89a7-4f33f1a4fb8c?id=91482
+:url: https://embed.grasple.com/exercises/e3793a52-25f0-48cd-b47f-b59f872e3e1a?id=91454
 :label: grasple_exercise_6_2_4 
 :dropdown:
 :description:  To find the eigenvalues of a $3\times 3$ matrix $A$.
