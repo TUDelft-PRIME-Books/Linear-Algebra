@@ -640,7 +640,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 
 
 ::::::{grasple} 
-:url: https://embed.grasple.com/exercises/9e16e7ab-87f1-448c-a52a-a8d6c1470c4b?id=91483
+:url: https://embed.grasple.com/exercises/3597a3e9-17b7-491c-89a7-4f33f1a4fb8c?id=91482
 :label: grasple_exercise_6_2_5
 :dropdown:
 :description:  To find the eigenvalues of a $4\times 4$ matrix $A$.
