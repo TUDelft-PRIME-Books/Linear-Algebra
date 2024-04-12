@@ -14,7 +14,7 @@ $$
 
 In short $f(\mathbf{x}) = \mathbf{a}^T\mathbf{x} + b$, for some vector $\mathbf{a}$ in $\R^n$ and some number $b$ in $\R$.
 
-This is the common notion of linearity in calculus. To be linear in the linear algebra sense the constant term must be zero.
+This is the common notion of linearity in calculus. To be linear in the linear algebra sense the constant term $b$ must be zero.
 
 After that come the *quadratic functions*
 
@@ -402,7 +402,7 @@ $$
     q(\vect{x}) = \vect{x}^TA\vect{x}.
 $$
 
-Let $Q$ be an orthogonal matrix diagonalizing $A$. <BR>
+Let $Q$ be an orthogonal matrix diagonalizing $A$. That is,  $A = QDQ^{-1}$. <BR>
 Applying the substitution $\vect{x} = Q\vect{y}$ then yields the quadratic form
 
 $$
@@ -731,7 +731,16 @@ Check that the vector you found in iii. is an eigenvector of the matrix of the q
 
 ## Conic Sections
 
-A _conic section_ or _conic_ is a curve that results when a circular cone is intersected with a plane. Figure ... shows the different shapes when the plane is _not_ going through the apex. The resulting curve is then either a _hyperbola_, a _parabola_ or an _ellipse_, with as special ellipse the _circle_. If the plane does go through the apex of the cone the conic section is called **degenerate**.
+A _conic section_ or _conic_ is a curve that results when a circular cone is intersected with a plane.  
+{numref}`Figure %s <Fig:QuadForms:ConeWithPlanes>` shows the different shapes when the plane is *not* going through the apex..
+
+:::{figure} Images/Fig-QuadForms-ConeWithPlanes.svg
+:name: Fig:QuadForms:ConeWithPlanes
+
+Intersections of a cone with planes (not going through the apex) 
+:::
+
+ The resulting curve is then either a _hyperbola_, a _parabola_ or an _ellipse_, with as special ellipse the _circle_. If the plane does go through the apex of the cone the conic section is called **degenerate**.
 
 ::::{exercise}
 

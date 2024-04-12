@@ -599,17 +599,21 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 
 ## Grasple Exercises 
 
-::::::{grasple} 
-:url: https://embed.grasple.com/exercises/6e01d5c1-897b-44bf-bbb2-4653ff095f48?id=92498
-:label: grasple_exercise_6_2_1 
-:dropdown:
-:description:  To find the characteristic polynomial of a $2\times 2$ matrix $A$.
 
-::::::
 
 ::::::{grasple} 
 :url: https://embed.grasple.com/exercises/b43cd5dc-3fff-432a-bdec-d56e38c39e89?id=91450
-:label: grasple_exercise_6_2_2
+:label: grasple_exercise_6_2_1
+:dropdown:
+:description:  To find the characteristic polynomial of a $2\times 2$ matrix $A$.
+
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/b89efbb3-c5cc-4fab-874b-8dd285644ab2?id=91452
+:label: grasple_exercise_6_2_2 
 :dropdown:
 :description:  To find the eigenvalues of a $2\times 2$ matrix $A$.
 
@@ -617,17 +621,8 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 
 
 ::::::{grasple} 
-:url: https://embed.grasple.com/exercises/b89efbb3-c5cc-4fab-874b-8dd285644ab2?id=91452
-:label: grasple_exercise_6_2_3 
-:dropdown:
-:description:  To find the eigenvalues of a $3\times 3$ matrix $A$.
-
-::::::
-
-
-::::::{grasple} 
 :url: https://embed.grasple.com/exercises/137aaf98-60d5-4aab-82f4-10ea40811a7b?id=91453
-:label: grasple_exercise_6_2_4 
+:label: grasple_exercise_6_2_3 
 :dropdown:
 :description:  To find the eigenvalues of a $3\times 3$ matrix $A$.
 
@@ -637,27 +632,39 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 
 ::::::{grasple} 
 :url: https://embed.grasple.com/exercises/3597a3e9-17b7-491c-89a7-4f33f1a4fb8c?id=91482
-:label: grasple_exercise_6_2_5 
+:label: grasple_exercise_6_2_4 
 :dropdown:
-:description:  To find the eigenvalues of a $4\times 4$ matrix $A$.
+:description:  To find the eigenvalues of a $3\times 3$ matrix $A$.
 
 ::::::
 
 
 ::::::{grasple} 
 :url: https://embed.grasple.com/exercises/9e16e7ab-87f1-448c-a52a-a8d6c1470c4b?id=91483
-:label: grasple_exercise_6_2_6
+:label: grasple_exercise_6_2_5
+:dropdown:
+:description:  To find the eigenvalues of a $4\times 4$ matrix $A$.
+
+::::::
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/9e16e7ab-87f1-448c-a52a-a8d6c1470c4b?id=91483
+:label: grasple_exercise_6_2_6 
 :dropdown:
 :description:  Is an eigenvalue of a matrix $A$ always an eigenvalue of $A^T$?
 
+
 ::::::
+
+
+
 
 
 ::::::{grasple} 
 :url: https://embed.grasple.com/exercises/2c30dad3-17a4-4f20-b277-fd13e0c93e9f?id=92384
 :label: grasple_exercise_6_2_7 
 :dropdown:
-:description:  Finding the geometric multiplicities of the eigenvalues of a $3\times3$ matrix $A$. 
+:description: Finding the geometric multiplicities of the eigenvalues of a $3\times3$ matrix $A$. 
 
 ::::::
 
