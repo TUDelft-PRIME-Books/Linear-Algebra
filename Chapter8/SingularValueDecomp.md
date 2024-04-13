@@ -50,7 +50,7 @@ U\begin{bmatrix}
 \vdots & \ddots & \ddots & \ddots &\vdots & \ & & \vdots\\
 \vdots & & \ddots & \ddots & 0 &\vdots &  & & \vdots\\
 0 & \cdots & \cdots & 0 & \sigma_p & 0& \cdots& 0\\
-\end{bmatrix} V^T, \quad m < n
+\end{bmatrix} V^T, \quad m \leq n
 
 ::::
 
@@ -223,7 +223,7 @@ $$
 A^TA= (U\Sigma V^T)^T(USV) = V\Sigma^T(U^TU) \Sigma V^T = V(\Sigma^T\Sigma)V^T.
 $$
 
-Observe that since $\Sigma^T\Sigma$ is an $n\times n$ *diagonal* matrix,  $V(\Sigma^T\Sigma)V^T$ is an *orthogonal diagonalisation* of $A^TA$.  (Which is indeed a *symmetric* matrix.)
+Note that, since $\Sigma^T\Sigma$ is an $n\times n$ *diagonal* matrix,  $V(\Sigma^T\Sigma)V^T$ is an *orthogonal diagonalisation* of $A^TA$.  (Which is indeed a *symmetric* matrix.)
 
 This immediately gives us that the columns of $V$ are eigenvectors for the eigenvalues of $A^TA$,  which  can be read off from the diagonal of $\Sigma^T\Sigma$.  That is,
 
@@ -234,8 +234,7 @@ $$
 We can conclude that the singular values are given by  $\sigma_i = \sqrt{\lambda_i}$. <BR>
 Note that by definition the square root of a number $a$ is the *nonnegative* number $b$ for which $b^2 = a$, which makes that automatically  $\sigma_i \geq 0$.
 
-You may have a tiny tinge of worry.  How would I know that the eigenvalues $\lambda_i$  of the matrix $A^TA$ are *nonnegative*?  You may try to settle this yourself, or you can have a sneak preview 
-at {prf:ref}`Prop:SVD:propertiesATA`.
+You may have a tiny tinge of worry.  How would I know that the eigenvalues $\lambda_i$  of the matrix $A^TA$ are *nonnegative*?  You may try to settle this yourself, or you can have a sneak preview at {prf:ref}`Prop:SVD:propertiesATA`.
 
 ::::
 
@@ -280,11 +279,12 @@ $$
 
 
 We follow the steps of the algorithm.
-1.     $A^TA = \begin{bmatrix}
-35 & -14 \\
--14 & 14
-\end{bmatrix}
-$.
+
+1.  We first compute $A^TA = \begin{bmatrix}
+       35 & -14 \\
+       -14 & 14
+      \end{bmatrix}
+      $.
 
 2. The eigenvalues $\lambda_1 \ge \lambda_2$ of $A^TA$ are given by 
  $\lambda_1 = 42$, $\lambda_2 = 7$.  
@@ -330,7 +330,7 @@ Thus we end up with the matrix  $U = \begin{bmatrix}\frac{11}{\sqrt{210}}&\frac{
 
 ::::
 
-Along the way we came along some explicit and implicit properties of a matrix of the form $A^TA$.  We have collected them in the following proposition.
+Along the way we came along some explicit and implicit properties of the matrix  $A^TA$.  We have collected them in the following proposition.
 
 
 :::::{prf:proposition}  Properties of the matrix $A^TA$
@@ -348,7 +348,7 @@ Let $A$ be an $m\times n$ matrix with real entries. Then the following propertie
 \label{Item:Prop:SVD:propertiesATA:samerankAandATA}
 \item The eigenvalues of $A^TA$ are real and nonnegative.
 \label{Item:Prop:SVD:propertiesATA:nonzeroeigvals}
-\item The non-zero eigenvalues of $AA^T$ are the same as the non-zero eigenvalues of $A^TA$.
+\item The non-zero eigenvalues of $AA^T$ are the same as the non-zero eigenvalues of $A^TA$.  Moreover the algebraic and geometric muliplicities of these eigenvalues are the same 
 \label{Item:Prop:SVD:propertiesATA:sameeigvals}
 :::
 
@@ -400,15 +400,44 @@ Since $\mathbf{u}\ne \mathbf{0}$ it follows that $\lambda \ge 0$.
 $$AA^TA\mathbf{u} = \lambda A\mathbf{u}.$$
 
 Observe that if $A\mathbf{u}=\mathbf{0}$ then $A^TA\mathbf{u} = \mathbf{0}$ and $\lambda =0$, which contradicts the hypothesis of $\lambda \ne 0$. <BR>
-Therefore, $A\mathbf{u}\ne \mathbf{0}$ and $A\mathbf{u}$ is an eigenvector of $AA^T$ with associated eigenvalue $\lambda$.
-
+Therefore, $A\mathbf{u}\ne \mathbf{0}$ and $A\mathbf{u}$ is an eigenvector of $AA^T$ with associated eigenvalue $\lambda$. 
 To prove the converse, one can use a similar argument.
 
+
+About the multiplicities.  Since $A^TA$ and $AA^T$ are symmetric, hence diagonalizable, for each eigenvalue of both matrices, the geometric and algebraic multiplicities are equal.
+So we have to show equality of the geometric multiplicities. <BR>
+Suppose   $\mathbf{v}_1, \dots , \mathbf{v}_g$  are is a maximal set of linearly
+independent eigenvectors of $A^TA$  for some eigenvalue $\lambda_i \neq 0$.  The above argument shows that  $A\mathbf{v}_1, \dots , A\mathbf{v}_g$  are eigenvectors for $A^TA$.
+To show that they are linear independent,  suppose that
+
+$$
+  c_1A\mathbf{v}_1+ \cdots + c_gA\mathbf{v}_g = \mathbf{0}.
+$$
+
+Then
+
+$$
+   \begin{array}{rcl}A^T(c_1A\mathbf{v}_1+ \cdots + c_gA\mathbf{v}_g) &=& 
+  c_1A^TA\mathbf{v}_1+ \cdots + c_gA^TA\mathbf{v}_g\\
+  &=&
+  \lambda_i(c_1\mathbf{v}_1+ \cdots + c_g\mathbf{v}_g) =  \mathbf{0}
+  \end{array}
+$$
+
+as well.  As $\lambda_i$ was suppose to be unequal to zero, and the vectors $\mathbf{v}_k$ linearly independent,  it follows that 
+
+$$
+ c_1= c_2   = \cdots = c_g =  0,
+$$
+
+which shows that the vectors $A\mathbf{v}_1, \ldots, A\mathbf{v}_g$ are $g$ linearly independent eigenvectors.  So the geometric multiplicity $g_2$ of $\lambda_i$ for $AA^T$
+is at least as large as the geometric multiplicity $g$ of $\lambda_i$ for $A^TA$.
+Again, by the inherent symmetry the argument can be reversed, and we find that the geometric multiplicity of $\lambda_i$  is the same for $A^TA$ as for $AA^T$. 
 :::
 
 ::::
 
-We want to stress out the importance of property {itemref}`Item:Prop:SVD:propertiesATA:nonzeroeigvals`. We know from {numref}`Sec:SymmetricMat` that the eigenvalues of a symmetric matrix are real. The previous proposition tells us that, in addition, **the eigenvalues of the symmetric matrix $A^TA$ are real and non-negative**. This property is the key for the singular value decomposition.
+We want to stress out the importance of property {itemref}`Item:Prop:SVD:propertiesATA:nonzeroeigvals`. We know from {numref}`Sec:SymmetricMat` that the eigenvalues of a symmetric matrix are real. The previous proposition tells us that, in addition, **the eigenvalues of the symmetric matrix $A^TA$ are non-negative**. This property is the key for the singular value decomposition.
 
 
 ::::{prf:theorem}  Existence of a singular value decomposition
@@ -427,17 +456,17 @@ Let us first consider the six steps of the algorithm.
 
 Step 1. Is a piece of cake.
 
-Step 2. Here we must check that the eigenvalues of the matrix $A^TA$ are *nonnegative*. This is exactly the content of  {prf:ref}`Prop:SVD:propertiesATA` {itemref}`Item:Prop:SVD:propertiesATA:nonzeroeigvals`. 
+Step 2. Here we must check that the eigenvalues of the matrix $A^TA$ are *nonnegative*. This is exactly the content of  {prf:ref}`Prop:SVD:propertiesATA` {itemref}`Item:Prop:SVD:propertiesATA:nonzeroeigvals` 
 
 Step 3. Offers no difficulties.
 
 Step 4. Since $A^TA$ is symmetric, an orthonormal basis of eigenvectors exists.
 
-Step 5. Here we have to show that the vectors  $A\vect{v}_1, \ldots, A\vect{v}_r$, corresponding to the nonzero eigenvalues of $A^TA$ are *orthogonal*.  (which we called 'magical' in {prf:ref}`Ex:SVD:ComputeAnSVD1`). 
+Step 5. Here we have to show that the vectors  $A\vect{v}_1, \ldots, A\vect{v}_r$, corresponding to the nonzero eigenvalues of $A^TA$ are *orthogonal*.  (We called  this 'magical' in {prf:ref}`Ex:SVD:ComputeAnSVD1`). 
 Well,  just consider the inner products!  For  $i \neq j$ we have
 
 $$
-  A\vect{v}_i\ip A\vect{v}_j = (A\vect{v}_i)^TA\vect{v}_j = \vect{v}_i^T ATA \vect{v}_j = \vect{v}_i \ip  (\lambda_j\vect{v}_j) = \lambda_j \vect{v}_i \ip \vect{v}_j = 0,
+  A\vect{v}_i\ip A\vect{v}_j = (A\vect{v}_i)^TA\vect{v}_j = \vect{v}_i^T A^TA \vect{v}_j = \vect{v}_i \ip  (\lambda_j\vect{v}_j) = \lambda_j \vect{v}_i \ip \vect{v}_j = 0,
 $$
 since we already established the orthogonality of the vectors $\vect{v}_1, \ldots, \vect{v}_n$. <BR>
 Thus the vectors $\vect{u}_1, \ldots, \vect{u}_r$  are orthogonal to start with.
@@ -467,9 +496,10 @@ By construction we have that  $A\vect{v}_i = \sigma_i \vect{u}_i$,  $i = 1, \ldo
 $$
   AV_r = U_r\Sigma_{rr}, 
 $$
-where we introduced   $U_r, \Sigma_{rr}$ and $V_r$  for the matrices with only the first $r$  $r$ columns of the three matrices (as in the proof of {prf:ref}`Prop:SVD:BasicProp`).
 
-If $r<n$, which means that there are singular values equal to $0$  (equivalently, $\Rank{A} < n$ ), we can add the columns  $\vect{v}_{r+1}, \ldots, n$ to $V_r$, and add $n-r$ zeros columns to $\Sigma_{rr}$.  We denote the extended last matrix by $\tilde{\Sigma}_r$.
+where we introduced   $U_r, V_r$  for the matrices with only the first $r$ columns of $U$ and $V$, and $\Sigma_{rr}$ the top-left $r\times r$ submatrix of $\Sigma$  (as in the proof of {prf:ref}`Prop:SVD:BasicProp`).
+
+If $r<n$, which means that there are singular values equal to $0$  (equivalently, $\Rank{A} < n$ ), we can add the columns  $\vect{v}_{r+1}, \ldots, \vect{v}_n$ to $V_r$, and add $n-r$ zeros columns to $\Sigma_{rr}$.  We denote the extended last matrix by $\tilde{\Sigma}_r$.
 We thus arrive at
 
 $$
@@ -514,14 +544,13 @@ To illustrate {prf:ref}`Rem:SVD:PracticalHints` and to conclude this subsection 
 :label:  Ex:SVD:ComputeAnSVD2
 
 We will find a singular value decomposition of the matrix
-
-$$
+$
 A = \begin{bmatrix}
 1 & 1 & 0 &-1\\
 -1 & 1 & 0&3\\
 -2 & 1 & 2&0
-\end{bmatrix},
-$$
+\end{bmatrix}
+$.
 
 Following the suggestion of the remark we first construct an svd of the matrix
 $B = A^T = \begin{bmatrix}
@@ -542,8 +571,8 @@ Step 1.  $B^TB = AA^T = \begin{bmatrix}
 
 Step 2.  Computing the characteristic polynomial is already quite a task here, but it is doable.  The result: $\det(B^TB - \lambda \mathrm{I})
 = \lambda^3 -23\lambda^2 +140 \lambda -196$. <BR>
-Without a computer we would be stuck. How to find the zeros of this polynomial? However, we have come up with a *very*  special matrix here,
-for which the squares of all the singular values are  *integers*. (So in that sense, this is not a very representative example, and the
+Without a computer we would be stuck. How to find the zeros of this polynomial? However, we have come up with a *very*  special matrix $A$ here,
+for which the squares of all the singular values are  *integers*. (So in that sense, this is not a very representative example, and in general the
 computations will be even worse, not to say impossible.)  Here, the eigenvalues of $B^TB$ are given by  $\lambda_1 = 14, \lambda_2 = 7,
 \lambda_3 = 2$.  Which finishes step 2.
 
@@ -554,19 +583,22 @@ Step 3  is straightforward:  $\Sigma = \begin{bmatrix}
 0 & 0 & 0
 \end{bmatrix}$.
 
-4. With some effort we can find eigenvectors: <BR>
+Step 4. With some effort we can find eigenvectors: <BR>
 $\vect{v}_1 = \begin{bmatrix} 1 \\ -3 \\ -2 \end{bmatrix}$, for $\lambda_1 = 14$,
   $\vect{v}_2 = \begin{bmatrix} 1 \\ -3 \\ 5 \end{bmatrix}$, for $\lambda_2 = 7$, and
 $\vect{v}_3 = \begin{bmatrix} 3 \\ 1 \\ 0 \end{bmatrix}$, for $\lambda_1 = 2$. <BR>
 Note that these are indeed three orthogonal vectors, which
 we do not immediately normalize!
 
-5.  Next we compute the vectors $\vect{u}$, again without normalizing, and also for the moment not taking the (ugly!) factors
+Step 5.  Next we compute the vectors $\vect{u}$, again without normalizing, and also for the moment not taking the (ugly!) factors
 $\frac{1}{\sigma_i} $ into account. Since the singular values are nonzero, we use all three vectors $\vect{v}_i$: <BR>
-This gives  $\mathbf{u}_1 = B\mathbf{v}_1 = \begin{bmatrix} 8 \\ -4 \\ -4 \\ -10 \end{bmatrix}$,  $\mathbf{u}_2 = B\mathbf{v}_2 =
-\begin{bmatrix}   -6 \\ 3 \\ 10 \\ -10 \end{bmatrix}$  $\mathbf{u}_3 = B\mathbf{v}_3 = \begin{bmatrix} 2 \\ 4 \\ 0 \\ 0 \end{bmatrix}$.  <BR>
+This gives 
+
+$$ \mathbf{u}_1 = B\mathbf{v}_1 = \begin{bmatrix} 8 \\ -4 \\ -4 \\ -10 \end{bmatrix}, \quad \mathbf{u}_2 = B\mathbf{v}_2 =
+\begin{bmatrix}-6 \\ 3 \\ 10 \\ -10 \end{bmatrix}, \quad \mathbf{u}_3 = B\mathbf{v}_3 = \begin{bmatrix} 2 \\ 4 \\ 0 \\ 0 \end{bmatrix}. 
+$$
 It should not come as a surprise that these vectors are orthogonal! <BR>
-We have to find a fourth orthogonal vector $\vect{u}_4$,  which we can find as a nonzero vector in the nulspace of the matrix $\begin{bmatrix}
+We have to find a fourth orthogonal vector $\vect{u}_4$.   One way is to look for a nonzero vector in the nulspace of the matrix $\begin{bmatrix}
 8 & -4 & -10 \\ -6 & 3 & 10 & 10 \\ 2 & 4 & 0 & 0\end{bmatrix}$. <BR>
  You may check that the vector $\vect{u}_4 = \begin{bmatrix} 4 \\ -2 \\ 5 \\ 2 \end{bmatrix}$  does the trick.
 
