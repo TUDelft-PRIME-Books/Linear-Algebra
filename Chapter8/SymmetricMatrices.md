@@ -879,9 +879,12 @@ $$
 
 Exactly as in {prf:ref}`Ex:SymmetricMat:SpectralDecomp` we can use the column-row expansion of the matrix product to derive
 
-$$
+::::{math}
+:label: Eq:SymmetricMat:SpectralDecomp2
+  
 A =  \lambda_1 \mathbf{q}_1\mathbf{q}_1^T + \lambda_2\mathbf{q}_2\mathbf{q}_2^T + \ldots + \lambda_n\mathbf{q}_n\mathbf{q}_n^T,
-$$
+
+::::
 
 where the vectors $\mathbf{q}_i$ of course are the (orthonormal) columns of the diagonalizing matrix $Q$. This is indeed a linear combination of orthogonal projections, as was to be shown.
 ::::
