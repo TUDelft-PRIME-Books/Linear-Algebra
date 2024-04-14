@@ -999,7 +999,7 @@ $$
       
 
 ::::{grasple}
-:url: https://embed.grasple.com/8af926a0-80d8-459f-af55-c37a492a18c6?id=88045 
+:url: https://embed.grasple.com/exercises/8af926a0-80d8-459f-af55-c37a492a18c6?id=88045 
 :label: grasple_exercise_8_1_3
 :dropdown:
 :description: To check whether a matrix $A$ is orthogonal. And, if it is, to give its inverse.
