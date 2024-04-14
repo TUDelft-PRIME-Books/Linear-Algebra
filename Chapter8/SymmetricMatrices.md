@@ -994,12 +994,12 @@ $$
 :url: https://embed.grasple.com/exercises/9828a4b4-98f7-46c3-8dab-74ac04fc1955?id=88032
 :label: grasple_exercise_8_1_2
 :dropdown:
-:description: To check whether a matrix $A$ is orthogonal.
+:description: To check whether a matrix $A$ is orthogonal. And, if it is, to give its inverse.
 ::::
-
+      
 
 ::::{grasple}
-:url: https://embed.grasple.com/8af926a0-80d8-459f-af55-c37a492a18c6?id=88045
+:url: https://embed.grasple.com/8af926a0-80d8-459f-af55-c37a492a18c6?id=88045 
 :label: grasple_exercise_8_1_3
 :dropdown:
 :description: To check whether a matrix $A$ is orthogonal. And, if it is, to give its inverse.
@@ -1007,7 +1007,7 @@ $$
 
 
 ::::{grasple}
-:url: https://embed.grasple.com/exercises/3fdad317-fc18-4f88-b416-87cbd1d5e708?id=93495
+:url: https://embed.grasple.com/exercises/03d75a31-7e1b-4dd2-be0a-5e9a93a0ef09?id=94940 
 :label: grasple_exercise_8_1_4
 :dropdown:
 :description: To give an orthogonal diagonalization of a (2x2) matrix.
@@ -1018,7 +1018,7 @@ $$
 :url: https://embed.grasple.com/exercises/926933aa-a33e-40f5-8e70-84bb9ed63fc8?id=87465
 :label: grasple_exercise_8_1_5
 :dropdown:
-:description: To give an orthogonal diagonalization of a (3x3) matrix.
+:description: To give an orthogonal diagonalization of a (2x2) matrix.
 ::::
 
 
@@ -1059,4 +1059,86 @@ $$
 :label: grasple_exercise_8_1_10
 :dropdown:
 :description: To give an orthogonal diagonalization of a (4x4) matrix.
+::::
+
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/5ce15529-61a7-43d0-9fd3-5ad5469618e8?id=89131 
+:label: grasple_exercise_8_1_11
+:dropdown:
+:description: One step in an orthogonal diagonalization (as in the proof of the existence of an orthogonal diagonalization)  
+::::
+
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/5511e064-f22d-4601-9156-f00545d59f80?id=88649
+:label: grasple_exercise_8_1_12
+:dropdown: 
+:description: Sequel to previous question, now for a 4x4 matrix
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/c994fa76-f723-4700-922b-2f05ff0ef822?id=87760
+:label: grasple_exercise_8_1_13
+:dropdown:
+:description: To give an example of an symmetric 2x2 matrix with 1 eigenvalue and 1 eigenvector given.
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/4fd8d027-0e63-46ec-aaf5-f2d10d8707c9?id=87038  
+:label: grasple_exercise_8_1_14
+:dropdown:
+:description: To give an example of a 3x3 symm matrix with given eigenvalues and eigenspace.
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/77b08679-8974-453a-8f68-7e08e8ecfaf5?id=94944 
+:label: grasple_exercise_8_1_15
+:dropdown:
+:description: Deciding about the spectral decomposition of a 3x3 matrix (with  lot of prerequisites laid out).
+::::
+
+The following exercise have a more theoretical flavour.
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/6e0ebf73-fba2-46d0-aaa8-44e53ea07e53?id=88034
+:label: grasple_exercise_8_1_16 
+:dropdown:
+:description:  To think about  symmetric versus orthogonally diagonalizable. (true/false questions)
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/73c272d7-dbb0-47c9-8bee-074b1f8cc154?id=82845
+:label: grasple_exercise_8_1_17
+:dropdown:
+:description: About the (non-)symmetry of  $A + A^T$  and  $A - A^T$.
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/7959665f-09d0-4362-a0e8-c0a3e613399f?id=82848
+:label: grasple_exercise_8_1_18
+:dropdown:
+:description: About the (non-)symmetry of  products.
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/33f5be5a-1cfa-4056-ac91-c2282de234b1?id=87864
+:label: grasple_exercise_8_1_19
+:dropdown:
+:description: If $A$ and $B$ are symmetric, what about  $A^2$, $A^{-1}$  and $AB$?
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/59c4c327-1603-4cc1-8b92-7415c691098b?id=87873
+:label: grasple_exercise_8_1_20
+:dropdown:
+:description:  True or false.  If $A$ is symmetric, then $A^2$ has nonnegative eigenvalues.  (and what if $A$ is not symmetric?)
 ::::
