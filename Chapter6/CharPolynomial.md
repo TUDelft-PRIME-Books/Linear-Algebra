@@ -56,7 +56,7 @@ $$
 \lambda^2 -2\lambda -3 = (\lambda-3 )(\lambda+1) = 0
 $$
 
-and conclude that the eigenvalues of $A$ are $\lambda_1 = 3, \lambda_2 = -1$.
+and conclude that the eigenvalues of $A$ are $\lambda_1 =3, \lambda_2 = -1$. We call $\lambda_1$ a *double eigenvalue*.
 
 ::::::
 
@@ -269,7 +269,7 @@ if we start with a 'full' $3 \times 3$ matrix $A$, there may be nothing better t
 by iteratively expanding across columns or rows. We then end up with a cubic polynomial, not in factorized form.
 In general it will be quite a hard task to compute its zeros. Obviously, things get even worse in higher dimensions.
 
-In the previous example ({prf:ref}`Ex:EigenValues:SecondCharPoly`) the eigenvalue $\lambda_1 = \lambda_3 = 3$, where the numbering is arbitrary, seems to play a different role than the eigenvalue $\lambda_2$. That is, the characteristic polynomial
+In the previous example ({prf:ref}`Ex:EigenValues:SecondCharPoly`) the eigenvalue $\lambda_1  = 3$  seems to play a different role than the eigenvalue $\lambda_2$. That is, the characteristic polynomial
 
 $$
 p_A(\lambda) = (\lambda-3)^2(\lambda -2)
@@ -285,10 +285,11 @@ Another natural question is how many linearly **independent** eigenvectors  ther
 
 ::::::{prf:definition}
 
-The **algebraic multiplicity** of an eigenvalue $\lambda_k$ is the number of factors $(\lambda - \lambda_k)$ appearing in the characteristic polynomial.
+The **algebraic multiplicity** of an eigenvalue $\lambda_k$ is the number of factors $(\lambda - \lambda_k)$ appearing in the characteristic polynomial. It is often abbreviated as **a.m.**($\lambda$).
 
-The **geometric multiplicity** of an eigenvalue $\lambda_k$ is the dimension of the eigenspace corresponding to $\lambda_k$.
-In other words, it is the number of independent eigenvectors for $\lambda_k$.
+The **geometric multiplicity** of an eigenvalue $\lambda_k$, with short 
+notation **g.m.**($\lambda$),   is the dimension of the eigenspace corresponding to $\lambda_k$. In other words, it is the number of independent eigenvectors for $\lambda_k$.
+
 
 ::::::
 
@@ -374,15 +375,14 @@ The following exercise, which is meant to shed some more light on the concepts j
 ::::::
 
 
-
-In the proof of {prf:ref}`Prop:EigenValues:CharPoly` it was mentioned that for an $n \times n$ matrix $A$ the coefficient of the highest power $\lambda^n$  is equal to  $(-1)^n$.
-In the next subsection we will find expressions for two other coefficients of the characteristic polynomial. The results we mention are interesting in themselves, but they are not essential for the sequel.
-
 (Subsec:EV:SpecPropCharPoly)=
 ## Some special properties of the characteristic polynomial
 
+In the proof of {prf:ref}`Prop:EigenValues:CharPoly` it was mentioned that for an $n \times n$ matrix $A$ the coefficient of the highest power $\lambda^n$  is equal to  $(-1)^n$.
+In thhis subsection we will find expressions for two other coefficients of the characteristic polynomial. The results we mention are interesting in themselves, but they are not essential for the sequel.
+
 ::::::{prf:proposition}
-:label: Eq:EigenValues:CharPolyA
+:label: Prop:EigenValues:CharPolyTrace
 
 Suppose the characteristic polynomial of the $n \times n$ matrix $A$ is given by
 
@@ -424,7 +424,7 @@ $$
 (-1)^2 \lambda^2 + (-1)^1 (a_{11}+a_{22})\lambda + \det{(A)}.
 $$
 
-The value of $c_0$ is the easiest to establish: just plug in $\lambda=0$ in Equation {eq}`Eq:EigenValues:CharPolyA`:
+The value of $c_0$ is the easiest to establish: just plug in $\lambda=0$ in Equation {eq}`Eq:EigenValues:CharPolyTrace`:
 
 $$
 \text{det}(A)= \text{det}(A - 0I) = p_A(0) = c_n0^n + c_{n-1}0^{n-1} + \ldots + c_1\cdot 0 + c_0 = c_0.
@@ -484,12 +484,16 @@ $$
 
 ::::::
 
-There's a similar property involving the eigenvalues of a matrix. If you have never seen complex numbers we advise you to skip it.
+With this new terminology we can restate the second property in {prf:ref}`Prop:Eigenvalues:SumEigenvaluesAndTrace`  as follows.  For an $n\times n$ matrix $A$  the coefficient $c_{n-1}$ of $\lambda^{n-1}$ satisfies
+
+ $$
+   c_{n-1} = (-1)^{n-1} \text{tr}(A).
+ $$
 
 ::::::{prf:proposition}
 :label: Prop:Eigenvalues:SumEigenvaluesAndTrace
 
-For an $n\times n$ matrix $A$, let $\lambda_1,\lambda_2,  \ldots , \lambda_n$ be all the (possibly complex) eigenvalues of $A$. By this we mean the (possibly complex) zeros of the characteristic polynomial $p_A(\lambda)$, and where eigenvalues/zeros of multiplicity $k$ are counted $k$ times. Then the sum of the eigenvalues is equal to the trace of $A$ and the product of the eigenvalues equals the determinant of $A$. For short:
+Let   $A$ an $n\times n$ matrix with $n$ eigenvalues  $\lambda_1,\lambda_2,  \ldots , \lambda_n$, where eigenvalues/zeros of multiplicity $k$ are counted $k$ times. Then the sum of the eigenvalues is equal to the trace of $A$ and the product of the eigenvalues equals the determinant of $A$. For short:
 
 :::{math}
 :label: Eq:Eigenvalues:SumEigenvaluesAndTrace
@@ -504,12 +508,9 @@ For an $n\times n$ matrix $A$, let $\lambda_1,\lambda_2,  \ldots , \lambda_n$ be
 
 ::::::{prf:proof}
 
-This is more a statement about algebra, in particular about polynomials, than about linear algebra.
-The Fundamental Theorem of Algebra states that
-every polynomial $p(z)$ of degree $n$ with coefficients in $\mathbb{C}$ has $n$ complex roots/zeros $z_1,z_2,\ldots,z_n$, counting multiplicities. Consequently, $p(z)$ can be completely factorized in $n$ linear factors $(z-z_i)$.
+This is more a statement about algebra, in particular about polynomials, than about linear algebra.  In  {numref}`Section %s <Section:ComplexEV>`  we will see that it also holds for matrices with complex eigenvalues. 
 
-For the characteristic polynomial $p_A(z)$ of a matrix $A$ the zeros coincide with the eigenvalues  $\lambda_i$ of $A$.
-Since the characteristic polynomial has highest coefficient $(-1)^n$ we find that
+If $A$ has $n$ real eigenvalues $\lambda_1, \ldots, \Lambda_n$,  the characteristic polynomial $p_A(\lambda)$ of $A$  must contain the $n$ factors $(\lambda - \lambda_i)$.   Since the 'leading' coefficent'  $c_n = (-1)^n$  we may deduce that  
 
 $$
 \begin{array}{rcl}
