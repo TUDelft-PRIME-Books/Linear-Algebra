@@ -1007,7 +1007,7 @@ $$
 
 
 ::::{grasple}
-:url: https://embed.grasple.com/exercises/03d75a31-7e1b-4dd2-be0a-5e9a93a0ef09?id=94940 
+:url: https://embed.grasple.com/exercises/03d75a31-7e1b-4dd2-be0a-5e9a93a0ef09?id=94940  
 :label: grasple_exercise_8_1_4
 :dropdown:
 :description: To give an orthogonal diagonalization of a (2x2) matrix.
