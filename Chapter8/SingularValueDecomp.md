@@ -31,7 +31,7 @@ where
 
 \item $V$ is an $n \times n$  orthogonal matrix,
 
-\item $\Sigma$ is an $m\times n$ matrix which is zero everywhere, apart from the entries  $\Sigma_{ii} = \sigma_i$, $i = 1,\ldots , p$,  which are all $\geq 0$, and in decreasing order:  $\sigma_1 \geq \sigma_2 \geq \ldots \geq \sigma_p$.
+\item $\Sigma$ is an $m\times n$ matrix which is zero everywhere, apart from the entries  $\Sigma_{ii} = \sigma_i$, $i = 1,\ldots , p$,  which are all $\geq 0$, and in decreasing order. That is,  $\sigma_1 \geq \sigma_2 \geq \ldots \geq \sigma_p$.
 
 :::
 
@@ -48,7 +48,7 @@ U\begin{bmatrix}
 \sigma_1 & 0 & \cdots & \cdots& 0 & 0& \cdots& 0\\
 0  & \sigma_2 & \ddots &  & \vdots& 0& \cdots& 0 \\
 \vdots & \ddots & \ddots & \ddots &\vdots & \ & & \vdots\\
-\vdots & & \ddots & \ddots & 0 &\vdots &  & & \vdots\\
+\vdots & & \ddots & \ddots & 0 &\vdots &  &  \vdots\\
 0 & \cdots & \cdots & 0 & \sigma_p & 0& \cdots& 0\\
 \end{bmatrix} V^T, \quad m \leq n
 
@@ -89,14 +89,14 @@ $$
    V = \begin{bmatrix}\dfrac1{\sqrt{2}} &\dfrac1{\sqrt{2}} \\ \dfrac1{\sqrt{2}} & -\dfrac1{\sqrt{2}} \end{bmatrix}
 $$
 
-We will point out a few properties of this decomposition that will be generalized later on.
+Let us point out a few properties of this decomposition.
 
 :::{latexlist}
 
 \item The matrix $A$  hase size $3\times2$, so $\Sigma$ is of the form depicted in {Eq}`Eq:SVD:secondform`.
 
-\item The third column of $U$ does not really play a role in the product,  since all its entries are multiplied by twe zeros in the last row of $\Sigma$. <BR>
-The first two colums of $U$,  multiples of the vectors $\begin{bmatrix}1\\1\\1\end{bmatrix}$ and  $\begin{bmatrix}-1\\0\\1\end{bmatrix}$, give an orthonormal   basis of the column space of the matrix $A$.
+\item The third column of $U$ does not really play a role in the product,  since all its entries are multiplied by two zeros in the last row of $\Sigma$. <BR>
+The first two colums of $U$,  multiples of the vectors $\begin{bmatrix}1\\1\\1\end{bmatrix}$  and  $\begin{bmatrix}-1\\0\\1\end{bmatrix}$, give an orthonormal   basis of the column space of the matrix $A$.
 $\begin{bmatrix}1\\1\\1\end{bmatrix} = \dfrac16\begin{bmatrix}1\\2\\3\end{bmatrix} +\dfrac16\begin{bmatrix}3\\2\\1\end{bmatrix}= \frac16\vect{a}_1 + \frac16\vect{a}_2$,
 and  $\begin{bmatrix}-1\\0\\1\end{bmatrix} = \vect{a}_2 - \vect{a}_1$.
 
@@ -120,7 +120,7 @@ $$
      \end{array}
 $$
 
-With the spectral decomposition (see {prf:ref}`Thm:SymmetricMat:SpectralDecomp`) we found that any symmetric matrix $A$ can be written as a linear combination of rank one matrices $P_i$ Moreover, these matrices $P_i$ can be interpreted as projections onto orthogonal one-dimensional subspaces of $\R^n$. Here the least we can say is that we have written $A$ as a linear combination of two rank 1 matrices.
+With the spectral decomposition (see {prf:ref}`Thm:SymmetricMat:SpectralDecomp`) we found that any symmetric matrix $A$ can be written as a linear combination of rank one matrices $P_i$. Moreover, these matrices $P_i$ can be interpreted as projections onto orthogonal one-dimensional subspaces of $\R^n$. Here the least we can say is that we have written $A$ as a linear combination of two rank 1 matrices.
 :::
 
 ::::
@@ -149,7 +149,12 @@ Suppose $A = U\Sigma V^T$, with $U, \Sigma, V$ as in the definition.
 
 Suppose $\sigma_1>0, \ldots, \sigma_r>0$ and $\sigma_{r+1}=0 , \ldots, \sigma_p=0$, where $p=$min$\{m,n\}$.
 
-We have to show that $\Rank{A}= n - \dim \Nul{A} = r$.
+We have to show that 
+
+$$
+ \Rank{A} = \dim \Col{A} = n - \dim \Nul{A} = r.
+ $$
+
 Now, since both the last $m-r$ rows of $\Sigma$ and the last $n-r$ columns of $\Sigma$ are zero, we can make the 'reduction'
 
 :::{math}
@@ -159,7 +164,7 @@ Now, since both the last $m-r$ rows of $\Sigma$ and the last $n-r$ columns of $\
 
 :::
 
-where only the first $r$ columns of $U$ and $V$ are used, and where $\Sigma_{rr}$ is the top left $r \times r$ submatrix of $\sigma$. <BR>
+where only the first $r$ columns of $U$ and $V$ are used, and where $\Sigma_{rr}$ is the top left $r \times r$ submatrix of $\Sigma$. <BR>
 Since $U_r$ and $U_r\Sigma_{rr}$  (where only the columns of $U_r$ are scaled) have independent columns,  the only situation where $U_r\Sigma_{rr}V_r^T\mathbf{x} = \mathbf{0}$ is when
 $V_r^T\mathbf{x} = \mathbf{0}$. So
 
@@ -177,8 +182,7 @@ $$
 
 This proves i.
 
-Implicitly we also almost proved ii. We only have to 'restrict' to the matrices $U_r, \Sigma_{rr}, V_r$, as in {eq}`Eq:SVD:ReducedSVD`.
-
+Implicitly we also almost proved ii. We only have to 'restrict' to the matrices $U_r, \Sigma_{rr}, V_r$, as in {eq}`Eq:SVD:ReducedSVD`. <BR>
 Namely,  since  $\Col{A} = \Col{(U_r\Sigma_{rr}V^T)}$  is contained in $\Col{U_r}$  (in an exercise in {numref}`Sec:BasisDim` it was stated that, provided  the product is defined, $\Col{AB}  \subseteq \Col{A}$),  and as both column spaces have dimension $r$, they must be equal.
 
 $$
@@ -261,21 +265,20 @@ Suppose $A$ is an $m\times n$ matrix of rank $r$. (The rank, as we have seen in 
 ::::
 
 Apart from step 2., where we need the eigenvalues of $m\times m$ matrix $A^TA$, every step can be worked out with pen and paper (though step 4. and step 5. can be  terribly error prone.) <BR>
-The step that, we think,  most needs some explaining is step 5.  Why does it lead to an *orthonormal* set of vectors $\{\mathbf{u}_1,\dots,\mathbf{u}_r\}$?  We will come back to that later, but first look at a an example  (no nice numbers though!)
+The step that, we think,  most needs some explaining is step 5.  Why does it lead to an *orthonormal* set of vectors $\{\mathbf{u}_1,\dots,\mathbf{u}_r\}$?  We will show that indeed it does in the proof of {prf:ref}`Thm:SVD:Existence`.  It is time for an example first  (no nice numbers though!)
 
 
 ::::{prf:example}
 :label:  Ex:SVD:ComputeAnSVD1
 
 We will find a singular value decomposition of the matrix
-
-$$
+$
 A = \begin{bmatrix}
 5 & -1 \\
 -3 & 2 \\
 -1 & 3
-\end{bmatrix},
-$$
+\end{bmatrix}.
+$
 
 
 We follow the steps of the algorithm.
@@ -298,7 +301,7 @@ We follow the steps of the algorithm.
 \end{bmatrix}$.
 
 4.  We have to find the eigenvectors of $A^TA$ for $\lambda_1 = 42$, $\lambda_2 = 7$. <BR>
-    Skipping the computation we find  $\mathbf{w}_1 = \begin{bmatrix} 2\\-1
+    Skipping the computations we find  $\mathbf{w}_1 = \begin{bmatrix} 2\\-1
 \end{bmatrix}$ and  $\mathbf{w}_2 = \begin{bmatrix} 1\\2
 \end{bmatrix}$.  <BR>
   Normalizing and putting them in a matrix gives  $V = \begin{bmatrix}
@@ -374,13 +377,14 @@ A^TA \mathbf{u} = A^T(A\mathbf{u}) = A^T\mathbf{0} = \mathbf{0}.
 $$
 
 So $\mathbf{u} \in \Nul{(A^TA)}$.
-Suppose that $\mathbf{v}\in \Nul{(A^TA)}$,  i.e., $A^TA\vect{v} = \vect{0}$.  Then, observe that
+
+Conversely suppose that $\mathbf{v}\in \Nul{(A^TA)}$,  i.e., $A^TA\vect{v} = \vect{0}$.  Then, from the chain of identities
 
 $$
 0 = \mathbf{v}^T\vect{0} = \mathbf{v}^TA^TA\mathbf{v} = \norm{A\mathbf{v}}^2,
 $$
 
-which implies that  $\norm{A\mathbf{v}}=0$, so $A\mathbf{v}=\mathbf{0}$ and $\mathbf{v}$ lies in $\Nul{A}$.
+it follows that  $\norm{A\mathbf{v}}=0$, implying $A\mathbf{v}=\mathbf{0}$.  So  $\mathbf{v}$ lies in $\Nul{A}$.
 
 All in all we have shown that all vectors in $\Nul{A}$ lie in $\Nul{A^TA}$ and that all vectors in $\Nul{A^TA}$ lie in $\Nul{A}$.  Thus $\Nul{A}=\Nul{A^TA}$.
 \item Observe that since $A$ is an $m\times n$ matrix, we have that $A^TA$ is $n\times n$. Now, using {prf:ref}`Thm:BasisDim:RankThm` we have
@@ -468,7 +472,8 @@ Well,  just consider the inner products!  For  $i \neq j$ we have
 $$
   A\vect{v}_i\ip A\vect{v}_j = (A\vect{v}_i)^TA\vect{v}_j = \vect{v}_i^T A^TA \vect{v}_j = \vect{v}_i \ip  (\lambda_j\vect{v}_j) = \lambda_j \vect{v}_i \ip \vect{v}_j = 0,
 $$
-since we already established the orthogonality of the vectors $\vect{v}_1, \ldots, \vect{v}_n$. <BR>
+
+since  the vectors $\vect{v}_1, \ldots, \vect{v}_n$ are orthogonal. <BR>
 Thus the vectors $\vect{u}_1, \ldots, \vect{u}_r$  are orthogonal to start with.
 Finding their norms, noting that the vectors $\vect{v}_i$ already have unit length, and that $A^TA\vect{v}_i = \lambda_i \vect{v}_i$ we see that,  for $1 \leq i \leq r$,
 
@@ -506,7 +511,7 @@ $$
    AV = U_r\tilde{\Sigma}_r.
 $$
 
-Next we add the remaining columns (if any)   $\vect{u}_{r+1}, \ldots, \vect{u}_{m}$, and add $m-r$ zero rows to the bottom of $\tilde{\Sigma}_r$.  Thus we have recreated the matrix  $\Sigma$ as in the algorithm.  Moreover,   $U_r\tilde{\Sigma}_r = U\Sigma$, so we see that
+Next we add the remaining columns (if any)   $\vect{u}_{r+1}, \ldots, \vect{u}_{m}$, and add $m-r$ zero rows to the bottom of $\tilde{\Sigma}_r$.  Thus we have built the matrix  $\Sigma$ exactly as in the algorithm (Step 3).  Moreover,   $U_r\tilde{\Sigma}_r = U\Sigma$, so we see that
 
 $$
   AV = U_r\tilde{\Sigma}_r = U\Sigma.
@@ -525,12 +530,12 @@ Some concluding remarks concerning the algorithm.
 ::::{prf:remark}
 :label: Rem:SVD:PracticalHints
 
- 1. Because of the basic property that says that transposing an svd of an $m \times n$ matrix $A$ gives and svd of $A^T$
+ 1. Because of the basic property that says that transposing an SVD of an $m \times n$ matrix $A$ gives an SVD  of $A^T$
  ({prf:ref}`Prop:SVD:BasicProp` {itemref}`Item:Prop:SVD:BasicProp:Transpose`)
  it may be profitable to  find an svd for $A^T$ first, and then transpose this. <BR>
  The singular values of $A$ are the eigenvalues of $A^TA$, an $n \times n$ matrix the singular values of $A^T$ are the eigenvalues of $AA^T$,
  $m \times m$ matrix.  The smaller the better! <BR>
- In most applications the singular value decomposition will be applied to an $m\times n$ matrix $A$  with much more rows that columns,  so  $m >> n$. For such  matrix $A$ 
+ In most applications the singular value decomposition will be applied to  $m\times n$ matrices $A$  with much more rows that columns,  so  $m \gg n$. For such  matrix $A$ 
  working with $A^TA$ is the best bet.
 
  2. The normalization of the vectors  $\mathbf{v}_i$ and $\mathbf{u}_j$ may be postponed till the end of step 5.  That prevents dragging along
@@ -560,7 +565,7 @@ $B = A^T = \begin{bmatrix}
 -1 & 3 & 0
 \end{bmatrix}$.
 
-And we pass all steps.
+We will pass along all steps of {prf:ref}`Alg:SVD:SVDalgorithm`.
 
 Step 1.  $B^TB = AA^T = \begin{bmatrix}
 3 & -3 & -1\\
@@ -569,8 +574,12 @@ Step 1.  $B^TB = AA^T = \begin{bmatrix}
 \end{bmatrix}$
 
 
-Step 2.  Computing the characteristic polynomial is already quite a task here, but it is doable.  The result: $\det(B^TB - \lambda \mathrm{I})
-= \lambda^3 -23\lambda^2 +140 \lambda -196$. <BR>
+Step 2.  Computing the characteristic polynomial is already quite a task here, but it is doable.  The result: 
+
+$$
+\det(B^TB - \lambda \mathrm{I}) = \lambda^3 -23\lambda^2 +140 \lambda -196.
+$$
+
 Without a computer we would be stuck. How to find the zeros of this polynomial? However, we have come up with a *very*  special matrix $A$ here,
 for which the squares of all the singular values are  *integers*. (So in that sense, this is not a very representative example, and in general the
 computations will be even worse, not to say impossible.)  Here, the eigenvalues of $B^TB$ are given by  $\lambda_1 = 14, \lambda_2 = 7,
@@ -586,11 +595,11 @@ Step 3  is straightforward:  $\Sigma = \begin{bmatrix}
 Step 4. With some effort we can find eigenvectors: <BR>
 $\vect{v}_1 = \begin{bmatrix} 1 \\ -3 \\ -2 \end{bmatrix}$, for $\lambda_1 = 14$,
   $\vect{v}_2 = \begin{bmatrix} 1 \\ -3 \\ 5 \end{bmatrix}$, for $\lambda_2 = 7$, and
-$\vect{v}_3 = \begin{bmatrix} 3 \\ 1 \\ 0 \end{bmatrix}$, for $\lambda_1 = 2$. <BR>
+$\vect{v}_3 = \begin{bmatrix} 3 \\ 1 \\ 0 \end{bmatrix}$, for $\lambda_3 = 2$. <BR>
 Note that these are indeed three orthogonal vectors, which
 we do not immediately normalize!
 
-Step 5.  Next we compute the vectors $\vect{u}$, again without normalizing, and also for the moment not taking the (ugly!) factors
+Step 5.  Next we compute the vectors $\vect{u}_i$, again without normalizing, and also for the moment not taking the (ugly!) factors
 $\frac{1}{\sigma_i} $ into account. Since the singular values are nonzero, we use all three vectors $\vect{v}_i$: <BR>
 This gives 
 
@@ -599,7 +608,7 @@ $$ \mathbf{u}_1 = B\mathbf{v}_1 = \begin{bmatrix} 8 \\ -4 \\ -4 \\ -10 \end{bmat
 $$
 It should not come as a surprise that these vectors are orthogonal! <BR>
 We have to find a fourth orthogonal vector $\vect{u}_4$.   One way is to look for a nonzero vector in the nulspace of the matrix $\begin{bmatrix}
-8 & -4 & -10 \\ -6 & 3 & 10 & 10 \\ 2 & 4 & 0 & 0\end{bmatrix}$. <BR>
+8 & -4 & -4 &-10 \\ -6 & 3 & 10 & 10 \\ 2 & 4 & 0 & 0\end{bmatrix}$. <BR>
  You may check that the vector $\vect{u}_4 = \begin{bmatrix} 4 \\ -2 \\ 5 \\ 2 \end{bmatrix}$  does the trick.
 
 Step 6.  (Where we also still have to present our $V$!)  <BR>
@@ -630,7 +639,7 @@ From  $A^T = U\Sigma V$  it follows swiftly that  $A = V \Sigma^TU$ is an SVD fo
 In this section we will have a deeper look to the decomposition and its meaning. As we have done previously, let's think about our $m\times n$ matrix $A$ as the standard matrix of a linear transformation from $\R^n$ to $\R^m$.
 
 By definition, the matrices $U$ and $V$ in the SVD of an $m\times n$ matrix $A$ 
-are orthogonal matrices. Thus the columns of $U$ give an orthonormal basis of $\R^m$,  the columns of $V$ an orthonormal basis of $\R^n$. Then, we think of our decomposition $USV^T$ as a composition of transformations that we can visualise using the graph in {numref}`Figure %s <Fig:SVD:decomposition>`:
+are orthogonal matrices. Thus the columns of $U$ give an orthonormal basis of $\R^m$,  the columns of $V$ an orthonormal basis of $\R^n$. Then, we think of our decomposition $U\Sigma V^T$ as a composition of transformations that we can visualise using the graph in {numref}`Figure %s <Fig:SVD:decomposition>`:
 
 :::{figure} Images/Fig-SVD-Decomposition.svg
 :width: 300px
@@ -652,7 +661,7 @@ A = \begin{bmatrix}
 \end{bmatrix}.
 $$
 
-The singular values for this matrix are $s_1 = 2\sqrt{2}$, and $s_2 = \sqrt{2}$. We choose
+The singular values for this matrix are $\sigma_1 = 2\sqrt{2}$, and $\sigma_2 = \sqrt{2}$. We choose
 
 $$
 V =\begin{bmatrix} \frac{1}{2} \, \sqrt{2} & \frac{1}{2} \, \sqrt{2} \\
@@ -672,7 +681,7 @@ $$
 
 Notice that $V^T$ corresponds to a transformation consisting in a reflection over the line $y=x$ followed by a rotation of angle $-\frac{\pi}{4}$. So the unit circle is mapped on the unit circle.
 
-The matrix $S$ contains the singular values. We can observe that the unit circle is mapped into an ellipse whose positive semi-axes have lengths equal to the singular values.
+The matrix $\Sigma$ contains the singular values. We can observe that the unit circle is mapped into an ellipse whose positive semi-axes have lengths equal to the singular values.
 
 Finally, the matrix $U$ can be interpreted as a reflection over the line $y=x$.
 
@@ -683,14 +692,16 @@ Effects of the transformations on the unit circle.
 :::
 ::::
 
-In general, since $V^T$ is an orthogonal matrix, it will map the $\mathbb{R}^n$ to itself and it will preserve the norm of vectors. We have seen in the example above that the unit circle in $\mathbb{R}^2$ was mapped into itself since $V^T$ was a rotation plus a reflection. This is true in general in any dimension. The same can be said for $U$. However, for $S$, we can see that the unit circle was mapped into an ellipse in $\mathbb{R}^2$ with the length of the semi-axes equal to the singular values. In general, the effect of $S$ is to change the length of the standard unit vectors according to the singular values. So, the unit circle would be mapped to an ellipsoid. It is important to notice that the number of non-zero eigenvalues is equal to the rank of the matrix $A$.
+In general, since $V^T$ is an orthogonal matrix, it will map the $\mathbb{R}^n$ to itself and it will preserve the norm of vectors. We have seen in the example above that the unit circle in $\mathbb{R}^2$ was mapped into itself since $V^T$ was a rotation plus a reflection. This is true in general in any dimension. The same can be said for $U$. However, for $\Sigma$, we can see that the unit circle was mapped into an ellipse in $\mathbb{R}^2$ with the length of the semi-axes equal to the singular values. In general, the effect of $\Sigma$ is to change the length of the standard unit vectors according to the singular values. So, the unit circle would be mapped to an ellipsoid. 
 
 
-The proof of this theorem is not trivial and it requires some work. If the reader is interested in the proof, it could be found in {numref}`Sec:ProofSVD`.
+## Applications of the SVD
 
-What we can take out of this theorem is that there always exists a singular value decomposition of a matrix.
-## Linear Least Squares Revisited
+There will be two applications described in this section in the future.
 
+1.  Data compression
+
+2.  Linear Least Squares.
 
 ## Grasple Exercises
 

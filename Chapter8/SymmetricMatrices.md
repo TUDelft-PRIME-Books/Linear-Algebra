@@ -879,12 +879,12 @@ $$
 
 Exactly as in {prf:ref}`Ex:SymmetricMat:SpectralDecomp` we can use the column-row expansion of the matrix product to derive
 
-::::{math}
+:::{math}
 :label: Eq:SymmetricMat:SpectralDecomp2
   
 A =  \lambda_1 \mathbf{q}_1\mathbf{q}_1^T + \lambda_2\mathbf{q}_2\mathbf{q}_2^T + \ldots + \lambda_n\mathbf{q}_n\mathbf{q}_n^T,
 
-::::
+:::
 
 where the vectors $\mathbf{q}_i$ of course are the (orthonormal) columns of the diagonalizing matrix $Q$. This is indeed a linear combination of orthogonal projections, as was to be shown.
 ::::
@@ -894,6 +894,7 @@ where the vectors $\mathbf{q}_i$ of course are the (orthonormal) columns of the 
 The eigenvalues of the matrix $A=\begin{bmatrix} 2 & 1 & 0 \\ 1 & 3 &  1\\ 0 & 1& 2 \end{bmatrix}$ are 1, 2 and 4.
 
 Find the spectral decomposition of $A$.
+
 ::::
 
 If in {prf:ref}`Thm:SymmetricMat:SpectralDecomp` the projections onto eigenvectors for the same eigenvalue are grouped together, then the following alternative form of the spectral decomposition results.
@@ -975,4 +976,87 @@ $$
   \end{bmatrix}.
 $$
 
+::::
+
+
+## Grasple Exercises
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/f76823e6-8936-4edf-bd0b-fa3a2aa7246f?id=88040
+:label: grasple_exercise_8_1_1
+:dropdown:
+:description: To check whether a matrix $A$ is symmetric.
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/9828a4b4-98f7-46c3-8dab-74ac04fc1955?id=88032
+:label: grasple_exercise_8_1_2
+:dropdown:
+:description: To check whether a matrix $A$ is orthogonal.
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/8af926a0-80d8-459f-af55-c37a492a18c6?id=88045
+:label: grasple_exercise_8_1_3
+:dropdown:
+:description: To check whether a matrix $A$ is orthogonal. And, if it is, to give its inverse.
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/3fdad317-fc18-4f88-b416-87cbd1d5e708?id=93495
+:label: grasple_exercise_8_1_4
+:dropdown:
+:description: To give an orthogonal diagonalization of a (2x2) matrix.
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/926933aa-a33e-40f5-8e70-84bb9ed63fc8?id=87465
+:label: grasple_exercise_8_1_5
+:dropdown:
+:description: To give an orthogonal diagonalization of a (3x3) matrix.
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/9aac9c37-aa3b-4d5a-bb92-f00c09e5f052?id=94943
+:label: grasple_exercise_8_1_6
+:dropdown:
+:description: To give an orthogonal diagonalization of a (3x3) matrix.
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/a6a95823-15e4-4354-b89d-559306a5a7fa?id=94941
+:label: grasple_exercise_8_1_7
+:dropdown:
+:description: To give an orthogonal diagonalization of a (3x3) matrix.
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/0403af25-edba-4bc6-b077-3de227253419?id=56931
+:label: grasple_exercise_8_1_8
+:dropdown:
+:description: To give an orthogonal diagonalization of a (3x3) matrix.
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/3a45e358-4898-4d1d-b6f4-ba9679dd13e0?id=87765
+:label: grasple_exercise_8_1_9
+:dropdown:
+:description: To give an orthogonal diagonalization of a (3x3) matrix.
+::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/eb8b0e2f-d909-47ce-8ef1-50ad67e2b0f6?id=87905
+:label: grasple_exercise_8_1_10
+:dropdown:
+:description: To give an orthogonal diagonalization of a (4x4) matrix.
 ::::
