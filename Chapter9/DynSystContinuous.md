@@ -146,6 +146,7 @@ $$
 showing that $\vect{y}$ is indeed a solution. This observation leads us to the following statement.
 
 :::{prf:proposition}
+:label: Prop:DynSystContinuous:EVsgiveSols
 
 If $\lambda$ is an eigenvalue of $A$ with associated eigenvector $\vect{v}$, then $\vect{y}=\vect{v}e^{\lambda t}$ is a solution of the system of linear differential equations $\vect{x}'=A\vect{x}$.
 
@@ -186,4 +187,89 @@ $$
 
 where $c_{1}$ and $c_{2}$ are some constants while $\vect{v}_{-\beta}$ and $\vect{v}_{-\alpha}$ are the eigenvectors of $A$ corresponding $-\beta $ and $-\alpha$, respectively. In particular, if $t$ gets very large, we find very large but negative exponents on the right hand side. That is, both $\lim_{t\to\infty}S(t)$ and $\lim_{t\to\infty} I(t)$ are $0$. This makes perfect sense intuitively, as we expect all members of the population to get infected and recover. After that, they are neither susceptible nor infected anymore.
 
+Note that, in the long run, we will end up arbitrarily close to $\vect{0}$ regardless of the starting values of $S$ and $I$. That is, if we start in any $\vect{v}$ and follow the solution $\vect{y}(t)$ of the system of linear differential equations satisfying the initial condition $\vect{y}(0)=\vect{v}$, then we will always end up in $\vect{0}$. In other words, $\vect{v}$ *attracts* sall points. 
+
 :::
+
+:::{prf:definition}
+
+If $A$ is a $2\times 2$-matrix with real eigenvalues $\lambda_{1}$ and $\lambda_{2}$, then the origin is called:
+
+<ul>
+
+<li>
+
+an **attractor** or a **sink** if $\lambda_{1},\lambda_{2}<0>$
+
+</li>
+
+<li>
+
+a **repeller** or a **source** if $\lambda_{1},\lambda_{2}>0$
+
+</li>
+
+<li>
+
+a **saddle point** if $\lambda_{1}\lambda_{2}<0$, i.e. if $\lambda_{1}$ and $\lambda_{2}$ have opposite signs.
+
+</li>
+
+</ul>
+
+:::
+
+Let us once again consider the system $\vect{y}'=A\vect{y}$. By {prf:ref}`Prop:DynSystContinuous:EVsgiveSols`, we can find solutions $\vect{y}=\vect{v}e^{\lambda t}$ where $\lambda$ is an eigenvalue of $A$ and $\vect{v}$ is a corresponding eigenvector. But if $\lambda$ is nto a real number, this does not give a real-valued function. In some applications that's perfectly fine, but often we're interested in real solutions to systems of linear differential equations. Can we stil find any of those if some eigenvalues are complex?
+
+Yes, we can! First, we can use the following well-known fact from calculus:
+
+$$
+
+e^{(a+bi)t}=e^{a}e^{bi}=e^{a}(\cos(bt)+i\sin(bt))
+
+$$
+
+that holds for any real numbers $a$ and $b$. In particular, if $\lambda$ is any complex number, then $\overline{e^{\lambda}}=e^{\overline{\lambda}}$. Let us write $\Re{\vect{v}}$ for the vector which entries are the real parts of the entries of $\vect{v}$ and $\Im{\vect{v}}$ for the vector which entries are the imaginary parts of the entries of $\vect{v}$, then we find
+
+$$
+
+\begin{align*}
+\vect{v}e^{(a+bi)t}&=(\Re{\vect{v}}+i\Im{\vect{v})}e^{at}(\cos(bt)+i\sin(bt))\\
+&=\left[(\Re{\vect{v}}\cos(bt)-\Im{\vect{v}}\sin(bt))+i(\Re{\vect{v}}\sin(bt)+\Im{\vect{v}}\cos(bt))\right]e^{at}
+\end{align*}
+
+$$
+
+Secondly, we can use the fact that complex eigenvalues come in conjugate pairs $\lambda=a+bi,\overline{\lambda}=a-bi$ and that the conjugate $\overline{\vect{v}}$ of an eigenvector $\vect{v}$ corresponding to $\lambda$ is an eigenvector corresponding to $\overline{\lambda}$. Since any linear combination of $\vect{v}e^{\lambda t}$ and $\overline{\vect{v}}e^{\overline{\lambda} t}$ is a solution, we have that
+
+$$
+
+\begin{align*}
+\frac{1}{2}\vect{v}e^{\lambda t}+\frac{1}{2}\overline{\vect{v}}e^{\overline{\lambda}t}&=\Re{\vect{v}e^{\lambda t}}\\
+&=(\Re{\vect{v}}\cos(bt)-\Im{\vect{v}}\sin(bt))e^{at}\quad\text{and}\\
+\frac{1}{2i}\vect{v}e^{\lambda t}-\frac{1}{2i}\overline{\vect{v}}e^{\overline{\lambda}t}&=\Im{\vect{v}e^{\lambda t}}\\
+&=(\Re{\vect{v}}\sin(bt)+\Im{\vect{v}}\cos(bt))e^{at}
+\end{align*}
+
+$$
+
+are solutions of $\vect{y}'=A\vect{y}$. If $A$ is a $2\times 2$-matrix, we can summarize this as follows. 
+
+:::{prf:Proposition}
+
+Let $A$ be a $2\times 2$-matrix with non-real eigenvalue $\lambda=a+bi$. Then 
+
+$$
+
+\begin{align*}
+\vect{y}_{1}(t)&=(\Re{\vect{v}}\cos(bt)-\Im{\vect{v}}\sin(bt))e^{at}\quad\text{and}\\
+\vect{y}_{2}(t)&=(\Re{\vect{v}}\sin(bt)+\Im{\vect{v}}\cos(bt))e^{at}
+\end{align*}
+
+$$
+
+are linearly independent solutions to the linear system of differential equations $\vect{y}'=A\vect{y}$. In this case, the origin is called a **spiral point**.
+
+:::
+
+
