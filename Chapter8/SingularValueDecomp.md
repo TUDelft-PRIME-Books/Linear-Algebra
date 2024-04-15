@@ -170,7 +170,7 @@ $$
  \Rank{A} = \dim \Col{A} = n - \dim \Nul{A} = r.
  $$
 
-Now, since both the last $m-r$ rows of $\Sigma$ and the last $n-r$ columns of $\Sigma$ are zero, we can make use the economic form as in {prf:ref}`Ex:SVD:FirstSVD`, meaning
+Now, since both the last $m-r$ rows of $\Sigma$ and the last $n-r$ columns of $\Sigma$ are zero, we can make use the economic form as in the previous example. By this we mean
 
 :::{math}
 :label: Eq:SVD:ReducedSVD
@@ -197,7 +197,7 @@ $$
 
 This proves i.
 
-Implicitly we also almost proved ii. We only have to 'restrict' to the matrices $U_r, \Sigma_{rr}, V_r$, as in {eq}`Eq:SVD:ReducedSVD`. <BR>
+Implicitly we also almost proved ii. We only have to 'restrict' to the matrices $U_r, \Sigma_{rr}, V_r$, as in the previous example. <BR>
 Namely,  since  $\Col{A} = \Col{(U_r\Sigma_{rr}V^T)}$  is contained in $\Col{U_r}$  (in an exercise in {numref}`Sec:BasisDim` it was stated that, provided  the product is defined, $\Col{AB}  \subseteq \Col{A}$),  and as both column spaces have dimension $r$, they must be equal.
 
 $$
