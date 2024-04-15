@@ -199,7 +199,7 @@ If $A$ is a $2\times 2$-matrix with real eigenvalues $\lambda_{1}$ and $\lambda_
 
 <li>
 
-an **attractor** or a **sink** if $\lambda_{1},\lambda_{2}<0>$
+an **attractor** or a **sink** if $\lambda_{1},\lambda_{2}<0$
 
 </li>
 
@@ -257,7 +257,7 @@ are solutions of $\vect{y}'=A\vect{y}$. If $A$ is a $2\times 2$-matrix, we can s
 
 :::{prf:Proposition}
 
-Let $A$ be a $2\times 2$-matrix with non-real eigenvalue $\lambda=a+bi$. Then 
+Let $A$ be a $2\times 2$-matrix with non-real eigenvalue $\lambda=a+bi$. Let $\vect{v}$ be an eigenvector associated to $\lambda$. Then 
 
 $$
 
@@ -272,4 +272,5 @@ are linearly independent solutions to the linear system of differential equation
 
 :::
 
+If $a<0$ in this proposition, then $e^{at}$ will become arbitrarily small, so as $t$ increases, $\vect{y}(t)$ will approach $0$. In this case, the trajectory will spiral towards the origin. If $a>0$, then $e^{at}$ becomes arbitrarily large and the trajectory will spiral away from the origin.
 
