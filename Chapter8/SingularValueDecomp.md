@@ -47,7 +47,7 @@ So the decomposition will look like either
 U\begin{bmatrix}
 \sigma_1 & 0 & \cdots & \cdots& 0 & 0& \cdots& 0\\
 0  & \sigma_2 & \ddots &  & \vdots& 0& \cdots& 0 \\
-\vdots & \ddots & \ddots & \ddots &\vdots & \ & & \vdots\\
+\vdots & \ddots & \ddots & \ddots &\vdots & \vdots & & \vdots\\
 \vdots & & \ddots & \ddots & 0 &\vdots &  &  \vdots\\
 0 & \cdots & \cdots & 0 & \sigma_p & 0& \cdots& 0\\
 \end{bmatrix} V^T, \quad m \leq n
@@ -69,11 +69,10 @@ U\begin{bmatrix}
 0 & 0   &  \cdots  & \cdots  & 0 \\
 \vdots & \vdots & & \ &\vdots \\
 0 & 0   &  \cdots  & \cdots  & 0 \\
-\end{bmatrix} V^T, \quad m > n
+\end{bmatrix} V^T, \quad m > n.
 
 ::::
 
-where $p=\min\{m,n\}$.
 
 
 
@@ -95,12 +94,28 @@ Let us point out a few properties of this decomposition.
 
 \item The matrix $A$  hase size $3\times2$, so $\Sigma$ is of the form depicted in {Eq}`Eq:SVD:secondform`.
 
+
+
 \item The third column of $U$ does not really play a role in the product,  since all its entries are multiplied by two zeros in the last row of $\Sigma$. <BR>
-The first two colums of $U$,  multiples of the vectors $\begin{bmatrix}1\\1\\1\end{bmatrix}$  and  $\begin{bmatrix}-1\\0\\1\end{bmatrix}$, give an orthonormal   basis of the column space of the matrix $A$.
+We can write this SVD in a more 'economic' form by leaving out the third column of $U$ and the third row of $\Sigma$: 
+
+<BR>
+
+$$
+
+  A =  \begin{bmatrix}\dfrac{1}{\sqrt{3}}&-\dfrac{1}{\sqrt{2}}\\
+   \dfrac{1}{\sqrt{3}}&0\\
+   \dfrac{1}{\sqrt{3}}&\dfrac{1}{\sqrt{2}}  \end{bmatrix} 
+  \begin{bmatrix}\sqrt{24}&0\\0&2\end{bmatrix}
+   \begin{bmatrix}\dfrac1{\sqrt{2}} &\dfrac1{\sqrt{2}} \\ \dfrac1{\sqrt{2}} & -\dfrac1{\sqrt{2}} \end{bmatrix}^T
+
+$$
+
+\item The first two colums of $U$,  multiples of the vectors $\begin{bmatrix}1\\1\\1\end{bmatrix}$  and  $\begin{bmatrix}-1\\0\\1\end{bmatrix}$, give an orthonormal   basis of the column space of the matrix $A$.
 $\begin{bmatrix}1\\1\\1\end{bmatrix} = \dfrac16\begin{bmatrix}1\\2\\3\end{bmatrix} +\dfrac16\begin{bmatrix}3\\2\\1\end{bmatrix}= \frac16\vect{a}_1 + \frac16\vect{a}_2$,
 and  $\begin{bmatrix}-1\\0\\1\end{bmatrix} = \vect{a}_2 - \vect{a}_1$.
 
-\item The columns of the matrix $V$ give an orthonormal basis of the row space of the matrix $A$. (Which  is not so striking here, since that row space is the whole of $\R^2$.)
+\item The two columns of the matrix $V$ give an orthonormal basis of the row space of the matrix $A$. (Which  is not so striking here, since that row space is the whole of $\R^2$.)
 
 \item The number of nonzero singular values is two, which is equal to the number of independent columns (and also rows) of $A$, which is the *rank* of $A$.
 
@@ -117,7 +132,7 @@ $$
       \begin{bmatrix}\dfrac{1}{\sqrt{2}} & \dfrac{1}{\sqrt{2}}\end{bmatrix}
      + 2\begin{bmatrix}-\dfrac{1}{\sqrt{2}} \\0\\ \dfrac{1}{\sqrt{2}}\end{bmatrix}
      \begin{bmatrix}\dfrac{1}{\sqrt{2}} & -\dfrac{1}{\sqrt{2}}\end{bmatrix}
-     \end{array}
+     \end{array}.
 $$
 
 With the spectral decomposition (see {prf:ref}`Thm:SymmetricMat:SpectralDecomp`) we found that any symmetric matrix $A$ can be written as a linear combination of rank one matrices $P_i$. Moreover, these matrices $P_i$ can be interpreted as projections onto orthogonal one-dimensional subspaces of $\R^n$. Here the least we can say is that we have written $A$ as a linear combination of two rank 1 matrices.
@@ -139,7 +154,7 @@ Suppose $A = U\Sigma V^T$, with $U, \Sigma, V$ as in the definition.
 \item The number $r$ of nonzero singular values is equal to the rank of $A$.
 \item The first $r$ columns of $U$ give an orthonormal basis for the column space of $A$.
 \item The first $r$ columns of $V$ give an orthonormal basis for the row space of $A$.
-\item A singular value decomposition of the matrix $A^T$  is given by $V\Sigma^TU^T$.
+\item A singular value decomposition of the matrix $A^T$  is given by $A^T = V\Sigma^TU^T$.
 \label{Item:Prop:SVD:BasicProp:Transpose}
 :::
 
@@ -155,7 +170,7 @@ $$
  \Rank{A} = \dim \Col{A} = n - \dim \Nul{A} = r.
  $$
 
-Now, since both the last $m-r$ rows of $\Sigma$ and the last $n-r$ columns of $\Sigma$ are zero, we can make the 'reduction'
+Now, since both the last $m-r$ rows of $\Sigma$ and the last $n-r$ columns of $\Sigma$ are zero, we can make use the economic form as in {prf:ref}`Ex:SVD:FirstSVD`, meaning
 
 :::{math}
 :label: Eq:SVD:ReducedSVD
@@ -164,8 +179,8 @@ Now, since both the last $m-r$ rows of $\Sigma$ and the last $n-r$ columns of $\
 
 :::
 
-where only the first $r$ columns of $U$ and $V$ are used, and where $\Sigma_{rr}$ is the top left $r \times r$ submatrix of $\Sigma$. <BR>
-Since $U_r$ and $U_r\Sigma_{rr}$  (where only the columns of $U_r$ are scaled) have independent columns,  the only situation where $U_r\Sigma_{rr}V_r^T\mathbf{x} = \mathbf{0}$ is when
+where only the first $r$ columns of $U$ and $V$ are used, and where $\Sigma_{rr}$ is the top left $r \times r$ submatrix of $\Sigma$. Note that $\Sigma_{rr}$ is a diagonal matrix with no zeros on the diagonal. <BR>
+Since $U_r$ and $U_r\Sigma_{rr}$  (where only the columns of $U_r$ are scaled) have independent columns,  the only situation where $A\mathbf{x}  =U_r\Sigma_{rr}V_r^T\mathbf{x} = \mathbf{0}$ is when
 $V_r^T\mathbf{x} = \mathbf{0}$. So
 
 $$
@@ -209,8 +224,8 @@ We start with an important observation that explains the central role of the mat
 ::::{prf:proposition} Computing the Singular Values
 :label: Prop:SVD:singularvalues
 
-Let $A$ be an $m\times n$ matrix.
-The singular values of a matrix $A$ are the square roots of the (nonnegative!) eigenvalues of the matrix $A^TA$.
+Let $A$ be an $m\times n$ matrix.  
+The singular values of a matrix $A$ are the square roots of the (nonnegative!) eigenvalues of the $(n \times n)$  matrix $A^TA$.  Thus,  if $\lambda_1 \geq \lambda_2 \geq  \cdots \geq \lambda_n$ are the eigenvalues of $A^TA$,  then  $\sigma_i = \sqrt{\lambda_i}$ are the singular values of $A$. 
 
 More specific, if $A$ is an $m\times n$ matrix with singular value decomposition $A = U\Sigma V^T$.  Then the 'diagonal' elements $\Sigma_{ii}$ of $\Sigma$,  i.e., the singular values $  \sigma_i$,  are the square roots of the eigenvalues $\lambda_i$ of the matrix $A^TA$.  <BR> 
 Moreover,  the columns of $V$ are corresponding eigenvectors  (of $A^TA$).
@@ -251,12 +266,13 @@ Suppose $A$ is an $m\times n$ matrix of rank $r$. (The rank, as we have seen in 
 
 1. Compute $A^TA$.
 
-2. Find the eigenvalues $\lambda_1 \geq \lambda_2 \geq \ldots \geq \lambda_m$
+2. Find the eigenvalues $\lambda_1 \geq \lambda_2 \geq \ldots \geq \lambda_n$
  of $A^TA$.
 
 3. Construct the $m\times n$ matrix $\Sigma$,  putting zeros on every position except on  the main 'diagonal', where   $\Sigma_{ii}=\sigma_i = \sqrt{\lambda_i} $.
 
-4. Compute a complete set of orthonormal eigenvectors $\mathbf{v}_1,\dots,\mathbf{v}_n$ and take them as columns in the matrix $V$.
+4. Compute a complete set of orthonormal eigenvectors $\mathbf{v}_1,\dots,\mathbf{v}_n$,
+corresponding to $\lambda_1, \ldots, \lambda_n$,   and take them as columns in the matrix $V$.
 
 5.  Compute $\mathbf{u}_i = \dfrac{1}{\sigma_i}A\mathbf{v}_i$,     for $i=1,\dots,r$,  where $r$ is the number of nonzero singular values. If $r < m$ extend the set $\{\mathbf{u}_1,\dots,\mathbf{u}_r\}$ to an orthonormal basis $\{\mathbf{u}_1, \dots ,\mathbf{u}_m\}$ of $\mathbb{R}^m$.
 
@@ -264,7 +280,7 @@ Suppose $A$ is an $m\times n$ matrix of rank $r$. (The rank, as we have seen in 
 
 ::::
 
-Apart from step 2., where we need the eigenvalues of $m\times m$ matrix $A^TA$, every step can be worked out with pen and paper (though step 4. and step 5. can be  terribly error prone.) <BR>
+Apart from step 2., where we need the eigenvalues of $n\times n$ matrix $A^TA$, every step can be worked out with pen and paper (though step 4. and step 5. can be  terribly error prone.) <BR>
 The step that, we think,  most needs some explaining is step 5.  Why does it lead to an *orthonormal* set of vectors $\{\mathbf{u}_1,\dots,\mathbf{u}_r\}$?  We will show that indeed it does in the proof of {prf:ref}`Thm:SVD:Existence`.  It is time for an example first  (no nice numbers though!)
 
 
@@ -408,8 +424,12 @@ Therefore, $A\mathbf{u}\ne \mathbf{0}$ and $A\mathbf{u}$ is an eigenvector of $A
 To prove the converse, one can use a similar argument.
 
 
-About the multiplicities.  Since $A^TA$ and $AA^T$ are symmetric, hence diagonalizable, for each eigenvalue of both matrices, the geometric and algebraic multiplicities are equal.
-So we have to show equality of the geometric multiplicities. <BR>
+About the multiplicities.  Since $A^TA$ is symmetric, hence diagonalizable, for each eigenvalue $\lambda$, the geometric and algebraic multiplicity are equal. And the same holds, of course, for the matrix $AA^T$.  So we are done if we can show that for each eigenvalue $\lambda_i \neq 0$,
+
+$$
+    \text{g.m.}_{A^TA}(\lambda_i) = \text{g.m.}_{AA^T}(\lambda_i) 
+$$
+
 Suppose   $\mathbf{v}_1, \dots , \mathbf{v}_g$  are is a maximal set of linearly
 independent eigenvectors of $A^TA$  for some eigenvalue $\lambda_i \neq 0$.  The above argument shows that  $A\mathbf{v}_1, \dots , A\mathbf{v}_g$  are eigenvectors for $A^TA$.
 To show that they are linear independent,  suppose that
@@ -431,7 +451,7 @@ $$
 as well.  As $\lambda_i$ was suppose to be unequal to zero, and the vectors $\mathbf{v}_k$ linearly independent,  it follows that 
 
 $$
- c_1= c_2   = \cdots = c_g =  0,
+ c_1 = c_2   = \cdots = c_g =  0,
 $$
 
 which shows that the vectors $A\mathbf{v}_1, \ldots, A\mathbf{v}_g$ are $g$ linearly independent eigenvectors.  So the geometric multiplicity $g_2$ of $\lambda_i$ for $AA^T$
@@ -441,7 +461,7 @@ Again, by the inherent symmetry the argument can be reversed, and we find that t
 
 ::::
 
-We want to stress out the importance of property {itemref}`Item:Prop:SVD:propertiesATA:nonzeroeigvals`. We know from {numref}`Sec:SymmetricMat` that the eigenvalues of a symmetric matrix are real. The previous proposition tells us that, in addition, **the eigenvalues of the symmetric matrix $A^TA$ are non-negative**. This property is the key for the singular value decomposition.
+We want to stress  the importance of property {itemref}`Item:Prop:SVD:propertiesATA:nonzeroeigvals`. We know from {numref}`Sec:SymmetricMat` that the eigenvalues of a symmetric matrix are real. The previous proposition tells us that, in addition, **the eigenvalues of the symmetric matrix $A^TA$ are non-negative**. This property is the key for the singular value decomposition.
 
 
 ::::{prf:theorem}  Existence of a singular value decomposition
@@ -458,7 +478,7 @@ singular value decomposition of $A$.
 
 Let us first consider the six steps of the algorithm.
 
-Step 1. Is a piece of cake.
+Step 1. Offers no difficulties.
 
 Step 2. Here we must check that the eigenvalues of the matrix $A^TA$ are *nonnegative*. This is exactly the content of  {prf:ref}`Prop:SVD:propertiesATA` {itemref}`Item:Prop:SVD:propertiesATA:nonzeroeigvals` 
 
@@ -502,25 +522,25 @@ $$
   AV_r = U_r\Sigma_{rr}, 
 $$
 
-where we introduced   $U_r, V_r$  for the matrices with only the first $r$ columns of $U$ and $V$, and $\Sigma_{rr}$ the top-left $r\times r$ submatrix of $\Sigma$  (as in the proof of {prf:ref}`Prop:SVD:BasicProp`).
+where we introduced   $U_r, V_r$  for the matrices with only the first $r$ columns of $U$ and $V$, and $\Sigma_{rr}$ the  $r\times r$ diagonalmatrix with $\sigma_1, \ldots, \sigma_r$,  in that order, on the diagonal.
 
-If $r<n$, which means that there are singular values equal to $0$  (equivalently, $\Rank{A} < n$ ), we can add the columns  $\vect{v}_{r+1}, \ldots, \vect{v}_n$ to $V_r$, and add $n-r$ zeros columns to $\Sigma_{rr}$.  We denote the extended last matrix by $\tilde{\Sigma}_r$.
+If $r<n$, which means that there are singular values equal to $0$  (equivalently, $\Rank{A} < n$ ), we can add the columns  $\vect{v}_{r+1}, \ldots, \vect{v}_n$ to $V_r$, and add $n-r$ zero columns to $\Sigma_{rr}$.  We denote the extended last matrix by $\Sigma_r$.
 We thus arrive at
 
 $$
-   AV = U_r\tilde{\Sigma}_r.
+   AV = U_r\Sigma_r.
 $$
 
 Next we add the remaining columns (if any)   $\vect{u}_{r+1}, \ldots, \vect{u}_{m}$, and add $m-r$ zero rows to the bottom of $\tilde{\Sigma}_r$.  Thus we have built the matrix  $\Sigma$ exactly as in the algorithm (Step 3).  Moreover,   $U_r\tilde{\Sigma}_r = U\Sigma$, so we see that
 
 $$
-  AV = U_r\tilde{\Sigma}_r = U\Sigma.
+  AV = U_r\Sigma_r = U\Sigma.
 $$
 
-Multiplying both terms from the right by  $V^T$,  keeping in mind that  $V$ is an orthogonal matrix, we arrive at our final destination:
+Multiplying both terms from the right by  $V^T$,  keeping in mind that  $V$ is an orthogonal matrix, we arrive at our final destination,  from  $U\Sigma = AV $ it follows that
 
 $$
-  U\Sigma = AV  \implies  U\Sigma V^T = A V V^T  = A.
+    U\Sigma V^T = A V V^T  = A.
 $$
 ::::
 
@@ -532,8 +552,8 @@ Some concluding remarks concerning the algorithm.
 
  1. Because of the basic property that says that transposing an SVD of an $m \times n$ matrix $A$ gives an SVD  of $A^T$
  ({prf:ref}`Prop:SVD:BasicProp` {itemref}`Item:Prop:SVD:BasicProp:Transpose`)
- it may be profitable to  find an svd for $A^T$ first, and then transpose this. <BR>
- The singular values of $A$ are the eigenvalues of $A^TA$, an $n \times n$ matrix the singular values of $A^T$ are the eigenvalues of $AA^T$,
+ it may be profitable to  find an SVD for $A^T$ first, and then transpose this. <BR>
+ The singular values of $A$ are the eigenvalues of $A^TA$, an $n \times n$ matrix, the singular values of $A^T$ are the eigenvalues of $AA^T$, an
  $m \times m$ matrix.  The smaller the better! <BR>
  In most applications the singular value decomposition will be applied to  $m\times n$ matrices $A$  with much more rows that columns,  so  $m \gg n$. For such  matrix $A$ 
  working with $A^TA$ is the best bet.
@@ -557,7 +577,7 @@ A = \begin{bmatrix}
 \end{bmatrix}
 $.
 
-Following the suggestion of the remark we first construct an svd of the matrix
+Following the suggestion of the remark we first construct an SVD of the matrix
 $B = A^T = \begin{bmatrix}
 1 & -1 &-2 \\
 1 & 1 &1 \\
@@ -571,7 +591,7 @@ Step 1.  $B^TB = AA^T = \begin{bmatrix}
 3 & -3 & -1\\
 -3 &11 &3 \\
 -1 & 3 & 9
-\end{bmatrix}$
+\end{bmatrix}$.  Is straightforward.
 
 
 Step 2.  Computing the characteristic polynomial is already quite a task here, but it is doable.  The result: 
@@ -627,7 +647,7 @@ $$
 
 And then we must not forget that we have just constructed an SVD for $A^T$ instead of $A$!
 
-From  $A^T = U\Sigma V$  it follows swiftly that  $A = V \Sigma^TU$ is an SVD for $A$.
+From  $A^T = U\Sigma V^T$  it follows swiftly that  $A = V \Sigma^TU$ is an SVD for $A$.
 
 ::::
 
@@ -705,12 +725,23 @@ There will be two applications described in this section in the future.
 
 ## Grasple Exercises
 
+
 ::::{grasple}
-:url: https://embed.grasple.com/exercises/3fdad317-fc18-4f88-b416-87cbd1d5e708?id=93495
-:label: grasple_exercise_8_3_1
+:url: https://embed.grasple.com/exercises/27adae2a-db2a-46fa-800f-49e4c0dfe4fa?id=93487
+:label: grasple_exercise_8_3_9
 :dropdown:
-:description: Finding maximal value of $\norm{A\vect{x}}$, if $\norm{\vect{x}}$ ,  $A$ a 3x2 matrix.
+:description: If $A = U\Sigma V^T$   for an  mxn matrix $A$, what are the sizes of  $U$, $Σ$ and $V$?
 ::::
+
+
+::::{grasple}
+:url: https://embed.grasple.com/exercises/caac29d1-9700-4a30-8c7c-19ea6148258f?id=93490
+:label: grasple_exercise_8_3_10
+:dropdown:
+:description: To describe the meaning of the singular values of a matrix.
+::::
+
+
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/e4c651aa-a998-4e19-957b-20ddf41509bf?id=93468
@@ -768,16 +799,8 @@ There will be two applications described in this section in the future.
 
 
 ::::{grasple}
-:url: https://embed.grasple.com/exercises/27adae2a-db2a-46fa-800f-49e4c0dfe4fa?id=93487
-:label: grasple_exercise_8_3_9
+:url: https://embed.grasple.com/exercises/3fdad317-fc18-4f88-b416-87cbd1d5e708?id=93495
+:label: grasple_exercise_8_3_1
 :dropdown:
-:description: If $A = U\Sigma V^T$   for an  mxn matrix $A$, what are the sizes of  $U$, $Σ$ and $V$?
-::::
-
-
-::::{grasple}
-:url: https://embed.grasple.com/exercises/caac29d1-9700-4a30-8c7c-19ea6148258f?id=93490
-:label: grasple_exercise_8_3_10
-:dropdown:
-:description: To describe the meaning of the singular values of a matrix.
+:description: Finding maximal value of $\norm{A\vect{x}}$, if $\norm{\vect{x}}$ ,  $A$ a 3x2 matrix.
 ::::
