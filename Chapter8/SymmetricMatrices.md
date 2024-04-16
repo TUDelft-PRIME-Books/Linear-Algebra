@@ -531,9 +531,10 @@ $$
 
 ::::
 
-And now it's time for the proof of the main theorem. The proof is of the type technical and tricky. Skip it if you like (and with it the example immediately after that is supposed to clarify the steps in the proof). 
+And now it's time for the proof of the main theorem. The proof is of the type technical and intricate. Skip it if you like. 
 
-::::{prf:proof} (of {prf:ref}`Thm:SymmetricMat:OrthogDiag`)
+::::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:SymmetricMat:OrthogDiag`
+%::::{prf:proof} (of {prf:ref}`Thm:SymmetricMat:OrthogDiag`)
 
 Suppose that $A$ is a symmetric $n \times n$ matrix. We know there are $n$ real, possibly multiple, eigenvalues
 $\lambda_1, \lambda_2, \ldots, \lambda_n$.
@@ -634,7 +635,7 @@ This proves that $A$ is diagonalizable, with $Q = Q_1Q_2 \cdots Q_{n-1}$ as a di
 
 Moreover, since the product of orthogonal matrices is orthogonal, $A$ is in fact orthogonally diagonalizable.
 
-::::
+%::::
 
 ::::{prf:example}
 :label: Ex:SymmetricMat:ConstructDiag
@@ -789,6 +790,8 @@ $(A - \lambda_iI)\vect{x} = \vect{0}$, and then orthogonalize by the Gram-Schmid
 The importance of the step-by-step reduction is that it shows that from the 'minimal' assumptions of symmetry and the existence of real eigenvalues it is possible to create an orthogonal diagonalization.
 
 ::::
+
+::::::
 
 In the last subsection we will show how the orthogonal diagonalization can be rewritten in an interesting and meaningful way.
 
