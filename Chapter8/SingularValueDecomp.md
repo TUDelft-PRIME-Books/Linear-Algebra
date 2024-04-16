@@ -5,7 +5,7 @@
 We have seen already several ways to factorise matrices. In {numref}`Sec:MatFactor`, we studied the $LU$ and the $PLU$ factorisations, and in  {numref}`Sec:Gram-Schmidt:QRdecomp`
 we laid the QR Decomposition on the table. In {numref}`Sec:SymmetricMat` we showed that every symmetric (square) matrix $A$ can be written as  $A = QDQ^{-1} = QDQ^T$. In this section it is in a sense this last decomposition we will generalize to non-symmetric matrices, and even to non-square matrices.
 We will introduce and study the so-called **singular value decomposition** (SVD) of a matrix.
-In the first subsection ({numref}`Subsec:SVD:Definition`) we will give the definition of the SVD, and illustrate it with a few examples.  In the second subsection ({numref}`Subsec:SVD:Algorithm`) an algorithm to compute the SVD is presented and illustrated.
+In the first subsection ({numref}`Subsec:SVD:Definition`) we will give the definition of the SVD, and illustrate it with a few examples.  In the second subsection ({numref}`Subsec:SVD:Existence`) an algorithm to compute the SVD is presented and illustrated. And it will be shown that this algorithm always yields a proper SVD.
 The last two subsections  will be devoted to understanding the SVD in a geometric way, and to possible practicle uses of the SVD.
 
 (Subsec:SVD:Definition)= 
@@ -73,7 +73,7 @@ U\begin{bmatrix}
 
 ::::
 
-
+That the singular values must be nonnegative keeps open the possibility that some of the (last) singuar values may be 0.
 
 
 ::::{prf:example}
@@ -85,14 +85,14 @@ $$
    U = \begin{bmatrix}\dfrac{1}{\sqrt{3}}&-\dfrac{1}{\sqrt{2}}&-\dfrac{1}{\sqrt{6}}\\
    \dfrac{1}{\sqrt{3}}&0&\dfrac{2}{\sqrt{6}}\\\dfrac{1}{\sqrt{3}}&\dfrac{1}{\sqrt{2}}&-\dfrac{1}{\sqrt{6}}  \end{bmatrix}, \quad
    \Sigma = \begin{bmatrix}\sqrt{24}&0\\0&2\\0&0  \end{bmatrix}, \quad
-   V = \begin{bmatrix}\dfrac1{\sqrt{2}} &\dfrac1{\sqrt{2}} \\ \dfrac1{\sqrt{2}} & -\dfrac1{\sqrt{2}} \end{bmatrix}
+   V = \begin{bmatrix}\dfrac1{\sqrt{2}} &\dfrac1{\sqrt{2}} \\ \dfrac1{\sqrt{2}} & -\dfrac1{\sqrt{2}} \end{bmatrix}.
 $$
 
 Let us point out a few properties of this decomposition.
 
 :::{latexlist}
 
-\item The matrix $A$  hase size $3\times2$, so $\Sigma$ is of the form depicted in {Eq}`Eq:SVD:secondform`.
+\item The matrix $A$  has size $3\times2$, so $\Sigma$ is of the form depicted in {Eq}`Eq:SVD:secondform`.
 
 
 
@@ -135,7 +135,7 @@ $$
      \end{array}.
 $$
 
-With the spectral decomposition (see {prf:ref}`Thm:SymmetricMat:SpectralDecomp`) we found that any symmetric matrix $A$ can be written as a linear combination of rank one matrices $P_i$. Moreover, these matrices $P_i$ can be interpreted as projections onto orthogonal one-dimensional subspaces of $\R^n$. Here the least we can say is that we have written $A$ as a linear combination of two rank 1 matrices.
+With the spectral decomposition (see {prf:ref}`Thm:SymmetricMat:SpectralDecomp`) we found that any symmetric matrix $A$ can be written as a linear combination of rank one matrices $P_i$. Moreover, these matrices $P_i$ can be interpreted as projections onto orthogonal one-dimensional subspaces of $\R^n$. Here the least we can say is that we have written the matrix  $A$ of rank 2 as a linear combination of two rank 1 matrices.
 :::
 
 ::::
@@ -214,10 +214,11 @@ Lastly iii.  follows from  ii.  by transposing the matrix, and making use of iv.
 ::::
 
 
+The main goal is to show that a singular value decomposition always exists, and, how to construct one. Both answers are answered in reversed order in the next subsection
 
-(Subsec:SVD:Algorithm)= 
+(Subsec:SVD:Existence)= 
 
-## Algorithm for a Singular Value Decomposition
+## Existence of a Singular Value Decomposition
 
 We start with an important observation that explains the central role of the matrix $A^TA$ in the algorithm to come.
 
@@ -280,7 +281,7 @@ corresponding to $\lambda_1, \ldots, \lambda_n$,   and take them as columns in t
 
 ::::
 
-Apart from step 2., where we need the eigenvalues of $n\times n$ matrix $A^TA$, every step can be worked out with pen and paper (though step 4. and step 5. can be  terribly error prone.) <BR>
+Apart from step 2., where we need the eigenvalues of an $n\times n$ matrix $A^TA$, every step can be worked out with pen and paper (though step 4. and step 5. can be  terribly error prone.) <BR>
 The step that, we think,  most needs some explaining is step 5.  Why does it lead to an *orthonormal* set of vectors $\{\mathbf{u}_1,\dots,\mathbf{u}_r\}$?  We will show that indeed it does in the proof of {prf:ref}`Thm:SVD:Existence`.  It is time for an example first  (no nice numbers though!)
 
 
@@ -430,9 +431,9 @@ $$
     \text{g.m.}_{A^TA}(\lambda_i) = \text{g.m.}_{AA^T}(\lambda_i) 
 $$
 
-Suppose   $\mathbf{v}_1, \dots , \mathbf{v}_g$  are is a maximal set of linearly
+Suppose   $\{\mathbf{v}_1, \dots , \mathbf{v}_g\}$   is a maximal set of linearly
 independent eigenvectors of $A^TA$  for some eigenvalue $\lambda_i \neq 0$.  The above argument shows that  $A\mathbf{v}_1, \dots , A\mathbf{v}_g$  are eigenvectors for $A^TA$.
-To show that they are linear independent,  suppose that
+To show that they are linearly independent,  suppose that
 
 $$
   c_1A\mathbf{v}_1+ \cdots + c_gA\mathbf{v}_g = \mathbf{0}.
@@ -454,7 +455,7 @@ $$
  c_1 = c_2   = \cdots = c_g =  0,
 $$
 
-which shows that the vectors $A\mathbf{v}_1, \ldots, A\mathbf{v}_g$ are $g$ linearly independent eigenvectors.  So the geometric multiplicity $g_2$ of $\lambda_i$ for $AA^T$
+which shows that the vectors $A\mathbf{v}_1, \ldots, A\mathbf{v}_g$ are $g$ *linearly independent* eigenvectors  (of $AA^T$).  So the geometric multiplicity $g_2$ of $\lambda_i$ for $AA^T$
 is at least as large as the geometric multiplicity $g$ of $\lambda_i$ for $A^TA$.
 Again, by the inherent symmetry the argument can be reversed, and we find that the geometric multiplicity of $\lambda_i$  is the same for $A^TA$ as for $AA^T$. 
 :::
@@ -591,7 +592,7 @@ Step 1.  $B^TB = AA^T = \begin{bmatrix}
 3 & -3 & -1\\
 -3 &11 &3 \\
 -1 & 3 & 9
-\end{bmatrix}$.  Is straightforward.
+\end{bmatrix}$.  This is straightforward.
 
 
 Step 2.  Computing the characteristic polynomial is already quite a task here, but it is doable.  The result: 
@@ -647,7 +648,7 @@ $$
 
 And then we must not forget that we have just constructed an SVD for $A^T$ instead of $A$!
 
-From  $A^T = U\Sigma V^T$  it follows swiftly that  $A = V \Sigma^TU$ is an SVD for $A$.
+From  $A^T = U\Sigma V^T$  it follows swiftly that  $A = V \Sigma^TU^T$ is an SVD for $A$.
 
 ::::
 
