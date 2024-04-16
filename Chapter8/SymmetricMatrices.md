@@ -531,7 +531,7 @@ $$
 
 ::::
 
-And now it's time for the proof of the main theorem.
+And now it's time for the proof of the main theorem. The proof is of the type technical and tricky. Skip it if you like (and with it the example immediately after that is supposed to clarify the steps in the proof). 
 
 ::::{prf:proof} (of {prf:ref}`Thm:SymmetricMat:OrthogDiag`)
 

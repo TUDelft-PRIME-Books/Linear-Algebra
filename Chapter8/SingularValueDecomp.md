@@ -112,8 +112,8 @@ $$
 $$
 
 \item The first two colums of $U$,  multiples of the vectors $\begin{bmatrix}1\\1\\1\end{bmatrix}$  and  $\begin{bmatrix}-1\\0\\1\end{bmatrix}$, give an orthonormal   basis of the column space of the matrix $A$.
-$\begin{bmatrix}1\\1\\1\end{bmatrix} = \dfrac16\begin{bmatrix}1\\2\\3\end{bmatrix} +\dfrac16\begin{bmatrix}3\\2\\1\end{bmatrix}= \frac16\vect{a}_1 + \frac16\vect{a}_2$,
-and  $\begin{bmatrix}-1\\0\\1\end{bmatrix} = \vect{a}_2 - \vect{a}_1$.
+$\begin{bmatrix}1\\1\\1\end{bmatrix} = \dfrac14\begin{bmatrix}1\\2\\3\end{bmatrix} +\dfrac14\begin{bmatrix}3\\2\\1\end{bmatrix}= \frac14\vect{a}_1 + \frac14\vect{a}_2$,
+and  $\begin{bmatrix}-1\\0\\1\end{bmatrix} = \frac12\vect{a}_2 - \frac12\vect{a}_1$.
 
 \item The two columns of the matrix $V$ give an orthonormal basis of the row space of the matrix $A$. (Which  is not so striking here, since that row space is the whole of $\R^2$.)
 
@@ -240,7 +240,7 @@ Moreover,  the columns of $V$ are corresponding eigenvectors  (of $A^TA$).
 First of all, because of the properties of the matrices $U$, $\Sigma$ and $V$ we have that
 
 $$
-A^TA= (U\Sigma V^T)^T(USV) = V\Sigma^T(U^TU) \Sigma V^T = V(\Sigma^T\Sigma)V^T.
+A^TA= (U\Sigma V^T)^T(U\Sigma V) = V\Sigma^T(U^TU) \Sigma V^T = V(\Sigma^T\Sigma)V^T.
 $$
 
 Note that, since $\Sigma^T\Sigma$ is an $n\times n$ *diagonal* matrix,  $V(\Sigma^T\Sigma)V^T$ is an *orthogonal diagonalisation* of $A^TA$.  (Which is indeed a *symmetric* matrix.)
@@ -346,7 +346,7 @@ First we compute the orthogonal vector
  $\quad \vect{w}_3  = \begin{bmatrix}11\\-8\\-5 \end{bmatrix} \times  \begin{bmatrix}3\\1\\5 \end{bmatrix} = \begin{bmatrix}-35\\-70\\35 \end{bmatrix} = 35 \begin{bmatrix}-1\\-2\\1 \end{bmatrix}$. <BR>
  Normalizing $\vect{w}_3$ gives the third basis vector $\vect{u}_3 =  \dfrac{1}{\sqrt{6}} \begin{bmatrix}-1\\-2\\1 \end{bmatrix}$.
 
-Thus we end up with the matrix  $U = \begin{bmatrix}\frac{11}{\sqrt{210}}&\frac{3}{\sqrt{35}} &-\frac{1}{\sqrt{6}}\\ \frac{8}{\sqrt{210}}&\frac{1}{\sqrt{35}} &-\frac{2}{\sqrt{6}}\\-\frac{5}{\sqrt{210}}&\frac{3}{\sqrt{6}} & \frac{1}{\sqrt{6}}\end{bmatrix}$.
+Thus we end up with the matrix  $U = \begin{bmatrix}\frac{11}{\sqrt{210}}&\frac{3}{\sqrt{35}} &-\frac{1}{\sqrt{6}}\\ -\frac{8}{\sqrt{210}}&\frac{1}{\sqrt{35}} &-\frac{2}{\sqrt{6}}\\-\frac{5}{\sqrt{210}}&\frac{5}{\sqrt{35}} & \frac{1}{\sqrt{6}}\end{bmatrix}$.
 
 ::::
 
@@ -416,7 +416,7 @@ $$0\le \norm{A\vect{u}}^2 = \mathbf{u}^TA^TA\mathbf{u} = \mathbf{u}^T\lambda \ma
 
 Since $\mathbf{u}\ne \mathbf{0}$ it follows that $\lambda \ge 0$.
 
-\item Let $\lambda$ be an non-zero eigenvalue of $A^TA$ with associated eigenvector $\mathbf{u}$. We will see that $\lambda$ is also an eigenvalue of $AA^T$. By definition of eigenvalue we have $A^TA\mathbf{u} = \lambda\mathbf{u}$. Then, multiplying by $A$ on both sides of the previous identity we obtain:
+\item Let $\lambda$ be a non-zero eigenvalue of $A^TA$ with associated eigenvector $\mathbf{u}$. We will see that $\lambda$ is also an eigenvalue of $AA^T$. By definition of eigenvalue we have $A^TA\mathbf{u} = \lambda\mathbf{u}$. Then, multiplying by $A$ on both sides of the previous identity we obtain:
 
 $$AA^TA\mathbf{u} = \lambda A\mathbf{u}.$$
 
@@ -472,7 +472,7 @@ For every $m \times n$ matrix $A$  a singular value decomposition exists
 
 ::::
 
-The proof consists in showing that all steps in algorithm do what they are supposed to do, and that the final result consists of three matrices  $U, \Sigma, V$ that can act as a 
+The proof consists in showing that all steps in the algorithm do what they are supposed to do, and that the final result consists of three matrices  $U, \Sigma, V$ that can act as a 
 singular value decomposition of $A$.  
 
 ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:SVD:Existence`
@@ -538,7 +538,7 @@ $$
   AV = U_r\Sigma_r = U\Sigma.
 $$
 
-Multiplying both terms from the right by  $V^T$,  keeping in mind that  $V$ is an orthogonal matrix, we arrive at our final destination,  from  $U\Sigma = AV $ it follows that
+Multiplying both terms from the right by  $V^T$,  keeping in mind that  $V$ is an orthogonal matrix, we arrive at our final destination.  From  $U\Sigma = AV $ it follows that
 
 $$
     U\Sigma V^T = A V V^T  = A.
@@ -629,7 +629,7 @@ $$ \mathbf{u}_1 = B\mathbf{v}_1 = \begin{bmatrix} 8 \\ -4 \\ -4 \\ -10 \end{bmat
 $$
 It should not come as a surprise that these vectors are orthogonal! <BR>
 We have to find a fourth orthogonal vector $\vect{u}_4$.   One way is to look for a nonzero vector in the nulspace of the matrix $\begin{bmatrix}
-8 & -4 & -4 &-10 \\ -6 & 3 & 10 & 10 \\ 2 & 4 & 0 & 0\end{bmatrix}$. <BR>
+8 & -4 & -4 &-10 \\ -6 & 3 & 10 & -10 \\ 2 & 4 & 0 & 0\end{bmatrix}$. <BR>
  You may check that the vector $\vect{u}_4 = \begin{bmatrix} 4 \\ -2 \\ 5 \\ 2 \end{bmatrix}$  does the trick.
 
 Step 6.  (Where we also still have to present our $V$!)  <BR>
