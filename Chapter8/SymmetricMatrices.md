@@ -258,7 +258,7 @@ All eigenvalues of symmetric matrices are real.
 
 The easiest proof is via complex numbers. Feel free to skip it, in particular when you don't feel comfortable with complex numbers.
 
-::::{prf:proof}
+::::::{dropdown} Proof of&nbsp;{prf:ref}`Prop:SymmetricMat:RealEigenvalues`
 
 For two vectors $\mathbf{u},\mathbf{v}$ in $\C^n$ we consider the expression
 

@@ -387,7 +387,7 @@ In thhis subsection we will find expressions for two other coefficients of the c
 Suppose the characteristic polynomial of the $n \times n$ matrix $A$ is given by
 
 :::{math}
-:label: Eq:EigenValues:CharPolyA
+:label: Eq:EigenValues:CharPoly
 
 p_A(\lambda) = c_n\lambda^n + c_{n-1}\lambda^{n-1} + \ldots + c_2\lambda^2 +c_1\lambda + c_0.
 
@@ -407,7 +407,8 @@ $$
 
 ::::::
 
-::::::{prf:proof}
+::::::{dropdown} (Sketch of the) Proof of&nbsp;{prf:ref}`Prop:EigenValues:CharPolyTrace`
+%::::::{prf:proof}
 
 For $n=2$ we have already seen that the characteristic polynomial of the most general $2 \times 2$ matrix
 $A = \left[\begin{array}{cc} a_{11} & a_{12} \\ a_{21} & a_{22} \end{array}\right]
@@ -424,7 +425,8 @@ $$
 (-1)^2 \lambda^2 + (-1)^1 (a_{11}+a_{22})\lambda + \det{(A)}.
 $$
 
-The value of $c_0$ is the easiest to establish: just plug in $\lambda=0$ in Equation {eq}`Eq:EigenValues:CharPolyTrace`:
+The value of $c_0$ is the easiest to establish: just plug in $\lambda=0$ in 
+Equation {eq}`Eq:EigenValues:CharPoly`:
 
 $$
 \text{det}(A)= \text{det}(A - 0I) = p_A(0) = c_n0^n + c_{n-1}0^{n-1} + \ldots + c_1\cdot 0 + c_0 = c_0.
@@ -506,7 +508,8 @@ Let   $A$ an $n\times n$ matrix with $n$ eigenvalues  $\lambda_1,\lambda_2,  \ld
 
 ::::::
 
-::::::{prf:proof}
+
+::::::{dropdown}  Proof of&nbsp;{prf:ref}`Prop:Eigenvalues:SumEigenvaluesAndTrace`
 
 This is more a statement about algebra, in particular about polynomials, than about linear algebra.  In  {numref}`Section %s <Section:ComplexEV>`  we will see that it also holds for matrices with complex eigenvalues. 
 

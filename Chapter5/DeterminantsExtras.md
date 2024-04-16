@@ -404,11 +404,10 @@ $$
 
 ::::::
 
-The proof of Cramer's rule rests rather nicely on properties of the determinant function.
+The following proof of Cramer's rule rests rather nicely on properties of the determinant function.  But feel free to skip it.
 
-::::::{prf:proof}
+::::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:DetExtras:Cramer`
 
-<BR>
 
 Suppose $\vect{x} = \vect{c} = \left[\begin{array}{c}  c_1 \\ \vdots\\ c_n\end{array} \right]
 $ is the unique solution of the linear system $A\vect{x} = \vect{b}$, with the invertible matrix $A = [ \vect{a}_1 \,  \,  \vect{a}_2 \, \ldots \,\vect{a}_n ]$.
@@ -894,7 +893,13 @@ $$
 so property iv. is satisfied too.
 ::::::
 
-::::::{prf:proof} (of {prf:ref}`Prop:DetExtras:Properties-ndimCrossProd`)
+
+We end the chapter with a proof of {prf:ref}`Prop:DetExtras:Properties-ndimCrossProd`.
+<BR>
+So, if you are interested,  push the  $\vee$  button on the right.
+
+::::::{dropdown} Proof of&nbsp;{prf:ref}`Prop:DetExtras:Properties-ndimCrossProd`
+
 
 The properties follow from the observation that for each vector $\vect{v}$ in $\R^n$
 

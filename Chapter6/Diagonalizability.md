@@ -145,6 +145,7 @@ then $A$ and $B$ are in fact matrices of the same linear transformation, only wi
 The following proposition captures some other properties that similar matrices share.
 
 ::::::{prf:proposition}
+:label: Prop:Eigenvalues:SimilarMatrices
 
 Suppose $A$ and $B$ are similar matrices. Then the following statements are true.
 
@@ -168,16 +169,8 @@ $A$ and $B$ have the same rank.
 
 ::::::
 
-%::::::{margin}
+::::::{dropdown} Proof of&nbsp;{prf:ref}`Prop:Eigenvalues:SimilarMatrices`
 
-%:::{admonition} {prf:ref}`Prop:BasisDim:RankAPEqualToRankPA`.
-
-%If $A$ and $P$ are $n\times n$ matrices with $P$ invertible
-%then $\text{rank}(AP) = \text{rank}(A) =\text{rank}(PA)$.
-
-%::::::
-
-::::::{prf:proof}
 
 Suppose $A = PBP^{-1}$.
 
