@@ -258,7 +258,7 @@ All eigenvalues of symmetric matrices are real.
 
 The easiest proof is via complex numbers. Feel free to skip it, in particular when you don't feel comfortable with complex numbers.
 
-::::::{dropdown} Proof of&nbsp;{prf:ref}`Prop:SymmetricMat:RealEigenvalues`
+::::{dropdown} Proof of&nbsp;{prf:ref}`Prop:SymmetricMat:RealEigenvalues`
 
 For two vectors $\mathbf{u},\mathbf{v}$ in $\C^n$ we consider the expression
 
@@ -310,6 +310,7 @@ $$
 Since we assumed that $\mathbf{v}$ is not the zero vector, we have that $\overline{\mathbf{v}}^T \mathbf{v} \neq 0$ , and so it follows that $ \overline{\lambda} =\lambda$. Which is equivalent to $\lambda$ being real.
 
 ::::
+
 
 ::::{prf:example}
 
@@ -533,7 +534,7 @@ $$
 
 And now it's time for the proof of the main theorem. The proof is of the type technical and intricate. Skip it if you like. 
 
-::::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:SymmetricMat:OrthogDiag`
+::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:SymmetricMat:OrthogDiag`
 %::::{prf:proof} (of {prf:ref}`Thm:SymmetricMat:OrthogDiag`)
 
 Suppose that $A$ is a symmetric $n \times n$ matrix. We know there are $n$ real, possibly multiple, eigenvalues
@@ -637,7 +638,7 @@ Moreover, since the product of orthogonal matrices is orthogonal, $A$ is in fact
 
 %::::
 
-::::{prf:example}
+:::{prf:example}
 :label: Ex:SymmetricMat:ConstructDiag
 
 We will illustrate the proof for the matrix
@@ -737,9 +738,7 @@ $$
 
 And then
 
-:::{math}
-:label: Eq:SymmetricMat:DefineA2
-
+$$
 A_2 = Q_2^TQ_1^T A Q_1Q_2 =
 \left[\begin{array}{cccc}
 -3 & 0 & 0 & 0 \\
@@ -747,11 +746,11 @@ A_2 = Q_2^TQ_1^T A Q_1Q_2 =
 0 & 0 & 3 & 0 \\
 0 & 0 & 0 & 3
 \end{array} \right] = D,
-:::
+$$
 
 indeed a _diagonal_ matrix. <BR>
 For this example the matrix has the second double eigenvalue $\lambda_{3,4} = 3$. Because of that, the construction takes one step less than in the general case.  
-Defining $Q = Q_1Q_2$, can conclude from {eq}`Eq:SymmetricMat:DefineA2` that
+Defining $Q = Q_1Q_2$, we can rewrite the last identity as
 
 $$
   Q^{-1}AQ = D, \,\,\text{ so }\,\,
@@ -789,9 +788,9 @@ $(A - \lambda_iI)\vect{x} = \vect{0}$, and then orthogonalize by the Gram-Schmid
 {prf:ref}`Ex:SymmetricMat:OrthogDiag3x3`. <BR>
 The importance of the step-by-step reduction is that it shows that from the 'minimal' assumptions of symmetry and the existence of real eigenvalues it is possible to create an orthogonal diagonalization.
 
-::::
+:::
 
-::::::
+::::
 
 In the last subsection we will show how the orthogonal diagonalization can be rewritten in an interesting and meaningful way.
 
