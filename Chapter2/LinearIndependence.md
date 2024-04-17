@@ -625,7 +625,6 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/72bf1389-22c8-4588-8f73-4c7215b7cea4?id=70217
-
 :label: grasple_exercise_2_5_17
 :dropdown:
 :description: About the connection between pivots and linearly (in)dependent columns.

@@ -334,8 +334,7 @@ Prove statements (i) and (iii) of {prf:ref}`Prop:MatrixOps:Transpose`.
 
 ::::::
 
-::::::{solution} Exc:MatrixOps:CheckTransposeRules
-:class: dropdown
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:MatrixOps:CheckTransposeRules`&nbsp;(_click to show_)
 
 Suppose $A = \left[\begin{array}{cccc}
             a_{11} & a_{12}&  \ldots&   a_{1n}   \\

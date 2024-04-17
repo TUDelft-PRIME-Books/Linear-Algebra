@@ -347,8 +347,7 @@ Show that every change-of-coordinates matrix $P_{\mc{B}}$ is invertible.
 ::::
 
 
-::::{solution} Exc:ChangeOfBasis:InvertiblePB
-:class: dropdown
+::::{dropdown} Solution to&nbsp;{numref}`Exc:ChangeOfBasis:InvertiblePB`&nbsp;(_click to show_)
 
 Let $\mc{B} = \{\vect{b}_1,\vect{b}_2, \ldots, \vect{b}_n\}$ be any basis of $\R^n$.
 <BR>
@@ -873,8 +872,7 @@ $$
 
 
 
-::::{solution} Exc:ChangeOfBasis:PinvAPversusPBinvP
-:class: dropdown
+::::{dropdown} Solution to&nbsp;{numref}`Exc:ChangeOfBasis:PinvAPversusPBinvP`&nbsp;(_click to show_)
 
 Multiply both sides from the left by $P$ and from the right by $P^{-1}$,
 and use that $P^{-1}P = PP^{-1} = I$:
@@ -949,8 +947,7 @@ $A^2=A$. Show that the matrix $[T]_{\mc{E}}$ of {prf:ref}`Ex:ChangeOfBasis:Matri
 
 ::::
 
-::::{solution} Exc:ChangeOfBasis:CheckIdempotent
-:class: dropdown
+::::{dropdown} Solution to&nbsp;{numref}`Exc:ChangeOfBasis:CheckIdempotent`&nbsp;(_click to show_)
 
 Obviously the matrix  $B = [T]_{\mc{B}} =  \begin{bmatrix}1 & 0 & 0\\0& 1& 0\\0&0&0  \end{bmatrix}$   has the property  $B^2 = B$.
 

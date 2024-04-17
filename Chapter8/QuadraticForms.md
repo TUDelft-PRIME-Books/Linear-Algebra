@@ -138,13 +138,13 @@ The graph of a quadratic function is a curved surface.
 {numref}`Figure %s <Fig:QuadForms:QuadSurface1>` and
 {numref}`Figure %s <Fig:QuadForms:QuadSurface2>` show two of these quadratic surfaces.
 
-:::{figure} Images/Fig-QuadForms-QuadSurface1.svg
+:::{figure} Images/Fig-QuadForms-QuadSurface1.png
 :name: Fig:QuadForms:QuadSurface1
 
 The surface $z = -\frac13x_1^2 + \frac13x_2^2 + 2 $
 :::
 
-:::{figure} Images/Fig-QuadForms-QuadSurface2.svg
+:::{figure} Images/Fig-QuadForms-QuadSurface2.png
 :name: Fig:QuadForms:QuadSurface2
 
 The surface $z = -\frac12x_1^2 - \frac14x_2^2 + x_1 - x_2 + 2$

@@ -33,8 +33,7 @@ Prove {prf:ref}`Prop:OrthoComp:OrthotoSpanningSet`.
 
 ::::
 
-:::{solution} Exc:OrthoComp:OrthotoSpanningSet
-:class: dropdown
+:::{dropdown} Solution to&nbsp;{numref}`Exc:OrthoComp:OrthotoSpanningSet`&nbsp;(_click to show_)
 
 Assume the vector $\vect{u}$ is orthogonal to every $\vect{v}_{i}$. If $\vect{v}_{1},...,\vect{v}_{n}$ spans $V$, then any $\vect{v}$ in $V$ can be written as $c_{1}\vect{v}_{1}+\cdots c_{n}\vect{v}_{n}$ for certain $c_{1},...,c_{n}$ in $\R$. But then $\vect{u}\cdot\vect{v}=c_{1}\vect{u}\cdot\vect{v}_{1}+\cdots+c_{n}\vect{u}\cdot\vect{v}_{n}=0$, so $\vect{u}$ is orthogonl to $\vect{v}$.
 

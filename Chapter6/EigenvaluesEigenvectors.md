@@ -884,9 +884,7 @@ Moreover,  if  $\vect{v}$ is an eigenvector of $A$ for eigenvalue $\lambda$, the
 
 ::::::
 
-
-::::::{solution} Exc:EigenValues:EigenvaluesInverse
-:class:  dropdown
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:EigenValues:EigenvaluesInverse`&nbsp;(_click to show_)
 
 Suppose the nonzero vector $\vect{v}$ is an eigenvector for the eigenvalue $\lambda$ of the invertible matrix $A$.  From {prf:ref}`Prop:EigenValues:SingularMatrix` we know that $\lambda \neq 0$. From
 

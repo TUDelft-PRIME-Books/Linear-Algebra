@@ -533,8 +533,7 @@ For any $m \times n$ matrix $A$, if $A^TA$ is invertible, then the columns of $A
 
 ::::
 
-::::{solution} Exc:LeastSquares:InvertibleATA
-:class: dropdown
+::::{dropdown} Solution to&nbsp;{numref}`Exc:LeastSquares:InvertibleATA`&nbsp;(_click to show_)
 
 Suppose that $A$ is an $m \times n$ matrix $A$ for which $A^TA$ is invertible.
 To prove that $A$ has linearly independent columns we have to show that the equation
@@ -685,8 +684,7 @@ $$
 Also explain this simpler formula by interpreting the $QR$ decomposition in a suitable way.
 ::::
 
-::::{solution} Exc:LeastSquares:QR
-:class: dropdown
+::::{dropdown} Solution to&nbsp;{numref}`Exc:LeastSquares:QR`&nbsp;(_click to show_)
 
 This involves some elementary matrix operations. <BR>
 Suppose $A = QR$, where $Q^TQ = I$, and $R$ is an upper triangular matrix with a positive diagonal. So $R$ is invertible. <BR>

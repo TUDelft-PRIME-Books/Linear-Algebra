@@ -168,8 +168,7 @@ Also give a set with only the properties i and iii.
 
 ::::::
 
-::::::{solution} Exc:Subspaces:NonSubspacesR2
-:class: dropdown
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:Subspaces:NonSubspacesR2`&nbsp;(_click to show_)
 
 We first give an example of a subset of $\R^2$ that only has properties i. and ii.
 
@@ -598,8 +597,7 @@ Can you find a similar formula relating the null space of $AB$ to the null space
 
 ::::::
 
-::::::{solution} Exc:Subspaces:ColABinColA
-:class: dropdown
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:Subspaces:ColABinColA`&nbsp;(_click to show_)
 
 Suppose that $A$ is an $m\times n$ and $B$ an $n \times p$ matrix.
 Thus $AB$ is an $m\times p$ matrix.
@@ -651,8 +649,7 @@ $$
 
 ::::::
 
-::::::{solution} Exc:Subspaces:WhatIfAAeq0
-:class: dropdown
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:Subspaces:WhatIfAAeq0`&nbsp;(_click to show_)
 
 First we show that
 

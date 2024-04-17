@@ -274,8 +274,7 @@ Give an alternative proof of {prf:ref}`Cor:DetRowReduction:EqualRows` using Rule
 
 ::::::
 
-::::::{solution} Exc:DetRowReduction:EqualRows
-:class: dropdown
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:DetRowReduction:EqualRows`&nbsp;(_click to show_)
 
 Suppose $A$ is a matrix with two equal rows, say row $i$ and row $j$ are equal.
 
@@ -487,8 +486,7 @@ $$
 
 ::::::
 
-::::::{solution} Exc:DetRowReduction:PropNonProp
-:class: dropdown
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:DetRowReduction:PropNonProp`&nbsp;(_click to show_)
 
 We treat the statements one by
 
@@ -578,7 +576,7 @@ Then
 
 So, click on $\vee$ on the right  for the proof of {prf:ref}`Prop:DetRowReduction:RowOps` and {prf:ref}`Prop:DetRowReduction:SumofCols`.
 
-::::::{dropdown} Proof of&nbsp;{prf:ref}`Prop:DetRowReduction:RowOps` and {prf:ref}`Prop:DetRowReduction:SumofCols`.
+::::::{dropdown} Proof of&nbsp;{prf:ref}`Prop:DetRowReduction:RowOps`&nbsp;and&nbsp;{prf:ref}`Prop:DetRowReduction:SumofCols`.
 
 %::::::{prf:proof}
 

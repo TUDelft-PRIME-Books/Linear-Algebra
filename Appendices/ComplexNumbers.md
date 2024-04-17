@@ -1574,8 +1574,7 @@ $z^3=4\cos(\frac{\pi}{6})+4i\sin(\frac{\pi}{6})$
 
 ## Solutions
 
-::::{solution} Exc:ComplexNumbers:eval_aplusbi
-:class: dropdown
+::::{dropdown} Solution to&nbsp;{numref}`Exc:ComplexNumbers:eval_aplusbi`&nbsp;(_click to show_)
 
 <ol type="a">
 
@@ -1643,8 +1642,7 @@ $3 + 4i$
 
 ::::
 
-:::::{solution} Exc:ComplexNumbers:complete
-:class: dropdown
+::::{dropdown} Solution to&nbsp;{numref}`Exc:ComplexNumbers:complete`&nbsp;(_click to show_)
 
 <ol type="a">
 
@@ -1670,8 +1668,7 @@ $2, -6$
 
 :::::
 
-:::::{solution} Exc:ComplexNumbers:division
-:class: dropdown
+:::::{dropdown} Solution to&nbsp;{numref}`Exc:ComplexNumbers:division`&nbsp;(_click to show_)
 
 <ol type="a">
 
@@ -1697,8 +1694,7 @@ $h(z)$ is not a polynomial.
 
 :::::
 
-:::::{solution} Exc:ComplexNumbers:roots
-:class: dropdown
+:::::{dropdown} Solution to&nbsp;{numref}`Exc:ComplexNumbers:roots`&nbsp;(_click to show_)
 
 <ol type="a">
 
@@ -1724,8 +1720,7 @@ The roots of $p(z)$ are $3+i, 3-i, 1, -2$, all with multiplicity 1.
 
 :::::
 
-:::::{solution} Exc:ComplexNumbers:argmod
-:class: dropdown
+:::::{dropdown} Solution to&nbsp;{numref}`Exc:ComplexNumbers:argmod`&nbsp;(_click to show_)
 
 <ol type="a">
 
@@ -1745,8 +1740,7 @@ $|z|=2\sqrt{3}$ and $\Arg{z}=\frac{\pi}{6}$ or $\arg(z)=\frac{\pi}{6}+2k\pi$ for
 
 :::::
 
-:::::{solution} Exc:ComplexNumbers:polarform
-:class: dropdown
+:::::{dropdown} Solution to&nbsp;{numref}`Exc:ComplexNumbers:polarform`&nbsp;(_click to show_)
 
 <ol type="a">
 
@@ -1766,8 +1760,7 @@ $6 \cos(\frac{-\pi}{6})+ i 6 \sin(\frac{-\pi}{6})$
 
 :::::
 
-:::::{solution} Exc:ComplexNumbers:polar_abi
-:class: dropdown
+:::::{dropdown} Solution to&nbsp;{numref}`Exc:ComplexNumbers:polar_abi`&nbsp;(_click to show_)
 
 <ol type="a">
 
@@ -1805,8 +1798,7 @@ $1-\sqrt{3} i$
 
 :::::
 
-:::::{solution} Exc:ComplexNumbers:polarform_calc
-:class: dropdown
+:::::{dropdown} Solution to&nbsp;{numref}`Exc:ComplexNumbers:polarform_calc`&nbsp;(_click to show_)
 
 <ol type="a">
 
@@ -1826,8 +1818,7 @@ $z=4e^{-\frac16\pi i}$ and $w=2\sqrt{2}e^{-\frac14\pi i}$, thus $zw=8 \sqrt{2} \
 
 :::::
 
-::::{solution} Exc:ComplexNumbers:solve_aplusbi
-:class: dropdown
+::::{dropdown} Solution to&nbsp;{numref}`Exc:ComplexNumbers:solve_aplusbi`&nbsp;(_click to show_)
 
 <ol type="a">
 
@@ -1847,8 +1838,7 @@ $i, -\frac{1}{2}\sqrt{3}-i\frac{1}{2}, \frac{1}{2}\sqrt{3}-i\frac{1}{2}$
 
 ::::
 
-:::::{solution} Exc:ComplexNumbers:DeMoivre
-:class: dropdown
+:::::{dropdown} Solution to&nbsp;{numref}`Exc:ComplexNumbers:DeMoivre`&nbsp;(_click to show_)
 
 $\cos(4\theta)=\cos^4(\theta)+\sin^4(\theta)-6\cos^2(\theta)\sin^2(\theta)$
 
@@ -1858,8 +1848,7 @@ $\sin(4\theta)=4\cos^3(\theta)\sin(\theta)-4\cos(\theta)\sin^3(\theta)$.
 
 :::::
 
-:::::{solution} Exc:ComplexNumbers:solve_euler
-:class: dropdown
+:::::{dropdown} Solution to&nbsp;{numref}`Exc:ComplexNumbers:solve_euler`&nbsp;(_click to show_)
 
 <ol type="a">
 

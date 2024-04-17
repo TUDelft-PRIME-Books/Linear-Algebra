@@ -214,8 +214,7 @@ If $\vect{u}$ is an eigenvector of $A$ for the eigenvalue $\lambda$, and $\vect{
 
 ::::
 
-::::{solution} Exc:SymmetricMat:uTAv
-:class: dropdown
+::::{dropdown} Solution to&nbsp;{numref}`Exc:SymmetricMat:uTAv`&nbsp;(_click to show_)
 
 The proof is completely analogous to the proof of {prf:ref}`Prop:SymmetricMat:OrthogonalEigenvectors`.
 Suppose  
