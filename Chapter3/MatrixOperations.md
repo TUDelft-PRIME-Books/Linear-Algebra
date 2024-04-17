@@ -452,13 +452,14 @@ $$
   B = \mathbf{x} = \begin{bmatrix}x_1 \\ x_2 \\ \vdots \\ x_n \end{bmatrix},
 $$
 
+
 a vector in $\mathbb{R}^n$, which we can identify with an $n \times 1$ matrix. We want of course the definition of the general matrix product to be consistent with this.
 
 ::::::{prf:definition}
-The product of an $m\times n$ matrix $A$ and an $n\times p$ matrix $B = [\,\mathbf{b_1}\quad \mathbf{b_2}\quad \ldots \quad \mathbf{b_p}]$ is defined by
+The product of an $m\times n$ matrix $A$ and an $n\times p$ matrix $B = [\,{\vect{b}_1}\quad {\vect{b}_2}\quad \ldots \quad {\mathbf{b}_p}]$ is defined by
 
 $$
-  AB = [\,A\mathbf{b_1}\quad A\mathbf{b_2}\quad \ldots \quad A\mathbf{b_p}].
+  AB = [\,A\mathbf{b}_1\quad A\mathbf{b}_2\quad \ldots \quad A\mathbf{b}_p].
 $$
 
 So we have
@@ -641,8 +642,8 @@ The $n \times n$ zero matrix $O_{nn}$ is a diagonal matrix.
 ::::::{exercise}
 :label: Exc:MatrixOps:InterpretATB
 
-Suppose $A = \begin{bmatrix} \mathbf{a_1} & \mathbf{a_2} & \ldots & \mathbf{a_n} \end{bmatrix} $ is an  $m\times n$ matrix and <br/>
-$B= \begin{bmatrix} \mathbf{b_1} & \mathbf{b_2} & \ldots & \mathbf{b_p} \end{bmatrix} $  an  $n\times p$ matrix. Show that
+Suppose $A = \begin{bmatrix} \mathbf{a}_1 & \mathbf{a}_2 & \ldots & \mathbf{a}_n \end{bmatrix} $ is an  $m\times n$ matrix and <br/>
+$B= \begin{bmatrix} \mathbf{b}_1 & \mathbf{b}_2 & \ldots & \mathbf{b}_p \end{bmatrix} $  an  $n\times p$ matrix. Show that
 
 $$
   A^TB = %\begin{bmatrix} \vect{a_1}^T \vect{b_1}  & \vect{a_1}^T \vect{b_2} & \ldots &  \vect{a_1}^T \vect{b_p} \\
@@ -651,10 +652,10 @@ $$
          %                \vect{a_n}^T \vect{b_1}  & \vect{a_n}^T \vect{b_2} & \ldots &  \vect{a_n}^T \vect{b_p} \\
          %\end{bmatrix}
          %    =
-         \begin{bmatrix} \mathbf{a_1} \ip \mathbf{b_1}  & \mathbf{a_1}\ip\mathbf{b_2} & \ldots &  \mathbf{a_1}\ip \mathbf{b_p} \\
-                         \mathbf{a_2}\ip \mathbf{b_1}  & \mathbf{a_2}\ip\mathbf{b_2} & \ldots &  \mathbf{a_2}\ip \mathbf{b_p} \\
+         \begin{bmatrix} \mathbf{a}_1\ip \mathbf{b}_1  & \mathbf{a}_1\ip\mathbf{b}_2 & \ldots &  \mathbf{a}_1\ip \mathbf{b}_p \\
+                         \mathbf{a}_2\ip \mathbf{b}_1  & \mathbf{a}_2\ip\mathbf{b}_2 & \ldots &  \mathbf{a}_2\ip \mathbf{b}_p \\
                               \vdots              &            \vdots       &        &        \vdots \\
-                         \mathbf{a_n}\ip \mathbf{b_1}  & \mathbf{a_n}\ip\mathbf{b_2} & \ldots &  \mathbf{a_n}\ip \mathbf{b_p} \\
+                         \mathbf{a}_n\ip \mathbf{b}_1  & \mathbf{a}_n\ip\mathbf{b}_2 & \ldots &  \mathbf{a}_n\ip \mathbf{b}_p \\ \\
          \end{bmatrix},
 
 
@@ -939,13 +940,13 @@ Rules i. and ii. are checked in a straightforward way. See {numref}`Exc:MatrixOp
 <li>
 
 We saw instances of this property already in {prf:ref}`Ex:MatrixOps:AtimesI` and {numref}`Exc:MatrixOps:I4timesA`.
-For the general case, one way to show validity of the first statement is to note that the $j$-th column of $AI_n$ is $A\mathbf{e_j}$ where $\mathbf{e_j}$ is the $j$-th column of the identity matrix $I_n$.
+For the general case, one way to show validity of the first statement is to note that the $j$-th column of $AI_n$ is $A\mathbf{e}_j$ where $\mathbf{e}_j$ is the $j$-th column of the identity matrix $I_n$.
 This gives the linear combination
 
 <BR>
 
 $$
- A\mathbf{e_j} =  0\mathbf{a_1} + 0\mathbf{a_2} + \ldots + 1\mathbf{a_j} +\dots + 0\mathbf{a_n} = \mathbf{a_j}
+ A\mathbf{e}_j =  0\mathbf{a}_1 + 0\mathbf{a}_2 + \ldots + 1\mathbf{a}_j +\dots + 0\mathbf{a}_n = \mathbf{a}_j
 $$
 
 which shows that the $j$-th column of $AI_n$ is equal to the $j$-th column of $A$. And this holds for any column.
@@ -977,13 +978,13 @@ Now recall that (by definition)
 <BR>
 
 $$
-    k\text{-th column of  }BC = B\mathbf{c_k},
+    k\text{-th column of  }BC = B\vect{c}_k,
 $$
 
 so
 
 $$
- k\text{-th column of  }A(BC) = A\,(B\mathbf{c_k})
+ k\text{-th column of  }A(BC) = A\,(B\vect{c}_k)
 $$
 
 Making extensive use of the rule
@@ -998,11 +999,10 @@ we find
 
 $$
  \begin{array}{ccl}
-     A\,(B\mathbf{c_k}) & = & A \,(c_{1k}\mathbf{b_1} +c_{2k}\mathbf{b_2}   + \ldots + c_{pk}\mathbf{b_p})\\
-      %& = & c_{1k}A\vect{b_1} +c_{2k}A\vect{b_2}   + \ldots + c_{pk}A\vect{b_p}\\
-      & = & c_{1k}(A\mathbf{b_1}) +c_{2k}(A\mathbf{b_2})   + \ldots + c_{pk}(A\mathbf{b_p})\\
-      & = & \begin{bmatrix} A\mathbf{b_1} & A\mathbf{b_2} & \ldots & A\mathbf{b_p} \end{bmatrix} \begin{bmatrix} c_{1k} \\ \vdots \\ c_{pk} \end{bmatrix} \\
-      & = & (AB)\mathbf{c_k}.
+     A\,(B\mathbf{c_k}) & = & A \,(c_{1k}\mathbf{b}_1 +c_{2k}\mathbf{b}_2   + \ldots + c_{pk}\mathbf{b}_p)\\
+      & = & c_{1k}(A\mathbf{b}_1) +c_{2k}(A\mathbf{b}_2)   + \ldots + c_{pk}(A\mathbf{b}_p)\\
+      & = & \begin{bmatrix} A\mathbf{b}_1 & A\mathbf{b}_2 & \ldots & A\mathbf{b}_p \end{bmatrix} \begin{bmatrix} c_{1k} \\ \vdots \\ c_{pk} \end{bmatrix} \\
+      & = & (AB)\mathbf{c}_k.
  \end{array}
 $$
 
@@ -1035,19 +1035,19 @@ The definition of the product of two matrices then precisely matches the composi
 if $A$ is an $m\times n$ matrix and $B$ is an $n\times p$ matrix
 
 $$
-  \mathbf{x}\in\mathbb{R}^p \,\,\stackrel{B}{\longrightarrow}\,\, \mathbf{y_1} = B\mathbf{x}\in\mathbb{R}^n \,\, \stackrel{A}{\longrightarrow} \,\,\, \mathbf{y_2} = A(B\mathbf{x}) \in \mathbb{R}^m\,
+  \mathbf{x}\in\mathbb{R}^p \,\,\stackrel{B}{\longrightarrow}\,\, \vect{y}_1 = B\vect{x}\in\mathbb{R}^n \,\, \stackrel{A}{\longrightarrow} \,\,\, \vect{y}_2 = A(B\mathbf{x}) \in \mathbb{R}^m\,
 $$
 
 and
 
 $$
-  \mathbf{x}\in\mathbb{R}^p\,\,\,\stackrel{AB}{\longrightarrow} \,\,\,\mathbf{y_3} \,=\, (AB)\mathbf{x} \in \mathbb{R}^m
+  \mathbf{x}\in\mathbb{R}^p\,\,\,\stackrel{AB}{\longrightarrow} \,\,\,\vect{y}_3 \,=\, (AB)\mathbf{x} \in \mathbb{R}^m
 $$
 
 yield the same vector:
 
 $$
-\mathbf{y_2} = \mathbf{y_3}.
+\vect{y}_2 = \vect{y}_3.
 $$
 
 %
