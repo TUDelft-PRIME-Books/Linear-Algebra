@@ -1350,7 +1350,7 @@ $$
 ::::::
 
 ::::::{grasple}
-:url: https://embed.grasple.com/exercises/
+:url: https://embed.grasple.com/exercises/c8bb24f6-d357-4571-adb3-39ea0fa9e4ee?id=70395
 :label: grasple_exercise_3_1_5
 :dropdown:
 :description: For linear map $T$, find $T(c\vect{u})$ and $T(\vect{u}+\vect{v})$ if $T(\vect{u})$ and $T(\vect{v})$ are given.
@@ -1455,14 +1455,14 @@ $$
 ::::::
 
 ::::::{grasple}
-:url: https://embed.grasple.com/exercises/ce8ba17c-0a17-4d5e-b4b7-5c277c7e8df8?id=
+:url: https://embed.grasple.com/exercises/ce8ba17c-0a17-4d5e-b4b7-5c277c7e8df8?id=70416
 :label: grasple_exercise_3_1_20
 :dropdown:
 :description: To find the standard matrix for $T:\R^2 \to \R^3$ if $T(\vect{v}_1)$ and $T(\vect{v}_2)$ are given.  
 ::::::
 
 ::::::{grasple}
-:url: https://embed.grasple.com/exercises/ce8ba17c-0a17-4d5e-b4b7-5c277c7e8df8?id=70416
+:url: https://embed.grasple.com/exercises/2de4f8d1-ab3d-4d3a-94e4-5e414e2da3d9?id=70372
 :label: grasple_exercise_3_1_21
 :dropdown:
 :description: If $T(\vect{0}) = \vect{0}$, is $T$ (always) linear?
