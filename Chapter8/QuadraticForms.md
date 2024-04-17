@@ -737,7 +737,10 @@ A _conic section_ or _conic_ is a curve that results when a circular cone is int
 :::{figure} Images/Fig-QuadForms-ConeWithPlanes.svg
 :name: Fig:QuadForms:ConeWithPlanes
 
-Intersections of a cone with planes (not going through the apex) 
+Intersections of a cone with planes (not going through the apex).
+
+<a href="https://commons.wikimedia.org/wiki/File:Conic_sections_with_plane.svg">Pbroks13</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, via Wikimedia Commons
+
 :::
 
  The resulting curve is then either a _hyperbola_, a _parabola_ or an _ellipse_, with as special ellipse the _circle_. If the plane does go through the apex of the cone the conic section is called **degenerate**.

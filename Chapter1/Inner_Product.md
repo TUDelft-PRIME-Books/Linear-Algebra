@@ -304,8 +304,7 @@ if and only if all the squares are 0, which only happens if each entry $a_i$ is 
 Prove property iii.
 :::
 
-:::{solution} 'Exc:InnerProduct:CheckPropInnerProd'
-:class: dropdown
+:::{dropdown} Solution to&nbsp;{numref}`Exc:InnerProduct:CheckPropInnerProd`&nbsp;(_click to show_)
 
 Let
 
@@ -336,6 +335,9 @@ $$
 
 :::
 
+
+
+
 :::{exercise}
 :label: Exc:InnerProduct:(v-w)(v+w)
 
@@ -349,8 +351,7 @@ $$
 
 :::
 
-:::{solution} Exc:InnerProduct:(v-w)(v+w)
-:class: dropdown
+:::{dropdown} Solution to&nbsp;{numref}`Exc:InnerProduct:(v-w)(v+w)`&nbsp;(_click to show_)
 
 First of all, because of rule i. and rule iii. of {prf:ref}`Prop:RulesInnerProduct`
 it holds that
@@ -394,8 +395,7 @@ and explain why it is called the _parallelogram rule_.
 
 :::
 
-:::{solution} Exc:InnerProduct:PargramRule
-:class: dropdown
+:::{dropdown} Solution to&nbsp;{numref}`Exc:InnerProduct:PargramRule`&nbsp;(_click to show_)
 
 Again it's a chain of identities using basic properties of the dot product.
 
@@ -654,8 +654,7 @@ $$
 
 :::
 
-:::{solution} Exc:InnerProduct:SameProjectionThenWhat
-:class: dropdown
+:::{dropdown} Solution to&nbsp;{numref}`Exc:InnerProduct:SameProjectionThenWhat`&nbsp;(_click to show_)
 
 Suppose $\text{proj}_{\mathbf{v}}(\mathbf{w}_1) = \text{proj}_{\mathbf{v}}(\mathbf{w}_2) $.  Thus  $\dfrac{\mathbf{w}_1\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}} \mathbf{v} = \dfrac{\mathbf{w}_2\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}} \mathbf{v}$.
 

@@ -342,8 +342,7 @@ Prove statement (ii) of the previous proposition.
 
 ::::
 
-::::{solution} Exc:MatVecProduct:CheckLinearity(ii)
-:class: dropdown
+:::{dropdown} Solution to&nbsp;{numref}`Exc:MatVecProduct:CheckLinearity(ii)`&nbsp;(_click to show_)
 
 Assume
 
@@ -505,8 +504,7 @@ where $r_i = p_i - q_i,\,i=1,\ldots,\,m$ \, is inconsistent.
 
 ::::
 
-::::{solution} Exc:MatVecProduct:PracticeWithProp
-:class: dropdown
+:::{dropdown} Solution to&nbsp;{numref}`Exc:MatVecProduct:PracticeWithProp`&nbsp;(_click to show_)
 
 We start with some notations.
 

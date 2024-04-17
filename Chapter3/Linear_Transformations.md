@@ -203,6 +203,7 @@ This transformation "embeds" the plane $\mathbb{R}^2$ into the space $\mathbb{R}
 :url: linear_transformation/embed_r2_r3
 :fig: Images/Fig-LinTrafo-EmbedR2R3.svg
 :name: Fig:LinTrafo:EmbedR2R3
+:status: reviewed
 
 $T$: embedding $\mathbb{R}^2$ into $\mathbb{R}^3$.
 ```
