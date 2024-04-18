@@ -734,12 +734,10 @@ Check that the vector you found in iii. is an eigenvector of the matrix of the q
 A _conic section_ or _conic_ is a curve that results when a circular cone is intersected with a plane.  
 {numref}`Figure %s <Fig:QuadForms:ConeWithPlanes>` shows the different shapes when the plane is *not* going through the apex..
 
-:::{figure} Images/Fig-QuadForms-ConeWithPlanes.svg
+:::{figure} Images/Fig-QuadForms-ConicSections.png
 :name: Fig:QuadForms:ConeWithPlanes
 
-Intersections of a cone with planes (not going through the apex).
-
-<a href="https://commons.wikimedia.org/wiki/File:Conic_sections_with_plane.svg">Pbroks13</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, via Wikimedia Commons
+Intersections of a cone with several planes (not going through the apex).
 
 :::
 
