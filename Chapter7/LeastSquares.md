@@ -577,7 +577,7 @@ So for a matrix $A$ with linearly independent columns the projection of a vector
 :::{math}
 :label: Eq:LeastSquares:ProjbColA
 
-$\hat{\vect{b}} = \text{proj}_{\text{Col }A}(\vect{b}) = A(A^TA)^{-1}A^T \vect{b}.$
+\hat{\vect{b}} = \text{proj}_{\text{Col }A}(\vect{b}) = A(A^TA)^{-1}A^T \vect{b}.
 
 :::
 

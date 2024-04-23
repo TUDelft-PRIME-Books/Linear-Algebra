@@ -363,7 +363,7 @@ $$
     \end{array}\right.
 $$
 
-Again we see that $x_2 = 2$, in fact the equation $3x_2 = 6$ is the same equation that we arrived at with the substitution method above Substitution of this into the first equation again yields
+Again we see that $x_2 = 2$, in fact the equation $3x_2 = 6$ is the same equation that we arrived at with the substitution method above. Substitution of this into the first equation again yields
 
 $$
 

@@ -404,6 +404,9 @@ $$
 it follows that  $\norm{A\mathbf{v}}=0$, implying $A\mathbf{v}=\mathbf{0}$.  So  $\mathbf{v}$ lies in $\Nul{A}$.
 
 All in all we have shown that all vectors in $\Nul{A}$ lie in $\Nul{A^TA}$ and that all vectors in $\Nul{A^TA}$ lie in $\Nul{A}$.  Thus $\Nul{A}=\Nul{A^TA}$.
+
+(Note that this was already mentioned in {numref}`Subsection %s <SubSec:LeastSquares:NormalEquations>`, 
+equation {eq}`Eq:LeastSquares:InvertibilityATA`.)
 \item Observe that since $A$ is an $m\times n$ matrix, we have that $A^TA$ is $n\times n$. Now, using {prf:ref}`Thm:BasisDim:RankThm` we have
 
 $$
@@ -532,7 +535,7 @@ $$
    AV = U_r\Sigma_r.
 $$
 
-Next we add the remaining columns (if any)   $\vect{u}_{r+1}, \ldots, \vect{u}_{m}$, and add $m-r$ zero rows to the bottom of $\tilde{\Sigma}_r$.  Thus we have built the matrix  $\Sigma$ exactly as in the algorithm (Step 3).  Moreover,   $U_r\tilde{\Sigma}_r = U\Sigma$, so we see that
+Next we add the remaining columns (if any)   $\vect{u}_{r+1}, \ldots, \vect{u}_{m}$ to $U_r$, and add $m-r$ zero rows to the bottom of $\tilde{\Sigma}_r$.  Thus we have built the matrix  $\Sigma$ exactly as in the algorithm (Step 3).  Moreover,   $U_r\tilde{\Sigma}_r = U\Sigma$, so we see that
 
 $$
   AV = U_r\Sigma_r = U\Sigma.
@@ -632,7 +635,7 @@ We have to find a fourth orthogonal vector $\vect{u}_4$.   One way is to look fo
 8 & -4 & -4 &-10 \\ -6 & 3 & 10 & -10 \\ 2 & 4 & 0 & 0\end{bmatrix}$. <BR>
  You may check that the vector $\vect{u}_4 = \begin{bmatrix} 4 \\ -2 \\ 5 \\ 2 \end{bmatrix}$  does the trick.
 
-Step 6.  (Where we also still have to present our $V$!)  <BR>
+Step 6.  (Where we also still have to present our $V$.)  <BR>
 We rescale all vectors to unit vectors and put them side by side, to arrive at the matrices
 
 $$
@@ -657,7 +660,7 @@ From  $A^T = U\Sigma V^T$  it follows swiftly that  $A = V \Sigma^TU^T$ is an SV
 
 ## Understanding the SVD Geometrically
 
-In this section we will have a deeper look to the decomposition and its meaning. As we have done previously, let's think about our $m\times n$ matrix $A$ as the standard matrix of a linear transformation from $\R^n$ to $\R^m$.
+In this section we will have a deeper look at the decomposition and its meaning. As we have done previously, let's think about our $m\times n$ matrix $A$ as the standard matrix of a linear transformation from $\R^n$ to $\R^m$.
 
 By definition, the matrices $U$ and $V$ in the SVD of an $m\times n$ matrix $A$ 
 are orthogonal matrices. Thus the columns of $U$ give an orthonormal basis of $\R^m$,  the columns of $V$ an orthonormal basis of $\R^n$. Then, we think of our decomposition $U\Sigma V^T$ as a composition of transformations that we can visualise using the graph in {numref}`Figure %s <Fig:SVD:decomposition>`:
@@ -669,6 +672,111 @@ are orthogonal matrices. Thus the columns of $U$ give an orthonormal basis of $\
 Diagram showing the SVD as a composition of linear transformations.
 
 :::
+
+
+Let us first consider the case where $A$ is a  $2 \times 2$ matrix, as in that case everything takes place in the plane, and we can make an exact drawing of what is going on. 
+Every  $2\times 2$  orthogonal matric has one of the two forms
+
+$$
+   \begin{bmatrix} \cos({\varphi})&-\sin({\varphi}) \\
+   \sin({\varphi}) &  \cos({\varphi})\end{bmatrix}, \quad \quad
+   \begin{bmatrix} \cos({\varphi})&\sin({\varphi}) \\
+   -\sin({\varphi}) &  \cos({\varphi})\end{bmatrix}.
+$$
+
+The first matrix represents a rotation, the second matrix represents a reflection.  In an SVD of $A$, we can always construct $V$ to be a rotation.  Namely, the columns of $V$ must be eigenvectors of the matrix $A^TA$, and eigenvectors remain eigenvectors if one multiplies  them with a factor $(-1)$.
+In that case  $V^T$, which is just $V^{-1}$, is also a rotation.
+Since the matrix $U$ in general is uniquely determined once $V$ is chosen (the exception being the case where $A$ has  zero as a singular value),  $U$ is either a rotation (when det$(A)>0$) or a reflection  (when det$(A)<0$). 
+The workings of the concatenation  $U\Sigma V^T$ are then
+1. Multiplication by $V^T$ rotates the eigenvectors $\mathbf{v}_1$ and  $\mathbf{v}_2$   of  $A^TA$
+    to the standard basis vectors $\mathbf{e}_1$ and  $\mathbf{e}_2$.
+2. Multiplication by $\Sigma$ stretches the basic vectors $\mathbf{e}_1$ and  $\mathbf{e}_2$ with factors $\sigma_1$ and $\sigma_2$.
+3. Multiplication by $U$ rotates or reflects the  vectors $\sigma_1\mathbf{e}_1$ and  $\sigma_2\mathbf{e}_2$ to the vectors
+$\sigma_1\mathbf{u}_1$ and  $\sigma_2\mathbf{u}_2$. <BR>
+If we consider the total effect on the unit circle (i.e., all vectors of length 1), then 1. is a rotation,  2. shrinks or stretches the unit circle to an ellipse, and 3. rotates or reflects this ellipse.
+
+Let us consider a numerical example
+
+::::{prf:example}
+:label: Ex:SVD:GeometricView
+
+We will analyze the SVD of the matrix
+  $A = \begin{bmatrix} 5 & 2 \\ 0 & 6 \end{bmatrix}$.
+
+The matrix  
+
+$$
+ A^TA =  \begin{bmatrix} 25 & 10 \\ 10 & 40 \end{bmatrix} = 5\begin{bmatrix} 5 & 2 \\ 2 & 8 \end{bmatrix} 
+ $$
+
+has the eigenvalues
+
+$$
+  \lambda_1 = 45, \quad \lambda_2 = 20,
+$$
+
+with corresponding eigenvectors
+
+$$
+  \mathbf{v}_1 = \begin{bmatrix} 1  \\ 2 \end{bmatrix}, \quad \mathbf{v}_2 = \begin{bmatrix} 2  \\ -1 \end{bmatrix}.
+$$
+
+Normalizing them, and giving the second vector a minus sign,
+we find for an SVD
+
+$$
+ V = \dfrac{1}{\sqrt{5}} \begin{bmatrix} 1 & -2 \\ 2 & 1 \end{bmatrix}, \quad \Sigma = \begin{bmatrix} 3\sqrt{5} & 0\\0 & 2\sqrt{5} \end{bmatrix}.
+$$
+
+Applying  the last two steps of {prf:ref}`Alg:SVD:SVDalgorithm` we find that
+
+$$
+   U = \dfrac{1}{5} \begin{bmatrix} 3 & -4 \\ 4 & 3 \end{bmatrix}.
+$$
+
+So,  $V$ represents a rotation about an angle  $\varphi = \arccos\left(\frac{1}{\sqrt{5}}\right) \approx 63^{o}$, and 
+$U$ represents a rotation about an angle  $\psi = \arccos\left(\frac{3}{5}\right) \approx 53^{o}$.  Between those two rotations,  $\Sigma$  'stretches' vectors with a factor $3\sqrt{5}$ in the $x$-direction and a factor $2\sqrt{5}$ in the $y$-direction.
+
+Note that  $V$ maps $\vect{e}_1,\vect{e}_2$  to  $\vect{v}_1,\vect{v}_2$, &nbsp;  so  $V^T = V^{-1}$ maps $\vect{v}_1,\vect{v}_2$  to  $\vect{e}_1,\vect{e}_2$.
+
+{numref}`Figure %s <Fig:SVD:GeometricView>` visualizes what is going on.  Note that at the end the vector $\vect{e}_1$  comes to rest on the $x$-axis,  as it should, since
+
+$$
+   A\vect{e}_1 \,=\, \begin{bmatrix} 5 & 2 \\ 0 & 6 \end{bmatrix}\begin{bmatrix} 1\\ 0 \end{bmatrix} \,=\, \begin{bmatrix} 5\\ 0 \end{bmatrix}.
+$$
+
+:::{figure} Images/Fig-SVD-GeometricView.svg
+:name: Fig:SVD:GeometricView
+
+
+:::
+
+::::
+
+In general, for an $m\times n$ matrix $A$ of say rank $r$, suppose
+
+$$
+   A = U\Sigma V^T
+$$
+
+is a singular value decomposition.
+Since $V^T$ is an orthogonal matrix, it will map the $\mathbb{R}^n$ to itself and it will preserve the norms of all vectors. 
+More precisely, it will map the 'principal axes' corresponding to  $\vect{v}_1,\ldots,\vect{v}_n$  onto the coordinate axes generated by  $\vect{e}_1, \ldots, \vect{e}_n$. With that, the $n$-dimensional unit sphere, consisting of all vectors of norm 1, is mapped onto itself.
+
+The $m \times n$ matrix $\Sigma$ maps the first $r$ basis vectors 
+$\vect{e}_1, \ldots, \vect{e}_r$ in $\R^n$ to the vectors 
+$\sigma_1\vect{e}_1, \ldots, \sigma_r\vect{e}_r$ in $\R^m$.  The remaining (if any) basis vectors $\vect{e}_{r+1}, \ldots, \vect{e}_n$
+are mapped to $\vect{0}\in \R^{m}$.  All in all, $\Sigma$ maps the unit sphere in $\R^n$ onto an $r$-dimensional 'ellipsoid' in $\R^m$.
+
+Lastly the orthogonal matrix $U$ rotates/reflects this ellipsoid
+in $\R^m$.
+
+<BR>
+
+<BR>
+
+
+REMAINING TEXT FROM DANI:
 
 To better understand it, let's visualise how the unit circle changes under these transformations.
 
@@ -706,7 +814,7 @@ The matrix $\Sigma$ contains the singular values. We can observe that the unit c
 
 Finally, the matrix $U$ can be interpreted as a reflection over the line $y=x$.
 
-:::{figure} s
+:::{figure} 
 :name: Fig:SVD:decompositioneffects
 
 Effects of the transformations on the unit circle.

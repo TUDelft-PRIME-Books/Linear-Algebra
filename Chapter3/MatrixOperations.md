@@ -1184,7 +1184,7 @@ $$
 or, equivalently,
 
 $$
-ab = 0  \quad \Rightarrow   \quad a = 0 \,\,\text{  or  } \,\,b = 0.
+\text{if} \quad ab = 0 \quad  \text{then}  \quad  a = 0 \,\,\text{  or  } \,\,b = 0.
 $$
 
 As the following example shows, things are different in the realm of matrices.
@@ -1365,11 +1365,11 @@ $$
   AB = O,
 $$
 
-and we let $C$ be the zero matrix.
+and  let $C$ be the zero matrix.
 Then $B \neq C$, whereas
 
 $$
-  AB = AC =  O \quad  \text{and (by assumption)} \quad A \neq O.
+  AB = AC =  O \quad  \text{and} \,\,\text{(by assumption)} \quad A \neq O.
 $$
 
 Statement vi. also relates to ii. Namely,
