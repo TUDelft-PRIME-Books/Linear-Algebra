@@ -11,7 +11,7 @@ Clone the repository:
 git clone --recursive https://gitlab.ewi.tudelft.nl/prime/openlabook.git
 ```
 
-Or if the repository is already cloned, download the grasple submodule like this:
+Or if the repository is already cloned, download the Grasple submodule like this:
 
 ```bash
 git submodule init
@@ -40,7 +40,7 @@ jupyter-book build .
 To run with local applets once:
 
 ```bash
-BASE_URL=http://localhost:3000/applet/ jupyter-book build .
+BASE_URL=http://localhost:5173/applet/ jupyter-book build .
 # Or some other port
 ```
 
