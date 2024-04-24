@@ -159,11 +159,13 @@ This basis was already defined in {numref}`Sec:LinTrafo`, Equation {eq}`Eq:LinTr
 The standard basis in $\R^2$ can be visualized as two perpendicular unit vectors, e.g.
 with $\vect{e}_1$ pointing to the right and $\vect{e}_2$ pointing upwards. Likewise we can depict the standard basis $\mathcal E$ of $\R^3$. See {numref}`Figure %s <Fig:BasisDim:StandardBasis>`.
 
-::::{figure} Images/Fig-BasisDim-StandardBasis.svg
+```{applet}
+:url: basisdim/standardbasis
+:fig: Images/Fig-BasisDim-StandardBasis.svg
 :name: Fig:BasisDim:StandardBasis
 
 The standard bases in $\R^2$ and $\R^3$
-::::
+```
 
 ::::::
 
@@ -991,7 +993,7 @@ c_2
 = c_1\vect{u}_1 + c_2\vect{u}_2.
 $$
 
-Thus $\{\vect{u}_1, \vect{u}_2\}$  is a basis for $\mathcal{P}$.
+Thus $\{\vect{u}_1, \vect{u}_2\}$ is a basis for $\mathcal{P}$.
 
 We can also take $x_1$ and $x_3$ as free variables, and then find
 
@@ -1173,7 +1175,7 @@ Invoking {prf:ref}`Thm:LinInd:TooManyVectsimpliesLinDep` we get that
 $\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k, \vect{s} \rbrace$
 is linearly dependent.
 
-Since we assumed $ \lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k\rbrace$ is linearly independent, we may conclude that
+Since we assumed $\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k\rbrace$ is linearly independent, we may conclude that
 
 $$
 \vect{s} \in \Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k}.
@@ -1438,7 +1440,7 @@ $$
 \Row{B} \subseteq  \Row{A}.
 $$
 
-Since the equivalence works  both ways we can interchange $A$ and $B$ and conclude that also
+Since the equivalence works both ways we can interchange $A$ and $B$ and conclude that also
 
 $$
 \Row{A}  \subseteq  \Row{B},

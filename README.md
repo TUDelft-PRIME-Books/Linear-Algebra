@@ -48,6 +48,10 @@ To run the book with 'hot-reload':
 
 ```bash
 watchexec -e py,md -- jupyter-book build --all .
+
+# Or with local applets
+watchexec -e py,md -- BASE_URL=http://localhost:5173/applet/ jupyter-book build .
+jupyter-book build --all .
 ```
 
 ## Applet directive
@@ -57,6 +61,7 @@ watchexec -e py,md -- jupyter-book build --all .
 :url: lines_and_planes/normal_equation_plane_origin
 :fig: Images/image_shown_in_print_version.svg
 :name: name_that_is_used_to_refer_to_this_figure
+:status: approved
 :title: This title is shown when you full-screen the applet
 
 A plane through the point $P$.

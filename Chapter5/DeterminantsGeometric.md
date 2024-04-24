@@ -63,11 +63,13 @@ $$
 
 Thus we embed the plane into $\R^3$ as the $x_1$-$x_2$-plane. See {numref}`Figure %s <Fig:DetGeometric:OrientedArea1>`.
 
-::::{figure} Images/Fig-DetGeometric-OrientedArea1.svg
+```{applet}
+:url: detgeometric/orientedarea1
+:fig: Images/Fig-DetGeometric-OrientedArea1.svg
 :name: Fig:DetGeometric:OrientedArea1
 
 Oriented area
-::::
+```
 
 So we embed the plane $\R^2$ as the $x$-$y$-plane into $\R^3$.
 
@@ -289,15 +291,23 @@ $\det{(\vect{u},\vect{v}+\vect{w})} = \det{(\vect{u},\vect{v})} + \det{(\vect{u}
 </li>
 </ol>
 
-is the most interesting one. The two pictures of {numref}`Figure %s <Fig:DetGeometric:Linearity>` tell the story.
+is the most interesting one. The two pictures of {numref}`Figure %s <Fig:DetGeometric:Linearity1>` and {numref}`Figure %s <Fig:DetGeometric:Linearity2>` tell the story.
 
-::::{figure} Images/Fig-DetGeometric-SumRule.svg
-:name: Fig:DetGeometric:Linearity
+::::{figure}
+:name:
 
-The sum rule in a picture. Note, this is a **2D picture**.
 ::::
 
-In the picture on the left, both $(\vect{u},\vect{v})$ and $(\vect{u},\vect{w})$ are positively oriented.
+```{applet}
+:url: det_geometric/linearity_one
+:fig: Images/Fig-DetGeometric-SumRule.svg
+:name: Fig:DetGeometric:Linearity1
+:position: 2,2
+
+The sum rule in a picture with $(\vect{u},\vect{w})$ positively oriented. Note, this is a **2D picture**.
+```
+
+In the picture, both $(\vect{u},\vect{v})$ and $(\vect{u},\vect{w})$ are positively oriented.
 So there
 
 $$
@@ -310,7 +320,16 @@ $$
 
 since the two triangles $OCE$ and $ABD$ are congruent, so have equal areas.
 
-In the picture on the right, the orientation of $(\vect{u},\vect{v})$ is positive, the orientation of $(\vect{u},\vect{w})$ is negative, and the orientation of $(\vect{u},\vect{v}+\vect{w})$ is positive again.
+```{applet}
+:url: det_geometric/linearity_two
+:fig: Images/Fig-DetGeometric-SumRule.svg
+:name: Fig:DetGeometric:Linearity2
+:position: 2,2
+
+The sum rule in a picture with $(\vect{u},\vect{w})$ negatively oriented. Note, this is a **2D picture**.
+```
+
+In this picture, the orientation of $(\vect{u},\vect{v})$ is positive, the orientation of $(\vect{u},\vect{w})$ is negative, and the orientation of $(\vect{u},\vect{v}+\vect{w})$ is positive again.
 So there
 
 $$
@@ -335,11 +354,13 @@ Suppose $\vect{a}, \vect{b}, \vect{c}$ are three vectors in $\R^3$. For the mome
 $\vect{a}, \vect{b}$ are not multiples of each other, and $\vect{c}$ is not in the plane spanned by $\vect{a}, \vect{b}$.
 Then the three vectors can be interpreted as three edges of a parallelepiped. See {numref}`Figure %s <Fig:DetGeometric:Paraped>`.
 
-::::{figure} Images/Fig-DetGeometric-Paraped.svg
+```{applet}
+:url: det_geometric/paraped
+:fig: Images/Fig-DetGeometric-Paraped.svg
 :name: Fig:DetGeometric:Paraped
 
 Volume equals base area time height
-::::
+```
 
 ::::::{prf:proof}
 
@@ -519,7 +540,6 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 
 ::::::
 
-
 ## Grasple Exercises
 
 ::::::{grasple}
@@ -542,26 +562,23 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 :url: https://embed.grasple.com/exercises/fc111f55-9f43-4730-a1f9-e3b5f03069bd?id=93133
 :label: grasple_exercise_5_1_3
 :dropdown:
-:description: Area of triangle in the plane. 
+:description: Area of triangle in the plane.
 
 ::::::
-
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/2d846d56-3729-468e-80d8-74ec6d348719?id=93134
 :label: grasple_exercise_5_1_4
 :dropdown:
-:description: Volume of paralellepiped  (with  vertex at (0,0,0)).
+:description: Volume of paralellepiped (with vertex at (0,0,0)).
 
 ::::::
-
-
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/2d846d56-3729-468e-80d8-74ec6d348719?id=93134
 :label: grasple_exercise_5_1_5
 :dropdown:
-:description: Volume of paralellepiped  (with  vertex at (0,0,0)).
+:description: Volume of paralellepiped (with vertex at (0,0,0)).
 ::::::
 
 ::::::{grasple}
@@ -571,7 +588,6 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 :description: Considerations about cross product versus determinant.
 
 ::::::
-
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/19318aff-e71a-412b-8ab2-69bfc94d4c75?id=87497

@@ -335,9 +335,6 @@ $$
 
 :::
 
-
-
-
 :::{exercise}
 :label: Exc:InnerProduct:(v-w)(v+w)
 
@@ -530,11 +527,13 @@ $$
 
 :::
 
-:::{figure} Images/Fig-InnerProduct-ProjectionVectorLine.svg
+```{applet}
+:url: dot_product/innerproduct_projectionvectorline
+:fig: Images/Fig-InnerProduct-ProjectionVectorLine.svg
 :name: Fig:InnerProduct:ProjectionVectorLine
 
 Projection of a vector $\mathbf{w}$ onto a non-zero vector $\mathbf{v}$
-:::
+```
 
 :::{prf:proposition}
 :label: Prop:InnerProduct:UniqueProjection
@@ -760,11 +759,14 @@ iii. Triangle Inequality:
 
 The first two of these properties are very easy to prove. The proof of the triangle inequality we postpone until the end of the section. {numref}`Figure %s <Fig:InnerProduct:TriangleInequality>` explains the name.
 
-:::{figure} Images/Fig-InnerProduct-TriangleInequality.svg
+```{applet}
+:url: dot_product/triangle_inequality
+:fig: Images/Fig-InnerProduct-TriangleInequality.svg
 :name: Fig:InnerProduct:TriangleInequality
+:position: 2,2
 
 The Triangle Inequality
-:::
+```
 
 ::::{prf:example}
 :label: Ex:InnerProduct:NormsofTwoVectors
