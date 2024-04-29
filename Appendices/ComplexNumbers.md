@@ -14,7 +14,8 @@ where $a\neq0$. Previously you probably learned that Equation {eq}`Eq:ComplexNum
 
 :::{math}
 :label: Eq:ComplexNumbers:abc-sol
-$x_{1,2}=\frac{-b\pm\sqrt{D}}{2a}.$
+
+x_{1,2}=\frac{-b\pm\sqrt{D}}{2a}.
 
 :::
 
@@ -419,7 +420,7 @@ If we want to interpet the other operations such as multiplication easily, we fi
 
 The reason for introducing complex numbers is to ensure that more equations have solutions, for example $z^2+1=0$. In this section, we consider equations involving complex numbers. This means that the solutions may be complex, but also that the coefficients in the equations can be complex.
 
-We already solved quadratic equations using a new technique called _completing the sqaure_ and in this section you will learn more ways to solve equations.
+We already solved quadratic equations using a new technique called _completing the square_ and in this section you will learn more ways to solve equations.
 
 You may think that introducing a new set of numbers as solutions to certain equations can be a never-ending process. When you introduce more numbers, you get more equations (now we need not only solve $x^2=-1$, but also $x^2=i$), which need new solutions, etcetera.
 It turns out that if you restrict yourself to polynomial equations, this is not the case. This statement is the Fundamental Theorem of Algebra:
@@ -669,7 +670,7 @@ The polar coordinates of a point in the complex plane $\C$ are the distance $r=|
 :::
 
 Notice that the argument is not uniquely defined, as you can always go a full circle extra and add $2\pi$ radians to the angle. For example, the number $1$ has argument 0 (as it is on the positive real axis), but also $2\pi$, $4\pi$, and $-2\pi$ (etc.). In order to make a uniform choice, we sometimes work with the principal value of the argument, which is by definition the unique value of the argument between $-\pi$ and $\pi$.
-We write the principal value using a capital A. Thus we have $-\pi < \Arg{z} \leq \pi$.
+We write the principal value using a capital A. Thus we have $-\pi < \text{Arg} z \leq \pi$.
 
 :::: {prf:example}
 

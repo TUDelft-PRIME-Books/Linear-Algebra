@@ -117,7 +117,7 @@ How to find the eigenvector(s) for a given eigenvalue.
 </li>
 </ul>
 
-The (harder) question how to actually find the eigenvalues we postpone untill the next section.
+The (harder) question how to actually find the eigenvalues we postpone until the next section.
 
 In the second half of this section we will consider a few general properties of eigenvalues and eigenvectors.
 
@@ -327,7 +327,7 @@ $$
 (A-2I)\vect{v} = \vect{0}.
 $$
 
-So we are looking for non-trivial solutions of the homogeneous system of linear equations with coefficient matrix $A - 2I$. Again, we can work with the augmented matrix $[A - 2I | \vect{0} ]$, or we can use the fact that we look for nonzero vectors in the nulspace of $A-2I$.
+So we are looking for non-trivial solutions of the homogeneous system of linear equations with coefficient matrix $A - 2I$. Again, we can work with the augmented matrix $[A - 2I | \vect{0} ]$, or we can use the fact that we look for nonzero vectors in the null space of $A-2I$.
 If we plug in the entries of $A$ and use row reduction we get
 
 $$
@@ -344,9 +344,9 @@ A-2I \sim
 \left[\begin{array}{cccc} 1 & 1 & -2  \\ 0 & -3 & 2 \\ 0 & 0 & -2 \end{array}\right].
 $$
 
-This last matrix has rank 3, so its nulspace contains only the zero vector. Thus there are no nonzero solutions for the equation $A\vect{v} - 2\vect{v} = \vect{0}$, and we conclude that 2 is _not_ an eigenvalue of $A$.
+This last matrix has rank 3, so its null space contains only the zero vector. Thus there are no nonzero solutions for the equation $A\vect{v} - 2\vect{v} = \vect{0}$, and we conclude that 2 is _not_ an eigenvalue of $A$.
 
-For the other candidate we proceed in the same manner. Now we have to find the nulspace of the matrix
+For the other candidate we proceed in the same manner. Now we have to find the null space of the matrix
 
 $$
 (A-(-2)I) = (A+2I).
@@ -361,7 +361,7 @@ A+2I = \begin{bmatrix} 0 & 1 & 2 \\ 0 & 1 & 2 \\ -1 & 1 & 2 \end{bmatrix}  \sim
 
 $$
 
-We conclude that $A+2I$ has rank 2, thus the nulspace of $A+2I$ has dimension 1. From the row reduced form we read off that the nulspace contains all multiples of the vector
+We conclude that $A+2I$ has rank 2, thus the null space of $A+2I$ has dimension 1. From the row reduced form we read off that the null space contains all multiples of the vector
 $\vect{v} = \begin{bmatrix} 0 \\ 2 \\ -1\end{bmatrix}$. These then are exactly the eigenvectors for the eigenvalue $\lambda = -2$.
 Well, strictly speaking we should exclude the multiple $0\vect{v}$, as an eigenvector by definition is not the zero vector.
 As a check:
@@ -471,14 +471,14 @@ $$
 A\vect{x}=\lambda\vect{x} \quad \iff \quad (A-\lambda I)\vect{x}= \vect{0}.
 $$
 
-Thus $S$ is the nulspace of $A - \lambda I$, and, as such, a subspace of $\R^n$.
+Thus $S$ is the null space of $A - \lambda I$, and, as such, a subspace of $\R^n$.
 
 ::::::
 
 ::::::{prf:definition}
 :label: Dfn:EigenValues:Eigenspace
 
-For an eigenvalue $\lambda$ of the matrix $A$ the nulspace  of $A - \lambda I$ is called the **eigenspace**  $E_{\lambda}$.
+For an eigenvalue $\lambda$ of the matrix $A$ the null space  of $A - \lambda I$ is called the **eigenspace**  $E_{\lambda}$.
 
 $$
 E_{\lambda} = \Nul{(A-\lambda I)}.
@@ -486,7 +486,7 @@ $$
 
 ::::::
 
-Recall that the nulspace of $A - \lambda I$ consists of all solutions of the equation
+Recall that the null space of $A - \lambda I$ consists of all solutions of the equation
 
 $$
 (A-\lambda I)\vect{x} = \vect{0},

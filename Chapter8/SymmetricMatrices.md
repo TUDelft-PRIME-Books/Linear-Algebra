@@ -243,7 +243,7 @@ On the other hand
 
 :::
 
-Comparing {eq}`eq:SymmetricMat:uTAv3`  and  {eq}`eq:SymmetricMat:uTAv4`  we can conlude that $\mathbf{u}\ip\mathbf{v} = 0$,  i.e.,  $\mathbf{u}$ and $\mathbf{v}$
+Comparing {eq}`eq:SymmetricMat:uTAv3`  and  {eq}`eq:SymmetricMat:uTAv4`  we can conclude that $\mathbf{u}\ip\mathbf{v} = 0$,  i.e.,  $\mathbf{u}$ and $\mathbf{v}$
 are indeed orthogonal.
 
 ::::
@@ -420,7 +420,7 @@ Let us restate the main theorem ({prf:ref}`Thm:SymmetricMat:OrthogDiag`) about s
 
 A matrix $A$ is symmetric if and only if it is orthogonally diagonalizable.
 
-Note that this also establishes the property that for each eigenvalue of a symmetric matrix the geometric muliplicity equals the algebraic multiplicity
+Note that this also establishes the property that for each eigenvalue of a symmetric matrix the geometric multiplicity equals the algebraic multiplicity
 ({prf:ref}`Prop:SymmetricMat:AlgGeomMultiplicity`).
 
 We will put the intricate proof at the end of the subsection, and first consider two examples.

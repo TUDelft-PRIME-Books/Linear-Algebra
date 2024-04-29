@@ -422,7 +422,7 @@ $$
 
 as it should.
 
-Note that the diagonalization is not unique: the order of the eigenvalues is free to choose, and the eigenvectors may be scaled.
+Note that the diagonalization is not unique: the *order* of the eigenvalues can be changed, and the eigenvectors may be *scaled*.
 However, the order of the eigenvectors in $P$ must correspond to the order of the eigenvalues on the diagonal of $D$.
 For instance, for the matrix $A$ at hand, an alternative diagonalization is given by
 

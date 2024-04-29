@@ -71,7 +71,7 @@ $$
 \begin{vmatrix} 0-\lambda & -1\\ 1 & 0-\lambda \end{vmatrix} =  \lambda^2 +1.
 $$
 
-Since this polynomial has no zeros, the matrix $A$ has no eigenvalues. We have already seen a geometric argument when we considered this matrix in Example {prf:ref}`Ex:EigenValues:Rotation`: $R$ is the matrix of a rotation.
+Since this polynomial has no zeros, the matrix $A$ has no eigenvalues. We have already seen a geometric argument when we considered this matrix in {prf:ref}`Ex:EigenValues:Rotation`: $R$ is the matrix of a rotation.
 
 In the remark immediately after that example we mentioned that it is possible to treat $\lambda = \pm i$ as eigenvalues of the matrix $R$. Of course these are exactly the _complex_ zeros of the polynomial $p(\lambda) = \lambda^2 + 1$.
 
@@ -281,7 +281,7 @@ contains two factors $(\lambda - 3)$ and only one factor $(\lambda - 2)$. In alg
 Another natural question is how many linearly **independent** eigenvectors  there are for an eigenvalue $\lambda$.  This we will refer to as the geometric multiplicity.
 
 (Subsec:EV:AlgGeomMultiplicity)=
-## Algebraic and geometric muliplicity
+## Algebraic and geometric multiplicity
 
 ::::::{prf:definition}
 
@@ -304,7 +304,7 @@ and $\lambda_2 = 2$ with algebraic multiplicity $1$.
 
 To find the geometric multiplicities we proceed as follows.
 
-The eigenspace for $\lambda_{1}$ is the nulspace of $A - \lambda_{1} I = A -3I$.
+The eigenspace for $\lambda_{1}$ is the null space of $A - \lambda_{1} I = A -3I$.
 
 $$
 A - 3I = \left[\begin{array}{ccc} 4-3 & -1 & -2 \\0 & 3-3 & 0 \\ 1 & 2 & 1-3  \end{array}\right]
@@ -315,7 +315,7 @@ A - 3I = \left[\begin{array}{ccc} 4-3 & -1 & -2 \\0 & 3-3 & 0 \\ 1 & 2 & 1-3  \e
 .
 $$
 
-This is a $3 \times 3$ matrix of rank 2, so its nulspace has dimension $3-2 =1$, and we conclude that the geometric multiplicity of the eigenvalue
+This is a $3 \times 3$ matrix of rank 2, so its null space has dimension $3-2 =1$, and we conclude that the geometric multiplicity of the eigenvalue
 $\lambda = 3$ is equal to 1.
 For the other eigenvalue we perform a similar computation:
 
@@ -379,7 +379,7 @@ The following exercise, which is meant to shed some more light on the concepts j
 ## Some special properties of the characteristic polynomial
 
 In the proof of {prf:ref}`Prop:EigenValues:CharPoly` it was mentioned that for an $n \times n$ matrix $A$ the coefficient of the highest power $\lambda^n$  is equal to  $(-1)^n$.
-In thhis subsection we will find expressions for two other coefficients of the characteristic polynomial. The results we mention are interesting in themselves, but they are not essential for the sequel.
+In this subsection we will find expressions for two other coefficients of the characteristic polynomial. The results we mention are interesting in themselves, but they are not essential for the sequel.
 
 ::::::{prf:proposition}
 :label: Prop:EigenValues:CharPolyTrace
@@ -539,7 +539,7 @@ Equation {eq}`Eq:Eigenvalues:SumEigenvaluesAndTrace`.
 
 ::::::
 
-The identity involving the sum gives a easy check on the eigenvalues; with the other identity one has to do some work to apply it for a check. The next example gives an illustration.
+The identity involving the sum gives an easy check on the eigenvalues; with the other identity one has to do some work to apply it for a check. The next example gives an illustration.
 
 ::::::{prf:example}
 :label: Ex:Eigenvalues:SumEigenvaluesAndTrace
@@ -704,7 +704,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 :url: https://embed.grasple.com/exercises/82387c7b-49c8-4438-b72c-e1d023fb2780?id=92211
 :label: grasple_exercise_6_2_11
 :dropdown:
-:description:  To find the the geometric multiplicities of the eigenvalues of an almost diagonal matrix $A$.
+:description:  To find the geometric multiplicities of the eigenvalues of an almost diagonal matrix $A$.
 
 ::::::
 

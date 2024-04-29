@@ -360,10 +360,10 @@ $$
 where $\vect{n}$ is the unit vector perpendicular to the 'base plane' that points to the same side as the vector $\vect{c}$. This unit vector is given by
 
 $$
-\vect{n} = \pm   \frac{\vect{a} \times  \vect{b}}{\norm{\vect{a} \times  \vect{b}}}
+\vect{n} = \pm   \frac{\vect{a} \times  \vect{b}}{\norm{\vect{a} \times  \vect{b}}},
 $$
 
-And then the formula 'height times base area' gives
+and then the formula 'height times base area' gives
 
 $$
 V = \vect{c}\ip\vect{n} = \pm \vect{c}\ip\frac{\vect{a} \times  \vect{b}}{\norm{\vect{a} \times  \vect{b}}}

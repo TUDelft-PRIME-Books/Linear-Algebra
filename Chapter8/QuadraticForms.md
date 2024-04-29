@@ -99,7 +99,7 @@ $$
     q(x_1,x_2,x_3) = x_1^2 + 2x_2^2 + 5 x_3^2  - 4 x_1x_2 + 6 x_2x_3.
 $$
 
-So we need a symmmetric matric $A = \begin{bmatrix} a_{11} & a_{12} & a_{13} \\ 
+So we need a symmetric matric $A = \begin{bmatrix} a_{11} & a_{12} & a_{13} \\ 
                                                      a_{12} & a_{22} & a_{23} \\
                                                      a_{13} & a_{23} & a_{33}
                                      \end{bmatrix}$.
@@ -374,8 +374,8 @@ This agrees with what we derived in {prf:ref}`Ex:QuadForms:CompleteSquares`.
 
 ::::
 
-The technique of completing the squares is one way to 'diagonalize' a quadratic form. It may be turned into an algotithm that also works for quadratic forms in $n$ variables, but
-we will not pursuit that track. There is a route that is more in line with the properties of symmetric matrices.
+The technique of completing the squares is one way to 'diagonalize' a quadratic form. It may be turned into an algorithm that also works for quadratic forms in $n$ variables, but
+we will not pursue that track. There is a route that is more in line with the properties of symmetric matrices.
 
 Suppose $A$ is a symmetric matrix. We have seen (cf. {prf:ref}`Thm:SymmetricMat:OrthogDiag`) that it can be written as
 

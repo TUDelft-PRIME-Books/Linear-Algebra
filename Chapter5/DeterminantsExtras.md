@@ -14,7 +14,7 @@ The determinant as a uniform scale factor for an arbitrary linear transformation
 
 <li>
 
-Cramer's rule. Seemingly the ultimate solution to almost all systems of $n$ linear equations in $n$ unkowns.
+Cramer's rule. Seemingly the ultimate solution to almost all systems of $n$ linear equations in $n$ unknowns.
 
 </li>
 <li>
@@ -169,7 +169,7 @@ For a general (reasonable) region $R$ we sketch the idea and omit the technical 
 
 The region $R$ can be approximated arbitrarily close by a collection of smaller and smaller squares $R_i$ of which the interiors do not overlap.
 See {numref}`Figure %s <Fig:DetExtras:Subdivision>`.
-The limit of the area of these aproximations when the grid get finer and finer gives the area of $R$.
+The limit of the area of these aproximations when the grids get finer and finer gives the area of $R$.
 
 ::::{figure} Images/Fig-DetExtras-Subdivision.svg
 :name: Fig:DetExtras:Subdivision

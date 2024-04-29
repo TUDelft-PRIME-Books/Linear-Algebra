@@ -73,7 +73,7 @@ U\begin{bmatrix}
 
 ::::
 
-That the singular values must be nonnegative keeps open the possibility that some of the (last) singuar values may be 0.
+That the singular values must be nonnegative keeps open the possibility that some of the (last) singular values may be 0.
 
 
 ::::{prf:example}
