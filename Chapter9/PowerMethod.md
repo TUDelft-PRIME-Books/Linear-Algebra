@@ -110,7 +110,7 @@ The scaling step is necessary to avoid ending up at the zero vector or 'at infin
 
 Suppose $A$ is a diagonalizable matrix $A$ with dominant eigenvalue $\lambda_1$.
 Then in general the sequence constructed by the Power Method Algorithm, will converge to an eigenvector $\vect{v}_1$ for $\lambda_1$. <BR>
-To be more specific, the sequence $\vect{x}_k$ will converge a dominant eigenvector $\vect{v}_1$ if the initial vector $\vect{x}_0$ does not lie in
+To be more specific, the sequence $\vect{x}_k$ will converge to a dominant eigenvector $\vect{v}_1$ if the initial vector $\vect{x}_0$ does not lie in
 $\text{Span}\{\vect{v}_2, \vect{v}_3, \ldots, \vect{v}_n\}$.
 
 Moreover, suppose $\vect{x}$ is the result after a (sufficiently) large number of runs of the algorithm.  Then (an approximation of) the dominant eigenvalue is the entry with the highest absolute value of the vector $\vect{y} = A\vect{x}$.
@@ -204,7 +204,7 @@ $$
    c_2\left(\frac49\right)^k\begin{bmatrix} 2 \\ -1 \end{bmatrix}  \right).
 $$
 
-With rescaling we get a vector in the same direction with highest entry equal to 1.
+By rescaling we get a vector in the same direction with highest entry equal to 1.
 
 That we have such a rapid convergence in the example is due to the two circumstances mentioned: <BR>
 (1) the ratio $|\lambda_1/\lambda_2| = 4/9$ is smaller than $0.5$, <BR>
@@ -272,7 +272,7 @@ So the matrix is not real diagonalizable, but it is complex diagonalizable.
 Since the dominant eigenvalue is real, and the ratio
 
 $$
-  \frac{|\lambda_{2,3}|}{|\lambda_{1}|} \approx 0.66
+  \frac{|\lambda_{2,3}|}{|\lambda_{1}|} \approx 0.66 < 1,
 $$
 
 we can still use Equation {eq}`Eq:PowerMethod:GenSol-2` to conclude that, except for very unfortunate initial vectors, the method will lead to a dominant eigenvector. As it did indeed.
@@ -480,7 +480,7 @@ $$
 then the matrix $A - \alpha I$, where $\alpha$ is some constant, has the eigenvalues
 
 $$
-   (\lambda_1-\alpha),  (\lambda_2-\alpha), \ldots, (\lambda_2-\alpha).
+   (\lambda_1-\alpha), \quad (\lambda_2-\alpha),\,\, \ldots, \,\,(\lambda_2-\alpha).
 $$
 
 We can use this in the following way.

@@ -53,12 +53,12 @@ is given by $|ad-bc|$, i.e., the absolute value of &nbsp; $ad-bc$.
 
 ::::::{prf:proof}
 
-The quickest way to prove this is to translate it to the cross product ({numref}`Sec:CrossProduct`). To make use of the cross product we introduce the vectors.
+The quickest way to prove this is to translate it to the cross product ({numref}`Sec:CrossProduct`). To make use of the cross product we introduce the vectors
 
 $$
 \tilde{\vect{u}} = \left[\begin{array}{c} a \\ b \\ 0 \end{array}\right]
  \quad \text{and} \quad
-\tilde{\vect{v}} = \left[\begin{array}{c} c \\ d \\ 0 \end{array}\right]
+\tilde{\vect{v}} = \left[\begin{array}{c} c \\ d \\ 0 \end{array}\right].
 $$
 
 Thus we embed the plane into $\R^3$ as the $x_1$-$x_2$-plane. See {numref}`Figure %s <Fig:DetGeometric:OrientedArea1>`.
@@ -338,7 +338,7 @@ Then the three vectors can be interpreted as three edges of a parallelepiped. Se
 ::::{figure} Images/Fig-DetGeometric-Paraped.svg
 :name: Fig:DetGeometric:Paraped
 
-Volume equals base area time height
+Volume equals base area times height
 ::::
 
 ::::::{prf:proof}
