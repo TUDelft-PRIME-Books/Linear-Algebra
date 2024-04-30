@@ -197,8 +197,7 @@ is indeed a basis for $\R^4$.
 
 ::::::
 
-::::::{solution} Exc:BasisDim:CheckStandardBasis
-:class: dropdown
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:BasisDim:CheckStandardBasis`&nbsp;(_click to show_)
 
 The set is linearly independent:
 
@@ -754,8 +753,7 @@ $$
 
 ::::::
 
-::::::{solution} Exc:BasisDim:TF-ColA-ColE
-:class: dropdown
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:BasisDim:TF-ColA-ColE`&nbsp;(_click to show_)
 
 The statement is _false_. <BR>
 For instance, look at {prf:ref}`Ex:BasisDim:FourByFour`. In that example all vectors in $\Col{(E)}$ have a zero on position four, and there are (many) vectors in $\Col{(A)}$ that have a nonzero fourth entry. So definitely $\Col{(A)} \neq \Col{(E)}$.
@@ -822,8 +820,7 @@ Find a basis for the null space of the matrix in the previous example.
 
 ::::::
 
-::::::{solution} Exc:BasisDim:FinishExampleNulspace
-:class: dropdown
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:BasisDim:FinishExampleNulspace`&nbsp;(_click to show_)
 
 We row reduce the matrix $E = \begin{bmatrix}
 1  &  1 & 2 &  1 & -1 \\
@@ -1081,8 +1078,7 @@ The dimension of the vector $\vect{u} = \begin{bmatrix} 3\\4 \end{bmatrix} $ is 
 
 ::::::
 
-::::::{solution} Exc:BasisDim:TF:DimOfVector
-:class: dropdown
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:BasisDim:TF:DimOfVector`&nbsp;(_click to show_)
 
 The statement is _false_. The attribute dimension is only defined for _subspaces_.
 
@@ -1578,8 +1574,7 @@ In the above {prf:ref}`Ex:BasisDim:Rowspace4x3` find out how the four rows of th
 
 ::::::
 
-::::::{solution} Exc:BasisDim:ExpressInRowsOfE
-:class: dropdown
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:BasisDim:ExpressInRowsOfE`&nbsp;(_click to show_)
 
 It can be done 'by inspection'
 
@@ -1626,8 +1621,7 @@ $$
 
 ::::::
 
-::::::{solution} Exc:BasisDim:TF:RankAEqualsRankAT
-:class: dropdown
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:BasisDim:TF:RankAEqualsRankAT`&nbsp;(_click to show_)
 
 The rank of $A^T$ is the dimension of the column space of $A^T$, which is the dimension of the row space of $A$. <BR>
 The rank of $A$ is the dimension of the column space of $A$.
@@ -1684,8 +1678,7 @@ $$
 
 ::::::
 
-::::::{solution} Exc:BasisDim:RankABLeqRankA
-:class: dropdown
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:BasisDim:RankABLeqRankA`&nbsp;(_click to show_)
 
 The statement in {numref}`Exc:Subspaces:ColABinColA` that says $\Col{AB} \subseteq \Col{A}$ immediately gives that
 

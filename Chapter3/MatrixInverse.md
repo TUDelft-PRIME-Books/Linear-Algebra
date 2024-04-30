@@ -295,8 +295,7 @@ Also check that the first matrix in {prf:ref}`Ex:FirstInverse` illustrates the f
 
 ::::::
 
-::::::{solution} Exc:MatrixInv:CheckBA=I
-:class: dropdown
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:MatrixInv:CheckBA=I`&nbsp;(_click to show_)
 
 $$
 \begin{array}{rcl} BA &=&
@@ -757,8 +756,7 @@ Prove the last statement of the previous proposition.
 
 ::::::
 
-::::::{solution} Exc:MatrixInv:Ainvinv
-:class: dropdown
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:MatrixInv:Ainvinv`&nbsp;(_click to show_)
 
 For the inverse $C = (A^{-1})^{-1}$ of $A^{-1}$, it should hold that
 
@@ -858,8 +856,7 @@ In case it is true, give an argument, when false, give a counterexample.
 
 ::::::
 
-::::::{solution} Exc:MatrixInv:(AB)Tinv
-:class: dropdown
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:MatrixInv:(AB)Tinv`&nbsp;(_click to show_)
 
 The statement is _true_. <BR>
 From the two properties
@@ -1282,8 +1279,7 @@ Make sure that you do not use $A^{-1}$ or $B^{-1}$ prematurely, i.e., before you
 
 ::::::
 
-::::::{solution} Exc:MatrixInv:ConverseProdRule
-:class: dropdown
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:MatrixInv:ConverseProdRule`&nbsp;(_click to show_)
 
 Suppose $A$ and $B$ are two $n \times n$ matrices for which $AB$ is invertible. Let $C=(AB)^{-1}$ be the inverse of $AB$. We claim that
 $BC$ is the inverse of $A$.

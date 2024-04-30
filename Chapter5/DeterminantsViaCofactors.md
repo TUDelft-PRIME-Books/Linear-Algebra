@@ -80,7 +80,7 @@ $$
 1\cdot\left|\begin{array}{cc}  5 & 2 \\ 3  & 1  \end{array}\right|+
 2\cdot\left|\begin{array}{cc}  5 & 2  \\ 4 & 3  \end{array}\right|\\
 &=&
-2\cdot (4-9) -   (5-6) + 2\cdot (15-8) = 5.
+2\cdot (4-9) -   (5-6) + 2\cdot (15-8) = 5
 \end{array}
 $$
 
@@ -212,8 +212,8 @@ a_{31} & \color{blue}a_{32} & a_{33}
 $$
 
 $$
-\begin{array}{cl} = & -a_{12}( a_{21} a_{23} - a_{31}a_{33})
-+a_{22}( a_{11} a_{13} - a_{31}a_{33})
+\begin{array}{cl} = & -a_{12}( a_{21} a_{33} - a_{31}a_{23})
++a_{22}( a_{11} a_{23} - a_{31}a_{13})
 -a_{32}( a_{11} a_{23} - a_{21}a_{13}) \\
 =&  -a_{12}a_{21} a_{33} + a_{12}a_{31}a_{23}
 +a_{22} a_{11} a_{33} - a_{22}a_{31}a_{13}
@@ -409,7 +409,7 @@ $$
 
 For a lower triangular matrix $L$ a similar argument can be given.
 
-(Or we can consider $L^T$, which is an upper triangular matrix. And make use of the next proposition that is coming.)
+(Or we can consider $L^T$, which is an upper triangular matrix, and make use of the upcoming {prf:ref}`Prop:DetCofactors:DetTranspose`.)
 
 ::::::
 

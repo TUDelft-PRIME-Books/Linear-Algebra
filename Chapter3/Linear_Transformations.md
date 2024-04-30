@@ -203,6 +203,7 @@ This transformation "embeds" the plane $\mathbb{R}^2$ into the space $\mathbb{R}
 :url: linear_transformation/embed_r2_r3
 :fig: Images/Fig-LinTrafo-EmbedR2R3.svg
 :name: Fig:LinTrafo:EmbedR2R3
+:status: reviewed
 
 $T$: embedding $\mathbb{R}^2$ into $\mathbb{R}^3$.
 ```
@@ -424,8 +425,7 @@ Thus, if $ T:\mathbb{R}^n \to\mathbb{R}^m$ is a linear transformation, then $T(\
 
 ::::::
 
-::::::{solution} Exc:LinTrafo:ImageofZeroVector
-:class: dropdown
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:LinTrafo:ImageofZeroVector`&nbsp;(_click to show_)
 
 If $ T:\mathbb{R}^n \to\mathbb{R}^m$ is linear, and $\vect{v}$ is any vector in $\R^n$, then $\mathbf{0}_n = 0\vect{v}$. From the second property in {prf:ref}`Dfn:LinTrafo:LinTrafo` it follows that
 
@@ -620,8 +620,7 @@ a linear transformation?
 
 ::::::
 
-::::::{solution} Exc:LinTrafo:T(x)=x+p
-:class: dropdown
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:LinTrafo:T(x)=x+p`&nbsp;(_click to show_)
 
 The transformation defined by $T(\vect{x}) = \vect{x} + \vect{p}$, with $\vect{p}\neq \vect{0}$ does not have any of the two properties of a linear transformation.
 
@@ -740,8 +739,7 @@ Show that $S$ and $T_3$ are again linear transformations.
 
 ::::::
 
-::::::{solution} Exc:LinTrafo:CombiningLinTrafos
-:class: dropdown
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:LinTrafo:CombiningLinTrafos`&nbsp;(_click to show_)
 
 The properties of the linear transformatiuon $T_1$ and $T_2$ carry over to $S$ and $T_3$ in the following way.
 We check the properties one by one.
@@ -1017,8 +1015,7 @@ $$
 
 ::::::
 
-::::::{solution} Exc:LinTrafo:MatrixForFirstExample
-:class: dropdown
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:LinTrafo:MatrixForFirstExample`&nbsp;(_click to show_)
 
 Consider the linear transformation
 $T:\mathbb{R}^2\rightarrow\mathbb{R}^3$ that sends each vector $ \begin{bmatrix}

@@ -210,8 +210,7 @@ Prove {prf:ref}`Prop:InjSurj:InjChars`.
 
 ::::
 
-:::{solution} Exc:InjSurj:InjChars
-:class: dropdown
+:::{dropdown} Solution to&nbsp;{numref}`Exc:InjSurj:InjChars`&nbsp;(_click to show_)
 
 Assume $T$ is injective and $A\vect{x}=\vect{b}$ has solutions $\vect{x}_{1}$ and $\vect{x}_{2}$. Then $T(\vect{x}_{1})=T(\vect{x}_{2})$, so $\vect{x}_{1}=\vect{x}_{2}$ by injectivity of $T$. Similarly, if we assume that $A\vect{x}=\vect{b}$ has at most one solution, then $T(\vect{x}_{1})=T(\vect{x}_{2})$ would imply $\vect{x}_{1}=\vect{x}_{2}$, hence $T$ is injective.
 
@@ -401,8 +400,7 @@ Prove {prf:ref}`Prop:InjSurj:SurjChars`.
 
 ::::
 
-:::{solution} Exc:InjSurj:SurjChars
-:class: dropdown
+:::{dropdown} Solution to&nbsp;{numref}`Exc:InjSurj:SurjChars`&nbsp;(_click to show_)
 
 Assume $T$ is surjective and take an arbitrary $\vect{b}$ in $\R^{n}$. Then there is an $\vect{x}$ in $\mathbb{R}^{m}$ such that $T(\vect{x})=\vect{b}$, i.e. $\vect{x}$ is a solution of $A\vect{x}=\vect{b}$. Similarly, if $A\vect{x}=\vect{b}$ has a solution for any $\vect{b}$ in $\R^{n}$, then $\vect{b}=T(\vect{x})$ which establishes surjectivity of $T$.
 

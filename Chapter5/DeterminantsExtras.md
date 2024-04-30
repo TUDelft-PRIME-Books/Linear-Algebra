@@ -14,7 +14,7 @@ The determinant as a uniform scale factor for an arbitrary linear transformation
 
 <li>
 
-Cramer's rule. Seemingly the ultimate solution to almost all systems of $n$ linear equations in $n$ unkowns.
+Cramer's rule. Seemingly the ultimate solution to almost all systems of $n$ linear equations in $n$ unknowns.
 
 </li>
 <li>
@@ -169,7 +169,7 @@ For a general (reasonable) region $R$ we sketch the idea and omit the technical 
 
 The region $R$ can be approximated arbitrarily close by a collection of smaller and smaller squares $R_i$ of which the interiors do not overlap.
 See {numref}`Figure %s <Fig:DetExtras:Subdivision>`.
-The limit of the area of these aproximations when the grid get finer and finer gives the area of $R$.
+The limit of the area of these aproximations when the grids get finer and finer gives the area of $R$.
 
 ::::{figure} Images/Fig-DetExtras-Subdivision.svg
 :name: Fig:DetExtras:Subdivision
@@ -306,14 +306,6 @@ The images of a unit vector that rotates counterclockwise under transformation $
 
 ::::
 
-::::{margin}
-:::{admonition} TODO
-
-to team visuals: please turn into (a) moving picture(s)
-
-:::
-::::
-
 (Subsec:DetExtra:Cramer)=
 
 ## Cramer's rule
@@ -412,11 +404,10 @@ $$
 
 ::::::
 
-The proof of Cramer's rule rests rather nicely on properties of the determinant function.
+The following proof of Cramer's rule rests rather nicely on properties of the determinant function.  But feel free to skip it.
 
-::::::{prf:proof}
+::::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:DetExtras:Cramer`
 
-<BR>
 
 Suppose $\vect{x} = \vect{c} = \left[\begin{array}{c}  c_1 \\ \vdots\\ c_n\end{array} \right]
 $ is the unique solution of the linear system $A\vect{x} = \vect{b}$, with the invertible matrix $A = [ \vect{a}_1 \,  \,  \vect{a}_2 \, \ldots \,\vect{a}_n ]$.
@@ -902,7 +893,13 @@ $$
 so property iv. is satisfied too.
 ::::::
 
-::::::{prf:proof} (of {prf:ref}`Prop:DetExtras:Properties-ndimCrossProd`)
+
+We end the chapter with a proof of {prf:ref}`Prop:DetExtras:Properties-ndimCrossProd`.
+<BR>
+So, if you are interested,  push the  $\vee$  button on the right.
+
+::::::{dropdown} Proof of&nbsp;{prf:ref}`Prop:DetExtras:Properties-ndimCrossProd`
+
 
 The properties follow from the observation that for each vector $\vect{v}$ in $\R^n$
 
@@ -1140,7 +1137,7 @@ $$
 
 
 ::::::{grasple}
-:url: https://embed.grasple.com/exercises/
+:url: https://embed.grasple.com/exercises/bc3df113-95b3-470a-a730-3ad8faab08f5?id=93183
 :label: grasple_exercise_5_4_7
 :dropdown:
 :description: To compute the normal vector  $N(\vect{a}_1,\vect{a}_2,\vect{a}_3)$ as in {numref}`Subsection %s <Subsec-DetExtras-DetAndCrossProd>`

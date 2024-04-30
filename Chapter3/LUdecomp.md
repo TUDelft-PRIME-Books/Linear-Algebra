@@ -1,5 +1,5 @@
-:::{review}
-:::
+<!-- :::{review}
+::: -->
 
 (Sec:MatFactor)=
 
@@ -284,7 +284,7 @@ If $A$ is an invertible upper triangular matrix, then $A^{-1}$ is upper triangul
 
 ::::
 
-The proof of {prf:ref}`Prop:LUDecomp:PropertiesTriangularMatricesInverse` is technical and it involves computations. We leave it as an exercise (see <a href="#Item:prove_statment_c_properties_triangular_matrices">Exercise 1</a>).
+The proof of {prf:ref}`Prop:LUDecomp:PropertiesTriangularMatricesInverse` is technical and it involves computations. We leave it as an exercise (see {numref}`Exc:LUdecomp:Theory1`).
 
 So the reader may skip this proof and convince themselves that the properties hold true by looking at the following example.
 
@@ -1252,14 +1252,19 @@ $10$ & $4,025$ & $1,565$ & $8,050$ & $2,515$ & $40,250$ & $10,115$ \\
 
 ## Theoretical Exercises
 
-:::{latexlist}
-:enumerated: true
+::::::{exercise}
+:label: Exc:LUdecomp:Theory1
 
-\item Prove {prf:ref}`Prop:LUDecomp:PropertiesTriangularMatricesInverse`. **Hint:** Write the matrix $[A\vert I]$ and apply row operations to compute $A^{-1}$. The idea is similar to the one used in the proof of {prf:ref}`thm:existence_and_uniqueness_LU`.
-\label{Item:prove_statment_c_properties_triangular_matrices}
+Prove {prf:ref}`Prop:LUDecomp:PropertiesTriangularMatricesInverse`.
 
-\item Check that the number of arithmetic operations needed to solve a linear system using row reduction (without exchanging rows) and with $LU$ decomposition is the same.
+**Hint:** Write the matrix $[A\vert I]$ and apply row operations to compute $A^{-1}$. The idea is similar to the one used in the proof of {prf:ref}`thm:existence_and_uniqueness_LU`.
+::::::
 
-:::
+::::::{exercise}
+:label: Exc:LUdecomp:Theory2
 
-[^flopnote]: In some books they use the abbreviation flop (floating point operations).
+Check that the number of arithmetic operations needed to solve a linear system using row reduction (without exchanging rows) and with $LU$ decomposition is the same.
+
+::::::
+
+[^flopnote]: In some books they use the abbreviation _flop_ (floating point operations).

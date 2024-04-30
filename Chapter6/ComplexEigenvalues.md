@@ -618,7 +618,7 @@ A matrix $A$ is complex diagonalizable if and only if for each eigenvalue the ge
 :url: https://embed.grasple.com/exercises/f60a57c2-b0b3-45de-b18c-e0da1bbef601?id=91555
 :label: grasple_exercise_6_4_6
 :dropdown:
-:description:  Given a complex  eigenvector of a real $2 \times$ matrix, point out other eigenvectors.
+:description:  Given a complex  eigenvector of a real 2x2 matrix, point out other eigenvectors.
 ::::::
 
 ::::::{grasple} 

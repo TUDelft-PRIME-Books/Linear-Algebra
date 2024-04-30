@@ -274,8 +274,7 @@ Give an alternative proof of {prf:ref}`Cor:DetRowReduction:EqualRows` using Rule
 
 ::::::
 
-::::::{solution} Exc:DetRowReduction:EqualRows
-:class: dropdown
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:DetRowReduction:EqualRows`&nbsp;(_click to show_)
 
 Suppose $A$ is a matrix with two equal rows, say row $i$ and row $j$ are equal.
 
@@ -363,17 +362,19 @@ $$
 ::::::
 
 ::::::{prf:theorem}
-:label: Eq:DetRowReduction:ProductRule
+:label: Thm:DetRowReduction:ProductRule
 
 For two $n\times n$ matrices $A$ and $B$ it always holds that
 
 $$
-\det{(AB)} = \det{A}\cdot\det{B}
+\det{(AB)} = \det{A}\cdot\det{B}.
 $$
 
 ::::::
 
-::::::{prf:proof}
+The proof combines the property that for elementary matrices $A$ it is already shown that  $\det{(EA)} = \det{E}\cdot\det{A}$  (Equation {eq}`Eq:DetRowReduction:ElementaryMatrices`).  For more details you can push on $\vee$ below.
+
+::::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:DetRowReduction:ProductRule`.
 
 We already know that the identity holds if $A$ is an elementary matrix.
 It will also hold if $A$ is not invertible, as in that case $AB$ is also not invertible,
@@ -485,8 +486,7 @@ $$
 
 ::::::
 
-::::::{solution} Exc:DetRowReduction:PropNonProp
-:class: dropdown
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:DetRowReduction:PropNonProp`&nbsp;(_click to show_)
 
 We treat the statements one by
 
@@ -540,7 +540,7 @@ $$
   \det{(-A)} = (-1)^n\det{(A)}.
 $$
 
-One way to see this is true is to write $-A = (-I)A$ and use the product rule ({prf:ref}`Eq:DetRowReduction:ProductRule`).
+One way to see this is true is to write $-A = (-I)A$ and use the product rule ({prf:ref}`Thm:DetRowReduction:ProductRule`).
 
 </li>
 </ol>
@@ -574,9 +574,11 @@ Then
 
 ::::::
 
-So, click here for the proof of {prf:ref}`Prop:DetRowReduction:RowOps` and {prf:ref}`Prop:DetRowReduction:SumofCols`.
+So, click on $\vee$ on the right  for the proof of {prf:ref}`Prop:DetRowReduction:RowOps` and {prf:ref}`Prop:DetRowReduction:SumofCols`.
 
-::::::{prf:proof}
+::::::{dropdown} Proof of&nbsp;{prf:ref}`Prop:DetRowReduction:RowOps`&nbsp;and&nbsp;{prf:ref}`Prop:DetRowReduction:SumofCols`.
+
+%::::::{prf:proof}
 
 For typographical reasons we will prove the three rules stated as column operations.
 For an $n \times n$ matrix

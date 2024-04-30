@@ -14,7 +14,7 @@ $$
 
 In short $f(\mathbf{x}) = \mathbf{a}^T\mathbf{x} + b$, for some vector $\mathbf{a}$ in $\R^n$ and some number $b$ in $\R$.
 
-This is the common notion of linearity in calculus. To be linear in the linear algebra sense the constant term must be zero.
+This is the common notion of linearity in calculus. To be linear in the linear algebra sense the constant term $b$ must be zero.
 
 After that come the *quadratic functions*
 
@@ -99,7 +99,7 @@ $$
     q(x_1,x_2,x_3) = x_1^2 + 2x_2^2 + 5 x_3^2  - 4 x_1x_2 + 6 x_2x_3.
 $$
 
-So we need a symmmetric matric $A = \begin{bmatrix} a_{11} & a_{12} & a_{13} \\ 
+So we need a symmetric matric $A = \begin{bmatrix} a_{11} & a_{12} & a_{13} \\ 
                                                      a_{12} & a_{22} & a_{23} \\
                                                      a_{13} & a_{23} & a_{33}
                                      \end{bmatrix}$.
@@ -138,13 +138,13 @@ The graph of a quadratic function is a curved surface.
 {numref}`Figure %s <Fig:QuadForms:QuadSurface1>` and
 {numref}`Figure %s <Fig:QuadForms:QuadSurface2>` show two of these quadratic surfaces.
 
-:::{figure} Images/Fig-QuadForms-QuadSurface1.svg
+:::{figure} Images/Fig-QuadForms-QuadSurface1.png
 :name: Fig:QuadForms:QuadSurface1
 
 The surface $z = -\frac13x_1^2 + \frac13x_2^2 + 2 $
 :::
 
-:::{figure} Images/Fig-QuadForms-QuadSurface2.svg
+:::{figure} Images/Fig-QuadForms-QuadSurface2.png
 :name: Fig:QuadForms:QuadSurface2
 
 The surface $z = -\frac12x_1^2 - \frac14x_2^2 + x_1 - x_2 + 2$
@@ -374,8 +374,8 @@ This agrees with what we derived in {prf:ref}`Ex:QuadForms:CompleteSquares`.
 
 ::::
 
-The technique of completing the squares is one way to 'diagonalize' a quadratic form. It may be turned into an algotithm that also works for quadratic forms in $n$ variables, but
-we will not pursuit that track. There is a route that is more in line with the properties of symmetric matrices.
+The technique of completing the squares is one way to 'diagonalize' a quadratic form. It may be turned into an algorithm that also works for quadratic forms in $n$ variables, but
+we will not pursue that track. There is a route that is more in line with the properties of symmetric matrices.
 
 Suppose $A$ is a symmetric matrix. We have seen (cf. {prf:ref}`Thm:SymmetricMat:OrthogDiag`) that it can be written as
 
@@ -402,7 +402,7 @@ $$
     q(\vect{x}) = \vect{x}^TA\vect{x}.
 $$
 
-Let $Q$ be an orthogonal matrix diagonalizing $A$. <BR>
+Let $Q$ be an orthogonal matrix diagonalizing $A$. That is,  $A = QDQ^{-1}$. <BR>
 Applying the substitution $\vect{x} = Q\vect{y}$ then yields the quadratic form
 
 $$
@@ -731,7 +731,17 @@ Check that the vector you found in iii. is an eigenvector of the matrix of the q
 
 ## Conic Sections
 
-A _conic section_ or _conic_ is a curve that results when a circular cone is intersected with a plane. Figure ... shows the different shapes when the plane is _not_ going through the apex. The resulting curve is then either a _hyperbola_, a _parabola_ or an _ellipse_, with as special ellipse the _circle_. If the plane does go through the apex of the cone the conic section is called **degenerate**.
+A _conic section_ or _conic_ is a curve that results when a circular cone is intersected with a plane.  
+{numref}`Figure %s <Fig:QuadForms:ConeWithPlanes>` shows the different shapes when the plane is *not* going through the apex..
+
+:::{figure} Images/Fig-QuadForms-ConicSections.png
+:name: Fig:QuadForms:ConeWithPlanes
+
+Intersections of a cone with several planes (not going through the apex).
+
+:::
+
+ The resulting curve is then either a _hyperbola_, a _parabola_ or an _ellipse_, with as special ellipse the _circle_. If the plane does go through the apex of the cone the conic section is called **degenerate**.
 
 ::::{exercise}
 

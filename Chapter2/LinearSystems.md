@@ -150,7 +150,7 @@ which are both true identities.
 
 ::::
 
-The solution set may be empty, as in the following example
+The solution set may be empty, as in the following example.
 
 ::::{prf:example}
 :label: Ex:LinSystems:EmptySolutionSet
@@ -229,7 +229,7 @@ $$
 
  \left\{\begin{array}{l}
         x_1 = 7 - 4x_2 -5x_3 + x_5 \\
-        x_2, x_3, x_4 \text{, and  } x_5  \text{  are free}
+        x_2, x_3, x_4 \text{ and  }  x_5  \text{  are free}
         \end{array}
  \right.
 $$
@@ -271,7 +271,7 @@ $$
 
   \left\{\begin{array}{l}
         x_5 = -7 +x_1 +4x_2 +5x_3  \\
-        x_1, x_2, x_3 \text{, and  } x_4  \text{  are free}
+        x_1, x_2, x_3 \text{ and  } x_4  \text{  are free}
         \end{array}
  \right.
 $$
@@ -282,7 +282,7 @@ $$
 
      \left\{\begin{array}{l}
         x_2 = \frac74 - \frac14x_1 -\frac54x_3+\frac14x_5  \\
-        x_1, x_3, x_4 \text{, and  } x_5  \text{  are free}
+        x_1, x_3, x_4 \text{ and  } x_5  \text{  are free}
       \end{array}
     \right.
 $$
@@ -363,7 +363,7 @@ $$
     \end{array}\right.
 $$
 
-Again we see that $x_2 = 2$, in fact the equation $3x_2 = 6$ is the same equation that we arrived at with the substitution method above, and substitution of this into the first equation again yields
+Again we see that $x_2 = 2$, in fact the equation $3x_2 = 6$ is the same equation that we arrived at with the substitution method above. Substitution of this into the first equation again yields
 
 $$
 
@@ -376,7 +376,7 @@ $$
 
 ## Solving a Linear System by Elimination
 
-We start with an example of three equations in three unknowns:
+We start with an example of three equations in three unknowns.
 
 ::::{prf:example}
 :label: Ex:LinSystems:EliminationFirst
@@ -391,7 +391,7 @@ $$
    \right.
 $$
 
-We can simplify this system by successively eliminating unknowns from equations by combining equations in a clever way. We can for instance eliminate the variable $x_1$ from the second equation by subtracting the first equation three times from the second equation, and likewise we can subtract the first equation twice from the third equation:
+We can simplify this system by successively eliminating unknowns from equations by combining equations in a clever way. We can for instance eliminate the variable $x_1$ from the second equation by subtracting the first equation three times from the second equation. Likewise we can subtract the first equation twice from the third equation:
 
 $$
 
@@ -411,7 +411,7 @@ $$
 
 With the arrow we express that if we have a solution of the system on the left, this will also be a solution of the system on the right.
 
-Now, why is this okay, why is it allowed to 'subtract equations'? Let's introduce the shorthand notation
+Now, why is this okay, why is it allowed to 'subtract equations'? Let us introduce the shorthand notation
 
 $$
 
@@ -442,7 +442,7 @@ $$
 
 The last equation is exactly the second equation of the second system.
 
-The crucial thing to note is that these operations can be undone: if in the second system the first equation is added three times to the second equation, and added twice to the third equation we end up with the original system. So in fact we have
+The crucial thing to note is that these operations can be undone: if in the second system the first equation is added three times to the second equation and added twice to the third equation we end up with the original system. So in fact we have
 
 $$
 
@@ -529,7 +529,7 @@ The other two statements are rather obvious.
 ::::{prf:example}
 :label: Ex:LinSystems:I
 
-Let's take up {prf:ref}`Ex:LinSystems:EliminationFirst` at the point where we left it and work our way to its solution.
+We take up {prf:ref}`Ex:LinSystems:EliminationFirst` at the point where we left it and work our way to its solution.
 Also let us introduce a notation that makes it easier for the reader to see what's going on. And also for yourself, in case you look back at your computations later, or if you want to check your computations. The '$E$' stands for: 'Equation'.
 
 We scale the second equation with a factor $-\frac12$
@@ -654,7 +654,7 @@ and from the last equation it immediately follows that there are no solutions, i
 
 ::::
 
-Let's look at one more example. Here we will see how to find a solution that contains a free variable.
+Let us look at one more example. Here we will see how to find a solution that contains a free variable.
 
 ::::{prf:example}
 :label: Ex:LinSystems:SolWithBacksubst2
@@ -748,7 +748,7 @@ Note that the row swap that we used as a first step is not really necessary. How
 
 ::::
 
-Let's summarize the elimination method in a
+We summarize the elimination method in a
 
 ::::{admonition} Summary
 :class: tip
@@ -813,7 +813,7 @@ It consists of $m$ horizontal **rows** of size $n$, or, equivalently, of $n$ ver
 ::::
 
 In a statement about a matrix the first index always refers to the row(s), the second index to the column(s).
-E.g., $a_{ij}$ is the number in the $i$-th row and the $j$-th column, and an $m \times n$ matrix has $m$ rows and $n$ columns.
+E.g., $a_{ij}$ is the number in the $i$-th row and the $j$-th column and an $m \times n$ matrix has $m$ rows and $n$ columns.
 
 A matrix is usually surrounded by parentheses or (square) brackets. We opt for brackets.
 
@@ -832,7 +832,7 @@ $$
 
 is a $3\times 5$ matrix.
 
-Its second row is $\begin{bmatrix} 2 & 7 & -1 & 0 & 8  \end{bmatrix}$, and its third column:
+Its second row is $\begin{bmatrix} 2 & 7 & -1 & 0 & 8  \end{bmatrix}$ and its third column:
 
 $$
 \left[  \begin{array}{c} 3 \\ -1 \\ 5   \end{array}\right]
@@ -1002,7 +1002,7 @@ Such a matrix is also called a **row echelon matrix**.
 :label: Ex:LinSystems:EchelonForm
 
 The following three matrices are meant to visualize the structure of an echelon matrix.
-The symbol $\blacksquare$ denotes an arbitrary nonzero number, and $\ast$ just any real number.
+The symbol $\blacksquare$ denotes an arbitrary nonzero number and $\ast$ just any real number.
 
 $$
   E_1 =
@@ -1119,7 +1119,7 @@ Interchanging (or: swapping) two rows.
 
 ::::{prf:remark}
 
-Note that these row operations match exactly the row operations of {prf:ref}`Prop:LinSystems:ElimOperations`. This proposition stated that the row operations do not change the solutions of the corresponding linear system.
+Note that these row operations match exactly the operations of {prf:ref}`Prop:LinSystems:ElimOperations`. This proposition stated that the row operations do not change the solutions of the corresponding linear system.
 ::::
 
 ::::{prf:definition}
@@ -1287,7 +1287,7 @@ And so on, until we get to the last row, or until we get to a row below which al
 
 ::::
 
-The echelon matrix to which a matrix can be reduced is in no way unique. For instance, by scaling a row in an echelon matrix the echelon form persists. We can go a bit further, namely we can create zeros in the columns above the pivots as well. The following example shows how. First we work downwards to the echelon form, and then work upwards to create the extra zeros, as mentioned.
+The echelon matrix to which a matrix can be reduced is in no way unique. For instance, by scaling a row in an echelon matrix the echelon form persists. We can go a bit further, namely we can create zeros in the columns above the pivots as well. The following example shows how. First we work downwards to the echelon form and then work upwards to create the extra zeros, as mentioned.
 
 ::::{prf:example}
 :label: Ex:LinSystems:RowReduction-2
@@ -1448,7 +1448,7 @@ $$
    \end{bmatrix},
 $$
 
-the first and the third are echelon matrices, and only the third is a reduced echelon matrix.
+the first and the third are echelon matrices and only the third is a reduced echelon matrix.
 
 ::::
 
@@ -1526,7 +1526,7 @@ In this echelon matrix we may divide each row by its pivot (first nonzero elemen
 
 And lastly working upwards' step by step we use a pivot -- which we made equal to 1 -- to create zeros in all positions above it.
 
-(The last two simplifications may be done in reversed order: first use the pivots to create zeros in the positions above them, and then scale the rows.)
+(The last two simplifications may be done in reversed order: first use the pivots to create zeros in the positions above them and then scale the rows.)
 This reasoning supports the validity of the first statement.
 The uniqueness is harder to show in an intuitive way, and it is definitely harder to prove rigorously.
 
@@ -1762,7 +1762,7 @@ The word 'elimination' refers to the fact that the zeros that are created in the
 ::::{prf:remark} Row reduced echelon matrix versus back substitution
 :label: Rem:LinSystems:RowRedVersusBackSubstitution
 
-We started this section by solving a linear system by reducing it to an equivalent system in echelon form, and then use back-substitution. This is still a viable option. The advantage of the method described in {prf:ref}`Alg:LinSystems:ElimMethod` is that it avoids the clutter back substitution may lead to in the case of free variables.
+We started this section by solving a linear system by reducing it to an equivalent system in echelon form and then use back-substitution. This is still a viable option. The advantage of the method described in {prf:ref}`Alg:LinSystems:ElimMethod` is that it avoids the clutter back substitution may lead to in the case of free variables.
 
 ::::
 
@@ -1778,7 +1778,7 @@ A system of linear equations has either zero, or one, or infinitely many solutio
 ::::{prf:proof}
 
 This just depends on the outcome of the elimination method (i.e. {prf:ref}`Alg:LinSystems:ElimMethod`).
-If iii. occurs, the number of solutions is zero; if iv. occurs and there are no free variables, there is just one solution, and if there is at least one free variable, the solution set automatically contains infinitely many solutions.
+If iii. occurs, the number of solutions is zero; if iv. occurs and there are no free variables, there is just one solution. Lastly, if there is at least one free variable, the solution set automatically contains infinitely many solutions.
 
 ::::
 
@@ -1822,7 +1822,7 @@ $$
 
 $$
 
-From the echelon matrix at the end we can see that the system is _consistent_, and there will be a _free variable_. We can conclude that the system has infinitely many solutions.
+From the echelon matrix at the end we can see that the system is _consistent_ and there will be a _free variable_. We can conclude that the system has infinitely many solutions.
 
 ::::
 

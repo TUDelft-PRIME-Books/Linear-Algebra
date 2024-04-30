@@ -56,7 +56,7 @@ $$
 \lambda^2 -2\lambda -3 = (\lambda-3 )(\lambda+1) = 0
 $$
 
-and conclude that the eigenvalues of $A$ are $\lambda_1 = 3, \lambda_2 = -1$.
+and conclude that the eigenvalues of $A$ are $\lambda_1 =3, \lambda_2 = -1$. We call $\lambda_1$ a *double eigenvalue*.
 
 ::::::
 
@@ -71,7 +71,7 @@ $$
 \begin{vmatrix} 0-\lambda & -1\\ 1 & 0-\lambda \end{vmatrix} =  \lambda^2 +1.
 $$
 
-Since this polynomial has no zeros, the matrix $A$ has no eigenvalues. We have already seen a geometric argument when we considered this matrix in Example {prf:ref}`Ex:EigenValues:Rotation`: $R$ is the matrix of a rotation.
+Since this polynomial has no zeros, the matrix $A$ has no eigenvalues. We have already seen a geometric argument when we considered this matrix in {prf:ref}`Ex:EigenValues:Rotation`: $R$ is the matrix of a rotation.
 
 In the remark immediately after that example we mentioned that it is possible to treat $\lambda = \pm i$ as eigenvalues of the matrix $R$. Of course these are exactly the _complex_ zeros of the polynomial $p(\lambda) = \lambda^2 + 1$.
 
@@ -269,7 +269,7 @@ if we start with a 'full' $3 \times 3$ matrix $A$, there may be nothing better t
 by iteratively expanding across columns or rows. We then end up with a cubic polynomial, not in factorized form.
 In general it will be quite a hard task to compute its zeros. Obviously, things get even worse in higher dimensions.
 
-In the previous example ({prf:ref}`Ex:EigenValues:SecondCharPoly`) the eigenvalue $\lambda_1 = \lambda_3 = 3$, where the numbering is arbitrary, seems to play a different role than the eigenvalue $\lambda_2$. That is, the characteristic polynomial
+In the previous example ({prf:ref}`Ex:EigenValues:SecondCharPoly`) the eigenvalue $\lambda_1  = 3$  seems to play a different role than the eigenvalue $\lambda_2$. That is, the characteristic polynomial
 
 $$
 p_A(\lambda) = (\lambda-3)^2(\lambda -2)
@@ -281,14 +281,15 @@ contains two factors $(\lambda - 3)$ and only one factor $(\lambda - 2)$. In alg
 Another natural question is how many linearly **independent** eigenvectors  there are for an eigenvalue $\lambda$.  This we will refer to as the geometric multiplicity.
 
 (Subsec:EV:AlgGeomMultiplicity)=
-## Algebraic and geometric muliplicity
+## Algebraic and geometric multiplicity
 
 ::::::{prf:definition}
 
-The **algebraic multiplicity** of an eigenvalue $\lambda_k$ is the number of factors $(\lambda - \lambda_k)$ appearing in the characteristic polynomial.
+The **algebraic multiplicity** of an eigenvalue $\lambda_k$ is the number of factors $(\lambda - \lambda_k)$ appearing in the characteristic polynomial. It is often abbreviated as **a.m.**($\lambda$).
 
-The **geometric multiplicity** of an eigenvalue $\lambda_k$ is the dimension of the eigenspace corresponding to $\lambda_k$.
-In other words, it is the number of independent eigenvectors for $\lambda_k$.
+The **geometric multiplicity** of an eigenvalue $\lambda_k$, with short 
+notation **g.m.**($\lambda$),   is the dimension of the eigenspace corresponding to $\lambda_k$. In other words, it is the number of independent eigenvectors for $\lambda_k$.
+
 
 ::::::
 
@@ -303,7 +304,7 @@ and $\lambda_2 = 2$ with algebraic multiplicity $1$.
 
 To find the geometric multiplicities we proceed as follows.
 
-The eigenspace for $\lambda_{1}$ is the nulspace of $A - \lambda_{1} I = A -3I$.
+The eigenspace for $\lambda_{1}$ is the null space of $A - \lambda_{1} I = A -3I$.
 
 $$
 A - 3I = \left[\begin{array}{ccc} 4-3 & -1 & -2 \\0 & 3-3 & 0 \\ 1 & 2 & 1-3  \end{array}\right]
@@ -314,7 +315,7 @@ A - 3I = \left[\begin{array}{ccc} 4-3 & -1 & -2 \\0 & 3-3 & 0 \\ 1 & 2 & 1-3  \e
 .
 $$
 
-This is a $3 \times 3$ matrix of rank 2, so its nulspace has dimension $3-2 =1$, and we conclude that the geometric multiplicity of the eigenvalue
+This is a $3 \times 3$ matrix of rank 2, so its null space has dimension $3-2 =1$, and we conclude that the geometric multiplicity of the eigenvalue
 $\lambda = 3$ is equal to 1.
 For the other eigenvalue we perform a similar computation:
 
@@ -374,20 +375,19 @@ The following exercise, which is meant to shed some more light on the concepts j
 ::::::
 
 
-
-In the proof of {prf:ref}`Prop:EigenValues:CharPoly` it was mentioned that for an $n \times n$ matrix $A$ the coefficient of the highest power $\lambda^n$  is equal to  $(-1)^n$.
-In the next subsection we will find expressions for two other coefficients of the characteristic polynomial. The results we mention are interesting in themselves, but they are not essential for the sequel.
-
 (Subsec:EV:SpecPropCharPoly)=
 ## Some special properties of the characteristic polynomial
 
+In the proof of {prf:ref}`Prop:EigenValues:CharPoly` it was mentioned that for an $n \times n$ matrix $A$ the coefficient of the highest power $\lambda^n$  is equal to  $(-1)^n$.
+In this subsection we will find expressions for two other coefficients of the characteristic polynomial. The results we mention are interesting in themselves, but they are not essential for the sequel.
+
 ::::::{prf:proposition}
-:label: Eq:EigenValues:CharPolyA
+:label: Prop:EigenValues:CharPolyTrace
 
 Suppose the characteristic polynomial of the $n \times n$ matrix $A$ is given by
 
 :::{math}
-:label: Eq:EigenValues:CharPolyA
+:label: Eq:EigenValues:CharPoly
 
 p_A(\lambda) = c_n\lambda^n + c_{n-1}\lambda^{n-1} + \ldots + c_2\lambda^2 +c_1\lambda + c_0.
 
@@ -407,7 +407,8 @@ $$
 
 ::::::
 
-::::::{prf:proof}
+::::::{dropdown} (Sketch of the) Proof of&nbsp;{prf:ref}`Prop:EigenValues:CharPolyTrace`
+%::::::{prf:proof}
 
 For $n=2$ we have already seen that the characteristic polynomial of the most general $2 \times 2$ matrix
 $A = \left[\begin{array}{cc} a_{11} & a_{12} \\ a_{21} & a_{22} \end{array}\right]
@@ -424,7 +425,8 @@ $$
 (-1)^2 \lambda^2 + (-1)^1 (a_{11}+a_{22})\lambda + \det{(A)}.
 $$
 
-The value of $c_0$ is the easiest to establish: just plug in $\lambda=0$ in Equation {eq}`Eq:EigenValues:CharPolyA`:
+The value of $c_0$ is the easiest to establish: just plug in $\lambda=0$ in 
+Equation {eq}`Eq:EigenValues:CharPoly`:
 
 $$
 \text{det}(A)= \text{det}(A - 0I) = p_A(0) = c_n0^n + c_{n-1}0^{n-1} + \ldots + c_1\cdot 0 + c_0 = c_0.
@@ -484,12 +486,16 @@ $$
 
 ::::::
 
-There's a similar property involving the eigenvalues of a matrix. If you have never seen complex numbers we advise you to skip it.
+With this new terminology we can restate the second property in {prf:ref}`Prop:Eigenvalues:SumEigenvaluesAndTrace`  as follows.  For an $n\times n$ matrix $A$  the coefficient $c_{n-1}$ of $\lambda^{n-1}$ satisfies
+
+ $$
+   c_{n-1} = (-1)^{n-1} \text{tr}(A).
+ $$
 
 ::::::{prf:proposition}
 :label: Prop:Eigenvalues:SumEigenvaluesAndTrace
 
-For an $n\times n$ matrix $A$, let $\lambda_1,\lambda_2,  \ldots , \lambda_n$ be all the (possibly complex) eigenvalues of $A$. By this we mean the (possibly complex) zeros of the characteristic polynomial $p_A(\lambda)$, and where eigenvalues/zeros of multiplicity $k$ are counted $k$ times. Then the sum of the eigenvalues is equal to the trace of $A$ and the product of the eigenvalues equals the determinant of $A$. For short:
+Let   $A$ an $n\times n$ matrix with $n$ eigenvalues  $\lambda_1,\lambda_2,  \ldots , \lambda_n$, where eigenvalues/zeros of multiplicity $k$ are counted $k$ times. Then the sum of the eigenvalues is equal to the trace of $A$ and the product of the eigenvalues equals the determinant of $A$. For short:
 
 :::{math}
 :label: Eq:Eigenvalues:SumEigenvaluesAndTrace
@@ -502,14 +508,12 @@ For an $n\times n$ matrix $A$, let $\lambda_1,\lambda_2,  \ldots , \lambda_n$ be
 
 ::::::
 
-::::::{prf:proof}
 
-This is more a statement about algebra, in particular about polynomials, than about linear algebra.
-The Fundamental Theorem of Algebra states that
-every polynomial $p(z)$ of degree $n$ with coefficients in $\mathbb{C}$ has $n$ complex roots/zeros $z_1,z_2,\ldots,z_n$, counting multiplicities. Consequently, $p(z)$ can be completely factorized in $n$ linear factors $(z-z_i)$.
+::::::{dropdown}  Proof of&nbsp;{prf:ref}`Prop:Eigenvalues:SumEigenvaluesAndTrace`
 
-For the characteristic polynomial $p_A(z)$ of a matrix $A$ the zeros coincide with the eigenvalues  $\lambda_i$ of $A$.
-Since the characteristic polynomial has highest coefficient $(-1)^n$ we find that
+This is more a statement about algebra, in particular about polynomials, than about linear algebra.  In  {numref}`Section %s <Section:ComplexEV>`  we will see that it also holds for matrices with complex eigenvalues. 
+
+If $A$ has $n$ real eigenvalues $\lambda_1, \ldots, \Lambda_n$,  the characteristic polynomial $p_A(\lambda)$ of $A$  must contain the $n$ factors $(\lambda - \lambda_i)$.   Since the 'leading' coefficent'  $c_n = (-1)^n$  we may deduce that  
 
 $$
 \begin{array}{rcl}
@@ -535,7 +539,7 @@ Equation {eq}`Eq:Eigenvalues:SumEigenvaluesAndTrace`.
 
 ::::::
 
-The identity involving the sum gives a easy check on the eigenvalues; with the other identity one has to do some work to apply it for a check. The next example gives an illustration.
+The identity involving the sum gives an easy check on the eigenvalues; with the other identity one has to do some work to apply it for a check. The next example gives an illustration.
 
 ::::::{prf:example}
 :label: Ex:Eigenvalues:SumEigenvaluesAndTrace
@@ -599,17 +603,21 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 
 ## Grasple Exercises 
 
-::::::{grasple} 
-:url: https://embed.grasple.com/exercises/6e01d5c1-897b-44bf-bbb2-4653ff095f48?id=92498
-:label: grasple_exercise_6_2_1 
-:dropdown:
-:description:  To find the characteristic polynomial of a $2\times 2$ matrix $A$.
 
-::::::
 
 ::::::{grasple} 
 :url: https://embed.grasple.com/exercises/b43cd5dc-3fff-432a-bdec-d56e38c39e89?id=91450
-:label: grasple_exercise_6_2_2
+:label: grasple_exercise_6_2_1
+:dropdown:
+:description:  To find the characteristic polynomial of a $2\times 2$ matrix $A$.
+
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/b89efbb3-c5cc-4fab-874b-8dd285644ab2?id=91452
+:label: grasple_exercise_6_2_2 
 :dropdown:
 :description:  To find the eigenvalues of a $2\times 2$ matrix $A$.
 
@@ -617,7 +625,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 
 
 ::::::{grasple} 
-:url: https://embed.grasple.com/exercises/b89efbb3-c5cc-4fab-874b-8dd285644ab2?id=91452
+:url: https://embed.grasple.com/exercises/137aaf98-60d5-4aab-82f4-10ea40811a7b?id=91453
 :label: grasple_exercise_6_2_3 
 :dropdown:
 :description:  To find the eigenvalues of a $3\times 3$ matrix $A$.
@@ -625,8 +633,9 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 ::::::
 
 
+
 ::::::{grasple} 
-:url: https://embed.grasple.com/exercises/137aaf98-60d5-4aab-82f4-10ea40811a7b?id=91453
+:url: https://embed.grasple.com/exercises/e3793a52-25f0-48cd-b47f-b59f872e3e1a?id=91454
 :label: grasple_exercise_6_2_4 
 :dropdown:
 :description:  To find the eigenvalues of a $3\times 3$ matrix $A$.
@@ -634,30 +643,32 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 ::::::
 
 
-
 ::::::{grasple} 
 :url: https://embed.grasple.com/exercises/3597a3e9-17b7-491c-89a7-4f33f1a4fb8c?id=91482
-:label: grasple_exercise_6_2_5 
+:label: grasple_exercise_6_2_5
 :dropdown:
 :description:  To find the eigenvalues of a $4\times 4$ matrix $A$.
 
 ::::::
 
-
 ::::::{grasple} 
 :url: https://embed.grasple.com/exercises/9e16e7ab-87f1-448c-a52a-a8d6c1470c4b?id=91483
-:label: grasple_exercise_6_2_6
+:label: grasple_exercise_6_2_6 
 :dropdown:
 :description:  Is an eigenvalue of a matrix $A$ always an eigenvalue of $A^T$?
 
+
 ::::::
+
+
+
 
 
 ::::::{grasple} 
 :url: https://embed.grasple.com/exercises/2c30dad3-17a4-4f20-b277-fd13e0c93e9f?id=92384
 :label: grasple_exercise_6_2_7 
 :dropdown:
-:description:  Finding the geometric multiplicities of the eigenvalues of a $3\times3$ matrix $A$. 
+:description: Finding the geometric multiplicities of the eigenvalues of a $3\times3$ matrix $A$. 
 
 ::::::
 
@@ -693,7 +704,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 :url: https://embed.grasple.com/exercises/82387c7b-49c8-4438-b72c-e1d023fb2780?id=92211
 :label: grasple_exercise_6_2_11
 :dropdown:
-:description:  To find the the geometric multiplicities of the eigenvalues of an almost diagonal matrix $A$.
+:description:  To find the geometric multiplicities of the eigenvalues of an almost diagonal matrix $A$.
 
 ::::::
 

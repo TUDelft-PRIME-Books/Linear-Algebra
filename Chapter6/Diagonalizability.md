@@ -21,7 +21,7 @@ It is true we already used the symbol $\sim$ earlier to denote row equivalence o
 
 ::::::{prf:remark}
 
-In the definition it seems as if $A$ and $B$ play a different role, but that is not the case. This can be seen as follows:
+In the definition it seems as if $A$ and $B$ play  different roles, but that is not the case. This can be seen as follows:
 
 $$
 A \sim B  \quad \iff \quad B = PAP^{-1}
@@ -63,7 +63,7 @@ AP\vect{v} = (PBP^{-1})P\vect{v} = PB\vect{v} =
 P(\lambda\vect{v}) =  \lambda P\vect{v}
 $$
 
-So $AP\vect{v} = \lambda P\vect{v} $, and $P\vect{v} $  is an eigenvector provided it is not the zero vector.
+So $AP\vect{v} = \lambda P\vect{v} $, and $P\vect{v} $  is an eigenvector, provided it is not the zero vector.
 Since $P$ is supposed to be invertible, and $\vect{v}$ is not the zero vector, it is true that
 $P\vect{v} $ is not the zero vector, and we are done.
 
@@ -145,6 +145,7 @@ then $A$ and $B$ are in fact matrices of the same linear transformation, only wi
 The following proposition captures some other properties that similar matrices share.
 
 ::::::{prf:proposition}
+:label: Prop:Eigenvalues:SimilarMatrices
 
 Suppose $A$ and $B$ are similar matrices. Then the following statements are true.
 
@@ -168,16 +169,8 @@ $A$ and $B$ have the same rank.
 
 ::::::
 
-::::::{margin}
+::::::{dropdown} Proof of&nbsp;{prf:ref}`Prop:Eigenvalues:SimilarMatrices`
 
-:::{admonition} {prf:ref}`Prop:BasisDim:RankAPEqualToRankPA`.
-
-If $A$ and $P$ are $n\times n$ matrices with $P$ invertible
-then $\text{rank}(AP) = \text{rank}(A) =\text{rank}(PA)$.
-
-::::::
-
-::::::{prf:proof}
 
 Suppose $A = PBP^{-1}$.
 
@@ -208,14 +201,15 @@ $$
 </li>
 <li>
 
-Follows immediately from (i):
+Follows immediately from i.:
 
 matrix $A$ is invertible $\quad \iff \quad \det{(A)} \neq 0$.
 
 </li>
 <li>
 
-We can use the identities of {prf:ref}`Prop:BasisDim:RankAPEqualToRankPA` from the section 'Basis and Dimension' (see margin). Since $P$ and $P^{-1}$ are both invertible we find: if $A = PBP^{-1}$,
+We can use the identities of {prf:ref}`Prop:BasisDim:RankAPEqualToRankPA` from the section 'Basis and Dimension'. 
+Since $P$ and $P^{-1}$ are both invertible we find: if $A = PBP^{-1}$,
 then $\text{rank}(A) = \text{rank}(PBP^{-1})  = \text{rank}(PB) = \text{rank}(B)$.
 
 </li>
@@ -261,14 +255,14 @@ $$
 Next we write out these last matrix products column by column:
 
 $$
-AP = A [\vect{p}_1 \quad  \vect{p}_2 \quad \cdots \quad \vect{p_n}] =
-[A\vect{p}_1 \quad  A\vect{p}_2 \quad  \cdots \quad  A\vect{p_n}]
+AP = A [\vect{p}_1 \quad  \vect{p}_2 \quad \cdots \quad \vect{p}_n] =
+[A\vect{p}_1 \quad  A\vect{p}_2 \quad  \cdots \quad  A\vect{p}_n]
 $$
 
 and
 
 $$
-PD = [\vect{p}_1 \quad  \vect{p}_2 \quad  \cdots \quad \vect{p_n}]\begin{bmatrix}
+PD = [\vect{p}_1 \quad  \vect{p}_2 \quad  \cdots \quad \vect{p}_n]\begin{bmatrix}
 d_1 & 0 & 0  & \ldots & 0 \\
 0 & d_2 & 0  & \ldots & 0 \\
 0 &  0 & d_3 & \ldots & 0 \\
@@ -279,10 +273,10 @@ $$
 so
 
 $$
-PD =  [d_1\vect{p}_1 \quad  d_2\vect{p}_2  \quad  \cdots  \quad d_n\vect{p_n}].
+PD =  [d_1\vect{p}_1 \quad  d_2\vect{p}_2  \quad  \cdots  \quad d_n\vect{p}_n].
 $$
 
-Comparing $AP$ and $PD$ column by column we see that $A\vect{p}_i = d_i\vect{p}_i$ for $n$ linearly independent vectors in $\R^n$; namely, an invertible matrix $P$ has linearly independent columns.
+Comparing $AP$ and $PD$ column by column we see that $A\vect{p}_i = d_i\vect{p}_i$ for $n$ linearly independent vectors in $\R^n$. Namely, an invertible matrix $P$ has linearly independent columns.
 
 ::::::
 
@@ -365,7 +359,12 @@ D = [T]_{\mathcal{B}} = P^{-1}[T]_{\mathcal{E}}P = P^{-1}AP,
 
 :::
 
-where $P = P_{\mathcal{E} \leftarrow \mathcal{B}} =  [ \vect{v}_1    \vect{v}_2    \ldots    \vect{v}_n]$
+where 
+
+$$
+ P = P_{\mathcal{E} \leftarrow \mathcal{B}} =  [ \vect{v}_1 \,\,   \vect{v}_2\,    \ldots  \,\,  \vect{v}_n]
+$$
+
 is the change-of-coordinates matrix from $\mathcal{B}$ to the standard basis.
 
 Lastly, the identity $D=P^{-1}AP$ in Equation {eq}`Eq:Diagonalizable:PinvAP` is equivalent to $A = PDP^{-1}$.
@@ -385,7 +384,7 @@ P = \left[\begin{array}{cc}\vect{v}_1 & \vect{v}_2\end{array} \right]
  =
 \left[\begin{array}{cc}2 & -2 \\ 1 & 1 \end{array} \right]
 , \qquad  D = \left[\begin{array}{cc} 3&0 \\ 0 & -1 \end{array}
-\right]
+\right].
 $$
 
 We will check that this is okay. To start with,
@@ -423,7 +422,7 @@ $$
 
 as it should.
 
-Note that the diagonalization is not unique: the order of the eigenvalues is free to choose, and the eigenvectors may be scaled.
+Note that the diagonalization is not unique: the *order* of the eigenvalues can be changed, and the eigenvectors may be *scaled*.
 However, the order of the eigenvectors in $P$ must correspond to the order of the eigenvalues on the diagonal of $D$.
 For instance, for the matrix $A$ at hand, an alternative diagonalization is given by
 
@@ -481,7 +480,7 @@ $A = \left[\begin{array}{ccc} 4 & -1 & 2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{array}
 of {prf:ref}`Ex:EigenValues:SecondCharPoly`
 and {prf:ref}`Ex:EigenValues:SecondCharPolyContinued`
 provides another example of this phenomenon. It has the two eigenvalues, $\lambda_1=3$, of algebraic multiplicity 2, and $\lambda_2 = 2$, of algebraic multiplicity 1.
-There is only one independent eigenvector for $\lambda_{1}$. This, together with the single independent eigenvector for $\lambda_2$ is a maximal set of two linearly independent eigenvectors for $A$. So, $A$ is not diagonalizable.
+There is only one independent eigenvector for $\lambda_{1}$. This, together with the single independent eigenvector for $\lambda_2$ is a maximal set of two linearly independent eigenvectors for $A$.  So, this matrix  $A$ is again not diagonalizable.
 
 ::::::
 
@@ -506,7 +505,7 @@ The $n \times n$ matrix $A$ is (real) diagonalizable if and only if it satisfies
 
 <li>
 
-The characteristic polynomial of $A$ has exactly $n$ (real) roots, counting multiplicities.
+The characteristic polynomial of $A$ has exactly $n$  *real*  roots, counting multiplicities.
 
 </li>
 
@@ -523,9 +522,9 @@ For each eigenvalue the geometric multiplicity is equal to the algebraic multipl
 
 First we show that a diagonalizable matrix satisfies the two conditions.
 
-If $A$ is diagonalizable, then there must be $n$ independent eigenvectors. The sum of the dimensions $m_k$ of the eigenspaces $E_{\lambda_i}$, i.e., the sum of the geometric multiplicities must therefore be equal to $n$. Since the algebraic multiplicities are at least as large as the geometric multiplicities, the sum of the algebraic multiplicities must be $\geq n$. Since this sum cannot be larger, it means that the sum is equal to $n$. Thus all algebraic multiplicities must in fact be equal to the corresponding geometric multiplicities. This settles properties (i) and (ii).
+If $A$ is diagonalizable, then there must be $n$ independent eigenvectors. The sum of the dimensions $m_k$ of the eigenspaces $E_{\lambda_i}$, i.e., the sum of the geometric multiplicities must therefore be equal to $n$. Since the algebraic multiplicities are at least as large as the geometric multiplicities, the sum of the algebraic multiplicities must be $\geq n$. Since this sum cannot be larger, it means that the sum is equal to $n$. Thus all algebraic multiplicities must in fact be equal to the corresponding geometric multiplicities. This settles properties i and ii.
 
-Conversely, conditions (i) en (ii) immediately imply that there must be $n$ linearly independent eigenvectors.
+Conversely, conditions i. and ii. immediately imply that there must be $n$ linearly independent eigenvectors.
 Namely, since eigenvectors for different eigenvalues are automatically linearly independent, bases for the eigenspaces put together give exactly $n$ linearly independent eigenvectors.
 
 ::::::
@@ -535,7 +534,7 @@ We saw that there is a weak connection between eigenvalues and (non-)invertibili
 {prf:ref}`Prop:EigenValues:SingularMatrix` states: a matrix is singular if and only if it has the eigenvalue $0$.
 
 
-In exercise 11 (NO REFERENCING FOR GRASPLE EXC!)  you are invited to investigate the connection (or no-connection) between diagonalizability and invertibility.
+In exercise 6.3.11 below you are invited to investigate the connection (or no-connection) between diagonalizability and invertibility.
 
 %::::::{exercise}
 %:label: Exc:Diagonalizable:Invertibility
@@ -575,7 +574,7 @@ We stated that diagonalizable matrices have nice properties. Here is one: for di
 ::::::{prf:example}
 :label: Ex:Diagonalizable:EasyPowers
 
-If $A = PDP^{-1}$ then $A^k =  PD^kP^{-1}$, for $k = 0,1,2,3, \ldots$
+If $A = PDP^{-1}$,  then $A^k =  PD^kP^{-1}$, for $k = 0,1,2,3, \ldots$
 
 For instance,
 
@@ -630,7 +629,7 @@ A^{10} = \frac14 \left[\begin{array}{cc} 2\cdot 3^{10} & -2 \\ 3^{10} & 1\end{ar
 \right]
 \left[\begin{array}{cc} 1 &  2 \\ -1 & 2 \end{array}
 \right]
-= \frac14 \left[\begin{array}{cc} 2\cdot 3^{10}+2 & 4\cdot 3^{10}-4 \\ 3^{10}-1 & 3^{10}+2  \end{array}
+= \frac14 \left[\begin{array}{cc} 2\cdot 3^{10}+2 & 4\cdot 3^{10}-4 \\ 3^{10}-1 & 2\cdot 3^{10}+2  \end{array}
 \right]
 .
 $$
@@ -638,7 +637,7 @@ $$
 An alternative way to denote the last matrix:
 
 $$
-A^{10} = \frac{3^{10}}{4} \left[\begin{array}{cc} 2 & 4 \\ 1 & 1 \end{array}
+A^{10} = \frac{3^{10}}{4} \left[\begin{array}{cc} 2 & 4 \\ 1 & 2 \end{array}
 \right]
 +
 \frac{1}{4}\left[\begin{array}{cc} 2 &  -4 \\ -1 & 2 \end{array}
@@ -658,7 +657,7 @@ A^{n} &=& \left[\begin{array}{cc} 2 & -2 \\ 1 & 1 \end{array}
 \right]
  \\
 &=& \dfrac14 \left[\begin{array}{cc} 2\cdot 3^{n}+2\cdot(-1)^n & 4\cdot 3^{n}-4\cdot(-1)^n \\
-3^{n}- (-1)^n & 3^{n}+2\cdot(-1)^n \end{array}
+3^{n}- (-1)^n & 2\cdot 3^{n}+2\cdot(-1)^n \end{array}
 \right]
 \end{array}
 $$

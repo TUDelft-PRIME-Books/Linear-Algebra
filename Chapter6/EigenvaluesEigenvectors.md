@@ -18,7 +18,7 @@ $$
 A\vect{v} = c\vect{v} \quad \text{for some real number  } c \in \R.
 $$
 
-A setting in which this equation plays a role is the following.
+A setting in which the second equation plays a role is the following.
 
 ::::::{prf:example}
 :label: Ex:EigenValues:ToyMigrationModel
@@ -65,7 +65,6 @@ $$
 
 have this property. Note that these represent the situation where city $A$ has twice as many citizens as city $B$. For this distribution of people over the two cities the outflow of $10 \%$ from $A$ to $B$ is exactly balanced by the outflow of $20 \%$ from $B$ to $A$.
 
-Anyone interested to enlarge upon a more real-life application?
 
 ::::::
 
@@ -93,8 +92,8 @@ Thus then the concept of an eigenvalue would be a rather empty notion.
 ::::::{prf:remark}
 
 Until now we have only been working with vectors and matrices of which all entries are real numbers. It is possible to generalize to vectors and matrices that have complex numbers as entries. If you have never seen or heard about complex numbers: don't worry,
-in this chapter we will focus on the 'real universe'. However, even for matrices with real entries complex eigenvalues and eigenvectors come up in quite a natural way, and in many senses make the theory simpler. In one or two examples we will hint at
-these, but **unless specifically indicated, in this chapter eigenvalues will be real eigenvalues**.
+in this chapter we will focus on the 'real universe'. However, even for matrices with real entries complex eigenvalues and eigenvectors come up in quite a natural way, and in many senses make the theory simpler.  In one or two examples we will hint at
+these, but **unless specifically indicated, in this chapter eigenvalues will be real eigenvalues**.  ({numref}`Section %s <Section:ComplexEV>` is devoted to complex eigenvalues.)
 
 ::::::
 
@@ -118,7 +117,7 @@ How to find the eigenvector(s) for a given eigenvalue.
 </li>
 </ul>
 
-The (harder) question how to actually find the eigenvalues we postpone untill the next section.
+The (harder) question how to actually find the eigenvalues we postpone until the next section.
 
 In the second half of this section we will consider a few general properties of eigenvalues and eigenvectors.
 
@@ -215,7 +214,7 @@ $$
 
 So the question whether 1 is an eigenvalue of the matrix $A$ is equivalent to the question whether this equation has nonzero solutions.
 
-We don't have to work with the augmented matrix here. The equation is homogeneous, the matrix $A - I$ has two pivots, so the only solution of the equation is the zero vector.
+As the equation is homogeneous, we don't have to work with the augmented matrix. The  matrix $A - I$ has two pivots, so the only solution of the equation is the zero vector.
 
 We may conclude that the value 1 is not an eigenvalue of the matrix $A$.
 
@@ -263,7 +262,7 @@ $$
 $$
 
 So $-1$ is an eigenvalue of the matrix $\left[\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array}\right] $ and a corresponding eigenvector is the vector
-$\left[\begin{array}{c} 2 \\ -1 \end{array}\right]$.  Note that the total set of eigenvectors is the set of all multiples of the vector $\left[\begin{array}{c} 2  \\ -1 \end{array}\right]$. Well, to be precise, all _nonzero_ multiples.
+$\left[\begin{array}{c} 2 \\ -1 \end{array}\right]$.  Note that the full set of eigenvectors for the eigenvalue $\lambda = -1$ is the set of all multiples of the vector $\left[\begin{array}{c} 2  \\ -1 \end{array}\right]$. Well, to be precise, all _nonzero_ multiples.
 
 ::::::
 
@@ -297,6 +296,15 @@ Moreover, these non-trivial solutions are exactly the corresponding eigenvectors
 
 ::::::
 
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/0a053b62-1e2c-4994-93eb-10e8f99a88dc?id=93701
+:label: grasple_exercise_6_1_T1
+:dropdown:
+:description: To verify whether a number is an eigenvalue of a (2x2) matrix.
+
+::::::
+
+
 Note that the proposition handles our third question as well. If $\lambda$ has been shown to be an eigenvalue of $A$, then the corresponding eigenvectors are the (nonzero) solutions of the homogeneous linear system {eq}`Eq:Eigenvalues:EigenvalueEquation`.
 
 Let us now have a look at a $3\times3$ matrix.
@@ -319,7 +327,7 @@ $$
 (A-2I)\vect{v} = \vect{0}.
 $$
 
-So we are looking for non-trivial solutions of the homogeneous system of linear equations with coefficient matrix $A - 2I$. We can work with the augmented matrix $[A - 2I | \vect{0} ]$, or we can use the fact that we look for nonzero vectors in the nulspace of $A-2I$.
+So we are looking for non-trivial solutions of the homogeneous system of linear equations with coefficient matrix $A - 2I$. Again, we can work with the augmented matrix $[A - 2I | \vect{0} ]$, or we can use the fact that we look for nonzero vectors in the null space of $A-2I$.
 If we plug in the entries of $A$ and use row reduction we get
 
 $$
@@ -332,12 +340,13 @@ $$
 We multiply the last row by 3 (to avoid fractions), next add 5 times the second row to arrive at the echelon matrix
 
 $$
+A-2I \sim 
 \left[\begin{array}{cccc} 1 & 1 & -2  \\ 0 & -3 & 2 \\ 0 & 0 & -2 \end{array}\right].
 $$
 
-This last matrix has rank 3, so its nulspace contains only the zero vector. Thus there are no nonzero solutions for the equation $A\vect{v} - 2\vect{v} = \vect{0}$, and we conclude that 2 is _not_ an eigenvalue of $A$.
+This last matrix has rank 3, so its null space contains only the zero vector. Thus there are no nonzero solutions for the equation $A\vect{v} - 2\vect{v} = \vect{0}$, and we conclude that 2 is _not_ an eigenvalue of $A$.
 
-For the other candidate we proceed in the same manner. Now we have to find the nulspace of the matrix
+For the other candidate we proceed in the same manner. Now we have to find the null space of the matrix
 
 $$
 (A-(-2)I) = (A+2I).
@@ -352,7 +361,7 @@ A+2I = \begin{bmatrix} 0 & 1 & 2 \\ 0 & 1 & 2 \\ -1 & 1 & 2 \end{bmatrix}  \sim
 
 $$
 
-We conclude that $A+2I$ has rank 2, thus the nulspace of $A+2I$ has dimension 1. From the row reduced form we read off that the nulspace contains all multiples of the vector
+We conclude that $A+2I$ has rank 2, thus the null space of $A+2I$ has dimension 1. From the row reduced form we read off that the null space contains all multiples of the vector
 $\vect{v} = \begin{bmatrix} 0 \\ 2 \\ -1\end{bmatrix}$. These then are exactly the eigenvectors for the eigenvalue $\lambda = -2$.
 Well, strictly speaking we should exclude the multiple $0\vect{v}$, as an eigenvector by definition is not the zero vector.
 As a check:
@@ -364,7 +373,7 @@ $$
 
 ::::::
 
-In the following example the matrix has an eigenvalue for which there appear to be two linearly independent eigenvectors.
+In the following example the matrix has an eigenvalue for which there turn out to be two linearly independent eigenvectors.
 
 ::::::{prf:example}
 :label: Ex:EigenValues:TwodimEigenspace
@@ -407,7 +416,6 @@ $$
 A\vect{x} = \lambda \vect{x}.
 $$
 
-So $S$ is the set of corresponding eigenvectors with the zero vector added to it.
 Then $S$ is a subspace of $\R^n$.
 
 ::::::
@@ -421,8 +429,7 @@ The most elementary way is to check that this set has the three properties of a 
 <ol type = "i">
 <li>
 
-$\vect{0} \in S$, by definition. We added it explicitly.
-
+$\vect{0} \in S$, since  $A\vect{0} = \vect{0} = \lambda \vect{0}$.
 </li>
 
 <li>
@@ -464,14 +471,14 @@ $$
 A\vect{x}=\lambda\vect{x} \quad \iff \quad (A-\lambda I)\vect{x}= \vect{0}.
 $$
 
-Thus $S$ is the nulspace of $A - \lambda I$, and, as such, a subspace of $\R^n$.
+Thus $S$ is the null space of $A - \lambda I$, and, as such, a subspace of $\R^n$.
 
 ::::::
 
 ::::::{prf:definition}
 :label: Dfn:EigenValues:Eigenspace
 
-For an eigenvalue $\lambda$ of the matrix $A$ the nulspace of $A - \lambda I$ is called the **eigenspace**.
+For an eigenvalue $\lambda$ of the matrix $A$ the null space  of $A - \lambda I$ is called the **eigenspace**  $E_{\lambda}$.
 
 $$
 E_{\lambda} = \Nul{(A-\lambda I)}.
@@ -479,7 +486,7 @@ $$
 
 ::::::
 
-Recall that the nulspace of $A - \lambda I$ consists of all solutions of the equation
+Recall that the null space of $A - \lambda I$ consists of all solutions of the equation
 
 $$
 (A-\lambda I)\vect{x} = \vect{0},
@@ -521,7 +528,15 @@ A - 5I = \begin{bmatrix} -4 & 2 & 2 \\ 2 & -4 & 2 \\ 2 & 2 & -4 \end{bmatrix} \s
 \begin{bmatrix} 1 & 0 & -1 \\ 0 & 1 & -1 \\ 0& 0&0 \end{bmatrix}.
 $$
 
-This is a matrix of rank 2, and $\begin{bmatrix} 1  \\1\\1 \end{bmatrix}$ can be taken as a basis of its nulspace.
+This is a matrix of rank 2, and $\begin{bmatrix} 1  \\1\\1 \end{bmatrix}$ can be taken as a basis of its nulspace, and thus of the eigenspace $E_5$.
+
+::::::
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/363143ee-08c2-4905-9801-474ed10f59e9?id=93697
+:label: grasple_exercise_6_1_T2
+:dropdown:
+:description: To give a basis for the eigenspace for a given $\lambda$  for a 3x3 matrix $A$.
 
 ::::::
 
@@ -544,21 +559,24 @@ i.e. $\vect{v}_{\ell} \in \Span{\vect{v}_1,  \ldots,  \vect{v}_{\ell-1}}$, where
 
 So, let
 
-$$
+
+:::{math}
+:label: Eq:v_l-in-Span_1
 
 \vect{v}_{\ell} = c_1 \vect{v}_1 +   \ldots + c_{\ell-1}  \vect{v}_{\ell-1}.
-$$
+
+:::
 
 Then
 
 :::{math}
-:label: Eq:v_l-in-Span
+:label: Eq:v_l-in-Span_2
 
 \lambda_{\ell}\vect{v}_{\ell} = c_1 \lambda_{\ell}\vect{v}_1 + \ldots + c_{\ell-1} \lambda_{\ell} \vect{v}_{\ell-1}.
 
 :::
 
-On the other hand, if we multiply both sides of Equation {eq}`Eq:v_l-in-Span` by $A$, we find that
+On the other hand, if we multiply both sides of Equation {eq}`Eq:v_l-in-Span_1` by $A$, we find that
 
 $$
 
@@ -570,12 +588,12 @@ $$
 From this we extricate
 
 :::{math}
-:label: Eq:v_l-in-Span_2
+:label: Eq:v_l-in-Span_3
 
 \lambda_{\ell}\vect{v}_{\ell} = c_1 \lambda_1\vect{v}_1 + \ldots + c_{\ell-1} \lambda_{\ell-1} \vect{v}_{\ell-1}.
 :::
 
-Subtracting Equation {eq}`Eq:v_l-in-Span_2` from Equation {eq}`Eq:v_l-in-Span` gives
+Subtracting Equation {eq}`Eq:v_l-in-Span_3` from Equation {eq}`Eq:v_l-in-Span_2` gives
 
 $$
 \lambda_{\ell}\vect{v}_{\ell} - \lambda_{\ell}\vect{v}_{\ell} = \vect{0} =
@@ -644,7 +662,9 @@ An $n \times n$ matrix $A$ can have at most $n$ different eigenvalues.
 
 ::::::
 
-We have already seen a $3\times 3$ matrix that has fewer than 3 different eigenvalues; namely, the matrix $A = \begin{bmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1  \end{bmatrix}$ of the previous example has only the two eigenvalues $-1$ and $5$. Things can even be 'worse' as the following example shows. The idea behind it: if $\vect{v}$ is an eigenvector of the matrix $A$, then the vector $\vect{v}$ is mapped to the multiple $\lambda\vect{v}$ by the transformation $T(\vect{x}) = A\vect{x}$.
+It can be shown  (as we will see in {prf:ref}`Ex:Eigenvalues:TwodimEigenspace2`)
+that the $3\times 3$  matrix $A = \begin{bmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1  \end{bmatrix}$ of the previous example has no other eigenvalues than $-1$ and $5$. So $A$ is a $3 \times 3$ matrix with fewer than $3$ eigenvalues. <BR>
+Things can even be 'worse' as the following example shows. The idea behind it: if $\vect{v}$ is an eigenvector of the matrix $A$, then the vector $\vect{v}$ is mapped to the multiple $\lambda\vect{v}$ by the transformation $T(\vect{x}) = A\vect{x}$.
 A multiple $\lambda\vect{v}$ is a vector in the same or the opposite direction as $\vect{v}$. With this in mind, can we construct a linear transformation of $\R^2$ to $\R^2$ that certainly does not have such vectors? Yes we can!
 
 ::::::{prf:example}
@@ -690,7 +710,7 @@ $$
 $$
 
 So it is natural to state that $R$ has the eigenvalues $\pm i$.
-
+(As stated before, {numref}`Section %s <Section:ComplexEV>` is devoted to complex eigenvalues.)
 ::::::
 
 By definition an eigenvector cannot be the zero vector. There is not such a restriction on eigenvalues. The following proposition may be seen as another characterization of invertibility of a matrix. It is just a reformulation of what we already knew.
@@ -732,46 +752,10 @@ so this vector is an eigenvector for the eigenvalue 0.
 
 ::::::
 
-::::::{exercise}
-:label: Exc:EigenValues:EigenvaluesInverse
-
-Prove the following statements.
-
-If the matrix $A$ is invertible, and $\lambda$ is an eigenvalue of $A$, then $\dfrac{1}{\lambda}$ is an eigenvalue of the inverse of $A$.
-
-Moreover,  if  $\vect{v}$ is an eigenvector of $A$ for eigenvalue $\lambda$, then $\vect{v}$ is also an eigenvector of $A^{-1}$ for eigenvalue $\lambda^{-1}$.
 
 
-::::::
-
-
-::::::{solution} Exc:EigenValues:EigenvaluesInverse
-:class:  dropdown
-
-Suppose the nonzero vector $\vect{v}$ is an eigenvector for the eigenvalue $\lambda$ of the invertible matrix $A$.  From {prf:ref}`Prop:EigenValues:SingularMatrix` we know that $\lambda \neq 0$. Thus from
-
-$$
-   A\vect{v} = \lambda\vect{v}
-$$
-
-it follows that 
-
-$$
-   A^{-1}A\vect{v} = \vect{v} = A^{-1}\lambda\vect{v} = \lambda A^{-1}\vect{v}.
-$$
-
-And lastly, since $\lambda \neq 0$, we may divide by $\lambda$:
-
-$$
-   \vect{v} =  \lambda A^{-1}\vect{v}  \quad \iff \quad  \frac{1}{\lambda}\vect{v} = A^{-1}\vect{v} \quad \iff \quad A^{-1}\vect{v} = \frac{1}{\lambda}\vect{v},
-$$
-
-which settles at one stroke that the (same) vector $\vect{v}$ is an eigenvector of the inverse matrix  $A^{-1}$ for the eigenvalue $\lambda^{-1}$.
-
-::::::
-
-There is a geometric interpretation to eigenvalues and eigenvectors. Recall that a matrix gives rise to a linear transformation.
-Eigenvalues and eigenvectors make transparent how a matrix 'really works'. The next exposition captures some of the ideas of the rest of the chapter.
+A matrix gives rise to a linear transformation.
+Eigenvalues and eigenvectors make transparent how a matrix/transformation 'works'. The next exposition captures some of the ideas of the rest of the chapter.
 
 ::::::{prf:example}
 :label: Ex:Eigenvalues:GeomInterpEarlierExample
@@ -883,5 +867,43 @@ In a later section we will study matrices $A$ for which such a basis of eigenvec
 :label: grasple_exercise_6_1_10
 :dropdown:
 :description:  If $W$ is an eigenspace of $A$, is it also an eigenspace of $2A$? And of $A^2$?  
+
+::::::
+
+
+To conclude, one non-Grasple exercise
+
+::::::{exercise}
+:label: Exc:EigenValues:EigenvaluesInverse
+
+Prove the following statements.
+
+If the matrix $A$ is invertible, and $\lambda$ is an eigenvalue of $A$, then $\dfrac{1}{\lambda}$ is an eigenvalue of the inverse of $A$.
+
+Moreover,  if  $\vect{v}$ is an eigenvector of $A$ for eigenvalue $\lambda$, then $\vect{v}$ is also an eigenvector of $A^{-1}$ for eigenvalue $\lambda^{-1}$.
+
+::::::
+
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:EigenValues:EigenvaluesInverse`&nbsp;(_click to show_)
+
+Suppose the nonzero vector $\vect{v}$ is an eigenvector for the eigenvalue $\lambda$ of the invertible matrix $A$.  From {prf:ref}`Prop:EigenValues:SingularMatrix` we know that $\lambda \neq 0$. From
+
+$$
+   A\vect{v} = \lambda\vect{v}
+$$
+
+it follows that 
+
+$$
+   A^{-1}A\vect{v} = \vect{v} = A^{-1}\lambda\vect{v} = \lambda A^{-1}\vect{v}.
+$$
+
+And lastly, since $\lambda \neq 0$, we may divide by $\lambda$:
+
+$$
+   \vect{v} =  \lambda A^{-1}\vect{v}  \quad \iff \quad  \frac{1}{\lambda}\vect{v} = A^{-1}\vect{v} \quad \iff \quad A^{-1}\vect{v} = \frac{1}{\lambda}\vect{v},
+$$
+
+which settles at one stroke that the (same) vector $\vect{v}$ is an eigenvector of the inverse matrix  $A^{-1}$ for the eigenvalue $\lambda^{-1}$.
 
 ::::::
