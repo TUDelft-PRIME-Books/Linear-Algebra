@@ -179,7 +179,7 @@ A=\begin{bmatrix}
 \end{bmatrix}.
 $$
 
-Since $A$ is an upper diagonal matrix, we can conclude that its eigenvalues are $-\beta$ and $-\alpha$. Therefore, a solution to the system of linear differential equations $\vect{y}'=A\vect{y}$ is given by 
+Since $A$ is an upper diagonal matrix, we can conclude that its eigenvalues are $-\beta$ and $-\alpha$, which for simplicity's sake we will assume to be different. Therefore, a solution to the system of linear differential equations $\vect{y}'=A\vect{y}$ is given by 
 
 $$
 \vect{y}=c_{1}\vect{v}_{-\beta}e^{-\beta t}+c_{2}\vect{v}_{-\alpha}e^{-\alpha t}
@@ -187,7 +187,7 @@ $$
 
 where $c_{1}$ and $c_{2}$ are some constants while $\vect{v}_{-\beta}$ and $\vect{v}_{-\alpha}$ are the eigenvectors of $A$ corresponding $-\beta $ and $-\alpha$, respectively. In particular, if $t$ gets very large, we find very large but negative exponents on the right hand side. That is, both $\lim_{t\to\infty}S(t)$ and $\lim_{t\to\infty} I(t)$ are $0$. This makes perfect sense intuitively, as we expect all members of the population to get infected and recover. After that, they are neither susceptible nor infected anymore.
 
-Note that, in the long run, we will end up arbitrarily close to $\vect{0}$ regardless of the starting values of $S$ and $I$. That is, if we start in any $\vect{v}$ and follow the solution $\vect{y}(t)$ of the system of linear differential equations satisfying the initial condition $\vect{y}(0)=\vect{v}$, then we will always end up in $\vect{0}$. In other words, $\vect{v}$ *attracts* sall points. 
+Note that, in the long run, we will end up arbitrarily close to $\vect{0}$ regardless of the starting values of $S$ and $I$. That is, if we start in any $\vect{v}$ and follow the solution $\vect{y}(t)$ of the system of linear differential equations satisfying the initial condition $\vect{y}(0)=\vect{v}$, then we will always end up in $\vect{0}$. In other words, $\vect{v}$ *attracts* all points. 
 
 :::
 
@@ -219,7 +219,7 @@ a **saddle point** if $\lambda_{1}\lambda_{2}<0$, i.e. if $\lambda_{1}$ and $\la
 
 :::
 
-Let us once again consider the system $\vect{y}'=A\vect{y}$. By {prf:ref}`Prop:DynSystContinuous:EVsgiveSols`, we can find solutions $\vect{y}=\vect{v}e^{\lambda t}$ where $\lambda$ is an eigenvalue of $A$ and $\vect{v}$ is a corresponding eigenvector. But if $\lambda$ is nto a real number, this does not give a real-valued function. In some applications that's perfectly fine, but often we're interested in real solutions to systems of linear differential equations. Can we stil find any of those if some eigenvalues are complex?
+Let us once again consider the system $\vect{y}'=A\vect{y}$. By {prf:ref}`Prop:DynSystContinuous:EVsgiveSols`, we can find solutions $\vect{y}=\vect{v}e^{\lambda t}$ where $\lambda$ is an eigenvalue of $A$ and $\vect{v}$ is a corresponding eigenvector. But if $\lambda$ is not a real number, this does not give a real-valued function. In some applications that's perfectly fine, but often we're interested in real solutions to systems of linear differential equations. Can we stil find any of those if some eigenvalues are complex?
 
 Yes, we can! First, we can use the following well-known fact from calculus:
 
@@ -257,7 +257,7 @@ are solutions of $\vect{y}'=A\vect{y}$. If $A$ is a $2\times 2$-matrix, we can s
 
 :::{prf:Proposition}
 
-Let $A$ be a $2\times 2$-matrix with non-real eigenvalue $\lambda=a+bi$. Let $\vect{v}$ be an eigenvector associated to $\lambda$. Then 
+Let $A$ be a $2\times 2$-matrix with non-real eigenvalue $\lambda=a+bi$. Let $\vect{v}$ be an eigenvector associated to $\lambda.$ Then 
 
 $$
 
