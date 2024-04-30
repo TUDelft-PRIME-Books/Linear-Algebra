@@ -314,11 +314,11 @@ $$
 \begin{array}{lcl}
 \det{(\vect{u},\vect{v})} + \det{(\vect{u},\vect{w})} &=&
 \text{area}(OABC) + \text{area}(CBDE) \\
-&=& \text{area}(OADE) = \det{(\vect{u},\vect{v}+\vect{w})},
+&=& \text{area}(OADE) = \det{(\vect{u},\vect{v}+\vect{w})}.
 \end{array}
 $$
 
-since the two triangles $OCE$ and $ABD$ are congruent, so have equal areas.
+Since the two triangles $OCE$ and $ABD$ are congruent and they have equal areas.
 
 ```{applet}
 :url: det_geometric/linearity_two
@@ -337,12 +337,9 @@ $$
 \det{(\vect{u},\vect{v})} + \det{(\vect{u},\vect{w})} &=&
 \text{area}(OAFC) - \text{area}(OBDA) \\
 &=& \text{area}(OAFC) - \text{area}(CGEF) \\
-&=& \text{area}(OAEG) = \det{(\vect{u},\vect{v}+\vect{w})}
+&=& \text{area}(OAEG) = \det{(\vect{u},\vect{v}+\vect{w})}.
 \end{array}
 $$
-
-since now the areas of $OAFC$ and $CGEB$ add up to the area of $OABC$, owing to the
-congruence of the triangles $OGC$ and $AEF$.
 
 There are more pairwise orientations to consider, but the idea is hopefully clear to you.
 
