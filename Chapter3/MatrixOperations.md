@@ -1643,7 +1643,7 @@ The remaining exercises are less of a compuational character.
 ::::::
 
 ::::::{grasple}
-:url: https://embed.grasple.com/exercises/
+:url: https://embed.grasple.com/exercises/14b6af51-de5f-4e6c-bfb8-20a018fce053?id=69458
 :label: grasple_exercise_3_2_18
 :dropdown:
 :description: To explain why a certain product does not exist.
@@ -1659,7 +1659,7 @@ The remaining exercises are less of a compuational character.
 ::::::
 
 ::::::{grasple}
-:url: https://embed.grasple.com/exercises/ 7f91a5d2-e1c9-422e-b0f9-ba0b22936e2a?id=69456
+:url: https://embed.grasple.com/exercises/7f91a5d2-e1c9-422e-b0f9-ba0b22936e2a?id=69456
 :label: grasple_exercise_3_2_20
 :dropdown:
 :description: To show that $(cA)^T = cA^T$.
