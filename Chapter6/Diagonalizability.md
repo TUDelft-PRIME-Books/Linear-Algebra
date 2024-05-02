@@ -17,7 +17,7 @@ Notation: $A \sim B$.
 
 ::::::
 
-It is true we already used the symbol $\sim$ earlier to denote row equivalence of (augmented) matrices. When we use it, it will always be clear from the context what is the meaning at that instance.
+It is true we already used the symbol $\sim$ earlier to denote row equivalence of (augmented) matrices. When we use it, it will always be clear from the context what  the meaning is at that instance.
 
 ::::::{prf:remark}
 
@@ -237,7 +237,7 @@ An equivalent alternative characterization of diagonalizability is given in the 
 ::::::{prf:proposition}
 :label: Prop:Eigenvalues:DiagbleVersusEigenvectors
 
-A matrix $A$ is diagonalizable if and only if $A$ has $n$ linearly independent eigenvectors.
+An $n \times n$  matrix $A$ is diagonalizable if and only if $A$ has $n$ linearly independent eigenvectors.
 Such a set of eigenvectors then forms a basis for $\R^n$.
 
 ::::::
@@ -475,7 +475,7 @@ Thus there does not exist a basis of eigenvectors for $A$, and consequently the 
 :label: Ex:Diagonalizable:SecondCharPolyCtd2
 
 The matrix
-$A = \left[\begin{array}{ccc} 4 & -1 & 2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{array}
+$A = \left[\begin{array}{ccc} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{array}
 \right]$
 of {prf:ref}`Ex:EigenValues:SecondCharPoly`
 and {prf:ref}`Ex:EigenValues:SecondCharPolyContinued`

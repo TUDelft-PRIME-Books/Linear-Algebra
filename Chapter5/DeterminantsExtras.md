@@ -169,7 +169,7 @@ For a general (reasonable) region $R$ we sketch the idea and omit the technical 
 
 The region $R$ can be approximated arbitrarily close by a collection of smaller and smaller squares $R_i$ of which the interiors do not overlap.
 See {numref}`Figure %s <Fig:DetExtras:Subdivision>`.
-The limit of the area of these aproximations when the grids get finer and finer gives the area of $R$.
+The limit of the areas of these approximations when the grids get finer and finer gives the area of $R$.
 
 ::::{figure} Images/Fig-DetExtras-Subdivision.svg
 :name: Fig:DetExtras:Subdivision
@@ -231,7 +231,7 @@ $$
  \end{array}
 $$
 
-For a more general region $R$ we would again have to work with approximations/subdivisions like in the proof of {prf:ref}`Prop:DetExtras:ScaleFactorR2`. Then we would first have to extend the definition of $n$-dimensional volume. We will not pursuit that track.
+For a more general region $R$ we would again have to work with approximations/subdivisions like in the proof of {prf:ref}`Prop:DetExtras:ScaleFactorR2`. Then we would first have to extend the definition of $n$-dimensional volume. We will not pursue that track.
 
 ::::::
 
@@ -469,7 +469,7 @@ Cramer's formula seems the solution to all your linear systems. However, it has 
 
 <u>Disclaimer 1</u> &nbsp; Cramer's formula can only be used for a **square** linear system with an **invertible** matrix.
 
-<u>Disclaimer 2</u> &nbsp; For a system with two equations in two unknowns Cramer's rule may come in handy, but for solving larger systems it is **highly inefficient**. For instance, for a system of four equations in four unknowns, to find the solution using Cramer's rule, one needs to compute five $4 \times 4$ determinants. Using the good-old method using the augmented matrix $[\,A\,|\,\vect{b}\,]$ only asks for one row reduction process.
+<u>Disclaimer 2</u> &nbsp; For a system with two equations in two unknowns Cramer's rule may come in handy, but for solving larger systems it is **highly inefficient**. For instance, for a system of four equations in four unknowns, to find the solution using Cramer's rule, one needs to compute five $4 \times 4$ determinants. The good-old method using the augmented matrix $[\,A\,|\,\vect{b}\,]$ only asks for one row reduction process.
 
 ::::::
 
@@ -877,7 +877,7 @@ $$
 By taking inner products, or by computing $A^T\vect{n}$, it is checked that indeed
 $\vect{n} \perp \vect{a}_i$ for each column $\vect{a}_i$. So property i. of {prf:ref}`Prop:DetExtras:Properties-ndimCrossProd` is satisfied.
 
-Since the three columns are orthogonal, the 'rectangular box' in $\R^4$ they generate will have 3-volume
+Since the three columns are orthogonal, the 'rectangular box' in $\R^4$ they generate will have 3d-volume
 
 $$
    \norm{\vect{a}_1} \cdot \norm{\vect{a}_2} \cdot \norm{\vect{a}_3} =

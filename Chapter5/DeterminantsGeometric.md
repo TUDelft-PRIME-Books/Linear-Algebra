@@ -526,7 +526,7 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 :url: https://embed.grasple.com/exercises/3126529d-db82-43e2-862d-7f013f39f619?id=93128
 :label: grasple_exercise_5_1_1
 :dropdown:
-:description: Area of paralellogram in the plane (with vertex at (0,0)).
+:description: Area of parallelogram in the plane (with vertex at (0,0)).
 
 ::::::
 
@@ -534,7 +534,7 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 :url: https://embed.grasple.com/exercises/13e76393-8f38-48aa-9685-2132208a0cc8?id=93131
 :label: grasple_exercise_5_1_2
 :dropdown:
-:description: Area of paralellogram in the plane (no vertex at (0,0)).
+:description: Area of parallelogram in the plane (no vertex at (0,0)).
 
 ::::::
 
@@ -551,7 +551,7 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 :url: https://embed.grasple.com/exercises/2d846d56-3729-468e-80d8-74ec6d348719?id=93134
 :label: grasple_exercise_5_1_4
 :dropdown:
-:description: Volume of paralellepiped  (with  vertex at (0,0,0)).
+:description: Volume of parallelepiped  (with  vertex at (0,0,0)).
 
 ::::::
 
@@ -561,7 +561,7 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 :url: https://embed.grasple.com/exercises/2d846d56-3729-468e-80d8-74ec6d348719?id=93134
 :label: grasple_exercise_5_1_5
 :dropdown:
-:description: Volume of paralellepiped  (with  vertex at (0,0,0)).
+:description: Volume of parallelepiped  (with  vertex at (0,0,0)).
 ::::::
 
 ::::::{grasple}

@@ -105,7 +105,7 @@ So for a $3 \times 3$ upper triangular matrix the eigenvalues are the diagonal e
 
 ::::::
 
-Obviously {prf:ref}`Ex:EigenValues:TriangularMatrix` can be generalized. Which leads to the following proposition.
+Obviously {prf:ref}`Ex:EigenValues:TriangularMatrix` can be generalized. This leads to the following proposition.
 
 ::::::{prf:proposition}
 :label: Prop:EigenValues:TriangularMatrix
@@ -567,7 +567,7 @@ The last  'mind blowing' property of the characteristic polynomial we will only 
 :label: Ex:Eigenvalues:CayleyHamilton
 
 Consider the matrix $A = \begin{bmatrix} 1 & 2 \\ 4 & 5 \end{bmatrix}$.
-Its characterictic polynomial is computed as
+Its characteristic polynomial is computed as
 
 $$
   \det{(A-\lambda I)} = \begin{vmatrix} 1-\lambda & 2 \\ 3 & 5-\lambda \end{vmatrix}
@@ -695,7 +695,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 :url: https://embed.grasple.com/exercises/e9044c04-4bfb-474e-8823-bff6449b92ab?id=92210
 :label: grasple_exercise_6_2_10 
 :dropdown:
-:description:  To find the the geometric multiplicity of the single eigenvalue of an almost diagonal matrix $A$.
+:description:  To find the geometric multiplicity of the single eigenvalue of an almost diagonal matrix $A$.
 
 ::::::
 

@@ -54,7 +54,15 @@ is called the $(i,j)$th **cofactor** of $A$.
 
 ::::::
 
-This is an example of a so-called **recursive** definition. The evaluation of an $n$ by $n$ determinant is reduced to the evaluation of $n$ determinants 'one size smaller'. By repeating this reduction we get smaller and smaller determinants and end up with 2 by 2 determinants. Let's look at an example first.
+This is an example of a so-called **recursive** definition. The evaluation of an $n$ by $n$ determinant is reduced to the evaluation of $n$ determinants 'one size smaller'. By repeating this reduction we get smaller and smaller determinants and end up with 2 by 2 determinants as defined in {prf:ref}`Def:CrossProduct:2x2determinant`. 
+And the formula also works for $2 \times 2$ matrices:
+
+$$
+   \text{for}  \,\,A = \begin{bmatrix}a & b \\ c & d  \end{bmatrix}, \quad
+   \text{det}\,A = a\cdot\text{det}\,A_{11} - b\cdot\text{det}\,A_{12} = ad-bc.
+$$
+
+Let us now look at an example first.
 
 ::::::{prf:example}
 :label: Ex:DetCofactor:4x4Det
@@ -91,7 +99,7 @@ $$
 \left|\begin{array}{ccc} 2 & 3 &4 \\  2 & 5 & 2 \\  1 & 4 & 3 \end{array}\right|&=&
 2\cdot\left|\begin{array}{cc}  5&2 \\ 4&3  \end{array}\right|-
 2\cdot\left|\begin{array}{cc}  3&4 \\ 4&3  \end{array}\right|+
-\cdot\left|\begin{array}{cc}  3&4 \\ 5&2 \end{array}\right|\\
+1\cdot\left|\begin{array}{cc}  3&4 \\ 5&2 \end{array}\right|\\
 &=&
 2\cdot (15-8) -   2\cdot (9-16) +  (6-20) = 14.
 \end{array}
@@ -105,7 +113,7 @@ $$
 
 ::::::
 
-We call the procedure indicated in {prf:ref}`Dfn:DetCofactors:Determinant` **cofactor expansion along the first column**.
+We call the procedure indicated in {prf:ref}`Dfn:DetCofactors:Determinant` **cofactor expansion along the first column**.  Note that this is exactly in line with {prf:ref}`Prop:DetGeometric:ColExpand`. 
 Often the word 'cofactor' is omitted and we simply say expansion along the first column.
 The signs are determined by the position in the matrix/determinant according to the following pattern
 
@@ -388,7 +396,7 @@ expand along the rows from top to bottom.
 
 ::::::
 
-In {numref}`Sec:DetGeometric` we have seen that for $2 \times 2$ and $3 \times 3$ matrices we have a matrix $A$ is invertible if and only if $\det{A} \neq 0$.
+In {numref}`Sec:DetGeometric` we have seen that for $2 \times 2$ and $3 \times 3$ matrices $A$ it holds that $A$ is invertible if and only if $\det{A} \neq 0$.
 
 From {prf:ref}`Prop:DetCofactors:TriangularMatrices` it follows that this property still holds for **triangular** matrices.
 
@@ -420,7 +428,7 @@ We need to know a little more about determinants to establish this connection wi
 ## The Determinant of the Transpose of a Matrix
 
 
-The last property that may be expected to hold as a consequence of {prf:ref}`Thm:DetCofactors:RowOrColumnExpansion` where the rows and the columns play complementary roles is the following.
+The last property that may be expected to hold as a consequence of {prf:ref}`Thm:DetCofactors:RowOrColumnExpansion` where the rows and the columns play exchangeable roles is the following.
 
 ::::::{prf:proposition}
 :label: Prop:DetCofactors:DetTranspose
