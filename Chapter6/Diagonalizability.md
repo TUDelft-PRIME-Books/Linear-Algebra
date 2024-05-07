@@ -127,6 +127,75 @@ Fill in the details of the last remark.
 
 ::::::
 
+Using the properties of similar matrices we can prove the inequality
+
+::::::{math}
+:label: Eq:Diagonalizable:GeomMultversusAlgMult
+
+\text{g.m.}(\lambda) \leq \text{g.m.}(\lambda) 
+::::::
+
+that holds for the geometric and the algebraic multiplicity of an eigenvalue 
+ (cf. {prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity`).
+
+ ::::::{dropdown}  Proof of {prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity`
+
+Suppose the $n\times n$ matrix $A$ has the eigenvalue $\lambda_1$ of geometric multiplicity $k$.  We have to show that the algebraic multiplicity of $\lambda_1$ is *at least* equal to $k$.
+Suppose $\vect{v}_1,\cdots,\vect{v}_k$ are $k$ linearly independent eigenvectors for $\lambda_1$.  We can extend $\{\vect{v}_1,\ldots,\vect{v}_k,\}$ to a basis $\{\vect{v}_1,\ldots,\vect{v}_k, \ldots, \mathbf{v}_n \}$   of $\mathbb{R}^n$.
+Let $P$ be the matrix with  $\vect{v}_1,\ldots,\vect{v}_n\}$ as columns.  $P$ is invertible, and we have that
+
+$$
+\begin{array}{ccl}
+AP &=&  A [\vect{v}_1\,\, \ldots \,\, \vect{v}_k\,\, \vect{v}_{k+1}\,\,\ldots \,\, \mathbf{v}_n] \\
+   &=&  [A\vect{v}_1\,\, \ldots \,\, A\vect{v}_k\,\, A\vect{v}_{k+1}\,\,\ldots \,\, A\mathbf{v}_n] \\
+   &=&  [\lambda_1\vect{v}_1\,\, \ldots \,\, \lambda_1\vect{v}_k\,\,A\vect{v}_{k+1}\,\, \ldots \,\, A\mathbf{v}_n],
+\end{array}
+$$
+
+since  $\vect{v}_1, \ldots, \vect{v}_k$ were supposed to be eigenvectors for $\lambda_1$.
+<BR>
+Since $P$ is invertible, the equation $P\vect{x} = A\vect{v}_{j}$ has a (unique) solution, for each $j \geq k+1$.  If we denote this solution by $\vect{d}_j$,  we have that
+
+$$
+\begin{array}{l}
+  [\lambda_1\vect{v}_1\,\, \ldots \,\, \lambda_1\vect{v}_k\,\,\,A\vect{v}_{k+1}\,\, \ldots \,\, A\mathbf{v}_n] \\
+  \quad = \quad [P(\lambda_1\vect{e}_1) ,\, \ldots \,\,P(\lambda_1\vect{e}_k)\,\,\,P\vect{d}_{k+1}\,\, \ldots \,\,P\vect{d}_{k+1}] \\
+  \quad = \quad P[\lambda_1\vect{e}_1 ,\, \ldots \,\,\lambda_1\vect{e}_k\,\,\,\vect{d}_{k+1}\,\, \ldots \,\,\vect{d}_{k+1}] = P \tilde{D}.
+\end{array}  
+$$ 
+
+So we have that  $A = P\tilde{D}P^{-1}$, which means that $A$ and $\tilde{D}$ are similar, hence have the same eigenvalues with the same algebraic
+(and also geometric) multiplicities.
+
+Note that $\tilde{D}$ is of the form
+
+$$
+
+  \tilde{D} \,=\,\, \begin{bmatrix} 
+                        \lambda_1 & 0 & \ldots & 0 & * & * & \ldots & * \\
+                        0 & \lambda_1 & \ldots & 0 & * & * & \ldots & * \\
+                        \vdots & \vdots & \ddots & \vdots &  * & * & \ldots & * \\
+                        0 & 0 & \ldots & \lambda_1 &   * & * & \ldots & * \\
+                        \vdots & \vdots &  & \vdots & \vdots &  \vdots &  \vdots &  \vdots  \\
+                        \vdots & \vdots &  & \vdots & \vdots &  \vdots &  \vdots &  \vdots  \\
+                        0 & 0 & \ldots & 0 &   * & * & \ldots & * \\
+                     \end{bmatrix},
+$$
+
+where there are $k$ entries $\lambda_1$. <BR>
+It follows that the characteristic polynomial  det$(\tilde{D} - \lambda \mathrm I)$  will have *at least*  $k$ factors $(\lambda - \lambda_1)$.
+Thus the algebraic multiplicity of the eigenvalue $\lambda_1$ for the matrix $\tilde{D}$ is greater than or equal to $k$.  From the observed similarity  $A \sim \tilde{D}$ it follows that this also holds for the algebraic multiplicity of $\lambda_1$ for the matrix $A$.
+So indeed the inequality
+
+$$
+   \text{a.m.}(\lambda_1) \geq  \text{g.m.}(\lambda_1)
+$$
+
+is universally true.
+
+::::::
+
+
 One way to understand the similarity of similar matrices comes from considering the linear transformations they represent.
 In {numref}`Section %s <Subsec:ChangeOfBasis:RelationTETB>` it is shown that if $T:\R^n\to\R^n$ is the linear transformation that has $A$ as its standard matrix, and $P = P_{\mathcal{B}}$ is the change-of-coordinates matrix from the basis $\mathcal{B}$ to the standard matrix, then the matrix of $T$ with respect to basis $\mathcal{B}$ is given by
 
@@ -280,9 +349,11 @@ Comparing $AP$ and $PD$ column by column we see that $A\vect{p}_i = d_i\vect{p}_
 
 ::::::
 
-The second proof has a geometric flavour.
+The second proof has a geometric flavour. Open it if you are interested.
 
-::::::{prf:proof}
+
+::::::{dropdown} Second proof of&nbsp;{prf:ref}`Prop:Eigenvalues:DiagbleVersusEigenvectors`
+
 
 First we show that diagonalizability implies the existence of $n$ linearly independent eigenvectors.
 
@@ -352,12 +423,12 @@ $$
 
 and the transformation formula gives
 
-:::{math}
+:::::{math}
 :label: Eq:Diagonalizable:PinvAP
 
 D = [T]_{\mathcal{B}} = P^{-1}[T]_{\mathcal{E}}P = P^{-1}AP,
 
-:::
+:::::
 
 where 
 
@@ -437,6 +508,10 @@ A =   \left[\begin{array}{cc} 4 & 6 \\ -2 & 3  \end{array}
 $$
 
 ::::::
+
+
+F
+
 
 Are all matrices diagonalizable? Most certainly not, as the following two examples, studied before, show.
 
