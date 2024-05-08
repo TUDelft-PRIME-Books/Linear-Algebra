@@ -134,7 +134,7 @@ Using the properties of similar matrices we can prove the inequality
 ::::::{math}
 :label: Eq:Diagonalizable:GeomMultversusAlgMult
 
-\text{g.m.}(\lambda) \leq \text{g.m.}(\lambda) 
+\text{g.m.}(\lambda) \leq \text{a.m.}(\lambda) 
 ::::::
 
 that holds for the geometric and the algebraic multiplicity of an eigenvalue 
