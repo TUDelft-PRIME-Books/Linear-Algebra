@@ -2,6 +2,8 @@
 
 # Diagonalizability
 
+(Subsec:SimilarMatrices)=
+
 ## Similar matrices
 
 ::::::{prf:definition}
@@ -138,7 +140,7 @@ Using the properties of similar matrices we can prove the inequality
 that holds for the geometric and the algebraic multiplicity of an eigenvalue 
  (cf. {prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity`).
 
- ::::::{dropdown}  Proof of {prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity`
+ ::::::{dropdown}  Proof of &nbsp;{prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity`
 
 Suppose the $n\times n$ matrix $A$ has the eigenvalue $\lambda_1$ of geometric multiplicity $k$.  We have to show that the algebraic multiplicity of $\lambda_1$ is *at least* equal to $k$.
 Suppose $\vect{v}_1,\cdots,\vect{v}_k$ are $k$ linearly independent eigenvectors for $\lambda_1$.  We can extend $\{\vect{v}_1,\ldots,\vect{v}_k,\}$ to a basis $\{\vect{v}_1,\ldots,\vect{v}_k, \ldots, \mathbf{v}_n \}$   of $\mathbb{R}^n$.
