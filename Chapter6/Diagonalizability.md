@@ -129,6 +129,17 @@ Fill in the details of the last remark.
 
 ::::::
 
+The above considerations are summarized in the following proposition.
+
+::::::{prf:proposition}
+:label: Prop:Diagonalizable:EqualMultiplicitiesSimilarMatrices
+
+Suppose  $A$ and $B$ are similar matrices.  Then they have the same eigenvalues with the same algebraic and geometric multiplicities.
+
+::::::
+
+
+
 Using the properties of similar matrices we can prove the inequality
 
 ::::::{math}
@@ -142,9 +153,9 @@ that holds for the geometric and the algebraic multiplicity of an eigenvalue
 
  ::::::{dropdown}  Proof of &nbsp;{prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity`
 
-Suppose the $n\times n$ matrix $A$ has the eigenvalue $\lambda_1$ of geometric multiplicity $k$.  We have to show that the algebraic multiplicity of $\lambda_1$ is *at least* equal to $k$.
+Suppose the $n\times n$ matrix $A$ has the eigenvalue $\lambda_1$ of geometric multiplicity $k$.  We have to show that the algebraic multiplicity of $\lambda_1$ is *at least* equal to $k$. We will do so by constructing a matrix $B$ that is similar to $A$ and for which the eigenvalue $\lambda_1$ will clearly be at least equal to $k$. <BR>
 Suppose $\vect{v}_1,\cdots,\vect{v}_k$ are $k$ linearly independent eigenvectors for $\lambda_1$.  We can extend $\{\vect{v}_1,\ldots,\vect{v}_k,\}$ to a basis $\{\vect{v}_1,\ldots,\vect{v}_k, \ldots, \mathbf{v}_n \}$   of $\mathbb{R}^n$.
-Let $P$ be the matrix with  $\vect{v}_1,\ldots,\vect{v}_n\}$ as columns.  $P$ is invertible, and we have that
+Let $P$ be the matrix with  $\vect{v}_1,\ldots,\vect{v}_n$ as columns.  $P$ is invertible, and we have that
 
 $$
 \begin{array}{ccl}
@@ -156,24 +167,23 @@ $$
 
 since  $\vect{v}_1, \ldots, \vect{v}_k$ were supposed to be eigenvectors for $\lambda_1$.
 <BR>
-Since $P$ is invertible, the equation $P\vect{x} = A\vect{v}_{j}$ has a (unique) solution, for each $j \geq k+1$.  If we denote this solution by $\vect{d}_j$,  we have that
+Since $P$ is invertible, for each $j \geq k+1$ the equation $P\vect{x} = A\vect{v}_{j}$ has the (unique) solution,  $\vect{b}_j = P^{-1}A\vect{v}_{j}$.  So we see that
 
 $$
 \begin{array}{l}
   [\lambda_1\vect{v}_1\,\, \ldots \,\, \lambda_1\vect{v}_k\,\,\,A\vect{v}_{k+1}\,\, \ldots \,\, A\mathbf{v}_n] \\
-  \quad = \quad [P(\lambda_1\vect{e}_1) ,\, \ldots \,\,P(\lambda_1\vect{e}_k)\,\,\,P\vect{d}_{k+1}\,\, \ldots \,\,P\vect{d}_{k+1}] \\
-  \quad = \quad P[\lambda_1\vect{e}_1 ,\, \ldots \,\,\lambda_1\vect{e}_k\,\,\,\vect{d}_{k+1}\,\, \ldots \,\,\vect{d}_{k+1}] = P \tilde{D}.
+  \quad = \quad [P(\lambda_1\vect{e}_1) ,\, \ldots \,\,P(\lambda_1\vect{e}_k)\,\,\,P\vect{b}_{k+1}\,\, \ldots \,\,P\vect{b}_{n}] \\
+  \quad = \quad P[\lambda_1\vect{e}_1 ,\, \ldots \,\,\lambda_1\vect{e}_k\,\,\,\vect{b}_{k+1}\,\, \ldots \,\,\vect{b}_{n}] = P B.
 \end{array}  
 $$ 
 
-So we have that  $A = P\tilde{D}P^{-1}$, which means that $A$ and $\tilde{D}$ are similar, hence have the same eigenvalues with the same algebraic
-(and also geometric) multiplicities.
+So we have that  $A = PBP^{-1}$, which means that $A$ and $B$ are similar, hence have the same eigenvalues with the same algebraic (and also geometric) multiplicities.
 
-Note that $\tilde{D}$ is of the form
+Note that $B$ is of the form
 
 $$
 
-  \tilde{D} \,=\,\, \begin{bmatrix} 
+  B \,=\,\, \begin{bmatrix} 
                         \lambda_1 & 0 & \ldots & 0 & * & * & \ldots & * \\
                         0 & \lambda_1 & \ldots & 0 & * & * & \ldots & * \\
                         \vdots & \vdots & \ddots & \vdots &  * & * & \ldots & * \\
@@ -185,8 +195,8 @@ $$
 $$
 
 where there are $k$ entries $\lambda_1$. <BR>
-It follows that the characteristic polynomial  det$(\tilde{D} - \lambda \mathrm I)$  will have *at least*  $k$ factors $(\lambda - \lambda_1)$.
-Thus the algebraic multiplicity of the eigenvalue $\lambda_1$ for the matrix $\tilde{D}$ is greater than or equal to $k$.  From the observed similarity  $A \sim \tilde{D}$ it follows that this also holds for the algebraic multiplicity of $\lambda_1$ for the matrix $A$.
+It follows that the characteristic polynomial  det$(B - \lambda \mathrm I)$  will have *at least*  $k$ factors $(\lambda - \lambda_1)$.
+Thus the algebraic multiplicity of the eigenvalue $\lambda_1$ for the matrix $B$ is greater than or equal to $k$.  From the observed similarity  $A \sim B$ it follows that this also holds for the algebraic multiplicity of $\lambda_1$ for the matrix $A$.
 So indeed the inequality
 
 $$
@@ -279,9 +289,28 @@ matrix $A$ is invertible $\quad \iff \quad \det{(A)} \neq 0$.
 </li>
 <li>
 
-We can use the identities of {prf:ref}`Prop:BasisDim:RankAPEqualToRankPA` from the section 'Basis and Dimension'. 
-Since $P$ and $P^{-1}$ are both invertible we find: if $A = PBP^{-1}$,
-then $\text{rank}(A) = \text{rank}(PBP^{-1})  = \text{rank}(PB) = \text{rank}(B)$.
+If $A$ has rank $n$, then $A$ is invertible, and then $B$ is also invertible, so 
+$B$  has rank $n$ too. <BR>
+If $\text{rank}$ $A < n$ then $\lambda = 0$ is an eigenvalue of both $A$ and $B$.
+In this case we can use
+
+$$
+   \text{rank}\,A = n - \text{dim Nul}\,A
+$$
+Recall that  $\text{Nul}$ $A$ is the eigenspace for the eigenvalue $\lambda = 0$, so 
+$\text{dim Nul}$ $A$ is the geometric multiplicity of the eigenvalue $\lambda = 0$,
+which multiplicity is the same for $A$ and $B$. We deduce that 
+
+<BR>
+
+$$
+   \text{rank}\,A = n - \text{dim Nul}\,A = n - \text{dim Nul}\,B = \text{rank}\,B.
+$$
+
+
+%We can use the identities of {prf:ref}`Prop:BasisDim:RankAPEqualToRankPA` from the %section 'Basis and Dimension'. 
+%Since $P$ and $P^{-1}$ are both invertible we find: if $A = PBP^{-1}$,
+%then $\text{rank}(A) = \text{rank}(PBP^{-1})  = \text{rank}(PB) = \text{rank}(B)$.
 
 </li>
 </ol>
