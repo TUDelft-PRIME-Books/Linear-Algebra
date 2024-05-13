@@ -153,8 +153,8 @@ that holds for the geometric and the algebraic multiplicity of an eigenvalue
 
  ::::::{dropdown}  Proof of &nbsp;{prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity`
 
-Suppose the $n\times n$ matrix $A$ has the eigenvalue $\lambda_1$ of geometric multiplicity $k$.  We have to show that the algebraic multiplicity of $\lambda_1$ is *at least* equal to $k$. We will do so by constructing a matrix $B$ that is similar to $A$ and for which the eigenvalue $\lambda_1$ will clearly be at least equal to $k$. <BR>
-Suppose $\vect{v}_1,\cdots,\vect{v}_k$ are $k$ linearly independent eigenvectors for $\lambda_1$.  We can extend $\{\vect{v}_1,\ldots,\vect{v}_k,\}$ to a basis $\{\vect{v}_1,\ldots,\vect{v}_k, \ldots, \mathbf{v}_n \}$   of $\mathbb{R}^n$.
+Suppose the $n\times n$ matrix $A$ has the eigenvalue $\lambda_1$ of geometric multiplicity $k$.  We have to show that the algebraic multiplicity of $\lambda_1$ is *at least* equal to $k$. We will do so by constructing a matrix $B$ that is similar to $A$ and for which the eigenvalue $\lambda_1$ will clearly have algebraic multiplicity at least equal to $k$. <BR>
+Suppose $\vect{v}_1,\ldots,\vect{v}_k$ are $k$ linearly independent eigenvectors for $\lambda_1$.  We can extend $\{\vect{v}_1,\ldots,\vect{v}_k,\}$ to a basis $\{\vect{v}_1,\ldots,\vect{v}_k, \ldots, \mathbf{v}_n \}$   of $\mathbb{R}^n$.
 Let $P$ be the matrix with  $\vect{v}_1,\ldots,\vect{v}_n$ as columns.  $P$ is invertible, and we have that
 
 $$
@@ -177,7 +177,7 @@ $$
 \end{array}  
 $$ 
 
-So we have that  $A = PBP^{-1}$, which means that $A$ and $B$ are similar, hence have the same eigenvalues with the same algebraic (and also geometric) multiplicities.
+So we have that  $A = PBP^{-1}$, which means that $A$ and $B$ are similar, hence they have the same eigenvalues with the same algebraic (and also geometric) multiplicities.
 
 Note that $B$ is of the form
 
@@ -194,7 +194,7 @@ $$
                      \end{bmatrix},
 $$
 
-where there are $k$ entries $\lambda_1$. <BR>
+where there are $k$ entries $\lambda_1$ on the diagonal. <BR>
 It follows that the characteristic polynomial  det$(B - \lambda \mathrm I)$  will have *at least*  $k$ factors $(\lambda - \lambda_1)$.
 Thus the algebraic multiplicity of the eigenvalue $\lambda_1$ for the matrix $B$ is greater than or equal to $k$.  From the observed similarity  $A \sim B$ it follows that this also holds for the algebraic multiplicity of $\lambda_1$ for the matrix $A$.
 So indeed the inequality
@@ -541,8 +541,6 @@ $$
 ::::::
 
 
-F
-
 
 Are all matrices diagonalizable? Most certainly not, as the following two examples, studied before, show.
 
@@ -556,8 +554,7 @@ The matrix $R = \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}$ of {prf:ref}`Ex:E
 ::::::{prf:remark}
 :label: Rem:Diagonalizable:RotationCtd
 
-Things would be different if we would allow complex eigenvalues and eigenvectors. We will devote a special
-section to this. And then it will appear that the matrix $R$ is **complex diagonalizable**.
+Things would be different if we would allow complex eigenvalues and eigenvectors. We will devote a separate section to this. And then it will appear that the matrix $R$ is **complex diagonalizable**.
 
 ::::::
 

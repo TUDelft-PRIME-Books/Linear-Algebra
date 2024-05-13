@@ -285,10 +285,10 @@ Another natural question is how many linearly **independent** eigenvectors  ther
 
 ::::::{prf:definition}
 
-The **algebraic multiplicity** of an eigenvalue $\lambda_k$ is the number of factors $(\lambda - \lambda_k)$ appearing in the characteristic polynomial. It is often abbreviated as **a.m.**($\lambda$).
+The **algebraic multiplicity** of an eigenvalue $\lambda_k$ is the number of factors $(\lambda - \lambda_k)$ appearing in the characteristic polynomial. It is often abbreviated as **a.m.**($\lambda_k$).
 
 The **geometric multiplicity** of an eigenvalue $\lambda_k$, with short 
-notation **g.m.**($\lambda$),   is the dimension of the eigenspace corresponding to $\lambda_k$. In other words, it is the number of independent eigenvectors for $\lambda_k$.
+notation **g.m.**($\lambda_k$),   is the dimension of the eigenspace corresponding to $\lambda_k$. In other words, it is the number of independent eigenvectors for $\lambda_k$.
 
 
 ::::::
@@ -299,7 +299,7 @@ notation **g.m.**($\lambda$),   is the dimension of the eigenspace corresponding
 We continue with the matrix
 $A = \left[\begin{array}{ccc} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1  \end{array}\right]$
 of {prf:ref}`Ex:EigenValues:SecondCharPoly` and find the geometric multiplicities of the eigenvalues.
-We have seen that $A$ has the eigenvalues $\lambda_1 = 3$ with algebraic multiplicity $2$
+The characteristic polynomial of $A$ was found to be $p_A(\lambda) = (3-\lambda)^2(2-\lambda)$, so $A$ has the eigenvalues $\lambda_1 = 3$ with algebraic multiplicity $2$
 and $\lambda_2 = 2$ with algebraic multiplicity $1$.
 
 To find the geometric multiplicities we proceed as follows.
@@ -344,7 +344,15 @@ $1 \quad \leq \quad$ geometric multiplicity of $\lambda \quad \leq\quad $  algeb
 
 ::::::
 
-As a consequence of this proposition there is one case where the geometric multiplicity follows immediately from the algebraic multiplicity.
+::::::{prf:definition}
+:label: Def:Eigenvalues:Defect
+
+A matrix $A$ that has an eigenvalue $\lambda$ for which the geometric multiplicity is *strictly smaller* than the algebraic multiplicity  is called a **defect** matrix.
+::::::
+
+
+
+As a consequence of {prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity` there is one case where the geometric multiplicity follows immediately from the algebraic multiplicity.
 Namely, if $\lambda$ is an eigenvalue of algebraic multiplicity 1, then the geometric multiplicity must be 1 too: it cannot be larger, because of {prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity`, and it cannot be smaller either, since for any eigenvalue there must be at least one eigenvector.
 
 ::::::{prf:example}
