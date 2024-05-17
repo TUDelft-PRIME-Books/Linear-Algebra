@@ -109,7 +109,7 @@ that is, if we define the complex conjugate of a vector component wise.
 
 ## Vectors and matrices with complex entries
 
-We need a few definitions to settle matters a bit more formally. In the remainder of this section matrices (so in particular vectors) are allowed to have as entries complex numbers. If the entries are supposed to be real numbers we explicitly state this by speaking of a real matrix (or a real vector).
+We need a few definitions to settle matters a bit more formally. In the remainder of this section matrices (so in particular vectors) are allowed to have complex numbers as entries. If the entries are supposed to be real numbers we explicitly state this by speaking of a real matrix (or a real vector).
 
 ::::::{prf:definition}
 :label: Dfn:ComplexEV:Conjugate
@@ -159,7 +159,7 @@ With this we can put the outcomes in {prf:ref}`Ex:ComplexEV:FirstExample` in a b
 :label: Prop:ComplexEV:Conjugation
 
 Suppose $A$ is a _real_ matrix, and $\lambda = \alpha + \beta i$, with $\beta \neq 0$, is an eigenvalue of $A$.
-Then the following properties hold
+Then the following properties hold:
 
 <ol type = "i">
 <li>
@@ -210,7 +210,7 @@ This states exactly that $A$ has the eigenvalue $\overline{\lambda} = \alpha - \
 
 ::::::
 
-Things look especially simple in the next example
+Things look especially simple in the next example.
 
 ::::::{prf:example}
 :label: Ex:ComplexEV:abba
@@ -363,7 +363,7 @@ Comparing real and imaginary parts we conclude that indeed
 
 \begin{cases}
 A\vect{u} = \alpha\vect{u} + \beta\vect{w} \\
-A\vect{w} = -\beta\vect{u} + \alpha\vect{w}
+A\vect{w} = -\beta\vect{u} + \alpha\vect{w}.
 \end{cases}
 
 :::
@@ -374,7 +374,7 @@ If we apply the above to the case $n = 2$, we can rewrite equation {eq}`Eq:Compl
 as
 
 $$
-A [\,\vect{u}\,\, \vect{w}\,] = [\,\vect{u}\,\, \vect{w}\,] \left[\begin{array}{cc} \alpha & -\beta \\ \beta & \alpha \end{array}\right]
+A [\,\vect{u}\,\, \vect{w}\,] = [\,\vect{u}\,\, \vect{w}\,] \left[\begin{array}{cc} \alpha & -\beta \\ \beta & \alpha \end{array}\right].
 $$
 
 So if we define $P$ to be the matrix $[\,\vect{u}\,\, \vect{w}\,]$ then we have $AP = PC$, where
@@ -405,7 +405,7 @@ C = r\left[\begin{array}{cc} \cos(\varphi) & -\sin(\varphi) \\ \sin(\varphi) & \
 .
 $$
 
-We can formulated this as there being a **hidden rotation** in $A$.
+We can formulate this as there being a **hidden rotation** in $A$.
 
 ::::::
 
@@ -550,7 +550,7 @@ Since the real numbers are contained in the complex numbers, a matrix that is re
 </li>
 <li>
 
-The definition also makes sense for matrices with complex numbers as entries. However, we will not pursuit that track.
+The definition also makes sense for matrices with complex numbers as entries. However, we will not pursue that track.
 
 </li>
 </ul>

@@ -3,7 +3,7 @@
 # The Matrix-Vector Product $A\vect{x}$
 
 In this section we will introduce another interpretation/representation of a system of linear equations.  
-We'll define the product of an $m\times n$ matrix $A$ with a vector $\vect{x}$ in $\mathbb{R}^n$. In the next chapter this will also be the stepping stone to the general matrix-matrix product.
+We will define the product of an $m\times n$ matrix $A$ with a vector $\vect{x}$ in $\mathbb{R}^n$. In the next chapter this will also be the stepping stone to the general matrix-matrix product.
 
 (Subsec:MatVecProduct)=
 
@@ -15,7 +15,7 @@ We'll define the product of an $m\times n$ matrix $A$ with a vector $\vect{x}$ i
 The product $A\mathbf{x}$ of an $m\times n$ matrix
 
 $$
- A = [\mathbf{a_1} \,\,\mathbf{a_2}\, \ldots\, \mathbf{a_n}]
+ A = [\mathbf{a}_1 \,\,\mathbf{a}_2\, \ldots\, \mathbf{a}_n]
 $$
 
 with a vector
@@ -28,7 +28,7 @@ $$
 is defined as
 
 $$
-  A\mathbf{x} = x_1\mathbf{a_1} + x_2\mathbf{a_2} + \ldots + x_n\mathbf{a_n}.
+  A\mathbf{x} = x_1\mathbf{a}_1 + x_2\mathbf{a}_2 + \ldots + x_n\mathbf{a}_n.
 $$
 
 So: $A\mathbf{x}$ is the linear combination of the columns of the matrix $A$ with the entries of the vector $\mathbf{x}$ as coefficients.
@@ -212,7 +212,7 @@ So, we can see this linear system as
 - a vector equation:
 
 $$
-  x_1\mathbf{a_1} + x_2\mathbf{a_2} + \ldots + x_n\mathbf{a_n} = \mathbf{b}
+  x_1\mathbf{a}_1 + x_2\mathbf{a}_2 + \ldots + x_n\mathbf{a}_n = \mathbf{b}
 $$
 
 or
@@ -301,7 +301,7 @@ There are several ways to derive the formula. Via the linear combination idea it
 So assume
 
 $$
-  A = [\,\mathbf{a_1}\,\,\,\mathbf{a_2}\,\,\,\ldots\,\,\,\mathbf{a_n}\,], \quad \mathbf{x} =
+  A = [\,\mathbf{a}_1\,\,\,\mathbf{a}_2\,\,\,\ldots\,\,\,\mathbf{a}_n\,], \quad \mathbf{x} =
 \begin{bmatrix}    x_1 \\ x_2 \\ \vdots \\ \vdots \\ x_n  \end{bmatrix},
   \quad
   \mathbf{y} =
@@ -314,17 +314,17 @@ $$
   A\,(\mathbf{x}+\mathbf{y} ) =
   A\,
 \begin{bmatrix}    x_1+y_1 \\ x_2+y_2 \\ \vdots \\ \vdots \\ x_n+y_n  \end{bmatrix} =
-  (x_1+y_1 )\mathbf{a_1} + (x_2+y_2 )\mathbf{a_2} + \ldots
-  + (x_n+y_n )\mathbf{a_n}.
+  (x_1+y_1 )\mathbf{a}_1 + (x_2+y_2 )\mathbf{a}_2 + \ldots
+  + (x_n+y_n )\mathbf{a}_n.
 $$
 
 Changing the order of the terms, putting the terms involving $x_i$ to the front, shows that the last expression is equal to
 
 $$
- \big(x_1\mathbf{a_1} + x_2\mathbf{a_2} + \ldots
-  + x_n\mathbf{a_n}\big)+
-  \big(y_1\mathbf{a_1} + y_2\mathbf{a_2} + \ldots
-  + y_n\mathbf{a_n}\big).
+ \big(x_1\mathbf{a}_1 + x_2\mathbf{a}_2 + \ldots
+  + x_n\mathbf{a}_n\big)+
+  \big(y_1\mathbf{a}_1 + y_2\mathbf{a}_2 + \ldots
+  + y_n\mathbf{a}_n\big).
 $$
 
 The last sum of two vectors can be identified as being
@@ -347,7 +347,7 @@ Prove statement (ii) of the previous proposition.
 Assume
 
 $$
-  A = [\,\mathbf{a_1}\,\,\,\mathbf{a_2}\,\,\,\ldots\,\,\,\mathbf{a_n}\,], \quad \mathbf{x} =
+  A = [\,\mathbf{a}_1\,\,\,\mathbf{a}_2\,\,\,\ldots\,\,\,\mathbf{a}_n\,], \quad \mathbf{x} =
 \begin{bmatrix}    x_1 \\ x_2 \\ \vdots \\ \vdots \\ x_n  \end{bmatrix},
 $$
 
@@ -359,16 +359,16 @@ $$
   A\,(c\mathbf{x}) =
   A\,
 \begin{bmatrix}    cx_1 \\ cx_2 \\ \vdots \\ \vdots \\ cx_n  \end{bmatrix} =
-  cx_1\mathbf{a_1} + cx_2\mathbf{a_2} + \ldots
-  + cx_n\mathbf{a_n}.
+  cx_1\mathbf{a}_1 + cx_2\mathbf{a}_2 + \ldots
+  + cx_n\mathbf{a}_n.
 $$
 
 In the last expression we can take the common factor $c$ out to the front,
 and we see that it becomes equal to
 
 $$
-  c(x_1\mathbf{a_1} + x_2\mathbf{a_2} + \ldots
-  + x_n\mathbf{a_n}) = cA\mathbf{x}.
+  c(x_1\mathbf{a}_1 + x_2\mathbf{a}_2 + \ldots
+  + x_n\mathbf{a}_n) = cA\mathbf{x}.
 $$
 
 ::::
@@ -380,13 +380,13 @@ Using the above rules we can give shorter proofs of statements concerning linear
 
 The contents of that proposition: suppose $(c_{1},...,c_{n})$ is a solution of a linear system. Then $(c_{1}',...,c_{n}')$ is also a solution of the linear system if and only if there exists a solution $(d_{1},...,d_{n})$ of the associated homogeneous system such that $c'_{i}=c_{i}+d_{i}$ for all $i$.
 
-Using the matrix-vector product we can derive this property as follows: \, we can consider the solutions in vector form
+Using the matrix-vector product we can derive this property as follows: &nbsp;we can consider the solutions in vector form,
 
 $$
   \mathbf{c} =
 \begin{bmatrix}    c_1 \\ c_2 \\ \vdots \\ \vdots \\ c_n  \end{bmatrix}, \quad
    \mathbf{c'} =
-\begin{bmatrix}    c'_1 \\ c'_2 \\ \vdots \\ \vdots \\ c'_n  \end{bmatrix}
+\begin{bmatrix}    c'_1 \\ c'_2 \\ \vdots \\ \vdots \\ c'_n  \end{bmatrix},
 $$
 
 and let $A$ and $\mathbf{b}$ have the obvious meanings.
@@ -413,7 +413,7 @@ $$
 $$
 
 is a solution of the homogeneous system.
-Of course
+Note that
 
 $$
 
@@ -662,18 +662,16 @@ A=
 
 $$
 
-The three given vectors span the entire space $\mathbb{R}^3$ if and only if the matrix $A$ has three pivot positions. Using elementary row operations we find that A has the following reduced echelon form.
+The three given vectors span the entire space $\mathbb{R}^3$ if and only if the matrix $A$ has three pivot positions. Using elementary row operations we find that A has the following reduced echelon form:
 
 $$
 
 A=
 \begin{bmatrix} 1 & 0 & 3 \\ 1 & 1 & 5 \\ -1 & 1 & -1 \end{bmatrix}\sim
-\begin{bmatrix} 1 & 0 & 3 \\ 0 & 1 & 2 \\ 0 & 0 & 0 \end{bmatrix}
-
-
+\begin{bmatrix} 1 & 0 & 3 \\ 0 & 1 & 2 \\ 0 & 0 & 0 \end{bmatrix}.
 $$
 
-Since there are only two pivots in the reduced echelon form, we know that $\mathbf{v}_1$, $\mathbf{v}_2$ and $\mathbf{v}_3$ do not span the space $\mathbb{R}^3$.
+Since there are only two pivots in the reduced echelon matrix, we know that $\mathbf{v}_1$, $\mathbf{v}_2$ and $\mathbf{v}_3$ do not span the space $\mathbb{R}^3$.
 
 ::::
 

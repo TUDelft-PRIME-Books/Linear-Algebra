@@ -157,7 +157,7 @@ we see that in all three cases we have that
 
 :::
 
-These are the basics for the general product rule we will see later, that states that
+These are the basics for the general product rule we will see later, which states that
 
 $$
 \text{det}(AB) = \text{det}(A) \text{det} (B)

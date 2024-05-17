@@ -2,6 +2,8 @@
 
 # Diagonalizability
 
+(Subsec:SimilarMatrices)=
+
 ## Similar matrices
 
 ::::::{prf:definition}
@@ -17,7 +19,7 @@ Notation: $A \sim B$.
 
 ::::::
 
-It is true we already used the symbol $\sim$ earlier to denote row equivalence of (augmented) matrices. When we use it, it will always be clear from the context what is the meaning at that instance.
+It is true we already used the symbol $\sim$ earlier to denote row equivalence of (augmented) matrices. When we use it, it will always be clear from the context what  the meaning is at that instance.
 
 ::::::{prf:remark}
 
@@ -127,6 +129,85 @@ Fill in the details of the last remark.
 
 ::::::
 
+The above considerations are summarized in the following proposition.
+
+::::::{prf:proposition}
+:label: Prop:Diagonalizable:EqualMultiplicitiesSimilarMatrices
+
+Suppose  $A$ and $B$ are similar matrices.  Then they have the same eigenvalues with the same algebraic and geometric multiplicities.
+
+::::::
+
+
+
+Using the properties of similar matrices we can prove the inequality
+
+::::::{math}
+:label: Eq:Diagonalizable:GeomMultversusAlgMult
+
+\text{g.m.}(\lambda) \leq \text{a.m.}(\lambda) 
+::::::
+
+that holds for the geometric and the algebraic multiplicity of an eigenvalue 
+ (cf. {prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity`).
+
+ ::::::{dropdown}  Proof of &nbsp;{prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity`
+
+Suppose the $n\times n$ matrix $A$ has the eigenvalue $\lambda_1$ of geometric multiplicity $k$.  We have to show that the algebraic multiplicity of $\lambda_1$ is *at least* equal to $k$. We will do so by constructing a matrix $B$ that is similar to $A$ and for which the eigenvalue $\lambda_1$ will clearly have algebraic multiplicity at least equal to $k$. <BR>
+Suppose $\vect{v}_1,\ldots,\vect{v}_k$ are $k$ linearly independent eigenvectors for $\lambda_1$.  We can extend $\{\vect{v}_1,\ldots,\vect{v}_k,\}$ to a basis $\{\vect{v}_1,\ldots,\vect{v}_k, \ldots, \mathbf{v}_n \}$   of $\mathbb{R}^n$.
+Let $P$ be the matrix with  $\vect{v}_1,\ldots,\vect{v}_n$ as columns.  $P$ is invertible, and we have that
+
+$$
+\begin{array}{ccl}
+AP &=&  A [\vect{v}_1\,\, \ldots \,\, \vect{v}_k\,\, \vect{v}_{k+1}\,\,\ldots \,\, \mathbf{v}_n] \\
+   &=&  [A\vect{v}_1\,\, \ldots \,\, A\vect{v}_k\,\, A\vect{v}_{k+1}\,\,\ldots \,\, A\mathbf{v}_n] \\
+   &=&  [\lambda_1\vect{v}_1\,\, \ldots \,\, \lambda_1\vect{v}_k\,\,A\vect{v}_{k+1}\,\, \ldots \,\, A\mathbf{v}_n],
+\end{array}
+$$
+
+since  $\vect{v}_1, \ldots, \vect{v}_k$ were supposed to be eigenvectors for $\lambda_1$.
+<BR>
+Since $P$ is invertible, for each $j \geq k+1$ the equation $P\vect{x} = A\vect{v}_{j}$ has the (unique) solution,  $\vect{b}_j = P^{-1}A\vect{v}_{j}$.  So we see that
+
+$$
+\begin{array}{l}
+  [\lambda_1\vect{v}_1\,\, \ldots \,\, \lambda_1\vect{v}_k\,\,\,A\vect{v}_{k+1}\,\, \ldots \,\, A\mathbf{v}_n] \\
+  \quad = \quad [P(\lambda_1\vect{e}_1) ,\, \ldots \,\,P(\lambda_1\vect{e}_k)\,\,\,P\vect{b}_{k+1}\,\, \ldots \,\,P\vect{b}_{n}] \\
+  \quad = \quad P[\lambda_1\vect{e}_1 ,\, \ldots \,\,\lambda_1\vect{e}_k\,\,\,\vect{b}_{k+1}\,\, \ldots \,\,\vect{b}_{n}] = P B.
+\end{array}  
+$$ 
+
+So we have that  $A = PBP^{-1}$, which means that $A$ and $B$ are similar, hence they have the same eigenvalues with the same algebraic (and also geometric) multiplicities.
+
+Note that $B$ is of the form
+
+$$
+
+  B \,=\,\, \begin{bmatrix} 
+                        \lambda_1 & 0 & \ldots & 0 & * & * & \ldots & * \\
+                        0 & \lambda_1 & \ldots & 0 & * & * & \ldots & * \\
+                        \vdots & \vdots & \ddots & \vdots &  * & * & \ldots & * \\
+                        0 & 0 & \ldots & \lambda_1 &   * & * & \ldots & * \\
+                        \vdots & \vdots &  & \vdots & \vdots &  \vdots &  \vdots &  \vdots  \\
+                        \vdots & \vdots &  & \vdots & \vdots &  \vdots &  \vdots &  \vdots  \\
+                        0 & 0 & \ldots & 0 &   * & * & \ldots & * \\
+                     \end{bmatrix},
+$$
+
+where there are $k$ entries $\lambda_1$ on the diagonal. <BR>
+It follows that the characteristic polynomial  det$(B - \lambda \mathrm I)$  will have *at least*  $k$ factors $(\lambda - \lambda_1)$.
+Thus the algebraic multiplicity of the eigenvalue $\lambda_1$ for the matrix $B$ is greater than or equal to $k$.  From the observed similarity  $A \sim B$ it follows that this also holds for the algebraic multiplicity of $\lambda_1$ for the matrix $A$.
+So indeed the inequality
+
+$$
+   \text{a.m.}(\lambda_1) \geq  \text{g.m.}(\lambda_1)
+$$
+
+is universally true.
+
+::::::
+
+
 One way to understand the similarity of similar matrices comes from considering the linear transformations they represent.
 In {numref}`Section %s <Subsec:ChangeOfBasis:RelationTETB>` it is shown that if $T:\R^n\to\R^n$ is the linear transformation that has $A$ as its standard matrix, and $P = P_{\mathcal{B}}$ is the change-of-coordinates matrix from the basis $\mathcal{B}$ to the standard matrix, then the matrix of $T$ with respect to basis $\mathcal{B}$ is given by
 
@@ -208,9 +289,28 @@ matrix $A$ is invertible $\quad \iff \quad \det{(A)} \neq 0$.
 </li>
 <li>
 
-We can use the identities of {prf:ref}`Prop:BasisDim:RankAPEqualToRankPA` from the section 'Basis and Dimension'. 
-Since $P$ and $P^{-1}$ are both invertible we find: if $A = PBP^{-1}$,
-then $\text{rank}(A) = \text{rank}(PBP^{-1})  = \text{rank}(PB) = \text{rank}(B)$.
+If $A$ has rank $n$, then $A$ is invertible, and then $B$ is also invertible, so 
+$B$  has rank $n$ too. <BR>
+If $\text{rank}$ $A < n$ then $\lambda = 0$ is an eigenvalue of both $A$ and $B$.
+In this case we can use
+
+$$
+   \text{rank}\,A = n - \text{dim Nul}\,A
+$$
+Recall that  $\text{Nul}$ $A$ is the eigenspace for the eigenvalue $\lambda = 0$, so 
+$\text{dim Nul}$ $A$ is the geometric multiplicity of the eigenvalue $\lambda = 0$,
+which multiplicity is the same for $A$ and $B$. We deduce that 
+
+<BR>
+
+$$
+   \text{rank}\,A = n - \text{dim Nul}\,A = n - \text{dim Nul}\,B = \text{rank}\,B.
+$$
+
+
+%We can use the identities of {prf:ref}`Prop:BasisDim:RankAPEqualToRankPA` from the %section 'Basis and Dimension'. 
+%Since $P$ and $P^{-1}$ are both invertible we find: if $A = PBP^{-1}$,
+%then $\text{rank}(A) = \text{rank}(PBP^{-1})  = \text{rank}(PB) = \text{rank}(B)$.
 
 </li>
 </ol>
@@ -237,7 +337,7 @@ An equivalent alternative characterization of diagonalizability is given in the 
 ::::::{prf:proposition}
 :label: Prop:Eigenvalues:DiagbleVersusEigenvectors
 
-A matrix $A$ is diagonalizable if and only if $A$ has $n$ linearly independent eigenvectors.
+An $n \times n$  matrix $A$ is diagonalizable if and only if $A$ has $n$ linearly independent eigenvectors.
 Such a set of eigenvectors then forms a basis for $\R^n$.
 
 ::::::
@@ -280,9 +380,11 @@ Comparing $AP$ and $PD$ column by column we see that $A\vect{p}_i = d_i\vect{p}_
 
 ::::::
 
-The second proof has a geometric flavour.
+The second proof has a geometric flavour. Open it if you are interested.
 
-::::::{prf:proof}
+
+::::::{dropdown} Second proof of&nbsp;{prf:ref}`Prop:Eigenvalues:DiagbleVersusEigenvectors`
+
 
 First we show that diagonalizability implies the existence of $n$ linearly independent eigenvectors.
 
@@ -352,12 +454,12 @@ $$
 
 and the transformation formula gives
 
-:::{math}
+:::::{math}
 :label: Eq:Diagonalizable:PinvAP
 
 D = [T]_{\mathcal{B}} = P^{-1}[T]_{\mathcal{E}}P = P^{-1}AP,
 
-:::
+:::::
 
 where 
 
@@ -438,6 +540,8 @@ $$
 
 ::::::
 
+
+
 Are all matrices diagonalizable? Most certainly not, as the following two examples, studied before, show.
 
 ::::::{prf:example}
@@ -450,8 +554,7 @@ The matrix $R = \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}$ of {prf:ref}`Ex:E
 ::::::{prf:remark}
 :label: Rem:Diagonalizable:RotationCtd
 
-Things would be different if we would allow complex eigenvalues and eigenvectors. We will devote a special
-section to this. And then it will appear that the matrix $R$ is **complex diagonalizable**.
+Things would be different if we would allow complex eigenvalues and eigenvectors. We will devote a separate section to this. And then it will appear that the matrix $R$ is **complex diagonalizable**.
 
 ::::::
 
@@ -475,7 +578,7 @@ Thus there does not exist a basis of eigenvectors for $A$, and consequently the 
 :label: Ex:Diagonalizable:SecondCharPolyCtd2
 
 The matrix
-$A = \left[\begin{array}{ccc} 4 & -1 & 2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{array}
+$A = \left[\begin{array}{ccc} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{array}
 \right]$
 of {prf:ref}`Ex:EigenValues:SecondCharPoly`
 and {prf:ref}`Ex:EigenValues:SecondCharPolyContinued`

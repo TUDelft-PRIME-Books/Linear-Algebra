@@ -304,6 +304,7 @@ iii. This follows from the distributivity of the real numbers.
 In {numref}`Chapter:Determinants` we will take a look at the determinant of a matrix. For $2 \times 2$ matrices the definition is as follows.
 
 ::::{prf:definition}
+:label: Def:CrossProduct:2x2determinant
 
 Let $a$, $b$, $c$ and $d$ be real numbers. The expression
 

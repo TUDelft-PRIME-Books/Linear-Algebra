@@ -99,7 +99,7 @@ $$
     q(x_1,x_2,x_3) = x_1^2 + 2x_2^2 + 5 x_3^2  - 4 x_1x_2 + 6 x_2x_3.
 $$
 
-So we need a symmetric matric $A = \begin{bmatrix} a_{11} & a_{12} & a_{13} \\ 
+So we need a symmetric matrix $A = \begin{bmatrix} a_{11} & a_{12} & a_{13} \\ 
                                                      a_{12} & a_{22} & a_{23} \\
                                                      a_{13} & a_{23} & a_{33}
                                      \end{bmatrix}$.
@@ -125,7 +125,7 @@ So $A = \begin{bmatrix} 1 & -2 & 0 \\
 
 ::::
 
-If we restrict ourselves to two variables we see that
+If we restrict ourselves to two variables,  we see that
 the graph of a linear function $z = a_1x_1 + a_2x_2 + b$ is a plane.
 
 :::{figure} Images/Fig-QuadForms-Plane1.svg
@@ -161,7 +161,7 @@ $$
    z = x_1^2 + 2x_1x_2 + 3 x_2^2.
 $$
 
-We will we apply the shift
+We will apply the shift
 
 $$
 \tilde{x}_1 = x_1-3,  \,\, \tilde{x}_2 = x_2 + 2,
@@ -207,7 +207,7 @@ $$
 Thus $\mathcal{S}_2$ is also described by
 
 $$
-  z + 6 = 2(x_1+1)^2 - 2(x_1+1)(x_2-2) + (x_2-2)^2
+  z + 6 = 2(x_1+1)^2 - 2(x_1+1)(x_2-2) + (x_2-2)^2.
 $$
 
 This means that if $\mathcal{S}_1$ is translated over the vector
@@ -758,7 +758,7 @@ ax_1^2 + b x_1x_2 + cx_2^2 + dx_1 + ex_2 + f = 0,
 
 ::::
 
-where both the parameter $f$ and at least one the parameters $a,b,c$ are not equal to zero.  
+where both the parameter $f$ and at least one of the parameters $a,b,c$ are not equal to zero.  
 % When $f$ is equal to zero the conic section is sometimes called _degenerate_.
 
 ::::{prf:example}
@@ -1035,7 +1035,7 @@ $$
 
 This is an ellipse in the $y_1$-$y_2$-plane with long axis $6\sqrt{2}$, the length of the line segment from $(-3\sqrt{2},0)$ to $(3\sqrt{2},0)$, and short axis $\dfrac{12}{\sqrt{7}}$.
 
-For the ellipse in the $x_1$-$x_2$-plane we find the principle axes
+For the ellipse in the $x_1$-$x_2$-plane we find the principal axes
 
 $$
   \begin{bmatrix} x_1 \\ x_2\end{bmatrix} = c\vect{v}_1 = c\begin{bmatrix} 2 \\ -1\end{bmatrix} \quad \text{and}\quad \begin{bmatrix} x_1 \\ x_2\end{bmatrix} = c\vect{v}_2 = c\begin{bmatrix} 1 \\ 2\end{bmatrix}.
@@ -1177,7 +1177,7 @@ The following exercises are a more theoretical.
 :url: https://embed.grasple.com/exercises/7fea2ed7-c54f-4665-8ac8-611a8b0f6c5e?id=93114
 :label: grasple_exercise_8_2_14
 :dropdown:
-:description: If $A,B$ are symmetric matrices with positive eigenvalues, what about $A+B$?
+:description: If $A$ and $B$ are symmetric matrices with positive eigenvalues, what about $A+B$?
 
 ::::
 

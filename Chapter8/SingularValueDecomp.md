@@ -6,7 +6,7 @@ We have seen already several ways to factorise matrices. In {numref}`Sec:MatFact
 we laid the QR Decomposition on the table. In {numref}`Sec:SymmetricMat` we showed that every symmetric (square) matrix $A$ can be written as  $A = QDQ^{-1} = QDQ^T$. In this section it is in a sense this last decomposition we will generalize to non-symmetric matrices, and even to non-square matrices.
 We will introduce and study the so-called **singular value decomposition** (SVD) of a matrix.
 In the first subsection ({numref}`Subsec:SVD:Definition`) we will give the definition of the SVD, and illustrate it with a few examples.  In the second subsection ({numref}`Subsec:SVD:Existence`) an algorithm to compute the SVD is presented and illustrated. And it will be shown that this algorithm always yields a proper SVD.
-The last two subsections  will be devoted to understanding the SVD in a geometric way, and to possible practicle uses of the SVD.
+The last two subsections  will be devoted to understanding the SVD in a geometric way, and to possible practical uses of the SVD.
 
 (Subsec:SVD:Definition)= 
 
@@ -281,8 +281,8 @@ corresponding to $\lambda_1, \ldots, \lambda_n$,   and take them as columns in t
 
 ::::
 
-Apart from step 2., where we need the eigenvalues of an $n\times n$ matrix $A^TA$, every step can be worked out with pen and paper (though step 4. and step 5. can be  terribly error prone.) <BR>
-The step that, we think,  most needs some explaining is step 5.  Why does it lead to an *orthonormal* set of vectors $\{\mathbf{u}_1,\dots,\mathbf{u}_r\}$?  We will show that indeed it does in the proof of {prf:ref}`Thm:SVD:Existence`.  It is time for an example first  (no nice numbers though!)
+Apart from step 2., where we need the eigenvalues of an $n\times n$ matrix $A^TA$, every step can be worked out with pen and paper (though step 4. and step 5. can be  terribly error prone). <BR>
+The step that, we think,  most needs some explaining is step 5.  Why does it lead to an *orthonormal* set of vectors $\{\mathbf{u}_1,\dots,\mathbf{u}_r\}$?  We will show that indeed it does in the proof of {prf:ref}`Thm:SVD:Existence`.  It is time for an example first  (no nice numbers though!).
 
 
 ::::{prf:example}
@@ -324,7 +324,7 @@ We follow the steps of the algorithm.
   Normalizing and putting them in a matrix gives  $V = \begin{bmatrix}
 \frac{2}{\sqrt{5}} & \frac{1}{\sqrt{5}} \\[.5ex]
 -\frac{1}{\sqrt{5}} & \frac{2}{\sqrt{5}}
-\end{bmatrix}$
+\end{bmatrix}$.
 
 5. We compute  <BR>
 $\vect{u}_1 = \dfrac{1}{\sigma_1}A\vect{v}_1 = \dfrac{1}{\sqrt{42}}\times\dfrac{1}{\sqrt{5}} \begin{bmatrix}
@@ -364,11 +364,11 @@ Let $A$ be an $m\times n$ matrix with real entries. Then the following propertie
 
 \item The matrices $AA^T$ and $A^TA$ are symmetric.
 \item $\Nul{A} = \Nul{(A^TA)}$.
-\item $\Rank{A} = \Rank{(A^TA)}$
+\item $\Rank{A} = \Rank{(A^TA)}$.
 \label{Item:Prop:SVD:propertiesATA:samerankAandATA}
 \item The eigenvalues of $A^TA$ are real and nonnegative.
 \label{Item:Prop:SVD:propertiesATA:nonzeroeigvals}
-\item The non-zero eigenvalues of $AA^T$ are the same as the non-zero eigenvalues of $A^TA$.  Moreover the algebraic and geometric muliplicities of these eigenvalues are the same 
+\item The non-zero eigenvalues of $AA^T$ are the same as the non-zero eigenvalues of $A^TA$.  Moreover the algebraic and geometric multiplicities of these eigenvalues are the same. 
 \label{Item:Prop:SVD:propertiesATA:sameeigvals}
 :::
 
@@ -428,7 +428,7 @@ Therefore, $A\mathbf{u}\ne \mathbf{0}$ and $A\mathbf{u}$ is an eigenvector of $A
 To prove the converse, one can use a similar argument.
 
 
-About the multiplicities.  Since $A^TA$ is symmetric, hence diagonalizable, for each eigenvalue $\lambda$, the geometric and algebraic multiplicity are equal. And the same holds, of course, for the matrix $AA^T$.  So we are done if we can show that for each eigenvalue $\lambda_i \neq 0$,
+Now let's have a look at the multiplicities.   Since $A^TA$ is symmetric, hence diagonalizable, for each eigenvalue $\lambda$, the geometric and algebraic multiplicity are equal. And the same holds, of course, for the matrix $AA^T$.  So we are done if we can show that for each eigenvalue $\lambda_i \neq 0$,
 
 $$
     \text{g.m.}_{A^TA}(\lambda_i) = \text{g.m.}_{AA^T}(\lambda_i) 
@@ -646,7 +646,7 @@ $$
             -\frac{2}{7} & \frac{3}{\sqrt{245}}  & \frac{2}{\sqrt{5}}& -\frac{2}{7}\\
             -\frac{2}{7} & \frac{10}{\sqrt{245}} &   0        &\frac{5}{7} \\
             -\frac{5}{7} & -\frac{10}{\sqrt{245}}&   0        & \frac{2}{7}\\
-       \end{bmatrix}
+       \end{bmatrix}.
 $$
 
 And then we must not forget that we have just constructed an SVD for $A^T$ instead of $A$!

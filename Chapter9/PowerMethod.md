@@ -2,8 +2,10 @@
 
 # The Power Method
 
-The eigenvalues of an $n\times n$ matrix $A$ to a large extent characterize the matrix. In theory they can be found as the zeros of the characteristic polynomial. Already for $n = 3$ it is not an easy matter to find the exact zeros, and for $n\geq 5$ it is close to impossible.
-One way to go about then is to use a numerical method to solve an equation of degree $n$. Alternatively, there are algorithms more in the vein of linear algebra to find approximations of one or more eigenvalues. The simplest of these is the _power method_. This method often provides at least the eigenvalue of the largest absolute value (or, modulus). Note that this is in fact the most important eigenvalue concerning the stability or instability of the linear dynamical system connected to $A$.
+The eigenvalues of an $n\times n$ matrix $A$ to a large extent characterize the matrix. In theory they can be found as the zeros of the characteristic polynomial. Already for $n = 3$ it is not an easy matter to find the exact zeros, and for $n\geq 5$ there is no general formula for the zeros.  
+One way to resolve this is to use a numerical method to solve an equation of degree $n$. Alternatively, there are algorithms more in the vein of linear algebra to find approximations of one or more eigenvalues. The simplest of these is the _power method_. This method often provides the eigenvalue of the largest absolute value (or, modulus), and this comes with an eigenvector as well. Note that this is in fact the most important eigenvalue concerning the stability or instability of the linear dynamical system connected to $A$.
+
+(Subsec:Powermethod:Basics) =
 
 ## The Basics
 
@@ -17,7 +19,7 @@ $$
 $$
 
 We know from {prf:ref}`Prop:DynSystDiscrete:DiagCase` in {numref}`Sec:DynSystDiscrete` that for a *diagonalizable* matrix $A$ with eigenvalues
-$\lambda_1, \ldots, \lambda_n$, the $k$-th vector in the process is given by
+$\lambda_1, \ldots, \lambda_n$ and corresponding eigenvectors  $\vect{v}_1, \ldots, \vect{v}_n$, the $k$-th vector in the process is given by
 
 ::::{math}
 :label: Eq:PowerMethod:GenSol
@@ -26,7 +28,12 @@ $\lambda_1, \ldots, \lambda_n$, the $k$-th vector in the process is given by
 
 ::::
 
-where $\vect{v}_1, \ldots, \vect{v}_n$ are corresponding eigenvectors. <BR>
+if we start from
+
+$$
+  \vect{x}_{0} = \vect{s} = c_1\vect{v}_1 + c_2\vect{v}_2 +  \ldots + c_n\vect{v}_n
+$$
+ 
 Now suppose the eigenvalues are ordered according to
 
 $$
@@ -51,7 +58,7 @@ $$
 $$
 
 That is $\vect{x}_k$ is 'almost' an eigenvector.
-A minor complication: if $|\lambda_1| > 1$, $\vect{x}_k$ will 'go to infinity' and if $|\lambda_1| < 1$, $\vect{x}_k$ will 'go to zero'. This complication is overcome by a proper rescaling.
+A minor complication: if $|\lambda_1| > 1$, $\norm{\vect{x}_k}$ will go to infinity and if $|\lambda_1| < 1$, $\vect{x}_k$ will go to zero. This complication is overcome by a proper rescaling.
 
 We put a name to the situation where a matrix $A$ has a single eigenvalue of highest absolute value.
 
@@ -78,11 +85,11 @@ Suppose $A$ is an $n\times n$ matrix.
 <u>Step 1</u> &nbsp; Choose an arbitrary nonzero vector $\vect{x}$ in $\R^n$.
 
 <u>Step 2</u> &nbsp; Repeat the following steps: <BR>
-&nbsp; --- Compute $\vect{y} = A\vect{x}$;<BR>
-&nbsp; --- Find the entry $\mu$ of $\vect{y}$ of the highest absolute value; <BR>
-&nbsp; --- Replace $\vect{x}$ by $\dfrac{1}{\mu}\vect{y}$.
+&nbsp; (i) Compute $\vect{y} = A\vect{x}$;<BR>
+&nbsp; (ii) Find the entry $\mu$ of $\vect{y}$ of the highest absolute value; <BR>
+&nbsp; (iii) Replace $\vect{x}$ by $\dfrac{1}{\mu}\vect{y}$.
 
-The steps are repeated until the process more or less stabilizes. For instance, until the difference between the last two computed vectors is smaller that a pre-determined 'error' $\varepsilon$.
+TStep 2 is repeated until the process more or less stabilizes. For instance, until the difference between the last two computed vectors is smaller that a pre-determined 'error' $\varepsilon$.
 
 ::::
 
@@ -101,7 +108,7 @@ $$
 the algorithm discards all intermediate iterates.<BR>  
 We are only interested in the last iterate anyway, since we expect this to be the best approximation of an eigenvector.
 
-The scaling step is necessary to avoid ending up at the zero vector or 'at infinity', where all information is lost.
+The scaling step is necessary to avoid ending up at the zero vector or 'at infinity', where all information is lost.  There are alternative ways to scale the iterates.  A common one is to scale with the factors  $\dfrac{1}{\norm{\vect{y}_k}}$, that is, to normalize the vectors $\vect{y}_k$.
 
 ::::
 
@@ -122,7 +129,7 @@ Moreover, suppose $\vect{x}$ is the result after a (sufficiently) large number o
 With the scalings we consider in fact the dynamical process
 
 $$
-   \vect{x}_0 = \vect{s}, \quad \vect{x}_{k+1} = \frac{1}{\mu_k} A\vect{x}_k.
+   \vect{u}_0 = \vect{s}, \quad \vect{u}_{k+1} = \frac{1}{\mu_k} A\vect{u}_k.
 $$
 
 This process yields a sequence of vectors with the same directions as the
@@ -139,7 +146,7 @@ $$
 $$
 
 the vectors $\vect{x}_k$ in the long run behave as $c_1\lambda_1^k\vect{v}_1$. <BR>
-The effect of the scalings is that all along the way we keep vectors with largest entry 1. Thus the scaled process will converge to the dominant eigenvector with largest entry 1.
+The effect of the scalings is that all along the way we keep vectors with largest entry 1. Thus the scaled process will converge to the dominant eigenvector $\vect{u}$ with largest entry 1.
 
 ::::
 
@@ -582,3 +589,71 @@ Since $|\lambda_{1,2}| > |\lambda_{3}| > |\lambda_{4}|$, the eigenvalue $\lambda
 ::::
 
 For the moment I think this is enough. I can add the strategy to handle a dominant eigenvalue that is complex, as in the last example. But should I?
+
+
+## Power method and complex eigenvalues
+
+In {numref}`Subsec:Powermethod:Basics` we assumed that the matrix $A$ be diagonalizable,
+and in that case we could use {eq}`Eq:PowerMethod:GenSol` to prove that the method in general converges, and that the speed of convergence depends on the quotient
+
+$$
+   \dfrac{|\lambda_2|}{|\lambda_1|}.
+$$   
+
+In fact, the requirement of diagonalizability is too strong.  The power method will
+also work for non-diagonalizable matrices, as long as the is a unique dominant eigenvalue.
+
+::::{prf:example}
+:label: Ex:PowerMethod:SecondExample
+Let us apply the power method to the following matrix plus 'initial guess
+
+$$
+  A = \begin{bmatrix}
+     7  &  -1  &   5\\
+    -2  &   7  &   6\\
+     2  &  -2  &   6        \end{bmatrix}, \quad
+       \vect{x}_0 = \begin{bmatrix}
+         1 \\ 1 \\ 1        \end{bmatrix}.
+$$
+
+We will continue refreshing the vector $\vect{x}$ until two consecutive
+iterates satisfy
+
+$$
+  \norm{\vect{x}_{k+1} - \vect{x}_{k}} \leq 10^{-4}.
+$$
+
+This restriction is met after 23 iterations. The current value of $\vect{x}_{23}$,
+up to four decimals is then
+
+$$
+    \vect{x}_{23} = \begin{bmatrix}
+         1.0000 \\ 0.3612 \\ 0.4456  \end{bmatrix}.
+$$
+
+And by computing $A\vect{x}$, which yields
+
+$$
+  A\vect{x} = \begin{bmatrix}
+         8.8668 \\ 3.2024 \\ 3.9512  \end{bmatrix},
+$$
+
+we read off that the dominant eigenvalue is (approximately)
+$\lambda_1 = 8.8668$.
+
+In this example the actual eigenvalues up to four decimals are given by
+
+$$
+  \lambda_1 = 8.8675, \quad  \lambda_{2,3} =  5.5663 \pm 1.8164i.
+$$
+
+So the matrix is not real diagonalizable, but it is complex diagonalizable.
+Since the dominant eigenvalue is real, and the ratio
+
+$$
+  \frac{|\lambda_{2,3}|}{|\lambda_{1}|} \approx 0.66 < 1,
+$$
+
+we can still use Equation {eq}`Eq:PowerMethod:GenSol-2` to conclude that, except for very unfortunate initial vectors, the method will lead to a dominant eigenvector. As it did indeed.
+
+::::

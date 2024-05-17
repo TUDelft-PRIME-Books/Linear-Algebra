@@ -66,7 +66,7 @@ This theorem is known as the _Spectral Theorem for Symmetric Matrices_.
 In other contexts the word _spectrum_ of a transformation is used for the set of eigenvalues.
 ::::
 
-So, for a symmetric matrix an orthonormal basis of eigenvectors always exists. For the inertia tensor of a 3D body such a basis corresponds to the (perpendicular) principle axes.
+So, for a symmetric matrix an orthonormal basis of eigenvectors always exists. For the inertia tensor of a 3D body such a basis corresponds to the (perpendicular) principal axes.
 
 ::::{prf:proof} Of the converse of {prf:ref}`Thm:SymmetricMat:OrthogDiag`.
 
@@ -113,7 +113,7 @@ $$
    \begin{bmatrix}2&1\\1&-2 \end{bmatrix}^{-1}.
 $$
 
-In {numref}`Figure %s <Fig:GramSchmidt:GS-step123>`
+In {numref}`Figure %s <Fig:SymmetricMat:Evectors>`
 the image of the unit circle under the transformation $\vect{x} \mapsto A\vect{x}$ is shown. $\vect{q}_1$ and $\vect{q}_2$ are two orthonormal unit eigenvectors.
 
 :::{figure} Images/Fig-SymmetricMat-Evectors.svg
@@ -598,8 +598,7 @@ $$
     0 &   \\
      \vdots   & & \tilde{Q}_2 &  \\
     0 &
-   \end{array}\right]
-
+   \end{array}\right],
 
 $$
 
@@ -852,7 +851,7 @@ Furthermore these one-dimensional subspaces are orthogonal to each other.
 So we have that this symmetric matrix can be written as a linear combination of matrices that represent orthogonal projections.
 ::::
 
-The construction we performed in the last example can be generalized. As is the content of the last theorem in this section.
+The construction we performed in the last example can be generalized. Which is the content of the last theorem in this section.
 
 ::::{prf:theorem} Spectral Decomposition of Symmetric Matrices
 :label: Thm:SymmetricMat:SpectralDecomp

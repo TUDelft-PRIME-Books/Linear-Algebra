@@ -141,7 +141,7 @@ $$
 
 where $\varphi$ is the angle from $\vect{u}$ to the left (= counterclockwise) to $\vect{v}$.
 
-We see that $ad-bc$ is equal to the area of the parallelogram if the angle from $\vect{u}$ to $\vect{v}$ is less then $\pi$, and minus this area if the angle is between $\pi$ and $2\pi$.
+We see that $ad-bc$ is equal to the area of the parallelogram if the angle from $\vect{u}$ to $\vect{v}$ is less then $\pi$, and minus this area if the angle is between $\pi$ and $2\pi$.  We call this the *signed area*.
 
 ::::::
 
@@ -247,7 +247,7 @@ Verify the four properties of {prf:ref}`Prop:DetGeometric:Properties2by2Det`
 
 ::::::
 
-The properties have a clear geometric interpretation using the notion of 'signed area'.
+The properties have a clear geometric interpretation using the notion of signed area.
 The following alternative proof uses this geometric viewpoint.
 
 ::::::{prf:proof}
@@ -268,7 +268,7 @@ Interchanging $\vect{u}$ and $\vect{v}$ does not alter the parallelogram. Howeve
 
 $\det{(\vect{u},k\vect{v})} = k\times\det{(\vect{u},\vect{v})}$, $k \in \R$.
 
-Giving one of the vectors a factor $k$ changes the area with a factor $|k|$. If $k > 0$, the orientation of the two vector does not change, so the determinant gets a factor $|k|$, which in this case is equal to $k$. If however $k < 0$, then the orientation does change, so the determinant gets a factor $-|k|$, which in this case is again equal to $k$.
+Multiplying one of the vectors by a factor $k$ changes the area with a factor $|k|$. If $k > 0$, the orientation of the two vector does not change, so the determinant gets a factor $|k|$, which in this case is equal to $k$. If however $k < 0$, then the orientation does change, so the determinant gets a factor $-|k|$, which in this case is again equal to $k$.
 
 </li>
 <li>
@@ -526,7 +526,7 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 :url: https://embed.grasple.com/exercises/3126529d-db82-43e2-862d-7f013f39f619?id=93128
 :label: grasple_exercise_5_1_1
 :dropdown:
-:description: Area of paralellogram in the plane (with vertex at (0,0)).
+:description: Area of parallelogram in the plane (with vertex at (0,0)).
 
 ::::::
 
@@ -534,7 +534,7 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 :url: https://embed.grasple.com/exercises/13e76393-8f38-48aa-9685-2132208a0cc8?id=93131
 :label: grasple_exercise_5_1_2
 :dropdown:
-:description: Area of paralellogram in the plane (no vertex at (0,0)).
+:description: Area of parallelogram in the plane (no vertex at (0,0)).
 
 ::::::
 
@@ -551,7 +551,7 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 :url: https://embed.grasple.com/exercises/2d846d56-3729-468e-80d8-74ec6d348719?id=93134
 :label: grasple_exercise_5_1_4
 :dropdown:
-:description: Volume of paralellepiped  (with  vertex at (0,0,0)).
+:description: Volume of parallelepiped  (with  vertex at (0,0,0)).
 
 ::::::
 
@@ -561,7 +561,7 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 :url: https://embed.grasple.com/exercises/2d846d56-3729-468e-80d8-74ec6d348719?id=93134
 :label: grasple_exercise_5_1_5
 :dropdown:
-:description: Volume of paralellepiped  (with  vertex at (0,0,0)).
+:description: Volume of parallelepiped  (with  vertex at (0,0,0)).
 ::::::
 
 ::::::{grasple}
