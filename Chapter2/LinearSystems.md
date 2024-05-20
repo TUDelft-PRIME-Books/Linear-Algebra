@@ -94,7 +94,7 @@ Of course, if we have equations we want to solve them. Here is what we mean by t
 A **solution** of a linear system is an ordered list of $n$ values $(c_1,  c_2, \ldots, c_n)$, or, depending on the context, a vector $\begin{bmatrix}c_1 \\ c_2 \\ \vdots \\ c_n  \end{bmatrix}$, such that substitution of
 
 $$
- x_1 = c_1, x_2 = c_2, \ldots, x_n = c_n
+ x_1 = c_1, \,\, x_2 = c_2, \, \ldots\, , \,\, x_n = c_n
 $$
 
 into each of the equations yields a true identity.
@@ -178,14 +178,14 @@ then automatically
 
 $$
 
-  4c_1 + 6c_2 + 2c_3 = 2(2c_1 + 3c_2 + c_3) = 10 \neq 8
+  4c_1 + 6c_2 + 2c_3 = 2(2c_1 + 3c_2 + c_3) = 10 \neq 8,
 $$
 
 so $(c_1,c_2,c_3)$ cannot also be a solution of the third equation.
 
 ::::
 
-If the solution set of a system is empty, a system is said to be inconsistent.
+If the solution set of a linear system is empty, a system is said to be inconsistent.
 This concept and its opposite are sufficiently important to be properly defined.
 
 ::::{prf:definition}
@@ -202,7 +202,7 @@ The simplest inconsistent system may well be the system with the one equation
 
 $$
 
-   0x_1 + 0x_2 + \cdots + 0x_n = 1
+   0x_1 + 0x_2 + \,\cdots\, + 0x_n = 1
 $$
 
 As we will see later, this conflicting equation in a way pops up in any inconsistent system.
@@ -220,7 +220,7 @@ Find all solutions of the equation in the variables $x_1,\ldots,x_5$.
 
 $$
 
-  x_1 + 4x_2 + 5x_3 - x_5 = 7
+  x_1 + 4x_2 + 5x_3 + 0x_4 - x_5 = 7
 $$
 
 One way to denote the set of solutions:
@@ -238,7 +238,7 @@ By this we mean: if we assign arbitrary values to the variables $x_2, x_3, x_4$ 
 
 $$
 
-  x_2 = c_1, x_3 = c_2, x_4 = c_3, x_5 = c_4,
+  x_2 = c_1,\,\, x_3 = c_2, \,\, x_4 = c_3, \,\, x_5 = c_4,
 $$
 
 and put
@@ -307,7 +307,7 @@ $$
     \end{array}\right.
 $$
 
-First method: from the first equation it follows that
+**First method**: from the first equation it follows that
 
 $$
   2x_1 = -2 + 5x_2.
@@ -344,19 +344,19 @@ Thus we have found that there is a unique solution:
 
 $$
 
-    \left\{\begin{array}{l} x_1 = 4 \\ x_2 = 2 \end{array} \right.
+    \left\{\begin{array}{l} x_1 = 4 \\ x_2 = 2. \end{array} \right.
 $$
 
 There is nothing wrong with this method, but with more than two equations it has the tendency to become messy.
 
-Second method: take clever combinations of the equations to eliminate variables. For the above example we may for instance subtract the first equation twice from the second. Think a moment why this is okay. It is the crucial step in the elimination method we will explain in the next subsection.
+**Second method**: take clever combinations of the equations to eliminate variables. For the above example we may for instance subtract the first equation twice from the second. Think a moment why this is okay. It is the crucial step in the elimination method we will explain in the next subsection.
 
 $$
 
    \left\{\begin{array}{ccccc}
         2x_1&-&5x_2&=&-2\\
         4x_1&-&7x_2&=& 2
-    \end{array}\right.\quad\Rightarrow\quad
+    \end{array}\right.\quad\Longrightarrow\quad
      \left\{\begin{array}{ccccc}
         2x_1&-&5x_2&=&-2\\
             & &3x_2&=& 6
@@ -386,7 +386,7 @@ $$
    \left\{\begin{array}{ccccccc}
              x_1 &+&  3x_2 &-&  2x_3 &=&  4 \\
             3x_1 &+&  7x_2 &-&  2x_3 &=&  8 \\
-            2x_1 &+& 10x_2 &-&  9x_3 &=& 4
+            2x_1 &+& 10x_2 &-&  9x_3 &=& 4.
           \end{array}
    \right.
 $$
@@ -415,7 +415,7 @@ Now, why is this okay, why is it allowed to 'subtract equations'? Let us introdu
 
 $$
 
- L_1 = x_1  +3x_2 -  2x_3, \quad L_2 = 3x_1 +7 x_2  -2x_3.
+ L_1 = x_1  +3x_2 -  2x_3, \quad L_2 = 3x_1 +7 x_2  -2x_3, 
 $$
 
 for the expressions on the left sides of the first two equations.
@@ -530,7 +530,7 @@ The other two statements are rather obvious.
 :label: Ex:LinSystems:I
 
 We take up {prf:ref}`Ex:LinSystems:EliminationFirst` at the point where we left it and work our way to its solution.
-Also let us introduce a notation that makes it easier for the reader to see what's going on. And also for yourself, in case you look back at your computations later, or if you want to check your computations. The '$E$' stands for: 'Equation'.
+Also we will introduce a notation that makes it easier for the reader to see what's going on. And also for yourself, in case you look back at your computations later, e.g., if you want to check your computations. The '$E$' stands for: 'Equation'.
 
 We scale the second equation with a factor $-\frac12$
 
@@ -645,12 +645,12 @@ $$
     \left\{\begin{array}{ccccccccccccc}
               x_1 &+&  4x_2 &-&  5x_3 &=&  4  \\
                   & &  -x_2 &+&  8x_3 &=&  1 \\
-                  & &       & &     0 &=&  1
+                  & &       & &     0 &=&  1.
           \end{array}
    \right.
 $$
 
-and from the last equation it immediately follows that there are no solutions, in other words: the system is inconsistent.
+From the last equation it immediately follows that there are no solutions, in other words, the system is *inconsistent*.
 
 ::::
 
@@ -912,7 +912,7 @@ $$
    \right.
 $$
 
-We will apply the same simplifications to the system as before. Parallel to this we adapt the augmented matrix accordingly, using a notation that speaks for itself.
+We will apply the same simplifications to the system as before. Parallel to this we adapt the augmented matrix accordingly, using a notation that speaks for itself.  $R$ stands for 'row'.
 
 $$
  \begin{array}{lcl}
@@ -1933,7 +1933,7 @@ The remaining exercises tend to be a bit more theoretic.
 :url: https://embed.grasple.com/exercises/9bb8381d-f1a2-4e58-8928-4985cce492c4?id=76019
 :label: grasple_exercise_2_1_2
 :dropdown:
-:description: Identifying the size of a linear system
+:description: Identifying the size of a linear system.
 
 ::::
 
@@ -1981,7 +1981,7 @@ The remaining exercises tend to be a bit more theoretic.
 :url: https://embed.grasple.com/exercises/c01e55fb-21d2-4539-a870-353a40d51db0?id=69506
 :label: grasple_exercise_2_1_8
 :dropdown:
-:description: To check whether a linear system is consistent
+:description: To check whether a linear system is consistent.
 
 ::::
 
@@ -1989,7 +1989,7 @@ The remaining exercises tend to be a bit more theoretic.
 :url: https://embed.grasple.com/exercises/796aca3d-2b17-4e17-bad7-a83c23c88db8?id=69545
 :label: grasple_exercise_2_1_9
 :dropdown:
-:description: To check whether a linear system is consistent
+:description: To check whether a linear system is consistent.
 
 ::::
 
@@ -1997,7 +1997,7 @@ The remaining exercises tend to be a bit more theoretic.
 :url: https://embed.grasple.com/exercises/447cc6ad-095e-4704-9445-8fcb4e9c4b8e?id=69587
 :label: grasple_exercise_2_1_10
 :dropdown:
-:description: To recognize row operations
+:description: To recognize row operations.
 
 ::::
 
@@ -2005,7 +2005,7 @@ The remaining exercises tend to be a bit more theoretic.
 :url: https://embed.grasple.com/exercises/204cb1ad-0608-40ce-bb56-a2a6c6e8f1af?id=69559
 :label: grasple_exercise_2_1_11
 :dropdown:
-:description: To find the row reduced echelon form
+:description: To find the row reduced echelon form.
 
 ::::
 
@@ -2013,7 +2013,7 @@ The remaining exercises tend to be a bit more theoretic.
 :url: https://embed.grasple.com/exercises/a05fdf80-1325-4e86-874e-cd858133ad46?id=69558
 :label: grasple_exercise_2_1_12
 :dropdown:
-:description: To find the row reduced echelon form
+:description: To find the row reduced echelon form.
 
 ::::
 
@@ -2021,7 +2021,7 @@ The remaining exercises tend to be a bit more theoretic.
 :url: https://embed.grasple.com/exercises/73ced8a4-d6f8-494f-b58a-9e2f4053cd5b?id=82689
 :label: grasple_exercise_2_1_13
 :dropdown:
-:description: To find the row reduced echelon form
+:description: To find the row reduced echelon form.
 
 ::::
 
@@ -2045,7 +2045,7 @@ The remaining exercises tend to be a bit more theoretic.
 :url: https://embed.grasple.com/exercises/8d249aed-fa38-4a70-8271-8be07187dd06?id=69541
 :label: grasple_exercise_2_1_16
 :dropdown:
-:description: Solving a linear system using the augmented matrix
+:description: Solving a linear system using the augmented matrix.
 
 ::::
 
@@ -2053,11 +2053,11 @@ The remaining exercises tend to be a bit more theoretic.
 :url: https://embed.grasple.com/exercises/8d249aed-fa38-4a70-8271-8be07187dd06?id=69541
 :label: grasple_exercise_2_1_17
 :dropdown:
-:description: Solving a linear system using the augmented matrix
+:description: Solving a linear system using the augmented matrix.
 
 ::::
 
-The remaining exercises are a bit more theoretical
+The remaining exercises are a bit more theoretical.
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/34663755-68a2-46ec-a3e7-0ad78ba9bdcd?id=71059
@@ -2079,7 +2079,7 @@ The remaining exercises are a bit more theoretical
 :url: https://embed.grasple.com/exercises/e9b7c9da-fe93-46a3-bde7-6bd8c4583aa8?id=68838
 :label: grasple_exercise_2_1_T3
 :dropdown:
-:description: To determine which variables can be taken as free variables
+:description: To determine which variables can be taken as free variables.
 
 ::::
 
@@ -2122,7 +2122,7 @@ Three exercises about linear systems and pivots.
 :url: https://embed.grasple.com/exercises/9e6cf6e3-80d2-4552-b668-cfc3bcdad27a?id=69748
 :label: grasple_exercise_2_1_T5B
 :dropdown:
-:description: Linear systems and pivots
+:description: Linear systems and pivots.
 
 ::::
 
@@ -2130,7 +2130,7 @@ Three exercises about linear systems and pivots.
 :url: https://embed.grasple.com/exercises/5eb59a87-6524-4563-9c86-f54e6fdca71d?id=69749
 :label: grasple_exercise_2_1_T5C
 :dropdown:
-:description: Linear systems and pivots
+:description: Linear systems and pivots.
 
 ::::
 
@@ -2146,7 +2146,7 @@ Three exercises about linear systems and pivots.
 :url: https://embed.grasple.com/exercises/d8ed4c96-da3f-4fb4-baa4-77c99cfdfeae?id=70370
 :label: grasple_exercise_2_1_T17
 :dropdown:
-:description: How many 'different' echelon forms
+:description: How many 'different' echelon forms are there?
 
 ::::
 
@@ -2154,7 +2154,7 @@ Three exercises about linear systems and pivots.
 :url: https://embed.grasple.com/exercises/23a43d40-9e2d-4d92-bf63-40519dcb7d65?id=82692
 :label: grasple_exercise_2_1_T18  
 :dropdown:
-:description: To determine (in)consistency without computations ('by inspection')
+:description: To determine (in)consistency without computations ('by inspection').
 
 ::::
 
