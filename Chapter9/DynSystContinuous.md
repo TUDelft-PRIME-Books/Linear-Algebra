@@ -2,7 +2,12 @@
 
 # Continuous Dynamical Systems
 
-In this section, we will deal with similar problems as in {numref}`Section %s <Sec:DynSystDiscrete>`. There, we were concerned with discrete time. That is, we assumed a certain initial state $\vect{x}_{0}$ and then predicted the next state $\vect{x}_{1}$. That approach yields models that are often very useful. But just as often we want to deal with continuous time. That is, there is no *next* state but rather a state for every positive real number. In order to deal with this new context, we need some preliminaries from calculus.
+In this section, we will deal with similar problems as in {numref}`Section %s <Sec:DynSystDiscrete>`. There, we were concerned with discrete time. That is, we assumed a certain initial state $\vect{x}_{0}$ and then predicted the next state $\vect{x}_{1}$. That approach yields models that are often very useful. But just as often we want to deal with continuous time. That is, there is no *next* state but rather a state for every positive real number. 
+
+
+## Continuous dynamical system
+
+In order to deal with this new context, we need some preliminaries from calculus.
 
 ::::{prf:proposition}
 
@@ -76,7 +81,7 @@ $$
 
 :::{prf:definition}
 
-In this context, we call $\vect{x}'=A\vect{x}$ a **system of (linear) differential equations**, $\vect{x}$ a **vector-valued function**, $\vect{x}'$ the **derivative** of $\vect{x}$, and the $x_{i}$'s the **component functions** of $\vect{x}$. Any $\vect{y}$  for which $\vect{y}'=A\vect{y}$ holds is called a **solution** to the system of differential equations.
+In this context, we call $\vect{x}'=A\vect{x}$ a **system of (linear) differential equations** or a **synamical system**, $\vect{x}$ a **vector-valued function**, $\vect{x}'$ the **derivative** of $\vect{x}$, and the $x_{i}$'s the **component functions** of $\vect{x}$. Any $\vect{y}$  for which $\vect{y}'=A\vect{y}$ holds is called a **solution** to the system of differential equations.
 
 :::
 
@@ -148,7 +153,7 @@ showing that $\vect{y}$ is indeed a solution. This observation leads us to the f
 :::{prf:proposition}
 :label: Prop:DynSystContinuous:EVsgiveSols
 
-If $\lambda$ is an eigenvalue of $A$ with associated eigenvector $\vect{v}$, then $\vect{y}=\vect{v}e^{\lambda t}$ is a solution of the system of linear differential equations $\vect{x}'=A\vect{x}$.
+If $\lambda$ is an eigenvalue of $A$ with associated eigenvector $\vect{v}$, then $\vect{y}=\vect{v}e^{\lambda t}$ is a solution of the system of linear differential equations $\vect{x}'=A\vect{x}$. Such a $\vect{y}$ is sometimes called an **eigenfunctions** of the dynamical system.
 
 :::
 
@@ -159,7 +164,7 @@ We now know how to solve systems of linear differential equations. But we know m
 Suppose some airborn disease is affecting a population. To keep matters simple, we will assume that the population is constant and that recovery grants full immunity. Let $S(t)$ be the number of susceptible members and $I(t)$ the number of infected members of the population at time $t$. If $\alpha>0$ is the recovery rate and $\beta>0$ is the infection rate, then we find:
 
 $$
-\begin{array}
+\begin{array}{cccc}
 S'(t)&=&-\beta S(t)&\\
 I'(t)&=&\beta S(t)&-\alpha I(t) 
 \end{array}
@@ -274,3 +279,8 @@ are linearly independent solutions to the linear system of differential equation
 
 If $a<0$ in this proposition, then $e^{at}$ will become arbitrarily small, so as $t$ increases, $\vect{y}(t)$ will approach $0$. In this case, the trajectory will spiral towards the origin. If $a>0$, then $e^{at}$ becomes arbitrarily large and the trajectory will spiral away from the origin.
 
+## Decoupling a dynamical system
+
+In the previous section, we say that the eigenvalues and eigenvectors determine the long-term behaviour of a dynamical system. This leads naturally to the suspicions that, perhaps, diagonalizing a matrix can help us solve a system of linear differential equations. This is indeed the case.
+
+Let us assume $A$ is an $n\times n$-matrix with eigenfunctions $\vect{y}_{1},...,\vect{v}_{n}$, that is $\vect{y}_{i}=\vect{v}_{i}e^{\lambda_{i}t}$ where $\lambda_{i}$ is an eigenvalue of $A$ with associated eigenvector $\vect{v}_{i}$.

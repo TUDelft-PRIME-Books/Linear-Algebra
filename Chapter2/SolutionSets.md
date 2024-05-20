@@ -24,8 +24,8 @@ Consider the following system of equations:
 :label: Eq:SolSet:HomSys2D
 
 \left\{\begin{array}{ccccccc}
-2x*{1}&+&3x*{2}&-&x*{3}&=&0\\
-x*{1}&+&x*{2}&+&x*{3}&=&0
+2x_{1}&+&3x_{2}&-&x_{3}&=&0\\
+x_{1}&+&x_{2}&+&x_{3}&=&0
 \end{array}\right.
 
 :::
@@ -123,12 +123,10 @@ Consider the following linear system:
 :::{math}
 :label: Eq:SolSet:HomSys3D
 
-$$
     \left\{\begin{array}{ccccccc}
     x_{1}&+&3x_{2}&-&x_{3}&=&0\\
     2x_{1}&+&6x_{2}&-&2x_{3}&=&0
     \end{array}\right.
-$$
 
 :::
 
