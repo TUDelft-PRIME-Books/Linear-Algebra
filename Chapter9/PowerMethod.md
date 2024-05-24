@@ -394,14 +394,11 @@ And lastly, the circumstance that $\lambda_1$ is negative and  $\lambda_2$ is po
 ## Some Extensions
 
 In the previous section the power method was used find the dominant (real) eigenvalue of a matrix $A$. <BR>
-In this subsection we will consider three extensions:
+In this subsection we will consider two extensions:
 
 --- To find the _smallest_ eigenvalue of a matrix $A$.
 
---- To find a second eigenvalue of $A$ by using a _shift_ of $A$.
-
---- To find the dominant _complex_ eigenvalue <BR>
-&nbsp; &nbsp; (provided the eigenvalue with largest modulus is complex). <BR>
+--- To find a second eigenvalue of $A$ by using a _shift_ of $A$. <BR>
 
 The first issue is covered by the next proposition.
 
@@ -537,7 +534,10 @@ The following two examples illustrate how {prf:ref}`Prop:PowerMethod:Shifted` ca
 ::::{prf:example}
 :label:  Ex:PowerMethod:SecondExampleContd
 
-In {prf:ref}`Ex:PowerMethod:SecondExample` with the matrix 
+In {prf:ref}`Ex:PowerMethod:SecondExample` with the matrix $A = \begin{bmatrix}
+     8  &   9  &  -6\\
+     1  &   6  &  -4\\
+    -4  &   4  &  -8        \end{bmatrix} 
   the power method yielded the dominant eigenvalue  $\lambda_1 = 11.4780$.
 If we apply the power method to the matrix
 
@@ -550,15 +550,20 @@ $$
          1 \\ 1 \\ 1        \end{bmatrix}.
 $$
 
-we find that  already  $\norm{\vect{x}_{12}-\vect{x}_{11}}$ and that
+we find that  already  $\norm{\vect{x}_{12}-\vect{x}_{11}} < 10^{-4}$ and that
 
 $$
   \vect{x}_{12} = \begin{bmatrix} 0.2238 \\ 0.2736 \\ 1.0000 \end{bmatrix}, \quad
   A\vect{x}_{12} = \begin{bmatrix} -1.7465 \\ -2.1343 \\  -7.8007 \end{bmatrix} \,\approx
-  -7.8007 \vect{x}_{12} = \begin{bmatrix} -1.7461 \\ -2.1347 \\  -7.8007 \end{bmatrix}
+  -7.8007 \vect{x}_{12} = \begin{bmatrix} -1.7461 \\ -2.1347 \\  -7.8007 \end{bmatrix}.
+$$
+So 
+
+$$
+ \lambda = -7.8007, \quad \mathbf{v} = \begin{bmatrix} 0.2238 \\ 0.2736 \\ 1.0000 \end{bmatrix}
 $$
 
-with which we have found a second eigenvector/eigenvalue pair.
+is an eigenvalue/eigenvector pair for  $A$.  
 
 ::::
 
@@ -579,21 +584,21 @@ $A = \begin{bmatrix}
 If we apply the power method iteratively multiplying the vector
 $\mathbf{x}_0 = \begin{bmatrix}
 1 \\ 1 \\ 1 \\ 0 \\ 0 \\ 0
-\end{bmatrix}$ with the matrix $A$ (and rescaling) we find that
+\end{bmatrix}$ with the matrix $A$ (and rescaling) we find that up to four decimals
+
+1.6925 \\ 3.0494 \\ 3.8019 \\ 3.8011 \\ 3.0477 \\ 1.6911
 
 $$
-   \mathbf{x}_{25} = \begin{bmatrix}
-          0.4566  \\ 0.8143  \\ 1.0000   \\ 0.9829   \\ 0.7759   \\ 0.4259
+   \mathbf{x}_{52} = \mathbf{x}_{51} = \begin{bmatrix}
+          0.4452 \\ 0.8021 \\ 1.0000 \\ 0.9997 \\ 0.8015 \\ 0.4447
       \end{bmatrix}, \quad
-   \mathbf{x}_{26} = \begin{bmatrix}
-          0.4550 \\ 0.8125 \\ 1.0000 \\ 0.9854 \\ 0.7797 \\ 0.4286
-      \end{bmatrix}, \quad \text{and} \quad
-      A\mathbf{x}_{26} = \begin{bmatrix}
-          1.7224 \\ 3.0799 \\ 3.7979 \\ 3.7505  \\ 2.9734 \\1.6369
+    \text{and} \quad
+      A\mathbf{x}_{52} = \begin{bmatrix}
+          1.6925 \\ 3.0494 \\ 3.8019 \\ 3.8011 \\ 3.0477 \\ 1.6911
       \end{bmatrix}
 $$
 
-and may conclude that we are close to an eigenvector for the largest eigenvalue $\lambda_1$ which lies close to $\alpha = 3.7979$.
+and may conclude that we are close to an eigenvector for the largest eigenvalue $\lambda_1$ which lies close to $\alpha = 3.8019$.
 
 If we round to 4, and apply the power method to the matrix $B = A - 4I$,
 starting from the same vector $\vect{x}_0$, the computations yield
@@ -614,7 +619,7 @@ From which we may conclude that $\mathbf{x}_{50}$ is close to an eigenvector for
 $\mu = -3.8019$, which is the dominant eigenvalue of $B = A- 4I$. <BR>
 Thus $\mathbf{x}_{50}$ is close to an eigenvector of $A$ for the eigenvalue
 $\lambda = \mu + 4 = 0.1981$. <BR>
-In this case in fact we have found the smallest eigenvalue, which we could also have found using the inverse power method.
+In this case  we have in fact found the smallest eigenvalue, which we could also have found using the inverse power method.
 
 ::::
 
@@ -717,10 +722,8 @@ we can still use Equation {eq}`Eq:PowerMethod:GenSol-2` to conclude that, except
 
 ::::
 
-Now what about finding the complex  (i.e., non-real) eigenvectors of a real matrix?
-That is not a trivial matter.
 
-Suppose eigenvalues with the largest modulus of the real matrix $A$ are the complex eigenvalues  $\lambda_{1,2} = \alpha \pm \beta i$  with the complex eigenvectors  $\vect{v}_{1,2} = \vect{u} \pm i\vect{w}$.  Starting the power method from an arbitrary real vector will certainly not lead to a multiple one of the vectors $\vect{v}_{1,2}$, since every vector  $\vect{x}_k$ will remain real.
+Now suppose that the eigenvalues with the largest modulus of a real matrix $A$ are the complex eigenvalues  $\lambda_{1,2} = \alpha \pm \beta i$  with the complex eigenvectors  $\vect{v}_{1,2} = \vect{u} \pm i\vect{w}$.  Starting the power method from an arbitrary real vector will certainly not lead to a multiple one of the vectors $\vect{v}_{1,2}$, since every vector  $\vect{x}_k$ will remain real.
 <BR>
 This can be overcome by starting from a *complex* vector $\vect{z}_0 = \vect{x}_0 + i\vect{y}_0$.  However,  if this vector contains components in both the direction $\vect{v}_1$  and the direction $\vect{v}_2$, say
 
@@ -743,8 +746,8 @@ To see what is going on analytically we have chosen a matrix where we can actual
 ::::{prf:example}
 :label: Ex:PowerMethod:ComplexEx1
 
-Consider the matrix  $A = \begin{bmatrix}2 & 0 & 0 \\ 1 & 3 & 4 \\ 0 & -4 & 3 \end{bmatrix}.
+Consider the matrix  $A = \begin{bmatrix}2 & 0 & 0 \\ 1 & 3 & 4 \\ 0 & -4 & 3 \end{bmatrix}$.
 
 The eigenvalues are  $\lambda_{1,2} = 3 \pm 4i$ and $\lambda_3 = 2$, so we have
-$|\lambda_1| = |\lambda_2|  = 5 > |\lambda_1| = 2$.
+$|\lambda_1| = |\lambda_2|  = 5 > |\lambda_3|$.
 ::::

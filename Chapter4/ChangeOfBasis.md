@@ -1241,7 +1241,7 @@ must be equal.
 :::: 
 
 
-The rest of the exercises are about matrix representations of linear transformations.
+The remaining exercises are about matrix representations of linear transformations.
 
 
 ::::{grasple}

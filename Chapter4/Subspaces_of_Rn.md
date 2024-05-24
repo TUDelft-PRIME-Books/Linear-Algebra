@@ -13,7 +13,7 @@ In this section we will define them and analyze their basic properties. In {numr
 ::::::{prf:definition}
 :label: Dfn:Subspaces:Subspace
 
-A (linear) subspace of $\R^n$ is a subset $S$ of $\R^n$ with the following three properties:
+A (**linear**) **subspace** of $\R^n$ is a subset $S$ of $\R^n$ with the following three properties:
 
 <ol type = "i">
 
@@ -304,7 +304,7 @@ $$
 (c_1\vect{v}_1+ \ldots + c_r\vect{v}_r)\quad \text{and} \quad (d_1\vect{v}_1+ \ldots + d_r\vect{v}_r)
 $$
 
-of a set of vectors $ \{ \vect{v}\_1,\vect{v}\_2, \ldots , \vect{v}\_r \}$ is again a linear combination of these vectors. This is quite straightforward:
+of a set of vectors $ \{ \vect{v}_1,\vect{v}_2, \ldots , \vect{v}_r \}$ is again a linear combination of these vectors. This is quite straightforward:
 
 $$
 (c_1\vect{v}_1+ \ldots + c_r\vect{v}_r) + (d_1\vect{v}_1+ \ldots + d_r\vect{v}_r) =
@@ -381,7 +381,7 @@ $$
 S = \Span{\vect{v}_1,\vect{v}_2,\vect{v}_3} = \R^3, \text{  i.e., we are in case (D)}
 $$
 
-For, if not, there must be a vector $ \vect{v}\_4 \in \R^3$ not in $\Span{\vect{v}_1,\vect{v}_2,\vect{v}_3}$.
+For, if not, there must be a vector $ \vect{v}_4 \in \R^3$ not in $\Span{\vect{v}_1,\vect{v}_2,\vect{v}_3}$.
 Then $\{\vect{v}_1,\vect{v}_2,\vect{v}_3, \vect{v}_4\}$
 would be a set of four linearly independent vectors in $\R^3$, which by {prf:ref}`Thm:LinInd:MoreRowthanColmeansLinDep` is impossible.
 
@@ -477,7 +477,7 @@ Let $A$ be an $m\times n$ matrix.<ol type = "i">
 
 <li>
 
-The columns of $A$ are vectors in $\R^m$. As we have seen {prf:ref}`Prop:Subspaces:SpanIsSubspace`:
+The columns of $A$ are vectors in $\R^m$. As we have seen {prf:ref}`Prop:Subspaces:SpanIsSubspace`
 
 the span of a set of vectors in $\R^m$ is indeed a subspace of $\R^m$.
 
