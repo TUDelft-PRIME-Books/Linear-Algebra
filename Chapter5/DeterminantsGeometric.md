@@ -410,7 +410,7 @@ $$
 
 The parallelepiped spanned by the three vectors does not change under any permutation, and the orientation remains the same under a cyclic permutation.
 
-Swapping two vectors also leaves the parallelepiped invariant, but the orientation changes.
+Swapping two vectors also leaves the parallelepiped invariant, but it changes the orientation.
 
 ::::::
 

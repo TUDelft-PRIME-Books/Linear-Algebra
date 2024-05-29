@@ -537,7 +537,7 @@ The following two examples illustrate how {prf:ref}`Prop:PowerMethod:Shifted` ca
 In {prf:ref}`Ex:PowerMethod:SecondExample` with the matrix $A = \begin{bmatrix}
      8  &   9  &  -6\\
      1  &   6  &  -4\\
-    -4  &   4  &  -8        \end{bmatrix} 
+    -4  &   4  &  -8        \end{bmatrix} $
   the power method yielded the dominant eigenvalue  $\lambda_1 = 11.4780$.
 If we apply the power method to the matrix
 
@@ -662,7 +662,7 @@ Since $|\lambda_{1,2}| > |\lambda_{3}| > |\lambda_{4}|$, the eigenvalue $\lambda
 ## Power method and complex eigenvalues
 
 In {numref}`Subsec:Powermethod:Basics` we assumed that the matrix $A$ be diagonalizable,
-and in that case we could use {eq}`Eq:PowerMethod:GenSol` to prove that the method in general converges, and that the speed of convergence depends on the quotient
+and in that case we could use {eq}`Eq:PowerMethod:GenSol` to prove that the power method in general converges, and that the speed of convergence depends on the quotient
 
 $$
    \dfrac{|\lambda_2|}{|\lambda_1|}.
@@ -749,5 +749,96 @@ To see what is going on analytically we have chosen a matrix where we can actual
 Consider the matrix  $A = \begin{bmatrix}2 & 0 & 0 \\ 1 & 3 & 4 \\ 0 & -4 & 3 \end{bmatrix}$.
 
 The eigenvalues are  $\lambda_{1,2} = 3 \pm 4i$ and $\lambda_3 = 2$, so we have
-$|\lambda_1| = |\lambda_2|  = 5 > |\lambda_3|$.
+
+$$
+  |\lambda_1| = |\lambda_2|  = 5 > |\lambda_3|.
+$$
+
+If we start the power method from  $\vect{x}_0 = \begin{bmatrix}1\\1\\1 \end{bmatrix}$
+we get 
+
+$$
+  \vect{x}_{48} = \begin{bmatrix}0\\1\\0.3473 \end{bmatrix}, \quad
+  \vect{x}_{49} = \begin{bmatrix}0\\1\\-0.6739 \end{bmatrix}, \quad
+  \vect{x}_{50} = \begin{bmatrix}0\\-0.5050\\1 \end{bmatrix}.
+$$
+
+Continuing further does not help:
+
+$$
+  \vect{x}_{98} = \begin{bmatrix}0\\0.5173\\1 \end{bmatrix}, \quad
+  \vect{x}_{99} = \begin{bmatrix}0\\1\\0.1677\end{bmatrix}, \quad
+  \vect{x}_{100} = \begin{bmatrix}0\\1 \\ -0.9527 \end{bmatrix}.
+$$
+
+The process will never come to a standstill.
+
+What we can say is that eventually all vectors $\vect{x}_k$  will be in the span of the two complex eigenvectors
+
+$$
+  \vect{v}_1 = \begin{bmatrix}0\\1\\i \end{bmatrix}, \quad \vect{v}_1 = \begin{bmatrix}0\\1\\-i \end{bmatrix}.
+$$
+
+These vectors, being linearly independent, span the set
+
+$$
+   S = \left\{\begin{bmatrix}0\\z_2\\z_3 \end{bmatrix}:  z_2,z_3 \in \C  \right\}.
+$$
+
+In fact, since we started from a real vector $\vect{x}_0$  and the matrix $A$ is real,
+the iterates $\vect{x}_k$  will go around in the subset of vectors in $S$ with real entries.  But there is no obvious way how we can retrieve the  eigenvectors $\{\vect{v}_1, \vect{v}_2\}$ from the vectors $\vect{x}_k$.
+
+So what can we do?
+
+Starting from a complex starting vector, say $\vect{z}_0$? 
+
+The best is of course to think of a way out yourself.  But if you do not see how, and your curiosity has been aroused, you can open the dropdown below.
+
+::::{dropdown} Workaround to get to the dominant complex eigenvalues
+
+We can use the earlier idea of a shift!
+
+If a (real) matrix $A$ has eigenvalues $\lambda_{1,2} = a \pm bi$  as eigenvalues of highest modulus, then there is a good chance that one of the numbers $\lambda_{1,2} + ci$, for some real number $c$, is the single dominant eigenvalue of the matrix  $B = A + (ci)\mathrm{I}$.  
+
+Let us illustrate the procedure for the matrix of {prf:ref}`Ex:PowerMethod:ComplexEx1`. <BR>
+Let $B$ be the matrix
+
+$$
+  B = (A + 2i)\mathrm{I} = \begin{bmatrix}2+2i & 0 & 0 \\ 1 & 3+2i & 4 \\ 0 & -4 & 3+2i \end{bmatrix}
+$$
+
+The actual value of $B$ is not so important, but what is important is that $B$ has the eigenvalues
+
+$$
+  \mu_1 = (3+4i)+2i = 3+6i, \quad \mu_2 = (3-4i)+2i = 3-2i, \quad \mu_3 = 2+2i,
+$$
+
+where now  
+
+$$
+ |\mu_1| = \sqrt{45} > |\mu_2| = \sqrt{13} > |\mu_3| = \sqrt{8}.
+$$
+
+Thus $B$ has a (single) dominant eigenvalue.
+
+Applying the power method to $B$, again starting from $\begin{bmatrix}1\\1\\1 \end{bmatrix}$, we find (up to four decimals)
+
+$$
+  \vect{x}_{48} = \begin{bmatrix}0.0000\\-1.0000i\\1.0000 \end{bmatrix}, \quad
+  \vect{x}_{49} = \begin{bmatrix}0.0000\\1.0000\\1.0000i \end{bmatrix}, \quad
+  \vect{x}_{50} = \begin{bmatrix}0.0000\\1.0000\\1.000i \end{bmatrix},
+$$
+
+from which we may conclude that $\vect{x}_{50}$ is an eigenvector of  $B$,
+and from 
+
+$$
+   B\vect{x}_{50} = B \begin{bmatrix}0\\1\\i \end{bmatrix} = \begin{bmatrix}0 \\3+6i\\-6+3i \end{bmatrix} = (3+6i)\begin{bmatrix}0\\1\\i \end{bmatrix},
+$$
+that  $\mu = 3+6i$ is the corresponding eigenvalue.
+
+'Shifting back' we see that  $\begin{bmatrix}0\\1\\i \end{bmatrix}$ is an eigenvector of the original matrix $A$ for the eigenvalue $\lambda = (3+6i)-2i = 3+4i$.
+::::
+
+
 ::::
