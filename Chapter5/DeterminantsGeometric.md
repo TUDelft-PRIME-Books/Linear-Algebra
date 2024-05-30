@@ -4,7 +4,7 @@
 
 ## Introduction
 
-The word "determinant" already appeared in the section about invertibility: a $2\times2$ matrix
+The word "determinant" already appeared in {numref}`Section %s <Sec:CrossProduct>` about the cross product. And in {numref}`Subsection %s <Subsec:MatrixInv:DefInverse>` we saw that a  $2\times2$ matrix
 $A = \left[\begin{array}{cc} a & b \\ c & d\end{array}   \right]$ is invertible if and only if
 
 :::{math}
@@ -141,7 +141,7 @@ $$
 
 where $\varphi$ is the angle from $\vect{u}$ to the left (= counterclockwise) to $\vect{v}$.
 
-We see that $ad-bc$ is equal to the area of the parallelogram if the angle from $\vect{u}$ to $\vect{v}$ is less then $\pi$, and minus this area if the angle is between $\pi$ and $2\pi$.  We call this the *signed area*.
+We see that $ad-bc$ is equal to the area of the parallelogram if the directed angle from $\vect{u}$ to $\vect{v}$ is less then $\pi$, and minus this area if the angle is between $\pi$ and $2\pi$.  We call this the *signed area*.
 
 ::::::
 
@@ -273,7 +273,7 @@ Multiplying one of the vectors by a factor $k$ changes the area with a factor $|
 </li>
 <li>
 
-$\det{(\vect{e_1},\vect{e_2})} $ is the area of the unit square.
+$\det{(\vect{e}_1,\vect{e}_2)} $ is the area of the unit square, and the smallest angle from $\vect{e}_1$ to $\vect{e}_2$ is indeed counterclockwise.
 
 </li>
 

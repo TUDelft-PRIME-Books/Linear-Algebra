@@ -31,7 +31,7 @@ $\lambda_1, \ldots, \lambda_n$ and corresponding eigenvectors  $\vect{v}_1, \ldo
 if we start from
 
 $$
-  \vect{x}_{0} = \vect{s} = c_1\vect{v}_1 + c_2\vect{v}_2 +  \ldots + c_n\vect{v}_n
+  \vect{x}_{0} = \vect{s} = c_1\vect{v}_1 + c_2\vect{v}_2 +  \ldots + c_n\vect{v}_n.
 $$
  
 Now suppose the eigenvalues are ordered according to
@@ -89,7 +89,7 @@ Suppose $A$ is an $n\times n$ matrix.
 &nbsp; (ii) Find the entry $\mu$ of $\vect{y}$ of the highest absolute value; <BR>
 &nbsp; (iii) Replace $\vect{x}$ by $\dfrac{1}{\mu}\vect{y}$.
 
-Step 2 is repeated until the process more or less stabilizes. For instance, until the difference between the last two computed vectors is smaller that a pre-determined 'error' $\varepsilon$.
+Step 2 is repeated until the process more or less stabilizes. For instance, until the difference between the last two computed vectors is smaller that a predetermined 'error' $\varepsilon$.
 
 ::::
 
@@ -186,7 +186,7 @@ $$
   \vect{v}_1 = \begin{bmatrix} 0.5 \\ 1 \end{bmatrix},
 $$
 
-which is the eigenvector with largest entry 1 for the dominant eigenvalue $\lambda = 9$.. <BR>
+which is the eigenvector with largest entry 1 for the dominant eigenvalue $\lambda = 9$. <BR>
 For this specific example the 'convergence to an eigenvector' goes very quickly!
 
 Two circumstances help this rapid convergence.
@@ -256,8 +256,8 @@ $$
 $$
 
 This restriction is met after 26 iterations. 
-The current value of $\vect{x}_{26}$ 
-up to four decimals is then
+The current value of $\vect{x}_{26}$, 
+up to four decimals, is then
 
 $$
     \vect{x}_{26} = \begin{bmatrix}
@@ -393,8 +393,7 @@ And lastly, the circumstance that $\lambda_1$ is negative and  $\lambda_2$ is po
 
 ## Some Extensions
 
-In the previous section the power method was used find the dominant (real) eigenvalue of a matrix $A$. <BR>
-In this subsection we will consider two extensions:
+In the previous section the power method was used find the dominant (real) eigenvalue of a matrix $A$. In this subsection we will consider two extensions:
 
 --- To find the _smallest_ eigenvalue of a matrix $A$.
 
@@ -475,7 +474,7 @@ We saw that $A$ has the eigenvalues $\lambda_1 = 9$ and $\lambda_2 = 4$.
 If we apply the Inverse Power Method, starting from
 
 $$
-  \vect{x}_0 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}
+  \vect{x}_0 = \begin{bmatrix} 1 \\ 1 \end{bmatrix},
 $$
 
 we find
@@ -512,7 +511,7 @@ $$
 ::::{prf:proposition} Shifted Power Method
 :label: Prop:PowerMethod:Shifted
 
-Suppose $A$ is an $n \times n$ matrix with eigenvalues  $\lambda_1, \ldots, \lambda_n$, and $\alpha$ is a real number. Furthermore, define the matrix  B = $A - \alpha\mathrm{I}$.
+Suppose $A$ is an $n \times n$ matrix with eigenvalues  $\lambda_1, \ldots, \lambda_n$, and $\alpha$ is a real number. Furthermore, define the matrix  $B = A - \alpha\mathrm{I}$.
 
 
 ::::{latexlist}
@@ -542,15 +541,15 @@ In {prf:ref}`Ex:PowerMethod:SecondExample` with the matrix $A = \begin{bmatrix}
 If we apply the power method to the matrix
 
 $$
-   B = A - 11\mathrm{I}  =  A = \begin{bmatrix}
+   B = A - 11\,\mathrm{I}  =   \begin{bmatrix}
      -3  &   9  &  -6\\
      1  &   -5  &  -4\\
-    -4  &   4  &  -19        \end{bmatrix}, \quad \text{and the starting vector} \,\,
+    -4  &   4  &  -19        \end{bmatrix} \quad \text{and the starting vector} \,\,
        \vect{x}_0 = \begin{bmatrix}
          1 \\ 1 \\ 1        \end{bmatrix}.
 $$
 
-we find that  already  $\norm{\vect{x}_{12}-\vect{x}_{11}} < 10^{-4}$ and that
+we find that  already  $\norm{\vect{x}_{12}-\vect{x}_{11}} < 10^{-4}$, &nbsp;and that
 
 $$
   \vect{x}_{12} = \begin{bmatrix} 0.2238 \\ 0.2736 \\ 1.0000 \end{bmatrix}, \quad
@@ -584,9 +583,7 @@ $A = \begin{bmatrix}
 If we apply the power method iteratively multiplying the vector
 $\mathbf{x}_0 = \begin{bmatrix}
 1 \\ 1 \\ 1 \\ 0 \\ 0 \\ 0
-\end{bmatrix}$ with the matrix $A$ (and rescaling) we find that up to four decimals
-
-1.6925 \\ 3.0494 \\ 3.8019 \\ 3.8011 \\ 3.0477 \\ 1.6911
+\end{bmatrix}$ with the matrix $A$ (and rescaling) we find that, up to four decimals,
 
 $$
    \mathbf{x}_{52} = \mathbf{x}_{51} = \begin{bmatrix}
@@ -609,7 +606,7 @@ $$
       \end{bmatrix}, \quad
    \mathbf{x}_{51} = \begin{bmatrix}
           0.4451 \\ -0.8020 \\  1.0000 \\  -0.9999 \\ 0.8018 \\  -0.4449
-      \end{bmatrix}, \quad \text{and} \quad
+      \end{bmatrix} \quad \text{and} \quad
       A\mathbf{x}_{51} = \begin{bmatrix}
           -1.6922 \\ 3.0491 \\ -3.8019 \\ 3.8016 \\ -3.0484 \\ 1.6916
       \end{bmatrix}
@@ -633,12 +630,12 @@ Consider the matrix $A = \begin{bmatrix}  3  &  -3  &  1   &  3 \\
                       0  &   4  &  -1  & -2  \end{bmatrix}$.<br>
 It can be shown that the characteristic polynomial $p_A(\lambda)$ of $A$ changes sign between $\lambda = -1$ and $\lambda = 0$, and also between $\lambda = 2$ and $\lambda = 3$.
 
-If we apply the inverse power method to the matrix $B = A - 3I$, starting from the vector $\vect{x}_0 = \begin{bmatrix}  1 \\ 0 \\ 0 \\  1  \end{bmatrix}$ we find, up to four decimals
+If we apply the inverse power method to the matrix $B = A - 3I$, starting from the vector $\vect{x}_0 = \begin{bmatrix}  1 \\ 0 \\ 0 \\  1  \end{bmatrix}$ we find, up to four decimals,
 
 $$
   \mathbf{x}_{40} = \mathbf{x}_{41} =  \begin{bmatrix}
           1.0000  \\ 0.1407 \\ 0.4324  \\ 0.2086
-      \end{bmatrix},
+      \end{bmatrix}
     \quad \text{and} \quad
       A\mathbf{x}_{40} = \begin{bmatrix}
           -0.2287 \\ -0.0322  \\ 0.0989 \\ -0.0477
@@ -790,21 +787,23 @@ the iterates $\vect{x}_k$  will go around in the subset of vectors in $S$ with r
 
 So what can we do?
 
-Starting from a complex starting vector, say $\vect{z}_0$? 
+As mentioned, starting from a complex initial vector  $\vect{z}_0$  won't work. 
 
-The best is of course to think of a way out yourself.  But if you do not see how, and your curiosity has been aroused, you can open the dropdown below.
+The best is of course to think of a way out yourself.  But if you do not see how, and your curiosity has been aroused, you can open the 'workaround' below.
 
 ::::{dropdown} Workaround to get to the dominant complex eigenvalues
+
+How can we get rid of the dominant eigenvalue *pair* ?
 
 We can use the earlier idea of a shift!
 
 If a (real) matrix $A$ has eigenvalues $\lambda_{1,2} = a \pm bi$  as eigenvalues of highest modulus, then there is a good chance that one of the numbers $\lambda_{1,2} + ci$, for some real number $c$, is the single dominant eigenvalue of the matrix  $B = A + (ci)\mathrm{I}$.  
 
-Let us illustrate the procedure for the matrix of {prf:ref}`Ex:PowerMethod:ComplexEx1`. <BR>
+Let us illustrate the procedure for the matrix $A = \begin{bmatrix}2 & 0 & 0 \\ 1 & 3 & 4 \\ 0 & -4 & 3 \end{bmatrix}$ at hand.  <BR>
 Let $B$ be the matrix
 
 $$
-  B = (A + 2i)\mathrm{I} = \begin{bmatrix}2+2i & 0 & 0 \\ 1 & 3+2i & 4 \\ 0 & -4 & 3+2i \end{bmatrix}
+  B = (A + 2i)\mathrm{I} = \begin{bmatrix}2+2i & 0 & 0 \\ 1 & 3+2i & 4 \\ 0 & -4 & 3+2i \end{bmatrix}.
 $$
 
 The actual value of $B$ is not so important, but what is important is that $B$ has the eigenvalues
@@ -829,7 +828,7 @@ $$
   \vect{x}_{50} = \begin{bmatrix}0.0000\\1.0000\\1.000i \end{bmatrix},
 $$
 
-from which we may conclude that $\vect{x}_{50}$ is an eigenvector of  $B$,
+from which we may conclude that $\vect{x}_{50}$ is an eigenvector of  $B$, <BR>
 and from 
 
 $$
