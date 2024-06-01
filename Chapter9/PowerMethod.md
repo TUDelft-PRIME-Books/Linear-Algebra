@@ -468,7 +468,7 @@ inverse may very well be a 'full' matrix.
 :label: Ex:PowerMethod:FirstExampleContd
 
 Let $A$ be the matrix &nbsp; $\begin{bmatrix}5 & 2 \\ 2 & 8 \end{bmatrix}$
-of the earlier example {prf:ref}`Ex:PowerMethod:FirstExample`. <BR>
+of the earlier {prf:ref}`Ex:PowerMethod:FirstExample`. <BR>
 We saw that $A$ has the eigenvalues $\lambda_1 = 9$ and $\lambda_2 = 4$.
 
 If we apply the Inverse Power Method, starting from
@@ -504,7 +504,7 @@ $$
 then the matrix $A - \alpha I$ , where $\alpha$ is some constant, has the eigenvalues
 
 $$
-   (\lambda_1-\alpha), \quad (\lambda_2-\alpha),\,\, \ldots, \,\,(\lambda_2-\alpha).
+   (\lambda_1-\alpha), \quad (\lambda_2-\alpha),\,\, \ldots, \,\,(\lambda_n-\alpha).
 $$
 
 
@@ -633,16 +633,16 @@ It can be shown that the characteristic polynomial $p_A(\lambda)$ of $A$ changes
 If we apply the inverse power method to the matrix $B = A - 3I$, starting from the vector $\vect{x}_0 = \begin{bmatrix}  1 \\ 0 \\ 0 \\  1  \end{bmatrix}$ we find, up to four decimals,
 
 $$
-  \mathbf{x}_{40} = \mathbf{x}_{41} =  \begin{bmatrix}
+  \mathbf{x}_{9} = \mathbf{x}_{10} =  \begin{bmatrix}
           1.0000  \\ 0.1407 \\ 0.4324  \\ 0.2086
       \end{bmatrix}
     \quad \text{and} \quad
-      A\mathbf{x}_{40} = \begin{bmatrix}
+      B\mathbf{x}_{10} = \begin{bmatrix}
           -0.2287 \\ -0.0322  \\ 0.0989 \\ -0.0477
       \end{bmatrix},
 $$
 
-From which we conclude that $\vect{x}_{40}$ is close to an eigenvector of $A$ for the eigenvalue $\lambda \approx -0.2287 + 3 = 2.7713$.
+From which we conclude that $\vect{x}_{40}$ is close to an eigenvector of $A$ for the eigenvalue $\lambda \approx -0.2287 + 3 = 2.7713$.   The process converges quickly since $B$ has an eigenvalue $\mu_1$ very close to zero, and apparently  $1/\mu_1$ is 'very dominant'. 
 
 In fact, using any computer algebra program we can find that the eigenvalues of
 $A$ are
@@ -793,11 +793,12 @@ The best is of course to think of a way out yourself.  But if you do not see how
 
 ::::{dropdown} Workaround to get to the dominant complex eigenvalues
 
-How can we get rid of the dominant eigenvalue *pair* ?
+By definition, a dominant eigenvalue must be *unique* ,  i.e.,  $|\lambbda_1| > |\lambda_2| \geq \ldots \, |\lambda_n|$. <BR>
+The question is, how can we get rid of the dominant eigenvalue *pair* ?
 
 We can use the earlier idea of a shift!
 
-If a (real) matrix $A$ has eigenvalues $\lambda_{1,2} = a \pm bi$  as eigenvalues of highest modulus, then there is a good chance that one of the numbers $\lambda_{1,2} + ci$, for some real number $c$, is the single dominant eigenvalue of the matrix  $B = A + (ci)\mathrm{I}$.  
+If a (real) matrix $A$ has eigenvalues $\lambda_{1,2} = a \pm bi$  as eigenvalues of highest modulus, then there is a good chance that one of the numbers $\lambda_{1,2} + ci$, for some real number $c$, is the *single* dominant eigenvalue of the matrix  $B = A + (ci)\mathrm{I}$.  
 
 Let us illustrate the procedure for the matrix $A = \begin{bmatrix}2 & 0 & 0 \\ 1 & 3 & 4 \\ 0 & -4 & 3 \end{bmatrix}$ at hand.  <BR>
 Let $B$ be the matrix
@@ -828,13 +829,13 @@ $$
   \vect{x}_{50} = \begin{bmatrix}0.0000\\1.0000\\1.000i \end{bmatrix},
 $$
 
-from which we may conclude that $\vect{x}_{50}$ is an eigenvector of  $B$, <BR>
-and from 
+from which we may conclude that $\vect{x}_{50}$ is an eigenvector of  $B$. <BR>
+From 
 
 $$
    B\vect{x}_{50} = B \begin{bmatrix}0\\1\\i \end{bmatrix} = \begin{bmatrix}0 \\3+6i\\-6+3i \end{bmatrix} = (3+6i)\begin{bmatrix}0\\1\\i \end{bmatrix},
 $$
-that  $\mu = 3+6i$ is the corresponding eigenvalue.
+it follows that  $\mu = 3+6i$ is the corresponding eigenvalue.
 
 'Shifting back' we see that  $\begin{bmatrix}0\\1\\i \end{bmatrix}$ is an eigenvector of the original matrix $A$ for the eigenvalue $\lambda = (3+6i)-2i = 3+4i$.
 ::::

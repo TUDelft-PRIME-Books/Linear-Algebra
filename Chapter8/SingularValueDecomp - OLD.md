@@ -92,7 +92,7 @@ Let us point out a few properties of this decomposition.
 
 :::{latexlist}
 
-\item The matrix $A$  has size $3\times2$, so $\Sigma$ is of the form depicted in {eq}`Eq:SVD:secondform`.
+\item The matrix $A$  has size $3\times2$, so $\Sigma$ is of the form depicted in {Eq}`Eq:SVD:secondform`.
 
 
 
@@ -125,9 +125,8 @@ The decomposition can be rewritten in a way analogous to the spectral decomposit
 
 <BR>
 
-%%::{math}
-%%:label: Eq:SVD:SpectralDecomp
 $$
+
    \begin{array}{ccl} A &=& \sigma_1 \mathbf{u}_1\mathbf{v}_1^T + \sigma_2\mathbf{u}_2\mathbf{v}_2^T  \\
      &=&  \sqrt{24} \begin{bmatrix}\dfrac{1}{\sqrt{3}} \\ \dfrac{1}{\sqrt{3}} \\ \dfrac{1}{\sqrt{3}}\end{bmatrix}
       \begin{bmatrix}\dfrac{1}{\sqrt{2}} & \dfrac{1}{\sqrt{2}}\end{bmatrix}
@@ -135,7 +134,6 @@ $$
      \begin{bmatrix}\dfrac{1}{\sqrt{2}} & -\dfrac{1}{\sqrt{2}}\end{bmatrix}
      \end{array}.
 $$
-%%::
 
 With the spectral decomposition (see {prf:ref}`Thm:SymmetricMat:SpectralDecomp`) we found that any symmetric matrix $A$ can be written as a linear combination of rank one matrices $P_i$. Moreover, these matrices $P_i$ can be interpreted as projections onto orthogonal one-dimensional subspaces of $\R^n$. Here the least we can say is that we have written the matrix  $A$ of rank 2 as a linear combination of two rank 1 matrices.
 :::
@@ -673,7 +671,7 @@ are orthogonal matrices. Thus the columns of $U$ give an orthonormal basis of $\
 
 Diagram showing the SVD as a composition of linear transformations.
 
-::::
+:::
 
 
 Let us first consider the case where $A$ is a  $2 \times 2$ matrix, as in that case everything takes place in the plane, and we can make an exact drawing of what is going on. 
@@ -702,8 +700,6 @@ If we consider the total effect on the unit circle (i.e., all vectors of length 
 3. rotates or reflects this ellipse.
 
 Let us consider a numerical example.
-
-
 
 ::::{prf:example}
 :label: Ex:SVD:GeometricView
@@ -781,69 +777,64 @@ in $\R^m$.
 
 <BR>
 
+<BR>
+
+
+REMAINING TEXT FROM DANI:
+
+To better understand it, let's visualise how the unit circle changes under these transformations.
+
+::::{prf:example}
+Let $A$ be the standard matrix of a linear transformation given by:
+
+$$
+A = \begin{bmatrix}
+1 & -1 \\
+2 & 2
+\end{bmatrix}.
+$$
+
+The singular values for this matrix are $\sigma_1 = 2\sqrt{2}$, and $\sigma_2 = \sqrt{2}$. We choose
+
+$$
+V =\begin{bmatrix} \frac{1}{2} \, \sqrt{2} & \frac{1}{2} \, \sqrt{2} \\
+\frac{1}{2} \, \sqrt{2} & -\frac{1}{2} \, \sqrt{2} \end{bmatrix}
+$$
+
+and
+
+$$
+U = \begin{bmatrix}
+0 & 1 \\
+1 & 0
+\end{bmatrix}
+$$
+
+{numref}`Figure %s <Fig:SVD:decompositioneffects>` shows how the unit circle changes under the singular value decomposition.
+
+Notice that $V^T$ corresponds to a transformation consisting in a reflection over the line $y=x$ followed by a rotation of angle $-\frac{\pi}{4}$. So the unit circle is mapped on the unit circle.
+
+The matrix $\Sigma$ contains the singular values. We can observe that the unit circle is mapped into an ellipse whose positive semi-axes have lengths equal to the singular values.
+
+Finally, the matrix $U$ can be interpreted as a reflection over the line $y=x$.
+
+:::{figure} 
+:name: Fig:SVD:decompositioneffects
+
+Effects of the transformations on the unit circle.
+:::
+::::
+
+In general, since $V^T$ is an orthogonal matrix, it will map the $\mathbb{R}^n$ to itself and it will preserve the norm of vectors. We have seen in the example above that the unit circle in $\mathbb{R}^2$ was mapped into itself since $V^T$ was a rotation plus a reflection. This is true in general in any dimension. The same can be said for $U$. However, for $\Sigma$, we can see that the unit circle was mapped into an ellipse in $\mathbb{R}^2$ with the length of the semi-axes equal to the singular values. In general, the effect of $\Sigma$ is to change the length of the standard unit vectors according to the singular values. So, the unit circle would be mapped to an ellipsoid. 
+
 
 ## Applications of the SVD
 
-There will be two applications described in this section.
+There will be two applications described in this section in the future.
 
 1.  Data compression
 
 2.  Linear Least Squares.
-
-
-We start with the first.  
-Numerical data can be stored in a matrix.
-A black-and-white picture/photo can be stored 'pixel by pixel', by numbers that indicate the gray scale, which may for instance be any integer from 0 (completely white) to 31 (completely black). A 9:16 photo may then be stored as a 1080x1350 matrix.
-
-
-The results of some survey with $n$ question that had to be answered using a 1-5 scale.  If the numbers of respondents is $N$, the data correspond to a $N \times n$ matrix.
-
-In the first situation there will be both a high correlation between columns that are close to each other, as well as between nearby rows.  If the picture is a true photo the matrix will be far from a 'random' matrix.
-In the second context  one might expect that the columns will highly correlate:  people that agree on certain issues are more likely to agree on other issues as well.  
-
-The main features of the data may be filtered out by analyzing an SVD of the matrix at hand.
-
-The basic idea comes from the 'spectral decomposition' as in the last observation of {prf:ref}`Ex:SVD:firstSVD`.  Suppose $A$ is a matrix of  rank $r$,  with nonzero singular values  $\sigma_1 \geq \sigma_2 \geq \ldots \geq \sigma_r > 0$.  Furthermore, let  $U\Sigma V^T$  be a singular value decomposition of the matrix $A$. Let 
-
-$$
-  \Delta = \begin{bmatrix} \sigma_1 &   0   &  0   & \cdots & 0 \\ 
-                              0 & \sigma_2  &  0   & \cdots & 0 \\
-                              0 &  0  & \sigma_3 & \cdots   & 0 \\
-                              \vdots & \vdots &  & \ddots &\vdots \\
-                              0  & 0  & 0 & \ldots & \sigma_r 
-           \end{bmatrix}.   
-$$
-
-So $\Delta$ is the diagonal matrix that remains if all the zero rows and zero columns (if any) of $\Sigma$ are removed. If $U_r$  and  $V_r$  is the matrix with the first $r$ colums of $U$, and  $V_r$  is the matrix with the first $r$ colums of $V$, then as in {prf:ref}`Ex:SVD:firstSVD`  we have that
-
-$$
-  A = U\Sigma V^T = U_r\Delta V_r
-$$
-
-which can be rewritten as
-
-::::{math}
-:label: Eq:SVD:SpectralDecompAlg
-
-   A = \sigma_1 \vect{u}_1\vect{v}_1^T + \sigma_2 \vect{u}_2\vect{v}_2^T + \cdots +
-   \sigma_r \vect{u}_r\vect{v}_r^TA.
-
-::::
-
-Here $A$ is written as a sum of rank 1 matrices, and because of the decreasing singular values, these rank 1 matrices get less and less 'important'.  If the $\sigma_i$ become very small for, say, $k < i \leq r$,  we might expect that the sum
-
-$$
-\sigma_1 \vect{u}_1\vect{v}_1^T + \ldots + \sigma_k \vect{u}_k\vect{v}_k^T 
-$$
-
-of the first $k$ terms gives a good approximation of the matrix $A$.
-
-The gain is this:  if the data is put in the form of an $m \times n$ matrix $A$,  
-then it needs $m \times n$ memory cells to store $A$.  If $k$  is much smaller than $r = $ rank $A$
-(which in genral will be equal to the smallest of $m$ and $n$),  then $U_k$,  $V_k$  and the $k$ largest singular values only take up $m\times k + n\times k + k  = (m+n+k)k$,  memory cells. <BR>
-If, for instance, a 1080x1350 ( $\approx$ 1.45 MB) image is stored using the thirty per cent highest singular values,  the storage space reduces to  324x(1080+1350+320) $\approx$ 7.78 MB.  So the  *data* as been *compressed' by more or less a factor 0.54.
-
-In general, the higher the correlation/dependency between the columns (or, for that matter, the rows) of a matrix $A$, the fewer singular values are needed for a good approximation of $A$.
 
 ## Grasple Exercises
 
@@ -926,4 +917,3 @@ In general, the higher the correlation/dependency between the columns (or, for t
 :dropdown:
 :description: Finding maximal value of $\norm{A\vect{x}}$, if $\norm{\vect{x}}$ ,  $A$ a 3x2 matrix.
 ::::
-
