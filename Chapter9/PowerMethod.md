@@ -15,24 +15,27 @@ Let us for the moment consider the case where the matrix $A$ is diagonalizable.
 The power method is based on the dynamical system
 
 $$
-    \vect{x}_0 = \vect{s}, \quad \vect{x}_{k+1} = A\vect{x}_k,\,\,  k = 1,2,3,\ldots
+    \vect{s}, \quad A\vect{s},  \quad A^2\vect{s},  \quad A^3\vect{s}, \,\, \ldots 
 $$
 
 We know from {prf:ref}`Prop:DynSystDiscrete:DiagCase` in {numref}`Sec:DynSystDiscrete` that for a *diagonalizable* matrix $A$ with eigenvalues
-$\lambda_1, \ldots, \lambda_n$ and corresponding eigenvectors  $\vect{v}_1, \ldots, \vect{v}_n$, the $k$-th vector in the process is given by
+$\lambda_1, \ldots, \lambda_n$ and corresponding eigenvectors  $\vect{v}_1, \ldots, \vect{v}_n$, if we start from
+
+$$
+   \vect{s} = c_1\vect{v}_1 + c_2\vect{v}_2 +  \ldots + c_n\vect{v}_n.
+$$
+
+
+the $k$-th vector in the process is given by
 
 ::::{math}
 :label: Eq:PowerMethod:GenSol
 
-\vect{x}_k =  A^k\vect{x}_0 = c_1\lambda_1^k\vect{v}_1 + c_2\lambda_2^k\vect{v}_2 +  \ldots + c_n\lambda_n^k\vect{v}_n,
+ A^k\vect{s} = c_1\lambda_1^k\vect{v}_1 + c_2\lambda_2^k\vect{v}_2 +  \ldots + c_n\lambda_n^k\vect{v}_n,
 
 ::::
 
-if we start from
 
-$$
-  \vect{x}_{0} = \vect{s} = c_1\vect{v}_1 + c_2\vect{v}_2 +  \ldots + c_n\vect{v}_n.
-$$
  
 Now suppose the eigenvalues are ordered according to
 
@@ -46,19 +49,19 @@ We can rewrite Equation {eq}`Eq:PowerMethod:GenSol` as
 ::::{math}
 :label: Eq:PowerMethod:GenSol-2
 
-\vect{x}_k =  \lambda_1^k\left(c_1\vect{v}_1 + c_2(\lambda_2/\lambda_1)^k\vect{v}_2 +  \ldots + c_n(\lambda_n/\lambda_1)^k\vect{v}_n\right).
+ A^k\vect{s}  =  \lambda_1^k\left(c_1\vect{v}_1 + c_2(\lambda_2/\lambda_1)^k\vect{v}_2 +  \ldots + c_n(\lambda_n/\lambda_1)^k\vect{v}_n\right).
 
 ::::
 
 If the coefficient $c_1$ is not equal to zero,
-then since all factors $(\lambda_i/\lambda_1)^k$, for $i = 2,\ldots,n$ will go to zero for $k \to \infty$, in the long run $\vect{x}_k$ will behave as
+then since all factors $(\lambda_i/\lambda_1)^k$, for $i = 2,\ldots,n$ will go to zero for $k \to \infty$, in the long run the vector $A^k\vect{s}$ will behave as
 
 $$
    c_1(\lambda_1)^k\vect{v}_1.
 $$
 
-That is $\vect{x}_k$ is 'almost' an eigenvector.
-A minor complication: if $|\lambda_1| > 1$, $\norm{\vect{x}_k}$ will go to infinity and if $|\lambda_1| < 1$, $\vect{x}_k$ will go to zero. This complication can be overcome by a proper rescaling.
+That is, the vector $A^k\vect{s} $ is 'almost' a multiple of the eigenvector $\vect{v}_1$.
+A minor complication: if $|\lambda_1| > 1$, $\norm{A^k\vect{s}}$ will go to infinity and if $|\lambda_1| < 1$, $A^k\vect{s}$ will go to zero. This complication can be overcome by a proper rescaling.
 
 We put a name to the situation where a matrix $A$ has a single eigenvalue of highest absolute value.
 
@@ -89,26 +92,25 @@ Suppose $A$ is an $n\times n$ matrix.
 &nbsp; (ii) Find the entry $\mu$ of $\vect{y}$ of the highest absolute value; <BR>
 &nbsp; (iii) Replace $\vect{x}$ by $\dfrac{1}{\mu}\vect{y}$.
 
-Step 2 is repeated until the process more or less stabilizes. For instance, until the difference between the last two computed vectors is smaller that a predetermined 'error' $\varepsilon$.
+Step 2 is repeated until the process more or less stabilizes. For instance, until the difference between the last two computed vectors is smaller than a predetermined 'error' $\varepsilon$.
 
 ::::
 
 ::::{prf:remark}
 :label: Rem:Powermethod:Algorithm
 
-Instead of storing of the whole sequence
+Note that instead of storing of the whole sequence
 
 $$
 
-\vect{x}_1=A\vect{x}_0,\,\,\vect{x}_2 = A\vect{x}_1,\,\,\vect{x}_3=A\vect{x}_2,\,\ldots,
-
+\vect{x}_1=\dfrac{1}{\mu_1}A\vect{x}_0,\,\,\vect{x}_2 = \dfrac{1}{\mu_2}A\vect{x}_1,\,\,\vect{x}_3=\dfrac{1}{\mu_3}A\vect{x}_2,\,\ldots,
 
 $$
 
 the algorithm discards all intermediate iterates.<BR>  
 We are only interested in the last iterate anyway, since we expect this to be the best approximation of an eigenvector.
 
-The scaling step is necessary to avoid ending up at the zero vector or 'at infinity', where all information is lost.  There are alternative ways to scale the iterates.  A common one is to scale with the factors  $\dfrac{1}{\norm{\vect{y}_k}}$, that is, to normalize the vectors $\vect{y}_k$.
+The scaling step is necessary to avoid ending up at the zero vector or 'at infinity', where all information is lost.  There are alternative ways to scale the iterates.  A common one is to scale with the factors  $\dfrac{1}{\norm{\vect{y}}}$, that is, to normalize the vectors $\vect{y}$.
 
 ::::
 
@@ -116,11 +118,10 @@ The scaling step is necessary to avoid ending up at the zero vector or 'at infin
 :label: Prop:Powermethod:Powermed
 
 Suppose $A$ is a matrix with dominant eigenvalue $\lambda_1$.
-Then in general the sequence constructed by the Power Method Algorithm, will converge to an eigenvector $\vect{v}_1$ for $\lambda_1$. <BR>
-To be more specific, the sequence $\vect{x}_k$ will converge to a dominant eigenvector $\vect{v}_1$ if the initial vector $\vect{x}_0$ does not lie in
+Then in general the sequence constructed by the Power Method Algorithm, will converge to an eigenvector $\vect{v}_1$ for $\lambda_1$.  &nbsp; To be more specific, the sequence $\vect{x}_k$ will converge to a dominant eigenvector $\vect{v}_1$ if the initial vector $\vect{x}_0$ does not lie in
 $\text{Span}\{\vect{v}_2, \vect{v}_3, \ldots, \vect{v}_n\}$.
 
-Moreover, suppose $\vect{x}$ is the result after a (sufficiently) large number of runs of the algorithm.  Then (an approximation of) the dominant eigenvalue is the entry with the highest absolute value of the vector $\vect{y} = A\vect{x}$.
+Moreover, suppose $\vect{x}$ is the result after a (sufficiently) large number of runs of the algorithm.  Then (an approximation of) the dominant eigenvalue is the entry with the highest absolute value of the vector $A\vect{x}$.
 
 ::::
 
@@ -132,24 +133,24 @@ For the proof we assume that the matrix is diagonalizable, to be able to use {eq
 With the scalings we consider in fact the dynamical process
 
 $$
-   \vect{u}_0 = \vect{s}, \quad \vect{u}_{k+1} = \frac{1}{\mu_k} A\vect{u}_k.
+   \vect{x}_0 = \vect{s}, \quad \vect{x}_{k+1} = \frac{1}{\mu_k} A\vect{x}_k.
 $$
 
 This process yields a sequence of vectors with the same directions as the
-vectors of the process
+vectors of the unscaled process
 
 $$
-  \vect{x}_0 = \vect{s}, \quad \vect{x}_{k+1} =  A\vect{x}_k.
+  \vect{u}_0 = \vect{s}, \quad \vect{u}_{k+1} =  A\vect{u}_k.
 $$
 
 And we know (Formula {eq}`Eq:PowerMethod:GenSol`) that under the assumption of a dominant eigenvalue $\lambda_1$ and an initial vector
 
 $$
-   \vect{x}_0 = c_1\vect{v}_1 + c_2\vect{v}_2 +  \ldots + c_n\vect{v}_n, \quad c_1 \neq 0,
+   \vect{s} = c_1\vect{v}_1 + c_2\vect{v}_2 +  \ldots + c_n\vect{v}_n, \quad c_1 \neq 0,
 $$
  
-the vectors $\vect{x}_k$ in the long run behave as $c_1\lambda_1^k\vect{v}_1$. <BR>
-The effect of the scalings is that all along the way we keep vectors with largest entry 1. Thus the scaled process will converge to the dominant eigenvector $\vect{u}$ with largest entry 1.
+the vectors $A^k\vect{s}$ in the long run behave as $c_1\lambda_1^k\vect{v}_1$. <BR>
+The effect of the scalings is that all along the way we keep vectors with largest entry 1. Thus the scaled process will converge to the dominant eigenvector $\vect{v}$ with largest entry 1.
 
 ::::
 
@@ -196,7 +197,7 @@ For the given matrix $A$ this can be analysed in detail. A complete set of eigen
 
 $$
   \lambda_1 = 9,\,\,\vect{v}_1 = \begin{bmatrix} 1 \\ 2 \end{bmatrix}, \quad
-  \lambda_1 = 4,\,\,\vect{v}_2 = \begin{bmatrix} 2 \\ -1 \end{bmatrix}.
+  \lambda_2 = 4,\,\,\vect{v}_2 = \begin{bmatrix} 2 \\ -1 \end{bmatrix}.
 $$
 
 At the start we have
@@ -210,7 +211,7 @@ $$
 And then after $k$ steps, if we would not rescale, we would get
 
 $$
-  \vect{x}_k = A^k\vect{x}_0 =  c_19^k\begin{bmatrix} 1 \\ 2 \end{bmatrix} + c_24^k\begin{bmatrix} 2 \\ -1 \end{bmatrix}
+   A^k\vect{x}_0 =  c_19^k\begin{bmatrix} 1 \\ 2 \end{bmatrix} + c_24^k\begin{bmatrix} 2 \\ -1 \end{bmatrix}
   = 9^k \left( c_1\begin{bmatrix} 1 \\ 2 \end{bmatrix} +
    c_2\left(\frac49\right)^k\begin{bmatrix} 2 \\ -1 \end{bmatrix}  \right).
 $$
@@ -218,7 +219,7 @@ $$
 By rescaling we get a vector in the same direction with highest entry equal to 1.
 
 That we have such a rapid convergence in the example is due to the two circumstances mentioned: <BR>
-(1) the ratio $|\lambda_1/\lambda_2| = 4/9 = 0.4444...$ is much smaller than 1, <BR>
+(1) the ratio $|\lambda_2/\lambda_2| = 4/9 = 0.4444...$ is much smaller than 1, <BR>
 and <BR>
 (2) the ratio $\dfrac{c_1}{c_2} = \dfrac{3/5}{1/5} = 3$ is not too close to zero.<BR>
 Thus the term with the eigenvector $\mathbf{v}_2$ in the expression within the parentheses
@@ -237,6 +238,7 @@ In the exceptional situation where the 'first guess' was exactly a multiple of t
 
 ::::{prf:example}
 :label: Ex:PowerMethod:SecondExample
+
 Let us apply the power method to the following matrix plus initial 'guess'
 
 $$
@@ -264,10 +266,10 @@ $$
          1.0000 \\ 0.2891 \\ -0.1459  \end{bmatrix}.
 $$
 
-And by computing $A\vect{x}$, which yields
+And by computing $A\vect{x}_{26}$, which yields
 
 $$
-  A\vect{x} = \begin{bmatrix}
+  A\vect{x}_{26} = \begin{bmatrix}
          11.4780 \\ 3.3187 \\ -1.6758 \end{bmatrix},
 $$
 
@@ -277,10 +279,8 @@ $\lambda_1 = 11.4780$.
 Lastly, for comparison's sake
 
 $$
-  \vect{x}_{26} = \begin{bmatrix}
-         1.0000 \\ 0.2891 \\ -0.1459  \end{bmatrix}, \quad
-  A\vect{x}_{26} = \begin{bmatrix}
-         11.4780 \\ 3.3187 \\ -1.6758 \end{bmatrix} \,\, \approx \,\,
+    A\vect{x}_{26} = \begin{bmatrix}
+         11.4780 \\ 3.3187 \\ -1.6758 \end{bmatrix} \quad \text{and} \quad
   11.4780\vect{x}_{26} = \begin{bmatrix}
          11.4780 \\ 3.3188 \\ -1.6752 \end{bmatrix}.              
 $$
@@ -310,7 +310,7 @@ Consider the matrix $A = \begin{bmatrix}
      3 &4 &-1& 3 \\ 
      4 &-2& 3& 2\\
      2 & 1& 6& 3\\
-     3 & 4& 2&-7 \end{bmatrix}$, and the initial vector
+     3 & 4& 2&-7 \end{bmatrix}$ and the initial vector
 $\mathbf{x}_0 = \begin{bmatrix}   2 \\ 2 \\ 4 \\ 1 \end{bmatrix}$.
 
 If we (let some computer program) run one hundred cycles of the power method algorithm, the last two iterates are
@@ -393,11 +393,15 @@ And lastly, the circumstance that $\lambda_1$ is negative and  $\lambda_2$ is po
 
 ## Some Extensions
 
-In the previous section the power method was used find the dominant (real) eigenvalue of a matrix $A$. In this subsection we will consider two extensions:
+In the previous section the power method was used find the dominant (real) eigenvalue of a matrix $A$. In this subsection we will consider two extensions.
 
 --- To find the _smallest_ eigenvalue of a matrix $A$.
 
 --- To find a second eigenvalue of $A$ by using a _shift_ of $A$. <BR>
+
+By combining the two methods we will see how
+
+--- to find the eigenvalue of $A$ closest to a given real number $\alpha$.
 
 The first issue is covered by the next proposition.
 
@@ -412,11 +416,11 @@ $$
 
 Here, again,  $|\lambda|$ denotes the modulus of  $\lambda$. <BR>
 Note that the last two _strict_ inequalities
-imply that $A$ has a single smallest eigenvalue which is not equal to $0$.
+imply that $A$ has a single *smallest* eigenvalue which is not equal to $0$.
 <BR>
 Since $0$ is not an eigenvalue, we may conclude that $A$ is invertible.
 
-Then the power method applied to $A^{-1}$ converges (apart from the usual exceptional cases) to an eigenvector $\vect{v}_n$ for the _smallest_ eigenvalue $\lambda_n$.
+Then the power method applied to $A^{-1}$ converges (apart from the usual exceptional cases) to an eigenvector $\vect{v}_n$ for the smallest eigenvalue $\lambda_n$.
 ::::
 
 
@@ -438,7 +442,7 @@ $$
 
 Thus, $A^{-1}$ has the dominant eigenvalue $\dfrac{1}{\lambda_n} = \lambda_n^{-1}$.
 
-Moreover, in the same exercise it is stated that the eigenvectors of $A^{-1}$ for eigenvalue $\lambda_n^{-1}$ are exactly the eigenvectors of $A$ for
+Moreover, in the same exercise it is stated that the eigenvectors of $A^{-1}$ for the eigenvalue $\lambda_n^{-1}$ are exactly the eigenvectors of $A$ for
 eigenvalue $\lambda_n$.
 
 Thus if we apply the algorithm of the power method to the matrix $A^{-1}$, we will find an eigenvector $\mathbf{v}_n$ of $A^{-1}$ for the eigenvalue $\lambda_n^{-1}$.
@@ -448,20 +452,14 @@ This is then also an eigenvector of $A$ for the smallest eigenvalue $\lambda_n$.
 
 ::::{prf:remark}
 
-From a computational point of view, in the case of a large matrix $A$, it might be advantageous to compute $\vect{y}_{k+1}$ from $\vect{y}_{k}$ by solving the equation
+From a computational point of view, in the case of a large matrix $A$, it might be advantageous to compute  $\vect{y} = A^{-1}\vect{x}$ in Step 2(i) of {prf:ref}`Alg:PowerMethod:PowMed` by solving the equation
 
 $$
-  A\vect{y}_{k+1} = \vect{y}_k,
-$$
-
-rather than computing
-
-$$
-\vect{y}_{k+1} = A^{-1}\vect{y}_k.
+  A\vect{y} = \vect{x}.
 $$
 
 If the matrix $A$ is sparse, i.e., has relatively few non-zero entries, its
-inverse may very well be a 'full' matrix.
+inverse may very well be a dense matrix (i.e., a matrix with many nonzero entries).
 ::::
 
 ::::{prf:example}
@@ -507,27 +505,27 @@ $$
    (\lambda_1-\alpha), \quad (\lambda_2-\alpha),\,\, \ldots, \,\,(\lambda_n-\alpha).
 $$
 
+Namely,
+
+$$ A\vect{v}_i = \lambda_i\vect{v}_i \, \iff \, (A - \alpha I)\vect{v}_i = (\lambda_i -\alpha)\vect{v}_i,
+$$
+
+so the eigenvectors remain the same.
+
+This more or less proves the following proposition.
+
 
 ::::{prf:proposition} Shifted Power Method
 :label: Prop:PowerMethod:Shifted
 
-Suppose $A$ is an $n \times n$ matrix with eigenvalues  $\lambda_1, \ldots, \lambda_n$, and $\alpha$ is a real number. Furthermore, define the matrix  $B = A - \alpha\mathrm{I}$.
+Suppose $A$ is an $n \times n$ matrix with eigenvalues  $\lambda_1, \ldots, \lambda_n$, and $\alpha$ is a real number. Furthermore, define the matrix  $B = A - \alpha{I}$.
 
-
-::::{latexlist}
-:enumerated: true
-:type: 1
-
-\item   If the power method applied to the matrix $B$   converges to the  eigenvalue $\mu$  of the matrix $B$, with the  corresponding eigenvector $\mathbf{v}$, then 
+If the power method applied to the matrix $B$  converges to the  eigenvalue $\mu$  of the matrix $B$, with the  corresponding eigenvector $\mathbf{v}$, then 
 $\mathbf{v}$ is an eigenvector of the matrix $A$ for the eigenvalue $\lambda_i =\mu + \alpha$.
-
-
-\item  If the inverse power method applied to the matrix $B$ converges to the  eigenvalue $\mu$  of the matrix $B$,  with the  corresponding eigenvector $\mathbf{v}$, then 
-$\mathbf{v}$ is an eigenvector of the matrix $A$ for the eigenvalue $\lambda_i = \mu + \alpha$ that is closest to the number $\alpha$.
 
 ::::
 
-The following two examples illustrate how {prf:ref}`Prop:PowerMethod:Shifted` can be used.
+The following  example illustrates how {prf:ref}`Prop:PowerMethod:Shifted` can be used.
 
 
 ::::{prf:example}
@@ -538,90 +536,58 @@ In {prf:ref}`Ex:PowerMethod:SecondExample` with the matrix $A = \begin{bmatrix}
      1  &   6  &  -4\\
     -4  &   4  &  -8        \end{bmatrix} $
   the power method yielded the dominant eigenvalue  $\lambda_1 = 11.4780$.
-If we apply the power method to the matrix
+The eigenvalue  $\lambda_1-11$   of the matrix $A - 11 I$ lies close to zero, so with high probability it will not be the dominant eigenvalue of $A - 11 I$. Thus if we run the power method algorithm 
+on the matrix
 
 $$
-   B = A - 11\,\mathrm{I}  =   \begin{bmatrix}
+   B = A - 11\,{I}  =   \begin{bmatrix}
      -3  &   9  &  -6\\
      1  &   -5  &  -4\\
-    -4  &   4  &  -19        \end{bmatrix} \quad \text{and the starting vector} \,\,
-       \vect{x}_0 = \begin{bmatrix}
-         1 \\ 1 \\ 1        \end{bmatrix}.
+    -4  &   4  &  -19        \end{bmatrix} 
+    $$
+we will eventually find an eigenvalue of $A$ different from $\lambda_1$.
+
+If we run the algorithm with the matrix $B$ and the satrting vector $\vect{x}_0 = \begin{bmatrix}
+         1 \\ 1 \\ 1        \end{bmatrix}$,
+
+we find that already  $\norm{\vect{x}_{12}-\vect{x}_{11}} < 10^{-4}$, &nbsp;and that
+
+$$
+  \vect{x}_{12} = \begin{bmatrix} 0.2238 \\ 0.2736 \\ 1.0000 \end{bmatrix}, \quad
+  B\vect{x}_{12} = \begin{bmatrix} -4.2087 \\ -5.1444 \\  -18.8007 \end{bmatrix} \,\approx
+  -18.8007 \vect{x}_{12} = \begin{bmatrix} -4.2082 \\ -5.1448 \\  -18.8007 \end{bmatrix}.
 $$
 
-we find that  already  $\norm{\vect{x}_{12}-\vect{x}_{11}} < 10^{-4}$, &nbsp;and that
+So $B$ has dominant eigenvalue  $\mu_1 = -18.8007$,  and 'shifting back' to $A$ we conclude that $A$ has eigenvalue  $\lambda = \mu_1+11 = -7.8007$, for the same eigenvector $\vect{x}_{12}$.  Indeed,   
 
 $$
   \vect{x}_{12} = \begin{bmatrix} 0.2238 \\ 0.2736 \\ 1.0000 \end{bmatrix}, \quad
   A\vect{x}_{12} = \begin{bmatrix} -1.7465 \\ -2.1343 \\  -7.8007 \end{bmatrix} \,\approx
   -7.8007 \vect{x}_{12} = \begin{bmatrix} -1.7461 \\ -2.1347 \\  -7.8007 \end{bmatrix}.
 $$
-So 
 
-$$
- \lambda = -7.8007, \quad \mathbf{v} = \begin{bmatrix} 0.2238 \\ 0.2736 \\ 1.0000 \end{bmatrix}
-$$
-
-is an eigenvalue/eigenvector pair for  $A$.  
+  
 
 ::::
 
 
-::::{prf:example}
-:label:  Ex:PowerMethod:FourthExample
+To conclude this subsection we show how the inverse power method can be combined with a shift. If we have some idea of the location $\alpha$ of an eigenvalue $\lambda$, then
+$ \lambda - \alpha$ will presumably be the eigenvalue of $A - \alpha {I}$ that is closest to zero. So if we apply the inverse power method to the matrix $A - \alpha I$ we will find an eigenvector $\vect{v}$ for the eigenvalue $\lambda-\alpha$ of the matrix $A - \alpha{I}$ that is closest to $0$.  If we 'shift back' we see that the same vector $\vect{v}$ is an eigenvector for the eigenvalue $\lambda$ of $A$ that is closest to $\alpha$.  
+We have just given the argument for a last proposition concerning the power method.
 
-Let us illustrate matters using the matrix
-$A = \begin{bmatrix}
-          2 & 1 & 0 & 0 & 0 & 0 \\ 
-          1 & 2 & 1 & 0 & 0 & 0 \\
-          0 & 1 & 2 & 1 & 0 & 0  \\
-          0 & 0 & 1 & 2 & 1 & 0 \\
-          0 & 0 & 0 & 1 & 2 & 1 \\
-          0 & 0 & 0 & 0 & 1 & 2
-      \end{bmatrix}$.
 
-If we apply the power method iteratively multiplying the vector
-$\mathbf{x}_0 = \begin{bmatrix}
-1 \\ 1 \\ 1 \\ 0 \\ 0 \\ 0
-\end{bmatrix}$ with the matrix $A$ (and rescaling) we find that, up to four decimals,
+::::{prf:proposition} Shifted Power Method
+:label: Prop:PowerMethod:ShiftedInverse
 
-$$
-   \mathbf{x}_{52} = \mathbf{x}_{51} = \begin{bmatrix}
-          0.4452 \\ 0.8021 \\ 1.0000 \\ 0.9997 \\ 0.8015 \\ 0.4447
-      \end{bmatrix}, \quad
-    \text{and} \quad
-      A\mathbf{x}_{52} = \begin{bmatrix}
-          1.6925 \\ 3.0494 \\ 3.8019 \\ 3.8011 \\ 3.0477 \\ 1.6911
-      \end{bmatrix}
-$$
+Suppose $A$ is an $n \times n$ matrix with eigenvalues  $\lambda_1, \ldots, \lambda_n$, and $\alpha$ is a real number. Furthermore, define the matrix  $B = A - \alpha{I}$.
 
-and may conclude that we are close to an eigenvector for the largest eigenvalue $\lambda_1$ which lies close to $\alpha = 3.8019$.
-
-If we round to 4, and apply the power method to the matrix $B = A - 4I$,
-starting from the same vector $\vect{x}_0$, the computations yield
-
-$$
-  \mathbf{x}_{50} = \begin{bmatrix}
-          0.4451 \\ -0.8020 \\ 1.0000 \\ -0.9999 \\ 0.8017 \\ -0.4449
-      \end{bmatrix}, \quad
-   \mathbf{x}_{51} = \begin{bmatrix}
-          0.4451 \\ -0.8020 \\  1.0000 \\  -0.9999 \\ 0.8018 \\  -0.4449
-      \end{bmatrix} \quad \text{and} \quad
-      A\mathbf{x}_{51} = \begin{bmatrix}
-          -1.6922 \\ 3.0491 \\ -3.8019 \\ 3.8016 \\ -3.0484 \\ 1.6916
-      \end{bmatrix}
-$$
-
-From which we may conclude that $\mathbf{x}_{50}$ is close to an eigenvector for
-$\mu = -3.8019$, which is the dominant eigenvalue of $B = A- 4I$. <BR>
-Thus $\mathbf{x}_{50}$ is close to an eigenvector of $A$ for the eigenvalue
-$\lambda = \mu + 4 = 0.1981$. <BR>
-In this case  we have in fact found the smallest eigenvalue, which we could also have found using the inverse power method.
+If the inverse power method applied to the matrix $B$ converges to the  eigenvalue $\mu$  of the matrix $B$,  with the  corresponding eigenvector $\mathbf{v}$, then 
+$\mathbf{v}$ is an eigenvector of the matrix $A$ for the eigenvalue $\lambda_i = \mu + \alpha$ that is closest to the number $\alpha$.
 
 ::::
 
-In the last example of this subsection we show how the inverse power method with shift may be used. If we have some idea of the location $\alpha$ of an eigenvalue $\lambda$, then
-$ \lambda - \alpha$ will be the eigenvalue of $A - \alpha \mathrm{I}$ that is closest to zero. So if we apply the inverse power method to the matrix $A - \alpha I$ we will find an eigenvector $\vect{v}$ for the eigenvalue $\lambda-\alpha$ of the matrix $A - \alpha\mathrm{I}$ that is closest to $0$.  If we 'shift back' we see that the same vector $\vect{v}$ is an eigenvector for the eigenvalue $\lambda$ of $A$ that is closest to $\alpha$.  For a not too large matrix $A$ some idea of the location(s) of the real eigenvalues can for instance be found by considering the graph of its characteristic polynomial.
+
+For a not too large matrix $A$ some idea of the location(s) of the real eigenvalues can for instance be found by considering the graph of its characteristic polynomial.
 
 ::::{prf:example}
 Consider the matrix $A = \begin{bmatrix}  3  &  -3  &  1   &  3 \\
@@ -629,6 +595,7 @@ Consider the matrix $A = \begin{bmatrix}  3  &  -3  &  1   &  3 \\
                      -2  &   4  &  -2  & -3 \\
                       0  &   4  &  -1  & -2  \end{bmatrix}$.<br>
 It can be shown that the characteristic polynomial $p_A(\lambda)$ of $A$ changes sign between $\lambda = -1$ and $\lambda = 0$, and also between $\lambda = 2$ and $\lambda = 3$.
+So we know there will be an eigenvalue close to $\alpha = 3$.
 
 If we apply the inverse power method to the matrix $B = A - 3I$, starting from the vector $\vect{x}_0 = \begin{bmatrix}  1 \\ 0 \\ 0 \\  1  \end{bmatrix}$ we find, up to four decimals,
 
@@ -642,10 +609,9 @@ $$
       \end{bmatrix},
 $$
 
-From which we conclude that $\vect{x}_{40}$ is close to an eigenvector of $A$ for the eigenvalue $\lambda \approx -0.2287 + 3 = 2.7713$.   The process converges quickly since $B$ has an eigenvalue $\mu_1$ very close to zero, and apparently  $1/\mu_1$ is 'very dominant'. 
+From which we conclude that $\vect{x}_{10}$ is close to an eigenvector of $A$ for the eigenvalue $\lambda \approx -0.2287 + 3 = 2.7713$.   The process converges quickly since $B$ has an eigenvalue $\mu_1$ very close to zero, which makes  $1/\mu_1$ is 'very dominant'. 
 
-In fact, using any computer algebra program we can find that the eigenvalues of
-$A$ are
+Using any computer algebra program we can find that the eigenvalues of $A$ are
 
 $$
  \lambda_{1,2}=-2.6489 \pm 4.8444i, \quad \lambda_3 = 2.7713,\quad \lambda_4 = -0.4735.
@@ -653,24 +619,26 @@ $$
 
 Since $|\lambda_{1,2}| > |\lambda_{3}| > |\lambda_{4}|$, the eigenvalue $\lambda_3$ would not have been found using either the power method or the inverse power method applied directly to $A$.
 
+
 ::::
 
 
+In the last example the complex eigenvalues $\lambda_{1,2}$ came up.  For those the expression  $|\lambda_{1,2}|$ stands for the *modulus* of these numbers. For the matrix at hand, since these were not the eigenvalues closest to $\alpha = 3$, they did not lead to complications.  In the next section we will zoom in on finding the dominant eigenvalue of a matrix in case it is *complex*.
+
 ## Power method and complex eigenvalues
 
-In {numref}`Subsec:Powermethod:Basics` we assumed that the matrix $A$ be diagonalizable,
+In {numref}`Subsec:Powermethod:Basics` we assumed that the matrix $A$ is diagonalizable,
 and in that case we could use {eq}`Eq:PowerMethod:GenSol` to prove that the power method in general converges, and that the speed of convergence depends on the quotient
 
 $$
    \dfrac{|\lambda_2|}{|\lambda_1|}.
 $$   
 
-In the examples so far, the matrices involved had only *real* eigenvalues.
 As long as the dominant eigenvalue is real, the power method will work whether the matrix is diagonalizable or not, and whether all eigenvalues are real or not.  In the following example we apply the power method to a matrix with *'non-dominant'*  complex eigenvalues. 
 
 ::::{prf:example}
-:label: Ex:PowerMethod:SecondExample
-Let us apply the power method to the following matrix plus 'initial guess
+:label: Ex:PowerMethod:ThirdExample
+Let us apply the power method to the following matrix plus initial guess
 
 $$
   A = \begin{bmatrix}
@@ -720,7 +688,14 @@ we can still use Equation {eq}`Eq:PowerMethod:GenSol-2` to conclude that, except
 ::::
 
 
-Now suppose that the eigenvalues with the largest modulus of a real matrix $A$ are the complex eigenvalues  $\lambda_{1,2} = \alpha \pm \beta i$  with the complex eigenvectors  $\vect{v}_{1,2} = \vect{u} \pm i\vect{w}$.  Starting the power method from an arbitrary real vector will certainly not lead to a multiple one of the vectors $\vect{v}_{1,2}$, since every vector  $\vect{x}_k$ will remain real.
+Now suppose that an eigenvalue with the largest modulus of the real matrix $A$ is the complex number   $\lambda_{1} = \alpha + \beta i$, where $\beta \neq 0$.  Then we know 
+(from {prf:ref}`Prop:ComplexEV:Conjugation`) that 
+
+$$
+ \lambda_{2} = \overline{\lambda_1} =  \alpha - \beta i
+$$ 
+
+is also an eigenvalue of $A$. Since $|\lambda_{1}| = |\lambda_{2}|$,  the matrix $A$ does not have a dominant eigenvalue  (which by definition must be unique).   In the same proposition it was stated that we have the pair of complex eigenvectors  $\vect{v}_{1,2} = \vect{u} \pm i\vect{w}$ for $\lambda_{1,2}$.  Starting the power method from an arbitrary real vector will certainly not lead to a multiple  of one of the vectors $\vect{v}_{1,2}$, since every vector  $\vect{x}_k$ will remain real.
 <BR>
 This can be overcome by starting from a *complex* vector $\vect{z}_0 = \vect{x}_0 + i\vect{y}_0$.  However,  if this vector contains components in both the direction $\vect{v}_1$  and the direction $\vect{v}_2$, say
 
@@ -737,7 +712,7 @@ $$
 will outgrow the other.  So the iterates  $\vect{z}_0,\vect{z}_1,\vect{z}_2, \ldots $ that are generated by the power method will keep 'oscillating', and will definitely not converge to an eigenvector of $A$.  
 
 The following example illustrates this.  
-To see what is going on analytically we have chosen a matrix where we can actually compute the eigenvalues.
+To see what is going on analytically we have chosen a matrix for which we can actually compute the eigenvalues.
 
 
 ::::{prf:example}
@@ -783,28 +758,29 @@ $$
 $$
 
 In fact, since we started from a real vector $\vect{x}_0$  and the matrix $A$ is real,
-the iterates $\vect{x}_k$  will go around in the subset of vectors in $S$ with real entries.  But there is no obvious way how we can retrieve the  eigenvectors $\{\vect{v}_1, \vect{v}_2\}$ from the vectors $\vect{x}_k$.
+the iterates $\vect{x}_k$  will move around in the subset of vectors in $S$ with real entries.  But there is no obvious way how we can retrieve the  eigenvectors $\{\vect{v}_1, \vect{v}_2\}$ from the vectors $\vect{x}_k$.
 
 So what can we do?
 
-As mentioned, starting from a complex initial vector  $\vect{z}_0$  won't work. 
+As mentioned, starting from a complex initial vector  $\vect{z}_0$  won't work either. 
 
-The best is of course to think of a way out yourself.  But if you do not see how, and your curiosity has been aroused, you can open the 'workaround' below.
+The best is of course to think of a way out yourself.  <BR> 
+If you do not see such a way out, but your curiosity has been aroused, you can open the 'workaround' below.
 
 ::::{dropdown} Workaround to get to the dominant complex eigenvalues
 
-By definition, a dominant eigenvalue must be *unique* ,  i.e.,  $|\lambbda_1| > |\lambda_2| \geq \ldots \, |\lambda_n|$. <BR>
+By definition, a dominant eigenvalue must be *unique* ,  i.e.,  $|\lambda_1| > |\lambda_2| \geq \ldots \, |\lambda_n|$. <BR>
 The question is, how can we get rid of the dominant eigenvalue *pair* ?
 
 We can use the earlier idea of a shift!
 
-If a (real) matrix $A$ has eigenvalues $\lambda_{1,2} = a \pm bi$  as eigenvalues of highest modulus, then there is a good chance that one of the numbers $\lambda_{1,2} + ci$, for some real number $c$, is the *single* dominant eigenvalue of the matrix  $B = A + (ci)\mathrm{I}$.  
+If a (real) matrix $A$ has eigenvalues $\lambda_{1,2} = a \pm bi$  as eigenvalues of highest modulus, then there is a good chance that one of the numbers $\lambda_{1,2} + ci$, for some real number $c$, is the *single* dominant eigenvalue of the matrix  $B = A + (ci){I}$.  
 
 Let us illustrate the procedure for the matrix $A = \begin{bmatrix}2 & 0 & 0 \\ 1 & 3 & 4 \\ 0 & -4 & 3 \end{bmatrix}$ at hand.  <BR>
 Let $B$ be the matrix
 
 $$
-  B = (A + 2i)\mathrm{I} = \begin{bmatrix}2+2i & 0 & 0 \\ 1 & 3+2i & 4 \\ 0 & -4 & 3+2i \end{bmatrix}.
+  B = A + (2i)\mathrm{I} = \begin{bmatrix}2+2i & 0 & 0 \\ 1 & 3+2i & 4 \\ 0 & -4 & 3+2i \end{bmatrix}.
 $$
 
 The actual value of $B$ is not so important, but what is important is that $B$ has the eigenvalues
@@ -838,6 +814,8 @@ $$
 it follows that  $\mu = 3+6i$ is the corresponding eigenvalue.
 
 'Shifting back' we see that  $\begin{bmatrix}0\\1\\i \end{bmatrix}$ is an eigenvector of the original matrix $A$ for the eigenvalue $\lambda = (3+6i)-2i = 3+4i$.
+
+Problem solved!
 ::::
 
 
