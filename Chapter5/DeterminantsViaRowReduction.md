@@ -155,7 +155,11 @@ we see that in all three cases we have that
 
 \det{(E_iA)} = \det{E_i} \cdot \det{A}.
 
+
 :::
+
+Since every row operation can be performed using the product with an elementary matrix,
+a consequence of {prf:ref}`Prop:DetRowReduction:RowOps` is that Equation {eq}`Eq:DetRowReduction:ElementaryMatrices` holds for *any* product of an elementary $n \times n$ matrix $E$ with an arbitrary $n \times n$ matrix $A$.
 
 These are the basics for the general product rule we will see later, which states that
 
@@ -212,6 +216,8 @@ $$
 every rule involving row operations may be transformed into a rule about column operations. It is here that computing a determinant differs strikingly from the reduction of an (augmented) matrix to an echelon matrix. Another, more subtle difference is that
 a row operation applied to a matrix leads to an **equivalent** matrix, which we denote by the symbol $\sim$, whereas row or column operations on a determinant give **equal values** all the time. So then we write $=$.
 
+Note that in Rule i. of {prf:ref}`Prop:DetRowReduction:RowOps` the factor $c$ may be zero. This is also a slight difference to the scaling operation we used when row reducing a (for instance augmenting) matrix.  There the scaling factor must be nonzero.
+
 ::::::
 
 In the next example column operations are used.
@@ -267,40 +273,6 @@ $$
 
 ::::::
 
-::::::{exercise}
-:label: Exc:DetRowReduction:EqualRows
-
-Give an alternative proof of {prf:ref}`Cor:DetRowReduction:EqualRows` using Rule i. and Rule ii. of {prf:ref}`Prop:DetRowReduction:RowOps`.
-
-::::::
-
-::::::{dropdown} Solution to&nbsp;{numref}`Exc:DetRowReduction:EqualRows`&nbsp;(_click to show_)
-
-Suppose $A$ is a matrix with two equal rows, say row $i$ and row $j$ are equal.
-
-If we subtract the $i$th row from the $j$th row, we get a matrix $A_2$ with $j$th row equal to zero, and with det$(A_2) = $ det$(A)$. If we take the factor $0$ out, we see that det$(A_2) = 0$.
-
-For instance, with a $4\times 4$ matrix with equal second and fourth row we would have
-
-$$
-  \begin{vmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\
-                  \color{blue}a_{21} & \color{blue}a_{22} & \color{blue}a_{23} & \color{blue}a_{24} \\
-                  a_{31} & a_{32} & a_{33} & a_{34} \\
-                  \color{blue}a_{21} & \color{blue}a_{22} & \color{blue}a_{23} & \color{blue}a_{24}
-                  \end{vmatrix} =
-                  \begin{vmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\
-                  a_{21} & a_{22} & a_{23} & a_{24} \\
-                  a_{31} & a_{32} & a_{33} & a_{34} \\
-                  \color{blue}0 & \color{blue}0 &\color{blue} 0 & \color{blue}0
-                  \end{vmatrix} =
-                  {\color{blue}0}\begin{vmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\
-                  a_{21} & a_{22} & a_{23} & a_{24} \\
-                  a_{31} & a_{32} & a_{33} & a_{34} \\
-                  \ast & \ast &\ast &\ast
-                  \end{vmatrix} = 0.
-$$
-
-::::::
 
 ## Determinants versus Invertibility
 
@@ -372,7 +344,7 @@ $$
 
 ::::::
 
-The proof combines the property that for elementary matrices $A$ it is already shown that  $\det{(EA)} = \det{E}\cdot\det{A}$  (Equation {eq}`Eq:DetRowReduction:ElementaryMatrices`).  For more details you can push on $\vee$ below.
+The idea of the proof is to break it down to products of the form  $\det{(EA)} = \det{E}\cdot\det{A}$, where $E$ is an elementary matrix  (Equation{eq}`Eq:DetRowReduction:ElementaryMatrices`).  For more details you can push on $\vee$ below.
 
 ::::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:DetRowReduction:ProductRule`.
 
@@ -424,9 +396,9 @@ If the matrix $A$ is invertible, then $\text{det}\big(A^{-1}\big)= \dfrac{1}{\de
 We can combine the three properties
 
 i. $AA^{-1} = I$, &nbsp; ii. $\det{(AA^{-1})} = \det{A}\det{\left(A^{-1}\right)}$
-&nbsp; and &nbsp; iii. $\det{I} = 1$.
+&nbsp; and &nbsp; iii. $\det{I} = 1$
 
-As follows:
+as follows:
 
 $$
 \text{det}(A)\text{det}\left(A^{-1}\right)
@@ -471,6 +443,7 @@ $$
 $$
 
 </li>
+
 <li>
 
 For each $n \times n$ matrix $A$ it holds that
@@ -479,6 +452,18 @@ For each $n \times n$ matrix $A$ it holds that
 
 $$
 \det{(-A)} = -\det{A}.
+$$
+
+</li>
+
+<li>
+
+For each $n \times n$ matrix $A$ and each real number $k$ it holds that
+
+<BR>
+
+$$
+\det{(kA)} = k^n\det{A}.
 $$
 
 </li>
@@ -494,7 +479,8 @@ We treat the statements one by
 
 <li>
 
-For each $n \times n$ matrix $A$ it holds that $\text{det}\big(A^k\big)= \big(\det{A}\big)^k$. 
+Is it true that for each $n \times n$ matrix $A$ it holds that $\text{det}\big(A^k\big)= \big(\det{A}\big)^k$? 
+
 This is true, and follows from repeatedly using the property $\det(AB) = \det(A)\det(B)$. Namely,
 
 <BR>
@@ -507,12 +493,12 @@ $$
 </li>
 <li>
 
-For each two $n \times n$ matrices $A$ and $B$ it holds that
+Is it true that for each two $n \times n$ matrices $A$ and $B$ it holds that
 
 <BR>
 
 $$
-\det{(A+B)} = \det{A}+\det{B}.
+\det{(A+B)} = \det{A}+\det{B}?
 $$
 
 This statement is false. A trivial counterexample is given by $A = B = I_n$, for $n \geq 2$. Namely, for these matrices we see that
@@ -524,25 +510,53 @@ $$
 $$
 
 </li>
+
 <li>
 
-For each $n \times n$ matrix $A$ it holds that
+Is it true that for each $n \times n$ matrix $A$ and each real number $k$ it holds that
 
 <BR>
 
 $$
-\det{(-A)} = -\det{A}.
+\det{(kA)} = k^n\det{A}?
 $$
 
-This is not true in general. The correct statement would be: for an $n \times n$ matrix $A$ <BR>
+This is true. One way to prove it is to write  $kA = (kI)A$, where 
+
+<BR>
 
 $$
-  \det{(-A)} = (-1)^n\det{(A)}.
+   kI = \begin{bmatrix}k & 0 & 0 &\cdots & 0 \\
+                       0 & k & 0 &\cdots & 0 \\
+                       0 & 0 & k &\cdots & 0 \\
+                       \vdots &  \vdots &\vdots &  \ddots & \vdots \\
+                       0 & 0 & 0 &\cdots & k  \end{bmatrix}.
 $$
 
-One way to see this is true is to write $-A = (-I)A$ and use the product rule ({prf:ref}`Thm:DetRowReduction:ProductRule`).
+So we find
+
+$$
+  \det{(kA)}  = \det{(kI)}\cdot\det{(A)} = k^n \det{(A)}. 
+$$
 
 </li>
+
+<li>
+
+Is it true that $\text{det}(-A)= -\det{(A)}$ for each $n \times n$ matrix $A$?
+
+
+This is not true in general.  Taking $k = -1$ in the previous statement we see that 
+
+<BR>
+
+$$
+  \det{(-A)} = \det{(-1)A} = (-1)^n\det{(A)}.
+$$
+
+</li>
+
+
 </ol>
 
 ::::::
@@ -909,3 +923,37 @@ This settles all matters.
 
 ::::::
 
+
+At the end a few more theoretical exercises.
+
+::::::{exercise}
+:label: Exc:DetRowReduction:EqualRows
+
+Give an alternative proof of {prf:ref}`Cor:DetRowReduction:EqualRows` using Rule i. and Rule ii. of {prf:ref}`Prop:DetRowReduction:RowOps`.
+
+::::::
+
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:DetRowReduction:EqualRows`&nbsp;(*click to show*)
+
+Suppose $A$ is a matrix with two equal rows, say row $i$ and row $j$ are equal.
+
+If we subtract the $i$th row from the $j$th row, we get a matrix $A_2$ with $j$th row equal to zero, and with det$(A_2) = $ det$(A)$. If we take the factor $0$ out, we see that det$(A_2) = 0$.
+
+For instance, with a $4\times 4$ matrix with equal second and fourth row we would have
+
+$$
+  \begin{vmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\
+                  \color{blue}a_{21} & \color{blue}a_{22} & \color{blue}a_{23} & \color{blue}a_{24} \\
+                  a_{31} & a_{32} & a_{33} & a_{34} \\
+                  \color{blue}a_{21} & \color{blue}a_{22} & \color{blue}a_{23} & \color{blue}a_{24}
+                  \end{vmatrix} =
+                  \begin{vmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\
+                  a_{21} & a_{22} & a_{23} & a_{24} \\
+                  a_{31} & a_{32} & a_{33} & a_{34} \\
+                  \color{blue}0 & \color{blue}0 &\color{blue} 0 & \color{blue}0
+                  \end{vmatrix}.           
+$$
+
+Expansion of the last determinant across its fourth row yields the value $0$.
+
+::::::
