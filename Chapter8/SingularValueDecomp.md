@@ -840,7 +840,7 @@ of the first $k$ terms gives a good approximation of the matrix $A$.
 
 The gain is this:  if the data is put in the form of an $m \times n$ matrix $A$,  
 then it needs $m \times n$ memory cells to store $A$.  If $k$  is much smaller than $r = $ rank $A$
-(which in genral will be equal to the smallest of $m$ and $n$),  then $U_k$,  $V_k$  and the $k$ largest singular values only take up $m\times k + n\times k + k  = (m+n+k)k$,  memory cells. <BR>
+(which in general will be equal to the smallest of $m$ and $n$),  then $U_k$,  $V_k$  and the $k$ largest singular values only take up $m\times k + n\times k + k  = (m+n+k)k$,  memory cells. <BR>
 If, for instance, a 1080x1350 ( $\approx$ 1.45 MB) image is stored using the thirty per cent highest singular values,  the storage space reduces to  324x(1080+1350+320) $\approx$ 7.78 MB.  So the  *data* as been *compressed' by more or less a factor 0.54.
 
 In general, the higher the correlation/dependency between the columns (or, for that matter, the rows) of a matrix $A$, the fewer singular values are needed for a good approximation of $A$.
