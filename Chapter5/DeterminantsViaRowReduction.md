@@ -724,9 +724,51 @@ $$
 $$
 
 The same argument works for the interchanging of two arbitrary consecutive columns.
-<BR> As stated the swapping of two arbitrary columns can be accomplished via an odd number of 'consecutive swaps', so then the determinant changes sign an odd number of times.
+<BR> 
+And the argument can even be generalized for two columns that are not necessarily neighbours.  The notation with many indices becomes hard to read though.  As stated the swapping of two arbitrary columns can be accomplished via an odd number of 'consecutive swaps', so then the determinant changes sign an odd number of times.
 And for an odd number $n$ we have that $(-1)^n = -1$. <BR>
-Convince yourself of this!
+In fact, to swap columns $i$ and $j$, with $i < j$,  we need  $j-i$ neighbour swaps to move
+column $i$ to position $j$, and  $j-i-1$ swaps to move column $j$ to position $i$, which gives a total of $n = 2(j-i)+1$ swaps. 
+For instance, to interchange column $2$ and column $5$ in a $5 \times 5$ matrix the $(j-i) + (j-i-1) = 3+2 =5$ neigbour swaps can be visualized as follows
+
+
+$$
+ \begin{array}{rl}
+ \left|\begin{array}{ccccc} a_{11} & {\color{blue}a_{12}} & a_{13} & a_{14} & {\color{red}a_{15}} \\
+                            a_{21} & {\color{blue}a_{22}} & a_{23} & a_{24} & {\color{red}a_{25}} \\
+                            \vdots & {\color{blue}\vdots} & \vdots & \vdots & {\color{red}\vdots} \\
+                            \vdots & {\color{blue}\vdots} & \vdots & \vdots & {\color{red}\vdots} \\
+                            a_{51} & {\color{blue}a_{52}} & a_{53} & a_{54} & {\color{red}a_{55}} 
+  \end{array}\right|  = &
+ -  \left|\begin{array}{ccccc} a_{11} & a_{13} & {\color{blue}a_{12}}  & a_{14} & {\color{red}a_{15}} \\
+                               a_{21} & a_{23} & {\color{blue}a_{22}}  & a_{24} & {\color{red}a_{25}} \\
+                               \vdots & \vdots & {\color{blue}\vdots}  & \vdots & {\color{red}\vdots} \\
+                               \vdots & \vdots & {\color{blue}\vdots}  & \vdots & {\color{red}\vdots} \\
+                               a_{51} & a_{53} & {\color{blue}a_{52}}  & a_{54} & {\color{red}a_{55}} 
+ \end{array}\right|    = \\[2ex]
+ + \left|\begin{array}{ccccc}  a_{11} & a_{13} & a_{14} & {\color{blue}a_{12}} & {\color{red}a_{15}} \\
+                               a_{21} & a_{23} & a_{24} & {\color{blue}a_{22}} & {\color{red}a_{25}} \\
+                               \vdots & \vdots & \vdots & {\color{blue}\vdots} & {\color{red}\vdots} \\
+                               \vdots & \vdots & \vdots & {\color{blue}\vdots} & {\color{red}\vdots} \\
+                               a_{51} & a_{53} & a_{54} & {\color{blue}a_{52}} & {\color{red}a_{55}} \end{array}\right|  = &
+  -  \left|\begin{array}{ccccc} a_{11}& a_{13} &  a_{14} & {\color{red}a_{15}}  & {\color{blue}a_{12}}  \\
+                               a_{21} & a_{23} &  a_{24} & {\color{red}a_{25}}  & {\color{blue}a_{22}}  \\
+                               \vdots & \vdots &  \vdots & {\color{red}\vdots}  & {\color{blue}\vdots}  \\
+                               \vdots & \vdots &  \vdots & {\color{red}\vdots}  & {\color{blue}\vdots}  \\
+                               a_{51} & a_{53} &  a_{54} & {\color{red}a_{55}}  & {\color{blue}a_{52}}   \end{array}\right| = \\[2ex]
+ + \left|\begin{array}{ccccc}  a_{11} & a_{13} & {\color{red}a_{15}} &  a_{14}  & {\color{blue}a_{12}}   \\
+                               a_{21} & a_{23} & {\color{red}a_{25}} &  a_{24}  & {\color{blue}a_{22}}   \\
+                               \vdots & \vdots & {\color{red}\vdots} &  \vdots  & {\color{blue}\vdots}   \\
+                               \vdots & \vdots & {\color{red}\vdots} &  \vdots  & {\color{blue}\vdots}   \\
+                               a_{51} & a_{53} & {\color{red}a_{55}} &  a_{54}  & {\color{blue}a_{52}}    \end{array}\right| =& 
+ -\left|\begin{array}{ccccc}   a_{11} & {\color{red}a_{15}}& a_{13} &  a_{14}  & {\color{blue}a_{12}}   \\
+                               a_{21} & {\color{red}a_{25}}& a_{23} &  a_{24}  & {\color{blue}a_{22}}   \\
+                               \vdots & {\color{red}\vdots}& \vdots &  \vdots  & {\color{blue}\vdots}   \\
+                               \vdots & {\color{red}\vdots}& \vdots &  \vdots  & {\color{blue}\vdots}   \\
+                               a_{51} & {\color{red}a_{55}}& a_{53} &  a_{54}  & {\color{blue}a_{52}}    \end{array}\right| 
+ \end{array}
+$$
+
 
 Lastly we have to prove
 
@@ -824,7 +866,7 @@ This settles all matters.
 
 
 ::::::{grasple}
-:url: https://embed.grasple.com/exercises/5deab9d8-20f3-4b59-b54e-3b61c981c8c7?id=93148
+:url: https://embed.grasple.com/exercises/c3f025b5-2ca4-48cb-a1f9-4e144c8bc258?id=93149
 :label: grasple_exercise_5_3_8
 :dropdown:
 :description: Find $h$ (in matrix $A$) such that $A$ is invertible.
@@ -854,7 +896,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/9ab31fa4-6686-4865-8d43-602dc1fe670e?id=93152
 :label: grasple_exercise_5_3_11
 :dropdown:
-:description: To compute det$\left(A^3\right)$ for a given matrix $A$
+:description: To combine several rules of determinants for a product involving three matrices  $A$, $B$ and $C$.
 
 ::::::
 
@@ -864,7 +906,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/8db6831f-2671-443a-af64-799d1d0d9179?id=93154
 :label: grasple_exercise_5_3_12
 :dropdown:
-:description: To find  det$\left(kA^TB^{-1}\right)$, for  3x3 matrices $A$  and $B$
+:description: To find  det$\left(kA^T{-1}B^{T}\right)$, for  3x3 matrices $A$  and $B$.
 
 ::::::
 
@@ -891,7 +933,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/5b89a008-2e3d-48a5-a764-0b1b6a3ec4dc?id=93157
 :label: grasple_exercise_5_3_15 
 :dropdown:
-:description: (True/False) det$(A) = 0 \iff A$  has a zero row?
+:description: (True/False) det$(A) = 0 \iff A$  has a row that is a mutiple of another row.
 
 ::::::
 
@@ -910,7 +952,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/e0bfbb0c-002f-485f-9b2f-5249938b6e40?id=93162
 :label: grasple_exercise_5_3_17
 :dropdown:
-:description: What happens to det($A$) if the last column becomes the first?
+:description: What happens to det($A$) under a cyclic permutation of the columns?
 
 ::::::
 
