@@ -838,7 +838,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/cabb663b-7b86-4215-81aa-0a3da91a5688?id=103719
 :label: grasple_exercise_5_3_4
 :dropdown:
-:description: Effects of row operations on a 4x4 determinant
+:description: Effects of several operations on a 4x4 determinant
 
 ::::::
 
@@ -857,7 +857,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/1354915d-4cf4-4559-8ac2-68573807199d?id=103702
 :label: grasple_exercise_5_3_6
 :dropdown:
-:description: Effects of row operations on a 4x4 determinant
+:description: Effects of a column operation on a 4x4 determinant
 
 ::::::
 
