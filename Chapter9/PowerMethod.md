@@ -18,6 +18,7 @@ $$
     \vect{s}, \quad A\vect{s},  \quad A^2\vect{s},  \quad A^3\vect{s}, \,\, \ldots 
 $$
 
+
 We know from {prf:ref}`Prop:DynSystDiscrete:DiagCase` in {numref}`Sec:DynSystDiscrete` that for a *diagonalizable* matrix $A$ with eigenvalues
 $\lambda_1, \ldots, \lambda_n$ and corresponding eigenvectors  $\vect{v}_1, \ldots, \vect{v}_n$, if we start from
 

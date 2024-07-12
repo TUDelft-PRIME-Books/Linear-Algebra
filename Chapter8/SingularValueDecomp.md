@@ -230,7 +230,7 @@ We start with an important observation that explains the central role of the mat
 Let $A$ be an $m\times n$ matrix.  
 The singular values of a matrix $A$ are the square roots of the (nonnegative!) eigenvalues of the $(n \times n)$  matrix $A^TA$.  Thus,  if $\lambda_1 \geq \lambda_2 \geq  \cdots \geq \lambda_n$ are the eigenvalues of $A^TA$,  then  $\sigma_i = \sqrt{\lambda_i}$ are the singular values of $A$. 
 
-More specific, if $A$ is an $m\times n$ matrix with singular value decomposition $A = U\Sigma V^T$.  Then the 'diagonal' elements $\Sigma_{ii}$ of $\Sigma$,  i.e., the singular values $  \sigma_i$,  are the square roots of the eigenvalues $\lambda_i$ of the matrix $A^TA$.  <BR> 
+More specific, if $A$ is an $m\times n$ matrix with the singular value decomposition $A = U\Sigma V^T$,  then the 'diagonal' elements $\Sigma_{ii}$ of $\Sigma$,  i.e., the singular values $  \sigma_i$,  are the square roots of the eigenvalues $\lambda_i$ of the matrix $A^TA$.  <BR> 
 Moreover,  the columns of $V$ are corresponding eigenvectors  (of $A^TA$).
 
 ::::
@@ -407,9 +407,9 @@ it follows that  $\norm{A\mathbf{v}}=0$, implying $A\mathbf{v}=\mathbf{0}$.  So 
 
 All in all we have shown that all vectors in $\Nul{A}$ lie in $\Nul{A^TA}$ and that all vectors in $\Nul{A^TA}$ lie in $\Nul{A}$.  Thus $\Nul{A}=\Nul{A^TA}$.
 
-(Note that this was already mentioned in {numref}`Subsection %s <SubSec:LeastSquares:NormalEquations>`, 
+(Note that this was already mentioned in {prf:ref}`Prop:LeastSquares:InvertibleATA`, 
 equation {eq}`Eq:LeastSquares:InvertibilityATA`.)
-\item Observe that since $A$ is an $m\times n$ matrix, we have that $A^TA$ is $n\times n$. Now, using {prf:ref}`Thm:BasisDim:RankThm` we have
+\item Observe that since $A$ is an $m\times n$ matrix, we have that $A^TA$ has size $n\times n$. Now, using {prf:ref}`Thm:BasisDim:RankThm` we have
 
 $$
 \Rank{A} = n - \dim{\Nul{A}} = n - \dim{\Nul{(A^TA)}} = \Rank{(A^TA)}.
@@ -419,9 +419,9 @@ $$
 
 $$0\le \norm{A\vect{u}}^2 = \mathbf{u}^TA^TA\mathbf{u} = \mathbf{u}^T\lambda \mathbf{u} = \lambda \norm{\mathbf{u}}^2.$$
 
-Since $\mathbf{u}\ne \mathbf{0}$ it follows that $\lambda \ge 0$.
+Since $\mathbf{u}\ne \mathbf{0}$,  so $\norm{\mathbf{u}}\ne 0$  as well,  it follows that $\lambda \ge 0$.
 
-\item Let $\lambda$ be a non-zero eigenvalue of $A^TA$ with associated eigenvector $\mathbf{u}$. We will see that $\lambda$ is also an eigenvalue of $AA^T$. By definition of eigenvalue we have $A^TA\mathbf{u} = \lambda\mathbf{u}$. Then, multiplying by $A$ on both sides of the previous identity we obtain:
+\item Let $\lambda$ be a non-zero eigenvalue of $A^TA$ with associated eigenvector $\mathbf{u}$. We will see that $\lambda$ is also an eigenvalue of $AA^T$. By the definition of eigenvalue we have $A^TA\mathbf{u} = \lambda\mathbf{u}$. Then, multiplying by $A$ on both sides of the previous identity we obtain:
 
 $$AA^TA\mathbf{u} = \lambda A\mathbf{u}.$$
 
@@ -454,10 +454,10 @@ $$
   \end{array}
 $$
 
-as well.  As $\lambda_i$ was suppose to be unequal to zero, and the vectors $\mathbf{v}_k$ linearly independent,  it follows that 
+as well.  As $\lambda_i$ was supposed to be unequal to zero, and the vectors $\mathbf{v}_k$ to be linearly independent,  it follows that 
 
 $$
- c_1 = c_2   = \cdots = c_g =  0,
+ c_1 = c_2   = \ldots = c_g =  0,
 $$
 
 which shows that the vectors $A\mathbf{v}_1, \ldots, A\mathbf{v}_g$ are $g$ *linearly independent* eigenvectors  (of $AA^T$).  So the geometric multiplicity $g_2$ of $\lambda_i$ for $AA^T$
@@ -622,11 +622,10 @@ Step 4. With some effort we can find eigenvectors: <BR>
 $\vect{v}_1 = \begin{bmatrix} 1 \\ -3 \\ -2 \end{bmatrix}$, for $\lambda_1 = 14$,
   $\vect{v}_2 = \begin{bmatrix} 1 \\ -3 \\ 5 \end{bmatrix}$, for $\lambda_2 = 7$, and
 $\vect{v}_3 = \begin{bmatrix} 3 \\ 1 \\ 0 \end{bmatrix}$, for $\lambda_3 = 2$. <BR>
-Note that these are indeed three orthogonal vectors, which
-we do not immediately normalize!
+Note that these are indeed three orthogonal vectors, which, according to {prf:ref}`Rem:SVD:PracticalHints`, are better not normalized immediately.
 
 Step 5.  Next we compute the vectors $\vect{u}_i$, again without normalizing, and also for the moment not taking the (ugly!) factors
-$\frac{1}{\sigma_i} $ into account. Since the singular values are nonzero, we use all three vectors $\vect{v}_i$: <BR>
+$\frac{1}{\sigma_i} $ into account. Since the singular values are nonzero, we use all three vectors $\vect{v}_i$. <BR>
 This gives 
 
 $$ \mathbf{u}_1 = B\mathbf{v}_1 = \begin{bmatrix} 8 \\ -4 \\ -4 \\ -10 \end{bmatrix}, \quad \mathbf{u}_2 = B\mathbf{v}_2 =
@@ -677,13 +676,13 @@ Diagram showing the SVD as a composition of linear transformations.
 
 
 Let us first consider the case where $A$ is a  $2 \times 2$ matrix, as in that case everything takes place in the plane, and we can make an exact drawing of what is going on. 
-Every  $2\times 2$  orthogonal matric has one of the two forms
+Every  $2\times 2$  orthogonal matrix has one of the two forms
 
 $$
    \begin{bmatrix} \cos({\varphi})&-\sin({\varphi}) \\
    \sin({\varphi}) &  \cos({\varphi})\end{bmatrix}, \quad \quad
    \begin{bmatrix} \cos({\varphi})&\sin({\varphi}) \\
-   -\sin({\varphi}) &  \cos({\varphi})\end{bmatrix}.
+   \sin({\varphi}) &  -\cos({\varphi})\end{bmatrix}.
 $$
 
 The first matrix represents a rotation, the second matrix represents a reflection.  In an SVD of $A$, we can always construct $V$ to be a rotation.  Namely, the columns of $V$ must be eigenvectors of the matrix $A^TA$, and eigenvectors remain eigenvectors if one multiplies  them with a factor $(-1)$.
@@ -709,7 +708,7 @@ Let us consider a numerical example.
 :label: Ex:SVD:GeometricView
 
 We will analyze the SVD of the matrix
-  $A = \dfrac{1}{\sqrt{5}}\begin{bmatrix} 5 & 2 \\ 0 & 6 \end{bmatrix}$.
+  $A = \begin{bmatrix} 5 & 2 \\ 0 & 6 \end{bmatrix}$.
 
 The matrix  
 
@@ -747,16 +746,32 @@ $U$ represents a rotation about an angle  $\psi = \arccos\left(\frac{3}{5}\right
 
 Note that  $V$ maps $\vect{e}_1,\vect{e}_2$  to  $\vect{v}_1,\vect{v}_2$, &nbsp;  so  $V^T = V^{-1}$ maps $\vect{v}_1,\vect{v}_2$  to  $\vect{e}_1,\vect{e}_2$.
 
-{numref}`Figure %s <Fig:SVD:GeometricView>` visualizes what is going on.  Note that at the end the vector $\vect{e}_1$  comes to rest on the $x$-axis,  as it should, since
+{numref}`Figure %s <Fig:SVD:GeometricView>` visualizes what is going on.  
+We give the matrix an extra factor $\dfrac1{\sqrt{5}}$ to get a better picture.
+With the matrix as it was given, the stretching factors 3\sqrt{5}$ and $2\sqrt{5}$ would 'blow up'the unit circle too much too our taste. With this extra factor, the matrix
 
 $$
-   A\vect{e}_1 \,=\, \dfrac{1}{\sqrt{5}}\begin{bmatrix} 5 & 2 \\ 0 & 6 \end{bmatrix}\begin{bmatrix} 1\\ 0 \end{bmatrix} \,=\, \begin{bmatrix} \sqrt{5}\\ 0 \end{bmatrix}.
+   \tilde{A} = \frac{1}{\sqrt{5}} \begin{bmatrix} 5 & 2 \\ 2 & 8 \end{bmatrix}
+$$
+has the SVD
+
+$$
+  \tilde{A} = U\tilde{\Sigma}V^T
+$$
+
+where $U$ and $V$ are the same as for $A$, and 
+   $\tilde{\Sigma} = \frac{1}{\sqrt{5}} \begin{bmatrix} 3 & 0 \\ 0 & 2 \end{bmatrix}$.
+
+ Note that at the end the vector $\vect{e}_1$  comes to rest on the $x$-axis,  as it should, since
+
+$$
+   \tilde{A}\vect{e}_1 \,=\, \dfrac{1}{\sqrt{5}}\begin{bmatrix} 5 & 2 \\ 0 & 6 \end{bmatrix}\begin{bmatrix} 1\\ 0 \end{bmatrix} \,=\, \begin{bmatrix} \sqrt{5}\\ 0 \end{bmatrix}.
 $$
 
 :::{figure} Images/Fig-SVD-GeometricView.svg
 :name: Fig:SVD:GeometricView
 
-Geometric decomposition of $A = \dfrac{1}{\sqrt{5}}\begin{bmatrix} 5 & 2 \\ 0 & 6 \end{bmatrix}$ 
+Geometric decomposition of $\tilde{A} = \dfrac{1}{\sqrt{5}}\begin{bmatrix} 5 & 2 \\ 0 & 6 \end{bmatrix} = U\tilde{Sigma}V^T$ 
 :::
 
 ::::
@@ -768,7 +783,7 @@ $$
 $$
 
 is a singular value decomposition.
-Since $V^T$ is an orthogonal matrix, it will map the $\mathbb{R}^n$ to itself and it will preserve the norms of all vectors. 
+Since $V^T$ is an orthogonal matrix, it will map the $\mathbb{R}^n$ onto itself and it will preserve the norms of all vectors. 
 More precisely, it will map the 'principal axes' corresponding to  $\vect{v}_1,\ldots,\vect{v}_n$  onto the coordinate axes generated by  $\vect{e}_1, \ldots, \vect{e}_n$. With that, the $n$-dimensional unit sphere, consisting of all vectors of norm 1, is mapped onto itself.
 
 The $m \times n$ matrix $\Sigma$ maps the first $r$ basis vectors 
@@ -791,12 +806,11 @@ There will be two applications described in this section.
 2.  Linear Least Squares.
 
 
-We start with the first.  
-Numerical data can be stored in a matrix.
-A black-and-white picture/photo can be stored 'pixel by pixel', by numbers that indicate the gray scale, which may for instance be any integer from 0 (completely white) to 31 (completely black). A 9:16 photo may then be stored as a 1080x1350 matrix.
-
-
-The results of some survey with $n$ question that had to be answered using a 1-5 scale.  If the numbers of respondents is $N$, the data correspond to a $N \times n$ matrix.
+We start with the first.  <BR>
+Numerical data can be stored in a matrix.<BR>
+For instance, a black-and-white picture/photo can be stored 'pixel by pixel', by numbers that indicate the gray scale, which may for instance be any integer from 0 (completely white) to 31 (completely black). A 9:16 photo may then be stored as a 1080x1350 matrix.
+<BR>
+As another example, think of a survey of $n$ questions that have to be answered using a 1-5 scale.  If the numbers of respondents is $N$, the data can be represented by an $N \times n$ matrix.
 
 In the first situation there will be both a high correlation between columns that are close to each other, as well as between nearby rows.  If the picture is a true photo the matrix will be far from a 'random' matrix.
 In the second context  one might expect that the columns will highly correlate:  people that agree on certain issues are more likely to agree on other issues as well.  
@@ -814,7 +828,7 @@ $$
            \end{bmatrix}.   
 $$
 
-So $\Delta$ is the diagonal matrix that remains if all the zero rows and zero columns (if any) of $\Sigma$ are removed. If $U_r$  and  $V_r$  is the matrix with the first $r$ colums of $U$, and  $V_r$  is the matrix with the first $r$ colums of $V$, then as in {prf:ref}`Ex:SVD:firstSVD`  we have that
+So $\Delta$ is the diagonal matrix that remains if all the zero rows and zero columns (if any) of $\Sigma$ are removed. If $U_r$   is the matrix with the first $r$ colums of $U$, and  $V_r$  is the matrix with the first $r$ colums of $V$, then as in {prf:ref}`Ex:SVD:firstSVD`  we have that
 
 $$
   A = U\Sigma V^T = U_r\Delta V_r
@@ -826,11 +840,11 @@ which can be rewritten as
 :label: Eq:SVD:SpectralDecompAlg
 
    A = \sigma_1 \vect{u}_1\vect{v}_1^T + \sigma_2 \vect{u}_2\vect{v}_2^T + \cdots +
-   \sigma_r \vect{u}_r\vect{v}_r^TA.
+   \sigma_r \vect{u}_r\vect{v}_r^T.
 
 ::::
 
-Here $A$ is written as a sum of rank 1 matrices, and because of the decreasing singular values, these rank 1 matrices get less and less 'important'.  If the $\sigma_i$ become very small for, say, $k < i \leq r$,  we might expect that the sum
+Here $A$ is written as a sum of rank 1 matrices, and because of the decreasing singular values, these rank 1 matrices get less and less 'important'.  If the $\sigma_i$ become  very small (relatively) for, say, $k < i \leq r$,  we might expect that the sum
 
 $$
 \sigma_1 \vect{u}_1\vect{v}_1^T + \ldots + \sigma_k \vect{u}_k\vect{v}_k^T 
@@ -838,15 +852,125 @@ $$
 
 of the first $k$ terms gives a good approximation of the matrix $A$.
 
-The gain is this:  if the data is put in the form of an $m \times n$ matrix $A$,  
-then it needs $m \times n$ memory cells to store $A$.  If $k$  is much smaller than $r = $ rank $A$
-(which in general will be equal to the smallest of $m$ and $n$),  then $U_k$,  $V_k$  and the $k$ largest singular values only take up $m\times k + n\times k + k  = (m+n+k)k$,  memory cells. <BR>
-If, for instance, a 1080x1350 ( $\approx$ 1.45 MB) image is stored using the thirty per cent highest singular values,  the storage space reduces to  324x(1080+1350+320) $\approx$ 7.78 MB.  So the  *data* as been *compressed' by more or less a factor 0.54.
+The gain is the following.  If the data is put in the form of an $m \times n$ matrix $A$, then it needs $m \times n$ memory cells to store $A$.  If $k$  is much smaller than $r = $ rank $A$
+(which in general will be equal to the smallest of $m$ and $n$),  then $U_k$,  $V_k$  and the $k$ largest singular values only take up $m\times k + n\times k + k  = (m+n+k)k$,  memory places. <BR>
+If, for instance, a 1080x1350 ( $\approx$ 1.45 MB) image is stored using the thirty per cent highest singular values,  the storage space reduces to  324x(1080+1350+320) $\approx$ 0.78 MB.  So the  *data* as been 'compressed' by more or less a factor $0.78/1.45 \approx 0.54$.
 
 In general, the higher the correlation/dependency between the columns (or, for that matter, the rows) of a matrix $A$, the fewer singular values are needed for a good approximation of $A$.
 
-## Grasple Exercises
+::::
 
+
+::::{prf:example}
+:label:  Ex:SVD:DataCompression
+
+$A = \begin{bmatrix}
+        104.39 &  44.80 &  78.92 & 47.65 & 134.79  &   100.40 & 60.09 & 52.01 &  97.98 & 31.55 \\
+         98.31 &  52.03 &  86.88 & 47.15 & 137.53  &    87.79 & 61.69 & 30.50 &  80.36 & 21.78 \\
+         96.90 &  30.09 &  72.26 & 41.60 & 117.75  &    85.80 & 61.83 & 49.55 &  83.76 & 29.89 \\
+        103.10 &  37.40 &  87.82 & 44.96 & 132.17  &    83.69 & 70.21 & 34.02 &  75.32 & 23.11 \\
+         98.15 &  26.47 &  86.50 & 41.39 & 120.58  &    70.97 & 71.95 & 29.99 &  60.89 & 19.06 \\
+        110.52 &  53.64 & 100.51 & 52.45 & 152.16  &    94.76 & 71.29 & 30.70 &  85.70 & 22.33 \\
+         77.84 &  42.01 &  64.82 & 38.50 & 107.74  &    76.16 & 47.39 & 31.58 &  72.85 & 20.04 \\
+         97.45 &  27.40 &  67.92 & 39.84 & 115.48  &    88.80 & 59.76 & 53.93 &  85.09 & 30.08 \\
+         82.95 &  53.48 &  76.69 & 42.60 & 122.52  &    79.24 & 48.94 & 21.20 &  73.14 & 16.97 \\
+        100.79 &  24.25 &  73.17 & 40.82 & 117.69  &    87.36 & 65.54 & 54.21 &  83.48 & 31.19 \\
+        120.68 &  49.88 & 102.65 & 55.36 & 158.59  &   103.20 & 78.26 & 43.66 &  95.51 & 28.63 \\
+        103.22 &  54.07 &  79.81 & 50.01 & 139.32  &   104.55 & 57.99 & 51.55 & 103.19 & 31.47
+     \end{bmatrix}$.  
+
+     
+
+The singular values are
+
+$$
+  \sigma_1 = 839.36, \quad \sigma_2 = 58.84, \quad \sigma_3 = 45.32, \quad \sigma_4 = 2.82, \quad \sigma_5 = 2.14, \,\, \ldots
+$$
+
+Note the severe drop-off after the third singular value. <BR> 
+If we take from the singular values decomposition   $A = U\Sigma V^T$  only the first three columns of $U$ and $V$,  i.e. we put  $A_3 = U_3\Sigma_{33}V_3^T$,  we get
+
+$$
+  A_3 = \begin{bmatrix}
+              0.31 &  0.27 & -0.21 \\
+              0.29 & -0.27 & -0.15 \\         
+              0.27 &  0.30 &  0.13 \\
+              0.29 & -0.18 &  0.26 \\
+              0.26 & -0.26 &  0.58 \\
+              0.32 & -0.38 & -0.02 \\
+              0.24 & -0.01 & -0.26 \\
+              0.27 &  0.42 &  0.12 \\
+              0.26 & -0.33 & -0.37 \\
+              0.28 &  0.38 &  0.29 \\
+              0.35 & -0.14 &  0.10 \\
+              0.31 &  0.24 & -0.44    
+      \end{bmatrix}     
+     \begin{bmatrix}  839.36 & 0 & 0 \\ 0 & 58.84 & 0 \\ 0 & 0 &  45.32    
+       \end{bmatrix}
+     \begin{bmatrix}
+         0.41  &  0.05 & 0.32  \\
+         0.17  & -0.32 &-0.63  \\
+         0.34  & -0.38 & 0.23  \\
+         0.19  & -0.08 &-0.06  \\
+         0.54  & -0.28 &-0.06  \\
+         0.37  &  0.23 &-0.24  \\
+         0.26  & -0.07 & 0.51  \\
+         0.17  &  0.63 & 0.10  \\
+         0.34  &  0.37 &-0.35  \\
+         0.11  &  0.28 & 0.02    
+     \end{bmatrix}^T
+$$  
+  
+We expect $A_3$ to be a good approximation of $A$.  
+  Comparing the two matrices:
+  
+  $$
+     \begin{array}{ccc}
+       A =  U\Sigma V^T & &  A_3 = U_3\Sigma_{33} V_3^T \\[1ex]
+   \begin{bmatrix}
+      104.3 &  44.8 &   .\,.\,. &  97.9 & 31.5 \\ 
+       98.3 &  52.0 &   .\,.\,. &  80.3 & 21.7 \\ 
+       96.9 &  30.0 &   .\,.\,. &  83.7 & 29.8 \\ 
+      103.1 &  37.4 &   .\,.\,. &  75.3 & 23.1 \\
+       98.1 &  26.4 &   .\,.\,. &  60.8 & 19.0 \\ 
+      110.5 &  53.6 &   .\,.\,. &  85.7 & 22.3 \\ 
+       77.8 &  42.0 &   .\,.\,. &  72.8 & 20.0 \\
+       97.4 &  27.4 &   .\,.\,. &  85.0 & 30.0 \\ 
+       82.9 &  53.4 &   .\,.\,. &  73.1 & 16.9 \\ 
+      100.7 &  24.2 &   .\,.\,. &  83.4 & 31.1 \\     
+      120.6 &  49.8 &   .\,.\,. &  95.5 & 28.6 \\     
+      103.2 &  54.0 &   .\,.\,. & 103.1 & 31.4     \end{bmatrix}
+     & \quad &
+     \begin{bmatrix}
+        103.9 &  45.1 &  .\,.\,. &  98.0 & 31.4  \\
+         98.1 &  51.5 &  .\,.\,. &  81.0 & 21.3  \\
+         97.2 &  29.9 &  .\,.\,. &  83.1 & 29.1  \\
+        102.8 &  37.3 &  .\,.\,. &  75.1 & 22.8  \\
+         98.2 &  26.1 &  .\,.\,. &  60.9 & 19.5  \\
+        110.4 &  54.1 &  .\,.\,. &  85.4 & 22.4  \\
+         78.5 &  41.7 &  .\,.\,. &  72.5 & 20.6  \\
+         96.8 &  27.7 &  .\,.\,. &  85.5 & 30.9  \\
+         82.6 &  53.8 &  .\,.\,. &  73.0 & 17.0  \\
+        101.0 &  24.3 &  .\,.\,. &  83.5 & 30.9  \\
+        120.7 &  49.9 &  .\,.\,. &  95.4 & 28.4  \\
+        103.4 &  53.5 &  .\,.\,. & 103.2 & 31.4   
+       \end{bmatrix}
+     \end{array}
+  $$
+  
+
+  As you can see,  $A_3$  closely resembles $A$. (You have to trust us with regard to the hidden columns. ;-) <BR>
+  The gain:  to store  the $12\times10$  matrix $A$, we have to store  $120$ reals. <BR>
+  To store $U_3, \Sigma_{33}$ and $V_3$ , we only have to store  $12\times3 + 3 + 10\times 3 = 69$ numbers.  The middle 3 comes from first three   elements ($=$ singular values) on the diagonal of $\Sigma$.  
+  
+  With (much) larger matrices the reduction in terms of storage capacity may be even better.
+
+::::
+
+
+
+
+## Grasple Exercises
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/27adae2a-db2a-46fa-800f-49e4c0dfe4fa?id=93487

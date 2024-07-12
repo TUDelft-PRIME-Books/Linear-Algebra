@@ -213,10 +213,10 @@ $$
 \det{A} = \text{det}\big(A^T\big)
 $$
 
-every rule involving row operations may be transformed into a rule about column operations. It is here that computing a determinant differs strikingly from the reduction of an (augmented) matrix to an echelon matrix. Another, more subtle difference is that
+every rule involving row operations may be transformed into a rule about column operations. It is here that computing a determinant differs strikingly from the reduction of a (for instance augmented) matrix to an echelon matrix. Another, more subtle difference is that
 a row operation applied to a matrix leads to an **equivalent** matrix, which we denote by the symbol $\sim$, whereas row or column operations on a determinant give **equal values** all the time. So then we write $=$.
 
-Note that in Rule i. of {prf:ref}`Prop:DetRowReduction:RowOps` the factor $c$ may be zero. This is also a slight difference to the scaling operation we used when row reducing a (for instance augmenting) matrix.  There the scaling factor must be nonzero.
+Note that in Rule i. of {prf:ref}`Prop:DetRowReduction:RowOps` the factor $c$ may be zero. This is also a slight difference to the scaling operation we used when row reducing a matrix.  There the scaling factor must be nonzero.
 
 ::::::
 
@@ -317,7 +317,7 @@ $$
 \det{\left(E_kE_{k-1}\cdots E_1A\right)}=  c_1\cdots c_m \cdot (-1)^{\ell} \det{A}  = \alpha \det{A},
 $$
 
-with $\alpha \neq 0$.
+with $\alpha = c_1\cdots c_m \cdot (-1)^{\ell} \neq 0$.
 
 So if $E_kE_{k-1}\cdots E_1A = F$, where $F$ is an echelon matrix, we see that
 
@@ -344,7 +344,7 @@ $$
 
 ::::::
 
-The idea of the proof is to break it down to products of the form  $\det{(EA)} = \det{E}\cdot\det{A}$, where $E$ is an elementary matrix  (Equation{eq}`Eq:DetRowReduction:ElementaryMatrices`).  For more details you can push on $\vee$ below.
+The idea of the proof is to break it down to products of the form  $\det{(EA)} = \det{E}\cdot\det{A}$, where $E$ is an elementary matrix  (Equation{eq}`Eq:DetRowReduction:ElementaryMatrices`).  For more details you open the proof below.
 
 ::::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:DetRowReduction:ProductRule`.
 
@@ -554,6 +554,11 @@ $$
   \det{(-A)} = \det{(-1)A} = (-1)^n\det{(A)}.
 $$
 
+A specific example:  for  $A = I$ it holds that 
+
+$$
+ \text{det} (-A) = \begin{vmatrix} -1 & 0 \\ 0 & -1 \end{vmatrix} = (-1)^2 \begin{vmatrix} 1 & 0 \\ 0 & 1 \end{vmatrix} = \begin{vmatrix} 1 & 0 \\ 0 & 1 \end{vmatrix} = \text{det} (A).
+$$
 </li>
 
 
@@ -588,7 +593,7 @@ Then
 
 ::::::
 
-So, click on $\vee$ on the right  for the proof of {prf:ref}`Prop:DetRowReduction:RowOps` and {prf:ref}`Prop:DetRowReduction:SumofCols`.
+CLick on the symbol to the right below for the proof of {prf:ref}`Prop:DetRowReduction:RowOps` and {prf:ref}`Prop:DetRowReduction:SumofCols`.
 
 ::::::{dropdown} Proof of&nbsp;{prf:ref}`Prop:DetRowReduction:RowOps`&nbsp;and&nbsp;{prf:ref}`Prop:DetRowReduction:SumofCols`.
 
@@ -805,43 +810,117 @@ This settles all matters.
 ## Grasple Exercises
 
 ::::::{grasple}
-:url: https://embed.grasple.com/exercises/993b010f-3351-4b98-b9b7-1d04c1c959be?id=93143
+:url: https://embed.grasple.com/exercises/b34a791a-3f42-4d10-9952-f6f5699a68fb?id=104164
 :label: grasple_exercise_5_3_1
 :dropdown:
-:description: Relatively simple 4x4 determinant
+:description: Effects of row operations on a 3x3 determinant
+
+::::::
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/1d3924d9-ea34-4a89-8b7c-33e385d144ba?id=104312
+:label: grasple_exercise_5_3_2
+:dropdown:
+:description: Effects of row operations on a 3x3 determinant
 
 ::::::
 
 ::::::{grasple}
-:url: https://embed.grasple.com/exercises/2d51357d-e56d-4de5-a882-493a795fd222?id=93144
-:label: grasple_exercise_5_3_2
+:url: https://embed.grasple.com/exercises/1fcb337d-f906-423a-acd5-8d8c69d4d04b?id=93158
+:label: grasple_exercise_5_3_3
 :dropdown:
-:description: Slightly less simple 4x4 determinant
+:description: Effects of row and column operations on a 3x3 determinant
 
 ::::::
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/cabb663b-7b86-4215-81aa-0a3da91a5688?id=103719
+:label: grasple_exercise_5_3_4
+:dropdown:
+:description: Effects of row operations on a 4x4 determinant
+
+::::::
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/1354915d-4cf4-4559-8ac2-68573807199d?id=103702
+:label: grasple_exercise_5_3_5
+:dropdown:
+:description: Effects of a column operation on a 4x4 determinant
+
+::::::
+
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/1354915d-4cf4-4559-8ac2-68573807199d?id=103702
+:label: grasple_exercise_5_3_6
+:dropdown:
+:description: Effects of row operations on a 4x4 determinant
+
+::::::
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/882506bb-6a5e-479f-b095-bb5b95be2467?id=104166
+:label: grasple_exercise_5_3_7
+:dropdown:
+:description: To compute a  3x3 determinant using row reduction
+
+::::::
+
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/993b010f-3351-4b98-b9b7-1d04c1c959be?id=93143
+:label: grasple_exercise_5_3_8
+:dropdown:
+:description: To compute a  4x4 determinant with quite a few zeros
+
+::::::
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/2d51357d-e56d-4de5-a882-493a795fd222?id=93144
+:label: grasple_exercise_5_3_9
+:dropdown:
+:description: To compute a 4x4 determinant via reduction and expansion
+
+::::::
+
+
 
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/9974012a-1ac9-439f-919f-2647be1ba4ba?id=92965
-:label: grasple_exercise_5_3_3
+:label: grasple_exercise_5_3_10
 :dropdown:
-:description: To compute a 5x5 determinant with entries in {-2,-1,0,1,2}
+:description: To compute a 'random' 5x5 determinant with entries in {-2,-1,0,1,2}
 
 ::::::
 
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/4a01fc67-0acc-44aa-9ba2-18c1accae720?id=93145
-:label: grasple_exercise_5_3_4
+:label: grasple_exercise_5_3_11
 :dropdown:
-:description: Finding a structured 5x5 determinant in a smart way
+:description: Computing a structured 5x5 determinant in a 'smart' way
+::::::
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/f2e09cfe-9d88-4f7b-a295-bad7feda89e5?id=93150
+:label: grasple_exercise_5_3_12
+:dropdown:
+:description: Finding  a parameter $h$ such that a determinant has a prescribed value
 
 ::::::
 
 
+
+
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/35bff21c-6434-4e4a-b154-965de08479c0?id=93146
-:label: grasple_exercise_5_3_5
+:label: grasple_exercise_5_3_13
 :dropdown:
 :description: Checking linear (in)dependence of $\vect{a}_1,\vect{a}_2,\vect{a}_3$ in $\mathbb{R}^3$ via determinants.
 
@@ -850,7 +929,7 @@ This settles all matters.
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/7c4c18ba-96ba-432a-97b0-0a269a0a9f55?id=93147
-:label: grasple_exercise_5_3_6
+:label: grasple_exercise_5_3_14
 :dropdown:
 :description: Checking linear (in)dependence of $\vect{a}_1,\vect{a}_2,\vect{a}_3,\vect{a}_4$ in $\mathbb{R}^4$ via determinants.
 
@@ -858,7 +937,7 @@ This settles all matters.
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/5deab9d8-20f3-4b59-b54e-3b61c981c8c7?id=93148
-:label: grasple_exercise_5_3_7
+:label: grasple_exercise_5_3_15
 :dropdown:
 :description: Checking invertibility of a matrix $A$ via det($A$).
 
@@ -867,7 +946,7 @@ This settles all matters.
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/c3f025b5-2ca4-48cb-a1f9-4e144c8bc258?id=93149
-:label: grasple_exercise_5_3_8
+:label: grasple_exercise_5_3_16
 :dropdown:
 :description: Find $h$ (in matrix $A$) such that $A$ is invertible.
 
@@ -875,26 +954,18 @@ This settles all matters.
 
 
 ::::::{grasple}
-:url: https://embed.grasple.com/exercises/f2e09cfe-9d88-4f7b-a295-bad7feda89e5?id=93150
-:label: grasple_exercise_5_3_9
-:dropdown:
-:description: Finding a parameter $\alpha$ for which a 4x4 determinant has a given value
-
-::::::
-
-
-::::::{grasple}
 :url: https://embed.grasple.com/exercises/a5713d1f-696b-42e5-ab74-553eec26b00b?id=93151
-:label: grasple_exercise_5_3_10
+:label: grasple_exercise_5_3_17
 :dropdown:
-:description: To compute det$\left(PBP^{-1}\right)$,  for given $P$ and $B$.
+:description: To find  det$(PBP^{-1})$,   for given $P$ and $B$.
 
 ::::::
+
 
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/9ab31fa4-6686-4865-8d43-602dc1fe670e?id=93152
-:label: grasple_exercise_5_3_11
+:label: grasple_exercise_5_3_18
 :dropdown:
 :description: To combine several rules of determinants for a product involving three matrices  $A$, $B$ and $C$.
 
@@ -903,17 +974,27 @@ This settles all matters.
 
 
 ::::::{grasple}
-:url: https://embed.grasple.com/exercises/8db6831f-2671-443a-af64-799d1d0d9179?id=93154
-:label: grasple_exercise_5_3_12
+:url: https://embed.grasple.com/exercises/9ae9228f-ab17-4853-9995-e38e16d87c22?id=93153
+:label: grasple_exercise_5_3_19
 :dropdown:
-:description: To find  det$\left(kA^T{-1}B^{T}\right)$, for  3x3 matrices $A$  and $B$.
+:description: To find  det$\left(A^3\right)$, for  a given matrix $A$..
+
+::::::
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/8db6831f-2671-443a-af64-799d1d0d9179?id=93154
+:label: grasple_exercise_5_3_20
+:dropdown:
+:description: To find  det$\left(kA^TB^{-1}\right)$, for matrices $A$  and $B$.
 
 ::::::
 
 
+
+
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/116e83e9-1db7-47ce-a2f3-ad398aee0201?id=93155
-:label: grasple_exercise_5_3_13
+:label: grasple_exercise_5_3_21
 :dropdown:
 :description: What can det($A$) be, if  $A^2 = kA$?
 
@@ -921,7 +1002,7 @@ This settles all matters.
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/821d81b1-2cec-4fa4-b4a7-b1f9c32d6e06?id=93156
-:label: grasple_exercise_5_3_14
+:label: grasple_exercise_5_3_22
 :dropdown:
 :description: What about det($A+B$) = det($A$) + det($B$)?
 
@@ -931,42 +1012,34 @@ This settles all matters.
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/5b89a008-2e3d-48a5-a764-0b1b6a3ec4dc?id=93157
-:label: grasple_exercise_5_3_15 
+:label: grasple_exercise_5_3_23 
 :dropdown:
-:description: (True/False) det$(A) = 0 \iff A$  has a row that is a mutiple of another row.
-
-::::::
-
-
-::::::{grasple}
-:url: https://embed.grasple.com/exercises/1fcb337d-f906-423a-acd5-8d8c69d4d04b?id=93158
-:label: grasple_exercise_5_3_16
-:dropdown:
-:description: What happens to a determinant under certain row or column operation(s)?
-
+:description: (True/False) det$(A) = 0 \iff A$  has a row that is a multiple of another row.
 
 ::::::
 
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/e0bfbb0c-002f-485f-9b2f-5249938b6e40?id=93162
-:label: grasple_exercise_5_3_17
+:label: grasple_exercise_5_3_24
 :dropdown:
-:description: What happens to det($A$) under a cyclic permutation of the columns?
+:description: What happens to det(A) if the last column of $A$ becomes the first?
 
 ::::::
 
 
+
+
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/41f5ca17-ab3e-4487-b5fa-ee325cae85aa?id=93164
-:label: grasple_exercise_5_3_18
+:label: grasple_exercise_5_3_25
 :dropdown:
 :description: What happens to det($A$) if the order of the rows is reversed?
 
 ::::::
 
 
-At the end a few more theoretical exercises.
+At the end a non-Grasple exercise.
 
 ::::::{exercise}
 :label: Exc:DetRowReduction:EqualRows
