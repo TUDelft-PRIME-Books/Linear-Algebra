@@ -886,7 +886,7 @@ is called the **coefficient matrix** of the system. The column behind the bar co
 
 ::::
 
-The augmented matrix is nothing more than an abbreviation for a system of equations. With the vertical bar we want to indicate that the last column plays a special role, namely, it contains the constants on the right-hand sides of the equations. If we denote these terms by the vector
+The augmented matrix is nothing more than an abbreviation for a system of equations. With the vertical bar we want to indicate that the last column plays a special role, namely, it contains the constants on the right  sides of the equations. If we denote these terms by the vector
 
 $$
   \mathbf{b} =  \left[\begin{array}{c}

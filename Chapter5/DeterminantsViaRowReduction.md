@@ -21,7 +21,7 @@ The matrix $A$ is invertible if and only if $\det{A} \neq 0$ .
 ## How Row Operations affect a Determinant
 
 We have seen in {numref}`Sec:DeterminantsViaCofactors` that the cofactor expansion of an $n \times n$ determinant works best using a row (or a column) with many, preferably $n-1$, zeros. When solving a linear system, or finding the inverse of a matrix, we have seen how to create zeros via row reduction. The important thing: row reducing an augmented matrix does not alter the solution(s) of the corresponding linear system. The next proposition
-describes the effect of row operations on a determinant.
+describes the effects of row operations on a determinant.
 
 ::::::{prf:proposition} How row operations affect a determinant
 :label: Prop:DetRowReduction:RowOps
@@ -48,7 +48,7 @@ When two rows of $A$ are swapped, the determinant changes sign.
 
 ::::::
 
-We postpone the proof till the end of this section and first look at examples and a few consequences.
+We postpone the proof until the end of this section and first look at examples and a few consequences.
 
 ::::::{prf:example}
 :label: Ex:DetRowReduction:RowOps
@@ -216,7 +216,7 @@ $$
 every rule involving row operations may be transformed into a rule about column operations. It is here that computing a determinant differs strikingly from the reduction of a (for instance augmented) matrix to an echelon matrix. Another, more subtle difference is that
 a row operation applied to a matrix leads to an **equivalent** matrix, which we denote by the symbol $\sim$, whereas row or column operations on a determinant give **equal values** all the time. So then we write $=$.
 
-Note that in Rule i. of {prf:ref}`Prop:DetRowReduction:RowOps` the factor $c$ may be zero. This is also a slight difference to the scaling operation we used when row reducing a matrix.  There the scaling factor must be nonzero.
+Note that in Rule i. of {prf:ref}`Prop:DetRowReduction:RowOps` the factor $c$ may be zero. This is also a slight difference to the scaling operation we used when row reducing a matrix.  There the scaling factor must be *nonzero*.
 
 ::::::
 
@@ -289,9 +289,11 @@ $$
 
 ::::::
 
-The proof is -- we think -- quite instructive.
+The proof is -- we think -- quite instructive.  (However, feel free to skip it.)
 
-::::::{prf:proof}
+
+::::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:DetRowReduction:Invertibility`
+
 
 In the previous section we have already seen that the statement is true for triangular matrices.
 
@@ -332,6 +334,7 @@ $$
 $$
 
 ::::::
+
 
 ::::::{prf:theorem}
 :label: Thm:DetRowReduction:ProductRule
@@ -593,7 +596,7 @@ Then
 
 ::::::
 
-CLick on the symbol to the right below for the proof of {prf:ref}`Prop:DetRowReduction:RowOps` and {prf:ref}`Prop:DetRowReduction:SumofCols`.
+Click on the symbol to the right below for the proof of {prf:ref}`Prop:DetRowReduction:RowOps` and {prf:ref}`Prop:DetRowReduction:SumofCols`.
 
 ::::::{dropdown} Proof of&nbsp;{prf:ref}`Prop:DetRowReduction:RowOps`&nbsp;and&nbsp;{prf:ref}`Prop:DetRowReduction:SumofCols`.
 
@@ -604,7 +607,7 @@ For an $n \times n$ matrix
 
 $$
 
- A = [\vect{a}_1 \,\,\vect{a}_2  \,\,\ldots\,\, \vect{a}_n]
+ A = [\vect{a}_1 \,\,\vect{a}_2  \,\,\ldots\,\,\vect{a}_j  \,\,\ldots\,\,\vect{a}_k   \,\,\ldots\,\, \vect{a}_n]
 $$
 
 the rules can then be formulated as
@@ -614,7 +617,7 @@ the rules can then be formulated as
 
 - $\det{[\vect{a}_1   \,  \vect{a}_2  \,  \ldots \, c \vect{a}_k  \,    \ldots  \,   \vect{a}_n]} = c  \det{A}$;
 
-- $\det{[\vect{a}_1  \,  \ldots  \,   \vect{a}_k  \,    \ldots  \,   \vect{a}_j  \,   \ldots \,   \vect{a}_n]} = - \det{A}$;
+- $\det{[\vect{a}_1  \,  \ldots  \,   \vect{a}_k  \,    \ldots  \,   \vect{a}_j  \,   \ldots \,   \vect{a}_n]} = - \det{[\vect{a}_1  \,  \ldots  \,   \vect{a}_j  \,    \ldots  \,   \vect{a}_k  \,   \ldots \,   \vect{a}_n]}$;
 
 - $\det{[\vect{a}_1 \,  \ldots   \,  \vect{a}_j   \,   \ldots  \,   \vect{a}_k + c\vect{a}_j  \,  \ldots  \,  \vect{a}_n]} = \det{A}$.
 
@@ -630,6 +633,7 @@ So, let us consider them one by one.
 :::
 
 Suppose $\tilde{A}$ is the result of scaling the $k$th column of $A$ with a factor $c$.
+<BR>
 Then expanding det$(\tilde{A})$ along its $k$th column, keeping in mind that $\tilde{a}_{ik} = c {a}_{ik}$ and $\tilde{A}_{ik} = {A}_{ik}$, yields
 
 $$
@@ -673,10 +677,10 @@ finally note that any column swap is the result of an _odd_ number of swaps of c
 </li>
 </ul>
 
-We will consider the swapping of the first two columns in complete detail. Let $A^{\ast}$ be the result of swapping the first two columns of the matrix $A$. The crucial thing to note here is that, for each value of $i$,
+We will consider the swapping of the first two columns in complete detail. Let $\bar{\bar{A}}$ be the result of swapping the first two columns of the matrix $A$. The crucial thing to note here is that, for each value of $i$,
 
 $$
-a_{i2}^{\ast} = a_{i1} \quad \text{and} \quad  A_{i2}^{\ast} = A_{i1}.
+\bar{\bar{a}}_{i2} = a_{i1} \quad \text{and} \quad  \bar{\bar{A}}_{i2}= A_{i1}.
 $$
 
 To make this explicit for a $4\times 4$ matrix:
@@ -690,7 +694,7 @@ a_{31} &a_{32} &a_{33} &a_{34}  \\
 a_{41} &a_{42} &a_{43} &a_{44}
 \end{array} \right]
 & \Longrightarrow &
-A^{\ast} = \left[\begin{array}{rrrr}
+\bar{\bar{A}} = \left[\begin{array}{rrrr}
 a_{12} &a_{11} &a_{13} &a_{14}  \\
 a_{22} &a_{21} &a_{23} &a_{24}  \\
 a_{32} &a_{31} &a_{33} &a_{34}  \\
@@ -704,7 +708,7 @@ a_{22}  &a_{23} &a_{24}  \\
 a_{42}  &a_{43} &a_{44}
 \end{array} \right]
   &= &
-A_{3,2}^{\ast} = \left[\begin{array}{rrr}
+\bar{\bar{A}}_{3,2} = \left[\begin{array}{rrr}
 a_{12}  &a_{13} &a_{14}  \\
 a_{22}  &a_{23} &a_{24}  \\
 a_{42}  &a_{43} &a_{44}
@@ -713,17 +717,17 @@ a_{42}  &a_{43} &a_{44}
 \end{array}
 $$
 
-Expanding det$(A^{\ast})$ along its second column yields
+Expanding det$(\bar{\bar{A}})$ along its second column yields
 
 $$
-\text{det}\big(A^{\ast} \big)= \sum_{i=1}^n   (-1)^{i+2}  a_{i2}^{\ast}\text{det}\big(A_{i2}^{\ast} \big)=
+\text{det}\big(\bar{\bar{A}} \big)= \sum_{i=1}^n   (-1)^{i+2}  \bar{\bar{a}}_{i2}\text{det}\big(\bar{\bar{A}}_{i2} \big)=
 \sum_{j=1}^n   (-1)^{i+2}  {a}_{i1}\text{det}\big({A}_{i1}\big).
 $$
 
-Noting that $(-1)^{i+2} = (-1)\cdot (-1)^{i+1}$ and taking out the common factor $(-1)$ from the sum yields
+Noting that $(-1)^{i+2} = (-1)\cdot (-1)^{i+1}$ and taking out one factor $(-1)$ from the sum yields
 
 $$
-\text{det}\big(A^{\ast} \big)=
+\text{det}\big(\bar{\bar{A}}\big)=
 - \sum_{i=1}^n   (-1)^{i+1}  {a}_{i1}\text{det}\big({A}_{i1}\big)=
 - \text{det}\big({A}\big).
 $$
@@ -733,7 +737,7 @@ The same argument works for the interchanging of two arbitrary consecutive colum
 And the argument can even be generalized for two columns that are not necessarily neighbours.  The notation with many indices becomes hard to read though.  As stated the swapping of two arbitrary columns can be accomplished via an odd number of 'consecutive swaps', so then the determinant changes sign an odd number of times.
 And for an odd number $n$ we have that $(-1)^n = -1$. <BR>
 In fact, to swap columns $i$ and $j$, with $i < j$,  we need  $j-i$ neighbour swaps to move
-column $i$ to position $j$, and  $j-i-1$ swaps to move column $j$ to position $i$, which gives a total of $n = 2(j-i)+1$ swaps. 
+column $i$ to position $j$, and  $j-i-1$ swaps to move (the original) column $j$ to position $i$, which gives a total of $n = 2(j-i)+1$ swaps. 
 For instance, to interchange column $2$ and column $5$ in a $5 \times 5$ matrix the $(j-i) + (j-i-1) = 3+2 =5$ neigbour swaps can be visualized as follows
 
 
