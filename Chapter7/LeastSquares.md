@@ -250,7 +250,7 @@ For each linear system $A\vect{x} = \vect{b}$, where $A$ is an $m \times n$ matr
 ::::{prf:proof}
 In {prf:ref}`Rem:LeastSquares:BestLinComb` it was noted that a least squares solution corresponds to the vector in Col $A$ that is closest to $\vect{b}$.
 
-The vector in Col $A$ that is closest to $\vect{b}$ is precisely the orthogonal projection of $\vect{x}$ onto Col $A$. (See {numref}`Sec:OrthoComp`), {prf:ref}`Prop:Orthogonality:BestApprox`.)
+The vector in Col $A$ that is closest to $\vect{b}$ is precisely the orthogonal projection of $\vect{x}$ onto Col $A$. (See  {prf:ref}`Prop:Orthogonality:BestApprox`.)
 
 This projection, a linear combination of the colums of $A$, always exists.
 
@@ -264,9 +264,9 @@ Lastly, these coefficients are unique if and only if the columns of $A$ are line
 
 :::{admonition} {eq}`Eq:OrthoBase:OrthoProj`.
 
-Let $V$ be a subspace of $\R{n}$ and let $\vect{v}_{1},...,\vect{v}_{k}$ be an orthogonal basis for $V$. For any $\vect{w}$ in $\R^{n}$, the _orthogonal projection_ of $\vect{w}$ on $V$ is given by
+Let $V$ be a subspace of $\R^{n}$ and let $\vect{v}_{1},...,\vect{v}_{k}$ be an orthogonal basis for $V$. For any $\vect{w}$ in $\R^{n}$, the _orthogonal projection_ of $\vect{w}$ on $V$ is given by
 
-$$\proj_{V}(w)=\frac{\vect{w}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{w}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}_{k}.$$
+$$\proj_{V}(\vect{w})=\frac{\vect{w}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{w}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}_{k}.$$
 
 ::::
 
@@ -292,7 +292,7 @@ onto $\Span{\vect{a}_1, \vect{a}_2} = \Span{\left[ \begin{array}{c} 1 \\ 2 \\ 3 
 
 In this first example we have chosen $\vect{a}_1$ and $\vect{a}_2$ that are _orthogonal_.
 
-So by the projection formula for an orthogonal basis (see side note), the projection is given by
+So by the projection formula for an orthogonal basis (see {prf:ref}`Thm:OrthoBase:OrthoDecomp`, see side note), the projection is given by
 
 $$
    \dfrac{\vect{b}\ip\vect{a}_1}{\vect{a}_1\ip\vect{a}_1}\vect{a}_1 +
@@ -313,7 +313,7 @@ $$
 ::::
 
 In {prf:ref}`Ex:LeastSquares:OrthogExample` the coefficients of the orthogonal projection were quickly found due to the fact that the vectors $\vect{a}_1$ and $\vect{a}_2$ were orthogonal.
-In {numref}`Section %s <Sec:Gram-Schmidt>` we saw how we can construct an orthogonal basis from an arbitrary basis. And then we can use the projection formula of {numref}`Section %s <Sec:OrthoBase>` to find the orthogonal projection. However, we will see that this is an unnecessary detour.
+In {numref}`Section %s <Sec:Gram-Schmidt>` we saw how we can construct an orthogonal basis from an arbitrary basis. And then we can use the projection formula {eq}`Eq:OrthoBase:OrthoProj`  to find the orthogonal projection. However, we will see that this is an unnecessary detour.
 
 (SubSec:LeastSquares:NormalEquations)=
 
@@ -403,7 +403,12 @@ where the norm of the error vector was found to be $\sqrt{15}$.
 
 ::::
 
-::::{prf:proof} Of {prf:ref}`Thm:LeastSquares:NormalEquations`
+
+In the proof properties of the orthogonal projection are combined in a clever way.
+As usual, feel free to skip it.
+
+::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:LeastSquares:NormalEquations`
+
 
 As usual we denote the columns of the $m \times n$ matrix $A$ by $\vect{a}_1, \ldots, \vect{a}_n$.
 
@@ -453,7 +458,6 @@ $$
      \vect{a}_n^T\vect{a}_1 &  \vect{a}_n^T\vect{a}_2 & \ldots & \vect{a}_n^T\vect{a}_n \\
   \end{array} \right]
   \left[  \begin{array}{c}   c_1 \\ c_2 \\ \ldots \\ c_n   \end{array} \right] =
-
   \left[  \begin{array}{c}  \vect{a}_1^T\vect{b} \\ \vect{a}_2^T\vect{b} \\ \ldots \\ \vect{a}_n^T\vect{b}   \end{array} \right].
 $$
 
@@ -587,7 +591,7 @@ We already knew how to find this projection if the columns are orthogonal. Using
 
 Applying {prf:ref}`Thm:LeastSquares:NormalEquations` to the earlier example
 ({prf:ref}`Ex:LeastSquares:OrthogExample`),
-shows that in the case of _orthogonal_ vectors there is actually nothing new.
+shows that in the case of _orthogonal_ vectors there is actually nothing new. This is illustrated in the next example.
 
 ::::{prf:example}
 :label: Ex:LeastSquares:OrthogExample2
@@ -1103,9 +1107,9 @@ the coefficients get the following more concise form,
 :::{math}
 :label: Eq:Leastquares:GeneralLinefit
 
-\hat{a} = \dfrac{\Sigma*{xx}\Sigma_y - \Sigma_x\Sigma*{xy}}{n\Sigma*{xx} - \Sigma_x^2},
+\hat{a} = \dfrac{\Sigma_{xx}\Sigma_y - \Sigma_x\Sigma_{xy}}{n\Sigma_{xx} - \Sigma_x^2},
 \quad
-\hat{b} = \dfrac{n\Sigma*{xy} - \Sigma*x\Sigma*{y}}{n\Sigma\_{xx} - \Sigma_x^2}.
+\hat{b} = \dfrac{n\Sigma_{xy} - \Sigma_x\Sigma_{y}}{n\Sigma_{xx} - \Sigma_x^2}.
 
 :::
 
@@ -1216,7 +1220,7 @@ That is, the linear combination that minimizes
 :::{math}
 :label: Eq:LeastSquares:SumResidues
 
-\sum\_{i=1}^n \big(y_i - (c_1f_1(x_i) + c_2f_2(x_i) + \ldots + c_kf_k(x_i))\,\big)^2,
+\sum_{i=1}^n \big(y_i - (c_1f_1(x_i) + c_2f_2(x_i) + \ldots + c_kf_k(x_i))\,\big)^2,
 
 :::
 
@@ -1305,8 +1309,8 @@ In a least squares model we then look for the parameters $\beta_1, \ldots, \beta
 :::{math}
 :label: Eq:LeastSquares:GeneralModel
 
-     \sum_{i=1}^{n}  \big(y_i - \beta_1f_1(x_{11},\ldots, x_{1k}) \,-\, \ldots \,-\,
-     \beta_{\ell}f_{\ell}(x_{11},\ldots, x_{1k})\big)^2.
+     \sum_{i=1}^{n}  \big(y_i - \beta_1f_1(x_{i1},\ldots, x_{ik}) \,-\, \ldots \,-\,
+     \beta_{\ell}f_{\ell}(x_{i1},\ldots, x_{ik})\big)^2.
 
 :::
 
@@ -1320,14 +1324,13 @@ get different weights $w_i$. When building a statistical model this may be desir
 
 Then the expression we want to minimize is given by
 
-  <BR>
 
 $$
-  \sum_{i=1}^{n}  {\color{blue}w_i} \big(y_i - \beta_1f_1(x_{11},\ldots, x_{1k}) \,-\, \ldots \,-\,
-   \beta_{\ell}f_{\ell}(x_{11},\ldots, x_{1k})\big)^2.
+  \sum_{i=1}^{n}  {\color{blue}w_i} \big(y_i - \beta_1f_1(x_{i1},\ldots, x_{ik}) \,-\, \ldots \,-\,
+   \beta_{\ell}f_{\ell}(x_{i1},\ldots, x_{ik})\big)^2.
 $$
 
-This approach may be relevant if the variance of the observations that led to them seems smaller than the variance of other observations.
+This approach may be relevant if the variance of some of the observations that led to them seems smaller than the variance of other observations.
 
 </li>
 
