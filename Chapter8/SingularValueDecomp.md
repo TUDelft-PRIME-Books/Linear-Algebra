@@ -713,13 +713,13 @@ We will analyze the SVD of the matrix
 The matrix  
 
 $$
- A^TA =  \begin{bmatrix} 5 & 2 \\ 2 & 8 \end{bmatrix} 
+ A^TA =  \begin{bmatrix} 25 & 10 \\ 10 & 40 \end{bmatrix} = 5 \begin{bmatrix} 5 & 2 \\ 2 & 8 \end{bmatrix}
 $$
 
 has the eigenvalues
 
 $$
-  \lambda_1 = 9, \quad \lambda_2 = 4,
+  \lambda_1 = 45, \quad \lambda_2 = 20,
 $$
 
 with corresponding eigenvectors
@@ -729,11 +729,13 @@ $$
 $$
 
 Normalizing them, and giving the second vector a minus sign,
-we find for an SVD
+we find for an SVD of the matrix $A$ the matrices
 
 $$
- V = \dfrac{1}{\sqrt{5}} \begin{bmatrix} 1 & -2 \\ 2 & 1 \end{bmatrix}, \quad \Sigma = \begin{bmatrix} 3 & 0\\0 & 2 \end{bmatrix}.
+ V = \dfrac{1}{\sqrt{5}} \begin{bmatrix} 1 & -2 \\ 2 & 1 \end{bmatrix}, \quad \Sigma = \begin{bmatrix}\sqrt{45} & 0\\0 & \sqrt{20} \end{bmatrix}  = \begin{bmatrix} 3\sqrt{5} & 0\\0 & 2\sqrt{5} \end{bmatrix}
 $$
+
+to start with.
 
 Applying  the last two steps of {prf:ref}`Alg:SVD:SVDalgorithm` we find that
 
@@ -746,9 +748,9 @@ $U$ represents a rotation about an angle  $\psi = \arccos\left(\frac{3}{5}\right
 
 Note that  $V$ maps $\vect{e}_1,\vect{e}_2$  to  $\vect{v}_1,\vect{v}_2$, &nbsp;  so  $V^T = V^{-1}$ maps $\vect{v}_1,\vect{v}_2$  to  $\vect{e}_1,\vect{e}_2$.
 
-{numref}`Figure %s <Fig:SVD:GeometricView>` visualizes what is going on.  
+ 
 We give the matrix an extra factor $\dfrac1{\sqrt{5}}$ to get a better picture.
-With the matrix as it was given, the stretching factors 3\sqrt{5}$ and $2\sqrt{5}$ would 'blow up'the unit circle too much too our taste. With this extra factor, the matrix
+With the matrix as it was given, the stretching factors $3\sqrt{5}$ and $2\sqrt{5}$ would 'blow up'the unit circle too much too our taste. With this extra factor, the matrix
 
 $$
    \tilde{A} = \frac{1}{\sqrt{5}} \begin{bmatrix} 5 & 2 \\ 2 & 8 \end{bmatrix}
@@ -760,7 +762,9 @@ $$
 $$
 
 where $U$ and $V$ are the same as for $A$, and 
-   $\tilde{\Sigma} = \frac{1}{\sqrt{5}} \begin{bmatrix} 3 & 0 \\ 0 & 2 \end{bmatrix}$.
+   $\tilde{\Sigma} =  \begin{bmatrix} 3 & 0 \\ 0 & 2 \end{bmatrix}$.
+
+{numref}`Figure %s <Fig:SVD:GeometricView>` visualizes what is going on. 
 
  Note that at the end the vector $\vect{e}_1$  comes to rest on the $x$-axis,  as it should, since
 
@@ -771,7 +775,7 @@ $$
 :::{figure} Images/Fig-SVD-GeometricView.svg
 :name: Fig:SVD:GeometricView
 
-Geometric decomposition of $\tilde{A} = \dfrac{1}{\sqrt{5}}\begin{bmatrix} 5 & 2 \\ 0 & 6 \end{bmatrix} = U\tilde{Sigma}V^T$ 
+Geometric decomposition of $\tilde{A} = \dfrac{1}{\sqrt{5}}\begin{bmatrix} 5 & 2 \\ 0 & 6 \end{bmatrix} = U\tilde{\Sigma}V^T$ 
 :::
 
 ::::
@@ -1048,6 +1052,6 @@ We expect $A_3$ to be a good approximation of $A$.
 :url: https://embed.grasple.com/exercises/3fdad317-fc18-4f88-b416-87cbd1d5e708?id=93495
 :label: grasple_exercise_8_3_1
 :dropdown:
-:description: Finding maximal value of $\norm{A\vect{x}}$, if $\norm{\vect{x}}$ ,  $A$ a 3x2 matrix.
+:description: Finding the maximal value of $\norm{A\vect{x}}$, if $\norm{\vect{x}}=1$,  $A$ a 3x2 matrix.
 ::::
 

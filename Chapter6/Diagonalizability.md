@@ -945,16 +945,26 @@ $$
 ::::::
 
 ::::::{grasple} 
-:url: https://embed.grasple.com/exercises/70b5964e-b6c7-4a64-a2e3-d10dc915f324?id=91503
+:url: https://embed.grasple.com/exercises/f61dfb8f-db65-4f17-80c7-b1702b0c2c07?id=104493
 :label: grasple_exercise_6_3_7 
+:dropdown:
+:description:  To investigate the diagonalizability of a 3x3 matrix of rank 1. 
+
+::::::
+
+
+::::::{grasple} 
+:url: https://embed.grasple.com/exercises/70b5964e-b6c7-4a64-a2e3-d10dc915f324?id=91503
+:label: grasple_exercise_6_3_8 
 :dropdown:
 :description:  To investigate the diagonalizability of a ($3 \times 3$) matrix. 
 
 ::::::
 
+
 ::::::{grasple} 
 :url: https://embed.grasple.com/exercises/534ce865-0960-403a-affc-0f23f2d14110?id=91521
-:label: grasple_exercise_6_3_8 
+:label: grasple_exercise_6_3_9 
 :dropdown:
 :description: For which $\alpha$ is given (upper triangular) $4 \times 4$ matrix diagonalizable?
 
@@ -962,7 +972,7 @@ $$
 
 ::::::{grasple} 
 :url: https://embed.grasple.com/exercises/f3cdb060-469a-4a30-be46-1ecc7197d66a?id=91522
-:label: grasple_exercise_6_3_9 
+:label: grasple_exercise_6_3_10 
 :dropdown:
 :description: True/False question (about a $4\times4$ matrix with $3$ distinct eigenvalues).  
 
@@ -970,7 +980,7 @@ $$
 
 ::::::{grasple} 
 :url: https://embed.grasple.com/exercises/d1cb7e54-6c99-4a01-b161-832b37d650d0?id=91523
-:label: grasple_exercise_6_3_10 
+:label: grasple_exercise_6_3_11 
 :dropdown:
 :description:  True/False question (invertibilty implies diagonalizability?)
 
@@ -978,14 +988,14 @@ $$
 
 ::::::{grasple} 
 :url: https://embed.grasple.com/exercises/4398c155-7971-42f6-b809-31ae507c0326?id=87331
-:label: grasple_exercise_6_3_11 
+:label: grasple_exercise_6_3_12 
 :dropdown:
 :description:  Creating examples of all cases (non-)invertible versus (non-)diagonalizable.
 
 ::::::
 ::::::{grasple} 
 :url: https://embed.grasple.com/exercises/9aca77fa-a7c8-4998-be00-a55c19e9fd70?id=62419
-:label: grasple_exercise_6_3_12 
+:label: grasple_exercise_6_3_13 
 :dropdown:
 :description:  To draw conclusions from a diagonalization  $A = PDP^{-1}$.
 
