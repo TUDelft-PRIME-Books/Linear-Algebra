@@ -428,7 +428,7 @@ We need to know a little more about determinants to establish this connection wi
 ## The Determinant of the Transpose of a Matrix
 
 
-The last property that may be expected to hold as a consequence of {prf:ref}`Thm:DetCofactors:RowOrColumnExpansion` where the rows and the columns play exchangeable roles is the following.
+The last property that may be expected to hold as a consequence of {prf:ref}`Thm:DetCofactors:RowOrColumnExpansion` where the rows and the columns play interchangeable roles is the following.
 
 ::::::{prf:proposition}
 :label: Prop:DetCofactors:DetTranspose

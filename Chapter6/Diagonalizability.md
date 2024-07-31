@@ -88,7 +88,7 @@ $$
 \det{(A - \lambda I)} = \det{(PBP^{-1} - \lambda I)} = \det{(B - \lambda I)}.
 $$
 
-The second equality is shown in the following chain of identities.
+The second equality is proved by the following chain of identities.
 
 $$
 \begin{array}{rcl}
@@ -320,7 +320,7 @@ $$
 ## Diagonalizability
 
 ::::::{prf:definition}
-:label: Dfn:Eigenvalues:Diagonalizability
+:label: Dfn:Diagonalizable:Diagonalizability
 
 A matrix is $A$ is called **diagonalizable** if it is similar to a diagonal matrix. That means that a diagonal matrix $D$ and an invertible matrix $P$ exist such that
 
@@ -554,7 +554,7 @@ The matrix $R = \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}$ of {prf:ref}`Ex:E
 ::::::{prf:remark}
 :label: Rem:Diagonalizable:RotationCtd
 
-Things would be different if we would allow complex eigenvalues and eigenvectors. We will devote a separate section to this. And then it will appear that the matrix $R$ is **complex diagonalizable**.
+Things would be different if we would allow complex eigenvalues and eigenvectors. We will devote a separate section ({numref}`Section:ComplexEV`) to this. And then it will appear that the matrix $R$ is **complex diagonalizable**.
 
 ::::::
 
@@ -627,8 +627,81 @@ First we show that a diagonalizable matrix satisfies the two conditions.
 
 If $A$ is diagonalizable, then there must be $n$ independent eigenvectors. The sum of the dimensions $m_k$ of the eigenspaces $E_{\lambda_i}$, i.e., the sum of the geometric multiplicities must therefore be equal to $n$. Since the algebraic multiplicities are at least as large as the geometric multiplicities, the sum of the algebraic multiplicities must be $\geq n$. Since this sum cannot be larger, it means that the sum is equal to $n$. Thus all algebraic multiplicities must in fact be equal to the corresponding geometric multiplicities. This settles properties i and ii.
 
-Conversely, conditions i. and ii. immediately imply that there must be $n$ linearly independent eigenvectors.
-Namely, since eigenvectors for different eigenvalues are automatically linearly independent, bases for the eigenspaces put together give exactly $n$ linearly independent eigenvectors.
+Conversely, conditions i. and ii. immediately imply that there must be $n$ linearly independent eigenvectors. 
+The basic idea is that, since eigenvectors for different eigenvalues are automatically linearly independent, the bases for the eigenspaces put together give exactly $n$ linearly independent eigenvectors.  
+
+::::::
+
+
+::::::{dropdown} (More detailed) Proof of&nbsp;{prf:ref}`Thm:Diagonalizable:ThirdCharacterization`
+
+Suppose that the $n \times n$ matrix $A$ has only real eigenvalues,  say  $\lambda_1,\ldots,\lambda_k$, and that for each eigenvalue $\lambda_i$ the geometric multiplicity $m_i$  is equal to the algebraic multiplicity, so
+
+$$
+  \text{g.m.}(\lambda_i)  = m_i= \text{a.m.}(\lambda_i) , \quad i = 1, \ldots, k.
+$$
+
+Since the sum of the algebraic multiplicities is equal to  $n$, the
+ sum of the geometric multiplicities must be equal to $n$ too,
+ 
+$$
+  m_1 + m_2 + \ldots + m_k = n.
+$$ 
+ 
+For each $i$ let $\{\vect{v}^{(i)}_1, \ldots, \vect{v}^{(i)}_{m_i}\}$  be a basis for the eigenspace  $E(\lambda_i)$. If we can show that the union of all these bases is a basis for $\R^n$, we have a basis of eigenvectors for matrix $A$, and by   {prf:ref}`Prop:Eigenvalues:DiagbleVersusEigenvectors` $A$ is diagonalizable.  To this end it is sufficient to show that the total set
+
+$$
+  \left\{\vect{v}^{(1)}_1, \ldots, \vect{v}^{(1)}_{m_1}, .\,.\,.\,.\,., \vect{v}^{(k)}_1, \ldots, \vect{v}^{(k)}_{m_k} \right\}
+$$   
+
+is linearly independent.  So, suppose that 
+
+:::::{math}
+:label:  Eq:Diagonalizable:SumAllEigenvalues
+
+   \underbrace{c^{(1)}_1\vect{v}^{(1)}_1+ \cdots + c^{(1)}_{m_1}\vect{v}^{(1)}_{m_1}} \,+ \,\cdot\,\cdot\,\cdot\,\cdot\,\cdot\,
++ \,  \underbrace{c^{(k)}_1\vect{v}^{(k)}_1+ \cdots + c^{(k)}_{m_k}\vect{v}^{(k)}_{m_k}}  = \vect{0}.
+
+:::::
+
+If we introduce
+
+$$
+   \vect{y}_i = c^{(i)}_1\vect{v}^{(i)}_1+ \cdots + c^{(i)}_{m_i}\vect{v}^{(i)}_{m_i}, \quad i = 1,\ldots,k,
+$$
+
+
+we have that  
+
+$$
+   \vect{y}_1 + \vect{y}_2 +  \ldots + \vect{y}_k = \vect{0}.
+$$
+
+Since each  vector  $\vect{y}_i$ lies in the eigenspace  $E(\lambda_i)$,  and by {prf:ref}`Prop:Eigenvalues:IndepEigenvectors`  eigenvectors for different eigenvalues are linearly independent, it follows that 
+
+$$
+  \vect{y}_i = \vect{0}, \quad i = 1, \ldots, k.
+$$
+
+So we have for each underbraced term  in Equation {eq}`Eq:Diagonalizable:SumAllEigenvalues`
+
+$$
+  c^{(i)}_1\vect{v}^{(i)}_1+ \cdots + c^{(i)}_{m_i}\vect{v}^{(i)}_{m_i} = \vect{0}.
+$$
+
+Since the vectors in a set $\{\vect{v}^{(i)}_1, \ldots, \vect{v}^{(i)}_{m_i}\}$ were supposed to form a basis for the eigenspace $E(\lambda_i)$, they must be linearly independent. Thus it follows for the coefficients in the last sum  that 
+
+$$
+    c^{(i)}_1 = 0, \,\ldots\,, \, c^{(i)}_{m_i}= 0.
+$$
+
+This shows that {eq}`Eq:Diagonalizable:SumAllEigenvalues`  can only hold if all coefficients  are zero, and consequently the set
+
+$$
+   \{\vect{v}^{(1)}_1, \,\ldots, \,\vect{v}^{(1)}_{m_1}, \,\,.\,.\,.\,.\,.\,\,, \,\vect{v}^{(k)}_1, \,\ldots, \, \vect{v}^{(k)}_{m_k}\} 
+$$
+
+being a linearly independent set of $n$ vectors, will indeed be a basis consisting of eigenvectors (for $\R^n$).
 
 ::::::
 
@@ -637,7 +710,7 @@ We saw that there is a weak connection between eigenvalues and (non-)invertibili
 {prf:ref}`Prop:EigenValues:SingularMatrix` states: a matrix is singular if and only if it has the eigenvalue $0$.
 
 
-In exercise 6.3.11 below you are invited to investigate the connection (or no-connection) between diagonalizability and invertibility.
+In exercise 6.3.12 below you are invited to investigate the connection (or no-connection) between diagonalizability and invertibility.
 
 %::::::{exercise}
 %:label: Exc:Diagonalizable:Invertibility

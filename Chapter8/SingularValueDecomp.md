@@ -216,7 +216,7 @@ Lastly iii.  follows from  ii.  by transposing the matrix, and making use of iv.
 ::::
 
 
-The main goal is to show that a singular value decomposition always exists, and, how to construct one. Both answers are answered in reversed order in the next subsection
+The main goal is to show that a singular value decomposition always exists, and, how to construct one. Both questions will be answered in reversed order in the next subsection
 
 (Subsec:SVD:Existence)= 
 

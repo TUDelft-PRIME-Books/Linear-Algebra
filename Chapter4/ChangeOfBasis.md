@@ -63,7 +63,7 @@ We start with a proposition.
 
 If $\mc{B} = \{\vect{b}_1, \vect{b}_2,\ldots,\vect{b}_m\}$ is a basis for a subspace $S$ in $\R^n$,
 then any vector $\vect{v}$ in $S$ can written as a linear combination of
-$\vect{b}_1, \vect{b}_2,\ldots,\vect{b}_m$ in a **unique** way, i.e.
+$\vect{b}_1, \vect{b}_2,\ldots,\vect{b}_m$ in a *unique* way, i.e.
 
 $$
   \vect{v} = c_1\vect{b}_1 + c_2\vect{b}_2 + \ldots + c_m\vect{b}_m,
@@ -623,34 +623,43 @@ $$
 
 ::::
 
-::::{exercise}
-:label: Exc:ChangeOfBasis:FindSimpleMatrix
-
-Consider the linear transformation $T$ with the standard matrix $A$ given by
-
-$$
-  T:\R^3 \to \R^3, \quad T(\vect{x}) = A\vect{x} =
-  \begin{bmatrix} -2 & 1 & 0 \\ -7 & 3 & 1 \\ 2 & 0 & -1
-  \end{bmatrix}\vect{x}.
-$$
-
-It is given that
-
-$$
-  A\begin{bmatrix} 0 \\0\\1  \end{bmatrix} =\begin{bmatrix} 0 \\1\\-1  \end{bmatrix},
-  \quad
-  A\begin{bmatrix} 0\\1\\-1  \end{bmatrix} =\begin{bmatrix} 1  \\2 \\ 1  \end{bmatrix},
-  \quad \text{and } \quad
-  A\begin{bmatrix} 1 \\2\\1  \end{bmatrix} =\begin{bmatrix} 0\\0\\ 1  \end{bmatrix}.
-$$
-
-Find the matrix $[T]_{\mc{B}}$ for the basis
-
-$$
-  \mc{B} = \left\{ \begin{bmatrix} 0 \\0\\ 1  \end{bmatrix},\,\begin{bmatrix} 0 \\1\\ -1  \end{bmatrix}, \,\begin{bmatrix} 1 \\2\\1  \end{bmatrix} \right\}.
-$$
+::::{grasple} 
+:url: https://embed.grasple.com/exercises/d6aa929c-7614-4af2-b015-31e2e6fd7b80?id=104847
+:label: grasple_exercise_4_3_T1
+:dropdown:
+:description: Finding  $[T]_{\mathcal{B}}$ for a 'nice' linear transformation.
 
 ::::
+
+
+
+%::::{exercise}
+%:label: Exc:ChangeOfBasis:FindSimpleMatrix
+
+%Consider the linear transformation $T$ with the standard matrix $A$ given by
+
+%$$
+%  T:\R^3 \to \R^3, \quad T(\vect{x}) = A\vect{x} =
+%  \begin{bmatrix} -2 & 1 & 0 \\ -7 & 3 & 1 \\ 2 & 0 & -1
+%  \end{bmatrix}\vect{x}.
+%$$
+
+%It is given that
+
+%$$
+%  A\begin{bmatrix} 0 \\0\\1  \end{bmatrix} =\begin{bmatrix} 0 \\1\\-1  \end{bmatrix},
+% A\begin{bmatrix} 0\\1\\-1  \end{bmatrix} =\begin{bmatrix} 1  \\2 \\ 1  \end{bmatrix},
+%  \quad \text{and } \quad
+%  A\begin{bmatrix} 1 \\2\\1  \end{bmatrix} =\begin{bmatrix} 0\\0\\ 1  \end{bmatrix}.
+%$$
+
+%Find the matrix $[T]_{\mc{B}}$ for the basis
+
+%$$
+%  \mc{B} = \left\{ \begin{bmatrix} 0 \\0\\ 1  \end{bmatrix},\,\begin{bmatrix} 0 \\1\\ -1  \end{bmatrix}, \,\begin{bmatrix} 1 \\2\\1  \end{bmatrix} \right\}.
+%$$
+
+%::::
 
 In the next example we will find the matrix of the rotation $R$ about the origin through an angle $\frac13\pi$. In {numref}`Sec:GeomLinTrans` we have already seen the standard matrix of this linear transformation, involving sines and cosines. As the example shows a change of basis may lead to an interesting alternative.
 
@@ -663,7 +672,7 @@ $$
   \left\{\vect{b}_1, \vect{b}_2 \right\} = \left\{ \begin{bmatrix} 2 \\ 0  \end{bmatrix}, \begin{bmatrix} -1 \\ \sqrt{3}  \end{bmatrix} \right\}.
 $$
 
-Note that $\vect{b}_1$ and $ \vect{b}\_2$ are two vectors of length 2 subtending an angle
+Note that $\vect{b}_1$ and $ \vect{b}_2$ are two vectors of length 2 subtending an angle
 $\frac23\pi$. See {numref}`Figure %s <Fig:ChangeOfBasis-TriangularGrid>`.
 The vector $\vect{b}_1+\vect{b}_2 = \begin{bmatrix} 1 \\ \sqrt{3}  \end{bmatrix}$, is also indicated in the figure.
 
@@ -695,7 +704,7 @@ In {prf:ref}`Ex:ChangeOfBasis:Reflection` and {prf:ref}`Ex:ChangeOfBasis:Rotatio
 
 (Subsec:ChangeOfBasis:RelationTETB)=
 
-## The Relation between $[T]_{\mc{E}}$ and $[T]_{\mc{B}}$
+## The relation between $[T]_{\mc{E}}$ and $[T]_{\mc{B}}$
 
 We have seen how to convert vectors from one coordinate system (i.e., basis) to another, and also how to construct the matrix of a linear transformation with respect to an arbitrary basis. In this section we will present a ready-made formula that connects the matrices with respect to two different bases. In this subsection we will restrict ourselves to the common situation of a linear transformation from $\R^n$ to itself,  where one of the bases is the standard basis.
 
@@ -865,7 +874,7 @@ Suppose $P$ is an invertible matrix.
 Show that for matrices $A$ and $B$
 
 $$
-   B = P^{-1}\,A\,P \,\, \iff \,\,A = P\,B\,P^{-1}.
+   B = P^{-1}A\,P \,\, \iff \,\,A = P\,B\,P^{-1}.
 $$
 
 ::::
@@ -874,7 +883,7 @@ $$
 
 ::::{dropdown} Solution to&nbsp;{numref}`Exc:ChangeOfBasis:PinvAPversusPBinvP`&nbsp;(_click to show_)
 
-Multiply both sides from the left by $P$ and from the right by $P^{-1}$,
+Starting from $B = P^{-1}A\,P$   multiply both sides from the left by $P$ and from the right by $P^{-1}$,
 and use that $P^{-1}P = PP^{-1} = I$:
 
 $$
@@ -937,9 +946,10 @@ and we can write down the standard matrix in one stroke:
 
 This can be evaluated to yield 
 
-$$
+:::{math}
+:label: Eq:ChangeOfBasis:ProjMatrix2
   [T]_{\mc{E}} = \frac16 \begin{bmatrix}5 & 1 & 2\\1& 5& -2\\2&-2&2 \end{bmatrix}.
-$$
+:::
 
 ::::
 
@@ -949,7 +959,7 @@ $$
 As was shown in {prf:ref}`Prop:GeomLinTrans:ProjSquaredisProj` of {numref}`Subsec:GeomLinTrans:Proj` the matrix $A$ of a projection has to satisfy the identity
 $A^2=A$. Show that the matrix $[T]_{\mc{E}}$ of {prf:ref}`Ex:ChangeOfBasis:MatrixOrthProjection` indeed satisfies this identity.
 
-(To verify this you don't have to compute the matrix as given by Equation {eq}`Eq:ChangeOfBasis:ProjMatrix` explicitly)
+(To verify this you don't have to compute the matrix as given by Equation {eq}`Eq:ChangeOfBasis:ProjMatrix2`.)
 
 ::::
 
@@ -995,7 +1005,7 @@ $$
 
 ::::
 
-Again, as the name suggests, the change-of-basis matrix can be used to switch from coordinates with respect to one basis to coordinates with respect to another basis.
+Again, as the name suggests, the change-of-coordinates matrix can be used to switch from coordinates with respect to one basis to coordinates with respect to another basis.
 
 ::::{prf:proposition}
 :label: Prop:ChangeOfBasis:CoBmatrix
@@ -1033,13 +1043,14 @@ The last expression is a linear combination of $n$ vectors in $\R^n$ and consequ
 
 $$
    [\vect{v}]_{\mc C} = \big[ \,[\vect{b}_1]_{\mc C}\,\, \ldots \,\, [\vect{b}_n]_{\mc C} \,\big] \begin{bmatrix} p_1 \\ \vdots \\ p_n \end{bmatrix} =
-        \CoBmatrix{B}{C}[\vect{v}]_{\mc B}.
+        \CoBmatrix{B}{C}[\vect{v}]_{\mc B},
 $$
 
+as this is exactly how $\CoBmatrix{B}{C}[\vect{v}]$ was defined in {prf:ref}`Dfn:ChangeOfBasis:CoBmatrix`.
 ::::
 
 ::::{exercise}
-:label: Exc:ChangeOfBasis:RelationMatricesCoB
+:label: Exc:ChangeOfBasis:InverseOfMatrixCoB
 
 Suppose $\mc{B}$ and $\mc{C}$ are two bases of $\R^n$.
 Show that the change-of-coordinates matrix $P_{\mc{C}\leftarrow\mc{B}}$ is invertible, and that
@@ -1051,6 +1062,7 @@ $$
 ::::
 
 ::::{exercise}
+:label: Exc:ChangeOfBasis:RelationMatricesCoB
 
 Suppose $\mc{B}, \mc{C}$ and $\mc{D}$ are three bases of $\R^n$.
 What is the relation between the
@@ -1240,8 +1252,19 @@ must be equal.
 
 
 ::::{grasple}
+:url: https://embed.grasple.com/exercises/c45ea239-1e90-4d1f-ae08-323e595bd53a?id=104827
+:label: grasple_exercise_4_3_7   
+:dropdown:
+:description: Expressing a vector $\vect{v} \in \R^3$  in  a basis $\mathcal{B} = \{\vect{b}_1,\vect{b}_2,\vect{b}_3\}$  (and vice versa).
+
+::::
+
+
+
+
+::::{grasple}
 :url: https://embed.grasple.com/exercises/39e1af19-0a32-456b-a414-20056e6b7f16?id=85157
-:label: grasple_exercise_4_3_7
+:label: grasple_exercise_4_3_8
 :dropdown:
 :description: Expressing a vector $\vect{v} \in \R^3$  in  a basis $\mathcal{B} = \{\vect{b}_1,\vect{b}_2,\vect{b}_3\}$.
 
@@ -1250,7 +1273,7 @@ must be equal.
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/b03d9983-3ef2-4d45-82b3-6c1762510561?id=90875
-:label: grasple_exercise_4_3_8
+:label: grasple_exercise_4_3_9
 :dropdown:
 :description: To explain the relation between $\vect{x}$  and $[\vect{x}]_{\mathcal{B}}$.
 
@@ -1259,7 +1282,7 @@ must be equal.
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/784bba91-a0be-4076-9918-63b8ab2fbc49?id=90881
-:label: grasple_exercise_4_3_9
+:label: grasple_exercise_4_3_10
 :dropdown:
 :description: To find out how coordinates change when a basis is reordered.
 ::::
@@ -1267,7 +1290,7 @@ must be equal.
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/d8894445-4426-4694-8500-229cd47a5288?id=85165
-:label: grasple_exercise_4_3_10
+:label: grasple_exercise_4_3_11
 :dropdown:
 :description: To commute between  $[\vect{v}]_{\mathcal{B}}$  and $[\vect{v}]_{\mathcal{C}}$  in $\R^2$.  
 
@@ -1279,7 +1302,7 @@ The remaining exercises are about matrix representations of linear transformatio
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/2de2a3b5-1d3f-4e79-9421-393d59b9dc87?id=93047
-:label: grasple_exercise_4_3_11
+:label: grasple_exercise_4_3_12
 :dropdown:
 :description:  To transform from $[T]_{\mathcal{E}}$  to  $[T]_{\mathcal{B}}$  for $T$ from $\R^2$ to $\R^2$.
 
@@ -1288,7 +1311,7 @@ The remaining exercises are about matrix representations of linear transformatio
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/01e5c371-0139-458c-8f0a-25f35bc03fcb?id=93053
-:label: grasple_exercise_4_3_12
+:label: grasple_exercise_4_3_13
 :dropdown:
 :description: To transform from $[T]_{\mathcal{E}}$  to  $[T]_{\mathcal{B}_2\leftarrow\mathcal{B}_1}$ for $T$ from $\R^2$ to $\R^3$.
 
@@ -1297,7 +1320,7 @@ The remaining exercises are about matrix representations of linear transformatio
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/dd1af96d-34d7-407e-9877-c1e8b6495e6f?id=85167
-:label: grasple_exercise_4_3_13
+:label: grasple_exercise_4_3_14
 :dropdown:
 :description: To compute $[T]_{\mathcal{C}\leftarrow\mathcal{B}}$  for $T$ from $\R^2$ to $\R^2$  with respect to several bases. 
 
@@ -1306,7 +1329,7 @@ The remaining exercises are about matrix representations of linear transformatio
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/933f3e07-36b6-4db5-a47d-91e276185269?id=85159
-:label: grasple_exercise_4_3_14
+:label: grasple_exercise_4_3_15
 :dropdown:
 :description: To compute $[T]_{\mathcal{C}\leftarrow\mathcal{B}}$, for $T$ from $\R^2$ to $\R^2$.  with respect to several bases. 
 
@@ -1315,7 +1338,7 @@ The remaining exercises are about matrix representations of linear transformatio
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/7985ac3f-c432-4b48-9ef1-8ce0914b0f97?id=85162
-:label: grasple_exercise_4_3_15
+:label: grasple_exercise_4_3_16
 :dropdown:
 :description: Like the previous,  for a linear transformation $T$ from $\R^3$ to $\R^2$.
 

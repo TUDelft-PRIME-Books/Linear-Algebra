@@ -97,7 +97,7 @@ $$
  x_1 = c_1, \,\, x_2 = c_2, \, \ldots\, , \,\, x_n = c_n
 $$
 
-into each of the equations yields a true identity.
+into each of the equations yields true identities.
 
 The **solution set** or **general solution** of a system is the set of all solutions.
 
@@ -303,7 +303,7 @@ $$
 
    \left\{\begin{array}{ccccc}
     2x_1&-&5x_2&=&-2\\
-    4x_1&-&7x_2&=& 2
+    4x_1&-&7x_2&=& 2.
     \end{array}\right.
 $$
 
@@ -442,7 +442,7 @@ $$
 
 The last equation is exactly the second equation of the second system.
 
-The crucial thing to note is that these operations can be undone: if in the second system the first equation is added three times to the second equation and added twice to the third equation we end up with the original system. So in fact we have
+The crucial thing to note is that these operations can be undone.  If in the second system the first equation is added three times to the second equation and added twice to the third equation we end up with the original system. So in fact we have
 
 $$
 
@@ -460,7 +460,7 @@ $$
    \right.
 $$
 
-The implication works two ways, which we can write as follows:
+The implication works two ways, which we can write as follows.
 
 $$
 
@@ -776,7 +776,7 @@ with $b\neq 0$ pops up, the system is inconsistent.
 </li>
 <li>
 
-If no such equation appears, the general solution can be found by back substitution: starting from the last equation, we work our way upwards.
+If no such equation appears, the general solution can be found by backward substitution: starting from the last equation, we work our way upwards.
 
 </li>
 </ul>
@@ -832,11 +832,10 @@ $$
 
 is a $3\times 5$ matrix.
 
-Its second row is $\begin{bmatrix} 2 & 7 & -1 & 0 & 8  \end{bmatrix}$ and its third column:
-
-$$
-\left[  \begin{array}{c} 3 \\ -1 \\ 5   \end{array}\right]
-$$
+Its second row is $\begin{bmatrix} 2 & 7 & -1 & 0 & 8  \end{bmatrix}$ and its third column is 
+$
+\left[  \begin{array}{c} 3 \\ -1 \\ 5   \end{array}\right].
+$
 
 ::::
 
@@ -965,15 +964,15 @@ $$
 \end{array}
 $$
 
-As we have seen before, the solution can now be found by back substitution.
+As we have seen before, the solution can now be found by backward substitution.
 
-The right moment to start this back substitution is when the augmented matrix has been simplified to so-called **echelon form**.
+The right moment to start this backward substitution is when the augmented matrix has been simplified to so-called **echelon form**.
 
 (Subsec:LinSystems:RowReduction)=
 
 ## Row Reduction and Echelon Forms
 
-In {numref}`Subsec:LinSystems:Elimination` we have solved linear systems by eliminating variables from the equations. It would be nice to have a clear mark where we can stop rewriting the given system, to forestall ending up in a never ending loop. When we use the notation of an augmented matrix we can identify such a mark.
+In {numref}`Subsec:LinSystems:Elimination` we have solved linear systems by eliminating variables from equations. It would be nice to have a clear mark where we can stop rewriting the given system, to forestall ending up in a never ending loop. When we use the notation of an augmented matrix we can identify such a mark.
 We first need a few more definitions.
 
 ::::{prf:definition}
@@ -1002,7 +1001,7 @@ Such a matrix is also called a **row echelon matrix**.
 :label: Ex:LinSystems:EchelonForm
 
 The following three matrices are meant to visualize the structure of an echelon matrix.
-The symbol $\blacksquare$ denotes an arbitrary nonzero number and $\ast$ just any real number.
+The symbol $\blacksquare$ denotes an arbitrary *nonzero* number and $\ast$ just any real number.
 
 $$
   E_1 =
@@ -1033,7 +1032,7 @@ However, since we will only consider row echelon matrices we will not do this. I
 ::::{prf:definition}
 :label: Dfn:LinSystems:Pivot
 
-A **pivot** of a row in an echelon matrix is the first nonzero element (the so-called _leading entry_) of the row.
+A **pivot** of a row in an echelon matrix is the first nonzero element (the so-called _leading entry_) of that row.
 
 ::::
 
@@ -1090,7 +1089,7 @@ Note that from the second condition in {prf:ref}`Dfn:LinSystems:EchelonForm` it 
 
 ::::
 
-Now have a look again at the derivation at the end of the previous subsection. We worked our way downwards through the rows to create zeros in the first columns, while keeping in mind that we did not change the solution set of the corresponding linear system. The process is called **row reduction**. The end point, from which we could start building the solution by back substitution, was an augmented matrix in echelon form!
+Now have a look again at the derivation at the end of the previous subsection. We worked our way downwards through the rows to create zeros in the first columns, while keeping in mind that we did not change the solution set of the corresponding linear system. The process is called **row reduction**. The end point, from which we could start building the solution by backward substitution, was an augmented matrix in echelon form!
 
 ::::{prf:definition}
 :label: Dfn:LinSystems:RowOperations
@@ -1119,7 +1118,7 @@ Interchanging (or: swapping) two rows.
 
 ::::{prf:remark}
 
-Note that these row operations match exactly the operations of {prf:ref}`Prop:LinSystems:ElimOperations`. This proposition stated that the row operations do not change the solutions of the corresponding linear system.
+Note that these row operations match exactly the operations of {prf:ref}`Prop:LinSystems:ElimOperations`. This proposition now states that the row operations do not change the solutions of the corresponding linear system.
 ::::
 
 ::::{prf:definition}
@@ -1214,7 +1213,7 @@ $$
   \end{array}
 $$
 
-Here a row swap was essential to bring the matrix into echelon form. Sometimes a row swap may just be convenient to simplify the computations. Note that we have also introduced a notation for a row swap. It is good practice to use a notation like this when you do a row reduction process yourself.
+Here a row swap was essential to bring the matrix into echelon form. Sometimes a row swap may just be convenient to simplify the computations. Note that we have also introduced a notation for a row swap. We stress again that it is *good practice* to use a notation like this when you do a row reduction process yourself.
 To speed up the process it may be preferable to combine row operations that do not interfere. In this example the second and the third step both involved
 adding multiples of the first row to the other rows. This can be done simultaneously:
 
@@ -1287,7 +1286,7 @@ And so on, until we get to the last row, or until we get to a row below which al
 
 ::::
 
-The echelon matrix to which a matrix can be reduced is in no way unique. For instance, by scaling a row in an echelon matrix the echelon form persists. We can go a bit further, namely we can create zeros in the columns above the pivots as well. The following example shows how. First we work downwards to the echelon form and then work upwards to create the extra zeros, as mentioned.
+The echelon matrix to which a matrix can be reduced is in no way unique. For instance, by scaling a row in an echelon matrix the echelon form persists. We can go a bit further, namely we can create zeros in the columns *above* the pivots as well. The following example shows how. First we work downwards to the echelon form and then work upwards to create the extra zeros, as mentioned.
 
 ::::{prf:example}
 :label: Ex:LinSystems:RowReduction-2
@@ -1506,8 +1505,7 @@ and we add: '$x_3$ and $x_5$ are free'.
 
 ::::
 
-The row reduction of the augmented matrix to echelon form corresponds to the forward substitution as in {prf:ref}`Ex:LinSystems:SolWithBacksubst1` and {prf:ref}`Ex:LinSystems:SolWithBacksubst2`. There we found the solution by back-substitution. When the augmented matrix is reduced to reduced echelon form
-we have in fact incorporated this back-substitution part and can write down the general solution directly. We think that to solve a system 'with pen and paper', working with the reduced echelon matrix is less error prone. This holds in particular for a system where the solution contains one or more free variables.
+The row reduction of the augmented matrix to echelon form corresponds to the forward substitution as in {prf:ref}`Ex:LinSystems:SolWithBacksubst1` and {prf:ref}`Ex:LinSystems:SolWithBacksubst2`. There we found the solution by backward substitution. When the augmented matrix is reduced to reduced echelon form we have in fact incorporated this backward substitution part and can write down the general solution directly. We think that to solve a system 'with pen and paper', working with the reduced echelon matrix is less error prone. This holds in particular for a system where the solution contains one or more free variables.
 
 ::::{prf:theorem}
 :label: Thm:LinSystems:RowEquivalentToRREF
@@ -1520,11 +1518,11 @@ Any matrix is row equivalent to a reduced echelon matrix. Moreover, this last ma
 :label: Rem:LinSystems:RowEquivalentToRREF
 
 Again we give no formal proof.
-In the previous section we showed, also informally, that any matrix can be reduced to a matrix in echelon form.
+In the previous subsection we showed, also informally, that any matrix can be reduced to a matrix in echelon form.
 
 In this echelon matrix we may divide each row by its pivot (first nonzero element).
 
-And lastly working upwards' step by step we use a pivot -- which we made equal to 1 -- to create zeros in all positions above it.
+And lastly 'working upwards' step by step we use each pivot -- which we made equal to 1 -- to create zeros in all positions above it.
 
 (The last two simplifications may be done in reversed order: first use the pivots to create zeros in the positions above them and then scale the rows.)
 This reasoning supports the validity of the first statement.
@@ -1535,14 +1533,14 @@ The uniqueness is harder to show in an intuitive way, and it is definitely harde
 ::::{prf:example}
 :label: Ex:LinSystems:ReductionToRREF-1
 
-We further simplify the echelon matrix
+Let us further simplify the echelon matrix
 
 $$
 \begin{bmatrix} 3 & 2 &1 &6&-2\\   0 & 2 & -2 &-3 & 1\\  0 & 0 & 0 &3 & 2
    \end{bmatrix}
 $$
 
-to reduced echelon form:
+to reduced echelon form.
 
 step 1: use the pivot in the third row to create zeros above it;
 
@@ -1581,7 +1579,7 @@ $$
 
 ::::
 
-Instead of a formal proof of the uniqueness of the row reduced echelon form of a matrix, we illustrate this uniqueness with one example.
+Instead of a formal proof of the *uniqueness* of the row reduced echelon form of a matrix, we illustrate this uniqueness with one example.
 
 ::::{prf:example}
 :label: Ex:LinSystems:ReductionToRREF-2
@@ -1742,7 +1740,7 @@ If there is a pivot in the last column (the column 'behind the bar'), the system
 </li>
 <li>
 
-If the last column does not contain a pivot: write down the corresponding system of equations and express the variables in the pivot columns into the other variables (if any). These other variables are free variables.
+If the last column does not contain a pivot, write down the corresponding system of equations and express the variables in the pivot columns into the other variables (if any). These other variables are free variables.
 
 </li>
 </ol>
@@ -1759,10 +1757,10 @@ The word 'elimination' refers to the fact that the zeros that are created in the
 
 ::::
 
-::::{prf:remark} Row reduced echelon matrix versus back substitution
+::::{prf:remark} Row reduced echelon matrix versus back-substitution
 :label: Rem:LinSystems:RowRedVersusBackSubstitution
 
-We started this section by solving a linear system by reducing it to an equivalent system in echelon form and then use back-substitution. This is still a viable option. The advantage of the method described in {prf:ref}`Alg:LinSystems:ElimMethod` is that it avoids the clutter back substitution may lead to in the case of free variables.
+We started this section by solving a linear system by reducing it to an equivalent system in echelon form and then use back-substitution. This is still a viable option. The advantage of the method described in {prf:ref}`Alg:LinSystems:ElimMethod` is that it avoids the clutter back-substitution may lead to in the case of free variables.
 
 ::::
 
@@ -1771,7 +1769,7 @@ The following important general statement about the solution set of linear syste
 ::::{prf:theorem}
 :label: Thm:LinSystems:ZeroOneInfSolutions
 
-A system of linear equations has either zero, or one, or infinitely many solutions. In the case when there is exactly one solution, we speak of a **unique** solution.
+A system of linear equations has either zero, or one, or infinitely many solutions. In the case when there is exactly one solution we speak of a **unique** solution.
 
 ::::
 
@@ -1904,7 +1902,7 @@ $$
  a_1x_1 + a_2x_2 + a_3x_3 = b
 $$
 
-can be seen as a plane in $\mathbb{R}^3$. The previous proposition tells us: the intersection of $m$ planes in $\mathbb{R}^3$, where $m < 3$, cannot be a single point.
+can be seen as a plane in $\mathbb{R}^3$. The previous proposition tells us that the intersection of $m$ planes in $\mathbb{R}^3$, where $m < 3$, cannot be a single point.
 
 ::::
 

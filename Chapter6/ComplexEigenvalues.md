@@ -40,13 +40,13 @@ $$
 $$
 
 where the row operation we invoke is: add the second row $(1+i)$ times to the first row.
-The blue 0 is the result of the calculation of
+The blue {\color{blue}0} is the result of the evaluation of
 
 $$
 -2 + (1+i)(1-i).
 $$
 
-We can read off a solution (i.e., complex eigenvector) &nbsp;
+We can read off a solution (i.e., complex eigenvector): &nbsp; 
 $\vect{v} = \left[\begin{array}{c}  -1+i \\1 \end{array}\right]$.
 
 To check that we have indeed an eigenvector is also slightly more involved than in the real case.
@@ -95,12 +95,10 @@ $$
  = (1+i)\vect{v},
 $$
 
-so the two vectors are complex multiples of each other, and hence are not linearly independent.
+so the two vectors are *complex* multiples of each other, and hence are not linearly independent.
 
 For the other eigenvalue we can proceed in the same manner and find (for instance) the eigenvector
-
-<!-- prettier-ignore -->
-$\vect{v}_2 =\left[\begin{array}{c} -2 \\ 1-i \end{array}\right] $.
+&nbsp; $\vect{v}_2 =\left[\begin{array}{c} -2 \\ 1-i \end{array}\right] $.
 
 :::::
 
@@ -170,9 +168,6 @@ $\overline{\lambda} = \alpha - \beta i$ is an eigenvalue too.
 <li>
 
 If $\vect{v} = \vect{u}+i\vect{w}$, where $\vect{u}$ and $\vect{w}$ are real vectors, is an eigenvector
-
-<BR>
-
 for $\lambda$, then
 $\overline{\vect{v}} = \vect{u}-i\vect{w}$ is an eigenvector for $\overline{\lambda}$.
 
@@ -423,7 +418,7 @@ Let us illustrate matters with the following example.
 
 The matrix $A = \left[\begin{array}{cc} 1 & -2 \\ 1 & 3  \end{array}\right]$
 of {prf:ref}`Ex:ComplexEV:FirstExample`
-has the eigenvalue $\lambda = \alpha + \beta i = 2 + i$.
+has the eigenvalues $\lambda_{1,2} = \alpha \pm \beta i = 2 \pm i$.
 An eigenvector for $2-i$ is given by
 
 $$
@@ -432,7 +427,7 @@ $$
  + i\left[\begin{array}{c} 0 \\ -1  \end{array}\right].
 $$
 
-We check the identity
+Let us establish the identity
 
 $$
 P^{-1}AP = \left[\begin{array}{cc} \alpha & -\beta \\ \beta & \alpha \end{array}\right] = \left[\begin{array}{cc} 2 & -1 \\ 1 & 2 \end{array}\right].
