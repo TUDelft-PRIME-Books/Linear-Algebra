@@ -1094,7 +1094,7 @@ The following proposition sometimes helps to show that a set of vectors is a bas
 ::::::{prf:proposition}
 :label: Prop:BasisDim:TwoOfThreeSuffice
 
-For a set of vectors $ \lbrace\vect{b}_1, \vect{b}\_2, \ldots, \vect{b}_{\ell} \rbrace $ in a subspace $S$ _of dimension $k$_ each pair of the following three properties implies the remaining property.
+For a set of vectors $ \lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace $ in a subspace $S$ _of dimension $k$_ each pair of the following three properties implies the remaining property.
 
 <ol type = "i">
 
@@ -1632,7 +1632,7 @@ By {prf:ref}`Prop:BasisDim:EqualDimRowColSpace` dim Row$(A) = $ dim Row$(A)$.
 
 ::::::
 
-The last theorem contains two reformulations of old material:
+The last theorem contains two reformulations of old material.
 
 ::::::{prf:theorem} Rank Theorem
 :label: Thm:BasisDim:RankThm
@@ -1824,7 +1824,7 @@ $B$ is an $n\times m$ matrix?
 :url: https://embed.grasple.com/exercises/b85a9ef2-3b82-47d9-89f3-212a435b8be2?id=70642
 :label: grasple_exercise_4_2_8
 :dropdown:
-:description: To find a basis for a subspace of $\R^4$
+:description: To find a basis for a subspace of $\R^4$.
 
 ::::::
 
@@ -1832,7 +1832,7 @@ $B$ is an $n\times m$ matrix?
 :url: https://embed.grasple.com/exercises/04d804ff-16ea-44ee-ac76-452a73a88859?id=70653
 :label: grasple_exercise_4_2_9
 :dropdown:
-:description: To find a basis and the dimension of span$\{\vect{v}_1, ... , \vect{v}_4\}$ (in $\R^4$)
+:description: To find a basis and the dimension of span$\{\vect{v}_1, ... , \vect{v}_4\}$ &nbsp; (in $\R^4$).
 
 ::::::
 
@@ -1914,7 +1914,7 @@ The exercises below are more theoretical.
 :url: https://embed.grasple.com/exercises/b07a06d8-ea95-4798-9ae7-7d4bdea040de?id=70658
 :label: grasple_exercise_4_2_19
 :dropdown:
-:description: To find the rank of a matrix with certain properties
+:description: To find the rank of a matrix with certain properties.
 
 ::::::
 

@@ -29,7 +29,7 @@ $$
 \vect{x}_{k+1} = M\vect{x}_k
 $$
 
-described the transition of the 'state' of some system at time $k$ to the state at time $k+1$, the 'state' being the population sizes of a number of cities (or countries), or of several species in an eco-system.
+described the transition of the 'state' of some system at time $k$ to the state at time $k+1$, the 'state' being the population sizes of a number of cities (or countries), or of several species in an eco system.
 The dynamical system
 
 $$
@@ -50,7 +50,7 @@ $$
 y_{k+1} = 0.1x_k + 0.8 y_k.
 $$
 
-In this toy model there are no birth or deaths, nor migrations to or from 'the outside world'.
+In this toy model there are no births or deaths, nor migrations to or from 'the outside world'.
 A natural question is: is there an equilibrium state, i.e. a state $\vect{s}$ for which
 
 $$
@@ -97,7 +97,7 @@ these, but **unless specifically indicated, in this chapter eigenvalues will be 
 
 ::::::
 
-In the first half of this section we will answer the following three questions
+In the first half of this section we will answer the following three questions.
 
 <ul>
 <li>
@@ -117,7 +117,7 @@ How to find the eigenvector(s) for a given eigenvalue.
 </li>
 </ul>
 
-The (harder) question how to actually find the eigenvalues we postpone untill the next section.
+The (harder) question, how to actually find the eigenvalues, we postpone until the next section.
 
 In the second half of this section we will consider a few general properties of eigenvalues and eigenvectors.
 
@@ -327,7 +327,7 @@ $$
 (A-2I)\vect{v} = \vect{0}.
 $$
 
-So we are looking for non-trivial solutions of the homogeneous system of linear equations with coefficient matrix $A - 2I$. Again, we can work with the augmented matrix $[A - 2I | \vect{0} ]$, or we can use the fact that we look for nonzero vectors in the nulspace of $A-2I$.
+So we are looking for non-trivial solutions of the homogeneous system of linear equations with coefficient matrix $A - 2I$. Again, we can work with the augmented matrix $[A - 2I | \vect{0} ]$, or we can use the fact that we look for nonzero vectors in the null space of $A-2I$.
 If we plug in the entries of $A$ and use row reduction we get
 
 $$
@@ -344,9 +344,9 @@ A-2I \sim
 \left[\begin{array}{cccc} 1 & 1 & -2  \\ 0 & -3 & 2 \\ 0 & 0 & -2 \end{array}\right].
 $$
 
-This last matrix has rank 3, so its nulspace contains only the zero vector. Thus there are no nonzero solutions for the equation $A\vect{v} - 2\vect{v} = \vect{0}$, and we conclude that 2 is _not_ an eigenvalue of $A$.
+This last matrix has rank 3, so its null space contains only the zero vector. Thus there are no nonzero solutions for the equation $A\vect{v} - 2\vect{v} = \vect{0}$, and we conclude that 2 is _not_ an eigenvalue of $A$.
 
-For the other candidate we proceed in the same manner. Now we have to find the nulspace of the matrix
+For the other candidate we proceed in the same manner. Now we have to find the null space of the matrix
 
 $$
 (A-(-2)I) = (A+2I).
@@ -361,7 +361,7 @@ A+2I = \begin{bmatrix} 0 & 1 & 2 \\ 0 & 1 & 2 \\ -1 & 1 & 2 \end{bmatrix}  \sim
 
 $$
 
-We conclude that $A+2I$ has rank 2, thus the nulspace of $A+2I$ has dimension 1. From the row reduced form we read off that the nulspace contains all multiples of the vector
+We conclude that $A+2I$ has rank 2, thus the null space of $A+2I$ has dimension 1. From the row reduced form we read off that the null space contains all multiples of the vector
 $\vect{v} = \begin{bmatrix} 0 \\ 2 \\ -1\end{bmatrix}$. These then are exactly the eigenvectors for the eigenvalue $\lambda = -2$.
 Well, strictly speaking we should exclude the multiple $0\vect{v}$, as an eigenvector by definition is not the zero vector.
 As a check:
@@ -471,14 +471,14 @@ $$
 A\vect{x}=\lambda\vect{x} \quad \iff \quad (A-\lambda I)\vect{x}= \vect{0}.
 $$
 
-Thus $S$ is the nulspace of $A - \lambda I$, and, as such, a subspace of $\R^n$.
+Thus $S$ is the null space of $A - \lambda I$, and, as such, a subspace of $\R^n$.
 
 ::::::
 
 ::::::{prf:definition}
 :label: Dfn:EigenValues:Eigenspace
 
-For an eigenvalue $\lambda$ of the matrix $A$ the nulspace  of $A - \lambda I$ is called the **eigenspace**  $E_{\lambda}$.
+For an eigenvalue $\lambda$ of the matrix $A$ the null space  of $A - \lambda I$ is called the **eigenspace**  $E_{\lambda}$.
 
 $$
 E_{\lambda} = \Nul{(A-\lambda I)}.
@@ -486,7 +486,7 @@ $$
 
 ::::::
 
-Recall that the nulspace of $A - \lambda I$ consists of all solutions of the equation
+Recall that the null space of $A - \lambda I$ consists of all solutions of the equation
 
 $$
 (A-\lambda I)\vect{x} = \vect{0},
@@ -665,7 +665,7 @@ An $n \times n$ matrix $A$ can have at most $n$ different eigenvalues.
 It can be shown  (as we will see in {prf:ref}`Ex:Eigenvalues:TwodimEigenspace2`)
 that the $3\times 3$  matrix $A = \begin{bmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1  \end{bmatrix}$ of the previous example has no other eigenvalues than $-1$ and $5$. So $A$ is a $3 \times 3$ matrix with fewer than $3$ eigenvalues. <BR>
 Things can even be 'worse' as the following example shows. The idea behind it: if $\vect{v}$ is an eigenvector of the matrix $A$, then the vector $\vect{v}$ is mapped to the multiple $\lambda\vect{v}$ by the transformation $T(\vect{x}) = A\vect{x}$.
-A multiple $\lambda\vect{v}$ is a vector in the same or the opposite direction as $\vect{v}$. With this in mind, can we construct a linear transformation of $\R^2$ to $\R^2$ that certainly does not have such vectors? Yes we can!
+A multiple $\lambda\vect{v}$ is a vector with the same direction as $\vect{v}$ or the  direction opposite to $\vect{v}$. With this in mind, can we construct a linear transformation of $\R^2$ to $\R^2$ that certainly does not have such vectors? Yes we can!
 
 ::::::{prf:example}
 :label: Ex:EigenValues:Rotation
@@ -687,7 +687,7 @@ A rotation has no eigenvectors
 ::::::{prf:remark}
 :label: Rem:EigenValues:Rotation
 
-This is a remark only for readers that are familiar with complex numbers.
+This is a remark only for readers who are familiar with complex numbers.
 The matrix $R = \begin{bmatrix} 0 & -1 \\1 & 0  \end{bmatrix}$ has no **real** eigenvalues. If we allow eigenvalues to be complex numbers, and vectors to have complex entries, it appears that
 
 $$
@@ -767,7 +767,7 @@ $\lambda_2 = -1$ with corresponding eigenvector $\vect{v}_2 = \begin{bmatrix} -2
 So for the linear transformation $T:\R^2 \to \R^2$ defined by $T(\vect{x}) = A\vect{x}$ it holds that
 
 $$
-T(\vect{v}_1)  = 3\vect{v}_1 \quad\text{and}\quad T(\vect{v}_2)  = (-1)\vect{v}_1
+T(\vect{v}_1)  = 3\vect{v}_1 \quad\text{and}\quad T(\vect{v}_2)  = (-1)\vect{v}_1.
 $$
 
 If we take the basis $\mathcal{B} = (\vect{v}_1, \vect{v}_2 )$ for $\R^2$, then the transformation does the following:

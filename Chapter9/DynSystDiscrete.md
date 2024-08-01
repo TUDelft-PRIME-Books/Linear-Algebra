@@ -152,7 +152,13 @@ Suppose $A$ is an $n\times n$ (real) diagonalizable matrix.
 Let $(\vect{v}_1, \ldots, \vect{v}_n)$ be a basis of eigenvectors, and let
 $\lambda_1, \ldots, \lambda_n$ be the corresponding eigenvalues.
 
-Then for each initial state $\vect{s}$ the general vector of the dynamical system
+Then for each initial state $\vect{s}$,  which can be written as
+
+$$
+  \vect{s} =  c_1\vect{v}_1 + c_2\vect{v}_2 +  \ldots + c_n\vect{v}_n,
+$$
+
+the general vector of the dynamical system
 
 $$
   \vect{x}_{0} = \vect{s}, \quad  \vect{x}_{k+1} = A\vect{x}_k, \quad k = 0,1,2,\ldots
@@ -163,7 +169,7 @@ is given by
 :::{math}
 :label: Eq:DynSystDiscrete:GenSolDiagble
 
-$\vect{x}_k =  c_1\lambda_1^k\vect{v}_1 + c_2\lambda_2^k\vect{v}_2 +  \ldots + c_n\lambda_n^k\vect{v}_n,$
+\vect{x}_k =  c_1\lambda_1^k\vect{v}_1 + c_2\lambda_2^k\vect{v}_2 +  \ldots + c_n\lambda_n^k\vect{v}_n,
 
 :::
 

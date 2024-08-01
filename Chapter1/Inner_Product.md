@@ -80,7 +80,7 @@ Perpendicular versus non-perpendicular
 
 Let us now turn our attention to another important geometric concept, namely that of
 perpendicularity. It is clear from {numref}`Figure %s <Fig:InnerProduct:perp-non-perp>` that the vectors $\begin{bmatrix}2\\3\end{bmatrix}$ and $\begin{bmatrix}-3\\2\end{bmatrix}$ are perpendicular, whereas the vectors $\begin{bmatrix}2\\3\end{bmatrix}$ and $\begin{bmatrix}-1\\3\end{bmatrix}$ are not. <br />
-There is another way to look at this, which will be useful for the definition of perpendicularity in higher dimensions. To that end, consider {numref}`Figure %s <Fig:InnerProduct:diagonal-parallelogram>`. Here you see two vectors $\vect{v}$ and $\vect{w}$ and the paralellogram they span. You also see the diagonals of this paralellogram, which are given by $\vect{v}+\vect{w}$ and $\vect{v}-\vect{w}$. Two vectors are perpendicular if and only if the paralellogram they span is a rectangle, and this is exacty the situation where the diagonals have the same length, i.e.,
+There is another way to look at this, which will be useful for the definition of perpendicularity in higher dimensions. To that end, consider {numref}`Figure %s <Fig:InnerProduct:diagonal-parallelogram>`. Here you see two vectors $\vect{v}$ and $\vect{w}$ and the parallelogram they span. You also see the diagonals of this parallelogram, which are given by $\vect{v}+\vect{w}$ and $\vect{v}-\vect{w}$. Two vectors are perpendicular if and only if the parallelogram they span is a rectangle, and this is exacty the situation where the diagonals have the same length, i.e.,
 
 :::{math}
 :label: EqualDiagonals
@@ -115,7 +115,7 @@ $$
   \norm{\mathbf{v}+\mathbf{w}} \neq \norm{\mathbf{v}-\mathbf{w}}.
 $$
 
-So far we have been talking about two (non-zero) vectors in the plane, i.e., in $\mathbb{R}^2$. However, two vectors in $\mathbb{R}^3$ form a parallelogram as well, which also becomes a rectangle if and only if the vectors are perpendicular. We introduce a notation for this: if $ \mathbf{v}$ and $\mathbf{w}$ are perpendicular, we write this as
+So far we have been talking about two (nonzero) vectors in the plane, i.e., in $\mathbb{R}^2$. However, two vectors in $\mathbb{R}^3$ form a parallelogram as well, which also becomes a rectangle if and only if the vectors are perpendicular. We introduce a notation for this: if $ \mathbf{v}$ and $\mathbf{w}$ are perpendicular, we write this as
 
 :::{math}
 :label: Eq:InnerProduct:Orthogonal
@@ -239,12 +239,12 @@ ii. $(c\mathbf{v}_1)\ip\mathbf{v}_2 = c(\mathbf{v}_1\ip\mathbf{v}_2) = \mathbf{v
 
 iii. $(\mathbf{v}_1+\mathbf{v}_2)\ip\mathbf{v}_3 = \mathbf{v}_1\ip\mathbf{v}_3+\mathbf{v}_2\ip\mathbf{v}_3$.
 
-iv. $\mathbf{v}\ip\mathbf{v} \geq 0$, and $\mathbf{v}\ip\mathbf{v} = 0 \iff \mathbf{v} = \mathbf{0}$.
+iv. $\mathbf{v}\ip\mathbf{v} \geq 0$, &nbsp; and&nbsp; $\mathbf{v}\ip\mathbf{v} = 0 \iff \mathbf{v} = \mathbf{0}$.
 :::
 
 :::{prf:proof}
 
-The first three properties follow from the corresponding properties of real numbers. For instance, for the first rule we simply use that $xy = yx$ holds for the product of real numbers.
+The first three properties follow from the corresponding properties of real numbers. For instance, for the first rule we simply use that $ab = ba$ holds for the product of real numbers $a$ and $b$.
 
 i. Let
 
@@ -266,12 +266,13 @@ $$
 \end{align*}
 $$
 
-ii. For two vectors $\vect{v}_1 = \begin{bmatrix}a_{1} \\ a_{2}\\ \vdots\\ a_{n}\end{bmatrix}$, $\vect{v}_2 = \begin{bmatrix}b_{1} \\ b_{2}\\ \vdots\\ b_{n}\end{bmatrix}$, and constants $c$ we see that
+ii. For two vectors $\vect{v}_1 = \begin{bmatrix}a_{1} \\ a_{2}\\ \vdots\\ a_{n}\end{bmatrix}$, $\vect{v}_2 = \begin{bmatrix}b_{1} \\ b_{2}\\ \vdots\\ b_{n}\end{bmatrix}$  
+&nbsp;and constants $c$ we see that
 
 $$
 \begin{eqnarray*}
-            (c\mathbf{v_1})\ip\mathbf{v_2} &=&  \begin{bmatrix}ca_{1}\\ca_{2}\\ \vdots\\ca_{n}\end{bmatrix}\ip\begin{bmatrix}b_{1}\\b_{2}\\       \vdots\\b_{n}\end{bmatrix} = (ca_1)b_1 + (ca_2)b_2+ \ldots + (ca_n)b_n \\
-            &=& c\,(a_1b_1 +a_2b_2+ \ldots + a_nb_n) = c\, (\mathbf{v_1}\ip\mathbf{v_2})
+            (c\mathbf{v}_1)\ip\mathbf{v}_2 &=&  \begin{bmatrix}ca_{1}\\ca_{2}\\ \vdots\\ca_{n}\end{bmatrix}\ip\begin{bmatrix}b_{1}\\b_{2}\\       \vdots\\b_{n}\end{bmatrix} = (ca_1)b_1 + (ca_2)b_2+ \ldots + (ca_n)b_n \\
+            &=& c\,(a_1b_1 +a_2b_2+ \ldots + a_nb_n) = c\, (\mathbf{v}_1\ip\mathbf{v}_2)
 \end{eqnarray*}
 $$
 
@@ -400,7 +401,7 @@ $$
   \begin{array}{rcl} \norm{\mathbf{v}_1+\mathbf{v}_2}^2 + \norm{\mathbf{v}_1-\mathbf{v}_2}^2&=&  (\mathbf{v}_1+\mathbf{v}_2)\cdot(\mathbf{v}_1+\mathbf{v}_2) +
       (\mathbf{v}_1-\mathbf{v}_2)\cdot(\mathbf{v}_1-\mathbf{v}_2)     \\
     &=& \mathbf{v}_1\cdot\mathbf{v}_1 +2\mathbf{v}_1\cdot\mathbf{v}_2 + \mathbf{v}_1\cdot\mathbf{v}_2 + \mathbf{v}_1\cdot\mathbf{v}_1 -2\mathbf{v}_1\cdot\mathbf{v}_2 + \mathbf{v}_2\cdot\mathbf{v}_2  \\
-    &=&   2\,mathbf{v}_1\cdot\mathbf{v}_1 +2\,\mathbf{v}_2\cdot\mathbf{v}_2    \\
+    &=&   2\,\mathbf{v}_1\cdot\mathbf{v}_1 +2\,\mathbf{v}_2\cdot\mathbf{v}_2    \\
     &=&   2 (\norm{\mathbf{v}_1}^2 + \norm{\mathbf{v}_2}^2).
   \end{array}
 
@@ -432,7 +433,7 @@ Two vectors $\mathbf{v}$ and $\mathbf{w}$ in $\mathbb{R}^n$ are called _orthogon
 :::{prf:example}
 :label: Ex:InnerProduct:CheckVectorsOrthogonal
 
-Let $\mathbf{u} = \begin{bmatrix} 1\\2\\-1\\-1\end{bmatrix}$, $\mathbf{v} = \begin{bmatrix} 3\\-1\\2\\-1\end{bmatrix}$,
+Let $\mathbf{u} = \begin{bmatrix} 1\\2\\-1\\-1\end{bmatrix}$, $\mathbf{v} = \begin{bmatrix} 3\\-1\\2\\-1\end{bmatrix}$ and
 $\mathbf{w} = \begin{bmatrix} 2\\2\\-1\\2\end{bmatrix}$.
 
 We compute
@@ -462,7 +463,7 @@ and conclude that $\mathbf{u}$ and $\mathbf{v}$ are orthogonal, $\mathbf{u}$ and
 
 ::::
 
-In $\mathbb{R}^2$, two nonzero vectors that are orthogonal to the same nonzero vector $\mathbf{v}$ are automatically multiples of each other (i.e. have either the same or the opposite direction). In $\mathbb{R}^n$ with $n \geq 3$ this no longer holds. In this example both vectors $\mathbf{u}$ and $\mathbf{w}$ are orthogonal to the vector $\mathbf{v}$, but $\mathbf{u} \neq c\mathbf{w}$.
+In $\mathbb{R}^2$, two nonzero vectors that are orthogonal to the same nonzero vector $\mathbf{v}$ are automatically multiples of each other (i.e. have either the same or the opposite direction). In $\mathbb{R}^n$ with $n \geq 3$ this no longer holds. In the previous example both vectors $\mathbf{u}$ and $\mathbf{w}$ are orthogonal to the vector $\mathbf{v}$, but $\mathbf{u} \neq c\mathbf{w}$.
 
 By definition the zero vector is orthogonal to any vector, since $\mathbf{0}\ip\mathbf{v} = 0$. Moreover, the zero vector is the _only_ vector that is orthogonal to itself, which is the content of the next proposition.
 
@@ -499,7 +500,7 @@ The vector $\mathbf{n}$ is often said to be a _normal_ vector to the line.
 :::{figure} Images/Fig-InnerProduct-PerpendicularLine.svg
 :name: Fig:InnerProduct:PerpendicularLine
 
-Vectors orthogonal to a non-zero vector $\mathbf{n}$ in the plane
+Vectors orthogonal to a nonzero vector $\mathbf{n}$ in the plane
 :::
 
 ::::
@@ -527,13 +528,13 @@ $$
 
 :::
 
-```{applet}
+````{applet}
 :url: dot_product/innerproduct_projectionvectorline
 :fig: Images/Fig-InnerProduct-ProjectionVectorLine.svg
 :name: Fig:InnerProduct:ProjectionVectorLine
 
-Projection of a vector $\mathbf{w}$ onto a non-zero vector $\mathbf{v}$
-```
+Projection of a vector $\mathbf{w}$ onto a nonzero vector $\mathbf{v}$
+:::
 
 :::{prf:proposition}
 :label: Prop:InnerProduct:UniqueProjection
@@ -562,7 +563,7 @@ and
 
 $$
 
-  (\mathbf{w} - \mathbf{\hat{w}}) \perp \mathbf{v}
+  (\mathbf{w} - \mathbf{\hat{w}}) \perp \mathbf{v},
 $$
 
 it follows that we must have
@@ -570,10 +571,10 @@ it follows that we must have
 $$
 
    (\mathbf{w} - c\mathbf{v}) \ip \mathbf{v} =
-   \mathbf{w}\ip \mathbf{v} - c \,(\mathbf{v}\ip \mathbf{v}) =  0
+   \mathbf{w}\ip \mathbf{v} - c \,(\mathbf{v}\ip \mathbf{v}) =  0.
 $$
 
-so that $c$ is uniquely given by
+So $c$ is uniquely given by
 
 $$
 
@@ -685,7 +686,7 @@ $$
 We see $(\mathbf{w}_1 - \mathbf{w}_2)\ip \mathbf{v} = 1 - 2 + 10 + 9 = 0$,
 so indeed $(\mathbf{w}_1 - \mathbf{w}_2)$ and $\vect{v}$ are orthogonal.
 
-{numref}`Figure %s <Fig:InnerProduct:SameProj>`shows what's going on.
+{numref}`Figure %s <Fig:InnerProduct:SameProj>` shows what is going on.
 
 :::{figure} Images/Fig-InnerProduct-SameProj.svg
 :name: Fig:InnerProduct:SameProj
@@ -706,9 +707,9 @@ $$
   \norm{\mathbf{v}} = \sqrt{a_1^2 + a_2^2} = \sqrt{\mathbf{v}\ip\mathbf{v}}.
 $$
 
-The identity $\norm{\mathbf{v}}  = \sqrt{\mathbf{v}\ip\mathbf{v}}$ also holds in $\mathbb{R}^3$.
+The identity $\norm{\mathbf{v}}  = \sqrt{\mathbf{v}\ip\mathbf{v}}$ &nbsp;also holds in $\mathbb{R}^3$.
 
-It seems natural to extend the concept to $\mathbb{R}^n$. Again, for this more general space a new word is introduced:
+It seems natural to extend the concept to $\mathbb{R}^n$. Again, for this more general space a new word is introduced.
 
 :::{prf:definition}
 :label: Dfn:InnerProduct:NormOfVector
@@ -731,7 +732,7 @@ $$
 
 so for vectors in $\mathbb{R}^2$ and $\mathbb{R}^3$ the norm of a vector is just the length of the vector.
 
-As we might expect the norm has many properties in common with length:
+As we might expect the norm has many properties in common with length.
 
 ::::{prf:proposition}
 :label: Prop:InnerProduct:PropertiesNorm
@@ -766,7 +767,7 @@ The first two of these properties are very easy to prove. The proof of the trian
 :position: 2,2
 
 The Triangle Inequality
-```
+````
 
 ::::{prf:example}
 :label: Ex:InnerProduct:NormsofTwoVectors
@@ -828,6 +829,12 @@ $$
 
 ::::
 
+:::{figure} Images/Fig-InnerProduct-Distance.svg
+:name: Fig:InnerProduct:Distance
+
+The distance between two vectors
+:::
+
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/5bc4274c-56a0-461b-bd3d-9f8bdb8f44e0?id=69740
 :label: grasple_exercise_1_2_2
@@ -836,12 +843,12 @@ $$
 
 ::::
 
-From the rules of the norm the following rules of the distance function can be deduced
+From the rules of the norm the following rules of the distance function can be deduced.
 
 ::::{prf:proposition}
 :label: Prop:InnerProduct:PropertiesDistance
 
-For any vectors three vectors $\mathbf{u}, \mathbf{v}$ and $\mathbf{w} \in \mathbb{R}^{n}$ the following statements hold.
+For any three vectors $\mathbf{u}, \mathbf{v}$ and $\mathbf{w} \in \mathbb{R}^{n}$ the following statements hold.
 
 i. $\text{dist}(\vect{u},\vect{v}) = \text{dist}(\vect{v},\vect{u})$;
 
@@ -861,12 +868,6 @@ Check the three properties of the distance function as stated in
 For Rule iii., only show how it follows from the corresponding Rule iii. in
 that same proposition.
 ::::
-
-:::{figure} Images/Fig-InnerProduct-Distance.svg
-:name: Fig:InnerProduct:Distance
-
-The distance between two vectors
-:::
 
 With the tools so far we can define a notion that comes in handy later.
 
@@ -994,12 +995,18 @@ Next we subtract $\mathbf{v}\ip\mathbf{v} + \mathbf{w}\ip\mathbf{w}$ from both s
 
 $$
 
-\begin{array}{rcl}
  \mathbf{v}\ip\mathbf{w}+\mathbf{w}\ip\mathbf{v} = 0
-  &\iff& 2\mathbf{v}\ip\mathbf{w} = 0\\
-  &\iff& \mathbf{v}\ip\mathbf{w}= 0\\
-  &\iff& \mathbf{v}\perp\mathbf{w}.
-  \end{array}
+$$
+
+And then we are almost there:
+
+$$
+
+
+ \mathbf{v}\ip\mathbf{w}+\mathbf{w}\ip\mathbf{v} = 0
+  \iff 2\,\mathbf{v}\ip\mathbf{w} = 0
+  \iff \mathbf{v}\ip\mathbf{w}= 0
+  \iff \mathbf{v}\perp\mathbf{w}.
 $$
 
 :::
@@ -1052,7 +1059,7 @@ For any two vectors in $\mathbb{R}^n$
 
 $$
 
-    |\mathbf{v}\ip\mathbf{w}| \leq  \norm{\mathbf{v}}\,\norm{\mathbf{w}}.
+    |\mathbf{v}\ip\mathbf{w}| \leq  \norm{\mathbf{v}} \norm{\mathbf{w}}.
 $$
 
 :::
@@ -1069,7 +1076,7 @@ $\mathbf{v} = \mathbf{0}$, the zero vector, then the inequality obviously holds;
 $$
 
   \mathbf{v} = \mathbf{0} \Longrightarrow  \norm{\mathbf{v}} = 0
-  \Longrightarrow \norm{\mathbf{v}}\cdot\norm{\mathbf{w}} = 0
+  \Longrightarrow \norm{\mathbf{v}} \norm{\mathbf{w}} = 0
 $$
 
 and also
@@ -1096,17 +1103,17 @@ $$
 
  (\mathbf{w} - \mathbf{\hat{w}}) \perp  \mathbf{\hat{w}}  \Longrightarrow \norm{\mathbf{w} - \mathbf{\hat{w}}}^2 + \norm{ \mathbf{\hat{w}}}^2 =
  \norm{(\mathbf{w} - \mathbf{\hat{w}}) + \mathbf{\hat{w}}}^2 =
- \norm{\mathbf{w}}^2
+ \norm{\mathbf{w}}^2.
 $$
 
 It follows that
 
 $$
 
-  \norm{ \mathbf{\hat{w}}}^2   = \norm{\mathbf{w}}^2 - \norm{\mathbf{w} - \mathbf{\hat{w}}}^2 \leq \norm{\mathbf{w}}^2
+  \norm{ \mathbf{\hat{w}}}^2   = \norm{\mathbf{w}}^2 - \norm{\mathbf{w} - \mathbf{\hat{w}}}^2 \leq \norm{\mathbf{w}}^2.
 $$
 
-and substitution of the expression for $\mathbf{\hat{w}}$ we arrive at
+Substitution of the expression for $\mathbf{\hat{w}}$ leads to
 
 $$
 
@@ -1131,7 +1138,7 @@ $$
 Taking square roots we may conclude that indeed
 
 $$
-   |\mathbf{w}\ip\mathbf{v}|  \, \leq  \, \norm{\mathbf{v}}\,\norm{\mathbf{w}}.
+   |\mathbf{w}\ip\mathbf{v}|  \, \leq  \, \norm{\mathbf{v}} \norm{\mathbf{w}}.
 $$
 
 :::
@@ -1271,7 +1278,7 @@ $$
 
 ::::{prf:proof}
 
-Now let's derive formula {eq}`Eq:InnerProduct:GeometricDefinition`.
+We will derive formula {eq}`Eq:InnerProduct:GeometricDefinition`.
 Assume that $\mathbf{v}$ and $\mathbf{w}$ are nonzero vectors.
 Recall the formula of the orthogonal projection
 
@@ -1359,7 +1366,7 @@ $$
     \norm{\vect{v}_i - \vect{v}_j} = \sqrt{2^2 + 2^2 + 0^2} = \sqrt{8}, \text{ for } i \neq j.
 $$
 
-The angle between for instance $\mathbf{v}_1$ and $\mathbf{v}_3$ is determined by
+The angle between, for instance, $\mathbf{v}_1$ and $\mathbf{v}_3$ is determined by
 
 $$
    \cos(\varphi) = \dfrac{\mathbf{v}_1\ip\mathbf{v}_3}{\norm{\mathbf{v}_1}\norm{\mathbf{v}_3}} = \dfrac{-1}{\sqrt{3}\cdot\sqrt{3}} = -\frac13.
@@ -1404,12 +1411,12 @@ $$
 :::{prf:example}
 :label: Ex:InnerProduct:AngleInRn
 
-Let $\mathbf{e_1}$ be the vector in $\mathbb{R}^n$ with first entry equal to 1 and all other entries equal to 0, and $\mathbf{v}$ be the vector with all entries equal to 1. We find the angle between $\mathbf{e_1}$ and $\mathbf{v}$ in all cases $n = 2, 3, 4,\ldots$
+Let $\mathbf{e_1}$ be the vector in $\mathbb{R}^n$ with first entry equal to 1 and all other entries equal to 0, and $\mathbf{v}$ be the vector with all entries equal to 1. We find the angle between $\mathbf{e}_1$ and $\mathbf{v}$ in all cases $n = 2, 3, 4,\ldots$
 
-For each $n\geq2$ we write $\varphi_n = \angle(\mathbf{e_1},\mathbf{v})$. Then
+For each $n\geq2$ we write $\varphi_n = \angle(\mathbf{e}_1,\mathbf{v})$. Then
 
 $$
- \cos(\varphi_n)  = \dfrac{\mathbf{e_1}\ip\mathbf{v}}{\norm{\mathbf{e_1}}\norm{\mathbf{v}}} = \dfrac{1}{\sqrt{n}}.
+ \cos(\varphi_n)  = \dfrac{\mathbf{e}_1\ip\mathbf{v}}{\norm{\mathbf{e}_1}\norm{\mathbf{v}}} = \dfrac{1}{\sqrt{n}}.
 $$
 
 So:
@@ -1471,7 +1478,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 :url: https://embed.grasple.com/exercises/30a7abfe-9d40-4faa-a848-83bd67e024a0?id=62406
 :label: grasple_exercise_1_2_7
 :dropdown:
-:description: To compute the norm of vectors in $\R^2$, $\R^3$, $\R^4$.
+:description: To compute the norms of vectors in $\R^2$, $\R^3$, $\R^4$.
 
 ::::
 
@@ -1509,7 +1516,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/67334454-d109-45a2-b640-545041ff896d?id=62416
-:label: grasple_exercise_1_2_13
+:label: grasple*exercise_1_2_13
 :dropdown:
 :description: Find $\text{proj}*{\mathbf{v}}(\mathbf{w})$ in $\R^2$.
 
@@ -1517,7 +1524,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/9705b078-6c91-42c6-9768-8a043115b881?id=62658
-:label: grasple_exercise_1_2_14
+:label: grasple*exercise_1_2_14
 :dropdown:
 :description: Find $\text{proj}*{\mathbf{v}}(\mathbf{w})$ in $\R^4$.
 
@@ -1531,13 +1538,11 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 
 ::::
 
-61ecdf6-4cfb-41ba-bc16-685fe8532471?id=62414
-
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/161ecdf6-4cfb-41ba-bc16-685fe8532471?id=62414
 :label: grasple_exercise_1_2_16
 :dropdown:
-:description: To show that $(\vect{v}+\vect{w})\ip(\vect{v}-\vect{w}) = \norm{\vect{v}}^2 - \norm{\vect{w}}^2$.
+:description: To show that &nbsp;$(\vect{v}+\vect{w})\ip(\vect{v}-\vect{w}) = \norm{\vect{v}}^2 - \norm{\vect{w}}^2$.
 
 ::::
 
@@ -1545,7 +1550,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 :url: https://embed.grasple.com/exercises/c4d2743f-5f14-4812-9531-1a40c28c15cb?id=62413
 :label: grasple_exercise_1_2_17
 :dropdown:
-:description: To prove that $(\vect{v}+\vect{w})\ip\vect{x} = \vect{v}\ip\vect{x}+\vect{w}\ip\vect{x}$.
+:description: To prove that &nbsp;$(\vect{v}+\vect{w})\ip\vect{x} = \vect{v}\ip\vect{x}+\vect{w}\ip\vect{x}$.
 
 ::::
 
@@ -1553,7 +1558,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 :url: https://embed.grasple.com/exercises/407cb45d-2baf-4b0d-a1eb-6e51186e19f3?id=69738
 :label: grasple_exercise_1_2_18
 :dropdown:
-:description: What to conclude from $\norm{\vect{v}+\vect{w}} = \norm{\vect{v}}+\norm{\vect{w}}$?
+:description: What to conclude from &nbsp;$\norm{\vect{v}+\vect{w}} = \norm{\vect{v}}+\norm{\vect{w}}$?
 
 ::::
 
@@ -1561,14 +1566,15 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 :url: https://embed.grasple.com/exercises/c4c1c609-b1dd-4588-865f-53d7e8221f88?id=62689
 :label: grasple_exercise_1_2_19
 :dropdown:
-:description: To prove that $-1 \leq \dfrac{\vect{u}\ip\vect{u}}{\norm{\vect{u}}\,\norm{\vect{v}}} \leq  1$.
+:description: To prove that $-1 \leq \dfrac{\vect{u}\ip\vect{v}}{\norm{\vect{u}} \norm{\vect{v}}} \leq  1$.
 
 ::::
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/2a2423c3-0907-40b7-bd5f-7607baf7cc09?id=62668
-:label: grasple_exercise_1_2_20
+:label: grasple*exercise_1_2_20
 :dropdown:
-:description: What to conclude from $\text{proj}*{\mathbf{v}}(\mathbf{w*1} ) = \text{proj}\_{\mathbf{v}}(\mathbf{w}_2)$?
+:description: What to conclude
+from $\text{proj}*{\mathbf{v}}(\mathbf{w}_1 ) = \text{proj}_{\mathbf{v}}(\mathbf{w}\_2)$?
 
 ::::

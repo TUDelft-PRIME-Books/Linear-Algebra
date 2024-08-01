@@ -14,7 +14,7 @@ The determinant as a uniform scale factor for an arbitrary linear transformation
 
 <li>
 
-Cramer's rule. Seemingly the ultimate solution to almost all systems of $n$ linear equations in $n$ unkowns.
+Cramer's rule. Seemingly the ultimate solution to almost all systems of $n$ linear equations in $n$ unknowns.
 
 </li>
 <li>
@@ -169,7 +169,7 @@ For a general (reasonable) region $R$ we sketch the idea and omit the technical 
 
 The region $R$ can be approximated arbitrarily close by a collection of smaller and smaller squares $R_i$ of which the interiors do not overlap.
 See {numref}`Figure %s <Fig:DetExtras:Subdivision>`.
-The limit of the area of these aproximations when the grid get finer and finer gives the area of $R$.
+The limit of the areas of these approximations when the grids get finer and finer gives the area of $R$.
 
 ::::{figure} Images/Fig-DetExtras-Subdivision.svg
 :name: Fig:DetExtras:Subdivision
@@ -231,7 +231,7 @@ $$
  \end{array}
 $$
 
-For a more general region $R$ we would again have to work with approximations/subdivisions like in the proof of {prf:ref}`Prop:DetExtras:ScaleFactorR2`. Then we would first have to extend the definition of $n$-dimensional volume. We will not pursuit that track.
+For a more general region $R$ we would again have to work with approximations/subdivisions like in the proof of {prf:ref}`Prop:DetExtras:ScaleFactorR2`. Then we would first have to extend the definition of $n$-dimensional volume. We will not pursue that track.
 
 ::::::
 
@@ -441,7 +441,7 @@ By the linearity property (in all of the columns) of the determinant ({prf:ref}`
 :::{math}
 :label: Eq:DetExtras:ProofCramer
 
-c_1\det{(A)} + c_2\det{(A^{(1)}(\vect{a}\_2))} + \ldots + c_n\det{(A^{(1)}(\vect{a}\_n))} - \det{(A^{(1)}(\vect{b}))} = 0.
+c_1\det{(A)} + c_2\det{(A^{(1)}(\vect{a}_2))} + \ldots + c_n\det{(A^{(1)}(\vect{a}_n))} - \det{(A^{(1)}(\vect{b}))} = 0.
 
 :::
 
@@ -469,7 +469,7 @@ Cramer's formula seems the solution to all your linear systems. However, it has 
 
 <u>Disclaimer 1</u> &nbsp; Cramer's formula can only be used for a **square** linear system with an **invertible** matrix.
 
-<u>Disclaimer 2</u> &nbsp; For a system with two equations in two unknowns Cramer's rule may come in handy, but for solving larger systems it is **highly inefficient**. For instance, for a system of four equations in four unknowns, to find the solution using Cramer's rule, one needs to compute five $4 \times 4$ determinants. Using the good-old method using the augmented matrix $[\,A\,|\,\vect{b}\,]$ only asks for one row reduction process.
+<u>Disclaimer 2</u> &nbsp; For a system with two equations in two unknowns Cramer's rule may come in handy, but for solving larger systems it is **highly inefficient**. For instance, for a system of four equations in four unknowns, to find the solution using Cramer's rule, one needs to compute five $4 \times 4$ determinants. The good-old method using the augmented matrix $[\,A\,|\,\vect{b}\,]$ only asks for one row reduction process.
 
 ::::::
 
@@ -603,6 +603,7 @@ provided that $A$ is invertible.
 In fact a slightly more general formula holds for **any** square matrix.
 
 ::::::{prf:proposition}
+:label: Prop:DetExtras:AdjointProperty
 
 For any square matrix $A$ the following identity holds:
 
@@ -616,7 +617,7 @@ For clarity we used dots to indicate products. Note that the first two products 
 
 The proof we think, is short and instructive.
 
-::::::{prf:proof}
+::::::{dropdown} Proof of&nbsp;{prf:ref}`Prop:DetExtras:AdjointProperty`
 
 For an invertible matrix the statement follows immediately from {prf:ref}`Prop:DetExtras:Inverse`.
 
@@ -877,7 +878,7 @@ $$
 By taking inner products, or by computing $A^T\vect{n}$, it is checked that indeed
 $\vect{n} \perp \vect{a}_i$ for each column $\vect{a}_i$. So property i. of {prf:ref}`Prop:DetExtras:Properties-ndimCrossProd` is satisfied.
 
-Since the three columns are orthogonal, the 'rectangular box' in $\R^4$ they generate will have 3-volume
+Since the three columns are orthogonal, the 'rectangular box' in $\R^4$ they generate will have 3d-volume
 
 $$
    \norm{\vect{a}_1} \cdot \norm{\vect{a}_2} \cdot \norm{\vect{a}_3} =
@@ -896,7 +897,7 @@ so property iv. is satisfied too.
 
 We end the chapter with a proof of {prf:ref}`Prop:DetExtras:Properties-ndimCrossProd`.
 <BR>
-So, if you are interested,  push the  $\vee$  button on the right.
+So, if you are interested,  push the button on the right.
 
 ::::::{dropdown} Proof of&nbsp;{prf:ref}`Prop:DetExtras:Properties-ndimCrossProd`
 

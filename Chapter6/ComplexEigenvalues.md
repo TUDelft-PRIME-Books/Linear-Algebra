@@ -40,13 +40,13 @@ $$
 $$
 
 where the row operation we invoke is: add the second row $(1+i)$ times to the first row.
-The blue 0 is the result of the calculation of
+The blue {\color{blue}0} is the result of the evaluation of
 
 $$
 -2 + (1+i)(1-i).
 $$
 
-We can read off a solution (i.e., complex eigenvector) &nbsp;
+We can read off a solution (i.e., complex eigenvector): &nbsp; 
 $\vect{v} = \left[\begin{array}{c}  -1+i \\1 \end{array}\right]$.
 
 To check that we have indeed an eigenvector is also slightly more involved than in the real case.
@@ -95,12 +95,10 @@ $$
  = (1+i)\vect{v},
 $$
 
-so the two vectors are complex multiples of each other, and hence are not linearly independent.
+so the two vectors are *complex* multiples of each other, and hence are not linearly independent.
 
 For the other eigenvalue we can proceed in the same manner and find (for instance) the eigenvector
-
-<!-- prettier-ignore -->
-$\vect{v}_2 =\left[\begin{array}{c} -2 \\ 1-i \end{array}\right] $.
+&nbsp; $\vect{v}_2 =\left[\begin{array}{c} -2 \\ 1-i \end{array}\right] $.
 
 :::::
 
@@ -109,7 +107,7 @@ that is, if we define the complex conjugate of a vector component wise.
 
 ## Vectors and matrices with complex entries
 
-We need a few definitions to settle matters a bit more formally. In the remainder of this section matrices (so in particular vectors) are allowed to have as entries complex numbers. If the entries are supposed to be real numbers we explicitly state this by speaking of a real matrix (or a real vector).
+We need a few definitions to settle matters a bit more formally. In the remainder of this section matrices (so in particular vectors) are allowed to have complex numbers as entries. If the entries are supposed to be real numbers we explicitly state this by speaking of a real matrix (or a real vector).
 
 ::::::{prf:definition}
 :label: Dfn:ComplexEV:Conjugate
@@ -159,7 +157,7 @@ With this we can put the outcomes in {prf:ref}`Ex:ComplexEV:FirstExample` in a b
 :label: Prop:ComplexEV:Conjugation
 
 Suppose $A$ is a _real_ matrix, and $\lambda = \alpha + \beta i$, with $\beta \neq 0$, is an eigenvalue of $A$.
-Then the following properties hold
+Then the following properties hold:
 
 <ol type = "i">
 <li>
@@ -170,9 +168,6 @@ $\overline{\lambda} = \alpha - \beta i$ is an eigenvalue too.
 <li>
 
 If $\vect{v} = \vect{u}+i\vect{w}$, where $\vect{u}$ and $\vect{w}$ are real vectors, is an eigenvector
-
-<BR>
-
 for $\lambda$, then
 $\overline{\vect{v}} = \vect{u}-i\vect{w}$ is an eigenvector for $\overline{\lambda}$.
 
@@ -210,7 +205,7 @@ This states exactly that $A$ has the eigenvalue $\overline{\lambda} = \alpha - \
 
 ::::::
 
-Things look especially simple in the next example
+Things look especially simple in the next example.
 
 ::::::{prf:example}
 :label: Ex:ComplexEV:abba
@@ -363,7 +358,7 @@ Comparing real and imaginary parts we conclude that indeed
 
 \begin{cases}
 A\vect{u} = \alpha\vect{u} + \beta\vect{w} \\
-A\vect{w} = -\beta\vect{u} + \alpha\vect{w}
+A\vect{w} = -\beta\vect{u} + \alpha\vect{w}.
 \end{cases}
 
 :::
@@ -374,7 +369,7 @@ If we apply the above to the case $n = 2$, we can rewrite equation {eq}`Eq:Compl
 as
 
 $$
-A [\,\vect{u}\,\, \vect{w}\,] = [\,\vect{u}\,\, \vect{w}\,] \left[\begin{array}{cc} \alpha & -\beta \\ \beta & \alpha \end{array}\right]
+A [\,\vect{u}\,\, \vect{w}\,] = [\,\vect{u}\,\, \vect{w}\,] \left[\begin{array}{cc} \alpha & -\beta \\ \beta & \alpha \end{array}\right].
 $$
 
 So if we define $P$ to be the matrix $[\,\vect{u}\,\, \vect{w}\,]$ then we have $AP = PC$, where
@@ -405,7 +400,7 @@ C = r\left[\begin{array}{cc} \cos(\varphi) & -\sin(\varphi) \\ \sin(\varphi) & \
 .
 $$
 
-We can formulated this as there being a **hidden rotation** in $A$.
+We can formulate this as there being a **hidden rotation** in $A$.
 
 ::::::
 
@@ -423,7 +418,7 @@ Let us illustrate matters with the following example.
 
 The matrix $A = \left[\begin{array}{cc} 1 & -2 \\ 1 & 3  \end{array}\right]$
 of {prf:ref}`Ex:ComplexEV:FirstExample`
-has the eigenvalue $\lambda = \alpha + \beta i = 2 + i$.
+has the eigenvalues $\lambda_{1,2} = \alpha \pm \beta i = 2 \pm i$.
 An eigenvector for $2-i$ is given by
 
 $$
@@ -432,7 +427,7 @@ $$
  + i\left[\begin{array}{c} 0 \\ -1  \end{array}\right].
 $$
 
-We check the identity
+Let us establish the identity
 
 $$
 P^{-1}AP = \left[\begin{array}{cc} \alpha & -\beta \\ \beta & \alpha \end{array}\right] = \left[\begin{array}{cc} 2 & -1 \\ 1 & 2 \end{array}\right].
@@ -550,7 +545,7 @@ Since the real numbers are contained in the complex numbers, a matrix that is re
 </li>
 <li>
 
-The definition also makes sense for matrices with complex numbers as entries. However, we will not pursuit that track.
+The definition also makes sense for matrices with complex numbers as entries. However, we will not pursue that track.
 
 </li>
 </ul>
@@ -618,7 +613,7 @@ A matrix $A$ is complex diagonalizable if and only if for each eigenvalue the ge
 :url: https://embed.grasple.com/exercises/f60a57c2-b0b3-45de-b18c-e0da1bbef601?id=91555
 :label: grasple_exercise_6_4_6
 :dropdown:
-:description:  Given a complex  eigenvector of a real $2 \times$ matrix, point out other eigenvectors.
+:description:  Given a complex  eigenvector of a real 2x2 matrix, point out other eigenvectors.
 ::::::
 
 ::::::{grasple} 

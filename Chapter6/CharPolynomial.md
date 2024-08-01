@@ -71,7 +71,7 @@ $$
 \begin{vmatrix} 0-\lambda & -1\\ 1 & 0-\lambda \end{vmatrix} =  \lambda^2 +1.
 $$
 
-Since this polynomial has no zeros, the matrix $A$ has no eigenvalues. We have already seen a geometric argument when we considered this matrix in Example {prf:ref}`Ex:EigenValues:Rotation`: $R$ is the matrix of a rotation.
+Since this polynomial has no zeros, the matrix $A$ has no eigenvalues. We have already seen a geometric argument when we considered this matrix in {prf:ref}`Ex:EigenValues:Rotation`: $R$ is the matrix of a rotation.
 
 In the remark immediately after that example we mentioned that it is possible to treat $\lambda = \pm i$ as eigenvalues of the matrix $R$. Of course these are exactly the _complex_ zeros of the polynomial $p(\lambda) = \lambda^2 + 1$.
 
@@ -105,7 +105,7 @@ So for a $3 \times 3$ upper triangular matrix the eigenvalues are the diagonal e
 
 ::::::
 
-Obviously {prf:ref}`Ex:EigenValues:TriangularMatrix` can be generalized. Which leads to the following proposition.
+Obviously {prf:ref}`Ex:EigenValues:TriangularMatrix` can be generalized. This leads to the following proposition.
 
 ::::::{prf:proposition}
 :label: Prop:EigenValues:TriangularMatrix
@@ -281,14 +281,14 @@ contains two factors $(\lambda - 3)$ and only one factor $(\lambda - 2)$. In alg
 Another natural question is how many linearly **independent** eigenvectors  there are for an eigenvalue $\lambda$.  This we will refer to as the geometric multiplicity.
 
 (Subsec:EV:AlgGeomMultiplicity)=
-## Algebraic and geometric muliplicity
+## Algebraic and geometric multiplicity
 
 ::::::{prf:definition}
 
-The **algebraic multiplicity** of an eigenvalue $\lambda_k$ is the number of factors $(\lambda - \lambda_k)$ appearing in the characteristic polynomial. It is often abbreviated as **a.m.**($\lambda$).
+The **algebraic multiplicity** of an eigenvalue $\lambda_k$ is the number of factors $(\lambda - \lambda_k)$ appearing in the characteristic polynomial. It is often abbreviated as **a.m.**($\lambda_k$).
 
 The **geometric multiplicity** of an eigenvalue $\lambda_k$, with short 
-notation **g.m.**($\lambda$),   is the dimension of the eigenspace corresponding to $\lambda_k$. In other words, it is the number of independent eigenvectors for $\lambda_k$.
+notation **g.m.**($\lambda_k$),   is the dimension of the eigenspace corresponding to $\lambda_k$. In other words, it is the number of independent eigenvectors for $\lambda_k$.
 
 
 ::::::
@@ -299,12 +299,12 @@ notation **g.m.**($\lambda$),   is the dimension of the eigenspace corresponding
 We continue with the matrix
 $A = \left[\begin{array}{ccc} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1  \end{array}\right]$
 of {prf:ref}`Ex:EigenValues:SecondCharPoly` and find the geometric multiplicities of the eigenvalues.
-We have seen that $A$ has the eigenvalues $\lambda_1 = 3$ with algebraic multiplicity $2$
+The characteristic polynomial of $A$ was found to be $p_A(\lambda) = (3-\lambda)^2(2-\lambda)$, so $A$ has the eigenvalues $\lambda_1 = 3$ with algebraic multiplicity $2$
 and $\lambda_2 = 2$ with algebraic multiplicity $1$.
 
 To find the geometric multiplicities we proceed as follows.
 
-The eigenspace for $\lambda_{1}$ is the nulspace of $A - \lambda_{1} I = A -3I$.
+The eigenspace for $\lambda_{1}$ is the null space of $A - \lambda_{1} I = A -3I$.
 
 $$
 A - 3I = \left[\begin{array}{ccc} 4-3 & -1 & -2 \\0 & 3-3 & 0 \\ 1 & 2 & 1-3  \end{array}\right]
@@ -315,7 +315,7 @@ A - 3I = \left[\begin{array}{ccc} 4-3 & -1 & -2 \\0 & 3-3 & 0 \\ 1 & 2 & 1-3  \e
 .
 $$
 
-This is a $3 \times 3$ matrix of rank 2, so its nulspace has dimension $3-2 =1$, and we conclude that the geometric multiplicity of the eigenvalue
+This is a $3 \times 3$ matrix of rank 2, so its null space has dimension $3-2 =1$, and we conclude that the geometric multiplicity of the eigenvalue
 $\lambda = 3$ is equal to 1.
 For the other eigenvalue we perform a similar computation:
 
@@ -332,18 +332,27 @@ from which we deduce that the geometric multiplicity of the eigenvalue $\lambda 
 
 ::::::
 
-At this moment it is not so easy to prove the following proposition, of which the previous example gives an illustration.
+At this moment it is not so easy to prove the following proposition, of which the previous example gives an illustration. 
+(For the proof: see the section 'Similar Matrices',  right after formula {eq}`Eq:Diagonalizable:GeomMultversusAlgMult`.)
 
 ::::::{prf:proposition}
 :label: Prop:EigenValues:SmallerGeomMultiplicity
 
 For every eigenvalue of a matrix $A$, the geometric multiplicity is at most equal to the algebraic multiplicity. So we always have
 
-$1 \quad \leq \quad$ geometric multiplicity of $\lambda \quad \leq\quad $  algebraic multiplicity of $\lambda$.
+&nbsp; &nbsp; $1$ &nbsp; $\leq$ &nbsp;  geometric multiplicity of $\lambda$  &nbsp; $\leq$ &nbsp;  algebraic multiplicity of $\lambda$.
 
 ::::::
 
-As a consequence of this proposition there is one case where the geometric multiplicity follows immediately from the algebraic multiplicity.
+::::::{prf:definition}
+:label: Def:Eigenvalues:Defect
+
+A matrix $A$ that has an eigenvalue $\lambda$ for which the geometric multiplicity is *strictly smaller* than the algebraic multiplicity  is called a **defect** matrix.
+::::::
+
+
+
+As a consequence of {prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity` there is one case where the geometric multiplicity follows immediately from the algebraic multiplicity.
 Namely, if $\lambda$ is an eigenvalue of algebraic multiplicity 1, then the geometric multiplicity must be 1 too: it cannot be larger, because of {prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity`, and it cannot be smaller either, since for any eigenvalue there must be at least one eigenvector.
 
 ::::::{prf:example}
@@ -379,7 +388,7 @@ The following exercise, which is meant to shed some more light on the concepts j
 ## Some special properties of the characteristic polynomial
 
 In the proof of {prf:ref}`Prop:EigenValues:CharPoly` it was mentioned that for an $n \times n$ matrix $A$ the coefficient of the highest power $\lambda^n$  is equal to  $(-1)^n$.
-In thhis subsection we will find expressions for two other coefficients of the characteristic polynomial. The results we mention are interesting in themselves, but they are not essential for the sequel.
+In this subsection we will find expressions for two other coefficients of the characteristic polynomial. The results we mention are interesting in themselves, but they are not essential for the sequel.
 
 ::::::{prf:proposition}
 :label: Prop:EigenValues:CharPolyTrace
@@ -459,7 +468,7 @@ a_{31}  & a_{32}  \end{array}\right|.
 $$
 
 The highest power of $\lambda$ coming from the second and the third terms is $\lambda^1$, so the coefficients of $\lambda^3$ and of $\lambda^2$
-are completely determined by the first term. A closer look at that term yields that these two coefficients in fact come from the product $(a_{11}-\lambda)(a_{22}-\lambda)(a_{33}-\lambda)$. For a general $n\times n$ matrix $A$ the first two coefficients also come from the 'diagonal product' of $\det{(A - \lambda I)}$.
+are completely determined by the first term. A closer look at that term yields that these two coefficients in fact come from the product $(a_{11}-\lambda)(a_{22}-\lambda)(a_{33}-\lambda)$. For a general $n\times n$ matrix $A$ the first two coefficients also come from the 'diagonal product' of the complete expansion of $\det{(A - \lambda I)}$.
 
 Expanding this product further we see that
 
@@ -539,7 +548,7 @@ Equation {eq}`Eq:Eigenvalues:SumEigenvaluesAndTrace`.
 
 ::::::
 
-The identity involving the sum gives a easy check on the eigenvalues; with the other identity one has to do some work to apply it for a check. The next example gives an illustration.
+The identity involving the sum gives an easy check on the eigenvalues; with the other identity one has to do some work to apply it for a check. The next example gives an illustration.
 
 ::::::{prf:example}
 :label: Ex:Eigenvalues:SumEigenvaluesAndTrace
@@ -567,7 +576,7 @@ The last  'mind blowing' property of the characteristic polynomial we will only 
 :label: Ex:Eigenvalues:CayleyHamilton
 
 Consider the matrix $A = \begin{bmatrix} 1 & 2 \\ 4 & 5 \end{bmatrix}$.
-Its characterictic polynomial is computed as
+Its characteristic polynomial is computed as
 
 $$
   \det{(A-\lambda I)} = \begin{vmatrix} 1-\lambda & 2 \\ 3 & 5-\lambda \end{vmatrix}
@@ -695,7 +704,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 :url: https://embed.grasple.com/exercises/e9044c04-4bfb-474e-8823-bff6449b92ab?id=92210
 :label: grasple_exercise_6_2_10 
 :dropdown:
-:description:  To find the the geometric multiplicity of the single eigenvalue of an almost diagonal matrix $A$.
+:description:  To find the geometric multiplicity of the single eigenvalue of an almost diagonal matrix $A$.
 
 ::::::
 
@@ -704,7 +713,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 :url: https://embed.grasple.com/exercises/82387c7b-49c8-4438-b72c-e1d023fb2780?id=92211
 :label: grasple_exercise_6_2_11
 :dropdown:
-:description:  To find the the geometric multiplicities of the eigenvalues of an almost diagonal matrix $A$.
+:description:  To find the geometric multiplicities of the eigenvalues of an almost diagonal matrix $A$.
 
 ::::::
 
