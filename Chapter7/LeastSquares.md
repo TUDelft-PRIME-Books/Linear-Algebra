@@ -93,7 +93,7 @@ $$
 What we can do if the linear system is inconsistent, thus if
 
 $$
-  \vect{b} \neq \Span{\vect{a}_1, ... , \vect{a}_n},
+  \vect{b} \notin \Span{\vect{a}_1, ... , \vect{a}_n},
 $$
 
 is to try to find the _best approximation_ of the vector $\vect{b}$ with a vector in
