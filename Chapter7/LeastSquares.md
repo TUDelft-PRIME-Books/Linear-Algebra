@@ -96,7 +96,7 @@ $$
   \vect{b} \notin \Span{\vect{a}_1, ... , \vect{a}_n},
 $$
 
-is to try to find the _best approximation_ of the vector $\vect{b}$ with a vector in
+is try to find the _best approximation_ of the vector $\vect{b}$ with a vector in
 $\Span{\vect{a}_1, ... , \vect{a}_n}$. This is the idea behind the following definition.
 
 ::::{prf:definition}

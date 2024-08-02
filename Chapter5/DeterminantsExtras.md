@@ -302,7 +302,7 @@ $$
 Images under transformations with negative and positive determinant.
 :::
 
-The images of a unit vector that rotates counterclockwise under transformation $B$ move around clockwise, i.e., in the opposite orientation/direction. Under transformation $A$ the images will go around the origin counterclockwise.
+The images of a unit vector that rotates counterclockwise under transformation $A$ move around clockwise, i.e., in the *opposite* orientation/direction. Under transformation $B$ the images will go around the origin counterclockwise, i.e., in the *same* direction as the original vectors.
 
 ::::
 
@@ -993,8 +993,7 @@ $$
 \end{array}
 $$
 
-and the already established fact that $\vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1}) \neq \vect{0}$  
-if $\{\vect{a}_1,\, \ldots\,,\, \vect{a}_{n-1}\}$ is linearly independent.
+and the already established fact that $\vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1}) \neq \vect{0}$  if $\{\vect{a}_1,\, \ldots\,,\, \vect{a}_{n-1}\}$ is linearly independent.
 
 </li>
 <li>

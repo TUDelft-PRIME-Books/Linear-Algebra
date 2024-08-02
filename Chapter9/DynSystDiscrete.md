@@ -188,7 +188,7 @@ Since $(\vect{v}_1, \ldots, \vect{v}_n)$ is assumed to be a basis, each vector $
 :::{math}
 :label: Eq:DynSystDiscrete:InitCoords
 
-$\vect{s} =  c_1\vect{v}_1 + c_2\vect{v}_2 +  \ldots + c_n\vect{v}_n.$
+\vect{s} =  c_1\vect{v}_1 + c_2\vect{v}_2 +  \ldots + c_n\vect{v}_n.
 :::
 
 for some constants (coefficients) $c_1, \ldots, c_n$ in $\R$.
@@ -793,7 +793,7 @@ The **Fibonacci sequence** $f_0,f_1,f_2, \ldots$ is defined via
 :::{math}
 :label: Eq:DynSystDiscrete:DfnFibo
 
-f*0 = 0, \, f_1 = 1, \,\, f*{n+1} = f*n + f*{n-1},\,\,\,n = 1,2,\ldots
+f_0 = 0, \, f_1 = 1, \,\, f_{n+1} = f_n + f_{n-1},\,\,\,n = 1,2,\ldots
 :::
 
 So the first thirteen terms of the sequence are
