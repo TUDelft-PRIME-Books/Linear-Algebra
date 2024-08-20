@@ -21,7 +21,7 @@ The matrix $A$ is invertible if and only if $\det{A} \neq 0$ .
 ## How Row Operations affect a Determinant
 
 We have seen in {numref}`Sec:DeterminantsViaCofactors` that the cofactor expansion of an $n \times n$ determinant works best using a row (or a column) with many, preferably $n-1$, zeros. When solving a linear system, or finding the inverse of a matrix, we have seen how to create zeros via row reduction. The important thing: row reducing an augmented matrix does not alter the solution(s) of the corresponding linear system. The next proposition
-describes the effect of row operations on a determinant.
+describes the effects of row operations on a determinant.
 
 ::::::{prf:proposition} How row operations affect a determinant
 :label: Prop:DetRowReduction:RowOps
@@ -48,7 +48,7 @@ When two rows of $A$ are swapped, the determinant changes sign.
 
 ::::::
 
-We postpone the proof till the end of this section and first look at examples and a few consequences.
+We postpone the proof until the end of this section and first look at examples and a few consequences.
 
 ::::::{prf:example}
 :label: Ex:DetRowReduction:RowOps
@@ -155,7 +155,11 @@ we see that in all three cases we have that
 
 \det{(E_iA)} = \det{E_i} \cdot \det{A}.
 
+
 :::
+
+Since every row operation can be performed using the product with an elementary matrix,
+a consequence of {prf:ref}`Prop:DetRowReduction:RowOps` is that Equation {eq}`Eq:DetRowReduction:ElementaryMatrices` holds for *any* product of an elementary $n \times n$ matrix $E$ with an arbitrary $n \times n$ matrix $A$.
 
 These are the basics for the general product rule we will see later, which states that
 
@@ -209,8 +213,10 @@ $$
 \det{A} = \text{det}\big(A^T\big)
 $$
 
-every rule involving row operations may be transformed into a rule about column operations. It is here that computing a determinant differs strikingly from the reduction of an (augmented) matrix to an echelon matrix. Another, more subtle difference is that
+every rule involving row operations may be transformed into a rule about column operations. It is here that computing a determinant differs strikingly from the reduction of a (for instance augmented) matrix to an echelon matrix. Another, more subtle difference is that
 a row operation applied to a matrix leads to an **equivalent** matrix, which we denote by the symbol $\sim$, whereas row or column operations on a determinant give **equal values** all the time. So then we write $=$.
+
+Note that in Rule i. of {prf:ref}`Prop:DetRowReduction:RowOps` the factor $c$ may be zero. This is also a slight difference to the scaling operation we used when row reducing a matrix.  There the scaling factor must be *nonzero*.
 
 ::::::
 
@@ -267,40 +273,6 @@ $$
 
 ::::::
 
-::::::{exercise}
-:label: Exc:DetRowReduction:EqualRows
-
-Give an alternative proof of {prf:ref}`Cor:DetRowReduction:EqualRows` using Rule i. and Rule ii. of {prf:ref}`Prop:DetRowReduction:RowOps`.
-
-::::::
-
-::::::{dropdown} Solution to&nbsp;{numref}`Exc:DetRowReduction:EqualRows`&nbsp;(_click to show_)
-
-Suppose $A$ is a matrix with two equal rows, say row $i$ and row $j$ are equal.
-
-If we subtract the $i$th row from the $j$th row, we get a matrix $A_2$ with $j$th row equal to zero, and with det$(A_2) = $ det$(A)$. If we take the factor $0$ out, we see that det$(A_2) = 0$.
-
-For instance, with a $4\times 4$ matrix with equal second and fourth row we would have
-
-$$
-  \begin{vmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\
-                  \color{blue}a_{21} & \color{blue}a_{22} & \color{blue}a_{23} & \color{blue}a_{24} \\
-                  a_{31} & a_{32} & a_{33} & a_{34} \\
-                  \color{blue}a_{21} & \color{blue}a_{22} & \color{blue}a_{23} & \color{blue}a_{24}
-                  \end{vmatrix} =
-                  \begin{vmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\
-                  a_{21} & a_{22} & a_{23} & a_{24} \\
-                  a_{31} & a_{32} & a_{33} & a_{34} \\
-                  \color{blue}0 & \color{blue}0 &\color{blue} 0 & \color{blue}0
-                  \end{vmatrix} =
-                  {\color{blue}0}\begin{vmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\
-                  a_{21} & a_{22} & a_{23} & a_{24} \\
-                  a_{31} & a_{32} & a_{33} & a_{34} \\
-                  \ast & \ast &\ast &\ast
-                  \end{vmatrix} = 0.
-$$
-
-::::::
 
 ## Determinants versus Invertibility
 
@@ -317,9 +289,11 @@ $$
 
 ::::::
 
-The proof is -- we think -- quite instructive.
+The proof is -- we think -- quite instructive.  (However, feel free to skip it.)
 
-::::::{prf:proof}
+
+::::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:DetRowReduction:Invertibility`
+
 
 In the previous section we have already seen that the statement is true for triangular matrices.
 
@@ -345,7 +319,7 @@ $$
 \det{\left(E_kE_{k-1}\cdots E_1A\right)}=  c_1\cdots c_m \cdot (-1)^{\ell} \det{A}  = \alpha \det{A},
 $$
 
-with $\alpha \neq 0$.
+with $\alpha = c_1\cdots c_m \cdot (-1)^{\ell} \neq 0$.
 
 So if $E_kE_{k-1}\cdots E_1A = F$, where $F$ is an echelon matrix, we see that
 
@@ -361,6 +335,7 @@ $$
 
 ::::::
 
+
 ::::::{prf:theorem}
 :label: Thm:DetRowReduction:ProductRule
 
@@ -372,7 +347,7 @@ $$
 
 ::::::
 
-The proof combines the property that for elementary matrices $A$ it is already shown that  $\det{(EA)} = \det{E}\cdot\det{A}$  (Equation {eq}`Eq:DetRowReduction:ElementaryMatrices`).  For more details you can push on $\vee$ below.
+The idea of the proof is to break it down to products of the form  $\det{(EA)} = \det{E}\cdot\det{A}$, where $E$ is an elementary matrix  (Equation{eq}`Eq:DetRowReduction:ElementaryMatrices`).  For more details you open the proof below.
 
 ::::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:DetRowReduction:ProductRule`.
 
@@ -424,9 +399,9 @@ If the matrix $A$ is invertible, then $\text{det}\big(A^{-1}\big)= \dfrac{1}{\de
 We can combine the three properties
 
 i. $AA^{-1} = I$, &nbsp; ii. $\det{(AA^{-1})} = \det{A}\det{\left(A^{-1}\right)}$
-&nbsp; and &nbsp; iii. $\det{I} = 1$.
+&nbsp; and &nbsp; iii. $\det{I} = 1$
 
-As follows:
+as follows:
 
 $$
 \text{det}(A)\text{det}\left(A^{-1}\right)
@@ -471,6 +446,7 @@ $$
 $$
 
 </li>
+
 <li>
 
 For each $n \times n$ matrix $A$ it holds that
@@ -479,6 +455,18 @@ For each $n \times n$ matrix $A$ it holds that
 
 $$
 \det{(-A)} = -\det{A}.
+$$
+
+</li>
+
+<li>
+
+For each $n \times n$ matrix $A$ and each real number $k$ it holds that
+
+<BR>
+
+$$
+\det{(kA)} = k^n\det{A}.
 $$
 
 </li>
@@ -494,7 +482,8 @@ We treat the statements one by
 
 <li>
 
-For each $n \times n$ matrix $A$ it holds that $\text{det}\big(A^k\big)= \big(\det{A}\big)^k$. 
+Is it true that for each $n \times n$ matrix $A$ it holds that $\text{det}\big(A^k\big)= \big(\det{A}\big)^k$? 
+
 This is true, and follows from repeatedly using the property $\det(AB) = \det(A)\det(B)$. Namely,
 
 <BR>
@@ -507,12 +496,12 @@ $$
 </li>
 <li>
 
-For each two $n \times n$ matrices $A$ and $B$ it holds that
+Is it true that for each two $n \times n$ matrices $A$ and $B$ it holds that
 
 <BR>
 
 $$
-\det{(A+B)} = \det{A}+\det{B}.
+\det{(A+B)} = \det{A}+\det{B}?
 $$
 
 This statement is false. A trivial counterexample is given by $A = B = I_n$, for $n \geq 2$. Namely, for these matrices we see that
@@ -524,25 +513,58 @@ $$
 $$
 
 </li>
+
 <li>
 
-For each $n \times n$ matrix $A$ it holds that
+Is it true that for each $n \times n$ matrix $A$ and each real number $k$ it holds that
 
 <BR>
 
 $$
-\det{(-A)} = -\det{A}.
+\det{(kA)} = k^n\det{A}?
 $$
 
-This is not true in general. The correct statement would be: for an $n \times n$ matrix $A$ <BR>
+This is true. One way to prove it is to write  $kA = (kI)A$, where 
+
+<BR>
 
 $$
-  \det{(-A)} = (-1)^n\det{(A)}.
+   kI = \begin{bmatrix}k & 0 & 0 &\cdots & 0 \\
+                       0 & k & 0 &\cdots & 0 \\
+                       0 & 0 & k &\cdots & 0 \\
+                       \vdots &  \vdots &\vdots &  \ddots & \vdots \\
+                       0 & 0 & 0 &\cdots & k  \end{bmatrix}.
 $$
 
-One way to see this is true is to write $-A = (-I)A$ and use the product rule ({prf:ref}`Thm:DetRowReduction:ProductRule`).
+So we find
+
+$$
+  \det{(kA)}  = \det{(kI)}\cdot\det{(A)} = k^n \det{(A)}. 
+$$
 
 </li>
+
+<li>
+
+Is it true that $\text{det}(-A)= -\det{(A)}$ for each $n \times n$ matrix $A$?
+
+
+This is not true in general.  Taking $k = -1$ in the previous statement we see that 
+
+<BR>
+
+$$
+  \det{(-A)} = \det{(-1)A} = (-1)^n\det{(A)}.
+$$
+
+A specific example:  for  $A = I$ it holds that 
+
+$$
+ \text{det} (-A) = \begin{vmatrix} -1 & 0 \\ 0 & -1 \end{vmatrix} = (-1)^2 \begin{vmatrix} 1 & 0 \\ 0 & 1 \end{vmatrix} = \begin{vmatrix} 1 & 0 \\ 0 & 1 \end{vmatrix} = \text{det} (A).
+$$
+</li>
+
+
 </ol>
 
 ::::::
@@ -574,7 +596,7 @@ Then
 
 ::::::
 
-So, click on $\vee$ on the right  for the proof of {prf:ref}`Prop:DetRowReduction:RowOps` and {prf:ref}`Prop:DetRowReduction:SumofCols`.
+Click on the symbol to the right below for the proof of {prf:ref}`Prop:DetRowReduction:RowOps` and {prf:ref}`Prop:DetRowReduction:SumofCols`.
 
 ::::::{dropdown} Proof of&nbsp;{prf:ref}`Prop:DetRowReduction:RowOps`&nbsp;and&nbsp;{prf:ref}`Prop:DetRowReduction:SumofCols`.
 
@@ -585,7 +607,7 @@ For an $n \times n$ matrix
 
 $$
 
- A = [\vect{a}_1 \,\,\vect{a}_2  \,\,\ldots\,\, \vect{a}_n]
+ A = [\vect{a}_1 \,\,\vect{a}_2  \,\,\ldots\,\,\vect{a}_j  \,\,\ldots\,\,\vect{a}_k   \,\,\ldots\,\, \vect{a}_n]
 $$
 
 the rules can then be formulated as
@@ -595,7 +617,7 @@ the rules can then be formulated as
 
 - $\det{[\vect{a}_1   \,  \vect{a}_2  \,  \ldots \, c \vect{a}_k  \,    \ldots  \,   \vect{a}_n]} = c  \det{A}$;
 
-- $\det{[\vect{a}_1  \,  \ldots  \,   \vect{a}_k  \,    \ldots  \,   \vect{a}_j  \,   \ldots \,   \vect{a}_n]} = - \det{A}$;
+- $\det{[\vect{a}_1  \,  \ldots  \,   \vect{a}_k  \,    \ldots  \,   \vect{a}_j  \,   \ldots \,   \vect{a}_n]} = - \det{[\vect{a}_1  \,  \ldots  \,   \vect{a}_j  \,    \ldots  \,   \vect{a}_k  \,   \ldots \,   \vect{a}_n]}$;
 
 - $\det{[\vect{a}_1 \,  \ldots   \,  \vect{a}_j   \,   \ldots  \,   \vect{a}_k + c\vect{a}_j  \,  \ldots  \,  \vect{a}_n]} = \det{A}$.
 
@@ -611,6 +633,7 @@ So, let us consider them one by one.
 :::
 
 Suppose $\tilde{A}$ is the result of scaling the $k$th column of $A$ with a factor $c$.
+<BR>
 Then expanding det$(\tilde{A})$ along its $k$th column, keeping in mind that $\tilde{a}_{ik} = c {a}_{ik}$ and $\tilde{A}_{ik} = {A}_{ik}$, yields
 
 $$
@@ -654,10 +677,10 @@ finally note that any column swap is the result of an _odd_ number of swaps of c
 </li>
 </ul>
 
-We will consider the swapping of the first two columns in complete detail. Let $A^{\ast}$ be the result of swapping the first two columns of the matrix $A$. The crucial thing to note here is that, for each value of $i$,
+We will consider the swapping of the first two columns in complete detail. Let $\bar{\bar{A}}$ be the result of swapping the first two columns of the matrix $A$. The crucial thing to note here is that, for each value of $i$,
 
 $$
-a_{i2}^{\ast} = a_{i1} \quad \text{and} \quad  A_{i2}^{\ast} = A_{i1}.
+\bar{\bar{a}}_{i2} = a_{i1} \quad \text{and} \quad  \bar{\bar{A}}_{i2}= A_{i1}.
 $$
 
 To make this explicit for a $4\times 4$ matrix:
@@ -671,7 +694,7 @@ a_{31} &a_{32} &a_{33} &a_{34}  \\
 a_{41} &a_{42} &a_{43} &a_{44}
 \end{array} \right]
 & \Longrightarrow &
-A^{\ast} = \left[\begin{array}{rrrr}
+\bar{\bar{A}} = \left[\begin{array}{rrrr}
 a_{12} &a_{11} &a_{13} &a_{14}  \\
 a_{22} &a_{21} &a_{23} &a_{24}  \\
 a_{32} &a_{31} &a_{33} &a_{34}  \\
@@ -685,7 +708,7 @@ a_{22}  &a_{23} &a_{24}  \\
 a_{42}  &a_{43} &a_{44}
 \end{array} \right]
   &= &
-A_{3,2}^{\ast} = \left[\begin{array}{rrr}
+\bar{\bar{A}}_{3,2} = \left[\begin{array}{rrr}
 a_{12}  &a_{13} &a_{14}  \\
 a_{22}  &a_{23} &a_{24}  \\
 a_{42}  &a_{43} &a_{44}
@@ -694,25 +717,67 @@ a_{42}  &a_{43} &a_{44}
 \end{array}
 $$
 
-Expanding det$(A^{\ast})$ along its second column yields
+Expanding det$(\bar{\bar{A}})$ along its second column yields
 
 $$
-\text{det}\big(A^{\ast} \big)= \sum_{i=1}^n   (-1)^{i+2}  a_{i2}^{\ast}\text{det}\big(A_{i2}^{\ast} \big)=
+\text{det}\big(\bar{\bar{A}} \big)= \sum_{i=1}^n   (-1)^{i+2}  \bar{\bar{a}}_{i2}\text{det}\big(\bar{\bar{A}}_{i2} \big)=
 \sum_{j=1}^n   (-1)^{i+2}  {a}_{i1}\text{det}\big({A}_{i1}\big).
 $$
 
-Noting that $(-1)^{i+2} = (-1)\cdot (-1)^{i+1}$ and taking out the common factor $(-1)$ from the sum yields
+Noting that $(-1)^{i+2} = (-1)\cdot (-1)^{i+1}$ and taking out one factor $(-1)$ from the sum yields
 
 $$
-\text{det}\big(A^{\ast} \big)=
+\text{det}\big(\bar{\bar{A}}\big)=
 - \sum_{i=1}^n   (-1)^{i+1}  {a}_{i1}\text{det}\big({A}_{i1}\big)=
 - \text{det}\big({A}\big).
 $$
 
 The same argument works for the interchanging of two arbitrary consecutive columns.
-<BR> As stated the swapping of two arbitrary columns can be accomplished via an odd number of 'consecutive swaps', so then the determinant changes sign an odd number of times.
+<BR> 
+And the argument can even be generalized for two columns that are not necessarily neighbours.  The notation with many indices becomes hard to read though.  As stated the swapping of two arbitrary columns can be accomplished via an odd number of 'consecutive swaps', so then the determinant changes sign an odd number of times.
 And for an odd number $n$ we have that $(-1)^n = -1$. <BR>
-Convince yourself of this!
+In fact, to swap columns $i$ and $j$, with $i < j$,  we need  $j-i$ neighbour swaps to move
+column $i$ to position $j$, and  $j-i-1$ swaps to move (the original) column $j$ to position $i$, which gives a total of $n = 2(j-i)+1$ swaps. 
+For instance, to interchange column $2$ and column $5$ in a $5 \times 5$ matrix the $(j-i) + (j-i-1) = 3+2 =5$ neigbour swaps can be visualized as follows
+
+
+$$
+ \begin{array}{rl}
+ \left|\begin{array}{ccccc} a_{11} & {\color{blue}a_{12}} & a_{13} & a_{14} & {\color{red}a_{15}} \\
+                            a_{21} & {\color{blue}a_{22}} & a_{23} & a_{24} & {\color{red}a_{25}} \\
+                            \vdots & {\color{blue}\vdots} & \vdots & \vdots & {\color{red}\vdots} \\
+                            \vdots & {\color{blue}\vdots} & \vdots & \vdots & {\color{red}\vdots} \\
+                            a_{51} & {\color{blue}a_{52}} & a_{53} & a_{54} & {\color{red}a_{55}} 
+  \end{array}\right|  = &
+ -  \left|\begin{array}{ccccc} a_{11} & a_{13} & {\color{blue}a_{12}}  & a_{14} & {\color{red}a_{15}} \\
+                               a_{21} & a_{23} & {\color{blue}a_{22}}  & a_{24} & {\color{red}a_{25}} \\
+                               \vdots & \vdots & {\color{blue}\vdots}  & \vdots & {\color{red}\vdots} \\
+                               \vdots & \vdots & {\color{blue}\vdots}  & \vdots & {\color{red}\vdots} \\
+                               a_{51} & a_{53} & {\color{blue}a_{52}}  & a_{54} & {\color{red}a_{55}} 
+ \end{array}\right|    = \\[2ex]
+ + \left|\begin{array}{ccccc}  a_{11} & a_{13} & a_{14} & {\color{blue}a_{12}} & {\color{red}a_{15}} \\
+                               a_{21} & a_{23} & a_{24} & {\color{blue}a_{22}} & {\color{red}a_{25}} \\
+                               \vdots & \vdots & \vdots & {\color{blue}\vdots} & {\color{red}\vdots} \\
+                               \vdots & \vdots & \vdots & {\color{blue}\vdots} & {\color{red}\vdots} \\
+                               a_{51} & a_{53} & a_{54} & {\color{blue}a_{52}} & {\color{red}a_{55}} \end{array}\right|  = &
+  -  \left|\begin{array}{ccccc} a_{11}& a_{13} &  a_{14} & {\color{red}a_{15}}  & {\color{blue}a_{12}}  \\
+                               a_{21} & a_{23} &  a_{24} & {\color{red}a_{25}}  & {\color{blue}a_{22}}  \\
+                               \vdots & \vdots &  \vdots & {\color{red}\vdots}  & {\color{blue}\vdots}  \\
+                               \vdots & \vdots &  \vdots & {\color{red}\vdots}  & {\color{blue}\vdots}  \\
+                               a_{51} & a_{53} &  a_{54} & {\color{red}a_{55}}  & {\color{blue}a_{52}}   \end{array}\right| = \\[2ex]
+ + \left|\begin{array}{ccccc}  a_{11} & a_{13} & {\color{red}a_{15}} &  a_{14}  & {\color{blue}a_{12}}   \\
+                               a_{21} & a_{23} & {\color{red}a_{25}} &  a_{24}  & {\color{blue}a_{22}}   \\
+                               \vdots & \vdots & {\color{red}\vdots} &  \vdots  & {\color{blue}\vdots}   \\
+                               \vdots & \vdots & {\color{red}\vdots} &  \vdots  & {\color{blue}\vdots}   \\
+                               a_{51} & a_{53} & {\color{red}a_{55}} &  a_{54}  & {\color{blue}a_{52}}    \end{array}\right| =& 
+ -\left|\begin{array}{ccccc}   a_{11} & {\color{red}a_{15}}& a_{13} &  a_{14}  & {\color{blue}a_{12}}   \\
+                               a_{21} & {\color{red}a_{25}}& a_{23} &  a_{24}  & {\color{blue}a_{22}}   \\
+                               \vdots & {\color{red}\vdots}& \vdots &  \vdots  & {\color{blue}\vdots}   \\
+                               \vdots & {\color{red}\vdots}& \vdots &  \vdots  & {\color{blue}\vdots}   \\
+                               a_{51} & {\color{red}a_{55}}& a_{53} &  a_{54}  & {\color{blue}a_{52}}    \end{array}\right| 
+ \end{array}
+$$
+
 
 Lastly we have to prove
 
@@ -749,43 +814,117 @@ This settles all matters.
 ## Grasple Exercises
 
 ::::::{grasple}
-:url: https://embed.grasple.com/exercises/993b010f-3351-4b98-b9b7-1d04c1c959be?id=93143
+:url: https://embed.grasple.com/exercises/b34a791a-3f42-4d10-9952-f6f5699a68fb?id=104164
 :label: grasple_exercise_5_3_1
 :dropdown:
-:description: Relatively simple 4x4 determinant
+:description: Effects of row operations on a 3x3 determinant
+
+::::::
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/1d3924d9-ea34-4a89-8b7c-33e385d144ba?id=104312
+:label: grasple_exercise_5_3_2
+:dropdown:
+:description: Effects of row operations on a 3x3 determinant
 
 ::::::
 
 ::::::{grasple}
-:url: https://embed.grasple.com/exercises/2d51357d-e56d-4de5-a882-493a795fd222?id=93144
-:label: grasple_exercise_5_3_2
+:url: https://embed.grasple.com/exercises/1fcb337d-f906-423a-acd5-8d8c69d4d04b?id=93158
+:label: grasple_exercise_5_3_3
 :dropdown:
-:description: Slightly less simple 4x4 determinant
+:description: Effects of row and column operations on a 3x3 determinant
 
 ::::::
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/cabb663b-7b86-4215-81aa-0a3da91a5688?id=103719
+:label: grasple_exercise_5_3_4
+:dropdown:
+:description: Effects of several operations on a 4x4 determinant
+
+::::::
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/1354915d-4cf4-4559-8ac2-68573807199d?id=103702
+:label: grasple_exercise_5_3_5
+:dropdown:
+:description: Effects of a column operation on a 4x4 determinant
+
+::::::
+
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/1354915d-4cf4-4559-8ac2-68573807199d?id=103702
+:label: grasple_exercise_5_3_6
+:dropdown:
+:description: Effects of a column operation on a 4x4 determinant
+
+::::::
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/882506bb-6a5e-479f-b095-bb5b95be2467?id=104166
+:label: grasple_exercise_5_3_7
+:dropdown:
+:description: To compute a  3x3 determinant using row reduction
+
+::::::
+
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/993b010f-3351-4b98-b9b7-1d04c1c959be?id=93143
+:label: grasple_exercise_5_3_8
+:dropdown:
+:description: To compute a  4x4 determinant with quite a few zeros
+
+::::::
+
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/2d51357d-e56d-4de5-a882-493a795fd222?id=93144
+:label: grasple_exercise_5_3_9
+:dropdown:
+:description: To compute a 4x4 determinant via reduction and expansion
+
+::::::
+
+
 
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/9974012a-1ac9-439f-919f-2647be1ba4ba?id=92965
-:label: grasple_exercise_5_3_3
+:label: grasple_exercise_5_3_10
 :dropdown:
-:description: To compute a 5x5 determinant with entries in {-2,-1,0,1,2}
+:description: To compute a 'random' 5x5 determinant with entries in {-2,-1,0,1,2}
 
 ::::::
 
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/4a01fc67-0acc-44aa-9ba2-18c1accae720?id=93145
-:label: grasple_exercise_5_3_4
+:label: grasple_exercise_5_3_11
 :dropdown:
-:description: Finding a structured 5x5 determinant in a smart way
+:description: Computing a structured 5x5 determinant in a 'smart' way
+::::::
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/f2e09cfe-9d88-4f7b-a295-bad7feda89e5?id=93150
+:label: grasple_exercise_5_3_12
+:dropdown:
+:description: Finding  a parameter $h$ such that a determinant has a prescribed value
 
 ::::::
 
 
+
+
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/35bff21c-6434-4e4a-b154-965de08479c0?id=93146
-:label: grasple_exercise_5_3_5
+:label: grasple_exercise_5_3_13
 :dropdown:
 :description: Checking linear (in)dependence of $\vect{a}_1,\vect{a}_2,\vect{a}_3$ in $\mathbb{R}^3$ via determinants.
 
@@ -794,7 +933,7 @@ This settles all matters.
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/7c4c18ba-96ba-432a-97b0-0a269a0a9f55?id=93147
-:label: grasple_exercise_5_3_6
+:label: grasple_exercise_5_3_14
 :dropdown:
 :description: Checking linear (in)dependence of $\vect{a}_1,\vect{a}_2,\vect{a}_3,\vect{a}_4$ in $\mathbb{R}^4$ via determinants.
 
@@ -802,7 +941,7 @@ This settles all matters.
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/5deab9d8-20f3-4b59-b54e-3b61c981c8c7?id=93148
-:label: grasple_exercise_5_3_7
+:label: grasple_exercise_5_3_15
 :dropdown:
 :description: Checking invertibility of a matrix $A$ via det($A$).
 
@@ -810,8 +949,8 @@ This settles all matters.
 
 
 ::::::{grasple}
-:url: https://embed.grasple.com/exercises/5deab9d8-20f3-4b59-b54e-3b61c981c8c7?id=93148
-:label: grasple_exercise_5_3_8
+:url: https://embed.grasple.com/exercises/c3f025b5-2ca4-48cb-a1f9-4e144c8bc258?id=93149
+:label: grasple_exercise_5_3_16
 :dropdown:
 :description: Find $h$ (in matrix $A$) such that $A$ is invertible.
 
@@ -819,45 +958,47 @@ This settles all matters.
 
 
 ::::::{grasple}
-:url: https://embed.grasple.com/exercises/f2e09cfe-9d88-4f7b-a295-bad7feda89e5?id=93150
-:label: grasple_exercise_5_3_9
-:dropdown:
-:description: Finding a parameter $\alpha$ for which a 4x4 determinant has a given value
-
-::::::
-
-
-::::::{grasple}
 :url: https://embed.grasple.com/exercises/a5713d1f-696b-42e5-ab74-553eec26b00b?id=93151
-:label: grasple_exercise_5_3_10
+:label: grasple_exercise_5_3_17
 :dropdown:
-:description: To compute det$\left(PBP^{-1}\right)$,  for given $P$ and $B$.
+:description: To find  det$(PBP^{-1})$,   for given $P$ and $B$.
 
 ::::::
+
 
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/9ab31fa4-6686-4865-8d43-602dc1fe670e?id=93152
-:label: grasple_exercise_5_3_11
+:label: grasple_exercise_5_3_18
 :dropdown:
-:description: To compute det$\left(A^3\right)$ for a given matrix $A$
+:description: To combine several rules of determinants for a product involving three matrices  $A$, $B$ and $C$.
 
 ::::::
 
 
 
 ::::::{grasple}
-:url: https://embed.grasple.com/exercises/8db6831f-2671-443a-af64-799d1d0d9179?id=93154
-:label: grasple_exercise_5_3_12
+:url: https://embed.grasple.com/exercises/9ae9228f-ab17-4853-9995-e38e16d87c22?id=93153
+:label: grasple_exercise_5_3_19
 :dropdown:
-:description: To find  det$\left(kA^TB^{-1}\right)$, for  3x3 matrices $A$  and $B$
+:description: To find  det$\left(A^3\right)$, for  a given matrix $A$..
 
 ::::::
+
+::::::{grasple}
+:url: https://embed.grasple.com/exercises/8db6831f-2671-443a-af64-799d1d0d9179?id=93154
+:label: grasple_exercise_5_3_20
+:dropdown:
+:description: To find  det$\left(kA^TB^{-1}\right)$, for matrices $A$  and $B$.
+
+::::::
+
+
 
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/116e83e9-1db7-47ce-a2f3-ad398aee0201?id=93155
-:label: grasple_exercise_5_3_13
+:label: grasple_exercise_5_3_21
 :dropdown:
 :description: What can det($A$) be, if  $A^2 = kA$?
 
@@ -865,7 +1006,7 @@ This settles all matters.
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/821d81b1-2cec-4fa4-b4a7-b1f9c32d6e06?id=93156
-:label: grasple_exercise_5_3_14
+:label: grasple_exercise_5_3_22
 :dropdown:
 :description: What about det($A+B$) = det($A$) + det($B$)?
 
@@ -875,37 +1016,63 @@ This settles all matters.
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/5b89a008-2e3d-48a5-a764-0b1b6a3ec4dc?id=93157
-:label: grasple_exercise_5_3_15 
+:label: grasple_exercise_5_3_23 
 :dropdown:
-:description: (True/False) det$(A) = 0 \iff A$  has a zero row?
-
-::::::
-
-
-::::::{grasple}
-:url: https://embed.grasple.com/exercises/1fcb337d-f906-423a-acd5-8d8c69d4d04b?id=93158
-:label: grasple_exercise_5_3_16
-:dropdown:
-:description: What happens to a determinant under certain row or column operation(s)?
-
+:description: (True/False) det$(A) = 0 \iff A$  has a row that is a multiple of another row.
 
 ::::::
 
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/e0bfbb0c-002f-485f-9b2f-5249938b6e40?id=93162
-:label: grasple_exercise_5_3_17
+:label: grasple_exercise_5_3_24
 :dropdown:
-:description: What happens to det($A$) if the last column becomes the first?
+:description: What happens to det(A) if the last column of $A$ becomes the first?
 
 ::::::
 
 
+
+
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/41f5ca17-ab3e-4487-b5fa-ee325cae85aa?id=93164
-:label: grasple_exercise_5_3_18
+:label: grasple_exercise_5_3_25
 :dropdown:
 :description: What happens to det($A$) if the order of the rows is reversed?
 
 ::::::
 
+
+At the end a non-Grasple exercise.
+
+::::::{exercise}
+:label: Exc:DetRowReduction:EqualRows
+
+Give an alternative proof of {prf:ref}`Cor:DetRowReduction:EqualRows` using Rule i. and Rule ii. of {prf:ref}`Prop:DetRowReduction:RowOps`.
+
+::::::
+
+::::::{dropdown} Solution to&nbsp;{numref}`Exc:DetRowReduction:EqualRows`&nbsp;(*click to show*)
+
+Suppose $A$ is a matrix with two equal rows, say row $i$ and row $j$ are equal.
+
+If we subtract the $i$th row from the $j$th row, we get a matrix $A_2$ with $j$th row equal to zero, and with det$(A_2) = $ det$(A)$. If we take the factor $0$ out, we see that det$(A_2) = 0$.
+
+For instance, with a $4\times 4$ matrix with equal second and fourth row we would have
+
+$$
+  \begin{vmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\
+                  \color{blue}a_{21} & \color{blue}a_{22} & \color{blue}a_{23} & \color{blue}a_{24} \\
+                  a_{31} & a_{32} & a_{33} & a_{34} \\
+                  \color{blue}a_{21} & \color{blue}a_{22} & \color{blue}a_{23} & \color{blue}a_{24}
+                  \end{vmatrix} =
+                  \begin{vmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\
+                  a_{21} & a_{22} & a_{23} & a_{24} \\
+                  a_{31} & a_{32} & a_{33} & a_{34} \\
+                  \color{blue}0 & \color{blue}0 &\color{blue} 0 & \color{blue}0
+                  \end{vmatrix}.           
+$$
+
+Expansion of the last determinant across its fourth row yields the value $0$.
+
+::::::

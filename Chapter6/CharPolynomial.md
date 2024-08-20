@@ -340,7 +340,7 @@ At this moment it is not so easy to prove the following proposition, of which th
 
 For every eigenvalue of a matrix $A$, the geometric multiplicity is at most equal to the algebraic multiplicity. So we always have
 
-$1 \quad \leq \quad$ geometric multiplicity of $\lambda \quad \leq\quad $  algebraic multiplicity of $\lambda$.
+&nbsp; &nbsp; $1$ &nbsp; $\leq$ &nbsp;  geometric multiplicity of $\lambda$  &nbsp; $\leq$ &nbsp;  algebraic multiplicity of $\lambda$.
 
 ::::::
 
@@ -468,7 +468,7 @@ a_{31}  & a_{32}  \end{array}\right|.
 $$
 
 The highest power of $\lambda$ coming from the second and the third terms is $\lambda^1$, so the coefficients of $\lambda^3$ and of $\lambda^2$
-are completely determined by the first term. A closer look at that term yields that these two coefficients in fact come from the product $(a_{11}-\lambda)(a_{22}-\lambda)(a_{33}-\lambda)$. For a general $n\times n$ matrix $A$ the first two coefficients also come from the 'diagonal product' of $\det{(A - \lambda I)}$.
+are completely determined by the first term. A closer look at that term yields that these two coefficients in fact come from the product $(a_{11}-\lambda)(a_{22}-\lambda)(a_{33}-\lambda)$. For a general $n\times n$ matrix $A$ the first two coefficients also come from the 'diagonal product' of the complete expansion of $\det{(A - \lambda I)}$.
 
 Expanding this product further we see that
 

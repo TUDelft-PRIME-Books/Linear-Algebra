@@ -178,7 +178,9 @@ $$
   \dfrac{\vect{a}_{j+1}\ip\vect{b}_1}{\vect{b}_1\ip\vect{b}_1}\vect{b}_1  + \ldots + \dfrac{\vect{a}_{j+1}\ip\vect{b}_j}{\vect{b}_j\ip\vect{b}_j}\vect{b}_j.
 $$
 
-This makes $\vect{b}_{j+1}$ an element of $W_{j}$.
+This makes $\text{proj}_{W_j}(\vect{a}_{j+1})$    an element of $W_{j}$  and 
+$\vect{b}_{j+1} = \vect{a}_{j+1} - \text{proj}_{W_j}(\vect{a}_{j+1})$  an element of
+$W_{j+1}$.
 
 $\vect{b}_{j+1} \neq \vect{0}$ since we assumed that the vectors $\vect{a}_1, \ldots, \vect{a}_m$ are independent, so $\vect{a}_{j+1}$ is not in $W_j$.
 
@@ -187,7 +189,7 @@ Since all $\vect{b}_i$ with $i \leq j$ lie in $W_j$, this makes $\vect{b}_{j+1}$
 Hence if the vectors $\vect{b}_1, \ldots, \vect{b}_j$ are orthogonal,
 so are the vectors $\vect{b}_1, \ldots, \vect{b}_j, \vect{b}_{j+1}$.
 
-(By using mathematical induction the proof can be made an absolutely rigorous.)
+(By using mathematical induction the proof can be made absolutely rigorous.)
 
 ::::
 
@@ -199,7 +201,7 @@ so are the vectors $\vect{b}_1, \ldots, \vect{b}_j, \vect{b}_{j+1}$.
 
 ::::
 
-The following example shows what happens if the Gram-Schmidt construction also works for
+The following example shows what happens if the Gram-Schmidt construction is applied to
 a subspace $W = \text{span}\{\vect{a}_1, \ldots, \vect{a}_m\}$ where the vectors $\vect{a}_i$ are not linearly independent.
 
 ::::{prf:example}
@@ -208,7 +210,7 @@ a subspace $W = \text{span}\{\vect{a}_1, \ldots, \vect{a}_m\}$ where the vectors
 Let $W$ be the defined as the span of the set $\left\{\begin{bmatrix} 1 \\ -1   \\ 2 \\ 3    \end{bmatrix}, \begin{bmatrix} 2 \\ -2   \\ 4 \\ 6    \end{bmatrix}, \begin{bmatrix} 1 \\ -1   \\ 3 \\  4    \end{bmatrix}, \begin{bmatrix} 1 \\ 3   \\ 1 \\  2    \end{bmatrix} \right\}$.
 
 Let us denote the vectors by $\vect{a}_1, \ldots, \vect{a}_4$. As in the proof of the Gram-Schmidt process
-we use the notation $W_j$ for the span of the vectors $ \vect{a}\_1, \ldots, \vect{a}\_j$.
+we use the notation $W_j$ for the span of the vectors $ \vect{a}_1, \ldots, \vect{a}_j$.
 
 Just following the protocol we find
 
@@ -292,7 +294,6 @@ $$
 we found, in {prf:ref}`Ex:GramSchmidt:Orthogonalize`, the orthogonal basis
 
 $$
-
    \left\{\begin{bmatrix} 1 \\ 1   \\-1  \\1   \end{bmatrix}, \begin{bmatrix} 1 \\ 1 \\0 \\-2  \end{bmatrix},   \begin{bmatrix} 2 \\ 0   \\3  \\1  \end{bmatrix}\right\}.
 $$
 

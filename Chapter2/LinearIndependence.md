@@ -100,7 +100,7 @@ Indeed, if we take an arbitrary vector $\mathbf{v}$ in $\Span{S}$, we can write 
 \begin{align*}
 \mathbf{v}&=c*{1}\mathbf{v}_{1}+c_{2}\mathbf{v}_{2}+c_{3}\mathbf{v}_{3}\\
 &=(c_{2}-c*{1})\mathbf{v}*{2}+(c*{3}+c*{1})\mathbf{v}_{3}
-\end{align_}
+\end{align*}
 
 in view of equation {eq}`Eq:LinInd:LinIndEx1`. This means that $\mathbf{v}$ is also in $\Span{S\setminus\left\lbrace\mathbf{v}_{1}\right\rbrace}$ and consequently that $\mathbf{v}_{1}$ is linearly dependent on $\mathbf{v}_{2}$ and $\mathbf{v}_{3}$.
 Similarly, equation {eq}`Eq:LinInd:LinIndEx2` shows that $\mathbf{v}_{2}$ is linearly dependent on $\mathbf{v}_{1}$ and $\mathbf{v}_{3}$ and equation {eq}`Eq:LinInd:LinIndEx3` shows that $\mathbf{v}_{3}$ is linearly dependent on $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ .

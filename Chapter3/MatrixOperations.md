@@ -244,7 +244,7 @@ We will prove the second statement and leave the other two to the diligent reade
 {numref}`Exc:MatrixOps:CheckTransposeRules`.
 
 So, suppose $A$ and $B$ are two $m \times n$ matrices.
-Then $A+B$ is an $m \times n$ matrix too, hence $(A+B)^T$ is an $n \times m$ matrix. The matrix $A^T  + B^T$ on the right-hand side of the equation is the sum of two $n \times m$ matrices, which is again an $n \times m$ matrix. So the matrices on both sides of the equation
+Then $A+B$ is an $m \times n$ matrix too, hence $(A+B)^T$ is an $n \times m$ matrix. The matrix $A^T  + B^T$ on the right side of the equation is the sum of two $n \times m$ matrices, which is again an $n \times m$ matrix. So the matrices on both sides of the equation
 have the same size.
 
 Next we have to show that they have equal entries on the corresponding positions. If we put

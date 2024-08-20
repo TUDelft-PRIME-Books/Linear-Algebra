@@ -445,9 +445,25 @@ If the domain and codomain are both $\mathbb{R}^{n}$ then something striking hap
 Let $T:\mathbb{R}^{n}\to\mathbb{R}^{n}$ be a linear transformation. The following are equivalent:
 
 <ol type = "i">
-<li>$T$ is injective;</li>
-<li>$T$ is surjective;</li>
-<li>$T$ is bijective.</li>
+
+<li>
+
+$T$ is injective;
+
+</li>
+
+<li>
+
+$T$ is surjective;
+
+</li>
+
+<li>
+
+$T$ is bijective.
+
+</li>
+
 </ol>
 
 ::::::

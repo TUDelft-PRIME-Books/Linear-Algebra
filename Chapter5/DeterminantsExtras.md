@@ -441,7 +441,7 @@ By the linearity property (in all of the columns) of the determinant ({prf:ref}`
 :::{math}
 :label: Eq:DetExtras:ProofCramer
 
-c_1\det{(A)} + c_2\det{(A^{(1)}(\vect{a}\_2))} + \ldots + c_n\det{(A^{(1)}(\vect{a}\_n))} - \det{(A^{(1)}(\vect{b}))} = 0.
+c_1\det{(A)} + c_2\det{(A^{(1)}(\vect{a}_2))} + \ldots + c_n\det{(A^{(1)}(\vect{a}_n))} - \det{(A^{(1)}(\vect{b}))} = 0.
 
 :::
 
@@ -603,6 +603,7 @@ provided that $A$ is invertible.
 In fact a slightly more general formula holds for **any** square matrix.
 
 ::::::{prf:proposition}
+:label: Prop:DetExtras:AdjointProperty
 
 For any square matrix $A$ the following identity holds:
 
@@ -616,7 +617,7 @@ For clarity we used dots to indicate products. Note that the first two products 
 
 The proof we think, is short and instructive.
 
-::::::{prf:proof}
+::::::{dropdown} Proof of&nbsp;{prf:ref}`Prop:DetExtras:AdjointProperty`
 
 For an invertible matrix the statement follows immediately from {prf:ref}`Prop:DetExtras:Inverse`.
 
@@ -896,7 +897,7 @@ so property iv. is satisfied too.
 
 We end the chapter with a proof of {prf:ref}`Prop:DetExtras:Properties-ndimCrossProd`.
 <BR>
-So, if you are interested,  push the  $\vee$  button on the right.
+So, if you are interested,  push the button on the right.
 
 ::::::{dropdown} Proof of&nbsp;{prf:ref}`Prop:DetExtras:Properties-ndimCrossProd`
 
