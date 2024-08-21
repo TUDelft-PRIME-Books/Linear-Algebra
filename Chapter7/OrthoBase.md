@@ -222,8 +222,11 @@ $$
 
 It is worthwhile to compare this result to the formula for the projection of one vector on another given in {prf:ref}`Prop:InnerProduct:UniqueProjection`. What {prf:ref}`Thm:OrthoBase:OrthoDecomp` states is essentially this: if $V$ has an orthogonal basis $\vect{v}_{1},...,\vect{v}_{k}$, then the projection of any vector $\vect{u}$ onto $V$ is the sum of the projections of $\vect{u}$ on the $\vect{v}_{i}$'s. This is illustrated in {numref}`Figure %s <Fig:OrthoBase:DecompAs2Proj>`
 
-```{figure} Images/Fig-OrthoBase-DecompAs2Proj.svg
+```{applet}
+:url: ortho/decompas2proj
+:fig: Images/Fig-OrthoBase-DecompAs2Proj.svg
 :name: Fig:OrthoBase:DecompAs2Proj
+:position: -5.49,7.46,20.08
 
 A vector and its orthogonal projection on the subspace $V$. Note that this projection is the sum of the projections of $\vect{u}$ on the orthogonal basis $\vect{v}_{1},\vect{v}_{2}$.
 ```

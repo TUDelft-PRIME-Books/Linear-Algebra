@@ -4,7 +4,7 @@
 
 ## Introduction
 
-The word "determinant" already appeared in {numref}`Section %s <Sec:CrossProduct>` about the cross product. And in {numref}`Subsection %s <Subsec:MatrixInv:DefInverse>` we saw that a  $2\times2$ matrix
+The word "determinant" already appeared in {numref}`Section %s <Sec:CrossProduct>` about the cross product. And in {numref}`Subsection %s <Subsec:MatrixInv:DefInverse>` we saw that a $2\times2$ matrix
 $A = \left[\begin{array}{cc} a & b \\ c & d\end{array}   \right]$ is invertible if and only if
 
 :::{math}
@@ -63,11 +63,13 @@ $$
 
 Thus we embed the plane into $\R^3$ as the $x_1$-$x_2$-plane. See {numref}`Figure %s <Fig:DetGeometric:OrientedArea1>`.
 
-::::{figure} Images/Fig-DetGeometric-OrientedArea1.svg
+```{applet}
+:url: det_geometric/orientedarea1
+:fig: Images/Fig-DetGeometric-OrientedArea1.svg
 :name: Fig:DetGeometric:OrientedArea1
 
 Oriented area
-::::
+```
 
 So we embed the plane $\R^2$ as the $x$-$y$-plane in $\R^3$.
 
@@ -141,7 +143,7 @@ $$
 
 where $\varphi$ is the angle from $\vect{u}$ to the left (= counterclockwise) to $\vect{v}$.
 
-We see that $ad-bc$ is equal to the area of the parallelogram if the directed angle from $\vect{u}$ to $\vect{v}$ is less then $\pi$, and minus this area if the angle is between $\pi$ and $2\pi$.  We call this the *signed area*.
+We see that $ad-bc$ is equal to the area of the parallelogram if the directed angle from $\vect{u}$ to $\vect{v}$ is less then $\pi$, and minus this area if the angle is between $\pi$ and $2\pi$. We call this the _signed area_.
 
 ::::::
 
@@ -289,28 +291,45 @@ $\det{(\vect{u},\vect{v}+\vect{w})} = \det{(\vect{u},\vect{v})} + \det{(\vect{u}
 </li>
 </ol>
 
-is the most interesting one. The two pictures of {numref}`Figure %s <Fig:DetGeometric:Linearity>` tell the story.
+is the most interesting one. The two pictures of {numref}`Figure %s <Fig:DetGeometric:Linearity1>` and {numref}`Figure %s <Fig:DetGeometric:Linearity2>` tell the story.
 
-::::{figure} Images/Fig-DetGeometric-SumRule.svg
-:name: Fig:DetGeometric:Linearity
+::::{figure}
+:name:
 
-The sum rule in a picture. Note, this is a **2D picture**.
 ::::
 
-In the picture on the left, both $(\vect{u},\vect{v})$ and $(\vect{u},\vect{w})$ are positively oriented.
+```{applet}
+:url: det_geometric/linearity_one
+:fig: Images/Fig-DetGeometric-SumRule.svg
+:name: Fig:DetGeometric:Linearity1
+:position: 2,2
+
+The sum rule in a picture with $(\vect{u},\vect{w})$ positively oriented. Note, this is a **2D picture**.
+```
+
+In the picture, both $(\vect{u},\vect{v})$ and $(\vect{u},\vect{w})$ are positively oriented.
 So there
 
 $$
 \begin{array}{lcl}
 \det{(\vect{u},\vect{v})} + \det{(\vect{u},\vect{w})} &=&
 \text{area}(OABC) + \text{area}(CBDE) \\
-&=& \text{area}(OADE) = \det{(\vect{u},\vect{v}+\vect{w})},
+&=& \text{area}(OADE) = \det{(\vect{u},\vect{v}+\vect{w})}.
 \end{array}
 $$
 
-since the two triangles $OCE$ and $ABD$ are congruent, so have equal areas.
+Since the two triangles $OCE$ and $ABD$ are congruent and they have equal areas.
 
-In the picture on the right, the orientation of $(\vect{u},\vect{v})$ is positive, the orientation of $(\vect{u},\vect{w})$ is negative, and the orientation of $(\vect{u},\vect{v}+\vect{w})$ is positive again.
+```{applet}
+:url: det_geometric/linearity_two
+:fig: Images/Fig-DetGeometric-SumRule.svg
+:name: Fig:DetGeometric:Linearity2
+:position: 2,2
+
+The sum rule in a picture with $(\vect{u},\vect{w})$ negatively oriented. Note, this is a **2D picture**.
+```
+
+In this picture, the orientation of $(\vect{u},\vect{v})$ is positive, the orientation of $(\vect{u},\vect{w})$ is negative, and the orientation of $(\vect{u},\vect{v}+\vect{w})$ is positive again.
 So there
 
 $$
@@ -318,28 +337,27 @@ $$
 \det{(\vect{u},\vect{v})} + \det{(\vect{u},\vect{w})} &=&
 \text{area}(OAFC) - \text{area}(OBDA) \\
 &=& \text{area}(OAFC) - \text{area}(CGEF) \\
-&=& \text{area}(OAEG) = \det{(\vect{u},\vect{v}+\vect{w})}
+&=& \text{area}(OAEG) = \det{(\vect{u},\vect{v}+\vect{w})}.
 \end{array}
 $$
-
-since now the areas of $OAFC$ and $CGEB$ add up to the area of $OABC$, owing to the
-congruence of the triangles $OGC$ and $AEF$.
 
 There are more pairwise orientations to consider, but the idea is hopefully clear to you.
 
 ::::::
 
-##  3x3 determinants: volume and orientation
+## 3x3 determinants: volume and orientation
 
 Suppose $\vect{a}, \vect{b}, \vect{c}$ are three vectors in $\R^3$. For the moment, suppose they are linearly independent. So
 $\vect{a}, \vect{b}$ are not multiples of each other, and $\vect{c}$ is not in the plane spanned by $\vect{a}, \vect{b}$.
-Then the three vectors can be interpreted as three edges of a parallelepiped. 
+Then the three vectors can be interpreted as three edges of a parallelepiped.
 
-::::{figure} Images/Fig-DetGeometric-Paraped.svg
+```{applet}
+:url: det_geometric/paraped
+:fig: Images/Fig-DetGeometric-Paraped.svg
 :name: Fig:DetGeometric:Paraped
 
 Volume equals base area times height
-::::
+```
 
 ::::::{prf:proposition}
 :label: Prop:DetGeometric:VolumeParped
@@ -353,11 +371,11 @@ $$
 
 ::::::
 
-
+::::
 
 ::::::{prf:proof}
 
-Just as the area of a parallelogram can be computed as 'base length times height', the volume of a parallelepiped can be computed as 'base area times height'.  See {numref}`Figure %s <Fig:DetGeometric:Paraped>`.
+Just as the area of a parallelogram can be computed as 'base length times height', the volume of a parallelepiped can be computed as 'base area times height'. See {numref}`Figure %s <Fig:DetGeometric:Paraped>`.
 As base region we can take the parallelogram spanned by $\vect{a}$ and $\vect{b}$, and then the base area becomes
 
 $$
@@ -371,22 +389,19 @@ $$
 h =  \norm{\vect{c}}\,\cos(\theta),
 $$
 
-which is positive if $\vect{c}$  lies on the same side of  plane $\mathcal{P}$ as $\vect{a} \times  \vect{b}$, and negative if these vectors lie on opposite sides.
+which is positive if $\vect{c}$ lies on the same side of plane $\mathcal{P}$ as $\vect{a} \times  \vect{b}$, and negative if these vectors lie on opposite sides.
 
-Using the alternative characterization of the inner product as in 
+Using the alternative characterization of the inner product as in
 {prf:ref}`Prop:InnerProduct:DotProdGeometric` we derive that
 
 $$
  V = |h|\norm{\vect{a} \times  \vect{b}} =   \norm{\vect{c}}\,|\cos(\theta)|\,\norm{\vect{a} \times  \vect{b}} = |\vect{c}\ip(\vect{a} \times  \vect{b})|.
 $$
 
-
 ::::::
 
-
-Note that the expression $\vect{c}\ip(\vect{a} \times  \vect{b})$ 
-gives the actual volume of the corresponding parallelepiped if the vectors $\vect{a}, \vect{b},\vect{c}$ are oriented as in the righthand rule (as in {numref}`Figure %s <Fig:CrossProduct:RightHandRule>`)  and minus this volume otherwise.
- 
+Note that the expression $\vect{c}\ip(\vect{a} \times  \vect{b})$
+gives the actual volume of the corresponding parallelepiped if the vectors $\vect{a}, \vect{b},\vect{c}$ are oriented as in the righthand rule (as in {numref}`Figure %s <Fig:CrossProduct:RightHandRule>`) and minus this volume otherwise.
 
 ::::::{prf:proposition}
 :label: Prop:DetGeometric:CyclicPerm
@@ -443,7 +458,6 @@ $$
 ::::::
 
 The next proposition expresses a 3×3 determinant in terms of three 2×2 determinants. This expression will be the key to define the determinant of a general n×n matrix in the next section.
-
 
 ::::::{prf:proposition}
 :label: Prop:DetGeometric:ColExpand
@@ -537,7 +551,6 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 
 ::::::
 
-
 ## Grasple Exercises
 
 ::::::{grasple}
@@ -560,16 +573,15 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 :url: https://embed.grasple.com/exercises/fc111f55-9f43-4730-a1f9-e3b5f03069bd?id=93133
 :label: grasple_exercise_5_1_3
 :dropdown:
-:description: Area of triangle in the plane. 
+:description: Area of triangle in the plane.
 
 ::::::
-
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/2d846d56-3729-468e-80d8-74ec6d348719?id=93134
 :label: grasple_exercise_5_1_4
 :dropdown:
-:description: Volume of parallelepiped  (with  vertex at (0,0,0)).
+:description: Volume of parallelepiped (with vertex at (0,0,0)).
 
 ::::::
 
@@ -577,11 +589,9 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 :url: https://embed.grasple.com/exercises/1053b23-02ab-4ffb-bcda-70f808a9910a?id=74408
 :label: grasple_exercise_5_1_5
 :dropdown:
-:description: Volume of parallelepiped  (with  vertex at (0,0,0)).
+:description: Volume of parallelepiped (with vertex at (0,0,0)).
 
 ::::::
-
-
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/edc50bb7-425e-4a76-927e-f20504128f5f?id=65686
@@ -590,8 +600,6 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 :description: Considerations about cross product versus determinant.
 
 ::::::
-
-
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/47e1fd08-2d8a-4c0d-816a-37e314707191?id=87501

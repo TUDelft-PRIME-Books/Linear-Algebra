@@ -57,7 +57,7 @@ class AppletDirective(Figure):
         base_url = os.environ.get("BASE_URL", DEFAULT_BASE_URL)
         full_url = f'{base_url}{url}{"?" if params else ""}{params}'
         applet_html = f"""
-			<div class="applet" style="{style}">
+			<div class="applet" style="{style}; ">
 				<noscript class="loading-lazy">
 					<iframe src="{full_url}" allow="fullscreen" loading="lazy" frameborder="0"></iframe>
 				</noscript>
