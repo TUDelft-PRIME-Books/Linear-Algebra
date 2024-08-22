@@ -1516,7 +1516,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/67334454-d109-45a2-b640-545041ff896d?id=62416
-:label: grasple*exercise_1_2_13
+:label: grasple_exercise_1_2_13
 :dropdown:
 :description: Find $\text{proj}*{\mathbf{v}}(\mathbf{w})$ in $\R^2$.
 
@@ -1524,9 +1524,9 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/9705b078-6c91-42c6-9768-8a043115b881?id=62658
-:label: grasple*exercise_1_2_14
+:label: grasple_exercise_1_2_14
 :dropdown:
-:description: Find $\text{proj}*{\mathbf{v}}(\mathbf{w})$ in $\R^4$.
+:description: Find $\text{proj}_{\mathbf{v}}(\mathbf{w})$ in $\R^4$.
 
 ::::
 
@@ -1575,6 +1575,6 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 :label: grasple*exercise_1_2_20
 :dropdown:
 :description: What to conclude
-from $\text{proj}*{\mathbf{v}}(\mathbf{w}_1 ) = \text{proj}_{\mathbf{v}}(\mathbf{w}\_2)$?
+from $\text{proj}_{\mathbf{v}}(\mathbf{w}_1 ) = \text{proj}_{\mathbf{v}}(\mathbf{w}\_2)$?
 
 ::::
