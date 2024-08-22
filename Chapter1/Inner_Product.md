@@ -455,6 +455,8 @@ $$
 
 and conclude that $\mathbf{u}$ and $\mathbf{v}$ are orthogonal, $\mathbf{u}$ and $\mathbf{w}$ are not orthogonal, <br/> $\mathbf{v}$ and $\mathbf{w}$ are orthogonal.
 
+:::
+
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/59912254-6fc8-43c7-9c44-1ea7eab1c236?id=62409
 :label: grasple_exercise_1_2_1T
