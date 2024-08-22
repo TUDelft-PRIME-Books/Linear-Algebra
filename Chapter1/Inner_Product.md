@@ -526,6 +526,8 @@ $$
   \mathbf{\hat{w}} = \text{proj}_{\mathbf{v}}(\mathbf{w}).
 $$
 
+:::
+
 :::{applet}
 :url: dot_product/innerproduct_projectionvectorline
 :fig: Images/Fig-InnerProduct-ProjectionVectorLine.svg
@@ -652,7 +654,7 @@ $$
 
 :::
 
-:::{dropdown} Solution to&nbsp;{numref}`Exc:InnerProduct:SameProjectionThenWhat`&nbsp;(_click to show_)
+::::{dropdown} Solution to&nbsp;{numref}`Exc:InnerProduct:SameProjectionThenWhat`&nbsp;(_click to show_)
 
 Suppose $\text{proj}_{\mathbf{v}}(\mathbf{w}_1) = \text{proj}_{\mathbf{v}}(\mathbf{w}_2) $.  Thus  $\dfrac{\mathbf{w}_1\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}} \mathbf{v} = \dfrac{\mathbf{w}_2\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}} \mathbf{v}$.
 
@@ -692,6 +694,8 @@ so indeed $(\mathbf{w}_1 - \mathbf{w}_2)$ and $\vect{v}$ are orthogonal.
 Two vectors $\vect{w}_1$, $\vect{w}_2 $  with the same projection onto $\vect{v}$.
 
 :::
+
+::::
 
 (Subsec:InnerProduct:Norm_in_Rn)=
 
