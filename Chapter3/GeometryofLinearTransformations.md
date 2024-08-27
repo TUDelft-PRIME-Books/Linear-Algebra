@@ -146,11 +146,13 @@ $$
 
 this projection is depicted on the right in {numref}`Figure %s <Fig:GeomLinTrans:ProjinR2>`. It is an example of a non-orthogonal (or **oblique**) projection. Of course, we again have to check that this is really a linear transformation.
 
-::::{figure} Images/Fig-GeomLinTrans-ProjinR2.svg
+```{applet}
+:url: geom_lin_trans/proj_in_r2
+:fig: Images/Fig-GeomLinTrans-ProjinR2.svg
 :name: Fig:GeomLinTrans:ProjinR2
 
 On the left an orthogonal projection $T_{1}$ acting on a few selected vectors $\mathbf{u}_{1}$, $\mathbf{u}_{2}$, and $\mathbf{u}_{3}$. On the right a non-orthogonal projection $T_{2}$ acting on some selected vectors $\mathbf{v}_{1}$, $\mathbf{v}_{2}$, and $\mathbf{v}_{3}$. In both cases, the blue line represents the line $\mathcal{L}$ in the direction of $\begin{bmatrix}2\\1\end{bmatrix}$. On the left, every vector $\mathbf{u}_{i}$ is mapped to the closest vector that lies on $\mathcal{L}$. On the right, every vector $\mathbf{v}_{i}$ is mapped to the intersection of $\mathcal{L}$ wih the line through $\mathbf{v}_{i}$ in the direction given by $\begin{bmatrix}-2\\1\end{bmatrix}$.
-::::
+```
 
 ::::::{prf:proposition}
 Let $\mathcal{L}$ be a line through the origin and let $\mathbf{w}$ be a vector not on $\mathcal{L}$. The transformation $T:\mathbb{R}^{2}\to\mathbb{R}^{2}$ which maps a vector $\mathbf{u}$ to the intersection of $\mathcal{L}$ and the line through $\mathbf{u}$ in the direction of $\mathbf{w}$ is a linear transformation.
@@ -243,10 +245,10 @@ $$
 \mathbf{0}\quad\text{and in the direction of}\quad \mathbf{v}=\begin{bmatrix}1\\1\end{bmatrix}.
 $$
 
-We can define a transformation $T$ which reflects points in the plane along $\mathcal{L}$. (See {numref}`Figure %s <Fig:GeomLinTrans:ReflinR2>`.) It is easy to find the standard matrix $R$ of this transformation: the first standard basis vector $\mathbf{e}_{1}$ is mapped to $\mathbf{e}_{2}$ and, similarly, $\mathbf{e}_{2}$ is mapped to $\mathbf{e}_{1}$, so
+We can define a transformation $T$ which reflects points in the plane along $\mathcal{L}$. That is, we can imagine $\mathcal{L}$ to act as a kind of mirror, sending points on one side of $\mathcal{L}$ to their reflection on the other side. (See {numref}`Figure %s <Fig:GeomLinTrans:ReflinR2>`.) It is easy to find the standard matrix $M$ of this transformation: the first standard basis vector $\mathbf{e}_{1}$ is mapped to $\mathbf{e}_{2}$ and, similarly, $\mathbf{e}_{2}$ is mapped to $\mathbf{e}_{1}$, so
 
 $$
-R=\begin{bmatrix}0&1\\1&0\end{bmatrix}.
+M=\begin{bmatrix}0&1\\1&0\end{bmatrix}.
 $$
 
 ```{applet}
@@ -255,7 +257,7 @@ $$
 :name: Fig:GeomLinTrans:ReflinR2
 :status: reviewed
 
-The reflection $R$ along the line $\mathcal{L}$ in the direction of $\mathbf{v}=\begin{bmatrix}1\\1\end{bmatrix}$. The vectors in red are mapped to the vector in blue by this reflection.
+The reflection along the line $\mathcal{L}$ in the direction of $\mathbf{v}=\begin{bmatrix}1\\1\end{bmatrix}$. The vectors in red are mapped to the vector in blue by this reflection.
 ```
 
 So far so good. But how do we find the reflection over an arbitrary line $\mathcal{L}$? It turns out that the projections we have seen in Section {ref}`Subsec:GeomLinTrans:Proj` will help us out. Consider a line $\mathcal{L}$ and a vector $\mathbf{v}$ not in $\mathcal{L}$, as in {numref}`Figure %s <Fig:GeomLinTrans:ReflFromDoubleProj>`. In order to reflect $\mathbf{v}$ over $\mathcal{L}$, we first move it to the closest point on $\mathcal{L}$ and then move it the same distance again in the same direction.
@@ -300,15 +302,15 @@ A reflection is by definition a sum of scaled linear transformations. As such, i
 The following proposition guarantees that, as you would expect, applying a reflection twice leaves you back where you started.
 
 ::::::{prf:proposition}
-If $R$ is the standard matrix of a reflection, then $R^{2}=I$.
+If $M$ is the standard matrix of a reflection, then $R^{2}=I$.
 
 ::::::
 
 ::::::{prf:proof}
-We know that $R=2P-I$ where $P$ is the standard matrix of some projection. By {prf:ref}`Prop:GeomLinTrans:ProjSquaredisProj`, we have $P^{2}=P$ and therefore
+We know that $M=2P-I$ where $P$ is the standard matrix of some projection. By {prf:ref}`Prop:GeomLinTrans:ProjSquaredisProj`, we have $P^{2}=P$ and therefore
 
 $$
-R^{2}=(2P-I)(2P-I)=4P^{2}-4P+I=I.
+M^{2}=(2P-I)(2P-I)=4P^{2}-4P+I=I.
 $$
 
 ::::::
@@ -321,7 +323,7 @@ The definition of a reflection in combination with {prf:ref}`Prop:GeomLinTrans:M
 Let $\mathcal{L}$ be the line in the plane that passes through the origin and that makes an angle $\theta$ with the positive $x$-axis. The standard matrix of the reflection along $\mathcal{L}$ is
 
 $$
-A_{R_{\mathcal{L}}}=2\begin{bmatrix}\cos^{2}(\theta)&\sin(\theta)\cos(\theta)\\\sin(\theta)\cos(\theta)&\sin^{2}(\theta)\end{bmatrix}-I_{2}=\begin{bmatrix}\cos(2\theta)&\sin(2\theta)\\\sin(2\theta)&-\cos(2\theta)\end{bmatrix}.
+M_{\mathcal{L}}=2\begin{bmatrix}\cos^{2}(\theta)&\sin(\theta)\cos(\theta)\\\sin(\theta)\cos(\theta)&\sin^{2}(\theta)\end{bmatrix}-I_{2}=\begin{bmatrix}\cos(2\theta)&\sin(2\theta)\\\sin(2\theta)&-\cos(2\theta)\end{bmatrix}.
 $$
 
 ::::::
@@ -353,7 +355,7 @@ One particularly interesting aspect of reflections is that they preserve lengths
 ::::{prf:proposition}
 :label: Prop:GeomLinTrans:ReflDotProd
 
-If $S$ is a defined on $\R^{n}$, then for any $\vect{w}_{1},\vect{w}_{2}$ in $\R^{n}$ we have:
+If $S$ is a reflection defined on $\R^{n}$, then for any $\vect{w}_{1},\vect{w}_{2}$ in $\R^{n}$ we have:
 
 $$S(\vect{w}_{1})\cdot S(\vect{w}_{2})=\vect{w}_{1}\cdot\vect{w}_{2}.$$
 
@@ -364,7 +366,7 @@ $$S(\vect{w}_{1})\cdot S(\vect{w}_{2})=\vect{w}_{1}\cdot\vect{w}_{2}.$$
 By definition, there is an orthogonal projection with standard matrix $P$ such that $S(\vect{w})=(2P-I)\vect{w}$. We assume $P$ is the projection on the span of a single vector $\vect{v}$. If there are more, the computations become considerably messier, but neither harder nor more enlightening.
 
 \begin{align*}
-S(\vect{w}*{1})\cdot S(\vect{w}_{2})&=(2P-I)\vect{w}_{1}\cdot(2P-I)\vect{w}_{2}\\
+S(\vect{w}_{1})\cdot S(\vect{w}_{2})&=(2P-I)\vect{w}_{1}\cdot(2P-I)\vect{w}_{2}\\
 &=(2\left(\frac{\vect{w_{1}}\cdot\vect{v}}{\vect{v}\cdot\vect{v}}\right)\vect{v}-\vect{w}_{1})\cdot (2\left(\frac{\vect{w_{2}}\cdot\vect{v}}{\vect{v}\cdot\vect{v}}\right)\vect{v}-\vect{w}_{2})\\
 &=4\left(\frac{\vect{w}_{1}\cdot \vect{v}}{\vect{v}\cdot\vect{v}}\right)\left(\frac{\vect{w}_{2}\cdot \vect{v}}{\vect{v}\cdot\vect{v}}\right)\vect{v}\cdot\vect{v}-2\left(\frac{\vect{w}_{2}\cdot \vect{v}}{\vect{v}\cdot\vect{v}}\right)\vect{w}_{1}\cdot\vect{v}-2\left(\frac{\vect{w}_{1}\cdot \vect{v}}{\vect{v}\cdot\vect{v}}\right)\vect{w}_{2}\cdot\vect{v}+\vect{w}_{1}\cdot\vect{w}_{2}\\
 &=\vect{w}_{1}\cdot\vect{w}_{2}
@@ -457,13 +459,13 @@ Any rotation in the plane is the composition of two reflections.
 ::::::
 
 ::::::{prf:proof}
-We will show that the standard matrix $R_{\theta}$ of the rotation over an angle $\theta$ is the product of the standard matrices of two reflections. The claim follows then from the definition of the matrix product.
+We will show that the standard matrix $R_{\theta}$ of the rotation $T_{\theta}$ over an angle $\theta$ is the product of the standard matrices of two reflections. The claim follows then from the definition of the matrix product.
 
-Let $\mathcal{L}_{1}$ and $\mathcal{L}_{2}$ be two lines in the plane through the origin that make an angle of $\theta/2$ with each other. If we call $\phi/2$ the angle $\mathcal{L}_{1}$ makes with the positive $x$-axis, we can conclude that $\mathcal{L}_{2}$ makes an angle of $\phi/2+\theta/2$ with the positive $x$-axis. From {prf:ref}`Prop:GeomLinTrans:MatofReflinPlane`, we know that the standard matrices of the reflections along $\mathcal{L}_{1}$ and $\mathcal{L}_{2}$ are
+Let $\mathcal{L}_{1}$ and $\mathcal{L}_{2}$ be two lines in the plane through the origin that make an angle of $\theta/2$ with each other. If we call $\phi/2$ the angle $\mathcal{L}_{1}$ makes with the positive $x$-axis, we can conclude that $\mathcal{L}_{2}$ makes an angle of $\phi/2+\theta/2$ with the positive $x$-axis. From {prf:ref}`Prop:GeomLinTrans:MatofReflinPlane`, we know that the standard matrices of the reflections $T_{\mathcal{L}_{1}}$ and $T_{\mathcal{L}_{2}}$ along $\mathcal{L}_{1}$ and $\mathcal{L}_{2}$, respectively, are
 
 $$
-R_{\mathcal{L}_{1}}=\begin{bmatrix}\cos(\phi)&\sin(\phi)\\\sin(\phi)&-\cos(\phi)\end{bmatrix}\quad
-\text{and}\quad R_{\mathcal{L}_{2}}=\begin{bmatrix}\cos(\theta+\phi)&\sin(\theta+\phi)\\
+M_{\mathcal{L}_{1}}=\begin{bmatrix}\cos(\phi)&\sin(\phi)\\\sin(\phi)&-\cos(\phi)\end{bmatrix}\quad
+\text{and}\quad M_{\mathcal{L}_{2}}=\begin{bmatrix}\cos(\theta+\phi)&\sin(\theta+\phi)\\
 \sin(\theta+\phi)&-\cos(\theta+\phi)\end{bmatrix},
 
 
@@ -477,7 +479,7 @@ respectively. Using the fact that, for any angles $\alpha$ and $\beta$, we have 
 we find
 
 $$
-R_{\mathcal{L}_{2}}R_{\mathcal{L}_{1}}=\begin{bmatrix}
+M_{\mathcal{L}_{2}}M_{\mathcal{L}_{1}}=\begin{bmatrix}
 \cos(\theta)&\sin(-\theta)\\\sin(\theta)&\cos(\theta)
 \end{bmatrix}=R_{\theta}.
 
@@ -486,11 +488,13 @@ $$
 
 ::::::
 
-::::{figure} Images/Fig-GeomLinTrans-RotisDoubleRefl.svg
+```{applet}
+:url: geom_lin_trans/rotisdoublerefl
+:fig: Images/Fig-GeomLinTrans-RotisDoubleRefl.svg
 :name: Fig:GeomLinTrans:RotisDoubleRefl
 
 {prf:ref}`Prop:GeomLinTrans:RotisDoubleRefl` illustrated. $\mathcal{L}_{1}$ and $\mathcal{L}_{2}$ are arbitrary lines that make an angle of $\theta/2$ with each other. Composing the reflections along $\mathcal{L}_{1}$ and $\mathcal{L}_{2}$ then gives the rotation over the angle $\theta$. This is shown for the particular vector $\mathbf{v}$. Note that the angle $\phi/2$ that $\mathcal{L}_{1}$ makes with the positive $x$ axis is irrelevant to the proof.
-::::
+```
 
 In the plane, you can only rotate around the origin. Things get considerably more complicated if we move to $\mathbb{R}^{3}$, because there you can rotate around any arbitrary line. We will not get into that here.
 
@@ -580,8 +584,8 @@ If $T$ is a shear transformation fixing the line $\mathcal{L}$ and $\mathbf{v}$ 
 ::::::{prf:proof}
 The distance between a vector $\mathbf{v}$ and a line $\mathcal{L}$ is the length of $\mathbf{v}-\proj_{\mathcal{L}}(\mathbf{v})$. We find, for arbitrary $\mathbf{v}$ in $\mathbb{R}^{2}$,
 \begin{align*}
-\lVert T(\mathbf{v})-\proj*{\mathcal{L}}(T(\mathbf{v}))\rVert &= \lVert \mathbf{v}+c\mathbf{w}-\frac{(\mathbf{v}+c\mathbf{w})\ip\mathbf{w}}{\mathbf{w}\ip\mathbf{w}}\mathbf{w}\rVert=\lVert \mathbf{v}-\frac{\mathbf{v}\ip\mathbf{w}}{\mathbf{w}\ip\mathbf{w}}\mathbf{w}\rVert\\
-&=\lVert \mathbf{v} -\proj*{\mathcal{L}}\mathbf{v}\rVert
+\lVert T(\mathbf{v})-\proj_{\mathcal{L}}(T(\mathbf{v}))\rVert &= \lVert \mathbf{v}+c\mathbf{w}-\frac{(\mathbf{v}+c\mathbf{w})\ip\mathbf{w}}{\mathbf{w}\ip\mathbf{w}}\mathbf{w}\rVert=\lVert \mathbf{v}-\frac{\mathbf{v}\ip\mathbf{w}}{\mathbf{w}\ip\mathbf{w}}\mathbf{w}\rVert\\
+&=\lVert \mathbf{v} -\proj_{\mathcal{L}}\mathbf{v}\rVert
 \end{align*}
 which had to be proven.
 
@@ -615,7 +619,7 @@ $$
 
 ::::::{prf:example} Application
 
-Suppose we have a standard deck of $52$ playing cards placed in a stack on a table. A standard playing card is about $87$ by $56$ millimeters, so we can assume that the corners of the lowest card are on
+Suppose we have a standard deck of $52$ perfectly rectangular playing cards placed in a stack on a table. A standard playing card is about $87$ by $56$ millimeters, so we can assume that the corners of the lowest card are on
 
 $$
 \begin{bmatrix}0\\0\\0\end{bmatrix},\quad\begin{bmatrix}87\\0\\0\end{bmatrix},\quad\begin{bmatrix}0\\56\\0\end{bmatrix},\quad\text{and}\quad\begin{bmatrix}87\\56\\0\end{bmatrix},

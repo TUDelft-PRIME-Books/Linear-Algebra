@@ -1,3 +1,7 @@
+.applet {
+  height: 500px;
+}
+
 .applet * {
   width: 100%;
   height: 500px; /* TODO: subject for discussion */

@@ -144,12 +144,10 @@ What happens if we make the constant terms non-zero? Let us change the right han
 
 :::{math}
 
-$$
     \left\{\begin{array}{ccccccc}
     x_{1}&+&3x_{2}&-&x_{3}&=&a\\
     2x_{1}&+&6x_{2}&-&2x_{3}&=&2a
     \end{array}\right.
-$$
 
 :::
 
@@ -321,6 +319,7 @@ By putting $c_{2}=0$ in statement [ii.](#Item:SolSet:LinCombinSolSet), we find t
 By putting $c_{1}=1=c_{2}$, we find that any sum of two solutions is again a solution.
 
 </li>
+</ol>>
 
 You should keep in mind, however, that this **only** holds for solutions of **homogeneous** systems!
 

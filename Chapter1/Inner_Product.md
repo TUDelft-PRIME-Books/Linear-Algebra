@@ -336,9 +336,6 @@ $$
 
 :::
 
-
-
-
 :::{exercise}
 :label: Exc:InnerProduct:(v-w)(v+w)
 
@@ -436,7 +433,7 @@ Two vectors $\mathbf{v}$ and $\mathbf{w}$ in $\mathbb{R}^n$ are called **orthogo
 :::{prf:example}
 :label: Ex:InnerProduct:CheckVectorsOrthogonal
 
-Let $\mathbf{u} = \begin{bmatrix} 1\\2\\-1\\-1\end{bmatrix}$, $\mathbf{v} = \begin{bmatrix} 3\\-1\\2\\-1\end{bmatrix}$ and 
+Let $\mathbf{u} = \begin{bmatrix} 1\\2\\-1\\-1\end{bmatrix}$, $\mathbf{v} = \begin{bmatrix} 3\\-1\\2\\-1\end{bmatrix}$ and
 $\mathbf{w} = \begin{bmatrix} 2\\2\\-1\\2\end{bmatrix}$.
 
 We compute
@@ -457,6 +454,8 @@ $$
 $$
 
 and conclude that $\mathbf{u}$ and $\mathbf{v}$ are orthogonal, $\mathbf{u}$ and $\mathbf{w}$ are not orthogonal, <br/> $\mathbf{v}$ and $\mathbf{w}$ are orthogonal.
+
+:::
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/59912254-6fc8-43c7-9c44-1ea7eab1c236?id=62409
@@ -531,7 +530,9 @@ $$
 
 :::
 
-:::{figure} Images/Fig-InnerProduct-ProjectionVectorLine.svg
+:::{applet}
+:url: dot_product/innerproduct_projectionvectorline
+:fig: Images/Fig-InnerProduct-ProjectionVectorLine.svg
 :name: Fig:InnerProduct:ProjectionVectorLine
 
 Projection of a vector $\mathbf{w}$ onto a nonzero vector $\mathbf{v}$
@@ -655,7 +656,7 @@ $$
 
 :::
 
-:::{dropdown} Solution to&nbsp;{numref}`Exc:InnerProduct:SameProjectionThenWhat`&nbsp;(_click to show_)
+::::{dropdown} Solution to&nbsp;{numref}`Exc:InnerProduct:SameProjectionThenWhat`&nbsp;(_click to show_)
 
 Suppose $\text{proj}_{\mathbf{v}}(\mathbf{w}_1) = \text{proj}_{\mathbf{v}}(\mathbf{w}_2) $.  Thus  $\dfrac{\mathbf{w}_1\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}} \mathbf{v} = \dfrac{\mathbf{w}_2\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}} \mathbf{v}$.
 
@@ -695,6 +696,8 @@ so indeed $(\mathbf{w}_1 - \mathbf{w}_2)$ and $\vect{v}$ are orthogonal.
 Two vectors $\vect{w}_1$, $\vect{w}_2 $  with the same projection onto $\vect{v}$.
 
 :::
+
+::::
 
 (Subsec:InnerProduct:Norm_in_Rn)=
 
@@ -761,8 +764,11 @@ iii. Triangle Inequality:
 
 The first two of these properties are very easy to prove. The proof of the triangle inequality we postpone until the end of the section. {numref}`Figure %s <Fig:InnerProduct:TriangleInequality>` explains the name.
 
-:::{figure} Images/Fig-InnerProduct-TriangleInequality.svg
+:::{applet}
+:url: dot_product/triangle_inequality
+:fig: Images/Fig-InnerProduct-TriangleInequality.svg
 :name: Fig:InnerProduct:TriangleInequality
+:position: 2,2
 
 The Triangle Inequality
 :::
@@ -833,7 +839,6 @@ $$
 The distance between two vectors
 :::
 
-
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/5bc4274c-56a0-461b-bd3d-9f8bdb8f44e0?id=69740
 :label: grasple_exercise_1_2_2
@@ -847,7 +852,7 @@ From the rules of the norm the following rules of the distance function can be d
 ::::{prf:proposition}
 :label: Prop:InnerProduct:PropertiesDistance
 
-For any  three vectors $\mathbf{u}, \mathbf{v}$ and $\mathbf{w} \in \mathbb{R}^{n}$ the following statements hold.
+For any three vectors $\mathbf{u}, \mathbf{v}$ and $\mathbf{w} \in \mathbb{R}^{n}$ the following statements hold.
 
 i. $\text{dist}(\vect{u},\vect{v}) = \text{dist}(\vect{v},\vect{u})$;
 
@@ -1007,7 +1012,6 @@ $$
   \iff \mathbf{v}\ip\mathbf{w}= 0
   \iff \mathbf{v}\perp\mathbf{w}.
 $$
-
 
 :::
 
@@ -1369,7 +1373,7 @@ $$
     \norm{\vect{v}_i - \vect{v}_j} = \sqrt{2^2 + 2^2 + 0^2} = \sqrt{8}, \text{ for } i \neq j.
 $$
 
-The angle between, for instance,  $\mathbf{v}_1$ and $\mathbf{v}_3$ is determined by
+The angle between, for instance, $\mathbf{v}_1$ and $\mathbf{v}_3$ is determined by
 
 $$
    \cos(\varphi) = \dfrac{\mathbf{v}_1\ip\mathbf{v}_3}{\norm{\mathbf{v}_1}\norm{\mathbf{v}_3}} = \dfrac{-1}{\sqrt{3}\cdot\sqrt{3}} = -\frac13.
@@ -1522,7 +1526,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 :url: https://embed.grasple.com/exercises/67334454-d109-45a2-b640-545041ff896d?id=62416
 :label: grasple_exercise_1_2_13
 :dropdown:
-:description: Find $\text{proj}_{\mathbf{v}}(\mathbf{w})$ in $\R^2$.
+:description: Find $\text{proj}*{\mathbf{v}}(\mathbf{w})$ in $\R^2$.
 
 ::::
 
@@ -1541,8 +1545,6 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 :description: Regarding norm and orthogonality of $\vect{u}$, $\vect{v}$, $\vect{u}-\vect{v}$ and $\vect{u}+\vect{v}$.
 
 ::::
-
-
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/161ecdf6-4cfb-41ba-bc16-685fe8532471?id=62414
@@ -1564,7 +1566,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 :url: https://embed.grasple.com/exercises/407cb45d-2baf-4b0d-a1eb-6e51186e19f3?id=69738
 :label: grasple_exercise_1_2_18
 :dropdown:
-:description: What to conclude from  &nbsp;$\norm{\vect{v}+\vect{w}} = \norm{\vect{v}}+\norm{\vect{w}}$?
+:description: What to conclude from &nbsp;$\norm{\vect{v}+\vect{w}} = \norm{\vect{v}}+\norm{\vect{w}}$?
 
 ::::
 
@@ -1578,9 +1580,9 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/2a2423c3-0907-40b7-bd5f-7607baf7cc09?id=62668
-:label: grasple_exercise_1_2_20
+:label: grasple*exercise_1_2_20
 :dropdown:
-:description: What to conclude 
-from $\text{proj}_{\mathbf{v}}(\mathbf{w}_1 ) = \text{proj}_{\mathbf{v}}(\mathbf{w}_2)$?
+:description: What to conclude
+from $\text{proj}_{\mathbf{v}}(\mathbf{w}_1 ) = \text{proj}_{\mathbf{v}}(\mathbf{w}\_2)$?
 
 ::::

@@ -4,7 +4,7 @@ from docutils import nodes
 from docutils.parsers.rst import directives
 from sphinx.directives.patches import Figure
 
-from utils import parse_options, generate_style, ReviewStatus
+from utils import parse_options, generate_style
 
 
 DEFAULT_BASE_URL = "https://openla.ewi.tudelft.nl/applet/"
@@ -49,15 +49,14 @@ class AppletDirective(Figure):
         params = "&".join(
             [f"{key}={quote(value)}" for key, value in params_dict.items()]
         )
-        status = ReviewStatus.parse(self.options.get("status", ""))
         style = generate_style(
-            self.options.get("width", None), self.options.get("height", None), status
+            self.options.get("width", None), self.options.get("height", None)
         )
 
         base_url = os.environ.get("BASE_URL", DEFAULT_BASE_URL)
         full_url = f'{base_url}{url}{"?" if params else ""}{params}'
         applet_html = f"""
-			<div class="applet" style="{style}">
+			<div class="applet" style="{style}; ">
 				<noscript class="loading-lazy">
 					<iframe src="{full_url}" allow="fullscreen" loading="lazy" frameborder="0"></iframe>
 				</noscript>
