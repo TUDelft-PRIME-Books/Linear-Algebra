@@ -140,7 +140,7 @@ Check for yourself that the vectors $\vect{b}_1,\vect{b}_2, \vect{b}_3$ are inde
 ::::
 
 ::::{prf:proof}
-of {prf:ref}`Thm:GramSchmidt:GramSchmidt`
+Of {prf:ref}`Thm:GramSchmidt:GramSchmidt`
 
 Let $W_j$ be the subspace spanned by the first $j$ vectors $\vect{a}_1, \ldots, \vect{a}_j$, for $j = 1,2\ldots,m$.
 
@@ -180,7 +180,7 @@ $$
 
 This makes $\text{proj}_{W_j}(\vect{a}_{j+1})$    an element of $W_{j}$  and 
 $\vect{b}_{j+1} = \vect{a}_{j+1} - \text{proj}_{W_j}(\vect{a}_{j+1})$  an element of
-$W_{j+1}$.
+$W_{j+1}$.    
 
 $\vect{b}_{j+1} \neq \vect{0}$ since we assumed that the vectors $\vect{a}_1, \ldots, \vect{a}_m$ are independent, so $\vect{a}_{j+1}$ is not in $W_j$.
 
@@ -207,7 +207,7 @@ a subspace $W = \text{span}\{\vect{a}_1, \ldots, \vect{a}_m\}$ where the vectors
 ::::{prf:example}
 :label: Ex:GramSchmidt:NonOrthog
 
-Let $W$ be the defined as the span of the set $\left\{\begin{bmatrix} 1 \\ -1   \\ 2 \\ 3    \end{bmatrix}, \begin{bmatrix} 2 \\ -2   \\ 4 \\ 6    \end{bmatrix}, \begin{bmatrix} 1 \\ -1   \\ 3 \\  4    \end{bmatrix}, \begin{bmatrix} 1 \\ 3   \\ 1 \\  2    \end{bmatrix} \right\}$.
+Let $W$ be the defined as the span of the set $\left\{\begin{bmatrix} 1 \\ -1   \\ 2 \\ 3    \end{bmatrix}, \begin{bmatrix} 2 \\ -2   \\ 4 \\ 6    \end{bmatrix}, \begin{bmatrix} 2 \\ 0   \\ 1 \\  2    \end{bmatrix}, \begin{bmatrix} 0 \\ 2  \\ -3 \\  -4    \end{bmatrix} \right\}$.
 
 Let us denote the vectors by $\vect{a}_1, \ldots, \vect{a}_4$. As in the proof of the Gram-Schmidt process
 we use the notation $W_j$ for the span of the vectors $ \vect{a}_1, \ldots, \vect{a}_j$.
@@ -225,16 +225,16 @@ We discard the zero vector, and continu to compute the next new basis vector.
 
 $$
  \vect{b}_3 = \vect{a}_3 - \text{proj}_{W_2}(\vect{a}_3) = \vect{a}_3 - \text{proj}_{W_1}(\vect{a}_3)
- =  \begin{bmatrix} 1 \\ -1   \\ 3 \\  4    \end{bmatrix} - \dfrac{20}{15}\begin{bmatrix} 1 \\ -1   \\ 2 \\ 3    \end{bmatrix} = \dfrac13 \begin{bmatrix} -1 \\ 1   \\ 1 \\  0    \end{bmatrix}.
+ =  \begin{bmatrix} 2 \\ 0   \\ 1 \\  2    \end{bmatrix} - \dfrac{10}{15}\begin{bmatrix} 1 \\ -1   \\ 2 \\ 3    \end{bmatrix} = \dfrac13 \begin{bmatrix} 4 \\ 2   \\ -1 \\  0    \end{bmatrix}.
 $$
 
-To get rid of fractions we rather continue with $\vect{b}_3 = \begin{bmatrix} -1 \\ 1   \\ 1 \\  0    \end{bmatrix}$.
+To get rid of fractions we rather continue with $\vect{b}_3 = \begin{bmatrix} 4 \\ 2   \\ -1 \\  0    \end{bmatrix}$.
 
 The last step:
 
 $$
-  \vect{b}_4 = \vect{b}_4 - \text{proj}_{\text{span}\{\vect{b}_1, \vect{b}_3}\}
-             = \vect{b}_4 - \dfrac{10}{15}\vect{b}_1 -\dfrac{-1}{15}\vect{b}_3 = \vect{0}.
+  \vect{b}_4 = \vect{b}_4 - \text{proj}_{\text{span}\{\vect{b}_1, \vect{b}_3\}}
+             = \vect{b}_4 - \dfrac{-10}{15}\vect{b}_1 -\dfrac{7}{21}\vect{b}_3 = \vect{0}.
 $$
 
 Here again we may conclude that $\vect{a}_4$ lies in span$\{\vect{b}_1,\vect{b}_3\}$, and we
@@ -244,7 +244,7 @@ The conclusion is that
 
 $$
  \left\{\vect{b}_1,\vect{b}_3\right\} = \left\{\begin{bmatrix} 1 \\ -1   \\ 2 \\ 3    \end{bmatrix},
-          \begin{bmatrix} -1 \\ 1   \\ 1 \\ 0    \end{bmatrix}\right\}
+          \begin{bmatrix} 4 \\ 2   \\ -1 \\ 0    \end{bmatrix}\right\}
 $$
 
 is an orthogonal basis for span$\{\vect{a}_1,\ldots, \vect{a}_4\}$.
@@ -331,7 +331,7 @@ $$
    A = QR,
 $$
 
-where $Q$ is an $n \times m$ matrix with _orthonormal columns_, and $R$ is an _upper triangular_ $m \times m$ matrix, with positive diagonal entries.
+where $Q$ is an $n \times m$ matrix with _orthonormal columns_, and $R$ is an _upper triangular_ $m \times m$ matrix, with *positive* diagonal entries.
 
 The matrix $Q$ is found by applying the Gram-Schmidt process to the (linearly independent) columns $\vect{a}_1,\ldots,\vect{a}_m$ of the matrix $A$ and then renormalizing.
 
@@ -443,7 +443,7 @@ The matrix $Q$ has orthonormal columns, so
 
 $$
 
- Q^TQ = I,
+ Q^TQ = I.
 $$
 
 Thus we can retrieve $R$ if we multiply both sides of the equation $\,A = QR\,$ by $\,Q^T$:
@@ -643,7 +643,7 @@ Warning: the columns of $Q$ being orthonormal is equivalent to $Q^TQ = I$. Howev
 :url: https://embed.grasple.com/exercises/fb9adc06-f068-4c5b-96ac-575415620c82?id=87821
 :label: grasple_exercise_7_3_14
 :dropdown:
-:description: T/F question about properties of Gram Schmidt process
+:description: T/F question about properties of Gram Schmidt process.
 
 ::::
 
@@ -651,7 +651,7 @@ Warning: the columns of $Q$ being orthonormal is equivalent to $Q^TQ = I$. Howev
 :url: https://embed.grasple.com/exercises/8a85a120-ef0c-41ec-9f60-ca492a35865a?id=87822
 :label: grasple_exercise_7_3_15
 :dropdown:
-:description: From orthogonal to orthonormal
+:description: From orthogonal to orthonormal.
 
 ::::
 
@@ -667,7 +667,7 @@ Warning: the columns of $Q$ being orthonormal is equivalent to $Q^TQ = I$. Howev
 :url: https://embed.grasple.com/exercises/
 :label: grasple_exercise_7_3_17
 :dropdown:
-:description: GS for set of linearly dependent set of vectors
+:description: GS for set of linearly dependent set of vectors.
 
 ::::
 
@@ -675,7 +675,7 @@ Warning: the columns of $Q$ being orthonormal is equivalent to $Q^TQ = I$. Howev
 :url: https://embed.grasple.com/exercises/12bda5c2-8ec2-44b2-b5c6-ec2cc4bb71d0?id=87841
 :label: grasple_exercise_7_3_18
 :dropdown:
-:description: To build an orthogogonal basis for column space of a matrix.
+:description: To build an orthogonal basis for the column space of a matrix.
 
 ::::
 
@@ -683,7 +683,7 @@ Warning: the columns of $Q$ being orthonormal is equivalent to $Q^TQ = I$. Howev
 :url: https://embed.grasple.com/exercises/a8741f26-64c7-4245-839a-8c5131bea496?id=87742
 :label: grasple_exercise_7_3_19
 :dropdown:
-:description: Ponderings about the QR-decomposition (of a $4 \times 2$ matrix $A$)
+:description: Ponderings about the QR-decomposition (of a $4 \times 2$ matrix $A$).
 
 ::::
 

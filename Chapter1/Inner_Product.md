@@ -98,7 +98,7 @@ There is another way to look at this, which will be useful for the definition of
 :::{figure} Images/Fig-InnerProduct-diagonal-parallelogram.svg
 :name: Fig:InnerProduct:diagonal-parallelogram
 
-The parallelogram spanned by $\vect{v}$ and $\vect{w}$ and its diagonals. How should you choose $\vect{v}$ and $\vect{w}$ such taht the diagonals have the same length?
+The parallelogram spanned by $\vect{v}$ and $\vect{w}$ and its diagonals. How should you choose $\vect{v}$ and $\vect{w}$ such that the diagonals have the same length?
 :::
 
 %::: OLD: two figures rectangle / non-rectangle
@@ -120,7 +120,7 @@ So far we have been talking about two (nonzero) vectors in the plane, i.e., in $
 :::{math}
 :label: Eq:InnerProduct:Orthogonal
 
-\mathbf{v} \perp \mathbf{w}
+\mathbf{v} \perp \mathbf{w}.
 :::
 
 Taking squares in Equation {eq}`EqualDiagonals`, we see that the following holds
@@ -155,7 +155,7 @@ The derivation is completely analogous to the one above, only now we have one ex
 So to check 'algebraically' whether two vectors are perpendicular we just have to compute $a_1b_1 +a_2b_2\, (\,+\,a_3b_3\,)$
 and see whether this is equal to 0.
 
-This expression is called the _inner product_ (or _dot product_) of the vectors $\mathbf{v}$ and $\mathbf{w}$. We denote it by $\mathbf{v}\ip\mathbf{w}$.
+This expression is called the *dot product* (or *inner product*) of the vectors $\mathbf{v}$ and $\mathbf{w}$. We denote it by $\mathbf{v}\ip\mathbf{w}$.
 Note that the dot product of a general vector $\mathbf{v}=\begin{bmatrix} a_{1}\\a_{2}\\a_{3}\end{bmatrix}$ in $\mathbb{R}^3$ with itself gives
 
 $$
@@ -182,7 +182,7 @@ Using the dot product the concepts length and perpendicular easily carry over to
 ::::{prf:definition}
 :label: Dfn:InnerProduct:DotProduct
 
-The _dot product_ (or _inner product_) of two vectors
+The **dot product** (or *inner product*) of two vectors
 $\mathbf{v}=\begin{bmatrix}a_{1}\\a_{2}\\ \vdots\\a_{n}\end{bmatrix}$ and
 $\mathbf{w}=\begin{bmatrix}b_{1}\\b_{2}\\ \vdots\\b_{n}\end{bmatrix}$ in $\mathbb{R}^n$ is defined as
 
@@ -278,7 +278,7 @@ $$
 
 iii. Is proved in the same way as (ii).
 
-iv. This consists of two statement. For the first, we note that
+iv. This consists of two statements. For the first, we note that
 
 $$
  \mathbf{v}\ip\mathbf{v} = a_1a_1 +a_2a_2+ \ldots + a_na_n = a_1^2+a_2^2 + \ldots + a_n^2
@@ -429,7 +429,7 @@ We use this identity to define the concept of perpendicularity in $\mathbb{R}^n$
 :::{prf:definition}
 :label: Dfn:InnerProduct:Orthogonality
 
-Two vectors $\mathbf{v}$ and $\mathbf{w}$ in $\mathbb{R}^n$ are called _orthogonal_ if $\mathbf{v}\ip\mathbf{w} = 0$. As before, we denote this by $\mathbf{v}\perp\mathbf{w}$.
+Two vectors $\mathbf{v}$ and $\mathbf{w}$ in $\mathbb{R}^n$ are called **orthogonal** if $\mathbf{v}\ip\mathbf{w} = 0$. As before, we denote this by $\mathbf{v}\perp\mathbf{w}$.
 
 :::
 
@@ -491,7 +491,7 @@ In {prf:ref}`Prop:RulesInnerProduct` iv. it was stated that the last equality on
 :::
 
 The fact that the zero vector is orthogonal to _any_ vector is an immediate consequence of the definition, but it
-may seem counter intuitive to you. The following example illustrates a situation where this orthogonality leads to a much nicer outcome.
+may seem counterintuitive to you. The following example illustrates a situation where this orthogonality leads to a much nicer outcome.
 
 ::::{prf:example}
 :label: Ex:PerpendicularLine
@@ -633,8 +633,8 @@ as required.
 :url: https://embed.grasple.com/exercises/88c460cd-36ee-49b0-8fb8-d29b55ad253a?id=84822
 :label: grasple_exercise_1_2_2T
 :dropdown:
-:description: Computing the projection of a vector $\vect{w}$ onto a vector $\vect{v}
-$.
+:description: Computing the projection of a vector $\vect{w}$ onto a vector $\vect{v}$.
+
 ::::
 
 :::{exercise}
@@ -1169,7 +1169,7 @@ With this inequality established, the Triangle Inequality
 
 :::{prf:theorem}
 
-For any two vectors in $\mathbb{R}^n$:
+For any two vectors in $\mathbb{R}^n$,
 
 $$
 
@@ -1221,11 +1221,9 @@ $$
 
 ## Angles in $\mathbb{R}^n$
 
-The first motivation to consider the dot product came from the question of perpendicularity.
-We have seen that the length of a vector can also be computed using a dot product.
-
-Below we will show that not only can the dot product be used to mark angles between vectors of $\frac12\pi$
-(namely, when the vectors are perpendicular), but that it is possible to express the angle between any two (nonzero) vectors into dot products.
+The first motivation to consider the dot product came from the question of perpendicularity of two vectors in the plane or in $\R^3$.
+Perpendicularity of two vectors means that the angle between them is equal to $\frac12\pi$.
+Below we will show that it is possible to express the angle between *any* two (nonzero) vectors into dot products. And use this to define the concept of angle in a general space $\R^n$.
 
 :::{figure} Images/Fig-InnerProduct-AngleAndProjection.svg
 :name: Fig:InnerProduct:AngleAndProjection
@@ -1280,7 +1278,7 @@ $$
 
 We will derive formula {eq}`Eq:InnerProduct:GeometricDefinition`.
 Assume that $\mathbf{v}$ and $\mathbf{w}$ are nonzero vectors.
-Recall the formula of the orthogonal projection
+Recall the formula of the orthogonal projection of $\mathbf{w}$ onto $\mathbf{v}$, 
 
 $$
 
@@ -1324,7 +1322,7 @@ So we may conclude that
 In the case of an obtuse angle, we use that the projection of $\mathbf{w}$ onto $\mathbf{v}$ is equal to the projection
 of $\mathbf{w}$ onto $-\mathbf{v}$, as it is in fact the projection onto the line consisting of all multiples of $\mathbf{v}$. Now look at the picture on the right of {numref}`Figure %s <Fig:InnerProduct:AngleAndProjection>`
 . There you see that $\mathbf{w}$ and
-$-\mathbf{v}$ make an acute angle $\psi = \pi - \phi$, so we can apply
+$-\mathbf{v}$ make an acute angle $\psi = \pi - \varphi$, so we can apply
 Equation {eq}`Eq:InnerProduct:GeometricInterpretation` to $\mathbf{w}$ and $-\mathbf{v}$:
 
 $$
@@ -1341,7 +1339,12 @@ $$
 ::::{prf:observation}
 :label: Rem:InnerProduct:Interpretation|w|cos(theta)
 
-Note that the absolute value of $\norm{\mathbf{w}}\norm{\mathbf{v}}\cos(\varphi)$
+Note that the absolute value of the expression
+
+$$
+ \norm{\mathbf{w}}\cos(\varphi)
+$$
+
 is the length of the orthogonal projection of $\vect{w}$ onto $\vect{v}$.
 
 ::::
@@ -1385,14 +1388,15 @@ Since we have defined the dot product and the norm in $\mathbb{R}^n$, we can use
 :::{prf:definition}
 :label: Dfn:InnerProduct:AngleInRn
 
-For two nonzero vectors $\mathbf{v}$ and $\mathbf{w}$ in $\mathbb{R}^n$, the _angle_ between the vectors is defined as
+For two nonzero vectors $\mathbf{v}$ and $\mathbf{w}$ in $\mathbb{R}^n$, the **angle** between the vectors is defined as
 
 $$
 
    \varphi = \angle(\mathbf{v},\mathbf{w}) =  \arccos\left(\dfrac{\mathbf{v}\ip\mathbf{w}}{\norm{\mathbf{v}} \norm{\mathbf{w}}} \right).
 $$
 
-This definition makes sense, since the Cauchy-Schwarz Inequality implies
+This definition makes sense, since the Cauchy-Schwarz inequality ({prf:ref}`Thm:InnerProduct:Cauchy-Schwarz`) 
+implies
 
 $$
     -1 \leq \dfrac{\mathbf{v}\ip\mathbf{w}}{\norm{\mathbf{v}}\,\norm{\mathbf{w}}} \leq 1.

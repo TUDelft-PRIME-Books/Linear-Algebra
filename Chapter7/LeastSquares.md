@@ -12,7 +12,7 @@ In this section we will reconsider the inconsistent situation and ask ourselves 
 
 One common situation where an inconsistent linear system arises quite naturally is fitting a line through a set of points.
 Suppose $n \geq 3$ points $(x_1,y_1), \ldots, (x_n,y_n)$ in the plane are given.
-Which line best fits this set of points?
+Which line   $\ell: y = ax + b$  best fits this set of points?
 
 There are different ways to define what is the _best_ line. For instance, we may mean the line that minimizes the sum of the distances of the points to the line. From a purely geometric point of view that seems the most natural way.
 Or, we can take the line for which the sum of vertical distances from the points to the line, i.e.,
@@ -899,7 +899,7 @@ $$
 :url: https://embed.grasple.com/exercises/a0878702-dcc0-4216-b2d6-0b1d7d1b046e?id=91142
 :label: grasple_exercise_7_4_4
 :dropdown:
-:description: Finding the LS solution for 3x2 systems in three steps
+:description: Finding the LS solution for 3x2 systems in three steps.
 
 ::::
 
@@ -963,7 +963,7 @@ $$
 :url: https://embed.grasple.com/exercises/3d0a7884-09ee-4f89-a2e5-1c1476d7e2a3?id=91448
 :label: grasple_exercise_7_4_12
 :dropdown:
-:description: Finding the LS solution for a 4x3 system (with some tricky reduction work)
+:description: Finding the LS solution for a 4x3 system (with some tricky reduction work).
 
 ::::
 
@@ -1437,7 +1437,7 @@ Least squares fitting via logarithmic scale
 :url: https://embed.grasple.com/exercises/dad8ca0a-ef17-4757-803c-26b8ae9804de?id=91886
 :label: grasple_exercise_7_4_16
 :dropdown:
-:description: Fitting a line through set of points and compute the residual vector
+:description: Fitting a line through set of points and compute the residual vector.
 
 ::::
 ::::{grasple}
@@ -1451,20 +1451,20 @@ Least squares fitting via logarithmic scale
 :url: https://embed.grasple.com/exercises/222ee704-85f5-470a-b48f-f88d9900a8d1?id=91890
 :label: grasple_exercise_7_4_18
 :dropdown:
-:description: Fitting a quadratic polynomial to a set of points
+:description: Fitting a quadratic polynomial to a set of points.
 
 ::::
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/ff6329bd-f5b3-41ce-828f-2086cf651181?id=91898
 :label: grasple_exercise_7_4_19
 :dropdown:
-:description: Design matrix to fit $y = ax + bx^3$ to a set of points
+:description: Design matrix to fit $y = ax + bx^3$ to a set of points.
 
 ::::
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/f75014bf-0e90-43e7-acf4-216cb38ffd11?id=91903
 :label: grasple_exercise_7_4_20
 :dropdown:
-:description: Design matrix to fit $y = c_1 e^t + c_2 \cos(x) + c_3 \sin(x)$ to a set of points
+:description: Design matrix to fit $y = c_1 e^t + c_2 \cos(x) + c_3 \sin(x)$ to a set of points.
 
 ::::
