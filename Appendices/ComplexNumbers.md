@@ -1061,6 +1061,15 @@ The three solutions from {prf:ref}`Ex:ComplexNumbers:threesolutions`.
 
 We can generalize the method for solving $z^n=w$ from the example above:
 
+```{applet}
+:url: appendix/complex_numbers
+:fig: Images/Fig-ComplexNumbers-threesolfig.svg
+:name: Fig:ComplexNumbers:general
+:position: 0, -1
+
+The n solutions from {prf:ref}`Ex:ComplexNumbers:threesolutions` generalized.
+```
+
 ```{prf:algorithm} Solving $z^n=w$
 
 <ol>

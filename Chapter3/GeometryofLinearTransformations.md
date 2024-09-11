@@ -146,11 +146,13 @@ $$
 
 this projection is depicted on the right in {numref}`Figure %s <Fig:GeomLinTrans:ProjinR2>`. It is an example of a non-orthogonal (or **oblique**) projection. Of course, we again have to check that this is really a linear transformation.
 
-::::{figure} Images/Fig-GeomLinTrans-ProjinR2.svg
+```{applet}
+:url: geom_lin_trans/proj_in_r2
+:fig: Images/Fig-GeomLinTrans-ProjinR2.svg
 :name: Fig:GeomLinTrans:ProjinR2
 
 On the left an orthogonal projection $T_{1}$ acting on a few selected vectors $\mathbf{u}_{1}$, $\mathbf{u}_{2}$, and $\mathbf{u}_{3}$. On the right a non-orthogonal projection $T_{2}$ acting on some selected vectors $\mathbf{v}_{1}$, $\mathbf{v}_{2}$, and $\mathbf{v}_{3}$. In both cases, the blue line represents the line $\mathcal{L}$ in the direction of $\begin{bmatrix}2\\1\end{bmatrix}$. On the left, every vector $\mathbf{u}_{i}$ is mapped to the closest vector that lies on $\mathcal{L}$. On the right, every vector $\mathbf{v}_{i}$ is mapped to the intersection of $\mathcal{L}$ wih the line through $\mathbf{v}_{i}$ in the direction given by $\begin{bmatrix}-2\\1\end{bmatrix}$.
-::::
+```
 
 ::::::{prf:proposition}
 Let $\mathcal{L}$ be a line through the origin and let $\mathbf{w}$ be a vector not on $\mathcal{L}$. The transformation $T:\mathbb{R}^{2}\to\mathbb{R}^{2}$ which maps a vector $\mathbf{u}$ to the intersection of $\mathcal{L}$ and the line through $\mathbf{u}$ in the direction of $\mathbf{w}$ is a linear transformation.
@@ -486,11 +488,13 @@ $$
 
 ::::::
 
-::::{figure} Images/Fig-GeomLinTrans-RotisDoubleRefl.svg
+```{applet}
+:url: geom_lin_trans/rotisdoublerefl
+:fig: Images/Fig-GeomLinTrans-RotisDoubleRefl.svg
 :name: Fig:GeomLinTrans:RotisDoubleRefl
 
 {prf:ref}`Prop:GeomLinTrans:RotisDoubleRefl` illustrated. $\mathcal{L}_{1}$ and $\mathcal{L}_{2}$ are arbitrary lines that make an angle of $\theta/2$ with each other. Composing the reflections along $\mathcal{L}_{1}$ and $\mathcal{L}_{2}$ then gives the rotation over the angle $\theta$. This is shown for the particular vector $\mathbf{v}$. Note that the angle $\phi/2$ that $\mathcal{L}_{1}$ makes with the positive $x$ axis is irrelevant to the proof.
-::::
+```
 
 In the plane, you can only rotate around the origin. Things get considerably more complicated if we move to $\mathbb{R}^{3}$, because there you can rotate around any arbitrary line. We will not get into that here.
 
