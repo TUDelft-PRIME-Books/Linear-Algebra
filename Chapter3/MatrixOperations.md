@@ -191,8 +191,10 @@ An operator of which the usefulness is not immediately clear, but which fits wel
 The **transpose** of an $m \times n$ matrix $A$ with entries $a_{ij}$ is the
 $n \times m$ matrix $B$ with entries $b_{ij}$ defined by
 
-<!-- prettier-ignore -->
-$ b_{ij} = a_{ji}$. &nbsp; It is denoted by $B = A^T$.
+$$ 
+  b_{ij} = a_{ji}, \quad  i = 1,\ldots,n,\,\,j=1,\ldots, m
+$$  
+It is denoted by $B = A^T$.
 
 ::::::
 
@@ -1686,7 +1688,7 @@ The remaining exercises are less of a compuational character.
 :url: https://embed.grasple.com/exercises/bbed8637-4110-4e90-a1dc-a5960a405caf?id=70289
 :label: grasple_exercise_3_2_23
 :dropdown:
-:description: Number of columns of $C$ is $AC=B$.
+:description: Number of columns of $C$ if $AC=B$.
 
 ::::::
 

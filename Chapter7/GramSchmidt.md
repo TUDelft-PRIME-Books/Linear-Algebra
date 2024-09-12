@@ -19,9 +19,8 @@ For the first vector of this 'new' basis we can simply take $\vect{b}_1 = \vect{
 
 As a second basis vector we can take
 
-:::{math}
+::::{math}
 :label: Eq:GramSchmidt:Step2
-
 
   \vect{b}_2 = \vect{a}_2 - \text{proj}_{\vect{a}_1}(\vect{a}_2) = 
                \vect{a}_2 - \dfrac{\vect{a}_2\ip\vect{a}_1}{\vect{a}_1\ip\vect{a}_1}    \vect{a}_1.

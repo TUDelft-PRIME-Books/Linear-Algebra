@@ -1600,7 +1600,7 @@ $$
 \left[\begin{array}{rrrr}2 & -1 & -1 & 2\\1 & 2 & 4 & 4\\4 & -2 & -4 & 6
 \end{array}\right]\begin{array}{l}
 [R_1] \\
-{[2R_1]} \\
+{[2R_2]} \\
 {[R_3]} \\
 \end{array} \quad\sim
 \left[\begin{array}{rrrr}2 & -1 & -1 & 2\\2 & 4 & 8 & 8\\4 & -2 & -4 & 6
@@ -1617,7 +1617,7 @@ $$
 \end{array}\right]\begin{array}{l}
 [R_1] \\
 {[R_2]} \\
-{[(-\nicefrac12)R_2]} \\
+{[(-\nicefrac12)R_3]} \\
 \end{array} \quad\sim
 \left[\begin{array}{rrrr}2 & -1 & -1 & 2\\0 & 5 & 9 & 6\\0 & 0 & 1 & -1
 \end{array}\right]\begin{array}{l}

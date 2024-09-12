@@ -166,6 +166,8 @@ Also give a set with only the properties i and iii.
 </li>
 </ol>
 
+You may get some inspriration from the applet below.
+
 ::::::
 
 ::::::{dropdown} Solution to&nbsp;{numref}`Exc:Subspaces:NonSubspacesR2`&nbsp;(_click to show_)

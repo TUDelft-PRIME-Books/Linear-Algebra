@@ -14,7 +14,7 @@ One common situation where an inconsistent linear system arises quite naturally 
 Suppose $n \geq 3$ points $(x_1,y_1), \ldots, (x_n,y_n)$ in the plane are given.
 Which line   $\ell: y = ax + b$  best fits this set of points?
 
-There are different ways to define what is the _best_ line. For instance, we may mean the line that minimizes the sum of the distances of the points to the line. From a purely geometric point of view that seems the most natural way.
+There are different ways to define what is the _best_ line. For instance, we may mean the line that minimizes the sum of the (perpendicular) distances of the points to the line. From a purely geometric point of view that seems the most natural way.
 Or, we can take the line for which the sum of vertical distances from the points to the line, i.e.,
 
 $$
@@ -27,7 +27,11 @@ See {numref}`Figure %s <Fig:LeastSquares:BestLines>` for both interpretations of
 :::{figure} Images/Fig-LeastSquares-BestLines.svg
 :name: Fig:LeastSquares:BestLines
 
-What is the best best line?
+What is the best best line? <BR>
+Challenges (for the interactive applet)<BR>
+Can you get the total distance in the left picture below  $\blacksquare \blacksquare$ ?  <BR>
+Can you get the total distance in the right picture below $\blacksquare \blacksquare$ ? <BR>
+
 :::
 
 Both are sensible ideas. However, to turn any of these two ideas into an algorithm to find the best line is not as straightforward as the computations that come up if we put the question into the realm of linear algebra.
@@ -72,7 +76,7 @@ is consistent. Which generally is not the case.
 
 We will come back to this question in {numref}`Subsection %s <SubSec:LeastSquares:LinearModels>`.
 
-(SubSec:LeastSquares:NormalEquations)=
+(SubSec:LeastSquares:LS-solutions)=
 
 ## Least Squares Solutions
 
