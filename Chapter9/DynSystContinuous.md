@@ -222,7 +222,10 @@ a **saddle point** if $\lambda_{1}\lambda_{2}<0$, i.e. if $\lambda_{1}$ and $\la
 
 </ul>
 
+The three different behaviours are illustrated in {numref}`Figure %s <Fig:DynSystContinuous:Trajectories>`.
+
 :::
+
 
 Let us once again consider the system $\vect{y}'=A\vect{y}$. By {prf:ref}`Prop:DynSystContinuous:EVsgiveSols`, we can find solutions $\vect{y}=\vect{v}e^{\lambda t}$ where $\lambda$ is an eigenvalue of $A$ and $\vect{v}$ is a corresponding eigenvector. But if $\lambda$ is not a real number, this does not give a real-valued function. In some applications that's perfectly fine, but often we're interested in real solutions to systems of linear differential equations. Can we stil find any of those if some eigenvalues are complex?
 
@@ -273,14 +276,21 @@ $$
 
 $$
 
-are linearly independent solutions to the linear system of differential equations $\vect{y}'=A\vect{y}$. In this case, the origin is called a **spiral point**.
+are linearly independent solutions to the linear system of differential equations $\vect{y}'=A\vect{y}$. In this case, the origin is called a **spiral point**. An example of a spiral point can be seen in {numref}`Figure %s <Fig:DynSystContinuous:Trajectories>`.
 
 :::
 
 If $a<0$ in this proposition, then $e^{at}$ will become arbitrarily small, so as $t$ increases, $\vect{y}(t)$ will approach $0$. In this case, the trajectory will spiral towards the origin. If $a>0$, then $e^{at}$ becomes arbitrarily large and the trajectory will spiral away from the origin.
 
+
+::::{figure} Images/Fig-DynSystContinuous-Trajectories.svg
+:name: Fig:DynSystContinuous:Trajectories
+
+The possible behaviours of the origin illustrated. On the top left, it's an attractor, on the top right a repeller, on the bottom left a saddle point, and on the bottom right a spiral point. 
+::::
+
 ## Decoupling a dynamical system
 
-In the previous section, we say that the eigenvalues and eigenvectors determine the long-term behaviour of a dynamical system. This leads naturally to the suspicions that, perhaps, diagonalizing a matrix can help us solve a system of linear differential equations. This is indeed the case.
+In the previous section, we saw that the eigenvalues and eigenvectors determine the long-term behaviour of a dynamical system. This leads naturally to the suspicions that, perhaps, diagonalizing a matrix can help us solve a system of linear differential equations. This is indeed the case.
 
 Let us assume $A$ is an $n\times n$-matrix with eigenfunctions $\vect{y}_{1},...,\vect{v}_{n}$, that is $\vect{y}_{i}=\vect{v}_{i}e^{\lambda_{i}t}$ where $\lambda_{i}$ is an eigenvalue of $A$ with associated eigenvector $\vect{v}_{i}$.
