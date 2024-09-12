@@ -23,3 +23,9 @@
     display: initial;
   }
 }
+div.exercise p.admonition-title::after {
+  content: var(--pst-icon-pencil);
+}
+div.exercise p.admonition-title::before {
+  content: "";
+}
