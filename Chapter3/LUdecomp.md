@@ -619,7 +619,12 @@ $$
                     1 & 2 & 1 \\
                     4 & 8 & 6 \\
                     2 & 5 & 7
-                  \end{bmatrix} \quad \sim \quad
+                  \end{bmatrix}
+                  \begin{array}{l}
+                      [R_1] \\ 
+                      {[R_2-4R_1]} \\ 
+                      {[R_3-2R_1]} 
+                  \end{array} \quad \sim \quad
    \begin{bmatrix}
                     1 & 2 & 1 \\
                     0 & 0 & 2 \\
@@ -1095,6 +1100,9 @@ Moreover, if the rows of $A$ are linearly independent the matrices $L$ and $U$ a
 A similar proposition holds for $m \times n$ matrices with $m > n$.  However, in this case the systems
 $A\vect{x} = \vect{b}$ are inconsistent for most vectors $\vect{b}$, and then other techniques come into play  (e.g., see {numref}`SubSec:LeastSquares:LS-solutions`).
 
+In the remainder of this subsection we address the next-best thing we can do in case a matrix does not have an $LU$ decomposition.
+
+
 ::::::{prf:example}
 :label: Ex:LUdecomp:NoLUcontinued
 
@@ -1106,7 +1114,12 @@ $$
                     1 & 2 & 1 \\
                     4 & 8 & 6 \\
                     2 & 5 & 7
-                  \end{bmatrix} \quad \sim \quad
+                  \end{bmatrix}               
+                  \begin{array}{l}
+                      [R_1] \\ 
+                      {[R_2-4R_1]} \\ 
+                      {[R_3-2R_1]} 
+                  \end{array} \quad \sim \quad
    \begin{bmatrix}
                     1 & 2 & 1 \\
                     0 & 0 & 2 \\
@@ -1133,7 +1146,7 @@ $$
                     1 & 0 & 0 \\
                     2 & 1 & 0 \\
                     4 & 0 & 1
-                  \end{bmatrix},      
+                  \end{bmatrix}\,      
              \begin{bmatrix}
                     1 & 2 & 1 \\
                     0 & 1 & 5 \\
@@ -1142,26 +1155,11 @@ $$
 $$
 
 
-This is what we will call a **PLU** decomposition. 
+This is what we will call a *PLU* decomposition. 
 
 Note that first subtracting row 1 four times from row 2 and two times from row 3, followed by exchanging row 2 and row 3 leads to the same echelon matrix as first swapping row 2 and 3 and then subtracting row 1  two times from row 2 and four times from row 3.
 
-Before we  generalize example {prf:ref}`Ex:LUdecomp:NoLUcontinued` a few remarks about the *permutation matrices* $P$ that pop up.  Permutation is a sysnonym for reordering.
-
-
-
-
-
-::::::{prf:theorem} Existence of a $PLU$ Decomposition
-:label: LUDecomp:existencePLU
-
-Suppose that $A$ is an $m\times n$ matrix with real coefficients. Then there exist matrices $P$, $L$ and $U$ such that
-
-$$ PA = LU, $$
-
-where $P$ is an $m\times m$ matrix that exchanges the rows of $A$, $L$ is an $m\times m$ lower triangular matrix and $U$ is an $m\times n$ echelon matrix that is obtained after performing the corresponding row operations to $PA$.
-
-::::::
+Before we  generalize example {prf:ref}`Ex:LUdecomp:NoLUcontinued` a few remarks about the *permutation matrices* $P$ that pop up.  Permutation is a synonym for reordering.
 
 
 ::::::{prf:definition}
@@ -1252,19 +1250,19 @@ $$
 and
 
 $$
-  P_2^TP_2 = \begin{bmatrix} 0 & 0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 
+  P_2^TP_2 = \begin{bmatrix} 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 
             \end{bmatrix}  
-           \begin{bmatrix} 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 
+             \begin{bmatrix} 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 
            \end{bmatrix}
            =
-           \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\  0 & 0 & 0 & 1 
-           \end{bmatrix}
+             \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\  0 & 0 & 0 & 1 
+           \end{bmatrix}.
 $$
 
 ::::::
 
 
-::::::{dropdown}  Proof of two properties of permutation matrices
+::::::{dropdown}  Proof of the two properties of permutation matrices
 
 :::{latexlist}
 :enumerated: true
@@ -1272,7 +1270,7 @@ $$
 
 \item The product of two $n\times n$ permutation matrices is again a permutation matrix.
 
-Suppose $P_1$ and $P_2$ are permutation matrices. With the product  $P_1P_2$ the rows of $P_2$ are reordered,  and that leaves the properties a $1$ in each row, a $1$ in each column intact.
+Suppose $P_1$ and $P_2$ are permutation matrices. With the product  $P_1P_2$ the rows of $P_2$ are reordered,  and that leaves the properties a $1$ in each row, a $1$ in each column, all other entries equal to $0$,  intact.
 
 
 \item The inverse of a permutation matrix is its transpose.  Thus,  $P^{-1} = P^T$.
@@ -1299,15 +1297,15 @@ the result immediately follows.
 
 Suppose that $A$ is an $m\times n$ matrix with real coefficients, and let $m \geq n$. Then there exist a permutation matrix $P$, an upper triangular matrix $L$ and an echelon matrix $U$ such that
 
-$$ PA = LU, $$
-
-where $P$ is an $m\times m$ matrix that exchanges the rows of $A$, $L$ is an $m\times m$ lower triangular matrix obtained inverting the product matrices that perform row operations to that only add multiples of a row to other rows in the matrix $PA$, and the matrix $U$ is an $m\times n$ upper-trapezoidal matrix (echelon form) that is obtained after performing the corresponding row operations to $PA$.
+$$ 
+  PA = LU. 
+$$
 
 ::::::
 
 ::::::{prf:remark} 
 
-As was mentioned before, the key idea is to perform the row exchanges first. These can be put together in the permutation matrix $P$. The algorithm to actually find the $LU$ decomposition of $PA$ without doing the whole row reduction process for $PA$ all over again is rather intricate, and in our view belongs to a course of numerical linear algebra.  There it will be explained that may also be preferable to work towards a $PLU$ decomposition instead of an $LU$ decomposition in cases where theoretically it is not absolutely necessary.  For numerical reasons, having to do with finite accuracy when representing real numbers in computers, it may be better to choose the pivots in another order than just top-down.
+As was mentioned before, the key idea is to perform the row exchanges first. These can be put together in the permutation matrix $P$. The algorithm to actually find the $LU$ decomposition of $PA$ without doing the whole row reduction process for $PA$ all over again is rather intricate, and in our view belongs to a course of numerical linear algebra.  There it will be explained that it may also be preferable to work towards a $PLU$ decomposition instead of an $LU$ decomposition in cases where theoretically it is not absolutely necessary.  For numerical reasons, having to do with finite accuracy when representing real numbers in computers, it may be better to choose the pivots in another order than just top-down.
 
 
 ::::::
