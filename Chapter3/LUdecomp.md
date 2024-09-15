@@ -988,7 +988,7 @@ $$
 We can row reduce $A$ top-down to an echelon matrix:
 
 $$
-A =
+\begin{array}{rcl}
 \begin{bmatrix}
 1  &  3 &  1 & -1 \\
 -1 &  1 &  1 &  2 \\
@@ -999,7 +999,7 @@ A =
 {[R_2-{\color{blue}(-1)}R_1]} \\
 {[R_3-{\color{blue}2}R_1]} \\
 \end{array}
-\quad \sim \quad
+& \sim &
 \begin{bmatrix}
 1  &  3 &  1 & -1 \\
 0  &  4 &  2 &  1 \\
@@ -1009,13 +1009,14 @@ A =
 [R_1] \\
 {[R_2]} \\
 {[R_3-{\color{blue}(-2)}R_2]} \\
-\end{array}
-\quad \sim \quad
+\end{array}\\
+&\sim&
 \begin{bmatrix}
 1  &  3 &  1 & -1 \\
 0  &  4 &  2 &  1 \\
 0  &  0 &  1 &  7
 \end{bmatrix}.
+\end{array}
 $$
 
 We then have
@@ -1182,29 +1183,40 @@ Two $4\times 4$ permutation matrices are
            \end{bmatrix}
 ::::
 
-Note that for an arbitrary $4 \times 4$matrix $A$ we have
+Note that for an arbitrary $4 \times 4$ matrix $A$ we have
 
 $$
-  P_1 A = \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 
+  P_1 A = \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & {\color{blue}1} \\ 0 & 0 & 1 & 0 
           \end{bmatrix}
         \begin{bmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\ a_{21} & a_{22} & a_{23} & a_{24} \\ 
-                        a_{31} & a_{32} & a_{33} & a_{34} \\ a_{41} & a_{42} & a_{43} & a_{44}
+                        a_{31} & a_{32} & a_{33} & a_{34} \\ 
+                        {\color{blue}a_{41}} & {\color{blue}a_{42}} & 
+                        {\color{blue}a_{43}} & {\color{blue}a_{44}}
           \end{bmatrix}   =
         \begin{bmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\ a_{21} & a_{22} & a_{23} & a_{24} \\ 
-                        a_{41} & a_{42} & a_{43} & a_{44} \\ a_{31} & a_{32} & a_{33} & a_{34} 
+                        {\color{blue}a_{41}} & {\color{blue}a_{42}} & 
+                        {\color{blue}a_{43}} & {\color{blue}a_{44}} \\ 
+                        a_{31} & a_{32} & a_{33} & a_{34} 
           \end{bmatrix}   
 $$
 
 and
 
 $$
-  P_2 A = \begin{bmatrix} 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 
+  P_2 A = \begin{bmatrix} 0 & {\color{blue}1} & 0 & 0 \\ 0 & 0 & {\color{red}1} & 0 \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 
             \end{bmatrix} 
-          \begin{bmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\ a_{21} & a_{22} & a_{23} & a_{24} \\ 
-                        a_{31} & a_{32} & a_{33} & a_{34} \\ a_{41} & a_{42} & a_{43} & a_{44}
+          \begin{bmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\ 
+                          {\color{blue}a_{21}} & {\color{blue}a_{22}} & 
+                          {\color{blue}a_{23}} & {\color{blue}a_{24}} \\ 
+                          {\color{red}a_{31}} & {\color{red}a_{32}} & 
+                          {\color{red}a_{33}} & {\color{red}a_{34}} \\ 
+                          a_{41} & a_{42} & a_{43} & a_{44}
             \end{bmatrix}   = 
-          \begin{bmatrix}  a_{21} & a_{22} & a_{23} & a_{24} \\ a_{31} & a_{32} & a_{33} & a_{34} \\ 
-                         a_{41} & a_{42} & a_{43} & a_{44} \\a_{11} & a_{12} & a_{13} & a_{14}
+          \begin{bmatrix} {\color{blue}a_{21}} & {\color{blue}a_{22}} & 
+                          {\color{blue}a_{23}} & {\color{blue}a_{24}} \\ 
+                          {\color{red}a_{31}} & {\color{red}a_{32}} & 
+                          {\color{red}a_{33}} & {\color{red}a_{34}} \\ 
+                          a_{41} & a_{42} & a_{43} & a_{44} \\a_{11} & a_{12} & a_{13} & a_{14}
             \end{bmatrix}  
 $$
 
@@ -1292,7 +1304,7 @@ the result immediately follows.
 
 ::::::
 
-::::::{prf:theorem} Existence of a PLU Decomposition
+::::::{prf:theorem} Existence of a $PLU$ Decomposition
 :label: LUDecomp:existencePLU
 
 Suppose that $A$ is an $m\times n$ matrix with real coefficients, and let $m \geq n$. Then there exist a permutation matrix $P$, an upper triangular matrix $L$ and an echelon matrix $U$ such that
@@ -1307,7 +1319,73 @@ $$
 
 As was mentioned before, the key idea is to perform the row exchanges first. These can be put together in the permutation matrix $P$. The algorithm to actually find the $LU$ decomposition of $PA$ without doing the whole row reduction process for $PA$ all over again is rather intricate, and in our view belongs to a course of numerical linear algebra.  There it will be explained that it may also be preferable to work towards a $PLU$ decomposition instead of an $LU$ decomposition in cases where theoretically it is not absolutely necessary.  For numerical reasons, having to do with finite accuracy when representing real numbers in computers, it may be better to choose the pivots in another order than just top-down.
 
+::::::
+
+
+::::::{prf:example}
+:label: Ex:LUdecomp:PLUexample-2
+
+We will row reduce the matrix $ A= \begin{bmatrix}2&4&3 \\ 1&2&3\\1&3&2 \end{bmatrix}$ in an alternative order than top-down and extricate a $PLU$ decomposition from it.
+
+$$
+\left[\begin{array}{rrr}2&4&3 \\ 1&2&3\\ \fbox{1}&3&2 \end{array} \right]  \begin{array}{l}
+[R_1-{\color{blue}2}R_3] \\
+{[R_2-{\color{blue}1}R_3]} \\
+{[R_3]} \\
+\end{array}
+\sim
+\left[\begin{array}{rrr}0&\fbox{$-2$}&-1 \\ 0 & -1 &1 \\ 1&3&2\end{array} \right]  \begin{array}{l}
+[R_1] \\
+{[R_2-{\color{red}\frac12}R_1]} \\
+{[R_3]} \\
+\end{array}
+\sim
+\left[\begin{array}{rrr}0&-2&-1 \\ 0 & 0 &\frac32 \\ 1&3&2\end{array} \right].
+$$
+
+If we put together the matrices that describe the row operations we get
+
+:::{math} 
+:label: Eq:LUdecomp:PivotStructure
+
+ A = \begin{bmatrix}2&\fbox{4}&3 \\ 1&2&\fbox{3}\\ \fbox{1}&3&2\end{bmatrix} =
+     \begin{bmatrix} 1 & 0 & {\color{blue}2} \\ {\color{red}\frac12} &1 & {\color{blue}1} \\ 0 & 0 & 1\end{bmatrix}
+     \begin{bmatrix} 0 & -2 & -1 \\ 0 & 0 &\frac32  \\1 & 3 & 2\end{bmatrix} = \tilde{L}\tilde{U}.
+
+:::
+
+If we would have started from
+
+$$
+  \begin{bmatrix} 1&3&2 \\2&4&3 \\ 1&2&3\end{bmatrix} = PA = 
+   \begin{bmatrix} 0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0\end{bmatrix} 
+   \begin{bmatrix} 2&4&3 \\ 1&2&3\\1&3&2 \end{bmatrix}
+$$
+
+using the same pivots would have arrived at
+
+$$
+  \begin{bmatrix} 1&3&2 \\2&4&3 \\ 1&2&3\end{bmatrix} \sim 
+  \begin{bmatrix} 1&3&2 \\0&-2&-1 \\ 0&-1&1\end{bmatrix} \sim
+  \begin{bmatrix} 1&3&2 \\0&-2&-1 \\ 0&0&\frac32\end{bmatrix}, 
+$$
+
+so
+
+$$
+  PA = \begin{bmatrix} 1&3&2 \\2&4&3 \\ 1&2&3\end{bmatrix}  =
+  \begin{bmatrix} 1 & 0 & 0 \\{\color{blue}2} & 1 & 0 \\ 
+                  {\color{blue}1} & {\color{red}\frac12} & 1\end{bmatrix} 
+  \begin{bmatrix} 1&3&2 \\0&-2&-1 \\ 0&0&\frac32\end{bmatrix} = LU. 
+$$
+
+The matrix $P$ is the inverse of (so also the transpose of) the matrix that describes the positions of the pivots as in Equation {eq}`Eq:LUdecomp:PivotStructure`. 
+It asks for some careful analysis how to reconstruct $L$ from $\tilde{L}$.
 
 ::::::
+
+
+
+
 
 ## Efficiency Issues
