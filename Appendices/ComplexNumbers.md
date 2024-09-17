@@ -14,7 +14,6 @@ where $a\neq0$. Previously you probably learned that Equation {eq}`Eq:ComplexNum
 
 :::{math}
 :label: Eq:ComplexNumbers:abc-sol
-
 x_{1,2}=\frac{-b\pm\sqrt{D}}{2a}.
 
 :::
@@ -65,7 +64,10 @@ Let $a$ be a _positive_ real number. Then the two numbers $x_-=-ai$ and $x_+=ai$
 
 ::::
 
-:::{prf:proof}
+:::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:roots`
+:class: myproof, dropdown
+
+<!-- :::{prf:proof} -->
 
 First we consider $x_-=-ai$ and take its square:
 
@@ -193,7 +195,9 @@ zw &= (ac-bd)+(ad+bc)i, \\
 
 ::::
 
-::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:ops`
+::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:ops`
+:class: dropdown, myproof 
+<!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:ops` -->
 
 We prove the four results by working each out separately. We start with the _addition_:
 
@@ -268,7 +272,9 @@ If $z$ and $w$ are a complex numbers, then the following identities hold:
 
 ::::
 
-::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:conjops`
+::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:conjops`
+:class: dropdown, myproof 
+<!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:conjops` -->
 
 We show each of the identities, one after the other, where we assume $z=a+bi$ and $w=c+di$, $a,b,c,d\in\mathbb{R}$:
 
@@ -340,7 +346,9 @@ z\overline{z} &= \Re{z}^2+\Im{z}^2.
 
 ::::
 
-::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:conjparts`
+::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:conjparts`
+:class: dropdown, myproof 
+<!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:conjparts` -->
 
 We show each of the identities, one after the other, where we assume $z=a+bi$, $a,b\in\mathbb{R}$:
 
@@ -382,7 +390,9 @@ Assume $z\in\mathbb{C}$. $z\in\mathbb{R}$ if and only if $z=\overline{z}$.
 
 ::::
 
-::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:realz`
+::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:realz`
+:class: dropdown, myproof
+<!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:realz` -->
 
 Assume $z\in\mathbb{C}$.
 
@@ -422,12 +432,9 @@ The reason for introducing complex numbers is to ensure that more equations have
 
 We already solved quadratic equations using a new technique called _completing the square_ and in this section you will learn more ways to solve equations.
 
-You may think that introducing a new set of numbers as solutions to certain equations can be a never-ending process. When you introduce more numbers, you get more equations (now we need not only solve $x^2=-1$, but also $x^2=i$), which need new solutions, etcetera.
-It turns out that if you restrict yourself to polynomial equations, this is not the case. This statement is the Fundamental Theorem of Algebra:
+We introduced complex numbers to give the equation $x^2+1 = 0$  a solution.  It appears that something much stronger holds, namely, that every polynomial equation with coefficients in $\mathbb{C}$, for instance  $(1+i)x^4 - 2x^2 + x = 10i$,  has solutions in $\mathbb{C}$. This is the content of the following theorem.
 
-**Fundamental Theorem of algebra**
-
-::::{prf:theorem}
+::::{prf:theorem} Fundamental Theorem of algebra
 :label: Thm:ComplexNumbers:fundamental
 
 Consider a polynomial $p(z)$ of degree $n$,
@@ -488,7 +495,9 @@ $$
 
 ::::
 
-::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:uniquezeros`
+::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:uniquezeros`
+:class: dropdown, myproof
+<!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:uniquezeros` -->
 
 Assume $\{z_1,z_2,\ldots,z_k\}$ is the set of _unique_ zeros of a polynomial $p$ of degree $n$. Then following {prf:ref}`Thm:ComplexNumbers:fundamental`, we can write
 
@@ -506,7 +515,7 @@ Because $p(z_1)=0$ for $j\in\{1,\ldots,k\}$, we must have that $\alpha_1\in\{1,\
 :::{math}
 :label: Eq:ComplexNumbers:factorsb1
 
-$p(z) = a_n (z-z_1)^{\alpha_1}(z-b*{\alpha_1+1}) \cdots (z-b_n).$
+p(z) = a_n (z-z_1)^{\alpha_1}(z-b*{\alpha_1+1}) \cdots (z-b_n).
 
 :::
 
@@ -515,7 +524,7 @@ We can repeat the above argument for $z_2$: we must have that $\alpha_2\in\{1,\l
 :::{math}
 :label: Eq:ComplexNumbers:factorsb2
 
-$p(z) = a_n (z-z_1)^{\alpha_1}(z-z_2)^{\alpha_2}(z-b_{\alpha_1+\alpha_2+1}) \cdots (z-b_n).$
+p(z) = a_n (z-z_1)^{\alpha_1}(z-z_2)^{\alpha_2}(z-b_{\alpha_1+\alpha_2+1}) \cdots (z-b_n).
 
 :::
 
@@ -545,7 +554,9 @@ If $p(z)=0$, then $p(\overline{z})=0$ as well, and the algebraic multiplicities 
 
 ::::
 
-::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:realpoly`
+::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:realpoly`
+:class: dropdown, myproof
+<!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:realpoly` -->
 
 Consider a polynomial $p$ of degree $n$, $\sum_{j=0}^n a_j z^j$, where the coefficients $a_n, a_{n-1}, \ldots, a_0$ are real valued numbers and $a_n\neq 0$.
 
@@ -670,7 +681,7 @@ The polar coordinates of a point in the complex plane $\C$ are the distance $r=|
 :::
 
 Notice that the argument is not uniquely defined, as you can always go a full circle extra and add $2\pi$ radians to the angle. For example, the number $1$ has argument 0 (as it is on the positive real axis), but also $2\pi$, $4\pi$, and $-2\pi$ (etc.). In order to make a uniform choice, we sometimes work with the principal value of the argument, which is by definition the unique value of the argument between $-\pi$ and $\pi$.
-We write the principal value using a capital A. Thus we have $-\pi < \text{Arg} z \leq \pi$.
+We write the principal value using a capital A. Thus we have $-\pi < \Arg{z} \leq \pi$.
 
 :::: {prf:example}
 
@@ -791,17 +802,33 @@ We recognize this product as the number with modulus $|zw|=rs$ and argument $\ar
 If you take the complex conjugate of a complex number $z$, the modulus remains the same and the argument is negated:
 
 <ul>
-<li>$|\overline{z}| = |z|$,</li>
+<li>
 
-<li>$\arg(\overline{z}) = -\arg(z)$.</li>
+$|\overline{z}| = |z|$,
+
+</li>
+
+<li>
+
+$\arg(\overline{z}) = -\arg(z)$.
+
+</li>
 </ul>
 
 If you multiply two complex numbers $z$ and $w$, you multiply the moduli and add the arguments:
 
 <ul>
-<li>$|zw| = |z| \cdot |w|$,</li>
+<li>
 
-<li>$\arg(zw) = \arg(z) + \arg(w)$.</li>
+$|zw| = |z| \cdot |w|$,
+
+</li>
+
+<li>
+
+$\arg(zw) = \arg(z) + \arg(w)$.
+
+</li>
 </ul>
 
 If you divide the complex number $z$ by the complex number $w\neq0$ you divide the modulus of $z$ by the modulus of $w$ and subtract the argument of $w$ from the argument of $z$:
@@ -822,7 +849,9 @@ $\arg\left(\frac{z}{w}\right) = \arg(z) - \arg(w)$.
 
 ::::
 
-::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:polarmultdiv`
+::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:polarmultdiv`
+:class: dropdown, myproof
+<!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:polarmultdiv` -->
 
 _Proof for conjugation_
 
@@ -901,7 +930,9 @@ $$
 
 ::::
 
-::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:re`
+::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:re`
+:class: dropdown, myproof
+<!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:re` -->
 
 The proof is relatively straight forward:
 
@@ -924,7 +955,9 @@ $$
 
 ::::
 
-::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:re`
+::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:re_diff`
+:class: dropdown, myproof
+<!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:re_diff` -->
 
 The proof is again straight forward:
 
@@ -1060,15 +1093,6 @@ The three solutions from {prf:ref}`Ex:ComplexNumbers:threesolutions`.
 ::::
 
 We can generalize the method for solving $z^n=w$ from the example above:
-
-```{applet}
-:url: appendix/complex_numbers
-:fig: Images/Fig-ComplexNumbers-threesolfig.svg
-:name: Fig:ComplexNumbers:general
-:position: 0, -1
-
-The n solutions from {prf:ref}`Ex:ComplexNumbers:threesolutions` generalized.
-```
 
 ```{prf:algorithm} Solving $z^n=w$
 
@@ -1584,7 +1608,8 @@ $z^3=4\cos(\frac{\pi}{6})+4i\sin(\frac{\pi}{6})$
 
 ## Solutions
 
-::::{dropdown} Solution to&nbsp;{numref}`Exc:ComplexNumbers:eval_aplusbi`&nbsp;(_click to show_)
+::::{admonition} Solution to&nbsp;{numref}`Exc:ComplexNumbers:eval_aplusbi`
+:class: solution, dropdown
 
 <ol type="a">
 
@@ -1652,7 +1677,8 @@ $3 + 4i$
 
 ::::
 
-::::{dropdown} Solution to&nbsp;{numref}`Exc:ComplexNumbers:complete`&nbsp;(_click to show_)
+::::{admonition} Solution to&nbsp;{numref}`Exc:ComplexNumbers:complete`
+:class: solution, dropdown
 
 <ol type="a">
 
@@ -1678,7 +1704,8 @@ $2, -6$
 
 :::::
 
-:::::{dropdown} Solution to&nbsp;{numref}`Exc:ComplexNumbers:division`&nbsp;(_click to show_)
+:::::{admonition} Solution to&nbsp;{numref}`Exc:ComplexNumbers:division`
+:class: solution, dropdown
 
 <ol type="a">
 
@@ -1704,7 +1731,8 @@ $h(z)$ is not a polynomial.
 
 :::::
 
-:::::{dropdown} Solution to&nbsp;{numref}`Exc:ComplexNumbers:roots`&nbsp;(_click to show_)
+:::::{admonition} Solution to&nbsp;{numref}`Exc:ComplexNumbers:roots`
+:class: solution, dropdown
 
 <ol type="a">
 
@@ -1730,7 +1758,8 @@ The roots of $p(z)$ are $3+i, 3-i, 1, -2$, all with multiplicity 1.
 
 :::::
 
-:::::{dropdown} Solution to&nbsp;{numref}`Exc:ComplexNumbers:argmod`&nbsp;(_click to show_)
+:::::{admonition} Solution to&nbsp;{numref}`Exc:ComplexNumbers:argmod`
+:class: solution, dropdown
 
 <ol type="a">
 
@@ -1750,7 +1779,8 @@ $|z|=2\sqrt{3}$ and $\Arg{z}=\frac{\pi}{6}$ or $\arg(z)=\frac{\pi}{6}+2k\pi$ for
 
 :::::
 
-:::::{dropdown} Solution to&nbsp;{numref}`Exc:ComplexNumbers:polarform`&nbsp;(_click to show_)
+:::::{admonition} Solution to&nbsp;{numref}`Exc:ComplexNumbers:polarform`
+:class: solution, dropdown
 
 <ol type="a">
 
@@ -1770,7 +1800,8 @@ $6 \cos(\frac{-\pi}{6})+ i 6 \sin(\frac{-\pi}{6})$
 
 :::::
 
-:::::{dropdown} Solution to&nbsp;{numref}`Exc:ComplexNumbers:polar_abi`&nbsp;(_click to show_)
+:::::{admonition} Solution to&nbsp;{numref}`Exc:ComplexNumbers:polar_abi`
+:class: solution, dropdown
 
 <ol type="a">
 
@@ -1808,7 +1839,8 @@ $1-\sqrt{3} i$
 
 :::::
 
-:::::{dropdown} Solution to&nbsp;{numref}`Exc:ComplexNumbers:polarform_calc`&nbsp;(_click to show_)
+:::::{admonition} Solution to&nbsp;{numref}`Exc:ComplexNumbers:polarform_calc`
+:class: solution, dropdown
 
 <ol type="a">
 
@@ -1828,7 +1860,8 @@ $z=4e^{-\frac16\pi i}$ and $w=2\sqrt{2}e^{-\frac14\pi i}$, thus $zw=8 \sqrt{2} \
 
 :::::
 
-::::{dropdown} Solution to&nbsp;{numref}`Exc:ComplexNumbers:solve_aplusbi`&nbsp;(_click to show_)
+::::{admonition} Solution to&nbsp;{numref}`Exc:ComplexNumbers:solve_aplusbi`
+:class: solution, dropdown
 
 <ol type="a">
 
@@ -1848,7 +1881,8 @@ $i, -\frac{1}{2}\sqrt{3}-i\frac{1}{2}, \frac{1}{2}\sqrt{3}-i\frac{1}{2}$
 
 ::::
 
-:::::{dropdown} Solution to&nbsp;{numref}`Exc:ComplexNumbers:DeMoivre`&nbsp;(_click to show_)
+:::::{admonition} Solution to&nbsp;{numref}`Exc:ComplexNumbers:DeMoivre`
+:class: solution, dropdown
 
 $\cos(4\theta)=\cos^4(\theta)+\sin^4(\theta)-6\cos^2(\theta)\sin^2(\theta)$
 
@@ -1858,7 +1892,8 @@ $\sin(4\theta)=4\cos^3(\theta)\sin(\theta)-4\cos(\theta)\sin^3(\theta)$.
 
 :::::
 
-:::::{dropdown} Solution to&nbsp;{numref}`Exc:ComplexNumbers:solve_euler`&nbsp;(_click to show_)
+:::::{admonition} Solution to&nbsp;{numref}`Exc:ComplexNumbers:solve_euler`
+:class: solution, dropdown
 
 <ol type="a">
 
