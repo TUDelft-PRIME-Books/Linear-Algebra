@@ -229,7 +229,8 @@ Suppose $(c_{1},...,c_{n})$ is a solution of a linear system. Then $(c_{1}',...,
 
 ::::
 
-::::{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SolSet:SolplusHom`
+:class: myproof
 
 Consider the linear system
 
@@ -295,7 +296,8 @@ Suppose $c_{1}$ and $c_{2}$ are arbitrary scalars. If $\vect{v}_{1}$ and $\vect{
 
 ::::
 
-::::{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SolSet:SolSetisVecSpa`
+:class: myproof
 
 This is a left as an exercise.
 
@@ -319,7 +321,7 @@ By putting $c_{2}=0$ in statement [ii.](#Item:SolSet:LinCombinSolSet), we find t
 By putting $c_{1}=1=c_{2}$, we find that any sum of two solutions is again a solution.
 
 </li>
-</ol>>
+</ol>
 
 You should keep in mind, however, that this **only** holds for solutions of **homogeneous** systems!
 

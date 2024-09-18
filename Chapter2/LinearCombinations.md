@@ -304,7 +304,8 @@ If $(\mathbf{e}_1, \ldots, \mathbf{e}_n)$ is the standard basis for $\mathbb{R}^
 
 ::::
 
-::::{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LinearCombinations:SpanStandardBasis`
+:class: myproof
 
 Take an arbitrary vector $\mathbf{v}$ in $\mathbb{R}^n$ with
 

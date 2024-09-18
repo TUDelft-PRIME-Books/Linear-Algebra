@@ -1,8 +1,8 @@
----
+<!-- ---
 csp:
   frame-ancestors: 'self' https://embed.grasple.com/;
 ---
-
+ -->
 (Section:LinSystems)=
 
 # Systems of Linear Equations
@@ -518,7 +518,8 @@ Changing the order of the equations.
 
 ::::
 
-::::{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LinSystems:ElimOperations`
+:class: myproof
 
 The correctness of the first operation is illustrated in
 {prf:ref}`Ex:LinSystems:EliminationFirst`. One example is by far not a proof, but the explanation given there can be generalized/formalized.  
@@ -1773,7 +1774,8 @@ A system of linear equations has either zero, or one, or infinitely many solutio
 
 ::::
 
-::::{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Thm:LinSystems:ZeroOneInfSolutions`
+:class: myproof
 
 This just depends on the outcome of the elimination method (i.e. {prf:ref}`Alg:LinSystems:ElimMethod`).
 If iii. occurs, the number of solutions is zero; if iv. occurs and there are no free variables, there is just one solution. Lastly, if there is at least one free variable, the solution set automatically contains infinitely many solutions.
@@ -1872,7 +1874,8 @@ A linear system of $m$ equations in $n$ unknowns can only have a unique solution
 
 ::::
 
-::::{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LinSystems:UniqueSolutionImpliesSize`
+:class: myproof
 
 Let
 

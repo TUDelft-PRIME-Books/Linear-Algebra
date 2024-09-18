@@ -121,16 +121,18 @@ div.definition > p.admonition-title {
 }
 
 div.theorem  p.admonition-title::after,
-div.proposition p.admonition-title::after {
+div.proposition p.admonition-title::after,
+div.corollary p.admonition-title::after {
   content: "\f51b";
   color: var(--darkGreen);
 }
-div.theorem, div.proposition {
+div.theorem, div.proposition, div.corollary {
   border-color: var(--darkGreen);
   background-color: var(--darkGreen-min);
 }
 div.theorem > p.admonition-title,
- div.proposition > p.admonition-title {
+ div.proposition > p.admonition-title,
+ div.corollary >p.admonition-title {
   background-color: var(--darkGreen-mid);
 }
 
