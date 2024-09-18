@@ -235,13 +235,12 @@ Suppose $\mathbf{v}_{1},\mathbf{v}_{2},\mathbf{v}_{3}$ are vectors in $\mathbb{R
 
 ````
 
-```{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Vectors:BasicRules`
+:class: myproof
 
-Exercise.
+See {numref}`grasple_exercise_1_1_11`.
 
-%(Grasple 62390)
-
-```
+::::
 
 For example, the equation {eq}`Item:Vectors:Associativity` tells us that we do not have to worry about bracketing when adding vectors. That is, we can first add $\mathbf{v}_{1}$ to $\mathbf{v}_{2}$ and then add $\mathbf{v}_{3}$ to the result or we can first add $\mathbf{v}_{2}$ to $\mathbf{v}_{3}$ and then add the result to $\mathbf{v}_{1}$. In both cases, we will get the same answer.
 

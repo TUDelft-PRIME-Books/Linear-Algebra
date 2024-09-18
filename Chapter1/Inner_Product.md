@@ -242,7 +242,8 @@ iii. $(\mathbf{v}_1+\mathbf{v}_2)\ip\mathbf{v}_3 = \mathbf{v}_1\ip\mathbf{v}_3+\
 iv. $\mathbf{v}\ip\mathbf{v} \geq 0$, &nbsp; and&nbsp; $\mathbf{v}\ip\mathbf{v} = 0 \iff \mathbf{v} = \mathbf{0}$.
 :::
 
-:::{prf:proof}
+:::{admonition} Proof of&nbsp;{prf:ref}`Prop:RulesInnerProduct`
+:class: myproof
 
 The first three properties follow from the corresponding properties of real numbers. For instance, for the first rule we simply use that $ab = ba$ holds for the product of real numbers $a$ and $b$.
 
@@ -305,7 +306,8 @@ if and only if all the squares are 0, which only happens if each entry $a_i$ is 
 Prove property iii.
 :::
 
-:::{dropdown} Solution to&nbsp;{numref}`Exc:InnerProduct:CheckPropInnerProd`&nbsp;(_click to show_)
+:::{admonition} Solution to&nbsp;{numref}`Exc:InnerProduct:CheckPropInnerProd`
+:class: solution, dropdown
 
 Let
 
@@ -349,7 +351,8 @@ $$
 
 :::
 
-:::{dropdown} Solution to&nbsp;{numref}`Exc:InnerProduct:(v-w)(v+w)`&nbsp;(_click to show_)
+:::{admonition} Solution to&nbsp;{numref}`Exc:InnerProduct:(v-w)(v+w)`
+:class: solution, dropdown
 
 First of all, because of rule i. and rule iii. of {prf:ref}`Prop:RulesInnerProduct`
 it holds that
@@ -393,7 +396,8 @@ and explain why it is called the _parallelogram rule_.
 
 :::
 
-:::{dropdown} Solution to&nbsp;{numref}`Exc:InnerProduct:PargramRule`&nbsp;(_click to show_)
+:::{admonition} Solution to&nbsp;{numref}`Exc:InnerProduct:PargramRule`
+:class: solution, dropdown
 
 Again it's a chain of identities using basic properties of the dot product.
 
@@ -476,7 +480,8 @@ Suppose $\mathbf{v} \in \mathbb{R}^n$. &nbsp; Then $\mathbf{v}\perp\mathbf{v} \i
 
 :::
 
-:::{prf:proof}
+:::{admonition} Proof of&nbsp;{prf:ref}`Prop:InnerProduct:vDotv=0Impliesv=0`
+:class: myproof
 
 By definition
 
@@ -551,7 +556,8 @@ $$
 
 :::
 
-:::{prf:proof}
+:::{admonition} Proof of&nbsp;{prf:ref}`Prop:InnerProduct:UniqueProjection`
+:class: myproof
 
 With the rules of the dot product the vector $\mathbf{w}$ is easily constructed. <BR>
 Starting from
@@ -656,7 +662,8 @@ $$
 
 :::
 
-::::{dropdown} Solution to&nbsp;{numref}`Exc:InnerProduct:SameProjectionThenWhat`&nbsp;(_click to show_)
+::::{admonition} Solution to&nbsp;{numref}`Exc:InnerProduct:SameProjectionThenWhat`
+:class: solution, dropdown
 
 Suppose $\text{proj}_{\mathbf{v}}(\mathbf{w}_1) = \text{proj}_{\mathbf{v}}(\mathbf{w}_2) $.  Thus  $\dfrac{\mathbf{w}_1\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}} \mathbf{v} = \dfrac{\mathbf{w}_2\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}} \mathbf{v}$.
 
@@ -912,7 +919,8 @@ $$
 
 :::
 
-:::{prf:proof}
+:::{admonition} Proof of&nbsp;{prf:ref}`Prop:InnerProduct:UnitVectorForv`
+:class: myproof
 
 Assume that $\mathbf{v} \neq \mathbf{0}$.
 For $\mathbf{u} = k\mathbf{v}$, with $\norm{\mathbf{u}} = 1$ and $k > 0$ to hold, we must have
@@ -980,7 +988,8 @@ $$
 
 :::
 
-:::{prf:proof}
+:::{admonition} Proof of&nbsp;{prf:ref}`Thm:InnerProduct:PythagorasInRn`
+:class: myproof
 
 This follows quite straightforwardly from the properties of the dot product.
 
@@ -1068,7 +1077,8 @@ $$
 
 :::
 
-:::{prf:proof}
+:::{admonition} Proof of&nbsp;{prf:ref}`Thm:InnerProduct:Cauchy-Schwarz`&nbsp;({prf:ref}`Cauchy-Schwarz Inequality <Thm:InnerProduct:Cauchy-Schwarz>`)
+:class: myproof
 
 There are many ways to prove the Cauchy-Schwarz inequality. There is even a whole book devoted to it: "Cauchy Schwarz master class" by J.M. Steele.
 
@@ -1172,6 +1182,7 @@ With this inequality established, the Triangle Inequality
 {eq}`Item:Prop:InnerProduct:TriangleInequality` is easily proved. Let's repeat it, and prove it.
 
 :::{prf:theorem}
+:label: Thm:InnerProduct:TriangleInequality
 
 For any two vectors in $\mathbb{R}^n$,
 
@@ -1182,7 +1193,8 @@ $$
 
 :::
 
-:::{prf:proof}
+:::{admonition} Proof of&nbsp;{prf:ref}`Thm:InnerProduct:TriangleInequality`
+:class: myproof
 
 Since all terms involved are non-negative we may as well show that the inequality holds for the squares:
 
@@ -1278,7 +1290,8 @@ $$
 
 :::
 
-::::{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:InnerProduct:DotProdGeometric`
+:class: myproof
 
 We will derive formula {eq}`Eq:InnerProduct:GeometricDefinition`.
 Assume that $\mathbf{v}$ and $\mathbf{w}$ are nonzero vectors.
@@ -1353,7 +1366,7 @@ is the length of the orthogonal projection of $\vect{w}$ onto $\vect{v}$.
 
 ::::
 
-:::{exercise}
+:::{prf:example}
 :label: Ex:InnerProduct:AnglesInMethaneMolecule
 
 In a methane molecule $\ce{CH_4}$ the four $\ce{H}$-atoms are positioned in a perfectly symmetrical way around the $\ce{C}$-atom.
