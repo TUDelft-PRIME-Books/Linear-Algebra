@@ -140,7 +140,8 @@ then $\overline{AC} = \overline{A}$ $\overline{C}$.
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:ComplexEV:PropConjugate`
+:class: myproof
 
 The statements follow immediately from the definitions of the sum and product of two matrices, and of the corresponding rules of complex arithmetic that say
 
@@ -176,7 +177,8 @@ $\overline{\vect{v}} = \vect{u}-i\vect{w}$ is an eigenvector for $\overline{\lam
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:ComplexEV:Conjugation`
+:class: myproof
 
 Suppose $A(\vect{u}+i\vect{w}) = (\alpha + \beta i)(\vect{u}+i\vect{w})$.
 
@@ -262,7 +264,8 @@ $, for some $r > 0$ and angle $\varphi$.
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:ComplexEV:Rotation`
+:class: myproof
 
 Both columns of $A$ have length $r = \sqrt{a^2 + (\pm b)^2} = \sqrt{a^2 + b^2}$.
 
@@ -319,7 +322,7 @@ $$
 {prf:ref}`Prop:ComplexEV:Rotation` can be generalized as follows. If a real $n \times n$ matrix $A$ has a non-real eigenvalue, there is always a rotation 'hidden' in the transformation $T: \vect{x} \mapsto A\vect{x}$.
 
 ::::::{prf:proposition}
-
+:label: Prop:ComplexEV:Invariant
 Suppose the real $n \times n$ matrix $A$ has a complex eigenvalue $\lambda = \alpha - \beta i$, with $\beta \neq 0$. Then there exist two linearly independent _real_ vectors $\vect{u}$ and $\vect{w}$ for which
 
 $$
@@ -333,7 +336,8 @@ That means that the two-dimensional subspace $S = \Span{\vect{u},\vect{w}}$ is i
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:ComplexEV:Invariant`
+:class: myproof
 
 Let $\vect{v}$ be an eigenvector for $\lambda=\alpha - \beta i$.
 So, $\vect{v} = \vect{u}+i\vect{w}$, for real vectors $\vect{u}$ and $\vect{w}$.

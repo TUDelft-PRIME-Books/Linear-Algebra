@@ -16,7 +16,8 @@ Suppose $A$ is an $n\times n$ matrix. Then $\lambda$ is an eigenvalue of $A$ if 
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Eigenvalues:DetAminusLambdaI`
+:class: myproof
 
 There's not much new here.
 
@@ -135,7 +136,8 @@ For an $n\times n$ matrix $A$ the function det$(A - \lambda I)$ is a polynomial 
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:EigenValues:CharPoly`
+:class: myproof
 
 We have to dive into the hardware of determinants a bit. If the determinant of an $n\times n$ matrix $M$ is computed by iteratively expanding along the first rows, i.e., doing it the hard way, we end up with a sum of $n!$ terms. Each term is the product of $n$ entries of $M$, where each row and each column of $A$ is represented exactly once.
 
@@ -416,8 +418,8 @@ $$
 
 ::::::
 
-::::::{dropdown} (Sketch of the) Proof of&nbsp;{prf:ref}`Prop:EigenValues:CharPolyTrace`
-%::::::{prf:proof}
+::::::{admonition} (Sketch of the) Proof of&nbsp;{prf:ref}`Prop:EigenValues:CharPolyTrace`
+:class: myproof, dropdown
 
 For $n=2$ we have already seen that the characteristic polynomial of the most general $2 \times 2$ matrix
 $A = \left[\begin{array}{cc} a_{11} & a_{12} \\ a_{21} & a_{22} \end{array}\right]
@@ -517,8 +519,8 @@ Let   $A$ an $n\times n$ matrix with $n$ eigenvalues  $\lambda_1,\lambda_2,  \ld
 
 ::::::
 
-
-::::::{dropdown}  Proof of&nbsp;{prf:ref}`Prop:Eigenvalues:SumEigenvaluesAndTrace`
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Eigenvalues:SumEigenvaluesAndTrace`
+:class: myproof, dropdown
 
 This is more a statement about algebra, in particular about polynomials, than about linear algebra.  In  {numref}`Section %s <Section:ComplexEV>`  we will see that it also holds for matrices with complex eigenvalues. 
 

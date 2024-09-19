@@ -420,7 +420,8 @@ Then $S$ is a subspace of $\R^n$.
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:EigenValues:Subspace`
+:class: myproof
 
 We can proceed in two ways.
 
@@ -548,7 +549,8 @@ Then $\{ \vect{v}_1,  \ldots,  \vect{v}_k  \}$ is a linearly independent set.
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Eigenvalues:IndepEigenvectors`
+:class: myproof
 
 <BR>
 
@@ -723,7 +725,8 @@ Equivalently: a matrix $A$ is singular (non-invertible) if and only if 0 is an e
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:EigenValues:SingularMatrix`
+:class: myproof
 
 We prove the second statement.
 
@@ -884,7 +887,8 @@ Moreover,  if  $\vect{v}$ is an eigenvector of $A$ for eigenvalue $\lambda$, the
 
 ::::::
 
-::::::{dropdown} Solution to&nbsp;{numref}`Exc:EigenValues:EigenvaluesInverse`&nbsp;(_click to show_)
+::::::{admonition} Solution to&nbsp;{numref}`Exc:EigenValues:EigenvaluesInverse`
+:class: solution, dropdown
 
 Suppose the nonzero vector $\vect{v}$ is an eigenvector for the eigenvalue $\lambda$ of the invertible matrix $A$.  From {prf:ref}`Prop:EigenValues:SingularMatrix` we know that $\lambda \neq 0$. From
 

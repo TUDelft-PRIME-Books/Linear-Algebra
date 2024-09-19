@@ -55,7 +55,8 @@ Moreover, if $\vect{v}$ is an eigenvector of $B$, then $P\vect{v}$ is an eigenve
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Diagonalizable:SimilarEigenvalues`
+:class: myproof
 
 Suppose $\lambda$ is an eigenvalue of $B$, and $\vect{v}$ is a corresponding eigenvector. We then see that
 
@@ -78,7 +79,8 @@ Similar matrices have the same characteristic polynomial.
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Diagonalizable:SimilarCharpoly`
+:class: myproof
 
 Suppose $A = PBP^{-1}$.
 
@@ -151,7 +153,8 @@ Using the properties of similar matrices we can prove the inequality
 that holds for the geometric and the algebraic multiplicity of an eigenvalue 
  (cf. {prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity`).
 
- ::::::{dropdown}  Proof of &nbsp;{prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity` &nbsp;  (geom.mult. $\leq$ alg.mult.)
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity` &nbsp;  (geom.mult. $\leq$ alg.mult.)
+:class: myproof, dropdown
 
 Suppose the $n\times n$ matrix $A$ has the eigenvalue $\lambda_1$ of geometric multiplicity $k$.  We have to show that the algebraic multiplicity of $\lambda_1$ is *at least* equal to $k$. We will do so by constructing a matrix $B$ that is similar to $A$ and for which the eigenvalue $\lambda_1$ will clearly have algebraic multiplicity at least equal to $k$. <BR>
 Suppose $\vect{v}_1,\ldots,\vect{v}_k$ are $k$ linearly independent eigenvectors for $\lambda_1$.  We can extend $\{\vect{v}_1,\ldots,\vect{v}_k,\}$ to a basis $\{\vect{v}_1,\ldots,\vect{v}_k, \ldots, \mathbf{v}_n \}$   of $\mathbb{R}^n$.
@@ -250,8 +253,8 @@ $A$ and $B$ have the same rank.
 
 ::::::
 
-::::::{dropdown} Proof of&nbsp;{prf:ref}`Prop:Eigenvalues:SimilarMatrices`
-
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Eigenvalues:SimilarMatrices`
+:class: myproof, dropdown
 
 Suppose $A = PBP^{-1}$.
 
@@ -344,7 +347,8 @@ Such a set of eigenvectors then forms a basis for $\R^n$.
 
 Since this proposition is such a pillar on which much of the theory of matrices rests, and diagonalizable matrices are important because they are in many respects easy to work with, we give two proofs.
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Eigenvalues:DiagbleVersusEigenvectors`
+:class: myproof
 
 The first proof is algebraic. First we note that
 
@@ -382,9 +386,8 @@ Comparing $AP$ and $PD$ column by column we see that $A\vect{p}_i = d_i\vect{p}_
 
 The second proof has a geometric flavour. Open it if you are interested.
 
-
-::::::{dropdown} Second proof of&nbsp;{prf:ref}`Prop:Eigenvalues:DiagbleVersusEigenvectors`
-
+::::::{admonition} Second proof of&nbsp;{prf:ref}`Prop:Eigenvalues:DiagbleVersusEigenvectors`
+:class: myproof, dropdown
 
 First we show that diagonalizability implies the existence of $n$ linearly independent eigenvectors.
 
@@ -621,7 +624,8 @@ For each eigenvalue the geometric multiplicity is equal to the algebraic multipl
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:Diagonalizable:ThirdCharacterization`
+:class: myproof
 
 First we show that a diagonalizable matrix satisfies the two conditions.
 
@@ -632,8 +636,8 @@ The basic idea is that, since eigenvectors for different eigenvalues are automat
 
 ::::::
 
-
-::::::{dropdown} (More detailed) Proof of&nbsp;{prf:ref}`Thm:Diagonalizable:ThirdCharacterization`
+::::::{admonition} (More detailed) Proof of&nbsp;{prf:ref}`Thm:Diagonalizable:ThirdCharacterization`
+:class: myproof, dropdown
 
 Suppose that the $n \times n$ matrix $A$ has only real eigenvalues,  say  $\lambda_1,\ldots,\lambda_k$, and that for each eigenvalue $\lambda_i$ the geometric multiplicity $m_i$  is equal to the algebraic multiplicity, so
 
