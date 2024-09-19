@@ -37,9 +37,16 @@ $$
 
 The bad news:
 
-$$
-  \frac{A}{B} \quad \text{cannot be defined in any useful way!}
-$$
+<p style="text-align:center;">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mstyle displaystyle="true" scriptlevel="0">
+    <mfrac>
+      <mi>A</mi>
+      <mi>B</mi>
+    </mfrac>
+  </mstyle>
+</math> cannot be defined in any useful way!
+</p>
 
 First of all the corresponding matrix equation
 
@@ -167,7 +174,9 @@ If an inverse of a matrix $A$ exists, then it is unique.
 
 The proof is very short, when we plug in the right idea at the right place.
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixInv:UniqueInverse`
+:class: myproof
+
 Suppose $B$ and $C$ are two matrices that satisfy the properties of being an inverse of $A$, i.e.
 
 $$
@@ -295,7 +304,9 @@ Also check that the first matrix in {prf:ref}`Ex:FirstInverse` illustrates the f
 
 ::::::
 
-::::::{dropdown} Solution to&nbsp;{numref}`Exc:MatrixInv:CheckBA=I`&nbsp;(_click to show_)
+
+::::::{admonition} Solution to&nbsp;{numref}`Exc:MatrixInv:CheckBA=I`
+:class: solution, dropdown
 
 $$
 \begin{array}{rcl} BA &=&
@@ -432,7 +443,9 @@ $$
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixInv:InvertibleIndepCols`
+:class: myproof
+
 As in the proof in {prf:ref}`Rem:MatrixInvDetZeroDependentColumns` we have to prove two implications:
 
 $$
@@ -546,7 +559,9 @@ $$
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SolutionViaInverse`
+:class: myproof
+
 We multiply both sides of the equation
 
 $$
@@ -708,7 +723,9 @@ $$
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixInv:ElemProperties`
+:class: myproof
+
 All statements can be proved by verifying that the relevant products are equal to $I$.
 
 <ol type="i">
@@ -725,12 +742,11 @@ and likewise $\dfrac1c A^{-1}\cdot (cA) = I$,
 which proves that indeed $\dfrac1c A^{-1} = (cA)^{-1}$.
 
 </li>
+
 <li>
 
 Since it is given that $A^{-1}$ exists we can proceed as follows, where we make use of the characteristic property
 $ B^TA^T = (AB)^T$.
-
-<BR>
 
 $$
 (A^{-1})^TA^T = ( AA^{-1})^T = I^T = I
@@ -742,10 +758,13 @@ $$
 A^T(A^{-1})^T =( A^{-1}A)^T = I^T = I,
 $$
 
-which settles the second statement. To prove iii., see {numref}`Exc:MatrixInv:Ainvinv`.
+which settles the second statement.
 
 </li>
-</ul>
+
+</ol>
+
+To prove iii., see {numref}`Exc:MatrixInv:Ainvinv`.
 
 ::::::
 
@@ -756,7 +775,8 @@ Prove the last statement of the previous proposition.
 
 ::::::
 
-::::::{dropdown} Solution to&nbsp;{numref}`Exc:MatrixInv:Ainvinv`&nbsp;(_click to show_)
+::::::{admonition} Solution to&nbsp;{numref}`Exc:MatrixInv:Ainvinv`
+:class: solution, dropdown
 
 For the inverse $C = (A^{-1})^{-1}$ of $A^{-1}$, it should hold that
 
@@ -820,7 +840,9 @@ $$
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixInv:ProductRule`
+:class: myproof
+
 Again we just check that the properties of the definition hold.
 
 Suppose that $A$ and $B$ are invertible with inverses $A^{-1}$ and $B^{-1}$.
@@ -856,7 +878,8 @@ In case it is true, give an argument, when false, give a counterexample.
 
 ::::::
 
-::::::{dropdown} Solution to&nbsp;{numref}`Exc:MatrixInv:(AB)Tinv`&nbsp;(_click to show_)
+::::::{admonition} Solution to&nbsp;{numref}`Exc:MatrixInv:(AB)Tinv`
+:class: solution, dropdown
 
 The statement is _true_. <BR>
 From the two properties
@@ -1060,7 +1083,9 @@ $$
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixInv:Algorithm`
+:class: myproof
+
 We have already seen ({prf:ref}`Prop:MatrixInv:InvertibleIndepCols`) that an invertible matrix linearly independent columns,
 which implies that the reduced echelon form of $A$ is indeed the identity matrix. And then it is clear that via row operations we get
 
@@ -1279,7 +1304,8 @@ Make sure that you do not use $A^{-1}$ or $B^{-1}$ prematurely, i.e., before you
 
 ::::::
 
-::::::{dropdown} Solution to&nbsp;{numref}`Exc:MatrixInv:ConverseProdRule`&nbsp;(_click to show_)
+::::::{admonition} Solution to&nbsp;{numref}`Exc:MatrixInv:ConverseProdRule`
+:class: solution, dropdown
 
 Suppose $A$ and $B$ are two $n \times n$ matrices for which $AB$ is invertible. Let $C=(AB)^{-1}$ be the inverse of $AB$. We claim that
 $BC$ is the inverse of $A$.
@@ -1363,7 +1389,9 @@ $A$ can be written as a product of elementary matrices: $A = E_1E_2\cdots E_k$.
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations`
+:class: myproof
+
 It is a good exercise to find out where the evidence of each characterization is found,
 and wherever necessary to fill in the missing details.
 

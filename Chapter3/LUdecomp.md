@@ -640,8 +640,8 @@ that  {prf:ref}`Alg:LUdecomp:LUalgorithm`  works can have a look at the followin
 {prf:ref}`Prop:LUdecomp:Existence`.  It will also prove the statement that the existence of a $LU$-decomposition of a matrix $A$ implies that the matrix $A$ can be row reduced top-down to a matrix in echelon form.
 
 
-
-::::::{dropdown}  Proof of {prf:ref}`Prop:LUdecomp:Existence`
+:::{admonition} Proof of&nbsp;{prf:ref}`Prop:LUdecomp:Existence`
+:class: myproof, dropdown
 
 Suppose $A$ is an $n\times n$ matrix that can be row reduced to an upper triangular (= echelon) matrix $U$. We can row reduce $A$ from top to bottom, where we use the same form as in {prf:ref}`Ex:LUdecomp:SecondLUSecondLook`. 
 For instance the first two steps are
@@ -839,7 +839,8 @@ In both properties  'lower' can be replaced by 'upper'.
 There are several ways to prove  {prf:ref}`Prop:LUdecomp:L-properties`.
 The best would be to think of a proof yourself, but you can also have a peek at the exposition below.
 
-::::::{dropdown} Proof of the properties of triangular matrices
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LUdecomp:L-properties`
+:class: myproof, dropdown
 
 :::{latexlist}
 :enumerated: true
@@ -902,7 +903,8 @@ to row reduce $A$ to $I$ we only need to subtract multiples of rows from rows be
 
 The uniqueness issue is not of major importance, but for completeness' sake below you can open a possible argument to prove it. 
 
-::::::{dropdown}  Proof of the uniqueness of the $LU$-decomposition of an invertible matrix.
+::::::{admonition} Proof of the uniqueness of the&nbsp;$LU$-decomposition of an invertible matrix.
+:class: myproof, dropdown
 
 Suppose $A$ is an invertible matrix with two $LU$-decompositions
 
@@ -1160,8 +1162,9 @@ This is what we will call a *PLU* decomposition.
 
 Note that first subtracting row 1 four times from row 2 and two times from row 3, followed by exchanging row 2 and row 3 leads to the same echelon matrix as first swapping row 2 and 3 and then subtracting row 1  two times from row 2 and four times from row 3.
 
-Before we  generalize example {prf:ref}`Ex:LUdecomp:NoLUcontinued` a few remarks about the *permutation matrices* $P$ that pop up.  Permutation is a synonym for reordering.
+::::::
 
+Before we  generalize {prf:ref}`Ex:LUdecomp:NoLUcontinued` a few remarks about the *permutation matrices* $P$ that pop up.  Permutation is a synonym for reordering.
 
 ::::::{prf:definition}
 :label: Def:LUdecomp:PermutationMatrix
@@ -1273,8 +1276,8 @@ $$
 
 ::::::
 
-
-::::::{dropdown}  Proof of the two properties of permutation matrices
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LUdecomp:PermutationMatrices`
+:class: myproof, dropdown
 
 :::{latexlist}
 :enumerated: true

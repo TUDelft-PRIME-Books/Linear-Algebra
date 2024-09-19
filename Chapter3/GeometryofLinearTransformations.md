@@ -32,6 +32,8 @@ $$
 can be seen on the left in {numref}`Figure %s <Fig:GeomLinTrans:ProjinR2>`. Let us briefly verify that it really is a linear transformation.
 
 ::::::{prf:proposition}
+:label: Prop:Geometry:Projection
+
 For any vector $\mathbf{v}$ in $\mathbb{R}^{n}$, the map
 
 $$
@@ -42,7 +44,9 @@ is a linear transformation.
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Geometry:Projection`
+:class: myproof
+
 The proof is a simple application of the definitions. For any $\mathbf{w}_{1},\mathbf{w}_{2}$ in $\mathbb{R}^{n}$, we have
 
 $$
@@ -78,7 +82,8 @@ $$
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:GeomLinTrans:MatofProjonLine`
+:class: myproof
 
 The vector
 
@@ -101,6 +106,7 @@ That the second column is as claimed, too, can be shown analogously. We leave it
 Often, you might have not the angle $\mathcal{L}$ makes with the positive $x$ axis, but rather a vector $\mathbf{v}$ on $\mathcal{L}$. In this case, too, you can find the standard matrix of the projection on $\mathcal{L}$ quite easily.
 
 ::::::{prf:proposition}
+:label: Prop:GeomLinTrans:ProjMat2
 Let $\mathcal{L}$ be a line that passes through the origin in the direction of $\mathbf{v}=\begin{bmatrix} v_{1}\\v_{2}\end{bmatrix}$. The projection $T_{\mathcal{L}}$ has standard matrix
 
 $$
@@ -112,7 +118,9 @@ $$
 
 ::::::
 
-::::::{prf:proof}
+
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:GeomLinTrans:ProjMat2`
+:class: myproof
 
 It suffices to find the cosine and sine of the angle $\mathcal{L}$ makes with the positive $x$-axis in terms of $v_{1}$ and $v_{2}$. We leave this as an exercise.
 
@@ -132,7 +140,8 @@ An $n\times n$-matrix $P$ is the standard matrix of a projection if and only if 
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:GeomLinTrans:ProjSquaredisProj`
+:class: myproof
 
 We leave this as an exercise.
 
@@ -155,16 +164,19 @@ On the left an orthogonal projection $T_{1}$ acting on a few selected vectors $\
 ```
 
 ::::::{prf:proposition}
+:label: Prop:GeomLinTrans:MapToLine
+
 Let $\mathcal{L}$ be a line through the origin and let $\mathbf{w}$ be a vector not on $\mathcal{L}$. The transformation $T:\mathbb{R}^{2}\to\mathbb{R}^{2}$ which maps a vector $\mathbf{u}$ to the intersection of $\mathcal{L}$ and the line through $\mathbf{u}$ in the direction of $\mathbf{w}$ is a linear transformation.
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:GeomLinTrans:MapToLine`
+:class: myproof
 
 For any vector $\mathbf{u}$, there is a unique pair of real numbers $(c_{\mathbf{u}},d_{\mathbf{u}})$ such that $\mathbf{u}+c_{\mathbf{u}}\mathbf{w}=d_{\mathbf{u}}\mathbf{v}$. What $T$ does is map $\mathbf{u}$ to $d_{\mathbf{u}}\mathbf{v}$. Hence, for any two vectors $\mathbf{u}_{1},\mathbf{u}_{2}$ in $\mathbb{R}^{2}$, we have
 \begin{align*}
-\mathbf{u}*{1}+c*{\mathbf{u}*{1}}\mathbf{w}&=d*{\mathbf{u}*{1}}\mathbf{v}=T(\mathbf{u}_{1})\quad\text{and}\\
-\mathbf{u}_{2}+c*{\mathbf{u}*{2}}\mathbf{w}&=d*{\mathbf{u}*{2}}\mathbf{v}=T(\mathbf{u}_{2}).\\
+\mathbf{u}_{1}+c_{\mathbf{u}_{1}}\mathbf{w}&=d_{\mathbf{u}_{1}}\mathbf{v}=T(\mathbf{u}_{1})\quad\text{and}\\
+\mathbf{u}_{2}+c_{\mathbf{u}_{2}}\mathbf{w}&=d_{\mathbf{u}_{2}}\mathbf{v}=T(\mathbf{u}_{2}).\\
 \end{align*}
 Clearly, we also have
 
@@ -290,11 +302,15 @@ is the **reflection** over $\text{range}(T)$.
 Since any reflection is a linear combination of some projection and the identity, we arrive at the following proposition.
 
 ::::::{prf:proposition}
+:label: Prop:GeomLinTrans:Reflection
+
 Any reflection is a linear transformation.
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:GeomLinTrans:Reflection`
+:class: myproof
+
 A reflection is by definition a sum of scaled linear transformations. As such, it is again a linear transformation.
 
 ::::::
@@ -302,11 +318,15 @@ A reflection is by definition a sum of scaled linear transformations. As such, i
 The following proposition guarantees that, as you would expect, applying a reflection twice leaves you back where you started.
 
 ::::::{prf:proposition}
+:label: Prop:GeomLinTrans:TwoReflections
+
 If $M$ is the standard matrix of a reflection, then $R^{2}=I$.
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:GeomLinTrans:TwoReflections`
+:class: myproof
+
 We know that $M=2P-I$ where $P$ is the standard matrix of some projection. By {prf:ref}`Prop:GeomLinTrans:ProjSquaredisProj`, we have $P^{2}=P$ and therefore
 
 $$
@@ -328,7 +348,8 @@ $$
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:GeomLinTrans:MatofReflinPlane`
+:class: myproof
 
 Exercise. For the second equality, remember the trigonometric identities
 
@@ -361,7 +382,8 @@ $$S(\vect{w}_{1})\cdot S(\vect{w}_{2})=\vect{w}_{1}\cdot\vect{w}_{2}.$$
 
 ::::
 
-:::{prf:proof}
+:::{admonition} Proof of&nbsp;{prf:ref}`Prop:GeomLinTrans:ReflDotProd`
+:class: myproof
 
 By definition, there is an orthogonal projection with standard matrix $P$ such that $S(\vect{w})=(2P-I)\vect{w}$. We assume $P$ is the projection on the span of a single vector $\vect{v}$. If there are more, the computations become considerably messier, but neither harder nor more enlightening.
 
@@ -396,7 +418,9 @@ Rotations are linear transformations.
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:GeomLinTrans:RotsAreLinTrans`
+:class: myproof
+
 Let $T:\mathbb{R}^{n}\to\mathbb{R}^{n}$ be a rotation. Because of {prf:ref}`Prop:InnerProduct:DotProdGeometric`, we have $\mathbf{v}_{1}\ip \mathbf{v}_{2}=T(\mathbf{v}_{1})\ip T(\mathbf{v}_{2})$. A tedious but not terribly hard calculation now shows that, for every $\mathbf{v}_{1},\mathbf{v}_{2}$ in $\mathbb{R}^{n}$,
 
 $$
@@ -420,6 +444,7 @@ In fact, the proof of {prf:ref}`Prop:GeomLinTrans:RotsAreLinTrans` only uses the
 The name _rotation_ is inspired by the following observation about rotations in the plane.
 
 ::::::{prf:proposition}
+:label: Prop:GeomLinTrans:RotMatR2
 
 For any real number $\theta$, the rotation over the angle $\theta$ in the plane has standard matrix
 
@@ -436,7 +461,8 @@ This is indeed the standard matrix of a rotation.
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:GeomLinTrans:RotMatR2`
+:class: myproof
 
 Suppose we take the vector $\mathbf{e}_{1}$ and rotate it (counterclockwise) over an angle $\theta$. Where do we end up? By definition, the $x$-coordinate of our new location will be $\cos(\theta)$ and its $y$-coordinate will be $\sin(\theta)$. Similarly, if we start with the vector $\mathbf{e}_{2}$ and rotate that over the angle $\theta$, the $x$-coordinate of our new point will be $-\sin(\theta)$. This is illustrated in {numref}`Figure %s <Fig:GeomLinTrans:RotinPlane>`.
 
@@ -458,7 +484,9 @@ Any rotation in the plane is the composition of two reflections.
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:GeomLinTrans:RotisDoubleRefl`
+:class: myproof
+
 We will show that the standard matrix $R_{\theta}$ of the rotation $T_{\theta}$ over an angle $\theta$ is the product of the standard matrices of two reflections. The claim follows then from the definition of the matrix product.
 
 Let $\mathcal{L}_{1}$ and $\mathcal{L}_{2}$ be two lines in the plane through the origin that make an angle of $\theta/2$ with each other. If we call $\phi/2$ the angle $\mathcal{L}_{1}$ makes with the positive $x$-axis, we can conclude that $\mathcal{L}_{2}$ makes an angle of $\phi/2+\theta/2$ with the positive $x$-axis. From {prf:ref}`Prop:GeomLinTrans:MatofReflinPlane`, we know that the standard matrices of the reflections $T_{\mathcal{L}_{1}}$ and $T_{\mathcal{L}_{2}}$ along $\mathcal{L}_{1}$ and $\mathcal{L}_{2}$, respectively, are
@@ -577,11 +605,15 @@ $$
 Note that the scalar $c$ in [ii.](#Item:GeomLinTrans:ShearScale) from {prf:ref}`Dfn:GeomLinTrans:ShearScale` is different for different vectors. For vectors lying on one side of $\mathcal{L}$, it will be positive. For vectors on the other side of $\mathcal{L}$ it will be negative. Moreover, for vectors further away from $\mathcal{L}$, $c$ will be larger than for vectors closer to $\mathcal{L}$.
 
 ::::::{prf:proposition}
+:label: Prop:GeomLinTrans:ShearTransDistance
+
 If $T$ is a shear transformation fixing the line $\mathcal{L}$ and $\mathbf{v}$ is an arbitrary vector in $\mathbb{R}^{2}$, then the distance from $\mathbf{v}$ to $\mathcal{L}$ is the same as the distance from $T(\mathbf{v})$ to $\mathcal{L}$.
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:GeomLinTrans:ShearTransDistance`
+:class: myproof
+
 The distance between a vector $\mathbf{v}$ and a line $\mathcal{L}$ is the length of $\mathbf{v}-\proj_{\mathcal{L}}(\mathbf{v})$. We find, for arbitrary $\mathbf{v}$ in $\mathbb{R}^{2}$,
 \begin{align*}
 \lVert T(\mathbf{v})-\proj_{\mathcal{L}}(T(\mathbf{v}))\rVert &= \lVert \mathbf{v}+c\mathbf{w}-\frac{(\mathbf{v}+c\mathbf{w})\ip\mathbf{w}}{\mathbf{w}\ip\mathbf{w}}\mathbf{w}\rVert=\lVert \mathbf{v}-\frac{\mathbf{v}\ip\mathbf{w}}{\mathbf{w}\ip\mathbf{w}}\mathbf{w}\rVert\\

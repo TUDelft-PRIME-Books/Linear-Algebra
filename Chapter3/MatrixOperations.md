@@ -241,7 +241,9 @@ $(A^T)^T = A$.
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixOps:Transpose`
+:class: myproof
+
 We will prove the second statement and leave the other two to the diligent reader. See
 {numref}`Exc:MatrixOps:CheckTransposeRules`.
 
@@ -336,7 +338,9 @@ Prove statements (i) and (iii) of {prf:ref}`Prop:MatrixOps:Transpose`.
 
 ::::::
 
-::::::{dropdown} Solution to&nbsp;{numref}`Exc:MatrixOps:CheckTransposeRules`&nbsp;(_click to show_)
+
+::::::{admonition} Solution to&nbsp;{numref}`Exc:MatrixOps:CheckTransposeRules`
+:class: solution, dropdown
 
 Suppose $A = \left[\begin{array}{cccc}
             a_{11} & a_{12}&  \ldots&   a_{1n}   \\
@@ -508,7 +512,9 @@ This is sometimes called the **row-column expansion** of the product.
 
 ::::::
 
-::::::{prf:proof}
+:::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixOps:RowColExpansion`
+:class: myproof
+
 We already saw this row-column expansion in {numref}`Sec:MatVecProduct`.
 
 ::::::
@@ -711,7 +717,9 @@ The $i$-th row of the product $AB$ is the linear combination of the rows of the 
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixOps:ProductRowCombinations`
+:class: myproof
+
 The indicated linear combination yields:
 
 $$
@@ -933,8 +941,9 @@ We need a good perspective to give a proof of the general case.
 
 ::::::
 
-::::::{prf:proof}
-(of {prf:ref}`Prop:MatrixOps:ProdProperties`)  
+:::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixOps:ProdProperties`
+:class: myproof
+
 Rules i. and ii. are checked in a straightforward way. See {numref}`Exc:MatrixOps:RulesProduct`.
 
 <ol type = "i"  start = "3">
@@ -1412,6 +1421,9 @@ Give a $2 \times 2$ matrix $B$ for which $B^2 = -I$.
 The following property connects the two operations matrix transposition and matrix multiplication.
 
 ::::::{prf:proposition}
+:label: Prop:MatrixOperations:TransposeProduct
+
+
 If $A$ is an $m\times n$ matrix and $B$ an $n\times p$ matrix, then
 
 $$
@@ -1469,7 +1481,9 @@ $$
 As {prf:ref}`Ex:TransposeProduct` illustrates the rule is not restricted to square matrices $A$ and $B$.
 The proof for general matrices $A$ and $B$ for which the product $AB$ is well defined is as follows
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixOperations:TransposeProduct`
+:class: myproof
+
 To show that
 
 $$

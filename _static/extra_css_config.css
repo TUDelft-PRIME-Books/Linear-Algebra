@@ -146,6 +146,7 @@ div.example > p.admonition-title {
 }
 div.example p.admonition-title::after {
   content: "\f002";
+  transform: scale(-1, 1);
   color: var(--yellow);
 }
 
@@ -160,7 +161,7 @@ div.admonition.solution > .admonition-title {
 }
 
 div.admonition.solution > .admonition-title::after {
-  content: var(--pst-icon-check-circle);
+  content: "\e5a0";
   color: var(--purple);
 }
 
