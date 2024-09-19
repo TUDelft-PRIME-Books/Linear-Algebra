@@ -51,7 +51,8 @@ is given by $|ad-bc|$, i.e., the absolute value of &nbsp; $ad-bc$.
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DetGeometric:Area`
+:class: myproof
 
 The quickest way to prove this is to translate it to the cross product ({numref}`Sec:CrossProduct`). To make use of the cross product we introduce the vectors
 
@@ -86,13 +87,15 @@ The length of this cross product is equal to $|ad-bc|$. This gives the area of t
 Now what about the sign here?
 
 ::::::{prf:proposition}
+:label: Prop:DetGeometric:DirectedAngle
 
 $ad - bc = \norm{\vect{u}}\norm{\vect{v}}\sin(\varphi)$, where $\varphi$ is the angle from $\vect{u}$ counterclockwise to $\vect{v}$.
 We will call this the **directed angle** from $\vect{u}$ to $\vect{v}$.
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DetGeometric:DirectedAngle`
+:class: myproof
 
 Again we can resort to properties of the cross product, but in fact it is not necessary to go up one dimension.
 By a small twist we can turn the determinant into an inner product:
@@ -252,7 +255,8 @@ Verify the four properties of {prf:ref}`Prop:DetGeometric:Properties2by2Det`
 The properties have a clear geometric interpretation using the notion of signed area.
 The following alternative proof uses this geometric viewpoint.
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DetGeometric:Properties2by2Det`
+:class: myproof
 
 Three of the four properties are quickly settled.
 
@@ -373,7 +377,8 @@ $$
 
 ::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DetGeometric:VolumeParped`
+:class: myproof
 
 Just as the area of a parallelogram can be computed as 'base length times height', the volume of a parallelepiped can be computed as 'base area times height'. See {numref}`Figure %s <Fig:DetGeometric:Paraped>`.
 As base region we can take the parallelogram spanned by $\vect{a}$ and $\vect{b}$, and then the base area becomes
@@ -421,7 +426,8 @@ $$
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DetGeometric:CyclicPerm`
+:class: myproof
 
 The parallelepiped spanned by the three vectors does not change under any permutation, and the orientation remains the same under a cyclic permutation.
 
@@ -480,7 +486,8 @@ $$
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DetGeometric:ColExpand`
+:class: myproof
 
 The identities are verified by evaluating the triple product:
 
