@@ -199,7 +199,8 @@ is indeed a basis for $\R^4$.
 
 ::::::
 
-::::::{dropdown} Solution to&nbsp;{numref}`Exc:BasisDim:CheckStandardBasis`&nbsp;(_click to show_)
+::::::{admonition} Solution to&nbsp;{numref}`Exc:BasisDim:CheckStandardBasis`
+:class: solution, dropdown
 
 The set is linearly independent:
 
@@ -298,7 +299,8 @@ So, there exists a set $\mathcal{B}$ containing $\mathcal{A}$ which is a basis f
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:BasisDim:Thinning`
+:class: myproof
 
 The ideas are quite straightforward.
 
@@ -580,7 +582,8 @@ The null space of $A$ is equal to the null space of $E$.
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:BasisDim:PivotColsBasis`
+:class: myproof
 
 The main idea of the first statement: row operations do not alter the linear relations between the columns of a matrix. Now why is this so?
 Let
@@ -755,7 +758,8 @@ $$
 
 ::::::
 
-::::::{dropdown} Solution to&nbsp;{numref}`Exc:BasisDim:TF-ColA-ColE`&nbsp;(_click to show_)
+::::::{admonition} Solution to&nbsp;{numref}`Exc:BasisDim:TF-ColA-ColE`
+:class: solution, dropdown
 
 The statement is _false_. <BR>
 For instance, look at {prf:ref}`Ex:BasisDim:FourByFour`. In that example all vectors in $\Col{(E)}$ have a zero on position four, and there are (many) vectors in $\Col{(A)}$ that have a nonzero fourth entry. So definitely $\Col{(A)} \neq \Col{(E)}$.
@@ -822,7 +826,8 @@ Find a basis for the null space of the matrix in the previous example.
 
 ::::::
 
-::::::{dropdown} Solution to&nbsp;{numref}`Exc:BasisDim:FinishExampleNulspace`&nbsp;(_click to show_)
+::::::{admonition} Solution to&nbsp;{numref}`Exc:BasisDim:FinishExampleNulspace`
+:class: solution, dropdown
 
 We row reduce the matrix $E = \begin{bmatrix}
 1  &  1 & 2 &  1 & -1 \\
@@ -867,14 +872,16 @@ Every basis of a fixed subspace $S$ in $\R^n$ has the same number of elements.
 
 ::::{margin}
 
-:::{admonition} {prf:ref}`Thm:LinInd:TooManyVectsimpliesLinDep`.
+:::{admonition} {prf:ref}`Thm:LinInd:TooManyVectsimpliesLinDep`
+:class: theorem
 
 Let $\vect{u}_{1},...,\vect{u}_{k}$ and $\vect{v}_{1},...,\vect{v}_{\ell}$ be vectors in $\R^{n}$.
 If $ k< \ell$ and $\Span{\vect{u}_{1},...,\vect{u}_{k}}$ contains $\Span{\vect{v}_{1},...,\vect{v}_{\ell}}$ then the set $\left\lbrace\vect{v}_{1},...,\vect{v}_{\ell}\right\rbrace$ is linearly dependent.
 
 ::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:BasisDim:EqualDim`
+:class: myproof
 
 The proof is an immediate consequence of {prf:ref}`Thm:LinInd:TooManyVectsimpliesLinDep`
 from the section on linear independence. Because of its vital important we restate it here (check the side note).
@@ -1080,7 +1087,8 @@ The dimension of the vector $\vect{u} = \begin{bmatrix} 3\\4 \end{bmatrix} $ is 
 
 ::::::
 
-::::::{dropdown} Solution to&nbsp;{numref}`Exc:BasisDim:TF:DimOfVector`&nbsp;(_click to show_)
+::::::{admonition} Solution to&nbsp;{numref}`Exc:BasisDim:TF:DimOfVector`
+:class: solution, dropdown
 
 The statement is _false_. The attribute dimension is only defined for _subspaces_.
 
@@ -1121,7 +1129,8 @@ Another way to put it: once it is known that the dimension of $S$ equals $k$, ea
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:BasisDim:TwoOfThreeSuffice`
+:class: myproof
 
 We first show the "easy" part:
 
@@ -1257,7 +1266,9 @@ $$
 
 ::::::
 
-::::::{prf:proof}
+
+::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:BasisDim:DimensionTheorem`
+:class: myproof
 
 The proof consists of combining several properties of this section.
 
@@ -1430,7 +1441,8 @@ $$
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:BasisDim:EquivalentMatricesEqualRowspaces`
+:class: myproof
 
 Recall that equivalence here means that by row operations we can transform $A$ into $B$ (and vice versa). So we have to show that row operations do not change the row space.
 
@@ -1457,7 +1469,8 @@ For each matrix $A$ the row space and the column space have the same dimension.
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:BasisDim:EqualDimRowColSpace`
+:class: myproof
 
 If a matrix $A$ is row reduced to an echelon matrix $E$ we know that
 
@@ -1576,7 +1589,8 @@ In the above {prf:ref}`Ex:BasisDim:Rowspace4x3` find out how the four rows of th
 
 ::::::
 
-::::::{dropdown} Solution to&nbsp;{numref}`Exc:BasisDim:ExpressInRowsOfE`&nbsp;(_click to show_)
+::::::{admonition} Solution to&nbsp;{numref}`Exc:BasisDim:ExpressInRowsOfE`
+:class: solution, dropdown
 
 It can be done 'by inspection'
 
@@ -1623,7 +1637,8 @@ $$
 
 ::::::
 
-::::::{dropdown} Solution to&nbsp;{numref}`Exc:BasisDim:TF:RankAEqualsRankAT`&nbsp;(_click to show_)
+::::::{admonition} Solution to&nbsp;{numref}`Exc:BasisDim:TF:RankAEqualsRankAT`
+:class: solution, dropdown
 
 The rank of $A^T$ is the dimension of the column space of $A^T$, which is the dimension of the row space of $A$. <BR>
 The rank of $A$ is the dimension of the column space of $A$.
@@ -1680,7 +1695,8 @@ $$
 
 ::::::
 
-::::::{dropdown} Solution to&nbsp;{numref}`Exc:BasisDim:RankABLeqRankA`&nbsp;(_click to show_)
+::::::{admonition} Solution to&nbsp;{numref}`Exc:BasisDim:RankABLeqRankA`
+:class: solution, dropdown
 
 The statement in {numref}`Exc:Subspaces:ColABinColA` that says $\Col{AB} \subseteq \Col{A}$ immediately gives that
 
@@ -1714,7 +1730,8 @@ $$
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:BasisDim:RankAPEqualToRankPA`
+:class: myproof
 
 Suppose $A$ and $P$ are as stated. Then by {numref}`Exc:BasisDim:RankABLeqRankA`
 

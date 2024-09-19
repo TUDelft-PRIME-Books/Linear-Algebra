@@ -73,7 +73,8 @@ for _unique_ constants $c_1,c_2,\ldots,c_m$ in $\R$.
 
 ::::
 
-::::{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:ChangeOfBasis:UniqueCoords`
+:class: myproof
 
 From the definition of a basis it follows that
 
@@ -318,7 +319,8 @@ $$
 
 ::::
 
-::::{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:ChangeOfBasis:ToStandardBasis`
+:class: myproof
 
 Suppose
 
@@ -346,7 +348,8 @@ $$
 Show that every change-of-coordinates matrix $P_{\mc{B}}$ is invertible.
 ::::
 
-::::{dropdown} Solution to&nbsp;{numref}`Exc:ChangeOfBasis:InvertiblePB`&nbsp;(_click to show_)
+::::{admonition} Solution to&nbsp;{numref}`Exc:ChangeOfBasis:InvertiblePB`
+:class: solution, dropdown
 
 Let $\mc{B} = \{\vect{b}_1,\vect{b}_2, \ldots, \vect{b}_n\}$ be any basis of $\R^n$.
 <BR>
@@ -461,7 +464,8 @@ $$
 
 ::::
 
-::::{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:ChangeOfBasis:MatrixOfTrafo`
+:class: myproof
 
 We use the definition of the coordinate vector and the linearity of the transformation. In fact we can play copycat with the proof of
 {prf:ref}`Thm:LinTrafo:LinTrafo=MatrixTrafo` in the section of linear transformations.
@@ -877,7 +881,8 @@ $$
 
 ::::
 
-::::{dropdown} Solution to&nbsp;{numref}`Exc:ChangeOfBasis:PinvAPversusPBinvP`&nbsp;(_click to show_)
+::::{admonition} Solution to&nbsp;{numref}`Exc:ChangeOfBasis:PinvAPversusPBinvP`
+:class: solution, dropdown
 
 Starting from $B = P^{-1}A\,P$   multiply both sides from the left by $P$ and from the right by $P^{-1}$,
 and use that $P^{-1}P = PP^{-1} = I$:
@@ -959,7 +964,8 @@ $A^2=A$. Show that the matrix $[T]_{\mc{E}}$ of {prf:ref}`Ex:ChangeOfBasis:Matri
 
 ::::
 
-::::{dropdown} Solution to&nbsp;{numref}`Exc:ChangeOfBasis:CheckIdempotent`&nbsp;(_click to show_)
+::::{admonition} Solution to&nbsp;{numref}`Exc:ChangeOfBasis:CheckIdempotent`
+:class: solution, dropdown
 
 Obviously the matrix $B = [T]_{\mc{B}} =  \begin{bmatrix}1 & 0 & 0\\0& 1& 0\\0&0&0  \end{bmatrix}$ has the property $B^2 = B$.
 
@@ -1013,7 +1019,8 @@ $$
 
 ::::
 
-::::{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:ChangeOfBasis:CoBmatrix`
+:class: myproof
 
 Again we will make use of the identity
 
@@ -1067,7 +1074,8 @@ P_{\mc{B}\leftarrow\mc{D}} \quad \text{and} \quad P_{\mc{C}\leftarrow\mc{D}}$?
 
 ::::
 
-::::{dropdown} Solution to&nbsp;{numref}`Exc:ChangeOfBasis:RelationMatricesCoB`&nbsp;(_click to show_)
+::::{admonition} Solution to&nbsp;{numref}`Exc:ChangeOfBasis:RelationMatricesCoB`
+:class: solution, dropdown
 
 The defining relation of  a change-of-coordinates matrix like   $P_{\mc{B}\leftarrow\mc{D}}$ is that for every vector $\vect{x}$ in $\R^n$ we have
 
@@ -1127,7 +1135,8 @@ $$
   \end{array}
 $$
 
-::::{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ChangeOfBasis:MatrixChangeGeneralBasis`
+:class: myproof
 
 <!-- prettier-ignore -->
 To find $[T(\vect{x})]_{\mc{C}'}$ when $ [\vect{x}]_{\mc{B}'}$ is given one can either

@@ -170,7 +170,8 @@ You may get some inspriration from the applet below.
 
 ::::::
 
-::::::{dropdown} Solution to&nbsp;{numref}`Exc:Subspaces:NonSubspacesR2`&nbsp;(_click to show_)
+::::::{admonition} Solution to&nbsp;{numref}`Exc:Subspaces:NonSubspacesR2`&nbsp;(_click to show_)
+:class: solution, dropdown
 
 We first give an example of a subset of $\R^2$ that only has properties i. and ii.
 
@@ -211,7 +212,8 @@ c_1\vect{u}+ c_2 \vect{v} \in S.
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Subspaces:SpanClosed`
+:class: myproof
 
 To show that a subspace satisfies property {eq}`Eq:Subspaces:SpanClosed`,
 suppose that $S$ is a subspace, $\vect{u}$ and $\vect{v}$ are vectors in $S$ and
@@ -287,7 +289,8 @@ Recall {prf:ref}`Dfn:LinearCombinations:Span`: the span of zero vectors in $\R^n
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Subspaces:SpanIsSubspace`
+:class: myproof
 
 If the number of vectors $r$ is equal to $0$, the span is equal to $\{\vect{0}\}$, the trivial subspace.
 
@@ -357,7 +360,8 @@ Once more we recall the convention that the span of zero vectors (i.e., when $r 
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Subspaces:AllSubspacesR3`
+:class: myproof
 
 of {prf:ref}`Prop:Subspaces:AllSubspacesR3`.
 
@@ -452,6 +456,7 @@ $$
 The next proposition shows that the designation 'space' in the above definition is well justified.
 
 ::::::{prf:proposition}
+:label: Prop:Subspaces:AllSubspacesRn
 
 Let $A$ be an $m\times n$ matrix.
 
@@ -473,7 +478,8 @@ The null space of $A$ is a subspace of $\R^n$.
 
 ::::::
 
-::::::{prf:proof}
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Subspaces:AllSubspacesRn`
+:class: myproof
 
 Let $A$ be an $m\times n$ matrix.<ol type = "i">
 
@@ -599,7 +605,8 @@ Can you find a similar formula relating the null space of $AB$ to the null space
 
 ::::::
 
-::::::{dropdown} Solution to&nbsp;{numref}`Exc:Subspaces:ColABinColA`&nbsp;(_click to show_)
+::::::{admonition} Solution to&nbsp;{numref}`Exc:Subspaces:ColABinColA`&nbsp;(_click to show_)
+:class: solution, dropdown
 
 Suppose that $A$ is an $m\times n$ and $B$ an $n \times p$ matrix.
 Thus $AB$ is an $m\times p$ matrix.
@@ -651,7 +658,8 @@ $$
 
 ::::::
 
-::::::{dropdown} Solution to&nbsp;{numref}`Exc:Subspaces:WhatIfAAeq0`&nbsp;(_click to show_)
+::::::{admonition} Solution to&nbsp;{numref}`Exc:Subspaces:WhatIfAAeq0`&nbsp;(_click to show_)
+:class: solution, dropdown
 
 First we show that
 
