@@ -81,21 +81,19 @@ $$
 
 :::{prf:definition}
 
-In this context, we call $\vect{x}'=A\vect{x}$ a **system of (linear) differential equations** or a **synamical system**, $\vect{x}$ a **vector-valued function**, $\vect{x}'$ the **derivative** of $\vect{x}$, and the $x_{i}$'s the **component functions** of $\vect{x}$. Any $\vect{y}$  for which $\vect{y}'=A\vect{y}$ holds is called a **solution** to the system of differential equations.
+In this context, we call $\vect{x}'=A\vect{x}$ a **system of (linear) differential equations** or a **dynamical system**, $\vect{x}$ a **vector-valued function**, $\vect{x}'$ the **derivative** of $\vect{x}$, and the $x_{i}$'s the **component functions** of $\vect{x}$. Any $\vect{y}$  for which $\vect{y}'=A\vect{y}$ holds is called a **solution** to the system of differential equations.
 
 :::
 
 The following proposition will be quite useful to us. It tells us that, in order to find the full (infinite) solution set, it suffices to find a (finite) basis of solutions.
 
 :::{prf:proposition}
-:label: Prop:DynSystContinuous:LinComb
 
 If $\vect{y}$ and $\vect{z}$ are solutions of $\vect{x}'=A\vect{x}$ and $c$ and $d$ are arbitrary real numbers, then $c\vect{y}+d\vect{z}$ is also a solution of $\vect{x}=A\vect{x}'$.
 
 :::
 
-:::{admonition} Proof of&nbsp;{prf:ref}`Prop:DynSystContinuous:LinComb`
-:class: myproof
+:::{prf:proof}
 
 Exercise.
 
@@ -186,13 +184,13 @@ A=\begin{bmatrix}
 \end{bmatrix}.
 $$
 
-Since $A$ is an upper diagonal matrix, we can conclude that its eigenvalues are $-\beta$ and $-\alpha$, which for simplicity's sake we will assume to be different. Therefore, a solution to the system of linear differential equations $\vect{y}'=A\vect{y}$ is given by 
+Since $A$ is an upper diagonal matrix, we can conclude that its eigenvalues are $-\beta$ and $-\alpha$, which, for simplicity's sake, we will assume to be different. Therefore, a solution to the system of linear differential equations $\vect{y}'=A\vect{y}$ is given by 
 
 $$
 \vect{y}=c_{1}\vect{v}_{-\beta}e^{-\beta t}+c_{2}\vect{v}_{-\alpha}e^{-\alpha t}
 $$
 
-where $c_{1}$ and $c_{2}$ are some constants while $\vect{v}_{-\beta}$ and $\vect{v}_{-\alpha}$ are the eigenvectors of $A$ corresponding $-\beta $ and $-\alpha$, respectively. In particular, if $t$ gets very large, we find very large but negative exponents on the right hand side. That is, both $\lim_{t\to\infty}S(t)$ and $\lim_{t\to\infty} I(t)$ are $0$. This makes perfect sense intuitively, as we expect all members of the population to get infected and recover. After that, they are neither susceptible nor infected anymore.
+where $c_{1}$ and $c_{2}$ are some constants while $\vect{v}_{-\beta}$ and $\vect{v}_{-\alpha}$ are the eigenvectors of $A$ corresponding to $-\beta $ and $-\alpha$, respectively. In particular, if $t$ gets very large, we find very large but negative exponents on the right hand side. That is, both $\lim_{t\to\infty}S(t)$ and $\lim_{t\to\infty} I(t)$ are $0$. This makes perfect sense intuitively, as we expect all members of the population to get infected and recover. After that, they are neither susceptible nor infected anymore.
 
 Note that, in the long run, we will end up arbitrarily close to $\vect{0}$ regardless of the starting values of $S$ and $I$. That is, if we start in any $\vect{v}$ and follow the solution $\vect{y}(t)$ of the system of linear differential equations satisfying the initial condition $\vect{y}(0)=\vect{v}$, then we will always end up in $\vect{0}$. In other words, $\vect{v}$ *attracts* all points. 
 
@@ -288,11 +286,11 @@ If $a<0$ in this proposition, then $e^{at}$ will become arbitrarily small, so as
 ::::{figure} Images/Fig-DynSystContinuous-Trajectories.svg
 :name: Fig:DynSystContinuous:Trajectories
 
-The possible behaviours of the origin illustrated. On the top left, it's an attractor, on the top right a repeller, on the bottom left a saddle point, and on the bottom right a spiral point. 
+The possible behaviours of the origin illustrated. On the top left, it's an attractor, on the top right a repeller, on the bottom left a saddle point, and on the bottom right a spiral point. Considering the figure, do you expect the real part of the eigenvalues to be positive or negative?
 ::::
 
 ## Decoupling a dynamical system
 
-In the previous section, we saw that the eigenvalues and eigenvectors determine the long-term behaviour of a dynamical system. This leads naturally to the suspicions that, perhaps, diagonalizing a matrix can help us solve a system of linear differential equations. This is indeed the case.
+In the previous section, we saw that the eigenvalues and eigenvectors determine the long-term behaviour of a dynamical system. This leads naturally to the suspicion that, perhaps, diagonalizing a matrix can help us solve a system of linear differential equations. This is indeed the case.
 
-Let us assume $A$ is an $n\times n$-matrix with eigenfunctions $\vect{y}_{1},...,\vect{v}_{n}$, that is $\vect{y}_{i}=\vect{v}_{i}e^{\lambda_{i}t}$ where $\lambda_{i}$ is an eigenvalue of $A$ with associated eigenvector $\vect{v}_{i}$.
+Let us assume $A$ is an $n\times n$-matrix with eigenfunctions $\vect{y}_{1},...,\vect{y}_{n}$, that is $\vect{y}_{i}=\vect{v}_{i}e^{\lambda_{i}t}$ where $\lambda_{i}$ is an eigenvalue of $A$ with associated eigenvector $\vect{v}_{i}$.
