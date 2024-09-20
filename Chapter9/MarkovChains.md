@@ -69,7 +69,8 @@ Suppose $P$ is a stochastic matrix. If $\vect{x}$ is a probability vector, then 
 
 :::
 
-:::{prf:proof}
+:::{admonition} Proof of&nbsp;{prf:ref}`Prop:MarkovChains:StoMatPreservesProbVect`
+:class: myproof
 
 Note first that every entry of a stochastic matrix or a probability vector is non-negative. Consequently, every entry of $P\vect{x}$ is also non-negative.
 
@@ -157,7 +158,8 @@ If $P$ is a stochastic matrix, then $1$ is an eigenvalue of $P$. Moreover, there
 
 :::
 
-:::{prf:proof}
+:::{admonition} Proof of&nbsp;{prf:ref}`Prop:MarkovChains:StoMat1EV`
+:class: myproof
 
 Showing that $1$ is an eigenvalue is a very non-trivial exercise. Showing that there is a corresponding eigenvector without negative entries would lead us too far.
 
@@ -224,7 +226,8 @@ If $P$ is a regular stochastic matrix, then it has a unique steady state $\vect{
 
 :::
 
-:::{prf:proof}
+:::{admonition} Proof of&nbsp;{prf:ref}`Thm:MarkovChains:PerronFrobenius`
+:class: myproof
 
 The proof is quite complicated and falls outside the scope of this text.
 

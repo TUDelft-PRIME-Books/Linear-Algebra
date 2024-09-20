@@ -126,8 +126,8 @@ Moreover, suppose $\vect{x}$ is the result after a (sufficiently) large number o
 
 ::::
 
-
-::::{dropdown} Informal proof of {prf:ref}`Prop:Powermethod:Powermed`.
+::::{admonition} Informal proof of {prf:ref}`Prop:Powermethod:Powermed`
+:class: myproof, dropdown
 
 For the proof we assume that the matrix is diagonalizable, to be able to use {eq}`Eq:PowerMethod:GenSol`. For an 'arbitrary' matrix the odds are very small that it has a double eigenvalue, and as long as this is not the eigenvalue with the highest modulus the conclusion of the theorem is still valid.  So we assume that  $\vect{v}_1, \ldots, \vect{v}_n$  is a set of $n$ linearly independent eigenvectors for $A$.
 
@@ -424,8 +424,8 @@ Since $0$ is not an eigenvalue, we may conclude that $A$ is invertible.
 Then the power method applied to $A^{-1}$ converges (apart from the usual exceptional cases) to an eigenvector $\vect{v}_n$ for the smallest eigenvalue $\lambda_n$.
 ::::
 
-
-::::{dropdown} Proof of the inverse power method
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:PowerMethod:SmallestEigenvalue` ({prf:ref}`Inverse Power Method <Prop:PowerMethod:SmallestEigenvalue>`)
+:class: myproof, dropdown
 
 
 We make use of the property in {numref}`Exc:EigenValues:EigenvaluesInverse` in
@@ -768,7 +768,8 @@ As mentioned, starting from a complex initial vector  $\vect{z}_0$  won't work e
 The best is of course to think of a way out yourself.  <BR> 
 If you do not see such a way out, but your curiosity has been aroused, you can open the 'workaround' below.
 
-::::{dropdown} Workaround to get to the dominant complex eigenvalues
+::::{admonition} Workaround to get to the dominant complex eigenvalues
+:class: note, dropdown
 
 By definition, a dominant eigenvalue must be *unique* ,  i.e.,  $|\lambda_1| > |\lambda_2| \geq \ldots \, |\lambda_n|$. <BR>
 The question is, how can we get rid of the dominant eigenvalue *pair* ?

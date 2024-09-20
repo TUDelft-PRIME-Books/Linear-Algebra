@@ -179,7 +179,8 @@ The expression for $\vect{x}_k$ with unspecified parameters $c_1,\ldots,c_n$ is 
 
 ::::
 
-::::{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DynSystDiscrete:DiagCase`
+:class: myproof
 
 There is nothing much to prove.
 
@@ -262,7 +263,8 @@ If $|\lambda_1| = 1$ the origin is stable but not asymptotically stable.
 </ul>
 ::::
 
-::::{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DynSystDiscrete:DiagCase2`
+:class: myproof
 
 From Equation {eq}`Eq:DynSystDiscrete:GenSolDiagble` in {prf:ref}`Prop:DynSystDiscrete:DiagCase` it follows immediately that if all
 
