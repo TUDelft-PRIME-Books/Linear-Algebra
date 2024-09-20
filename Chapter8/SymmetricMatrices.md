@@ -68,7 +68,8 @@ In other contexts the word _spectrum_ of a transformation is used for the set of
 
 So, for a symmetric matrix an orthonormal basis of eigenvectors always exists. For the inertia tensor of a 3D body such a basis corresponds to the (perpendicular) principal axes.
 
-::::{prf:proof} Of the converse of {prf:ref}`Thm:SymmetricMat:OrthogDiag`.
+::::{admonition} Of the converse of {prf:ref}`Thm:SymmetricMat:OrthogDiag`
+:class: myproof
 
 Recall that an orthogonal matrix is a matrix $Q$ for which $Q^{-1} = Q^T$.
 
@@ -144,7 +145,8 @@ Suppose $A$ is a symmetric matrix.
 If $\mathbf{v}_1$ and $\mathbf{v}_2$ are eigenvectors of $A$ for _different_ eigenvalues, then $\mathbf{v}_1\perp \mathbf{v}_2$.
 ::::
 
-::::{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SymmetricMat:OrthogonalEigenvectors`
+:class: myproof
 
 Suppose $\mathbf{v}_1$ and $\mathbf{v}_2$ are eigenvectors of the symmetric matrix $A$ for the different eigenvalues $\lambda_1,\lambda_2$.
 We want to show that $\mathbf{v}_1 \ip \mathbf{v}_2 = 0$.
@@ -214,7 +216,8 @@ If $\vect{u}$ is an eigenvector of $A$ for the eigenvalue $\lambda$, and $\vect{
 
 ::::
 
-::::{dropdown} Solution to&nbsp;{numref}`Exc:SymmetricMat:uTAv`&nbsp;(_click to show_)
+::::{admonition} Solution to&nbsp;{numref}`Exc:SymmetricMat:uTAv`
+:class: solution, dropdown
 
 The proof is completely analogous to the proof of {prf:ref}`Prop:SymmetricMat:OrthogonalEigenvectors`.
 Suppose  
@@ -257,7 +260,8 @@ All eigenvalues of symmetric matrices are real.
 
 The easiest proof is via complex numbers. Feel free to skip it, in particular when you don't feel comfortable with complex numbers.
 
-::::{dropdown} Proof of&nbsp;{prf:ref}`Prop:SymmetricMat:RealEigenvalues`
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SymmetricMat:RealEigenvalues`
+:class: myproof, dropdown
 
 For two vectors $\mathbf{u},\mathbf{v}$ in $\C^n$ we consider the expression
 
@@ -533,8 +537,8 @@ $$
 
 And now it's time for the proof of the main theorem. The proof is of the type technical and intricate. Skip it if you like. 
 
-::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:SymmetricMat:OrthogDiag`
-%::::{prf:proof} (of {prf:ref}`Thm:SymmetricMat:OrthogDiag`)
+::::{admonition} Proof of&nbsp;{prf:ref}`Thm:SymmetricMat:OrthogDiag`
+:class: myproof, dropdown
 
 Suppose that $A$ is a symmetric $n \times n$ matrix. We know there are $n$ real, possibly multiple, eigenvalues
 $\lambda_1, \lambda_2, \ldots, \lambda_n$.
@@ -870,7 +874,9 @@ of $n$ matrices $P_i$ that represent orthogonal projections onto one-dimensional
 Formula {eq}`Eq:SymmetricMat:SpectralDecomp` is referred to as being a **spectral decomposition** of the matrix $A$.
 ::::
 
-::::{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Thm:SymmetricMat:SpectralDecomp`
+:class: myproof
+
 For a general $n\times n$ symmetric matrix $A$, there exists an orthogonal diagonalization
 
 $$
@@ -911,7 +917,8 @@ $$
 where $P_i$ denotes the orthogonal projection onto the eigenspace $E_{\lambda_i}$.
 ::::
 
-::::{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Cor:SymmetricMat:SpectralThm-2`
+:class: myproof
 
 We know that
 

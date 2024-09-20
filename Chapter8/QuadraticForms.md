@@ -309,7 +309,8 @@ $$
 
 ::::
 
-::::{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:QuadForms:Substitution`
+:class: myproof
 
 If we put $\vect{x} = P\vect{y}$ we get
 
@@ -412,7 +413,8 @@ $$
 where $\lambda_1, \ldots, \lambda_n$ are the _eigenvalues_ of the matrix $A$.
 ::::
 
-::::{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:QuadForms:Diagonalize`
+:class: myproof
 
 If we make the substitution $\vect{x} = Q\vect{y}$ we find that
 
@@ -607,7 +609,8 @@ $q_A$ is **indefinite** if at least one eigenvalue is positive, and at least one
 
 ::::
 
-::::{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Thm:QuadForms:Classification`
+:class: myproof
 
 This immediately follows from {prf:ref}`Prop:QuadForms:Diagonalize`. If we make the substitution $\vect{x} = Q\vect{y}$ with the matrix $Q$ of the orthogonal diagonalization, i.e.,
 

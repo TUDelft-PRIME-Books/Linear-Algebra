@@ -162,7 +162,8 @@ Suppose $A = U\Sigma V^T$, with $U, \Sigma, V$ as in the definition.
 
 ::::
 
-::::{dropdown} Proof of&nbsp;{prf:ref}`Prop:SVD:BasicProp`
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SVD:BasicProp`
+:class: myproof, dropdown
 
 Suppose $\sigma_1>0, \ldots, \sigma_r>0$ and $\sigma_{r+1}=0 , \ldots, \sigma_p=0$, where $p=$min$\{m,n\}$.
 
@@ -236,8 +237,8 @@ Moreover,  the columns of $V$ are corresponding eigenvectors  (of $A^TA$).
 ::::
 
 
-
-::::{dropdown} Proof of &nbsp;{prf:ref}`Prop:SVD:singularvalues`
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SVD:singularvalues`
+:class: myproof, dropdown
 
 First of all, because of the properties of the matrices $U$, $\Sigma$ and $V$ we have that
 
@@ -377,7 +378,8 @@ Let $A$ be an $m\times n$ matrix with real entries. Then the following propertie
 
 :::::
 
-::::{dropdown} Proof of &nbsp;{prf:ref}`Prop:SVD:propertiesATA` 
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SVD:propertiesATA`
+:class: myproof, dropdown
 
 :::{latexlist}
 :enumerated: true
@@ -480,7 +482,8 @@ For every $m \times n$ matrix $A$  a singular value decomposition exists
 The proof consists in showing that all steps in the algorithm do what they are supposed to do, and that the final result consists of three matrices  $U, \Sigma, V$ that can act as a 
 singular value decomposition of $A$.  
 
-::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:SVD:Existence`
+::::{admonition} Proof of&nbsp;{prf:ref}`Thm:SVD:Existence`
+:class: myproof, dropdown
 
 Let us first consider the six steps of the algorithm.
 
@@ -963,7 +966,7 @@ We expect $A_3$ to be a good approximation of $A$.
   $$
   
 
-  As you can see,  $A_3$  closely resembles $A$. (You have to trust us with regard to the hidden columns. ;-) <BR>
+  As you can see,  $A_3$  closely resembles $A$. (You have to trust us with regard to the hidden columns. <html>&#128521;</html> <BR>
   The gain:  to store  the $12\times10$  matrix $A$, we have to store  $120$ reals. <BR>
   To store $U_3, \Sigma_{33}$ and $V_3$ , we only have to store  $12\times3 + 3 + 10\times 3 = 69$ numbers.  The middle 3 comes from first three   elements ($=$ singular values) on the diagonal of $\Sigma$.  
   
