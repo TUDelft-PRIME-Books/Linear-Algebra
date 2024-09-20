@@ -286,7 +286,7 @@ If $a<0$ in this proposition, then $e^{at}$ will become arbitrarily small, so as
 ::::{figure} Images/Fig-DynSystContinuous-Trajectories.svg
 :name: Fig:DynSystContinuous:Trajectories
 
-The possible behaviours of the origin illustrated. On the top left, it's an attractor, on the top right a repeller, on the bottom left a saddle point, and on the bottom right a spiral point. Considering the figure, do you expect the real part of the eigenvalues to be positive or negative?
+The possible behaviours of the origin illustrated. On the top left, it's an attractor, on the top right a repeller, on the bottom left a saddle point, and on the bottom right a spiral point. For the spiral point, do you expect the real part of the eigenvalues to be positive or negative, given the figure?
 ::::
 
 ## Decoupling a dynamical system
