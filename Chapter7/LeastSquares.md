@@ -28,9 +28,9 @@ See {numref}`Figure %s <Fig:LeastSquares:BestLines>` for both interpretations of
 :name: Fig:LeastSquares:BestLines
 
 What is the best best line? <BR>
-Challenges (for the interactive applet)<BR>
+<!-- Challenges (for the interactive applet)<BR>
 Can you get the total distance in the left picture below  $\blacksquare \blacksquare$ ?  <BR>
-Can you get the total distance in the right picture below $\blacksquare \blacksquare$ ? <BR>
+Can you get the total distance in the right picture below $\blacksquare \blacksquare$ ? <BR> -->
 
 :::
 
@@ -251,7 +251,9 @@ For each linear system $A\vect{x} = \vect{b}$, where $A$ is an $m \times n$ matr
 
 ::::
 
-::::{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LeastSquares:Existence`
+:class: myproof
+
 In {prf:ref}`Rem:LeastSquares:BestLinComb` it was noted that a least squares solution corresponds to the vector in Col $A$ that is closest to $\vect{b}$.
 
 The vector in Col $A$ that is closest to $\vect{b}$ is precisely the orthogonal projection of $\vect{x}$ onto Col $A$. (See  {prf:ref}`Prop:Orthogonality:BestApprox`.)
@@ -266,7 +268,8 @@ Lastly, these coefficients are unique if and only if the columns of $A$ are line
 
 ::::{margin}
 
-:::{admonition} {eq}`Eq:OrthoBase:OrthoProj`.
+:::{admonition} {prf:ref}`Thm:OrthoBase:OrthoDecomp`.
+:class: theorem
 
 Let $V$ be a subspace of $\R^{n}$ and let $\vect{v}_{1},...,\vect{v}_{k}$ be an orthogonal basis for $V$. For any $\vect{w}$ in $\R^{n}$, the _orthogonal projection_ of $\vect{w}$ on $V$ is given by
 
@@ -411,8 +414,8 @@ where the norm of the error vector was found to be $\sqrt{15}$.
 In the proof properties of the orthogonal projection are combined in a clever way.
 As usual, feel free to skip it.
 
-::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:LeastSquares:NormalEquations`
-
+::::{admonition} Proof of&nbsp;{prf:ref}`Thm:LeastSquares:NormalEquations`
+:class: myproof, dropdown
 
 As usual we denote the columns of the $m \times n$ matrix $A$ by $\vect{a}_1, \ldots, \vect{a}_n$.
 
@@ -507,7 +510,8 @@ the matrix $A^TA$ is invertible.
 
 ::::
 
-::::{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LeastSquares:InvertibleATA`
+:class: myproof
 
 In fact, something stronger holds:
 
@@ -541,7 +545,8 @@ For any $m \times n$ matrix $A$, if $A^TA$ is invertible, then the columns of $A
 
 ::::
 
-::::{dropdown} Solution to&nbsp;{numref}`Exc:LeastSquares:InvertibleATA`&nbsp;(_click to show_)
+::::{admonition} Solution to&nbsp;{numref}`Exc:LeastSquares:InvertibleATA`
+:class: solution, dropdown
 
 Suppose that $A$ is an $m \times n$ matrix $A$ for which $A^TA$ is invertible.
 To prove that $A$ has linearly independent columns we have to show that the equation
@@ -692,7 +697,8 @@ $$
 Also explain this simpler formula by interpreting the $QR$ decomposition in a suitable way.
 ::::
 
-::::{dropdown} Solution to&nbsp;{numref}`Exc:LeastSquares:QR`&nbsp;(_click to show_)
+::::{admonition} Solution to&nbsp;{numref}`Exc:LeastSquares:QR`
+:class: solution, dropdown
 
 This involves some elementary matrix operations. <BR>
 Suppose $A = QR$, where $Q^TQ = I$, and $R$ is an upper triangular matrix with a positive diagonal. So $R$ is invertible. <BR>

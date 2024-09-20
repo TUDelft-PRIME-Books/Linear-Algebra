@@ -30,7 +30,8 @@ An orthogonal set $S$ which does not contain $\vect{0}$ is linearly independent.
 
 :::
 
-:::{prf:proof}
+:::{admonition} Proof of&nbsp;{prf:ref}`Prop:OrthoBase:OrthoSetLinInd`
+:class: myproof
 
 Assume $S$ is linearly dependent. Then there are vectors $\vect{v}_{1},...,\vect{v}_{n}$ in $S$ and scalars $c_{1},...,c_{n}$, not all zero, such that $\vect{0}=c_{1}\vect{v}_{1}+\cdots +c_{n}\vect{v}_{n}.$ But then, for any $i$:
 
@@ -82,7 +83,8 @@ $$\vect{v}=(\vect{v}\ip\vect{v}_{1})\vect{v}_{1}+\cdots +(\vect{v}\ip\vect{v}_{k
 
 :::
 
-:::{prf:proof}
+:::{admonition} Proof of&nbsp;{prf:ref}`Thm:OrthoBase:WeightsOrthoBase`
+:class: myproof
 
 Since $\vect{v}_{1},...,\vect{v}_{k}$ is a basis for $V$ and $\vect{v}$ is in $V$, there are scalars $c_{1},...,c_{k}$ such that $\vect{v}=c_{1}\vect{v}_{1}+\cdots +c_{k}\vect{v}_{k}$. We only have to show that these scalars are as claimed. For any $j$ between $1$ and $k$,
 
@@ -135,7 +137,8 @@ For any $\vect{v}$ in $V$, $\norm{\vect{u}-\vect{u}_{V}}\leq \norm{\vect{u}-\vec
 
 :::
 
-:::{prf:proof}
+:::{admonition} Proof of&nbsp;{prf:ref}`Prop:Orthogonality:BestApprox`
+:class: myproof
 
 Recall that the inner product of any vector with itself is non-negative and that $\vect{u}_{V}\ip\vect{u}_{V^{\bot}}=0$.
 
@@ -201,7 +204,8 @@ Suppose $V$ is a subspace of $\R^{n}$ with orthogonal basis $\vect{v}_{1},...,\v
 
 ::::
 
-:::{prf:proof}
+:::{admonition} Proof of&nbsp;{prf:ref}`Thm:OrthoBase:OrthoDecomp`
+:class: myproof
 
 Put
 
@@ -446,7 +450,8 @@ An $n\times n$-matrix $A$ is orthogonal if and only if $A^{T}A=I_{n}$.
 
 :::
 
-:::{prf:proof}
+:::{admonition} Proof of&nbsp;{prf:ref}`Prop:OrthoBase:OrthoMat`
+:class: myproof
 
 Let $\vect{v}_{1},\vect{v}_{2}...,\vect{v}_{n}$ be the columns of $A$, so $\vect{v}_{1}^{T},\vect{v}_{2}^{T},...,\vect{v}_{n}^{T}$ are the rows of $A^{T}$. Consequently,
 
@@ -517,7 +522,8 @@ $\angle(A\vect{v}_{1},A\vect{v}_{2})=\angle(\vect{v}_{1},\vect{v}_{2})$.
 
 :::
 
-:::{prf:proof}
+:::{admonition} Proof of&nbsp;{prf:ref}`Prop:OrthoBase:OrthoMatandInnerProd`
+:class: myproof
 
 Using $A^{T}A=I_{n}$, we find:
 
@@ -536,12 +542,14 @@ Many statements about orthogonal matrices still hold for non-square matrices, as
 You could of course also consider matrices for which the _rows_ are orthonormal. It turns out, however, that this yields the exact same concept.
 
 :::{prf:proposition}
+:label: Prop:OrthoBase:Rows
 
 An $n\times n$-matrix $A$ is orthogonal if and only if its rows are orthonormal.
 
 :::
 
-:::{prf:proof}
+:::{admonition} Proof of&nbsp;{prf:ref}`Prop:OrthoBase:Rows`
+:class: myproof
 
 We know that $A$ is orthogonal if and only if $A^{T}A=I_{n}$. But this implies $A^{T}=A^{-1}$ and therefore also $AA^{T}=I_{n}$. Since $(A^{T})^{T}A^{T}=AA^{T}=I_{n}$, $A^{T}$ must be orthogonal by {prf:ref}`Prop:OrthoBase:OrthoMat`. Hence the columns of $A^{T}$, which are the rows of $A$, must be orthonormal.
 

@@ -19,7 +19,7 @@ For the first vector of this 'new' basis we can simply take $\vect{b}_1 = \vect{
 
 As a second basis vector we can take
 
-::::{math}
+:::{math}
 :label: Eq:GramSchmidt:Step2
 
   \vect{b}_2 = \vect{a}_2 - \text{proj}_{\vect{a}_1}(\vect{a}_2) = 
@@ -138,8 +138,8 @@ Check for yourself that the vectors $\vect{b}_1,\vect{b}_2, \vect{b}_3$ are inde
 
 ::::
 
-::::{prf:proof}
-Of {prf:ref}`Thm:GramSchmidt:GramSchmidt`
+::::{admonition} Proof of&nbsp;{prf:ref}`Thm:GramSchmidt:GramSchmidt`
+:class: myproof
 
 Let $W_j$ be the subspace spanned by the first $j$ vectors $\vect{a}_1, \ldots, \vect{a}_j$, for $j = 1,2\ldots,m$.
 
@@ -336,7 +336,8 @@ The matrix $Q$ is found by applying the Gram-Schmidt process to the (linearly in
 
 ::::
 
-::::{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Thm:GramSchmidt:QR-decomp`
+:class: myproof
 
 One way to see this, is to look at the creation of the orthonormal set $\{\vect{q}_1,\ldots,\vect{q}_m\}$
 from the linearly independent set $\{\vect{a}_1,\ldots,\vect{a}_m\}$.
@@ -427,7 +428,8 @@ $$
 
 ::::
 
-::::{prf:proof}
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:GramSchmidt:QR-quick`
+:class: myproof
 
 We know that for the matrix $Q$ as specified the decomposition
 
