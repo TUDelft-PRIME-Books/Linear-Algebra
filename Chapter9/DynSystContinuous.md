@@ -88,12 +88,14 @@ In this context, we call $\vect{x}'=A\vect{x}$ a **system of (linear) differenti
 The following proposition will be quite useful to us. It tells us that, in order to find the full (infinite) solution set, it suffices to find a (finite) basis of solutions.
 
 :::{prf:proposition}
+:label: Prop:DynSystContinuous:LinComb
 
 If $\vect{y}$ and $\vect{z}$ are solutions of $\vect{x}'=A\vect{x}$ and $c$ and $d$ are arbitrary real numbers, then $c\vect{y}+d\vect{z}$ is also a solution of $\vect{x}=A\vect{x}'$.
 
 :::
 
-:::{prf:proof}
+:::{admonition} Proof of&nbsp;{prf:ref}`Prop:DynSystContinuous:LinComb`
+:class: myproof
 
 Exercise.
 
