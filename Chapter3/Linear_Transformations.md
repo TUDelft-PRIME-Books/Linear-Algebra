@@ -204,6 +204,7 @@ This transformation "embeds" the plane $\mathbb{R}^2$ into the space $\mathbb{R}
 :fig: Images/Fig-LinTrafo-EmbedR2R3.svg
 :name: Fig:LinTrafo:EmbedR2R3
 :status: reviewed
+:class: dark-light
 
 $T$: embedding $\mathbb{R}^2$ into $\mathbb{R}^3$.
 ```
@@ -286,6 +287,7 @@ See {numref}`Figure %s <Fig:LinTrafo:SkewProjection>`.
 
 ::::{figure} Images/Fig-LinTrafo-SkewProjection.svg
 :name: Fig:LinTrafo:SkewProjection
+:class: dark-light
 
 The transformation of {prf:ref}`Eq:LinTrafo:SkewProjection`
 ::::

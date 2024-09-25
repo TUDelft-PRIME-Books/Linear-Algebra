@@ -18,6 +18,7 @@ Consider an arrow $\mathbf{v}_{1}$ in the plane as in {numref}`Figure %s <Fig:Ve
 
 ```{figure} Images/Fig-Vectors-ArrowinPlane.svg
 :name: Fig:Vectors:ArrowinPlane
+:class: dark-light
 
 Two arrows in the plane.
 ```
@@ -28,6 +29,7 @@ Of course, such route plans can be combined. Take a look at {numref}`Figure %s <
 
 ```{figure} Images/Fig-Vectors-AdditionPlane.svg
 :name: Fig:Vectors:AdditionPlane
+:class: dark-light
 
 Geometrical interpretation of addition in the plane.
 ```
@@ -172,6 +174,7 @@ We will sometimes call real numbers *scalars*, because we use them to scale vect
 :url: vectors/3Daddition
 :fig: Images/Fig-Vectors-3Daddition.svg
 :status: approved
+:class: dark-light
 
 Geometrical interpretation of addition for three-dimensional vectors.
 ```
@@ -314,6 +317,7 @@ Suppose we fix an arbitrary point in the plane. Let us call it the _origin_ and 
 
 ```{figure} Images/Fig-Vectors-PointandVec.svg
 :name: Fig:Vectors:PointandVect
+:class: dark-light
 
 The point $P=(-1,2)$ and its associated vector $\mathbf{v}=\begin{bmatrix}-1\\2\end{bmatrix}$.
 ```

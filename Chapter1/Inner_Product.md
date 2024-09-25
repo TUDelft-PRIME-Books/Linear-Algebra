@@ -28,6 +28,7 @@ in the plane, which we denote by $\norm{\mathbf{v}}$, can be computed using the 
 
 :::{figure} Images/Fig-InnerProduct-Length-2D.svg
 :name: Fig:InnerProduct:Length-2D
+:class: dark-light
 
 The length of a vector via Pythagoras' Theorem
 :::
@@ -37,6 +38,7 @@ The length of a vector via Pythagoras' Theorem
 :fig: Images/Fig-InnerProduct-length-3D.svg
 :name: Fig:InnerProduct:length-3D
 :status: approved
+:class: dark-light
 
 The length of a vector via Pythagoras' Theorem
 :::
@@ -74,6 +76,7 @@ we find that
 
 :::{figure} Images/Fig-InnerProduct-perp-non-perp.svg
 :name: Fig:InnerProduct:perp-non-perp
+:class: dark-light
 
 Perpendicular versus non-perpendicular
 :::
@@ -97,6 +100,7 @@ There is another way to look at this, which will be useful for the definition of
 
 :::{figure} Images/Fig-InnerProduct-diagonal-parallelogram.svg
 :name: Fig:InnerProduct:diagonal-parallelogram
+:class: dark-light
 
 The parallelogram spanned by $\vect{v}$ and $\vect{w}$ and its diagonals. How should you choose $\vect{v}$ and $\vect{w}$ such that the diagonals have the same length?
 :::
@@ -506,6 +510,7 @@ The vector $\mathbf{n}$ is often said to be a _normal_ vector to the line.
 
 :::{figure} Images/Fig-InnerProduct-PerpendicularLine.svg
 :name: Fig:InnerProduct:PerpendicularLine
+:class: dark-light
 
 Vectors orthogonal to a nonzero vector $\mathbf{n}$ in the plane
 :::
@@ -539,6 +544,7 @@ $$
 :url: dot_product/innerproduct_projectionvectorline
 :fig: Images/Fig-InnerProduct-ProjectionVectorLine.svg
 :name: Fig:InnerProduct:ProjectionVectorLine
+:class: dark-light
 
 Projection of a vector $\mathbf{w}$ onto a nonzero vector $\mathbf{v}$
 :::
@@ -699,6 +705,7 @@ so indeed $(\mathbf{w}_1 - \mathbf{w}_2)$ and $\vect{v}$ are orthogonal.
 
 :::{figure} Images/Fig-InnerProduct-SameProj.svg
 :name: Fig:InnerProduct:SameProj
+:class: dark-light
 
 Two vectors $\vect{w}_1$, $\vect{w}_2 $  with the same projection onto $\vect{v}$.
 
@@ -776,6 +783,7 @@ The first two of these properties are very easy to prove. The proof of the trian
 :fig: Images/Fig-InnerProduct-TriangleInequality.svg
 :name: Fig:InnerProduct:TriangleInequality
 :position: 2,2
+:class: dark-light
 
 The Triangle Inequality
 :::
@@ -842,6 +850,7 @@ $$
 
 :::{figure} Images/Fig-InnerProduct-Distance.svg
 :name: Fig:InnerProduct:Distance
+:class: dark-light
 
 The distance between two vectors
 :::
@@ -1243,6 +1252,7 @@ Below we will show that it is possible to express the angle between *any* two (n
 
 :::{figure} Images/Fig-InnerProduct-AngleAndProjection.svg
 :name: Fig:InnerProduct:AngleAndProjection
+:class: dark-light
 
 Angle between two vectors
 :::

@@ -88,6 +88,7 @@ Knowing that the cross product of two vectors is orthogonal to these vectors doe
 
 ::::{figure} Images/Fig-CrossProduct-Righthandrule.svg
 :name: Fig:CrossProduct:RightHandRule
+:class: dark-light-same
 
 The right-hand rule. Adapted from Acdx, CC BY-SA 3.0 http://creativecommons.org/licenses/by-sa/3.0/, via Wikimedia Commons.
 ::::
@@ -169,6 +170,7 @@ If $\mathbf{u}$ and $\mathbf{v}$ are vectors in $\mathbb{R}^3$, then $\norm{\mat
 
 :::{figure} Images/Fig-CrossProduct-Area.svg
 :name: Fig:CrossProduct:AreaParallelogram
+:class: dark-light
 
 Parallelogram spanned by two vectors.
 
@@ -211,6 +213,7 @@ What is the area of the triangle with vertices $(2,1,0)$, $(2,2,2)$ and $(3, 1, 
 
 :::{figure} Images/Fig-CrossProduct-TrianglePQR.svg
 :name: Fig:CrossProduct:AreaTriangle
+:class: dark-light
 
 Area of the triangle $PQR$.
 

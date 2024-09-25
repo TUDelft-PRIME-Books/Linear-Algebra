@@ -95,6 +95,7 @@ is a unit vector on $\mathcal{L}$. Using the fact that $\mathbf{u}-\proj_{\mathc
 
 ::::{figure} Images/Fig-GeomLinTrans-MatofProjonLine.svg
 :name: Fig:GeomLinTrans:MatofProjonLine
+:class: dark-light
 
 The projection of $\mathbf{e}_{1}$ on the line $\mathcal{L}$ that makes an angle $\theta$ with the positive $x$-axis. Note that the length of $T_{\mathcal{L}}(\mathbf{e}_{1})$ is $\cos(\theta)$ since the length of $\mathbf{e}_{1}$ is $1$.
 ::::
@@ -159,6 +160,7 @@ this projection is depicted on the right in {numref}`Figure %s <Fig:GeomLinTrans
 :url: geom_lin_trans/proj_in_r2
 :fig: Images/Fig-GeomLinTrans-ProjinR2.svg
 :name: Fig:GeomLinTrans:ProjinR2
+:class: dark-light
 
 On the left an orthogonal projection $T_{1}$ acting on a few selected vectors $\mathbf{u}_{1}$, $\mathbf{u}_{2}$, and $\mathbf{u}_{3}$. On the right a non-orthogonal projection $T_{2}$ acting on some selected vectors $\mathbf{v}_{1}$, $\mathbf{v}_{2}$, and $\mathbf{v}_{3}$. In both cases, the blue line represents the line $\mathcal{L}$ in the direction of $\begin{bmatrix}2\\1\end{bmatrix}$. On the left, every vector $\mathbf{u}_{i}$ is mapped to the closest vector that lies on $\mathcal{L}$. On the right, every vector $\mathbf{v}_{i}$ is mapped to the intersection of $\mathcal{L}$ wih the line through $\mathbf{v}_{i}$ in the direction given by $\begin{bmatrix}-2\\1\end{bmatrix}$.
 ```
@@ -231,6 +233,7 @@ gives the projection on $\mathcal{P}$.
 :fig: Images/Fig-GeomLinTrans-3DProjonLine.svg
 :name: Fig:GeomLinTrans:3DProj
 :status: reviewed
+:class: dark-light
 
 Projections in three dimensional space. On the left, the projection on a line $\mathcal{L}$, on the right the projection on a plane $\mathcal{P}$.
 ```
@@ -268,6 +271,7 @@ $$
 :fig: Images/Fig-GeomLinTrans-ReflinR2.svg
 :name: Fig:GeomLinTrans:ReflinR2
 :status: reviewed
+:class: dark-light
 
 The reflection along the line $\mathcal{L}$ in the direction of $\mathbf{v}=\begin{bmatrix}1\\1\end{bmatrix}$. The vectors in red are mapped to the vector in blue by this reflection.
 ```
@@ -282,6 +286,7 @@ $$
 
 ::::{figure} Images/Fig-GeomLinTrans-ReflFromDoubleProj.svg
 :name: Fig:GeomLinTrans:ReflFromDoubleProj
+:class: dark-light
 
 Reflection along the line $\mathcal{L}$ can be seen as the transformation $2\proj_{\mathcal{L}}-I$.
 ::::
@@ -366,6 +371,7 @@ For large $n$ it is hard to picture what a reflection in $n$-dimensional space d
 :fig: Images/Fig-GeomLinTrans-3DReflalongPlane.svg
 :name: Fig:GeomLinTrans:3DReflalongPlane
 :status: reviewed
+:class: dark-light
 
 Reflection along the plane $\mathcal{P}$ in $\mathbb{R}^{3}$.
 
@@ -468,6 +474,7 @@ Suppose we take the vector $\mathbf{e}_{1}$ and rotate it (counterclockwise) ove
 
 ::::{figure} Images/Fig-GeomLinTrans-RotinPlane.svg
 :name: Fig:GeomLinTrans:RotinPlane
+:class: dark-light
 
 The rotation over the angle $\theta$ working on $\mathbf{e}_{1}$ and $\mathbf{e}_{2}$. Note that the distance between $R_{\theta}\mathbf{e}_{2}$ and the vertical axis is $\sin(\theta)$ but, as $R_{\theta}\mathbf{e}_{2}$ lies to the left of the vertical axis, the first entry of $R_{\theta}\mathbf{e}_{2}$ is $-\sin(\theta)$.
 ::::
@@ -520,6 +527,7 @@ $$
 :url: geom_lin_trans/rotisdoublerefl
 :fig: Images/Fig-GeomLinTrans-RotisDoubleRefl.svg
 :name: Fig:GeomLinTrans:RotisDoubleRefl
+:class: dark-light
 
 {prf:ref}`Prop:GeomLinTrans:RotisDoubleRefl` illustrated. $\mathcal{L}_{1}$ and $\mathcal{L}_{2}$ are arbitrary lines that make an angle of $\theta/2$ with each other. Composing the reflections along $\mathcal{L}_{1}$ and $\mathcal{L}_{2}$ then gives the rotation over the angle $\theta$. This is shown for the particular vector $\mathbf{v}$. Note that the angle $\phi/2$ that $\mathcal{L}_{1}$ makes with the positive $x$ axis is irrelevant to the proof.
 ```
@@ -573,6 +581,7 @@ so $T$ moves points not on $\mathcal{L}$ parallel to $\mathcal{L}$. Points close
 
 ::::{figure} Images/Fig-GeomLinTrans-ShearTrans.svg
 :name: Fig:GeomLinTrans:ShearTrans
+:class: dark-light
 
 The shear transformation $T$ from Example {numref}`Figure %s <Fig:GeomLinTrans:ShearTrans>` working on the vectors
 $\mathbf{e}_{1}=\begin{bmatrix}1\\0\end{bmatrix}$ and $\mathbf{v}=\begin{bmatrix}-1\\1\end{bmatrix}$. Note how the distance between a vector and the line $\mathcal{L}$ is preserved by $T$. As a consequence, the area of the green and blue parallelogams on the left is the same as that of their respective images on the right.
@@ -683,6 +692,7 @@ Shear transformations are widely used to model this kind of displacement of laye
 
 ::::{figure} Images/Fig-GeomLinTrans-CardsStack.svg
 :name: Fig:GeomLinTrans:CardsStack
+:class: dark-light
 
 A shear transformation applied to a stack of cards.
 ::::

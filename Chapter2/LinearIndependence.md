@@ -4,6 +4,7 @@ As we have seen ({prf:ref}`Ex:LinearCombinations:SpanOfOneVector` and {prf:ref}`
 
 ::::{figure} Images/Fig-LinInd-Examplein1D.svg
 :name: Fig:LinInd:Examplein1D
+:class: dark-light
 
 The set $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{2}\right\rbrace$ contains two vectors, but one of them is superfluous. Every vector one can make as a linear combination of $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ can also be made with just $\mathbf{v}_{1}$.
 ::::
@@ -132,6 +133,7 @@ but now the subset $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{2}\right\rbrace$ is a
 
 ::::{figure} Images/Fig-LinInd-Examplein2D.svg
 :name: Fig:LinInd:Examplein2D
+:class: dark-light
 
 The vectors from [i.](#Item:LinInd:LinDepExin2D) on the left and from [ii.](#Item:LinInd:LinDepandIndDepExin2D) on the right. On the left, there is no vector which is a multiple of another vector so every set of two vectors is linearly independent. On the right this is not the case. The vectors $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ are multiples of each other and therefore $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{2}\right\rbrace$ is linearly dependent.
 ::::
@@ -153,6 +155,7 @@ The set $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{2},\mathbf{v}_{3}\right\rbrace$ 
 
 ::::{figure} Images/Fig-LinInd-Examplein3D.svg
 :name: Fig:LinInd:Examplein3D
+:class: dark-light
 
 The four vectors from [iii.](#Item:LinInd:LinDepExin3D). Note that $\mathbf{v}_{3}$ lies in the plane spanned by $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ but $\mathbf{v}_{4}$ does not. This means that $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{2},\mathbf{v}_{3}\right\rbrace$ is linearly dependent but $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{2},\mathbf{v}_{4}\right\rbrace$ is not.
 ::::

@@ -23,6 +23,7 @@ The vectors $\mathbf{v}_1$ and $\mathbf{v}_2$ are two vectors in the plane $\mat
 :fig: Images/Fig-LinearCombinations-LinComb.svg
 :name: Fig:LinearCombinations:LinearCombinations
 :status: approved
+:class: dark-light
 
 Linear combinations of vectors in the plane.
 ```
@@ -154,6 +155,7 @@ What does the span of a single non-zero vector look like? A linear combination o
 :fig: Images/Fig-LinearCombinations-SpanOne.svg
 :name: Fig:LinearCombinations:SpanOneVectors
 :status: approved
+:class: dark-light
 
 The span of a single non-zero vector.
 ```
@@ -171,16 +173,12 @@ $$
 
 This looks like the parametric vector equation of a plane. Since the span must contain the zero vector we find that we obtain a plane through the origin like in {numref}`Figure  %s <Fig:LinearCombinations:SpanTwoVectors>`.
 
-:::{figure}
-:name:
-
-:::
-
 ```{applet}
 :url: linear_combinations/span_two_plane
 :fig: Images/Fig-LinearCombinations-SpanTwoPlane.svg
 :name: Fig:LinearCombinations:SpanTwoVectors
 :status: approved
+:class: dark-light
 
 The span of two non-zero, non-parallel vectors.
 ```
@@ -196,6 +194,7 @@ The span of two non-zero vectors does not need to be a plane through the origin.
 :fig: Images/Fig-LinearCombinations-SpanTwoLine.svg
 :name: Fig:LinearCombinations:SpanTwoParallelVectors
 :status: approved
+:class: dark-light
 
 The span of two non-zero, parallel vectors.
 ```
@@ -208,16 +207,13 @@ If two non-zero vectors $\mathbf{u}$ and $\mathbf{v}$ are parallel, then $\mathb
 
 If we start with three non-zero vectors in $\mathbb{R}^3$, then the resulting span may take on different forms. The span of the three vectors in {numref}`Figure  %s <Fig:LinearCombinations:SpanThreeVectors1>`, for example, is equal to the entire space $\mathbb{R}^3$. In {numref}`Sec:BasisDim` we will see why this is the case.
 
-:::{figure}
-:name:
-
-:::
 
 ```{applet}
 :url: linear_combinations/span_three
 :fig: Images/Fig-LinearCombinations-SpanThreeR3.svg
 :name: Fig:LinearCombinations:SpanThreeVectors1
 :status: approved
+:class: dark-light
 
 The span of three vectors.
 ```
@@ -229,6 +225,7 @@ On the other hand, if we start with the three vectors that you can see in {numre
 :fig: Images/Fig-LinearCombinations-SpanThreePlane.svg
 :name: Fig:LinearCombinations:SpanThreeVectors2
 :status: approved
+:class: dark-light
 
 The span of three vectors lying in the same plane.
 ```

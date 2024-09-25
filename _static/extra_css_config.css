@@ -1,10 +1,10 @@
 :root {
   --raspberry: rgb(165,0,52);
-  --raspberry-min: rgb(165,0,52,10%);
-  --raspberry-mid: rgb(165,0,52,25%);
+  --raspberry-min: rgb(165,0,52,3%);
+  --raspberry-mid: rgb(165,0,52,20%);
   --yellow: #FFB81C;
-  --yellow-min: #FFB81C10;
-  --yellow-mid: #FFB81C25;
+  --yellow-min: #FFB81C05;
+  --yellow-mid: #FFB81C20;
   --darkGreen: #009B77;
   --darkGreen-min: #009B7710;
   --darkGreen-mid: #009B7725;
@@ -12,18 +12,18 @@
   --blue-min: #0076C210;
   --blue-mid: #0076C225;
   --black: var(--pst-color-text-base);
-  --black-min: #56565610;
+  --black-min: #56565605;
   --black-mid: #56565625;
   --orange: #EC6842;
   --orange-min: #EC684210;
   --orange-mid: #EC684225;
   --cyan: #00A6D6;
   --gray: #7d7d7d;
-  --gray-min: #7d7d7d10;
-  --gray-mid: #7d7d7d25;
+  --gray-min: #7d7d7d05;
+  --gray-mid: #7d7d7d20;
   --purple: #6f1d77;
-  --purple-min: #6f1d7710;
-  --purple-mid: #6f1d7725;
+  --purple-min: #6f1d7705;
+  --purple-mid: #6f1d7720;
   --pink: #EF60A3;
   --pink-min: #EF60A310;
   --pink-mid: #EF60A325;
@@ -166,7 +166,7 @@ div.admonition.solution > .admonition-title::after {
 }
 
 div.admonition.myproof {
-  border-color: var(--gray);
+  border-color: var(--darkGreen);
   background-color: var(--gray-min);
 }
 
@@ -265,3 +265,10 @@ div.admonition.hint > .admonition-title::after,
   content: "\f249";
 }
 
+html[data-theme="dark"] .dark-light {
+  filter:  invert(1) hue-rotate(180deg) saturate(1.5);
+}
+
+html[data-theme="dark"] .dark-light-same {
+  background-color: transparent !important;
+}

@@ -56,8 +56,9 @@ so any vector $\mathbf{v}=\begin{bmatrix}a_{1}\\a_{2}\end{bmatrix}$ with $a_{1}=
 
 ::::{figure} Images/Fig-InjSurj-NonInjEx.svg
 :name: Fig:InjSurj:NonInjEx
+:class: dark-light
 
-The transformation $T$ from {prf:ref}`Ex:InjSurj:InjEx` [i.](#Item:InjSurj:NonInjEx) . All vectors on the black line on the left, in particular $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$, are mapped to the vector $\mathbf{u}$ on the right. Similarly, all vectors on the blue line are mapped to $\mathbf{0}$. Since there is not just one vector on these lines, $T$ is not injective.
+The transformation $T$ from {prf:ref}`Ex:InjSurj:InjEx` [i.](#Item:InjSurj:NonInjEx) . All vectors on the <span class="only-light">black</span><span class="only-dark">white</span> line on the left, in particular $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$, are mapped to the vector $\mathbf{u}$ on the right. Similarly, all vectors on the blue line are mapped to $\mathbf{0}$. Since there is not just one vector on these lines, $T$ is not injective.
 ::::
 
 </li>
@@ -90,6 +91,7 @@ There are no free variables, so if there is a solution to the system $A\vect{x}=
 
 ::::{figure} Images/Fig-InjSurj-InjEx.svg
 :name: Fig:InjSurj:InjEx
+:class: dark-light
 
 The transformation $T$ from {prf:ref}`Ex:InjSurj:InjEx` [ii.](#Item:InjSurj:InjEx) and {prf:ref}`Ex:InjSurj:SurjEx` [ii.](#Item:InjSurj:SurjEx) acting on some selected vectors. Note that this transformation scales vectors and rotates them. For any vector $\mathbf{u}$ on the right, you can find only one vector $\mathbf{v}$ on the left such that $T(\mathbf{v})=\mathbf{u}$. Hence $T$ is injective.
 ::::
@@ -297,6 +299,7 @@ so the system $A\mathbf{x}=\mathbf{u}$ can only be solved if $a_{1}+a_{2}=0$. Th
 
 ::::{figure} Images/Fig-InjSurj-NonSurjEx.svg
 :name: Fig:InjSurj:NonSurjEx
+:class: dark-light
 
 The transformation $T$ from {prf:ref}`Ex:InjSurj:SurjEx` [i.](#Item:InjSurj:NonSurjEx) . The green line is the collection of all $\mathbf{b}$ for which the system $A\mathbf{x}=\mathbf{b}$ is consistent where $A$ is the standard matrix of $T$. Since this is not all of $\mathbb{R}^{2}$, $T$ is not surjective.
 ::::
@@ -326,6 +329,7 @@ is surjective.
 
 ::::{figure} Images/Fig-InjSurj-InjEx.svg
 :name: Fig:InjSurj:SurjEx
+:class: dark-light
 
 The transformation $T$ from {prf:ref}`Ex:InjSurj:SurjEx` [ii.](#Item:InjSurj:SurjEx) acting on some selected vectors. Note that this transformation scales vectors and rotates them. For any vector $\mathbf{u}$ on the right, you can find a vector $\mathbf{v}$ on the left such that $T(\mathbf{v})=\mathbf{u}$. Hence $T$ is surjective.
 ::::
@@ -420,7 +424,7 @@ Prove {prf:ref}`Prop:InjSurj:SurjChars`.
 
 Assume $T$ is surjective and take an arbitrary $\vect{b}$ in $\R^{n}$. Then there is an $\vect{x}$ in $\mathbb{R}^{m}$ such that $T(\vect{x})=\vect{b}$, i.e. $\vect{x}$ is a solution of $A\vect{x}=\vect{b}$. Similarly, if $A\vect{x}=\vect{b}$ has a solution for any $\vect{b}$ in $\R^{n}$, then $\vect{b}=T(\vect{x})$ which establishes surjectivity of $T$.
 
-If $A$ has a row without pivot, then, for a well-chosen $\vect{b}$, a pivot can appear in the last column of the augmented matrix $[A|\vect{b}]$. This means that $\A\vect{x}=\vect{b}$ has no solutions. Similarly, if $A\vect{x}=\vect{b}$ always has a solution, then $[A|\vect{b}]$ can never have a pivot in the lost column. Consequently, $A$ must have a pivot in every row.
+If $A$ has a row without pivot, then, for a well-chosen $\vect{b}$, a pivot can appear in the last column of the augmented matrix $[A|\vect{b}]$. This means that $A\vect{x}=\vect{b}$ has no solutions. Similarly, if $A\vect{x}=\vect{b}$ always has a solution, then $[A|\vect{b}]$ can never have a pivot in the lost column. Consequently, $A$ must have a pivot in every row.
 
 :::
 

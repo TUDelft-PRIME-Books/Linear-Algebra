@@ -27,6 +27,7 @@ The point $(4, 1)$, for example, is a point on the line with equation $2x-3y=5$ 
 
 ::::{figure} Images/Fig-LinesAndPlanes-LineInPlane.svg
 :name: Fig:LinesAndPlanes:LineInPlane
+:class: dark-light
 
 The line $2x-3y=5$ in the plane.
 ::::
@@ -37,6 +38,7 @@ Two lines can have a point of intersection. Let $\mathcal{L}_1$ and $\mathcal{L}
 
 ::::{figure} Images/Fig-LinesAndPlanes-PointIntersection.svg
 :name: Fig:LinesAndPlanes:PointIntersection
+:class: dark-light
 
 Intersecting lines.
 ::::
@@ -45,6 +47,7 @@ In the previous example there was exactly one point of intersection. This is not
 
 ::::{figure} Images/Fig-LinesAndPlanes-ParallelLines.svg
 :name: Fig:LinesAndPlanes:ParallelLines
+:class: dark-light
 
 Parallel lines.
 ::::
@@ -53,6 +56,7 @@ Finally, let us take a look at the line $\mathcal{L}_2$, which was defined by th
 
 ::::{figure} Images/Fig-LinesAndPlanes-CoincidingLines.svg
 :name: Fig:LinesAndPlanes:CoincidingLines
+:class: dark-light
 
 Coinciding lines.
 ::::
@@ -92,6 +96,7 @@ is a vector parallel to the same line.
 
 ::::{figure} Images/Fig-LinesAndPlanes-VectorEquation.svg
 :name: Fig:LinesAndPlanes:VectorEquation
+:class: dark-light
 
 The line $\mathcal{L}_1$: $\vect{x} = \vect{v}_0 + r\vect{u}$.
 ::::
@@ -185,6 +190,7 @@ $$
 
 ::::{figure} Images/Fig-LinesAndPlanes-NormalEquationLine.svg
 :name: Fig:LinesAndPlanes:NormalEquationLine
+:class: dark-light
 
 Line $\mathcal{L}$ with normal vector $\vect{n}$.
 ::::
@@ -220,6 +226,7 @@ Let us try to find a Cartesian equation for the line $\mathcal{L}$ through the p
 
 :::{figure} Images/Fig-LinesAndPlanes-OrthogonalLines.svg
 :name: Fig:LinesAndPlanes:OrthogonalLines
+:class: dark-light
 
 A line orthogonal to $\mathcal{L}_1$.
 :::
@@ -270,6 +277,7 @@ As we can see in {numref}`Figure %s <Fig:LinesAndPlanes:NormalEquationPlaneOrigi
 :fig: Images/Fig-LinesAndPlanes-NormalEquationPlaneOrigin.svg
 :name: Fig:LinesAndPlanes:NormalEquationPlaneOrigin
 :status: approved
+:class: dark-light
 
 A plane through the origin.
 ::::
@@ -281,6 +289,7 @@ Now let $P$ be the point with coordinates $(0, 2, 1)$ and take an arbitrary poin
 :fig: Images/Fig-LinesAndPlanes-NormalEquationPlane.svg
 :name: Fig:LinesAndPlanes:NormalEquationPlane
 :status: approved
+:class: dark-light
 
 A plane through the point $P$.
 ::::
@@ -390,6 +399,7 @@ We can find directional vectors of a plane by taking vectors that connects two d
 :fig: Images/Fig-LinesAndPlanes-DirectionalVectorsPlane.svg
 :name: Fig:LinesAndPlanes:DirectionalVectorsPlane
 :status: approved
+:class: dark-light
 
 A parametric vector equation of a plane.
 :::
@@ -461,6 +471,7 @@ It is of course possible that two planes have no points in common at all. Take a
 :fig: Images/Fig-LinesAndPlanes-TwoDisjointPlanes.svg
 :name: Fig:LinesAndPlanes:TwoDisjointPlanes
 :status: approved
+:class: dark-light
 
 Two planes without a common point in common.
 :::
@@ -472,6 +483,7 @@ Two planes in $\mathbb{R}^3$ can never have a single point of intersection. They
 :fig: Images/Fig-LinesAndPlanes-TwoPlanesLineIntersection.svg
 :name: Fig:LinesAndPlanes:TwoPlanesLineIntersection
 :status: approved
+:class: dark-light
 
 Two planes with a line of intersection.
 :::
@@ -481,6 +493,7 @@ Two planes with a line of intersection.
 :fig: Images/Fig-LinesAndPlanes-TwoPlanesCoincide.svg
 :name: Fig:LinesAndPlanes:TwoPlanesCoincide
 :status: approved
+:class: dark-light
 
 Two planes that coincide.
 :::
@@ -494,6 +507,7 @@ First of all, it is possible that there are no points that are on $\mathcal{P}_1
 :fig: Images/Fig-LinesAndPlanes-DisjointPlanes.svg
 :name: Fig:LinesAndPlanes:DisjointPlanes
 :status: approved
+:class: dark-light
 
 Three planes without a point in common.
 :::
@@ -505,6 +519,7 @@ In {numref}`Figure %s <Fig:LinesAndPlanes:PlanesPointIntersection>` we see three
 :fig: Images/Fig-LinesAndPlanes-PlanesPointIntersection.svg
 :name: Fig:LinesAndPlanes:PlanesPointIntersection
 :status: approved
+:class: dark-light
 
 Three planes with one point in common.
 :::
@@ -516,6 +531,7 @@ There are several circumstances where three planes have an infinite number of po
 :fig: Images/Fig-LinesAndPlanes-PlanesLineIntersection.svg
 :name: Fig:LinesAndPlanes:PlanesLineIntersection
 :status: approved
+:class: dark-light
 
 Three planes with line of intersection.
 :::
@@ -538,6 +554,7 @@ Let $\mathcal{L}$ be a line in $\mathbb{R}^3$, $\mathbf{v_0}$ a vector that conn
 :fig: Images/Fig-LinesAndPlanes-ParametricLineSpace.svg
 :name: Fig:LinesAndPlanes:ParametricLineSpace
 :status: approved
+:class: dark-light
 
 The line $\mathcal{L}$ in $\mathbb{R}^3$.
 :::

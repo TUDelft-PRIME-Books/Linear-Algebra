@@ -1144,6 +1144,7 @@ $$
 
 ::::{figure} Images/Fig-MatrixOps-NonCommutativity.svg
 :name: Fig:MatrixOps:NonCommutativity
+:class: dark-light
 
 $ \begin{bmatrix} 2 & 0 \\ 0 & 1 \end{bmatrix}\begin{bmatrix} 0 & 1 \\ 1&0 \end{bmatrix} \neq \begin{bmatrix} 0 & 1 \\ 1&0 \end{bmatrix}\begin{bmatrix} 2 & 0 \\ 0 & 1 \end{bmatrix}$
 ::::
@@ -1270,6 +1271,7 @@ See {numref}`Figure %s <Fig:MatrixOps:NilPotent>`.
 
 :::::{figure} Images/Fig-MatrixOps-Nilpotent.svg
 :name: Fig:MatrixOps:Nilpotent
+:class: dark-light
 
 Visualisation of $\vect{x} \mapsto A^2\vect{x}$.
 :::::
