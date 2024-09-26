@@ -1340,7 +1340,7 @@ Then the expression we want to minimize is given by
 
 
 $$
-  \sum_{i=1}^{n}  {\color{blue}w_i} \big(y_i - \beta_1f_1(x_{i1},\ldots, x_{ik}) \,-\, \ldots \,-\,
+  \sum_{i=1}^{n}  \class{blue}{w_i} \big(y_i - \beta_1f_1(x_{i1},\ldots, x_{ik}) \,-\, \ldots \,-\,
    \beta_{\ell}f_{\ell}(x_{i1},\ldots, x_{ik})\big)^2.
 $$
 

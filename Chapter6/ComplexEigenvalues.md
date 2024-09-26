@@ -35,12 +35,12 @@ $$
 =
 \left[\begin{array}{cc|c} -1 - i & -2& 0 \\ 1 & 1-i & 0 \end{array}\right]
 \sim
-\left[\begin{array}{cc|c} 0 & \color{blue}0 & 0 \\ 1 & 1-i & 0 \end{array}\right]
+\left[\begin{array}{cc|c} 0 & \class{blue}0 & 0 \\ 1 & 1-i & 0 \end{array}\right]
 ,
 $$
 
 where the row operation we invoke is: add the second row $(1+i)$ times to the first row.
-The blue {\color{blue}0} is the result of the evaluation of
+The blue \class{blue}{0} is the result of the evaluation of
 
 $$
 -2 + (1+i)(1-i).

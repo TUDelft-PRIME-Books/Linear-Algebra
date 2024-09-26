@@ -23,7 +23,7 @@ Note that this definition implies that a symmetric matrix must be a square matri
 The matrices
 
 $$
-  A_1 = \begin{bmatrix} 2&\color{blue}3&\color{red}4\\\color{blue}3&1&\color{green}5 \\\color{red}4&\color{green}5&7  \end{bmatrix} \quad \text{and} \quad
+  A_1 = \begin{bmatrix} 2&\class{blue}3&\class{red}4\\\class{blue}3&1&\class{green}5 \\\class{red}4&\class{green}5&7  \end{bmatrix} \quad \text{and} \quad
   A_2 = \begin{bmatrix} 0&2&3&4\\
     2&0&1&5 \\
     3&1&0&6 \\

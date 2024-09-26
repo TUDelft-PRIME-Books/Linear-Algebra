@@ -192,11 +192,11 @@ $ along its third row.
 $$
 \left|\begin{array}{rrr} a_{11} & a_{12} & a_{13} \\
 a_{21} & a_{22} & a_{23} \\
-\color{blue}a_{31} & \color{blue}a_{32} & \color{blue}a_{33}
+\class{blue}{a_{31}} & \class{blue}{a_{32}} & \class{blue}{a_{33}}
 \end{array}\right|=
-{\color{blue}a_{31}}\left|\begin{array}{cc}a_{12} & a_{13}\\ a_{22} & a_{23}\end{array}\right|-
-{\color{blue}a_{32}}\left|\begin{array}{cc}a_{11} & a_{13}\\ a_{21} & a_{23}\end{array}\right|+
-{\color{blue}a_{33}}\left|\begin{array}{cc}a_{11} & a_{12}\\ a_{21} & a_{22}\end{array}\right|
+\class{blue}{a_{31}}\left|\begin{array}{cc}a_{12} & a_{13}\\ a_{22} & a_{23}\end{array}\right|-
+\class{blue}{a_{32}}\left|\begin{array}{cc}a_{11} & a_{13}\\ a_{21} & a_{23}\end{array}\right|+
+\class{blue}{a_{33}}\left|\begin{array}{cc}a_{11} & a_{12}\\ a_{21} & a_{22}\end{array}\right|
 $$
 
 $$
@@ -212,11 +212,11 @@ $$
 Cofactor expansion along the second column yields
 
 $$
-\left|\begin{array}{rrr} a_{11} & \color{blue}a_{12} & a_{13} \\
-a_{21} & \color{blue}a_{22} & a_{23} \\
-a_{31} & \color{blue}a_{32} & a_{33}
+\left|\begin{array}{rrr} a_{11} & \class{blue}{a_{12}} & a_{13} \\
+a_{21} & \class{blue}{a_{22}} & a_{23} \\
+a_{31} & \class{blue}{a_{32}} & a_{33}
 \end{array}\right|=
--{\color{blue}a_{12}}\left|\begin{array}{cc}a_{21} & a_{23}\\ a_{31} & a_{33}\end{array}\right|+{\color{blue}a_{22}}\left|\begin{array}{cc}a_{11} & a_{13}\\ a_{31} & a_{33}\end{array}\right|-{\color{blue}a_{32}}\left|\begin{array}{cc}a_{11} & a_{13}\\ a_{21} & a_{23}\end{array}\right|
+-\class{blue}{a_{12}}\left|\begin{array}{cc}a_{21} & a_{23}\\ a_{31} & a_{33}\end{array}\right|+\class{blue}{a_{22}}\left|\begin{array}{cc}a_{11} & a_{13}\\ a_{31} & a_{33}\end{array}\right|-\class{blue}{a_{32}}\left|\begin{array}{cc}a_{11} & a_{13}\\ a_{21} & a_{23}\end{array}\right|
 $$
 
 $$

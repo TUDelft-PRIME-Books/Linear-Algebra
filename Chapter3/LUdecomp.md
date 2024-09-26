@@ -550,9 +550,9 @@ $$
            -4 &  0 &  2 & -5 \\ 
             6 &  1 & -8 &  8\end{array} \right]  \begin{array}{l}
 [R_1] \\ 
-{[R_2-{\color{red}1}R_1]} \\
-{[R_3-{\color{red}(-2)}R_1]} \\
-{[R_4-{\color{red}3}R_1]} \\
+{[R_2-\class{red}{1}R_1]} \\
+{[R_3-\class{red}{(-2)}R_1]} \\
+{[R_4-\class{red}{3}R_1]} \\
 \end{array}
 \sim 
 \left[\begin{array}{rrrr}
@@ -562,8 +562,8 @@ $$
             0 & -2 & -2 &-1\end{array} \right]  \begin{array}{l}
 [R_1] \\
 [R_2] \\
-{[R_3-{\color{blue}(-1/2)}R_2]} \\
-{[R_4-{\color{blue}1/2}R_2]} \\
+{[R_3-\class{blue}{(-1/2)}R_2]} \\
+{[R_4-\class{blue}{1/2}R_2]} \\
 \end{array}
 $$
 
@@ -578,7 +578,7 @@ $$
 [R_1] \\
 [R_2] \\
 {[R_3]} \\
-{[R_4-{\color{green}1/3}R_2]} \\
+{[R_4-\class{green}{1/3}R_2]} \\
 \end{array} 
 \,\,=\,\,
     \left[\begin{array}{rrrr}
@@ -595,9 +595,9 @@ Putting every multiplier in its right place gives
 $$
    L = \left[\begin{array}{rrrr}
                     1       &       0 & 0 & 0 \\
-            {\color{red}1}  &       1 & 0 & 0 \\
-            {\color{red}-2} &  {\color{blue}-1/2} & 1 & 0 \\ 
-            {\color{red}3}  &  {\color{blue}1/2} & \color{green}1/3 & 1
+            \class{red}{1}  &       1 & 0 & 0 \\
+            \class{red}{-2} &  \class{blue}{-1/2} & 1 & 0 \\ 
+            \class{red}{3}  &  \class{blue}{1/2} & \class{green}{1/3} & 1
         \end{array} \right].
 $$
 
@@ -998,8 +998,8 @@ $$
 \end{bmatrix}
 \begin{array}{l}
 [R_1] \\
-{[R_2-{\color{blue}(-1)}R_1]} \\
-{[R_3-{\color{blue}2}R_1]} \\
+{[R_2-\class{blue}{(-1)}R_1]} \\
+{[R_3-\class{blue}{2}R_1]} \\
 \end{array}
 & \sim &
 \begin{bmatrix}
@@ -1010,7 +1010,7 @@ $$
 \begin{array}{l}
 [R_1] \\
 {[R_2]} \\
-{[R_3-{\color{blue}(-2)}R_2]} \\
+{[R_3-\class{blue}{(-2)}R_2]} \\
 \end{array}\\
 &\sim&
 \begin{bmatrix}
@@ -1025,7 +1025,7 @@ We then have
 
 $$
   A = LU = \begin{bmatrix}
-1  &  0 & 0 \\ {\color{blue}-1} &  1 &  0  \\  {\color{blue}2} & {\color{blue}-2} & 1 \end{bmatrix}
+1  &  0 & 0 \\ \class{blue}{-1} &  1 &  0  \\  \class{blue}{2} & \class{blue}{-2} & 1 \end{bmatrix}
 \begin{bmatrix}
 1  &  3 &  1 & -1 \\
 0  &  4 &  2 &  1 \\
@@ -1189,16 +1189,16 @@ Two $4\times 4$ permutation matrices are
 Note that for an arbitrary $4 \times 4$ matrix $A$ we have
 
 $$
-  P_1 A = \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & {\color{blue}1} \\ 0 & 0 & 1 & 0 
+  P_1 A = \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & \class{blue}{1} \\ 0 & 0 & 1 & 0 
           \end{bmatrix}
         \begin{bmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\ a_{21} & a_{22} & a_{23} & a_{24} \\ 
                         a_{31} & a_{32} & a_{33} & a_{34} \\ 
-                        {\color{blue}a_{41}} & {\color{blue}a_{42}} & 
-                        {\color{blue}a_{43}} & {\color{blue}a_{44}}
+                        \class{blue}{a_{41}} & \class{blue}{a_{42}} & 
+                        \class{blue}{a_{43}} & \class{blue}{a_{44}}
           \end{bmatrix}   =
         \begin{bmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\ a_{21} & a_{22} & a_{23} & a_{24} \\ 
-                        {\color{blue}a_{41}} & {\color{blue}a_{42}} & 
-                        {\color{blue}a_{43}} & {\color{blue}a_{44}} \\ 
+                        \class{blue}{a_{41}} & \class{blue}{a_{42}} & 
+                        \class{blue}{a_{43}} & \class{blue}{a_{44}} \\ 
                         a_{31} & a_{32} & a_{33} & a_{34} 
           \end{bmatrix}   
 $$
@@ -1206,19 +1206,19 @@ $$
 and
 
 $$
-  P_2 A = \begin{bmatrix} 0 & {\color{blue}1} & 0 & 0 \\ 0 & 0 & {\color{red}1} & 0 \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 
+  P_2 A = \begin{bmatrix} 0 & \class{blue}{1} & 0 & 0 \\ 0 & 0 & \class{red}{1} & 0 \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 
             \end{bmatrix} 
           \begin{bmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\ 
-                          {\color{blue}a_{21}} & {\color{blue}a_{22}} & 
-                          {\color{blue}a_{23}} & {\color{blue}a_{24}} \\ 
-                          {\color{red}a_{31}} & {\color{red}a_{32}} & 
-                          {\color{red}a_{33}} & {\color{red}a_{34}} \\ 
+                          \class{blue}{a_{21}} & \class{blue}{a_{22}} & 
+                          \class{blue}{a_{23}} & \class{blue}{a_{24}} \\ 
+                          \class{red}{a_{31}} & \class{red}{a_{32}} & 
+                          \class{red}{a_{33}} & \class{red}{a_{34}} \\ 
                           a_{41} & a_{42} & a_{43} & a_{44}
             \end{bmatrix}   = 
-          \begin{bmatrix} {\color{blue}a_{21}} & {\color{blue}a_{22}} & 
-                          {\color{blue}a_{23}} & {\color{blue}a_{24}} \\ 
-                          {\color{red}a_{31}} & {\color{red}a_{32}} & 
-                          {\color{red}a_{33}} & {\color{red}a_{34}} \\ 
+          \begin{bmatrix} \class{blue}{a_{21}} & \class{blue}{a_{22}} & 
+                          \class{blue}{a_{23}} & \class{blue}{a_{24}} \\ 
+                          \class{red}{a_{31}} & \class{red}{a_{32}} & 
+                          \class{red}{a_{33}} & \class{red}{a_{34}} \\ 
                           a_{41} & a_{42} & a_{43} & a_{44} \\a_{11} & a_{12} & a_{13} & a_{14}
             \end{bmatrix}  
 $$
@@ -1332,14 +1332,14 @@ We will row reduce the matrix $ A= \begin{bmatrix}2&4&3 \\ 1&2&3\\1&3&2 \end{bma
 
 $$
 \left[\begin{array}{rrr}2&4&3 \\ 1&2&3\\ \fbox{1}&3&2 \end{array} \right]  \begin{array}{l}
-[R_1-{\color{blue}2}R_3] \\
-{[R_2-{\color{blue}1}R_3]} \\
+[R_1-\class{blue}{2}R_3] \\
+{[R_2-\class{blue}{1}R_3]} \\
 {[R_3]} \\
 \end{array}
 \sim
 \left[\begin{array}{rrr}0&\fbox{$-2$}&-1 \\ 0 & -1 &1 \\ 1&3&2\end{array} \right]  \begin{array}{l}
 [R_1] \\
-{[R_2-{\color{red}\frac12}R_1]} \\
+{[R_2-\class{red}{\frac12}R_1]} \\
 {[R_3]} \\
 \end{array}
 \sim
@@ -1352,7 +1352,7 @@ If we put together the matrices that describe the row operations we get
 :label: Eq:LUdecomp:PivotStructure
 
  A = \begin{bmatrix}2&\fbox{4}&3 \\ 1&2&\fbox{3}\\ \fbox{1}&3&2\end{bmatrix} =
-     \begin{bmatrix} 1 & 0 & {\color{blue}2} \\ {\color{red}\frac12} &1 & {\color{blue}1} \\ 0 & 0 & 1\end{bmatrix}
+     \begin{bmatrix} 1 & 0 & \class{blue}{2} \\ \class{red}{\frac12} &1 & \class{blue}{1} \\ 0 & 0 & 1\end{bmatrix}
      \begin{bmatrix} 0 & -2 & -1 \\ 0 & 0 &\frac32  \\1 & 3 & 2\end{bmatrix} = \tilde{L}\tilde{U}.
 
 :::
@@ -1377,8 +1377,8 @@ so
 
 $$
   PA = \begin{bmatrix} 1&3&2 \\2&4&3 \\ 1&2&3\end{bmatrix}  =
-  \begin{bmatrix} 1 & 0 & 0 \\{\color{blue}2} & 1 & 0 \\ 
-                  {\color{blue}1} & {\color{red}\frac12} & 1\end{bmatrix} 
+  \begin{bmatrix} 1 & 0 & 0 \\\class{blue}{2} & 1 & 0 \\ 
+                  \class{blue}{1} & \class{red}{\frac12} & 1\end{bmatrix} 
   \begin{bmatrix} 1&3&2 \\0&-2&-1 \\ 0&0&\frac32\end{bmatrix} = LU. 
 $$
 

@@ -745,38 +745,38 @@ For instance, to interchange column $2$ and column $5$ in a $5 \times 5$ matrix 
 
 $$
  \begin{array}{rl}
- \left|\begin{array}{ccccc} a_{11} & {\color{blue}a_{12}} & a_{13} & a_{14} & {\color{red}a_{15}} \\
-                            a_{21} & {\color{blue}a_{22}} & a_{23} & a_{24} & {\color{red}a_{25}} \\
-                            \vdots & {\color{blue}\vdots} & \vdots & \vdots & {\color{red}\vdots} \\
-                            \vdots & {\color{blue}\vdots} & \vdots & \vdots & {\color{red}\vdots} \\
-                            a_{51} & {\color{blue}a_{52}} & a_{53} & a_{54} & {\color{red}a_{55}} 
+ \left|\begin{array}{ccccc} a_{11} & \class{blue}{a_{12}} & a_{13} & a_{14} & \class{red}{a_{15}} \\
+                            a_{21} & \class{blue}{a_{22}} & a_{23} & a_{24} & \class{red}{a_{25}} \\
+                            \vdots & \class{blue}{\vdots} & \vdots & \vdots & \class{red}{\vdots} \\
+                            \vdots & \class{blue}{\vdots} & \vdots & \vdots & \class{red}{\vdots} \\
+                            a_{51} & \class{blue}{a_{52}} & a_{53} & a_{54} & \class{red}{a_{55}} 
   \end{array}\right|  = &
- -  \left|\begin{array}{ccccc} a_{11} & a_{13} & {\color{blue}a_{12}}  & a_{14} & {\color{red}a_{15}} \\
-                               a_{21} & a_{23} & {\color{blue}a_{22}}  & a_{24} & {\color{red}a_{25}} \\
-                               \vdots & \vdots & {\color{blue}\vdots}  & \vdots & {\color{red}\vdots} \\
-                               \vdots & \vdots & {\color{blue}\vdots}  & \vdots & {\color{red}\vdots} \\
-                               a_{51} & a_{53} & {\color{blue}a_{52}}  & a_{54} & {\color{red}a_{55}} 
+ -  \left|\begin{array}{ccccc} a_{11} & a_{13} & \class{blue}{a_{12}}  & a_{14} & \class{red}{a_{15}} \\
+                               a_{21} & a_{23} & \class{blue}{a_{22}}  & a_{24} & \class{red}{a_{25}} \\
+                               \vdots & \vdots & \class{blue}{\vdots}  & \vdots & \class{red}{\vdots} \\
+                               \vdots & \vdots & \class{blue}{\vdots}  & \vdots & \class{red}{\vdots} \\
+                               a_{51} & a_{53} & \class{blue}{a_{52}}  & a_{54} & \class{red}{a_{55}} 
  \end{array}\right|    = \\[2ex]
- + \left|\begin{array}{ccccc}  a_{11} & a_{13} & a_{14} & {\color{blue}a_{12}} & {\color{red}a_{15}} \\
-                               a_{21} & a_{23} & a_{24} & {\color{blue}a_{22}} & {\color{red}a_{25}} \\
-                               \vdots & \vdots & \vdots & {\color{blue}\vdots} & {\color{red}\vdots} \\
-                               \vdots & \vdots & \vdots & {\color{blue}\vdots} & {\color{red}\vdots} \\
-                               a_{51} & a_{53} & a_{54} & {\color{blue}a_{52}} & {\color{red}a_{55}} \end{array}\right|  = &
-  -  \left|\begin{array}{ccccc} a_{11}& a_{13} &  a_{14} & {\color{red}a_{15}}  & {\color{blue}a_{12}}  \\
-                               a_{21} & a_{23} &  a_{24} & {\color{red}a_{25}}  & {\color{blue}a_{22}}  \\
-                               \vdots & \vdots &  \vdots & {\color{red}\vdots}  & {\color{blue}\vdots}  \\
-                               \vdots & \vdots &  \vdots & {\color{red}\vdots}  & {\color{blue}\vdots}  \\
-                               a_{51} & a_{53} &  a_{54} & {\color{red}a_{55}}  & {\color{blue}a_{52}}   \end{array}\right| = \\[2ex]
- + \left|\begin{array}{ccccc}  a_{11} & a_{13} & {\color{red}a_{15}} &  a_{14}  & {\color{blue}a_{12}}   \\
-                               a_{21} & a_{23} & {\color{red}a_{25}} &  a_{24}  & {\color{blue}a_{22}}   \\
-                               \vdots & \vdots & {\color{red}\vdots} &  \vdots  & {\color{blue}\vdots}   \\
-                               \vdots & \vdots & {\color{red}\vdots} &  \vdots  & {\color{blue}\vdots}   \\
-                               a_{51} & a_{53} & {\color{red}a_{55}} &  a_{54}  & {\color{blue}a_{52}}    \end{array}\right| =& 
- -\left|\begin{array}{ccccc}   a_{11} & {\color{red}a_{15}}& a_{13} &  a_{14}  & {\color{blue}a_{12}}   \\
-                               a_{21} & {\color{red}a_{25}}& a_{23} &  a_{24}  & {\color{blue}a_{22}}   \\
-                               \vdots & {\color{red}\vdots}& \vdots &  \vdots  & {\color{blue}\vdots}   \\
-                               \vdots & {\color{red}\vdots}& \vdots &  \vdots  & {\color{blue}\vdots}   \\
-                               a_{51} & {\color{red}a_{55}}& a_{53} &  a_{54}  & {\color{blue}a_{52}}    \end{array}\right| 
+ + \left|\begin{array}{ccccc}  a_{11} & a_{13} & a_{14} & \class{blue}{a_{12}} & \class{red}{a_{15}} \\
+                               a_{21} & a_{23} & a_{24} & \class{blue}{a_{22}} & \class{red}{a_{25}} \\
+                               \vdots & \vdots & \vdots & \class{blue}{\vdots} & \class{red}{\vdots} \\
+                               \vdots & \vdots & \vdots & \class{blue}{\vdots} & \class{red}{\vdots} \\
+                               a_{51} & a_{53} & a_{54} & \class{blue}{a_{52}} & \class{red}{a_{55}} \end{array}\right|  = &
+  -  \left|\begin{array}{ccccc} a_{11}& a_{13} &  a_{14} & \class{red}{a_{15}}  & \class{blue}{a_{12}}  \\
+                               a_{21} & a_{23} &  a_{24} & \class{red}{a_{25}}  & \class{blue}{a_{22}}  \\
+                               \vdots & \vdots &  \vdots & \class{red}{\vdots}  & \class{blue}{\vdots}  \\
+                               \vdots & \vdots &  \vdots & \class{red}{\vdots}  & \class{blue}{\vdots}  \\
+                               a_{51} & a_{53} &  a_{54} & \class{red}{a_{55}}  & \class{blue}{a_{52}}   \end{array}\right| = \\[2ex]
+ + \left|\begin{array}{ccccc}  a_{11} & a_{13} & \class{red}{a_{15}} &  a_{14}  & \class{blue}{a_{12}}   \\
+                               a_{21} & a_{23} & \class{red}{a_{25}} &  a_{24}  & \class{blue}{a_{22}}   \\
+                               \vdots & \vdots & \class{red}{\vdots} &  \vdots  & \class{blue}{\vdots}   \\
+                               \vdots & \vdots & \class{red}{\vdots} &  \vdots  & \class{blue}{\vdots}   \\
+                               a_{51} & a_{53} & \class{red}{a_{55}} &  a_{54}  & \class{blue}{a_{52}}    \end{array}\right| =& 
+ -\left|\begin{array}{ccccc}   a_{11} & \class{red}{a_{15}}& a_{13} &  a_{14}  & \class{blue}{a_{12}}   \\
+                               a_{21} & \class{red}{a_{25}}& a_{23} &  a_{24}  & \class{blue}{a_{22}}   \\
+                               \vdots & \class{red}{\vdots}& \vdots &  \vdots  & \class{blue}{\vdots}   \\
+                               \vdots & \class{red}{\vdots}& \vdots &  \vdots  & \class{blue}{\vdots}   \\
+                               a_{51} & \class{red}{a_{55}}& a_{53} &  a_{54}  & \class{blue}{a_{52}}    \end{array}\right| 
  \end{array}
 $$
 
@@ -1065,14 +1065,14 @@ For instance, with a $4\times 4$ matrix with equal second and fourth row we woul
 
 $$
   \begin{vmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\
-                  \color{blue}a_{21} & \color{blue}a_{22} & \color{blue}a_{23} & \color{blue}a_{24} \\
+                  \class{blue}{a_{21}} & \class{blue}{a_{22}} & \class{blue}{a_{23}} & \class{blue}{a_{24}} \\
                   a_{31} & a_{32} & a_{33} & a_{34} \\
-                  \color{blue}a_{21} & \color{blue}a_{22} & \color{blue}a_{23} & \color{blue}a_{24}
+                  \class{blue}{a_{21}} & \class{blue}{a_{22}} & \class{blue}{a_{23}} & \class{blue}{a_{24}}
                   \end{vmatrix} =
                   \begin{vmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\
                   a_{21} & a_{22} & a_{23} & a_{24} \\
                   a_{31} & a_{32} & a_{33} & a_{34} \\
-                  \color{blue}0 & \color{blue}0 &\color{blue} 0 & \color{blue}0
+                  \class{blue}0 & \class{blue}0 &\class{blue} 0 & \class{blue}0
                   \end{vmatrix}.           
 $$
 

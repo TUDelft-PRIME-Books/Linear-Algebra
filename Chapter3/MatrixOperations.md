@@ -525,16 +525,16 @@ $$
    \begin{array}{ccc}
         &
         \begin{bmatrix}
-            b_{11} & b_{12}&  \ldots& {\color{red}b_{1j}} & \ldots&  b_{1p} \\
-            b_{21} & b_{22}&  \ldots&  {\color{red}b_{2j}} & \ldots&  b_{2p} \\
+            b_{11} & b_{12}&  \ldots& \class{red}{b_{1j}} & \ldots&  b_{1p} \\
+            b_{21} & b_{22}&  \ldots&  \class{red}{b_{2j}} & \ldots&  b_{2p} \\
             \vdots &  \vdots&  \ldots&  & \ldots& \vdots    \\
-            b_{n1} & b_{n2}&  \ldots&  {\color{red}b_{nj}} &  \ldots& b_{np}
+            b_{n1} & b_{n2}&  \ldots&  \class{red}{b_{nj}} &  \ldots& b_{np}
           \end{bmatrix} \\
     \begin{bmatrix}
             a_{11} & a_{12}&  \ldots& \ldots&  a_{1n} \\
             a_{21} & a_{22}&  \ldots& \ldots&  a_{2n} \\
             \cdots &  \ddots&  \ldots& \ldots& \vdots    \\
-              {\color{red}a_{i1}} &  {\color{red}a_{i2}}&   {\color{red}\cdots}& \ldots&   {\color{red}a_{in}} \\
+              \class{red}{a_{i1}} &  \class{red}{a_{i2}}&   \class{red}{\cdots}& \ldots&   \class{red}{a_{in}} \\
             \vdots &  \vdots&  \ldots& \ldots& \vdots    \\
             a_{m1} & a_{m2}&  \ldots&  \ldots& a_{mn}
     \end{bmatrix} \!\! &  \!
@@ -542,7 +542,7 @@ $$
             c_{11} & c_{12}&  \ldots& c_{1j} &\ldots&  c_{1p} \\
             c_{21} & c_{22}&  \ldots&  c_{2j} &\ldots&  c_{2p} \\
             \vdots &  \vdots&  \ldots& & \ldots& \vdots    \\
-             c_{i1} &  c_{i2}&  \cdots&{\color{red}c_{ij}} &\ldots&   c_{ip} \\
+             c_{i1} &  c_{i2}&  \cdots&\class{red}{c_{ij}} &\ldots&   c_{ip} \\
             \vdots &  \vdots&  \ldots& &\ldots& \vdots    \\
             c_{m1} & c_{m2}&  \ldots&  c_{mn} &\ldots& c_{mp}
     \end{bmatrix}

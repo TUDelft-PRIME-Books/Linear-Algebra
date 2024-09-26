@@ -330,10 +330,10 @@ Let $A$ be an $n\times n$ matrix, and $\vect{v}$ a vector in $\R^n$. Then $A^{(i
 ::::::{prf:example}
 
 For the matrix $A = \begin{bmatrix}  1 & 3 & 1 \\ 1 & 4 & 2 \\ 3 & 1 & 5  \end{bmatrix}$
-and the vector $\vect{v} = \begin{bmatrix}  \color{blue}6 \\ \color{blue}7 \\ \color{blue}8 \end{bmatrix}$ we have that
+and the vector $\vect{v} = \begin{bmatrix}  \class{blue}6 \\ \class{blue}7 \\ \class{blue}8 \end{bmatrix}$ we have that
 
 $$
-  A^{(2)}(\vect{v}) = \begin{bmatrix}  1 & \color{blue}6 & 1 \\ 1 & \color{blue}7 & 2 \\ 3 & \color{blue}8 & 5  \end{bmatrix}.
+  A^{(2)}(\vect{v}) = \begin{bmatrix}  1 & \class{blue}6 & 1 \\ 1 & \class{blue}7 & 2 \\ 3 & \class{blue}8 & 5  \end{bmatrix}.
 $$
 
 ::::::
