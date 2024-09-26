@@ -37,8 +37,9 @@ where $A$ and $B$ are the end points of $\vect{u}$ and $\vect{v}$, and $C$ corre
 
 ::::{figure} Images/Fig-DetGeometric-PargramOACB.svg
 :name: Fig:DetGeometric:PargramOACB
+:class: dark-light
 
-The parallelogram OACB
+The parallelogram $OACB$.
 ::::
 
 ::::::{prf:proposition}
@@ -62,8 +63,9 @@ $$
 
 ::::{figure} Images/Fig-DetGeometric-OrientedArea1.svg
 :name: Fig:DetGeometric:OrientedArea1
+:class: dark-light
 
-Oriented area
+Oriented area.
 ::::
 
 See {numref}`Figure %s <Fig:DetGeometric:OrientedArea1>`
@@ -103,8 +105,9 @@ where $\vect{u}^{\perp}$ is the vector that is perpendicular to $\vect{u}$, poin
 
 ::::{figure} Images/Fig-DetGeometric-AreaPargram.svg
 :name: Fig:DetGeometric:AreaPargram
+:class: dark-light
 
-Area equals base length time height
+Area equals base length time height.
 ::::
 
 So
@@ -283,6 +286,7 @@ is the most interesting one. The two pictures of {numref}`Figure %s <Fig:DetGeom
 
 ::::{figure} Images/Fig-DetGeometric-SumRule.svg
 :name: Fig:DetGeometric:Linearity
+:class: dark-light
 
 The sum rule in a picture. Note, **this is a 2D picture**.
 ::::
@@ -339,8 +343,9 @@ Then the three vectors can be interpreted as three edges of a parallelepiped. Se
 
 ::::{figure} Images/Fig-DetGeometric-Paraped.svg
 :name: Fig:DetGeometric:Paraped
+:class: dark-light
 
-Volume equals base area time height
+Volume equals base area time height.
 ::::
 
 ::::::{prf:proof}

@@ -26,8 +26,9 @@ See {numref}`Figure %s <Fig:LeastSquares:BestLines>` for both interpretations of
 
 :::{figure} Images/Fig-LeastSquares-BestLines.svg
 :name: Fig:LeastSquares:BestLines
+:class: dark-light
 
-What is the best best line? <BR>
+What is the best best line?
 <!-- Challenges (for the interactive applet)<BR>
 Can you get the total distance in the left picture below  $\blacksquare \blacksquare$ ?  <BR>
 Can you get the total distance in the right picture below $\blacksquare \blacksquare$ ? <BR> -->
@@ -793,8 +794,9 @@ For this low-dimensional problem we can draw a picture.
 
 :::{figure} Images/Fig-LeastSquares-SmallestLS.svg
 :name: Fig:LeastSquares:SmallestLS
+:class: dark-light
 
-Multiple least squares solutions
+Multiple least squares solutions.
 :::
 
 The least squares solutions are depicted as the line $\ell:  \vect{x} = \hat{\vect{x}}_0 + c\left[\begin{array}{c}  2 \\  1 \end{array}\right]$.
@@ -1022,8 +1024,9 @@ The points and the 'first guess' are depicted in {numref}`Figure %s <Fig:LeastSq
 
 :::{figure} Images/Fig-LeastSquares-FirstGuess.svg
 :name: Fig:LeastSquares:FirstGuess
+:class: dark-light
 
-First guess for best line
+First guess for best line.
 :::
 
 For this line the sum of the squares of the errors
@@ -1075,8 +1078,9 @@ give a unique least squares solution, and it is $\hat{a} = 1.6$, $\hat{b} = 0.3$
 
 :::{figure} Images/Fig-LeastSquares-LSLine.svg
 :name: Fig:LeastSquares:LSline
+:class: dark-light
 
-Least squares line
+Least squares line.
 
 :::
 
@@ -1420,8 +1424,9 @@ $(\ln(x_i), \ln(y_i))$, and the last two plots give the points with the two fits
 
 :::{figure} Images/Fig-LeastSquares-PowerFit.svg
 :name: Fig:LeastSquares:Powerfit
+:class: dark-light
 
-Least squares fitting via logarithmic scale
+Least squares fitting via logarithmic scale.
 :::
 
 ::::

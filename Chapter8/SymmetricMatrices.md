@@ -119,6 +119,7 @@ the image of the unit circle under the transformation $\vect{x} \mapsto A\vect{x
 
 :::{figure} Images/Fig-SymmetricMat-Evectors.svg
 :name: Fig:SymmetricMat:Evectors
+:class: dark-light
 
 The transformation $T(\vect{x}) =  \begin{bmatrix} 1&2\\2&-2 \end{bmatrix}\vect{x}$.
 :::

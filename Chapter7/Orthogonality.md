@@ -34,6 +34,7 @@ Then $\vect{u}$ is in $V^{\bot}$ is and only if $\vect{u}\ip\vect{v}=a_{1}+2a_{2
 
 ```{figure} Images/Fig-Ortho-OrthoComp.svg
 :name: Fig:Ortho:OrthoComp
+:class: dark-light
 
 The orthogonal complement of a 1-dimensional subspace of $\R^{2}$ (left) and a of a 2-dimensional subspace of $\R^{3}$ (right).
 ```
@@ -195,6 +196,7 @@ $$\proj_{V}(w)=\frac{\vect{w}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{
 
 ```{figure} Images/Fig-Ortho-DecompAs2Proj.svg
 :name: Fig:Ortho:DecompAs2Proj
+:class: dark-light
 
 A vector and its orthogonal projection on the subspace $V$.
 ```
@@ -248,6 +250,7 @@ Since $V$ is a subspace, the left hand side is in $V$ and since $V^{\bot}$ is a 
 
 ```{figure} Images/Fig-Ortho-OrthoDecomp.svg
 :name: Fig:Ortho:OrthoDecomp
+:class: dark-light
 
 A vector, its orthogonal projection on a subspace, and the difference of the two. Note that the difference between the vector and its projection on $V$ if orthogonal to $V$, i.e. it is in $V^{\bot}$.
 ```

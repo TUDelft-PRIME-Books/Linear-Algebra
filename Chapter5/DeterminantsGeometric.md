@@ -38,8 +38,9 @@ where $A$ and $B$ are the end points of $\vect{u}$ and $\vect{v}$, and $C$ corre
 
 ::::{figure} Images/Fig-DetGeometric-PargramOACB.svg
 :name: Fig:DetGeometric:PargramOACB
+:class: dark-light
 
-The parallelogram OACB
+The parallelogram $OACB$.
 ::::
 
 ::::::{prf:proposition}
@@ -68,8 +69,9 @@ Thus we embed the plane into $\R^3$ as the $x_1$-$x_2$-plane. See {numref}`Figur
 :url: det_geometric/orientedarea1
 :fig: Images/Fig-DetGeometric-OrientedArea1.svg
 :name: Fig:DetGeometric:OrientedArea1
+:class: dark-light
 
-Oriented area
+Oriented area.
 ```
 
 So we embed the plane $\R^2$ as the $x$-$y$-plane in $\R^3$.
@@ -111,8 +113,9 @@ where $\vect{u}^{\perp}$ is the vector that is perpendicular to $\vect{u}$, poin
 
 ::::{figure} Images/Fig-DetGeometric-AreaPargram.svg
 :name: Fig:DetGeometric:AreaPargram
+:class: dark-light
 
-The parallelogram $OACB$ and the orthogonal vector $\vect{u}^{\perp}$
+The parallelogram $OACB$ and the orthogonal vector $\vect{u}^{\perp}$.
 ::::
 
 So
@@ -297,16 +300,12 @@ $\det{(\vect{u},\vect{v}+\vect{w})} = \det{(\vect{u},\vect{v})} + \det{(\vect{u}
 
 is the most interesting one. The two pictures of {numref}`Figure %s <Fig:DetGeometric:Linearity1>` and {numref}`Figure %s <Fig:DetGeometric:Linearity2>` tell the story.
 
-::::{figure}
-:name:
-
-::::
-
 ```{applet}
 :url: det_geometric/linearity_one
 :fig: Images/Fig-DetGeometric-SumRule.svg
 :name: Fig:DetGeometric:Linearity1
 :position: 2,2
+:class: dark-light
 
 The sum rule in a picture with $(\vect{u},\vect{w})$ positively oriented. Note, this is a **2D picture**.
 ```
@@ -329,6 +328,7 @@ Since the two triangles $OCE$ and $ABD$ are congruent and they have equal areas.
 :fig: Images/Fig-DetGeometric-SumRule.svg
 :name: Fig:DetGeometric:Linearity2
 :position: 2,2
+:class: dark-light
 
 The sum rule in a picture with $(\vect{u},\vect{w})$ negatively oriented. Note, this is a **2D picture**.
 ```
@@ -359,8 +359,9 @@ Then the three vectors can be interpreted as three edges of a parallelepiped.
 :url: det_geometric/paraped
 :fig: Images/Fig-DetGeometric-Paraped.svg
 :name: Fig:DetGeometric:Paraped
+:class: dark-light
 
-Volume equals base area times height
+Volume equals base area times height.
 ```
 
 ::::::{prf:proposition}

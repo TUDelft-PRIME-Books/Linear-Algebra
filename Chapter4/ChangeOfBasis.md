@@ -29,8 +29,9 @@ See {numref}`Figure %s <Fig:ChangeOfBasis:Reflection>`.
 
 :::{figure} Images/Fig-ChangeOfBasis-Reflection.svg
 :name: Fig:ChangeOfBasis:Reflection
+:class: dark-light
 
-Reflection along the line $\mc{L}$
+Reflection along the line $\mc{L}$.
 :::
 
 From the geometry involved it follows that
@@ -188,6 +189,7 @@ $$
 
 :::{figure} Images/Fig-ChangeOfBasis-AlternativeBasis.svg
 :name: Fig:ChangeOfBasis:AlternativeBasis
+:class: dark-light
 
 The basis $\{\vect{b}_1,\vect{b}_2\}$ of {prf:ref}`Ex:ChangeOfBasis:BasicExampleR2`.
 ::::
@@ -680,8 +682,9 @@ The vector $\vect{b}_1+\vect{b}_2 = \begin{bmatrix} 1 \\ \sqrt{3}  \end{bmatrix}
 
 :::{figure} Images/Fig-ChangeOfBasis-TriangularGrid.svg
 :name: Fig:ChangeOfBasis-TriangularGrid
+:class: dark-light
 
-Rotation in disguise
+Rotation in disguise.
 
 :::
 
@@ -909,6 +912,7 @@ See {numref}`Figure %s <Fig:ChangeOfBasis:Projection>`.
 :url: change_of_basis/projection
 :fig: Images/Fig-ChangeOfBasis-Projection.svg
 :name: Fig:ChangeOfBasis:Projection
+:class: dark-light
 
 Projection with respect to a suitable basis.
 ```

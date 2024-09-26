@@ -289,7 +289,7 @@ See {numref}`Figure %s <Fig:LinTrafo:SkewProjection>`.
 :name: Fig:LinTrafo:SkewProjection
 :class: dark-light
 
-The transformation of {prf:ref}`Eq:LinTrafo:SkewProjection`
+The transformation of {prf:ref}`Eq:LinTrafo:SkewProjection`.
 ::::
 
 ::::::

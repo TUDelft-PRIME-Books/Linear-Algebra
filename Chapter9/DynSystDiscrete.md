@@ -45,6 +45,7 @@ individuals of the age group 'full grown' reproduce 4 offspring and with probabi
 
 :::{figure} Images/Fig-DynSystDiscrete-LeslieGraph.svg
 :name: Fig:DynSystDiscrete:Leslie1
+:class: dark-light
 
 The graph of the population model.
 :::
@@ -386,8 +387,9 @@ The trajectories in $\R^4$ are hard to plot. Instead we can plot the progression
 
 :::{figure} Images/Fig-DynSystDiscrete-Leslie-2.svg
 :name: Fig:DynSystDiscrete:Leslie2
+:class: dark-light
 
-The evolvement in time of the population model
+The evolvement in time of the population model.
 :::
 
 What is not so clear in the picture is that for large $k$ the state vectors $\vect{x}_k$ are approximately eigenvectors for the matrix $M$. However, numerical values shed light on this phenomenon. For instance, the last two 'states' are given by
@@ -469,8 +471,9 @@ In {numref}`Fig:DynSystDiscrete:SimplestSystem` the paths are shown for the star
 
 :::{figure} Images/Fig-DynSystDiscrete-SimplestSystem.svg
 :name: Fig:DynSystDiscrete:SimplestSystem
+:class: dark-light
 
-A very simple dynamical system
+A very simple dynamical system.
 
 :::
 
@@ -501,8 +504,9 @@ matrix $A = \left[\begin{array}{cc} 0.5 & 0.2 \\ -0.2 & 1.0 \end{array}\right]$.
 
 :::{figure} Images/Fig-DynSystDiscrete-NiceNode.svg
 :name: Fig:DynSystDiscrete:NiceNode
+:class: dark-light
 
-A dynamical system with a stable node
+A dynamical system with a stable node.
 
 :::
 
@@ -551,8 +555,9 @@ $(1,-1)$ and $(-1,1)$. On each of them the direction of the points $\vect{x}_k$ 
 
 :::{figure} Images/Fig-DynSystDiscrete-Spiral1A.svg
 :name: Fig:DynSystDiscrete:Spiral1A
+:class: dark-light
 
-A dynamical system with a spiral point
+A dynamical system with a spiral point.
 
 :::
 
@@ -601,8 +606,9 @@ $$
 
 :::{figure} Images/Fig-DynSystDiscrete-Spiral1B.svg
 :name: Fig:DynSystDiscrete:Spiral1B
+:class: dark-light
 
-One trajectory $\vect{y}_0$, $\vect{y}_1$, $\vect{y}_2$, .....
+One trajectory $\vect{y}_0$, $\vect{y}_1$, $\vect{y}_2$, $\ldots$.
 
 :::
 

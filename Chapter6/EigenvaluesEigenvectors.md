@@ -158,8 +158,9 @@ See also {numref}`Figure %s <Fig:Eigenvalues:Eigenvector-no-Eigenvector>`
 
 ::::{figure} Images/Fig-Eigenvalues-Eigenvector-no-Eigenvector.svg
 :name: Fig:Eigenvalues:Eigenvector-no-Eigenvector
+:class: dark-light
 
-To be or not to be (an eigenvector)
+To be or not to be (an eigenvector).
 ::::
 
 ::::::
@@ -680,8 +681,9 @@ See Figure {numref}`Figure %s <Fig:Eigenvalues:Eigenvector>`
 
 ::::{figure} Images/Fig-Eigenvalues-Rotation.svg
 :name: Fig:Eigenvalues:Eigenvector
+:class: dark-light
 
-A rotation has no eigenvectors
+A rotation has no eigenvectors.
 ::::
 
 ::::::

@@ -163,8 +163,9 @@ with $\vect{e}_1$ pointing to the right and $\vect{e}_2$ pointing upwards. Likew
 :url: basisdim/standardbasis
 :fig: Images/Fig-BasisDim-StandardBasis.svg
 :name: Fig:BasisDim:StandardBasis
+:class: dark-light
 
-The standard bases in $\R^2$ and $\R^3$
+The standard bases in $\R^2$ and $\R^3$.
 ```
 
 ::::::
@@ -464,6 +465,7 @@ spans the null space. It is also linearly independent, so it is a basis.
 
 ::::{figure} Images/Fig-BasisDim-BasisColA.svg
 :name: Fig:BasisDim:BasisColA
+:class: dark-light
 
 The basis $\lbrace\vect{a}_1,\vect{a}_3\rbrace$ of $\Col{A}$.
 ::::

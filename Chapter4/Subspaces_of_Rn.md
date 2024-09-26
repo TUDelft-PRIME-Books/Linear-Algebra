@@ -122,8 +122,9 @@ $$
 
 ::::{figure} Images/Fig-Subspaces-Lines.svg
 :name: Fig:Subspaces:Lines
+:class: dark-light
 
-A line is a subspace of $\R^2$ if and only if it goes through (0,0)
+A line is a subspace of $\R^2$ if and only if it goes through $(0,0)$.
 ::::
 
 ::::::
@@ -144,6 +145,7 @@ A disk $D$ specified by the inequality $x^2 + y^2 \leq a^2$, where $a$ is some p
 
 ::::{figure} Images/Fig-Subspaces-Disk.svg
 :name: Fig:Subspaces:SubspacesDisk
+:class: dark-light
 
 A disk is not a subspace of $\R^2$.
 ::::
@@ -166,7 +168,7 @@ Also give a set with only the properties i and iii.
 </li>
 </ol>
 
-You may get some inspriration from the applet below.
+<!-- You may get some inspriration from the applet below. -->
 
 ::::::
 

@@ -1146,7 +1146,7 @@ $$
 :name: Fig:MatrixOps:NonCommutativity
 :class: dark-light
 
-$ \begin{bmatrix} 2 & 0 \\ 0 & 1 \end{bmatrix}\begin{bmatrix} 0 & 1 \\ 1&0 \end{bmatrix} \neq \begin{bmatrix} 0 & 1 \\ 1&0 \end{bmatrix}\begin{bmatrix} 2 & 0 \\ 0 & 1 \end{bmatrix}$
+$ \begin{bmatrix} 2 & 0 \\ 0 & 1 \end{bmatrix}\begin{bmatrix} 0 & 1 \\ 1&0 \end{bmatrix} \neq \begin{bmatrix} 0 & 1 \\ 1&0 \end{bmatrix}\begin{bmatrix} 2 & 0 \\ 0 & 1 \end{bmatrix}$.
 ::::
 
 Note that $T_A$ is a transformation that 'stretches' horizontally, and $T_B$ is a reflection. {numref}`Figure %s <Fig:MatrixOps:NonCommutativity>` visualizes the transformations corresponding to $AB$ and $BA$. When we apply the transformations one after another, the order in which we do this is important.

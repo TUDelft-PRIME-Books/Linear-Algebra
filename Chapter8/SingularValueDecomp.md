@@ -2,7 +2,7 @@
 
 # Singular Value Decomposition (SVD)
 
-We have seen already several ways to factorise matrices. In {numref}`Sec:MatFactor`, we studied the $LU$ and the $PLU$ factorisations, and in  {numref}`Sec:Gram-Schmidt:QRdecomp`
+We have seen already several ways to factorise matrices. In {numref}`Sec:LU-decomp`, we studied the $LU$ and the $PLU$ factorisations, and in  {numref}`Sec:Gram-Schmidt:QRdecomp`
 we laid the QR Decomposition on the table. In {numref}`Sec:SymmetricMat` we showed that every symmetric (square) matrix $A$ can be written as  $A = QDQ^{-1} = QDQ^T$. In this section it is in a sense this last decomposition we will generalize to non-symmetric matrices, and even to non-square matrices.
 We will introduce and study the so-called **singular value decomposition** (SVD) of a matrix.
 In the first subsection ({numref}`Subsec:SVD:Definition`) we will give the definition of the SVD, and illustrate it with a few examples.  In the second subsection ({numref}`Subsec:SVD:Existence`) an algorithm to compute the SVD is presented and illustrated. And it will be shown that this algorithm always yields a proper SVD.
@@ -669,13 +669,13 @@ In this section we will have a deeper look at the decomposition and its meaning.
 By definition, the matrices $U$ and $V$ in the SVD of an $m\times n$ matrix $A$ 
 are orthogonal matrices. Thus the columns of $U$ give an orthonormal basis of $\R^m$,  the columns of $V$ an orthonormal basis of $\R^n$. The decomposition $U\Sigma V^T$ then becomes a composition of transformations. We can visualise this using the graph in {numref}`Figure %s <Fig:SVD:decomposition>`:
 
-:::{figure} Images/Fig-SVD-Decomposition.svg
-:width: 300px
+:::::{figure} Images/Fig-SVD-Decomposition.svg
 :name: Fig:SVD:decomposition
+:class: dark-light
 
 Diagram showing the SVD as a composition of linear transformations.
 
-::::
+:::::
 
 
 Let us first consider the case where $A$ is a  $2 \times 2$ matrix, as in that case everything takes place in the plane, and we can make an exact drawing of what is going on. 
@@ -777,8 +777,9 @@ $$
 
 :::{figure} Images/Fig-SVD-GeometricView.svg
 :name: Fig:SVD:GeometricView
+:class: dark-light
 
-Geometric decomposition of $\tilde{A} = \dfrac{1}{\sqrt{5}}\begin{bmatrix} 5 & 2 \\ 0 & 6 \end{bmatrix} = U\tilde{\Sigma}V^T$ 
+Geometric decomposition of $\tilde{A} = \dfrac{1}{\sqrt{5}}\begin{bmatrix} 5 & 2 \\ 0 & 6 \end{bmatrix} = U\tilde{\Sigma}V^T$.
 :::
 
 ::::

@@ -113,6 +113,7 @@ Both examples are illustrated in {numref}`Figure %s <Fig:OrthoComp:OrthoComp>`.
 :url: ortho/orthocomp
 :fig: Images/Fig-OrthoComp-OrthoComp.svg
 :name: Fig:OrthoComp:OrthoComp
+:class: dark-light
 
 The orthogonal complement of a 1-dimensional subspace of $\R^{2}$ (left) and of a 2-dimensional subspace of $\R^{3}$ (right).
 ```
@@ -287,6 +288,7 @@ Putting $\vect{u}_{V}=c_{1}\vect{v}_{1}+\cdots+c_{k}\vect{v}_{k}$ and $\vect{u}_
 :url: ortho/orthodecomp
 :fig: Images/Fig-OrthoComp-OrthoDecomp.svg
 :name: Fig:OrthoBase:OrthoDecomp
+:class: dark-light
 
 A subspace $V$, a vector $\vect{u}$ and the orthogonal decomposition of $\vect{u}$ with respect to $V$.
 ```

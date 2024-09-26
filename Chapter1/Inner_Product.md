@@ -30,7 +30,7 @@ in the plane, which we denote by $\norm{\mathbf{v}}$, can be computed using the 
 :name: Fig:InnerProduct:Length-2D
 :class: dark-light
 
-The length of a vector via Pythagoras' Theorem
+The length of a vector via Pythagoras' Theorem.
 :::
 
 :::{applet}
@@ -40,7 +40,7 @@ The length of a vector via Pythagoras' Theorem
 :status: approved
 :class: dark-light
 
-The length of a vector via Pythagoras' Theorem
+The length of a vector via Pythagoras' Theorem.
 :::
 
 Using this theorem twice we find a similar formula for the length of a vector
@@ -78,7 +78,7 @@ we find that
 :name: Fig:InnerProduct:perp-non-perp
 :class: dark-light
 
-Perpendicular versus non-perpendicular
+Perpendicular versus non-perpendicular.
 :::
 
 Let us now turn our attention to another important geometric concept, namely that of
@@ -104,13 +104,6 @@ There is another way to look at this, which will be useful for the definition of
 
 The parallelogram spanned by $\vect{v}$ and $\vect{w}$ and its diagonals. How should you choose $\vect{v}$ and $\vect{w}$ such that the diagonals have the same length?
 :::
-
-%::: OLD: two figures rectangle / non-rectangle
-%:::{figure} Images/Fig-InnerProduct-diagonal-parallelogram.svg
-%:name: Fig:InnerProduct:diagonal-parallelogram%
-%
-%Diagonal of a rectangle versus diagonal of a parallelogram
-%:::
 
 In the picture on the right the vectors are not perpendicular and
 
@@ -512,7 +505,7 @@ The vector $\mathbf{n}$ is often said to be a _normal_ vector to the line.
 :name: Fig:InnerProduct:PerpendicularLine
 :class: dark-light
 
-Vectors orthogonal to a nonzero vector $\mathbf{n}$ in the plane
+Vectors orthogonal to a nonzero vector $\mathbf{n}$ in the plane.
 :::
 
 ::::
@@ -546,7 +539,7 @@ $$
 :name: Fig:InnerProduct:ProjectionVectorLine
 :class: dark-light
 
-Projection of a vector $\mathbf{w}$ onto a nonzero vector $\mathbf{v}$
+Projection of a vector $\mathbf{w}$ onto a nonzero vector $\mathbf{v}$.
 :::
 
 :::{prf:proposition}
@@ -785,7 +778,7 @@ The first two of these properties are very easy to prove. The proof of the trian
 :position: 2,2
 :class: dark-light
 
-The Triangle Inequality
+The Triangle Inequality.
 :::
 
 ::::{prf:example}
@@ -852,7 +845,7 @@ $$
 :name: Fig:InnerProduct:Distance
 :class: dark-light
 
-The distance between two vectors
+The distance between two vectors.
 :::
 
 ::::{grasple}
@@ -973,14 +966,6 @@ $$
 $$
 
 :::
-
-%\begin{figure}
-%\begin{center}
-%\includegraphics{Images/Fig-InnerProduct-TriangleInequality.pdf}
-%\caption{The Triangle Inequality}
-%\label{Fig:InnerProduct:TriangleInequality}
-%\end{center}
-%\end{figure}
 
 Interestingly, Pythagoras' theorem also holds in $\mathbb{R}^n$.
 
@@ -1254,7 +1239,7 @@ Below we will show that it is possible to express the angle between *any* two (n
 :name: Fig:InnerProduct:AngleAndProjection
 :class: dark-light
 
-Angle between two vectors
+Angle between two vectors.
 :::
 
 First we will show a geometrical characterization of the dot product that holds in $\mathbb{R}^2$ as well as in $\mathbb{R}^3$.

@@ -189,14 +189,6 @@ Note that we only define the sum of two vectors if they have the same size!
 
 This might look a bit scary, but is really just what we did in the plane, just with more numbers now. We now use the term vector instead of arrow. Adding two vectors is again just gluing the second one to the tip of the first one, and taking a scalar multiple of a vector is just stretching it again (or perhaps shrinking it).
 
-%\begin{app}
-%More than three dimensions? How does that make sense? Well, it is actually not so strange at all! Consider for example a (digital) picture. In order to describe one point of the image, we not only have to give its location but also its colour. The location is given by two numbers: how far along the $x$-axis and how far up the $y$-axis our point is. The colour is usually given in terms of primary colours. Typical primary colours would be red, green, and blue. Other colours are made by mixing certain amounts of red, green, and blue. You can get magenta, for example, by mixing red and blue in equal amounts. To fully describe a point in our picture, we therefore need a vector of length 5: two entries for the location, and three for the colour.
-%\begin{figure}
-%\missingfigure{Applet with e.g. 20x10 squares and five changeable dimensions.}
-%\caption{A 20x10 picture. Every point is described by two numbers giving its location and three numbers giving its colour.}
-%\end{figure}
-%\end{app}
-
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/a962fb8c-89b0-4b97-b76e-8f53335cf301?id=70140
 :label: grasple_exercise_1_1_2
@@ -264,7 +256,7 @@ Note that for every molecule of sodium sulfate we need two molecules of carbon i
 ```{figure} Images/Fig-Vectors-ChemRec.svg
 :name: Fig:Vectors:ChemRec
 
-The chemical reaction given in {eq}`Eq:Vectors:ChemReac`
+The chemical reaction given in {eq}`Eq:Vectors:ChemReac`.
 ```
 
 There are four different chemical elements involved in this reaction: sodium ($\ce{Na}$), sulfide ($\ce{S}$), oxygen ($\ce{O}$), and carbon. Each of our molecules can be written as a vector of size four with the entries giving the number of sodium, sulfide, oxygen, and carbon atoms (in that order) in the molecule. This gives:

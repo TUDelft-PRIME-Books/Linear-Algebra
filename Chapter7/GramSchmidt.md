@@ -165,8 +165,9 @@ $(\vect{b}_1, \ldots, \vect{b}_j)$ of $W_j$. See {numref}`Figure %s <Fig:GramSch
 
 :::{figure} Images/Fig-GramSchmidt-GS-step123.svg
 :name: Fig:GramSchmidt:GS-step123
+:class: dark-light
 
-First steps in the Gram-Schmidt process
+First steps in the Gram-Schmidt process.
 :::
 
 That is,

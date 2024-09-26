@@ -242,6 +242,7 @@ Let us consider the following toy problem, illustrated in {numref}`Figure %s <Fi
 
 :::{figure} Images/Fig-MarkovChains-MarkovChainonNodes.svg
 :name: Fig:MarkovChains:FourNodesinCircle
+:class: dark-light
 
 The problem from {prf:ref}`Ex:MarkovChains:MarkovChainonNodes` illustrated.
 
@@ -293,6 +294,7 @@ What makes this Markov chain behave so weirdly is the fact that any two nodes ar
 
 :::{figure} Images/Fig-MarkovChains-ExtraLoop.svg
 :name: Fig:MarkovChains:ExtraLoop
+:class: dark-light
 
 The problem from {prf:ref}`Ex:MarkovChains:MarkovChainonNodes` with an extra loop. Note that the outgoing arrows from node 1 now have different probabilities.
 

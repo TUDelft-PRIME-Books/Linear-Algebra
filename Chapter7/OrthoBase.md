@@ -231,6 +231,7 @@ It is worthwhile to compare this result to the formula for the projection of one
 :fig: Images/Fig-OrthoBase-DecompAs2Proj.svg
 :name: Fig:OrthoBase:DecompAs2Proj
 :position: -5.49,7.46,20.08
+:class: dark-light
 
 A vector and its orthogonal projection on the subspace $V$. Note that this projection is the sum of the projections of $\vect{u}$ on the orthogonal basis $\vect{v}_{1},\vect{v}_{2}$.
 ```

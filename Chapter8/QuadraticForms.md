@@ -130,8 +130,9 @@ the graph of a linear function $z = a_1x_1 + a_2x_2 + b$ is a plane.
 
 :::{figure} Images/Fig-QuadForms-Plane1.svg
 :name: Fig:QuadForms:Plane1
+:class: dark-light
 
-The plane $z = \frac13x_1 - x_2 +2$
+The plane $z = \frac13x_1 - x_2 +2$.
 :::
 
 The graph of a quadratic function is a curved surface.
@@ -140,14 +141,16 @@ The graph of a quadratic function is a curved surface.
 
 :::{figure} Images/Fig-QuadForms-QuadSurface1.png
 :name: Fig:QuadForms:QuadSurface1
+:class: dark-light
 
-The surface $z = -\frac13x_1^2 + \frac13x_2^2 + 2 $
+The surface $z = -\frac13x_1^2 + \frac13x_2^2 + 2 $.
 :::
 
 :::{figure} Images/Fig-QuadForms-QuadSurface2.png
 :name: Fig:QuadForms:QuadSurface2
+:class: dark-light
 
-The surface $z = -\frac12x_1^2 - \frac14x_2^2 + x_1 - x_2 + 2$
+The surface $z = -\frac12x_1^2 - \frac14x_2^2 + x_1 - x_2 + 2$.
 :::
 
 The shape of the surfaces is in most cases determined by the quadratic part $\vect{x}^TA\vect{x}$. The linear part is then only relevant for the position.
@@ -739,6 +742,7 @@ A _conic section_ or _conic_ is a curve that results when a circular cone is int
 
 :::{figure} Images/Fig-QuadForms-ConicSections.png
 :name: Fig:QuadForms:ConeWithPlanes
+:class: dark-light
 
 Intersections of a cone with several planes (not going through the apex).
 
@@ -812,8 +816,9 @@ Both curves have the coordinates axes as axes of symmetry. In this context they 
 
 :::{figure} Images/Fig-QuadForms-EllipseHyperbola.svg
 :name: Fig:QuadForms:EllipseHyperbola
+:class: dark-light
 
-(Standard) Hyperbola and Ellipse
+(Standard) Hyperbola and Ellipse.
 :::
 
 ::::{exercise}
@@ -1048,8 +1053,9 @@ See Figure {numref}`Fig:QuadForms:Ellipses`
 
 :::{figure} Images/Fig-QuadForms-Ellipses(2).svg
 :name: Fig:QuadForms:Ellipses
+:class: dark-light
 
-The two ellipses
+The two ellipses.
 :::
 
 ::::
