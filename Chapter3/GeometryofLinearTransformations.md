@@ -119,7 +119,6 @@ $$
 
 ::::::
 
-
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:GeomLinTrans:ProjMat2`
 :class: myproof
 
@@ -579,13 +578,14 @@ so $T$ moves points not on $\mathcal{L}$ parallel to $\mathcal{L}$. Points close
 
 ::::::
 
-::::{figure} Images/Fig-GeomLinTrans-ShearTrans.svg
+```{applet}
+:url: geom_lin_trans/sheartrans
+:fig: Images/Fig-GeomLinTrans-ShearTrans.svg
 :name: Fig:GeomLinTrans:ShearTrans
-:class: dark-light
 
 The shear transformation $T$ from Example {numref}`Figure %s <Fig:GeomLinTrans:ShearTrans>` working on the vectors
 $\mathbf{e}_{1}=\begin{bmatrix}1\\0\end{bmatrix}$ and $\mathbf{v}=\begin{bmatrix}-1\\1\end{bmatrix}$. Note how the distance between a vector and the line $\mathcal{L}$ is preserved by $T$. As a consequence, the area of the green and blue parallelogams on the left is the same as that of their respective images on the right.
-::::
+```
 
 ::::::{prf:definition}
 :label: Dfn:GeomLinTrans:ShearScale

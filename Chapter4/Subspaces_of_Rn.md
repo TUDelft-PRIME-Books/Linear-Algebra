@@ -168,6 +168,14 @@ Also give a set with only the properties i and iii.
 </li>
 </ol>
 
+```{applet}
+:url: subspaces_in_rn/the_game
+:fig: Images/Fig-TheGame.svg
+:name: Fig:Subspaces:SubspacesGame
+
+A game to test your knowledge of subspaces. On the left, $\vect{u} + \vect{v}$ is computed; try to find a result where the sum is not in the subspace. On the right, a sca   lar multiple $c \cdot \vect{u}$ is computed; try to find a result that is not in the subspace. Confetti will appear if a solution is found that falls outside the yellow area. Multiple scenarios can be selected with the dropdown.
+```
+
 <!-- You may get some inspriration from the applet below. -->
 
 ::::::
