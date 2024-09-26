@@ -61,7 +61,7 @@ As you can see from the proof of {prf:ref}`Prop:LinInd:LinIndforSmallSets`, our 
 ::::::{prf:example}
 :label: Item:LinInd:LinDepExin2D
 
-<ul>
+<ol type="i">
 <li id="Item:LinInd:LinDepExin2D">
 
 Consider the vectors
@@ -161,7 +161,7 @@ The four vectors from [iii.](#Item:LinInd:LinDepExin3D). Note that $\mathbf{v}_{
 ::::
 
 </li>
-</ul>
+</ol>
 
 ::::::
 

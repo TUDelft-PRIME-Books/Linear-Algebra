@@ -759,7 +759,7 @@ u_{11} & u_{12} & u_{13} & \cdots &u_{1n} \\
 \end{bmatrix}.
 $$
 
-By {prf:ref}`prop:LUdecomp:invL` the inverse of $L$ has the same structure as $L$, i.e.,
+By {prf:ref}`Prop:LUdecomp:invL` the inverse of $L$ has the same structure as $L$, i.e.,
 
 $$
 \left[\begin{array}{rrrrr}
@@ -771,7 +771,7 @@ $$
         \end{array} \right].
 $$ 
 
-As in the proof of {prf:ref}`prop:LUdecomp:Existence` $L^{-1}$ can be factorized as       
+As in the proof of {prf:ref}`Prop:LUdecomp:Existence` $L^{-1}$ can be factorized as       
 
 $$
   L_2L_3\cdots L_{n} =
