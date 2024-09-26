@@ -303,14 +303,15 @@ $$
 
 {numref}`Figure %s <Fig:DetExtras:Orientation>` visualizes what is going on.
 
-:::{figure} Images/Fig-DetExtras-Orientation.svg
+```{applet}
+:url: detextras/orientation
+:fig: Images/Fig-DetExtras-Orientation.svg
 :name: Fig:DetExtras:Orientation
-:class: dark-light
 
 Images under transformations with negative and positive determinant.
-:::
+```
 
-The images of a unit vector that rotates counterclockwise under transformation $A$ move around clockwise, i.e., in the *opposite* orientation/direction. Under transformation $B$ the images will go around the origin counterclockwise, i.e., in the *same* direction as the original vectors.
+The images of a unit vector that rotates counterclockwise under transformation $A$ move around clockwise, i.e., in the _opposite_ orientation/direction. Under transformation $B$ the images will go around the origin counterclockwise, i.e., in the _same_ direction as the original vectors.
 
 ::::
 
@@ -412,7 +413,7 @@ $$
 
 ::::::
 
-The following proof of Cramer's rule rests rather nicely on properties of the determinant function.  But feel free to skip it.
+The following proof of Cramer's rule rests rather nicely on properties of the determinant function. But feel free to skip it.
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:DetExtras:Cramer`
 :class: myproof, dropdown
@@ -449,7 +450,7 @@ By the linearity property (in all of the columns) of the determinant ({prf:ref}`
 :::{math}
 :label: Eq:DetExtras:ProofCramer
 
-c_1\det{(A)} + c_2\det{(A^{(1)}(\vect{a}_2))} + \ldots + c_n\det{(A^{(1)}(\vect{a}_n))} - \det{(A^{(1)}(\vect{b}))} = 0.
+c_1\det{(A)} + c_2\det{(A^{(1)}(\vect{a}\_2))} + \ldots + c_n\det{(A^{(1)}(\vect{a}\_n))} - \det{(A^{(1)}(\vect{b}))} = 0.
 
 :::
 
@@ -735,15 +736,16 @@ Conversely, we can write the cross product in terms containing determinants.
 :label: Eq:DetExtras:DetCrossProd
 
 \begin{array}{rcl}
-\left[\begin{array}{c} a_1 \\ a_2 \\ a_3         \end{array}\right] \times
-\left[\begin{array}{c}b_1 \\ b_2 \\ b_3         \end{array}\right]
-&=& \left[\begin{array}{c}a_2b_3-a_3b_2 \\ a_3b_1 - a_1b_3 \\ a_2b_1-a_2b_1        \end{array}\right] \\
+\left[\begin{array}{c} a_1 \\ a_2 \\ a_3 \end{array}\right] \times
+\left[\begin{array}{c}b_1 \\ b_2 \\ b_3 \end{array}\right]
+&=& \left[\begin{array}{c}a_2b_3-a_3b_2 \\ a_3b_1 - a_1b_3 \\ a_2b_1-a_2b_1 \end{array}\right] \\
 &=&
-\left|\begin{array}{cc}  a_2 & b_2   \\a_3 & b_3      \end{array}\right|\vect{e}_1
-- \left|\begin{array}{cc}  a_1 & b_1   \\ a_3 & b_3      \end{array}\right|\vect{e}_2
-+ \left|\begin{array}{cc}  a_1 & b_1   \\a_2 & b_2      \end{array}\right|\vect{e}_3.
-\end{array}
+\left|\begin{array}{cc} a_2 & b_2 \\a_3 & b_3 \end{array}\right|\vect{e}\_1
 
+- \left|\begin{array}{cc} a_1 & b_1 \\ a_3 & b_3 \end{array}\right|\vect{e}\_2
+
+* \left|\begin{array}{cc} a_1 & b_1 \\a_2 & b_2 \end{array}\right|\vect{e}\_3.
+  \end{array}
 
 :::
 
@@ -903,10 +905,9 @@ $$
 so property iv. is satisfied too.
 ::::::
 
-
 We end the chapter with a proof of {prf:ref}`Prop:DetExtras:Properties-ndimCrossProd`.
 <BR>
-So, if you are interested,  push the button on the right.
+So, if you are interested, push the button on the right.
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DetExtras:Properties-ndimCrossProd`
 :class: myproof, dropdown
@@ -1087,7 +1088,6 @@ $$
  
 ::::::
 
-
 ## Grasple Exercises
 
 ::::::{grasple}
@@ -1097,8 +1097,6 @@ $$
 :description: To compute the area of a triangle with sides $\vect{u}$ and $\vect{v}$ in the plane.
 ::::::
 
-
-
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/8d7a0672-6283-4bb1-9b43-b41a03067e40?id=93171
 :label: grasple_exercise_5_4_2
@@ -1106,7 +1104,6 @@ $$
 :description: To find a point $C$ on a line, such that  the area of a triangle $ABC$ has a given value.
 
 ::::::
-
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/62770bc4-da31-4212-a713-bb2843b0e580?id=93172
@@ -1124,8 +1121,6 @@ $$
 
 ::::::
 
-
-
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/3add427a-88a3-4da0-8f0a-2bf8bb8781dd?id=93179
 :label: grasple_exercise_5_4_5
@@ -1133,8 +1128,6 @@ $$
 :description: Finding two entries in the inverse of a 4x4 matrix  (using the adjoint matrix).
 
 ::::::
-
-
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/8d4a98f7-50ac-4705-8b34-680b7b8395d9?id=93181
@@ -1144,12 +1137,10 @@ $$
 
 ::::::
 
-
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/bc3df113-95b3-470a-a730-3ad8faab08f5?id=93183
 :label: grasple_exercise_5_4_7
 :dropdown:
-:description: To compute the normal vector  $N(\vect{a}_1,\vect{a}_2,\vect{a}_3)$ as in {numref}`Subsection %s <Subsec-DetExtras-DetAndCrossProd>`
+:description: To compute the normal vector $N(\vect{a}_1,\vect{a}_2,\vect{a}_3)$ as in {numref}`Subsection %s <Subsec-DetExtras-DetAndCrossProd>`
 
 ::::::
-
