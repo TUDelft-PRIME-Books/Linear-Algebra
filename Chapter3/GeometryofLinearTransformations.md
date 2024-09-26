@@ -230,7 +230,7 @@ gives the projection on $\mathcal{P}$.
 
 ```{applet}
 :url: geom_lin_trans/3d_proj_on_line
-:fig: Images/Fig-GeomLinTrans-3DProjonLine.svg
+:fig: Images/Fig-GeomLinTRans-3DProjonLine.svg
 :name: Fig:GeomLinTrans:3DProj
 :status: reviewed
 :class: dark-light
@@ -368,7 +368,7 @@ For large $n$ it is hard to picture what a reflection in $n$-dimensional space d
 
 ```{applet}
 :url: geom_lin_trans/3d_refl_along_plane
-:fig: Images/Fig-GeomLinTrans-3DReflalongPlane.svg
+:fig: Images/Fig-GeomLinTRans-3DReflalongPlane.svg
 :name: Fig:GeomLinTrans:3DReflalongPlane
 :status: reviewed
 :class: dark-light

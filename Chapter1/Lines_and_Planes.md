@@ -686,7 +686,7 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/f02eebc1-b919-4070-a87a-f04bb620cc8d?id=80872
-:label: grasple_exercise_1_4_14
+:label: grasple_exercise_1_4_15
 :dropdown:
 :description: To give a cartesian equation for a plane containing a given point $A$ and with a given normal vector $\vect{n}$.
 

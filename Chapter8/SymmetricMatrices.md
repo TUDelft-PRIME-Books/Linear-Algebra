@@ -1102,6 +1102,7 @@ $$
 :dropdown:
 :description: To give an example of a 3x3 symm matrix with given eigenvalues and eigenspace.
 
+::::
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/77b08679-8974-453a-8f68-7e08e8ecfaf5?id=94944 

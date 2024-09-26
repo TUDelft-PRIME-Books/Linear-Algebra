@@ -285,7 +285,7 @@ has a non-trivial solution, i.e. if $A$ has a column without a pivot.
 
 Again we leave the verification to the diligent reader.
 
-::::::{prf:exercise}
+::::::{exercise}
 :label: Exc:LinInd:LinDepSets
 
 Prove {prf:ref}`Cor:LinInd:LinIndisColwithoutPivot`

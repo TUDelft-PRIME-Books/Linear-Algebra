@@ -1129,7 +1129,7 @@ $$
 For a linear transformation $T:\mathbb{R}^n \to \mathbb{R}^m$, the matrix
 
 :::{math}
-:label: Eq:LinTrafo:StandardMatrix
+:label: Eq:LinTrafo:StandardMatrix2
 
 \begin{bmatrix}
 T(\mathbf{e}\_1) & T(\mathbf{e}\_2) & \ldots & T(\mathbf{e}\_n)
@@ -1397,7 +1397,7 @@ $$
 
 ::::::{grasple}
 :url: https://embed.grasple.com/exercises/c5b2a642-fd50-43f6-9346-c37a0ffe1a40?id=70386
-:label: grasple_exercise_3_1_10
+:label: grasple_exercise_3_1_10b
 :dropdown:
 :description: Find vectors $\vect{w}$ for which $T(\vect{w}) = \vect{u}$.
 ::::::

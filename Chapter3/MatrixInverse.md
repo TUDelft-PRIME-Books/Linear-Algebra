@@ -1508,8 +1508,7 @@ The remaining exercises have more theoretic flavour.
 :url: https://embed.grasple.com/exercises/677aa3ee-4594-4d77-ace6-583a1efcba59?id=71090
 :label: grasple_exercise_3_4_9
 :dropdown:
-:description: True/False question about invertibility versus
-consistent linear systems.
+:description: True/False question about invertibility versus consistent linear systems.
 
 ::::::
 

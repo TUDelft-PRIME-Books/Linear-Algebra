@@ -478,7 +478,7 @@ $$
 So, to find the least squares solution(s) of the linear system $A\vect{x} = \vect{b}$, we have to solve the normal equations
 
 :::{math}
-:name: Eq:LeastSquares:NormalEquations
+:name: Eq:LeastSquares:NormalEquations2
 
 A^TA \vect{x} = A^T\vect{b}.
 :::

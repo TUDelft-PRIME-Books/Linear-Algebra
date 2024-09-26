@@ -1590,7 +1590,6 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 :url: https://embed.grasple.com/exercises/2a2423c3-0907-40b7-bd5f-7607baf7cc09?id=62668
 :label: grasple*exercise_1_2_20
 :dropdown:
-:description: What to conclude
-from $\text{proj}_{\mathbf{v}}(\mathbf{w}_1 ) = \text{proj}_{\mathbf{v}}(\mathbf{w}\_2)$?
+:description: What to conclude from $\text{proj}_{\mathbf{v}}(\mathbf{w}_1 ) = \text{proj}_{\mathbf{v}}(\mathbf{w}\_2)$?
 
 ::::
