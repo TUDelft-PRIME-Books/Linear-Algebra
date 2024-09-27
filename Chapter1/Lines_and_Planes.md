@@ -98,6 +98,7 @@ is a vector parallel to the same line.
 :url: lines_and_planes/parametric_vector_equation
 :fig: Images/Fig-LinesAndPlanes-VectorEquation.svg
 :name: Fig:LinesAndPlanes:VectorEquation
+:class: dark-light
 
 The line $\mathcal{L}_1$: $\vect{x} = \vect{v}_0 + r\vect{u}$.
 ```

@@ -28,6 +28,7 @@ See {numref}`Figure %s <Fig:LeastSquares:BestLines>` for both interpretations of
 :url: leastsquares/bestlines_split_canvas
 :fig: Images/Fig-LeastSquares-BestLines.svg
 :name: Fig:LeastSquares:BestLines
+:class: dark-light
 
 What is the best best line? Can you get the total distance in the left picture below 6.5? Can you get the total distance in the right picture below 9.0 ?
 ```

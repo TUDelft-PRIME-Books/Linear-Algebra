@@ -307,6 +307,7 @@ $$
 :url: detextras/orientation
 :fig: Images/Fig-DetExtras-Orientation.svg
 :name: Fig:DetExtras:Orientation
+:class: dark-light
 
 Images under transformations with negative and positive determinant.
 ```

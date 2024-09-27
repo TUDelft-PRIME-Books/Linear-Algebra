@@ -102,6 +102,7 @@ There is another way to look at this, which will be useful for the definition of
 :url: dot_product/diagonal_parallelogram
 :fig: Images/Fig-InnerProduct-diagonal-parallelogram.svg
 :name: Fig:InnerProduct:diagonal-parallelogram
+:class: dark-light
 
 The parallelogram spanned by $\vect{v}$ and $\vect{w}$ and its diagonals. How should you choose $\vect{v}$ and $\vect{w}$ such that the diagonals have the same length?
 ```
@@ -1240,6 +1241,7 @@ Below we will show that it is possible to express the angle between _any_ two (n
 :url: dot_product/angleandprojection
 :name: Images/Fig-InnerProduct-AngleAndProjection.svg
 :fig: Fig:InnerProduct:AngleAndProjection
+:class: dark-light
 
 Angle between two vectors.
 ```

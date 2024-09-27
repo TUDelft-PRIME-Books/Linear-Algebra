@@ -1272,6 +1272,7 @@ See {numref}`Figure %s <Fig:MatrixOps:NilPotent>`.
 :url: matrix_operations/nilpotent
 :fig: Images/Fig-MatrixOps-Nilpotent.svg
 :name: Fig:MatrixOps:Nilpotent
+:class: dark-light
 
 Visualisation of $\vect{x} \mapsto A^2\vect{x}$.
 ```

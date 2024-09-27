@@ -160,6 +160,7 @@ See also {numref}`Figure %s <Fig:Eigenvalues:Eigenvector-no-Eigenvector>`
 :url: eigenvalue_eigenvector/no_eigenvector
 :fig: Images/Fig-Eigenvalues-Eigenvector-no-Eigenvector.svg
 :name: Fig:Eigenvalues:Eigenvector-no-Eigenvector
+:class: dark-light
 
 To be or not to be (an eigenvector).
 ```
