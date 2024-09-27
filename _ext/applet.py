@@ -34,6 +34,11 @@ class AppletDirective(Figure):
     def run(self):
         url = self.options.get("url")
         fig = self.options.get("fig")
+        klasse = ''
+        for i,k in enumerate(self.options.get('class')):
+            if i>0:
+                klasse += ' '
+            klasse += k
         assert url is not None
         assert fig is not None
 
@@ -58,7 +63,7 @@ class AppletDirective(Figure):
         applet_html = f"""
 			<div class="applet" style="{style}; ">
 				<noscript class="loading-lazy">
-					<iframe src="{full_url}" allow="fullscreen" loading="lazy" frameborder="0"></iframe>
+					<iframe class="{klasse}" src="{full_url}" allow="fullscreen" loading="lazy" frameborder="0"></iframe>
 				</noscript>
 			</div>
 		"""
