@@ -40,7 +40,9 @@ class AppletDirective(Figure):
 
         iframe_class = self.options.get("class")  # expect a list/string of classes
 
-        if isinstance(iframe_class, list):
+        if iframe_class is None:
+            iframe_class = ""
+        elif isinstance(iframe_class, list):
             iframe_class = " ".join(iframe_class)
         else:
             iframe_class = str(iframe_class)
