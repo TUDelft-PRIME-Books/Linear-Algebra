@@ -34,13 +34,16 @@ class AppletDirective(Figure):
     def run(self):
         url = self.options.get("url")
         fig = self.options.get("fig")
-        klasse = ''
-        for i,k in enumerate(self.options.get('class')):
-            if i>0:
-                klasse += ' '
-            klasse += k
+
         assert url is not None
         assert fig is not None
+
+        iframe_class = self.options.get("class")  # expect a list/string of classes
+
+        if isinstance(iframe_class, list):
+            iframe_class = " ".join(iframe_class)
+        else:
+            iframe_class = str(iframe_class)
 
         self.arguments = [fig]
         self.options["class"] = ["applet-print-figure"]
@@ -63,7 +66,7 @@ class AppletDirective(Figure):
         applet_html = f"""
 			<div class="applet" style="{style}; ">
 				<noscript class="loading-lazy">
-					<iframe class="{klasse}" src="{full_url}" allow="fullscreen" loading="lazy" frameborder="0"></iframe>
+					<iframe class="{iframe_class}" src="{full_url}" allow="fullscreen" loading="lazy" frameborder="0"></iframe>
 				</noscript>
 			</div>
 		"""
