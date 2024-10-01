@@ -1,7 +1,7 @@
 <!-- :::{review}
 ::: -->
 
-(Sec:LU-decomp)=
+(Sec:LUdecomp)=
 
 # The $LU$ decomposition
 
@@ -193,7 +193,7 @@ In the next subsection we will address the questions of whether an $LU$ decompos
 ::::::{prf:definition}
 :label: Def:LUdecomp:DefinitionLU
 
-Let $A$ be an $n\times n$ matrix. An  **$LU$-decomposition**  of $A$ is a factorization of the type
+Let $A$ be an $n\times n$ matrix. An  **$LU$ decomposition**  of $A$ is a factorization of the type
 
 $$
 A=LU
@@ -226,7 +226,7 @@ $$
 For convenience we have used blanks for zeros.
 ::::::
 
-The next proposition captures the main interest of the $LU$-decomposition, as is already illustrated in 
+The next proposition captures the main interest of the $LU$ decomposition, as is already illustrated in 
 {prf:ref}`Ex:LUdecomp:FirstLUcontinued`
 
 
@@ -248,7 +248,7 @@ The solution of the second system is then a solution of the system $A\mathbf{x}=
 
 ::::::
 
-The next proposition tells us which matrices do have an $LU$-decomposition.
+The next proposition tells us which matrices do have an $LU$ decomposition.
 More importantly, it shows how such a decomposition can be found, which is in fact a row reduction that keeps track of the row operations involved. 
 
 ::::::{prf:proposition}
@@ -390,8 +390,8 @@ which is indeed a product of a lower triangular matrix $L$  (with 1's on it diag
 
 ::::::
 
-The above procedure shows how in principle an $LU$-decomposition can be computed. However, writing down the explicit elementary like matrices $F_i$, computing their product $F$, and finding the inverse of $F$ is unnecessary.  Look at the matrix $L = F^{-1}$ we found! The entries below the diagonal are exactly the numbers  $2/3$, $1/3$ and $1/2$ we called the *multipliers*.
-The following algorithm describes this 'shortcut' to find an $LU$-decomposition.
+The above procedure shows how in principle an $LU$ decomposition can be computed. However, writing down the explicit elementary like matrices $F_i$, computing their product $F$, and finding the inverse of $F$ is unnecessary.  Look at the matrix $L = F^{-1}$ we found! The entries below the diagonal are exactly the numbers  $2/3$, $1/3$ and $1/2$ we called the *multipliers*.
+The following algorithm describes this 'shortcut' to find an $LU$ decomposition.
 
 ::::::{prf:algorithm}
 :label: Alg:LUdecomp:LUalgorithm
@@ -637,7 +637,7 @@ The next step towards an echelon matrix needs a row swap.  But then the lower tr
 
 People that are not satisfied with two examples to show 
 that  {prf:ref}`Alg:LUdecomp:LUalgorithm`  works can have a look at the following (informal) proof of 
-{prf:ref}`Prop:LUdecomp:Existence`.  It will also prove the statement that the existence of a $LU$-decomposition of a matrix $A$ implies that the matrix $A$ can be row reduced top-down to a matrix in echelon form.
+{prf:ref}`Prop:LUdecomp:Existence`.  It will also prove the statement that the existence of a $LU$ decomposition of a matrix $A$ implies that the matrix $A$ can be row reduced top-down to a matrix in echelon form.
 
 
 :::{admonition} Proof of&nbsp;{prf:ref}`Prop:LUdecomp:Existence`
@@ -810,7 +810,7 @@ amounts to a top-down row reduction of $A$ to the upper triangular matrix $U$.
 
 ::::::
 
-At the end of this section we will analyze whether an $LU$-decomposition if it exists, is unique.  To answer that question we need the following properties of lower as well as upper triangular matrices.
+At the end of this section we will analyze whether an $LU$ decomposition if it exists, is unique.  To answer that question we need the following properties of lower as well as upper triangular matrices.
 
 
 ::::::{prf:proposition}
@@ -906,7 +906,7 @@ The uniqueness issue is not of major importance, but for completeness' sake belo
 ::::::{admonition} Proof of the uniqueness of the&nbsp;$LU$-decomposition of an invertible matrix.
 :class: myproof, dropdown
 
-Suppose $A$ is an invertible matrix with two $LU$-decompositions
+Suppose $A$ is an invertible matrix with two $LU$ decompositions
 
 $$
   A = L_1U_1, \quad A = L_2U_2.
@@ -966,9 +966,9 @@ where the parameter $a$ is free to choose.
 
 (Subsec:LUdecomp:PLUdecomp)=
 
-## Generalization to non-square matrices and $PLU$-decomposition
+## Generalization to non-square matrices and $PLU$ decomposition
 
-In this section we describe what can be said regarding $LU$-decompositions about non-square matrices,
+In this section we describe what can be said regarding $LU$ decompositions for non-square matrices,
 and present a 'workaround' for matrices for which there is no top-down row reduction to echelon form. 
 
 We start with an example to show that not much changes if we apply the algorithm of {prf:ref}`Alg:LUdecomp:LUalgorithm` to non-square matrices. 
@@ -1103,7 +1103,7 @@ Moreover, if the rows of $A$ are linearly independent the matrices $L$ and $U$ a
 A similar proposition holds for $m \times n$ matrices with $m > n$.  However, in this case the systems
 $A\vect{x} = \vect{b}$ are inconsistent for most vectors $\vect{b}$, and then other techniques come into play  (e.g., see {numref}`SubSec:LeastSquares:LS-solutions`).
 
-In the remainder of this subsection we address the next-best thing we can do in case a matrix does not have an $LU$ decomposition.
+In the remainder of this subsection we address the next best thing we can do in case a matrix does not have an $LU$ decomposition.
 
 
 ::::::{prf:example}
@@ -1164,7 +1164,6 @@ Note that first subtracting row 1 four times from row 2 and two times from row 3
 
 ::::::
 
-Before we  generalize {prf:ref}`Ex:LUdecomp:NoLUcontinued` a few remarks about the *permutation matrices* $P$ that pop up.  Permutation is a synonym for reordering.
 
 ::::::{prf:definition}
 :label: Def:LUdecomp:PermutationMatrix
@@ -1324,6 +1323,8 @@ As was mentioned before, the key idea is to perform the row exchanges first. The
 
 ::::::
 
+In the following example the matrix does have a proper $LU$ decomposition, but we will row reduce it
+in another order than top-down to echelon form. It is a tiny example to illustrate that it is possible to deduce a $PLU$ decomposition from it when we keep record of both the multipliers and the positions of the pivots.
 
 ::::::{prf:example}
 :label: Ex:LUdecomp:PLUexample-2
