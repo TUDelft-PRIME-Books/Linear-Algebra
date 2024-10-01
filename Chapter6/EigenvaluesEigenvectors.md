@@ -156,12 +156,14 @@ since such a $c$ should simultaneously satisfy $2c = -6$ and $(-2)c = 0$.
 So $\vect{v} = \begin{bmatrix} 2\\-2 \end{bmatrix}$ is not an eigenvector of $A$.
 See also {numref}`Figure %s <Fig:Eigenvalues:Eigenvector-no-Eigenvector>`
 
-::::{figure} Images/Fig-Eigenvalues-Eigenvector-no-Eigenvector.svg
+```{applet}
+:url: eigenvalue_eigenvector/no_eigenvector
+:fig: Images/Fig-Eigenvalues-Eigenvector-no-Eigenvector.svg
 :name: Fig:Eigenvalues:Eigenvector-no-Eigenvector
 :class: dark-light
 
 To be or not to be (an eigenvector).
-::::
+```
 
 ::::::
 

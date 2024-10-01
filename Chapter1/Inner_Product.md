@@ -98,12 +98,14 @@ There is another way to look at this, which will be useful for the definition of
 %  \norm{\mathbf{v}+\mathbf{w}} \neq \norm{\mathbf{v}-\mathbf{w}}.
 %$$
 
-:::{figure} Images/Fig-InnerProduct-diagonal-parallelogram.svg
+```{applet}
+:url: dot_product/diagonal_parallelogram
+:fig: Images/Fig-InnerProduct-diagonal-parallelogram.svg
 :name: Fig:InnerProduct:diagonal-parallelogram
 :class: dark-light
 
 The parallelogram spanned by $\vect{v}$ and $\vect{w}$ and its diagonals. How should you choose $\vect{v}$ and $\vect{w}$ such that the diagonals have the same length?
-:::
+```
 
 In the picture on the right the vectors are not perpendicular and
 
@@ -152,7 +154,7 @@ The derivation is completely analogous to the one above, only now we have one ex
 So to check 'algebraically' whether two vectors are perpendicular we just have to compute $a_1b_1 +a_2b_2\, (\,+\,a_3b_3\,)$
 and see whether this is equal to 0.
 
-This expression is called the *dot product* (or *inner product*) of the vectors $\mathbf{v}$ and $\mathbf{w}$. We denote it by $\mathbf{v}\ip\mathbf{w}$.
+This expression is called the _dot product_ (or _inner product_) of the vectors $\mathbf{v}$ and $\mathbf{w}$. We denote it by $\mathbf{v}\ip\mathbf{w}$.
 Note that the dot product of a general vector $\mathbf{v}=\begin{bmatrix} a_{1}\\a_{2}\\a_{3}\end{bmatrix}$ in $\mathbb{R}^3$ with itself gives
 
 $$
@@ -179,7 +181,7 @@ Using the dot product the concepts length and perpendicular easily carry over to
 ::::{prf:definition}
 :label: Dfn:InnerProduct:DotProduct
 
-The **dot product** (or *inner product*) of two vectors
+The **dot product** (or _inner product_) of two vectors
 $\mathbf{v}=\begin{bmatrix}a_{1}\\a_{2}\\ \vdots\\a_{n}\end{bmatrix}$ and
 $\mathbf{w}=\begin{bmatrix}b_{1}\\b_{2}\\ \vdots\\b_{n}\end{bmatrix}$ in $\mathbb{R}^n$ is defined as
 
@@ -1233,14 +1235,16 @@ $$
 
 The first motivation to consider the dot product came from the question of perpendicularity of two vectors in the plane or in $\R^3$.
 Perpendicularity of two vectors means that the angle between them is equal to $\frac12\pi$.
-Below we will show that it is possible to express the angle between *any* two (nonzero) vectors into dot products. And use this to define the concept of angle in a general space $\R^n$.
+Below we will show that it is possible to express the angle between _any_ two (nonzero) vectors into dot products. And use this to define the concept of angle in a general space $\R^n$.
 
-:::{figure} Images/Fig-InnerProduct-AngleAndProjection.svg
-:name: Fig:InnerProduct:AngleAndProjection
+```{applet}
+:url: dot_product/angleandprojection
+:name: Images/Fig-InnerProduct-AngleAndProjection.svg
+:fig: Fig:InnerProduct:AngleAndProjection
 :class: dark-light
 
 Angle between two vectors.
-:::
+```
 
 First we will show a geometrical characterization of the dot product that holds in $\mathbb{R}^2$ as well as in $\mathbb{R}^3$.
 
@@ -1290,7 +1294,7 @@ $$
 
 We will derive formula {eq}`Eq:InnerProduct:GeometricDefinition`.
 Assume that $\mathbf{v}$ and $\mathbf{w}$ are nonzero vectors.
-Recall the formula of the orthogonal projection of $\mathbf{w}$ onto $\mathbf{v}$, 
+Recall the formula of the orthogonal projection of $\mathbf{w}$ onto $\mathbf{v}$,
 
 $$
 
@@ -1407,7 +1411,7 @@ $$
    \varphi = \angle(\mathbf{v},\mathbf{w}) =  \arccos\left(\dfrac{\mathbf{v}\ip\mathbf{w}}{\norm{\mathbf{v}} \norm{\mathbf{w}}} \right).
 $$
 
-This definition makes sense, since the Cauchy-Schwarz inequality ({prf:ref}`Thm:InnerProduct:Cauchy-Schwarz`) 
+This definition makes sense, since the Cauchy-Schwarz inequality ({prf:ref}`Thm:InnerProduct:Cauchy-Schwarz`)
 implies
 
 $$
