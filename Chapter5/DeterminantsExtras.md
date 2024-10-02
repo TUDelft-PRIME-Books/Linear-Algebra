@@ -741,11 +741,9 @@ Conversely, we can write the cross product in terms containing determinants.
 \left[\begin{array}{c}b_1 \\ b_2 \\ b_3 \end{array}\right]
 &=& \left[\begin{array}{c}a_2b_3-a_3b_2 \\ a_3b_1 - a_1b_3 \\ a_2b_1-a_2b_1 \end{array}\right] \\
 &=&
-\left|\begin{array}{cc} a_2 & b_2 \\a_3 & b_3 \end{array}\right|\vect{e}\_1
-
-- \left|\begin{array}{cc} a_1 & b_1 \\ a_3 & b_3 \end{array}\right|\vect{e}\_2
-
-* \left|\begin{array}{cc} a_1 & b_1 \\a_2 & b_2 \end{array}\right|\vect{e}\_3.
+\left|\begin{array}{cc} a_2 & b_2 \\a_3 & b_3 \end{array}\right|\vect{e}_1
+- \left|\begin{array}{cc} a_1 & b_1 \\ a_3 & b_3 \end{array}\right|\vect{e}_2
++ \left|\begin{array}{cc} a_1 & b_1 \\a_2 & b_2 \end{array}\right|\vect{e}_3.
   \end{array}
 
 :::

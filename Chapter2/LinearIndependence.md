@@ -100,8 +100,8 @@ which are shown on the left in {numref}`Figure %s <Fig:LinInd:Examplein2D>`. The
 Indeed, if we take an arbitrary vector $\mathbf{v}$ in $\Span{S}$, we can write it as
 
 \begin{align*}
-\mathbf{v}&=c*{1}\mathbf{v}_{1}+c_{2}\mathbf{v}_{2}+c_{3}\mathbf{v}_{3}\\
-&=(c_{2}-c*{1})\mathbf{v}*{2}+(c*{3}+c*{1})\mathbf{v}_{3}
+\mathbf{v}&=c_{1}\mathbf{v}_{1}+c_{2}\mathbf{v}_{2}+c_{3}\mathbf{v}_{3}\\
+&=(c_{2}-c_{1})\mathbf{v}_{2}+(c_{3}+c_{1})\mathbf{v}_{3}
 \end{align*}
 
 in view of equation {eq}`Eq:LinInd:LinIndEx1`. This means that $\mathbf{v}$ is also in $\Span{S\setminus\left\lbrace\mathbf{v}_{1}\right\rbrace}$ and consequently that $\mathbf{v}_{1}$ is linearly dependent on $\mathbf{v}_{2}$ and $\mathbf{v}_{3}$.
@@ -235,7 +235,7 @@ A set $\left\lbrace\mathbf{v}_{1},...,\mathbf{v}_{k}\right\rbrace$ of vectors in
 :::{math}
 :label: Eq:LinInd:VecEqisZero
 
-c*{1}\mathbf{v}*{1}+\cdots +c*{k}\mathbf{v}*{k}=\mathbf{0}
+c_{1}\mathbf{v}_{1}+\cdots +c_{k}\mathbf{v}_{k}=\mathbf{0}
 
 :::
 

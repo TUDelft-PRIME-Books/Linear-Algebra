@@ -1239,8 +1239,8 @@ Below we will show that it is possible to express the angle between _any_ two (n
 
 ```{applet}
 :url: dot_product/angleandprojection
-:name: Images/Fig-InnerProduct-AngleAndProjection.svg
-:fig: Fig:InnerProduct:AngleAndProjection
+:name: Fig:InnerProduct:AngleAndProjection
+:fig: Images/Fig-InnerProduct-AngleAndProjection.svg
 :class: dark-light
 
 Angle between two vectors.
@@ -1538,7 +1538,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 :url: https://embed.grasple.com/exercises/67334454-d109-45a2-b640-545041ff896d?id=62416
 :label: grasple_exercise_1_2_13
 :dropdown:
-:description: Find $\text{proj}*{\mathbf{v}}(\mathbf{w})$ in $\R^2$.
+:description: Find $\text{proj}_{\mathbf{v}}(\mathbf{w})$ in $\R^2$.
 
 ::::
 
@@ -1592,7 +1592,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/2a2423c3-0907-40b7-bd5f-7607baf7cc09?id=62668
-:label: grasple*exercise_1_2_20
+:label: grasple_exercise_1_2_20
 :dropdown:
 :description: What to conclude from $\text{proj}_{\mathbf{v}}(\mathbf{w}_1 ) = \text{proj}_{\mathbf{v}}(\mathbf{w}\_2)$?
 
