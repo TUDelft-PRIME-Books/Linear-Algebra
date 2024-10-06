@@ -503,12 +503,14 @@ Let $\mathbf{n}$ be any nonzero vector in the plane.
 The set of vectors that are orthogonal to $\mathbf{n}$ all lie on a line through the origin. (See {numref}`Figure %s <Fig:InnerProduct:PerpendicularLine>`.) If we agree that $\mathbf{0}\perp\mathbf{n}$, it will be the whole line.
 The vector $\mathbf{n}$ is often said to be a _normal_ vector to the line.
 
-:::{figure} Images/Fig-InnerProduct-PerpendicularLine.svg
+```{applet}
+:url: dot_product/perpendicularline
+:fig: Images/Fig-InnerProduct-PerpendicularLine.svg
 :name: Fig:InnerProduct:PerpendicularLine
 :class: dark-light
 
 Vectors orthogonal to a nonzero vector $\mathbf{n}$ in the plane.
-:::
+```
 
 ::::
 
