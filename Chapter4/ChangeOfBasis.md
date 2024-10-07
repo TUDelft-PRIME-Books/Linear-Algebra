@@ -187,12 +187,14 @@ $$
 
 {numref}`Figure %s <Fig:ChangeOfBasis:AlternativeBasis>` may help to see what is going on geometrically.
 
-:::{figure} Images/Fig-ChangeOfBasis-AlternativeBasis.svg
+```{applet}
+:url: change_of_basis/alternative_basis
+:fig: Images/Fig-ChangeOfBasis-AlternativeBasis.svg
 :name: Fig:ChangeOfBasis:AlternativeBasis
 :class: dark-light
 
 The basis $\{\vect{b}_1,\vect{b}_2\}$ of {prf:ref}`Ex:ChangeOfBasis:BasicExampleR2`.
-::::
+```
 
 ::::::{prf:remark}
 :label: Rem:ChangeOfBasis:ConventionBasis
