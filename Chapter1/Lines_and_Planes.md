@@ -95,7 +95,7 @@ $$
 is a vector parallel to the same line.
 
 ```{applet}
-:url: lines_and_planes/parametric_vector_equation
+:url: lines_and_planes/vector_equation
 :fig: Images/Fig-LinesAndPlanes-VectorEquation.svg
 :name: Fig:LinesAndPlanes:VectorEquation
 :class: dark-light
