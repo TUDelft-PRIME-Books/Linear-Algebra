@@ -473,7 +473,7 @@ It is of course possible that two planes have no points in common at all. Take a
 :status: approved
 :class: dark-light
 
-Two planes without a common point in common.
+Two planes without a point in common.
 :::
 
 Two planes in $\mathbb{R}^3$ can never have a single point of intersection. They can, however, have infinitely many common points. This can occur when the two planes have a line of intersection, as we can see in {numref}`Figure %s <Fig:LinesAndPlanes:TwoPlanesLineIntersection>`. On the other hand, it is also possible that two planes coincide, see {numref}`Figure %s <Fig:LinesAndPlanes:TwoPlanesCoincide>`. In this case each point on one of the two planes is an intersection point.

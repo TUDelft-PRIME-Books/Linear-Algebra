@@ -235,7 +235,7 @@ gives the projection on $\mathcal{P}$.
 :status: reviewed
 :class: dark-light
 
-Projections in three dimensional space. On the left, the projection on a line $\mathcal{L}$, on the right the projection on a plane $\mathcal{P}$.
+Projections on a line $\mathcal{L}$ in three dimensional space. 
 ```
 
 Let us briefly discuss what happens in higher dimensions.

@@ -15,7 +15,7 @@ For an $n\times n$ matrix $A$, the following are equivalent:
 \label{It:Appendices:InvDef}
 
 \item There exists a matrix $B$ with $AB=I$.
-\item There esists a matrix $B$ with $BA=I$.
+\item There exists a matrix $B$ with $BA=I$.
 \item The linear system $A\vect{x}=\vect{b}$ has a unique solution for any $\vect{b}$ in $\R^{n}$.
 \item $A$ is row equivalent to the identity matrix.
 \item $A$ has linearly independent columns.

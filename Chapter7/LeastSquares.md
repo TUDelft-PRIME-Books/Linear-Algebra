@@ -1294,7 +1294,7 @@ Several generalizations are possible. We mention two.
      \begin{array}{c} (x_{11},x_{12},\ldots,x_{1k},y_1)  \\
                       (x_{21},x_{22},\ldots,x_{2k},y_2)\\
                           \vdots \quad\quad \vdots \quad\quad \vdots\\
-                      (x_{n1},x_{n2},\ldots,x_{nk},y_2),
+                      (x_{n1},x_{n2},\ldots,x_{nk},y_n),
      \end{array}
 
 :::
