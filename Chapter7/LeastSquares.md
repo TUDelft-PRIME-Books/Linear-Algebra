@@ -12,7 +12,7 @@ In this section we will reconsider the inconsistent situation and ask ourselves 
 
 One common situation where an inconsistent linear system arises quite naturally is fitting a line through a set of points.
 Suppose $n \geq 3$ points $(x_1,y_1), \ldots, (x_n,y_n)$ in the plane are given.
-Which line   $\ell: y = ax + b$  best fits this set of points?
+Which line $\ell: y = ax + b$ best fits this set of points?
 
 There are different ways to define what is the _best_ line. For instance, we may mean the line that minimizes the sum of the (perpendicular) distances of the points to the line. From a purely geometric point of view that seems the most natural way.
 Or, we can take the line for which the sum of vertical distances from the points to the line, i.e.,
@@ -24,16 +24,14 @@ $$
 is minimal. This approach makes sense in a physicial context where typically the $x$-variable may be an input variable over which a researcher has control, and $y$ is some output variable which may be liable to fluctuations and/or uncertainties.
 See {numref}`Figure %s <Fig:LeastSquares:BestLines>` for both interpretations of 'best' line.
 
-:::{figure} Images/Fig-LeastSquares-BestLines.svg
+```{applet}
+:url: leastsquares/bestlines_split_canvas
+:fig: Images/Fig-LeastSquares-BestLines.svg
 :name: Fig:LeastSquares:BestLines
 :class: dark-light
 
-What is the best best line?
-<!-- Challenges (for the interactive applet)<BR>
-Can you get the total distance in the left picture below  $\blacksquare \blacksquare$ ?  <BR>
-Can you get the total distance in the right picture below $\blacksquare \blacksquare$ ? <BR> -->
-
-:::
+What is the best best line? Can you get the total distance in the left picture below 6.5? Can you get the total distance in the right picture below 9.0 ?
+```
 
 Both are sensible ideas. However, to turn any of these two ideas into an algorithm to find the best line is not as straightforward as the computations that come up if we put the question into the realm of linear algebra.
 And there it will turn out to be the problem of an inconsistent linear system.
@@ -257,7 +255,7 @@ For each linear system $A\vect{x} = \vect{b}$, where $A$ is an $m \times n$ matr
 
 In {prf:ref}`Rem:LeastSquares:BestLinComb` it was noted that a least squares solution corresponds to the vector in Col $A$ that is closest to $\vect{b}$.
 
-The vector in Col $A$ that is closest to $\vect{b}$ is precisely the orthogonal projection of $\vect{x}$ onto Col $A$. (See  {prf:ref}`Prop:Orthogonality:BestApprox`.)
+The vector in Col $A$ that is closest to $\vect{b}$ is precisely the orthogonal projection of $\vect{x}$ onto Col $A$. (See {prf:ref}`Prop:Orthogonality:BestApprox`.)
 
 This projection, a linear combination of the colums of $A$, always exists.
 
@@ -321,7 +319,7 @@ $$
 ::::
 
 In {prf:ref}`Ex:LeastSquares:OrthogExample` the coefficients of the orthogonal projection were quickly found due to the fact that the vectors $\vect{a}_1$ and $\vect{a}_2$ were orthogonal.
-In {numref}`Section %s <Sec:Gram-Schmidt>` we saw how we can construct an orthogonal basis from an arbitrary basis. And then we can use the projection formula {eq}`Eq:OrthoBase:OrthoProj`  to find the orthogonal projection. However, we will see that this is an unnecessary detour.
+In {numref}`Section %s <Sec:Gram-Schmidt>` we saw how we can construct an orthogonal basis from an arbitrary basis. And then we can use the projection formula {eq}`Eq:OrthoBase:OrthoProj` to find the orthogonal projection. However, we will see that this is an unnecessary detour.
 
 (SubSec:LeastSquares:NormalEquations)=
 
@@ -410,7 +408,6 @@ This is slightly better than the 'trial solution' in {prf:ref}`Ex:LeastSquares:4
 where the norm of the error vector was found to be $\sqrt{15}$.
 
 ::::
-
 
 In the proof properties of the orthogonal projection are combined in a clever way.
 As usual, feel free to skip it.
@@ -1337,7 +1334,6 @@ sum {eq}`Eq:LeastSquares:GeneralModel`
 get different weights $w_i$. When building a statistical model this may be desirable when some data give more 'information'.
 
 Then the expression we want to minimize is given by
-
 
 $$
   \sum_{i=1}^{n}  \class{blue}{w_i} \big(y_i - \beta_1f_1(x_{i1},\ldots, x_{ik}) \,-\, \ldots \,-\,

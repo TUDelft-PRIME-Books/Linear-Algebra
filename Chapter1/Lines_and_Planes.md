@@ -94,12 +94,14 @@ $$
 
 is a vector parallel to the same line.
 
-::::{figure} Images/Fig-LinesAndPlanes-VectorEquation.svg
+```{applet}
+:url: lines_and_planes/vector_equation
+:fig: Images/Fig-LinesAndPlanes-VectorEquation.svg
 :name: Fig:LinesAndPlanes:VectorEquation
 :class: dark-light
 
 The line $\mathcal{L}_1$: $\vect{x} = \vect{v}_0 + r\vect{u}$.
-::::
+```
 
 How do we obtain all vectors on the line $\mathcal{L}_1$? Let us start with the vector
 

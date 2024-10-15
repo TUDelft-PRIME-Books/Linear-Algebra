@@ -82,12 +82,14 @@ $$
 
 to an element of the solution set from {prf:ref}`Example:SolSet:TwoLinesinR3`. The green line in {numref}`Figure %s <Fig:SolSet:TwoLinesinR3>` corresponds to the $a=2$ case.
 
-:::{figure} Images/Fig-SolSet-TwoLinesinR3.svg
+```{applet}
+:url: solution_sets/two_lines_in_r3
+:fig: Images/Fig-SolSet-TwoLinesinR3.svg
 :name: Fig:SolSet:TwoLinesinR3
 :class: dark-light
 
 The solution sets for the two systems of equations from {prf:ref}`Example:SolSet:TwoLinesinR3` and {prf:ref}`Example:SolSet:TwoLinesinR3b`. In blue we see the solution set of the original system {eq}`Eq:SolSet:HomSys2D`, in green that of the system with the non-zero right hand side {eq}`Eq:SolSet:NonHomSys2D`.
-:::
+```
 
 ::::
 
@@ -179,12 +181,15 @@ $$
 \begin{bmatrix}1\\0\\1\end{bmatrix}.
 $$
 
-:::{figure} Images/Fig-SolSet-TwoPlanesinR3.svg
+```{applet}
+:url: solution_sets/two_planes_in_r3
+:fig: Images/Fig-SolSet-TwoPlanesinR3.svg
 :name: Fig:SolSet:TwoPlanesinR3
 :class: dark-light
 
 The solution set for the two systems of equations from {prf:ref}`Ex:Solset:TwoPlanesinR3`.
-:::
+
+```
 
 Note that, if we had changed the right hand side of our first equation to $a$, $a\neq0$, and the second one to anything but $2a$, the system would have had no solutions at all. The two equations would in that case describe two parallel planes.
 

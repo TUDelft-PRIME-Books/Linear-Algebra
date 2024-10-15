@@ -191,9 +191,10 @@ An operator of which the usefulness is not immediately clear, but which fits wel
 The **transpose** of an $m \times n$ matrix $A$ with entries $a_{ij}$ is the
 $n \times m$ matrix $B$ with entries $b_{ij}$ defined by
 
-$$ 
+$$
   b_{ij} = a_{ji}, \quad  i = 1,\ldots,n,\,\,j=1,\ldots, m
-$$  
+$$
+
 It is denoted by $B = A^T$.
 
 ::::::
@@ -338,7 +339,6 @@ Prove statements (i) and (iii) of {prf:ref}`Prop:MatrixOps:Transpose`.
 
 ::::::
 
-
 ::::::{admonition} Solution to&nbsp;{numref}`Exc:MatrixOps:CheckTransposeRules`
 :class: solution, dropdown
 
@@ -457,7 +457,6 @@ Next we turn our attention to the most important matrix operation, namely the pr
 $$
   B = \mathbf{x} = \begin{bmatrix}x_1 \\ x_2 \\ \vdots \\ x_n \end{bmatrix},
 $$
-
 
 a vector in $\mathbb{R}^n$, which we can identify with an $n \times 1$ matrix. We want of course the definition of the general matrix product to be consistent with this.
 
@@ -1269,14 +1268,14 @@ So $A^2\vect{x} = T_2(T_1(T_2(T_1(\vect{x})))) = \vect{0}$, for each vector $\ve
 
 See {numref}`Figure %s <Fig:MatrixOps:NilPotent>`.
 
-:::::{figure} Images/Fig-MatrixOps-Nilpotent.svg
+```{applet}
+:url: matrix_operations/nilpotent
+:fig: Images/Fig-MatrixOps-Nilpotent.svg
 :name: Fig:MatrixOps:Nilpotent
 :class: dark-light
 
 Visualisation of $\vect{x} \mapsto A^2\vect{x}$.
-:::::
-
-::::::
+```
 
 ::::::{prf:remark}
 The next list gives six situations where matrix multiplication acts differently than multiplication of numbers.  
@@ -1378,7 +1377,7 @@ $$
   AB = O,
 $$
 
-and  let $C$ be the zero matrix.
+and let $C$ be the zero matrix.
 Then $B \neq C$, whereas
 
 $$
@@ -1424,7 +1423,6 @@ The following property connects the two operations matrix transposition and matr
 
 ::::::{prf:proposition}
 :label: Prop:MatrixOperations:TransposeProduct
-
 
 If $A$ is an $m\times n$ matrix and $B$ an $n\times p$ matrix, then
 

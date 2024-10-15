@@ -100,8 +100,8 @@ which are shown on the left in {numref}`Figure %s <Fig:LinInd:Examplein2D>`. The
 Indeed, if we take an arbitrary vector $\mathbf{v}$ in $\Span{S}$, we can write it as
 
 \begin{align*}
-\mathbf{v}&=c*{1}\mathbf{v}_{1}+c_{2}\mathbf{v}_{2}+c_{3}\mathbf{v}_{3}\\
-&=(c_{2}-c*{1})\mathbf{v}*{2}+(c*{3}+c*{1})\mathbf{v}_{3}
+\mathbf{v}&=c_{1}\mathbf{v}_{1}+c_{2}\mathbf{v}_{2}+c_{3}\mathbf{v}_{3}\\
+&=(c_{2}-c_{1})\mathbf{v}_{2}+(c_{3}+c_{1})\mathbf{v}_{3}
 \end{align*}
 
 in view of equation {eq}`Eq:LinInd:LinIndEx1`. This means that $\mathbf{v}$ is also in $\Span{S\setminus\left\lbrace\mathbf{v}_{1}\right\rbrace}$ and consequently that $\mathbf{v}_{1}$ is linearly dependent on $\mathbf{v}_{2}$ and $\mathbf{v}_{3}$.
@@ -116,26 +116,26 @@ Consider now the vectors
 
 $$
 	\mathbf{v}_{1}=
-	\begin{bmatrix}1\\0\end{bmatrix}\quad\mathbf{v}_{2}=
-	\begin{bmatrix}2\\0\end{bmatrix}\quad
-	\mathbf{v}_{3}=
-	\begin{bmatrix}0\\1\end{bmatrix}
+	\begin{bmatrix}1\\0\end{bmatrix}\quad
+	\mathbf{v}_{2}=
+	\begin{bmatrix}0\\1\end{bmatrix}\quad\mathbf{v}_{4}=
+	\begin{bmatrix}2\\0\end{bmatrix}
 $$
 
 which are shown on the right in {numref}`Figure %s <Fig:LinInd:Examplein2D>`.
-The set $S=\left\lbrace\mathbf{v}_{1},\mathbf{v}_{2},\mathbf{v}_{3}\right\rbrace$ is again linearly dependent since
+The set $S=\left\lbrace\mathbf{v}_{1},\mathbf{v}_{2},\mathbf{v}_{4}\right\rbrace$ is again linearly dependent since
 
 $$
-\mathbf{v}_{2}=2\mathbf{v}_{1}+0\mathbf{v}_{3}\nonumber
+\mathbf{v}_{4}=2\mathbf{v}_{1}+0\mathbf{v}_{2}\nonumber
 $$
 
-but now the subset $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{2}\right\rbrace$ is a linearly dependent subset of $S$. On the other hand, the subsets $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{3}\right\rbrace$ and $\left\lbrace\mathbf{v}_{2},\mathbf{v}_{3}\right\rbrace$ are linearly independent.
+but now the subset $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{4}\right\rbrace$ is a linearly dependent subset of $S$. On the other hand, the subsets $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{2}\right\rbrace$ and $\left\lbrace\mathbf{v}_{2},\mathbf{v}_{4}\right\rbrace$ are linearly independent.
 
 ::::{figure} Images/Fig-LinInd-Examplein2D.svg
 :name: Fig:LinInd:Examplein2D
 :class: dark-light
 
-The vectors from [i.](#Item:LinInd:LinDepExin2D) on the left and from [ii.](#Item:LinInd:LinDepandIndDepExin2D) on the right. On the left, there is no vector which is a multiple of another vector so every set of two vectors is linearly independent. On the right this is not the case. The vectors $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ are multiples of each other and therefore $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{2}\right\rbrace$ is linearly dependent.
+The vectors from [i.](#Item:LinInd:LinDepExin2D) on the left and from [ii.](#Item:LinInd:LinDepandIndDepExin2D) on the right. On the left, there is no vector which is a multiple of another vector, so every set of two vectors is linearly independent. On the right this is not the case. The vectors $\mathbf{v}_{1}$ and $\mathbf{v}_{4}$ are multiples of each other and therefore $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{4}\right\rbrace$ is linearly dependent.
 ::::
 
 </li>
@@ -144,20 +144,20 @@ The vectors from [i.](#Item:LinInd:LinDepExin2D) on the left and from [ii.](#Ite
 Put
 
 $$
-	\mathbf{v}_{1}=
-	\begin{bmatrix}1\\0\\0\end{bmatrix},\quad\mathbf{v}_{2}=
-	\begin{bmatrix}0\\1\\0\end{bmatrix},\quad\mathbf{v}_{3}=
-	\begin{bmatrix}1\\2\\0\end{bmatrix},\quad \text{and}\quad\mathbf{v}_{4}=
+	\mathbf{w}_{1}=
+	\begin{bmatrix}1\\0\\0\end{bmatrix},\quad\mathbf{w}_{2}=
+	\begin{bmatrix}0\\1\\0\end{bmatrix},\quad\mathbf{w}_{3}=
+	\begin{bmatrix}1\\2\\0\end{bmatrix},\quad \text{and}\quad\mathbf{w}_{4}=
 	\begin{bmatrix}1\\2\\1\end{bmatrix}.
 $$
 
-The set $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{2},\mathbf{v}_{3}\right\rbrace$ is linearly dependent. The set $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{2},\mathbf{v}_{4}\right\rbrace$, however, is not. This is illustrated in {numref}`Figure %s <Fig:LinInd:Examplein3D>`.
+The set $\left\lbrace\mathbf{w}_{1},\mathbf{w}_{2},\mathbf{w}_{3}\right\rbrace$ is linearly dependent. The set $\left\lbrace\mathbf{w}_{1},\mathbf{w}_{2},\mathbf{w}_{4}\right\rbrace$, however, is not. This is illustrated in {numref}`Figure %s <Fig:LinInd:Examplein3D>`.
 
 ::::{figure} Images/Fig-LinInd-Examplein3D.svg
 :name: Fig:LinInd:Examplein3D
 :class: dark-light
 
-The four vectors from [iii.](#Item:LinInd:LinDepExin3D). Note that $\mathbf{v}_{3}$ lies in the plane spanned by $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ but $\mathbf{v}_{4}$ does not. This means that $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{2},\mathbf{v}_{3}\right\rbrace$ is linearly dependent but $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{2},\mathbf{v}_{4}\right\rbrace$ is not.
+The four vectors from [iii.](#Item:LinInd:LinDepExin3D). Note that $\mathbf{w}_{3}$ lies in the plane spanned by $\mathbf{w}_{1}$ and $\mathbf{w}_{2}$ but $\mathbf{w}_{4}$ does not. This means that $\left\lbrace\mathbf{w}_{1},\mathbf{w}_{2},\mathbf{w}_{3}\right\rbrace$ is linearly dependent but $\left\lbrace\mathbf{w}_{1},\mathbf{w}_{2},\mathbf{w}_{4}\right\rbrace$ is not.
 ::::
 
 </li>
@@ -235,7 +235,7 @@ A set $\left\lbrace\mathbf{v}_{1},...,\mathbf{v}_{k}\right\rbrace$ of vectors in
 :::{math}
 :label: Eq:LinInd:VecEqisZero
 
-c*{1}\mathbf{v}*{1}+\cdots +c*{k}\mathbf{v}*{k}=\mathbf{0}
+c_{1}\mathbf{v}_{1}+\cdots +c_{k}\mathbf{v}_{k}=\mathbf{0}
 
 :::
 
