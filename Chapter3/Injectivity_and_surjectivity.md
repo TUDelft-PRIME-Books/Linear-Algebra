@@ -89,12 +89,14 @@ $$
 
 There are no free variables, so if there is a solution to the system $A\vect{x}=\vect{v}$ (which, in this case, is true for all $\vect{v}$) it will be unique. This means that there is only one $\mathbf{x}$ with $T(\mathbf{x})=A\mathbf{x}=\mathbf{u}$, hence $T$ is injective.
 
-::::{figure} Images/Fig-InjSurj-InjEx.svg
+```{applet}
+:url: injectivity_and_surjectivity/injsurj-injex
+:fig: Images/Fig-InjSurj-InjEx.svg
 :name: Fig:InjSurj:InjEx
 :class: dark-light
 
 The transformation $T$ from {prf:ref}`Ex:InjSurj:InjEx` [ii.](#Item:InjSurj:InjEx) and {prf:ref}`Ex:InjSurj:SurjEx` [ii.](#Item:InjSurj:SurjEx) acting on some selected vectors. Note that this transformation scales vectors and rotates them. For any vector $\mathbf{u}$ on the right, you can find only one vector $\mathbf{v}$ on the left such that $T(\mathbf{v})=\mathbf{u}$. Hence $T$ is injective.
-::::
+```
 
 </li>
 
@@ -130,6 +132,15 @@ has, when it is consistent, a unique solution as there are no free variables.
 </ol>
 
 ::::::
+
+```{applet}
+:url: injectivity_and_surjectivity/injsurj-injex-example
+:fig: Images/Fig-InjSurj-InjEx.svg
+:name: Fig:InjSurj:InjExExample
+:class: dark-light
+
+TODO: with call to action
+```
 
 If we perform two actions which can both be undone, then we should be able to undo the combination of those two actions. That this intuitive rule really does hold is essentially the content of {prf:ref}`Prop:InjSurj:InjafterInjisInj`.
 
@@ -167,6 +178,15 @@ $$
 Note that $S$ is injective by {prf:ref}`Ex:InjSurj:InjEx` [iii.](#Item:InjSurj:InjExNonEqDim) This is not a coincidence, as {prf:ref}`Prop:InjSurj:CompInjFirstInj` shows.
 
 ::::::
+
+```{applet}
+:url: injectivity_and_surjectivity/injsurj-injex-example2
+:fig: Images/Fig-InjSurj-InjEx.svg
+:name: Fig:InjSurj:InjExExample
+:class: dark-light
+
+TODO: with call to action
+```
 
 ::::::{prf:proposition}
 :label: Prop:InjSurj:CompInjFirstInj
@@ -215,7 +235,6 @@ $A$ has a pivot in every **column**.
 Prove {prf:ref}`Prop:InjSurj:InjChars`.
 
 ::::
-
 
 :::{admonition} Solution to&nbsp;{numref}`Exc:InjSurj:InjChars`
 :class: solution, dropdown
@@ -297,12 +316,14 @@ $$
 
 so the system $A\mathbf{x}=\mathbf{u}$ can only be solved if $a_{1}+a_{2}=0$. This transformation is therefore not surjective.
 
-::::{figure} Images/Fig-InjSurj-NonSurjEx.svg
+```{applet}
+:url: injectivity_and_surjectivity/injsurj-nonsurjex
+:fig: Images/Fig-InjSurj-NonSurjEx.svg
 :name: Fig:InjSurj:NonSurjEx
 :class: dark-light
 
 The transformation $T$ from {prf:ref}`Ex:InjSurj:SurjEx` [i.](#Item:InjSurj:NonSurjEx) . The green line is the collection of all $\mathbf{b}$ for which the system $A\mathbf{x}=\mathbf{b}$ is consistent where $A$ is the standard matrix of $T$. Since this is not all of $\mathbb{R}^{2}$, $T$ is not surjective.
-::::
+```
 
 </li>
 <li id="Item:InjSurj:SurjEx">
@@ -327,12 +348,14 @@ is surjective.
 </li>
 </ol>
 
-::::{figure} Images/Fig-InjSurj-InjEx.svg
+```{applet}
+:url: injectivity_and_surjectivity/injsurj-injex
+:fig: Images/Fig-InjSurj-InjEx.svg
 :name: Fig:InjSurj:SurjEx
 :class: dark-light
 
 The transformation $T$ from {prf:ref}`Ex:InjSurj:SurjEx` [ii.](#Item:InjSurj:SurjEx) acting on some selected vectors. Note that this transformation scales vectors and rotates them. For any vector $\mathbf{u}$ on the right, you can find a vector $\mathbf{v}$ on the left such that $T(\mathbf{v})=\mathbf{u}$. Hence $T$ is surjective.
-::::
+```
 
 ::::::
 
