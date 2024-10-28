@@ -3,7 +3,8 @@ stages:
   - deploy
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
-
+  GIT_SUBMODULE_UPDATE_FLAGS: --remote
+  
 jupyter-build:
   stage: build
   image: python:slim
