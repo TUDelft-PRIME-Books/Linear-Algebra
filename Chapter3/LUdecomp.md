@@ -643,8 +643,7 @@ that  {prf:ref}`Alg:LUdecomp:LUalgorithm`  works can have a look at the followin
 :::{admonition} Proof of&nbsp;{prf:ref}`Prop:LUdecomp:Existence`
 :class: myproof, dropdown
 
-Suppose $A$ is an $n\times n$ matrix that can be row reduced to an upper triangular (= echelon) matrix $U$. We can row reduce $A$ from top to bottom, where we use the same form as in 
-{prf:ref}`Ex:LUdecomp:SecondLUSecondLook`. 
+Suppose $A$ is an $n\times n$ matrix that can be row reduced to an upper triangular (= echelon) matrix $U$. We can row reduce $A$ from top to bottom, where we use the same form as in {prf:ref}`Ex:LUdecomp:SecondLUSecondLook`. 
 For instance the first two steps are
 
 
@@ -760,7 +759,7 @@ u_{11} & u_{12} & u_{13} & \cdots &u_{1n} \\
 \end{bmatrix}.
 $$
 
-By {prf:ref}`Prop:LUdecomp:L-properties` the inverse of $L$ has the same structure as $L$, i.e.,
+By {prf:ref}`Prop:LUdecomp:invL` the inverse of $L$ has the same structure as $L$, i.e.,
 
 $$
 \left[\begin{array}{rrrrr}
@@ -804,7 +803,7 @@ Pre-multiplication of a matrix $M$ with one of the matrices  $L_k$  amounts to a
 and
 
 $$
-   L_2L_3\cdots L_n\, A =  U
+   L_2L_3\cdots L_n\,s A =  U
 $$
 
 amounts to a top-down row reduction of $A$ to the upper triangular matrix $U$.
@@ -1394,98 +1393,3 @@ It asks for some careful analysis how to reconstruct $L$ from $\tilde{L}$.
 
 
 ## Efficiency Issues
-
-To be filled in later.
-
-
-## Grasple Exercises
-
-::::::{grasple}
-:url: https://embed.grasple.com/exercises/cca386f8-a6ff-44b6-9b83-fe96482a4763?id=108857
-:label: grasple_exercise_3_6_2
-:dropdown:
-:description: To identify triangular matrices.
-::::::
-
-
-::::::{grasple}
-:url: https://embed.grasple.com/exercises/4ef9b6fe-e204-44e7-9463-3e1c3537a10b?id=82913
-:label: grasple_exercise_3_6_3
-:dropdown:
-:description: To compute the $LU$-decomposition of a 2x2 matrix $A$.
-::::::
-
-
-::::::{grasple}
-:url: https://embed.grasple.com/exercises/b167deea-922f-4a80-9b3e-7cbdf16f023f?id=106332
-:label: grasple_exercise_3_6_4
-:dropdown:
-:description: To compute the $LU$-decomposition of a 3x3 matrix $A$.
-::::::
-
-
-::::::{grasple}
-:url: https://embed.grasple.com/exercises/9708bce4-5c01-4486-8f44-7ea3a5157950?id=82914
-:label: grasple_exercise_3_6_5
-:dropdown:
-:description: To compute the $LU$-decomposition of a 3x3 matrix $A$ and use it to solve $A\vect{x} = \vect{b}$.
-::::::
-
-
-::::::{grasple}
-:url: https://embed.grasple.com/exercises/d7ec03b4-32c4-4c3e-8c1e-2714878ef558?id=82917
-:label: grasple_exercise_3_6_6
-:dropdown:
-:description: To compute the $LU$-decomposition of a 3x3 matrix $A$ and use it to solve $A\vect{x} = \vect{b}$.
-::::::
-
-::::::{grasple}
-:url: https://embed.grasple.com/exercises/9cbcf004-bfbe-428f-927f-5c64ca802946?id=82919
-:label: grasple_exercise_3_6_7
-:dropdown:
-:description: To decide: solving $A\vect{x} = \vect{b}$ via (given) $A=LU$ or (given) $A^{-1}$.
-::::::
-
-
-
-::::::{grasple}
-:url: https://embed.grasple.com/exercises/8fe1ca5c-3f24-4148-9725-a96c44e3f43a?id=82920
-:label: grasple_exercise_3_6_8
-:dropdown:
-:description: To compute $A^{-1}$ using  $A = LU$.
-::::::
-
-
-::::::{grasple}
-:url: https://embed.grasple.com/exercises/7d8c3553-18cd-4866-bfa1-9ff273ee18e8?id=82925
-:label: grasple_exercise_3_6_9
-:dropdown:
-:description: Explorative exercise about the $LDU$-decomposition
-::::::
-
-::::::{grasple}
-:url: https://embed.grasple.com/exercises/5bb6dcac-4575-4953-bb3a-c0e8d4594798?id=82928
-:label: grasple_exercise_3_6_10
-:dropdown:
-:description: To compute the $LU$-decomposition of 3x4 matrix $A$ and use it to solve $A\vect{x} = \vect{b}$. 
-
-::::::
-
-::::::{grasple}
-:url: https://embed.grasple.com/exercises/9a2cb913-3462-4832-8e33-9f4b878f1da7?id=106804
-:label: grasple_exercise_3_6_11
-:dropdown:
-:description: To compute a $PLU$-decomposition of a 3x3 matrix.
-::::::
-
-
-::::::{grasple}
-:url: https://embed.grasple.com/exercises/48ef4fa5-cdcf-4449-8c5a-0d5f5d448025?id=106870
-:label: grasple_exercise_3_6_12
-:dropdown:
-:description: To solve a system $A\vect{x} = \vect{b}$ using $ PA = LU$.
-
-::::::
-
-
-
