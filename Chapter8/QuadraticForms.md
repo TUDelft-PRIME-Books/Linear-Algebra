@@ -1194,7 +1194,6 @@ The following exercises are a more theoretical.
 ::::{grasple}
 :url: https://embed.grasple.com/exercises/78b55ab4-4f27-4d32-90ec-9bb28bb8f7b8?id=91021
 :label: grasple_exercise_8_2_15
-:dropdown:
 :description: Two True/False questions about vectors $\vect{x}$ for which $\vect{x}^TA\vect{x} = 0$. 
 
 ::::
