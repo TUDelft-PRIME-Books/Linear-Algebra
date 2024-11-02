@@ -1309,7 +1309,7 @@ the result immediately follows.
 ::::::{prf:theorem} Existence of a $PLU$ Decomposition
 :label: LUDecomp:existencePLU
 
-Suppose that $A$ is an $m\times n$ matrix with real coefficients, and let $m \geq n$. Then there exist a permutation matrix $P$, an upper triangular matrix $L$ and an echelon matrix $U$ such that
+Suppose that $A$ is an $m\times n$ matrix with real coefficients, and let $m \leq n$. Then there exist a permutation matrix $P$, an upper triangular matrix $L$ and an echelon matrix $U$ such that
 
 $$ 
   PA = LU. 
