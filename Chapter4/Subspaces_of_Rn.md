@@ -697,6 +697,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 ## Grasple Exercises
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/66b4134c-20e3-4a38-8f14-a32aa472aece?id=70616
 :label: grasple_exercise_4_1_1
 :dropdown:
@@ -705,6 +706,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/aa71ac1a-d82d-4c6d-a6af-7af0c25422b1?id=70617
 :label: grasple_exercise_4_1_2
 :dropdown:
@@ -713,6 +715,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/2a08d069-ac34-4f9f-8479-85896ade75da?id=70621
 :label: grasple_exercise_4_1_3
 :dropdown:
@@ -721,6 +724,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 ::::::
 
 ::::::{grasple}  
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9470136c-b9ce-4664-937c-fad9da7963cb?id=70622
 :label: grasple_exercise_4_1_4
 :dropdown:
@@ -729,6 +733,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/8756aa45-07b2-40f1-8fbe-aae7c140ae19?id=70625
 :label: grasple_exercise_4_1_5
 :dropdown:
@@ -737,6 +742,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c32e1656-5d38-4708-a55d-22ced9a9b254?id=70623
 :label: grasple_exercise_4_1_6
 :dropdown:
@@ -745,6 +751,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/ab566408-ef8d-4b99-9f96-ceb29dcc234b?id=70624
 :label: grasple_exercise_4_1_7
 :dropdown:
@@ -753,6 +760,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/2a3d5aaf-c0f1-4596-a3e7-3876c786544a?id=70615
 :label: grasple_exercise_4_1_8
 :dropdown:
@@ -761,6 +769,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/f880df03-c9b6-4c69-bc94-ea0c6d273b24?id=70627
 :label: grasple_exercise_4_1_9
 :dropdown:
@@ -769,6 +778,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/8bf246d1-8aad-448f-842a-8cc20c21b99a?id=70629
 :label: grasple_exercise_4_1_10
 :dropdown:
@@ -777,6 +787,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/3eb1c09d-b39f-4eb8-8968-804469666617?id=83365
 :label: grasple_exercise_4_1_11
 :dropdown:
@@ -785,6 +796,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/958bc91a-84e2-48e8-8cdf-b26514c41df0?id=83371
 :label: grasple_exercise_4_1_12
 :dropdown:
@@ -793,6 +805,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/3b5196d2-1219-494e-a445-9dcadd8f19a0?id=88181
 :label: grasple_exercise_4_1_13
 :dropdown:
@@ -801,6 +814,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/66eb42d3-ed92-45aa-8576-d6c4b86c8502?id=88184
 :label: grasple_exercise_4_1_14
 :dropdown:

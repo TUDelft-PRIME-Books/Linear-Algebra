@@ -816,6 +816,7 @@ This settles all matters.
 ## Grasple Exercises
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/b34a791a-3f42-4d10-9952-f6f5699a68fb?id=104164
 :label: grasple_exercise_5_3_1
 :dropdown:
@@ -825,6 +826,7 @@ This settles all matters.
 
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/1d3924d9-ea34-4a89-8b7c-33e385d144ba?id=104312
 :label: grasple_exercise_5_3_2
 :dropdown:
@@ -833,6 +835,7 @@ This settles all matters.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/1fcb337d-f906-423a-acd5-8d8c69d4d04b?id=93158
 :label: grasple_exercise_5_3_3
 :dropdown:
@@ -841,6 +844,7 @@ This settles all matters.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/cabb663b-7b86-4215-81aa-0a3da91a5688?id=103719
 :label: grasple_exercise_5_3_4
 :dropdown:
@@ -850,6 +854,7 @@ This settles all matters.
 
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/1354915d-4cf4-4559-8ac2-68573807199d?id=103702
 :label: grasple_exercise_5_3_5
 :dropdown:
@@ -860,6 +865,7 @@ This settles all matters.
 
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/1354915d-4cf4-4559-8ac2-68573807199d?id=103702
 :label: grasple_exercise_5_3_6
 :dropdown:
@@ -868,6 +874,7 @@ This settles all matters.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/882506bb-6a5e-479f-b095-bb5b95be2467?id=104166
 :label: grasple_exercise_5_3_7
 :dropdown:
@@ -878,6 +885,7 @@ This settles all matters.
 
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/993b010f-3351-4b98-b9b7-1d04c1c959be?id=93143
 :label: grasple_exercise_5_3_8
 :dropdown:
@@ -887,6 +895,7 @@ This settles all matters.
 
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/2d51357d-e56d-4de5-a882-493a795fd222?id=93144
 :label: grasple_exercise_5_3_9
 :dropdown:
@@ -898,6 +907,7 @@ This settles all matters.
 
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9974012a-1ac9-439f-919f-2647be1ba4ba?id=92965
 :label: grasple_exercise_5_3_10
 :dropdown:
@@ -907,6 +917,7 @@ This settles all matters.
 
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/4a01fc67-0acc-44aa-9ba2-18c1accae720?id=93145
 :label: grasple_exercise_5_3_11
 :dropdown:
@@ -914,6 +925,7 @@ This settles all matters.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/f2e09cfe-9d88-4f7b-a295-bad7feda89e5?id=93150
 :label: grasple_exercise_5_3_12
 :dropdown:
@@ -925,6 +937,7 @@ This settles all matters.
 
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/35bff21c-6434-4e4a-b154-965de08479c0?id=93146
 :label: grasple_exercise_5_3_13
 :dropdown:
@@ -934,6 +947,7 @@ This settles all matters.
 
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/7c4c18ba-96ba-432a-97b0-0a269a0a9f55?id=93147
 :label: grasple_exercise_5_3_14
 :dropdown:
@@ -942,6 +956,7 @@ This settles all matters.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/5deab9d8-20f3-4b59-b54e-3b61c981c8c7?id=93148
 :label: grasple_exercise_5_3_15
 :dropdown:
@@ -951,6 +966,7 @@ This settles all matters.
 
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c3f025b5-2ca4-48cb-a1f9-4e144c8bc258?id=93149
 :label: grasple_exercise_5_3_16
 :dropdown:
@@ -960,6 +976,7 @@ This settles all matters.
 
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/a5713d1f-696b-42e5-ab74-553eec26b00b?id=93151
 :label: grasple_exercise_5_3_17
 :dropdown:
@@ -970,6 +987,7 @@ This settles all matters.
 
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9ab31fa4-6686-4865-8d43-602dc1fe670e?id=93152
 :label: grasple_exercise_5_3_18
 :dropdown:
@@ -980,6 +998,7 @@ This settles all matters.
 
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9ae9228f-ab17-4853-9995-e38e16d87c22?id=93153
 :label: grasple_exercise_5_3_19
 :dropdown:
@@ -988,6 +1007,7 @@ This settles all matters.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/8db6831f-2671-443a-af64-799d1d0d9179?id=93154
 :label: grasple_exercise_5_3_20
 :dropdown:
@@ -999,6 +1019,7 @@ This settles all matters.
 
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/116e83e9-1db7-47ce-a2f3-ad398aee0201?id=93155
 :label: grasple_exercise_5_3_21
 :dropdown:
@@ -1007,6 +1028,7 @@ This settles all matters.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/821d81b1-2cec-4fa4-b4a7-b1f9c32d6e06?id=93156
 :label: grasple_exercise_5_3_22
 :dropdown:
@@ -1017,6 +1039,7 @@ This settles all matters.
 
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/5b89a008-2e3d-48a5-a764-0b1b6a3ec4dc?id=93157
 :label: grasple_exercise_5_3_23 
 :dropdown:
@@ -1026,6 +1049,7 @@ This settles all matters.
 
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/e0bfbb0c-002f-485f-9b2f-5249938b6e40?id=93162
 :label: grasple_exercise_5_3_24
 :dropdown:
@@ -1037,6 +1061,7 @@ This settles all matters.
 
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/41f5ca17-ab3e-4487-b5fa-ee325cae85aa?id=93164
 :label: grasple_exercise_5_3_25
 :dropdown:

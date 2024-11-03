@@ -143,6 +143,7 @@ which are both true identities.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/8159aed6-a915-4cc1-bf75-f243702de530?id=83000
 :label: grasple_exercise_2_1_A
 :dropdown:
@@ -1060,6 +1061,7 @@ Namely, in matrix $A_4$ the second row is a non-zero row that is below the all-z
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/a6512aec-5f2d-4e3c-9c26-a0a22815480e?id=86165
 :label: grasple_exercise_2_1_D
 :dropdown:
@@ -1142,6 +1144,7 @@ In fact we simplified the system and the matrix along parallel paths. From now o
 In later chapters we will also apply row reduction to matrices in other contexts, i.c. for other purposes.
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/100dee65-a3fa-4747-9806-425aabb199f1?id=86189
 :label: grasple_exercise_2_1_B
 :dropdown:
@@ -1453,6 +1456,7 @@ the first and the third are echelon matrices and only the third is a reduced ech
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/ec78c509-6e28-441b-bace-9d2b24f14d63?id=70366
 :label: grasple_exercise_2_1_C
 :dropdown:
@@ -1751,6 +1755,7 @@ The word 'elimination' refers to the fact that the zeros that are created in the
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c242961e-d472-49b4-88e0-80cac8c617f9?id=87134
 :label: grasple_exercise_2_1_E
 :dropdown:
@@ -1853,6 +1858,7 @@ Then the first system has a unique solution, the second system has infinitely ma
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/fdf71712-2d0a-4bf2-bfb5-cdcac02f55df?id=70143
 :label: grasple_exercise_2_1_F
 :dropdown:
@@ -1915,6 +1921,7 @@ The first exercises are quite straightfordwardly computational.
 The remaining exercises tend to be a bit more theoretic.
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c8dee65d-a165-4534-89ee-76967d660c9c?id=69544
 :label: grasple_exercise_2_1_1
 :dropdown:
@@ -1923,6 +1930,7 @@ The remaining exercises tend to be a bit more theoretic.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/4bd179e9-99a6-436a-a178-9ad77210f86b?id=71057
 :label: grasple_exercise_2_1_1B
 :dropdown:
@@ -1931,6 +1939,7 @@ The remaining exercises tend to be a bit more theoretic.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9bb8381d-f1a2-4e58-8928-4985cce492c4?id=76019
 :label: grasple_exercise_2_1_2
 :dropdown:
@@ -1939,6 +1948,7 @@ The remaining exercises tend to be a bit more theoretic.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/42f38f80-f854-469d-b1e6-893539fd3572?id=82676
 :label: grasple_exercise_2_1_3
 :dropdown:
@@ -1947,6 +1957,7 @@ The remaining exercises tend to be a bit more theoretic.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/0d23f4f3-5798-4a7a-b40e-f163f7e2b37f?id=82667
 :label: grasple_exercise_2_1_4
 :dropdown:
@@ -1955,6 +1966,7 @@ The remaining exercises tend to be a bit more theoretic.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/99536b94-713b-4bae-874c-62958af0f5fe?id=80875
 :label: grasple_exercise_2_1_5
 :dropdown:
@@ -1963,6 +1975,7 @@ The remaining exercises tend to be a bit more theoretic.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/ff8bfe99-7a87-4711-b589-7ba70a857a39?id=80876
 :label: grasple_exercise_2_1_6
 :dropdown:
@@ -1971,6 +1984,7 @@ The remaining exercises tend to be a bit more theoretic.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/e1ffae46-da26-42b6-98ad-957478b6d58c?id=76653
 :label: grasple_exercise_2_1_7
 :dropdown:
@@ -1979,6 +1993,7 @@ The remaining exercises tend to be a bit more theoretic.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c01e55fb-21d2-4539-a870-353a40d51db0?id=69506
 :label: grasple_exercise_2_1_8
 :dropdown:
@@ -1987,6 +2002,7 @@ The remaining exercises tend to be a bit more theoretic.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/796aca3d-2b17-4e17-bad7-a83c23c88db8?id=69545
 :label: grasple_exercise_2_1_9
 :dropdown:
@@ -1995,6 +2011,7 @@ The remaining exercises tend to be a bit more theoretic.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/447cc6ad-095e-4704-9445-8fcb4e9c4b8e?id=69587
 :label: grasple_exercise_2_1_10
 :dropdown:
@@ -2003,6 +2020,7 @@ The remaining exercises tend to be a bit more theoretic.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/204cb1ad-0608-40ce-bb56-a2a6c6e8f1af?id=69559
 :label: grasple_exercise_2_1_11
 :dropdown:
@@ -2011,6 +2029,7 @@ The remaining exercises tend to be a bit more theoretic.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/a05fdf80-1325-4e86-874e-cd858133ad46?id=69558
 :label: grasple_exercise_2_1_12
 :dropdown:
@@ -2019,6 +2038,7 @@ The remaining exercises tend to be a bit more theoretic.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/73ced8a4-d6f8-494f-b58a-9e2f4053cd5b?id=82689
 :label: grasple_exercise_2_1_13
 :dropdown:
@@ -2027,6 +2047,7 @@ The remaining exercises tend to be a bit more theoretic.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/2b25fdf4-e662-4859-9f30-8838a1a7079f?id=69562
 :label: grasple_exercise_2_1_14
 :dropdown:
@@ -2035,6 +2056,7 @@ The remaining exercises tend to be a bit more theoretic.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/1dad6770-3b71-4c80-ae78-e63d2cfd93e9?id=69563
 :label: grasple_exercise_2_1_15
 :dropdown:
@@ -2043,6 +2065,7 @@ The remaining exercises tend to be a bit more theoretic.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/8d249aed-fa38-4a70-8271-8be07187dd06?id=69541
 :label: grasple_exercise_2_1_16
 :dropdown:
@@ -2051,6 +2074,7 @@ The remaining exercises tend to be a bit more theoretic.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/8d249aed-fa38-4a70-8271-8be07187dd06?id=69541
 :label: grasple_exercise_2_1_17
 :dropdown:
@@ -2061,6 +2085,7 @@ The remaining exercises tend to be a bit more theoretic.
 The remaining exercises are a bit more theoretical.
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/34663755-68a2-46ec-a3e7-0ad78ba9bdcd?id=71059
 :label: grasple_exercise_2_1_T1
 :dropdown:
@@ -2069,6 +2094,7 @@ The remaining exercises are a bit more theoretical.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/3077fca5-9295-4634-a72d-18eca315de59?id=69743
 :label: grasple_exercise_2_1_T2
 :dropdown:
@@ -2077,6 +2103,7 @@ The remaining exercises are a bit more theoretical.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/e9b7c9da-fe93-46a3-bde7-6bd8c4583aa8?id=68838
 :label: grasple_exercise_2_1_T3
 :dropdown:
@@ -2087,6 +2114,7 @@ The remaining exercises are a bit more theoretical.
 Four exercises about linear systems with a parameter.
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/e906b587-b749-438a-a97b-4a4ef917a7b2?id=69744
 :label: grasple_exercise_2_1_T4A
 :dropdown:
@@ -2094,6 +2122,7 @@ Four exercises about linear systems with a parameter.
 
 ::::
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9a51faa0-98f0-4934-81b5-7d78d7fef7ec?id=69745
 :label: grasple_exercise_2_1_T4B
 :dropdown:
@@ -2102,6 +2131,7 @@ Four exercises about linear systems with a parameter.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/12852bd2-dfc4-41e4-8e53-c0c5664d2537?id=69746
 :label: grasple_exercise_2_1_T4C
 :dropdown:
@@ -2110,6 +2140,7 @@ Four exercises about linear systems with a parameter.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/69589418-544a-46c7-9d36-517b3db92bd1?id=69747
 :label: grasple_exercise_2_1_T4D
 :dropdown:
@@ -2120,6 +2151,7 @@ Four exercises about linear systems with a parameter.
 Three exercises about linear systems and pivots.
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9e6cf6e3-80d2-4552-b668-cfc3bcdad27a?id=69748
 :label: grasple_exercise_2_1_T5B
 :dropdown:
@@ -2128,6 +2160,7 @@ Three exercises about linear systems and pivots.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/5eb59a87-6524-4563-9c86-f54e6fdca71d?id=69749
 :label: grasple_exercise_2_1_T5C
 :dropdown:
@@ -2136,6 +2169,7 @@ Three exercises about linear systems and pivots.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9fdb7774-56f2-4a04-ae4a-a28fd4d2fd97?id=69750
 :label: grasple_exercise_2_1_T5D
 :dropdown:
@@ -2144,6 +2178,7 @@ Three exercises about linear systems and pivots.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/d8ed4c96-da3f-4fb4-baa4-77c99cfdfeae?id=70370
 :label: grasple_exercise_2_1_T17
 :dropdown:
@@ -2152,6 +2187,7 @@ Three exercises about linear systems and pivots.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/23a43d40-9e2d-4d92-bf63-40519dcb7d65?id=82692
 :label: grasple_exercise_2_1_T18  
 :dropdown:
@@ -2160,6 +2196,7 @@ Three exercises about linear systems and pivots.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/63dd8fd-fdbd-4d59-b49e-1d52977a1a8e?id=87122
 :label: grasple_exercise_2_1_T19  
 :dropdown:
@@ -2168,6 +2205,7 @@ Three exercises about linear systems and pivots.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/dbeb91c3-4834-4204-9b0f-ca7bf4bd5ecd?id=71103
 :label: grasple_exercise_2_1_T20  
 :dropdown:

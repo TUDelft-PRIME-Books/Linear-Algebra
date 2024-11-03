@@ -991,6 +991,7 @@ $$
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/f76823e6-8936-4edf-bd0b-fa3a2aa7246f?id=88040
 :label: grasple_exercise_8_1_1
 :dropdown:
@@ -999,6 +1000,7 @@ $$
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9828a4b4-98f7-46c3-8dab-74ac04fc1955?id=88032
 :label: grasple_exercise_8_1_2
 :dropdown:
@@ -1007,6 +1009,7 @@ $$
       
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/8af926a0-80d8-459f-af55-c37a492a18c6?id=88045 
 :label: grasple_exercise_8_1_3
 :dropdown:
@@ -1015,6 +1018,7 @@ $$
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/03d75a31-7e1b-4dd2-be0a-5e9a93a0ef09?id=94940  
 :label: grasple_exercise_8_1_4
 :dropdown:
@@ -1023,6 +1027,7 @@ $$
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/926933aa-a33e-40f5-8e70-84bb9ed63fc8?id=87465
 :label: grasple_exercise_8_1_5
 :dropdown:
@@ -1031,6 +1036,7 @@ $$
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9aac9c37-aa3b-4d5a-bb92-f00c09e5f052?id=94943
 :label: grasple_exercise_8_1_6
 :dropdown:
@@ -1039,6 +1045,7 @@ $$
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/a6a95823-15e4-4354-b89d-559306a5a7fa?id=94941
 :label: grasple_exercise_8_1_7
 :dropdown:
@@ -1047,6 +1054,7 @@ $$
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/0403af25-edba-4bc6-b077-3de227253419?id=56931
 :label: grasple_exercise_8_1_8
 :dropdown:
@@ -1055,6 +1063,7 @@ $$
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/3a45e358-4898-4d1d-b6f4-ba9679dd13e0?id=87765
 :label: grasple_exercise_8_1_9
 :dropdown:
@@ -1063,6 +1072,7 @@ $$
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/eb8b0e2f-d909-47ce-8ef1-50ad67e2b0f6?id=87905
 :label: grasple_exercise_8_1_10
 :dropdown:
@@ -1072,6 +1082,7 @@ $$
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/5ce15529-61a7-43d0-9fd3-5ad5469618e8?id=89131 
 :label: grasple_exercise_8_1_11
 :dropdown:
@@ -1081,6 +1092,7 @@ $$
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/5511e064-f22d-4601-9156-f00545d59f80?id=88649
 :label: grasple_exercise_8_1_12
 :dropdown: 
@@ -1089,6 +1101,7 @@ $$
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c994fa76-f723-4700-922b-2f05ff0ef822?id=87760
 :label: grasple_exercise_8_1_13
 :dropdown:
@@ -1097,6 +1110,7 @@ $$
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/4fd8d027-0e63-46ec-aaf5-f2d10d8707c9?id=87038  
 :label: grasple_exercise_8_1_14
 :dropdown:
@@ -1105,6 +1119,7 @@ $$
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/77b08679-8974-453a-8f68-7e08e8ecfaf5?id=94944 
 :label: grasple_exercise_8_1_15
 :dropdown:
@@ -1114,6 +1129,7 @@ $$
 The following exercise have a more theoretical flavour.
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/6e0ebf73-fba2-46d0-aaa8-44e53ea07e53?id=88034
 :label: grasple_exercise_8_1_16 
 :dropdown:
@@ -1122,6 +1138,7 @@ The following exercise have a more theoretical flavour.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/73c272d7-dbb0-47c9-8bee-074b1f8cc154?id=82845
 :label: grasple_exercise_8_1_17
 :dropdown:
@@ -1130,6 +1147,7 @@ The following exercise have a more theoretical flavour.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/7959665f-09d0-4362-a0e8-c0a3e613399f?id=82848
 :label: grasple_exercise_8_1_18
 :dropdown:
@@ -1138,6 +1156,7 @@ The following exercise have a more theoretical flavour.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/33f5be5a-1cfa-4056-ac91-c2282de234b1?id=87864
 :label: grasple_exercise_8_1_19
 :dropdown:
@@ -1146,6 +1165,7 @@ The following exercise have a more theoretical flavour.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/59c4c327-1603-4cc1-8b92-7415c691098b?id=87873
 :label: grasple_exercise_8_1_20
 :dropdown:

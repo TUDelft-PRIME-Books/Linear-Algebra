@@ -152,6 +152,7 @@ $$
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/e9b864bf-de65-4b67-92d2-7075121ae5e5?id=70222
 :label: grasple_exercise_2_4_1T
 :dropdown:
@@ -160,6 +161,7 @@ $$
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/848de922-1bd5-48a2-806d-a2b94bd40a4b?id=70223
 :label: grasple_exercise_2_4_2T
 :dropdown:
@@ -168,6 +170,7 @@ $$
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/8eb9d800-ebd8-4805-8d56-eac5150f405d?id=85094
 :label: grasple_exercise_2_4_3 T
 :dropdown:
@@ -268,6 +271,7 @@ $$
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/d9a8f246-359c-4666-bb8c-2f573e192e5c?id=68857
 :label: grasple_exercise_2_4_4T
 :dropdown:
@@ -699,6 +703,7 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 ## Grasple Exercises
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/5708acc0-9a35-429b-85ff-43139eed1722?id=85086
 :label: grasple_exercise_2_4_1
 :dropdown:
@@ -707,6 +712,7 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/3cb73c25-fa69-4cf1-a686-1e71f2f0bf89?id=85092
 :label: grasple_exercise_2_4_2
 :dropdown:
@@ -715,6 +721,7 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/56cf013b-dc6a-4774-ac1e-fa694b16a2a8?id=85089
 :label: grasple_exercise_2_4_3
 :dropdown:
@@ -723,6 +730,7 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/dba850cd-e353-4339-9811-656a565e7270?id=85091
 :label: grasple_exercise_2_4_4
 :dropdown:
@@ -731,6 +739,7 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/a5715fe9-74ae-4df5-857f-2c6ed1cc9cdc?id=68889
 :label: grasple_exercise_2_4_5
 :dropdown:
@@ -739,6 +748,7 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/6332f523-a152-4be7-b160-bb0bab18a4a0?id=69773
 :label: grasple_exercise_2_4_6
 :dropdown:
@@ -747,6 +757,7 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/cd77f0bd-bd35-4674-9524-38a9446cd076?id=70183
 :label: grasple_exercise_2_4_7
 :dropdown:
@@ -755,6 +766,7 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/5bdcebc9-3ab6-4b64-9f30-033cb9f79b80?id=76273
 :label: grasple_exercise_2_4_8
 :dropdown:
@@ -763,6 +775,7 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/5ccac4fe-bf25-471e-b268-5add4b06ecfe?id=76278
 :label: grasple_exercise_2_4_9
 :dropdown:
@@ -771,6 +784,7 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/e8dfc02b-2628-44f0-8a57-bed3fb0cbb26?id=77658
 :label: grasple_exercise_2_4_10
 :dropdown:
@@ -779,6 +793,7 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/525d98b9-7cd3-40be-80e9-6d2f65f26002?id=77661
 :label: grasple_exercise_2_4_11
 :dropdown:

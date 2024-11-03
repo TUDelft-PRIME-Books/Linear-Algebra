@@ -45,6 +45,7 @@ This is no coincidence, as we will see in {prf:ref}`Prop:CrossProduct:Cportho`.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c5058abb-3d5b-4e8c-b836-40aeff08a301?id=65634
 :label: grasple_exercise_1_3_A
 :dropdown:
@@ -395,6 +396,7 @@ $$
 ## Grasple Exercises
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c5058abb-3d5b-4e8c-b836-40aeff08a301?id=65634
 :label: grasple_exercise_1_3_1
 :dropdown:
@@ -403,6 +405,7 @@ $$
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/529702ff-6fc3-46ab-a148-7d93d081870b?id=63138
 :label: grasple_exercise_1_3_2
 :dropdown:
@@ -411,6 +414,7 @@ $$
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/48448d89-c286-45c5-9af4-780329a8821f?id=65637
 :label: grasple_exercise_1_3_3
 :dropdown:
@@ -419,6 +423,7 @@ $$
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/f6c1bb4b-e63e-492e-910a-5a8c433de281?id=75093
 :label: grasple_exercise_1_3_4
 :dropdown:
@@ -427,6 +432,7 @@ $$
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/84b635e4-2278-4882-915d-6f8b253213a3?id=78749
 :label: grasple_exercise_1_3_5
 :dropdown:
@@ -435,6 +441,7 @@ $$
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/6b660feb-fc36-47a0-bf86-e424d28edf6f?id=63354
 :label: grasple_exercise_1_3_6
 :dropdown:
@@ -443,6 +450,7 @@ $$
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/8a0fc383-dd10-4f31-931a-c62c0d650bd9?id=63479
 :label: grasple_exercise_1_3_7
 :dropdown:
@@ -451,6 +459,7 @@ $$
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/3e62cc2d-5860-43c2-b8aa-e54ab3a9a981?id=79268
 :label: grasple_exercise_1_3_8
 :dropdown:
@@ -459,6 +468,7 @@ $$
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/122013a2-1012-4203-99c7-ed5deafd82a4?id=78786
 :label: grasple_exercise_1_3_9
 :dropdown:

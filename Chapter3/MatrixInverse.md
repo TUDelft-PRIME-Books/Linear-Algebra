@@ -1440,6 +1440,7 @@ The first exercises are quite straightfordwardly computational.
 The remaining exercises tend to be more theoretic.
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/6683a2f9-7b6b-4dd1-bec1-1e8b894fa3bb?id=71086
 :label: grasple_exercise_3_4_1
 :dropdown:
@@ -1448,6 +1449,7 @@ The remaining exercises tend to be more theoretic.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/1bbca38b-a734-4049-b8a2-f79d4bf1b098?id=71087
 :label: grasple_exercise_3_4_2
 :dropdown:
@@ -1456,6 +1458,7 @@ The remaining exercises tend to be more theoretic.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/045cd1
 :label: grasple_exercise_3_4_3
 :dropdown:
@@ -1464,6 +1467,7 @@ The remaining exercises tend to be more theoretic.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/82c06a56-8ee8-4f36-8173-e5d56da1e8e3?id=71073
 :label: grasple_exercise_3_4_4  
 :dropdown:
@@ -1472,6 +1476,7 @@ The remaining exercises tend to be more theoretic.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/551172d9-861c-4958-9b17-dfa828acdabe?id=71088
 :label: grasple_exercise_3_4_5  
 :dropdown:
@@ -1479,6 +1484,7 @@ The remaining exercises tend to be more theoretic.
 
 ::::::
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9174c68c-e2d5-4c23-af96-e3fe3dd36f42?id=71089
 :label: grasple_exercise_3_4_6
 :dropdown:
@@ -1487,6 +1493,7 @@ The remaining exercises tend to be more theoretic.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/800dc2f9-227e-401b-818b-093fc9647dd9?id=83083
 :label: grasple_exercise_3_4_7
 :dropdown:
@@ -1495,6 +1502,7 @@ The remaining exercises tend to be more theoretic.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9146f49d-74a5-4fda-a641-181c4536fe01?id=83086
 :label: grasple_exercise_3_4_8
 :dropdown:
@@ -1505,6 +1513,7 @@ The remaining exercises tend to be more theoretic.
 The remaining exercises have more theoretic flavour.
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/677aa3ee-4594-4d77-ace6-583a1efcba59?id=71090
 :label: grasple_exercise_3_4_9
 :dropdown:
@@ -1513,6 +1522,7 @@ The remaining exercises have more theoretic flavour.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/f789ebd5-171b-4556-83a9-eefc5ef830ef?id=71092
 :label: grasple_exercise_3_4_10
 :dropdown:
@@ -1521,6 +1531,7 @@ The remaining exercises have more theoretic flavour.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/29dc7c2f-6636-493e-9c97-da1847a336b7?id=68908
 :label: grasple_exercise_3_4_11
 :dropdown:
@@ -1529,6 +1540,7 @@ The remaining exercises have more theoretic flavour.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/8f3feb75-b41b-42e0-b574-f6442da253ce?id=70272
 :label: grasple_exercise_3_4_12
 :dropdown:
@@ -1537,6 +1549,7 @@ The remaining exercises have more theoretic flavour.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/5185c5c0-4d92-4e0e-92a7-6dc5eed8f7cf?id=68896
 :label: grasple_exercise_3_4_13
 :dropdown:
@@ -1545,6 +1558,7 @@ The remaining exercises have more theoretic flavour.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/ee4bb61e-6939-4074-a556-b82f3d0e8c28?id=71091
 :label: grasple_exercise_3_4_14
 :dropdown:
@@ -1552,6 +1566,7 @@ The remaining exercises have more theoretic flavour.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/1732d75b-2027-4a92-b8bb-c98bda62475d?id=71093
 :label: grasple_exercise_3_4_15
 :dropdown:
@@ -1559,6 +1574,7 @@ The remaining exercises have more theoretic flavour.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/f8602d4f-57b7-4752-9edc-69c83069fe36?id=71095
 :label: grasple_exercise_3_4_16
 :dropdown:
@@ -1566,6 +1582,7 @@ The remaining exercises have more theoretic flavour.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/a8ea864d-1164-4afc-9a24-c0a126ee8e54?id=71097
 :label: grasple_exercise_3_4_17
 :dropdown:
@@ -1573,6 +1590,7 @@ The remaining exercises have more theoretic flavour.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/73a16f62-28d7-4a4c-baf5-7ce3be9272ce?id=71104
 :label: grasple_exercise_3_4_18
 :dropdown:
@@ -1580,6 +1598,7 @@ The remaining exercises have more theoretic flavour.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/a8c2b8ed-9961-4779-8841-491a9529b71c?id=71466
 :label: grasple_exercise_3_4_19
 :dropdown:
@@ -1587,6 +1606,7 @@ The remaining exercises have more theoretic flavour.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/dfe429bd-1ab9-47f7-8f6c-06150c468645?id=71468
 :label: grasple_exercise_3_4_20
 :dropdown:
@@ -1594,6 +1614,7 @@ The remaining exercises have more theoretic flavour.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9af5928a-7ecb-478e-a896-7c66d16d9d09?id=71463
 :label: grasple_exercise_3_4_21
 :dropdown:
@@ -1603,6 +1624,7 @@ The remaining exercises have more theoretic flavour.
 In the last two exercises (non-)invertibility of non-square matrices is considered.
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/ca504661-cc62-454f-8035-04a9bef85f91?id=61170
 :label: grasple_exercise_3_4_22
 :dropdown:
@@ -1610,6 +1632,7 @@ In the last two exercises (non-)invertibility of non-square matrices is consider
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/4e9b4ec1-f775-430f-b81f-c76c42fcbc76?id=60136
 :label: grasple_exercise_3_4_23
 :dropdown:

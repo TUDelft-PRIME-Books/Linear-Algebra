@@ -506,6 +506,7 @@ The property is known as _Sylvester's Law of Inertia_.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/5a3d937b-6ecb-4fe8-b805-424af7e7ac55?id=90077
 :label: grasple_exercise_8_2_T1
 :dropdown:
@@ -1064,6 +1065,7 @@ The two ellipses.
 ## Grasple Exercises
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/b0668dff-a174-447b-8008-09b242a804fb?id=87448
 :label: grasple_exercise_8_2_1
 :dropdown:
@@ -1073,6 +1075,7 @@ The two ellipses.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/eaec14bd-fe7a-4c7a-a269-68e1d369bc2b?id=90207
 :label: grasple_exercise_8_2_2
 :dropdown:
@@ -1082,6 +1085,7 @@ The two ellipses.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/7044809f-28ca-4caf-b3fc-139010112ca1?id=90052
 :label: grasple_exercise_8_2_3
 :dropdown:
@@ -1091,6 +1095,7 @@ The two ellipses.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/b71d8b9f-a3e8-48f6-b236-58f85a4818a6?id=90997
 :label: grasple_exercise_8_2_4
 :dropdown:
@@ -1100,6 +1105,7 @@ The two ellipses.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/f0f9e677-eb21-4f84-9850-039b24ee0999?id=93112  
 :label: grasple_exercise_8_2_5
 :dropdown:
@@ -1110,6 +1116,7 @@ The two ellipses.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/f4657e73-219d-4ac9-bf17-81b240ddac96?id=93113
 :label: grasple_exercise_8_2_6
 :dropdown:
@@ -1119,6 +1126,7 @@ The two ellipses.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/21ad829b-77f5-4e14-9808-4fbbb901c9b4?id=93119
 :label: grasple_exercise_8_2_7
 :dropdown:
@@ -1128,6 +1136,7 @@ The two ellipses.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/03704333-e9db-46f0-b292-eb235aee6b22?id=91025
 :label: grasple_exercise_8_2_8
 :dropdown:
@@ -1137,6 +1146,7 @@ The two ellipses.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/8b851997-932f-4ee6-8dfd-785bd7908e1c?id=91091
 :label: grasple_exercise_8_2_9
 :dropdown:
@@ -1145,6 +1155,7 @@ The two ellipses.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/7c47dc31-b7d8-409e-9334-8a5de188c928?id=91912
 :label: grasple_exercise_8_2_10
 :dropdown:
@@ -1155,6 +1166,7 @@ The two ellipses.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/ee9c377f-5150-4264-8d3e-1150c482fd7f?id=93116
 :label: grasple_exercise_8_2_11
 :dropdown:
@@ -1164,6 +1176,7 @@ The two ellipses.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/51f56e96-3761-44c5-8d20-4cf0047a1ea4?id=93115
 :label: grasple_exercise_8_2_12
 :dropdown:
@@ -1174,6 +1187,7 @@ The two ellipses.
 The following exercises are a more theoretical.
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/01a3d009-b2e0-4f2b-9d49-fcca955d6c5d?id=91048
 :label: grasple_exercise_8_2_13
 :dropdown:
@@ -1183,6 +1197,7 @@ The following exercises are a more theoretical.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/7fea2ed7-c54f-4665-8ac8-611a8b0f6c5e?id=93114
 :label: grasple_exercise_8_2_14
 :dropdown:
@@ -1192,6 +1207,7 @@ The following exercises are a more theoretical.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/78b55ab4-4f27-4d32-90ec-9bb28bb8f7b8?id=91021
 :label: grasple_exercise_8_2_15
 :dropdown:

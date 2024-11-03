@@ -1333,6 +1333,7 @@ $$
 ## Grasple Exercises
 
 %::::::{grasple}
+:iframeclass: dark-light
 %:url: https://embed.grasple.com/exercises/97a589a8-54f9-4688-bd4d-a17a9585813b?id=69465
 %:label: grasple_exercise_3_1_1
 %:dropdown:
@@ -1340,6 +1341,7 @@ $$
 %::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/3f14573a-1d4c-4a4b-ae48-ccb168005702?id=70373
 :label: grasple_exercise_3_1_2
 :dropdown:
@@ -1347,6 +1349,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/b80d9889-bd46-45c6-a9cb-d056aa315232?id=70374
 :label: grasple_exercise_3_1_3
 :dropdown:
@@ -1354,6 +1357,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/be6a768d-c60d-4ed6-81a7-5dea71b4a1a5?id=70375
 :label: grasple_exercise_3_1_4
 :dropdown:
@@ -1361,6 +1365,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c8bb24f6-d357-4571-adb3-39ea0fa9e4ee?id=70395
 :label: grasple_exercise_3_1_5
 :dropdown:
@@ -1368,6 +1373,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/93048f7c-b755-4445-a532-949f34136096?id=70398
 :label: grasple_exercise_3_1_6
 :dropdown:
@@ -1375,6 +1381,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/2af6559f-8871-494d-abce-d4263d530c69?id=70381
 :label: grasple_exercise_3_1_7
 :dropdown:
@@ -1382,6 +1389,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/ce6e4a52-c985-43ee-92cb-2762a467ac5a?id=70383
 :label: grasple_exercise_3_1_8
 :dropdown:
@@ -1389,6 +1397,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/37b6bd46-8cfc-4c98-a5e8-53aa41c87dcf?id=70384
 :label: grasple_exercise_3_1_10
 :dropdown:
@@ -1396,6 +1405,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c5b2a642-fd50-43f6-9346-c37a0ffe1a40?id=70386
 :label: grasple_exercise_3_1_10b
 :dropdown:
@@ -1403,6 +1413,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c3d009c0-62d6-4ae3-8ca1-04a5d2730455?id=70406
 :label: grasple_exercise_3_1_11
 :dropdown:
@@ -1410,6 +1421,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/b9a4b128-f2c2-4612-a7f5-271c4e69aa70?id=70418
 :label: grasple_exercise_3_1_12
 :dropdown:
@@ -1417,6 +1429,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/4058e54a-74f2-414e-9693-420abbc62677?id=70391
 :label: grasple_exercise_3_1_13
 :dropdown:
@@ -1424,6 +1437,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/990bf561-629e-430f-b8d0-e757c63fe15c?id=70392
 :label: grasple_exercise_3_1_14
 :dropdown:
@@ -1431,6 +1445,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/4e5d3f55-9257-4023-9739-5df0a1a9f277?id=70410
 :label: grasple_exercise_3_1_15
 :dropdown:
@@ -1438,6 +1453,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9efa96e2-483d-4b2c-a58a-ba197bc09a81?id=70411
 :label: grasple_exercise_3_1_16
 :dropdown:
@@ -1445,6 +1461,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/729cba57-72d1-4d54-8cf9-c9946952bf9d?id=70412
 :label: grasple_exercise_3_1_17
 :dropdown:
@@ -1452,6 +1469,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/b4bb3730-f14c-4a60-a8b8-6b895cf93ac5?id=70413
 :label: grasple_exercise_3_1_18
 :dropdown:
@@ -1459,6 +1477,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/34bb6386-7e7c-411b-83a1-09bbaf1106c5?id=70415
 :label: grasple_exercise_3_1_19
 :dropdown:
@@ -1466,6 +1485,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/ce8ba17c-0a17-4d5e-b4b7-5c277c7e8df8?id=70416
 :label: grasple_exercise_3_1_20
 :dropdown:
@@ -1473,6 +1493,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/2de4f8d1-ab3d-4d3a-94e4-5e414e2da3d9?id=70372
 :label: grasple_exercise_3_1_21
 :dropdown:
@@ -1480,6 +1501,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/3f992e7a-19e3-4b83-8d90-db86e323ea94?id=69296
 :label: grasple_exercise_3_1_22
 :dropdown:
@@ -1487,6 +1509,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/94d618e0-de21-491c-ad44-8e29974e0303?id=71098
 :label: grasple_exercise_3_1_23
 :dropdown:
@@ -1494,6 +1517,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/f983b627-10c2-4dd6-a273-2a33e99d0ded?id=71101
 :label: grasple_exercise_3_1_24
 :dropdown:

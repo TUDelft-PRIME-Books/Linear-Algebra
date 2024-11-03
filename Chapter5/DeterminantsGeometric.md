@@ -562,6 +562,7 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 ## Grasple Exercises
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/3126529d-db82-43e2-862d-7f013f39f619?id=93128
 :label: grasple_exercise_5_1_1
 :dropdown:
@@ -570,6 +571,7 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/13e76393-8f38-48aa-9685-2132208a0cc8?id=93131
 :label: grasple_exercise_5_1_2
 :dropdown:
@@ -578,6 +580,7 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/fc111f55-9f43-4730-a1f9-e3b5f03069bd?id=93133
 :label: grasple_exercise_5_1_3
 :dropdown:
@@ -586,6 +589,7 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/2d846d56-3729-468e-80d8-74ec6d348719?id=93134
 :label: grasple_exercise_5_1_4
 :dropdown:
@@ -594,6 +598,7 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/1053b23-02ab-4ffb-bcda-70f808a9910a?id=74408
 :label: grasple_exercise_5_1_5
 :dropdown:
@@ -602,6 +607,7 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/edc50bb7-425e-4a76-927e-f20504128f5f?id=65686
 :label: grasple_exercise_5_1_6
 :dropdown:
@@ -610,6 +616,7 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/47e1fd08-2d8a-4c0d-816a-37e314707191?id=87501
 :label: grasple_exercise_5_1_7
 :dropdown:
@@ -618,6 +625,7 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/22a384c2-3434-4650-a52a-e954c470e08d?id=92929
 :label: grasple_exercise_5_1_8
 :dropdown:

@@ -701,6 +701,7 @@ A shear transformation applied to a stack of cards.
 ## Grasple Exercises
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/1531c9ba-540c-4d64-bddf-169105eaa5ff?id=70393
 :label: grasple_exercise_3_3_1
 :dropdown:
@@ -709,6 +710,7 @@ A shear transformation applied to a stack of cards.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/51095023-d860-483f-8758-44d2b83d7c9e?id=70394
 :label: grasple_exercise_3_3_2
 :dropdown:
@@ -717,6 +719,7 @@ A shear transformation applied to a stack of cards.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/5eae3328-453b-4065-9829-be8acb10f0fa?id=70421
 :label: grasple_exercise_3_3_3
 :dropdown:
@@ -725,6 +728,7 @@ A shear transformation applied to a stack of cards.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/cf49c839-9eee-4f7b-b459-cfe3edcf530b?id=70422
 :label: grasple_exercise_3_3_4
 :dropdown:
@@ -733,6 +737,7 @@ A shear transformation applied to a stack of cards.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/aca8c030-4392-4e22-be38-2316f9c483c4?id=70425
 :label: grasple_exercise_3_3_5
 :dropdown:
@@ -741,6 +746,7 @@ A shear transformation applied to a stack of cards.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/e67fb238-1b3e-4cad-bbb2-4126579fa97f?id=78593
 :label: grasple_exercise_3_3_6
 :dropdown:
@@ -749,6 +755,7 @@ A shear transformation applied to a stack of cards.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/795b979c-e3d9-4f24-80ad-0dfad38c84d2?id=83137
 :label: grasple_exercise_3_3_7
 :dropdown:
@@ -757,6 +764,7 @@ A shear transformation applied to a stack of cards.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/7d10562b-929a-4b1f-9a90-6280e12b9c98?id=85261
 :label: grasple_exercise_3_3_8
 :dropdown:
@@ -765,6 +773,7 @@ A shear transformation applied to a stack of cards.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/ee24dead-8281-493e-9ced-b2f0f9cb1421?id=85263
 :label: grasple_exercise_3_3_9
 :dropdown:

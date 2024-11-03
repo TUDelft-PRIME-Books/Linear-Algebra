@@ -981,6 +981,7 @@ We expect $A_3$ to be a good approximation of $A$.
 ## Grasple Exercises
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/27adae2a-db2a-46fa-800f-49e4c0dfe4fa?id=93487
 :label: grasple_exercise_8_3_9
 :dropdown:
@@ -989,6 +990,7 @@ We expect $A_3$ to be a good approximation of $A$.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/caac29d1-9700-4a30-8c7c-19ea6148258f?id=93490
 :label: grasple_exercise_8_3_10
 :dropdown:
@@ -998,6 +1000,7 @@ We expect $A_3$ to be a good approximation of $A$.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/e4c651aa-a998-4e19-957b-20ddf41509bf?id=93468
 :label: grasple_exercise_8_3_2
 :dropdown:
@@ -1005,6 +1008,7 @@ We expect $A_3$ to be a good approximation of $A$.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/47ebaa77-9f3c-4363-a57e-d37242c6e598?id=93471
 :label: grasple_exercise_8_3_3
 :dropdown:
@@ -1012,6 +1016,7 @@ We expect $A_3$ to be a good approximation of $A$.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/79d22478-56e3-49ee-9b19-77ab1ad06eaf?id=93470
 :label: grasple_exercise_8_3_4
 :dropdown:
@@ -1021,6 +1026,7 @@ We expect $A_3$ to be a good approximation of $A$.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/10affbae-4221-40f8-bf0e-df626a0e64ae?id=93479
 :label: grasple_exercise_8_3_5
 :dropdown:
@@ -1029,6 +1035,7 @@ We expect $A_3$ to be a good approximation of $A$.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/37ea17f1-1bfb-4a19-b9e2-1292a593dfa3?id=93480
 :label: grasple_exercise_8_3_6
 :dropdown:
@@ -1037,6 +1044,7 @@ We expect $A_3$ to be a good approximation of $A$.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/20dd219a-35f3-48d7-ad9d-35038047336b?id=92586
 :label: grasple_exercise_8_3_7
 :dropdown:
@@ -1045,6 +1053,7 @@ We expect $A_3$ to be a good approximation of $A$.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9848d7be-1530-46b0-941f-9ae76e95abfa?id=93481
 :label: grasple_exercise_8_3_8
 :dropdown:
@@ -1053,6 +1062,7 @@ We expect $A_3$ to be a good approximation of $A$.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/3fdad317-fc18-4f88-b416-87cbd1d5e708?id=93495
 :label: grasple_exercise_8_3_1
 :dropdown:

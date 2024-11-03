@@ -630,6 +630,7 @@ $$
 ::::
 
 ::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/d6aa929c-7614-4af2-b015-31e2e6fd7b80?id=104847
 :label: grasple_exercise_4_3_T1
 :dropdown:
@@ -1209,6 +1210,7 @@ must be equal.
 ## Grasple Exercises
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/b19d38ef-60cf-4581-a4b2-9aa2efcf6f30?id=90868
 :label: grasple_exercise_4_3_1
 :dropdown:
@@ -1217,6 +1219,7 @@ must be equal.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/3008a6aa-58ee-4182-8fd1-9d452ac3e9f0?id=90867
 :label: grasple_exercise_4_3_2
 :dropdown:
@@ -1225,6 +1228,7 @@ must be equal.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/18d96cbf-6158-4800-9a10-3ec7f6e933f8?id=90885
 :label: grasple_exercise_4_3_3
 :dropdown:
@@ -1233,6 +1237,7 @@ must be equal.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/dfad4903-b2a8-4f67-979e-5651cf4072ec?id=90872
 :label: grasple_exercise_4_3_4
 :dropdown:
@@ -1241,6 +1246,7 @@ must be equal.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/d6e53d94-578e-48fe-96b6-aca26f4eca1c?id=90870
 :label: grasple_exercise_4_3_5
 :dropdown:
@@ -1249,6 +1255,7 @@ must be equal.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/75c6d18b-8a54-4592-97f4-edd77169cc10?id=90876
 :label: grasple_exercise_4_3_6
 :dropdown:
@@ -1257,6 +1264,7 @@ must be equal.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c45ea239-1e90-4d1f-ae08-323e595bd53a?id=104827
 :label: grasple_exercise_4_3_7   
 :dropdown:
@@ -1268,6 +1276,7 @@ must be equal.
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/39e1af19-0a32-456b-a414-20056e6b7f16?id=85157
 :label: grasple_exercise_4_3_8
 :dropdown:
@@ -1276,6 +1285,7 @@ must be equal.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/b03d9983-3ef2-4d45-82b3-6c1762510561?id=90875
 :label: grasple_exercise_4_3_9
 :dropdown:
@@ -1284,6 +1294,7 @@ must be equal.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/784bba91-a0be-4076-9918-63b8ab2fbc49?id=90881
 :label: grasple_exercise_4_3_10
 :dropdown:
@@ -1291,6 +1302,7 @@ must be equal.
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/d8894445-4426-4694-8500-229cd47a5288?id=85165
 :label: grasple_exercise_4_3_11
 :dropdown:
@@ -1301,6 +1313,7 @@ must be equal.
 The remaining exercises are about matrix representations of linear transformations.
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/2de2a3b5-1d3f-4e79-9421-393d59b9dc87?id=93047
 :label: grasple_exercise_4_3_12
 :dropdown:
@@ -1309,6 +1322,7 @@ The remaining exercises are about matrix representations of linear transformatio
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/01e5c371-0139-458c-8f0a-25f35bc03fcb?id=93053
 :label: grasple_exercise_4_3_13
 :dropdown:
@@ -1317,6 +1331,7 @@ The remaining exercises are about matrix representations of linear transformatio
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/dd1af96d-34d7-407e-9877-c1e8b6495e6f?id=85167
 :label: grasple_exercise_4_3_14
 :dropdown:
@@ -1325,6 +1340,7 @@ The remaining exercises are about matrix representations of linear transformatio
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/933f3e07-36b6-4db5-a47d-91e276185269?id=85159
 :label: grasple_exercise_4_3_15
 :dropdown:
@@ -1333,6 +1349,7 @@ The remaining exercises are about matrix representations of linear transformatio
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/7985ac3f-c432-4b48-9ef1-8ce0914b0f97?id=85162
 :label: grasple_exercise_4_3_16
 :dropdown:

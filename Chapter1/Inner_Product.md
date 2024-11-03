@@ -461,6 +461,7 @@ and conclude that $\mathbf{u}$ and $\mathbf{v}$ are orthogonal, $\mathbf{u}$ and
 :::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/59912254-6fc8-43c7-9c44-1ea7eab1c236?id=62409
 :label: grasple_exercise_1_2_1T
 :dropdown:
@@ -640,6 +641,7 @@ as required.
 :::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/88c460cd-36ee-49b0-8fb8-d29b55ad253a?id=84822
 :label: grasple_exercise_1_2_2T
 :dropdown:
@@ -853,6 +855,7 @@ The distance between two vectors.
 :::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/5bc4274c-56a0-461b-bd3d-9f8bdb8f44e0?id=69740
 :label: grasple_exercise_1_2_2
 :dropdown:
@@ -1457,6 +1460,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ## Grasple Exercises
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/59912254-6fc8-43c7-9c44-1ea7eab1c236?id=62409
 :label: grasple_exercise_1_2_3
 :dropdown:
@@ -1465,6 +1469,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/7b49e0f5-ae8b-4e92-8878-665dc080b7ee?id=65601
 :label: grasple_exercise_1_2_4
 :dropdown:
@@ -1473,6 +1478,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c8b4eed4-179f-42ab-9ec9-07f66445c960?id=69482
 :label: grasple_exercise_1_2_5
 :dropdown:
@@ -1481,6 +1487,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/b5a4e1c0-92ca-4307-9eb0-25a3a5807fc7?id=62415
 :label: grasple_exercise_1_2_6
 :dropdown:
@@ -1489,6 +1496,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/34bbb9e1-207e-4c06-8686-1c32b3f3d0aa?id=78751
 :label: grasple_exercise_1_2_8
 :dropdown:
@@ -1497,6 +1505,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/30a7abfe-9d40-4faa-a848-83bd67e024a0?id=62406
 :label: grasple_exercise_1_2_7
 :dropdown:
@@ -1505,6 +1514,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/7dc339bb-fe79-4eb9-914c-ea1a7ca85a85?id=69737
 :label: grasple_exercise_1_2_9
 :dropdown:
@@ -1513,6 +1523,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/8de90b0e-e89a-49a6-aa63-1b1e39f6e98e?id=79262
 :label: grasple_exercise_1_2_10
 :dropdown:
@@ -1521,6 +1532,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/d4dd1154-a3ec-497e-bc73-1cd96529f0e7?id=69741
 :label: grasple_exercise_1_2_11
 :dropdown:
@@ -1529,6 +1541,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c2242315-7e4f-463b-b3cf-09e9e15c8b2b?id=69739
 :label: grasple_exercise_1_2_12
 :dropdown:
@@ -1537,6 +1550,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/67334454-d109-45a2-b640-545041ff896d?id=62416
 :label: grasple_exercise_1_2_13
 :dropdown:
@@ -1545,6 +1559,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9705b078-6c91-42c6-9768-8a043115b881?id=62658
 :label: grasple_exercise_1_2_14
 :dropdown:
@@ -1553,6 +1568,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/531d3be2-dd62-4c21-b023-70e0b63809be?id=78747
 :label: grasple_exercise_1_2_15
 :dropdown:
@@ -1561,6 +1577,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/161ecdf6-4cfb-41ba-bc16-685fe8532471?id=62414
 :label: grasple_exercise_1_2_16
 :dropdown:
@@ -1569,6 +1586,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c4d2743f-5f14-4812-9531-1a40c28c15cb?id=62413
 :label: grasple_exercise_1_2_17
 :dropdown:
@@ -1577,6 +1595,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/407cb45d-2baf-4b0d-a1eb-6e51186e19f3?id=69738
 :label: grasple_exercise_1_2_18
 :dropdown:
@@ -1585,6 +1604,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c4c1c609-b1dd-4588-865f-53d7e8221f88?id=62689
 :label: grasple_exercise_1_2_19
 :dropdown:
@@ -1593,6 +1613,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/2a2423c3-0907-40b7-bd5f-7607baf7cc09?id=62668
 :label: grasple_exercise_1_2_20
 :dropdown:

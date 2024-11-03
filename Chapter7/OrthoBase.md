@@ -559,6 +559,7 @@ We know that $A$ is orthogonal if and only if $A^{T}A=I_{n}$. But this implies $
 ## Grasple Exercises
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c443c628-427c-4ba6-a55b-d7fd0a562904?id=87842
 :label: grasple_exercise_7_2_1
 :dropdown:
@@ -567,6 +568,7 @@ We know that $A$ is orthogonal if and only if $A^{T}A=I_{n}$. But this implies $
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/825980e7-e25f-497e-a077-e009cedd55c4?id=87843
 :label: grasple_exercise_7_2_2
 :dropdown:
@@ -575,6 +577,7 @@ We know that $A$ is orthogonal if and only if $A^{T}A=I_{n}$. But this implies $
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c815026e-df41-461c-b0dc-0b06a387d0c9?id=91876
 :label: grasple_exercise_7_2_3
 :dropdown:

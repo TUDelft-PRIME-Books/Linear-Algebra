@@ -484,6 +484,7 @@ In a similar way, the property $\text{det}\big(A^T\big) = \text{det}(A)$ for $4 
 ## Grasple Exercises
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/34eb983b-c7e7-40f3-a983-6bfb970f6836?id=93135
 :label: grasple_exercise_5_2_1
 :dropdown:
@@ -493,6 +494,7 @@ In a similar way, the property $\text{det}\big(A^T\big) = \text{det}(A)$ for $4 
 
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/b86bd320-47cd-45cb-ab88-81b20a48c427?id=93136
 :label: grasple_exercise_5_2_2
 :dropdown:
@@ -502,6 +504,7 @@ In a similar way, the property $\text{det}\big(A^T\big) = \text{det}(A)$ for $4 
 
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/2f993d71-6a19-435d-a449-cc0dbb8237d5?id=93137
 :label: grasple_exercise_5_2_3
 :dropdown:
@@ -510,6 +513,7 @@ In a similar way, the property $\text{det}\big(A^T\big) = \text{det}(A)$ for $4 
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/40de4737-1823-425b-b997-a07c53cb2f96?id=93138
 :label: grasple_exercise_5_2_4
 :dropdown:
@@ -519,6 +523,7 @@ In a similar way, the property $\text{det}\big(A^T\big) = \text{det}(A)$ for $4 
 
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/57cd522b-6096-416a-a739-fea5cbbc77c9?id=93139
 :label: grasple_exercise_5_2_5
 :dropdown:
@@ -527,6 +532,7 @@ In a similar way, the property $\text{det}\big(A^T\big) = \text{det}(A)$ for $4 
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/25c54a22-eb00-4cbf-ac0c-21b4974a48ff?id=92927
 :label: grasple_exercise_5_2_6
 :dropdown:
@@ -535,6 +541,7 @@ In a similar way, the property $\text{det}\big(A^T\big) = \text{det}(A)$ for $4 
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/48fedcac-0039-4eaa-9f71-20fa86ed4536?id=93142
 :label: grasple_exercise_5_2_7
 :dropdown:

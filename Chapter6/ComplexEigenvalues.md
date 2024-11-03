@@ -572,6 +572,7 @@ A matrix $A$ is complex diagonalizable if and only if for each eigenvalue the ge
 ## Grasple Exercises 
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/bf1aef1c-7948-4b32-951e-d79940282bfb?id=91545
 :label: grasple_exercise_6_4_1
 :dropdown:
@@ -581,6 +582,7 @@ A matrix $A$ is complex diagonalizable if and only if for each eigenvalue the ge
 
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/4e7c813d-ce37-42a2-be36-9dffb42d5f0b?id=91546
 :label: grasple_exercise_6_4_2
 :dropdown:
@@ -589,6 +591,7 @@ A matrix $A$ is complex diagonalizable if and only if for each eigenvalue the ge
 ::::::
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/66dcb059-1c37-477c-9f23-8bd1bb26fb44?id=92368
 :label: grasple_exercise_6_4_3
 :dropdown:
@@ -598,6 +601,7 @@ A matrix $A$ is complex diagonalizable if and only if for each eigenvalue the ge
 
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/507921c2-d568-44d9-a254-536440ca613e?id=91553
 :label: grasple_exercise_6_4_4
 :dropdown:
@@ -606,6 +610,7 @@ A matrix $A$ is complex diagonalizable if and only if for each eigenvalue the ge
 ::::::
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/593e9ddd-a7b8-4617-958e-95f328e28e80?id=91547
 :label: grasple_exercise_6_4_5
 :dropdown:
@@ -614,6 +619,7 @@ A matrix $A$ is complex diagonalizable if and only if for each eigenvalue the ge
 ::::::
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/f60a57c2-b0b3-45de-b18c-e0da1bbef601?id=91555
 :label: grasple_exercise_6_4_6
 :dropdown:
@@ -621,6 +627,7 @@ A matrix $A$ is complex diagonalizable if and only if for each eigenvalue the ge
 ::::::
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/440c03f9-9a5a-40a6-aa1a-77660a588b20?id=91556
 :label: grasple_exercise_6_4_7
 :dropdown:
@@ -630,6 +637,7 @@ A matrix $A$ is complex diagonalizable if and only if for each eigenvalue the ge
 ::::::
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/f3a6972e-f17b-4984-b0ee-38012ec542b3?id=91563
 :label: grasple_exercise_6_4_8
 :dropdown:
@@ -638,6 +646,7 @@ A matrix $A$ is complex diagonalizable if and only if for each eigenvalue the ge
 ::::::
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/79c7c433-fbcc-41b8-85d2-b1938a26d40e?id=91566
 :label: grasple_exercise_6_4_9
 :dropdown:
@@ -647,6 +656,7 @@ A matrix $A$ is complex diagonalizable if and only if for each eigenvalue the ge
 ::::::
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/1720d806-7602-41b3-9beb-569967e74c84?id=92543
 :label: grasple_exercise_6_4_10
 :dropdown:
@@ -655,6 +665,7 @@ A matrix $A$ is complex diagonalizable if and only if for each eigenvalue the ge
 ::::::
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/510f78e6-717e-4550-8564-7bbf2c2cf673?id=55388
 :label: grasple_exercise_6_4_11
 :dropdown:

@@ -337,6 +337,7 @@ It is easy to check that, as the notation suggests, $\vect{u}_{V}$ is in $V$ (si
 ## Grasple Exercises
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/d69cfb9d-325b-433d-9210-c322fa272d14?id=108892
 :label: grasple_exercise_7_1_1
 :dropdown:
@@ -346,6 +347,7 @@ It is easy to check that, as the notation suggests, $\vect{u}_{V}$ is in $V$ (si
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/19e0688c-b00c-46c2-aad8-200a230687b9?id=91435
 :label: grasple_exercise_7_1_2
 :dropdown:
@@ -356,6 +358,7 @@ It is easy to check that, as the notation suggests, $\vect{u}_{V}$ is in $V$ (si
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c0918add-0c17-481a-80e3-c6688e65480a?id=91434
 :label: grasple_exercise_7_1_3
 :dropdown:
@@ -365,6 +368,7 @@ It is easy to check that, as the notation suggests, $\vect{u}_{V}$ is in $V$ (si
 
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/f216b122-e2f3-4cd4-9268-7a814e12cec3?id=91429
 :label: grasple_exercise_7_1_4
 :dropdown:
@@ -373,6 +377,7 @@ It is easy to check that, as the notation suggests, $\vect{u}_{V}$ is in $V$ (si
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/3e9132d6-c280-4361-a653-002ad50b4784?id=91433
 :label: grasple_exercise_7_1_5
 :dropdown:

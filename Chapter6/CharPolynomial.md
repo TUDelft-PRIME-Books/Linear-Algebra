@@ -378,6 +378,7 @@ The eigenvalue $\lambda = -1$ has both algebraic multiplicity and geometric mult
 The following exercise, which is meant to shed some more light on the concepts just introduced, requires few technicalities.
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/6e01d5c1-897b-44bf-bbb2-4653ff095f48?id=92498
 :label: grasple_exercise_6_1_A
 :dropdown:
@@ -617,6 +618,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/b43cd5dc-3fff-432a-bdec-d56e38c39e89?id=91450
 :label: grasple_exercise_6_2_1
 :dropdown:
@@ -627,6 +629,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/b89efbb3-c5cc-4fab-874b-8dd285644ab2?id=91452
 :label: grasple_exercise_6_2_2 
 :dropdown:
@@ -636,6 +639,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/137aaf98-60d5-4aab-82f4-10ea40811a7b?id=91453
 :label: grasple_exercise_6_2_3 
 :dropdown:
@@ -646,6 +650,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/e3793a52-25f0-48cd-b47f-b59f872e3e1a?id=91454
 :label: grasple_exercise_6_2_4 
 :dropdown:
@@ -655,6 +660,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/3597a3e9-17b7-491c-89a7-4f33f1a4fb8c?id=91482
 :label: grasple_exercise_6_2_5
 :dropdown:
@@ -663,6 +669,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 ::::::
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9e16e7ab-87f1-448c-a52a-a8d6c1470c4b?id=91483
 :label: grasple_exercise_6_2_6 
 :dropdown:
@@ -676,6 +683,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/2c30dad3-17a4-4f20-b277-fd13e0c93e9f?id=92384
 :label: grasple_exercise_6_2_7 
 :dropdown:
@@ -685,6 +693,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/e35e7cfb-2a21-4849-ae48-6c7a94e85707?id=92409
 :label: grasple_exercise_6_2_8
 :dropdown:
@@ -694,6 +703,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/eb3e8ea4-3a0b-4767-aa62-0d8b05e35dda?id=91484
 :label: grasple_exercise_6_2_9
 :dropdown:
@@ -703,6 +713,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/e9044c04-4bfb-474e-8823-bff6449b92ab?id=92210
 :label: grasple_exercise_6_2_10 
 :dropdown:
@@ -712,6 +723,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/82387c7b-49c8-4438-b72c-e1d023fb2780?id=92211
 :label: grasple_exercise_6_2_11
 :dropdown:
@@ -721,6 +733,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/b846c6e6-f2c6-4d5b-bc40-adaed4cf6276?id=92490
 :label: grasple_exercise_6_2_12
 :dropdown:

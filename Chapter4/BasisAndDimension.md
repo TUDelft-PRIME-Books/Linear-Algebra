@@ -237,6 +237,7 @@ $\vect{x} = x_1\vect{e}_1 + x_2\vect{e}_2 + x_3\vect{e}_3 + x_4\vect{e}_4$.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/7ecdf0d8-e529-4589-82f6-7207f229cd87?id=88187
 :label: grasple_exercise_4_2_A
 :dropdown:
@@ -473,6 +474,7 @@ The basis $\lbrace\vect{a}_1,\vect{a}_3\rbrace$ of $\Col{A}$.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/6c836722-f664-434d-bf7d-3a4f86ff0187?id=88188
 :label: grasple_exercise_4_2_B
 :dropdown:
@@ -1784,6 +1786,7 @@ $B$ is an $n\times m$ matrix?
 ## Grasple Exercises
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9387d1c3-03b4-41ff-b7b6-bb0d0ee3c771?id=70632
 :label: grasple_exercise_4_2_1
 :dropdown:
@@ -1792,6 +1795,7 @@ $B$ is an $n\times m$ matrix?
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/7bf4ef59-9f95-4697-9309-f06078856988?id=70633
 :label: grasple_exercise_4_2_2
 :dropdown:
@@ -1800,6 +1804,7 @@ $B$ is an $n\times m$ matrix?
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/2ea2e118-a471-4688-9d89-87cd49cfddc2?id=70634
 :label: grasple_exercise_4_2_3
 :dropdown:
@@ -1808,6 +1813,7 @@ $B$ is an $n\times m$ matrix?
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/1c00677f-eadb-4a13-84aa-5c7b07774f21?id=88189
 :label: grasple_exercise_4_2_4
 :dropdown:
@@ -1816,6 +1822,7 @@ $B$ is an $n\times m$ matrix?
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/ae1a690e-1e4d-40be-94d7-cf91121134f0?id=70649
 :label: grasple_exercise_4_2_5
 :dropdown:
@@ -1824,6 +1831,7 @@ $B$ is an $n\times m$ matrix?
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9440dca7-7d2d-4f74-8679-c966be28d73f?id=70638
 :label: grasple_exercise_4_2_6
 :dropdown:
@@ -1832,6 +1840,7 @@ $B$ is an $n\times m$ matrix?
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/3d5483ab-4a1f-4caf-b979-9a4518551416?id=70640
 :label: grasple_exercise_4_2_7
 :dropdown:
@@ -1840,6 +1849,7 @@ $B$ is an $n\times m$ matrix?
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/b85a9ef2-3b82-47d9-89f3-212a435b8be2?id=70642
 :label: grasple_exercise_4_2_8
 :dropdown:
@@ -1848,6 +1858,7 @@ $B$ is an $n\times m$ matrix?
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/04d804ff-16ea-44ee-ac76-452a73a88859?id=70653
 :label: grasple_exercise_4_2_9
 :dropdown:
@@ -1856,6 +1867,7 @@ $B$ is an $n\times m$ matrix?
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/789d912e-6ac2-4f48-b92b-11ab33d5c949?id=70655
 :label: grasple_exercise_4_2_10
 :dropdown:
@@ -1864,6 +1876,7 @@ $B$ is an $n\times m$ matrix?
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/610e51bc-c62f-4da2-81f3-eeef106bba84?id=83409
 :label: grasple_exercise_4_2_11
 :dropdown:
@@ -1872,6 +1885,7 @@ $B$ is an $n\times m$ matrix?
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/98aae0f1-3cd9-43d8-aa9f-7c884f2c9527?id=83411
 :label: grasple_exercise_4_2_12
 :dropdown:
@@ -1882,6 +1896,7 @@ $B$ is an $n\times m$ matrix?
 The exercises below are more theoretical.
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9dc4b61f-1ded-496c-82e1-8413bc0fa5e7?id=70644
 :label: grasple_exercise_4_2_13
 :dropdown:
@@ -1890,6 +1905,7 @@ The exercises below are more theoretical.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/dc1ffd49-1c32-407a-9042-f386b85c771d?id=70645
 :label: grasple_exercise_4_2_14
 :dropdown:
@@ -1898,6 +1914,7 @@ The exercises below are more theoretical.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/3576e4c9-2084-4e3f-af61-08f09d63ad82?id=70646
 :label: grasple_exercise_4_2_15
 :dropdown:
@@ -1906,6 +1923,7 @@ The exercises below are more theoretical.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/37a433f6-b15f-4b8a-8232-4098fe82e6c9?id=70647
 :label: grasple_exercise_4_2_16
 :dropdown:
@@ -1914,6 +1932,7 @@ The exercises below are more theoretical.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/2940572e-f3bf-40e9-bf01-c2244c6f9aa5?id=70648
 :label: grasple_exercise_4_2_17
 :dropdown:
@@ -1922,6 +1941,7 @@ The exercises below are more theoretical.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/2f4a3540-9454-4b49-ac4c-0aae22fd5b50?id=70657
 :label: grasple_exercise_4_2_18
 :dropdown:
@@ -1930,6 +1950,7 @@ The exercises below are more theoretical.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/b07a06d8-ea95-4798-9ae7-7d4bdea040de?id=70658
 :label: grasple_exercise_4_2_19
 :dropdown:
@@ -1938,6 +1959,7 @@ The exercises below are more theoretical.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/547dd05d-c9da-4e7a-8deb-e4e8715e0f02?id=70660
 :label: grasple_exercise_4_2_20
 :dropdown:
@@ -1946,6 +1968,7 @@ The exercises below are more theoretical.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/e8051821-b278-4895-ad3e-bc40ba99e1dc?id=70659
 :label: grasple_exercise_4_2_21
 :dropdown:
@@ -1954,6 +1977,7 @@ The exercises below are more theoretical.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/edb07654-fb52-4049-af08-e6333fd2d96e?id=83377
 :label: grasple_exercise_4_2_22
 :dropdown:
@@ -1962,6 +1986,7 @@ The exercises below are more theoretical.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/af70726a-1610-4515-8f43-c11e109ca5cd?id=83396
 :label: grasple_exercise_4_2_23
 :dropdown:
@@ -1970,6 +1995,7 @@ The exercises below are more theoretical.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/3a957728-2365-4e80-820b-2d0f9dcf6ec3?id=83399
 :label: grasple_exercise_4_2_24
 :dropdown:
@@ -1978,6 +2004,7 @@ The exercises below are more theoretical.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/429fda86-ad72-402d-ab47-58ae103b36fc?id=83402
 :label: grasple_exercise_4_2_25
 :dropdown:
@@ -1986,6 +2013,7 @@ The exercises below are more theoretical.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/608b1140-590f-468c-b704-eb922aa7fca4?id=83407
 :label: grasple_exercise_4_2_26
 :dropdown:
@@ -1994,6 +2022,7 @@ The exercises below are more theoretical.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/d88ce866-54b2-48aa-bfe2-26116c2c6c34?id=83404
 :label: grasple_exercise_4_2_27
 :dropdown:

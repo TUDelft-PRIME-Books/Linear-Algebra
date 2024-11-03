@@ -578,6 +578,7 @@ Then $TS(\vect{v})=AB\vect{v}=\vect{v}$ for any $\vect{v}$ in $\R^{n}$. The only
 ## Grasple Exercises
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/a5fcbee0-9af1-4596-b3d4-05dcdf7640b3?id=92235
 :label: grasple_exercise_3_5_1
 :dropdown:
@@ -586,6 +587,7 @@ Then $TS(\vect{v})=AB\vect{v}=\vect{v}$ for any $\vect{v}$ in $\R^{n}$. The only
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/ba7d83d3-c00a-4d8b-910e-84e6a12b28e4?id=92236
 :label: grasple_exercise_3_5_2
 :dropdown:
@@ -594,6 +596,7 @@ Then $TS(\vect{v})=AB\vect{v}=\vect{v}$ for any $\vect{v}$ in $\R^{n}$. The only
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/a92c3a97-1bf0-47dc-a549-c1130d053e33?id=92237
 :label: grasple_exercise_3_5_3
 :dropdown:
@@ -602,6 +605,7 @@ Then $TS(\vect{v})=AB\vect{v}=\vect{v}$ for any $\vect{v}$ in $\R^{n}$. The only
 ::::
 
 ::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/a18a8d11-11f0-4bce-96f9-39946d6543a9?id=92238
 :label: grasple_exercise_3_5_4
 :dropdown:

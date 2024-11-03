@@ -166,6 +166,7 @@ The four vectors from [iii.](#Item:LinInd:LinDepExin3D). Note that $\mathbf{w}_{
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/e7ff6fad-218f-4583-907f-514b3980698a?id=70195
 :label: grasple_exercise_2_5_txt1
 :dropdown:
@@ -174,6 +175,7 @@ The four vectors from [iii.](#Item:LinInd:LinDepExin3D). Note that $\mathbf{w}_{
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/96efb1e1-8994-4067-88b2-a24fb58c63cb?id=70196
 :label: grasple_exercise_2_5_txt2
 :dropdown:
@@ -182,6 +184,7 @@ The four vectors from [iii.](#Item:LinInd:LinDepExin3D). Note that $\mathbf{w}_{
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/956e2076-9232-4b43-aad9-ddbbf8252a71?id=70197
 :label: grasple_exercise_2_5_txt3
 :dropdown:
@@ -335,6 +338,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/4d23327b-93df-41b8-bc55-481e82ba28c0?id=70201
 :label: grasple_exercise_2_5_txt4
 :dropdown:
@@ -343,6 +347,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/cf7c40ff-3d18-4a98-9bc5-20a4ea263bb0?id=87417
 :label: grasple_exercise_2_5_txt5
 :dropdown:
@@ -512,6 +517,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ## Grasple Exercises
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/d40a884f-c356-4ba7-a777-92fd5f4fffcd?id=70202
 :label: grasple_exercise_2_5_1
 :dropdown:
@@ -520,6 +526,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/d40a884f-c356-4ba7-a777-92fd5f4fffcd?id=70202
 :label: grasple_exercise_2_5_2
 :dropdown:
@@ -528,6 +535,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/7341c27a-5482-4303-b20f-4a3965c99535?id=70209
 :label: grasple_exercise_2_5_3
 :dropdown:
@@ -536,6 +544,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/018f7ed5-d1ac-490b-add4-40568f525878?id=70213
 :label: grasple_exercise_2_5_4
 :dropdown:
@@ -544,6 +553,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c42855ae-f0af-4b52-9a89-fab0e1bdf877?id=87321
 :label: grasple_exercise_2_5_5
 :dropdown:
@@ -552,6 +562,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/d78332f6-0a0b-404a-973d-adc745782ab6?id=70204
 :label: grasple_exercise_2_5_6
 :dropdown:
@@ -560,6 +571,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9345f478-7f65-4239-a9ea-26929131f010?id=70205
 :label: grasple_exercise_2_5_7
 :dropdown:
@@ -568,6 +580,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9345f478-7f65-4239-a9ea-26929131f010?id=70205
 :label: grasple_exercise_2_5_8
 :dropdown:
@@ -576,6 +589,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/fce5512f-2e50-4973-8de1-d8d569e497b4?id=70208
 :label: grasple_exercise_2_5_9
 :dropdown:
@@ -584,6 +598,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/fce5512f-2e50-4973-8de1-d8d569e497b4?id=70208
 :label: grasple_exercise_2_5_11
 :dropdown:
@@ -592,6 +607,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/5cb7db99-e91c-4f82-94ce-e69c042e14af?id=70191
 :label: grasple_exercise_2_5_12
 :dropdown:
@@ -600,6 +616,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/4da2f0e7-eef3-4acc-baea-ac689bda49f3?id=87426
 :label: grasple_exercise_2_5_13
 :dropdown:
@@ -608,6 +625,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/cd594e68-f4b5-41fa-839e-139dd5a2c428?id=70198
 :label: grasple_exercise_2_5_14
 :dropdown:
@@ -616,6 +634,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/221b7ec2-e749-4528-9be9-ee6138e2f13d?id=70199
 :label: grasple_exercise_2_5_15
 :dropdown:
@@ -624,6 +643,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c277e508-cced-46f8-911f-4fb0dce4bd18?id=70200
 :label: grasple_exercise_2_5_16
 :dropdown:
@@ -632,6 +652,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/72bf1389-22c8-4588-8f73-4c7215b7cea4?id=70217
 :label: grasple_exercise_2_5_17
 :dropdown:
@@ -640,6 +661,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/85cbd7f9-9ab3-4e4a-9c19-152453ce0c52?id=68883
 :label: grasple_exercise_2_5_18
 :dropdown:
@@ -648,6 +670,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/b7fa29e0-5d17-4a74-b173-0219f69fb2a3?id=68884
 :label: grasple_exercise_2_5_19
 :dropdown:
@@ -656,6 +679,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/804d59bd-3813-484b-b0b9-f79a1d6921c2?id=87427
 :label: grasple_exercise_2_5_20
 :dropdown:
@@ -664,6 +688,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/5f21724d-6e37-456f-b661-3a7bfd83fb39?id=70219
 :label: grasple_exercise_2_5_21
 :dropdown:
@@ -672,6 +697,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/bcd13c4c-50e6-4c8c-be50-abd4ba71ef2f?id=70221
 :label: grasple_exercise_2_5_22
 :dropdown:
@@ -680,6 +706,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/274a9a74-5977-435e-8374-59e6f93c1262?id=70194
 :label: grasple_exercise_2_5_23
 :dropdown:
@@ -688,6 +715,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c395902a-87aa-4858-915b-7ddc5513cb85?id=87398
 :label: grasple_exercise_2_5_24
 :dropdown:
@@ -695,6 +723,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/8f89db8f-777f-4f11-9e09-23ddacf7a08d?id=87428
 :label: grasple_exercise_2_5_25
 :dropdown:
@@ -703,6 +732,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/43810ef4-d9c7-4097-8d05-f91dd67bbb43?id=68868
 :label: grasple_exercise_2_5_26
 :dropdown:

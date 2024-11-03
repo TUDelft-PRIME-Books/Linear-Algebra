@@ -409,6 +409,7 @@ $$
 ## Grasple Exercises
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/bc898154-3f5e-45bd-8993-28a74bf34b5f?id=70278
 :label: grasple_exercise_3_2_1
 :dropdown:
@@ -417,6 +418,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/bf170c2b-127b-4ce7-bd75-c9c9bdfb12f9?id=70277
 :label: grasple_exercise_3_2_2
 :dropdown:
@@ -425,6 +427,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/dd83bd83-0ce4-4dd7-84de-3472c24acbc0?id=70279
 :label: grasple_exercise_3_2_3
 :dropdown:
@@ -433,6 +436,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/3e5f0674-1e9f-4349-867f-6b1d638e744b?id=82934
 :label: grasple_exercise_3_2_4
 :dropdown:
@@ -441,6 +445,7 @@ $$
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/52a8c0e8-09e8-4c46-aa43-0cee2a93e7c4?id=82931
 :label: grasple_exercise_3_2_5
 :dropdown:
@@ -1561,6 +1566,7 @@ We will dedicate {numref}`Sec:MatrixInv` to this topic.
 ## Grasple Exercises
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/262bcea8-548b-45c2-8c37-b4cb3cb03ddc?id=70281
 :label: grasple_exercise_3_2_6
 :dropdown:
@@ -1569,6 +1575,7 @@ We will dedicate {numref}`Sec:MatrixInv` to this topic.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/718bda8a-9e75-495a-8aea-506788d46432?id=70282
 :label: grasple_exercise_3_2_7
 :dropdown:
@@ -1577,6 +1584,7 @@ We will dedicate {numref}`Sec:MatrixInv` to this topic.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/e5799b3f-53f6-4095-bb96-bc2f4febde30?id=70284
 :label: grasple_exercise_3_2_8
 :dropdown:
@@ -1585,6 +1593,7 @@ We will dedicate {numref}`Sec:MatrixInv` to this topic.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9d1526f4-777b-4a41-8b8e-c0746f7503c9?id=70285
 :label: grasple_exercise_3_2_9
 :dropdown:
@@ -1593,6 +1602,7 @@ We will dedicate {numref}`Sec:MatrixInv` to this topic.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/d03c79a5-4936-41ae-8129-96ea9dee875a?id=82963
 :label: grasple_exercise_3_2_10
 :dropdown:
@@ -1601,6 +1611,7 @@ We will dedicate {numref}`Sec:MatrixInv` to this topic.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9fd59a3b-bdc6-42c5-af90-da9b0541437b?id=70291
 :label: grasple_exercise_3_2_11
 :dropdown:
@@ -1609,6 +1620,7 @@ We will dedicate {numref}`Sec:MatrixInv` to this topic.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/6e4d152b-1eae-480b-a40c-ca8846ed6612?id=70286
 :label: grasple_exercise_3_2_12
 :dropdown:
@@ -1617,6 +1629,7 @@ We will dedicate {numref}`Sec:MatrixInv` to this topic.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/65f960ef-01a1-4c81-b053-8c93c66504db?id=70287
 :label: grasple_exercise_3_2_13
 :dropdown:
@@ -1625,6 +1638,7 @@ We will dedicate {numref}`Sec:MatrixInv` to this topic.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/d2ccfcf5-7aaf-4859-8219-392abad68e79?id=82853
 :label: grasple_exercise_3_2_14
 :dropdown:
@@ -1633,6 +1647,7 @@ We will dedicate {numref}`Sec:MatrixInv` to this topic.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/2fc08e2c-b3ad-4a2b-8077-ce66abc466d7?id=82936
 :label: grasple_exercise_3_2_15
 :dropdown:
@@ -1641,6 +1656,7 @@ We will dedicate {numref}`Sec:MatrixInv` to this topic.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/6bd96baf-1862-40c7-a21d-24c1dada9078?id=82937
 :label: grasple_exercise_3_2_16
 :dropdown:
@@ -1651,6 +1667,7 @@ We will dedicate {numref}`Sec:MatrixInv` to this topic.
 The remaining exercises are less of a compuational character.
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/786324ef-8706-4f4d-ac06-f6b4360a70d8?id=69285
 :label: grasple_exercise_3_2_17
 :dropdown:
@@ -1659,6 +1676,7 @@ The remaining exercises are less of a compuational character.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/14b6af51-de5f-4e6c-bfb8-20a018fce053?id=69458
 :label: grasple_exercise_3_2_18
 :dropdown:
@@ -1667,6 +1685,7 @@ The remaining exercises are less of a compuational character.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/cdb5014d-eace-489e-9616-45e03bb6e95e?id=69295
 :label: grasple_exercise_3_2_19
 :dropdown:
@@ -1675,6 +1694,7 @@ The remaining exercises are less of a compuational character.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/7f91a5d2-e1c9-422e-b0f9-ba0b22936e2a?id=69456
 :label: grasple_exercise_3_2_20
 :dropdown:
@@ -1683,6 +1703,7 @@ The remaining exercises are less of a compuational character.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/78c129ac-644d-4fbd-bf47-c2283d0e1f7a?id=69460
 :label: grasple_exercise_3_2_21
 :dropdown:
@@ -1691,6 +1712,7 @@ The remaining exercises are less of a compuational character.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9fe5f92d-54f9-4794-a2e8-c21a24a5a8cf?id=70288
 :label: grasple_exercise_3_2_22
 :dropdown:
@@ -1699,6 +1721,7 @@ The remaining exercises are less of a compuational character.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/bbed8637-4110-4e90-a1dc-a5960a405caf?id=70289
 :label: grasple_exercise_3_2_23
 :dropdown:
@@ -1707,6 +1730,7 @@ The remaining exercises are less of a compuational character.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/eb4b9e6e-0436-466c-bb1f-7e596b43ec34?id=70290
 :label: grasple_exercise_3_2_24
 :dropdown:
@@ -1715,6 +1739,7 @@ The remaining exercises are less of a compuational character.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/deea79ca-ba41-46fc-b75b-4cd109fc0513?id=71118
 :label: grasple_exercise_3_2_25
 :dropdown:
@@ -1723,6 +1748,7 @@ The remaining exercises are less of a compuational character.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/0b27fa70-e097-4090-b57e-7225019a4624?id=78589
 :label: grasple_exercise_3_2_26
 :dropdown:
@@ -1731,6 +1757,7 @@ The remaining exercises are less of a compuational character.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/958761d7-421f-40f1-b3be-3535bf71422b?id=82968
 :label: grasple_exercise_3_2_27
 :dropdown:

@@ -171,6 +171,7 @@ which is the solution to our original system. Since the factorisation was given,
 Here is one to try for yourself.
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/b9a339dc-721f-4c85-aa77-3455269a3b7a?id=105809
 :label: grasple_exercise_3_6_1T
 :dropdown:
@@ -1400,6 +1401,7 @@ To be filled in later.
 ## Grasple Exercises
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/cca386f8-a6ff-44b6-9b83-fe96482a4763?id=108857
 :label: grasple_exercise_3_6_2
 :dropdown:
@@ -1408,6 +1410,7 @@ To be filled in later.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/4ef9b6fe-e204-44e7-9463-3e1c3537a10b?id=82913
 :label: grasple_exercise_3_6_3
 :dropdown:
@@ -1416,6 +1419,7 @@ To be filled in later.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/b167deea-922f-4a80-9b3e-7cbdf16f023f?id=106332
 :label: grasple_exercise_3_6_4
 :dropdown:
@@ -1425,6 +1429,7 @@ To be filled in later.
 
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9708bce4-5c01-4486-8f44-7ea3a5157950?id=82914
 :label: grasple_exercise_3_6_5
 :dropdown:
@@ -1434,6 +1439,7 @@ To be filled in later.
 
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/d7ec03b4-32c4-4c3e-8c1e-2714878ef558?id=82917
 :label: grasple_exercise_3_6_6
 :dropdown:
@@ -1443,6 +1449,7 @@ To be filled in later.
 
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9cbcf004-bfbe-428f-927f-5c64ca802946?id=82919
 :label: grasple_exercise_3_6_7
 :dropdown:
@@ -1451,6 +1458,7 @@ To be filled in later.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/8fe1ca5c-3f24-4148-9725-a96c44e3f43a?id=82920
 :label: grasple_exercise_3_6_8
 :dropdown:
@@ -1459,6 +1467,7 @@ To be filled in later.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/7d8c3553-18cd-4866-bfa1-9ff273ee18e8?id=82925
 :label: grasple_exercise_3_6_9
 :dropdown:
@@ -1467,6 +1476,7 @@ To be filled in later.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/5bb6dcac-4575-4953-bb3a-c0e8d4594798?id=82928
 :label: grasple_exercise_3_6_10
 :dropdown:
@@ -1475,6 +1485,7 @@ To be filled in later.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9a2cb913-3462-4832-8e33-9f4b878f1da7?id=106804
 :label: grasple_exercise_3_6_11
 :dropdown:
@@ -1483,6 +1494,7 @@ To be filled in later.
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/48ef4fa5-cdcf-4449-8c5a-0d5f5d448025?id=106870
 :label: grasple_exercise_3_6_12
 :dropdown:

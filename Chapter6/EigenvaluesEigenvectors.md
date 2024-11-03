@@ -300,6 +300,7 @@ Moreover, these non-trivial solutions are exactly the corresponding eigenvectors
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/0a053b62-1e2c-4994-93eb-10e8f99a88dc?id=93701
 :label: grasple_exercise_6_1_T1
 :dropdown:
@@ -537,6 +538,7 @@ This is a matrix of rank 2, and $\begin{bmatrix} 1  \\1\\1 \end{bmatrix}$ can be
 ::::::
 
 ::::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/363143ee-08c2-4905-9801-474ed10f59e9?id=93697
 :label: grasple_exercise_6_1_T2
 :dropdown:
@@ -796,6 +798,7 @@ In a later section we will study matrices $A$ for which such a basis of eigenvec
 ## Grasple Exercises 
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c99f6e1b-cec6-4be8-828f-7f93fde00a3b?id=91537
 :label: grasple_exercise_6_1_1
 :dropdown:
@@ -805,6 +808,7 @@ In a later section we will study matrices $A$ for which such a basis of eigenvec
 
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/d858b381-992c-4af3-972d-62a39c4b7a09?id=91538
 :label: grasple_exercise_6_1_2
 :dropdown:
@@ -813,6 +817,7 @@ In a later section we will study matrices $A$ for which such a basis of eigenvec
 ::::::
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/51a282db-b59f-4bd3-b4b8-fa1f38e402cc?id=91539
 :label: grasple_exercise_6_1_3
 :dropdown:
@@ -821,6 +826,7 @@ In a later section we will study matrices $A$ for which such a basis of eigenvec
 ::::::
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/fcb91395-9bf7-4fbe-8cb5-100e2c2ad010?id=91540
 :label: grasple_exercise_6_1_4
 :dropdown:
@@ -829,6 +835,7 @@ In a later section we will study matrices $A$ for which such a basis of eigenvec
 ::::::
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/860849b2-5787-47d1-9ae8-a663123a86d6?id=91541
 :label: grasple_exercise_6_1_5
 :dropdown:
@@ -837,6 +844,7 @@ In a later section we will study matrices $A$ for which such a basis of eigenvec
 ::::::
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/fa1470cd-81c9-4926-a8a4-587939f4d891?id=91542
 :label: grasple_exercise_6_1_6
 :dropdown:
@@ -845,6 +853,7 @@ In a later section we will study matrices $A$ for which such a basis of eigenvec
 ::::::
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/2faed848-2a76-4853-a998-4167399c1f68?id=91543
 :label: grasple_exercise_6_1_7
 :dropdown:
@@ -853,6 +862,7 @@ In a later section we will study matrices $A$ for which such a basis of eigenvec
 ::::::
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/bb20d21d-7eb6-4e3e-8104-05d276883162?id=91544
 :label: grasple_exercise_6_1_8
 :dropdown:
@@ -862,6 +872,7 @@ In a later section we will study matrices $A$ for which such a basis of eigenvec
 
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/79980409-fec9-4ab0-9fe1-d1a3d334bb0a?id=92492
 :label: grasple_exercise_6_1_9
 :dropdown:
@@ -870,6 +881,7 @@ In a later section we will study matrices $A$ for which such a basis of eigenvec
 ::::::
 
 ::::::{grasple} 
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/a467e69f-6a78-4595-a22f-5b68314c04d4?id=92494
 :label: grasple_exercise_6_1_10
 :dropdown:
