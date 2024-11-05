@@ -567,20 +567,89 @@ We know that $A$ is orthogonal if and only if $A^{T}A=I_{n}$. But this implies $
 
 ::::
 
+
+
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/825980e7-e25f-497e-a077-e009cedd55c4?id=87843
+:url: https://embed.grasple.com/exercises/d75f6fb9-c532-420e-8f54-0eafa066a7c1?id=108960
 :label: grasple_exercise_7_2_2
 :dropdown:
-:description: Projection formula with non-orthogonal basis.
+:description: Extending a vector in $\R^3$  to an orthogonal basis for $\R^3$.
 
 ::::
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/207ce8e6-6bea-4f43-bff4-8b7c3f9d0c11?id=108979
+:label: grasple_exercise_7_2_3
+:dropdown:
+:description: Extending a set of 2 orthogonal vectors in $\R^4$  to an orthogonal basis of $\R^4$. 
+
+::::
+
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/dab23aa3-6004-4ce6-a027-6c5e7c564102?id=109008
+:label: grasple_exercise_7_2_4
+:dropdown:
+:description:  Matrix of projection onto plane in $\R^3$ with an orthogonal basis
+::::
+
+
+
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/54d95c2b-d7a9-4bce-a11e-a70b0bc09d0a?id=109005
+:label: grasple_exercise_7_2_5
+:dropdown:
+:description:  Projection onto a 2-dimensional subspace of $\R^4$ with orthogonal basis
+
+::::
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/694b757f-b2a0-449b-806f-624fe9e78a6c?id=109007
+:label: grasple_exercise_7_2_6
+:dropdown:
+:description: Projection onto the null space of a matrix
+
+::::
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/c443c628-427c-4ba6-a55b-d7fd0a562904?id=87842
+:label: grasple_exercise_7_2_7
+:dropdown:
+:description: Projection formula in case of a non-orthogonal basis?
+
+::::
+
+
 
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c815026e-df41-461c-b0dc-0b06a387d0c9?id=91876
-:label: grasple_exercise_7_2_3
+:label: grasple_exercise_7_2_8
 :dropdown:
-:description: Alternative definition of orthogonal matrix.
+:description: Alternative definition of an orthogonal matrix?
+
+::::
+
+
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/3b34a2bb-8a8a-4174-829a-85aa44e9d53d?id=109002
+:label: grasple_exercise_7_2_9
+:dropdown:
+:description: Ponderings about orthogonal matrices
 
 ::::

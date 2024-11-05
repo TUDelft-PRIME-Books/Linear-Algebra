@@ -1459,7 +1459,7 @@ The remaining exercises tend to be more theoretic.
 
 ::::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/045cd1
+:url: https://embed.grasple.com/exercises/045cd183-ab19-4675-908c-26c41298bade?id=83051
 :label: grasple_exercise_3_4_3
 :dropdown:
 :description: To compute the inverse of a $2 \times 2$ matrix.
