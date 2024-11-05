@@ -1333,7 +1333,7 @@ $$
 ## Grasple Exercises
 
 %::::::{grasple}
-:iframeclass: dark-light
+%:iframeclass: dark-light
 %:url: https://embed.grasple.com/exercises/97a589a8-54f9-4688-bd4d-a17a9585813b?id=69465
 %:label: grasple_exercise_3_1_1
 %:dropdown:
