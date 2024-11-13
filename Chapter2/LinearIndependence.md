@@ -131,12 +131,14 @@ $$
 
 but now the subset $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{4}\right\rbrace$ is a linearly dependent subset of $S$. On the other hand, the subsets $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{2}\right\rbrace$ and $\left\lbrace\mathbf{v}_{2},\mathbf{v}_{4}\right\rbrace$ are linearly independent.
 
-::::{figure} Images/Fig-LinInd-Examplein2D.svg
+```{applet}
+:url: linear_independence/linind_example_in_2d
+:fig: Images/Fig-LinInd-Examplein2D.svg
 :name: Fig:LinInd:Examplein2D
 :class: dark-light
 
 The vectors from [i.](#Item:LinInd:LinDepExin2D) on the left and from [ii.](#Item:LinInd:LinDepandIndDepExin2D) on the right. On the left, there is no vector which is a multiple of another vector, so every set of two vectors is linearly independent. On the right this is not the case. The vectors $\mathbf{v}_{1}$ and $\mathbf{v}_{4}$ are multiples of each other and therefore $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{4}\right\rbrace$ is linearly dependent.
-::::
+```
 
 </li>
 <li id="Item:LinInd:LinDepExin3D">
@@ -153,12 +155,14 @@ $$
 
 The set $\left\lbrace\mathbf{w}_{1},\mathbf{w}_{2},\mathbf{w}_{3}\right\rbrace$ is linearly dependent. The set $\left\lbrace\mathbf{w}_{1},\mathbf{w}_{2},\mathbf{w}_{4}\right\rbrace$, however, is not. This is illustrated in {numref}`Figure %s <Fig:LinInd:Examplein3D>`.
 
-::::{figure} Images/Fig-LinInd-Examplein3D.svg
+```{applet}
+:url: linear_independence/linind_example_in_3d
+:fig: Images/Fig-LinInd-Examplein3D.svg
 :name: Fig:LinInd:Examplein3D
 :class: dark-light
 
 The four vectors from [iii.](#Item:LinInd:LinDepExin3D). Note that $\mathbf{w}_{3}$ lies in the plane spanned by $\mathbf{w}_{1}$ and $\mathbf{w}_{2}$ but $\mathbf{w}_{4}$ does not. This means that $\left\lbrace\mathbf{w}_{1},\mathbf{w}_{2},\mathbf{w}_{3}\right\rbrace$ is linearly dependent but $\left\lbrace\mathbf{w}_{1},\mathbf{w}_{2},\mathbf{w}_{4}\right\rbrace$ is not.
-::::
+```
 
 </li>
 </ol>

@@ -90,7 +90,7 @@ $$
 There are no free variables, so if there is a solution to the system $A\vect{x}=\vect{v}$ (which, in this case, is true for all $\vect{v}$) it will be unique. This means that there is only one $\mathbf{x}$ with $T(\mathbf{x})=A\mathbf{x}=\mathbf{u}$, hence $T$ is injective.
 
 ```{applet}
-:url: injectivity_and_surjectivity/injsurj-injex
+:url: injectivity_and_surjectivity/injsurj-injex-example3
 :fig: Images/Fig-InjSurj-InjEx.svg
 :name: Fig:InjSurj:InjEx
 :class: dark-light
