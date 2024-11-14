@@ -133,14 +133,18 @@ has, when it is consistent, a unique solution as there are no free variables.
 
 ::::::
 
+::::{exercise}
+
 ```{applet}
 :url: injectivity_and_surjectivity/injsurj-injex-example
 :fig: Images/Fig-InjSurj-InjEx.svg
 :name: Fig:InjSurj:InjExExample
 :class: dark-light
 
-TODO: with call to action
+ You can select any of three transformations using the dropdown menu on the bottom. Find out which of these are injective by seeing whether you can find vectors $\vect{v}_{1}\neq \vect{v}_{2}$ that have the same image under $T$ by dragging the vectors on the left.
 ```
+
+::::
 
 If we perform two actions which can both be undone, then we should be able to undo the combination of those two actions. That this intuitive rule really does hold is essentially the content of {prf:ref}`Prop:InjSurj:InjafterInjisInj`.
 
@@ -179,14 +183,6 @@ Note that $S$ is injective by {prf:ref}`Ex:InjSurj:InjEx` [iii.](#Item:InjSurj:I
 
 ::::::
 
-```{applet}
-:url: injectivity_and_surjectivity/injsurj-injex-example2
-:fig: Images/Fig-InjSurj-InjEx.svg
-:name: Fig:InjSurj:InjExExample
-:class: dark-light
-
-TODO: with call to action
-```
 
 ::::::{prf:proposition}
 :label: Prop:InjSurj:CompInjFirstInj
@@ -358,6 +354,20 @@ The transformation $T$ from {prf:ref}`Ex:InjSurj:SurjEx` [ii.](#Item:InjSurj:Sur
 ```
 
 ::::::
+
+
+::::{exercise}
+
+```{applet}
+:url: injectivity_and_surjectivity/injsurj-injex-example2
+:fig: Images/Fig-InjSurj-InjEx.svg
+:name: Fig:InjSurj:InjExExample
+:class: dark-light
+
+ You can select any of three transformations using the dropdown menu on the bottom. Find out for which of these $\vect{u}$ is in the range of $T$ by dragging the vector on the left.
+```
+
+::::
 
 ::::::{prf:proposition}
 :label: Prop:InjSurj:SurjafterSurjisSurj

@@ -30,10 +30,10 @@ x_{1}&+&x_{2}&+&x_{3}&=&0
 
 :::
 
-If we apply {prf:ref}`Alg:LinSystems:ElimMethod`, we find that we can take $x_{3}$ as a free variable. So for every $t$ in $\mathbb{R}$ we can put $x_{3}=t$ and find a solution: $x_{1}=-4t$, $x_{2}=3t$, $x_{3}=t$. The solution set $S$ of our linear system can therefore be written in the following way:
+If we apply {prf:ref}`Alg:LinSystems:ElimMethod`, we find that we can take $x_{3}$ as a free variable. So for every $t$ in $\mathbb{R}$ we can put $x_{3}=t$ and find a solution: $x_{1}=-4t$, $x_{2}=3t$, $x_{3}=t$. The solution set $\mathcal{L}_{1}$ of our linear system can therefore be written in the following way:
 
 $$
-     S=\left\{\begin{bmatrix}-4t\\3t\\t\end{bmatrix}\mid t\in\mathbb{R}\right\}=
+     \mathcal{L}_{1}=\left\{\begin{bmatrix}-4t\\3t\\t\end{bmatrix}\mid t\in\mathbb{R}\right\}=
      \left\{t
 \begin{bmatrix}-4\\3\\1\end{bmatrix}\mid t\in\mathbb{R}\right\}.
 $$
@@ -60,10 +60,10 @@ Consider the system
 :::
 
 for some $a\in\mathbb{R}$. Compared to {prf:ref}`Example:SolSet:TwoLinesinR3`, the only difference is that the right-hand side of the first equation is now $a$
-instead of $0$. Applying the same algorithm as there, we find again that $x_{3}$ is free. So for every $t$ in $\mathbb{R}$ we can put $x_{3}=t$ and find a solution: $x_{1}=-4t-a$, $x_{2}=3t+a$, $x_{3}=t$. The solution set $S$ can therefore be written as follows:
+instead of $0$. Applying the same algorithm as there, we find again that $x_{3}$ is free. So for every $t$ in $\mathbb{R}$ we can put $x_{3}=t$ and find a solution: $x_{1}=-4t-a$, $x_{2}=3t+a$, $x_{3}=t$. The solution set $\mathcal{L}_{2}$ can therefore be written as follows:
 
 $$
-    S=\left\{\begin{bmatrix}-4t-a\\3t+a\\t\end{bmatrix}\mid t\in\mathbb{R}\right\}=
+    \mathcal{L}_{2}=\left\{\begin{bmatrix}-4t-a\\3t+a\\t\end{bmatrix}\mid t\in\mathbb{R}\right\}=
     \left\{\begin{bmatrix}
         -a\\a\\0
     \end{bmatrix}
@@ -136,7 +136,7 @@ Consider the following linear system:
 We find two free variables and the following solution set:
 
 $$
-    \left\{\begin{bmatrix}-3s+t\\s\\t\end{bmatrix}\mid s,t\in\mathbb{R}\right\}=
+    \mathcal{P}_{1}=\left\{\begin{bmatrix}-3s+t\\s\\t\end{bmatrix}\mid s,t\in\mathbb{R}\right\}=
     \left\{s
 \begin{bmatrix}-3\\1\\0\end{bmatrix}
     +t
@@ -157,7 +157,7 @@ What happens if we make the constant terms non-zero? Let us change the right han
 The solution set now becomes
 
 $$
-\left\{\begin{bmatrix}-3s+t+a\\s\\t\end{bmatrix}\mid s,t\in\mathbb{R}\right\}=\left\{
+\mathcal{P}_{2}=\left\{\begin{bmatrix}-3s+t+a\\s\\t\end{bmatrix}\mid s,t\in\mathbb{R}\right\}=\left\{
 \begin{bmatrix}a\\0\\0\end{bmatrix}
 +s
 \begin{bmatrix}-3\\1\\0\end{bmatrix}+

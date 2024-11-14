@@ -501,7 +501,7 @@ may seem counterintuitive to you. The following example illustrates a situation 
 :label: Ex:PerpendicularLine
 
 Let $\mathbf{n}$ be any nonzero vector in the plane.
-The set of vectors that are orthogonal to $\mathbf{n}$ all lie on a line through the origin. (See {numref}`Figure %s <Fig:InnerProduct:PerpendicularLine>`.) If we agree that $\mathbf{0}\perp\mathbf{n}$, it will be the whole line.
+The set of vectors that are orthogonal to $\mathbf{n}$ all lie on a line $\mathcal{L}$ through the origin. (See {numref}`Figure %s <Fig:InnerProduct:PerpendicularLine>`.) If we agree that $\mathbf{0}\perp\mathbf{n}$, it will be the whole line.
 The vector $\mathbf{n}$ is often said to be a _normal_ vector to the line.
 
 ```{applet}
@@ -510,7 +510,7 @@ The vector $\mathbf{n}$ is often said to be a _normal_ vector to the line.
 :name: Fig:InnerProduct:PerpendicularLine
 :class: dark-light
 
-Vectors orthogonal to a nonzero vector $\mathbf{n}$ in the plane.
+The line $\mathcal{L}$ of vectors orthogonal to a nonzero vector $\mathbf{n}$ in the plane.
 ```
 
 ::::
