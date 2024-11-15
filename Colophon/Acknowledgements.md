@@ -27,7 +27,7 @@ Below you can find a list of contributors to this book. The contributors are gro
 
 [R.C.M. (Rens) Dur BSc](https://www.linkedin.com/in/rensdur/)
 
-[B.E. (Beryl) van Gelderen BSc](https://www.linkedin.com/in/berylvg/)
+[B.E. (Beryl) van Gelderen MSc](https://www.linkedin.com/in/berylvg/)
 
 [P.F. (Pauline) Hengst](https://www.linkedin.com/in/p-hengst/)
 
