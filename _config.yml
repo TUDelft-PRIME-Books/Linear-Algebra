@@ -118,6 +118,7 @@ sphinx:
     - sphinx_exercise
     - teachbooks_sphinx_grasple
     - sphinx.ext.imgconverter
+    - sphinx_tudelft_theme
 
 latex:
   latex_engine: pdflatex
