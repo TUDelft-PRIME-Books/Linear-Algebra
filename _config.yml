@@ -116,7 +116,7 @@ sphinx:
     - sphinx_proof
     - sphinx_togglebutton
     - sphinx_exercise
-    - sphinx_grasple
+    - teachbooks_sphinx_grasple
     - sphinx.ext.imgconverter
 
 latex:

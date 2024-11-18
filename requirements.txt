@@ -7,3 +7,4 @@ sphinx-proof
 sphinx-exercise
 TexSoup
 sphinx-book-theme==1.1.0
+teachbooks-sphinx-grasple
