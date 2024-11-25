@@ -9,3 +9,4 @@ TexSoup
 sphinx-book-theme==1.1.0
 teachbooks-sphinx-grasple
 sphinx-tudelft-theme
+teachbooks-sphinx-tippy

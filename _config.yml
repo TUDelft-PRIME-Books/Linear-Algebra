@@ -119,7 +119,8 @@ sphinx:
     - teachbooks_sphinx_grasple
     - sphinx.ext.imgconverter
     - sphinx_tudelft_theme
-
+    - teachbooks_sphinx_tippy
+    
 latex:
   latex_engine: pdflatex
   use_jupyterbook_latex: true
