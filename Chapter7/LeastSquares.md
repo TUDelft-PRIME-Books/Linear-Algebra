@@ -130,7 +130,7 @@ Consider the linear system $A\vect{x} = \vect{b}$, with
 
 $$
 A = \left[\begin{array}{ccc}
-         1 & 2 & 1  \\ 2 & 1 & 1  \\ 3 & 2 & 1 \\ 2 & 1 & 3
+         1 & 2 & 1  \\ 2 & 1 & 1  \\ 3 & 2 & 4 \\ 2 & 1 & 3
        \end{array}\right], \quad \vect{b} =
        \left[\begin{array}{c}  20 \\ 20 \\ 40 \\ 30 \end{array}\right].
 $$
@@ -139,7 +139,7 @@ For the trial solution $x_1 = 5, x_2 = 4, x_3 = 5$, the error vector and its nor
 
 $$
   \vect{v} = \left[\begin{array}{ccc}
-         1 & 2 & 1  \\ 2 & 1 & 1  \\ 3 & 2 & 1 \\ 2 & 1 & 3
+         1 & 2 & 1  \\ 2 & 1 & 1  \\ 3 & 2 & 4 \\ 2 & 1 & 3
        \end{array}\right] \left[\begin{array}{c}  5 \\ 4 \\ 5 \end{array}\right] - \left[\begin{array}{c}  20 \\ 20 \\ 40 \\ 30 \end{array}\right]
        =  \left[\begin{array}{c}  18 \\ 19 \\ 43 \\  29 \end{array}\right] - \left[\begin{array}{c}  20 \\ 20 \\ 40 \\ 30 \end{array}\right] =
        \left[\begin{array}{c}  -2  \\ -1 \\ 3 \\ -1 \end{array}\right]

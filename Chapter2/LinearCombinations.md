@@ -321,7 +321,7 @@ The vector $\mathbf{v}$ can be written as
 \begin{bmatrix} 1 \\ 0 \\ \vdots \\ 0 \end{bmatrix}+a_2
 \begin{bmatrix} 0 \\ 1 \\ \vdots \\ 0 \end{bmatrix}+ \ldots a_n
 \begin{bmatrix} 0 \\ 0 \\ \vdots \\ 1 \end{bmatrix} \\
-&= a_n\mathbf{e}\_1+a_2\mathbf{v}\_2+\ldots +a_n\mathbf{e}\_n.
+&= a_n\mathbf{e}_1+a_2\mathbf{e}_2+\ldots +a_n\mathbf{e}_n.
 \end{align*}
 
 This means that $\mathbf{v}$ is in the span of $\mathbf{e}_1, \ldots, \mathbf{e}_n$.
