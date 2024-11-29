@@ -548,7 +548,7 @@ $$
             \vdots &  \vdots&  \ldots& & \ldots& \vdots    \\
              c_{i1} &  c_{i2}&  \cdots&\class{red}{c_{ij}} &\ldots&   c_{ip} \\
             \vdots &  \vdots&  \ldots& &\ldots& \vdots    \\
-            c_{m1} & c_{m2}&  \ldots&  c_{mn} &\ldots& c_{mp}
+            c_{m1} & c_{m2}&  \ldots&  c_{mj} &\ldots& c_{mp}
     \end{bmatrix}
   \end{array}
 
