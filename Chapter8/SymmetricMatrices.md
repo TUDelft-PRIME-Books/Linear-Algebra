@@ -99,29 +99,36 @@ $$
 They are $\lambda_1 = 2$ and $\lambda_2 = -3$.
 
 Corresponding eigenvectors are $\mathbf{v}_1 = \begin{bmatrix} 2\\1 \end{bmatrix}$ for $\lambda_1$, and
-$\mathbf{v}_2 = \begin{bmatrix} 1\\-2 \end{bmatrix}$.
+$\mathbf{v}_2 = \begin{bmatrix} -1\\2 \end{bmatrix}$.
 
 The eigenvectors are orthogonal,
 
 $$
-  \mathbf{v}_1 \ip \mathbf{v}_2 = \begin{bmatrix} 2\\1 \end{bmatrix}\ip \begin{bmatrix} 1\\-2 \end{bmatrix} = 2 - 2 = 0,
+  \mathbf{v}_1 \ip \mathbf{v}_2 = \begin{bmatrix} 2\\1 \end{bmatrix}\ip \begin{bmatrix} -1\\2 \end{bmatrix} = -2  +2  = 0,
 $$
 
 and $A$ can be diagonalized as
 
 $$
-   A = PDP^{-1} = \begin{bmatrix}2&1\\1&-2 \end{bmatrix}\begin{bmatrix}2 & 0\\0& -3 \end{bmatrix}
-   \begin{bmatrix}2&1\\1&-2 \end{bmatrix}^{-1}.
+   A = PDP^{-1} = \begin{bmatrix}2&-1\\1&2 \end{bmatrix}\begin{bmatrix}2 & 0\\0& -3 \end{bmatrix}
+   \begin{bmatrix}2&-1\\1&2 \end{bmatrix}^{-1}.
 $$
 
 In {numref}`Figure %s <Fig:SymmetricMat:Evectors>`
-the image of the unit circle under the transformation $\vect{x} \mapsto A\vect{x}$ is shown. $\vect{q}_1$ and $\vect{q}_2$ are two orthonormal unit eigenvectors.
+the image of the unit circle under the transformation $\vect{x} \mapsto A\vect{x}$ is shown.
+In the picture on the right,
+
+$$
+\vect{q}_1 = \frac{1}{\norm{\vect{v}_1}}\vect{v}_1 = \frac{1}{\sqrt{5}}\begin{bmatrix} 2\\1 \end{bmatrix}  \quad \text{and} \quad \vect{q}_2= \frac{1}{\norm{\vect{v}_2}}\vect{v}_2 = \frac{1}{\sqrt{5}}\begin{bmatrix} -1\\2 \end{bmatrix}
+$$
+
+ are two orthonormal unit eigenvectors.
 
 :::{figure} Images/Fig-SymmetricMat-Evectors.svg
 :name: Fig:SymmetricMat:Evectors
 :class: dark-light
 
-The transformation $T(\vect{x}) =  \begin{bmatrix} 1&2\\2&-2 \end{bmatrix}\vect{x}$.
+The transformation $T(\vect{x}) =  \begin{bmatrix} 1&2\\2&-2 \end{bmatrix}\vect{x}$. The vectors  $\vect{q}_1$ and $\vect{q}_2$ are two orthogonal vectors on the unit circle that are mapped onto multiples of themselves.
 :::
 
 

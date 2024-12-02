@@ -90,8 +90,8 @@ The  system  $A\vect{x} = \vect{b}$ of  {prf:ref}`Ex:LUdecomp:FirstLU` can be wr
 $$
 \begin{bmatrix}
 1 & 0 & 0 \\
-0 & 1 & 0 \\
--1 & 0 & 1
+2 & 1 & 0 \\
+1 & -1 & 1
 \end{bmatrix}
 \begin{bmatrix}
 1 & 1 & -1 \\
@@ -227,7 +227,7 @@ L=
 l_{21} & 1 \\
 l_{31} & l_{32} & \ddots  \\
 \vdots & \vdots & \ddots & \ddots\\
-l_{n1} & l_{n2} &  \cdots & l_{n(n-1)} & 1
+l_{n1} & l_{n2} &  \cdots & l_{n,n-1} & 1
 \end{bmatrix}
 ,
 \quad
@@ -243,6 +243,9 @@ u_{11} & u_{12} & u_{13} & \cdots &u_{1n} \\
 $$
 
 For convenience we have used blanks for zeros.
+
+Note that the condition of $1$s on the diagonal implies that the matrix $L$ is invertible.
+
 ::::::
 
 The next proposition captures the main interest of the $LU$ decomposition, as is already illustrated in 
@@ -258,7 +261,8 @@ Suppose that $A=LU$, so that the linear system of equations $A\mathbf{x}=\mathbf
 :enumerated: true
 :type: i
 
-\item Solve the system $L\mathbf{y}=\mathbf{b}$ and find $\mathbf{y}$.
+\item Solve the system $L\mathbf{y}=\mathbf{b}$ and find $\mathbf{y}$. <BR>
+      Note that this system has a unique solution.
 \item Solve the system $U\mathbf{x}=\mathbf{y}$ to find $\mathbf{x}$.
 
 :::
@@ -273,7 +277,7 @@ The next proposition tells us which matrices do have an $LU$ decomposition.
 ::::::{prf:proposition}
 :label: Prop:LUdecomp:Existence
 
-A matrix $A$ can be written as $A = LU$, with $L$ and $U$ as described in {prf:ref}`Def:LUdecomp:DefinitionLU`   if and only it can be row reduced to an echelon matrix with only additions of multiples of rows to rows below it. We will call this a *top-down row reduction*.
+A matrix $A$ can be written as $A = LU$, with $L$ and $U$ as described in {prf:ref}`Def:LUdecomp:DefinitionLU`   if and only if can be row reduced to an echelon matrix with only additions of multiples of rows to rows below it. We will call this a **top-down row reduction**.
 ::::::
 
 Instead of a giving a formal proof, we will illustrate matters first with an example.
@@ -430,8 +434,7 @@ $$
 ::::::
 
 
-Another look at  {prf:ref}`Ex:LUdecomp:SecondLU` explains why the detour via the matrices $F_i$ and the inverse of their product can be skipped, 
-as is expressed in the above algorithm.
+Another look at  {prf:ref}`Ex:LUdecomp:SecondLU` explains why the detour via the matrices $F_i$ and the inverse of their product can be skipped, as is expressed in the above algorithm.
 
 
 ::::::{prf:example}
@@ -441,10 +444,7 @@ For the matrix $A= \begin{bmatrix}
                     3 & 1 & -2 \\
                     2 & 4 & 1 \\
                     1 & 2 & 1
-                  \end{bmatrix}$.
-
-
-The 'trick' is not to work with the matrices $F_1$ and $F_2$, but with their inverses.
+                  \end{bmatrix}$, the same as in {prf:ref}`Ex:LUdecomp:SecondLU`, the 'trick' is not to work with the matrices $F_1$ and $F_2$, but with their inverses.
 
 The first row reduction step
 
@@ -597,14 +597,14 @@ $$
 {[R_3]} \\
 {[R_4-\class{green}{1/3}R_2]} \\
 \end{array} 
-\,\,=\,\,
+\,\,\sim\,\,
     \left[\begin{array}{rrrr}
             2 &  1 & -2 & 3 \\
             0 & -4 & -2 & 4 \\
             0 &  0 & -3 & 3 \\ 
             0 &  0 & 0 & -4
     \end{array} \right]
-\,\,\sim\,\, U.
+\,\,=\,\, U.
 $$
 
 Putting every multiplier in its right place gives 
@@ -627,7 +627,7 @@ $$
 For the matrix $A= \begin{bmatrix}
                     1 & 2 & 1 \\
                     4 & 8 & 6 \\
-                    2 & 5 & 4
+                    2 & 5 & 7
                   \end{bmatrix}$
 the procedure breaks down at the second step.
 
@@ -735,7 +735,7 @@ This is a lower triangular matrix with a $1$ on position $(k,k)$ and for the res
 Adding these $n$ column-row products gives a matrix of the required form.
 
 \item
-Next suppose that $A$ is an upper triangular matrix with $1$s on the diagonal.
+Next suppose that $A$ is an lower triangular matrix with $1$s on the diagonal.
 If we apply the algorithm of {prf:ref}`Prop:MatrixInv:Algorithm` to find the inverse using the augmented matrix 
 
 $$
@@ -744,7 +744,7 @@ $$
      1   &   0    &    0   & \cdots &   0  & 1 & 0 & 0 & \cdots & 0 \\
   a_{21} &   1    &    0   & \cdots &   0  & 0 & 1 & 0 & \cdots & 0 \\
   a_{31} & a_{32} &    1   & \cdots &   0  & 0 & 0 & 1 & \cdots & 0 \\
-  \vdots &\vdots  &        & \ddots &   0  & \vdots & \vdots & & \ddots & \vdots \\ 
+  \vdots &\vdots  &        & \ddots &   \vdots  & \vdots & \vdots & & \ddots & \vdots \\[1ex] 
   a_{n1} &a_{n2}  & a_{n3} & \cdots &   1  & 0 & 0 & 0 & \cdots & 1
   \end{array} \right],
 $$
@@ -765,7 +765,7 @@ that  {prf:ref}`Alg:LUdecomp:LUalgorithm`  works can have a look at the followin
 :::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LUdecomp:Existence`
 :class: myproof, dropdown
 
-Suppose $A$ is an $n\times n$ matrix that can be row reduced top down to an  echelon matrix $U$ matrix (which will then be an upper triangular). We can row reduce $A$ from top to bottom, where we use the same form as in {prf:ref}`Ex:LUdecomp:SecondLUSecondLook`. 
+Suppose $A$ is an $n\times n$ matrix that can be row reduced top down to an  echelon matrix $U$ (which will then be an upper triangular). We can row reduce $A$ from top to bottom, where we use the same form as in {prf:ref}`Ex:LUdecomp:SecondLUSecondLook`. 
 For instance the first two steps are
 
 
@@ -882,8 +882,8 @@ $$
   A =  LU = 
      \left[\begin{array}{rrrrr}
                     1       &        &  &  \\
-            \ell_{11}  &       1 &  &  \\
-            \ell_{21}   &  \ell_{32} & 1 &   \\ 
+            \ell_{21}  &       1 &  &  \\
+            \ell_{31}   &  \ell_{32} & 1 &   \\ 
             \vdots & \vdots & \vdots &  \ddots & \\ 
             \ell_{n1}   &  \ell_{n2}&  \ell_{n3} & \cdots & 1 \\ 
         \end{array} \right] \begin{bmatrix}
@@ -903,8 +903,8 @@ By {prf:ref}`Prop:LUdecomp:L-properties` the inverse of $L$ has the same structu
 $$
 \left[\begin{array}{rrrrr}
                     1       &        &  &  \\
-            \ell^{\ast}_{11}  &       1 &  &  \\
-            \ell^{\ast}_{21}   &  \ell^{\ast}_{32} & 1 &   \\ 
+            \ell^{\ast}_{21}  &       1 &  &  \\
+            \ell^{\ast}_{31}   &  \ell^{\ast}_{32} & 1 &   \\ 
             \vdots & \vdots & \vdots &  \ddots & \\ 
             \ell^{\ast}_{n1}   &  \ell^{\ast}_{n2}&  \ell^{\ast}_{n3} & \cdots & 1 \\ 
         \end{array} \right].
@@ -916,8 +916,8 @@ $$
   L_1L_2\cdots L_{n-1} =
   \left[\begin{array}{rrrrr}
                     1       &        &  &  \\
-            \ell^{\ast}_{11}  &       1 &  &  \\
-            \ell^{\ast}_{21}   &  0 & 1 &   \\ 
+            \ell^{\ast}_{21}  &       1 &  &  \\
+            \ell^{\ast}_{31}   &  0 & 1 &   \\ 
             \vdots & \vdots & \vdots &  \ddots & \\ 
             \ell^{\ast}_{n1}   &  0 &  0 & \cdots & 1 \\ 
         \end{array} \right]
@@ -934,7 +934,7 @@ $$
               0     &   1    &  &  &\\
               0     &   0    & 1 & &  \\ 
             \vdots  & \vdots & \vdots &  \ddots & \\ 
-              0     &   0 &  \cdots & \ell^{\ast}_{n-1,n} & 1 \\ 
+              0     &   0 &  \cdots & \ell^{\ast}_{n,n-1} & 1 \\ 
         \end{array} \right]           
 $$
 
@@ -976,7 +976,7 @@ $$
   L_1=L_2 \quad \text{and} \quad U_1 = U_2.
 $$
 
-Since $A$ is invertible, the matrices $L_1, L_2, U_1, U_2$ are also invertible. <BR>
+Since $A$ is invertible, the matrices $U_1, U_2$ are also invertible. (The matrices $L_1$ and $L_2$ are always invertible, c.f., {prf:ref}`Def:LUdecomp:DefinitionLU`.) <BR>
 From
 
 $$
@@ -1304,10 +1304,10 @@ Two $4\times 4$ permutation matrices are
 Note that for an arbitrary $4 \times 4$ matrix $A$ we have
 
 $$
-  P_1 A = \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ \class{blue}{0} & \class{blue}{0} & \class{blue}{0} & \class{blue}{1} \\ 0 & 0 & 1 & 0 
+  P_1 A = \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ \class{blue}{0} & \class{blue}{0} & \class{blue}{0} & \class{blue}{1} \\ \class{red}{0} & \class{red}{0} & \class{red}{1} & \class{red}{0} 
           \end{bmatrix}
         \begin{bmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\ a_{21} & a_{22} & a_{23} & a_{24} \\ 
-                        a_{31} & a_{32} & a_{33} & a_{34} \\ 
+                        \class{red}{a_{31}} & \class{red}{a_{32}} & \class{red}{a_{33}} & \class{red}{a_{34}} \\ 
                         \class{blue}{a_{41}} & \class{blue}{a_{42}} & 
                         \class{blue}{a_{43}} & \class{blue}{a_{44}}
           \end{bmatrix}   =
@@ -1357,7 +1357,7 @@ The following properties of permutation matrices come in handy.
 \item The product of two $n\times n$ permutation matrices is again a permutation matrix.
 \label{Item:Prop:LUdecomp:PermutationMatrices_Product}
 
-\item The inverse of a permutation matrix is its transpose.  Thus,  $P^{-1} = P^T$.
+\item The inverse of a permutation matrix is its transpose.  
 \label{Item:Prop:LUdecomp:PermutationMatrices__Inverse}
 
 :::
@@ -1433,7 +1433,7 @@ the result immediately follows.
 ::::::{prf:theorem} Existence of a $PLU$ Decomposition
 :label: LUDecomp:existencePLU
 
-Suppose that $A$ is an $m\times n$ matrix with real coefficients, and let $m \leq n$. Then there exist a permutation matrix $P$, an upper triangular matrix $L$ and an echelon matrix $U$ such that
+Suppose that $A$ is an $m\times n$ matrix with real coefficients, and let $m \leq n$. Then there exist a permutation matrix $P$, a lower triangular matrix $L$ and an echelon matrix $U$ such that
 
 $$ 
   PA = LU. 
@@ -1468,7 +1468,7 @@ $$
 {[R_3]} \\
 \end{array}
 \sim
-\left[\begin{array}{rrr}0&-2&-1 \\ 0 & 0 &\fbox{\frac32} \\ 1&3&2\end{array} \right],
+\left[\begin{array}{rrr}0&-2&-1 \\ 0 & 0 &\fbox{$\frac32$} \\ 1&3&2\end{array} \right],
 $$
 
 where we have put boxes at the pivot positions.
