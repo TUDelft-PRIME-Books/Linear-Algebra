@@ -901,7 +901,7 @@ We then have to show that $A$ can be *top-down* row reduced to an echelon matrix
 By {prf:ref}`Prop:LUdecomp:L-properties` the inverse of $L$ has the same structure as $L$, i.e.,
 
 $$
-\left[\begin{array}{rrrrr}
+L^{-1} = \left[\begin{array}{rrrrr}
                     1       &        &  &  \\
             \ell^{\ast}_{21}  &       1 &  &  \\
             \ell^{\ast}_{31}   &  \ell^{\ast}_{32} & 1 &   \\ 
@@ -1628,10 +1628,10 @@ To be filled in later.
 :description: To solve a system $A\vect{x} = \vect{b}$ using $ PA = LU$.
 
 ::::::
-
 ## Efficiency Issues
 
-One way to measure the performance of an algorithm is counting the number of arithmetic operations [^flopnote] that are necessary for solving a problem. By arithmetic operations we will take into account additions, multiplications and divisions. 
+One way to measure the performance of an algorithm is counting the number of arithmetic operations <!-- [^flopnote] -->
+that are necessary for solving a problem. By arithmetic operations we will take into account additions, multiplications and divisions. 
 
 Let us first compute this number when we solve the (square) linear system $A\mathbf{x}=\mathbf{b}$ by taking the augmented matrix $[ A | \vect{b}]$, find an echelon form and then use  backward substitution. Let us suppose that the matrix $A$ is invertible and possesses an $LU$ decomposition.
 
@@ -1816,6 +1816,116 @@ $10$ & $4,025$ & $1,565$ & $8,050$ & $2,515$ & $40,250$ & $10,115$ \\
 \end{tabular}
 
 :::::
+
+
+We will mention one other advantage the $LU$ decomposition may have, namely when the coefficient matrix $A$ is a **band matrix**. In that case it is much more efficient to work with the $LU$ decomposition than with the inverse.
+Such systems $A\vect{x} = \vect{b}$ for instance appear a when (partial) differential equations are solved via discretizations. It falls outside the scope of this textbook to go into the details, but we consider the special case of  **tridiagonal** matrices to illustrate once more the usefulness of the $LU$ decomposition.
+
+
+::::::{prf:definition}
+:label: Def:LUdecomp:Tridiag
+
+A **band matrix**  of **width** $d \geq 0$ is a matrix where only the entries  within a  distance $d$ from the diagonal are nonzero. So,  $a_{ij} = 0$  if  $|i-j|>d$. 
+A **tridiagonal** matrix  $A$  is a band matrix of width 1.
+
+::::::
+
+
+::::::{prf:example}
+:label: Ex:LUdecomp:Tridiag
+
+Three examples of band matrices are
+
+$$
+   A = \begin{bmatrix} 2 & 1 & 0 & 0 \\ 1 & 3 & 2 & 0\\ 0 & 2 & 5 & 4 \\ 0 & 0 & 6 & 5
+   \end{bmatrix}, \quad
+   B = \begin{bmatrix} 2 & 1 & 1 & 0 & 0 \\ 1 & 3 & 2 & 2 & 0\\ 1 & 2 & 1 & 4 & 3\\ 0 & 4  & 0 & 2 & 1 \\ 0 & 0 & 3 & 3 & 5
+   \end{bmatrix}
+   \quad \text{and}  \quad 
+   U = \begin{bmatrix}  1 & 1 & 0 & 0 \\ 0 & 2 & 2 & 0 \\ 0 & 0 & 3 & 4 \\ 0 & 0 & 0 & 5
+   \end{bmatrix}.
+$$
+
+$A$ is a tridiagonal matrix, matrix $B$ is a band matrix of width 2, and the third
+matrix is both upper triangular and tridiagonal.
+
+::::::
+
+::::::{prf:proposition}
+:label: Prop:LUdecomp:Tridiag
+
+
+Suppose $A$ is a band matrix of width $d$.  Then the matrices $L$ and $U$ of an $LU$ decomposition of $A$ (insofar this exists) are band matrices of width $d$ as well 
+
+::::::
+
+
+Now suppose we need to solve many linear systems  $A\vect{x} =\vect{b}_i$ where $A$ is an $n\times n$ tridiagonal matrix. We can compute $A^{-1}$ and solve the systems by computing the consecutive products $A^{-1}\vect{b}_i$, or we can find an $LU$ decomposition and use {prf:ref}`Alg:LUdecomp:Usefulness` to solve  $A\vect{x} =\vect{b}_i$.
+
+There are two reasons why it is advantageous to work with the $LU$ decomposition here.
+
+<ol>
+
+<li>
+
+To store $A^{-1}$ we need to store  $n^2$ numbers whereas to store $L$ and  $U$ only $4n-2$ memory places are asked for.  In fact, if we may assume that $L$ has ones on its diagonal, only $3n-2$ places are needed.  For large $n$ this is a significant gain.
+
+</li>
+
+<li>
+
+One product  $A^{-1}\vect{b}$ involves $n^2$  products of numbers and $n(n-1)$ additions, so the total  number of arithmetic operations equals  $2n^2 - n$.
+
+To solve 
+
+$$
+   L\vect{y} = \begin{bmatrix}
+                 1  \\
+                 \ell_{21} & 1 \\
+                 0 &\ell_{32} & 1 \\                
+                 0 & 0 & \ell_{32} & 1 \\[1ex]
+                 \vdots & \vdots &  & \ddots &  \\[1ex]
+                 0 & 0 & 0 & \cdots & \ell_{n,n-1} & 1
+             \end{bmatrix}
+             \begin{bmatrix}
+                y_1 \\ y_2 \\ y_3 \\ y_4 \\[1ex] 
+                \vdots \\[1ex]
+                y_n
+             \end{bmatrix}
+             = \begin{bmatrix}
+                b_1 \\ b_2 \\ b_3 \\ b_4 \\[1ex] 
+                \vdots \\[1ex]
+               b_n
+             \end{bmatrix}
+$$
+
+by forward substitution we  find one after another
+
+
+$$
+  \begin{array}{lcl}
+      y_1 &=& b_1 \\
+      y_2 &=& b_2 - \ell_{21}y_1 \\
+      y_3 &=& b_3 - \ell_{32}y_2 \\[1ex]
+       \vdots & & \quad \vdots \\[1ex]  
+      y_n &=& b_n - \ell_{n,n-1}y_{n-1} \\ 
+  \end{array}
+$$
+
+For all but the first row we need two operations per row, so in total $2(n-1)$ operations.
+
+Likewise, for solving $U\vect{x} = \vect{y}$ we need an extra division for each row, so the number of operations for backward substitution is $2(n-1)+n$, and the total number for the two phases becomes
+
+$$
+   2(n-1) + 2(n-1) + n = 5n-2.
+$$
+
+For large $n$ this is again much smaller than the $2n^2-n$ arithmetic operations in the computation of $A^{-1}\mathbf{b}$.
+
+</li>
+
+</ol>
+
 
 
 

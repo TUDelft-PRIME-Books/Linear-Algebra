@@ -153,28 +153,29 @@ Suppose $A$ is an $n\times n$ (real) diagonalizable matrix.
 Let $(\vect{v}_1, \ldots, \vect{v}_n)$ be a basis of eigenvectors, and let
 $\lambda_1, \ldots, \lambda_n$ be the corresponding eigenvalues.
 
-Then for each initial state $\vect{s}$,  which can be written as
+Each initial state $\vect{s}$ can be  written (in a unique way) as
 
 $$
   \vect{s} =  c_1\vect{v}_1 + c_2\vect{v}_2 +  \ldots + c_n\vect{v}_n,
 $$
 
-the general vector of the dynamical system
+for some constants (coefficients) $c_1, \ldots, c_n$ in $\R$.
+
+The general vector $\vect{x}_k$ of the dynamical system
 
 $$
   \vect{x}_{0} = \vect{s}, \quad  \vect{x}_{k+1} = A\vect{x}_k, \quad k = 0,1,2,\ldots
 $$
 
-is given by
+is then given by
 
 :::{math}
 :label: Eq:DynSystDiscrete:GenSolDiagble
 
-\vect{x}_k =  c_1\lambda_1^k\vect{v}_1 + c_2\lambda_2^k\vect{v}_2 +  \ldots + c_n\lambda_n^k\vect{v}_n,
+\vect{x}_k =  c_1\lambda_1^k\vect{v}_1 + c_2\lambda_2^k\vect{v}_2 +  \ldots + c_n\lambda_n^k\vect{v}_n.
 
 :::
 
-for some parameters $c_1, \ldots, c_n$ in $\R$.
 
 The expression for $\vect{x}_k$ with unspecified parameters $c_1,\ldots,c_n$ is often referred to as the **general solution** of the dynamical system.
 
@@ -189,11 +190,11 @@ Since $(\vect{v}_1, \ldots, \vect{v}_n)$ is assumed to be a basis, each vector $
 
 :::{math}
 :label: Eq:DynSystDiscrete:InitCoords
+for some constants  $c_1, \ldots, c_n$ in $\R$.
 
 \vect{s} =  c_1\vect{v}_1 + c_2\vect{v}_2 +  \ldots + c_n\vect{v}_n.
 :::
 
-for some constants (coefficients) $c_1, \ldots, c_n$ in $\R$.
 
 The vectors $\vect{v}_i$ being eigenvectors for the corresponding $\lambda_i$ means that
 
@@ -343,7 +344,7 @@ $$
       \end{array}\right].
 $$
 
-For starting vectors $\vect{s}$ with $s_2 \neq 0$ this will not be bounded.
+For starting vectors $\vect{s} = \begin{bmatrix} s_1 \\ s_2\end{bmatrix}$ with $s_2 \neq 0$,  this will not be bounded.
 
 ::::
 
@@ -366,7 +367,7 @@ $$
   \lambda_1 = 0.9606, \quad \lambda_{2,3} = -0.3806\pm0.7788i, \quad \lambda_4 = -0.0997.
 $$
 
-It appears that $|\lambda_{2,3}| = 0.8668 < 1$ too, thus the origin is a stable point here.
+Since $|\lambda_{2,3}| = 0.8668$ is smaller than 1 too,  the origin is a stable point.
 
 So, pity for the population, but it is doomed to die out.
 
@@ -748,7 +749,7 @@ etc.
 
 ::::
 
-The following example shows how the problem can be turned into a discrete dynamical system by a simple twist
+The following example shows how the problem can be turned into a discrete dynamical system by a simple twist.
 
 ::::{prf:example}
 :label: Ex:DynSystDiscrete:ToDynSystem
