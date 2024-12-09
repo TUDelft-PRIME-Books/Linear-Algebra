@@ -79,6 +79,9 @@ sphinx:
             \usepackage{tabularx}
             \usepackage{threeparttable}
     mathjax3_config: 
+      chtml: {
+        mtextInheritFont: true
+      }
       tex:
         inlineMath: [ ['$','$'], ['\(','\)'] ]
         displayMath: [ ['$$','$$'], ['\[','\]'] ]
