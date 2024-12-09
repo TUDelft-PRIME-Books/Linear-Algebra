@@ -351,7 +351,7 @@ It is easy to check that, as the notation suggests, $\vect{u}_{V}$ is in $V$ (si
 :url: https://embed.grasple.com/exercises/19e0688c-b00c-46c2-aad8-200a230687b9?id=91435
 :label: grasple_exercise_7_1_2
 :dropdown:
-:description: Find  the orthogonal complement of a vector $\vect{u}$ in $\R^3$ w.r.t. span$\{\vect{v}_1,\vect{v}_2\}$.
+:description: Find  the orthogonal decomposition of a vector $\vect{u}$ in $\R^4$ w.r.t. span$\{\vect{v}_1,\vect{v}_2\}$.
 
 ::::
 

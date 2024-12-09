@@ -531,7 +531,7 @@ $$
   AV_r = U_r\Sigma_{rr}, 
 $$
 
-where we introduced   $U_r, V_r$  for the matrices with only the first $r$ columns of $U$ and $V$, and $\Sigma_{rr}$ the  $r\times r$ diagonalmatrix with $\sigma_1, \ldots, \sigma_r$,  in that order, on the diagonal.
+where we introduced   $U_r, V_r$  for the matrices with only the first $r$ columns of $U$ and $V$, and $\Sigma_{rr}$ the  $r\times r$ diagonal matrix with $\sigma_1, \ldots, \sigma_r$,  in that order, on the diagonal.
 
 If $r<n$, which means that there are singular values equal to $0$  (equivalently, $\Rank{A} < n$ ), we can add the columns  $\vect{v}_{r+1}, \ldots, \vect{v}_n$ to $V_r$, and add $n-r$ zero columns to $\Sigma_{rr}$.  We denote the extended last matrix by $\Sigma_r$.
 We thus arrive at
@@ -611,7 +611,7 @@ $$
 
 Without a computer we would be stuck. How to find the zeros of this polynomial? However, we have come up with a *very*  special matrix $A$ here,
 for which the squares of all the singular values are  *integers*. (So in that sense, this is not a very representative example, and in general the
-computations will be even worse, not to say impossible.)  Here, the eigenvalues of $B^TB$ are given by  $\lambda_1 = 14, \lambda_2 = 7,
+computations will be even much worse.)  Here, the eigenvalues of $B^TB$ are given by  $\lambda_1 = 14, \lambda_2 = 7,
 \lambda_3 = 2$.  Which finishes step 2.
 
 Step 3  is straightforward:  $\Sigma = \begin{bmatrix}
@@ -753,7 +753,7 @@ Note that  $V$ maps $\vect{e}_1,\vect{e}_2$  to  $\vect{v}_1,\vect{v}_2$, &nbsp;
 
  
 We give the matrix an extra factor $\dfrac1{\sqrt{5}}$ to get a better picture.
-With the matrix as it was given, the stretching factors $3\sqrt{5}$ and $2\sqrt{5}$ would 'blow up'the unit circle too much too our taste. With this extra factor, the matrix
+With the matrix as it was given, the stretching factors $3\sqrt{5}$ and $2\sqrt{5}$ would 'blow up' the unit circle too much too our taste. With this extra factor, the matrix
 
 $$
    \tilde{A} = \frac{1}{\sqrt{5}} \begin{bmatrix} 5 & 2 \\ 2 & 8 \end{bmatrix}

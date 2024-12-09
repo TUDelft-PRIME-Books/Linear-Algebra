@@ -436,7 +436,7 @@ Two vectors $\mathbf{v}$ and $\mathbf{w}$ in $\mathbb{R}^n$ are called **orthogo
 :::{prf:example}
 :label: Ex:InnerProduct:CheckVectorsOrthogonal
 
-Let $\mathbf{u} = \begin{bmatrix} 1\\2\\-1\\-1\end{bmatrix}$, $\mathbf{v} = \begin{bmatrix} 3\\-1\\2\\-1\end{bmatrix}$ and
+Let &nbsp; $\mathbf{u} = \begin{bmatrix} 1\\2\\-1\\-1\end{bmatrix}$, &nbsp; $\mathbf{v} = \begin{bmatrix} 3\\-1\\2\\-1\end{bmatrix}$ &nbsp; and &nbsp;
 $\mathbf{w} = \begin{bmatrix} 2\\2\\-1\\2\end{bmatrix}$.
 
 We compute
