@@ -346,6 +346,7 @@ It is easy to check that, as the notation suggests, $\vect{u}_{V}$ is in $V$ (si
 
 ::::
 
+
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/f216b122-e2f3-4cd4-9268-7a814e12cec3?id=91429

@@ -560,19 +560,27 @@ We know that $A$ is orthogonal if and only if $A^{T}A=I_{n}$. But this implies $
 
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/c443c628-427c-4ba6-a55b-d7fd0a562904?id=87842
+:url: https://embed.grasple.com/exercises/b818021a-4d58-4bc2-a135-9300283e10b1?id=110499
 :label: grasple_exercise_7_2_1
 :dropdown:
-:description: Orthogonal basis and scalar multiplication.
+:description: To check whether a set of vectors is orthonormal.
 
 ::::
 
 
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/c3115c3e-433c-491a-9f68-3ca7cb689d7d?id=110501
+:label: grasple_exercise_7_2_2
+:dropdown:
+:description: To check whether a set of vectors is orthogonal.
+
+::::
 
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/d75f6fb9-c532-420e-8f54-0eafa066a7c1?id=108960
-:label: grasple_exercise_7_2_2
+:label: grasple_exercise_7_2_3
 :dropdown:
 :description: Extending a vector in $\R^3$  to an orthogonal basis for $\R^3$.
 
@@ -582,7 +590,7 @@ We know that $A$ is orthogonal if and only if $A^{T}A=I_{n}$. But this implies $
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/207ce8e6-6bea-4f43-bff4-8b7c3f9d0c11?id=108979
-:label: grasple_exercise_7_2_3
+:label: grasple_exercise_7_2_4
 :dropdown:
 :description: Extending a set of 2 orthogonal vectors in $\R^4$  to an orthogonal basis of $\R^4$. 
 
@@ -590,24 +598,36 @@ We know that $A$ is orthogonal if and only if $A^{T}A=I_{n}$. But this implies $
 
 
 
+
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/dab23aa3-6004-4ce6-a027-6c5e7c564102?id=109008
-:label: grasple_exercise_7_2_4
+:url: https://embed.grasple.com/exercises/057814d7-ee5a-4c4b-940c-af1705a7ed6a?id=110503
+:label: grasple_exercise_7_2_5
 :dropdown:
-:description:  Matrix of projection onto plane in $\R^3$ with an orthogonal basis
+:description: Find the projection of a vector onto a 2-dimensional subspace in $\R^3$.
+
 ::::
-
-
 
 
 
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/54d95c2b-d7a9-4bce-a11e-a70b0bc09d0a?id=109005
-:label: grasple_exercise_7_2_5
+:label: grasple_exercise_7_2_6
 :dropdown:
-:description:  Projection onto a 2-dimensional subspace of $\R^4$ with orthogonal basis
+:description:  Find the projection of a vector onto a 2-dimensional subspace in $\R^4$.
+
+::::
+
+
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/4e18b85b-5462-4652-bfd3-262976403c49?id=110505
+:label: grasple_exercise_7_2_7
+:dropdown:
+:description: Find the projection of a vector onto a 3-dimensional subspace in $\R^4$.
 
 ::::
 
@@ -615,9 +635,30 @@ We know that $A$ is orthogonal if and only if $A^{T}A=I_{n}$. But this implies $
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/694b757f-b2a0-449b-806f-624fe9e78a6c?id=109007
-:label: grasple_exercise_7_2_6
+:label: grasple_exercise_7_2_8
 :dropdown:
-:description: Projection onto the null space of a matrix
+:description: Compute the projection onto the null space of a matrix.
+
+::::
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/dab23aa3-6004-4ce6-a027-6c5e7c564102?id=109008
+:label: grasple_exercise_7_2_9
+:dropdown:
+:description:  Find the matrix of the projection onto a plane in $\R^3$.
+
+::::
+
+The following exercises are more conceptual than computational.
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/c443c628-427c-4ba6-a55b-d7fd0a562904?id=87842
+:label: grasple_exercise_7_2_10
+:dropdown:
+:description: Orthogonal basis and scalar multiplication.
 
 ::::
 
@@ -625,31 +666,94 @@ We know that $A$ is orthogonal if and only if $A^{T}A=I_{n}$. But this implies $
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c443c628-427c-4ba6-a55b-d7fd0a562904?id=87842
-:label: grasple_exercise_7_2_7
+:label: grasple_exercise_7_2_11
 :dropdown:
 :description: Projection formula in case of a non-orthogonal basis?
 
 ::::
 
 
-
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c815026e-df41-461c-b0dc-0b06a387d0c9?id=91876
-:label: grasple_exercise_7_2_8
+:label: grasple_exercise_7_2_12
 :dropdown:
 :description: Alternative definition of an orthogonal matrix?
 
-::::
-
-
-
+::::    
 
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/3b34a2bb-8a8a-4174-829a-85aa44e9d53d?id=109002
-:label: grasple_exercise_7_2_9
+:label: grasple_exercise_7_2_13
 :dropdown:
-:description: Ponderings about orthogonal matrices
+:description: Ponderings about orthogonal matrices.
 
 ::::
+
+
+
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/19fc60e5-6d07-4a9e-983e-a096ae23aa9f?id=110500
+:label: grasple_exercise_7_2_14
+:dropdown:
+:description: Can the projection of a vector depend on the chosen orthogonal basis?
+
+::::
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/e5bf92ed-3aa8-4b56-b548-1b7776deefad?id=110504
+:label: grasple_exercise_7_2_15
+:dropdown:
+:description: Which conclusion holds if  $\text{proj}_W(\vect{y}) = \vect{y}$?
+
+::::
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/bad4391e-1cd7-4f6e-a8a8-7e6b2603e14d?id=110510
+:label: grasple_exercise_7_2_16
+:dropdown:
+:description: When can the projection formula be used to find coordinates?
+
+::::
+
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/fc2476b2-e27f-468d-a923-f54d1132891d?id=110511
+:label: grasple_exercise_7_2_17
+:dropdown:
+:description: Is a diagonal matrix always an orthogonal matrix ?
+
+::::
+
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/e58fcd10-f537-4bdd-a39d-2173520acce9?id=110512
+:label: grasple_exercise_7_2_18
+:dropdown:
+:description: Considerations concerning  $UU^T$ and $U^TU$.
+
+::::
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/4d215852-069a-4b2e-ae63-c6c700d0e4ae?id=110516
+:label: grasple_exercise_7_2_19
+:dropdown:
+:description: To find the standard matrix of projection onto plane in $\R^3$  (with an orthonormal basis given)
+
+
+::::
+
