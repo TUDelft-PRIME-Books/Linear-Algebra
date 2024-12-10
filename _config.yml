@@ -41,8 +41,6 @@ sphinx:
       use_repository_button: true
       logo:
         text: Linear Algebra
-        image_light: TUDelft_logo_descriptor_rgb.png
-        image_dark: TUDelft_logo_descriptor_white.png
       extra_footer: <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
     html_static_path: 
       - _static
@@ -79,9 +77,6 @@ sphinx:
             \usepackage{tabularx}
             \usepackage{threeparttable}
     mathjax3_config: 
-      chtml: {
-        mtextInheritFont: true
-      }
       tex:
         inlineMath: [ ['$','$'], ['\(','\)'] ]
         displayMath: [ ['$$','$$'], ['\[','\]'] ]
