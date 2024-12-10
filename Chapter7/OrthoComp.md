@@ -336,6 +336,7 @@ It is easy to check that, as the notation suggests, $\vect{u}_{V}$ is in $V$ (si
 
 ## Grasple Exercises
 
+
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/d69cfb9d-325b-433d-9210-c322fa272d14?id=108892
@@ -345,32 +346,10 @@ It is easy to check that, as the notation suggests, $\vect{u}_{V}$ is in $V$ (si
 
 ::::
 
-
-::::{grasple}
-:iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/19e0688c-b00c-46c2-aad8-200a230687b9?id=91435
-:label: grasple_exercise_7_1_2
-:dropdown:
-:description: Find  the orthogonal decomposition of a vector $\vect{u}$ in $\R^4$ w.r.t. span$\{\vect{v}_1,\vect{v}_2\}$.
-
-::::
-
-
-
-::::{grasple}
-:iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/c0918add-0c17-481a-80e3-c6688e65480a?id=91434
-:label: grasple_exercise_7_1_3
-:dropdown:
-:description: Find a geometric description of $V^{\bot}$.
-
-::::
-
-
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/f216b122-e2f3-4cd4-9268-7a814e12cec3?id=91429
-:label: grasple_exercise_7_1_4
+:label: grasple_exercise_7_1_2
 :dropdown:
 :description: Find a basis for the orthogonal complement of span$\{\vect{v}_1,\vect{v}_2\}$ in $\R^4$.
 
@@ -379,10 +358,54 @@ It is easy to check that, as the notation suggests, $\vect{u}_{V}$ is in $V$ (si
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/3e9132d6-c280-4361-a653-002ad50b4784?id=91433
-:label: grasple_exercise_7_1_5
+:label: grasple_exercise_7_1_3
 :dropdown:
 :description: Find a basis for the orthogonal complement of the column space of a matrix.
 
 ::::
 
 
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/6a795f5a-2da1-4de7-9358-5b654bf7365d?id=110452
+:label: grasple_exercise_7_1_4
+:dropdown:
+:description: Find  the orthogonal decomposition of a vector $\vect{u}$ in $\R^2$ w.r.t.  span$\{\vect{v}\}$.
+
+
+::::
+
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/30b117dd-3a1e-4e5e-9785-493e51538f30?id=110403
+:label: grasple_exercise_7_1_5
+:dropdown:
+:description: Find  the orthogonal decomposition of a vector $\vect{u}$ in $\R^3$ w.r.t.  span$\{\vect{v}_1,\vect{v}_2\}$.
+
+
+::::
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/19e0688c-b00c-46c2-aad8-200a230687b9?id=91435
+:label: grasple_exercise_7_1_6
+:dropdown:
+:description: Find  the orthogonal decomposition of a vector $\vect{u}$ in $\R^4$ w.r.t. span$\{\vect{v}_1,\vect{v}_2\}$.
+
+::::
+
+
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/c0918add-0c17-481a-80e3-c6688e65480a?id=91434
+:label: grasple_exercise_7_1_7
+:dropdown:
+:description: Give a geometric description of $V^{\bot}$.
+
+::::
