@@ -190,11 +190,11 @@ Since $(\vect{v}_1, \ldots, \vect{v}_n)$ is assumed to be a basis, each vector $
 
 :::{math}
 :label: Eq:DynSystDiscrete:InitCoords
-for some constants  $c_1, \ldots, c_n$ in $\R$.
 
-\vect{s} =  c_1\vect{v}_1 + c_2\vect{v}_2 +  \ldots + c_n\vect{v}_n.
+\vect{s} =  c_1\vect{v}_1 + c_2\vect{v}_2 +  \ldots + c_n\vect{v}_n,
 :::
 
+for some constants  $c_1, \ldots, c_n$ in $\R$.
 
 The vectors $\vect{v}_i$ being eigenvectors for the corresponding $\lambda_i$ means that
 
@@ -513,6 +513,18 @@ A dynamical system with a stable node.
 
 The behaviour is most easily explained by looking at the eigenvalues and eigenvectors
 (as in {prf:ref}`Prop:DynSystDiscrete:DiagCase`). They are
+
+<!--
+
+<center>
+
+    $\lambda_1 = 0.9$, with $\vect{v}_1 = \left[\begin{array}{cc} 1 \\ 2 \end{array}\right]$ \nbsp;
+    and \nbsp; $\lambda_2 = 0.6$, with $\vect{v}_2 = \left[\begin{array}{cc} 2 \\ 1 \end{array}\right]$
+
+</center>
+
+werkt niet ;-(  -->
+
 
 $$
   \lambda_1 = 0.9, \,\text{with} \,\,\vect{v}_1 = \left[\begin{array}{cc} 1 \\ 2 \end{array}\right], \quad
