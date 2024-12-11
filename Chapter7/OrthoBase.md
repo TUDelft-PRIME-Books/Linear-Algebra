@@ -665,7 +665,7 @@ The following exercises are more conceptual than computational.
 
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/c443c628-427c-4ba6-a55b-d7fd0a562904?id=87842
+:url: https://embed.grasple.com/exercises/825980e7-e25f-497e-a077-e009cedd55c4?id=87843
 :label: grasple_exercise_7_2_11
 :dropdown:
 :description: Projection formula in case of a non-orthogonal basis?
@@ -746,6 +746,7 @@ The following exercises are more conceptual than computational.
 
 ::::
 
+<!--
 
 ::::{grasple}
 :iframeclass: dark-light
@@ -757,3 +758,4 @@ The following exercises are more conceptual than computational.
 
 ::::
 
+-->
