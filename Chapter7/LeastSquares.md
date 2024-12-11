@@ -907,10 +907,30 @@ $$
 
 ::::
 
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/45e14081-07dd-4297-96ac-e1403c841511?id=110654
+:label: grasple_exercise_7_4_4
+:dropdown:
+:description: Abou the interpretation of the LS solution.
+::::
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/316a02be-a293-4340-ac81-47a6b25b115d?id=110658
+:label: grasple_exercise_7_4_5
+:dropdown:
+:description: Finding the LS solution for 3x2 system in a geometric way
+
+::::
+
+
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/a0878702-dcc0-4216-b2d6-0b1d7d1b046e?id=91142
-:label: grasple_exercise_7_4_4
+:label: grasple_exercise_7_4_6
 :dropdown:
 :description: Finding the LS solution for 3x2 systems in three steps.
 
@@ -919,7 +939,7 @@ $$
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/6a0628e8-065d-4390-b0c4-8ff131761de4?id=91161
-:label: grasple_exercise_7_4_5
+:label: grasple_exercise_7_4_7
 :dropdown:
 :description: LS solution + LS error for a 3x2 system.
 
@@ -928,7 +948,7 @@ $$
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/1d9a943a-b51f-48c9-99a9-691b80b8df60?id=91159
-:label: grasple_exercise_7_4_6
+:label: grasple_exercise_7_4_8
 :dropdown:
 :description: LS solution + LS error for a 4x4 system.
 
@@ -937,7 +957,7 @@ $$
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/d7480f19-afdb-474d-8542-299fc21a1952?id=91908
-:label: grasple_exercise_7_4_7
+:label: grasple_exercise_7_4_9
 :dropdown:
 :description: LS solution + LS error for a 4x3 system.
 
@@ -946,7 +966,7 @@ $$
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c6a52270-1c43-46a2-9dda-f1ab8b366066?id=91146
-:label: grasple_exercise_7_4_8
+:label: grasple_exercise_7_4_10
 :dropdown:
 :description: On the connection between orthogonal projections and least squares problems.
 
@@ -955,7 +975,7 @@ $$
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/743d744c-1bcb-460a-973e-3e693e86e20d?id=91157  
-:label: grasple_exercise_7_4_9
+:label: grasple_exercise_7_4_11
 :dropdown:
 :description: LS solution + LS error for a 3x2 system.
 
@@ -964,7 +984,7 @@ $$
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/b081f76a-0e03-48cc-b27b-afab51ac2c91?id=91155
-:label: grasple_exercise_7_4_10
+:label: grasple_exercise_7_4_12
 :dropdown:
 :description: LS solutions + LS error for a 4x3 system.
 
@@ -973,7 +993,7 @@ $$
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/679d1581-08bc-416b-89bf-766faad9f118?id=91394
-:label: grasple_exercise_7_4_11
+:label: grasple_exercise_7_4_13
 :dropdown:
 :description: Finding the LS solution for a 4x3 system (involving quite some reduction work)
 
@@ -982,7 +1002,7 @@ $$
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/3d0a7884-09ee-4f89-a2e5-1c1476d7e2a3?id=91448
-:label: grasple_exercise_7_4_12
+:label: grasple_exercise_7_4_14
 :dropdown:
 :description: Finding the LS solution for a 4x3 system (with some tricky reduction work).
 
@@ -991,7 +1011,7 @@ $$
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/396fd7a0-10cf-4b49-bb9e-fbc4acc2a06a?id=91148
-:label: grasple_exercise_7_4_13
+:label: grasple_exercise_7_4_15
 :dropdown:
 :description: What is the quickest way to find the least squares solution?
 
@@ -1445,7 +1465,7 @@ Least squares fitting via logarithmic scale.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/6a2b9aeb-3c59-4b8f-8d7c-e51f651998fd?id=91883
-:label: grasple_exercise_7_4_14
+:label: grasple_exercise_7_4_16
 :dropdown:
 :description: On the precise definition of the least squares line.
 
@@ -1454,7 +1474,7 @@ Least squares fitting via logarithmic scale.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/254298e0-f091-4a9d-8e8a-31cc3cf11f16?id=91884
-:label: grasple_exercise_7_4_15
+:label: grasple_exercise_7_4_17
 :dropdown:
 :description: Design matrix and input vector for the regression line through a set of points.
 
@@ -1462,7 +1482,7 @@ Least squares fitting via logarithmic scale.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/dad8ca0a-ef17-4757-803c-26b8ae9804de?id=91886
-:label: grasple_exercise_7_4_16
+:label: grasple_exercise_7_4_18
 :dropdown:
 :description: Fitting a line through set of points and compute the residual vector.
 
@@ -1470,7 +1490,7 @@ Least squares fitting via logarithmic scale.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9ad7148d-ef39-46ef-8f14-20e97511655d?id=91889
-:label: grasple_exercise_7_4_17
+:label: grasple_exercise_7_4_19
 :dropdown:
 :description: Fitting a parabola to a set of points.
 
@@ -1478,7 +1498,7 @@ Least squares fitting via logarithmic scale.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/222ee704-85f5-470a-b48f-f88d9900a8d1?id=91890
-:label: grasple_exercise_7_4_18
+:label: grasple_exercise_7_4_20
 :dropdown:
 :description: Fitting a quadratic polynomial to a set of points.
 
@@ -1486,7 +1506,7 @@ Least squares fitting via logarithmic scale.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/ff6329bd-f5b3-41ce-828f-2086cf651181?id=91898
-:label: grasple_exercise_7_4_19
+:label: grasple_exercise_7_4_21
 :dropdown:
 :description: Design matrix to fit $y = ax + bx^3$ to a set of points.
 
@@ -1494,8 +1514,20 @@ Least squares fitting via logarithmic scale.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/f75014bf-0e90-43e7-acf4-216cb38ffd11?id=91903
-:label: grasple_exercise_7_4_20
+:label: grasple_exercise_7_4_22
 :dropdown:
 :description: Design matrix to fit $y = c_1 e^t + c_2 \cos(x) + c_3 \sin(x)$ to a set of points.
 
 ::::
+
+
+::::
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/41fc8fb-476b-4ab7-8a3c-fb353a00ede4?id=110657
+:label: grasple_exercise_7_4_23
+:dropdown:
+:description: Design matrix in a context example (Ohm's law).
+
+::::
+

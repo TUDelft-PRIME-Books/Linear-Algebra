@@ -746,16 +746,13 @@ The following exercises are more conceptual than computational.
 
 ::::
 
-<!--
+
 
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/4d215852-069a-4b2e-ae63-c6c700d0e4ae?id=110516
 :label: grasple_exercise_7_2_19
 :dropdown:
-:description: To find the standard matrix of projection onto plane in $\R^3$  (with an orthonormal basis given)
-
+:description: To find the standard matrix of the projection onto plane in $\R^3$.
 
 ::::
-
--->
