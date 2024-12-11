@@ -540,6 +540,8 @@ Warning: the columns of $Q$ being orthonormal is equivalent to $Q^TQ = I$. Howev
 
 ## Grasple Exercises
 
+The first exercises are about applying the Gram-Schmidt (GS) algorithm
+
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/b07d879b-8d64-401d-9175-c346d4cbab9e?id=87823
@@ -621,6 +623,9 @@ Warning: the columns of $Q$ being orthonormal is equivalent to $Q^TQ = I$. Howev
 
 ::::
 
+
+The following exercises are about the QR decomposition
+
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/98d48efb-0be6-4dee-a905-55dff061ce17?id=90209
@@ -655,6 +660,8 @@ Warning: the columns of $Q$ being orthonormal is equivalent to $Q^TQ = I$. Howev
 :description: Finding the QR-decomposition of a $4\times3$ matrix.
 
 ::::
+
+The last exercises are more conceptual than computational.
 
 ::::{grasple}
 :iframeclass: dark-light

@@ -913,7 +913,7 @@ $$
 :url: https://embed.grasple.com/exercises/45e14081-07dd-4297-96ac-e1403c841511?id=110654
 :label: grasple_exercise_7_4_4
 :dropdown:
-:description: Abou the interpretation of the LS solution.
+:description: About the interpretation of the LS   solution.
 ::::
 
 
