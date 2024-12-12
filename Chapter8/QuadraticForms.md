@@ -515,6 +515,78 @@ The property is known as _Sylvester's Law of Inertia_.
 ::::
 
 
+The following proposition is  a direct consequence of the diagonalization  ({prf:ref}`Prop:QuadForms:Diagonalize`).  
+
+::::{prf:proposition}
+:label:  Prop:QuadForms:MaximumxTAx
+
+Let  $q(x) = \vect{x}^TA\vect{x}$ be the quadratic form with matrix $A$ and suppose that $A$ has the (ordered) eigenvalues
+$\lambda_1 \geq \lambda_2 \geq \ldots \geq \lambda_n$.  Then the maximum and the minimum value attained by   $q(\vect{x})$  under the constraint  $\norm{\vect{x}} = 1$  are $\lambda_1$ and $\lambda_n$.
+
+::::
+
+The proof contains the same type of reasoning as the proof of {prf:ref}`Prop:SymmetricMat:Max||Ax||`.
+
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:QuadForms:MaximumxTAx`
+:class: myproof, dropdown
+
+Suppose that   $\vect{u}_1, \vect{u}_2,\ldots,\vect{u}_n$  is an orthonormal basis of eigenvectors for $A$ for the eigenvalues  $\lambda_1 \geq \ldots \geq \lambda_n$.
+
+
+First of all
+
+$$
+  \vect{u}_1^TA\vect{u}_1 =  \lambda_1\vect{u}_1^T\vect{u}_1 = \lambda_1 \quad \text{and} \quad 
+  \vect{u}_n^TA\vect{u}_n =  \lambda_n\vect{u}_n^T\vect{u}_n = \lambda_n,
+$$
+
+so $q(\vect{x})$  does take on the values  $\lambda_1$ and  $\lambda_n$.
+
+Next, for an arbitrary unit vector $\vect{x}$, which can always be written as 
+
+$$
+  c_1\vect{u}_1 +    c_2\vect{u}_2 + \ldots +  c_n\vect{u}_n, \quad \text{with} \quad 
+  u_1^2 + c_2^2 + \ldots + c_n^2 = 1 
+$$
+
+(cf. proof of {prf:ref}`Prop:SymmetricMat:Max||Ax||`), we deduce that
+
+$$
+\begin{array}{rcl}
+  \vect{x}^TA\vect{x} &=& 
+  (c_1\vect{u}_1 +  \ldots +  c_n\vect{u}_n)^T(c_1\lambda_1\vect{u}_1 +  \ldots +  c_n\lambda_n\vect{u}_n) \\
+  &=& 
+   c_1^2\lambda_1\vect{u}_1^T\vect{u}_1 + \cdots + c_n^2\lambda_n\vect{u}_n^T\vect{u}_n \\
+   &=&
+   c_1^2\lambda_1 + \cdots + c_n^2\lambda_n.
+   \end{array}
+$$
+
+All crossterms $\vect{u}_i^T\vect{u}_j$  with $i\neq j$ drop out since $\vect{u}_i\ip\vect{u}_j=0$, for $i\neq j$,  and $\vect{u}_i^T\vect{u}_i = 1$ by the assumption that the vectors $\mathbf{u}_i$ are unit vectors.
+
+Now invoking  $\lambda_1 \geq \lambda_2 \geq \ldots  \geq \lambda_n$ we see that
+
+$$ 
+  \begin{array}{rcl}    
+     c_1^2\lambda_n +c_2^2\lambda_n +\cdots + c_n^2\lambda_n &\leq&
+     c_1^2\lambda_1 +c_2^2\lambda_2 +\cdots + c_n^2\lambda_n\\
+     &\leq&
+     c_1^2\lambda_1 +c_2^2\lambda_1 +\cdots + c_n^2\lambda_1.
+     \end{array}
+$$
+
+Since $c_1^2 + c_2^2 + \ldots +c_n^2 = 1$, we may conclude that indeed
+
+$$
+  \lambda_n \quad\leq\quad c_1^2\lambda_1 +c_2^2\lambda_2 +\cdots + c_n^2\lambda_n \quad\leq\quad \lambda_1,
+$$
+
+where the expression in the middle stands for our  $\vect{x}^T A \vect{x} = q(\vect{x})$. 
+
+::::
+
+
+
 (Subsec:PosDefMatrices)=
 
 ## Positive definite matrices
@@ -606,7 +678,7 @@ And lastly
 
 <li>
 
-$q_A$ is **indefinite** if at least one eigenvalue is positive, and at least one eigenvalue is negative.
+$q_A$ is **indefinite** if at least one eigenvalue is positive and at least one eigenvalue is negative.
 
 </li>
 </ul>
@@ -739,7 +811,7 @@ Check that the vector you found in iii. is an eigenvector of the matrix of the q
 ## Conic Sections
 
 A _conic section_ or _conic_ is a curve that results when a circular cone is intersected with a plane.  
-{numref}`Figure %s <Fig:QuadForms:ConeWithPlanes>` shows the different shapes when the plane is *not* going through the apex..
+{numref}`Figure %s <Fig:QuadForms:ConeWithPlanes>` shows the different shapes when the plane is *not* going through the apex.
 
 :::{figure} Images/Fig-QuadForms-ConicSections.png
 :name: Fig:QuadForms:ConeWithPlanes
@@ -904,7 +976,8 @@ $$
 
 ::::
 
-The following examples illustrate proposition {prf:ref}`Prop:QuadForms:PrincipleAxesR2`.
+We will not give a proof of {prf:ref}`Prop:QuadForms:PrincipleAxesR2`, but instead we will give two 
+illustrative examples.
 
 ::::{prf:example}
 :label: Ex:QuadForms:PrinciplesAxes1
@@ -1056,7 +1129,7 @@ See Figure {numref}`Fig:QuadForms:Ellipses`
 :name: Fig:QuadForms:Ellipses
 :class: dark-light
 
-The two ellipses.
+The  ellipse with its principal axes.
 :::
 
 ::::

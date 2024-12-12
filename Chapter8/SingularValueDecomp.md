@@ -261,7 +261,39 @@ You may have a tiny tinge of worry.  How would I know that the eigenvalues $\lam
 
 ::::
 
-We are now ready to present the algorithm.
+
+
+Combining {prf:ref}`Prop:QuadForms:MaximumxTAx`  and  {prf:ref}`Prop:SVD:singularvalues`  we can give the following interpretation to the highest singular value. 
+
+::::{prf:proposition}
+:label: Prop:SVD:HighestSigma
+
+Suppose  $A$ is an $m\times n$ matrix. Then the highest singular value is the maximum value that $\norm{A\vect{x}}$ can attain on the set of vectors or norm $1$. 
+This can also be formulated as 
+
+$$
+   \sigma_1 \,=\, \text{max}\left\{\dfrac{\norm{A\vect{x}}}{\norm{\vect{x}}} \quad \text{for} \quad \vect{x} \neq \vect{0}\right\}.
+$$
+
+::::
+
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SVD:HighestSigma`
+:class: myproof
+
+To maximize  $\norm{A\vect{x}}$  we may as well maximize  $\norm{A\vect{x}}^2$. &nbsp; Note that
+
+$$
+  \norm{A\vect{x}}^2 = (A\vect{x})\ip(A\vect{x}) = \vect{x}^TA^TA\vect{x}.
+$$
+
+That links the property to the quadratic form  $q(\vect{x}) = \vect{x}^TA^TA\vect{x}$. <BR>
+ From {prf:ref}`Prop:QuadForms:MaximumxTAx` we know that the maximal value of $q(\mathbf{x})$ on the set of unit vectors is the largest eigenvalue of the matrix $A^TA$, which by  {prf:ref}`Prop:SVD:singularvalues` is given by the square of the highest singular value.
+
+::::
+
+
+
+We are now ready to present an algorithm to construct the SVD of a matrix.
 To be followed up by examples and some (theoretical) considerations.
 Suppose $A$ is an $m\times n$ matrix of rank $r$. (The rank, as we have seen in {prf:ref}`Prop:SVD:BasicProp`, is the number of nonzero singular values.)
 
@@ -504,7 +536,7 @@ $$
 
 since  the vectors $\vect{v}_1, \ldots, \vect{v}_n$ are orthogonal. <BR>
 Thus the vectors $\vect{u}_1, \ldots, \vect{u}_r$  are orthogonal to start with.
-Finding their norms, noting that the vectors $\vect{v}_i$ already have unit length, and that $A^TA\vect{v}_i = \lambda_i \vect{v}_i$ we see that,  for $1 \leq i \leq r$,
+Finding their norms, noting that the vectors $\vect{v}_i$ already have unit length, and that $A^TA\vect{v}_i = \lambda_i \vect{v}_i$, we see that,  for $1 \leq i \leq r$,
 
 $$
  \norm{\vect{u}_i}^2 = \left(\frac{1}{\sigma_i} A\vect{v}_i \right) \ip \left(\frac{1}{\sigma_i} A\vect{v}_i\right) = \frac{1}{\sigma_i^2} \vect{v}_i^T A^TA \vect{v}_i =
@@ -540,7 +572,7 @@ $$
    AV = U_r\Sigma_r.
 $$
 
-Next we add the remaining columns (if any)   $\vect{u}_{r+1}, \ldots, \vect{u}_{m}$ to $U_r$, and add $m-r$ zero rows to the bottom of $\tilde{\Sigma}_r$.  Thus we have built the matrix  $\Sigma$ exactly as in the algorithm (Step 3).  Moreover,   $U_r\tilde{\Sigma}_r = U\Sigma$, so we see that
+Next we add the remaining columns (if any)   $\vect{u}_{r+1}, \ldots, \vect{u}_{m}$ to $U_r$, and add $m-r$ zero rows to the bottom of $\Sigma_r$.  Thus we have built the matrix  $\Sigma$ exactly as in the algorithm (Step 3).  Moreover,  the added zero columns and rows do not alter the product, i.e.,  $U_r\Sigma_r = U\Sigma$.  So we see that
 
 $$
   AV = U_r\Sigma_r = U\Sigma.
@@ -564,7 +596,7 @@ Some concluding remarks concerning the algorithm.
  it may be profitable to  find an SVD for $A^T$ first, and then transpose this. <BR>
  The singular values of $A$ are the eigenvalues of $A^TA$, an $n \times n$ matrix, the singular values of $A^T$ are the eigenvalues of $AA^T$, an
  $m \times m$ matrix.  The smaller the better! <BR>
- In most applications the singular value decomposition will be applied to  $m\times n$ matrices $A$  with much more rows that columns,  so  $m \gg n$. For such  matrix $A$ 
+ In most applications the singular value decomposition will be applied to  $m\times n$ matrices $A$  with much more rows that columns,  so  $m \gg n$. For such  matrices $A$, 
  working with $A^TA$ is the best bet.
 
  2. The normalization of the vectors  $\mathbf{v}_i$ and $\mathbf{u}_j$ may be postponed till the end of step 5.  That prevents dragging along
@@ -664,7 +696,7 @@ From  $A^T = U\Sigma V^T$  it follows swiftly that  $A = V \Sigma^TU^T$ is an SV
 
 ## Understanding the SVD Geometrically
 
-In this section we will have a deeper look at the decomposition and its meaning. As we have done previously, we can think about an $m\times n$ matrix $A$ as the standard matrix of a linear transformation from $\R^n$ to $\R^m$.
+In this section we will have a deeper look at the decomposition and its meaning. As we have done on earlier occasions, we can think about an $m\times n$ matrix $A$ as the standard matrix of a linear transformation from $\R^n$ to $\R^m$.
 
 By definition, the matrices $U$ and $V$ in the SVD of an $m\times n$ matrix $A$ 
 are orthogonal matrices. Thus the columns of $U$ give an orthonormal basis of $\R^m$,  the columns of $V$ an orthonormal basis of $\R^n$. The decomposition $U\Sigma V^T$ then becomes a composition of transformations. We can visualise this using the graph in {numref}`Figure %s <Fig:SVD:decomposition>`:
@@ -802,6 +834,8 @@ are mapped to $\vect{0}\in \R^{m}$.  All in all, $\Sigma$ maps the unit sphere i
 Lastly the orthogonal matrix $U$ rotates/reflects this ellipsoid
 in $\R^m$.
 
+
+The two 'orthogonal transformations' do not change norms, and the transformation corresponding to the diagonal matrix $\Sigma$   'stretches' the unit vectors $\vect{e}_i$  with factors $\sigma_i$.  We see again that the maximum scaling a vector $\vect{x}$  undergoes when multiplied by $A$ is the highest singular value $\sigma_1$  of $A$ (in full accordance with {prf:ref}`Prop:SVD:HighestSigma`).
 <BR>
 
 

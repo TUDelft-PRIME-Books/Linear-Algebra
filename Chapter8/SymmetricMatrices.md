@@ -802,6 +802,114 @@ The importance of the step-by-step reduction is that it shows that from the 'min
 
 ::::
 
+
+There are situations where it is important to know how large  $\norm{A\vect{x}}$ can become for unit vectors $\vect{x}$.  The general case, for non-square matrices,  will be handled in {numref}`Subsection %s <Subsec:SVDGeometrically>`.  For symmetric matrices the question is answered by the next proposition
+
+::::{prf:proposition}
+:label: Prop:SymmetricMat:Max||Ax|| 
+
+Suppose $A$ is a symmetric matrix.  Then the maximum value  $\norm{A\mathbf{x}}$  will attain on the set of unit vectors is equal to  $|\lambda_1|$, where $\lambda_1$ is the eigenvalue of the highest absolute value.
+
+::::
+
+We will give a proof that makes good use of the existence of an orthogonal basis of eigenvectors.
+But first we will give the following example, that catches the main idea. 
+
+
+::::{prf:example}
+:label: Ex:SymmetricMat:Max||Ax|| 
+
+The (symmetric)  matrix $A = \begin{bmatrix}  1 & 4  \\ 4 & 1 \end{bmatrix}$ has the eigenvalues $\lambda_1 = 5$ and  $\lambda_2 = -3$ with corresponding unit eigenvectors  $\mathbf{u}_1 = \dfrac{1}{\sqrt{2}}\begin{bmatrix}  1   \\  1 \end{bmatrix}$  and  $\mathbf{v}_2 = \dfrac{1}{\sqrt{2}}\begin{bmatrix}  1   \\  -1 \end{bmatrix}$ respectively.
+
+First of all, for  $\vect{x} = \vect{u}_1$ it holds that $\norm{A\vect{u}_1} = ||5\vect{u}_1|| = 5$.
+
+Second,  suppose $\vect{x} $ is an arbitrary unit vector. 
+We will in fact show that  $\norm{A\vect{x}}^2 \leq 5^2$. Since $\{\vect{u}_1,\vect{u}_2\}$ is a basis,  $\vect{x} = c_1\vect{u}_1 + c_2\vect{u}_2 $, for some parameters $c_1, c_2$. 
+Then,  since $\vect{u}_1$ and $\vect{u}_2$ are orthogonal unit vectors
+
+$$
+  \begin{array}{rcl}
+  \norm{\vect{x}}^2 = \norm{c_1\vect{u}_1 + c_2\vect{u}_2}^2 &=& \norm{c_1\vect{u}_1}^2  + \norm{c_2\vect{u}_2}^2 \\
+  & = &   c_1^2\norm{\vect{u}_1}^2  + c_2^2 \norm{\vect{u}_2}^2 = c_1^2 + c_2^2,
+  \end{array}
+$$
+
+so  $c_1^2 + c_2^2 = 1$.
+
+Likewise,
+
+$$
+  \norm{A\vect{x}}^2 = \norm{c_1A\vect{u}_1 + c_2A\vect{u}_2}^2 =  \norm{c_1\cdot5\vect{u}_1 + c_2\cdot(-3)\vect{u}_2}^2  = 5^2c_1^2 + (-3)^2c_2^2
+$$
+
+The maximum the last expression takes on, under the condition that  $c_1^2 + c_2^2$, is $5^2$.
+
+::::
+
+The second example shows that symmetry of the matrix is necessary for the property to hold.
+
+::::{prf:example}
+:label: Ex:SymmetricMat:NonMax||Ax|| 
+
+The  matrix $B = \begin{bmatrix}  3 & 4  \\ 0 &  3\end{bmatrix}$ has the double eigenvalue $\lambda_1 = \lambda_2 = 3$ and for the unit vector $\mathbf{x} = \begin{bmatrix}  0   \\  1 \end{bmatrix}$  it holds that &nbsp; $   \norm{A\vect{x}} = \norm{\begin{bmatrix} 4\\3 \end{bmatrix}} = 5 > 3 = |\lambda_1|$.
+
+::::
+
+As mentioned,  {prf:ref}`Ex:SymmetricMat:Max||Ax||`  contains the main idea, but for  a proof of the general situtation you can open the following exposition.
+
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SymmetricMat:Max||Ax||`
+:class: myproof, dropdown
+
+Suppose  $A$ is a symmetric $n \times n$ matrix.
+Then $A$ has an orthonormal basis $\vect{u}_1, \vect{u}_2,\ldots,\vect{u}_n$ of eigenvectors for the eigenvalues  $\lambda_1, \ldots, \lambda_n$, where we may suppose that these are ordered according to their absolute values in decreasing order
+
+$$
+   \lambda_1 \geq |\lambda_2| \geq \ldots \geq   |\lambda_n|. 
+$$
+
+First of all
+
+$$
+   \norm{A\mathbf{u}_1} = \norm{\lambda_1\mathbf{u}_1} = |\lambda_1|,
+$$
+
+so  there is at least a unit vector of which the norm gets a factor $\lambda_1$.
+
+It remains to show that for an arbitrary unit vector $\vect{x}$ always $\norm{A\mathbf{x}} \leq 
+|\lambda_1|$.  We will in fact show that  $\norm{A\mathbf{x}}^2 \leq 
+|\lambda_1|^2$.
+
+Since $\{\vect{u}_1, \ldots, \vect{u}_n \}$  is a basis  of $\R^n$  it follows that
+
+$$
+  \vect{x} = c_1\mathbf{u}_1 +  c_2\mathbf{u}_2 + \ldots  c_n\mathbf{u}_n, \quad \text{for some } \enspace c_1,\ldots,c_n. 
+$$
+
+From the orthonormality of the $\vect{u}_i$ it follows that
+
+$$
+ \norm{\vect{x}}^2 = 1 = \norm{c_1\mathbf{u}_1 +   \ldots  c_n\mathbf{u}_n}^2
+ = c_1^2\norm{\mathbf{u}_1}^2 +   \ldots +  c_2^2\norm{\mathbf{u}_n}^2 = c_1^2 + \ldots + c_n^2.
+$$
+
+Next, invoking that each $\vect{u}_i$ is an eigenvector for $\lambda_i$, we get
+
+$$
+\begin{array}{rcl}
+\norm{A\vect{x}}^2 &=& \norm{c_1\lambda_1\vect{u_1} + c_n\lambda_n\vect{u_n}}^2 =
+                   c_1^2\lambda_1^2 \norm{\vect{u_1}}^2  + \ldots + c_n^2\lambda_n^2 \norm{\vect{u_n}}^2 \\
+                   &=&
+                   c_1^2\lambda_1^2   + \ldots + c_n^2\lambda_n^2 \leq 
+                   c_1^2\lambda_1^2   + \ldots + c_n^2\lambda_1^2  \\
+                   &=& 
+                   (c_1^2  + \ldots + c_n^2)\lambda_1^2 = \lambda_1^2.
+\end{array}
+$$
+::::
+
+
+
+
 In the last subsection we will show how the orthogonal diagonalization can be rewritten in an interesting and meaningful way.
 
 (SubSec:SymmetricMat:SpectralDecomp)=
