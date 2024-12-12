@@ -2,6 +2,8 @@
 
 # Orthogonal Complements
 
+## The Orthogonal Complement
+
 In this section, we will introduce the orthogonal complement of a subspace. This concept will help us define orthogonal projections easily.
 
 :::{prf:definition}
@@ -249,6 +251,10 @@ n=\dim(\mathrm{Row}(A^{T}))+\dim(\mathrm{Col}(A)^{\bot})=\dim(\mathrm{Col}(A))+\
 $$
 
 :::
+
+## The Orthogonal Decomposition
+
+One particular application of the orthogonal complement is the following theorem, which allows us to write, for an arbitrary subspace $V$, any vector $v$ as a part within $V$ and a part orthogonal to $V$. 
 
 :::{prf:proposition}
 :label: Prop:OrthoComp:PrthoDecomp
