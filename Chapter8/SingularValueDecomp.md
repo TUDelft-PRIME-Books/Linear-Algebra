@@ -455,12 +455,17 @@ $$0\le \norm{A\vect{u}}^2 = \mathbf{u}^TA^TA\mathbf{u} = \mathbf{u}^T\lambda \ma
 
 Since $\mathbf{u}\ne \mathbf{0}$,  so $\norm{\mathbf{u}}\ne 0$  as well,  it follows that $\lambda \ge 0$.
 
-\item Let $\lambda$ be a non-zero eigenvalue of $A^TA$ with associated eigenvector $\mathbf{u}$. We will see that $\lambda$ is also an eigenvalue of $AA^T$. By the definition of eigenvalue we have $A^TA\mathbf{u} = \lambda\mathbf{u}$. Then, multiplying by $A$ on both sides of the previous identity we obtain:
+\item Let $\lambda$ be a non-zero eigenvalue of $A^TA$ with associated eigenvector $\mathbf{u}$. We have tp show that $\lambda$ is also an eigenvalue of $AA^T$. By the definition of eigenvalue we have $A^TA\mathbf{u} = \lambda\mathbf{u}$. 
+Observe that if $A\mathbf{u}=\mathbf{0}$ then $\lambda\mathbf{u} = A^TA\mathbf{u} = \mathbf{0}$, which would imply that $\lambda =0$, which contradicts the hypothesis of $\lambda \ne 0$. <BR>
+Next, multiplying by $A$ on both sides of the previous identity we obtain
 
-$$AA^TA\mathbf{u} = \lambda A\mathbf{u}.$$
+$$
+ AA^TA\mathbf{u} = (AA^T)A\mathbf{u}  = \lambda A\mathbf{u}, \quad \text{where} \quad A\mathbf{u}\ne \mathbf{0}.
+ $$
 
-Observe that if $A\mathbf{u}=\mathbf{0}$ then $A^TA\mathbf{u} = \mathbf{0}$ and $\lambda =0$, which contradicts the hypothesis of $\lambda \ne 0$. <BR>
-Therefore, $A\mathbf{u}\ne \mathbf{0}$ and $A\mathbf{u}$ is an eigenvector of $AA^T$ with associated eigenvalue $\lambda$. 
+
+Therefore,  $A\mathbf{u}$ is an eigenvector of $AA^T$ with associated eigenvalue $\lambda$. 
+
 To prove the converse, one can use a similar argument.
 
 

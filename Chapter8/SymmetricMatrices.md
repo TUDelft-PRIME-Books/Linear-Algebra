@@ -813,7 +813,7 @@ Suppose $A$ is a symmetric matrix.  Then the maximum value  $\norm{A\mathbf{x}}$
 ::::
 
 We will give a proof that makes good use of the existence of an orthogonal basis of eigenvectors.
-But first we will give the following example, that catches the main idea. 
+But first we will give an example, that catches the main idea. 
 
 
 ::::{prf:example}
@@ -831,18 +831,26 @@ $$
   \begin{array}{rcl}
   \norm{\vect{x}}^2 = \norm{c_1\vect{u}_1 + c_2\vect{u}_2}^2 &=& \norm{c_1\vect{u}_1}^2  + \norm{c_2\vect{u}_2}^2 \\
   & = &   c_1^2\norm{\vect{u}_1}^2  + c_2^2 \norm{\vect{u}_2}^2 = c_1^2 + c_2^2,
-  \end{array}
+  \end{array},
 $$
+
 
 so  $c_1^2 + c_2^2 = 1$.
 
 Likewise,
 
 $$
-  \norm{A\vect{x}}^2 = \norm{c_1A\vect{u}_1 + c_2A\vect{u}_2}^2 =  \norm{c_1\cdot5\vect{u}_1 + c_2\cdot(-3)\vect{u}_2}^2  = 5^2c_1^2 + (-3)^2c_2^2
+  \norm{A\vect{x}}^2 = \norm{c_1A\vect{u}_1 + c_2A\vect{u}_2}^2 =  \norm{c_1\cdot5\vect{u}_1 + c_2\cdot(-3)\vect{u}_2}^2  = 5^2c_1^2 + (-3)^2c_2^2.
 $$
 
-The maximum the last expression takes on, under the condition that  $c_1^2 + c_2^2$, is $5^2$.
+So we have
+
+$$
+  \norm{A\vect{x}}^2 = 5^2c_1^2 + (-3)^2c_2^2 \leq 5^2c_1^2 + 5^2c_2^2 = 5^2(c_1^2 + c_2^2) = 5^2,
+$$
+
+which implies that  indeed  &nbsp;  $\norm{A\vect{x}} \leq 5$  for all vectors $\vect{x}$ with 
+$\norm{\vect{x}} = 1$.
 
 ::::
 
@@ -889,10 +897,12 @@ From the orthonormality of the $\vect{u}_i$ it follows that
 
 $$
  \norm{\vect{x}}^2 = 1 = \norm{c_1\mathbf{u}_1 +   \ldots  c_n\mathbf{u}_n}^2
- = c_1^2\norm{\mathbf{u}_1}^2 +   \ldots +  c_2^2\norm{\mathbf{u}_n}^2 = c_1^2 + \ldots + c_n^2.
+ = c_1^2\norm{\mathbf{u}_1}^2 +   \ldots +  c_2^2\norm{\mathbf{u}_n}^2 = c_1^2 + \ldots + c_n^2,
 $$
 
-Next, invoking that each $\vect{u}_i$ is an eigenvector for $\lambda_i$, we get
+thus &nbsp; $c_1^2 + \ldots + c_n^2=1$.
+
+Next, invoking that each $\vect{u}_i$ is an eigenvector for $\lambda_i$ and again that the $\vect{u}_i$ form an orthonormal set, we get
 
 $$
 \begin{array}{rcl}
@@ -905,6 +915,7 @@ $$
                    (c_1^2  + \ldots + c_n^2)\lambda_1^2 = \lambda_1^2.
 \end{array}
 $$
+
 ::::
 
 
