@@ -534,7 +534,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 :url: https://embed.grasple.com/exercises/d40a884f-c356-4ba7-a777-92fd5f4fffcd?id=70202
 :label: grasple_exercise_2_5_2
 :dropdown:
-:description: Finding a parameter $h$ such that a set $\{\vect{a}_1, \vect{a}_2,\vect{b}\}$ is linearly independent.
+:description: Like the previous question
 
 ::::::
 
@@ -543,7 +543,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 :url: https://embed.grasple.com/exercises/7341c27a-5482-4303-b20f-4a3965c99535?id=70209
 :label: grasple_exercise_2_5_3
 :dropdown:
-:description: Like the previous question
+:description: For which value(s) of a parameter does a vector lie in a certain plane?
 
 ::::::
 
@@ -603,19 +603,21 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 
 ::::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/fce5512f-2e50-4973-8de1-d8d569e497b4?id=70208
+:url: https://embed.grasple.com/exercises/34b5b8b9-b124-4ebd-a575-43994d9dbace?id=70190
 :label: grasple_exercise_2_5_11
 :dropdown:
 :description: For which types of objects is linear independence defined?
 
 ::::::
 
+
+
 ::::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/5cb7db99-e91c-4f82-94ce-e69c042e14af?id=70191
 :label: grasple_exercise_2_5_12
 :dropdown:
-:description: Getting straight the definition of linear independence.
+:description: Getting the definition of linear independence straight.
 
 ::::::
 

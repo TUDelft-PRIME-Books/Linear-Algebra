@@ -499,7 +499,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/196ac202-23e4-4c94-842b-e50410fedea0?id=87438
+:url: https://embed.grasple.com/exercises/6cbb0bd4-863c-4705-908b-bb01602abf05?id=87438
 :label: grasple_exercise_2_3_9
 :dropdown:
 :description: Different parametrised vector solutions

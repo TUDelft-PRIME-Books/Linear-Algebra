@@ -2197,7 +2197,7 @@ Three exercises about linear systems and pivots.
 
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/63dd8fd-fdbd-4d59-b49e-1d52977a1a8e?id=87122
+:url: https://embed.grasple.com/exercises/763dd8fd-fdbd-4d59-b49e-1d52977a1a8e?id=87122
 :label: grasple_exercise_2_1_T19  
 :dropdown:
 :description: Freedom of free variables?

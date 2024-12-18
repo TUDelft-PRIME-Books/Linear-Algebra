@@ -1524,7 +1524,7 @@ Least squares fitting via logarithmic scale.
 ::::
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/41fc8fb-476b-4ab7-8a3c-fb353a00ede4?id=110657
+:url: https://embed.grasple.com/exercises/741fc8fb-476b-4ab7-8a3c-fb353a00ede4?id=110657
 :label: grasple_exercise_7_4_23
 :dropdown:
 :description: Design matrix in a context example (Ohm's law).

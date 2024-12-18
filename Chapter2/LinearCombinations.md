@@ -345,7 +345,7 @@ In {prf:ref}`Prop:LinearCombinations:SpanStandardBasis` we saw that the span of 
 
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.f74168ff-a448-4420-88d9-ebe7365a00a9?id=70172com/exercises/
+:url: https://embed.grasple.com/exercises/f74168ff-a448-4420-88d9-ebe7365a00a9?id=70172
 :label: grasple_exercise_2_2_2
 :dropdown:
 :description: Is $\vect{b}$ an element of Span$\{\vect{a}_1,\vect{a}_2,\vect{a}_3\}$?

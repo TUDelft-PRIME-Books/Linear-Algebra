@@ -692,7 +692,7 @@ The last exercises are more conceptual than computational.
 
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/
+:url: https://embed.grasple.com/exercises/581f5f1d-cf12-4358-932f-70f65e4341b4?id=87829
 :label: grasple_exercise_7_3_17
 :dropdown:
 :description: GS for set of linearly dependent set of vectors.

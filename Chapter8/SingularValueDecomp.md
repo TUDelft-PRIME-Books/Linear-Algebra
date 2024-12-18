@@ -268,12 +268,15 @@ Combining {prf:ref}`Prop:QuadForms:MaximumxTAx`  and  {prf:ref}`Prop:SVD:singula
 ::::{prf:proposition}
 :label: Prop:SVD:HighestSigma
 
-Suppose  $A$ is an $m\times n$ matrix. Then the highest singular value is the maximum value that $\norm{A\vect{x}}$ can attain on the set of vectors or norm $1$. 
+Suppose  $A$ is an $m\times n$ matrix. Then the highest singular value is the maximum value that $\norm{A\vect{x}}$ can attain on the set of vectors of norm $1$. 
 This can also be formulated as 
 
-$$
+:::{math}
+:label:  Eq:SVD:||Ax||over||x||
+
    \sigma_1 \,=\, \text{max}\left\{\dfrac{\norm{A\vect{x}}}{\norm{\vect{x}}} \quad \text{for} \quad \vect{x} \neq \vect{0}\right\}.
-$$
+
+:::
 
 ::::
 
@@ -288,6 +291,14 @@ $$
 
 That links the property to the quadratic form  $q(\vect{x}) = \vect{x}^TA^TA\vect{x}$. <BR>
  From {prf:ref}`Prop:QuadForms:MaximumxTAx` we know that the maximal value of $q(\mathbf{x})$ on the set of unit vectors is the largest eigenvalue of the matrix $A^TA$, which by  {prf:ref}`Prop:SVD:singularvalues` is given by the square of the highest singular value.
+
+The alternative formulation  ({eq}`Eq:SVD:||Ax||over||x||`)  follows from the observation that for each nonzero vector $\vect{x}$ 
+
+$$
+  \dfrac{\norm{A\vect{x}}}{\norm{\vect{x}}} = \dfrac{\norm{A\hat{\vect{x}}}}{\norm{\hat{\vect{x}}}} = \norm{A\hat{\vect{x}}}, 
+$$
+
+where  $\hat{\vect{x}}$  is the unit vector in the direction of $\vect{x}$.
 
 ::::
 

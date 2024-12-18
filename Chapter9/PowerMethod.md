@@ -610,7 +610,7 @@ $$
       \end{bmatrix},
 $$
 
-From which we conclude that $\vect{x}_{10}$ is close to an eigenvector of $A$ for the eigenvalue $\lambda \approx -0.2287 + 3 = 2.7713$.   The process converges quickly since $B$ has an eigenvalue $\mu_1$ very close to zero, which makes  $1/\mu_1$ is 'very dominant'. 
+From which we conclude that $\vect{x}_{10}$ is close to an eigenvector of $A$ for the eigenvalue $\lambda \approx -0.2287 + 3 = 2.7713$.   The process converges quickly since $B$ has an eigenvalue $\mu_1$ very close to zero, which makes  $1/\mu_1$  'very dominant'. 
 
 Using any computer algebra program we can find that the eigenvalues of $A$ are
 
@@ -684,7 +684,7 @@ $$
   \frac{|\lambda_{2,3}|}{|\lambda_{1}|} \approx 0.66 < 1,
 $$
 
-we can still use Equation {eq}`Eq:PowerMethod:GenSol-2` to conclude that, except for very unfortunate initial vectors, the method will lead to a dominant eigenvector. As it did indeed.
+we can still use Equation {eq}`Eq:PowerMethod:GenSol-2` to conclude that the method will lead to a dominant eigenvector. As it did indeed.
 
 ::::
 

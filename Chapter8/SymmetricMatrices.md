@@ -68,12 +68,14 @@ In other contexts the word _spectrum_ of a transformation is used for the set of
 
 So, for a symmetric matrix an orthonormal basis of eigenvectors always exists. For the inertia tensor of a 3D body such a basis corresponds to the (perpendicular) principal axes.
 
-::::{admonition} Of the converse of {prf:ref}`Thm:SymmetricMat:OrthogDiag`
+::::{admonition} Proof of the converse of {prf:ref}`Thm:SymmetricMat:OrthogDiag`
 :class: myproof
 
 Recall that an orthogonal matrix is a matrix $Q$ for which $Q^{-1} = Q^T$.
 
-With this reminder it is just a one line proof. If $A = QDQ^{-1} = QDQ^T$,
+With this reminder it is just a one line proof. 
+
+If $A = QDQ^{-1} = QDQ^T$,
 
 then $A^T = (QDQ^{-1} )^T = (Q^{-1} )^TD^TQ^T = (Q^T)^TD^TQ^T = QDQ^T = A$.
 
@@ -813,7 +815,7 @@ Suppose $A$ is a symmetric matrix.  Then the maximum value  $\norm{A\mathbf{x}}$
 ::::
 
 We will give a proof that makes good use of the existence of an orthogonal basis of eigenvectors.
-But first we will give an example, that catches the main idea. 
+But first we will give an example that catches the main idea. 
 
 
 ::::{prf:example}
@@ -831,7 +833,7 @@ $$
   \begin{array}{rcl}
   \norm{\vect{x}}^2 = \norm{c_1\vect{u}_1 + c_2\vect{u}_2}^2 &=& \norm{c_1\vect{u}_1}^2  + \norm{c_2\vect{u}_2}^2 \\
   & = &   c_1^2\norm{\vect{u}_1}^2  + c_2^2 \norm{\vect{u}_2}^2 = c_1^2 + c_2^2,
-  \end{array},
+  \end{array}
 $$
 
 
@@ -840,7 +842,13 @@ so  $c_1^2 + c_2^2 = 1$.
 Likewise,
 
 $$
-  \norm{A\vect{x}}^2 = \norm{c_1A\vect{u}_1 + c_2A\vect{u}_2}^2 =  \norm{c_1\cdot5\vect{u}_1 + c_2\cdot(-3)\vect{u}_2}^2  = 5^2c_1^2 + (-3)^2c_2^2.
+  \begin{array}{rcl}
+  \norm{A\vect{x}}^2 &=& \norm{c_1A\vect{u}_1 + c_2A\vect{u}_2}^2\\
+  &=&  \norm{c_1\cdot5\vect{u}_1 + c_2\cdot(-3)\vect{u}_2}^2 \\
+  &=&   \norm{c_1\cdot5\vect{u}_1}^2 + \norm{c_2\cdot(-3)\vect{u}_2}^2 \\
+  &=& 5^2c_1^2\norm{\vect{u}_1}^2  + (-3)^2c_2^2\norm{\vect{u}_1}^2 \\
+  &=& 5^2c_1^2 + (-3)^2c_2^2.
+  \end{array}
 $$
 
 So we have
@@ -872,7 +880,7 @@ Suppose  $A$ is a symmetric $n \times n$ matrix.
 Then $A$ has an orthonormal basis $\vect{u}_1, \vect{u}_2,\ldots,\vect{u}_n$ of eigenvectors for the eigenvalues  $\lambda_1, \ldots, \lambda_n$, where we may suppose that these are ordered according to their absolute values in decreasing order
 
 $$
-   \lambda_1 \geq |\lambda_2| \geq \ldots \geq   |\lambda_n|. 
+   |\lambda_1| \geq |\lambda_2| \geq \ldots \geq   |\lambda_n|. 
 $$
 
 First of all
@@ -881,10 +889,10 @@ $$
    \norm{A\mathbf{u}_1} = \norm{\lambda_1\mathbf{u}_1} = |\lambda_1|,
 $$
 
-so  there is at least a unit vector of which the norm gets a factor $\lambda_1$.
+so  there is at least a unit vector of which the norm gets a factor $|\lambda_1|$.
 
 It remains to show that for an arbitrary unit vector $\vect{x}$ always $\norm{A\mathbf{x}} \leq 
-|\lambda_1|$.  We will in fact show that  $\norm{A\mathbf{x}}^2 \leq 
+|\lambda_1| \norm{\vect{x}} = |\lambda_1|$.  We will in fact show that  $\norm{A\mathbf{x}}^2 \leq 
 |\lambda_1|^2$.
 
 Since $\{\vect{u}_1, \ldots, \vect{u}_n \}$  is a basis  of $\R^n$  it follows that
@@ -906,15 +914,19 @@ Next, invoking that each $\vect{u}_i$ is an eigenvector for $\lambda_i$ and agai
 
 $$
 \begin{array}{rcl}
-\norm{A\vect{x}}^2 &=& \norm{c_1\lambda_1\vect{u_1} + c_n\lambda_n\vect{u_n}}^2 =
-                   c_1^2\lambda_1^2 \norm{\vect{u_1}}^2  + \ldots + c_n^2\lambda_n^2 \norm{\vect{u_n}}^2 \\
+\norm{A\vect{x}}^2 &=& \norm{c_1\lambda_1\vect{u}_1+ c_n\lambda_n\vect{u}_n}^2 \\
+                   &=& c_1^2\lambda_1^2 \norm{\vect{u}_1}^2  + \ldots + c_n^2\lambda_n^2 \norm{\vect{u}_n}^2 \\
                    &=&
-                   c_1^2\lambda_1^2   + \ldots + c_n^2\lambda_n^2 \leq 
+                   c_1^2\lambda_1^2   + \ldots + c_n^2\lambda_n^2 \\
+                   &\leq & 
                    c_1^2\lambda_1^2   + \ldots + c_n^2\lambda_1^2  \\
                    &=& 
                    (c_1^2  + \ldots + c_n^2)\lambda_1^2 = \lambda_1^2.
 \end{array}
 $$
+
+At the $\leq$ step we used  that $\lambda_1^2 \geq \lambda_i^2$,  for  $i = 2, \ldots, n$.
+
 
 ::::
 
