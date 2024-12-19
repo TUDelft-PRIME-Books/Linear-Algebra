@@ -665,7 +665,7 @@ Each matrix transformation is a linear transformation.
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LinTrafo:MatrixTrafoIsLinear`
-:class: myproof
+:class: tudproof
 
 This is a direct consequence of the two properties of the matrix-vector product ({prf:ref}`Prop:MatVecProduct:Linearity`) that say
 
@@ -696,7 +696,7 @@ The transformation $S\circ T$ is called the **composition** of the two transform
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LinTrafo:CompositionLintrafos`
-:class: myproof
+:class: tudproof
 
 Suppose that
 
@@ -822,7 +822,7 @@ In words: for any linear transformation
 _the image of a linear combination of vectors is equal to the linear combination of their images_.
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LinTrafo:ExtendedLinearity`
-:class: myproof
+:class: tudproof
 
 Suppose $T:\mathbb{R}^n\rightarrow\mathbb{R}^m$ is a linear transformation.
 
@@ -1075,7 +1075,7 @@ T(\mathbf{e}\_1) & T(\mathbf{e}\_2) & \ldots & T(\mathbf{e}\_n)
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:LinTrafo:LinTrafo=MatrixTrafo`
-:class: myproof
+:class: tudproof
 
 We can more or less copy the derivation in {prf:ref}`Ex:LinTrafo:StandardMatrixIntro`.
 First of all, any vector $\mathbf{x}$ is a linear combination of the standard basis:

@@ -108,7 +108,7 @@ $$
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DetExras:DetAsScaleFactorR2`
-:class: myproof
+:class: tudproof
 
 If the matrix $A$ is not invertible, the range of $T$, which is given by $\text{span}\{\vect{a}_1, \vect{a}_2\}$, is contained in a line.
 Each region $R$ is then mapped onto a subset $S$ that is contained in this line, so
@@ -219,7 +219,7 @@ where $S$ is the image of $R$ under $T$.
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DetExtras:ScaleFactorRn`
-:class: myproof
+:class: tudproof
 
 <BR>
 
@@ -267,7 +267,7 @@ $\det{A} > 0$ and **reverses** the orientation if $\det{A} < 0$.
 If the determinant is 0, then the set $\{T(\vect{v}_1), \ldots,T(\vect{v}_n) \}$ will be linearly dependent, and for such a set the orientation is not defined.
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DetExtras:ScaleFactorR2`
-:class: myproof
+:class: tudproof
 
 This too follows immediately from the product rule of determinants.
 
@@ -417,7 +417,7 @@ $$
 The following proof of Cramer's rule rests rather nicely on properties of the determinant function. But feel free to skip it.
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:DetExtras:Cramer`
-:class: myproof, dropdown
+:class: tudproof, dropdown
 
 Suppose $\vect{x} = \vect{c} = \left[\begin{array}{c}  c_1 \\ \vdots\\ c_n\end{array} \right]
 $ is the unique solution of the linear system $A\vect{x} = \vect{b}$, with the invertible matrix $A = [ \vect{a}_1 \,  \,  \vect{a}_2 \, \ldots \,\vect{a}_n ]$.
@@ -558,7 +558,7 @@ C_{1n} &C_{2n} &C_{3n} & \ldots &C_{nn} \\
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DetExtras:Inverse`
-:class: myproof
+:class: tudproof
 
 The $j$th column $\vect{b}_j$ of $B = A^{-1}$ is the solution of the linear system $A\vect{x} = \vect{e}_j$.
 
@@ -628,7 +628,7 @@ For clarity we used dots to indicate products. Note that the first two products 
 The proof we think, is short and instructive.
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DetExtras:AdjointProperty`
-:class: myproof, dropdown
+:class: tudproof, dropdown
 
 For an invertible matrix the statement follows immediately from {prf:ref}`Prop:DetExtras:Inverse`.
 
@@ -909,7 +909,7 @@ We end the chapter with a proof of {prf:ref}`Prop:DetExtras:Properties-ndimCross
 So, if you are interested, push the button on the right.
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DetExtras:Properties-ndimCrossProd`
-:class: myproof, dropdown
+:class: tudproof, dropdown
 
 The properties follow from the observation that for each vector $\vect{v}$ in $\R^n$
 

@@ -95,7 +95,7 @@ If $\vect{y}$ and $\vect{z}$ are solutions of $\vect{x}'=A\vect{x}$ and $c$ and 
 :::
 
 :::{admonition} Proof of&nbsp;{prf:ref}`Prop:DynSystContinuous:LinComb`
-:class: myproof
+:class: tudproof
 
 Exercise.
 

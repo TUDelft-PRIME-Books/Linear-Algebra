@@ -425,7 +425,7 @@ Then $S$ is a subspace of $\R^n$.
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:EigenValues:Subspace`
-:class: myproof
+:class: tudproof
 
 We can proceed in two ways.
 
@@ -555,7 +555,7 @@ Then $\{ \vect{v}_1,  \ldots,  \vect{v}_k  \}$ is a linearly independent set.
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Eigenvalues:IndepEigenvectors`
-:class: myproof
+:class: tudproof
 
 <BR>
 
@@ -732,7 +732,7 @@ Equivalently: a matrix $A$ is singular (non-invertible) if and only if 0 is an e
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:EigenValues:SingularMatrix`
-:class: myproof
+:class: tudproof
 
 We prove the second statement.
 

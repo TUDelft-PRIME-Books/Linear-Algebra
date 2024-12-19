@@ -224,7 +224,7 @@ c_1\vect{u}+ c_2 \vect{v} \in S.
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Subspaces:SpanClosed`
-:class: myproof
+:class: tudproof
 
 To show that a subspace satisfies property {eq}`Eq:Subspaces:SpanClosed`,
 suppose that $S$ is a subspace, $\vect{u}$ and $\vect{v}$ are vectors in $S$ and
@@ -301,7 +301,7 @@ Recall {prf:ref}`Dfn:LinearCombinations:Span`: the span of zero vectors in $\R^n
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Subspaces:SpanIsSubspace`
-:class: myproof
+:class: tudproof
 
 If the number of vectors $r$ is equal to $0$, the span is equal to $\{\vect{0}\}$, the trivial subspace.
 
@@ -372,7 +372,7 @@ Once more we recall the convention that the span of zero vectors (i.e., when $r 
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Subspaces:AllSubspacesR3`
-:class: myproof
+:class: tudproof
 
 of {prf:ref}`Prop:Subspaces:AllSubspacesR3`.
 
@@ -490,7 +490,7 @@ The null space of $A$ is a subspace of $\R^n$.
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Subspaces:AllSubspacesRn`
-:class: myproof
+:class: tudproof
 
 Let $A$ be an $m\times n$ matrix.<ol type = "i">
 

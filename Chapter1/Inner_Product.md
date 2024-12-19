@@ -242,7 +242,7 @@ iv. $\mathbf{v}\ip\mathbf{v} \geq 0$, &nbsp; and&nbsp; $\mathbf{v}\ip\mathbf{v} 
 :::
 
 :::{admonition} Proof of&nbsp;{prf:ref}`Prop:RulesInnerProduct`
-:class: myproof
+:class: tudproof
 
 The first three properties follow from the corresponding properties of real numbers. For instance, for the first rule we simply use that $ab = ba$ holds for the product of real numbers $a$ and $b$.
 
@@ -481,7 +481,7 @@ Suppose $\mathbf{v} \in \mathbb{R}^n$. &nbsp; Then $\mathbf{v}\perp\mathbf{v} \i
 :::
 
 :::{admonition} Proof of&nbsp;{prf:ref}`Prop:InnerProduct:vDotv=0Impliesv=0`
-:class: myproof
+:class: tudproof
 
 By definition
 
@@ -561,7 +561,7 @@ $$
 :::
 
 :::{admonition} Proof of&nbsp;{prf:ref}`Prop:InnerProduct:UniqueProjection`
-:class: myproof
+:class: tudproof
 
 With the rules of the dot product the vector $\mathbf{w}$ is easily constructed. <BR>
 Starting from
@@ -929,7 +929,7 @@ $$
 :::
 
 :::{admonition} Proof of&nbsp;{prf:ref}`Prop:InnerProduct:UnitVectorForv`
-:class: myproof
+:class: tudproof
 
 Assume that $\mathbf{v} \neq \mathbf{0}$.
 For $\mathbf{u} = k\mathbf{v}$, with $\norm{\mathbf{u}} = 1$ and $k > 0$ to hold, we must have
@@ -990,7 +990,7 @@ $$
 :::
 
 :::{admonition} Proof of&nbsp;{prf:ref}`Thm:InnerProduct:PythagorasInRn`
-:class: myproof
+:class: tudproof
 
 This follows quite straightforwardly from the properties of the dot product.
 
@@ -1079,7 +1079,7 @@ $$
 :::
 
 :::{admonition} Proof of&nbsp;{prf:ref}`Thm:InnerProduct:Cauchy-Schwarz`&nbsp;({prf:ref}`Cauchy-Schwarz Inequality <Thm:InnerProduct:Cauchy-Schwarz>`)
-:class: myproof
+:class: tudproof
 
 There are many ways to prove the Cauchy-Schwarz inequality. There is even a whole book devoted to it: "Cauchy Schwarz master class" by J.M. Steele.
 
@@ -1195,7 +1195,7 @@ $$
 :::
 
 :::{admonition} Proof of&nbsp;{prf:ref}`Thm:InnerProduct:TriangleInequality`
-:class: myproof
+:class: tudproof
 
 Since all terms involved are non-negative we may as well show that the inequality holds for the squares:
 
@@ -1295,7 +1295,7 @@ $$
 :::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:InnerProduct:DotProdGeometric`
-:class: myproof
+:class: tudproof
 
 We will derive formula {eq}`Eq:InnerProduct:GeometricDefinition`.
 Assume that $\mathbf{v}$ and $\mathbf{w}$ are nonzero vectors.

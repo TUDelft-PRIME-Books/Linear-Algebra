@@ -69,7 +69,7 @@ In other contexts the word _spectrum_ of a transformation is used for the set of
 So, for a symmetric matrix an orthonormal basis of eigenvectors always exists. For the inertia tensor of a 3D body such a basis corresponds to the (perpendicular) principal axes.
 
 ::::{admonition} Proof of the converse of {prf:ref}`Thm:SymmetricMat:OrthogDiag`
-:class: myproof
+:class: tudproof
 
 Recall that an orthogonal matrix is a matrix $Q$ for which $Q^{-1} = Q^T$.
 
@@ -156,7 +156,7 @@ If $\mathbf{v}_1$ and $\mathbf{v}_2$ are eigenvectors of $A$ for _different_ eig
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SymmetricMat:OrthogonalEigenvectors`
-:class: myproof
+:class: tudproof
 
 Suppose $\mathbf{v}_1$ and $\mathbf{v}_2$ are eigenvectors of the symmetric matrix $A$ for the different eigenvalues $\lambda_1,\lambda_2$.
 We want to show that $\mathbf{v}_1 \ip \mathbf{v}_2 = 0$.
@@ -271,7 +271,7 @@ All eigenvalues of symmetric matrices are real.
 The easiest proof is via complex numbers. Feel free to skip it, in particular when you don't feel comfortable with complex numbers.
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SymmetricMat:RealEigenvalues`
-:class: myproof, dropdown
+:class: tudproof, dropdown
 
 For two vectors $\mathbf{u},\mathbf{v}$ in $\C^n$ we consider the expression
 
@@ -548,7 +548,7 @@ $$
 And now it's time for the proof of the main theorem. The proof is of the type technical and intricate. Skip it if you like. 
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:SymmetricMat:OrthogDiag`
-:class: myproof, dropdown
+:class: tudproof, dropdown
 
 Suppose that $A$ is a symmetric $n \times n$ matrix. We know there are $n$ real, possibly multiple, eigenvalues
 $\lambda_1, \lambda_2, \ldots, \lambda_n$.
@@ -874,7 +874,7 @@ The  matrix $B = \begin{bmatrix}  3 & 4  \\ 0 &  3\end{bmatrix}$ has the double 
 As mentioned,  {prf:ref}`Ex:SymmetricMat:Max||Ax||`  contains the main idea, but for  a proof of the general situtation you can open the following exposition.
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SymmetricMat:Max||Ax||`
-:class: myproof, dropdown
+:class: tudproof, dropdown
 
 Suppose  $A$ is a symmetric $n \times n$ matrix.
 Then $A$ has an orthonormal basis $\vect{u}_1, \vect{u}_2,\ldots,\vect{u}_n$ of eigenvectors for the eigenvalues  $\lambda_1, \ldots, \lambda_n$, where we may suppose that these are ordered according to their absolute values in decreasing order
@@ -1014,7 +1014,7 @@ Formula {eq}`Eq:SymmetricMat:SpectralDecomp` is referred to as being a **spectra
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:SymmetricMat:SpectralDecomp`
-:class: myproof
+:class: tudproof
 
 For a general $n\times n$ symmetric matrix $A$, there exists an orthogonal diagonalization
 
@@ -1057,7 +1057,7 @@ where $P_i$ denotes the orthogonal projection onto the eigenspace $E_{\lambda_i}
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Cor:SymmetricMat:SpectralThm-2`
-:class: myproof
+:class: tudproof
 
 We know that
 

@@ -75,7 +75,7 @@ for _unique_ constants $c_1,c_2,\ldots,c_m$ in $\R$.
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:ChangeOfBasis:UniqueCoords`
-:class: myproof
+:class: tudproof
 
 From the definition of a basis it follows that
 
@@ -324,7 +324,7 @@ $$
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:ChangeOfBasis:ToStandardBasis`
-:class: myproof
+:class: tudproof
 
 Suppose
 
@@ -469,7 +469,7 @@ $$
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:ChangeOfBasis:MatrixOfTrafo`
-:class: myproof
+:class: tudproof
 
 We use the definition of the coordinate vector and the linearity of the transformation. In fact we can play copycat with the proof of
 {prf:ref}`Thm:LinTrafo:LinTrafo=MatrixTrafo` in the section of linear transformations.
@@ -1027,7 +1027,7 @@ $$
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:ChangeOfBasis:CoBmatrix`
-:class: myproof
+:class: tudproof
 
 Again we will make use of the identity
 
@@ -1143,7 +1143,7 @@ $$
 $$
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ChangeOfBasis:MatrixChangeGeneralBasis`
-:class: myproof
+:class: tudproof
 
 <!-- prettier-ignore -->
 To find $[T(\vect{x})]_{\mc{C}'}$ when $ [\vect{x}]_{\mc{B}'}$ is given one can either

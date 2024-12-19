@@ -65,7 +65,7 @@ Let $a$ be a _positive_ real number. Then the two numbers $x_-=-ai$ and $x_+=ai$
 ::::
 
 :::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:roots`
-:class: myproof, dropdown
+:class: tudproof, dropdown
 
 <!-- :::{prf:proof} -->
 
@@ -196,7 +196,7 @@ zw &= (ac-bd)+(ad+bc)i, \\
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:ops`
-:class: dropdown, myproof 
+:class: dropdown, tudproof 
 <!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:ops` -->
 
 We prove the four results by working each out separately. We start with the _addition_:
@@ -273,7 +273,7 @@ If $z$ and $w$ are a complex numbers, then the following identities hold:
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:conjops`
-:class: dropdown, myproof 
+:class: dropdown, tudproof 
 <!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:conjops` -->
 
 We show each of the identities, one after the other, where we assume $z=a+bi$ and $w=c+di$, $a,b,c,d\in\mathbb{R}$:
@@ -347,7 +347,7 @@ z\overline{z} &= \Re{z}^2+\Im{z}^2.
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:conjparts`
-:class: dropdown, myproof 
+:class: dropdown, tudproof 
 <!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:conjparts` -->
 
 We show each of the identities, one after the other, where we assume $z=a+bi$, $a,b\in\mathbb{R}$:
@@ -391,7 +391,7 @@ Assume $z\in\mathbb{C}$. $z\in\mathbb{R}$ if and only if $z=\overline{z}$.
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:realz`
-:class: dropdown, myproof
+:class: dropdown, tudproof
 <!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:realz` -->
 
 Assume $z\in\mathbb{C}$.
@@ -496,7 +496,7 @@ $$
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:uniquezeros`
-:class: dropdown, myproof
+:class: dropdown, tudproof
 <!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:uniquezeros` -->
 
 Assume $\{z_1,z_2,\ldots,z_k\}$ is the set of _unique_ zeros of a polynomial $p$ of degree $n$. Then following {prf:ref}`Thm:ComplexNumbers:fundamental`, we can write
@@ -555,7 +555,7 @@ If $p(z)=0$, then $p(\overline{z})=0$ as well, and the algebraic multiplicities 
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:realpoly`
-:class: dropdown, myproof
+:class: dropdown, tudproof
 <!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:realpoly` -->
 
 Consider a polynomial $p$ of degree $n$, $\sum_{j=0}^n a_j z^j$, where the coefficients $a_n, a_{n-1}, \ldots, a_0$ are real valued numbers and $a_n\neq 0$.
@@ -850,7 +850,7 @@ $\arg\left(\frac{z}{w}\right) = \arg(z) - \arg(w)$.
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:polarmultdiv`
-:class: dropdown, myproof
+:class: dropdown, tudproof
 <!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:polarmultdiv` -->
 
 _Proof for conjugation_
@@ -931,7 +931,7 @@ $$
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:re`
-:class: dropdown, myproof
+:class: dropdown, tudproof
 <!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:re` -->
 
 The proof is relatively straight forward:
@@ -956,7 +956,7 @@ $$
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:re_diff`
-:class: dropdown, myproof
+:class: dropdown, tudproof
 <!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:re_diff` -->
 
 The proof is again straight forward:

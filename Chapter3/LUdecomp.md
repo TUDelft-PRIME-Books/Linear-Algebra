@@ -693,7 +693,7 @@ There are several ways to prove  {prf:ref}`Prop:LUdecomp:L-properties`.
 The best would be to think of a proof yourself, but you can also have a peek at the exposition below.
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LUdecomp:L-properties`
-:class: myproof, dropdown
+:class: tudproof, dropdown
 
 :::{latexlist}
 :enumerated: true
@@ -763,7 +763,7 @@ that  {prf:ref}`Alg:LUdecomp:LUalgorithm`  works can have a look at the followin
 
 
 :::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LUdecomp:Existence`
-:class: myproof, dropdown
+:class: tudproof, dropdown
 
 Suppose $A$ is an $n\times n$ matrix that can be row reduced top down to an  echelon matrix $U$ (which will then be an upper triangular). We can row reduce $A$ from top to bottom, where we use the same form as in {prf:ref}`Ex:LUdecomp:SecondLUSecondLook`. 
 For instance the first two steps are
@@ -962,7 +962,7 @@ For an invertible matrix $A$, if it has an $LU$ decomposition, it will be unique
 
 
 ::::::{admonition} Proof of {prf:ref}`Prop:LUdecomp:Uniqueness`.
-:class: myproof, dropdown
+:class: tudproof, dropdown
 
 Suppose $A$ is an invertible matrix with two $LU$ decompositions
 
@@ -1399,7 +1399,7 @@ Note that from the second identity it follows that  $P_2^{-1} = P_2^T$.
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LUdecomp:PermutationMatrices`
-:class: myproof, dropdown
+:class: tudproof, dropdown
 
 :::{latexlist}
 :enumerated: true

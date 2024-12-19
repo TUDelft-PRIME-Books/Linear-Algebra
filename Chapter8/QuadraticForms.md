@@ -313,7 +313,7 @@ $$
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:QuadForms:Substitution`
-:class: myproof
+:class: tudproof
 
 If we put $\vect{x} = P\vect{y}$ we get
 
@@ -417,7 +417,7 @@ where $\lambda_1, \ldots, \lambda_n$ are the _eigenvalues_ of the matrix $A$.
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:QuadForms:Diagonalize`
-:class: myproof
+:class: tudproof
 
 If we make the substitution $\vect{x} = Q\vect{y}$ we find that
 
@@ -528,7 +528,7 @@ $\lambda_1 \geq \lambda_2 \geq \ldots \geq \lambda_n$.  Then the maximum and the
 The proof contains the same type of reasoning as the proof of {prf:ref}`Prop:SymmetricMat:Max||Ax||`.
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:QuadForms:MaximumxTAx`
-:class: myproof, dropdown
+:class: tudproof, dropdown
 
 Suppose that   $\vect{u}_1, \vect{u}_2,\ldots,\vect{u}_n$  is an orthonormal basis of eigenvectors for $A$ for the eigenvalues  $\lambda_1 \geq \ldots \geq \lambda_n$.
 
@@ -686,7 +686,7 @@ $q_A$ is **indefinite** if at least one eigenvalue is positive and at least one 
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:QuadForms:Classification`
-:class: myproof
+:class: tudproof
 
 This immediately follows from {prf:ref}`Prop:QuadForms:Diagonalize`. If we make the substitution $\vect{x} = Q\vect{y}$ with the matrix $Q$ of the orthogonal diagonalization, i.e.,
 

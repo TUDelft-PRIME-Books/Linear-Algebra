@@ -139,7 +139,7 @@ Check for yourself that the vectors $\vect{b}_1,\vect{b}_2, \vect{b}_3$ are inde
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:GramSchmidt:GramSchmidt`
-:class: myproof
+:class: tudproof
 
 Let $W_j$ be the subspace spanned by the first $j$ vectors $\vect{a}_1, \ldots, \vect{a}_j$, for $j = 1,2\ldots,m$.
 
@@ -340,7 +340,7 @@ The matrix $Q$ is found by applying the Gram-Schmidt process to the (linearly in
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:GramSchmidt:QR-decomp`
-:class: myproof
+:class: tudproof
 
 One way to see this, is to look at the creation of the orthonormal set $\{\vect{q}_1,\ldots,\vect{q}_m\}$
 from the linearly independent set $\{\vect{a}_1,\ldots,\vect{a}_m\}$.
@@ -432,7 +432,7 @@ $$
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:GramSchmidt:QR-quick`
-:class: myproof
+:class: tudproof
 
 We know that for the matrix $Q$ as specified the decomposition
 

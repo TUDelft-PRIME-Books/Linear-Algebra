@@ -163,7 +163,7 @@ Suppose $A = U\Sigma V^T$, with $U, \Sigma, V$ as in the definition.
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SVD:BasicProp`
-:class: myproof, dropdown
+:class: tudproof, dropdown
 
 Suppose $\sigma_1>0, \ldots, \sigma_r>0$ and $\sigma_{r+1}=0 , \ldots, \sigma_p=0$, where $p=$min$\{m,n\}$.
 
@@ -238,7 +238,7 @@ Moreover,  the columns of $V$ are corresponding eigenvectors  (of $A^TA$).
 
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SVD:singularvalues`
-:class: myproof, dropdown
+:class: tudproof, dropdown
 
 First of all, because of the properties of the matrices $U$, $\Sigma$ and $V$ we have that
 
@@ -281,7 +281,7 @@ This can also be formulated as
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SVD:HighestSigma`
-:class: myproof
+:class: tudproof
 
 To maximize  $\norm{A\vect{x}}$  we may as well maximize  $\norm{A\vect{x}}^2$. &nbsp; Note that
 
@@ -422,7 +422,7 @@ Let $A$ be an $m\times n$ matrix with real entries. Then the following propertie
 :::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SVD:propertiesATA`
-:class: myproof, dropdown
+:class: tudproof, dropdown
 
 :::{latexlist}
 :enumerated: true
@@ -531,7 +531,7 @@ The proof consists in showing that all steps in the algorithm do what they are s
 singular value decomposition of $A$.  
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:SVD:Existence`
-:class: myproof, dropdown
+:class: tudproof, dropdown
 
 Let us first consider the six steps of the algorithm.
 

@@ -91,7 +91,7 @@ $$
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatVecProd:Row-ColumnRule` ({prf:ref}`Row-column rule <Prop:MatVecProd:Row-ColumnRule>`)
-:class: myproof
+:class: tudproof
 
 The vector on the left-hand side of the identity is by definition equal to the linear combination
 
@@ -300,7 +300,7 @@ $A\,(c\mathbf{x}) = c\,A\mathbf{x}$.
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatVecProduct:Linearity`
-:class: myproof
+:class: tudproof
 
 We will prove the first of the two statements; the other statement goes in a similar fashion.
 There are several ways to derive the formula. Via the linear combination idea it may be the easiest.
@@ -566,7 +566,7 @@ The collection $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$ is equal to $\mathbb{
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LinearCombinations:SpanSolution`
-:class: myproof
+:class: tudproof
 
 If $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$ is equal to $\mathbb{R}^n$, then each vector $\mathbf{b}$ is a vector in the span of the vectors $\mathbf{v}_1, \ldots, \mathbf{v}_k$. This means that we can write $\mathbf{b}$ as a linear combination
 
@@ -600,7 +600,7 @@ The equation $A \mathbf{x}=\mathbf{b}$ has a solution for each $\mathbf{b}$ in $
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LinearCombinations:PivotInEachRow`
-:class: myproof
+:class: tudproof
 
 Suppose that $A$ does not contain a pivot position in each row. By definition of the reduced echelon form we know that the last row of $A$ does not have a pivot position. If $E$ is the reduced echelon form of $A$, then this means that the bottom row of $E$ contains only zeros. Let $\mathbf{e}_n$ be again the vector of which the last entry is equal to 1 and all other entries are equal to zero.
 
@@ -643,7 +643,7 @@ The matrix $A$ has a pivot position in each row.
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LinearCombinations:PivotSpanSolution`
-:class: myproof
+:class: tudproof
 
 This follows from {prf:ref}`Prop:LinearCombinations:SpanSolution` and {prf:ref}`Prop:LinearCombinations:PivotInEachRow`.
 
@@ -694,7 +694,7 @@ If $\mathbf{v}_1, \dots ,\mathbf{v}_k$ are vectors in $\mathbb{R}^n$ and $k<n$, 
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LinearCombinations:SpanNotRn`
-:class: myproof
+:class: tudproof
 
 Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix $A$. By definition, the matrix $A$ is an $n\times k$ matrix. Let $E$ be the reduced echelon form of $A$. Since $E$ has $k$ columns we know that $E$ can have at most $k$ pivots. Because $k<n$ this means that the number of pivots is less than $n$. Therefore, we find that the number of pivots is less than the number of rows in $E$. This implies that it is impossible for $E$ to have a pivot in each row. {prf:ref}`Prop:LinearCombinations:PivotSpanSolution` now tells us that the span of the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ cannot be equal to $\mathbb{R}^n$.
 

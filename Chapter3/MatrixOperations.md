@@ -243,7 +243,7 @@ $(A^T)^T = A$.
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixOps:Transpose`
-:class: myproof
+:class: tudproof
 
 We will prove the second statement and leave the other two to the diligent reader. See
 {numref}`Exc:MatrixOps:CheckTransposeRules`.
@@ -517,7 +517,7 @@ This is sometimes called the **row-column expansion** of the product.
 ::::::
 
 :::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixOps:RowColExpansion`
-:class: myproof
+:class: tudproof
 
 We already saw this row-column expansion in {numref}`Sec:MatVecProduct`.
 
@@ -722,7 +722,7 @@ The $i$-th row of the product $AB$ is the linear combination of the rows of the 
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixOps:ProductRowCombinations`
-:class: myproof
+:class: tudproof
 
 The indicated linear combination yields:
 
@@ -946,7 +946,7 @@ We need a good perspective to give a proof of the general case.
 ::::::
 
 :::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixOps:ProdProperties`
-:class: myproof
+:class: tudproof
 
 Rules i. and ii. are checked in a straightforward way. See {numref}`Exc:MatrixOps:RulesProduct`.
 
@@ -1282,6 +1282,8 @@ See {numref}`Figure %s <Fig:MatrixOps:NilPotent>`.
 Visualisation of $\vect{x} \mapsto A^2\vect{x}$.
 ```
 
+::::::
+
 ::::::{prf:remark}
 The next list gives six situations where matrix multiplication acts differently than multiplication of numbers.  
 In fact, all statements can be related to one of the first two.
@@ -1487,7 +1489,7 @@ As {prf:ref}`Ex:TransposeProduct` illustrates the rule is not restricted to squa
 The proof for general matrices $A$ and $B$ for which the product $AB$ is well defined is as follows
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixOperations:TransposeProduct`
-:class: myproof
+:class: tudproof
 
 To show that
 

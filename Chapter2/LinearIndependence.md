@@ -39,7 +39,7 @@ precisely two vectors, say $\mathbf{u}$ and $\mathbf{v}$. Then $S$ is linearly i
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LinInd:LinIndforSmallSets`
-:class: myproof
+:class: tudproof
 
 <ul>
 <li>
@@ -251,7 +251,7 @@ has a non-trivial solution. That is, a solution where not all $c_i$ are equal to
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LinInd:LinIndisNonTrivSol`
-:class: myproof
+:class: tudproof
 
 If $\left\lbrace\mathbf{v}_{1},...,\mathbf{v}_{k}\right\rbrace$ is linearly dependent, one of these vectors, say $\mathbf{v}_{i}$, is linearly dependent on the others, i.e. it is in $\Span{\mathbf{v}_{1},...,\mathbf{v}_{i-1},\mathbf{v}_{i+1},...\mathbf{v}_{k}}$. Therefore, there exist some scalars $c_{1},...,c_{i-1},c_{i+1},...,c_{k}$ such that
 
@@ -369,7 +369,7 @@ An ordered set $S=(\mathbf{v}_{1},...,\mathbf{v}_{n})$ is linearly dependent if 
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:LindInd:LinIndisVectDeponPrevious`
-:class: myproof
+:class: tudproof
 
 Let us assume $\mathbf{v}_{k}=c_{1}\mathbf{v}_{1}+\cdots+c_{k-1}\mathbf{v}_{k-1}$ for some scalars $c_{1},...,c_{k-1}$. An arbitrary element $\mathbf{v}$ of $\Span{S}$ is a linear combination of $\mathbf{v}_{1},...,\mathbf{v}_{n}$, so it is
 
@@ -420,7 +420,7 @@ Suppose $\mathbf{u}_{1},...,\mathbf{u}_{k}$ and $\mathbf{v}_{1},...,\mathbf{v}_{
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:LinInd:TooManyVectsimpliesLinDep`
-:class: myproof
+:class: tudproof
 
 Consider the matrices
 
@@ -452,7 +452,7 @@ Let $S$ be a subset of $\mathbb{R}^{n}$. If there are more than $n$ vectors in $
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:LinInd:MoreRowthanColmeansLinDep`
-:class: myproof
+:class: tudproof
 
 Take distinct vectors $\mathbf{v}_{1},...,\mathbf{v}_{n+1}$ in $S$. $\Span{\mathbf{v}_{1},...,\mathbf{v}_{n+1}}$ is contained in $\Span{\mathbf{e}_{1},..,\mathbf{e}_{n}}$ and $n+1>n$, so $\left\lbrace\mathbf{v}_{1},..,\mathbf{v}_{n+1}\right\rbrace$ is linearly dependent by {prf:ref}`Thm:LinInd:TooManyVectsimpliesLinDep`. Since this set is contained in $S$, $S$ must be linearly dependent, too, by {prf:ref}`Prop:LinInd:LinDepSets`.
 

@@ -175,7 +175,7 @@ If an inverse of a matrix $A$ exists, then it is unique.
 The proof is very short, when we plug in the right idea at the right place.
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixInv:UniqueInverse`
-:class: myproof
+:class: tudproof
 
 Suppose $B$ and $C$ are two matrices that satisfy the properties of being an inverse of $A$, i.e.
 
@@ -444,7 +444,7 @@ $$
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixInv:InvertibleIndepCols`
-:class: myproof
+:class: tudproof
 
 As in the proof in {prf:ref}`Rem:MatrixInvDetZeroDependentColumns` we have to prove two implications:
 
@@ -560,7 +560,7 @@ $$
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SolutionViaInverse`
-:class: myproof
+:class: tudproof
 
 We multiply both sides of the equation
 
@@ -724,7 +724,7 @@ $$
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixInv:ElemProperties`
-:class: myproof
+:class: tudproof
 
 All statements can be proved by verifying that the relevant products are equal to $I$.
 
@@ -841,7 +841,7 @@ $$
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixInv:ProductRule`
-:class: myproof
+:class: tudproof
 
 Again we just check that the properties of the definition hold.
 
@@ -1084,7 +1084,7 @@ $$
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixInv:Algorithm`
-:class: myproof
+:class: tudproof
 
 We have already seen ({prf:ref}`Prop:MatrixInv:InvertibleIndepCols`) that an invertible matrix linearly independent columns,
 which implies that the reduced echelon form of $A$ is indeed the identity matrix. And then it is clear that via row operations we get
@@ -1390,7 +1390,7 @@ $A$ can be written as a product of elementary matrices: $A = E_1E_2\cdots E_k$.
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations`
-:class: myproof
+:class: tudproof
 
 It is a good exercise to find out where the evidence of each characterization is found,
 and wherever necessary to fill in the missing details.

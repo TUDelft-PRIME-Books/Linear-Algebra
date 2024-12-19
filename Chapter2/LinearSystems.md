@@ -520,7 +520,7 @@ Changing the order of the equations.
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LinSystems:ElimOperations`
-:class: myproof
+:class: tudproof
 
 The correctness of the first operation is illustrated in
 {prf:ref}`Ex:LinSystems:EliminationFirst`. One example is by far not a proof, but the explanation given there can be generalized/formalized.  
@@ -753,7 +753,7 @@ Note that the row swap that we used as a first step is not really necessary. How
 We summarize the elimination method in a
 
 ::::{admonition} Summary
-:class: tip
+:class: remark
 :name: Summ:LinSystems:EliminationMethod
 
 Any linear system in the variables $x_1,\ldots, x_n$ can be solved as follows:
@@ -1780,7 +1780,7 @@ A system of linear equations has either zero, or one, or infinitely many solutio
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:LinSystems:ZeroOneInfSolutions`
-:class: myproof
+:class: tudproof
 
 This just depends on the outcome of the elimination method (i.e. {prf:ref}`Alg:LinSystems:ElimMethod`).
 If iii. occurs, the number of solutions is zero; if iv. occurs and there are no free variables, there is just one solution. Lastly, if there is at least one free variable, the solution set automatically contains infinitely many solutions.
@@ -1881,7 +1881,7 @@ A linear system of $m$ equations in $n$ unknowns can only have a unique solution
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LinSystems:UniqueSolutionImpliesSize`
-:class: myproof
+:class: tudproof
 
 Let
 

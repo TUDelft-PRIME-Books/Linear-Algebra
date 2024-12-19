@@ -251,7 +251,7 @@ For each linear system $A\vect{x} = \vect{b}$, where $A$ is an $m \times n$ matr
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LeastSquares:Existence`
-:class: myproof
+:class: tudproof
 
 In {prf:ref}`Rem:LeastSquares:BestLinComb` it was noted that a least squares solution corresponds to the vector in Col $A$ that is closest to $\vect{b}$.
 
@@ -413,7 +413,7 @@ In the proof properties of the orthogonal projection are combined in a clever wa
 As usual, feel free to skip it.
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:LeastSquares:NormalEquations`
-:class: myproof, dropdown
+:class: tudproof, dropdown
 
 As usual we denote the columns of the $m \times n$ matrix $A$ by $\vect{a}_1, \ldots, \vect{a}_n$.
 
@@ -509,7 +509,7 @@ the matrix $A^TA$ is invertible.
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LeastSquares:InvertibleATA`
-:class: myproof
+:class: tudproof
 
 In fact, something stronger holds:
 

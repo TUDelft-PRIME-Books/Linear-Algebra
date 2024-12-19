@@ -127,7 +127,7 @@ Moreover, suppose $\vect{x}$ is the result after a (sufficiently) large number o
 ::::
 
 ::::{admonition} Informal proof of {prf:ref}`Prop:Powermethod:Powermed`
-:class: myproof, dropdown
+:class: tudproof, dropdown
 
 For the proof we assume that the matrix is diagonalizable, to be able to use {eq}`Eq:PowerMethod:GenSol`. For an 'arbitrary' matrix the odds are very small that it has a double eigenvalue, and as long as this is not the eigenvalue with the highest modulus the conclusion of the theorem is still valid.  So we assume that  $\vect{v}_1, \ldots, \vect{v}_n$  is a set of $n$ linearly independent eigenvectors for $A$.
 
@@ -425,7 +425,7 @@ Then the power method applied to $A^{-1}$ converges (apart from the usual except
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:PowerMethod:SmallestEigenvalue` ({prf:ref}`Inverse Power Method <Prop:PowerMethod:SmallestEigenvalue>`)
-:class: myproof, dropdown
+:class: tudproof, dropdown
 
 
 We make use of the property in {numref}`Exc:EigenValues:EigenvaluesInverse` in

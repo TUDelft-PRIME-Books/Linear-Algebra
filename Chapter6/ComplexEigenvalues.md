@@ -141,7 +141,7 @@ then $\overline{AC} = \overline{A}$ $\overline{C}$.
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:ComplexEV:PropConjugate`
-:class: myproof
+:class: tudproof
 
 The statements follow immediately from the definitions of the sum and product of two matrices, and of the corresponding rules of complex arithmetic that say
 
@@ -178,7 +178,7 @@ $\overline{\vect{v}} = \vect{u}-i\vect{w}$ is an eigenvector for $\overline{\lam
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:ComplexEV:Conjugation`
-:class: myproof
+:class: tudproof
 
 Suppose $A(\vect{u}+i\vect{w}) = (\alpha + \beta i)(\vect{u}+i\vect{w})$.
 
@@ -265,7 +265,7 @@ $, for some $r > 0$ and angle $\varphi$.
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:ComplexEV:Rotation`
-:class: myproof
+:class: tudproof
 
 Both columns of $A$ have length $r = \sqrt{a^2 + (\pm b)^2} = \sqrt{a^2 + b^2}$.
 
@@ -337,7 +337,7 @@ That means that the two-dimensional subspace $S = \Span{\vect{u},\vect{w}}$ is i
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:ComplexEV:Invariant`
-:class: myproof
+:class: tudproof
 
 Let $\vect{v}$ be an eigenvector for $\lambda=\alpha - \beta i$.
 So, $\vect{v} = \vect{u}+i\vect{w}$, for real vectors $\vect{u}$ and $\vect{w}$.

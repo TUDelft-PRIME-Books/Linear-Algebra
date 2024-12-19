@@ -302,7 +302,7 @@ So, there exists a set $\mathcal{B}$ containing $\mathcal{A}$ which is a basis f
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:BasisDim:Thinning`
-:class: myproof
+:class: tudproof
 
 The ideas are quite straightforward.
 
@@ -587,7 +587,7 @@ The null space of $A$ is equal to the null space of $E$.
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:BasisDim:PivotColsBasis`
-:class: myproof
+:class: tudproof
 
 The main idea of the first statement: row operations do not alter the linear relations between the columns of a matrix. Now why is this so?
 Let
@@ -877,7 +877,7 @@ Every basis of a fixed subspace $S$ in $\R^n$ has the same number of elements.
 
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:BasisDim:EqualDim`
-:class: myproof
+:class: tudproof
 
 The proof is an immediate consequence of {prf:ref}`Thm:LinInd:TooManyVectsimpliesLinDep`
 from the section on linear independence. Because of its vital important we restate it here (check the side note).
@@ -1126,7 +1126,7 @@ Another way to put it: once it is known that the dimension of $S$ equals $k$, ea
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:BasisDim:TwoOfThreeSuffice`
-:class: myproof
+:class: tudproof
 
 We first show the "easy" part:
 
@@ -1264,7 +1264,7 @@ $$
 
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:BasisDim:DimensionTheorem`
-:class: myproof
+:class: tudproof
 
 The proof consists of combining several properties of this section.
 
@@ -1438,7 +1438,7 @@ $$
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:BasisDim:EquivalentMatricesEqualRowspaces`
-:class: myproof
+:class: tudproof
 
 Recall that equivalence here means that by row operations we can transform $A$ into $B$ (and vice versa). So we have to show that row operations do not change the row space.
 
@@ -1466,7 +1466,7 @@ For each matrix $A$ the row space and the column space have the same dimension.
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:BasisDim:EqualDimRowColSpace`
-:class: myproof
+:class: tudproof
 
 If a matrix $A$ is row reduced to an echelon matrix $E$ we know that
 
@@ -1727,7 +1727,7 @@ $$
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:BasisDim:RankAPEqualToRankPA`
-:class: myproof
+:class: tudproof
 
 Suppose $A$ and $P$ are as stated. Then by {numref}`Exc:BasisDim:RankABLeqRankA`
 
