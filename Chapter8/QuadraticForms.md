@@ -536,17 +536,17 @@ Suppose that   $\vect{u}_1, \vect{u}_2,\ldots,\vect{u}_n$  is an orthonormal bas
 First of all
 
 $$
-  \vect{u}_1^TA\vect{u}_1 =  \lambda_1\vect{u}_1^T\vect{u}_1 = \lambda_1 \quad \text{and} \quad 
-  \vect{u}_n^TA\vect{u}_n =  \lambda_n\vect{u}_n^T\vect{u}_n = \lambda_n,
+  q(\vect{u}_1) = \vect{u}_1^TA\vect{u}_1 = \vect{u}_1^T(A\vect{u}_1) =  
+  \vect{u}_1^T(\lambda_1\vect{u}_1)  = \lambda_1\vect{u}_1^T\vect{u}_1 = \lambda_1. 
 $$
 
-so $q(\vect{x})$  does take on the values  $\lambda_1$ and  $\lambda_n$.
+Likewise $q(\vect{u}_n) =  \lambda_n$, so $q(\vect{x})$  does take on the values  $\lambda_1$ and  $\lambda_n$.
 
 Next, for an arbitrary unit vector $\vect{x}$, which can always be written as 
 
 $$
   c_1\vect{u}_1 +    c_2\vect{u}_2 + \ldots +  c_n\vect{u}_n, \quad \text{with} \quad 
-  u_1^2 + c_2^2 + \ldots + c_n^2 = 1 
+  c_1^2 + c_2^2 + \ldots + c_n^2 = 1 
 $$
 
 (cf. proof of {prf:ref}`Prop:SymmetricMat:Max||Ax||`), we deduce that
@@ -562,26 +562,32 @@ $$
    \end{array}
 $$
 
-All crossterms $\vect{u}_i^T\vect{u}_j$  with $i\neq j$ drop out since $\vect{u}_i\ip\vect{u}_j=0$, for $i\neq j$,  and $\vect{u}_i^T\vect{u}_i = 1$ by the assumption that the vectors $\mathbf{u}_i$ are unit vectors.
+All cross terms $\vect{u}_i^T\vect{u}_j$  with $i\neq j$ drop out since $\vect{u}_i\ip\vect{u}_j=0$, for $i\neq j$,  and $\vect{u}_i^T\vect{u}_i = 1$ by the assumption that the vectors $\mathbf{u}_i$ are unit vectors.
 
-Now invoking  $\lambda_1 \geq \lambda_2 \geq \ldots  \geq \lambda_n$ we see that
+Now, invoking  $\lambda_1 \geq \lambda_2 \geq \ldots  \geq \lambda_n$ and $c_1^2 + c_2^2 + \ldots +c_n^2 = 1$,  we see that
 
 $$ 
   \begin{array}{rcl}    
-     c_1^2\lambda_n +c_2^2\lambda_n +\cdots + c_n^2\lambda_n &\leq&
-     c_1^2\lambda_1 +c_2^2\lambda_2 +\cdots + c_n^2\lambda_n\\
-     &\leq&
-     c_1^2\lambda_1 +c_2^2\lambda_1 +\cdots + c_n^2\lambda_1.
+     \lambda_n = \left(c_1^2 +c_2^2 +\cdots + c_n^2\right)\lambda_n 
+     &=&
+     c_1^2\lambda_n +c_2^2\lambda_n +\cdots + c_n^2\lambda_n \\
+     &\leq&  c_1^2\lambda_1 +c_2^2\lambda_2 +\cdots + c_n^2\lambda_n,
      \end{array}
 $$
 
-Since $c_1^2 + c_2^2 + \ldots +c_n^2 = 1$, we may conclude that indeed
+and also  
+
+$$ 
+  \lambda_1 \geq c_1^2\lambda_1 +c_2^2\lambda_2 +\cdots + c_n^2\lambda_n,
+$$
+
+so we may conclude that indeed
 
 $$
-  \lambda_n \quad\leq\quad c_1^2\lambda_1 +c_2^2\lambda_2 +\cdots + c_n^2\lambda_n \quad\leq\quad \lambda_1,
+  \lambda_n \,\leq\, c_1^2\lambda_1 +c_2^2\lambda_2 +\cdots + c_n^2\lambda_n \,\leq\, \lambda_1,
 $$
 
-where the expression in the middle stands for our  $\vect{x}^T A \vect{x} = q(\vect{x})$. 
+where the expression in the middle is equal to our  $\vect{x}^T A \vect{x} = q(\vect{x})$. 
 
 ::::
 

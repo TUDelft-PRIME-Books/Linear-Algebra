@@ -970,7 +970,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/c3f025b5-2ca4-48cb-a1f9-4e144c8bc258?id=93149
 :label: grasple_exercise_5_3_16
 :dropdown:
-:description: Find $h$ (in matrix $A$) such that $A$ is invertible.
+:description: Finding a parameter $h$ (in a matrix $A$) such that $A$ is invertible.
 
 ::::::
 
@@ -1002,7 +1002,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/9ae9228f-ab17-4853-9995-e38e16d87c22?id=93153
 :label: grasple_exercise_5_3_19
 :dropdown:
-:description: To find  det$\left(A^3\right)$, for  a given matrix $A$..
+:description: To find  det$\left(A^3\right)$, for  a given matrix $A$.
 
 ::::::
 

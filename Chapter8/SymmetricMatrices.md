@@ -478,7 +478,22 @@ $$
 
 ::::
 
-One more example before we get to the proof (or you jump over to
+The procedure followed in  {prf:ref}`Ex:SymmetricMat:OrthogDiag3x3` leads way to an algorithm for constructing an orthogonal diagonalization.
+
+::::{prf:algorithm}
+:label: Alg:SymmetricMat:OrthogDiagonalization
+
+1. Compute the eigenvalues of the matrix.
+
+2. Find a basis for each eigenspace.
+
+3. Use the Gram-Schmidt procedure to turn these bases into orthonormal bases for the eigenspace
+
+4. Put everything together in the matrices $D$  and $Q$. 
+
+::::
+
+One more example to illustrate matters, before we get to the proof (or you jump over to
 {numref}`SubSec:SymmetricMat:SpectralDecomp`).
 
 ::::{prf:example}
@@ -805,12 +820,17 @@ The importance of the step-by-step reduction is that it shows that from the 'min
 ::::
 
 
-There are situations where it is important to know how large  $\norm{A\vect{x}}$ can become for unit vectors $\vect{x}$.  The general case, for non-square matrices,  will be handled in {numref}`Subsection %s <Subsec:SVDGeometrically>`.  For symmetric matrices the question is answered by the next proposition
+There are situations where it is important to know how large  $\norm{A\vect{x}}$ can become for unit vectors $\vect{x}$.  The general case, for non-square matrices,  will be handled in {numref}`Subsection %s <Subsec:SVDGeometrically>`.  For symmetric matrices the question is answered by the next proposition.
 
 ::::{prf:proposition}
-:label: Prop:SymmetricMat:Max||Ax|| 
+:label: Prop:SymmetricMat:Max||Ax||
 
-Suppose $A$ is a symmetric matrix.  Then the maximum value  $\norm{A\mathbf{x}}$  will attain on the set of unit vectors is equal to  $|\lambda_1|$, where $\lambda_1$ is the eigenvalue of the highest absolute value.
+Suppose $A$ is a symmetric matrix.  Then the maximum value  $\norm{A\mathbf{x}}$  will attain on the set of unit vectors is equal to  $|\lambda|$, where $\lambda$ is the eigenvalue of the highest absolute value.
+In formula form
+
+$$
+ \text{max}\norm{A\mathbf{x}} = |\lambda_{\text{max}}| \,\, \text{on the set} \,\, \{\vect{x}: \norm{\vect{x}} = 1\}.
+$$
 
 ::::
 
@@ -821,13 +841,17 @@ But first we will give an example that catches the main idea.
 ::::{prf:example}
 :label: Ex:SymmetricMat:Max||Ax|| 
 
-The (symmetric)  matrix $A = \begin{bmatrix}  1 & 4  \\ 4 & 1 \end{bmatrix}$ has the eigenvalues $\lambda_1 = 5$ and  $\lambda_2 = -3$ with corresponding unit eigenvectors  $\mathbf{u}_1 = \dfrac{1}{\sqrt{2}}\begin{bmatrix}  1   \\  1 \end{bmatrix}$  and  $\mathbf{v}_2 = \dfrac{1}{\sqrt{2}}\begin{bmatrix}  1   \\  -1 \end{bmatrix}$ respectively.
+The (symmetric)  matrix $A = \begin{bmatrix}  -1 & 4  \\ 4 & -1 \end{bmatrix}$ has the 
+eigenvalues $\lambda_1 = -5$ and  $\lambda_2 = 3$ with corresponding unit 
+eigenvectors  $\mathbf{u}_1 = \dfrac{1}{\sqrt{2}}\begin{bmatrix}  1   \\  -1 \end{bmatrix}$   and  $\mathbf{u}_2 = \dfrac{1}{\sqrt{2}}\begin{bmatrix}  1   \\  1 \end{bmatrix}$ respectively. 
+So according to {prf:ref}`Prop:SymmetricMat:Max||Ax||`  the maximum value of $\norm{A\vect{x}}$ on 
+the set of vectors with norm 1 must be 5.
 
 First of all, for  $\vect{x} = \vect{u}_1$ it holds that $\norm{A\vect{u}_1} = ||5\vect{u}_1|| = 5$.
 
 Second,  suppose $\vect{x} $ is an arbitrary unit vector. 
 We will in fact show that  $\norm{A\vect{x}}^2 \leq 5^2$. Since $\{\vect{u}_1,\vect{u}_2\}$ is a basis,  $\vect{x} = c_1\vect{u}_1 + c_2\vect{u}_2 $, for some parameters $c_1, c_2$. 
-Then,  since $\vect{u}_1$ and $\vect{u}_2$ are orthogonal unit vectors
+Then,  since $\vect{u}_1$ and $\vect{u}_2$ are orthogonal unit vectors,
 
 $$
   \begin{array}{rcl}
@@ -837,24 +861,24 @@ $$
 $$
 
 
-so  $c_1^2 + c_2^2 = 1$.
+so &nbsp; $c_1^2 + c_2^2 = \norm{\vect{x}}^2 = 1$.
 
 Likewise,
 
 $$
   \begin{array}{rcl}
   \norm{A\vect{x}}^2 &=& \norm{c_1A\vect{u}_1 + c_2A\vect{u}_2}^2\\
-  &=&  \norm{c_1\cdot5\vect{u}_1 + c_2\cdot(-3)\vect{u}_2}^2 \\
-  &=&   \norm{c_1\cdot5\vect{u}_1}^2 + \norm{c_2\cdot(-3)\vect{u}_2}^2 \\
-  &=& 5^2c_1^2\norm{\vect{u}_1}^2  + (-3)^2c_2^2\norm{\vect{u}_1}^2 \\
-  &=& 5^2c_1^2 + (-3)^2c_2^2.
+  &=&  \norm{c_1\cdot(-5)\vect{u}_1 + c_2\cdot3\vect{u}_2}^2 \\
+  &=&   \norm{c_1\cdot(-5)\vect{u}_1}^2 + \norm{c_2\cdot3\vect{u}_2}^2 \\
+  &=& (-5)^2c_1^2\norm{\vect{u}_1}^2  +  3^2c_2^2\norm{\vect{u}_2}^2 \\
+  &=& 25c_1^2 + 9c_2^2.
   \end{array}
 $$
 
 So we have
 
 $$
-  \norm{A\vect{x}}^2 = 5^2c_1^2 + (-3)^2c_2^2 \leq 5^2c_1^2 + 5^2c_2^2 = 5^2(c_1^2 + c_2^2) = 5^2,
+  \norm{A\vect{x}}^2 = 25c_1^2 + 9c_2^2 \leq 25c_1^2 + 25c_2^2 = 25(c_1^2 + c_2^2) = 25,
 $$
 
 which implies that  indeed  &nbsp;  $\norm{A\vect{x}} \leq 5$  for all vectors $\vect{x}$ with 
@@ -871,7 +895,7 @@ The  matrix $B = \begin{bmatrix}  3 & 4  \\ 0 &  3\end{bmatrix}$ has the double 
 
 ::::
 
-As mentioned,  {prf:ref}`Ex:SymmetricMat:Max||Ax||`  contains the main idea, but for  a proof of the general situtation you can open the following exposition.
+As mentioned,  {prf:ref}`Ex:SymmetricMat:Max||Ax||`  contains the main idea, but for  a proof of the general situation you can open the following exposition.
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SymmetricMat:Max||Ax||`
 :class: tudproof, dropdown
@@ -891,21 +915,28 @@ $$
 
 so  there is at least a unit vector of which the norm gets a factor $|\lambda_1|$.
 
-It remains to show that for an arbitrary unit vector $\vect{x}$ always $\norm{A\mathbf{x}} \leq 
-|\lambda_1| \norm{\vect{x}} = |\lambda_1|$.  We will in fact show that  $\norm{A\mathbf{x}}^2 \leq 
+It remains to show that for an arbitrary unit vector $\vect{x}$ always 
+
+$$ 
+ \norm{A\mathbf{x}} \leq 
+|\lambda_1| \norm{\vect{x}} = |\lambda_1|.
+$$
+
+We will in fact show that  $\norm{A\mathbf{x}}^2 \leq 
 |\lambda_1|^2$.
 
 Since $\{\vect{u}_1, \ldots, \vect{u}_n \}$  is a basis  of $\R^n$  it follows that
 
 $$
-  \vect{x} = c_1\mathbf{u}_1 +  c_2\mathbf{u}_2 + \ldots  c_n\mathbf{u}_n, \quad \text{for some } \enspace c_1,\ldots,c_n. 
+  \vect{x} = c_1\mathbf{u}_1 +  c_2\mathbf{u}_2 + \ldots +  c_n\mathbf{u}_n, \quad
+  \text{for some } \enspace c_1,\ldots,c_n. 
 $$
 
 From the orthonormality of the $\vect{u}_i$ it follows that
 
 $$
- \norm{\vect{x}}^2 = 1 = \norm{c_1\mathbf{u}_1 +   \ldots  c_n\mathbf{u}_n}^2
- = c_1^2\norm{\mathbf{u}_1}^2 +   \ldots +  c_2^2\norm{\mathbf{u}_n}^2 = c_1^2 + \ldots + c_n^2,
+ 1 = \norm{\vect{x}}^2  = \norm{c_1\mathbf{u}_1 +   \ldots + c_n\mathbf{u}_n}^2
+ = c_1^2\norm{\mathbf{u}_1}^2 +   \ldots +  c_n^2\norm{\mathbf{u}_n}^2 = c_1^2 + \ldots + c_n^2,
 $$
 
 thus &nbsp; $c_1^2 + \ldots + c_n^2=1$.
@@ -921,11 +952,12 @@ $$
                    &\leq & 
                    c_1^2\lambda_1^2   + \ldots + c_n^2\lambda_1^2  \\
                    &=& 
-                   (c_1^2  + \ldots + c_n^2)\lambda_1^2 = \lambda_1^2.
+                   (c_1^2  + \ldots + c_n^2)\lambda_1^2 \\
+                   &=& \lambda_1^2.
 \end{array}
 $$
 
-At the $\leq$ step we used  that $\lambda_1^2 \geq \lambda_i^2$,  for  $i = 2, \ldots, n$.
+At the $\leq$ step we used  that $\lambda_i^2 \leq \lambda_1^2$,  for  $i = 2, \ldots, n$.
 
 
 ::::

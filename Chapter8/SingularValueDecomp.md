@@ -261,6 +261,12 @@ You may have a tiny tinge of worry.  How would I know that the eigenvalues $\lam
 
 ::::
 
+::::{prf:remark}
+:label: Rem:SVD:SV-Symmetric
+
+For symmetric matrices  we have $A^TA = A^2$, and the eigenvalues of  the matrix  $A^2$  are just the squares of the eigenvalues of $A$.  So for symmetric matrices $A$ the singular values are just the absolute values of the eigenvalues of $A$.
+
+::::
 
 
 Combining {prf:ref}`Prop:QuadForms:MaximumxTAx`  and  {prf:ref}`Prop:SVD:singularvalues`  we can give the following interpretation to the highest singular value. 
@@ -280,8 +286,10 @@ This can also be formulated as
 
 ::::
 
+
+
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SVD:HighestSigma`
-:class: tudproof
+:class: tudproof, dropdown
 
 To maximize  $\norm{A\vect{x}}$  we may as well maximize  $\norm{A\vect{x}}^2$. &nbsp; Note that
 
@@ -292,7 +300,7 @@ $$
 That links the property to the quadratic form  $q(\vect{x}) = \vect{x}^TA^TA\vect{x}$. <BR>
  From {prf:ref}`Prop:QuadForms:MaximumxTAx` we know that the maximal value of $q(\mathbf{x})$ on the set of unit vectors is the largest eigenvalue of the matrix $A^TA$, which by  {prf:ref}`Prop:SVD:singularvalues` is given by the square of the highest singular value.
 
-The alternative formulation  ({eq}`Eq:SVD:||Ax||over||x||`)  follows from the observation that for each nonzero vector $\vect{x}$ 
+The alternative formulation  {eq}`Eq:SVD:||Ax||over||x||`  follows from the observation that for each nonzero vector $\vect{x}$ 
 
 $$
   \dfrac{\norm{A\vect{x}}}{\norm{\vect{x}}} = \dfrac{\norm{A\hat{\vect{x}}}}{\norm{\hat{\vect{x}}}} = \norm{A\hat{\vect{x}}}, 
@@ -302,7 +310,14 @@ where  $\hat{\vect{x}}$  is the unit vector in the direction of $\vect{x}$.
 
 ::::
 
+::::{prf:remark}
+:label: Rem:SVD:max||Ax||-Symmetric
 
+Note that {prf:ref}`Prop:SVD:HighestSigma` as a consequence of {prf:ref}`Rem:SVD:SV-Symmetric`, is in line with  {prf:ref}`Prop:SymmetricMat:Max||Ax||`. 
+
+That is,  for symmetric matrices the maximum of $\norm{A\vect{x}}$ on the set of unit vectors is equal to the highest absolute eigenvalue, which is the same as the highest singular value. 
+
+::::
 
 We are now ready to present an algorithm to construct the SVD of a matrix.
 To be followed up by examples and some (theoretical) considerations.
@@ -560,7 +575,7 @@ $$
 $$
 
 To turn the orthonormal set  $\vect{u}_1, \ldots, \vect{u}_r$ into an orthonormal basis 
-$\vect{u}_1, \ldots, \vect{u}_m$  of $\R^m$ , we can use techniques from {numref}`Sec:BasisDim`  (especially  {prf:ref}`Prop:BasisDim:Thinning`) and {numref}`Sec:Gram-Schmidt`.  Keep adding linearly independent vectors until the whole of $\R^m$ is spanned, and then orthogonalize using the Gram-Schmidt process.
+$\vect{u}_1, \ldots, \vect{u}_m$  of $\R^m$ , we can use techniques from {numref}`Sec:BasisDim`  (especially  {prf:ref}`Prop:BasisDim:Thinning`) and {numref}`Sec:Gram-Schmidt`.  In short, keep adding linearly independent vectors until the whole of $\R^m$ is spanned, and then orthogonalize using the Gram-Schmidt process.
 
 This leaves us with
 
