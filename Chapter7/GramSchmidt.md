@@ -312,7 +312,7 @@ $$
 :url: https://embed.grasple.com/exercises/40c42331-9c9f-45ca-b498-83a8ba884a57?id=87816
 :label: grasple_exercise_7_3_B
 :dropdown:
-:description: Finding an orthonormal basis
+:description: Finding an orthonormal basis.
 
 ::::
 

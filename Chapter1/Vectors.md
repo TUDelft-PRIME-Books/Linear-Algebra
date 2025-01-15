@@ -96,7 +96,7 @@ We have found that the geometrical notion of an arrow in the plane with a certai
 :url: https://embed.grasple.com/exercises/553450f1-e960-4bac-9bb4-074fe8106369?id=78688
 :label: grasple_exercise_1_1_1
 :dropdown:
-:description: Expressing vectors in other vectors
+:description: Expressing vectors in other vectors.
 
 ::::
 

@@ -1598,7 +1598,7 @@ To be filled in later.
 :url: https://embed.grasple.com/exercises/7d8c3553-18cd-4866-bfa1-9ff273ee18e8?id=82925
 :label: grasple_exercise_3_6_9
 :dropdown:
-:description: Explorative exercise about the $LDU$ decomposition
+:description: Explorative exercise about the $LDU$ decomposition.
 
 ::::::
 
@@ -1607,7 +1607,7 @@ To be filled in later.
 :url: https://embed.grasple.com/exercises/5bb6dcac-4575-4953-bb3a-c0e8d4594798?id=82928
 :label: grasple_exercise_3_6_10
 :dropdown:
-:description: To compute the $LU$ decomposition of 3x4 matrix $A$ and use it to solve $A\vect{x} = \vect{b}$. 
+:description: To compute the $LU$ decomposition of 3x4 matrix $A$ and use it to solve $A\vect{x} = \vect{b}$.
 
 ::::::
 

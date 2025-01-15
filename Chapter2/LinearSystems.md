@@ -1952,7 +1952,7 @@ The remaining exercises tend to be a bit more theoretic.
 :url: https://embed.grasple.com/exercises/42f38f80-f854-469d-b1e6-893539fd3572?id=82676
 :label: grasple_exercise_2_1_3
 :dropdown:
-:description: $3 \times 3$ linear system 'in triangular form'
+:description: $3 \times 3$ linear system 'in triangular form'.
 
 ::::
 
@@ -2051,7 +2051,7 @@ The remaining exercises tend to be a bit more theoretic.
 :url: https://embed.grasple.com/exercises/2b25fdf4-e662-4859-9f30-8838a1a7079f?id=69562
 :label: grasple_exercise_2_1_14
 :dropdown:
-:description: To find the row reduced echelon form
+:description: To find the row reduced echelon form.
 
 ::::
 
@@ -2060,7 +2060,7 @@ The remaining exercises tend to be a bit more theoretic.
 :url: https://embed.grasple.com/exercises/1dad6770-3b71-4c80-ae78-e63d2cfd93e9?id=69563
 :label: grasple_exercise_2_1_15
 :dropdown:
-:description: Row reduced echelon form of a $3 \times 5$ matrix
+:description: Row reduced echelon form of a $3 \times 5$ matrix.
 
 ::::
 
@@ -2173,7 +2173,7 @@ Three exercises about linear systems and pivots.
 :url: https://embed.grasple.com/exercises/9fdb7774-56f2-4a04-ae4a-a28fd4d2fd97?id=69750
 :label: grasple_exercise_2_1_T5D
 :dropdown:
-:description: Linear systems and pivots
+:description: Linear systems and pivots.
 
 ::::
 

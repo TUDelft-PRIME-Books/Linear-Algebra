@@ -820,7 +820,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/b34a791a-3f42-4d10-9952-f6f5699a68fb?id=104164
 :label: grasple_exercise_5_3_1
 :dropdown:
-:description: Effects of row operations on a 3x3 determinant
+:description: Effects of row operations on a 3x3 determinant.
 
 ::::::
 
@@ -830,7 +830,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/1d3924d9-ea34-4a89-8b7c-33e385d144ba?id=104312
 :label: grasple_exercise_5_3_2
 :dropdown:
-:description: Effects of row operations on a 3x3 determinant
+:description: Effects of row operations on a 3x3 determinant.
 
 ::::::
 
@@ -839,7 +839,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/1fcb337d-f906-423a-acd5-8d8c69d4d04b?id=93158
 :label: grasple_exercise_5_3_3
 :dropdown:
-:description: Effects of row and column operations on a 3x3 determinant
+:description: Effects of row and column operations on a 3x3 determinant.
 
 ::::::
 
@@ -848,7 +848,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/cabb663b-7b86-4215-81aa-0a3da91a5688?id=103719
 :label: grasple_exercise_5_3_4
 :dropdown:
-:description: Effects of several operations on a 4x4 determinant
+:description: Effects of several operations on a 4x4 determinant.
 
 ::::::
 
@@ -858,7 +858,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/1354915d-4cf4-4559-8ac2-68573807199d?id=103702
 :label: grasple_exercise_5_3_5
 :dropdown:
-:description: Effects of a column operation on a 4x4 determinant
+:description: Effects of a column operation on a 4x4 determinant.
 
 ::::::
 
@@ -869,7 +869,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/1354915d-4cf4-4559-8ac2-68573807199d?id=103702
 :label: grasple_exercise_5_3_6
 :dropdown:
-:description: Effects of a column operation on a 4x4 determinant
+:description: Effects of a column operation on a 4x4 determinant.
 
 ::::::
 
@@ -878,7 +878,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/882506bb-6a5e-479f-b095-bb5b95be2467?id=104166
 :label: grasple_exercise_5_3_7
 :dropdown:
-:description: To compute a  3x3 determinant using row reduction
+:description: To compute a  3x3 determinant using row reduction.
 
 ::::::
 
@@ -889,7 +889,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/993b010f-3351-4b98-b9b7-1d04c1c959be?id=93143
 :label: grasple_exercise_5_3_8
 :dropdown:
-:description: To compute a  4x4 determinant with quite a few zeros
+:description: To compute a  4x4 determinant with quite a few zeros.
 
 ::::::
 
@@ -899,7 +899,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/2d51357d-e56d-4de5-a882-493a795fd222?id=93144
 :label: grasple_exercise_5_3_9
 :dropdown:
-:description: To compute a 4x4 determinant via reduction and expansion
+:description: To compute a 4x4 determinant via reduction and expansion.
 
 ::::::
 
@@ -911,7 +911,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/9974012a-1ac9-439f-919f-2647be1ba4ba?id=92965
 :label: grasple_exercise_5_3_10
 :dropdown:
-:description: To compute a 'random' 5x5 determinant with entries in {-2,-1,0,1,2}
+:description: To compute a 'random' 5x5 determinant with entries in {-2,-1,0,1,2}.
 
 ::::::
 
@@ -921,7 +921,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/4a01fc67-0acc-44aa-9ba2-18c1accae720?id=93145
 :label: grasple_exercise_5_3_11
 :dropdown:
-:description: Computing a structured 5x5 determinant in a 'smart' way
+:description: Computing a structured 5x5 determinant in a 'smart' way.
 ::::::
 
 ::::::{grasple}
@@ -929,7 +929,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/f2e09cfe-9d88-4f7b-a295-bad7feda89e5?id=93150
 :label: grasple_exercise_5_3_12
 :dropdown:
-:description: Finding  a parameter $h$ such that a determinant has a prescribed value
+:description: Finding  a parameter $h$ such that a determinant has a prescribed value.
 
 ::::::
 

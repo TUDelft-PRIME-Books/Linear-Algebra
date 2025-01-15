@@ -1266,7 +1266,7 @@ $$
 :url: https://embed.grasple.com/exercises/5511e064-f22d-4601-9156-f00545d59f80?id=88649
 :label: grasple_exercise_8_1_12
 :dropdown: 
-:description: Sequel to previous question, now for a 4x4 matrix
+:description: Sequel to previous question, now for a 4x4 matrix.
 ::::
 
 
@@ -1303,7 +1303,7 @@ The following exercise have a more theoretical flavour.
 :url: https://embed.grasple.com/exercises/6e0ebf73-fba2-46d0-aaa8-44e53ea07e53?id=88034
 :label: grasple_exercise_8_1_16 
 :dropdown:
-:description:  To think about  symmetric versus orthogonally diagonalizable. (true/false questions)
+:description:  To think about  symmetric versus orthogonally diagonalizable. (true/false questions).
 ::::
 
 
@@ -1339,5 +1339,5 @@ The following exercise have a more theoretical flavour.
 :url: https://embed.grasple.com/exercises/59c4c327-1603-4cc1-8b92-7415c691098b?id=87873
 :label: grasple_exercise_8_1_20
 :dropdown:
-:description:  True or false.  If $A$ is symmetric, then $A^2$ has nonnegative eigenvalues.  (and what if $A$ is not symmetric?)
+:description:  True or false.  If $A$ is symmetric, then $A^2$ has nonnegative eigenvalues.  (and what if $A$ is not symmetric?).
 ::::

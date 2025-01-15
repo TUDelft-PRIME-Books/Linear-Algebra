@@ -101,7 +101,7 @@ In this case it is a lot easier to decide whether $\mathbf{b}$ is a linear combi
 :url: https://embed.grasple.com/exercises/ac63b286-09e1-46e5-91fc-952b54436293?id=78560
 :label: grasple_exercise_2_2_A
 :dropdown:
-:description: Expressing a vector as a linear combination of other vectors
+:description: Expressing a vector as a linear combination of other vectors.
 
 ::::
 
@@ -110,7 +110,7 @@ In this case it is a lot easier to decide whether $\mathbf{b}$ is a linear combi
 :url: https://embed.grasple.com/exercises/bd263ac1-b906-48dc-a898-d959254d9681?id=70163
 :label: grasple_exercise_2_2_B
 :dropdown:
-:description: Expressing a vector as a linear combination of other vectors
+:description: Expressing a vector as a linear combination of other vectors.
 
 ::::
 
@@ -357,7 +357,7 @@ In {prf:ref}`Prop:LinearCombinations:SpanStandardBasis` we saw that the span of 
 :url: https://embed.grasple.com/exercises/b760d9b9-d0ba-4875-b828-397e7a045283?id=70175
 :label: grasple_exercise_2_2_3
 :dropdown:
-:description: Generate your own linear combinations
+:description: Generate your own linear combinations.
 
 ::::
 

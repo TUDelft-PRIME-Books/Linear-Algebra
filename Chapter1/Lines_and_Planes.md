@@ -634,7 +634,7 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 :url: https://embed.grasple.com/exercises/c86f64d5-5d64-403e-98f7-9d8e8c4b90fb?id=78903
 :label: grasple_exercise_1_4_7
 :dropdown:
-:description: To find out whether two lines are perpendicular or parallel (or none)
+:description: To find out whether two lines are perpendicular or parallel (or none).
 
 ::::
 
@@ -652,7 +652,7 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 :url: https://embed.grasple.com/exercises/2b9cb96e-caa3-4f1c-8f65-a77be3f70050?id=67065
 :label: grasple_exercise_1_4_9
 :dropdown:
-:description: To find the parametric vector equation of a plane given by three points
+:description: To find the parametric vector equation of a plane given by three points.
 
 ::::
 
@@ -661,7 +661,7 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 :url: https://embed.grasple.com/exercises/35559ca4-9c46-4d25-a6ed-d44c4eb6d33b?id=67067
 :label: grasple_exercise_1_4_10
 :dropdown:
-:description: To give a normal vector for a plane given by three points
+:description: To give a normal vector for a plane given by three points.
 
 ::::
 

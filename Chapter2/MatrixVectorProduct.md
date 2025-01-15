@@ -275,7 +275,7 @@ $$
 :url: https://embed.grasple.com/exercises/d9a8f246-359c-4666-bb8c-2f573e192e5c?id=68857
 :label: grasple_exercise_2_4_4T
 :dropdown:
-:description: Rewriting a linear system to a matrix-vector equation
+:description: Rewriting a linear system to a matrix-vector equation.
 
 ::::
 

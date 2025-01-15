@@ -488,7 +488,7 @@ In a similar way, the property $\text{det}\big(A^T\big) = \text{det}(A)$ for $4 
 :url: https://embed.grasple.com/exercises/34eb983b-c7e7-40f3-a983-6bfb970f6836?id=93135
 :label: grasple_exercise_5_2_1
 :dropdown:
-:description: To compute the determinant of 2x2 matrix
+:description: To compute the determinant of 2x2 matrix.
 
 ::::::
 
@@ -498,7 +498,7 @@ In a similar way, the property $\text{det}\big(A^T\big) = \text{det}(A)$ for $4 
 :url: https://embed.grasple.com/exercises/b86bd320-47cd-45cb-ab88-81b20a48c427?id=93136
 :label: grasple_exercise_5_2_2
 :dropdown:
-:description: To compute the determinant of 3x3 matrix
+:description: To compute the determinant of 3x3 matrix.
 
 ::::::
 
@@ -508,7 +508,7 @@ In a similar way, the property $\text{det}\big(A^T\big) = \text{det}(A)$ for $4 
 :url: https://embed.grasple.com/exercises/2f993d71-6a19-435d-a449-cc0dbb8237d5?id=93137
 :label: grasple_exercise_5_2_3
 :dropdown:
-:description: To compute the determinant of 4x4 matrix (with many zeros)
+:description: To compute the determinant of 4x4 matrix (with many zeros).
 
 ::::::
 
@@ -536,7 +536,7 @@ In a similar way, the property $\text{det}\big(A^T\big) = \text{det}(A)$ for $4 
 :url: https://embed.grasple.com/exercises/25c54a22-eb00-4cbf-ac0c-21b4974a48ff?id=92927
 :label: grasple_exercise_5_2_6
 :dropdown:
-:description: To compute the determinant of 5x5 'structured' matrix
+:description: To compute the determinant of 5x5 'structured' matrix.
 
 ::::::
 

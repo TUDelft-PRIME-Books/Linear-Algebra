@@ -1628,7 +1628,7 @@ In the last two exercises (non-)invertibility of non-square matrices is consider
 :url: https://embed.grasple.com/exercises/ca504661-cc62-454f-8035-04a9bef85f91?id=61170
 :label: grasple_exercise_3_4_22
 :dropdown:
-:description: To explore invertibility for a $2\times 3$ matrix
+:description: To explore invertibility for a $2\times 3$ matrix.
 ::::::
 
 ::::::{grasple}
@@ -1636,5 +1636,5 @@ In the last two exercises (non-)invertibility of non-square matrices is consider
 :url: https://embed.grasple.com/exercises/4e9b4ec1-f775-430f-b81f-c76c42fcbc76?id=60136
 :label: grasple_exercise_3_4_23
 :dropdown:
-:description: To explore invertibility for a $3\times 2$ matrix
+:description: To explore invertibility for a $3\times 2$ matrix.
 ::::::

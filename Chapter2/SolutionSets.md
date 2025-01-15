@@ -430,7 +430,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/03d9c585-c51a-41e0-b3ac-33ad9f42cb55?id=83384
 :label: grasple_exercise_2_3_1
 :dropdown:
-:description: Solution set of a system of 2 equations in 3 unknowns
+:description: Solution set of a system of 2 equations in 3 unknowns.
 
 ::::
 
@@ -439,7 +439,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/1e3c93cb-4fa7-4bf5-b46f-0c631e074d7e?id=83594
 :label: grasple_exercise_2_3_2
 :dropdown:
-:description: Solution set of a system of 3 equations in 2 unknowns
+:description: Solution set of a system of 3 equations in 2 unknowns.
 
 ::::
 
@@ -448,7 +448,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/44dcb893-3beb-46a2-bddd-75f830cba5de?id=83499
 :label: grasple_exercise_2_3_3
 :dropdown:
-:description: Solution set of a system of 2 equations in 2 unknowns
+:description: Solution set of a system of 2 equations in 2 unknowns.
 
 ::::
 
@@ -457,7 +457,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/ce8a45dc-f26f-45ca-a754-35512f882411?id=80874
 :label: grasple_exercise_2_3_4
 :dropdown:
-:description: Solution set of a system of 3 equations in 4 unknowns
+:description: Solution set of a system of 3 equations in 4 unknowns.
 
 ::::
 
@@ -466,7 +466,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/633cfb15-272d-40c0-adc6-36f091446d7d?id=83279
 :label: grasple_exercise_2_3_5
 :dropdown:
-:description: Solution set of a system of 2 equations in 4 unknowns
+:description: Solution set of a system of 2 equations in 4 unknowns.
 
 ::::
 
@@ -475,7 +475,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/611e08ab-df69-4a14-96d3-b6a9bbda316b?id=83238
 :label: grasple_exercise_2_3_6
 :dropdown:
-:description: Solution set of a system of 3 equations in 3 unknowns
+:description: Solution set of a system of 3 equations in 3 unknowns.
 
 ::::
 
@@ -484,7 +484,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/9536051d-baba-4b22-94ed-94190e9e6b47?id=83246
 :label: grasple_exercise_2_3_7
 :dropdown:
-:description: Solution set of a system of 3 equations in 5 unknowns
+:description: Solution set of a system of 3 equations in 5 unknowns.
 
 ::::
 
@@ -493,7 +493,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/196ac202-23e4-4c94-842b-e50410fedea0?id=83505
 :label: grasple_exercise_2_3_8
 :dropdown:
-:description: Solution set of a system of 2 equations in 4 unknowns
+:description: Solution set of a system of 2 equations in 4 unknowns.
 
 ::::
 
@@ -502,7 +502,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/6cbb0bd4-863c-4705-908b-bb01602abf05?id=87438
 :label: grasple_exercise_2_3_9
 :dropdown:
-:description: Different parametrised vector solutions
+:description: Different parametrised vector solutions.
 
 ::::
 
@@ -511,7 +511,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/021bb82e-7af3-4c84-86b8-0dcd22bf555b?id=84556
 :label: grasple_exercise_2_3_10
 :dropdown:
-:description: Combining solutions of a linear system (1)
+:description: Combining solutions of a linear system (1).
 
 ::::
 
@@ -520,7 +520,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/5d723e95-a4e5-4594-970e-6332e4953e73?id=84559
 :label: grasple_exercise_2_3_11
 :dropdown:
-:description: Combining solutions of a linear system (2)
+:description: Combining solutions of a linear system (2).
 
 ::::
 
@@ -529,6 +529,6 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/297528c4-7ea0-426b-aaa0-85dbcbfa97af?id=83227
 :label: grasple_exercise_2_3_12
 :dropdown:
-:description: Combining solutions of a linear system (3)
+:description: Combining solutions of a linear system (3).
 
 ::::

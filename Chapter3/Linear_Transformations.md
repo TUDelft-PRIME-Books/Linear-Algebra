@@ -1345,7 +1345,7 @@ $$
 :url: https://embed.grasple.com/exercises/3f14573a-1d4c-4a4b-ae48-ccb168005702?id=70373
 :label: grasple_exercise_3_1_2
 :dropdown:
-:description: To specify the domain and the codomain of a linear transformation
+:description: To specify the domain and the codomain of a linear transformation.
 ::::::
 
 ::::::{grasple}
@@ -1353,7 +1353,7 @@ $$
 :url: https://embed.grasple.com/exercises/b80d9889-bd46-45c6-a9cb-d056aa315232?id=70374
 :label: grasple_exercise_3_1_3
 :dropdown:
-:description: To find the size of the matrix of a linear transformation
+:description: To find the size of the matrix of a linear transformation.
 ::::::
 
 ::::::{grasple}
@@ -1361,7 +1361,7 @@ $$
 :url: https://embed.grasple.com/exercises/be6a768d-c60d-4ed6-81a7-5dea71b4a1a5?id=70375
 :label: grasple_exercise_3_1_4
 :dropdown:
-:description: To find image of two vectors under $T(\vect{x}) = A\vect{x}$.  
+:description: To find image of two vectors under $T(\vect{x}) = A\vect{x}$.
 ::::::
 
 ::::::{grasple}
@@ -1377,7 +1377,7 @@ $$
 :url: https://embed.grasple.com/exercises/93048f7c-b755-4445-a532-949f34136096?id=70398
 :label: grasple_exercise_3_1_6
 :dropdown:
-:description: For linear map $T:\R^2 \to \R^2$, find $T((x1,x2))$ if $T(\vect{e}_1)$ and $T(\vect{e}_2)$ are given
+:description: For linear map $T:\R^2 \to \R^2$, find $T((x1,x2))$ if $T(\vect{e}_1)$ and $T(\vect{e}_2)$ are given.
 ::::::
 
 ::::::{grasple}
@@ -1481,7 +1481,7 @@ $$
 :url: https://embed.grasple.com/exercises/34bb6386-7e7c-411b-83a1-09bbaf1106c5?id=70415
 :label: grasple_exercise_3_1_19
 :dropdown:
-:description: To find the standard matrix for $T:\R^2 \to \R^2$ if $T(\vect{v}_1)$ and $T(\vect{v}_2)$ are given.  
+:description: To find the standard matrix for $T:\R^2 \to \R^2$ if $T(\vect{v}_1)$ and $T(\vect{v}_2)$ are given.
 ::::::
 
 ::::::{grasple}
@@ -1489,7 +1489,7 @@ $$
 :url: https://embed.grasple.com/exercises/ce8ba17c-0a17-4d5e-b4b7-5c277c7e8df8?id=70416
 :label: grasple_exercise_3_1_20
 :dropdown:
-:description: To find the standard matrix for $T:\R^2 \to \R^3$ if $T(\vect{v}_1)$ and $T(\vect{v}_2)$ are given.  
+:description: To find the standard matrix for $T:\R^2 \to \R^3$ if $T(\vect{v}_1)$ and $T(\vect{v}_2)$ are given.
 ::::::
 
 ::::::{grasple}

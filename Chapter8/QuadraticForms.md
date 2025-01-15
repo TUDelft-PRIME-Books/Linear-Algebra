@@ -510,7 +510,7 @@ The property is known as _Sylvester's Law of Inertia_.
 :url: https://embed.grasple.com/exercises/5a3d937b-6ecb-4fe8-b805-424af7e7ac55?id=90077
 :label: grasple_exercise_8_2_T1
 :dropdown:
-:description: To garner some evidence for Sylvester's Law of Inertia
+:description: To garner some evidence for Sylvester's Law of Inertia.
 
 ::::
 
@@ -1158,7 +1158,7 @@ The  ellipse with its principal axes.
 :url: https://embed.grasple.com/exercises/eaec14bd-fe7a-4c7a-a269-68e1d369bc2b?id=90207
 :label: grasple_exercise_8_2_2
 :dropdown:
-:description: To write down the matrix of a quadratic form in three variables
+:description: To write down the matrix of a quadratic form in three variables.
 
 ::::
 
@@ -1178,7 +1178,7 @@ The  ellipse with its principal axes.
 :url: https://embed.grasple.com/exercises/b71d8b9f-a3e8-48f6-b236-58f85a4818a6?id=90997
 :label: grasple_exercise_8_2_4
 :dropdown:
-:description: To classify a 3x3 matrix of which the characteristic polynomial is given
+:description: To classify a 3x3 matrix of which the characteristic polynomial is given.
 
 ::::
 
@@ -1270,7 +1270,7 @@ The following exercises are a more theoretical.
 :url: https://embed.grasple.com/exercises/01a3d009-b2e0-4f2b-9d49-fcca955d6c5d?id=91048
 :label: grasple_exercise_8_2_13
 :dropdown:
-:description: (True/False?)  if $A$ is a positive definite matrix, then the diagonal of $A$ is positive (v.v.)
+:description: (True/False?)  if $A$ is a positive definite matrix, then the diagonal of $A$ is positive (v.v.).
 
 ::::
 

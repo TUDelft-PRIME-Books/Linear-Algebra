@@ -687,7 +687,7 @@ See Figure {numref}`Figure %s <Fig:Eigenvalues:Eigenvector>`
 :name: Fig:Eigenvalues:Eigenvector
 :class: dark-light
 
-A rotation has no eigenvectors.
+A rotation has no (real) eigenvectors.
 ::::
 
 ::::::

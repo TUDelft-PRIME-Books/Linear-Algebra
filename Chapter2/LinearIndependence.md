@@ -534,7 +534,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 :url: https://embed.grasple.com/exercises/d40a884f-c356-4ba7-a777-92fd5f4fffcd?id=70202
 :label: grasple_exercise_2_5_2
 :dropdown:
-:description: Like the previous question
+:description: Like the previous question.
 
 ::::::
 
@@ -552,7 +552,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 :url: https://embed.grasple.com/exercises/018f7ed5-d1ac-490b-add4-40568f525878?id=70213
 :label: grasple_exercise_2_5_4
 :dropdown:
-:description: Like the previous question
+:description: Like the previous question.
 
 ::::::
 
@@ -597,7 +597,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 :url: https://embed.grasple.com/exercises/fce5512f-2e50-4973-8de1-d8d569e497b4?id=70208
 :label: grasple_exercise_2_5_9
 :dropdown:
-:description: Verifying linear (in)dependence of a set of vectors once more
+:description: Verifying linear (in)dependence of a set of vectors once more.
 
 ::::::
 

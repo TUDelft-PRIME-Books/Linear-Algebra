@@ -1937,7 +1937,7 @@ The exercises below are more theoretical.
 :url: https://embed.grasple.com/exercises/2f4a3540-9454-4b49-ac4c-0aae22fd5b50?id=70657
 :label: grasple_exercise_4_2_18
 :dropdown:
-:description: To find the rank of a matrix with certain properties
+:description: To find the rank of a matrix with certain properties.
 
 ::::::
 
@@ -1955,7 +1955,7 @@ The exercises below are more theoretical.
 :url: https://embed.grasple.com/exercises/547dd05d-c9da-4e7a-8deb-e4e8715e0f02?id=70660
 :label: grasple_exercise_4_2_20
 :dropdown:
-:description: To find the dimension of the null space of a matrix with certain properties
+:description: To find the dimension of the null space of a matrix with certain properties.
 
 ::::::
 
@@ -1982,7 +1982,7 @@ The exercises below are more theoretical.
 :url: https://embed.grasple.com/exercises/af70726a-1610-4515-8f43-c11e109ca5cd?id=83396
 :label: grasple_exercise_4_2_23
 :dropdown:
-:description: To give an example of a matrix $A$ with certain properties
+:description: To give an example of a matrix $A$ with certain properties.
 
 ::::::
 
@@ -1991,7 +1991,7 @@ The exercises below are more theoretical.
 :url: https://embed.grasple.com/exercises/3a957728-2365-4e80-820b-2d0f9dcf6ec3?id=83399
 :label: grasple_exercise_4_2_24
 :dropdown:
-:description: To give an example of a matrix $A$ with certain properties
+:description: To give an example of a matrix $A$ with certain properties.
 
 ::::::
 

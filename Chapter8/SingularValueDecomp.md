@@ -1069,7 +1069,7 @@ We expect $A_3$ to be a good approximation of $A$.
 :url: https://embed.grasple.com/exercises/e4c651aa-a998-4e19-957b-20ddf41509bf?id=93468
 :label: grasple_exercise_8_3_2
 :dropdown:
-:description: To find the singular values of a 2x2 matrix $A$
+:description: To find the singular values of a 2x2 matrix $A$.
 ::::
 
 ::::{grasple}

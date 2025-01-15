@@ -413,7 +413,7 @@ $$
 :url: https://embed.grasple.com/exercises/bc898154-3f5e-45bd-8993-28a74bf34b5f?id=70278
 :label: grasple_exercise_3_2_1
 :dropdown:
-:description: To compute the sum of two matrices
+:description: To compute the sum of two matrices.
 
 ::::::
 
@@ -440,7 +440,7 @@ $$
 :url: https://embed.grasple.com/exercises/3e5f0674-1e9f-4349-867f-6b1d638e744b?id=82934
 :label: grasple_exercise_3_2_4
 :dropdown:
-:description: To solve equations involving sum and transpose
+:description: To solve equations involving sum and transpose.
 
 ::::::
 
@@ -449,7 +449,7 @@ $$
 :url: https://embed.grasple.com/exercises/52a8c0e8-09e8-4c46-aa43-0cee2a93e7c4?id=82931
 :label: grasple_exercise_3_2_5
 :dropdown:
-:description: True/False questions involving sum and transpose
+:description: True/False questions involving sum and transpose.
 
 ::::::
 
@@ -1572,7 +1572,7 @@ We will dedicate {numref}`Sec:MatrixInv` to this topic.
 :url: https://embed.grasple.com/exercises/262bcea8-548b-45c2-8c37-b4cb3cb03ddc?id=70281
 :label: grasple_exercise_3_2_6
 :dropdown:
-:description: To compute a product $AB$
+:description: To compute a product $AB$.
 
 ::::::
 
@@ -1581,7 +1581,7 @@ We will dedicate {numref}`Sec:MatrixInv` to this topic.
 :url: https://embed.grasple.com/exercises/718bda8a-9e75-495a-8aea-506788d46432?id=70282
 :label: grasple_exercise_3_2_7
 :dropdown:
-:description: To compute a product $AB$
+:description: To compute a product $AB$.
 
 ::::::
 
@@ -1590,7 +1590,7 @@ We will dedicate {numref}`Sec:MatrixInv` to this topic.
 :url: https://embed.grasple.com/exercises/e5799b3f-53f6-4095-bb96-bc2f4febde30?id=70284
 :label: grasple_exercise_3_2_8
 :dropdown:
-:description: To compute a product $AB$
+:description: To compute a product $AB$.
 
 ::::::
 
@@ -1599,7 +1599,7 @@ We will dedicate {numref}`Sec:MatrixInv` to this topic.
 :url: https://embed.grasple.com/exercises/9d1526f4-777b-4a41-8b8e-c0746f7503c9?id=70285
 :label: grasple_exercise_3_2_9
 :dropdown:
-:description: To compute a product $AB$
+:description: To compute a product $AB$.
 
 ::::::
 
@@ -1653,7 +1653,7 @@ We will dedicate {numref}`Sec:MatrixInv` to this topic.
 :url: https://embed.grasple.com/exercises/2fc08e2c-b3ad-4a2b-8077-ce66abc466d7?id=82936
 :label: grasple_exercise_3_2_15
 :dropdown:
-:description: To find a high power of a special matrix
+:description: To find a high power of a special matrix.
 
 ::::::
 

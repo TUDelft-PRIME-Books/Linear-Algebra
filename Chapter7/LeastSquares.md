@@ -922,7 +922,7 @@ $$
 :url: https://embed.grasple.com/exercises/316a02be-a293-4340-ac81-47a6b25b115d?id=110658
 :label: grasple_exercise_7_4_5
 :dropdown:
-:description: Finding the LS solution for 3x2 system in a geometric way
+:description: Finding the LS solution for 3x2 system in a geometric way.
 
 ::::
 
@@ -995,7 +995,7 @@ $$
 :url: https://embed.grasple.com/exercises/679d1581-08bc-416b-89bf-766faad9f118?id=91394
 :label: grasple_exercise_7_4_13
 :dropdown:
-:description: Finding the LS solution for a 4x3 system (involving quite some reduction work)
+:description: Finding the LS solution for a 4x3 system (involving quite some reduction work).
 
 ::::
 
