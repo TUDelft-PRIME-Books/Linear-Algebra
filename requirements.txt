@@ -10,4 +10,4 @@ sphinx-book-theme==1.1.0
 teachbooks-sphinx-grasple
 sphinx-tudelft-theme
 jupyterbook_patches
-pip install teachbooks-sphinx-tippy>=1.0.5
+teachbooks-sphinx-tippy>=1.0.5
