@@ -172,6 +172,7 @@ Just like we can visualise real numbers on a number line, we can visualise compl
 
 :::{figure} Images/Fig-ComplexNumbers-complexplane.svg
 :name: Fig:ComplexNumbers:complexplane
+:class: dark-light
 
 Visualisation of the complex plane $\mathbb{C}$.
 
@@ -408,6 +409,7 @@ First, we look at the complex conjugation. This is a relatively straightforward 
 
 :::{figure} Images/Fig-ComplexNumbers-complexconj.svg
 :name: Fig:ComplexNumbers:complexconj
+:class: dark-light
 
 Complex conjugation reflects a number in the real axis.
 
@@ -419,6 +421,7 @@ The geometric interpretation of adding complex numbers should look familiar to y
 
 :::{figure} Images/Fig-ComplexNumbers-complexadd.svg
 :name: Fig:ComplexNumbers:complexadd
+:class: dark-light
 
 Adding complex numbers follows the parallelogram rule.
 
@@ -626,6 +629,7 @@ Let us calculate $\frac{97813}{382}$. In {numref}`Figure %s <Fig:ComplexNumbers:
 
 :::{figure} Images/Fig-ComplexNumbers-longdivisionnum.svg
 :name: Fig:ComplexNumbers:longdivisionnum
+:class: dark-light
 
 Example of long division for ordinary fractions.
 :::
@@ -648,6 +652,7 @@ Consider $p(z) = z^3+3z^2+z-5$. You may notice that $z=1$ is a root; $p(1)=0$. T
 
 :::{figure} Images/Fig-ComplexNumbers-longdivisionpoly.svg
 :name: Fig:ComplexNumbers:longdivisionpoly
+:class: dark-light
 
 Example of long division for polynomials.
 
@@ -675,6 +680,7 @@ The distance from zero to the point in the complex plane, we call the _modulus_ 
 
 :::{figure} Images/Fig-ComplexNumbers-modarg.svg
 :name: Fig:ComplexNumbers:modarg
+:class: dark-light
 
 The polar coordinates of a point in the complex plane $\C$ are the distance $r=|z|$ from zero to the point and the angle $\theta=\arg(z)$ measured from the positive real axis in a counterclockwise direction towards the ray from zero through the point.
 
@@ -689,6 +695,7 @@ Suppose $z=3+3i$. We find by using Pythagoras that the modulus (the distance to 
 
 :::{figure} Images/Fig-ComplexNumbers-polarex1.svg
 :name: Fig:ComplexNumbers:polarex1
+:class: dark-light
 
 The complex number $3+3i$.
 
@@ -708,6 +715,7 @@ Therefore $\arg(w) = \arctan\left(\frac32\right) \approx 0.982794$.
 
 :::{figure} Images/Fig-ComplexNumbers-polarex2.svg
 :name: Fig:ComplexNumbers:polarex2
+:class: dark-light
 
 The complex number $2+3i$.
 :::
@@ -720,6 +728,7 @@ As a final example we consider $v=-1+2i$. Using Pythagoras theorem once again, w
 
 :::{figure} Images/Fig-ComplexNumbers-polarex3.svg
 :name: Fig:ComplexNumbers:polarex3
+:class: dark-light
 
 The complex number $-1+2i$.
 
@@ -878,6 +887,7 @@ You can see each of these operations illustrated in {numref}`Figures %s <Fig:Com
 
 :::{figure} Images/Fig-ComplexNumbers-conjugation.svg
 :name: Fig:ComplexNumbers:conjugation
+:class: dark-light
 
 Conjugating a complex number means negating the argument and keeping the modulus the same.
 
@@ -885,6 +895,7 @@ Conjugating a complex number means negating the argument and keeping the modulus
 
 :::{figure} Images/Fig-ComplexNumbers-multiplication.svg
 :name: Fig:ComplexNumbers:multiplication
+:class: dark-light
 
 Multiplying complex numbers means adding the arguments and multiplying the moduli.
 
@@ -892,6 +903,7 @@ Multiplying complex numbers means adding the arguments and multiplying the modul
 
 :::{figure} Images/Fig-ComplexNumbers-division.svg
 :name: Fig:ComplexNumbers:division
+:class: dark-light
 
 Dividig complex numbers means substracting the arguments and dividing the moduli.
 
@@ -1084,11 +1096,15 @@ $$
 
 You can find a visualisation of these three solutions in {numref}`Figure %s <Fig:ComplexNumbers:threesolfig>`.
 
-:::{figure} Images/Fig-ComplexNumbers-threesolfig.svg
+```{applet}
+:url: appendix/complex_numbers
+:fig: Images/Fig-ComplexNumbers-threesolfig.svg
 :name: Fig:ComplexNumbers:threesolfig
+:status: approved
+:class: dark-light
 
 The three solutions from {prf:ref}`Ex:ComplexNumbers:threesolutions`.
-:::
+```
 
 ::::
 
@@ -1155,6 +1171,7 @@ We first wrote both the cosine as the sine as real parts of complex exponentials
 
 :::{figure} Images/Fig-ComplexNumbers-sinusoid.svg
 :name: Fig:ComplexNumbers:sinusoid
+:class: dark-light
 
 The graph of the sum of a cosine and a sine of identical period is a sinusoid as well.
 :::
