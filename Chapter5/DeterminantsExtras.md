@@ -929,7 +929,7 @@ a_{n1} & a_{n2} & \ldots & a_{2,(n-1)} & v_n
 :::::
 
 This immediate generalization of the identity $(\vect{a}\times\vect{b})\ip\vect{c} = \det{[\,\vect{a}\,\,\vect{b}\,\,\vect{c}\,] }$ follows if
-we write Equation {eq}`Eq:DetExtras:DetCrossProd-ndim` as in equation {eq}`Eq:DetExtras:DetCrossProd`.
+we write Equation {eq}`Eq:DetExtras:DetCrossProd-ndim` as in Equation {eq}`Eq:DetExtras:DetCrossProd`.
 
 <ol type = "i">
 

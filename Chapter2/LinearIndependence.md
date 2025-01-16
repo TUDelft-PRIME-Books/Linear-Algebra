@@ -104,8 +104,8 @@ Indeed, if we take an arbitrary vector $\mathbf{v}$ in $\Span{S}$, we can write 
 &=(c_{2}-c_{1})\mathbf{v}_{2}+(c_{3}+c_{1})\mathbf{v}_{3}
 \end{align*}
 
-in view of equation {eq}`Eq:LinInd:LinIndEx1`. This means that $\mathbf{v}$ is also in $\Span{S\setminus\left\lbrace\mathbf{v}_{1}\right\rbrace}$ and consequently that $\mathbf{v}_{1}$ is linearly dependent on $\mathbf{v}_{2}$ and $\mathbf{v}_{3}$.
-Similarly, equation {eq}`Eq:LinInd:LinIndEx2` shows that $\mathbf{v}_{2}$ is linearly dependent on $\mathbf{v}_{1}$ and $\mathbf{v}_{3}$ and equation {eq}`Eq:LinInd:LinIndEx3` shows that $\mathbf{v}_{3}$ is linearly dependent on $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ .
+in view of Equation {eq}`Eq:LinInd:LinIndEx1`. This means that $\mathbf{v}$ is also in $\Span{S\setminus\left\lbrace\mathbf{v}_{1}\right\rbrace}$ and consequently that $\mathbf{v}_{1}$ is linearly dependent on $\mathbf{v}_{2}$ and $\mathbf{v}_{3}$.
+Similarly, Equation {eq}`Eq:LinInd:LinIndEx2` shows that $\mathbf{v}_{2}$ is linearly dependent on $\mathbf{v}_{1}$ and $\mathbf{v}_{3}$ and Equation {eq}`Eq:LinInd:LinIndEx3` shows that $\mathbf{v}_{3}$ is linearly dependent on $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ .
 
 However, every subset of $S$ containing precisely two vectors will be linearly independent, as $S$ contains no two vectors that are multiples of each other.
 
@@ -265,7 +265,7 @@ $$
 0=c_{1}\mathbf{v}_{1}+\cdots +c_{i-1}\mathbf{v}_{i-1}-\mathbf{v}_{i}+c_{i+1}\mathbf{v}_{i+1}+\cdots +c_{k}\mathbf{v}_{k}.
 $$
 
-This means that $(c_{1},...,c_{i-1},-1,c_{i+1},...,c_{k})$ is a solution of the equation {eq}`Eq:LinInd:VecEqisZero`. It is a non-trivial one since the $i$-th coefficient is $-1$ which is non-zero.
+This means that $(c_{1},...,c_{i-1},-1,c_{i+1},...,c_{k})$ is a solution of the Equation {eq}`Eq:LinInd:VecEqisZero`. It is a non-trivial one since the $i$-th coefficient is $-1$ which is non-zero.
 
 If {eq}`Eq:LinInd:VecEqisZero` has a non-trivial solution then there are $c_{1},...,c_{k}$, not all $0$, such that $c_{1}\mathbf{v}_{1}+\cdots +c_{k}\mathbf{v}_{k}=\mathbf{0}$. Take any $i$ such that $c_{i}\neq0$. Then
 

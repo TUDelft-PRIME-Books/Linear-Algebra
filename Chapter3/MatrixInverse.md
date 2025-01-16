@@ -909,7 +909,7 @@ $$
   AX = I \quad  \iff \quad A[\,\mathbf{x_1}\,\,\mathbf{x_2}\, \ldots\, \mathbf{x_n}\,] = [\,\mathbf{e_1}\,\mathbf{e_2}\, \ldots\, \mathbf{e_n}\,].
 $$
 
-For the existence of a solution of this equation {prf:ref}`Prop:MatrixInv:InvertibleIndepCols` tells us
+For the existence of a solution of this Equation {prf:ref}`Prop:MatrixInv:InvertibleIndepCols` tells us
 it is <u>necessary</u> that $A$ has linearly independent columns, and we can furthermore read off that the columns of the matrix
 $X$ will be the (unique) solutions of the linear systems
 

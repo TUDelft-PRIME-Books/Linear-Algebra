@@ -833,7 +833,7 @@ f_k = \frac1{\sqrt{5}} \left(\dfrac{1+\sqrt{5}}{2}\right)^{k} -
 
 :::
 
-We call the formula surprising, since at first sight the expression on the right in equation {eq}`Eq:DynSystDiscrete:Fibonacci` is not an integer, where from the definition {eq}`Eq:DynSystDiscrete:DfnFibo` it immediately follows that the Fibonacci numbers are _integers_.
+We call the formula surprising, since at first sight the expression on the right in Equation {eq}`Eq:DynSystDiscrete:Fibonacci` is not an integer, where from the definition {eq}`Eq:DynSystDiscrete:DfnFibo` it immediately follows that the Fibonacci numbers are _integers_.
 
 However, the computation of the complicated expression for $k = 3$
 
@@ -851,7 +851,7 @@ $$
 
 gives us some confidence.
 
-Let us now derive equation {eq}`Eq:DynSystDiscrete:Fibonacci`.
+Let us now derive Equation {eq}`Eq:DynSystDiscrete:Fibonacci`.
 
 Introducing $\vect{x}_{k} = \left[\begin{array}{c} f_{k} \\  f_{k+1} \end{array}\right]$
 and using the identity

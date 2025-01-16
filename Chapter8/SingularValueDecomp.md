@@ -468,7 +468,7 @@ it follows that  $\norm{A\mathbf{v}}=0$, implying $A\mathbf{v}=\mathbf{0}$.  So 
 All in all we have shown that all vectors in $\Nul{A}$ lie in $\Nul{A^TA}$ and that all vectors in $\Nul{A^TA}$ lie in $\Nul{A}$.  Thus $\Nul{A}=\Nul{A^TA}$.
 
 (Note that this was already mentioned in {prf:ref}`Prop:LeastSquares:InvertibleATA`, 
-equation {eq}`Eq:LeastSquares:InvertibilityATA`.)
+Equation {eq}`Eq:LeastSquares:InvertibilityATA`.)
 \item Observe that since $A$ is an $m\times n$ matrix, we have that $A^TA$ has size $n\times n$. Now, using {prf:ref}`Thm:BasisDim:RankThm` we have
 
 $$

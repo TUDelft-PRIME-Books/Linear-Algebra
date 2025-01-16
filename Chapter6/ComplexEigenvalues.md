@@ -369,7 +369,7 @@ A\vect{w} = -\beta\vect{u} + \alpha\vect{w}.
 
 ::::::
 
-If we apply the above to the case $n = 2$, we can rewrite equation {eq}`Eq:ComplexEV:Eq1`
+If we apply the above to the case $n = 2$, we can rewrite Equation {eq}`Eq:ComplexEV:Eq1`
 as
 
 $$
