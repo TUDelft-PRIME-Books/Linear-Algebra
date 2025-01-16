@@ -118,6 +118,7 @@ sphinx:
     - sphinx.ext.imgconverter
     - sphinx_tudelft_theme
     - teachbooks_sphinx_tippy
+    - jupyterbook_patches
     
 latex:
   latex_engine: pdflatex
