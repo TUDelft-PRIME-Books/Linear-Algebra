@@ -32,9 +32,9 @@ html[data-theme="dark"] .dark-light-same {
   background-color: transparent !important;
 }
 
-.red {color: var(--red)}
-.blue {color: var(--blue)}
-.green {color: var(--green)}
+.red {color: var(--tud-red)}
+.blue {color: var(--tud-blue)}
+.green {color: var(--tud-green)}
 
 html[data-theme="dark"] .red {
   filter:  invert(1) hue-rotate(180deg) saturate(1.5);
