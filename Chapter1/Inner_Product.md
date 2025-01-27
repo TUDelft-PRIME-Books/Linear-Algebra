@@ -403,7 +403,7 @@ Again it's a chain of identities using basic properties of the dot product.
 $$
   \begin{array}{rcl} \norm{\mathbf{v}_1+\mathbf{v}_2}^2 + \norm{\mathbf{v}_1-\mathbf{v}_2}^2&=&  (\mathbf{v}_1+\mathbf{v}_2)\cdot(\mathbf{v}_1+\mathbf{v}_2) +
       (\mathbf{v}_1-\mathbf{v}_2)\cdot(\mathbf{v}_1-\mathbf{v}_2)     \\
-    &=& \mathbf{v}_1\cdot\mathbf{v}_1 +2\mathbf{v}_1\cdot\mathbf{v}_2 + \mathbf{v}_1\cdot\mathbf{v}_2 + \mathbf{v}_1\cdot\mathbf{v}_1 -2\mathbf{v}_1\cdot\mathbf{v}_2 + \mathbf{v}_2\cdot\mathbf{v}_2  \\
+    &=& \mathbf{v}_1\cdot\mathbf{v}_1 +2\mathbf{v}_1\cdot\mathbf{v}_2 + \mathbf{v}_2\cdot\mathbf{v}_2 + \mathbf{v}_1\cdot\mathbf{v}_1 -2\mathbf{v}_1\cdot\mathbf{v}_2 + \mathbf{v}_2\cdot\mathbf{v}_2  \\
     &=&   2\,\mathbf{v}_1\cdot\mathbf{v}_1 +2\,\mathbf{v}_2\cdot\mathbf{v}_2    \\
     &=&   2 (\norm{\mathbf{v}_1}^2 + \norm{\mathbf{v}_2}^2).
   \end{array}
