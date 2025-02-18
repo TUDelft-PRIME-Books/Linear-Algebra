@@ -24,24 +24,40 @@
   }
 }
 
-html[data-theme="dark"] .dark-light {
-  filter:  invert(1) hue-rotate(180deg) saturate(1.5);
+html[data-theme='dark'] .dark-light {
+  filter: invert(1) hue-rotate(180deg) saturate(1.5);
 }
 
-html[data-theme="dark"] .dark-light-same {
+html[data-theme='dark'] .dark-light-same {
   background-color: transparent !important;
 }
 
-.red {color: var(--tud-red)}
-.blue {color: var(--tud-blue)}
-.green {color: var(--tud-green)}
+.red {
+  color: var(--tud-red);
+}
+.blue {
+  color: var(--tud-blue);
+}
+.green {
+  color: var(--tud-green);
+}
 
-html[data-theme="dark"] .red {
-  filter:  invert(1) hue-rotate(180deg) saturate(1.5);
+html[data-theme='dark'] .red {
+  filter: invert(1) hue-rotate(180deg) saturate(1.5);
 }
-html[data-theme="dark"] .blue {
-  filter:  invert(1) hue-rotate(180deg) saturate(1.5);
+html[data-theme='dark'] .blue {
+  filter: invert(1) hue-rotate(180deg) saturate(1.5);
 }
-html[data-theme="dark"] .green {
-  filter:  invert(1) hue-rotate(180deg) saturate(1.5);
+html[data-theme='dark'] .green {
+  filter: invert(1) hue-rotate(180deg) saturate(1.5);
+}
+
+/* To make , and . be on the same line as math */
+span.math,
+span.math mjx-math {
+  display: inline;
+}
+
+span.math mjx-assistive-mml {
+  display: none !important;
 }
