@@ -11,3 +11,4 @@ teachbooks-sphinx-grasple
 sphinx-tudelft-theme
 jupyterbook_patches
 teachbooks-sphinx-tippy>=1.0.5
+git+https://github.com/TeachBooks/Sphinx-PRIME-applets.git

@@ -1,29 +1,3 @@
-.applet {
-  height: 500px;
-}
-
-.applet * {
-  width: 100%;
-  height: 500px; /* TODO: subject for discussion */
-}
-
-.applet-print-figure {
-  display: none;
-}
-
-.applet iframe {
-  border-radius: 10px;
-}
-
-@media print {
-  .applet iframe {
-    display: none;
-  }
-  .applet-print-figure {
-    display: initial;
-  }
-}
-
 html[data-theme='dark'] .dark-light {
   filter: invert(1) hue-rotate(180deg) saturate(1.5);
 }
