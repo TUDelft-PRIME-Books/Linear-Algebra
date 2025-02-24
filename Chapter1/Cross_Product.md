@@ -397,7 +397,7 @@ $$
 
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/c5058abb-3d5b-4e8c-b836-40aeff08a301?id=65634
+:url: https://embed.grasple.com/exercises/9c5285e7-3c47-4201-a22f-d4db7985b9fc?id=114534
 :label: grasple_exercise_1_3_1
 :dropdown:
 :description: Just to compute $\vect{u}\times\vect{v}$.

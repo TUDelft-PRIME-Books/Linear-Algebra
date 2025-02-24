@@ -327,7 +327,7 @@ its end point will be precisely $P$.
 
 By fixing our origin $O$, we have therefore introduced a natural correspondence between points in the plane and vectors with two components: a point $P=(a_{1},a_{2})$ corresponds to the vector pointing from $O$ to $P$, which is given by $\mathbf{v}$.
 
-In a similar vein, we can associate vectors with three components to points in three-dimensional space. We again fix an origin $O=(0,0,0)$. Any other point $P$ is given by its displacement from $O$ to the right ($a_{1}$), up ($a_{2}$), and backward ($a_{3}$). To this point, we can associate the vector
+In a similar vein, we can associate vectors with three components to points in three-dimensional space. We again fix an origin $O=(0,0,0)$. Any other point $P$ is given by its displacement from $O$ to the front ($a_{1}$), to the right ($a_{2}$), and upward ($a_{3}$). To this point, we can associate the vector
 
 $$
 

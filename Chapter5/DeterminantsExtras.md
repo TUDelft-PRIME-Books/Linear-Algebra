@@ -39,7 +39,7 @@ A certain generalization of the cross product to $n$ dimensions.
 
 (SubSec:DetExtras:Volume+Orientation)=
 
-## Volume and Orientation Revisited
+## Volume and orientation revisited
 
 We have seen in {numref}`Sec:DetGeometric` how determinants arise in the context of areas of parallelograms and volumes of parallelepipeds.
 
@@ -151,7 +151,7 @@ $$
 These are mapped to
 
 $$
-A\vect{p},  A\vect{p}+ rA\vect{e}_1, A\vect{p}+ rA\vect{e}_1+rA\vect{e}_2 \quad\text{and}\quad  A\vect{p}+ rA\vect{e}_2.
+A\vect{p},\quad A\vect{p}+ rA\vect{e}_1, \quad A\vect{p}+ rA\vect{e}_1+rA\vect{e}_2 \quad\text{and}\quad  A\vect{p}+ rA\vect{e}_2.
 $$
 
 This is a parallelogram with sides $rA\vect{e}_1 = r\vect{a}_1$ and $rA\vect{e}_2 =r \vect{a}_2$, which has area
@@ -233,7 +233,7 @@ $$
    &=& |\det{[\,A(\vect{v_1})\, \,\ldots \,\, A(\vect{v}_n)\,]}| \\
    &=& |\det{\left(A [\,\vect{v_1}\, \,\ldots \,\, \vect{v}_n\,]\right)}|\\
    &=& |\det{A} \det{[\,\vect{v_1}\, \,\ldots \,\, \vect{v}_n\,]}|\\
-   &=& |\det{A}| \text{Vol}(\mathcal{P}).
+   &=& |\det{A}| \,\text{Vol}(\mathcal{P}).
  \end{array}
 $$
 
@@ -256,12 +256,13 @@ Suppose $(\vect{v}_1,\,\vect{v}_2,\,\ldots\,,\,\vect{v}_n)$ is an ordered set of
 
 Then the following holds.
 
-If $\det{A} > 0$ the set $\big(T(\vect{v}_1),\,T(\vect{v}_2),\,\ldots\,,\,T(\vect{v}_n)\big)$ has the same orientation as the set $(\vect{v}_1,\,\vect{v}_2,\,\ldots\,,\,\vect{v}_n)$.
+If $\det{A} > 0$,  the set $\big(T(\vect{v}_1),\,T(\vect{v}_2),\,\ldots\,,\,T(\vect{v}_n)\big)$ has the same orientation as the set $(\vect{v}_1,\,\vect{v}_2,\,\ldots\,,\,\vect{v}_n)$.
 
 If $\det{A} < 0$ the set $\big(T(\vect{v}_1),\,T(\vect{v}_2),\,\ldots\,,\,T(\vect{v}_n)\big)$ has the opposite orientation as the set $(\vect{v}_1,\,\vect{v}_2,\,\ldots\,,\,\vect{v}_n)$.
 
 In short: the transformation $T(\vect{x}) = A\vect{x}$ **preserves** the orientation if  
 $\det{A} > 0$ and **reverses** the orientation if $\det{A} < 0$.
+
 ::::
 
 If the determinant is 0, then the set $\{T(\vect{v}_1), \ldots,T(\vect{v}_n) \}$ will be linearly dependent, and for such a set the orientation is not defined.
@@ -316,6 +317,8 @@ The images of a unit vector that rotates counterclockwise under transformation $
 
 ::::
 
+
+
 (Subsec:DetExtra:Cramer)=
 
 ## Cramer's rule
@@ -342,7 +345,7 @@ $$
 
 Suppose that $A$ is an invertible $n \times n$ matrix. Then we know that the linear system $A\vect{x} = \vect{b}$ has a unique solution for each $\vect{b}$ in $\R^n$. And we also know that the determinant of $A$ is not equal to zero.
 <BR>
-The next proposition gives a 'ready made' formula for the solution.
+The next proposition gives a ready-made formula for the solution.
 
 ::::::{prf:theorem} Cramer's Rule
 :label: Thm:DetExtras:Cramer
@@ -377,7 +380,7 @@ x_1  - x_2   + 2x_3 & = & 4 \\
 3x_1  + x_2   -5x_3  & = & 1
 \end{array}
 \right.
-\quad\text{i.e.} \quad
+\quad\quad \text{i.e.,} \quad
 \begin{bmatrix}
 1 & 2 & 1 \\ 1 & -1 & 2 \\ 3 & 1 & -5
 \end{bmatrix}
@@ -389,7 +392,7 @@ $$
 First of all, the determinant of $A$ can be computed as follows (in the first step we use column reduction, with the boxed 1 as a pivot):
 
 $$
-\left|\begin{array}{ccc} \fbox{1} & 2 & 1 \\ 1 & -1 & 2 \\ 3 & 1 & -5  \end{array} \right|=
+\left|\begin{array}{ccc} \fbox{$1$} & 2 & 1 \\ 1 & -1 & 2 \\ 3 & 1 & -5  \end{array} \right|=
 \left|\begin{array}{ccc}  1 & 0 & 0 \\ 1 & -3 & 1 \\ 3 & -5 & -8  \end{array} \right|=
 \left|\begin{array}{cc}   -3 & 1 \\  -5 & -8  \end{array} \right|= 29 \neq 0,
 $$
@@ -399,7 +402,7 @@ so the coefficient matrix is invertible and consequently the system has a unique
 According to Cramer's rule we find the first entry of the solution as follows (again we use the boxed 1 as a pivot):
 
 $$
-x_1 = \dfrac{\begin{vmatrix}  3 & 2 & 1 \\ 4 & -1 & 2 \\ 1 & \fbox{1} & -5  \end{vmatrix}}{29} =
+x_1 = \dfrac{\begin{vmatrix}  3 & 2 & 1 \\ 4 & -1 & 2 \\ 1 & \fbox{$1$} & -5  \end{vmatrix}}{29} =
 \dfrac{\begin{vmatrix}  1 & 0 & 11 \\ 5 & 0 & -3  \\ 1 & 1 & -5  \end{vmatrix}}{29} =
 \dfrac{-\begin{vmatrix}  1 & 11 \\ 5 & -3   \end{vmatrix}}{29} = \dfrac{58}{29} = 2.
 $$
@@ -451,7 +454,7 @@ By the linearity property (in all of the columns) of the determinant ({prf:ref}`
 :::{math}
 :label: Eq:DetExtras:ProofCramer
 
-c_1\det{(A)} + c_2\det{(A^{(1)}(\vect{a}\_2))} + \ldots + c_n\det{(A^{(1)}(\vect{a}\_n))} - \det{(A^{(1)}(\vect{b}))} = 0.
+c_1\det{(A)} + c_2\det{(A^{(1)}(\vect{a}_2))} + \ldots + c_n\det{(A^{(1)}(\vect{a}_n))} - \det{(A^{(1)}(\vect{b}))} = 0.
 
 :::
 
@@ -641,7 +644,7 @@ $$
 
 And second {prf:ref}`Cor:DetRowReduction:EqualRows`: the determinant of a matrix with two equal rows (or columns) is equal to 0.
 
-Let us consider the product $\text{Adj}(A) \cdot A$ very carefully:
+Let us consider the product &nbsp; $\text{Adj}(A) \cdot A$ &nbsp; very carefully:
 
 $$
 \left[\begin{array}{ccccc}
@@ -707,7 +710,7 @@ $$
 :label: Rem:DetExtras:Disclaimer2
 
 Like Cramer's rule, the formula for the inverse is **highly inefficient**.
-The comparison between the efforts required to compute the inverse via the adjugate matrix versus row reduction of the augmented matrix $[\,A\,|\,I\,]$ works out rather favorably for the latter.
+The comparison between the efforts required to compute the inverse via the adjugate matrix versus row reduction of the augmented matrix $[\,A\,|\,I\,]$ works out rather favorably for the latter. A glimpse of this insuffiency is shown by the above formula for the inverse of a $3 \times 3$ matrix.
 
 ::::::
 

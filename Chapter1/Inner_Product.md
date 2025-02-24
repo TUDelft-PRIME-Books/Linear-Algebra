@@ -886,7 +886,7 @@ Rule iii. is again called the _Triangle Inequality_.
 Check the three properties of the distance function as stated in
 {prf:ref}`Prop:InnerProduct:PropertiesDistance`. &nbsp;
 For Rule iii., only show how it follows from the corresponding Rule iii. in
-that same proposition.
+proposition  {prf:ref}`Prop:InnerProduct:PropertiesNorm`. 
 ::::
 
 With the tools so far we can define a notion that comes in handy later.
@@ -1461,7 +1461,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/59912254-6fc8-43c7-9c44-1ea7eab1c236?id=62409
+:url: https://embed.grasple.com/exercises/7bb32c8c-9a2e-49bd-85fa-b7d205949510?id=114535
 :label: grasple_exercise_1_2_3
 :dropdown:
 :description: To compute dot products in $\R^2$, $\R^3$ and $\R^4$.
@@ -1617,6 +1617,6 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 :url: https://embed.grasple.com/exercises/2a2423c3-0907-40b7-bd5f-7607baf7cc09?id=62668
 :label: grasple_exercise_1_2_20
 :dropdown:
-:description: What to conclude from $\text{proj}_{\mathbf{v}}(\mathbf{w}_1 ) = \text{proj}_{\mathbf{v}}(\mathbf{w}\_2)$?
+:description: What to conclude from $\text{proj}_{\mathbf{v}}(\mathbf{w}_1 ) = \text{proj}_{\mathbf{v}}(\mathbf{w}_2)$?
 
 ::::
