@@ -18,7 +18,7 @@ The matrix $A$ is invertible if and only if $\det{A} \neq 0$ .
 </li>
 </ul>
 
-## How Row Operations affect a Determinant
+## How row operations affect a determinant
 
 We have seen in {numref}`Sec:DeterminantsViaCofactors` that the cofactor expansion of an $n \times n$ determinant works best using a row (or a column) with many, preferably $n-1$, zeros. When solving a linear system, or finding the inverse of a matrix, we have seen how to create zeros via row reduction. The important thing: row reducing an augmented matrix does not alter the solution(s) of the corresponding linear system. The next proposition
 describes the effects of row operations on a determinant.
@@ -275,7 +275,7 @@ $$
 ::::::
 
 
-## Determinants versus Invertibility
+## Determinants versus invertibility
 
 With the knowledge built so far we can show the important property that was already hinted at in {numref}`Sec:DeterminantsViaCofactors`.
 
@@ -813,7 +813,7 @@ This settles all matters.
 ::::::
 
 
-## Grasple Exercises
+## Grasple exercises
 
 ::::::{grasple}
 :iframeclass: dark-light

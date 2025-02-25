@@ -4,7 +4,7 @@
 
 ## Introduction
 
-The word "determinant" already appeared in {numref}`Section %s <Sec:CrossProduct>` about the cross product. And in {numref}`Subsection %s <Subsec:MatrixInv:DefInverse>` we saw that a $2\times2$ matrix
+The word "determinant" already appeared in {numref}`Section %s <Sec:CrossProduct>` about the cross product  (cf.{prf:ref}`Def:CrossProduct:2x2determinant`). And in {numref}`Subsection %s <Subsec:MatrixInv:DefInverse>` we saw that a $2\times2$ matrix
 $A = \left[\begin{array}{cc} a & b \\ c & d\end{array}   \right]$ is invertible if and only if
 
 :::{math}
@@ -559,7 +559,7 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 
 ::::::
 
-## Grasple Exercises
+## Grasple exercises
 
 ::::::{grasple}
 :iframeclass: dark-light

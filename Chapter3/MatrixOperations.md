@@ -6,7 +6,7 @@
 
 In Chapter 2 matrices were introduced to represent systems of linear equations. The coefficients of a linear system were put into the coefficient matrix $A$, and a system as a whole could be squeezed into the augmented matrix. In {numref}`Sec:LinTrafo` we used matrices to construct linear transformations. In this chapter we will study matrices as entities on their own, though every now and then we will keep in mind their role in the two contexts just mentioned.
 
-## Sum, Scalar Multiple and Transpose
+## Sum, scalar multiple and transpose
 
 In this section we will define the sum and the product of two matrices, and the transpose of a matrix. Recall that an $m\times n$ matrix has $m$ (horizontal) rows of size $n$ or, equivalently, $n$ (vertical) columns of size $m$.
 
@@ -399,14 +399,13 @@ Next we transpose both terms to find
 
 $$
   X = \tfrac12(C-A-B)^T = \frac12\begin{bmatrix} 4 & 4 & -4 \\  -4 & 0 & -2 \end{bmatrix}^T
-  = \begin{bmatrix} 2 & -2 \\ 2 & 0 \\  -2  & -1 \end{bmatrix}
+  = \begin{bmatrix} 2 & -2 \\ 2 & 0 \\  -2  & -1 \end{bmatrix}.
 $$
 
-%Answer: $\begin{bmatrix} 2 & -2 \\ 2 & 0 \\  -2  & -1 \end{bmatrix}$\,
 
 ::::::
 
-## Grasple Exercises
+## Grasple exercises
 
 ::::::{grasple}
 :iframeclass: dark-light
@@ -531,23 +530,24 @@ $$
         \begin{bmatrix}
             b_{11} & b_{12}&  \ldots& \class{red}{b_{1j}} & \ldots&  b_{1p} \\
             b_{21} & b_{22}&  \ldots&  \class{red}{b_{2j}} & \ldots&  b_{2p} \\
-            \vdots &  \vdots&  \ldots&  & \ldots& \vdots    \\
+            \vdots &  \vdots&  \cdots&  & \ldots& \vdots    \\
             b_{n1} & b_{n2}&  \ldots&  \class{red}{b_{nj}} &  \ldots& b_{np}
           \end{bmatrix} \\
     \begin{bmatrix}
             a_{11} & a_{12}&  \ldots& \ldots&  a_{1n} \\
             a_{21} & a_{22}&  \ldots& \ldots&  a_{2n} \\
-            \cdots &  \ddots&  \ldots& \ldots& \vdots    \\
-              \class{red}{a_{i1}} &  \class{red}{a_{i2}}&   \class{red}{\cdots}& \ldots&   \class{red}{a_{in}} \\
-            \vdots &  \vdots&  \ldots& \ldots& \vdots    \\
+            \cdots &  \ddots&  \cdots& \cdots& \vdots    \\
+              \class{red}{a_{i1}} &  \class{red}{a_{i2}}&   \class{red}{\ldots}&
+              \class{red}{\ldots}&   \class{red}{a_{in}} \\
+            \vdots &  \vdots&  \cdots& \cdots& \vdots    \\
             a_{m1} & a_{m2}&  \ldots&  \ldots& a_{mn}
     \end{bmatrix} \!\! &  \!
     \begin{bmatrix}
             c_{11} & c_{12}&  \ldots& c_{1j} &\ldots&  c_{1p} \\
             c_{21} & c_{22}&  \ldots&  c_{2j} &\ldots&  c_{2p} \\
-            \vdots &  \vdots&  \ldots& & \ldots& \vdots    \\
+            \vdots &  \vdots&  \cdots& & \cdots& \vdots    \\
              c_{i1} &  c_{i2}&  \cdots&\class{red}{c_{ij}} &\ldots&   c_{ip} \\
-            \vdots &  \vdots&  \ldots& &\ldots& \vdots    \\
+            \vdots &  \vdots&  \cdots& &\cdots& \vdots    \\
             c_{m1} & c_{m2}&  \ldots&  c_{mj} &\ldots& c_{mp}
     \end{bmatrix}
   \end{array}
@@ -560,7 +560,7 @@ $$
 %of $B$. The last is of course part of the definition.\\
 
 ::::::{prf:example}
-Let us consider the same matrix product
+Let us consider the matrix product
 
 $$
   \begin{bmatrix} 1 & -3 \\ -1 & 2 \\ 3& -2 \end{bmatrix}
@@ -667,7 +667,7 @@ $$
          \begin{bmatrix} \mathbf{a}_1\ip \mathbf{b}_1  & \mathbf{a}_1\ip\mathbf{b}_2 & \ldots &  \mathbf{a}_1\ip \mathbf{b}_p \\
                          \mathbf{a}_2\ip \mathbf{b}_1  & \mathbf{a}_2\ip\mathbf{b}_2 & \ldots &  \mathbf{a}_2\ip \mathbf{b}_p \\
                               \vdots              &            \vdots       &        &        \vdots \\
-                         \mathbf{a}_n\ip \mathbf{b}_1  & \mathbf{a}_n\ip\mathbf{b}_2 & \ldots &  \mathbf{a}_n\ip \mathbf{b}_p \\ \\
+                         \mathbf{a}_n\ip \mathbf{b}_1  & \mathbf{a}_n\ip\mathbf{b}_2 & \ldots &  \mathbf{a}_n\ip \mathbf{b}_p \\ 
          \end{bmatrix},
 
 
@@ -681,7 +681,7 @@ where $\mathbf{a}\ip\mathbf{b}$ is the dot product of the vectors $\mathbf{a}$ a
 :label: Exc:MatrixOps:InterpretATA
 
 The special case in the previous exercise where $A = B$ will become very important when we will look at orthogonal projections.
-For now, show that: the columns of a matrix $A$ are orthogonal if and only if the
+For now, show that the columns of a matrix $A$ are orthogonal if and only if the
 matrix $A^TA$ is a diagonal matrix.
 
 ::::::
@@ -1565,7 +1565,7 @@ We will dedicate {numref}`Sec:MatrixInv` to this topic.
 
 ::::::
 
-## Grasple Exercises
+## Grasple exercises
 
 ::::::{grasple}
 :iframeclass: dark-light

@@ -346,7 +346,6 @@ $$
   (\mathbf{v}_1+\mathbf{v}_2)\ip(\mathbf{v}_1-\mathbf{v}_2) = \mathbf{v}_1\ip\mathbf{v}_1-\mathbf{v}_2\ip\mathbf{v}_2.
 $$
 
-%Explain why it is called the \emph{parallelogram rule}.
 
 :::
 
@@ -395,6 +394,8 @@ and explain why it is called the _parallelogram rule_.
 
 :::
 
+
+
 :::{admonition} Solution to&nbsp;{numref}`Exc:InnerProduct:PargramRule`
 :class: solution, dropdown
 
@@ -409,6 +410,28 @@ $$
   \end{array}
 
 
+$$
+
+
+The figure explains the name. 
+
+:::{figure} Images/Fig-InnerProduct-ParGramRule.svg
+:name: Fig:InnerProduct:ParGramrule
+:class: dark-light
+
+Parallelogram rule explained.
+
+:::
+
+In the parallelogram  $OABC$  the sum of the squares of lengths of the four sides equals the sum 
+the squares of lengths of the diagonals.
+
+$$
+\begin{array}{ll}
+  OA^2 + AB^2 + BC^2 + CO^2 &=& 2\norm{\vect{v}_1}^2 + 2\norm{\vect{v}_2}^2 \\
+      &=& \norm{\mathbf{v}_1+\mathbf{v}_2}^2 + \norm{\mathbf{v}_1-\mathbf{v}_2}^2    
+      =  OB^2 + CA^2
+\end{array}
 $$
 
 :::

@@ -316,7 +316,7 @@ $$
 
 (Sec:DetCofactors:Triangular)=
 
-## Determinants of Triangular Matrices
+## Determinants of triangular matrices
 
 The next example is meant to illustrate a more general property.
 
@@ -427,7 +427,7 @@ We need to know a little more about determinants to establish this connection wi
 
 (Sec:DetCofactors:Transpose)=
 
-## The Determinant of the Transpose of a Matrix
+## The determinant of the transpose of a matrix
 
 
 The last property that may be expected to hold as a consequence of {prf:ref}`Thm:DetCofactors:RowOrColumnExpansion` where the rows and the columns play interchangeable roles is the following.
@@ -481,7 +481,7 @@ $3 \times 3$ determinants since it holds for $2 \times 2$ determinants.
 In a similar way, the property $\text{det}\big(A^T\big) = \text{det}(A)$ for $4 \times 4$ matrices follows from the correctness for $3 \times 3$ matrices, and this can be (either formally or informally) lifted up to determinants of an arbitrary size.
 
 
-## Grasple Exercises
+## Grasple exercises
 
 ::::::{grasple}
 :iframeclass: dark-light

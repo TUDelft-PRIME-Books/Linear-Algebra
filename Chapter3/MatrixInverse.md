@@ -55,7 +55,7 @@ $$
 $$
 
 does not always have a solution, or the solution is not unique, not even in the case of two
-$n \times n$ matrices $A$ and $B$. Two examples to illustrate this:
+$n \times n$ matrices $A$ and $B$. The following two examples to illustrate this.
 
 ::::::{prf:example}
 :label: Ex:MatrixInv:MatrixEqNoSolution
@@ -141,7 +141,7 @@ For non-square matrices things are even worse. In this section we will only cons
 
 (Subsec:MatrixInv:DefInverse)=
 
-## Definition and Basic Properties of the Inverse
+## Definition and basic properties of the inverse
 
 ::::::{prf:definition}
 :label: Dfn:MatrixInv:DefInverse
@@ -163,7 +163,7 @@ a non-invertible matrix is also called a **singular** matrix.
 
 ::::::
 
-Note the use of the definite article **the** in the sentence '$B$ is called **the** inverse of $A$'. The following proposition justifies this choice of word.
+Note the use of the definite article **the** in the sentence ''$B$ is called **the** inverse of $A$''. The following proposition justifies this choice of word.
 
 ::::::{prf:proposition}
 :label: Prop:MatrixInv:UniqueInverse
@@ -466,12 +466,12 @@ $$
  AX = I \quad \text{has a (unique) solution.}
 $$
 
-That means that every column $\mathbf{e_j}$ of the identity matrix is a linear combination of columns $\mathbf{a_1}, \ldots, \mathbf{a_n}$ of $A$.
+That means that every column $\vect{e}_j$ of the identity matrix is a linear combination of columns $\vect{a}_1, \ldots, \vect{a}_n$ of $A$.
 So the span of the columns of $A$ contains the span of the columns of
-$\mathbf{e_1}, \ldots, \mathbf{e}_n$, which is the whole $\mathbb{R}^n$. Thus **every** linear system
+$\vect{e}_1, \ldots, \vect{e}_n$, which is the whole $\mathbb{R}^n$. Thus **every** linear system
 
 $$
-  A\mathbf{x} =\mathbf{b}, \quad \mathbf{b} \in \mathbb{R}^{n}
+  A\vect{x} =\vect{b}, \quad \vect{b} \in \mathbb{R}^{n}
 $$
 
 has a solution.
@@ -479,40 +479,38 @@ Then the reduced echelon form of $A$ must have a pivot in every row, and, since 
 the linear system
 
 $$
-  A\mathbf{x} =\mathbf{0}
+  A\vect{x} =\vect{0}
 $$
 
 only has the trivial solution, which proves that indeed the columns of $A$ are linearly independent.
 
 For the converse, suppose that $A$ has linearly independent columns.
 Then the reduced echelon form of $A$ must be the identity matrix.
-This implies that for each $\mathbf{b}$ in $\mathbb{R}^n$
+This implies that for each $\vect{b}$ in $\mathbb{R}^n$
 
 $$
-  [\,A\,|\,\mathbf{b}\,] \sim[\,I\,|\,\mathbf{b'}\,],
+  [\,A\,|\,\vect{b}\,] \sim[\,I\,|\,\vect{b'}\,],
 $$
 
 and in particular, each linear system
 
 $$
-  A\mathbf{x} =\mathbf{e_j}
+  A\vect{x} =\vect{e}_j
 $$
 
-has a unique solution. If we denote this solution by $\mathbf{c_j}$ we have that
+has a unique solution. If we denote this solution by $\vect{c}_j$ we have that
 
 $$
-  A[\,\mathbf{c_1}\,\,\mathbf{c_2}\,\, \ldots \,\, \mathbf{c_n}\,] =
-   [\,A\mathbf{c_1}\,\,A\mathbf{c_2}\,\, \ldots \,\, A\mathbf{c_n}\,] =
-    [\,\mathbf{e_1}\,\,\mathbf{e_2}\,\, \ldots \,\, \mathbf{e_n}\,] = I.
+  A[\,\vect{c}_1\,\,\vect{c}_2\,\, \ldots \,\, \vect{c}_n\,] =
+   [\,A\vect{c}_1\,\,A\vect{c}_2\,\, \ldots \,\, A\vect{c}_n\,] =
+    [\,\vect{e}_1\,\,\vect{e}_2\,\, \ldots \,\, \vect{e}_n\,] = I.
 $$
 
-Since all solutions $\mathbf{c_j}$ are unique, the solution of the equation
+Since all solutions $\vect{c}_j$ are unique, the solution of the equation
 
 $$
 
   AX = I
-
-
 
 
 $$
@@ -609,7 +607,7 @@ $$
 the two solutions are quickly written down:
 
 $$
-  \mathbf{x_1}= A^{-1}\mathbf{b_1}=
+  \vect{x}_1= A^{-1}\vect{b}_1=
   \frac{1}{2}\begin{bmatrix}-4 & 2 \\ 3 & -1 \end{bmatrix}
   \begin{bmatrix}-1  \\ 1 \end{bmatrix} =
   \begin{bmatrix}3  \\ -2 \end{bmatrix}
@@ -618,7 +616,7 @@ $$
 and likewise
 
 $$
-  \mathbf{x_2}=  A^{-1}\mathbf{b_2}= \frac{1}{2}\begin{bmatrix}-4 & 2 \\ 3 & -1 \end{bmatrix}
+  \vect{x}_2=  A^{-1}\vect{b}_2= \frac{1}{2}\begin{bmatrix}-4 & 2 \\ 3 & -1 \end{bmatrix}
   \begin{bmatrix}2  \\ 10 \end{bmatrix} =
   \begin{bmatrix}6  \\ -2 \end{bmatrix}.
 $$
@@ -628,7 +626,7 @@ $$
 A note of **warning**: the proof of {prf:ref}`Prop:SolutionViaInverse`
 is based on the **existence** of the inverse of the matrix $A$. Beware of this: never start using the expression $A^{-1}$ unless you have made sure first that the matrix $A$ is indeed invertible.
 If not, you may lead yourself into inconsistencies like in the following
-example:
+example.
 
 ::::::{prf:example}
 :label: Ex:MatrixInv:FallaciousProof
@@ -898,7 +896,7 @@ $$
 
 (Subsec:MatrixInverse:ComputeInverse)=
 
-## How to Compute the Inverse
+## How to compute the inverse
 
 The construction of the inverse of a matrix was already present implicitly in {prf:ref}`Prop:MatrixInv:InvertibleIndepCols`.
 
@@ -906,7 +904,8 @@ The inverse of the matrix $A$ must satisfy the equation $AX = I$.
 Written out column by column this means that
 
 $$
-  AX = I \quad  \iff \quad A[\,\mathbf{x_1}\,\,\mathbf{x_2}\, \ldots\, \mathbf{x_n}\,] = [\,\mathbf{e_1}\,\mathbf{e_2}\, \ldots\, \mathbf{e_n}\,].
+  AX = I \quad  \iff \quad A[\,\mathbf{x}_1\,\,\mathbf{x}_2\, \ldots\, \mathbf{x}_n\,] = 
+  [\,\mathbf{e}_1\,\mathbf{e}_2\, \ldots\, \mathbf{e}_n\,].
 $$
 
 For the existence of a solution of this Equation {prf:ref}`Prop:MatrixInv:InvertibleIndepCols` tells us
@@ -914,7 +913,7 @@ it is <u>necessary</u> that $A$ has linearly independent columns, and we can fur
 $X$ will be the (unique) solutions of the linear systems
 
 $$
-   A\mathbf{x_k} = \mathbf{e_k},
+   A\mathbf{x}_k = \mathbf{e}_k,
 $$
 
 where $k = 1,2,\ldots, n$.
@@ -1086,8 +1085,8 @@ $$
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixInv:Algorithm`
 :class: tudproof
 
-We have already seen ({prf:ref}`Prop:MatrixInv:InvertibleIndepCols`) that an invertible matrix linearly independent columns,
-which implies that the reduced echelon form of $A$ is indeed the identity matrix. And then it is clear that via row operations we get
+We have already seen ({prf:ref}`Prop:MatrixInv:InvertibleIndepCols`) that an invertible matrix has  linearly independent columns,
+which implies that the reduced echelon form of $A$ is indeed the identity matrix. It is then clear that via row operations we get
 
 $$
   \left[\, A \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,I\,\right]\sim \quad .\,.\,.\,.\,. \quad \sim
@@ -1330,7 +1329,7 @@ In the same vein it is shown that $CA$ is the inverse of $B$.
 
 (Subsec:MatrixInverse:Summary)=
 
-## Characterizations of Invertibility
+## Characterizations of invertibility
 
 In the previous subsections quite a few properties of invertible matrices came along, either explicitly or implicitly. For future reference we list them in a theorem.
 
@@ -1345,7 +1344,7 @@ $$
 
 For an $n\times n$ matrix $A$, the following statements are equivalent.
 <br/>
-That is, each of the following properties is a characterization of invertibility of a square matrix $A$:
+That is, each of the following properties is a characterization of invertibility of a square matrix $A$.
 
 <ol>
 <li>
@@ -1434,7 +1433,7 @@ Again it may very well be that you have to resort to previous sections.
 
 (Subsec:MatrixInverse:Grasple)=
 
-## Grasple Exercises
+## Grasple exercises
 
 The first exercises are quite straightfordwardly computational.
 The remaining exercises tend to be more theoretic.
@@ -1471,7 +1470,7 @@ The remaining exercises tend to be more theoretic.
 :url: https://embed.grasple.com/exercises/82c06a56-8ee8-4f36-8173-e5d56da1e8e3?id=71073
 :label: grasple_exercise_3_4_4  
 :dropdown:
-:description: To compute step by step the inverse of a $3 \times 3$ matrix.
+:description: To compute  the inverse of a $3 \times 3$ matrix step by step.
 
 ::::::
 
