@@ -576,9 +576,10 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 
 ::::::
 
+
 ::::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/1b4c6f2b-75d2-e6f2f096-d1eb-4386-91df-2c6a6d6270c3?id=70192
+:url: https://embed.grasple.com/exercises/e6f2f096-d1eb-4386-91df-2c6a6d6270c3?id=70192
 :label: grasple_exercise_2_5_7
 :dropdown:
 :description: Verifying linear (in)dependence of a set of vectors.
