@@ -202,7 +202,6 @@ $$
    \left\{\begin{array}{ccccccccc}
             a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  b_1 \\
             a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! b_2 \\
-            \vdots \! & \!+\!&\!  \vdots\! & \!+\!&\!\cdots\! & \!+\!&\! \vdots     \! & \!=\!&\!  \vdots \\
             \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\cdots\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
             a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! b_m
           \end{array}
@@ -474,7 +473,6 @@ $$
    \left\{\begin{array}{ccccccccc}
             a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  p_1 \\
             a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! p_2 \\
-            \vdots \! & \!+\!&\!  \vdots\! & \!+\!&\!\cdots\! & \!+\!&\! \vdots     \! & \!=\!&\!  \vdots \\
             \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\cdots\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
             a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! p_m \\
           \end{array}
@@ -487,7 +485,6 @@ $$
    \left\{\begin{array}{ccccccccc}
             a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  q_1 \\
             a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! q_2 \\
-            \vdots \! & \!+\!&\!  \vdots\! & \!+\!&\!\cdots\! & \!+\!&\! \vdots     \! & \!=\!&\!  \vdots \\
             \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\cdots\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
             a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! q_m \\
           \end{array}
@@ -500,7 +497,6 @@ $$
    \left\{\begin{array}{ccccccccc}
             a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  r_1 \\
             a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! r_2 \\
-            \vdots \! & \!+\!&\!  \vdots\! & \!+\!&\!\cdots\! & \!+\!&\! \vdots     \! & \!=\!&\!  \vdots \\
             \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\cdots\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
             a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! r_m \\
           \end{array}
@@ -568,7 +564,7 @@ The collection $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$ is equal to $\mathbb{
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LinearCombinations:SpanSolution`
 :class: tudproof
 
-If $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$ is equal to $\mathbb{R}^n$, then each vector $\mathbf{b}$ is a vector in the span of the vectors $\mathbf{v}_1, \ldots, \mathbf{v}_k$. This means that we can write $\mathbf{b}$ as a linear combination
+If $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$ is equal to $\mathbb{R}^n$, then each vector $\mathbf{b}$ in  $\mathbb{R}^n$  is a vector in the span of the vectors $\mathbf{v}_1, \ldots, \mathbf{v}_k$. This means that we can write $\mathbf{b}$ as a linear combination
 
 $$
 \mathbf{b}=x_1\mathbf{v}_1+ \ldots + x_k\mathbf{v}_k.

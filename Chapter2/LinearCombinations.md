@@ -7,7 +7,7 @@
 Let $\mathbf{v}_1, \ldots, \mathbf{v}_n$ be vectors in $\mathbb{R}^m$. Any expression of the form
 
 $$
-x_1 \mathbf{v_1}+\cdots+x_n \mathbf{v_n},
+x_1 \mathbf{v}_1+\cdots+x_n \mathbf{v}_n,
 $$
 
 where $x_1, \ldots, x_n$ are real numbers, is called a **linear combination** of the vectors $\mathbf{v}_1, \ldots, \mathbf{v}_n$.
@@ -35,8 +35,8 @@ If we want to determine whether a given vector is a linear combination of other 
 ::::{prf:example}
 
 $$
-\mathbf{v_1}=
-\begin{bmatrix} 1 \\ 2 \\ 1 \end{bmatrix} \quad \mathbf{v_2}=
+\mathbf{v}_1=
+\begin{bmatrix} 1 \\ 2 \\ 1 \end{bmatrix} \quad \mathbf{v}_2=
 \begin{bmatrix} 3 \\ 1 \\ 2 \end{bmatrix} \quad \mathbf{b}=
 \begin{bmatrix} -1 \\ 3 \\ 0 \end{bmatrix}
 $$
@@ -86,8 +86,8 @@ We have found that $\mathbf{b}$ can be written as $2\mathbf{v}_1-\mathbf{v_2}$.
 ::::{prf:example}
 
 $$
-\mathbf{v_1}=
-\begin{bmatrix} 1 \\ 0 \\ 2 \end{bmatrix} \quad \mathbf{v_2}=
+\mathbf{v}_1=
+\begin{bmatrix} 1 \\ 0 \\ 2 \end{bmatrix} \quad \mathbf{v}_2=
 \begin{bmatrix} 3 \\ 0 \\ 1 \end{bmatrix} \quad \mathbf{b}=
 \begin{bmatrix} 2 \\ 1 \\ 1 \end{bmatrix}
 $$
@@ -241,7 +241,7 @@ There is also a possibility where the span of three non-zero vectors in $\mathbb
 :url: https://embed.grasple.com/exercises/676d672c-74fc-4545-99ba-6b308af566ce?id=78542
 :label: grasple_exercise_2_2_C
 :dropdown:
-:description: Interpretation of Span$\{\vect{v}_1,\vect{v_2},\vect{v}_3\}$.
+:description: Interpretation of Span$\{\vect{v}_1,\vect{v}_2,\vect{v}_3\}$.
 
 ::::
 

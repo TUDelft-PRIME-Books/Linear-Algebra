@@ -198,11 +198,7 @@ $$
 Line $\mathcal{L}$ with normal vector $\vect{n}$.
 ::::
 
-Let $\mathbf{v_0}$ be the vector that connects the origin to the point $P$. We can see in {numref}`Figure %s <Fig:LinesAndPlanes:NormalEquationLine>` that a vector $\mathbf{v}$ is on the line $\mathcal{L}$ whenever
-
-$$
-(\mathbf{v}-\mathbf{v_0})\ip\mathbf{n}=0.
-$$
+Let $\mathbf{v_0}$ be the vector that connects the origin to the point $P$. We can see in {numref}`Figure %s <Fig:LinesAndPlanes:NormalEquationLine>` that a vector $\mathbf{v}$ is on the line $\mathcal{L}$ whenever   $(\mathbf{v}-\mathbf{v_0})\ip\mathbf{n}=0.$
 
 ::::{prf:definition}
 
@@ -616,7 +612,7 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 :url: https://embed.grasple.com/exercises/1c6242a7-85e4-4bef-b05b-4c6693170bfc?id=67268
 :label: grasple_exercise_1_4_5
 :dropdown:
-:description: When are two lines in $\R^2$ not parallel?
+:description: When are two lines in $\R^n$ not parallel?
 
 ::::
 
@@ -679,7 +675,7 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 :url: https://embed.grasple.com/exercises/bbb3c082-b8d1-42d6-b718-b37d5ba26363?id=67260
 :label: grasple_exercise_1_4_12
 :dropdown:
-:description: To find plane $V$ parallel to $W$ $ax+by+cz=k$ and containing a point $P$.
+:description: To find the plane $V$ parallel to the plane $W$ given by  $ax+by+cz=k$ and containing a point $P$.
 
 ::::
 
@@ -688,8 +684,9 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 :url: https://embed.grasple.com/exercises/23faf686-3fb3-4280-aa26-f14be36f5aae?id=78870
 :label: grasple_exercise_1_4_13
 :dropdown:
+:description: To decide whether two planes are parallel.
 
-::::
+:::: 
 
 ::::{grasple}
 :iframeclass: dark-light
