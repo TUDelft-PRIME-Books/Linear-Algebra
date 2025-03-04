@@ -56,8 +56,17 @@ $$
 and
 
 $$
-\begin{bmatrix}1 & 2 & 3 & 5 \end{bmatrix}
+\begin{bmatrix}1 & 2 & 3 & 5 \end{bmatrix} 
 \begin{bmatrix} 4 \\ -2 \\ -1 \\ 3\end{bmatrix} =
+4[1] + (-2)[2] + (-1)[3] + 3[5] =  [12].
+$$
+
+It is customary to consider a 1x1 matrix as a number, and write the last product as 
+
+$$
+\begin{bmatrix}1 & 2 & 3 & 5 \end{bmatrix} 
+\begin{bmatrix} 4 \\ -2 \\ -1 \\ 3\end{bmatrix} 
+ =
   1\cdot4 +2\cdot(-2)+3\cdot(-1) + 5\cdot 3 = 12.
 $$
 
@@ -736,10 +745,10 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/a5715fe9-74ae-4df5-857f-2c6ed1cc9cdc?id=68889
+:url: https://embed.grasple.com/exercises/194dcee8-b5e7-42af-8ab0-c40c4fce47a4?id=114628
 :label: grasple_exercise_2_4_5
 :dropdown:
-:description: A statement concerning two systems $A\vect{x}=\vect{p}$, $A\vect{x}=\vect{q}$.
+:description: Between matrox-vector and vector-vector equation.
 
 ::::
 

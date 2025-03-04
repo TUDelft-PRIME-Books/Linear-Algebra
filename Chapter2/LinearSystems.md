@@ -1735,17 +1735,23 @@ Write down the augmented matrix corresponding to the system.
 </li>
 <li>
 
-Row reduce the augmented matrix to reduced echelon form.
+Row reduce the augmented matrix to  echelon form.
 
 </li>
 <li>
 
-If there is a pivot in the last column (the column 'behind the bar'), the system is inconsistent.
+If there is a pivot in the last column (the column 'behind the bar'), the system is inconsistent.  
+End of story.
 
 </li>
 <li>
 
-If the last column does not contain a pivot, write down the corresponding system of equations and express the variables in the pivot columns into the other variables (if any). These other variables are free variables.
+If the last column does not contain a pivot, reduce the augmented matrix further till reduced echelon form.
+
+</li>
+
+<li>
+Write down the corresponding system of equations and express the variables in the pivot columns into the other variables (if any). These other variables are free variables.
 
 </li>
 </ol>

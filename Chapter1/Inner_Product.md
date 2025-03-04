@@ -423,8 +423,8 @@ Parallelogram rule explained.
 
 :::
 
-In the parallelogram  $OABC$  the sum of the squares of lengths of the four sides equals the sum 
-the squares of lengths of the diagonals.
+In the parallelogram  $OABC$  the sum of the squares of the lengths of the four sides equals the sum 
+the squares of the lengths of the diagonals.
 
 $$
 \begin{array}{ll}
@@ -1485,7 +1485,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/7bb32c8c-9a2e-49bd-85fa-b7d205949510?id=114535
-:label: grasple_exercise_1_2_3
+:label: grasple_exercise_1_2_4
 :dropdown:
 :description: To compute dot products in $\R^2$, $\R^3$ and $\R^4$.
 
@@ -1494,7 +1494,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/7b49e0f5-ae8b-4e92-8878-665dc080b7ee?id=65601
-:label: grasple_exercise_1_2_4
+:label: grasple_exercise_1_2_5
 :dropdown:
 :description: To find a vector orthogonal to a given vector in $\R^2$.
 
@@ -1503,7 +1503,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c8b4eed4-179f-42ab-9ec9-07f66445c960?id=69482
-:label: grasple_exercise_1_2_5
+:label: grasple_exercise_1_2_6
 :dropdown:
 :description: To find a vector orthogonal to two given vectors in $\R^2$.
 
@@ -1512,7 +1512,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/b5a4e1c0-92ca-4307-9eb0-25a3a5807fc7?id=62415
-:label: grasple_exercise_1_2_6
+:label: grasple_exercise_1_2_7
 :dropdown:
 :description: To find a vector orthogonal to a given vector in $\R^3$.
 
@@ -1599,14 +1599,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 
 ::::
 
-::::{grasple}
-:iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/161ecdf6-4cfb-41ba-bc16-685fe8532471?id=62414
-:label: grasple_exercise_1_2_16
-:dropdown:
-:description: To show that &nbsp;$(\vect{v}+\vect{w})\ip(\vect{v}-\vect{w}) = \norm{\vect{v}}^2 - \norm{\vect{w}}^2$.
 
-::::
 
 ::::{grasple}
 :iframeclass: dark-light
@@ -1614,6 +1607,17 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 :label: grasple_exercise_1_2_17
 :dropdown:
 :description: To prove that &nbsp;$(\vect{v}+\vect{w})\ip\vect{x} = \vect{v}\ip\vect{x}+\vect{w}\ip\vect{x}$.
+
+::::
+
+% swapped with previous;  27-02-2025
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/161ecdf6-4cfb-41ba-bc16-685fe8532471?id=62414
+:label: grasple_exercise_1_2_16
+:dropdown:
+:description: To show that &nbsp;$(\vect{v}+\vect{w})\ip(\vect{v}-\vect{w}) = \norm{\vect{v}}^2 - \norm{\vect{w}}^2$.
 
 ::::
 
@@ -1632,8 +1636,8 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 :label: grasple_exercise_1_2_19
 :dropdown:
 :description: To prove that $-1 \leq \dfrac{\vect{u}\ip\vect{v}}{\norm{\vect{u}} \norm{\vect{v}}} \leq  1$.
-
 ::::
+
 
 ::::{grasple}
 :iframeclass: dark-light
