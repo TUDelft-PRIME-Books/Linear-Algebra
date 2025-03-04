@@ -388,3 +388,63 @@ $$
 so the distribution after $50$ moves is already quite close to the steady state. Remark that nodes $2$ and $4$ have the exact same probability in every state.
 
 ::::
+
+
+
+## Grasple Exercises
+
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/ae1aee60-cada-4419-b0f1-dd1f7d4b4e13?id=110356
+:label: grasple_exercise_9_2_1
+:dropdown:
+:description: To find the steady state of 3x3 probability matrix $P$.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/c5c526e8-2a6a-4714-a99f-4a956bbfe0f0?id=110857
+:label: grasple_exercise_9_2_2
+:dropdown:
+:description: To find the steady state of 3x3 probability matrix $P$.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/e2a616ee-2bc6-4e2b-8e04-2161ae75e3f0?id=110321
+:label: grasple_exercise_9_2_3
+:dropdown:
+:description: To find the steady state of 3x3 probability matrix $P$.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/6b2f6fe5-72d8-48c0-bc12-97afeedc04bd?id=110861
+:label: grasple_exercise_9_2_4
+:dropdown:
+:description: Steady state + high powers of 2x2 probability matrix $P$.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/44508dbb-5a1f-42d6-918b-fc7c464b4e0d?id=110368
+:label: grasple_exercise_9_2_5
+:dropdown:
+:description: To construct a Markov Chain from a cycling story
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/632c5581-1a58-427a-a620-19da8b094470?id=110775
+:label: grasple_exercise_9_2_6
+:dropdown:
+:description: To construct a Markov Chain for a frog on lillies
+
+::::
