@@ -332,7 +332,7 @@ $$
 
 $$
 
-are solutions of $\vect{y}'=A\vect{y}$. If $A$ is a $2\times 2$-matrix, we can summarize this as follows. 
+are solutions of $\vect{y}'=A\vect{y}$. If $A$ is a $2\times 2$-matrix, we can summarise this as follows. 
 
 :::{prf:Proposition}
 

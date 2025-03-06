@@ -360,7 +360,7 @@ $$
 \det{(AB)} = 0 = \det{A}\cdot\det{B}.
 $$
 
-Hence suppose that the matrix $A$ is invertible. In that case (cf. {prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations`) $A$ can be written as a product of elementary matrices.
+Hence suppose that the matrix $A$ is invertible. In that case (cf. {prf:ref}`Thm:MatrixInv:InvertibilityCharacterisations`) $A$ can be written as a product of elementary matrices.
 
 $$
 A = E_1E_2\ldots E_k.
@@ -736,11 +736,11 @@ $$
 
 The same argument works for the interchanging of two arbitrary consecutive columns.
 <BR> 
-And the argument can even be generalized for two columns that are not necessarily neighbours.  The notation with many indices becomes hard to read though.  As stated the swapping of two arbitrary columns can be accomplished via an odd number of 'consecutive swaps', so then the determinant changes sign an odd number of times.
+And the argument can even be generalised for two columns that are not necessarily neighbours.  The notation with many indices becomes hard to read though.  As stated the swapping of two arbitrary columns can be accomplished via an odd number of 'consecutive swaps', so then the determinant changes sign an odd number of times.
 And for an odd number $n$ we have that $(-1)^n = -1$. <BR>
 In fact, to swap columns $i$ and $j$, with $i < j$,  we need  $j-i$ neighbour swaps to move
 column $i$ to position $j$, and  $j-i-1$ swaps to move (the original) column $j$ to position $i$, which gives a total of $n = 2(j-i)+1$ swaps. 
-For instance, to interchange column $2$ and column $5$ in a $5 \times 5$ matrix the $(j-i) + (j-i-1) = 3+2 =5$ neigbour swaps can be visualized as follows
+For instance, to interchange column $2$ and column $5$ in a $5 \times 5$ matrix the $(j-i) + (j-i-1) = 3+2 =5$ neigbour swaps can be visualised as follows
 
 
 $$

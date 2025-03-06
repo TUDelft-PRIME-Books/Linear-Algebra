@@ -29,7 +29,7 @@ is equivalent to
 
 $(A-\lambda I)\vect{x} = \vect{0}, \quad$ for a nonzero vector $ \vect{x}$.
 
-We also know ({prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations`) that such a nonzero solution exists only if
+We also know ({prf:ref}`Thm:MatrixInv:InvertibilityCharacterisations`) that such a nonzero solution exists only if
 
 the matrix $A - \lambda I$ is **not** invertible,
 
@@ -106,7 +106,7 @@ So for a $3 \times 3$ upper triangular matrix the eigenvalues are the diagonal e
 
 ::::::
 
-Obviously {prf:ref}`Ex:EigenValues:TriangularMatrix` can be generalized. This leads to the following proposition.
+Obviously {prf:ref}`Ex:EigenValues:TriangularMatrix` can be generalised. This leads to the following proposition.
 
 ::::::{prf:proposition}
 :label: Prop:EigenValues:TriangularMatrix
@@ -127,7 +127,7 @@ $$
 $$
 
 Likewise, we saw that for $n\times n$ triangular matrices the characteristic polynomial is a polynomial of degree $n$.
-That this can be generalized to arbitrary matrices is the content of the next proposition.
+That this can be generalised to arbitrary matrices is the content of the next proposition.
 
 ::::::{prf:proposition}
 :label: Prop:EigenValues:CharPoly
@@ -249,7 +249,7 @@ $$
 (3-\lambda)(\lambda^2 - 5\lambda + 6).
 $$
 
-We certainly do **not** eliminate the parentheses here, since in this factorized form the eigenvalue $\lambda = 3$
+We certainly do **not** eliminate the parentheses here, since in this factorised form the eigenvalue $\lambda = 3$
 is staring us right into the eyes.
 From the last expression we read off that $\lambda$ is an eigenvalue of $A$ if either
 $ (3-\lambda)=0 $ or $(\lambda^2 - 5\lambda +6)=0$. Noting that
@@ -268,7 +268,7 @@ $$
 
 From the examples so far it seems we have solved the question of how to find the eigenvalues. However, there is a proviso:
 if we start with a 'full' $3 \times 3$ matrix $A$, there may be nothing better to do than to compute det$(A - \lambda I)$
-by iteratively expanding across columns or rows. We then end up with a cubic polynomial, not in factorized form.
+by iteratively expanding across columns or rows. We then end up with a cubic polynomial, not in factorised form.
 In general it will be quite a hard task to compute its zeros. Obviously, things get even worse in higher dimensions.
 
 In the previous example ({prf:ref}`Ex:EigenValues:SecondCharPoly`) the eigenvalue $\lambda_1  = 3$  seems to play a different role than the eigenvalue $\lambda_2$. That is, the characteristic polynomial
@@ -335,7 +335,7 @@ from which we deduce that the geometric multiplicity of the eigenvalue $\lambda 
 ::::::
 
 At this moment it is not so easy to prove the following proposition, of which the previous example gives an illustration. 
-(For the proof: see the section 'Similar Matrices',  right after formula {eq}`Eq:Diagonalizable:GeomMultversusAlgMult`.)
+(For the proof: see the section 'Similar Matrices',  right after formula {eq}`Eq:Diagonalisable:GeomMultversusAlgMult`.)
 
 ::::::{prf:proposition}
 :label: Prop:EigenValues:SmallerGeomMultiplicity
