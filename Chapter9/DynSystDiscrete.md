@@ -937,3 +937,5 @@ For example, for $k=6$ we find &nbsp; $\left[\dfrac{1}{\sqrt{5}}\left(\dfrac{1+\
 
 which rounds correctly to the sixth Fibonacci number $f_6 = 8$.
 ::::
+
+

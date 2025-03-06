@@ -19,7 +19,7 @@ the left-hand side $A\mathbf{x}$
 can be seen as a mapping that sends an "input" $\mathbf{x}$ to an "output" $\mathbf{y}= A\mathbf{x}$.
 
 For instance, in computer graphics, typically points describing a 3D object have to be converted to points in 2D, to be able to visualize them on a screen. Or, in a dynamical system, a
-matrix $A$ may describe how a system evolves from a "state" $\mathbf{x}_{k}$ at time $k$ to a state $\mathbf{x}_{k+1}$ at time $k+1$ via :
+matrix $A$ may describe how a system evolves from a "state" $\mathbf{x}_{k}$ at time $k$ to a state $\mathbf{x}_{k+1}$ at time $k+1$ via 
 
 $$
     \mathbf{x}_{k+1} = A\mathbf{x}_{k}.
@@ -27,7 +27,7 @@ $$
 
 A "state" may be anything ranging from a set of particles at certain positions, a set of pixels describing a minion, concentrations of chemical substances in a reactor tank, to population sizes of different species.
 Thinking mathematically we would describe such an input-output interpretation as a
-transformation (or: function, map, mapping, operator)
+transformation (or: function, map, mapping, operator, .... )
 
 $$
    T: \mathbb{R}^n \to \mathbb{R}^m.
@@ -38,9 +38,9 @@ which makes them the protagonists of the more general linear algebra concept of 
 
 (Subsec:MatrixTrafo)=
 
-## Matrix Transformations
+## Matrix transformations
 
-Let $A$ be an $m\times n$ matrix. We can in a natural way associate a transformation $T_A:\mathbb{R}^n \to \mathbb{R}^m$ to the matrix $A$.
+Let $A$ be an $m\times n$ matrix. We can in a natural way associate a transformation $T_A:\mathbb{R}^n \to \mathbb{R}^m$ &nbsp; to the matrix $A$.
 
 ::::::{prf:definition}
 The transformation $T_A$ corresponding to the $m\times n$ matrix $A$
@@ -206,7 +206,7 @@ This transformation "embeds" the plane $\mathbb{R}^2$ into the space $\mathbb{R}
 :status: reviewed
 :class: dark-light
 
-$T$: embedding $\mathbb{R}^2$ into $\mathbb{R}^3$.
+$T$  embeds  $\mathbb{R}^2$ into $\mathbb{R}^3$.
 ```
 
 The range of this transformation is the span of the two vectors
@@ -265,8 +265,8 @@ $$
 \end{bmatrix} =
 \begin{bmatrix}
                 c \\ 0
-\end{bmatrix}
-  \quad \iff \quad
+\end{bmatrix},
+  \quad \text{so} \quad
 \begin{bmatrix}
         x+y \\ 0
 \end{bmatrix}  =
@@ -381,7 +381,7 @@ Obviously this model can be generalized to a "world" with any number of cities.
 
 (Subsec:LinTrafo:LinTrafo)=
 
-## Linear Transformations
+## Linear transformations
 
 In the previous section we saw that the matrix transformation $\mathbf{y}=A\mathbf{x}$ can also be seen as a mapping $T(\mathbf{x}) = A\mathbf{x}$.  
 This mapping has two characteristic properties on which we will focus in this section.
@@ -613,7 +613,7 @@ $$
 ::::::{exercise}
 :label: Exc:LinTrafo:T(x)=x+p
 
-Let $\mathbf{p}$ be a nonzero vector in $\mathbb{R}^2$. Is the translation
+Let $\mathbf{p}$ be a nonzero vector in $\mathbb{R}^2$. &nbsp;  Is the translation
 
 $$
    T\!:\mathbb{R}^2 \to \mathbb{R}^2, \quad  \mathbf{x} \mapsto \mathbf{x} + \mathbf{p}
@@ -795,7 +795,7 @@ And now, let us return to matrix transformations.
 
 (Subsec:LinTrafo:LinTrafoeqMatrixTrafo)=
 
-## Standard Matrix for a Linear Transformation
+## Standard matrix for a linear transformation
 
 We have seen that every matrix transformation is a linear transformation. In this subsection we will show that conversely
 every linear transformation $T:\mathbb{R}^n \to \mathbb{R}^m$ can be represented by a matrix transformation.
@@ -811,8 +811,8 @@ each set of vectors $\mathbf{x}_1,  \ldots, \mathbf{x}_k$ in $\mathbb{R}^n$ and 
 :::::{math}
 :label: Eq:LinTrafo:LinComb
 
-T(c_1\mathbf{x}\_1+c_2 \mathbf{x}\_2+\ldots +c_k \mathbf{x}\_k) =
-c_1T(\mathbf{x}\_1)+c_2T(\mathbf{x}\_2)+\ldots +c_kT( \mathbf{x}\_k).
+T(c_1\mathbf{x}_1+c_2 \mathbf{x}_2+\ldots +c_k \mathbf{x}_k) =
+c_1T(\mathbf{x}_1)+c_2T(\mathbf{x}_2)+\ldots +c_kT( \mathbf{x}_k).
 
 :::::
 
@@ -919,8 +919,7 @@ $$
 The central idea illustrated in {prf:ref}`Ex:LinTrafo:ExtendedLinearity`, which is in fact a direct consequence of {prf:ref}`Prop:LinTrafo:ExtendedLinearity`, is the following:
 
 a linear transformation $T$ from $\mathbb{R}^n$ to $\mathbb{R}^m$ is completely specified by the images
-$ T(\mathbf{a}\_1), T(\mathbf{a}\_2), \ldots , T(\mathbf{a}\_n)$ of a set of vectors $\{\mathbf{a}_1, \mathbf{a}_2, \ldots, \mathbf{a}_n\}$ that spans $\mathbb{R}^n$. <BR>
-This idea is also hovering over {prf:ref}`Ex:LinTrafo:ExtendedLinearity`.
+$ T(\mathbf{a}_1), T(\mathbf{a}_2), \ldots , T(\mathbf{a}_n)$ of a set of vectors $\{\mathbf{a}_1, \mathbf{a}_2, \ldots, \mathbf{a}_n\}$ that spans $\mathbb{R}^n$. 
 
 The simplest set of vectors that spans the whole space $\mathbb{R}^n$ is
 the standard basis for $\mathbb{R}^n$ which was introduced in the section {ref}`Sec:LinearCombinations`.
@@ -930,7 +929,7 @@ Recall that this is the set of vectors
 :::{math}
 :label: Eq:LinTrafo:StandardBasis
 
-\left(\vect{e}\_1,\mathbf{e}\_2, \ldots, \mathbf{e}\_n\right)=
+\left(\vect{e}_1,\mathbf{e}_2, \ldots, \mathbf{e}_n\right)=
 \left(\begin{bmatrix}
 1 \\ 0 \\ 0 \\ \vdots \\ 0
 \end{bmatrix},
@@ -1067,7 +1066,7 @@ More specific, if $T: \mathbb{R}^n \to \mathbb{R}^m$ is linear, then for each $\
 T(\mathbf{x}) = A\mathbf{x}, \quad \text{where} \quad
 A =
 \begin{bmatrix}
-T(\mathbf{e}\_1) & T(\mathbf{e}\_2) & \ldots & T(\mathbf{e}\_n)
+T(\mathbf{e}_1) & T(\mathbf{e}_2) & \ldots & T(\mathbf{e}_n)
 \end{bmatrix}.
 
 :::::
@@ -1112,7 +1111,7 @@ $$
   T( \mathbf{x}) =   x_1 T(\mathbf{e}_1) + x_2 T(\mathbf{e}_2) +  \ldots + x_n T(\mathbf{e}_n).
 $$
 
-The last expression is a linear combination of $n$ vectors in $\mathbb{R}^m$, and this can be written as a matrix-vector product:
+The last expression is a linear combination of $n$ vectors in $\mathbb{R}^m$, and thus can be written as a matrix-vector product:
 
 $$
   x_1 T(\mathbf{e}_1) + x_2 T(\mathbf{e}_2) +  \ldots + x_n T(\mathbf{e}_n) =
@@ -1132,7 +1131,7 @@ For a linear transformation $T:\mathbb{R}^n \to \mathbb{R}^m$, the matrix
 :label: Eq:LinTrafo:StandardMatrix2
 
 \begin{bmatrix}
-T(\mathbf{e}\_1) & T(\mathbf{e}\_2) & \ldots & T(\mathbf{e}\_n)
+T(\mathbf{e}_1) & T(\mathbf{e}_2) & \ldots & T(\mathbf{e}_n)
 \end{bmatrix}
 
 :::
@@ -1330,7 +1329,7 @@ $$
 
 ::::::
 
-## Grasple Exercises
+## Grasple exercises
 
 %::::::{grasple}
 %:iframeclass: dark-light

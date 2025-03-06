@@ -39,7 +39,7 @@ A certain generalization of the cross product to $n$ dimensions.
 
 (SubSec:DetExtras:Volume+Orientation)=
 
-## Volume and Orientation Revisited
+## Volume and orientation revisited
 
 We have seen in {numref}`Sec:DetGeometric` how determinants arise in the context of areas of parallelograms and volumes of parallelepipeds.
 
@@ -151,7 +151,7 @@ $$
 These are mapped to
 
 $$
-A\vect{p},  A\vect{p}+ rA\vect{e}_1, A\vect{p}+ rA\vect{e}_1+rA\vect{e}_2 \quad\text{and}\quad  A\vect{p}+ rA\vect{e}_2.
+A\vect{p},\quad A\vect{p}+ rA\vect{e}_1, \quad A\vect{p}+ rA\vect{e}_1+rA\vect{e}_2 \quad\text{and}\quad  A\vect{p}+ rA\vect{e}_2.
 $$
 
 This is a parallelogram with sides $rA\vect{e}_1 = r\vect{a}_1$ and $rA\vect{e}_2 =r \vect{a}_2$, which has area
@@ -233,7 +233,7 @@ $$
    &=& |\det{[\,A(\vect{v_1})\, \,\ldots \,\, A(\vect{v}_n)\,]}| \\
    &=& |\det{\left(A [\,\vect{v_1}\, \,\ldots \,\, \vect{v}_n\,]\right)}|\\
    &=& |\det{A} \det{[\,\vect{v_1}\, \,\ldots \,\, \vect{v}_n\,]}|\\
-   &=& |\det{A}| \text{Vol}(\mathcal{P}).
+   &=& |\det{A}| \,\text{Vol}(\mathcal{P}).
  \end{array}
 $$
 
@@ -256,12 +256,13 @@ Suppose $(\vect{v}_1,\,\vect{v}_2,\,\ldots\,,\,\vect{v}_n)$ is an ordered set of
 
 Then the following holds.
 
-If $\det{A} > 0$ the set $\big(T(\vect{v}_1),\,T(\vect{v}_2),\,\ldots\,,\,T(\vect{v}_n)\big)$ has the same orientation as the set $(\vect{v}_1,\,\vect{v}_2,\,\ldots\,,\,\vect{v}_n)$.
+If $\det{A} > 0$,  the set $\big(T(\vect{v}_1),\,T(\vect{v}_2),\,\ldots\,,\,T(\vect{v}_n)\big)$ has the same orientation as the set $(\vect{v}_1,\,\vect{v}_2,\,\ldots\,,\,\vect{v}_n)$.
 
 If $\det{A} < 0$ the set $\big(T(\vect{v}_1),\,T(\vect{v}_2),\,\ldots\,,\,T(\vect{v}_n)\big)$ has the opposite orientation as the set $(\vect{v}_1,\,\vect{v}_2,\,\ldots\,,\,\vect{v}_n)$.
 
 In short: the transformation $T(\vect{x}) = A\vect{x}$ **preserves** the orientation if  
 $\det{A} > 0$ and **reverses** the orientation if $\det{A} < 0$.
+
 ::::
 
 If the determinant is 0, then the set $\{T(\vect{v}_1), \ldots,T(\vect{v}_n) \}$ will be linearly dependent, and for such a set the orientation is not defined.
@@ -316,6 +317,8 @@ The images of a unit vector that rotates counterclockwise under transformation $
 
 ::::
 
+
+
 (Subsec:DetExtra:Cramer)=
 
 ## Cramer's rule
@@ -342,7 +345,7 @@ $$
 
 Suppose that $A$ is an invertible $n \times n$ matrix. Then we know that the linear system $A\vect{x} = \vect{b}$ has a unique solution for each $\vect{b}$ in $\R^n$. And we also know that the determinant of $A$ is not equal to zero.
 <BR>
-The next proposition gives a 'ready made' formula for the solution.
+The next proposition gives a ready-made formula for the solution.
 
 ::::::{prf:theorem} Cramer's Rule
 :label: Thm:DetExtras:Cramer
@@ -377,7 +380,7 @@ x_1  - x_2   + 2x_3 & = & 4 \\
 3x_1  + x_2   -5x_3  & = & 1
 \end{array}
 \right.
-\quad\text{i.e.} \quad
+\quad\quad \text{i.e.,} \quad
 \begin{bmatrix}
 1 & 2 & 1 \\ 1 & -1 & 2 \\ 3 & 1 & -5
 \end{bmatrix}
@@ -389,7 +392,7 @@ $$
 First of all, the determinant of $A$ can be computed as follows (in the first step we use column reduction, with the boxed 1 as a pivot):
 
 $$
-\left|\begin{array}{ccc} \fbox{1} & 2 & 1 \\ 1 & -1 & 2 \\ 3 & 1 & -5  \end{array} \right|=
+\left|\begin{array}{ccc} \fbox{$1$} & 2 & 1 \\ 1 & -1 & 2 \\ 3 & 1 & -5  \end{array} \right|=
 \left|\begin{array}{ccc}  1 & 0 & 0 \\ 1 & -3 & 1 \\ 3 & -5 & -8  \end{array} \right|=
 \left|\begin{array}{cc}   -3 & 1 \\  -5 & -8  \end{array} \right|= 29 \neq 0,
 $$
@@ -399,7 +402,7 @@ so the coefficient matrix is invertible and consequently the system has a unique
 According to Cramer's rule we find the first entry of the solution as follows (again we use the boxed 1 as a pivot):
 
 $$
-x_1 = \dfrac{\begin{vmatrix}  3 & 2 & 1 \\ 4 & -1 & 2 \\ 1 & \fbox{1} & -5  \end{vmatrix}}{29} =
+x_1 = \dfrac{\begin{vmatrix}  3 & 2 & 1 \\ 4 & -1 & 2 \\ 1 & \fbox{$1$} & -5  \end{vmatrix}}{29} =
 \dfrac{\begin{vmatrix}  1 & 0 & 11 \\ 5 & 0 & -3  \\ 1 & 1 & -5  \end{vmatrix}}{29} =
 \dfrac{-\begin{vmatrix}  1 & 11 \\ 5 & -3   \end{vmatrix}}{29} = \dfrac{58}{29} = 2.
 $$
@@ -451,7 +454,7 @@ By the linearity property (in all of the columns) of the determinant ({prf:ref}`
 :::{math}
 :label: Eq:DetExtras:ProofCramer
 
-c_1\det{(A)} + c_2\det{(A^{(1)}(\vect{a}\_2))} + \ldots + c_n\det{(A^{(1)}(\vect{a}\_n))} - \det{(A^{(1)}(\vect{b}))} = 0.
+c_1\det{(A)} + c_2\det{(A^{(1)}(\vect{a}_2))} + \ldots + c_n\det{(A^{(1)}(\vect{a}_n))} - \det{(A^{(1)}(\vect{b}))} = 0.
 
 :::
 
@@ -641,7 +644,7 @@ $$
 
 And second {prf:ref}`Cor:DetRowReduction:EqualRows`: the determinant of a matrix with two equal rows (or columns) is equal to 0.
 
-Let us consider the product $\text{Adj}(A) \cdot A$ very carefully:
+Let us consider the product &nbsp; $\text{Adj}(A) \cdot A$ &nbsp; very carefully:
 
 $$
 \left[\begin{array}{ccccc}
@@ -707,7 +710,7 @@ $$
 :label: Rem:DetExtras:Disclaimer2
 
 Like Cramer's rule, the formula for the inverse is **highly inefficient**.
-The comparison between the efforts required to compute the inverse via the adjugate matrix versus row reduction of the augmented matrix $[\,A\,|\,I\,]$ works out rather favorably for the latter.
+The comparison between the efforts required to compute the inverse via the adjugate matrix versus row reduction of the augmented matrix $[\,A\,|\,I\,]$ works out rather favorably for the latter. A glimpse of this insuffiency is shown by the above formula for the inverse of a $3 \times 3$ matrix.
 
 ::::::
 
@@ -794,19 +797,18 @@ $\vect{a}^{\ast}_n \perp \vect{a}_i$, for $i = 1,2,\ldots, n-1$ .
 </li>
 <li>
 
-$ \{\vect{a}_1, \, \ldots, \,\vect{a}_{n-1}\}$ is linearly dependent if and only if $\det{\left[\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\, \vect{a}^{\ast}_n\,\right]
-} = 0$ .
+$ \{\vect{a}_1, \, \ldots, \,\vect{a}_{n-1}\}$ is linearly dependent if and only if $\det{\left[\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\, \vect{a}^{\ast}_n\,\right]} = 0$.
 
 </li>
 <li>
 
 If $ \{\vect{a}_1, \ldots, \vect{a}_{n-1}\}$ is linearly independent, then $\det{\left[\,\vect{a}_1, \ldots, \vect{a}_{n-1}, \vect{a}^{\ast}_n\,\right]
-} > 0$ .
+} > 0$.
 
 </li>
 <li>
 
-The norm of the vector $\vect{a}^{\ast}_n$ is equal to the $(n-1)$-dimensional volume of the $(n-1)$-dimensional parallelepiped generated by $\vect{a}_1, \ldots, \vect{a}_{n-1}$ .
+The norm of the vector $\vect{a}^{\ast}_n$ is equal to the $(n-1)$-dimensional volume of the $(n-1)$-dimensional parallelepiped generated by $\vect{a}_1, \ldots, \vect{a}_{n-1}$.
 
 </li>
 </ol>
@@ -922,7 +924,7 @@ The properties follow from the observation that for each vector $\vect{v}$ in $\
 a_{11} & a_{12} & \ldots & a_{1,(n-1)} & v_1 \\
 a_{21} & a_{22} & \ldots & a_{2,(n-1)} & v_2 \\
 \vdots & \vdots & & \vdots & \vdots \\
-a_{n1} & a_{n2} & \ldots & a_{2,(n-1)} & v_n
+a_{n1} & a_{n2} & \ldots & a_{n,(n-1)} & v_n
 \end{array}\right|\\
 &=& \det{[\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\,\vect{v}\,]}.
 \end{array}
@@ -984,7 +986,7 @@ This implies that $\vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1}) $ must be the ze
 Conversely, if the vectors $\{ \vect{a}_1, \,\ldots\, \, , \vect{a}_{n-1} \}$ are linearly independent,
 then the $n \times (n-1)$ matrix $A = [ \,\vect{a}_1 \,\,  \ldots \,\,  \vect{a}_{n-1} \,] $  has rank  $n-1$ . The matrix $A$ must have $n-1$ linearly independent rows. Say, if we delete the $k$th row we have an $(n-1) \times (n-1)$ sub-matrix with independent rows.
 Then the coefficient of $\vect{e}_k$ in the expansion of
-$ \vect{N} ( \vect{a}_1, \ldots, \vect{a}_{n-1} ) $ ,
+$ \vect{N} ( \vect{a}_1, \ldots, \vect{a}_{n-1})$,
 which by the defining Equation {eq}`Eq:DetExtras:DetCrossProd-ndim` is precisely (plus or minus) the determinant of this submatrix, is nonzero.
 
 </li>
@@ -1050,7 +1052,7 @@ On the one hand we then have that
 <BR>
 
 $$
-\text{Vol}_n\left(\mathcal{P}(\vect{a}_1, \ldots, \vect{a}_{n-1}, \vect{a}^{\ast}_n) \right)
+\text{Vol}_n\!\left(\mathcal{P}(\vect{a}_1, \ldots, \vect{a}_{n-1}, \vect{a}^{\ast}_n) \right)
  =
 \text{Vol}_{n-1}\left(\mathcal{P}(\vect{a}_1, \ldots, \vect{a}_{n-1}) \right)
 \cdot \norm{\vect{a}^{\ast}_n}
@@ -1062,7 +1064,7 @@ and on the other hand
 
 $$
 \begin{array}{rcl}
-\text{Vol}_n\left(\mathcal{P}(\vect{a}_1, \ldots, \vect{a}_{n-1}, \vect{a}^{\ast}_n) \right)
+\text{Vol}_n\!\left(\mathcal{P}(\vect{a}_1, \ldots, \vect{a}_{n-1}, \vect{a}^{\ast}_n) \right)
  &=&
 |\det{ \left[\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\, \vect{a}^{\ast}_n\, \right]
  }| \\
@@ -1071,7 +1073,7 @@ $$
 \end{array}.
 $$
 
-Equating the two expressions for $\text{Vol}_n \left(\mathcal{P} (\vect{a}\_1, \ldots, \vect{a}_{n-1}, \vect{a}^{\ast}\_n) \right) $  
+Equating the two expressions for $\text{Vol}_n \left(\mathcal{P} (\vect{a}\_1, \ldots, \vect{a}_{n-1}, \vect{a}^{\ast}_n) \right) $  
 we conclude that indeed
 
 <BR>
@@ -1087,7 +1089,7 @@ $$
  
 ::::::
 
-## Grasple Exercises
+## Grasple exercises
 
 ::::::{grasple}
 :iframeclass: dark-light

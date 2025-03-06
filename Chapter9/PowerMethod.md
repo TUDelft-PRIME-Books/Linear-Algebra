@@ -821,4 +821,34 @@ Problem solved!
 ::::
 
 
+
+## Grasple Exercises
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/eec3cdc7-c86d-4fc7-a7fc-46b362a0fa5f?id=109962
+:label: grasple_exercise_9_3_1
+:dropdown:
+:description: To distill an eigenvalue from the iterates of the power method
+
+::::
+
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/adc25718-7937-4d81-ac21-bc37ddc489ad?id=109711
+:label: grasple_exercise_9_3_2
+:dropdown:
+:description: Effect of a shift on the outcome of the power method
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/866238fe-6aae-4b19-a631-f56f179abd5d?id=109767
+:label: grasple_exercise_9_3_3
+:dropdown:
+:description: Effect of a shift on the outcome of the power method
+
 ::::

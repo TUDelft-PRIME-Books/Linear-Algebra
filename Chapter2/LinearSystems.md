@@ -15,8 +15,8 @@ In Chapter 1 the question whether two lines or two planes intersect or do not in
 
 $$
   \left\{\begin{array}{ccccccc}
-       a_1x_1 &+& a_2x_2 &+& a_3x_3 &=& b_1 \\
-      b_1x_1 &+& b_2x_2 &+& b_3x_3 &=& b_2
+       a_1x_1 &+& a_2x_2 &+& a_3x_3 &=& c_1 \\
+      b_1x_1 &+& b_2x_2 &+& b_3x_3 &=& c_2
        \end{array}
   \right.
 $$
@@ -35,7 +35,7 @@ $$
    a_1x_1 + a_2x_2 + \cdots + a_nx_n = b.
 $$
 
-The numbers $a_1,a_2,\ldots,a_n$ are called the **coefficients** and the variables $x_1,x_2, \ldots, x_n$ the **unknowns**. The term $k$ is referred to as the **constant term**.
+The numbers $a_1,a_2,\ldots,a_n$ are called the **coefficients** and the variables $x_1,x_2, \ldots, x_n$ the **unknowns**. The term $b$ is referred to as the **constant term**.
 
 ::::
 
@@ -939,7 +939,7 @@ $$
 \left[\begin{array}{rrr|r}1 &  3 & -2& 4\\0& -2 &  4 &  -4\\0 & 4 & -5 & -4
 \end{array}\right]\begin{array}{l}
 {[R_1]} \\
-{[-\frac12R_1]} \\
+{[-\frac12R_2]} \\
 {[R_3]} \\
 \end{array} \\
     & {\Big\Updownarrow} & \\
@@ -1160,7 +1160,7 @@ We will row reduce the matrix
 $$
 M =
 \begin{bmatrix}
-     4 & -4 & -4 & 8 & 12 \\ -2 & 2 & 2 & -4 & -6 \\ 3 & -3 & -1 & 5 & 4
+     4 & -4 & -4 & 8 & 12 \\ -2 & 2 & 2 & -4 & 2 \\ 3 & -3 & -1 & 5 & 4
      \end{bmatrix}
 $$
 
@@ -1171,7 +1171,7 @@ $$
      M&=&
 \left[\begin{array}{rrrrr}
    4 & -4 & -4 & 8 & 12 \\
-   -2 & 2 & 2 & -4 & -6 \\
+   -2 & 2 & 2 & -4 & 2 \\
    3 & -3 & -1 & 5 & 4
 \end{array}\right]\begin{array}{l}
    {[\frac14R_1]} \\
@@ -1223,14 +1223,14 @@ adding multiples of the first row to the other rows. This can be done simultaneo
 
 $$
     \begin{array}{ccl}
-\left[\begin{array}{rrrrr}1 & -1 & -1 & 2 & 3\\-2 & 2 & 2 & -4 & -2\\3 & -3 & -1 & 5 & 4
+\left[\begin{array}{rrrrr}1 & -1 & -1 & 2 & 3\\-2 & 2 & 2 & -4 & 2\\3 & -3 & -1 & 5 & 4
 \end{array}\right]\begin{array}{l}
 [R_1] \\
 {[R_2+2R_1]} \\
 {[R_3-3R_1]} \\
 \end{array}
     &\sim&
-\left[\begin{array}{rrrrr}1 & -1 & -1 & 2 & 3\\0 & 0 & 0 & 0 & 4\\0 & 0 & 2 & -1 & -5
+\left[\begin{array}{rrrrr}1 & -1 & -1 & 2 & 3\\0 & 0 & 0 & 0 & 8\\0 & 0 & 2 & -1 & -5
 \end{array}\right]   \end{array}
 $$
 
@@ -1324,8 +1324,8 @@ $$
 \left[\begin{array}{rrrr}1 & 2 & 3 & 1\\0 & 2 & 4 & 2\\0 & 0 & 2 & 6
 \end{array}\right]\begin{array}{l}
 [R_1] \\
-{[\frac12R_1]} \\
 {[\frac12R_2]} \\
+{[\frac12R_3]} \\
 \end{array}
     \quad \sim
 \left[\begin{array}{rrrr}1 & 2 & 3 & 1\\0 & 1 & 2 & 1\\0 & 0 & 1 & 3
@@ -1571,7 +1571,7 @@ $$
 
 $$
 \sim \quad
-\left[\begin{array}{rrrrr}3 & 0 &3 &0&-9\\0 & 2 & -2 &-0 & 3\\0 & 0 & 0 &3 & 2
+\left[\begin{array}{rrrrr}3 & 0 &3 &0&-9\\0 & 2 & -2 & 0 & 3\\0 & 0 & 0 &3 & 2
 \end{array}\right]\begin{array}{l}
 [\nicefrac13R_1] \\
 {[\nicefrac{1}{2}R_2]} \\
@@ -1735,17 +1735,23 @@ Write down the augmented matrix corresponding to the system.
 </li>
 <li>
 
-Row reduce the augmented matrix to reduced echelon form.
+Row reduce the augmented matrix to  echelon form.
 
 </li>
 <li>
 
-If there is a pivot in the last column (the column 'behind the bar'), the system is inconsistent.
+If there is a pivot in the last column (the column 'behind the bar'), the system is inconsistent.  
+End of story.
 
 </li>
 <li>
 
-If the last column does not contain a pivot, write down the corresponding system of equations and express the variables in the pivot columns into the other variables (if any). These other variables are free variables.
+If the last column does not contain a pivot, reduce the augmented matrix further till reduced echelon form.
+
+</li>
+
+<li>
+Write down the corresponding system of equations and express the variables in the pivot columns into the other variables (if any). These other variables are free variables.
 
 </li>
 </ol>
@@ -2073,14 +2079,14 @@ The remaining exercises tend to be a bit more theoretic.
 
 ::::
 
-::::{grasple}
-:iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/8d249aed-fa38-4a70-8271-8be07187dd06?id=69541
-:label: grasple_exercise_2_1_17
-:dropdown:
-:description: Solving a linear system using the augmented matrix.
-
-::::
+%::::{grasple}
+%:iframeclass: dark-light
+%:url: https://embed.grasple.com/exercises/8d249aed-fa38-4a70-8271-8be07187dd06?id=69541
+%:label: grasple_exercise_2_1_17
+%%:dropdown:
+%:description: Solving a linear system using the augmented matrix.
+%
+%::::
 
 The remaining exercises are a bit more theoretical.
 

@@ -973,7 +973,7 @@ $$
 We then have to show that 
 
 $$
-  L_1=L_2 \quad \text{and} \quad U_1 = U_2.
+  L_1=L_2  \quad \text{and} \quad  U_1 = U_2.
 $$
 
 Since $A$ is invertible, the matrices $U_1, U_2$ are also invertible. (The matrices $L_1$ and $L_2$ are always invertible, c.f., {prf:ref}`Def:LUdecomp:DefinitionLU`.) <BR>

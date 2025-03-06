@@ -56,8 +56,17 @@ $$
 and
 
 $$
-\begin{bmatrix}1 & 2 & 3 & 5 \end{bmatrix}
+\begin{bmatrix}1 & 2 & 3 & 5 \end{bmatrix} 
 \begin{bmatrix} 4 \\ -2 \\ -1 \\ 3\end{bmatrix} =
+4[1] + (-2)[2] + (-1)[3] + 3[5] =  [12].
+$$
+
+It is customary to consider a 1x1 matrix as a number, and write the last product as 
+
+$$
+\begin{bmatrix}1 & 2 & 3 & 5 \end{bmatrix} 
+\begin{bmatrix} 4 \\ -2 \\ -1 \\ 3\end{bmatrix} 
+ =
   1\cdot4 +2\cdot(-2)+3\cdot(-1) + 5\cdot 3 = 12.
 $$
 
@@ -202,7 +211,6 @@ $$
    \left\{\begin{array}{ccccccccc}
             a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  b_1 \\
             a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! b_2 \\
-            \vdots \! & \!+\!&\!  \vdots\! & \!+\!&\!\cdots\! & \!+\!&\! \vdots     \! & \!=\!&\!  \vdots \\
             \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\cdots\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
             a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! b_m
           \end{array}
@@ -474,7 +482,6 @@ $$
    \left\{\begin{array}{ccccccccc}
             a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  p_1 \\
             a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! p_2 \\
-            \vdots \! & \!+\!&\!  \vdots\! & \!+\!&\!\cdots\! & \!+\!&\! \vdots     \! & \!=\!&\!  \vdots \\
             \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\cdots\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
             a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! p_m \\
           \end{array}
@@ -487,7 +494,6 @@ $$
    \left\{\begin{array}{ccccccccc}
             a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  q_1 \\
             a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! q_2 \\
-            \vdots \! & \!+\!&\!  \vdots\! & \!+\!&\!\cdots\! & \!+\!&\! \vdots     \! & \!=\!&\!  \vdots \\
             \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\cdots\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
             a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! q_m \\
           \end{array}
@@ -500,7 +506,6 @@ $$
    \left\{\begin{array}{ccccccccc}
             a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  r_1 \\
             a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! r_2 \\
-            \vdots \! & \!+\!&\!  \vdots\! & \!+\!&\!\cdots\! & \!+\!&\! \vdots     \! & \!=\!&\!  \vdots \\
             \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\cdots\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
             a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! r_m \\
           \end{array}
@@ -568,7 +573,7 @@ The collection $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$ is equal to $\mathbb{
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LinearCombinations:SpanSolution`
 :class: tudproof
 
-If $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$ is equal to $\mathbb{R}^n$, then each vector $\mathbf{b}$ is a vector in the span of the vectors $\mathbf{v}_1, \ldots, \mathbf{v}_k$. This means that we can write $\mathbf{b}$ as a linear combination
+If $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$ is equal to $\mathbb{R}^n$, then each vector $\mathbf{b}$ in  $\mathbb{R}^n$  is a vector in the span of the vectors $\mathbf{v}_1, \ldots, \mathbf{v}_k$. This means that we can write $\mathbf{b}$ as a linear combination
 
 $$
 \mathbf{b}=x_1\mathbf{v}_1+ \ldots + x_k\mathbf{v}_k.
@@ -740,10 +745,10 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/a5715fe9-74ae-4df5-857f-2c6ed1cc9cdc?id=68889
+:url: https://embed.grasple.com/exercises/194dcee8-b5e7-42af-8ab0-c40c4fce47a4?id=114628
 :label: grasple_exercise_2_4_5
 :dropdown:
-:description: A statement concerning two systems $A\vect{x}=\vect{p}$, $A\vect{x}=\vect{q}$.
+:description: Between matrox-vector and vector-vector equation.
 
 ::::
 

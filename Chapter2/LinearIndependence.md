@@ -58,7 +58,7 @@ If $\Span{S}=\Span{\mathbf{v}}$ then $\mathbf{u}$ is in $\Span{\mathbf{v}}$ so i
 
 ::::::
 
-As you can see from the proof of {prf:ref}`Prop:LinInd:LinIndforSmallSets`, our definition of linear depence, while intuitive, is a bit hard to work with. In {prf:ref}`Prop:LinInd:LinIndisNonTrivSol`/{prf:ref}`Cor:LinInd:LinIndisColwithoutPivot`, we will see a more convenient way to determine whether a given set of vectors is linearly dependent or not. But let us first consider some examples.
+As you can see from the proof of {prf:ref}`Prop:LinInd:LinIndforSmallSets`, our definition of linear dependence, while intuitive, is a bit hard to work with. In {prf:ref}`Prop:LinInd:LinIndisNonTrivSol`/{prf:ref}`Cor:LinInd:LinIndisColwithoutPivot`, we will see a more convenient way to determine whether a given set of vectors is linearly dependent or not. But let us first consider some examples.
 
 ::::::{prf:example}
 :label: Item:LinInd:LinDepExin2D
@@ -275,7 +275,7 @@ If {eq}`Eq:LinInd:VecEqisZero` has a non-trivial solution then there are $c_{1},
 
 $$
 
-\mathbf{v}_{i}=\frac{c_{1}}{c_{i}}\mathbf{v}_{1}-\cdots -\frac{c_{i-1}}{c_{i}}\mathbf{v}_{i-1}-\frac{c_{i+1}}{c_{i}}\mathbf{v}_{i}-\cdots -\frac{c_{k}}{c_{i}}\mathbf{v}_{k}.
+\mathbf{v}_{i}=\frac{c_{1}}{c_{i}}\mathbf{v}_{1}-\cdots -\frac{c_{i-1}}{c_{i}}\mathbf{v}_{i-1}-\frac{c_{i+1}}{c_{i}}\mathbf{v}_{i+1}-\cdots -\frac{c_{k}}{c_{i}}\mathbf{v}_{k}.
 $$
 
 This implies $\mathbf{v}_{i}$ is in $\Span{\mathbf{v}_{1},...,\mathbf{v}_{i-1},\mathbf{v}_{i+1},...,\mathbf{v}_{k}}$ so $\left\lbrace\mathbf{v}_{1},...,\mathbf{v}_{k}\right\rbrace$ is linearly dependent.
@@ -372,8 +372,10 @@ An ordered set $S=(\mathbf{v}_{1},...,\mathbf{v}_{n})$ is linearly dependent if 
 
 ::::::
 
+
+
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:LindInd:LinIndisVectDeponPrevious`
-:class: tudproof
+:class: tudproof, dropdown
 
 Let us assume $\mathbf{v}_{k}=c_{1}\mathbf{v}_{1}+\cdots+c_{k-1}\mathbf{v}_{k-1}$ for some scalars $c_{1},...,c_{k-1}$. An arbitrary element $\mathbf{v}$ of $\Span{S}$ is a linear combination of $\mathbf{v}_{1},...,\mathbf{v}_{n}$, so it is
 
@@ -403,7 +405,7 @@ c_{n}\mathbf{v}\_{n}.
 
 :::
 
-If we can show that $c_{k+1}=...=c_{n}=0$ we are done, because then we have written $\mathbf{v}_{k}$ as a linear combination of $\mathbf{v}_{1},...,\mathbf{v}_{k-1}$. We will prove by contraposition that this is impossible. Assume $c_{j}\neq0$ for some $j$ greater than $k$. Then Equation {eq}`Eq:LinInd:vkLinCombofOthers` yields
+If we can show that $c_{k+1}=...=c_{n}=0$ we are done, because then we have written $\mathbf{v}_{k}$ as a linear combination of $\mathbf{v}_{1},...,\mathbf{v}_{k-1}$. We will prove this by contraposition. Assume $c_{j}\neq0$ for some $j$ greater than $k$. Then Equation {eq}`Eq:LinInd:vkLinCombofOthers` yields
 
 $$
 
@@ -424,20 +426,20 @@ Suppose $\mathbf{u}_{1},...,\mathbf{u}_{k}$ and $\mathbf{v}_{1},...,\mathbf{v}_{
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:LinInd:TooManyVectsimpliesLinDep`
-:class: tudproof
+:class: tudproof, dropdown
 
 Consider the matrices
 
 $$
 
-A=\left[\vect{u}_{1}\cdots\mathbf{u}_{k}\right],\quad B=\left[\vect{v}_{1}\cdots\mathbf{v}_{l}\right]\quad \text{and}\quad C=[A\backslash B].
+A=\left[\vect{u}_{1}\cdots\mathbf{u}_{k}\right],\quad B=\left[\vect{v}_{1}\cdots\mathbf{v}_{l}\right]\quad \text{and}\quad C=[A | B].
 $$
 
 Bringing $C$ in echelon form gives
 
 $$
 
-C\sim D=[E\backslash F]
+C\sim D=[E | F]
 $$
 
 where $D$ is the echelon form of $C$, $E$ is an echelon form of $A$, and $F$ is equivalent to $B$.
@@ -526,10 +528,10 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 
 ::::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/d40a884f-c356-4ba7-a777-92fd5f4fffcd?id=70202
+:url: https://embed.grasple.com/exercises/1b4c6f2b-75d2-4559-8867-d4fd74814e17?id=70206
 :label: grasple_exercise_2_5_1
 :dropdown:
-:description: To verify whether a set $\{\vect{a}_1, \vect{a}_2,\vect{a}_3 \}$ (in $\mathbb{R}^3$) is linearly independent.
+:description: To verify whether a set $\{\vect{a}_1, \vect{a}_2\}$  (in $\mathbb{R}^3$) is linearly independent.
 
 ::::::
 
@@ -538,7 +540,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 :url: https://embed.grasple.com/exercises/d40a884f-c356-4ba7-a777-92fd5f4fffcd?id=70202
 :label: grasple_exercise_2_5_2
 :dropdown:
-:description: Like the previous question.
+:description: To verify whether a set $\{\vect{a}_1, \vect{a}_2,\vect{a}_3 \}$ (in $\mathbb{R}^3$) is linearly independent.
 
 ::::::
 
@@ -578,12 +580,13 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 
 ::::::
 
+   
 ::::::{grasple}
-:iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/9345f478-7f65-4239-a9ea-26929131f010?id=70205
+:iframeclass: dark-light 
+:url: https://embed.grasple.com/exercises/e6f2f096-d1eb-4386-91df-2c6a6d6270c3?id=70192
 :label: grasple_exercise_2_5_7
 :dropdown:
-:description: Like the previous question.
+:description: Verifying linear (in)dependence of a set of vectors.
 
 ::::::
 

@@ -1,47 +1,42 @@
-.applet {
-  height: 500px;
+html[data-theme='dark'] .dark-light {
+  filter: invert(1) hue-rotate(180deg) saturate(1.5);
 }
 
-.applet * {
-  width: 100%;
-  height: 500px; /* TODO: subject for discussion */
-}
-
-.applet-print-figure {
-  display: none;
-}
-
-.applet iframe {
-  border-radius: 10px;
-}
-
-@media print {
-  .applet iframe {
-    display: none;
-  }
-  .applet-print-figure {
-    display: initial;
-  }
-}
-
-html[data-theme="dark"] .dark-light {
-  filter:  invert(1) hue-rotate(180deg) saturate(1.5);
-}
-
-html[data-theme="dark"] .dark-light-same {
+html[data-theme='dark'] .dark-light-same {
   background-color: transparent !important;
 }
 
-.red {color: var(--tud-red)}
-.blue {color: var(--tud-blue)}
-.green {color: var(--tud-green)}
+.red {
+  color: var(--tud-red);
+}
+.blue {
+  color: var(--tud-blue);
+}
+.green {
+  color: var(--tud-green);
+}
 
-html[data-theme="dark"] .red {
-  filter:  invert(1) hue-rotate(180deg) saturate(1.5);
+html[data-theme='dark'] .red {
+  filter: invert(1) hue-rotate(180deg) saturate(1.5);
 }
-html[data-theme="dark"] .blue {
-  filter:  invert(1) hue-rotate(180deg) saturate(1.5);
+html[data-theme='dark'] .blue {
+  filter: invert(1) hue-rotate(180deg) saturate(1.5);
 }
-html[data-theme="dark"] .green {
-  filter:  invert(1) hue-rotate(180deg) saturate(1.5);
+html[data-theme='dark'] .green {
+  filter: invert(1) hue-rotate(180deg) saturate(1.5);
+}
+
+/* To make , and . be on the same line as math */
+span.math,
+span.math mjx-math {
+  display: inline;
+}
+
+span.math mjx-assistive-mml {
+  display: none !important;
+}
+
+/* To make text and \quad work together in Chrome */
+mjx-mtext {
+  min-width: 27px;
 }

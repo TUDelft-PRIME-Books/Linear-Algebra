@@ -346,7 +346,6 @@ $$
   (\mathbf{v}_1+\mathbf{v}_2)\ip(\mathbf{v}_1-\mathbf{v}_2) = \mathbf{v}_1\ip\mathbf{v}_1-\mathbf{v}_2\ip\mathbf{v}_2.
 $$
 
-%Explain why it is called the \emph{parallelogram rule}.
 
 :::
 
@@ -395,6 +394,8 @@ and explain why it is called the _parallelogram rule_.
 
 :::
 
+
+
 :::{admonition} Solution to&nbsp;{numref}`Exc:InnerProduct:PargramRule`
 :class: solution, dropdown
 
@@ -409,6 +410,28 @@ $$
   \end{array}
 
 
+$$
+
+
+The figure explains the name. 
+
+:::{figure} Images/Fig-InnerProduct-ParGramRule.svg
+:name: Fig:InnerProduct:ParGramrule
+:class: dark-light
+
+Parallelogram rule explained.
+
+:::
+
+In the parallelogram  $OABC$  the sum of the squares of the lengths of the four sides equals the sum 
+the squares of the lengths of the diagonals.
+
+$$
+\begin{array}{ll}
+  OA^2 + AB^2 + BC^2 + CO^2 &=& 2\norm{\vect{v}_1}^2 + 2\norm{\vect{v}_2}^2 \\
+      &=& \norm{\mathbf{v}_1+\mathbf{v}_2}^2 + \norm{\mathbf{v}_1-\mathbf{v}_2}^2    
+      =  OB^2 + CA^2
+\end{array}
 $$
 
 :::
@@ -886,7 +909,7 @@ Rule iii. is again called the _Triangle Inequality_.
 Check the three properties of the distance function as stated in
 {prf:ref}`Prop:InnerProduct:PropertiesDistance`. &nbsp;
 For Rule iii., only show how it follows from the corresponding Rule iii. in
-that same proposition.
+proposition  {prf:ref}`Prop:InnerProduct:PropertiesNorm`. 
 ::::
 
 With the tools so far we can define a notion that comes in handy later.
@@ -1461,8 +1484,8 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/59912254-6fc8-43c7-9c44-1ea7eab1c236?id=62409
-:label: grasple_exercise_1_2_3
+:url: https://embed.grasple.com/exercises/7bb32c8c-9a2e-49bd-85fa-b7d205949510?id=114535
+:label: grasple_exercise_1_2_4
 :dropdown:
 :description: To compute dot products in $\R^2$, $\R^3$ and $\R^4$.
 
@@ -1471,7 +1494,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/7b49e0f5-ae8b-4e92-8878-665dc080b7ee?id=65601
-:label: grasple_exercise_1_2_4
+:label: grasple_exercise_1_2_5
 :dropdown:
 :description: To find a vector orthogonal to a given vector in $\R^2$.
 
@@ -1480,7 +1503,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c8b4eed4-179f-42ab-9ec9-07f66445c960?id=69482
-:label: grasple_exercise_1_2_5
+:label: grasple_exercise_1_2_6
 :dropdown:
 :description: To find a vector orthogonal to two given vectors in $\R^2$.
 
@@ -1489,7 +1512,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/b5a4e1c0-92ca-4307-9eb0-25a3a5807fc7?id=62415
-:label: grasple_exercise_1_2_6
+:label: grasple_exercise_1_2_7
 :dropdown:
 :description: To find a vector orthogonal to a given vector in $\R^3$.
 
@@ -1576,14 +1599,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 
 ::::
 
-::::{grasple}
-:iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/161ecdf6-4cfb-41ba-bc16-685fe8532471?id=62414
-:label: grasple_exercise_1_2_16
-:dropdown:
-:description: To show that &nbsp;$(\vect{v}+\vect{w})\ip(\vect{v}-\vect{w}) = \norm{\vect{v}}^2 - \norm{\vect{w}}^2$.
 
-::::
 
 ::::{grasple}
 :iframeclass: dark-light
@@ -1591,6 +1607,17 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 :label: grasple_exercise_1_2_17
 :dropdown:
 :description: To prove that &nbsp;$(\vect{v}+\vect{w})\ip\vect{x} = \vect{v}\ip\vect{x}+\vect{w}\ip\vect{x}$.
+
+::::
+
+% swapped with previous;  27-02-2025
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/161ecdf6-4cfb-41ba-bc16-685fe8532471?id=62414
+:label: grasple_exercise_1_2_16
+:dropdown:
+:description: To show that &nbsp;$(\vect{v}+\vect{w})\ip(\vect{v}-\vect{w}) = \norm{\vect{v}}^2 - \norm{\vect{w}}^2$.
 
 ::::
 
@@ -1609,14 +1636,14 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 :label: grasple_exercise_1_2_19
 :dropdown:
 :description: To prove that $-1 \leq \dfrac{\vect{u}\ip\vect{v}}{\norm{\vect{u}} \norm{\vect{v}}} \leq  1$.
-
 ::::
+
 
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/2a2423c3-0907-40b7-bd5f-7607baf7cc09?id=62668
 :label: grasple_exercise_1_2_20
 :dropdown:
-:description: What to conclude from $\text{proj}_{\mathbf{v}}(\mathbf{w}_1 ) = \text{proj}_{\mathbf{v}}(\mathbf{w}\_2)$?
+:description: What to conclude from $\text{proj}_{\mathbf{v}}(\mathbf{w}_1 ) = \text{proj}_{\mathbf{v}}(\mathbf{w}_2)$?
 
 ::::

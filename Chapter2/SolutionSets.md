@@ -80,7 +80,7 @@ $$
     \end{bmatrix}
 $$
 
-to an element of the solution set from {prf:ref}`Example:SolSet:TwoLinesinR3`. The green line in {numref}`Figure %s <Fig:SolSet:TwoLinesinR3>` corresponds to the $a=2$ case.
+to an element of the solution set from {prf:ref}`Example:SolSet:TwoLinesinR3`. The green line in {numref}`Figure %s <Fig:SolSet:TwoLinesinR3>` corresponds to the $a=4$ case.
 
 ```{applet}
 :url: solution_sets/two_lines_in_r3
@@ -172,7 +172,7 @@ $$
 \begin{bmatrix}a\\0\\0\end{bmatrix}
 $$
 
-to elements of the solution set of the linear system {eq}`Eq:SolSet:HomSys3D`. This translated plane is parallel to the original one. You can see both these planes in {numref}`Figure %s <Fig:SolSet:TwoPlanesinR3>` for the particular case $a=4$. The yellow vector there is
+to elements of the solution set of the linear system {eq}`Eq:SolSet:HomSys3D`. This translated plane is parallel to the original one. You can see both these planes in {numref}`Figure %s <Fig:SolSet:TwoPlanesinR3>` for the particular case $a=7$. The yellow vector there is
 
 $$
 \mathbf{v}_{1}=
@@ -261,9 +261,9 @@ a_{m1}d_{1}&+&\cdots &+&a_{mn}d_{n}&=&a_{m1}c_{1}-a_{m1}c'_{1}&+&\cdots &+&a_{mn
 \end{array}\right.
 $$
 
-so $(d_{1},...,d_{n})$ is a solution of associated homogeneous system such that $c_{i}'=c_{i}+d_{i}$ for all $i$.
+so $(d_{1},...,d_{n})$ is a solution of the associated homogeneous system such that $c_{i}'=c_{i}+d_{i}$ for all $i$.
 
-Assume on the other hand that $(c_{1},...,c_{n})$ is a solution of the system and that $(d_{1},...,d_{n})$ is a solution of the associated homogeneous system such that $c_{i'}=c_{i}+d_{i}$. Then
+Assume on the other hand that $(c_{1},...,c_{n})$ is a solution of the system and that $(d_{1},...,d_{n})$ is a solution of the associated homogeneous system such that $c'_{i}=c_{i}+d_{i}$. Then
 
 $$
 \left\{\begin{array}{ccccccccccccc}
