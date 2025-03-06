@@ -1,6 +1,38 @@
 (Sec:LinearCombinations)=
 
-# Linear Combinations
+# Linear combinations and spans
+
+Suppose you are managing a number, say $n$, of parking lots, each with a known number of parking spaces, say $s_{1},...,s_{n}$. Assuming you know, for each lot, the number of cars that came in $c_{1},...,c_{n}$ and the number of cars that left $l_{1},...,l_{n}$. Do you need to keep track of the number of empty places $p_{1},...,p_{n}$ in each lot? You do not, because this information is implicitly available. In fact, writing
+
+$$
+\vect{s}=\begin{bmatrix}
+  s_{1}\\
+  s_{2}\\
+  \vdots\\
+  s_{n}
+\end{bmatrix},\quad\vect{c}=\begin{bmatrix}
+  c_{1}\\
+  c_{2}\\
+  \vdots\\
+  c_{n}
+\end{bmatrix},\quad\vect{l}=\begin{bmatrix}
+  l_{1}\\
+  l_{2}\\
+  \vdots\\
+  l_{n}
+\end{bmatrix},\quad\vect{p}=\begin{bmatrix}
+  p_{1}\\
+  p_{2}\\
+  \vdots\\
+  p_{n}
+\end{bmatrix}
+$$
+
+we have $\vect{p}=\vect{s}-\vect{c}+\vect{l}$. In this section, we will describe the space of all information implicitly available in a set of vectors. We will call this the _span_ of the set. But before we can introduce that, we need an auxiliary concept.
+
+## Linear Combinations
+
+In the previous example, we saw that we could easily find $\vect{p}$ if we knew $\vect{s},\vect{c}$, and $\vect{l}$. The reason was that $\vect{p}$ was a _linear combination_ of $\vect{s},\vect{c},\vect{l}$.
 
 ::::{prf:definition}
 
