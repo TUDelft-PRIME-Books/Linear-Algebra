@@ -172,7 +172,7 @@ so the length of a vector can be expressed as follows using the dot product
 
 %\todo{Exercise enlightening the connection $\norm{\vect{v}\pm\vect{w}}$ versus %perpendicularity}
 
-Using the dot product the concepts length and perpendicular easily carry over to any $\mathbb{R}^n$, $n \geq 4$. Let's do it one by one, starting by generalizing the dot product in the next subsection.
+Using the dot product the concepts length and perpendicular easily carry over to any $\mathbb{R}^n$, $n \geq 4$. Let's do it one by one, starting by generalising the dot product in the next subsection.
 
 (Subsec:Dot_product:InnerProduct_in_Rn)=
 
@@ -1274,7 +1274,7 @@ Below we will show that it is possible to express the angle between _any_ two (n
 Angle between two vectors.
 ```
 
-First we will show a geometrical characterization of the dot product that holds in $\mathbb{R}^2$ as well as in $\mathbb{R}^3$.
+First we will show a geometrical characterisation of the dot product that holds in $\mathbb{R}^2$ as well as in $\mathbb{R}^3$.
 
 ::::{prf:proposition}
 :label: Prop:InnerProduct:DotProdGeometric

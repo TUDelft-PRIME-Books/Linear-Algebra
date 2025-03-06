@@ -198,7 +198,7 @@ Suppose $T\circ S$ is injective but $S$ is not. Then there are $\mathbf{v}_{1}\n
 
 ::::::
 
-All the results we have obtained so far hold true for general transformations. But there are some extra characterizations we can prove for linear transformations.
+All the results we have obtained so far hold true for general transformations. But there are some extra characterisations we can prove for linear transformations.
 
 ::::::{prf:proposition}
 :label: Prop:InjSurj:InjChars
@@ -575,7 +575,7 @@ for any vector $\vect{v}$ in $\R^{n}$.
 :::{admonition} Proof of&nbsp;{prf:ref}`Prop:InjSurj:BijIsInv`
 :class: tudproof
 
-By {prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations`, we know that $A$ is invertible if and only if the system $\vect{x}=\vect{b}$ has a unique solution for each $\vect{b}$ in $\R^{n}$. The existence of a solution is equivalent to surjectivity of $T$ and its uniqueness is equivalent to injectivity of $T$. This establishes the equivalence of [i.](#It:InjSurj:TBij) and [ii.](#It:InjSurj:AInv)
+By {prf:ref}`Thm:MatrixInv:InvertibilityCharacterisations`, we know that $A$ is invertible if and only if the system $\vect{x}=\vect{b}$ has a unique solution for each $\vect{b}$ in $\R^{n}$. The existence of a solution is equivalent to surjectivity of $T$ and its uniqueness is equivalent to injectivity of $T$. This establishes the equivalence of [i.](#It:InjSurj:TBij) and [ii.](#It:InjSurj:AInv)
 
 We will now show that [ii.](#It:InjSurj:AInv) and [iii.](#It:InjSurj:TInv) are equivalent, too. The invertibility of $A$ is equivalent to the existence of an $n\times n$-matrix $B$ such that $AB=I$. Define
 

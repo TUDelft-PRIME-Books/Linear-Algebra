@@ -551,7 +551,7 @@ $$
 The action of $T$ is illustrated in {numref}`Figure %s <Fig:GeomLinTrans:ShearTrans>`. Consider furthermore the line
 
 $$
-\mathcal{L}=\left\{\begin{bmatrix}c\\c\end{bmatrix}\mid c\text{ in }\mathbb{R}\right\}=\left\{c\mathbf{w}\mid c\text{ in }\mathbb{R}\right\}\quad \text{where}\quad\mathbf{w}=\begin{bmatrix}1\\1\end{bmatrix},
+\mathcal{L}=\left\{\begin{bmatrix}c\\c\end{bmatrix}: c\text{ in }\mathbb{R}\right\}=\left\{c\mathbf{w}: c\text{ in }\mathbb{R}\right\}\quad \text{where}\quad\mathbf{w}=\begin{bmatrix}1\\1\end{bmatrix},
 
 
 $$
@@ -661,7 +661,7 @@ $$
 
 ::::::{prf:example} Application
 
-Suppose we have a standard deck of $52$ perfectly rectangular playing cards placed in a stack on a table. A standard playing card is about $87$ by $56$ millimeters, so we can assume that the corners of the lowest card are on
+Suppose we have a standard deck of $52$ perfectly rectangular playing cards placed in a stack on a table. A standard playing card is about $87$ by $56$ millimetres, so we can assume that the corners of the lowest card are on
 
 $$
 \begin{bmatrix}0\\0\\0\end{bmatrix},\quad\begin{bmatrix}87\\0\\0\end{bmatrix},\quad\begin{bmatrix}0\\56\\0\end{bmatrix},\quad\text{and}\quad\begin{bmatrix}87\\56\\0\end{bmatrix},
@@ -669,7 +669,7 @@ $$
 
 $$
 
-respectively. A playing card typically has a thickness of about $0.2$ millimeter, so the coordinates of the top card of the stack will be
+respectively. A playing card typically has a thickness of about $0.2$ millimetre, so the coordinates of the top card of the stack will be
 
 $$
 \begin{bmatrix}0\\0\\10.4\end{bmatrix},\quad\begin{bmatrix}87\\0\\10.4\end{bmatrix},\quad\begin{bmatrix}0\\56\\10.4\end{bmatrix},\quad\text{and}\quad\begin{bmatrix}87\\56\\10.4\end{bmatrix},
@@ -679,7 +679,7 @@ $$
 
 respectively. If we now move the top card along the $x$-axis, then, due to friction, the second card will also move. This in turn will make the third card move and so on. If we assume friction with the table is high enough, the bottom card will approximately remain in place. This situation is depicted in {numref}`Figure %s <Fig:GeomLinTrans:CardsStack>`.
 
-The movement of the cards can be described by a shear transformation. If the top card is moved 6 millimeters along the $x$-axis, then the edges parallel to the $y$-axis of the cards will make an angle of $\phi=\arctan(10.4/6)\approx \frac{\pi}{3}$ with the positive $x$-axis. A card at height $h$ will be moved a distance of about $h\frac{1}{\sqrt{3}}$ along the $x$-axis. We therefore find that the standard matrix associated to the linear transformation that describes the movement of the cards is
+The movement of the cards can be described by a shear transformation. If the top card is moved 6 millimetre along the $x$-axis, then the edges parallel to the $y$-axis of the cards will make an angle of $\phi=\arctan(10.4/6)\approx \frac{\pi}{3}$ with the positive $x$-axis. A card at height $h$ will be moved a distance of about $h\frac{1}{\sqrt{3}}$ along the $x$-axis. We therefore find that the standard matrix associated to the linear transformation that describes the movement of the cards is
 
 $$
 \begin{bmatrix}1&0&\frac{1}{\sqrt{3}}\\0&1&0\\0&0&1\end{bmatrix}.

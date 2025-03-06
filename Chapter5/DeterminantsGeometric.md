@@ -26,7 +26,7 @@ $$
 
 we might end up with an expression containing all the entries $a_{ij}$ that tells us whether $A$ is invertible or not.
 In this section we will use a geometric approach to derive such an expression, and will again call this the determinant of the matrix $A$. Its formula
-(Equation {eq}`Eq:DetGeometric:3x3Det`), when looked at from the right perspective, shows an opportunity to generalize the concept to higher dimensions.
+(Equation {eq}`Eq:DetGeometric:3x3Det`), when looked at from the right perspective, shows an opportunity to generalise the concept to higher dimensions.
 We will follow that route in {numref}`Section %s <Sec:DeterminantsViaCofactors>`.
 
 We will start by introducing determinants as a way to compute areas (in the plane) and volumes (in the space $\R^3$).
@@ -63,15 +63,15 @@ $$
 \tilde{\vect{v}} = \left[\begin{array}{c} c \\ d \\ 0 \end{array}\right].
 $$
 
-Thus we embed the plane into $\R^3$ as the $x_1$-$x_2$-plane. See {numref}`Figure %s <Fig:DetGeometric:OrientedArea1>`.
+Thus we embed the plane into $\R^3$ as the $x_1$-$x_2$-plane. See {numref}`Figure %s <Fig:DetGeometric:OrientatedArea1>`.
 
 ```{applet}
-:url: det_geometric/orientedarea1
-:fig: Images/Fig-DetGeometric-OrientedArea1.svg
-:name: Fig:DetGeometric:OrientedArea1
+:url: det_geometric/orientatedarea1
+:fig: Images/Fig-DetGeometric-OrientatedArea1.svg
+:name: Fig:DetGeometric:OrientatedArea1
 :class: dark-light
 
-Oriented area.
+Orientated area.
 ```
 
 So we embed the plane $\R^2$ as the $x$-$y$-plane in $\R^3$.
@@ -179,8 +179,8 @@ In fact, we can use the determinant to _define_ the orientation of two vectors i
 ::::::{prf:definition}
 :label: Dfn:DetGeometric:Orientation2
 
-The ordered set $(\vect{u},\vect{v})$ of two linearly independent vectors $\vect{u}$ and $\vect{v}$ is said to be **positively oriented**
-if $\det{(\vect{u},\vect{v})} > 0$, and **negatively oriented**
+The ordered set $(\vect{u},\vect{v})$ of two linearly independent vectors $\vect{u}$ and $\vect{v}$ is said to be **positively orientated**
+if $\det{(\vect{u},\vect{v})} > 0$, and **negatively orientated**
 if $\det{(\vect{u},\vect{v})} < 0$.
 
 ::::::
@@ -307,10 +307,10 @@ is the most interesting one. The two pictures of {numref}`Figure %s <Fig:DetGeom
 :position: 2,2
 :class: dark-light
 
-The sum rule in a picture with $(\vect{u},\vect{w})$ positively oriented. Note, this is a **2D picture**.
+The sum rule in a picture with $(\vect{u},\vect{w})$ positively orientated. Note, this is a **2D picture**.
 ```
 
-In the picture, both $(\vect{u},\vect{v})$ and $(\vect{u},\vect{w})$ are positively oriented.
+In the picture, both $(\vect{u},\vect{v})$ and $(\vect{u},\vect{w})$ are positively orientated.
 So there
 
 $$
@@ -330,7 +330,7 @@ Since the two triangles $OCE$ and $ABD$ are congruent and they have equal areas.
 :position: 2,2
 :class: dark-light
 
-The sum rule in a picture with $(\vect{u},\vect{w})$ negatively oriented. Note, this is a **2D picture**.
+The sum rule in a picture with $(\vect{u},\vect{w})$ negatively orientated. Note, this is a **2D picture**.
 ```
 
 In this picture, the orientation of $(\vect{u},\vect{v})$ is positive, the orientation of $(\vect{u},\vect{w})$ is negative, and the orientation of $(\vect{u},\vect{v}+\vect{w})$ is positive again.
@@ -397,7 +397,7 @@ $$
 
 which is positive if $\vect{c}$ lies on the same side of plane $\mathcal{P}$ as $\vect{a} \times  \vect{b}$, and negative if these vectors lie on opposite sides.
 
-Using the alternative characterization of the inner product as in
+Using the alternative characterisation of the inner product as in
 {prf:ref}`Prop:InnerProduct:DotProdGeometric` we derive that
 
 $$
@@ -407,7 +407,7 @@ $$
 ::::::
 
 Note that the expression $\vect{c}\ip(\vect{a} \times  \vect{b})$
-gives the actual volume of the corresponding parallelepiped if the vectors $\vect{a}, \vect{b},\vect{c}$ are oriented as in the righthand rule (as in {numref}`Figure %s <Fig:CrossProduct:RightHandRule>`) and minus this volume otherwise.
+gives the actual volume of the corresponding parallelepiped if the vectors $\vect{a}, \vect{b},\vect{c}$ are orientated as in the righthand rule (as in {numref}`Figure %s <Fig:CrossProduct:RightHandRule>`) and minus this volume otherwise.
 
 ::::::{prf:proposition}
 :label: Prop:DetGeometric:CyclicPerm
@@ -514,7 +514,7 @@ $$
 
 ::::::
 
-The next proposition summarizes the relevant properties of 3x3 determinants.
+The next proposition summarises the relevant properties of 3x3 determinants.
 
 ::::::{prf:proposition}
 :label: Prop:DetGeometric:Summary
@@ -546,7 +546,7 @@ the vectors $\{\vect{a}, \vect{b},\vect{c}\}$ are linearly independent.
 </li>
 <li>
 
-$D > 0$ if and only if the ordered set $(\vect{a},\vect{b},\vect{c})$ is positively oriented. That is, oriented in the same way as the basis $(\vect{e}_1,\vect{e}_2,\vect{e}_3)$.
+$D > 0$ if and only if the ordered set $(\vect{a},\vect{b},\vect{c})$ is positively orientated. That is, orientated in the same way as the basis $(\vect{e}_1,\vect{e}_2,\vect{e}_3)$.
 
 </li>
 

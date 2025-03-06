@@ -14,7 +14,7 @@ One common situation where an inconsistent linear system arises quite naturally 
 Suppose $n \geq 3$ points $(x_1,y_1), \ldots, (x_n,y_n)$ in the plane are given.
 Which line $\ell: y = ax + b$ best fits this set of points?
 
-There are different ways to define what is the _best_ line. For instance, we may mean the line that minimizes the sum of the (perpendicular) distances of the points to the line. From a purely geometric point of view that seems the most natural way.
+There are different ways to define what is the _best_ line. For instance, we may mean the line that minimises the sum of the (perpendicular) distances of the points to the line. From a purely geometric point of view that seems the most natural way.
 Or, we can take the line for which the sum of vertical distances from the points to the line, i.e.,
 
 $$
@@ -158,7 +158,7 @@ $$
 
 By definition $A\hat{\vect{x}} = \hat{x}_1\vect{a}_1  + \ldots + \hat{x}_n\vect{a}_n$ is the best approximation of $\vect{b}$ with vectors in $\Span{\vect{a}_1, ... , \vect{a}_n}$.
 
-By minimizing $\norm{A\vect{x} - \vect{b}}$ we are in fact minimizing the sum of the squares of the errors. This explains the name _least squares error_.
+By minimising $\norm{A\vect{x} - \vect{b}}$ we are in fact minimising the sum of the squares of the errors. This explains the name _least squares error_.
 
 From
 
@@ -210,7 +210,7 @@ $$
   \sqrt{ \big(y_1 - (ax_1+b)\big)^2 + \ldots + \big(y_n - (ax_n+b)\big)^2}.
 $$
 
-The least squares solution $(\hat{a},\hat{b})$ minimizes this error, so in fact it minimizes the sum of the squares
+The least squares solution $(\hat{a},\hat{b})$ minimises this error, so in fact it minimises the sum of the squares
 
 $$
    \sum_{i=1}^{n}  \big(y_i - (ax_i+b)\big)^2.
@@ -525,7 +525,7 @@ To prove the converse, suppose $A^TA\vect{x} = \vect{0}$.
 
 Then &nbsp; $\vect{x}^TA^TA\vect{x} = \vect{x}^T\vect{0} = \vect{0}$ &nbsp; too.
 
-Now realize that $\vect{x}^TA^TA\vect{x} = (A\vect{x})^TA\vect{x} = \norm{A\vect{x}}^2$.
+Now realise that $\vect{x}^TA^TA\vect{x} = (A\vect{x})^TA\vect{x} = \norm{A\vect{x}}^2$.
 
 So $A^TA\vect{x} = \vect{0}$ implies $\norm{A\vect{x}}^2 = 0$, and that means that $A\vect{x}$ must be the zero vector.
 
@@ -637,7 +637,7 @@ solution $\hat{\vect{x}} =\left[\begin{array}{c} 4 \\ 1  \end{array}   \right]$.
 
 ::::
 
-The previous example can be generalized as follows.
+The previous example can be generalised as follows.
 
 If the columns $\{\vect{a}_1, \ldots, \vect{a}_n\}$ of an $m \times n$ matrix $A$ form a set of non-zero, _orthogonal_ vectors in $\R^m$, then the orthogonal projection
 
@@ -814,7 +814,7 @@ $$
    (\text{Nul}\,A)^{\perp} = \text{Row}\,A = \Span{\begin{bmatrix} 1 \\ -2\end{bmatrix}}
 $$
 
-which is visualized in {numref}`Figure %s <Fig:LeastSquares:SmallestLS>`.
+which is visualised in {numref}`Figure %s <Fig:LeastSquares:SmallestLS>`.
 
 Let us give one more example to illustrate matters.
 
@@ -1259,7 +1259,7 @@ $$
   c_1f_1(x) + c_2f_2(x) + \ldots + c_kf_k(x).
 $$
 
-That is, the linear combination that minimizes
+That is, the linear combination that minimises
 
 :::{math}
 :label: Eq:LeastSquares:SumResidues
@@ -1280,7 +1280,7 @@ The epithet _linear_ refers to the fact that the parameters $c_1, \ldots, c_k$ a
 
 ::::{prf:remark}
 
-The parameters $c_1,c_2,\ldots,c_k$ that minimize the sum
+The parameters $c_1,c_2,\ldots,c_k$ that minimise the sum
 in {eq}`Eq:LeastSquares:SumResidues` coincide with the least squares solution of the linear system
 
 :::{math}
@@ -1311,7 +1311,7 @@ the $y$ as the **output variable**. Lastly the matrix in the expression on the l
 
 ::::
 
-Several generalizations are possible. We mention two.
+Several generalisations are possible. We mention two.
 
 <ol>
 
@@ -1348,7 +1348,7 @@ $$
 
 that best fits the data in {eq}`Eq:LeastSquares:Data-n-dim`, we can take $f_0(x_1,\ldots,x_k) = 1$ and $f_i(x_1,\ldots,x_k) = x_i$, for $i = 1, \ldots, k$.
 
-In a least squares model we then look for the parameters $\beta_1, \ldots, \beta_{\ell}$ that minimize
+In a least squares model we then look for the parameters $\beta_1, \ldots, \beta_{\ell}$ that minimise
 
 :::{math}
 :label: Eq:LeastSquares:GeneralModel
@@ -1366,7 +1366,7 @@ In a _weighted least squares model_ the terms in the
 sum {eq}`Eq:LeastSquares:GeneralModel`
 get different weights $w_i$. When building a statistical model this may be desirable when some data give more 'information'.
 
-Then the expression we want to minimize is given by
+Then the expression we want to minimise is given by
 
 $$
   \sum_{i=1}^{n}  \class{blue}{w_i} \big(y_i - \beta_1f_1(x_{i1},\ldots, x_{ik}) \,-\, \ldots \,-\,

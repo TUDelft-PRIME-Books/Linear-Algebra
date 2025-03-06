@@ -263,7 +263,7 @@ $$
 
 $$
 
-are solutions of $\vect{y}'=A\vect{y}$. If $A$ is a $2\times 2$-matrix, we can summarize this as follows. 
+are solutions of $\vect{y}'=A\vect{y}$. If $A$ is a $2\times 2$-matrix, we can summarise this as follows. 
 
 :::{prf:Proposition}
 
@@ -294,6 +294,6 @@ The possible behaviours of the origin illustrated. On the top left, it's an attr
 
 ## Decoupling a dynamical system
 
-In the previous section, we saw that the eigenvalues and eigenvectors determine the long-term behaviour of a dynamical system. This leads naturally to the suspicion that, perhaps, diagonalizing a matrix can help us solve a system of linear differential equations. This is indeed the case.
+In the previous section, we saw that the eigenvalues and eigenvectors determine the long-term behaviour of a dynamical system. This leads naturally to the suspicion that, perhaps, diagonalising a matrix can help us solve a system of linear differential equations. This is indeed the case.
 
 Let us assume $A$ is an $n\times n$-matrix with eigenfunctions $\vect{y}_{1},...,\vect{y}_{n}$, that is $\vect{y}_{i}=\vect{v}_{i}e^{\lambda_{i}t}$ where $\lambda_{i}$ is an eigenvalue of $A$ with associated eigenvector $\vect{v}_{i}$.
