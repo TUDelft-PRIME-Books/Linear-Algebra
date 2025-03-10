@@ -198,7 +198,7 @@ The four vectors from [iii.](#Item:LinInd:LinDepExin3D). Note that $\mathbf{w}_{
 
 ::::::
 
-## Recognizing linearly dependent sets
+## Recognising linearly dependent sets
 
 The following elementary properties of linear dependence and linear independence will be used throughout the text, often tacitly.
 

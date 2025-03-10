@@ -125,7 +125,7 @@ x_{1}=e^{a_{11}t},\, x_{2}=e^{a_{22}t},\,\ldots,\, x_{n}=e^{a_{nn}t}.
 
 $$
 
-But most matrices are not diagonal. However, most matrices are at least _diagonalizable_, and we can use this to our advantage. Suppose that the matrix $A$ can be diagonalized, so $A=PDP^{-1}$ where $D$ is the diagonal matrix with the eigenvalues $\lambda_{1},...,\lambda_{n}$ on the diagonal and $P$ is the matrix with the corresponding eigenvectors $\vect{v}_{1},...,\vect{v}_{n}$ as columns. Then we have 
+But most matrices are not diagonal. However, most matrices are at least _diagonalisable_, and we can use this to our advantage. Suppose that the matrix $A$ can be diagonalised, so $A=PDP^{-1}$ where $D$ is the diagonal matrix with the eigenvalues $\lambda_{1},...,\lambda_{n}$ on the diagonal and $P$ is the matrix with the corresponding eigenvectors $\vect{v}_{1},...,\vect{v}_{n}$ as columns. Then we have 
 
 $$
 
@@ -156,7 +156,7 @@ The solution of the original system can now be obtained by multiplying this last
 :::{prf:proposition}
 :label: Prop:DynSystContinuous:SolsofDynSyst
 
-If $A$ is a diagonalizable matrix with eigenvalues $\lambda_{1},...,\lambda_{n}$ and corresponding eigenvectors $\vect{v}_{1},...,\vect{v}_{n}$, then the system $\vect{x}'=A\vect{x}$ has general solution:
+If $A$ is a diagonalisable matrix with eigenvalues $\lambda_{1},...,\lambda_{n}$ and corresponding eigenvectors $\vect{v}_{1},...,\vect{v}_{n}$, then the system $\vect{x}'=A\vect{x}$ has general solution:
 
 $$
 
