@@ -1314,7 +1314,7 @@ $$
         \begin{bmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\ a_{21} & a_{22} & a_{23} & a_{24} \\ 
                         \class{blue}{a_{41}} & \class{blue}{a_{42}} & 
                         \class{blue}{a_{43}} & \class{blue}{a_{44}} \\ 
-                        a_{31} & a_{32} & a_{33} & a_{34} 
+                        \class{red}{a_{31}} & \class{red}{a_{32}} & \class{red}{a_{33}} & \class{red}{a_{34}} 
           \end{bmatrix}   
 $$
 
@@ -1408,13 +1408,15 @@ Note that from the second identity it follows that  $P_2^{-1} = P_2^T$.
 \item The product of two $n\times n$ permutation matrices is again a permutation matrix.
 
 
-Suppose $P_1$ and $P_2$ are permutation matrices. With the product  $P_1P_2$ the rows of $P_2$ are reordered,  and that leaves the properties a $1$ in each row, a $1$ in each column, all other entries equal to $0$,  intact.
+Suppose $P_1$ and $P_2$ are permutation matrices. With the product  $P_1P_2$ the rows of $P_2$ are reordered,  and that leaves 
+the three defining properties a $1$ in each row, a $1$ in each column, all other entries equal to $0$,  intact.
 
 
 \item The inverse of a permutation matrix is its transpose.  Thus,  $P^{-1} = P^T$.
 
 In a product  $A^TA$, the entry on position $(i,j)$ is the inner product of the $i$th column of $A$
-with the $j$th column of $A$.  (Cf., {numref}`Exc:MatrixOps:InterpretATB`.)  Since the $n$ columns of $A$ are the $n$ =  columns  $\vect{e}_j$  of the identity matrix (in some order),  and  
+with the $j$th column of $A$.  (Cf., {numref}`Exc:MatrixOps:InterpretATB`.) 
+ Since the $n$ columns of $P$ are the $n$ =  columns  $\vect{e}_j$  of the identity matrix (in some order),  and  
 
 $$
     (\vect{e}_i)^T\vect{e}_j =\vect{e}_i\ip\vect{e}_j  = \left\{\begin{array}{l}
@@ -1439,6 +1441,7 @@ $$
   PA = LU. 
 $$
 
+As before, $L$ may be constructed in such a way that it has $1$'s on its diagonal.
 ::::::
 
 ::::::{prf:remark} 
@@ -1456,7 +1459,7 @@ in another order than top-down to echelon form. It is a tiny example to illustra
 We will row reduce the matrix $ A= \begin{bmatrix}2&4&3 \\ 1&2&3\\1&3&2 \end{bmatrix}$ in an alternative order than top-down and extricate a $PLU$ decomposition from it.
 
 $$
-\left[\begin{array}{rrr}2&4&3 \\ 1&2&3\\ \fbox{1}&3&2 \end{array} \right]  \begin{array}{l}
+\left[\begin{array}{rrr}2&4&3 \\ 1&2&3\\ \fbox{$1$}&3&2 \end{array} \right]  \begin{array}{l}
 [R_1-\class{blue}{2}R_3] \\
 {[R_2-\class{blue}{1}R_3]} \\
 {[R_3]} \\
@@ -1478,7 +1481,7 @@ If we put together the matrices that describe the row operations we get
 :::{math} 
 :label: Eq:LUdecomp:PivotStructure
 
- A = \begin{bmatrix}2&\fbox{4}&3 \\ 1&2&\fbox{3}\\ \fbox{1}&3&2\end{bmatrix} =
+ A = \begin{bmatrix}2&\fbox{$4$}&3 \\ 1&2&\fbox{$3$}\\ \fbox{$1$}&3&2\end{bmatrix} =
      \begin{bmatrix} 1 & 0 & \class{blue}{2} \\ \class{red}{\frac12} &1 & \class{blue}{1} \\ 0 & 0 & 1\end{bmatrix}
      \begin{bmatrix} 0 & -2 & -1 \\ 0 & 0 &\frac32  \\1 & 3 & 2\end{bmatrix} = \tilde{L}\tilde{U}.
 
@@ -1575,14 +1578,7 @@ To be filled in later.
 ::::::
 
 
-::::::{grasple}
-:iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/9cbcf004-bfbe-428f-927f-5c64ca802946?id=82919
-:label: grasple_exercise_3_6_7
-:dropdown:
-:description: To decide solving $A\vect{x} = \vect{b}$ via (given) $A=LU$ or (given) $A^{-1}$.
 
-::::::
 
 ::::::{grasple}
 :iframeclass: dark-light
@@ -1630,8 +1626,8 @@ To be filled in later.
 ::::::
 ## Efficiency Issues
 
-One way to measure the performance of an algorithm is counting the number of arithmetic operations <!-- [^flopnote] -->
-that are necessary for solving a problem. By arithmetic operations we will take into account additions, multiplications and divisions. 
+One way to measure the performance of an algorithm is to count the number of arithmetic operations <!-- [^flopnote] -->
+that are necessary for solving a problem. By arithmetic operations we will take into account in this setting additions, multiplications and divisions. 
 
 Let us first compute this number when we solve the (square) linear system $A\mathbf{x}=\mathbf{b}$ by taking the augmented matrix $[ A | \vect{b}]$, find an echelon form and then use  backward substitution. Let us suppose that the matrix $A$ is invertible and possesses an $LU$ decomposition.
 
@@ -1655,7 +1651,20 @@ To convert the component $a_{32}$ to a zero value, we need to compute the multip
 </li>
 </ul>
 
+The result:
+
+$$
+  \begin{bmatrix}a_{11} & a_{12} &a_{12} &b{1} \\ a_{21} & a_{22} &a_{23} &b{2} \\ a_{31} & a_{32} &a_{33} &b{3} 
+  \end{bmatrix} \sim
+  \begin{bmatrix}a_{11} & a_{12} &a_{12} &b{1} \\ 
+  0 & a_{22}-m_{21}a_{12} &a_{23}-m_{21}a_{13} &b{2}-m_{21}b_{1} \\ 
+  0 & a_{32}-m_{21}a_{12} &a_{33}-m_{31}a_{13} &b{3}-m_{31}a_{1} 
+  \end{bmatrix}  
+$$
+
 So just to bring the augmented matrix to an echelon form requires 19 arithmetic operations (11 multiplications/divisions and 8 additions/subtractions).
+
+
 
 Next, to solve the system we use backward substitution.
 
@@ -1663,19 +1672,25 @@ Next, to solve the system we use backward substitution.
 
 <li>
 
-to find $x_2$ requires one multiplication and one subtraction,
+To find $x_3$ requires one  division.
 
 </li>
 
 <li>
 
-to find $x_1$ requires two multiplications and two subtractions.
+To find $x_2$ requires one multiplication, one subtraction and one division.
 
+</li>
+
+<li>
+
+To find $x_1$ requires two multiplications, two subtractions and one division.
+Namely,  $x_1 = \dfrac{b_1-a_{12}x_2-a_{13}x_3}{a_{12}}$
 </li>
 </ul>
 
 
-So in total, we needed $19+6$ arithmetic operations.
+So in total, we needed $19+9=28$ arithmetic operations.
 
 Supposing that $A=LU$ and that $L$ and $U$ are given, then, we solve first $L\mathbf{y}=\mathbf{b}$ and then $U\mathbf{x}=\mathbf{y}$.
 
@@ -1707,18 +1722,20 @@ Suppose $A$ is an invertible $n\times n$ matrix and $\vect{b}$ an arbitrary vect
 :type: i
 
 \item Row reduction  of  $A$ to echelon form requires  $\frac23n^3-\frac12n^2-\frac16n$ (arithmetic) operations.
-\item  Row reduction of the augmented matrix  $[A | \vect{b}]$ to echelon form requires $\frac23n^3+\frac32n^2-\frac76n$  operations.
+\item  Row reduction of the augmented matrix  $[A | \vect{b}]$ to echelon form 
+requires $\frac23n^3+\frac12n^2-\frac76n$  operations.
 \item  Solving a linear system  $L\vect{y} = \vect{b}$ for  an $n \times n$  lower triangular matrix $L$ with $1$s on the diagonal requires  $n(n-1)$ operations.
-\item Solving a linear system  $U\vect{y} = \vect{b}$ for  an $n \times n$  upper triangular matrix $U$  requires  $n^2$ operations.
+\item Solving a linear system  $U\vect{x} = \vect{y}$ for  an $n \times n$  upper triangular matrix $U$  requires  $n^2$ operations.
 \label{Item:Prop:LUdecomp:BasicProp:Transpose}
 :::::
 
 
 
-From ii  and iii it follows that solving the system  $A\vect{x} = \vect{b}$ by row reduction + backward substitution requires
+From ii  and iii it follows that solving the system  $A\vect{x} = \vect{b}$ by 
+row reduction + backward substitution requires
 
 $$
- \frac23n^3+\frac32n^2 -\frac76n + n(n-1) = \frac{4n^3+9n^2-13n}{6} 
+ \frac23n^3+\frac12n^2 -\frac76n + n(n-1) = \frac{4n^3+9n^2-13n}{6} 
 $$
 
 arithmetic operations.
@@ -1783,19 +1800,20 @@ The total number of arithmetic operations needed in order to solve a linear syst
 
 
 
-In many applications in engineering, it is required to solve many, say $m$, linear systems  
+In many applications in engineering, it is required to solve many, say $N$, linear systems  
 $A\vect{x}=\vect{b}_i$, with the same coefficient matrix $A$,  where typically the vectors $\vect{b}_i$ are not known beforehand.
 In this situation is where the $LU$ decomposition comes in handy.  Instead of solving the systems one by one, we can first find an $LU$-decomposition, and then solve the systems  $LU\vect{x}=\vect{b}_i$. 
-If we compare solving $m$ linear systems with row reduction ($RR$) and with $LU$ decomposition ($LU$), we get
+If we compare solving $m$ linear systems with row reduction ($RR$) and 
+with $LU$ decomposition ($LU$), we get
 
 $$
-   m\cdot\left(\frac{4n^3+9n^2-13n}{6}\right)  \quad (RR) 
+   N\cdot\left(\frac{4n^3+9n^2-13n}{6}\right)  \quad (RR) 
 $$
 
 versus
 
 $$
-   \frac{4n^3-3n^2-n}{6} + m\cdot(2n^2-n) \quad (LU).
+   \frac{4n^3-3n^2-n}{6} + N\cdot(2n^2-n) \quad (LU).
 $$
 
 
@@ -1808,7 +1826,7 @@ In {numref}`tbl:comparison_gausselim_LU` we can see the comparison in the number
 :name: tbl:comparison_gausselim_LU
 
 \begin{tabular}{crrrrrr}
-$n$ & \multicolumn{2}{c}{$m=5$} & \multicolumn{2}{c}{$m=10$} & \multicolumn{2}{c}{$m=50$} \\
+$n$ & \multicolumn{2}{c}{$N=5$} & \multicolumn{2}{c}{$N=10$} & \multicolumn{2}{c}{$N=50$} \\
 & $RR$ & $LU$ & $RR$ & $LU$ & $RR$ & $LU$ \\
 $3$ & $140$ & $88$ & $280$ & $163$ & $1400$ & $763$ \\
 $5$ & $575$ & $295$ & $1,150$ & $520$ & $5,750$ & $2,320$ \\
@@ -1819,7 +1837,7 @@ $10$ & $4,025$ & $1,565$ & $8,050$ & $2,515$ & $40,250$ & $10,115$ \\
 
 
 We will mention one other advantage the $LU$ decomposition may have, namely when the coefficient matrix $A$ is a **band matrix**. In that case it is much more efficient to work with the $LU$ decomposition than with the inverse.
-Such systems $A\vect{x} = \vect{b}$ for instance appear a when (partial) differential equations are solved via discretizations. It falls outside the scope of this textbook to go into the details, but we consider the special case of  **tridiagonal** matrices to illustrate once more the usefulness of the $LU$ decomposition.
+Such systems $A\vect{x} = \vect{b}$ for instance appear when (partial) differential equations are solved via discretizations. It falls outside the scope of this textbook to go into the details, but we consider the special case of  **tridiagonal** matrices to illustrate once more the usefulness of the $LU$ decomposition.
 
 
 ::::::{prf:definition}
@@ -1927,6 +1945,15 @@ For large $n$ this is again much smaller than the $2n^2-n$ arithmetic operations
 </ol>
 
 
+The following exercise may supply further evidence.
 
+::::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/9cbcf004-bfbe-428f-927f-5c64ca802946?id=82919
+:label: grasple_exercise_3_6_7
+:dropdown:
+:description: To decide solving $A\vect{x} = \vect{b}$ via (given) $A=LU$ or (given) $A^{-1}$.
+
+::::::
 
 
