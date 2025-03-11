@@ -66,7 +66,7 @@ $$
 Thus we embed the plane into $\R^3$ as the $x_1$-$x_2$-plane. See {numref}`Figure %s <Fig:DetGeometric:OrientatedArea1>`.
 
 ```{applet}
-:url: det_geometric/orientatedarea1
+:url: det_geometric/orientedarea1
 :fig: Images/Fig-DetGeometric-OrientatedArea1.svg
 :name: Fig:DetGeometric:OrientatedArea1
 :class: dark-light
