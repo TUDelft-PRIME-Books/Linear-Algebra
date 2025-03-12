@@ -1643,6 +1643,20 @@ subtract the resulting values to the corresponding components in each row ($2\ti
 Therefore, we need a total of $14$ arithmetic operations (8 products/divisions and 6 additions/subtractions).
 
 </li>
+</ul>
+
+The result:
+
+$$
+  \begin{bmatrix}a_{11} & a_{12} &a_{12} &b_{1} \\ a_{21} & a_{22} &a_{23} &b_{2} \\ a_{31} & a_{32} &a_{33} &b_{3} 
+  \end{bmatrix} \sim
+  \begin{bmatrix}a_{11} & a_{12} &a_{12} &b_{1} \\ 
+  0 & a_{22}-m_{21}a_{12} &a_{23}-m_{21}a_{13} &b_{2}-m_{21}b_{1} \\ 
+  0 & a_{32}-m_{31}a_{12} &a_{33}-m_{31}a_{13} &b_{3}-m_{31}a_{1} 
+  \end{bmatrix}  
+$$
+
+<ul>
 <li>
 
 To convert the component $a_{32}$ to a zero value, we need to compute the multiplier  $m_{32}$
@@ -1651,16 +1665,7 @@ To convert the component $a_{32}$ to a zero value, we need to compute the multip
 </li>
 </ul>
 
-The result:
 
-$$
-  \begin{bmatrix}a_{11} & a_{12} &a_{12} &b{1} \\ a_{21} & a_{22} &a_{23} &b{2} \\ a_{31} & a_{32} &a_{33} &b{3} 
-  \end{bmatrix} \sim
-  \begin{bmatrix}a_{11} & a_{12} &a_{12} &b{1} \\ 
-  0 & a_{22}-m_{21}a_{12} &a_{23}-m_{21}a_{13} &b{2}-m_{21}b_{1} \\ 
-  0 & a_{32}-m_{21}a_{12} &a_{33}-m_{31}a_{13} &b{3}-m_{31}a_{1} 
-  \end{bmatrix}  
-$$
 
 So just to bring the augmented matrix to an echelon form requires 19 arithmetic operations (11 multiplications/divisions and 8 additions/subtractions).
 
@@ -1684,8 +1689,8 @@ To find $x_2$ requires one multiplication, one subtraction and one division.
 
 <li>
 
-To find $x_1$ requires two multiplications, two subtractions and one division.
-Namely,  $x_1 = \dfrac{b_1-a_{12}x_2-a_{13}x_3}{a_{12}}$
+To find $x_1$ requires two multiplications, two subtractions and one division.<BR>
+Namely,  $x_1 = (b_1-a_{12}x_2-a_{13}x_3)/a_{12}$.
 </li>
 </ul>
 
@@ -1697,17 +1702,23 @@ Supposing that $A=LU$ and that $L$ and $U$ are given, then, we solve first $L\ma
 <ul>
 <li>
 
-For $L\mathbf{y}=\mathbf{b}$ we use forward substitution. Since the elements in the main diagonal are ones, then we have that we need no operations to determine $y_1$, we need one subtraction and one division for $y_2$, and two subtractions and one division for $y_3$. This totals 6 arithmetic operations.
+For $L\mathbf{y}=\mathbf{b}$ we use forward substitution. Since the elements in the main diagonal are ones, then we have that we need no operations to determine $y_1$, we need one multiplication and one subtraction for $y_2$, and two multiplication and two subtractions for $y_3$. Namely,
+
+$$
+  y_1 = b_1, \quad y_2 = b_2 - \ell_{21}y_1, \quad y_3 = b_3 - \ell_{31}y_1 - \ell_{32}y_2
+$$
+
+This totals 6 arithmetic operations.
 
 </li>
 <li>
 
-To solve $U\mathbf{x}=\mathbf{y}$ we use backward substitution, and we have just seen that it requires 9 arithmetic operations.
+To solve $U\mathbf{x}=\mathbf{y}$ we use backward substitution, and we have just seen that it requires 9 arithmetic operations.  (Which is 3 more than with the forward substitution because of the three divisions by the pivots $u_{ii}$.)
 
 </li>
 </ul>
 
-So when the matrix $A$ is already $LU$ factorised, the number of operations required to solve the system is significantly lower.
+So when the matrix $A$ is already $LU$ factorised, the number of operations required to solve the system is significantly lower. In the situation just analysed we found $15$ versus $28$.
 
 Similar computations  for a non-singular $n\times n$ matrix $A$ leads to the following results.
 
@@ -1731,11 +1742,11 @@ requires $\frac23n^3+\frac12n^2-\frac76n$  operations.
 
 
 
-From ii  and iii it follows that solving the system  $A\vect{x} = \vect{b}$ by 
+From ii  and iv it follows that solving the system  $A\vect{x} = \vect{b}$ by 
 row reduction + backward substitution requires
 
 $$
- \frac23n^3+\frac12n^2 -\frac76n + n(n-1) = \frac{4n^3+9n^2-13n}{6} 
+ \frac23n^3+\frac12n^2 -\frac76n + n^2 = \frac{4n^3+9n^2-7n}{6} 
 $$
 
 arithmetic operations.
@@ -1751,6 +1762,18 @@ arithmetic operations.
 
 ::::::
 
+
+
+::::::{prf:remark}
+
+Note that first row reducing the augmented matrix $[A | \mathbf{b}]$ to echelon form 
+$[U | \tilde{\mathbf{b}}]$ and then solve  $U\mathbf{x} = \tilde{\mathbf{b}}$  by backward substituion
+asks for the same number of arithmetic operations as first finding an $LU$-decomposition and then solve the two ensuing systems with forward and backward substition.  Specifically
+
+$$
+  \frac{4n^3+9n^2-7n}{6}  = \frac23n^3-\frac12n^2-\frac16n  + 2n^2 - n.  
+$$ 
+::::::
 
 
 <!-- 
@@ -1802,12 +1825,12 @@ The total number of arithmetic operations needed in order to solve a linear syst
 
 In many applications in engineering, it is required to solve many, say $N$, linear systems  
 $A\vect{x}=\vect{b}_i$, with the same coefficient matrix $A$,  where typically the vectors $\vect{b}_i$ are not known beforehand.
-In this situation is where the $LU$ decomposition comes in handy.  Instead of solving the systems one by one, we can first find an $LU$-decomposition, and then solve the systems  $LU\vect{x}=\vect{b}_i$. 
+In this situation the $LU$ decomposition comes in handy.  Instead of solving the systems one by one, we can first find an $LU$-decomposition, and then solve the systems  $LU\vect{x}=\vect{b}_i$. 
 If we compare solving $m$ linear systems with row reduction ($RR$) and 
 with $LU$ decomposition ($LU$), we get
 
 $$
-   N\cdot\left(\frac{4n^3+9n^2-13n}{6}\right)  \quad (RR) 
+   N\cdot\left(\frac{4n^3+9n^2-7n}{6}\right)  \quad (RR) 
 $$
 
 versus
@@ -1815,6 +1838,8 @@ versus
 $$
    \frac{4n^3-3n^2-n}{6} + N\cdot(2n^2-n) \quad (LU).
 $$
+
+
 
 
 In {numref}`tbl:comparison_gausselim_LU` we can see the comparison in the numbers of operations needed to solve several linear systems when using row reduction and $LU$ decomposition.
@@ -1825,13 +1850,25 @@ In {numref}`tbl:comparison_gausselim_LU` we can see the comparison in the number
 :align: right
 :name: tbl:comparison_gausselim_LU
 
+
+%\begin{tabular}{crrrrrr}
+%$n$ & \multicolumn{2}{c}{$N=5$} & \multicolumn{2}{c}{$N=10$} & \multicolumn{2}{c}{$N=50$} \\
+%& $RR$ & $LU$ & $RR$ & $LU$ & $RR$ & $LU$ \\
+%$3$ & $140$ & $88$ & $280$ & $163$ & $1400$ & $763$ \\
+%$10$ & $4,025$ & $1,565$ & $8,050$ & $2,515$ & $40,250$ & $10,115$ \\
+%$100$ & $3.4\cdot10^6$ & $7.6\cdot10^5$ & $6.8\cdot10^6$ & $8.6\cdot10^5$ & $3.4\cdot10^7$ & $1.7\cdot10^6$ \\
+%\end{tabular}
+
+
 \begin{tabular}{crrrrrr}
 $n$ & \multicolumn{2}{c}{$N=5$} & \multicolumn{2}{c}{$N=10$} & \multicolumn{2}{c}{$N=50$} \\
 & $RR$ & $LU$ & $RR$ & $LU$ & $RR$ & $LU$ \\
 $3$ & $140$ & $88$ & $280$ & $163$ & $1400$ & $763$ \\
-$5$ & $575$ & $295$ & $1,150$ & $520$ & $5,750$ & $2,320$ \\
+%$5$ & $575$ & $295$ & $1,150$ & $520$ & $5,750$ & $2,320$ \\
 $10$ & $4,025$ & $1,565$ & $8,050$ & $2,515$ & $40,250$ & $10,115$ \\
+$100$ & $3.4\cdot10^6$ & $7.6\cdot10^5$ & $6.8\cdot10^6$ & $8.6\cdot10^5$ & $3.4\cdot10^7$ & $1.7\cdot10^6$ \\
 \end{tabular}
+
 
 :::::
 
@@ -1935,7 +1972,7 @@ For all but the first row we need two operations per row, so in total $2(n-1)$ o
 Likewise, for solving $U\vect{x} = \vect{y}$ we need an extra division for each row, so the number of operations for backward substitution is $2(n-1)+n$, and the total number for the two phases becomes
 
 $$
-   2(n-1) + 2(n-1) + n = 5n-2.
+   2(n-1) + 2(n-1) + n = 5n-4.
 $$
 
 For large $n$ this is again much smaller than the $2n^2-n$ arithmetic operations in the computation of $A^{-1}\mathbf{b}$.

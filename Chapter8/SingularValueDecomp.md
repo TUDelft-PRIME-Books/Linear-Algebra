@@ -111,7 +111,7 @@ $$
 
 $$
 
-\item The first two colums of $U$,  multiples of the vectors $\begin{bmatrix}1\\1\\1\end{bmatrix}$  and  $\begin{bmatrix}-1\\0\\1\end{bmatrix}$, give an orthonormal   basis of the column space of the matrix $A$.
+\item The first two columns of $U$,  multiples of the vectors $\begin{bmatrix}1\\1\\1\end{bmatrix}$  and  $\begin{bmatrix}-1\\0\\1\end{bmatrix}$, give an orthonormal   basis of the column space of the matrix $A$.
 $\begin{bmatrix}1\\1\\1\end{bmatrix} = \dfrac14\begin{bmatrix}1\\2\\3\end{bmatrix} +\dfrac14\begin{bmatrix}3\\2\\1\end{bmatrix}= \frac14\vect{a}_1 + \frac14\vect{a}_2$,
 and  $\begin{bmatrix}-1\\0\\1\end{bmatrix} = \frac12\vect{a}_2 - \frac12\vect{a}_1$.
 
@@ -901,7 +901,7 @@ $$
            \end{bmatrix}.   
 $$
 
-So $\Delta$ is the diagonal matrix that remains if all the zero rows and zero columns (if any) of $\Sigma$ are removed. If $U_r$   is the matrix with the first $r$ colums of $U$, and  $V_r$  is the matrix with the first $r$ columns of $V$, then as in {prf:ref}`Ex:SVD:firstSVD`  we have that
+So $\Delta$ is the diagonal matrix that remains if all the zero rows and zero columns (if any) of $\Sigma$ are removed. If $U_r$   is the matrix with the first $r$ columns of $U$, and  $V_r$  is the matrix with the first $r$ columns of $V$, then as in {prf:ref}`Ex:SVD:firstSVD`  we have that
 
 $$
   A = U\Sigma V^T = U_r\Delta V_r^T
