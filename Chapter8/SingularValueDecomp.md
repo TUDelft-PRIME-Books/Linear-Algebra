@@ -50,7 +50,7 @@ U\begin{bmatrix}
 \vdots & \ddots & \ddots & \ddots &\vdots & \vdots & & \vdots\\
 \vdots & & \ddots & \ddots & 0 &\vdots &  &  \vdots\\
 0 & \cdots & \cdots & 0 & \sigma_p & 0& \cdots& 0\\
-\end{bmatrix} V^T, \quad m \leq n
+\end{bmatrix} V^T, \quad \text{when} \, m \leq n,
 
 ::::
 
@@ -69,7 +69,7 @@ U\begin{bmatrix}
 0 & 0   &  \cdots  & \cdots  & 0 \\
 \vdots & \vdots & & \ &\vdots \\
 0 & 0   &  \cdots  & \cdots  & 0 \\
-\end{bmatrix} V^T, \quad m > n.
+\end{bmatrix} V^T, \quad  \text{when} \, m > n.
 
 ::::
 
@@ -96,7 +96,7 @@ Let us point out a few properties of this decomposition.
 
 
 
-\item The third column of $U$ does not really play a role in the product,  since all its entries are multiplied by two zeros in the last row of $\Sigma$. <BR>
+\item The third column of $U$ does not really play a role in the product,  since its entries are multiplied by the two zeros in the last row of $\Sigma$. <BR>
 We can write this SVD in a more 'economic' form by leaving out the third column of $U$ and the third row of $\Sigma$: 
 
 <BR>
@@ -121,7 +121,7 @@ and  $\begin{bmatrix}-1\\0\\1\end{bmatrix} = \frac12\vect{a}_2 - \frac12\vect{a}
 
 \item
 The decomposition can be rewritten in a way analogous to the spectral decomposition
-{prf:ref}`Thm:SymmetricMat:SpectralDecomp`.
+of {prf:ref}`Thm:SymmetricMat:SpectralDecomp`.
 
 <BR>
 
@@ -319,7 +319,7 @@ That is,  for symmetric matrices the maximum of $\norm{A\vect{x}}$ on the set of
 
 ::::
 
-We are now ready to present an algorithm to construct the SVD of a matrix.
+We are now ready to present an algorithm to construct an SVD of a matrix.
 To be followed up by examples and some (theoretical) considerations.
 Suppose $A$ is an $m\times n$ matrix of rank $r$. (The rank, as we have seen in {prf:ref}`Prop:SVD:BasicProp`, is the number of nonzero singular values.)
 
@@ -674,7 +674,7 @@ $$
 
 Without a computer we would be stuck. How to find the zeros of this polynomial? However, we have come up with a *very*  special matrix $A$ here,
 for which the squares of all the singular values are  *integers*. (So in that sense, this is not a very representative example, and in general the
-computations will be even much worse.)  Here, the eigenvalues of $B^TB$ are given by  $\lambda_1 = 14, \lambda_2 = 7,
+computations can be much worse.)  Here, the eigenvalues of $B^TB$ are given by  $\lambda_1 = 14, \lambda_2 = 7,
 \lambda_3 = 2$.  Which finishes step 2.
 
 Step 3  is straightforward:  $\Sigma = \begin{bmatrix}
@@ -751,7 +751,7 @@ $$
    \sin({\varphi}) &  -\cos({\varphi})\end{bmatrix}.
 $$
 
-The first matrix represents a rotation, the second matrix represents a reflection.  In an SVD of $A$, we can always construct $V$ to be a rotation.  Namely, the columns of $V$ must be eigenvectors of the matrix $A^TA$, and eigenvectors remain eigenvectors if one multiplies  them with a factor $(-1)$.
+The first matrix represents a rotation, the second matrix represents a reflection.  In an SVD of $A$, we can always construct $V$ to be a rotation.  Namely, the columns of $V$ must be eigenvectors of the matrix $A^TA$, and eigenvectors remain eigenvectors if we multiply  them with a factor $(-1)$.
 In that case  $V^T$, which is just $V^{-1}$, is also a rotation.
 Since the matrix $U$ in general is uniquely determined once $V$ is chosen (the exception being the case where $A$ has  zero as a singular value),  $U$ is either a rotation (when det$(A)>0$) or a reflection  (when det$(A)<0$). 
 The workings of the concatenation  $U\Sigma V^T$ are then
@@ -881,7 +881,7 @@ There will be two applications described in this section.
 
 We start with the first.  <BR>
 Numerical data can be stored in a matrix.<BR>
-For instance, a black-and-white picture/photo can be stored 'pixel by pixel', by numbers that indicate the gray scale, which may for instance be any integer from 0 (completely white) to 31 (completely black). A 9:16 photo may then be stored as a 1080x1350 matrix.
+For instance, a black-and-white picture/photo can be stored 'pixel by pixel', by numbers that indicate the gray scale, which may for instance be any integer from 0 (completely white) to 31 (completely black). A 9:16 photo may then be stored as, say,  a 1080x1350 matrix.
 <BR>
 As another example, think of a survey of $n$ questions that have to be answered using a 1-5 scale.  If the numbers of respondents is $N$, the data can be represented by an $N \times n$ matrix.
 
@@ -901,10 +901,10 @@ $$
            \end{bmatrix}.   
 $$
 
-So $\Delta$ is the diagonal matrix that remains if all the zero rows and zero columns (if any) of $\Sigma$ are removed. If $U_r$   is the matrix with the first $r$ colums of $U$, and  $V_r$  is the matrix with the first $r$ colums of $V$, then as in {prf:ref}`Ex:SVD:firstSVD`  we have that
+So $\Delta$ is the diagonal matrix that remains if all the zero rows and zero columns (if any) of $\Sigma$ are removed. If $U_r$   is the matrix with the first $r$ colums of $U$, and  $V_r$  is the matrix with the first $r$ columns of $V$, then as in {prf:ref}`Ex:SVD:firstSVD`  we have that
 
 $$
-  A = U\Sigma V^T = U_r\Delta V_r
+  A = U\Sigma V^T = U_r\Delta V_r^T
 $$
 
 which can be rewritten as
@@ -927,7 +927,7 @@ of the first $k$ terms gives a good approximation of the matrix $A$.
 
 The gain is the following.  If the data is put in the form of an $m \times n$ matrix $A$, then it needs $m \times n$ memory cells to store $A$.  If $k$  is much smaller than $r = $ rank $A$
 (which in general will be equal to the smallest of $m$ and $n$),  then $U_k$,  $V_k$  and the $k$ largest singular values only take up $m\times k + n\times k + k  = (m+n+k)k$,  memory places. <BR>
-If, for instance, a 1080x1350 ( $\approx$ 1.45 MB) image is stored using the thirty per cent highest singular values,  the storage space reduces to  324x(1080+1350+320) $\approx$ 0.78 MB.  So the  *data* as been 'compressed' by more or less a factor $0.78/1.45 \approx 0.54$.
+If, for instance, a 1080x1350 ( $\approx$ 1.45 MB) image is stored using the thirty per cent highest singular values, so  $k = 0.3 \cdot 1080 = 324$,  the storage space reduces to  324x(1080+1350+320) $\approx$ 0.78 MB.  Thus the  *data* as been 'compressed' by more or less a factor $0.78/1.45 \approx 0.54$.
 
 In general, the higher the correlation/dependency between the columns (or, for that matter, the rows) of a matrix $A$, the fewer singular values are needed for a good approximation of $A$.
 
@@ -1032,7 +1032,7 @@ We expect $A_3$ to be a good approximation of $A$.
   $$
   
 
-  As you can see,  $A_3$  closely resembles $A$. (You have to trust us with regard to the hidden columns. <html>&#128521;</html> <BR>
+  As you can see,  $A_3$  closely resembles $A$. (You have to trust us with regard to the hidden columns. <html>&#128521;</html>) <BR>
   The gain:  to store  the $12\times10$  matrix $A$, we have to store  $120$ reals. <BR>
   To store $U_3, \Sigma_{33}$ and $V_3$ , we only have to store  $12\times3 + 3 + 10\times 3 = 69$ numbers.  The middle 3 comes from first three   elements ($=$ singular values) on the diagonal of $\Sigma$.  
   
