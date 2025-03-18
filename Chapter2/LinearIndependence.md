@@ -9,8 +9,6 @@ As we have seen ({prf:ref}`Ex:LinearCombinations:SpanOfOneVector` and {prf:ref}`
 The set $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{2}\right\rbrace$ contains two vectors, but one of them is superfluous. Every vector one can make as a linear combination of $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ can also be made with just $\mathbf{v}_{1}$.
 ::::
 
-## Linearly (in)dependent sets
-
 We will now formalise this concept of superfluous vectors.
 
 ::::::{prf:definition}
@@ -197,8 +195,6 @@ The four vectors from [iii.](#Item:LinInd:LinDepExin3D). Note that $\mathbf{w}_{
 :description: To verify whether a set $\{\vect{u}, \vect{v}\}$ is linearly independent.
 
 ::::::
-
-## Recognizing linearly dependent sets
 
 The following elementary properties of linear dependence and linear independence will be used throughout the text, often tacitly.
 

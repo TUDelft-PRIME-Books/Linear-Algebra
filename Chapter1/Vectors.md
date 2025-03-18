@@ -89,7 +89,7 @@ $$
 
 which is precisely $2\mathbf{v}_{3}$.
 
-We have found that the geometrical notion of an arrow in the plane with a certain length pointing in a certain direction is captured perfectly by the algebraic notion of its vector. Moreover, the natural operations of stretching and combining arrows can easily be done algebraically. In fact, there is no reason why we should restrict ourselves to arrows in the plane. We can just as well take arrows in three dimensional space and glue them together or stretch them. In {numref}`Subsection %s <Subsec:Vectors:ndim>` we will formalise this notion to $n$ dimensions -- and we will see that it is not so strange to have more than $3$ dimensions!
+We have found that the geometrical notion of an arrow in the plane with a certain length pointing in a certain direction is captured perfectly by the algebraic notion of its vector. Moreover, the natural operations of stretching and combining arrows can easily be done algebraically. In fact, there is no reason why we should restrict ourselves to arrows in the plane. We can just as well take arrows in three dimensional space and glue them together or stretch them. In {numref}`Subsection %s <Subsec:Vectors:ndim>` we will formalize this notion to $n$ dimensions -- and we will see that it is not so strange to have more than $3$ dimensions!
 
 ::::{grasple}
 :iframeclass: dark-light
@@ -104,7 +104,7 @@ We have found that the geometrical notion of an arrow in the plane with a certai
 
 ## Vectors and $\mathbb{R}^{n}$
 
-The same game we played in the plane also works in $3$-dimensional space -- or even in higher dimensions. Since our intuition tends to break down in higher dimension, we want solid algebraic foundation to support us in these unfamiliar lands. Let us therefore formalise our concept of arrows.
+The same game we played in the plane also works in $3$-dimensional space -- or even in higher dimensions. Since our intuition tends to break down in higher dimension, we want solid algebraic foundation to support us in these unfamiliar lands. Let us therefore formalize our concept of arrows.
 
 ```{prf:definition}
 :label: Dfn:Vectors:Vectors

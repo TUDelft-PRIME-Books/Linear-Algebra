@@ -12,7 +12,7 @@ Suppose $V$ is a subspace of $\R^{n}$. Then the **orthogonal complement** of $V$
 
 $$
 
-V^{\bot}=\left\{\vect{u}\in\R^{n}: \vect{u}\ip\vect{v}=0\text{ for all } \vect{v}\text{ in }V\right\}.
+V^{\bot}=\left\{\vect{u}\in\R^{n}\mid \vect{u}\ip\vect{v}=0\text{ for all } \vect{v}\text{ in }V\right\}.
 
 
 $$
@@ -97,7 +97,7 @@ V^{\bot}=\left\{
     2t\\
     0
     \end{bmatrix}
-    : t\in\R
+    \mid t\in\R
 \right\},
 $$
 
@@ -222,7 +222,7 @@ V^{\bot}=\mathrm{Nul}(A^{T})=\left\{
     x_{3}\\
     x_{4}\\
     x_{5}
-    \end{bmatrix}: x_{3},x_{4},x_{5}\in\R
+    \end{bmatrix}\mid x_{3},x_{4},x_{5}\in\R
 \right\}.
 $$
 

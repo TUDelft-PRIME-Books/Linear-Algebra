@@ -52,7 +52,7 @@ The crucial thing about symmetric matrices is stated in the main theorem of this
 ::::{prf:theorem}
 :label: Thm:SymmetricMat:OrthogDiag
 
-Every symmetric matrix $A$ is orthogonally diagonalisable.
+Every symmetric matrix $A$ is orthogonally diagonalizable.
 
 By this we mean: there exist an _orthogonal_ matrix $Q$ and a diagonal matrix $D$ for which
 
@@ -60,7 +60,7 @@ $$
    A = QDQ^{-1} = QDQ^T.
 $$
 
-Conversely, every orthogonally diagonalisable matrix is symmetric.
+Conversely, every orthogonally diagonalizable matrix is symmetric.
 
 This theorem is known as the _Spectral Theorem for Symmetric Matrices_.
 In other contexts the word _spectrum_ of a transformation is used for the set of eigenvalues.
@@ -109,7 +109,7 @@ $$
   \mathbf{v}_1 \ip \mathbf{v}_2 = \begin{bmatrix} 2\\1 \end{bmatrix}\ip \begin{bmatrix} -1\\2 \end{bmatrix} = -2  +2  = 0,
 $$
 
-and $A$ can be diagonalised as
+and $A$ can be diagonalized as
 
 $$
    A = PDP^{-1} = \begin{bmatrix}2&-1\\1&2 \end{bmatrix}\begin{bmatrix}2 & 0\\0& -3 \end{bmatrix}
@@ -134,7 +134,7 @@ The transformation $T(\vect{x}) =  \begin{bmatrix} 1&2\\2&-2 \end{bmatrix}\vect{
 :::
 
 
-Furthermore, if we normalise the eigenvectors, i.e., the columns of $P$, we find the following diagonalisation of $A$ with an orthogonal matrix $Q$:
+Furthermore, if we normalize the eigenvectors, i.e., the columns of $P$, we find the following diagonalization of $A$ with an orthogonal matrix $Q$:
 
 $$
  A = QDQ^{-1} = \begin{bmatrix}2/\sqrt{5}&1/\sqrt{5}\\1/\sqrt{5}&-2/\sqrt{5} \end{bmatrix}\begin{bmatrix}2 & 0\\0& -3 \end{bmatrix}
@@ -220,7 +220,7 @@ as was to be shown.
 ::::{exercise}
 :label: Exc:SymmetricMat:uTAv
 
-Prove the following slight generalisation of {prf:ref}`Prop:SymmetricMat:OrthogonalEigenvectors`.
+Prove the following slight generalization of {prf:ref}`Prop:SymmetricMat:OrthogonalEigenvectors`.
 
 If $\vect{u}$ is an eigenvector of $A$ for the eigenvalue $\lambda$, and $\vect{v}$ is an eigenvector of $A^T$ for a different eigenvalue $\mu$, then $\vect{u} \perp \vect{v}$.
 
@@ -365,7 +365,7 @@ We will incorporate the proof of this proposition into the proof of the main the
 ::::{prf:example}
 
 We will verify that the symmetric matrix $A = \begin{bmatrix} 1 & 0 & 1\\0 & 1  & 2 \\ 1 & 2 & 5 \end{bmatrix}$
-is diagonalisable and has mutually orthogonal eigenvectors.
+is diagonalizable and has mutually orthogonal eigenvectors.
 
 We first compute the characteristic polynomial.
 
@@ -385,7 +385,7 @@ $$
     \nonumber
 $$
 
-So $A$ has the real eigenvalues $\lambda_{1} = 1$, $\lambda_2 = 6$ and $\lambda_3 = 0$. Since all eigenvalues have algebraic multiplicity 1, the corresponding eigenvectors will give a basis of eigenvectors, and we can immediately conclude that $A$ is diagonalisable.
+So $A$ has the real eigenvalues $\lambda_{1} = 1$, $\lambda_2 = 6$ and $\lambda_3 = 0$. Since all eigenvalues have algebraic multiplicity 1, the corresponding eigenvectors will give a basis of eigenvectors, and we can immediately conclude that $A$ is diagonalizable.
 
 The eigenvectors are found to be
 
@@ -428,11 +428,11 @@ Lastly we leave it to you to check that an eigenvector for $\lambda_3 = 7$ is gi
 
 (SubSec:SymmetricMat:OrthogDiag)=
 
-## Orthogonal Diagonalisability of Symmetric Matrices
+## Orthogonal Diagonalizability of Symmetric Matrices
 
 Let us restate the main theorem ({prf:ref}`Thm:SymmetricMat:OrthogDiag`) about symmetric matrices:
 
-A matrix $A$ is symmetric if and only if it is orthogonally diagonalisable.
+A matrix $A$ is symmetric if and only if it is orthogonally diagonalizable.
 
 Note that this also establishes the property that for each eigenvalue of a symmetric matrix the geometric multiplicity equals the algebraic multiplicity
 ({prf:ref}`Prop:SymmetricMat:AlgGeomMultiplicity`).
@@ -462,7 +462,7 @@ $$
          = \dfrac12\begin{bmatrix} 1 \\ -4 \\ 1\end{bmatrix}.
 $$
 
-Normalising the orthogonal basis $\{\mathbf{u}_1, \mathbf{u}_2, \mathbf{v}_3\}$ and putting them side by side in a matrix yields the orthogonal matrix
+Normalizing the orthogonal basis $\{\mathbf{u}_1, \mathbf{u}_2, \mathbf{v}_3\}$ and putting them side by side in a matrix yields the orthogonal matrix
 
 $$
   Q = \begin{bmatrix} \dfrac{1}{\sqrt{2}} & \dfrac{1}{\sqrt{18}} & \dfrac{2}{3} \\
@@ -478,10 +478,10 @@ $$
 
 ::::
 
-The procedure followed in  {prf:ref}`Ex:SymmetricMat:OrthogDiag3x3` leads way to an algorithm for constructing an orthogonal diagonalisation.
+The procedure followed in  {prf:ref}`Ex:SymmetricMat:OrthogDiag3x3` leads way to an algorithm for constructing an orthogonal diagonalization.
 
 ::::{prf:algorithm}
-:label: Alg:SymmetricMat:OrthogDiagonalisation
+:label: Alg:SymmetricMat:OrthogDiagonalization
 
 1. Compute the eigenvalues of the matrix.
 
@@ -539,7 +539,7 @@ $$
 
 Two independent eigenvectors: $\vect{v}_3 = \left[\begin{array}{c} -1 \\ 1 \\ 1 \\ 0  \end{array} \right]$ and $\vect{v}_4 = \left[\begin{array}{c} 1 \\ -2 \\ 0 \\ 1  \end{array} \right]$.
 
-Again these can be orthogonalised, and then we find the following complete set of eigenvectors, i.e., a basis for $\R^4$:
+Again these can be orthogonalized, and then we find the following complete set of eigenvectors, i.e., a basis for $\R^4$:
 
 $$
   \vect{u}_1 = \begin{bmatrix} 1 \\ 1 \\ 0\\ 1\end{bmatrix}, \quad
@@ -659,9 +659,9 @@ $$
 
 $$
 
-This proves that $A$ is diagonalisable, with $Q = Q_1Q_2 \cdots Q_{n-1}$ as a diagonalising matrix.
+This proves that $A$ is diagonalizable, with $Q = Q_1Q_2 \cdots Q_{n-1}$ as a diagonalizing matrix.
 
-Moreover, since the product of orthogonal matrices is orthogonal, $A$ is in fact orthogonally diagonalisable.
+Moreover, since the product of orthogonal matrices is orthogonal, $A$ is in fact orthogonally diagonalizable.
 
 %::::
 
@@ -750,7 +750,7 @@ $$
                                     \end{array}   \right].
 $$
 
-If we normalise and use them as the columns of $\tilde{Q}_2$ as in the proof of {prf:ref}`Thm:SymmetricMat:OrthogDiag`, we find as second matrix in that construction
+If we normalize and use them as the columns of $\tilde{Q}_2$ as in the proof of {prf:ref}`Thm:SymmetricMat:OrthogDiag`, we find as second matrix in that construction
 
 $$
 
@@ -811,9 +811,9 @@ $$
 $$
 
 Note: given the eigenvalues, these eigenvectors could have been found more efficiently by solving the systems
-$(A - \lambda_iI)\vect{x} = \vect{0}$, and then orthogonalise by the Gram-Schmidt procedure. As is done in
+$(A - \lambda_iI)\vect{x} = \vect{0}$, and then orthogonalize by the Gram-Schmidt procedure. As is done in
 {prf:ref}`Ex:SymmetricMat:OrthogDiag3x3`. <BR>
-The importance of the step-by-step reduction is that it shows that from the 'minimal' assumptions of symmetry and the existence of real eigenvalues it is possible to create an orthogonal diagonalisation.
+The importance of the step-by-step reduction is that it shows that from the 'minimal' assumptions of symmetry and the existence of real eigenvalues it is possible to create an orthogonal diagonalization.
 
 :::
 
@@ -965,7 +965,7 @@ At the $\leq$ step we used  that $\lambda_i^2 \leq \lambda_1^2$,  for  $i = 2, \
 
 
 
-In the last subsection we will show how the orthogonal diagonalisation can be rewritten in an interesting and meaningful way.
+In the last subsection we will show how the orthogonal diagonalization can be rewritten in an interesting and meaningful way.
 
 (SubSec:SymmetricMat:SpectralDecomp)=
 
@@ -976,7 +976,7 @@ Let's take up an earlier example ({prf:ref}`Ex:SymmetricMat:OrthDiag2x2`) to ill
 ::::{prf:example}
 :label: Ex:SymmetricMat:SpectralDecomp
 
-For the matrix $A = \begin{bmatrix} 1&2\\2&-2 \end{bmatrix}$ we found the orthogonal diagonalisation
+For the matrix $A = \begin{bmatrix} 1&2\\2&-2 \end{bmatrix}$ we found the orthogonal diagonalization
 
 $$
  A = QDQ^T = \begin{bmatrix} 2/\sqrt{5}& 1/\sqrt{5}\\1/\sqrt{5}& -2/\sqrt{5} \end{bmatrix}
@@ -1026,7 +1026,7 @@ Furthermore these one-dimensional subspaces are orthogonal to each other.
 So we have that this symmetric matrix can be written as a linear combination of matrices that represent orthogonal projections.
 ::::
 
-The construction we performed in the last example can be generalised. Which is the content of the last theorem in this section.
+The construction we performed in the last example can be generalized. Which is the content of the last theorem in this section.
 
 ::::{prf:theorem} Spectral Decomposition of Symmetric Matrices
 :label: Thm:SymmetricMat:SpectralDecomp
@@ -1048,7 +1048,7 @@ Formula {eq}`Eq:SymmetricMat:SpectralDecomp` is referred to as being a **spectra
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:SymmetricMat:SpectralDecomp`
 :class: tudproof
 
-For a general $n\times n$ symmetric matrix $A$, there exists an orthogonal diagonalisation
+For a general $n\times n$ symmetric matrix $A$, there exists an orthogonal diagonalization
 
 $$
    A = QDQ^{-1} = QDQ^{T}.
@@ -1063,7 +1063,7 @@ A =  \lambda_1 \mathbf{q}_1\mathbf{q}_1^T + \lambda_2\mathbf{q}_2\mathbf{q}_2^T 
 
 :::
 
-where the vectors $\mathbf{q}_i$ of course are the (orthonormal) columns of the diagonalising matrix $Q$. This is indeed a linear combination of orthogonal projections, as was to be shown.
+where the vectors $\mathbf{q}_i$ of course are the (orthonormal) columns of the diagonalizing matrix $Q$. This is indeed a linear combination of orthogonal projections, as was to be shown.
 ::::
 
 ::::{exercise}
@@ -1192,7 +1192,7 @@ $$
 :url: https://embed.grasple.com/exercises/03d75a31-7e1b-4dd2-be0a-5e9a93a0ef09?id=94940  
 :label: grasple_exercise_8_1_4
 :dropdown:
-:description: To give an orthogonal diagonalisation of a (2x2) matrix.
+:description: To give an orthogonal diagonalization of a (2x2) matrix.
 ::::
 
 
@@ -1201,7 +1201,7 @@ $$
 :url: https://embed.grasple.com/exercises/926933aa-a33e-40f5-8e70-84bb9ed63fc8?id=87465
 :label: grasple_exercise_8_1_5
 :dropdown:
-:description: To give an orthogonal diagonalisation of a (2x2) matrix.
+:description: To give an orthogonal diagonalization of a (2x2) matrix.
 ::::
 
 
@@ -1210,7 +1210,7 @@ $$
 :url: https://embed.grasple.com/exercises/9aac9c37-aa3b-4d5a-bb92-f00c09e5f052?id=94943
 :label: grasple_exercise_8_1_6
 :dropdown:
-:description: To give an orthogonal diagonalisation of a (3x3) matrix.
+:description: To give an orthogonal diagonalization of a (3x3) matrix.
 ::::
 
 
@@ -1219,7 +1219,7 @@ $$
 :url: https://embed.grasple.com/exercises/a6a95823-15e4-4354-b89d-559306a5a7fa?id=94941
 :label: grasple_exercise_8_1_7
 :dropdown:
-:description: To give an orthogonal diagonalisation of a (3x3) matrix.
+:description: To give an orthogonal diagonalization of a (3x3) matrix.
 ::::
 
 
@@ -1228,7 +1228,7 @@ $$
 :url: https://embed.grasple.com/exercises/0403af25-edba-4bc6-b077-3de227253419?id=56931
 :label: grasple_exercise_8_1_8
 :dropdown:
-:description: To give an orthogonal diagonalisation of a (3x3) matrix.
+:description: To give an orthogonal diagonalization of a (3x3) matrix.
 ::::
 
 
@@ -1237,7 +1237,7 @@ $$
 :url: https://embed.grasple.com/exercises/3a45e358-4898-4d1d-b6f4-ba9679dd13e0?id=87765
 :label: grasple_exercise_8_1_9
 :dropdown:
-:description: To give an orthogonal diagonalisation of a (3x3) matrix.
+:description: To give an orthogonal diagonalization of a (3x3) matrix.
 ::::
 
 
@@ -1246,7 +1246,7 @@ $$
 :url: https://embed.grasple.com/exercises/eb8b0e2f-d909-47ce-8ef1-50ad67e2b0f6?id=87905
 :label: grasple_exercise_8_1_10
 :dropdown:
-:description: To give an orthogonal diagonalisation of a (4x4) matrix.
+:description: To give an orthogonal diagonalization of a (4x4) matrix.
 ::::
 
 
@@ -1256,7 +1256,7 @@ $$
 :url: https://embed.grasple.com/exercises/5ce15529-61a7-43d0-9fd3-5ad5469618e8?id=89131 
 :label: grasple_exercise_8_1_11
 :dropdown:
-:description: One step in an orthogonal diagonalisation (as in the proof of the existence of an orthogonal diagonalisation)  
+:description: One step in an orthogonal diagonalization (as in the proof of the existence of an orthogonal diagonalization)  
 ::::
 
 
@@ -1303,7 +1303,7 @@ The following exercise have a more theoretical flavour.
 :url: https://embed.grasple.com/exercises/6e0ebf73-fba2-46d0-aaa8-44e53ea07e53?id=88034
 :label: grasple_exercise_8_1_16 
 :dropdown:
-:description:  To think about  symmetric versus orthogonally diagonalisable. (true/false questions).
+:description:  To think about  symmetric versus orthogonally diagonalizable. (true/false questions).
 ::::
 
 

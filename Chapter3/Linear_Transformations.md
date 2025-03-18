@@ -18,7 +18,7 @@ A different way to look at this matrix equation is to consider it as an input-ou
 the left-hand side $A\mathbf{x}$
 can be seen as a mapping that sends an "input" $\mathbf{x}$ to an "output" $\mathbf{y}= A\mathbf{x}$.
 
-For instance, in computer graphics, typically points describing a 3D object have to be converted to points in 2D, to be able to visualise them on a screen. Or, in a dynamical system, a
+For instance, in computer graphics, typically points describing a 3D object have to be converted to points in 2D, to be able to visualize them on a screen. Or, in a dynamical system, a
 matrix $A$ may describe how a system evolves from a "state" $\mathbf{x}_{k}$ at time $k$ to a state $\mathbf{x}_{k+1}$ at time $k+1$ via 
 
 $$
@@ -141,7 +141,7 @@ $$
 \Span{ \begin{bmatrix} 1\\ 1   \end{bmatrix}, \begin{bmatrix} 2 \\  2  \end{bmatrix}, \begin{bmatrix} 0\\  1  \end{bmatrix}}.
 $$
 
-In a later chapter ({numref}`Sec:SubspacesRn`, Subspaces of $\R^n$) we will call this the **column space** of the matrix $A$.
+In a later chapter ({numref}`Sec:SubspacesRn`, <FONT color ="#0076C2"> Subspaces of $\R^n$</FONT>) we will call this the **column space** of the matrix $A$.
 
 ::::::
 
@@ -375,7 +375,7 @@ $$
 
 The $M$ stands for migration matrix.
 
-Obviously this model can be generalised to a "world" with any number of cities.
+Obviously this model can be generalized to a "world" with any number of cities.
 
 ::::::
 
@@ -1051,7 +1051,7 @@ $$
 
 ::::
 
-The reasoning of {prf:ref}`Ex:LinTrafo:StandardMatrixIntro` can be generalised. This is the content of the next theorem.
+The reasoning of {prf:ref}`Ex:LinTrafo:StandardMatrixIntro` can be generalized. This is the content of the next theorem.
 
 ::::::{prf:theorem}
 :label: Thm:LinTrafo:LinTrafo=MatrixTrafo

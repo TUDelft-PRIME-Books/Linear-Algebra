@@ -18,7 +18,7 @@ try {
 	python setup.py install
 }
 catch {
-	Write-Host "python is not recognised... Trying python3:"
+	Write-Host "python is not recognized... Trying python3:"
 	Write-Host $_.ScriptStackTrace
 }
 try{

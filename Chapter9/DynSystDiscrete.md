@@ -10,7 +10,7 @@ $$
    \vect{x}_0,\,\, \vect{x}_1=A\vect{x}_0,\,\,\vect{x}_2= A\vect{x}_1,\,\,\vect{x}_3= A\vect{x}_2,\,\,\ldots
 $$
 
-In {prf:ref}`Ex:Diagonalise:DiagonaliseMigration` in {numref}`Section %s <Sec:Diagonalise>` we analysed the simple migration model
+In {prf:ref}`Ex:Diagonalize:DiagonalizeMigration` in {numref}`Section %s <Sec:Diagonalize>` we analysed the simple migration model
 
 $$
 \vect{x}_{k+1} = \left[\begin{array}{cc} 0.9 & 0.2 \\ 0.1 & 0.8 \end{array}\right]\vect{x}_k, \quad
@@ -41,7 +41,7 @@ $$
 $$
 
 The table has to be read column by column. For instance, the meaning of the first column is that of the age group 'young', 30% reaches the adolescent state. And from the third column it can be read off that
-individuals of the age group 'full grown' reproduce 4 offspring and with probability 40% reach 'old age'. The graph in {numref}`Figure %s <Fig:DynSystDiscrete:Leslie1>` visualises the table.
+individuals of the age group 'full grown' reproduce 4 offspring and with probability 40% reach 'old age'. The graph in {numref}`Figure %s <Fig:DynSystDiscrete:Leslie1>` visualizes the table.
 
 :::{figure} Images/Fig-DynSystDiscrete-LeslieGraph.svg
 :name: Fig:DynSystDiscrete:Leslie1
@@ -77,13 +77,13 @@ We will study this model more closely in {prf:ref}`Ex:DynSystDiscrete:Population
 ::::{prf:example}
 :label: ExDynSystDiscrete:PageRank
 
-A 'real' example is given by the PageRank algorithm to rank pages on the internet (and which made Google great). The whole internet is modelled as a graph, a set of 'nodes' (= sites) connected by 'edges' (= links). The basic idea is to start from an arbitrary initial situation with a large amount of 'visitors' on the sites and simulate random walks for each visitor where at each step each visitor chooses an arbitrary site that is connected to his present site. Next many cycles are run/simulated, modelled by products
+A 'real' example is given by the PageRank algorithm to rank pages on the internet (and which made Google great). The whole internet is modeled as a graph, a set of 'nodes' (= sites) connected by 'edges' (= links). The basic idea is to start from an arbitrary initial situation with a large amount of 'visitors' on the sites and simulate random walks for each visitor where at each step each visitor chooses an arbitrary site that is connected to his present site. Next many cycles are run/simulated, modeled by products
 
 $$
    \vect{x}_{k+1} = M\vect{x}_k
 $$
 
-where $M$ is a huge matrix representing the internet graph. Eventually the system reaches a state where 'important' sites, can be recognised by having many visitors.
+where $M$ is a huge matrix representing the internet graph. Eventually the system reaches a state where 'important' sites, can be recognized by having many visitors.
 
 ::::
 
@@ -139,17 +139,17 @@ If the initial state is $\vect{s} = \vect{0}$, all vectors $\vect{x}_k$ will be 
 
 For more general (read: non-linear) dynamical systems a more subtle definition is needed. For one thing, a non-linear dynamical system may have multiple equilibrium points, each with their own behaviour.
 
-In the literature there is quite a bit of terminology to describe the behaviour of dynamical systems at equilibrium points. Apart from linear dynamical systems in the plane, where we can nicely visualise what is going on
+In the literature there is quite a bit of terminology to describe the behaviour of dynamical systems at equilibrium points. Apart from linear dynamical systems in the plane, where we can nicely visualize what is going on
 (cf. {numref}`Subsec:GraphicalDiscDynSyst`), we will stick to the two qualifications attractor and repellor.
 
 ::::
 
-The next proposition describes the behaviour of a dynamical system when its matrix $A$ is diagonalisable. Recall that diagonalisable means that there exists a basis of eigenvectors. For the moment we assume that the eigenvectors are _real_, though this actually plays a minor role.
+The next proposition describes the behaviour of a dynamical system when its matrix $A$ is diagonalizable. Recall that diagonalizable means that there exists a basis of eigenvectors. For the moment we assume that the eigenvectors are _real_, though this actually plays a minor role.
 
 ::::{prf:proposition}
 :label: Prop:DynSystDiscrete:DiagCase
 
-Suppose $A$ is an $n\times n$ (real) diagonalisable matrix.
+Suppose $A$ is an $n\times n$ (real) diagonalizable matrix.
 Let $(\vect{v}_1, \ldots, \vect{v}_n)$ be a basis of eigenvectors, and let
 $\lambda_1, \ldots, \lambda_n$ be the corresponding eigenvalues.
 
@@ -234,7 +234,7 @@ The following proposition is an almost immediate consequence of Equation {eq}`Eq
 ::::{prf:proposition}
 :label: Prop:DynSystDiscrete:DiagCase2
 
-Suppose the matrix $A$ is diagonalisable, with eigenvalues $\lambda_i$ ordered by absolute value,
+Suppose the matrix $A$ is diagonalizable, with eigenvalues $\lambda_i$ ordered by absolute value,
 
 $$
    |\lambda_1| \geq |\lambda_2| \geq \ldots \geq |\lambda_n|.
@@ -424,7 +424,7 @@ $$
 
 ## Graphical analysis of discrete dynamical systems in $\R^2$.
 
-In this subsection we will analyse dynamical systems
+In this subsection we will analyze dynamical systems
 
 $$
 \mathbf{x}_0 = \mathbf{s}, \quad \mathbf{x}_{k+1} = A\mathbf{x}_k, \,\, k=0,1,2,\ldots\,,
@@ -448,7 +448,7 @@ in $\R^2$ is called the **trajectory** or **path** starting from $\mathbf{s}$.
 Note that the definition also makes sense in larger dimensions.
 
 Let us start by considering a few examples. In the first two examples the matrices will
-have two distinct real eigenvalues, hence they are (real) diagonalisable, in the third example the eigenvalues are complex (thus the matrix is complex diagonalisable).
+have two distinct real eigenvalues, hence they are (real) diagonalizable, in the third example the eigenvalues are complex (thus the matrix is complex diagonalizable).
 
 ::::{prf:example}
 :label: Ex:DynSystDiscrete:SimplestSystem
@@ -823,7 +823,7 @@ $$
   0,\,1,\,1,\,2,\,3,\,5,\,8,\,13,\,21,\,34,\,55,\,89,\,144.
 $$
 
-Using a diagonalisation we will show the surprising formula
+Using a diagonalization we will show the surprising formula
 
 :::{math}
 :label: Eq:DynSystDiscrete:Fibonacci
@@ -879,7 +879,7 @@ $$
   \vect{v}_2 = \left[\begin{array}{cc} 1 \\ \frac12(1-\sqrt{5})  \end{array}\right]
 $$
 
-respectively. So $A$ is diagonalisable, and we can use {prf:ref}`Prop:DynSystDiscrete:DiagCase` to find the general state vector $\vect{x}_k$.
+respectively. So $A$ is diagonalizable, and we can use {prf:ref}`Prop:DynSystDiscrete:DiagCase` to find the general state vector $\vect{x}_k$.
 
 For this we have to find the coordinates $(c_1, c_2)$ of $\vect{s}$ with respect to the basis $(\vect{v}_1,\vect{v}_2)$. A short computation shows that
 

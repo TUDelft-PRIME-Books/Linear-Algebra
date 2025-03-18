@@ -1,13 +1,13 @@
-(Sec:Diagonalise)=
+(Sec:Diagonalize)=
 
-# Diagonalisability
+# Diagonalizability
 
 (Subsec:SimilarMatrices)=
 
 ## Similar matrices
 
 ::::::{prf:definition}
-:label: Dfn:Diagonalisable:SimalarMatrices
+:label: Dfn:Diagonalizable:SimalarMatrices
 
 Two $n \times n$ matrices $A$ and $B$ are called **similar** if they are related via the property
 
@@ -47,7 +47,7 @@ $$
 Similar matrices have similar properties. Especially as regards eigenvalues and eigenvectors.
 
 ::::::{prf:proposition}
-:label: Prop:Diagonalisable:SimilarEigenvalues
+:label: Prop:Diagonalizable:SimilarEigenvalues
 
 If $A = PBP^{-1}$, then $A$ and $B$ have the same eigenvalues.
 
@@ -55,7 +55,7 @@ Moreover, if $\vect{v}$ is an eigenvector of $B$, then $P\vect{v}$ is an eigenve
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Diagonalisable:SimilarEigenvalues`
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Diagonalizable:SimilarEigenvalues`
 :class: tudproof
 
 Suppose $\lambda$ is an eigenvalue of $B$, and $\vect{v}$ is a corresponding eigenvector. We then see that
@@ -73,13 +73,13 @@ $P\vect{v} $ is not the zero vector, and we are done.
 ::::::
 
 ::::::{prf:proposition}
-:label: Prop:Diagonalisable:SimilarCharpoly
+:label: Prop:Diagonalizable:SimilarCharpoly
 
 Similar matrices have the same characteristic polynomial.
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Diagonalisable:SimilarCharpoly`
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Diagonalizable:SimilarCharpoly`
 :class: tudproof
 
 Suppose $A = PBP^{-1}$.
@@ -116,25 +116,25 @@ $$
 
 ::::::
 
-From {prf:ref}`Prop:Diagonalisable:SimilarCharpoly` it follows that similar matrices have the same eigenvalues with the same algebraic multiplicities.
+From {prf:ref}`Prop:Diagonalizable:SimilarCharpoly` it follows that similar matrices have the same eigenvalues with the same algebraic multiplicities.
 
-From {prf:ref}`Prop:Diagonalisable:SimilarEigenvalues` it follows that they also have the same geometric multiplicities. That is,
+From {prf:ref}`Prop:Diagonalizable:SimilarEigenvalues` it follows that they also have the same geometric multiplicities. That is,
 if $\vect{v}_1, \ldots, \vect{v}_m$ are linearly independent eigenvectors of $B$ for the eigenvalue $\lambda_k$, and $A = PBP^{-1}$,
 then the vectors $P\vect{v}_1, \ldots, P\vect{v}_m$ are linearly independent eigenvectors of $A$.
 <BR>
 And vice versa.
 
 ::::::{exercise}
-:label: Exc:Diagonalisable:GeomMultForSimilarMatrices
+:label: Exc:Diagonalizable:GeomMultForSimilarMatrices
 
 Fill in the details of the last remark.
 
 ::::::
 
-The above considerations are summarised in the following proposition.
+The above considerations are summarized in the following proposition.
 
 ::::::{prf:proposition}
-:label: Prop:Diagonalisable:EqualMultiplicitiesSimilarMatrices
+:label: Prop:Diagonalizable:EqualMultiplicitiesSimilarMatrices
 
 Suppose  $A$ and $B$ are similar matrices.  Then they have the same eigenvalues with the same algebraic and geometric multiplicities.
 
@@ -145,7 +145,7 @@ Suppose  $A$ and $B$ are similar matrices.  Then they have the same eigenvalues 
 Using the properties of similar matrices we can prove the inequality
 
 ::::::{math}
-:label: Eq:Diagonalisable:GeomMultversusAlgMult
+:label: Eq:Diagonalizable:GeomMultversusAlgMult
 
 \text{g.m.}(\lambda) \leq \text{a.m.}(\lambda) 
 ::::::
@@ -261,7 +261,7 @@ Suppose $A = PBP^{-1}$.
 <ol type = "i">
 <li>
 
-As in the proof of the equality of the characteristic polynomials ({prf:ref}`Prop:Diagonalisable:SimilarCharpoly`) we have:
+As in the proof of the equality of the characteristic polynomials ({prf:ref}`Prop:Diagonalizable:SimilarCharpoly`) we have:
 
 <BR>
 
@@ -320,32 +320,32 @@ $$
 
 ::::::
 
-## Diagonalisability
+## Diagonalizability
 
 ::::::{prf:definition}
-:label: Dfn:Diagonalisable:Diagonalisability
+:label: Dfn:Diagonalizable:Diagonalizability
 
-A matrix is $A$ is called **diagonalisable** if it is similar to a diagonal matrix. That means that a diagonal matrix $D$ and an invertible matrix $P$ exist such that
+A matrix is $A$ is called **diagonalizable** if it is similar to a diagonal matrix. That means that a diagonal matrix $D$ and an invertible matrix $P$ exist such that
 
 $$
 A = PDP^{-1}.
 $$
 
-We then say that $PDP^{-1}$ is a **diagonalisation** of $A$.
+We then say that $PDP^{-1}$ is a **diagonalization** of $A$.
 
 ::::::
 
-An equivalent alternative characterisation of diagonalisability is given in the following proposition.
+An equivalent alternative characterization of diagonalizability is given in the following proposition.
 
 ::::::{prf:proposition}
 :label: Prop:Eigenvalues:DiagbleVersusEigenvectors
 
-An $n \times n$  matrix $A$ is diagonalisable if and only if $A$ has $n$ linearly independent eigenvectors.
+An $n \times n$  matrix $A$ is diagonalizable if and only if $A$ has $n$ linearly independent eigenvectors.
 Such a set of eigenvectors then forms a basis for $\R^n$.
 
 ::::::
 
-Since this proposition is such a pillar on which much of the theory of matrices rests, and diagonalisable matrices are important because they are in many respects easy to work with, we give two proofs.
+Since this proposition is such a pillar on which much of the theory of matrices rests, and diagonalizable matrices are important because they are in many respects easy to work with, we give two proofs.
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Eigenvalues:DiagbleVersusEigenvectors`
 :class: tudproof
@@ -389,7 +389,7 @@ The second proof has a geometric flavour. Open it if you are interested.
 ::::::{admonition} Second proof of&nbsp;{prf:ref}`Prop:Eigenvalues:DiagbleVersusEigenvectors`
 :class: tudproof, dropdown
 
-First we show that diagonalisability implies the existence of $n$ linearly independent eigenvectors.
+First we show that diagonalizability implies the existence of $n$ linearly independent eigenvectors.
 
 If $A = PDP^{-1}$ then by {prf:ref}`Prop:Eigenvalues:DiagbleVersusEigenvectors` $A$ and $D$ have the same eigenvalues and the relation between the eigenvectors is:
 
@@ -458,7 +458,7 @@ $$
 and the transformation formula gives
 
 :::::{math}
-:label: Eq:Diagonalisable:PinvAP
+:label: Eq:Diagonalizable:PinvAP
 
 D = [T]_{\mathcal{B}} = P^{-1}[T]_{\mathcal{E}}P = P^{-1}AP,
 
@@ -472,17 +472,17 @@ $$
 
 is the change-of-coordinates matrix from $\mathcal{B}$ to the standard basis.
 
-Lastly, the identity $D=P^{-1}AP$ in Equation {eq}`Eq:Diagonalisable:PinvAP` is equivalent to $A = PDP^{-1}$.
+Lastly, the identity $D=P^{-1}AP$ in Equation {eq}`Eq:Diagonalizable:PinvAP` is equivalent to $A = PDP^{-1}$.
 
 ::::::
 
 ::::::{prf:example}
-:label: Ex:Diagonalisable:CheckPDPinv
+:label: Ex:Diagonalizable:CheckPDPinv
 
 We verify the relation $A = PDP^{-1}$ for the matrix $A = \begin{bmatrix} 1 & 4 \\ 1 & 1 \end{bmatrix}$ we studied before.
 We found that $A$ has the eigenvalues $\lambda_1 = 3$, $\lambda_2 = -1$, with corresponding eigenvectors $\vect{v}_1 = \begin{bmatrix} 2 \\1 \end{bmatrix}$ and $\vect{v}_2 = \begin{bmatrix} -2 \\1 \end{bmatrix}$.
 
-Thus for a diagonalisation of $A$ we can take
+Thus for a diagonalization of $A$ we can take
 
 $$
 P = \left[\begin{array}{cc}\vect{v}_1 & \vect{v}_2\end{array} \right]
@@ -527,9 +527,9 @@ $$
 
 as it should.
 
-Note that the diagonalisation is not unique: the *order* of the eigenvalues can be changed, and the eigenvectors may be *scaled*.
+Note that the diagonalization is not unique: the *order* of the eigenvalues can be changed, and the eigenvectors may be *scaled*.
 However, the order of the eigenvectors in $P$ must correspond to the order of the eigenvalues on the diagonal of $D$.
-For instance, for the matrix $A$ at hand, an alternative diagonalisation is given by
+For instance, for the matrix $A$ at hand, an alternative diagonalization is given by
 
 $$
 A =   \left[\begin{array}{cc} 4 & 6 \\ -2 & 3  \end{array}
@@ -545,23 +545,23 @@ $$
 
 
 
-Are all matrices diagonalisable? Most certainly not, as the following two examples, studied before, show.
+Are all matrices diagonalizable? Most certainly not, as the following two examples, studied before, show.
 
 ::::::{prf:example}
-:label: Ex:Diagonalisable:RotationCtd
+:label: Ex:Diagonalizable:RotationCtd
 
-The matrix $R = \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}$ of {prf:ref}`Ex:EigenValues:Rotation` does not have any (real) eigenvalues, so also no eigenvectors. Hence it cannot be diagonalised.
+The matrix $R = \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}$ of {prf:ref}`Ex:EigenValues:Rotation` does not have any (real) eigenvalues, so also no eigenvectors. Hence it cannot be diagonalized.
 
 ::::::
 
 ::::::{prf:remark}
-:label: Rem:Diagonalisable:RotationCtd
+:label: Rem:Diagonalizable:RotationCtd
 
-Things would be different if we would allow complex eigenvalues and eigenvectors. We will devote a separate section ({numref}`Section:ComplexEV`) to this. And then it will appear that the matrix $R$ is **complex diagonalisable**.
+Things would be different if we would allow complex eigenvalues and eigenvectors. We will devote a separate section ({numref}`Section:ComplexEV`) to this. And then it will appear that the matrix $R$ is **complex diagonalizable**.
 
 ::::::
 
-In the previous example there were not enough eigenvalues for the matrix $A$ to be real diagonalisable. In the following example there is another reason why a matrix can fail to be diagonalisable.
+In the previous example there were not enough eigenvalues for the matrix $A$ to be real diagonalizable. In the following example there is another reason why a matrix can fail to be diagonalizable.
 
 ::::::{prf:example}
 
@@ -573,12 +573,12 @@ Since
 $A - 2I = \left[\begin{array}{cc} 0 & 1 \\ 0 & 0 \end{array}
 \right]$
 has rank 1, there is only one independent eigenvector.
-Thus there does not exist a basis of eigenvectors for $A$, and consequently the matrix $A$ is not diagonalisable.
+Thus there does not exist a basis of eigenvectors for $A$, and consequently the matrix $A$ is not diagonalizable.
 
 ::::::
 
 ::::::{prf:example}
-:label: Ex:Diagonalisable:SecondCharPolyCtd2
+:label: Ex:Diagonalizable:SecondCharPolyCtd2
 
 The matrix
 $A = \left[\begin{array}{ccc} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{array}
@@ -586,26 +586,26 @@ $A = \left[\begin{array}{ccc} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{array}
 of {prf:ref}`Ex:EigenValues:SecondCharPoly`
 and {prf:ref}`Ex:EigenValues:SecondCharPolyContinued`
 provides another example of this phenomenon. It has the two eigenvalues, $\lambda_1=3$, of algebraic multiplicity 2, and $\lambda_2 = 2$, of algebraic multiplicity 1.
-There is only one independent eigenvector for $\lambda_{1}$. This, together with the single independent eigenvector for $\lambda_2$ is a maximal set of two linearly independent eigenvectors for $A$.  So, this matrix  $A$ is again not diagonalisable.
+There is only one independent eigenvector for $\lambda_{1}$. This, together with the single independent eigenvector for $\lambda_2$ is a maximal set of two linearly independent eigenvectors for $A$.  So, this matrix  $A$ is again not diagonalizable.
 
 ::::::
 
 ::::::{exercise}
-:label: Exc:Diagonalisable
+:label: Exc:Diagonalizable
 
 Is the matrix
 $A = \left[\begin{array}{cccc}1 & 1 & 0 & 1 \\ 0 & 2 & 0 & 0\\
 0 & 0 & 2 & 1 \\ 0 & 0 & 0 & 1 \end{array} \right]$
-diagonalisable?
+diagonalizable?
 
 ::::::
 
-These examples show the two causes why a matrix may not be diagonalisable, as is made explicit in the following proposition.
+These examples show the two causes why a matrix may not be diagonalizable, as is made explicit in the following proposition.
 
 ::::::{prf:theorem}
-:label: Thm:Diagonalisable:ThirdCharacterisation
+:label: Thm:Diagonalizable:ThirdCharacterization
 
-The $n \times n$ matrix $A$ is (real) diagonalisable if and only if it satisfies the following two conditions.
+The $n \times n$ matrix $A$ is (real) diagonalizable if and only if it satisfies the following two conditions.
 
 <ol type = "i">
 
@@ -624,19 +624,19 @@ For each eigenvalue the geometric multiplicity is equal to the algebraic multipl
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:Diagonalisable:ThirdCharacterisation`
+::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:Diagonalizable:ThirdCharacterization`
 :class: tudproof
 
-First we show that a diagonalisable matrix satisfies the two conditions.
+First we show that a diagonalizable matrix satisfies the two conditions.
 
-If $A$ is diagonalisable, then there must be $n$ independent eigenvectors. The sum of the dimensions $m_k$ of the eigenspaces $E_{\lambda_i}$, i.e., the sum of the geometric multiplicities must therefore be equal to $n$. Since the algebraic multiplicities are at least as large as the geometric multiplicities, the sum of the algebraic multiplicities must be $\geq n$. Since this sum cannot be larger, it means that the sum is equal to $n$. Thus all algebraic multiplicities must in fact be equal to the corresponding geometric multiplicities. This settles properties i and ii.
+If $A$ is diagonalizable, then there must be $n$ independent eigenvectors. The sum of the dimensions $m_k$ of the eigenspaces $E_{\lambda_i}$, i.e., the sum of the geometric multiplicities must therefore be equal to $n$. Since the algebraic multiplicities are at least as large as the geometric multiplicities, the sum of the algebraic multiplicities must be $\geq n$. Since this sum cannot be larger, it means that the sum is equal to $n$. Thus all algebraic multiplicities must in fact be equal to the corresponding geometric multiplicities. This settles properties i and ii.
 
 Conversely, conditions i. and ii. immediately imply that there must be $n$ linearly independent eigenvectors. 
 The basic idea is that, since eigenvectors for different eigenvalues are automatically linearly independent, the bases for the eigenspaces put together give exactly $n$ linearly independent eigenvectors.  
 
 ::::::
 
-::::::{admonition} (More detailed) Proof of&nbsp;{prf:ref}`Thm:Diagonalisable:ThirdCharacterisation`
+::::::{admonition} (More detailed) Proof of&nbsp;{prf:ref}`Thm:Diagonalizable:ThirdCharacterization`
 :class: tudproof, dropdown
 
 Suppose that the $n \times n$ matrix $A$ has only real eigenvalues,  say  $\lambda_1,\ldots,\lambda_k$, and that for each eigenvalue $\lambda_i$ the geometric multiplicity $m_i$  is equal to the algebraic multiplicity, so
@@ -652,7 +652,7 @@ $$
   m_1 + m_2 + \ldots + m_k = n.
 $$ 
  
-For each $i$ let $\{\vect{v}^{(i)}_1, \ldots, \vect{v}^{(i)}_{m_i}\}$  be a basis for the eigenspace  $E(\lambda_i)$. If we can show that the union of all these bases is a basis for $\R^n$, we have a basis of eigenvectors for matrix $A$, and by   {prf:ref}`Prop:Eigenvalues:DiagbleVersusEigenvectors` $A$ is diagonalisable.  To this end it is sufficient to show that the total set
+For each $i$ let $\{\vect{v}^{(i)}_1, \ldots, \vect{v}^{(i)}_{m_i}\}$  be a basis for the eigenspace  $E(\lambda_i)$. If we can show that the union of all these bases is a basis for $\R^n$, we have a basis of eigenvectors for matrix $A$, and by   {prf:ref}`Prop:Eigenvalues:DiagbleVersusEigenvectors` $A$ is diagonalizable.  To this end it is sufficient to show that the total set
 
 $$
   \left\{\vect{v}^{(1)}_1, \ldots, \vect{v}^{(1)}_{m_1}, .\,.\,.\,.\,., \vect{v}^{(k)}_1, \ldots, \vect{v}^{(k)}_{m_k} \right\}
@@ -661,7 +661,7 @@ $$
 is linearly independent.  So, suppose that 
 
 :::::{math}
-:label:  Eq:Diagonalisable:SumAllEigenvalues
+:label:  Eq:Diagonalizable:SumAllEigenvalues
 
    \underbrace{c^{(1)}_1\vect{v}^{(1)}_1+ \cdots + c^{(1)}_{m_1}\vect{v}^{(1)}_{m_1}} \,+ \,\cdot\,\cdot\,\cdot\,\cdot\,\cdot\,
 + \,  \underbrace{c^{(k)}_1\vect{v}^{(k)}_1+ \cdots + c^{(k)}_{m_k}\vect{v}^{(k)}_{m_k}}  = \vect{0}.
@@ -687,7 +687,7 @@ $$
   \vect{y}_i = \vect{0}, \quad i = 1, \ldots, k.
 $$
 
-So we have for each underbraced term  in Equation {eq}`Eq:Diagonalisable:SumAllEigenvalues`
+So we have for each underbraced term  in Equation {eq}`Eq:Diagonalizable:SumAllEigenvalues`
 
 $$
   c^{(i)}_1\vect{v}^{(i)}_1+ \cdots + c^{(i)}_{m_i}\vect{v}^{(i)}_{m_i} = \vect{0}.
@@ -699,7 +699,7 @@ $$
     c^{(i)}_1 = 0, \,\ldots\,, \, c^{(i)}_{m_i}= 0.
 $$
 
-This shows that {eq}`Eq:Diagonalisable:SumAllEigenvalues`  can only hold if all coefficients  are zero, and consequently the set
+This shows that {eq}`Eq:Diagonalizable:SumAllEigenvalues`  can only hold if all coefficients  are zero, and consequently the set
 
 $$
    \{\vect{v}^{(1)}_1, \,\ldots, \,\vect{v}^{(1)}_{m_1}, \,\,.\,.\,.\,.\,.\,\,, \,\vect{v}^{(k)}_1, \,\ldots, \, \vect{v}^{(k)}_{m_k}\} 
@@ -714,10 +714,10 @@ We saw that there is a weak connection between eigenvalues and (non-)invertibili
 {prf:ref}`Prop:EigenValues:SingularMatrix` states: a matrix is singular if and only if it has the eigenvalue $0$.
 
 
-In exercise 6.3.12 below you are invited to investigate the connection (or no-connection) between diagonalisability and invertibility.
+In exercise 6.3.12 below you are invited to investigate the connection (or no-connection) between diagonalizability and invertibility.
 
 %::::::{exercise}
-%:label: Exc:Diagonalisable:Invertibility
+%:label: Exc:Diagonalizable:Invertibility
 %
 %Give examples of
 %
@@ -725,34 +725,34 @@ In exercise 6.3.12 below you are invited to investigate the connection (or no-co
 %
 %<li>
 %
-%A matrix that is diagonalisable but not invertible.
+%A matrix that is diagonalizable but not invertible.
 %
 %</li>
 %
 %<li>
 %
-%A matrix that is invertible but not diagonalisable.
+%A matrix that is invertible but not diagonalizable.
 %
 %</li>
 %
 %<li>
 %
-%A matrix that is not invertible and not diagonalisable.
+%A matrix that is not invertible and not diagonalizable.
 %
 %</li>
 %
 %<li>
 %
-%A matrix that is both invertible and diagonalisable.
+%A matrix that is both invertible and diagonalizable.
 %
 %</li>
 %</ol>
 
 
-We stated that diagonalisable matrices have nice properties. Here is one: for diagonalisable matrices finding (high) powers can be done very efficiently.
+We stated that diagonalizable matrices have nice properties. Here is one: for diagonalizable matrices finding (high) powers can be done very efficiently.
 
 ::::::{prf:example}
-:label: Ex:Diagonalisable:EasyPowers
+:label: Ex:Diagonalizable:EasyPowers
 
 If $A = PDP^{-1}$,  then $A^k =  PD^kP^{-1}$, for $k = 0,1,2,3, \ldots$
 
@@ -772,10 +772,10 @@ To compute $PD^kP^{-1}$ we need $n$ $k$th powers to find $D^k$, and we are left 
 ::::::
 
 ::::::{prf:example}
-:label: Eq:Diagonalisable:10thPowerofA
+:label: Eq:Diagonalizable:10thPowerofA
 
 We compute $A^{10}$ for the matrix $A = \left[\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array} \right]$
-of {prf:ref}`Ex:Diagonalisable:CheckPDPinv`.
+of {prf:ref}`Ex:Diagonalizable:CheckPDPinv`.
 
 There we already settled that $A = PDP^{-1}$, with
 
@@ -794,7 +794,7 @@ $$
 We see that
 
 :::{math}
-:label: Eq:Diagonalisable:10thPowerofA
+:label: Eq:Diagonalizable:10thPowerofA
 
 A^{10} = \left[\begin{array}{cc} 2 & -2 \\ 1 & 1 \end{array} \right]
 \left[\begin{array}{cc} 3^{10}&0 \\ 0 & (-1 )^{10} \end{array} \right]
@@ -825,7 +825,7 @@ A^{10} = \frac{3^{10}}{4} \left[\begin{array}{cc} 2 & 4 \\ 1 & 2 \end{array}
 .
 $$
 
-Note that we could have found any power of $A$ just as easily: replacing $10$ by $n$ in Equation {eq}`Eq:Diagonalisable:10thPowerofA` gives
+Note that we could have found any power of $A$ just as easily: replacing $10$ by $n$ in Equation {eq}`Eq:Diagonalizable:10thPowerofA` gives
 
 $$
 \begin{array}{rcl}
@@ -844,10 +844,10 @@ $$
 
 ::::::
 
-To conclude this section we return to the 'toy' migration model ({prf:ref}`Ex:EigenValues:ToyMigrationModel`) of this chapter to illustrate the power of diagonalisation.
+To conclude this section we return to the 'toy' migration model ({prf:ref}`Ex:EigenValues:ToyMigrationModel`) of this chapter to illustrate the power of diagonalization.
 
 ::::::{prf:example}
-:label: Ex:Diagonalise:DiagonaliseMigration
+:label: Ex:Diagonalize:DiagonalizeMigration
 
 Suppose the migrations between two cities $A$ and $B$ are described by the model
 
@@ -896,7 +896,7 @@ $$
  \quad \text{respectively.}
 $$
 
-Since $\{\vect{v}_1, \vect{v}_2\}$ is a basis of eigenvectors, the matrix $M$ is diagonalisable, and in fact we have
+Since $\{\vect{v}_1, \vect{v}_2\}$ is a basis of eigenvectors, the matrix $M$ is diagonalizable, and in fact we have
 
 $$
 M = PDP^{-1} = \left[\begin{array}{cc} 2 &1\\1&-1\end{array}
@@ -978,7 +978,7 @@ $$
 :url: https://embed.grasple.com/exercises/bd1c8f7a-917f-431f-889b-463ab7a7c6f6?id=91486
 :label: grasple_exercise_6_3_1
 :dropdown:
-:description: Given a $2\times 2$ matrix $A$ and 'diagonaliser' $P$, to find the diagonal matrix $D$ such that $A=PDP^{-1}$.  
+:description: Given a $2\times 2$ matrix $A$ and 'diagonalizer' $P$, to find the diagonal matrix $D$ such that $A=PDP^{-1}$.  
 
 ::::::
 
@@ -987,7 +987,7 @@ $$
 :url: https://embed.grasple.com/exercises/5bcb24df-9cfd-4e4b-bcae-b550fb0fad63?id=91488
 :label: grasple_exercise_6_3_2 
 :dropdown:
-:description:  To find a diagonalisation of a $2\times 2$ matrix (insofar it exists).
+:description:  To find a diagonalization of a $2\times 2$ matrix (insofar it exists).
 
 ::::::
 
@@ -996,7 +996,7 @@ $$
 :url: https://embed.grasple.com/exercises/c0d56365-5434-45b0-9c82-805112428024?id=91489
 :label: grasple_exercise_6_3_3 
 :dropdown:
-:description:  To find a diagonalisation of a $2\times 2$ matrix (insofar it exists).
+:description:  To find a diagonalization of a $2\times 2$ matrix (insofar it exists).
 
 ::::::
 
@@ -1005,7 +1005,7 @@ $$
 :url: https://embed.grasple.com/exercises/5a71e703-acd5-48b1-9b6d-8a51f4f8cf95?id=91501
 :label: grasple_exercise_6_3_4 
 :dropdown:
-:description: To investigate the diagonalisability of a ($3 \times 3$) matrix. 
+:description: To investigate the diagonalizability of a ($3 \times 3$) matrix. 
 
 ::::::
 
@@ -1014,7 +1014,7 @@ $$
 :url: https://embed.grasple.com/exercises/537a306b-47d1-422a-bc15-c7a75b81c24b?id=91496
 :label: grasple_exercise_6_3_5 
 :dropdown:
-:description:  To investigate the diagonalisability of a ($3 \times 3$) matrix.
+:description:  To investigate the diagonalizability of a ($3 \times 3$) matrix.
 
 ::::::
 
@@ -1023,7 +1023,7 @@ $$
 :url: https://embed.grasple.com/exercises/5a71e703-acd5-48b1-9b6d-8a51f4f8cf95?id=91501
 :label: grasple_exercise_6_3_6
 :dropdown:
-:description:  To investigate the diagonalisability of a ($3 \times 3$) matrix.
+:description:  To investigate the diagonalizability of a ($3 \times 3$) matrix.
 
 ::::::
 
@@ -1032,7 +1032,7 @@ $$
 :url: https://embed.grasple.com/exercises/f61dfb8f-db65-4f17-80c7-b1702b0c2c07?id=104493
 :label: grasple_exercise_6_3_7 
 :dropdown:
-:description:  To investigate the diagonalisability of a 3x3 matrix of rank 1. 
+:description:  To investigate the diagonalizability of a 3x3 matrix of rank 1. 
 
 ::::::
 
@@ -1042,7 +1042,7 @@ $$
 :url: https://embed.grasple.com/exercises/70b5964e-b6c7-4a64-a2e3-d10dc915f324?id=91503
 :label: grasple_exercise_6_3_8 
 :dropdown:
-:description:  To investigate the diagonalisability of a ($3 \times 3$) matrix. 
+:description:  To investigate the diagonalizability of a ($3 \times 3$) matrix. 
 
 ::::::
 
@@ -1052,7 +1052,7 @@ $$
 :url: https://embed.grasple.com/exercises/534ce865-0960-403a-affc-0f23f2d14110?id=91521
 :label: grasple_exercise_6_3_9 
 :dropdown:
-:description: For which $\alpha$ is given (upper triangular) $4 \times 4$ matrix diagonalisable?
+:description: For which $\alpha$ is given (upper triangular) $4 \times 4$ matrix diagonalizable?
 
 ::::::
 
@@ -1070,7 +1070,7 @@ $$
 :url: https://embed.grasple.com/exercises/d1cb7e54-6c99-4a01-b161-832b37d650d0?id=91523
 :label: grasple_exercise_6_3_11 
 :dropdown:
-:description:  True/False question (invertibilty implies diagonalisability?)
+:description:  True/False question (invertibilty implies diagonalizability?)
 
 ::::::
 
@@ -1079,7 +1079,7 @@ $$
 :url: https://embed.grasple.com/exercises/4398c155-7971-42f6-b809-31ae507c0326?id=87331
 :label: grasple_exercise_6_3_12 
 :dropdown:
-:description:  Creating examples of all cases (non-)invertible versus (non-)diagonalisable.
+:description:  Creating examples of all cases (non-)invertible versus (non-)diagonalizable.
 
 ::::::
 ::::::{grasple} 
@@ -1087,6 +1087,6 @@ $$
 :url: https://embed.grasple.com/exercises/9aca77fa-a7c8-4998-be00-a55c19e9fd70?id=62419
 :label: grasple_exercise_6_3_13 
 :dropdown:
-:description:  To draw conclusions from a diagonalisation  $A = PDP^{-1}$.
+:description:  To draw conclusions from a diagonalization  $A = PDP^{-1}$.
 
 ::::::

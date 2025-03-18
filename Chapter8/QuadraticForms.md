@@ -49,7 +49,7 @@ for an $n\times n$ matrix $A$, a vector $\vect{b}$ in $\R^n$, and a number $c$ i
 The part $\mathbf{x}^TA\mathbf{x}$ is called a **quadratic form**.
 
 ::::{prf:example}
-:label: Ex:QuadForms:Diagonalise
+:label: Ex:QuadForms:Diagonalize
 
 For the matrix $A = \begin{bmatrix} 1 & 2 \\ 4 & 3 \end{bmatrix}$ the corresponding quadratic form is
 
@@ -237,7 +237,7 @@ In the next subsection we will learn how to find out whether an arbitrary quadra
 
 (Subsec:SignOfQuadForm)=
 
-## Diagonalisation of quadratic forms
+## Diagonalization of quadratic forms
 
 Let us first consider an example, to get some feeling for what is going on.
 
@@ -378,7 +378,7 @@ This agrees with what we derived in {prf:ref}`Ex:QuadForms:CompleteSquares`.
 
 ::::
 
-The technique of completing the squares is one way to 'diagonalise' a quadratic form. It may be turned into an algorithm that also works for quadratic forms in $n$ variables, but
+The technique of completing the squares is one way to 'diagonalize' a quadratic form. It may be turned into an algorithm that also works for quadratic forms in $n$ variables, but
 we will not pursue that track. There is a route that is more in line with the properties of symmetric matrices.
 
 Suppose $A$ is a symmetric matrix. We have seen (cf. {prf:ref}`Thm:SymmetricMat:OrthogDiag`) that it can be written as
@@ -398,7 +398,7 @@ $$
 If we compare this to {prf:ref}`Prop:QuadForms:Substitution` the following proposition results.
 
 ::::{prf:proposition}
-:label: Prop:QuadForms:Diagonalise
+:label: Prop:QuadForms:Diagonalize
 
 Suppose $q(\vect{x})$ is a quadratic form with matrix $A$, i.e.,
 
@@ -406,7 +406,7 @@ $$
     q(\vect{x}) = \vect{x}^TA\vect{x}.
 $$
 
-Let $Q$ be an orthogonal matrix diagonalising $A$. That is,  $A = QDQ^{-1}$. <BR>
+Let $Q$ be an orthogonal matrix diagonalizing $A$. That is,  $A = QDQ^{-1}$. <BR>
 Applying the substitution $\vect{x} = Q\vect{y}$ then yields the quadratic form
 
 $$
@@ -416,7 +416,7 @@ $$
 where $\lambda_1, \ldots, \lambda_n$ are the _eigenvalues_ of the matrix $A$.
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:QuadForms:Diagonalise`
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:QuadForms:Diagonalize`
 :class: tudproof
 
 If we make the substitution $\vect{x} = Q\vect{y}$ we find that
@@ -442,7 +442,7 @@ where $\lambda_1,\lambda_2, \ldots, \lambda_n$ are the eigenvalues of $A$.
 
 ::::
 
-Let us see how the construction of {prf:ref}`Prop:QuadForms:Diagonalise` works out in an earlier example.
+Let us see how the construction of {prf:ref}`Prop:QuadForms:Diagonalize` works out in an earlier example.
 
 ::::{prf:example}
 
@@ -473,7 +473,7 @@ Since $(2 + \sqrt{5})> 0$ and $(2 - \sqrt{5})<2-2=0$ we may again conclude that 
 ::::
 
 ::::{prf:remark}
-In {prf:ref}`Ex:QuadForms:CompleteSquaresCtd` and {prf:ref}`Ex:QuadForms:Diagonalise` we applied two different substitutions to the same quadratic form with the matrix $A = \left[\begin{array}{cc} 1 & 2  \\ 2 & 3 \end{array}\right]$.
+In {prf:ref}`Ex:QuadForms:CompleteSquaresCtd` and {prf:ref}`Ex:QuadForms:Diagonalize` we applied two different substitutions to the same quadratic form with the matrix $A = \left[\begin{array}{cc} 1 & 2  \\ 2 & 3 \end{array}\right]$.
 
 They led to the two different quadratic forms
 
@@ -515,7 +515,7 @@ The property is known as _Sylvester's Law of Inertia_.
 ::::
 
 
-The following proposition is  a direct consequence of the diagonalisation  ({prf:ref}`Prop:QuadForms:Diagonalise`).  
+The following proposition is  a direct consequence of the diagonalization  ({prf:ref}`Prop:QuadForms:Diagonalize`).  
 
 ::::{prf:proposition}
 :label:  Prop:QuadForms:MaximumxTAx
@@ -694,7 +694,7 @@ $q_A$ is **indefinite** if at least one eigenvalue is positive and at least one 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:QuadForms:Classification`
 :class: tudproof
 
-This immediately follows from {prf:ref}`Prop:QuadForms:Diagonalise`. If we make the substitution $\vect{x} = Q\vect{y}$ with the matrix $Q$ of the orthogonal diagonalisation, i.e.,
+This immediately follows from {prf:ref}`Prop:QuadForms:Diagonalize`. If we make the substitution $\vect{x} = Q\vect{y}$ with the matrix $Q$ of the orthogonal diagonalization, i.e.,
 
 $$
   A = QDQ^{-1} = QDQ^T, \quad
@@ -953,7 +953,7 @@ $$
 
 ::::
 
-If in {eq}`Eq:ConicSec:CentralConic` the parameter $b$ is not equal to zero, the principal axes can be found by diagonalisation of the quadratic form
+If in {eq}`Eq:ConicSec:CentralConic` the parameter $b$ is not equal to zero, the principal axes can be found by diagonalization of the quadratic form
 
 $$
   ax_1^2 + bx_1x_2 + cx_2^2 =
@@ -1016,7 +1016,7 @@ $$
 $$
 
 The eigenvectors are orthogonal, as they should, for a symmetric matrix. We see
-that $A$ can be orthogonally diagonalised as
+that $A$ can be orthogonally diagonalized as
 
 $$
   A = QDQ^{-1} = QDQ^T, \quad Q = \frac{1}{\sqrt{2}}\begin{bmatrix} 1 & 1 \\ -1 & 1\end{bmatrix}, \,\,
@@ -1102,7 +1102,7 @@ $$
   \lambda_2 = 7,\,\vect{v}_2 = \begin{bmatrix} 1 \\ 2\end{bmatrix}.
 $$
 
-We orthogonally diagonalise $A$ as
+We orthogonally diagonalize $A$ as
 
 $$
   A = QDQ^{-1} = QDQ^T, \quad Q = \frac{1}{\sqrt{5}}\begin{bmatrix} 2 & 1 \\ -1 & 2\end{bmatrix}, \,\,
@@ -1259,7 +1259,7 @@ The  ellipse with its principal axes.
 :url: https://embed.grasple.com/exercises/51f56e96-3761-44c5-8d20-4cf0047a1ea4?id=93115
 :label: grasple_exercise_8_2_12
 :dropdown:
-:description: Maximising  $\vect{x}^TA\vect{x}$ under the restriction $\norm{\vect{x}}=1$, for a 2x2 matrix $A$. 
+:description: Maximizing  $\vect{x}^TA\vect{x}$ under the restriction $\norm{\vect{x}}=1$, for a 2x2 matrix $A$. 
 
 ::::
 

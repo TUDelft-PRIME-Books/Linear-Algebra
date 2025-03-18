@@ -13,7 +13,7 @@ In this section, we will study solution sets of linear systems in higher dimensi
 
 ## Writing Down Solution Sets
 
-In {numref}`Section %s <Section:LinSystems>`, we saw how to solve a system of linear equations: we reduced the augmented matrix to echelon form and expressed the basic variables in terms of the free variables. This means that any choice of numbers for the free variables determines a solution. We can conveniently write down the set of all such solutions by using a parametrised vector. What we mean by that is best illustrated with a couple of examples.
+In {numref}`Section %s <Section:LinSystems>`, we saw how to solve a system of linear equations: we reduced the augmented matrix to echelon form and expressed the basic variables in terms of the free variables. This means that any choice of numbers for the free variables determines a solution. We can conveniently write down the set of all such solutions by using a parametrized vector. What we mean by that is best illustrated with a couple of examples.
 
 ::::{prf:example}
 :label: Example:SolSet:TwoLinesinR3
@@ -33,9 +33,9 @@ x_{1}&+&x_{2}&+&x_{3}&=&0
 If we apply {prf:ref}`Alg:LinSystems:ElimMethod`, we find that we can take $x_{3}$ as a free variable. So for every $t$ in $\mathbb{R}$ we can put $x_{3}=t$ and find a solution: $x_{1}=-4t$, $x_{2}=3t$, $x_{3}=t$. The solution set $\mathcal{L}_{1}$ of our linear system can therefore be written in the following way:
 
 $$
-     \mathcal{L}_{1}=\left\{\begin{bmatrix}-4t\\3t\\t\end{bmatrix}: t\in\mathbb{R}\right\}=
+     \mathcal{L}_{1}=\left\{\begin{bmatrix}-4t\\3t\\t\end{bmatrix}\mid t\in\mathbb{R}\right\}=
      \left\{t
-\begin{bmatrix}-4\\3\\1\end{bmatrix}: t\in\mathbb{R}\right\}.
+\begin{bmatrix}-4\\3\\1\end{bmatrix}\mid t\in\mathbb{R}\right\}.
 $$
 
 We can see that the solution set consists of all multiples of a fixed vector $\mathbf{v}$, i.e. it is a line through the origin. This line can be seen in blue in {numref}`Figure %s <Fig:SolSet:TwoLinesinR3>`.
@@ -63,12 +63,12 @@ for some $a\in\mathbb{R}$. Compared to {prf:ref}`Example:SolSet:TwoLinesinR3`, t
 instead of $0$. Applying the same algorithm as there, we find again that $x_{3}$ is free. So for every $t$ in $\mathbb{R}$ we can put $x_{3}=t$ and find a solution: $x_{1}=-4t-a$, $x_{2}=3t+a$, $x_{3}=t$. The solution set $\mathcal{L}_{2}$ can therefore be written as follows:
 
 $$
-    \mathcal{L}_{2}=\left\{\begin{bmatrix}-4t-a\\3t+a\\t\end{bmatrix}: t\in\mathbb{R}\right\}=
+    \mathcal{L}_{2}=\left\{\begin{bmatrix}-4t-a\\3t+a\\t\end{bmatrix}\mid t\in\mathbb{R}\right\}=
     \left\{\begin{bmatrix}
         -a\\a\\0
     \end{bmatrix}
     +t
-\begin{bmatrix}-4\\3\\1\end{bmatrix}: t\in\mathbb{R}\right\}.
+\begin{bmatrix}-4\\3\\1\end{bmatrix}\mid t\in\mathbb{R}\right\}.
 $$
 
 We now get a line which is parallel to the one we found in {prf:ref}`Example:SolSet:TwoLinesinR3`, but which has been shifted away from the origin. In fact, any vector in this new solution set is obtained by adding the vector
@@ -99,7 +99,7 @@ In general, the solution set of a linear system in $n$ variables, $k$ of which a
 
 $$
 
-    \left\{\mathbf{w}+t_{1}\mathbf{v}_{1}+\cdots+t_{k}\mathbf{v}_{k}: t_{1},...,t_{k} \text{ are in }\mathbb{R}\right\}
+    \left\{\mathbf{w}+t_{1}\mathbf{v}_{1}+\cdots+t_{k}\mathbf{v}_{k}\mid t_{1},...,t_{k} \text{ are in }\mathbb{R}\right\}
 $$
 
 for some vectors $\mathbf{v}_{1},...\mathbf{v}_{k},\mathbf{w}$ in $\mathbb{R}^{n}$. The expression $\mathbf{w}+t_{1}\mathbf{v}_{1}+\cdots+t_{k}\mathbf{v}_{k}$ is a parametrised vector with parameters $t_{1},...,t_{k}$. In {prf:ref}`Example:SolSet:TwoLinesinR3b`, we have
@@ -136,11 +136,11 @@ Consider the following linear system:
 We find two free variables and the following solution set:
 
 $$
-    \mathcal{P}_{1}=\left\{\begin{bmatrix}-3s+t\\s\\t\end{bmatrix}: s,t\in\mathbb{R}\right\}=
+    \mathcal{P}_{1}=\left\{\begin{bmatrix}-3s+t\\s\\t\end{bmatrix}\mid s,t\in\mathbb{R}\right\}=
     \left\{s
 \begin{bmatrix}-3\\1\\0\end{bmatrix}
     +t
-\begin{bmatrix} 1\\0\\1\end{bmatrix} : s,t\in\mathbb{R}\right\}.
+\begin{bmatrix} 1\\0\\1\end{bmatrix} \mid s,t\in\mathbb{R}\right\}.
 $$
 
 What happens if we make the constant terms non-zero? Let us change the right hand side of the first equation from $0$ to $a$ and that of the second equation from $0$ to $2a$:
@@ -157,12 +157,12 @@ What happens if we make the constant terms non-zero? Let us change the right han
 The solution set now becomes
 
 $$
-\mathcal{P}_{2}=\left\{\begin{bmatrix}-3s+t+a\\s\\t\end{bmatrix}: s,t\in\mathbb{R}\right\}=\left\{
+\mathcal{P}_{2}=\left\{\begin{bmatrix}-3s+t+a\\s\\t\end{bmatrix}\mid s,t\in\mathbb{R}\right\}=\left\{
 \begin{bmatrix}a\\0\\0\end{bmatrix}
 +s
 \begin{bmatrix}-3\\1\\0\end{bmatrix}+
 t
-\begin{bmatrix}1\\0\\1\end{bmatrix}: s,t\in\mathbb{R}\right\}.
+\begin{bmatrix}1\\0\\1\end{bmatrix}\mid s,t\in\mathbb{R}\right\}.
 $$
 
 Note the similarity to {prf:ref}`Example:SolSet:TwoLinesinR3`. Making the right hand side non-zero translates the plane away from the origin by adding the vector
@@ -411,10 +411,10 @@ Now we can conclude that the solution set looks as follows:
 $$
     \left\{\begin{bmatrix}
         \frac{1}{2}t\\t\\\frac{1}{2}t\\t
-    \end{bmatrix}: t\in \mathbb{R}\right\},\quad\text{which is the same as}\quad
+    \end{bmatrix}\mid t\in \mathbb{R}\right\},\quad\text{which is the same as}\quad
     \left\{\begin{bmatrix}
         t\\2t\\t\\2t
-    \end{bmatrix}: t\in \mathbb{R}\right\}.
+    \end{bmatrix}\mid t\in \mathbb{R}\right\}.
 $$
 
 Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we must add two molecules of carbon. As a by-product, this will give two molecules of carbon dioxide. Compare this result to {prf:ref}`App:Vectors:ChemReac`, where we indeed found the reaction to be balanced when two molecules of carbon were added to one molecule of sodium sulfate.
