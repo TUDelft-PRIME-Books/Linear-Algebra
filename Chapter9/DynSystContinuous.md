@@ -347,7 +347,7 @@ $$
 
 $$
 
-are linearly independent solutions to the linear system of differential equations $\vect{y}'=A\vect{y}$. In this case, the origin is called a **spiral point**. An example of a spiral point can be seen in {numref}`Figure %s <Fig:DynSystContinuous:Trajectories>`.
+are linearly independent solutions to the linear system of differential equations $\vect{y}'=A\vect{y}$. In this case, the origin is called a **spiral point**. If $a<0$, it is called **stable**, if $a>0$ **unstable** and if $c=0$ a **center**. An example of a spiral point can be seen in {numref}`Figure %s <Fig:DynSystContinuous:Trajectories>`.
 
 :::
 
@@ -358,5 +358,5 @@ If $a<0$ in this proposition, then $e^{at}$ will become arbitrarily small, so as
 :name: Fig:DynSystContinuous:Trajectories
 :class: dark-light
 
-The possible behaviours of the origin illustrated. On the top left, it's an attractor, on the top right a repeller, on the bottom left a saddle point, and on the bottom right a spiral point. For the spiral point, do you expect the real part of the eigenvalues to be positive or negative, given the figure?
+The possible behaviours of the origin illustrated. On the top left, it's an attractor, on the top right a repeller, on the bottom left a saddle point, and on the bottom right a spiral point. For the spiral point, do you expect the real part of the eigenvalues to be positive or negative, given the figure? That is, do you expect the center to be a stable spiral point, an unstable spiral point, or a center?
 ::::
