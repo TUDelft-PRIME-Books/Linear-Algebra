@@ -398,10 +398,10 @@ so the distribution after $50$ moves is already quite close to the steady state.
 
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/ae1aee60-cada-4419-b0f1-dd1f7d4b4e13?id=110356
+:url: https://embed.grasple.com/exercises/ae1aee60-cada-4419-b0f1-dd1f7d4b4e13?id=  
 :label: grasple_exercise_9_2_1
 :dropdown:
-:description: To find the steady state of 3x3 probability matrix $P$.
+:description: To find the steady state of (the Markov chain with) 3x3 probability matrix $P$.
 
 ::::
 
@@ -432,14 +432,14 @@ so the distribution after $50$ moves is already quite close to the steady state.
 
 ::::
 
-::::{grasple}
-:iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/44508dbb-5a1f-42d6-918b-fc7c464b4e0d?id=110368
-:label: grasple_exercise_9_2_5
-:dropdown:
-:description: To construct a Markov Chain from a cycling story
-
-::::
+%::::{grasple}
+%:iframeclass: dark-light
+%:url: https://embed.grasple.com/exercises/44508dbb-5a1f-42d6-918b-fc7c464b4e0d?id=110368
+%:label: grasple_exercise_9_2_5
+%:dropdown:
+%:description: To construct a Markov Chain from a cycling story
+%
+%::::
 
 
 
@@ -448,6 +448,6 @@ so the distribution after $50$ moves is already quite close to the steady state.
 :url: https://embed.grasple.com/exercises/632c5581-1a58-427a-a620-19da8b094470?id=110775
 :label: grasple_exercise_9_2_6
 :dropdown:
-:description: To construct a Markov Chain for a frog on lillies
+:description: To construct a Markov Chain for a frog on lilies.
 
 ::::
