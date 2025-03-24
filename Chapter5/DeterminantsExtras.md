@@ -617,7 +617,7 @@ The $j$th column $\vect{b}_j$ of $B = A^{-1}$ is the solution of the linear syst
 Cramer's rule then gives that $b_{ij}$, the $i$th entry of this column, is equal to
 
 $$
-b_{ij} = \dfrac{\det{\left(A^{(i)}(\vect{e}_j)\right)}}{\det{A}} = \dfrac{C_{ji}}{\det{A}}.
+   b_{ij} = \dfrac{\det{\left(A^{(i)}(\vect{e}_j)\right)}}{\det{A}} = \dfrac{C_{ji}}{\det{A}}.
 $$
 
 For the last step we used {prf:ref}`Prop:DetExtras:ReplaceColGivesCofactor`.

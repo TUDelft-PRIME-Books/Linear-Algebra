@@ -439,7 +439,7 @@ so the distribution after $50$ moves is already quite close to the steady state.
 %:dropdown:
 %:description: To construct a Markov Chain from a cycling story
 %
-%::::
+% ::::
 
 
 
