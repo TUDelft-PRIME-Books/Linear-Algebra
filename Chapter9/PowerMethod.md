@@ -719,29 +719,29 @@ To see what is going on analytically we have chosen a matrix for which we can ac
 ::::{prf:example}
 :label: Ex:PowerMethod:ComplexEx1
 
-Consider the matrix  $A = \begin{bmatrix}2 & 0 & 0 \\ 1 & 3 & 4 \\ 0 & -4 & 3 \end{bmatrix}$.
+Consider the matrix  $A = \begin{bmatrix}3 & 0 & 0 \\ 1 & 1 & 8 \\ 0 & -2 & 1 \end{bmatrix}$.
 
-The eigenvalues are  $\lambda_{1,2} = 3 \pm 4i$ and $\lambda_3 = 2$, so we have
+The eigenvalues are  $\lambda_{1,2} = 1 \pm 4i$ and $\lambda_3 = 3$, so we have
 
 $$
-  |\lambda_1| = |\lambda_2|  = 5 > |\lambda_3|.
+  |\lambda_1| = |\lambda_2|  = \sqrt{17} > |\lambda_3|.
 $$
 
 If we start the power method from  $\vect{x}_0 = \begin{bmatrix}1\\1\\1 \end{bmatrix}$
 we get 
 
 $$
-  \vect{x}_{48} = \begin{bmatrix}0\\1\\0.3473 \end{bmatrix}, \quad
-  \vect{x}_{49} = \begin{bmatrix}0\\1\\-0.6739 \end{bmatrix}, \quad
-  \vect{x}_{50} = \begin{bmatrix}0\\-0.5050\\1 \end{bmatrix}.
+  \vect{x}_{48} = \begin{bmatrix}0\\-0.2617\\1 \end{bmatrix}, \quad
+  \vect{x}_{49} = \begin{bmatrix}0\\1\\0.19695 \end{bmatrix}, \quad
+  \vect{x}_{50} = \begin{bmatrix}0\\1\\-0.7003 \end{bmatrix}.
 $$
 
 Continuing further does not help:
 
 $$
-  \vect{x}_{98} = \begin{bmatrix}0\\0.5173\\1 \end{bmatrix}, \quad
-  \vect{x}_{99} = \begin{bmatrix}0\\1\\0.1677\end{bmatrix}, \quad
-  \vect{x}_{100} = \begin{bmatrix}0\\1 \\ -0.9527 \end{bmatrix}.
+  \vect{x}_{98} = \begin{bmatrix}0\\0.3791\\1 \end{bmatrix}, \quad
+  \vect{x}_{99} = \begin{bmatrix}0\\1\\0.0289\end{bmatrix}, \quad
+  \vect{x}_{100} = \begin{bmatrix}0\\ -0.6244 \\1\end{bmatrix}.
 $$
 
 The process will never come to a standstill.
@@ -749,7 +749,7 @@ The process will never come to a standstill.
 What we can say is that eventually all vectors $\vect{x}_k$  will be in the span of the two complex eigenvectors
 
 $$
-  \vect{v}_1 = \begin{bmatrix}0\\1\\i \end{bmatrix}, \quad \vect{v}_1 = \begin{bmatrix}0\\1\\-i \end{bmatrix}.
+  \vect{v}_1 = \begin{bmatrix}0\\2\\i \end{bmatrix}, \quad \vect{v}_1 = \begin{bmatrix}0\\2\\-i \end{bmatrix}.
 $$
 
 These vectors, being linearly independent, span the set
@@ -778,23 +778,23 @@ We can use the earlier idea of a shift!
 
 If a (real) matrix $A$ has eigenvalues $\lambda_{1,2} = a \pm bi$  as eigenvalues of highest modulus, then there is a good chance that one of the numbers $\lambda_{1,2} + ci$, for some real number $c$, is the *single* dominant eigenvalue of the matrix  $B = A + (ci){I}$.  
 
-Let us illustrate the procedure for the matrix $A = \begin{bmatrix}2 & 0 & 0 \\ 1 & 3 & 4 \\ 0 & -4 & 3 \end{bmatrix}$ at hand.  <BR>
+Let us illustrate the procedure for the matrix $A = \begin{bmatrix}3 & 0 & 0 \\ 1 & 1 & 8 \\ 0 & -2 & 1 \end{bmatrix}$ at hand.  <BR>
 Let $B$ be the matrix
 
 $$
-  B = A + (2i)\mathrm{I} = \begin{bmatrix}2+2i & 0 & 0 \\ 1 & 3+2i & 4 \\ 0 & -4 & 3+2i \end{bmatrix}.
+  B = A + (2i)\mathrm{I} = \begin{bmatrix}3+2i & 0 & 0 \\ 1 & 1+2i & 8 \\ 0 & -2 & 1+2i \end{bmatrix}.
 $$
 
 The actual value of $B$ is not so important, but what is important is that $B$ has the eigenvalues
 
 $$
-  \mu_1 = (3+4i)+2i = 3+6i, \quad \mu_2 = (3-4i)+2i = 3-2i, \quad \mu_3 = 2+2i,
+  \mu_1 = (1+4i)+2i = 1+6i, \quad \mu_2 = (1-4i)+2i = 1-2i, \quad \mu_3 = 3+2i,
 $$
 
 where now  
 
 $$
- |\mu_1| = \sqrt{45} > |\mu_2| = \sqrt{13} > |\mu_3| = \sqrt{8}.
+ |\mu_1| = \sqrt{37} > |\mu_3| = \sqrt{13} > |\mu_2| = \sqrt{5}.
 $$
 
 Thus $B$ has a (single) dominant eigenvalue.
@@ -802,20 +802,20 @@ Thus $B$ has a (single) dominant eigenvalue.
 Applying the power method to $B$, again starting from $\begin{bmatrix}1\\1\\1 \end{bmatrix}$, we find (up to four decimals)
 
 $$
-  \vect{x}_{48} = \begin{bmatrix}0.0000\\-1.0000i\\1.0000 \end{bmatrix}, \quad
-  \vect{x}_{49} = \begin{bmatrix}0.0000\\1.0000\\1.0000i \end{bmatrix}, \quad
-  \vect{x}_{50} = \begin{bmatrix}0.0000\\1.0000\\1.000i \end{bmatrix},
+  %\vect{x}_{48} = \begin{bmatrix}0.0000\\-1.0000i\\1.0000 \end{bmatrix}, \quad
+  \vect{x}_{19} =   \vect{x}_{20} = \begin{bmatrix}0\\1\\0.000+0.500i \end{bmatrix},
 $$
 
-from which we may conclude that $\vect{x}_{50}$ is an eigenvector of  $B$. <BR>
+from which we may conclude that $\vect{x}_{20}$ is an eigenvector of  $B$. <BR>
 From 
 
 $$
-   B\vect{x}_{50} = B \begin{bmatrix}0\\1\\i \end{bmatrix} = \begin{bmatrix}0 \\3+6i\\-6+3i \end{bmatrix} = (3+6i)\begin{bmatrix}0\\1\\i \end{bmatrix},
+    B \begin{bmatrix}0\\1\\0.5i \end{bmatrix} = \begin{bmatrix}0 \\1+6i\\-3+0.5i \end{bmatrix} = (1+6i)\begin{bmatrix}0\\1\\0.5i \end{bmatrix},
 $$
-it follows that  $\mu = 3+6i$ is the corresponding eigenvalue.
 
-'Shifting back' we see that  $\begin{bmatrix}0\\1\\i \end{bmatrix}$ is an eigenvector of the original matrix $A$ for the eigenvalue $\lambda = (3+6i)-2i = 3+4i$.
+it follows that  $\mu = 1+6i$ is the corresponding eigenvalue.
+
+'Shifting back' we see that  $\begin{bmatrix}0\\1\\0.5i \end{bmatrix}$, or $\begin{bmatrix}0\\2\\i \end{bmatrix}$,  is an eigenvector of the original matrix $A$ for the eigenvalue $\lambda = (1+6i)-2i = 1+4i$.
 
 Problem solved!
 ::::
