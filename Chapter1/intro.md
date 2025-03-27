@@ -5,5 +5,3 @@ In this chapter, we introduce the most basic ingredient of linear algebra: vecto
 ```{tableofcontents}
 
 ```
-
-Test met Nikolaas
