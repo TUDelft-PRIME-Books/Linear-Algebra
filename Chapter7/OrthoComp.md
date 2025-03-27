@@ -54,15 +54,15 @@ Let $V$ be the subspace spanned by a single vector $\vect{v}$ in $\R^{2}$ and le
 
 $$
 \vect{v}=
-\begin{bmatrix}
+\begin{pmatrix}
 1\\
 2
-\end{bmatrix}
+\end{pmatrix}
 \text{ and }\vect{u}=
-\begin{bmatrix}
+\begin{pmatrix}
 a_{1}\\
 a_{2}
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 Then $\vect{u}$ is in $V^{\bot}$ if and only if $\vect{u}\ip\vect{v}=a_{1}+2a_{2}=0$. So we find that $V^{\bot}$ is the line described by the equation $a_{1}+2a_{2}=0$. The vector $\vect{v}$ is a normal vector to this line.
@@ -75,28 +75,28 @@ Let us now consider two vectors in $\R^{3}$, for example
 
 $$
 \vect{v}_{1}=
-\begin{bmatrix}
+\begin{pmatrix}
 2\\
 1\\
 -2
-\end{bmatrix}
+\end{pmatrix}
 \quad\text{and}\quad\vect{v}_{2}=
-\begin{bmatrix}
+\begin{pmatrix}
 4\\
 2\\
 0
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 $V^{\bot}$ now consists of those vectors $\vect{u}$ that satisfy both $\vect{u}\ip\vect{v}_{1}=0$ and $\vect{u}\ip\vect{v}_{2}=0$. Solving this system of two equations in three variables, we find
 
 $$
 V^{\bot}=\left\{
-    \begin{bmatrix}
+    \begin{pmatrix}
     -t\\
     2t\\
     0
-    \end{bmatrix}
+    \end{pmatrix}
     \mid t\in\R
 \right\},
 $$
@@ -154,7 +154,7 @@ For any matrix $A$ we have $\mathrm{Col}(A^{T})^{\bot}=\mathrm{Nul}(A)$ and $\ma
 
 Note that the second claim is easily derived from the first by substituting $A^{T}$ for $A$. Let $\vect{r}_{1},...,\vect{r}_{n}$ be the rows of $A$. Then $\vect{r}_{1}^{T},...,\vect{r}_{n}^{T}$ are the columns of $A^{T}$. For any vector $\vect{x}$ in $\R^{m}$, we have
 
-$$A\vect{x}=\begin{bmatrix}\vect{r}_{1}\vect{x}\\\vdots\\\vect{r}_{n}\vect{x}\end{bmatrix}=\begin{bmatrix}\vect{r}_{1}^{T}\ip\vect{x}\\\vdots\\\vect{r}_{n}^{T}\ip\vect{x}\end{bmatrix}.$$
+$$A\vect{x}=\begin{pmatrix}\vect{r}_{1}\vect{x}\\\vdots\\\vect{r}_{n}\vect{x}\end{pmatrix}=\begin{pmatrix}\vect{r}_{1}^{T}\ip\vect{x}\\\vdots\\\vect{r}_{n}^{T}\ip\vect{x}\end{pmatrix}.$$
 
 Now, $\vect{x}$ is in $\mathrm{Nul}(A)$ precisely when $A\vect{x}=\vect{0}$ or, in other words, when $\vect{r}_{i}^{T}\ip\vect{x}=0$ for any $i$. Since the set $\left\{\vect{r}_{1}^{T},..,\vect{r}_{n}^{T}\right\}$ spans $\mathrm{Col}(A^{T})$, this is equivalent to $\vect{x}$ being in $\mathrm{Col}(A^{T})^{\bot}$.
 
@@ -174,55 +174,55 @@ Let $V$ be the subspace of $\R^{5}$ spanned by the vectors
 
 $$
 \vect{v}_{1}=
-\begin{bmatrix}
+\begin{pmatrix}
 1\\
 3\\
 -1\\
 5\\
 2
-\end{bmatrix},\vect{v}_{2}=
-\begin{bmatrix}
+\end{pmatrix},\vect{v}_{2}=
+\begin{pmatrix}
 2\\
 5\\
 4\\
 -1\\
 -3
-\end{bmatrix}, \quad\text{and}\quad\vect{v}_{3}=
-\begin{bmatrix}
+\end{pmatrix}, \quad\text{and}\quad\vect{v}_{3}=
+\begin{pmatrix}
 4\\
 11\\
 2\\
 9\\
 1
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
-$V$ is, by definition, the column space of the matrix $A=[\vect{v}_{1}\,\vect{v}_{2}\,\vect{v}_{3}]$. By {prf:ref}`Prop:OrthoComp:OrthoComplementNulA`, we can find the orthogonal complement of $V$ by finding the null space of $A^{T}$. By standard computations we find:
+$V$ is, by definition, the column space of the matrix $A=(\vect{v}_{1}\,\vect{v}_{2}\,\vect{v}_{3})$. By {prf:ref}`Prop:OrthoComp:OrthoComplementNulA`, we can find the orthogonal complement of $V$ by finding the null space of $A^{T}$. By standard computations we find:
 
 $$
-A^{T}=\begin{bmatrix}
+A^{T}=\begin{pmatrix}
 1&3&-1&5&2\\
 2&5&4&-1&-3\\
 4&11&2&9&1
-\end{bmatrix}\sim
-\begin{bmatrix}
+\end{pmatrix}\sim
+\begin{pmatrix}
 1&0&17&-28&-19\\
 0&1&-6&11&7\\
 0&0&0&0&0
-\end{bmatrix},
+\end{pmatrix},
 $$
 
 so
 
 $$
 V^{\bot}=\mathrm{Nul}(A^{T})=\left\{
-    \begin{bmatrix}
+    \begin{pmatrix}
     -17x_{3}+28x_{4}+19x_{5}\\
     6x_{3}-11x_{4}-7x_{5}\\
     x_{3}\\
     x_{4}\\
     x_{5}
-    \end{bmatrix}\mid x_{3},x_{4},x_{5}\in\R
+    \end{pmatrix}\mid x_{3},x_{4},x_{5}\in\R
 \right\}.
 $$
 
@@ -304,36 +304,36 @@ A subspace $V$, a vector $\vect{u}$ and the orthogonal decomposition of $\vect{u
 Consider the vectors
 
 $$
-\vect{v}_{1}=\begin{bmatrix}
+\vect{v}_{1}=\begin{pmatrix}
 1\\
 1\\
 1
-\end{bmatrix}
-,\quad \vect{v}_{2}=\begin{bmatrix}
+\end{pmatrix}
+,\quad \vect{v}_{2}=\begin{pmatrix}
 2\\
 -1\\
 2
-\end{bmatrix}
-,\quad\text{and}\quad\vect{u}=\begin{bmatrix}
+\end{pmatrix}
+,\quad\text{and}\quad\vect{u}=\begin{pmatrix}
 2\\
 -3\\
 4
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 and let $V$ be the subspace of $\R^{3}$ spanned by $\vect{v}_{1}$ and $\vect{v}_{2}$. Put
 
 $$
-\vect{u}_{V}=\begin{bmatrix}
+\vect{u}_{V}=\begin{pmatrix}
 3\\
 -3\\
 3
-\end{bmatrix}\quad\text{and}\quad
-\vect{u}_{V^{\bot}}=\begin{bmatrix}
+\end{pmatrix}\quad\text{and}\quad
+\vect{u}_{V^{\bot}}=\begin{pmatrix}
 -1\\
 0\\
 1
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 It is easy to check that, as the notation suggests, $\vect{u}_{V}$ is in $V$ (since $\vect{u}_{V}=-\vect{v}_{1}+2\vect{v}_{2}$) and $\vect{u}_{V^{\bot}}$ is in $V^{\bot}$ (since $\vect{u}_{V^{\bot}}\ip\vect{v}_{1}=0=\vect{u}_{V^{\bot}}\ip\vect{v}_{2}$). So $\vect{u}=\vect{u}_{V}+\vect{u}_{V^{\bot}}$ is the orthogonal decomposition of $\vect{u}$ with respect to $V$. How we can compute such a decomposition will be shown in {numref}`Sec:OrthoBase`.

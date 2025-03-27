@@ -11,7 +11,7 @@ We have seen in {numref}`Subsec:LinTrafo:LinTrafo` that any matrix corresponds t
 One of the simplest types of linear transformation takes a vector and sets one of its entries equal to $0$. For example, we can look at the linear transformation
 
 $$
-T:\mathbb{R}^{2}\to\mathbb{R}^{2},\quad\begin{bmatrix}a_{1}\\a_{2}\end{bmatrix}\mapsto \begin{bmatrix}a_{1}\\0\end{bmatrix}.
+T:\mathbb{R}^{2}\to\mathbb{R}^{2},\quad\begin{pmatrix}a_{1}\\a_{2}\end{pmatrix}\mapsto \begin{pmatrix}a_{1}\\0\end{pmatrix}.
 $$
 
 Geometrically, this is the linear transformation which squashes the plane flat onto the $x$-axis. In slightly less informal terms, it is the transformation which projects the plane onto the $x$-axis.
@@ -26,7 +26,7 @@ $$
 is the linear transformation which projects the vector $\mathbf{w}$ onto the line through $\mathbf{v}$. In other words, it maps a vector $\mathbf{w}$ to the closest multiple of $\mathbf{v}$. This transformation with
 
 $$
-\mathbf{v}=\begin{bmatrix}2\\1\end{bmatrix}
+\mathbf{v}=\begin{pmatrix}2\\1\end{pmatrix}
 $$
 
 can be seen on the left in {numref}`Figure %s <Fig:GeomLinTrans:ProjinR2>`. Let us briefly verify that it really is a linear transformation.
@@ -77,7 +77,7 @@ The following proposition allows us to quickly find the standard matrix of the p
 Let $\mathcal{L}$ be the line in the plane that passes through the origin and that makes an angle of $\theta$ with the positive $x$-axis. The projection $T_{\mathcal{L}}$ on $\mathcal{L}$ has standard matrix
 
 $$
-P=\begin{bmatrix}\cos^{2}(\theta)&\sin(\theta)\cos(\theta)\\\sin(\theta)\cos(\theta)&\sin^{2}(\theta)\end{bmatrix}.
+P=\begin{pmatrix}\cos^{2}(\theta)&\sin(\theta)\cos(\theta)\\\sin(\theta)\cos(\theta)&\sin^{2}(\theta)\end{pmatrix}.
 $$
 
 ::::::
@@ -88,7 +88,7 @@ $$
 The vector
 
 $$
-\mathbf{v}=\begin{bmatrix}\cos(\theta)\\\sin(\theta)\end{bmatrix}
+\mathbf{v}=\begin{pmatrix}\cos(\theta)\\\sin(\theta)\end{pmatrix}
 $$
 
 is a unit vector on $\mathcal{L}$. Using the fact that $\mathbf{u}-\proj_{\mathcal{L}}(\mathbf{u})$ makes a right angle with $\mathcal{L}$ for any vector $\mathbf{u}$, we find that $\proj_{\mathcal{L}}(\mathbf{e}_{1})$ has length $\cos(\theta)$ (cf. {numref}`Figure %s <Fig:GeomLinTrans:MatofProjonLine>`). Since $\proj_{\mathcal{L}}(\mathbf{e}_{1})$ is a vector in the direction of $\mathbf{v}$ and since $\mathbf{v}$ has length $1$, the first column of $P$ is as claimed.
@@ -108,13 +108,13 @@ Often, you might have not the angle $\mathcal{L}$ makes with the positive $x$ ax
 
 ::::::{prf:proposition}
 :label: Prop:GeomLinTrans:ProjMat2
-Let $\mathcal{L}$ be a line that passes through the origin in the direction of $\mathbf{v}=\begin{bmatrix} v_{1}\\v_{2}\end{bmatrix}$. The projection $T_{\mathcal{L}}$ has standard matrix
+Let $\mathcal{L}$ be a line that passes through the origin in the direction of $\mathbf{v}=\begin{pmatrix} v_{1}\\v_{2}\end{pmatrix}$. The projection $T_{\mathcal{L}}$ has standard matrix
 
 $$
-P=\frac{1}{v_{1}^{2}+v_{2}^{2}}\begin{bmatrix}
+P=\frac{1}{v_{1}^{2}+v_{2}^{2}}\begin{pmatrix}
 v_{1}^{2}&v_{1}v_{2}\\
 v_{1}v_{2}&v_{2}^{2}
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 ::::::
@@ -150,7 +150,7 @@ We leave this as an exercise.
 It turns out that not all projections look like the ones discussed in Section {numref}`Sec:DotProduct`, not even if we restrict ourselves to a plane. Consider for example the following construction. Let $\mathbf{v}$ be any non-zero vector in $\mathbb{R}^{2}$ and let $\mathcal{L}$ be the line through $\mathbf{v}$ and the origin. Let $\mathbf{w}$ be a vector in $\mathbb{R}^{2}$ which does not lie on $\mathcal{L}$. For any vector $\mathbf{u}$, we define $\mathcal{L}_{\mathbf{u}}$ as the line through $\mathbf{u}$ in the direction $\mathbf{w}$. We now define the transformation $T$ which maps a vector $\mathbf{u}$ to the intersection of $\mathcal{L}_{\mathbf{u}}$ and $\mathcal{L}$. For
 
 $$
-\mathbf{v}=\begin{bmatrix}2\\1\end{bmatrix}\quad\text{and}\quad\mathbf{w}=\begin{bmatrix}-2\\1\end{bmatrix}
+\mathbf{v}=\begin{pmatrix}2\\1\end{pmatrix}\quad\text{and}\quad\mathbf{w}=\begin{pmatrix}-2\\1\end{pmatrix}
 $$
 
 this projection is depicted on the right in {numref}`Figure %s <Fig:GeomLinTrans:ProjinR2>`. It is an example of a non-orthogonal (or **oblique**) projection. Of course, we again have to check that this is really a linear transformation.
@@ -161,7 +161,7 @@ this projection is depicted on the right in {numref}`Figure %s <Fig:GeomLinTrans
 :name: Fig:GeomLinTrans:ProjinR2
 :class: dark-light
 
-On the left an orthogonal projection $T_{1}$ acting on a few selected vectors $\mathbf{u}_{1}$, $\mathbf{u}_{2}$, and $\mathbf{u}_{3}$. On the right a non-orthogonal projection $T_{2}$ acting on some selected vectors $\mathbf{v}_{1}$, $\mathbf{v}_{2}$, and $\mathbf{v}_{3}$. In both cases, the blue line represents the line $\mathcal{L}$ in the direction of $\begin{bmatrix}2\\1\end{bmatrix}$. On the left, every vector $\mathbf{u}_{i}$ is mapped to the closest vector that lies on $\mathcal{L}$. On the right, every vector $\mathbf{v}_{i}$ is mapped to the intersection of $\mathcal{L}$ wih the line through $\mathbf{v}_{i}$ in the direction given by $\begin{bmatrix}-2\\1\end{bmatrix}$.
+On the left an orthogonal projection $T_{1}$ acting on a few selected vectors $\mathbf{u}_{1}$, $\mathbf{u}_{2}$, and $\mathbf{u}_{3}$. On the right a non-orthogonal projection $T_{2}$ acting on some selected vectors $\mathbf{v}_{1}$, $\mathbf{v}_{2}$, and $\mathbf{v}_{3}$. In both cases, the blue line represents the line $\mathcal{L}$ in the direction of $\begin{pmatrix}2\\1\end{pmatrix}$. On the left, every vector $\mathbf{u}_{i}$ is mapped to the closest vector that lies on $\mathcal{L}$. On the right, every vector $\mathbf{v}_{i}$ is mapped to the intersection of $\mathcal{L}$ wih the line through $\mathbf{v}_{i}$ in the direction given by $\begin{pmatrix}-2\\1\end{pmatrix}$.
 ```
 
 ::::::{prf:proposition}
@@ -194,22 +194,22 @@ so $T(\mathbf{u}_{1}+\mathbf{u}_{2})=(d_{\mathbf{u}_{1}}+d_{\mathbf{u}_{2}})
 Let us try to find the standard matrix of the transformation $T$ we just defined. Its first column is the intersection of $\mathcal{L}$ with $\mathcal{L}_{e_{1}}$. This intersection is given by:
 
 $$
-\begin{bmatrix}1\\0\end{bmatrix}+t\begin{bmatrix}-2\\1\end{bmatrix}=s\begin{bmatrix}2\\1\end{bmatrix} \Longleftrightarrow \begin{cases} 1=2s+2t\\0=s-t\end{cases}\Longleftrightarrow s=t=\frac{1}{4}
+\begin{pmatrix}1\\0\end{pmatrix}+t\begin{pmatrix}-2\\1\end{pmatrix}=s\begin{pmatrix}2\\1\end{pmatrix} \Longleftrightarrow \begin{cases} 1=2s+2t\\0=s-t\end{cases}\Longleftrightarrow s=t=\frac{1}{4}
 $$
 
-so $T(e_{1})=\begin{bmatrix}\frac{1}{2}\\\frac{1}{4}\end{bmatrix}$. The second column of the standard matrix of $T$ is the intersection of $\mathcal{L}$ with $\mathcal{L}_{e_{2}}$. We find this intersection in a similar fashion:
+so $T(e_{1})=\begin{pmatrix}\frac{1}{2}\\\frac{1}{4}\end{pmatrix}$. The second column of the standard matrix of $T$ is the intersection of $\mathcal{L}$ with $\mathcal{L}_{e_{2}}$. We find this intersection in a similar fashion:
 
 $$
-\begin{bmatrix}0\\1\end{bmatrix}+t\begin{bmatrix}-2\\1\end{bmatrix}=s\begin{bmatrix}2\\1\end{bmatrix}
+\begin{pmatrix}0\\1\end{pmatrix}+t\begin{pmatrix}-2\\1\end{pmatrix}=s\begin{pmatrix}2\\1\end{pmatrix}
 \Longleftrightarrow \begin{cases}0=2s+2t\\1=s-t\end{cases}\Longleftrightarrow \frac{1}{2}=s=-t
 $$
 
-so $T(e_{2})=\begin{bmatrix}1\\\frac{1}{2}\end{bmatrix}$ and we conclude that the standard matrix of $T$ is
+so $T(e_{2})=\begin{pmatrix}1\\\frac{1}{2}\end{pmatrix}$ and we conclude that the standard matrix of $T$ is
 
 $$
-P=\begin{bmatrix}
+P=\begin{pmatrix}
 \frac{1}{2}&1\\\frac{1}{4}&\frac{1}{2}\label{Eq:GeomLinTrans:StandMatofProj}
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 We can also consider projections in three dimensional space (cf. {numref}`Figure  %s <Fig:GeomLinTrans:3DProj>`). If $\mathbf{v}$ is a vector in $\mathbb{R}^{3}$ and $\mathcal{L}$ is the line in the direction of $\mathbf{v}$, then
@@ -256,13 +256,13 @@ Projections, especially orthogonal projections, play a very important role in li
 A second important class of linear transformations with a very natural geometric interpretation is that of reflections. Let us consider a simple example. Suppose we let $\mathcal{L}$ be the line in the plane through
 
 $$
-\mathbf{0}\quad\text{and in the direction of}\quad \mathbf{v}=\begin{bmatrix}1\\1\end{bmatrix}.
+\mathbf{0}\quad\text{and in the direction of}\quad \mathbf{v}=\begin{pmatrix}1\\1\end{pmatrix}.
 $$
 
 We can define a transformation $T$ which reflects points in the plane along $\mathcal{L}$. That is, we can imagine $\mathcal{L}$ to act as a kind of mirror, sending points on one side of $\mathcal{L}$ to their reflection on the other side. (See {numref}`Figure %s <Fig:GeomLinTrans:ReflinR2>`.) It is easy to find the standard matrix $M$ of this transformation: the first standard basis vector $\mathbf{e}_{1}$ is mapped to $\mathbf{e}_{2}$ and, similarly, $\mathbf{e}_{2}$ is mapped to $\mathbf{e}_{1}$, so
 
 $$
-M=\begin{bmatrix}0&1\\1&0\end{bmatrix}.
+M=\begin{pmatrix}0&1\\1&0\end{pmatrix}.
 $$
 
 ```{applet}
@@ -272,7 +272,7 @@ $$
 :status: reviewed
 :class: dark-light
 
-The reflection along the line $\mathcal{L}$ in the direction of $\mathbf{v}=\begin{bmatrix}1\\1\end{bmatrix}$. The vectors in red are mapped to the vector in blue by this reflection.
+The reflection along the line $\mathcal{L}$ in the direction of $\mathbf{v}=\begin{pmatrix}1\\1\end{pmatrix}$. The vectors in red are mapped to the vector in blue by this reflection.
 ```
 
 So far so good. But how do we find the reflection over an arbitrary line $\mathcal{L}$? It turns out that the projections we have seen in Section {ref}`Subsec:GeomLinTrans:Proj` will help us out. Consider a line $\mathcal{L}$ and a vector $\mathbf{v}$ not in $\mathcal{L}$, as in {numref}`Figure %s <Fig:GeomLinTrans:ReflFromDoubleProj>`. In order to reflect $\mathbf{v}$ over $\mathcal{L}$, we first move it to the closest point on $\mathcal{L}$ and then move it the same distance again in the same direction.
@@ -347,7 +347,7 @@ The definition of a reflection in combination with {prf:ref}`Prop:GeomLinTrans:M
 Let $\mathcal{L}$ be the line in the plane that passes through the origin and that makes an angle $\theta$ with the positive $x$-axis. The standard matrix of the reflection along $\mathcal{L}$ is
 
 $$
-M_{\mathcal{L}}=2\begin{bmatrix}\cos^{2}(\theta)&\sin(\theta)\cos(\theta)\\\sin(\theta)\cos(\theta)&\sin^{2}(\theta)\end{bmatrix}-I_{2}=\begin{bmatrix}\cos(2\theta)&\sin(2\theta)\\\sin(2\theta)&-\cos(2\theta)\end{bmatrix}.
+M_{\mathcal{L}}=2\begin{pmatrix}\cos^{2}(\theta)&\sin(\theta)\cos(\theta)\\\sin(\theta)\cos(\theta)&\sin^{2}(\theta)\end{pmatrix}-I_{2}=\begin{pmatrix}\cos(2\theta)&\sin(2\theta)\\\sin(2\theta)&-\cos(2\theta)\end{pmatrix}.
 $$
 
 ::::::
@@ -454,10 +454,10 @@ The name _rotation_ is inspired by the following observation about rotations in 
 For any real number $\theta$, the rotation over the angle $\theta$ in the plane has standard matrix
 
 $$
-R_{\theta}=\begin{bmatrix}
+R_{\theta}=\begin{pmatrix}
 	\cos(\theta)&-\sin(\theta)\\
 	\sin(\theta)&\cos(\theta)
-\end{bmatrix}.
+\end{pmatrix}.
 
 
 $$
@@ -498,9 +498,9 @@ We will show that the standard matrix $R_{\theta}$ of the rotation $T_{\theta}$ 
 Let $\mathcal{L}_{1}$ and $\mathcal{L}_{2}$ be two lines in the plane through the origin that make an angle of $\theta/2$ with each other. If we call $\phi/2$ the angle $\mathcal{L}_{1}$ makes with the positive $x$-axis, we can conclude that $\mathcal{L}_{2}$ makes an angle of $\phi/2+\theta/2$ with the positive $x$-axis. From {prf:ref}`Prop:GeomLinTrans:MatofReflinPlane`, we know that the standard matrices of the reflections $T_{\mathcal{L}_{1}}$ and $T_{\mathcal{L}_{2}}$ along $\mathcal{L}_{1}$ and $\mathcal{L}_{2}$, respectively, are
 
 $$
-M_{\mathcal{L}_{1}}=\begin{bmatrix}\cos(\phi)&\sin(\phi)\\\sin(\phi)&-\cos(\phi)\end{bmatrix}\quad
-\text{and}\quad M_{\mathcal{L}_{2}}=\begin{bmatrix}\cos(\theta+\phi)&\sin(\theta+\phi)\\
-\sin(\theta+\phi)&-\cos(\theta+\phi)\end{bmatrix},
+M_{\mathcal{L}_{1}}=\begin{pmatrix}\cos(\phi)&\sin(\phi)\\\sin(\phi)&-\cos(\phi)\end{pmatrix}\quad
+\text{and}\quad M_{\mathcal{L}_{2}}=\begin{pmatrix}\cos(\theta+\phi)&\sin(\theta+\phi)\\
+\sin(\theta+\phi)&-\cos(\theta+\phi)\end{pmatrix},
 
 
 $$
@@ -513,9 +513,9 @@ respectively. Using the fact that, for any angles $\alpha$ and $\beta$, we have 
 we find
 
 $$
-M_{\mathcal{L}_{2}}M_{\mathcal{L}_{1}}=\begin{bmatrix}
+M_{\mathcal{L}_{2}}M_{\mathcal{L}_{1}}=\begin{pmatrix}
 \cos(\theta)&\sin(-\theta)\\\sin(\theta)&\cos(\theta)
-\end{bmatrix}=R_{\theta}.
+\end{pmatrix}=R_{\theta}.
 
 
 $$
@@ -543,7 +543,7 @@ The last class of linear transformation we will deal with in this section are th
 Consider the linear transformation
 
 $$
-T:\mathbb{R}^{2}\to\mathbb{R}^{2},\quad \mathbf{v}\mapsto \begin{bmatrix}2&-1\\1&0\end{bmatrix}\mathbf{v}.
+T:\mathbb{R}^{2}\to\mathbb{R}^{2},\quad \mathbf{v}\mapsto \begin{pmatrix}2&-1\\1&0\end{pmatrix}\mathbf{v}.
 
 
 $$
@@ -551,7 +551,7 @@ $$
 The action of $T$ is illustrated in {numref}`Figure %s <Fig:GeomLinTrans:ShearTrans>`. Consider furthermore the line
 
 $$
-\mathcal{L}=\left\{\begin{bmatrix}c\\c\end{bmatrix}\mid c\text{ in }\mathbb{R}\right\}=\left\{c\mathbf{w}\mid c\text{ in }\mathbb{R}\right\}\quad \text{where}\quad\mathbf{w}=\begin{bmatrix}1\\1\end{bmatrix},
+\mathcal{L}=\left\{\begin{pmatrix}c\\c\end{pmatrix}\mid c\text{ in }\mathbb{R}\right\}=\left\{c\mathbf{w}\mid c\text{ in }\mathbb{R}\right\}\quad \text{where}\quad\mathbf{w}=\begin{pmatrix}1\\1\end{pmatrix},
 
 
 $$
@@ -559,8 +559,8 @@ $$
 i.e. the line through the origin in the direction of $\mathbf{w}$. Any vector $c\mathbf{w}$ in $\mathcal{L}$ is fixed:
 
 $$
-T(c\mathbf{w})=\begin{bmatrix}2&-1\\1&0\end{bmatrix}\begin{bmatrix}c\\c\end{bmatrix}=\begin{bmatrix}c\\c
-\end{bmatrix}.
+T(c\mathbf{w})=\begin{pmatrix}2&-1\\1&0\end{pmatrix}\begin{pmatrix}c\\c\end{pmatrix}=\begin{pmatrix}c\\c
+\end{pmatrix}.
 
 
 $$
@@ -568,8 +568,8 @@ $$
 What happens with vectors not in $\mathcal{L}$? Take two scalars $c$ and $d$ which are not equal. Then
 
 $$
-T\left(\begin{bmatrix}c\\d\end{bmatrix}\right)=\begin{bmatrix}2&-1\\1&0\end{bmatrix}\begin{bmatrix}c\\d
-\end{bmatrix}=\begin{bmatrix}2c-d\\c\end{bmatrix}=\begin{bmatrix}c\\d\end{bmatrix}+\begin{bmatrix}c-d\\c-d\end{bmatrix},
+T\left(\begin{pmatrix}c\\d\end{pmatrix}\right)=\begin{pmatrix}2&-1\\1&0\end{pmatrix}\begin{pmatrix}c\\d
+\end{pmatrix}=\begin{pmatrix}2c-d\\c\end{pmatrix}=\begin{pmatrix}c\\d\end{pmatrix}+\begin{pmatrix}c-d\\c-d\end{pmatrix},
 
 
 $$
@@ -585,7 +585,7 @@ so $T$ moves points not on $\mathcal{L}$ parallel to $\mathcal{L}$. Points close
 :class: dark-light
 
 The shear transformation $T$ from Example {numref}`Figure %s <Fig:GeomLinTrans:ShearTrans>` working on the vectors
-$\mathbf{e}_{1}=\begin{bmatrix}1\\0\end{bmatrix}$ and $\mathbf{v}=\begin{bmatrix}-1\\1\end{bmatrix}$. Note how the distance between a vector and the line $\mathcal{L}$ is preserved by $T$. As a consequence, the area of the green and blue parallelogams on the left is the same as that of their respective images on the right.
+$\mathbf{e}_{1}=\begin{pmatrix}1\\0\end{pmatrix}$ and $\mathbf{v}=\begin{pmatrix}-1\\1\end{pmatrix}$. Note how the distance between a vector and the line $\mathcal{L}$ is preserved by $T$. As a consequence, the area of the green and blue parallelogams on the left is the same as that of their respective images on the right.
 ```
 
 ::::::{prf:definition}
@@ -664,7 +664,7 @@ $$
 Suppose we have a standard deck of $52$ perfectly rectangular playing cards placed in a stack on a table. A standard playing card is about $87$ by $56$ millimeters, so we can assume that the corners of the lowest card are on
 
 $$
-\begin{bmatrix}0\\0\\0\end{bmatrix},\quad\begin{bmatrix}87\\0\\0\end{bmatrix},\quad\begin{bmatrix}0\\56\\0\end{bmatrix},\quad\text{and}\quad\begin{bmatrix}87\\56\\0\end{bmatrix},
+\begin{pmatrix}0\\0\\0\end{pmatrix},\quad\begin{pmatrix}87\\0\\0\end{pmatrix},\quad\begin{pmatrix}0\\56\\0\end{pmatrix},\quad\text{and}\quad\begin{pmatrix}87\\56\\0\end{pmatrix},
 
 
 $$
@@ -672,7 +672,7 @@ $$
 respectively. A playing card typically has a thickness of about $0.2$ millimeter, so the coordinates of the top card of the stack will be
 
 $$
-\begin{bmatrix}0\\0\\10.4\end{bmatrix},\quad\begin{bmatrix}87\\0\\10.4\end{bmatrix},\quad\begin{bmatrix}0\\56\\10.4\end{bmatrix},\quad\text{and}\quad\begin{bmatrix}87\\56\\10.4\end{bmatrix},
+\begin{pmatrix}0\\0\\10.4\end{pmatrix},\quad\begin{pmatrix}87\\0\\10.4\end{pmatrix},\quad\begin{pmatrix}0\\56\\10.4\end{pmatrix},\quad\text{and}\quad\begin{pmatrix}87\\56\\10.4\end{pmatrix},
 
 
 $$
@@ -682,7 +682,7 @@ respectively. If we now move the top card along the $x$-axis, then, due to frict
 The movement of the cards can be described by a shear transformation. If the top card is moved 6 millimeters along the $x$-axis, then the edges parallel to the $y$-axis of the cards will make an angle of $\phi=\arctan(10.4/6)\approx \frac{\pi}{3}$ with the positive $x$-axis. A card at height $h$ will be moved a distance of about $h\frac{1}{\sqrt{3}}$ along the $x$-axis. We therefore find that the standard matrix associated to the linear transformation that describes the movement of the cards is
 
 $$
-\begin{bmatrix}1&0&\frac{1}{\sqrt{3}}\\0&1&0\\0&0&1\end{bmatrix}.
+\begin{pmatrix}1&0&\frac{1}{\sqrt{3}}\\0&1&0\\0&0&1\end{pmatrix}.
 
 
 $$

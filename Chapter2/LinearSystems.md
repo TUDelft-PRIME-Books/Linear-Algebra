@@ -91,7 +91,7 @@ Of course, if we have equations we want to solve them. Here is what we mean by t
 ::::{prf:definition}
 :label: Dfn:LinSystems:SolutionOfLinearSystem
 
-A **solution** of a linear system is an ordered list of $n$ values $(c_1,  c_2, \ldots, c_n)$, or, depending on the context, a vector $\begin{bmatrix}c_1 \\ c_2 \\ \vdots \\ c_n  \end{bmatrix}$, such that substitution of
+A **solution** of a linear system is an ordered list of $n$ values $(c_1,  c_2, \ldots, c_n)$, or, depending on the context, a vector $\begin{pmatrix}c_1 \\ c_2 \\ \vdots \\ c_n  \end{pmatrix}$, such that substitution of
 
 $$
  x_1 = c_1, \,\, x_2 = c_2, \, \ldots\, , \,\, x_n = c_n
@@ -125,7 +125,7 @@ $$
 or, equivalently, by
 
 $$
-\begin{bmatrix} 1\\-1\\1 \end{bmatrix}    \quad \text{and} \quad \begin{bmatrix} 5\\-3\\-1 \end{bmatrix}.
+\begin{pmatrix} 1\\-1\\1 \end{pmatrix}    \quad \text{and} \quad \begin{pmatrix} 5\\-3\\-1 \end{pmatrix}.
 $$
 
 For instance, substitution of the second proposed solution yields
@@ -801,13 +801,13 @@ Before that, we define the concept of one of the most basic building blocks in l
 An $m \times n$ **matrix** $A$ is a rectangular array of numbers $a_{ij}$, $1\leq i \leq m$, $1 \leq j \leq n$.
 
 $$
-   A = \left[\begin{array}{cccc}
+   A = \left(\begin{array}{cccc}
             a_{11} & a_{12}&  \ldots&   a_{1n}   \\
             a_{21} & a_{22}&  \ldots&   a_{2n}   \\
             \vdots &  \vdots&  \cdots&  \vdots    \\
             a_{m1} & a_{m2}&  \ldots&   a_{mn}
           \end{array}
-   \right].
+   \right).
 $$
 
 It consists of $m$ horizontal **rows** of size $n$, or, equivalently, of $n$ vertical **columns** of size $m$.
@@ -825,18 +825,18 @@ A matrix is usually surrounded by parentheses or (square) brackets. We opt for b
 The matrix
 
 $$
-B = \left[  \begin{array}{ccccc}
+B = \left(  \begin{array}{ccccc}
         1 & 2 & 3 & 4 & 5 \\
         2 & 7 & -1 & 0 & 8 \\
         5 & 5 & 5 & 0 & 4
-    \end{array}\right]
+    \end{array}\right)
 $$
 
 is a $3\times 5$ matrix.
 
-Its second row is $\begin{bmatrix} 2 & 7 & -1 & 0 & 8  \end{bmatrix}$ and its third column is 
+Its second row is $\begin{pmatrix} 2 & 7 & -1 & 0 & 8  \end{pmatrix}$ and its third column is 
 $
-\left[  \begin{array}{c} 3 \\ -1 \\ 5   \end{array}\right].
+\left(  \begin{array}{c} 3 \\ -1 \\ 5   \end{array}\right).
 $
 
 ::::
@@ -862,25 +862,25 @@ $$
 is the matrix
 
 $$
-   \left[    \begin{array}{cccc|c}
+   \left(    \begin{array}{cccc|c}
             a_{11} & a_{12}&  \ldots&   a_{1n}    &  b_1 \\
             a_{21} & a_{22}&  \ldots&   a_{2n}   &  b_2 \\
             \vdots &  \vdots&  \ldots&  \vdots    &  \vdots \\
             a_{m1} & a_{m2}&  \ldots&   a_{mn}    &  b_m
           \end{array}
-   \right].
+   \right).
 $$
 
 The part before the vertical bar, i.e.
 
 $$
-    A =  \left[      \begin{array}{cccc}
+    A =  \left(      \begin{array}{cccc}
             a_{11} & a_{12}&  \ldots&   a_{1n} \\
             a_{21} & a_{22}&  \ldots&   a_{2n} \\
             \vdots &  \vdots&  \ldots&  \vdots    \\
             a_{m1} & a_{m2}&  \ldots&   a_{mn}
           \end{array}
-   \right]
+   \right)
 $$
 
 is called the **coefficient matrix** of the system. The column behind the bar contains the constant terms.
@@ -890,16 +890,16 @@ is called the **coefficient matrix** of the system. The column behind the bar co
 The augmented matrix is nothing more than an abbreviation for a system of equations. With the vertical bar we want to indicate that the last column plays a special role, namely, it contains the constants on the right  sides of the equations. If we denote these terms by the vector
 
 $$
-  \mathbf{b} =  \left[\begin{array}{c}
+  \mathbf{b} =  \left(\begin{array}{c}
                 b_1\\b_2\\\vdots\\b_m
           \end{array}
-   \right]
+   \right)
 $$
 
 the augmented matrix can be written as
 
 $$
-  [ A | \mathbf{b} ].
+  () A | \mathbf{b} ).
 $$
 
 To conclude this subsection we will reconsider the earlier example of a system of three equations in three unknowns
@@ -923,8 +923,8 @@ $$
             2x_1 & + &10x_2 & -&9x_3 &=& 4
           \end{array}
    \right.&\qquad&
-\left[\begin{array}{rrr|r}1 &  3 & -2& 4\\3 &  7 & -2&  8\\2 & 10 & -9 & 4
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrr|r}1 &  3 & -2& 4\\3 &  7 & -2&  8\\2 & 10 & -9 & 4
+\end{array}\right)\begin{array}{l}
 {[R_1]} \\
 {[R_2-3R_1]} \\
 {[R_3-2R_1]} \\
@@ -936,8 +936,8 @@ $$
                  &   &4x_2 & -&5x_3 &=& -4
           \end{array}
    \right.&\qquad&
-\left[\begin{array}{rrr|r}1 &  3 & -2& 4\\0& -2 &  4 &  -4\\0 & 4 & -5 & -4
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrr|r}1 &  3 & -2& 4\\0& -2 &  4 &  -4\\0 & 4 & -5 & -4
+\end{array}\right)\begin{array}{l}
 {[R_1]} \\
 {[-\frac12R_2]} \\
 {[R_3]} \\
@@ -948,8 +948,8 @@ $$
                  &  & x_2 & -&2x_3 &=&  2 \\
                  &   &4x_2 & -&5x_2 &=& -4
           \end{array}
-   \right.&\qquad& \left[\begin{array}{rrr|r}1 &  3 & -2& 4\\0& 1 &  -2 &  2\\0 & 4 & -5 & -4
-\end{array}\right]\begin{array}{l}
+   \right.&\qquad& \left(\begin{array}{rrr|r}1 &  3 & -2& 4\\0& 1 &  -2 &  2\\0 & 4 & -5 & -4
+\end{array}\right)\begin{array}{l}
 {[R_1]} \\
 {[R_2]} \\
 {[R_3-4R_2]} \\
@@ -961,8 +961,8 @@ $$
                  &   &  & &3x_3 &=& -12
           \end{array}
    \right.&\qquad&
-\left[\begin{array}{rrr|r}1 &  3 & -2& 4\\0& 1 &  -2 &  2\\0 & 0 & 3 & -12
-\end{array}\right]
+\left(\begin{array}{rrr|r}1 &  3 & -2& 4\\0& 1 &  -2 &  2\\0 & 0 & 3 & -12
+\end{array}\right)
 \end{array}
 $$
 
@@ -1007,23 +1007,23 @@ The symbol $\blacksquare$ denotes an arbitrary *nonzero* number and $\ast$ just 
 
 $$
   E_1 =
-\begin{bmatrix} \blacksquare & \ast & \ast &  \ast \\
+\begin{pmatrix} \blacksquare & \ast & \ast &  \ast \\
                          0  & \blacksquare & \ast & \ast \\
                          0  &  0 &\blacksquare &  \ast \\
                          0  & 0 & 0 &  0 \\
-                         0  & 0 & 0 &  0  \end{bmatrix} ,
+                         0  & 0 & 0 &  0  \end{pmatrix} ,
                    \quad
   E_2 =
-\begin{bmatrix} \blacksquare & \ast & \ast & \ast & \ast \\
+\begin{pmatrix} \blacksquare & \ast & \ast & \ast & \ast \\
                          0  & 0 & \blacksquare &  \ast & \ast \\
-                         0  & 0 & 0 &0 & \blacksquare  \end{bmatrix},
+                         0  & 0 & 0 &0 & \blacksquare  \end{pmatrix},
                          \quad
   E_3 =
-\begin{bmatrix} \blacksquare & \ast &  \ast & \ast \\
+\begin{pmatrix} \blacksquare & \ast &  \ast & \ast \\
                          0  & \blacksquare & \ast & \ast \\
                          0  & 0 & \blacksquare &   \ast \\
                          0  & 0 & 0  & \blacksquare  \\
-                         0  & 0  &0  & 0  \end{bmatrix}
+                         0  & 0  &0  & 0  \end{pmatrix}
 $$
 
 ::::
@@ -1044,16 +1044,16 @@ A **pivot** of a row in an echelon matrix is the first nonzero element (the so-c
 The following three matrices are in echelon form:
 
 $$
- A_1 = \left[\begin{array}{rrr}1 & 2 & 3 \\ 0 & 3 & 2 \\ 0 & 0 & 0 \end{array}  \right], \quad
- A_2 = \left[\begin{array}{rr}1 & 0 \\ 0 & 1 \\ 0 & 0 \\ 0 & 0 \end{array}  \right], \quad
- A_3 = \left[\begin{array}{rrrrr}1 & 1 & 0 &  2 &  0\\ 0 & 0 & 1 & 4 & 0\\ 0 & 0 & 0 & 0 & 1\end{array}  \right]
+ A_1 = \left(\begin{array}{rrr}1 & 2 & 3 \\ 0 & 3 & 2 \\ 0 & 0 & 0 \end{array}  \right), \quad
+ A_2 = \left(\begin{array}{rr}1 & 0 \\ 0 & 1 \\ 0 & 0 \\ 0 & 0 \end{array}  \right), \quad
+ A_3 = \left(\begin{array}{rrrrr}1 & 1 & 0 &  2 &  0\\ 0 & 0 & 1 & 4 & 0\\ 0 & 0 & 0 & 0 & 1\end{array}  \right)
 $$
 
 The following two matrices are not in echelon form
 
 $$
- A_4 = \left[\begin{array}{rrr}0 & 0 & 0 \\ 0 & 1 & 2 \\ 0 & 0 & 1 \end{array}  \right], \quad
- A_5 = \left[\begin{array}{rrr}1 & 0 & 0 \\ 0 & 1 & 1  \\ 0 &1 & 0 \end{array}  \right].
+ A_4 = \left(\begin{array}{rrr}0 & 0 & 0 \\ 0 & 1 & 2 \\ 0 & 0 & 1 \end{array}  \right) \quad
+ A_5 = \left(\begin{array}{rrr}1 & 0 & 0 \\ 0 & 1 & 1  \\ 0 &1 & 0 \end{array}  \right).
 $$
 
 Namely, in matrix $A_4$ the second row is a non-zero row that is below the all-zero first row. And in matrix $A_5$ the third row does not start with _more_ zeros than the second row.
@@ -1075,9 +1075,9 @@ Namely, in matrix $A_4$ the second row is a non-zero row that is below the all-z
 Here are the three echelon matrices again, with boxes around their pivots:
 
 $$
- \left[\begin{array}{rrr}\fbox{1} & 2 & 3 \\ 0 & \fbox{3} & 2 \\ 0 & 0 & 0 \end{array}  \right], \quad
- \left[\begin{array}{rr}\fbox{1} & 0 \\ 0 & \fbox{1} \\ 0 & 0 \\ 0 & 0 \end{array}  \right], \quad
- \left[\begin{array}{rrrrr}\fbox{1} & 1 & 0 &  2 &  0\\ 0 & 0 & \fbox{1} & 4 & 0\\ 0 & 0 & 0 & 0 & \fbox{1}\end{array}  \right].
+ \left(\begin{array}{rrr}\fbox{1} & 2 & 3 \\ 0 & \fbox{3} & 2 \\ 0 & 0 & 0 \end{array}  \right), \quad
+ \left(\begin{array}{rr}\fbox{1} & 0 \\ 0 & \fbox{1} \\ 0 & 0 \\ 0 & 0 \end{array}  \right), \quad
+ \left(\begin{array}{rrrrr}\fbox{1} & 1 & 0 &  2 &  0\\ 0 & 0 & \fbox{1} & 4 & 0\\ 0 & 0 & 0 & 0 & \fbox{1}\end{array}  \right).
 $$
 
 The third and the fourth row of the second matrix do not have pivots.
@@ -1159,9 +1159,9 @@ We will row reduce the matrix
 
 $$
 M =
-\begin{bmatrix}
+\begin{pmatrix}
      4 & -4 & -4 & 8 & 12 \\ -2 & 2 & 2 & -4 & 2 \\ 3 & -3 & -1 & 5 & 4
-     \end{bmatrix}
+     \end{pmatrix}
 $$
 
 to a matrix $E$ in echelon form:
@@ -1169,51 +1169,51 @@ to a matrix $E$ in echelon form:
 $$
 \begin{array}{ccl}
      M&=&
-\left[\begin{array}{rrrrr}
+\left(\begin{array}{rrrrr}
    4 & -4 & -4 & 8 & 12 \\
    -2 & 2 & 2 & -4 & 2 \\
    3 & -3 & -1 & 5 & 4
-\end{array}\right]\begin{array}{l}
+\end{array}\right)\begin{array}{l}
    {[\frac14R_1]} \\
    {[R_2]} \\
    {[R_3]}
 \end{array} \\
     &\sim&
-\left[\begin{array}{rrrrr}
+\left(\begin{array}{rrrrr}
    1 & -1 & -1 & 2 & 3 \\
    -2 & 2 & 2 & -4 & 2 \\
    3 & -3 & -1 & 5 & 4
-\end{array}\right]\begin{array}{l}
+\end{array}\right)\begin{array}{l}
 {[R_1]} \\
 {[R_2+2R_1]} \\
 {[R_3]}
 \end{array} \\
     &\sim&
-\left[\begin{array}{rrrrr}
+\left(\begin{array}{rrrrr}
    1 & -1 & -1 & 2 & 3 \\
    0 & 0 & 0 & 0 & 8 \\
    3 & -3 & -1 & 5 & 4
-\end{array}\right]\begin{array}{l}
+\end{array}\right)\begin{array}{l}
    {[R_1]} \\
    {[R_2]} \\
    {[R_3-3R_1]}
 \end{array} \\
     &\sim&
-\left[\begin{array}{rrrrr}
+\left(\begin{array}{rrrrr}
    1 & -1 & -1 & 2 & 3 \\
    0 & 0 & 0 & 0 & 8 \\
    0 & 0 & 2 & -1 & -5
-\end{array}\right]\begin{array}{l}
+\end{array}\right)\begin{array}{l}
 {[R_1]} \\
 {[R_2\leftrightarrow R_3]} \\
 {[R_3\leftrightarrow R_2]}
 \end{array} \\
   &\sim&
-\left[\begin{array}{rrrrr}
+\left(\begin{array}{rrrrr}
    1 & -1 & -1 & 2 & 3 \\
    0 & 0 & 2 & -1 & -5 \\
    0 & 0 & 0 & 0 & 8
-\end{array}\right]= E
+\end{array}\right)= E
   \end{array}
 $$
 
@@ -1223,15 +1223,15 @@ adding multiples of the first row to the other rows. This can be done simultaneo
 
 $$
     \begin{array}{ccl}
-\left[\begin{array}{rrrrr}1 & -1 & -1 & 2 & 3\\-2 & 2 & 2 & -4 & 2\\3 & -3 & -1 & 5 & 4
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrrrr}1 & -1 & -1 & 2 & 3\\-2 & 2 & 2 & -4 & 2\\3 & -3 & -1 & 5 & 4
+\end{array}\right)\begin{array}{l}
 [R_1] \\
 {[R_2+2R_1]} \\
 {[R_3-3R_1]} \\
 \end{array}
     &\sim&
-\left[\begin{array}{rrrrr}1 & -1 & -1 & 2 & 3\\0 & 0 & 0 & 0 & 8\\0 & 0 & 2 & -1 & -5
-\end{array}\right]   \end{array}
+\left(\begin{array}{rrrrr}1 & -1 & -1 & 2 & 3\\0 & 0 & 0 & 0 & 8\\0 & 0 & 2 & -1 & -5
+\end{array}\right)   \end{array}
 $$
 
 ::::
@@ -1253,19 +1253,19 @@ If $a_{11}$ is not 0, that will be the first pivot. We can use it to make all th
 We then get
 
 $$
-    A =  \left[\begin{array}{cccc}
+    A =  \left(\begin{array}{cccc}
             a_{11} & a_{12}&  \ldots&   a_{1n} \\
             a_{21} & a_{22}&  \ldots&   a_{2n} \\
             \vdots &  \vdots&  \ldots&  \vdots    \\
             a_{m1} & a_{m2}&  \ldots&   a_{mn}
           \end{array}
-   \right]\sim  \left[\begin{array}{cccc}
+   \right)\sim  \left(\begin{array}{cccc}
             a_{11} & a_{12}&  \ldots&   a_{1n} \\
                 0  & \tilde{a}_{22}&  \ldots&   \tilde{a}_{2n} \\
             \vdots &  \vdots&  \ldots&  \vdots    \\
             0 & \tilde{a}_{m2}&  \ldots&   \tilde{a}_{mn}
           \end{array}
-   \right].
+   \right).
 $$
 
 From then on we will leave the first row as it is.
@@ -1277,13 +1277,13 @@ If the first column happens to consist of zeros only, we skip it and start from 
 We continue with the part of the matrix below and to the right of the first pivot, i.e.,
 
 $$
-   \left[\begin{array}{cccc}
+   \left(\begin{array}{cccc}
              \tilde{a}_{22}&  \tilde{a}_{23}&  \ldots&   \tilde{a}_{2n} \\
              \tilde{a}_{32}&   \tilde{a}_{33}& \ldots&   \tilde{a}_{3n} \\
                 \vdots     &  \vdots         &  \ldots&  \vdots    \\
            \tilde{a}_{m2}&  \tilde{a}_{m3}&  \ldots&   \tilde{a}_{mn}
           \end{array}
-   \right].
+   \right).
 $$
 
 And so on, until we get to the last row, or until we get to a row below which all rows only contain zeros.
@@ -1299,37 +1299,37 @@ The matrix
 
 $$
    M =
-\begin{bmatrix} 1 & 2 & 3 & 1\\ 1 & 4 & 7 & 3\\ 3 & 6 & 11 & 9
-       \end{bmatrix}
+\begin{pmatrix} 1 & 2 & 3 & 1\\ 1 & 4 & 7 & 3\\ 3 & 6 & 11 & 9
+       \end{pmatrix}
 $$
 
 is row equivalent to all of the following echelon matrices:
 
 $$
-\begin{bmatrix} 1 & 2 & 3 & 1\\ 0 & 2 & 4 & 2\\ 0 & 0 & 2 & 6 \end{bmatrix} \sim
-\begin{bmatrix} 1 & 2 & 3 & 1\\ 0 & 1 & 2 & 1\\ 0 & 0 & 1 & 3 \end{bmatrix} \sim
-\begin{bmatrix} 1 & 2 & 0 & -8\\ 0 & 1 & 0 & -5\\ 0 & 0 & 1 & 3 \end{bmatrix} \sim
-\begin{bmatrix} 1 & 0 & 0 & 2\\ 0 & 1 & 0 & -5\\ 0 & 0 & 1 & 3 \end{bmatrix}.
+\begin{pmatrix} 1 & 2 & 3 & 1\\ 0 & 2 & 4 & 2\\ 0 & 0 & 2 & 6 \end{pmatrix} \sim
+\begin{pmatrix} 1 & 2 & 3 & 1\\ 0 & 1 & 2 & 1\\ 0 & 0 & 1 & 3 \end{pmatrix} \sim
+\begin{pmatrix} 1 & 2 & 0 & -8\\ 0 & 1 & 0 & -5\\ 0 & 0 & 1 & 3 \end{pmatrix} \sim
+\begin{pmatrix} 1 & 0 & 0 & 2\\ 0 & 1 & 0 & -5\\ 0 & 0 & 1 & 3 \end{pmatrix}.
 $$
 
 Or, using the notation for the row operations:
 
 $$
-\left[\begin{array}{rrrr}1 & 2 & 3 & 1\\1 & 4 & 7 & 3\\3 & 6 & 11 & 9
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrrr}1 & 2 & 3 & 1\\1 & 4 & 7 & 3\\3 & 6 & 11 & 9
+\end{array}\right)\begin{array}{l}
 [R_1] \\
 {[R_2-1R_1]} \\
 {[R_3-3R_1]} \\
 \end{array} \sim
-\left[\begin{array}{rrrr}1 & 2 & 3 & 1\\0 & 2 & 4 & 2\\0 & 0 & 2 & 6
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrrr}1 & 2 & 3 & 1\\0 & 2 & 4 & 2\\0 & 0 & 2 & 6
+\end{array}\right)\begin{array}{l}
 [R_1] \\
 {[\frac12R_2]} \\
 {[\frac12R_3]} \\
 \end{array}
     \quad \sim
-\left[\begin{array}{rrrr}1 & 2 & 3 & 1\\0 & 1 & 2 & 1\\0 & 0 & 1 & 3
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrrr}1 & 2 & 3 & 1\\0 & 1 & 2 & 1\\0 & 0 & 1 & 3
+\end{array}\right)\begin{array}{l}
 [R_1-3R_3] \\
 {[R_2-2R_3]} \\
 {[R_3]} \\
@@ -1338,15 +1338,15 @@ $$
 
 $$
  \sim
-\left[\begin{array}{rrrr}1 & 2 & 0 & -8\\0 & 1 & 0 & -5\\0 & 0 & 1 & 3
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrrr}1 & 2 & 0 & -8\\0 & 1 & 0 & -5\\0 & 0 & 1 & 3
+\end{array}\right)\begin{array}{l}
 [R_1-2R_2] \\
 {[R_2]} \\
 {[R_3]} \\
 \end{array}
     \sim
-\left[\begin{array}{rrrr}1 &0  & 0 & 2\\0 & 1 & 0 & -5\\0 & 0 & 1 & 3
-\end{array}\right]
+\left(\begin{array}{rrrr}1 &0  & 0 & 2\\0 & 1 & 0 & -5\\0 & 0 & 1 & 3
+\end{array}\right)
 $$
 
 ::::
@@ -1389,15 +1389,15 @@ If the matrix $M$
 were actually an augmented matrix for a system, in which we'd better have written
 
 $$
-    M = \left[\begin{array}{rrr|r} 1 & 2 & 3 & 1\\ 1 & 4 & 7 & 3\\ 3 & 6 & 11 & 9
-       \end{array}\right],
+    M = \left(\begin{array}{rrr|r} 1 & 2 & 3 & 1\\ 1 & 4 & 7 & 3\\ 3 & 6 & 11 & 9
+       \end{array}\right),
 $$
 
 then the linear system corresponding to the final echelon matrix
 
 $$
-    \left[\begin{array}{rrr|r} 1 &0  & 0 & 2\\ 0 & 1 & 0 & -5\\ 0 & 0 & 1 & 3
-       \end{array}\right]
+    \left(\begin{array}{rrr|r} 1 &0  & 0 & 2\\ 0 & 1 & 0 & -5\\ 0 & 0 & 1 & 3
+       \end{array}\right)
 $$
 
 is given by
@@ -1443,12 +1443,12 @@ In a column with a pivot all other elements are 0.
 Of the matrices
 
 $$
-\begin{bmatrix} 1 & 0 & 0 & 1 \\ 0 & 1 & 1 & 0 \\ 0 & 0 & 0 & 1
-   \end{bmatrix}, \quad
-\begin{bmatrix} 1 & 0 & 1  \\ 0 & 1 & 2  \\ 0 & 0 & 1  \\ 0 & 0 & 1
-   \end{bmatrix}, \quad
-\begin{bmatrix} 1 & 0 & 1 & 0 \\ 0 & 1 & 3 & 0\\ 0 & 0 & 0 & 1  \\ 0 & 0 & 0 &0
-   \end{bmatrix},
+\begin{pmatrix} 1 & 0 & 0 & 1 \\ 0 & 1 & 1 & 0 \\ 0 & 0 & 0 & 1
+   \end{pmatrix}, \quad
+\begin{pmatrix} 1 & 0 & 1  \\ 0 & 1 & 2  \\ 0 & 0 & 1  \\ 0 & 0 & 1
+   \end{pmatrix}, \quad
+\begin{pmatrix} 1 & 0 & 1 & 0 \\ 0 & 1 & 3 & 0\\ 0 & 0 & 0 & 1  \\ 0 & 0 & 0 &0
+   \end{pmatrix},
 $$
 
 the first and the third are echelon matrices and only the third is a reduced echelon matrix.
@@ -1486,7 +1486,7 @@ In the solution as constructed according to the previous proposition the pivot v
 We find the solution of the linear system with the following augmented matrix, which is already in row reduced echelon:
 
 $$
-\left[\begin{array}{rrrrr|r}1 & 0 & 2 & 0 & 3 & 6\\0 & 1 & -3 & 0 &-4 & 7\\0 & 0 & 0 & 1 & 5 & 8\\\end{array}\right]
+\left(\begin{array}{rrrrr|r}1 & 0 & 2 & 0 & 3 & 6\\0 & 1 & -3 & 0 &-4 & 7\\0 & 0 & 0 & 1 & 5 & 8\\\end{array}\right)
 $$
 
 We go back to the corresponding system and bring the non-pivot variables $x_3$ and $x_5$ to the right:
@@ -1541,8 +1541,8 @@ The uniqueness is harder to show in an intuitive way, and it is definitely harde
 Let us further simplify the echelon matrix
 
 $$
-\begin{bmatrix} 3 & 2 &1 &6&-2\\   0 & 2 & -2 &-3 & 1\\  0 & 0 & 0 &3 & 2
-   \end{bmatrix}
+\begin{pmatrix} 3 & 2 &1 &6&-2\\   0 & 2 & -2 &-3 & 1\\  0 & 0 & 0 &3 & 2
+   \end{pmatrix}
 $$
 
 to reduced echelon form.
@@ -1554,14 +1554,14 @@ step 2: use the pivot in the second row to create a zero above it;
 step 3: scale all rows:
 
 $$
-\left[\begin{array}{rrrrr}3 & 2 &1 &6&-2\\0 & 2 & -2 &-3 & 1\\0 & 0 & 0 &3 & 2
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrrrr}3 & 2 &1 &6&-2\\0 & 2 & -2 &-3 & 1\\0 & 0 & 0 &3 & 2
+\end{array}\right)\begin{array}{l}
 [R_1-2R_3] \\
 {[R_2+1R_3]} \\
 {[R_3]} \\
 \end{array} \,\, \sim \,\,
-\left[\begin{array}{rrrrr}3 & 2 &1 &0&-6\\0 & 2 & -2 &0 & 3\\0 & 0 & 0 &3 & 2
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrrrr}3 & 2 &1 &0&-6\\0 & 2 & -2 &0 & 3\\0 & 0 & 0 &3 & 2
+\end{array}\right)\begin{array}{l}
 [R_1-1R_2] \\
 {[R_2]} \\
 {[R_3]} \\
@@ -1571,15 +1571,15 @@ $$
 
 $$
 \sim \quad
-\left[\begin{array}{rrrrr}3 & 0 &3 &0&-9\\0 & 2 & -2 & 0 & 3\\0 & 0 & 0 &3 & 2
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrrrr}3 & 0 &3 &0&-9\\0 & 2 & -2 & 0 & 3\\0 & 0 & 0 &3 & 2
+\end{array}\right)\begin{array}{l}
 [\nicefrac13R_1] \\
 {[\nicefrac{1}{2}R_2]} \\
 {[\nicefrac13R_3]} \\
 \end{array} \quad
  \sim   \quad
-\left[\begin{array}{rrrrr}1 & 0 &1 &0&-3\\0 & 1 & -1 &0 & 3/2\\0 & 0 & 0 &1 & 2/3
-\end{array}\right]
+\left(\begin{array}{rrrrr}1 & 0 &1 &0&-3\\0 & 1 & -1 &0 & 3/2\\0 & 0 & 0 &1 & 2/3
+\end{array}\right)
 $$
 
 ::::
@@ -1593,8 +1593,8 @@ We will find the row reduced echelon form of the matrix
 
 $$
  M =
-\begin{bmatrix} 2 & -1 & -1 & 2\\ 1 & 2 & 4 & 4\\ 4 & -2 & -4 & 6
-       \end{bmatrix}
+\begin{pmatrix} 2 & -1 & -1 & 2\\ 1 & 2 & 4 & 4\\ 4 & -2 & -4 & 6
+       \end{pmatrix}
 $$
 
 via two different routes.
@@ -1602,14 +1602,14 @@ via two different routes.
 Route 1: Use the top left entry $a_{11} = 2$ as a first pivot. An auxiliary step, to avoid fractions, is to scale the second row with a factor 2:
 
 $$
-\left[\begin{array}{rrrr}2 & -1 & -1 & 2\\1 & 2 & 4 & 4\\4 & -2 & -4 & 6
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrrr}2 & -1 & -1 & 2\\1 & 2 & 4 & 4\\4 & -2 & -4 & 6
+\end{array}\right)\begin{array}{l}
 [R_1] \\
 {[2R_2]} \\
 {[R_3]} \\
 \end{array} \quad\sim
-\left[\begin{array}{rrrr}2 & -1 & -1 & 2\\2 & 4 & 8 & 8\\4 & -2 & -4 & 6
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrrr}2 & -1 & -1 & 2\\2 & 4 & 8 & 8\\4 & -2 & -4 & 6
+\end{array}\right)\begin{array}{l}
 [R_1] \\
 {[R_2-1R_1]} \\
 {[R_3-2R_1]} \\
@@ -1618,14 +1618,14 @@ $$
 
 $$
     \sim
-\left[\begin{array}{rrrr}2 & -1 & -1 & 2\\0 & 5 & 9 & 6\\0 & 0 & -2 & 2
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrrr}2 & -1 & -1 & 2\\0 & 5 & 9 & 6\\0 & 0 & -2 & 2
+\end{array}\right)\begin{array}{l}
 [R_1] \\
 {[R_2]} \\
 {[(-\nicefrac12)R_3]} \\
 \end{array} \quad\sim
-\left[\begin{array}{rrrr}2 & -1 & -1 & 2\\0 & 5 & 9 & 6\\0 & 0 & 1 & -1
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrrr}2 & -1 & -1 & 2\\0 & 5 & 9 & 6\\0 & 0 & 1 & -1
+\end{array}\right)\begin{array}{l}
 [R_1+1R_3] \\
 {[R_2-9R_3]} \\
 {[R_3]} \\
@@ -1634,14 +1634,14 @@ $$
 
 $$
     \sim
-\left[\begin{array}{rrrr}2 & -1 & 0 & 1\\0 & 5 & 0 & 15\\0 & 0 & 1 & -1
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrrr}2 & -1 & 0 & 1\\0 & 5 & 0 & 15\\0 & 0 & 1 & -1
+\end{array}\right)\begin{array}{l}
 [R_1] \\
 {[(\nicefrac15)R_2]} \\
 {[R_3]} \\
 \end{array} \quad\sim
-\left[\begin{array}{rrrr}2 & -1 & 0 & 1\\0 & 1 & 0 & 3\\0 & 0 & 1 & -1
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrrr}2 & -1 & 0 & 1\\0 & 1 & 0 & 3\\0 & 0 & 1 & -1
+\end{array}\right)\begin{array}{l}
 [R_1+1R_2] \\
 {[R_2]} \\
 {[R_3]} \\
@@ -1650,27 +1650,27 @@ $$
 
 $$
     \sim
-\left[\begin{array}{rrrr}2 & 0 & 0 & 4\\0 & 1 & 0 & 3\\0 & 0 & 1 & -1
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrrr}2 & 0 & 0 & 4\\0 & 1 & 0 & 3\\0 & 0 & 1 & -1
+\end{array}\right)\begin{array}{l}
 [(\nicefrac12)R_1] \\
 {[R_2]} \\
 {[R_3]} \\
 \end{array} \quad \sim
-\left[\begin{array}{rrrr}1 & 0 & 0 & 2\\0 & 1 & 0 & 3\\0 & 0 & 1 & -1
-\end{array}\right].
+\left(\begin{array}{rrrr}1 & 0 & 0 & 2\\0 & 1 & 0 & 3\\0 & 0 & 1 & -1
+\end{array}\right).
 $$
 
 Alternatively, we may start with a row swap:
 
 $$
-\left[\begin{array}{rrrr}2 & -1 & -1 & 2\\1 & 2 & 4 & 4\\4 & -2 & -4 & 6
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrrr}2 & -1 & -1 & 2\\1 & 2 & 4 & 4\\4 & -2 & -4 & 6
+\end{array}\right)\begin{array}{l}
 [R_1\leftrightarrow R_2] \\
 {[R_2\leftrightarrow R_1] }\\
 [R_3] \\
 \end{array} \sim
-\left[\begin{array}{rrrr}1 & 2 & 4 & 4\\2 & -1 & -1 & 2\\4 & -2 & -4 & 6
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrrr}1 & 2 & 4 & 4\\2 & -1 & -1 & 2\\4 & -2 & -4 & 6
+\end{array}\right)\begin{array}{l}
 [R_1] \\
 {[R_2-2R_1]} \\
 {[R_3-4R_1]} \\
@@ -1679,14 +1679,14 @@ $$
 
 $$
     \sim
-\left[\begin{array}{rrrr}1 & 2 & 4 & 4\\0 & -5 & -9 & -6\\0 & -10 & -20 & -10
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrrr}1 & 2 & 4 & 4\\0 & -5 & -9 & -6\\0 & -10 & -20 & -10
+\end{array}\right)\begin{array}{l}
 [R_1] \\
 {[R_2]} \\
 {[(-\nicefrac{1}{10})R_2]} \\
 \end{array} \sim
-\left[\begin{array}{rrrr}1 & 2 & 4 & 4\\0 & -5 & -9 & -6\\0 & 1 & 2 & 1
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrrr}1 & 2 & 4 & 4\\0 & -5 & -9 & -6\\0 & 1 & 2 & 1
+\end{array}\right)\begin{array}{l}
 [R_1] \\
 {[R_2\leftrightarrow R_3]} \\
 {[R_3\leftrightarrow R_2]}
@@ -1695,14 +1695,14 @@ $$
 
 $$
     \sim
-\left[\begin{array}{rrrr}1 & 2 & 4 & 4\\0 & 1 & 2 & 1\\0 & -5 & -9 & -6
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrrr}1 & 2 & 4 & 4\\0 & 1 & 2 & 1\\0 & -5 & -9 & -6
+\end{array}\right)\begin{array}{l}
 [R_1-2R_2] \\
 {[R_2]} \\
 {[R_3+5R_2]} \\
 \end{array} \sim
-\left[\begin{array}{rrrr}1 & 0 & 0 & 2\\0 & 1 & 2 & 1\\0 & 0 & 1 & -1
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrrr}1 & 0 & 0 & 2\\0 & 1 & 2 & 1\\0 & 0 & 1 & -1
+\end{array}\right)\begin{array}{l}
 [R_1] \\
 {[R_2-2R_3]} \\
 {[R_3]} \\
@@ -1711,8 +1711,8 @@ $$
 
 $$
     \sim
-\left[\begin{array}{rrr}1 & 0 & 0 & 2\\0 & 1 & 0 & 3\\0 & 0 & 1 & -1
-\end{array}\right],  \rule{19em}{0ex}
+\left(\begin{array}{rrr}1 & 0 & 0 & 2\\0 & 1 & 0 & 3\\0 & 0 & 1 & -1
+\end{array}\right),  \rule{19em}{0ex}
 $$
 
 the same outcome as before.
@@ -1814,21 +1814,21 @@ has zero, exactly one, or infinitely many solutions.
 We row reduce the augmented matrix just as far as necessary:
 
 $$
-\left[\begin{array}{rrr|r}1 & 3 & 1 &5\\2 & 1 & -1 &4\\3 & -1 & -3 &3
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrr|r}1 & 3 & 1 &5\\2 & 1 & -1 &4\\3 & -1 & -3 &3
+\end{array}\right)\begin{array}{l}
 [R_1] \\
 [R_2-2R_1] \\
 [R_3-3R_1] \\
 \end{array} \sim
-\left[\begin{array}{rrr|r}1 & 3 & 1 &5\\0 & -5& -3 &-6\\0 & -10 & -6 &-12
-\end{array}\right]
+\left(\begin{array}{rrr|r}1 & 3 & 1 &5\\0 & -5& -3 &-6\\0 & -10 & -6 &-12
+\end{array}\right)
 \begin{array}{l}
 [R_1] \\
 {[R_2]} \\
 {[R_3-2R_2]} \\
 \end{array} \sim
-\left[\begin{array}{rrr|r}1 & 3 & 1 &5\\0 & -5& -3 &-6\\0 & 0 & 0 &0
-\end{array}\right]
+\left(\begin{array}{rrr|r}1 & 3 & 1 &5\\0 & -5& -3 &-6\\0 & 0 & 0 &0
+\end{array}\right)
 
 
 $$
@@ -1844,9 +1844,9 @@ This example stresses that the conclusion whether a linear system has zero, one 
 Suppose the augmented matrices of three linear systems can be row reduced to the following matrices
 
 $$
-  E_1 = \left[\begin{array}{rrr|r}\blacksquare&\ast&\ast&\ast\\0  &\blacksquare&\ast&\ast\\0  &  0 &\blacksquare&\ast\\0  & 0 & 0 & 0\\0  & 0 & 0 & 0\\\end{array}\right],
+  E_1 = \left(\begin{array}{rrr|r}\blacksquare&\ast&\ast&\ast\\0  &\blacksquare&\ast&\ast\\0  &  0 &\blacksquare&\ast\\0  & 0 & 0 & 0\\0  & 0 & 0 & 0\\\end{array}\right),
                    \quad
-  E_2 =   \left[\begin{array}{rrrr|r}\blacksquare&\ast&\ast&\ast&\ast\\0  &\blacksquare&\ast&\ast&\ast\\0  &  0 & 0 &\blacksquare&\ast\\0  & 0 & 0 &0 & 0\\\end{array}\right],
+  E_2 =   \left(\begin{array}{rrrr|r}\blacksquare&\ast&\ast&\ast&\ast\\0  &\blacksquare&\ast&\ast&\ast\\0  &  0 & 0 &\blacksquare&\ast\\0  & 0 & 0 &0 & 0\\\end{array}\right),
 
 
 $$
@@ -1854,7 +1854,7 @@ $$
 and
 
 $$
-E_3 =   \left[\begin{array}{rrr|r}\blacksquare&\ast&\ast&\ast\\0  &\blacksquare&\ast&\ast\\0  & 0 &\blacksquare&\ast\\0  & 0 & 0 &\blacksquare\\0  & 0  &0 & 0\\\end{array}\right],
+E_3 =   \left(\begin{array}{rrr|r}\blacksquare&\ast&\ast&\ast\\0  &\blacksquare&\ast&\ast\\0  & 0 &\blacksquare&\ast\\0  & 0 & 0 &\blacksquare\\0  & 0  &0 & 0\\\end{array}\right),
 $$
 
 where $\blacksquare$ denotes an arbitrary nonzero number, and $\ast$ just any real number.
@@ -1892,13 +1892,13 @@ A linear system of $m$ equations in $n$ unknowns can only have a unique solution
 Let
 
 $$
-[A |\mathbf{b}]
+(A |\mathbf{b})
 $$
 
 be the augmented matrix of the system, and
 
 $$
- [E |\mathbf{c}]
+ (E |\mathbf{c})
 $$
 
 an equivalent echelon matrix. Here $E$ is an $m\times n$ echelon matrix. Since the pivots are in different rows, there are at most $m$ pivots.

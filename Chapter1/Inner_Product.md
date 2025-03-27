@@ -13,9 +13,9 @@ We will start by considering vectors in $\mathbb{R}^2$ and $\mathbb{R}^3$. The t
 The length of a vector
 
 $$
-\mathbf{v}=\begin{bmatrix}
+\mathbf{v}=\begin{pmatrix}
 a_{1}\\a_{2}
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 in the plane, which we denote by $\norm{\mathbf{v}}$, can be computed using the Pythagorean theorem:
@@ -46,7 +46,7 @@ The length of a vector via Pythagoras' Theorem.
 Using this theorem twice we find a similar formula for the length of a vector
 
 $$
-\mathbf{v}=\begin{bmatrix} a_{1}\\a_{2}\\a_{3}\end{bmatrix}
+\mathbf{v}=\begin{pmatrix} a_{1}\\a_{2}\\a_{3}\end{pmatrix}
 $$
 
 in $\mathbb{R}^3$. Look at {numref}`Figure %s <Fig:InnerProduct:length-3D>`. There are two right triangles: $\Delta OPQ$ where $\angle OPQ$ is right, and
@@ -82,7 +82,7 @@ Perpendicular versus non-perpendicular.
 :::
 
 Let us now turn our attention to another important geometric concept, namely that of
-perpendicularity. It is clear from {numref}`Figure %s <Fig:InnerProduct:perp-non-perp>` that the vectors $\begin{bmatrix}2\\3\end{bmatrix}$ and $\begin{bmatrix}-3\\2\end{bmatrix}$ are perpendicular, whereas the vectors $\begin{bmatrix}2\\3\end{bmatrix}$ and $\begin{bmatrix}-1\\3\end{bmatrix}$ are not. <br />
+perpendicularity. It is clear from {numref}`Figure %s <Fig:InnerProduct:perp-non-perp>` that the vectors $\begin{pmatrix}2\\3\end{pmatrix}$ and $\begin{pmatrix}-3\\2\end{pmatrix}$ are perpendicular, whereas the vectors $\begin{pmatrix}2\\3\end{pmatrix}$ and $\begin{pmatrix}-1\\3\end{pmatrix}$ are not. <br />
 There is another way to look at this, which will be useful for the definition of perpendicularity in higher dimensions. To that end, consider {numref}`Figure %s <Fig:InnerProduct:diagonal-parallelogram>`. Here you see two vectors $\vect{v}$ and $\vect{w}$ and the parallelogram they span. You also see the diagonals of this parallelogram, which are given by $\vect{v}+\vect{w}$ and $\vect{v}-\vect{w}$. Two vectors are perpendicular if and only if the parallelogram they span is a rectangle, and this is exacty the situation where the diagonals have the same length, i.e.,
 
 :::{math}
@@ -129,7 +129,7 @@ $$
  \mathbf{v} \perp \mathbf{w} \iff \norm{\mathbf{v}+\mathbf{w}}^2 = \norm{\mathbf{v}-\mathbf{w}}^2.
 $$
 
-If we write this out for two arbitrary vectors $\mathbf{v}=\begin{bmatrix} a_{1}\\a_{2}\end{bmatrix},\mathbf{w}=\begin{bmatrix} b_{1}\\b_{2}\end{bmatrix}$ in $\mathbb{R}^2$
+If we write this out for two arbitrary vectors $\mathbf{v}=\begin{pmatrix} a_{1}\\a_{2}\end{pmatrix},\mathbf{w}=\begin{pmatrix} b_{1}\\b_{2}\end{pmatrix}$ in $\mathbb{R}^2$
 we get the following:
 
 $$
@@ -142,7 +142,7 @@ $$
  \end{array}
 $$
 
-Likewise, for vectors $\mathbf{v}=\begin{bmatrix} a_{1}\\a_{2}\\a_{3}\end{bmatrix},\,\mathbf{w}=\begin{bmatrix} b_{1}\\b_{2}\\b_{3}\end{bmatrix}$ in $\mathbb{R}^3$:
+Likewise, for vectors $\mathbf{v}=\begin{pmatrix} a_{1}\\a_{2}\\a_{3}\end{pmatrix},\,\mathbf{w}=\begin{pmatrix} b_{1}\\b_{2}\\b_{3}\end{pmatrix}$ in $\mathbb{R}^3$:
 
 :::{math}
 :label: Eq:InnerProduct:perp-in-3D
@@ -155,7 +155,7 @@ So to check 'algebraically' whether two vectors are perpendicular we just have t
 and see whether this is equal to 0.
 
 This expression is called the _dot product_ (or _inner product_) of the vectors $\mathbf{v}$ and $\mathbf{w}$. We denote it by $\mathbf{v}\ip\mathbf{w}$.
-Note that the dot product of a general vector $\mathbf{v}=\begin{bmatrix} a_{1}\\a_{2}\\a_{3}\end{bmatrix}$ in $\mathbb{R}^3$ with itself gives
+Note that the dot product of a general vector $\mathbf{v}=\begin{pmatrix} a_{1}\\a_{2}\\a_{3}\end{pmatrix}$ in $\mathbb{R}^3$ with itself gives
 
 $$
 
@@ -182,8 +182,8 @@ Using the dot product the concepts length and perpendicular easily carry over to
 :label: Dfn:InnerProduct:DotProduct
 
 The **dot product** (or _inner product_) of two vectors
-$\mathbf{v}=\begin{bmatrix}a_{1}\\a_{2}\\ \vdots\\a_{n}\end{bmatrix}$ and
-$\mathbf{w}=\begin{bmatrix}b_{1}\\b_{2}\\ \vdots\\b_{n}\end{bmatrix}$ in $\mathbb{R}^n$ is defined as
+$\mathbf{v}=\begin{pmatrix}a_{1}\\a_{2}\\ \vdots\\a_{n}\end{pmatrix}$ and
+$\mathbf{w}=\begin{pmatrix}b_{1}\\b_{2}\\ \vdots\\b_{n}\end{pmatrix}$ in $\mathbb{R}^n$ is defined as
 
 :::{math}
 :label: Eq:InnerProduct:DotProduct
@@ -199,9 +199,9 @@ $\mathbf{w}=\begin{bmatrix}b_{1}\\b_{2}\\ \vdots\\b_{n}\end{bmatrix}$ in $\mathb
 The dot product of the two vectors
 
 $$
-  \mathbf{v}_1=\begin{bmatrix} 5\\3\\4\\-2\end{bmatrix}
+  \mathbf{v}_1=\begin{pmatrix} 5\\3\\4\\-2\end{pmatrix}
   \quad \text{and}\quad
-  \mathbf{v}_2=\begin{bmatrix} 2\\3\\0\\1\end{bmatrix}
+  \mathbf{v}_2=\begin{pmatrix} 2\\3\\0\\1\end{pmatrix}
 $$
 
 is given by
@@ -215,9 +215,9 @@ $$
 And the dot product of the two vectors
 
 $$
-  \mathbf{v}_1=\begin{bmatrix} 5\\3\\4\\-2\end{bmatrix}
+  \mathbf{v}_1=\begin{pmatrix} 5\\3\\4\\-2\end{pmatrix}
   \quad \text{and}\quad
-  \mathbf{v}_3=\begin{bmatrix} -4\\3\\2\end{bmatrix}
+  \mathbf{v}_3=\begin{pmatrix} -4\\3\\2\end{pmatrix}
 $$
 
 is not defined. In fact, the dot product of a vector $\mathbf{v}$ in $\mathbb{R}^m$ and a vector $\mathbf{w}$ in $\mathbb{R}^n$ is only defined if $m = n$.
@@ -249,9 +249,9 @@ The first three properties follow from the corresponding properties of real numb
 i. Let
 
 $$
-\mathbf{v}_1=\begin{bmatrix} a_1\\a_2\\ \vdots\\ a_n\end{bmatrix}
+\mathbf{v}_1=\begin{pmatrix} a_1\\a_2\\ \vdots\\ a_n\end{pmatrix}
   \quad \text{and}\quad
-  \mathbf{v}_2=\begin{bmatrix}  b_1 \\ b_2 \\ \vdots \\ b_n \end{bmatrix}
+  \mathbf{v}_2=\begin{pmatrix}  b_1 \\ b_2 \\ \vdots \\ b_n \end{pmatrix}
 $$
 
 be two arbitrary vectors in $\mathbb{R}^n$. Then
@@ -259,19 +259,19 @@ be two arbitrary vectors in $\mathbb{R}^n$. Then
 $$
 \begin{align*}
 \mathbf{v}_1 \ip \mathbf{v}_2 &=
-\begin{bmatrix}a_{1} \\ a_{2}\\ \vdots\\a_{n}\end{bmatrix} \ip \begin{bmatrix}b_{1} \\ b_{2}\\ \vdots \\ b_{n}\end{bmatrix}
+\begin{pmatrix}a_{1} \\ a_{2}\\ \vdots\\a_{n}\end{pmatrix} \ip \begin{pmatrix}b_{1} \\ b_{2}\\ \vdots \\ b_{n}\end{pmatrix}
             = a_1b_1 +a_2b_2+ \ldots + a_nb_n  \\
       &= b_1a_1 +b_2a_2+ \ldots + b_na_n =
-               \begin{bmatrix}b_{1} \\ b_{2}\\ \vdots \\ b_{n}\end{bmatrix}\ip\begin{bmatrix}a_{1} \\ a_{2}\\ \vdots\\ a_{n}\end{bmatrix} = \mathbf{v}_2\ip\mathbf{v}_1.
+               \begin{pmatrix}b_{1} \\ b_{2}\\ \vdots \\ b_{n}\end{pmatrix}\ip\begin{pmatrix}a_{1} \\ a_{2}\\ \vdots\\ a_{n}\end{pmatrix} = \mathbf{v}_2\ip\mathbf{v}_1.
 \end{align*}
 $$
 
-ii. For two vectors $\vect{v}_1 = \begin{bmatrix}a_{1} \\ a_{2}\\ \vdots\\ a_{n}\end{bmatrix}$, $\vect{v}_2 = \begin{bmatrix}b_{1} \\ b_{2}\\ \vdots\\ b_{n}\end{bmatrix}$  
+ii. For two vectors $\vect{v}_1 = \begin{pmatrix}a_{1} \\ a_{2}\\ \vdots\\ a_{n}\end{pmatrix}$, $\vect{v}_2 = \begin{pmatrix}b_{1} \\ b_{2}\\ \vdots\\ b_{n}\end{pmatrix}$  
 &nbsp;and constants $c$ we see that
 
 $$
 \begin{eqnarray*}
-            (c\mathbf{v}_1)\ip\mathbf{v}_2 &=&  \begin{bmatrix}ca_{1}\\ca_{2}\\ \vdots\\ca_{n}\end{bmatrix}\ip\begin{bmatrix}b_{1}\\b_{2}\\       \vdots\\b_{n}\end{bmatrix} = (ca_1)b_1 + (ca_2)b_2+ \ldots + (ca_n)b_n \\
+            (c\mathbf{v}_1)\ip\mathbf{v}_2 &=&  \begin{pmatrix}ca_{1}\\ca_{2}\\ \vdots\\ca_{n}\end{pmatrix}\ip\begin{pmatrix}b_{1}\\b_{2}\\       \vdots\\b_{n}\end{pmatrix} = (ca_1)b_1 + (ca_2)b_2+ \ldots + (ca_n)b_n \\
             &=& c\,(a_1b_1 +a_2b_2+ \ldots + a_nb_n) = c\, (\mathbf{v}_1\ip\mathbf{v}_2)
 \end{eqnarray*}
 $$
@@ -311,11 +311,11 @@ Prove property iii.
 Let
 
 $$
-\mathbf{v}_1=\begin{bmatrix} a_1\\a_2\\ \vdots\\ a_n\end{bmatrix}
+\mathbf{v}_1=\begin{pmatrix} a_1\\a_2\\ \vdots\\ a_n\end{pmatrix}
   \quad \text{and}\quad
-  \mathbf{v}_2=\begin{bmatrix}  b_1 \\ b_2 \\ \vdots \\ b_n \end{bmatrix}
+  \mathbf{v}_2=\begin{pmatrix}  b_1 \\ b_2 \\ \vdots \\ b_n \end{pmatrix}
   \quad \text{and}\quad
-    \mathbf{v}_3=\begin{bmatrix}  c_1 \\ c_2 \\ \vdots \\ c_n \end{bmatrix}
+    \mathbf{v}_3=\begin{pmatrix}  c_1 \\ c_2 \\ \vdots \\ c_n \end{pmatrix}
 
 
 $$
@@ -325,12 +325,12 @@ be three arbitrary vectors in $\mathbb{R}^n$. Then
 $$
 \begin{align*}
 \left(\mathbf{v}_1 + \mathbf{v}_2 \right) \ip \mathbf{v}_3 &=
-\left(\begin{bmatrix}a_{1} \\ a_{2}\\ \vdots\\a_{n}\end{bmatrix} + \begin{bmatrix}b_{1} \\ b_{2}\\ \vdots \\ b_{n}\end{bmatrix} \right) \ip \begin{bmatrix}  c_1 \\ c_2 \\ \vdots \\ c_n \end{bmatrix} \\
-&= \begin{bmatrix} a_1+b_1\\a_2+b_2\\ \vdots\\ a_n+b_n\end{bmatrix}\ip \begin{bmatrix}  c_1 \\ c_2 \\ \vdots \\ c_n \end{bmatrix} \\
+\left(\begin{pmatrix}a_{1} \\ a_{2}\\ \vdots\\a_{n}\end{pmatrix} + \begin{pmatrix}b_{1} \\ b_{2}\\ \vdots \\ b_{n}\end{pmatrix} \right) \ip \begin{pmatrix}  c_1 \\ c_2 \\ \vdots \\ c_n \end{pmatrix} \\
+&= \begin{pmatrix} a_1+b_1\\a_2+b_2\\ \vdots\\ a_n+b_n\end{pmatrix}\ip \begin{pmatrix}  c_1 \\ c_2 \\ \vdots \\ c_n \end{pmatrix} \\
             &= (a_1+b_1)c_1 +(a_2+b_2)c_2+ \ldots + (a_n+b_n)c_n  \\
       &= a_1c_1 +b_1c_1+a_2c_2+b_2c_2 \ldots + a_nc_n+b_nc_n \\
       &= a_1c_1 +a_2c_2+\ldots + a_nc_n +b_1c_1+b_2c_2 \ldots +b_nc_n \\
-      &= \begin{bmatrix}a_{1} \\ a_{2}\\ \vdots\\a_{n}\end{bmatrix}\ip\begin{bmatrix}  c_1 \\ c_2 \\ \vdots \\ c_n \end{bmatrix}+\begin{bmatrix}  b_1 \\ b_2 \\ \vdots \\ b_n \end{bmatrix}\ip\begin{bmatrix}  c_1 \\ c_2 \\ \vdots \\ c_n \end{bmatrix} \\
+      &= \begin{pmatrix}a_{1} \\ a_{2}\\ \vdots\\a_{n}\end{pmatrix}\ip\begin{pmatrix}  c_1 \\ c_2 \\ \vdots \\ c_n \end{pmatrix}+\begin{pmatrix}  b_1 \\ b_2 \\ \vdots \\ b_n \end{pmatrix}\ip\begin{pmatrix}  c_1 \\ c_2 \\ \vdots \\ c_n \end{pmatrix} \\
       &= \mathbf{v}_1\ip\mathbf{v}_3+\mathbf{v}_2\ip\mathbf{v}_3.
 \end{align*}
 $$
@@ -459,8 +459,8 @@ Two vectors $\mathbf{v}$ and $\mathbf{w}$ in $\mathbb{R}^n$ are called **orthogo
 :::{prf:example}
 :label: Ex:InnerProduct:CheckVectorsOrthogonal
 
-Let &nbsp; $\mathbf{u} = \begin{bmatrix} 1\\2\\-1\\-1\end{bmatrix}$, &nbsp; $\mathbf{v} = \begin{bmatrix} 3\\-1\\2\\-1\end{bmatrix}$ &nbsp; and &nbsp;
-$\mathbf{w} = \begin{bmatrix} 2\\2\\-1\\2\end{bmatrix}$.
+Let &nbsp; $\mathbf{u} = \begin{pmatrix} 1\\2\\-1\\-1\end{pmatrix}$, &nbsp; $\mathbf{v} = \begin{pmatrix} 3\\-1\\2\\-1\end{pmatrix}$ &nbsp; and &nbsp;
+$\mathbf{w} = \begin{pmatrix} 2\\2\\-1\\2\end{pmatrix}$.
 
 We compute
 
@@ -627,29 +627,29 @@ We compute the orthogonal projection of the vector
 
 $$
 
- \mathbf{w} = \begin{bmatrix} 2\\ -4 \\ -1 \\ -5\end{bmatrix}
+ \mathbf{w} = \begin{pmatrix} 2\\ -4 \\ -1 \\ -5\end{pmatrix}
 $$
 
 onto the vector
 
 $$
 
-   \mathbf{v} =  \begin{bmatrix} 1 \\1\\1\\1\end{bmatrix}.
+   \mathbf{v} =  \begin{pmatrix} 1 \\1\\1\\1\end{pmatrix}.
 $$
 
 We proceed as follows
 
 $$
 
- \mathbf{\hat{w}}  = \text{proj}_{\mathbf{v}}(\mathbf{w}) =  \frac{\mathbf{w}\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}} \mathbf{v} = \frac{-8}{4}\begin{bmatrix} 1 \\1\\1\\1\end{bmatrix} =
- \begin{bmatrix} -2\\-2\\-2\\-2\end{bmatrix}.
+ \mathbf{\hat{w}}  = \text{proj}_{\mathbf{v}}(\mathbf{w}) =  \frac{\mathbf{w}\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}} \mathbf{v} = \frac{-8}{4}\begin{pmatrix} 1 \\1\\1\\1\end{pmatrix} =
+ \begin{pmatrix} -2\\-2\\-2\\-2\end{pmatrix}.
 $$
 
 We verify the orthogonality:
 
 $$
 
-  (\mathbf{w} - \mathbf{\hat{w}} )\ip \mathbf{v} = \begin{bmatrix} 4 \\-2\\1\\-3\end{bmatrix} \ip \begin{bmatrix} 1 \\1\\1\\1\end{bmatrix} = 4-2+1-3 = 0,
+  (\mathbf{w} - \mathbf{\hat{w}} )\ip \mathbf{v} = \begin{pmatrix} 4 \\-2\\1\\-3\end{pmatrix} \ip \begin{pmatrix} 1 \\1\\1\\1\end{pmatrix} = 4-2+1-3 = 0,
 $$
 
 so indeed
@@ -683,9 +683,9 @@ Verify your statement for the following three vectors
 
 $$
 
- \mathbf{v} = \begin{bmatrix} 1\\ 1 \\ -2 \\ -3\end{bmatrix}, \quad
- \mathbf{w}_1 = \begin{bmatrix} 6\\ 4 \\ -7 \\ -7\end{bmatrix}, \quad
- \mathbf{w}_2 = \begin{bmatrix} 5\\ 6 \\ -2 \\ -10\end{bmatrix}.
+ \mathbf{v} = \begin{pmatrix} 1\\ 1 \\ -2 \\ -3\end{pmatrix}, \quad
+ \mathbf{w}_1 = \begin{pmatrix} 6\\ 4 \\ -7 \\ -7\end{pmatrix}, \quad
+ \mathbf{w}_2 = \begin{pmatrix} 5\\ 6 \\ -2 \\ -10\end{pmatrix}.
 $$
 
 :::
@@ -716,8 +716,8 @@ $$
 and
 
 $$
-\mathbf{w}_1 - \mathbf{w}_2 = \begin{bmatrix} 6\\ 4 \\ -7 \\ -7\end{bmatrix} - \begin{bmatrix} 5\\ 6 \\ -2 \\ -10 \end{bmatrix} =
-  \begin{bmatrix} 1\\ -2 \\ -5 \\ 3\end{bmatrix}.
+\mathbf{w}_1 - \mathbf{w}_2 = \begin{pmatrix} 6\\ 4 \\ -7 \\ -7\end{pmatrix} - \begin{pmatrix} 5\\ 6 \\ -2 \\ -10 \end{pmatrix} =
+  \begin{pmatrix} 1\\ -2 \\ -5 \\ 3\end{pmatrix}.
 $$
 
 We see $(\mathbf{w}_1 - \mathbf{w}_2)\ip \mathbf{v} = 1 - 2 + 10 + 9 = 0$,
@@ -740,7 +740,7 @@ Two vectors $\vect{w}_1$, $\vect{w}_2 $  with the same projection onto $\vect{v}
 ## Norm in $\mathbb{R}^n$
 
 The length of a vector in the plane can be computed using the dot product: for
-$\mathbf{v}=\begin{bmatrix}a_{1}\\a_{2}\end{bmatrix}$ in $\mathbb{R}^2$ we have seen that
+$\mathbf{v}=\begin{pmatrix}a_{1}\\a_{2}\end{pmatrix}$ in $\mathbb{R}^2$ we have seen that
 
 $$
 
@@ -816,7 +816,7 @@ The Triangle Inequality.
 We compute the norms of the vectors
 
 $$
-\mathbf{v} = \begin{bmatrix} 1 \\ -2 \\ 3 \\ -1 \end{bmatrix} \quad \text{and} \quad  -2\mathbf{v} = \begin{bmatrix} -2 \\ 4 \\ -6 \\ 2 \end{bmatrix}.
+\mathbf{v} = \begin{pmatrix} 1 \\ -2 \\ 3 \\ -1 \end{pmatrix} \quad \text{and} \quad  -2\mathbf{v} = \begin{pmatrix} -2 \\ 4 \\ -6 \\ 2 \end{pmatrix}.
 $$
 
 We find
@@ -857,14 +857,14 @@ $$
 ::::{prf:example}
 :label: Ex:InnerProduct:Distance
 
-For the vectors $\vect{u} = \begin{bmatrix}1 \\ 3 \\ 2 \\ 4 \end{bmatrix}$ and
-$\vect{v} = \begin{bmatrix}5 \\ 1 \\ 3 \\ 4 \end{bmatrix}$ in $\R^4$
+For the vectors $\vect{u} = \begin{pmatrix}1 \\ 3 \\ 2 \\ 4 \end{pmatrix}$ and
+$\vect{v} = \begin{pmatrix}5 \\ 1 \\ 3 \\ 4 \end{pmatrix}$ in $\R^4$
 
 the distance is given by
 
 $$
 
-  \norm{\vect{v}-\vect{u}} = \norm{\begin{bmatrix}4 \\ -2 \\ 1 \\ 0 \end{bmatrix}}
+  \norm{\vect{v}-\vect{u}} = \norm{\begin{pmatrix}4 \\ -2 \\ 1 \\ 0 \end{pmatrix}}
   = \sqrt{4^2 + (-2)^2 + 1^2 + 0^2} = \sqrt{21}.
 $$
 
@@ -981,7 +981,7 @@ $$
 :::{prf:example}
 :label: Ex:InnerProduct:UnitVector
 
-We compute the unit vector $\mathbf{u}$ in the direction of the vector $\mathbf{v} = \begin{bmatrix}1 \\ 2 \\ 4 \\ -2 \end{bmatrix}$ in $\mathbb{R}^4$.  
+We compute the unit vector $\mathbf{u}$ in the direction of the vector $\mathbf{v} = \begin{pmatrix}1 \\ 2 \\ 4 \\ -2 \end{pmatrix}$ in $\mathbb{R}^4$.  
 As follows:
 
 $$
@@ -992,7 +992,7 @@ $$
 so
 
 $$
-\mathbf{u} = \dfrac{1}{5} \begin{bmatrix}1 \\ 2 \\ 4 \\ -2 \end{bmatrix} = \begin{bmatrix}1/5 \\ 2/5 \\ 4/5 \\ -2/5 \end{bmatrix}.
+\mathbf{u} = \dfrac{1}{5} \begin{pmatrix}1 \\ 2 \\ 4 \\ -2 \end{pmatrix} = \begin{pmatrix}1/5 \\ 2/5 \\ 4/5 \\ -2/5 \end{pmatrix}.
 $$
 
 :::
@@ -1051,8 +1051,8 @@ $$
 :::{prf:example}
 :label: Ex:InnerProduct:Pythagoras_in_R^4
 
-We verify the equality for the vectors $\mathbf{v} = \begin{bmatrix} 2 \\ -3\\ 3 \\ 1 \end{bmatrix}$
-and $\mathbf{w} = \begin{bmatrix} 2 \\ 4 \\ 1 \\ 5 \end{bmatrix}$ in $\mathbb{R}^4$.
+We verify the equality for the vectors $\mathbf{v} = \begin{pmatrix} 2 \\ -3\\ 3 \\ 1 \end{pmatrix}$
+and $\mathbf{w} = \begin{pmatrix} 2 \\ 4 \\ 1 \\ 5 \end{pmatrix}$ in $\mathbb{R}^4$.
 
 First of all
 
@@ -1073,7 +1073,7 @@ Furthermore
 
 $$
 
- \mathbf{v}+\mathbf{w} = \begin{bmatrix} 4 \\ 1 \\ 4 \\ 6 \end{bmatrix} \Longrightarrow \norm{\mathbf{v}+\mathbf{w}} = \sqrt{4^2+1^2+4^2+6^2} = \sqrt{69}
+ \mathbf{v}+\mathbf{w} = \begin{pmatrix} 4 \\ 1 \\ 4 \\ 6 \end{pmatrix} \Longrightarrow \norm{\mathbf{v}+\mathbf{w}} = \sqrt{4^2+1^2+4^2+6^2} = \sqrt{69}
 
 
 $$
@@ -1184,8 +1184,8 @@ $$
 :::{prf:example}
 :label: Ex:InnerProduct:Cauchy-Schwarz-Check
 
-We verify that the inequality holds for the vectors $\mathbf{v} = \begin{bmatrix} 1 \\ -2\\ 3 \\ -4 \end{bmatrix}$
-and $\mathbf{w} = \begin{bmatrix} -5 \\ 4 \\-3 \\ 0 \end{bmatrix}$ in $\mathbb{R}^4$.
+We verify that the inequality holds for the vectors $\mathbf{v} = \begin{pmatrix} 1 \\ -2\\ 3 \\ -4 \end{pmatrix}$
+and $\mathbf{w} = \begin{pmatrix} -5 \\ 4 \\-3 \\ 0 \end{pmatrix}$ in $\mathbb{R}^4$.
 
 As follows
 
@@ -1240,8 +1240,8 @@ and this, apart from the factor 2, is the Cauchy-Schwarz Inequality.
 :label: Ex:InnerProduct:TriangleInequality
 
 We verify the inequality for the vectors
-$\mathbf{v} = \begin{bmatrix} -1 \\ 2\\ 3  \end{bmatrix}$
-and $\mathbf{w} = \begin{bmatrix} 4 \\ -4\\ 3  \end{bmatrix}$:
+$\mathbf{v} = \begin{pmatrix} -1 \\ 2\\ 3  \end{pmatrix}$
+and $\mathbf{w} = \begin{pmatrix} 4 \\ -4\\ 3  \end{pmatrix}$:
 
 $$
 
@@ -1401,10 +1401,10 @@ We can model this as follows:
 put the $\ce{C}$-atom at the origin of $\mathbb{R}^3$, and the $\ce{H}$-atoms at the positions/vectors
 
 $$
-  \mathbf{v}_1 = \begin{bmatrix}1 \\ 1 \\ 1   \end{bmatrix}, \quad
-  \mathbf{v}_2 = \begin{bmatrix}-1 \\ -1 \\ 1   \end{bmatrix}, \quad
-  \mathbf{v}_3 = \begin{bmatrix}-1 \\ 1 \\ -1   \end{bmatrix} \quad \text{and} \quad
-  \mathbf{v}_4 = \begin{bmatrix}1 \\ -1 \\ -1   \end{bmatrix}.
+  \mathbf{v}_1 = \begin{pmatrix}1 \\ 1 \\ 1   \end{pmatrix}, \quad
+  \mathbf{v}_2 = \begin{pmatrix}-1 \\ -1 \\ 1   \end{pmatrix}, \quad
+  \mathbf{v}_3 = \begin{pmatrix}-1 \\ 1 \\ -1   \end{pmatrix} \quad \text{and} \quad
+  \mathbf{v}_4 = \begin{pmatrix}1 \\ -1 \\ -1   \end{pmatrix}.
 $$
 
 Then all four points have the same distance $\sqrt{3}$ to the origin, and all points have the same distance to each other, namely

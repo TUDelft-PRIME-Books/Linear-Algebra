@@ -7,7 +7,7 @@ In the previous sections we hinted at the possibility to allow eigenvalues to be
 ::::{prf:example}
 :label: Ex:ComplexEV:FirstExample
 
-Consider the matrix $A = \left[\begin{array}{cc} 1 & -2 \\ 1 & 3  \end{array}\right]$.
+Consider the matrix $A = \left(\begin{array}{cc} 1 & -2 \\ 1 & 3  \end{array}\right)$.
 
 We first compute the characteristic polynomial
 
@@ -31,11 +31,11 @@ $$
 So we have to solve a homogeneous system of linear equations, where now the coefficient matrix contains complex numbers. This slightly complicates the computation, but for this $2 \times 2$ matrix things don't get too bad.
 
 $$
-\left[\begin{array}{cc|c} 1 - (2+i) & -2& 0 \\ 1 & 3- (2+i) & 0 \end{array}\right]
+\left(\begin{array}{cc|c} 1 - (2+i) & -2& 0 \\ 1 & 3- (2+i) & 0 \end{array}\right)
 =
-\left[\begin{array}{cc|c} -1 - i & -2& 0 \\ 1 & 1-i & 0 \end{array}\right]
+\left(\begin{array}{cc|c} -1 - i & -2& 0 \\ 1 & 1-i & 0 \end{array}\right)
 \sim
-\left[\begin{array}{cc|c} 0 & \class{blue}0 & 0 \\ 1 & 1-i & 0 \end{array}\right]
+\left(\begin{array}{cc|c} 0 & \class{blue}0 & 0 \\ 1 & 1-i & 0 \end{array}\right)
 ,
 $$
 
@@ -47,58 +47,58 @@ $$
 $$
 
 We can read off a solution (i.e., complex eigenvector): &nbsp; 
-$\vect{v} = \left[\begin{array}{c}  -1+i \\1 \end{array}\right]$.
+$\vect{v} = \left(\begin{array}{c}  -1+i \\1 \end{array}\right)$.
 
 To check that we have indeed an eigenvector is also slightly more involved than in the real case.
 
 $$
-\left[\begin{array}{cc} 1 & -2 \\ 1 & 3  \end{array}\right]
-\left[\begin{array}{c}  -1+i \\1 \end{array}\right]
-= \left[\begin{array}{c}  -1+i-2 \\-1+i +3 \end{array}\right]
-= \left[\begin{array}{c}  -3+i \\ 2+i \end{array}\right]
+\left(\begin{array}{cc} 1 & -2 \\ 1 & 3  \end{array}\right)
+\left(\begin{array}{c}  -1+i \\1 \end{array}\right)
+= \left(\begin{array}{c}  -1+i-2 \\-1+i +3 \end{array}\right)
+= \left(\begin{array}{c}  -3+i \\ 2+i \end{array}\right)
 $$
 
 and that agrees with
 
 $$
-(2+i)\left[\begin{array}{c}  -1+i \\1 \end{array}\right]
- = \left[\begin{array}{c}  -3+i \\2+i \end{array}\right].
+(2+i)\left(\begin{array}{c}  -1+i \\1 \end{array}\right)
+ = \left(\begin{array}{c}  -3+i \\2+i \end{array}\right).
 $$
 
 Alternatively, to simplify the augmented matrix
 
 $$
-\left[\begin{array}{cc|c} -1 - i & -2& 0 \\ 1 & 1-i & 0 \end{array}\right]
+\left(\begin{array}{cc|c} -1 - i & -2& 0 \\ 1 & 1-i & 0 \end{array}\right)
 ,
 $$
 
 we could have used the entry $-2$ in the first row of the augmented matrix to create a zero in the second row. More specifically, if we add the first row $\dfrac{1-i}{2}$ times to the second row, we get
 
 $$
-\left[\begin{array}{cc|c} -1 - i & -2& 0 \\ 1 & 1-i & 0 \end{array}\right]
+\left(\begin{array}{cc|c} -1 - i & -2& 0 \\ 1 & 1-i & 0 \end{array}\right)
 \sim
-\left[\begin{array}{cc|c} -1-i & -2& 0 \\ 0 & 0 & 0 \end{array}\right]
+\left(\begin{array}{cc|c} -1-i & -2& 0 \\ 0 & 0 & 0 \end{array}\right)
  \sim
-\left[\begin{array}{cc|c} 1+i & 2& 0 \\ 0 & 0 & 0 \end{array}\right]
+\left(\begin{array}{cc|c} 1+i & 2& 0 \\ 0 & 0 & 0 \end{array}\right)
 .
 $$
 
-Then the vector $\vect{u} = \left[\begin{array}{c} -2 \\ 1+i \end{array}\right] $ is a natural candidate for
+Then the vector $\vect{u} = \left(\begin{array}{c} -2 \\ 1+i \end{array}\right) $ is a natural candidate for
 an eigenvector.
 
 At first sight it seems that we have found two linearly independent eigenvectors for the eigenvalue $\lambda_1 = 2+i$.
 However, closer inspection shows that
 
 $$
-\vect{u} = \left[\begin{array}{c} -2 \\ 1+i  \end{array}\right]
-=  (1+i)  \left[\begin{array}{c}  -1+i \\1 \end{array}\right]
+\vect{u} = \left(\begin{array}{c} -2 \\ 1+i  \end{array}\right)
+=  (1+i)  \left(\begin{array}{c}  -1+i \\1 \end{array}\right)
  = (1+i)\vect{v},
 $$
 
 so the two vectors are *complex* multiples of each other, and hence are not linearly independent.
 
 For the other eigenvalue we can proceed in the same manner and find (for instance) the eigenvector
-&nbsp; $\vect{v}_2 =\left[\begin{array}{c} -2 \\ 1-i \end{array}\right] $.
+&nbsp; $\vect{v}_2 =\left(\begin{array}{c} -2 \\ 1-i \end{array}\right) $.
 
 :::::
 
@@ -114,9 +114,9 @@ We need a few definitions to settle matters a bit more formally. In the remainde
 
 The **complex conjugate** $\overline{A}$ of a matrix $A$ is defined component wise:
 
-if $\quad A = \left[\begin{array}{ccc} a_{11} & \ldots & a_{1n} \\ \vdots & &\vdots \\ a_{m1} & \ldots & a_{mn}  \end{array}\right] \quad$
+if $\quad A = \left(\begin{array}{ccc} a_{11} & \ldots & a_{1n} \\ \vdots & &\vdots \\ a_{m1} & \ldots & a_{mn}  \end{array}\right) \quad$
 then
-$\quad\overline{A} = \left[\begin{array}{ccc} \overline{a_{11}} & \ldots & \overline{a_{1n}} \\ \vdots & &\vdots \\ \overline{a_{m1}} & \ldots & \overline{a_{mn}} \end{array}\right] $.
+$\quad\overline{A} = \left(\begin{array}{ccc} \overline{a_{11}} & \ldots & \overline{a_{1n}} \\ \vdots & &\vdots \\ \overline{a_{m1}} & \ldots & \overline{a_{mn}} \end{array}\right) $.
 
 ::::::
 
@@ -212,7 +212,7 @@ Things look especially simple in the next example.
 ::::::{prf:example}
 :label: Ex:ComplexEV:abba
 
-Let $A$ be the matrix $A=  \left[\begin{array}{cc} a & -b \\ b & a \end{array}\right]$, with $b \neq 0$.
+Let $A$ be the matrix $A=  \left(\begin{array}{cc} a & -b \\ b & a \end{array}\right)$, with $b \neq 0$.
 
 The characteristic polynomial of $A$ is then given by $p_A(\lambda) = (a-\lambda)^2 + b^2$.
 
@@ -225,23 +225,23 @@ $$
 From row reduction of the augmented matrix
 
 \begin{eqnarray*}
-[A - (a+bi)I | \vect{0}] &=&
-\left[\begin{array}{cc|c} a-(a+bi) & -b &0\\ b & a-(a+bi)&0 \end{array}\right]\\
+(A - (a+bi)I | \vect{0}) &=&
+\left(\begin{array}{cc|c} a-(a+bi) & -b &0\\ b & a-(a+bi)&0 \end{array}\right)\\
 &=&
-\left[\begin{array}{cc|c} -bi & -b&0 \\ b & -bi&0 \end{array}\right] \\
+\left(\begin{array}{cc|c} -bi & -b&0 \\ b & -bi&0 \end{array}\right) \\
 &\sim&
-\left[\begin{array}{cc|c} bi & b &0\\ 0 & 0&0 \end{array}\right],
+\left(\begin{array}{cc|c} bi & b &0\\ 0 & 0&0 \end{array}\right),
 \end{eqnarray*}
 
-we see that $\vect{v} = \left[\begin{array}{c} 1 \\ -i \end{array}\right]$
+we see that $\vect{v} = \left(\begin{array}{c} 1 \\ -i \end{array}\right)$
 is an eigenvector for $\lambda_1 = a+bi$. By taking conjugates
 (according to {prf:ref}`Prop:ComplexEV:Conjugation`) we can conclude that
-$\vect{w} = \left[\begin{array}{c} 1 \\ i \end{array}\right]$,
+$\vect{w} = \left(\begin{array}{c} 1 \\ i \end{array}\right)$,
 i.e. the conjugate of $\vect{v}$, will be an eigenvector for $\lambda_2= a-bi$.
 
 ::::::
 
-There is a nice geometric interpretation for matrices of the form $\left[\begin{array}{cc} a & -b \\ b & a \end{array}\right]$.
+There is a nice geometric interpretation for matrices of the form $\left(\begin{array}{cc} a & -b \\ b & a \end{array}\right)$.
 
 Or rather, for the corresponding linear transformation.
 
@@ -251,7 +251,7 @@ Or rather, for the corresponding linear transformation.
 The linear transformation $T:\R^2\to\R^2$ given by
 
 $$
-T(\vect{x}) = \left[\begin{array}{cc} a & -b \\ b & a \end{array}\right]
+T(\vect{x}) = \left(\begin{array}{cc} a & -b \\ b & a \end{array}\right)
 \vect{x}, \quad  a,b \in \R, \quad b \neq 0,
 $$
 
@@ -259,7 +259,7 @@ can be described as a rotation followed by a "scaling".
 
 In fact, it holds that
 
-$A = \left[\begin{array}{cc} a & -b \\ b & a \end{array}\right] = r  \left[\begin{array}{cc} \cos({\varphi}) & -\sin({\varphi}) \\ \sin({\varphi}) & \cos({\varphi}) \end{array}\right]
+$A = \left(\begin{array}{cc} a & -b \\ b & a \end{array}\right) = r  \left(\begin{array}{cc} \cos({\varphi}) & -\sin({\varphi}) \\ \sin({\varphi}) & \cos({\varphi}) \end{array}\right)
 $, for some $r > 0$ and angle $\varphi$.
 
 ::::::
@@ -272,35 +272,35 @@ Both columns of $A$ have length $r = \sqrt{a^2 + (\pm b)^2} = \sqrt{a^2 + b^2}$.
 If we take out this factor, we get
 
 $$
-\left[\begin{array}{cc} a & -b \\ b & a \end{array}\right]
+\left(\begin{array}{cc} a & -b \\ b & a \end{array}\right)
  =
-r \left[\begin{array}{cc} a/r & -b/r \\
-b/r & a/r \end{array}\right]
+r \left(\begin{array}{cc} a/r & -b/r \\
+b/r & a/r \end{array}\right)
 .
 $$
 
-The first column $\left[\begin{array}{c} a/r  \\     b/r \end{array}\right]$
+The first column $\left(\begin{array}{c} a/r  \\     b/r \end{array}\right)$
 has length one, so it lies on the unit circle, and hence must be of the form
 
 $$
-\left[\begin{array}{c} a/r  \\     b/r \end{array}\right]
- = \left[\begin{array}{c} \cos(\varphi)  \\    \sin(\varphi) \end{array}\right]
+\left(\begin{array}{c} a/r  \\     b/r \end{array}\right)
+ = \left(\begin{array}{c} \cos(\varphi)  \\    \sin(\varphi) \end{array}\right)
 , \quad \text{for some angle  }  \varphi,
 $$
 
 and this makes that
 
 $$
-\left[\begin{array}{cc} a & -b \\ b & a \end{array}\right]
+\left(\begin{array}{cc} a & -b \\ b & a \end{array}\right)
  =
-r \left[\begin{array}{cc} a/r & -b/r \\
-b/r & a/r \end{array}\right]
- = r \left[\begin{array}{cc} \cos(\varphi)  & - \sin(\varphi)\\
-\sin(\varphi) & \cos(\varphi) \end{array}\right]
+r \left(\begin{array}{cc} a/r & -b/r \\
+b/r & a/r \end{array}\right)
+ = r \left(\begin{array}{cc} \cos(\varphi)  & - \sin(\varphi)\\
+\sin(\varphi) & \cos(\varphi) \end{array}\right)
 .
 $$
 
-So the 'action' of the matrix $A = \left[\begin{array}{cc} a & -b \\ b & a \end{array}\right]$
+So the 'action' of the matrix $A = \left(\begin{array}{cc} a & -b \\ b & a \end{array}\right)$
 on a vector $\vect{x}$ is a (counterclockwise) rotation over the angle $\varphi$ followed by
 a scaling (stretching/dilatation) with a factor $r$.
 
@@ -373,13 +373,13 @@ If we apply the above to the case $n = 2$, we can rewrite Equation {eq}`Eq:Compl
 as
 
 $$
-A [\,\vect{u}\,\, \vect{w}\,] = [\,\vect{u}\,\, \vect{w}\,] \left[\begin{array}{cc} \alpha & -\beta \\ \beta & \alpha \end{array}\right].
+A (\,\vect{u}\,\, \vect{w}\,) = (\,\vect{u}\,\, \vect{w}\,) \left(\begin{array}{cc} \alpha & -\beta \\ \beta & \alpha \end{array}\right).
 $$
 
-So if we define $P$ to be the matrix $[\,\vect{u}\,\, \vect{w}\,]$ then we have $AP = PC$, where
+So if we define $P$ to be the matrix $(\,\vect{u}\,\, \vect{w}\,)$ then we have $AP = PC$, where
 
 $$
-  C =  \left[\begin{array}{cc} \alpha & -\beta \\ \beta & \alpha \end{array}\right].
+  C =  \left(\begin{array}{cc} \alpha & -\beta \\ \beta & \alpha \end{array}\right).
 $$
 
 This more or less settles the following proposition.
@@ -391,7 +391,7 @@ Suppose $A$ is a $2 \times 2$ matrix with eigenvalues $\alpha \pm \beta i$, with
 Then $A$ can be written as
 
 $$
-A = PCP^{-1} = P\left[\begin{array}{cc} \alpha & -\beta \\ \beta & \alpha \end{array}\right]
+A = PCP^{-1} = P\left(\begin{array}{cc} \alpha & -\beta \\ \beta & \alpha \end{array}\right)
 P^{-1}
 $$
 
@@ -400,7 +400,7 @@ for some invertible matrix $P$.
 {prf:ref}`Prop:ComplexEV:Rotation` states that $C$ can be written as
 
 $$
-C = r\left[\begin{array}{cc} \cos(\varphi) & -\sin(\varphi) \\ \sin(\varphi) & \cos(\varphi) \end{array}\right]
+C = r\left(\begin{array}{cc} \cos(\varphi) & -\sin(\varphi) \\ \sin(\varphi) & \cos(\varphi) \end{array}\right)
 .
 $$
 
@@ -411,7 +411,7 @@ We can formulate this as there being a **hidden rotation** in $A$.
 To be specific,
 
 $$
-P =   [ \,\vect{u}\,\, \vect{w}\, ] =\left[\begin{array}{cc}u_1 & w_1 \\ u_2&w_2 \end{array}\right],
+P =   ( \,\vect{u}\,\, \vect{w}\, ) =\left(\begin{array}{cc}u_1 & w_1 \\ u_2&w_2 \end{array}\right),
 $$
 
 where $\vect{u} + i \vect{w}$ is an eigenvector for $\lambda = \alpha - \beta i$.
@@ -420,49 +420,49 @@ Let us illustrate matters with the following example.
 
 ::::::{prf:example}
 
-The matrix $A = \left[\begin{array}{cc} 1 & -2 \\ 1 & 3  \end{array}\right]$
+The matrix $A = \left(\begin{array}{cc} 1 & -2 \\ 1 & 3  \end{array}\right)$
 of {prf:ref}`Ex:ComplexEV:FirstExample`
 has the eigenvalues $\lambda_{1,2} = \alpha \pm \beta i = 2 \pm i$.
 An eigenvector for $2-i$ is given by
 
 $$
-\vect{v} =  \left[\begin{array}{c} -2 \\ 1-i  \end{array}\right]
- = \left[\begin{array}{c} -2 \\ 1 \end{array}\right]
- + i\left[\begin{array}{c} 0 \\ -1  \end{array}\right].
+\vect{v} =  \left(\begin{array}{c} -2 \\ 1-i  \end{array}\right)
+ = \left(\begin{array}{c} -2 \\ 1 \end{array}\right)
+ + i\left(\begin{array}{c} 0 \\ -1  \end{array}\right).
 $$
 
 Let us establish the identity
 
 $$
-P^{-1}AP = \left[\begin{array}{cc} \alpha & -\beta \\ \beta & \alpha \end{array}\right] = \left[\begin{array}{cc} 2 & -1 \\ 1 & 2 \end{array}\right].
+P^{-1}AP = \left(\begin{array}{cc} \alpha & -\beta \\ \beta & \alpha \end{array}\right) = \left(\begin{array}{cc} 2 & -1 \\ 1 & 2 \end{array}\right).
 $$
 
 According to {prf:ref}`Prop:ComplexEV:HiddenRotation` we can take
 
 $$
-P = \left[\begin{array}{cc} -2 & 0 \\ 1 & -1 \end{array}\right],
+P = \left(\begin{array}{cc} -2 & 0 \\ 1 & -1 \end{array}\right),
 $$
 
 with
 
 $$
-P^{-1} = \dfrac12\left[\begin{array}{cc} -1 & 0 \\ -1 & -2 \end{array}\right].
+P^{-1} = \dfrac12\left(\begin{array}{cc} -1 & 0 \\ -1 & -2 \end{array}\right).
 $$
 
 We then get
 
 $$
 \begin{array}{rcl}
-P^{-1}AP &=& \dfrac12\left[\begin{array}{cc} -1 & 0 \\ -1 & -2 \end{array}\right]
-\left[\begin{array}{cc} 1 & -2 \\ 1 & 3  \end{array}\right]
-\left[\begin{array}{cc} -2 & 0 \\ 1 & -1 \end{array}\right] \\
-&=& \dfrac12\left[\begin{array}{cc}  -1 & 2 \\ -3 & -4 \end{array}\right]
-\left[\begin{array}{cc} -2 & 0 \\ 1 & -1 \end{array}\right] \\
-&=& \dfrac12 \left[\begin{array}{cc} 4 & -2 \\ 2 & 4 \end{array}\right]
+P^{-1}AP &=& \dfrac12\left(\begin{array}{cc} -1 & 0 \\ -1 & -2 \end{array}\right)
+\left(\begin{array}{cc} 1 & -2 \\ 1 & 3  \end{array}\right)
+\left(\begin{array}{cc} -2 & 0 \\ 1 & -1 \end{array}\right) \\
+&=& \dfrac12\left(\begin{array}{cc}  -1 & 2 \\ -3 & -4 \end{array}\right)
+\left(\begin{array}{cc} -2 & 0 \\ 1 & -1 \end{array}\right) \\
+&=& \dfrac12 \left(\begin{array}{cc} 4 & -2 \\ 2 & 4 \end{array}\right)
  =
-\left[\begin{array}{cc} 2 & -1 \\ 1 & 2 \end{array}\right]
+\left(\begin{array}{cc} 2 & -1 \\ 1 & 2 \end{array}\right)
  =
-\left[\begin{array}{cc} \alpha & -\beta \\ \beta & \alpha \end{array}\right]
+\left(\begin{array}{cc} \alpha & -\beta \\ \beta & \alpha \end{array}\right)
 .
 \end{array}
 $$
@@ -501,12 +501,12 @@ In that case, if $\vect{v}_1, \ldots, \vect{v}_n$ are $n$ linearly independent e
 then
 
 $$
-A = PDP^{-1} \quad \text{for} \quad  D = \left[\begin{array}{cccc} \lambda_1 & 0 & \ldots & 0 \\
+A = PDP^{-1} \quad \text{for} \quad  D = \left(\begin{array}{cccc} \lambda_1 & 0 & \ldots & 0 \\
 0 & \lambda_2 & \ldots & 0 \\
 \vdots & \vdots & \ddots & \vdots \\
-0 & 0 & \ldots & \lambda_n\end{array}\right],
+0 & 0 & \ldots & \lambda_n\end{array}\right),
  \quad
-P = [  \,\vect{v}_1\,\,  \vect{v}_2 \,  \ldots \,  \vect{v}_n\,].
+P = (  \,\vect{v}_1\,\,  \vect{v}_2 \,  \ldots \,  \vect{v}_n\,).
 $$
 
 ::::::
@@ -514,18 +514,18 @@ $$
 ::::::{prf:example}
 :label: Ex:ComplexEV:FirstExampleCtd
 
-The matrix $A = \left[\begin{array}{cc} 1 & -2 \\ 1 & 3  \end{array}\right]$
+The matrix $A = \left(\begin{array}{cc} 1 & -2 \\ 1 & 3  \end{array}\right)$
 of {prf:ref}`Ex:ComplexEV:FirstExample` has the eigenvalues $\lambda_1 = 2 + i$,
-$\lambda_2 = 2 - i$,  with corresponding eigenvectors $\vect{v}_1 = \left[\begin{array}{c}  -1+i \\1 \end{array}\right]$,
-$\vect{v}_2 = \left[\begin{array}{c}  -1-i \\1 \end{array}\right]$.
+$\lambda_2 = 2 - i$,  with corresponding eigenvectors $\vect{v}_1 = \left(\begin{array}{c}  -1+i \\1 \end{array}\right)$,
+$\vect{v}_2 = \left(\begin{array}{c}  -1-i \\1 \end{array}\right)$.
 
 It follows that
 
 $$
-\left[\begin{array}{cc} 1 & -2 \\ 1 & 3  \end{array}\right]
- =  \left[\begin{array}{cc}  -1+i & -1-i \\1 &1  \end{array}\right]
-{\left[\begin{array}{cc}  2+i & 0 \\0 &2-i  \end{array}\right]
-\left[\begin{array}{cc}  -1+i & -1-i \\1 &1  \end{array}\right]
+\left(\begin{array}{cc} 1 & -2 \\ 1 & 3  \end{array}\right)
+ =  \left(\begin{array}{cc}  -1+i & -1-i \\1 &1  \end{array}\right)
+{\left(\begin{array}{cc}  2+i & 0 \\0 &2-i  \end{array}\right)
+\left(\begin{array}{cc}  -1+i & -1-i \\1 &1  \end{array}\right)
 }^{-1}.
 $$
 

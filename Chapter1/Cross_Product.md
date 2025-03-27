@@ -14,13 +14,13 @@ to construct a vector that is orthogonal to a given plane in $\mathbb{R}^3$. Thi
 Let $\mathbf{u}$ and $\mathbf{v}$ be vectors in $\mathbb{R}^3$ such that
 
 $$
-\mathbf{u}=\begin{bmatrix} a_1 \\ a_2 \\ a_3 \end{bmatrix} \textrm{ and } \mathbf{v}=\begin{bmatrix} b_1 \\ b_2 \\ b_3 \end{bmatrix}.
+\mathbf{u}=\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} \textrm{ and } \mathbf{v}=\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix}.
 $$
 
 The _cross product_ $\mathbf{u} \cp \mathbf{v}$ is defined as
 
 $$
-\mathbf{u} \cp \mathbf{v} = \begin{bmatrix} a_2b_3-a_3b_2 \\ a_3b_1-a_1b_3 \\ a_1b_2-a_2b_1 \end{bmatrix}.
+\mathbf{u} \cp \mathbf{v} = \begin{pmatrix} a_2b_3-a_3b_2 \\ a_3b_1-a_1b_3 \\ a_1b_2-a_2b_1 \end{pmatrix}.
 $$
 
 ::::
@@ -30,13 +30,13 @@ $$
 Let us compute the cross product of the following vectors $\mathbf{u}$ and $\mathbf{v}$.
 
 $$
-\mathbf{u}=\begin{bmatrix} 2 \\ 1 \\ 4 \end{bmatrix} \textrm{ and } \mathbf{v}=\begin{bmatrix} 3 \\ 6 \\ 5 \end{bmatrix}.
+\mathbf{u}=\begin{pmatrix} 2 \\ 1 \\ 4 \end{pmatrix} \textrm{ and } \mathbf{v}=\begin{pmatrix} 3 \\ 6 \\ 5 \end{pmatrix}.
 $$
 
 From the definition we obtain that $\mathbf{u}\cp \mathbf{v}$ is equal to
 
 $$
-\begin{bmatrix} 1\cdot 5-4\cdot 6 \\ 4\cdot 3-2\cdot 5 \\ 2\cdot 6-1\cdot 3 \end{bmatrix}=\begin{bmatrix} -19 \\ 2 \\ 9 \end{bmatrix}.
+\begin{pmatrix} 1\cdot 5-4\cdot 6 \\ 4\cdot 3-2\cdot 5 \\ 2\cdot 6-1\cdot 3 \end{pmatrix}=\begin{pmatrix} -19 \\ 2 \\ 9 \end{pmatrix}.
 $$
 
 You may notice something peculiar here. The vector $\mathbf{u} \cp \mathbf{v}$ is orthogonal to both $\mathbf{u}$ and $\mathbf{v}$. Indeed, the dot product of $\mathbf{u} \cp \mathbf{v}$ and $\mathbf{u}$ is equal to $(-19)\cdot 2+2\cdot 1+9\cdot 4=-38+2+36=0$ and the dot product $\mathbf{u} \cp \mathbf{v}$ and $\mathbf{v}$ is equal to $(-19)\cdot 3+2\cdot 6+9\cdot 5=-57+12+45=0$.
@@ -68,7 +68,7 @@ If $\mathbf{u}$ and $\mathbf{v}$ are vectors in $\mathbb{R}^3$, then $\mathbf{u}
 Let $\mathbf{u}$ and $\mathbf{v}$ be vectors in $\mathbb{R}^3$ such that
 
 $$
-\mathbf{u}=\begin{bmatrix} a_1 \\ a_2 \\ a_3 \end{bmatrix} \textrm{ and } \mathbf{v}=\begin{bmatrix} b_1 \\ b_2 \\ b_3 \end{bmatrix}.
+\mathbf{u}=\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} \textrm{ and } \mathbf{v}=\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix}.
 $$
 
 To establish that $\mathbf{u} \cp \mathbf{v}$ and $\mathbf{u}$ are orthogonal we need to show that their dot product is equal to zero. The dot product of these vectors is equal to
@@ -117,7 +117,7 @@ where $\theta$ is the angle between $\mathbf{u}$ and $\mathbf{v}$.
 Let $\mathbf{u}$ and $\mathbf{v}$ be vectors in $\mathbb{R}^3$ such that
 
 $$
-\mathbf{u}=\begin{bmatrix} a_1 \\ a_2 \\ a_3 \end{bmatrix} \textrm{ and } \mathbf{v}=\begin{bmatrix} b_1 \\ b_2 \\ b_3 \end{bmatrix}.
+\mathbf{u}=\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} \textrm{ and } \mathbf{v}=\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix}.
 $$
 
 To avoid having to work with square roots we first compute $\norm{\mathbf{u}\cp \mathbf{v}}^2$.
@@ -196,8 +196,8 @@ This means that the area of the given parallelogram is equal to $\norm{\overrigh
 
 $$
 \overrightarrow{OP}\cp \overrightarrow{OQ}=
- \begin{bmatrix} 1 \\ 2 \\ 1 \end{bmatrix} \cp \begin{bmatrix} 3 \\ 1 \\ 1 \end{bmatrix} =
-\begin{bmatrix} 2\cdot 1-1\cdot 1 \\ 1\cdot 3-1\cdot 1 \\ 1\cdot 1-2\cdot 3 \end{bmatrix}=\begin{bmatrix} 1 \\ 2 \\ -5 \end{bmatrix}.
+ \begin{pmatrix} 1 \\ 2 \\ 1 \end{pmatrix} \cp \begin{pmatrix} 3 \\ 1 \\ 1 \end{pmatrix} =
+\begin{pmatrix} 2\cdot 1-1\cdot 1 \\ 1\cdot 3-1\cdot 1 \\ 1\cdot 1-2\cdot 3 \end{pmatrix}=\begin{pmatrix} 1 \\ 2 \\ -5 \end{pmatrix}.
 $$
 
 Therefore, the area of the parallelogram is equal to
@@ -223,13 +223,13 @@ Area of the triangle $PQR$.
 The vectors $\overrightarrow{PQ}$ and $\overrightarrow{PR}$ have the following entries.
 
 $$
-\overrightarrow{PQ}=\begin{bmatrix} 2-2 \\ 2-1 \\ 2-0 \end{bmatrix}=\begin{bmatrix} 0 \\ 1 \\ 2 \end{bmatrix}, \quad \overrightarrow{PR}=\begin{bmatrix} 3-2 \\ 1-1 \\ 1-0 \end{bmatrix}=\begin{bmatrix} 1 \\ 0 \\ 1 \end{bmatrix}.
+\overrightarrow{PQ}=\begin{pmatrix} 2-2 \\ 2-1 \\ 2-0 \end{pmatrix}=\begin{pmatrix} 0 \\ 1 \\ 2 \end{pmatrix}, \quad \overrightarrow{PR}=\begin{pmatrix} 3-2 \\ 1-1 \\ 1-0 \end{pmatrix}=\begin{pmatrix} 1 \\ 0 \\ 1 \end{pmatrix}.
 $$
 
 The cross product of these two vectors is equal to
 
 $$
-\overrightarrow{PQ} \cp\overrightarrow{PR}=\begin{bmatrix} 1\cdot 1-2\cdot 0 \\ 2\cdot 1-0\cdot 1 \\ 0\cdot 0-1\cdot 1 \end{bmatrix}=\begin{bmatrix} 1 \\ 2 \\ -1 \end{bmatrix}.
+\overrightarrow{PQ} \cp\overrightarrow{PR}=\begin{pmatrix} 1\cdot 1-2\cdot 0 \\ 2\cdot 1-0\cdot 1 \\ 0\cdot 0-1\cdot 1 \end{pmatrix}=\begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix}.
 $$
 
 This means that the area of the given triangle is equal to
@@ -273,16 +273,16 @@ $(\mathbf{v_1}+\mathbf{v_2})\cp\mathbf{v_3} = \mathbf{v_1}\cp\mathbf{v_3}+\mathb
 Let $\mathbf{v_1}$, $\mathbf{v_2}$ and $\mathbf{v_3}$ be vectors in $\mathbb{R}^3$ such that
 
 $$
-\mathbf{v_1}=\begin{bmatrix} a_1 \\ a_2 \\ a_3 \end{bmatrix} \quad \mathbf{v_2}=\begin{bmatrix} b_1 \\ b_2 \\ b_3 \end{bmatrix} \quad \mathbf{v_3}=\begin{bmatrix} c_1 \\ c_2 \\ c_3 \end{bmatrix}.
+\mathbf{v_1}=\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} \quad \mathbf{v_2}=\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix} \quad \mathbf{v_3}=\begin{pmatrix} c_1 \\ c_2 \\ c_3 \end{pmatrix}.
 $$
 
 i. Intuitively, this follows from the right-hand rule. If we switch our index and middle finger, then our thumb points in the opposite direction. This equality is easy to prove if we use the definition of the cross product and rearrange the components a little.
 
 $$
   \begin{array}{rcccr}
-    \mathbf{v_1}\cp\mathbf{v_2} &=& \begin{bmatrix} a_2b_3-a_3b_2 \\ a_3b_1-a_1b_3 \\ a_1b_2-a_2b_1 \end{bmatrix} &=&
-\begin{bmatrix} -(a_3b_2-a_2b_3) \\ -(a_1b_3-a_3b_1) \\ -(a_2b_1-a_1b_2) \end{bmatrix} \\
-&=& -\begin{bmatrix} a_3b_2-a_2b_3 \\ a_1b_3-a_3b_1 \\ a_2b_1-a_1b_2 \end{bmatrix}
+    \mathbf{v_1}\cp\mathbf{v_2} &=& \begin{pmatrix} a_2b_3-a_3b_2 \\ a_3b_1-a_1b_3 \\ a_1b_2-a_2b_1 \end{pmatrix} &=&
+\begin{pmatrix} -(a_3b_2-a_2b_3) \\ -(a_1b_3-a_3b_1) \\ -(a_2b_1-a_1b_2) \end{pmatrix} \\
+&=& -\begin{pmatrix} a_3b_2-a_2b_3 \\ a_1b_3-a_3b_1 \\ a_2b_1-a_1b_2 \end{pmatrix}
 &=& -\mathbf{v_2}\cp\mathbf{v_1}.
   \end{array}
 $$
@@ -291,12 +291,12 @@ ii. Here too, we can use our intuition. We know that the length of the cross pro
 
 $$
   \begin{array}{rcccr}
-   (c\mathbf{v_1})\cp\mathbf{v_2} &=& \begin{bmatrix} (ca_2)b_3-(ca_3)b_2 \\ (ca_3)b_1-(ca_1)b_3 \\ (ca_1)b_2-(ca_2)b_1 \end{bmatrix}
-&=& \begin{bmatrix} c(a_2b_3-a_3b_2) \\ c(a_3b_1-a_1b_3) \\ c(a_1b_2-a_2b_1) \end{bmatrix} \\
-&=& c\begin{bmatrix} a_2b_3-a_3b_2 \\ a_3b_1-a_1b_3 \\ a_1b_2-a_2b_1 \end{bmatrix}
+   (c\mathbf{v_1})\cp\mathbf{v_2} &=& \begin{pmatrix} (ca_2)b_3-(ca_3)b_2 \\ (ca_3)b_1-(ca_1)b_3 \\ (ca_1)b_2-(ca_2)b_1 \end{pmatrix}
+&=& \begin{pmatrix} c(a_2b_3-a_3b_2) \\ c(a_3b_1-a_1b_3) \\ c(a_1b_2-a_2b_1) \end{pmatrix} \\
+&=& c\begin{pmatrix} a_2b_3-a_3b_2 \\ a_3b_1-a_1b_3 \\ a_1b_2-a_2b_1 \end{pmatrix}
 &=& c(\mathbf{v_1}\cp\mathbf{v_2})\\
-&=& \begin{bmatrix} c(a_2b_3-a_3b_2) \\ c(a_3b_1-a_1b_3) \\ c(a_1b_2-a_2b_1) \end{bmatrix}
-&=& \begin{bmatrix} a_2(cb_3)-a_3(cb_2) \\ a_3(cb_1)-a_1(cb_3) \\ a_1(cb_2)-a_2(cb_1) \end{bmatrix} \\
+&=& \begin{pmatrix} c(a_2b_3-a_3b_2) \\ c(a_3b_1-a_1b_3) \\ c(a_1b_2-a_2b_1) \end{pmatrix}
+&=& \begin{pmatrix} a_2(cb_3)-a_3(cb_2) \\ a_3(cb_1)-a_1(cb_3) \\ a_1(cb_2)-a_2(cb_1) \end{pmatrix} \\
 &=& \mathbf{v_1}\cp(c \mathbf{v_2}).
   \end{array}
 $$
@@ -304,9 +304,9 @@ $$
 iii. This follows from the distributivity of the real numbers.
 
 \begin{align*}
-(\mathbf{v_1}+\mathbf{v_2})\cp \mathbf{v_3} &= \begin{bmatrix} (a_2+b_2)c_3-(a_3+b_3)c_2 \\ (a_3+b_3)c_1-(a_1+b_1)c_3 \\ (a_1+b_1)c_2-(a_2+b_2)c_1 \end{bmatrix} \\
-&= \begin{bmatrix} a_2c_3+b_2c_3-a_3c_2-b_3c_2 \\ a_3c_1+b_3c_1-a_1c_3-b_1c_3 \\ a_1c_2+b_1c_2-a_2c_1-b_2c_1 \end{bmatrix} \\
-&= \begin{bmatrix} a_2c_3-a_3c_2 \\ a_3c_1-a_1c_3 \\ a_1c_2-a_2c_1 \end{bmatrix}+\begin{bmatrix} b_2c_3-b_3c_2 \\ b_3c_1-b_1c_3 \\ b_1c_2-b_2c_1 \end{bmatrix} \\
+(\mathbf{v_1}+\mathbf{v_2})\cp \mathbf{v_3} &= \begin{pmatrix} (a_2+b_2)c_3-(a_3+b_3)c_2 \\ (a_3+b_3)c_1-(a_1+b_1)c_3 \\ (a_1+b_1)c_2-(a_2+b_2)c_1 \end{pmatrix} \\
+&= \begin{pmatrix} a_2c_3+b_2c_3-a_3c_2-b_3c_2 \\ a_3c_1+b_3c_1-a_1c_3-b_1c_3 \\ a_1c_2+b_1c_2-a_2c_1-b_2c_1 \end{pmatrix} \\
+&= \begin{pmatrix} a_2c_3-a_3c_2 \\ a_3c_1-a_1c_3 \\ a_1c_2-a_2c_1 \end{pmatrix}+\begin{pmatrix} b_2c_3-b_3c_2 \\ b_3c_1-b_1c_3 \\ b_1c_2-b_2c_1 \end{pmatrix} \\
 &= \mathbf{v_1}\cp\mathbf{v_3}+\mathbf{v_2}\cp\mathbf{v_3}.
 \end{align*}
 
@@ -335,13 +335,13 @@ The entries of the cross product of two vectors can also be computed using deter
 Let $\mathbf{u}$ and $\mathbf{v}$ be vectors in $\mathbb{R}^3$ such that
 
 $$
-\mathbf{u}=\begin{bmatrix} a_1 \\ a_2 \\ a_3 \end{bmatrix} \textrm{ and } \mathbf{v}=\begin{bmatrix} b_1 \\ b_2 \\ b_3 \end{bmatrix}.
+\mathbf{u}=\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} \textrm{ and } \mathbf{v}=\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix}.
 $$
 
 If
 
 $$
-\mathbf{u} \cp \mathbf{v} = \begin{bmatrix} x \\ y \\ z \end{bmatrix},
+\mathbf{u} \cp \mathbf{v} = \begin{pmatrix} x \\ y \\ z \end{pmatrix},
 $$
 
 then
@@ -364,7 +364,7 @@ This follows from the definition.
 Let us compute the cross product of the following vectors $\mathbf{u}$ and $\mathbf{v}$ using determinants.
 
 $$
-\mathbf{u}=\begin{bmatrix} 2 \\ 3 \\ 2 \end{bmatrix} \textrm{ and } \mathbf{v}=\begin{bmatrix} 5 \\ 2 \\ 3 \end{bmatrix}.
+\mathbf{u}=\begin{pmatrix} 2 \\ 3 \\ 2 \end{pmatrix} \textrm{ and } \mathbf{v}=\begin{pmatrix} 5 \\ 2 \\ 3 \end{pmatrix}.
 $$
 
 The first entry of $\mathbf{u} \cp \mathbf{v}$ is equal to
@@ -388,7 +388,7 @@ $$
 Therefore, we find that
 
 $$
-\mathbf{u} \cp \mathbf{v} = \begin{bmatrix} 5 \\ 4 \\ -11 \end{bmatrix}.
+\mathbf{u} \cp \mathbf{v} = \begin{pmatrix} 5 \\ 4 \\ -11 \end{pmatrix}.
 $$
 
 ::::

@@ -26,34 +26,34 @@ Consider the four sets of vectors
 
 $$
 {\mathcal A}_1 = \left\lbrace
-\begin{bmatrix}
+\begin{pmatrix}
 1  \\ 0 \\ 0
-\end{bmatrix}
+\end{pmatrix}
 ,
-\begin{bmatrix}
+\begin{pmatrix}
 1\\ 1 \\ 0
-\end{bmatrix}
+\end{pmatrix}
 ,
-\begin{bmatrix}
+\begin{pmatrix}
 1\\ 1 \\ 1
-\end{bmatrix}
+\end{pmatrix}
 \right\rbrace,
 \quad{\mathcal A}_2 = \left\lbrace
-\begin{bmatrix}
+\begin{pmatrix}
 1  \\ 0 \\ 0
-\end{bmatrix}
+\end{pmatrix}
 ,
-\begin{bmatrix}
+\begin{pmatrix}
 1\\ 1 \\ 0
-\end{bmatrix}
+\end{pmatrix}
 ,
-\begin{bmatrix}
+\begin{pmatrix}
 1\\ 1 \\ 1
-\end{bmatrix}
+\end{pmatrix}
 ,
-\begin{bmatrix}
+\begin{pmatrix}
 1\\ 2 \\ 3
-\end{bmatrix}
+\end{pmatrix}
 \right\rbrace
 $$
 
@@ -61,38 +61,38 @@ and
 
 $$
 {\mathcal A}_3 = \left\lbrace
-\begin{bmatrix}
+\begin{pmatrix}
 1  \\ 2 \\ 3
-\end{bmatrix}
+\end{pmatrix}
 ,
-\begin{bmatrix}
+\begin{pmatrix}
 0\\ 1 \\ 2
-\end{bmatrix}
+\end{pmatrix}
 ,
-\begin{bmatrix}
+\begin{pmatrix}
 0\\ 0 \\ 1
-\end{bmatrix}
+\end{pmatrix}
 \right\rbrace,
 \quad{\mathcal A}_4 = \left\lbrace
-\begin{bmatrix}
+\begin{pmatrix}
 1  \\ 2 \\ 3
-\end{bmatrix}
+\end{pmatrix}
 ,
-\begin{bmatrix}
+\begin{pmatrix}
 0\\ 1 \\2
-\end{bmatrix}
+\end{pmatrix}
 ,
-\begin{bmatrix}
+\begin{pmatrix}
 0\\ 0 \\ 1
-\end{bmatrix}
+\end{pmatrix}
 ,
-\begin{bmatrix}
+\begin{pmatrix}
 1\\ 1 \\ 3
-\end{bmatrix}
+\end{pmatrix}
 ,
-\begin{bmatrix}
+\begin{pmatrix}
 2\\ 1 \\ 8
-\end{bmatrix}
+\end{pmatrix}
 \right\rbrace.
 $$
 
@@ -178,21 +178,21 @@ Check that the set
 $$
 {\mathcal E} =
 \left\lbrace
-\begin{bmatrix}
+\begin{pmatrix}
 1 \\ 0 \\ 0 \\ 0
-\end{bmatrix}
+\end{pmatrix}
 ,
-\begin{bmatrix}
+\begin{pmatrix}
 0 \\ 1 \\ 0 \\ 0
-\end{bmatrix}
+\end{pmatrix}
 ,
-\begin{bmatrix}
+\begin{pmatrix}
 0 \\ 0 \\ 1 \\ 0
-\end{bmatrix}
+\end{pmatrix}
 ,
-\begin{bmatrix}
+\begin{pmatrix}
 0 \\ 0 \\ 0 \\ 1
-\end{bmatrix}
+\end{pmatrix}
 \right\rbrace.
 $$
 
@@ -206,31 +206,31 @@ is indeed a basis for $\R^4$.
 The set is linearly independent:
 
 $$
- x_1\begin{bmatrix}
+ x_1\begin{pmatrix}
 1 \\ 0 \\ 0 \\ 0
-\end{bmatrix}
+\end{pmatrix}
 +x_2
-\begin{bmatrix}
+\begin{pmatrix}
 0 \\ 1 \\ 0 \\ 0
-\end{bmatrix}
+\end{pmatrix}
 +x_3
-\begin{bmatrix}
+\begin{pmatrix}
 0 \\ 0 \\ 1 \\ 0
-\end{bmatrix}
+\end{pmatrix}
 +x_4
-\begin{bmatrix}
+\begin{pmatrix}
 0 \\ 0 \\ 0 \\ 1
-\end{bmatrix} =
-\begin{bmatrix}
+\end{pmatrix} =
+\begin{pmatrix}
 x_1 \\x_2\\x_3\\x_4
-\end{bmatrix} = \begin{bmatrix}
+\end{pmatrix} = \begin{pmatrix}
 0 \\ 0 \\ 0 \\ 0
-\end{bmatrix} \quad \iff \quad \vect{x} = \begin{bmatrix}
+\end{pmatrix} \quad \iff \quad \vect{x} = \begin{pmatrix}
 x_1 \\x_2\\x_3\\x_4
-\end{bmatrix} = \vect{0}.
+\end{pmatrix} = \vect{0}.
 $$
 
-The set $\{\vect{e}_1, \vect{e}_2, \vect{e}_3, \vect{e}_4\}$ also spans the whole $\R^4$, as for any vector $\vect{x} = \begin{bmatrix}x_1 \\x_2\\x_3\\x_4 \end{bmatrix}$ <br>
+The set $\{\vect{e}_1, \vect{e}_2, \vect{e}_3, \vect{e}_4\}$ also spans the whole $\R^4$, as for any vector $\vect{x} = \begin{pmatrix}x_1 \\x_2\\x_3\\x_4 \end{pmatrix}$ <br>
 it holds that
 $\vect{x} = x_1\vect{e}_1 + x_2\vect{e}_2 + x_3\vect{e}_3 + x_4\vect{e}_4$.
 
@@ -346,23 +346,23 @@ Let us find a basis for the column space and the null space of the matrix
 
 $$
 A =
-\begin{bmatrix}
+\begin{pmatrix}
 1 &  -3 & 3 & 5 \\
 2 &  -6 & 1 & 5
-\end{bmatrix}
+\end{pmatrix}
 .
 $$
 
 The first and the third column
 
 $$
-\begin{bmatrix}
+\begin{pmatrix}
 1  \\ 2
-\end{bmatrix}
+\end{pmatrix}
 \quad \text{and} \quad
-\begin{bmatrix}
+\begin{pmatrix}
 3  \\ 1
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 are obviously independent, and span all of $\R^2$. Since the columns of $A$ cannot span more than $\R^2$, we may conclude
@@ -406,20 +406,20 @@ $$
 Row reduction of the augmented matrix leads to
 
 $$
-\left[\begin{array}{cccc|c} 1 &  -3 & 3  &  5  & 0\\
+\left(\begin{array}{cccc|c} 1 &  -3 & 3  &  5  & 0\\
 2 &  -6 & 1  &  5 &  0
 \end{array}
-\right]
+\right)
 \sim
-\left[\begin{array}{cccc|c}  1 &  -3 &  3 &  5  & 0\\
+\left(\begin{array}{cccc|c}  1 &  -3 &  3 &  5  & 0\\
 0 &   0 & -5 & -5 &  0
 \end{array}
-\right]
+\right)
 \sim
-\left[\begin{array}{cccc|c}  1 &  -3 & 0  &  2 &  0\\
+\left(\begin{array}{cccc|c}  1 &  -3 & 0  &  2 &  0\\
 0 &   0 & 1  &  1 &  0
 \end{array}
-\right]
+\right)
 .
 $$
 
@@ -433,32 +433,32 @@ x_3 = -x_4 \\
 x_4= x_4
 \end{cases}
 \quad\Longrightarrow\quad\quad
-\begin{bmatrix}
+\begin{pmatrix}
 x_1\\x_2\\x_3\\x_4
-\end{bmatrix}
+\end{pmatrix}
 =
 c_1
-\begin{bmatrix}
+\begin{pmatrix}
 3\\1\\0\\0
-\end{bmatrix}
+\end{pmatrix}
 +
 c_2
-\begin{bmatrix}
+\begin{pmatrix}
 -2\\0\\-1\\1
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 We see that the set
 
 $$
 \left\lbrace
-\begin{bmatrix}
+\begin{pmatrix}
 3\\1\\0\\0
-\end{bmatrix}
+\end{pmatrix}
 ,
-\begin{bmatrix}
+\begin{pmatrix}
 -2\\0\\-1\\1
-\end{bmatrix}
+\end{pmatrix}
 \right\rbrace
 $$
 
@@ -501,7 +501,7 @@ We typically do this by row reducing the augmented matrix
 
 $$
 
-[ A \,|\, \vect{0} ].
+( A \,|\, \vect{0} ).
 \nonumber
 
 
@@ -515,16 +515,16 @@ More importantly, **row reduction does not change the linear relations between t
 Also, in the final (echelon) matrix
 
 $$
-[ E \,|\, \vect{0}]   =
-\left[\begin{array}{cccc|c} 1 &  -3 & 0  &  2 & 0\\
+( E \,|\, \vect{0})   =
+\left(\begin{array}{cccc|c} 1 &  -3 & 0  &  2 & 0\\
 0 &   0 & 1  &  1  & 0
 \end{array}
-\right]
+\right)
 =
-\left[\begin{array}{cccc|c} \vect{e}_1 &  \vect{e}_2 & \vect{e}_3  &
+\left(\begin{array}{cccc|c} \vect{e}_1 &  \vect{e}_2 & \vect{e}_3  &
 \vect{e}_4 & \vect{0}
 \end{array}
-\right]
+\right)
 $$
 
 the relation
@@ -541,18 +541,18 @@ can be read off. The same relation holds between the columns of $A$:
 
 $$
 \vect{a}_4 =
-\begin{bmatrix}
+\begin{pmatrix}
 5  \\ 5
-\end{bmatrix}
+\end{pmatrix}
 =
 2
-\begin{bmatrix}
+\begin{pmatrix}
 1  \\ 2
-\end{bmatrix}
+\end{pmatrix}
 +
-\begin{bmatrix}
+\begin{pmatrix}
 3  \\ 1
-\end{bmatrix}
+\end{pmatrix}
 = 2\vect{a}_1 + \vect{a}_3,
 $$
 
@@ -595,9 +595,9 @@ Let
 $$
 
 A =
-\begin{bmatrix}
+\begin{pmatrix}
 \vect{a}_1&\vect{a}_2&\ldots &\vect{a}_n
-\end{bmatrix}
+\end{pmatrix}
 .
 \nonumber
 
@@ -619,9 +619,9 @@ between vectors $\vect{a}_1,\vect{a}_2,\ldots,\vect{a}_n$ corresponds to a non-t
 $$
 
 \vect{c} =
-\begin{bmatrix}
+\begin{pmatrix}
 c_1 \\ \vdots \\ c_n
-\end{bmatrix}
+\end{pmatrix}
 \neq \vect{0}
 \nonumber
 
@@ -674,12 +674,12 @@ We will find bases for the column space and the null space of the matrix
 
 $$
 A =
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 2 & 4 & 2 \\
 2 & 3 & 5 & 4 \\
 4 & 2 &-2 & 6 \\
 2 & 1 &-1 &7
-\end{bmatrix}
+\end{pmatrix}
 .
 $$
 
@@ -687,26 +687,26 @@ To this end we first row reduce the matrix:
 
 $$
 A \sim
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 2 & 4 & 2 \\
 0 &-1 &-3 & 0 \\
 0 &-6 &-18&-2 \\
 0 &-3 &-9 &3
-\end{bmatrix}
+\end{pmatrix}
 \sim
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 0 &-2 & 2 \\
 0 &-1 &-3 & 0 \\
 0 & 0 & 0 &-2 \\
 0 & 0 & 0 & 3
-\end{bmatrix}
+\end{pmatrix}
 \sim
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 0 &-2 & 0 \\
 0 & 1 & 3 & 0 \\
 0 & 0 & 0 & 1 \\
 0 & 0 & 0 & 0
-\end{bmatrix}
+\end{pmatrix}
 = E.
 \nonumber
 $$
@@ -716,17 +716,17 @@ Because of the previous proposition, the corresponding columns of $A$ give a (po
 
 $$
 {\mathcal B} = \left\lbrace
-\begin{bmatrix}
+\begin{pmatrix}
 1 \\   2 \\  4  \\  2
-\end{bmatrix}
+\end{pmatrix}
 ,
-\begin{bmatrix}
+\begin{pmatrix}
 2 \\3 \\ 2 \\ 1
-\end{bmatrix}
+\end{pmatrix}
 ,
-\begin{bmatrix}
+\begin{pmatrix}
 2 \\  4 \\ 6 \\ 7
-\end{bmatrix}
+\end{pmatrix}
 \right\rbrace.
 $$
 
@@ -736,9 +736,9 @@ $$
 
 \Nul{A}=\Nul{E}=
 \Span{
-\begin{bmatrix}
+\begin{pmatrix}
 2 \\   -3 \\  1  \\  0
-\end{bmatrix}
+\end{pmatrix}
 }.
 \nonumber
 
@@ -781,41 +781,41 @@ It is given that matrix
 
 $$
 A =
-\begin{bmatrix}
+\begin{pmatrix}
 1  &  1 & 2 &  1 & -1 \\
 2  &  2 & 7 &  0 &  3 \\
 1  &  1 & 5 &  1 & 5 \\
 3  &  3 & 9 & -1 & 1
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 is equivalent to the echelon matrix
 
 $$
 E =
-\begin{bmatrix}
+\begin{pmatrix}
 1  &  1 & 2 &  1 & -1 \\
 0  &  0 & 3 & -2 & 5 \\
 0  &  0 & 0 &  2 & 1 \\
 0  &  0 & 0 &  0 & 0
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 The pivots are in the first, the third and the fourth column, so the corresponding columns of $A$ give a basis for $\Col{A}$:
 
 $$
 {\mathcal B} = \left\lbrace
-\begin{bmatrix}
+\begin{pmatrix}
 1   \\ 2  \\1 \\ 3
-\end{bmatrix}
+\end{pmatrix}
 ,
-\begin{bmatrix}
+\begin{pmatrix}
 2   \\ 7  \\5 \\ 9
-\end{bmatrix}
+\end{pmatrix}
 ,
-\begin{bmatrix}
+\begin{pmatrix}
 1   \\ 0  \\1 \\-1
-\end{bmatrix}
+\end{pmatrix}
 \right\rbrace.
 $$
 
@@ -833,34 +833,34 @@ Find a basis for the null space of the matrix in the previous example.
 ::::::{admonition} Solution to&nbsp;{numref}`Exc:BasisDim:FinishExampleNulspace`
 :class: solution, dropdown
 
-We row reduce the matrix $E = \begin{bmatrix}
+We row reduce the matrix $E = \begin{pmatrix}
 1  &  1 & 2 &  1 & -1 \\
 0  &  0 & 3 & -2 & 5 \\
 0  &  0 & 0 &  2 & 1 \\
 0  &  0 & 0 &  0 & 0
-\end{bmatrix}$ further to row reduced echelon form.
+\end{pmatrix}$ further to row reduced echelon form.
 
 A short computation yields
 
 $$
- E = \begin{bmatrix}
+ E = \begin{pmatrix}
 1  &  1 & 2 &  1 & -1 \\
 0  &  0 & 3 & -2 & 5 \\
 0  &  0 & 0 &  2 & 1 \\
 0  &  0 & 0 &  0 & 0
-\end{bmatrix} \quad \sim \quad  E_2 = \begin{bmatrix}
+\end{pmatrix} \quad \sim \quad  E_2 = \begin{pmatrix}
 1  &  1 & 0 &  1 & -5.5 \\
 0  &  0 & 1 &  0 & 2 \\
 0  &  0 & 0 &  1 & 0.5 \\
 0  &  0 & 0 &  0 & 0
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 We can read off that a basis for $\Col{(E)} = \Col{(A)}$ is given by
 
 $$
-  \mathcal{B} = \left\{\begin{bmatrix} -1 \\1\\0\\0\\0\end{bmatrix}, \,
-   \begin{bmatrix} 11/2\\0 \\-2\\-1/2\\1 \end{bmatrix} \right\}.
+  \mathcal{B} = \left\{\begin{pmatrix} -1 \\1\\0\\0\\0\end{pmatrix}, \,
+   \begin{pmatrix} 11/2\\0 \\-2\\-1/2\\1 \end{pmatrix} \right\}.
 $$
 
 ::::::
@@ -964,9 +964,9 @@ We could also say
 
 $$
 {\mathcal P} = \Nul{A}, \quad \text{where} \quad A =
-\begin{bmatrix}
+\begin{pmatrix}
 2 & 1 & -6
-\end{bmatrix}
+\end{pmatrix}
 .
 $$
 
@@ -980,19 +980,19 @@ x_2   = & x_2\\
 x_3   = & x_3
 \end{array}
 \right.\Longrightarrow
-\begin{bmatrix}
+\begin{pmatrix}
 x_1 \\ x_2 \\ x_3
-\end{bmatrix}
+\end{pmatrix}
 =
 c_1
-\begin{bmatrix}
+\begin{pmatrix}
 -\nicefrac{1}{2} \\ 1 \\ 0
-\end{bmatrix}
+\end{pmatrix}
 +
 c_2
-\begin{bmatrix}
+\begin{pmatrix}
 3 \\ 0 \\ 1
-\end{bmatrix}
+\end{pmatrix}
 = c_1\vect{u}_1 + c_2\vect{u}_2.
 $$
 
@@ -1002,13 +1002,13 @@ We can also take $x_1$ and $x_3$ as free variables, and then find
 
 $$
 {\mathcal P} = \Span{
-\begin{bmatrix}
+\begin{pmatrix}
 1   \\ -2 \\ 0
-\end{bmatrix}
+\end{pmatrix}
 ,
-\begin{bmatrix}
+\begin{pmatrix}
 0 \\ 6\\1
-\end{bmatrix}
+\end{pmatrix}
 },
 $$
 
@@ -1023,7 +1023,7 @@ which provides an alternative basis for $\mathcal{P}$.
 
 <li>
 
-Give another basis of the plane $\mathcal P$, which does not contain a vector that is a multiple of one of the vectors $\begin{bmatrix} 1   \\ -2 \\ 0 \end{bmatrix}$, $\begin{bmatrix}3   \\ 0 \\ 1\end{bmatrix}$ and $\begin{bmatrix}0 \\ 6\\1\end{bmatrix}$.
+Give another basis of the plane $\mathcal P$, which does not contain a vector that is a multiple of one of the vectors $\begin{pmatrix} 1   \\ -2 \\ 0 \end{pmatrix}$, $\begin{pmatrix}3   \\ 0 \\ 1\end{pmatrix}$ and $\begin{pmatrix}0 \\ 6\\1\end{pmatrix}$.
 
 </li>
 
@@ -1079,7 +1079,7 @@ You can look upon the dimension of a subspace as a means to describe its size. T
 
 Is the following statement true or false?
 
-The dimension of the vector $\vect{u} = \begin{bmatrix} 3\\4 \end{bmatrix} $ is 2.
+The dimension of the vector $\vect{u} = \begin{pmatrix} 3\\4 \end{pmatrix} $ is 2.
 
 ::::::
 
@@ -1089,7 +1089,7 @@ The dimension of the vector $\vect{u} = \begin{bmatrix} 3\\4 \end{bmatrix} $ is 
 The statement is _false_. The attribute dimension is only defined for _subspaces_.
 
 A correct statement would be:
-the _size_ of the vector $\vect{u} = \begin{bmatrix} 3\\4 \end{bmatrix} $ is equal to 2.
+the _size_ of the vector $\vect{u} = \begin{pmatrix} 3\\4 \end{pmatrix} $ is equal to 2.
 
 ::::::
 
@@ -1244,7 +1244,7 @@ $$
 does say something about the linear relations between the columns of $A$.
 
 $$
-[ \,\vect{a}_1 \,\, \vect{a}_2 \,\, \ldots \,\, \vect{a}_n\, ]\vect{x} = \vect{0} \quad \iff \quad
+( \,\vect{a}_1 \,\, \vect{a}_2 \,\, \ldots \,\, \vect{a}_n\, )\vect{x} = \vect{0} \quad \iff \quad
 x_1\vect{a}_1+ x_2\vect{a}_2+  \ldots +x_n\vect{a}_n = \vect{0}.
 $$
 
@@ -1337,10 +1337,10 @@ For the matrix
 
 $$
 A =
-\begin{bmatrix}
+\begin{pmatrix}
 1 &  -3 & 3 & 5 \\
 2 &  -6 & 1 & 5
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 the rows are obviously linearly independent,
@@ -1348,22 +1348,22 @@ as are the columns of
 
 $$
 A^T =
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 2 \\   -3 & -6 \\ 3 & 1 \\ 5 & 5 \\
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 So we find
 
 $$
 \Row{A} =\Span{
-\begin{bmatrix}
+\begin{pmatrix}
 1 \\  -3 \\ 3 \\ 5
-\end{bmatrix}
+\end{pmatrix}
 ,
-\begin{bmatrix}
+\begin{pmatrix}
 2 \\  -6 \\  1 \\ 5
-\end{bmatrix}
+\end{pmatrix}
 },
 $$
 
@@ -1389,12 +1389,12 @@ Consider the $4 \times 5$ matrix
 
 $$
 M =
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 0 & 4 & 6 & 3 \\
 0 & 2 & 3 & 1 & 5 \\
 0 & 0 & 0 & 4 & 7 \\
 0 & 0 & 0 & 0 & 0
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 The matrix is in echelon form, so the three pivot columns give a basis for the column space. Thus
@@ -1407,13 +1407,13 @@ The nonzero columns of
 
 $$
 M^T =
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 0 & 0 & 0 \\
 0 & 2 & 0 & 0 \\
 4 & 3 & 0 & 0 \\
 6 & 1 & 4 & 0 \\
 3 & 5 & 7 & 0
-\end{bmatrix}
+\end{pmatrix}
 ,
 $$
 
@@ -1492,12 +1492,12 @@ Consider the matrix
 
 $$
 A =
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 2 & 4 & 2 \\
 2 & 3 & 5 & 4 \\
 4 & 2 &-2 & 6 \\
 2 & 1 &-1 &7
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 of {prf:ref}`Ex:BasisDim:FourByFour`.
@@ -1505,12 +1505,12 @@ In this example we have seen that
 
 $$
 A   \sim
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 0 &-2 & 0 \\
 0 & 1 & 3 & 0 \\
 0 & 0 & 0 & 1 \\
 0 & 0 & 0 & 0
-\end{bmatrix}
+\end{pmatrix}
 =   E.
 $$
 
@@ -1519,17 +1519,17 @@ A possible basis for the row space of $A$:
 
 $$
 \Row{A} = \Row{E} = \Span{
-\begin{bmatrix}
+\begin{pmatrix}
 1 \\ 0 \\-2 \\ 0
-\end{bmatrix}
+\end{pmatrix}
 ,
-\begin{bmatrix}
+\begin{pmatrix}
 0 \\ 1 \\ 3 \\ 0
-\end{bmatrix}
+\end{pmatrix}
 ,
-\begin{bmatrix}
+\begin{pmatrix}
 0 \\ 0 \\ 0 \\ 1
-\end{bmatrix}
+\end{pmatrix}
 }.
 $$
 
@@ -1544,9 +1544,9 @@ As an illustration of the last remark, consider the matrix
 
 $$
 A =
-\begin{bmatrix}
+\begin{pmatrix}
 1 &1 & 1 \\ 2&2&2 \\ 3&3&4
-\end{bmatrix}
+\end{pmatrix}
 .
 $$
 
@@ -1554,9 +1554,9 @@ Its reduced echelon form is
 
 $$
 E =
-\begin{bmatrix}
+\begin{pmatrix}
 1 &1 & 1 \\ 0&0&1 \\ 0&0&0
-\end{bmatrix}
+\end{pmatrix}
 ,
 $$
 
@@ -1564,13 +1564,13 @@ so as a basis for the row space we can take
 
 $$
 \left\lbrace
-\begin{bmatrix}
+\begin{pmatrix}
 1 \\1\\1
-\end{bmatrix}
+\end{pmatrix}
 ,
-\begin{bmatrix}
+\begin{pmatrix}
 0 \\0\\1
-\end{bmatrix}
+\end{pmatrix}
 \right\rbrace,
 $$
 
@@ -1592,9 +1592,9 @@ It can be done 'by inspection'
 
 $$
    \begin{array}{ccl}
-      [1, 1, 1] &=& 1\cdot [1,1,1] \,\, (+0\cdot [0, 0, 1] + 0\cdot [0,0,0])\\
-      [2, 2, 2] &=& 2\cdot [1,1,1]  \\
-      [3, 3, 4] &=& 3\cdot [1,1,1] + 1\cdot [0,0,1]
+      (1, 1, 1) &=& 1\cdot (1,1,1) \,\, (+0\cdot (0, 0, 1) + 0\cdot (0,0,0))\\
+      (2, 2, 2) &=& 2\cdot (1,1,1)  \\
+      (3, 3, 4) &=& 3\cdot (1,1,1) + 1\cdot (0,0,1)
    \end{array}
 $$
 

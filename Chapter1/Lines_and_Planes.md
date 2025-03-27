@@ -69,7 +69,7 @@ So far we have looked at lines as collections of points in the plane, but we can
 
 $$
 
-\mathbf{v}=\begin{bmatrix} x \\ y \end{bmatrix}
+\mathbf{v}=\begin{pmatrix} x \\ y \end{pmatrix}
 $$
 
 of which the components $x$ and $y$ satisfy the equation $x+2y=5$. This means that the line $\mathcal{L}_1$ consists of all vectors that connect the origin with a point on the line. When we think of a line as a collection of vectors we can describe that line with a _parametric vector equation_. To do this, we need a vector that connects the origin to a point on the line and a non-zero vector $\mathbf{u}$ parallel to the line.
@@ -82,14 +82,14 @@ Each non-zero vector $\mathbf{u}$ that is parallel to a line $\mathcal{L}$ will 
 The point $(5, 0)$ satisfies the equation $x+2y=5$, so it is a point on $\mathcal{L}_1$. Therefore, the vector
 
 $$
-\mathbf{v_0}=\begin{bmatrix} 5 \\ 0 \end{bmatrix}
+\mathbf{v_0}=\begin{pmatrix} 5 \\ 0 \end{pmatrix}
 $$
 
 connects the origin with a point on the line. As we can see in {numref}`Figure %s <Fig:LinesAndPlanes:VectorEquation>` the vector
 
 $$
 
-\mathbf{u}=\begin{bmatrix} -2 \\ 1 \end{bmatrix}
+\mathbf{u}=\begin{pmatrix} -2 \\ 1 \end{pmatrix}
 $$
 
 is a vector parallel to the same line.
@@ -107,7 +107,7 @@ How do we obtain all vectors on the line $\mathcal{L}_1$? Let us start with the 
 
 $$
 
-\mathbf{v_1}=\begin{bmatrix} 3 \\ 1 \end{bmatrix}.
+\mathbf{v_1}=\begin{pmatrix} 3 \\ 1 \end{pmatrix}.
 $$
 
 Its coordinates satisfy the equation $x+2y=5$, so this vector is indeed on the line $\mathcal{L}_1$. However, if we look at {numref}`Figure %s <Fig:LinesAndPlanes:VectorEquation>` we also see that it is the sum of the vectors $\mathbf{v_0}$ and $\mathbf{u}$. It is not hard to see that whenever we add a multiple of the vector $\mathbf{u}$ to the vector $\mathbf{v_0}$, we obtain a vector on $\mathcal{L}_1$.
@@ -116,7 +116,7 @@ Take for example the vector $\mathbf{v_2}$ that we will define as $\mathbf{v_0}+
 
 $$
 
-\mathbf{v_2}=\begin{bmatrix} 5 \\ 0 \end{bmatrix}+2\begin{bmatrix} -2 \\ 1 \end{bmatrix}=\begin{bmatrix} 1 \\ 2 \end{bmatrix}
+\mathbf{v_2}=\begin{pmatrix} 5 \\ 0 \end{pmatrix}+2\begin{pmatrix} -2 \\ 1 \end{pmatrix}=\begin{pmatrix} 1 \\ 2 \end{pmatrix}
 $$
 
 and we end up with another vector that satisfies the equation $x+2y=5$.
@@ -125,24 +125,24 @@ By now we have noticed that we obtain a new vector on $\mathcal{L}_1$ whenever w
 
 $$
 
-\mathbf{v}=\begin{bmatrix} x \\ y \end{bmatrix}
+\mathbf{v}=\begin{pmatrix} x \\ y \end{pmatrix}
 $$
 
 on the line $\mathcal{L}$ can be written in the form
 
 $$
 
-\begin{bmatrix} x \\ y \end{bmatrix}=\begin{bmatrix} 5 \\ 0 \end{bmatrix}+r\begin{bmatrix} -2 \\ 1 \end{bmatrix}
+\begin{pmatrix} x \\ y \end{pmatrix}=\begin{pmatrix} 5 \\ 0 \end{pmatrix}+r\begin{pmatrix} -2 \\ 1 \end{pmatrix}
 $$
 
 where $r$ is a real number.
 
 ::::{prf:definition}
 
-If $\mathbf{v_0}=\begin{bmatrix} x_0 \\ y_0 \end{bmatrix}$ is a vector on the line $\mathcal{L}$ and $\mathbf{u}=\begin{bmatrix} a \\ b \end{bmatrix}$ is a directional vector of $\mathcal{L}$, then the equation
+If $\mathbf{v_0}=\begin{pmatrix} x_0 \\ y_0 \end{pmatrix}$ is a vector on the line $\mathcal{L}$ and $\mathbf{u}=\begin{pmatrix} a \\ b \end{pmatrix}$ is a directional vector of $\mathcal{L}$, then the equation
 
 $$
-\begin{bmatrix} x \\ y \end{bmatrix}=\begin{bmatrix} x_0 \\ y_0 \end{bmatrix}+r\begin{bmatrix} a \\ b \end{bmatrix} \qquad \textrm{$r$ in $\mathbb{R}$}
+\begin{pmatrix} x \\ y \end{pmatrix}=\begin{pmatrix} x_0 \\ y_0 \end{pmatrix}+r\begin{pmatrix} a \\ b \end{pmatrix} \qquad \textrm{$r$ in $\mathbb{R}$}
 $$
 
 will be called a **parametric vector equation** of $\mathcal{L}$.
@@ -154,13 +154,13 @@ will be called a **parametric vector equation** of $\mathcal{L}$.
 Let $\mathcal{L}$ be the line through the points $P=(2, 1)$ and $Q=(6, 4)$. How do we find a parametric vector equation of this line? We need a vector that connects the origin to a point on the line and a vector parallel to the line. For the first vector we can simply use the coordinates of either $P$ or $Q$. We can use either point, but let us choose $P$. We can construct a vector parallel to the line $\mathcal{L}$ by connecting two distinct points on the line by an arrow. We can use for instance the vector $\overrightarrow{PQ}$ that starts in $P$ and ends in $Q$.
 
 $$
-\overrightarrow{PQ}=\begin{bmatrix} 6 \\ 4 \end{bmatrix}-\begin{bmatrix} 2 \\ 1 \end{bmatrix}=\begin{bmatrix} 4 \\ 3 \end{bmatrix}.
+\overrightarrow{PQ}=\begin{pmatrix} 6 \\ 4 \end{pmatrix}-\begin{pmatrix} 2 \\ 1 \end{pmatrix}=\begin{pmatrix} 4 \\ 3 \end{pmatrix}.
 $$
 
 If we use these vectors, then we find the following parametric equation.
 
 $$
-\begin{bmatrix} x \\ y \end{bmatrix}=\begin{bmatrix} 2 \\ 1 \end{bmatrix}+r\begin{bmatrix} 4 \\ 3 \end{bmatrix} \qquad \textrm{$r$ in $\mathbb{R}$.}
+\begin{pmatrix} x \\ y \end{pmatrix}=\begin{pmatrix} 2 \\ 1 \end{pmatrix}+r\begin{pmatrix} 4 \\ 3 \end{pmatrix} \qquad \textrm{$r$ in $\mathbb{R}$.}
 $$
 
 ::::
@@ -218,7 +218,7 @@ will be called a **normal equation** of $\mathcal{L}$.
 The line $\mathcal{L}_1$ can be described by the following parametric vector equation.
 
 $$
-\begin{bmatrix} x \\ y \end{bmatrix}=\begin{bmatrix} 5 \\ 0 \end{bmatrix}+r\begin{bmatrix} -2 \\ 1 \end{bmatrix} \qquad \textrm{$r$ in $\mathbb{R}$.}
+\begin{pmatrix} x \\ y \end{pmatrix}=\begin{pmatrix} 5 \\ 0 \end{pmatrix}+r\begin{pmatrix} -2 \\ 1 \end{pmatrix} \qquad \textrm{$r$ in $\mathbb{R}$.}
 $$
 
 Let us try to find a Cartesian equation for the line $\mathcal{L}$ through the point $P=(1, 7)$ and orthogonal to $\mathcal{L}_1$. We will start with a normal equation and then derive a Cartesian equation from that.
@@ -230,13 +230,13 @@ Let us try to find a Cartesian equation for the line $\mathcal{L}$ through the p
 A line orthogonal to $\mathcal{L}_1$.
 :::
 
-Because $\mathcal{L}$ needs to be orthogonal to $\mathcal{L}_1$ we can use the directional vector $\mathbf{n}=\begin{bmatrix} -2 \\ 1 \end{bmatrix}$ as a normal vector for $\mathcal{L}$. Define $\mathbf{v_0}$ as $\begin{bmatrix} 1 \\ 7 \end{bmatrix}$. By computing the inner product we can transform the normal equation
+Because $\mathcal{L}$ needs to be orthogonal to $\mathcal{L}_1$ we can use the directional vector $\mathbf{n}=\begin{pmatrix} -2 \\ 1 \end{pmatrix}$ as a normal vector for $\mathcal{L}$. Define $\mathbf{v_0}$ as $\begin{pmatrix} 1 \\ 7 \end{pmatrix}$. By computing the inner product we can transform the normal equation
 
 $$
 (\mathbf{v}-\mathbf{v_0})\ip\mathbf{n}=0
 $$
 
-into a Cartesian equation. Let $\mathbf{v}$ be the vector $\begin{bmatrix} x \\ y \end{bmatrix}$. Since $\mathbf{v}-\mathbf{v_0}$ is equal to $\begin{bmatrix} x-1 \\ y-7 \end{bmatrix}$ we can rewrite the normal equation of $\mathcal{L}$ as
+into a Cartesian equation. Let $\mathbf{v}$ be the vector $\begin{pmatrix} x \\ y \end{pmatrix}$. Since $\mathbf{v}-\mathbf{v_0}$ is equal to $\begin{pmatrix} x-1 \\ y-7 \end{pmatrix}$ we can rewrite the normal equation of $\mathcal{L}$ as
 
 $$
 (x-1)\cdot(-2)+(y-7)\cdot(1)=0.
@@ -266,7 +266,7 @@ The Cartesian equation of a plane in $\mathbb{R}^3$ resembles the Cartesian equa
 In {numref}`Subsection %s <Subsection:LinesAndPlanes:NormalLine>` we saw that, given a point $P$ and a vector $\mathbf{n}$ in the plane, the collection of all points $Q$ for which the vector $\overrightarrow{PQ}$ is orthogonal to $\mathbf{n}$ forms a line through $P$. In the space $\mathbb{R}^3$ this is no longer true. Let us investigate what the result is when we make a similar construction with a vector $\mathbf{n}$ in $\mathbb{R}^3$, say
 
 $$
-\mathbf{n}=\begin{bmatrix} 2 \\ 1 \\ 3 \end{bmatrix}.
+\mathbf{n}=\begin{pmatrix} 2 \\ 1 \\ 3 \end{pmatrix}.
 $$
 
 As we can see in {numref}`Figure %s <Fig:LinesAndPlanes:NormalEquationPlaneOrigin>` all points $Q$ for which the vector that connects the origin to $Q$ is orthogonal to $\mathbf{n}$ form a plane through the origin.
@@ -296,7 +296,7 @@ A plane through the point $P$.
 What is the Cartesian equation of this plane? If the coordinates of $Q$ are $(x, y, z)$, then $\overrightarrow{PQ}$ is orthogonal to $\mathbf{n}$ if and only if $\overrightarrow{PQ}\ip \mathbf{n}=0$. If we compute this inner product we obtain the following result.
 
 \begin{align*}
-(\mathbf{v}-\mathbf{v_0})\ip \mathbf{n} &= \begin{bmatrix} x-0 \\ y-2 \\ z-1 \end{bmatrix} \ip \begin{bmatrix} 2 \\ 1 \\ 3 \end{bmatrix} \\
+(\mathbf{v}-\mathbf{v_0})\ip \mathbf{n} &= \begin{pmatrix} x-0 \\ y-2 \\ z-1 \end{pmatrix} \ip \begin{pmatrix} 2 \\ 1 \\ 3 \end{pmatrix} \\
 &= 2(x-0)+(y-2)+3(z-1) \\
 &= 2x+y+3z-5
 \end{align*}
@@ -345,12 +345,12 @@ will be called a _normal equation_ of $\mathcal{P}$.
 For
 
 $$
-  \vect{n} = \begin{bmatrix}  n_1 \\  n_2 \\ n_3
-            \end{bmatrix}, \quad
-  \vect{v}_0 = \begin{bmatrix}  x_0 \\  y_0 \\ z_0
-            \end{bmatrix}, \quad
-  \vect{v}= \begin{bmatrix}  x  \\  y  \\ z
-            \end{bmatrix}
+  \vect{n} = \begin{pmatrix}  n_1 \\  n_2 \\ n_3
+            \end{pmatrix}, \quad
+  \vect{v}_0 = \begin{pmatrix}  x_0 \\  y_0 \\ z_0
+            \end{pmatrix}, \quad
+  \vect{v}= \begin{pmatrix}  x  \\  y  \\ z
+            \end{pmatrix}
 $$
 
 Equation {eq}`Eq:LinesAndPlanes:NormalEquationPlane` becomes
@@ -376,7 +376,7 @@ $$
 for a plane $\mathcal{P}$, the vector
 
 $$
-   \vect{n} = \begin{bmatrix} a \\ b \\ c  \end{bmatrix}
+   \vect{n} = \begin{pmatrix} a \\ b \\ c  \end{pmatrix}
 $$
 
 is always a vector normal to (= perpendicular to) the plane $\mathcal{P}$.
@@ -414,10 +414,10 @@ where $r$ and $s$ are arbitrary real numbers.
 
 :::{prf:definition}
 
-If $\mathbf{v_0}=\begin{bmatrix} x_0 \\ y_0 \\ z_0 \end{bmatrix}$ is a vector on the plane $\mathcal{P}$ and $\mathbf{u_1}=\begin{bmatrix} a_1 \\ b_1 \\ c_1 \end{bmatrix}$ and $\mathbf{u_2}=\begin{bmatrix} a_2 \\ b_2 \\ c_2 \end{bmatrix}$ are directional vectors of $\mathcal{P}$ that are not parallel, then the equation
+If $\mathbf{v_0}=\begin{pmatrix} x_0 \\ y_0 \\ z_0 \end{pmatrix}$ is a vector on the plane $\mathcal{P}$ and $\mathbf{u_1}=\begin{pmatrix} a_1 \\ b_1 \\ c_1 \end{pmatrix}$ and $\mathbf{u_2}=\begin{pmatrix} a_2 \\ b_2 \\ c_2 \end{pmatrix}$ are directional vectors of $\mathcal{P}$ that are not parallel, then the equation
 
 $$
-\begin{bmatrix} x \\ y \\ z \end{bmatrix}=\begin{bmatrix} x_0 \\ y_0 \\ z_0 \end{bmatrix}+r\begin{bmatrix} a_1 \\ b_1 \\ c_1  \end{bmatrix}+s\begin{bmatrix} a_2 \\ b_2 \\ c_2  \end{bmatrix} \qquad \textrm{$r, s$ in $\mathbb{R}$}
+\begin{pmatrix} x \\ y \\ z \end{pmatrix}=\begin{pmatrix} x_0 \\ y_0 \\ z_0 \end{pmatrix}+r\begin{pmatrix} a_1 \\ b_1 \\ c_1  \end{pmatrix}+s\begin{pmatrix} a_2 \\ b_2 \\ c_2  \end{pmatrix} \qquad \textrm{$r, s$ in $\mathbb{R}$}
 $$
 
 will be called a **parametric vector equation** of $\mathcal{P}$.
@@ -428,13 +428,13 @@ will be called a **parametric vector equation** of $\mathcal{P}$.
 In this example we will construct a parametric vector equation and a normal equation for the plane through the points $P=(1, 1, 1)$, $Q=(1, 2, 2)$ and $R=(3, 1, 2)$. The vectors $\overrightarrow{PQ}$ and $\overrightarrow{PR}$ can serve as directional vectors. We find that
 
 $$
-\overrightarrow{PQ}=\begin{bmatrix} 1-1 \\ 2-1 \\ 2-1 \end{bmatrix}=\begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix} \quad \overrightarrow{PR}=\begin{bmatrix} 3-1 \\ 1-1 \\ 2-1 \end{bmatrix}=\begin{bmatrix} 2 \\ 0 \\ 1 \end{bmatrix}.
+\overrightarrow{PQ}=\begin{pmatrix} 1-1 \\ 2-1 \\ 2-1 \end{pmatrix}=\begin{pmatrix} 0 \\ 1 \\ 1 \end{pmatrix} \quad \overrightarrow{PR}=\begin{pmatrix} 3-1 \\ 1-1 \\ 2-1 \end{pmatrix}=\begin{pmatrix} 2 \\ 0 \\ 1 \end{pmatrix}.
 $$
 
 This means that
 
 $$
-\begin{bmatrix} x \\ y \\ z \end{bmatrix}=\begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}+r\begin{bmatrix} 0 \\ 1 \\ 1  \end{bmatrix}+s\begin{bmatrix} 2 \\ 0 \\ 1  \end{bmatrix} \qquad \textrm{$r, s$ in $\mathbb{R}$}
+\begin{pmatrix} x \\ y \\ z \end{pmatrix}=\begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}+r\begin{pmatrix} 0 \\ 1 \\ 1  \end{pmatrix}+s\begin{pmatrix} 2 \\ 0 \\ 1  \end{pmatrix} \qquad \textrm{$r, s$ in $\mathbb{R}$}
 $$
 
 is a parametric vector equation of the plane through the given points.
@@ -442,7 +442,7 @@ is a parametric vector equation of the plane through the given points.
 In order to find a normal equation we need to construct a normal vector. We can do this by computing the cross product of the two directional vectors. After all, we know that the cross product of $\overrightarrow{PQ}\cp\overrightarrow{PR}$ is orthogonal to $\overrightarrow{PQ}$ and $\overrightarrow{PR}$ and thus to the entire plane. We find
 
 $$
-\overrightarrow{PQ}\cp\overrightarrow{PR}=\begin{bmatrix} 1\cdot 1-1\cdot 0 \\ 1\cdot 2-0\cdot 1 \\ 0\cdot 0-1\cdot 2 \end{bmatrix}=\begin{bmatrix} 1 \\ 2 \\ -2 \end{bmatrix}.
+\overrightarrow{PQ}\cp\overrightarrow{PR}=\begin{pmatrix} 1\cdot 1-1\cdot 0 \\ 1\cdot 2-0\cdot 1 \\ 0\cdot 0-1\cdot 2 \end{pmatrix}=\begin{pmatrix} 1 \\ 2 \\ -2 \end{pmatrix}.
 $$
 
 Because the point $P(1, 1, 1)$ needs to be on the plane we can conclude that
@@ -561,10 +561,10 @@ The line $\mathcal{L}$ in $\mathbb{R}^3$.
 
 :::{prf:definition}
 
-If $\mathbf{v_0}=\begin{bmatrix} x_0 \\ y_0 \\ z_0 \end{bmatrix}$ is a vector on the line $\mathcal{L}$ and $\mathbf{u}=\begin{bmatrix} a \\ b \\ c \end{bmatrix}$ is a directional vector of $\mathcal{L}$, then the equation
+If $\mathbf{v_0}=\begin{pmatrix} x_0 \\ y_0 \\ z_0 \end{pmatrix}$ is a vector on the line $\mathcal{L}$ and $\mathbf{u}=\begin{pmatrix} a \\ b \\ c \end{pmatrix}$ is a directional vector of $\mathcal{L}$, then the equation
 
 $$
-\begin{bmatrix} x \\ y \\ z \end{bmatrix}=\begin{bmatrix} x_0 \\ y_0 \\ z_0 \end{bmatrix}+r\begin{bmatrix} a \\ b \\ c \end{bmatrix} \qquad \textrm{$r$ in $\mathbb{R}$}
+\begin{pmatrix} x \\ y \\ z \end{pmatrix}=\begin{pmatrix} x_0 \\ y_0 \\ z_0 \end{pmatrix}+r\begin{pmatrix} a \\ b \\ c \end{pmatrix} \qquad \textrm{$r$ in $\mathbb{R}$}
 $$
 
 will be called a _parametric vector equation_ of $\mathcal{L}$.
@@ -575,13 +575,13 @@ will be called a _parametric vector equation_ of $\mathcal{L}$.
 How can we find a parametric vector equation for the line $\mathcal{L}$ that contains the points $P=(1, 2, 4)$ and $Q=(5, 3, 1)$? <BR> The vector $\overrightarrow{PQ}$ is parallel to $\mathcal{L}$ and therefore a directional vector. The components of this vector are equal to
 
 $$
-\overrightarrow{PQ}=\begin{bmatrix} 5-1 \\ 3-2 \\ 1-4 \end{bmatrix}=\begin{bmatrix} 4 \\ 1 \\ -3 \end{bmatrix}.
+\overrightarrow{PQ}=\begin{pmatrix} 5-1 \\ 3-2 \\ 1-4 \end{pmatrix}=\begin{pmatrix} 4 \\ 1 \\ -3 \end{pmatrix}.
 $$
 
 The equation
 
 $$
-\begin{bmatrix} x \\ y \\ z \end{bmatrix}=\begin{bmatrix} 1 \\ 2 \\ 4 \end{bmatrix}+r\begin{bmatrix} 4 \\ 1 \\ -3 \end{bmatrix} \qquad \textrm{$r$ in $\mathbb{R}$}
+\begin{pmatrix} x \\ y \\ z \end{pmatrix}=\begin{pmatrix} 1 \\ 2 \\ 4 \end{pmatrix}+r\begin{pmatrix} 4 \\ 1 \\ -3 \end{pmatrix} \qquad \textrm{$r$ in $\mathbb{R}$}
 $$
 
 is thus a possible parametric vector equation of $\mathcal{L}$.

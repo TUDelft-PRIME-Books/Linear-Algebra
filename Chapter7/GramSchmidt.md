@@ -12,7 +12,7 @@ As a starter have a look at the following example
 
 ::::{prf:example}
 
-Let $W$ be the subspace in $\R^3$ spanned by the two vectors $\vect{a}_1 = \begin{bmatrix} 2 \\ 1   \\3    \end{bmatrix}$ and $\vect{a}_2 = \begin{bmatrix} 3 \\ -2   \\1    \end{bmatrix}$.
+Let $W$ be the subspace in $\R^3$ spanned by the two vectors $\vect{a}_1 = \begin{pmatrix} 2 \\ 1   \\3    \end{pmatrix}$ and $\vect{a}_2 = \begin{pmatrix} 3 \\ -2   \\1    \end{pmatrix}$.
 We want to construct an orthogonal basis $\{\vect{b}_1,\vect{b}_2 \}$ for $W$.
 
 For the first vector of this 'new' basis we can simply take $\vect{b}_1 = \vect{a}_1$.
@@ -34,15 +34,15 @@ A fortiori $\{\vect{b}_1, \vect{b}_2\}$ is linearly independent, so $\{\vect{b}_
 The explicit vectors we find are
 
 $$
-   \vect{b}_1 = \begin{bmatrix} 2 \\ 1   \\3    \end{bmatrix}, \quad
-   \vect{b}_2 =  \begin{bmatrix} 3 \\ -2   \\1    \end{bmatrix} - \dfrac{7}{14}\begin{bmatrix} 2 \\ 1   \\3    \end{bmatrix} = \begin{bmatrix} 2 \\ -5/2   \\ -1/2    \end{bmatrix} =
-   \dfrac{1}{2}\begin{bmatrix} 4 \\ -5   \\ -1    \end{bmatrix}
+   \vect{b}_1 = \begin{pmatrix} 2 \\ 1   \\3    \end{pmatrix}, \quad
+   \vect{b}_2 =  \begin{pmatrix} 3 \\ -2   \\1    \end{pmatrix} - \dfrac{7}{14}\begin{pmatrix} 2 \\ 1   \\3    \end{pmatrix} = \begin{pmatrix} 2 \\ -5/2   \\ -1/2    \end{pmatrix} =
+   \dfrac{1}{2}\begin{pmatrix} 4 \\ -5   \\ -1    \end{pmatrix}
 $$
 
 If we prefer vectors without fractions, we can rescale the second vector, and then find the orthogonal basis
 
 $$
-  \{\vect{b}_1, 2\vect{b}_2\} = \left\{\begin{bmatrix} 2 \\ 1   \\3    \end{bmatrix},  \begin{bmatrix} 4 \\ -5   \\ -1    \end{bmatrix}  \right\}.
+  \{\vect{b}_1, 2\vect{b}_2\} = \left\{\begin{pmatrix} 2 \\ 1   \\3    \end{pmatrix},  \begin{pmatrix} 4 \\ -5   \\ -1    \end{pmatrix}  \right\}.
 $$
 
 ::::
@@ -97,16 +97,16 @@ The above construction/algorithm is called the **Gram-Schmidt process**.
 ::::{prf:example}
 :label: Ex:GramSchmidt:Orthogonalize
 
-Let $W$ be the defined as the span of the set $\left\{\begin{bmatrix} 1 \\ 1   \\ -1 \\ 1    \end{bmatrix}, \begin{bmatrix} 3 \\ 3   \\ -2 \\ 0    \end{bmatrix}, \begin{bmatrix} 3 \\ 1   \\ 4 \\ -4    \end{bmatrix}  \right\}$. It can be shown that these vectors are linearly independent.
+Let $W$ be the defined as the span of the set $\left\{\begin{pmatrix} 1 \\ 1   \\ -1 \\ 1    \end{pmatrix}, \begin{pmatrix} 3 \\ 3   \\ -2 \\ 0    \end{pmatrix}, \begin{pmatrix} 3 \\ 1   \\ 4 \\ -4    \end{pmatrix}  \right\}$. It can be shown that these vectors are linearly independent.
 
 We use the Gram-Schmidt algorithm to create an orthogonal basis for $W$.
 
 %$$
 %   (\vect{a}_1,\vect{a}_2,\vect{a}_3 ) = 
 %   \left( 
-%    \begin{bmatrix} 1 \\ 1   \\-1  \\1  \end{bmatrix},
-%   \begin{bmatrix} 3 \\ 3   \\-2  \\0  \end{bmatrix}
-%    \begin{bmatrix} 3 \\ 1   \\4  \\-4  \end{bmatrix}
+%    \begin{pmatrix} 1 \\ 1   \\-1  \\1  \end{pmatrix},
+%   \begin{pmatrix} 3 \\ 3   \\-2  \\0  \end{pmatrix}
+%    \begin{pmatrix} 3 \\ 1   \\4  \\-4  \end{pmatrix}
 %    \right).
 %$$
 
@@ -114,11 +114,11 @@ Step by step we find
 
 $$
 
-  \vect{b}_1 = \vect{a}_1 = \begin{bmatrix} 1 \\ 1   \\-1  \\1  \end{bmatrix}, \quad
+  \vect{b}_1 = \vect{a}_1 = \begin{pmatrix} 1 \\ 1   \\-1  \\1  \end{pmatrix}, \quad
   \vect{b}_2 = \vect{a}_2 - \dfrac{\vect{a}_2\ip\vect{b}_1}{\vect{b}_1\ip\vect{b}_1}\vect{b}_1 =
-  \begin{bmatrix} 3 \\ 3   \\-2  \\0  \end{bmatrix} -
-  \dfrac{8}{4}\begin{bmatrix} 1 \\ 1   \\-1  \\1  \end{bmatrix}=
-  \begin{bmatrix} 1 \\ 1   \\0  \\-2  \end{bmatrix}
+  \begin{pmatrix} 3 \\ 3   \\-2  \\0  \end{pmatrix} -
+  \dfrac{8}{4}\begin{pmatrix} 1 \\ 1   \\-1  \\1  \end{pmatrix}=
+  \begin{pmatrix} 1 \\ 1   \\0  \\-2  \end{pmatrix}
 $$
 
 and
@@ -128,9 +128,9 @@ $$
 \begin{array}{lcl}
   \vect{b}_3 &=& \vect{a}_3 - \dfrac{\vect{a}_3\ip\vect{b}_1}{\vect{b}_1\ip\vect{b}_1}\vect{b}_1  - \dfrac{\vect{a}_3\ip\vect{b}_2}{\vect{b}_2\ip\vect{b}_2}\vect{b}_2 \\
   &=&
-  \begin{bmatrix} 3 \\ 1   \\4  \\-4  \end{bmatrix} -
-  \dfrac{-4}{4}\begin{bmatrix} 1 \\ 1   \\-1  \\1  \end{bmatrix} -
-  \dfrac{12}{6}\begin{bmatrix} 1 \\ 1   \\0  \\-2  \end{bmatrix} = \begin{bmatrix} 2 \\ 0   \\3  \\1  \end{bmatrix}
+  \begin{pmatrix} 3 \\ 1   \\4  \\-4  \end{pmatrix} -
+  \dfrac{-4}{4}\begin{pmatrix} 1 \\ 1   \\-1  \\1  \end{pmatrix} -
+  \dfrac{12}{6}\begin{pmatrix} 1 \\ 1   \\0  \\-2  \end{pmatrix} = \begin{pmatrix} 2 \\ 0   \\3  \\1  \end{pmatrix}
   \end{array}
 $$
 
@@ -208,15 +208,15 @@ a subspace $W = \text{span}\{\vect{a}_1, \ldots, \vect{a}_m\}$ where the vectors
 ::::{prf:example}
 :label: Ex:GramSchmidt:NonOrthog
 
-Let $W$ be the defined as the span of the set $\left\{\begin{bmatrix} 1 \\ -1   \\ 2 \\ 3    \end{bmatrix}, \begin{bmatrix} 2 \\ -2   \\ 4 \\ 6    \end{bmatrix}, \begin{bmatrix} 2 \\ 0   \\ 1 \\  2    \end{bmatrix}, \begin{bmatrix} 0 \\ 2  \\ -3 \\  -4    \end{bmatrix} \right\}$.
+Let $W$ be the defined as the span of the set $\left\{\begin{pmatrix} 1 \\ -1   \\ 2 \\ 3    \end{pmatrix}, \begin{pmatrix} 2 \\ -2   \\ 4 \\ 6    \end{pmatrix}, \begin{pmatrix} 2 \\ 0   \\ 1 \\  2    \end{pmatrix}, \begin{pmatrix} 0 \\ 2  \\ -3 \\  -4    \end{pmatrix} \right\}$.
 
 Let us denote the vectors by $\vect{a}_1, \ldots, \vect{a}_4$. As in the proof of the Gram-Schmidt process
 we use the notation $W_j$ for the span of the vectors $ \vect{a}_1, \ldots, \vect{a}_j$.
 
 Just following the protocol we find
 
-$\vect{b}_1 = \vect{a}_1 = \begin{bmatrix} 1 \\ -1   \\ 2 \\ 3    \end{bmatrix},  \quad
-      \vect{b}_2 =   \vect{a}_{2} - \dfrac{\vect{a}_{2}\ip\vect{b}_1}{\vect{b}_1\ip\vect{b}_1}\vect{b}_1        = \begin{bmatrix} 0 \\ 0   \\ 0 \\ 0    \end{bmatrix}$.
+$\vect{b}_1 = \vect{a}_1 = \begin{pmatrix} 1 \\ -1   \\ 2 \\ 3    \end{pmatrix},  \quad
+      \vect{b}_2 =   \vect{a}_{2} - \dfrac{\vect{a}_{2}\ip\vect{b}_1}{\vect{b}_1\ip\vect{b}_1}\vect{b}_1        = \begin{pmatrix} 0 \\ 0   \\ 0 \\ 0    \end{pmatrix}$.
 
 The explanation is that $\vect{b}_2 = \vect{a}_{2} - \text{proj}_{\vect{a}_1}(\vect{a}_2) =
 \vect{a}_{2} - \vect{a}_{2} = \vect{0}$, since $\vect{a}_2$ lies in span$\{\vect{a}_1\}$.
@@ -226,10 +226,10 @@ We discard the zero vector, and continu to compute the next new basis vector.
 
 $$
  \vect{b}_3 = \vect{a}_3 - \text{proj}_{W_2}(\vect{a}_3) = \vect{a}_3 - \text{proj}_{W_1}(\vect{a}_3)
- =  \begin{bmatrix} 2 \\ 0   \\ 1 \\  2    \end{bmatrix} - \dfrac{10}{15}\begin{bmatrix} 1 \\ -1   \\ 2 \\ 3    \end{bmatrix} = \dfrac13 \begin{bmatrix} 4 \\ 2   \\ -1 \\  0    \end{bmatrix}.
+ =  \begin{pmatrix} 2 \\ 0   \\ 1 \\  2    \end{pmatrix} - \dfrac{10}{15}\begin{pmatrix} 1 \\ -1   \\ 2 \\ 3    \end{pmatrix} = \dfrac13 \begin{pmatrix} 4 \\ 2   \\ -1 \\  0    \end{pmatrix}.
 $$
 
-To get rid of fractions we rather continue with $\vect{b}_3 = \begin{bmatrix} 4 \\ 2   \\ -1 \\  0    \end{bmatrix}$.
+To get rid of fractions we rather continue with $\vect{b}_3 = \begin{pmatrix} 4 \\ 2   \\ -1 \\  0    \end{pmatrix}$.
 
 The last step:
 
@@ -244,8 +244,8 @@ discard $\vect{b}_4$ from our basis.
 The conclusion is that
 
 $$
- \left\{\vect{b}_1,\vect{b}_3\right\} = \left\{\begin{bmatrix} 1 \\ -1   \\ 2 \\ 3    \end{bmatrix},
-          \begin{bmatrix} 4 \\ 2   \\ -1 \\ 0    \end{bmatrix}\right\}
+ \left\{\vect{b}_1,\vect{b}_3\right\} = \left\{\begin{pmatrix} 1 \\ -1   \\ 2 \\ 3    \end{pmatrix},
+          \begin{pmatrix} 4 \\ 2   \\ -1 \\ 0    \end{pmatrix}\right\}
 $$
 
 is an orthogonal basis for span$\{\vect{a}_1,\ldots, \vect{a}_4\}$.
@@ -286,23 +286,23 @@ $$
 
 W = \text{span}
 \left(
-    \begin{bmatrix} 1 \\ 1   \\-1  \\1  \end{bmatrix},
-    \begin{bmatrix} 3 \\ 3   \\-2  \\0  \end{bmatrix}
-    \begin{bmatrix} 3 \\ 1   \\4  \\-4  \end{bmatrix}
+    \begin{pmatrix} 1 \\ 1   \\-1  \\1  \end{pmatrix},
+    \begin{pmatrix} 3 \\ 3   \\-2  \\0  \end{pmatrix}
+    \begin{pmatrix} 3 \\ 1   \\4  \\-4  \end{pmatrix}
     \right).
 $$
 
 we found, in {prf:ref}`Ex:GramSchmidt:Orthogonalize`, the orthogonal basis
 
 $$
-   \left\{\begin{bmatrix} 1 \\ 1   \\-1  \\1   \end{bmatrix}, \begin{bmatrix} 1 \\ 1 \\0 \\-2  \end{bmatrix},   \begin{bmatrix} 2 \\ 0   \\3  \\1  \end{bmatrix}\right\}.
+   \left\{\begin{pmatrix} 1 \\ 1   \\-1  \\1   \end{pmatrix}, \begin{pmatrix} 1 \\ 1 \\0 \\-2  \end{pmatrix},   \begin{pmatrix} 2 \\ 0   \\3  \\1  \end{pmatrix}\right\}.
 $$
 
 Rescaling (or normalizing) gives the orthonormal basis
 
 $$
 
-   \left\{ \dfrac{1}{2}\begin{bmatrix} 1 \\ 1   \\-1  \\1   \end{bmatrix}, \quad \dfrac{1}{\sqrt{6}}\begin{bmatrix} 1 \\ 1 \\0 \\-2  \end{bmatrix},   \quad  \dfrac{1}{\sqrt{14}}\begin{bmatrix} 2 \\ 0   \\3  \\1  \end{bmatrix}\right\}.
+   \left\{ \dfrac{1}{2}\begin{pmatrix} 1 \\ 1   \\-1  \\1   \end{pmatrix}, \quad \dfrac{1}{\sqrt{6}}\begin{pmatrix} 1 \\ 1 \\0 \\-2  \end{pmatrix},   \quad  \dfrac{1}{\sqrt{14}}\begin{pmatrix} 2 \\ 0   \\3  \\1  \end{pmatrix}\right\}.
 $$
 
 ::::
@@ -371,21 +371,21 @@ so
 
 $$
 
-  B = [\vect{b}_1\,\,\vect{b}_2\,\,\ldots\,\,\vect{b}_m]  =
-    [\vect{a}_1\,\,\vect{a}_2\,\,\ldots\,\,\vect{a}_m]
-  \begin{bmatrix} 1 & c_{12} & c_{13} & \ldots & c_{1m} \\
+  B = (\vect{b}_1\,\,\vect{b}_2\,\,\ldots\,\,\vect{b}_m)  =
+    (\vect{a}_1\,\,\vect{a}_2\,\,\ldots\,\,\vect{a}_m)
+  \begin{pmatrix} 1 & c_{12} & c_{13} & \ldots & c_{1m} \\
   0 & 1 & c_{23} & \ldots & c_{2m} \\
   0 & 0 & 1 & \ldots & c_{3m} \\
   \vdots & \vdots &  & \ddots &  \\
   0 & 0 & 0 & \ldots & 1
-   \end{bmatrix} = AC.
+   \end{pmatrix} = AC.
 $$
 
 Normalizing the vectors $\vect{b}_i$ can be seen as multiplying the matrix $B$ with a diagonal matrix $D$:
 
 $$
 
-   Q = [\vect{q}_1\,\,\vect{q}_2\,\,\ldots\,\,\vect{q}_m]  =  BD,
+   Q = (\vect{q}_1\,\,\vect{q}_2\,\,\ldots\,\,\vect{q}_m)  =  BD,
 $$
 
 where the diagonal entries $d_{ii}$ of $D$ are given by
@@ -420,7 +420,7 @@ There is an quicker way to find the matrix $R$ than by inverting the matrix $CD$
 ::::{prf:proposition}
 :label: Prop:GramSchmidt:QR-quick
 
-Let $Q = [\vect{q}_1,\ldots,\vect{q}_m]$ be the matrix constructed by exactly applying the Gram-Schmidt process followed by rescaling. Define $R = Q^TA$.
+Let $Q = (\vect{q}_1,\ldots,\vect{q}_m)$ be the matrix constructed by exactly applying the Gram-Schmidt process followed by rescaling. Define $R = Q^TA$.
 
 Then $R$ is an upper triangular matrix with a positive entries on its diagonal, and
 
@@ -466,12 +466,12 @@ The following example provides an illustration of this last proposition.
 Consider the matrix
 
 $$
-A= \begin{bmatrix}
+A= \begin{pmatrix}
   1 & 3 & 3\\
   1 & 3 & 1\\
   -1 &-2 & 4  \\
   1 & 0 &-4
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 From {prf:ref}`Ex:GramSchmidt:Orthogonalize` and
@@ -480,30 +480,30 @@ we know that applying the Gram-Schmidt process to the columns of $A$
 leads to the matrix
 
 $$
- Q = \begin{bmatrix}
+ Q = \begin{pmatrix}
         \dfrac{1}{2} & \dfrac{1}{\sqrt{6}} & \dfrac{2}{\sqrt{14}}\\
         \dfrac{1}{2} & \dfrac{1}{\sqrt{6}} & 0\\
         -\dfrac{1}{2} & 0 & \dfrac{3}{\sqrt{14}}\\
         \dfrac{1}{2} &-\dfrac{2}{\sqrt{6}} & \dfrac{1}{\sqrt{14}}
-      \end{bmatrix}.
+      \end{pmatrix}.
 $$
 
 We compute $R = Q^TA$
 
 $$
- \begin{bmatrix}
+ \begin{pmatrix}
         \dfrac{1}{2} & \dfrac{1}{2} & -\dfrac{1}{2} & \dfrac{1}{2} \\
         \dfrac{1}{\sqrt{6}} &\dfrac{1}{\sqrt{6}} &  0 & -\dfrac{2}{\sqrt{6}} \\
         \dfrac{2}{\sqrt{14}} & 0  & \dfrac{3}{\sqrt{14}} & \dfrac{1}{\sqrt{14}}
-      \end{bmatrix}
-      \begin{bmatrix}  1 & 3 & 3\\
+      \end{pmatrix}
+      \begin{pmatrix}  1 & 3 & 3\\
                        1 & 3 & 1\\
                       -1 &-2 & 4  \\
-                       1 & 0 &-4 \end{bmatrix}
+                       1 & 0 &-4 \end{pmatrix}
        =
-      \begin{bmatrix}  2 & 4 & -2\\
+      \begin{pmatrix}  2 & 4 & -2\\
                        0 & \sqrt{6} & 2\sqrt{6}\\
-                       0 & 0 & \sqrt{14}  \end{bmatrix},
+                       0 & 0 & \sqrt{14}  \end{pmatrix},
 $$
 
 and see that this is indeed an upper triangular matrix (with positive diagonal entries).

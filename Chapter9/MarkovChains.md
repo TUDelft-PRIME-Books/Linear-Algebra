@@ -15,11 +15,11 @@ We call a vector $\vect{v}$ in $\R^{n}$ a **probability vector** if the sum of i
 Perhaps the chance that a customer of A remains with A after one month is $p_{11}$, the chance that he uses B after one month is $p_{21}$, and the chance that he uses C after one month is $p_{31}$. Then the probability vector associated to A will be
 
 $$
-\vect{p}_{1}=\begin{bmatrix}
+\vect{p}_{1}=\begin{pmatrix}
 p_{11}\\
 p_{21}\\
 p_{31}
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 Clearly, for brands B and C there must be similar probability vectors, say $\vect{p}_{2}$ and $\vect{p}_{3}$. If we take these three probability vectors together, they form a matrix.
@@ -37,27 +37,27 @@ $$
 p_{11}a_{0}+p_{12}b_{0}+p_{13}c_{0}&=a_{1}\\
 p_{21}a_{0}+p_{22}b_{0}+p_{23}c_{0}&=b_{1}\\
 p_{31}a_{0}+p_{32}b_{0}+p_{33}c_{0}&=c_{1}
-\end{align*}\quad\text{i.e.}\quad P\begin{bmatrix}
+\end{align*}\quad\text{i.e.}\quad P\begin{pmatrix}
 a_{0}\\
 b_{0}\\
 c_{0}
-\end{bmatrix}=\begin{bmatrix}
+\end{pmatrix}=\begin{pmatrix}
 a_{1}\\
 b_{1}\\
 c_{1}
-\end{bmatrix}
+\end{pmatrix}
 $$
 
-where $P=[\vect{p}_{1}\,\vect{p}_{2}\,\vect{p}_{3}]$ is the stochastic matrix associated to our model. We have now found the updated state after one month.
+where $P=(\vect{p}_{1}\,\vect{p}_{2}\,\vect{p}_{3})$ is the stochastic matrix associated to our model. We have now found the updated state after one month.
 
 Often, it is more convenient to work with percentages instead of absolute numbers. This can be easily done by dividing $a_{0}$, $b_{0}$, and $c_{0}$ by the total population $a_{0}+b_{0}+c_{0}$. In doing so, we make sure that
 
 $$
-\vect{x}_{0}=\frac{1}{a_{0}+b_{0}+c_{0}}\begin{bmatrix}
+\vect{x}_{0}=\frac{1}{a_{0}+b_{0}+c_{0}}\begin{pmatrix}
 a_{0}\\
 b_{0}\\
 c_{0}
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 is a probability vector. It turns out that the new vector $\vect{x}_{1}$ is also a probability vector, as per the next proposition.
@@ -110,29 +110,29 @@ Suppose we have three brands, A, B, and C. Let us assume that 80\% of the custom
 This gives us the following stochastic matrix:
 
 $$
-P=\begin{bmatrix}
+P=\begin{pmatrix}
 0.8&0.1&0.2\\
 0.1&0.8&0.1\\
 0.1&0.1&0.7
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 If we, for example, assume that the three brands start out with equal market shares, we find
 
 $$
-\vect{x}_{0}=\begin{bmatrix}
+\vect{x}_{0}=\begin{pmatrix}
 1/3\\
 1/3\\
 1/3
-\end{bmatrix}\quad\text{so}\quad \vect{x}_{1}=P\vect{x}_{0}=\begin{bmatrix}
+\end{pmatrix}\quad\text{so}\quad \vect{x}_{1}=P\vect{x}_{0}=\begin{pmatrix}
 11/30\\
 10/30\\
 9/30
-\end{bmatrix},\quad \vect{x}_{2}=P\vect{x}_{1}=\begin{bmatrix}
+\end{pmatrix},\quad \vect{x}_{2}=P\vect{x}_{1}=\begin{pmatrix}
 116/300\\
 100/300\\
 84/300
-\end{bmatrix},
+\end{pmatrix},
 $$
 
 and so on. We can see that brand A consistently wins market share at the cost of brand C, while brand B keeps a constant customer base. Note, however, that C will never have no market share, as it will, every month, gain 10\% of both A and B's customer base.
@@ -176,25 +176,25 @@ As an immediate consequence of {prf:ref}`Prop:MarkovChains:StoMat1EV`, any stoch
 Let us revisit the matrix
 
 $$
-P=\begin{bmatrix}
+P=\begin{pmatrix}
 0.8&0.1&0.2\\
 0.1&0.8&0.1\\
 0.1&0.1&0.7
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 from {prf:ref}`Prop:MarkovChains:StoMat1EV`. With standard computations, we find that the eigenspace of eigenvalue 1 is spanned by
 
 $$
-\vect{v}=\begin{bmatrix}
+\vect{v}=\begin{pmatrix}
 5\\
 4\\
 3
-\end{bmatrix}. \quad\text{Hence, the probability vector}\quad \vect{x}=\frac{1}{3+4+5}\begin{bmatrix}
+\end{pmatrix}. \quad\text{Hence, the probability vector}\quad \vect{x}=\frac{1}{3+4+5}\begin{pmatrix}
 5\\
 4\\
 3
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 is a steady state for $P$.
@@ -251,41 +251,41 @@ The problem from {prf:ref}`Ex:MarkovChains:MarkovChainonNodes` illustrated.
 Suppose four nodes are connected in a circle. One move can get us from a given node to a neighbouring node. If we make $k$ random moves, where will we end up with what probability? We can model this problem with a stochastic matrix $P$, for which the $i,j$-th entry is the probability of getting from the $i$-th to the $j$-th node in one move. This gives us
 
 $$
-P=\begin{bmatrix}
+P=\begin{pmatrix}
     0&\frac{1}{2}&0&\frac{1}{2}\\
     \frac{1}{2}&0&\frac{1}{2}&0\\
     0&\frac{1}{2}&0&\frac{1}{2}\\
     \frac{1}{2}&0&\frac{1}{2}&0
-\end{bmatrix},\quad\text{hence}\quad P^{2}=\begin{bmatrix}
+\end{pmatrix},\quad\text{hence}\quad P^{2}=\begin{pmatrix}
     \frac{1}{2}&0&\frac{1}{2}&0\\
     0&\frac{1}{2}&0&\frac{1}{2}\\
     \frac{1}{2}&0&\frac{1}{2}&0\\
     0&\frac{1}{2}&0&\frac{1}{2}
-\end{bmatrix},
+\end{pmatrix},
 $$
 
 $P^{3}=P$, $P^{4}=P^{2}$ etc. Since every power of $P$ contains some $0$ entry, $P$ is not regular. Nevertheless, there is only a single steady state, namely
 
 $$
-\vect{x}=\begin{bmatrix}\frac{1}{4}\\\frac{1}{4}\\\frac{1}{4}\\\frac{1}{4}\end{bmatrix}.
+\vect{x}=\begin{pmatrix}\frac{1}{4}\\\frac{1}{4}\\\frac{1}{4}\\\frac{1}{4}\end{pmatrix}.
 $$
 
 Suppose, for instance, that we start at node $1$. This means that our starting state will be
 
 $$
-\vect{x}_{0}=\begin{bmatrix}
+\vect{x}_{0}=\begin{pmatrix}
 1\\0\\0\\0
-\end{bmatrix},\quad\text{so}\quad \vect{x}_{1}=\begin{bmatrix}
+\end{pmatrix},\quad\text{so}\quad \vect{x}_{1}=\begin{pmatrix}
 0\\
 \frac{1}{2}\\
 0\\
 \frac{1}{2}
-\end{bmatrix},\quad\vect{x}_{2}=\begin{bmatrix}
+\end{pmatrix},\quad\vect{x}_{2}=\begin{pmatrix}
 \frac{1}{2}\\
 0\\
 \frac{1}{2}\\
 0
-\end{bmatrix},
+\end{pmatrix},
 $$
 
 and $\vect{x}_{n}=\vect{x}_{n-2}$ for $n$ greater than $3$. This gives us complete information about with what probility we will be where after how many moves.
@@ -303,40 +303,40 @@ The problem from {prf:ref}`Ex:MarkovChains:MarkovChainonNodes` with an extra loo
 The chances of going from $1$ to either $2$ or $4$ are also $1/3$. The new stochastic matrix becomes
 
 $$
-P=\begin{bmatrix}
+P=\begin{pmatrix}
     \frac{1}{3}&\frac{1}{2}&0&\frac{1}{2}\\
     \frac{1}{3}&0&\frac{1}{2}&0\\
     0&\frac{1}{2}&0&\frac{1}{2}\\
     \frac{1}{3}&0&\frac{1}{2}&0
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 Using a computer, we find the following powers of $P$:
 
 $$
-P^{2}=\frac{1}{36}\begin{bmatrix}
+P^{2}=\frac{1}{36}\begin{pmatrix}
 16&6&18&6\\
 4&15&0&15\\
 12&0&18&0\\
 4&15&0&15
-\end{bmatrix}\quad\text{and}\quad
-P^{3}=\frac{1}{108}\begin{bmatrix}
+\end{pmatrix}\quad\text{and}\quad
+P^{3}=\frac{1}{108}\begin{pmatrix}
 28&51&18&51\\
 34&6&45&6\\
 12&45&0&45\\
 34&6&45&6
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 which still contain $0$ entries, but also
 
 $$
-P^{4}=\frac{1}{648}\begin{bmatrix}
+P^{4}=\frac{1}{648}\begin{pmatrix}
 260&138&306&138\\
 92&237&36&237\\
 204&36&270&36\\
 92&237&36&237
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 and this matrix, finally, contains only strictly positive elements. So $P$ really is regular.
@@ -344,12 +344,12 @@ and this matrix, finally, contains only strictly positive elements. So $P$ reall
 As you can see, computing the powers of a stochastic matrix by hand quickly becomes difficult. However, because we are dealing with a regular stochastic matrix, we can still predict what will happen after a long time. We just need to find the steady state, i.e. we need to solve $P\vect{x}=\vect{x}$ and find a solution $\vect{x}$ for which the entries add up to $1$. This is a standard computation, which yields, as it should, a single solution:
 
 $$
-\vect{x}=\begin{bmatrix}
+\vect{x}=\begin{pmatrix}
 \frac{1}{3}\\
 \frac{2}{9}\\
 \frac{2}{9}\\
 \frac{2}{9}
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 
@@ -358,32 +358,32 @@ From it, we can read off that, should we let this process continue for a long ti
 For example, if we start in node $3$, we find the following process:
 
 $$
-\vect{x}_{0}=\begin{bmatrix}
+\vect{x}_{0}=\begin{pmatrix}
 0\\
 0\\
 1\\
 0
-\end{bmatrix},\vect{x}_{1}=\begin{bmatrix}
+\end{pmatrix},\vect{x}_{1}=\begin{pmatrix}
 0\\
 \frac{1}{2}\\
 0\\
 \frac{1}{2}
-\end{bmatrix},\vect{x}_{2}=\begin{bmatrix}
+\end{pmatrix},\vect{x}_{2}=\begin{pmatrix}
 \frac{1}{2}\\
 0\\
 \frac{1}{2}\\
 0
-\end{bmatrix},\vect{x}_{3}=\begin{bmatrix}
+\end{pmatrix},\vect{x}_{3}=\begin{pmatrix}
 \frac{1}{6}\\
 \frac{5}{12}\\
 0\\
 \frac{5}{12}
-\end{bmatrix},...,\vect{x}_{50}\approx\begin{bmatrix}
+\end{pmatrix},...,\vect{x}_{50}\approx\begin{pmatrix}
 0.3335\\
 0.2221\\
 0.2224\\
 0.2221
-\end{bmatrix},...
+\end{pmatrix},...
 $$
 
 so the distribution after $50$ moves is already quite close to the steady state. Remark that nodes $2$ and $4$ have the exact same probability in every state.

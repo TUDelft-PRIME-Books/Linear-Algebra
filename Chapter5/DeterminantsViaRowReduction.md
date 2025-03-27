@@ -125,14 +125,14 @@ Note that these properties can be expressed using elementary matrices (cf. {numr
 Let $A$ be an arbitrary $4\times 4$ matrix, and $E_1, E_2$ and $E_3$ the elementary matrices corresponding to the row operations in {prf:ref}`Ex:DetRowReduction:RowOps`. So
 
 $$
-E_1 = \left[\begin{array}{cccc} 1 & 0 & 0 & 0 \\ 0 & c & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1
-\end{array} \right]
+E_1 = \left(\begin{array}{cccc} 1 & 0 & 0 & 0 \\ 0 & c & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1
+\end{array} \right)
 , \quad
-E_2 = \left[\begin{array}{cccc} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ -k & 0 & 1 & 0 \\ 0 & 0 & 0 & 1
-\end{array} \right]
+E_2 = \left(\begin{array}{cccc} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ -k & 0 & 1 & 0 \\ 0 & 0 & 0 & 1
+\end{array} \right)
 , \quad
-E_3 = \left[\begin{array}{cccc} 0 & 0 & 0 & 1 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 1 & 0 & 0 & 0
-\end{array} \right]
+E_3 = \left(\begin{array}{cccc} 0 & 0 & 0 & 1 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 1 & 0 & 0 & 0
+\end{array} \right)
 .
 $$
 
@@ -532,11 +532,11 @@ This is true. One way to prove it is to write  $kA = (kI)A$, where
 <BR>
 
 $$
-   kI = \begin{bmatrix}k & 0 & 0 &\cdots & 0 \\
+   kI = \begin{pmatrix}k & 0 & 0 &\cdots & 0 \\
                        0 & k & 0 &\cdots & 0 \\
                        0 & 0 & k &\cdots & 0 \\
                        \vdots &  \vdots &\vdots &  \ddots & \vdots \\
-                       0 & 0 & 0 &\cdots & k  \end{bmatrix}.
+                       0 & 0 & 0 &\cdots & k  \end{pmatrix}.
 $$
 
 So we find
@@ -590,9 +590,9 @@ Then
 :label: Eq:DetExtras:SumofCols
 
 \begin{array}{l}
-\det{[\vect{a}_1 \,\, \ldots \,\, \vect{b}+\vect{c} \,\, \ldots \,\, \vect{a}_n]} = \\
-\qquad \qquad \qquad \det{[\vect{a}_1 \,\, \ldots \,\, \vect{b} \,\, \ldots \,\, \vect{a}_n]} +
-\det{[\vect{a}_1 \,\, \ldots \,\, \vect{c} \,\, \ldots \,\, \vect{a}_n]}
+\det{(\vect{a}_1 \,\, \ldots \,\, \vect{b}+\vect{c} \,\, \ldots \,\, \vect{a}_n)} = \\
+\qquad \qquad \qquad \det{(\vect{a}_1 \,\, \ldots \,\, \vect{b} \,\, \ldots \,\, \vect{a}_n)} +
+\det{(\vect{a}_1 \,\, \ldots \,\, \vect{c} \,\, \ldots \,\, \vect{a}_n)}
 \end{array}
 
 :::
@@ -609,7 +609,7 @@ For an $n \times n$ matrix
 
 $$
 
- A = [\vect{a}_1 \,\,\vect{a}_2  \,\,\ldots\,\,\vect{a}_j  \,\,\ldots\,\,\vect{a}_k   \,\,\ldots\,\, \vect{a}_n]
+ A = (\vect{a}_1 \,\,\vect{a}_2  \,\,\ldots\,\,\vect{a}_j  \,\,\ldots\,\,\vect{a}_k   \,\,\ldots\,\, \vect{a}_n)
 $$
 
 the rules can then be formulated as
@@ -617,11 +617,11 @@ the rules can then be formulated as
 :::{paren-list}
 :start: 1
 
-- $\det{[\vect{a}_1   \,  \vect{a}_2  \,  \ldots \, c \vect{a}_k  \,    \ldots  \,   \vect{a}_n]} = c  \det{A}$;
+- $\det{(\vect{a}_1   \,  \vect{a}_2  \,  \ldots \, c \vect{a}_k  \,    \ldots  \,   \vect{a}_n)} = c  \det{A}$;
 
-- $\det{[\vect{a}_1  \,  \ldots  \,   \vect{a}_k  \,    \ldots  \,   \vect{a}_j  \,   \ldots \,   \vect{a}_n]} = - \det{[\vect{a}_1  \,  \ldots  \,   \vect{a}_j  \,    \ldots  \,   \vect{a}_k  \,   \ldots \,   \vect{a}_n]}$;
+- $\det{(\vect{a}_1  \,  \ldots  \,   \vect{a}_k  \,    \ldots  \,   \vect{a}_j  \,   \ldots \,   \vect{a}_n)} = - \det{(\vect{a}_1  \,  \ldots  \,   \vect{a}_j  \,    \ldots  \,   \vect{a}_k  \,   \ldots \,   \vect{a}_n)}$;
 
-- $\det{[\vect{a}_1 \,  \ldots   \,  \vect{a}_j   \,   \ldots  \,   \vect{a}_k + c\vect{a}_j  \,  \ldots  \,  \vect{a}_n]} = \det{A}$.
+- $\det{(\vect{a}_1 \,  \ldots   \,  \vect{a}_j   \,   \ldots  \,   \vect{a}_k + c\vect{a}_j  \,  \ldots  \,  \vect{a}_n)} = \det{A}$.
 
 :::
 
@@ -689,32 +689,32 @@ To make this explicit for a $4\times 4$ matrix:
 
 $$
 \begin{array}{ccc}
-A = \left[\begin{array}{rrrr}
+A = \left(\begin{array}{rrrr}
 a_{11} &a_{12} &a_{13} &a_{14}  \\
 a_{21} &a_{22} &a_{23} &a_{24}  \\
 a_{31} &a_{32} &a_{33} &a_{34}  \\
 a_{41} &a_{42} &a_{43} &a_{44}
-\end{array} \right]
+\end{array} \right)
 & \Longrightarrow &
-\bar{\bar{A}} = \left[\begin{array}{rrrr}
+\bar{\bar{A}} = \left(\begin{array}{rrrr}
 a_{12} &a_{11} &a_{13} &a_{14}  \\
 a_{22} &a_{21} &a_{23} &a_{24}  \\
 a_{32} &a_{31} &a_{33} &a_{34}  \\
 a_{42} &a_{41} &a_{43} &a_{44}
-\end{array} \right]
+\end{array} \right)
  \\
 \Big\Downarrow && \Big\Downarrow  \\
-A_{3,1} = \left[\begin{array}{rrr}
+A_{3,1} = \left(\begin{array}{rrr}
 a_{12}  &a_{13} &a_{14}  \\
 a_{22}  &a_{23} &a_{24}  \\
 a_{42}  &a_{43} &a_{44}
-\end{array} \right]
+\end{array} \right)
   &= &
-\bar{\bar{A}}_{3,2} = \left[\begin{array}{rrr}
+\bar{\bar{A}}_{3,2} = \left(\begin{array}{rrr}
 a_{12}  &a_{13} &a_{14}  \\
 a_{22}  &a_{23} &a_{24}  \\
 a_{42}  &a_{43} &a_{44}
-\end{array} \right]
+\end{array} \right)
 .
 \end{array}
 $$
@@ -796,15 +796,15 @@ We then proceed as follows for Rule (3):
 
 $$
 \begin{array}{l}
-\det{[\vect{a}_1  \,  \ldots \,    \vect{a}_j  \,    \ldots  \,   \vect{a}_k + c\vect{a}_j   \, \ldots  \,  \vect{a}_n]} = \\
+\det{(\vect{a}_1  \,  \ldots \,    \vect{a}_j  \,    \ldots  \,   \vect{a}_k + c\vect{a}_j   \, \ldots  \,  \vect{a}_n)} = \\
 \quad =
-\det{[\vect{a}_1  \,  \ldots  \,  \vect{a}_j   \,  \ldots  \,   \vect{a}_k  \,  \ldots  \,  \vect{a}_n]} +
-\det{[\vect{a}_1   \, \ldots  \,   \vect{a}_j  \,    \ldots   \,   c \vect{a}_j    \,\ldots  \,  \vect{a}_n]}  \\
+\det{(\vect{a}_1  \,  \ldots  \,  \vect{a}_j   \,  \ldots  \,   \vect{a}_k  \,  \ldots  \,  \vect{a}_n)} +
+\det{(\vect{a}_1   \, \ldots  \,   \vect{a}_j  \,    \ldots   \,   c \vect{a}_j    \,\ldots  \,  \vect{a}_n)}  \\
 \quad =
-\det{[\vect{a}_1 \,   \ldots  \,   \vect{a}_j  \,   \ldots  \,   \vect{a}_k  \,  \ldots  \,  \vect{a}_n]} +
-c \det{[\vect{a}_1  \,  \ldots  \,   \vect{a}_j   \,   \ldots  \,    \vect{a}_j  \,  \ldots  \,  \vect{a}_n]}\\
+\det{(\vect{a}_1 \,   \ldots  \,   \vect{a}_j  \,   \ldots  \,   \vect{a}_k  \,  \ldots  \,  \vect{a}_n)} +
+c \det{(\vect{a}_1  \,  \ldots  \,   \vect{a}_j   \,   \ldots  \,    \vect{a}_j  \,  \ldots  \,  \vect{a}_n)}\\
 \quad =
-\det{[\vect{a}_1  \,  \ldots \,    \vect{a}_j  \,   \ldots   \,  \vect{a}_k  \,  \ldots   \, \vect{a}_n]} + 0.
+\det{(\vect{a}_1  \,  \ldots \,    \vect{a}_j  \,   \ldots   \,  \vect{a}_k  \,  \ldots   \, \vect{a}_n)} + 0.
 \end{array}
 $$
 

@@ -33,8 +33,8 @@ described the transition of the 'state' of some system at time $k$ to the state 
 The dynamical system
 
 $$
-\vect{x}_{k+1} = \left[\begin{array}{cc} 0.9 & 0.2 \\ 0.1 & 0.8 \end{array}\right]\vect{x}_k, \quad
-\vect{x}_k = \left[\begin{array}{c} x_k \\ y_k \end{array}\right]
+\vect{x}_{k+1} = \left(\begin{array}{cc} 0.9 & 0.2 \\ 0.1 & 0.8 \end{array}\right)\vect{x}_k, \quad
+\vect{x}_k = \left(\begin{array}{c} x_k \\ y_k \end{array}\right)
 $$
 
 can be interpreted as a model of two cities where in one 'time period' $10 \%$ of city $A$ moves to city $B$,
@@ -60,7 +60,7 @@ $$
 You may check that all states
 
 $$
-\vect{s} = c\left[\begin{array}{c} 2\\1 \end{array}\right],
+\vect{s} = c\left(\begin{array}{c} 2\\1 \end{array}\right),
 $$
 
 have this property. Note that these represent the situation where city $A$ has twice as many citizens as city $B$. For this distribution of people over the two cities the outflow of $10 \%$ from $A$ to $B$ is exactly balanced by the outflow of $20 \%$ from $B$ to $A$.
@@ -127,33 +127,33 @@ To tackle the first question, take a look at the following example.
 :label: Ex:Eigenvalues:Eigenvectorcheck
 
 For the matrix
-$A = \left[\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array}\right]$
-and the vector $\vect{u} = \left[\begin{array}{c} 2 \\1 \end{array}\right]$
+$A = \left(\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array}\right)$
+and the vector $\vect{u} = \left(\begin{array}{c} 2 \\1 \end{array}\right)$
 we see that
 
 $$
-A\vect{u} = \left[\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array}\right]
-\left[\begin{array}{c} 2 \\1 \end{array}\right]
- =\left[\begin{array}{c} 6 \\3 \end{array}\right]
-= 3 \left[\begin{array}{c} 2 \\1 \end{array}\right]
+A\vect{u} = \left(\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array}\right)
+\left(\begin{array}{c} 2 \\1 \end{array}\right)
+ =\left(\begin{array}{c} 6 \\3 \end{array}\right)
+= 3 \left(\begin{array}{c} 2 \\1 \end{array}\right)
  = 3 \vect{u},
 $$
 
 so $\vect{u}$ is an eigenvector of $A$ for the eigenvalue 3.
 
-On the other hand, for the vector $\vect{v} = \begin{bmatrix} 2 \\ -2 \end{bmatrix}$ we have
+On the other hand, for the vector $\vect{v} = \begin{pmatrix} 2 \\ -2 \end{pmatrix}$ we have
 
 $$
-A\vect{v} = \left[\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array}\right]
-\left[\begin{array}{c} 2\\-2\end{array}\right]
- =\begin{bmatrix} -6 \\0 \end{bmatrix}
-\quad \text{and} \quad \left[\begin{array}{c} -6 \\0 \end{array}\right]
-\neq c \begin{bmatrix} 2\\-2 \end{bmatrix} = c \vect{v},
+A\vect{v} = \left(\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array}\right)
+\left(\begin{array}{c} 2\\-2\end{array}\right)
+ =\begin{pmatrix} -6 \\0 \end{pmatrix}
+\quad \text{and} \quad \left(\begin{array}{c} -6 \\0 \end{array}\right)
+\neq c \begin{pmatrix} 2\\-2 \end{pmatrix} = c \vect{v},
 $$
 
 since such a $c$ should simultaneously satisfy $2c = -6$ and $(-2)c = 0$.
 <BR>
-So $\vect{v} = \begin{bmatrix} 2\\-2 \end{bmatrix}$ is not an eigenvector of $A$.
+So $\vect{v} = \begin{pmatrix} 2\\-2 \end{pmatrix}$ is not an eigenvector of $A$.
 See also {numref}`Figure %s <Fig:Eigenvalues:Eigenvector-no-Eigenvector>`
 
 ```{applet}
@@ -176,7 +176,7 @@ Well, again let us consider an example first.
 ::::::{prf:example}
 :label: Ex:Eigenvalues:VerifyEigenvalue
 
-We will check whether $1$ and $-1$ are eigenvalues of the matrix $A = \left[\begin{array}{cc} 1 & 4 \\ 1 & 1  \end{array}\right]$ of the previous example.
+We will check whether $1$ and $-1$ are eigenvalues of the matrix $A = \left(\begin{array}{cc} 1 & 4 \\ 1 & 1  \end{array}\right)$ of the previous example.
 
 For the first candidate we have to search for nonzero solutions of the equation
 
@@ -200,18 +200,18 @@ $$
 As
 
 $$
-A - I = \left[\begin{array}{cc} 1 & 4 \\ 1 & 1  \end{array}\right]
- - \left[\begin{array}{cc} 1 & 0 \\ 0 & 1  \end{array}\right]
+A - I = \left(\begin{array}{cc} 1 & 4 \\ 1 & 1  \end{array}\right)
+ - \left(\begin{array}{cc} 1 & 0 \\ 0 & 1  \end{array}\right)
  =
-\left[\begin{array}{cc} 0 & 4 \\ 1 & 0  \end{array}\right]
+\left(\begin{array}{cc} 0 & 4 \\ 1 & 0  \end{array}\right)
 ,
 $$
 
 the equation $(A-I)\vect{v} = \vect{0}$ becomes
 
 $$
-\left[\begin{array}{cc} 0 & 4 \\ 1 & 0  \end{array}\right]
- \vect{v} = \left[\begin{array}{c} 0 \\ 0 \end{array}\right]
+\left(\begin{array}{cc} 0 & 4 \\ 1 & 0  \end{array}\right)
+ \vect{v} = \left(\begin{array}{c} 0 \\ 0 \end{array}\right)
 .
 $$
 
@@ -244,28 +244,28 @@ So now we have to look for nonzero solutions of
 
 $$
 (A + I)\vect{x} = \vect{0}, \quad \text{i.e.}\quad
-\begin{bmatrix} 2 & 4 \\ 1 & 2 \end{bmatrix}\vect{x} =
-\begin{bmatrix} 0  \\ 0 \end{bmatrix}.
+\begin{pmatrix} 2 & 4 \\ 1 & 2 \end{pmatrix}\vect{x} =
+\begin{pmatrix} 0  \\ 0 \end{pmatrix}.
 $$
 
 The solutions of this last equation are
 
 $$
-\vect{x} = x_2\begin{bmatrix} -2  \\ 1 \end{bmatrix},   x_2 \in \R.
+\vect{x} = x_2\begin{pmatrix} -2  \\ 1 \end{pmatrix},   x_2 \in \R.
 $$
 
 As a check:
 
 $$
-\left[\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array}\right]
-\left[\begin{array}{c} -2  \\ 1 \end{array}\right]
- = \left[\begin{array}{cc} 2  \\ -1 \end{array}\right]
- = (-1)\left[\begin{array}{c} -2  \\ 1 \end{array}\right]
+\left(\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array}\right)
+\left(\begin{array}{c} -2  \\ 1 \end{array}\right)
+ = \left(\begin{array}{cc} 2  \\ -1 \end{array}\right)
+ = (-1)\left(\begin{array}{c} -2  \\ 1 \end{array}\right)
 .
 $$
 
-So $-1$ is an eigenvalue of the matrix $\left[\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array}\right] $ and a corresponding eigenvector is the vector
-$\left[\begin{array}{c} 2 \\ -1 \end{array}\right]$.  Note that the full set of eigenvectors for the eigenvalue $\lambda = -1$ is the set of all multiples of the vector $\left[\begin{array}{c} 2  \\ -1 \end{array}\right]$. Well, to be precise, all _nonzero_ multiples.
+So $-1$ is an eigenvalue of the matrix $\left(\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array}\right) $ and a corresponding eigenvector is the vector
+$\left(\begin{array}{c} 2 \\ -1 \end{array}\right)$.  Note that the full set of eigenvectors for the eigenvalue $\lambda = -1$ is the set of all multiples of the vector $\left(\begin{array}{c} 2  \\ -1 \end{array}\right)$. Well, to be precise, all _nonzero_ multiples.
 
 ::::::
 
@@ -315,7 +315,7 @@ Let us now have a look at a $3\times3$ matrix.
 
 ::::::{prf:example}
 
-Consider the matrix $A = \begin{bmatrix} -2 & 1 & 2 \\ 0 & -1 & 2 \\ -1 & 1 & 0 \end{bmatrix}$.
+Consider the matrix $A = \begin{pmatrix} -2 & 1 & 2 \\ 0 & -1 & 2 \\ -1 & 1 & 0 \end{pmatrix}$.
 
 We will check whether $2$ and $-2$ are eigenvalues of this matrix.
 
@@ -331,21 +331,21 @@ $$
 (A-2I)\vect{v} = \vect{0}.
 $$
 
-So we are looking for non-trivial solutions of the homogeneous system of linear equations with coefficient matrix $A - 2I$. Again, we can work with the augmented matrix $[A - 2I | \vect{0} ]$, or we can use the fact that we look for nonzero vectors in the null space of $A-2I$.
+So we are looking for non-trivial solutions of the homogeneous system of linear equations with coefficient matrix $A - 2I$. Again, we can work with the augmented matrix $(A - 2I | \vect{0} )$, or we can use the fact that we look for nonzero vectors in the null space of $A-2I$.
 If we plug in the entries of $A$ and use row reduction we get
 
 $$
 A - 2I  =
-\left[\begin{array}{ccc} -2-2 & 1 & 2 \\ 0 & -1-2 & 2 \\ -1 & 1 & 0-2 \end{array}\right]  =
-\left[\begin{array}{ccc} -4 & 1 & 2 \\ 0 & -3 & 2 \\ -1 & 1 & -2 \end{array}\right]  \sim
-\left[\begin{array}{ccc} 1 & 1 & -2  \\ 0 & -3 & 2 \\ 0 & 5 & -4 \end{array}\right].
+\left(\begin{array}{ccc} -2-2 & 1 & 2 \\ 0 & -1-2 & 2 \\ -1 & 1 & 0-2 \end{array}\right)  =
+\left(\begin{array}{ccc} -4 & 1 & 2 \\ 0 & -3 & 2 \\ -1 & 1 & -2 \end{array}\right)  \sim
+\left(\begin{array}{ccc} 1 & 1 & -2  \\ 0 & -3 & 2 \\ 0 & 5 & -4 \end{array}\right).
 $$
 
 We multiply the last row by 3 (to avoid fractions), next add 5 times the second row to arrive at the echelon matrix
 
 $$
 A-2I \sim 
-\left[\begin{array}{cccc} 1 & 1 & -2  \\ 0 & -3 & 2 \\ 0 & 0 & -2 \end{array}\right].
+\left(\begin{array}{cccc} 1 & 1 & -2  \\ 0 & -3 & 2 \\ 0 & 0 & -2 \end{array}\right).
 $$
 
 This last matrix has rank 3, so its null space contains only the zero vector. Thus there are no nonzero solutions for the equation $A\vect{v} - 2\vect{v} = \vect{0}$, and we conclude that 2 is _not_ an eigenvalue of $A$.
@@ -359,20 +359,20 @@ $$
 For this matrix, row reduction yields
 
 $$
-A+2I = \begin{bmatrix} 0 & 1 & 2 \\ 0 & 1 & 2 \\ -1 & 1 & 2 \end{bmatrix}  \sim
-\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 2 \\ 0 &0 & 0 \end{bmatrix}.
+A+2I = \begin{pmatrix} 0 & 1 & 2 \\ 0 & 1 & 2 \\ -1 & 1 & 2 \end{pmatrix}  \sim
+\begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 2 \\ 0 &0 & 0 \end{pmatrix}.
 
 
 $$
 
 We conclude that $A+2I$ has rank 2, thus the null space of $A+2I$ has dimension 1. From the row reduced form we read off that the null space contains all multiples of the vector
-$\vect{v} = \begin{bmatrix} 0 \\ 2 \\ -1\end{bmatrix}$. These then are exactly the eigenvectors for the eigenvalue $\lambda = -2$.
+$\vect{v} = \begin{pmatrix} 0 \\ 2 \\ -1\end{pmatrix}$. These then are exactly the eigenvectors for the eigenvalue $\lambda = -2$.
 Well, strictly speaking we should exclude the multiple $0\vect{v}$, as an eigenvector by definition is not the zero vector.
 As a check:
 
 $$
-A\vect{v} =  \begin{bmatrix} -2 & 1 & 2 \\ 0 & -1 & 2 \\ -1 & 1 & 0 \end{bmatrix} \begin{bmatrix} 0 \\ 2 \\ -1\end{bmatrix} =
-\begin{bmatrix} 0 \\ -4 \\ 2\end{bmatrix} = (-2) \begin{bmatrix} 0 \\ 2 \\ -1\end{bmatrix} = (-2)\vect{v}.
+A\vect{v} =  \begin{pmatrix} -2 & 1 & 2 \\ 0 & -1 & 2 \\ -1 & 1 & 0 \end{pmatrix} \begin{pmatrix} 0 \\ 2 \\ -1\end{pmatrix} =
+\begin{pmatrix} 0 \\ -4 \\ 2\end{pmatrix} = (-2) \begin{pmatrix} 0 \\ 2 \\ -1\end{pmatrix} = (-2)\vect{v}.
 $$
 
 ::::::
@@ -382,23 +382,23 @@ In the following example the matrix has an eigenvalue for which there turn out t
 ::::::{prf:example}
 :label: Ex:EigenValues:TwodimEigenspace
 
-We will find all eigenvectors of the matrix $A = \begin{bmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1  \end{bmatrix}$
+We will find all eigenvectors of the matrix $A = \begin{pmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1  \end{pmatrix}$
 for the eigenvalue $\lambda_1 = -1$.
 
-We know that we can do so by row reducing the augmented matrix $[A - (-1)I | \vect{0}]$.
+We know that we can do so by row reducing the augmented matrix $(A - (-1)I | \vect{0})$.
 
 $$
-[A - (-1)I \,|\, \vect{0}] = \left[\begin{array}{ccc|c} 2 & 2 & 2 &0\\ 2 & 2 & 2 &0\\ 2 & 2 & 2&0  \end{array}\right]
+(A - (-1)I \,|\, \vect{0}) = \left(\begin{array}{ccc|c} 2 & 2 & 2 &0\\ 2 & 2 & 2 &0\\ 2 & 2 & 2&0  \end{array}\right)
  \sim
-\left[\begin{array}{ccc|c} 1 & 1 & 1 &0\\ 0 & 0 & 0 &0\\ 0 & 0 & 0  &0\end{array}\right]
+\left(\begin{array}{ccc|c} 1 & 1 & 1 &0\\ 0 & 0 & 0 &0\\ 0 & 0 & 0  &0\end{array}\right)
 .
 $$
 
 You can check that two independent eigenvectors are given by
 
 $$
-\vect{v}_1 = \left[\begin{array}{c}1 \\0\\ -1  \end{array}\right]
-\quad \text{and}\quad \vect{v}_2 = \left[\begin{array}{c} 0 \\1\\-1  \end{array}\right]
+\vect{v}_1 = \left(\begin{array}{c}1 \\0\\ -1  \end{array}\right)
+\quad \text{and}\quad \vect{v}_2 = \left(\begin{array}{c} 0 \\1\\-1  \end{array}\right)
 .
 $$
 
@@ -508,32 +508,32 @@ So an eigenspace is just the set of all eigenvectors for a given eigenvalue, wit
 ::::::{prf:example}
 :label: Ex:EigenValues:TwodimEigenspaceCtd
 
-The matrix $A = \begin{bmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1  \end{bmatrix}$
+The matrix $A = \begin{pmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1  \end{pmatrix}$
 has the eigenvalues $\lambda_1 = -1$ and $\lambda_2=5$. <BR>
 We have seen ({prf:ref}`Ex:EigenValues:TwodimEigenspace`) that all
 eigenvectors for $\lambda = -1$ are linear combinations of the two linearly independent eigenvectors
 
 $$
-\vect{v}_1 = \begin{bmatrix} 1 \\0\\ -1  \end{bmatrix}\quad \text{and}\quad \vect{v}_2 = \begin{bmatrix} 0 \\1\\-1  \end{bmatrix}.
+\vect{v}_1 = \begin{pmatrix} 1 \\0\\ -1  \end{pmatrix}\quad \text{and}\quad \vect{v}_2 = \begin{pmatrix} 0 \\1\\-1  \end{pmatrix}.
 $$
 
 Thus
 
 $$
 E_{-1} = \Span{\vect{v}_1, \vect{v}_2}  =
-\Span{\begin{bmatrix} 1 \\0 \\-1  \end{bmatrix}, \begin{bmatrix} 0 \\ 1 \\-1  \end{bmatrix}}.
+\Span{\begin{pmatrix} 1 \\0 \\-1  \end{pmatrix}, \begin{pmatrix} 0 \\ 1 \\-1  \end{pmatrix}}.
 $$
 
 Finding a basis of the other eigenspace requires slightly more work:
 
 $$
-A - 5I = \begin{bmatrix} -4 & 2 & 2 \\ 2 & -4 & 2 \\ 2 & 2 & -4 \end{bmatrix} \sim
-\begin{bmatrix} -2 & 1 & 1 \\ 0 & -3 & 3 \\ 0& 3 & -3 \end{bmatrix} \sim
+A - 5I = \begin{pmatrix} -4 & 2 & 2 \\ 2 & -4 & 2 \\ 2 & 2 & -4 \end{pmatrix} \sim
+\begin{pmatrix} -2 & 1 & 1 \\ 0 & -3 & 3 \\ 0& 3 & -3 \end{pmatrix} \sim
 \cdots  \sim
-\begin{bmatrix} 1 & 0 & -1 \\ 0 & 1 & -1 \\ 0& 0&0 \end{bmatrix}.
+\begin{pmatrix} 1 & 0 & -1 \\ 0 & 1 & -1 \\ 0& 0&0 \end{pmatrix}.
 $$
 
-This is a matrix of rank 2, and $\begin{bmatrix} 1  \\1\\1 \end{bmatrix}$ can be taken as a basis of its nulspace, and thus of the eigenspace $E_5$.
+This is a matrix of rank 2, and $\begin{pmatrix} 1  \\1\\1 \end{pmatrix}$ can be taken as a basis of its nulspace, and thus of the eigenspace $E_5$.
 
 ::::::
 
@@ -636,15 +636,15 @@ which is impossible, as the assumption was that $\vect{v}_{\ell}$ is an eigenvec
 ::::::{prf:example}
 :label: Ex:EigenValues:TwodimEigenspace2
 
-For the matrix $A = \left[\begin{array}{ccc}2 & 2 & 1 \\ 0 & 1 & 2 \\ 0 & 4 & 3  \end{array}\right]$
+For the matrix $A = \left(\begin{array}{ccc}2 & 2 & 1 \\ 0 & 1 & 2 \\ 0 & 4 & 3  \end{array}\right)$
 and the vectors
 
 $$
-\vect{u} = \left[\begin{array}{c}1 \\0 \\ 0  \end{array}\right]
+\vect{u} = \left(\begin{array}{c}1 \\0 \\ 0  \end{array}\right)
 , \quad
-\vect{v} = \left[\begin{array}{c}1 \\ -3 \\ 3  \end{array}\right]
+\vect{v} = \left(\begin{array}{c}1 \\ -3 \\ 3  \end{array}\right)
 , \quad
-\vect{w} = \left[\begin{array}{c}4 \\ 3 \\ 6  \end{array}\right]
+\vect{w} = \left(\begin{array}{c}4 \\ 3 \\ 6  \end{array}\right)
 $$
 
 it may be checked that
@@ -670,14 +670,14 @@ An $n \times n$ matrix $A$ can have at most $n$ different eigenvalues.
 ::::::
 
 It can be shown  (as we will see in {prf:ref}`Ex:Eigenvalues:TwodimEigenspace2`)
-that the $3\times 3$  matrix $A = \begin{bmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1  \end{bmatrix}$ of the previous example has no other eigenvalues than $-1$ and $5$. So $A$ is a $3 \times 3$ matrix with fewer than $3$ eigenvalues. <BR>
+that the $3\times 3$  matrix $A = \begin{pmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1  \end{pmatrix}$ of the previous example has no other eigenvalues than $-1$ and $5$. So $A$ is a $3 \times 3$ matrix with fewer than $3$ eigenvalues. <BR>
 Things can even be 'worse' as the following example shows. The idea behind it: if $\vect{v}$ is an eigenvector of the matrix $A$, then the vector $\vect{v}$ is mapped to the multiple $\lambda\vect{v}$ by the transformation $T(\vect{x}) = A\vect{x}$.
 A multiple $\lambda\vect{v}$ is a vector with the same direction as $\vect{v}$ or the  direction opposite to $\vect{v}$. With this in mind, can we construct a linear transformation of $\R^2$ to $\R^2$ that certainly does not have such vectors? Yes we can!
 
 ::::::{prf:example}
 :label: Ex:EigenValues:Rotation
 
-The matrix $R = \begin{bmatrix} 0 & -1 \\1 & 0  \end{bmatrix}$ has no (real) eigenvalues.
+The matrix $R = \begin{pmatrix} 0 & -1 \\1 & 0  \end{pmatrix}$ has no (real) eigenvalues.
 
 Namely, the corresponding transformation is a rotation around (0,0) over an angle $\frac12\pi$, and this 'moves around' all vectors.
 
@@ -696,24 +696,24 @@ A rotation has no (real) eigenvectors.
 :label: Rem:EigenValues:Rotation
 
 This is a remark only for readers who are familiar with complex numbers.
-The matrix $R = \begin{bmatrix} 0 & -1 \\1 & 0  \end{bmatrix}$ has no **real** eigenvalues. If we allow eigenvalues to be complex numbers, and vectors to have complex entries, it appears that
+The matrix $R = \begin{pmatrix} 0 & -1 \\1 & 0  \end{pmatrix}$ has no **real** eigenvalues. If we allow eigenvalues to be complex numbers, and vectors to have complex entries, it appears that
 
 $$
-\left[\begin{array}{cc} 0 & -1 \\1 & 0  \end{array} \right]
-\left[\begin{array}{c}  1 \\ i \end{array} \right]
+\left(\begin{array}{cc} 0 & -1 \\1 & 0  \end{array} \right)
+\left(\begin{array}{c}  1 \\ i \end{array} \right)
  =
-\left[\begin{array}{c}  -i\\ 1 \end{array} \right]
- = (-i)\left[\begin{array}{c}  1\\ i \end{array} \right]
+\left(\begin{array}{c}  -i\\ 1 \end{array} \right)
+ = (-i)\left(\begin{array}{c}  1\\ i \end{array} \right)
 $$
 
 and
 
 $$
-\left[\begin{array}{cc} 0 & -1 \\1 & 0  \end{array} \right]
-\left[\begin{array}{c}  1 \\ -i \end{array} \right]
+\left(\begin{array}{cc} 0 & -1 \\1 & 0  \end{array} \right)
+\left(\begin{array}{c}  1 \\ -i \end{array} \right)
  =
-\left[\begin{array}{c}  i\\ 1 \end{array} \right]
- = i \left[\begin{array}{c}  1\\ -i \end{array} \right]
+\left(\begin{array}{c}  i\\ 1 \end{array} \right)
+ = i \left(\begin{array}{c}  1\\ -i \end{array} \right)
 .
 $$
 
@@ -752,11 +752,11 @@ This implies that the matrix $A$ has linearly dependent columns. And that in its
 ::::::{prf:example}
 :label: Ex:EigenValues:SingularMatrix
 
-The matrix $A = \begin{bmatrix} 1 & 3 \\ 2 & 6 \end{bmatrix}$
+The matrix $A = \begin{pmatrix} 1 & 3 \\ 2 & 6 \end{pmatrix}$
 has rank 1, so according to {prf:ref}`Prop:EigenValues:SingularMatrix` it has eigenvalue 0.
 
 The equation $A\vect{x} = \vect{0}$ has the nonzero solution
-$\vect{x} = \begin{bmatrix} 3 \\ -1 \end{bmatrix}$,
+$\vect{x} = \begin{pmatrix} 3 \\ -1 \end{pmatrix}$,
 so this vector is an eigenvector for the eigenvalue 0.
 
 ::::::
@@ -769,9 +769,9 @@ Eigenvalues and eigenvectors make transparent how a matrix/transformation 'works
 ::::::{prf:example}
 :label: Ex:Eigenvalues:GeomInterpEarlierExample
 
-We have seen that the matrix $A = \begin{bmatrix} 1 & 4 \\ 1 & 1 \end{bmatrix}$ has the eigenvalues
-$\lambda_1 = 3$ with corresponding eigenvector $\vect{v}_1 = \begin{bmatrix} 2\\1 \end{bmatrix} $ and
-$\lambda_2 = -1$ with corresponding eigenvector $\vect{v}_2 = \begin{bmatrix} -2\\1 \end{bmatrix}$.
+We have seen that the matrix $A = \begin{pmatrix} 1 & 4 \\ 1 & 1 \end{pmatrix}$ has the eigenvalues
+$\lambda_1 = 3$ with corresponding eigenvector $\vect{v}_1 = \begin{pmatrix} 2\\1 \end{pmatrix} $ and
+$\lambda_2 = -1$ with corresponding eigenvector $\vect{v}_2 = \begin{pmatrix} -2\\1 \end{pmatrix}$.
 
 So for the linear transformation $T:\R^2 \to \R^2$ defined by $T(\vect{x}) = A\vect{x}$ it holds that
 
