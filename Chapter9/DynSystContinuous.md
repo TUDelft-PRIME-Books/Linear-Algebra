@@ -243,8 +243,6 @@ $$
 
 :::
 
-## Interpreting solutions of dynamical systems
-
 
 We now know how to solve systems of linear differential equations. But we know more. We also know how a solution $f(t)$ to such a system will behave as $t$ goes to infinity. In practical applications, $t$ usually is time, so this gives us predictions for what happens after a long time.
 
@@ -315,6 +313,8 @@ The three different behaviours are illustrated in {numref}`Figure %s <Fig:DynSys
 
 :::
 
+## Dealing with complex eigenvalues
+
 
 Let us once again consider the system $\vect{y}'=A\vect{y}$. By {prf:ref}`Prop:DynSystContinuous:SolsofDynSyst`, we can find solutions $\vect{y}=\vect{v}e^{\lambda t}$ where $\lambda$ is an eigenvalue of $A$ and $\vect{v}$ is a corresponding eigenvector. But if $\lambda$ is not a real number, this does not give a real-valued function. In some applications that's perfectly fine, but often we're interested in real solutions to systems of linear differential equations. Can we stil find any of those if some eigenvalues are complex?
 
@@ -369,7 +369,7 @@ are linearly independent solutions to the linear system of differential equation
 
 :::
 
-If $a<0$ in this proposition, then $e^{at}$ will become arbitrarily small, so as $t$ increases, $\vect{y}(t)$ will approach $0$. In this case, the trajectory will spiral towards the origin. If $a>0$, then $e^{at}$ becomes arbitrarily large and the trajectory will spiral away from the origin.
+If $a<0$ in this proposition, then $e^{at}$ will become arbitrarily small, so as $t$ increases, $\vect{y}(t)$ will approach $0$. In this case, the trajectory will spiral towards the origin. If $a>0$, then $e^{at}$ becomes arbitrarily large and the trajectory will spiral away from the origin. Finally, if $a=0$ -- that is, if we have a purely imaginary eigenvalue -- $\vect{y}(t)$ will move along an elliptic trajectory around the origin.
 
 
 ::::{figure} Images/Fig-DynSystContinuous-Trajectories.svg
@@ -378,3 +378,94 @@ If $a<0$ in this proposition, then $e^{at}$ will become arbitrarily small, so as
 
 The possible behaviours of the origin illustrated. On the top left, it's an attractor, on the top right a repeller, on the bottom left a saddle point, and on the bottom right a spiral point. For the spiral point, do you expect the real part of the eigenvalues to be positive or negative, given the figure? That is, do you expect the center to be a stable spiral point, an unstable spiral point, or a center?
 ::::
+
+## Systems with higher derivatives
+
+In this section, we will see a trick for dealing with higher derivatives. It works as long as the system under consderation is still linear. Suppose we have a system like this:
+
+$$
+\begin{cases}
+x_{1}'''&=ax_{1}+bx_{2}\\
+x_{2'}'&=cx_{1}+dx_{2}
+\end{cases}
+$$
+
+How do we solve this? Our usual method fails because of the higher-order derivative of $x_{1}$ appearing in the first equation. Howver, we can remedy this problem by introducing the new dummy variables $y_{1}=x'_{1}$ and $y_{2}=x''_{1}$. Now our system becomes:
+
+$$
+\begin{cases}
+y_{2}'&=ax_{1}+bx_{2}\\
+y_{1}'&=y_{2}\\
+x_{1}'&=y_{1}\\
+x_{2}'&=cx_{1}+dx_{2}
+\end{cases}
+$$
+
+and this is of the form we have discussed! It translates to the equation $\vect{x}'=A\vect{x}$ where
+
+$$
+A=\begin{bmatrix}
+0&0&a&b\\
+1&0&0&0\\
+0&1&0&0\\
+0&0&c&d
+\end{bmatrix}\quad\text{and}\quad\vect{x}=\begin{bmatrix}
+y_{2}\\
+y_{1}\\
+x_{1}\\
+x_{2}
+\end{bmatrix}.
+$$
+
+As an basic application, we can solve second-order linear differential equations:
+
+:::{prf:proposition}
+:label: Prop:DynSystContinuous:2ndODE
+
+If $\lambda$ is a root of the quadratic equation $ax^{2}+bx+c=0$, then $e^{\lambda x}$ is a solution of the differential equation $ax''+bx'+cx=0$.
+
+:::
+
+:::{admonition} Proof of&nbsp;{prf:ref}`Prop:DynSystContinuous:2ndODE`
+
+By putting $y=x'$, we can rewrite the differential equation $ax''+bx'+cx=0$ as
+
+$$
+\begin{cases}
+y'&=-\frac{b}{a}y-\frac{c}{a}x\\
+x'&=y
+\end{cases}
+$$
+
+or as $\vect{x}'=A\vect{x}$ where
+
+$$
+A=\begin{bmatrix}
+-\frac{b}{a}&-\frac{c}{a}\\
+1&0
+\end{bmatrix}
+\quad\text{and}\quad
+\vect{x}=\begin{bmatrix}
+y\\
+x
+\end{bmatrix}.
+$$
+
+To find solutions, we need the eigenvalues of $A$. So:
+
+$$
+\begin{align*}
+0&=\begin{vmatrix}
+-\frac{b}{a}-\lambda&-\frac{c}{a}\\
+1&-\lambda
+\end{vmatrix}=\lambda^{2}+\frac{b}{a}\lambda+\frac{c}{a}\\
+&\Updownarrow\\
+0&=a\lambda^{2}+b\lambda+c
+\end{align*}
+$$
+
+whence the eigenvalues are precisely the solutions of $ax^{2}+bx+c=0$. Suppose $\lambda$ is one of these roots and assume $\vect{v}$ is the corresponding eigenvector. By {prf:ref}`Prop:DynSystContinuous:SolsofDynSyst`, $d \vect{v}e^{\lambda x}$ is a solution for any scalar $d$. As $x$ is the second component of this solution vector, $d v_{2}e^{\lambda x}$ is a solution to the original second-order differential equation and so is any scalar multiple of it.
+
+:::
+
+
