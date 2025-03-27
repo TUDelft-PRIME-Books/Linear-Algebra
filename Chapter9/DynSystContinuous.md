@@ -5,11 +5,12 @@
 In this section, we will deal with similar problems as in {numref}`Section %s <Sec:DynSystDiscrete>`. There, we were concerned with discrete time. That is, we assumed a certain initial state $\vect{x}_{0}$ and then predicted the next state $\vect{x}_{1}$. That approach yields models that are often very useful. But just as often we want to deal with continuous time. That is, there is no *next* state but rather a state for every positive real number. 
 
 
-## Continuous dynamical system
+## Preliminaries
 
 In order to deal with this new context, we need some preliminaries from calculus.
 
 ::::{prf:proposition}
+:label: Prop:DynSystContinuous:CalcStuff
 
 We will denote the derivative of a function $f$ by $f'$. Let $f$ and $g$ be differentiable functions on $\R$ and let $c$ be a real number. Then:
 
@@ -101,7 +102,103 @@ Exercise.
 
 :::
 
-But how do we find solutions? Let us first consider an example.
+In view of this result, it makes sense to generalise some concepts which we have seen for vectors to the setting of vectors of functions.
+
+:::{prf:definition}
+
+We say that a vector function $\vect{x}$ is a **linear combination** of vector functions $\vect{x}_{1},...,\vect{x}_{n}$ if there are scalars $c_{1},...,c_{n}$ in $\mathbb{R}$ such that:
+
+$$
+
+\vect{x}=c_{1}\vect{x}_{1}+\cdots + c_{n}\vect{x}_{n}.
+
+$$
+
+In particular, the function $\vect{0}$ can be written as a linear combination of any set $S$ of vector functions $\vect{x}_{1},...,\vect{x}_{n}$ by putting $c_{1}=\cdots=c_{n}=0$. If this is the only way $\vect{0}$ can be written as a linear combination of vector functions in $S$, then $S$ is called **linearly independent**.
+
+:::
+
+
+
+## Solving a dynamical system
+
+How do we find the solutions of a dynamical system? In case the matrix $A$ happens to be diagonal, it is quite easy. The system now becomes
+
+$$
+
+\begin{cases}
+x_{1}'&=a_{11}x_{1}+0_{12}x_{2}+\cdots +0_{1n}x_{n}=a_{11}x_{1}\\
+x_{2}'&=0_{21}x_{2}+a_{22}x_{2}+\cdots +0_{2n}x_{n}=a_{22}x_{2}\\
+&\,\vdots\\
+x_{n}'&=0_{n1}x_{1}+0_{n2}x_{2}+\cdots+a_{nn}x_{n}=a_{nn}x_{n}
+\end{cases}
+
+$$
+
+and, by {prf:ref}`Prop:DynSystContinuous:CalcStuff`, we find the solution:
+
+$$
+
+x_{1}=e^{a_{11}t},\, x_{2}=e^{a_{22}t},\,\ldots,\, x_{n}=e^{a_{nn}t}.
+
+$$
+
+But most matrices are not diagonal. However, most matrices are at least _diagonalizable_, and we can use this to our advantage. Suppose that the matrix $A$ can be diagonalized, so $A=PDP^{-1}$ where $D$ is the diagonal matrix with the eigenvalues $\lambda_{1},...,\lambda_{n}$ on the diagonal and $P$ is the matrix with the corresponding eigenvectors $\vect{v}_{1},...,\vect{v}_{n}$ as columns. Then we have 
+
+$$
+
+\begin{align*}
+    \vect{x}'=A\vect{x}&\quad\Longleftrightarrow\quad \vect{x}'=PDP^{-1}\vect{x}\\
+    &\quad\Longleftrightarrow\quad P^{-1}\vect{x}'=DP^{-1}\vect{x}\\
+    &\quad\Longleftrightarrow\quad (P^{-1}\vect{x})'=D(P^{-1}\vect{x})
+\end{align*}
+
+$$
+
+and this is a new dynamical system with a diagonal matrix! Hence, we find the solution
+
+$$
+
+(P^{-1}\vect{x})_{1}=e^{\lambda_{1}t},\, (P^{-1}\vect{x})_{2}=e^{a_{\lambda_{2}}t},\,\ldots,\, (P^{-1}\vect{x})_{n}=e^{\lambda_{n}t}\quad\text{that is,}\quad P^{-1}\vect{x}=
+\begin{bmatrix}
+    e^{\lambda_{1}t}\\
+    e^{\lambda_{2}t}\\
+    \vdots\\
+    e^{\lambda_{n}t}
+\end{bmatrix}.
+
+$$
+
+The solution of the original system can now be obtained by multiplying this last vector function from the left with $P$. This suggests the following proposition:
+
+:::{prf:proposition}
+:label: Prop:DynSystContinuous:SolsofDynSyst
+
+If $A$ is a diagonalizable matrix with eigenvalues $\lambda_{1},...,\lambda_{n}$ and corresponding eigenvectors $\vect{v}_{1},...,\vect{v}_{n}$, then the system $\vect{x}'=A\vect{x}$ has general solution:
+
+$$
+
+\vect{y}(t)=c_{1}\vect{v}_{1}e^{\lambda{1}t}+c_{2}\vect{v}_{2}e^{\lambda_{2}t}+\cdots+c_{n}\vect{v}_{n}e^{\lambda_{n}t}.
+
+$$
+
+where $c_{1},...,c_{n}$ are constants. A function of the form $\vect{y}=c\vect{v}_{i}e^{\lambda_{i}t}$ is called an **eigenfunction** of the dynamical system.
+
+:::
+
+:::{admonition} Proof of&nbsp;{prf:ref}`Prop:DynSystContinuous:SolsofDynSyst`
+:class: tudproof
+
+In view of {prf:ref}`Prop:DynSystContinuous:LinComb`, it suffices to show that every $\vect{y}=\vect{v}_{i}e^{\lambda_{i}t}$ is a solution of $\vect{x}'=A\vect{x}$. This can be established as follows:
+
+$$
+\vect{y}'=(\vect{v}_{i}e^{\lambda_{1} t})'=\vect{v}_{i}\lambda e^{\lambda_{i} t}=A\vect{v}_{i} e^{\lambda_{i} t}=A\vect{y}.
+$$
+
+:::
+
+
+Let us now consider an example.
 
 :::{prf:example}
 :label: Ex:DynSystContinuous:EVsgiveSol
@@ -115,49 +212,37 @@ $$
 \end{bmatrix}.
 $$
 
-Consider the vector-valued function
+A standard computation shows that $A$ has eigenvalues $\lambda_{1}=3,\lambda_{2}=-1$ with corresponding eigenvectors 
 
 $$
-\vect{y}(t)=\begin{bmatrix}
-2e^{3t}\\
-1e^{3t}
-\end{bmatrix}=\vect{v}e^{3t},$$ 
 
-then
-
-$$\quad \vect{y}'(t)=
-\begin{bmatrix}
-6e^{3t}\\
-3e^{3t}
-\end{bmatrix}=
-\begin{bmatrix}
-1&4\\
-1&1
-\end{bmatrix}\begin{bmatrix}
-2e^{3t}\\
-1e^{3t}
+\vect{v}_{1}=\begin{bmatrix}
+    2\\
+    1
 \end{bmatrix}
-=A\vect{y}(t),
+\quad\text{and}\quad \vect{v}_{2}=\begin{bmatrix}
+    -2\\
+    1
+\end{bmatrix}.
+
 $$
 
-so $\vect{y}$ is a solution. 
+Therefore the general solution to the system $\vect{x}'=A\vect{x}$ is:
+
+$$
+
+\vect{y}=c_{1}\begin{bmatrix}
+    2\\
+    1
+\end{bmatrix}e^{3t}+c_{2}\begin{bmatrix}
+    -2\\
+    1
+\end{bmatrix}e^{-t}.
+
+$$
 
 :::
 
-Why does the particular choice of $\vect{v}$ and $e^{3t}$ in example {prf:ref}`Ex:DynSystContinuous:EVsgiveSol` yield a solution? Well, because $3$ is an eigenvalue of $A$ with associated eigenvector $\vect{v}$. For let us assume that $\lambda$ is an eigenvalue of $A$ with associated eigenvector $\vect{v}$ and put $\vect{y}=\vect{v}e^{\lambda t}$. Then 
-
-$$
-\vect{y}'=(\vect{v}e^{\lambda t})'=\vect{v}\lambda e^{\lambda t}=A\vect{v} e^{\lambda t}=A\vect{y},
-$$
-
-showing that $\vect{y}$ is indeed a solution. This observation leads us to the following statement.
-
-:::{prf:proposition}
-:label: Prop:DynSystContinuous:EVsgiveSols
-
-If $\lambda$ is an eigenvalue of $A$ with associated eigenvector $\vect{v}$, then $\vect{y}=\vect{v}e^{\lambda t}$ is a solution of the system of linear differential equations $\vect{x}'=A\vect{x}$. Such a $\vect{y}$ is sometimes called an **eigenfunctions** of the dynamical system.
-
-:::
 
 We now know how to solve systems of linear differential equations. But we know more. We also know how a solution $f(t)$ to such a system will behave as $t$ goes to infinity. In practical applications, $t$ usually is time, so this gives us predictions for what happens after a long time.
 
@@ -228,8 +313,10 @@ The three different behaviours are illustrated in {numref}`Figure %s <Fig:DynSys
 
 :::
 
+## Dealing with complex eigenvalues
 
-Let us once again consider the system $\vect{y}'=A\vect{y}$. By {prf:ref}`Prop:DynSystContinuous:EVsgiveSols`, we can find solutions $\vect{y}=\vect{v}e^{\lambda t}$ where $\lambda$ is an eigenvalue of $A$ and $\vect{v}$ is a corresponding eigenvector. But if $\lambda$ is not a real number, this does not give a real-valued function. In some applications that's perfectly fine, but often we're interested in real solutions to systems of linear differential equations. Can we stil find any of those if some eigenvalues are complex?
+
+Let us once again consider the system $\vect{y}'=A\vect{y}$. By {prf:ref}`Prop:DynSystContinuous:SolsofDynSyst`, we can find solutions $\vect{y}=\vect{v}e^{\lambda t}$ where $\lambda$ is an eigenvalue of $A$ and $\vect{v}$ is a corresponding eigenvector. But if $\lambda$ is not a real number, this does not give a real-valued function. In some applications that's perfectly fine, but often we're interested in real solutions to systems of linear differential equations. Can we stil find any of those if some eigenvalues are complex?
 
 Yes, we can! First, we can use the following well-known fact from calculus:
 
@@ -263,7 +350,7 @@ $$
 
 $$
 
-are solutions of $\vect{y}'=A\vect{y}$. If $A$ is a $2\times 2$-matrix, we can summarize this as follows. 
+are solutions of $\vect{y}'=A\vect{y}$. If $A$ is a $2\times 2$-matrix, we can summarise this as follows. 
 
 :::{prf:Proposition}
 
@@ -278,22 +365,107 @@ $$
 
 $$
 
-are linearly independent solutions to the linear system of differential equations $\vect{y}'=A\vect{y}$. In this case, the origin is called a **spiral point**. An example of a spiral point can be seen in {numref}`Figure %s <Fig:DynSystContinuous:Trajectories>`.
+are linearly independent solutions to the linear system of differential equations $\vect{y}'=A\vect{y}$. In this case, the origin is called a **spiral point**. If $a<0$, it is called **stable**, if $a>0$ **unstable**, and if $c=0$ a **center**. An example of a spiral point can be seen in {numref}`Figure %s <Fig:DynSystContinuous:Trajectories>`.
 
 :::
 
-If $a<0$ in this proposition, then $e^{at}$ will become arbitrarily small, so as $t$ increases, $\vect{y}(t)$ will approach $0$. In this case, the trajectory will spiral towards the origin. If $a>0$, then $e^{at}$ becomes arbitrarily large and the trajectory will spiral away from the origin.
+If $a<0$ in this proposition, then $e^{at}$ will become arbitrarily small, so as $t$ increases, $\vect{y}(t)$ will approach $0$. In this case, the trajectory will spiral towards the origin. If $a>0$, then $e^{at}$ becomes arbitrarily large and the trajectory will spiral away from the origin. Finally, if $a=0$ -- that is, if we have a purely imaginary eigenvalue -- $\vect{y}(t)$ will move along an elliptic trajectory around the origin.
 
 
 ::::{figure} Images/Fig-DynSystContinuous-Trajectories.svg
 :name: Fig:DynSystContinuous:Trajectories
 :class: dark-light
 
-The possible behaviours of the origin illustrated. On the top left, it's an attractor, on the top right a repeller, on the bottom left a saddle point, and on the bottom right a spiral point. For the spiral point, do you expect the real part of the eigenvalues to be positive or negative, given the figure?
+The possible behaviours of the origin illustrated. On the top left, it's an attractor, on the top right a repeller, on the bottom left a saddle point, and on the bottom right a spiral point. For the spiral point, do you expect the real part of the eigenvalues to be positive or negative, given the figure? That is, do you expect the center to be a stable spiral point, an unstable spiral point, or a center?
 ::::
 
-## Decoupling a dynamical system
+## Systems with higher derivatives
 
-In the previous section, we saw that the eigenvalues and eigenvectors determine the long-term behaviour of a dynamical system. This leads naturally to the suspicion that, perhaps, diagonalizing a matrix can help us solve a system of linear differential equations. This is indeed the case.
+In this section, we will see a trick for dealing with higher derivatives. It works as long as the system under consderation is still linear. Suppose we have a system like this:
 
-Let us assume $A$ is an $n\times n$-matrix with eigenfunctions $\vect{y}_{1},...,\vect{y}_{n}$, that is $\vect{y}_{i}=\vect{v}_{i}e^{\lambda_{i}t}$ where $\lambda_{i}$ is an eigenvalue of $A$ with associated eigenvector $\vect{v}_{i}$.
+$$
+\begin{cases}
+x_{1}'''&=ax_{1}+bx_{2}\\
+x_{2'}'&=cx_{1}+dx_{2}
+\end{cases}
+$$
+
+How do we solve this? Our usual method fails because of the higher-order derivative of $x_{1}$ appearing in the first equation. Howver, we can remedy this problem by introducing the new dummy variables $y_{1}=x'_{1}$ and $y_{2}=x''_{1}$. Now our system becomes:
+
+$$
+\begin{cases}
+y_{2}'&=ax_{1}+bx_{2}\\
+y_{1}'&=y_{2}\\
+x_{1}'&=y_{1}\\
+x_{2}'&=cx_{1}+dx_{2}
+\end{cases}
+$$
+
+and this is of the form we have discussed! It translates to the equation $\vect{x}'=A\vect{x}$ where
+
+$$
+A=\begin{bmatrix}
+0&0&a&b\\
+1&0&0&0\\
+0&1&0&0\\
+0&0&c&d
+\end{bmatrix}\quad\text{and}\quad\vect{x}=\begin{bmatrix}
+y_{2}\\
+y_{1}\\
+x_{1}\\
+x_{2}
+\end{bmatrix}.
+$$
+
+As an basic application, we can solve second-order linear differential equations:
+
+:::{prf:proposition}
+:label: Prop:DynSystContinuous:2ndODE
+
+If $\lambda$ is a root of the quadratic equation $ax^{2}+bx+c=0$, then $e^{\lambda x}$ is a solution of the differential equation $ax''+bx'+cx=0$.
+
+:::
+
+:::{admonition} Proof of&nbsp;{prf:ref}`Prop:DynSystContinuous:2ndODE`
+
+By putting $y=x'$, we can rewrite the differential equation $ax''+bx'+cx=0$ as
+
+$$
+\begin{cases}
+y'&=-\frac{b}{a}y-\frac{c}{a}x\\
+x'&=y
+\end{cases}
+$$
+
+or as $\vect{x}'=A\vect{x}$ where
+
+$$
+A=\begin{bmatrix}
+-\frac{b}{a}&-\frac{c}{a}\\
+1&0
+\end{bmatrix}
+\quad\text{and}\quad
+\vect{x}=\begin{bmatrix}
+y\\
+x
+\end{bmatrix}.
+$$
+
+To find solutions, we need the eigenvalues of $A$. So:
+
+$$
+\begin{align*}
+0&=\begin{vmatrix}
+-\frac{b}{a}-\lambda&-\frac{c}{a}\\
+1&-\lambda
+\end{vmatrix}=\lambda^{2}+\frac{b}{a}\lambda+\frac{c}{a}\\
+&\Updownarrow\\
+0&=a\lambda^{2}+b\lambda+c
+\end{align*}
+$$
+
+whence the eigenvalues are precisely the solutions of $ax^{2}+bx+c=0$. Suppose $\lambda$ is one of these roots and assume $\vect{v}$ is the corresponding eigenvector. By {prf:ref}`Prop:DynSystContinuous:SolsofDynSyst`, $d \vect{v}e^{\lambda x}$ is a solution for any scalar $d$. As $x$ is the second component of this solution vector, $d v_{2}e^{\lambda x}$ is a solution to the original second-order differential equation and so is any scalar multiple of it.
+
+:::
+
+
