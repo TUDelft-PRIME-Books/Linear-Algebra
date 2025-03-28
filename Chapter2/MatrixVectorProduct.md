@@ -15,14 +15,14 @@ We will define the product of an $m\times n$ matrix $A$ with a vector $\vect{x}$
 The product $A\mathbf{x}$ of an $m\times n$ matrix
 
 $$
- A = [\mathbf{a}_1 \,\,\mathbf{a}_2\, \ldots\, \mathbf{a}_n]
+ A = (\mathbf{a}_1 \,\,\mathbf{a}_2\, \ldots\, \mathbf{a}_n)
 $$
 
 with a vector
 
 $$
  \mathbf{x} =
-\begin{bmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{bmatrix}\in \mathbb{R}^n
+\begin{pmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{pmatrix}\in \mathbb{R}^n
 $$
 
 is defined as
@@ -41,31 +41,31 @@ If the size $n$ of the vector $\mathbf{x}$ is not equal to the number of columns
 :label: Ex:MatVecProduct:FirstExample
 
 $$
-\begin{bmatrix} 2 & 3 \\ 4 & 1 \\ 3 & 5 \\ 0 & 1 \end{bmatrix}
-\begin{bmatrix} 5 \\ -1 \end{bmatrix} =
+\begin{pmatrix} 2 & 3 \\ 4 & 1 \\ 3 & 5 \\ 0 & 1 \end{pmatrix}
+\begin{pmatrix} 5 \\ -1 \end{pmatrix} =
    5
-\begin{bmatrix} 2 \\ 4 \\ 3  \\ 0  \end{bmatrix} +
+\begin{pmatrix} 2 \\ 4 \\ 3  \\ 0  \end{pmatrix} +
    (-1)
-\begin{bmatrix} 3 \\  1 \\  5 \\  1 \end{bmatrix} =
-\begin{bmatrix} 10 \\ 20 \\ 15  \\ 0  \end{bmatrix} +
-\begin{bmatrix} -3 \\  -1 \\  -5 \\  -1 \end{bmatrix}
+\begin{pmatrix} 3 \\  1 \\  5 \\  1 \end{pmatrix} =
+\begin{pmatrix} 10 \\ 20 \\ 15  \\ 0  \end{pmatrix} +
+\begin{pmatrix} -3 \\  -1 \\  -5 \\  -1 \end{pmatrix}
       =
-\begin{bmatrix} 7 \\  19 \\  10 \\  -1 \end{bmatrix},
+\begin{pmatrix} 7 \\  19 \\  10 \\  -1 \end{pmatrix},
 $$
 
 and
 
 $$
-\begin{bmatrix}1 & 2 & 3 & 5 \end{bmatrix} 
-\begin{bmatrix} 4 \\ -2 \\ -1 \\ 3\end{bmatrix} =
-4[1] + (-2)[2] + (-1)[3] + 3[5] =  [12].
+\begin{pmatrix}1 & 2 & 3 & 5 \end{pmatrix} 
+\begin{pmatrix} 4 \\ -2 \\ -1 \\ 3\end{pmatrix} =
+4(1) + (-2)(2) + (-1)(3) + 3(5) =  (12).
 $$
 
 It is customary to consider a 1x1 matrix as a number, and write the last product as 
 
 $$
-\begin{bmatrix}1 & 2 & 3 & 5 \end{bmatrix} 
-\begin{bmatrix} 4 \\ -2 \\ -1 \\ 3\end{bmatrix} 
+\begin{pmatrix}1 & 2 & 3 & 5 \end{pmatrix} 
+\begin{pmatrix} 4 \\ -2 \\ -1 \\ 3\end{pmatrix} 
  =
   1\cdot4 +2\cdot(-2)+3\cdot(-1) + 5\cdot 3 = 12.
 $$
@@ -80,21 +80,21 @@ The interpretation of $A\mathbf{x}$ as a linear combination of the columns of $A
 The product of a matrix and a vector can also be computed as follows:
 
 $$
-\left[\begin{array}{ccccc}
+\left(\begin{array}{ccccc}
             a_{11} & a_{12}&  \ldots& \ldots&  a_{1n} \\
             a_{21} & a_{22}&  \ldots& \ldots&  a_{2n} \\
             \vdots &  \vdots&  \ldots& \ldots& \vdots    \\
             a_{m1} & a_{m2}&  \ldots&  \ldots& a_{mn}
           \end{array}
-   \right]
-\begin{bmatrix}    x_1 \\ x_2 \\ \vdots \\ \vdots \\ x_n  \end{bmatrix}
+   \right)
+\begin{pmatrix}    x_1 \\ x_2 \\ \vdots \\ \vdots \\ x_n  \end{pmatrix}
    =
-\begin{bmatrix}
+\begin{pmatrix}
     a_{11}x_1 + a_{12}x_2 +   \ldots+ a_{1n}x_n \\
     a_{21}x_1 + a_{22}x_2 +   \ldots+ a_{2n}x_n \\
                 \vdots\\
     a_{m1}x_1 + a_{m2}x_2 +   \ldots+ a_{mn}x_n
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 ::::
@@ -106,12 +106,12 @@ The vector on the left-hand side of the identity is by definition equal to the l
 
 $$
   x_1
-\begin{bmatrix}  a_{11} \\  a_{21}  \\  \vdots    \\ a_{m1}  \end{bmatrix} +
+\begin{pmatrix}  a_{11} \\  a_{21}  \\  \vdots    \\ a_{m1}  \end{pmatrix} +
   x_2
-\begin{bmatrix}  a_{12} \\  a_{22}  \\  \vdots    \\ a_{m2}  \end{bmatrix} +
+\begin{pmatrix}  a_{12} \\  a_{22}  \\  \vdots    \\ a_{m2}  \end{pmatrix} +
   \,\,\ldots\,\, +
   x_n
-\begin{bmatrix}  a_{1n} \\  a_{2n}  \\  \vdots    \\ a_{mn}  \end{bmatrix}.
+\begin{pmatrix}  a_{1n} \\  a_{2n}  \\  \vdots    \\ a_{mn}  \end{pmatrix}.
 $$
 
 And this is indeed equal to the vector on the right.
@@ -132,8 +132,8 @@ is the 'row-column product'
 $$
 
 
-\begin{bmatrix}  a_{i1} & a_{i2} & \ldots & \ldots & a_{in}  \end{bmatrix}
-\begin{bmatrix}    x_1 \\ x_2 \\ \vdots \\ \vdots \\ x_n  \end{bmatrix}.
+\begin{pmatrix}  a_{i1} & a_{i2} & \ldots & \ldots & a_{in}  \end{pmatrix}
+\begin{pmatrix}    x_1 \\ x_2 \\ \vdots \\ \vdots \\ x_n  \end{pmatrix}.
 
 
 $$
@@ -144,16 +144,16 @@ $$
 We find a matrix-vector product using the row-column rule:
 
 $$
-\begin{bmatrix}  3 & 4 & 5 \\ 1 & 0 & -1 \\
-                   2 & 2 & 4 \\ 5 & -5 & 2\end{bmatrix}
-\begin{bmatrix}  3 \\ 1 \\ -4 \end{bmatrix}
+\begin{pmatrix}  3 & 4 & 5 \\ 1 & 0 & -1 \\
+                   2 & 2 & 4 \\ 5 & -5 & 2\end{pmatrix}
+\begin{pmatrix}  3 \\ 1 \\ -4 \end{pmatrix}
        =
-\begin{bmatrix}  3\cdot3\!\! &+&\!\! 4\cdot1\!\! &+&\!\! 5\cdot(-4) \\
+\begin{pmatrix}  3\cdot3\!\! &+&\!\! 4\cdot1\!\! &+&\!\! 5\cdot(-4) \\
                         1\cdot3\!\! &+& \!\!0\cdot1\!\! &+&\!\! (-1)\cdot(-4) \\
                         2\cdot3 \!\!&+&\!\! 2\cdot1 \!\! &+&\!\! 4\cdot(-4)\\
-                        5\cdot3 \!\!&+& \!\!\!(-5)\cdot1 \!\!\! &+&\!\! 2\cdot(-4)  \end{bmatrix}
+                        5\cdot3 \!\!&+& \!\!\!(-5)\cdot1 \!\!\! &+&\!\! 2\cdot(-4)  \end{pmatrix}
      =
-\begin{bmatrix}  -7 \\ 7 \\ -8\\ 2\end{bmatrix}.
+\begin{pmatrix}  -7 \\ 7 \\ -8\\ 2\end{pmatrix}.
 
 
 $$
@@ -193,16 +193,16 @@ $$
 From the above it follows that the matrix-vector equation
 
 $$
- \left[\begin{array}{ccccc}
+ \left(\begin{array}{ccccc}
             a_{11} & a_{12}&  \ldots& \ldots&  a_{1n} \\
             a_{21} & a_{22}&  \ldots& \ldots&  a_{2n} \\
             \vdots &  \vdots&  \cdots& \cdots& \vdots    \\
             a_{m1} & a_{m2}&  \ldots&  \ldots& a_{mn}
           \end{array}
-   \right]
-\begin{bmatrix}    x_1 \\ x_2 \\ \vdots \\ \vdots \\ x_n  \end{bmatrix}
+   \right)
+\begin{pmatrix}    x_1 \\ x_2 \\ \vdots \\ \vdots \\ x_n  \end{pmatrix}
    =
-\begin{bmatrix}    b_1 \\ b_2 \\ \vdots\\ b_m\end{bmatrix}
+\begin{pmatrix}    b_1 \\ b_2 \\ \vdots\\ b_m\end{pmatrix}
 $$
 
 and the linear system
@@ -260,20 +260,20 @@ The corresponding vector equation is
 
 $$
  x_1
-\begin{bmatrix} 5 \\ 3 \\ 2 \\ 1  \end{bmatrix} +
+\begin{pmatrix} 5 \\ 3 \\ 2 \\ 1  \end{pmatrix} +
  x_2
-\begin{bmatrix} -3 \\ 7 \\ -6 \\ 0  \end{bmatrix} +
+\begin{pmatrix} -3 \\ 7 \\ -6 \\ 0  \end{pmatrix} +
  x_3
-\begin{bmatrix} -2 \\ -2 \\ 5 \\ 1  \end{bmatrix}  =
-\begin{bmatrix} 4 \\ 5 \\ 6 \\ 8  \end{bmatrix},
+\begin{pmatrix} -2 \\ -2 \\ 5 \\ 1  \end{pmatrix}  =
+\begin{pmatrix} 4 \\ 5 \\ 6 \\ 8  \end{pmatrix},
 $$
 
 and the corresponding matrix equation becomes
 
 $$
-\begin{bmatrix} 5 & -3 & -2\\ 3 &7 & -2\\ 2&-6&5 \\ 1 &0&1 \end{bmatrix}
-\begin{bmatrix} x_1 \\x_2 \\ x_3 \end{bmatrix}  =
-\begin{bmatrix} 4 \\ 5 \\ 6 \\ 8  \end{bmatrix}.
+\begin{pmatrix} 5 & -3 & -2\\ 3 &7 & -2\\ 2&-6&5 \\ 1 &0&1 \end{pmatrix}
+\begin{pmatrix} x_1 \\x_2 \\ x_3 \end{pmatrix}  =
+\begin{pmatrix} 4 \\ 5 \\ 6 \\ 8  \end{pmatrix}.
 $$
 
 ::::
@@ -315,11 +315,11 @@ There are several ways to derive the formula. Via the linear combination idea it
 So assume
 
 $$
-  A = [\,\mathbf{a}_1\,\,\,\mathbf{a}_2\,\,\,\ldots\,\,\,\mathbf{a}_n\,], \quad \mathbf{x} =
-\begin{bmatrix}    x_1 \\ x_2 \\ \vdots \\ \vdots \\ x_n  \end{bmatrix},
+  A = (\,\mathbf{a}_1\,\,\,\mathbf{a}_2\,\,\,\ldots\,\,\,\mathbf{a}_n\,), \quad \mathbf{x} =
+\begin{pmatrix}    x_1 \\ x_2 \\ \vdots \\ \vdots \\ x_n  \end{pmatrix},
   \quad
   \mathbf{y} =
-\begin{bmatrix}    y_1 \\ y_2 \\ \vdots \\ \vdots \\ y_n  \end{bmatrix}.
+\begin{pmatrix}    y_1 \\ y_2 \\ \vdots \\ \vdots \\ y_n  \end{pmatrix}.
 $$
 
 Then
@@ -327,7 +327,7 @@ Then
 $$
   A\,(\mathbf{x}+\mathbf{y} ) =
   A\,
-\begin{bmatrix}    x_1+y_1 \\ x_2+y_2 \\ \vdots \\ \vdots \\ x_n+y_n  \end{bmatrix} =
+\begin{pmatrix}    x_1+y_1 \\ x_2+y_2 \\ \vdots \\ \vdots \\ x_n+y_n  \end{pmatrix} =
   (x_1+y_1 )\mathbf{a}_1 + (x_2+y_2 )\mathbf{a}_2 + \ldots
   + (x_n+y_n )\mathbf{a}_n.
 $$
@@ -362,8 +362,8 @@ Prove statement (ii) of the previous proposition.
 Assume
 
 $$
-  A = [\,\mathbf{a}_1\,\,\,\mathbf{a}_2\,\,\,\ldots\,\,\,\mathbf{a}_n\,], \quad \mathbf{x} =
-\begin{bmatrix}    x_1 \\ x_2 \\ \vdots \\ \vdots \\ x_n  \end{bmatrix},
+  A = (\,\mathbf{a}_1\,\,\,\mathbf{a}_2\,\,\,\ldots\,\,\,\mathbf{a}_n\,), \quad \mathbf{x} =
+\begin{pmatrix}    x_1 \\ x_2 \\ \vdots \\ \vdots \\ x_n  \end{pmatrix},
 $$
 
 and let $c$ be any real number.
@@ -373,7 +373,7 @@ Then
 $$
   A\,(c\mathbf{x}) =
   A\,
-\begin{bmatrix}    cx_1 \\ cx_2 \\ \vdots \\ \vdots \\ cx_n  \end{bmatrix} =
+\begin{pmatrix}    cx_1 \\ cx_2 \\ \vdots \\ \vdots \\ cx_n  \end{pmatrix} =
   cx_1\mathbf{a}_1 + cx_2\mathbf{a}_2 + \ldots
   + cx_n\mathbf{a}_n.
 $$
@@ -399,9 +399,9 @@ Using the matrix-vector product we can derive this property as follows: &nbsp;we
 
 $$
   \mathbf{c} =
-\begin{bmatrix}    c_1 \\ c_2 \\ \vdots \\ \vdots \\ c_n  \end{bmatrix}, \quad
+\begin{pmatrix}    c_1 \\ c_2 \\ \vdots \\ \vdots \\ c_n  \end{pmatrix}, \quad
    \mathbf{c'} =
-\begin{bmatrix}    c'_1 \\ c'_2 \\ \vdots \\ \vdots \\ c'_n  \end{bmatrix},
+\begin{pmatrix}    c'_1 \\ c'_2 \\ \vdots \\ \vdots \\ c'_n  \end{pmatrix},
 $$
 
 and let $A$ and $\mathbf{b}$ have the obvious meanings.
@@ -522,24 +522,24 @@ where $r_i = p_i - q_i,\,i=1,\ldots,\,m$ \, is inconsistent.
 We start with some notations.
 
 $$
- A = \left[\begin{array}{cccc}
+ A = \left(\begin{array}{cccc}
             a_{11} & a_{12}&  \ldots&   a_{1n}   \\
             a_{21} & a_{22}&  \ldots&   a_{2n}   \\
             \vdots &  \vdots&  \cdots&  \vdots    \\
             a_{m1} & a_{m2}&  \ldots&   a_{mn}
-          \end{array}   \right],
+          \end{array}   \right),
           \quad \mathbf{p} =
-          \left[\begin{array}{c}
+          \left(\begin{array}{c}
             p_1 \\ p_2 \\ \vdots \\ p_n
-          \end{array}\right],
+          \end{array}\right),
           \quad \mathbf{q} =
-          \left[\begin{array}{c}
+          \left(\begin{array}{c}
             q_1 \\ q_2 \\ \vdots \\ q_n
-          \end{array}\right]
+          \end{array}\right)
           \quad \mathbf{r} =
-          \left[\begin{array}{c}
+          \left(\begin{array}{c}
             r_1 \\ r_2 \\ \vdots \\ r_n
-          \end{array}\right].
+          \end{array}\right).
 $$
 
 In matrix-vector form the assumptions are that the system $A\vect{x}=\vect{p}$ is consistent and that the system $A\vect{x}=\vect{q}$ is inconsistent. Morever, $\vect{r} = \vect{p} - \vect{q}$.
@@ -563,7 +563,7 @@ Let $\mathbf{v}_1, \ldots, \mathbf{v}_k$ be vectors in $\mathbb{R}^n$. Define th
 
 $$
 A=
-\begin{bmatrix} \mathbf{v}_1 & \mathbf{v}_2 & \ldots & \mathbf{v}_k \end{bmatrix}.
+\begin{pmatrix} \mathbf{v}_1 & \mathbf{v}_2 & \ldots & \mathbf{v}_k \end{pmatrix}.
 $$
 
 The collection $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$ is equal to $\mathbb{R}^n$ if and only if the equation $A \mathbf{x}=\mathbf{b}$ has a solution for each $\mathbf{b}$ in $\mathbb{R}^n$.
@@ -583,7 +583,7 @@ Define the vector $\mathbf{x}$ such that
 
 $$
 \mathbf{x}=
-\begin{bmatrix} x_1 \\ \vdots \\ x_k \end{bmatrix}.
+\begin{pmatrix} x_1 \\ \vdots \\ x_k \end{pmatrix}.
 $$
 
 By definition of the matrix-vector product we now have
@@ -609,9 +609,9 @@ The equation $A \mathbf{x}=\mathbf{b}$ has a solution for each $\mathbf{b}$ in $
 
 Suppose that $A$ does not contain a pivot position in each row. By definition of the reduced echelon form we know that the last row of $A$ does not have a pivot position. If $E$ is the reduced echelon form of $A$, then this means that the bottom row of $E$ contains only zeros. Let $\mathbf{e}_n$ be again the vector of which the last entry is equal to 1 and all other entries are equal to zero.
 
-Since $E$ is the reduced form of $A$ we can find a sequence of elementary row operations $R_1, \ldots , R_m$ that transform in $A$ into $E$. Now take the augmented matrix $[E \, | \, \mathbf{e}_n]$ and perform the row operations $R_m^{-1}, \ldots , R_1^{-1}$, where $R_i^{-1}$ is the inverse row operation of $R_i$. We obtain a matrix $[A \, | \, \mathbf{b}]$, where $\mathbf{b}$ is a vector in $R^n$. Because $[E \, | \, \mathbf{e}_n]$ is the reduced echelon form of the augmented matrix $[A \, | \, \mathbf{b}]$ and $[E \, | \, \mathbf{e}_n]$ has a pivot in the last column, we know that $[A \, | \, \mathbf{b}]$ is inconsistent. This means that $A\mathbf{x}=\mathbf{b}$ does not have a solution.
+Since $E$ is the reduced form of $A$ we can find a sequence of elementary row operations $R_1, \ldots , R_m$ that transform in $A$ into $E$. Now take the augmented matrix $(E \, | \, \mathbf{e}_n)$ and perform the row operations $R_m^{-1}, \ldots , R_1^{-1}$, where $R_i^{-1}$ is the inverse row operation of $R_i$. We obtain a matrix $(A \, | \, \mathbf{b})$, where $\mathbf{b}$ is a vector in $R^n$. Because $(E \, | \, \mathbf{e}_n)$ is the reduced echelon form of the augmented matrix $(A \, | \, \mathbf{b})$ and $(E \, | \, \mathbf{e}_n)$ has a pivot in the last column, we know that $(A \, | \, \mathbf{b})$ is inconsistent. This means that $A\mathbf{x}=\mathbf{b}$ does not have a solution.
 
-On the other hand, if we assume that $A\mathbf{x}=\mathbf{b}$ does not have a solution for some $\mathbf{b}$ in $\mathbb{R}^n$, then the reduced echelon form $[E \, | \, \mathbf{c}]$ of the augmented matrix $[A \, | \, \mathbf{b}]$ has a pivot in the last column. Let us assume that this pivot is located in row $m$. The matrix $E$ cannot have a pivot in row $m$, but $E$ is also the reduced echelon form of $A$. This means that $A$ has no pivot position in row $m$.
+On the other hand, if we assume that $A\mathbf{x}=\mathbf{b}$ does not have a solution for some $\mathbf{b}$ in $\mathbb{R}^n$, then the reduced echelon form $(E \, | \, \mathbf{c})$ of the augmented matrix $(A \, | \, \mathbf{b})$ has a pivot in the last column. Let us assume that this pivot is located in row $m$. The matrix $E$ cannot have a pivot in row $m$, but $E$ is also the reduced echelon form of $A$. This means that $A$ has no pivot position in row $m$.
 
 ::::
 
@@ -622,7 +622,7 @@ Let $\mathbf{v}_1, \ldots, \mathbf{v}_k$ be vectors in $\mathbb{R}^n$. Define th
 
 $$
 A=
-\begin{bmatrix} \mathbf{v}_1 & \mathbf{v}_2 & \ldots & \mathbf{v}_k \end{bmatrix}.
+\begin{pmatrix} \mathbf{v}_1 & \mathbf{v}_2 & \ldots & \mathbf{v}_k \end{pmatrix}.
 $$
 
 The following statements are equivalent:
@@ -661,9 +661,9 @@ Is the span of the following three vectors equal to $\mathbb{R}^3$?
 $$
 
 \mathbf{v}_1=
-\begin{bmatrix} 1 \\ 1 \\ -1 \end{bmatrix} \quad \mathbf{v}_2=
-\begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix} \quad \mathbf{v}_3=
-\begin{bmatrix} 3 \\5 \\-1 \end{bmatrix}
+\begin{pmatrix} 1 \\ 1 \\ -1 \end{pmatrix} \quad \mathbf{v}_2=
+\begin{pmatrix} 0 \\ 1 \\ 1 \end{pmatrix} \quad \mathbf{v}_3=
+\begin{pmatrix} 3 \\5 \\-1 \end{pmatrix}
 
 
 $$
@@ -673,7 +673,7 @@ We can use {prf:ref}`Prop:LinearCombinations:PivotSpanSolution` to solve this pr
 $$
 
 A=
-\begin{bmatrix} 1 & 0 & 3 \\ 1 & 1 & 5 \\ -1 & 1 & -1 \end{bmatrix}
+\begin{pmatrix} 1 & 0 & 3 \\ 1 & 1 & 5 \\ -1 & 1 & -1 \end{pmatrix}
 
 
 $$
@@ -683,8 +683,8 @@ The three given vectors span the entire space $\mathbb{R}^3$ if and only if the 
 $$
 
 A=
-\begin{bmatrix} 1 & 0 & 3 \\ 1 & 1 & 5 \\ -1 & 1 & -1 \end{bmatrix}\sim
-\begin{bmatrix} 1 & 0 & 3 \\ 0 & 1 & 2 \\ 0 & 0 & 0 \end{bmatrix}.
+\begin{pmatrix} 1 & 0 & 3 \\ 1 & 1 & 5 \\ -1 & 1 & -1 \end{pmatrix}\sim
+\begin{pmatrix} 1 & 0 & 3 \\ 0 & 1 & 2 \\ 0 & 0 & 0 \end{pmatrix}.
 $$
 
 Since there are only two pivots in the reduced echelon matrix, we know that $\mathbf{v}_1$, $\mathbf{v}_2$ and $\mathbf{v}_3$ do not span the space $\mathbb{R}^3$.

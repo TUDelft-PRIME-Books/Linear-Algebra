@@ -5,7 +5,7 @@
 ## Introduction
 
 The word "determinant" already appeared in {numref}`Section %s <Sec:CrossProduct>` about the cross product  (cf.{prf:ref}`Def:CrossProduct:2x2determinant`). And in {numref}`Subsection %s <Subsec:MatrixInv:DefInverse>` we saw that a $2\times2$ matrix
-$A = \left[\begin{array}{cc} a & b \\ c & d\end{array}   \right]$ is invertible if and only if
+$A = \left(\begin{array}{cc} a & b \\ c & d\end{array}   \right)$ is invertible if and only if
 
 :::{math}
 :label: Eq:DetGeometric:DetNonzero
@@ -19,9 +19,9 @@ We called the expression $ad-bc$ the _determinant_ of the matrix $A$. Formula {e
 Likewise, by row reducing a general $3 \times 3$ matrix
 
 $$
-A = \left[\begin{array}{ccc} a_{11} & a_{12} & a_{13} \\
+A = \left(\begin{array}{ccc} a_{11} & a_{12} & a_{13} \\
 a_{21} & a_{22} & a_{23}\\
-a_{31} & a_{32} & a_{33}\end{array}   \right]
+a_{31} & a_{32} & a_{33}\end{array}   \right)
 $$
 
 we might end up with an expression containing all the entries $a_{ij}$ that tells us whether $A$ is invertible or not.
@@ -46,8 +46,8 @@ The parallelogram $OACB$.
 ::::::{prf:proposition}
 :label: Prop:DetGeometric:Area
 
-The area of the parallelogram $OACB$, spanned by the vectors $ \vect{u} =\left[\begin{array}{c} a \\ b \end{array}\right]$ and
-$\vect{v}=\left[\begin{array}{c} c \\ d \end{array}\right]$
+The area of the parallelogram $OACB$, spanned by the vectors $ \vect{u} =\left(\begin{array}{c} a \\ b \end{array}\right)$ and
+$\vect{v}=\left(\begin{array}{c} c \\ d \end{array}\right)$
 is given by $|ad-bc|$, i.e., the absolute value of &nbsp; $ad-bc$.
 
 ::::::
@@ -58,9 +58,9 @@ is given by $|ad-bc|$, i.e., the absolute value of &nbsp; $ad-bc$.
 The quickest way to prove this is to translate it to the cross product ({numref}`Sec:CrossProduct`). To make use of the cross product we introduce the vectors
 
 $$
-\tilde{\vect{u}} = \left[\begin{array}{c} a \\ b \\ 0 \end{array}\right]
+\tilde{\vect{u}} = \left(\begin{array}{c} a \\ b \\ 0 \end{array}\right)
  \quad \text{and} \quad
-\tilde{\vect{v}} = \left[\begin{array}{c} c \\ d \\ 0 \end{array}\right].
+\tilde{\vect{v}} = \left(\begin{array}{c} c \\ d \\ 0 \end{array}\right).
 $$
 
 Thus we embed the plane into $\R^3$ as the $x_1$-$x_2$-plane. See {numref}`Figure %s <Fig:DetGeometric:OrientedArea1>`.
@@ -79,7 +79,7 @@ So we embed the plane $\R^2$ as the $x$-$y$-plane in $\R^3$.
 We then have
 
 $$
-\tilde{\vect{u}} \times \tilde{\vect{v}} = \left[\begin{array}{c} 0 \\ 0 \\ ad-bc \end{array}\right].
+\tilde{\vect{u}} \times \tilde{\vect{v}} = \left(\begin{array}{c} 0 \\ 0 \\ ad-bc \end{array}\right).
 $$
 
 The length of this cross product is equal to $|ad-bc|$. This gives the area of the parallelogram spanned by the vectors $\tilde{\vect{u}}$ and $\tilde{\vect{v}}$, and this is an identical copy of the original parallelogram spanned by $\vect{u}$ and $\vect{v}$.
@@ -103,8 +103,8 @@ Again we can resort to properties of the cross product, but in fact it is not ne
 By a small twist we can turn the determinant into an inner product:
 
 $$
-ad-bc = \left[\begin{array}{c} -b \\ a  \end{array}\right]
- \ip \left[\begin{array}{c} c \\ d  \end{array}\right]
+ad-bc = \left(\begin{array}{c} -b \\ a  \end{array}\right)
+ \ip \left(\begin{array}{c} c \\ d  \end{array}\right)
   =
 \vect{u}^{\perp} \ip \vect{v},
 $$
@@ -156,8 +156,8 @@ We see that $ad-bc$ is equal to the area of the parallelogram if the directed an
 ::::::{prf:definition}
 :label: Dfn:DetGeometric:Orientation
 
-The **determinant** of the ordered set $(\vect{u},\vect{v})$ of two vectors $\vect{u} =\left[\begin{array}{c} a \\ b \end{array}\right]
-$ and $\vect{v}=\left[\begin{array}{c} c \\ d \end{array}\right]
+The **determinant** of the ordered set $(\vect{u},\vect{v})$ of two vectors $\vect{u} =\left(\begin{array}{c} a \\ b \end{array}\right)
+$ and $\vect{v}=\left(\begin{array}{c} c \\ d \end{array}\right)
 $ in $\R^2$ is defined as
 
 $$
@@ -167,7 +167,7 @@ $$
 Alternatively, the determinant can be seen as an operator working on $2 \times 2$ matrices, coming with its own notation:
 
 $$
-\det{\big([\, \vect{u} \,\, \vect{v}\, ]\big)}  = \det{\left(\left[\begin{array}{cc} a & c \\ b & d \end{array}\right]\right)}  =
+\det{\big(\, \vect{u} \,\, \vect{v}\, \big)}  = \det{\left(\left(\begin{array}{cc} a & c \\ b & d \end{array}\right)\right)}  =
 \left|\begin{array}{cc} a & c \\ b & d \end{array}\right|= ad-bc.
 $$
 
@@ -453,7 +453,7 @@ Alternatively, we can define the determinant as a function working on $3 \times 
 If we put
 
 $$
-A = [ \,\vect{a}\,\,\vect{b}\,\,\vect{c}\,] = \left[\begin{array}{ccc} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2\\ a_3 & b_3 & c_3 \end{array} \right] ,
+A = ( \,\vect{a}\,\,\vect{b}\,\,\vect{c}\,) = \left(\begin{array}{ccc} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2\\ a_3 & b_3 & c_3 \end{array} \right) ,
 $$
 
 then we define
@@ -493,15 +493,15 @@ $$
 The identities are verified by evaluating the triple product:
 
 $$
-\left[\begin{array}{c}  a_1 \\  a_2\\ a_3 \end{array} \right]
+\left(\begin{array}{c}  a_1 \\  a_2\\ a_3 \end{array} \right)
  \ip
-\left( \left[\begin{array}{c}  b_1 \\  b_2\\ b_3 \end{array} \right]
- \times \left[\begin{array}{c}  c_1 \\  c_2\\ c_3 \end{array} \right]
+\left( \left(\begin{array}{c}  b_1 \\  b_2\\ b_3 \end{array} \right)
+ \times \left(\begin{array}{c}  c_1 \\  c_2\\ c_3 \end{array} \right)
 \right)
  =
-\left[\begin{array}{c}  a_1 \\  a_2\\ a_3 \end{array} \right]
+\left(\begin{array}{c}  a_1 \\  a_2\\ a_3 \end{array} \right)
  \ip
-\left[\begin{array}{c}  b_2c_3-b_3c_2 \\  b_3c_1-b_1c_3\\ b_1c_2-b_2c_1 \end{array} \right]
+\left(\begin{array}{c}  b_2c_3-b_3c_2 \\  b_3c_1-b_1c_3\\ b_1c_2-b_2c_1 \end{array} \right)
  =
 $$
 
@@ -522,7 +522,7 @@ The next proposition summarizes the relevant properties of 3x3 determinants.
 For the determinant
 
 $$
-D = \det{A} = \det{\left[\,\vect{a}\,\, \vect{b}\,\,\vect{c}\, \right]
+D = \det{A} = \det{\left(\,\vect{a}\,\, \vect{b}\,\,\vect{c}\, \right)
 } = \left|\begin{array}{ccc} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2\\ a_3 & b_3 & c_3 \end{array} \right|
 $$
 

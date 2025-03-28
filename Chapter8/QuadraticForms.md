@@ -35,7 +35,7 @@ $$
 Note that this can be written as
 
 $$
-  q(x_1,x_2) = \begin{bmatrix} x_1 & x_2 \end{bmatrix} \begin{bmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} + \begin{bmatrix} b_1 & b_2 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} + c.
+  q(x_1,x_2) = \begin{pmatrix} x_1 & x_2 \end{pmatrix} \begin{pmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{pmatrix}\begin{pmatrix} x_1 \\ x_2 \end{pmatrix} + \begin{pmatrix} b_1 & b_2 \end{pmatrix}\begin{pmatrix} x_1 \\ x_2 \end{pmatrix} + c.
 $$
 
 In general, a shorthand representation of Equation {eq}`Eq:QuadForms:GeneralQuadForm` becomes
@@ -51,12 +51,12 @@ The part $\mathbf{x}^TA\mathbf{x}$ is called a **quadratic form**.
 ::::{prf:example}
 :label: Ex:QuadForms:Diagonalize
 
-For the matrix $A = \begin{bmatrix} 1 & 2 \\ 4 & 3 \end{bmatrix}$ the corresponding quadratic form is
+For the matrix $A = \begin{pmatrix} 1 & 2 \\ 4 & 3 \end{pmatrix}$ the corresponding quadratic form is
 
 $$
   \begin{array}{rcl}
-  q(\vect{x}) =  \begin{bmatrix} x_1 & x_2 \end{bmatrix} \begin{bmatrix} 1 & 2 \\ 4& 5 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}
-   &=& \begin{bmatrix} x_1 & x_2 \end{bmatrix} \begin{bmatrix} x_1 + 2x_2 \\ 4x_1+ 5x_2 \end{bmatrix} \\
+  q(\vect{x}) =  \begin{pmatrix} x_1 & x_2 \end{pmatrix} \begin{pmatrix} 1 & 2 \\ 4& 5 \end{pmatrix}\begin{pmatrix} x_1 \\ x_2 \end{pmatrix}
+   &=& \begin{pmatrix} x_1 & x_2 \end{pmatrix} \begin{pmatrix} x_1 + 2x_2 \\ 4x_1+ 5x_2 \end{pmatrix} \\
    &=& x_1^2 + (2+4)x_1x_2 + 5x_2^2 \\
    &=& x_1^2 + 6x_1x_2 + 5x_2^2.
    \end{array}
@@ -69,8 +69,8 @@ $$
   x_1^2 + 6x_1x_2 + 5x_2^2 &=& x_1^2 + (3+3)x_1x_2 + 5x_2^2 \\
    &=& x_1^2 + 3x_1x_2 + 3x_2x_1 + 5x_2^2 \\
    &=& x_1(x_1 + 3x_2) + x_2(3x_1 + 5x_2) \\
-   &=& \begin{bmatrix} x_1 & x_2 \end{bmatrix} \begin{bmatrix} x_1 + 3x_2 \\ 3x_1+ 5x_2 \end{bmatrix}\\
-  &=&\begin{bmatrix} x_1 & x_2 \end{bmatrix} \begin{bmatrix} 1 & 3 \\ 3 & 5 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}.
+   &=& \begin{pmatrix} x_1 & x_2 \end{pmatrix} \begin{pmatrix} x_1 + 3x_2 \\ 3x_1+ 5x_2 \end{pmatrix}\\
+  &=&\begin{pmatrix} x_1 & x_2 \end{pmatrix} \begin{pmatrix} 1 & 3 \\ 3 & 5 \end{pmatrix}\begin{pmatrix} x_1 \\ x_2 \end{pmatrix}.
    \end{array}
 $$
 
@@ -99,10 +99,10 @@ $$
     q(x_1,x_2,x_3) = x_1^2 + 2x_2^2 + 5 x_3^2  - 4 x_1x_2 + 6 x_2x_3.
 $$
 
-So we need a symmetric matrix $A = \begin{bmatrix} a_{11} & a_{12} & a_{13} \\ 
+So we need a symmetric matrix $A = \begin{pmatrix} a_{11} & a_{12} & a_{13} \\ 
                                                      a_{12} & a_{22} & a_{23} \\
                                                      a_{13} & a_{23} & a_{33}
-                                     \end{bmatrix}$.
+                                     \end{pmatrix}$.
 
 From
 
@@ -118,10 +118,10 @@ a_{11} = 1, \,  a_{22} = 2, \,  a_{33} = 5, \,\,\text{and}\,\,
  a_{12} = -2, \,  a_{13} = 0, \,  a_{23} = 3.
 $$
 
-So $A = \begin{bmatrix} 1 & -2 & 0 \\ 
+So $A = \begin{pmatrix} 1 & -2 & 0 \\ 
                         -2 &  2 & 3 \\
                          0 &  3 & 5 
-         \end{bmatrix}$.
+         \end{pmatrix}$.
 
 ::::
 
@@ -214,7 +214,7 @@ $$
 $$
 
 This means that if $\mathcal{S}_1$ is translated over the vector
-$\left[\begin{array}{c} -1 \\ 2 \\ -6 \end{array}\right]$ it becomes the surface $\mathcal{S}_2$.
+$\left(\begin{array}{c} -1 \\ 2 \\ -6 \end{array}\right)$ it becomes the surface $\mathcal{S}_2$.
 ::::
 
 For the rest of the section we will therefore only look at the quadratic part $\vect{x}^TA\vect{x}$.
@@ -248,7 +248,7 @@ Consider the quadratic form
 
 $$
    q(x_1,x_2) = x_1^2 + 4x_1x_2 + 3x_2^2 =
-   \begin{bmatrix}x_1 & x_2 \end{bmatrix} \begin{bmatrix}1 & 2 \\ 2 & 3 \end{bmatrix}\begin{bmatrix}x_1 \\ x_2 \end{bmatrix} = \vect{x}^TA\vect{x} .
+   \begin{pmatrix}x_1 & x_2 \end{pmatrix} \begin{pmatrix}1 & 2 \\ 2 & 3 \end{pmatrix}\begin{pmatrix}x_1 \\ x_2 \end{pmatrix} = \vect{x}^TA\vect{x} .
 $$
 
 At first sight you might think that this quadratic form only takes on nonnegative values.
@@ -280,14 +280,14 @@ $$
 For short,
 
 $$
-      \vect{y} = \left[\begin{array}{c} y_1  \\ y_2 \end{array}\right] =  \left[\begin{array}{cc} 1 & 2  \\ 0 & 1 \end{array}\right]\left[\begin{array}{c} x_1  \\ x_2 \end{array}\right] = M\vect{x}.
+      \vect{y} = \left(\begin{array}{c} y_1  \\ y_2 \end{array}\right) =  \left(\begin{array}{cc} 1 & 2  \\ 0 & 1 \end{array}\right)\left(\begin{array}{c} x_1  \\ x_2 \end{array}\right) = M\vect{x}.
 $$
 
 Then in terms of the new variables the quadratic form becomes
 
 $$
   q(\vect{x}) = (x_1 + 2x_2)^2 - x_2^2 = y_1^2 - y_2^2 =
-  \begin{bmatrix}y_1 & y_2 \end{bmatrix} \begin{bmatrix}1  & 0 \\ 0 &-1 \end{bmatrix}\begin{bmatrix}y_1 \\ y_2 \end{bmatrix} = \vect{y}^TD\vect{y}.
+  \begin{pmatrix}y_1 & y_2 \end{pmatrix} \begin{pmatrix}1  & 0 \\ 0 &-1 \end{pmatrix}\begin{pmatrix}y_1 \\ y_2 \end{pmatrix} = \vect{y}^TD\vect{y}.
 $$
 
 <BR>
@@ -342,36 +342,36 @@ $$
 In {prf:ref}`Ex:QuadForms:CompleteSquares` we considered the substitution
 
 $$
-  \vect{y} = \left[\begin{array}{cc} 1 & 2  \\ 0 & 1 \end{array}\right]\vect{x}
+  \vect{y} = \left(\begin{array}{cc} 1 & 2  \\ 0 & 1 \end{array}\right)\vect{x}
 $$
 
 or, equivalently
 
 $$
-  \vect{x} = \left[\begin{array}{cc} 1 & 2  \\ 0 & 1 \end{array}\right]^{-1}\vect{y} =
-             \left[\begin{array}{cc} 1 & -2  \\ 0 & 1 \end{array}\right]\vect{y} = P \vect{y}
+  \vect{x} = \left(\begin{array}{cc} 1 & 2  \\ 0 & 1 \end{array}\right)^{-1}\vect{y} =
+             \left(\begin{array}{cc} 1 & -2  \\ 0 & 1 \end{array}\right)\vect{y} = P \vect{y}
 $$
 
 to the quadratic form
 
 $$
-  q(\vect{x}) = \vect{x}^T\left[\begin{array}{cc} 1 & 2  \\ 2 & 3 \end{array}\right]\vect{x}.
+  q(\vect{x}) = \vect{x}^T\left(\begin{array}{cc} 1 & 2  \\ 2 & 3 \end{array}\right)\vect{x}.
 $$
 
 We then have
 
 $$
 \begin{array}{rcl}
-  P^TAP &=&  \begin{bmatrix} 1 & -2  \\ 0 & 1 \end{bmatrix}^T\begin{bmatrix} 1 & 2  \\ 2 & 3 \end{bmatrix}\begin{bmatrix} 1 & -2  \\ 0 & 1 \end{bmatrix} \\
+  P^TAP &=&  \begin{pmatrix} 1 & -2  \\ 0 & 1 \end{pmatrix}^T\begin{pmatrix} 1 & 2  \\ 2 & 3 \end{pmatrix}\begin{pmatrix} 1 & -2  \\ 0 & 1 \end{pmatrix} \\
         &=&
-   \begin{bmatrix} 1 & 0  \\ -2 & 1 \end{bmatrix}\begin{bmatrix} 1 & 0  \\ 2 & -1 \end{bmatrix} = \begin{bmatrix} 1 & 0  \\ 0 & -1 \end{bmatrix}.
+   \begin{pmatrix} 1 & 0  \\ -2 & 1 \end{pmatrix}\begin{pmatrix} 1 & 0  \\ 2 & -1 \end{pmatrix} = \begin{pmatrix} 1 & 0  \\ 0 & -1 \end{pmatrix}.
    \end{array}
 $$
 
 According to {prf:ref}`Prop:QuadForms:Substitution` we then get the quadratic form
 
 $$
-   \tilde{q}(y) = \vect{y}^TP^TAP\vect{y} = \vect{y}^T\left[\begin{array}{cc} 1 & 0  \\ 0 & -1 \end{array}\right]\vect{y} = y_1^2 - y_2^2.
+   \tilde{q}(y) = \vect{y}^TP^TAP\vect{y} = \vect{y}^T\left(\begin{array}{cc} 1 & 0  \\ 0 & -1 \end{array}\right)\vect{y} = y_1^2 - y_2^2.
 $$
 
 This agrees with what we derived in {prf:ref}`Ex:QuadForms:CompleteSquares`.
@@ -429,12 +429,12 @@ $$
 The last expression is indeed of the form
 
 $$
-  \vect{y}^T\begin{bmatrix}
+  \vect{y}^T\begin{pmatrix}
                  \lambda_1 & 0 & \ldots & 0 \\
                  0 & \lambda_2 & \ldots & 0 \\
                  \vdots & \vdots & \ddots & \vdots \\
                  0 & 0 & \ldots & 0
-            \end{bmatrix}\vect{y} =
+            \end{pmatrix}\vect{y} =
             \lambda_1y_1^2 + \lambda_2y_2^2 + \ldots + \lambda_ny_n^2,
 $$
 
@@ -446,7 +446,7 @@ Let us see how the construction of {prf:ref}`Prop:QuadForms:Diagonalize` works o
 
 ::::{prf:example}
 
-Consider again the matrix $A = \left[\begin{array}{cc} 1 & 2  \\ 2 & 3 \end{array}\right]$ of {prf:ref}`Ex:QuadForms:CompleteSquaresCtd`.
+Consider again the matrix $A = \left(\begin{array}{cc} 1 & 2  \\ 2 & 3 \end{array}\right)$ of {prf:ref}`Ex:QuadForms:CompleteSquaresCtd`.
 
 Its characteristic polynomial is given by
 
@@ -460,7 +460,7 @@ $$
    \lambda_1 = 2 + \sqrt{5}, \quad \lambda_2 = 2 + \sqrt{5}.
 $$
 
-So if we take $Q = \begin{bmatrix} \vect{q}_1 & \vect{q}_2 \end{bmatrix}$, where
+So if we take $Q = \begin{pmatrix} \vect{q}_1 & \vect{q}_2 \end{pmatrix}$, where
 $\vect{q}_1$ and $\vect{q}_2$ are corresponding eigenvectors of unit length, we find that the substitution $\vect{x} = Q\vect{y}$ leads to
 
 $$
@@ -473,13 +473,13 @@ Since $(2 + \sqrt{5})> 0$ and $(2 - \sqrt{5})<2-2=0$ we may again conclude that 
 ::::
 
 ::::{prf:remark}
-In {prf:ref}`Ex:QuadForms:CompleteSquaresCtd` and {prf:ref}`Ex:QuadForms:Diagonalize` we applied two different substitutions to the same quadratic form with the matrix $A = \left[\begin{array}{cc} 1 & 2  \\ 2 & 3 \end{array}\right]$.
+In {prf:ref}`Ex:QuadForms:CompleteSquaresCtd` and {prf:ref}`Ex:QuadForms:Diagonalize` we applied two different substitutions to the same quadratic form with the matrix $A = \left(\begin{array}{cc} 1 & 2  \\ 2 & 3 \end{array}\right)$.
 
 They led to the two different quadratic forms
 
 $$
-  \vect{y}^TD_1\vect{y} = \vect{y}^T\begin{bmatrix}1 & 0\\ 0 & -1 \end{bmatrix}\vect{y} \quad \text{and} \quad
-  \vect{y}^TD_2\vect{y} = \vect{y}^T\begin{bmatrix}2 + \sqrt{5} & 0\\ 0 & 2 - \sqrt{5}\end{bmatrix}\vect{y}.
+  \vect{y}^TD_1\vect{y} = \vect{y}^T\begin{pmatrix}1 & 0\\ 0 & -1 \end{pmatrix}\vect{y} \quad \text{and} \quad
+  \vect{y}^TD_2\vect{y} = \vect{y}^T\begin{pmatrix}2 + \sqrt{5} & 0\\ 0 & 2 - \sqrt{5}\end{pmatrix}\vect{y}.
 $$
 
 The diagonal matrices do not seem to have much in common. However, they do.
@@ -698,12 +698,12 @@ This immediately follows from {prf:ref}`Prop:QuadForms:Diagonalize`. If we make 
 
 $$
   A = QDQ^{-1} = QDQ^T, \quad
-  D = \left[\begin{array}{cccc}
+  D = \left(\begin{array}{cccc}
   \lambda_1 & 0 & \ldots & 0  \\
   0 & \lambda_2 & \ldots & 0 \\
   \vdots & \vdots & \ddots &\vdots\\
   0 & 0 & \ldots & \lambda_n
-  \end{array}\right],
+  \end{array}\right),
 $$
 
 the quadratic form transforms to
@@ -753,7 +753,7 @@ $$
 The matrix of this quadratic form is
 
 $$
-  A = \left[\begin{array}{cc} 2 & -1 & -1  \\ -1 & 1 & 0 \\ -1 & 0 & 1 \end{array}\right].
+  A = \left(\begin{array}{cc} 2 & -1 & -1  \\ -1 & 1 & 0 \\ -1 & 0 & 1 \end{array}\right).
 $$
 
 The eigenvalues of $A$ are computed as
@@ -804,7 +804,7 @@ $\vect{x}$ for which $q(\vect{x}) = 0$.
 
 <li>
 
-Check that the vector you found in iii. is an eigenvector of the matrix of the quadratic form, i.e., $A = \left[\begin{array}{cc} 2 & -1 & -1  \\ -1 & 1 & 0 \\ -1 & 0 & 1 \end{array}\right]$.
+Check that the vector you found in iii. is an eigenvector of the matrix of the quadratic form, i.e., $A = \left(\begin{array}{cc} 2 & -1 & -1  \\ -1 & 1 & 0 \\ -1 & 0 & 1 \end{array}\right)$.
 
 </li>
 
@@ -957,7 +957,7 @@ If in {eq}`Eq:ConicSec:CentralConic` the parameter $b$ is not equal to zero, the
 
 $$
   ax_1^2 + bx_1x_2 + cx_2^2 =
-  \begin{bmatrix} x_1 & x_2 \end{bmatrix}\begin{bmatrix} a & \tfrac12b \\ \tfrac12b & c\end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}.
+  \begin{pmatrix} x_1 & x_2 \end{pmatrix}\begin{pmatrix} a & \tfrac12b \\ \tfrac12b & c\end{pmatrix}\begin{pmatrix} x_1 \\ x_2 \end{pmatrix}.
 $$
 
 The next proposition explains how. <BR  >
@@ -977,7 +977,7 @@ where $a,b,c$ are not all equal to zero, and $k \neq 0$.
 Then the principal axes are the lines generated by the eigenvectors of the matrix
 
 $$
-  A = \begin{bmatrix} a & b \\ b & c \end{bmatrix}.
+  A = \begin{pmatrix} a & b \\ b & c \end{pmatrix}.
 $$
 
 ::::
@@ -999,28 +999,28 @@ x_1^2 - 4x_1x_2 + x_2^2 = 4.
 Since
 
 $$
- x_1^2 - 4x_1x_2 + x_2^2 = \begin{bmatrix} x_1 & x_2 \end{bmatrix}\begin{bmatrix} 1 & -2 \\ -2 & 1\end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix},
+ x_1^2 - 4x_1x_2 + x_2^2 = \begin{pmatrix} x_1 & x_2 \end{pmatrix}\begin{pmatrix} 1 & -2 \\ -2 & 1\end{pmatrix}\begin{pmatrix} x_1 \\ x_2 \end{pmatrix},
 $$
 
 {prf:ref}`Prop:QuadForms:PrincipleAxesR2` tells us we have to look for eigenvectors of the matrix
 
 $$
-  A = \begin{bmatrix} 1 & -2 \\ -2 & 1\end{bmatrix}.
+  A = \begin{pmatrix} 1 & -2 \\ -2 & 1\end{pmatrix}.
 $$
 
 The usual computations yield the following eigenvalues and eigenvectors:
 
 $$
-  \lambda_1 = 3,\,\vect{v}_1 = \begin{bmatrix} 1 \\ -1\end{bmatrix},\quad
-  \lambda_2 = -1,\,\vect{v}_2 = \begin{bmatrix} 1 \\ 1\end{bmatrix}.
+  \lambda_1 = 3,\,\vect{v}_1 = \begin{pmatrix} 1 \\ -1\end{pmatrix},\quad
+  \lambda_2 = -1,\,\vect{v}_2 = \begin{pmatrix} 1 \\ 1\end{pmatrix}.
 $$
 
 The eigenvectors are orthogonal, as they should, for a symmetric matrix. We see
 that $A$ can be orthogonally diagonalized as
 
 $$
-  A = QDQ^{-1} = QDQ^T, \quad Q = \frac{1}{\sqrt{2}}\begin{bmatrix} 1 & 1 \\ -1 & 1\end{bmatrix}, \,\,
-  D = \begin{bmatrix} 3 & 0 \\ 0 & -1\end{bmatrix}.
+  A = QDQ^{-1} = QDQ^T, \quad Q = \frac{1}{\sqrt{2}}\begin{pmatrix} 1 & 1 \\ -1 & 1\end{pmatrix}, \,\,
+  D = \begin{pmatrix} 3 & 0 \\ 0 & -1\end{pmatrix}.
 $$
 
 The substitution $\vect{x} = Q\vect{y}$ yields
@@ -1039,22 +1039,22 @@ $$
 From this we can already conclude that the curve defined by Equation {eq}`Eq:QuadForms:ConicExample1` is a hyperbola. The principal axes in the $x_1$-$x_2$-plane are the lines given by
 
 $$
-   \mathcal{L}_1: \begin{bmatrix} x_1 \\ x_2\end{bmatrix} = c \begin{bmatrix} 1 \\ -1\end{bmatrix} \quad \text{and} \quad
-    \mathcal{L}_2: \begin{bmatrix} x_1 \\ x_2\end{bmatrix} = c \begin{bmatrix} 1 \\ 1\end{bmatrix}
+   \mathcal{L}_1: \begin{pmatrix} x_1 \\ x_2\end{pmatrix} = c \begin{pmatrix} 1 \\ -1\end{pmatrix} \quad \text{and} \quad
+    \mathcal{L}_2: \begin{pmatrix} x_1 \\ x_2\end{pmatrix} = c \begin{pmatrix} 1 \\ 1\end{pmatrix}
 $$
 
 The asymptotes in the coordinates $y_1, y_2$ are the lines
 
 $$
   y_2 = \pm\sqrt{3} y_1, \,\, \text{or} \,\,\,
-  \begin{bmatrix} y_1 \\ y_2\end{bmatrix} = c \begin{bmatrix} 1 \\ \pm \sqrt{3}\end{bmatrix}.
+  \begin{pmatrix} y_1 \\ y_2\end{pmatrix} = c \begin{pmatrix} 1 \\ \pm \sqrt{3}\end{pmatrix}.
 $$
 
 Since
 
 $$
-    \begin{bmatrix} x_1 \\ x_2\end{bmatrix} = \dfrac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\ -1 & 1\end{bmatrix}\begin{bmatrix} y_1 \\ y_2\end{bmatrix} =
-     \begin{bmatrix} \cos\left(-\frac14\pi\right) & -\sin\left(-\frac14\pi\right) \\ \sin\left(-\frac14\pi\right) & \cos\left(-\frac14\pi\right)\end{bmatrix}\begin{bmatrix} y_1 \\ y_2\end{bmatrix}
+    \begin{pmatrix} x_1 \\ x_2\end{pmatrix} = \dfrac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ -1 & 1\end{pmatrix}\begin{pmatrix} y_1 \\ y_2\end{pmatrix} =
+     \begin{pmatrix} \cos\left(-\frac14\pi\right) & -\sin\left(-\frac14\pi\right) \\ \sin\left(-\frac14\pi\right) & \cos\left(-\frac14\pi\right)\end{pmatrix}\begin{pmatrix} y_1 \\ y_2\end{pmatrix}
 $$
 
 we find the asymptotes in the $x_1$-$x_2$-plane by rotating the lines
@@ -1062,13 +1062,13 @@ $y_2 = \pm\sqrt{3}y_1$ over an angle $-\frac14\pi$. This leads to the direction 
 as
 
 $$
-  \dfrac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\ -1 & 1\end{bmatrix}\begin{bmatrix} 1 \\ 3\end{bmatrix} = \dfrac{1}{\sqrt{2}} \begin{bmatrix} 4 \\ 2\end{bmatrix},\,\,
+  \dfrac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ -1 & 1\end{pmatrix}\begin{pmatrix} 1 \\ 3\end{pmatrix} = \dfrac{1}{\sqrt{2}} \begin{pmatrix} 4 \\ 2\end{pmatrix},\,\,
   \,\,
-  \dfrac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\ -1 & 1\end{bmatrix}\begin{bmatrix} 1 \\ -3\end{bmatrix} = \dfrac{1}{\sqrt{2}} \begin{bmatrix} -2 \\ -4\end{bmatrix}.
+  \dfrac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ -1 & 1\end{pmatrix}\begin{pmatrix} 1 \\ -3\end{pmatrix} = \dfrac{1}{\sqrt{2}} \begin{pmatrix} -2 \\ -4\end{pmatrix}.
 $$
 
-They can be simplified to the direction vectors $ \begin{bmatrix} 2 \\ 1\end{bmatrix}$
-and $\begin{bmatrix} 1 \\ 2\end{bmatrix}$.
+They can be simplified to the direction vectors $ \begin{pmatrix} 2 \\ 1\end{pmatrix}$
+and $\begin{pmatrix} 1 \\ 2\end{pmatrix}$.
 
 ::::
 
@@ -1086,27 +1086,27 @@ We consider the quadratic form
 Here we have
 
 $$
-  3x_1^2 + 4x_1x_2 + 6x_2^2 = \begin{bmatrix} x_1 & x_2 \end{bmatrix}\begin{bmatrix} 3 & 2 \\ 2 & 6\end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix},
+  3x_1^2 + 4x_1x_2 + 6x_2^2 = \begin{pmatrix} x_1 & x_2 \end{pmatrix}\begin{pmatrix} 3 & 2 \\ 2 & 6\end{pmatrix}\begin{pmatrix} x_1 \\ x_2 \end{pmatrix},
 $$
 
 so now we have to look for eigenvalues and eigenvectors of the matrix
 
 $$
-  A = \begin{bmatrix} 3 & 2 \\ 2 & 6\end{bmatrix}.
+  A = \begin{pmatrix} 3 & 2 \\ 2 & 6\end{pmatrix}.
 $$
 
 They are found to be
 
 $$
-  \lambda_1 = 2,\,\vect{v}_1 = \begin{bmatrix} 2 \\ -1\end{bmatrix},\quad
-  \lambda_2 = 7,\,\vect{v}_2 = \begin{bmatrix} 1 \\ 2\end{bmatrix}.
+  \lambda_1 = 2,\,\vect{v}_1 = \begin{pmatrix} 2 \\ -1\end{pmatrix},\quad
+  \lambda_2 = 7,\,\vect{v}_2 = \begin{pmatrix} 1 \\ 2\end{pmatrix}.
 $$
 
 We orthogonally diagonalize $A$ as
 
 $$
-  A = QDQ^{-1} = QDQ^T, \quad Q = \frac{1}{\sqrt{5}}\begin{bmatrix} 2 & 1 \\ -1 & 2\end{bmatrix}, \,\,
-  D = \begin{bmatrix} 2 & 0 \\ 0 & 7\end{bmatrix}.
+  A = QDQ^{-1} = QDQ^T, \quad Q = \frac{1}{\sqrt{5}}\begin{pmatrix} 2 & 1 \\ -1 & 2\end{pmatrix}, \,\,
+  D = \begin{pmatrix} 2 & 0 \\ 0 & 7\end{pmatrix}.
 $$
 
 The substitution $\vect{x} = Q\vect{y}$ yields the quadratic form
@@ -1126,7 +1126,7 @@ This is an ellipse in the $y_1$-$y_2$-plane with long axis $6\sqrt{2}$, the leng
 For the ellipse in the $x_1$-$x_2$-plane we find the principal axes
 
 $$
-  \begin{bmatrix} x_1 \\ x_2\end{bmatrix} = c\vect{v}_1 = c\begin{bmatrix} 2 \\ -1\end{bmatrix} \quad \text{and}\quad \begin{bmatrix} x_1 \\ x_2\end{bmatrix} = c\vect{v}_2 = c\begin{bmatrix} 1 \\ 2\end{bmatrix}.
+  \begin{pmatrix} x_1 \\ x_2\end{pmatrix} = c\vect{v}_1 = c\begin{pmatrix} 2 \\ -1\end{pmatrix} \quad \text{and}\quad \begin{pmatrix} x_1 \\ x_2\end{pmatrix} = c\vect{v}_2 = c\begin{pmatrix} 1 \\ 2\end{pmatrix}.
 $$
 
 See Figure {numref}`Fig:QuadForms:Ellipses`

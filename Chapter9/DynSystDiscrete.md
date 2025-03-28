@@ -13,11 +13,11 @@ $$
 In {prf:ref}`Ex:Diagonalize:DiagonalizeMigration` in {numref}`Section %s <Sec:Diagonalize>` we analysed the simple migration model
 
 $$
-\vect{x}_{k+1} = \left[\begin{array}{cc} 0.9 & 0.2 \\ 0.1 & 0.8 \end{array}\right]\vect{x}_k, \quad
-\vect{x}_k = \left[\begin{array}{c} x_k \\ y_k \end{array}\right]
+\vect{x}_{k+1} = \left(\begin{array}{cc} 0.9 & 0.2 \\ 0.1 & 0.8 \end{array}\right)\vect{x}_k, \quad
+\vect{x}_k = \left(\begin{array}{c} x_k \\ y_k \end{array}\right)
 $$
 
-where the 'state vector' $\vect{x}_k = \begin{bmatrix}x_k \\ y_k\end{bmatrix}$ represented the sizes of the populations in two cities.
+where the 'state vector' $\vect{x}_k = \begin{pmatrix}x_k \\ y_k\end{pmatrix}$ represented the sizes of the populations in two cities.
 
 The next example introduces a more general -- still much simplified -- population model.
 
@@ -55,18 +55,18 @@ One of the questions of interest here is whether with these numbers the populati
 Note that, if we define the state at time $k$ as the vector
 
 $$
-   \vect{x}_k = \left[\begin{array}{c} y_k \\ a_k \\ f_k \\ o_k \end{array}\right],
+   \vect{x}_k = \left(\begin{array}{c} y_k \\ a_k \\ f_k \\ o_k \end{array}\right),
 $$
 
 we can describe the population dynamics by the process
 
 $$
    \vect{x}_{k+1} = M \vect{x}_k =
-   \left[\begin{array}{cccc}   0   &  0   &  4   &  2 \\
+   \left(\begin{array}{cccc}   0   &  0   &  4   &  2 \\
                               0.3  &  0   &  0   &  0 \\
                                0   & 0.6  &  0   &  0  \\
                                0   &  0   &  0.4 & 0.1
-                      \end{array}\right] \vect{x}_k.
+                      \end{array}\right) \vect{x}_k.
 $$
 
 In the context of population dynamics, the matrix $M$ would be called a **Leslie matrix**.
@@ -312,10 +312,10 @@ The argument for a matrix with a repeated eigenvalue that does not provide a com
 Property iii. may fail if $\lambda_1$ is a double eigenvalue of modulus or absolute value 1. An example where this happens is given by the matrix
 
 $$
-   A = \left[\begin{array}{cc}
+   A = \left(\begin{array}{cc}
                           1 & 1 \\
                           0 & 1
-      \end{array}\right].
+      \end{array}\right).
 $$
 
 This matrix has the double eigenvalue $\lambda = 1$, with only one independent eigenvector.
@@ -323,28 +323,28 @@ This matrix has the double eigenvalue $\lambda = 1$, with only one independent e
 It can be shown that
 
 $$
-   A^k = \left[\begin{array}{cc}
+   A^k = \left(\begin{array}{cc}
                           1 & k \\
                           0 & 1
-      \end{array}\right],
+      \end{array}\right),
 $$
 
 so
 
 $$
-  A^k \vect{x}_0 = \left[\begin{array}{cc}
+  A^k \vect{x}_0 = \left(\begin{array}{cc}
                           1 & k \\
                           0 & 1
-      \end{array}\right]\left[\begin{array}{c}
+      \end{array}\right)\left(\begin{array}{c}
                           s_1 \\
                           s_2
-      \end{array}\right] = \left[\begin{array}{c}
+      \end{array}\right) = \left(\begin{array}{c}
                           s_1+ks_2 \\
                           s_2
-      \end{array}\right].
+      \end{array}\right).
 $$
 
-For starting vectors $\vect{s} = \begin{bmatrix} s_1 \\ s_2\end{bmatrix}$ with $s_2 \neq 0$,  this will not be bounded.
+For starting vectors $\vect{s} = \begin{pmatrix} s_1 \\ s_2\end{pmatrix}$ with $s_2 \neq 0$,  this will not be bounded.
 
 ::::
 
@@ -354,11 +354,11 @@ For starting vectors $\vect{s} = \begin{bmatrix} s_1 \\ s_2\end{bmatrix}$ with $
 In the population model of {prf:ref}`Ex:DynSystDiscrete:PopulationModel` we introduced the dynamical system with matrix
 
 $$
-   M =   \left[\begin{array}{cccc}   0   &  0   &  4   &  2 \\
+   M =   \left(\begin{array}{cccc}   0   &  0   &  4   &  2 \\
                                     0.3  &  0   &  0   &  0 \\
                                      0   & 0.6  &  0   &  0  \\
                                      0   &  0   &  0.4 & 0.1
-         \end{array}\right].
+         \end{array}\right).
 $$
 
 Numerical computations show that the eigenvalues are given by
@@ -375,13 +375,13 @@ This may take quite a while, though. For instance, if at time 0 the population
 is described by
 
 $$
-  \vect{x}_0 = \left[\begin{array}{cc} 1000\\1000\\2000\\3000 \end{array}\right],
+  \vect{x}_0 = \left(\begin{array}{cc} 1000\\1000\\2000\\3000 \end{array}\right),
 $$
 
 then (rounded to integers; recall it is just a model)
 
 $$
-  \vect{x}_1 = \left[\begin{array}{cc} 14000\\300\\600\\1100 \end{array}\right] , \quad \vect{x}_{10} = \left[\begin{array}{cc} 5910 \\ 684 \\ 965 \\ 573 \end{array}\right] , \quad \vect{x}_{50} = \left[\begin{array}{cc} 910 \\ 282 \\ 179\\ 82 \end{array}\right].
+  \vect{x}_1 = \left(\begin{array}{cc} 14000\\300\\600\\1100 \end{array}\right) , \quad \vect{x}_{10} = \left(\begin{array}{cc} 5910 \\ 684 \\ 965 \\ 573 \end{array}\right) , \quad \vect{x}_{50} = \left(\begin{array}{cc} 910 \\ 282 \\ 179\\ 82 \end{array}\right).
 $$
 
 The trajectories in $\R^4$ are hard to plot. Instead we can plot the progressions of the four age groups. {numref}`Figure %s <Fig:DynSystDiscrete:Leslie2>` shows these for the first 70 time periods.
@@ -396,8 +396,8 @@ The evolvement in time of the population model.
 What is not so clear in the picture is that for large $k$ the state vectors $\vect{x}_k$ are approximately eigenvectors for the matrix $M$. However, numerical values shed light on this phenomenon. For instance, the last two 'states' are given by
 
 $$
-  \vect{x}_{69}  \approx 681 \left[\begin{array}{c}  0.627 \\0.195\\0.122\\0.057 \end{array}\right], \quad
-  \vect{x}_{70} \approx 655\left[\begin{array}{c}  0.626 \\0.195\\0.122\\0.057 \end{array}\right].
+  \vect{x}_{69}  \approx 681 \left(\begin{array}{c}  0.627 \\0.195\\0.122\\0.057 \end{array}\right), \quad
+  \vect{x}_{70} \approx 655\left(\begin{array}{c}  0.626 \\0.195\\0.122\\0.057 \end{array}\right).
 $$
 
 The numbers in the vectors are the _fractions_ of the total population per age group.
@@ -405,8 +405,8 @@ The numbers in the vectors are the _fractions_ of the total population per age g
 It holds that the last vector
 
 $$
-    \left[\begin{array}{c}  0.626 \\0.195\\0.122\\0.057 \end{array}\right] \approx
-    \vect{v}_{1} = \left[\begin{array}{c} 0.6259 \\ 0.1954 \\ 0.1220 \\0.0567 \end{array}\right],
+    \left(\begin{array}{c}  0.626 \\0.195\\0.122\\0.057 \end{array}\right) \approx
+    \vect{v}_{1} = \left(\begin{array}{c} 0.6259 \\ 0.1954 \\ 0.1220 \\0.0567 \end{array}\right),
 $$
 
 where up to four decimals $\vect{v}_1$
@@ -454,17 +454,17 @@ have two distinct real eigenvalues, hence they are (real) diagonalizable, in the
 :label: Ex:DynSystDiscrete:SimplestSystem
 
 Consider the dynamical system with
-matrix $A = \left[\begin{array}{cc} 1.2 & 0 \\ 0 & 0.8 \end{array}\right]$.
+matrix $A = \left(\begin{array}{cc} 1.2 & 0 \\ 0 & 0.8 \end{array}\right)$.
 
-Starting from any vector $\vect{x}_0 = \left[\begin{array}{cc} x_0 \\ y_0 \end{array}\right]$ we get the path
+Starting from any vector $\vect{x}_0 = \left(\begin{array}{cc} x_0 \\ y_0 \end{array}\right)$ we get the path
 
 :::{math}
 :label: Eq:DysSystDiscrete:SimplestSystem
 
-\left[\begin{array}{cc} x_0 \\ y_0 \end{array}\right] \, \longrightarrow \,
-\left[\begin{array}{cc} 1.2x_0 \\ 0.8y_0 \end{array}\right] \, \longrightarrow \,
-\left[\begin{array}{cc} (1.2)^2x_0 \\ (0.8)^2y_0 \end{array}\right] \, \longrightarrow \,
-\left[\begin{array}{cc} (1.2)^3x_0 \\ (0.8)^3y_0 \end{array}\right] \,\,\, \ldots
+\left(\begin{array}{cc} x_0 \\ y_0 \end{array}\right) \, \longrightarrow \,
+\left(\begin{array}{cc} 1.2x_0 \\ 0.8y_0 \end{array}\right) \, \longrightarrow \,
+\left(\begin{array}{cc} (1.2)^2x_0 \\ (0.8)^2y_0 \end{array}\right) \, \longrightarrow \,
+\left(\begin{array}{cc} (1.2)^3x_0 \\ (0.8)^3y_0 \end{array}\right) \,\,\, \ldots
 :::
 
 In each step the $x$-coordinate gets a factor $1.2$ and the $y$-coordinate is reduced by a factor $0.8$. <BR>
@@ -481,11 +481,11 @@ A very simple dynamical system.
 It seems clear from the picture, and it is clear from the general solution
 
 $$
-   \vect{x}_k = A^k \vect{x}_0 = \left[\begin{array}{cc} 1.2^kx_0 \\ 0.8^k y_0 \end{array}\right]
+   \vect{x}_k = A^k \vect{x}_0 = \left(\begin{array}{cc} 1.2^kx_0 \\ 0.8^k y_0 \end{array}\right)
 $$
 
 that all solutions starting on the $y$-axis will converge to the origin and all other solutions will go to $\pm \infty$ while getting closer and closer to the $x$-axis. <BR>
-To be more precise, if $x_0 > 0$ then $\vect{x}_k \to \left[\begin{array}{c} \infty \\ 0 \end{array}\right]$, and if $x_0 < 0$ then $\vect{x}_k \to \left[\begin{array}{c} -\infty \\ 0 \end{array}\right]$.
+To be more precise, if $x_0 > 0$ then $\vect{x}_k \to \left(\begin{array}{c} \infty \\ 0 \end{array}\right)$, and if $x_0 < 0$ then $\vect{x}_k \to \left(\begin{array}{c} -\infty \\ 0 \end{array}\right)$.
 
 ::::
 
@@ -499,7 +499,7 @@ Check how in {prf:ref}`Ex:DynSystDiscrete:SimplestSystem` we can use
 :label: Ex:DynSystDiscrete:NiceNode
 
 Consider the dynamical system with
-matrix $A = \left[\begin{array}{cc} 0.5 & 0.2 \\ -0.2 & 1.0 \end{array}\right]$.
+matrix $A = \left(\begin{array}{cc} 0.5 & 0.2 \\ -0.2 & 1.0 \end{array}\right)$.
 
 {numref}`Fig:DynSystDiscrete:NiceNode` shows a few trajectories. On each of them the direction of the points $\vect{x}_k$ is towards the origin.
 
@@ -518,8 +518,8 @@ The behaviour is most easily explained by looking at the eigenvalues and eigenve
 
 <center>
 
-    $\lambda_1 = 0.9$, with $\vect{v}_1 = \left[\begin{array}{cc} 1 \\ 2 \end{array}\right]$ \nbsp;
-    and \nbsp; $\lambda_2 = 0.6$, with $\vect{v}_2 = \left[\begin{array}{cc} 2 \\ 1 \end{array}\right]$
+    $\lambda_1 = 0.9$, with $\vect{v}_1 = \left(\begin{array}{cc} 1 \\ 2 \end{array}\right)$ \nbsp;
+    and \nbsp; $\lambda_2 = 0.6$, with $\vect{v}_2 = \left(\begin{array}{cc} 2 \\ 1 \end{array}\right)$
 
 </center>
 
@@ -527,8 +527,8 @@ werkt niet ;-(  -->
 
 
 $$
-  \lambda_1 = 0.9, \,\text{with} \,\,\vect{v}_1 = \left[\begin{array}{cc} 1 \\ 2 \end{array}\right], \quad
-   \lambda_2 = 0.6, \,\text{with} \,\,\vect{v}_2 = \left[\begin{array}{cc} 2 \\ 1 \end{array}\right]
+  \lambda_1 = 0.9, \,\text{with} \,\,\vect{v}_1 = \left(\begin{array}{cc} 1 \\ 2 \end{array}\right), \quad
+   \lambda_2 = 0.6, \,\text{with} \,\,\vect{v}_2 = \left(\begin{array}{cc} 2 \\ 1 \end{array}\right)
 $$
 
 So if
@@ -561,7 +561,7 @@ In the third example the matrix $A$ has complex eigenvalues.
 :label: Ex:DynSystDiscrete:SpiralPoint
 
 Consider the dynamical system with
-matrix $A = \left[\begin{array}{cc} 1.3 &  -0.7 \\ 0.7  &  0.5 \end{array}\right]$.
+matrix $A = \left(\begin{array}{cc} 1.3 &  -0.7 \\ 0.7  &  0.5 \end{array}\right)$.
 
 {numref}`Fig:DynSystDiscrete:Spiral1A` shows the trajectories starting from the points
 $(1,-1)$ and $(-1,1)$. On each of them the direction of the points $\vect{x}_k$ is along a spiral, away from the origin.
@@ -581,23 +581,23 @@ An eigenvector corresponding to $\lambda = 0.9 - 0.5745i$ is given
 by
 
 $$
-  \vect{v} = \left[\begin{array}{c} 0.5714-0.8207i \\ 1 \end{array}\right] =
-  \left[\begin{array}{c} 0.5714 \\ 1 \end{array}\right] +
-  \left[\begin{array}{c} -0.8207 \\ 0 \end{array}\right]i .
+  \vect{v} = \left(\begin{array}{c} 0.5714-0.8207i \\ 1 \end{array}\right) =
+  \left(\begin{array}{c} 0.5714 \\ 1 \end{array}\right) +
+  \left(\begin{array}{c} -0.8207 \\ 0 \end{array}\right)i .
 $$
 
 According to {prf:ref}`Prop:ComplexEV:HiddenRotation` $A$ can be written as $PCP^{-1}$
 where
 
 $$
-  P = \left[\begin{array}{cc} 0.5714 &  -0.8207  \\ 1 & 0\end{array}\right],
+  P = \left(\begin{array}{cc} 0.5714 &  -0.8207  \\ 1 & 0\end{array}\right),
 $$
 
 and
 
 $$
-  C =  \left[\begin{array}{cc} 0.9 & -0.5745  \\ 0.5745 & 0.9\end{array}\right] = r \left[\begin{array}{cc} \cos{\vartheta} & -\sin{\vartheta} \\
-                                \sin{\vartheta} & \cos{\vartheta} \end{array}\right].
+  C =  \left(\begin{array}{cc} 0.9 & -0.5745  \\ 0.5745 & 0.9\end{array}\right) = r \left(\begin{array}{cc} \cos{\vartheta} & -\sin{\vartheta} \\
+                                \sin{\vartheta} & \cos{\vartheta} \end{array}\right).
 $$
 
 For the given matrix $A$ we have $r = |\lambda_i| = 1.0677$, $\vartheta \approx 0.5681 \approx 0.1808  \pi$.
@@ -679,20 +679,20 @@ Note that we just ignore the case where the matrix $A$ has a double eigenvalue.
 ::::{exercise}
 :label: Exc:DynSystDiscrete:Eigenvalue=1
 
-The matrix $A = \left[\begin{array}{cc} -1 & 2 \\ -3 & 4 \end{array}\right]$
+The matrix $A = \left(\begin{array}{cc} -1 & 2 \\ -3 & 4 \end{array}\right)$
 has the following eigenvalues and eigenvectors
 
 $$
-  \lambda_1 = 1,\,\,\vect{v}_1 =  \left[\begin{array}{c} 1 \\ 1 \end{array}\right],
+  \lambda_1 = 1,\,\,\vect{v}_1 =  \left(\begin{array}{c} 1 \\ 1 \end{array}\right),
   \quad
-  \lambda_2 = 2,\,\,\vect{v}_2 =  \left[\begin{array}{c} 2 \\ 3 \end{array}\right].
+  \lambda_2 = 2,\,\,\vect{v}_2 =  \left(\begin{array}{c} 2 \\ 3 \end{array}\right).
 $$
 
 Describe and sketch the trajectories starting from the 'states'
 
 $$
-  \vect{s}_1 = \left[\begin{array}{c} 1 \\ 0 \end{array}\right] \quad \text{and} \quad
-  \vect{s}_2 = \left[\begin{array}{c} 1 \\ 1 \end{array}\right].
+  \vect{s}_1 = \left(\begin{array}{c} 1 \\ 0 \end{array}\right) \quad \text{and} \quad
+  \vect{s}_2 = \left(\begin{array}{c} 1 \\ 1 \end{array}\right).
 $$
 
 ::::
@@ -700,7 +700,7 @@ $$
 %::::{exercise}   TO GRASPLE ? ? ? ?
 %:label: Exc:DynSystDiscrete:Modulus=1
 %
-%The matrix $A = \left[\begin{array}{cc} 1.2 & 1 \\ -1 & 0 \end{array}\right]$
+%The matrix $A = \left(\begin{array}{cc} 1.2 & 1 \\ -1 & 0 \end{array}\right)$
 %has the eigenvalues $0.6 \pm 0.8i$. <BR>
 %Show that all paths that start from an initial point that is not the origin will stay away from the origin but %will stay within a fixed distance from the origin.
 %
@@ -775,29 +775,29 @@ $$
      \end{array} \right.
 $$
 
-Define $\vect{x}_k = \left[\begin{array}{c} y(k) \\ y(k+1) \\ y(k+2) \end{array}\right]$,
+Define $\vect{x}_k = \left(\begin{array}{c} y(k) \\ y(k+1) \\ y(k+2) \end{array}\right)$,
 for $k = 0,1,2,3,\ldots$
 
 Then
 
 $$
-  \vect{x}_{k+1} = \left[\begin{array}{c} y(k+1) \\ y(k+2) \\ y(k+3) \end{array}\right] =
-  \left[\begin{array}{c} y(k+1) \\ y(k+2) \\ 2y(k+2)  - 3y(k+1) + 5y(k)  \end{array}\right],
+  \vect{x}_{k+1} = \left(\begin{array}{c} y(k+1) \\ y(k+2) \\ y(k+3) \end{array}\right) =
+  \left(\begin{array}{c} y(k+1) \\ y(k+2) \\ 2y(k+2)  - 3y(k+1) + 5y(k)  \end{array}\right),
 $$
 
 so
 
 $$
   \vect{x}_{k+1} =
-  \left[\begin{array}{ccc}    0 & 1  & 0 \\ 0 & 0 & 1\\ 5 & -3 & 2     \end{array}\right]
-  \left[\begin{array}{c} y(k) \\ y(k+1) \\ y(k+2) \end{array}\right] = A \vect{x}_k.
+  \left(\begin{array}{ccc}    0 & 1  & 0 \\ 0 & 0 & 1\\ 5 & -3 & 2     \end{array}\right)
+  \left(\begin{array}{c} y(k) \\ y(k+1) \\ y(k+2) \end{array}\right) = A \vect{x}_k.
 $$
 
 Furthermore,
 
 $$
-  \vect{x}_0 = \left[\begin{array}{c} y(0) \\ y(1) \\ y(2) \end{array}\right] =
-               \left[\begin{array}{c} 1 \\ 3 \\ 0 \end{array}\right].
+  \vect{x}_0 = \left(\begin{array}{c} y(0) \\ y(1) \\ y(2) \end{array}\right) =
+               \left(\begin{array}{c} 1 \\ 3 \\ 0 \end{array}\right).
 $$
 
 ::::
@@ -853,17 +853,17 @@ gives us some confidence.
 
 Let us now derive Equation {eq}`Eq:DynSystDiscrete:Fibonacci`.
 
-Introducing $\vect{x}_{k} = \left[\begin{array}{c} f_{k} \\  f_{k+1} \end{array}\right]$
+Introducing $\vect{x}_{k} = \left(\begin{array}{c} f_{k} \\  f_{k+1} \end{array}\right)$
 and using the identity
 
 $$
-  \left[\begin{array}{c} f_{k+1} \\  f_{k+2} \end{array}\right] = \left[\begin{array}{c} f_{k+1} \\  f_{k}+ f_{k+1} \end{array}\right] = \left[\begin{array}{cc} 0 & 1\\ 1 & 1 \end{array}\right] \left[\begin{array}{c} f_{k}\\  f_{k+1} \end{array}\right],
+  \left(\begin{array}{c} f_{k+1} \\  f_{k+2} \end{array}\right) = \left(\begin{array}{c} f_{k+1} \\  f_{k}+ f_{k+1} \end{array}\right) = \left(\begin{array}{cc} 0 & 1\\ 1 & 1 \end{array}\right) \left(\begin{array}{c} f_{k}\\  f_{k+1} \end{array}\right),
 $$
 
 we find as dynamical system corresponding to {eq}`Eq:DynSystDiscrete:DfnFibo` the system
 
 $$
-  \vect{x}_{k+1} = A\vect{x}_{k} =  \left[\begin{array}{cc} 0 & 1\\ 1 & 1 \end{array}\right]\vect{x}_{k}, \quad \vect{x}_{0} =  \left[\begin{array}{c} 0 \\  1 \end{array}\right].
+  \vect{x}_{k+1} = A\vect{x}_{k} =  \left(\begin{array}{cc} 0 & 1\\ 1 & 1 \end{array}\right)\vect{x}_{k}, \quad \vect{x}_{0} =  \left(\begin{array}{c} 0 \\  1 \end{array}\right).
 $$
 
 The matrix $A$ has the characteristic polynomial
@@ -875,8 +875,8 @@ $$
 This gives the zeros/eigenvalues $\lambda_{1} = \dfrac{1+\sqrt{5}}{2}$, $\lambda_{2} = \dfrac{1-\sqrt{5}}{2}$, with corresponding eigenvectors
 
 $$
-  \vect{v}_1 = \left[\begin{array}{cc} 1 \\ \frac12(1+\sqrt{5})  \end{array}\right], \quad
-  \vect{v}_2 = \left[\begin{array}{cc} 1 \\ \frac12(1-\sqrt{5})  \end{array}\right]
+  \vect{v}_1 = \left(\begin{array}{cc} 1 \\ \frac12(1+\sqrt{5})  \end{array}\right), \quad
+  \vect{v}_2 = \left(\begin{array}{cc} 1 \\ \frac12(1-\sqrt{5})  \end{array}\right)
 $$
 
 respectively. So $A$ is diagonalizable, and we can use {prf:ref}`Prop:DynSystDiscrete:DiagCase` to find the general state vector $\vect{x}_k$.
@@ -884,14 +884,14 @@ respectively. So $A$ is diagonalizable, and we can use {prf:ref}`Prop:DynSystDis
 For this we have to find the coordinates $(c_1, c_2)$ of $\vect{s}$ with respect to the basis $(\vect{v}_1,\vect{v}_2)$. A short computation shows that
 
 $$
-  \left[\begin{array}{c} 0\\ 1  \end{array}\right] = c_1\left[\begin{array}{c} 1 \\ \frac12(1+\sqrt{5})  \end{array}\right] + c_2\left[\begin{array}{c} 1 \\ \frac12(1-\sqrt{5})  \end{array}\right] \iff
-  \left[\begin{array}{c} c_1\\ c_2  \end{array}\right] = \dfrac{1}{\sqrt{5}}\left[\begin{array}{c} 1\\ -1  \end{array}\right].
+  \left(\begin{array}{c} 0\\ 1  \end{array}\right) = c_1\left(\begin{array}{c} 1 \\ \frac12(1+\sqrt{5})  \end{array}\right) + c_2\left(\begin{array}{c} 1 \\ \frac12(1-\sqrt{5})  \end{array}\right) \iff
+  \left(\begin{array}{c} c_1\\ c_2  \end{array}\right) = \dfrac{1}{\sqrt{5}}\left(\begin{array}{c} 1\\ -1  \end{array}\right).
 $$
 
 This gives us
 
 $$
-  \vect{x}_k = \left[\begin{array}{c} f_{k} \\  f_{k+1} \end{array}\right] = c_1\lambda_1^k \vect{v}_1 + c_2\lambda_2^k \vect{v}_2  = \tfrac{1}{\sqrt{5}}\lambda_1^k \vect{v}_1 - \tfrac{1}{\sqrt{5}}\lambda_2^k \vect{v}_2.
+  \vect{x}_k = \left(\begin{array}{c} f_{k} \\  f_{k+1} \end{array}\right) = c_1\lambda_1^k \vect{v}_1 + c_2\lambda_2^k \vect{v}_2  = \tfrac{1}{\sqrt{5}}\lambda_1^k \vect{v}_1 - \tfrac{1}{\sqrt{5}}\lambda_2^k \vect{v}_2.
 $$
 
 For the $k$th Fibonacci number we only need the first entry, which yields that

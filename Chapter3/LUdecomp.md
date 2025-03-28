@@ -16,16 +16,16 @@ Consider the system $A\mathbf{x} = \mathbf{b}$ where
 
 $$
 A =
-\begin{bmatrix}
+\begin{pmatrix}
 1 &  1 & -1 \\
 2 &  4 & -3 \\
 1 & -1 &  -3
-\end{bmatrix},
+\end{pmatrix},
 \qquad
 \mathbf{b} =
-\begin{bmatrix}
+\begin{pmatrix}
 2 \\ 1 \\8
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 
@@ -34,16 +34,16 @@ To start with, the matrix  $A$ can be factorized as
 
 $$
 A  = 
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 0 & 0 \\
 2 & 1 & 0 \\
 1 & -1 & 1
-\end{bmatrix}
-\begin{bmatrix}
+\end{pmatrix}
+\begin{pmatrix}
 1 & 1 & -1 \\
 0 & 2 & -1 \\
 0 & 0 &  -3
-\end{bmatrix} = LU.
+\end{pmatrix} = LU.
 $$
 
 We will see how this helps to solve the system in an efficient way.
@@ -88,47 +88,47 @@ We illustrate matters with the linear system of {prf:ref}`Ex:LUdecomp:FirstLU`.
 The  system  $A\vect{x} = \vect{b}$ of  {prf:ref}`Ex:LUdecomp:FirstLU` can be written as
 
 $$
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 0 & 0 \\
 2 & 1 & 0 \\
 1 & -1 & 1
-\end{bmatrix}
-\begin{bmatrix}
+\end{pmatrix}
+\begin{pmatrix}
 1 & 1 & -1 \\
 0 & 2 & -1 \\
 0 & 0 &  -3
-\end{bmatrix} 
-\begin{bmatrix}
+\end{pmatrix} 
+\begin{pmatrix}
 x_1\\ x_2 \\ x_3
-\end{bmatrix} =
-\begin{bmatrix}
+\end{pmatrix} =
+\begin{pmatrix}
 2 \\ 1 \\8
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 By setting  
 
 $$
- \mathbf{y} = \begin{bmatrix}
+ \mathbf{y} = \begin{pmatrix}
 1 & 1 & -1 \\
 0 & 2 & -1 \\
-0 & 0 &  -3 \end{bmatrix} \begin{bmatrix} x_1\\ x_2 \\ x_3 \end{bmatrix},
+0 & 0 &  -3 \end{pmatrix} \begin{pmatrix} x_1\\ x_2 \\ x_3 \end{pmatrix},
 $$
 
 we have
 
 $$
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 0 & 0 \\
 2 & 1 & 0 \\
 1 & -1 & 1
-\end{bmatrix}
-\begin{bmatrix}
+\end{pmatrix}
+\begin{pmatrix}
 y_1\\y_2\\y_3
-\end{bmatrix} =
-\begin{bmatrix}
+\end{pmatrix} =
+\begin{pmatrix}
 2 \\ 1 \\ 8
-\end{bmatrix}, \quad \text{i.e.,}\,\,
+\end{pmatrix}, \quad \text{i.e.,}\,\,
 \left\{\begin{array}{ccccccc}
              y_1 & &      & &      &=&  2 \\
             2y_1 &+&  y_2 & &      &=&  1 \\
@@ -143,12 +143,12 @@ $$
     \begin{array}{ll} y_1 = 2 & \Longrightarrow \quad y_2 = 1 - 2y_1 = -3  \\
      & \Longrightarrow \quad  
     y_3 = 8 - y_1 + y_2  = 3  \quad    
-    \Longrightarrow  \quad   \begin{bmatrix}
+    \Longrightarrow  \quad   \begin{pmatrix}
 y_1\\y_2\\y_3
-\end{bmatrix} =
-\begin{bmatrix}
+\end{pmatrix} =
+\begin{pmatrix}
 2 \\ -3 \\ 3
-\end{bmatrix}.
+\end{pmatrix}.
 \end{array}
 $$
 
@@ -156,29 +156,29 @@ $$
 Next we solve 
 
 $$
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 1 & -1 \\
 0 & 2 & -1 \\
 0 & 0 & -3
-\end{bmatrix} 
-\begin{bmatrix}
+\end{pmatrix} 
+\begin{pmatrix}
 x_1\\ x_2 \\ x_3
-\end{bmatrix} =
-\begin{bmatrix}
+\end{pmatrix} =
+\begin{pmatrix}
 2 \\ -3 \\ 3
-\end{bmatrix},
+\end{pmatrix},
 $$
 
 with back substitution.  This gives the solution
 
 $$
-\begin{bmatrix}
+\begin{pmatrix}
 x_1 \\ x_2 \\ x_3
-\end{bmatrix} 
+\end{pmatrix} 
 = 
-\begin{bmatrix}
+\begin{pmatrix}
 3\\ -2 \\ -1
-\end{bmatrix},
+\end{pmatrix},
 $$
 
 which is the solution to our original system. Since the factorisation was given, we did not have to solve the system from scratch by trying to find an echelon form.
@@ -222,24 +222,24 @@ where $L$ is  an $n\times n$ lower triangular matrix with $1$s on the diagonal, 
 
 $$
 L=
-\begin{bmatrix}
+\begin{pmatrix}
 1\\
 l_{21} & 1 \\
 l_{31} & l_{32} & \ddots  \\
 \vdots & \vdots & \ddots & \ddots\\
 l_{n1} & l_{n2} &  \cdots & l_{n,n-1} & 1
-\end{bmatrix}
+\end{pmatrix}
 ,
 \quad
 U=
-\begin{bmatrix}
+\begin{pmatrix}
 u_{11} & u_{12} & u_{13} & \cdots &u_{1n} \\
        & u_{22} & u_{23} & \cdots & u_{2n} \\
        & & u_{33} & \cdots & u_{3n} \\
       & &  &
 \ddots & \vdots \\
 & & & & u_{nn}
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 For convenience we have used blanks for zeros.
@@ -289,11 +289,11 @@ We consider the matrix
 
 $$
 A=
-\begin{bmatrix}
+\begin{pmatrix}
 3 & 1 & -2 \\
 2 & 4 & 1 \\
 1 & 2 & 1
-\end{bmatrix}
+\end{pmatrix}
 .
 $$
 
@@ -302,17 +302,17 @@ For the first step,
 
 $$
 
-\left[\begin{array}{rrr}3 & 1 & -2\\2 & 4 & 1\\1 & 2 & 1\end{array} \right]  \begin{array}{l}
+\left(\begin{array}{rrr}3 & 1 & -2\\2 & 4 & 1\\1 & 2 & 1\end{array} \right)  \begin{array}{l}
 [R_1] \\
 {[R_2-2/3R_1]} \\
 {[R_3-1/3R_1]} \\
 \end{array}
 \quad\sim\quad
-\begin{bmatrix}
+\begin{pmatrix}
 3 & 1 & -2 \\
 0 & {10}/{3} & {7}/{3} \\
 0 & {5}/{3} & {5}/{3}
-\end{bmatrix} = A_2.
+\end{pmatrix} = A_2.
 $$
 
 The numbers $2/3$ and $1/3$ are called *multipliers*.
@@ -321,38 +321,38 @@ A second row reduction step, involving the multiplier $1/2$,  leads to an echelo
 
 $$
 
-\left[\begin{array}{rrr}3 & 1 & -2\\0 &{10}/{3}&{7}/{3}\\0 &{5}/{3}&{5}/{3}\end{array} \right]  \begin{array}{l}
+\left(\begin{array}{rrr}3 & 1 & -2\\0 &{10}/{3}&{7}/{3}\\0 &{5}/{3}&{5}/{3}\end{array} \right)  \begin{array}{l}
 [R_1] \\
 {[R_2]} \\
 {[R_3-1/2R_2]} \\
 \end{array}\sim
-\begin{bmatrix}
+\begin{pmatrix}
 3 & 1 & -2 \\
 0 & {10}/{3} & {7}/{3} \\
 0 & 0 & {1}/{2} 
-\end{bmatrix} = A_3.
+\end{pmatrix} = A_3.
 $$
 
 We can effectuate these row operations by  matrix multiplications.
 
 $$
   A_2 = F_1A = 
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 0 & 0 \\
 -2/3 & 1 & 0 \\
 -1/3 & 0 & 1
-\end{bmatrix}
-\begin{bmatrix}
+\end{pmatrix}
+\begin{pmatrix}
 3 & 1 & -2 \\
 2 & 4 & 1 \\
 1 & 2 & 1
-\end{bmatrix}
+\end{pmatrix}
 =
-\begin{bmatrix}
+\begin{pmatrix}
 3 & 1 & -2 \\
 0 & {10}/{3} & {7}/{3} \\
 0 & {5}/{3} & {5}/{3}
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 In the same way the second row reduction step can be described by
@@ -360,21 +360,21 @@ In the same way the second row reduction step can be described by
 
 $$
   A_3 = F_2A_2 = 
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 0 & 0 \\
 0 & 1 & 0 \\
 0 & -1/2 & 1
-\end{bmatrix}
-\begin{bmatrix}
+\end{pmatrix}
+\begin{pmatrix}
 3 & 1 & -2 \\
 0 & {10}/{3} & {7}/{3} \\
 0 & {5}/{3} & {5}/{3}
-\end{bmatrix} =
-\begin{bmatrix}
+\end{pmatrix} =
+\begin{pmatrix}
 3 & 1 & -2 \\
 0 & {10}/{3} & {7}/{3} \\
 0 & 0 & {1}/{2}
-\end{bmatrix}.
+\end{pmatrix}.
 
 $$
 
@@ -382,11 +382,11 @@ The echelon matrix $A_3$ can act as our upper triangular matrix $U$, and the abo
 can be summarized as
 
 $$
-  U = A_3 = F_2F_1A = FA = \begin{bmatrix}
+  U = A_3 = F_2F_1A = FA = \begin{pmatrix}
 1 & 0 & 0 \\
 -2/3 &     1       & 0 \\
 0 & -1/2 & 1
-\end{bmatrix}
+\end{pmatrix}
 A,
 $$
 where $F = F_2F_1$.
@@ -394,16 +394,16 @@ where $F = F_2F_1$.
 We conclude that 
 
 $$
-  A = F^{-1} U =   \begin{bmatrix}
+  A = F^{-1} U =   \begin{pmatrix}
 1 & 0 & 0 \\
 2/3 & 1 & 0 \\
 1/3 & 1/2 & 1
-\end{bmatrix} 
-  \begin{bmatrix}
+\end{pmatrix} 
+  \begin{pmatrix}
                       3 & 1 & -2 \\
                       0 & {10}/{3} & {7}/{3} \\
                       0 & 0 & {1}/{2}
-\end{bmatrix}
+\end{pmatrix}
 
 $$
 
@@ -421,13 +421,13 @@ Suppose the $n\times n$ matrix $A$ can be row reduced top-down to the echelon ma
 
 $$
    A = LU, \quad \text{for} \,\,
-   L = \begin{bmatrix}
+   L = \begin{pmatrix}
 1\\
 m_{21} & 1 \\
 m_{31} & m_{32} & \ddots  \\
 \vdots & \vdots & \ddots & \ddots\\
 m_{n1} & m_{n2} &  \cdots & m_{n,n-1} & 1
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 
@@ -440,48 +440,48 @@ Another look at  {prf:ref}`Ex:LUdecomp:SecondLU` explains why the detour via the
 ::::::{prf:example}
 :label: Ex:LUdecomp:SecondLUSecondLook
 
-For the matrix $A= \begin{bmatrix}
+For the matrix $A= \begin{pmatrix}
                     3 & 1 & -2 \\
                     2 & 4 & 1 \\
                     1 & 2 & 1
-                  \end{bmatrix}$, the same as in {prf:ref}`Ex:LUdecomp:SecondLU`, the 'trick' is not to work with the matrices $F_1$ and $F_2$, but with their inverses.
+                  \end{pmatrix}$, the same as in {prf:ref}`Ex:LUdecomp:SecondLU`, the 'trick' is not to work with the matrices $F_1$ and $F_2$, but with their inverses.
 
 The first row reduction step
 
 $$
   A_2 = F_1A = 
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 0 & 0 \\
 -2/3 & 1 & 0 \\
 -1/3 & 0 & 1
-\end{bmatrix}
-\begin{bmatrix}
+\end{pmatrix}
+\begin{pmatrix}
 3 & 1 & -2 \\
 2 & 4 & 1 \\
 1 & 2 & 1
-\end{bmatrix}
+\end{pmatrix}
 =
-\begin{bmatrix}
+\begin{pmatrix}
 3 & 1 & -2 \\
 0 & {10}/{3} & {7}/{3} \\
 0 & {5}/{3} & {5}/{3}
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 can be rewritten as
 
 $$
    A = F_1^{-1}A_2 = L_1A_2 = 
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 0 & 0 \\
 2/3 & 1 & 0 \\
 1/3 & 0 & 1
-\end{bmatrix}
-\begin{bmatrix}
+\end{pmatrix}
+\begin{pmatrix}
 3 & 1 & -2 \\
 0 & {10}/{3} & {7}/{3} \\
 0 & {5}/{3} & {5}/{3}
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 
@@ -489,21 +489,21 @@ Likewise the second row reduction step
 
 $$
   A_3 = F_2A_2 = 
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 0 & 0 \\
 0 & 1 & 0 \\
 0 & -1/2 & 1
-\end{bmatrix}
-\begin{bmatrix}
+\end{pmatrix}
+\begin{pmatrix}
 3 & 1 & -2 \\
 0 & {10}/{3} & {7}/{3} \\
 0 & {5}/{3} & {5}/{3}
-\end{bmatrix} =
-\begin{bmatrix}
+\end{pmatrix} =
+\begin{pmatrix}
 3 & 1 & -2 \\
 0 & {10}/{3} & {7}/{3} \\
 0 & 0 & {1}/{2}
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 can be can be represented as  
@@ -511,16 +511,16 @@ can be can be represented as
 
 $$
 A_2 = F_2^{-1}A_3 = L_2U = 
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 0 & 0 \\
 0 & 1 & 0 \\
 0 & 1/2 & 1
-\end{bmatrix}
-\begin{bmatrix}
+\end{pmatrix}
+\begin{pmatrix}
 3 & 1 & -2 \\
 0 & {10}/{3} & {7}/{3} \\
 0 & {5}/{3} & {5}/{3}
-\end{bmatrix}.
+\end{pmatrix}.
 
 $$
 
@@ -528,16 +528,16 @@ Combining the two equations gives
 
 $$
   A = L_2L_1U = LU = 
-  \begin{bmatrix}
+  \begin{pmatrix}
     1 & 0 & 0 \\
     2/3 & 1 & 0 \\
     1/3 & 1/2 & 1  
-  \end{bmatrix}
-  \begin{bmatrix}
+  \end{pmatrix}
+  \begin{pmatrix}
     3 & 1 & -2 \\
     0 & {10}/{3} & {7}/{3} \\
     0 & 0 & {1}/{2}
-  \end{bmatrix}.
+  \end{pmatrix}.
 $$
 
 We see the multipliers nicely fall into place!
@@ -548,12 +548,12 @@ Here is an example where we apply the algorithm without further ado to a $4 \tim
 
 ::::::{prf:example} 
 :label: Ex:LUdecomp:LUviaAlgorithm
-We use the $LU$-algorithm for the matrix  $A = \begin{bmatrix}
+We use the $LU$-algorithm for the matrix  $A = \begin{pmatrix}
                                             2 & 1 & -2 & 3 \\
                                             2 & -3 & -4 & 7 \\
                                             -4 & 0 & -2 & -5 \\ 
                                             -6 & -1 & 8 & -8
-                                        \end{bmatrix}.$
+                                        \end{pmatrix}.$
 
 We row reduce the matrix $A$  top-down, diligently registering the multipliers.
 Recall that the multiplier $m_{jk}$ is  defined as the multiple of row $k$ that is *subtracted* from row $j$ in the $k$-th step of the reduction process.
@@ -561,22 +561,22 @@ Recall that the multiplier $m_{jk}$ is  defined as the multiple of row $k$ that 
 Here we go:
 
 $$ 
-\left[\begin{array}{rrrr}
+\left(\begin{array}{rrrr}
             2 &  1 & -2 &  3 \\
             2 & -3 & -4 &  7 \\
            -4 &  0 &  2 & -5 \\ 
-            6 &  1 & -8 &  8\end{array} \right]  \begin{array}{l}
+            6 &  1 & -8 &  8\end{array} \right)  \begin{array}{l}
 [R_1] \\ 
 {[R_2-\class{red}{1}R_1]} \\
 {[R_3-\class{red}{(-2)}R_1]} \\
 {[R_4-\class{red}{3}R_1]} \\
 \end{array}
 \sim 
-\left[\begin{array}{rrrr}
+\left(\begin{array}{rrrr}
             2 &  1 & -2 & 3 \\
             0 & -4 & -2 & 4 \\
             0 &  2 &  -2 & 1 \\ 
-            0 & -2 & -2 &-1\end{array} \right]  \begin{array}{l}
+            0 & -2 & -2 &-1\end{array} \right)  \begin{array}{l}
 [R_1] \\
 [R_2] \\
 {[R_3-\class{blue}{(-1/2)}R_2]} \\
@@ -586,36 +586,36 @@ $$
 
 $$
 \sim
-  \left[\begin{array}{rrrr}
+  \left(\begin{array}{rrrr}
             2 &  1 & -2 & 3 \\
             0 & -4 & -2 & 4 \\
             0 &  0 & -3 & 3 \\ 
             0 &  0 & -1 & -3
-  \end{array} \right]  \begin{array}{l}
+  \end{array} \right)  \begin{array}{l}
 [R_1] \\
 [R_2] \\
 {[R_3]} \\
 {[R_4-\class{green}{1/3}R_2]} \\
 \end{array} 
 \,\,\sim\,\,
-    \left[\begin{array}{rrrr}
+    \left(\begin{array}{rrrr}
             2 &  1 & -2 & 3 \\
             0 & -4 & -2 & 4 \\
             0 &  0 & -3 & 3 \\ 
             0 &  0 & 0 & -4
-    \end{array} \right]
+    \end{array} \right)
 \,\,=\,\, U.
 $$
 
 Putting every multiplier in its right place gives 
 
 $$
-   L = \left[\begin{array}{rrrr}
+   L = \left(\begin{array}{rrrr}
                     1       &       0 & 0 & 0 \\
             \class{red}{1}  &       1 & 0 & 0 \\
             \class{red}{-2} &  \class{blue}{-1/2} & 1 & 0 \\ 
             \class{red}{3}  &  \class{blue}{1/2} & \class{green}{1/3} & 1
-        \end{array} \right].
+        \end{array} \right).
 $$
 
 ::::::
@@ -624,29 +624,29 @@ $$
 ::::::{prf:example}
 :label: Ex:LUdecomp:NoLU
 
-For the matrix $A= \begin{bmatrix}
+For the matrix $A= \begin{pmatrix}
                     1 & 2 & 1 \\
                     4 & 8 & 6 \\
                     2 & 5 & 7
-                  \end{bmatrix}$
+                  \end{pmatrix}$
 the procedure breaks down at the second step.
 
 $$
-   \begin{bmatrix}
+   \begin{pmatrix}
                     1 & 2 & 1 \\
                     4 & 8 & 6 \\
                     2 & 5 & 7
-                  \end{bmatrix}
+                  \end{pmatrix}
                   \begin{array}{l}
                       [R_1] \\ 
                       {[R_2-4R_1]} \\ 
                       {[R_3-2R_1]} 
                   \end{array} \quad \sim \quad
-   \begin{bmatrix}
+   \begin{pmatrix}
                     1 & 2 & 1 \\
                     0 & 0 & 2 \\
                     0 & 1 & 5
-                  \end{bmatrix}. 
+                  \end{pmatrix}. 
 $$
 The next logical step towards an echelon matrix would be a row swap.  But then the lower triangular structure of $L$ will be broken.  In {numref}`Subsection %s <Subsec:LUdecomp:PLUdecomp>`  we will study what we can do in such a situation.
 
@@ -708,9 +708,9 @@ Let $A_{(k)}$ be the $k$th column of $A$, and $B^{(k)}$ the $k$th row of $B$.
 Then
 
 $$
-   A_{(k)} = \begin{bmatrix}0 \\ \vdots \\ 0 \\ a_{kk} \\ \vdots \\ a_{nk} \end{bmatrix} \quad
+   A_{(k)} = \begin{pmatrix}0 \\ \vdots \\ 0 \\ a_{kk} \\ \vdots \\ a_{nk} \end{pmatrix} \quad
    \text{and} \quad 
-    B^{(k)} = \begin{bmatrix}b_{k1} & \cdots &  b_{kk} & 0 & \cdots & 0 \end{bmatrix},
+    B^{(k)} = \begin{pmatrix}b_{k1} & \cdots &  b_{kk} & 0 & \cdots & 0 \end{pmatrix},
 $$
 
 where moreover  $a_{kk} = b_{kk} = 1$. So  the  $k$th term in the column-row expansion of $AB$ becomes
@@ -718,16 +718,16 @@ where moreover  $a_{kk} = b_{kk} = 1$. So  the  $k$th term in the column-row exp
 $$
 \begin{array}{rcl}
      A_{(k)}B^{(k)} &=&
-     \begin{bmatrix}b_{k1}A_{(k)} &  b_{k2}A_{(k)} &  \cdots &  b_{kk}A_{(k)} & \vect{0} & \cdots & \vect{0}\end{bmatrix} \\
+     \begin{pmatrix}b_{k1}A_{(k)} &  b_{k2}A_{(k)} &  \cdots &  b_{kk}A_{(k)} & \vect{0} & \cdots & \vect{0}\end{pmatrix} \\
      &=&
-     \begin{bmatrix}
+     \begin{pmatrix}
        0       &      0       & \cdots &        0    &    0      & \cdots &   0  \\
          \vdots   &     \vdots   &        & \vdots       &    \vdots      &  & \vdots \\
           0       &      0       & \cdots &     0       &   0       & \cdots  &   0    \\
       a_{kk}b_{k1} &  a_{kk}b_{k2} & \cdots & a_{kk}b_{kk} &    0    & \cdots &   0    \\
          \vdots   &     \vdots   &        &  \vdots     & \vdots  &        & \vdots \\
       a_{nk}b_{k1} &  a_{nk}b_{k2} & \cdots & a_{nk}b_{kk} &    0    & \cdots &   0  
-     \end{bmatrix}
+     \end{pmatrix}
   \end{array}.
 $$
 
@@ -739,14 +739,14 @@ Next suppose that $A$ is an lower triangular matrix with $1$s on the diagonal.
 If we apply the algorithm of {prf:ref}`Prop:MatrixInv:Algorithm` to find the inverse using the augmented matrix 
 
 $$
-  [\,A | I \,] = 
-  \left[\begin{array}{ccccc|ccccc}  
+  (\,A | I \,) = 
+  \left(\begin{array}{ccccc|ccccc}  
      1   &   0    &    0   & \cdots &   0  & 1 & 0 & 0 & \cdots & 0 \\
   a_{21} &   1    &    0   & \cdots &   0  & 0 & 1 & 0 & \cdots & 0 \\
   a_{31} & a_{32} &    1   & \cdots &   0  & 0 & 0 & 1 & \cdots & 0 \\
   \vdots &\vdots  &        & \ddots &   \vdots  & \vdots & \vdots & & \ddots & \vdots \\[1ex] 
   a_{n1} &a_{n2}  & a_{n3} & \cdots &   1  & 0 & 0 & 0 & \cdots & 1
-  \end{array} \right],
+  \end{array} \right),
 $$
 to row reduce $A$ to $I$ we only need to subtract multiples of rows from rows below it.  Thus in the matrix to the right of the bar, where the identity matrix is transformed into the inverse matrix of $A$,  the triangular structure with $1$s on the diagonal remains.
 
@@ -770,57 +770,57 @@ For instance the first two steps are
 
 
 $$
-  A  = \begin{bmatrix}
+  A  = \begin{pmatrix}
             a_{11} & a_{12}&  a_{13} & \ldots&   a_{1n}   \\
             a_{21} & a_{22}&   a_{23} & \ldots&   a_{2n}   \\
             a_{31} & a_{32}&   a_{33} & \ldots&   a_{3n}   \\
             \vdots &  \vdots&  \vdots& & \vdots    \\
             a_{n1} & a_{n2}&  a_{n3}& \ldots&   a_{nn}
-       \end{bmatrix} = L_1A_2 
+       \end{pmatrix} = L_1A_2 
    =
-   \begin{bmatrix}
+   \begin{pmatrix}
             1      &      \\
             m_{21} &   1      \\
             m_{31} &  0   &  1     \\
             \vdots &  \vdots&   &  \ddots    \\
             m_{n1} & 0   &  \ldots&  & 1
-    \end{bmatrix}A_2,
+    \end{pmatrix}A_2,
 $$
 
 where $A_2$ will be of the form
 
 $$
-  A_2 = \begin{bmatrix} a_{11} & a_{12} & a_{13} & \ldots & a_{1n} \\
+  A_2 = \begin{pmatrix} a_{11} & a_{12} & a_{13} & \ldots & a_{1n} \\
                           0    & \tilde{a}_{22} &  \tilde{a}_{23} &  \ldots &\tilde{a}_{2n} \\
                           0    &    \tilde{a}_{32}     &  \tilde{a}_{33} & \ldots &\tilde{a}_{3n} \\ 
                           \vdots & \vdots &  \vdots & & \vdots \\
                           0    &    \tilde{a}_{n2}    &  \tilde{a}_{n3} & \ldots &\tilde{a}_{nn} \\ 
-        \end{bmatrix}.
+        \end{pmatrix}.
 $$
 
 The next step will lead to
 
 $$
   A_2     = L_2A_3 = 
-   \begin{bmatrix}
+   \begin{pmatrix}
             1      &      \\
             0 & 1 &        \\ 
             0 &m_{32}   &  1     \\
             \vdots &  \vdots&  &   \ddots    \\
             0 & m_{n2} & 0   &  \ldots&  & 1
-    \end{bmatrix}A_3,
+    \end{pmatrix}A_3,
 $$
 
 
 where $A_3$ will be of the form
 
 $$
-  A_3 = \begin{bmatrix} a_{11} & a_{12} & a_{13} & \ldots & a_{1n} \\
+  A_3 = \begin{pmatrix} a_{11} & a_{12} & a_{13} & \ldots & a_{1n} \\
                           0    & \tilde{a}_{22} &  \tilde{a}_{23} &  \ldots &\tilde{a}_{2n} \\
                           0    &    0      &  \tilde{\tilde{a}}_{33} & \ldots &\tilde{\tilde{a}}_{3n} \\ 
                           \vdots & \vdots &  \vdots & & \vdots \\
                           0    &    0     &  \tilde{\tilde{a}}_{n3} & \ldots &\tilde{\tilde{a}}_{nn}
-        \end{bmatrix}.
+        \end{pmatrix}.
 $$
 
 We thus end up with a product
@@ -837,37 +837,37 @@ The crucial thing is that in the product $L_{n-1}L_{n-2}\cdots L_2L_1$  in this 
 :label: Eq:LUdecomp:multipliers
 
  \begin{array}{l} L = 
-  \begin{bmatrix} 1 & 0 & 0 & 0 \\
+  \begin{pmatrix} 1 & 0 & 0 & 0 \\
                   m_{21} & 1 & 0 & 0  \\
                   m_{31} & 0 & 1 & 0  \\
                   m_{41} & 0 & 0 & 1  
-        \end{bmatrix}
-  \begin{bmatrix} 1 & 0 & 0 & 0 \\
+        \end{pmatrix}
+  \begin{pmatrix} 1 & 0 & 0 & 0 \\
                   0 & 1 & 0 & 0   \\
                   0 & m_{32} & 1 &  0 \\
                   0 & m_{42} & 0 & 1  
-        \end{bmatrix}      
-  \begin{bmatrix} 1 & 0 & 0 & 0 \\
+        \end{pmatrix}      
+  \begin{pmatrix} 1 & 0 & 0 & 0 \\
                   0 & 1 & 0 & 0   \\
                   0 & 0 & 1 &  0 \\
                   0 & 0 & m_{43} & 1  
-        \end{bmatrix} = \\
+        \end{pmatrix} = \\
    =     
-   \begin{bmatrix} 1 & 0 & 0 & 0 \\
+   \begin{pmatrix} 1 & 0 & 0 & 0 \\
                   m_{21} & 1 & 0 & 0  \\
                   m_{31} & 0 & 1 & 0  \\
                   m_{41} & 0 & 0 & 1  
-        \end{bmatrix} 
-  \begin{bmatrix} 1 & 0 & 0 & 0 \\
+        \end{pmatrix} 
+  \begin{pmatrix} 1 & 0 & 0 & 0 \\
                   0 & 1 & 0 & 0   \\
                   0 & m_{32} & 1 &  0 \\
                   0 & m_{42} & m_{43} & 1  
-        \end{bmatrix}  =
-   \begin{bmatrix} 1 & 0 & 0 & 0 \\
+        \end{pmatrix}  =
+   \begin{pmatrix} 1 & 0 & 0 & 0 \\
                   m_{21} & 1 & 0 & 0  \\
                   m_{31} & m_{32} & 1 & 0  \\
                   m_{41} & m_{42} & m_{43} & 1  
-        \end{bmatrix}. 
+        \end{pmatrix}. 
   \end{array}                     
 
 ::::
@@ -880,20 +880,20 @@ To prove the converse, assume that $A$ has an $LU$ decomposition, i.e.,
 
 $$
   A =  LU = 
-     \left[\begin{array}{rrrrr}
+     \left(\begin{array}{rrrrr}
                     1       &        &  &  \\
             \ell_{21}  &       1 &  &  \\
             \ell_{31}   &  \ell_{32} & 1 &   \\ 
             \vdots & \vdots & \vdots &  \ddots & \\ 
             \ell_{n1}   &  \ell_{n2}&  \ell_{n3} & \cdots & 1 \\ 
-        \end{array} \right] \begin{bmatrix}
+        \end{array} \right) \begin{pmatrix}
 u_{11} & u_{12} & u_{13} & \cdots &u_{1n} \\
        & u_{22} & u_{23} & \cdots & u_{2n} \\
        & & u_{33} & \cdots & u_{3n} \\
       & &  &
 \ddots & \vdots \\
 & & & & u_{nn}
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 We then have to show that $A$ can be *top-down* row reduced to an echelon matrix.
@@ -901,41 +901,41 @@ We then have to show that $A$ can be *top-down* row reduced to an echelon matrix
 By {prf:ref}`Prop:LUdecomp:L-properties` the inverse of $L$ has the same structure as $L$, i.e.,
 
 $$
-L^{-1} = \left[\begin{array}{rrrrr}
+L^{-1} = \left(\begin{array}{rrrrr}
                     1       &        &  &  \\
             \ell^{\ast}_{21}  &       1 &  &  \\
             \ell^{\ast}_{31}   &  \ell^{\ast}_{32} & 1 &   \\ 
             \vdots & \vdots & \vdots &  \ddots & \\ 
             \ell^{\ast}_{n1}   &  \ell^{\ast}_{n2}&  \ell^{\ast}_{n3} & \cdots & 1 \\ 
-        \end{array} \right].
+        \end{array} \right).
 $$ 
 
 As in the proof of the first half of this proof (cf., {eq}`Eq:LUdecomp:multipliers`),  $L^{-1}$ can be factorized as       
 
 $$
   L_1L_2\cdots L_{n-1} =
-  \left[\begin{array}{rrrrr}
+  \left(\begin{array}{rrrrr}
                     1       &        &  &  \\
             \ell^{\ast}_{21}  &       1 &  &  \\
             \ell^{\ast}_{31}   &  0 & 1 &   \\ 
             \vdots & \vdots & \vdots &  \ddots & \\ 
             \ell^{\ast}_{n1}   &  0 &  0 & \cdots & 1 \\ 
-        \end{array} \right]
-  \left[\begin{array}{rrrrr} 
+        \end{array} \right)
+  \left(\begin{array}{rrrrr} 
               1       &        &  &  \\
               0     &       1 &  &  \\
               0 &  \ell^{\ast}_{32} & 1 &   \\ 
             \vdots & \vdots & \vdots &  \ddots & \\ 
               0 &  \ell^{\ast}_{n2}&  0 & \cdots & 1 \\ 
-        \end{array} \right] 
+        \end{array} \right)
         \cdots
-   \left[\begin{array}{ccccc}
+   \left(\begin{array}{ccccc}
               1     &        &  &  &\\
               0     &   1    &  &  &\\
               0     &   0    & 1 & &  \\ 
             \vdots  & \vdots & \vdots &  \ddots & \\ 
               0     &   0 &  \cdots & \ell^{\ast}_{n,n-1} & 1 \\ 
-        \end{array} \right]           
+        \end{array} \right)           
 $$
 
 Pre-multiplication of a matrix $M$ with one of the matrices  $L_k$  amounts to adding multiples of the $k$th row of $M$ to the lower rows. So the product $L_1L_2L_3\cdots L_{n-1}$ is a series of top-down operations,
@@ -1013,10 +1013,10 @@ Lastly we give an example to show that the uniqueness may fail for a singular ma
 ::::::{prf:example}
 :label: Eq:LUdecomp:NonUniqueLU
 
-For the matrix  $A = \begin{bmatrix} 1 & 1 & 1 \\ 2 & 2 & 2 \\ 3 & 3 & 3 \end{bmatrix}$ it holds that
+For the matrix  $A = \begin{pmatrix} 1 & 1 & 1 \\ 2 & 2 & 2 \\ 3 & 3 & 3 \end{pmatrix}$ it holds that
 
 $$
-   A = \begin{bmatrix} 1 & 0 & 0 \\ 2 & 1 & 0 \\ 3 & a & 1 \end{bmatrix}\begin{bmatrix} 1 & 1 & 1 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix},
+   A = \begin{pmatrix} 1 & 0 & 0 \\ 2 & 1 & 0 \\ 3 & a & 1 \end{pmatrix}\begin{pmatrix} 1 & 1 & 1 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix},
 $$
 
 where the parameter $a$ is free to choose.
@@ -1038,57 +1038,57 @@ The matrix $A$ is given by
 
 $$
 A =
-\begin{bmatrix}
+\begin{pmatrix}
 1  &  3 &  1 & -1 \\
 -1 &  1 &  1 &  2 \\
  2 & -2 & -1 &  3
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 We can row reduce $A$ top-down to an echelon matrix:
 
 $$
 \begin{array}{rcl}
-\begin{bmatrix}
+\begin{pmatrix}
 1  &  3 &  1 & -1 \\
 -1 &  1 &  1 &  2 \\
  2 & -2 & -1 &  3
-\end{bmatrix}
+\end{pmatrix}
 \begin{array}{l}
 [R_1] \\
 {[R_2-\class{blue}{(-1)}R_1]} \\
 {[R_3-\class{blue}{2}R_1]} \\
 \end{array}
 & \sim &
-\begin{bmatrix}
+\begin{pmatrix}
 1  &  3 &  1 & -1 \\
 0  &  4 &  2 &  1 \\
 0  & -8 & -3 &  5
-\end{bmatrix}
+\end{pmatrix}
 \begin{array}{l}
 [R_1] \\
 {[R_2]} \\
 {[R_3-\class{blue}{(-2)}R_2]} \\
 \end{array}\\
 &\sim&
-\begin{bmatrix}
+\begin{pmatrix}
 1  &  3 &  1 & -1 \\
 0  &  4 &  2 &  1 \\
 0  &  0 &  1 &  7
-\end{bmatrix}.
+\end{pmatrix}.
 \end{array}
 $$
 
 We then have
 
 $$
-  A = LU = \begin{bmatrix}
-1  &  0 & 0 \\ \class{blue}{-1} &  1 &  0  \\  \class{blue}{2} & \class{blue}{-2} & 1 \end{bmatrix}
-\begin{bmatrix}
+  A = LU = \begin{pmatrix}
+1  &  0 & 0 \\ \class{blue}{-1} &  1 &  0  \\  \class{blue}{2} & \class{blue}{-2} & 1 \end{pmatrix}
+\begin{pmatrix}
 1  &  3 &  1 & -1 \\
 0  &  4 &  2 &  1 \\
 0  &  0 &  1 &  7
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 ::::::
@@ -1109,49 +1109,49 @@ $$
 where
 
 $$
-  A = LU = \begin{bmatrix}
-1  &  0 & 0 \\ -1 &  1 &  0  \\  2 & -2 & 1 \end{bmatrix}
-\begin{bmatrix}
+  A = LU = \begin{pmatrix}
+1  &  0 & 0 \\ -1 &  1 &  0  \\  2 & -2 & 1 \end{pmatrix}
+\begin{pmatrix}
 1  &  3 &  1 & -1 \\
 0  &  4 &  2 &  1 \\
 0  &  0 &  1 &  7
-\end{bmatrix} \quad \text{and} \quad \vect{b} = \begin{bmatrix}2 \\ -2 \\ 5 \end{bmatrix}.
+\end{pmatrix} \quad \text{and} \quad \vect{b} = \begin{pmatrix}2 \\ -2 \\ 5 \end{pmatrix}.
 $$
 
 
 First we solve  the system
 
 $$
-  L\vect{y} = \begin{bmatrix}
-1  &  0 & 0 \\ -1 &  1 &  0  \\  2 & -2 & 1 \end{bmatrix}\vect{y} =
-  \begin{bmatrix}2 \\ -2 \\ 5 \end{bmatrix}.
+  L\vect{y} = \begin{pmatrix}
+1  &  0 & 0 \\ -1 &  1 &  0  \\  2 & -2 & 1 \end{pmatrix}\vect{y} =
+  \begin{pmatrix}2 \\ -2 \\ 5 \end{pmatrix}.
 $$
 
 Using forward substitution we find the solution
 
 $$
-  \tilde{\vect{y}} = \begin{bmatrix}2 \\ 0 \\ 1 \end{bmatrix} 
+  \tilde{\vect{y}} = \begin{pmatrix}2 \\ 0 \\ 1 \end{pmatrix} 
 $$
 
 and then the system
 
 $$
-  U\vect{x} = \begin{bmatrix}
+  U\vect{x} = \begin{pmatrix}
 1  &  3 &  1 & -1 \\
 0  &  4 &  2 &  1 \\
-0  &  0 &  1 &  7\end{bmatrix}\vect{x} = 
-   \begin{bmatrix}2 \\ 0 \\ 1 \end{bmatrix}
+0  &  0 &  1 &  7\end{pmatrix}\vect{x} = 
+   \begin{pmatrix}2 \\ 0 \\ 1 \end{pmatrix}
 $$
 
 gives the solution(s)
 
 $$
-  \vect{x} = \begin{bmatrix}
+  \vect{x} = \begin{pmatrix}
     \tfrac52 -\tfrac{7}{4}x_4\\
     -\tfrac12 +\tfrac{13}{4}x_4\\
      1 - 7x_4\\
      x_4
-  \end{bmatrix}, \quad  x_4 \,\, \text{free.}
+  \end{pmatrix}, \quad  x_4 \,\, \text{free.}
 $$
 
 ::::::
@@ -1168,12 +1168,12 @@ An $m\times n$ matrix $A$, with $m \leq n$ can be written as $A = LU$, with
 
 <li>
 
-$L =  \begin{bmatrix} 1 &   \\
+$L =  \begin{pmatrix} 1 &   \\
                   \ell_{21} & 1 &  \\
                   \ell_{31} & \ell_{32} & 1   \\
                    \vdots  & \vdots & \vdots & \ddots &  \\
                   \ell_{m1} & \ell_{m2} & \ell_{m3} & \cdots & 1  
-        \end{bmatrix}$,
+        \end{pmatrix}$,
         
  
 
@@ -1188,13 +1188,13 @@ and
 <ul>
 <li>
 
-$U =\begin{bmatrix}
+$U =\begin{pmatrix}
 u_{11} & u_{12} & u_{13} & \cdots &u_{1m} & \cdots & u_{1n}  \\
       & u_{22} & u_{23} & \cdots & u_{2m} & \cdots & u_{2n} \\
       &      & u_{33} & \cdots & u_{3m} & \cdots & u_{3n} \\
       &      &        &  \ddots & \vdots \\
       &      &        &         & u_{mm} & \cdots & u_{mn} 
-\end{bmatrix}$  &nbsp;  an echelon matrix
+\end{pmatrix}$  &nbsp;  an echelon matrix
 
 </li>
 
@@ -1220,49 +1220,49 @@ Let us return to {prf:ref}`Ex:LUdecomp:NoLU` where the matrix $A$  cannot be wri
 We copy from there
 
 $$
-   A \,=\, \begin{bmatrix}
+   A \,=\, \begin{pmatrix}
                     1 & 2 & 1 \\
                     4 & 8 & 6 \\
                     2 & 5 & 7
-                  \end{bmatrix}               
+                  \end{pmatrix}               
                   \begin{array}{l}
                       [R_1] \\ 
                       {[R_2-4R_1]} \\ 
                       {[R_3-2R_1]} 
                   \end{array} \quad \sim \quad
-   \begin{bmatrix}
+   \begin{pmatrix}
                     1 & 2 & 1 \\
                     0 & 0 & 2 \\
                     0 & 1 & 5
-                  \end{bmatrix}. 
+                  \end{pmatrix}. 
 $$
 
 We need a row swap to bring the last matrix to echelon form.  The key idea is to **perform all the row exchanges first** and **then add multiples of  rows (top-down) to other rows** to obtain an echelon form.  
 Here the one row exchange, swapping row 2 and row 3,  is captured by the matrix
 
 $$
-   P = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & 1 & 0  \end{bmatrix}.
+   P = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & 1 & 0  \end{pmatrix}.
 $$
 
 
 We get
 
 $$
-   PA \,=\, \begin{bmatrix}
+   PA \,=\, \begin{pmatrix}
                     1 & 2 & 1 \\
                     2 & 5 & 7 \\
                     4 & 8 & 6
-                  \end{bmatrix}  \,\, = \,\, 
-             \begin{bmatrix}
+                  \end{pmatrix}  \,\, = \,\, 
+             \begin{pmatrix}
                     1 & 0 & 0 \\
                     2 & 1 & 0 \\
                     4 & 0 & 1
-                  \end{bmatrix}\,      
-             \begin{bmatrix}
+                  \end{pmatrix}\,      
+             \begin{pmatrix}
                     1 & 2 & 1 \\
                     0 & 1 & 5 \\
                     0 & 0 & 2
-                  \end{bmatrix}.       
+                  \end{pmatrix}.       
 $$
 
 
@@ -1295,47 +1295,47 @@ Two $4\times 4$ permutation matrices are
 ::::{math}
 :label: Eq:LUdecomp:P1andP2
 
-  P_1 = \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 
-          \end{bmatrix} \quad \text{and} \quad 
-  P_2 = \begin{bmatrix} 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 
-           \end{bmatrix}
+  P_1 = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 
+          \end{pmatrix} \quad \text{and} \quad 
+  P_2 = \begin{pmatrix} 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 
+           \end{pmatrix}
 ::::
 
 Note that for an arbitrary $4 \times 4$ matrix $A$ we have
 
 $$
-  P_1 A = \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ \class{blue}{0} & \class{blue}{0} & \class{blue}{0} & \class{blue}{1} \\ \class{red}{0} & \class{red}{0} & \class{red}{1} & \class{red}{0} 
-          \end{bmatrix}
-        \begin{bmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\ a_{21} & a_{22} & a_{23} & a_{24} \\ 
+  P_1 A = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ \class{blue}{0} & \class{blue}{0} & \class{blue}{0} & \class{blue}{1} \\ \class{red}{0} & \class{red}{0} & \class{red}{1} & \class{red}{0} 
+          \end{pmatrix}
+        \begin{pmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\ a_{21} & a_{22} & a_{23} & a_{24} \\ 
                         \class{red}{a_{31}} & \class{red}{a_{32}} & \class{red}{a_{33}} & \class{red}{a_{34}} \\ 
                         \class{blue}{a_{41}} & \class{blue}{a_{42}} & 
                         \class{blue}{a_{43}} & \class{blue}{a_{44}}
-          \end{bmatrix}   =
-        \begin{bmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\ a_{21} & a_{22} & a_{23} & a_{24} \\ 
+          \end{pmatrix}   =
+        \begin{pmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\ a_{21} & a_{22} & a_{23} & a_{24} \\ 
                         \class{blue}{a_{41}} & \class{blue}{a_{42}} & 
                         \class{blue}{a_{43}} & \class{blue}{a_{44}} \\ 
                         \class{red}{a_{31}} & \class{red}{a_{32}} & \class{red}{a_{33}} & \class{red}{a_{34}} 
-          \end{bmatrix}   
+          \end{pmatrix}   
 $$
 
 and
 
 $$
-  P_2 A = \begin{bmatrix} \class{blue}{0} & \class{blue}{1} & \class{blue}{0} & \class{blue}{0} \\ \class{red}{0} & \class{red}{0} & \class{red}{1} & \class{red}{0} \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 
-            \end{bmatrix} 
-          \begin{bmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\ 
+  P_2 A = \begin{pmatrix} \class{blue}{0} & \class{blue}{1} & \class{blue}{0} & \class{blue}{0} \\ \class{red}{0} & \class{red}{0} & \class{red}{1} & \class{red}{0} \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 
+            \end{pmatrix} 
+          \begin{pmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\ 
                           \class{blue}{a_{21}} & \class{blue}{a_{22}} & 
                           \class{blue}{a_{23}} & \class{blue}{a_{24}} \\ 
                           \class{red}{a_{31}} & \class{red}{a_{32}} & 
                           \class{red}{a_{33}} & \class{red}{a_{34}} \\ 
                           a_{41} & a_{42} & a_{43} & a_{44}
-            \end{bmatrix}   = 
-          \begin{bmatrix} \class{blue}{a_{21}} & \class{blue}{a_{22}} & 
+            \end{pmatrix}   = 
+          \begin{pmatrix} \class{blue}{a_{21}} & \class{blue}{a_{22}} & 
                           \class{blue}{a_{23}} & \class{blue}{a_{24}} \\ 
                           \class{red}{a_{31}} & \class{red}{a_{32}} & 
                           \class{red}{a_{33}} & \class{red}{a_{34}} \\ 
                           a_{41} & a_{42} & a_{43} & a_{44} \\a_{11} & a_{12} & a_{13} & a_{14}
-            \end{bmatrix}  
+            \end{pmatrix}  
 $$
 
 In general (pre-)multiplication of a matrix $A$ with any permutation matrix reorders the rows of $A$. 
@@ -1373,25 +1373,25 @@ And the interested reader may open the proof below it.
 For the matrices $P_1$ and $P_2$ from {eq}`Eq:LUdecomp:P1andP2`  we have
 
 $$
-  P_1P_2 = \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 
-          \end{bmatrix}  
-           \begin{bmatrix} 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 
-           \end{bmatrix}
+  P_1P_2 = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 
+          \end{pmatrix}  
+           \begin{pmatrix} 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 
+           \end{pmatrix}
            =
-           \begin{bmatrix} 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 
-           \end{bmatrix}
+           \begin{pmatrix} 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 
+           \end{pmatrix}
 $$
 
 and
 
 $$
-  P_2^TP_2 = \begin{bmatrix} 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 
-            \end{bmatrix}  
-             \begin{bmatrix} 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 
-           \end{bmatrix}
+  P_2^TP_2 = \begin{pmatrix} 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 
+            \end{pmatrix}  
+             \begin{pmatrix} 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 
+           \end{pmatrix}
            =
-             \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\  0 & 0 & 0 & 1 
-           \end{bmatrix}.
+             \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\  0 & 0 & 0 & 1 
+           \end{pmatrix}.
 $$
 
 Note that from the second identity it follows that  $P_2^{-1} = P_2^T$.
@@ -1456,22 +1456,22 @@ in another order than top-down to echelon form. It is a tiny example to illustra
 ::::::{prf:example}
 :label: Ex:LUdecomp:PLUexample-2
 
-We will row reduce the matrix $ A= \begin{bmatrix}2&4&3 \\ 1&2&3\\1&3&2 \end{bmatrix}$ in an alternative order than top-down and extricate a $PLU$ decomposition from it.
+We will row reduce the matrix $ A= \begin{pmatrix}2&4&3 \\ 1&2&3\\1&3&2 \end{pmatrix}$ in an alternative order than top-down and extricate a $PLU$ decomposition from it.
 
 $$
-\left[\begin{array}{rrr}2&4&3 \\ 1&2&3\\ \fbox{$1$}&3&2 \end{array} \right]  \begin{array}{l}
+\left(\begin{array}{rrr}2&4&3 \\ 1&2&3\\ \fbox{$1$}&3&2 \end{array} \right)  \begin{array}{l}
 [R_1-\class{blue}{2}R_3] \\
 {[R_2-\class{blue}{1}R_3]} \\
 {[R_3]} \\
 \end{array}
 \sim
-\left[\begin{array}{rrr}0&\fbox{$-2$}&-1 \\ 0 & -1 &1 \\ 1&3&2\end{array} \right]  \begin{array}{l}
+\left(\begin{array}{rrr}0&\fbox{$-2$}&-1 \\ 0 & -1 &1 \\ 1&3&2\end{array} \right)  \begin{array}{l}
 [R_1] \\
 {[R_2-\class{red}{\frac12}R_1]} \\
 {[R_3]} \\
 \end{array}
 \sim
-\left[\begin{array}{rrr}0&-2&-1 \\ 0 & 0 &\fbox{$\frac32$} \\ 1&3&2\end{array} \right],
+\left(\begin{array}{rrr}0&-2&-1 \\ 0 & 0 &\fbox{$\frac32$} \\ 1&3&2\end{array} \right),
 $$
 
 where we have put boxes at the pivot positions.
@@ -1481,35 +1481,35 @@ If we put together the matrices that describe the row operations we get
 :::{math} 
 :label: Eq:LUdecomp:PivotStructure
 
- A = \begin{bmatrix}2&\fbox{$4$}&3 \\ 1&2&\fbox{$3$}\\ \fbox{$1$}&3&2\end{bmatrix} =
-     \begin{bmatrix} 1 & 0 & \class{blue}{2} \\ \class{red}{\frac12} &1 & \class{blue}{1} \\ 0 & 0 & 1\end{bmatrix}
-     \begin{bmatrix} 0 & -2 & -1 \\ 0 & 0 &\frac32  \\1 & 3 & 2\end{bmatrix} = \tilde{L}\tilde{U}.
+ A = \begin{pmatrix}2&\fbox{$4$}&3 \\ 1&2&\fbox{$3$}\\ \fbox{$1$}&3&2\end{pmatrix} =
+     \begin{pmatrix} 1 & 0 & \class{blue}{2} \\ \class{red}{\frac12} &1 & \class{blue}{1} \\ 0 & 0 & 1\end{pmatrix}
+     \begin{pmatrix} 0 & -2 & -1 \\ 0 & 0 &\frac32  \\1 & 3 & 2\end{pmatrix} = \tilde{L}\tilde{U}.
 
 :::
 
 If we would have started from
 
 $$
-  \begin{bmatrix} 1&3&2 \\2&4&3 \\ 1&2&3\end{bmatrix} = PA = 
-   \begin{bmatrix} 0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0\end{bmatrix} 
-   \begin{bmatrix} 2&4&3 \\ 1&2&3\\1&3&2 \end{bmatrix}
+  \begin{pmatrix} 1&3&2 \\2&4&3 \\ 1&2&3\end{pmatrix} = PA = 
+   \begin{pmatrix} 0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0\end{pmatrix} 
+   \begin{pmatrix} 2&4&3 \\ 1&2&3\\1&3&2 \end{pmatrix}
 $$
 
 using the same pivots would have arrived at
 
 $$
-  \begin{bmatrix} 1&3&2 \\2&4&3 \\ 1&2&3\end{bmatrix} \sim 
-  \begin{bmatrix} 1&3&2 \\0&-2&-1 \\ 0&-1&1\end{bmatrix} \sim
-  \begin{bmatrix} 1&3&2 \\0&-2&-1 \\ 0&0&\frac32\end{bmatrix}, 
+  \begin{pmatrix} 1&3&2 \\2&4&3 \\ 1&2&3\end{pmatrix} \sim 
+  \begin{pmatrix} 1&3&2 \\0&-2&-1 \\ 0&-1&1\end{pmatrix} \sim
+  \begin{pmatrix} 1&3&2 \\0&-2&-1 \\ 0&0&\frac32\end{pmatrix}, 
 $$
 
 so
 
 $$
-  PA = \begin{bmatrix} 1&3&2 \\2&4&3 \\ 1&2&3\end{bmatrix}  =
-  \begin{bmatrix} 1 & 0 & 0 \\\class{blue}{2} & 1 & 0 \\ 
-                  \class{blue}{1} & \class{red}{\frac12} & 1\end{bmatrix} 
-  \begin{bmatrix} 1&3&2 \\0&-2&-1 \\ 0&0&\frac32\end{bmatrix} = LU. 
+  PA = \begin{pmatrix} 1&3&2 \\2&4&3 \\ 1&2&3\end{pmatrix}  =
+  \begin{pmatrix} 1 & 0 & 0 \\\class{blue}{2} & 1 & 0 \\ 
+                  \class{blue}{1} & \class{red}{\frac12} & 1\end{pmatrix} 
+  \begin{pmatrix} 1&3&2 \\0&-2&-1 \\ 0&0&\frac32\end{pmatrix} = LU. 
 $$
 
 The matrix $P$ is the inverse of (so also the transpose of) the matrix that describes the positions of the pivots as in Equation {eq}`Eq:LUdecomp:PivotStructure`. 
@@ -1629,7 +1629,7 @@ To be filled in later.
 One way to measure the performance of an algorithm is to count the number of arithmetic operations <!-- [^flopnote] -->
 that are necessary for solving a problem. By arithmetic operations we will take into account in this setting additions, multiplications and divisions. 
 
-Let us first compute this number when we solve the (square) linear system $A\mathbf{x}=\mathbf{b}$ by taking the augmented matrix $[ A | \vect{b}]$, find an echelon form and then use  backward substitution. Let us suppose that the matrix $A$ is invertible and possesses an $LU$ decomposition.
+Let us first compute this number when we solve the (square) linear system $A\mathbf{x}=\mathbf{b}$ by taking the augmented matrix $( A | \vect{b})$, find an echelon form and then use  backward substitution. Let us suppose that the matrix $A$ is invertible and possesses an $LU$ decomposition.
 
 In the worst-case scenario, for a $3\times 3$ matrix $A$, (so a $3\times 4$ augmented matrix), we need the following number of arithmetic operations:
 
@@ -1648,12 +1648,12 @@ Therefore, we need a total of $14$ arithmetic operations (8 products/divisions a
 The result:
 
 $$
-  \begin{bmatrix}a_{11} & a_{12} &a_{12} &b_{1} \\ a_{21} & a_{22} &a_{23} &b_{2} \\ a_{31} & a_{32} &a_{33} &b_{3} 
-  \end{bmatrix} \sim
-  \begin{bmatrix}a_{11} & a_{12} &a_{12} &b_{1} \\ 
+  \begin{pmatrix}a_{11} & a_{12} &a_{12} &b_{1} \\ a_{21} & a_{22} &a_{23} &b_{2} \\ a_{31} & a_{32} &a_{33} &b_{3} 
+  \end{pmatrix} \sim
+  \begin{pmatrix}a_{11} & a_{12} &a_{12} &b_{1} \\ 
   0 & a_{22}-m_{21}a_{12} &a_{23}-m_{21}a_{13} &b_{2}-m_{21}b_{1} \\ 
   0 & a_{32}-m_{31}a_{12} &a_{33}-m_{31}a_{13} &b_{3}-m_{31}a_{1} 
-  \end{bmatrix}  
+  \end{pmatrix}  
 $$
 
 <ul>
@@ -1733,7 +1733,7 @@ Suppose $A$ is an invertible $n\times n$ matrix and $\vect{b}$ an arbitrary vect
 :type: i
 
 \item Row reduction  of  $A$ to echelon form requires  $\frac23n^3-\frac12n^2-\frac16n$ (arithmetic) operations.
-\item  Row reduction of the augmented matrix  $[A | \vect{b}]$ to echelon form 
+\item  Row reduction of the augmented matrix  $(A | \vect{b})$ to echelon form 
 requires $\frac23n^3+\frac12n^2-\frac76n$  operations.
 \item  Solving a linear system  $L\vect{y} = \vect{b}$ for  an $n \times n$  lower triangular matrix $L$ with $1$s on the diagonal requires  $n(n-1)$ operations.
 \item Solving a linear system  $U\vect{x} = \vect{y}$ for  an $n \times n$  upper triangular matrix $U$  requires  $n^2$ operations.
@@ -1766,8 +1766,8 @@ arithmetic operations.
 
 ::::::{prf:remark}
 
-Note that first row reducing the augmented matrix $[A | \mathbf{b}]$ to echelon form 
-$[U | \tilde{\mathbf{b}}]$ and then solve  $U\mathbf{x} = \tilde{\mathbf{b}}$  by backward substituion
+Note that first row reducing the augmented matrix $(A | \mathbf{b})$ to echelon form 
+$(U | \tilde{\mathbf{b}})$ and then solve  $U\mathbf{x} = \tilde{\mathbf{b}}$  by backward substituion
 asks for the same number of arithmetic operations as first finding an $LU$-decomposition and then solve the two ensuing systems with forward and backward substition.  Specifically
 
 $$
@@ -1783,7 +1783,7 @@ $$
 
 
 \item Row reduction  of  $A$ to echelon form requires  $\frac23n^3-\frac12n^2\-\frac16n$ (arithmetic) operations
-\item Row reduction of the augmented matrix  $[A | \vect{b}]$ to echelon form requires $\frac23n^3+\frac32n^2\-\frac76n$  operations.
+\item Row reduction of the augmented matrix  $(A | \vect{b})$ to echelon form requires $\frac23n^3+\frac32n^2\-\frac76n$  operations.
 \item Solving linear system  $L\vect{y} = \vect{b}$ for  an $n \times n$  lower triangular matrix $L$ with $1$s on the diagonal requires  $n(n-1)$ operations.
 \item Solving linear system  $U\vect{y} = \vect{b}$ for  an $n \times n$  upper triangular matrix $L$ with $1$s on the diagonal requires  $n^2$ operations.
      
@@ -1892,13 +1892,13 @@ A **tridiagonal** matrix  $A$  is a band matrix of width 1.
 Three examples of band matrices are
 
 $$
-   A = \begin{bmatrix} 2 & 1 & 0 & 0 \\ 1 & 3 & 2 & 0\\ 0 & 2 & 5 & 4 \\ 0 & 0 & 6 & 5
-   \end{bmatrix}, \quad
-   B = \begin{bmatrix} 2 & 1 & 1 & 0 & 0 \\ 1 & 3 & 2 & 2 & 0\\ 1 & 2 & 1 & 4 & 3\\ 0 & 4  & 0 & 2 & 1 \\ 0 & 0 & 3 & 3 & 5
-   \end{bmatrix}
+   A = \begin{pmatrix} 2 & 1 & 0 & 0 \\ 1 & 3 & 2 & 0\\ 0 & 2 & 5 & 4 \\ 0 & 0 & 6 & 5
+   \end{pmatrix}, \quad
+   B = \begin{pmatrix} 2 & 1 & 1 & 0 & 0 \\ 1 & 3 & 2 & 2 & 0\\ 1 & 2 & 1 & 4 & 3\\ 0 & 4  & 0 & 2 & 1 \\ 0 & 0 & 3 & 3 & 5
+   \end{pmatrix}
    \quad \text{and}  \quad 
-   U = \begin{bmatrix}  1 & 1 & 0 & 0 \\ 0 & 2 & 2 & 0 \\ 0 & 0 & 3 & 4 \\ 0 & 0 & 0 & 5
-   \end{bmatrix}.
+   U = \begin{pmatrix}  1 & 1 & 0 & 0 \\ 0 & 2 & 2 & 0 \\ 0 & 0 & 3 & 4 \\ 0 & 0 & 0 & 5
+   \end{pmatrix}.
 $$
 
 $A$ is a tridiagonal matrix, matrix $B$ is a band matrix of width 2, and the third
@@ -1934,24 +1934,24 @@ One product  $A^{-1}\vect{b}$ involves $n^2$  products of numbers and $n(n-1)$ a
 To solve 
 
 $$
-   L\vect{y} = \begin{bmatrix}
+   L\vect{y} = \begin{pmatrix}
                  1  \\
                  \ell_{21} & 1 \\
                  0 &\ell_{32} & 1 \\                
                  0 & 0 & \ell_{32} & 1 \\[1ex]
                  \vdots & \vdots &  & \ddots &  \\[1ex]
                  0 & 0 & 0 & \cdots & \ell_{n,n-1} & 1
-             \end{bmatrix}
-             \begin{bmatrix}
+             \end{pmatrix}
+             \begin{pmatrix}
                 y_1 \\ y_2 \\ y_3 \\ y_4 \\[1ex] 
                 \vdots \\[1ex]
                 y_n
-             \end{bmatrix}
-             = \begin{bmatrix}
+             \end{pmatrix}
+             = \begin{pmatrix}
                 b_1 \\ b_2 \\ b_3 \\ b_4 \\[1ex] 
                 \vdots \\[1ex]
                b_n
-             \end{bmatrix}
+             \end{pmatrix}
 $$
 
 by forward substitution we  find one after another

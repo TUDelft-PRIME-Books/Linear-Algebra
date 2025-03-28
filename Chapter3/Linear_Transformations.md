@@ -62,37 +62,37 @@ As a first example consider the following.
 :label: Ex:LinTrafo:FirstMatrixTrafo
 
 The transformation corresponding to the matrix
-$A = \begin{bmatrix} 1 & 2 & 0\\ 1 & 2 & 1 \end{bmatrix}$ is defined by
+$A = \begin{pmatrix} 1 & 2 & 0\\ 1 & 2 & 1 \end{pmatrix}$ is defined by
 
 $$
    T_A(\mathbf{x}) =
-        \begin{bmatrix}
+        \begin{pmatrix}
             1 & 2 & 0\\ 1 & 2 & 1
-\end{bmatrix}\mathbf{x}.
+\end{pmatrix}\mathbf{x}.
 $$
 
 We have, for instance
 
 $$
-\begin{bmatrix}
+\begin{pmatrix}
         1 & 2 & 0\\ 1 & 2 & 1
-\end{bmatrix}
-\begin{bmatrix}
+\end{pmatrix}
+\begin{pmatrix}
        1\\1\\1
-\end{bmatrix} =
-\begin{bmatrix}
+\end{pmatrix} =
+\begin{pmatrix}
         3 \\ 4
-\end{bmatrix}
+\end{pmatrix}
    \quad \text{and} \quad
-\begin{bmatrix}
+\begin{pmatrix}
         1 & 2 & 0\\ 1 & 2 & 1
-\end{bmatrix}
-\begin{bmatrix}
+\end{pmatrix}
+\begin{pmatrix}
        2\\-1\\0
-\end{bmatrix} =
-\begin{bmatrix}
+\end{pmatrix} =
+\begin{pmatrix}
        0\\ 0
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 According to the definition of the matrix-vector product we can also write
@@ -100,24 +100,24 @@ According to the definition of the matrix-vector product we can also write
 :::{math}
 :label: Eq:LinTrafo:AxIsLinearCombination
 
-A\mathbf{x} = \begin{bmatrix}
+A\mathbf{x} = \begin{pmatrix}
 1 & 2 & 0\\ 1 & 2 & 1  
- \end{bmatrix}
-\begin{bmatrix}
+ \end{pmatrix}
+\begin{pmatrix}
 x_1\\x_2\\x_3  
- \end{bmatrix} =
+ \end{pmatrix} =
 x_1  
- \begin{bmatrix}
+ \begin{pmatrix}
 1\\ 1  
- \end{bmatrix}+
+ \end{pmatrix}+
 x_2  
- \begin{bmatrix}
+ \begin{pmatrix}
 2 \\ 2  
- \end{bmatrix}+
+ \end{pmatrix}+
 x_3  
- \begin{bmatrix}
+ \begin{pmatrix}
 0\\ 1  
- \end{bmatrix}.
+ \end{pmatrix}.
 
 :::
 
@@ -138,7 +138,7 @@ consists of all linear combinations of the three columns of $A$:
 
 $$
 \text{Range}(T_A) =
-\Span{ \begin{bmatrix} 1\\ 1   \end{bmatrix}, \begin{bmatrix} 2 \\  2  \end{bmatrix}, \begin{bmatrix} 0\\  1  \end{bmatrix}}.
+\Span{ \begin{pmatrix} 1\\ 1   \end{pmatrix}, \begin{pmatrix} 2 \\  2  \end{pmatrix}, \begin{pmatrix} 0\\  1  \end{pmatrix}}.
 $$
 
 In a later chapter ({numref}`Sec:SubspacesRn`, <FONT color ="#0076C2"> Subspaces of $\R^n$</FONT>) we will call this the **column space** of the matrix $A$.
@@ -153,9 +153,9 @@ The first example leads to a first property of matrix transformations:
 Suppose
 
 $$
-A = \begin{bmatrix}
+A = \begin{pmatrix}
  \mathbf{a}_1 & \mathbf{a}_2 & \ldots & \mathbf{a}_n
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 is an $m\times n$ matrix.
@@ -174,27 +174,27 @@ $$
 The matrix
 
 $$
- A = \begin{bmatrix}
+ A = \begin{pmatrix}
  1 & 0 \\ 0 & 1 \\ 0 & 0
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 leads to the transformation
 
 $$
  T: \mathbb{R}^2 \to \mathbb{R}^3, \quad
- T \left(\begin{bmatrix}
+ T \left(\begin{pmatrix}
         x \\ y
-\end{bmatrix}\right)=
-\begin{bmatrix}
+\end{pmatrix}\right)=
+\begin{pmatrix}
         1 & 0 \\ 0 & 1 \\ 0 & 0
-\end{bmatrix}
-\begin{bmatrix}
+\end{pmatrix}
+\begin{pmatrix}
         x \\ y
-\end{bmatrix}    =
-\begin{bmatrix}
+\end{pmatrix}    =
+\begin{pmatrix}
         x \\ y \\0
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 This transformation "embeds" the plane $\mathbb{R}^2$ into the space $\mathbb{R}^3$, as depicted in {numref}`Figure %s <Fig:LinTrafo:EmbedR2R3>`.
@@ -213,13 +213,13 @@ The range of this transformation is the span of the two vectors
 
 $$
    \mathbf{e}_1  =
-\begin{bmatrix}
+\begin{pmatrix}
  1\\ 0 \\ 0
-\end{bmatrix} \quad \text{and} \quad
+\end{pmatrix} \quad \text{and} \quad
     \mathbf{e}_2  =
-\begin{bmatrix}
+\begin{pmatrix}
  0\\ 1 \\ 0
-\end{bmatrix},
+\end{pmatrix},
 $$
 
 which is the $xy$-plane in $\mathbb{R}^3$.
@@ -234,45 +234,45 @@ For $2\times2$ and $3\times3$ matrices the transformations often have a geometri
 The transformation corresponding to the matrix
 
 $$
-A = \begin{bmatrix}
+A = \begin{pmatrix}
         1 &  1  \\ 0 & 0
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 is the mapping
 
 $$
-  T: \mathbb{R}^2 \to \mathbb{R}^2, \quad  T\left(\begin{bmatrix}
+  T: \mathbb{R}^2 \to \mathbb{R}^2, \quad  T\left(\begin{pmatrix}
         x \\ y
-\end{bmatrix}\right)=
-\begin{bmatrix}
+\end{pmatrix}\right)=
+\begin{pmatrix}
         x +y \\ 0
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
-First we observe that the range of this transformation consists of all multiples of the vector $ \begin{bmatrix} 1 \\ 0 \end{bmatrix} $, 
+First we observe that the range of this transformation consists of all multiples of the vector $ \begin{pmatrix} 1 \\ 0 \end{pmatrix} $, 
 i.e. the $x$-axis in the plane.
 
 Second, let us find the set of points/vectors that is mapped to an arbitrary point
-$\begin{bmatrix} c \\ 0 \end{bmatrix}$ in the range. For this we solve
+$\begin{pmatrix} c \\ 0 \end{pmatrix}$ in the range. For this we solve
 
 $$
-  A\mathbf{x} = \begin{bmatrix}
+  A\mathbf{x} = \begin{pmatrix}
                 1 &  1  \\ 0 & 0
-              \end{bmatrix}
-\begin{bmatrix}
+              \end{pmatrix}
+\begin{pmatrix}
                   x  \\ y
-\end{bmatrix} =
-\begin{bmatrix}
+\end{pmatrix} =
+\begin{pmatrix}
                 c \\ 0
-\end{bmatrix},
+\end{pmatrix},
   \quad \text{so} \quad
-\begin{bmatrix}
+\begin{pmatrix}
         x+y \\ 0
-\end{bmatrix}  =
-\begin{bmatrix}
+\end{pmatrix}  =
+\begin{pmatrix}
         c \\ 0
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 The points whose coordinates satisfy this equation all lie on the line described by the equation
@@ -282,7 +282,7 @@ $$
 $$
 
 So what the mapping does is to send all points on a line $\mathcal{L}:x + y = c$ to the point $(c,0)$, which is the intersecting of this line with the $x$-axis. <BR>
-An alternative way to describe it: it is the skew projection, in the direction $\begin{bmatrix} 1 \\ -1 \end{bmatrix}$ onto the $x$-axis.
+An alternative way to describe it: it is the skew projection, in the direction $\begin{pmatrix} 1 \\ -1 \end{pmatrix}$ onto the $x$-axis.
 See {numref}`Figure %s <Fig:LinTrafo:SkewProjection>`.
 
 ::::{figure} Images/Fig-LinTrafo-SkewProjection.svg
@@ -301,22 +301,22 @@ Find out whether the vectors
 
 $$
  \mathbf{y}_1 =
-\begin{bmatrix}
+\begin{pmatrix}
  2 \\ 1 \\ 0
-\end{bmatrix} \quad \text{and} \quad
+\end{pmatrix} \quad \text{and} \quad
  \mathbf{y}_2 =
-\begin{bmatrix}
+\begin{pmatrix}
  2 \\ 0 \\ 1
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 are in the range of the matrix transformation
 
 $$
   T(\mathbf{x}) = A\mathbf{x} =
-\begin{bmatrix}
+\begin{pmatrix}
  1 &1&1 \\ 1 &-1&3 \\ -1&2&-4
-\end{bmatrix}\mathbf{x}.
+\end{pmatrix}\mathbf{x}.
 $$
 
 ::::::
@@ -349,28 +349,28 @@ If we denote the population sizes after $k$ periods by a vector
 
 $$
    \mathbf{x}_k =
-\begin{bmatrix}
+\begin{pmatrix}
  x_k \\ y_k
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 it follows that
 
 $$
-\begin{bmatrix}
+\begin{pmatrix}
  x_{k+1} \\ y_{k+1}
-\end{bmatrix} =
-\begin{bmatrix}
+\end{pmatrix} =
+\begin{pmatrix}
  0.9x_k + 0.2y_k  \\0.1x_k + 0.8y_k
-\end{bmatrix}, \quad
+\end{pmatrix}, \quad
    \text{i.e.,   }
    \mathbf{x}_{k+1} =
-\begin{bmatrix}
+\begin{pmatrix}
  0.9 & 0.2  \\ 0.1 & 0.8
-\end{bmatrix}
-\begin{bmatrix}
+\end{pmatrix}
+\begin{pmatrix}
  x_k \\ y_k
-\end{bmatrix} = M \mathbf{x}_{k}.
+\end{pmatrix} = M \mathbf{x}_{k}.
 $$
 
 The $M$ stands for migration matrix.
@@ -442,13 +442,13 @@ $$
 :label: Ex:LinTrafo:FirstLinearMap
 
 Consider the map $T:\mathbb{R}^2\rightarrow\mathbb{R}^3$ that sends each vector
-$\begin{bmatrix}
+$\begin{pmatrix}
  x \\ y 
-\end{bmatrix}$
+\end{pmatrix}$
 in $\mathbb{R}^2$ to the vector
-$\begin{bmatrix}
+$\begin{pmatrix}
  x \\ y \\ 0 
-\end{bmatrix}$ in $\mathbb{R}^3$.
+\end{pmatrix}$ in $\mathbb{R}^3$.
 Let us check that this a linear map.
 
 For that, we need to check the two properties in the definition.
@@ -456,66 +456,66 @@ For that, we need to check the two properties in the definition.
 For property (i) we take two arbitrary vectors
 
 $$
-\begin{bmatrix}
+\begin{pmatrix}
     x_1 \\ y_1
-\end{bmatrix} \quad \text{ and }\quad
-\begin{bmatrix}
+\end{pmatrix} \quad \text{ and }\quad
+\begin{pmatrix}
  x_2 \\ y_2
-\end{bmatrix}  \quad \text{in} \quad \mathbb{R}^2,
+\end{pmatrix}  \quad \text{in} \quad \mathbb{R}^2,
 $$
 
 and see:
 
 $$
-    T\left(\begin{bmatrix}
+    T\left(\begin{pmatrix}
         x_1 \\ y_1
-\end{bmatrix} +
-\begin{bmatrix}
+\end{pmatrix} +
+\begin{pmatrix}
         x_2 \\ y_2
-\end{bmatrix} \right)=
-    T \left(\begin{bmatrix}
+\end{pmatrix} \right)=
+    T \left(\begin{pmatrix}
         x_1+x_2 \\ y_1+y_2
-\end{bmatrix}\right)=
-\begin{bmatrix}
+\end{pmatrix}\right)=
+\begin{pmatrix}
             x_1 + x_2 \\ y_1 + y_2 \\ 0
-\end{bmatrix} =
-\begin{bmatrix}
+\end{pmatrix} =
+\begin{pmatrix}
             x_1 \\ y_1 \\ 0
-\end{bmatrix} +
-\begin{bmatrix}
+\end{pmatrix} +
+\begin{pmatrix}
             x_2 \\ y_2 \\ 0
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 This last vector indeed equals
 
 $$
- T\left(\begin{bmatrix}
+ T\left(\begin{pmatrix}
             x_1 \\ y_1
-\end{bmatrix}\right)+
-        T\left(\begin{bmatrix}
+\end{pmatrix}\right)+
+        T\left(\begin{pmatrix}
             x_2 \\ y_2
-\end{bmatrix}\right).
+\end{pmatrix}\right).
 $$
 
 Similarly, for the second property, given any scalar $c$,
 
 $$
-    T\left(c \begin{bmatrix}
+    T\left(c \begin{pmatrix}
         x_1 \\ y_1
-\end{bmatrix}\right)=
-    T \left(\begin{bmatrix}
+\end{pmatrix}\right)=
+    T \left(\begin{pmatrix}
         c x_1 \\  cy_1
-\end{bmatrix}\right)=
-\begin{bmatrix}
+\end{pmatrix}\right)=
+\begin{pmatrix}
         c x_1 \\ c y_1 \\ 0
-\end{bmatrix} =
-    c \begin{bmatrix}
+\end{pmatrix} =
+    c \begin{pmatrix}
         x_1 \\ y_1 \\ 0
-\end{bmatrix}=
-        cT \left(\begin{bmatrix}
+\end{pmatrix}=
+        cT \left(\begin{pmatrix}
             x_1 \\ y_1
-\end{bmatrix}\right).
+\end{pmatrix}\right).
 $$
 
 So indeed $T$ has the two properties of a linear transformation.
@@ -524,88 +524,88 @@ So indeed $T$ has the two properties of a linear transformation.
 
 ::::::{prf:example}
 Consider the mapping
-$T:\mathbb{R}^2\rightarrow\mathbb{R}^2$ that sends each vector $ \begin{bmatrix}
+$T:\mathbb{R}^2\rightarrow\mathbb{R}^2$ that sends each vector $ \begin{pmatrix}
 x \\ y
-\end{bmatrix}$
-in $\mathbb{R}^2$ to the vector $\begin{bmatrix} x+y \\ xy \end{bmatrix}$:
+\end{pmatrix}$
+in $\mathbb{R}^2$ to the vector $\begin{pmatrix} x+y \\ xy \end{pmatrix}$:
 
 $$
-  T:  \begin{bmatrix}
+  T:  \begin{pmatrix}
  x \\ y
-\end{bmatrix} \mapsto
-\begin{bmatrix}
+\end{pmatrix} \mapsto
+\begin{pmatrix}
  x+y \\ xy
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 This mapping is **not** a linear transformation.
 
 $$
-    T \left(\begin{bmatrix}
+    T \left(\begin{pmatrix}
  1 \\ 1
-\end{bmatrix} +
-\begin{bmatrix}
+\end{pmatrix} +
+\begin{pmatrix}
  1 \\ 2
-\end{bmatrix}\right)=
+\end{pmatrix}\right)=
     T
-\left(\begin{bmatrix}
+\left(\begin{pmatrix}
 2 \\ 3
-\end{bmatrix}\right)    =
-\begin{bmatrix}
+\end{pmatrix}\right)    =
+\begin{pmatrix}
  5 \\ 6
-\end{bmatrix},
+\end{pmatrix},
 $$
 
 whereas
 
 $$
-   T \left(\begin{bmatrix}
+   T \left(\begin{pmatrix}
  1 \\ 1
-\end{bmatrix}\right)+
-   T \left(\begin{bmatrix}
+\end{pmatrix}\right)+
+   T \left(\begin{pmatrix}
  1 \\ 2
-\end{bmatrix}\right)=
-\begin{bmatrix}
+\end{pmatrix}\right)=
+\begin{pmatrix}
  2 \\ 1
-\end{bmatrix} +
-\begin{bmatrix}
+\end{pmatrix} +
+\begin{pmatrix}
  3 \\ 2
-\end{bmatrix} =
-\begin{bmatrix}
+\end{pmatrix} =
+\begin{pmatrix}
  5 \\ 3
-\end{bmatrix}
+\end{pmatrix}
        \,\neq\,
-\begin{bmatrix}
+\begin{pmatrix}
  5 \\ 6
-\end{bmatrix} .
+\end{pmatrix} .
 $$
 
 The second requirement of a linear transformation is violated as well:
 
 $$
    T\left(3
-\begin{bmatrix}
+\begin{pmatrix}
  1 \\ 1
-\end{bmatrix}\right)=
+\end{pmatrix}\right)=
    T
-\left(\begin{bmatrix}
+\left(\begin{pmatrix}
  3 \\ 3
-\end{bmatrix}\right)=
-\begin{bmatrix}
+\end{pmatrix}\right)=
+\begin{pmatrix}
  6 \\ 9
-\end{bmatrix}
+\end{pmatrix}
    \,\,\neq\,\,
    3\,T
-\left(\begin{bmatrix}
+\left(\begin{pmatrix}
  1 \\ 1
-\end{bmatrix} \right)=
+\end{pmatrix} \right)=
    3
-\begin{bmatrix}
+\begin{pmatrix}
  2 \\ 1
-\end{bmatrix} =
-\begin{bmatrix}
+\end{pmatrix} =
+\begin{pmatrix}
  6 \\ 3
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 ::::::
@@ -640,19 +640,19 @@ $$
 Note that {prf:ref}`Ex:LinTrafo:FirstLinearMap` was in fact the first example of a matrix transformation in the {ref}`Subsec:LinTrafo:MatrixTrafo`:
 
 $$
-\begin{bmatrix}
+\begin{pmatrix}
  x \\ y
-\end{bmatrix}  \mapsto
-\begin{bmatrix}
+\end{pmatrix}  \mapsto
+\begin{pmatrix}
  x \\ y \\ 0
-\end{bmatrix}
+\end{pmatrix}
    =
-\begin{bmatrix}
+\begin{pmatrix}
  1 & 0 \\ 0&1 \\ 0&0
-\end{bmatrix}
-\begin{bmatrix}
+\end{pmatrix}
+\begin{pmatrix}
  x \\ y
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 As we will see: **any** linear transformation from $\mathbb{R}^n$ to $\mathbb{R}^m$ is a matrix transformation. The converse is true as well. This is the content of the next proposition.
@@ -855,42 +855,42 @@ Suppose $T: \mathbb{R}^3 \to \mathbb{R}^2$ is a linear transformation, and we kn
 
 $$
   \vect{a}_1 =
-\begin{bmatrix}
+\begin{pmatrix}
  1 \\ 0 \\ 0
-\end{bmatrix}, \quad
+\end{pmatrix}, \quad
   \vect{a}_2 =
-\begin{bmatrix}
+\begin{pmatrix}
  1 \\ 1 \\ 0
-\end{bmatrix},
+\end{pmatrix},
   \quad \vect{a}_3 =
-\begin{bmatrix}
+\begin{pmatrix}
  1 \\ 1 \\ 1
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 the images under $T$ are given by
 
 $$
   T(\vect{a}_1)  = \vect{b}_1 =
-\begin{bmatrix}
+\begin{pmatrix}
  1 \\ 2
-\end{bmatrix}, \quad T(\vect{a}_2)  = \vect{b}_2 =
-\begin{bmatrix}
+\end{pmatrix}, \quad T(\vect{a}_2)  = \vect{b}_2 =
+\begin{pmatrix}
  3 \\ -1
-\end{bmatrix},
+\end{pmatrix},
   \quad \text{and} \quad  T(\vect{a}_3)  = \vect{b}_3 =
-\begin{bmatrix}
+\begin{pmatrix}
  2 \\ -2
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 Then for the vector
 
 $$
  \vect{v} =
-\begin{bmatrix}
+\begin{pmatrix}
  4 \\ 1 \\ -1
-\end{bmatrix} = 3 \vect{a}_1 + 2 \vect{a}_2 - 1 \vect{a}_3
+\end{pmatrix} = 3 \vect{a}_1 + 2 \vect{a}_2 - 1 \vect{a}_3
 $$
 
 it follows that
@@ -898,20 +898,20 @@ it follows that
 $$
  T(\vect{v}) =   3 \vect{b}_1 + 2 \vect{b}_2  + (-1) \vect{b}_3 =
  3
-\begin{bmatrix}
+\begin{pmatrix}
  1 \\ 2
-\end{bmatrix}
+\end{pmatrix}
  + 2
-\begin{bmatrix}
+\begin{pmatrix}
  3 \\ -1
-\end{bmatrix}
+\end{pmatrix}
  + (-1)
-\begin{bmatrix}
+\begin{pmatrix}
  2 \\ -2
-\end{bmatrix}=
-\begin{bmatrix}
+\end{pmatrix}=
+\begin{pmatrix}
  7 \\ 6
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 ::::::
@@ -930,16 +930,16 @@ Recall that this is the set of vectors
 :label: Eq:LinTrafo:StandardBasis
 
 \left(\vect{e}_1,\mathbf{e}_2, \ldots, \mathbf{e}_n\right)=
-\left(\begin{bmatrix}
+\left(\begin{pmatrix}
 1 \\ 0 \\ 0 \\ \vdots \\ 0
-\end{bmatrix},
-\begin{bmatrix}
+\end{pmatrix},
+\begin{pmatrix}
 0 \\ 1 \\ 0 \\ \vdots \\ 0
-\end{bmatrix},
+\end{pmatrix},
 \quad \cdots \quad ,
-\begin{bmatrix}
+\begin{pmatrix}
 0 \\ 0 \\ 0 \\ \vdots \\ 1
-\end{bmatrix}\right).
+\end{pmatrix}\right).
 
 :::
 
@@ -953,31 +953,31 @@ Suppose $T$ is a linear transformation from $\mathbb{R}^2$ to $\mathbb{R}^2$ for
 
 $$
    T(\mathbf{e}_1) = \mathbf{a}_1  =
-\begin{bmatrix}
+\begin{pmatrix}
 1 \\2
-\end{bmatrix},
+\end{pmatrix},
    \quad
    T(\mathbf{e}_2) = \mathbf{a}_2  =
-\begin{bmatrix}
+\begin{pmatrix}
 4 \\3
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 Then for an arbitrary vector
 
 $$
   \mathbf{x} =
-\begin{bmatrix}
+\begin{pmatrix}
 x_1\\x_2
-\end{bmatrix} =
+\end{pmatrix} =
         x_1
-\begin{bmatrix}
+\begin{pmatrix}
 1\\0
-\end{bmatrix} +
+\end{pmatrix} +
         x_2
-\begin{bmatrix}
+\begin{pmatrix}
 0\\1
-\end{bmatrix}
+\end{pmatrix}
      = x_1\mathbf{e}_1 + x_2\mathbf{e}_2,
 $$
 
@@ -987,16 +987,16 @@ $$
  \begin{array}{rcl}
   T(\mathbf{x}) &=& x_1T(\mathbf{e}_1) + x_2T(\mathbf{e}_2) \\
                &=& x_1
-\begin{bmatrix}
+\begin{pmatrix}
 1 \\2
-\end{bmatrix}
+\end{pmatrix}
                + x_2
-\begin{bmatrix}
+\begin{pmatrix}
 4 \\3
-\end{bmatrix} \,\,=\,\,\,
-\begin{bmatrix}
+\end{pmatrix} \,\,=\,\,\,
+\begin{pmatrix}
 1 &4 \\2 &3
-\end{bmatrix}\mathbf{x}.
+\end{pmatrix}\mathbf{x}.
   \end{array}
 $$
 
@@ -1005,9 +1005,9 @@ So we see that
 $$
    T(\mathbf{x}) = A \mathbf{x}, \quad\text{where} \quad
    A =
-\begin{bmatrix}
+\begin{pmatrix}
  T(\mathbf{e}_1) & T(\mathbf{e}_2)
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 ::::::
@@ -1018,9 +1018,9 @@ $$
 Show that the procedure of {prf:ref}`Ex:LinTrafo:StandardMatrixIntro` applied to the linear transformation of {prf:ref}`Ex:LinTrafo:FirstLinearMap` indeed yields the matrix
 
 $$
-A = \begin{bmatrix}
+A = \begin{pmatrix}
  1 & 0 \\ 0 & 1 \\ 0 & 0
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 ::::::
@@ -1029,24 +1029,24 @@ $$
 :class: solution, dropdown
 
 Consider the linear transformation
-$T:\mathbb{R}^2\rightarrow\mathbb{R}^3$ that sends each vector $ \begin{bmatrix}
+$T:\mathbb{R}^2\rightarrow\mathbb{R}^3$ that sends each vector $ \begin{pmatrix}
 x \\ y
-\end{bmatrix}$
-in $\mathbb{R}^2$ to the vector $\begin{bmatrix} x \\ y \\ 0 \end{bmatrix}$. &nbsp; It holds that
+\end{pmatrix}$
+in $\mathbb{R}^2$ to the vector $\begin{pmatrix} x \\ y \\ 0 \end{pmatrix}$. &nbsp; It holds that
 
 $$
-   T(\vect{e}_1) = T\left(\begin{bmatrix} 1\\ 0 \end{bmatrix}\right) =
-   \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}, \quad
-   T(\vect{e}_2) = T\left(\begin{bmatrix} 0\\ 1 \end{bmatrix}\right) =
-   \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}.
+   T(\vect{e}_1) = T\left(\begin{pmatrix} 1\\ 0 \end{pmatrix}\right) =
+   \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, \quad
+   T(\vect{e}_2) = T\left(\begin{pmatrix} 0\\ 1 \end{pmatrix}\right) =
+   \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}.
 $$
 
-We find that for an arbitray vector $\begin{bmatrix} x\\ y \end{bmatrix} = x\begin{bmatrix} 1\\ 0 \end{bmatrix}+y\begin{bmatrix} 0\\ 1 \end{bmatrix}$ it holds that
+We find that for an arbitray vector $\begin{pmatrix} x\\ y \end{pmatrix} = x\begin{pmatrix} 1\\ 0 \end{pmatrix}+y\begin{pmatrix} 0\\ 1 \end{pmatrix}$ it holds that
 
 $$
-  T\left(\begin{bmatrix} x\\ y \end{bmatrix}\right) =
-   xT(\vect{e}_1) + yT(\vect{e}_2) = x\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}+ y\begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix} =
-   \begin{bmatrix} 1 & 0 \\ 0 & 1\\ 0 & 0 \end{bmatrix}\begin{bmatrix} x\\ y \end{bmatrix}.
+  T\left(\begin{pmatrix} x\\ y \end{pmatrix}\right) =
+   xT(\vect{e}_1) + yT(\vect{e}_2) = x\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}+ y\begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix} =
+   \begin{pmatrix} 1 & 0 \\ 0 & 1\\ 0 & 0 \end{pmatrix}\begin{pmatrix} x\\ y \end{pmatrix}.
 $$
 
 ::::
@@ -1065,9 +1065,9 @@ More specific, if $T: \mathbb{R}^n \to \mathbb{R}^m$ is linear, then for each $\
 
 T(\mathbf{x}) = A\mathbf{x}, \quad \text{where} \quad
 A =
-\begin{bmatrix}
+\begin{pmatrix}
 T(\mathbf{e}_1) & T(\mathbf{e}_2) & \ldots & T(\mathbf{e}_n)
-\end{bmatrix}.
+\end{pmatrix}.
 
 :::::
 
@@ -1081,22 +1081,22 @@ First of all, any vector $\mathbf{x}$ is a linear combination of the standard ba
 
 $$
   \mathbf{x} =
-\begin{bmatrix}
+\begin{pmatrix}
 x_1\\x_2\\ \vdots \\ x_n
-\end{bmatrix} =
+\end{pmatrix} =
               x_1
-\begin{bmatrix}
+\begin{pmatrix}
 1 \\ 0 \\ \vdots \\ 0
-\end{bmatrix} +
+\end{pmatrix} +
               x_2
-\begin{bmatrix}
+\begin{pmatrix}
 0 \\ 1 \\ \vdots \\ 0
-\end{bmatrix} +
+\end{pmatrix} +
               \ldots +
                x_n
-\begin{bmatrix}
+\begin{pmatrix}
 0 \\ 0 \\ \vdots \\ 1
-\end{bmatrix},
+\end{pmatrix},
 $$
 
 i.e.,
@@ -1115,9 +1115,9 @@ The last expression is a linear combination of $n$ vectors in $\mathbb{R}^m$, an
 
 $$
   x_1 T(\mathbf{e}_1) + x_2 T(\mathbf{e}_2) +  \ldots + x_n T(\mathbf{e}_n) =
-\begin{bmatrix}
+\begin{pmatrix}
  T(\mathbf{e}_1) & T(\mathbf{e}_2) & \ldots & T(\mathbf{e}_n)
-\end{bmatrix} \mathbf{x}.
+\end{pmatrix} \mathbf{x}.
 $$
 
 ::::::
@@ -1130,9 +1130,9 @@ For a linear transformation $T:\mathbb{R}^n \to \mathbb{R}^m$, the matrix
 :::{math}
 :label: Eq:LinTrafo:StandardMatrix2
 
-\begin{bmatrix}
+\begin{pmatrix}
 T(\mathbf{e}_1) & T(\mathbf{e}_2) & \ldots & T(\mathbf{e}_n)
-\end{bmatrix}
+\end{pmatrix}
 
 :::
 
@@ -1150,12 +1150,12 @@ Consider the transformation
 
 $$
    T:
-\begin{bmatrix}
+\begin{pmatrix}
 x \\ y \\ z
-\end{bmatrix} \mapsto
-\begin{bmatrix}
+\end{pmatrix} \mapsto
+\begin{pmatrix}
 x-y \\ 2y+3z \\ x+y-z
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 It can be checked that the transformation has the two properties of a linear transformation according to the definition.
@@ -1163,26 +1163,26 @@ Note that
 
 $$
   T(\mathbf{e}_1) =
-\begin{bmatrix}
+\begin{pmatrix}
 1 \\ 0 \\ 1
-\end{bmatrix}, \quad
+\end{pmatrix}, \quad
   T(\mathbf{e}_2) =
-\begin{bmatrix}
+\begin{pmatrix}
 -1 \\ 2 \\ 1
-\end{bmatrix}, \quad \text{and} \quad
+\end{pmatrix}, \quad \text{and} \quad
   T(\mathbf{e}_3) =
-\begin{bmatrix}
+\begin{pmatrix}
 0 \\ 3 \\ -1
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 So we find that the matrix $[T]$ of $T$ is given by
 
 $$
   [T] =
-\begin{bmatrix}
+\begin{pmatrix}
 1 & -1 & 0 \\   0 &2&3 \\ 1 & 1 & -1
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 is the standard matrix of $T$.
@@ -1198,26 +1198,26 @@ For the slightly different transformation $T:\R \to \R$ given by
 
 $$
    T:
-\begin{bmatrix}
+\begin{pmatrix}
 x \\ y \\ z
-\end{bmatrix} \mapsto
-\begin{bmatrix}
+\end{pmatrix} \mapsto
+\begin{pmatrix}
 3x-z \\ y+4z \\ x-y+2z
-\end{bmatrix},
+\end{pmatrix},
 $$
 
 can you fill in the blanks in the following equation?
 
 $$
-\begin{bmatrix}
+\begin{pmatrix}
 3x-z \\ y+4z \\ x-y+2z
-\end{bmatrix} =
-\begin{bmatrix}
+\end{pmatrix} =
+\begin{pmatrix}
 .. & .. & .. \\ .. & .. & .. \\ .. & .. & ..
-\end{bmatrix}
-\begin{bmatrix}
+\end{pmatrix}
+\begin{pmatrix}
 x \\ y \\ z
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 If you can, you will have shown that $T$ is a matrix transformation, and as a direct consequence $T$ is a linear transformation.
@@ -1233,13 +1233,13 @@ Suppose $T:\mathbb{R}^2 \to \mathbb{R}^3$ and $S:\mathbb{R}^3 \to \mathbb{R}^3$ 
 
 $$
   T(\mathbf{x}) = A\mathbf{x} =
-\begin{bmatrix}
+\begin{pmatrix}
  1&2 \\ 3&4 \\ 1&0
-\end{bmatrix} \mathbf{x} \quad \text{and} \quad
+\end{pmatrix} \mathbf{x} \quad \text{and} \quad
   S(\mathbf{y}) = B\mathbf{y} =
-\begin{bmatrix}
+\begin{pmatrix}
  1&0 &1 \\ 1 & -1 &2  \\ -1&1&-3
-\end{bmatrix} \mathbf{x}
+\end{pmatrix} \mathbf{x}
 $$
 
 From {prf:ref}`Prop:LinTrafo:CompositionLintrafos` we know that the composition
@@ -1250,81 +1250,81 @@ For each vector we first apply $T$ and then $S$. For $\mathbf{e}_1$ this gives
 
 $$
   T(\mathbf{e}_1) =
-\begin{bmatrix}
+\begin{pmatrix}
  1&2 \\ 3&4 \\ 1&0
-\end{bmatrix}
-\begin{bmatrix}
+\end{pmatrix}
+\begin{pmatrix}
  1\\0
-\end{bmatrix} =
-\begin{bmatrix}
+\end{pmatrix} =
+\begin{pmatrix}
  1  \\ 3 \\ 1
-\end{bmatrix},
+\end{pmatrix},
 $$
 
 and then
 
 $$
    S (T(\mathbf{e}_1)) =
-\begin{bmatrix}
+\begin{pmatrix}
  1&0 &1 \\ 1 & -1 &2  \\ -1&1&-3
-\end{bmatrix}
-\begin{bmatrix}
+\end{pmatrix}
+\begin{pmatrix}
  1  \\ 3 \\ 1
-\end{bmatrix}=
-\begin{bmatrix}
+\end{pmatrix}=
+\begin{pmatrix}
  2  \\ 0 \\ -1
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 Likewise for $\mathbf{e}_2$:
 
 $$
   T(\mathbf{e}_2) =
-\begin{bmatrix}
+\begin{pmatrix}
  1&2 \\ 3&4 \\ 1&0
-\end{bmatrix}
-\begin{bmatrix}
+\end{pmatrix}
+\begin{pmatrix}
  0\\1
-\end{bmatrix} =
-\begin{bmatrix}
+\end{pmatrix} =
+\begin{pmatrix}
  2\\4\\0
-\end{bmatrix} \,\,\Longrightarrow\,\,
+\end{pmatrix} \,\,\Longrightarrow\,\,
   S (T(\mathbf{e}_2)) =
-\begin{bmatrix}
+\begin{pmatrix}
  1&0 &1 \\ 1 & -1 &2  \\ -1&1&-3
-\end{bmatrix}
-\begin{bmatrix}
+\end{pmatrix}
+\begin{pmatrix}
  2  \\ 4 \\ 0
-\end{bmatrix}=
-\begin{bmatrix}
+\end{pmatrix}=
+\begin{pmatrix}
  2  \\ -2 \\ 2
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
-So the matrix of $\circ $ becomes
+So the matrix of $S\circ T$ becomes
 
 $$
   [S\circ T] \,= \,
-\begin{bmatrix}
+\begin{pmatrix}
 S\circ T(\mathbf{e_1})&S\circ T(\mathbf{e_2})
-\end{bmatrix} \,\,=\,\,
-\begin{bmatrix}
+\end{pmatrix} \,\,=\,\,
+\begin{pmatrix}
  2 &2 \\ 0&-2 \\ -1&2
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 In the section {ref}`Sec:MatrixOps` we will define the product of two matrices precisely in such a way that
 
 $$
-\begin{bmatrix}
+\begin{pmatrix}
  1&0 &1 \\ 1 & -1 &2  \\ -1&1&-3
-\end{bmatrix}
-\begin{bmatrix}
+\end{pmatrix}
+\begin{pmatrix}
  1&2 \\ 3&4 \\ 1&0
-\end{bmatrix} =
-\begin{bmatrix}
+\end{pmatrix} =
+\begin{pmatrix}
  2 &2 \\ 0&-2 \\ -1&2
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 ::::::

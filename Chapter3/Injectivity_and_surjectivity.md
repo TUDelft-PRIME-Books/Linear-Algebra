@@ -28,31 +28,31 @@ Intuitively, a transformation $T$ is injective if it can be undone without ambig
 Consider the linear transformation, illustrated in {numref}`Figure %s <Fig:InjSurj:NonInjEx>`,
 
 $$
-T:\mathbb{R}^{2}\to\mathbb{R}^{2},\quad\mathbf{v}\mapsto A\mathbf{v}\quad\quad\text{where}\quad\quad A=\begin{bmatrix}
+T:\mathbb{R}^{2}\to\mathbb{R}^{2},\quad\mathbf{v}\mapsto A\mathbf{v}\quad\quad\text{where}\quad\quad A=\begin{pmatrix}
 	1&-1\\
 	-1&1
-	\end{bmatrix}.
+	\end{pmatrix}.
 $$
 
 This is not an injective transformation. Indeed, if we put for example
 
 $$
-\mathbf{v}_{1}=\begin{bmatrix}1\\2\end{bmatrix},\quad\mathbf{v}_{2}=\begin{bmatrix}-3\\-2\end{bmatrix},\quad\text{and}\quad\mathbf{u}=\begin{bmatrix}-1\\1\end{bmatrix}
+\mathbf{v}_{1}=\begin{pmatrix}1\\2\end{pmatrix},\quad\mathbf{v}_{2}=\begin{pmatrix}-3\\-2\end{pmatrix},\quad\text{and}\quad\mathbf{u}=\begin{pmatrix}-1\\1\end{pmatrix}
 $$
 
 we find $T(\mathbf{v}_{1})=\mathbf{u}=T(\mathbf{v}_{2})$. Consequently, i $T(\vect{v})=\vect{u}$, we have no way of knowing whether the $\vect{v}=\mathbf{v}_{1}$ or $\vect{v}=\mathbf{v}_{2}$. Or perhaps some other vector, because there are infinitely many possible inputs that yield $\mathbf{u}$ as output. To find them, it suffices to solve the system $A\mathbf{x}=\mathbf{u}$. We find
 
 $$
-\left[\begin{array}{cc|c}
+\left(\begin{array}{cc|c}
 	1&-1&-1\\
 	-1&1&1
-\end{array}\right]\sim\left[\begin{array}{cc|c}
+\end{array}\right)\sim\left(\begin{array}{cc|c}
 	1&-1&-1\\
 	0&0&0
-\end{array}\right]
+\end{array}\right)
 $$
 
-so any vector $\mathbf{v}=\begin{bmatrix}a_{1}\\a_{2}\end{bmatrix}$ with $a_{1}=a_{2}-1$ is a solution.
+so any vector $\mathbf{v}=\begin{pmatrix}a_{1}\\a_{2}\end{pmatrix}$ with $a_{1}=a_{2}-1$ is a solution.
 
 ::::{figure} Images/Fig-InjSurj-NonInjEx.svg
 :name: Fig:InjSurj:NonInjEx
@@ -67,24 +67,24 @@ The transformation $T$ from {prf:ref}`Ex:InjSurj:InjEx` [i.](#Item:InjSurj:NonIn
 Consider now the transformation
 
 $$
-T:\mathbb{R}^{2}\to\mathbb{R}^{2},\quad\mathbf{v}\mapsto A\mathbf{v}\quad\quad\text{where}\quad\quad A=\begin{bmatrix}
+T:\mathbb{R}^{2}\to\mathbb{R}^{2},\quad\mathbf{v}\mapsto A\mathbf{v}\quad\quad\text{where}\quad\quad A=\begin{pmatrix}
 	1&-1\\
 	1&1
-	\end{bmatrix}
+	\end{pmatrix}
 $$
 
 which is illustrated in {numref}`Figure %s <Fig:InjSurj:InjEx>`.
 
-This is an injective transformation. Indeed, if we take an arbitrary vector $\mathbf{v}=\begin{bmatrix}a_{1}\\a_{2}\end{bmatrix}$ in $\mathbb{R}^{2}$ and we try to solve $A\mathbf{x}=\mathbf{u}$, we find
+This is an injective transformation. Indeed, if we take an arbitrary vector $\mathbf{v}=\begin{pmatrix}a_{1}\\a_{2}\end{pmatrix}$ in $\mathbb{R}^{2}$ and we try to solve $A\mathbf{x}=\mathbf{u}$, we find
 
 $$
-\left[\begin{array}{cc|c}
+\left(\begin{array}{cc|c}
 	1&-1&a_{1}\\
 	1&1&a_{2}
-\end{array}\right]\sim\left[\begin{array}{cc|c}
+\end{array}\right)\sim\left(\begin{array}{cc|c}
 	1&-1&a_{1}\\
 	0&2&a_{2}-a_{1}
-\end{array}\right].
+\end{array}\right).
 $$
 
 There are no free variables, so if there is a solution to the system $A\vect{x}=\vect{v}$ (which, in this case, is true for all $\vect{v}$) it will be unique. This means that there is only one $\mathbf{x}$ with $T(\mathbf{x})=A\mathbf{x}=\mathbf{u}$, hence $T$ is injective.
@@ -105,25 +105,25 @@ The transformation $T$ from {prf:ref}`Ex:InjSurj:InjEx` [ii.](#Item:InjSurj:InjE
 Let us consider now a transformation for which the domain and the codomain are different. Take, for example,
 
 $$
-S:\R^{2}\to\R^{3},\vect{v}\mapsto A\vect{v}\quad\text{where}\quad A=\begin{bmatrix}
+S:\R^{2}\to\R^{3},\vect{v}\mapsto A\vect{v}\quad\text{where}\quad A=\begin{pmatrix}
 1&0\\
 0&1\\
 0&0
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 Then $S$ is an injective transformation. Indeed, take an arbitrary vector
 
 $$
-\vect{v}=\begin{bmatrix}
+\vect{v}=\begin{pmatrix}
 a_{1}\\
 a_{2}\\
 a_{3}
-\end{bmatrix}\text{ in }\R^{3}.\quad\text{Then}\quad\left[\begin{array}{cc|c}
+\end{pmatrix}\text{ in }\R^{3}.\quad\text{Then}\quad\left(\begin{array}{cc|c}
 	1&0&a_{1}\\
 	0&1&a_{2}\\
 	0&0&a_{3}
-	\end{array}\right]
+	\end{array}\right)
 $$
 
 </li>
@@ -170,13 +170,13 @@ You may think that, similarly, if the combination of two actions can be undone, 
 Consider
 
 $$
-S:\mathbb{R}^{2}\to\mathbb{R}^{3},\mathbf{v}\mapsto \begin{bmatrix}1&0\\0&1\\0&0\end{bmatrix}\mathbf{v}\quad\text{and}\quad T:\mathbb{R}^{3}\to\mathbb{R}^{2},\mathbf{v}\mapsto \begin{bmatrix}1&0&0\\0&1&0\end{bmatrix}\mathbf{v}.
+S:\mathbb{R}^{2}\to\mathbb{R}^{3},\mathbf{v}\mapsto \begin{pmatrix}1&0\\0&1\\0&0\end{pmatrix}\mathbf{v}\quad\text{and}\quad T:\mathbb{R}^{3}\to\mathbb{R}^{2},\mathbf{v}\mapsto \begin{pmatrix}1&0&0\\0&1&0\end{pmatrix}\mathbf{v}.
 $$
 
 You can verify yourself that $(T\circ S)\mathbf{v}=\mathbf{v}$ for any vector $\mathbf{v}$ in $\mathbb{R}^{2}$, so $T\circ S$ is injective. But $T$ itself definitely isn't! Indeed
 
 $$
-T\left(\begin{bmatrix}0\\0\\a_{3}\end{bmatrix}\right)=\mathbf{0}\quad\text{for any $a_{3}$ in $\R$}.
+T\left(\begin{pmatrix}0\\0\\a_{3}\end{pmatrix}\right)=\mathbf{0}\quad\text{for any $a_{3}$ in $\R$}.
 $$
 
 Note that $S$ is injective by {prf:ref}`Ex:InjSurj:InjEx` [iii.](#Item:InjSurj:InjExNonEqDim) This is not a coincidence, as {prf:ref}`Prop:InjSurj:CompInjFirstInj` shows.
@@ -292,22 +292,22 @@ In other words, a transformation is surjective if for every potential output the
 Let us start with the transformation, illustrated in {numref}`Figure %s <Fig:InjSurj:NonSurjEx>`,
 
 $$
-T:\mathbb{R}^{2}\to\mathbb{R}^{2},\quad\mathbf{v}\mapsto A\mathbf{v}\quad\quad\text{where}\quad\quad A=\begin{bmatrix}
+T:\mathbb{R}^{2}\to\mathbb{R}^{2},\quad\mathbf{v}\mapsto A\mathbf{v}\quad\quad\text{where}\quad\quad A=\begin{pmatrix}
 	1&-1\\
 	-1&1
-	\end{bmatrix}.
+	\end{pmatrix}.
 $$
 
-In order to see whether $T$ is surjective, we have to check whether for every vector $\mathbf{u}$ in the codomain -- that is $\mathbb{R}^{2}$ here -- there is a vector $\mathbf{v}$ in the domain with $T(\mathbf{v})=\mathbf{u}$. So take $\mathbf{u}=\begin{bmatrix}a_{1}\\a_{2}\end{bmatrix}$ in $\mathbb{R}^{2}$. We find
+In order to see whether $T$ is surjective, we have to check whether for every vector $\mathbf{u}$ in the codomain -- that is $\mathbb{R}^{2}$ here -- there is a vector $\mathbf{v}$ in the domain with $T(\mathbf{v})=\mathbf{u}$. So take $\mathbf{u}=\begin{pmatrix}a_{1}\\a_{2}\end{pmatrix}$ in $\mathbb{R}^{2}$. We find
 
 $$
-\left[\begin{array}{cc|c}
+\left(\begin{array}{cc|c}
 	1&-1&a_{1}\\
 	-1&1&a_{2}
-\end{array}\right]\sim\left[\begin{array}{cc|c}
+\end{array}\right)\sim\left(\begin{array}{cc|c}
 	1&-1&-1\\
 	0&0&a_{1}+a_{2}
-\end{array}\right],
+\end{array}\right),
 $$
 
 so the system $A\mathbf{x}=\mathbf{u}$ can only be solved if $a_{1}+a_{2}=0$. This transformation is therefore not surjective.
@@ -327,10 +327,10 @@ The transformation $T$ from {prf:ref}`Ex:InjSurj:SurjEx` [i.](#Item:InjSurj:NonS
 We have already seen in {prf:ref}`Ex:InjSurj:InjEx` [ii.](#Item:InjSurj:InjEx) that, for
 
 $$
-A=\begin{bmatrix}
+A=\begin{pmatrix}
 	1&-1\\
 	1&1
-	\end{bmatrix},
+	\end{pmatrix},
 $$
 
 the system $A\mathbf{x}=\mathbf{u}$ is consistent for any $\mathbf{u}$ in $\mathbb{R}^{2}$. Consequently, the linear transformation
@@ -391,13 +391,13 @@ Here, too, it turns out that the opposite statement is not true in general as {p
 Put
 
 $$
-S:\mathbb{R}^{2}\to\mathbb{R}^{3},\mathbf{v}\mapsto \begin{bmatrix}1&0\\0&1\\0&0\end{bmatrix}\mathbf{v}\quad\text{and}\quad T:\mathbb{R}^{3}\to\mathbb{R}^{2},\mathbf{v}\mapsto \begin{bmatrix}1&0&0\\0&1&0\end{bmatrix}\mathbf{v}.
+S:\mathbb{R}^{2}\to\mathbb{R}^{3},\mathbf{v}\mapsto \begin{pmatrix}1&0\\0&1\\0&0\end{pmatrix}\mathbf{v}\quad\text{and}\quad T:\mathbb{R}^{3}\to\mathbb{R}^{2},\mathbf{v}\mapsto \begin{pmatrix}1&0&0\\0&1&0\end{pmatrix}\mathbf{v}.
 $$
 
 As we have seen in {prf:ref}`Ex:InjSurj:InjnonInjInj`, $(T\circ S)(\mathbf{v})=\mathbf{v}$ for any vector $\mathbf{v}$ in $\mathbb{R}^{2}$, so $T\circ S$ is surjective. But $S$ is not! Indeed,
 
 $$
-\text{for any}\quad \mathbf{v}=\begin{bmatrix}a_{1}\\a_{2}\end{bmatrix}\quad\text{in $\R^{2}$ we have}\quad S(\mathbf{v})=\begin{bmatrix}a_{1}\\a_{2}\\0\end{bmatrix}
+\text{for any}\quad \mathbf{v}=\begin{pmatrix}a_{1}\\a_{2}\end{pmatrix}\quad\text{in $\R^{2}$ we have}\quad S(\mathbf{v})=\begin{pmatrix}a_{1}\\a_{2}\\0\end{pmatrix}
 $$
 
 so any vector $\mathbf{u}$ in $\mathbb{R}^{3}$ for which the third entry is non-zero cannot be $S(\mathbf{v})$ for any $\mathbf{v}$ in $\mathbb{R}^{2}$.
@@ -457,7 +457,7 @@ Prove {prf:ref}`Prop:InjSurj:SurjChars`.
 
 Assume $T$ is surjective and take an arbitrary $\vect{b}$ in $\R^{n}$. Then there is an $\vect{x}$ in $\mathbb{R}^{m}$ such that $T(\vect{x})=\vect{b}$, i.e. $\vect{x}$ is a solution of $A\vect{x}=\vect{b}$. Similarly, if $A\vect{x}=\vect{b}$ has a solution for any $\vect{b}$ in $\R^{n}$, then $\vect{b}=T(\vect{x})$ which establishes surjectivity of $T$.
 
-If $A$ has a row without pivot, then, for a well-chosen $\vect{b}$, a pivot can appear in the last column of the augmented matrix $[A|\vect{b}]$. This means that $A\vect{x}=\vect{b}$ has no solutions. Similarly, if $A\vect{x}=\vect{b}$ always has a solution, then $[A|\vect{b}]$ can never have a pivot in the lost column. Consequently, $A$ must have a pivot in every row.
+If $A$ has a row without pivot, then, for a well-chosen $\vect{b}$, a pivot can appear in the last column of the augmented matrix $(A|\vect{b})$. This means that $A\vect{x}=\vect{b}$ has no solutions. Similarly, if $A\vect{x}=\vect{b}$ always has a solution, then $(A|\vect{b})$ can never have a pivot in the lost column. Consequently, $A$ must have a pivot in every row.
 
 :::
 

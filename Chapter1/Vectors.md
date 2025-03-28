@@ -38,9 +38,9 @@ Let us try to give this intuitive idea firm ground to stand on. We say by conven
 
 $$
 
-\mathbf{v}=\begin{bmatrix}
+\mathbf{v}=\begin{pmatrix}
 x\\y
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 we mean an arrow pointing $x$ units to the right and $y$ units straight up. If $x$ is a negative number our arrow will point to the left and if $y$ is negative the arrow will point down. We will call such a representation of an arrow a _vector_ and the values $x$ and $y$ will be called its _entries_ (cfr. {prf:ref}`Dfn:Vectors:Vectors`).
@@ -48,43 +48,43 @@ In {numref}`Figure %s <Fig:Vectors:AdditionPlane>`, for example, we see the arro
 
 $$
 
-\mathbf{v}_{1}=\begin{bmatrix}
+\mathbf{v}_{1}=\begin{pmatrix}
 	1\\2
-\end{bmatrix}\quad\text{and}\quad\mathbf{v}_{2}=\begin{bmatrix}
+\end{pmatrix}\quad\text{and}\quad\mathbf{v}_{2}=\begin{pmatrix}
 	-2\\-1
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 If we glue the arrow $\mathbf{v}_{2}$ to the tip of $\mathbf{v}_{1}$, we find a new arrow, let's call it $\mathbf{v}_{3}$, that points $1$ unit to the left (which is $-1$ unit to the right) and $1$ unit straight up. So
 
 $$
 
-\mathbf{v}_{3}=\begin{bmatrix}
+\mathbf{v}_{3}=\begin{pmatrix}
 	-1\\1
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 We obtain the same result if we add the first and second entries of $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ component wise. In other words:
 
 $$
 
-\mathbf{v}_{3}=\begin{bmatrix}
+\mathbf{v}_{3}=\begin{pmatrix}
 	1+(-2)\\
 	2+(-1)
-\end{bmatrix}=\begin{bmatrix}
+\end{pmatrix}=\begin{pmatrix}
 	1\\2
-\end{bmatrix}+\begin{bmatrix}
+\end{pmatrix}+\begin{pmatrix}
 	-2\\-1
-\end{bmatrix}=\mathbf{v}_{1}+\mathbf{v}_{2}.
+\end{pmatrix}=\mathbf{v}_{1}+\mathbf{v}_{2}.
 $$
 
 As you see, it is very easy to find the sum of two arrows using our new notation. The same holds true for the stretching of an arrow. Let us try, for example, to stretch $\mathbf{v}_{3}$ to $2$ times its length, that is, let us try to find $2\mathbf{v}_{3}$. This gives an arrow pointing two units to the left and two units straight up. If we multiply both entries of $\mathbf{v}_{3}$ by $2$, we find a new vector $\mathbf{v}_{4}$ with:
 
 $$
 
-\mathbf{v}_{4}=\begin{bmatrix}
+\mathbf{v}_{4}=\begin{pmatrix}
 -2\\2
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 which is precisely $2\mathbf{v}_{3}$.
@@ -114,9 +114,9 @@ Let $n$ be a positive natural number. If $a_{1},a_{2},...,a_{n}$ are real number
 
 $$
 
-\mathbf{v}=\begin{bmatrix}
+\mathbf{v}=\begin{pmatrix}
 a_{1}\\a_{2}\\\vdots\\a_{n}
-\end{bmatrix}
+\end{pmatrix}
 $$
 
  a *vector* or sometimes a *column vector*. The number $n$ is called the *size* of the vector $\mathbf{v}$ and $a_{1},a_{2},...,a_{n}$ are called its *entries* or *components*. In particular, we call $a_{i}$ the *$i$-th entry* or *$i$-th component* of $\mathbf{v}$. The collection of all such vectors is written as $\mathbb{R}^{n}$. The vector for which all entries are $0$ will play a special role. We will denote it by $\mathbf{0}$.
@@ -127,11 +127,11 @@ Note that the order of the entries is very important. For example
 
 $$
 
-\begin{bmatrix}
+\begin{pmatrix}
 1\\-1
-\end{bmatrix}\quad\text{and}\quad\begin{bmatrix}
+\end{pmatrix}\quad\text{and}\quad\begin{pmatrix}
 -1\\1
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 are _not_ the same vectors. Indeed, the first one points down and to the right, while the second one points up and to the left. Two vectors are only equal if they have the same entries in the same order.
@@ -144,8 +144,8 @@ Suppose we have two vectors
 
 $$
 
-\mathbf{v}_{1}=\begin{bmatrix}
-a_{1}\\\vdots\\a_{n}\end{bmatrix}\quad\text{and}\quad\mathbf{v}_{2}=\begin{bmatrix} b_{1}\\\vdots \\b_{n}\end{bmatrix}
+\mathbf{v}_{1}=\begin{pmatrix}
+a_{1}\\\vdots\\a_{n}\end{pmatrix}\quad\text{and}\quad\mathbf{v}_{2}=\begin{pmatrix} b_{1}\\\vdots \\b_{n}\end{pmatrix}
 $$
 
  of the same size. The *sum* of $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$, denoted by $\mathbf{v}_{1}+\mathbf{v}_{2}$, is the vector
@@ -153,7 +153,7 @@ $$
 
 $$
 
-\mathbf{v}_{1}+\mathbf{v}_{2}=\begin{bmatrix} a_{1}+b_{1}\\\vdots\\a_{n}+b_{n}\end{bmatrix}.
+\mathbf{v}_{1}+\mathbf{v}_{2}=\begin{pmatrix} a_{1}+b_{1}\\\vdots\\a_{n}+b_{n}\end{pmatrix}.
 $$
 
 If $c$ is a real number, then the *scalar multiple* $c\mathbf{v}_{1}$ is the vector
@@ -161,9 +161,9 @@ If $c$ is a real number, then the *scalar multiple* $c\mathbf{v}_{1}$ is the vec
 
 $$
 
-c\mathbf{v}_{1}=\begin{bmatrix}
+c\mathbf{v}_{1}=\begin{pmatrix}
 ca_{1}\\\vdots\\ca_{n}
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 
@@ -266,16 +266,16 @@ There are four different chemical elements involved in this reaction: sodium ($\
 
 $$
 
-\ce{Na2SO4}: \begin{bmatrix}
+\ce{Na2SO4}: \begin{pmatrix}
 2\\1\\4\\0
-\end{bmatrix}\quad \ce{C}:\begin{bmatrix}
+\end{pmatrix}\quad \ce{C}:\begin{pmatrix}
 0\\0\\0\\1
-\end{bmatrix}\quad
-\ce{Na2S}:\begin{bmatrix}
+\end{pmatrix}\quad
+\ce{Na2S}:\begin{pmatrix}
 2\\1\\0\\0
-\end{bmatrix}\quad\text{and}\quad \ce{CO2}:\begin{bmatrix}
+\end{pmatrix}\quad\text{and}\quad \ce{CO2}:\begin{pmatrix}
 0\\0\\2\\1
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 
@@ -285,15 +285,15 @@ In order for the reaction given in {eq}`Eq:Vectors:ChemReac` to be balanced, we 
 
 $$
 
-\begin{bmatrix}
+\begin{pmatrix}
 2\\1\\4\\0
-\end{bmatrix}+2\begin{bmatrix}
+\end{pmatrix}+2\begin{pmatrix}
 0\\0\\0\\1
-\end{bmatrix}=\begin{bmatrix}
+\end{pmatrix}=\begin{pmatrix}
 2\\1\\0\\0
-\end{bmatrix}+2\begin{bmatrix}
+\end{pmatrix}+2\begin{pmatrix}
 0\\0\\2\\1
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 
@@ -313,14 +313,14 @@ Suppose we fix an arbitrary point in the plane. Let us call it the _origin_ and 
 :name: Fig:Vectors:PointandVect
 :class: dark-light
 
-The point $P=(-1,2)$ and its associated vector $\mathbf{v}=\begin{bmatrix}-1\\2\end{bmatrix}$.
+The point $P=(-1,2)$ and its associated vector $\mathbf{v}=\begin{pmatrix}-1\\2\end{pmatrix}$.
 ```
 
 This might call to mind the vectors we saw in {numref}`Subsection %s <Subsec:Vectors:Plane>`. Remember that a vector in the plane was given by two displacements. A point $P=(a_{1},a_{2})$ is given by the displacement from $O$, so if we take $O$ as the starting point of the vector
 
 $$
 
-\mathbf{v}_{P}=\begin{bmatrix}a_{1}\\a_{2}\end{bmatrix},
+\mathbf{v}_{P}=\begin{pmatrix}a_{1}\\a_{2}\end{pmatrix},
 $$
 
 its end point will be precisely $P$.
@@ -331,18 +331,18 @@ In a similar vein, we can associate vectors with three components to points in t
 
 $$
 
-\mathbf{v}_{P}=\begin{bmatrix}
+\mathbf{v}_{P}=\begin{pmatrix}
 a_{1}\\a_{2}\\a_{3}
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 If we let $\mathbf{v}$ start in $O$, its end point will be precisely $P$. This method works just as well for points on the line, which correspond to vectors with just one component. In fact, it works for any $\mathbb{R}^{n}$. We fix an origin $O=(0,\ldots,0)$. A point $P=(a_{1},\ldots,a_{n})$ then corresponds to the vector $\mathbf{v}_{p}$ pointing from $O$ to $P$, i.e. the vector
 
 $$
 
-\mathbf{v}_{P}=\begin{bmatrix}
+\mathbf{v}_{P}=\begin{pmatrix}
 a_{1}\\\vdots\\ a_{n}
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 ## Grasple Exercises

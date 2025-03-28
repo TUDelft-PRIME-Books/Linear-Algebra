@@ -22,8 +22,8 @@ Cramer's rule. Seemingly the ultimate solution to almost all systems of $n$ line
 The generalization of the formula
 
 $$
-\left[\begin{array}{cc} a &  b \\  c & d\end{array} \right]^{-1}
-= \dfrac{1}{ad-bc}  \left[\begin{array}{cc} d & -b \\ -c & a\end{array}   \right]
+\left(\begin{array}{cc} a &  b \\  c & d\end{array} \right)^{-1}
+= \dfrac{1}{ad-bc}  \left(\begin{array}{cc} d & -b \\ -c & a\end{array}   \right)
 $$
 
 to $n\times n$ matrices.
@@ -62,7 +62,7 @@ See {numref}`Figure %s <Fig:DetExtras:Parped>` for an illustration of such a set
 The **volume** of such a parallelepiped is defined by
 
 $$
-\text{Vol}\!(\mathcal{P}) = |\det{[\,\vect{v}_1\, \,\ldots \,\, \vect{v}_n\,]}|.
+\text{Vol}\!(\mathcal{P}) = |\det{(\,\vect{v}_1\, \,\ldots \,\, \vect{v}_n\,)}|.
 $$
 
 So, it is the absolute value of a determinant.
@@ -123,7 +123,7 @@ In fact, these  two  operations exactly match the first two rules of {prf:ref}`P
 ::::::{prf:proposition}
 :label: Prop:DetExtras:DetAsScaleFactorR2
 
-Suppose $T$ is a linear transformation from $\R^2$ to $\R^2$, with standard matrix $A = [\,\vect{a}_1 \,\,  \vect{a}_2\,]$. So we have
+Suppose $T$ is a linear transformation from $\R^2$ to $\R^2$, with standard matrix $A = (\,\vect{a}_1 \,\,  \vect{a}_2\,)$. So we have
 
 $$
 T(\vect{x}) = A\vect{x}, \quad  \text{for} \,\, \vect{x} \,\text{  in  }\, \R^2.
@@ -163,7 +163,7 @@ First we show that the formula holds if $R$ is the unit square, i.e., the parall
 that
 
 $$
-\text{area}(S) = |\det{[\,\vect{a}_1\,\, \vect{a}_2\,]}|  = |\det{A}|,
+\text{area}(S) = |\det{(\,\vect{a}_1\,\, \vect{a}_2\,)}|  = |\det{A}|,
 
 
 $$
@@ -189,7 +189,7 @@ $$
 This is a parallelogram with sides $rA\vect{e}_1 = r\vect{a}_1$ and $rA\vect{e}_2 =r \vect{a}_2$, which has area
 
 $$
-\text{area}(S) =  |\det{[\,r\vect{a}_1\,\, r\vect{a}_2\,]}|   = r^2 |\det{A}| =   |\det{A}|\cdot \text{area}(R).
+\text{area}(S) =  |\det{(\,r\vect{a}_1\,\, r\vect{a}_2\,)}|   = r^2 |\det{A}| =   |\det{A}|\cdot \text{area}(R).
 $$
 
 See {numref}`Figure %s <Fig:DetExtras:ImageOfSquare>`
@@ -264,10 +264,10 @@ Then
 
 $$
   \begin{array}{rcl}
-   \text{Vol}(T(\mathcal{P})) &=& |\det{[\,T(\vect{v}_1)\, \,\ldots \,\, T(\vect{v}_n)\,]}| \\
-   &=& |\det{[\,A(\vect{v}_1)\, \,\ldots \,\, A(\vect{v}_n)\,]}| \\
-   &=& |\det{\left(A [\,\vect{v}_1\, \,\ldots \,\, \vect{v}_n\,]\right)}|\\
-   &=& |\det{A} \det{[\,\vect{v}_1\, \,\ldots \,\, \vect{v}_n\,]}|\\
+   \text{Vol}(T(\mathcal{P})) &=& |\det{(\,T(\vect{v}_1)\, \,\ldots \,\, T(\vect{v}_n)\,)}| \\
+   &=& |\det{(\,A(\vect{v}_1)\, \,\ldots \,\, A(\vect{v}_n)\,)}| \\
+   &=& |\det{\left(A (\,\vect{v}_1\, \,\ldots \,\, \vect{v}_n\,)\right)}|\\
+   &=& |\det{A} \det{(\,\vect{v}_1\, \,\ldots \,\, \vect{v}_n\,)}|\\
    &=& |\det{A}| \,\text{Vol}\!(\mathcal{P}).
  \end{array}
 $$
@@ -285,7 +285,7 @@ To conclude our interpretation of the determinant of $A$ regarding the linear tr
 Suppose the vectors $(\vect{v}_1, \ldots, \vect{v}_n)$ in $\R^n$ are linearly independent.
 
 Then we say that the ordered set $(\vect{v}_1, \ldots, \vect{v}_n)$ is **positively oriented**  <BR>
-if  $ \det{[\vect{v}_1 \ldots \vect{v}_n]}>0$.
+if  $ \det{(\vect{v}_1 \ldots \vect{v}_n)}>0$.
 
 If this determinant is negative the set is called **negatively oriented**.
 
@@ -295,7 +295,7 @@ For vectors that are linearly dependent we do not define the orientation.
 ::::{prf:proposition}
 :label: Prop:DetExtras:ScaleFactorR2
 
-Suppose $A = [\,\vect{a}_1\,\,\vect{a}_2\,\,\ldots\,\,\vect{a}_n\, ]$ is the standard matrix of the linear transformation $T: \R^n \to \R^n$. So we have
+Suppose $A = (\,\vect{a}_1\,\,\vect{a}_2\,\,\ldots\,\,\vect{a}_n\, )$ is the standard matrix of the linear transformation $T: \R^n \to \R^n$. So we have
 
 $$
    T(\vect{x}) = A\vect{x}.
@@ -323,12 +323,12 @@ This too follows immediately from the product rule of determinants.
 
 $$
  \begin{array}{rcl}
- \det{\left[\,T(\vect{v}_1)\,\,T(\vect{v}_2)\,\,\ldots\,\,T(\vect{v}_n)\,  \right]} &=&
- \det{\left[\,A\vect{v}_1\,\,A\vect{v}_2\,\,\ldots\,\,A\vect{v}_n\,  \right]} \\
+ \det{\left(\,T(\vect{v}_1)\,\,T(\vect{v}_2)\,\,\ldots\,\,T(\vect{v}_n)\,  \right)} &=&
+ \det{\left(\,A\vect{v}_1\,\,A\vect{v}_2\,\,\ldots\,\,A\vect{v}_n\,  \right)} \\
  &=&
- \det{\big(A\left[\,\vect{v}_1\,\,\vect{v}_2\,\,\ldots\,\,\vect{v}_n\,  \right]\big)} \\
+ \det{\big(A\left(\,\vect{v}_1\,\,\vect{v}_2\,\,\ldots\,\,\vect{v}_n\,  \right)\big)} \\
  &=&
- \det{A}\cdot\det{\left[\,\vect{v}_1\,\,\vect{v}_2\,\,\ldots\,\,\vect{v}_n\,  \right]}.
+ \det{A}\cdot\det{\left(\,\vect{v}_1\,\,\vect{v}_2\,\,\ldots\,\,\vect{v}_n\,  \right)}.
  \end{array}
 $$
 
@@ -341,8 +341,8 @@ A nice illustration of what this means in $\R^2$ is given by the following examp
 Consider the two linear transformations from $\R^2$ to $\R^2$ with matrices
 
 $$
-  A = \begin{bmatrix} 1 & 3 \\ 3 & 1 \end{bmatrix}, \quad
-  B = \begin{bmatrix} 3 & 1 \\ 1 & 3 \end{bmatrix}.
+  A = \begin{pmatrix} 1 & 3 \\ 3 & 1 \end{pmatrix}, \quad
+  B = \begin{pmatrix} 3 & 1 \\ 1 & 3 \end{pmatrix}.
 $$
 
 Note that
@@ -383,11 +383,11 @@ Let $A$ be an $n\times n$ matrix, and $\vect{v}$ a vector in $\R^n$. Then $A^{(i
 
 ::::::{prf:example}
 
-For the matrix $A = \begin{bmatrix}  1 & 3 & 1 \\ 1 & 4 & 2 \\ 3 & 1 & 5  \end{bmatrix}$
-and the vector $\vect{v} = \begin{bmatrix}  \class{blue}6 \\ \class{blue}7 \\ \class{blue}8 \end{bmatrix}$ we have that
+For the matrix $A = \begin{pmatrix}  1 & 3 & 1 \\ 1 & 4 & 2 \\ 3 & 1 & 5  \end{pmatrix}$
+and the vector $\vect{v} = \begin{pmatrix}  \class{blue}6 \\ \class{blue}7 \\ \class{blue}8 \end{pmatrix}$ we have that
 
 $$
-  A^{(2)}(\vect{v}) = \begin{bmatrix}  1 & \class{blue}6 & 1 \\ 1 & \class{blue}7 & 2 \\ 3 & \class{blue}8 & 5  \end{bmatrix}.
+  A^{(2)}(\vect{v}) = \begin{pmatrix}  1 & \class{blue}6 & 1 \\ 1 & \class{blue}7 & 2 \\ 3 & \class{blue}8 & 5  \end{pmatrix}.
 $$
 
 ::::::
@@ -430,12 +430,12 @@ x_1  - x_2   + 2x_3 & = & 4 \\
 \end{array}
 \right.
 \quad\quad \text{i.e.,} \quad
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 2 & 1 \\ 1 & -1 & 2 \\ 3 & 1 & -5
-\end{bmatrix}
-\left[\begin{array}{c} x_1 \\ x_2 \\ x_3  \end{array} \right]
+\end{pmatrix}
+\left(\begin{array}{c} x_1 \\ x_2 \\ x_3  \end{array} \right)
  =
-\begin{bmatrix}3 \\ 4 \\ 1  \end{bmatrix}.
+\begin{pmatrix}3 \\ 4 \\ 1  \end{pmatrix}.
 $$
 
 First of all, the determinant of $A$ can be computed as follows (in the first step we use column reduction, with the boxed 1 as a pivot):
@@ -471,8 +471,8 @@ The following proof of Cramer's rule rests rather nicely on properties of the de
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:DetExtras:Cramer`
 :class: tudproof, dropdown
 
-Suppose $\vect{x} = \vect{c} = \left[\begin{array}{c}  c_1 \\ \vdots\\ c_n\end{array} \right]
-$ is the unique solution of the linear system $A\vect{x} = \vect{b}$, with the invertible matrix $A = [ \vect{a}_1 \,  \,  \vect{a}_2 \, \ldots \,\vect{a}_n ]$.
+Suppose $\vect{x} = \vect{c} = \left(\begin{array}{c}  c_1 \\ \vdots\\ c_n\end{array} \right)
+$ is the unique solution of the linear system $A\vect{x} = \vect{b}$, with the invertible matrix $A = ( \vect{a}_1 \,  \,  \vect{a}_2 \, \ldots \,\vect{a}_n )$.
 
 We show that Formula {eq}`Eq:DetExtras:Cramer` holds for $c_1$. The argument can be copied for the other $c_i$.
 
@@ -494,8 +494,8 @@ $$
 So we have
 
 $$
-\det{[(c_1\vect{a}_1+ \,\ldots\, + c_n\vect{a}_n - \vect{b}) \,\,\,\vect{a}_2\,\, \ldots \,\, \vect{a}_n]}
-=\det{[\vect{0} \,\,\vect{a}_2 \,\, \ldots\,\,\vect{a}_n]}  = 0.
+\det{((c_1\vect{a}_1+ \,\ldots\, + c_n\vect{a}_n - \vect{b}) \,\,\,\vect{a}_2\,\, \ldots \,\, \vect{a}_n)}
+=\det{(\vect{0} \,\,\vect{a}_2 \,\, \ldots\,\,\vect{a}_n)}  = 0.
 $$
 
 By the linearity property (in all of the columns) of the determinant ({prf:ref}`Prop:DetRowReduction:SumofCols`) we may deduce
@@ -531,7 +531,7 @@ Cramer's formula seems the solution to all your linear systems. However, it has 
 
 <u>Disclaimer 1</u> &nbsp; Cramer's formula can only be used for a  linear system with a coefficient  matrix that is both **square** and **invertible**.
 
-<u>Disclaimer 2</u> &nbsp; For a system with two equations in two unknowns Cramer's rule may come in handy, but for solving larger systems it is **highly inefficient**. For instance, for a system of four equations in four unknowns, to find the solution using Cramer's rule, one needs to compute five $4 \times 4$ determinants. The good-old method using the augmented matrix $[\,A\,|\,\vect{b}\,]$ only asks for one row reduction process.
+<u>Disclaimer 2</u> &nbsp; For a system with two equations in two unknowns Cramer's rule may come in handy, but for solving larger systems it is **highly inefficient**. For instance, for a system of four equations in four unknowns, to find the solution using Cramer's rule, one needs to compute five $4 \times 4$ determinants. The good-old method using the augmented matrix $(\,A\,|\,\vect{b}\,)$ only asks for one row reduction process.
 
 ::::::
 
@@ -556,22 +556,22 @@ The following example serves as an illustration of what is going on here.
 
 ::::::{prf:example}
 
-Let $A =  \left[\begin{array}{rrrr} 
+Let $A =  \left(\begin{array}{rrrr} 
 a_{11} &a_{12} &a_{13} &a_{14}  \\ 
 a_{21} &a_{22} &a_{23} &a_{24}  \\ 
 a_{31} &a_{32} &a_{33} &a_{34}  \\ 
 a_{41} &a_{42} &a_{43} &a_{44} 
-\end{array} \right]
+\end{array} \right)
 $ be any $4 \times 4$ matrix.
 
 Then &nbsp;
 $
-A^{(4)}(\vect{e}_2) = \left[\begin{array}{rrrr}
+A^{(4)}(\vect{e}_2) = \left(\begin{array}{rrrr}
 a_{11} &a_{12} &a_{13} &0 \\
 a_{21} &a_{22} &a_{23} &1 \\
 a_{31} &a_{32} &a_{33} &0 \\
 a_{41} &a_{42} &a_{43} &0
-\end{array} \right].$
+\end{array} \right).$
 
 Expanding along the fourth column gives
 
@@ -598,13 +598,13 @@ If $A$ is an invertible $n \times n$ matrix then the inverse of $A$ is given by
 :::::{math}
 :label: Eq:DetExtras:Inverse
 
-A^{-1}  = \dfrac{1}{\det{A}} \left[\begin{array}{ccccc}
+A^{-1}  = \dfrac{1}{\det{A}} \left(\begin{array}{ccccc}
 C_{11} &C_{21} &C_{31} & \ldots &C_{n1} \\
 C_{12} &C_{22} &C_{32} & \ldots &C_{n2} \\
 C_{13} &C_{23} &C_{33} & \ldots &C_{n3} \\
 \vdots & \vdots &\vdots & \ddots & \vdots \\
 C_{1n} &C_{2n} &C_{3n} & \ldots &C_{nn} \\
-\end{array} \right].
+\end{array} \right).
 :::::
 
 ::::::
@@ -629,13 +629,13 @@ For the last step we used {prf:ref}`Prop:DetExtras:ReplaceColGivesCofactor`.
 For an $n \times n$ matrix $A$ the matrix
 
 $$
-\left[\begin{array}{ccccc}
+\left(\begin{array}{ccccc}
 C_{11} &C_{12} &C_{13} & \ldots &C_{1n}  \\
 C_{21} &C_{22} &C_{23} & \ldots &C_{2n}  \\
 C_{31} &C_{32} &C_{33} & \ldots &C_{3n}  \\
 \vdots & \vdots &\vdots & \ddots & \vdots \\
 C_{n1} &C_{n2} &C_{n3} & \ldots &C_{nn}  \\
-\end{array} \right]
+\end{array} \right)
 $$
 
 is called its **cofactor matrix**.
@@ -643,13 +643,13 @@ is called its **cofactor matrix**.
 The **adjugate matrix** of $A$ is defined as the transpose of the cofactor matrix. So
 
 $$
-\text{Adj}(A) =  \left[\begin{array}{ccccc}
+\text{Adj}(A) =  \left(\begin{array}{ccccc}
 C_{11} &C_{21} &C_{31} & \ldots &C_{n1}  \\
 C_{12} &C_{22} &C_{32} & \ldots &C_{n2}  \\
 C_{13} &C_{23} &C_{33} & \ldots &C_{n3}  \\
 \vdots & \vdots &\vdots & \ddots & \vdots \\
 C_{1n} &C_{2n} &C_{3n} & \ldots &C_{nn}  \\
-\end{array} \right]
+\end{array} \right)
 .
 $$
 
@@ -696,20 +696,20 @@ And second {prf:ref}`Cor:DetRowReduction:EqualRows`: the determinant of a matrix
 Let us consider the product &nbsp; $\text{Adj}(A) \cdot A$ &nbsp; very carefully:
 
 $$
-\left[\begin{array}{ccccc}
+\left(\begin{array}{ccccc}
 C_{11} &C_{21} &C_{31} & \ldots &C_{n1}  \\
 C_{12} &C_{22} &C_{32} & \ldots &C_{n2}  \\
 C_{13} &C_{23} &C_{33} & \ldots &C_{n3}  \\
 \vdots & \vdots &\vdots & \ddots & \vdots \\
 C_{1n} &C_{2n} &C_{3n} & \ldots &C_{nn}  \\
-\end{array} \right]
-\left[\begin{array}{ccccc}
+\end{array} \right)
+\left(\begin{array}{ccccc}
 a_{11} &a_{12} &a_{13} & \ldots &a_{1n}  \\
 a_{21} &a_{22} &a_{23} & \ldots &a_{2n}  \\
 a_{31} &a_{32} &a_{33} & \ldots &a_{3n}  \\
 \vdots & \vdots &\vdots & \ddots & \vdots \\
 a_{n1} &a_{n2} &a_{n3} & \ldots &a_{nn}  \\
-\end{array} \right].
+\end{array} \right).
 $$
 
 On the diagonal we see that the $j$th entry is equal to
@@ -731,10 +731,10 @@ $A$ is replaced by the $k$th column of $A$. Since this matrix has two equal colu
 
 For $n = 2$ {prf:ref}`Prop:DetExtras:Inverse` gives us back the formula for the inverse 
 of {prf:ref}`Prop:MatrixInv:Inverse2x2`. That is, if we define the determinant of 
-a $1 \times 1$ matrix $A = [a]$ as the number $a$ .
+a $1 \times 1$ matrix $A = (a)$ as the number $a$ .
 
 For an arbitrary invertible $3 \times 3$ matrix
-$A=\left[\begin{array}{ccc} a_{11} &a_{12} &a_{13} \\ a_{21} &a_{22} &a_{23} \\ a_{31} &a_{32} &a_{33} \end{array} \right] $ the formula yields
+$A=\left(\begin{array}{ccc} a_{11} &a_{12} &a_{13} \\ a_{21} &a_{22} &a_{23} \\ a_{31} &a_{32} &a_{33} \end{array} \right) $ the formula yields
 
 $$
 A^{-1}  =  \dfrac{1}{\begin{vmatrix}
@@ -742,7 +742,7 @@ a_{11} &a_{12} &a_{13}   \\
 a_{21} &a_{22} &a_{23}  \\
 a_{31} &a_{32} &a_{33}
 \end{vmatrix}}
-\left[\begin{array}{ccc}
+\left(\begin{array}{ccc}
 \begin{vmatrix} a_{22} & a_{23} \\ a_{32} & a_{33}  \end{vmatrix} &
 - \begin{vmatrix} a_{12} & a_{13} \\ a_{32} & a_{33}  \end{vmatrix} &
 \begin{vmatrix} a_{12} & a_{13} \\ a_{22} & a_{23}  \end{vmatrix} \\
@@ -753,14 +753,14 @@ a_{31} &a_{32} &a_{33}
 - \begin{vmatrix} a_{11} & a_{31} \\ a_{12} & a_{32}  \end{vmatrix} &
 \begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22}  \end{vmatrix}
 \end{array}
-\right].
+\right).
 $$
 
 ::::::{prf:remark}
 :label: Rem:DetExtras:Disclaimer2
 
 Like Cramer's rule, the formula for the inverse is **highly inefficient**.
-The comparison between the efforts required to compute the inverse via the adjugate matrix versus row reduction of the augmented matrix $[\,A\,|\,I\,]$ works out rather favorably for the latter. A glimpse of this inefficiency is shown by the above formula for the inverse of a $3 \times 3$ matrix.
+The comparison between the efforts required to compute the inverse via the adjugate matrix versus row reduction of the augmented matrix $(\,A\,|\,I\,)$ works out rather favorably for the latter. A glimpse of this inefficiency is shown by the above formula for the inverse of a $3 \times 3$ matrix.
 
 ::::::
 
@@ -790,9 +790,9 @@ Conversely, we can write the cross product in terms containing determinants.
 :label: Eq:DetExtras:DetCrossProd
 
 \begin{array}{rcl}
-\left[\begin{array}{c} a_1 \\ a_2 \\ a_3 \end{array}\right] \times
-\left[\begin{array}{c}b_1 \\ b_2 \\ b_3 \end{array}\right]
-&=& \left[\begin{array}{c}a_2b_3-a_3b_2 \\ a_3b_1 - a_1b_3 \\ a_2b_1-a_2b_1 \end{array}\right] \\
+\left(\begin{array}{c} a_1 \\ a_2 \\ a_3 \end{array}\right) \times
+\left(\begin{array}{c}b_1 \\ b_2 \\ b_3 \end{array}\right)
+&=& \left(\begin{array}{c}a_2b_3-a_3b_2 \\ a_3b_1 - a_1b_3 \\ a_2b_1-a_2b_1 \end{array}\right) \\
 &=&
 \left|\begin{array}{cc} a_2 & b_2 \\a_3 & b_3 \end{array}\right|\vect{e}_1
 - \left|\begin{array}{cc} a_1 & b_1 \\ a_3 & b_3 \end{array}\right|\vect{e}_2
@@ -810,10 +810,10 @@ $$
 In exactly the same fashion, we can, for $n-1$ vectors $\vect{a}_1, \ldots, \vect{a}_{n-1}$ in $\R^n$, say
 
 $$
-\vect{a}_1 = \left[\begin{array}{c}  a_{11} \\ a_{21} \\ \vdots \\  a_{n1}      \end{array}\right], \quad
-\vect{a}_2 = \left[\begin{array}{c}  a_{12} \\ a_{22} \\ \vdots \\  a_{n2}      \end{array}\right], \quad
+\vect{a}_1 = \left(\begin{array}{c}  a_{11} \\ a_{21} \\ \vdots \\  a_{n1}      \end{array}\right), \quad
+\vect{a}_2 = \left(\begin{array}{c}  a_{12} \\ a_{22} \\ \vdots \\  a_{n2}      \end{array}\right), \quad
 \ldots \quad , \quad
-\vect{a}_{n-1} = \left[\begin{array}{c}  a_{1,(n-1)} \\ a_{2(n-1)} \\ \vdots \\  a_{n,(n-1)}      \end{array}\right]
+\vect{a}_{n-1} = \left(\begin{array}{c}  a_{1,(n-1)} \\ a_{2(n-1)} \\ \vdots \\  a_{n,(n-1)}      \end{array}\right)
 $$
 
 define
@@ -852,7 +852,7 @@ $ \{\vect{a}_1, \, \ldots, \,\vect{a}_{n-1}\}$ is linearly dependent if and only
 </li>
 <li>
 
-If $ \{\vect{a}_1, \ldots, \vect{a}_{n-1}\}$ is linearly independent, then $\det{\left[\,\vect{a}_1, \ldots, \vect{a}_{n-1}, \vect{a}^{\ast}_n\,\right]
+If $ \{\vect{a}_1, \ldots, \vect{a}_{n-1}\}$ is linearly independent, then $\det{\left(\,\vect{a}_1, \ldots, \vect{a}_{n-1}, \vect{a}^{\ast}_n\,\right)
 } > 0$.
 
 </li>
@@ -873,8 +873,8 @@ For a linearly dependent set of vectors property iv. implies that $\vect{a}^{\as
 ::::::{prf:example}
 
 For $n = 2$ we get, for an arbitrary vector $\vect{v} = 
-\left[\begin{array}{c}   a \\ b   \end{array}\right]
- \neq \left[\begin{array}{c}   0\\0  \end{array}\right]
+\left(\begin{array}{c}   a \\ b   \end{array}\right)
+ \neq \left(\begin{array}{c}   0\\0  \end{array}\right)
 $:
 
 $$
@@ -883,14 +883,14 @@ $$
 \left|\begin{array}{cc}
 a & \vect{e}_1\\
 b & \vect{e}_2
-\end{array}\right|=  a\vect{e}_1 - b\vect{e}_2 = \left[\begin{array}{c}    -b \\ a          \end{array}\right|.
+\end{array}\right|=  a\vect{e}_1 - b\vect{e}_2 = \left(\begin{array}{c}    -b \\ a          \end{array}\right|.
 $$
 
 This is indeed a vector orthogonal to $\vect{v}$ with the same 'one-dimensional volume', i.e., length, as the vector $\vect{v}$.
 
 Moreover, $\left(\vect{v}, \vect{w}\right)
- =  \left(\left[\begin{array}{c}   a \\ b   \end{array}\right]
-,  \left[\begin{array}{c} -b \\ a   \end{array}\right]
+ =  \left(\left(\begin{array}{c}   a \\ b   \end{array}\right)
+,  \left(\begin{array}{c} -b \\ a   \end{array}\right)
  \right)
 $
 is positively oriented, as can be seen by making a sketch.
@@ -904,12 +904,12 @@ This shows that the construction also works in $\R^2$.
 We will find the vector $\mathbf{v} = \vect{a}^{\ast}_4 = N(\vect{a}_1, \vect{a}_2, \vect{a}_3)$ for the columns of the matrix
 
 $$
-A = \left[\begin{array}{ccc}
+A = \left(\begin{array}{ccc}
                  1 &  1 &  3 \\
                  1 & -1 &  1 \\
                  1 &  1 & -3 \\
                 -1 &  1 &  1
-       \end{array}\right].
+       \end{array}\right).
 $$
 
 The first entry $v_1$ is computed as
@@ -930,11 +930,11 @@ $$
 All in all we find
 
 $$
-  \vect{v} = \left[\begin{array}{c}
+  \vect{v} = \left(\begin{array}{c}
                   -4 \\ 12 \\ 4 \\ 12
-        \end{array}\right] =  (-4)\left[\begin{array}{c}
+        \end{array}\right) =  (-4)\left(\begin{array}{c}
                   1 \\ -3 \\ -1 \\ -3
-        \end{array}\right].
+        \end{array}\right).
 $$
 
 By taking inner products, or by computing $A^T\vect{v}$, it is checked that indeed
@@ -976,11 +976,11 @@ a_{21} & a_{22} & \ldots & a_{2,(n-1)} & v_2 \\
 \vdots & \vdots & & \vdots & \vdots \\
 a_{n1} & a_{n2} & \ldots & a_{n,(n-1)} & v_n
 \end{array}\right|\\
-&=& \det{[\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\,\vect{v}\,]}.
+&=& \det{(\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\,\vect{v}\,)}.
 \end{array}
 :::::
 
-This immediate generalization of the identity $(\vect{a}\times\vect{b})\ip\vect{c} = \det{[\,\vect{a}\,\,\vect{b}\,\,\vect{c}\,] }$ follows if
+This immediate generalization of the identity $(\vect{a}\times\vect{b})\ip\vect{c} = \det{(\,\vect{a}\,\,\vect{b}\,\,\vect{c}\,) }$ follows if
 we write Equation {eq}`Eq:DetExtras:DetCrossProd-ndim` as in Equation {eq}`Eq:DetExtras:DetCrossProd`.
 
 <ol type = "i">
@@ -992,7 +992,7 @@ Take any of the vectors $\vect{a}_j$ . Then (by Equation {eq}`Eq:DetExtras:Deta1
 <BR>
 
 $$
-\vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1})  \ip \vect{a}_j= \det{ \left[\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\,\vect{a}_j\, \right]
+\vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1})  \ip \vect{a}_j= \det{ \left(\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\,\vect{a}_j\, \right)
  } = 0,
 $$
 
@@ -1011,12 +1011,12 @@ $$
 First suppose that the columns of the matrix
 
 $$
-\begin{bmatrix}
+\begin{pmatrix}
 a_{11} & a_{12} & \ldots & a_{1,(n-1)} \\
 a_{21} & a_{22} & \ldots & a_{2,(n-1)}  \\
 \vdots & \vdots &        &      \vdots \\
 a_{n1} & a_{n2} & \ldots & a_{n,(n-1)}
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 are linearly dependent. Then for each vector $\vect{v}$ in $\R^n$
@@ -1024,7 +1024,7 @@ are linearly dependent. Then for each vector $\vect{v}$ in $\R^n$
 <BR>
 
 $$
-\vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1})  \ip \vect{v}  =  \det{ \left[\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\,\vect{v}\, \right]
+\vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1})  \ip \vect{v}  =  \det{ \left(\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\,\vect{v}\, \right)
  }  =  0.
 $$
 
@@ -1033,7 +1033,7 @@ This implies that $\vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1}) $ must be the ze
 
 <BR>
 
-To prove the other implication, suppose the vectors $\{ \vect{a}_1, \,\ldots\, \, , \vect{a}_{n-1} \}$ are linearly independent. Then the $n \times (n-1)$ matrix $A = [ \,\vect{a}_1 \,\,  \ldots \,\,  \vect{a}_{n-1} \,] $  has rank  $n-1$ . The matrix $A$ must have $n-1$ linearly independent rows. Say, if we delete the $k$th row we have an $(n-1) \times (n-1)$ sub-matrix with independent rows.
+To prove the other implication, suppose the vectors $\{ \vect{a}_1, \,\ldots\, \, , \vect{a}_{n-1} \}$ are linearly independent. Then the $n \times (n-1)$ matrix $A = (\,\vect{a}_1 \,\,  \ldots \,\,  \vect{a}_{n-1} \,) $  has rank  $n-1$ . The matrix $A$ must have $n-1$ linearly independent rows. Say, if we delete the $k$th row we have an $(n-1) \times (n-1)$ sub-matrix with independent rows.
 Then the coefficient of $\vect{e}_k$ in the expansion of
 $ \vect{N} ( \vect{a}_1, \ldots, \vect{a}_{n-1})$,
 which by the defining Equation {eq}`Eq:DetExtras:DetCrossProd-ndim` is precisely (plus or minus) the determinant of this submatrix, is nonzero.
@@ -1047,7 +1047,7 @@ This is a consequence of the observation (again using {eq}`Eq:DetExtras:Deta1anv
 
 $$
 \begin{array}{rcl}
-  \det{\left[\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\,\vect{N}(\vect{a}_1, \ldots,  \vect{a}_{n-1})\, \right]}
+  \det{\left(\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\,\vect{N}(\vect{a}_1, \ldots,  \vect{a}_{n-1})\, \right)}
   &=& \vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1}) \ip \vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1})\\
   &=& \norm{\vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1})}^2 \geq 0,
 \end{array}
@@ -1065,7 +1065,7 @@ We defined the volume of the $n$-dimensional parallelepiped $\mathcal{P} \left(\
  
 $$ 
 \text{Vol}\!_n\!\left(\mathcal{P}(\vect{a}_1, \ldots, \vect{a}_{n}) \right)
- = |\det{\left[\,\vect{a}_1\,\, \ldots\,\, \,\vect{a}_{n}\,\right]
+ = |\det{\left(\,\vect{a}_1\,\, \ldots\,\, \,\vect{a}_{n}\,\right)
  }|. 
 $$
 
@@ -1115,7 +1115,7 @@ $$
 \begin{array}{rcl}
 \text{Vol}\!_n\!\left(\mathcal{P}(\vect{a}_1, \ldots, \vect{a}_{n-1}, \vect{a}^{\ast}_n) \right)
  &=&
-|\det{ \left[\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\, \vect{a}^{\ast}_n\, \right]
+|\det{ \left(\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\, \vect{a}^{\ast}_n\, \right)
  }| \\
 &=&
 | \vect{a}^{\ast}_n\ip \vect{a}^{\ast}_n| = \norm{\vect{a}^{\ast}_n}^2.

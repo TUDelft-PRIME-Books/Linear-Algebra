@@ -158,13 +158,13 @@ The effect of the scalings is that all along the way we keep vectors with larges
 ::::{prf:example}
 :label: Ex:PowerMethod:FirstExample
 
-Let $A$ be the matrix &nbsp; $\begin{bmatrix}5 & 2 \\ 2 & 8 \end{bmatrix}$. <BR>
+Let $A$ be the matrix &nbsp; $\begin{pmatrix}5 & 2 \\ 2 & 8 \end{pmatrix}$. <BR>
 The matrix is symmetric, hence diagonalizable. Its eigenvalues are $\lambda_1 = 9$, $\lambda_2 = 4$.
 
 If we start the process of {prf:ref}`Alg:PowerMethod:PowMed` from the initial vector
 
 $$
-  \vect{x}_0 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}
+  \vect{x}_0 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}
 $$
 
 up to four decimals we find the following results
@@ -172,12 +172,12 @@ up to four decimals we find the following results
 $$ 
    \begin{array}{|c|c|c|} \hline
    n & \vect{y}_n & \vect{x}_n \\ \hline
-   1 &  \begin{bmatrix} 7 \\ 10 \end{bmatrix} & \begin{bmatrix} 0.7 \\ 1 \end{bmatrix} \\[1ex]
-   2 &  \begin{bmatrix} 5.5 \\ 9.4 \end{bmatrix} & \begin{bmatrix}  0.5851 \\ 1 \end{bmatrix} \\[1ex]
-   3 &  \begin{bmatrix} 4.9255 \\ 9.1702 \end{bmatrix} & \begin{bmatrix}  0.5371 \\ 1 \end{bmatrix} \\[1ex] 
-   4 &  \begin{bmatrix} 4.6856 \\ 9.0742 \end{bmatrix} & \begin{bmatrix}  0.5164 \\ 1 \end{bmatrix} \\[1ex] 
+   1 &  \begin{pmatrix} 7 \\ 10 \end{pmatrix} & \begin{pmatrix} 0.7 \\ 1 \end{pmatrix} \\[1ex]
+   2 &  \begin{pmatrix} 5.5 \\ 9.4 \end{pmatrix} & \begin{pmatrix}  0.5851 \\ 1 \end{pmatrix} \\[1ex]
+   3 &  \begin{pmatrix} 4.9255 \\ 9.1702 \end{pmatrix} & \begin{pmatrix}  0.5371 \\ 1 \end{pmatrix} \\[1ex] 
+   4 &  \begin{pmatrix} 4.6856 \\ 9.0742 \end{pmatrix} & \begin{pmatrix}  0.5164 \\ 1 \end{pmatrix} \\[1ex] 
    \vdots & \vdots & \vdots \\[1ex]
-   10 &  \begin{bmatrix} 4.5014 \\ 9.0006 \end{bmatrix} & \begin{bmatrix}  0.5001 \\ 1 \end{bmatrix} \\[1ex] \hline
+   10 &  \begin{pmatrix} 4.5014 \\ 9.0006 \end{pmatrix} & \begin{pmatrix}  0.5001 \\ 1 \end{pmatrix} \\[1ex] \hline
   \end{array}
 $$
 
@@ -185,7 +185,7 @@ $$
 The last vector,  $\vect{x}_{10}$,  is almost equal to the vector
 
 $$
-  \vect{v}_1 = \begin{bmatrix} 0.5 \\ 1 \end{bmatrix},
+  \vect{v}_1 = \begin{pmatrix} 0.5 \\ 1 \end{pmatrix},
 $$
 
 which is the eigenvector with largest entry 1 for the dominant eigenvalue $\lambda = 9$. <BR>
@@ -197,24 +197,24 @@ First of all, and most importantly, the _ratio_ $\lambda_2/\lambda_1$ of the two
 For the given matrix $A$ this can be analysed in detail. A complete set of eigenvalues and eigenvectors is given by
 
 $$
-  \lambda_1 = 9,\,\,\vect{v}_1 = \begin{bmatrix} 1 \\ 2 \end{bmatrix}, \quad
-  \lambda_2 = 4,\,\,\vect{v}_2 = \begin{bmatrix} 2 \\ -1 \end{bmatrix}.
+  \lambda_1 = 9,\,\,\vect{v}_1 = \begin{pmatrix} 1 \\ 2 \end{pmatrix}, \quad
+  \lambda_2 = 4,\,\,\vect{v}_2 = \begin{pmatrix} 2 \\ -1 \end{pmatrix}.
 $$
 
 At the start we have
 
 $$
-   \vect{x}_0 =  \begin{bmatrix} 1 \\ 1 \end{bmatrix}  = 
-   c_1\begin{bmatrix} 1 \\ 2 \end{bmatrix} + c_2\begin{bmatrix} 2 \\ -1 \end{bmatrix}  =
-   \tfrac35\begin{bmatrix} 1 \\ 2 \end{bmatrix} + \tfrac15\begin{bmatrix} 2 \\ -1 \end{bmatrix}.
+   \vect{x}_0 =  \begin{pmatrix} 1 \\ 1 \end{pmatrix}  = 
+   c_1\begin{pmatrix} 1 \\ 2 \end{pmatrix} + c_2\begin{pmatrix} 2 \\ -1 \end{pmatrix}  =
+   \tfrac35\begin{pmatrix} 1 \\ 2 \end{pmatrix} + \tfrac15\begin{pmatrix} 2 \\ -1 \end{pmatrix}.
 $$
 
 And then after $k$ steps, if we would not rescale, we would get
 
 $$
-   A^k\vect{x}_0 =  c_19^k\begin{bmatrix} 1 \\ 2 \end{bmatrix} + c_24^k\begin{bmatrix} 2 \\ -1 \end{bmatrix}
-  = 9^k \left( c_1\begin{bmatrix} 1 \\ 2 \end{bmatrix} +
-   c_2\left(\frac49\right)^k\begin{bmatrix} 2 \\ -1 \end{bmatrix}  \right).
+   A^k\vect{x}_0 =  c_19^k\begin{pmatrix} 1 \\ 2 \end{pmatrix} + c_24^k\begin{pmatrix} 2 \\ -1 \end{pmatrix}
+  = 9^k \left( c_1\begin{pmatrix} 1 \\ 2 \end{pmatrix} +
+   c_2\left(\frac49\right)^k\begin{pmatrix} 2 \\ -1 \end{pmatrix}  \right).
 $$
 
 By rescaling we get a vector in the same direction with highest entry equal to 1.
@@ -228,8 +228,8 @@ Thus the term with the eigenvector $\mathbf{v}_2$ in the expression within the p
 $$
    c_1 \vect{v}_1 +
    c_2\left(\frac{\lambda_2}{\lambda_1}\right)^k\vect{v}_2   =
-    \frac35\begin{bmatrix} 1 \\ 2 \end{bmatrix} +
-   \frac15\left(\frac49\right)^k\begin{bmatrix} 2 \\ -1 \end{bmatrix}
+    \frac35\begin{pmatrix} 1 \\ 2 \end{pmatrix} +
+   \frac15\left(\frac49\right)^k\begin{pmatrix} 2 \\ -1 \end{pmatrix}
 $$
 
 soon becomes negligibly small compared to the term with the eigenvector $\vect{v}_1$. <BR>
@@ -243,12 +243,12 @@ In the exceptional situation where the 'first guess' was exactly a multiple of t
 Let us apply the power method to the following matrix plus initial 'guess'
 
 $$
-  A = \begin{bmatrix}
+  A = \begin{pmatrix}
      8  &   9  &  -6\\
      1  &   6  &  -4\\
-    -4  &   4  &  -8        \end{bmatrix}, \quad
-       \vect{x}_0 = \begin{bmatrix}
-         1 \\ 1 \\ 1        \end{bmatrix}.
+    -4  &   4  &  -8        \end{pmatrix}, \quad
+       \vect{x}_0 = \begin{pmatrix}
+         1 \\ 1 \\ 1        \end{pmatrix}.
 $$
 
 We will continue refreshing the vector $\vect{x}$ until two consecutive
@@ -263,15 +263,15 @@ The current value of $\vect{x}_{26}$,
 up to four decimals, is then
 
 $$
-    \vect{x}_{26} = \begin{bmatrix}
-         1.0000 \\ 0.2891 \\ -0.1459  \end{bmatrix}.
+    \vect{x}_{26} = \begin{pmatrix}
+         1.0000 \\ 0.2891 \\ -0.1459  \end{pmatrix}.
 $$
 
 And by computing $A\vect{x}_{26}$, which yields
 
 $$
-  A\vect{x}_{26} = \begin{bmatrix}
-         11.4780 \\ 3.3187 \\ -1.6758 \end{bmatrix},
+  A\vect{x}_{26} = \begin{pmatrix}
+         11.4780 \\ 3.3187 \\ -1.6758 \end{pmatrix},
 $$
 
 we read off that the dominant eigenvalue is (approximately)
@@ -280,10 +280,10 @@ $\lambda_1 = 11.4780$.
 Lastly, for comparison's sake
 
 $$
-    A\vect{x}_{26} = \begin{bmatrix}
-         11.4780 \\ 3.3187 \\ -1.6758 \end{bmatrix} \quad \text{and} \quad
-  11.4780\vect{x}_{26} = \begin{bmatrix}
-         11.4780 \\ 3.3188 \\ -1.6752 \end{bmatrix}.              
+    A\vect{x}_{26} = \begin{pmatrix}
+         11.4780 \\ 3.3187 \\ -1.6758 \end{pmatrix} \quad \text{and} \quad
+  11.4780\vect{x}_{26} = \begin{pmatrix}
+         11.4780 \\ 3.3188 \\ -1.6752 \end{pmatrix}.              
 $$
 
 In this example the actual eigenvalues up to five decimals are given by
@@ -307,18 +307,18 @@ In the next example  things do not work out so smoothly.
 ::::{prf:example}
 :label: Ex:PowerMethod:BadMatrix-1
 
-Consider the matrix $A = \begin{bmatrix}
+Consider the matrix $A = \begin{pmatrix}
      3 &4 &-1& 3 \\ 
      4 &-2& 3& 2\\
      2 & 1& 6& 3\\
-     3 & 4& 2&-7 \end{bmatrix}$ and the initial vector
-$\mathbf{x}_0 = \begin{bmatrix}   2 \\ 2 \\ 4 \\ 1 \end{bmatrix}$.
+     3 & 4& 2&-7 \end{pmatrix}$ and the initial vector
+$\mathbf{x}_0 = \begin{pmatrix}   2 \\ 2 \\ 4 \\ 1 \end{pmatrix}$.
 
 If we (let some computer program) run one hundred cycles of the power method algorithm, the last two iterates are
 
 $$
-   \vect{x}_{99} = \begin{bmatrix}   0.3345 \\ 0.5096 \\ 1.0000 \\ 0.6336 \end{bmatrix}, \quad
-   \vect{x}_{100} = \begin{bmatrix}   0.4343 \\ 0.5051 \\ 1.0000 \\ 0.0668 \end{bmatrix}.
+   \vect{x}_{99} = \begin{pmatrix}   0.3345 \\ 0.5096 \\ 1.0000 \\ 0.6336 \end{pmatrix}, \quad
+   \vect{x}_{100} = \begin{pmatrix}   0.4343 \\ 0.5051 \\ 1.0000 \\ 0.0668 \end{pmatrix}.
 $$
 
 The process has by far not reached its 'steady state'. Look at the (significant!) change in the fourth entry.
@@ -326,25 +326,25 @@ The process has by far not reached its 'steady state'. Look at the (significant!
 After one hundred extra cycles, the output is stil pretty bad:
 
 $$
-   \vect{x}_{199} = \begin{bmatrix}   0.1374 \\ 0.3626 \\ 0.7028 \\1.0000 \end{bmatrix}, \quad
-   \vect{x}_{200} = \begin{bmatrix}   0.5297 \\ 0.5007 \\ 1.0000 \\ -0.4751 \end{bmatrix}.
+   \vect{x}_{199} = \begin{pmatrix}   0.1374 \\ 0.3626 \\ 0.7028 \\1.0000 \end{pmatrix}, \quad
+   \vect{x}_{200} = \begin{pmatrix}   0.5297 \\ 0.5007 \\ 1.0000 \\ -0.4751 \end{pmatrix}.
 $$
 
 Only after 700 to 800 iterations the process starts to stabilize:
 
 $$
-   \vect{x}_{799} = \begin{bmatrix}   -0.2506 \\ -0.0763 \\ -0.1672 \\1.0000 \end{bmatrix} \,\, \approx \,\,
-   \vect{x}_{800} = \begin{bmatrix}   -0.2515 \\ -0.0773 \\ -0.1691 \\ 1.0000 \end{bmatrix} \,\, \approx\,\,
-   \mathbf{v}_1 = \begin{bmatrix}  -0.2510 \\ -0.0768 \\ -0.1682 \\ 1.0000 \end{bmatrix}.
+   \vect{x}_{799} = \begin{pmatrix}   -0.2506 \\ -0.0763 \\ -0.1672 \\1.0000 \end{pmatrix} \,\, \approx \,\,
+   \vect{x}_{800} = \begin{pmatrix}   -0.2515 \\ -0.0773 \\ -0.1691 \\ 1.0000 \end{pmatrix} \,\, \approx\,\,
+   \mathbf{v}_1 = \begin{pmatrix}  -0.2510 \\ -0.0768 \\ -0.1682 \\ 1.0000 \end{pmatrix}.
 $$
 
 To find the corresponding eigenvalue we compute
 
 $$
-  \vect{y} = A\vect{x}_{800} = \begin{bmatrix}   2.1056 \\ 0.6414 \\ 1.4051 \\
-  -8.4018  \end{bmatrix} \,\,\approx \,\,-8.4018\vect{x}_{800} \,=\,
-  \begin{bmatrix}   2.1127 \\ 0.6494 \\ 1.4209 \\
-  -8.4018 \end{bmatrix}.
+  \vect{y} = A\vect{x}_{800} = \begin{pmatrix}   2.1056 \\ 0.6414 \\ 1.4051 \\
+  -8.4018  \end{pmatrix} \,\,\approx \,\,-8.4018\vect{x}_{800} \,=\,
+  \begin{pmatrix}   2.1127 \\ 0.6494 \\ 1.4209 \\
+  -8.4018 \end{pmatrix}.
 $$
 
 So the largest eigenvalue $\lambda_1 \approx -8.4018$, and the above equations also shows that $\vect{x}_{800}$ is approximately an eigenvector for it.
@@ -362,9 +362,9 @@ So the factor $\left(\dfrac{\lambda_2}{\lambda_1} \right)^k$ goes to $0$ _very s
 Moreover, to aggreviate matters, we have chosen the initial vector very much in the direction of an eigenvector $\vect{v}_2$ for $\lambda_2$.
 
 $$
-  \vect{x}_0 = \begin{bmatrix}   2 \\ 2 \\ 4 \\ 1 \end{bmatrix}, \quad
-  \vect{v}_2 = \begin{bmatrix}   1.5453 \\ 2.0291 \\ 4.0000 \\ 1.3566
-  \end{bmatrix}.
+  \vect{x}_0 = \begin{pmatrix}   2 \\ 2 \\ 4 \\ 1 \end{pmatrix}, \quad
+  \vect{v}_2 = \begin{pmatrix}   1.5453 \\ 2.0291 \\ 4.0000 \\ 1.3566
+  \end{pmatrix}.
 $$
 
 If we write the initial vector as a linear combination of four unit eigenvectors
@@ -466,26 +466,26 @@ inverse may very well be a dense matrix (i.e., a matrix with many nonzero entrie
 ::::{prf:example}
 :label: Ex:PowerMethod:FirstExampleContd
 
-Let $A$ be the matrix &nbsp; $\begin{bmatrix}5 & 2 \\ 2 & 8 \end{bmatrix}$
+Let $A$ be the matrix &nbsp; $\begin{pmatrix}5 & 2 \\ 2 & 8 \end{pmatrix}$
 of the earlier {prf:ref}`Ex:PowerMethod:FirstExample`. <BR>
 We saw that $A$ has the eigenvalues $\lambda_1 = 9$ and $\lambda_2 = 4$.
 
 If we apply the Inverse Power Method, starting from
 
 $$
-  \vect{x}_0 = \begin{bmatrix} 1 \\ 1 \end{bmatrix},
+  \vect{x}_0 = \begin{pmatrix} 1 \\ 1 \end{pmatrix},
 $$
 
 we find
 
 $$
-  \vect{x}_{12} = \begin{bmatrix} 1.0000 \\ -0.4998 \end{bmatrix}.
+  \vect{x}_{12} = \begin{pmatrix} 1.0000 \\ -0.4998 \end{pmatrix}.
 $$
 
 This is indeed very close to the eigenvector
 
 $$
-   \vect{v}_2 = \begin{bmatrix} 1.0 \\ -0.5 \end{bmatrix}
+   \vect{v}_2 = \begin{pmatrix} 1.0 \\ -0.5 \end{pmatrix}
 $$
 
 for the eigenvalue $4$ of the matrix $A$.
@@ -532,39 +532,39 @@ The following  example illustrates how {prf:ref}`Prop:PowerMethod:Shifted` can b
 ::::{prf:example}
 :label:  Ex:PowerMethod:SecondExampleContd
 
-In {prf:ref}`Ex:PowerMethod:SecondExample` with the matrix $A = \begin{bmatrix}
+In {prf:ref}`Ex:PowerMethod:SecondExample` with the matrix $A = \begin{pmatrix}
      8  &   9  &  -6\\
      1  &   6  &  -4\\
-    -4  &   4  &  -8        \end{bmatrix} $
+    -4  &   4  &  -8        \end{pmatrix} $
   the power method yielded the dominant eigenvalue  $\lambda_1 = 11.4780$.
 The eigenvalue  $\lambda_1-11$   of the matrix $A - 11 I$ lies close to zero, so with high probability it will not be the dominant eigenvalue of $A - 11 I$. Thus if we run the power method algorithm 
 on the matrix
 
 $$
-   B = A - 11\,{I}  =   \begin{bmatrix}
+   B = A - 11\,{I}  =   \begin{pmatrix}
      -3  &   9  &  -6\\
      1  &   -5  &  -4\\
-    -4  &   4  &  -19        \end{bmatrix} 
+    -4  &   4  &  -19        \end{pmatrix} 
     $$
 we will eventually find an eigenvalue of $A$ different from $\lambda_1$.
 
-If we run the algorithm with the matrix $B$ and the satrting vector $\vect{x}_0 = \begin{bmatrix}
-         1 \\ 1 \\ 1        \end{bmatrix}$,
+If we run the algorithm with the matrix $B$ and the satrting vector $\vect{x}_0 = \begin{pmatrix}
+         1 \\ 1 \\ 1        \end{pmatrix}$,
 
 we find that already  $\norm{\vect{x}_{12}-\vect{x}_{11}} < 10^{-4}$, &nbsp;and that
 
 $$
-  \vect{x}_{12} = \begin{bmatrix} 0.2238 \\ 0.2736 \\ 1.0000 \end{bmatrix}, \quad
-  B\vect{x}_{12} = \begin{bmatrix} -4.2087 \\ -5.1444 \\  -18.8007 \end{bmatrix} \,\approx
-  -18.8007 \vect{x}_{12} = \begin{bmatrix} -4.2082 \\ -5.1448 \\  -18.8007 \end{bmatrix}.
+  \vect{x}_{12} = \begin{pmatrix} 0.2238 \\ 0.2736 \\ 1.0000 \end{pmatrix}, \quad
+  B\vect{x}_{12} = \begin{pmatrix} -4.2087 \\ -5.1444 \\  -18.8007 \end{pmatrix} \,\approx
+  -18.8007 \vect{x}_{12} = \begin{pmatrix} -4.2082 \\ -5.1448 \\  -18.8007 \end{pmatrix}.
 $$
 
 So $B$ has dominant eigenvalue  $\mu_1 = -18.8007$,  and 'shifting back' to $A$ we conclude that $A$ has eigenvalue  $\lambda = \mu_1+11 = -7.8007$, for the same eigenvector $\vect{x}_{12}$.  Indeed,   
 
 $$
-  \vect{x}_{12} = \begin{bmatrix} 0.2238 \\ 0.2736 \\ 1.0000 \end{bmatrix}, \quad
-  A\vect{x}_{12} = \begin{bmatrix} -1.7465 \\ -2.1343 \\  -7.8007 \end{bmatrix} \,\approx
-  -7.8007 \vect{x}_{12} = \begin{bmatrix} -1.7461 \\ -2.1347 \\  -7.8007 \end{bmatrix}.
+  \vect{x}_{12} = \begin{pmatrix} 0.2238 \\ 0.2736 \\ 1.0000 \end{pmatrix}, \quad
+  A\vect{x}_{12} = \begin{pmatrix} -1.7465 \\ -2.1343 \\  -7.8007 \end{pmatrix} \,\approx
+  -7.8007 \vect{x}_{12} = \begin{pmatrix} -1.7461 \\ -2.1347 \\  -7.8007 \end{pmatrix}.
 $$
 
   
@@ -591,23 +591,23 @@ $\mathbf{v}$ is an eigenvector of the matrix $A$ for the eigenvalue $\lambda_i =
 For a not too large matrix $A$ some idea of the location(s) of the real eigenvalues can for instance be found by considering the graph of its characteristic polynomial.
 
 ::::{prf:example}
-Consider the matrix $A = \begin{bmatrix}  3  &  -3  &  1   &  3 \\
+Consider the matrix $A = \begin{pmatrix}  3  &  -3  &  1   &  3 \\
                       0  &  -2  &  -3  & -3 \\
                      -2  &   4  &  -2  & -3 \\
-                      0  &   4  &  -1  & -2  \end{bmatrix}$.<br>
+                      0  &   4  &  -1  & -2  \end{pmatrix}$.<br>
 It can be shown that the characteristic polynomial $p_A(\lambda)$ of $A$ changes sign between $\lambda = -1$ and $\lambda = 0$, and also between $\lambda = 2$ and $\lambda = 3$.
 So we know there will be an eigenvalue close to $\alpha = 3$.
 
-If we apply the inverse power method to the matrix $B = A - 3I$, starting from the vector $\vect{x}_0 = \begin{bmatrix}  1 \\ 0 \\ 0 \\  1  \end{bmatrix}$ we find, up to four decimals,
+If we apply the inverse power method to the matrix $B = A - 3I$, starting from the vector $\vect{x}_0 = \begin{pmatrix}  1 \\ 0 \\ 0 \\  1  \end{pmatrix}$ we find, up to four decimals,
 
 $$
-  \mathbf{x}_{9} = \mathbf{x}_{10} =  \begin{bmatrix}
+  \mathbf{x}_{9} = \mathbf{x}_{10} =  \begin{pmatrix}
           1.0000  \\ 0.1407 \\ 0.4324  \\ 0.2086
-      \end{bmatrix}
+      \end{pmatrix}
     \quad \text{and} \quad
-      B\mathbf{x}_{10} = \begin{bmatrix}
+      B\mathbf{x}_{10} = \begin{pmatrix}
           -0.2287 \\ -0.0322  \\ 0.0989 \\ -0.0477
-      \end{bmatrix},
+      \end{pmatrix},
 $$
 
 From which we conclude that $\vect{x}_{10}$ is close to an eigenvector of $A$ for the eigenvalue $\lambda \approx -0.2287 + 3 = 2.7713$.   The process converges quickly since $B$ has an eigenvalue $\mu_1$ very close to zero, which makes  $1/\mu_1$  'very dominant'. 
@@ -642,12 +642,12 @@ As long as the dominant eigenvalue is real, the power method will work whether t
 Let us apply the power method to the following matrix plus initial guess
 
 $$
-  A = \begin{bmatrix}
+  A = \begin{pmatrix}
      7  &  -1  &   5\\
     -2  &   7  &   6\\
-     2  &  -2  &   6        \end{bmatrix}, \quad
-       \vect{x}_0 = \begin{bmatrix}
-         1 \\ 1 \\ 1        \end{bmatrix}.
+     2  &  -2  &   6        \end{pmatrix}, \quad
+       \vect{x}_0 = \begin{pmatrix}
+         1 \\ 1 \\ 1        \end{pmatrix}.
 $$
 
 
@@ -658,14 +658,14 @@ $$
 $$
 
 Up to four decimals  $
-    \vect{x}_{23} = \begin{bmatrix}
-         1.0000 \\ 0.3612 \\ 0.4456  \end{bmatrix}$.
+    \vect{x}_{23} = \begin{pmatrix}
+         1.0000 \\ 0.3612 \\ 0.4456  \end{pmatrix}$.
 
 And by computing $A\vect{x}$, which yields
 
 $$
-  A\vect{x} = \begin{bmatrix}
-         8.8668 \\ 3.2024 \\ 3.9512  \end{bmatrix},
+  A\vect{x} = \begin{pmatrix}
+         8.8668 \\ 3.2024 \\ 3.9512  \end{pmatrix},
 $$
 
 we read off that the dominant eigenvalue is (approximately)
@@ -719,7 +719,7 @@ To see what is going on analytically we have chosen a matrix for which we can ac
 ::::{prf:example}
 :label: Ex:PowerMethod:ComplexEx1
 
-Consider the matrix  $A = \begin{bmatrix}3 & 0 & 0 \\ 1 & 1 & 8 \\ 0 & -2 & 1 \end{bmatrix}$.
+Consider the matrix  $A = \begin{pmatrix}3 & 0 & 0 \\ 1 & 1 & 8 \\ 0 & -2 & 1 \end{pmatrix}$.
 
 The eigenvalues are  $\lambda_{1,2} = 1 \pm 4i$ and $\lambda_3 = 3$, so we have
 
@@ -727,21 +727,21 @@ $$
   |\lambda_1| = |\lambda_2|  = \sqrt{17} > |\lambda_3|.
 $$
 
-If we start the power method from  $\vect{x}_0 = \begin{bmatrix}1\\1\\1 \end{bmatrix}$
+If we start the power method from  $\vect{x}_0 = \begin{pmatrix}1\\1\\1 \end{pmatrix}$
 we get 
 
 $$
-  \vect{x}_{48} = \begin{bmatrix}0\\-0.2617\\1 \end{bmatrix}, \quad
-  \vect{x}_{49} = \begin{bmatrix}0\\1\\0.19695 \end{bmatrix}, \quad
-  \vect{x}_{50} = \begin{bmatrix}0\\1\\-0.7003 \end{bmatrix}.
+  \vect{x}_{48} = \begin{pmatrix}0\\-0.2617\\1 \end{pmatrix}, \quad
+  \vect{x}_{49} = \begin{pmatrix}0\\1\\0.19695 \end{pmatrix}, \quad
+  \vect{x}_{50} = \begin{pmatrix}0\\1\\-0.7003 \end{pmatrix}.
 $$
 
 Continuing further does not help:
 
 $$
-  \vect{x}_{98} = \begin{bmatrix}0\\0.3791\\1 \end{bmatrix}, \quad
-  \vect{x}_{99} = \begin{bmatrix}0\\1\\0.0289\end{bmatrix}, \quad
-  \vect{x}_{100} = \begin{bmatrix}0\\ -0.6244 \\1\end{bmatrix}.
+  \vect{x}_{98} = \begin{pmatrix}0\\0.3791\\1 \end{pmatrix}, \quad
+  \vect{x}_{99} = \begin{pmatrix}0\\1\\0.0289\end{pmatrix}, \quad
+  \vect{x}_{100} = \begin{pmatrix}0\\ -0.6244 \\1\end{pmatrix}.
 $$
 
 The process will never come to a standstill.
@@ -749,13 +749,13 @@ The process will never come to a standstill.
 What we can say is that eventually all vectors $\vect{x}_k$  will be in the span of the two complex eigenvectors
 
 $$
-  \vect{v}_1 = \begin{bmatrix}0\\2\\i \end{bmatrix}, \quad \vect{v}_1 = \begin{bmatrix}0\\2\\-i \end{bmatrix}.
+  \vect{v}_1 = \begin{pmatrix}0\\2\\i \end{pmatrix}, \quad \vect{v}_1 = \begin{pmatrix}0\\2\\-i \end{pmatrix}.
 $$
 
 These vectors, being linearly independent, span the set
 
 $$
-   S = \left\{\begin{bmatrix}0\\z_2\\z_3 \end{bmatrix}:  z_2,z_3 \in \C  \right\}.
+   S = \left\{\begin{pmatrix}0\\z_2\\z_3 \end{pmatrix}:  z_2,z_3 \in \C  \right\}.
 $$
 
 In fact, since we started from a real vector $\vect{x}_0$  and the matrix $A$ is real,
@@ -782,7 +782,7 @@ Let us illustrate the procedure for the matrix $A = \begin{bmatrix}3 & 0 & 0 \\ 
 Let $B$ be the matrix
 
 $$
-  B = A + (2i)\mathrm{I} = \begin{bmatrix}3+2i & 0 & 0 \\ 1 & 1+2i & 8 \\ 0 & -2 & 1+2i \end{bmatrix}.
+  B = A + (2i)\mathrm{I} = \begin{pmatrix}3+2i & 0 & 0 \\ 1 & 1+2i & 8 \\ 0 & -2 & 1+2i \end{pmatrix}.
 $$
 
 The actual value of $B$ is not so important, but what is important is that $B$ has the eigenvalues
@@ -799,23 +799,23 @@ $$
 
 Thus $B$ has a (single) dominant eigenvalue.
 
-Applying the power method to $B$, again starting from $\begin{bmatrix}1\\1\\1 \end{bmatrix}$, we find (up to four decimals)
+Applying the power method to $B$, again starting from $\begin{pmatrix}1\\1\\1 \end{pmatrix}$, we find (up to four decimals)
 
 $$
-  %\vect{x}_{48} = \begin{bmatrix}0.0000\\-1.0000i\\1.0000 \end{bmatrix}, \quad
-  \vect{x}_{19} =   \vect{x}_{20} = \begin{bmatrix}0\\1\\0.000+0.500i \end{bmatrix},
+  %\vect{x}_{48} = \begin{pmatrix}0.0000\\-1.0000i\\1.0000 \end{pmatrix}, \quad
+  \vect{x}_{19} =   \vect{x}_{20} = \begin{pmatrix}0\\1\\0.000+0.500i \end{pmatrix},
 $$
 
 from which we may conclude that $\vect{x}_{20}$ is an eigenvector of  $B$. <BR>
 From 
 
 $$
-    B \begin{bmatrix}0\\1\\0.5i \end{bmatrix} = \begin{bmatrix}0 \\1+6i\\-3+0.5i \end{bmatrix} = (1+6i)\begin{bmatrix}0\\1\\0.5i \end{bmatrix},
+    B \begin{pmatrix}0\\1\\0.5i \end{pmatrix} = \begin{pmatrix}0 \\1+6i\\-3+0.5i \end{pmatrix} = (1+6i)\begin{pmatrix}0\\1\\0.5i \end{pmatrix},
 $$
 
 it follows that  $\mu = 1+6i$ is the corresponding eigenvalue.
 
-'Shifting back' we see that  $\begin{bmatrix}0\\1\\0.5i \end{bmatrix}$, or $\begin{bmatrix}0\\2\\i \end{bmatrix}$,  is an eigenvector of the original matrix $A$ for the eigenvalue $\lambda = (1+6i)-2i = 1+4i$.
+'Shifting back' we see that  $\begin{pmatrix}0\\1\\0.5i \end{pmatrix}$, or $\begin{pmatrix}0\\2\\i \end{pmatrix}$,  is an eigenvector of the original matrix $A$ for the eigenvalue $\lambda = (1+6i)-2i = 1+4i$.
 
 Problem solved!
 ::::

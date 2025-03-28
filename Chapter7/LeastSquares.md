@@ -60,15 +60,15 @@ will be satisfied simultaneously. This only happens if the matrix-vector equatio
 :::{math}
 :label: Eq:LeastSquares:Linefit
 
-\left[\begin{array}{cc}
+\left(\begin{array}{cc}
 1 & x_1 \\ 1 & x_2 \\ \vdots & \vdots \\ 1 & x_n
-\end{array}\right]
-\left[\begin{array}{c}
+\end{array}\right)
+\left(\begin{array}{c}
 a \\ b
-\end{array}\right] =
-\left[\begin{array}{c}
+\end{array}\right) =
+\left(\begin{array}{c}
 y_1 \\ y_2 \\ \vdots \\ y_n
-\end{array}\right]
+\end{array}\right)
 :::
 
 is consistent. Which generally is not the case.
@@ -129,20 +129,20 @@ is called the **least squares error**.
 Consider the linear system $A\vect{x} = \vect{b}$, with
 
 $$
-A = \left[\begin{array}{ccc}
+A = \left(\begin{array}{ccc}
          1 & 2 & 1  \\ 2 & 1 & 1  \\ 3 & 2 & 4 \\ 2 & 1 & 3
-       \end{array}\right], \quad \vect{b} =
-       \left[\begin{array}{c}  20 \\ 20 \\ 40 \\ 30 \end{array}\right].
+       \end{array}\right), \quad \vect{b} =
+       \left(\begin{array}{c}  20 \\ 20 \\ 40 \\ 30 \end{array}\right).
 $$
 
 For the trial solution $x_1 = 5, x_2 = 4, x_3 = 5$, the error vector and its norm are computed as
 
 $$
-  \vect{v} = \left[\begin{array}{ccc}
+  \vect{v} = \left(\begin{array}{ccc}
          1 & 2 & 1  \\ 2 & 1 & 1  \\ 3 & 2 & 4 \\ 2 & 1 & 3
-       \end{array}\right] \left[\begin{array}{c}  5 \\ 4 \\ 5 \end{array}\right] - \left[\begin{array}{c}  20 \\ 20 \\ 40 \\ 30 \end{array}\right]
-       =  \left[\begin{array}{c}  18 \\ 19 \\ 43 \\  29 \end{array}\right] - \left[\begin{array}{c}  20 \\ 20 \\ 40 \\ 30 \end{array}\right] =
-       \left[\begin{array}{c}  -2  \\ -1 \\ 3 \\ -1 \end{array}\right]
+       \end{array}\right) \left(\begin{array}{c}  5 \\ 4 \\ 5 \end{array}\right) - \left(\begin{array}{c}  20 \\ 20 \\ 40 \\ 30 \end{array}\right)
+       =  \left(\begin{array}{c}  18 \\ 19 \\ 43 \\  29 \end{array}\right) - \left(\begin{array}{c}  20 \\ 20 \\ 40 \\ 30 \end{array}\right) =
+       \left(\begin{array}{c}  -2  \\ -1 \\ 3 \\ -1 \end{array}\right)
 $$
 
 and
@@ -185,23 +185,23 @@ In the situation where we want to fit a line $y = ax + b$, we can take as 'best'
 {eq}`Eq:LeastSquares:Linefit`,
 
 $$
-  \left[\begin{array}{cc}
+  \left(\begin{array}{cc}
         1 & x_1 \\ 1 & x_2 \\ \vdots & \vdots \\ 1 & x_n
-       \end{array}\right]
-       \left[\begin{array}{c}
+       \end{array}\right)
+       \left(\begin{array}{c}
         a \\ b
-       \end{array}\right] =
-        \left[\begin{array}{c}
+       \end{array}\right) =
+        \left(\begin{array}{c}
         y_1 \\ y_2 \\  \vdots \\ y_n
-       \end{array}\right].
+       \end{array}\right).
 $$
 
 The interpretation of the 'error vector' $A\vect{x} - \vect{b}$ then becomes
 
 $$
-   \left[\begin{array}{c}
+   \left(\begin{array}{c}
         a+bx_1 - y_1 \\ a+bx_2 - y_2 \\ \vdots  \\ a+bx_n - y_n
-       \end{array}\right]
+       \end{array}\right)
 $$
 
 and the error $\norm{A\vect{x} - \vect{b}}$ comes down to
@@ -292,9 +292,9 @@ $$
 
 According to {prf:ref}`Prop:LeastSquares:Existence` the least squares solution consists of the coefficients of the orthogonal projection of the vector
 $
-  \vect{b} = \left[ \begin{array}{c} 9 \\ 7 \\ 11 \end{array}   \right]
+  \vect{b} = \left( \begin{array}{c} 9 \\ 7 \\ 11 \end{array}   \right)
 $
-onto $\Span{\vect{a}_1, \vect{a}_2} = \Span{\left[ \begin{array}{c} 1 \\ 2 \\ 3 \end{array}   \right], \left[ \begin{array}{c} 1 \\ -2 \\ 1 \end{array} \right]}$.
+onto $\Span{\vect{a}_1, \vect{a}_2} = \Span{\left( \begin{array}{c} 1 \\ 2 \\ 3 \end{array}   \right), \left( \begin{array}{c} 1 \\ -2 \\ 1 \end{array} \right)}$.
 
 In this first example we have chosen $\vect{a}_1$ and $\vect{a}_2$ that are _orthogonal_.
 
@@ -306,12 +306,12 @@ $$
    \dfrac{56}{14}\vect{a}_1 + \dfrac{6}{6}\vect{a}_2 = 4\vect{a}_1 + 1\vect{a}_2.
 $$
 
-And then the least squares solution is found to be $\hat{\vect{x}} = \left[ \begin{array}{c} 4 \\ 1 \end{array}   \right]$.
+And then the least squares solution is found to be $\hat{\vect{x}} = \left( \begin{array}{c} 4 \\ 1 \end{array}   \right)$.
 
 For this vector we find
 
 $$
-  A\hat{\vect{x}} = \left[ \begin{array}{c} 5  \\ 6 \\ 13 \end{array}   \right], \quad
+  A\hat{\vect{x}} = \left( \begin{array}{c} 5  \\ 6 \\ 13 \end{array}   \right), \quad
   \text{with} \,\,\norm{A\hat{\vect{x}} - \vect{b}} = \sqrt{(-4)^2 + (-1)^2 + 2^2 } = \sqrt{21}.
 $$
 
@@ -366,42 +366,42 @@ $$
 The normal equations lead to the augmented matrix
 
 $$
-  \left[\,A^TA \,| \,A^T \vect{b}\,\right] =
-    \left[       \begin{array}{ccc|c}
+  \left(\,A^TA \,\middle| \,A^T \vect{b}\,\right) =
+    \left(      \begin{array}{ccc|c}
         18 &   12 &   21 &   240 \\
         12 &   10 &   14 &   170 \\
         21 &   14 &   27 &   290
        \end{array}
-  \right].
+  \right).
 $$
 
 This can be row reduced to the echelon form
 
 $$
-    \left[       \begin{array}{ccc|c}
+    \left(      \begin{array}{ccc|c}
         1 &   0 &   0 &   16/3 \\
         0 &   1 &   0 &   5 \\
         0 &   0 &   1 &   4
        \end{array}
-  \right].
+  \right).
 $$
 
 The least squares solution can be read off from the last column in this matrix.
 
 $$
-  \hat{\vect{x}} =  \left[\begin{array}{c}
+  \hat{\vect{x}} =  \left(\begin{array}{c}
          16/3 \\   5 \\   4
        \end{array}
-  \right].
+  \right).
 $$
 
 The error vector and the least squares error are found to be
 
 $$
- \vect{v} = A\hat{\vect{x}} - \vect{b} = \left[ \begin{array}{c}
+ \vect{v} = A\hat{\vect{x}} - \vect{b} = \left( \begin{array}{c}
          -2/3 \\   -1/3  \\   2 \\ -7/3
        \end{array}
-  \right], \quad \norm{\vect{v}} = \sqrt{10}.
+  \right), \quad \norm{\vect{v}} = \sqrt{10}.
 $$
 
 This is slightly better than the 'trial solution' in {prf:ref}`Ex:LeastSquares:4x3Example`,
@@ -456,14 +456,14 @@ $$
 In matrix-vector form this becomes
 
 $$
- \left[  \begin{array}{cccc}
+ \left(  \begin{array}{cccc}
      \vect{a}_1^T\vect{a}_1 &  \vect{a}_1^T\vect{a}_2 & \ldots & \vect{a}_1^T\vect{a}_n \\
      \vect{a}_2^T\vect{a}_1 &  \vect{a}_2^T\vect{a}_2 & \ldots & \vect{a}_2^T\vect{a}_n \\
         \vdots        &  \vdots        & & \vdots      \\
      \vect{a}_n^T\vect{a}_1 &  \vect{a}_n^T\vect{a}_2 & \ldots & \vect{a}_n^T\vect{a}_n \\
-  \end{array} \right]
-  \left[  \begin{array}{c}   c_1 \\ c_2 \\ \ldots \\ c_n   \end{array} \right] =
-  \left[  \begin{array}{c}  \vect{a}_1^T\vect{b} \\ \vect{a}_2^T\vect{b} \\ \ldots \\ \vect{a}_n^T\vect{b}   \end{array} \right],
+  \end{array} \right)
+  \left(  \begin{array}{c}   c_1 \\ c_2 \\ \ldots \\ c_n   \end{array} \right) =
+  \left(  \begin{array}{c}  \vect{a}_1^T\vect{b} \\ \vect{a}_2^T\vect{b} \\ \ldots \\ \vect{a}_n^T\vect{b}   \end{array} \right).
 $$
 
 which leads to the following very concise form
@@ -482,7 +482,7 @@ A^TA \vect{x} = A^T\vect{b}.
 
 ::::
 
-If $\vect{c} =  \left[  \begin{array}{c}   c_1 \\ c_2 \\ \vdots \\ c_n   \end{array} \right]$ is the least squares solution of the linear system $A\vect{c} = \vect{b}$,
+If $\vect{c} =  \left(  \begin{array}{c}   c_1 \\ c_2 \\ \vdots \\ c_n   \end{array} \right)$ is the least squares solution of the linear system $A\vect{c} = \vect{b}$,
 then the orthogonal projection of
 $\vect{b}$ of Col $A$ is given by
 
@@ -572,7 +572,7 @@ As stated, the least squares solution of a system $A\vect{x} = \vect{b}$ consist
 of the orthogonal projection
 
 $$
-   \text{proj}_{\text{Col}\,A}(\vect{b}) = c_1\vect{a}_1 + c_2\vect{a}_2 + \ldots + c_n\vect{a}_n = A \vect{c}, \quad \vect{c} = \begin{bmatrix} c_1 \\ \vdots \\ c_n\end{bmatrix},
+   \text{proj}_{\text{Col}\,A}(\vect{b}) = c_1\vect{a}_1 + c_2\vect{a}_2 + \ldots + c_n\vect{a}_n = A \vect{c}, \quad \vect{c} = \begin{pmatrix} c_1 \\ \vdots \\ c_n\end{pmatrix},
 $$
 
 of $\vect{b}$ onto the column space of $A$.
@@ -617,23 +617,23 @@ $$
 The normal equations give the augmented matrix
 
 $$
-  [\,A^TA \,| \,A^T \vect{b}\,] =
-    \left[       \begin{array}{cc|c}
+  (\,A^TA \,| \,A^T \vect{b}\,) =
+    \left(       \begin{array}{cc|c}
         \vect{a}_1^T\vect{a}_1 & \vect{a}_1^T\vect{a}_2 & \vect{a}_1^T\vect{b} \\
         \vect{a}_2^T\vect{a}_1 & \vect{a}_2^T\vect{a}_2 & \vect{a}_2^T\vect{b} \\
        \end{array}
-  \right] = \left[       \begin{array}{cc|c}
+  \right) = \left(       \begin{array}{cc|c}
         14 & 0 & 56 \\
         0 & 6 & 6 \\
        \end{array}
-  \right].
+  \right).
 $$
 
 Note that the orthogonality of the columns leads to a coefficient matrix $A^TA$ that is a diagonal matrix.
 The normal equations can be solved in one stroke.
 
 This (again) yields the least squares
-solution $\hat{\vect{x}} =\left[\begin{array}{c} 4 \\ 1  \end{array}   \right]$.
+solution $\hat{\vect{x}} =\left(\begin{array}{c} 4 \\ 1  \end{array}   \right)$.
 
 ::::
 
@@ -648,14 +648,14 @@ $$
 of a vector $\vect{b}$ in $\R^m$ onto Col $A$ is found by solving the normal equations
 
 $$
- \left[  \begin{array}{cccc}
+ \left(  \begin{array}{cccc}
      \vect{a}_1^T\vect{a}_1 &  \vect{a}_1^T\vect{a}_2 & \ldots & \vect{a}_1^T\vect{a}_n \\
      \vect{a}_2^T\vect{a}_1 &  \vect{a}_2^T\vect{a}_2 & \ldots & \vect{a}_2^T\vect{a}_n \\
         \vdots        &  \vdots        & & \vdots      \\
      \vect{a}_n^T\vect{a}_1 &  \vect{a}_n^T\vect{a}_2 & \ldots & \vect{a}_n^T\vect{a}_n \\
-  \end{array} \right]
-  \left[  \begin{array}{c}   x_1 \\ x_2 \\ \ldots \\ x_n   \end{array} \right] =
-  \left[  \begin{array}{c}  \vect{a}_1^T\vect{b} \\ \vect{a}_2^T\vect{b} \\ \ldots \\ \vect{a}_n^T\vect{b}   \end{array} \right].
+  \end{array} \right)
+  \left(  \begin{array}{c}   x_1 \\ x_2 \\ \ldots \\ x_n   \end{array} \right) =
+  \left( \begin{array}{c}  \vect{a}_1^T\vect{b} \\ \vect{a}_2^T\vect{b} \\ \ldots \\ \vect{a}_n^T\vect{b}   \end{array} \right).
 $$
 
 Since the columns are orthogonal, all products $\vect{a}_i^{T}\vect{a}_j = \vect{a}_i\ip\vect{a}_j$ with $i \neq j$ are zero.
@@ -663,14 +663,14 @@ Since the columns are orthogonal, all products $\vect{a}_i^{T}\vect{a}_j = \vect
 Expressing the equation using inner products we find
 
 $$
-  \left[  \begin{array}{cccc}
+  \left(  \begin{array}{cccc}
      \vect{a}_1\ip\vect{a}_1 &  0 & \ldots & 0 \\
      0 &  \vect{a}_2\ip\vect{a}_2 & \ldots & 0 \\
         \vdots        &  \vdots        &\ddots  & \vdots      \\
      0 &  0 & \ldots & \vect{a}_n\ip\vect{a}_n \\
-  \end{array} \right]
-  \left[  \begin{array}{c}   x_1 \\ x_2 \\ \vdots \\ x_n   \end{array} \right] =
-  \left[  \begin{array}{c}  \vect{a}_1\ip\vect{b} \\ \vect{a}_2\ip\vect{b} \\ \vdots \\ \vect{a}_n\ip\vect{b}   \end{array} \right].
+  \end{array} \right)
+  \left(  \begin{array}{c}   x_1 \\ x_2 \\ \vdots \\ x_n   \end{array} \right) =
+  \left(  \begin{array}{c}  \vect{a}_1\ip\vect{b} \\ \vect{a}_2\ip\vect{b} \\ \vdots \\ \vect{a}_n\ip\vect{b}   \end{array} \right).
 $$
 
 Which leads to the good old expressions &nbsp; $c_i = \dfrac{\vect{a}_i\ip\vect{b}}{\vect{a}_i\ip\vect{a}_i} =  \dfrac{\vect{b}\ip\vect{a}_i}{\vect{a}_i\ip\vect{a}_i}$.
@@ -710,14 +710,14 @@ $$
 gives
 
 $$
-  \hat{\vect{b}} =  QR \left[(QR)^T(QR)\right]^{-1}\vect{b}
-  = QR\left[R^TQ^TQR\right]^{-1} (R^TQ^T)\vect{b}.
+  \hat{\vect{b}} =  QR \left[(QR)^T(QR)\right)^{-1}\vect{b}
+  = QR\left[R^TQ^TQR\right)^{-1} (R^TQ^T)\vect{b}.
 $$
 
-Using $Q^TQ = I$ and $\left[R^TR\right]^{-1} = R^{-1}(R^T)^{-1}$ this can be simplified further to
+Using $Q^TQ = I$ and $\left[R^TR\right)^{-1} = R^{-1}(R^T)^{-1}$ this can be simplified further to
 
 $$
-  \hat{\vect{b}} = QR \left[R^TR\right]^{-1}R^TQ^T\vect{b} =QRR^{-1}(R^T)^{-1}R^TQ^T\vect{b} = QQ^T\vect{b}
+  \hat{\vect{b}} = QR \left[R^TR\right)^{-1}R^TQ^T\vect{b} =QRR^{-1}(R^T)^{-1}R^TQ^T\vect{b} = QQ^T\vect{b}
 $$
 
 The interpretation is as follows. The columns $\vect{q}_i$ of $Q$ form an orthonormal basis for the column space of $A$. So the orthogonal projection onto Col$(A$) is the same as the orthogonal projection onto Col$(Q)$. For a matrix with _orthonormal_ columns the projection formula
@@ -726,7 +726,7 @@ $$
  \begin{array}{lcl}
   \hat{\vect{b}} = \proj_{\Col{(Q)}}(\vect{b}) &=& (\vect{b}\cdot\vect{q}_1)\vect{q}_1 + \cdots +   (\vect{b}\cdot\vect{q}_n)\vect{q}_n\\&=& \vect{q}_1(\vect{b}\cdot\vect{q}_1) + \cdots +  \vect{q}_n (\vect{b}\cdot\vect{q}_n)\\
   &= &  \vect{q}_1(\vect{q}_1^T\vect{b}) + \cdots + \vect{q}_n(\vect{q}_n^T\vect{b})\\
-  &= &  \left[\vect{q}_1\vect{q}_1^T + \cdots + \vect{q}_n\vect{q}_n^T\right]\,\vect{b}
+  &= &  \left[\vect{q}_1\vect{q}_1^T + \cdots + \vect{q}_n\vect{q}_n^T\right)\,\vect{b}
   \end{array}
 $$
 
@@ -749,10 +749,10 @@ Let us look at an example first.
 We find the least squares solutions of the linear system $A\vect{x} = \vect{b}$, where
 
 $$
-   A = \left[\begin{array}{cc}
+   A = \left(\begin{array}{cc}
                      1 & -2 \\ 2 & -4
-                     \end{array}\right], \quad
-   \vect{b} =    \left[\begin{array}{c}  2\\-4 \end{array}\right]
+                     \end{array}\right), \quad
+   \vect{b} =    \left(\begin{array}{c}  2\\-4 \end{array}\right)
 $$
 
 Note that the columns of $A$ are indeed linearly dependent.
@@ -760,29 +760,29 @@ Note that the columns of $A$ are indeed linearly dependent.
 For the least squares solution we have to solve the system with the augmented matrix
 
 $$
-   \left[\,A^TA \,| \,A^T \vect{b}\,\right] =
-    \left[  \begin{array}{cc|c}
+   \left(\,A^TA \,\middle| \,A^T \vect{b}\,\right) =
+    \left(  \begin{array}{cc|c}
         5 & -10 &  10 \\
         -10 & -20 & 20
        \end{array}
-  \right].
+  \right).
 $$
 
 The augmented matrix can be row reduced to
 
 $$
-   \left[  \begin{array}{cc|c}
+   \left(  \begin{array}{cc|c}
         1 & -2  & 2 \\
         0 &  0  & 0
        \end{array}
-  \right].
+  \right).
 $$
 
 From this we can read off all least squares solutions. They are given by
 
 $$
-   \hat{\vect{x}} = \hat{\vect{x}}_0 + \vect{x}_H = \left[\begin{array}{c}  2 \\ 0 \end{array}\right] +
-   c\left[\begin{array}{c}  2 \\ 1 \end{array}\right], \,\, c\in \R.
+   \hat{\vect{x}} = \hat{\vect{x}}_0 + \vect{x}_H = \left(\begin{array}{c}  2 \\ 0 \end{array}\right) +
+   c\left(\begin{array}{c}  2 \\ 1 \end{array}\right), \,\, c\in \R.
 $$
 
 %We can ask the question: what is the least squares solution _of minimal length_?
@@ -796,7 +796,7 @@ For this low-dimensional problem we can draw a picture.
 Multiple least squares solutions.
 :::
 
-The least squares solutions are depicted as the line $\ell:  \vect{x} = \hat{\vect{x}}_0 + c\left[\begin{array}{c}  2 \\  1 \end{array}\right]$.
+The least squares solutions are depicted as the line $\ell:  \vect{x} = \hat{\vect{x}}_0 + c\left(\begin{array}{c}  2 \\  1 \end{array}\right)$.
 
 ::::
 
@@ -804,14 +804,14 @@ We can analyse {prf:ref}`Ex:LeastSquares:NonUnique` from a higher perspective.
 In the general solution of the normal equations
 
 $$
-   \vect{x} = \hat{\vect{x}}_0 + c\left[\begin{array}{c}  2 \\  1 \end{array}\right],
+   \vect{x} = \hat{\vect{x}}_0 + c\left(\begin{array}{c}  2 \\  1 \end{array}\right),
 $$
 
-the 'homogeneous' part $\vect{x}_H = c\left[\begin{array}{c}  2 \\  1 \end{array}\right]$ is the nulspace of $A^TA$. Because of the equivalence {eq}`Eq:LeastSquares:InvertibilityATA` this is equal to the nulspace of $A$.
+the 'homogeneous' part $\vect{x}_H = c\left(\begin{array}{c}  2 \\  1 \end{array}\right)$ is the nulspace of $A^TA$. Because of the equivalence {eq}`Eq:LeastSquares:InvertibilityATA` this is equal to the nulspace of $A$.
 Now from {numref}`Section %s <Sec:OrthoComp>`, {prf:ref}`Prop:OrthoComp:OrthoComplementNulA`, we know that
 
 $$
-   (\text{Nul}\,A)^{\perp} = \text{Row}\,A = \Span{\begin{bmatrix} 1 \\ -2\end{bmatrix}}
+   (\text{Nul}\,A)^{\perp} = \text{Row}\,A = \Span{\begin{pmatrix} 1 \\ -2\end{pmatrix}}
 $$
 
 which is visualized in {numref}`Figure %s <Fig:LeastSquares:SmallestLS>`.
@@ -824,10 +824,10 @@ Let us give one more example to illustrate matters.
 We find the least squares solutions of the linear system $A\vect{x} = \vect{b}$, where
 
 $$
-   A = \left[\begin{array}{ccc}
+   A = \left(\begin{array}{ccc}
                      1 & 1 & 0 \\ 1 & 1 & 0 \\ 1 & 0 & 1 \\ 1 & 0 & 1
-                     \end{array}\right], \quad
-   \vect{b} =    \left[\begin{array}{c}  1 \\3\\2\\4 \end{array}\right]
+                     \end{array}\right), \quad
+   \vect{b} =    \left(\begin{array}{c}  1 \\3\\2\\4 \end{array}\right)
 $$
 
 The first column of $A$ is the sum of the other two columns, so the columns of $A$ are linearly dependent.
@@ -835,45 +835,45 @@ The first column of $A$ is the sum of the other two columns, so the columns of $
 For the least squares solution we have to solve the system with augmented matrix
 
 $$
-   \left[\,A^TA \,| \,A^T \vect{b}\,\right] =
-    \left[  \begin{array}{ccc|c}
+   \left(\,A^TA \,\middle| \,A^T \vect{b}\,\right) =
+    \left(  \begin{array}{ccc|c}
         4 & 2 & 2 & 10 \\
         2 & 2 & 0 & 4 \\
         2 & 0 & 2 & 6
        \end{array}
-  \right].
+  \right).
 $$
 
 The augmented matrix can be row reduced to
 
 $$
-   \left[  \begin{array}{ccc|c}
+   \left(  \begin{array}{ccc|c}
         1 & 0 &  1  & 3 \\
         0 & 1 & -1  & -1 \\
         0 & 0 &  0  & 0
        \end{array}
-  \right].
+  \right).
 $$
 
 From this we can read off all least squares solutions. They are given by
 
 $$
-   \hat{\vect{x}} = \hat{\vect{x}}_0 + \vect{x}_H = \left[\begin{array}{c}  3 \\ -1 \\ 0 \end{array}\right] + c\left[\begin{array}{c}  1 \\ -1 \\ -1 \end{array}\right], \,\, c \in \R.
+   \hat{\vect{x}} = \hat{\vect{x}}_0 + \vect{x}_H = \left(\begin{array}{c}  3 \\ -1 \\ 0 \end{array}\right) + c\left(\begin{array}{c}  1 \\ -1 \\ -1 \end{array}\right), \,\, c \in \R.
 $$
 
-As in {prf:ref}`Ex:LeastSquares:NonUnique` the 'homogeneous' part $\vect{x}_H = c\left[\begin{array}{c}  1 \\ -1 \\ -1 \end{array}\right]$ is the nulspace of $A^TA$, which is equal to the nulspace of $A$.
+As in {prf:ref}`Ex:LeastSquares:NonUnique` the 'homogeneous' part $\vect{x}_H = c\left(\begin{array}{c}  1 \\ -1 \\ -1 \end{array}\right)$ is the nulspace of $A^TA$, which is equal to the nulspace of $A$.
 
 For instance, by taking $c=0$ and $c = -1$ we find the two least squares solutions
 
 $$
-   \hat{\vect{x}}_1 = \left[\begin{array}{c}  3 \\ -1 \\ 0 \end{array}\right], \quad \hat{\vect{x}}_2 = \left[\begin{array}{c}  2 \\ 0 \\ 1 \end{array}\right].
+   \hat{\vect{x}}_1 = \left(\begin{array}{c}  3 \\ -1 \\ 0 \end{array}\right), \quad \hat{\vect{x}}_2 = \left(\begin{array}{c}  2 \\ 0 \\ 1 \end{array}\right).
 $$
 
 For both we find the least squares error
 
 $$
   \norm{A\hat{\vect{x}}_i - \vect{b}} =
-  \norm{\left[\begin{array}{c}  2\\2\\3\\3 \end{array}\right] - \left[\begin{array}{c}   1 \\ 3 \\ 2 \\ 4\end{array}\right]} = \sqrt{4} = 2.
+  \norm{\left(\begin{array}{c}  2\\2\\3\\3 \end{array}\right) - \left(\begin{array}{c}   1 \\ 3 \\ 2 \\ 4\end{array}\right)} = \sqrt{4} = 2.
 $$
 
 ::::
@@ -1074,32 +1074,32 @@ $$
 To find the least squares line we consider the four equations in the form
 
 $$
-   \left[\begin{array}{cc}
+   \left(\begin{array}{cc}
          1 & x_1  \\ 1 &  x_2 \\ 1 &  x_3 \\ 1 &  x_4
-       \end{array}\right]
-       \left[\begin{array}{c}  a \\ b \end{array}\right]
-   = \left[\begin{array}{c}
+       \end{array}\right)
+       \left(\begin{array}{c}  a \\ b \end{array}\right)
+   = \left(\begin{array}{c}
          y_1  \\   y_2 \\ y_3 \\ y_4
-       \end{array}\right], \quad
+       \end{array}\right), \quad
        \,\, \text{i.e.,} \,\,
-     \left[\begin{array}{cc}
+     \left(\begin{array}{cc}
          1 & 1  \\ 1 &  2 \\ 1 &  4 \\ 1 &  5
-       \end{array}\right]
-       \left[\begin{array}{c}  a \\ b \end{array}\right]
-   = \left[\begin{array}{c}
+       \end{array}\right)
+       \left(\begin{array}{c}  a \\ b \end{array}\right)
+   = \left(\begin{array}{c}
          2  \\  2  \\ 3 \\ 3
-       \end{array}\right].
+       \end{array}\right).
 $$
 
 Since the matrix has linearly independent columns the normal equations, with augmented matrix
 
 $$
-  \left[\,A^TA \,| \,A^T \vect{b}\,\right] =
-    \left[\begin{array}{cc|c}
+  \left(\,A^TA \,\middle| \,A^T \vect{b}\,\right) =
+    \left(\begin{array}{cc|c}
         4 &   12 &   10 \\
         12 &   46 &   33
        \end{array}
-  \right],
+  \right),
 $$
 
 give a unique least squares solution, and it is $\hat{a} = 1.6$, $\hat{b} = 0.3$.
@@ -1162,79 +1162,79 @@ We will derive the formula by diligently working through the normal equations.
 In matrix-vector form the linear system we want to solve reads
 
 $$
-  \left[\begin{array}{cccc}
+  \left(\begin{array}{cccc}
          1 & x_1 \\
          1 & x_2 \\
             \vdots   & \vdots \\
-         1 & x_n     \end{array}\right]
-        \left[\begin{array}{c}
-          a \\ b   \end{array}\right] =
-        \left[\begin{array}{c}
-          y_1 \\ y_2 \\ \vdots \\ y_n    \end{array}\right].
+         1 & x_n     \end{array}\right)
+        \left(\begin{array}{c}
+          a \\ b   \end{array}\right) =
+        \left(\begin{array}{c}
+          y_1 \\ y_2 \\ \vdots \\ y_n    \end{array}\right).
 $$
 
 Noting that
 
 $$
-\left[\begin{array}{cc}
+\left(\begin{array}{cc}
          1 & x_1 \\
          1 & x_2 \\
             \vdots   & \vdots \\
-         1 & x_n     \end{array}\right]^T
-         \left[\begin{array}{cc}
+         1 & x_n     \end{array}\right)^T
+         \left(\begin{array}{cc}
          1 & x_1 \\
          1 & x_2 \\
             \vdots   & \vdots \\
-         1 & x_n     \end{array}\right]
+         1 & x_n     \end{array}\right)
 =
-\left[\begin{array}{cc}
+\left(\begin{array}{cc}
          n & \sum x_i \\
-         \sum x_i & \sum x_i^2     \end{array}\right]
+         \sum x_i & \sum x_i^2     \end{array}\right)
 =
-\left[\begin{array}{cc}
+\left(\begin{array}{cc}
          n & \Sigma_x \\
-         \Sigma_x & \Sigma_{xx}     \end{array}\right]
+         \Sigma_x & \Sigma_{xx}     \end{array}\right)
 $$
 
 and
 
 $$
-   \left[\begin{array}{cc}
+   \left(\begin{array}{cc}
          1 & x_1 \\
          1 & x_2 \\
             \vdots   & \vdots \\
-         1 & x_n     \end{array}\right]^T
-    \left[\begin{array}{c}
-          y_1 \\ y_2 \\   \vdots   \\ y_n  \end{array}\right]
+         1 & x_n     \end{array}\right)^T
+    \left(\begin{array}{c}
+          y_1 \\ y_2 \\   \vdots   \\ y_n  \end{array}\right)
     =
-    \left[\begin{array}{c}
-          \sum y_i \\ \sum x_iy_i  \end{array}\right]
+    \left(\begin{array}{c}
+          \sum y_i \\ \sum x_iy_i  \end{array}\right)
     =
-   \left[\begin{array}{c}
-          \Sigma_y \\ \Sigma_{xy}  \end{array}\right].
+   \left(\begin{array}{c}
+          \Sigma_y \\ \Sigma_{xy}  \end{array}\right).
 $$
 
 This leads to the normal equations
 
 $$
-  \left[\begin{array}{cc}
+  \left(\begin{array}{cc}
          n & \Sigma_x \\
-         \Sigma_x & \Sigma_{xx}     \end{array}\right]
-           \left[\begin{array}{c}
-          a\\ b  \end{array}\right]
-  =  \left[\begin{array}{c}
-          \Sigma_y \\ \Sigma_{xy}  \end{array}\right].
+         \Sigma_x & \Sigma_{xx}     \end{array}\right)
+           \left(\begin{array}{c}
+          a\\ b  \end{array}\right)
+  =  \left(\begin{array}{c}
+          \Sigma_y \\ \Sigma_{xy}  \end{array}\right).
 $$
 
 If we multiply both sides of this equation by
 
 $$
-  \left[\begin{array}{cc}
+  \left(\begin{array}{cc}
          n & \Sigma_x \\
-         \Sigma_x & \Sigma_{xx}     \end{array}\right] ^{-1} =
-    \dfrac{1}{n\Sigma_{xx} - \Sigma_x^2}  \left[\begin{array}{cc}
+         \Sigma_x & \Sigma_{xx}     \end{array}\right) ^{-1} =
+    \dfrac{1}{n\Sigma_{xx} - \Sigma_x^2}  \left(\begin{array}{cc}
          \Sigma_{xx}  & -\Sigma_x \\
-         -\Sigma_x &   n  \end{array}\right],
+         -\Sigma_x &   n  \end{array}\right),
 $$
 
 we see the expressions {eq}`Eq:Leastquares:GeneralLinefit` readily appearing.
@@ -1286,19 +1286,19 @@ in {eq}`Eq:LeastSquares:SumResidues` coincide with the least squares solution of
 :::{math}
 :label: Eq:LeastSquares:DesignMatrix
 
-\left[\begin{array}{cccc}
+\left(\begin{array}{cccc}
 f_1(x_1) & f_2(x_1) & \ldots & f_k(x_1) \\
 f_1(x_2) & f_2(x_2) & \ldots & f_k(x_2) \\
 \vdots & \vdots & & \vdots \\
 \vdots & \vdots & \ddots & \vdots \\
 f_1(x_n) & f_2(x_n) & \ldots & f_k(x_n)
-\end{array}\right]
-\left[\begin{array}{c}
-c_1 \\ c_2 \\ \vdots \\ c_k \end{array}\right] =
-\left[\begin{array}{c}
+\end{array}\right)
+\left(\begin{array}{c}
+c_1 \\ c_2 \\ \vdots \\ c_k \end{array}\right) =
+\left(\begin{array}{c}
 y_1 \\ y_2 \\ \vdots \\ \vdots \\ y_n
 \end{array}
-\right].  
+\right).  
 :::
 
 ::::
@@ -1401,14 +1401,14 @@ $$
           a + bx_n + cy_n & = z_n
           \end{align} \right.
           \quad \,\,\text{i.e.,} \quad
- \left[ \begin{array}{ccc}
+ \left( \begin{array}{ccc}
              1 & x_1 & y_1 \\
              1 & x_2 & y_2 \\
              \vdots & & \vdots  \\
              1 & x_n & y_n
-         \end{array}\right]
-  \left[ \begin{array}{c} a \\b \\c \end{array}\right] =
-  \left[ \begin{array}{c} z_1 \\z_2 \\ \vdots \\ z_n \end{array}\right].
+         \end{array}\right)
+  \left( \begin{array}{c} a \\b \\c \end{array}\right) =
+  \left( \begin{array}{c} z_1 \\z_2 \\ \vdots \\ z_n \end{array}\right).
 $$
 
 ::::

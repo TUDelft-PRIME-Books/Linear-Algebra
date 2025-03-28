@@ -31,19 +31,19 @@ A **zero matrix** $O$ is a matrix with all entries equal to 0. If the context re
 If $A$ is an $m\times n$ matrix and $c$ is a scalar, then $cA$ is the $m \times n$ matrix that is the result of multiplying each entry of $A$ by $c$:
 
 $$
-  c \left[\begin{array}{cccc}
+  c \left(\begin{array}{cccc}
             a_{11} & a_{12}&   \ldots&  a_{1n} \\
             a_{21} & a_{22}&  \ldots&  a_{2n} \\
             \vdots &  \vdots&  \cdots& \vdots    \\
             a_{m1} & a_{m2}&  \ldots& a_{mn}
           \end{array}
-   \right]= \left[\begin{array}{cccc}
+   \right)= \left(\begin{array}{cccc}
             ca_{11} & ca_{12}&  \ldots&  ca_{1n} \\
             ca_{21} & ca_{22}&   \ldots&  ca_{2n} \\
             \vdots &  \vdots&  \cdots& \vdots    \\
             ca_{m1} & ca_{m2}&    \ldots& ca_{mn}
           \end{array}
-   \right].
+   \right).
 $$
 
 We then say that $cA$ is a **scalar multiple** of $A$, or simply a **multiple** of $A$.
@@ -56,27 +56,27 @@ If $A$ and $B$ are two $m\times n$ matrices then the **sum** $A+B$ is the
 $m\times n$ matrix of which the entry on the position $(i,j)$ is the sum of the corresponding entries of $A$ and $B$:
 
 $$
-  \left[\begin{array}{cccc}
+  \left(\begin{array}{cccc}
             a_{11} & a_{12}&  \ldots& a_{1n} \\
             a_{21} & a_{22}&  \ldots&   a_{2n} \\
             \vdots &  \vdots&  \cdots&  \vdots    \\
             a_{m1} & a_{m2}&  \ldots&   a_{mn}
-          \end{array} \right]    +
-  \left[\begin{array}{cccc}
+          \end{array} \right)    +
+  \left(\begin{array}{cccc}
             b_{11} & b_{12}&   \ldots&  b_{1n} \\
             b_{21} & b_{22}&   \ldots&  b_{2n} \\
             \vdots &  \vdots&   \cdots& \vdots    \\
             b_{m1} & b_{m2}&    \ldots& b_{mn}
-          \end{array} \right]=
+          \end{array} \right)=
 $$
 
 $$
-    = \left[\begin{array}{cccc}
+    = \left(\begin{array}{cccc}
             a_{11}+b_{11} & a_{12}+b_{12}&  \ldots&   a_{1n}+b_{1n} \\
             a_{21}+b_{21} & a_{22}+b_{22}&  \ldots&   a_{2n}+b_{2n} \\
             \vdots &  \vdots&  \cdots&  \vdots    \\
             a_{m1}+b_{m1} & a_{m2}+b_{m2}&   \ldots& a_{mn}+b_{mn}
-          \end{array} \right].
+          \end{array} \right).
 $$
 
 If $A$ and $B$ are not of the same size their sum is not defined.
@@ -86,26 +86,26 @@ If $A$ and $B$ are not of the same size their sum is not defined.
 ::::::{prf:example}
 
 $$
-  \begin{bmatrix} 1 & 3 \\ 5 & 2 \\ 6 & -4 \end{bmatrix} +
-  \begin{bmatrix} 3 & 2 \\ 4 & -5 \\ 2 & 5  \end{bmatrix}  =
-  \begin{bmatrix} 4 & 5 \\ 9 & -3 \\ 8 & 1  \end{bmatrix},
+  \begin{pmatrix} 1 & 3 \\ 5 & 2 \\ 6 & -4 \end{pmatrix} +
+  \begin{pmatrix} 3 & 2 \\ 4 & -5 \\ 2 & 5  \end{pmatrix}  =
+  \begin{pmatrix} 4 & 5 \\ 9 & -3 \\ 8 & 1  \end{pmatrix},
 $$
 
 $$
-  \begin{bmatrix} 1 & 3 \\ 5 & 2 \\ 6 & -4 \end{bmatrix} +
-  \begin{bmatrix} 0 & 0 \\ 0 & 0 \\ 0 & 0 \end{bmatrix}  =
-  \begin{bmatrix} 0 & 0 \\ 0 & 0 \\ 0 & 0 \end{bmatrix} +
-  \begin{bmatrix} 1 & 3 \\ 5 & 2 \\ 6 & -4 \end{bmatrix}  =
-  \begin{bmatrix} 1 & 3 \\ 5 & 2 \\ 6 & -4  \end{bmatrix},
+  \begin{pmatrix} 1 & 3 \\ 5 & 2 \\ 6 & -4 \end{pmatrix} +
+  \begin{pmatrix} 0 & 0 \\ 0 & 0 \\ 0 & 0 \end{pmatrix}  =
+  \begin{pmatrix} 0 & 0 \\ 0 & 0 \\ 0 & 0 \end{pmatrix} +
+  \begin{pmatrix} 1 & 3 \\ 5 & 2 \\ 6 & -4 \end{pmatrix}  =
+  \begin{pmatrix} 1 & 3 \\ 5 & 2 \\ 6 & -4  \end{pmatrix},
 $$
 
 $$
   \begin{array}{lcl}
-  \begin{bmatrix} 1 & 3 & 5 \\  2 & 4 & 1 \end{bmatrix} +
-  (-1)\begin{bmatrix}  1 & 3 & 5 \\   2 & 4 & 1  \end{bmatrix}  &=&
-  \begin{bmatrix} 1 & 3 & 5 \\  2 & 4 & 1 \end{bmatrix} +
-  \begin{bmatrix}  -1 & -3 &-5 \\  -2 & -4 & -1  \end{bmatrix} \\
-  &=&  \begin{bmatrix} 0 & 0 & 0 \\ 0 & 0 & 0  \end{bmatrix}.
+  \begin{pmatrix} 1 & 3 & 5 \\  2 & 4 & 1 \end{pmatrix} +
+  (-1)\begin{pmatrix}  1 & 3 & 5 \\   2 & 4 & 1  \end{pmatrix}  &=&
+  \begin{pmatrix} 1 & 3 & 5 \\  2 & 4 & 1 \end{pmatrix} +
+  \begin{pmatrix}  -1 & -3 &-5 \\  -2 & -4 & -1  \end{pmatrix} \\
+  &=&  \begin{pmatrix} 0 & 0 & 0 \\ 0 & 0 & 0  \end{pmatrix}.
   \end{array}
 $$
 
@@ -123,8 +123,8 @@ where $O$ is the zero matrix.
 ::::::{prf:example}
 
 $$
-  \begin{bmatrix} 1 & 3 \\ 5 & 2 \\ 6 & -4 \end{bmatrix}  +
-  \begin{bmatrix} 1 & 3 & 5 \\  2 & 4 & 1 \end{bmatrix}
+  \begin{pmatrix} 1 & 3 \\ 5 & 2 \\ 6 & -4 \end{pmatrix}  +
+  \begin{pmatrix} 1 & 3 & 5 \\  2 & 4 & 1 \end{pmatrix}
 $$
 
 is not defined. This is because the matrices do not have the same size.
@@ -202,13 +202,13 @@ It is denoted by $B = A^T$.
 ::::::{prf:example}
 
 $$
-  \begin{bmatrix} 1 & 3 \\ 5 & 2 \\ 6 & 4 \end{bmatrix}^T =
-    \begin{bmatrix} 1 & 5 & 6 \\  3 & 2 & 4 \end{bmatrix}
+  \begin{pmatrix} 1 & 3 \\ 5 & 2 \\ 6 & 4 \end{pmatrix}^T =
+    \begin{pmatrix} 1 & 5 & 6 \\  3 & 2 & 4 \end{pmatrix}
     \quad
       \text{and}
     \quad
-    \begin{bmatrix} -1 & 2 & -4  & 0\end{bmatrix}^T =
-    \begin{bmatrix} -1 \\ 2 \\-4 \\  0\end{bmatrix}.
+    \begin{pmatrix} -1 & 2 & -4  & 0\end{pmatrix}^T =
+    \begin{pmatrix} -1 \\ 2 \\-4 \\  0\end{pmatrix}.
 $$
 
 ::::::
@@ -290,24 +290,24 @@ We check property (ii) for two general $3\times 4$ matrices $A$ and $B$ on the p
 $(2,3)$. Let
 
 $$
-  A = \begin{bmatrix} a_{11}& a_{12} & a_{13}  & a_{14} \\  a_{21}& a_{22} & a_{23} & a_{24} \\ a_{31} & \fbox{$a_{32}$} & a_{33} & a_{34}   \end{bmatrix} \quad \text{and} \quad
-  B = \begin{bmatrix} b_{11}& b_{12} & b_{13}  & b_{14} \\  b_{21}& b_{22} & b_{23} & b_{24} \\ b_{31} & \fbox{$b_{32}$} & b_{33} & b_{34}  \end{bmatrix}.
+  A = \begin{pmatrix} a_{11}& a_{12} & a_{13}  & a_{14} \\  a_{21}& a_{22} & a_{23} & a_{24} \\ a_{31} & \fbox{$a_{32}$} & a_{33} & a_{34}   \end{pmatrix} \quad \text{and} \quad
+  B = \begin{pmatrix} b_{11}& b_{12} & b_{13}  & b_{14} \\  b_{21}& b_{22} & b_{23} & b_{24} \\ b_{31} & \fbox{$b_{32}$} & b_{33} & b_{34}  \end{pmatrix}.
 $$
 
 Then
 
 $$
-  E = (A+B)^T = \begin{bmatrix} a_{11}+b_{11}& a_{12}+b_{12} & a_{13}+b_{13}  & a_{14} +b_{14}\\  a_{21}+b_{21}& a_{22}+b_{22} & a_{23}+b_{23} & a_{24}+b_{24} \\ a_{31}+b_{31} & \fbox{$a_{32}+b_{32}$} & a_{33}+b_{33} & a_{34}+b_{34}   \end{bmatrix}^T
+  E = (A+B)^T = \begin{pmatrix} a_{11}+b_{11}& a_{12}+b_{12} & a_{13}+b_{13}  & a_{14} +b_{14}\\  a_{21}+b_{21}& a_{22}+b_{22} & a_{23}+b_{23} & a_{24}+b_{24} \\ a_{31}+b_{31} & \fbox{$a_{32}+b_{32}$} & a_{33}+b_{33} & a_{34}+b_{34}   \end{pmatrix}^T
 $$
 
 so
 
 $$
-  E = \begin{bmatrix}
+  E = \begin{pmatrix}
   a_{11}+b_{11}& a_{21}+b_{21} &  a_{31}+b_{31}  \\
   a_{12}+b_{12}& a_{22}+b_{22} & \fbox{$a_{32}+b_{32}$} \\
   a_{13}+b_{13}& a_{23}+b_{23} & a_{33}+b_{33} \\
-  a_{14} +b_{14}& a_{24}+b_{24} & a_{34}+b_{34} \end{bmatrix},
+  a_{14} +b_{14}& a_{24}+b_{24} & a_{34}+b_{34} \end{pmatrix},
 $$
 
 and on position $(2,3)$ we have <span style="border-style:solid; padding:4px; border-width:1px">$a_{32}+b_{32}$</span>.
@@ -316,16 +316,16 @@ On the other hand
 
 $$
   F = A^T + B^T =
-   \begin{bmatrix}
+   \begin{pmatrix}
    a_{11}& a_{21} &  a_{31}  \\
  a_{12}& a_{22} & \fbox{$a_{32}$} \\
  a_{13}& a_{23} & a_{33}\\
- a_{14}& a_{24} & a_{34}\end{bmatrix} +
-  \begin{bmatrix}
+ a_{14}& a_{24} & a_{34}\end{pmatrix} +
+  \begin{pmatrix}
   b_{11}& b_{21} &  b_{31}  \\
   b_{12}& b_{22} & \fbox{$b_{32}$} \\
   b_{13}& b_{23} & b_{33}\\
-  b_{14}& b_{24} & b_{34} \end{bmatrix},
+  b_{14}& b_{24} & b_{34} \end{pmatrix},
 $$
 
 with on position $(2,3)$ the value <span style="border-style:solid; padding:4px; border-width:1px">$a_{32}$</span> + <span style="border-style:solid; padding:4px; border-width:1px">$b_{32}$</span>.
@@ -342,38 +342,38 @@ Prove statements (i) and (iii) of {prf:ref}`Prop:MatrixOps:Transpose`.
 ::::::{admonition} Solution to&nbsp;{numref}`Exc:MatrixOps:CheckTransposeRules`
 :class: solution, dropdown
 
-Suppose $A = \left[\begin{array}{cccc}
+Suppose $A = \left(\begin{array}{cccc}
             a_{11} & a_{12}&  \ldots&   a_{1n}   \\
             a_{21} & a_{22}&  \ldots&   a_{2n}   \\
             \vdots &  \vdots&  \cdots&  \vdots    \\
             a_{m1} & a_{m2}&  \ldots&   a_{mn}    
           \end{array}
-   \right]$ is an arbitrary $m \times n$ matrix. Then
+   \right)$ is an arbitrary $m \times n$ matrix. Then
 
 $$
   \begin{array}{rcl}
-  (cA)^T &=&  \left[\begin{array}{cccc}
+  (cA)^T &=&  \left(\begin{array}{cccc}
             ca_{11} & ca_{12}&  \ldots& ca_{1n}   \\
             ca_{21} & ca_{22}&  \ldots& ca_{2n}   \\
             \vdots &  \vdots&  \cdots&  \vdots    \\
             ca_{m1} & ca_{m2}&  \ldots& ca_{mn}
           \end{array}^T
-   \right] =
-   \left[\begin{array}{cccc}
+   \right) =
+   \left(\begin{array}{cccc}
             ca_{11} & ca_{21}&  \ldots& ca_{m1}   \\
             ca_{12} & ca_{22}&  \ldots& ca_{m2}   \\
             \vdots &  \vdots&  \cdots&  \vdots    \\
             ca_{1n} & ca_{2n}&  \ldots& ca_{mn}
           \end{array}
-   \right] \\
+   \right) \\
    &=&
-   c \left[\begin{array}{cccc}
+   c \left(\begin{array}{cccc}
             a_{11} & a_{21}&  \ldots& a_{m1}   \\
             a_{12} & a_{22}&  \ldots& a_{m2}   \\
             \vdots &  \vdots&  \cdots&  \vdots    \\
             a_{1n} & a_{2n}&  \ldots& a_{mn}
           \end{array}
-   \right]  = c\,A^T
+   \right)  = c\,A^T
    \end{array}
 $$
 
@@ -384,9 +384,9 @@ $$
 We will solve the equation $A + 2X^T + B = C$ for $X$, where
 
 $$
-    A = \begin{bmatrix} 1 & 1 & 2 \\  3 & 1 & 0 \end{bmatrix}, \quad
-    B = \begin{bmatrix} 2 & 0 & 3 \\  2 & 3 & 4 \end{bmatrix}, \text{  and} \quad
-    C = \begin{bmatrix} 7 & 5 & 1 \\  1 & 4 & 2 \end{bmatrix}.
+    A = \begin{pmatrix} 1 & 1 & 2 \\  3 & 1 & 0 \end{pmatrix}, \quad
+    B = \begin{pmatrix} 2 & 0 & 3 \\  2 & 3 & 4 \end{pmatrix}, \text{  and} \quad
+    C = \begin{pmatrix} 7 & 5 & 1 \\  1 & 4 & 2 \end{pmatrix}.
 $$
 
 We will extricate $X$ step by step:
@@ -398,8 +398,8 @@ $$
 Next we transpose both terms to find
 
 $$
-  X = \tfrac12(C-A-B)^T = \frac12\begin{bmatrix} 4 & 4 & -4 \\  -4 & 0 & -2 \end{bmatrix}^T
-  = \begin{bmatrix} 2 & -2 \\ 2 & 0 \\  -2  & -1 \end{bmatrix}.
+  X = \tfrac12(C-A-B)^T = \frac12\begin{pmatrix} 4 & 4 & -4 \\  -4 & 0 & -2 \end{pmatrix}^T
+  = \begin{pmatrix} 2 & -2 \\ 2 & 0 \\  -2  & -1 \end{pmatrix}.
 $$
 
 
@@ -459,16 +459,16 @@ $$
 Next we turn our attention to the most important matrix operation, namely the product $AB$ of two matrices. In the previous chapter we have already seen the special case where $B$ is a matrix of just one column, i.e.,
 
 $$
-  B = \mathbf{x} = \begin{bmatrix}x_1 \\ x_2 \\ \vdots \\ x_n \end{bmatrix},
+  B = \mathbf{x} = \begin{pmatrix}x_1 \\ x_2 \\ \vdots \\ x_n \end{pmatrix},
 $$
 
 a vector in $\mathbb{R}^n$, which we can identify with an $n \times 1$ matrix. We want of course the definition of the general matrix product to be consistent with this.
 
 ::::::{prf:definition}
-The product of an $m\times n$ matrix $A$ and an $n\times p$ matrix $B = [\,{\vect{b}_1}\quad {\vect{b}_2}\quad \ldots \quad {\mathbf{b}_p}]$ is defined by
+The product of an $m\times n$ matrix $A$ and an $n\times p$ matrix $B = (\,{\vect{b}_1}\quad {\vect{b}_2}\quad \ldots \quad {\mathbf{b}_p})$ is defined by
 
 $$
-  AB = [\,A\mathbf{b}_1\quad A\mathbf{b}_2\quad \ldots \quad A\mathbf{b}_p].
+  AB = (\,A\mathbf{b}_1\quad A\mathbf{b}_2\quad \ldots \quad A\mathbf{b}_p).
 $$
 
 So we have
@@ -486,17 +486,17 @@ If the number of columns of $A$ is not equal to the number of rows of $B$ the pr
 ::::::{prf:example}
 
 $$
-  \begin{bmatrix} 1 & -3 \\ -1 & 2 \\ 3& -2 \end{bmatrix}
-  \begin{bmatrix} 2 & 1 & 1\\ 3 & 0 & 2 \end{bmatrix} =
-  \begin{bmatrix} -7 & 1 & -5 \\ 4 & -1 & 3 \\ 0 & 3 &-1 \end{bmatrix}.
+  \begin{pmatrix} 1 & -3 \\ -1 & 2 \\ 3& -2 \end{pmatrix}
+  \begin{pmatrix} 2 & 1 & 1\\ 3 & 0 & 2 \end{pmatrix} =
+  \begin{pmatrix} -7 & 1 & -5 \\ 4 & -1 & 3 \\ 0 & 3 &-1 \end{pmatrix}.
 $$
 
 For instance, the third column is computed as
 
 $$
-  \begin{bmatrix} 1 & -3 \\ -1 & 2 \\ 3& -2 \end{bmatrix} \begin{bmatrix} 1\\  2 \end{bmatrix}
-  = 1\begin{bmatrix} 1  \\ -1  \\ 3\end{bmatrix} +
-  2\begin{bmatrix}  -3 \\ 2 \\  -2 \end{bmatrix} \,\,=\, \begin{bmatrix} -5  \\ 3  \\ -1\end{bmatrix}.
+  \begin{pmatrix} 1 & -3 \\ -1 & 2 \\ 3& -2 \end{pmatrix} \begin{pmatrix} 1\\  2 \end{pmatrix}
+  = 1\begin{pmatrix} 1  \\ -1  \\ 3\end{pmatrix} +
+  2\begin{pmatrix}  -3 \\ 2 \\  -2 \end{pmatrix} \,\,=\, \begin{pmatrix} -5  \\ 3  \\ -1\end{pmatrix}.
 $$
 
 ::::::
@@ -508,7 +508,7 @@ The product of the $m\times n$ matrix $A$ and the $n\times p$ matrix $B$ is the 
 
 $$
    c_{ij} = a_{i1}b_{1j} + a_{i2}b_{2j} + \ldots + a_{in}b_{nj} =
-      \begin{bmatrix}a_{i1} & a_{i2} & \ldots & a_{in} \end{bmatrix} \begin{bmatrix}  b_{1j} \\ b_{2j} \\ \vdots \\ b_{nj}\end{bmatrix}.
+      \begin{pmatrix}a_{i1} & a_{i2} & \ldots & a_{in} \end{pmatrix} \begin{pmatrix}  b_{1j} \\ b_{2j} \\ \vdots \\ b_{nj}\end{pmatrix}.
 $$
 
 This is sometimes called the **row-column expansion** of the product.
@@ -527,13 +527,13 @@ The following scheme nicely visualizes the row-column expansion
 $$
    \begin{array}{ccc}
         &
-        \begin{bmatrix}
+        \begin{pmatrix}
             b_{11} & b_{12}&  \ldots& \class{red}{b_{1j}} & \ldots&  b_{1p} \\
             b_{21} & b_{22}&  \ldots&  \class{red}{b_{2j}} & \ldots&  b_{2p} \\
             \vdots &  \vdots&  \cdots&  & \ldots& \vdots    \\
             b_{n1} & b_{n2}&  \ldots&  \class{red}{b_{nj}} &  \ldots& b_{np}
-          \end{bmatrix} \\
-    \begin{bmatrix}
+          \end{pmatrix} \\
+    \begin{pmatrix}
             a_{11} & a_{12}&  \ldots& \ldots&  a_{1n} \\
             a_{21} & a_{22}&  \ldots& \ldots&  a_{2n} \\
             \cdots &  \ddots&  \cdots& \cdots& \vdots    \\
@@ -541,15 +541,15 @@ $$
               \class{red}{\ldots}&   \class{red}{a_{in}} \\
             \vdots &  \vdots&  \cdots& \cdots& \vdots    \\
             a_{m1} & a_{m2}&  \ldots&  \ldots& a_{mn}
-    \end{bmatrix} \!\! &  \!
-    \begin{bmatrix}
+    \end{pmatrix} \!\! &  \!
+    \begin{pmatrix}
             c_{11} & c_{12}&  \ldots& c_{1j} &\ldots&  c_{1p} \\
             c_{21} & c_{22}&  \ldots&  c_{2j} &\ldots&  c_{2p} \\
             \vdots &  \vdots&  \cdots& & \cdots& \vdots    \\
              c_{i1} &  c_{i2}&  \cdots&\class{red}{c_{ij}} &\ldots&   c_{ip} \\
             \vdots &  \vdots&  \cdots& &\cdots& \vdots    \\
             c_{m1} & c_{m2}&  \ldots&  c_{mj} &\ldots& c_{mp}
-    \end{bmatrix}
+    \end{pmatrix}
   \end{array}
 
 
@@ -563,17 +563,17 @@ $$
 Let us consider the matrix product
 
 $$
-  \begin{bmatrix} 1 & -3 \\ -1 & 2 \\ 3& -2 \end{bmatrix}
-  \begin{bmatrix} 2 & 1 & 1\\ 3 & 0 & 2 \end{bmatrix} =
-  \begin{bmatrix} -7 & 1 & -5 \\ 4 & -1 & 3 \\ 0 & 3 &-1 \end{bmatrix}.
+  \begin{pmatrix} 1 & -3 \\ -1 & 2 \\ 3& -2 \end{pmatrix}
+  \begin{pmatrix} 2 & 1 & 1\\ 3 & 0 & 2 \end{pmatrix} =
+  \begin{pmatrix} -7 & 1 & -5 \\ 4 & -1 & 3 \\ 0 & 3 &-1 \end{pmatrix}.
 $$
 
 The $-5$ on position $(1,3)$ and the $3$ on position $(3,2)$ in the product come from
 
 $$
-  -5 = \begin{bmatrix} 1 & -3 \end{bmatrix} \begin{bmatrix} 1\\  2 \end{bmatrix}
+  -5 = \begin{pmatrix} 1 & -3 \end{pmatrix} \begin{pmatrix} 1\\  2 \end{pmatrix}
   \quad \text{and} \quad
-  3 =  \begin{bmatrix} 3 & -2 \end{bmatrix} \begin{bmatrix} 1\\  0 \end{bmatrix}.
+  3 =  \begin{pmatrix} 3 & -2 \end{pmatrix} \begin{pmatrix} 1\\  0 \end{pmatrix}.
 $$
 
 ::::::
@@ -584,7 +584,7 @@ $$
 Explain why the product
 
 $$
-  \begin{bmatrix} 1 & -3 \\ -1 & 2 \\ 3& -2 \end{bmatrix}\begin{bmatrix} 1 & -3 \\ -1 & 2 \\ 3& -2 \end{bmatrix}
+  \begin{pmatrix} 1 & -3 \\ -1 & 2 \\ 3& -2 \end{pmatrix}\begin{pmatrix} 1 & -3 \\ -1 & 2 \\ 3& -2 \end{pmatrix}
 $$
 
 is not defined.
@@ -604,9 +604,9 @@ $$
 :label: Ex:MatrixOps:AtimesI
 
 $$
-\begin{bmatrix} a_{11}& a_{12} & a_{13} \\  a_{21}& a_{22} & a_{23} \\ a_{31}& a_{32} & a_{33} \\ a_{41} & a_{42} & a_{43}   \end{bmatrix}
-   \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 &  0\\ 0 & 0 & 1 \end{bmatrix}
-   = \begin{bmatrix} a_{11}& a_{12} & a_{13} \\  a_{21}& a_{22} & a_{23} \\ a_{31}& a_{32} & a_{33} \\ a_{41} & a_{42} & a_{43}   \end{bmatrix}.
+\begin{pmatrix} a_{11}& a_{12} & a_{13} \\  a_{21}& a_{22} & a_{23} \\ a_{31}& a_{32} & a_{33} \\ a_{41} & a_{42} & a_{43}   \end{pmatrix}
+   \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 &  0\\ 0 & 0 & 1 \end{pmatrix}
+   = \begin{pmatrix} a_{11}& a_{12} & a_{13} \\  a_{21}& a_{22} & a_{23} \\ a_{31}& a_{32} & a_{33} \\ a_{41} & a_{42} & a_{43}   \end{pmatrix}.
 $$
 
 ::::::
@@ -633,9 +633,9 @@ The other diagonal of a square matrix, the one from bottom left to top right, pl
 Consider the matrices
 
 $$
-   A = \begin{bmatrix} 2 & 2 \\ 3 & 3 \end{bmatrix}, \quad
-   B = \begin{bmatrix} 2 & 0 & 0 \\ 0 & 3 & 0 \\ 0 & 0 & 6 \end{bmatrix}, \quad
-   C = \begin{bmatrix} 1 & 0 \\ 0 & 1 \\ 0 & 0 \end{bmatrix}.
+   A = \begin{pmatrix} 2 & 2 \\ 3 & 3 \end{pmatrix}, \quad
+   B = \begin{pmatrix} 2 & 0 & 0 \\ 0 & 3 & 0 \\ 0 & 0 & 6 \end{pmatrix}, \quad
+   C = \begin{pmatrix} 1 & 0 \\ 0 & 1 \\ 0 & 0 \end{pmatrix}.
 $$
 
 The matrices $A$ and $B$ are square, and only $B$ is a diagonal matrix.
@@ -654,21 +654,21 @@ The $n \times n$ zero matrix $O_{nn}$ is a diagonal matrix.
 ::::::{exercise}
 :label: Exc:MatrixOps:InterpretATB
 
-Suppose $A = \begin{bmatrix} \mathbf{a}_1 & \mathbf{a}_2 & \ldots & \mathbf{a}_n \end{bmatrix} $ is an  $m\times n$ matrix and <br/>
-$B= \begin{bmatrix} \mathbf{b}_1 & \mathbf{b}_2 & \ldots & \mathbf{b}_p \end{bmatrix} $  an  $n\times p$ matrix. Show that
+Suppose $A = \begin{pmatrix} \mathbf{a}_1 & \mathbf{a}_2 & \ldots & \mathbf{a}_n \end{pmatrix} $ is an  $m\times n$ matrix and <br/>
+$B= \begin{pmatrix} \mathbf{b}_1 & \mathbf{b}_2 & \ldots & \mathbf{b}_p \end{pmatrix} $  an  $n\times p$ matrix. Show that
 
 $$
-  A^TB = %\begin{bmatrix} \vect{a_1}^T \vect{b_1}  & \vect{a_1}^T \vect{b_2} & \ldots &  \vect{a_1}^T \vect{b_p} \\
+  A^TB = %\begin{pmatrix} \vect{a_1}^T \vect{b_1}  & \vect{a_1}^T \vect{b_2} & \ldots &  \vect{a_1}^T \vect{b_p} \\
          %                \vect{a_2}^T \vect{b_1}  & \vect{a_2}^T \vect{b_2} & \ldots &  \vect{a_2}^T \vect{b_p} \\
          %                     \vdots              &            \vdots       &        &        \vdots \\
          %                \vect{a_n}^T \vect{b_1}  & \vect{a_n}^T \vect{b_2} & \ldots &  \vect{a_n}^T \vect{b_p} \\
-         %\end{bmatrix}
+         %\end{pmatrix}
          %    =
-         \begin{bmatrix} \mathbf{a}_1\ip \mathbf{b}_1  & \mathbf{a}_1\ip\mathbf{b}_2 & \ldots &  \mathbf{a}_1\ip \mathbf{b}_p \\
+         \begin{pmatrix} \mathbf{a}_1\ip \mathbf{b}_1  & \mathbf{a}_1\ip\mathbf{b}_2 & \ldots &  \mathbf{a}_1\ip \mathbf{b}_p \\
                          \mathbf{a}_2\ip \mathbf{b}_1  & \mathbf{a}_2\ip\mathbf{b}_2 & \ldots &  \mathbf{a}_2\ip \mathbf{b}_p \\
                               \vdots              &            \vdots       &        &        \vdots \\
                          \mathbf{a}_n\ip \mathbf{b}_1  & \mathbf{a}_n\ip\mathbf{b}_2 & \ldots &  \mathbf{a}_n\ip \mathbf{b}_p \\ 
-         \end{bmatrix},
+         \end{pmatrix},
 
 
 $$
@@ -697,13 +697,13 @@ The **identity matrix** $I_n$ is the $n \times n$ diagonal matrix with 1's on th
 Let
 
 $$
-   I = I_4 = \begin{bmatrix}1 & 0 & 0 & 0 \\
+   I = I_4 = \begin{pmatrix}1 & 0 & 0 & 0 \\
                             0 & 1 & 0 & 0 \\
                             0 & 0 & 1 & 0 \\
                             0 & 0 & 0 & 1
-            \end{bmatrix}
+            \end{pmatrix}
             \quad \text{and} \quad
-   A = \begin{bmatrix} a_{11}& a_{12} & a_{13} \\  a_{21}& a_{22} & a_{23} \\ a_{31}& a_{32} & a_{33} \\ a_{41} & a_{42} & a_{43}   \end{bmatrix}.
+   A = \begin{pmatrix} a_{11}& a_{12} & a_{13} \\  a_{21}& a_{22} & a_{23} \\ a_{31}& a_{32} & a_{33} \\ a_{41} & a_{42} & a_{43}   \end{pmatrix}.
 $$
 
 Show that $IA = A$.
@@ -727,13 +727,13 @@ The $i$-th row of the product $AB$ is the linear combination of the rows of the 
 The indicated linear combination yields:
 
 $$
-  a_{i1} \begin{bmatrix}b_{11} & b_{12} & \ldots &b_{1p}  \end{bmatrix}  +
-   a_{i2} \begin{bmatrix}b_{21} & b_{22} & \,\, \ldots \,\, &b_{2p}  \end{bmatrix} + \ldots +
-   a_{in} \begin{bmatrix}b_{n1} & b_{n2} & \ldots &b_{np}  \end{bmatrix}
+  a_{i1} \begin{pmatrix}b_{11} & b_{12} & \ldots &b_{1p}  \end{pmatrix}  +
+   a_{i2} \begin{pmatrix}b_{21} & b_{22} & \,\, \ldots \,\, &b_{2p}  \end{pmatrix} + \ldots +
+   a_{in} \begin{pmatrix}b_{n1} & b_{n2} & \ldots &b_{np}  \end{pmatrix}
 $$
 
 $$
-  =  \begin{bmatrix} (a_{i1}b_{11} + a_{i2}b_{21}+ \ldots +a_{in}b_{n1})  & \quad\ldots\quad & (a_{i1}b_{1p} + a_{i2} b_{2p} + \ldots + a_{in}b_{np})  \end{bmatrix}.
+  =  \begin{pmatrix} (a_{i1}b_{11} + a_{i2}b_{21}+ \ldots +a_{in}b_{n1})  & \quad\ldots\quad & (a_{i1}b_{1p} + a_{i2} b_{2p} + \ldots + a_{in}b_{np})  \end{pmatrix}.
 $$
 
 This is a row vector with on the $j$-th position the number
@@ -752,31 +752,31 @@ Interestingly this opens the way to describe the row operations of Chapter 2 via
 The following multiplication adds the first row of the matrix
 
 $$
- A =   \begin{bmatrix} a_{11}& a_{12} & a_{13} \\  a_{21}& a_{22} & a_{23} \\ a_{31}& a_{32} & a_{33}   \end{bmatrix}
+ A =   \begin{pmatrix} a_{11}& a_{12} & a_{13} \\  a_{21}& a_{22} & a_{23} \\ a_{31}& a_{32} & a_{33}   \end{pmatrix}
 $$
 
 four times to the second row:
 
 $$
-  \begin{bmatrix} 1 & 0 & 0 \\ 4 & 1 & 0 \\ 0 & 0 & 1\end{bmatrix}
-  \begin{bmatrix} a_{11}& a_{12} & a_{13} \\  a_{21}& a_{22} & a_{23} \\ a_{31}& a_{32} & a_{33}  \\ \end{bmatrix}
-  = \begin{bmatrix} a_{11}& a_{12} & a_{13} \\  4a_{11}+a_{21}&4a_{12} +a_{22}& 4a_{13}+a_{23}  \\ a_{31}& a_{32} & a_{33} \\ \end{bmatrix}.
+  \begin{pmatrix} 1 & 0 & 0 \\ 4 & 1 & 0 \\ 0 & 0 & 1\end{pmatrix}
+  \begin{pmatrix} a_{11}& a_{12} & a_{13} \\  a_{21}& a_{22} & a_{23} \\ a_{31}& a_{32} & a_{33}  \\ \end{pmatrix}
+  = \begin{pmatrix} a_{11}& a_{12} & a_{13} \\  4a_{11}+a_{21}&4a_{12} +a_{22}& 4a_{13}+a_{23}  \\ a_{31}& a_{32} & a_{33} \\ \end{pmatrix}.
 $$
 
 Here the third row is scaled with a factor 5:
 
 $$
-  \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 5\end{bmatrix}
-  \begin{bmatrix} a_{11}& a_{12} & a_{13} \\  a_{21}& a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33}   \end{bmatrix}
-  =  \begin{bmatrix} a_{11}& a_{12} & a_{13} \\  a_{21}& a_{22} & a_{23} \\ 5a_{31}& 5a_{32} & 5a_{33} \\ \end{bmatrix}.
+  \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 5\end{pmatrix}
+  \begin{pmatrix} a_{11}& a_{12} & a_{13} \\  a_{21}& a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33}   \end{pmatrix}
+  =  \begin{pmatrix} a_{11}& a_{12} & a_{13} \\  a_{21}& a_{22} & a_{23} \\ 5a_{31}& 5a_{32} & 5a_{33} \\ \end{pmatrix}.
 $$
 
 And with the following multiplication the first and third row of $A$ are swapped:
 
 $$
-  \begin{bmatrix} 0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0\end{bmatrix}
-  \begin{bmatrix} a_{11}& a_{12} & a_{13} \\  a_{21}& a_{22} & a_{23} \\ a_{31}& a_{32} & a_{33}   \end{bmatrix}
-  =  \begin{bmatrix}a_{31}& a_{32} & a_{33}  \\  a_{21}& a_{22} & a_{23} \\ a_{11}& a_{12} & a_{13} \end{bmatrix}.
+  \begin{pmatrix} 0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0\end{pmatrix}
+  \begin{pmatrix} a_{11}& a_{12} & a_{13} \\  a_{21}& a_{22} & a_{23} \\ a_{31}& a_{32} & a_{33}   \end{pmatrix}
+  =  \begin{pmatrix}a_{31}& a_{32} & a_{33}  \\  a_{21}& a_{22} & a_{23} \\ a_{11}& a_{12} & a_{13} \end{pmatrix}.
 $$
 
 ::::::
@@ -796,16 +796,16 @@ The matrices $E$ that perform one single row operation (row replacement, row sca
 Describe in words which row operations are the effect of pre-multiplying a $4\times n$ matrix $A$ with the following elementary matrices:
 
 $$
-  E_1 = \begin{bmatrix} 1 & 0 & 0 &  0\\
+  E_1 = \begin{pmatrix} 1 & 0 & 0 &  0\\
                   0 & 1 & 0 & -1\\
                   0 & 0 & 1 &  0\\
                   0 & 0 & 0 &  1
-    \end{bmatrix},  \quad \quad
-    E_2 = \begin{bmatrix} 1 & 0 & 0 &  0\\
+    \end{pmatrix},  \quad \quad
+    E_2 = \begin{pmatrix} 1 & 0 & 0 &  0\\
                     0 & 0 & 0 &  1\\
                     0 & 0 & 1 &  0\\
                     0 & 1 & 0 &  0
-    \end{bmatrix}.
+    \end{pmatrix}.
 $$
 
 ::::::
@@ -816,11 +816,11 @@ $$
 The following product may at first sight seem a bit odd, but it is exactly according to the definition:
 
 $$
-  \begin{bmatrix} 1 \\-2\\3\\4 \end{bmatrix}\begin{bmatrix} 2&4&0& -1   \end{bmatrix} =
-   \begin{bmatrix}     2 &  4 & 0 & -1  \\
+  \begin{pmatrix} 1 \\-2\\3\\4 \end{pmatrix}\begin{pmatrix} 2&4&0& -1   \end{pmatrix} =
+   \begin{pmatrix}     2 &  4 & 0 & -1  \\
                       -4 & -8 & 0 &  2  \\
                        6 & 12 & 0 & -3  \\
-                       8 & 16 & 0 & -4 \end{bmatrix}.
+                       8 & 16 & 0 & -4 \end{pmatrix}.
 $$
 
 ::::::
@@ -836,8 +836,8 @@ Denote the columns of the $m\times n$ matrix $A$ by $A_{(1)}, \ldots, A_{(n)}$, 
 rows of the $n\times p$ matrix $B$ by $B^{(1)}, \ldots, B^{(p)}$, so
 
 $$
-  A_{(j)} =   \begin{bmatrix}   a_{1j} \\ \vdots \\ a_{mj}\end{bmatrix}  \quad \text{and} \quad
-  B^{(i)} =   \begin{bmatrix}   b_{i1} & b_{i2} & \ldots & b_{ip}\end{bmatrix}.
+  A_{(j)} =   \begin{pmatrix}   a_{1j} \\ \vdots \\ a_{mj}\end{pmatrix}  \quad \text{and} \quad
+  B^{(i)} =   \begin{pmatrix}   b_{i1} & b_{i2} & \ldots & b_{ip}\end{pmatrix}.
 $$
 
 Show that
@@ -891,48 +891,48 @@ $A(BC) = (AB)C$.
 As an illustration of rule iv. we compute the two triple products for the three matrices
 
 $$
-  A = \begin{bmatrix} 3 & 1 \\
+  A = \begin{pmatrix} 3 & 1 \\
                       2 & 1 \\
                       0 & 5
-        \end{bmatrix}, \quad
-    B = \begin{bmatrix}  1 & 2 \\
+        \end{pmatrix}, \quad
+    B = \begin{pmatrix}  1 & 2 \\
                          3 & 0
-        \end{bmatrix}, \quad
-      C = \begin{bmatrix} 1 & 2 & 0 \\
+        \end{pmatrix}, \quad
+      C = \begin{pmatrix} 1 & 2 & 0 \\
                           2 & 1  & 2
-           \end{bmatrix}.
+           \end{pmatrix}.
 $$
 
 On the one hand
 
 $$
- A(BC) =   \begin{bmatrix} 3 & 1 \\
+ A(BC) =   \begin{pmatrix} 3 & 1 \\
                            2 & 1 \\
                            0 & 5
-           \end{bmatrix}
-           \begin{bmatrix} 5 & 4 & 4\\
+           \end{pmatrix}
+           \begin{pmatrix} 5 & 4 & 4\\
                            3 & 6 & 0
-            \end{bmatrix} =
-            \begin{bmatrix} 18 & 18 & 12\\
+            \end{pmatrix} =
+            \begin{pmatrix} 18 & 18 & 12\\
                             13 & 14 & 8 \\
                             15 & 30 & 0
-            \end{bmatrix},
+            \end{pmatrix},
 $$
 
 and on the other hand
 
 $$
- (AB)C =   \begin{bmatrix} 6 & 6 \\
+ (AB)C =   \begin{pmatrix} 6 & 6 \\
                            5 & 4 \\
                           15 & 0
-           \end{bmatrix}
-           \begin{bmatrix} 1 & 2 & 0 \\
+           \end{pmatrix}
+           \begin{pmatrix} 1 & 2 & 0 \\
                            2 & 1 & 2
-           \end{bmatrix} =
-           \begin{bmatrix} 18 & 18 & 12 \\
+           \end{pmatrix} =
+           \begin{pmatrix} 18 & 18 & 12 \\
                            13 & 14 & 8  \\
                            15 & 30 & 0
-           \end{bmatrix}.
+           \end{pmatrix}.
 $$
 
 So the products are indeed equal. But it is not immediately clear how. For instance, the value 14 on position (2,2) comes about in two ways
@@ -1016,7 +1016,7 @@ $$
  \begin{array}{ccl}
      A\,(B\mathbf{c_k}) & = & A \,(c_{1k}\mathbf{b}_1 +c_{2k}\mathbf{b}_2   + \ldots + c_{pk}\mathbf{b}_p)\\
       & = & c_{1k}(A\mathbf{b}_1) +c_{2k}(A\mathbf{b}_2)   + \ldots + c_{pk}(A\mathbf{b}_p)\\
-      & = & \begin{bmatrix} A\mathbf{b}_1 & A\mathbf{b}_2 & \ldots & A\mathbf{b}_p \end{bmatrix} \begin{bmatrix} c_{1k} \\ \vdots \\ c_{pk} \end{bmatrix} \\
+      & = & \begin{pmatrix} A\mathbf{b}_1 & A\mathbf{b}_2 & \ldots & A\mathbf{b}_p \end{pmatrix} \begin{pmatrix} c_{1k} \\ \vdots \\ c_{pk} \end{pmatrix} \\
       & = & (AB)\mathbf{c}_k.
  \end{array}
 $$
@@ -1077,8 +1077,8 @@ First of all, commutativity no longer holds.
 For the matrices
 
 $$
-A = \begin{bmatrix} 2 & 2 & 1\\ 3 & 3 & 0 \end{bmatrix} \quad \text{and} \quad
-   B = \begin{bmatrix} 1 & 3 \\ 3 & 1 \\ 4 & 0 \end{bmatrix}
+A = \begin{pmatrix} 2 & 2 & 1\\ 3 & 3 & 0 \end{pmatrix} \quad \text{and} \quad
+   B = \begin{pmatrix} 1 & 3 \\ 3 & 1 \\ 4 & 0 \end{pmatrix}
 $$
 
 it is clear that
@@ -1095,12 +1095,12 @@ simply because the two products are not of the same size: $AB$ is a $2\times 2$ 
 The following example illustrates that $AB = BA$ is not even guaranteed for two $n\times n$ matrices $A$ and $B$:
 
 $$
- \begin{bmatrix} 1 & 3 \\ 2 & 1  \end{bmatrix}
- \begin{bmatrix} 0 & 1 \\ 1 & 2  \end{bmatrix} =
- \begin{bmatrix} 3 & 7 \\ 1 & 4  \end{bmatrix} \neq
- \begin{bmatrix} 2 & 1 \\ 5 & 5  \end{bmatrix} =
-  \begin{bmatrix} 0 & 1 \\ 1 & 2  \end{bmatrix}
-  \begin{bmatrix} 1 & 3 \\ 2 & 1  \end{bmatrix}.
+ \begin{pmatrix} 1 & 3 \\ 2 & 1  \end{pmatrix}
+ \begin{pmatrix} 0 & 1 \\ 1 & 2  \end{pmatrix} =
+ \begin{pmatrix} 3 & 7 \\ 1 & 4  \end{pmatrix} \neq
+ \begin{pmatrix} 2 & 1 \\ 5 & 5  \end{pmatrix} =
+  \begin{pmatrix} 0 & 1 \\ 1 & 2  \end{pmatrix}
+  \begin{pmatrix} 1 & 3 \\ 2 & 1  \end{pmatrix}.
 $$
 
 ::::::
@@ -1116,8 +1116,8 @@ The following two exercises shed some light on the non-commutativity.
 Consider the two matrices
 
 $$
-  A = \begin{bmatrix} 2 & 0 \\ 0 & 1  \end{bmatrix} \quad \text{and} \quad
-  B =  \begin{bmatrix} 0 & 1 \\ 1 & 0  \end{bmatrix}
+  A = \begin{pmatrix} 2 & 0 \\ 0 & 1  \end{pmatrix} \quad \text{and} \quad
+  B =  \begin{pmatrix} 0 & 1 \\ 1 & 0  \end{pmatrix}
 $$
 
 and the corresponding linear transformations
@@ -1135,22 +1135,22 @@ $$
 We get
 
 $$
-   \mathbf{x} = \begin{bmatrix} x_1\\ x_2  \end{bmatrix} \quad \mapsto \quad A\mathbf{x} = \begin{bmatrix} 2 & 0 \\ 0 & 1  \end{bmatrix} \begin{bmatrix} x_1\\ x_2  \end{bmatrix}  \,\, = \,\,
-   \begin{bmatrix} 2x_1\\ x_2  \end{bmatrix}
+   \mathbf{x} = \begin{pmatrix} x_1\\ x_2  \end{pmatrix} \quad \mapsto \quad A\mathbf{x} = \begin{pmatrix} 2 & 0 \\ 0 & 1  \end{pmatrix} \begin{pmatrix} x_1\\ x_2  \end{pmatrix}  \,\, = \,\,
+   \begin{pmatrix} 2x_1\\ x_2  \end{pmatrix}
 $$
 
 and likewise
 
 $$
-  T_B(\mathbf{x}) =  \begin{bmatrix} 0 & 1 \\ 1 & 0  \end{bmatrix} \begin{bmatrix} x_1\\ x_2  \end{bmatrix}
-   = \begin{bmatrix} x_2\\ x_1  \end{bmatrix}.
+  T_B(\mathbf{x}) =  \begin{pmatrix} 0 & 1 \\ 1 & 0  \end{pmatrix} \begin{pmatrix} x_1\\ x_2  \end{pmatrix}
+   = \begin{pmatrix} x_2\\ x_1  \end{pmatrix}.
 $$
 
 ::::{figure} Images/Fig-MatrixOps-NonCommutativity.svg
 :name: Fig:MatrixOps:NonCommutativity
 :class: dark-light
 
-$ \begin{bmatrix} 2 & 0 \\ 0 & 1 \end{bmatrix}\begin{bmatrix} 0 & 1 \\ 1&0 \end{bmatrix} \neq \begin{bmatrix} 0 & 1 \\ 1&0 \end{bmatrix}\begin{bmatrix} 2 & 0 \\ 0 & 1 \end{bmatrix}$.
+$ \begin{pmatrix} 2 & 0 \\ 0 & 1 \end{pmatrix}\begin{pmatrix} 0 & 1 \\ 1&0 \end{pmatrix} \neq \begin{pmatrix} 0 & 1 \\ 1&0 \end{pmatrix}\begin{pmatrix} 2 & 0 \\ 0 & 1 \end{pmatrix}$.
 ::::
 
 Note that $T_A$ is a transformation that 'stretches' horizontally, and $T_B$ is a reflection. {numref}`Figure %s <Fig:MatrixOps:NonCommutativity>` visualizes the transformations corresponding to $AB$ and $BA$. When we apply the transformations one after another, the order in which we do this is important.
@@ -1165,8 +1165,8 @@ Another way to understand why $AB\neq BA$ is the following.
 Recall that the matrices
 
 $$
-   E_1 =  \begin{bmatrix} 1 & 0 \\ 2 & 1  \end{bmatrix} \quad \text{and} \quad
-   E_2 =  \begin{bmatrix} 3 & 0 \\ 0 & 1  \end{bmatrix}
+   E_1 =  \begin{pmatrix} 1 & 0 \\ 2 & 1  \end{pmatrix} \quad \text{and} \quad
+   E_2 =  \begin{pmatrix} 3 & 0 \\ 0 & 1  \end{pmatrix}
 $$
 
 perform row operations, when multiplied with a $2 \times n$ matrix $A$.
@@ -1208,9 +1208,9 @@ As the following example shows, things are different in the realm of matrices.
 ::::::{prf:example}
 
 $$
-\begin{bmatrix} 1 & 2 \\ 2 & 4  \end{bmatrix}
-    \begin{bmatrix} 2 & 6 \\ -1 & -3  \end{bmatrix} =
-      \begin{bmatrix} 0 & 0 \\ 0 & 0  \end{bmatrix}.
+\begin{pmatrix} 1 & 2 \\ 2 & 4  \end{pmatrix}
+    \begin{pmatrix} 2 & 6 \\ -1 & -3  \end{pmatrix} =
+      \begin{pmatrix} 0 & 0 \\ 0 & 0  \end{pmatrix}.
 $$
 
 So the product of two nonzero matrices may be the zero matrix.
@@ -1222,9 +1222,9 @@ The following example shows that things are even 'worse':
 ::::::{prf:example}
 
 $$
-  \begin{bmatrix} 1 & -3 & 2 \\ 1 & -3 & 2 \\ 1 & -3 & 2  \end{bmatrix}
-  \begin{bmatrix}1 & -3 & 2 \\ 1 & -3 & 2 \\ 1 & -3 & 2  \end{bmatrix} =
-  \begin{bmatrix} 0 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix},
+  \begin{pmatrix} 1 & -3 & 2 \\ 1 & -3 & 2 \\ 1 & -3 & 2  \end{pmatrix}
+  \begin{pmatrix}1 & -3 & 2 \\ 1 & -3 & 2 \\ 1 & -3 & 2  \end{pmatrix} =
+  \begin{pmatrix} 0 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix},
 $$
 
 which shows that we cannot even conclude from $A\cdot A = O$ that $A$ itself must be the zero matrix.
@@ -1235,29 +1235,29 @@ And here is another example of a nonzero matrix whose square is the zero matrix.
 
 ::::::{prf:example}
 
-For the matrix $A = \begin{bmatrix} 0 & 1 \\ 0 & 0  \end{bmatrix}$ we again have that
+For the matrix $A = \begin{pmatrix} 0 & 1 \\ 0 & 0  \end{pmatrix}$ we again have that
 
 $$
-A^2 = \begin{bmatrix} 0 & 1 \\ 0 & 0  \end{bmatrix}^2 = \begin{bmatrix} 0 & 0 \\ 0 & 0  \end{bmatrix}.
+A^2 = \begin{pmatrix} 0 & 1 \\ 0 & 0  \end{pmatrix}^2 = \begin{pmatrix} 0 & 0 \\ 0 & 0  \end{pmatrix}.
 $$
 
 It holds that
 
 $$
-A = A_2A_1  = \begin{bmatrix} 0 & 1 \\ -1 & 0  \end{bmatrix}\begin{bmatrix} 0 & 0 \\ 0 & 1  \end{bmatrix}
+A = A_2A_1  = \begin{pmatrix} 0 & 1 \\ -1 & 0  \end{pmatrix}\begin{pmatrix} 0 & 0 \\ 0 & 1  \end{pmatrix}
 $$
 
 Now consider the transformations corresponding to the matrices
 $A_1$ and $A_2$.
 
 $$
-T_1(\vect{x}) = A_1\vect{x} = \begin{bmatrix} 0 & 0 \\ 0 & 1  \end{bmatrix}\begin{bmatrix} x_1 \\ x_2  \end{bmatrix} = \begin{bmatrix} 0\\ x_2 \end{bmatrix}
+T_1(\vect{x}) = A_1\vect{x} = \begin{pmatrix} 0 & 0 \\ 0 & 1  \end{pmatrix}\begin{pmatrix} x_1 \\ x_2  \end{pmatrix} = \begin{pmatrix} 0\\ x_2 \end{pmatrix}
 $$
 
 is the projection onto the $x_2$-axis, and
 
 $$
-T_2(\vect{x}) = A_2\vect{x} = \begin{bmatrix} 0 & 1 \\ -1 & 0 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2  \end{bmatrix} = \begin{bmatrix} x_2\\ -x_1 \end{bmatrix}
+T_2(\vect{x}) = A_2\vect{x} = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}\begin{pmatrix} x_1 \\ x_2  \end{pmatrix} = \begin{pmatrix} x_2\\ -x_1 \end{pmatrix}
 $$
 
 is the clockwise rotation about an angle $\frac12\pi$.
@@ -1447,33 +1447,33 @@ Before we present the proof, we consider a typical example.
 We verify the rule for the two matrices
 
 $$
-   A =  \begin{bmatrix}  2 & 1 & -1 \\ 1 & -1 & 3  \end{bmatrix}   \quad\text{and}\quad
-   B = \begin{bmatrix} 1 & -3 & 0\\  4 & 2 & -1  \\ 5  & 2  & 1\end{bmatrix}.
+   A =  \begin{pmatrix}  2 & 1 & -1 \\ 1 & -1 & 3  \end{pmatrix}   \quad\text{and}\quad
+   B = \begin{pmatrix} 1 & -3 & 0\\  4 & 2 & -1  \\ 5  & 2  & 1\end{pmatrix}.
 $$
 
 We compute:
 
 $$
-  AB = \begin{bmatrix}  2 & 1 & -1 \\ 1 & -1 & 3 \end{bmatrix}
-         \begin{bmatrix} 1 & -3 & 0  \\  4 &  2 & -1\\ 5 & 2  &  1 \end{bmatrix} =
-  \begin{bmatrix} 1 & -6 & -2 \\  12 & 1 &   4\end{bmatrix}
+  AB = \begin{pmatrix}  2 & 1 & -1 \\ 1 & -1 & 3 \end{pmatrix}
+         \begin{pmatrix} 1 & -3 & 0  \\  4 &  2 & -1\\ 5 & 2  &  1 \end{pmatrix} =
+  \begin{pmatrix} 1 & -6 & -2 \\  12 & 1 &   4\end{pmatrix}
 $$
 
 and
 
 $$
-  B^TA^T = \begin{bmatrix}  1 & 4 & 5 \\ -3 & 2 & 2  \\ 0 & -1 & 1 \end{bmatrix}
-           \begin{bmatrix}     2& 1 \\
+  B^TA^T = \begin{pmatrix}  1 & 4 & 5 \\ -3 & 2 & 2  \\ 0 & -1 & 1 \end{pmatrix}
+           \begin{pmatrix}     2& 1 \\
                                1 & -1 \\
-                              -1 & 3  \end{bmatrix} =
-  \begin{bmatrix} 1 & 12  \\ -6 & 1  \\ -2 & 4  \end{bmatrix},
+                              -1 & 3  \end{pmatrix} =
+  \begin{pmatrix} 1 & 12  \\ -6 & 1  \\ -2 & 4  \end{pmatrix},
 $$
 
 so that indeed
 
 $$
-B^TA^T =  \begin{bmatrix} 1 & 12  \\ -6 & 1  \\ -2 & 4  \end{bmatrix}  =
-    \begin{bmatrix} 1 & -6 & -2 \\  12 & 1 &   4\end{bmatrix}^T = (AB)^T.
+B^TA^T =  \begin{pmatrix} 1 & 12  \\ -6 & 1  \\ -2 & 4  \end{pmatrix}  =
+    \begin{pmatrix} 1 & -6 & -2 \\  12 & 1 &   4\end{pmatrix}^T = (AB)^T.
 $$
 
 Careful inspection learns that for the two matrix products exactly the same sums and products of numbers have to be computed.
@@ -1504,7 +1504,7 @@ with an $n \times m$, is also a $p \times m$ matrix.
 Second, the $(i,j)$ entry of $(AB)^T$ is the $(j,i)$ entry of $AB$, which is the (row-column) product of the $j$-th row of $A$ and the $i$-th column of $B$:
 
 $$
-[(AB)^T]_{ij} = \begin{bmatrix}  a_{j1} & a_{j2} & \ldots &  a_{jn} \end{bmatrix}\begin{bmatrix}  b_{1i} \\ b_{2i} \\ \vdots \\ b_{ni} \end{bmatrix}.
+[(AB)^T]_{ij} = \begin{pmatrix}  a_{j1} & a_{j2} & \ldots &  a_{jn} \end{pmatrix}\begin{pmatrix}  b_{1i} \\ b_{2i} \\ \vdots \\ b_{ni} \end{pmatrix}.
 $$
 
 The $(i,j)$ entry of $B^TA^T$ is the product of the $i$-th row of $B^T$ and the $j$-th column of $A^T$.  
@@ -1514,7 +1514,7 @@ the $i$-th row of $B^T$ is the $i$-th column of $B$ written as a row, and the $j
 %the $i$-th row of $B^T$ ($j$-th column of $A^T$) is the $i$-th column %of $B$ ($j$-th row of $A$) written as a row (column):
 
 $$
-[B^TA^T]_{ij} = \begin{bmatrix}   b_{1i} & b_{2i} & \ldots &  b_{ni}   \end{bmatrix}\begin{bmatrix}  a_{j1} \\ a_{j2} \\ \vdots \\  a_{jn} \end{bmatrix}.
+[B^TA^T]_{ij} = \begin{pmatrix}   b_{1i} & b_{2i} & \ldots &  b_{ni}   \end{pmatrix}\begin{pmatrix}  a_{j1} \\ a_{j2} \\ \vdots \\  a_{jn} \end{pmatrix}.
 $$
 
 Both row-column products end up as the same value

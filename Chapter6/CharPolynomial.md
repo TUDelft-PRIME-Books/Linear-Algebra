@@ -45,7 +45,7 @@ $$
 ::::::{prf:example}
 :label: Ex:EigenValues:FirstCharPoly
 
-Consider the matrix $A = \begin{bmatrix} 1 & 4 \\ 1 & 1 \end{bmatrix}$. We evaluate det$(A - \lambda I)$.
+Consider the matrix $A = \begin{pmatrix} 1 & 4 \\ 1 & 1 \end{pmatrix}$. We evaluate det$(A - \lambda I)$.
 
 $$
 \begin{vmatrix} 1-\lambda & 4 \\ 1 & 1-\lambda \end{vmatrix} = (1-\lambda) (1-\lambda) - 4 = \lambda^2 -2\lambda -3.
@@ -66,7 +66,7 @@ and conclude that the eigenvalues of $A$ are $\lambda_1 =3, \lambda_2 = -1$. We 
 ::::::{prf:example}
 :label: Ex:Eigenvalues:NoEigenvalues
 
-For the matrix $R=\begin{bmatrix} 0 & -1 \\ 1 & 0  \end{bmatrix}$ the determinant of $R - \lambda I$ becomes
+For the matrix $R=\begin{pmatrix} 0 & -1 \\ 1 & 0  \end{pmatrix}$ the determinant of $R - \lambda I$ becomes
 
 $$
 \begin{vmatrix} 0-\lambda & -1\\ 1 & 0-\lambda \end{vmatrix} =  \lambda^2 +1.
@@ -84,10 +84,10 @@ In general, to compute the characteristic polynomial of an $n \times n$ matrix w
 :label: Ex:EigenValues:TriangularMatrix
 
 Consider the matrix
-$U = \begin{bmatrix} u_{11} & u_{12} & u_{13}  \\
+$U = \begin{pmatrix} u_{11} & u_{12} & u_{13}  \\
 0    & u_{22} & u_{23}  \\
 0   &   0    & u_{33}
-\end{bmatrix}$,
+\end{pmatrix}$,
 an arbitrary $3 \times 3$ upper triangular matrix.
 
 Since $U - \lambda I$ is also an upper triangular matrix, we find that
@@ -119,7 +119,7 @@ Note that this includes diagonal matrices $D$.
 
 For the $2\times 2$ matrix in {prf:ref}`Ex:EigenValues:FirstCharPoly` the expression det$(A - \lambda I)$ eventually comes down to a polynomial of degree 2.
 
-For an arbitrary $2 \times 2$ matrix $A = \begin{bmatrix} a-\lambda & b \\ c & d-\lambda \end{bmatrix}$ we quickly see that
+For an arbitrary $2 \times 2$ matrix $A = \begin{pmatrix} a-\lambda & b \\ c & d-\lambda \end{pmatrix}$ we quickly see that
 
 $$
 \text{det}(A - \lambda I) = \begin{vmatrix} a-\lambda & b \\ c & d-\lambda \end{vmatrix} =
@@ -212,7 +212,7 @@ $$
 \det{(A - \lambda I)} \neq \det{(E - \lambda I)} !
 $$
 
-For instance, take the earlier example $ A = \left[\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array}\right]$ with characteristic polynomial
+For instance, take the earlier example $ A = \left(\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array}\right)$ with characteristic polynomial
 
 $$
 \det{(A-\lambda I)}= (\lambda - 3)(\lambda+1).
@@ -233,7 +233,7 @@ Let's look at one other example before we give the characteristic polynomial a c
 ::::::{prf:example}
 :label: Ex:EigenValues:SecondCharPoly
 
-We find the characteristic polynomial of the matrix $A = \begin{bmatrix} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{bmatrix}$.
+We find the characteristic polynomial of the matrix $A = \begin{pmatrix} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{pmatrix}$.
 
 Because of the zeros in the second row a good start is to expand along this row:
 
@@ -299,7 +299,7 @@ notation **g.m.**($\lambda_k$),   is the dimension of the eigenspace correspondi
 :label: Ex:EigenValues:SecondCharPolyContinued
 
 We continue with the matrix
-$A = \left[\begin{array}{ccc} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1  \end{array}\right]$
+$A = \left(\begin{array}{ccc} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1  \end{array}\right)$
 of {prf:ref}`Ex:EigenValues:SecondCharPoly` and find the geometric multiplicities of the eigenvalues.
 The characteristic polynomial of $A$ was found to be $p_A(\lambda) = (3-\lambda)^2(2-\lambda)$, so $A$ has the eigenvalues $\lambda_1 = 3$ with algebraic multiplicity $2$
 and $\lambda_2 = 2$ with algebraic multiplicity $1$.
@@ -309,11 +309,11 @@ To find the geometric multiplicities we proceed as follows.
 The eigenspace for $\lambda_{1}$ is the null space of $A - \lambda_{1} I = A -3I$.
 
 $$
-A - 3I = \left[\begin{array}{ccc} 4-3 & -1 & -2 \\0 & 3-3 & 0 \\ 1 & 2 & 1-3  \end{array}\right]
+A - 3I = \left(\begin{array}{ccc} 4-3 & -1 & -2 \\0 & 3-3 & 0 \\ 1 & 2 & 1-3  \end{array}\right)
  =
-\left[\begin{array}{ccc} 1 & -1 & -2 \\0 & 0 & 0 \\-1 & 2 & -2\end{array}\right]
+\left(\begin{array}{ccc} 1 & -1 & -2 \\0 & 0 & 0 \\-1 & 2 & -2\end{array}\right)
   \sim
-\left[\begin{array}{ccc} 1 & -1 & -2 \\0 & 1 & 0 \\0 & 0 & 0 \end{array}\right]
+\left(\begin{array}{ccc} 1 & -1 & -2 \\0 & 1 & 0 \\0 & 0 & 0 \end{array}\right)
 .
 $$
 
@@ -322,11 +322,11 @@ $\lambda = 3$ is equal to 1.
 For the other eigenvalue we perform a similar computation:
 
 $$
-A - 2I =  \left[\begin{array}{ccc} 4-2 & -1 & -2 \\0 & 3-2 & 0 \\ 1 & 2 & 1-2  \end{array}\right]
+A - 2I =  \left(\begin{array}{ccc} 4-2 & -1 & -2 \\0 & 3-2 & 0 \\ 1 & 2 & 1-2  \end{array}\right)
  =
-\left[\begin{array}{ccc} 2 & -1 & -2 \\0 & 1 & 0 \\1 & 2 & -1 \end{array}\right]
+\left(\begin{array}{ccc} 2 & -1 & -2 \\0 & 1 & 0 \\1 & 2 & -1 \end{array}\right)
   \sim
-\left[\begin{array}{ccc}  1 & 2 & -1 \\0 & 1 & 0 \\0 & 0 & 0 \end{array}\right]
+\left(\begin{array}{ccc}  1 & 2 & -1 \\0 & 1 & 0 \\0 & 0 & 0 \end{array}\right)
 ,
 $$
 
@@ -360,10 +360,10 @@ Namely, if $\lambda$ is an eigenvalue of algebraic multiplicity 1, then the geom
 ::::::{prf:example}
 :label: Ex:Eigenvalues:TwodimEigenspace2
 
-The matrix $A = \begin{bmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1  \end{bmatrix}$
+The matrix $A = \begin{pmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1  \end{pmatrix}$
 has the two independent eigenvectors
-$\vect{v}_1 = \begin{bmatrix} 1 \\ 0 \\ -1  \end{bmatrix}, \vect{v}_2 =\begin{bmatrix} 0 \\ 1 \\ -1  \end{bmatrix}$
-for the eigenvalue $\lambda = -1$, and the eigenvector $\vect{v}_3 = \begin{bmatrix} 1 \\1\\ 1  \end{bmatrix}$ for the eigenvalue 5.
+$\vect{v}_1 = \begin{pmatrix} 1 \\ 0 \\ -1  \end{pmatrix}, \vect{v}_2 =\begin{pmatrix} 0 \\ 1 \\ -1  \end{pmatrix}$
+for the eigenvalue $\lambda = -1$, and the eigenvector $\vect{v}_3 = \begin{pmatrix} 1 \\1\\ 1  \end{pmatrix}$ for the eigenvalue 5.
 (We studied this matrix in {prf:ref}`Ex:EigenValues:TwodimEigenspace2`.)
 From {prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity` we can deduce that the characteristic polynomial must contain at least two factors $(\lambda - (-1))$ and one factor $(\lambda - 5)$. Since its degree is equal to 3, and the coefficient of $\lambda^3$ is equal to $(-1)^3 = -1$, we may conclude that
 
@@ -423,8 +423,8 @@ $$
 :class: tudproof, dropdown
 
 For $n=2$ we have already seen that the characteristic polynomial of the most general $2 \times 2$ matrix
-$A = \left[\begin{array}{cc} a_{11} & a_{12} \\ a_{21} & a_{22} \end{array}\right]
-= \left[\begin{array}{cc} a & b \\ c & d \end{array}\right] $ is given by
+$A = \left(\begin{array}{cc} a_{11} & a_{12} \\ a_{21} & a_{22} \end{array}\right)
+= \left(\begin{array}{cc} a & b \\ c & d \end{array}\right) $ is given by
 
 $$
 \text{det}(A - \lambda I) = \begin{vmatrix} a-\lambda & b \\ c & d-\lambda \end{vmatrix} =
@@ -447,7 +447,7 @@ $$
 For the other  coefficient we will not give the slightly technical  argument for an $n\times n$ matrix.  The idea will be pretty much clear when we consider a general $3 \times 3$ matrix
 
 $$
- A = \left[\begin{array}{ccc} a_{11} & a_{12} & a_{13} \\a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33}  \end{array}\right].
+ A = \left(\begin{array}{ccc} a_{11} & a_{12} & a_{13} \\a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33}  \end{array}\right).
 $$ 
 
 
@@ -557,7 +557,7 @@ The identity involving the sum gives an easy check on the eigenvalues; with the 
 :label: Ex:Eigenvalues:SumEigenvaluesAndTrace
 
 In {prf:ref}`Ex:EigenValues:SecondCharPoly` we found that the eigenvalues of the matrix
-$A = \begin{bmatrix} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{bmatrix}$  &nbsp; are &nbsp; $\lambda_{1,3} = 3$, $\lambda_{2} = 2$.
+$A = \begin{pmatrix} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{pmatrix}$  &nbsp; are &nbsp; $\lambda_{1,3} = 3$, $\lambda_{2} = 2$.
 
 We see that indeed
 
@@ -578,7 +578,7 @@ The last  'mind blowing' property of the characteristic polynomial we will only 
 ::::::{prf:example}
 :label: Ex:Eigenvalues:CayleyHamilton
 
-Consider the matrix $A = \begin{bmatrix} 1 & 2 \\ 4 & 5 \end{bmatrix}$.
+Consider the matrix $A = \begin{pmatrix} 1 & 2 \\ 4 & 5 \end{pmatrix}$.
 Its characteristic polynomial is computed as
 
 $$
@@ -589,8 +589,8 @@ $$
 Now if we replace  in this last expression  $\lambda$ by the matrix $A$, where we then interpret the term $3$ as the matrix $3I$, we get
 
 $$
- A^2 - 6A - 3I = \begin{bmatrix} 9 & 12 \\ 24 & 33 \end{bmatrix} -
- \begin{bmatrix} 6 & 12 \\ 24 & 30 \end{bmatrix} - \begin{bmatrix} 3 & 0 \\ 0 & 3 \end{bmatrix} = \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix}.
+ A^2 - 6A - 3I = \begin{pmatrix} 9 & 12 \\ 24 & 33 \end{pmatrix} -
+ \begin{pmatrix} 6 & 12 \\ 24 & 30 \end{pmatrix} - \begin{pmatrix} 3 & 0 \\ 0 & 3 \end{pmatrix} = \begin{pmatrix} 0 & 0 \\ 0 & 0 \end{pmatrix}.
 $$
 
 So, interpreting the constant term as we did, we have for this matrix $A$ established the property

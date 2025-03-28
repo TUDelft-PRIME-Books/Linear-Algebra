@@ -162,9 +162,9 @@ Let $P$ be the matrix with  $\vect{v}_1,\ldots,\vect{v}_n$ as columns.  $P$ is i
 
 $$
 \begin{array}{ccl}
-AP &=&  A [\vect{v}_1\,\, \ldots \,\, \vect{v}_k\,\, \vect{v}_{k+1}\,\,\ldots \,\, \mathbf{v}_n] \\
-   &=&  [A\vect{v}_1\,\, \ldots \,\, A\vect{v}_k\,\, A\vect{v}_{k+1}\,\,\ldots \,\, A\mathbf{v}_n] \\
-   &=&  [\lambda_1\vect{v}_1\,\, \ldots \,\, \lambda_1\vect{v}_k\,\,A\vect{v}_{k+1}\,\, \ldots \,\, A\mathbf{v}_n],
+AP &=&  A (\vect{v}_1\,\, \ldots \,\, \vect{v}_k\,\, \vect{v}_{k+1}\,\,\ldots \,\, \mathbf{v}_n) \\
+   &=&  (A\vect{v}_1\,\, \ldots \,\, A\vect{v}_k\,\, A\vect{v}_{k+1}\,\,\ldots \,\, A\mathbf{v}_n) \\
+   &=&  (\lambda_1\vect{v}_1\,\, \ldots \,\, \lambda_1\vect{v}_k\,\,A\vect{v}_{k+1}\,\, \ldots \,\, A\mathbf{v}_n),
 \end{array}
 $$
 
@@ -174,9 +174,9 @@ Since $P$ is invertible, for each $j \geq k+1$ the equation $P\vect{x} = A\vect{
 
 $$
 \begin{array}{l}
-  [\lambda_1\vect{v}_1\,\, \ldots \,\, \lambda_1\vect{v}_k\,\,\,A\vect{v}_{k+1}\,\, \ldots \,\, A\mathbf{v}_n] \\
-  \quad = \quad [P(\lambda_1\vect{e}_1) ,\, \ldots \,\,P(\lambda_1\vect{e}_k)\,\,\,P\vect{b}_{k+1}\,\, \ldots \,\,P\vect{b}_{n}] \\
-  \quad = \quad P[\lambda_1\vect{e}_1 ,\, \ldots \,\,\lambda_1\vect{e}_k\,\,\,\vect{b}_{k+1}\,\, \ldots \,\,\vect{b}_{n}] = P B.
+  (\lambda_1\vect{v}_1\,\, \ldots \,\, \lambda_1\vect{v}_k\,\,\,A\vect{v}_{k+1}\,\, \ldots \,\, A\mathbf{v}_n) \\
+  \quad = \quad (P(\lambda_1\vect{e}_1) ,\, \ldots \,\,P(\lambda_1\vect{e}_k)\,\,\,P\vect{b}_{k+1}\,\, \ldots \,\,P\vect{b}_{n}) \\
+  \quad = \quad P(\lambda_1\vect{e}_1 ,\, \ldots \,\,\lambda_1\vect{e}_k\,\,\,\vect{b}_{k+1}\,\, \ldots \,\,\vect{b}_{n}) = P B.
 \end{array}  
 $$ 
 
@@ -186,7 +186,7 @@ Note that $B$ is of the form
 
 $$
 
-  B \,=\,\, \begin{bmatrix} 
+  B \,=\,\, \begin{pmatrix} 
                         \lambda_1 & 0 & \ldots & 0 & * & * & \ldots & * \\
                         0 & \lambda_1 & \ldots & 0 & * & * & \ldots & * \\
                         \vdots & \vdots & \ddots & \vdots &  * & * & \ldots & * \\
@@ -194,7 +194,7 @@ $$
                         \vdots & \vdots &  & \vdots & \vdots &  \vdots &  \vdots &  \vdots  \\
                         \vdots & \vdots &  & \vdots & \vdots &  \vdots &  \vdots &  \vdots  \\
                         0 & 0 & \ldots & 0 &   * & * & \ldots & * \\
-                     \end{bmatrix},
+                     \end{pmatrix},
 $$
 
 where there are $k$ entries $\lambda_1$ on the diagonal. <BR>
@@ -359,25 +359,25 @@ $$
 Next we write out these last matrix products column by column:
 
 $$
-AP = A [\vect{p}_1 \quad  \vect{p}_2 \quad \cdots \quad \vect{p}_n] =
-[A\vect{p}_1 \quad  A\vect{p}_2 \quad  \cdots \quad  A\vect{p}_n]
+AP = A (\vect{p}_1 \quad  \vect{p}_2 \quad \cdots \quad \vect{p}_n) =
+(A\vect{p}_1 \quad  A\vect{p}_2 \quad  \cdots \quad  A\vect{p}_n)
 $$
 
 and
 
 $$
-PD = [\vect{p}_1 \quad  \vect{p}_2 \quad  \cdots \quad \vect{p}_n]\begin{bmatrix}
+PD = (\vect{p}_1 \quad  \vect{p}_2 \quad  \cdots \quad \vect{p}_n)\begin{pmatrix}
 d_1 & 0 & 0  & \ldots & 0 \\
 0 & d_2 & 0  & \ldots & 0 \\
 0 &  0 & d_3 & \ldots & 0 \\
 \vdots & \vdots & \vdots & \ddots & \vdots \\
-0 & 0 & 0 & \ldots & d_n \end{bmatrix},
+0 & 0 & 0 & \ldots & d_n \end{pmatrix},
 $$
 
 so
 
 $$
-PD =  [d_1\vect{p}_1 \quad  d_2\vect{p}_2  \quad  \cdots  \quad d_n\vect{p}_n].
+PD =  (d_1\vect{p}_1 \quad  d_2\vect{p}_2  \quad  \cdots  \quad d_n\vect{p}_n).
 $$
 
 Comparing $AP$ and $PD$ column by column we see that $A\vect{p}_i = d_i\vect{p}_i$ for $n$ linearly independent vectors in $\R^n$. Namely, an invertible matrix $P$ has linearly independent columns.
@@ -405,33 +405,33 @@ then $ P\vect{v}$ is an eigenvector of $A$ for the same $\lambda$.
 The eigenvalues of $D$ are simply the diagonal entries $d_i$ with the vectors $\vect{e}_i$ of the standard basis as corresponding eigenvectors.
 
 $$
-\left[\begin{array}{cccc}
+\left(\begin{array}{cccc}
 d_1 & 0 &  \ldots & 0 \\
 0 & d_2 &  \ldots & 0 \\
 \vdots &  \vdots & \ddots & \vdots \\
 0 & 0 & \ldots & d_n
 \end{array}
-\right]
-  \left[\begin{array}{c} 1 \\ 0\\ \vdots \\ 0
+\right)
+  \left(\begin{array}{c} 1 \\ 0\\ \vdots \\ 0
 \end{array}
-\right]
+\right)
  =
-\left[\begin{array}{c}  d_1 \\ 0 \\   \vdots\\ 0   \end{array}
-\right]
+\left(\begin{array}{c}  d_1 \\ 0 \\   \vdots\\ 0   \end{array}
+\right)
 , \quad
-\left[\begin{array}{cccc}
+\left(\begin{array}{cccc}
 d_1 & 0 &  \ldots & 0 \\
 0 & d_2 &  \ldots & 0 \\
 \vdots &  \vdots & \ddots & \vdots \\
 0 & 0 & \ldots & d_n
 \end{array}
-\right]
-  \left[\begin{array}{c} 0 \\ 1  \\ \vdots \\ 0
+\right)
+  \left(\begin{array}{c} 0 \\ 1  \\ \vdots \\ 0
 \end{array}
-\right]
+\right)
  =
-\left[\begin{array}{c}  0 \\ d_2 \\ \vdots \\ 0   \end{array}
-\right]
+\left(\begin{array}{c}  0 \\ d_2 \\ \vdots \\ 0   \end{array}
+\right)
 ,
 \quad \text{etc.}
 $$
@@ -447,12 +447,12 @@ So $A\vect{v}_i =\lambda_i\vect{v}_i$.
 For the basis $\mathcal{B} = (\vect{v}_1, \ldots, \vect{v}_n)$ we then see that
 
 $$
-[T]_{\mathcal{B}} = D = \begin{bmatrix}
+[T]_{\mathcal{B}} = D = \begin{pmatrix}
 \lambda_1 & 0 & 0  & \ldots & 0 \\
 0 & \lambda_2 & 0  & \ldots & 0 \\
 0 &  0 & \lambda_3 & \ldots & 0 \\
 \vdots & \vdots & \vdots & \ddots & \vdots \\
-0 & 0 & 0 & \ldots & \lambda_n \end{bmatrix},
+0 & 0 & 0 & \ldots & \lambda_n \end{pmatrix},
 $$
 
 and the transformation formula gives
@@ -467,7 +467,7 @@ D = [T]_{\mathcal{B}} = P^{-1}[T]_{\mathcal{E}}P = P^{-1}AP,
 where 
 
 $$
- P = P_{\mathcal{E} \leftarrow \mathcal{B}} =  [ \vect{v}_1 \,\,   \vect{v}_2\,    \ldots  \,\,  \vect{v}_n]
+ P = P_{\mathcal{E} \leftarrow \mathcal{B}} =  ( \vect{v}_1 \,\,   \vect{v}_2\,    \ldots  \,\,  \vect{v}_n)
 $$
 
 is the change-of-coordinates matrix from $\mathcal{B}$ to the standard basis.
@@ -479,49 +479,49 @@ Lastly, the identity $D=P^{-1}AP$ in Equation {eq}`Eq:Diagonalizable:PinvAP` is 
 ::::::{prf:example}
 :label: Ex:Diagonalizable:CheckPDPinv
 
-We verify the relation $A = PDP^{-1}$ for the matrix $A = \begin{bmatrix} 1 & 4 \\ 1 & 1 \end{bmatrix}$ we studied before.
-We found that $A$ has the eigenvalues $\lambda_1 = 3$, $\lambda_2 = -1$, with corresponding eigenvectors $\vect{v}_1 = \begin{bmatrix} 2 \\1 \end{bmatrix}$ and $\vect{v}_2 = \begin{bmatrix} -2 \\1 \end{bmatrix}$.
+We verify the relation $A = PDP^{-1}$ for the matrix $A = \begin{pmatrix} 1 & 4 \\ 1 & 1 \end{pmatrix}$ we studied before.
+We found that $A$ has the eigenvalues $\lambda_1 = 3$, $\lambda_2 = -1$, with corresponding eigenvectors $\vect{v}_1 = \begin{pmatrix} 2 \\1 \end{pmatrix}$ and $\vect{v}_2 = \begin{pmatrix} -2 \\1 \end{pmatrix}$.
 
 Thus for a diagonalization of $A$ we can take
 
 $$
-P = \left[\begin{array}{cc}\vect{v}_1 & \vect{v}_2\end{array} \right]
+P = \left(\begin{array}{cc}\vect{v}_1 & \vect{v}_2\end{array} \right)
  =
-\left[\begin{array}{cc}2 & -2 \\ 1 & 1 \end{array} \right]
-, \qquad  D = \left[\begin{array}{cc} 3&0 \\ 0 & -1 \end{array}
-\right].
+\left(\begin{array}{cc}2 & -2 \\ 1 & 1 \end{array} \right)
+, \qquad  D = \left(\begin{array}{cc} 3&0 \\ 0 & -1 \end{array}
+\right).
 $$
 
 We will check that this is okay. To start with,
 
 $$
-P^{-1} = \dfrac14\left[\begin{array}{cc} 1 &  2 \\ -1 & 2 \end{array}
-\right],
+P^{-1} = \dfrac14\left(\begin{array}{cc} 1 &  2 \\ -1 & 2 \end{array}
+\right),
 $$
 
 so
 
 $$
-PDP^{-1} = \underbrace{\left[\begin{array}{cc} 2 & -2 \\ 1 & 1 \end{array}
-\right]
-\left[\begin{array}{cc} 3&0 \\ 0 & -1 \end{array}
-\right]
+PDP^{-1} = \underbrace{\left(\begin{array}{cc} 2 & -2 \\ 1 & 1 \end{array}
+\right)
+\left(\begin{array}{cc} 3&0 \\ 0 & -1 \end{array}
+\right)
 }
-\dfrac14\left[\begin{array}{cc} 1 &  2 \\ -1 & 2 \end{array}
-\right]
+\dfrac14\left(\begin{array}{cc} 1 &  2 \\ -1 & 2 \end{array}
+\right)
  =
-\dfrac14 \underbrace{\left[\begin{array}{cc} 6 & 2 \\ 3 & -1 \end{array}
-\right]
+\dfrac14 \underbrace{\left(\begin{array}{cc} 6 & 2 \\ 3 & -1 \end{array}
+\right)
 }
-\left[\begin{array}{cc} 1 &  2 \\ -1 & 2 \end{array}
-\right]
+\left(\begin{array}{cc} 1 &  2 \\ -1 & 2 \end{array}
+\right)
 .
 $$
 
 The last product equals
 
 $$
-\dfrac14 \begin{bmatrix} 4 & 16 \\ 4 & 4 \end{bmatrix} = \begin{bmatrix} 1 & 4 \\ 1 & 1 \end{bmatrix} =
+\dfrac14 \begin{pmatrix} 4 & 16 \\ 4 & 4 \end{pmatrix} = \begin{pmatrix} 1 & 4 \\ 1 & 1 \end{pmatrix} =
 A,
 $$
 
@@ -532,12 +532,12 @@ However, the order of the eigenvectors in $P$ must correspond to the order of th
 For instance, for the matrix $A$ at hand, an alternative diagonalization is given by
 
 $$
-A =   \left[\begin{array}{cc} 4 & 6 \\ -2 & 3  \end{array}
-\right]
-   \left[\begin{array}{cc} -1 & 0 \\ 0 & 3   \end{array}
-\right]
-\left[\begin{array}{cc} 4 & 6 \\ -2 & 3   \end{array}
-\right]
+A =   \left(\begin{array}{cc} 4 & 6 \\ -2 & 3  \end{array}
+\right)
+   \left(\begin{array}{cc} -1 & 0 \\ 0 & 3   \end{array}
+\right)
+\left(\begin{array}{cc} 4 & 6 \\ -2 & 3   \end{array}
+\right)
 ^{-1}.
 $$
 
@@ -550,7 +550,7 @@ Are all matrices diagonalizable? Most certainly not, as the following two exampl
 ::::::{prf:example}
 :label: Ex:Diagonalizable:RotationCtd
 
-The matrix $R = \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}$ of {prf:ref}`Ex:EigenValues:Rotation` does not have any (real) eigenvalues, so also no eigenvectors. Hence it cannot be diagonalized.
+The matrix $R = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$ of {prf:ref}`Ex:EigenValues:Rotation` does not have any (real) eigenvalues, so also no eigenvectors. Hence it cannot be diagonalized.
 
 ::::::
 
@@ -566,12 +566,12 @@ In the previous example there were not enough eigenvalues for the matrix $A$ to 
 ::::::{prf:example}
 
 The matrix
-$A = \left[\begin{array}{cc} 2 & 1 \\ 0 & 2 \end{array}
-\right]$
+$A = \left(\begin{array}{cc} 2 & 1 \\ 0 & 2 \end{array}
+\right)$
 has the double eigenvalue $\lambda_1 = \lambda_2 = 2$.
 Since  
-$A - 2I = \left[\begin{array}{cc} 0 & 1 \\ 0 & 0 \end{array}
-\right]$
+$A - 2I = \left(\begin{array}{cc} 0 & 1 \\ 0 & 0 \end{array}
+\right)$
 has rank 1, there is only one independent eigenvector.
 Thus there does not exist a basis of eigenvectors for $A$, and consequently the matrix $A$ is not diagonalizable.
 
@@ -581,8 +581,8 @@ Thus there does not exist a basis of eigenvectors for $A$, and consequently the 
 :label: Ex:Diagonalizable:SecondCharPolyCtd2
 
 The matrix
-$A = \left[\begin{array}{ccc} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{array}
-\right]$
+$A = \left(\begin{array}{ccc} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{array}
+\right)$
 of {prf:ref}`Ex:EigenValues:SecondCharPoly`
 and {prf:ref}`Ex:EigenValues:SecondCharPolyContinued`
 provides another example of this phenomenon. It has the two eigenvalues, $\lambda_1=3$, of algebraic multiplicity 2, and $\lambda_2 = 2$, of algebraic multiplicity 1.
@@ -594,8 +594,8 @@ There is only one independent eigenvector for $\lambda_{1}$. This, together with
 :label: Exc:Diagonalizable
 
 Is the matrix
-$A = \left[\begin{array}{cccc}1 & 1 & 0 & 1 \\ 0 & 2 & 0 & 0\\
-0 & 0 & 2 & 1 \\ 0 & 0 & 0 & 1 \end{array} \right]$
+$A = \left(\begin{array}{cccc}1 & 1 & 0 & 1 \\ 0 & 2 & 0 & 0\\
+0 & 0 & 2 & 1 \\ 0 & 0 & 0 & 1 \end{array} \right)$
 diagonalizable?
 
 ::::::
@@ -774,20 +774,20 @@ To compute $PD^kP^{-1}$ we need $n$ $k$th powers to find $D^k$, and we are left 
 ::::::{prf:example}
 :label: Eq:Diagonalizable:10thPowerofA
 
-We compute $A^{10}$ for the matrix $A = \left[\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array} \right]$
+We compute $A^{10}$ for the matrix $A = \left(\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array} \right)$
 of {prf:ref}`Ex:Diagonalizable:CheckPDPinv`.
 
 There we already settled that $A = PDP^{-1}$, with
 
 $$
-  P = \left[\begin{array}{cc} 2 & -2 \\ 1 & 1 \end{array}
-\right]
+  P = \left(\begin{array}{cc} 2 & -2 \\ 1 & 1 \end{array}
+\right)
 ,
-\quad D = \left[\begin{array}{cc} 3&0 \\ 0 & -1 \end{array}
-\right]
+\quad D = \left(\begin{array}{cc} 3&0 \\ 0 & -1 \end{array}
+\right)
 , \quad P^{-1} =
-\dfrac14\left[\begin{array}{cc} 1 &  2 \\ -1 & 2 \end{array}
-\right]
+\dfrac14\left(\begin{array}{cc} 1 &  2 \\ -1 & 2 \end{array}
+\right)
 .
 $$
 
@@ -796,32 +796,32 @@ We see that
 :::{math}
 :label: Eq:Diagonalizable:10thPowerofA
 
-A^{10} = \left[\begin{array}{cc} 2 & -2 \\ 1 & 1 \end{array} \right]
-\left[\begin{array}{cc} 3^{10}&0 \\ 0 & (-1 )^{10} \end{array} \right]
-\dfrac14\left[\begin{array}{cc} 1 & 2 \\ -1 & 2 \end{array} \right].
+A^{10} = \left(\begin{array}{cc} 2 & -2 \\ 1 & 1 \end{array} \right)
+\left(\begin{array}{cc} 3^{10}&0 \\ 0 & (-1 )^{10} \end{array} \right)
+\dfrac14\left(\begin{array}{cc} 1 & 2 \\ -1 & 2 \end{array} \right).
 
 :::
 
 This can be evaluated to yield
 
 $$
-A^{10} = \frac14 \left[\begin{array}{cc} 2\cdot 3^{10} & -2 \\ 3^{10} & 1\end{array}
-\right]
-\left[\begin{array}{cc} 1 &  2 \\ -1 & 2 \end{array}
-\right]
-= \frac14 \left[\begin{array}{cc} 2\cdot 3^{10}+2 & 4\cdot 3^{10}-4 \\ 3^{10}-1 & 2\cdot 3^{10}+2  \end{array}
-\right]
+A^{10} = \frac14 \left(\begin{array}{cc} 2\cdot 3^{10} & -2 \\ 3^{10} & 1\end{array}
+\right)
+\left(\begin{array}{cc} 1 &  2 \\ -1 & 2 \end{array}
+\right)
+= \frac14 \left(\begin{array}{cc} 2\cdot 3^{10}+2 & 4\cdot 3^{10}-4 \\ 3^{10}-1 & 2\cdot 3^{10}+2  \end{array}
+\right)
 .
 $$
 
 An alternative way to denote the last matrix:
 
 $$
-A^{10} = \frac{3^{10}}{4} \left[\begin{array}{cc} 2 & 4 \\ 1 & 2 \end{array}
-\right]
+A^{10} = \frac{3^{10}}{4} \left(\begin{array}{cc} 2 & 4 \\ 1 & 2 \end{array}
+\right)
 +
-\frac{1}{4}\left[\begin{array}{cc} 2 &  -4 \\ -1 & 2 \end{array}
-\right]
+\frac{1}{4}\left(\begin{array}{cc} 2 &  -4 \\ -1 & 2 \end{array}
+\right)
 .
 $$
 
@@ -829,16 +829,16 @@ Note that we could have found any power of $A$ just as easily: replacing $10$ by
 
 $$
 \begin{array}{rcl}
-A^{n} &=& \left[\begin{array}{cc} 2 & -2 \\ 1 & 1 \end{array}
-\right]
-\left[\begin{array}{cc} 3^{n}&0 \\ 0 & (-1 )^{n} \end{array}
-\right]
-\dfrac14\left[\begin{array}{cc} 1 &  2 \\ -1 & 2\end{array}
-\right]
+A^{n} &=& \left(\begin{array}{cc} 2 & -2 \\ 1 & 1 \end{array}
+\right)
+\left(\begin{array}{cc} 3^{n}&0 \\ 0 & (-1 )^{n} \end{array}
+\right)
+\dfrac14\left(\begin{array}{cc} 1 &  2 \\ -1 & 2\end{array}
+\right)
  \\
-&=& \dfrac14 \left[\begin{array}{cc} 2\cdot 3^{n}+2\cdot(-1)^n & 4\cdot 3^{n}-4\cdot(-1)^n \\
+&=& \dfrac14 \left(\begin{array}{cc} 2\cdot 3^{n}+2\cdot(-1)^n & 4\cdot 3^{n}-4\cdot(-1)^n \\
 3^{n}- (-1)^n & 2\cdot 3^{n}+2\cdot(-1)^n \end{array}
-\right]
+\right)
 \end{array}
 $$
 
@@ -852,67 +852,67 @@ To conclude this section we return to the 'toy' migration model ({prf:ref}`Ex:Ei
 Suppose the migrations between two cities $A$ and $B$ are described by the model
 
 $$
-\left[\begin{array}{c} x_{k+1} \\y_{k+1}\end{array}
-\right]
+\left(\begin{array}{c} x_{k+1} \\y_{k+1}\end{array}
+\right)
  =
-\left[\begin{array}{c} 0.9x_{k} + 0.2 y_k\\0.1x_{k} + 0.8 y_k\end{array}
-\right]
+\left(\begin{array}{c} 0.9x_{k} + 0.2 y_k\\0.1x_{k} + 0.8 y_k\end{array}
+\right)
   =
-\left[\begin{array}{cc} 0.9 & 0.2 \\ 0.1 & 0.8 \end{array}
-\right]
-\left[\begin{array}{c} x_{k} \\y_{k}\end{array}
-\right]
+\left(\begin{array}{cc} 0.9 & 0.2 \\ 0.1 & 0.8 \end{array}
+\right)
+\left(\begin{array}{c} x_{k} \\y_{k}\end{array}
+\right)
 .
 $$
 
 In short
 
 $$
-\vect{x}_{k+1} = \left[\begin{array}{cc} 0.9 & 0.2 \\ 0.1 & 0.8 \end{array}
-\right]
+\vect{x}_{k+1} = \left(\begin{array}{cc} 0.9 & 0.2 \\ 0.1 & 0.8 \end{array}
+\right)
 \vect{x}_{k} = M\vect{x}_{k},
 $$
 
 where
 
 $$
-\vect{x}_k = \left[\begin{array}{c} x_{k} \\y_{k}\end{array}
-\right]
+\vect{x}_k = \left(\begin{array}{c} x_{k} \\y_{k}\end{array}
+\right)
  =
-\left[\begin{array}{c} \text{population in city  } A \text{  at time  } k \\
+\left(\begin{array}{c} \text{population in city  } A \text{  at time  } k \\
 \text{population in city  } B \text{  at time  } k\end{array}
-\right]
+\right)
 .
 $$
 
 It can be shown that $M$ has the eigenvalues $\lambda_1 = 1$ and $\lambda_2 = 0.7$, with corresponding eigenvectors
 
 $$
-\vect{v}_1 = \left[\begin{array}{c} 2 \\1\end{array}
-\right]
+\vect{v}_1 = \left(\begin{array}{c} 2 \\1\end{array}
+\right)
 , \quad
-\vect{v}_2 = \left[\begin{array}{c} 1 \\-1\end{array}
-\right]
+\vect{v}_2 = \left(\begin{array}{c} 1 \\-1\end{array}
+\right)
  \quad \text{respectively.}
 $$
 
 Since $\{\vect{v}_1, \vect{v}_2\}$ is a basis of eigenvectors, the matrix $M$ is diagonalizable, and in fact we have
 
 $$
-M = PDP^{-1} = \left[\begin{array}{cc} 2 &1\\1&-1\end{array}
-\right]
-\left[\begin{array}{cc} 1&0\\0&0.7\end{array}
-\right]
-\left[\begin{array}{cc} 2 &1\\1&-1\end{array}
-\right]
+M = PDP^{-1} = \left(\begin{array}{cc} 2 &1\\1&-1\end{array}
+\right)
+\left(\begin{array}{cc} 1&0\\0&0.7\end{array}
+\right)
+\left(\begin{array}{cc} 2 &1\\1&-1\end{array}
+\right)
 ^{-1}.
 $$
 
 If the initial populations are given by
 
 $$
-\vect{x}_0 = \left[\begin{array}{c} x_{0} \\y_{0}\end{array}
-\right]
+\vect{x}_0 = \left(\begin{array}{c} x_{0} \\y_{0}\end{array}
+\right)
 ,
 $$
 
@@ -925,22 +925,22 @@ $$
 In this case we can clearly see what happens in the long run, i.e. when we let $k$ go to infinity:
 
 $$
-D^k = \left[\begin{array}{cc} 1^k&0\\0&0.7^k\end{array}
-\right]
+D^k = \left(\begin{array}{cc} 1^k&0\\0&0.7^k\end{array}
+\right)
  \longrightarrow
-\left[\begin{array}{cc} 1&0\\0&0\end{array}
-\right]
+\left(\begin{array}{cc} 1&0\\0&0\end{array}
+\right)
 , \quad \text{if  } k \to \infty.
 $$
 
 By computing $P^{-1}$ and the product of the three matrices $P$, $D$ and $P^{-1}$ we find that if $ k \to \infty$,
 
 $$
-M^k  = PD^kP^{-1} \longrightarrow       P\left[\begin{array}{cc} 1&0\\0&0\end{array}
-\right]
+M^k  = PD^kP^{-1} \longrightarrow       P\left(\begin{array}{cc} 1&0\\0&0\end{array}
+\right)
 P^{-1}
-= \frac13 \left[\begin{array}{cc} 2&2 \\ 1&1\end{array}
-\right].
+= \frac13 \left(\begin{array}{cc} 2&2 \\ 1&1\end{array}
+\right).
 
 
 $$
@@ -948,16 +948,16 @@ $$
 We may conclude that, for $ k \to \infty$,
 
 $$
-\vect{x}_k = M^k\vect{x}_0 \longrightarrow \frac13 \left[\begin{array}{cc} 2&2 \\ 1&1\end{array}
-\right]
-\left[\begin{array}{c} x_{0} \\y_{0}\end{array}
-\right]
+\vect{x}_k = M^k\vect{x}_0 \longrightarrow \frac13 \left(\begin{array}{cc} 2&2 \\ 1&1\end{array}
+\right)
+\left(\begin{array}{c} x_{0} \\y_{0}\end{array}
+\right)
  =
-\frac13\left[\begin{array}{c} 2x_{0}+2y_{0} \\ x_{0}+y_{0}\end{array}
-\right]
+\frac13\left(\begin{array}{c} 2x_{0}+2y_{0} \\ x_{0}+y_{0}\end{array}
+\right)
  =
-\frac13(x_{0}+y_{0}) \left[\begin{array}{c} 2 \\ 1\end{array}
-\right]
+\frac13(x_{0}+y_{0}) \left(\begin{array}{c} 2 \\ 1\end{array}
+\right)
 .
 $$
 

@@ -19,16 +19,16 @@ Let $A$ be an $n\times n$ matrix, with $n \geq 2$. The **submatrix** $A_{ij}$ is
 
 ::::::{prf:example}
 
-For the matrix $A = \left[\begin{array}{cccc} 2 & 0 & 0 & 4 \\
+For the matrix $A = \left(\begin{array}{cccc} 2 & 0 & 0 & 4 \\
 1 & 2 & 3 & 4 \\ 2 & 1 & 0 & 3 \\ 6 & 4 & 3 & 5
-\end{array}\right]
+\end{array}\right)
 $ we have that
 
 $$
-A_{13} = \left[\begin{array}{ccc}    1 & 2  & 4 \\ 2 & 1  & 3 \\ 6 & 4& 5   \end{array}\right]
+A_{13} = \left(\begin{array}{ccc}    1 & 2  & 4 \\ 2 & 1  & 3 \\ 6 & 4& 5   \end{array}\right)
 \quad \text{and} \quad
-A_{42} =   \left[\begin{array}{ccc} 2  & 0 & 4 \\  1  & 3 & 4 \\ 2  & 0 & 3
-\end{array}\right]
+A_{42} =   \left(\begin{array}{ccc} 2  & 0 & 4 \\  1  & 3 & 4 \\ 2  & 0 & 3
+\end{array}\right)
 .
 $$
 
@@ -58,7 +58,7 @@ This is an example of a so-called **recursive** definition. The evaluation of an
 And the formula also works for $2 \times 2$ matrices:
 
 $$
-   \text{for}  \,\,A = \begin{bmatrix}a & b \\ c & d  \end{bmatrix}, \quad
+   \text{for}  \,\,A = \begin{pmatrix}a & b \\ c & d  \end{pmatrix}, \quad
    \text{det}\,A = a\cdot\text{det}\,A_{11} - b\cdot\text{det}\,A_{12} = ad-bc.
 $$
 
@@ -67,15 +67,15 @@ Let us now look at an example first.
 ::::::{prf:example}
 :label: Ex:DetCofactor:4x4Det
 
-We will compute the determinant of the matrix $A = \left[\begin{array}{cccc} 7 & 2 & 3 & 4 \\
+We will compute the determinant of the matrix $A = \left(\begin{array}{cccc} 7 & 2 & 3 & 4 \\
 0 & 2 & 5 & 2 \\ 0 & 1 & 4 & 3 \\ 6 & 2 & 3 & 1
-\end{array}\right]$.
+\end{array}\right)$.
 
 $$
 \begin{array}{rcl}
 \det{A} &=& 7\cdot\det{A_{11}} - 0\cdot\det{A_{21}} + 0\cdot\det{A_{31}} - 6\cdot\det{A_{41}} \\
-&=& 7\cdot\text{det}\left[\begin{array}{ccc} 2 & 5 & 2 \\  1 & 4 & 3 \\ 2 & 3 & 1  \end{array}\right]
-- 6\cdot\text{det}\left[\begin{array}{ccc} 2 & 3 &4 \\  2 & 5 & 2 \\  1 & 4 & 3   \end{array}\right]
+&=& 7\cdot\text{det}\left(\begin{array}{ccc} 2 & 5 & 2 \\  1 & 4 & 3 \\ 2 & 3 & 1  \end{array}\right)
+- 6\cdot\text{det}\left(\begin{array}{ccc} 2 & 3 &4 \\  2 & 5 & 2 \\  1 & 4 & 3   \end{array}\right)
 \end{array}
 $$
 
@@ -183,10 +183,10 @@ The following example illustrates the rule for the determinant of an arbitrary $
 ::::::{prf:example}
 
 Let us compute the cofactor expansion of the matrix
-$A = \left[\begin{array}{rrr} a_{11} & a_{12} & a_{13} \\
+$A = \left(\begin{array}{rrr} a_{11} & a_{12} & a_{13} \\
 a_{21} & a_{22} & a_{23} \\
 a_{31} & a_{32} & a_{33}
-\end{array}\right]
+\end{array}\right)
 $ along its third row.
 
 $$
@@ -242,14 +242,14 @@ In the following example we use this freedom of choice to compute a determinant 
 We will compute the determinant of the matrix
 
 $$
-A=\left[\begin{array}{rrrrr}
+A=\left(\begin{array}{rrrrr}
 2 & 1 & 3 & 0  & 2 \\
 5 & 4 & 0 & 0 & 0 \\
 0 & 4 & 0 & 0 & 0 \\
 6 & 2 & 1 & 3 & 2 \\
 1 & 3 & -2 & 0 & -3
 \end{array}
-\right]
+\right)
 .
 $$
 
@@ -323,12 +323,12 @@ The next example is meant to illustrate a more general property.
 ::::::{prf:example}
 :label: Ex:DetCofactors:Triangular
 
-The determinant of the matrix $A = \left[\begin{array}{cccc}
+The determinant of the matrix $A = \left(\begin{array}{cccc}
 2 & 3 & -1 & 2 \\
 0 & 3 & 5 & -9 \\
 0 & 0 & 4 & 2 \\
 0  & 0 & 0 & -1
-\end{array} \right]$  
+\end{array} \right)$  
 can be quickly found by expanding along columns from left to right.
 
 $$
@@ -445,7 +445,7 @@ $$
 
 ::::::{prf:example}
 
-Take the matrix $A = \left[\begin{array}{ccc}  1 & 3 & 4 \\ 5 & 6 & 7 \\ 2 & 1 & 0  \end{array} \right]
+Take the matrix $A = \left(\begin{array}{ccc}  1 & 3 & 4 \\ 5 & 6 & 7 \\ 2 & 1 & 0  \end{array} \right)
 $.
 
 Expanding along the first _row_ we find that

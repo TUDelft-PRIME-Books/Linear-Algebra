@@ -36,9 +36,9 @@ If we want to determine whether a given vector is a linear combination of other 
 
 $$
 \mathbf{v}_1=
-\begin{bmatrix} 1 \\ 2 \\ 1 \end{bmatrix} \quad \mathbf{v}_2=
-\begin{bmatrix} 3 \\ 1 \\ 2 \end{bmatrix} \quad \mathbf{b}=
-\begin{bmatrix} -1 \\ 3 \\ 0 \end{bmatrix}
+\begin{pmatrix} 1 \\ 2 \\ 1 \end{pmatrix} \quad \mathbf{v}_2=
+\begin{pmatrix} 3 \\ 1 \\ 2 \end{pmatrix} \quad \mathbf{b}=
+\begin{pmatrix} -1 \\ 3 \\ 0 \end{pmatrix}
 $$
 
 Is the vector $\mathbf{b}$ a linear combination of $\mathbf{v}_1$ and $\mathbf{v}_2$? We can use the definition of a linear combination to solve this problem. If $\mathbf{b}$ is in fact a linear combination of the two other vectors, then it can be written as $x_1 \mathbf{v}_1+x_2 \mathbf{v}_2$. This means that we should verify whether the system of equations $x_1 \mathbf{v}_1+x_2 \mathbf{v}_2=\mathbf{b}$ has a solution.
@@ -47,9 +47,9 @@ The equation
 
 $$
 x_1
-\begin{bmatrix} 1 \\ 2 \\ 1 \end{bmatrix}+x_2
-\begin{bmatrix} 3 \\ 1 \\ 2 \end{bmatrix}=
-\begin{bmatrix} -1 \\ 3 \\ 0 \end{bmatrix}
+\begin{pmatrix} 1 \\ 2 \\ 1 \end{pmatrix}+x_2
+\begin{pmatrix} 3 \\ 1 \\ 2 \end{pmatrix}=
+\begin{pmatrix} -1 \\ 3 \\ 0 \end{pmatrix}
 $$
 
 is equivalent to the system
@@ -61,22 +61,22 @@ $$
 The augmented matrix of this system of equations is equal to
 
 $$
-\left[\begin{array}{cc|c} 1 & 3 & -1 \\ 2 & 1 & 3 \\ 1 & 2 & 0 \end{array}\right]
+\left(\begin{array}{cc|c} 1 & 3 & -1 \\ 2 & 1 & 3 \\ 1 & 2 & 0 \end{array}\right)
 $$
 
 and its reduced echelon form is equal to
 
 $$
-\left[\begin{array}{cc|c} 1 & 0 & 2 \\ 0 & 1 & -1 \\ 0 & 0 & 0 \end{array}\right].
+\left(\begin{array}{cc|c} 1 & 0 & 2 \\ 0 & 1 & -1 \\ 0 & 0 & 0 \end{array}\right).
 $$
 
 This means that $\mathbf{b}$ is indeed a linear combination of $\mathbf{v}_1$ and $\mathbf{v}_2$.
 
 $$
 2
-\begin{bmatrix} 1 \\ 2 \\ 1 \end{bmatrix}-
-\begin{bmatrix} 3 \\ 1 \\ 2 \end{bmatrix}=
-\begin{bmatrix} -1 \\ 3 \\ 0 \end{bmatrix}
+\begin{pmatrix} 1 \\ 2 \\ 1 \end{pmatrix}-
+\begin{pmatrix} 3 \\ 1 \\ 2 \end{pmatrix}=
+\begin{pmatrix} -1 \\ 3 \\ 0 \end{pmatrix}
 $$
 
 We have found that $\mathbf{b}$ can be written as $2\mathbf{v}_1-\mathbf{v_2}$.
@@ -87,9 +87,9 @@ We have found that $\mathbf{b}$ can be written as $2\mathbf{v}_1-\mathbf{v_2}$.
 
 $$
 \mathbf{v}_1=
-\begin{bmatrix} 1 \\ 0 \\ 2 \end{bmatrix} \quad \mathbf{v}_2=
-\begin{bmatrix} 3 \\ 0 \\ 1 \end{bmatrix} \quad \mathbf{b}=
-\begin{bmatrix} 2 \\ 1 \\ 1 \end{bmatrix}
+\begin{pmatrix} 1 \\ 0 \\ 2 \end{pmatrix} \quad \mathbf{v}_2=
+\begin{pmatrix} 3 \\ 0 \\ 1 \end{pmatrix} \quad \mathbf{b}=
+\begin{pmatrix} 2 \\ 1 \\ 1 \end{pmatrix}
 $$
 
 In this case it is a lot easier to decide whether $\mathbf{b}$ is a linear combination of $\mathbf{v}_1$ and $\mathbf{v}_2$. Since the second component of both $\mathbf{v}_1$ and $\mathbf{v}_2$ is equal to zero, we know that the second component of each linear combination of those vectors will be zero. This means that $\mathbf{b}$ can never be a linear combination of $\mathbf{v}_1$ and $\mathbf{v}_2$.
@@ -259,23 +259,23 @@ The following vectors form the standard basis for $\mathbb{R}^2$.
 
 $$
 \mathbf{e}_1=
-\begin{bmatrix} 1 \\ 0 \end{bmatrix} \quad \mathbf{e}_2=
-\begin{bmatrix} 0 \\ 1 \end{bmatrix} \nonumber
+\begin{pmatrix} 1 \\ 0 \end{pmatrix} \quad \mathbf{e}_2=
+\begin{pmatrix} 0 \\ 1 \end{pmatrix} \nonumber
 $$
 
 Each vector $\mathbf{v}$ can be written as a linear combination of the vectors $\mathbf{e}_1$ and $\mathbf{e}_2$ in a unique way. Later on we will call each collection of vectors with this property a **basis** for $\mathbb{R}^2$. If
 
 $$
 \mathbf{v}=
-\begin{bmatrix} a \\ b \end{bmatrix}, \nonumber
+\begin{pmatrix} a \\ b \end{pmatrix}, \nonumber
 $$
 
 then clearly we have that
 
 $$
 \mathbf{v}=a
-\begin{bmatrix} 1 \\ 0 \end{bmatrix}+b
-\begin{bmatrix} 0 \\ 1 \end{bmatrix}. \nonumber
+\begin{pmatrix} 1 \\ 0 \end{pmatrix}+b
+\begin{pmatrix} 0 \\ 1 \end{pmatrix}. \nonumber
 $$
 
 It is easy to see that this is the only linear combination of $\mathbf{e}_1$ and $\mathbf{e}_2$ that is equal to $\mathbf{v}$.
@@ -288,9 +288,9 @@ The three vectors below form the standard basis for $\mathbb{R}^3$.
 
 $$
 \mathbf{e}_1=
-\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix} \quad \mathbf{e}_2=
-\begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix} \quad \mathbf{e}_3=
-\begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix} \nonumber
+\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix} \quad \mathbf{e}_2=
+\begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix} \quad \mathbf{e}_3=
+\begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix} \nonumber
 $$
 
 Here too, it is true that each vector in $\mathbb{R}^3$ can be written as a unique linear combination of these three vectors.
@@ -311,16 +311,16 @@ Take an arbitrary vector $\mathbf{v}$ in $\mathbb{R}^n$ with
 
 $$
 \mathbf{v}=
-\begin{bmatrix} a_1 \\ \vdots \\ a_n \end{bmatrix}.\nonumber
+\begin{pmatrix} a_1 \\ \vdots \\ a_n \end{pmatrix}.\nonumber
 $$
 
 The vector $\mathbf{v}$ can be written as
 
 \begin{align*}
 \mathbf{v} &= a_1
-\begin{bmatrix} 1 \\ 0 \\ \vdots \\ 0 \end{bmatrix}+a_2
-\begin{bmatrix} 0 \\ 1 \\ \vdots \\ 0 \end{bmatrix}+ \ldots a_n
-\begin{bmatrix} 0 \\ 0 \\ \vdots \\ 1 \end{bmatrix} \\
+\begin{pmatrix} 1 \\ 0 \\ \vdots \\ 0 \end{pmatrix}+a_2
+\begin{pmatrix} 0 \\ 1 \\ \vdots \\ 0 \end{pmatrix}+ \ldots a_n
+\begin{pmatrix} 0 \\ 0 \\ \vdots \\ 1 \end{pmatrix} \\
 &= a_n\mathbf{e}_1+a_2\mathbf{e}_2+\ldots +a_n\mathbf{e}_n.
 \end{align*}
 

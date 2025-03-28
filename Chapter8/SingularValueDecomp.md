@@ -44,13 +44,13 @@ So the decomposition will look like either
 ::::{math}
 :label: Eq:SVD:firstform
 
-U\begin{bmatrix}
+U\begin{pmatrix}
 \sigma_1 & 0 & \cdots & \cdots& 0 & 0& \cdots& 0\\
 0  & \sigma_2 & \ddots &  & \vdots& 0& \cdots& 0 \\
 \vdots & \ddots & \ddots & \ddots &\vdots & \vdots & & \vdots\\
 \vdots & & \ddots & \ddots & 0 &\vdots &  &  \vdots\\
 0 & \cdots & \cdots & 0 & \sigma_p & 0& \cdots& 0\\
-\end{bmatrix} V^T, \quad \text{when} \, m \leq n,
+\end{pmatrix} V^T, \quad \text{when} \, m \leq n,
 
 ::::
 
@@ -59,7 +59,7 @@ or
 ::::{math}
 :label: Eq:SVD:secondform
 
-U\begin{bmatrix}
+U\begin{pmatrix}
 \sigma_1 & 0 & \cdots & \cdots& 0 \\
 0  & \sigma_2 & \ddots &  & \vdots \\
 \vdots & \ddots & \ddots & \ddots &\vdots \\
@@ -69,7 +69,7 @@ U\begin{bmatrix}
 0 & 0   &  \cdots  & \cdots  & 0 \\
 \vdots & \vdots & & \ &\vdots \\
 0 & 0   &  \cdots  & \cdots  & 0 \\
-\end{bmatrix} V^T, \quad  \text{when} \, m > n.
+\end{pmatrix} V^T, \quad  \text{when} \, m > n.
 
 ::::
 
@@ -79,13 +79,13 @@ That the singular values must be nonnegative keeps open the possibility that som
 ::::{prf:example}
 :label: Ex:SVD:firstSVD
 
-For the matrix  $A = \begin{bmatrix}1&3\\2&2\\3&1  \end{bmatrix}$  a singular value decomposition is given by  $A = U\Sigma V^T$  where
+For the matrix  $A = \begin{pmatrix}1&3\\2&2\\3&1  \end{pmatrix}$  a singular value decomposition is given by  $A = U\Sigma V^T$  where
 
 $$
-   U = \begin{bmatrix}\dfrac{1}{\sqrt{3}}&-\dfrac{1}{\sqrt{2}}&-\dfrac{1}{\sqrt{6}}\\
-   \dfrac{1}{\sqrt{3}}&0&\dfrac{2}{\sqrt{6}}\\\dfrac{1}{\sqrt{3}}&\dfrac{1}{\sqrt{2}}&-\dfrac{1}{\sqrt{6}}  \end{bmatrix}, \quad
-   \Sigma = \begin{bmatrix}\sqrt{24}&0\\0&2\\0&0  \end{bmatrix}, \quad
-   V = \begin{bmatrix}\dfrac1{\sqrt{2}} &\dfrac1{\sqrt{2}} \\ \dfrac1{\sqrt{2}} & -\dfrac1{\sqrt{2}} \end{bmatrix}.
+   U = \begin{pmatrix}\dfrac{1}{\sqrt{3}}&-\dfrac{1}{\sqrt{2}}&-\dfrac{1}{\sqrt{6}}\\
+   \dfrac{1}{\sqrt{3}}&0&\dfrac{2}{\sqrt{6}}\\\dfrac{1}{\sqrt{3}}&\dfrac{1}{\sqrt{2}}&-\dfrac{1}{\sqrt{6}}  \end{pmatrix}, \quad
+   \Sigma = \begin{pmatrix}\sqrt{24}&0\\0&2\\0&0  \end{pmatrix}, \quad
+   V = \begin{pmatrix}\dfrac1{\sqrt{2}} &\dfrac1{\sqrt{2}} \\ \dfrac1{\sqrt{2}} & -\dfrac1{\sqrt{2}} \end{pmatrix}.
 $$
 
 Let us point out a few properties of this decomposition.
@@ -103,17 +103,17 @@ We can write this SVD in a more 'economic' form by leaving out the third column 
 
 $$
 
-  A =  \begin{bmatrix}\dfrac{1}{\sqrt{3}}&-\dfrac{1}{\sqrt{2}}\\
+  A =  \begin{pmatrix}\dfrac{1}{\sqrt{3}}&-\dfrac{1}{\sqrt{2}}\\
    \dfrac{1}{\sqrt{3}}&0\\
-   \dfrac{1}{\sqrt{3}}&\dfrac{1}{\sqrt{2}}  \end{bmatrix} 
-  \begin{bmatrix}\sqrt{24}&0\\0&2\end{bmatrix}
-   \begin{bmatrix}\dfrac1{\sqrt{2}} &\dfrac1{\sqrt{2}} \\ \dfrac1{\sqrt{2}} & -\dfrac1{\sqrt{2}} \end{bmatrix}^T
+   \dfrac{1}{\sqrt{3}}&\dfrac{1}{\sqrt{2}}  \end{pmatrix} 
+  \begin{pmatrix}\sqrt{24}&0\\0&2\end{pmatrix}
+   \begin{pmatrix}\dfrac1{\sqrt{2}} &\dfrac1{\sqrt{2}} \\ \dfrac1{\sqrt{2}} & -\dfrac1{\sqrt{2}} \end{pmatrix}^T
 
 $$
 
-\item The first two columns of $U$,  multiples of the vectors $\begin{bmatrix}1\\1\\1\end{bmatrix}$  and  $\begin{bmatrix}-1\\0\\1\end{bmatrix}$, give an orthonormal   basis of the column space of the matrix $A$.
-$\begin{bmatrix}1\\1\\1\end{bmatrix} = \dfrac14\begin{bmatrix}1\\2\\3\end{bmatrix} +\dfrac14\begin{bmatrix}3\\2\\1\end{bmatrix}= \frac14\vect{a}_1 + \frac14\vect{a}_2$,
-and  $\begin{bmatrix}-1\\0\\1\end{bmatrix} = \frac12\vect{a}_2 - \frac12\vect{a}_1$.
+\item The first two columns of $U$,  multiples of the vectors $\begin{pmatrix}1\\1\\1\end{pmatrix}$  and  $\begin{pmatrix}-1\\0\\1\end{pmatrix}$, give an orthonormal   basis of the column space of the matrix $A$.
+$\begin{pmatrix}1\\1\\1\end{pmatrix} = \dfrac14\begin{pmatrix}1\\2\\3\end{pmatrix} +\dfrac14\begin{pmatrix}3\\2\\1\end{pmatrix}= \frac14\vect{a}_1 + \frac14\vect{a}_2$,
+and  $\begin{pmatrix}-1\\0\\1\end{pmatrix} = \frac12\vect{a}_2 - \frac12\vect{a}_1$.
 
 \item The two columns of the matrix $V$ give an orthonormal basis of the row space of the matrix $A$. (Which  is not so striking here, since that row space is the whole of $\R^2$.)
 
@@ -129,10 +129,10 @@ of {prf:ref}`Thm:SymmetricMat:SpectralDecomp`.
 %%:label: Eq:SVD:SpectralDecomp
 $$
    \begin{array}{ccl} A &=& \sigma_1 \mathbf{u}_1\mathbf{v}_1^T + \sigma_2\mathbf{u}_2\mathbf{v}_2^T  \\
-     &=&  \sqrt{24} \begin{bmatrix}\dfrac{1}{\sqrt{3}} \\ \dfrac{1}{\sqrt{3}} \\ \dfrac{1}{\sqrt{3}}\end{bmatrix}
-      \begin{bmatrix}\dfrac{1}{\sqrt{2}} & \dfrac{1}{\sqrt{2}}\end{bmatrix}
-     + 2\begin{bmatrix}-\dfrac{1}{\sqrt{2}} \\0\\ \dfrac{1}{\sqrt{2}}\end{bmatrix}
-     \begin{bmatrix}\dfrac{1}{\sqrt{2}} & -\dfrac{1}{\sqrt{2}}\end{bmatrix}
+     &=&  \sqrt{24} \begin{pmatrix}\dfrac{1}{\sqrt{3}} \\ \dfrac{1}{\sqrt{3}} \\ \dfrac{1}{\sqrt{3}}\end{pmatrix}
+      \begin{pmatrix}\dfrac{1}{\sqrt{2}} & \dfrac{1}{\sqrt{2}}\end{pmatrix}
+     + 2\begin{pmatrix}-\dfrac{1}{\sqrt{2}} \\0\\ \dfrac{1}{\sqrt{2}}\end{pmatrix}
+     \begin{pmatrix}\dfrac{1}{\sqrt{2}} & -\dfrac{1}{\sqrt{2}}\end{pmatrix}
      \end{array}.
 $$
 %%::
@@ -351,20 +351,20 @@ The step that, we think,  most needs some explaining is step 5.  Why does it lea
 
 We will find a singular value decomposition of the matrix
 $
-A = \begin{bmatrix}
+A = \begin{pmatrix}
 5 & -1 \\
 -3 & 2 \\
 -1 & 3
-\end{bmatrix}.
+\end{pmatrix}.
 $
 
 
 We follow the steps of the algorithm.
 
-1.  We first compute $A^TA = \begin{bmatrix}
+1.  We first compute $A^TA = \begin{pmatrix}
        35 & -14 \\
        -14 & 14
-      \end{bmatrix}
+      \end{pmatrix}
       $.
 
 2. The eigenvalues $\lambda_1 \ge \lambda_2$ of $A^TA$ are given by 
@@ -372,42 +372,42 @@ We follow the steps of the algorithm.
  This gives us the singular values  $\sigma_1 = \sqrt{42}$, and $\sigma_2=\sqrt{7}$. 
   
 
-3. Our matrix $\Sigma$  becomes $\Sigma = \begin{bmatrix}
+3. Our matrix $\Sigma$  becomes $\Sigma = \begin{pmatrix}
 \sqrt{42} & 0 \\
 0 & \sqrt{7} \\
 0 & 0
-\end{bmatrix}$.
+\end{pmatrix}$.
 
 4.  We have to find the eigenvectors of $A^TA$ for $\lambda_1 = 42$, $\lambda_2 = 7$. <BR>
-    Skipping the computations we find  $\mathbf{w}_1 = \begin{bmatrix} 2\\-1
-\end{bmatrix}$ and  $\mathbf{w}_2 = \begin{bmatrix} 1\\2
-\end{bmatrix}$.  <BR>
-  Normalizing and putting them in a matrix gives  $V = \begin{bmatrix}
+    Skipping the computations we find  $\mathbf{w}_1 = \begin{pmatrix} 2\\-1
+\end{pmatrix}$ and  $\mathbf{w}_2 = \begin{pmatrix} 1\\2
+\end{pmatrix}$.  <BR>
+  Normalizing and putting them in a matrix gives  $V = \begin{pmatrix}
 \frac{2}{\sqrt{5}} & \frac{1}{\sqrt{5}} \\[.5ex]
 -\frac{1}{\sqrt{5}} & \frac{2}{\sqrt{5}}
-\end{bmatrix}$.
+\end{pmatrix}$.
 
 5. We compute  <BR>
-$\vect{u}_1 = \dfrac{1}{\sigma_1}A\vect{v}_1 = \dfrac{1}{\sqrt{42}}\times\dfrac{1}{\sqrt{5}} \begin{bmatrix}
+$\vect{u}_1 = \dfrac{1}{\sigma_1}A\vect{v}_1 = \dfrac{1}{\sqrt{42}}\times\dfrac{1}{\sqrt{5}} \begin{pmatrix}
 5 & -1 \\
 -3 & 2 \\
 -1 & 3
-\end{bmatrix} \begin{bmatrix} 2\\-1 \end{bmatrix} = \dfrac{1}{\sqrt{210}}\begin{bmatrix}11\\-8\\-5 \end{bmatrix}$ <BR>
+\end{pmatrix} \begin{pmatrix} 2\\-1 \end{pmatrix} = \dfrac{1}{\sqrt{210}}\begin{pmatrix}11\\-8\\-5 \end{pmatrix}$ <BR>
 and <BR>
-$\vect{u}_2 = \dfrac{1}{\sigma_2}A\vect{v}_2 = \dfrac{1}{\sqrt{7}}\times\dfrac{1}{\sqrt{5}}\begin{bmatrix}
+$\vect{u}_2 = \dfrac{1}{\sigma_2}A\vect{v}_2 = \dfrac{1}{\sqrt{7}}\times\dfrac{1}{\sqrt{5}}\begin{pmatrix}
 5 & -1 \\
 -3 & 2 \\
 -1 & 3
-\end{bmatrix} \begin{bmatrix} 1\\2 \end{bmatrix} = \dfrac{1}{\sqrt{35}}\begin{bmatrix}3\\1\\5 \end{bmatrix}$.
+\end{pmatrix} \begin{pmatrix} 1\\2 \end{pmatrix} = \dfrac{1}{\sqrt{35}}\begin{pmatrix}3\\1\\5 \end{pmatrix}$.
 
 Note that 'magically' $\{\mathbf{u}_1,  \mathbf{u}_2\}$ is indeed an orthonormal set!
 
 We have to extend this to an orthonormal basis of $\R^3$. For this low dimensional problem we can use the cross product!  
 First we compute the orthogonal vector 
- $\quad \vect{w}_3  = \begin{bmatrix}11\\-8\\-5 \end{bmatrix} \times  \begin{bmatrix}3\\1\\5 \end{bmatrix} = \begin{bmatrix}-35\\-70\\35 \end{bmatrix} = 35 \begin{bmatrix}-1\\-2\\1 \end{bmatrix}$. <BR>
- Normalizing $\vect{w}_3$ gives the third basis vector $\vect{u}_3 =  \dfrac{1}{\sqrt{6}} \begin{bmatrix}-1\\-2\\1 \end{bmatrix}$.
+ $\quad \vect{w}_3  = \begin{pmatrix}11\\-8\\-5 \end{pmatrix} \times  \begin{pmatrix}3\\1\\5 \end{pmatrix} = \begin{pmatrix}-35\\-70\\35 \end{pmatrix} = 35 \begin{pmatrix}-1\\-2\\1 \end{pmatrix}$. <BR>
+ Normalizing $\vect{w}_3$ gives the third basis vector $\vect{u}_3 =  \dfrac{1}{\sqrt{6}} \begin{pmatrix}-1\\-2\\1 \end{pmatrix}$.
 
-Thus we end up with the matrix  $U = \begin{bmatrix}\frac{11}{\sqrt{210}}&\frac{3}{\sqrt{35}} &-\frac{1}{\sqrt{6}}\\ -\frac{8}{\sqrt{210}}&\frac{1}{\sqrt{35}} &-\frac{2}{\sqrt{6}}\\-\frac{5}{\sqrt{210}}&\frac{5}{\sqrt{35}} & \frac{1}{\sqrt{6}}\end{bmatrix}$.
+Thus we end up with the matrix  $U = \begin{pmatrix}\frac{11}{\sqrt{210}}&\frac{3}{\sqrt{35}} &-\frac{1}{\sqrt{6}}\\ -\frac{8}{\sqrt{210}}&\frac{1}{\sqrt{35}} &-\frac{2}{\sqrt{6}}\\-\frac{5}{\sqrt{210}}&\frac{5}{\sqrt{35}} & \frac{1}{\sqrt{6}}\end{pmatrix}$.
 
 ::::
 
@@ -642,28 +642,28 @@ To illustrate {prf:ref}`Rem:SVD:PracticalHints` and to conclude this subsection 
 
 We will find a singular value decomposition of the matrix
 $
-A = \begin{bmatrix}
+A = \begin{pmatrix}
 1 & 1 & 0 &-1\\
 -1 & 1 & 0&3\\
 -2 & 1 & 2&0
-\end{bmatrix}
+\end{pmatrix}
 $.
 
 Following the suggestion of the remark we first construct an SVD of the matrix
-$B = A^T = \begin{bmatrix}
+$B = A^T = \begin{pmatrix}
 1 & -1 &-2 \\
 1 & 1 &1 \\
 0 & 0 & 2 \\
 -1 & 3 & 0
-\end{bmatrix}$.
+\end{pmatrix}$.
 
 We will pass along all steps of {prf:ref}`Alg:SVD:SVDalgorithm`.
 
-Step 1.  $B^TB = AA^T = \begin{bmatrix}
+Step 1.  $B^TB = AA^T = \begin{pmatrix}
 3 & -3 & -1\\
 -3 &11 &3 \\
 -1 & 3 & 9
-\end{bmatrix}$.  This is straightforward.
+\end{pmatrix}$.  This is straightforward.
 
 
 Step 2.  Computing the characteristic polynomial is already quite a task here, but it is doable.  The result: 
@@ -677,43 +677,43 @@ for which the squares of all the singular values are  *integers*. (So in that se
 computations can be much worse.)  Here, the eigenvalues of $B^TB$ are given by  $\lambda_1 = 14, \lambda_2 = 7,
 \lambda_3 = 2$.  Which finishes step 2.
 
-Step 3  is straightforward:  $\Sigma = \begin{bmatrix}
+Step 3  is straightforward:  $\Sigma = \begin{pmatrix}
 \sqrt{14} & 0 & 0 \\
 0 & \sqrt{7} & 0 \\
 0 & 0 & \sqrt{2} \\
 0 & 0 & 0
-\end{bmatrix}$.
+\end{pmatrix}$.
 
 Step 4. With some effort we can find eigenvectors: <BR>
-$\vect{v}_1 = \begin{bmatrix} 1 \\ -3 \\ -2 \end{bmatrix}$, for $\lambda_1 = 14$,
-  $\vect{v}_2 = \begin{bmatrix} 1 \\ -3 \\ 5 \end{bmatrix}$, for $\lambda_2 = 7$, and
-$\vect{v}_3 = \begin{bmatrix} 3 \\ 1 \\ 0 \end{bmatrix}$, for $\lambda_3 = 2$. <BR>
+$\vect{v}_1 = \begin{pmatrix} 1 \\ -3 \\ -2 \end{pmatrix}$, for $\lambda_1 = 14$,
+  $\vect{v}_2 = \begin{pmatrix} 1 \\ -3 \\ 5 \end{pmatrix}$, for $\lambda_2 = 7$, and
+$\vect{v}_3 = \begin{pmatrix} 3 \\ 1 \\ 0 \end{pmatrix}$, for $\lambda_3 = 2$. <BR>
 Note that these are indeed three orthogonal vectors, which, according to {prf:ref}`Rem:SVD:PracticalHints`, are better not normalized immediately.
 
 Step 5.  Next we compute the vectors $\vect{u}_i$, again without normalizing, and also for the moment not taking the (ugly!) factors
 $\frac{1}{\sigma_i} $ into account. Since the singular values are nonzero, we use all three vectors $\vect{v}_i$. <BR>
 This gives 
 
-$$ \mathbf{u}_1 = B\mathbf{v}_1 = \begin{bmatrix} 8 \\ -4 \\ -4 \\ -10 \end{bmatrix}, \quad \mathbf{u}_2 = B\mathbf{v}_2 =
-\begin{bmatrix}-6 \\ 3 \\ 10 \\ -10 \end{bmatrix}, \quad \mathbf{u}_3 = B\mathbf{v}_3 = \begin{bmatrix} 2 \\ 4 \\ 0 \\ 0 \end{bmatrix}. 
+$$ \mathbf{u}_1 = B\mathbf{v}_1 = \begin{pmatrix} 8 \\ -4 \\ -4 \\ -10 \end{pmatrix}, \quad \mathbf{u}_2 = B\mathbf{v}_2 =
+\begin{pmatrix}-6 \\ 3 \\ 10 \\ -10 \end{pmatrix}, \quad \mathbf{u}_3 = B\mathbf{v}_3 = \begin{pmatrix} 2 \\ 4 \\ 0 \\ 0 \end{pmatrix}. 
 $$
 It should not come as a surprise that these vectors are orthogonal! <BR>
-We have to find a fourth orthogonal vector $\vect{u}_4$.   One way is to look for a nonzero vector in the nulspace of the matrix $\begin{bmatrix}
-8 & -4 & -4 &-10 \\ -6 & 3 & 10 & -10 \\ 2 & 4 & 0 & 0\end{bmatrix}$. <BR>
- You may check that the vector $\vect{u}_4 = \begin{bmatrix} 4 \\ -2 \\ 5 \\ 2 \end{bmatrix}$  does the trick.
+We have to find a fourth orthogonal vector $\vect{u}_4$.   One way is to look for a nonzero vector in the nulspace of the matrix $\begin{pmatrix}
+8 & -4 & -4 &-10 \\ -6 & 3 & 10 & -10 \\ 2 & 4 & 0 & 0\end{pmatrix}$. <BR>
+ You may check that the vector $\vect{u}_4 = \begin{pmatrix} 4 \\ -2 \\ 5 \\ 2 \end{pmatrix}$  does the trick.
 
 Step 6.  (Where we also still have to present our $V$.)  <BR>
 We rescale all vectors to unit vectors and put them side by side, to arrive at the matrices
 
 $$
-   V = \begin{bmatrix} \frac{1}{\sqrt{14}} &\frac{1}{\sqrt{35}} &  \frac{3}{\sqrt{10}} \\ -\frac{3}{\sqrt{14}}  & -\frac{3}{\sqrt{35}}
-   &\frac{1}{\sqrt{10}} \\ -\frac{2}{\sqrt{14}} & \frac{5}{\sqrt{35}} & 0 \end{bmatrix}, \quad
-   U = \begin{bmatrix}
+   V = \begin{pmatrix} \frac{1}{\sqrt{14}} &\frac{1}{\sqrt{35}} &  \frac{3}{\sqrt{10}} \\ -\frac{3}{\sqrt{14}}  & -\frac{3}{\sqrt{35}}
+   &\frac{1}{\sqrt{10}} \\ -\frac{2}{\sqrt{14}} & \frac{5}{\sqrt{35}} & 0 \end{pmatrix}, \quad
+   U = \begin{pmatrix}
             \frac{4}{7}  & -\frac{6}{\sqrt{245}} & \frac{1}{\sqrt{5}} & \frac{4}{7}\\
             -\frac{2}{7} & \frac{3}{\sqrt{245}}  & \frac{2}{\sqrt{5}}& -\frac{2}{7}\\
             -\frac{2}{7} & \frac{10}{\sqrt{245}} &   0        &\frac{5}{7} \\
             -\frac{5}{7} & -\frac{10}{\sqrt{245}}&   0        & \frac{2}{7}\\
-       \end{bmatrix}.
+       \end{pmatrix}.
 $$
 
 And then we must not forget that we have just constructed an SVD for $A^T$ instead of $A$!
@@ -745,10 +745,10 @@ Let us first consider the case where $A$ is a  $2 \times 2$ matrix, as in that c
 Every  $2\times 2$  orthogonal matrix has one of the two forms
 
 $$
-   \begin{bmatrix} \cos({\varphi})&-\sin({\varphi}) \\
-   \sin({\varphi}) &  \cos({\varphi})\end{bmatrix}, \quad \quad
-   \begin{bmatrix} \cos({\varphi})&\sin({\varphi}) \\
-   \sin({\varphi}) &  -\cos({\varphi})\end{bmatrix}.
+   \begin{pmatrix} \cos({\varphi})&-\sin({\varphi}) \\
+   \sin({\varphi}) &  \cos({\varphi})\end{pmatrix}, \quad \quad
+   \begin{pmatrix} \cos({\varphi})&\sin({\varphi}) \\
+   \sin({\varphi}) &  -\cos({\varphi})\end{pmatrix}.
 $$
 
 The first matrix represents a rotation, the second matrix represents a reflection.  In an SVD of $A$, we can always construct $V$ to be a rotation.  Namely, the columns of $V$ must be eigenvectors of the matrix $A^TA$, and eigenvectors remain eigenvectors if we multiply  them with a factor $(-1)$.
@@ -774,12 +774,12 @@ Let us consider a numerical example.
 :label: Ex:SVD:GeometricView
 
 We will analyze the SVD of the matrix
-  $A = \begin{bmatrix} 5 & 2 \\ 0 & 6 \end{bmatrix}$.
+  $A = \begin{pmatrix} 5 & 2 \\ 0 & 6 \end{pmatrix}$.
 
 The matrix  
 
 $$
- A^TA =  \begin{bmatrix} 25 & 10 \\ 10 & 40 \end{bmatrix} = 5 \begin{bmatrix} 5 & 2 \\ 2 & 8 \end{bmatrix}
+ A^TA =  \begin{pmatrix} 25 & 10 \\ 10 & 40 \end{pmatrix} = 5 \begin{pmatrix} 5 & 2 \\ 2 & 8 \end{pmatrix}
 $$
 
 has the eigenvalues
@@ -791,14 +791,14 @@ $$
 with corresponding eigenvectors
 
 $$
-  \mathbf{v}_1 = \begin{bmatrix} 1  \\ 2 \end{bmatrix}, \quad \mathbf{v}_2 = \begin{bmatrix} 2  \\ -1 \end{bmatrix}.
+  \mathbf{v}_1 = \begin{pmatrix} 1  \\ 2 \end{pmatrix}, \quad \mathbf{v}_2 = \begin{pmatrix} 2  \\ -1 \end{pmatrix}.
 $$
 
 Normalizing them, and giving the second vector a minus sign,
 we find for an SVD of the matrix $A$ the matrices
 
 $$
- V = \dfrac{1}{\sqrt{5}} \begin{bmatrix} 1 & -2 \\ 2 & 1 \end{bmatrix}, \quad \Sigma = \begin{bmatrix}\sqrt{45} & 0\\0 & \sqrt{20} \end{bmatrix}  = \begin{bmatrix} 3\sqrt{5} & 0\\0 & 2\sqrt{5} \end{bmatrix}
+ V = \dfrac{1}{\sqrt{5}} \begin{pmatrix} 1 & -2 \\ 2 & 1 \end{pmatrix}, \quad \Sigma = \begin{pmatrix}\sqrt{45} & 0\\0 & \sqrt{20} \end{pmatrix}  = \begin{pmatrix} 3\sqrt{5} & 0\\0 & 2\sqrt{5} \end{pmatrix}
 $$
 
 to start with.
@@ -806,7 +806,7 @@ to start with.
 Applying  the last two steps of {prf:ref}`Alg:SVD:SVDalgorithm` we find that
 
 $$
-   U = \dfrac{1}{5} \begin{bmatrix} 3 & -4 \\ 4 & 3 \end{bmatrix}.
+   U = \dfrac{1}{5} \begin{pmatrix} 3 & -4 \\ 4 & 3 \end{pmatrix}.
 $$
 
 So,  $V$ represents a rotation about an angle  $\varphi = \arccos\left(\frac{1}{\sqrt{5}}\right) \approx 63^{o}$, and 
@@ -819,7 +819,7 @@ We give the matrix an extra factor $\dfrac1{\sqrt{5}}$ to get a better picture.
 With the matrix as it was given, the stretching factors $3\sqrt{5}$ and $2\sqrt{5}$ would 'blow up' the unit circle too much too our taste. With this extra factor, the matrix
 
 $$
-   \tilde{A} = \frac{1}{\sqrt{5}} \begin{bmatrix} 5 & 2 \\ 2 & 8 \end{bmatrix}
+   \tilde{A} = \frac{1}{\sqrt{5}} \begin{pmatrix} 5 & 2 \\ 2 & 8 \end{pmatrix}
 $$
 has the SVD
 
@@ -828,21 +828,21 @@ $$
 $$
 
 where $U$ and $V$ are the same as for $A$, and 
-   $\tilde{\Sigma} =  \begin{bmatrix} 3 & 0 \\ 0 & 2 \end{bmatrix}$.
+   $\tilde{\Sigma} =  \begin{pmatrix} 3 & 0 \\ 0 & 2 \end{pmatrix}$.
 
 {numref}`Figure %s <Fig:SVD:GeometricView>` visualizes what is going on. 
 
  Note that at the end the vector $\vect{e}_1$  comes to rest on the $x$-axis,  as it should, since
 
 $$
-   \tilde{A}\vect{e}_1 \,=\, \dfrac{1}{\sqrt{5}}\begin{bmatrix} 5 & 2 \\ 0 & 6 \end{bmatrix}\begin{bmatrix} 1\\ 0 \end{bmatrix} \,=\, \begin{bmatrix} \sqrt{5}\\ 0 \end{bmatrix}.
+   \tilde{A}\vect{e}_1 \,=\, \dfrac{1}{\sqrt{5}}\begin{pmatrix} 5 & 2 \\ 0 & 6 \end{pmatrix}\begin{pmatrix} 1\\ 0 \end{pmatrix} \,=\, \begin{pmatrix} \sqrt{5}\\ 0 \end{pmatrix}.
 $$
 
 :::{figure} Images/Fig-SVD-GeometricView.svg
 :name: Fig:SVD:GeometricView
 :class: dark-light
 
-Geometric decomposition of $\tilde{A} = \dfrac{1}{\sqrt{5}}\begin{bmatrix} 5 & 2 \\ 0 & 6 \end{bmatrix} = U\tilde{\Sigma}V^T$.
+Geometric decomposition of $\tilde{A} = \dfrac{1}{\sqrt{5}}\begin{pmatrix} 5 & 2 \\ 0 & 6 \end{pmatrix} = U\tilde{\Sigma}V^T$.
 :::
 
 ::::
@@ -893,12 +893,12 @@ The main features of the data may be filtered out by analyzing an SVD of the mat
 The basic idea comes from the 'spectral decomposition' as in the last observation of {prf:ref}`Ex:SVD:firstSVD`.  Suppose $A$ is a matrix of  rank $r$,  with nonzero singular values  $\sigma_1 \geq \sigma_2 \geq \ldots \geq \sigma_r > 0$.  Furthermore, let  $U\Sigma V^T$  be a singular value decomposition of the matrix $A$. Let 
 
 $$
-  \Delta = \begin{bmatrix} \sigma_1 &   0   &  0   & \cdots & 0 \\ 
+  \Delta = \begin{pmatrix} \sigma_1 &   0   &  0   & \cdots & 0 \\ 
                               0 & \sigma_2  &  0   & \cdots & 0 \\
                               0 &  0  & \sigma_3 & \cdots   & 0 \\
                               \vdots & \vdots &  & \ddots &\vdots \\
                               0  & 0  & 0 & \ldots & \sigma_r 
-           \end{bmatrix}.   
+           \end{pmatrix}.   
 $$
 
 So $\Delta$ is the diagonal matrix that remains if all the zero rows and zero columns (if any) of $\Sigma$ are removed. If $U_r$   is the matrix with the first $r$ columns of $U$, and  $V_r$  is the matrix with the first $r$ columns of $V$, then as in {prf:ref}`Ex:SVD:firstSVD`  we have that
@@ -937,7 +937,7 @@ In general, the higher the correlation/dependency between the columns (or, for t
 ::::{prf:example}
 :label:  Ex:SVD:DataCompression
 
-$A = \begin{bmatrix}
+$A = \begin{pmatrix}
         104.39 &  44.80 &  78.92 & 47.65 & 134.79  &   100.40 & 60.09 & 52.01 &  97.98 & 31.55 \\
          98.31 &  52.03 &  86.88 & 47.15 & 137.53  &    87.79 & 61.69 & 30.50 &  80.36 & 21.78 \\
          96.90 &  30.09 &  72.26 & 41.60 & 117.75  &    85.80 & 61.83 & 49.55 &  83.76 & 29.89 \\
@@ -950,7 +950,7 @@ $A = \begin{bmatrix}
         100.79 &  24.25 &  73.17 & 40.82 & 117.69  &    87.36 & 65.54 & 54.21 &  83.48 & 31.19 \\
         120.68 &  49.88 & 102.65 & 55.36 & 158.59  &   103.20 & 78.26 & 43.66 &  95.51 & 28.63 \\
         103.22 &  54.07 &  79.81 & 50.01 & 139.32  &   104.55 & 57.99 & 51.55 & 103.19 & 31.47
-     \end{bmatrix}$.  
+     \end{pmatrix}$.  
 
      
 
@@ -964,7 +964,7 @@ Note the severe drop-off after the third singular value. <BR>
 If we take from the singular values decomposition   $A = U\Sigma V^T$  only the first three columns of $U$ and $V$,  i.e. we put  $A_3 = U_3\Sigma_{33}V_3^T$,  we get
 
 $$
-  A_3 = \begin{bmatrix}
+  A_3 = \begin{pmatrix}
               0.31 &  0.27 & -0.21 \\
               0.29 & -0.27 & -0.15 \\         
               0.27 &  0.30 &  0.13 \\
@@ -977,10 +977,10 @@ $$
               0.28 &  0.38 &  0.29 \\
               0.35 & -0.14 &  0.10 \\
               0.31 &  0.24 & -0.44    
-      \end{bmatrix}     
-     \begin{bmatrix}  839.36 & 0 & 0 \\ 0 & 58.84 & 0 \\ 0 & 0 &  45.32    
-       \end{bmatrix}
-     \begin{bmatrix}
+      \end{pmatrix}     
+     \begin{pmatrix}  839.36 & 0 & 0 \\ 0 & 58.84 & 0 \\ 0 & 0 &  45.32    
+       \end{pmatrix}
+     \begin{pmatrix}
          0.41  &  0.05 & 0.32  \\
          0.17  & -0.32 &-0.63  \\
          0.34  & -0.38 & 0.23  \\
@@ -991,7 +991,7 @@ $$
          0.17  &  0.63 & 0.10  \\
          0.34  &  0.37 &-0.35  \\
          0.11  &  0.28 & 0.02    
-     \end{bmatrix}^T
+     \end{pmatrix}^T
 $$  
   
 We expect $A_3$ to be a good approximation of $A$.  
@@ -1000,7 +1000,7 @@ We expect $A_3$ to be a good approximation of $A$.
   $$
      \begin{array}{ccc}
        A =  U\Sigma V^T & &  A_3 = U_3\Sigma_{33} V_3^T \\[1ex]
-   \begin{bmatrix}
+   \begin{pmatrix}
       104.3 &  44.8 &   .\,.\,. &  97.9 & 31.5 \\ 
        98.3 &  52.0 &   .\,.\,. &  80.3 & 21.7 \\ 
        96.9 &  30.0 &   .\,.\,. &  83.7 & 29.8 \\ 
@@ -1012,9 +1012,9 @@ We expect $A_3$ to be a good approximation of $A$.
        82.9 &  53.4 &   .\,.\,. &  73.1 & 16.9 \\ 
       100.7 &  24.2 &   .\,.\,. &  83.4 & 31.1 \\     
       120.6 &  49.8 &   .\,.\,. &  95.5 & 28.6 \\     
-      103.2 &  54.0 &   .\,.\,. & 103.1 & 31.4     \end{bmatrix}
+      103.2 &  54.0 &   .\,.\,. & 103.1 & 31.4     \end{pmatrix}
      & \quad &
-     \begin{bmatrix}
+     \begin{pmatrix}
         103.9 &  45.1 &  .\,.\,. &  98.0 & 31.4  \\
          98.1 &  51.5 &  .\,.\,. &  81.0 & 21.3  \\
          97.2 &  29.9 &  .\,.\,. &  83.1 & 29.1  \\
@@ -1027,7 +1027,7 @@ We expect $A_3$ to be a good approximation of $A$.
         101.0 &  24.3 &  .\,.\,. &  83.5 & 30.9  \\
         120.7 &  49.9 &  .\,.\,. &  95.4 & 28.4  \\
         103.4 &  53.5 &  .\,.\,. & 103.2 & 31.4   
-       \end{bmatrix}
+       \end{pmatrix}
      \end{array}
   $$
   

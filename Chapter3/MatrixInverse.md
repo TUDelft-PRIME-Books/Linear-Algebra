@@ -69,14 +69,14 @@ $$
 where
 
 $$
- A = \begin{bmatrix} 1 & 2 \\ 1 & 2 \end{bmatrix}, \quad B =  \begin{bmatrix} 1 & 1 \\ 0 & 0 \end{bmatrix}
+ A = \begin{pmatrix} 1 & 2 \\ 1 & 2 \end{pmatrix}, \quad B =  \begin{pmatrix} 1 & 1 \\ 0 & 0 \end{pmatrix}
 $$
 
 does not have a solution. Why? Well, any column of $AX$ is a linear combination of the columns of $A$,
 and the columns of $B$ obviously cannot be written as such linear combinations:
 
 $$
-  \begin{bmatrix} 1  \\ 0  \end{bmatrix} \neq c_1 \begin{bmatrix} 1  \\ 1  \end{bmatrix}  + c_2 \begin{bmatrix} 2  \\ 2  \end{bmatrix}
+  \begin{pmatrix} 1  \\ 0  \end{pmatrix} \neq c_1 \begin{pmatrix} 1  \\ 1  \end{pmatrix}  + c_2 \begin{pmatrix} 2  \\ 2  \end{pmatrix}
   \quad \text{for all } c_1,c_2 \quad\text{in  } \mathbb{R}.
 $$
 
@@ -94,13 +94,13 @@ $$
 where
 
 $$
- A = \begin{bmatrix} 1 & 2 \\ 1 & 2 \end{bmatrix}, \quad B =  \begin{bmatrix} 1 & 4 \\ 1 & 4 \end{bmatrix}
+ A = \begin{pmatrix} 1 & 2 \\ 1 & 2 \end{pmatrix}, \quad B =  \begin{pmatrix} 1 & 4 \\ 1 & 4 \end{pmatrix}
 $$
 
 has infinitely many solutions. Two of those are for instance
 
 $$
-  X_1 = \begin{bmatrix} 1 & 0 \\ 0 & 2 \end{bmatrix} \quad \text{and} \quad X_2 = \begin{bmatrix} -1 & 2 \\ 1 & 1 \end{bmatrix}.
+  X_1 = \begin{pmatrix} 1 & 0 \\ 0 & 2 \end{pmatrix} \quad \text{and} \quad X_2 = \begin{pmatrix} -1 & 2 \\ 1 & 1 \end{pmatrix}.
 $$
 
 ::::::
@@ -212,20 +212,20 @@ $$
 For the matrices
 
 $$
-  A =  \begin{bmatrix} 1 & 2 \\ 3 & 5 \end{bmatrix}
+  A =  \begin{pmatrix} 1 & 2 \\ 3 & 5 \end{pmatrix}
     \quad \text{and} \quad
-  B =   \begin{bmatrix} -5 & 2 \\ 3 & -1 \end{bmatrix}
+  B =   \begin{pmatrix} -5 & 2 \\ 3 & -1 \end{pmatrix}
 $$
 
 we see
 
 $$
- \begin{bmatrix} 1 & 2 \\ 3 & 5 \end{bmatrix}
- \begin{bmatrix} -5 & 2 \\ 3 & -1 \end{bmatrix} =
- \begin{bmatrix} -5 & 2 \\ 3 & -1 \end{bmatrix}
- \begin{bmatrix} 1 & 2 \\ 3 & 5 \end{bmatrix}
+ \begin{pmatrix} 1 & 2 \\ 3 & 5 \end{pmatrix}
+ \begin{pmatrix} -5 & 2 \\ 3 & -1 \end{pmatrix} =
+ \begin{pmatrix} -5 & 2 \\ 3 & -1 \end{pmatrix}
+ \begin{pmatrix} 1 & 2 \\ 3 & 5 \end{pmatrix}
  =
- \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}.
+ \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}.
 $$
 
 So $A$ and $B$ are each other's inverse.
@@ -233,28 +233,28 @@ So $A$ and $B$ are each other's inverse.
 Another example:
 
 $$
- \begin{bmatrix} 1 & 1 & 0 \\
+ \begin{pmatrix} 1 & 1 & 0 \\
                  1 & 1 & 1 \\
-                 0 & 1 & 1 \end{bmatrix}
- \begin{bmatrix} 0 & 1 & -1 \\
+                 0 & 1 & 1 \end{pmatrix}
+ \begin{pmatrix} 0 & 1 & -1 \\
                  1 &  -1 &  1 \\
-                -1 & 1 &  0  \end{bmatrix} =
- \begin{bmatrix} 1 & 0 & 0\\
+                -1 & 1 &  0  \end{pmatrix} =
+ \begin{pmatrix} 1 & 0 & 0\\
                  0 & 1 & 0 \\
-                 0 & 0 & 1\end{bmatrix}.
+                 0 & 0 & 1\end{pmatrix}.
 $$
 
 You may check for yourself that the product in the other order also gives $I$,
 so
 
 $$
- \begin{bmatrix} 1 & 1 & 0 \\
+ \begin{pmatrix} 1 & 1 & 0 \\
                  1 & 1 & 1 \\
-                 0 & 1 & 1 \end{bmatrix}^{-1}
+                 0 & 1 & 1 \end{pmatrix}^{-1}
                  =
- \begin{bmatrix} 0 & 1 & -1 \\
+ \begin{pmatrix} 0 & 1 & -1 \\
                  1 & -1 &  1 \\
-                -1 & 1 &  0  \end{bmatrix}
+                -1 & 1 &  0  \end{pmatrix}
 $$
 
 It will appear ({prf:ref}`Rem:MatrixInv:RightInvLeftInv`) that for square matrices, a one-sided inverse is automatically a two-sided inverse, by which we mean
@@ -270,7 +270,7 @@ The first example can be generalized:
 ::::::{prf:proposition}
 :label: Prop:MatrixInv:Inverse2x2
 
-If $A =  \begin{bmatrix} a & b \\ c & d \end{bmatrix}$, then $A^{-1}$
+If $A =  \begin{pmatrix} a & b \\ c & d \end{pmatrix}$, then $A^{-1}$
 exists if and only if
 
 $$
@@ -280,11 +280,11 @@ $$
 In that case
 
 $$
-  A^{-1} = \begin{bmatrix} a & b \\ c & d \end{bmatrix}^{-1} =
-  \begin{bmatrix} \dfrac{d}{ad - bc} & \dfrac{-b}{ad - bc} \\
-                  \dfrac{-c}{ad - bc} & \dfrac{a}{ad - bc} \end{bmatrix}
+  A^{-1} = \begin{pmatrix} a & b \\ c & d \end{pmatrix}^{-1} =
+  \begin{pmatrix} \dfrac{d}{ad - bc} & \dfrac{-b}{ad - bc} \\
+                  \dfrac{-c}{ad - bc} & \dfrac{a}{ad - bc} \end{pmatrix}
   =
-  \frac{1}{ad-bc}\begin{bmatrix} d &- b \\ -c & a \end{bmatrix}.
+  \frac{1}{ad-bc}\begin{pmatrix} d &- b \\ -c & a \end{pmatrix}.
 $$
 
 ::::::
@@ -310,21 +310,21 @@ Also check that the first matrix in {prf:ref}`Ex:FirstInverse` illustrates the f
 
 $$
 \begin{array}{rcl} BA &=&
-\dfrac{1}{ad-bc}\begin{bmatrix} d &-b \\ -c & a \end{bmatrix}
-\begin{bmatrix} a & b \\ c & d \end{bmatrix}\\
+\dfrac{1}{ad-bc}\begin{pmatrix} d &-b \\ -c & a \end{pmatrix}
+\begin{pmatrix} a & b \\ c & d \end{pmatrix}\\
  &=&
-\dfrac{1}{ad-bc}\begin{bmatrix} da-bc &db- bd \\ -ca+ac & -cb+ad \end{bmatrix} \\
+\dfrac{1}{ad-bc}\begin{pmatrix} da-bc &db- bd \\ -ca+ac & -cb+ad \end{pmatrix} \\
 &=&
-\begin{bmatrix} \dfrac{da-bc}{ad-bc} &0 \\ 0 & \dfrac{-cb+ad}{ad-bc} \end{bmatrix} = \begin{bmatrix} 1&0 \\ 0 & 1 \end{bmatrix}.
+\begin{pmatrix} \dfrac{da-bc}{ad-bc} &0 \\ 0 & \dfrac{-cb+ad}{ad-bc} \end{pmatrix} = \begin{pmatrix} 1&0 \\ 0 & 1 \end{pmatrix}.
 \end{array}
 $$
 
 Which is one of the two identities.
 
-Applying the formula of {prf:ref}`Prop:MatrixInv:Inverse2x2` to the matrix $A = \begin{bmatrix} 1 & 2 \\ 3 & 5 \end{bmatrix}$ of {prf:ref}`Ex:FirstInverse` gives
+Applying the formula of {prf:ref}`Prop:MatrixInv:Inverse2x2` to the matrix $A = \begin{pmatrix} 1 & 2 \\ 3 & 5 \end{pmatrix}$ of {prf:ref}`Ex:FirstInverse` gives
 
 $$
- A^{-1} = \dfrac{1}{1\cdot5 - 2\cdot 3}\begin{bmatrix} 5 & -2 \\ -3&1 \end{bmatrix} = -\begin{bmatrix} 5 & -2 \\ -3&1 \end{bmatrix} =  \begin{bmatrix} -5 & 2 \\ 3&-1 \end{bmatrix},
+ A^{-1} = \dfrac{1}{1\cdot5 - 2\cdot 3}\begin{pmatrix} 5 & -2 \\ -3&1 \end{pmatrix} = -\begin{pmatrix} 5 & -2 \\ -3&1 \end{pmatrix} =  \begin{pmatrix} -5 & 2 \\ 3&-1 \end{pmatrix},
 $$
 
 which is indeed the matrix $B$ that was proposed there.
@@ -342,14 +342,14 @@ $$
 is equivalent to the statement
 
 $$
- \text{the vectors  } \begin{bmatrix} a  \\ c  \end{bmatrix} \text{  and  } \begin{bmatrix} b  \\ d  \end{bmatrix} \text{  are linearly independent.}
+ \text{the vectors  } \begin{pmatrix} a  \\ c  \end{pmatrix} \text{  and  } \begin{pmatrix} b  \\ d  \end{pmatrix} \text{  are linearly independent.}
 $$
 
 First we show that
 
 $$
  ad - bc = 0  \text{   implies that   }
-  \begin{bmatrix} a  &b\\ c&d  \end{bmatrix} \text{  has linearly dependent columns.}
+  \begin{pmatrix} a  &b\\ c&d  \end{pmatrix} \text{  has linearly dependent columns.}
 $$
 
 It is best to split this in two cases:
@@ -373,7 +373,7 @@ $$
 which leads to a matrix
 
 $$
-  \begin{bmatrix} a & b \\ c & d  \end{bmatrix}
+  \begin{pmatrix} a & b \\ c & d  \end{pmatrix}
 $$
 
 with either a zero row or a zero column, which will indeed have linearly dependent columns.
@@ -387,23 +387,23 @@ then both $a \neq 0$ and $d \neq 0$, in which case
 
 $$
   d =  \frac{bc}{a}, \quad \text{so  }
-   \begin{bmatrix} b  \\ d  \end{bmatrix} =
-   \begin{bmatrix} b  \\ \frac{bc}{a}  \end{bmatrix} =
-    \dfrac{b}{a}\begin{bmatrix} a  \\ c  \end{bmatrix},
+   \begin{pmatrix} b  \\ d  \end{pmatrix} =
+   \begin{pmatrix} b  \\ \frac{bc}{a}  \end{pmatrix} =
+    \dfrac{b}{a}\begin{pmatrix} a  \\ c  \end{pmatrix},
 $$
 
 hence the columns are again linearly dependent.
 Thus we have shown:
 
 $$
-  ad-bc = 0 \quad \Longrightarrow \quad  \begin{bmatrix} a & b \\ c & d  \end{bmatrix}
+  ad-bc = 0 \quad \Longrightarrow \quad  \begin{pmatrix} a & b \\ c & d  \end{pmatrix}
   \text{  has linearly dependent columns.}
 $$
 
 Next let us consider the converse, i.e.
 
 $$
- \begin{bmatrix} a  & b \\ c&d  \end{bmatrix} \text{  has linearly dependent columns}  \quad \text{implies: } \quad
+ \begin{pmatrix} a  & b \\ c&d  \end{pmatrix} \text{  has linearly dependent columns}  \quad \text{implies: } \quad
   ad - bc = 0.
 $$
 
@@ -411,9 +411,9 @@ If a $2 \times 2$ matrix has two linearly dependent columns, then
 one of the columns will be a multiple of the other column, e.g.
 
 $$
-  \text{either } \quad  \begin{bmatrix} a  \\ c   \end{bmatrix} = k  \begin{bmatrix} b  \\ d   \end{bmatrix}  \quad
+  \text{either } \quad  \begin{pmatrix} a  \\ c   \end{pmatrix} = k  \begin{pmatrix} b  \\ d   \end{pmatrix}  \quad
   \text{or}\quad
-  \begin{bmatrix} b  \\ d   \end{bmatrix} = k  \begin{bmatrix} a  \\ c   \end{bmatrix} .
+  \begin{pmatrix} b  \\ d   \end{pmatrix} = k  \begin{pmatrix} a  \\ c   \end{pmatrix} .
 $$
 
 In both cases it is easily checked that
@@ -489,7 +489,7 @@ Then the reduced echelon form of $A$ must be the identity matrix.
 This implies that for each $\vect{b}$ in $\mathbb{R}^n$
 
 $$
-  [\,A\,|\,\vect{b}\,] \sim[\,I\,|\,\vect{b'}\,],
+  (\,A\,|\,\vect{b}\,) \sim(\,I\,|\,\vect{b'}\,),
 $$
 
 and in particular, each linear system
@@ -501,9 +501,9 @@ $$
 has a unique solution. If we denote this solution by $\vect{c}_j$ we have that
 
 $$
-  A[\,\vect{c}_1\,\,\vect{c}_2\,\, \ldots \,\, \vect{c}_n\,] =
-   [\,A\vect{c}_1\,\,A\vect{c}_2\,\, \ldots \,\, A\vect{c}_n\,] =
-    [\,\vect{e}_1\,\,\vect{e}_2\,\, \ldots \,\, \vect{e}_n\,] = I.
+  A(\,\vect{c}_1\,\,\vect{c}_2\,\, \ldots \,\, \vect{c}_n\,) =
+   (\,A\vect{c}_1\,\,A\vect{c}_2\,\, \ldots \,\, A\vect{c}_n\,) =
+    (\,\vect{e}_1\,\,\vect{e}_2\,\, \ldots \,\, \vect{e}_n\,) = I.
 $$
 
 Since all solutions $\vect{c}_j$ are unique, the solution of the equation
@@ -585,9 +585,9 @@ We illustrate the proposition by an example.
 Suppose the matrix $A$ and the vectors $\mathbf{b}_1$ and $\mathbf{b}_1$ are given by
 
 $$
- A=\begin{bmatrix}1 & 2 \\ 3 & 4 \end{bmatrix}, \quad
-        \mathbf{b}_1= \begin{bmatrix}-1  \\ 1 \end{bmatrix} \quad \text{and} \quad
-        \mathbf{b}_2=\begin{bmatrix}2  \\ 10 \end{bmatrix}.
+ A=\begin{pmatrix}1 & 2 \\ 3 & 4 \end{pmatrix}, \quad
+        \mathbf{b}_1= \begin{pmatrix}-1  \\ 1 \end{pmatrix} \quad \text{and} \quad
+        \mathbf{b}_2=\begin{pmatrix}2  \\ 10 \end{pmatrix}.
 $$
 
 Consider the two linear systems
@@ -600,25 +600,25 @@ $$
 Using the inverse matrix
 
 $$
-  A^{-1} = \frac{1}{-2}\begin{bmatrix}4 & -2 \\ -3 & 1 \end{bmatrix} =
-   \frac{1}{2}\begin{bmatrix}-4 & 2 \\ 3 & -1 \end{bmatrix},
+  A^{-1} = \frac{1}{-2}\begin{pmatrix}4 & -2 \\ -3 & 1 \end{pmatrix} =
+   \frac{1}{2}\begin{pmatrix}-4 & 2 \\ 3 & -1 \end{pmatrix},
 $$
 
 the two solutions are quickly written down:
 
 $$
   \vect{x}_1= A^{-1}\vect{b}_1=
-  \frac{1}{2}\begin{bmatrix}-4 & 2 \\ 3 & -1 \end{bmatrix}
-  \begin{bmatrix}-1  \\ 1 \end{bmatrix} =
-  \begin{bmatrix}3  \\ -2 \end{bmatrix}
+  \frac{1}{2}\begin{pmatrix}-4 & 2 \\ 3 & -1 \end{pmatrix}
+  \begin{pmatrix}-1  \\ 1 \end{pmatrix} =
+  \begin{pmatrix}3  \\ -2 \end{pmatrix}
 $$
 
 and likewise
 
 $$
-  \vect{x}_2=  A^{-1}\vect{b}_2= \frac{1}{2}\begin{bmatrix}-4 & 2 \\ 3 & -1 \end{bmatrix}
-  \begin{bmatrix}2  \\ 10 \end{bmatrix} =
-  \begin{bmatrix}6  \\ -2 \end{bmatrix}.
+  \vect{x}_2=  A^{-1}\vect{b}_2= \frac{1}{2}\begin{pmatrix}-4 & 2 \\ 3 & -1 \end{pmatrix}
+  \begin{pmatrix}2  \\ 10 \end{pmatrix} =
+  \begin{pmatrix}6  \\ -2 \end{pmatrix}.
 $$
 
 ::::::
@@ -664,7 +664,7 @@ which 'proves' that $A=I$.
 
 Somewhere something **must** have gone wrong, as the following counterexample shows.
 
-For the matrix $B = \begin{bmatrix} \frac12 & \frac12 \\ \frac12 & \frac12  \end{bmatrix}$
+For the matrix $B = \begin{pmatrix} \frac12 & \frac12 \\ \frac12 & \frac12  \end{pmatrix}$
 
 it can be checked that
 
@@ -794,13 +794,13 @@ The next example gives an illustration of [ii.](#Item:MatrixInv:TransposeInverse
 We consider the matrix
 
 $$
-   A =  \begin{bmatrix} 2 & 6 & 5  \\ 0 & 2 & 2 \\ 0 & 0 & 3 \end{bmatrix}.
+   A =  \begin{pmatrix} 2 & 6 & 5  \\ 0 & 2 & 2 \\ 0 & 0 & 3 \end{pmatrix}.
 $$
 
 It has the inverse matrix
 
 $$
-   B = \begin{bmatrix} 1/2 & -3/2 & 1/6  \\ 0 & 1/2 & -1/3 \\ 0 & 0 & 1/3 \end{bmatrix},
+   B = \begin{pmatrix} 1/2 & -3/2 & 1/6  \\ 0 & 1/2 & -1/3 \\ 0 & 0 & 1/3 \end{pmatrix},
 $$
 
 which can be checked by showing that $AB$ and $BA$ are equal to $I$.
@@ -810,9 +810,9 @@ So $B = A^{-1}$, and $B^T = (A^{-1})^T$.
 We also have
 
 $$
-  A^TB^T  =  \begin{bmatrix} 2 & 0 & 0  \\ 6 & 2 & 0 \\ 5 & 2 & 3 \end{bmatrix}
-  \begin{bmatrix} 1/2 & 0 & 0  \\ -3/2 & 1/2 & 0 \\ 1/6 & -1/3 & 1/3 \end{bmatrix} =
-  \begin{bmatrix} 1 & 0 & 0  \\ 0 & 1 & 0 \\ 0 & 0 & 1\end{bmatrix},
+  A^TB^T  =  \begin{pmatrix} 2 & 0 & 0  \\ 6 & 2 & 0 \\ 5 & 2 & 3 \end{pmatrix}
+  \begin{pmatrix} 1/2 & 0 & 0  \\ -3/2 & 1/2 & 0 \\ 1/6 & -1/3 & 1/3 \end{pmatrix} =
+  \begin{pmatrix} 1 & 0 & 0  \\ 0 & 1 & 0 \\ 0 & 0 & 1\end{pmatrix},
 $$
 
 as well as $B^TA^T = I$, which proves that $B^T = (A^T)^{-1}$.
@@ -904,8 +904,8 @@ The inverse of the matrix $A$ must satisfy the equation $AX = I$.
 Written out column by column this means that
 
 $$
-  AX = I \quad  \iff \quad A[\,\mathbf{x}_1\,\,\mathbf{x}_2\, \ldots\, \mathbf{x}_n\,] = 
-  [\,\mathbf{e}_1\,\mathbf{e}_2\, \ldots\, \mathbf{e}_n\,].
+  AX = I \quad  \iff \quad A(\,\mathbf{x}_1\,\,\mathbf{x}_2\, \ldots\, \mathbf{x}_n\,) = 
+  (\,\mathbf{e}_1\,\mathbf{e}_2\, \ldots\, \mathbf{e}_n\,).
 $$
 
 For the existence of a solution of this Equation {prf:ref}`Prop:MatrixInv:InvertibleIndepCols` tells us
@@ -926,7 +926,7 @@ Let us first focus on this equation by considering a fairly general $3\times 3$ 
 For the matrix
 
 $$
-  A = \begin{bmatrix} 1 & 1 & 4 \\ 1 & -1 & -1 \\ 2 & -2 & -4  \end{bmatrix}
+  A = \begin{pmatrix} 1 & 1 & 4 \\ 1 & -1 & -1 \\ 2 & -2 & -4  \end{pmatrix}
 $$
 
 we find the solution $B$ of the matrix equation (which will appear to exist)
@@ -946,27 +946,27 @@ also holds. In which case we can truthfully assert that $B = A^{-1}$.
 Instead of finding the solution $X$ column by column, which gives three linear systems with the same coefficient matrix,
 
 $$
-\left[\begin{array}{rrr|r}1 &  1 & 4  & 1\\1 & -1 & -1 & 0\\2 & -2 & -4 & 0\\\end{array}\right],
+\left(\begin{array}{rrr|r}1 &  1 & 4  & 1\\1 & -1 & -1 & 0\\2 & -2 & -4 & 0\\\end{array}\right),
 \quad
-\left[\begin{array}{rrr|r}1 &  1 & 4  & 0\\1 & -1 & -1 & 1\\2 & -2 & -4 & 0\\\end{array}\right],
+\left(\begin{array}{rrr|r}1 &  1 & 4  & 0\\1 & -1 & -1 & 1\\2 & -2 & -4 & 0\\\end{array}\right),
 \quad
-\left[\begin{array}{rrr|r}1 &  1 & 4  & 0\\1 & -1 & -1 & 0\\2 & -2 & -4 & 1\\\end{array}\right],
+\left(\begin{array}{rrr|r}1 &  1 & 4  & 0\\1 & -1 & -1 & 0\\2 & -2 & -4 & 1\\\end{array}\right),
 $$
 
 we can solve the three linear systems simultaneously using a combined augmented matrix which we may denote by either
 
 $$
-\left[\begin{array}{rrr|r|r|r}1 &  1 & 4  & 1 & 0 & 0\\1 & -1 & -1 & 0 & 1 & 0\\2 & -2 & -4 & 0 & 0 & 1\\\end{array}\right]
+\left(\begin{array}{rrr|r|r|r}1 &  1 & 4  & 1 & 0 & 0\\1 & -1 & -1 & 0 & 1 & 0\\2 & -2 & -4 & 0 & 0 & 1\\\end{array}\right)
 \quad \text{or} \quad
-\left[\begin{array}{rrr|rrr}1 &  1 & 4  & 1 & 0 & 0\\1 & -1 & -1 & 0 & 1 & 0\\2 & -2 & -4 & 0 & 0 & 1\\\end{array}\right]= \left[\, A \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,I\,\right].
+\left(\begin{array}{rrr|rrr}1 &  1 & 4  & 1 & 0 & 0\\1 & -1 & -1 & 0 & 1 & 0\\2 & -2 & -4 & 0 & 0 & 1\\\end{array}\right)= \left(\, A \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,I\,\right).
 $$
 
 Let us first row reduce this matrix and then draw conclusions:
 
 $$
-\left[\, A \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,I\,\right]=
-\left[\begin{array}{rrr|rrr}1 &  1 & 4  & 1 & 0 & 0\\1 & -1 & -1 & 0 & 1 & 0\\2 & -2 & -4 & 0 & 0 & 1
-\end{array}\right]\begin{array}{l}
+\left(\, A \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,I\,\right)=
+\left(\begin{array}{rrr|rrr}1 &  1 & 4  & 1 & 0 & 0\\1 & -1 & -1 & 0 & 1 & 0\\2 & -2 & -4 & 0 & 0 & 1
+\end{array}\right)\begin{array}{l}
 [R_1] \\
 {[R_2-1R_1]} \\
 {[R_3-2R_1]}
@@ -975,8 +975,8 @@ $$
 
 $$
    \sim
-\left[\begin{array}{rrr|rrr}1 &  1 & 4  & 1 & 0 & 0\\0 & -2 & -5 & -1 & 1 & 0\\0 & -4 & -12 & -2 & 0 & 1
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrr|rrr}1 &  1 & 4  & 1 & 0 & 0\\0 & -2 & -5 & -1 & 1 & 0\\0 & -4 & -12 & -2 & 0 & 1
+\end{array}\right)\begin{array}{l}
 [R_1+\nicefrac12R_2] \\
 {[R_2]} \\
 {[R_3-2R_2]}
@@ -985,8 +985,8 @@ $$
 
 $$
    \sim
-\left[\begin{array}{rrr|rrr}1 &  0 & 3/2  & 1/2 & 1/2 & 0\\0 & -2 & -5 & -1 & 1 & 0\\0 & 0 & -2 & 0 & -2 & 1
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrr|rrr}1 &  0 & 3/2  & 1/2 & 1/2 & 0\\0 & -2 & -5 & -1 & 1 & 0\\0 & 0 & -2 & 0 & -2 & 1
+\end{array}\right)\begin{array}{l}
 [R_1+\nicefrac34R_3] \\
 {[R_2-\nicefrac52R_3]} \\
 {[R_3]}
@@ -995,8 +995,8 @@ $$
 
 $$
  \sim
-\left[\begin{array}{rrr|rrr}1 &  0 & 0  & 1/2 & -1 & 3/4\\0 & -2 & 0  & -1 & 6 & -5/2\\0 & 0  & -2  & 0 & -2 & 1
-\end{array}\right]\begin{array}{l}
+\left(\begin{array}{rrr|rrr}1 &  0 & 0  & 1/2 & -1 & 3/4\\0 & -2 & 0  & -1 & 6 & -5/2\\0 & 0  & -2  & 0 & -2 & 1
+\end{array}\right)\begin{array}{l}
 [R_1] \\
 {[(-\nicefrac12)R_1]} \\
 {[(-\nicefrac12)R_2]}
@@ -1005,19 +1005,19 @@ $$
 
 $$
  \sim
-\left[\begin{array}{rrr|rrr}1 &  0 & 0  & 1/2 & -1 & 3/4\\0 & 1 & 0 & 1/2 & -3 & 5/4\\0 & 0 & 1 & 0 & 1 & -1/2
-\end{array}\right] = \left[\, I \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,B\,\right].
+\left(\begin{array}{rrr|rrr}1 &  0 & 0  & 1/2 & -1 & 3/4\\0 & 1 & 0 & 1/2 & -3 & 5/4\\0 & 0 & 1 & 0 & 1 & -1/2
+\end{array}\right) = \left(\, I \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,B\,\right).
 $$
 
 By construction we have that the matrix
 
 $$
-  B =  \begin{bmatrix}
+  B =  \begin{pmatrix}
                 1/2 & -1 & 3/4  \\  1/2 & -3 & 5/4  \\ 0 & 1 & -1/2
-    \end{bmatrix}
-    = \frac14 \begin{bmatrix}
+    \end{pmatrix}
+    = \frac14 \begin{pmatrix}
                     2 & -4 & 3 \\ 2 & -12 & 5 \\ 0 & 4 & -2
-              \end{bmatrix}
+              \end{pmatrix}
 $$
 
 satisfies
@@ -1030,26 +1030,26 @@ Let us check the product in the other order
 
 $$
   BA =
-    \frac14 \begin{bmatrix}
+    \frac14 \begin{pmatrix}
                 2 & -4 & 3 \\ 2 & -12 & 5 \\ 0 & 4 & -2
-    \end{bmatrix}
-    \begin{bmatrix}
+    \end{pmatrix}
+    \begin{pmatrix}
               1 &  1 & 4  \\  1 & -1 & -1  \\ 2 & -2 & -4
-    \end{bmatrix} =
-    \frac14 \begin{bmatrix}
+    \end{pmatrix} =
+    \frac14 \begin{pmatrix}
                 4 & 0 & 0 \\0 & 4 & 0 \\ 0 & 0 & 4
-    \end{bmatrix} = I.
+    \end{pmatrix} = I.
 $$
 
 So indeed we can conclude
 
 $$
-  \begin{bmatrix}
+  \begin{pmatrix}
               1 &  1 & 4  \\  1 & -1 & -1  \\ 2 & -2 & -4
-    \end{bmatrix}^{-1} \,=\,
-    \frac14 \begin{bmatrix}
+    \end{pmatrix}^{-1} \,=\,
+    \frac14 \begin{pmatrix}
                 2 & -4 & 3 \\ 2 & -12 & 5 \\ 0 & 4 & -2
-    \end{bmatrix}\,.
+    \end{pmatrix}\,.
 $$
 
 ::::::
@@ -1065,13 +1065,13 @@ A square matrix $A$ is invertible if and only it has linearly independent column
 In that case the inverse can be found by reducing the matrix
 
 $$
-    \left[\, A \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,I\,\right]
+    \left(\, A \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,I\,\right)
 $$
 
 to the reduced echelon form
 
 $$
-   \left[\, I \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,B\,\right],
+   \left(\, I \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,B\,\right),
 $$
 
 and then
@@ -1089,8 +1089,8 @@ We have already seen ({prf:ref}`Prop:MatrixInv:InvertibleIndepCols`) that an inv
 which implies that the reduced echelon form of $A$ is indeed the identity matrix. It is then clear that via row operations we get
 
 $$
-  \left[\, A \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,I\,\right]\sim \quad .\,.\,.\,.\,. \quad \sim
-  \left[\, I \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,B\,\right],
+  \left(\, A \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,I\,\right)\sim \quad .\,.\,.\,.\,. \quad \sim
+  \left(\, I \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,B\,\right),
 $$
 
 where the matrix $B$ satisfies $AB = I$.
@@ -1106,16 +1106,16 @@ as well.
 To understand that this is indeed true, we recall ({prf:ref}`Dfn:MatrixOps:ElementaryMatrix`) that row operations can be effectuated via multiplications with elementary matrices. Furthermore, since the matrix product is defined column by column, i.e.
 
 $$
-    MX = M\left[\begin{array}{cccc}\mathbf{x_1} &\mathbf{x_2} &\ldots &\mathbf{x_p} \end{array}\right]=
-        \left[\begin{array}{cccc}M\mathbf{x_1} &M\mathbf{x_2} &\ldots &M\mathbf{x_p} \end{array}\right],
+    MX = M\left(\begin{array}{cccc}\mathbf{x_1} &\mathbf{x_2} &\ldots &\mathbf{x_p} \end{array}\right)=
+        \left(\begin{array}{cccc}M\mathbf{x_1} &M\mathbf{x_2} &\ldots &M\mathbf{x_p} \end{array}\right),
 $$
 
 we also have
 
 $$
 
-  E\left[\, A_1 \,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\,\,A_2\,\right]=
-   \left[\, EA_1 \,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\,\,\,EA_2\,\right].
+  E\left(\, A_1 \,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\,\,A_2\,\right)=
+   \left(\, EA_1 \,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\,\,\,EA_2\,\right).
 
 
 
@@ -1126,13 +1126,13 @@ A series of $k$ row operations can be mimicked by $k$ multiplications with eleme
 
 $$
  \begin{array}{ccl}
-   \left[\, A \,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\, I\,\right]&\sim&
-   \left[\, E_1A \,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\, E_1I\,\right]  \sim
-   \left[\,E_2 E_1A \,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\, \,E_2E_1I\,\right]\sim
+   \left(\, A \,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\, I\,\right)&\sim&
+   \left(\, E_1A \,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\, E_1I\,\right)  \sim
+   \left(\,E_2 E_1A \,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\, \,E_2E_1I\,\right)\sim
    \ldots  \sim \\
    &\sim&
-   \left[\,E_k\cdots E_2 E_1A \,\,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\,\, E_k\cdots E_2E_1I\,\right]   =
-    \left[\, I \,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\,B\,\right].
+   \left(\,E_k\cdots E_2 E_1A \,\,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\,\, E_k\cdots E_2E_1I\,\right)   =
+    \left(\, I \,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\,B\,\right).
  \end{array}
 $$
 
@@ -1169,7 +1169,7 @@ For non-square matrices this statement is not correct. The interested reader is 
 If $A$ is not invertible, then the outcome of the row reduction of
 
 $$
-    \left[\, A \,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\,I\,\right]
+    \left(\, A \,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\,I\,\right)
 $$
 
 will also lead to the correct answer: as soon as it is clear that $A$ cannot be row reduced to $I$ we can conclude that $A$ is not invertible.
@@ -1184,40 +1184,40 @@ To help understand the above exposition let us run through the whole procedure f
 We want to compute the inverse of the matrix
 
 $$
-A =  \begin{bmatrix}
+A =  \begin{pmatrix}
               1 &  4  \\  2 & 6
-    \end{bmatrix}.
+    \end{pmatrix}.
 $$
 
 The short way:
 
 $$
  \begin{array}{rcl}
-\left[\begin{array}{rr|rr}1 &  4 & 1 &  0\\2 & 6 & 0 & 1
-\end{array}\right]
+\left(\begin{array}{rr|rr}1 &  4 & 1 &  0\\2 & 6 & 0 & 1
+\end{array}\right)
 \begin{array}{l}
 [R_1] \\
 {[R_2-2R_1]} \\
 \end{array} \!\!\!
 &\sim&
-\left[\begin{array}{rr|rr}
+\left(\begin{array}{rr|rr}
     1 &  4 & 1 &  0 \\
     0 & -2 & -2 & 1
-\end{array}\right]
+\end{array}\right)
 \begin{array}{l}
 [R_1+2R_2] \\
 {[R_2]} \\
 \end{array} \\
     &\sim&
-\left[\begin{array}{rr|rr}1 &  0 & -3 &  2\\0 & -2 & -2 & 1
-\end{array}\right]
+\left(\begin{array}{rr|rr}1 &  0 & -3 &  2\\0 & -2 & -2 & 1
+\end{array}\right)
 \begin{array}{l}
 [R_1] \\
 {[(-\frac12)R_2]} \\
 \end{array} \\
     &\sim&
-\left[\begin{array}{rr|rr}1 &  0 & -3 &  2\\0 & 1 & 1 & -\nicefrac12
-\end{array}\right]
+\left(\begin{array}{rr|rr}1 &  0 & -3 &  2\\0 & 1 & 1 & -\nicefrac12
+\end{array}\right)
 \end{array}
 $$
 
@@ -1225,9 +1225,9 @@ So:
 
 $$
 A^{-1} =
-\begin{bmatrix}
+\begin{pmatrix}
   -3 &  2  \\  1 & -\frac12
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 End of story.
@@ -1238,56 +1238,56 @@ give a derivation using elementary matrices.
 First step: row replacement with the entry on position (1,1) as a first pivot:
 
 $$
-  \begin{bmatrix}
+  \begin{pmatrix}
               1 &  0  \\  -2 & 1
-    \end{bmatrix}\,
-\left[\begin{array}{rr|rr}1 &  4 & 1 &  0\\2 & 6 & 0 & 1
-\end{array}\right]     \,\,=\,\,
-\left[\begin{array}{rr|rr}1 &  4 & 1 &  0\\0 & -2 & -2 & 1
-\end{array}\right], \quad E_1 = \begin{bmatrix} 1 &  0  \\  -2 & 1 \end{bmatrix}.
+    \end{pmatrix}\,
+\left(\begin{array}{rr|rr}1 &  4 & 1 &  0\\2 & 6 & 0 & 1
+\end{array}\right)     \,\,=\,\,
+\left(\begin{array}{rr|rr}1 &  4 & 1 &  0\\0 & -2 & -2 & 1
+\end{array}\right), \quad E_1 = \begin{pmatrix} 1 &  0  \\  -2 & 1 \end{pmatrix}.
 $$
 
 Second step: another row replacement, using the entry on position (2,2) as pivot:
 
 $$
-  \begin{bmatrix}
+  \begin{pmatrix}
               1 &  2  \\  0 & 1
-    \end{bmatrix}\,
-\left[\begin{array}{rr|rr}1 &  4 & 1 &  0\\0 & -2 & -2 & 1
-\end{array}\right]
+    \end{pmatrix}\,
+\left(\begin{array}{rr|rr}1 &  4 & 1 &  0\\0 & -2 & -2 & 1
+\end{array}\right)
      \,\,=\,\,
-\left[\begin{array}{rr|rr}1 &  0 & -3 &  2\\0 & -2 & -2 & 1
-\end{array}\right], \quad E_2 = \begin{bmatrix} 1 &  2 \\  0 & 1 \end{bmatrix}.
+\left(\begin{array}{rr|rr}1 &  0 & -3 &  2\\0 & -2 & -2 & 1
+\end{array}\right), \quad E_2 = \begin{pmatrix} 1 &  2 \\  0 & 1 \end{pmatrix}.
 $$
 
 Third step: the scaling of the second row:
 
 $$
-  \begin{bmatrix}
+  \begin{pmatrix}
               1 &  0  \\  0 & -\nicefrac12
-    \end{bmatrix}\,
-\left[\begin{array}{rr|rr}1 &  0 & -3 &  2\\0 & -2 & -2 & 1
-\end{array}\right]
+    \end{pmatrix}\,
+\left(\begin{array}{rr|rr}1 &  0 & -3 &  2\\0 & -2 & -2 & 1
+\end{array}\right)
     \,\,=\,\,
-\left[\begin{array}{rr|rr}1 &  0 & -3 &  2\\0 & 1 & 1 & -\nicefrac12
-\end{array}\right],\quad E_3 = \begin{bmatrix} 1 &  0  \\   0 & -\nicefrac12 \end{bmatrix}.
+\left(\begin{array}{rr|rr}1 &  0 & -3 &  2\\0 & 1 & 1 & -\nicefrac12
+\end{array}\right),\quad E_3 = \begin{pmatrix} 1 &  0  \\   0 & -\nicefrac12 \end{pmatrix}.
 $$
 
 All in all
 
 $$
- (E_3E_2E_1)A = \left(\begin{bmatrix}    1 &  0  \\  0 & -\nicefrac12    \end{bmatrix}
-    \begin{bmatrix} 1 &  2  \\  0 & 1  \end{bmatrix}
-     \begin{bmatrix}  1 &  0  \\  -2 & 1 \end{bmatrix}\right)\,A
+ (E_3E_2E_1)A = \left(\begin{pmatrix}    1 &  0  \\  0 & -\nicefrac12    \end{pmatrix}
+    \begin{pmatrix} 1 &  2  \\  0 & 1  \end{pmatrix}
+     \begin{pmatrix}  1 &  0  \\  -2 & 1 \end{pmatrix}\right)\,A
      =
-      \begin{bmatrix}   -3 &  2  \\  1 & -\nicefrac12  \end{bmatrix}A
+      \begin{pmatrix}   -3 &  2  \\  1 & -\nicefrac12  \end{pmatrix}A
      = I,
 $$
 
 which reconfirms
 
 $$
-   E_3E_2E_1 = A^{-1} = \begin{bmatrix}   -3 &  2  \\  1 & -\tfrac12  \end{bmatrix}.
+   E_3E_2E_1 = A^{-1} = \begin{pmatrix}   -3 &  2  \\  1 & -\tfrac12  \end{pmatrix}.
 $$
 
 ::::::

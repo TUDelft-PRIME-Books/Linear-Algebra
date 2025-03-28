@@ -23,21 +23,21 @@ Note that this definition implies that a symmetric matrix must be a square matri
 The matrices
 
 $$
-  A_1 = \begin{bmatrix} 2&\class{blue}3&\class{red}4\\\class{blue}3&1&\class{green}5 \\\class{red}4&\class{green}5&7  \end{bmatrix} \quad \text{and} \quad
-  A_2 = \begin{bmatrix} 0&2&3&4\\
+  A_1 = \begin{pmatrix} 2&\class{blue}3&\class{red}4\\\class{blue}3&1&\class{green}5 \\\class{red}4&\class{green}5&7  \end{pmatrix} \quad \text{and} \quad
+  A_2 = \begin{pmatrix} 0&2&3&4\\
     2&0&1&5 \\
     3&1&0&6 \\
-    4&5&6&7\end{bmatrix}
+    4&5&6&7\end{pmatrix}
 $$
 
 are symmetric. The matrices
 
 $$
-  A_3 = \begin{bmatrix} 2&3&4\\2&3&4 \\ 2&3&4 \end{bmatrix} \quad \text{and} \quad
-  A_4 = \begin{bmatrix} 0&2&3&0\\
+  A_3 = \begin{pmatrix} 2&3&4\\2&3&4 \\ 2&3&4 \end{pmatrix} \quad \text{and} \quad
+  A_4 = \begin{pmatrix} 0&2&3&0\\
             2&0&1&0 \\
             3&1&0&0 \\
-        \end{bmatrix}
+        \end{pmatrix}
 $$
 
 are not symmetric.
@@ -89,7 +89,7 @@ We end this introductory section with one representative example.
 ::::{prf:example}
 :label: Ex:SymmetricMat:OrthDiag2x2
 
-Let $A$ be given by $A = \begin{bmatrix} 1&2\\2&-2 \end{bmatrix}$.
+Let $A$ be given by $A = \begin{pmatrix} 1&2\\2&-2 \end{pmatrix}$.
 
 The eigenvalues are found via
 
@@ -100,20 +100,20 @@ $$
 
 They are $\lambda_1 = 2$ and $\lambda_2 = -3$.
 
-Corresponding eigenvectors are $\mathbf{v}_1 = \begin{bmatrix} 2\\1 \end{bmatrix}$ for $\lambda_1$, and
-$\mathbf{v}_2 = \begin{bmatrix} -1\\2 \end{bmatrix}$.
+Corresponding eigenvectors are $\mathbf{v}_1 = \begin{pmatrix} 2\\1 \end{pmatrix}$ for $\lambda_1$, and
+$\mathbf{v}_2 = \begin{pmatrix} -1\\2 \end{pmatrix}$.
 
 The eigenvectors are orthogonal,
 
 $$
-  \mathbf{v}_1 \ip \mathbf{v}_2 = \begin{bmatrix} 2\\1 \end{bmatrix}\ip \begin{bmatrix} -1\\2 \end{bmatrix} = -2  +2  = 0,
+  \mathbf{v}_1 \ip \mathbf{v}_2 = \begin{pmatrix} 2\\1 \end{pmatrix}\ip \begin{pmatrix} -1\\2 \end{pmatrix} = -2  +2  = 0,
 $$
 
 and $A$ can be diagonalized as
 
 $$
-   A = PDP^{-1} = \begin{bmatrix}2&-1\\1&2 \end{bmatrix}\begin{bmatrix}2 & 0\\0& -3 \end{bmatrix}
-   \begin{bmatrix}2&-1\\1&2 \end{bmatrix}^{-1}.
+   A = PDP^{-1} = \begin{pmatrix}2&-1\\1&2 \end{pmatrix}\begin{pmatrix}2 & 0\\0& -3 \end{pmatrix}
+   \begin{pmatrix}2&-1\\1&2 \end{pmatrix}^{-1}.
 $$
 
 In {numref}`Figure %s <Fig:SymmetricMat:Evectors>`
@@ -121,7 +121,7 @@ the image of the unit circle under the transformation $\vect{x} \mapsto A\vect{x
 In the picture on the right,
 
 $$
-\vect{q}_1 = \frac{1}{\norm{\vect{v}_1}}\vect{v}_1 = \frac{1}{\sqrt{5}}\begin{bmatrix} 2\\1 \end{bmatrix}  \quad \text{and} \quad \vect{q}_2= \frac{1}{\norm{\vect{v}_2}}\vect{v}_2 = \frac{1}{\sqrt{5}}\begin{bmatrix} -1\\2 \end{bmatrix}
+\vect{q}_1 = \frac{1}{\norm{\vect{v}_1}}\vect{v}_1 = \frac{1}{\sqrt{5}}\begin{pmatrix} 2\\1 \end{pmatrix}  \quad \text{and} \quad \vect{q}_2= \frac{1}{\norm{\vect{v}_2}}\vect{v}_2 = \frac{1}{\sqrt{5}}\begin{pmatrix} -1\\2 \end{pmatrix}
 $$
 
  are two orthonormal unit eigenvectors.
@@ -130,15 +130,15 @@ $$
 :name: Fig:SymmetricMat:Evectors
 :class: dark-light
 
-The transformation $T(\vect{x}) =  \begin{bmatrix} 1&2\\2&-2 \end{bmatrix}\vect{x}$. The vectors  $\vect{q}_1$ and $\vect{q}_2$ are two orthogonal vectors on the unit circle that are mapped onto multiples of themselves.
+The transformation $T(\vect{x}) =  \begin{pmatrix} 1&2\\2&-2 \end{pmatrix}\vect{x}$. The vectors  $\vect{q}_1$ and $\vect{q}_2$ are two orthogonal vectors on the unit circle that are mapped onto multiples of themselves.
 :::
 
 
 Furthermore, if we normalize the eigenvectors, i.e., the columns of $P$, we find the following diagonalization of $A$ with an orthogonal matrix $Q$:
 
 $$
- A = QDQ^{-1} = \begin{bmatrix}2/\sqrt{5}&1/\sqrt{5}\\1/\sqrt{5}&-2/\sqrt{5} \end{bmatrix}\begin{bmatrix}2 & 0\\0& -3 \end{bmatrix}
-   \begin{bmatrix}2/\sqrt{5}&1/\sqrt{5}\\1/\sqrt{5}&-2/\sqrt{5} \end{bmatrix}^{-1}.
+ A = QDQ^{-1} = \begin{pmatrix}2/\sqrt{5}&1/\sqrt{5}\\1/\sqrt{5}&-2/\sqrt{5} \end{pmatrix}\begin{pmatrix}2 & 0\\0& -3 \end{pmatrix}
+   \begin{pmatrix}2/\sqrt{5}&1/\sqrt{5}\\1/\sqrt{5}&-2/\sqrt{5} \end{pmatrix}^{-1}.
 $$
 
 ::::
@@ -327,7 +327,7 @@ Since we assumed that $\mathbf{v}$ is not the zero vector, we have that $\overli
 
 ::::{prf:example}
 
-Let $A = \begin{bmatrix} a&b\\b&d \end{bmatrix} $.
+Let $A = \begin{pmatrix} a&b\\b&d \end{pmatrix} $.
 
 Then the characteristic polynomial is computed as
 
@@ -364,7 +364,7 @@ We will incorporate the proof of this proposition into the proof of the main the
 
 ::::{prf:example}
 
-We will verify that the symmetric matrix $A = \begin{bmatrix} 1 & 0 & 1\\0 & 1  & 2 \\ 1 & 2 & 5 \end{bmatrix}$
+We will verify that the symmetric matrix $A = \begin{pmatrix} 1 & 0 & 1\\0 & 1  & 2 \\ 1 & 2 & 5 \end{pmatrix}$
 is diagonalizable and has mutually orthogonal eigenvectors.
 
 We first compute the characteristic polynomial.
@@ -390,9 +390,9 @@ So $A$ has the real eigenvalues $\lambda_{1} = 1$, $\lambda_2 = 6$ and $\lambda_
 The eigenvectors are found to be
 
 $$
-   \mathbf{v}_1 = \begin{bmatrix} 2 \\-1 \\ 0 \end{bmatrix} \text{ for } \lambda_1 = 1, \quad
-   \mathbf{v}_2 = \begin{bmatrix} 1 \\ 2 \\ 5 \end{bmatrix} \text{ for } \lambda_2, \quad
-   \mathbf{v}_3 = \begin{bmatrix} 1 \\ 2 \\ -1 \end{bmatrix} \text{ for } \lambda_3.
+   \mathbf{v}_1 = \begin{pmatrix} 2 \\-1 \\ 0 \end{pmatrix} \text{ for } \lambda_1 = 1, \quad
+   \mathbf{v}_2 = \begin{pmatrix} 1 \\ 2 \\ 5 \end{pmatrix} \text{ for } \lambda_2, \quad
+   \mathbf{v}_3 = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} \text{ for } \lambda_3.
 \nonumber
 $$
 
@@ -404,7 +404,7 @@ with {prf:ref}`Prop:SymmetricMat:OrthogonalEigenvectors`.
 ::::{prf:example}
 :label: Ex:SymmetricMat:DoubleEV
 
-Consider the matrix $A = \begin{bmatrix} 2&2&4\\2 & -1 & 2 \\ 4&2&2 \end{bmatrix}$.
+Consider the matrix $A = \begin{pmatrix} 2&2&4\\2 & -1 & 2 \\ 4&2&2 \end{pmatrix}$.
 
 A (rather involved) computation yields the eigenvalues $\lambda_{1,2} = -2$ and $\lambda_3 = 7$.
 Indeed all eigenvalues are real, conforming to {prf:ref}`Prop:SymmetricMat:RealEigenvalues`.
@@ -414,16 +414,16 @@ Next we find the eigenvectors and the geometric multiplicities of the eigenvalue
 For $\lambda = -2$ we find via row reduction
 
 $$
-    [A - (-2)I\,|\,\mathbf{0}] =
-    \left[\begin{array}{ccc|c} 4&2&4&0\\2 & 1 & 2 &0\\ 4&2&4&0\end{array}\right]       \sim
-    \left[\begin{array}{ccc|c} 2&1&2&0\\0&0&0&0 \\0&0&0&0\end{array}\right]    \nonumber
+    (A - (-2)I\,|\,\mathbf{0}) =
+    \left(\begin{array}{ccc|c} 4&2&4&0\\2 & 1 & 2 &0\\ 4&2&4&0\end{array}\right)       \sim
+    \left(\begin{array}{ccc|c} 2&1&2&0\\0&0&0&0 \\0&0&0&0\end{array}\right)    \nonumber
 $$
 
-the two linearly independent eigenvectors $\mathbf{v}_1 = \begin{bmatrix} 1 \\ 0 \\ -1\end{bmatrix}$ and
-$\mathbf{v}_2 = \begin{bmatrix} 1 \\ -2 \\ 0\end{bmatrix}$. The geometric multiplicity of $\lambda_{1,2}$ is equal to 2.
+the two linearly independent eigenvectors $\mathbf{v}_1 = \begin{pmatrix} 1 \\ 0 \\ -1\end{pmatrix}$ and
+$\mathbf{v}_2 = \begin{pmatrix} 1 \\ -2 \\ 0\end{pmatrix}$. The geometric multiplicity of $\lambda_{1,2}$ is equal to 2.
 The other eigenvalue has algebraic multiplicity 1, so its geometric multiplicity has to be 1 as well. With this {prf:ref}`Prop:SymmetricMat:AlgGeomMultiplicity` is verified.
 
-Lastly we leave it to you to check that an eigenvector for $\lambda_3 = 7$ is given by $\mathbf{v}_3 = \begin{bmatrix} 2 \\ 1 \\ 2\end{bmatrix}$. And that both $\mathbf{v}_3 \perp \mathbf{v}_1$ and $\mathbf{v}_3 \perp \mathbf{v}_2$, so that {prf:ref}`Prop:SymmetricMat:OrthogonalEigenvectors` is satisfied as well.
+Lastly we leave it to you to check that an eigenvector for $\lambda_3 = 7$ is given by $\mathbf{v}_3 = \begin{pmatrix} 2 \\ 1 \\ 2\end{pmatrix}$. And that both $\mathbf{v}_3 \perp \mathbf{v}_1$ and $\mathbf{v}_3 \perp \mathbf{v}_2$, so that {prf:ref}`Prop:SymmetricMat:OrthogonalEigenvectors` is satisfied as well.
 ::::
 
 (SubSec:SymmetricMat:OrthogDiag)=
@@ -444,12 +444,12 @@ The first example is a continuation of the earlier {prf:ref}`Ex:SymmetricMat:Dou
 ::::{prf:example}
 :label: Ex:SymmetricMat:OrthogDiag3x3
 
-The matrix $A = \begin{bmatrix} 2&2&4\\2 & -1 & 2 \\ 4&2&2 \end{bmatrix}$ was shown to have the eigenvalues/eigenvectors
+The matrix $A = \begin{pmatrix} 2&2&4\\2 & -1 & 2 \\ 4&2&2 \end{pmatrix}$ was shown to have the eigenvalues/eigenvectors
 
 $$
-  \lambda_{1,2} = -2, \quad \mathbf{v}_1 = \begin{bmatrix} 1 \\ 0 \\ -1\end{bmatrix}, \,
-  \mathbf{v}_2 = \begin{bmatrix} 1 \\ -2 \\ 0\end{bmatrix},
-  \quad \lambda_3 = 7, \quad \mathbf{v}_3 = \begin{bmatrix} 2 \\ 1 \\ 2\end{bmatrix}.
+  \lambda_{1,2} = -2, \quad \mathbf{v}_1 = \begin{pmatrix} 1 \\ 0 \\ -1\end{pmatrix}, \,
+  \mathbf{v}_2 = \begin{pmatrix} 1 \\ -2 \\ 0\end{pmatrix},
+  \quad \lambda_3 = 7, \quad \mathbf{v}_3 = \begin{pmatrix} 2 \\ 1 \\ 2\end{pmatrix}.
 $$
 
 The pairs $\mathbf{v}_1, \mathbf{v}_3$ and $\mathbf{v}_2, \mathbf{v}_3$ are 'automatically' orthogonal.
@@ -459,21 +459,21 @@ For the eigenspace $E_{-2} = \Span{\mathbf{v}_1, \mathbf{v}_2}$ we can use Gram-
 $$
   \mathbf{u}_1 = \mathbf{v}_1, \quad \mathbf{u}_2 =
          \mathbf{v}_2 - \dfrac{\mathbf{v}_2 \ip \mathbf{u}_1}{\mathbf{u}_1 \ip \mathbf{u}_1} \mathbf{u}_1
-         = \dfrac12\begin{bmatrix} 1 \\ -4 \\ 1\end{bmatrix}.
+         = \dfrac12\begin{pmatrix} 1 \\ -4 \\ 1\end{pmatrix}.
 $$
 
 Normalizing the orthogonal basis $\{\mathbf{u}_1, \mathbf{u}_2, \mathbf{v}_3\}$ and putting them side by side in a matrix yields the orthogonal matrix
 
 $$
-  Q = \begin{bmatrix} \dfrac{1}{\sqrt{2}} & \dfrac{1}{\sqrt{18}} & \dfrac{2}{3} \\
+  Q = \begin{pmatrix} \dfrac{1}{\sqrt{2}} & \dfrac{1}{\sqrt{18}} & \dfrac{2}{3} \\
   0 & \dfrac{-4}{\sqrt{18}} & \dfrac{1}{3}\\ \dfrac{-1}{\sqrt{2}} &  \dfrac{1}{\sqrt{18}} & \dfrac{2}{3}
-  \end{bmatrix}.
+  \end{pmatrix}.
 $$
 
 The conclusion becomes that
 
 $$
- A = QDQ^{-1} = QDQ^T, \quad \text{where still}  \,\,\, D = \begin{bmatrix} -2 & 0 & 0 \\ 0 & -2 & 0 \\ 0 & 0 & 7\end{bmatrix}.
+ A = QDQ^{-1} = QDQ^T, \quad \text{where still}  \,\,\, D = \begin{pmatrix} -2 & 0 & 0 \\ 0 & -2 & 0 \\ 0 & 0 & 7\end{pmatrix}.
 $$
 
 ::::
@@ -499,9 +499,9 @@ One more example to illustrate matters, before we get to the proof (or you jump 
 ::::{prf:example}
 :label: Ex:SymmetricMat:OrthogDiag3x3bis
 
-Let the symmetric matrix $A$ be given by $ A = \begin{bmatrix}
+Let the symmetric matrix $A$ be given by $ A = \begin{pmatrix}
 1 & 2 & 2 & 0 \\ 2 & -1 & 0 & 2 \\ 2 & 0 & -1 & -2 \\ 0 & 2 & -2 & 1
-\end{bmatrix}$.
+\end{pmatrix}$.
 
 The hard part is to find the eigenvalues. (I.e., how to solve an equation of the order four?!)
 Once we know what the eigenvalues are, the other steps are 'routine'.
@@ -511,15 +511,15 @@ It appears that $A$ has the double eigenvalues $\lambda_{1,2} = 3$ and $\lambda_
 To find the eigenvectors for the eigenvalue 3 we row reduce the matrix $(A - 3I)$.
 
 $$
-\left[\begin{array}{cccc}1-3 & 2 & 2 & 0\\ 2 & -1-3 & 0 & 2 \\ 2 & 0 & -1-3 & -2 \\ 0 & 2 & -2 & 1-3  \end{array} \right]  \,\,  \sim \,\,\ldots\,\, \sim  \,\,
-\left[\begin{array}{cccc}1 & 0 & -2 & -1\\ 0 & 1 & -1 & -1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0  \end{array} \right].
+\left(\begin{array}{cccc}1-3 & 2 & 2 & 0\\ 2 & -1-3 & 0 & 2 \\ 2 & 0 & -1-3 & -2 \\ 0 & 2 & -2 & 1-3  \end{array} \right)  \,\,  \sim \,\,\ldots\,\, \sim  \,\,
+\left(\begin{array}{cccc}1 & 0 & -2 & -1\\ 0 & 1 & -1 & -1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0  \end{array} \right).
 $$
 
 We can read off two linearly independent eigenvectors
 
 $$
-\vect{v}_1 = \left[\begin{array}{c} 1 \\ 1 \\ 0 \\ 1   \end{array} \right], \quad
-\vect{v}_2 = \left[\begin{array}{c} 2 \\ 1 \\ 1 \\ 0 \end{array} \right].
+\vect{v}_1 = \left(\begin{array}{c} 1 \\ 1 \\ 0 \\ 1   \end{array} \right), \quad
+\vect{v}_2 = \left(\begin{array}{c} 2 \\ 1 \\ 1 \\ 0 \end{array} \right).
 $$
 
 As in {prf:ref}`Ex:SymmetricMat:OrthogDiag3x3` we can construct an orthogonal basis for the eigenspace $E_{3}$:
@@ -527,35 +527,35 @@ As in {prf:ref}`Ex:SymmetricMat:OrthogDiag3x3` we can construct an orthogonal ba
 $$
   \mathbf{u}_1 = \mathbf{v}_1, \quad \mathbf{u}_2 =
          \mathbf{v}_2 - \dfrac{\mathbf{v}_2 \ip \mathbf{u}_1}{\mathbf{u}_1 \ip \mathbf{u}_1} \mathbf{u}_1
-         = \begin{bmatrix} 1 \\ 0 \\ 1\\ -1\end{bmatrix}
+         = \begin{pmatrix} 1 \\ 0 \\ 1\\ -1\end{pmatrix}
 $$
 
 Likewise we can first find a 'natural' basis for the eigenspace $E_{-3}$ by row reducing $(A - (-3I))$:
 
 $$
-(A - (-3I)) = \left[\begin{array}{cccc}4 & 2 & 2 & 0\\ 2 & 2 & 0 & 2 \\ 2 & 0 & 2 & -2 \\ 0 & 2 & -2 & 4  \end{array} \right] \quad  \sim \ldots \sim  \quad
-\left[\begin{array}{cccc}1 & 0 & 1 & -1\\ 0 & 1 & -1 & 2 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0  \end{array} \right].
+(A - (-3I)) = \left(\begin{array}{cccc}4 & 2 & 2 & 0\\ 2 & 2 & 0 & 2 \\ 2 & 0 & 2 & -2 \\ 0 & 2 & -2 & 4  \end{array} \right) \quad  \sim \ldots \sim  \quad
+\left(\begin{array}{cccc}1 & 0 & 1 & -1\\ 0 & 1 & -1 & 2 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0  \end{array} \right).
 $$
 
-Two independent eigenvectors: $\vect{v}_3 = \left[\begin{array}{c} -1 \\ 1 \\ 1 \\ 0  \end{array} \right]$ and $\vect{v}_4 = \left[\begin{array}{c} 1 \\ -2 \\ 0 \\ 1  \end{array} \right]$.
+Two independent eigenvectors: $\vect{v}_3 = \left(\begin{array}{c} -1 \\ 1 \\ 1 \\ 0  \end{array} \right)$ and $\vect{v}_4 = \left(\begin{array}{c} 1 \\ -2 \\ 0 \\ 1  \end{array} \right)$.
 
 Again these can be orthogonalized, and then we find the following complete set of eigenvectors, i.e., a basis for $\R^4$:
 
 $$
-  \vect{u}_1 = \begin{bmatrix} 1 \\ 1 \\ 0\\ 1\end{bmatrix}, \quad
-  \vect{u}_2 = \begin{bmatrix} 1 \\ 0 \\ 1\\ -1\end{bmatrix}, \quad
-  \vect{u}_3 = \begin{bmatrix} -1 \\ 1 \\ 1\\ 0\end{bmatrix}, \quad
-  \vect{u}_4 = \begin{bmatrix} 0 \\ -1 \\ 1 \\ 1\end{bmatrix}.
+  \vect{u}_1 = \begin{pmatrix} 1 \\ 1 \\ 0\\ 1\end{pmatrix}, \quad
+  \vect{u}_2 = \begin{pmatrix} 1 \\ 0 \\ 1\\ -1\end{pmatrix}, \quad
+  \vect{u}_3 = \begin{pmatrix} -1 \\ 1 \\ 1\\ 0\end{pmatrix}, \quad
+  \vect{u}_4 = \begin{pmatrix} 0 \\ -1 \\ 1 \\ 1\end{pmatrix}.
 $$
 
 We conclude that $A = QDQ^{-1}$, where
 
 $$
-    D = \left[\begin{array}{cccc}3 & 0 & 0 & 0\\ 0 & 3 & 0 & 0 \\ 0 & 0 & -3 & 0 \\ 0 & 0 & 0 & -3  \end{array} \right], \quad
-   Q = \dfrac{1}{\sqrt{3}} \left[\begin{array}{cccc}1 & 1 & -1 & 0\\
+    D = \left(\begin{array}{cccc}3 & 0 & 0 & 0\\ 0 & 3 & 0 & 0 \\ 0 & 0 & -3 & 0 \\ 0 & 0 & 0 & -3  \end{array} \right), \quad
+   Q = \dfrac{1}{\sqrt{3}} \left(\begin{array}{cccc}1 & 1 & -1 & 0\\
                                                     1 & 0 & 1 & -1 \\
                                                     0 & 1 & 1 & 1 \\
-                                                    1 & -1 & 0 & 1  \end{array} \right].
+                                                    1 & -1 & 0 & 1  \end{array} \right).
 $$
 
 ::::
@@ -574,11 +574,11 @@ Let $Q_1$ be the matrix with the columns $\vect{q}_1,\vect{q}_2,\ldots,\vect{q}_
 It can be shown that $A_1 = Q_1^{-1}AQ_1 = Q_1^TAQ_1$ is of the form
 
 $$
-   \left[\begin{array}{ccc} \lambda_1 & 0   & \ldots & 0  \\
+   \left(\begin{array}{ccc} \lambda_1 & 0   & \ldots & 0  \\
     0 &   \\
      \vdots   & & B_1 &  \\
     0 &
-   \end{array}\right]
+   \end{array}\right)
 $$
 
 where $B_1$ is an $(n-1)\times(n-1)$ matrix that is also symmetric.
@@ -592,8 +592,8 @@ $$
 
 and $Q_1^{-1}\vect{q}_1$ is the first column of $Q_1^{-1}Q_1$, which is $\vect{e}_1$.
 
-This shows that the first column of $A_1$ must indeed be $\lambda_1\vect{e}_1 = \left[\begin{array}{c}
-\lambda_1 \\ 0 \\ \vdots \\ 0 \end{array}\right]$.
+This shows that the first column of $A_1$ must indeed be $\lambda_1\vect{e}_1 = \left(\begin{array}{c}
+\lambda_1 \\ 0 \\ \vdots \\ 0 \end{array}\right)$.
 
 Since $A$ is symmetric and $Q_1$ is by construction an orthogonal matrix,
 
@@ -610,11 +610,11 @@ We can apply the same construction to $B_1$, yielding
 
 $$
    B_2 = (\tilde{Q}_2)^{-1}B_1\tilde{Q}_2
-   =    \left[\begin{array}{cccc} \lambda_2 & 0   & \ldots & 0  \\
+   =    \left(\begin{array}{cccc} \lambda_2 & 0   & \ldots & 0  \\
     0 &   \\
      \vdots   & & \tilde{B}_2 &  \\
     0 &
-   \end{array}\right].
+   \end{array}\right).
 $$
 
 Note that in this formula the matrices have size $(n-1)$ by $(n-1)$.
@@ -623,11 +623,11 @@ If we then define
 
 $$
    Q_2 =
-    \left[\begin{array}{cccc} 1 & 0   & \ldots & 0  \\
+    \left(\begin{array}{cccc} 1 & 0   & \ldots & 0  \\
     0 &   \\
      \vdots   & & \tilde{Q}_2 &  \\
     0 &
-   \end{array}\right],
+   \end{array}\right),
 
 $$
 
@@ -635,26 +635,26 @@ it follows that
 
 $$
   A_2 = Q_2^{-1}A_1Q_2 =
-  \left[\begin{array}{cccccc}
+  \left(\begin{array}{cccccc}
     \lambda_1 &      0    & 0  & \ldots & 0  \\
        0      & \lambda_2 & 0  & \ldots & 0  \\
        0      &  0  \\
     \vdots & \vdots & & \tilde{B_2}  \\
     0 & 0 &
-   \end{array}\right].
+   \end{array}\right).
 $$
 
 Continuing in this fashion we find
 
 $$
   A_{n-1} = Q_{n-1}^{-1} \cdots Q_2^{-1}Q_1^{-1}A Q_1  Q_2 \cdots Q_{n-1} =
-  \left[\begin{array}{ccccc}
+  \left(\begin{array}{ccccc}
     \lambda_1 &      0    & 0  & \ldots &0 \\
        0      & \lambda_2 & 0  &\ldots &0 \\
      \vdots & & \ddots &  & \vdots\\
      \vdots & &  & \ddots & \vdots\\
      0 & 0 &  \ldots & 0 &\lambda_n
-   \end{array}\right].
+   \end{array}\right).
 
 
 $$
@@ -671,94 +671,94 @@ Moreover, since the product of orthogonal matrices is orthogonal, $A$ is in fact
 We will illustrate the proof for the matrix
 
 $$
-    A = \begin{bmatrix}
+    A = \begin{pmatrix}
      1 & 2 & 2 & 0 \\ 2 & -1 & 0 & 2 \\ 2 & 0 & -1 & -2 \\ 0 & 2 & -2 & 1
-    \end{bmatrix}.
+    \end{pmatrix}.
 $$
 
 Since
 
 $$
-    \begin{bmatrix}
+    \begin{pmatrix}
      1 & 2 & 2 & 0 \\ 2 & -1 & 0 & 2 \\ 2 & 0 & -1 & -2 \\ 0 & 2 & -2 & 1
-    \end{bmatrix}
-    \begin{bmatrix}
+    \end{pmatrix}
+    \begin{pmatrix}
      1 \\-1\\-1\\0
-    \end{bmatrix} =
-    \begin{bmatrix}
+    \end{pmatrix} =
+    \begin{pmatrix}
      -3 \\3\\3\\0
-    \end{bmatrix}
+    \end{pmatrix}
 $$
 
 we have as a starter the eigenvalue and corresponding eigenvector
 
 $$
-  \lambda_1 = -3, \quad \vect{v}_1 = \begin{bmatrix}  1 \\-1\\-1\\0   \end{bmatrix}.
+  \lambda_1 = -3, \quad \vect{v}_1 = \begin{pmatrix}  1 \\-1\\-1\\0   \end{pmatrix}.
 $$
 
 An orthogonal basis for $\mathbb{R}^4$, starting with this first eigenvector is, for instance
 
 $$
-   \vect{v}_1 = \begin{bmatrix}  1 \\-1\\-1\\0   \end{bmatrix}, \quad
-   \vect{v}_2 = \begin{bmatrix}  1 \\1\\0\\0   \end{bmatrix}, \quad
-   \vect{v}_3 = \begin{bmatrix}  1 \\-1\\2\\0   \end{bmatrix}, \quad
-   \vect{v}_4 = \begin{bmatrix}  0\\0\\0\\1   \end{bmatrix}. \quad
+   \vect{v}_1 = \begin{pmatrix}  1 \\-1\\-1\\0   \end{pmatrix}, \quad
+   \vect{v}_2 = \begin{pmatrix}  1 \\1\\0\\0   \end{pmatrix}, \quad
+   \vect{v}_3 = \begin{pmatrix}  1 \\-1\\2\\0   \end{pmatrix}, \quad
+   \vect{v}_4 = \begin{pmatrix}  0\\0\\0\\1   \end{pmatrix}. \quad
 $$
 
 Rescaling and putting them into a matrix yields
 
 $$
-    Q_1 = \begin{bmatrix}
+    Q_1 = \begin{pmatrix}
              1/\sqrt{3} & 1/\sqrt{2} & 1/\sqrt{6} & 0 \\
              -1/\sqrt{3} & 1/\sqrt{2} & -1/\sqrt{6} & 0 \\
              -1/\sqrt{3} & 0 & 2/\sqrt{6} & 0 \\
              0 & 0 & 0 & 1
-        \end{bmatrix}.
+        \end{pmatrix}.
 $$
 
 Next we compute
 
 $$
-   A_1 = Q_1^{-1}AQ_1 = Q_1^TAQ_1 = \begin{bmatrix}
+   A_1 = Q_1^{-1}AQ_1 = Q_1^TAQ_1 = \begin{pmatrix}
              -3 &  0 & 0 & 0 \\
              0 & 2 & \sqrt{3} & \sqrt{2} \\
              0 & \sqrt{3} & 0  & -\sqrt{6} \\
              0 & \sqrt{2} & -\sqrt{6} & 1
-        \end{bmatrix}.
+        \end{pmatrix}.
 $$
 
 This is indeed of the form stated in the proof.
 
-We continue with the matrix $B_1 = \left[\begin{array}{ccc}
+We continue with the matrix $B_1 = \left(\begin{array}{ccc}
                   2 & \sqrt{3} & \sqrt{2} \\ 
                   \sqrt{3} & 0  & -\sqrt{6} \\
                   \sqrt{2} & -\sqrt{6} & 1
-                  \end{array}   \right]$.
+                  \end{array}   \right)$.
 
-$B_1$ has eigenvalue $-3$ with eigenvector $\vect{u}_1 = \left[\begin{array}{c}
+$B_1$ has eigenvalue $-3$ with eigenvector $\vect{u}_1 = \left(\begin{array}{c}
                                             1 \\   -\sqrt{3} \\ -\sqrt{2}  
-                                            \end{array}   \right]$.
+                                            \end{array}   \right)$.
 
 Again we extend to an orthogonal basis for $\mathbb{R}^3$. For instance,
 
 $$
-    \vect{u}_1, \quad \vect{u}_2 = \left[\begin{array}{c}
+    \vect{u}_1, \quad \vect{u}_2 = \left(\begin{array}{c}
                                             \sqrt{2} \\   0\\ 1
-                                    \end{array}   \right], \quad
-                      \vect{u}_3 = \left[\begin{array}{c}
+                                    \end{array}   \right), \quad
+                      \vect{u}_3 = \left(\begin{array}{c}
                                             1 \\ \sqrt{3} \\  -\sqrt{2}
-                                    \end{array}   \right].
+                                    \end{array}   \right).
 $$
 
 If we normalize and use them as the columns of $\tilde{Q}_2$ as in the proof of {prf:ref}`Thm:SymmetricMat:OrthogDiag`, we find as second matrix in that construction
 
 $$
 
-   Q_2 = \left[\begin{array}{cccc} 1 & 0 & 0 & 0 \\
+   Q_2 = \left(\begin{array}{cccc} 1 & 0 & 0 & 0 \\
                   0 & \dfrac{1}{\sqrt{6}} &  \dfrac{\sqrt{2}}{\sqrt{3}} & \dfrac{1}{\sqrt{6}} \\
                   0 & \dfrac{-1}{\sqrt{2}} &  0 & \dfrac{1}{\sqrt{2}} \\
                   0 & \dfrac{-1}{\sqrt{3}} &  \dfrac{1}{\sqrt{3}} & -\dfrac{1}{\sqrt{3}}
-                                    \end{array}   \right].
+                                    \end{array}   \right).
 
 
 $$
@@ -767,12 +767,12 @@ And then
 
 $$
 A_2 = Q_2^TQ_1^T A Q_1Q_2 =
-\left[\begin{array}{cccc}
+\left(\begin{array}{cccc}
 -3 & 0 & 0 & 0 \\
 0 &-3 & 0 & 0 \\
 0 & 0 & 3 & 0 \\
 0 & 0 & 0 & 3
-\end{array} \right] = D,
+\end{array} \right) = D,
 $$
 
 indeed a _diagonal_ matrix. <BR>
@@ -787,27 +787,27 @@ $$
 for the matrix $Q = Q_1Q_2$. This is the matrix
 
 $$
-  Q =  \left[\begin{array}{cccc} \dfrac{1}{\sqrt{3}} & 0 & \dfrac{1}{\sqrt{3}} & \dfrac{1}{\sqrt{3}} \\
+  Q =  \left(\begin{array}{cccc} \dfrac{1}{\sqrt{3}} & 0 & \dfrac{1}{\sqrt{3}} & \dfrac{1}{\sqrt{3}} \\
                  -\dfrac{1}{\sqrt{3}} & \dfrac{1}{\sqrt{3}} & \dfrac{1}{\sqrt{3}} & 0 \\
                  -\dfrac{1}{\sqrt{3}} & -\dfrac{1}{\sqrt{3}} & 0 & \dfrac{1}{\sqrt{3}} \\
                  0 & -\dfrac{1}{\sqrt{3}} & \dfrac{1}{\sqrt{3}} & -\dfrac{1}{\sqrt{3}}
-                                    \end{array}   \right] =
-        \dfrac{1}{\sqrt{3}}\left[\begin{array}{cccc} 1 & 0 & 1 & 1 \\
+                                    \end{array}   \right) =
+        \dfrac{1}{\sqrt{3}}\left(\begin{array}{cccc} 1 & 0 & 1 & 1 \\
                  -1 & 1 & 1 & 0 \\ -1 & -1 & 0 & 1 \\ 0 & -1 & 1 & -1
-                                    \end{array}   \right].
+                                    \end{array}   \right).
 $$
 
 So we see that $A$ has the 'simpler' eigenvectors
 
 $$
-  \vect{v}_1 = \left[\begin{array}{c} 1 \\ -1 \\ -1 \\ 0
-                                    \end{array}   \right], \quad
-  \vect{v}_2 = \left[\begin{array}{c} 0 \\ 1 \\ -1 \\ -1
-                                    \end{array}   \right], \quad
-  \vect{v}_3 = \left[\begin{array}{c} 1 \\ 1 \\ 0 \\ 1
-                                    \end{array}   \right], \quad
-  \vect{v}_4 = \left[\begin{array}{c} 1 \\ 0 \\ 1 \\ -1
-                                    \end{array}   \right].
+  \vect{v}_1 = \left(\begin{array}{c} 1 \\ -1 \\ -1 \\ 0
+                                    \end{array}   \right), \quad
+  \vect{v}_2 = \left(\begin{array}{c} 0 \\ 1 \\ -1 \\ -1
+                                    \end{array}   \right), \quad
+  \vect{v}_3 = \left(\begin{array}{c} 1 \\ 1 \\ 0 \\ 1
+                                    \end{array}   \right), \quad
+  \vect{v}_4 = \left(\begin{array}{c} 1 \\ 0 \\ 1 \\ -1
+                                    \end{array}   \right).
 $$
 
 Note: given the eigenvalues, these eigenvectors could have been found more efficiently by solving the systems
@@ -841,9 +841,9 @@ But first we will give an example that catches the main idea.
 ::::{prf:example}
 :label: Ex:SymmetricMat:Max||Ax|| 
 
-The (symmetric)  matrix $A = \begin{bmatrix}  -1 & 4  \\ 4 & -1 \end{bmatrix}$ has the 
+The (symmetric)  matrix $A = \begin{pmatrix}  -1 & 4  \\ 4 & -1 \end{pmatrix}$ has the 
 eigenvalues $\lambda_1 = -5$ and  $\lambda_2 = 3$ with corresponding unit 
-eigenvectors  $\mathbf{u}_1 = \dfrac{1}{\sqrt{2}}\begin{bmatrix}  1   \\  -1 \end{bmatrix}$   and  $\mathbf{u}_2 = \dfrac{1}{\sqrt{2}}\begin{bmatrix}  1   \\  1 \end{bmatrix}$ respectively. 
+eigenvectors  $\mathbf{u}_1 = \dfrac{1}{\sqrt{2}}\begin{pmatrix}  1   \\  -1 \end{pmatrix}$   and  $\mathbf{u}_2 = \dfrac{1}{\sqrt{2}}\begin{pmatrix}  1   \\  1 \end{pmatrix}$ respectively. 
 So according to {prf:ref}`Prop:SymmetricMat:Max||Ax||`  the maximum value of $\norm{A\vect{x}}$ on 
 the set of vectors with norm 1 must be 5.
 
@@ -891,7 +891,7 @@ The second example shows that symmetry of the matrix is necessary for the proper
 ::::{prf:example}
 :label: Ex:SymmetricMat:NonMax||Ax|| 
 
-The  matrix $B = \begin{bmatrix}  3 & 4  \\ 0 &  3\end{bmatrix}$ has the double eigenvalue $\lambda_1 = \lambda_2 = 3$ and for the unit vector $\mathbf{x} = \begin{bmatrix}  0   \\  1 \end{bmatrix}$  it holds that &nbsp; $   \norm{A\vect{x}} = \norm{\begin{bmatrix} 4\\3 \end{bmatrix}} = 5 > 3 = |\lambda_1|$.
+The  matrix $B = \begin{pmatrix}  3 & 4  \\ 0 &  3\end{pmatrix}$ has the double eigenvalue $\lambda_1 = \lambda_2 = 3$ and for the unit vector $\mathbf{x} = \begin{pmatrix}  0   \\  1 \end{pmatrix}$  it holds that &nbsp; $   \norm{A\vect{x}} = \norm{\begin{pmatrix} 4\\3 \end{pmatrix}} = 5 > 3 = |\lambda_1|$.
 
 ::::
 
@@ -976,33 +976,33 @@ Let's take up an earlier example ({prf:ref}`Ex:SymmetricMat:OrthDiag2x2`) to ill
 ::::{prf:example}
 :label: Ex:SymmetricMat:SpectralDecomp
 
-For the matrix $A = \begin{bmatrix} 1&2\\2&-2 \end{bmatrix}$ we found the orthogonal diagonalization
+For the matrix $A = \begin{pmatrix} 1&2\\2&-2 \end{pmatrix}$ we found the orthogonal diagonalization
 
 $$
- A = QDQ^T = \begin{bmatrix} 2/\sqrt{5}& 1/\sqrt{5}\\1/\sqrt{5}& -2/\sqrt{5} \end{bmatrix}
-             \begin{bmatrix} 2 & 0 \\ 0 & -3 \end{bmatrix}
-             \begin{bmatrix} 2/\sqrt{5}& 1/\sqrt{5}\\1/\sqrt{5}& -2/\sqrt{5} \end{bmatrix}^T.
+ A = QDQ^T = \begin{pmatrix} 2/\sqrt{5}& 1/\sqrt{5}\\1/\sqrt{5}& -2/\sqrt{5} \end{pmatrix}
+             \begin{pmatrix} 2 & 0 \\ 0 & -3 \end{pmatrix}
+             \begin{pmatrix} 2/\sqrt{5}& 1/\sqrt{5}\\1/\sqrt{5}& -2/\sqrt{5} \end{pmatrix}^T.
 $$
 
 This is of the form
 
 $$
   \begin{array}{rcl}
-  A &=& [\,\mathbf{q}_1\,\,\mathbf{q}_2\,]\begin{bmatrix} 2 & 0 \\ 0 & -3 \end{bmatrix}
-             \big[\,\mathbf{q}_1\,\,\mathbf{q}_2\,\big]^T =
-     \big[\,2\mathbf{q}_1\,\,(-3)\mathbf{q}_2\big]\begin{bmatrix}\mathbf{q}_1^T \\ \mathbf{q}_2^T  \end{bmatrix}.
+  A &=& (\,\mathbf{q}_1\,\,\mathbf{q}_2\,)\begin{pmatrix} 2 & 0 \\ 0 & -3 \end{pmatrix}
+             \big(\,\mathbf{q}_1\,\,\mathbf{q}_2\,\big)^T =
+     \big(\,2\mathbf{q}_1\,\,(-3)\mathbf{q}_2\big)\begin{pmatrix}\mathbf{q}_1^T \\ \mathbf{q}_2^T  \end{pmatrix}.
      \end{array}
 $$
 
 We bring in mind the column-row expansion of the matrix product. For two $2\times 2$ matrices this reads
 
 $$
- \begin{bmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{bmatrix}
- \begin{bmatrix} b_{11} &b_{12} \\ b_{21} & b_{22} \end{bmatrix} =
- \begin{bmatrix} a_{11} \\ a_{21} \end{bmatrix}
- \begin{bmatrix} b_{11} &b_{12}  \end{bmatrix}  +
- \begin{bmatrix} a_{12} \\ a_{22} \end{bmatrix}
- \begin{bmatrix} b_{21} &b_{22}  \end{bmatrix}.
+ \begin{pmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{pmatrix}
+ \begin{pmatrix} b_{11} &b_{12} \\ b_{21} & b_{22} \end{pmatrix} =
+ \begin{pmatrix} a_{11} \\ a_{21} \end{pmatrix}
+ \begin{pmatrix} b_{11} &b_{12}  \end{pmatrix}  +
+ \begin{pmatrix} a_{12} \\ a_{22} \end{pmatrix}
+ \begin{pmatrix} b_{21} &b_{22}  \end{pmatrix}.
 $$
 
 Applying this to the last expression for $A = QDQ^T$ we find
@@ -1014,9 +1014,9 @@ $$
 The matrices
 
 $$
-   \mathbf{q}_1\mathbf{q}_1^T = \frac15 \begin{bmatrix} 4 & 2  \\ 2 & 1 \end{bmatrix}
+   \mathbf{q}_1\mathbf{q}_1^T = \frac15 \begin{pmatrix} 4 & 2  \\ 2 & 1 \end{pmatrix}
    \quad \text{and} \quad
-   \mathbf{q}_2\mathbf{q}_2^T = \frac15 \begin{bmatrix} 1 & -2  \\ -2 & 4 \end{bmatrix}
+   \mathbf{q}_2\mathbf{q}_2^T = \frac15 \begin{pmatrix} 1 & -2  \\ -2 & 4 \end{pmatrix}
 $$
 
 represent the orthogonal projections onto the one-dimensional subspaces $\Span{\mathbf{q}_1}$ and $\Span{\mathbf{q}_2}$.
@@ -1068,7 +1068,7 @@ where the vectors $\mathbf{q}_i$ of course are the (orthonormal) columns of the 
 
 ::::{exercise}
 
-The eigenvalues of the matrix $A=\begin{bmatrix} 2 & 1 & 0 \\ 1 & 3 &  1\\ 0 & 1& 2 \end{bmatrix}$ are 1, 2 and 4.
+The eigenvalues of the matrix $A=\begin{pmatrix} 2 & 1 & 0 \\ 1 & 3 &  1\\ 0 & 1& 2 \end{pmatrix}$ are 1, 2 and 4.
 
 Find the spectral decomposition of $A$.
 
@@ -1105,7 +1105,7 @@ $\vect{q}_1, \ldots, \vect{q}_m$, then
 
 $$
   \lambda_i\vect{q}_1\vect{q}_1^T + \,\ldots\,+ \lambda_i\vect{q}_m\vect{q}_m^T =
-  \lambda_i [\,\vect{q}_1\,\,\cdots\,\,\vect{q}_m]  [\,\vect{q}_1\,\,\cdots\,\,\vect{q}_m]^T = \lambda_i Q_iQ_i^T.
+  \lambda_i (\,\vect{q}_1\,\,\cdots\,\,\vect{q}_m)  (\,\vect{q}_1\,\,\cdots\,\,\vect{q}_m)^T = \lambda_i Q_iQ_i^T.
 $$
 
 $P_i = Q_iQ_i^T$ is precisely the orthogonal projection onto the
@@ -1115,43 +1115,43 @@ eigenspace $E_{\lambda_i}$.
 The following example provides an illustration.
 
 ::::{prf:example}
-For the matrix $A = \begin{bmatrix} 
+For the matrix $A = \begin{pmatrix} 
      1 & 2 & 2 & 0 \\ 2 & -1 & 0 & 2 \\ 2 & 0 & -1 & -2 \\ 0 & 2 & -2 & 1
-    \end{bmatrix}$ we had already found the orthogonal decomposition $A = QDQ^{-1}= QDQ^T$ with
+    \end{pmatrix}$ we had already found the orthogonal decomposition $A = QDQ^{-1}= QDQ^T$ with
 
 $$
-  Q = \left[\,\vect{q}_1\,\,\vect{q}_2\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_3\,\,\vect{q}_4\,\right]
-  =   \dfrac{1}{\sqrt{3}}\left[\begin{array}{cccc} 1 & 0 & 1 & 1 \\
+  Q = \left(\,\vect{q}_1\,\,\vect{q}_2\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_3\,\,\vect{q}_4\,\right)
+  =   \dfrac{1}{\sqrt{3}}\left(\begin{array}{cccc} 1 & 0 & 1 & 1 \\
                  -1 & 1 & 1 & 0 \\ -1 & -1 & 0 & 1 \\ 0 & -1 & 1 & -1
-      \end{array} \right]
+      \end{array} \right)
 $$
 
 and
 
 $$
-      D = \left[\begin{array}{cccc} -3 & 0 & 0 & 0 \\
+      D = \left(\begin{array}{cccc} -3 & 0 & 0 & 0 \\
        0 & -3 & 0 & 0 \\ 0 & 0 & 3 & 0\\ 0 & 0 & 0 & 3
-                \end{array}\right].
+                \end{array}\right).
 $$
 
 The spectral decomposition according to {prf:ref}`Cor:SymmetricMat:SpectralThm-2` then becomes
 
 $$
-   A = (-3) \left[\vect{q}_1\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_2\,\right]\left[\vect{q}_1\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_2\,\right]^T +
-   3 \left[\vect{q}_3\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_4\,\right]\left[\vect{q}_3\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_4\,\right]^T = \,\,\ldots\,\,  =
+   A = (-3) \left(\vect{q}_1\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_2\,\right)\left(\vect{q}_1\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_2\,\right)^T +
+   3 \left(\vect{q}_3\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_4\,\right)\left(\vect{q}_3\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_4\,\right)^T = \,\,\ldots\,\,  =
 $$
 
 $$
-  = (-3)\begin{bmatrix} 1/3 & -1/3 & -1/3 &   0 \\
+  = (-3)\begin{pmatrix} 1/3 & -1/3 & -1/3 &   0 \\
                        -1/3 &  2/3 &   0  & -1/3 \\
                        -1/3 &   0  &  2/3 &  1/3 \\
                           0 & -1/3 &  1/3 &  1/3
-  \end{bmatrix} +
-      3 \begin{bmatrix} 2/3 &  1/3 &  1/3 &   0  \\
+  \end{pmatrix} +
+      3 \begin{pmatrix} 2/3 &  1/3 &  1/3 &   0  \\
                         1/3 &  1/3 &   0  &  1/3 \\
                         1/3 &   0  &  1/3 & -1/3 \\
                           0 &  1/3 & -1/3 &  2/3
-  \end{bmatrix}.
+  \end{pmatrix}.
 $$
 
 ::::

@@ -68,10 +68,10 @@ Consider the vectors
 
 $$
 \mathbf{v}_{1}=
-\begin{bmatrix}1\\0\end{bmatrix}\quad\mathbf{v}_{2}=
-\begin{bmatrix}0\\1\end{bmatrix}
+\begin{pmatrix}1\\0\end{pmatrix}\quad\mathbf{v}_{2}=
+\begin{pmatrix}0\\1\end{pmatrix}
 \quad\mathbf{v}_{3}=
-\begin{bmatrix}1\\1\end{bmatrix},
+\begin{pmatrix}1\\1\end{pmatrix},
 $$
 
 which are shown on the left in {numref}`Figure %s <Fig:LinInd:Examplein2D>`. The set $S=\left\lbrace\mathbf{v}_{1},\mathbf{v}_{2},\mathbf{v}_{3}\right\rbrace$ is linearly dependent in view of the following equalities:
@@ -116,10 +116,10 @@ Consider now the vectors
 
 $$
 	\mathbf{v}_{1}=
-	\begin{bmatrix}1\\0\end{bmatrix}\quad
+	\begin{pmatrix}1\\0\end{pmatrix}\quad
 	\mathbf{v}_{2}=
-	\begin{bmatrix}0\\1\end{bmatrix}\quad\mathbf{v}_{4}=
-	\begin{bmatrix}2\\0\end{bmatrix}
+	\begin{pmatrix}0\\1\end{pmatrix}\quad\mathbf{v}_{4}=
+	\begin{pmatrix}2\\0\end{pmatrix}
 $$
 
 which are shown on the right in {numref}`Figure %s <Fig:LinInd:Examplein2D>`.
@@ -147,10 +147,10 @@ Put
 
 $$
 	\mathbf{w}_{1}=
-	\begin{bmatrix}1\\0\\0\end{bmatrix},\quad\mathbf{w}_{2}=
-	\begin{bmatrix}0\\1\\0\end{bmatrix},\quad\mathbf{w}_{3}=
-	\begin{bmatrix}1\\2\\0\end{bmatrix},\quad \text{and}\quad\mathbf{w}_{4}=
-	\begin{bmatrix}1\\2\\1\end{bmatrix}.
+	\begin{pmatrix}1\\0\\0\end{pmatrix},\quad\mathbf{w}_{2}=
+	\begin{pmatrix}0\\1\\0\end{pmatrix},\quad\mathbf{w}_{3}=
+	\begin{pmatrix}1\\2\\0\end{pmatrix},\quad \text{and}\quad\mathbf{w}_{4}=
+	\begin{pmatrix}1\\2\\1\end{pmatrix}.
 $$
 
 The set $\left\lbrace\mathbf{w}_{1},\mathbf{w}_{2},\mathbf{w}_{3}\right\rbrace$ is linearly dependent. The set $\left\lbrace\mathbf{w}_{1},\mathbf{w}_{2},\mathbf{w}_{4}\right\rbrace$, however, is not. This is illustrated in {numref}`Figure %s <Fig:LinInd:Examplein3D>`.
@@ -285,7 +285,7 @@ A set
 $\left\lbrace\mathbf{v}_{1},\dots,\mathbf{v}_{k}\right\rbrace$
 of vectors in $\mathbb{R}^{n}$ is linearly dependent if and only if the matrix equation
 $A\mathbf{x}=\mathbf{0}$ with
-$A=\begin{bmatrix}\mathbf{v}_{1}& \cdots &\mathbf{v}_{k}\end{bmatrix}$
+$A=\begin{pmatrix}\mathbf{v}_{1}& \cdots &\mathbf{v}_{k}\end{pmatrix}$
 has a non-trivial solution, i.e. if $A$ has a column without a pivot.
 
 ::::::
@@ -304,11 +304,11 @@ Consider the following three vectors in $\mathbb{R}^{4}$:
 
 $$
 \mathbf{v}_{1}=
-\begin{bmatrix}
+\begin{pmatrix}
 1\\1\\0\\-2
-\end{bmatrix}\quad\mathbf{v}_{2}=
-\begin{bmatrix}-1\\2\\3\\-2\end{bmatrix}\quad\mathbf{v}_{3}=
-\begin{bmatrix} 4\\1\\-3\\-4\end{bmatrix}.
+\end{pmatrix}\quad\mathbf{v}_{2}=
+\begin{pmatrix}-1\\2\\3\\-2\end{pmatrix}\quad\mathbf{v}_{3}=
+\begin{pmatrix} 4\\1\\-3\\-4\end{pmatrix}.
 $$
 
 Do these vectors form a linearly dependent set? How do we find out? Well, we use the vectors as the columns of a matrix $A$ and compute an echelon form using standard techniques
@@ -316,8 +316,8 @@ Do these vectors form a linearly dependent set? How do we find out? Well, we use
 $$
 
 A=
-\begin{bmatrix}1&-1&4\\1&2&1\\0&3&-3\\-2&-2&-4 \end{bmatrix}\sim\cdots\sim
-\begin{bmatrix} 1&-1&4\\0&3&-3\\0&0&0\\0&0&0\end{bmatrix}.
+\begin{pmatrix}1&-1&4\\1&2&1\\0&3&-3\\-2&-2&-4 \end{pmatrix}\sim\cdots\sim
+\begin{pmatrix} 1&-1&4\\0&3&-3\\0&0&0\\0&0&0\end{pmatrix}.
 $$
 
 The third column has no pivot, so the system $A\mathbf{x}=\mathbf{0}$ has infinitely many solutions. In particular, it therefore has a non-trivial one. Consequently, the set $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{2},\mathbf{v}_{3}\right\rbrace$ is linearly dependent.
@@ -327,8 +327,8 @@ From the reduced echelon form, we can easily find a way to write $\mathbf{v}_{3}
 $$
 
 A=
-\begin{bmatrix}1&-1&4\\1&2&1\\0&3&-3\\-2&-2&-4 \end{bmatrix}\sim\cdots\sim
-\begin{bmatrix} 1&0&3\\0&1&-1\\0&0&0\\0&0&0\end{bmatrix}.
+\begin{pmatrix}1&-1&4\\1&2&1\\0&3&-3\\-2&-2&-4 \end{pmatrix}\sim\cdots\sim
+\begin{pmatrix} 1&0&3\\0&1&-1\\0&0&0\\0&0&0\end{pmatrix}.
 $$
 
 If we put the free variable $x_{3}$ equal to 1, we find $x_{1}=-3$ and $x_{2}=1$, which gives:
@@ -428,14 +428,14 @@ Consider the matrices
 
 $$
 
-A=\left[\vect{u}_{1}\cdots\mathbf{u}_{k}\right],\quad B=\left[\vect{v}_{1}\cdots\mathbf{v}_{l}\right]\quad \text{and}\quad C=[A | B].
+A=\begin{pmatrix}\vect{u}_{1}&\cdots&\mathbf{u}_{k}\end{pmatrix},\quad B=\begin{pmatrix}\vect{v}_{1}&\cdots&\mathbf{v}_{l}\end{pmatrix}\quad \text{and}\quad C=\left(\begin{array}{c|c}A & B\end{array}\right).
 $$
 
 Bringing $C$ in echelon form gives
 
 $$
 
-C\sim D=[E | F]
+C\sim D=\left(\begin{array}{c|c}E & F\end{array}\right),
 $$
 
 where $D$ is the echelon form of $C$, $E$ is an echelon form of $A$, and $F$ is equivalent to $B$.
@@ -466,12 +466,12 @@ To illustrate the strength of {prf:ref}`Thm:LinInd:MoreRowthanColmeansLinDep`, c
 $$
 
 \left\lbrace
-\begin{bmatrix}5\\-2\\3\\1\\0\end{bmatrix},
-\begin{bmatrix}-47\\8\\12\\-3\\4\end{bmatrix},
-\begin{bmatrix}12\\-3\\-2\\-1\\11\end{bmatrix},
-\begin{bmatrix}42\\-7\\-52\\2\\16\end{bmatrix},
-\begin{bmatrix}87\\56\\-32\\1\\0\end{bmatrix},
-\begin{bmatrix}-48\\2\\35\\156\\8\end{bmatrix}\right\rbrace.
+\begin{pmatrix}5\\-2\\3\\1\\0\end{pmatrix},
+\begin{pmatrix}-47\\8\\12\\-3\\4\end{pmatrix},
+\begin{pmatrix}12\\-3\\-2\\-1\\11\end{pmatrix},
+\begin{pmatrix}42\\-7\\-52\\2\\16\end{pmatrix},
+\begin{pmatrix}87\\56\\-32\\1\\0\end{pmatrix},
+\begin{pmatrix}-48\\2\\35\\156\\8\end{pmatrix}\right\rbrace.
 $$
 
 If we had to bring the matrix with these six vectors as columns to echelon form, we would have our work cut out for us! Fortunately, we can just remark that there are six vectors with five entries each. Since $6>5$, {prf:ref}`Thm:LinInd:MoreRowthanColmeansLinDep` guarantees that this set is linearly dependent.

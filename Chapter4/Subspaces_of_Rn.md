@@ -193,7 +193,7 @@ However, if $\vect{v}\neq \vect{0}$ lies in $S_1$ and $c$ is negative, then $c\v
 An example of a subset of $\R^2$ that only has properties i. and iii. is the following:
 
 $$
-  S_2 = \left\{ \begin{bmatrix}x_1 \\ x_2  \end{bmatrix}\,:\,\,
+  S_2 = \left\{ \begin{pmatrix}x_1 \\ x_2  \end{pmatrix}\,:\,\,
   x_1x_2 = 0 \right\}.
 $$
 
@@ -202,8 +202,8 @@ $S_2$ contains the origin, and is closed under taking multiples. <BR>
 However for the two vectors $\vect{e}_1, \vect{e}_2$ in $S_2$ the sum is not:
 
 $$
- \vect{e}_1 + \vect{e}_2 = \begin{bmatrix} 1 \\ 0 \end{bmatrix} +
-  \begin{bmatrix} 0 \\ 1 \end{bmatrix} = \begin{bmatrix} 1 \\ 1 \end{bmatrix}.
+ \vect{e}_1 + \vect{e}_2 = \begin{pmatrix} 1 \\ 0 \end{pmatrix} +
+  \begin{pmatrix} 0 \\ 1 \end{pmatrix} = \begin{pmatrix} 1 \\ 1 \end{pmatrix}.
 $$
 
 ::::::
@@ -432,7 +432,7 @@ We now turn our attention to two important subspaces closely related to an $m\ti
 
 ::::::{prf:definition}
 
-The **column space** of an $m\times n$ matrix $A=  \begin{bmatrix} \vect{a}_1 &  \vect{a}_2    & \ldots &    \vect{a}_n \end{bmatrix}$ is the span of the columns of $A$:
+The **column space** of an $m\times n$ matrix $A=  \begin{pmatrix} \vect{a}_1 &  \vect{a}_2    & \ldots &    \vect{a}_n \end{pmatrix}$ is the span of the columns of $A$:
 
 $$
 \Col{A} = \Span{\vect{a}_1,\vect{a}_2,\ldots,\vect{a}_n}.

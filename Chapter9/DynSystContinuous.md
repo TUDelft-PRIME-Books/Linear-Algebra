@@ -56,28 +56,28 @@ $$
 can be conveniently rewritten as $\vect{x}'=A\vect{x}$ where 
 
 $$ \vect{x}=
-\begin{bmatrix}
+\begin{pmatrix}
 x_{1}\\
 x_{2}\\
 \vdots\\
 x_{n}
-\end{bmatrix},
+\end{pmatrix},
 \quad
 \vect{x}'=
-\begin{bmatrix}
+\begin{pmatrix}
 x_{1}'\\
 x_{2}'\\
 \vdots\\
 x_{n}'
-\end{bmatrix}
+\end{pmatrix}
 \quad\text{and}\quad
 A=
-\begin{bmatrix}
+\begin{pmatrix}
 a_{11}&a_{12}&\cdots&a_{1n}\\
 a_{21}&a_{22}&\cdots&a_{2n}\\
 \vdots&\vdots&\ddots&\vdots\\
 a_{n1}&a_{n2}&\cdots&a_{nn}
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 :::{prf:definition}
@@ -160,12 +160,12 @@ and this is a new dynamical system with a diagonal matrix! Hence, we find the so
 $$
 
 (P^{-1}\vect{x})_{1}=e^{\lambda_{1}t},\, (P^{-1}\vect{x})_{2}=e^{a_{\lambda_{2}}t},\,\ldots,\, (P^{-1}\vect{x})_{n}=e^{\lambda_{n}t}\quad\text{that is,}\quad P^{-1}\vect{x}=
-\begin{bmatrix}
+\begin{pmatrix}
     e^{\lambda_{1}t}\\
     e^{\lambda_{2}t}\\
     \vdots\\
     e^{\lambda_{n}t}
-\end{bmatrix}.
+\end{pmatrix}.
 
 $$
 
@@ -206,24 +206,24 @@ Let us now consider an example.
 Consider the following system of differential equations:
 
 $$
-\vect{x}'=A\vect{x}\quad\text{where}\quad A= \begin{bmatrix}
+\vect{x}'=A\vect{x}\quad\text{where}\quad A= \begin{pmatrix}
 1&4\\
 1&1
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 A standard computation shows that $A$ has eigenvalues $\lambda_{1}=3,\lambda_{2}=-1$ with corresponding eigenvectors 
 
 $$
 
-\vect{v}_{1}=\begin{bmatrix}
+\vect{v}_{1}=\begin{pmatrix}
     2\\
     1
-\end{bmatrix}
-\quad\text{and}\quad \vect{v}_{2}=\begin{bmatrix}
+\end{pmatrix}
+\quad\text{and}\quad \vect{v}_{2}=\begin{pmatrix}
     -2\\
     1
-\end{bmatrix}.
+\end{pmatrix}.
 
 $$
 
@@ -231,13 +231,13 @@ Therefore the general solution to the system $\vect{x}'=A\vect{x}$ is:
 
 $$
 
-\vect{y}=c_{1}\begin{bmatrix}
+\vect{y}=c_{1}\begin{pmatrix}
     2\\
     1
-\end{bmatrix}e^{3t}+c_{2}\begin{bmatrix}
+\end{pmatrix}e^{3t}+c_{2}\begin{pmatrix}
     -2\\
     1
-\end{bmatrix}e^{-t}.
+\end{pmatrix}e^{-t}.
 
 $$
 
@@ -260,15 +260,15 @@ $$
 Define
 
 $$
-\vect{y}=\begin{bmatrix}
+\vect{y}=\begin{pmatrix}
 S(t)\\
 I(t)
-\end{bmatrix}
+\end{pmatrix}
 \quad\text{and}\quad
-A=\begin{bmatrix}
+A=\begin{pmatrix}
 -\beta&0\\
 \beta &-\alpha
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 Since $A$ is an upper diagonal matrix, we can conclude that its eigenvalues are $-\beta$ and $-\alpha$, which, for simplicity's sake, we will assume to be different. Therefore, a solution to the system of linear differential equations $\vect{y}'=A\vect{y}$ is given by 
@@ -404,17 +404,17 @@ $$
 and this is of the form we have discussed! It translates to the equation $\vect{x}'=A\vect{x}$ where
 
 $$
-A=\begin{bmatrix}
+A=\begin{pmatrix}
 0&0&a&b\\
 1&0&0&0\\
 0&1&0&0\\
 0&0&c&d
-\end{bmatrix}\quad\text{and}\quad\vect{x}=\begin{bmatrix}
+\end{pmatrix}\quad\text{and}\quad\vect{x}=\begin{pmatrix}
 y_{2}\\
 y_{1}\\
 x_{1}\\
 x_{2}
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 As an basic application, we can solve second-order linear differential equations:
@@ -440,15 +440,15 @@ $$
 or as $\vect{x}'=A\vect{x}$ where
 
 $$
-A=\begin{bmatrix}
+A=\begin{pmatrix}
 -\frac{b}{a}&-\frac{c}{a}\\
 1&0
-\end{bmatrix}
+\end{pmatrix}
 \quad\text{and}\quad
-\vect{x}=\begin{bmatrix}
+\vect{x}=\begin{pmatrix}
 y\\
 x
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 To find solutions, we need the eigenvalues of $A$. So:

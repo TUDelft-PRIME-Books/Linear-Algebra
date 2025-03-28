@@ -15,7 +15,7 @@ A subset $S$ of $\R^{n}$ is called **orthogonal** if any two distinct vectors $\
 
 Consider the plane
 
-$$\mathcal{P}=\left\{\begin{bmatrix}x\\y\\z\end{bmatrix}\mid x+y+z=0\right\}\text{ and the vectors }\vect{v}_{1}=\begin{bmatrix}1\\-1\\0\end{bmatrix},\quad \vect{v}_{2}=\begin{bmatrix}1\\1\\-2\end{bmatrix}.$$
+$$\mathcal{P}=\left\{\begin{pmatrix}x\\y\\z\end{pmatrix}\mid x+y+z=0\right\}\text{ and the vectors }\vect{v}_{1}=\begin{pmatrix}1\\-1\\0\end{pmatrix},\quad \vect{v}_{2}=\begin{pmatrix}1\\1\\-2\end{pmatrix}.$$
 
 Both $\vect{v}_{1}$ and $\vect{v}_{2}$ lie in $\mathcal{P}$. The set $\mathcal{B}=\left\{\vect{v}_{1},\vect{v}_{2}\right\}$ is a linearly independent set of two vectors in $\mathcal{P}$. Since $\dim(\mathcal{P})=2$, it must therefore be a basis. Furthermore, $\vect{v}_{1}\ip\vect{v}_{2}=1-1-0=0$ so $\vect{v}_{1}$ is orthogonal to $\vect{v}_{2}$. Hence $\mathcal{B}$ is an orthogonal basis for $\mathcal{P}$.
 
@@ -62,7 +62,7 @@ Consider the plane $\mathcal{P}$, the vectors $\vect{v}_{1},\vect{v}_{2}$ and th
 
 We can remedy this by considering the basis $\mathcal{B}_{2}=\left\{\vect{u}_{1},\vect{u}_{2}\right\}$ where
 
-$$\vect{u}_{1}=\frac{\vect{v}_{1}}{\norm{\vect{v}_{1}}}=\frac{1}{\sqrt{2}}\begin{bmatrix}1\\-1\\0\end{bmatrix}\quad\text{and}\quad \vect{u}_{2}=\frac{\vect{v}_{2}}{\norm{\vect{v}_{2}}}=\frac{1}{\sqrt{6}}\begin{bmatrix}1\\1\\-2\end{bmatrix}.$$
+$$\vect{u}_{1}=\frac{\vect{v}_{1}}{\norm{\vect{v}_{1}}}=\frac{1}{\sqrt{2}}\begin{pmatrix}1\\-1\\0\end{pmatrix}\quad\text{and}\quad \vect{u}_{2}=\frac{\vect{v}_{2}}{\norm{\vect{v}_{2}}}=\frac{1}{\sqrt{6}}\begin{pmatrix}1\\1\\-2\end{pmatrix}.$$
 
 This new basis $\mathcal{B}_{2}$ is an orthonormal basis. We have kept the directions of $\vect{v}_{1}$ and $\vect{v}_{2}$, but we have made sure that their norms are now $1$.
 
@@ -243,26 +243,26 @@ Let us revisit the plane $\mathcal{P}$ with orthogonal basis $\mathcal{B}=\left\
 
 $$
 \vect{v}_{1}=
-\begin{bmatrix}
+\begin{pmatrix}
     1\\
     -1\\
     0
-\end{bmatrix},\quad \vect{v}_{2}=
-\begin{bmatrix}
+\end{pmatrix},\quad \vect{v}_{2}=
+\begin{pmatrix}
     1\\
     1\\
     -2
-\end{bmatrix}.\text{ Take another vector, say }\vect{u}=
-\begin{bmatrix}
+\end{pmatrix}.\text{ Take another vector, say }\vect{u}=
+\begin{pmatrix}
     -1\\
     1\\
     2
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 We find $\vect{u}\ip\vect{v}_{1}=-2,\vect{u}\ip\vect{v}_{2}=-4,$ and $\vect{v}_{1}\ip\vect{v}_{1}=2,\vect{v}_{2}\ip\vect{v}_{2}=6$. Consequently,
 
-$$\vect{u}_{\mathcal{P}}=\frac{\vect{u}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\frac{\vect{u}\ip\vect{v}_{2}}{\vect{v}_{2}\ip\vect{v}_{2}}\vect{v}_{2}=-\frac{2}{2}\vect{v}_{1}-\frac{4}{6}\vect{v}_{2}=\begin{bmatrix}-\frac{5}{3}\\\frac{1}{3}\\\frac{4}{3}\end{bmatrix}$$
+$$\vect{u}_{\mathcal{P}}=\frac{\vect{u}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\frac{\vect{u}\ip\vect{v}_{2}}{\vect{v}_{2}\ip\vect{v}_{2}}\vect{v}_{2}=-\frac{2}{2}\vect{v}_{1}-\frac{4}{6}\vect{v}_{2}=\begin{pmatrix}-\frac{5}{3}\\\frac{1}{3}\\\frac{4}{3}\end{pmatrix}$$
 
 is the orthogonal projection of $\vect{u}$ on $\mathcal{P}$.
 
@@ -295,20 +295,20 @@ so the first column of the standard matrix will be :
 
 $$
 \frac{1}{2}
-\begin{bmatrix}
+\begin{pmatrix}
     1\\\
     -1\\
     0
-\end{bmatrix}+\frac{1}{6}\begin{bmatrix}
+\end{pmatrix}+\frac{1}{6}\begin{pmatrix}
     1\\
     1\\
     -2
-\end{bmatrix}=
-\begin{bmatrix}
+\end{pmatrix}=
+\begin{pmatrix}
     \frac{2}{3}\\
     -\frac{1}{3}\\
     -\frac{1}{3}
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 Similarly, we find
@@ -319,20 +319,20 @@ so the second column of the standard matrix will be :
 
 $$
 \frac{-1}{2}
-\begin{bmatrix}
+\begin{pmatrix}
     1\\\
     -1\\
     0
-\end{bmatrix}+\frac{1}{6}\begin{bmatrix}
+\end{pmatrix}+\frac{1}{6}\begin{pmatrix}
     1\\
     1\\
     -2
-\end{bmatrix}=
-\begin{bmatrix}
+\end{pmatrix}=
+\begin{pmatrix}
     -\frac{1}{3}\\
     \frac{2}{3}\\
     -\frac{1}{3}
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 Finally,
@@ -343,39 +343,39 @@ so the last column of the standard matrix will be:
 
 $$
 \frac{0}{2}
-\begin{bmatrix}
+\begin{pmatrix}
     1\\\
     -1\\
     0
-\end{bmatrix}+\frac{-2}{6}\begin{bmatrix}
+\end{pmatrix}+\frac{-2}{6}\begin{pmatrix}
     1\\
     1\\
     -2
-\end{bmatrix}=\begin{bmatrix}
+\end{pmatrix}=\begin{pmatrix}
     -\frac{1}{3}\\
     -\frac{1}{3}\\
     \frac{2}{3}
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 Let us verify that, for the vector $\vect{u}$ from {prf:ref}`Ex:OrthoBase:ExofOrthoProj` we do indeed get the right answer:
 
 $$
-T(\vect{u})=\frac{1}{3}\begin{bmatrix}
+T(\vect{u})=\frac{1}{3}\begin{pmatrix}
     2&-1&-1\\
     -1&2&-1\\
     -1&-1&2
-\end{bmatrix}
-\begin{bmatrix}
+\end{pmatrix}
+\begin{pmatrix}
     -1\\
     1\\
     2
-\end{bmatrix}=
-\frac{1}{3}\begin{bmatrix}
+\end{pmatrix}=
+\frac{1}{3}\begin{pmatrix}
     -5\\
     1\\
     4
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 :::
@@ -413,10 +413,10 @@ The identity matrix $I_{n}$ is an orthogonal matrix for any $n$.
 The matrix
 
 $$
-A=\begin{bmatrix}
+A=\begin{pmatrix}
 1&1\\
 1&-1
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 is _not_ orthogonal. Its columns are pairwise orthogonal, but neither columns has norm 1. Indeed, the norm of both columns is $\sqrt{2}$.
@@ -428,10 +428,10 @@ is _not_ orthogonal. Its columns are pairwise orthogonal, but neither columns ha
 If we consider the matrix from [ii.](#It:OrthoBase:ColsNotNorm) but we divide both columns by their norms, we obtain:
 
 $$
-B=\begin{bmatrix}
+B=\begin{pmatrix}
 \frac{1}{\sqrt{2}}&\frac{1}{\sqrt{2}}\\
 \frac{1}{\sqrt{2}}&-\frac{1}{\sqrt{2}}
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 This matrix really is orthogonal.
@@ -457,19 +457,19 @@ An $n\times n$-matrix $A$ is orthogonal if and only if $A^{T}A=I_{n}$.
 Let $\vect{v}_{1},\vect{v}_{2}...,\vect{v}_{n}$ be the columns of $A$, so $\vect{v}_{1}^{T},\vect{v}_{2}^{T},...,\vect{v}_{n}^{T}$ are the rows of $A^{T}$. Consequently,
 
 $$
-A^{T}A=\begin{bmatrix}
+A^{T}A=\begin{pmatrix}
     \vect{v}_{1}^{T}\\
     \vect{v}_{2}^{T}\\
     \vdots\\
     \vect{v}_{n}^{T}
-\end{bmatrix}\begin{bmatrix}
+\end{pmatrix}\begin{pmatrix}
     \vect{v}_{1}&\vect{v}_{2}&\cdots&\vect{v}_{n}
-\end{bmatrix}=\begin{bmatrix}
+\end{pmatrix}=\begin{pmatrix}
     \vect{v}_{1}^{T}\vect{v}_{1}&\vect{v}_{1}^{T}\vect{v}_{2}&\cdots&\vect{v}_{1}^{T}\vect{v}_{n}\\
     \vect{v}_{2}^{T}\vect{v}_{1}&\vect{v}_{2}^{T}\vect{v}_{2}&\cdots&\vect{v}_{2}^{T}\vect{v}_{n}\\
     \vdots&\vdots&\ddots&\vdots\\
     \vect{v}_{n}^{T}\vect{v}_{1}&\vect{v}_{n}^{T}\vect{v}_{2}&\cdots&\vect{v}_{n}^{T}\vect{v}_{n}
-\end{bmatrix}.
+\end{pmatrix}.
 $$
 
 The matrix on the right hand side is $I_{n}$ if and only if all diagonal entries are $1$ and all off-diagonal entries are $0$. This happens precisely when
