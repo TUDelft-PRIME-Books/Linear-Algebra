@@ -418,7 +418,7 @@ As usual, feel free to skip it.
 As usual we denote the columns of the $m \times n$ matrix $A$ by $\vect{a}_1, \ldots, \vect{a}_n$.
 
 From the section about orthogonal projections, we know that the orthogonal projection of $\vect{b}$
-onto the column space of $A$ exists and is unique. (cf. {prf:ref}`Thm:OrthoBase:OrthoDecomp`.) This projection will be a vector of the form
+onto the column space of $A$ exists and is unique (cf. {prf:ref}`Thm:OrthoBase:OrthoDecomp`). This projection will be a vector of the form
 
 $$
    c_1\vect{a}_1 + \ldots + c_n\vect{a}_n

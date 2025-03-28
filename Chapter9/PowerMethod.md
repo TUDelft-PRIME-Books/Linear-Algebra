@@ -778,7 +778,7 @@ We can use the earlier idea of a shift!
 
 If a (real) matrix $A$ has eigenvalues $\lambda_{1,2} = a \pm bi$  as eigenvalues of highest modulus, then there is a good chance that one of the numbers $\lambda_{1,2} + ci$, for some real number $c$, is the *single* dominant eigenvalue of the matrix  $B = A + (ci){I}$.  
 
-Let us illustrate the procedure for the matrix $A = \begin{bmatrix}3 & 0 & 0 \\ 1 & 1 & 8 \\ 0 & -2 & 1 \end{bmatrix}$ at hand.  <BR>
+Let us illustrate the procedure for the matrix $A = \begin{bmatrix}3 & 0 & 0 \\ 1 & 1 & 8 \\ 0 & -2 & 1 \end{bmatrix}$ from {prf:ref}`Ex:PowerMethod:ComplexEx1`.  In the example it was mentioned that $A$ has the eigenvalues $3$ and $1\pm 4i$. <BR>
 Let $B$ be the matrix
 
 $$
