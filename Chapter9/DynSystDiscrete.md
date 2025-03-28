@@ -939,3 +939,97 @@ which rounds correctly to the sixth Fibonacci number $f_6 = 8$.
 ::::
 
 
+## Grasple Exercises
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/9c604df1-5408-4549-9817-aeb39e1d7a2c?id=114813
+:label: grasple_exercise_9_1_1
+:dropdown:
+:description: To graphically recognize the behaviour of a discrete dynamical system.
+
+::::
+
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/69ac0871-5092-4835-bdf6-918e2d24db58?id=114814
+:label: grasple_exercise_9_1_2
+:dropdown:
+:description: To graphically recognize the behaviour of a discrete dynamical system.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/ec49249f-7a5d-4a16-adcc-fd2ee0b7be69?id=114815
+:label: grasple_exercise_9_1_3
+:dropdown:
+:description: To graphically recognize the behaviour of a discrete dynamical system.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/7d6e35d6-8056-41fc-9061-aa9c9bbce07b?id=114816
+:label: grasple_exercise_9_1_4
+:dropdown:
+:description: To graphically recognize the behaviour of a discrete dynamical system.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/e96bcedf-a8c5-4685-875a-1993626425ae?id=114835
+:label: grasple_exercise_9_1_5
+:dropdown:
+:description: To graphically recognize the behaviour of a discrete dynamical system.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/a7fc3788-bfe4-4f91-8f01-44376e653e83?id=114840
+:label: grasple_exercise_9_1_6
+:dropdown:
+:description: To graphically recognize the behaviour of a discrete dynamical system.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/196aaddf-a9aa-444c-a7c1-cc550d97098a?id=114907
+:label: grasple_exercise_9_1_7
+:dropdown:
+:description: To graphically recognize the behaviour of a discrete dynamical system.
+
+::::
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/54a26661-aa15-4e00-aec0-ba5baf13bdc4?id=114940
+:label: grasple_exercise_9_1_8
+:dropdown:
+:description: To graphically recognize the behaviour of a discrete dynamical system.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/17be3e7d-fd30-4145-a5ac-eb857a4624b1?id=115025
+:label: grasple_exercise_9_1_9
+:dropdown:
+:description: To match the matrix to a picture of a discrete dynamical system.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/
+:label: grasple_exercise_9_1_10
+:dropdown:
+:description: To match the matrix to a picture of a discrete dynamical system.
+
+::::

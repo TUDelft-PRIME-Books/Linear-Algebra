@@ -436,7 +436,7 @@ $$
 This leads to $n$ linear equations
 
 $$
-   \vect{a}_i^T (\vect{b} - c_1\vect{a}_1 + \ldots + c_n\vect{a}_n) = 0
+   \vect{a}_i^T (\vect{b} - c_1\vect{a}_1 - \ldots - c_n\vect{a}_n) = 0
 $$
 
 for the unknowns $c_1, \ldots, c_n$.
@@ -463,10 +463,10 @@ $$
      \vect{a}_n^T\vect{a}_1 &  \vect{a}_n^T\vect{a}_2 & \ldots & \vect{a}_n^T\vect{a}_n \\
   \end{array} \right]
   \left[  \begin{array}{c}   c_1 \\ c_2 \\ \ldots \\ c_n   \end{array} \right] =
-  \left[  \begin{array}{c}  \vect{a}_1^T\vect{b} \\ \vect{a}_2^T\vect{b} \\ \ldots \\ \vect{a}_n^T\vect{b}   \end{array} \right].
+  \left[  \begin{array}{c}  \vect{a}_1^T\vect{b} \\ \vect{a}_2^T\vect{b} \\ \ldots \\ \vect{a}_n^T\vect{b}   \end{array} \right],
 $$
 
-Which leads to the following very concise form.
+which leads to the following very concise form
 
 $$
    A^TA \vect{c} = A^T\vect{b}.
@@ -484,10 +484,10 @@ A^TA \vect{x} = A^T\vect{b}.
 
 If $\vect{c} =  \left[  \begin{array}{c}   c_1 \\ c_2 \\ \vdots \\ c_n   \end{array} \right]$ is the least squares solution of the linear system $A\vect{c} = \vect{b}$,
 then the orthogonal projection of
-$\vect{b}$ of Col$ A$ is given by
+$\vect{b}$ of Col $A$ is given by
 
 $$
-  \text{proj}_{\text{Col} A}(\vect{b}) = c_1\vect{a}_1 + \ldots + c_n\vect{a}_n = A \vect{c}.
+  \text{proj}_{\text{Col}A}(\vect{b}) = c_1\vect{a}_1 + \ldots + c_n\vect{a}_n = A \vect{c}.
 $$
 
 If the columns $\vect{a}_1, \ldots, \vect{a}_n$ of $A$ are linearly independent, the coefficients $c_i$ are the coordinates with respect to the basis $\{\vect{a}_1, \ldots, \vect{a}_n\}$, hence they are unique. Thus in that case the normal equations
