@@ -410,7 +410,7 @@ where the norm of the error vector was found to be $\sqrt{15}$.
 ::::
 
 In the proof properties of the orthogonal projection are combined in a clever way.
-As usual, feel free to skip it.
+
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:LeastSquares:NormalEquations`
 :class: tudproof, dropdown
@@ -487,7 +487,7 @@ then the orthogonal projection of
 $\vect{b}$ of Col $A$ is given by
 
 $$
-  \text{proj}_{\text{Col}A}(\vect{b}) = c_1\vect{a}_1 + \ldots + c_n\vect{a}_n = A \vect{c}.
+  \text{proj}_{\Col{A}}(\vect{b}) = c_1\vect{a}_1 + \ldots + c_n\vect{a}_n = A \vect{c}.
 $$
 
 If the columns $\vect{a}_1, \ldots, \vect{a}_n$ of $A$ are linearly independent, the coefficients $c_i$ are the coordinates with respect to the basis $\{\vect{a}_1, \ldots, \vect{a}_n\}$, hence they are unique. Thus in that case the normal equations
@@ -572,7 +572,7 @@ As stated, the least squares solution of a system $A\vect{x} = \vect{b}$ consist
 of the orthogonal projection
 
 $$
-   \text{proj}_{\text{Col}\,A}(\vect{b}) = c_1\vect{a}_1 + c_2\vect{a}_2 + \ldots + c_n\vect{a}_n = A \vect{c}, \quad \vect{c} = \begin{pmatrix} c_1 \\ \vdots \\ c_n\end{pmatrix},
+   \text{proj}_{\Col{A}}(\vect{b}) = c_1\vect{a}_1 + c_2\vect{a}_2 + \ldots + c_n\vect{a}_n = A \vect{c}, \quad \vect{c} = \begin{pmatrix} c_1 \\ \vdots \\ c_n\end{pmatrix},
 $$
 
 of $\vect{b}$ onto the column space of $A$.
@@ -588,7 +588,7 @@ So for a matrix $A$ with linearly independent columns the projection of a vector
 :::{math}
 :label: Eq:LeastSquares:ProjbColA
 
-\hat{\vect{b}} = \text{proj}_{\text{Col }A}(\vect{b}) = A(A^TA)^{-1}A^T \vect{b}.
+\hat{\vect{b}} = \text{proj}_{\Col{A}}(\vect{b}) = A(A^TA)^{-1}A^T \vect{b}.
 
 :::
 
@@ -689,7 +689,7 @@ $$
 Show that Formula {eq}`Eq:LeastSquares:ProjbColA` for a matrix $A$ with linearly independent columns and QR decomposition $A = QR$ (see {prf:ref}`Thm:GramSchmidt:QR-decomp`) simplifies to
 
 $$
-  \hat{\vect{b}} = \text{proj}_{\text{Col} A}(\vect{b}) =  QQ^T \vect{b}.
+  \hat{\vect{b}} = \text{proj}_{\Col{A}}(\vect{b}) =  QQ^T \vect{b}.
 $$
 
 Also explain this simpler formula by interpreting the $QR$ decomposition in a suitable way.
@@ -704,7 +704,7 @@ Suppose $A = QR$, where $Q^TQ = I$, and $R$ is an upper triangular matrix with a
 Substitution of $A=QR$ into {eq}`Eq:LeastSquares:ProjbColA`
 
 $$
- \hat{\vect{b}} = \text{proj}_{\text{Col }A}(\vect{b}) = A(A^TA)^{-1}A^T \vect{b}
+ \hat{\vect{b}} = \text{proj}_{\Col{A}}(\vect{b}) = A(A^TA)^{-1}A^T \vect{b}
 $$
 
 gives

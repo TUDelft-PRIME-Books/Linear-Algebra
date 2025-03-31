@@ -119,6 +119,7 @@ In fact, these  two  operations exactly match the first two rules of {prf:ref}`P
 
 ::::::
 
+The content of the next proposition is that (the absolute value of) the determinant of a matrix $A$ acts as a uniform *scaling factor* of the linear transformation that corresponds to $A$. We first consider the case of a two-by-two matrix.
 
 ::::::{prf:proposition}
 :label: Prop:DetExtras:DetAsScaleFactorR2
@@ -149,7 +150,7 @@ $$
   \text{area}(S) = 0 = 0\cdot \text{area}(R) =|\det{A}|\cdot \text{area}(R).
 $$
 
-Next suppose that $A$ is invertible. Then the unit grid is mapped onto a grid with as unit region the parallelogram with sides $\vect{a}_1 = A\vect{e}_1$ and $\vect{a}_2 = A\vect{e}_2$ . See {numref}`Figure %s <Fig:DetExtras:Grid>`.
+Next suppose that $A$ is invertible. Then the unit grid is mapped onto a grid with as unit region the parallelogram with sides $\vect{a}_1 = T(\vect{e}_1) = A\vect{e}_1$ and $\vect{a}_2 = = T(\vect{e}_2) = A\vect{e}_2$ . See {numref}`Figure %s <Fig:DetExtras:Grid>`.
 
 ::::{figure} Images/Fig-DetExtras-StandardGrid.svg
 :name: Fig:DetExtras:Grid
@@ -198,7 +199,7 @@ See {numref}`Figure %s <Fig:DetExtras:ImageOfSquare>`
 :name: Fig:DetExtras:ImageOfSquare
 :class: dark-light
 
-The image of a square with 'corner' $\vect{p}$ and side length $r$.
+The image of a square with 'corner' $\vect{p}$ and sides of length $r$.
 ::::
 
 For a general (reasonable) region $R$ we sketch the idea and omit the technical details.
@@ -305,7 +306,7 @@ Suppose $(\vect{v}_1,\,\vect{v}_2,\,\ldots\,,\,\vect{v}_n)$ is an ordered set of
 
 Then the following holds.
 
-If $\det{A} > 0$,  the set $\big(T(\vect{v}_1),\,T(\vect{v}_2),\,\ldots\,,\,T(\vect{v}_n)\big)$ has the same orientation as the set $(\vect{v}_1,\,\vect{v}_2,\,\ldots\,,\,\vect{v}_n)$.
+If $\det{A} > 0$,  the (ordered) set $\big(T(\vect{v}_1),\,T(\vect{v}_2),\,\ldots\,,\,T(\vect{v}_n)\big)$ has the same orientation as the set $(\vect{v}_1,\,\vect{v}_2,\,\ldots\,,\,\vect{v}_n)$.
 
 If $\det{A} < 0$ the set $\big(T(\vect{v}_1),\,T(\vect{v}_2),\,\ldots\,,\,T(\vect{v}_n)\big)$ has the opposite orientation as the set $(\vect{v}_1,\,\vect{v}_2,\,\ldots\,,\,\vect{v}_n)$.
 
@@ -883,7 +884,7 @@ $$
 \left|\begin{array}{cc}
 a & \vect{e}_1\\
 b & \vect{e}_2
-\end{array}\right|=  a\vect{e}_1 - b\vect{e}_2 = \left(\begin{array}{c}    -b \\ a          \end{array}\right|.
+\end{array}\right|=  a\vect{e}_1 - b\vect{e}_2 = \left(\begin{array}{c}    -b \\ a          \end{array}\right).
 $$
 
 This is indeed a vector orthogonal to $\vect{v}$ with the same 'one-dimensional volume', i.e., length, as the vector $\vect{v}$.
@@ -1033,7 +1034,7 @@ This implies that $\vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1}) $ must be the ze
 
 <BR>
 
-To prove the other implication, suppose the vectors $\{ \vect{a}_1, \,\ldots\, \, , \vect{a}_{n-1} \}$ are linearly independent. Then the $n \times (n-1)$ matrix $A = (\,\vect{a}_1 \,\,  \ldots \,\,  \vect{a}_{n-1} \,) $  has rank  $n-1$ . The matrix $A$ must have $n-1$ linearly independent rows. Say, if we delete the $k$th row we have an $(n-1) \times (n-1)$ sub-matrix with independent rows.
+To prove the other implication, suppose the vectors $\{ \vect{a}_1, \,\ldots\, \, , \vect{a}_{n-1} \}$ are linearly independent. Then the $n \times (n-1)$ matrix $A = (\,\vect{a}_1 \,\,  \ldots \,\,  \vect{a}_{n-1} \,) $  has rank  $n-1$. The matrix $A$ must have $n-1$ linearly independent rows. Say, if we delete the $k$th row we have an $(n-1) \times (n-1)$ sub-matrix with independent rows.
 Then the coefficient of $\vect{e}_k$ in the expansion of
 $ \vect{N} ( \vect{a}_1, \ldots, \vect{a}_{n-1})$,
 which by the defining Equation {eq}`Eq:DetExtras:DetCrossProd-ndim` is precisely (plus or minus) the determinant of this submatrix, is nonzero.

@@ -721,7 +721,7 @@ $$
 $$
 
 for $k = n, n+1, \ldots$. <BR>
-The _coefficients_ $a_i, i = 1,\ldots, n$ are real numbers.
+The _coefficients_ $a_i, i = 1,\ldots, n$,  are real numbers.
 
 Usually the equation comes with **initial values**
 
@@ -731,7 +731,7 @@ $$
 
 ::::
 
-Note that all $y(k)$ are numbers here. Furthermore, verify that the initial values are exactly enough to determine $y(n),y(n+1), \ldots$ by repeatedly applying the difference equation.
+Note that all $y(k)$ are numbers here. Furthermore, verify that the initial values are precisely enough to determine $y(n),y(n+1), \ldots$ by repeatedly applying the difference equation.
 
 ::::{prf:example}
 
@@ -881,7 +881,7 @@ $$
 
 respectively. So $A$ is diagonalizable, and we can use {prf:ref}`Prop:DynSystDiscrete:DiagCase` to find the general state vector $\vect{x}_k$.
 
-For this we have to find the coordinates $(c_1, c_2)$ of $\vect{s}$ with respect to the basis $(\vect{v}_1,\vect{v}_2)$. A short computation shows that
+For this we have to find the coordinates $(c_1, c_2)$ of $\vect{s}$ with respect to the basis $\{\vect{v}_1,\vect{v}_2\}$. A short computation shows that
 
 $$
   \left(\begin{array}{c} 0\\ 1  \end{array}\right) = c_1\left(\begin{array}{c} 1 \\ \frac12(1+\sqrt{5})  \end{array}\right) + c_2\left(\begin{array}{c} 1 \\ \frac12(1-\sqrt{5})  \end{array}\right) \iff
@@ -927,11 +927,9 @@ a_k = f_k + b_k,
 
 where as said, $f_k$ is an integer and moreover $-\frac12 < b_k < \frac12$. So if we round both sides of Equation {eq}`Eq:DynSystDiscrete:FiboInteger` to the nearest integer, the term $f_k + b_k$ rounds to the integer $f_k$. This means that
 
-<center>
-
-_$f_k$ is equal to $\dfrac{1}{\sqrt{5}} \left(\dfrac{1+\sqrt{5}}{2}\right)^k$ rounded to the nearest integer_.
-
-</center>
+$$
+  f_k \text{ is equal to } \dfrac{1}{\sqrt{5}} \left(\dfrac{1+\sqrt{5}}{2}\right)^k \text{ rounded to the nearest integer. }
+$$
 
 For example, for $k=6$ we find &nbsp; $\left[\dfrac{1}{\sqrt{5}}\left(\dfrac{1+\sqrt{5}}{2}\right)\right]^6 = 8.0249....$ , <BR>
 
