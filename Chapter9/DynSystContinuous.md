@@ -377,7 +377,7 @@ Note that, in the long run, we will end up arbitrarily close to $\vect{0}$ regar
 
 :::
 
-
+For a graphic interpretation of these solutions, we refer to {numref}`Subsection %s <Subsec:DynSystContinuous:Trajectories>`.
 
 ## Dealing with complex eigenvalues
 
@@ -429,7 +429,8 @@ $$
 
 If $A$ is $2\times 2$, we can summarise this as follows. 
 
-:::{prf:Proposition}
+:::{prf:proposition}
+:label: Prop:DynSystContinuous:ComplexEVs
 
 Let $A$ be a $2\times 2$-matrix with non-real eigenvalue $\lambda=a+bi$. Let $\vect{v}$ be an eigenvector associated to $\lambda.$ Then 
 
@@ -447,8 +448,12 @@ are linearly independent solutions to the linear system of differential equation
 :::
 
 
+For a graphic interpretation of these solutions, we refer to {numref}`Subsection %s <Subsec:DynSystContinuous:Trajectories>`.
 
+
+(Subsec:DynSystContinuous:Trajectories)=
 ## Trajectories
+
 
 In this section, we will see the geometric interpretation of the several cases we have dealt with. Note that the solution of a dynamical system $\vect{x}'=A\vect{x}$ contains as many constants as there are rows in $A$. Therefore, if $A$ is an $n\times n$-matrix and $\vect{x}_{0}$ is a vector in $\R^{n}$, there will be one solution of $\vect{x}'=A\vect{x}$ that satisfies $\vect{x}(0)=\vect{x}_{0}$.
 
@@ -466,7 +471,7 @@ for some $\vect{x}_{0}$ in $\R^{n}$. If $A$ happens to be a $2\times 2$-matrix, 
 
 :::
 
-It turns out that the eigenvalue and in particular their magnitudes determine what such a flow map will look like. The following definition describes all possible cases.
+It turns out that the eigenvalues and in particular their magnitudes determine what such a flow map will look like. The following definition describes all possible cases.
 
 :::{prf:definition}
 
@@ -476,13 +481,13 @@ If $A$ is a $2\times 2$-matrix with real eigenvalues $\lambda_{1}$ and $\lambda_
 
 <li>
 
-an **attractor** or a **sink** if $\lambda_{1},\lambda_{2}<0$
+an **attractor** or a **sink** if $\lambda_{1},\lambda_{2}<0$,
 
 </li>
 
 <li>
 
-a **repeller** or a **source** if $\lambda_{1},\lambda_{2}>0$
+a **repeller** or a **source** if $\lambda_{1},\lambda_{2}>0$,
 
 </li>
 
@@ -496,9 +501,36 @@ a **saddle point** if $\lambda_{1}\lambda_{2}<0$, i.e. if $\lambda_{1}$ and $\la
 
 The three different behaviours are illustrated in {numref}`Figure %s <Fig:DynSystContinuous:Trajectories>`.
 
-Suppose $A$ has complex eigenvalues $a\pm bi$. If $a=0$, the origin is called a **center**. Otheriwse, it is called a **spiral point**. We say it is a **stable** spiral point of $a<0$ or and **unstable** spiral point if $a>0$. An example of a spiral point can be seen in {numref}`Figure %s <Fig:DynSystContinuous:Trajectories>`.
+Suppose now that $A$ is a $2\times 2$-matrix with complex eigenvalues $a\pm bi$. Then the origin is called
+
+<ul>
+
+<li>
+
+a **center** if $a=0$,
+
+</li>
+
+<li>
+
+a **stable spiral point** if $a<0$,
+
+</li>
+
+<li>
+
+an **unstable spiral point** if $a>0$.
+
+</li>
+
+</ul>
+
+An example of a spiral point can be seen in {numref}`Figure %s <Fig:DynSystContinuous:Trajectories>`.
 
 :::
+
+
+To see where the names come from, consider the solutions given in {prf:ref}`Prop:DynSystContinuous:ComplexEVs`. If $a<0$ in this proposition, then $e^{at}$ will become arbitrarily small, so as $t$ increases, $\vect{y}(t)$ will approach $0$. In this case, the trajectory will spiral towards the origin. If $a>0$, then $e^{at}$ becomes arbitrarily large and the trajectory will spiral away from the origin. Finally, if $a=0$ -- that is, if we have a purely imaginary eigenvalue -- $\vect{y}(t)$ will move along an elliptic trajectory around the origin.
 
 
 ::::{figure} Images/Fig-DynSystContinuous-Trajectories.svg
@@ -507,9 +539,6 @@ Suppose $A$ has complex eigenvalues $a\pm bi$. If $a=0$, the origin is called a 
 
 The possible behaviours of the origin illustrated. On the top left, it's an attractor, on the top right a repeller, on the bottom left a saddle point, and on the bottom right a spiral point. For the spiral point, do you expect the real part of the eigenvalues to be positive or negative, given the figure? That is, do you expect the center to be a stable spiral point, an unstable spiral point, or a center?
 ::::
-
-
-If $a<0$ in this proposition, then $e^{at}$ will become arbitrarily small, so as $t$ increases, $\vect{y}(t)$ will approach $0$. In this case, the trajectory will spiral towards the origin. If $a>0$, then $e^{at}$ becomes arbitrarily large and the trajectory will spiral away from the origin. Finally, if $a=0$ -- that is, if we have a purely imaginary eigenvalue -- $\vect{y}(t)$ will move along an elliptic trajectory around the origin.
 
 
 ## Systems with higher derivatives
