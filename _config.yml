@@ -120,6 +120,7 @@ sphinx:
     - jupyterbook_patches
     - sphinx_prime_applets
     - sphinx_indexed_definitions
+    - sphinx_ref_graph
     
 latex:
   latex_engine: pdflatex
