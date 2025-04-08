@@ -4,7 +4,7 @@ root: index.md
 options:
   numbered: true
 parts:
-  - caption:
+  - caption: Front matter
     numbered: False
     chapters:
       - file: Introduction.md
@@ -71,7 +71,8 @@ parts:
     chapters:
       - file: 'Appendices/ComplexNumbers.md'
       - file: 'Appendices/InverseMatrixTheorem.md'
-  - caption: Colophon
+  - caption: Back matter
     numbered: False
     chapters:
+      - file: genindex
       - file: 'Colophon/Acknowledgements.md'

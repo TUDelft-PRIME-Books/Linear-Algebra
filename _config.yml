@@ -119,6 +119,7 @@ sphinx:
     - teachbooks_sphinx_tippy
     - jupyterbook_patches
     - sphinx_prime_applets
+    - sphinx_indexed_definitions
     
 latex:
   latex_engine: pdflatex
