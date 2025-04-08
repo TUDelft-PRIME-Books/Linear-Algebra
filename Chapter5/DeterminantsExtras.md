@@ -43,7 +43,7 @@ A certain generalization of the cross product to $n$ dimensions.
 
 We have seen in {numref}`Sec:DetGeometric` how determinants arise in the context of areas of parallelograms and volumes of parallelepipeds.
 
-In {numref}`Sec:DotProduct` we used the dot product to define length, distance and orthogonality in $\R^n$. Determinants permit to define the concepts of volume and orientation in $n$ dimensions.
+In {numref}`Sec:DotProduct` we used the dot product to define length, distance and orthogonality in $\R^n$. Determinants permit to define the concepts of orientation and volume (at least, a beginning)  in $n$ dimensions.
 
 
 

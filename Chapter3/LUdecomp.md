@@ -1724,7 +1724,7 @@ Similar computations  for a non-singular $n\times n$ matrix $A$ leads to the fol
 
 
 ::::::{prf:proposition}
-:label: Prop:LUdecomp:CountOperations
+:label: Prop:LUdecomp:CountOperationsLU
 
 Suppose $A$ is an invertible $n\times n$ matrix and $\vect{b}$ an arbitrary vector in $\R^n$.
 
@@ -1822,6 +1822,83 @@ The total number of arithmetic operations needed in order to solve a linear syst
 -->
 
 
+You may wonder how this compares to solving a linear system $A\vect{x} = \vect{b}$ by first finding the inverse and then computing $A^{-1}\vect{b}$  (assuming $A$ is ivertible!).
+The following proposition provides the answer.
+
+
+
+::::::{prf:proposition}
+:label: Prop:LUdecomp:CountOperationsInverse
+
+Suppose $A$ is an invertible $n\times n$ matrix and $\vect{b}$ an arbitrary vector in $\R^n$.
+
+:::::{latexlist}
+:enumerated: true
+:type: i
+
+\item The reduction of  the augmented matrix  $(A | I)$  to  $(I | B) = (I | A^{-1})$ requires 
+$2n^3 - 2n$ operations.
+
+\item When $A^{-1}$ is giving, the product  $A^{-1}\vect{b}$  asks for $2n^2 - n$ arithmetic operations.
+
+:::::
+
+::::::
+
+
+::::::{prf:remark}
+
+Note that  computing $A^{-1}\vect{b}$  and solving  $LU\vect{x} = \vect{b}$ involve exactly the same number of arithmetic operations.
+
+::::::
+
+The proof of {prf:ref}`Prop:LUdecomp:CountOperationsInverse`  is quite straightforward  (especially the second statement), and you are cordially invited to have a look.
+
+::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LUdecomp:CountOperationsInverse`
+:class: tudproof, dropdown
+
+We count the number of arithmetic operations for computing the inverse via $(A | I)$.
+If we ignore the necessity of row swaps (as we did when analyzing the $LU$-decomposition), we may work row by row from top to bottom.  In the $k$th step we use the pivot in row $k$ to reduce the $k$th column to $\mathbf{e}_k$.
+
+After $k-1$ steps the augmented matrix then has the form
+
+$$
+ \left[
+   \begin{array}{cccccccc|cccccccc}
+      1 &    0   & \cdots  & 0 &a^*_{1,k+1}  & \cdots & \cdots & a^*_{1,n} &
+            b^*_{11} & 0 & 0 &  &  \cdots & & \cdots & 0 \\ 
+      0 &    1   & \cdots  & 0 &a^*_{2,k+1}  & \cdots & \cdots & a^*_{2,n} &
+            b^*_{21} & b^*_{22} & 0 &   &\cdots &  & \cdots & 0 \\
+      0 &    0   & 1 &\cdots   &a^*_{3,k+1}  & \cdots & \cdots & a^*_{3,n} &
+            b^*_{31} & b^*_{32} & b^*_{33} &  0 & \cdots &  & \cdots & 0 \\[1ex]
+         &  &  \ddots &  & \vdots &  & & \vdots & & & & \ddots &   & &  &   \vdots \\[1ex]    
+      0 & \cdots  & 0 & a^*_{k,k} &a^*_{k,k+1}  & \cdots & \cdots & a^*_{k,n} &
+        b^*_{k,1} &  b^*_{k,2} &\cdots &  b^*_{k,k-1} & 1 &  & \cdots  & 0\\     
+      0 & \cdots  &  0 & a^*_{k+1,k}  &a^*_{k+1,k+1}  & \cdots  & \cdots  & a^*_{k+1,n} &
+        b^*_{k+1,1} &  b^*_{k+1,2} &\cdots &  b^*_{k+1,k-1} &  0 &\ddots  &\cdots & 0\\[1ex] 
+      \vdots & &  \vdots & \vdots & &\vdots & & \vdots & & \vdots &  & \vdots & \vdots  & \ddots & \vdots    \\[1ex]
+      0 & \cdots   & 0 & a^*_{n,k} &a^*_{n,k+1}   &\cdots & \cdots & a^*_{n,n} &
+        b^*_{n,1} &  b^*_{n,2} &\cdots &  b^*_{n,k-1}  &  0 & \cdots  & \cdots  &  1
+   \end{array}
+ \right].
+$$
+
+The crucial thing is that throughout the process on row $k$  there are exactly $n+1$ nonzero entries!
+
+
+For the next step we first scale row $k$, which asks for  $n$ divisions  (we just put $a^*_{kk}=1$).
+Next for each other row, on position $k$ we put $0$, and for the other entries we have $n$  multiplications and $n$ subtractions, so $2n$ operations. <BR>
+This gives $n + (n-1)\cdot(2n) = 2n^2 - n$. 
+Since we have to do this for all of the $n$ rows, the total number of arithmetic operations becomes $n\cdot(2n^2-n) = 2n^3 - 2n$. 
+
+
+The other statement is even simpler:  for each entry of the product  $A^{-1}\vect{b}$ we have to find $n$ products and $n-1$ additions.  This gives $2n-1$ operations per row, and as there are $n$ rows, the total number of operations equals
+
+$$
+  n\cdot(2n-1) = 2n^2 - n.
+$$
+
+::::::
 
 In many applications in engineering, it is required to solve many, say $N$, linear systems  
 $A\vect{x}=\vect{b}_i$, with the same coefficient matrix $A$,  where typically the vectors $\vect{b}_i$ are not known beforehand.
