@@ -756,3 +756,14 @@ The following exercises are more conceptual than computational.
 :description: To find the standard matrix of the projection onto plane in $\R^3$.
 
 ::::
+
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/f0771ac9-e92b-495a-abab-8ec606c27c1b?id=116609
+:label: grasple_exercise_7_2_20
+:dropdown:
+:description: Find the coordinate vector with respect to an orthogonal basis.
+
+::::

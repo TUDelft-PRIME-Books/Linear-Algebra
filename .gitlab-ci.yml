@@ -8,6 +8,8 @@ variables:
 jupyter-build:
   stage: build
   image: python:slim
+  before_script:
+    - apt-get update && apt-get install -y git  # Install Git if missing
   script:
     - sh install.sh
     - jupyter-book clean .

@@ -918,6 +918,7 @@ Given that the polar coordinates of a complex number are so convenient and that 
 Therefore we introduce the following identity:
 
 ::::{prf:definition}
+:label: Dfn:ComplexNumbers:EulersFormule
 
 Let $\theta\in\mathbb{R}$. Then
 
