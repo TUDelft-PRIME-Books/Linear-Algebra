@@ -263,7 +263,7 @@ $$
   \text{if}  \quad AB = I \quad \text{then also}\quad BA = I.
 $$
 
-::::::
+::::::    
 
 The first example can be generalized:
 
@@ -299,6 +299,7 @@ Verify that the matrix $B=A^{-1}$ proposed in {prf:ref}`Prop:MatrixInv:Inverse2x
 $$
   AB = BA = I.
 $$
+
 
 Also check that the first matrix in {prf:ref}`Ex:FirstInverse` illustrates the formula.
 
@@ -1534,7 +1535,7 @@ The remaining exercises have more theoretic flavour.
 :url: https://embed.grasple.com/exercises/29dc7c2f-6636-493e-9c97-da1847a336b7?id=68908
 :label: grasple_exercise_3_4_11
 :dropdown:
-:description: 'To show: if $AB$ is invertible, then so are $A$ and $B$.'
+:description: To show: if $AB$ is invertible, then so are $A$ and $B$.
 
 ::::::
 

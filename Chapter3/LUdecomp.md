@@ -5,6 +5,7 @@
 
 # The $LU$ decomposition
 
+
 As we have seen, one way to solve a linear system $A\vect{x}=\vect{b}$ is to row reduce it to echelon form and then use back substitution. See for instance {prf:ref}`Ex:LinSystems:I`.  
 In this section we will learn how to solve an $m\times n$ linear system $A\mathbf{x}=\mathbf{b}$ by decomposing (or factorising) a matrix into a product of two 'special' matrices $L$ and $U$. 
 This is called an $LU$-*decomposition* of the matrix $A$. 
