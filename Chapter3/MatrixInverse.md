@@ -1510,7 +1510,18 @@ The remaining exercises tend to be more theoretic.
 
 ::::::
 
-The remaining exercises have more theoretic flavour.
+
+::::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/4b844244-2e9d-480f-b65a-88d8a2fef781?id=70276
+:label: grasple_exercise_3_4_9new
+:dropdown:
+:description: To solve an equation  $AX = B$ &nbsp;  ($A$ and $B$  3x3 matrices).
+
+::::::
+
+
+The remaining exercises have a more theoretic flavour.
 
 ::::::{grasple}
 :iframeclass: dark-light
@@ -1526,7 +1537,7 @@ The remaining exercises have more theoretic flavour.
 :url: https://embed.grasple.com/exercises/f789ebd5-171b-4556-83a9-eefc5ef830ef?id=71092
 :label: grasple_exercise_3_4_10
 :dropdown:
-:description: 'To show: if $A$ is invertible, then so is $A^T$.'
+:description: To show if $A$ is invertible, then so is $A^T$.
 
 ::::::
 
@@ -1630,6 +1641,26 @@ In the last two exercises (non-)invertibility of non-square matrices is consider
 :dropdown:
 :description: To explore invertibility for a $2\times 3$ matrix.
 ::::::
+
+::::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/2d363522-682f-4ef1-bd9f-7e0d1de30136?id=116691
+:label: grasple_exercise_3_4_23new
+:dropdown:
+:description: Extricate X from an equation containing A,B,X  and an inverse.
+::::::
+
+
+::::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/864d2af1-e751-46b1-88de-f205d95e493c?id=116721
+:label: grasple_exercise_3_4_24new
+:dropdown:
+:description: Extricate X from an equation containing A,B,X  and a transpose.
+::::::
+
+
+
 
 ::::::{grasple}
 :iframeclass: dark-light
