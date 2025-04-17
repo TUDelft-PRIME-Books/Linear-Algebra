@@ -497,6 +497,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 
 ::::
 
+
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/6cbb0bd4-863c-4705-908b-bb01602abf05?id=87438
@@ -506,10 +507,98 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 
 ::::
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/e49b75a2-f695-48cd-96a7-7bdef2490b01?id=116548
+:label: grasple_exercise_2_3_10
+:dropdown:
+:description: Comparing solution sets of systems with the same coefficient matrix.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/e6c63419-1329-4e28-913d-60625b7adbcc?id=116553
+:label: grasple_exercise_2_3_11
+:dropdown:
+:description: Comparing solutions of linear systems with the same coefficient matrix
+
+::::
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/30d705ed-fe9f-497a-ab65-a071c18d92ee?id=116559
+:label: grasple_exercise_2_3_12
+:dropdown:
+:description: Existence of nonzero solutions for homogeneous system?
+
+::::
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/759d45dc-b510-4794-b28b-f7494c582cb6?id=116558
+:label: grasple_exercise_2_3_13
+:dropdown:
+:description:  Existence of nonzero solutions for homogeneous system?
+
+::::
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/bb5486be-f126-4be6-99a9-96dbbe95957c?id=116561
+:label: grasple_exercise_2_3_14
+:dropdown:
+:description: Unique solution for a square system? 
+
+::::
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/cfc37c3a-e809-4e3d-a35a-605f770f2ec8?id=116557
+:label: grasple_exercise_2_3_15
+:dropdown:
+:description: What if a linear system has the zero vector as solution?
+
+::::
+
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/afd10760-7bbe-4d33-a58e-c3568aae869c?id=116765
+:label: grasple_exercise_2_3_16
+:dropdown:
+:description: To find a (3x3) matrix such that the system with augmented matrix $(A | \vect{0})$ has a given vector as a solution.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/7bb8810d-9cb5-458a-a1ab-7a9655483523?id=116547
+:label: grasple_exercise_2_3_17
+:dropdown:
+:description: To find a (3x3) matrix such that the system with augmented matrix $(A | \vect{0})$ has two given vectors as solutions.
+
+::::
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/021bb82e-7af3-4c84-86b8-0dcd22bf555b?id=84556
-:label: grasple_exercise_2_3_10
+:label: grasple_exercise_2_3_18
 :dropdown:
 :description: Combining solutions of a linear system (1).
 
@@ -518,7 +607,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/5d723e95-a4e5-4594-970e-6332e4953e73?id=84559
-:label: grasple_exercise_2_3_11
+:label: grasple_exercise_2_3_19
 :dropdown:
 :description: Combining solutions of a linear system (2).
 
@@ -527,7 +616,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/297528c4-7ea0-426b-aaa0-85dbcbfa97af?id=83227
-:label: grasple_exercise_2_3_12
+:label: grasple_exercise_2_3_20
 :dropdown:
 :description: Combining solutions of a linear system (3).
 
