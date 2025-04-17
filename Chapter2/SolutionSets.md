@@ -514,7 +514,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/e49b75a2-f695-48cd-96a7-7bdef2490b01?id=116548
 :label: grasple_exercise_2_3_10
 :dropdown:
-:description: Comparing solution sets of systems with the same coefficient matrix.
+:description: Comparing solution sets of linear systems with the same coefficient matrix.
 
 ::::
 
@@ -523,7 +523,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/e6c63419-1329-4e28-913d-60625b7adbcc?id=116553
 :label: grasple_exercise_2_3_11
 :dropdown:
-:description: Comparing solutions of linear systems with the same coefficient matrix
+:description: Comparing solution sets of linear systems with the same coefficient matrix.
 
 ::::
 
@@ -533,7 +533,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/30d705ed-fe9f-497a-ab65-a071c18d92ee?id=116559
 :label: grasple_exercise_2_3_12
 :dropdown:
-:description: Existence of nonzero solutions for homogeneous system?
+:description: Existence of nonzero solutions for a homogeneous system?
 
 ::::
 
@@ -543,7 +543,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/759d45dc-b510-4794-b28b-f7494c582cb6?id=116558
 :label: grasple_exercise_2_3_13
 :dropdown:
-:description:  Existence of nonzero solutions for homogeneous system?
+:description:  Existence of nonzero solutions for a homogeneous system?
 
 ::::
 
@@ -563,7 +563,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/cfc37c3a-e809-4e3d-a35a-605f770f2ec8?id=116557
 :label: grasple_exercise_2_3_15
 :dropdown:
-:description: What if a linear system has the zero vector as solution?
+:description: What if a linear system has the zero vector as a solution?
 
 ::::
 

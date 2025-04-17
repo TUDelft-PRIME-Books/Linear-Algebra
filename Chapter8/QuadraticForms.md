@@ -312,7 +312,7 @@ $$
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:QuadForms:Substitution`
+::::{admonition} Proof of &nbsp; {prf:ref}`Prop:QuadForms:Substitution`
 :class: tudproof
 
 If we put $\vect{x} = P\vect{y}$ we get
@@ -416,7 +416,7 @@ $$
 where $\lambda_1, \ldots, \lambda_n$ are the _eigenvalues_ of the matrix $A$.
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:QuadForms:Diagonalize`
+::::{admonition} Proof of &nbsp; {prf:ref}`Prop:QuadForms:Diagonalize`
 :class: tudproof
 
 If we make the substitution $\vect{x} = Q\vect{y}$ we find that
@@ -830,10 +830,22 @@ Intersections of a cone with several planes (not going through the apex).
  The resulting curve is then either a _hyperbola_, a _parabola_ or an _ellipse_, with as special ellipse the _circle_. If the plane does go through the apex of the cone the conic section is called **degenerate**.
 
 ::::{exercise}
+:label: Exc:QuadForms:DegenerateConics
 
 Describe the (three) possible degenerate forms of conic sections. That is, what are the three different forms that result when a cone is intersected with a plane that goes through the apex?
 
 ::::
+
+::::{admonition} Solution to&nbsp;{numref}`Exc:QuadForms:DegenerateConics`
+:class: solution, dropdown
+
+There are three essentially different situations.  <BR>
+A plane through the apex may have the apex as unique common point with the cone. Then the conic (inter)section is just this **one point**. <BR>
+If (as in {numref}`Figure %s <Fig:QuadForms:ConeWithPlanes>`  ) the plane is close to vertical, it will intersect the cone in **two lines** through the apex. <BR>
+The transition between these situations is when the plane is tangent to the cone. This yields the last possible conic section, **a line**.
+
+::::
+
 
 In the plane all _non-degenerate_ conic sections may be described by a quadratic equation
 
@@ -908,6 +920,73 @@ What happens if in Equation {eq}`Eq:ConicSec:CentralConic` the coefficient $f$ i
 
 ::::
 
+
+::::{admonition} Solution to&nbsp;{numref}`Exc:QuadForms:DegenerateStandardForm`
+:class: solution, dropdown
+
+
+We have to look at the solutions $(x_1, x_2)$ of the equation $ax_1^2 + bx_1x_2 + cx_2^2 = 0$, where not all three coefficients $a,b,c$ are zero.<BR>
+For convenience's sake we can assume that $a \geq 0$ and rewrite the equation as 
+
+$$
+ ax_1^2 + 2bx_1x_2 + cx_2^2 = 0,
+$$
+
+or, equivalently, as
+
+$$
+ \vect{x} ^TA\vect{x} =  \begin{pmatrix} x_1 & x_2   \end{pmatrix}\begin{pmatrix} a & b \\ b & c   \end{pmatrix}
+ \begin{pmatrix} x_1 \\ x_2   \end{pmatrix}.
+$$ 
+
+Completing squares gives the equivalent equation
+
+
+:::{math}
+:label: Eq:QuadForms:DegenerateForm
+
+   \left(ax_1 + \frac{b}{a}x_2\right)^2 + \left(c - \frac{b^2}{a^2}\right)x_2^2 = 0.
+
+:::
+
+We see that all depends on the sign of $\left(c - \dfrac{b^2}{a^2}\right)$  &nbsp; (i.e., to the 'definiteness' of the matrix $A$).
+
+If  $D = \left(c - \dfrac{b^2}{a^2}\right) > 0$,  <BR>
+the only solution $(x_1,x_2)$ of equation 
+{eq}`Eq:QuadForms:DegenerateForm`  is the **single point**  $(x_1,x_2) = (0,0)$.
+
+If $D = 0$,  <BR>
+the solutions are given by points on the **line** with equation $ax_1 + \dfrac{b}{a}x_2 = 0$.
+
+Lastly, if  $D < 0$, say  $D = -d^2$, then {eq}`Eq:QuadForms:DegenerateForm` simplifies to
+
+$$
+
+  \left(ax_1 + \frac{b}{a}x_2\right)^2 - d^2x_2^2 = 0.
+$$
+
+The term on the left can be factorised:
+
+$$
+
+  \left(ax_1 + \frac{b}{a}x_2 + dx_2\right)\left(ax_1 + \frac{b}{a}x_2 - dx_2\right) = 0
+$$
+
+The solutions then lie on one of the **two lines**  with the equations
+
+$$
+
+  \mathcal{L}_1: ax_1 + \left(\frac{b}{a} +d\right)x_2 = 0, \quad
+   \mathcal{L}_2: ax_1 + \left(\frac{b}{a} -    d\right)x_2 = 0.
+$$
+
+
+Note that these three possiblities exactly match the degenerate forms in 
+{numref}`Exc:QuadForms:DegenerateConics`.  
+
+::::
+
+
 ::::{prf:example}
 :label: Ex:QuadForms:StandardForm
 
@@ -956,12 +1035,13 @@ $$
 If in {eq}`Eq:ConicSec:CentralConic` the parameter $b$ is not equal to zero, the principal axes can be found by diagonalization of the quadratic form
 
 $$
-  ax_1^2 + bx_1x_2 + cx_2^2 =
-  \begin{pmatrix} x_1 & x_2 \end{pmatrix}\begin{pmatrix} a & \tfrac12b \\ \tfrac12b & c\end{pmatrix}\begin{pmatrix} x_1 \\ x_2 \end{pmatrix}.
+
+  ax_1^2 + 2bx_1x_2 + cx_2^2 =
+  \begin{pmatrix} x_1 & x_2 \end{pmatrix}\begin{pmatrix} a & b \\ b & c\end{pmatrix}\begin{pmatrix} x_1 \\ x_2 \end{pmatrix}.
 $$
 
 The next proposition explains how. <BR  >
-For notational convenience we denote the coefficient in the cross term as $2b$.
+For notational convenience we have denoted the coefficient of the cross term as $2b$.
 
 ::::{prf:proposition}
 :label: Prop:QuadForms:PrincipleAxesR2
