@@ -925,8 +925,13 @@ What happens if in Equation {eq}`Eq:ConicSec:CentralConic` the coefficient $f$ i
 :class: solution, dropdown
 
 
-We have to look at the solutions $(x_1, x_2)$ of the equation $ax_1^2 + bx_1x_2 + cx_2^2 = 0$, where not all three coefficients $a,b,c$ are zero.<BR>
-For convenience's sake we can assume that $a \geq 0$ and rewrite the equation as 
+We have to look at the solutions $(x_1, x_2)$ of the equation $ax_1^2 + bx_1x_2 + cx_2^2 = 0$, where not all three coefficients $a,b,c$ are zero.
+
+
+For convenience's sake we can assume that $a \geq 0$.  First suppose that $a >0$. 
+(We leave the case where $a = 0$ to the reader.)  
+
+Then we can rewrite the equation as 
 
 $$
  ax_1^2 + 2bx_1x_2 + cx_2^2 = 0,
@@ -983,6 +988,8 @@ $$
 
 Note that these three possiblities exactly match the degenerate forms in 
 {numref}`Exc:QuadForms:DegenerateConics`.  
+
+
 
 ::::
 

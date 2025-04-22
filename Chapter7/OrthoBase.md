@@ -386,7 +386,7 @@ Square matrices for which the columns are orthonormal turn out to be of particul
 
 :::{prf:definition}
 
-We call a square matrix **orthogonal** if its columns form an ortho*normal* set.
+We call a square matrix an **orthogonal matrix** if its columns form an ortho*normal* set.
 
 :::
 

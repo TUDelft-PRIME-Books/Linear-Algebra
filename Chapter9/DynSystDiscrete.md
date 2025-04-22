@@ -697,17 +697,17 @@ $$
 
 ::::
 
-%::::{exercise}   TO GRASPLE ? ? ? ?
-%:label: Exc:DynSystDiscrete:Modulus=1
-%
-%The matrix $A = \left(\begin{array}{cc} 1.2 & 1 \\ -1 & 0 \end{array}\right)$
-%has the eigenvalues $0.6 \pm 0.8i$. <BR>
-%Show that all paths that start from an initial point that is not the origin will stay away from the origin but %will stay within a fixed distance from the origin.
-%
-%In fact, one can show that the trajectories lie on _ellipses_. Can you give equations for these ellipses?
-%
-%Are the paths periodic? That is, will $\vect{x}_k$ return to the starting value $\vect{s}$ for a certain $k$? %From there the process will then start anew.
-%::::
+::::{exercise}  
+:label: Exc:DynSystDiscrete:Modulus=1
+
+The matrix $A = \left(\begin{array}{cc} 1.2 & 1 \\ -1 & 0 \end{array}\right)$
+has the eigenvalues $0.6 \pm 0.8i$. <BR>
+(Skip this exercise if you don't know about complex numbers.) <BR>
+Show that all paths that start from an initial point that is not the origin will stay away from the origin but will stay within a fixed distance from the origin.
+
+Are the paths periodic? That is, will $\vect{x}_k$ return to the starting value $\vect{s}$ for a certain $k$?  If this happens, from here the process  starts anew.
+
+::::
 
 ## Application: linear difference equations
 
