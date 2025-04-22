@@ -544,7 +544,7 @@ There are multiple ways to describe a line in $\mathbb{R}^3$, but for us the par
 
 :::{prf:definition}
 
-Each non-zero vector $\mathbf{u}$ that is parallel to a line $\mathcal{L}$ will be called a _directional vector_ of that line.
+Each non-zero vector $\mathbf{u}$ that is parallel to a line $\mathcal{L}$ will be called a **directional vector** of that line.
 :::
 
 Let $\mathcal{L}$ be a line in $\mathbb{R}^3$, $\mathbf{v_0}$ a vector that connects the origin to a point on the line and $\mathbf{u}$ a directional vector of $\mathcal{L}$. In {numref}`Figure %s <Fig:LinesAndPlanes:ParametricLineSpace>` we can see that each vector $\mathbf{v}$ that connects the origin to a point on the line $\mathcal{L}$ can be written as the sum of the vector $\mathbf{v_0}$ and a multiple of the vector $\mathbf{u}$. This means that $\mathbf{v}=\mathbf{v_0}+r\mathbf{u}$ for some real number $r$.
@@ -567,7 +567,7 @@ $$
 \begin{pmatrix} x \\ y \\ z \end{pmatrix}=\begin{pmatrix} x_0 \\ y_0 \\ z_0 \end{pmatrix}+r\begin{pmatrix} a \\ b \\ c \end{pmatrix} \qquad \textrm{$r$ in $\mathbb{R}$}
 $$
 
-will be called a _parametric vector equation_ of $\mathcal{L}$.
+will be called a **parametric vector equation** of $\mathcal{L}$.
 :::
 
 :::{prf:example}

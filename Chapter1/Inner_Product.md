@@ -181,7 +181,7 @@ Using the dot product the concepts length and perpendicular easily carry over to
 ::::{prf:definition}
 :label: Dfn:InnerProduct:DotProduct
 
-The **dot product** (or _inner product_) of two vectors
+The **dot product** (or **inner product**) of two vectors
 $\mathbf{v}=\begin{pmatrix}a_{1}\\a_{2}\\ \vdots\\a_{n}\end{pmatrix}$ and
 $\mathbf{w}=\begin{pmatrix}b_{1}\\b_{2}\\ \vdots\\b_{n}\end{pmatrix}$ in $\mathbb{R}^n$ is defined as
 
@@ -266,8 +266,7 @@ $$
 \end{align*}
 $$
 
-ii. For two vectors $\vect{v}_1 = \begin{pmatrix}a_{1} \\ a_{2}\\ \vdots\\ a_{n}\end{pmatrix}$, $\vect{v}_2 = \begin{pmatrix}b_{1} \\ b_{2}\\ \vdots\\ b_{n}\end{pmatrix}$  
-&nbsp;and constants $c$ we see that
+ii. For two vectors $\vect{v}_1 = \begin{pmatrix}a_{1} \\ a_{2}\\ \vdots\\ a_{n}\end{pmatrix}$, $\vect{v}_2 = \begin{pmatrix}b_{1} \\ b_{2}\\ \vdots\\ b_{n}\end{pmatrix}$ &nbsp; and any constant $c$ we see that
 
 $$
 \begin{eqnarray*}
@@ -545,7 +544,7 @@ See {numref}`Figure %s <Fig:InnerProduct:ProjectionVectorLine>`.
 :::{prf:definition}
 :label: Dfn:InnerProduct:OrthoProjectionOntoVector
 
-The _orthogonal projection of a vector $\mathbf{w}$ onto the nonzero vector $\mathbf{v}$_ is the vector $\mathbf{\hat{w}} = c\mathbf{v} $ for which
+The **orthogonal projection** _of a _vector_ $\mathbf{w}$ _onto_ a nonzero vector $\mathbf{v}$_ is the vector $\mathbf{\hat{w}} = c\mathbf{v} $ for which
 
 $$
 
@@ -909,7 +908,7 @@ Rule iii. is again called the _Triangle Inequality_.
 Check the three properties of the distance function as stated in
 {prf:ref}`Prop:InnerProduct:PropertiesDistance`. &nbsp;
 For Rule iii., only show how it follows from the corresponding Rule iii. in
-proposition  {prf:ref}`Prop:InnerProduct:PropertiesNorm`. 
+ {prf:ref}`Prop:InnerProduct:PropertiesNorm`. 
 ::::
 
 With the tools so far we can define a notion that comes in handy later.

@@ -158,8 +158,8 @@ $$
     B = A^{-1}.
 $$
 
-A matrix that is invertible is also called a **regular** matrix, and
-a non-invertible matrix is also called a **singular** matrix.
+A matrix that is invertible is also called a **regular matrix**, and
+a non-invertible matrix is also called a **singular matrix**.
 
 ::::::
 

@@ -608,7 +608,7 @@ Let $A$ be a symmetric matrix and $q_A(\vect{x}) = \vect{x}^TA\vect{x}$ the corr
 
 <li>
 
-$q_A$ is called **positive definite** if $q_A(\vect{x}) > 0$ for all $\vect{x} \neq \vect{0}$.
+$q_A$ is called a **positive definite quadratic form** if $q_A(\vect{x}) > 0$ for all $\vect{x} \neq \vect{0}$.
 
 </li>
 
@@ -632,7 +632,7 @@ $q_A$ is called **negative semi-definite** if $q_A(\vect{x}) \leq 0$ for all $\v
 
 </ul>
 
-If none of the above applies, then $q_A$ is called an **indefinite** quadratic form.
+If none of the above applies, then $q_A$ is called an **indefinite quadratic form**.
 
 The same classification is used for symmetric matrices. E.g., $A$ is a **positive definite matrix** if the corresponding quadratic form is positive definite.
 

@@ -17,7 +17,7 @@ $$
 \mathbf{u}=\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} \textrm{ and } \mathbf{v}=\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix}.
 $$
 
-The _cross product_ $\mathbf{u} \cp \mathbf{v}$ is defined as
+The **cross product** $\mathbf{u} \cp \mathbf{v}$ is defined as
 
 $$
 \mathbf{u} \cp \mathbf{v} = \begin{pmatrix} a_2b_3-a_3b_2 \\ a_3b_1-a_1b_3 \\ a_1b_2-a_2b_1 \end{pmatrix}.

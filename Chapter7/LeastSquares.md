@@ -265,16 +265,17 @@ Lastly, these coefficients are unique if and only if the columns of $A$ are line
 
 ::::
 
-::::{margin}
-
-:::{admonition} {prf:ref}`Thm:OrthoBase:OrthoDecomp`.
-:class: theorem
-
-Let $V$ be a subspace of $\R^{n}$ and let $\vect{v}_{1},...,\vect{v}_{k}$ be an orthogonal basis for $V$. For any $\vect{w}$ in $\R^{n}$, the _orthogonal projection_ of $\vect{w}$ on $V$ is given by
-
-$$\proj_{V}(\vect{w})=\frac{\vect{w}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{w}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}_{k}.$$
-
-::::
+%::::{margin}
+%
+%:::{admonition} {prf:ref}`Thm:OrthoBase:OrthoDecomp`.
+%:class: theorem
+%
+%Let $V$ be a subspace of $\R^{n}$ and let $\vect{v}_{1},...,\vect{v}_{k}$ be an orthogonal basis for %$V$. For any $\vect{w}$ in $\R^{n}$, the _orthogonal projection_ of $\vect{w}$ on $V$ is given by
+%
+%$$\proj_{V}(\vect{w})=\frac{\vect{w}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots
+% +\frac{\vect{w}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}_{k}.$$
+%
+%::::
 
 ::::{prf:example}
 :label: Ex:LeastSquares:OrthogExample
@@ -298,7 +299,7 @@ onto $\Span{\vect{a}_1, \vect{a}_2} = \Span{\left( \begin{array}{c} 1 \\ 2 \\ 3 
 
 In this first example we have chosen $\vect{a}_1$ and $\vect{a}_2$ that are _orthogonal_.
 
-So by the projection formula for an orthogonal basis (see {prf:ref}`Thm:OrthoBase:OrthoDecomp`, see side note), the projection is given by
+So by the projection formula for an orthogonal basis (see {prf:ref}`Thm:OrthoBase:OrthoDecomp`), the projection is given by
 
 $$
    \dfrac{\vect{b}\ip\vect{a}_1}{\vect{a}_1\ip\vect{a}_1}\vect{a}_1 +
