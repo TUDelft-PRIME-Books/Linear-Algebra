@@ -68,7 +68,7 @@ In other contexts the word _spectrum_ of a transformation is used for the set of
 
 So, for a symmetric matrix an orthonormal basis of eigenvectors always exists. For the inertia tensor of a 3D body such a basis corresponds to the (perpendicular) principal axes.
 
-::::{admonition} Proof of the converse of {prf:ref}`Thm:SymmetricMat:OrthogDiag`
+::::{admonition} Proof of the converse in {prf:ref}`Thm:SymmetricMat:OrthogDiag`
 :class: tudproof
 
 Recall that an orthogonal matrix is a matrix $Q$ for which $Q^{-1} = Q^T$.
@@ -825,7 +825,7 @@ There are situations where it is important to know how large  $\norm{A\vect{x}}$
 ::::{prf:proposition}
 :label: Prop:SymmetricMat:Max||Ax||
 
-Suppose $A$ is a symmetric matrix.  Then the maximum value  $\norm{A\mathbf{x}}$  will attain on the set of unit vectors is equal to  $|\lambda|$, where $\lambda$ is the eigenvalue of the highest absolute value.
+Suppose $A$ is a symmetric matrix.  Then the maximum value  $\norm{A\mathbf{x}}$  will attain on the set of unit vectors is equal to  $|\lambda_{\text{max}}|$, where $\lambda_{\text{max}}$ is the eigenvalue of the highest absolute value.
 In formula form
 
 $$

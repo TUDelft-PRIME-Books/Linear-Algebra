@@ -661,12 +661,25 @@ The following exercises are about the QR decomposition
 
 ::::
 
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/2d9d5c92-fb8e-45d6-be34-9846588cf560?id=116629
+:label: grasple_exercise_7_3_14
+:dropdown:
+:description: Finding the orthogonal projection onto Col$(A)$ via a QR-decomposition.
+
+::::
+
+
+
 The last exercises are more conceptual than computational.
 
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/fb9adc06-f068-4c5b-96ac-575415620c82?id=87821
-:label: grasple_exercise_7_3_14
+:label: grasple_exercise_7_3_15
 :dropdown:
 :description: T/F question about properties of Gram Schmidt process.
 
@@ -675,7 +688,7 @@ The last exercises are more conceptual than computational.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/8a85a120-ef0c-41ec-9f60-ca492a35865a?id=87822
-:label: grasple_exercise_7_3_15
+:label: grasple_exercise_7_3_16
 :dropdown:
 :description: From orthogonal to orthonormal.
 
@@ -684,7 +697,7 @@ The last exercises are more conceptual than computational.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c02e84cd-aa51-4d2a-8585-0cd56fa08ec6?id=87824  
-:label: grasple_exercise_7_3_16
+:label: grasple_exercise_7_3_17
 :dropdown:
 :description: What about GS for a linearly dependent set?
 
@@ -693,7 +706,7 @@ The last exercises are more conceptual than computational.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/581f5f1d-cf12-4358-932f-70f65e4341b4?id=87829
-:label: grasple_exercise_7_3_17
+:label: grasple_exercise_7_3_18
 :dropdown:
 :description: GS for set of linearly dependent set of vectors.
 
@@ -702,7 +715,7 @@ The last exercises are more conceptual than computational.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/12bda5c2-8ec2-44b2-b5c6-ec2cc4bb71d0?id=87841
-:label: grasple_exercise_7_3_18
+:label: grasple_exercise_7_3_19
 :dropdown:
 :description: To build an orthogonal basis for the column space of a matrix.
 
@@ -711,7 +724,7 @@ The last exercises are more conceptual than computational.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/a8741f26-64c7-4245-839a-8c5131bea496?id=87742
-:label: grasple_exercise_7_3_19
+:label: grasple_exercise_7_3_20
 :dropdown:
 :description: Ponderings about the QR-decomposition (of a $4 \times 2$ matrix $A$).
 
@@ -720,7 +733,7 @@ The last exercises are more conceptual than computational.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/24a2c96f-0618-4a90-8229-ce04b1dd4640?id=87747
-:label: grasple_exercise_7_3_20
+:label: grasple_exercise_7_3_21
 :dropdown:
 :description: How many QR-decompositions are there for an $m \times n$ matrix?
 

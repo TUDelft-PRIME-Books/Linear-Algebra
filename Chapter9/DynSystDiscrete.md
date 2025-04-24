@@ -941,6 +941,15 @@ which rounds correctly to the sixth Fibonacci number $f_6 = 8$.
 
 ::::{grasple}
 :iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/d7d5c7d2-5b75-4b69-a8b4-c071fd2d7be8?id=116950
+:label: grasple_exercise_9_1_01
+:dropdown:
+:description: To 'solve' a dynamical system $\vect{x}_{k+1} = A\vect{x}_k$.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9c604df1-5408-4549-9817-aeb39e1d7a2c?id=114813
 :label: grasple_exercise_9_1_1
 :dropdown:
@@ -1029,5 +1038,15 @@ which rounds correctly to the sixth Fibonacci number $f_6 = 8$.
 :label: grasple_exercise_9_1_10
 :dropdown:
 :description: To match the matrix to a picture of a discrete dynamical system.
+
+::::
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/49e55a1c-9809-45eb-9a5f-0f7dbbbe75dd?id=116895
+:label: grasple_exercise_9_1_15
+:dropdown:
+:description: To solve the difference equation $y(k+1) = 2y(k)+y(k-1)$.
 
 ::::

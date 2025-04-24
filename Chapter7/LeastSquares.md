@@ -951,7 +951,7 @@ $$
 :url: https://embed.grasple.com/exercises/1d9a943a-b51f-48c9-99a9-691b80b8df60?id=91159
 :label: grasple_exercise_7_4_8
 :dropdown:
-:description: LS solution + LS error for a 4x4 system.
+:description: LS solution + LS error for a 4x2 system.
 
 ::::
 
@@ -1009,10 +1009,44 @@ $$
 
 ::::
 
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/
+:label: grasple_exercise_7_4_15
+:dropdown:
+:description: Finding the LS solution for a 3x2 system, using a QR-decomposition 
+
+::::
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/
+:label: grasple_exercise_7_4_16
+:dropdown:
+:description: Finding the LS solution for a 3x2 system, using a QR-decomposition 
+
+::::
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/
+:label: grasple_exercise_7_4_17
+:dropdown:
+:description: Finding the LS solution for a 3x2 system, using a QR-decomposition 
+
+::::
+
+
+
+
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/396fd7a0-10cf-4b49-bb9e-fbc4acc2a06a?id=91148
-:label: grasple_exercise_7_4_15
+:label: grasple_exercise_7_4_18
 :dropdown:
 :description: What is the quickest way to find the least squares solution?
 
@@ -1466,7 +1500,7 @@ Least squares fitting via logarithmic scale.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/6a2b9aeb-3c59-4b8f-8d7c-e51f651998fd?id=91883
-:label: grasple_exercise_7_4_16
+:label: grasple_exercise_7_4_19
 :dropdown:
 :description: On the precise definition of the least squares line.
 
@@ -1475,7 +1509,7 @@ Least squares fitting via logarithmic scale.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/254298e0-f091-4a9d-8e8a-31cc3cf11f16?id=91884
-:label: grasple_exercise_7_4_17
+:label: grasple_exercise_7_4_20
 :dropdown:
 :description: Design matrix and input vector for the regression line through a set of points.
 
@@ -1483,7 +1517,7 @@ Least squares fitting via logarithmic scale.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/dad8ca0a-ef17-4757-803c-26b8ae9804de?id=91886
-:label: grasple_exercise_7_4_18
+:label: grasple_exercise_7_4_21
 :dropdown:
 :description: Fitting a line through set of points and compute the residual vector.
 
@@ -1491,7 +1525,7 @@ Least squares fitting via logarithmic scale.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9ad7148d-ef39-46ef-8f14-20e97511655d?id=91889
-:label: grasple_exercise_7_4_19
+:label: grasple_exercise_7_4_22
 :dropdown:
 :description: Fitting a parabola to a set of points.
 
@@ -1499,7 +1533,7 @@ Least squares fitting via logarithmic scale.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/222ee704-85f5-470a-b48f-f88d9900a8d1?id=91890
-:label: grasple_exercise_7_4_20
+:label: grasple_exercise_7_4_23
 :dropdown:
 :description: Fitting a quadratic polynomial to a set of points.
 
@@ -1507,7 +1541,7 @@ Least squares fitting via logarithmic scale.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/ff6329bd-f5b3-41ce-828f-2086cf651181?id=91898
-:label: grasple_exercise_7_4_21
+:label: grasple_exercise_7_4_24
 :dropdown:
 :description: Design matrix to fit $y = ax + bx^3$ to a set of points.
 
@@ -1515,7 +1549,7 @@ Least squares fitting via logarithmic scale.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/f75014bf-0e90-43e7-acf4-216cb38ffd11?id=91903
-:label: grasple_exercise_7_4_22
+:label: grasple_exercise_7_4_25
 :dropdown:
 :description: Design matrix to fit $y = c_1 e^t + c_2 \cos(x) + c_3 \sin(x)$ to a set of points.
 
@@ -1526,7 +1560,7 @@ Least squares fitting via logarithmic scale.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/741fc8fb-476b-4ab7-8a3c-fb353a00ede4?id=110657
-:label: grasple_exercise_7_4_23
+:label: grasple_exercise_7_4_26
 :dropdown:
 :description: Design matrix in a context example (Ohm's law).
 
