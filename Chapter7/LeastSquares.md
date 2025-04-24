@@ -1013,7 +1013,7 @@ $$
 
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/
+:url: https://embed.grasple.com/exercises/1760659c-9f9a-4108-9a2f-034128dc7f70?id=116973
 :label: grasple_exercise_7_4_15
 :dropdown:
 :description: Finding the LS solution for a 3x2 system, using a QR-decomposition 
@@ -1023,20 +1023,20 @@ $$
 
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/
+:url: https://embed.grasple.com/exercises/90846f0f-432b-4e1e-9b64-9a13032a1db9?id=116516
 :label: grasple_exercise_7_4_16
 :dropdown:
-:description: Finding the LS solution for a 3x2 system, using a QR-decomposition 
+:description: Finding the LS solution for a 4x2 system, using a QR-decomposition 
 
 ::::
 
 
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/
+:url: https://embed.grasple.com/exercises/41265f8f-234c-440d-b9d2-1eb462c36544?id=116662
 :label: grasple_exercise_7_4_17
 :dropdown:
-:description: Finding the LS solution for a 3x2 system, using a QR-decomposition 
+:description: Finding the LS solution for a 4x3 system, using a QR-decomposition 
 
 ::::
 
