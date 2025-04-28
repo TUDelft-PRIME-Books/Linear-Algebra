@@ -260,7 +260,7 @@ $$
   \det{B} = \det{A} = d,
 $$
 
-on the other hand, because of {prf:ref}`Prop:DetRowReduction:RowOps`, Rule 2, we have
+on the other hand, because of {prf:ref}`Prop:DetRowReduction:RowOps`, Rule iii., we have
 
 $$
  \det{B} = -\det{A} = -d.

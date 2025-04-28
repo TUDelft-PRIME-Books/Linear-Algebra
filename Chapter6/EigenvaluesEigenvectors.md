@@ -533,7 +533,7 @@ A - 5I = \begin{pmatrix} -4 & 2 & 2 \\ 2 & -4 & 2 \\ 2 & 2 & -4 \end{pmatrix} \s
 \begin{pmatrix} 1 & 0 & -1 \\ 0 & 1 & -1 \\ 0& 0&0 \end{pmatrix}.
 $$
 
-This is a matrix of rank 2, and $\begin{pmatrix} 1  \\1\\1 \end{pmatrix}$ can be taken as a basis of its nulspace, and thus of the eigenspace $E_5$.
+This is a matrix of rank 2, and $\begin{pmatrix} 1  \\1\\1 \end{pmatrix}$ can be taken as a basis of its null space, and thus of the eigenspace $E_5$.
 
 ::::::
 
