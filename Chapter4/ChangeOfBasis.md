@@ -55,7 +55,7 @@ $$
 
 In this section we will explain how such a change of basis works.
 
-## Coordinates with Respect to a Basis
+## Coordinates with respect to a basis
 
 We start with a proposition.
 
@@ -435,7 +435,7 @@ In each reference frame, an observer can use a local coordinate system (usually 
 
 ::::
 
-## The Matrix of a Linear Transformation with Respect to a Basis
+## The matrix of a linear transformation with respect to a basis
 
 In {numref}`Sec:LinTrafo` we have seen that every linear transformation $T:\R^n \to \R^m$ can be represented by its standard matrix
 
@@ -989,7 +989,7 @@ $\mc{C},\mc{C}'$ for $\R^m$.
 
 (Subsec:ChangeOfBasis:GeneralTransformationFormula)=
 
-## General Transformation Formula for Matrices of Linear Transformation
+## General transformation formula for matrices of linear transformation
 
 In the previous subsections we studied the relations of the coordinates with respect to the standard basis and one other alternative basis $\mc{B}$. In this section we go one step further and omit the restriction that one of the bases is the standard basis. We will see that the generalizations are pretty straightforward.
 
@@ -1207,7 +1207,7 @@ $$
 must be equal.
 ::::
 
-## Grasple Exercises
+## Grasple exercises
 
 ::::{grasple}
 :iframeclass: dark-light

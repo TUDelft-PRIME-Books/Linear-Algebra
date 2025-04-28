@@ -8,7 +8,7 @@ Subspaces are structures that appear in many different subfields of linear algeb
 For instance, they appear as solution sets of homogeneous systems of linear equations, and as ranges of linear transformations, to mention two situations that we have already come across.
 In this section we will define them and analyze their basic properties. In {numref}`Sec:BasisDim` we will consider the important attributes basis and dimension.
 
-## Definition of Subspace and Basic Properties
+## Definition of subspace and basic properties
 
 ::::::{prf:definition}
 :label: Dfn:Subspaces:Subspace
@@ -426,7 +426,7 @@ $$
 It may seem that with the above complete description of all possible subspaces in $\R^n$
 the story of subspaces can be closed. However, subspaces will appear in different contexts in various guises, each valuable in its own right. One of these we will focus on immediately.
 
-## Column Space and Null Space of a Matrix
+## Column space and null space of a amtrix
 
 We now turn our attention to two important subspaces closely related to an $m\times n$ matrix $A$.
 
@@ -641,7 +641,7 @@ $$
 </li>
 <li>
 
-The nulspace of an $m\times n$ matrix $M$ consists of all vectors $\vect{v}$ in $\R^n$ for which $M\vect{v} = \vect{0}$. &nbsp;
+The null space of an $m\times n$ matrix $M$ consists of all vectors $\vect{v}$ in $\R^n$ for which $M\vect{v} = \vect{0}$. &nbsp;
 We show that
 
 $$
@@ -689,12 +689,12 @@ $$
 $$
 
 If we can show that $A^2\vect{x}= \vect{0}$ for every vector $\vect{x}$ in $\R^n$, we're done. <br>
-So let $\vect{x}$ be any vector in $\R^n$. Then $\vect{y} =A\vect{x}$ lies in the column space of $A$, which is contained in the nulspace of $A$. <br>
+So let $\vect{x}$ be any vector in $\R^n$. Then $\vect{y} =A\vect{x}$ lies in the column space of $A$, which is contained in the null space of $A$. <br>
 So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = O$.
 
 ::::::
 
-## Grasple Exercises
+## Grasple exercises
 
 ::::::{grasple}
 :iframeclass: dark-light

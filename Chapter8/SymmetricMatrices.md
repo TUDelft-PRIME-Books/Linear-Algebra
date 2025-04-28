@@ -1270,6 +1270,7 @@ $$
 ::::
 
 
+
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c994fa76-f723-4700-922b-2f05ff0ef822?id=87760
@@ -1285,6 +1286,16 @@ $$
 :label: grasple_exercise_8_1_14
 :dropdown:
 :description: To give an example of a 3x3 symm matrix with given eigenvalues and eigenspace.
+
+::::
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/9b53d8cf-489e-4441-8fe8-408ae2d03290?id=73544
+:label: grasple_exercise_8_1_14B
+:dropdown:
+:description: To find a third eigenvector of a symmetric matrix.
 
 ::::
 
@@ -1339,5 +1350,5 @@ The following exercise have a more theoretical flavour.
 :url: https://embed.grasple.com/exercises/59c4c327-1603-4cc1-8b92-7415c691098b?id=87873
 :label: grasple_exercise_8_1_20
 :dropdown:
-:description:  True or false.  If $A$ is symmetric, then $A^2$ has nonnegative eigenvalues.  (and what if $A$ is not symmetric?).
+:description:  True or false.  If $A$ is symmetric, then $A^2$ has nonnegative eigenvalues.  (And what if $A$ is not symmetric?)
 ::::

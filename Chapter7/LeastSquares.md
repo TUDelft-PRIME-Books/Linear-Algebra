@@ -808,7 +808,7 @@ $$
    \vect{x} = \hat{\vect{x}}_0 + c\left(\begin{array}{c}  2 \\  1 \end{array}\right),
 $$
 
-the 'homogeneous' part $\vect{x}_H = c\left(\begin{array}{c}  2 \\  1 \end{array}\right)$ is the nulspace of $A^TA$. Because of the equivalence {eq}`Eq:LeastSquares:InvertibilityATA` this is equal to the nulspace of $A$.
+the 'homogeneous' part $\vect{x}_H = c\left(\begin{array}{c}  2 \\  1 \end{array}\right)$ is the null space of $A^TA$. Because of the equivalence {eq}`Eq:LeastSquares:InvertibilityATA` this is equal to the null space of $A$.
 Now from {numref}`Section %s <Sec:OrthoComp>`, {prf:ref}`Prop:OrthoComp:OrthoComplementNulA`, we know that
 
 $$
@@ -862,7 +862,7 @@ $$
    \hat{\vect{x}} = \hat{\vect{x}}_0 + \vect{x}_H = \left(\begin{array}{c}  3 \\ -1 \\ 0 \end{array}\right) + c\left(\begin{array}{c}  1 \\ -1 \\ -1 \end{array}\right), \,\, c \in \R.
 $$
 
-As in {prf:ref}`Ex:LeastSquares:NonUnique` the 'homogeneous' part $\vect{x}_H = c\left(\begin{array}{c}  1 \\ -1 \\ -1 \end{array}\right)$ is the nulspace of $A^TA$, which is equal to the nulspace of $A$.
+As in {prf:ref}`Ex:LeastSquares:NonUnique` the 'homogeneous' part $\vect{x}_H = c\left(\begin{array}{c}  1 \\ -1 \\ -1 \end{array}\right)$ is the null space of $A^TA$, which is equal to the null space of $A$.
 
 For instance, by taking $c=0$ and $c = -1$ we find the two least squares solutions
 

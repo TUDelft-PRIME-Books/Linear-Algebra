@@ -573,7 +573,7 @@ A matrix $A$ is complex diagonalizable if and only if for each eigenvalue the ge
 
 ::::::{grasple} 
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/bf1aef1c-7948-4b32-951e-d79940282bfb?id=91545
+:url: https://embed.grasple.com/exercises/366239a6-6407-4a2f-ae1b-97914a6aca23?id=116981
 :label: grasple_exercise_6_4_1
 :dropdown:
 :description:   Given a complex eigenvector of  a $2\times 2$ matrix, find the corresponding eigenvalue.  
@@ -583,7 +583,7 @@ A matrix $A$ is complex diagonalizable if and only if for each eigenvalue the ge
 
 ::::::{grasple} 
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/4e7c813d-ce37-42a2-be36-9dffb42d5f0b?id=91546
+:url: https://embed.grasple.com/exercises/ccf018fa-df2c-446b-a8a5-532d6293a6ff?id=116982
 :label: grasple_exercise_6_4_2
 :dropdown:
 :description: Given a complex eigenvector of  a $2\times 2$ matrix, find the corresponding eigenvalue.  
