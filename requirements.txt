@@ -12,6 +12,5 @@ sphinx-tudelft-theme
 jupyterbook_patches
 teachbooks-sphinx-tippy>=1.0.5
 sphinx-prime-applets
-
-git+https://github.com/TeachBooks/Sphinx-Indexed-Definitions.git
-git+https://github.com/TeachBooks/Sphinx-ref-graph.git
+sphinx-indexed-definitions
+sphinx-ref-graph

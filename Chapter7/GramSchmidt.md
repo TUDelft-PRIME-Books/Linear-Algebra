@@ -318,11 +318,11 @@ $$
 
 (Sec:Gram-Schmidt:QRdecomp)=
 
-## The QR decomposition
+## The $QR$ decomposition
 
 The Gram-Schmidt process leads to the following interesting decomposition of an $n \times m$ matrix $A$ with linearly independent columns.
 
-::::{prf:theorem} QR decomposition
+::::{prf:theorem} $QR$ decomposition
 :label: Thm:GramSchmidt:QR-decomp
 
 Suppose $A$ is an $n \times m$ matrix of rank $m$.
@@ -624,7 +624,7 @@ The first exercises are about applying the Gram-Schmidt (GS) algorithm
 ::::
 
 
-The following exercises are about the QR decomposition
+The following exercises are about the $QR$ decomposition
 
 ::::{grasple}
 :iframeclass: dark-light
