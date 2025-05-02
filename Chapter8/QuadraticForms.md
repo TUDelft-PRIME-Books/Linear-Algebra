@@ -9,7 +9,7 @@
 The simplest functions from $\R^n$ to $\R$ are linear functions
 
 $$
-   f(x_1,\ldots,x_n) = \sum_{i=1}^n a_ix_i +b \, =\, a_1x_2 + a_2x_2 + \ldots + a_nx_n + b.
+   f(x_1,\ldots,x_n) = \sum_{i=1}^n a_ix_i +b \, =\, a_1x_1 + a_2x_2 + \ldots + a_nx_n + b.
 $$
 
 In short $f(\mathbf{x}) = \mathbf{a}^T\mathbf{x} + b$, for some vector $\mathbf{a}$ in $\R^n$ and some number $b$ in $\R$.

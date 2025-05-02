@@ -419,9 +419,6 @@ $$
 
 ::::::
 
-::::::{admonition} (Sketch of the) Proof of&nbsp;{prf:ref}`Prop:EigenValues:CharPolyTrace`
-:class: tudproof, dropdown
-
 For $n=2$ we have already seen that the characteristic polynomial of the most general $2 \times 2$ matrix
 $A = \left(\begin{array}{cc} a_{11} & a_{12} \\ a_{21} & a_{22} \end{array}\right)
 = \left(\begin{array}{cc} a & b \\ c & d \end{array}\right) $ is given by
@@ -436,6 +433,14 @@ which is indeed equal to
 $$
 (-1)^2 \lambda^2 + (-1)^1 (a_{11}+a_{22})\lambda + \det{(A)}.
 $$
+
+For larger determinants, just open the proof.
+
+
+
+::::::{admonition} (Sketch of the) Proof of&nbsp;{prf:ref}`Prop:EigenValues:CharPolyTrace`
+:class: tudproof, dropdown
+
 
 The value of $c_0$ is the easiest to establish: just plug in $\lambda=0$ in 
 Equation {eq}`Eq:EigenValues:CharPoly`:
@@ -493,7 +498,7 @@ $$
 The sum of the diagonal entries of an $n\times n$ matrix $A$ is called the **trace** of $A$:
 
 $$
-\text{tr}(A) = a_{11} + a_{22} + \ldots + a_{nn} = \sum_{i=1}^{n}  a_{ii}.
+  {\text{tr}}(A) = a_{11} + a_{22} + \ldots + a_{nn} = \sum_{i=1}^{n}  a_{ii}.
 $$
 
 ::::::

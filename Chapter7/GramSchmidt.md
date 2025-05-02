@@ -538,7 +538,7 @@ Warning: the columns of $Q$ being orthonormal is equivalent to $Q^TQ = I$. Howev
 
 ::::
 
-## Grasple Exercises
+## Grasple exercises
 
 The first exercises are about applying the Gram-Schmidt (GS) algorithm
 

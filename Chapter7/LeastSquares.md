@@ -77,7 +77,7 @@ We will come back to this question in {numref}`Subsection %s <SubSec:LeastSquare
 
 (SubSec:LeastSquares:LS-solutions)=
 
-## Least Squares Solutions
+## Least squares solutions
 
 Let $A$ be an $m \times n$ matrix with columns $\vect{a}_1, \ldots, \vect{a}_n$.
 <BR>
@@ -324,7 +324,7 @@ In {numref}`Section %s <Sec:Gram-Schmidt>` we saw how we can construct an orthog
 
 (SubSec:LeastSquares:NormalEquations)=
 
-## Normal Equations
+## Normal equations
 
 There is a direct way to find the coefficients of the orthogonal projection onto Col$ A$ if the columns are not orthogonal.
 
@@ -711,14 +711,14 @@ $$
 gives
 
 $$
-  \hat{\vect{b}} =  QR \left[(QR)^T(QR)\right)^{-1}\vect{b}
-  = QR\left[R^TQ^TQR\right)^{-1} (R^TQ^T)\vect{b}.
+  \hat{\vect{b}} =  QR \left[(QR)^T(QR)\right]^{-1}\vect{b}
+  = QR\left[R^TQ^TQR\right]^{-1} (R^TQ^T)\vect{b}.
 $$
 
-Using $Q^TQ = I$ and $\left[R^TR\right)^{-1} = R^{-1}(R^T)^{-1}$ this can be simplified further to
+Using $Q^TQ = I$ and $\left[R^TR\right]^{-1} = R^{-1}(R^T)^{-1}$ this can be simplified further to
 
 $$
-  \hat{\vect{b}} = QR \left[R^TR\right)^{-1}R^TQ^T\vect{b} =QRR^{-1}(R^T)^{-1}R^TQ^T\vect{b} = QQ^T\vect{b}
+  \hat{\vect{b}} = QR \left[R^TR\right]^{-1}R^TQ^T\vect{b} =QRR^{-1}(R^T)^{-1}R^TQ^T\vect{b} = QQ^T\vect{b}
 $$
 
 The interpretation is as follows. The columns $\vect{q}_i$ of $Q$ form an orthonormal basis for the column space of $A$. So the orthogonal projection onto Col$(A$) is the same as the orthogonal projection onto Col$(Q)$. For a matrix with _orthonormal_ columns the projection formula
@@ -727,7 +727,8 @@ $$
  \begin{array}{lcl}
   \hat{\vect{b}} = \proj_{\Col{(Q)}}(\vect{b}) &=& (\vect{b}\cdot\vect{q}_1)\vect{q}_1 + \cdots +   (\vect{b}\cdot\vect{q}_n)\vect{q}_n\\&=& \vect{q}_1(\vect{b}\cdot\vect{q}_1) + \cdots +  \vect{q}_n (\vect{b}\cdot\vect{q}_n)\\
   &= &  \vect{q}_1(\vect{q}_1^T\vect{b}) + \cdots + \vect{q}_n(\vect{q}_n^T\vect{b})\\
-  &= &  \left[\vect{q}_1\vect{q}_1^T + \cdots + \vect{q}_n\vect{q}_n^T\right)\,\vect{b}
+  &= &  (\vect{q}_1\vect{q}_1^T) \vect{b}  + \cdots + (\vect{q}_n\vect{q}_n^T)\vect{b}\\
+  &= &  \left[\vect{q}_1\vect{q}_1^T + \cdots + \vect{q}_n\vect{q}_n^T\right]\,\vect{b}
   \end{array}
 $$
 
@@ -739,7 +740,58 @@ $$
 
 ::::
 
-To conclude this section we will consider the situation where the matrix $A$ has linearly _dependent_ columns.
+In fact, if the $QR$ decomposition of a matrix $A$ is known, this may also simplify the computation of the least quares solution of any linear system  $A\vect{x} = \vect{b}$ considerably.
+
+::::{prf:proposition}  
+:label: Prop:LeastSquares:LSviaQR
+
+Suppose the $m \times n$ matrix $A$ of rank $n$ has the $QR$ decomposition  $A = QR$.
+Then the least squares solution of the linear system  $A\vect{x} = \vect{b}$ is the same as the solution of the equation
+
+
+:::{math}
+:label: Eq:Leastquares:LSviaQR-1
+
+    R\vect{x} = Q^T\vect{b}.
+
+:::
+
+Note that the solution is unique, and is given by
+
+:::{math}
+:label: Eq:Leastquares:LSviaQR-2
+
+  \hat{\vect{x}} = R^{-1}Q^T\vect{b}.
+
+:::
+
+In general, it is more efficient to avoid computing the inverse of $R$, and to 
+solve  {eq}`Eq:Leastquares:LSviaQR-1` via back substitution.
+
+::::
+
+
+::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LeastSquares:Existence`
+:class: tudproof
+
+First note that, if  $A = QR$, where $Q$ has orthonormal columns, then
+
+$$
+  (QR)^T(QR) = R^TQ^TQR = R^T(Q^TQ)R = R^TIR = R^TR. 
+$$
+
+So the normal equations  $A^TA\vect{x} = A^T\vect{b}$ simplify to
+
+$$
+  R^TR\vect{x} = R^TQ^T\vect{b}.
+$$
+
+Since $R$ is invertible, hence $R^T$ is invertible too, we can premultiply both sides by  the inverse of $R^T$, which immediately gives {eq}`Eq:Leastquares:LSviaQR-1`.
+
+::::
+
+
+To conclude this subsection we will consider the situation where the matrix $A$ has linearly _dependent_ columns.
 Then the least squares solution is not unique.
 
 Let us look at an example first.
@@ -879,7 +931,7 @@ $$
 
 ::::
 
-## Grasple Exercises
+## Grasple exercises
 
 ::::{grasple}
 :iframeclass: dark-light
@@ -1054,7 +1106,7 @@ $$
 
 (SubSec:LeastSquares:LinearModels)=
 
-## Linear Models
+## Linear models
 
 In {numref}`SubSec:LeastSquares:Introduction` we looked at ways to fit a line
 $y = a + bx$ to a set of points $(x_i, y_i), i = 1, \ldots, n$ in the plane. In statistics this plays an important role in so-called _regression models_.
@@ -1495,7 +1547,7 @@ Least squares fitting via logarithmic scale.
 
 ::::
 
-## Grasple Exercises (for Linear Models)
+## Grasple exercises (for linear models)
 
 ::::{grasple}
 :iframeclass: dark-light

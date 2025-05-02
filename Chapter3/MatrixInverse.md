@@ -146,7 +146,7 @@ For non-square matrices things are even worse. In this section we will only cons
 ::::::{prf:definition}
 :label: Dfn:MatrixInv:DefInverse
 
-A square matrix $A$ is called invertible if there exists a matrix $B$ for which
+A square matrix $A$ is called **invertible** if there exists a matrix $B$ for which
 
 $$
    AB = BA = I.
