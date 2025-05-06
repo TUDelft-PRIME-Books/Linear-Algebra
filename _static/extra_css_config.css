@@ -40,3 +40,16 @@ span.math mjx-assistive-mml {
 mjx-mtext {
   min-width: 27px;
 }
+
+/* To make a banner appear only in FireFox */
+.bd-header-announcement {
+  background-color: var(--tud-yellow);
+  color: var(--pst-color-muted);
+  display: none;
+  text-align: left;
+}
+@supports(-moz-appearance:none) {
+  .bd-header-announcement {
+    display: flex;
+  }
+}
