@@ -36,7 +36,7 @@ parse:
     myst_heading_anchors : 5
 sphinx:
   config:
-    ref_graph_group_nodes: true
+    sphinx_indexed_defs_indexed_nodes: ['strong']
     html_theme_options:
       repository_url: "https://gitlab.ewi.tudelft.nl/prime/openlabook"
       use_repository_button: true
