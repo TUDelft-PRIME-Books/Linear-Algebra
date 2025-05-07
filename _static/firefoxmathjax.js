@@ -1,14 +1,30 @@
-document.addEventListener("DOMContentLoaded", () => {
+if (typeof InstallTrigger !== 'undefined') {
+  document.addEventListener("DOMContentLoaded", () => {
     const observer = new MutationObserver((mutationsList, observer) => {
       for (const mutation of mutationsList) {
         if (mutation.type === "childList") {
           if (document.querySelector('mjx-container[jax="SVG"]')) {
             console.log("MathJax gebruikt nu SVG rendering.");
-            observer.disconnect();
-            // remove banner
+           // remove banner
+           document.querySelectorAll('.bd-header-announcement').forEach(function(el) {
+            el.style.display = 'none';
+          });
+          // remove tippy's
+          document.querySelectorAll('.tippy-box').forEach(function(el) {
+            el.style.display = 'none';
+          });
+          }
+
+          if (document.querySelector('mjx-container[jax="CHTML"]')) {
+            console.log("MathJax gebruikt nu CHTML rendering.");
+           // add banner
             document.querySelectorAll('.bd-header-announcement').forEach(function(el) {
-                el.style.display = 'none';
+                el.style.display = 'flex';
               });
+            // remove tippy's
+          document.querySelectorAll('.tippy-box').forEach(function(el) {
+            el.style.display.removeProperty( 'display' );
+          });
           }
         }
       }
@@ -19,3 +35,4 @@ document.addEventListener("DOMContentLoaded", () => {
       subtree: true
     });
   });
+}
