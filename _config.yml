@@ -36,10 +36,8 @@ parse:
     myst_heading_anchors : 5
 sphinx:
   config:
-    # html_js_files: ['firefoxmathjax.js']
     sphinx_indexed_defs_indexed_nodes: ['strong']
     html_theme_options:
-      announcement : '<p>The Firefox browser and the $\LaTeX$-renderer MathJax have an issue where thin vertical or horizontal lines are not always rendered properly.</p><p>To see the correct rendering of the mathematical formulae on this page, please consider one of the following options:</p><ul><li>Switch to a different browser.</li><li>Switch the MathJax Math Renderer to SVG (right-click on $\LaTeX$ above, select Math Settings, select Math Renderer, select SVG). This will disable the hover tips.</li></ul>'
       repository_url: "https://gitlab.ewi.tudelft.nl/prime/openlabook"
       use_repository_button: true
       logo:
