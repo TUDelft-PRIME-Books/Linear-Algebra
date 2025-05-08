@@ -77,7 +77,6 @@ sphinx:
             \newcommand{\CoBmatrix}[2]{P_{{\mathcal #2}\leftarrow{\mathcal #1}}}
             \usepackage{tabularx}
             \usepackage{threeparttable}
-    mathjax_path: 'deltamathjax.js'
     mathjax3_config: 
       tex:
         inlineMath: [ ['$','$'], ['\(','\)'] ]
