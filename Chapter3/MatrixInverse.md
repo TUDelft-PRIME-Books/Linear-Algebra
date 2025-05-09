@@ -1341,7 +1341,7 @@ $$
 $$
 
 ::::::{prf:theorem}
-:label: Thm:MatrixInv:InvertibilityCharacterisations
+:label: Thm:MatrixInv:InvertibilityCharacterizations
 
 For an $n\times n$ matrix $A$, the following statements are equivalent.
 <br/>
