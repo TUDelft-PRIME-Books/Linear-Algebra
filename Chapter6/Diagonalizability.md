@@ -1000,10 +1000,13 @@ $$
 
 ::::::
 
+
+
+
 ::::::{grasple} 
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/5a71e703-acd5-48b1-9b6d-8a51f4f8cf95?id=91501
-:label: grasple_exercise_6_3_4 
+:url: https://embed.grasple.com/exercises/deb8d92e-5918-40f3-bdea-3dc3511d83a1?id=91491
+:label: grasple_exercise_6_3_4
 :dropdown:
 :description: To investigate the diagonalizability of a ($3 \times 3$) matrix. 
 
@@ -1027,20 +1030,11 @@ $$
 
 ::::::
 
-::::::{grasple} 
-:iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/f61dfb8f-db65-4f17-80c7-b1702b0c2c07?id=104493
-:label: grasple_exercise_6_3_7 
-:dropdown:
-:description:  To investigate the diagonalizability of a 3x3 matrix of rank 1. 
-
-::::::
-
 
 ::::::{grasple} 
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/70b5964e-b6c7-4a64-a2e3-d10dc915f324?id=91503
-:label: grasple_exercise_6_3_8 
+:label: grasple_exercise_6_3_7 
 :dropdown:
 :description:  To investigate the diagonalizability of a ($3 \times 3$) matrix. 
 
@@ -1049,8 +1043,63 @@ $$
 
 ::::::{grasple} 
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/534ce865-0960-403a-affc-0f23f2d14110?id=91521
+:url: https://embed.grasple.com/e9bcf8d4-5b26-4f56-90df-76345c4e85e1?id=71926
+:label: grasple_exercise_6_3_8
+:dropdown:
+:description: To diagonalize a 3x3 matrix (with only two (given) eigenvalues )
+
+::::::
+
+::::::{grasple} 
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/f61dfb8f-db65-4f17-80c7-b1702b0c2c07?id=104493
 :label: grasple_exercise_6_3_9 
+:dropdown:
+:description:  To investigate the diagonalizability of a 3x3 matrix of rank 1. 
+
+::::::
+
+
+
+::::::{grasple} 
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/bc214d8e-b1a1-4b39-bedd-0ae36380b14a?id=71933
+:label: grasple_exercise_6_3_10 
+:dropdown:
+:description:  For which $\alpha$ is given  3x3  matrix $A$ diagonalizable? 
+
+::::::
+
+
+
+
+::::::{grasple} 
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/9730853c-acca-481c-930b-56d1046256cf?id=117040
+:label: grasple_exercise_6_3_11
+:dropdown:
+:description:  To investigate the diagonalizability of a matrix with a 'special' structure.
+
+::::::
+
+
+::::::{grasple} 
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/1f997f9d-5d6c-46de-8a25-dfb431b76997?id=117042
+:label: grasple_exercise_6_3_12
+:dropdown:
+:description:  To investigate the diagonalizability of a matrix with a 'special' structure. (II)
+
+::::::
+
+
+
+
+
+::::::{grasple} 
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/534ce865-0960-403a-affc-0f23f2d14110?id=91521
+:label: grasple_exercise_6_3_13
 :dropdown:
 :description: For which $\alpha$ is given (upper triangular) $4 \times 4$ matrix diagonalizable?
 
@@ -1059,7 +1108,7 @@ $$
 ::::::{grasple} 
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/f3cdb060-469a-4a30-be46-1ecc7197d66a?id=91522
-:label: grasple_exercise_6_3_10 
+:label: grasple_exercise_6_3_14 
 :dropdown:
 :description: True/False question (about a $4\times4$ matrix with $3$ distinct eigenvalues).  
 
@@ -1068,7 +1117,7 @@ $$
 ::::::{grasple} 
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/d1cb7e54-6c99-4a01-b161-832b37d650d0?id=91523
-:label: grasple_exercise_6_3_11 
+:label: grasple_exercise_6_3_15
 :dropdown:
 :description:  True/False question (invertibilty implies diagonalizability?)
 
@@ -1077,7 +1126,7 @@ $$
 ::::::{grasple} 
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/4398c155-7971-42f6-b809-31ae507c0326?id=87331
-:label: grasple_exercise_6_3_12 
+:label: grasple_exercise_6_3_16 
 :dropdown:
 :description:  Creating examples of all cases (non-)invertible versus (non-)diagonalizable.
 
@@ -1085,7 +1134,7 @@ $$
 ::::::{grasple} 
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9aca77fa-a7c8-4998-be00-a55c19e9fd70?id=62419
-:label: grasple_exercise_6_3_13 
+:label: grasple_exercise_6_3_17 
 :dropdown:
 :description:  To draw conclusions from a diagonalization  $A = PDP^{-1}$.
 
