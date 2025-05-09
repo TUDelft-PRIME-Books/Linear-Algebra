@@ -1099,7 +1099,7 @@ The two-step procedure as in  {prf:ref}`Alg:LUdecomp:Usefulness` to solve a line
 
 
 ::::::{prf:example}
-:label: Ex:LUdecomp:Nonsquare
+:label: Ex:LUdecomp:Nonsquare2
 
 We will solve the equation 
 

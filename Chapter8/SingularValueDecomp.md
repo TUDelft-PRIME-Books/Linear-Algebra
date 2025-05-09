@@ -1,6 +1,6 @@
 (Sec:SingValDec)=
 
-## Singular Value Decomposition (SVD)
+# Singular Value Decomposition (SVD)
 
 We have seen already several ways to factorise matrices. In {numref}`Sec:LUdecomp`, we studied the $LU$ and the $PLU$ factorisations, and in  {numref}`Sec:Gram-Schmidt:QRdecomp`
 we laid the QR Decomposition on the table. In {numref}`Sec:SymmetricMat` we showed that every symmetric (square) matrix $A$ can be written as  $A = QDQ^{-1} = QDQ^T$. In this section it is in a sense this last decomposition we will generalise to non-symmetric matrices, and even to non-square matrices.

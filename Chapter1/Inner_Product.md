@@ -1529,7 +1529,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/30a7abfe-9d40-4faa-a848-83bd67e024a0?id=62406
-:label: grasple_exercise_1_2_7
+:label: grasple_exercise_1_2_7_2
 :dropdown:
 :description: To compute the norms of vectors in $\R^2$, $\R^3$, $\R^4$.
 
