@@ -257,13 +257,13 @@ $$
 One particular application of the orthogonal complement is the following theorem, which allows us to write, for an arbitrary subspace $V$, any vector $v$ as a part within $V$ and a part orthogonal to $V$. 
 
 :::{prf:proposition}
-:label: Prop:OrthoComp:PrthoDecomp
+:label: Prop:OrthoComp:OrthoDecomp
 
 Let $V$ be a subspace of $\R^{n}$. For an arbitrary vector $\vect{u}$ in $\R^{n}$, there exist _unique_ vectors $\vect{u}_{V}$ and $\vect{u}_{V^{\bot}}$ in $V$ and $V^{\bot}$, respectively, such that $\vect{u}=\vect{u}_{V}+\vect{u}_{V^{\bot}}$. This is called the **orthogonal decomposition** of $\vect{u}$ with respect to $V$.
 
 :::
 
-:::{admonition} Proof of&nbsp;{prf:ref}`Prop:OrthoComp:PrthoDecomp`
+:::{admonition} Proof of&nbsp;{prf:ref}`Prop:OrthoComp:OrthoDecomp`
 :class: tudproof
 
 Let $\vect{v}_{1},...,\vect{v}_{k}$ be a basis for $V$ and let $\vect{v}_{k+1},...,\vect{v}_{n}$ be a basis for $V^{\bot}$. We claim that the vectors $\vect{v}_{1},...,\vect{v}_{k},\vect{v}_{k+1},...,\vect{v}_{n}$ are linearly independent. Indeed, if there were a linear combination
@@ -337,6 +337,35 @@ $$
 $$
 
 It is easy to check that, as the notation suggests, $\vect{u}_{V}$ is in $V$ (since $\vect{u}_{V}=-\vect{v}_{1}+2\vect{v}_{2}$) and $\vect{u}_{V^{\bot}}$ is in $V^{\bot}$ (since $\vect{u}_{V^{\bot}}\ip\vect{v}_{1}=0=\vect{u}_{V^{\bot}}\ip\vect{v}_{2}$). So $\vect{u}=\vect{u}_{V}+\vect{u}_{V^{\bot}}$ is the orthogonal decomposition of $\vect{u}$ with respect to $V$. How we can compute such a decomposition will be shown in {numref}`Sec:OrthoBase`.
+
+:::
+
+Let's end this section with a perhaps unsurprising observation which, now that we have the orthogonal decomposition, becomes easy to prove.
+
+:::{prf:proposition}
+:label: Prop:OrthoComp:CompofCompofVisV
+
+Let $V$ be a subspace of $\R^{n}$. Then $(V^{\bot})^{\bot}=V$.
+
+:::
+
+:::{admonition} Proof of&nbsp;{prf:ref}`Prop:OrthoComp:CompofCompofVisV`
+:class: tudproof
+
+We will first show that any element of $V$ is in $(V^{\bot})^{\bot}$. Take $\vect{v}\in V$. We need to show that $\vect{v}$ is orthogonal to any $\vect{u}$ in $V^{\bot}$. But any $\vect{u}$ in $V^{\bot}$ is by definition orthogonal to every vector in $V$, so in particular also to $\vect{v}$.
+
+Now we need to establish that every element of $(V^{\bot})^{\bot}$ is in $V$. Take an arbitrary $\vect{u}$ in $(V^{\bot})^{\bot}$. We have, by {prf:ref}`Prop:OrthoComp:OrthoDecomp`, $\vect{u}=\vect{u}_{V}+\vect{u}_{V^{\bot}}$ for some $\vect{u}_{V}$ in $V$ and $\vect{u}_{V^{\bot}}$ in $V^{\bot}$. Since $\vect{u}$ is in $(V^{\bot})^{\bot}$, it is orthogonal to every vector in $V^{\bot}$ hence, in particular, to $\vect{u}_{V^{\bot}}$. This yields:
+
+$$
+
+\begin{align*}
+    0=\vect{u}\cdot \vect{u}_{V^{\bot}}&=(\vect{u}_{V}+\vect{u}_{V^{\bot}})\cdot \vect{u}_{V^{\bot}}\\
+    &=\vect{u}_{V}\cdot\vect{u}_{V}^{\bot}+\vect{u}_{V^{\bot}}\cdot \vect{u}_{V^{\bot}}\\
+\end{align*}
+
+$$
+
+but $\vect{u}_{V}\cdot\vect{u}_{V^{\bot}}=0$ since $\vect{u}_{V^{\bot}}$ is orthogonal to any vector in $V$. We are therefore left with $\vect{u}_{V^{\bot}}\cdot \vect{u}_{V^{\bot}}=0$, which implies $\vect{u}_{V^{\bot}}=0$. Consequently, $\vect{u}=\vect{u}_{V}$ which means $\vect{u}$ is in $V$.
 
 :::
 
