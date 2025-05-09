@@ -1,6 +1,6 @@
 (Sec:SingValDec)=
 
-# Singular Value Decomposition (SVD)
+## Singular Value Decomposition (SVD)
 
 We have seen already several ways to factorise matrices. In {numref}`Sec:LUdecomp`, we studied the $LU$ and the $PLU$ factorisations, and in  {numref}`Sec:Gram-Schmidt:QRdecomp`
 we laid the QR Decomposition on the table. In {numref}`Sec:SymmetricMat` we showed that every symmetric (square) matrix $A$ can be written as  $A = QDQ^{-1} = QDQ^T$. In this section it is in a sense this last decomposition we will generalize to non-symmetric matrices, and even to non-square matrices.
@@ -698,7 +698,7 @@ $$ \mathbf{u}_1 = B\mathbf{v}_1 = \begin{pmatrix} 8 \\ -4 \\ -4 \\ -10 \end{pmat
 \begin{pmatrix}-6 \\ 3 \\ 10 \\ -10 \end{pmatrix}, \quad \mathbf{u}_3 = B\mathbf{v}_3 = \begin{pmatrix} 2 \\ 4 \\ 0 \\ 0 \end{pmatrix}. 
 $$
 It should not come as a surprise that these vectors are orthogonal! <BR>
-We have to find a fourth orthogonal vector $\vect{u}_4$.   One way is to look for a nonzero vector in the nulspace of the matrix $\begin{pmatrix}
+We have to find a fourth orthogonal vector $\vect{u}_4$.   One way is to look for a nonzero vector in the null space of the matrix $\begin{pmatrix}
 8 & -4 & -4 &-10 \\ -6 & 3 & 10 & -10 \\ 2 & 4 & 0 & 0\end{pmatrix}$. <BR>
  You may check that the vector $\vect{u}_4 = \begin{pmatrix} 4 \\ -2 \\ 5 \\ 2 \end{pmatrix}$  does the trick.
 
@@ -725,7 +725,7 @@ From  $A^T = U\Sigma V^T$  it follows swiftly that  $A = V \Sigma^TU^T$ is an SV
 
 (Subsec:SVDGeometrically)=
 
-## Understanding the SVD Geometrically
+## Understanding the SVD geometrically
 
 In this section we will have a deeper look at the decomposition and its meaning. As we have done on earlier occasions, we can think about an $m\times n$ matrix $A$ as the standard matrix of a linear transformation from $\R^n$ to $\R^m$.
 
@@ -1045,19 +1045,43 @@ We expect $A_3$ to be a good approximation of $A$.
 
 ## Grasple Exercises
 
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/ee443aeb-6528-4f8e-916c-7147b802dfea?id=118346
+:label: grasple_exercise_8_3_1
+:dropdown:
+:description: Finding the maximal value of $\norm{A\vect{x}}$, if $\norm{\vect{x}}=1$,  $A$ a 2x2 matrix.
+::::
+
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/3fdad317-fc18-4f88-b416-87cbd1d5e708?id=93495
+:label: grasple_exercise_8_3_2
+:dropdown:
+:description: Finding the maximal value of $\norm{A\vect{x}}$, if $\norm{\vect{x}}=1$,  $A$ a 3x2 matrix.
+::::
+
+
+
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/27adae2a-db2a-46fa-800f-49e4c0dfe4fa?id=93487
-:label: grasple_exercise_8_3_9
+:label: grasple_exercise_8_3_3
 :dropdown:
 :description: If $A = U\Sigma V^T$   for an  mxn matrix $A$, what are the sizes of  $U$, $Σ$ and $V$?
 ::::
 
 
+
+
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/caac29d1-9700-4a30-8c7c-19ea6148258f?id=93490
-:label: grasple_exercise_8_3_10
+:label: grasple_exercise_8_3_4
 :dropdown:
 :description: To describe the meaning of the singular values of a matrix.
 ::::
@@ -1066,24 +1090,44 @@ We expect $A_3$ to be a good approximation of $A$.
 
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/e4c651aa-a998-4e19-957b-20ddf41509bf?id=93468
-:label: grasple_exercise_8_3_2
-:dropdown:
-:description: To find the singular values of a 2x2 matrix $A$.
-::::
-
-::::{grasple}
-:iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/47ebaa77-9f3c-4363-a57e-d37242c6e598?id=93471
-:label: grasple_exercise_8_3_3
+:label: grasple_exercise_8_3_5
 :dropdown:
 :description: To compute the singular values of a 3x2 matrix $A$.
 ::::
 
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/e4c651aa-a998-4e19-957b-20ddf41509bf?id=93468
+:label: grasple_exercise_8_3_6
+:dropdown:
+:description: To find the singular values of a 2x2 matrix $A$.
+::::
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/36a64482-b217-427c-b132-13aa6d6b67df?id=118350
+:label: grasple_exercise_8_3_7
+:dropdown:
+:description: To find the singular values of a 2x2 matrix $A$.
+::::
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/30280867-b20e-4590-aa18-868612ba8fbd?id=93476
+:label: grasple_exercise_8_3_8
+:dropdown:
+:description: To find the singular values of a 2x2 matrix $A$ of rank 1.
+::::
+
+
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/79d22478-56e3-49ee-9b19-77ab1ad06eaf?id=93470
-:label: grasple_exercise_8_3_4
+:label: grasple_exercise_8_3_9
 :dropdown:
 :description:  To compute an SVD for a 2x3 matrix $A$. 
 ::::
@@ -1093,7 +1137,7 @@ We expect $A_3$ to be a good approximation of $A$.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/10affbae-4221-40f8-bf0e-df626a0e64ae?id=93479
-:label: grasple_exercise_8_3_5
+:label: grasple_exercise_8_3_10
 :dropdown:
 :description: To compute an SVD for a 2x3 matrix $A$ (of rank 1).
 ::::
@@ -1102,7 +1146,7 @@ We expect $A_3$ to be a good approximation of $A$.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/37ea17f1-1bfb-4a19-b9e2-1292a593dfa3?id=93480
-:label: grasple_exercise_8_3_6
+:label: grasple_exercise_8_3_11
 :dropdown:
 :description: To compute an SVD for a 3x2 matrix $A$ (of rank 1).
 ::::
@@ -1111,7 +1155,7 @@ We expect $A_3$ to be a good approximation of $A$.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/20dd219a-35f3-48d7-ad9d-35038047336b?id=92586
-:label: grasple_exercise_8_3_7
+:label: grasple_exercise_8_3_12
 :dropdown:
 :description: To compute an SVD for a matrix $A$ with orthogonal columns.
 ::::
@@ -1120,17 +1164,9 @@ We expect $A_3$ to be a good approximation of $A$.
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/9848d7be-1530-46b0-941f-9ae76e95abfa?id=93481
-:label: grasple_exercise_8_3_8
+:label: grasple_exercise_8_3_13
 :dropdown:
 :description: To draw conclusion(s) about $A$ from a given SVD of $A$.
 ::::
 
-
-::::{grasple}
-:iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/3fdad317-fc18-4f88-b416-87cbd1d5e708?id=93495
-:label: grasple_exercise_8_3_1
-:dropdown:
-:description: Finding the maximal value of $\norm{A\vect{x}}$, if $\norm{\vect{x}}=1$,  $A$ a 3x2 matrix.
-::::
 

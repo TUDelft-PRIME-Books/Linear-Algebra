@@ -445,6 +445,7 @@ where $\lambda_1,\lambda_2, \ldots, \lambda_n$ are the eigenvalues of $A$.
 Let us see how the construction of {prf:ref}`Prop:QuadForms:Diagonalize` works out in an earlier example.
 
 ::::{prf:example}
+:label:  Ex:QuadForms:CompleteSquaresCtd2
 
 Consider again the matrix $A = \left(\begin{array}{cc} 1 & 2  \\ 2 & 3 \end{array}\right)$ of {prf:ref}`Ex:QuadForms:CompleteSquaresCtd`.
 
@@ -472,8 +473,8 @@ Since $(2 + \sqrt{5})> 0$ and $(2 - \sqrt{5})<2-2=0$ we may again conclude that 
 
 ::::
 
-::::{prf:remark}
-In {prf:ref}`Ex:QuadForms:CompleteSquaresCtd` and {prf:ref}`Ex:QuadForms:Diagonalize` we applied two different substitutions to the same quadratic form with the matrix $A = \left(\begin{array}{cc} 1 & 2  \\ 2 & 3 \end{array}\right)$.
+::::{prf:remark} 
+In {prf:ref}`Ex:QuadForms:CompleteSquaresCtd` and {prf:ref}`Ex:QuadForms:CompleteSquaresCtd2` we applied two different substitutions to the same quadratic form with the matrix $A = \left(\begin{array}{cc} 1 & 2  \\ 2 & 3 \end{array}\right)$.
 
 They led to the two different quadratic forms
 
@@ -497,7 +498,7 @@ $$
   p_1 = p_2 \quad \text{and} \quad n_1 = n_2.
 $$
 
-It follows that also the numbers of zeros on the diagonal, $n - p_i - n_i$, $i = 1,2$, must be equal for the two matrices.
+It follows that the numbers of zeros on the diagonals, $n - p_i - n_i$, $i = 1,2$, must also be equal for the two matrices.
 
 In the two examples we see that $p_1 = p_2 = 1$ and also $n_1 = n_2 = 1$, in accordance with the statement.
 
@@ -841,8 +842,18 @@ Describe the (three) possible degenerate forms of conic sections. That is, what 
 
 There are three essentially different situations.  <BR>
 A plane through the apex may have the apex as unique common point with the cone. Then the conic (inter)section is just this **one point**. <BR>
-If (as in {numref}`Figure %s <Fig:QuadForms:ConeWithPlanes>`  ) the plane is close to vertical, it will intersect the cone in **two lines** through the apex. <BR>
+If (as in the central image in {numref}`Figure %s <Fig:QuadForms:DegenerateConicSections>`) the plane is close to vertical, it will intersect the cone in **two lines** through the apex. <BR>
 The transition between these situations is when the plane is tangent to the cone. This yields the last possible conic section, **a line**.
+
+
+:::{figure} Images/Fig-QuadForms-DegenerateConicSections.png
+:name: Fig:QuadForms:DegenerateConicSections
+:class: dark-light
+
+The three degenerate conic sections.
+
+:::
+
 
 ::::
 

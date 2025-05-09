@@ -880,7 +880,7 @@ Every basis of a fixed subspace $S$ in $\R^n$ has the same number of elements.
 :class: tudproof
 
 The proof is an immediate consequence of {prf:ref}`Thm:LinInd:TooManyVectsimpliesLinDep`
-from the section on linear independence. Because of its vital important we restate it here (check the side note).
+from the section on linear independence. 
 
 We can use this as follows.
 
@@ -1055,7 +1055,7 @@ Because of {prf:ref}`Thm:BasisDim:EqualDim` this is a good definition.
 For the trivial subspace $S = \lbrace\vect{0}\rbrace$ we postulated that its basis is the empty set. Thus,
 
 $$
-\text{dim}\, S = \text{dim}\lbrace\vect{0}\rbrace = 0.
+\text{dim}\, S = \text{dim}(\emptyset) = 0.
 $$
 
 For the other trivial subspace, the whole $\R^n$, the standard basis
