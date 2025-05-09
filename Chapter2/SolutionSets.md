@@ -13,7 +13,7 @@ In this section, we will study solution sets of linear systems in higher dimensi
 
 ## Writing Down Solution Sets
 
-In {numref}`Section %s <Section:LinSystems>`, we saw how to solve a system of linear equations: we reduced the augmented matrix to echelon form and expressed the basic variables in terms of the free variables. This means that any choice of numbers for the free variables determines a solution. We can conveniently write down the set of all such solutions by using a parametrized vector. What we mean by that is best illustrated with a couple of examples.
+In {numref}`Section %s <Section:LinSystems>`, we saw how to solve a system of linear equations: we reduced the augmented matrix to echelon form and expressed the basic variables in terms of the free variables. This means that any choice of numbers for the free variables determines a solution. We can conveniently write down the set of all such solutions by using a parametrised vector. What we mean by that is best illustrated with a couple of examples.
 
 ::::{prf:example}
 :label: Example:SolSet:TwoLinesinR3

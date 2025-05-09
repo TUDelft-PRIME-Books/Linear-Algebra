@@ -514,7 +514,7 @@ $$
 
 ::::::
 
-The next proposition summarizes the relevant properties of 3x3 determinants.
+The next proposition summarises the relevant properties of 3x3 determinants.
 
 ::::::{prf:proposition}
 :label: Prop:DetGeometric:Summary

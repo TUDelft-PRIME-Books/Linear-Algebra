@@ -31,7 +31,7 @@ $$
 
 
 
-To start with, the matrix  $A$ can be factorized as
+To start with, the matrix  $A$ can be factorised as
 
 $$
 A  = 
@@ -204,7 +204,7 @@ There are several methods for factorising matrices. The factorisations that we w
 
 %The most common factorisation methods make use of this kind of matrices. This is why we will first %introduce the idea of a trapezoidal and triangular matrix and then discuss the corresponding %factorisation methods and their applications.
 
-In the next subsection we will address the questions of whether an $LU$ decomposition always exists and if so, how to construct it.  With an extra condition on $L$ the decomposition, if it exists, will be unique. In the case where an $LU$ decomposition does not exist we can instead consider the   slightly  more general $PLU$ decomposition. In the remainder of the section we will consider the generalisation to non-square matrices and we will analyze to which extent the $(P)LU$ decomposition  can give an efficiency boost.
+In the next subsection we will address the questions of whether an $LU$ decomposition always exists and if so, how to construct it.  With an extra condition on $L$ the decomposition, if it exists, will be unique. In the case where an $LU$ decomposition does not exist we can instead consider the   slightly  more general $PLU$ decomposition. In the remainder of the section we will consider the generalisation to non-square matrices and we will analyse to which extent the $(P)LU$ decomposition  can give an efficiency boost.
 
 
 ## $LU$ decomposition of a square matrix
@@ -380,7 +380,7 @@ $$
 $$
 
 The echelon matrix $A_3$ can act as our upper triangular matrix $U$, and the above computations
-can be summarized as
+can be summarised as
 
 $$
   U = A_3 = F_2F_1A = FA = \begin{pmatrix}
@@ -911,7 +911,7 @@ L^{-1} = \left(\begin{array}{rrrrr}
         \end{array} \right).
 $$ 
 
-As in the proof of the first half of this proof (cf., {eq}`Eq:LUdecomp:multipliers`),  $L^{-1}$ can be factorized as       
+As in the proof of the first half of this proof (cf., {eq}`Eq:LUdecomp:multipliers`),  $L^{-1}$ can be factorised as       
 
 $$
   L_1L_2\cdots L_{n-1} =
@@ -1859,7 +1859,7 @@ The proof of {prf:ref}`Prop:LUdecomp:CountOperationsInverse`  is quite straightf
 :class: tudproof, dropdown
 
 We count the number of arithmetic operations for computing the inverse via $(A | I)$.
-If we ignore the necessity of row swaps (as we did when analyzing the $LU$-decomposition), we may work row by row from top to bottom.  In the $k$th step we use the pivot in row $k$ to reduce the $k$th column to $\mathbf{e}_k$.
+If we ignore the necessity of row swaps (as we did when analysing the $LU$-decomposition), we may work row by row from top to bottom.  In the $k$th step we use the pivot in row $k$ to reduce the $k$th column to $\mathbf{e}_k$.
 
 After $k-1$ steps the augmented matrix then has the form
 

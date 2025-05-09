@@ -132,7 +132,7 @@ is not defined. This is because the matrices do not have the same size.
 ::::::
 
 ::::::{prf:remark}
-The two definitions of sum and scalar multiple are called **componentwise** definitions. They are completely analogous to the definitions of the scalar multiples of a vector and the sum of two vectors. Hence it is not surprising that they obey exactly the same rules, as is summarized in the next proposition. (cf. Section {ref}`Sec:Vectors`.)
+The two definitions of sum and scalar multiple are called **componentwise** definitions. They are completely analogous to the definitions of the scalar multiples of a vector and the sum of two vectors. Hence it is not surprising that they obey exactly the same rules, as is summarised in the next proposition. (cf. Section {ref}`Sec:Vectors`.)
 
 ::::::
 

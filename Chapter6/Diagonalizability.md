@@ -131,7 +131,7 @@ Fill in the details of the last remark.
 
 ::::::
 
-The above considerations are summarized in the following proposition.
+The above considerations are summarised in the following proposition.
 
 ::::::{prf:proposition}
 :label: Prop:Diagonalizable:EqualMultiplicitiesSimilarMatrices
