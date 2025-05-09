@@ -141,7 +141,7 @@ $$
 \Span{ \begin{pmatrix} 1\\ 1   \end{pmatrix}, \begin{pmatrix} 2 \\  2  \end{pmatrix}, \begin{pmatrix} 0\\  1  \end{pmatrix}}.
 $$
 
-In a later chapter ({numref}`Sec:SubspacesRn`, <FONT color ="#0076C2"> Subspaces of $\R^n$</FONT>) we will call this the **column space** of the matrix $A$.
+In a later chapter ({numref}`Sec:SubspacesRn`, <FONT style="color:var(--pst-color-primary)"> Subspaces of $\R^n$</FONT>) we will call this the **column space** of the matrix $A$.
 
 ::::::
 

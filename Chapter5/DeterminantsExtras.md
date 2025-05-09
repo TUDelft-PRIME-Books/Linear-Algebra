@@ -102,8 +102,8 @@ $$
 Next, if we scale one of the vectors with a factor $c$, we would want the volume to get a factor $|c|$,
 
 $$
-   \text{Vol}\!\left({\mathcal{P}}(\vect{v}_1, \ldots, {\color{MOOCblue}c} \vect{v}_k, \ldots , \vect{v}_n)\right) =
-   {\color{MOOCblue}|c|}\,\text{Vol}\!\left({\mathcal{P}}(\vect{v}_1, \ldots, \vect{v}_k, \ldots , \vect{v}_n)\right).
+   \text{Vol}\!\left({\mathcal{P}}(\vect{v}_1, \ldots, {c} \vect{v}_k, \ldots , \vect{v}_n)\right) =
+   {|c|}\,\text{Vol}\!\left({\mathcal{P}}(\vect{v}_1, \ldots, \vect{v}_k, \ldots , \vect{v}_n)\right).
 $$
 
 Third, if to one vector $\vect{v}_i$ a linear combination of the other vectors is added, the volume should not change. The underlying idea is borrowed from considerations in $\R^3$.
