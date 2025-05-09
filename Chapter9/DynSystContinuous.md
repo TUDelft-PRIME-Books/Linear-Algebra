@@ -217,7 +217,7 @@ a_{nn}
 
 $$
 
-Of course, most matrices are not diagonal. However, most matrices are at least _diagonalizable_, and we can use this to our advantage. Suppose that the matrix $A$ can be diagonalized, so $A=PDP^{-1}$ where $D$ is the diagonal matrix with the eigenvalues $\lambda_{1},...,\lambda_{n}$ on the diagonal and $P$ is the matrix with the corresponding eigenvectors $\vect{v}_{1},...,\vect{v}_{n}$ as columns. Then we have 
+Of course, most matrices are not diagonal. However, most matrices are at least _diagonalisable_, and we can use this to our advantage. Suppose that the matrix $A$ can be diagonalized, so $A=PDP^{-1}$ where $D$ is the diagonal matrix with the eigenvalues $\lambda_{1},...,\lambda_{n}$ on the diagonal and $P$ is the matrix with the corresponding eigenvectors $\vect{v}_{1},...,\vect{v}_{n}$ as columns. Then we have 
 
 $$
 
@@ -260,7 +260,7 @@ The solution of the original system can now be obtained by multiplying from the 
 :::{prf:proposition}
 :label: Prop:DynSystContinuous:SolsofDynSyst
 
-If $A$ is a diagonalizable matrix with eigenvalues $\lambda_{1},...,\lambda_{n}$ and a corresponding basis of eigenvectors $\vect{v}_{1},...,\vect{v}_{n}$, then the system $\vect{x}'=A\vect{x}$ has general solution:
+If $A$ is a diagonalisable matrix with eigenvalues $\lambda_{1},...,\lambda_{n}$ and a corresponding basis of eigenvectors $\vect{v}_{1},...,\vect{v}_{n}$, then the system $\vect{x}'=A\vect{x}$ has general solution:
 
 $$
 
@@ -338,7 +338,7 @@ $$
 :::
 
 
-As long as the matrix $A$ is diagonalizable, we now know how to solve the system of linear differential equations. But we know more. We also know how a solution $f(t)$ to such a system will behave as $t$ goes to infinity. In practical applications, $t$ usually is time, so this gives us predictions for what happens after a long time.
+As long as the matrix $A$ is diagonalisable, we now know how to solve the system of linear differential equations. But we know more. We also know how a solution $f(t)$ to such a system will behave as $t$ goes to infinity. In practical applications, $t$ usually is time, so this gives us predictions for what happens after a long time.
 
 :::{prf:Example}
 

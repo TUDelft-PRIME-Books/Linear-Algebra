@@ -144,12 +144,12 @@ In the literature there is quite a bit of terminology to describe the behaviour 
 
 ::::
 
-The next proposition describes the behaviour of a dynamical system when its matrix $A$ is diagonalizable. Recall that diagonalizable means that there exists a basis of eigenvectors. For the moment we assume that the eigenvectors are _real_, though this actually plays a minor role.
+The next proposition describes the behaviour of a dynamical system when its matrix $A$ is diagonalisable. Recall that diagonalisable means that there exists a basis of eigenvectors. For the moment we assume that the eigenvectors are _real_, though this actually plays a minor role.
 
 ::::{prf:proposition}
 :label: Prop:DynSystDiscrete:DiagCase
 
-Suppose $A$ is an $n\times n$ (real) diagonalizable matrix.
+Suppose $A$ is an $n\times n$ (real) diagonalisable matrix.
 Let $(\vect{v}_1, \ldots, \vect{v}_n)$ be a basis of eigenvectors, and let
 $\lambda_1, \ldots, \lambda_n$ be the corresponding eigenvalues.
 
@@ -234,7 +234,7 @@ The following proposition is an almost immediate consequence of Equation {eq}`Eq
 ::::{prf:proposition}
 :label: Prop:DynSystDiscrete:DiagCase2
 
-Suppose the matrix $A$ is diagonalizable, with eigenvalues $\lambda_i$ ordered by absolute value,
+Suppose the matrix $A$ is diagonalisable, with eigenvalues $\lambda_i$ ordered by absolute value,
 
 $$
    |\lambda_1| \geq |\lambda_2| \geq \ldots \geq |\lambda_n|.
@@ -448,7 +448,7 @@ in $\R^2$ is called the **trajectory** or **path** starting from $\mathbf{s}$.
 Note that the definition also makes sense in larger dimensions.
 
 Let us start by considering a few examples. In the first two examples the matrices will
-have two distinct real eigenvalues, hence they are (real) diagonalizable, in the third example the eigenvalues are complex (thus the matrix is complex diagonalizable).
+have two distinct real eigenvalues, hence they are (real) diagonalisable, in the third example the eigenvalues are complex (thus the matrix is complex diagonalisable).
 
 ::::{prf:example}
 :label: Ex:DynSystDiscrete:SimplestSystem
@@ -823,7 +823,7 @@ $$
   0,\,1,\,1,\,2,\,3,\,5,\,8,\,13,\,21,\,34,\,55,\,89,\,144.
 $$
 
-Using a diagonalization we will show the surprising formula
+Using a diagonalisation we will show the surprising formula
 
 :::{math}
 :label: Eq:DynSystDiscrete:Fibonacci
@@ -879,7 +879,7 @@ $$
   \vect{v}_2 = \left(\begin{array}{cc} 1 \\ \frac12(1-\sqrt{5})  \end{array}\right)
 $$
 
-respectively. So $A$ is diagonalizable, and we can use {prf:ref}`Prop:DynSystDiscrete:DiagCase` to find the general state vector $\vect{x}_k$.
+respectively. So $A$ is diagonalisable, and we can use {prf:ref}`Prop:DynSystDiscrete:DiagCase` to find the general state vector $\vect{x}_k$.
 
 For this we have to find the coordinates $(c_1, c_2)$ of $\vect{s}$ with respect to the basis $\{\vect{v}_1,\vect{v}_2\}$. A short computation shows that
 

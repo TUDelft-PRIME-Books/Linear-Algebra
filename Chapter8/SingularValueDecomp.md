@@ -495,7 +495,7 @@ Therefore,  $A\mathbf{u}$ is an eigenvector of $AA^T$ with associated eigenvalue
 To prove the converse, one can use a similar argument.
 
 
-Now let's have a look at the multiplicities.   Since $A^TA$ is symmetric, hence diagonalizable, for each eigenvalue $\lambda$, the geometric and algebraic multiplicity are equal. And the same holds, of course, for the matrix $AA^T$.  So we are done if we can show that for each eigenvalue $\lambda_i \neq 0$,
+Now let's have a look at the multiplicities.   Since $A^TA$ is symmetric, hence diagonalisable, for each eigenvalue $\lambda$, the geometric and algebraic multiplicity are equal. And the same holds, of course, for the matrix $AA^T$.  So we are done if we can show that for each eigenvalue $\lambda_i \neq 0$,
 
 $$
     \text{g.m.}_{A^TA}(\lambda_i) = \text{g.m.}_{AA^T}(\lambda_i) 
@@ -630,7 +630,7 @@ Some concluding remarks concerning the algorithm.
  In most applications the singular value decomposition will be applied to  $m\times n$ matrices $A$  with much more rows that columns,  so  $m \gg n$. For such  matrices $A$, 
  working with $A^TA$ is the best bet.
 
- 2. The normalization of the vectors  $\mathbf{v}_i$ and $\mathbf{u}_j$ may be postponed till the end of step 5.  That prevents dragging along
+ 2. The normalisation of the vectors  $\mathbf{v}_i$ and $\mathbf{u}_j$ may be postponed till the end of step 5.  That prevents dragging along
  the obnoxious square root denominators.
 
 ::::
