@@ -507,7 +507,7 @@ Suppose now that $A$ is a $2\times 2$-matrix with complex eigenvalues $a\pm bi$.
 
 <li>
 
-a **center** if $a=0$,
+a **centre** if $a=0$,
 
 </li>
 
@@ -537,7 +537,7 @@ To see where the names come from, consider the solutions given in {prf:ref}`Prop
 :name: Fig:DynSystContinuous:Trajectories
 :class: dark-light
 
-The possible behaviours of the origin illustrated. On the top left, it's an attractor, on the top right a repeller, on the bottom left a saddle point, and on the bottom right a spiral point. For the spiral point, do you expect the real part of the eigenvalues to be positive or negative, given the figure? That is, do you expect the center to be a stable spiral point, an unstable spiral point, or a center?
+The possible behaviours of the origin illustrated. On the top left, it's an attractor, on the top right a repeller, on the bottom left a saddle point, and on the bottom right a spiral point. For the spiral point, do you expect the real part of the eigenvalues to be positive or negative, given the figure? That is, do you expect the centre to be a stable spiral point, an unstable spiral point, or a centre?
 ::::
 
 

@@ -653,7 +653,7 @@ If $1 < \lambda_1 < \lambda_2$ the origin is called an **unstable node**.
 If $\lambda_{1,2} = \alpha \pm i\beta$, with $\beta \neq 0$, then if $|\lambda_i| < 1$, the origin is called a **stable spiral point**, and if $|\lambda_i| > 1$ it is an
 **unstable spiral point**.
 
-Lastly, if $\lambda_{1,2} = \alpha \pm i\beta$, with $\beta \neq 0$ and $|\lambda_i| = 1$, the origin is called a **center point**
+Lastly, if $\lambda_{1,2} = \alpha \pm i\beta$, with $\beta \neq 0$ and $|\lambda_i| = 1$, the origin is called a **centre point**
 
 ::::
 
