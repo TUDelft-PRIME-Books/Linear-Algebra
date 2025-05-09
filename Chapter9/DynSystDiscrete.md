@@ -123,7 +123,7 @@ If for some starting values $\vect{x}_0 = \vect{s}$ the vectors $\vect{x}_k$ bec
 
 If $\norm{\vect{x}_k}$ remains bounded, but does not necessarily approach zero for all starting values, the origin is called **stable**.
 
-In the case of asymptotic stability we will call the origin an **attractor**, in the case where all solutions not starting from $\vect{0}$ move away from the origin we say the origin is a **repeller**.  
+In the case of asymptotic stability we will call the origin an **attractor**, in the case where all solutions not starting from $\vect{0}$ will move far away from the origin we say the origin is a **repeller**.  
 ::::
 
 ::::{prf:remark}
