@@ -297,7 +297,7 @@ The rule to go from basis $\mc{B}$ to the standard basis can thus be written as
 
 ::::
 
-The procedure of {prf:ref}`Ex:ChangeOfBasis:ToStandardBasis` can be generalized to bases in $\R^n$. Before we state how, we first define another useful concept.
+The procedure of {prf:ref}`Ex:ChangeOfBasis:ToStandardBasis` can be generalised to bases in $\R^n$. Before we state how, we first define another useful concept.
 
 ::::{prf:definition}
 :label: Dfn:ChangeOfBasis:CoBmatrix
@@ -454,7 +454,7 @@ $$
 
 In this way we have expressed everything into coordinates with respect to the standard bases $\mc{E}$ and $\mc{E}'$ for $\R^n$ and $\R^m$ respectively.
 
-We will see that formula {eq}`Eq:ChangeOfBasis:StandardMatrix` can be generalized almost automatically to arbitrary bases for $\R^n$ and $\R^m$.
+We will see that formula {eq}`Eq:ChangeOfBasis:StandardMatrix` can be generalised almost automatically to arbitrary bases for $\R^n$ and $\R^m$.
 
 ::::{prf:proposition}
 :label: Prop:ChangeOfBasis:MatrixOfTrafo
@@ -984,7 +984,7 @@ $$
 
 ::::
 
-In the last subsection we will generalize the formula to the more general situation of a linear transformation from $\R^n$ to $\R^m$ and arbitrary bases $\mc{B},\mc{B}'$ for $\R^n$, and bases
+In the last subsection we will generalise the formula to the more general situation of a linear transformation from $\R^n$ to $\R^m$ and arbitrary bases $\mc{B},\mc{B}'$ for $\R^n$, and bases
 $\mc{C},\mc{C}'$ for $\R^m$.
 
 (Subsec:ChangeOfBasis:GeneralTransformationFormula)=

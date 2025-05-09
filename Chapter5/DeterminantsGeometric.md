@@ -26,7 +26,7 @@ $$
 
 we might end up with an expression containing all the entries $a_{ij}$ that tells us whether $A$ is invertible or not.
 In this section we will use a geometric approach to derive such an expression, and will again call this the determinant of the matrix $A$. Its formula
-(Equation {eq}`Eq:DetGeometric:3x3Det`), when looked at from the right perspective, shows an opportunity to generalize the concept to higher dimensions.
+(Equation {eq}`Eq:DetGeometric:3x3Det`), when looked at from the right perspective, shows an opportunity to generalise the concept to higher dimensions.
 We will follow that route in {numref}`Section %s <Sec:DeterminantsViaCofactors>`.
 
 We will start by introducing determinants as a way to compute areas (in the plane) and volumes (in the space $\R^3$).

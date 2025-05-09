@@ -172,7 +172,7 @@ so the length of a vector can be expressed as follows using the dot product
 
 %\todo{Exercise enlightening the connection $\norm{\vect{v}\pm\vect{w}}$ versus %perpendicularity}
 
-Using the dot product the concepts length and perpendicular easily carry over to any $\mathbb{R}^n$, $n \geq 4$. Let's do it one by one, starting by generalizing the dot product in the next subsection.
+Using the dot product the concepts length and perpendicular easily carry over to any $\mathbb{R}^n$, $n \geq 4$. Let's do it one by one, starting by generalising the dot product in the next subsection.
 
 (Subsec:Dot_product:InnerProduct_in_Rn)=
 

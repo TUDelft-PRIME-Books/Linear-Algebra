@@ -41,7 +41,7 @@ $$
 $$
 
 The table has to be read column by column. For instance, the meaning of the first column is that of the age group 'young', 30% reaches the adolescent state. And from the third column it can be read off that
-individuals of the age group 'full grown' reproduce 4 offspring and with probability 40% reach 'old age'. The graph in {numref}`Figure %s <Fig:DynSystDiscrete:Leslie1>` visualizes the table.
+individuals of the age group 'full grown' reproduce 4 offspring and with probability 40% reach 'old age'. The graph in {numref}`Figure %s <Fig:DynSystDiscrete:Leslie1>` visualises the table.
 
 :::{figure} Images/Fig-DynSystDiscrete-LeslieGraph.svg
 :name: Fig:DynSystDiscrete:Leslie1
@@ -139,7 +139,7 @@ If the initial state is $\vect{s} = \vect{0}$, all vectors $\vect{x}_k$ will be 
 
 For more general (read: non-linear) dynamical systems a more subtle definition is needed. For one thing, a non-linear dynamical system may have multiple equilibrium points, each with their own behaviour.
 
-In the literature there is quite a bit of terminology to describe the behaviour of dynamical systems at equilibrium points. Apart from linear dynamical systems in the plane, where we can nicely visualize what is going on
+In the literature there is quite a bit of terminology to describe the behaviour of dynamical systems at equilibrium points. Apart from linear dynamical systems in the plane, where we can nicely visualise what is going on
 (cf. {numref}`Subsec:GraphicalDiscDynSyst`), we will stick to the two qualifications attractor and repellor.
 
 ::::
@@ -424,7 +424,7 @@ $$
 
 ## Graphical analysis of discrete dynamical systems in $\R^2$.
 
-In this subsection we will analyze dynamical systems
+In this subsection we will analyse dynamical systems
 
 $$
 \mathbf{x}_0 = \mathbf{s}, \quad \mathbf{x}_{k+1} = A\mathbf{x}_k, \,\, k=0,1,2,\ldots\,,

@@ -265,7 +265,7 @@ $$
 
 ::::::    
 
-The first example can be generalized:
+The first example can be generalised:
 
 ::::::{prf:proposition}
 :label: Prop:MatrixInv:Inverse2x2
@@ -425,7 +425,7 @@ $$
 
 ::::::
 
-The following proposition shows that the above considerations can be generalized.
+The following proposition shows that the above considerations can be generalised.
 
 ::::::{prf:proposition}
 :label: Prop:MatrixInv:InvertibleIndepCols

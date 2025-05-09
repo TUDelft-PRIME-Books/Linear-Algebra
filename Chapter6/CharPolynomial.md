@@ -106,7 +106,7 @@ So for a $3 \times 3$ upper triangular matrix the eigenvalues are the diagonal e
 
 ::::::
 
-Obviously {prf:ref}`Ex:EigenValues:TriangularMatrix` can be generalized. This leads to the following proposition.
+Obviously {prf:ref}`Ex:EigenValues:TriangularMatrix` can be generalised. This leads to the following proposition.
 
 ::::::{prf:proposition}
 :label: Prop:EigenValues:TriangularMatrix
@@ -127,7 +127,7 @@ $$
 $$
 
 Likewise, we saw that for $n\times n$ triangular matrices the characteristic polynomial is a polynomial of degree $n$.
-That this can be generalized to arbitrary matrices is the content of the next proposition.
+That this can be generalised to arbitrary matrices is the content of the next proposition.
 
 ::::::{prf:proposition}
 :label: Prop:EigenValues:CharPoly

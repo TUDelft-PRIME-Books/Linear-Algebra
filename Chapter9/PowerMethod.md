@@ -93,7 +93,7 @@ Suppose $A$ is an $n\times n$ matrix.
 &nbsp; (ii) Find the entry $\mu$ of $\vect{y}$ of the highest absolute value; <BR>
 &nbsp; (iii) Replace $\vect{x}$ by $\dfrac{1}{\mu}\vect{y}$.
 
-Step 2 is repeated until the process more or less stabilizes. For instance, until the difference between the last two computed vectors is smaller than a predetermined 'error' $\varepsilon$.
+Step 2 is repeated until the process more or less stabilises. For instance, until the difference between the last two computed vectors is smaller than a predetermined 'error' $\varepsilon$.
 
 ::::
 
@@ -111,7 +111,7 @@ $$
 the algorithm discards all intermediate iterates.<BR>  
 We are only interested in the last iterate anyway, since we expect this to be the best approximation of an eigenvector.
 
-The scaling step is necessary to avoid ending up at the zero vector or 'at infinity', where all information is lost.  There are alternative ways to scale the iterates.  A common one is to scale with the factors  $\dfrac{1}{\norm{\vect{y}}}$, that is, to normalize the vectors $\vect{y}$.
+The scaling step is necessary to avoid ending up at the zero vector or 'at infinity', where all information is lost.  There are alternative ways to scale the iterates.  A common one is to scale with the factors  $\dfrac{1}{\norm{\vect{y}}}$, that is, to normalise the vectors $\vect{y}$.
 
 ::::
 
@@ -330,7 +330,7 @@ $$
    \vect{x}_{200} = \begin{pmatrix}   0.5297 \\ 0.5007 \\ 1.0000 \\ -0.4751 \end{pmatrix}.
 $$
 
-Only after 700 to 800 iterations the process starts to stabilize:
+Only after 700 to 800 iterations the process starts to stabilise:
 
 $$
    \vect{x}_{799} = \begin{pmatrix}   -0.2506 \\ -0.0763 \\ -0.1672 \\1.0000 \end{pmatrix} \,\, \approx \,\,

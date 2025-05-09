@@ -109,7 +109,7 @@ $$
   \mathbf{v}_1 \ip \mathbf{v}_2 = \begin{pmatrix} 2\\1 \end{pmatrix}\ip \begin{pmatrix} -1\\2 \end{pmatrix} = -2  +2  = 0,
 $$
 
-and $A$ can be diagonalized as
+and $A$ can be diagonalised as
 
 $$
    A = PDP^{-1} = \begin{pmatrix}2&-1\\1&2 \end{pmatrix}\begin{pmatrix}2 & 0\\0& -3 \end{pmatrix}
@@ -134,7 +134,7 @@ The transformation $T(\vect{x}) =  \begin{pmatrix} 1&2\\2&-2 \end{pmatrix}\vect{
 :::
 
 
-Furthermore, if we normalize the eigenvectors, i.e., the columns of $P$, we find the following diagonalisation of $A$ with an orthogonal matrix $Q$:
+Furthermore, if we normalise the eigenvectors, i.e., the columns of $P$, we find the following diagonalisation of $A$ with an orthogonal matrix $Q$:
 
 $$
  A = QDQ^{-1} = \begin{pmatrix}2/\sqrt{5}&1/\sqrt{5}\\1/\sqrt{5}&-2/\sqrt{5} \end{pmatrix}\begin{pmatrix}2 & 0\\0& -3 \end{pmatrix}
@@ -462,7 +462,7 @@ $$
          = \dfrac12\begin{pmatrix} 1 \\ -4 \\ 1\end{pmatrix}.
 $$
 
-Normalizing the orthogonal basis $\{\mathbf{u}_1, \mathbf{u}_2, \mathbf{v}_3\}$ and putting them side by side in a matrix yields the orthogonal matrix
+Normalising the orthogonal basis $\{\mathbf{u}_1, \mathbf{u}_2, \mathbf{v}_3\}$ and putting them side by side in a matrix yields the orthogonal matrix
 
 $$
   Q = \begin{pmatrix} \dfrac{1}{\sqrt{2}} & \dfrac{1}{\sqrt{18}} & \dfrac{2}{3} \\
@@ -539,7 +539,7 @@ $$
 
 Two independent eigenvectors: $\vect{v}_3 = \left(\begin{array}{c} -1 \\ 1 \\ 1 \\ 0  \end{array} \right)$ and $\vect{v}_4 = \left(\begin{array}{c} 1 \\ -2 \\ 0 \\ 1  \end{array} \right)$.
 
-Again these can be orthogonalized, and then we find the following complete set of eigenvectors, i.e., a basis for $\R^4$:
+Again these can be orthogonalised, and then we find the following complete set of eigenvectors, i.e., a basis for $\R^4$:
 
 $$
   \vect{u}_1 = \begin{pmatrix} 1 \\ 1 \\ 0\\ 1\end{pmatrix}, \quad
@@ -659,7 +659,7 @@ $$
 
 $$
 
-This proves that $A$ is diagonalisable, with $Q = Q_1Q_2 \cdots Q_{n-1}$ as a diagonalizing matrix.
+This proves that $A$ is diagonalisable, with $Q = Q_1Q_2 \cdots Q_{n-1}$ as a diagonalising matrix.
 
 Moreover, since the product of orthogonal matrices is orthogonal, $A$ is in fact orthogonally diagonalisable.
 
@@ -750,7 +750,7 @@ $$
                                     \end{array}   \right).
 $$
 
-If we normalize and use them as the columns of $\tilde{Q}_2$ as in the proof of {prf:ref}`Thm:SymmetricMat:OrthogDiag`, we find as second matrix in that construction
+If we normalise and use them as the columns of $\tilde{Q}_2$ as in the proof of {prf:ref}`Thm:SymmetricMat:OrthogDiag`, we find as second matrix in that construction
 
 $$
 
@@ -811,7 +811,7 @@ $$
 $$
 
 Note: given the eigenvalues, these eigenvectors could have been found more efficiently by solving the systems
-$(A - \lambda_iI)\vect{x} = \vect{0}$, and then orthogonalize by the Gram-Schmidt procedure. As is done in
+$(A - \lambda_iI)\vect{x} = \vect{0}$, and then orthogonalise by the Gram-Schmidt procedure. As is done in
 {prf:ref}`Ex:SymmetricMat:OrthogDiag3x3`. <BR>
 The importance of the step-by-step reduction is that it shows that from the 'minimal' assumptions of symmetry and the existence of real eigenvalues it is possible to create an orthogonal diagonalisation.
 
@@ -1026,7 +1026,7 @@ Furthermore these one-dimensional subspaces are orthogonal to each other.
 So we have that this symmetric matrix can be written as a linear combination of matrices that represent orthogonal projections.
 ::::
 
-The construction we performed in the last example can be generalized. Which is the content of the last theorem in this section.
+The construction we performed in the last example can be generalised. Which is the content of the last theorem in this section.
 
 ::::{prf:theorem} Spectral Decomposition of Symmetric Matrices
 :label: Thm:SymmetricMat:SpectralDecomp
@@ -1063,7 +1063,7 @@ A =  \lambda_1 \mathbf{q}_1\mathbf{q}_1^T + \lambda_2\mathbf{q}_2\mathbf{q}_2^T 
 
 :::
 
-where the vectors $\mathbf{q}_i$ of course are the (orthonormal) columns of the diagonalizing matrix $Q$. This is indeed a linear combination of orthogonal projections, as was to be shown.
+where the vectors $\mathbf{q}_i$ of course are the (orthonormal) columns of the diagonalising matrix $Q$. This is indeed a linear combination of orthogonal projections, as was to be shown.
 ::::
 
 ::::{exercise}

@@ -233,11 +233,11 @@ $$
 
 ::::::
 
-{prf:ref}`Prop:DetExtras:ScaleFactorR2` can be generalized to higher dimensions.  
+{prf:ref}`Prop:DetExtras:ScaleFactorR2` can be generalised to higher dimensions.  
 For $n = 3$ area becomes volume. <BR>
 For higher dimensions the starting point for volume is  {prf:ref}`Dfn:DetExtras:VolumeRn` for the volume of parallelepids. To extend the definition to volumes of more general regions is by no means a trivial matter, and we will not consider it here. 
 
-In  $\R^n$  we can at least generalize {prf:ref}`Prop:DetExtras:DetAsScaleFactorR2`  to parallelepipeds.
+In  $\R^n$  we can at least generalise {prf:ref}`Prop:DetExtras:DetAsScaleFactorR2`  to parallelepipeds.
 
 ::::::{prf:proposition}
 :label: Prop:DetExtras:ScaleFactorRn
@@ -352,7 +352,7 @@ $$
  \det{A} = -8 < 0 \quad \text{and} \quad \det{B} = 8 > 0.
 $$
 
-{numref}`Figure %s <Fig:DetExtras:Orientation>` visualizes what is going on.
+{numref}`Figure %s <Fig:DetExtras:Orientation>` visualises what is going on.
 
 ```{applet}
 :url: detextras/orientation

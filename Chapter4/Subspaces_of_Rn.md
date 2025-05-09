@@ -6,7 +6,7 @@
 
 Subspaces are structures that appear in many different subfields of linear algebra.
 For instance, they appear as solution sets of homogeneous systems of linear equations, and as ranges of linear transformations, to mention two situations that we have already come across.
-In this section we will define them and analyze their basic properties. In {numref}`Sec:BasisDim` we will consider the important attributes basis and dimension.
+In this section we will define them and analyse their basic properties. In {numref}`Sec:BasisDim` we will consider the important attributes basis and dimension.
 
 ## Definition of subspace and basic properties
 
@@ -133,7 +133,7 @@ A line is a subspace of $\R^2$ if and only if it goes through $(0,0)$.
 :label: Ex:Subspaces:SubspacesR3
 
 Examples of subspaces in $\R^3$ are lines and planes through the origin.
-Try to visualize that these sets do satisfy the properties of a subspace. A sketch may help.
+Try to visualise that these sets do satisfy the properties of a subspace. A sketch may help.
 It is good practice to keep these examples in mind as typical examples of subspaces.
 
 ::::::
@@ -404,7 +404,7 @@ would be a set of four linearly independent vectors in $\R^3$, which by {prf:ref
 
 ::::::
 
-The argument can be generalized to prove the following theorem.
+The argument can be generalised to prove the following theorem.
 
 ::::::{prf:theorem}
 :label: Thm:Subspaces:AllSubspacesRn

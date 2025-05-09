@@ -523,7 +523,7 @@ Changing the order of the equations.
 :class: tudproof
 
 The correctness of the first operation is illustrated in
-{prf:ref}`Ex:LinSystems:EliminationFirst`. One example is by far not a proof, but the explanation given there can be generalized/formalized.  
+{prf:ref}`Ex:LinSystems:EliminationFirst`. One example is by far not a proof, but the explanation given there can be generalised/formalised.  
 The other two statements are rather obvious.
 
 ::::
@@ -1002,7 +1002,7 @@ Such a matrix is also called a **row echelon matrix**.
 ::::{prf:example}
 :label: Ex:LinSystems:EchelonForm
 
-The following three matrices are meant to visualize the structure of an echelon matrix.
+The following three matrices are meant to visualise the structure of an echelon matrix.
 The symbol $\blacksquare$ denotes an arbitrary *nonzero* number and $\ast$ just any real number.
 
 $$

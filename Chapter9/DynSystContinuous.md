@@ -217,7 +217,7 @@ a_{nn}
 
 $$
 
-Of course, most matrices are not diagonal. However, most matrices are at least _diagonalisable_, and we can use this to our advantage. Suppose that the matrix $A$ can be diagonalized, so $A=PDP^{-1}$ where $D$ is the diagonal matrix with the eigenvalues $\lambda_{1},...,\lambda_{n}$ on the diagonal and $P$ is the matrix with the corresponding eigenvectors $\vect{v}_{1},...,\vect{v}_{n}$ as columns. Then we have 
+Of course, most matrices are not diagonal. However, most matrices are at least _diagonalisable_, and we can use this to our advantage. Suppose that the matrix $A$ can be diagonalised, so $A=PDP^{-1}$ where $D$ is the diagonal matrix with the eigenvalues $\lambda_{1},...,\lambda_{n}$ on the diagonal and $P$ is the matrix with the corresponding eigenvectors $\vect{v}_{1},...,\vect{v}_{n}$ as columns. Then we have 
 
 $$
 

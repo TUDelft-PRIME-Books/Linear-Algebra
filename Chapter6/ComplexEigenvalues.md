@@ -319,7 +319,7 @@ $$
   r = |\lambda|, \quad \varphi = \text{arg}\,\lambda.
 $$
 
-{prf:ref}`Prop:ComplexEV:Rotation` can be generalized as follows. If a real $n \times n$ matrix $A$ has a non-real eigenvalue, there is always a rotation 'hidden' in the transformation $T: \vect{x} \mapsto A\vect{x}$.
+{prf:ref}`Prop:ComplexEV:Rotation` can be generalised as follows. If a real $n \times n$ matrix $A$ has a non-real eigenvalue, there is always a rotation 'hidden' in the transformation $T: \vect{x} \mapsto A\vect{x}$.
 
 ::::::{prf:proposition}
 :label: Prop:ComplexEV:Invariant
@@ -473,10 +473,10 @@ We conclude this section by reconsidering diagonalisability of real matrices if 
 
 ## Complex diagonalisability
 
-Let us first generalize the definition:
+Let us first generalise the definition:
 
 ::::::{prf:definition}
-:label: Dfn:Eigenvalues:ComplexDiagonalizability
+:label: Dfn:Eigenvalues:ComplexDiagonalisability
 
 A matrix is $A$ is called **complex diagonalisable** if it can be written in the form
 

@@ -1109,7 +1109,7 @@ The three solutions from {prf:ref}`Ex:ComplexNumbers:threesolutions`.
 
 ::::
 
-We can generalize the method for solving $z^n=w$ from the example above:
+We can generalise the method for solving $z^n=w$ from the example above:
 
 ```{prf:algorithm} Solving $z^n=w$
 
