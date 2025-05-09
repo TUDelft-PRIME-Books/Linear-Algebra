@@ -378,7 +378,7 @@ This agrees with what we derived in {prf:ref}`Ex:QuadForms:CompleteSquares`.
 
 ::::
 
-The technique of completing the squares is one way to 'diagonalize' a quadratic form. It may be turned into an algorithm that also works for quadratic forms in $n$ variables, but
+The technique of completing the squares is one way to 'diagonalise' a quadratic form. It may be turned into an algorithm that also works for quadratic forms in $n$ variables, but
 we will not pursue that track. There is a route that is more in line with the properties of symmetric matrices.
 
 Suppose $A$ is a symmetric matrix. We have seen (cf. {prf:ref}`Thm:SymmetricMat:OrthogDiag`) that it can be written as
@@ -406,7 +406,7 @@ $$
     q(\vect{x}) = \vect{x}^TA\vect{x}.
 $$
 
-Let $Q$ be an orthogonal matrix diagonalizing $A$. That is,  $A = QDQ^{-1}$. <BR>
+Let $Q$ be an orthogonal matrix diagonalising $A$. That is,  $A = QDQ^{-1}$. <BR>
 Applying the substitution $\vect{x} = Q\vect{y}$ then yields the quadratic form
 
 $$
@@ -1114,7 +1114,7 @@ $$
 $$
 
 The eigenvectors are orthogonal, as they should, for a symmetric matrix. We see
-that $A$ can be orthogonally diagonalized as
+that $A$ can be orthogonally diagonalised as
 
 $$
   A = QDQ^{-1} = QDQ^T, \quad Q = \frac{1}{\sqrt{2}}\begin{pmatrix} 1 & 1 \\ -1 & 1\end{pmatrix}, \,\,
@@ -1200,7 +1200,7 @@ $$
   \lambda_2 = 7,\,\vect{v}_2 = \begin{pmatrix} 1 \\ 2\end{pmatrix}.
 $$
 
-We orthogonally diagonalize $A$ as
+We orthogonally diagonalise $A$ as
 
 $$
   A = QDQ^{-1} = QDQ^T, \quad Q = \frac{1}{\sqrt{5}}\begin{pmatrix} 2 & 1 \\ -1 & 2\end{pmatrix}, \,\,
@@ -1357,7 +1357,7 @@ The  ellipse with its principal axes.
 :url: https://embed.grasple.com/exercises/51f56e96-3761-44c5-8d20-4cf0047a1ea4?id=93115
 :label: grasple_exercise_8_2_12
 :dropdown:
-:description: Maximizing  $\vect{x}^TA\vect{x}$ under the restriction $\norm{\vect{x}}=1$, for a 2x2 matrix $A$. 
+:description: Maximising  $\vect{x}^TA\vect{x}$ under the restriction $\norm{\vect{x}}=1$, for a 2x2 matrix $A$. 
 
 ::::
 

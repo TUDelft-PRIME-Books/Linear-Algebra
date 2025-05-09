@@ -255,7 +255,7 @@ is an orthogonal basis for span$\{\vect{a}_1,\ldots, \vect{a}_4\}$.
 %::::{prf:remark}
 %:label: Exc:GramSchmidt:NonBasis
 
-The idea of {prf:ref}`Ex:GramSchmidt:NonOrthog` can be generalized as follows.
+The idea of {prf:ref}`Ex:GramSchmidt:NonOrthog` can be generalised as follows.
 Suppose $W = \text{span}\{\vect{a}_1,\ldots,\vect{a}_m\}$, where the vectors $\vect{a}_i$ are not
 necessarily linearly independent.
 If we apply the Gram-Schmidt construction and discard the zero vector if it comes up, then we end up with an orthogonal basis $\{\vect{b}_1,\ldots,\vect{b}_k\}$ for $W$. Note that $k < m$ occurs precisely when the original generating set of vectors $\{\vect{a}_1,\ldots,\vect{a}_m\}$ is linearly dependent.
@@ -298,7 +298,7 @@ $$
    \left\{\begin{pmatrix} 1 \\ 1   \\-1  \\1   \end{pmatrix}, \begin{pmatrix} 1 \\ 1 \\0 \\-2  \end{pmatrix},   \begin{pmatrix} 2 \\ 0   \\3  \\1  \end{pmatrix}\right\}.
 $$
 
-Rescaling (or normalizing) gives the orthonormal basis
+Rescaling (or normalising) gives the orthonormal basis
 
 $$
 
@@ -335,7 +335,7 @@ $$
 
 where $Q$ is an $n \times m$ matrix with _orthonormal columns_, and $R$ is an _upper triangular_ $m \times m$ matrix, with *positive* diagonal entries.
 
-The matrix $Q$ is found by applying the Gram-Schmidt process to the (linearly independent) columns $\vect{a}_1,\ldots,\vect{a}_m$ of the matrix $A$ and then renormalizing.
+The matrix $Q$ is found by applying the Gram-Schmidt process to the (linearly independent) columns $\vect{a}_1,\ldots,\vect{a}_m$ of the matrix $A$ and then renormalising.
 
 ::::
 
@@ -352,7 +352,7 @@ $$
  \vect{b}_{j+1} = \vect{a}_{j+1} - \dfrac{\vect{a}_{j+1}\ip\vect{b}_1}{\vect{b}_1\ip\vect{b}_1}\vect{b}_1  - \ldots - \dfrac{\vect{a}_{j+1}\ip\vect{b}_j}{\vect{b}_j\ip\vect{b}_j}\vect{b}_j.
 $$
 
-Realizing that each $\vect{b}_i$ is in the span
+Realising that each $\vect{b}_i$ is in the span
 of $\{\vect{a}_1, \vect{a}_2, \ldots , \vect{a}_{i} \}$,
 
 it follows that
@@ -381,7 +381,7 @@ $$
    \end{pmatrix} = AC.
 $$
 
-Normalizing the vectors $\vect{b}_i$ can be seen as multiplying the matrix $B$ with a diagonal matrix $D$:
+Normalising the vectors $\vect{b}_i$ can be seen as multiplying the matrix $B$ with a diagonal matrix $D$:
 
 $$
 

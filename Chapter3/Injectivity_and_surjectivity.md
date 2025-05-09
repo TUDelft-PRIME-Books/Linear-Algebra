@@ -361,7 +361,7 @@ The transformation $T$ from {prf:ref}`Ex:InjSurj:SurjEx` [ii.](#Item:InjSurj:Sur
 ```{applet}
 :url: injectivity_and_surjectivity/injsurj-injex-example2
 :fig: Images/Fig-InjSurj-InjEx.svg
-:name: Fig:InjSurj:InjExExample
+:name: Fig:InjSurj:InjExExample2
 :class: dark-light
 
  You can select any of three transformations using the dropdown menu on the bottom. Find out for which of these $\vect{u}$ is in the range of $T$ by dragging the vector on the left.

@@ -1,9 +1,9 @@
 (Sec:SingValDec)=
 
-## Singular Value Decomposition (SVD)
+# Singular Value Decomposition (SVD)
 
 We have seen already several ways to factorise matrices. In {numref}`Sec:LUdecomp`, we studied the $LU$ and the $PLU$ factorisations, and in  {numref}`Sec:Gram-Schmidt:QRdecomp`
-we laid the QR Decomposition on the table. In {numref}`Sec:SymmetricMat` we showed that every symmetric (square) matrix $A$ can be written as  $A = QDQ^{-1} = QDQ^T$. In this section it is in a sense this last decomposition we will generalize to non-symmetric matrices, and even to non-square matrices.
+we laid the QR Decomposition on the table. In {numref}`Sec:SymmetricMat` we showed that every symmetric (square) matrix $A$ can be written as  $A = QDQ^{-1} = QDQ^T$. In this section it is in a sense this last decomposition we will generalise to non-symmetric matrices, and even to non-square matrices.
 We will introduce and study the so-called **singular value decomposition** (SVD) of a matrix.
 In the first subsection ({numref}`Subsec:SVD:Definition`) we will give the definition of the SVD, and illustrate it with a few examples.  In the second subsection ({numref}`Subsec:SVD:Existence`) an algorithm to compute the SVD is presented and illustrated. And it will be shown that this algorithm always yields a proper SVD.
 The last two subsections  will be devoted to understanding the SVD in a geometric way, and to possible practical uses of the SVD.
@@ -291,7 +291,7 @@ This can also be formulated as
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SVD:HighestSigma`
 :class: tudproof, dropdown
 
-To maximize  $\norm{A\vect{x}}$  we may as well maximize  $\norm{A\vect{x}}^2$. &nbsp; Note that
+To maximise  $\norm{A\vect{x}}$  we may as well maximise  $\norm{A\vect{x}}^2$. &nbsp; Note that
 
 $$
   \norm{A\vect{x}}^2 = (A\vect{x})\ip(A\vect{x}) = \vect{x}^TA^TA\vect{x}.
@@ -382,7 +382,7 @@ We follow the steps of the algorithm.
     Skipping the computations we find  $\mathbf{w}_1 = \begin{pmatrix} 2\\-1
 \end{pmatrix}$ and  $\mathbf{w}_2 = \begin{pmatrix} 1\\2
 \end{pmatrix}$.  <BR>
-  Normalizing and putting them in a matrix gives  $V = \begin{pmatrix}
+  Normalising and putting them in a matrix gives  $V = \begin{pmatrix}
 \frac{2}{\sqrt{5}} & \frac{1}{\sqrt{5}} \\[.5ex]
 -\frac{1}{\sqrt{5}} & \frac{2}{\sqrt{5}}
 \end{pmatrix}$.
@@ -405,7 +405,7 @@ Note that 'magically' $\{\mathbf{u}_1,  \mathbf{u}_2\}$ is indeed an orthonormal
 We have to extend this to an orthonormal basis of $\R^3$. For this low dimensional problem we can use the cross product!  
 First we compute the orthogonal vector 
  $\quad \vect{w}_3  = \begin{pmatrix}11\\-8\\-5 \end{pmatrix} \times  \begin{pmatrix}3\\1\\5 \end{pmatrix} = \begin{pmatrix}-35\\-70\\35 \end{pmatrix} = 35 \begin{pmatrix}-1\\-2\\1 \end{pmatrix}$. <BR>
- Normalizing $\vect{w}_3$ gives the third basis vector $\vect{u}_3 =  \dfrac{1}{\sqrt{6}} \begin{pmatrix}-1\\-2\\1 \end{pmatrix}$.
+ Normalising $\vect{w}_3$ gives the third basis vector $\vect{u}_3 =  \dfrac{1}{\sqrt{6}} \begin{pmatrix}-1\\-2\\1 \end{pmatrix}$.
 
 Thus we end up with the matrix  $U = \begin{pmatrix}\frac{11}{\sqrt{210}}&\frac{3}{\sqrt{35}} &-\frac{1}{\sqrt{6}}\\ -\frac{8}{\sqrt{210}}&\frac{1}{\sqrt{35}} &-\frac{2}{\sqrt{6}}\\-\frac{5}{\sqrt{210}}&\frac{5}{\sqrt{35}} & \frac{1}{\sqrt{6}}\end{pmatrix}$.
 
@@ -495,7 +495,7 @@ Therefore,  $A\mathbf{u}$ is an eigenvector of $AA^T$ with associated eigenvalue
 To prove the converse, one can use a similar argument.
 
 
-Now let's have a look at the multiplicities.   Since $A^TA$ is symmetric, hence diagonalizable, for each eigenvalue $\lambda$, the geometric and algebraic multiplicity are equal. And the same holds, of course, for the matrix $AA^T$.  So we are done if we can show that for each eigenvalue $\lambda_i \neq 0$,
+Now let's have a look at the multiplicities.   Since $A^TA$ is symmetric, hence diagonalisable, for each eigenvalue $\lambda$, the geometric and algebraic multiplicity are equal. And the same holds, of course, for the matrix $AA^T$.  So we are done if we can show that for each eigenvalue $\lambda_i \neq 0$,
 
 $$
     \text{g.m.}_{A^TA}(\lambda_i) = \text{g.m.}_{AA^T}(\lambda_i) 
@@ -575,7 +575,7 @@ $$
 $$
 
 To turn the orthonormal set  $\vect{u}_1, \ldots, \vect{u}_r$ into an orthonormal basis 
-$\vect{u}_1, \ldots, \vect{u}_m$  of $\R^m$ , we can use techniques from {numref}`Sec:BasisDim`  (especially  {prf:ref}`Prop:BasisDim:Thinning`) and {numref}`Sec:Gram-Schmidt`.  In short, keep adding linearly independent vectors until the whole of $\R^m$ is spanned, and then orthogonalize using the Gram-Schmidt process.
+$\vect{u}_1, \ldots, \vect{u}_m$  of $\R^m$ , we can use techniques from {numref}`Sec:BasisDim`  (especially  {prf:ref}`Prop:BasisDim:Thinning`) and {numref}`Sec:Gram-Schmidt`.  In short, keep adding linearly independent vectors until the whole of $\R^m$ is spanned, and then orthogonalise using the Gram-Schmidt process.
 
 This leaves us with
 
@@ -630,7 +630,7 @@ Some concluding remarks concerning the algorithm.
  In most applications the singular value decomposition will be applied to  $m\times n$ matrices $A$  with much more rows that columns,  so  $m \gg n$. For such  matrices $A$, 
  working with $A^TA$ is the best bet.
 
- 2. The normalization of the vectors  $\mathbf{v}_i$ and $\mathbf{u}_j$ may be postponed till the end of step 5.  That prevents dragging along
+ 2. The normalisation of the vectors  $\mathbf{v}_i$ and $\mathbf{u}_j$ may be postponed till the end of step 5.  That prevents dragging along
  the obnoxious square root denominators.
 
 ::::
@@ -688,9 +688,9 @@ Step 4. With some effort we can find eigenvectors: <BR>
 $\vect{v}_1 = \begin{pmatrix} 1 \\ -3 \\ -2 \end{pmatrix}$, for $\lambda_1 = 14$,
   $\vect{v}_2 = \begin{pmatrix} 1 \\ -3 \\ 5 \end{pmatrix}$, for $\lambda_2 = 7$, and
 $\vect{v}_3 = \begin{pmatrix} 3 \\ 1 \\ 0 \end{pmatrix}$, for $\lambda_3 = 2$. <BR>
-Note that these are indeed three orthogonal vectors, which, according to {prf:ref}`Rem:SVD:PracticalHints`, are better not normalized immediately.
+Note that these are indeed three orthogonal vectors, which, according to {prf:ref}`Rem:SVD:PracticalHints`, are better not normalised immediately.
 
-Step 5.  Next we compute the vectors $\vect{u}_i$, again without normalizing, and also for the moment not taking the (ugly!) factors
+Step 5.  Next we compute the vectors $\vect{u}_i$, again without normalising, and also for the moment not taking the (ugly!) factors
 $\frac{1}{\sigma_i} $ into account. Since the singular values are nonzero, we use all three vectors $\vect{v}_i$. <BR>
 This gives 
 
@@ -773,7 +773,7 @@ Let us consider a numerical example.
 ::::{prf:example}
 :label: Ex:SVD:GeometricView
 
-We will analyze the SVD of the matrix
+We will analyse the SVD of the matrix
   $A = \begin{pmatrix} 5 & 2 \\ 0 & 6 \end{pmatrix}$.
 
 The matrix  
@@ -794,7 +794,7 @@ $$
   \mathbf{v}_1 = \begin{pmatrix} 1  \\ 2 \end{pmatrix}, \quad \mathbf{v}_2 = \begin{pmatrix} 2  \\ -1 \end{pmatrix}.
 $$
 
-Normalizing them, and giving the second vector a minus sign,
+Normalising them, and giving the second vector a minus sign,
 we find for an SVD of the matrix $A$ the matrices
 
 $$
@@ -830,7 +830,7 @@ $$
 where $U$ and $V$ are the same as for $A$, and 
    $\tilde{\Sigma} =  \begin{pmatrix} 3 & 0 \\ 0 & 2 \end{pmatrix}$.
 
-{numref}`Figure %s <Fig:SVD:GeometricView>` visualizes what is going on. 
+{numref}`Figure %s <Fig:SVD:GeometricView>` visualises what is going on. 
 
  Note that at the end the vector $\vect{e}_1$  comes to rest on the $x$-axis,  as it should, since
 
@@ -888,7 +888,7 @@ As another example, think of a survey of $n$ questions that have to be answered 
 In the first situation there will be both a high correlation between columns that are close to each other, as well as between nearby rows.  If the picture is a true photo the matrix will be far from a 'random' matrix.
 In the second context  one might expect that the columns will highly correlate:  people that agree on certain issues are more likely to agree on other issues as well.  
 
-The main features of the data may be filtered out by analyzing an SVD of the matrix at hand.
+The main features of the data may be filtered out by analysing an SVD of the matrix at hand.
 
 The basic idea comes from the 'spectral decomposition' as in the last observation of {prf:ref}`Ex:SVD:firstSVD`.  Suppose $A$ is a matrix of  rank $r$,  with nonzero singular values  $\sigma_1 \geq \sigma_2 \geq \ldots \geq \sigma_r > 0$.  Furthermore, let  $U\Sigma V^T$  be a singular value decomposition of the matrix $A$. Let 
 

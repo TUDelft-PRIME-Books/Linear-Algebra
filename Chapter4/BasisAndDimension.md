@@ -156,7 +156,7 @@ This basis was already defined in {numref}`Sec:LinTrafo`, Equation {eq}`Eq:LinTr
 ::::::{prf:example}
 :label: Ex:BasisDim:StandardBasisR2R3
 
-The standard basis in $\R^2$ can be visualized as two perpendicular unit vectors, e.g.
+The standard basis in $\R^2$ can be visualised as two perpendicular unit vectors, e.g.
 with $\vect{e}_1$ pointing to the right and $\vect{e}_2$ pointing upwards. Likewise we can depict the standard basis $\mathcal E$ of $\R^3$. See {numref}`Figure %s <Fig:BasisDim:StandardBasis>`.
 
 ```{applet}
@@ -562,7 +562,7 @@ Most importantly: independent columns of the echelon matrix $E$, i.e. columns of
 
 ::::::
 
-The observations in the last remark are formalized in the following proposition.
+The observations in the last remark are formalised in the following proposition.
 
 ::::::{prf:proposition}
 :label: Prop:BasisDim:PivotColsBasis

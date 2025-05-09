@@ -131,7 +131,7 @@ Fill in the details of the last remark.
 
 ::::::
 
-The above considerations are summarized in the following proposition.
+The above considerations are summarised in the following proposition.
 
 ::::::{prf:proposition}
 :label: Prop:Diagonalizable:EqualMultiplicitiesSimilarMatrices
@@ -978,7 +978,7 @@ $$
 :url: https://embed.grasple.com/exercises/bd1c8f7a-917f-431f-889b-463ab7a7c6f6?id=91486
 :label: grasple_exercise_6_3_1
 :dropdown:
-:description: Given a $2\times 2$ matrix $A$ and 'diagonalizer' $P$, to find the diagonal matrix $D$ such that $A=PDP^{-1}$.  
+:description: Given a $2\times 2$ matrix $A$ and 'diagonaliser' $P$, to find the diagonal matrix $D$ such that $A=PDP^{-1}$.  
 
 ::::::
 
