@@ -469,33 +469,33 @@ $$
 
 ::::::
 
-We conclude this section by reconsidering diagonalizability of real matrices if we allow complex eigenvalues.
+We conclude this section by reconsidering diagonalisability of real matrices if we allow complex eigenvalues.
 
-## Complex diagonalizability
+## Complex diagonalisability
 
 Let us first generalize the definition:
 
 ::::::{prf:definition}
 :label: Dfn:Eigenvalues:ComplexDiagonalizability
 
-A matrix is $A$ is called **complex diagonalizable** if it can be written in the form
+A matrix is $A$ is called **complex diagonalisable** if it can be written in the form
 
 $$
 A = PDP^{-1}.
 $$
 
 where $D$ is a diagonal matrix, and $P$ and $D$ may contain complex entries.
-We then say that $PDP^{-1}$ is a **diagonalization** of $A$.
+We then say that $PDP^{-1}$ is a **diagonalisation** of $A$.
 
 ::::::
 
 
 
-Just like in the real case diagonalizability has all to do with the existence of enough (possibly complex) eigenvectors. The derivation is the same as in {numref}`Section %s <Sec:Diagonalize>`, we only repeat the conclusion.
+Just like in the real case diagonalisability has all to do with the existence of enough (possibly complex) eigenvectors. The derivation is the same as in {numref}`Section %s <Sec:Diagonalize>`, we only repeat the conclusion.
 
 ::::::{prf:proposition}
 
-An $n\times n$ matrix is (complex) diagonalizable if and only if there exists a basis of eigenvectors for $\mathbb{C}^n$.
+An $n\times n$ matrix is (complex) diagonalisable if and only if there exists a basis of eigenvectors for $\mathbb{C}^n$.
 
 In that case, if $\vect{v}_1, \ldots, \vect{v}_n$ are $n$ linearly independent eigenvectors for the eigenvalues $\lambda_1, \ldots, \lambda_n$,
 then
@@ -539,12 +539,12 @@ Which you are challenged to check by a careful calculation.
 <ul>
 <li>
 
-When the context requires it, we will specify whether we mean **real diagonalizable** or **complex diagonalizable**.
+When the context requires it, we will specify whether we mean **real diagonalisable** or **complex diagonalisable**.
 
 </li>
 <li>
 
-Since the real numbers are contained in the complex numbers, a matrix that is real diagonalizable is automatically complex diagonalizable.
+Since the real numbers are contained in the complex numbers, a matrix that is real diagonalisable is automatically complex diagonalisable.
 
 </li>
 <li>
@@ -557,13 +557,13 @@ The definition also makes sense for matrices with complex numbers as entries. Ho
 ::::::
 
 
-For a matrix to be real diagonalizable {prf:ref}`Thm:Diagonalizable:ThirdCharacterization` states that two conditions must be satisfied. One is that the characteristic polynomial of $A$ must have $n$ real roots, counting multiplicities. The second is that for each eigenvalue the geometric multiplicity must be equal to the algebraic multiplicity.
-The Fundamental Theorem of Algebra guarantees that each polynomial of degree $n$ has $n$ roots. So if we allow complex eigenvalues, the first condition is automatically satisfied. We thus find the following criterion for complex diagonalizability of a (possibly complex) matrix $A$.
+For a matrix to be real diagonalisable {prf:ref}`Thm:Diagonalizable:ThirdCharacterization` states that two conditions must be satisfied. One is that the characteristic polynomial of $A$ must have $n$ real roots, counting multiplicities. The second is that for each eigenvalue the geometric multiplicity must be equal to the algebraic multiplicity.
+The Fundamental Theorem of Algebra guarantees that each polynomial of degree $n$ has $n$ roots. So if we allow complex eigenvalues, the first condition is automatically satisfied. We thus find the following criterion for complex diagonalisability of a (possibly complex) matrix $A$.
 
 ::::::{prf:proposition}
-:label: Prop:ComplexEV:ComplexDiagonalizable
+:label: Prop:ComplexEV:ComplexDiagonalisable
 
-A matrix $A$ is complex diagonalizable if and only if for each eigenvalue the geometric multiplicity is equal to the algebraic multiplicity.
+A matrix $A$ is complex diagonalisable if and only if for each eigenvalue the geometric multiplicity is equal to the algebraic multiplicity.
 
 ::::::
 
@@ -660,7 +660,7 @@ A matrix $A$ is complex diagonalizable if and only if for each eigenvalue the ge
 :url: https://embed.grasple.com/exercises/1720d806-7602-41b3-9beb-569967e74c84?id=92543
 :label: grasple_exercise_6_4_10
 :dropdown:
-:description: To find a complex diagonalization of a real  $2\times 2$ matrix (eigenvalues given).  
+:description: To find a complex diagonalisation of a real  $2\times 2$ matrix (eigenvalues given).  
 
 ::::::
 
@@ -669,7 +669,7 @@ A matrix $A$ is complex diagonalizable if and only if for each eigenvalue the ge
 :url: https://embed.grasple.com/exercises/510f78e6-717e-4550-8564-7bbf2c2cf673?id=55388
 :label: grasple_exercise_6_4_11
 :dropdown:
-:description: To find a complex diagonalization of a real  $3\times 3$ matrix (one eigenvalue given).  
+:description: To find a complex diagonalisation of a real  $3\times 3$ matrix (one eigenvalue given).  
 
 ::::::
 

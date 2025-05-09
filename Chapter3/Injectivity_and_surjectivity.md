@@ -198,7 +198,7 @@ Suppose $T\circ S$ is injective but $S$ is not. Then there are $\mathbf{v}_{1}\n
 
 ::::::
 
-All the results we have obtained so far hold true for general transformations. But there are some extra characterizations we can prove for linear transformations.
+All the results we have obtained so far hold true for general transformations. But there are some extra characterisations we can prove for linear transformations.
 
 ::::::{prf:proposition}
 :label: Prop:InjSurj:InjChars

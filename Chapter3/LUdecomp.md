@@ -204,7 +204,7 @@ There are several methods for factorising matrices. The factorisations that we w
 
 %The most common factorisation methods make use of this kind of matrices. This is why we will first %introduce the idea of a trapezoidal and triangular matrix and then discuss the corresponding %factorisation methods and their applications.
 
-In the next subsection we will address the questions of whether an $LU$ decomposition always exists and if so, how to construct it.  With an extra condition on $L$ the decomposition, if it exists, will be unique. In the case where an $LU$ decomposition does not exist we can instead consider the   slightly  more general $PLU$ decomposition. In the remainder of the section we will consider the generalization to non-square matrices and we will analyze to which extent the $(P)LU$ decomposition  can give an efficiency boost.
+In the next subsection we will address the questions of whether an $LU$ decomposition always exists and if so, how to construct it.  With an extra condition on $L$ the decomposition, if it exists, will be unique. In the case where an $LU$ decomposition does not exist we can instead consider the   slightly  more general $PLU$ decomposition. In the remainder of the section we will consider the generalisation to non-square matrices and we will analyze to which extent the $(P)LU$ decomposition  can give an efficiency boost.
 
 
 ## $LU$ decomposition of a square matrix
@@ -213,7 +213,7 @@ In the next subsection we will address the questions of whether an $LU$ decompos
 ::::::{prf:definition}
 :label: Def:LUdecomp:DefinitionLU
 
-Let $A$ be an $n\times n$ matrix. An  **$LU$ decomposition**  of $A$ is a factorization of the type
+Let $A$ be an $n\times n$ matrix. An  **$LU$ decomposition**  of $A$ is a factorisation of the type
 
 $$
 A=LU
@@ -1025,7 +1025,7 @@ where the parameter $a$ is free to choose.
 
 (Subsec:LUdecomp:PLUdecomp)=
 
-## Generalization to non-square matrices and $PLU$ decomposition
+## Generalisation to non-square matrices and $PLU$ decomposition
 
 In this section we describe what can be said regarding $LU$ decompositions for non-square matrices,
 and present a 'workaround' for matrices for which there is no top-down row reduction to echelon form. 
@@ -1158,7 +1158,7 @@ $$
 ::::::
 
 
-The generalization of {prf:ref}`Prop:LUdecomp:Existence` to non-square matrices is captured in the next proposition.
+The generalisation of {prf:ref}`Prop:LUdecomp:Existence` to non-square matrices is captured in the next proposition.
 
 ::::::{prf:proposition}
 :label: Prop:LUdecomp:ExistenceNonsquare
@@ -1952,7 +1952,7 @@ $100$ & $3.4\cdot10^6$ & $7.6\cdot10^5$ & $6.8\cdot10^6$ & $8.6\cdot10^5$ & $3.4
 
 
 We will mention one other advantage the $LU$ decomposition may have, namely when the coefficient matrix $A$ is a **band matrix**. In that case it is much more efficient to work with the $LU$ decomposition than with the inverse.
-Such systems $A\vect{x} = \vect{b}$ for instance appear when (partial) differential equations are solved via discretizations. It falls outside the scope of this textbook to go into the details, but we consider the special case of  **tridiagonal** matrices to illustrate once more the usefulness of the $LU$ decomposition.
+Such systems $A\vect{x} = \vect{b}$ for instance appear when (partial) differential equations are solved via discretisations. It falls outside the scope of this textbook to go into the details, but we consider the special case of  **tridiagonal** matrices to illustrate once more the usefulness of the $LU$ decomposition.
 
 
 ::::::{prf:definition}

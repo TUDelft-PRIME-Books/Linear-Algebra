@@ -19,7 +19,7 @@ Cramer's rule. Seemingly the ultimate solution to almost all systems of $n$ line
 </li>
 <li>
 
-The generalization of the formula
+The generalisation of the formula
 
 $$
 \left(\begin{array}{cc} a &  b \\  c & d\end{array} \right)^{-1}
@@ -32,7 +32,7 @@ to $n\times n$ matrices.
 
 <li>
 
-A certain generalization of the cross product to $n$ dimensions.
+A certain generalisation of the cross product to $n$ dimensions.
 
 </li>
 </ul>
@@ -981,7 +981,7 @@ a_{n1} & a_{n2} & \ldots & a_{n,(n-1)} & v_n
 \end{array}
 :::::
 
-This immediate generalization of the identity $(\vect{a}\times\vect{b})\ip\vect{c} = \det{(\,\vect{a}\,\,\vect{b}\,\,\vect{c}\,) }$ follows if
+This immediate generalisation of the identity $(\vect{a}\times\vect{b})\ip\vect{c} = \det{(\,\vect{a}\,\,\vect{b}\,\,\vect{c}\,) }$ follows if
 we write Equation {eq}`Eq:DetExtras:DetCrossProd-ndim` as in Equation {eq}`Eq:DetExtras:DetCrossProd`.
 
 <ol type = "i">

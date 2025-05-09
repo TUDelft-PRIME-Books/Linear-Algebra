@@ -397,7 +397,7 @@ $$
 
 which is positive if $\vect{c}$ lies on the same side of plane $\mathcal{P}$ as $\vect{a} \times  \vect{b}$, and negative if these vectors lie on opposite sides.
 
-Using the alternative characterization of the inner product as in
+Using the alternative characterisation of the inner product as in
 {prf:ref}`Prop:InnerProduct:DotProdGeometric` we derive that
 
 $$

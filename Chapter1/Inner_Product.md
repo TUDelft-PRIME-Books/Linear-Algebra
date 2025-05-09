@@ -1273,7 +1273,7 @@ Below we will show that it is possible to express the angle between _any_ two (n
 Angle between two vectors.
 ```
 
-First we will show a geometrical characterization of the dot product that holds in $\mathbb{R}^2$ as well as in $\mathbb{R}^3$.
+First we will show a geometrical characterisation of the dot product that holds in $\mathbb{R}^2$ as well as in $\mathbb{R}^3$.
 
 ::::{prf:proposition}
 :label: Prop:InnerProduct:DotProdGeometric

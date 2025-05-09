@@ -1,6 +1,6 @@
 # The inverse matrix theorem
 
-Throughout this book, there are a great many different characterizations of those matrices which are invertible. In this place, we have collected them all for conveniently looking them up.
+Throughout this book, there are a great many different characterisations of those matrices which are invertible. In this place, we have collected them all for conveniently looking them up.
 
 ::::{prf:theorem}
 :label: Thm:Appendices:InverseMatrixTheorem

@@ -1398,7 +1398,7 @@ the $y$ as the **output variable**. Lastly the matrix in the expression on the l
 
 ::::
 
-Several generalizations are possible. We mention two.
+Several generalisations are possible. We mention two.
 
 <ol>
 

@@ -237,7 +237,7 @@ In the next subsection we will learn how to find out whether an arbitrary quadra
 
 (Subsec:SignOfQuadForm)=
 
-## Diagonalization of quadratic forms
+## Diagonalisation of quadratic forms
 
 Let us first consider an example, to get some feeling for what is going on.
 
@@ -516,7 +516,7 @@ The property is known as _Sylvester's Law of Inertia_.
 ::::
 
 
-The following proposition is  a direct consequence of the diagonalization  ({prf:ref}`Prop:QuadForms:Diagonalize`).  
+The following proposition is  a direct consequence of the diagonalisation  ({prf:ref}`Prop:QuadForms:Diagonalize`).  
 
 ::::{prf:proposition}
 :label:  Prop:QuadForms:MaximumxTAx
@@ -695,7 +695,7 @@ $q_A$ is **indefinite** if at least one eigenvalue is positive and at least one 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:QuadForms:Classification`
 :class: tudproof
 
-This immediately follows from {prf:ref}`Prop:QuadForms:Diagonalize`. If we make the substitution $\vect{x} = Q\vect{y}$ with the matrix $Q$ of the orthogonal diagonalization, i.e.,
+This immediately follows from {prf:ref}`Prop:QuadForms:Diagonalize`. If we make the substitution $\vect{x} = Q\vect{y}$ with the matrix $Q$ of the orthogonal diagonalisation, i.e.,
 
 $$
   A = QDQ^{-1} = QDQ^T, \quad
@@ -1050,7 +1050,7 @@ $$
 
 ::::
 
-If in {eq}`Eq:ConicSec:CentralConic` the parameter $b$ is not equal to zero, the principal axes can be found by diagonalization of the quadratic form
+If in {eq}`Eq:ConicSec:CentralConic` the parameter $b$ is not equal to zero, the principal axes can be found by diagonalisation of the quadratic form
 
 $$
 

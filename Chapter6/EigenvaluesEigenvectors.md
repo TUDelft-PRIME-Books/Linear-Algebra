@@ -721,7 +721,7 @@ So it is natural to state that $R$ has the eigenvalues $\pm i$.
 (As stated before, {numref}`Section %s <Section:ComplexEV>` is devoted to complex eigenvalues.)
 ::::::
 
-By definition an eigenvector cannot be the zero vector. There is not such a restriction on eigenvalues. The following proposition may be seen as another characterization of invertibility of a matrix. It is just a reformulation of what we already knew.
+By definition an eigenvector cannot be the zero vector. There is not such a restriction on eigenvalues. The following proposition may be seen as another characterisation of invertibility of a matrix. It is just a reformulation of what we already knew.
 
 ::::::{prf:proposition}
 :label: Prop:EigenValues:SingularMatrix
@@ -790,7 +790,7 @@ $$
 i.e., the component of $\vect{w}$ in the direction of the first basis vector is multiplied by 3, the other component gets a factor
 $(-1)$.
 
-In a later section we will study matrices $A$ for which such a basis of eigenvectors exists (and call them diagonalizable).
+In a later section we will study matrices $A$ for which such a basis of eigenvectors exists (and call them diagonalisable).
 
 ::::::
 
