@@ -19,7 +19,7 @@ Cramer's rule. Seemingly the ultimate solution to almost all systems of $n$ line
 </li>
 <li>
 
-The generalization of the formula
+The generalisation of the formula
 
 $$
 \left(\begin{array}{cc} a &  b \\  c & d\end{array} \right)^{-1}
@@ -32,7 +32,7 @@ to $n\times n$ matrices.
 
 <li>
 
-A certain generalization of the cross product to $n$ dimensions.
+A certain generalisation of the cross product to $n$ dimensions.
 
 </li>
 </ul>
@@ -102,8 +102,8 @@ $$
 Next, if we scale one of the vectors with a factor $c$, we would want the volume to get a factor $|c|$,
 
 $$
-   \text{Vol}\!\left({\mathcal{P}}(\vect{v}_1, \ldots, {\color{MOOCblue}c} \vect{v}_k, \ldots , \vect{v}_n)\right) =
-   {\color{MOOCblue}|c|}\,\text{Vol}\!\left({\mathcal{P}}(\vect{v}_1, \ldots, \vect{v}_k, \ldots , \vect{v}_n)\right).
+   \text{Vol}\!\left({\mathcal{P}}(\vect{v}_1, \ldots, {c} \vect{v}_k, \ldots , \vect{v}_n)\right) =
+   {|c|}\,\text{Vol}\!\left({\mathcal{P}}(\vect{v}_1, \ldots, \vect{v}_k, \ldots , \vect{v}_n)\right).
 $$
 
 Third, if to one vector $\vect{v}_i$ a linear combination of the other vectors is added, the volume should not change. The underlying idea is borrowed from considerations in $\R^3$.
@@ -233,11 +233,11 @@ $$
 
 ::::::
 
-{prf:ref}`Prop:DetExtras:ScaleFactorR2` can be generalized to higher dimensions.  
+{prf:ref}`Prop:DetExtras:ScaleFactorR2` can be generalised to higher dimensions.  
 For $n = 3$ area becomes volume. <BR>
 For higher dimensions the starting point for volume is  {prf:ref}`Dfn:DetExtras:VolumeRn` for the volume of parallelepids. To extend the definition to volumes of more general regions is by no means a trivial matter, and we will not consider it here. 
 
-In  $\R^n$  we can at least generalize {prf:ref}`Prop:DetExtras:DetAsScaleFactorR2`  to parallelepipeds.
+In  $\R^n$  we can at least generalise {prf:ref}`Prop:DetExtras:DetAsScaleFactorR2`  to parallelepipeds.
 
 ::::::{prf:proposition}
 :label: Prop:DetExtras:ScaleFactorRn
@@ -352,7 +352,7 @@ $$
  \det{A} = -8 < 0 \quad \text{and} \quad \det{B} = 8 > 0.
 $$
 
-{numref}`Figure %s <Fig:DetExtras:Orientation>` visualizes what is going on.
+{numref}`Figure %s <Fig:DetExtras:Orientation>` visualises what is going on.
 
 ```{applet}
 :url: detextras/orientation
@@ -981,7 +981,7 @@ a_{n1} & a_{n2} & \ldots & a_{n,(n-1)} & v_n
 \end{array}
 :::::
 
-This immediate generalization of the identity $(\vect{a}\times\vect{b})\ip\vect{c} = \det{(\,\vect{a}\,\,\vect{b}\,\,\vect{c}\,) }$ follows if
+This immediate generalisation of the identity $(\vect{a}\times\vect{b})\ip\vect{c} = \det{(\,\vect{a}\,\,\vect{b}\,\,\vect{c}\,) }$ follows if
 we write Equation {eq}`Eq:DetExtras:DetCrossProd-ndim` as in Equation {eq}`Eq:DetExtras:DetCrossProd`.
 
 <ol type = "i">

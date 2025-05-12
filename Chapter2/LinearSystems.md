@@ -492,7 +492,7 @@ Two systems of linear equations are called **equivalent** if they have the same 
 
 By the same line of reasoning as in the above example we can deduce that adding an arbitrary multiple of any equation to another equation does not change the solution set of the system.
 Of course if we multiply an equation with some nonzero constant, the solution set also remains invariant. This operation is called **scaling**.
-For the system at hand we could, as a next step, scale the second equation with a factor $-\frac12$. The following proposition summarizes the suitable operations to adapt a system of equations.
+For the system at hand we could, as a next step, scale the second equation with a factor $-\frac12$. The following proposition summarises the suitable operations to adapt a system of equations.
 
 ::::{prf:proposition}
 :label: Prop:LinSystems:ElimOperations
@@ -523,7 +523,7 @@ Changing the order of the equations.
 :class: tudproof
 
 The correctness of the first operation is illustrated in
-{prf:ref}`Ex:LinSystems:EliminationFirst`. One example is by far not a proof, but the explanation given there can be generalized/formalized.  
+{prf:ref}`Ex:LinSystems:EliminationFirst`. One example is by far not a proof, but the explanation given there can be generalised/formalised.  
 The other two statements are rather obvious.
 
 ::::
@@ -750,7 +750,7 @@ Note that the row swap that we used as a first step is not really necessary. How
 
 ::::
 
-We summarize the elimination method in a
+We summarise the elimination method in a
 
 ::::{admonition} Summary
 :class: remark
@@ -1002,7 +1002,7 @@ Such a matrix is also called a **row echelon matrix**.
 ::::{prf:example}
 :label: Ex:LinSystems:EchelonForm
 
-The following three matrices are meant to visualize the structure of an echelon matrix.
+The following three matrices are meant to visualise the structure of an echelon matrix.
 The symbol $\blacksquare$ denotes an arbitrary *nonzero* number and $\ast$ just any real number.
 
 $$
@@ -1718,7 +1718,7 @@ $$
 the same outcome as before.
 ::::
 
-The following algorithm summarizes the solution method for a linear system.
+The following algorithm summarises the solution method for a linear system.
 
 ::::{prf:algorithm}
 :label: Alg:LinSystems:ElimMethod

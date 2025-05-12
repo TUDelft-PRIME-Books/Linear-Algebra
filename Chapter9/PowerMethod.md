@@ -2,7 +2,7 @@
 
 # The Power Method
 
-The eigenvalues of an $n\times n$ matrix $A$ to a large extent characterize the matrix. In theory they can be found as the zeros of the characteristic polynomial. Already for $n = 3$ it is not an easy matter to find the exact zeros, and for $n\geq 5$ there is no general formula for the zeros.  
+The eigenvalues of an $n\times n$ matrix $A$ to a large extent characterise the matrix. In theory they can be found as the zeros of the characteristic polynomial. Already for $n = 3$ it is not an easy matter to find the exact zeros, and for $n\geq 5$ there is no general formula for the zeros.  
 One way to resolve this is to use a numerical method to solve an equation of degree $n$. Alternatively, there are algorithms more in the vein of linear algebra to find approximations of one or more eigenvalues. The simplest of these is the *power method*. This method often provides the eigenvalue of the largest absolute value (or, modulus), and this comes with an eigenvector as well. Note that the largest eigenvalue is in fact the most important eigenvalue concerning the stability or instability of the linear dynamical system connected to $A$.
 
 (Subsec:Powermethod:Basics)=
@@ -10,7 +10,7 @@ One way to resolve this is to use a numerical method to solve an equation of deg
 ## The Basics
 
 The idea behind the power method is really very simple.
-Let us for the moment consider the case where the matrix $A$ is diagonalizable.
+Let us for the moment consider the case where the matrix $A$ is diagonalisable.
 
 The power method is based on the dynamical system
 
@@ -19,7 +19,7 @@ $$
 $$
 
 
-We know from {prf:ref}`Prop:DynSystDiscrete:DiagCase` in {numref}`Sec:DynSystDiscrete` that for a *diagonalizable* matrix $A$ with eigenvalues
+We know from {prf:ref}`Prop:DynSystDiscrete:DiagCase` in {numref}`Sec:DynSystDiscrete` that for a *diagonalisable* matrix $A$ with eigenvalues
 $\lambda_1, \ldots, \lambda_n$ and corresponding eigenvectors  $\vect{v}_1, \ldots, \vect{v}_n$, if we start from
 
 $$
@@ -93,7 +93,7 @@ Suppose $A$ is an $n\times n$ matrix.
 &nbsp; (ii) Find the entry $\mu$ of $\vect{y}$ of the highest absolute value; <BR>
 &nbsp; (iii) Replace $\vect{x}$ by $\dfrac{1}{\mu}\vect{y}$.
 
-Step 2 is repeated until the process more or less stabilizes. For instance, until the difference between the last two computed vectors is smaller than a predetermined 'error' $\varepsilon$.
+Step 2 is repeated until the process more or less stabilises. For instance, until the difference between the last two computed vectors is smaller than a predetermined 'error' $\varepsilon$.
 
 ::::
 
@@ -111,7 +111,7 @@ $$
 the algorithm discards all intermediate iterates.<BR>  
 We are only interested in the last iterate anyway, since we expect this to be the best approximation of an eigenvector.
 
-The scaling step is necessary to avoid ending up at the zero vector or 'at infinity', where all information is lost.  There are alternative ways to scale the iterates.  A common one is to scale with the factors  $\dfrac{1}{\norm{\vect{y}}}$, that is, to normalize the vectors $\vect{y}$.
+The scaling step is necessary to avoid ending up at the zero vector or 'at infinity', where all information is lost.  There are alternative ways to scale the iterates.  A common one is to scale with the factors  $\dfrac{1}{\norm{\vect{y}}}$, that is, to normalise the vectors $\vect{y}$.
 
 ::::
 
@@ -129,7 +129,7 @@ Moreover, suppose $\vect{x}$ is the result after a (sufficiently) large number o
 ::::{admonition} Informal proof of {prf:ref}`Prop:Powermethod:Powermed`
 :class: tudproof, dropdown
 
-For the proof we assume that the matrix is diagonalizable, to be able to use {eq}`Eq:PowerMethod:GenSol`. For an 'arbitrary' matrix the odds are very small that it has a double eigenvalue, and as long as this is not the eigenvalue with the highest modulus the conclusion of the theorem is still valid.  So we assume that  $\vect{v}_1, \ldots, \vect{v}_n$  is a set of $n$ linearly independent eigenvectors for $A$.
+For the proof we assume that the matrix is diagonalisable, to be able to use {eq}`Eq:PowerMethod:GenSol`. For an 'arbitrary' matrix the odds are very small that it has a double eigenvalue, and as long as this is not the eigenvalue with the highest modulus the conclusion of the theorem is still valid.  So we assume that  $\vect{v}_1, \ldots, \vect{v}_n$  is a set of $n$ linearly independent eigenvectors for $A$.
 
 With the scalings we consider in fact the dynamical process
 
@@ -159,7 +159,7 @@ The effect of the scalings is that all along the way we keep vectors with larges
 :label: Ex:PowerMethod:FirstExample
 
 Let $A$ be the matrix &nbsp; $\begin{pmatrix}5 & 2 \\ 2 & 8 \end{pmatrix}$. <BR>
-The matrix is symmetric, hence diagonalizable. Its eigenvalues are $\lambda_1 = 9$, $\lambda_2 = 4$.
+The matrix is symmetric, hence diagonalisable. Its eigenvalues are $\lambda_1 = 9$, $\lambda_2 = 4$.
 
 If we start the process of {prf:ref}`Alg:PowerMethod:PowMed` from the initial vector
 
@@ -330,7 +330,7 @@ $$
    \vect{x}_{200} = \begin{pmatrix}   0.5297 \\ 0.5007 \\ 1.0000 \\ -0.4751 \end{pmatrix}.
 $$
 
-Only after 700 to 800 iterations the process starts to stabilize:
+Only after 700 to 800 iterations the process starts to stabilise:
 
 $$
    \vect{x}_{799} = \begin{pmatrix}   -0.2506 \\ -0.0763 \\ -0.1672 \\1.0000 \end{pmatrix} \,\, \approx \,\,
@@ -628,14 +628,14 @@ In the last example the complex eigenvalues $\lambda_{1,2}$ came up.  For those 
 
 ## Power method and complex eigenvalues
 
-In {numref}`Subsec:Powermethod:Basics` we assumed that the matrix $A$ is diagonalizable,
+In {numref}`Subsec:Powermethod:Basics` we assumed that the matrix $A$ is diagonalisable,
 and in that case we could use {eq}`Eq:PowerMethod:GenSol` to prove that the power method in general converges, and that the speed of convergence depends on the quotient
 
 $$
    \dfrac{|\lambda_2|}{|\lambda_1|}.
 $$   
 
-As long as the dominant eigenvalue is real, the power method will work whether the matrix is diagonalizable or not, and whether all eigenvalues are real or not.  In the following example we apply the power method to a matrix with *'non-dominant'*  complex eigenvalues. 
+As long as the dominant eigenvalue is real, the power method will work whether the matrix is diagonalisable or not, and whether all eigenvalues are real or not.  In the following example we apply the power method to a matrix with *'non-dominant'*  complex eigenvalues. 
 
 ::::{prf:example}
 :label: Ex:PowerMethod:ThirdExample
@@ -677,7 +677,7 @@ $$
   \lambda_1 = 8.8675, \quad  \lambda_{2,3} =  5.5663 \pm 1.8164i.
 $$
 
-So the matrix is not real diagonalizable, but it is complex diagonalizable.
+So the matrix is not real diagonalisable, but it is complex diagonalisable.
 Since the dominant eigenvalue is real, and the ratio
 
 $$

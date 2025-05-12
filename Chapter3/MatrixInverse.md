@@ -265,7 +265,7 @@ $$
 
 ::::::    
 
-The first example can be generalized:
+The first example can be generalised:
 
 ::::::{prf:proposition}
 :label: Prop:MatrixInv:Inverse2x2
@@ -425,7 +425,7 @@ $$
 
 ::::::
 
-The following proposition shows that the above considerations can be generalized.
+The following proposition shows that the above considerations can be generalised.
 
 ::::::{prf:proposition}
 :label: Prop:MatrixInv:InvertibleIndepCols
@@ -1330,7 +1330,7 @@ In the same vein it is shown that $CA$ is the inverse of $B$.
 
 (Subsec:MatrixInverse:Summary)=
 
-## Characterizations of invertibility
+## Characterisations of invertibility
 
 In the previous subsections quite a few properties of invertible matrices came along, either explicitly or implicitly. For future reference we list them in a theorem.
 
@@ -1345,7 +1345,7 @@ $$
 
 For an $n\times n$ matrix $A$, the following statements are equivalent.
 <br/>
-That is, each of the following properties is a characterization of invertibility of a square matrix $A$.
+That is, each of the following properties is a characterisation of invertibility of a square matrix $A$.
 
 <ol>
 <li>
@@ -1392,7 +1392,7 @@ $A$ can be written as a product of elementary matrices: $A = E_1E_2\cdots E_k$.
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations`
 :class: tudproof
 
-It is a good exercise to find out where the evidence of each characterization is found,
+It is a good exercise to find out where the evidence of each characterisation is found,
 and wherever necessary to fill in the missing details.
 
 ::::::

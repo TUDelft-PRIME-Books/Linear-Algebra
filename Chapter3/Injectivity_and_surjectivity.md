@@ -198,7 +198,7 @@ Suppose $T\circ S$ is injective but $S$ is not. Then there are $\mathbf{v}_{1}\n
 
 ::::::
 
-All the results we have obtained so far hold true for general transformations. But there are some extra characterizations we can prove for linear transformations.
+All the results we have obtained so far hold true for general transformations. But there are some extra characterisations we can prove for linear transformations.
 
 ::::::{prf:proposition}
 :label: Prop:InjSurj:InjChars
@@ -361,7 +361,7 @@ The transformation $T$ from {prf:ref}`Ex:InjSurj:SurjEx` [ii.](#Item:InjSurj:Sur
 ```{applet}
 :url: injectivity_and_surjectivity/injsurj-injex-example2
 :fig: Images/Fig-InjSurj-InjEx.svg
-:name: Fig:InjSurj:InjExExample
+:name: Fig:InjSurj:InjExExample2
 :class: dark-light
 
  You can select any of three transformations using the dropdown menu on the bottom. Find out for which of these $\vect{u}$ is in the range of $T$ by dragging the vector on the left.

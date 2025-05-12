@@ -172,7 +172,7 @@ so the length of a vector can be expressed as follows using the dot product
 
 %\todo{Exercise enlightening the connection $\norm{\vect{v}\pm\vect{w}}$ versus %perpendicularity}
 
-Using the dot product the concepts length and perpendicular easily carry over to any $\mathbb{R}^n$, $n \geq 4$. Let's do it one by one, starting by generalizing the dot product in the next subsection.
+Using the dot product the concepts length and perpendicular easily carry over to any $\mathbb{R}^n$, $n \geq 4$. Let's do it one by one, starting by generalising the dot product in the next subsection.
 
 (Subsec:Dot_product:InnerProduct_in_Rn)=
 
@@ -1273,7 +1273,7 @@ Below we will show that it is possible to express the angle between _any_ two (n
 Angle between two vectors.
 ```
 
-First we will show a geometrical characterization of the dot product that holds in $\mathbb{R}^2$ as well as in $\mathbb{R}^3$.
+First we will show a geometrical characterisation of the dot product that holds in $\mathbb{R}^2$ as well as in $\mathbb{R}^3$.
 
 ::::{prf:proposition}
 :label: Prop:InnerProduct:DotProdGeometric
@@ -1529,7 +1529,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/30a7abfe-9d40-4faa-a848-83bd67e024a0?id=62406
-:label: grasple_exercise_1_2_7
+:label: grasple_exercise_1_2_7_2
 :dropdown:
 :description: To compute the norms of vectors in $\R^2$, $\R^3$, $\R^4$.
 

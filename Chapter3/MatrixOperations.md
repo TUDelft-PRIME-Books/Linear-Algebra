@@ -132,7 +132,7 @@ is not defined. This is because the matrices do not have the same size.
 ::::::
 
 ::::::{prf:remark}
-The two definitions of sum and scalar multiple are called **componentwise** definitions. They are completely analogous to the definitions of the scalar multiples of a vector and the sum of two vectors. Hence it is not surprising that they obey exactly the same rules, as is summarized in the next proposition. (cf. Section {ref}`Sec:Vectors`.)
+The two definitions of sum and scalar multiple are called **componentwise** definitions. They are completely analogous to the definitions of the scalar multiples of a vector and the sum of two vectors. Hence it is not surprising that they obey exactly the same rules, as is summarised in the next proposition. (cf. Section {ref}`Sec:Vectors`.)
 
 ::::::
 
@@ -522,7 +522,7 @@ We already saw this row-column expansion in {numref}`Sec:MatVecProduct`.
 
 ::::::
 
-The following scheme nicely visualizes the row-column expansion
+The following scheme nicely visualises the row-column expansion
 
 $$
    \begin{array}{ccc}
@@ -1153,7 +1153,7 @@ $$
 $ \begin{pmatrix} 2 & 0 \\ 0 & 1 \end{pmatrix}\begin{pmatrix} 0 & 1 \\ 1&0 \end{pmatrix} \neq \begin{pmatrix} 0 & 1 \\ 1&0 \end{pmatrix}\begin{pmatrix} 2 & 0 \\ 0 & 1 \end{pmatrix}$.
 ::::
 
-Note that $T_A$ is a transformation that 'stretches' horizontally, and $T_B$ is a reflection. {numref}`Figure %s <Fig:MatrixOps:NonCommutativity>` visualizes the transformations corresponding to $AB$ and $BA$. When we apply the transformations one after another, the order in which we do this is important.
+Note that $T_A$ is a transformation that 'stretches' horizontally, and $T_B$ is a reflection. {numref}`Figure %s <Fig:MatrixOps:NonCommutativity>` visualises the transformations corresponding to $AB$ and $BA$. When we apply the transformations one after another, the order in which we do this is important.
 
 ::::::
 
