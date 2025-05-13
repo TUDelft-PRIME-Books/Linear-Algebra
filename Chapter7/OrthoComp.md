@@ -401,7 +401,6 @@ but $\vect{u}_{V}\cdot\vect{u}_{V^{\bot}}=0$ since $\vect{u}_{V^{\bot}}$ is orth
 ::::
 
 
-
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/6a795f5a-2da1-4de7-9358-5b654bf7365d?id=110452

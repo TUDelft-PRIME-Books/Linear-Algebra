@@ -881,7 +881,7 @@ There will be two applications described in this section.
 
 We start with the first.  <BR>
 Numerical data can be stored in a matrix.<BR>
-For instance, a black-and-white picture/photo can be stored 'pixel by pixel', by numbers that indicate the gray scale, which may for instance be any integer from 0 (completely white) to 31 (completely black). A 9:16 photo may then be stored as, say,  a 1080x1350 matrix.
+For instance, a black-and-white picture/photo can be stored 'pixel by pixel', by numbers that indicate the gray scale, which may for instance be any integer from 0 (completely white) to 31 (completely black). A 4:5 photo may then be stored as, say,  a 1080x1350 matrix.
 <BR>
 As another example, think of a survey of $n$ questions that have to be answered using a 1-5 scale.  If the numbers of respondents is $N$, the data can be represented by an $N \times n$ matrix.
 
@@ -1090,19 +1090,19 @@ We expect $A_3$ to be a good approximation of $A$.
 
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/47ebaa77-9f3c-4363-a57e-d37242c6e598?id=93471
+:url: https://embed.grasple.com/exercises/e4c651aa-a998-4e19-957b-20ddf41509bf?id=93468
 :label: grasple_exercise_8_3_5
 :dropdown:
-:description: To compute the singular values of a 3x2 matrix $A$.
+:description: To find the singular values of a 2x2 matrix $A$.
 ::::
 
 
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/e4c651aa-a998-4e19-957b-20ddf41509bf?id=93468
+:url: https://embed.grasple.com/exercises/47ebaa77-9f3c-4363-a57e-d37242c6e598?id=93471
 :label: grasple_exercise_8_3_6
 :dropdown:
-:description: To find the singular values of a 2x2 matrix $A$.
+:description: To compute the singular values of a 3x2 matrix $A$.
 ::::
 
 
@@ -1111,7 +1111,7 @@ We expect $A_3$ to be a good approximation of $A$.
 :url: https://embed.grasple.com/exercises/36a64482-b217-427c-b132-13aa6d6b67df?id=118350
 :label: grasple_exercise_8_3_7
 :dropdown:
-:description: To find the singular values of a 2x2 matrix $A$.
+:description: To find a singular value decomposition of a 2x2 matrix $A$.
 ::::
 
 
@@ -1120,8 +1120,9 @@ We expect $A_3$ to be a good approximation of $A$.
 :url: https://embed.grasple.com/exercises/30280867-b20e-4590-aa18-868612ba8fbd?id=93476
 :label: grasple_exercise_8_3_8
 :dropdown:
-:description: To find the singular values of a 2x2 matrix $A$ of rank 1.
+:description: To find a singular value decomposition of a 2x2 matrix $A$ of rank 1.
 ::::
+
 
 
 ::::{grasple}
@@ -1131,7 +1132,6 @@ We expect $A_3$ to be a good approximation of $A$.
 :dropdown:
 :description:  To compute an SVD for a 2x3 matrix $A$. 
 ::::
-
 
 
 ::::{grasple}

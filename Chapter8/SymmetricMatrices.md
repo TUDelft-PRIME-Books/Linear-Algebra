@@ -248,6 +248,7 @@ On the one hand
 :::
 
 On the other hand
+
 :::{math}
 :label: eq:SymmetricMat:uTAv4
 
@@ -428,7 +429,7 @@ Lastly we leave it to you to check that an eigenvector for $\lambda_3 = 7$ is gi
 
 (SubSec:SymmetricMat:OrthogDiag)=
 
-## Orthogonal Diagonalisability of Symmetric Matrices
+## Orthogonal diagonalisability of symmetric matrices
 
 Let us restate the main theorem ({prf:ref}`Thm:SymmetricMat:OrthogDiag`) about symmetric matrices:
 
@@ -487,7 +488,7 @@ The procedure followed in  {prf:ref}`Ex:SymmetricMat:OrthogDiag3x3` leads way to
 
 2. Find a basis for each eigenspace.
 
-3. Use the Gram-Schmidt procedure to turn these bases into orthonormal bases for the eigenspace
+3. Use the Gram-Schmidt procedure to turn these bases into orthonormal bases for the eigenspaces.
 
 4. Put everything together in the matrices $D$  and $Q$. 
 
@@ -820,7 +821,27 @@ The importance of the step-by-step reduction is that it shows that from the 'min
 ::::
 
 
-There are situations where it is important to know how large  $\norm{A\vect{x}}$ can become for unit vectors $\vect{x}$.  The general case, for non-square matrices,  will be handled in {numref}`Subsection %s <Subsec:SVDGeometrically>`.  For symmetric matrices the question is answered by the next proposition.
+
+## Maximising $||A\vect{x}||$ for a symmetric matrix $A$.
+
+How much can a vector $\vect{x}$ in $\R^{n}$ 'blow up' when multiplied by an $m \times n$ matrix $A$?
+To answer this question we have to consider how to maximise the ratio
+
+::::{math}
+:label: eq:SymmetricMat:BlowUpAx
+
+  \frac{\norm{A\vect{x}}}{\norm{\vect{x}}}
+::::
+
+for nonzero vectors $\vect{x}$.  Since  
+
+
+$$
+  \frac{\norm{A(c\vect{x})}}{\norm{c\vect{x}}} = \frac{|c|\norm{A\vect{x}}}{|c|\norm{\vect{x}}} =  \frac{\norm{A\vect{x}}}{\norm{\vect{x}}},
+$$
+
+we may restrict ourselves to vectors of norm 1. Then the denominator in Formula {eq}`eq:SymmetricMat:BlowUpAx`  becomes 1, so we we just have to maximise  $\norm{A\vect{x}}$.  
+The general case, for non-square matrices,  will be handled in {numref}`Subsection %s <Subsec:SVDGeometrically>`.  For symmetric matrices the question is answered by the next proposition.
 
 ::::{prf:proposition}
 :label: Prop:SymmetricMat:Max||Ax||
@@ -913,7 +934,7 @@ $$
    \norm{A\mathbf{u}_1} = \norm{\lambda_1\mathbf{u}_1} = |\lambda_1|,
 $$
 
-so  there is at least a unit vector of which the norm gets a factor $|\lambda_1|$.
+so  there is at least a unit vector of which the norm gets a factor $|\lambda_1|$, as required by the proposition.
 
 It remains to show that for an arbitrary unit vector $\vect{x}$ always 
 
@@ -929,7 +950,7 @@ Since $\{\vect{u}_1, \ldots, \vect{u}_n \}$  is a basis  of $\R^n$  it follows t
 
 $$
   \vect{x} = c_1\mathbf{u}_1 +  c_2\mathbf{u}_2 + \ldots +  c_n\mathbf{u}_n, \quad
-  \text{for some } \enspace c_1,\ldots,c_n. 
+  \text{for some } \, c_1,\ldots,c_n. 
 $$
 
 From the orthonormality of the $\vect{u}_i$ it follows that
@@ -969,7 +990,7 @@ In the last subsection we will show how the orthogonal diagonalisation can be re
 
 (SubSec:SymmetricMat:SpectralDecomp)=
 
-## The Spectral Decomposition of a Symmetric Matrix.
+## The Spectral Decomposition of a symmetric matrix.
 
 Let's take up an earlier example ({prf:ref}`Ex:SymmetricMat:OrthDiag2x2`) to illustrate what the spectral decomposition is about.
 
