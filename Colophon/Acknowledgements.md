@@ -9,11 +9,11 @@ Below you can find a list of contributors to this book. The contributors are gro
 
 [Dr. F.J. (Fokko) van de Bult](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/analysis/people/dr-fj-fokko-van-de-bult)
 
-[Drs. A.T. (André) Hensbergen](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/drs-at-andre-hensbergen) (principle author)
+[Drs. A.T. (André) Hensbergen](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/drs-at-andre-hensbergen) (principal author)
 
 [Dr.ir. D. (Dennis) den Ouden-van der Horst](https://www.linkedin.com/in/dennis-den-ouden-614b5813/)
 
-[Dr. N.D. (Nikolaas) Verhulst](https://www.linkedin.com/in/nikolaas-verhulst-0aa912130/) (principle author)
+[Dr. N.D. (Nikolaas) Verhulst](https://www.linkedin.com/in/nikolaas-verhulst-0aa912130/) (principal author)
 
 [Dr. T.W.C. (Tom) Vroegrijk](https://www.linkedin.com/in/tomvroegrijk/)
 
@@ -63,7 +63,7 @@ A. (Amin) Ayman
 
 [Dr. F.J. (Fokko) van de Bult](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/analysis/people/dr-fj-fokko-van-de-bult)
 
-[E. (Eva) Coplakova PhD](https://www.linkedin.com/in/eva-coplakova-61426820/)
+[RNDr. E. (Eva) Coplakova, CSc.](https://www.linkedin.com/in/eva-coplakova-61426820/)
 
 [Prof.dr.ir. M.B. (Martin) van Gijzen](https://www.linkedin.com/in/martin-van-gijzen-6018099/)
 
