@@ -1,6 +1,6 @@
 (Sec:DynSystContinuous)=
 
-# Continuous Dynamical Systems (Under construction)
+# Continuous Dynamical Systems
 
 In this section, we will deal with similar problems as in {numref}`Section %s <Sec:DynSystDiscrete>`. There, we were concerned with discrete time. That is, we assumed a certain initial state $\vect{x}_{0}$ at time $t=0$, then predicted the next state $\vect{x}_{1}$ on time $t=1$, $\vect{x}_{2}$ on time $t=2$ and so on. But just as often we want to deal with continuous time. That is, there is no *next* state but rather a state for every positive real number. 
 
@@ -470,6 +470,13 @@ $$
 for some $\vect{x}_{0}$ in $\R^{n}$. If $A$ happens to be a $2\times 2$-matrix, such a trajectory describes a curve in the plane. By a **flow map** of a dynamical system, we mean a map in which several such curves have been plotted.
 
 :::
+
+::::{figure} Images/Fig-DynSystContinuous-Trajectory.svg
+:name: Fig:DynSystContinuous:Trajectory
+:class: dark-light
+
+On the left a trajectory for the dynamical system associated to a $2x2$-matrix. This trajectory is fully determined by a single initial value, which is indicated by the blue dot. Note that any other initial value which on this trajectory determines the same trajectory. On the right, a flow map for the same dynamical system is plotted. For each trajectory, an initial value is indicated.
+::::
 
 It turns out that the eigenvalues and in particular their magnitudes determine what such a flow map will look like. The following definition describes all possible cases.
 
