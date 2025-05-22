@@ -1539,6 +1539,7 @@ this may lead to a wrong conclusion, as there is no one-to-one correspondence be
 ::::::
 
 ::::::{prf:example}
+:label:  Ex:BasisDim:ThreeByThree
 
 As an illustration of the last remark, consider the matrix
 
@@ -1581,7 +1582,7 @@ corresponding to the first two rows of $E$. Taking the first two rows of $A$ (wr
 ::::::{exercise}
 :label: Exc:BasisDim:ExpressInRowsOfE
 
-In the above {prf:ref}`Ex:BasisDim:Rowspace4x3` find out how the four rows of the original matrix can be written as linear combinations of the rows of the reduced echelon form.
+In the above {prf:ref}`Ex:BasisDim:ThreeByThree` find out how the three rows of the original matrix can be written as linear combinations of the rows of the reduced echelon form.
 
 ::::::
 
@@ -1639,7 +1640,7 @@ $$
 The rank of $A^T$ is the dimension of the column space of $A^T$, which is the dimension of the row space of $A$. <BR>
 The rank of $A$ is the dimension of the column space of $A$.
 <br/>
-By {prf:ref}`Prop:BasisDim:EqualDimRowColSpace` dim Row$(A) = $ dim Row$(A)$.
+By {prf:ref}`Prop:BasisDim:EqualDimRowColSpace` dim Row$(A) = $ dim Col$(A)$.
 
 ::::::
 
@@ -1691,6 +1692,9 @@ $$
 
 ::::::
 
+
+
+
 ::::::{admonition} Solution to&nbsp;{numref}`Exc:BasisDim:RankABLeqRankA`
 :class: solution, dropdown
 
@@ -1710,6 +1714,25 @@ Suppose that $A$ and $B$ are matrices for which the product $AB$ is defined. Sho
 $$
 \text{rank}(AB) \leq \text{rank}\,B.
 $$
+
+::::::
+
+
+
+::::::{admonition} Solution to&nbsp;{numref}`Exc:BasisDim:RankABLeqRankB`
+:class: solution, dropdown
+
+
+Suppose  $A$ is an $m$ x $n$ matrix and $B$ an $n$ x $p$ matrix,  so $AB$ is an $m$ x $p$ matrix. <BR> 
+First note that if $\vect{v}$ lies in Nul $B$,  thus $B\vect{v} = \vect{0}$, <BR>
+then $AB\vect{v} = A(B\vect{v}) = A\vect{0} = \vect{0}$,  so  $\vect{v} \in $ Nul $AB$.  <BR>
+Thus  Nul $B$  lies in Nul $AB$, which gives that  dim Nul $B \leq $  dim Nul $AB$. <BR>
+Consequently  
+ 
+ $$
+    \text{rank} (AB) = \text{dim Col}(AB) = p - \text{dim Nul}(AB)  \geq
+      p - \text{dim Nul}(B) = \text{rank} (B).
+ $$
 
 ::::::
 
@@ -1919,7 +1942,7 @@ The exercises below are more theoretical.
 :url: https://embed.grasple.com/exercises/37a433f6-b15f-4b8a-8232-4098fe82e6c9?id=70647
 :label: grasple_exercise_4_2_16
 :dropdown:
-:description: Which of five statements about Col$(A)$ is incorrect?
+:description: Which of six statements about Col$(A)$ is incorrect?
 
 ::::::
 

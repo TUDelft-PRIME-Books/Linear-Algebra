@@ -52,7 +52,7 @@ $$
 
 ::::::{prf:remark}
 
-Property (ii) is also expressed as: a subspace is _closed under sums_. Likewise property (iii) says that a subspace is _closed under taking scalar multiples_.
+Property (ii) is also expressed as: a subspace is _closed under addition_. Likewise property (iii) says that a subspace is _closed under scalar multiplication_.
 
 ::::::
 
@@ -278,7 +278,7 @@ $$
 c_1\vect{u}_1+  \ldots + c_k\vect{u}_k \in S.
 $$
 
-So we can more generally say that a subspace is _closed under taking linear combinations_. <BR>
+So we can more generally say that a subspace is _closed under linear combinations_. <BR>
 This also means that if $\vect{u}_1, \ldots , \vect{u}_k $  are vectors in a subspace $S$, <BR>
 then $\Span{\vect{u}_1, \ldots , \vect{u}_k} $ is contained in $S$.
 
@@ -355,14 +355,14 @@ Each subspace $S$ in $\R^3$ has one of the following forms:
 
 \begin{tabular}{ll}
 (A) the single vector $\vect{0}$,& (B) a line through the origin, \\
-(C) a plane through the origin,& (D) the whole $\R^3$.\\
+(C) a plane through the origin,& (D) the whole $\R^3$.
 \end{tabular}
 :::
 
 In other words
 
 $$
-S = \text{Span}\{\vect{v}_i\, |\,\ i = 1,\ldots, r\} \quad \text{where  }\, r = 0, 1, 2 \text{  or  } 3,
+S = \text{Span}\{\vect{v}_i\, |\, i = 1,\ldots, r\} \quad \text{where  }\, r = 0, 1, 2 \text{  or  } 3,
 $$
 
 and we may assume that the vectors $\vect{v}_i$ are linearly independent.
@@ -426,7 +426,7 @@ $$
 It may seem that with the above complete description of all possible subspaces in $\R^n$
 the story of subspaces can be closed. However, subspaces will appear in different contexts in various guises, each valuable in its own right. One of these we will focus on immediately.
 
-## Column space and null space of a amtrix
+## Column space and null space of a matrix
 
 We now turn our attention to two important subspaces closely related to an $m\times n$ matrix $A$.
 

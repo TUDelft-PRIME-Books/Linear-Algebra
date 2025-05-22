@@ -199,7 +199,7 @@ The basis $\{\vect{b}_1,\vect{b}_2\}$ of {prf:ref}`Ex:ChangeOfBasis:BasicExample
 ::::::{prf:remark}
 :label: Rem:ChangeOfBasis:ConventionBasis
 
-A note of warning. Strictly speaking a basis is an _ordered_ set of vectors. By this we mean that the set $\mathcal{B} = \{\vect{b}_1,\vect{b}_2\}$ and the set $\mathcal{B}' = \{\vect{b}_2,\vect{b}_1\}$ are the same. However,
+A note of warning. Strictly speaking a basis is an _ordered_ set of vectors. By this we mean that, although the set $\mathcal{B} = \{\vect{b}_1,\vect{b}_2\}$ is equal to the set $\mathcal{B}' = \{\vect{b}_2,\vect{b}_1\}$,
 as bases we should consider them as different. This becomes important when we work with coordinates.
 <BR>
 $[\vect{v}]_{\mathcal{B}} = \begin{pmatrix}c_1\\c_2 \end{pmatrix}$ means that $\vect{v} = c_1\vect{b}_1+c_2\vect{b}_2$,
@@ -303,11 +303,11 @@ The procedure of {prf:ref}`Ex:ChangeOfBasis:ToStandardBasis` can be generalised 
 :label: Dfn:ChangeOfBasis:CoBmatrix
 
 Let ${\mathcal B} = \{\vect{b}_1, \ldots, \vect{b}_n \}$ be a basis of $\R^n$.
-The **change-of-coordinates matrix from ${\mathcal B}$ to ${\mathcal E}$** is the matrix
+The **change-of-coordinates matrix from ${\mathcal B}$ &nbsp; to &nbsp; ${\mathcal E}$** is the matrix
 
 $$
   P_{\mc{B}} =
-      \left(\,\vect{b}_1\,\,\vect{b}_1\,\, \ldots\,\, \vect{b}_n\, \right).
+      \left(\,\vect{b}_1\,\,\vect{b}_2\,\, \ldots\,\, \vect{b}_n\, \right).
 $$
 
 ::::
@@ -431,7 +431,7 @@ $$
 Here $c$ is the speed of light, and $\gamma = \left(\sqrt{1 - \dfrac{v^2}{c^2}}\right)^{-1}$ the so-called Lorentz factor.
 
 Systems that move with a constant velocity with respect to each other are called **inertial systems**.
-In each reference frame, an observer can use a local coordinate system (usually Cartesian coordinates in this context) to measure lengths, and a clock to measure time intervals. An event is something that happens at a point in space at an instant of time, or more formally a point in space-time. The transformation connects the space and time coordinates of an event as measured by an observers in the different frames.
+In each reference frame, an observer can use a local coordinate system (usually Cartesian coordinates in this context) to measure lengths, and a clock to measure time intervals. An event is something that happens at a point in space at an instant of time, or more formally a point in space-time. The transformation connects the space and time coordinates of an event as measured by observers in the different frames.
 
 ::::
 
@@ -829,7 +829,7 @@ Verify that the first column indeed corresponds to the image of $\vect{b}_1$ as 
 
 ::::{warning}
 
-Note that the product $PAP^{-1}$ in Equation {eq}`Eq:ChangeOfBasis:PAPinv` cannot be simplified to $PP^{-1}A$, which would be equal to $A$ itself!
+Note that the product $P^{-1}AP$ in Equation {eq}`Eq:ChangeOfBasis:PAPinv` cannot be simplified to $P^{-1}PA$, which would be equal to $A$ itself!
 
 ::::
 
@@ -989,7 +989,7 @@ $\mc{C},\mc{C}'$ for $\R^m$.
 
 (Subsec:ChangeOfBasis:GeneralTransformationFormula)=
 
-## General transformation formula for matrices of linear transformation
+## General formula for matrices of linear transformations
 
 In the previous subsections we studied the relations of the coordinates with respect to the standard basis and one other alternative basis $\mc{B}$. In this section we go one step further and omit the restriction that one of the bases is the standard basis. We will see that the generalisations are pretty straightforward.
 
@@ -1218,14 +1218,13 @@ must be equal.
 
 ::::
 
-::::{grasple}
-:iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/3008a6aa-58ee-4182-8fd1-9d452ac3e9f0?id=90867
-:label: grasple_exercise_4_3_2
-:dropdown:
-:description: One more like the previous.
-
-::::
+%::::{grasple}
+%:iframeclass: dark-light
+%:url: https://embed.grasple.com/exercises/3008a6aa-58ee-4182-8fd1-9d452ac3e9f0?id=90867
+%:label: grasple_exercise_4_3_2
+%:dropdown:
+%:description: One more like the previous.
+%::::
 
 ::::{grasple}
 :iframeclass: dark-light
