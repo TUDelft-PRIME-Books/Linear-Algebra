@@ -458,7 +458,7 @@ $$
 The eigenvalues are
 
 $$
-   \lambda_1 = 2 + \sqrt{5}, \quad \lambda_2 = 2 + \sqrt{5}.
+   \lambda_1 = 2 + \sqrt{5}, \quad \lambda_2 = 2 - \sqrt{5}.
 $$
 
 So if we take $Q = \begin{pmatrix} \vect{q}_1 & \vect{q}_2 \end{pmatrix}$, where
