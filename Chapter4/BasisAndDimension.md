@@ -1712,7 +1712,7 @@ $$
 Suppose that $A$ and $B$ are matrices for which the product $AB$ is defined. Show that
 
 $$
-\text{rank}(AB) \leq \text{rank}\,B.
+\text{rank}(AB) \leq \text{rank}(B).
 $$
 
 ::::::
@@ -1727,11 +1727,11 @@ Suppose  $A$ is an $m$ x $n$ matrix and $B$ an $n$ x $p$ matrix,  so $AB$ is an 
 First note that if $\vect{v}$ lies in Nul $B$,  thus $B\vect{v} = \vect{0}$, <BR>
 then $AB\vect{v} = A(B\vect{v}) = A\vect{0} = \vect{0}$,  so  $\vect{v} \in $ Nul $AB$.  <BR>
 Thus  Nul $B$  lies in Nul $AB$, which gives that  dim Nul $B \leq $  dim Nul $AB$. <BR>
-Consequently  
+Consequently, by the rank theorem   ({prf:ref}`Thm:BasisDim:RankThm`),
  
  $$
-    \text{rank} (AB) = \text{dim Col}(AB) = p - \text{dim Nul}(AB)  \geq
-      p - \text{dim Nul}(B) = \text{rank} (B).
+    \text{rank}(AB) = \text{dim Col}(AB) = p - \text{dim Nul}(AB)  \geq
+      p - \text{dim Nul}(B) = \text{rank}(B).
  $$
 
 ::::::
