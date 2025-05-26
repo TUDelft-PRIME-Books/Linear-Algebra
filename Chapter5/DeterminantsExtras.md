@@ -285,10 +285,10 @@ To conclude our interpretation of the determinant of $A$ regarding the linear tr
 
 Suppose the vectors $(\vect{v}_1, \ldots, \vect{v}_n)$ in $\R^n$ are linearly independent.
 
-Then we say that the ordered set $(\vect{v}_1, \ldots, \vect{v}_n)$ is **positively oriented**  <BR>
+Then we say that the ordered set $(\vect{v}_1, \ldots, \vect{v}_n)$ is **positively orientated**  <BR>
 if  $ \det{(\vect{v}_1 \ldots \vect{v}_n)}>0$.
 
-If this determinant is negative the set is called **negatively oriented**.
+If this determinant is negative the set is called **negatively orientated**.
 
 For vectors that are linearly dependent we do not define the orientation.
 ::::::
@@ -769,7 +769,7 @@ The comparison between the efforts required to compute the inverse via the adjug
 
 ## Determinant and cross product
 
-In {numref}`Sec:CrossProduct` the cross product of two vectors $\mathbf{u}$ and $\mathbf{v}$ in $\R^3$ is defined. It is the unique vector $\mathbf{w}$ that is (1) orthogonal to $\mathbf{u}$ and $\mathbf{v}$, with (2) length equal to the area of the parallelogram with sides $\mathbf{u}$ and $\mathbf{v}$, and (3) such that the triple $(\mathbf{u},\mathbf{v},\mathbf{w})$ is 'righthanded' (= positively oriented).
+In {numref}`Sec:CrossProduct` the cross product of two vectors $\mathbf{u}$ and $\mathbf{v}$ in $\R^3$ is defined. It is the unique vector $\mathbf{w}$ that is (1) orthogonal to $\mathbf{u}$ and $\mathbf{v}$, with (2) length equal to the area of the parallelogram with sides $\mathbf{u}$ and $\mathbf{v}$, and (3) such that the triple $(\mathbf{u},\mathbf{v},\mathbf{w})$ is 'righthanded' (= positively orientated).
 
 In {numref}`Sec:DetGeometric`
 we defined the determinant of the ordered set $(\vect{a},\vect{b},\vect{c})$ in $\R^3$ via
@@ -868,7 +868,7 @@ The norm of the vector $\vect{a}^{\ast}_n$ is equal to the $(n-1)$-dimensional v
 
 For an independent set of vectors $\{\vect{a}_1, \ldots, \vect{a}_{n-1}\}$ in $\R^n$, the properties of {prf:ref}`Prop:DetExtras:Properties-ndimCrossProd` uniquely determine $\vect{a}^{\ast}_n$
 as the vector $\vect{v}$ that is orthogonal to $ \vect{a}_1, \ldots, \vect{a}_{n-1}$, has a prescribed length, and makes the  ordered set
-$(\vect{a}_1, \ldots, \vect{a}_{n-1}, \vect{v}) $ positively oriented. <BR>
+$(\vect{a}_1, \ldots, \vect{a}_{n-1}, \vect{v}) $ positively orientated. <BR>
 For a linearly dependent set of vectors property iv. implies that $\vect{a}^{\ast}_n = \vect{0}$.
 
 ::::::{prf:example}
@@ -894,7 +894,7 @@ Moreover, $\left(\vect{v}, \vect{w}\right)
 ,  \left(\begin{array}{c} -b \\ a   \end{array}\right)
  \right)
 $
-is positively oriented, as can be seen by making a sketch.
+is positively orientated, as can be seen by making a sketch.
 
 This shows that the construction also works in $\R^2$.
 
