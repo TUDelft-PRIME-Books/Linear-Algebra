@@ -87,7 +87,7 @@ A. (Amin) Ayman
 
 [C.J.A. (Carola) van der Muren](https://www.linkedin.com/in/carola-van-der-muren-742b594/)
 
-[Dr.ir. D. (Dennis) den Ouden-van der Horst](https://www.linkedin.com/in/dennis-den-ouden-614b5813/)
+[Dr.ir. D. (Dennis) den Ouden-van der Horst](https://www.linkedin.com/in/dennis-den-ouden-614b5813/)  (principal support)
 
 [G.M. (Martijn) Ouwehand MSc](https://www.linkedin.com/in/martijnouwehand/)
 
