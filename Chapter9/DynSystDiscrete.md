@@ -10,7 +10,7 @@ $$
    \vect{x}_0,\,\, \vect{x}_1=A\vect{x}_0,\,\,\vect{x}_2= A\vect{x}_1,\,\,\vect{x}_3= A\vect{x}_2,\,\,\ldots
 $$
 
-In {prf:ref}`Ex:Diagonalize:DiagonalizeMigration` in {numref}`Section %s <Sec:Diagonalize>` we analysed the simple migration model
+In {prf:ref}`Ex:Diagonalise:DiagonaliseMigration` in {numref}`Section %s <Sec:Diagonalise>` we analysed the simple migration model
 
 $$
 \vect{x}_{k+1} = \left(\begin{array}{cc} 0.9 & 0.2 \\ 0.1 & 0.8 \end{array}\right)\vect{x}_k, \quad
