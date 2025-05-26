@@ -117,7 +117,7 @@ In fact, the latter does not satisfy **any** of the three properties of a subspa
 In the picture on the right, for two vectors $\vect{u}$ and $\vect{v}$ on the line $\mathcal L$,
 
 $$
-\vect{u}+\vect{v} \, \text{ and   } \, -\tfrac32\vect{u} \, \text{    do not lie on   } \,{\mathcal L}
+\vect{u}+\vect{v} \, \text{ and   } \, -\tfrac32\vect{u} \, \text{    do not lie on   } \,{\mathcal L}.
 $$
 
 ::::{figure} Images/Fig-Subspaces-Lines.svg
