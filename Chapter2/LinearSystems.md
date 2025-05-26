@@ -899,7 +899,7 @@ $$
 the augmented matrix can be written as
 
 $$
-  () A | \mathbf{b} ).
+  (A | \mathbf{b} ).
 $$
 
 To conclude this subsection we will reconsider the earlier example of a system of three equations in three unknowns
@@ -1075,9 +1075,9 @@ Namely, in matrix $A_4$ the second row is a non-zero row that is below the all-z
 Here are the three echelon matrices again, with boxes around their pivots:
 
 $$
- \left(\begin{array}{rrr}\fbox{1} & 2 & 3 \\ 0 & \fbox{3} & 2 \\ 0 & 0 & 0 \end{array}  \right), \quad
- \left(\begin{array}{rr}\fbox{1} & 0 \\ 0 & \fbox{1} \\ 0 & 0 \\ 0 & 0 \end{array}  \right), \quad
- \left(\begin{array}{rrrrr}\fbox{1} & 1 & 0 &  2 &  0\\ 0 & 0 & \fbox{1} & 4 & 0\\ 0 & 0 & 0 & 0 & \fbox{1}\end{array}  \right).
+ \left(\begin{array}{ccc}\fbox{$1$} & 2 & 3 \\ 0 & \fbox{$3$} & 2 \\ 0 & 0 & 0 \end{array}  \right), \quad
+ \left(\begin{array}{cc}\fbox{$1$} & 0 \\ 0 & \fbox{$1$} \\ 0 & 0 \\ 0 & 0 \end{array}  \right), \quad
+ \left(\begin{array}{ccccc}\fbox{$1$} & 1 & 0 &  2 &  0\\ 0 & 0 & \fbox{$1$} & 4 & 0\\ 0 & 0 & 0 & 0 & \fbox{1}\end{array}  \right).
 $$
 
 The third and the fourth row of the second matrix do not have pivots.
@@ -1237,6 +1237,7 @@ $$
 ::::
 
 ::::{prf:proposition}
+:label: Prop:LinSystems:EchelonFormExists
 
 Any matrix is row equivalent to an echelon matrix.
 
@@ -1280,7 +1281,7 @@ $$
    \left(\begin{array}{cccc}
              \tilde{a}_{22}&  \tilde{a}_{23}&  \ldots&   \tilde{a}_{2n} \\
              \tilde{a}_{32}&   \tilde{a}_{33}& \ldots&   \tilde{a}_{3n} \\
-                \vdots     &  \vdots         &  \ldots&  \vdots    \\
+                \vdots     &  \vdots         &  \cdots&  \vdots    \\
            \tilde{a}_{m2}&  \tilde{a}_{m3}&  \ldots&   \tilde{a}_{mn}
           \end{array}
    \right).
@@ -1522,8 +1523,8 @@ Any matrix is row equivalent to a reduced echelon matrix. Moreover, this last ma
 ::::{prf:remark}
 :label: Rem:LinSystems:RowEquivalentToRREF
 
-Again we give no formal proof.
-In the previous subsection we showed, also informally, that any matrix can be reduced to a matrix in echelon form.
+Again we give no formal proof.  
+In the previous subsection we showed, also informally, that any matrix can be reduced to a matrix in echelon form.  (cf. {prf:ref}`Prop:LinSystems:EchelonFormExists`) 
 
 In this echelon matrix we may divide each row by its pivot (first nonzero element).
 
