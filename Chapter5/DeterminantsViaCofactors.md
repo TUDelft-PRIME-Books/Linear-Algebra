@@ -59,7 +59,7 @@ And the formula also works for $2 \times 2$ matrices:
 
 $$
    \text{for}  \,\,A = \begin{pmatrix}a & b \\ c & d  \end{pmatrix}, \quad
-   \text{det}\,A = a\cdot\text{det}\,A_{11} - b\cdot\text{det}\,A_{12} = ad-bc.
+   \text{det}\,A = a\cdot\text{det}\,A_{11} - c\cdot\text{det}\,A_{21} = ad-cb.
 $$
 
 Let us now look at an example first.
@@ -132,7 +132,7 @@ $$
 For instance, on the diagonal all signs are $+$.
 
 For the $4\times 4$ {prf:ref}`Ex:DetCofactor:4x4Det` we could take advantage of the two zeros in the first column.
-For an $n\times n$ matrix without zeros the complete expansion will contain $n\cdot (n-1) \cdot \ldots \cdot 3 \cdot 2 \cdot 1 = n!$ products.
+For an $n\times n$ matrix without zeros the complete expansion will contain $n\cdot (n-1) \cdot \cdots \cdot 3 \cdot 2 \cdot 1 = n!$ products.
 We have already seen in the previous section
 
 $$

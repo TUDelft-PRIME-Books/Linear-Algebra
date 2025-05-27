@@ -181,7 +181,7 @@ A game to test your knowledge of subspaces. On the left, $\vect{u} + \vect{v}$ i
 
 ::::::
 
-::::::{admonition} Solution to&nbsp;{numref}`Exc:Subspaces:NonSubspacesR2`&nbsp;(_click to show_)
+::::::{admonition} Solution to&nbsp;{numref}`Exc:Subspaces:NonSubspacesR2`
 :class: solution, dropdown
 
 We first give an example of a subset of $\R^2$ that only has properties i. and ii.
@@ -350,14 +350,19 @@ $\{ \vect{v}_1,\vect{v}_2, \ldots , \vect{v}_r \}$. In the sequel we will see th
 
 Each subspace $S$ in $\R^3$ has one of the following forms:
 
-:::{latextable}
-:class: table-unbordered table-unstriped table
+$$
+\begin{array}{clcl}
+\text{(A)}&\text{the single vector } \vect{0}, & \text{(B)}&\text{a line through the origin,} \\
+\text{(C)}&\text{a plane through the origin}, \quad\quad & \text{(D)}&\text{ the whole } \R^3.
+\end{array}
+$$
 
-\begin{tabular}{ll}
-(A) the single vector $\vect{0}$,& (B) a line through the origin, \\
-(C) a plane through the origin,& (D) the whole $\R^3$.
-\end{tabular}
-:::
+
+
+
+%:::{latextable}
+%:class: table-unbordered table-unstriped table
+%:::
 
 In other words
 
@@ -374,7 +379,6 @@ Once more we recall the convention that the span of zero vectors (i.e., when $r 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Subspaces:AllSubspacesR3`
 :class: tudproof
 
-of {prf:ref}`Prop:Subspaces:AllSubspacesR3`.
 
 We build it up from small to large.
 
@@ -616,7 +620,7 @@ Can you find a similar formula relating the null space of $AB$ to the null space
 
 ::::::
 
-::::::{admonition} Solution to&nbsp;{numref}`Exc:Subspaces:ColABinColA`&nbsp;(_click to show_)
+::::::{admonition} Solution to&nbsp;{numref}`Exc:Subspaces:ColABinColA`
 :class: solution, dropdown
 
 Suppose that $A$ is an $m\times n$ and $B$ an $n \times p$ matrix.
@@ -669,7 +673,7 @@ $$
 
 ::::::
 
-::::::{admonition} Solution to&nbsp;{numref}`Exc:Subspaces:WhatIfAAeq0`&nbsp;(_click to show_)
+::::::{admonition} Solution to&nbsp;{numref}`Exc:Subspaces:WhatIfAAeq0`
 :class: solution, dropdown
 
 First we show that

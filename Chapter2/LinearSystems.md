@@ -1077,10 +1077,10 @@ Here are the three echelon matrices again, with boxes around their pivots:
 $$
  \left(\begin{array}{ccc}\fbox{$1$} & 2 & 3 \\ 0 & \fbox{$3$} & 2 \\ 0 & 0 & 0 \end{array}  \right), \quad
  \left(\begin{array}{cc}\fbox{$1$} & 0 \\ 0 & \fbox{$1$} \\ 0 & 0 \\ 0 & 0 \end{array}  \right), \quad
- \left(\begin{array}{ccccc}\fbox{$1$} & 1 & 0 &  2 &  0\\ 0 & 0 & \fbox{$1$} & 4 & 0\\ 0 & 0 & 0 & 0 & \fbox{1}\end{array}  \right).
+ \left(\begin{array}{ccccc}\fbox{$1$} & 1 & 0 &  2 &  0\\ 0 & 0 & \fbox{$1$} & 4 & 0\\ 0 & 0 & 0 & 0 & \fbox{$1$}\end{array}  \right).
 $$
 
-The third and the fourth row of the second matrix do not have pivots.
+The last row of the first matrix and the third and the fourth row of the second matrix do not have pivots.
 
 ::::
 
