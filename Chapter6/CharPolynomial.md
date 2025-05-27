@@ -335,7 +335,7 @@ from which we deduce that the geometric multiplicity of the eigenvalue $\lambda 
 ::::::
 
 At this moment it is not so easy to prove the following proposition, of which the previous example gives an illustration. 
-(For the proof: see the section 'Similar Matrices',  right after formula {eq}`Eq:Diagonalizable:GeomMultversusAlgMult`.)
+(For the proof: see the section 'Similar Matrices',  right after formula {eq}`Eq:Diagonalisable:GeomMultversusAlgMult`.)
 
 ::::::{prf:proposition}
 :label: Prop:EigenValues:SmallerGeomMultiplicity

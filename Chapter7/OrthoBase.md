@@ -105,7 +105,7 @@ In {numref}`Subsec:GeomLinTrans:Proj`, we have already briefly touched upon orth
 :::{prf:definition}
 :label: Dfn:OrthoBase:OrthoProjection
 
-Let $V$ be a subspace of $\R^{n}$, let $\vect{u}$ be a vector in $\R^{n}$, and let $\vect{u}=\vect{u}_{V}+\vect{u}_{V^{\bot}}$ be the orthogonal decomposition of $\vect{u}$ with respect to $V$ as defined in {prf:ref}`Prop:OrthoComp:PrthoDecomp`. We call $\vect{u}_{V}$ the **orthogonal projection** of $\vect{u}$ on $V$.
+Let $V$ be a subspace of $\R^{n}$, let $\vect{u}$ be a vector in $\R^{n}$, and let $\vect{u}=\vect{u}_{V}+\vect{u}_{V^{\bot}}$ be the orthogonal decomposition of $\vect{u}$ with respect to $V$ as defined in {prf:ref}`Prop:OrthoComp:OrthoDecomp`. We call $\vect{u}_{V}$ the **orthogonal projection** of $\vect{u}$ on $V$.
 
 :::
 
@@ -211,7 +211,7 @@ Put
 
 $$\vect{w}=\frac{\vect{u}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{u}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}_{k}.$$
 
-Since all the $\vect{v}_{i}$'s are in $V$, so is $\vect{w}$. It suffices to show that $\vect{u}-\vect{w}$ is in $V^{\bot}$, because then $\vect{u}=\vect{w}+(\vect{u}-\vect{w})$ must be the decomposition as in {prf:ref}`Prop:OrthoComp:PrthoDecomp`.
+Since all the $\vect{v}_{i}$'s are in $V$, so is $\vect{w}$. It suffices to show that $\vect{u}-\vect{w}$ is in $V^{\bot}$, because then $\vect{u}=\vect{w}+(\vect{u}-\vect{w})$ must be the decomposition as in {prf:ref}`Prop:OrthoComp:OrthoDecomp`.
 
 To prove this, we check that $\vect{u}-\vect{w}$ is orthogonal to all the $\vect{v}_{i}$'s, which form a basis of $V$. This follows readily:
 

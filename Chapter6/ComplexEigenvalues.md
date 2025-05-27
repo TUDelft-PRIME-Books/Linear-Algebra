@@ -491,7 +491,7 @@ We then say that $PDP^{-1}$ is a **diagonalisation** of $A$.
 
 
 
-Just like in the real case diagonalisability has all to do with the existence of enough (possibly complex) eigenvectors. The derivation is the same as in {numref}`Section %s <Sec:Diagonalize>`, we only repeat the conclusion.
+Just like in the real case diagonalisability has all to do with the existence of enough (possibly complex) eigenvectors. The derivation is the same as in {numref}`Section %s <Sec:Diagonalise>`, we only repeat the conclusion.
 
 ::::::{prf:proposition}
 
@@ -557,7 +557,7 @@ The definition also makes sense for matrices with complex numbers as entries. Ho
 ::::::
 
 
-For a matrix to be real diagonalisable {prf:ref}`Thm:Diagonalizable:ThirdCharacterization` states that two conditions must be satisfied. One is that the characteristic polynomial of $A$ must have $n$ real roots, counting multiplicities. The second is that for each eigenvalue the geometric multiplicity must be equal to the algebraic multiplicity.
+For a matrix to be real diagonalisable {prf:ref}`Thm:Diagonalisable:ThirdCharacterization` states that two conditions must be satisfied. One is that the characteristic polynomial of $A$ must have $n$ real roots, counting multiplicities. The second is that for each eigenvalue the geometric multiplicity must be equal to the algebraic multiplicity.
 The Fundamental Theorem of Algebra guarantees that each polynomial of degree $n$ has $n$ roots. So if we allow complex eigenvalues, the first condition is automatically satisfied. We thus find the following criterion for complex diagonalisability of a (possibly complex) matrix $A$.
 
 ::::::{prf:proposition}

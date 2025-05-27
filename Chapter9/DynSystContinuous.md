@@ -272,11 +272,11 @@ where $c_{1},...,c_{n}$ are constants.
 
 :::
 
-:::{admonition} Proof of&nbsp;{prf:ref}`Prop:DynSystContinuous:SolsofDynSyst`
+<!-- :::{admonition} Proof of&nbsp;{prf:ref}`Prop:DynSystContinuous:SolsofDynSyst`
 :class: tudproof
 
 
-:::
+::: -->
 
 
 :::{prf:remark}
