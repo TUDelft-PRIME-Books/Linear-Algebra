@@ -406,7 +406,7 @@ i. $AA^{-1} = I$, &nbsp; ii. $\det{(AA^{-1})} = \det{A}\det{\left(A^{-1}\right)}
 as follows:
 
 $$
-\text{det}(A)\text{det}\left(A^{-1}\right)
+\text{det}(A)\text{det}(A^{-1})
  =  \text{det}(AA^{-1}) = \text{det}(I) = 1,
 $$
 
@@ -449,17 +449,7 @@ $$
 
 </li>
 
-<li>
 
-For each $n \times n$ matrix $A$ it holds that
-
-<BR>
-
-$$
-\det{(-A)} = -\det{A}.
-$$
-
-</li>
 
 <li>
 
@@ -472,6 +462,19 @@ $$
 $$
 
 </li>
+
+<li>
+
+For each $n \times n$ matrix $A$ it holds that
+
+<BR>
+
+$$
+\det{(-A)} = -\det{A}.
+$$
+
+</li>
+
 </ol>
 
 ::::::
@@ -866,10 +869,10 @@ This settles all matters.
 
 ::::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/1354915d-4cf4-4559-8ac2-68573807199d?id=103702
+:url: https://embed.grasple.com/exercises/63ac7c7c-c195-4b76-be9b-e8764f6dde1b?id=104023
 :label: grasple_exercise_5_3_6
 :dropdown:
-:description: Effects of a column operation on a 4x4 determinant.
+:description: Effects of row and/or column operations on a 4x4 determinant.
 
 ::::::
 
@@ -929,7 +932,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/f2e09cfe-9d88-4f7b-a295-bad7feda89e5?id=93150
 :label: grasple_exercise_5_3_12
 :dropdown:
-:description: Finding  a parameter $h$ such that a determinant has a prescribed value.
+:description: Finding  a parameter such that a determinant has a prescribed value.
 
 ::::::
 
@@ -1002,7 +1005,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/9ae9228f-ab17-4853-9995-e38e16d87c22?id=93153
 :label: grasple_exercise_5_3_19
 :dropdown:
-:description: To find  det$\left(A^3\right)$, for  a given matrix $A$.
+:description: To find  det$\left(A^k\right)$, for  a given matrix $A$.
 
 ::::::
 
@@ -1011,7 +1014,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/8db6831f-2671-443a-af64-799d1d0d9179?id=93154
 :label: grasple_exercise_5_3_20
 :dropdown:
-:description: To find  det$\left(kA^TB^{-1}\right)$, for matrices $A$  and $B$.
+:description: To find  det$\left(kA^{-1}B^T\right)$, for matrices $A$  and $B$.
 
 ::::::
 

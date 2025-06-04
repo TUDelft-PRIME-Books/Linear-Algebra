@@ -817,7 +817,7 @@ It consists of $m$ horizontal **rows** of size $n$, or, equivalently, of $n$ ver
 In a statement about a matrix the first index always refers to the row(s), the second index to the column(s).
 E.g., $a_{ij}$ is the number in the $i$-th row and the $j$-th column and an $m \times n$ matrix has $m$ rows and $n$ columns.
 
-A matrix is usually surrounded by parentheses or (square) brackets. We opt for brackets.
+A matrix is usually surrounded by parentheses or (square) brackets. We opt for parentheses.
 
 ::::{prf:example}
 :label: Ex:LinSystems:FirstMatrix

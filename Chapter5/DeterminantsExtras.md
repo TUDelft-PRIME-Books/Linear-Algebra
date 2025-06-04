@@ -150,7 +150,7 @@ $$
   \text{area}(S) = 0 = 0\cdot \text{area}(R) =|\det{A}|\cdot \text{area}(R).
 $$
 
-Next suppose that $A$ is invertible. Then the unit grid is mapped onto a grid with as unit region the parallelogram with sides $\vect{a}_1 = T(\vect{e}_1) = A\vect{e}_1$ and $\vect{a}_2 = = T(\vect{e}_2) = A\vect{e}_2$ . See {numref}`Figure %s <Fig:DetExtras:Grid>`.
+Next suppose that $A$ is invertible. Then the unit grid is mapped onto a grid with as unit region the parallelogram with sides $\vect{a}_1 = T(\vect{e}_1) = A\vect{e}_1$ and $\vect{a}_2 =  T(\vect{e}_2) = A\vect{e}_2$ . See {numref}`Figure %s <Fig:DetExtras:Grid>`.
 
 ::::{figure} Images/Fig-DetExtras-StandardGrid.svg
 :name: Fig:DetExtras:Grid
@@ -462,7 +462,7 @@ Likewise we can compute the other two entries of the solution.
 $$
 x_2 = \dfrac{\begin{vmatrix}  1 & 3 & 1 \\ 1 & 4 & 2 \\ 3 & 1 & -5  \end{vmatrix}}{29} = 0
 \quad \text{and} \quad
-x_2 = \dfrac{\begin{vmatrix}  1 & 2 & 3 \\ 1 & -1 & 4 \\ 3 & 1 & 1  \end{vmatrix}}{29} = 1.
+x_3 = \dfrac{\begin{vmatrix}  1 & 2 & 3 \\ 1 & -1 & 4 \\ 3 & 1 & 1  \end{vmatrix}}{29} = 1.
 $$
 
 ::::::
@@ -605,8 +605,11 @@ C_{12} &C_{22} &C_{32} & \ldots &C_{n2} \\
 C_{13} &C_{23} &C_{33} & \ldots &C_{n3} \\
 \vdots & \vdots &\vdots & \ddots & \vdots \\
 C_{1n} &C_{2n} &C_{3n} & \ldots &C_{nn} \\
-\end{array} \right).
+\end{array} \right),
+
 :::::
+
+where again the $C_{ij}$ are the cofactors as defined in  {prf:ref}`Dfn:DetCofactors:Determinant`.
 
 ::::::
 
@@ -749,9 +752,9 @@ a_{31} &a_{32} &a_{33}
 \begin{vmatrix} a_{12} & a_{13} \\ a_{22} & a_{23}  \end{vmatrix} \\
 - \begin{vmatrix} a_{21} & a_{23} \\ a_{31} & a_{33}  \end{vmatrix} &
 \begin{vmatrix} a_{11} & a_{13} \\ a_{31} & a_{33}  \end{vmatrix} &
-- \begin{vmatrix} a_{21} & a_{31} \\ a_{22} & a_{32}  \end{vmatrix} \\
+- \begin{vmatrix} a_{11} & a_{13} \\ a_{21} & a_{23}  \end{vmatrix} \\
 \begin{vmatrix} a_{21} & a_{22} \\ a_{31} & a_{32}  \end{vmatrix} &
-- \begin{vmatrix} a_{11} & a_{31} \\ a_{12} & a_{32}  \end{vmatrix} &
+- \begin{vmatrix} a_{11} & a_{12} \\ a_{31} & a_{32}  \end{vmatrix} &
 \begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22}  \end{vmatrix}
 \end{array}
 \right).
@@ -779,9 +782,9 @@ $$
 \det{(\vect{a},\vect{b},\vect{c})} &=& (\vect{a}\times\vect{b})\ip\vect{c} =
 \left|\begin{array}{ccc}  a_1 & b_1 &c_1 \\ a_2 & b_2 &c_2 \\ a_3 & b_3 & c_3   \end{array}\right|\\
 &=&
-\left|\begin{array}{cc}  a_2 & a_3   \\b_2 & b_3      \end{array}\right| c_1
-- \left|\begin{array}{cc}  a_1 & a_3   \\b_1 & b_3      \end{array}\right| c_2
-+ \left|\begin{array}{cc}  a_1 & a_2   \\b_1 & b_2      \end{array}\right| c_3.
+\left|\begin{array}{cc}  a_2 & b_2   \\a_3 & b_3      \end{array}\right| c_1
+- \left|\begin{array}{cc}  a_1 & b_1   \\ a_3& b_3      \end{array}\right| c_2
++ \left|\begin{array}{cc}  a_1 &  b_1  \\ a_2 & b_2      \end{array}\right| c_3.
 \end{array}
 $$
 
@@ -793,7 +796,7 @@ Conversely, we can write the cross product in terms containing determinants.
 \begin{array}{rcl}
 \left(\begin{array}{c} a_1 \\ a_2 \\ a_3 \end{array}\right) \times
 \left(\begin{array}{c}b_1 \\ b_2 \\ b_3 \end{array}\right)
-&=& \left(\begin{array}{c}a_2b_3-a_3b_2 \\ a_3b_1 - a_1b_3 \\ a_2b_1-a_2b_1 \end{array}\right) \\
+&=& \left(\begin{array}{c}a_2b_3-a_3b_2 \\ a_3b_1 - a_1b_3 \\ a_1b_2-a_2b_1 \end{array}\right) \\
 &=&
 \left|\begin{array}{cc} a_2 & b_2 \\a_3 & b_3 \end{array}\right|\vect{e}_1
 - \left|\begin{array}{cc} a_1 & b_1 \\ a_3 & b_3 \end{array}\right|\vect{e}_2
@@ -814,7 +817,7 @@ $$
 \vect{a}_1 = \left(\begin{array}{c}  a_{11} \\ a_{21} \\ \vdots \\  a_{n1}      \end{array}\right), \quad
 \vect{a}_2 = \left(\begin{array}{c}  a_{12} \\ a_{22} \\ \vdots \\  a_{n2}      \end{array}\right), \quad
 \ldots \quad , \quad
-\vect{a}_{n-1} = \left(\begin{array}{c}  a_{1,(n-1)} \\ a_{2(n-1)} \\ \vdots \\  a_{n,(n-1)}      \end{array}\right)
+\vect{a}_{n-1} = \left(\begin{array}{c}  a_{1,(n-1)} \\ a_{2,(n-1)} \\ \vdots \\  a_{n,(n-1)}      \end{array}\right)
 $$
 
 define
@@ -884,7 +887,7 @@ $$
 \left|\begin{array}{cc}
 a & \vect{e}_1\\
 b & \vect{e}_2
-\end{array}\right|=  a\vect{e}_1 - b\vect{e}_2 = \left(\begin{array}{c}    -b \\ a          \end{array}\right).
+\end{array}\right|=  a\vect{e}_2 - b\vect{e}_1 = \left(\begin{array}{c}    -b \\ a          \end{array}\right).
 $$
 
 This is indeed a vector orthogonal to $\vect{v}$ with the same 'one-dimensional volume', i.e., length, as the vector $\vect{v}$.
@@ -933,8 +936,6 @@ All in all we find
 $$
   \vect{v} = \left(\begin{array}{c}
                   -4 \\ 12 \\ 4 \\ 12
-        \end{array}\right) =  (-4)\left(\begin{array}{c}
-                  1 \\ -3 \\ -1 \\ -3
         \end{array}\right).
 $$
 

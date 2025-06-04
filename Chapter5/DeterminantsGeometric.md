@@ -74,7 +74,7 @@ Thus we embed the plane into $\R^3$ as the $x_1$-$x_2$-plane. See {numref}`Figur
 Orientated area.
 ```
 
-So we embed the plane $\R^2$ as the $x$-$y$-plane in $\R^3$.
+
 
 We then have
 
@@ -129,8 +129,8 @@ Here $h = \norm{\vect{v}}\cos(\vartheta)$ is $(\pm)$ the length of the projectio
 
 $$
 \begin{array}{rcl}
-\norm{\vect{u}^{\perp}} \norm{\vect{v}}\cos(\vartheta)
-  &=& \norm{\vect{u}}\times \norm{\vect{v}}\cos(\vartheta) \\
+\norm{\vect{u}^{\perp}}\, \norm{\vect{v}}\cos(\vartheta)
+  &=& \norm{\vect{u}}\, \norm{\vect{v}}\cos(\vartheta) \\
   &=& \pm \text{(base length)} \times \text{height} \\
   &=&   \pm \text{area of } OACB.
 \end{array}
@@ -538,8 +538,7 @@ $|D|$, the absolute value of the determinant, is equal to the volume of the para
 
 $D=0$ if and only if the matrix $A$ is singular.
 
-Equivalently,
-
+Equivalently,<BR>
 $D\neq 0$ if and only if the matrix $A$ is invertible, thus if  
 the vectors $\{\vect{a}, \vect{b},\vect{c}\}$ are linearly independent.
 
@@ -599,7 +598,7 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 
 ::::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/1053b23-02ab-4ffb-bcda-70f808a9910a?id=74408
+:url: https://embed.grasple.com/exercises/71053b23-02ab-4ffb-bcda-70f808a9910a?id=74408
 :label: grasple_exercise_5_1_5
 :dropdown:
 :description: Volume of parallelepiped (with vertex at (0,0,0)).
