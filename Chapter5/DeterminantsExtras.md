@@ -1202,3 +1202,12 @@ $$
 :description: To compute the normal vector $N(\vect{a}_1,\vect{a}_2,\vect{a}_3)$ as in {numref}`Subsection %s <Subsec-DetExtras-DetAndCrossProd>`.
 
 ::::::
+
+::::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/45048350-326b-4f4a-bbbf-9f7edb947914?id=96120
+:label: grasple_exercise_5_4_8
+:dropdown:
+:description: To compute the area of parallelogram, a triangle and the image of a parallelogram.
+
+::::::
