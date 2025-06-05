@@ -1043,7 +1043,7 @@ $$
 
 ::::::{grasple} 
 :iframeclass: dark-light
-:url: https://embed.grasple.com/e9bcf8d4-5b26-4f56-90df-76345c4e85e1?id=71926
+:url: https://embed.grasple.com/exercises/e9bcf8d4-5b26-4f56-90df-76345c4e85e1?id=71926
 :label: grasple_exercise_6_3_8
 :dropdown:
 :description:  To investigate the diagonalisability of a ($3 \times 3$) matrix. 
