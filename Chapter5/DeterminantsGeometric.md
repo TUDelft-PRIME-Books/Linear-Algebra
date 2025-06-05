@@ -616,10 +616,10 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 
 ::::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/47e1fd08-2d8a-4c0d-816a-37e314707191?id=87501
+:url: https://embed.grasple.com/exercises/179cf12-fd87-41a2-8532-c1fbe97c10e2?id=121860
 :label: grasple_exercise_5_1_7
 :dropdown:
-:description: Finding a 3x3 determinant using orthogonality.
+:description: On the connection between determinant, cross product and volume
 
 ::::::
 
