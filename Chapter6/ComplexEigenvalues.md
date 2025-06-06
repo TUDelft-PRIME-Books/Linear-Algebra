@@ -40,7 +40,7 @@ $$
 $$
 
 where the row operation we invoke is: add the second row $(1+i)$ times to the first row.
-The blue \class{blue}{0} is the result of the evaluation of
+The blue $\class{blue}{0}$ is the result of the evaluation of
 
 $$
 -2 + (1+i)(1-i).
