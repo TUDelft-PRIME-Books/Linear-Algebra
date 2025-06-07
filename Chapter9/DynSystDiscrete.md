@@ -1034,7 +1034,7 @@ which rounds correctly to the sixth Fibonacci number $f_6 = 8$.
 
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/
+:url: https://embed.grasple.com/exercises/2d50e88a-8f2e-433d-9567-26569d20c0fb?id=115062
 :label: grasple_exercise_9_1_10
 :dropdown:
 :description: To match the matrix to a picture of a discrete dynamical system.
