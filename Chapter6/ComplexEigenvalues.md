@@ -1,6 +1,6 @@
 (Section:ComplexEV)=
 
-# Complex Eigenvalues (and Eigenvectors)
+# Complex Eigenvalues and Eigenvectors
 
 In the previous sections we hinted at the possibility to allow eigenvalues to be complex numbers. For an $n\times n$ matrix $A$ the eigenvalues are the zeros of the characteristic polynomial $p_A(\lambda)$ of $A$. Even if the matrix is real, these zeros may be complex. We start with an example to explore this until now unknown territory.
 
@@ -22,7 +22,7 @@ p_A(\lambda) = 0 \,\, \iff \,\, \lambda^2 - 4\lambda +5 = (\lambda -2)^2 + 1 = 0
 \,\, \iff \,\,  \lambda = 2 \pm i.
 $$
 
-So the eigenvalues are complex numbers. Can we still find eigenvectors? We sure can, but they will not be real vectors. To find an eigenvector for $\lambda_1 = 2+i$, as before we have
+So the eigenvalues are complex numbers. Can we still find eigenvectors? We sure can, but they will not be real vectors. To find an eigenvector $\vect{v}_1$ for $\lambda_1 = 2+i$, as before we have
 
 $$
 A\vect{v} = \lambda_1\vect{v}    \quad\iff\quad  (A -  \lambda_1I)\vect{v} = \vect{0}.
@@ -40,14 +40,14 @@ $$
 $$
 
 where the row operation we invoke is: add the second row $(1+i)$ times to the first row.
-The blue \class{blue}{0} is the result of the evaluation of
+The blue 0 is the result of the evaluation of
 
 $$
 -2 + (1+i)(1-i).
 $$
 
 We can read off a solution (i.e., complex eigenvector): &nbsp; 
-$\vect{v} = \left(\begin{array}{c}  -1+i \\1 \end{array}\right)$.
+$\vect{v}_1 = \left(\begin{array}{c}  -1+i \\1 \end{array}\right)$.
 
 To check that we have indeed an eigenvector is also slightly more involved than in the real case.
 
@@ -83,22 +83,22 @@ $$
 .
 $$
 
-Then the vector $\vect{u} = \left(\begin{array}{c} -2 \\ 1+i \end{array}\right) $ is a natural candidate for
+Then the vector $\vect{u}_1 = \left(\begin{array}{c} -2 \\ 1+i \end{array}\right) $ is a natural candidate for
 an eigenvector.
 
 At first sight it seems that we have found two linearly independent eigenvectors for the eigenvalue $\lambda_1 = 2+i$.
 However, closer inspection shows that
 
 $$
-\vect{u} = \left(\begin{array}{c} -2 \\ 1+i  \end{array}\right)
+\vect{u}_1 = \left(\begin{array}{c} -2 \\ 1+i  \end{array}\right)
 =  (1+i)  \left(\begin{array}{c}  -1+i \\1 \end{array}\right)
- = (1+i)\vect{v},
+ = (1+i)\vect{v}_1,
 $$
 
 so the two vectors are *complex* multiples of each other, and hence are not linearly independent.
 
 For the other eigenvalue we can proceed in the same manner and find (for instance) the eigenvector
-&nbsp; $\vect{v}_2 =\left(\begin{array}{c} -2 \\ 1-i \end{array}\right) $.
+&nbsp; $\vect{u}_2 =\left(\begin{array}{c} -2 \\ 1-i \end{array}\right) $.
 
 :::::
 
@@ -392,30 +392,38 @@ Then $A$ can be written as
 
 $$
 A = PCP^{-1} = P\left(\begin{array}{cc} \alpha & -\beta \\ \beta & \alpha \end{array}\right)
-P^{-1}
+P^{-1}.
 $$
 
-for some invertible matrix $P$.
 
-{prf:ref}`Prop:ComplexEV:Rotation` states that $C$ can be written as
+The matrix $P$ is of the form
 
-$$
-C = r\left(\begin{array}{cc} \cos(\varphi) & -\sin(\varphi) \\ \sin(\varphi) & \cos(\varphi) \end{array}\right)
-.
-$$
-
-We can formulate this as there being a **hidden rotation** in $A$.
-
-::::::
-
-To be specific,
 
 $$
 P =   ( \,\vect{u}\,\, \vect{w}\, ) =\left(\begin{array}{cc}u_1 & w_1 \\ u_2&w_2 \end{array}\right),
 $$
 
 where $\vect{u} + i \vect{w}$ is an eigenvector for $\lambda = \alpha - \beta i$.
-<BR>
+
+::::::
+
+
+::::::{prf:remark}
+
+
+{prf:ref}`Prop:ComplexEV:Rotation` states that $C$ can be written as
+
+$$
+C = r\left(\begin{array}{cc} \cos(\varphi) & -\sin(\varphi) \\ \sin(\varphi) & \cos(\varphi) \end{array}\right).
+$$
+
+
+We can interpret  $\left(\begin{array}{cc} \cos(\varphi) & -\sin(\varphi) \\ \sin(\varphi) & \cos(\varphi) \end{array}\right)$  this as a  *hidden rotation* in $A$.
+
+::::::
+
+
+
 Let us illustrate matters with the following example.
 
 ::::::{prf:example}

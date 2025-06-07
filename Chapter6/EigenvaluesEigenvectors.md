@@ -265,7 +265,7 @@ $$
 $$
 
 So $-1$ is an eigenvalue of the matrix $\left(\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array}\right) $ and a corresponding eigenvector is the vector
-$\left(\begin{array}{c} 2 \\ -1 \end{array}\right)$.  Note that the full set of eigenvectors for the eigenvalue $\lambda = -1$ is the set of all multiples of the vector $\left(\begin{array}{c} 2  \\ -1 \end{array}\right)$. Well, to be precise, all _nonzero_ multiples.
+$\left(\begin{array}{c} -2 \\ 1 \end{array}\right)$.  Note that the full set of eigenvectors for the eigenvalue $\lambda = -1$ is the set of all multiples of the vector $\left(\begin{array}{c} -2  \\ 1 \end{array}\right)$. Well, to be precise, all _nonzero_ multiples.
 
 ::::::
 
@@ -337,23 +337,17 @@ If we plug in the entries of $A$ and use row reduction we get
 $$
 A - 2I  =
 \left(\begin{array}{ccc} -2-2 & 1 & 2 \\ 0 & -1-2 & 2 \\ -1 & 1 & 0-2 \end{array}\right)  =
-\left(\begin{array}{ccc} -4 & 1 & 2 \\ 0 & -3 & 2 \\ -1 & 1 & -2 \end{array}\right)  \sim
-\left(\begin{array}{ccc} 1 & 1 & -2  \\ 0 & -3 & 2 \\ 0 & 5 & -4 \end{array}\right).
+\left(\begin{array}{ccc} -4 & 1 & 2 \\ 0 & -3 & 2 \\ -1 & 1 & -2 \end{array}\right)  \sim \cdots \sim 
+\left(\begin{array}{ccc} -1 & 1 & -2  \\ 0 & -3 & 2 \\ 0 & 0 & 8 \end{array}\right).
 $$
 
-We multiply the last row by 3 (to avoid fractions), next add 5 times the second row to arrive at the echelon matrix
-
-$$
-A-2I \sim 
-\left(\begin{array}{cccc} 1 & 1 & -2  \\ 0 & -3 & 2 \\ 0 & 0 & -2 \end{array}\right).
-$$
 
 This last matrix has rank 3, so its null space contains only the zero vector. Thus there are no nonzero solutions for the equation $A\vect{v} - 2\vect{v} = \vect{0}$, and we conclude that 2 is _not_ an eigenvalue of $A$.
 
 For the other candidate we proceed in the same manner. Now we have to find the null space of the matrix
 
 $$
-(A-(-2)I) = (A+2I).
+ A-(-2)I = A+2I.
 $$
 
 For this matrix, row reduction yields
@@ -776,7 +770,7 @@ $\lambda_2 = -1$ with corresponding eigenvector $\vect{v}_2 = \begin{pmatrix} -2
 So for the linear transformation $T:\R^2 \to \R^2$ defined by $T(\vect{x}) = A\vect{x}$ it holds that
 
 $$
-T(\vect{v}_1)  = 3\vect{v}_1 \quad\text{and}\quad T(\vect{v}_2)  = (-1)\vect{v}_1.
+T(\vect{v}_1)  = 3\vect{v}_1 \quad\text{and}\quad T(\vect{v}_2)  = (-1)\vect{v}_2.
 $$
 
 If we take the basis $\mathcal{B} = (\vect{v}_1, \vect{v}_2 )$ for $\R^2$, then the transformation does the following:

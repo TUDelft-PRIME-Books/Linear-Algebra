@@ -861,7 +861,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/1354915d-4cf4-4559-8ac2-68573807199d?id=103702
 :label: grasple_exercise_5_3_5
 :dropdown:
-:description: Effects of a column operation on a 4x4 determinant.
+:description: Effects of a several operations on a 4x4 determinant.
 
 ::::::
 
@@ -905,8 +905,6 @@ This settles all matters.
 :description: To compute a 4x4 determinant via reduction and expansion.
 
 ::::::
-
-
 
 
 ::::::{grasple}
@@ -1017,7 +1015,6 @@ This settles all matters.
 :description: To find  det$\left(kA^{-1}B^T\right)$, for matrices $A$  and $B$.
 
 ::::::
-
 
 
 

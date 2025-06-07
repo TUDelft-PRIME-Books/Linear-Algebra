@@ -147,7 +147,7 @@ Using the properties of similar matrices we can prove the inequality
 ::::::{math}
 :label: Eq:Diagonalisable:GeomMultversusAlgMult
 
-\text{g.m.}(\lambda) \leq \text{a.m.}(\lambda) 
+\operatorname{g.m.}(\lambda) \leq \operatorname{a.m.}(\lambda) 
 ::::::
 
 that holds for the geometric and the algebraic multiplicity of an eigenvalue 
@@ -203,7 +203,7 @@ Thus the algebraic multiplicity of the eigenvalue $\lambda_1$ for the matrix $B$
 So indeed the inequality
 
 $$
-   \text{a.m.}(\lambda_1) \geq  \text{g.m.}(\lambda_1)
+   \operatorname{a.m.}(\lambda_1) \geq  \operatorname{g.m.}(\lambda_1)
 $$
 
 is universally true.
@@ -267,7 +267,6 @@ As in the proof of the equality of the characteristic polynomials ({prf:ref}`Pro
 
 if $A = PBP^{-1}$,
 then
-
 <BR>
 
 $$
@@ -275,7 +274,6 @@ $$
 $$
 
 which can be rewritten as follows
-
 <BR>
 
 $$
@@ -287,33 +285,31 @@ $$
 
 Follows immediately from i.:
 
-matrix $A$ is invertible $\quad \iff \quad \det{(A)} \neq 0$.
+&nbsp;  &nbsp; matrix $A$ is invertible $\quad \iff \quad \det{(A)} \neq 0$.
 
 </li>
 <li>
 
 If $A$ has rank $n$, then $A$ is invertible, and then $B$ is also invertible, so 
 $B$  has rank $n$ too. <BR>
-If $\text{rank}$ $A < n$ then $\lambda = 0$ is an eigenvalue of both $A$ and $B$.
+If $\operatorname{rank}$ $A < n$ then $\lambda = 0$ is an eigenvalue of both $A$ and $B$.
 In this case we can use
 
 $$
-   \text{rank}\,A = n - \text{dim Nul}\,A
+  \operatorname{rank}\,A = n - \operatorname{dim Nul}\,A
 $$
-Recall that  $\text{Nul}$ $A$ is the eigenspace for the eigenvalue $\lambda = 0$, so 
-$\text{dim Nul}$ $A$ is the geometric multiplicity of the eigenvalue $\lambda = 0$,
+Recall that  $\operatorname{Nul}$ $A$ is the eigenspace for the eigenvalue $\lambda = 0$, so 
+$\operatorname{dim Nul}$ $A$ is the geometric multiplicity of the eigenvalue $\lambda = 0$,
 which multiplicity is the same for $A$ and $B$. We deduce that 
 
-<BR>
-
 $$
-   \text{rank}\,A = n - \text{dim Nul}\,A = n - \text{dim Nul}\,B = \text{rank}\,B.
+  \operatorname{rank}A = n - \operatorname{dim Nul}\,A = n - \operatorname{dim Nul}\,B = \operatorname{rank}\,B.
 $$
 
 
 %We can use the identities of {prf:ref}`Prop:BasisDim:RankAPEqualToRankPA` from the %section 'Basis and Dimension'. 
 %Since $P$ and $P^{-1}$ are both invertible we find: if $A = PBP^{-1}$,
-%then $\text{rank}(A) = \text{rank}(PBP^{-1})  = \text{rank}(PB) = \text{rank}(B)$.
+%then $\operatorname{rank}(A) = \operatorname{rank}(PBP^{-1})  = \operatorname{rank}(PB) = \operatorname{rank}(B)$.
 
 </li>
 </ol>
@@ -550,7 +546,7 @@ Are all matrices diagonalisable? Most certainly not, as the following two exampl
 ::::::{prf:example}
 :label: Ex:Diagonalisable:RotationCtd
 
-The matrix $R = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$ of {prf:ref}`Ex:EigenValues:Rotation` does not have any (real) eigenvalues, so also no eigenvectors. Hence it cannot be Diagonalised.
+The matrix $R = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$ of {prf:ref}`Ex:EigenValues:Rotation` does not have any (real) eigenvalues, so also no eigenvectors. Hence it cannot be diagonalised.
 
 ::::::
 
@@ -591,14 +587,31 @@ There is only one independent eigenvector for $\lambda_{1}$. This, together with
 ::::::
 
 ::::::{exercise}
-:label: Exc:Diagonalisable
+:label: Exc:Diagonalisable:CheckDiagble
 
 Is the matrix
-$A = \left(\begin{array}{cccc}1 & 1 & 0 & 1 \\ 0 & 2 & 0 & 0\\
-0 & 0 & 2 & 1 \\ 0 & 0 & 0 & 1 \end{array} \right)$
+$A = \left(\begin{array}{cccc}1 & 1 & 0 & 1 \\ 0 & 4 & 0 & 0\\
+0 & 0 & 4 & 1 \\ 0 & 0 & 0 & 1 \end{array} \right)$
 diagonalisable?
 
 ::::::
+
+::::::{admonition} Solution to&nbsp;{numref}`Exc:Diagonalisable:CheckDiagble`
+:class: solution, dropdown
+
+Since the matrix is upper triangular, the eigenvalues are the diagonal entries. So,  $\lambda_1 = 1$, $\lambda_2 = 4$,  both with algebraic multiplicity one. The eigenspace for $\lambda_1$ is the null space of the matrix
+
+$$
+ A - \lambda_1I = A -  I =  \left(\begin{array}{cccc}0 & 1 & 0 & 1 \\ 0 & 3 & 0 & 0\\
+0 & 0  & 3 & 1 \\ 0 & 0 & 0 & 0 \end{array} \right)
+$$
+
+Since this matrix has three linear independent columns, it has rank 3, and its null space has dimension $4-3 = 1$. Hence the geometric multiplicity of $\lambda_1$ is equal to 1, which is smaller than its algebraic multiplicity.  This implies that the matrix $A$ is not diagonalisable.
+
+::::::
+
+
+
 
 These examples show the two causes why a matrix may not be diagonalisable, as is made explicit in the following proposition.
 
@@ -611,7 +624,7 @@ The $n \times n$ matrix $A$ is (real) diagonalisable if and only if it satisfies
 
 <li>
 
-The characteristic polynomial of $A$ has exactly $n$  *real*  roots, counting multiplicities.
+The characteristic polynomial of $A$ has exactly $n$  *real*  roots, counting algebraic multiplicities.
 
 </li>
 
@@ -642,7 +655,7 @@ The basic idea is that, since eigenvectors for different eigenvalues are automat
 Suppose that the $n \times n$ matrix $A$ has only real eigenvalues,  say  $\lambda_1,\ldots,\lambda_k$, and that for each eigenvalue $\lambda_i$ the geometric multiplicity $m_i$  is equal to the algebraic multiplicity, so
 
 $$
-  \text{g.m.}(\lambda_i)  = m_i= \text{a.m.}(\lambda_i) , \quad i = 1, \ldots, k.
+  \operatorname{g.m.}(\lambda_i)  = m_i= \operatorname{a.m.}(\lambda_i) , \quad i = 1, \ldots, k.
 $$
 
 Since the sum of the algebraic multiplicities is equal to  $n$, the
@@ -714,7 +727,7 @@ We saw that there is a weak connection between eigenvalues and (non-)invertibili
 {prf:ref}`Prop:EigenValues:SingularMatrix` states: a matrix is singular if and only if it has the eigenvalue $0$.
 
 
-In exercise 6.3.12 below you are invited to investigate the connection (or no-connection) between diagonalisability and invertibility.
+In exercise 6.3.12 below you are invited to investigate the connection (or non-connection) between diagonalisability and invertibility.
 
 %::::::{exercise}
 %:label: Exc:Diagonalisable:Invertibility
@@ -839,7 +852,7 @@ A^{n} &=& \left(\begin{array}{cc} 2 & -2 \\ 1 & 1 \end{array}
 &=& \dfrac14 \left(\begin{array}{cc} 2\cdot 3^{n}+2\cdot(-1)^n & 4\cdot 3^{n}-4\cdot(-1)^n \\
 3^{n}- (-1)^n & 2\cdot 3^{n}+2\cdot(-1)^n \end{array}
 \right)
-\end{array}
+\end{array}.
 $$
 
 ::::::
@@ -966,7 +979,7 @@ steady state distribution where city $A$ has twice as many inhabitants as city $
 the total number of inhabitants of the two cities is still the same as at the beginning:
 
 $$
-x_{\infty} + y_{\infty} = \tfrac13(2x_{0}+2y_{0}) + \tfrac13(x_{0}+y_{0}) = x_{0}+y_{0}.
+x_{\infty} + y_{\infty} = \frac13(2x_{0}+2y_{0}) + \frac13(x_{0}+y_{0}) = x_{0}+y_{0}.
 $$
 
 ::::::
@@ -1036,17 +1049,18 @@ $$
 :url: https://embed.grasple.com/exercises/70b5964e-b6c7-4a64-a2e3-d10dc915f324?id=91503
 :label: grasple_exercise_6_3_7 
 :dropdown:
-:description:  To investigate the Diagonalisability of a ($3 \times 3$) matrix. 
+:description:  To investigate the diagonalisability of a ($3 \times 3$) matrix. 
 
 ::::::
 
 
 ::::::{grasple} 
 :iframeclass: dark-light
-:url: https://embed.grasple.com/e9bcf8d4-5b26-4f56-90df-76345c4e85e1?id=71926
+:url: https://embed.grasple.com/exercises/e9bcf8d4-5b26-4f56-90df-76345c4e85e1?id=71926
 :label: grasple_exercise_6_3_8
 :dropdown:
 :description:  To investigate the diagonalisability of a ($3 \times 3$) matrix. 
+
 
 ::::::
 
@@ -1055,7 +1069,7 @@ $$
 :url: https://embed.grasple.com/exercises/f61dfb8f-db65-4f17-80c7-b1702b0c2c07?id=104493
 :label: grasple_exercise_6_3_9 
 :dropdown:
-:description:  To investigate the Diagonalisability of a 3x3 matrix of rank 1. 
+:description:  To investigate the diagonalisability of a 3x3 matrix of rank 1. 
 
 ::::::
 
@@ -1066,7 +1080,7 @@ $$
 :url: https://embed.grasple.com/exercises/bc214d8e-b1a1-4b39-bedd-0ae36380b14a?id=71933
 :label: grasple_exercise_6_3_10 
 :dropdown:
-:description:  For which $\alpha$ is given  3x3  matrix $A$ Diagonalisable? 
+:description:  For which $\alpha$ is given  3x3  matrix $A$ diagonalisable? 
 
 ::::::
 
@@ -1078,7 +1092,7 @@ $$
 :url: https://embed.grasple.com/exercises/9730853c-acca-481c-930b-56d1046256cf?id=117040
 :label: grasple_exercise_6_3_11
 :dropdown:
-:description:  To investigate the Diagonalisability of a matrix with a 'special' structure.
+:description:  To investigate the diagonalisability of a matrix with a 'special' structure.
 
 ::::::
 
@@ -1088,7 +1102,7 @@ $$
 :url: https://embed.grasple.com/exercises/1f997f9d-5d6c-46de-8a25-dfb431b76997?id=117042
 :label: grasple_exercise_6_3_12
 :dropdown:
-:description:  To investigate the Diagonalisability of a matrix with a 'special' structure. (II)
+:description:  To investigate the diagonalisability of a matrix with a 'special' structure. (II)
 
 ::::::
 

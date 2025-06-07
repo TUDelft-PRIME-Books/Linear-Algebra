@@ -1142,18 +1142,39 @@ $$
 
 ## Grasple exercises
 
+
 ::::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/ddb8daf3-3773-44c9-8df0-fe3084a6e7c4?id=93170
 :label: grasple_exercise_5_4_1
 :dropdown:
-:description: To compute the area of a triangle with sides $\vect{u}$ and $\vect{v}$ in the plane.
+:description: Area of a triangle under a linear transformation.
 ::::::
+
+
+::::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/c630cded-e9cd-482e-a7fe-68ff75430f38?id=121803
+:label: grasple_exercise_5_4_
+:dropdown:
+:description: Area of a rectangle under a linear transformation.
+::::::
+
+
+
+%::::::{grasple}
+%:iframeclass: dark-light
+%:url: https://embed.grasple.com/exercises/ddb8daf3-3773-44c9-8df0-fe3084a6e7c4?id=93170
+%:label: grasple_exercise_5_4_1
+%:dropdown:
+%:description: To compute the area of a triangle with sides $\vect{u}$ and $\vect{v}$ in the plane.
+%::::::
+
 
 ::::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/8d7a0672-6283-4bb1-9b43-b41a03067e40?id=93171
-:label: grasple_exercise_5_4_2
+:label: grasple_exercise_5_4_3
 :dropdown:
 :description: To find a point $C$ on a line, such that  the area of a triangle $ABC$ has a given value.
 
@@ -1162,7 +1183,7 @@ $$
 ::::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/62770bc4-da31-4212-a713-bb2843b0e580?id=93172
-:label: grasple_exercise_5_4_3
+:label: grasple_exercise_5_4_4
 :dropdown:
 :description: Which points lie on the same side of a plane?
 
@@ -1171,7 +1192,7 @@ $$
 ::::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/f787e084-9a77-40b4-b755-97890b98cfb6?id=93176
-:label: grasple_exercise_5_4_4
+:label: grasple_exercise_5_4_5
 :dropdown:
 :description: To solve a 3x3 system using Cramer's rule.
 
@@ -1180,7 +1201,7 @@ $$
 ::::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/3add427a-88a3-4da0-8f0a-2bf8bb8781dd?id=93179
-:label: grasple_exercise_5_4_5
+:label: grasple_exercise_5_4_6
 :dropdown:
 :description: Finding two entries in the inverse of a 4x4 matrix  (using the adjoint matrix).
 
@@ -1189,7 +1210,7 @@ $$
 ::::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/8d4a98f7-50ac-4705-8b34-680b7b8395d9?id=93181
-:label: grasple_exercise_5_4_6
+:label: grasple_exercise_5_4_7
 :dropdown:
 :description: To find a vector orthogonal to $\vect{v}_1,\vect{v}_2,\vect{v}_3$ in $\mathbb{R}^4$, with good orientation.
 
@@ -1198,7 +1219,7 @@ $$
 ::::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/bc3df113-95b3-470a-a730-3ad8faab08f5?id=93183
-:label: grasple_exercise_5_4_7
+:label: grasple_exercise_5_4_8
 :dropdown:
 :description: To compute the normal vector $N(\vect{a}_1,\vect{a}_2,\vect{a}_3)$ as in {numref}`Subsection %s <Subsec-DetExtras-DetAndCrossProd>`.
 

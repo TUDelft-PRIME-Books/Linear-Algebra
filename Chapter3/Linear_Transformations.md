@@ -137,7 +137,7 @@ it is clear that the range of the matrix transformation in {prf:ref}`Ex:LinTrafo
 consists of all linear combinations of the three columns of $A$:
 
 $$
-\text{Range}(T_A) =
+\operatorname{Range}(T_A) =
 \Span{ \begin{pmatrix} 1\\ 1   \end{pmatrix}, \begin{pmatrix} 2 \\  2  \end{pmatrix}, \begin{pmatrix} 0\\  1  \end{pmatrix}}.
 $$
 
@@ -163,7 +163,7 @@ is an $m\times n$ matrix.
 Then the range of the matrix transformation corresponding to $A$ is the span of the columns of $A$:
 
 $$
-   \text{Range}(T_A) = \Span{\mathbf{a}_1, \mathbf{a}_2,\ldots,\mathbf{a}_n }.
+   \operatorname{Range}(T_A) = \Span{\mathbf{a}_1, \mathbf{a}_2,\ldots,\mathbf{a}_n }.
 $$
 
 ::::::
@@ -791,6 +791,35 @@ $$
 The linearity of $T_3$ is verified in a similar manner.
 ::::::
 
+
+::::::{exercise}
+:label: Exc:LinTrafo:LineSegments
+
+This exercise sheds some light on the geometry behind linear transformations.
+We restrict ourselves to linear transformations in the plane,  but the ideas can be generalised.
+
+Suppose  $T$  is a linear transformation from $\R^2$ to $\R^2$.  Show that the image of a line segment $\mathcal{S}$ between two points $P$ and $Q$ is either a line segment or a single point.
+
+::::::
+
+
+
+::::::{admonition} Solution to&nbsp;{numref}`Exc:LinTrafo:LineSegments`
+:class: solution, dropdown
+
+
+Suppose  $\vect{p} = \overrightarrow{OP}$ and  $\vect{q} = \overrightarrow{OQ}$ are the position vectors, and let $\vect{r} = \overrightarrow{PQ}  = \vect{q} - \vect{p}$.
+Then the line segment between $\vect{p}$ and $\vect{q}$ consist of all vectors  $\vect{v} = \vect{p} + t\vect{r}$, where $t$ runs from $0$ to $1$.
+
+By the linearity of $T$ it follows that the image of $\mathcal{S}$  consist of all vectors
+$T(\vect{p} + t\vect{r}) = T(\vect{p})  + tT(\vect{r})$, with $0 \leq t \leq 1$. 
+
+This describes the line segment between the points  $T(\vect{p})$ and $T(\vect{p} + \vect{r})$.  Note that 
+$T(\vect{p})  + T(\vect{r}) = T(\vect{p} + \vect{r}) = T(\vect{q})$.  If by any chance  $T(\vect{r}) = \mathbf{0}$,  the segment 'shrinks' to a point.
+
+::::::
+
+
 And now, let us return to matrix transformations.
 
 (Subsec:LinTrafo:LinTrafoeqMatrixTrafo)=
@@ -1223,6 +1252,9 @@ $$
 If you can, you will have shown that $T$ is a matrix transformation, and as a direct consequence $T$ is a linear transformation.
 
 ::::::
+
+
+
 
 To conclude we consider an example that refers back to {prf:ref}`Prop:LinTrafo:CompositionLintrafos`, and which will to a large extent pave the road for the product of two matrices.
 

@@ -57,7 +57,7 @@ $$
 \lambda^2 -2\lambda -3 = (\lambda-3 )(\lambda+1) = 0
 $$
 
-and conclude that the eigenvalues of $A$ are $\lambda_1 =3, \lambda_2 = -1$. We call $\lambda_1$ a *double eigenvalue*.
+and conclude that the eigenvalues of $A$ are $\lambda_1 =3, \lambda_2 = -1$. 
 
 ::::::
 
@@ -311,7 +311,7 @@ The eigenspace for $\lambda_{1}$ is the null space of $A - \lambda_{1} I = A -3I
 $$
 A - 3I = \left(\begin{array}{ccc} 4-3 & -1 & -2 \\0 & 3-3 & 0 \\ 1 & 2 & 1-3  \end{array}\right)
  =
-\left(\begin{array}{ccc} 1 & -1 & -2 \\0 & 0 & 0 \\-1 & 2 & -2\end{array}\right)
+\left(\begin{array}{ccc} 1 & -1 & -2 \\0 & 0 & 0 \\1 & 2 & -2\end{array}\right)
   \sim
 \left(\begin{array}{ccc} 1 & -1 & -2 \\0 & 1 & 0 \\0 & 0 & 0 \end{array}\right)
 .
@@ -364,7 +364,7 @@ The matrix $A = \begin{pmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1  \end{pmatri
 has the two independent eigenvectors
 $\vect{v}_1 = \begin{pmatrix} 1 \\ 0 \\ -1  \end{pmatrix}, \vect{v}_2 =\begin{pmatrix} 0 \\ 1 \\ -1  \end{pmatrix}$
 for the eigenvalue $\lambda = -1$, and the eigenvector $\vect{v}_3 = \begin{pmatrix} 1 \\1\\ 1  \end{pmatrix}$ for the eigenvalue 5.
-(We studied this matrix in {prf:ref}`Ex:EigenValues:TwodimEigenspace2`.)
+(We studied this matrix in {prf:ref}`Ex:EigenValues:TwodimEigenspaceCtd`.)
 From {prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity` we can deduce that the characteristic polynomial must contain at least two factors $(\lambda - (-1))$ and one factor $(\lambda - 5)$. Since its degree is equal to 3, and the coefficient of $\lambda^3$ is equal to $(-1)^3 = -1$, we may conclude that
 
 $$
@@ -498,7 +498,7 @@ $$
 The sum of the diagonal entries of an $n\times n$ matrix $A$ is called the **trace** of $A$:
 
 $$
-  {\text{tr}}(A) = a_{11} + a_{22} + \ldots + a_{nn} = \sum_{i=1}^{n}  a_{ii}.
+  {\text{tr}}\!(A) = a_{11} + a_{22} + \ldots + a_{nn} = \sum_{i=1}^{n}  a_{ii}.
 $$
 
 ::::::
@@ -518,7 +518,7 @@ Let   $A$ an $n\times n$ matrix with $n$ eigenvalues  $\lambda_1,\lambda_2,  \ld
 :label: Eq:Eigenvalues:SumEigenvaluesAndTrace
 
 
-\sum_{i = 1}^{n} \lambda_i = \text{tr}(A) \quad \text{and} \quad \prod_{i = 1}^{n} \lambda_i = \text{det}(A).
+\sum_{i = 1}^{n} \lambda_i = \operatorname{tr}(A) \quad \text{and} \quad \prod_{i = 1}^{n} \lambda_i = \text{det}(A).
 
 
 :::
@@ -530,7 +530,7 @@ Let   $A$ an $n\times n$ matrix with $n$ eigenvalues  $\lambda_1,\lambda_2,  \ld
 
 This is more a statement about algebra, in particular about polynomials, than about linear algebra.  In  {numref}`Section %s <Section:ComplexEV>`  we will see that it also holds for matrices with complex eigenvalues. 
 
-If $A$ has $n$ real eigenvalues $\lambda_1, \ldots, \Lambda_n$,  the characteristic polynomial $p_A(\lambda)$ of $A$  must contain the $n$ factors $(\lambda - \lambda_i)$.   Since the 'leading' coefficent'  $c_n = (-1)^n$  we may deduce that  
+If $A$ has $n$ real eigenvalues $\lambda_1, \ldots, \lambda_n$,  the characteristic polynomial $p_A(\lambda)$ of $A$  must contain the $n$ factors $(\lambda - \lambda_i)$.   Since the 'leading' coefficent'  $c_n = (-1)^n$  we may deduce that  
 
 $$
 \begin{array}{rcl}
@@ -548,7 +548,7 @@ $$
 Comparing this with the expressions for the coefficients we found in {prf:ref}`Prop:Eigenvalues:SumEigenvaluesAndTrace`
 
 $$
-p_A(\lambda) = (-1)^n \lambda^n + (-1)^{n-1}\text{tr}(A) \lambda^{n-1} + \ldots + \Det{A},
+p_A(\lambda) = (-1)^n \lambda^n + (-1)^{n-1}\operatorname{tr}(A) \lambda^{n-1} + \ldots + \Det{A},
 $$
 
 we readily read off the identities put forward in 
