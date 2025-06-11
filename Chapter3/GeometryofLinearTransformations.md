@@ -763,20 +763,60 @@ A shear transformation applied to a stack of cards.
 
 ::::
 
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/cf4aa645-363e-4b2d-a926-f8be4e40d6c9?id=83655
+:label: grasple_exercise_3_3_8
+:dropdown:
+:description: Alternative argument for checking whether a projection is orthogonal.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/f1fdeb47-560d-4f90-8493-ab9124f5b9af?id=83264
+:label: grasple_exercise_3_3_9
+:dropdown:
+:description: Step by step construction of the matrix of a reflection
+
+::::
+
+
+
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/7d10562b-929a-4b1f-9a90-6280e12b9c98?id=85261
-:label: grasple_exercise_3_3_8
+:label: grasple_exercise_3_3_10
 :dropdown:
-:description: Understanding a shear transformation.
+:description: Analyzing/Understanding a shear transformation.
 
 ::::
 
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/ee24dead-8281-493e-9ced-b2f0f9cb1421?id=85263
-:label: grasple_exercise_3_3_9
+:label: grasple_exercise_3_3_11
 :dropdown:
-:description: Understanding shear transformations.
+:description: Checking whether a transformation is a shear transformation
+
+::::
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/3a6764ea-b1bc-43ff-9ae6-cc561166147e?id=83269
+:label: grasple_exercise_3_3_12
+:dropdown:
+:description: Geometric description of a transformation with a special property
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/9d775e4d-3318-4129-95a0-ec5dfc9c0c96?id=83375
+:label: grasple_exercise_3_3_13
+:dropdown:
+:description: Geometric description of another transformation with a special property
 
 ::::

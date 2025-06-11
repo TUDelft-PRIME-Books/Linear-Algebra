@@ -942,7 +942,6 @@ $$
 By taking inner products, or by computing $A^T\vect{v}$, it is checked that indeed
 $\vect{v} \perp \vect{a}_i$ for each column $\vect{a}_i$. So property i. of {prf:ref}`Prop:DetExtras:Properties-ndimCrossProd` is satisfied.
 
-Since the three columns are orthogonal, the 'rectangular box' in $\R^4$ they generate will have 3d-volume
 
 $$
    \norm{\vect{a}_1} \cdot \norm{\vect{a}_2} \cdot \norm{\vect{a}_3} =

@@ -93,7 +93,7 @@ an arbitrary $3 \times 3$ upper triangular matrix.
 Since $U - \lambda I$ is also an upper triangular matrix, we find that
 
 $$
-\text{det}(U - \lambda I) = ( u_{11}-\lambda)( u_{22}-\lambda)( u_{33}-\lambda).
+\operatorname{det}(U - \lambda I) = ( u_{11}-\lambda)( u_{22}-\lambda)( u_{33}-\lambda).
 $$
 
 The last expression becomes 0 exactly for the values
@@ -122,7 +122,7 @@ For the $2\times 2$ matrix in {prf:ref}`Ex:EigenValues:FirstCharPoly` the expres
 For an arbitrary $2 \times 2$ matrix $A = \begin{pmatrix} a-\lambda & b \\ c & d-\lambda \end{pmatrix}$ we quickly see that
 
 $$
-\text{det}(A - \lambda I) = \begin{vmatrix} a-\lambda & b \\ c & d-\lambda \end{vmatrix} =
+\operatorname{det}(A - \lambda I) = \begin{vmatrix} a-\lambda & b \\ c & d-\lambda \end{vmatrix} =
 (a-\lambda) (d-\lambda) - bc  = \lambda^2 - (a+d)\lambda + (ad-bc).
 $$
 
@@ -144,7 +144,7 @@ We have to dive into the hardware of determinants a bit. If the determinant of a
 Now we apply this to the matrix $M = (A  - \lambda I)$, where $A$ is the most general $n\times n$ matrix. We then can deduce that
 
 $$
-\text{det}(A - \lambda I) =
+\operatorname{det}(A - \lambda I) =
 \begin{vmatrix} a_{11}-\lambda & a_{12} & a_{13} & \cdots & \cdots & a_{1n} \\
 a_{21} & a_{22}-\lambda & a_{23} & \cdots & \cdots & a_{2n} \\
 a_{31} & a_{32} & a_{33}-\lambda &  \cdots & \cdots & a_{3n} \\
@@ -172,7 +172,7 @@ The function det$(A - \lambda I)$ is called the **characteristic polynomial** of
 $p_A(\lambda)$, so
 
 $$
-p_A(\lambda) = \text{det}(A -\lambda I).
+p_A(\lambda) = \operatorname{det}(A -\lambda I).
 $$
 
 ::::::
@@ -414,7 +414,7 @@ $$
 and
 
 $$
-  c_0 = \text{det}(A).
+  c_0 = \operatorname{det}(A).
 $$
 
 ::::::
@@ -424,7 +424,7 @@ $A = \left(\begin{array}{cc} a_{11} & a_{12} \\ a_{21} & a_{22} \end{array}\righ
 = \left(\begin{array}{cc} a & b \\ c & d \end{array}\right) $ is given by
 
 $$
-\text{det}(A - \lambda I) = \begin{vmatrix} a-\lambda & b \\ c & d-\lambda \end{vmatrix} =
+\operatorname{det}(A - \lambda I) = \begin{vmatrix} a-\lambda & b \\ c & d-\lambda \end{vmatrix} =
 \lambda^2 - (a+d)\lambda + (ad-bc).
 $$
 
@@ -446,7 +446,7 @@ The value of $c_0$ is the easiest to establish: just plug in $\lambda=0$ in
 Equation {eq}`Eq:EigenValues:CharPoly`:
 
 $$
-\text{det}(A)= \text{det}(A - 0I) = p_A(0) = c_n0^n + c_{n-1}0^{n-1} + \ldots + c_1\cdot 0 + c_0 = c_0.
+\operatorname{det}(A)= \operatorname{det}(A - 0I) = p_A(0) = c_n0^n + c_{n-1}0^{n-1} + \ldots + c_1\cdot 0 + c_0 = c_0.
 $$
 
 For the other  coefficient we will not give the slightly technical  argument for an $n\times n$ matrix.  The idea will be pretty much clear when we consider a general $3 \times 3$ matrix
@@ -460,7 +460,7 @@ $$
 When we expand
 
 <!-- prettier-ignore -->
-$ \quad  \text{det}(A - \lambda I) = \left|\begin{array}{ccc} a_{11}- \lambda  & a_{12} & a_{13} \\
+$ \quad  \operatorname{det}(A - \lambda I) = \left|\begin{array}{ccc} a_{11}- \lambda  & a_{12} & a_{13} \\
 a_{21} & a_{22}- \lambda  & a_{23} \\
 a_{31} & a_{32} & a_{33}- \lambda  \end{array}\right|\quad $
 
@@ -498,7 +498,7 @@ $$
 The sum of the diagonal entries of an $n\times n$ matrix $A$ is called the **trace** of $A$:
 
 $$
-  {\text{tr}}\!(A) = a_{11} + a_{22} + \ldots + a_{nn} = \sum_{i=1}^{n}  a_{ii}.
+  \operatorname{tr}(A) = a_{11} + a_{22} + \ldots + a_{nn} = \sum_{i=1}^{n}  a_{ii}.
 $$
 
 ::::::
@@ -506,7 +506,7 @@ $$
 With this new terminology we can restate the second property in {prf:ref}`Prop:Eigenvalues:SumEigenvaluesAndTrace`  as follows.  For an $n\times n$ matrix $A$  the coefficient $c_{n-1}$ of $\lambda^{n-1}$ satisfies
 
  $$
-   c_{n-1} = (-1)^{n-1} \text{tr}(A).
+   c_{n-1} = (-1)^{n-1} \operatorname{tr}(A).
  $$
 
 ::::::{prf:proposition}
@@ -518,7 +518,7 @@ Let   $A$ an $n\times n$ matrix with $n$ eigenvalues  $\lambda_1,\lambda_2,  \ld
 :label: Eq:Eigenvalues:SumEigenvaluesAndTrace
 
 
-\sum_{i = 1}^{n} \lambda_i = \operatorname{tr}(A) \quad \text{and} \quad \prod_{i = 1}^{n} \lambda_i = \text{det}(A).
+\sum_{i = 1}^{n} \lambda_i = \operatorname{tr}(A) \quad \text{and} \quad \prod_{i = 1}^{n} \lambda_i = \operatorname{det}(A).
 
 
 :::
@@ -567,13 +567,13 @@ $A = \begin{pmatrix} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{pmatrix}$  &nbsp;
 We see that indeed
 
 $$
-\lambda_1+\lambda_2+\lambda_3 = 3 +2 + 3 = 8 = 4+3+1 = \text{tr}(A),
+\lambda_1+\lambda_2+\lambda_3 = 3 +2 + 3 = 8 = 4+3+1 = \operatorname{tr}(A),
 $$
 
 and also  
 
 $$
-  \text{det}\,A = 3 \begin{vmatrix} 4 & -2 \\ 1 &  1 \end{vmatrix} = 3\cdot (4+2) = 18 = 3\cdot3\cdot2 =   \lambda_1\lambda_2\lambda_3.
+  \operatorname{det}\,A = 3 \begin{vmatrix} 4 & -2 \\ 1 &  1 \end{vmatrix} = 3\cdot (4+2) = 18 = 3\cdot3\cdot2 =   \lambda_1\lambda_2\lambda_3.
 $$
 
 ::::::
@@ -618,7 +618,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 ::::::
 
 
-## Grasple Exercises 
+## Grasple exercises 
 
 
 

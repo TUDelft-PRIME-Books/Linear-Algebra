@@ -131,8 +131,8 @@ $$
 \begin{array}{rcl}
 \norm{\vect{u}^{\perp}}\, \norm{\vect{v}}\cos(\vartheta)
   &=& \norm{\vect{u}}\, \norm{\vect{v}}\cos(\vartheta) \\
-  &=& \pm \text{(base length)} \times \text{height} \\
-  &=&   \pm \text{area of } OACB.
+  &=& \pm \,\text{(base length)} \times \text{height} \\
+  &=&   \pm \,\text{area of } OACB.
 \end{array}
 $$
 
@@ -147,7 +147,7 @@ ad - bc &=&
 \end{array}
 $$
 
-where $\varphi$ is the angle from $\vect{u}$ to the left (= counterclockwise) to $\vect{v}$.
+where $\varphi$ is the angle from $\vect{u}$  counterclockwise to $\vect{v}$.
 
 We see that $ad-bc$ is equal to the area of the parallelogram if the directed angle from $\vect{u}$ to $\vect{v}$ is less then $\pi$, and minus this area if the angle is between $\pi$ and $2\pi$. We call this the _signed area_.
 

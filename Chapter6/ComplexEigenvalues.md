@@ -577,7 +577,7 @@ A matrix $A$ is complex diagonalisable if and only if for each eigenvalue the ge
 
 
 
-## Grasple Exercises 
+## Grasple exercises 
 
 ::::::{grasple} 
 :iframeclass: dark-light

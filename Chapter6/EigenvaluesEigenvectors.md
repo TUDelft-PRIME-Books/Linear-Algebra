@@ -789,7 +789,7 @@ In a later section we will study matrices $A$ for which such a basis of eigenvec
 ::::::
 
 
-## Grasple Exercises 
+## Grasple exercises 
 
 ::::::{grasple} 
 :iframeclass: dark-light

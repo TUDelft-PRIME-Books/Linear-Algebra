@@ -937,7 +937,7 @@ which rounds correctly to the sixth Fibonacci number $f_6 = 8$.
 ::::
 
 
-## Grasple Exercises
+## Grasple exercises
 
 ::::{grasple}
 :iframeclass: dark-light

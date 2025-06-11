@@ -53,7 +53,7 @@ We postpone the proof until the end of this section and first look at examples a
 ::::::{prf:example}
 :label: Ex:DetRowReduction:RowOps
 
-The following identities show what happens with a $4\times 4$ determinant when
+The following identities show what happens with a $3\times 3$ determinant when
 
 <ol type="i">
 <li >
@@ -61,16 +61,14 @@ The following identities show what happens with a $4\times 4$ determinant when
 the second row is scaled with a factor $c$:
 
 $$
-\left|\begin{array}{rrrr}
-a_{11} &a_{12} &a_{13} &a_{14}  \\
-ca_{21} &ca_{22} &ca_{23} &ca_{24}  \\
-a_{31} &a_{32} &a_{33} &a_{34}  \\
-a_{41} &a_{42} &a_{43} &a_{44}
-\end{array} \right| = c \left|\begin{array}{rrrr}
-a_{11} &a_{12} &a_{13} &a_{14}  \\
-a_{21} &a_{22} &a_{23} &a_{24}  \\
-a_{31} &a_{32} &a_{33} &a_{34}  \\
-a_{41} &a_{42} &a_{43} &a_{44}
+\left|\begin{array}{rrr}
+ a_{11} &  a_{12} &  a_{13}    \\
+ca_{21} & ca_{22} & ca_{23}  \\
+ a_{31} &  a_{32} &  a_{33} 
+\end{array} \right| = c \left|\begin{array}{rrr}
+a_{11} &a_{12} &a_{13}  \\
+a_{21} &a_{22} &a_{23}  \\
+a_{31} &a_{32} &a_{33}
 \end{array} \right|,
 $$
 
@@ -80,35 +78,31 @@ $$
 the first row is added $(-k)$ times to the third row:
 
 $$
-\left|\begin{array}{llll}
-a_{11} &a_{12} &a_{13} &a_{14}  \\
-a_{21} &a_{22} &a_{23} &a_{24}  \\
-a_{31}-ka_{11} &a_{32}-ka_{12} &a_{33}-ka_{13} &a_{34}-ka_{14}  \\
-a_{41} &a_{42} &a_{43} &a_{44}
-\end{array} \right| =  \left|\begin{array}{rrrr}
-a_{11} &a_{12} &a_{13} &a_{14}  \\
-a_{21} &a_{22} &a_{23} &a_{24}  \\
-a_{31} &a_{32} &a_{33} &a_{34}  \\
-a_{41} &a_{42} &a_{43} &a_{44}
+\left|\begin{array}{lll}
+a_{11} &a_{12} &a_{13}   \\
+a_{21} &a_{22} &a_{23}   \\
+a_{31}-ka_{11} &a_{32}-ka_{12} &a_{33}-ka_{13} 
+\end{array} \right| =  \left|\begin{array}{rrr}
+a_{11} &a_{12} &a_{13}   \\
+a_{21} &a_{22} &a_{23}   \\
+a_{31} &a_{32} &a_{33}   
 \end{array} \right|,
 $$
 
 </li>
 <li>
 
-the first and the fourth row are swapped:
+the first and the third row are swapped:
 
 $$
-\left|\begin{array}{rrrr}
-a_{41} &a_{42} &a_{43} &a_{44} \\
-a_{21} &a_{22} &a_{23} &a_{24}  \\
-a_{31} &a_{32} &a_{33} &a_{34}  \\
-a_{11} &a_{12} &a_{13} &a_{14}
-\end{array} \right| = - \left|\begin{array}{rrrr}
-a_{11} &a_{12} &a_{13} &a_{14}  \\
-a_{21} &a_{22} &a_{23} &a_{24}  \\
-a_{31} &a_{32} &a_{33} &a_{34}  \\
-a_{41} &a_{42} &a_{43} &a_{44}
+\left|\begin{array}{rrr}
+a_{31} &a_{32} &a_{33} \\
+a_{21} &a_{22} &a_{23} \\
+a_{11} &a_{12} &a_{13} 
+\end{array} \right| = - \left|\begin{array}{rrr}
+a_{11} &a_{12} &a_{13}  \\
+a_{21} &a_{22} &a_{23}  \\
+a_{31} &a_{32} &a_{33} 
 \end{array} \right|.
 $$
 
@@ -370,8 +364,8 @@ So then, step by step we find that
 
 $$
 \begin{array}{rl}
-\det{A}  & = \det{(E_1E_2\cdots E_k)} = \det{(E_1(E_2\cdots E_k))} =  \\
-& = \det{E_1} \det{(E_2\cdots E_k)}  = \ldots = \det{E_1} \det{E_2} \cdots \det{E_k},
+\det{A}\!\!  &\!\! = \det{(E_1E_2\cdots E_k)} = \det{(E_1(E_2\cdots E_k))} =  \\
+& \!\! = \det{E_1} \det{(E_2\cdots E_k)}  = \ldots = \det{E_1} \det{E_2} \cdots \det{E_k},
 \end{array}
 $$
 
@@ -379,7 +373,7 @@ and also
 
 $$
 \begin{array}{rl}
-\det{(AB)} & =  \det{(E_1E_2\cdots E_kB)} = \det{E_1} \det{(E_2\cdots E_kB)}  \\
+\det{(AB)} \!&\!\! =  \det{(E_1E_2\cdots E_kB)} = \det{E_1} \det{(E_2\cdots E_kB)}  \\
 & = \ldots = \\
 & = \det{E_1} \det{E_2} \cdots \det{E_k} \det{B} \\
 & = \det{A}\det{B}.
@@ -491,7 +485,6 @@ We treat the statements one by
 Is it true that for each $n \times n$ matrix $A$ it holds that $\text{det}\big(A^k\big)= \big(\det{A}\big)^k$? 
 
 This is true, and follows from repeatedly using the property $\det(AB) = \det(A)\det(B)$. Namely,
-
 <BR>
 
 $$
@@ -503,7 +496,6 @@ $$
 <li>
 
 Is it true that for each two $n \times n$ matrices $A$ and $B$ it holds that
-
 <BR>
 
 $$
@@ -511,7 +503,6 @@ $$
 $$
 
 This statement is false. A trivial counterexample is given by $A = B = I_n$, for $n \geq 2$. Namely, for these matrices we see that
-
 <BR>
 
 $$
@@ -523,15 +514,13 @@ $$
 <li>
 
 Is it true that for each $n \times n$ matrix $A$ and each real number $k$ it holds that
-
 <BR>
 
 $$
-\det{(kA)} = k^n\det{A}?
+\det{(kA)} = k^n\det{A}\,?
 $$
 
 This is true. One way to prove it is to write  $kA = (kI)A$, where 
-
 <BR>
 
 $$
@@ -556,7 +545,6 @@ Is it true that $\text{det}(-A)= -\det{(A)}$ for each $n \times n$ matrix $A$?
 
 
 This is not true in general.  Taking $k = -1$ in the previous statement we see that 
-
 <BR>
 
 $$

@@ -7,7 +7,7 @@ One way to resolve this is to use a numerical method to solve an equation of deg
 
 (Subsec:Powermethod:Basics)=
 
-## The Basics
+## The basics
 
 The idea behind the power method is really very simple.
 Let us for the moment consider the case where the matrix $A$ is diagonalisable.
@@ -392,7 +392,7 @@ And lastly, the circumstance that $\lambda_1$ is negative and  $\lambda_2$ is po
 
 (Sec:PowerMethodExtras)=
 
-## Some Extensions
+## Some extensions
 
 In the previous section the power method was used find the dominant (real) eigenvalue of a matrix $A$. In this subsection we will consider two extensions.
 
@@ -821,7 +821,7 @@ Problem solved!
 
 
 
-## Grasple Exercises
+## Grasple exercises
 
 ::::{grasple}
 :iframeclass: dark-light

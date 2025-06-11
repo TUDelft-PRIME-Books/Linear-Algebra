@@ -984,7 +984,7 @@ $$
 
 ::::::
 
-## Grasple Exercises 
+## Grasple exercises 
 
 ::::::{grasple} 
 :iframeclass: dark-light
