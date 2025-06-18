@@ -7,7 +7,7 @@ Below you can find a list of contributors to this book. The contributors are gro
 
 [Dr. D. (Dani) Balagué Guardia](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/dr-d-dani-balague-guardia)
 
-[Dr. F.J. (Fokko) van de Bult](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/analysis/people/dr-fj-fokko-van-de-bult)
+[Dr. F.J. (Fokko) van de Bult](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/dr-fj-fokko-van-de-bult)
 
 [Drs. A.T. (André) Hensbergen](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/drs-at-andre-hensbergen) (principal author)
 
@@ -23,7 +23,7 @@ Below you can find a list of contributors to this book. The contributors are gro
 
 [A. (Abel) de Bruijn BSc](https://www.linkedin.com/in/abeldebruijn/)
 
-[Dr. F.J. (Fokko) van de Bult](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/analysis/people/dr-fj-fokko-van-de-bult)
+[Dr. F.J. (Fokko) van de Bult](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/dr-fj-fokko-van-de-bult)
 
 [R.C.M. (Rens) Dur BSc](https://www.linkedin.com/in/rensdur/)
 
@@ -61,7 +61,7 @@ J.A. (Hans) Verheij
 
 A. (Amin) Ayman
 
-[Dr. F.J. (Fokko) van de Bult](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/analysis/people/dr-fj-fokko-van-de-bult)
+[Dr. F.J. (Fokko) van de Bult](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/dr-fj-fokko-van-de-bult)
 
 [RNDr. E. (Eva) Coplakova, CSc.](https://www.linkedin.com/in/eva-coplakova-61426820/)
 
@@ -71,7 +71,7 @@ A. (Amin) Ayman
 
 [Dr. W.M. (Willem) Schouten-Straatman](https://www.linkedin.com/in/willem-schouten-straatman/)
 
-[Dr.ir. R.F. (René) Swarttouw](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/analysis/people/dr-rf-rene-swarttouw)
+[Dr.ir. R.F. (René) Swarttouw](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/dr-rf-rene-swarttouw)
 
 [M. (Mehrdad) Mihankhah](https://www.linkedin.com/in/mehrdad-mihankhah/)
 
