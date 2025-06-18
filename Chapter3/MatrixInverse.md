@@ -1632,20 +1632,10 @@ The remaining exercises have a more theoretic flavour.
 :description: Distilling $A^{-1}$ from a relation $c_2A^2 + c_1A + c_0I = 0$.
 ::::::
 
-In the last two exercises (non-)invertibility of non-square matrices is considered.
-
-::::::{grasple}
-:iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/ca504661-cc62-454f-8035-04a9bef85f91?id=61170
-:label: grasple_exercise_3_4_22
-:dropdown:
-:description: To explore invertibility for a $2\times 3$ matrix.
-::::::
-
 ::::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/2d363522-682f-4ef1-bd9f-7e0d1de30136?id=116691
-:label: grasple_exercise_3_4_23new
+:label: grasple_exercise_3_4_22
 :dropdown:
 :description: Extricate X from an equation containing A,B,X  and an inverse.
 ::::::
@@ -1654,18 +1644,27 @@ In the last two exercises (non-)invertibility of non-square matrices is consider
 ::::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/864d2af1-e751-46b1-88de-f205d95e493c?id=116721
-:label: grasple_exercise_3_4_24new
+:label: grasple_exercise_3_4_23
 :dropdown:
 :description: Extricate X from an equation containing A,B,X  and a transpose.
 ::::::
 
 
+In the last two exercises (non-)invertibility of non-square matrices is considered.
 
 
 ::::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/4e9b4ec1-f775-430f-b81f-c76c42fcbc76?id=60136
-:label: grasple_exercise_3_4_23
+:label: grasple_exercise_3_4_24
 :dropdown:
 :description: To explore invertibility for a $3\times 2$ matrix.
+::::::
+
+::::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/ca504661-cc62-454f-8035-04a9bef85f91?id=61170
+:label: grasple_exercise_3_4_25
+:dropdown:
+:description: To explore invertibility for a $2\times 3$ matrix.
 ::::::

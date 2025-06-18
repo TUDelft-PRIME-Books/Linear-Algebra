@@ -1648,6 +1648,7 @@ We will dedicate {numref}`Sec:MatrixInv` to this topic.
 
 ::::::
 
+
 ::::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/2fc08e2c-b3ad-4a2b-8077-ce66abc466d7?id=82936
@@ -1691,13 +1692,13 @@ The remaining exercises are less of a compuational character.
 :url: https://embed.grasple.com/exercises/cdb5014d-eace-489e-9616-45e03bb6e95e?id=69295
 :label: grasple_exercise_3_2_19
 :dropdown:
-:description: To find a matrix $A \neq \pm I$ for which $A^2 = I$.
+:description: To find a $2\times2$ real matrix $A$ for which $A^2 = -I$.
 
 ::::::
 
 ::::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/7f91a5d2-e1c9-422e-b0f9-ba0b22936e2a?id=69456
+:url: https://embed.grasple.com/exercises/7f91a5d2-e1c9-422e-b0f9-ba0b22936e2a?id=  
 :label: grasple_exercise_3_2_20
 :dropdown:
 :description: To show that $(cA)^T = cA^T$.
