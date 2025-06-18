@@ -1218,7 +1218,7 @@ $$
 ::::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/bc3df113-95b3-470a-a730-3ad8faab08f5?id=93183
-:label: grasple_exercise_5_4_8
+:label: grasple_exercise_5_4_8a
 :dropdown:
 :description: To compute the normal vector $N(\vect{a}_1,\vect{a}_2,\vect{a}_3)$ as in {numref}`Subsection %s <Subsec-DetExtras-DetAndCrossProd>`.
 
