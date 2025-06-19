@@ -224,14 +224,14 @@ $$
 
 From row reduction of the augmented matrix
 
-\begin{eqnarray*}
-(A - (a+bi)I | \vect{0}) &=&
+\begin{align*}
+(A - (a+bi)I | \vect{0}) &=
 \left(\begin{array}{cc|c} a-(a+bi) & -b &0\\ b & a-(a+bi)&0 \end{array}\right)\\
-&=&
+&=
 \left(\begin{array}{cc|c} -bi & -b&0 \\ b & -bi&0 \end{array}\right) \\
-&\sim&
+&\sim
 \left(\begin{array}{cc|c} bi & b &0\\ 0 & 0&0 \end{array}\right),
-\end{eqnarray*}
+\end{align*}
 
 we see that $\vect{v} = \left(\begin{array}{c} 1 \\ -i \end{array}\right)$
 is an eigenvector for $\lambda_1 = a+bi$. By taking conjugates

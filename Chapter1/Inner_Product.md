@@ -260,19 +260,21 @@ $$
 \begin{align*}
 \mathbf{v}_1 \ip \mathbf{v}_2 &=
 \begin{pmatrix}a_{1} \\ a_{2}\\ \vdots\\a_{n}\end{pmatrix} \ip \begin{pmatrix}b_{1} \\ b_{2}\\ \vdots \\ b_{n}\end{pmatrix}
-            = a_1b_1 +a_2b_2+ \ldots + a_nb_n  \\
-      &= b_1a_1 +b_2a_2+ \ldots + b_na_n =
-               \begin{pmatrix}b_{1} \\ b_{2}\\ \vdots \\ b_{n}\end{pmatrix}\ip\begin{pmatrix}a_{1} \\ a_{2}\\ \vdots\\ a_{n}\end{pmatrix} = \mathbf{v}_2\ip\mathbf{v}_1.
+            \\ &= a_1b_1 +a_2b_2+ \ldots + a_nb_n  \\
+      &= b_1a_1 +b_2a_2+ \ldots + b_na_n \\&=
+               \begin{pmatrix}b_{1} \\ b_{2}\\ \vdots \\ b_{n}\end{pmatrix}\ip\begin{pmatrix}a_{1} \\ a_{2}\\ \vdots\\ a_{n}\end{pmatrix} \\&= \mathbf{v}_2\ip\mathbf{v}_1.
 \end{align*}
 $$
 
 ii. For two vectors $\vect{v}_1 = \begin{pmatrix}a_{1} \\ a_{2}\\ \vdots\\ a_{n}\end{pmatrix}$, $\vect{v}_2 = \begin{pmatrix}b_{1} \\ b_{2}\\ \vdots\\ b_{n}\end{pmatrix}$ &nbsp; and any constant $c$ we see that
 
 $$
-\begin{eqnarray*}
-            (c\mathbf{v}_1)\ip\mathbf{v}_2 &=&  \begin{pmatrix}ca_{1}\\ca_{2}\\ \vdots\\ca_{n}\end{pmatrix}\ip\begin{pmatrix}b_{1}\\b_{2}\\       \vdots\\b_{n}\end{pmatrix} = (ca_1)b_1 + (ca_2)b_2+ \ldots + (ca_n)b_n \\
-            &=& c\,(a_1b_1 +a_2b_2+ \ldots + a_nb_n) = c\, (\mathbf{v}_1\ip\mathbf{v}_2)
-\end{eqnarray*}
+\begin{align*}
+            (c\mathbf{v}_1)\ip\mathbf{v}_2 &=  \begin{pmatrix}ca_{1}\\ca_{2}\\ \vdots\\ca_{n}\end{pmatrix}\ip\begin{pmatrix}b_{1}\\b_{2}\\       \vdots\\b_{n}\end{pmatrix}  \\
+            &= (ca_1)b_1 + (ca_2)b_2+ \ldots + (ca_n)b_n \\
+            &= c\,(a_1b_1 +a_2b_2+ \ldots + a_nb_n) \\
+            &= c\, (\mathbf{v}_1\ip\mathbf{v}_2)
+\end{align*}
 $$
 
 iii. Is proved in the same way as (ii).
