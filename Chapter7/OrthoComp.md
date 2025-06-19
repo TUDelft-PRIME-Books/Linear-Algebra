@@ -387,7 +387,7 @@ but $\vect{u}_{V}\cdot\vect{u}_{V^{\bot}}=0$ since $\vect{u}_{V^{\bot}}$ is orth
 :url: https://embed.grasple.com/exercises/f216b122-e2f3-4cd4-9268-7a814e12cec3?id=91429
 :label: grasple_exercise_7_1_2
 :dropdown:
-:description: Find a basis for the orthogonal complement of span$\{\vect{v}_1,\vect{v}_2\}$ in $\R^4$.
+:description: Find a basis for the orthogonal complement of $\operatorname{Span}\{\vect{v}_1,\vect{v}_2\}$ in $\R^4$.
 
 ::::
 
@@ -406,7 +406,7 @@ but $\vect{u}_{V}\cdot\vect{u}_{V^{\bot}}=0$ since $\vect{u}_{V^{\bot}}$ is orth
 :url: https://embed.grasple.com/exercises/6a795f5a-2da1-4de7-9358-5b654bf7365d?id=110452
 :label: grasple_exercise_7_1_4
 :dropdown:
-:description: Find  the orthogonal decomposition of a vector $\vect{u}$ in $\R^2$ w.r.t.  span$\{\vect{v}\}$.
+:description: Find  the orthogonal decomposition of a vector $\vect{u}$ in $\R^2$ w.r.t.  $\operatorname{Span}\{\vect{v}\}$.
 
 
 ::::
@@ -418,7 +418,7 @@ but $\vect{u}_{V}\cdot\vect{u}_{V^{\bot}}=0$ since $\vect{u}_{V^{\bot}}$ is orth
 :url: https://embed.grasple.com/exercises/30b117dd-3a1e-4e5e-9785-493e51538f30?id=110403
 :label: grasple_exercise_7_1_5
 :dropdown:
-:description: Find  the orthogonal decomposition of a vector $\vect{u}$ in $\R^3$ w.r.t.  span$\{\vect{v}_1,\vect{v}_2\}$.
+:description: Find  the orthogonal decomposition of a vector $\vect{u}$ in $\R^3$ w.r.t.  $\operatorname{Span}\{\vect{v}_1,\vect{v}_2\}$.
 
 
 ::::
@@ -429,7 +429,7 @@ but $\vect{u}_{V}\cdot\vect{u}_{V^{\bot}}=0$ since $\vect{u}_{V^{\bot}}$ is orth
 :url: https://embed.grasple.com/exercises/19e0688c-b00c-46c2-aad8-200a230687b9?id=91435
 :label: grasple_exercise_7_1_6
 :dropdown:
-:description: Find  the orthogonal decomposition of a vector $\vect{u}$ in $\R^4$ w.r.t. span$\{\vect{v}_1,\vect{v}_2\}$.
+:description: Find  the orthogonal decomposition of a vector $\vect{u}$ in $\R^4$ w.r.t. $\operatorname{Span}\{\vect{v}_1,\vect{v}_2\}$.
 
 ::::
 

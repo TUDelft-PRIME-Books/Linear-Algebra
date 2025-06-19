@@ -27,7 +27,7 @@ As a second basis vector we can take
 
 :::
 
-It is then clear that $\vect{b}_2$ is in span$\{\vect{a}_1, \vect{a}_2\}$, and by the property of the orthogonal projection $\operatorname{proj}_{\vect{a}_1}(\vect{a}_2)$ it follows that $\vect{b}_2 \perp \vect{b}_1$.
+It is then clear that $\vect{b}_2$ is in $\operatorname{Span}\{\vect{a}_1, \vect{a}_2\}$, and by the property of the orthogonal projection $\operatorname{proj}_{\vect{a}_1}(\vect{a}_2)$ it follows that $\vect{b}_2 \perp \vect{b}_1$.
 
 A fortiori $\{\vect{b}_1, \vect{b}_2\}$ is linearly independent, so $\{\vect{b}_1, \vect{b}_2\}$ is an orthogonal basis for $W = \operatorname{Span}{\{\vect{a}_1, \vect{a}_2\}}$.
 
@@ -219,7 +219,7 @@ $\vect{b}_1 = \vect{a}_1 = \begin{pmatrix} 1 \\ -1   \\ 2 \\ 3    \end{pmatrix},
       \vect{b}_2 =   \vect{a}_{2} - \dfrac{\vect{a}_{2}\ip\vect{b}_1}{\vect{b}_1\ip\vect{b}_1}\vect{b}_1        = \begin{pmatrix} 0 \\ 0   \\ 0 \\ 0    \end{pmatrix}$.
 
 The explanation is that $\vect{b}_2 = \vect{a}_{2} - \operatorname{proj}_{\vect{a}_1}(\vect{a}_2) =
-\vect{a}_{2} - \vect{a}_{2} = \vect{0}$, since $\vect{a}_2$ lies in span$\{\vect{a}_1\}$.
+\vect{a}_{2} - \vect{a}_{2} = \vect{0}$, since $\vect{a}_2$ lies in $\operatorname{Span}\{\vect{a}_1\}$.
 In other words, since $W_2 = W_1$.
 
 We discard the zero vector, and continu to compute the next new basis vector.
@@ -238,7 +238,7 @@ $$
              = \vect{b}_4 - \dfrac{-10}{15}\vect{b}_1 -\dfrac{7}{21}\vect{b}_3 = \vect{0}.
 $$
 
-Here again we may conclude that $\vect{a}_4$ lies in span$\{\vect{b}_1,\vect{b}_3\}$, and we
+Here again we may conclude that $\vect{a}_4$ lies in $\operatorname{Span}\{\vect{b}_1,\vect{b}_3\}$, and we
 discard $\vect{b}_4$ from our basis.
 
 The conclusion is that
@@ -248,7 +248,7 @@ $$
           \begin{pmatrix} 4 \\ 2   \\ -1 \\ 0    \end{pmatrix}\right\}
 $$
 
-is an orthogonal basis for span$\{\vect{a}_1,\ldots, \vect{a}_4\}$.
+is an orthogonal basis for $\operatorname{Span}\{\vect{a}_1,\ldots, \vect{a}_4\}$.
 
 ::::
 
@@ -583,7 +583,7 @@ The first exercises are about applying the Gram-Schmidt (GS) algorithm
 :url: https://embed.grasple.com/exercises/63090a52-ba10-4881-b9c2-35ae64e79ffd?id=87827
 :label: grasple_exercise_7_3_5
 :dropdown:
-:description: Orthogonal basis for span$\{\mathbf{a}_1, \mathbf{a}_2,\mathbf{a}_3\}$ in $\R^3$.
+:description: Orthogonal basis for $\operatorname{Span}\{\mathbf{a}_1, \mathbf{a}_2,\mathbf{a}_3\}$ in $\R^3$.
 
 ::::
 
@@ -592,7 +592,7 @@ The first exercises are about applying the Gram-Schmidt (GS) algorithm
 :url: https://embed.grasple.com/exercises/81e5b0f8-9d1a-4ff7-973f-e8b8cb84d42f?id=87838
 :label: grasple_exercise_7_3_6
 :dropdown:
-:description: Finding an orthonormal basis for span$\{\mathbf{a}_1, \mathbf{a}_2\}$ in $\R^3$.
+:description: Finding an orthonormal basis for $\operatorname{Span}\{\mathbf{a}_1, \mathbf{a}_2\}$ in $\R^3$.
 
 ::::
 

@@ -478,7 +478,7 @@ The basis $\lbrace\vect{a}_1,\vect{a}_3\rbrace$ of $\Col{A}$.
 :url: https://embed.grasple.com/exercises/6c836722-f664-434d-bf7d-3a4f86ff0187?id=88188
 :label: grasple_exercise_4_2_B
 :dropdown:
-:description: To find a basis for span$\{\vect{b}_1, \ldots, \vect{b}_5\}$ by thinning.
+:description: To find a basis for $\operatorname{Span}\{\vect{b}_1, \ldots, \vect{b}_5\}$ by thinning.
 
 ::::::
 
@@ -1832,7 +1832,7 @@ $B$ is an $n\times m$ matrix?
 :url: https://embed.grasple.com/exercises/1c00677f-eadb-4a13-84aa-5c7b07774f21?id=88189
 :label: grasple_exercise_4_2_4
 :dropdown:
-:description: To find a basis for span$\{\vect{b}_1, \ldots, \vect{b}_5\}$ by thinning.
+:description: To find a basis for $\operatorname{Span}\{\vect{b}_1, \ldots, \vect{b}_5\}$ by thinning.
 
 ::::::
 
@@ -1877,7 +1877,7 @@ $B$ is an $n\times m$ matrix?
 :url: https://embed.grasple.com/exercises/04d804ff-16ea-44ee-ac76-452a73a88859?id=70653
 :label: grasple_exercise_4_2_9
 :dropdown:
-:description: To find a basis and the dimension of span$\{\vect{v}_1, ... , \vect{v}_4\}$ &nbsp; (in $\R^4$).
+:description: To find a basis and the dimension of $\operatorname{Span}\{\vect{v}_1, ... , \vect{v}_4\}$ &nbsp; (in $\R^4$).
 
 ::::::
 
