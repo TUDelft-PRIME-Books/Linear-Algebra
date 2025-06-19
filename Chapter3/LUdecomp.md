@@ -1290,6 +1290,7 @@ A **permutation matrix** is an $n \times n$ matrix $P$ with only entries $0$ and
 ::::::
 
 ::::::{prf:example}
+:label: Ex:LUdecomp:PermutationMatrix
 
 Two $4\times 4$ permutation matrices are
 
@@ -1370,6 +1371,7 @@ And the interested reader may open the proof below it.
 
 
 ::::::{prf:example}
+:label: Ex:LUdecomp:PermutationMatrices
 
 For the matrices $P_1$ and $P_2$ from {eq}`Eq:LUdecomp:P1andP2`  we have
 
@@ -1446,6 +1448,7 @@ As before, $L$ may be constructed in such a way that it has $1$'s on its diagona
 ::::::
 
 ::::::{prf:remark} 
+:label: LUDecomp:PLUremark
 
 As was mentioned before, the key idea is to perform the row exchanges first. These can be put together in the permutation matrix $P$. The algorithm to actually find the $LU$ decomposition of $PA$ without doing the whole row reduction process for $PA$ all over again is rather intricate, and in our view belongs to a course of numerical linear algebra.  There it will be explained that it may also be preferable to work towards a $PLU$ decomposition instead of an $LU$ decomposition in cases where theoretically it is not absolutely necessary.  For numerical reasons, having to do with finite accuracy when representing real numbers in computers, it may be better to choose the pivots in another order than just top-down.
 
@@ -1767,6 +1770,7 @@ arithmetic operations.
 
 
 ::::::{prf:remark}
+:label: Prop:LUdecomp:CountOperationsLUremark
 
 Note that first row reducing the augmented matrix $(A | \mathbf{b})$ to echelon form 
 $(U | \tilde{\mathbf{b}})$ and then solve  $U\mathbf{x} = \tilde{\mathbf{b}}$  by backward substituion
@@ -1817,6 +1821,7 @@ arithmetic operations.
 
 <!--
 :::{prf:remark}
+:label: Prop:LUdecomp:CountOperationsLUremark
 
 The total number of arithmetic operations needed in order to solve a linear system with row reduction (without exchanging rows), and with $LU$ is the same. We leave the proof as an exercise for the reader.
 
@@ -1849,6 +1854,7 @@ $2n^3 - 2n$ operations.
 
 
 ::::::{prf:remark}
+:label: Prop:LUdecomp:CountOperationsInverseRemark
 
 Note that  computing $A^{-1}\vect{b}$  and solving  $LU\vect{x} = \vect{b}$ involve exactly the same number of arithmetic operations.
 

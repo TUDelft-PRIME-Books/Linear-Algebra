@@ -11,6 +11,7 @@ Throughout this book we will regularly work with geometrical objects in $\mathbb
 We all know what a line looks like, but in mathematics we want to define everything in a precise way. Therefore, we will define lines in $\mathbb{R}^2$ as follows.
 
 ::::{prf:definition}
+:label: Def:LinesAndPlanes:LineInPlane
 
 A line $\mathcal{L}$ in the plane $\mathbb{R}^2$ is a collection of points $(x, y)$ that satisfy an equation of the form
 
@@ -75,6 +76,7 @@ $$
 of which the components $x$ and $y$ satisfy the equation $x+2y=5$. This means that the line $\mathcal{L}_1$ consists of all vectors that connect the origin with a point on the line. When we think of a line as a collection of vectors we can describe that line with a _parametric vector equation_. To do this, we need a vector that connects the origin to a point on the line and a non-zero vector $\mathbf{u}$ parallel to the line.
 
 ::::{prf:definition}
+:label: Def:LinesAndPlanes:DirectionalVector
 
 Each non-zero vector $\mathbf{u}$ that is parallel to a line $\mathcal{L}$ will be called a **directional vector** of that line.
 ::::
@@ -138,6 +140,7 @@ $$
 where $r$ is a real number.
 
 ::::{prf:definition}
+:label: Def:LinesAndPlanes:ParametricVectorEquationLine
 
 If $\mathbf{v_0}=\begin{pmatrix} x_0 \\ y_0 \end{pmatrix}$ is a vector on the line $\mathcal{L}$ and $\mathbf{u}=\begin{pmatrix} a \\ b \end{pmatrix}$ is a directional vector of $\mathcal{L}$, then the equation
 
@@ -150,6 +153,7 @@ will be called a **parametric vector equation** of $\mathcal{L}$.
 ::::
 
 ::::{prf:example}
+:label: Ex:LinesAndPlanes:ParametricVectorEquationLine
 
 Let $\mathcal{L}$ be the line through the points $P=(2, 1)$ and $Q=(6, 4)$. How do we find a parametric vector equation of this line? We need a vector that connects the origin to a point on the line and a vector parallel to the line. For the first vector we can simply use the coordinates of either $P$ or $Q$. We can use either point, but let us choose $P$. We can construct a vector parallel to the line $\mathcal{L}$ by connecting two distinct points on the line by an arrow. We can use for instance the vector $\overrightarrow{PQ}$ that starts in $P$ and ends in $Q$.
 
@@ -181,6 +185,7 @@ $$
 Finally, we will take a look at a _normal equation_ of a line in $\mathbb{R}^2$. To obtain a parametric vector equation of a line, we used a vector parallel to that line. For the normal equation of a line we use a vector that is orthogonal to the line.
 
 ::::{prf:definition}
+:label: Def:LinesAndPlanes:NormalVector
 
 Any non-zero vector $\mathbf{n}$ that is orthogonal to a line $\mathcal{L}$ will be called a **normal vector** of that line.
 
@@ -201,6 +206,7 @@ Line $\mathcal{L}$ with normal vector $\vect{n}$.
 Let $\mathbf{v_0}$ be the vector that connects the origin to the point $P$. We can see in {numref}`Figure %s <Fig:LinesAndPlanes:NormalEquationLine>` that a vector $\mathbf{v}$ is on the line $\mathcal{L}$ whenever   $(\mathbf{v}-\mathbf{v_0})\ip\mathbf{n}=0.$
 
 ::::{prf:definition}
+:label: Def:LinesAndPlanes:NormalEquationLine
 
 Let $\mathcal{L}$ be a line in $\mathbb{R}^2$. If $\mathbf{v_0}$ is a vector on $\mathcal{L}$ and $\mathbf{n}$ is a normal vector of $\mathcal{L}$, then
 
@@ -214,6 +220,7 @@ will be called a **normal equation** of $\mathcal{L}$.
 ::::
 
 ::::{prf:example}
+:label: Ex:LinesAndPlanes:NormalEquationLine
 
 The line $\mathcal{L}_1$ can be described by the following parametric vector equation.
 
@@ -251,6 +258,7 @@ After some calculations we find the Cartesian equation $-2x+y=5$. In {numref}`Fi
 We already saw that when we are working in $\mathbb{R}^2$, we can describe lines using a Cartesian equation, a parametric vector equation or a normal equation. Planes in the three-dimensional space $\mathbb{R}^3$ can be described in similar ways. We will start by defining planes using the _Cartesian equation_ and then we will explain the geometrical interpretation of this equation.
 
 ::::{prf:definition}
+:label: Def:LinesAndPlanes:PlaneInSpace
 
 A plane $\mathcal{P}$ in the space $\mathbb{R}^3$ is a collection of points $(x, y, z)$ that satisfy an equation of the form
 
@@ -317,6 +325,7 @@ This means that $Q$ is on the plane $\mathcal{P}$ through $P$ and orthogonal to 
 A line can be defined as a collection of points and as the collection of vectors that connect the origin to points on the line. Similarly, we can identify the plane $\mathcal{P}$ as the collection of all vectors $\mathbf{v}$ that connect the origin to points on $\mathcal{P}$. In this case we will say that $\mathbf{v}$ is a vector on the plane $\mathcal{P}$.
 
 ::::{prf:definition}
+:label: Def:LinesAndPlanes:VectorOnPlane
 
 Any non-zero vector $\mathbf{n}$ that is orthogonal to a plane $\mathcal{P}$ will be called a **normal vector** of that plane.
 ::::
@@ -326,6 +335,7 @@ Let $\mathbf{n}$ be a normal vector for a given plane $\mathcal{P}$ and $\mathbf
 $(\mathbf{v}-\mathbf{v_0})\ip\mathbf{n}=0$.
 
 ::::{prf:definition}
+:label: Def:LinesAndPlanes:NormalEquationPlane
 
 Let $\mathcal{P}$ be a plane in $\mathbb{R}^3$. If $\mathbf{v_0}$ is a vector on $\mathcal{P}$ and $\mathbf{n}$ is a normal vector of $\mathcal{P}$, then
 
@@ -341,6 +351,7 @@ will be called a _normal equation_ of $\mathcal{P}$.
 ::::
 
 ::::{prf:remark}
+:label: Rem:LinesAndPlanes:NormalEquationPlane
 
 For
 
@@ -388,6 +399,7 @@ is always a vector normal to (= perpendicular to) the plane $\mathcal{P}$.
 Finally, let us take a look at a _parametric vector equation_ of a plane. Such an equation will be very similar to a parametric vector equation of a line in the plane $\mathbb{R}^2$, but in this case we will need two directional vectors instead of one.
 
 :::{prf:definition}
+:label: Def:LinesAndPlanes:DirectionalVectorPlane
 
 Each non-zero vector $\mathbf{u}$ that is parallel to a plane $\mathcal{P}$ will be called a **directional vector** of that plane.
 :::
@@ -413,6 +425,7 @@ $$
 where $r$ and $s$ are arbitrary real numbers.
 
 :::{prf:definition}
+:label: Def:LinesAndPlanes:ParametricVectorEquationPlane
 
 If $\mathbf{v_0}=\begin{pmatrix} x_0 \\ y_0 \\ z_0 \end{pmatrix}$ is a vector on the plane $\mathcal{P}$ and $\mathbf{u_1}=\begin{pmatrix} a_1 \\ b_1 \\ c_1 \end{pmatrix}$ and $\mathbf{u_2}=\begin{pmatrix} a_2 \\ b_2 \\ c_2 \end{pmatrix}$ are directional vectors of $\mathcal{P}$ that are not parallel, then the equation
 
@@ -424,6 +437,7 @@ will be called a **parametric vector equation** of $\mathcal{P}$.
 :::
 
 :::{prf:example}
+:label: Ex:LinesAndPlanes:ParametricVectorEquationPlane
 
 In this example we will construct a parametric vector equation and a normal equation for the plane through the points $P=(1, 1, 1)$, $Q=(1, 2, 2)$ and $R=(3, 1, 2)$. The vectors $\overrightarrow{PQ}$ and $\overrightarrow{PR}$ can serve as directional vectors. We find that
 
@@ -543,6 +557,7 @@ It is of course also possible that the three planes coincide. In this case the p
 There are multiple ways to describe a line in $\mathbb{R}^3$, but for us the parametric will suffice. In {numref}`Subsec:LinesAndPlanes:ParametricLine` we saw that we can describe a line in $\mathbb{R}^2$ with a parametric vector equation using a vector $\mathbf{v_0}$ that connects the origin to a point on the line and a vector parallel to the given line. The same idea works in the space $\mathbb{R}^3$.
 
 :::{prf:definition}
+:label: Def:LinesAndPlanes:DirectionalVectorLineR3
 
 Each non-zero vector $\mathbf{u}$ that is parallel to a line $\mathcal{L}$ will be called a **directional vector** of that line.
 :::
@@ -560,6 +575,7 @@ The line $\mathcal{L}$ in $\mathbb{R}^3$.
 :::
 
 :::{prf:definition}
+:label: Def:LinesAndPlanes:ParametricVectorEquationLineR3
 
 If $\mathbf{v_0}=\begin{pmatrix} x_0 \\ y_0 \\ z_0 \end{pmatrix}$ is a vector on the line $\mathcal{L}$ and $\mathbf{u}=\begin{pmatrix} a \\ b \\ c \end{pmatrix}$ is a directional vector of $\mathcal{L}$, then the equation
 
@@ -571,6 +587,7 @@ will be called a **parametric vector equation** of $\mathcal{L}$.
 :::
 
 :::{prf:example}
+:label: Ex:LinesAndPlanes:ParametricVectorEquationLineR3
 
 How can we find a parametric vector equation for the line $\mathcal{L}$ that contains the points $P=(1, 2, 4)$ and $Q=(5, 3, 1)$? <BR> The vector $\overrightarrow{PQ}$ is parallel to $\mathcal{L}$ and therefore a directional vector. The components of this vector are equal to
 

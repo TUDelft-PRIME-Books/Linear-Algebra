@@ -12,6 +12,8 @@ The set $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{2}\right\rbrace$ contains two ve
 We will now formalise this concept of superfluous vectors.
 
 ::::::{prf:definition}
+:label: Def:LinInd:LinInd
+
 We will call a set $S$ of vectors **linearly dependent** if there is some $\mathbf{v}$ in $S$ such that $\Span{S}=\Span{S\setminus\left\lbrace\mathbf{v}\right\rbrace}$. In this case, we say that $\mathbf{v}$ is **linearly dependent on**  $S\setminus\left\lbrace\mathbf{v}\right\rbrace$. If $S$ is not linearly dependent, we say $S$ is **linearly independent**.
 
 ::::::
@@ -300,6 +302,8 @@ Prove {prf:ref}`Cor:LinInd:LinIndisColwithoutPivot`
 ::::::
 
 ::::::{prf:example}
+:label: Ex:LinInd:LinDepExin4D
+
 Consider the following three vectors in $\mathbb{R}^{4}$:
 
 $$
@@ -461,6 +465,8 @@ Take distinct vectors $\mathbf{v}_{1},...,\mathbf{v}_{n+1}$ in $S$. $\Span{\math
 ::::::
 
 ::::::{prf:example}
+:label: Ex:LinInd:LinDepExin5D
+
 To illustrate the strength of {prf:ref}`Thm:LinInd:MoreRowthanColmeansLinDep`, consider the following set of vectors in $\mathbb{R}^{5}$:
 
 $$

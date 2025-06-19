@@ -21,6 +21,7 @@ important concept related to subspaces, namely the concept of a basis.
 The set of vectors that generates a subspace is in no way unique as the following example shows:
 
 ::::::{prf:example}
+:label: Ex:BasisDim:GeneratorsR3
 
 Consider the four sets of vectors
 
@@ -148,6 +149,7 @@ where the vector $\vect{e}_j$ stands for the $j$-th column of the $n \times n$ i
 ::::::
 
 ::::::{prf:remark}
+:label: Rmrk:BasisDim:StandardBasis
 
 This basis was already defined in {numref}`Sec:LinTrafo`, Equation {eq}`Eq:LinTrafo:StandardBasis`, along with the standard matrix of a linear transformation.
 
@@ -1041,6 +1043,7 @@ Show that **any** set of two independent vectors in the plane $\mathcal P$ gener
 ## Dimension of a subspace
 
 ::::::{prf:definition}
+:label: Def:BasisDim:Dimension
 
 The **dimension** of a subspace $S$ is the number of elements in a
 (i.e., any) basis for $S$. &nbsp; Notation: &nbsp; $\operatorname{dim}S$.
@@ -1208,6 +1211,7 @@ $$
 ::::::
 
 ::::::{prf:remark}
+:label: Rem:BasisDim:TwoOfThreeSuffice
 
 Take another look at {prf:ref}`Ex:PlaneWithBases`. We constructed a basis for the plane $\mathcal P$ given by the equation
 
@@ -1226,6 +1230,7 @@ From the {prf:ref}`Prop:BasisDim:TwoOfThreeSuffice` it follows that _any_ set of
 ::::::
 
 ::::::{prf:example}
+:label: Ex:BasisDim:IndepVectorsSpanR3
 
 Any set $S$ of $n$ independent vectors in $\R^n$ spans $\R^n$.
 
@@ -1604,6 +1609,7 @@ $$
 For future reference this seems to be **the** place for yet another definition:
 
 ::::::{prf:definition}
+:label: Dfn:BasisDim:Rank
 
 The **rank** of a matrix is defined as the dimension of its column space (or, for that matter, its row space):
 

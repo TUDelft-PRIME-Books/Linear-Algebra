@@ -167,7 +167,7 @@ We see that the highest power of $\lambda$ in this expression is the $n$-th powe
 The function $\det(A - \lambda I)$ is of paramount importance. We will see that it reveals important intrinsic properties of the matrix $A$. It deserves a name.
 
 ::::::{prf:definition}
-
+:label: Def:CharPoly
 The function $\det(A - \lambda I)$ is called the **characteristic polynomial** of $A$. We will sometimes denote it by
 $p_A(\lambda)$, so
 
@@ -286,6 +286,7 @@ Another natural question is how many linearly **independent** eigenvectors  ther
 ## Algebraic and geometric multiplicity
 
 ::::::{prf:definition}
+:label: Def:Eigenvalues:AlgGeomMultiplicity
 
 The **algebraic multiplicity** of an eigenvalue $\lambda_k$ is the number of factors $(\lambda - \lambda_k)$ appearing in the characteristic polynomial. It is often abbreviated as $\operatorname{a.m.}(\lambda_k)$.
 

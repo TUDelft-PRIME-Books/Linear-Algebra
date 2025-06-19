@@ -129,6 +129,8 @@ It suffices to find the cosine and sine of the angle $\mathcal{L}$ makes with th
 One salient fact about these projections is that they act as the identity on their range. That is, for any vector $\mathbf{w}$ in the range of $T$ we have $T(T(\mathbf{w}))=T(\mathbf{w})$. This leads us to the following definition:
 
 ::::::{prf:definition}
+:label: Dfn:GeomLinTrans:Projection
+
 A linear transformation $T:\mathbb{R}^{n}\to\mathbb{R}^{n}$ is called a **projection** if $T\circ T=T$.
 
 ::::::
@@ -293,6 +295,8 @@ Reflection along the line $\mathcal{L}$ can be seen as the transformation $2\pro
 Keeping this in mind, it makes sense to define general reflections as follows.
 
 ::::::{prf:definition}
+:label: Dfn:GeomLinTrans:Reflection
+
 If $T:\mathbb{R}^{n}\to\mathbb{R}^{n}$ is the orthogonal projection on $\operatorname{range}(T)$ with standard matrix $P$, then
 
 $$
@@ -408,6 +412,8 @@ which proves the claim.
 As we have seen in {prf:ref}`Prop:GeomLinTrans:ReflDotProd`, reflections preserve the dot product and therefore lengths of vectors and the angles between vectors. However, there are other transformations that do so. These other transformations are the rotations. Let us start with the definition.
 
 ::::::{prf:definition}
+:label: Dfn:GeomLinTrans:Rotation
+
 A **rotation** is a transformation $T:\mathbb{R}^{n}\to\mathbb{R}^{n}$ that is not a reflection but such that for any $\mathbf{v}_{1},\mathbf{v}_{2}$ in $\mathbb{R}^{n}$ we have:
 
 $$T(\vect{v}_{1})\cdot T(\vect{v}_{2})=\vect{v}_{1}\cdot\vect{v}_{2}.$$
@@ -660,6 +666,7 @@ $$
 ::::::
 
 ::::::{prf:example} Application
+:label: Ex:GeomLinTrans:CardsStack
 
 Suppose we have a standard deck of $52$ perfectly rectangular playing cards placed in a stack on a table. A standard playing card is about $87$ by $56$ millimeters, so we can assume that the corners of the lowest card are on
 

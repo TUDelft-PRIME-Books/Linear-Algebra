@@ -409,7 +409,7 @@ where $\vect{u} + i \vect{w}$ is an eigenvector for $\lambda = \alpha - \beta i$
 
 
 ::::::{prf:remark}
-
+:label: Rmk:ComplexEV:HiddenRotation
 
 {prf:ref}`Prop:ComplexEV:Rotation` states that $C$ can be written as
 
@@ -427,6 +427,7 @@ We can interpret  $\left(\begin{array}{cc} \cos(\varphi) & -\sin(\varphi) \\ \si
 Let us illustrate matters with the following example.
 
 ::::::{prf:example}
+:label:  Ex:ComplexEV:FirstExampleCtd2
 
 The matrix $A = \left(\begin{array}{cc} 1 & -2 \\ 1 & 3  \end{array}\right)$
 of {prf:ref}`Ex:ComplexEV:FirstExample`
@@ -502,6 +503,7 @@ We then say that $PDP^{-1}$ is a **diagonalisation** of $A$.
 Just like in the real case diagonalisability has all to do with the existence of enough (possibly complex) eigenvectors. The derivation is the same as in {numref}`Section %s <Sec:Diagonalise>`, we only repeat the conclusion.
 
 ::::::{prf:proposition}
+:label:  Thm:Diagonalisable:ComplexCharacterization
 
 An $n\times n$ matrix is (complex) diagonalisable if and only if there exists a basis of eigenvectors for $\mathbb{C}^n$.
 

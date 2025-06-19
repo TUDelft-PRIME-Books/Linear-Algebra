@@ -655,6 +655,7 @@ This follows from {prf:ref}`Prop:LinearCombinations:SpanSolution` and {prf:ref}`
 ::::
 
 ::::{prf:example}
+:label: Ex:LinearCombinations:SpanRn
 
 Is the span of the following three vectors equal to $\mathbb{R}^3$?
 

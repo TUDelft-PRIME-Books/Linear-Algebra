@@ -103,6 +103,7 @@ is try to find the _best approximation_ of the vector $\vect{b}$ with a vector i
 $\Span{\vect{a}_1, ... , \vect{a}_n}$. This is the idea behind the following definition.
 
 ::::{prf:definition}
+:label: Def:LeastSquares:Solution
 
 Let $A$ be an $m\times n$ matrix and $\vect{b}$ a vector in $\R^{m}$.
 A vector $\hat{\vect{x}}$ is called a **least squares solution** of the linear system $A\vect{x} = \vect{b}$ if for every $\vect{x}$ in $\R^n$ the inequality
@@ -568,6 +569,7 @@ The assumption that $A^TA$ is invertible implies that indeed $\vect{c} = \vect{0
 ::::
 
 ::::{prf:remark}
+:label:  Rem:LeastSquares:ProjbColA
 
 As stated, the least squares solution of a system $A\vect{x} = \vect{b}$ consists of the coefficients $c_i$
 of the orthogonal projection
@@ -1214,6 +1216,8 @@ We can even find a ready-made formula for the least squares line through $n$ giv
 $(x_1,y_1), (x_2, y_2), \ldots, (x_n, y_n)$.
 
 ::::{prf:example}
+:label: Ex:LeastSquares:LineFit2
+
 The coefficients of the least squares line $y = \hat{a}  + \hat{b}x$ for the set of points
 $(x_1,y_1), (x_2, y_2), \ldots, (x_n, y_n)$ are given by
 
@@ -1366,6 +1370,7 @@ $$
 The epithet _linear_ refers to the fact that the parameters $c_1, \ldots, c_k$ appear in the model in a linear way. The functions $f_i$ that are used in the model definitely don't have to be linear.
 
 ::::{prf:remark}
+:label:  Rem:LeastSquares:LinearModel
 
 The parameters $c_1,c_2,\ldots,c_k$ that minimise the sum
 in {eq}`Eq:LeastSquares:SumResidues` coincide with the least squares solution of the linear system
@@ -1391,6 +1396,7 @@ y_1 \\ y_2 \\ \vdots \\ \vdots \\ y_n
 ::::
 
 ::::{prf:remark}
+:label:  Rem:LeastSquares:Data
 
 In practice the points $(x_1,y_2), \ldots, (x_n,y_n)$ are often called the **data**, sometimes considered to be a **sample** from some space.
 The variable $x$ is then considered as the **input variable** and
@@ -1469,6 +1475,7 @@ This approach may be relevant if the variance of some of the observations that l
 To illustrate matters we present two examples.
 
 ::::{prf:example} Fitting a plane
+:label:  Ex:LeastSquares:PlaneFit
 
 Suppose $n$ points $(x_i,y_i,z_i)$, $i = 1, \ldots , n$ are given and we want to fit a plane through these. In other words, we want to find a linear combination
 
@@ -1501,6 +1508,8 @@ $$
 ::::
 
 ::::{prf:example}
+:label: Ex:LeastSquares:PowerFit
+
 Suppose we have $n$ data points $(x_i,y_i)$, $i = 1,\ldots,n$, and taking physical conditions into account, we expect a relation of the form $ y = ax^r$ between them.
 
 One way to go about to find suitable parameters $a$ and $r$ is to transform both $x$ and $y$ to log-scale by introducing the new variable

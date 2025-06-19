@@ -51,12 +51,14 @@ $$
 ::::::
 
 ::::::{prf:remark}
+:label: Rmrk:Subspaces:SubspaceProperties
 
 Property (ii) is also expressed as: a subspace is _closed under addition_. Likewise property (iii) says that a subspace is _closed under scalar multiplication_.
 
 ::::::
 
 ::::::{prf:example}
+:label: Ex:Subspaces:ZeroVectorSubspace
 
 The set in $\R^n$ that consists of only the zero vector, i.e. $S = \{\vect{0}\}$, is a subspace.
 
@@ -105,12 +107,14 @@ The set that only consists of the zero vector is sometimes called a **trivial** 
 There is one other subspace that is worthy of that name:
 
 ::::::{prf:definition}
+:label: Dfn:Subspaces:TrivialSubspace
 
 The **trivial subspaces** of $\R^n$ are the set $\{\vect{0}\}$ and the set $\R^n$ itself.
 
 ::::::
 
 ::::::{prf:example}
+:label: Ex:Subspaces:SubspacesR2
 
 In $\R^2$, a line through the origin is a non-trivial subspace. A line not containing the origin is not.
 In fact, the latter does not satisfy **any** of the three properties of a subspace, as may be clear from {numref}`Figure %s <Fig:Subspaces:Lines>`.
@@ -139,6 +143,7 @@ It is good practice to keep these examples in mind as typical examples of subspa
 ::::::
 
 ::::::{prf:example}
+:label: Ex:Subspaces:SubspacesR2Disk
 
 A disk $D$ specified by the inequality $x^2 + y^2 \leq a^2$, where $a$ is some positive number, is not a subspace of $\R^2$. It has neither of the properties
 (ii) and (iii). See {numref}`Figure %s <Fig:Subspaces:SubspacesDisk>`.
@@ -269,6 +274,7 @@ $$
 ::::::
 
 ::::::{prf:remark}
+:label:  Rmrk:Subspaces:SpanClosed
 
 By repeatedly applying the last proposition, we find for any subspace $S$
 
@@ -339,6 +345,7 @@ Give a proof of property (iii).
 ::::::
 
 ::::::{prf:remark}
+:label:  Rmrk:Subspaces:SpanIsSubspace
 
 In the previous proposition we do not impose any restrictions on the set of vectors
 $\{ \vect{v}_1,\vect{v}_2, \ldots , \vect{v}_r \}$. In the sequel we will see that it will be advantageous to have a **linear independent** set of generators.
@@ -435,6 +442,7 @@ the story of subspaces can be closed. However, subspaces will appear in differen
 We now turn our attention to two important subspaces closely related to an $m\times n$ matrix $A$.
 
 ::::::{prf:definition}
+:label: Dfn:Subspaces:ColNul
 
 The **column space** of an $m\times n$ matrix $A=  \begin{pmatrix} \vect{a}_1 &  \vect{a}_2    & \ldots &    \vect{a}_n \end{pmatrix}$ is the span of the columns of $A$:
 
@@ -451,6 +459,7 @@ $$
 ::::::
 
 ::::::{prf:remark}
+:label: Rmrk:Subspaces:ColNul
 
 For an $m\times n$ matrix $A$, $\operatorname{Col}A$ is the set of all vectors of the form $A\vect{x}$, for $\vect{x}\in\R^n$. The column space
 $\operatorname{Col}{A}$ can also be interpreted as the range of the linear transformation $T:\R^n \to \R^m$ defined via
@@ -459,6 +468,7 @@ $T(\vect{x}) = A\vect{x}$. &nbsp; (Cf. {prf:ref}`Prop:LinTrafo:RangeTA`.)
 ::::::
 
 ::::::{prf:remark}
+:label: Rmrk:Subspaces:ColNulSpaces
 
 Note that for an $m\times n $ matrix  $A$ the column space is a subset of $\R^m$ and the null space lives in $\R^n$. In short,
 
@@ -573,6 +583,7 @@ Hence $\Nul{A}$ has all the properties of a subspace.
 ::::::
 
 ::::::{prf:remark}
+:label: Rmrk:Subspaces:NullSpaceSubspace
 
 The above proof, that the null space is a subspace, is as basic as possible. That is, we started from the definitions (of null space and subspace) and used properties of the matrix product to connect the two.
 

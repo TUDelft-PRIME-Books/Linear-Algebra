@@ -41,6 +41,7 @@ $$
 The square root of $-1$ obviously is a problem. Therefore we introduce the special number $i$:
 
 ::::{prf:definition}
+:label: Def:ComplexNumbers:i
 
 The **imaginary unit** $i$ is a number defined by the equation
 
@@ -66,8 +67,6 @@ Let $a$ be a _positive_ real number. Then the two numbers $x_-=-ai$ and $x_+=ai$
 
 :::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:roots`
 :class: tudproof, dropdown
-
-<!-- :::{prf:proof} -->
 
 First we consider $x_-=-ai$ and take its square:
 
@@ -127,6 +126,7 @@ In general, you can write any polynomial $az^2+bz+c$ in the form $a ((z+p)^2+q)$
 As you can see in {prf:ref}`Ex:ComplexNumbers:compsquare`, we now found two numbers that are of the form $a+bi$, where $a$ and $b$ are real numbers (for short $a\in\mathbb{R}$ and $b\in\mathbb{R}$). A number like this is called a _complex number_:
 
 ::::{prf:definition}
+:label: Def:ComplexNumbers:complexnumber
 
 A **complex number** is a number of the form
 
@@ -143,6 +143,7 @@ The set of all complex numbers is denoted by the symbol $\mathbb{C}$, and is cal
 Such complex numbers we usually denote with the letter $z$ (if we only have one). A complex number also has some special parts, which we define next:
 
 ::::{prf:definition}
+:label: Def:ComplexNumbers:realimaginary
 
 If $z=a+bi$ is a complex number (with $a\in\mathbb{R}$ and $b\in\mathbb{R}$), the **real part** $\Re{z}$ is defined as
 
@@ -161,6 +162,7 @@ $$
 To make everything concise, we also define the relation between the set of real numbersr $\mathbb{R}$ and the set of complex numbers $\mathbb{C}$:
 
 ::::{prf:definition}
+:label: Def:ComplexNumbers:realcomplex
 
 Assume $x\in\mathbb{R}$. Then we define that $x\in\mathbb{C}$ with $\Re{x}=x$ and $\Im{x}=0$.
 
@@ -245,6 +247,7 @@ Finally we look into the _division_:
 Besides these four standard operations we have one more:
 
 ::::{prf:definition}
+:label: Def:ComplexNumbers:conjugate
 
 If $z=a+bi$ is a complex number (with $a,b\in\mathbb{R}$), the **complex conjugate** $\overline{z}$ is defined as
 
@@ -461,6 +464,7 @@ Observe that this factorisation means that $b_1, b_2, \ldots, b_n$ are the zeros
 We will not discuss the proof of this theorem, as that requires much more mathematics. However, we will illustrate the theorem using some examples.
 
 ::::{prf:example}
+:label: Ex:ComplexNumbers:polyreal
 
 Consider $p(z)=z^2+3z+2$. Then we know that we can factor the polynomial as $p(z) = (z+2)(z+1)$ and thus find the zeros as $-2$ and $-1$.
 
@@ -474,6 +478,7 @@ Consider the equation $z^2=-1$. We can always rewrite an equation to an equation
 ::::
 
 ::::{prf:example}
+:label: Ex:ComplexNumbers:polycompl
 
 While a polynomial of degree $n$ can be factored in $n$ linear terms, and we have $n$ values $b_i$, this does not mean that there are $n$ distinct zeros. For example $p(z) = z^2+2z+4$ can be factored as $p(z)=(z+2)^2$ and thus only has $z=-2$ as a solution. However, the term $(z+2)$ occurs twice in the factorisation. We therefore say that the multiplicity of the zero $-2$ is equal to two.
 
@@ -536,12 +541,14 @@ Repeating this argument for $z_3,\ldots,z_k$ leads to desired formulae.
 ::::
 
 ::::{prf:definition}
+:label: Def:ComplexNumbers:multiplicity
 
 If $z_j$ is a zero of a polynomial $p$ of degree $n$ with $p(z)=a_n(z-z_1)^{\alpha_1}(z-z_2)^{\alpha_2}\cdots(z-z_k)^{\alpha_k}$, the **(algebraic) multiplicity** of $z_j$ is equal to $\alpha_j$.
 
 ::::
 
 ::::{prf:example}
+:label: Ex:ComplexNumbers:polycomplcon2
 
 The third degree polynomial $p(z) = z^3-4z^2$ can be factored as $p(z) = z^2(z-4) = (z-0)^2(z-4)$. Therefore, it has zeros 4 and 0, where the multiplicity of 4 is equal to one and the multiplicity of 0 is equal to two. The degree of the polynomial is 3, which is equal to the sum of the multiplcities of its zeros ($1+2=3$).
 
@@ -623,7 +630,8 @@ Thus, we divide the polynomial $p(z)$ by $(z-b)$ in this case and obtain a new p
 
 To divide a polynomial by another polynomial you can use a long division. Let us recall how this worked for ordinary fractions.
 
-:::: {prf:example}
+::::{prf:example}
+:label: Ex:ComplexNumbers:longdivisionnum
 
 Let us calculate $\frac{97813}{382}$. In {numref}`Figure %s <Fig:ComplexNumbers:longdivisionnum>` on the left, you see the American notation for Long division, on the right the corresponding Dutch notation. Everything in red is usually not written down, but included here to clarify what happens. (Note that the calculations in the middle are true regardless of whether the red parts are included or not.)
 
@@ -647,6 +655,7 @@ First, subtract as many multiples of $100\cdot 382$ from 97813 as possible (or m
 We can do the same thing for polynomials.
 
 ::::{prf:example}
+:label: Ex:ComplexNumbers:longdivisionpoly
 
 Consider $p(z) = z^3+3z^2+z-5$. You may notice that $z=1$ is a root; $p(1)=0$. Thus $z-1$ must be a factor. If we calculate this division we obtain (on the left again US notation, on the right Dutch notation):
 
@@ -689,7 +698,8 @@ The polar coordinates of a point in the complex plane $\C$ are the distance $r=|
 Notice that the argument is not uniquely defined, as you can always go a full circle extra and add $2\pi$ radians to the angle. For example, the number $1$ has argument 0 (as it is on the positive real axis), but also $2\pi$, $4\pi$, and $-2\pi$ (etc.). In order to make a uniform choice, we sometimes work with the principal value of the argument, which is by definition the unique value of the argument between $-\pi$ and $\pi$.
 We write the principal value using a capital A. Thus we have $-\pi < \arg{z} \leq \pi$.
 
-:::: {prf:example}
+::::{prf:example}
+:label: Ex:ComplexNumbers:polarex1
 
 Suppose $z=3+3i$. We find by using Pythagoras that the modulus (the distance to the origin) equals $|z|=\sqrt{3^2+3^2}=3\sqrt{2}$. The argument, the corresponding angle, equals $\frac14\pi$ as you can see in {numref}`Figure %s <Fig:ComplexNumbers:polarex1>`.
 
@@ -704,6 +714,7 @@ The complex number $3+3i$.
 ::::
 
 ::::{prf:example}
+:label: Ex:ComplexNumbers:polarex2
 
 Suppose $w=2+3i$. We can still use Pythagoras for the modulus and obtain $|w|=\sqrt{2^2+3^2} = \sqrt{13}$. The argument can't be deduced immediately from a picture, see {numref}`Figure %s <Fig:ComplexNumbers:polarex2>`, but we do see that
 
@@ -723,6 +734,7 @@ The complex number $2+3i$.
 ::::
 
 ::::{prf:example}
+:label: Ex:ComplexNumbers:polarex3
 
 As a final example we consider $v=-1+2i$. Using Pythagoras theorem once again, we find that $|v|=\sqrt{(-1)^2+2^2} = \sqrt{5}$. For the argument, we obtain that, just as in the previous example, $\tan(\arg(v)) = \frac{2}{-1}$, so we would expect that $\arg(v) = \arctan( -2) \approx -1.10715$. But this answer is negative, while we can see in {numref}`Figure %s <Fig:ComplexNumbers:polarex3>` that the true argument is something between $\frac12\pi$ and $\pi$. Thus, this argument cannot be correct. If we multiply both the real and imaginary parts of a complex number by $-1$, then the quotient stays the same. Thus in this case the arctangent gives the argument of $1-2i$ instead. Fortunately, we can easily find the correct argument as it is exactly $\pi$ higher. We find $\arg(v) = \arctan(-2) + \pi \approx 2.03444$.
 
@@ -761,6 +773,7 @@ $$
 In particular, we see that the complex number with modulus $r$ and argument $\theta$ equals $r\bigl(\cos(\theta) + i\sin(\theta)\bigr)$ and vice versa. The form $r\cos(\theta) + ir\sin(\theta)$ is called the _polar form_ of the complex number:
 
 ::::{prf:definition}
+:label: Def:ComplexNumbers:polarform
 
 The **polar form** of a complex number $z=a+bi$ is defined as
 
@@ -999,6 +1012,7 @@ Thus, you can calculate with this strange notation $re^{i\theta}$ for complex nu
 In practice, this polar notation of complex numbers is convenient to use when you take products or powers, whereas the $a+bi$ notation is more convenient when you have to add complex numbers.
 
 ::::{prf:example}
+:label: Ex:ComplexNumbers:highpower
 
 Let us calculate $(1+i)^6$. As this is a high power of a complex number, we use Euler's formula for the polar form. First, we write $1+i=\sqrt{2} e^{i \frac{\pi}{4}}$. Thus, we have
 
@@ -1009,6 +1023,7 @@ $$
 ::::
 
 ::::{prf:example}
+:label: Ex:ComplexNumbers:threesolutions
 
 Let us calculate $\dfrac{(1-\sqrt{3}i)^3}{(2+2i)^6}$. We have $1-\sqrt{3}i=2e^{-i\frac{\pi}{3}}$ and $2+2i=2\sqrt{2} e^{i\frac{\pi}{4}}$. Thus, we obtain
 
@@ -1028,6 +1043,7 @@ $$
 $$
 
 ::::{prf:example}
+:label: Ex:ComplexNumbers:DeMoivre
 
 De Moivre's identity allows us to find an expression for $\cos(3\theta)$ in terms of $\cos(\theta)$ and $\sin(\theta)$. Indeed, expanding the right hand side of the identity we have
 
@@ -1048,6 +1064,7 @@ Comparing the real and imaginary parts on both sides of this equation we find
 You can also easily derive other formulas.
 
 ::::{prf:example}
+:label: Ex:ComplexNumbers:cos_sin_sum
 
 Formulas for $\cos(\theta+\phi)$ and $\sin(\theta+\phi)$ are often used in calculus courses. These formulas can be derived using De Moivre's identity.
 
@@ -1068,7 +1085,7 @@ Thus $\cos(\theta+\phi) = \cos(\theta) \cos(\phi) - \sin(\theta) \sin(\phi)$ and
 The most basic equations we want to solve are of the form $z^n=w$ for a given complex number $w$, where $z$ is the variable we want to solve for. Let's consider an example:
 
 ::::{prf:example}
-:label: Ex:ComplexNumbers:threesolutions
+:label: Ex:ComplexNumbers:threesolutions2
 
 Consider the equation $z^3=-16+16i$. We know it has 3 complex solutions, as it is a third degree equation. If we write $z=a+bi$ and expand (to find $a$ and $b$), we get a very large expression which is not easy to work with.
 
@@ -1104,7 +1121,7 @@ You can find a visualisation of these three solutions in {numref}`Figure %s <Fig
 :status: approved
 :class: dark-light
 
-The three solutions from {prf:ref}`Ex:ComplexNumbers:threesolutions`.
+The three solutions from {prf:ref}`Ex:ComplexNumbers:threesolutions2`.
 ```
 
 ::::
@@ -1157,6 +1174,7 @@ Combine the solution for $r$ and the $n$ values for $\phi$ to obtain the $n$ sol
 Quite often, you come across expressions where a cosine and a sine of identical frequency are added. If you plot a function of the form $f(t)=b\cos(\omega t) + c\sin(\omega t)$, you notice that it becomes a new single wave. You can use complex numbers in a smart way to rewrite $f(t)$ to the form $A \cos(\omega t -\phi)$ as a single cosine with shifted argument. The variable $A$ gives the amplitude of the combined wave and the variable $\phi$ gives the phase-shift.
 
 ::::{prf:example}
+:label: Ex:ComplexNumbers:sinusoid
 
 Take $f(t) = \cos(2t) + \sqrt{3} \sin(2t)$. If you plot the graph of this function (see {numref}`Figure %s <Fig:ComplexNumbers:sinusoid>`), you notice it is a single wave.
 
@@ -1180,6 +1198,7 @@ The graph of the sum of a cosine and a sine of identical period is a sinusoid as
 ::::
 
 ::::{prf:example}
+:label: Ex:ComplexNumbers:cos_sin_shift
 
 In the same way you can add two cosines (or sines) with shifted arguments.
 

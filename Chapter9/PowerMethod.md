@@ -452,6 +452,7 @@ This is then also an eigenvector of $A$ for the smallest eigenvalue $\lambda_n$.
 ::::
 
 ::::{prf:remark}
+:label: Rem:PowerMethod:InversePowerMethod
 
 From a computational point of view, in the case of a large matrix $A$, it might be advantageous to compute  $\vect{y} = A^{-1}\vect{x}$ in Step 2(i) of {prf:ref}`Alg:PowerMethod:PowMed` by solving the equation
 
@@ -591,6 +592,8 @@ $\mathbf{v}$ is an eigenvector of the matrix $A$ for the eigenvalue $\lambda_i =
 For a not too large matrix $A$ some idea of the location(s) of the real eigenvalues can for instance be found by considering the graph of its characteristic polynomial.
 
 ::::{prf:example}
+:label: Ex:PowerMethod:ThirdExample2
+
 Consider the matrix $A = \begin{pmatrix}  3  &  -3  &  1   &  3 \\
                       0  &  -2  &  -3  & -3 \\
                      -2  &   4  &  -2  & -3 \\

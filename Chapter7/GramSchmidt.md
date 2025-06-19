@@ -11,6 +11,7 @@ In this section an algorithm is presented to construct an orthogonal basis from 
 As a starter have a look at the following example
 
 ::::{prf:example}
+:label:  Ex:GramSchmidt:Example1
 
 Let $W$ be the subspace in $\R^3$ spanned by the two vectors $\vect{a}_1 = \begin{pmatrix} 2 \\ 1   \\3    \end{pmatrix}$ and $\vect{a}_2 = \begin{pmatrix} 3 \\ -2   \\1    \end{pmatrix}$.
 We want to construct an orthogonal basis $\{\vect{b}_1,\vect{b}_2 \}$ for $W$.
@@ -462,6 +463,7 @@ $$
 The following example provides an illustration of this last proposition.
 
 ::::{prf:example}
+:label:  Ex:GramSchmidt:AlternativeProofQR
 
 Consider the matrix
 

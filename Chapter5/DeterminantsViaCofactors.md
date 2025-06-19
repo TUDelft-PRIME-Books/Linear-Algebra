@@ -18,6 +18,7 @@ Let $A$ be an $n\times n$ matrix, with $n \geq 2$. The **submatrix** $A_{ij}$ is
 ::::::
 
 ::::::{prf:example}
+:label: Ex:DetCofactors:Submatrix
 
 For the matrix $A = \left(\begin{array}{cccc} 2 & 0 & 0 & 4 \\
 1 & 2 & 3 & 4 \\ 2 & 1 & 0 & 3 \\ 6 & 4 & 3 & 5
@@ -181,6 +182,7 @@ We omit the proof, which is rather long and technical.
 The following example illustrates the rule for the determinant of an arbitrary $3 \times 3$ matrix.
 
 ::::::{prf:example}
+:label: Ex:DetCofactors:3x3det
 
 Let us compute the cofactor expansion of the matrix
 $A = \left(\begin{array}{rrr} a_{11} & a_{12} & a_{13} \\
@@ -444,6 +446,7 @@ $$
 ::::::
 
 ::::::{prf:example}
+:label: Ex:DetCofactors:DetTranspose
 
 Take the matrix $A = \left(\begin{array}{ccc}  1 & 3 & 4 \\ 5 & 6 & 7 \\ 2 & 1 & 0  \end{array} \right)
 $.

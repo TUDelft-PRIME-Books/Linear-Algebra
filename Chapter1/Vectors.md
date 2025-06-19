@@ -137,8 +137,7 @@ $$
 are _not_ the same vectors. Indeed, the first one points down and to the right, while the second one points up and to the left. Two vectors are only equal if they have the same entries in the same order.
 
 ```{prf:definition}
-
-
+:label: Dfn:Vectors:VectorOperations
 
 Suppose we have two vectors
 

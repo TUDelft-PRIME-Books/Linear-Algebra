@@ -81,6 +81,7 @@ a_{n1}&a_{n2}&\cdots&a_{nn}
 $$
 
 :::{prf:definition}
+:label: Def:DynSystContinuous:LinDiffEq
 
 In this context, we call $\vect{x}'=A\vect{x}$ a **system of (linear) differential equations** or a **dynamical system**, $\vect{x}$ a **vector-valued function**, $\vect{x}'$ the **derivative** of $\vect{x}$, and the $x_{i}$'s the **component functions** of $\vect{x}$. Any $\vect{x}$  for which $\vect{x}'=A\vect{x}$ holds is called a **solution** to the system of differential equations.
 
@@ -105,6 +106,7 @@ Exercise.
 In view of this result, it makes sense to generalise some concepts which we have seen for vectors to the setting of vectors of functions.
 
 :::{prf:definition}
+:label: Def:DynSystContinuous:LinComb
 
 We say that a vector function $\vect{x}$ is a **linear combination** of vector functions $\vect{x}_{1},...,\vect{x}_{n}$ if there are scalars $c_{1},...,c_{n}$ in $\mathbb{R}$ such that:
 
@@ -280,7 +282,7 @@ where $c_{1},...,c_{n}$ are constants.
 
 
 :::{prf:remark}
-
+:label: Rem:DynSystContinuous:Eigenfunctions
 
  A function $\vect{y}=c\vect{v}e^{\lambda t}$ is called an **eigenfunction** of the dynamical system if $\lambda$ is an eigevnalue with corresponding eigenvector $\vect{v}$.It is easy to check that such an eigenfunction is indeed a solution:
 
@@ -341,6 +343,7 @@ $$
 As long as the matrix $A$ is diagonalisable, we now know how to solve the system of linear differential equations. But we know more. We also know how a solution $f(t)$ to such a system will behave as $t$ goes to infinity. In practical applications, $t$ usually is time, so this gives us predictions for what happens after a long time.
 
 :::{prf:Example}
+:label: Ex:DynSystContinuous:AirbornDisease
 
 Suppose some airborn disease is affecting a population. That means that people get sick from the environment, not from other sick people. To keep matters simple, we will assume that the population is constant and that recovery grants full immunity. Let $S(t)$ be the number of susceptible members and $I(t)$ the number of infected members of the population at time $t$. If $\alpha>0$ is the recovery rate and $\beta>0$ is the infection rate, then we find:
 
@@ -458,6 +461,7 @@ For a graphic interpretation of these solutions, we refer to {numref}`Subsection
 In this section, we will see the geometric interpretation of the several cases we have dealt with. Note that the solution of a dynamical system $\vect{x}'=A\vect{x}$ contains as many constants as there are rows in $A$. Therefore, if $A$ is an $n\times n$-matrix and $\vect{x}_{0}$ is a vector in $\R^{n}$, there will be one solution of $\vect{x}'=A\vect{x}$ that satisfies $\vect{x}(0)=\vect{x}_{0}$.
 
 :::{prf:definition}
+:label: Def:DynSystContinuous:Trajectory
 
 Let $\vect{x}'=A\vect{x}$ be a dynamical system where $A$ is an $n\times n$-matrix. By a **trajectory** we mean a solution of an initial value problem
 
@@ -481,6 +485,7 @@ On the left a trajectory for the dynamical system associated to a $2x2$-matrix. 
 It turns out that the eigenvalues and in particular their magnitudes determine what such a flow map will look like. The following definition describes all possible cases.
 
 :::{prf:definition}
+:label: Def:DynSystContinuous:Trajectories
 
 If $A$ is a $2\times 2$-matrix with real eigenvalues $\lambda_{1}$ and $\lambda_{2}$, then the origin is called:
 

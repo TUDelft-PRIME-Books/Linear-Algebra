@@ -217,6 +217,7 @@ Note that in Rule i. of {prf:ref}`Prop:DetRowReduction:RowOps` the factor $c$ ma
 In the next example column operations are used.
 
 ::::::{prf:example}
+:label: Ex:DetRowReduction:DetByRowRed2
 
 $$
 \left|\begin{array}{rrrr}   1 & 1 & 1 & -1 \\ 2 & 4 & 5 & 3   \\4 & 5 & 2 & -1 \\ 5 & 7 & 4 & -2 \end{array} \right|=

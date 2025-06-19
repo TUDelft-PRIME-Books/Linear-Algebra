@@ -13,6 +13,8 @@ These two questions give rise to the concepts of injective and surjective linear
 ## Injectivity
 
 ::::::{prf:definition}
+:label: Def:InjSurj:Inj
+
 We call a linear transformation $T:\mathbb{R}^{n}\to\mathbb{R}^{m}$ **injective** or **one-to-one** if $T(\mathbf{v}_{1})=T(\mathbf{v}_{2})$ implies $\mathbf{v}_{1}=\mathbf{v}_{2}$.
 
 ::::::
@@ -277,6 +279,8 @@ Assume now that $T(\mathbf{v})=\mathbf{0}$ implies $\mathbf{v}=\mathbf{0}$. If $
 In this section, we will talk about surjectivity. It is a natural complement to the concept of injectivity -- the yin to its yang, if you will. This duality becomes apparent when comparing {prf:ref}`Prop:InjSurj:InjChars` to {prf:ref}`Prop:InjSurj:SurjChars`.
 
 ::::::{prf:definition}
+:label: Def:InjSurj:Surj
+
 A linear transformation $T:\mathbb{R}^{m}\to\mathbb{R}^{n}$ is called **surjective** if for any vector $\mathbf{u}$ in $\mathbb{R}^{n}$ there is some vector $\mathbf{v}$ in $\mathbb{R}^{m}$ such that $T(\mathbf{v})=\mathbf{u}$. In other words, $T$ is surjective if and only if the range of $T$ is the whole codomain.
 
 ::::::
@@ -480,6 +484,8 @@ If $T$ is surjective, then its standard matrix $A$ has a pivot in every row. Con
 In this section, we investigate what happens when injectivity and surjectivity meet. Let us start with giving that idea a name.
 
 ::::::{prf:definition}
+:label: Def:InjSurj:Bij
+
 A linear transformation $T:\mathbb{R}^{m}\to\mathbb{R}^{n}$ is called **bijective** if it is both injective and surjective.
 
 ::::::

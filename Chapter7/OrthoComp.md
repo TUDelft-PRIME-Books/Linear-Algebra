@@ -7,6 +7,7 @@
 In this section, we will introduce the orthogonal complement of a subspace. This concept will help us define orthogonal projections easily.
 
 :::{prf:definition}
+:label: Def:OrthoComp:OrthogonalComplement
 
 Suppose $V$ is a subspace of $\R^{n}$. Then the **orthogonal complement** of $V$ is the set
 
@@ -161,6 +162,7 @@ Now, $\vect{x}$ is in $\operatorname{Nul}(A)$ precisely when $A\vect{x}=\vect{0}
 :::
 
 :::{prf:remark}
+:label:  Rem:OrthoComp:OrthoComplementNulA
 
 Since, for any matrix $A$, the rows of $A$ are the columns of $A^{T}$, $\operatorname{Row}(A)=\operatorname{Col}(A^{T})$. {prf:ref}`Prop:OrthoComp:OrthoComplementNulA` then implies that $\operatorname{Row}(A)^{\bot}=\operatorname{Nul}(A)$.
 
@@ -169,6 +171,7 @@ Since, for any matrix $A$, the rows of $A$ are the columns of $A^{T}$, $\operato
 The strength of {prf:ref}`Prop:OrthoComp:OrthoComplementNulA` lies mainly in the fact that it allows us to actually find the orthogonal complement of a given subspace.
 
 :::{prf:Example}
+:label: Ex:OrthoComp:OrthoCompOfSubspace
 
 Let $V$ be the subspace of $\R^{5}$ spanned by the vectors
 
@@ -300,6 +303,7 @@ A subspace $V$, a vector $\vect{u}$ and the orthogonal decomposition of $\vect{u
 ```
 
 :::{prf:Example}
+:label:  Ex:OrthoComp:OrthoDecomp
 
 Consider the vectors
 

@@ -11,6 +11,8 @@ In Chapter 2 matrices were introduced to represent systems of linear equations. 
 In this section we will define the sum and the product of two matrices, and the transpose of a matrix. Recall that an $m\times n$ matrix has $m$ (horizontal) rows of size $n$ or, equivalently, $n$ (vertical) columns of size $m$.
 
 ::::::{prf:definition} Equality of matrices
+:label: def:matrix-equality
+
 Two matrices are said to have the same **size** if they have the same number of rows and the same number of columns.
 
 Two matrices $A$ and $B$ are **equal** if they have the same size, say $m$ rows and $n$ columns, and all the corresponding entries are equal, i.e.
@@ -22,11 +24,13 @@ $$
 ::::::
 
 ::::::{prf:definition}
+:label: def:zero-matrix
 A **zero matrix** $O$ is a matrix with all entries equal to 0. If the context requires clarity as to its size it may be denoted by $O_{mn}$.
 
 ::::::
 
 ::::::{prf:definition} Scalar multiplication
+:label: def:scalar-multiplication
 
 If $A$ is an $m\times n$ matrix and $c$ is a scalar, then $cA$ is the $m \times n$ matrix that is the result of multiplying each entry of $A$ by $c$:
 
@@ -51,6 +55,7 @@ We then say that $cA$ is a **scalar multiple** of $A$, or simply a **multiple** 
 ::::::
 
 ::::::{prf:definition} The sum of two matrices
+:label: def:matrix-sum
 
 If $A$ and $B$ are two $m\times n$ matrices then the **sum** $A+B$ is the
 $m\times n$ matrix of which the entry on the position $(i,j)$ is the sum of the corresponding entries of $A$ and $B$:
@@ -84,6 +89,7 @@ If $A$ and $B$ are not of the same size their sum is not defined.
 ::::::
 
 ::::::{prf:example}
+:label: ex:matrix-sum
 
 $$
   \begin{pmatrix} 1 & 3 \\ 5 & 2 \\ 6 & -4 \end{pmatrix} +
@@ -121,6 +127,7 @@ $$
 where $O$ is the zero matrix.
 
 ::::::{prf:example}
+:label: ex:matrix-sum-not-defined
 
 $$
   \begin{pmatrix} 1 & 3 \\ 5 & 2 \\ 6 & -4 \end{pmatrix}  +
@@ -132,11 +139,15 @@ is not defined. This is because the matrices do not have the same size.
 ::::::
 
 ::::::{prf:remark}
+:label: rem:matrix-sum-scalar-multiple
+
 The two definitions of sum and scalar multiple are called **componentwise** definitions. They are completely analogous to the definitions of the scalar multiples of a vector and the sum of two vectors. Hence it is not surprising that they obey exactly the same rules, as is summarised in the next proposition. (cf. Section {ref}`Sec:Vectors`.)
 
 ::::::
 
 ::::::{prf:proposition}
+:label: Prop:MatrixOps:SumRules
+
 Suppose $A, B$ and $C$ are $m\times n$ matrices and let $c_{1},c_{2}$ be two real numbers.
 Then we have:
 
@@ -188,6 +199,8 @@ $c_{1}(c_{2}A)=(c_{1}c_{2})A$.
 An operator of which the usefulness is not immediately clear, but which fits well in this section with matrix operations, is the following:
 
 ::::::{prf:definition}
+:label: def:matrix-transpose
+
 The **transpose** of an $m \times n$ matrix $A$ with entries $a_{ij}$ is the
 $n \times m$ matrix $B$ with entries $b_{ij}$ defined by
 
@@ -200,6 +213,7 @@ It is denoted by $B = A^T$.
 ::::::
 
 ::::::{prf:example}
+:label: ex:matrix-transpose
 
 $$
   \begin{pmatrix} 1 & 3 \\ 5 & 2 \\ 6 & 4 \end{pmatrix}^T =
@@ -380,6 +394,7 @@ $$
 ::::::
 
 ::::::{prf:example}
+:label: ex:matrix-sum-transpose
 
 We will solve the equation $A + 2X^T + B = C$ for $X$, where
 
@@ -465,6 +480,8 @@ $$
 a vector in $\mathbb{R}^n$, which we can identify with an $n \times 1$ matrix. We want of course the definition of the general matrix product to be consistent with this.
 
 ::::::{prf:definition}
+:label: def:matrix-product
+
 The product of an $m\times n$ matrix $A$ and an $n\times p$ matrix $B = (\,{\vect{b}_1}\quad {\vect{b}_2}\quad \ldots \quad {\mathbf{b}_p})$ is defined by
 
 $$
@@ -484,6 +501,7 @@ If the number of columns of $A$ is not equal to the number of rows of $B$ the pr
 ::::::
 
 ::::::{prf:example}
+:label: ex:matrix-product
 
 $$
   \begin{pmatrix} 1 & -3 \\ -1 & 2 \\ 3& -2 \end{pmatrix}
@@ -560,6 +578,8 @@ $$
 %of $B$. The last is of course part of the definition.\\
 
 ::::::{prf:example}
+:label: Ex:MatrixOps:MatrixProduct
+
 Let us consider the matrix product
 
 $$
@@ -592,6 +612,8 @@ is not defined.
 ::::::
 
 ::::::{prf:remark}
+:label: rem:MatrixOps:MatrixProduct
+
 The product of a matrix $A$ with itself is only defined if $A$ is an $n \times n$ matrix. In that case we use the obvious notation
 
 $$
@@ -625,11 +647,15 @@ A square matrix where all non-diagonal elements are equal to 0 is called a **dia
 ::::::
 
 ::::::{prf:remark}
+:label: rem:MatrixOps:DiagonalMatrix
+
 The other diagonal of a square matrix, the one from bottom left to top right, plays a minor role. For this reason we don't reserve a name for it. By 'diagonal' we will always mean: main diagonal.
 
 ::::::
 
 ::::::{prf:example}
+:label: Ex:MatrixOps:DiagonalMatrices
+
 Consider the matrices
 
 $$
@@ -687,6 +713,8 @@ matrix $A^TA$ is a diagonal matrix.
 ::::::
 
 ::::::{prf:definition}
+:label: Def:MatrixOps:IdentityMatrix
+
 The **identity matrix** $I_n$ is the $n \times n$ diagonal matrix with 1's on the diagonal. If the size is irrelevant or clear from the context, we denote it simply by $I$.
 
 ::::::
@@ -749,6 +777,8 @@ and that is precisely the entry $c_{ij}$ of the matrix $C = AB$.
 Interestingly this opens the way to describe the row operations of Chapter 2 via matrix multiplication. The following example illustrates this for the three basic row operations.
 
 ::::::{prf:example}
+:label: Ex:MatrixOps:ElementaryMatrices
+
 The following multiplication adds the first row of the matrix
 
 $$
@@ -888,6 +918,8 @@ $A(BC) = (AB)C$.
 ::::::
 
 ::::::{prf:example}
+:label: Ex:MatrixOps:ProdProperties
+
 As an illustration of rule iv. we compute the two triple products for the three matrices
 
 $$
@@ -1074,6 +1106,8 @@ However, in two important respects the concepts deviate.
 First of all, commutativity no longer holds.
 
 ::::::{prf:example}
+:label: Ex:MatrixOps:NonCommutative
+
 For the matrices
 
 $$
@@ -1206,6 +1240,7 @@ $$
 As the following example shows, things are different in the realm of matrices.
 
 ::::::{prf:example}
+:label: Ex:MatrixOps:ZeroProduct
 
 $$
 \begin{pmatrix} 1 & 2 \\ 2 & 4  \end{pmatrix}
@@ -1220,6 +1255,7 @@ So the product of two nonzero matrices may be the zero matrix.
 The following example shows that things are even 'worse':
 
 ::::::{prf:example}
+:label:  Ex:MatrixOps:ZeroProduct2
 
 $$
   \begin{pmatrix} 1 & -3 & 2 \\ 1 & -3 & 2 \\ 1 & -3 & 2  \end{pmatrix}
@@ -1234,6 +1270,7 @@ which shows that we cannot even conclude from $A\cdot A = O$ that $A$ itself mus
 And here is another example of a nonzero matrix whose square is the zero matrix. In this case it can be seen geometrically what is going on.
 
 ::::::{prf:example}
+:label: Ex:MatrixOps:Nilpotent
 
 For the matrix $A = \begin{pmatrix} 0 & 1 \\ 0 & 0  \end{pmatrix}$ we again have that
 
@@ -1285,6 +1322,8 @@ Visualisation of $\vect{x} \mapsto A^2\vect{x}$.
 ::::::
 
 ::::::{prf:remark}
+:label: Rem:MatrixOps:Nilpotent
+
 The next list gives six situations where matrix multiplication acts differently than multiplication of numbers.  
 In fact, all statements can be related to one of the first two.
 
@@ -1526,6 +1565,8 @@ $$
 ::::::
 
 ::::::{prf:remark}
+:label: Rem:MatrixOperations:TransposeProduct
+
 We already defined $A^2$ for a square matrix $A$.
 We can extend this to higher powers of $A$ in an obvious way:
 

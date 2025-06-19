@@ -439,6 +439,7 @@ Swapping two vectors also leaves the parallelepiped invariant, but it changes th
 The last proposition sets the way to take the determinant one dimension higher.
 
 ::::::{prf:definition}
+:label: Dfn:DetGeometric:Det3x3
 
 The **determinant** of the ordered set of three vectors $\vect{a}, \vect{b}$ and $ \vect{c}$ in $\R^3$ is defined by the expression
 

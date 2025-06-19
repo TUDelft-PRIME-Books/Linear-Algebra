@@ -338,6 +338,7 @@ $$
 A nice illustration of what this means in $\R^2$ is given by the following example.
 
 ::::{prf:example}
+:label: Ex:DetExtras:Orientation
 
 Consider the two linear transformations from $\R^2$ to $\R^2$ with matrices
 
@@ -383,6 +384,7 @@ Let $A$ be an $n\times n$ matrix, and $\vect{v}$ a vector in $\R^n$. Then $A^{(i
 ::::::
 
 ::::::{prf:example}
+:label: Ex:DetExtras:ReplaceColumn
 
 For the matrix $A = \begin{pmatrix}  1 & 3 & 1 \\ 1 & 4 & 2 \\ 3 & 1 & 5  \end{pmatrix}$
 and the vector $\vect{v} = \begin{pmatrix}  \class{blue}6 \\ \class{blue}7 \\ \class{blue}8 \end{pmatrix}$ we have that
@@ -419,6 +421,7 @@ x_i = \dfrac{\det{\left(A^{(i)}(\vect{b})\right)}}{\det{A}}.
 ::::::
 
 ::::::{prf:example}
+:label: Ex:DetExtras:Cramer
 
 We use Cramer's rule to solve the system
 
@@ -556,6 +559,7 @@ where $A_{ji}$ is the submatrix and $C_{ji} =  (-1)^{j+i} \det{\left(A_{ji}\righ
 The following example serves as an illustration of what is going on here.
 
 ::::::{prf:example}
+:label: Ex:DetExtras:ReplaceColGivesCofactor
 
 Let $A =  \left(\begin{array}{rrrr} 
 a_{11} &a_{12} &a_{13} &a_{14}  \\ 
@@ -629,6 +633,7 @@ For the last step we used {prf:ref}`Prop:DetExtras:ReplaceColGivesCofactor`.
 ::::::
 
 ::::::{prf:definition}
+:label: Dfn:DetExtras:CofactorMatrix
 
 For an $n \times n$ matrix $A$ the matrix
 
@@ -875,6 +880,7 @@ $(\vect{a}_1, \ldots, \vect{a}_{n-1}, \vect{v}) $ positively orientated. <BR>
 For a linearly dependent set of vectors property iv. implies that $\vect{a}^{\ast}_n = \vect{0}$.
 
 ::::::{prf:example}
+:label: Ex:DetExtras:CrossProd2D
 
 For $n = 2$ we get, for an arbitrary vector $\vect{v} = 
 \left(\begin{array}{c}   a \\ b   \end{array}\right)
@@ -904,6 +910,7 @@ This shows that the construction also works in $\R^2$.
 ::::::
 
 ::::::{prf:example}
+:label: Ex:DetExtras:CrossProd3D
 
 We will find the vector $\mathbf{v} = \vect{a}^{\ast}_4 = N(\vect{a}_1, \vect{a}_2, \vect{a}_3)$ for the columns of the matrix
 

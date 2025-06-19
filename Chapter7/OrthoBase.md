@@ -5,6 +5,7 @@
 ## Orthogonal and orthonormal bases
 
 :::{prf:definition}
+:label: Def:OrthoBase:OrthoSet
 
 A subset $S$ of $\R^{n}$ is called **orthogonal** if any two distinct vectors $\vect{v}_{1}$ and $\vect{v}_{2}$ in $S$ are orthogonal to each other. If $S$ is a basis for a subspace $V$ and $S$ is orthogonal, we say it is an **orthogonal basis** for $V$.
 
@@ -44,12 +45,14 @@ Since no $\vect{v}_{i}$ is $\vect{0}$, all $\vect{v}_{i}\ip\vect{v}_{i}$ are non
 As a consequence of {prf:ref}`Prop:OrthoBase:OrthoSetLinInd`, any orthogonal set that does not contain $\vect{0}$ is an orthogonal basis for its span.
 
 :::{prf:definition}
+:label: Def:OrthoBase:OrthoBase
 
 An orthogonal basis is called **orthonormal** if all elements in the basis have norm $1$.
 
 :::
 
 :::{prf:remark}
+:label:  Rem:OrthoBase:OrthoBaseToOrthoNormBase
 
 If $\vect{v}_{1},...,\vect{v}_{n}$ is an orthogonal basis for a subspace $V$, then an orthonormal basis for $V$ can be obtained by dividing each $\vect{v}_{i}$ by its norm.
 
@@ -269,6 +272,7 @@ is the orthogonal projection of $\vect{u}$ on $\mathcal{P}$.
 :::
 
 :::{prf:remark}
+:label:  Rem:OrthoBase:OrthoProjMat
 
 If $V$ is a subspace of $\R^{n}$, then
 
@@ -385,12 +389,14 @@ $$
 Square matrices for which the columns are orthonormal turn out to be of particular importance. For instance, they turn up in numerical linear algebra, where using them can speed up certain computations considerably.
 
 :::{prf:definition}
+:label: Def:OrthoBase:OrthoMat
 
 We call a square matrix an **orthogonal matrix** if its columns form an ortho*normal* set.
 
 :::
 
 :::{prf:remark}
+:label:  Rem:OrthoBase:ColsNotNormal
 
 A matrix for which the columns are orthogonal is not necessarily an orthogonal matrix! It is vital that the columns are ortho*normal*. The terminology is somewhat confusing, but it has become standard.
 
@@ -399,6 +405,7 @@ A matrix for which the columns are orthogonal is not necessarily an orthogonal m
 Let us consider some examples and non-examples.
 
 :::{prf:example}
+:label:  Ex:OrthoBase:OrthoMat
 
 <ol type="i">
 
@@ -535,6 +542,7 @@ which establishes [i.](#It:OrthoBase:OrthoMatandInnerProd) The other points are 
 :::
 
 :::{prf:Remark}
+:label:      Rem:OrthoBase:OrthoMatandInnerProd
 
 Many statements about orthogonal matrices still hold for non-square matrices, as long as the columns form an orthonormal set. Both {prf:ref}`Prop:OrthoBase:OrthoMat` and {prf:ref}`Prop:OrthoBase:OrthoMatandInnerProd` remain precisely the same, with the same proof, for an $m\times n$ matrix $A$. {prf:ref}`Cor:OrthoBase:TransisInv` doesn't hold for non-square matrices, as the inverse of a non-square matrix cannot exist.
 

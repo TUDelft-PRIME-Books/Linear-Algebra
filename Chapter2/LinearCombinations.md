@@ -3,6 +3,7 @@
 # Linear combinations
 
 ::::{prf:definition}
+:label: Def:LinearCombinations
 
 Let $\mathbf{v}_1, \ldots, \mathbf{v}_n$ be vectors in $\mathbb{R}^m$. Any expression of the form
 
@@ -15,6 +16,7 @@ where $x_1, \ldots, x_n$ are real numbers, is called a **linear combination** of
 ::::
 
 ::::{prf:example}
+:label: Ex:LinearCombinations
 
 The vectors $\mathbf{v}_1$ and $\mathbf{v}_2$ are two vectors in the plane $\mathbb{R}^2$. As we can see in {numref}`Figure  %s <Fig:LinearCombinations:LinearCombinations>`, the vector $\mathbf{u}$ is a linear combination of $\mathbf{v}_1$ and $\mathbf{v}_2$ since it can be written as $\mathbf{u}=2\mathbf{v}_1+\mathbf{v}_2$. The vector $\mathbf{w}$ is a linear combination of these two vectors as well. It can be written as $\mathbf{w}=-3\mathbf{v}_1+2\mathbf{v}_2$.
 
@@ -33,6 +35,7 @@ Linear combinations of vectors in the plane.
 If we want to determine whether a given vector is a linear combination of other vectors, then we can do that using systems of equations.
 
 ::::{prf:example}
+:label: Ex:LinearCombinations:LinearCombination
 
 $$
 \mathbf{v}_1=
@@ -84,6 +87,7 @@ We have found that $\mathbf{b}$ can be written as $2\mathbf{v}_1-\mathbf{v_2}$.
 ::::
 
 ::::{prf:example}
+:label: Ex:LinearCombinations:LinearCombinationNoSolution
 
 $$
 \mathbf{v}_1=
@@ -130,6 +134,7 @@ The span of an empty collection of vectors will be defined as the set that only 
 ::::
 
 ::::{prf:remark}
+:label: Rmk:LinearCombinations:Span
 
 The collection $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$ always contains all of the vectors $\mathbf{v}_1, \ldots, \mathbf{v}_k$. This is true since each vector $\mathbf{v}_i$ can be written as the linear combination
 
@@ -188,6 +193,7 @@ The span of two non-zero, non-parallel vectors.
 ::::
 
 ::::{prf:example}
+:label: Ex:LinearCombinations:SpanOfTwoParallelVectors
 
 The span of two non-zero vectors does not need to be a plane through the origin. If $\mathbf{u}$ and $\mathbf{v}$ are parallel, as in {numref}`Figure  %s <Fig:LinearCombinations:SpanTwoParallelVectors>`, then the span is actually a line through the origin.
 
@@ -206,6 +212,7 @@ If two non-zero vectors $\mathbf{u}$ and $\mathbf{v}$ are parallel, then $\mathb
 ::::
 
 ::::{prf:example}
+:label: Ex:LinearCombinations:SpanOfThreeVectors
 
 If we start with three non-zero vectors in $\mathbb{R}^3$, then the resulting span may take on different forms. The span of the three vectors in {numref}`Figure  %s <Fig:LinearCombinations:SpanThreeVectors1>`, for example, is equal to the entire space $\mathbb{R}^3$. In {numref}`Sec:BasisDim` we will see why this is the case.
 
@@ -248,12 +255,14 @@ There is also a possibility where the span of three non-zero vectors in $\mathbb
 We will now look at a very specific set of vectors in $\mathbb{R}^n$ of which the span is always the entire space $\mathbb{R}^n$.
 
 ::::{prf:definition}
+:label: Dfn:LinearCombinations:StandardBasis
 
 Suppose we are working in $\mathbb{R}^n$. Let $\mathbf{e}_k$ be the vector of which all components are equal to 0, with the exception that the entry on place $k$ is equal to 1. The vectors $(\mathbf{e}_1, \ldots, \mathbf{e}_n)$ will be called the **standard basis** of $\mathbb{R}^n$.
 
 ::::
 
 ::::{prf:example}
+:label: Ex:LinearCombinations:StandardBasis
 
 The following vectors form the standard basis for $\mathbb{R}^2$.
 
@@ -283,6 +292,7 @@ It is easy to see that this is the only linear combination of $\mathbf{e}_1$ and
 ::::
 
 ::::{prf:example}
+:label: Ex:LinearCombinations:StandardBasisR3
 
 The three vectors below form the standard basis for $\mathbb{R}^3$.
 

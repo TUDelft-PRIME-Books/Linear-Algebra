@@ -192,6 +192,8 @@ $$
 ::::::
 
 ::::::{prf:remark}
+:label: Rem:MatrixInv:RightInvLeftInv2
+
 Actually, the proof shows slightly more, as the assumptions
 
 $$
@@ -1167,6 +1169,8 @@ For non-square matrices this statement is not correct. The interested reader is 
 ::::::
 
 ::::::{prf:remark}
+:label: Rem:MatrixInv:RowReductionInverse
+
 If $A$ is not invertible, then the outcome of the row reduction of
 
 $$

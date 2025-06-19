@@ -7,6 +7,7 @@ Suppose we have, say, three brands competing with each other in some niche of th
 Assume we have a certain population divided into $n$ classes, say, by the brand they use. For every person using brand $i$, there is a certain chance $p_{ji}$ that he ends up using brand $j$ after a month. If we assume for the moment that nobody leaves or enters the population, every one must end up using _some_ brand. So $\sum_{j=1}^{n}p_{ji}=1$. Keeping in mind that every probability is a number between $0$ and $1$, we get to the following definition.
 
 :::{prf:definition}
+:label: Def:MarkovChains:ProbVect
 
 We call a vector $\vect{v}$ in $\R^{n}$ a **probability vector** if the sum of its entries is 1 and none of the entries are negative.
 
@@ -25,6 +26,7 @@ $$
 Clearly, for brands B and C there must be similar probability vectors, say $\vect{p}_{2}$ and $\vect{p}_{3}$. If we take these three probability vectors together, they form a matrix.
 
 :::{prf:definition}
+:label: Def:MarkovChains:StoMat
 
 A **stochastic matrix** is a square matrix, each column of which is a probability vector.
 
@@ -89,6 +91,7 @@ which had to be proven.
 :::
 
 :::{prf:Remark}
+:label: Rem:MarkovChains:StoMatPreservesProbVect
 
 {prf:ref}`Prop:MarkovChains:StoMatPreservesProbVect` implies that the product of two stochastic matrices is again stochastic. In particular, any power of a stochastic matrix is again a stochastic matrix.
 
@@ -97,6 +100,7 @@ which had to be proven.
 Such situations are common enough to warrant dedicated terminology.
 
 :::{prf:definition}
+:label: Def:MarkovChains:MarkovChain
 
 Let $P$ be a stochastic matrix. A **Markov chain** is a sequence $\vect{x}_{0},\vect{x}_{1},...$ of probability vectors such that $\vect{x}_{i}=P\vect{x}_{i-1}$ for any $i>0$. The $\vect{x}_{i}$ are called the **state vectors** of the Markov chain.
 
@@ -144,6 +148,7 @@ and so on. We can see that brand A consistently wins market share at the cost of
 Consider again the simple model of {prf:ref}`Ex:MarkovChains:MarkovChain`. What will happen if this model runs for a long time? We expect that C will lose market share to A, but how much? When, if ever, will the process stabilise? These are the questions we will deal with in this section.
 
 :::{prf:Definition}
+:label: Def:MarkovChains:SteadyState
 
 Let $P$ be a stochastic matrix. A probability vector $\vect{x}$ is called a **steady state** for $P$ if $P\vect{x}=\vect{x}$. That is, if it is an eigenvector with eigenvalue 1.
 
@@ -166,12 +171,14 @@ Showing that $1$ is an eigenvalue is a very non-trivial exercise. Showing that t
 :::
 
 :::{prf:Remark}
+:label: Rem:MarkovChains:StoMat1EV
 
 As an immediate consequence of {prf:ref}`Prop:MarkovChains:StoMat1EV`, any stochastic $n\times n$-matrix $P$ has a steady state $\vect{x}$ in $\R^{n}$. Indeed, we can find an eigenvector $\vect{v}$ of $P$ with eigenvalue $1$ and then scale it by $1/\sum_{i=1}^{n}\vect{v}_{i}$. This gives us a new vector $\vect{x}$ which is still an eigenvector with eigenvalue $1$ and for which $\sum_{i=1}^{n}\vect{x}_{i}=1$. That is, it is a steady state.
 
 :::
 
 :::{prf:Example}
+:label: Ex:MarkovChains:SteadyState
 
 Let us revisit the matrix
 
@@ -206,12 +213,13 @@ There may, in general, be many steady states for a Markov chain. In the most ext
 However, if it is at all possible, for every two brands $i$ and $j$, that a customer of $i$ ends up using $j$ after some time, then something remarkable happens: there is only one steady state and, no matter what the starting market shares are, they will converge towards this single steady state. That is the content of {prf:ref}`Thm:MarkovChains:PerronFrobenius`. But first some terminology.
 
 :::{prf:definition}
-
+:label: Def:MarkovChains:Regular
 A stochastic matrix is called **regular** if there is some natural number $k$ such that $P^{k}_{ij}>0$ for all $i$ and $j$, i.e. if and only if all entries of the $k$-th power of $P$ are positive.
 
 :::
 
 :::{prf:definition}
+:label: Def:MarkovChains:Convergence
 
 Let $\vect{x}$ be a vector and let $\vect{x}_{0},\vect{x}_{1},\vect{x}_{2},...$ be a sequence of vectors. We say that the sequence $(\vect{x}_{n})_{n\text{ in }\mathbb{N}}$ **converges** to $\vect{x}$ if the sequence of real numbers $(\norm{\vect{x_{n}}-\vect{x}})_{n\text{ in }\mathbb{N}}$ converges to $0$.
 

@@ -22,6 +22,7 @@ Notation: $A \sim B$.
 It is true we already used the symbol $\sim$ earlier to denote row equivalence of (augmented) matrices. When we use it, it will always be clear from the context what  the meaning is at that instance.
 
 ::::::{prf:remark}
+:label:  Rmk:Diagonalisable:SimilarMatrices
 
 In the definition it seems as if $A$ and $B$ play  different roles, but that is not the case. This can be seen as follows:
 
@@ -560,6 +561,7 @@ Things would be different if we would allow complex eigenvalues and eigenvectors
 In the previous example there were not enough eigenvalues for the matrix $A$ to be real diagonalisable. In the following example there is another reason why a matrix can fail to be diagonalisable.
 
 ::::::{prf:example}
+:label: Ex:Diagonalisable:SecondCharPoly
 
 The matrix
 $A = \left(\begin{array}{cc} 2 & 1 \\ 0 & 2 \end{array}

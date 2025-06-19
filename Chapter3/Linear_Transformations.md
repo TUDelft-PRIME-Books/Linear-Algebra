@@ -43,6 +43,8 @@ which makes them the protagonists of the more general linear algebra concept of 
 Let $A$ be an $m\times n$ matrix. We can in a natural way associate a transformation $T_A:\mathbb{R}^n \to \mathbb{R}^m$ &nbsp; to the matrix $A$.
 
 ::::::{prf:definition}
+:label: Def:LinTrafo:MatrixTransformation
+
 The transformation $T_A$ corresponding to the $m\times n$ matrix $A$
 is the mapping defined by
 
@@ -523,6 +525,8 @@ So indeed $T$ has the two properties of a linear transformation.
 ::::::
 
 ::::::{prf:example}
+:label: Ex:LinTrafo:NotLinearMap
+
 Consider the mapping
 $T:\mathbb{R}^2\rightarrow\mathbb{R}^2$ that sends each vector $ \begin{pmatrix}
 x \\ y
@@ -691,6 +695,7 @@ is a linear transformation from $\mathbb{R}^n$ to $\mathbb{R}^p$.
 ::::::
 
 ::::::{prf:remark}
+:label: Rmk:LinTrafo:Composition
 
 The transformation $S\circ T$ is called the **composition** of the two transformations $S$ and $T$. It is best read as _"$S$ after $T$"_.
 ::::::

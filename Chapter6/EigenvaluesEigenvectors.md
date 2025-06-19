@@ -74,6 +74,7 @@ have this property. Note that these represent the situation where city $A$ has t
 ## Definitions and examples
 
 ::::::{prf:definition}
+:label:  Def:Eigenvalues:Eigenvector
 
 Let $A$ be an $n \times n$ matrix. A real number $\lambda$ is called an **eigenvalue** of $A$ if there exists a nonzero vector $\vect{v}$ in $\R^n$ for which
 
@@ -90,6 +91,7 @@ Namely, $A\vect{0} = \vect{0} = c\vect{0}$ for any real number $c$.
 Thus then the concept of an eigenvalue would be a rather empty notion.
 
 ::::::{prf:remark}
+:label:  Remark:Eigenvalues:Complex
 
 Until now we have only been working with vectors and matrices of which all entries are real numbers. It is possible to generalise to vectors and matrices that have complex numbers as entries. If you have never seen or heard about complex numbers: don't worry,
 in this chapter we will focus on the 'real universe'. However, even for matrices with real entries complex eigenvalues and eigenvectors come up in quite a natural way, and in many senses make the theory simpler.  In one or two examples we will hint at
@@ -314,6 +316,7 @@ Note that the proposition handles our third question as well. If $\lambda$ has b
 Let us now have a look at a $3\times3$ matrix.
 
 ::::::{prf:example}
+:label:  Ex:EigenValues:Eigenvector3x3
 
 Consider the matrix $A = \begin{pmatrix} -2 & 1 & 2 \\ 0 & -1 & 2 \\ -1 & 1 & 0 \end{pmatrix}$.
 

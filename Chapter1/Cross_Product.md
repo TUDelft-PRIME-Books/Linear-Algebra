@@ -26,6 +26,7 @@ $$
 ::::
 
 ::::{prf:example}
+:label: Ex:CrossProduct:Example
 
 Let us compute the cross product of the following vectors $\mathbf{u}$ and $\mathbf{v}$.
 
@@ -187,6 +188,7 @@ The area of a parallelogram is equal to the product of the length of its base an
 ::::
 
 ::::{prf:example}
+:label: Ex:CrossProduct:AreaParallelogram
 
 What is the area of the parallelogram with vertices $(0,0,0)$, $(1,2,1)$, $(3,1,1)$ and $(4, 3, 2)$?
 
@@ -209,6 +211,7 @@ $$
 ::::
 
 ::::{prf:example}
+:label: Ex:CrossProduct:AreaTriangle
 
 What is the area of the triangle with vertices $(2,1,0)$, $(2,2,2)$ and $(3, 1, 1)$? Let us denote these points as $P$, $Q$ and $R$ respectively. How can we use the cross product to determine the area of this triangle? In {numref}`Figure %s <Fig:CrossProduct:AreaTriangle>` we see that the area of the triangle is half the area of the parallelogram spanned by $\overrightarrow{PQ}$ and $\overrightarrow{PR}$, which is equal to $\norm{\overrightarrow{PQ}\cp\overrightarrow{PR}}$.
 
@@ -360,6 +363,7 @@ This follows from the definition.
 ::::
 
 ::::{prf:example}
+:label: Ex:CrossProduct:dets
 
 Let us compute the cross product of the following vectors $\mathbf{u}$ and $\mathbf{v}$ using determinants.
 

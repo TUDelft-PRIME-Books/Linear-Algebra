@@ -371,6 +371,7 @@ The following proposition is an immediate consequence of
 {prf:ref}`Prop:ChangeOfBasis:ToStandardBasis` and {numref}`Exc:ChangeOfBasis:InvertiblePB`.
 
 ::::{prf:proposition}
+:label: Prop:ChangeOfBasis:PropCoB
 
 Suppose $\mc{B}$ is a basis for $\R^n$, and $P_{\mc{B}}$ is the change-of-coordinates matrix. Then the coordinates of any vector $\vect{v}$ with respect to basis $\mc{B}$ are given by
 

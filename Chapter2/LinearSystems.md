@@ -1085,6 +1085,7 @@ The last row of the first matrix and the third and the fourth row of the second 
 ::::
 
 ::::{prf:remark}
+:label: Rmrk:LinSystems:Pivots
 
 In practice the pivots are the coefficients in the equations of a system that are used to eliminate variables from other equations. In the context of augmented matrices: they are the entries used to create zeros in the column below that entry.
 
@@ -1120,6 +1121,7 @@ Interchanging (or: swapping) two rows.
 ::::
 
 ::::{prf:remark}
+:label: Rmrk:LinSystems:RowOperations
 
 Note that these row operations match exactly the operations of {prf:ref}`Prop:LinSystems:ElimOperations`. This proposition now states that the row operations do not change the solutions of the corresponding linear system.
 ::::
@@ -1133,6 +1135,7 @@ If two matrices $A$ and $B$ are row equivalent we denote this by $A \sim B$.
 ::::
 
 ::::{prf:remark}
+:label: Rmrk:LinSystems:RowEquivalent
 
 If two augmented matrices are row equivalent it means that the linear systems they represent are equivalent (i.e., have the same solution set).
 
@@ -1244,6 +1247,7 @@ Any matrix is row equivalent to an echelon matrix.
 ::::
 
 ::::{prf:remark}
+:label: Rmrk:LinSystems:EchelonFormExists
 
 We will not give a formal proof.
 

@@ -94,6 +94,7 @@ The solution sets for the two systems of equations from {prf:ref}`Example:SolSet
 ::::
 
 ::::{prf:remark}
+:label: Remark:SolSet:ParametrisedVectors
 
 In general, the solution set of a linear system in $n$ variables, $k$ of which are free, can be written as
 
@@ -202,6 +203,7 @@ From these examples, it seems like linear systems in which the constant terms ar
 Our first aim in this section is to show that the intuition from {numref}`Subsec:SolSet:WritingSolSets` holds in general. We first introduce some terminology to avoid the long and clumsy phrase **linear system with all constant terms equal to $0$**.
 
 ::::{prf:definition}
+:label: Def:SolSet:Homogeneous
 
 We will call a linear system **homogeneous** if all constant terms are $0$. If
 
@@ -335,6 +337,7 @@ You should keep in mind, however, that this **only** holds for solutions of **ho
 ::::
 
 ::::{prf:example} Application
+:label: App:SolSet:ChemReac
 
 Remember from {prf:ref}`App:Vectors:ChemReac` that adding carbon ($\ce{C}$) to sodium sulfate ($\ce{Na2SO4}$) gives sodium sulfide ($\ce{NaS}$) and carbon dioxide ($\ce{CO2}$). How much carbon do we need to add to a quantity of sodium sulfide in order to turn it all into sodium sulfate?
 

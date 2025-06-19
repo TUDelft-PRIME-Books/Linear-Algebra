@@ -127,6 +127,7 @@ In the case of asymptotic stability we will call the origin an **attractor**, in
 ::::
 
 ::::{prf:remark}
+:label: Rem:DynSystDiscrete:Stable
 
 This definition of stable and unstable suffices for the dynamical systems we will consider here,
 which are in fact _linear_ dynamical systems. Note that according to this definition asymtotic stability implies stability.
@@ -136,6 +137,7 @@ If the initial state is $\vect{s} = \vect{0}$, all vectors $\vect{x}_k$ will be 
 ::::
 
 ::::{prf:remark}
+:label: Rem:DynSystDiscrete:Stable-2
 
 For more general (read: non-linear) dynamical systems a more subtle definition is needed. For one thing, a non-linear dynamical system may have multiple equilibrium points, each with their own behaviour.
 
@@ -303,6 +305,7 @@ Equation {eq}`Eq:DynSystDiscrete:GenSolDiagble` to conclude that all sequences w
 ::::
 
 ::::{prf:remark}
+:label: Rem:DynSystDiscrete:DiagCase2
 
 Statement i. and ii. in {prf:ref}`Prop:DynSystDiscrete:DiagCase2` still hold in the case of repeated eigenvalues or complex eigenvalues. For complex eigenvalues $|\lambda_i|$ denotes the modulus of the number $\lambda_i$.
 
@@ -666,6 +669,7 @@ Classify the behaviour of the origin in {prf:ref}`Ex:DynSystDiscrete:SimplestSys
 ::::
 
 ::::{prf:remark}
+:label: Rem:DynSystDiscrete:Classification
 
 If one of the eigenvalues of the matrix $A$ is negative, the paths of the process can be
 rather erratic, in particular if there is an eigenvalue smaller than $-1$. <BR>
@@ -734,6 +738,7 @@ $$
 Note that all $y(k)$ are numbers here. Furthermore, verify that the initial values are precisely enough to determine $y(n),y(n+1), \ldots$ by repeatedly applying the difference equation.
 
 ::::{prf:example}
+:label: Ex:DynSystDiscrete:LinearDiffEq
 
 Consider the linear difference equation
 

@@ -327,6 +327,7 @@ Since we assumed that $\mathbf{v}$ is not the zero vector, we have that $\overli
 
 
 ::::{prf:example}
+:label: Ex:SymmetricMat:RealEigenvalues2x2
 
 Let $A = \begin{pmatrix} a&b\\b&d \end{pmatrix} $.
 
@@ -364,6 +365,7 @@ We will incorporate the proof of this proposition into the proof of the main the
 {numref}`Subsection %s <SubSec:SymmetricMat:OrthogDiag>`. For now, we will look at a few examples.
 
 ::::{prf:example}
+:label: Ex:SymmetricMat:OrthogonalEigenvectors
 
 We will verify that the symmetric matrix $A = \begin{pmatrix} 1 & 0 & 1\\0 & 1  & 2 \\ 1 & 2 & 5 \end{pmatrix}$
 is diagonalisable and has mutually orthogonal eigenvectors.
@@ -1136,6 +1138,8 @@ eigenspace $E_{\lambda_i}$.
 The following example provides an illustration.
 
 ::::{prf:example}
+:label: Ex:SymmetricMat:SpectralDecomp2
+
 For the matrix $A = \begin{pmatrix} 
      1 & 2 & 2 & 0 \\ 2 & -1 & 0 & 2 \\ 2 & 0 & -1 & -2 \\ 0 & 2 & -2 & 1
     \end{pmatrix}$ we had already found the orthogonal decomposition $A = QDQ^{-1}= QDQ^T$ with

@@ -92,6 +92,7 @@ This symmetric matrix $A$ is then called **the matrix of the quadratic form**.
 ::::
 
 ::::{prf:example}
+:label: Ex:QuadForms:SymmetricMatrix
 
 We will find the symmetric matrix $A$ for the symmetric form
 
@@ -193,6 +194,7 @@ $$
 ::::
 
 ::::{prf:example}
+:label: Ex:QuadForms:Shift2
 
 The surfaces defined by
 
@@ -474,6 +476,7 @@ Since $(2 + \sqrt{5})> 0$ and $(2 - \sqrt{5})<2-2=0$ we may again conclude that 
 ::::
 
 ::::{prf:remark} 
+:label: Rmk:QuadForms:SylvesterLaw
 In {prf:ref}`Ex:QuadForms:CompleteSquaresCtd` and {prf:ref}`Ex:QuadForms:CompleteSquaresCtd2` we applied two different substitutions to the same quadratic form with the matrix $A = \left(\begin{array}{cc} 1 & 2  \\ 2 & 3 \end{array}\right)$.
 
 They led to the two different quadratic forms
@@ -871,6 +874,7 @@ where both the parameter $f$ and at least one of the parameters $a,b,c$ are not 
 % When $f$ is equal to zero the conic section is sometimes called _degenerate_.
 
 ::::{prf:example}
+:label: Ex:ConicSec:Examples
 
 The curve given by the equation $x_1^2 + x_2^2 - 25 = 0$ is a circle with radius 5.
 
