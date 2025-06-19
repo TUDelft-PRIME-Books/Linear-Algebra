@@ -472,6 +472,6 @@ $$
 :url: https://embed.grasple.com/exercises/122013a2-1012-4203-99c7-ed5deafd82a4?id=78786
 :label: grasple_exercise_1_3_9
 :dropdown:
-:description: What to conclude from $\vect{a}\ip\vect{c} = \vect{b}\ip\vect{c}$, from $\vect{a}\times\vect{c} = \vect{b}\times\vect{c}$, from both\,?
+:description: What to conclude from $\vect{a}\ip\vect{c} = \vect{b}\ip\vect{c}$, from $\vect{a}\times\vect{c} = \vect{b}\times\vect{c}$, from both?
 
 ::::

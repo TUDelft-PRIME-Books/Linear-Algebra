@@ -45,7 +45,7 @@ $$
 ::::::{prf:example}
 :label: Ex:EigenValues:FirstCharPoly
 
-Consider the matrix $A = \begin{pmatrix} 1 & 4 \\ 1 & 1 \end{pmatrix}$. We evaluate det$(A - \lambda I)$.
+Consider the matrix $A = \begin{pmatrix} 1 & 4 \\ 1 & 1 \end{pmatrix}$. We evaluate $\det(A - \lambda I)$.
 
 $$
 \begin{vmatrix} 1-\lambda & 4 \\ 1 & 1-\lambda \end{vmatrix} = (1-\lambda) (1-\lambda) - 4 = \lambda^2 -2\lambda -3.
@@ -117,7 +117,7 @@ Note that this includes diagonal matrices $D$.
 
 ::::::
 
-For the $2\times 2$ matrix in {prf:ref}`Ex:EigenValues:FirstCharPoly` the expression det$(A - \lambda I)$ eventually comes down to a polynomial of degree 2.
+For the $2\times 2$ matrix in {prf:ref}`Ex:EigenValues:FirstCharPoly` the expression $\det(A - \lambda I)$ eventually comes down to a polynomial of degree 2.
 
 For an arbitrary $2 \times 2$ matrix $A = \begin{pmatrix} a-\lambda & b \\ c & d-\lambda \end{pmatrix}$ we quickly see that
 
@@ -132,7 +132,7 @@ That this can be generalised to arbitrary matrices is the content of the next pr
 ::::::{prf:proposition}
 :label: Prop:EigenValues:CharPoly
 
-For an $n\times n$ matrix $A$ the function det$(A - \lambda I)$ is a polynomial of degree $n$.
+For an $n\times n$ matrix $A$ the function $\det(A - \lambda I)$ is a polynomial of degree $n$.
 
 ::::::
 
@@ -164,11 +164,11 @@ We see that the highest power of $\lambda$ in this expression is the $n$-th powe
 
 ::::::
 
-The function det$(A - \lambda I)$ is of paramount importance. We will see that it reveals important intrinsic properties of the matrix $A$. It deserves a name.
+The function $\det(A - \lambda I)$ is of paramount importance. We will see that it reveals important intrinsic properties of the matrix $A$. It deserves a name.
 
 ::::::{prf:definition}
 
-The function det$(A - \lambda I)$ is called the **characteristic polynomial** of $A$. We will sometimes denote it by
+The function $\det(A - \lambda I)$ is called the **characteristic polynomial** of $A$. We will sometimes denote it by
 $p_A(\lambda)$, so
 
 $$
@@ -226,7 +226,7 @@ $$
 
 which has nothing to do with $\det{(A - \lambda I)}$.
 
-So, if you want to find the characteristic polynomial via row reduction of det$(A - \lambda I)$ you _have to include $\lambda$ right from the beginning_.
+So, if you want to find the characteristic polynomial via row reduction of $\det(A - \lambda I)$ you _have to include $\lambda$ right from the beginning_.
 
 Let's look at one other example before we give the characteristic polynomial a closer look.
 
@@ -267,7 +267,7 @@ $$
 ::::::
 
 From the examples so far it seems we have solved the question of how to find the eigenvalues. However, there is a proviso:
-if we start with a 'full' $3 \times 3$ matrix $A$, there may be nothing better to do than to compute det$(A - \lambda I)$
+if we start with a 'full' $3 \times 3$ matrix $A$, there may be nothing better to do than to compute $\det(A - \lambda I)$
 by iteratively expanding across columns or rows. We then end up with a cubic polynomial, not in factorised form.
 In general it will be quite a hard task to compute its zeros. Obviously, things get even worse in higher dimensions.
 
@@ -573,7 +573,7 @@ $$
 and also  
 
 $$
-  \operatorname{det}\,A = 3 \begin{vmatrix} 4 & -2 \\ 1 &  1 \end{vmatrix} = 3\cdot (4+2) = 18 = 3\cdot3\cdot2 =   \lambda_1\lambda_2\lambda_3.
+  \operatorname{det}A = 3 \begin{vmatrix} 4 & -2 \\ 1 &  1 \end{vmatrix} = 3\cdot (4+2) = 18 = 3\cdot3\cdot2 =   \lambda_1\lambda_2\lambda_3.
 $$
 
 ::::::

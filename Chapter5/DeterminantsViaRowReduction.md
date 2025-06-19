@@ -627,7 +627,7 @@ So, let us consider them one by one.
 
 Suppose $\tilde{A}$ is the result of scaling the $k$th column of $A$ with a factor $c$.
 <BR>
-Then expanding det$(\tilde{A})$ along its $k$th column, keeping in mind that $\tilde{a}_{ik} = c {a}_{ik}$ and $\tilde{A}_{ik} = {A}_{ik}$, yields
+Then expanding $\det(\tilde{A})$ along its $k$th column, keeping in mind that $\tilde{a}_{ik} = c {a}_{ik}$ and $\tilde{A}_{ik} = {A}_{ik}$, yields
 
 $$
 \operatorname{det}\big(\tilde{A}\big)= \sum_{i=1}^n   (-1)^{i+k} \tilde{a}_{ik}\det{\tilde{A}_{ik}}
@@ -710,7 +710,7 @@ a_{42}  &a_{43} &a_{44}
 \end{array}
 $$
 
-Expanding det$(\bar{\bar{A}})$ along its second column yields
+Expanding $\det(\bar{\bar{A}})$ along its second column yields
 
 $$
 \operatorname{det}\big(\bar{\bar{A}} \big)= \sum_{i=1}^n   (-1)^{i+2}  \bar{\bar{a}}_{i2}\operatorname{det}\big(\bar{\bar{A}}_{i2} \big)=
@@ -949,7 +949,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/5deab9d8-20f3-4b59-b54e-3b61c981c8c7?id=93148
 :label: grasple_exercise_5_3_15
 :dropdown:
-:description: Checking invertibility of a matrix $A$ via det($A$).
+:description: Checking invertibility of a matrix $A$ via $\det(A)$.
 
 ::::::
 
@@ -969,7 +969,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/a5713d1f-696b-42e5-ab74-553eec26b00b?id=93151
 :label: grasple_exercise_5_3_17
 :dropdown:
-:description: To find  det$(PBP^{-1})$,   for given $P$ and $B$.
+:description: To find  $\det(PBP^{-1})$,   for given $P$ and $B$.
 
 ::::::
 
@@ -991,7 +991,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/9ae9228f-ab17-4853-9995-e38e16d87c22?id=93153
 :label: grasple_exercise_5_3_19
 :dropdown:
-:description: To find  det$\left(A^k\right)$, for  a given matrix $A$.
+:description: To find  $\det\left(A^k\right)$, for  a given matrix $A$.
 
 ::::::
 
@@ -1000,7 +1000,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/8db6831f-2671-443a-af64-799d1d0d9179?id=93154
 :label: grasple_exercise_5_3_20
 :dropdown:
-:description: To find  det$\left(kA^{-1}B^T\right)$, for matrices $A$  and $B$.
+:description: To find  $\det\left(kA^{-1}B^T\right)$, for matrices $A$  and $B$.
 
 ::::::
 
@@ -1011,7 +1011,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/116e83e9-1db7-47ce-a2f3-ad398aee0201?id=93155
 :label: grasple_exercise_5_3_21
 :dropdown:
-:description: What can det($A$) be, if  $A^2 = kA$?
+:description: What can $\det (A)$ be, if  $A^2 = kA$?
 
 ::::::
 
@@ -1020,7 +1020,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/821d81b1-2cec-4fa4-b4a7-b1f9c32d6e06?id=93156
 :label: grasple_exercise_5_3_22
 :dropdown:
-:description: What about det($A+B$) = det($A$) + det($B$)?
+:description: What about $\det(A+B) = \det(A) + \det(B)$?
 
 ::::::
 
@@ -1031,7 +1031,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/5b89a008-2e3d-48a5-a764-0b1b6a3ec4dc?id=93157
 :label: grasple_exercise_5_3_23 
 :dropdown:
-:description: (True/False) det$(A) = 0 \iff A$  has a row that is a multiple of another row.
+:description: (True/False) $\det(A) = 0 \iff A$  has a row that is a multiple of another row.
 
 ::::::
 
@@ -1041,7 +1041,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/e0bfbb0c-002f-485f-9b2f-5249938b6e40?id=93162
 :label: grasple_exercise_5_3_24
 :dropdown:
-:description: What happens to det(A) if the last column of $A$ becomes the first?
+:description: What happens to $\det(A)$ if the last column of $A$ becomes the first?
 
 ::::::
 
@@ -1053,7 +1053,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/41f5ca17-ab3e-4487-b5fa-ee325cae85aa?id=93164
 :label: grasple_exercise_5_3_25
 :dropdown:
-:description: What happens to det($A$) if the order of the rows is reversed?
+:description: What happens to $\det(A)$ if the order of the rows is reversed?
 
 ::::::
 
@@ -1072,7 +1072,7 @@ Give an alternative proof of {prf:ref}`Cor:DetRowReduction:EqualRows` using Rule
 
 Suppose $A$ is a matrix with two equal rows, say row $i$ and row $j$ are equal.
 
-If we subtract the $i$th row from the $j$th row, we get a matrix $A_2$ with $j$th row equal to zero, and with det$(A_2) = $ det$(A)$. If we take the factor $0$ out, we see that det$(A_2) = 0$.
+If we subtract the $i$th row from the $j$th row, we get a matrix $A_2$ with $j$th row equal to zero, and with $\det(A_2) = \det(A)$. If we take the factor $0$ out, we see that $\det(A_2) = 0$.
 
 For instance, with a $4\times 4$ matrix with equal second and fourth row we would have
 

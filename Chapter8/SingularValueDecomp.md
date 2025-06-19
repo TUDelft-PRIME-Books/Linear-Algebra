@@ -753,7 +753,7 @@ $$
 
 The first matrix represents a rotation, the second matrix represents a reflection.  In an SVD of $A$, we can always construct $V$ to be a rotation.  Namely, the columns of $V$ must be eigenvectors of the matrix $A^TA$, and eigenvectors remain eigenvectors if we multiply  them with a factor $(-1)$.
 In that case  $V^T$, which is just $V^{-1}$, is also a rotation.
-Since the matrix $U$ in general is uniquely determined once $V$ is chosen (the exception being the case where $A$ has  zero as a singular value),  $U$ is either a rotation (when det$(A)>0$) or a reflection  (when det$(A)<0$). 
+Since the matrix $U$ in general is uniquely determined once $V$ is chosen (the exception being the case where $A$ has  zero as a singular value),  $U$ is either a rotation (when $\det(A)>0$) or a reflection  (when $\det(A)<0$). 
 The workings of the concatenation  $U\Sigma V^T$ are then
 1. Multiplication by $V^T$ rotates the eigenvectors $\mathbf{v}_1$ and  $\mathbf{v}_2$   of  $A^TA$
     to the standard basis vectors $\mathbf{e}_1$ and  $\mathbf{e}_2$.
@@ -925,7 +925,7 @@ $$
 
 of the first $k$ terms gives a good approximation of the matrix $A$.
 
-The gain is the following.  If the data is put in the form of an $m \times n$ matrix $A$, then it needs $m \times n$ memory cells to store $A$.  If $k$  is much smaller than $r = $ rank $A$
+The gain is the following.  If the data is put in the form of an $m \times n$ matrix $A$, then it needs $m \times n$ memory cells to store $A$.  If $k$  is much smaller than $r = \operatorname{rank}A$
 (which in general will be equal to the smallest of $m$ and $n$),  then $U_k$,  $V_k$  and the $k$ largest singular values only take up $m\times k + n\times k + k  = (m+n+k)k$,  memory places. <BR>
 If, for instance, a 1080x1350 ( $\approx$ 1.45 MB) image is stored using the thirty per cent highest singular values, so  $k = 0.3 \cdot 1080 = 324$,  the storage space reduces to  324x(1080+1350+320) $\approx$ 0.78 MB.  Thus the  *data* as been 'compressed' by more or less a factor $0.78/1.45 \approx 0.54$.
 

@@ -1055,7 +1055,7 @@ Because of {prf:ref}`Thm:BasisDim:EqualDim` this is a good definition.
 For the trivial subspace $S = \lbrace\vect{0}\rbrace$ we postulated that its basis is the empty set. Thus,
 
 $$
-\operatorname{dim}\, S = \operatorname{dim}(\emptyset) = 0.
+\operatorname{dim} S = \operatorname{dim}(\emptyset) = 0.
 $$
 
 For the other trivial subspace, the whole $\R^n$, the standard basis
@@ -1067,7 +1067,7 @@ $$
 has exactly $n$ elements, So
 
 $$
-\operatorname{dim }\R^n = n.
+\operatorname{dim}\R^n = n.
 $$
 
 ::::::
@@ -1257,7 +1257,7 @@ the smaller will be $\Span{\vect{a}_1,  \vect{a}_2,  \ldots,  \vect{a}_n}$, i.e.
 For any $m\times n$ matrix $A$:
 
 $$
-\operatorname{dim }\Col{A}  + \operatorname{dim }\Nul{A} = n.
+\operatorname{dim}\Col{A}  + \operatorname{dim}\Nul{A} = n.
 $$
 
 ::::::
@@ -1294,19 +1294,19 @@ If $A$ is a $3\times5$ matrix, the dimension of the null space of $A$ must be at
 Namely,
 
 $$
-\operatorname{Col}\,A \subseteq \R^3 \quad \text{implies} \quad \operatorname{dim}\operatorname{Col}\, A \leq 3.
+\operatorname{Col}A \subseteq \R^3 \quad \text{implies} \quad \operatorname{dim}\operatorname{Col} A \leq 3.
 $$
 
 From
 
 $$
-\operatorname{dim } \Col{A} +  \operatorname{dim } \Nul{A} = 5,
+\operatorname{dim} \Col{A} +  \operatorname{dim} \Nul{A} = 5,
 $$
 
 it then follows that
 
 $$
-\operatorname{dim }\Nul{A} = 5 - \operatorname{dim }\Col{A}   \geq   5 - 3 = 2.
+\operatorname{dim}\Nul{A} = 5 - \operatorname{dim}\Col{A}   \geq   5 - 3 = 2.
 $$
 
 ::::::
@@ -1325,7 +1325,7 @@ Since we are used to write vectors in $\R^n$ as column vectors, we define the ro
 The **row space** of a matrix $A$ is defined as the column space of its transpose:
 
 $$
-\operatorname{Row}\,{A} = \Col{A^T}.
+\operatorname{Row}{A} = \Col{A^T}.
 $$
 
 ::::::
@@ -1374,7 +1374,7 @@ thus $\Row{A}$ is a subspace of $\R^4$ of dimension 2.
 This is the same matrix $A$ as in {prf:ref}`Ex:BasisDim:TwoByFour`, where we found that the column space is the whole $\R^2$, which gives a first instance of the property
 
 $$
-\operatorname{dim } \Row{A} = \operatorname{dim } \Col{A},
+\operatorname{dim} \Row{A} = \operatorname{dim} \Col{A},
 $$
 
 a relation that will appear to hold for every $m \times n$ matrix ({prf:ref}`Prop:BasisDim:EqualDimRowColSpace`).
@@ -1400,7 +1400,7 @@ $$
 The matrix is in echelon form, so the three pivot columns give a basis for the column space. Thus
 
 $$
-\operatorname{dim } \Col{M} = 3.
+\operatorname{dim} \Col{M} = 3.
 $$
 
 The nonzero columns of
@@ -1421,7 +1421,7 @@ which are in a one-one-correspondence with the first three rows of $M$,
 give a basis for the row space of $M$, whence
 
 $$
-\operatorname{dim } \Row{M} = 3.
+\operatorname{dim} \Row{M} = 3.
 $$
 
 ::::::
@@ -1478,7 +1478,7 @@ For an echelon matrix it is very easy to find a basis of the row space. As in {p
 The nonzero rows are the rows that start with a pivot, so we find
 
 $$
-\operatorname{dim }\Row{A} = \operatorname{dim }\Row{E}= \text{ number of pivots } = \operatorname{dim } \Col{A},
+\operatorname{dim}\Row{A} = \operatorname{dim}\Row{E}= \text{ number of pivots } = \operatorname{dim } \Col{A},
 $$
 
 where at the last step we used {prf:ref}`Prop:BasisDim:PivotColsBasis`.
@@ -1656,7 +1656,7 @@ The last theorem contains two reformulations of old material.
 For each $m\times n$ matrix $A$:
 
 $$
-\operatorname{rank}\,A = n -  \operatorname{dim }\Nul{A}
+\operatorname{rank}A = n -  \operatorname{dim }\Nul{A}
 $$
 
 </li>
@@ -1666,7 +1666,7 @@ $$
 For each $n\times n$ matrix $A$:
 
 $$
-A \text{  is invertible  } \iff \operatorname{ rank}\, A = n.
+A \text{  is invertible  } \iff \operatorname{rank} A = n.
 $$
 
 </li>
@@ -1687,7 +1687,7 @@ The statements in {prf:ref}`Thm:BasisDim:RankThm` are both reformulations of ear
 Suppose that $A$ and $B$ are matrices for which the product $AB$ is defined. Show that
 
 $$
-\toperatornameext{rank}(AB) \leq \operatorname{rank}\,A.
+\operatorname{rank}(AB) \leq \operatorname{rank}A.
 $$
 
 ::::::
@@ -1701,7 +1701,7 @@ $$
 The statement in {numref}`Exc:Subspaces:ColABinColA` that says $\Col{AB} \subseteq \Col{A}$ immediately gives that
 
 $$
-\operatorname{rank}(AB) = \operatorname{dim}\operatorname{Col}(AB) \leq \operatorname{dim}\operatorname{Col}(A) =\operatorname{rank}\,A.
+\operatorname{rank}(AB) = \operatorname{dim}\operatorname{Col}(AB) \leq \operatorname{dim}\operatorname{Col}(A) =\operatorname{rank}A.
 $$
 
 ::::::
@@ -1790,7 +1790,7 @@ $$
 Show that
 
 $$
-\operatorname{rank}\, A + \operatorname{rank}\, B \leq n.
+\operatorname{rank} A + \operatorname{rank} B \leq n.
 $$
 
 Does the conclusion also hold when $A$ is an $m\times n$ matrix and

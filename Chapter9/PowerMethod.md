@@ -548,7 +548,7 @@ $$
     $$
 we will eventually find an eigenvalue of $A$ different from $\lambda_1$.
 
-If we run the algorithm with the matrix $B$ and the satrting vector $\vect{x}_0 = \begin{pmatrix}
+If we run the algorithm with the matrix $B$ and the starting vector $\vect{x}_0 = \begin{pmatrix}
          1 \\ 1 \\ 1        \end{pmatrix}$,
 
 we find that already  $\norm{\vect{x}_{12}-\vect{x}_{11}} < 10^{-4}$, &nbsp;and that

@@ -198,7 +198,7 @@ $$
 $$
 
 where there are $k$ entries $\lambda_1$ on the diagonal. <BR>
-It follows that the characteristic polynomial  det$(B - \lambda I)$  will have *at least*  $k$ factors $(\lambda - \lambda_1)$.
+It follows that the characteristic polynomial  $\det(B - \lambda I)$  will have *at least*  $k$ factors $(\lambda - \lambda_1)$.
 Thus the algebraic multiplicity of the eigenvalue $\lambda_1$ for the matrix $B$ is greater than or equal to $k$.  From the observed similarity  $A \sim B$ it follows that this also holds for the algebraic multiplicity of $\lambda_1$ for the matrix $A$.
 So indeed the inequality
 
@@ -296,14 +296,14 @@ If $\operatorname{rank}$ $A < n$ then $\lambda = 0$ is an eigenvalue of both $A$
 In this case we can use
 
 $$
-  \operatorname{rank}\,A = n - \operatorname{dim}\operatorname{Nul}\,A
+  \operatorname{rank}A = n - \operatorname{dim}\operatorname{Nul}A
 $$
 Recall that  $\operatorname{Nul}$ $A$ is the eigenspace for the eigenvalue $\lambda = 0$, so 
 $\operatorname{dim}\operatorname{Nul}$ $A$ is the geometric multiplicity of the eigenvalue $\lambda = 0$,
 which multiplicity is the same for $A$ and $B$. We deduce that 
 
 $$
-  \operatorname{rank}A = n - \operatorname{dim}\operatorname{Nul}\,A = n - \operatorname{dim}\operatorname{Nul}\,B = \operatorname{rank}\,B.
+  \operatorname{rank}A = n - \operatorname{dim}\operatorname{Nul}A = n - \operatorname{dim}\operatorname{Nul}B = \operatorname{rank}B.
 $$
 
 

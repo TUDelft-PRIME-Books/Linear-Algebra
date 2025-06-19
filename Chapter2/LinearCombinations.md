@@ -241,7 +241,7 @@ There is also a possibility where the span of three non-zero vectors in $\mathbb
 :url: https://embed.grasple.com/exercises/676d672c-74fc-4545-99ba-6b308af566ce?id=78542
 :label: grasple_exercise_2_2_C
 :dropdown:
-:description: Interpretation of Span$\{\vect{v}_1,\vect{v}_2,\vect{v}_3\}$.
+:description: Interpretation of $\Span\{\vect{v}_1,\vect{v}_2,\vect{v}_3\}$.
 
 ::::
 
@@ -339,7 +339,7 @@ In {prf:ref}`Prop:LinearCombinations:SpanStandardBasis` we saw that the span of 
 :url: https://embed.grasple.com/exercises/9c780d10-9a8f-4fd6-9471-3f1a0e46c009?id=70171
 :label: grasple_exercise_2_2_1
 :dropdown:
-:description: Is $\vect{b}$ an element of Span$\{\vect{a}_1,\vect{a}_2,\vect{a}_3\}$?
+:description: Is $\vect{b}$ an element of $\Span\{\vect{a}_1,\vect{a}_2,\vect{a}_3\}$?
 
 ::::
 
@@ -348,7 +348,7 @@ In {prf:ref}`Prop:LinearCombinations:SpanStandardBasis` we saw that the span of 
 :url: https://embed.grasple.com/exercises/f74168ff-a448-4420-88d9-ebe7365a00a9?id=70172
 :label: grasple_exercise_2_2_2
 :dropdown:
-:description: Is $\vect{b}$ an element of Span$\{\vect{a}_1,\vect{a}_2,\vect{a}_3\}$?
+:description: Is $\vect{b}$ an element of $\Span\{\vect{a}_1,\vect{a}_2,\vect{a}_3\}$?
 
 ::::
 
@@ -386,7 +386,7 @@ In {prf:ref}`Prop:LinearCombinations:SpanStandardBasis` we saw that the span of 
 :url: https://embed.grasple.com/exercises/2167085c-2498-4694-9eac-abfeeb0ec307?id=70162
 :label: grasple_exercise_2_2_6
 :dropdown:
-:description: About the interpretation of Span$\{\vect{a}_1,\vect{a}_2\}$.
+:description: About the interpretation of $\Span\{\vect{a}_1,\vect{a}_2\}$.
 
 ::::
 
@@ -406,7 +406,7 @@ In {prf:ref}`Prop:LinearCombinations:SpanStandardBasis` we saw that the span of 
 :url: https://embed.grasple.com/exercises/c008320d-9d0e-463f-8bb7-344988f10438?id=70176
 :label: grasple_exercise_2_2_8
 :dropdown:
-:description: About the difference between $\{\vect{a}_1,\vect{a}_2,\vect{a}_3\}$ and Span$\{\vect{a}_1,\vect{a}_2,\vect{a}_3\}$.
+:description: About the difference between $\{\vect{a}_1,\vect{a}_2,\vect{a}_3\}$ and $\Span\{\vect{a}_1,\vect{a}_2,\vect{a}_3\}$.
 
 ::::
 
