@@ -311,7 +311,7 @@ Property (i):
 
 $$
 \vect{0} = 0\vect{v}_1+0\vect{v}_2+ \ldots + 0\vect{v}_r, \quad \text{so} \quad
-\vect{0} \in \text{Span} \{ \vect{v}_1,\vect{v}_2, \ldots , \vect{v}_r \}.
+\vect{0} \in \operatorname{Span} \{ \vect{v}_1,\vect{v}_2, \ldots , \vect{v}_r \}.
 $$
 
 For property (ii) we just have to note that the sum of two linear combinations
@@ -367,7 +367,7 @@ $$
 In other words
 
 $$
-S = \text{Span}\{\vect{v}_i\, |\, i = 1,\ldots, r\} \quad \text{where  }\, r = 0, 1, 2 \text{  or  } 3,
+S = \operatorname{Span}\{\vect{v}_i\, |\, i = 1,\ldots, r\} \quad \text{where  }\, r = 0, 1, 2 \text{  or  } 3,
 $$
 
 and we may assume that the vectors $\vect{v}_i$ are linearly independent.
@@ -396,7 +396,7 @@ If $S$ is larger than $\Span{\vect{v}_1}$ we continue our enumeration of possibl
 $S$ then contains $\Span{\vect{v}_1,\vect{v}_2}$.
 Again, this may the end point, $S =  \Span{\vect{v}_1,\vect{v}_2}$, and then we are in case (C).
 
-If not, $S$ must contain a third linearly independent vector $\vect{v}_3$, and the same argument as before gives that $S$ contains $\text{Span}\{\vect{v}_1,\vect{v}_2,\vect{v}_3\}$. We claim that this implies that
+If not, $S$ must contain a third linearly independent vector $\vect{v}_3$, and the same argument as before gives that $S$ contains $\operatorname{Span}\{\vect{v}_1,\vect{v}_2,\vect{v}_3\}$. We claim that this implies that
 
 $$
 S = \Span{\vect{v}_1,\vect{v}_2,\vect{v}_3} = \R^3, \text{  i.e., we are in case (D)}
@@ -562,7 +562,7 @@ $$
 which proves that
 
 $$
-c\vect{u} \text{  also lies in  } \text{Nul} A.
+c\vect{u} \text{  also lies in  } \operatorname{Nul} A.
 $$
 
 Hence $\Nul{A}$ has all the properties of a subspace.
