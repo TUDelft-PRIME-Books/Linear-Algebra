@@ -452,8 +452,8 @@ $$
 
 ::::::{prf:remark}
 
-For an $m\times n$ matrix $A$, Col $A$ is the set of all vectors of the form $A\vect{x}$, for $\vect{x}\in\R^n$. The column space
-Col ${A}$ can also be interpreted as the range of the linear transformation $T:\R^n \to \R^m$ defined via
+For an $m\times n$ matrix $A$, $\operatorname{Col}A$ is the set of all vectors of the form $A\vect{x}$, for $\vect{x}\in\R^n$. The column space
+$\operatorname{Col}{A}$ can also be interpreted as the range of the linear transformation $T:\R^n \to \R^m$ defined via
 $T(\vect{x}) = A\vect{x}$. &nbsp; (Cf. {prf:ref}`Prop:LinTrafo:RangeTA`.)
 
 ::::::
@@ -633,10 +633,10 @@ Thus $AB$ is an $m\times p$ matrix.
 The column space of an $m\times n$ matrix $M$, consists of all vectors
 $\vect{w} = M\vect{v}$, where $\vect{v}$ is a vector in $\R^n$.
 
-Suppose $\vect{w}$ is a vector in Col$(AB)$, so $\vect{w} = AB\vect{v}$ for some vector $\vect{v}$ in $\R^p$. <BR>
-Then also $\vect{w} = A(B\vect{v})$, where $B\vect{v}$ is a vector in $\R^n$, which proves that $\vect{w} \in $ Col$(A)$.
+Suppose $\vect{w}$ is a vector in $\operatorname{Col}(AB)$, so $\vect{w} = AB\vect{v}$ for some vector $\vect{v}$ in $\R^p$. <BR>
+Then also $\vect{w} = A(B\vect{v})$, where $B\vect{v}$ is a vector in $\R^n$, which proves that $\vect{w} \in $ $\operatorname{Col}(A)$.
 
-With this we have shown that every vector in Col$(AB)$ also lies in Col$(A)$, i.e.,
+With this we have shown that every vector in $\operatorname{Col}(AB)$ also lies in $\operatorname{Col}(A)$, i.e.,
 
 $$
 \Col{(AB)} \subseteq \Col{(A)}.
@@ -723,7 +723,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 :url: https://embed.grasple.com/exercises/2a08d069-ac34-4f9f-8479-85896ade75da?id=70621
 :label: grasple_exercise_4_1_3
 :dropdown:
-:description: To decide whether a vector $\vect{p}$ is in Col$(A)$.
+:description: To decide whether a vector $\vect{p}$ is in $\operatorname{Col}(A)$.
 
 ::::::
 
@@ -732,7 +732,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 :url: https://embed.grasple.com/exercises/9470136c-b9ce-4664-937c-fad9da7963cb?id=70622
 :label: grasple_exercise_4_1_4
 :dropdown:
-:description: To decide whether a vector $\vect{p}$ is in Col$(A)$.
+:description: To decide whether a vector $\vect{p}$ is in $\operatorname{Col}(A)$.
 
 ::::::
 
@@ -741,7 +741,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 :url: https://embed.grasple.com/exercises/8756aa45-07b2-40f1-8fbe-aae7c140ae19?id=70625
 :label: grasple_exercise_4_1_5
 :dropdown:
-:description: To give a vector in Nul$(A)$ and a vector not in Nul$(A)$.
+:description: To give a vector in $\operatorname{Nul}(A)$ and a vector not in $\operatorname{Nul}(A)$.
 
 ::::::
 
@@ -750,7 +750,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 :url: https://embed.grasple.com/exercises/c32e1656-5d38-4708-a55d-22ced9a9b254?id=70623
 :label: grasple_exercise_4_1_6
 :dropdown:
-:description: To decide whether a vector $\vect{p}$ is in Nul$(A)$.
+:description: To decide whether a vector $\vect{p}$ is in $\operatorname{Nul}(A)$.
 
 ::::::
 
@@ -759,7 +759,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 :url: https://embed.grasple.com/exercises/ab566408-ef8d-4b99-9f96-ceb29dcc234b?id=70624
 :label: grasple_exercise_4_1_7
 :dropdown:
-:description: To decide whether a vector $\vect{p}$ is in Nul$(A)$.
+:description: To decide whether a vector $\vect{p}$ is in $\operatorname{Nul}(A)$.
 
 ::::::
 
@@ -777,7 +777,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 :url: https://embed.grasple.com/exercises/f880df03-c9b6-4c69-bc94-ea0c6d273b24?id=70627
 :label: grasple_exercise_4_1_9
 :dropdown:
-:description: For an $m\times n$ matrix, in which $\R^p$ lies Nul$(A)$? And Col$(A)$?
+:description: For an $m\times n$ matrix, in which $\R^p$ lies $\operatorname{Nul}(A)$? And $\operatorname{Col}(A)$?
 
 ::::::
 
@@ -786,7 +786,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 :url: https://embed.grasple.com/exercises/8bf246d1-8aad-448f-842a-8cc20c21b99a?id=70629
 :label: grasple_exercise_4_1_10
 :dropdown:
-:description: To find $p$ such that Nul$(A)$ lies in $\R^p$.
+:description: To find $p$ such that $\operatorname{Nul}(A)$ lies in $\R^p$.
 
 ::::::
 
@@ -795,7 +795,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 :url: https://embed.grasple.com/exercises/3eb1c09d-b39f-4eb8-8968-804469666617?id=83365
 :label: grasple_exercise_4_1_11
 :dropdown:
-:description: To find a parameter such that Nul$(A)=$ Col$(A)$ for a $2\times2$ matrix $A$.
+:description: To find a parameter such that $\operatorname{Nul}(A)=\operatorname{Col}(A)$ for a $2\times2$ matrix $A$.
 
 ::::::
 
@@ -804,7 +804,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 :url: https://embed.grasple.com/exercises/958bc91a-84e2-48e8-8cdf-b26514c41df0?id=83371
 :label: grasple_exercise_4_1_12
 :dropdown:
-:description: To find a parameter such that Nul$(A)=$ Col$(A)$ for a $2\times2$ matrix $A$.
+:description: To find a parameter such that $\operatorname{Nul}(A)=\operatorname{Col}(A)$ for a $2\times2$ matrix $A$.
 
 ::::::
 

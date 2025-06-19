@@ -287,10 +287,10 @@ Another natural question is how many linearly **independent** eigenvectors  ther
 
 ::::::{prf:definition}
 
-The **algebraic multiplicity** of an eigenvalue $\lambda_k$ is the number of factors $(\lambda - \lambda_k)$ appearing in the characteristic polynomial. It is often abbreviated as **a.m.**($\lambda_k$).
+The **algebraic multiplicity** of an eigenvalue $\lambda_k$ is the number of factors $(\lambda - \lambda_k)$ appearing in the characteristic polynomial. It is often abbreviated as $\operatorname{a.m.}(\lambda_k)$.
 
 The **geometric multiplicity** of an eigenvalue $\lambda_k$, with short 
-notation **g.m.**($\lambda_k$),   is the dimension of the eigenspace corresponding to $\lambda_k$. In other words, it is the number of independent eigenvectors for $\lambda_k$.
+notation $\operatorname{g.m.}(\lambda_k)$,   is the dimension of the eigenspace corresponding to $\lambda_k$. In other words, it is the number of independent eigenvectors for $\lambda_k$.
 
 
 ::::::

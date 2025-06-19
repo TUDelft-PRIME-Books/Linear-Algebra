@@ -253,9 +253,9 @@ For each linear system $A\vect{x} = \vect{b}$, where $A$ is an $m \times n$ matr
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LeastSquares:Existence`
 :class: tudproof
 
-In {prf:ref}`Rem:LeastSquares:BestLinComb` it was noted that a least squares solution corresponds to the vector in Col $A$ that is closest to $\vect{b}$.
+In {prf:ref}`Rem:LeastSquares:BestLinComb` it was noted that a least squares solution corresponds to the vector in $\operatorname{Col}A$ that is closest to $\vect{b}$.
 
-The vector in Col $A$ that is closest to $\vect{b}$ is precisely the orthogonal projection of $\vect{x}$ onto Col $A$. (See {prf:ref}`Prop:Orthogonality:BestApprox`.)
+The vector in $\operatorname{Col}A$ that is closest to $\vect{b}$ is precisely the orthogonal projection of $\vect{x}$ onto $\operatorname{Col}A$. (See {prf:ref}`Prop:Orthogonality:BestApprox`.)
 
 This projection, a linear combination of the colums of $A$, always exists.
 
@@ -326,7 +326,7 @@ In {numref}`Section %s <Sec:Gram-Schmidt>` we saw how we can construct an orthog
 
 ## Normal equations
 
-There is a direct way to find the coefficients of the orthogonal projection onto Col$ A$ if the columns are not orthogonal.
+There is a direct way to find the coefficients of the orthogonal projection onto $\operatorname{Col}A$ if the columns are not orthogonal.
 
 ::::{prf:theorem} Normal Equations
 :label: Thm:LeastSquares:NormalEquations
@@ -428,7 +428,7 @@ $$
 for certain constants $c_1, \ldots c_n$.  
 % If $A$ has independent columns, these constants are unique.
 
-By the definition of the orthogonal projection we have that $(\vect{b} - (c_1\vect{a}_1 + \ldots + c_n\vect{a}_n))$ lies in the orthogonal complement of Col$ A$, i.e.,
+By the definition of the orthogonal projection we have that $(\vect{b} - (c_1\vect{a}_1 + \ldots + c_n\vect{a}_n))$ lies in the orthogonal complement of $\operatorname{Col}A$, i.e.,
 
 $$
   \vect{a}_i \ip (\vect{b} - (c_1\vect{a}_1 + \ldots + c_n\vect{a}_n))   = 0, \quad  i = 1, \ldots, n.
@@ -485,7 +485,7 @@ A^TA \vect{x} = A^T\vect{b}.
 
 If $\vect{c} =  \left(  \begin{array}{c}   c_1 \\ c_2 \\ \vdots \\ c_n   \end{array} \right)$ is the least squares solution of the linear system $A\vect{c} = \vect{b}$,
 then the orthogonal projection of
-$\vect{b}$ of Col $A$ is given by
+$\vect{b}$ of $\operatorname{Col}A$ is given by
 
 $$
   \operatorname{proj}_{\Col{A}}(\vect{b}) = c_1\vect{a}_1 + \ldots + c_n\vect{a}_n = A \vect{c}.
@@ -584,7 +584,7 @@ $$
   \vect{c} = (A^TA)^{-1}A^T\vect{b}.
 $$
 
-So for a matrix $A$ with linearly independent columns the projection of a vector $\vect{b}$ onto Col $A$ is given by
+So for a matrix $A$ with linearly independent columns the projection of a vector $\vect{b}$ onto $\operatorname{Col}A$ is given by
 
 :::{math}
 :label: Eq:LeastSquares:ProjbColA
@@ -646,7 +646,7 @@ $$
    c_1\vect{a}_1 + c_2\vect{a}_2 + \cdots + c_n\vect{a}_n
 $$
 
-of a vector $\vect{b}$ in $\R^m$ onto Col $A$ is found by solving the normal equations
+of a vector $\vect{b}$ in $\R^m$ onto $\operatorname{Col}A$ is found by solving the normal equations
 
 $$
  \left(  \begin{array}{cccc}
@@ -721,7 +721,7 @@ $$
   \hat{\vect{b}} = QR \left[R^TR\right]^{-1}R^TQ^T\vect{b} =QRR^{-1}(R^T)^{-1}R^TQ^T\vect{b} = QQ^T\vect{b}
 $$
 
-The interpretation is as follows. The columns $\vect{q}_i$ of $Q$ form an orthonormal basis for the column space of $A$. So the orthogonal projection onto Col$(A$) is the same as the orthogonal projection onto Col$(Q)$. For a matrix with _orthonormal_ columns the projection formula
+The interpretation is as follows. The columns $\vect{q}_i$ of $Q$ form an orthonormal basis for the column space of $A$. So the orthogonal projection onto $\operatorname{Col}(A$) is the same as the orthogonal projection onto $\operatorname{Col}(Q)$. For a matrix with _orthonormal_ columns the projection formula
 
 $$
  \begin{array}{lcl}

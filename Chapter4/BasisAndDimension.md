@@ -1640,7 +1640,7 @@ $$
 The rank of $A^T$ is the dimension of the column space of $A^T$, which is the dimension of the row space of $A$. <BR>
 The rank of $A$ is the dimension of the column space of $A$.
 <br/>
-By {prf:ref}`Prop:BasisDim:EqualDimRowColSpace` dim Row$(A) = $ dim Col$(A)$.
+By {prf:ref}`Prop:BasisDim:EqualDimRowColSpace` $\operatorname{dim} \operatorname{Row}(A) = \operatorname{dim} \operatorname{Col}(A)$.
 
 ::::::
 
@@ -1724,9 +1724,9 @@ $$
 
 
 Suppose  $A$ is an $m$ x $n$ matrix and $B$ an $n$ x $p$ matrix,  so $AB$ is an $m$ x $p$ matrix. <BR> 
-First note that if $\vect{v}$ lies in Nul $B$,  thus $B\vect{v} = \vect{0}$, <BR>
-then $AB\vect{v} = A(B\vect{v}) = A\vect{0} = \vect{0}$,  so  $\vect{v} \in $ Nul $AB$.  <BR>
-Thus  Nul $B$  lies in Nul $AB$, which gives that  $\operatorname{dim}\operatorname{Nul}B \leq   \operatorname{dim}\operatorname{Nul} AB$. <BR>
+First note that if $\vect{v}$ lies in $\operatorname{Nul}B$,  thus $B\vect{v} = \vect{0}$, <BR>
+then $AB\vect{v} = A(B\vect{v}) = A\vect{0} = \vect{0}$,  so  $\vect{v} \in $ $\operatorname{Nul}AB$.  <BR>
+Thus  $\operatorname{Nul}B$  lies in $\operatorname{Nul}AB$, which gives that  $\operatorname{dim}\operatorname{Nul}B \leq   \operatorname{dim}\operatorname{Nul} AB$. <BR>
 Consequently, by the rank theorem   ({prf:ref}`Thm:BasisDim:RankThm`),
  
  $$
@@ -1841,7 +1841,7 @@ $B$ is an $n\times m$ matrix?
 :url: https://embed.grasple.com/exercises/ae1a690e-1e4d-40be-94d7-cf91121134f0?id=70649
 :label: grasple_exercise_4_2_5
 :dropdown:
-:description: Finding bases for Col$(A)$ and Nul$(A)$.
+:description: Finding bases for $\operatorname{Col}(A)$ and $\operatorname{Nul}(A)$.
 
 ::::::
 
@@ -1850,7 +1850,7 @@ $B$ is an $n\times m$ matrix?
 :url: https://embed.grasple.com/exercises/9440dca7-7d2d-4f74-8679-c966be28d73f?id=70638
 :label: grasple_exercise_4_2_6
 :dropdown:
-:description: Finding bases for Col$(A)$ and Nul$(A)$.
+:description: Finding bases for $\operatorname{Col}(A)$ and $\operatorname{Nul}(A)$.
 
 ::::::
 
@@ -1859,7 +1859,7 @@ $B$ is an $n\times m$ matrix?
 :url: https://embed.grasple.com/exercises/3d5483ab-4a1f-4caf-b979-9a4518551416?id=70640
 :label: grasple_exercise_4_2_7
 :dropdown:
-:description: Finding bases for Col$(A)$ and Nul$(A)$.
+:description: Finding bases for $\operatorname{Col}(A)$ and $\operatorname{Nul}(A)$.
 
 ::::::
 
@@ -1933,7 +1933,7 @@ The exercises below are more theoretical.
 :url: https://embed.grasple.com/exercises/3576e4c9-2084-4e3f-af61-08f09d63ad82?id=70646
 :label: grasple_exercise_4_2_15
 :dropdown:
-:description: Which of four statements about Col$(A)$ is correct?
+:description: Which of four statements about $\operatorname{Col}(A)$ is correct?
 
 ::::::
 
@@ -1942,7 +1942,7 @@ The exercises below are more theoretical.
 :url: https://embed.grasple.com/exercises/37a433f6-b15f-4b8a-8232-4098fe82e6c9?id=70647
 :label: grasple_exercise_4_2_16
 :dropdown:
-:description: Which of six statements about Col$(A)$ is incorrect?
+:description: Which of six statements about $\operatorname{Col}(A)$ is incorrect?
 
 ::::::
 
@@ -1951,7 +1951,7 @@ The exercises below are more theoretical.
 :url: https://embed.grasple.com/exercises/2940572e-f3bf-40e9-bf01-c2244c6f9aa5?id=70648
 :label: grasple_exercise_4_2_17
 :dropdown:
-:description: Which of four statements about Nul$(A)$ is incorrect?
+:description: Which of four statements about $\operatorname{Nul}(A)$ is incorrect?
 
 ::::::
 
