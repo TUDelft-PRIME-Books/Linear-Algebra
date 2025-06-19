@@ -1,13 +1,13 @@
 (Sec:MatVecProduct)=
 
-# The Matrix-Vector Product $A\vect{x}$
+# The matrix-vector product $A\vect{x}$
 
 In this section we will introduce another interpretation/representation of a system of linear equations.  
 We will define the product of an $m\times n$ matrix $A$ with a vector $\vect{x}$ in $\mathbb{R}^n$. In the next chapter this will also be the stepping stone to the general matrix-matrix product.
 
 (Subsec:MatVecProduct)=
 
-## Definition of the Matrix-Vector Product
+## Definition of the matrix-vector product
 
 ::::{prf:definition}
 :label: Dfn:MatVectProd:ProductMatVec
@@ -705,7 +705,7 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 
 ::::
 
-## Grasple Exercises
+## Grasple exercises
 
 ::::{grasple}
 :iframeclass: dark-light

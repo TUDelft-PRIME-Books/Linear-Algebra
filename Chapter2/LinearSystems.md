@@ -5,11 +5,11 @@ csp:
  -->
 (Section:LinSystems)=
 
-# Systems of Linear Equations
+# Systems of linear equations
 
 (Subsec:LinSystems:Intro)=
 
-## Consistent and Inconsistent Linear Systems
+## Consistent and inconsistent linear systems
 
 In Chapter 1 the question whether two lines or two planes intersect or do not intersect was touched upon. In the case of two planes the question can be resolved by finding equations for the planes and checking whether there are points that simultaneously satisfy these two equations. We can write this in the form
 
@@ -375,7 +375,7 @@ $$
 
 (Subsec:LinSystems:Elimination)=
 
-## Solving a Linear System by Elimination
+## Solving a linear system by elimination
 
 We start with an example of three equations in three unknowns.
 
@@ -789,7 +789,7 @@ In theory the method works for any linear system, however large, though with pen
 
 (Subsec:LinSystems:AugmentedMatrix)=
 
-## Augmented Matrices
+## Augmented matrices
 
 We will introduce a convenient shorthand notation for linear systems. This notation contains the essentials of the system in a structured way.
 
@@ -972,7 +972,7 @@ The right moment to start this backward substitution is when the augmented matri
 
 (Subsec:LinSystems:RowReduction)=
 
-## Row Reduction and Echelon Forms
+## Row reduction and echelon forms
 
 In {numref}`Subsec:LinSystems:Elimination` we have solved linear systems by eliminating variables from equations. It would be nice to have a clear mark where we can stop rewriting the given system, to forestall ending up in a never ending loop. When we use the notation of an augmented matrix we can identify such a mark.
 We first need a few more definitions.
@@ -1922,7 +1922,7 @@ can be seen as a plane in $\mathbb{R}^3$. The previous proposition tells us that
 
 ::::
 
-## Grasple Exercises
+## Grasple exercises
 
 The first exercises are quite straightfordwardly computational.
 The remaining exercises tend to be a bit more theoretic.

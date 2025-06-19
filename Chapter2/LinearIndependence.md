@@ -1,4 +1,4 @@
-# Linear Independence
+# Linear independence
 
 As we have seen ({prf:ref}`Ex:LinearCombinations:SpanOfOneVector` and {prf:ref}`Ex:LinearCombinations:SpanOfTwoVectors`), the multiples of a non-zero vector form a line. We have also seen there that, if we consider the set of all vectors of the form $c_{1}\mathbf{v}_{1}+c_{2}\mathbf{v}_{2}$, for some vectors $\mathbf{v}_{1},\mathbf{v}_{2}$ and constants $c_{1},c_{2}$, we usually get a plane. But sometimes we don't! For example, if $d\mathbf{v}_{1}=\mathbf{v}_{2}$ for some constant $d$, then all vectors of the given form can be rewritten as $(c_{1}+c_{2}d)\mathbf{v}_{1}$, so they are all contained in the line through the origin and in the direction of $\mathbf{v}_{1}$. Every vector we can make as a linear combination of $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ can also be made with $\mathbf{v}_{1}$ alone. The vector $\mathbf{v}_{2}$ is superfluous. This situation can be seen in {numref}`Figure %s <Fig:LinInd:Examplein1D>`.
 
@@ -520,7 +520,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 
 ::::::
 
-## Grasple Exercises
+## Grasple exercises
 
 ::::::{grasple}
 :iframeclass: dark-light

@@ -1,12 +1,12 @@
 (Sec:LinesAndPlanes)=
 
-# Lines and Planes
+# Lines and planes
 
 Throughout this book we will regularly work with geometrical objects in $\mathbb{R}^n$ that are generalisations of lines and planes. In this section we will take a look at how lines and planes can be represented by various equations in $\mathbb{R}^2$ and $\mathbb{R}^3$. We will use these representations later on to obtain a better understanding of concepts like _subspaces_ and _solution sets_ of systems of equations.
 
 (SubSec:LinesAndPlanes:Plane)=
 
-## Lines in the Plane $\mathbb{R}^2$
+## Lines in the plane $\mathbb{R}^2$
 
 We all know what a line looks like, but in mathematics we want to define everything in a precise way. Therefore, we will define lines in $\mathbb{R}^2$ as follows.
 
@@ -32,7 +32,7 @@ The point $(4, 1)$, for example, is a point on the line with equation $2x-3y=5$ 
 The line $2x-3y=5$ in the plane.
 ::::
 
-## Intersecting Lines
+## Intersecting lines
 
 Two lines can have a point of intersection. Let $\mathcal{L}_1$ and $\mathcal{L}_2$ be the lines defined by the equations $x+2y=5$ and $3x-y=1$. The point $(1, 2)$ is clearly a point on both lines. It satisfies the equation $x+2y=5$ and the equation $3x-y=1$. In {numref}`Figure %s <Fig:LinesAndPlanes:PointIntersection>` we can see that this is the unique point of intersection.
 
@@ -63,7 +63,7 @@ Coinciding lines.
 
 (Subsec:LinesAndPlanes:ParametricLine)=
 
-## Parametric Vector Equation of a Line
+## Parametric vector equation of a line
 
 So far we have looked at lines as collections of points in the plane, but we can also think of them as collections of vectors. We can define the line $\mathcal{L}_1$ with equation $x+2y=5$ as the collection of all vectors
 
@@ -176,7 +176,7 @@ $$
 
 (Subsection:LinesAndPlanes:NormalLine)=
 
-## Normal Equation of a Line
+## Normal equation of a line
 
 Finally, we will take a look at a _normal equation_ of a line in $\mathbb{R}^2$. To obtain a parametric vector equation of a line, we used a vector parallel to that line. For the normal equation of a line we use a vector that is orthogonal to the line.
 
@@ -246,7 +246,7 @@ After some calculations we find the Cartesian equation $-2x+y=5$. In {numref}`Fi
 
 ::::
 
-## Planes in the Space $\mathbb{R}^3$
+## Planes in the space $\mathbb{R}^3$
 
 We already saw that when we are working in $\mathbb{R}^2$, we can describe lines using a Cartesian equation, a parametric vector equation or a normal equation. Planes in the three-dimensional space $\mathbb{R}^3$ can be described in similar ways. We will start by defining planes using the _Cartesian equation_ and then we will explain the geometrical interpretation of this equation.
 
@@ -312,7 +312,7 @@ This means that $Q$ is on the plane $\mathcal{P}$ through $P$ and orthogonal to 
 
 ::::
 
-## Normal Equation of a Plane
+## Normal equation of a plane
 
 A line can be defined as a collection of points and as the collection of vectors that connect the origin to points on the line. Similarly, we can identify the plane $\mathcal{P}$ as the collection of all vectors $\mathbf{v}$ that connect the origin to points on $\mathcal{P}$. In this case we will say that $\mathbf{v}$ is a vector on the plane $\mathcal{P}$.
 
@@ -383,7 +383,7 @@ is always a vector normal to (= perpendicular to) the plane $\mathcal{P}$.
 
 ::::
 
-## Parametric Vector Equation of a Plane
+## Parametric vector equation of a plane
 
 Finally, let us take a look at a _parametric vector equation_ of a plane. Such an equation will be very similar to a parametric vector equation of a line in the plane $\mathbb{R}^2$, but in this case we will need two directional vectors instead of one.
 
@@ -460,7 +460,7 @@ $$
 is an equation of the plane that contains $P$, $Q$ and $R$.
 :::
 
-## Intersecting Planes
+## Intersecting planes
 
 We already established that two lines in the plane can have zero, one or infinitely many points of intersection, but what's the deal when we are working with planes? How many points of intersection can two planes in $\mathbb{R}^3$ have?
 
@@ -538,7 +538,7 @@ Three planes with line of intersection.
 
 It is of course also possible that the three planes coincide. In this case the points that all three planes have in common do not form a line, but an entire plane in $\mathbb{R}^3$. Take for example the planes that are defined by the Cartesian equations $-x+2y+z=1$, $2x-4y-2z=-2$ and $-3x+6y+3z=3$. Since the three equations are multiples of each other we know that they all describe the same collection of points.
 
-## Lines in the Space $\mathbb{R}^3$
+## Lines in the space $\mathbb{R}^3$
 
 There are multiple ways to describe a line in $\mathbb{R}^3$, but for us the parametric will suffice. In {numref}`Subsec:LinesAndPlanes:ParametricLine` we saw that we can describe a line in $\mathbb{R}^2$ with a parametric vector equation using a vector $\mathbf{v_0}$ that connects the origin to a point on the line and a vector parallel to the given line. The same idea works in the space $\mathbb{R}^3$.
 
@@ -587,7 +587,7 @@ $$
 is thus a possible parametric vector equation of $\mathcal{L}$.
 :::
 
-## Grasple Exercises
+## Grasple exercises
 
 ::::{grasple}
 :iframeclass: dark-light

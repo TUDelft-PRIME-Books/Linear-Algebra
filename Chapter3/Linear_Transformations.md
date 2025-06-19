@@ -1,6 +1,6 @@
 (Sec:LinTrafo)=
 
-# Linear Transformations
+# Linear transformations
 
 (Subsec:LinTrafo:MatrixTrafo)=
 

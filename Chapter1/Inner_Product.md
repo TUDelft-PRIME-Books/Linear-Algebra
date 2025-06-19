@@ -1,6 +1,6 @@
 (Sec:DotProduct)=
 
-# Dot Product
+# Dot product
 
 In this section we will consider other (geometric) properties of vectors, like the _length_ of a vector and the _angle_ between two vectors. When the angle between two vectors is equal to $\frac12\pi$, two vectors are _perpendicular_, which is also known as _orthogonal_. These properties can all be expressed using a new operator: the _inner product_ or _dot product_.
 
@@ -1481,7 +1481,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 
 :::
 
-## Grasple Exercises
+## Grasple exercises
 
 ::::{grasple}
 :iframeclass: dark-light

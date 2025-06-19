@@ -1,6 +1,6 @@
 (Section:SolutionSets)=
 
-# The Solution Set of a System of Linear Equations
+# The solution set of a system of linear equations
 
 As we have seen in {numref}`Sec:LinesAndPlanes`, the solutions of a single linear equation with $2$ variables form a line in the plane. Similarly, the solutions of a single linear equation in $3$ variables form a plane in three-dimensional space. If we want to know which points lie in the intersection of two planes, we therefore have to find those points that solve two equations simultaneously. This raises some very natural questions: what is the set of vectors that satisfy a number of given equations? What does this set look like geometrically?
 
@@ -11,7 +11,7 @@ In this section, we will study solution sets of linear systems in higher dimensi
 
 (Subsec:SolSet:WritingSolSets)=
 
-## Writing Down Solution Sets
+## Writing down solution sets
 
 In {numref}`Section %s <Section:LinSystems>`, we saw how to solve a system of linear equations: we reduced the augmented matrix to echelon form and expressed the basic variables in terms of the free variables. This means that any choice of numbers for the free variables determines a solution. We can conveniently write down the set of all such solutions by using a parametrised vector. What we mean by that is best illustrated with a couple of examples.
 
@@ -197,7 +197,7 @@ Note that, if we had changed the right hand side of our first equation to $a$, $
 
 From these examples, it seems like linear systems in which the constant terms are zero have solution sets containing the origin. Making some of the constant terms non-zero shifts the solution set away from the origin.
 
-## Homogeneous Linear Systems
+## Homogeneous linear systems
 
 Our first aim in this section is to show that the intuition from {numref}`Subsec:SolSet:WritingSolSets` holds in general. We first introduce some terminology to avoid the long and clumsy phrase **linear system with all constant terms equal to $0$**.
 
@@ -423,7 +423,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 
 %\todo[inline]{Suggested exercises: prove Proposition \ref{Prop:SolSet:SolSetisVecSpa} and Remark\ref{Rem:SolSet:SolSetisClosed} [it]; write solutions in parametrised vector form [it, end of section 2]; solve non-homogeneous systems by using a particular solution and the solution of the associated homogeneous system [es].}
 
-## Grasple Exercises
+## Grasple exercises
 
 ::::{grasple}
 :iframeclass: dark-light

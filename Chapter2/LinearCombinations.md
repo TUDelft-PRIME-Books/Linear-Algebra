@@ -1,6 +1,6 @@
 (Sec:LinearCombinations)=
 
-# Linear Combinations
+# Linear combinations
 
 ::::{prf:definition}
 
@@ -332,7 +332,7 @@ On the other hand, each vector in $\Span{\mathbf{e}_1, \ldots, \mathbf{e}_n}$ is
 
 In {prf:ref}`Prop:LinearCombinations:SpanStandardBasis` we saw that the span of the standard basis of $\mathbb{R}^n$ is equal to the entire space. In {numref}`Sec:MatVecProduct`, we will find out when, for an arbitrary set of vectors $\mathbf{v}_1, \ldots, \mathbf{v}_k$, the collection $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$ contains every vector in $\mathbb{R}^n$.
 
-## Grasple Exercises
+## Grasple exercises
 
 ::::{grasple}
 :iframeclass: dark-light

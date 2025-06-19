@@ -1,12 +1,12 @@
 (Sec:CrossProduct)=
 
-# Cross Product
+# Cross product
 
 In this section we will look at a specific operation on vectors in $\mathbb{R}^3$. This operation is called the _cross product_ and it allows us to construct a vector that is orthogonal to two given vectors. We will use this operation in
 {numref}`Section %s <SubSec:LinesAndPlanes:Plane>`
 to construct a vector that is orthogonal to a given plane in $\mathbb{R}^3$. This will allow us to describe such a plane with a very simple equation.
 
-## Definition and Basic Properties
+## Definition and basic properties
 
 ::::{prf:definition}
 :label: Def:CrossProduct:Crossproduct
@@ -146,7 +146,7 @@ since $\sqrt{(\sin(\theta))^2}=|\sin(\theta)|$.
 
 Notice some similarities between the formula for the length of the cross product and a formula that we saw in the Section [](./Inner_Product.md). There we encountered the equality $\mathbf{u}\ip\mathbf{v} = \norm{\mathbf{u}}\norm{\mathbf{v}} \cos(\theta)$, where $\theta$ was the angle between $\mathbf{u}$ and $\mathbf{v}$.
 
-## Geometrical Properties of the Cross Product
+## Geometrical properties of the cross product
 
 We can derive some interesting geometrical results from {prf:ref}`Prop:CrossProduct:NormCrossProduct`.
 
@@ -393,7 +393,7 @@ $$
 
 ::::
 
-## Grasple Exercises
+## Grasple exercises
 
 ::::{grasple}
 :iframeclass: dark-light
