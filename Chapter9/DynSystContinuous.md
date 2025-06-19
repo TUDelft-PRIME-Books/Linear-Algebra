@@ -654,3 +654,103 @@ which is not a multiple of $\vect{v}$, so such a $\vect{v}$ cannot be an eigenve
 :::
 
 
+## Grasple exercises
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/7627c42a-1586-4a35-a812-d83711f03f9f?id=122172
+:label: grasple_exercise_9_4_01
+:dropdown:
+:description: Solving an initial value problem step-by-step.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/cd9c5ac9-9188-4570-b986-8170957e1ab1?id=122176
+:label: grasple_exercise_9_4_02
+:dropdown:
+:description: A particle moving in a planar force field.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/b581d5c5-0592-4e9c-8187-72133c4581f6?id=122179
+:label: grasple_exercise_9_4_03
+:dropdown:
+:description: Another initial value problem.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/c3329d85-d622-4994-9e90-20d5495fd258?id=122181
+:label: grasple_exercise_9_4_04
+:dropdown:
+:description: General solution of system of first-order differential equations.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/278f8099-f6af-4f8b-858a-8c5222866d19?id=122182
+:label: grasple_exercise_9_4_05
+:dropdown:
+:description: Classify the nature of the origin as an attractor, repeller, saddle point, spiral point or center point.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/a729894b-82f3-45f5-bfb7-c3ebdfd92773?id=122184
+:label: grasple_exercise_9_4_06
+:dropdown:
+:description: Another classification question.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/22a26c36-8bba-4fa6-aa73-75d44f24c9b9?id=122186
+:label: grasple_exercise_9_4_07
+:dropdown:
+:description: One more classification question.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/44d69ff4-2d01-43be-91f8-f55702d39500?id=122189
+:label: grasple_exercise_9_4_08
+:dropdown:
+:description: For which value of a parameter will the origin be a repeller?
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/85284014-7b76-4268-ba0f-a2ae61337a51?id=122190
+:label: grasple_exercise_9_4_09
+:dropdown:
+:description: Classify and visualise.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/9d71b746-2435-4c06-b9a2-635a4d0f9aaf?id=122192
+:label: grasple_exercise_9_4_10
+:dropdown:
+:description: Classify and visualise once more.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/c47751bd-d2d1-44e3-9dc8-4d5c500b5ef2?id=122194
+:label: grasple_exercise_9_4_11
+:dropdown:
+:description: From a visualisation to eigenvalues and eigenvectors.
+
+::::
