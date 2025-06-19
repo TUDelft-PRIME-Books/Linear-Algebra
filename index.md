@@ -1,4 +1,4 @@
-# Linear Algebra
+# Linear algebra
 
 :::{figure} frontpage.png
 :::

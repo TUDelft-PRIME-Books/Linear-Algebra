@@ -1,6 +1,6 @@
 (Sec:SymmetricMat)=
 
-# Symmetric Matrices
+# Symmetric matrices
 
 ## Introduction
 
@@ -990,7 +990,7 @@ In the last subsection we will show how the orthogonal diagonalisation can be re
 
 (SubSec:SymmetricMat:SpectralDecomp)=
 
-## The Spectral Decomposition of a symmetric matrix.
+## The spectral decomposition of a symmetric matrix.
 
 Let's take up an earlier example ({prf:ref}`Ex:SymmetricMat:OrthDiag2x2`) to illustrate what the spectral decomposition is about.
 
@@ -1178,7 +1178,7 @@ $$
 ::::
 
 
-## Grasple Exercises
+## Grasple exercises
 
 
 ::::{grasple}

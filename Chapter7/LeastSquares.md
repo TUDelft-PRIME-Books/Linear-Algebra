@@ -1,6 +1,6 @@
 (Sec:LeastSquares)=
 
-# Least Squares Solutions
+# Least squares solutions
 
 (SubSec:LeastSquares:Introduction)=
 

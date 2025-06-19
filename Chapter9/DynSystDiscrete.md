@@ -1,6 +1,6 @@
 (Sec:DynSystDiscrete)=
 
-# Discrete Dynamical Systems
+# Discrete dynamical systems
 
 ## Introduction
 

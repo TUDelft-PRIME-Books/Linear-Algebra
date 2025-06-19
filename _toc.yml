@@ -14,25 +14,25 @@ parts:
     chapters:
       - file: 'Chapter1/intro.md' # ref_graph: {'ignore':True}
         sections:
-          - file: 'Chapter1/Vectors.md' # ref_graph: {'tag': '1. Vectors, Lines and Planes'}
-          - file: 'Chapter1/Inner_Product.md' # ref_graph: {'tag': '1. Vectors, Lines and Planes'}
-          - file: 'Chapter1/Cross_Product.md' # ref_graph: {'tag': '1. Vectors, Lines and Planes'}
-          - file: 'Chapter1/Lines_and_Planes.md' # ref_graph: {'tag': '1. Vectors, Lines and Planes'}
+          - file: 'Chapter1/Vectors.md' # ref_graph: {'tag': '1. Vectors, lines and planes'}
+          - file: 'Chapter1/Inner_Product.md' # ref_graph: {'tag': '1. Vectors, lines and planes'}
+          - file: 'Chapter1/Cross_Product.md' # ref_graph: {'tag': '1. Vectors, lines and planes'}
+          - file: 'Chapter1/Lines_and_Planes.md' # ref_graph: {'tag': '1. Vectors, lines and planes'}
       - file: 'Chapter2/intro.md' # ref_graph: {'ignore':True}
         sections:
-          - file: 'Chapter2/LinearSystems.md' # ref_graph: {'tag': '2. Systems of Equations'}
-          - file: 'Chapter2/LinearCombinations.md' # ref_graph: {'tag': '2. Systems of Equations'}
-          - file: 'Chapter2/SolutionSets.md' # ref_graph: {'tag': '2. Systems of Equations'}
-          - file: 'Chapter2/MatrixVectorProduct.md' # ref_graph: {'tag': '2. Systems of Equations'}
-          - file: 'Chapter2/LinearIndependence.md' # ref_graph: {'tag': '2. Systems of Equations'}
+          - file: 'Chapter2/LinearSystems.md' # ref_graph: {'tag': '2. Systems of equations'}
+          - file: 'Chapter2/LinearCombinations.md' # ref_graph: {'tag': '2. Systems of equations'}
+          - file: 'Chapter2/SolutionSets.md' # ref_graph: {'tag': '2. Systems of equations'}
+          - file: 'Chapter2/MatrixVectorProduct.md' # ref_graph: {'tag': '2. Systems of equations'}
+          - file: 'Chapter2/LinearIndependence.md' # ref_graph: {'tag': '2. Systems of equations'}
       - file: 'Chapter3/intro.md' # ref_graph: {'ignore':True}
         sections:
-          - file: 'Chapter3/Linear_Transformations.md' # ref_graph: {'tag': '3. Matrix Operations'}
-          - file: 'Chapter3/MatrixOperations.md' # ref_graph: {'tag': '3. Matrix Operations'}
-          - file: 'Chapter3/GeometryofLinearTransformations.md' # ref_graph: {'tag': '3. Matrix Operations'}
-          - file: 'Chapter3/MatrixInverse.md' # ref_graph: {'tag': '3. Matrix Operations'}
-          - file: 'Chapter3/Injectivity_and_surjectivity.md' # ref_graph: {'tag': '3. Matrix Operations'}
-          - file: 'Chapter3/LUdecomp.md' # ref_graph: {'tag': '3. Matrix Operations'}
+          - file: 'Chapter3/Linear_Transformations.md' # ref_graph: {'tag': '3. Matrix operations'}
+          - file: 'Chapter3/MatrixOperations.md' # ref_graph: {'tag': '3. Matrix operations'}
+          - file: 'Chapter3/GeometryofLinearTransformations.md' # ref_graph: {'tag': '3. Matrix operations'}
+          - file: 'Chapter3/MatrixInverse.md' # ref_graph: {'tag': '3. Matrix operations'}
+          - file: 'Chapter3/Injectivity_and_surjectivity.md' # ref_graph: {'tag': '3. Matrix operations'}
+          - file: 'Chapter3/LUdecomp.md' # ref_graph: {'tag': '3. Matrix operations'}
       - file: 'Chapter4/intro.md' # ref_graph: {'ignore':True}
         sections:
           - file: 'Chapter4/Subspaces_of_Rn.md' # ref_graph: {'tag': '4. Subspaces'}
@@ -46,10 +46,10 @@ parts:
           - file: 'Chapter5/DeterminantsExtras.md' # ref_graph: {'tag': '5. Determinants'}
       - file: 'Chapter6/intro.md' # ref_graph: {'ignore':True}
         sections:
-          - file: 'Chapter6/EigenvaluesEigenvectors.md' # ref_graph: {'tag': '6. Eigenvalues and Eigenvectors'}
-          - file: 'Chapter6/CharPolynomial.md' # ref_graph: {'tag': '6. Eigenvalues and Eigenvectors'}
-          - file: 'Chapter6/Diagonalizability.md' # ref_graph: {'tag': '6. Eigenvalues and Eigenvectors'}
-          - file: 'Chapter6/ComplexEigenvalues.md' # ref_graph: {'tag': '6. Eigenvalues and Eigenvectors'}
+          - file: 'Chapter6/EigenvaluesEigenvectors.md' # ref_graph: {'tag': '6. Eigenvalues and eigenvectors'}
+          - file: 'Chapter6/CharPolynomial.md' # ref_graph: {'tag': '6. Eigenvalues and eigenvectors'}
+          - file: 'Chapter6/Diagonalizability.md' # ref_graph: {'tag': '6. Eigenvalues and eigenvectors'}
+          - file: 'Chapter6/ComplexEigenvalues.md' # ref_graph: {'tag': '6. Eigenvalues and eigenvectors'}
       - file: 'Chapter7/intro.md' # ref_graph: {'ignore':True}
         sections:
           - file: 'Chapter7/OrthoComp.md' # ref_graph: {'tag': '7. Orthogonality'}
@@ -58,15 +58,15 @@ parts:
           - file: 'Chapter7/LeastSquares.md' # ref_graph: {'tag': '7. Orthogonality'}
       - file: 'Chapter8/intro.md' # ref_graph: {'ignore':True}
         sections:
-          - file: 'Chapter8/SymmetricMatrices.md' # ref_graph: {'tag': '8. Symmetric Matrices'}
-          - file: 'Chapter8/QuadraticForms.md' # ref_graph: {'tag': '8. Symmetric Matrices'}
-          - file: 'Chapter8/SingularValueDecomp.md' # ref_graph: {'tag': '8. Symmetric Matrices'}
+          - file: 'Chapter8/SymmetricMatrices.md' # ref_graph: {'tag': '8. Symmetric matrices'}
+          - file: 'Chapter8/QuadraticForms.md' # ref_graph: {'tag': '8. Symmetric matrices'}
+          - file: 'Chapter8/SingularValueDecomp.md' # ref_graph: {'tag': '8. Symmetric matrices'}
       - file: 'Chapter9/intro.md' # ref_graph: {'ignore':True}
         sections:
-          - file: 'Chapter9/DynSystDiscrete.md' # ref_graph: {'tag': '9. Dynamical Systems'}
-          - file: 'Chapter9/MarkovChains.md' # ref_graph: {'tag': '9. Dynamical Systems','refs':['Chapter9/DynSystDiscrete.md']}
-          - file: 'Chapter9/PowerMethod.md' # ref_graph: {'tag': '9. Dynamical Systems'}
-          - file: 'Chapter9/DynSystContinuous.md' # ref_graph: {'tag': '9. Dynamical Systems'}
+          - file: 'Chapter9/DynSystDiscrete.md' # ref_graph: {'tag': '9. Dynamical systems'}
+          - file: 'Chapter9/MarkovChains.md' # ref_graph: {'tag': '9. Dynamical systems','refs':['Chapter9/DynSystDiscrete.md']}
+          - file: 'Chapter9/PowerMethod.md' # ref_graph: {'tag': '9. Dynamical systems'}
+          - file: 'Chapter9/DynSystContinuous.md' # ref_graph: {'tag': '9. Dynamical systems'}
   - caption: Appendices # ref_graph: {'ignore':True}
     numbered: True
     chapters:

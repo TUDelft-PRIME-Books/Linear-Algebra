@@ -1,6 +1,6 @@
 (Sec:Gram-Schmidt)=
 
-# The Gram-Schmidt Process
+# The Gram-Schmidt process
 
 ## Introduction
 

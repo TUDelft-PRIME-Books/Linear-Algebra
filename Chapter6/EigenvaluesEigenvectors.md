@@ -1,6 +1,6 @@
 (Sec:EV-basics)=
 
-# Definitions and Examples
+# Definitions and examples
 
 ## Introduction
 

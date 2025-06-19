@@ -1,8 +1,8 @@
-# Markov Chains
+# Markov chains
 
 Suppose we have, say, three brands competing with each other in some niche of the market. Every month, a certain percentage of customers changes brands. What percentage of the market will each brand control after a given number of months? What will be the market share of each brand in the long run? To answer these kind of questions, we need Markov chains.
 
-## Markov Chains
+## Markov chains
 
 Assume we have a certain population divided into $n$ classes, say, by the brand they use. For every person using brand $i$, there is a certain chance $p_{ji}$ that he ends up using brand $j$ after a month. If we assume for the moment that nobody leaves or enters the population, every one must end up using _some_ brand. So $\sum_{j=1}^{n}p_{ji}=1$. Keeping in mind that every probability is a number between $0$ and $1$, we get to the following definition.
 
@@ -139,7 +139,7 @@ and so on. We can see that brand A consistently wins market share at the cost of
 
 :::
 
-## Steady States
+## Steady states
 
 Consider again the simple model of {prf:ref}`Ex:MarkovChains:MarkovChain`. What will happen if this model runs for a long time? We expect that C will lose market share to A, but how much? When, if ever, will the process stabilise? These are the questions we will deal with in this section.
 
@@ -392,7 +392,7 @@ so the distribution after $50$ moves is already quite close to the steady state.
 
 
 
-## Grasple Exercises
+## Grasple exercises
 
 
 

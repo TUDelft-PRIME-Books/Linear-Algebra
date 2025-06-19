@@ -1,6 +1,6 @@
 (Sec:DynSystContinuous)=
 
-# Continuous Dynamical Systems
+# Continuous dynamical systems
 
 In this section, we will deal with similar problems as in {numref}`Section %s <Sec:DynSystDiscrete>`. There, we were concerned with discrete time. That is, we assumed a certain initial state $\vect{x}_{0}$ at time $t=0$, then predicted the next state $\vect{x}_{1}$ on time $t=1$, $\vect{x}_{2}$ on time $t=2$ and so on. But just as often we want to deal with continuous time. That is, there is no *next* state but rather a state for every positive real number. 
 

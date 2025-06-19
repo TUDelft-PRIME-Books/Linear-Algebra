@@ -1,8 +1,8 @@
 (Sec:OrthoBase)=
 
-# Orthogonal and Orthonormal bases
+# Orthogonal and orthonormal bases
 
-## Orthogonal and Orthonormal bases
+## Orthogonal and orthonormal bases
 
 :::{prf:definition}
 
@@ -98,7 +98,7 @@ If $\vect{v}_{1},...,\vect{v}_{k}$ is orthonormal, then $\vect{v}_{j}\ip\vect{v}
 
 In this theorem, it is vital that $\vect{v}$ is known to be in $V$. If $\vect{v}$ is not in $V$, then it can definitely not be expressed as a linear combination of basis elements of $V$. However, the right hand side appearing in {prf:ref}`Thm:OrthoBase:WeightsOrthoBase` is still very important. It comes back in {prf:ref}`Thm:OrthoBase:OrthoDecomp`.
 
-## Orthogonal Projections Revisited
+## Orthogonal projections revisited
 
 In {numref}`Subsec:GeomLinTrans:Proj`, we have already briefly touched upon orthogonal projections in higher dimension. Now that we know about orthogonal bases, we can make this more concrete. Let us start with a general definition of the orthogonal projection.
 
@@ -380,7 +380,7 @@ $$
 
 :::
 
-## Orthogonal Matrices
+## Orthogonal matrices
 
 Square matrices for which the columns are orthonormal turn out to be of particular importance. For instance, they turn up in numerical linear algebra, where using them can speed up certain computations considerably.
 
@@ -556,7 +556,7 @@ We know that $A$ is orthogonal if and only if $A^{T}A=I_{n}$. But this implies $
 
 :::
 
-## Grasple Exercises
+## Grasple exercises
 
 ::::{grasple}
 :iframeclass: dark-light

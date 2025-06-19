@@ -1,10 +1,10 @@
 (Sec:QuadraticForm)=
 
-# Quadratic Forms
+# Quadratic forms
 
 (Subsec:Terminology)=
 
-## Introduction and Terminology
+## Introduction and terminology
 
 The simplest functions from $\R^n$ to $\R$ are linear functions
 
@@ -815,7 +815,7 @@ Check that the vector you found in iii. is an eigenvector of the matrix of the q
 
 (Subsec:ConicSections)=
 
-## Conic Sections
+## Conic sections
 
 A _conic section_ or _conic_ is a curve that results when a circular cone is intersected with a plane.  
 {numref}`Figure %s <Fig:QuadForms:ConeWithPlanes>` shows the different shapes when the plane is *not* going through the apex.
@@ -1239,7 +1239,7 @@ The  ellipse with its principal axes.
 ::::
 
 
-## Grasple Exercises
+## Grasple exercises
 
 ::::{grasple}
 :iframeclass: dark-light

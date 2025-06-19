@@ -1,14 +1,8 @@
 # in _config.yml
-title: "Linear Algebra"
-author: 'a team of lecturers and developers from the Delft Institute of Applied Mathematics from the TU Delft University of Technology.</br>
-        <div style="font-size:150%;font-weight:bold">Have you spotted a mistake or an error on this page?
-        Click <a id="mailer">here</a> to tell us!</div>
-        <script>
-        var mailer = document.getElementById("mailer");
-        mailer.href = "mailto:openlinearalgebrabook@tudelft.nl?subject=Mistake/Error found at " + window.location.href
-        </script>'
+title: "Linear algebra"
+author: 'a team of lecturers and developers from the Delft Institute of Applied Mathematics from the TU Delft University of Technology.'
 only_build_toc_files: true
-copyright: "2024"
+copyright: "2025"
 
 html:
   theme_options:
@@ -41,7 +35,7 @@ sphinx:
       repository_url: "https://gitlab.ewi.tudelft.nl/prime/openlabook"
       use_repository_button: true
       logo:
-        text: Linear Algebra
+        text: Linear algebra
       extra_footer: <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
     html_static_path: 
       - _static

@@ -1,8 +1,8 @@
 (Sec:OrthoComp)=
 
-# Orthogonal Complements
+# Orthogonal complements
 
-## The Orthogonal Complement
+## The orthogonal complement
 
 In this section, we will introduce the orthogonal complement of a subspace. This concept will help us define orthogonal projections easily.
 
@@ -252,7 +252,7 @@ $$
 
 :::
 
-## The Orthogonal Decomposition
+## The orthogonal decomposition
 
 One particular application of the orthogonal complement is the following theorem, which allows us to write, for an arbitrary subspace $V$, any vector $v$ as a part within $V$ and a part orthogonal to $V$. 
 
@@ -369,7 +369,7 @@ but $\vect{u}_{V}\cdot\vect{u}_{V^{\bot}}=0$ since $\vect{u}_{V^{\bot}}$ is orth
 
 :::
 
-## Grasple Exercises
+## Grasple exercises
 
 
 ::::{grasple}

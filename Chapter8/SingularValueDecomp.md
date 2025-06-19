@@ -1,6 +1,6 @@
 (Sec:SingValDec)=
 
-# Singular Value Decomposition (SVD)
+# Singular value decomposition
 
 We have seen already several ways to factorise matrices. In {numref}`Sec:LUdecomp`, we studied the $LU$ and the $PLU$ factorisations, and in  {numref}`Sec:Gram-Schmidt:QRdecomp`
 we laid the QR Decomposition on the table. In {numref}`Sec:SymmetricMat` we showed that every symmetric (square) matrix $A$ can be written as  $A = QDQ^{-1} = QDQ^T$. In this section it is in a sense this last decomposition we will generalise to non-symmetric matrices, and even to non-square matrices.
@@ -10,7 +10,7 @@ The last two subsections  will be devoted to understanding the SVD in a geometri
 
 (Subsec:SVD:Definition)= 
 
-## Definition of the Singular Value Decomposition
+## Definition of the singular value decomposition
 
 Let  $A$ be an $m\times n$ matrix, and let $p$ be the minimum of $m$ and $n$. 
 
@@ -221,11 +221,11 @@ The main goal is to show that a singular value decomposition always exists, and,
 
 (Subsec:SVD:Existence)= 
 
-## Existence of a Singular Value Decomposition
+## Existence of a singular value decomposition
 
 We start with an important observation that explains the central role of the matrix $A^TA$ in the algorithm to come.
 
-::::{prf:proposition} Computing the Singular Values
+::::{prf:proposition} Computing the sngular values
 :label: Prop:SVD:singularvalues
 
 Let $A$ be an $m\times n$ matrix.  
@@ -1043,7 +1043,7 @@ We expect $A_3$ to be a good approximation of $A$.
 
 
 
-## Grasple Exercises
+## Grasple exercises
 
 
 

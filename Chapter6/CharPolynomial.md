@@ -1,6 +1,6 @@
 (Sec:EV:CharPoly)=
 
-# The Characteristic Polynomial
+# The characteristic polynomial
 
 Until now we have seen how we can check whether a real number is an eigenvalue, but we have not come up with a method to actually find the eigenvalues (better than just trying all real numbers one by one ...).
 
