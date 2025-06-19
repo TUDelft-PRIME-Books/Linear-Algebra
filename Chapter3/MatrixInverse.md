@@ -1,6 +1,6 @@
 (Sec:MatrixInv)=
 
-# The Inverse of a Matrix
+# The inverse of a matrix
 
 ## Introduction
 

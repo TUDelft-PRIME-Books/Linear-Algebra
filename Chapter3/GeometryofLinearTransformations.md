@@ -1,6 +1,6 @@
 (Sec:GeomLinTrans)=
 
-# Some Important Classes of Linear Transformations
+# Some important classes of linear transformations
 
 We have seen in {numref}`Subsec:LinTrafo:LinTrafo` that any matrix corresponds to a linear transformation and that vice versa every linear transformation corresponds to a matrix. In this section, we will study some particularly noteworthy classes of linear transformations in more depth.
 
@@ -533,7 +533,7 @@ $$
 
 In the plane, you can only rotate around the origin. Things get considerably more complicated if we move to $\mathbb{R}^{3}$, because there you can rotate around any arbitrary line. We will not get into that here.
 
-## Shear Transformations
+## Shear transformations
 
 The last class of linear transformation we will deal with in this section are the shear transformations. These are transformations which fix a certain line through the origin, $\mathcal{L}$ say, and shift all other points parallel to $\mathcal{L}$.
 
@@ -698,7 +698,7 @@ Shear transformations are widely used to model this kind of displacement of laye
 A shear transformation applied to a stack of cards.
 ::::
 
-## Grasple Exercises
+## Grasple exercises
 
 ::::{grasple}
 :iframeclass: dark-light

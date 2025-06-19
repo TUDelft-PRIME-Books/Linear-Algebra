@@ -1529,7 +1529,7 @@ To be filled in later.
 -->
 
 
-## Grasple Exercises
+## Grasple exercises
 
 ::::::{grasple}
 :iframeclass: dark-light
@@ -1625,7 +1625,8 @@ To be filled in later.
 :description: To solve a system $A\vect{x} = \vect{b}$ using $ PA = LU$.
 
 ::::::
-## Efficiency Issues
+
+## Efficiency issues
 
 One way to measure the performance of an algorithm is to count the number of arithmetic operations <!-- [^flopnote] -->
 that are necessary for solving a problem. By arithmetic operations we will take into account in this setting additions, multiplications and divisions. 

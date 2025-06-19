@@ -1,6 +1,6 @@
 (Sec:MatrixOps)=
 
-# Matrix Operations
+# Matrix operations
 
 ## Introduction
 

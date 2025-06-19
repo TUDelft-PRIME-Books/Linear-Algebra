@@ -1,6 +1,6 @@
 (Sec:BasisChange)=
 
-# Change of Basis
+# Change of basis
 
 ## Introduction
 

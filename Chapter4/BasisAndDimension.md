@@ -1,6 +1,6 @@
 (Sec:BasisDim)=
 
-# Basis and Dimension
+# Basis and dimension
 
 ## Introduction
 

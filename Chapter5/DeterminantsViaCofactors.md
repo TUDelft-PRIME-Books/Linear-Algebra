@@ -1,6 +1,6 @@
 (Sec:DeterminantsViaCofactors)=
 
-# Determinants via Cofactor Expansion
+# Determinants via cofactor expansion
 
 (Sec:DetCofactors:Definition)=
 
