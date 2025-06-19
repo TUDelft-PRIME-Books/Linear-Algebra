@@ -670,7 +670,7 @@ The following exercises are about the $QR$ decomposition
 :url: https://embed.grasple.com/exercises/2d9d5c92-fb8e-45d6-be34-9846588cf560?id=116629
 :label: grasple_exercise_7_3_14
 :dropdown:
-:description: Finding the orthogonal projection onto $\operatorname{Col}(A)$ via a QR-decomposition.
+:description: Finding the orthogonal projection onto $\operatorname{Col}(A)$ via a $QR$-decomposition.
 
 ::::
 
