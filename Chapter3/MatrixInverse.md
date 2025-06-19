@@ -1635,7 +1635,7 @@ The remaining exercises have a more theoretic flavour.
 ::::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/2d363522-682f-4ef1-bd9f-7e0d1de30136?id=116691
-:label: grasple_exercise_3_4_22
+:label: grasple_exercise_3_4_23new
 :dropdown:
 :description: Extricate X from an equation containing A,B,X  and an inverse.
 ::::::
