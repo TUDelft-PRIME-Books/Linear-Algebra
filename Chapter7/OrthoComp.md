@@ -145,7 +145,7 @@ As we have seen in {numref}`Sec:SubspacesRn`, the column space and null space of
 :::{prf:proposition}
 :label: Prop:OrthoComp:OrthoComplementNulA
 
-For any matrix $A$ we have $\mathrm{Col}(A^{T})^{\bot}=\mathrm{Nul}(A)$ and $\mathrm{Col}(A)^{\bot}=\mathrm{Nul}(A^{T})$.
+For any matrix $A$ we have $\operatorname{Col}(A^{T})^{\bot}=\operatorname{Nul}(A)$ and $\operatorname{Col}(A)^{\bot}=\operatorname{Nul}(A^{T})$.
 
 :::
 
@@ -156,13 +156,13 @@ Note that the second claim is easily derived from the first by substituting $A^{
 
 $$A\vect{x}=\begin{pmatrix}\vect{r}_{1}\vect{x}\\\vdots\\\vect{r}_{n}\vect{x}\end{pmatrix}=\begin{pmatrix}\vect{r}_{1}^{T}\ip\vect{x}\\\vdots\\\vect{r}_{n}^{T}\ip\vect{x}\end{pmatrix}.$$
 
-Now, $\vect{x}$ is in $\mathrm{Nul}(A)$ precisely when $A\vect{x}=\vect{0}$ or, in other words, when $\vect{r}_{i}^{T}\ip\vect{x}=0$ for any $i$. Since the set $\left\{\vect{r}_{1}^{T},..,\vect{r}_{n}^{T}\right\}$ spans $\mathrm{Col}(A^{T})$, this is equivalent to $\vect{x}$ being in $\mathrm{Col}(A^{T})^{\bot}$.
+Now, $\vect{x}$ is in $\operatorname{Nul}(A)$ precisely when $A\vect{x}=\vect{0}$ or, in other words, when $\vect{r}_{i}^{T}\ip\vect{x}=0$ for any $i$. Since the set $\left\{\vect{r}_{1}^{T},..,\vect{r}_{n}^{T}\right\}$ spans $\operatorname{Col}(A^{T})$, this is equivalent to $\vect{x}$ being in $\operatorname{Col}(A^{T})^{\bot}$.
 
 :::
 
 :::{prf:remark}
 
-Since, for any matrix $A$, the rows of $A$ are the columns of $A^{T}$, $\mathrm{Row}(A)=\mathrm{Col}(A^{T})$. {prf:ref}`Prop:OrthoComp:OrthoComplementNulA` then implies that $\mathrm{Row}(A)^{\bot}=\mathrm{Nul}(A)$.
+Since, for any matrix $A$, the rows of $A$ are the columns of $A^{T}$, $\operatorname{Row}(A)=\operatorname{Col}(A^{T})$. {prf:ref}`Prop:OrthoComp:OrthoComplementNulA` then implies that $\operatorname{Row}(A)^{\bot}=\operatorname{Nul}(A)$.
 
 :::
 
@@ -215,7 +215,7 @@ $$
 so
 
 $$
-V^{\bot}=\mathrm{Nul}(A^{T})=\left\{
+V^{\bot}=\operatorname{Nul}(A^{T})=\left\{
     \begin{pmatrix}
     -17x_{3}+28x_{4}+19x_{5}\\
     6x_{3}-11x_{4}-7x_{5}\\
@@ -238,16 +238,16 @@ If $V$ is a subspace of $\R^{n}$, then $\dim(V)+\dim(V^{\bot})=n$.
 :::{admonition} Proof of&nbsp;{prf:ref}`Prop:OrthoComp:OrthoComplementSum`
 :class: tudproof
 
-Let $A$ be a matrix for which the columns are a basis of $V$. Then $n$ is the number of rows of $A$ which in turn is the number of columns of $A^{T}$. By {prf:ref}`Thm:BasisDim:DimensionTheorem`, $\dim(\mathrm{Col}(A^{T}))+\dim(\mathrm{Nul}(A^{T}))$ is the number of columns of $A^{T}$, which is the number of rows of $A$. Using {prf:ref}`Prop:OrthoComp:OrthoComplementNulA`, this yields
+Let $A$ be a matrix for which the columns are a basis of $V$. Then $n$ is the number of rows of $A$ which in turn is the number of columns of $A^{T}$. By {prf:ref}`Thm:BasisDim:DimensionTheorem`, $\dim(\operatorname{Col}(A^{T}))+\dim(\operatorname{Nul}(A^{T}))$ is the number of columns of $A^{T}$, which is the number of rows of $A$. Using {prf:ref}`Prop:OrthoComp:OrthoComplementNulA`, this yields
 
 $$
-n=\dim(\mathrm{Col}(A^{T}))+\dim(\mathrm{Nul}(A^{T}))=\dim(\mathrm{Col}(A^{T}))+\dim(\mathrm{Col}(A)^{\bot}).
+n=\dim(\operatorname{Col}(A^{T}))+\dim(\operatorname{Nul}(A^{T}))=\dim(\operatorname{Col}(A^{T}))+\dim(\operatorname{Col}(A)^{\bot}).
 $$
 
-Using {prf:ref}`Prop:BasisDim:EqualDimRowColSpace` and $\mathrm{Row}(A^{T})=\mathrm{Col}(A)$, we find therefore:
+Using {prf:ref}`Prop:BasisDim:EqualDimRowColSpace` and $\operatorname{Row}(A^{T})=\operatorname{Col}(A)$, we find therefore:
 
 $$
-n=\dim(\mathrm{Row}(A^{T}))+\dim(\mathrm{Col}(A)^{\bot})=\dim(\mathrm{Col}(A))+\dim(\mathrm{Col}(A)^{\bot}).
+n=\dim(\operatorname{Row}(A^{T}))+\dim(\operatorname{Col}(A)^{\bot})=\dim(\operatorname{Col}(A))+\dim(\operatorname{Col}(A)^{\bot}).
 $$
 
 :::

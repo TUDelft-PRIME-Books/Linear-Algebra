@@ -25,7 +25,7 @@ For an $n\times n$ matrix $A$, the following are equivalent:
 \item Every column of $A$ is a pivot column.
 \item The columns of $A$ span all of $\R^{n}$.
 \label{It:Appendices:InvDefColSpanRn}
-\item $\mathrm{rank}{A}=n$.
+\item $\operatorname{rank}{A}=n$.
 \label{It:Appendices:InvIffFullRank}
 \item $\det(A)\neq 0$.
 \label{It:Appendices:InvIffDetNeq0}

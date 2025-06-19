@@ -669,7 +669,7 @@ Step 1.  $B^TB = AA^T = \begin{pmatrix}
 Step 2.  Computing the characteristic polynomial is already quite a task here, but it is doable.  The result: 
 
 $$
-\det(B^TB - \lambda \mathrm{I}) = \lambda^3 -23\lambda^2 +140 \lambda -196.
+\det(B^TB - \lambda {I}) = \lambda^3 -23\lambda^2 +140 \lambda -196.
 $$
 
 Without a computer we would be stuck. How to find the zeros of this polynomial? However, we have come up with a *very*  special matrix $A$ here,

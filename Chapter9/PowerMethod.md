@@ -781,7 +781,7 @@ If a (real) matrix $A$ has eigenvalues $\lambda_{1,2} = a \pm bi$  as eigenvalue
 Let us illustrate the procedure for the matrix $A = \begin{pmatrix}3 & 0 & 0 \\ 1 & 1 & 8 \\ 0 & -2 & 1 \end{pmatrix}$ from {prf:ref}`Ex:PowerMethod:ComplexEx1`.  In the example it was mentioned that $A$ has the eigenvalues $3$ and $1\pm 4i$.  Let now $B$ be the matrix
 
 $$
-  B = A + (2i)\mathrm{I} = \begin{pmatrix}3+2i & 0 & 0 \\ 1 & 1+2i & 8 \\ 0 & -2 & 1+2i \end{pmatrix}.
+  B = A + (2i){I} = \begin{pmatrix}3+2i & 0 & 0 \\ 1 & 1+2i & 8 \\ 0 & -2 & 1+2i \end{pmatrix}.
 $$
 
 The actual value of $B$ is not so important, but what is important is that $B$ has the eigenvalues

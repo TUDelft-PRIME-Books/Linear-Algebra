@@ -1134,7 +1134,7 @@ $$
 \text{i.   and  ii.} \quad \Longrightarrow \quad   \text{iii.}
 $$
 
-Well, if $\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace$ is linearly independent and spans $S$, then it is a basis for $S$. Since all bases of $S$ contain the same number $k = $ dim $S$ vectors, it follows that $\ell = k$.
+Well, if $\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace$ is linearly independent and spans $S$, then it is a basis for $S$. Since all bases of $S$ contain the same number $k =\operatorname{dim}S$ vectors, it follows that $\ell = k$.
 
 Next, let us prove
 
@@ -1726,7 +1726,7 @@ $$
 Suppose  $A$ is an $m$ x $n$ matrix and $B$ an $n$ x $p$ matrix,  so $AB$ is an $m$ x $p$ matrix. <BR> 
 First note that if $\vect{v}$ lies in Nul $B$,  thus $B\vect{v} = \vect{0}$, <BR>
 then $AB\vect{v} = A(B\vect{v}) = A\vect{0} = \vect{0}$,  so  $\vect{v} \in $ Nul $AB$.  <BR>
-Thus  Nul $B$  lies in Nul $AB$, which gives that  dim Nul $B \leq $  dim Nul $AB$. <BR>
+Thus  Nul $B$  lies in Nul $AB$, which gives that  $\operatorname{dim}\operatorname{Nul}B \leq   \operatorname{dim}\operatorname{Nul} AB$. <BR>
 Consequently, by the rank theorem   ({prf:ref}`Thm:BasisDim:RankThm`),
  
  $$
@@ -1886,7 +1886,7 @@ $B$ is an $n\times m$ matrix?
 :url: https://embed.grasple.com/exercises/789d912e-6ac2-4f48-b92b-11ab33d5c949?id=70655
 :label: grasple_exercise_4_2_10
 :dropdown:
-:description: To find rank$(A)$ and dim Nul$(A)$ for a given matrix.
+:description: To find $\operatorname{rank}(A)$ and $\operatorname{dim}\operatorname{Nul}(A)$ for a given matrix.
 
 ::::::
 
@@ -1895,7 +1895,7 @@ $B$ is an $n\times m$ matrix?
 :url: https://embed.grasple.com/exercises/610e51bc-c62f-4da2-81f3-eeef106bba84?id=83409
 :label: grasple_exercise_4_2_11
 :dropdown:
-:description: Find rank$(A)$ for a matrix $A$ containing a parameter $h$.
+:description: Find $\operatorname{rank}(A)$ for a matrix $A$ containing a parameter $h$.
 
 ::::::
 
@@ -1904,7 +1904,7 @@ $B$ is an $n\times m$ matrix?
 :url: https://embed.grasple.com/exercises/98aae0f1-3cd9-43d8-aa9f-7c884f2c9527?id=83411
 :label: grasple_exercise_4_2_12
 :dropdown:
-:description: Find rank$(A)$ for a matrix $A$ containing a parameter $h$.
+:description: Find $\operatorname{rank}(A)$ for a matrix $A$ containing a parameter $h$.
 
 ::::::
 
@@ -1987,7 +1987,7 @@ The exercises below are more theoretical.
 :url: https://embed.grasple.com/exercises/e8051821-b278-4895-ad3e-bc40ba99e1dc?id=70659
 :label: grasple_exercise_4_2_21
 :dropdown:
-:description: Does there exist a $3 \times 4$ matrix with dim Nul$(A) =$ dim Col$(A) = 2$?
+:description: Does there exist a $3 \times 4$ matrix with $\operatorname{dim}\operatorname{Nul}(A) = \operatorname{dim}\operatorname{Col}(A) = 2$?
 
 ::::::
 
