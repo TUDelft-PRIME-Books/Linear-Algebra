@@ -20,7 +20,7 @@ Using the orthogonal projections defined
 in {prf:ref}`Dfn:InnerProduct:OrthoProjectionOntoVector`, this can be generalised as follows. If $\mathbf{v}$ if a vector in $\mathbb{R}^{n}$, then
 
 $$
-T_{\mathbf{v}}:\mathbb{R}^{n}\to\mathbb{R}^{n},\quad\mathbf{w}\mapsto\text{proj}_{\mathbf{v}}(\mathbf{w})
+T_{\mathbf{v}}:\mathbb{R}^{n}\to\mathbb{R}^{n},\quad\mathbf{w}\mapsto\operatorname{proj}_{\mathbf{v}}(\mathbf{w})
 $$
 
 is the linear transformation which projects the vector $\mathbf{w}$ onto the line through $\mathbf{v}$. In other words, it maps a vector $\mathbf{w}$ to the closest multiple of $\mathbf{v}$. This transformation with
@@ -277,7 +277,7 @@ The reflection along the line $\mathcal{L}$ in the direction of $\mathbf{v}=\beg
 
 So far so good. But how do we find the reflection over an arbitrary line $\mathcal{L}$? It turns out that the projections we have seen in Section {ref}`Subsec:GeomLinTrans:Proj` will help us out. Consider a line $\mathcal{L}$ and a vector $\mathbf{v}$ not in $\mathcal{L}$, as in {numref}`Figure %s <Fig:GeomLinTrans:ReflFromDoubleProj>`. In order to reflect $\mathbf{v}$ over $\mathcal{L}$, we first move it to the closest point on $\mathcal{L}$ and then move it the same distance again in the same direction.
 
-The closest point to $\mathbf{v}$ on $\mathcal{L}$ is the orthogonal projection $\text{proj}_{\mathcal{L}}(\mathbf{v})$. To get from $\mathbf{v}$ to the closest point on $\mathcal{L}$, we therefore have to subtract $\mathbf{v}-\text{proj}_{\mathcal{L}}(\mathbf{v})$ from $\mathbf{v}$ (See {numref}`Figure %s <Fig:GeomLinTrans:ReflFromDoubleProj>`.). So in order to reflect $\mathbf{v}$ over $\mathcal{L}$, we have to subtract the vector $\mathbf{v}-\text{proj}_{\mathcal{L}}(\mathbf{v})$ twice from our starting vector $\mathbf{v}$. This means that any $\mathbf{v}$ is mapped to $2\proj_{\mathcal{L}}(\mathbf{v})-\mathbf{v}$, so if we write $T$ for this transformation we find
+The closest point to $\mathbf{v}$ on $\mathcal{L}$ is the orthogonal projection $\operatorname{proj}_{\mathcal{L}}(\mathbf{v})$. To get from $\mathbf{v}$ to the closest point on $\mathcal{L}$, we therefore have to subtract $\mathbf{v}-\operatorname{proj}_{\mathcal{L}}(\mathbf{v})$ from $\mathbf{v}$ (See {numref}`Figure %s <Fig:GeomLinTrans:ReflFromDoubleProj>`.). So in order to reflect $\mathbf{v}$ over $\mathcal{L}$, we have to subtract the vector $\mathbf{v}-\operatorname{proj}_{\mathcal{L}}(\mathbf{v})$ twice from our starting vector $\mathbf{v}$. This means that any $\mathbf{v}$ is mapped to $2\proj_{\mathcal{L}}(\mathbf{v})-\mathbf{v}$, so if we write $T$ for this transformation we find
 
 $$
 T(\mathbf{v})=2\proj_{\mathcal{L}}(\mathbf{v})-\mathbf{v}=(2\proj_{\mathcal{L}}-I)\mathbf{v}.
@@ -293,13 +293,13 @@ Reflection along the line $\mathcal{L}$ can be seen as the transformation $2\pro
 Keeping this in mind, it makes sense to define general reflections as follows.
 
 ::::::{prf:definition}
-If $T:\mathbb{R}^{n}\to\mathbb{R}^{n}$ is the orthogonal projection on $\text{range}(T)$ with standard matrix $P$, then
+If $T:\mathbb{R}^{n}\to\mathbb{R}^{n}$ is the orthogonal projection on $\operatorname{range}(T)$ with standard matrix $P$, then
 
 $$
 S:\mathbb{R}^{n}\to\mathbb{R}^{n},\mathbf{v}\mapsto (2P-I)\mathbf{v}
 $$
 
-is the **reflection** over $\text{range}(T)$.
+is the **reflection** over $\operatorname{range}(T)$.
 
 ::::::
 

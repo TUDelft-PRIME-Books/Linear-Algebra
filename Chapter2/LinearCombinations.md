@@ -170,7 +170,7 @@ The span of a single non-zero vector.
 Let $\mathbf{u}$ and $\mathbf{v}$ be two non-zero vectors in $\mathbb{R}^3$, as depicted in {numref}`Figure  %s <Fig:LinearCombinations:SpanTwoVectors>`. What does the span of these vectors look like? By definition, $\Span{\mathbf{u}, \mathbf{v}}$ contains all linear combinations of $\mathbf{u}$ and $\mathbf{v}$. Each of these linear combinations is of the form
 
 $$
-x_1\mathbf{u}+x_2\mathbf{v} \quad \textrm{$x_1$, $x_2$ in $\mathbb{R}$}.
+x_1\mathbf{u}+x_2\mathbf{v} \quad \text{$x_1$, $x_2$ in $\mathbb{R}$}.
 $$
 
 This looks like the parametric vector equation of a plane. Since the span must contain the zero vector we find that we obtain a plane through the origin like in {numref}`Figure  %s <Fig:LinearCombinations:SpanTwoVectors>`.

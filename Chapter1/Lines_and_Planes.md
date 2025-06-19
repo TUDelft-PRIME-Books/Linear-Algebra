@@ -142,7 +142,7 @@ where $r$ is a real number.
 If $\mathbf{v_0}=\begin{pmatrix} x_0 \\ y_0 \end{pmatrix}$ is a vector on the line $\mathcal{L}$ and $\mathbf{u}=\begin{pmatrix} a \\ b \end{pmatrix}$ is a directional vector of $\mathcal{L}$, then the equation
 
 $$
-\begin{pmatrix} x \\ y \end{pmatrix}=\begin{pmatrix} x_0 \\ y_0 \end{pmatrix}+r\begin{pmatrix} a \\ b \end{pmatrix} \qquad \textrm{$r$ in $\mathbb{R}$}
+\begin{pmatrix} x \\ y \end{pmatrix}=\begin{pmatrix} x_0 \\ y_0 \end{pmatrix}+r\begin{pmatrix} a \\ b \end{pmatrix} \qquad \text{$r$ in $\mathbb{R}$}
 $$
 
 will be called a **parametric vector equation** of $\mathcal{L}$.
@@ -160,7 +160,7 @@ $$
 If we use these vectors, then we find the following parametric equation.
 
 $$
-\begin{pmatrix} x \\ y \end{pmatrix}=\begin{pmatrix} 2 \\ 1 \end{pmatrix}+r\begin{pmatrix} 4 \\ 3 \end{pmatrix} \qquad \textrm{$r$ in $\mathbb{R}$.}
+\begin{pmatrix} x \\ y \end{pmatrix}=\begin{pmatrix} 2 \\ 1 \end{pmatrix}+r\begin{pmatrix} 4 \\ 3 \end{pmatrix} \qquad \text{$r$ in $\mathbb{R}$.}
 $$
 
 ::::
@@ -218,7 +218,7 @@ will be called a **normal equation** of $\mathcal{L}$.
 The line $\mathcal{L}_1$ can be described by the following parametric vector equation.
 
 $$
-\begin{pmatrix} x \\ y \end{pmatrix}=\begin{pmatrix} 5 \\ 0 \end{pmatrix}+r\begin{pmatrix} -2 \\ 1 \end{pmatrix} \qquad \textrm{$r$ in $\mathbb{R}$.}
+\begin{pmatrix} x \\ y \end{pmatrix}=\begin{pmatrix} 5 \\ 0 \end{pmatrix}+r\begin{pmatrix} -2 \\ 1 \end{pmatrix} \qquad \text{$r$ in $\mathbb{R}$.}
 $$
 
 Let us try to find a Cartesian equation for the line $\mathcal{L}$ through the point $P=(1, 7)$ and orthogonal to $\mathcal{L}_1$. We will start with a normal equation and then derive a Cartesian equation from that.
@@ -417,7 +417,7 @@ where $r$ and $s$ are arbitrary real numbers.
 If $\mathbf{v_0}=\begin{pmatrix} x_0 \\ y_0 \\ z_0 \end{pmatrix}$ is a vector on the plane $\mathcal{P}$ and $\mathbf{u_1}=\begin{pmatrix} a_1 \\ b_1 \\ c_1 \end{pmatrix}$ and $\mathbf{u_2}=\begin{pmatrix} a_2 \\ b_2 \\ c_2 \end{pmatrix}$ are directional vectors of $\mathcal{P}$ that are not parallel, then the equation
 
 $$
-\begin{pmatrix} x \\ y \\ z \end{pmatrix}=\begin{pmatrix} x_0 \\ y_0 \\ z_0 \end{pmatrix}+r\begin{pmatrix} a_1 \\ b_1 \\ c_1  \end{pmatrix}+s\begin{pmatrix} a_2 \\ b_2 \\ c_2  \end{pmatrix} \qquad \textrm{$r, s$ in $\mathbb{R}$}
+\begin{pmatrix} x \\ y \\ z \end{pmatrix}=\begin{pmatrix} x_0 \\ y_0 \\ z_0 \end{pmatrix}+r\begin{pmatrix} a_1 \\ b_1 \\ c_1  \end{pmatrix}+s\begin{pmatrix} a_2 \\ b_2 \\ c_2  \end{pmatrix} \qquad \text{$r, s$ in $\mathbb{R}$}
 $$
 
 will be called a **parametric vector equation** of $\mathcal{P}$.
@@ -434,7 +434,7 @@ $$
 This means that
 
 $$
-\begin{pmatrix} x \\ y \\ z \end{pmatrix}=\begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}+r\begin{pmatrix} 0 \\ 1 \\ 1  \end{pmatrix}+s\begin{pmatrix} 2 \\ 0 \\ 1  \end{pmatrix} \qquad \textrm{$r, s$ in $\mathbb{R}$}
+\begin{pmatrix} x \\ y \\ z \end{pmatrix}=\begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}+r\begin{pmatrix} 0 \\ 1 \\ 1  \end{pmatrix}+s\begin{pmatrix} 2 \\ 0 \\ 1  \end{pmatrix} \qquad \text{$r, s$ in $\mathbb{R}$}
 $$
 
 is a parametric vector equation of the plane through the given points.
@@ -564,7 +564,7 @@ The line $\mathcal{L}$ in $\mathbb{R}^3$.
 If $\mathbf{v_0}=\begin{pmatrix} x_0 \\ y_0 \\ z_0 \end{pmatrix}$ is a vector on the line $\mathcal{L}$ and $\mathbf{u}=\begin{pmatrix} a \\ b \\ c \end{pmatrix}$ is a directional vector of $\mathcal{L}$, then the equation
 
 $$
-\begin{pmatrix} x \\ y \\ z \end{pmatrix}=\begin{pmatrix} x_0 \\ y_0 \\ z_0 \end{pmatrix}+r\begin{pmatrix} a \\ b \\ c \end{pmatrix} \qquad \textrm{$r$ in $\mathbb{R}$}
+\begin{pmatrix} x \\ y \\ z \end{pmatrix}=\begin{pmatrix} x_0 \\ y_0 \\ z_0 \end{pmatrix}+r\begin{pmatrix} a \\ b \\ c \end{pmatrix} \qquad \text{$r$ in $\mathbb{R}$}
 $$
 
 will be called a **parametric vector equation** of $\mathcal{L}$.
@@ -581,7 +581,7 @@ $$
 The equation
 
 $$
-\begin{pmatrix} x \\ y \\ z \end{pmatrix}=\begin{pmatrix} 1 \\ 2 \\ 4 \end{pmatrix}+r\begin{pmatrix} 4 \\ 1 \\ -3 \end{pmatrix} \qquad \textrm{$r$ in $\mathbb{R}$}
+\begin{pmatrix} x \\ y \\ z \end{pmatrix}=\begin{pmatrix} 1 \\ 2 \\ 4 \end{pmatrix}+r\begin{pmatrix} 4 \\ 1 \\ -3 \end{pmatrix} \qquad \text{$r$ in $\mathbb{R}$}
 $$
 
 is thus a possible parametric vector equation of $\mathcal{L}$.

@@ -14,7 +14,7 @@ to construct a vector that is orthogonal to a given plane in $\mathbb{R}^3$. Thi
 Let $\mathbf{u}$ and $\mathbf{v}$ be vectors in $\mathbb{R}^3$ such that
 
 $$
-\mathbf{u}=\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} \textrm{ and } \mathbf{v}=\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix}.
+\mathbf{u}=\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} \text{ and } \mathbf{v}=\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix}.
 $$
 
 The **cross product** $\mathbf{u} \cp \mathbf{v}$ is defined as
@@ -30,7 +30,7 @@ $$
 Let us compute the cross product of the following vectors $\mathbf{u}$ and $\mathbf{v}$.
 
 $$
-\mathbf{u}=\begin{pmatrix} 2 \\ 1 \\ 4 \end{pmatrix} \textrm{ and } \mathbf{v}=\begin{pmatrix} 3 \\ 6 \\ 5 \end{pmatrix}.
+\mathbf{u}=\begin{pmatrix} 2 \\ 1 \\ 4 \end{pmatrix} \text{ and } \mathbf{v}=\begin{pmatrix} 3 \\ 6 \\ 5 \end{pmatrix}.
 $$
 
 From the definition we obtain that $\mathbf{u}\cp \mathbf{v}$ is equal to
@@ -68,7 +68,7 @@ If $\mathbf{u}$ and $\mathbf{v}$ are vectors in $\mathbb{R}^3$, then $\mathbf{u}
 Let $\mathbf{u}$ and $\mathbf{v}$ be vectors in $\mathbb{R}^3$ such that
 
 $$
-\mathbf{u}=\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} \textrm{ and } \mathbf{v}=\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix}.
+\mathbf{u}=\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} \text{ and } \mathbf{v}=\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix}.
 $$
 
 To establish that $\mathbf{u} \cp \mathbf{v}$ and $\mathbf{u}$ are orthogonal we need to show that their dot product is equal to zero. The dot product of these vectors is equal to
@@ -117,7 +117,7 @@ where $\theta$ is the angle between $\mathbf{u}$ and $\mathbf{v}$.
 Let $\mathbf{u}$ and $\mathbf{v}$ be vectors in $\mathbb{R}^3$ such that
 
 $$
-\mathbf{u}=\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} \textrm{ and } \mathbf{v}=\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix}.
+\mathbf{u}=\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} \text{ and } \mathbf{v}=\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix}.
 $$
 
 To avoid having to work with square roots we first compute $\norm{\mathbf{u}\cp \mathbf{v}}^2$.
@@ -335,7 +335,7 @@ The entries of the cross product of two vectors can also be computed using deter
 Let $\mathbf{u}$ and $\mathbf{v}$ be vectors in $\mathbb{R}^3$ such that
 
 $$
-\mathbf{u}=\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} \textrm{ and } \mathbf{v}=\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix}.
+\mathbf{u}=\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} \text{ and } \mathbf{v}=\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix}.
 $$
 
 If
@@ -364,7 +364,7 @@ This follows from the definition.
 Let us compute the cross product of the following vectors $\mathbf{u}$ and $\mathbf{v}$ using determinants.
 
 $$
-\mathbf{u}=\begin{pmatrix} 2 \\ 3 \\ 2 \end{pmatrix} \textrm{ and } \mathbf{v}=\begin{pmatrix} 5 \\ 2 \\ 3 \end{pmatrix}.
+\mathbf{u}=\begin{pmatrix} 2 \\ 3 \\ 2 \end{pmatrix} \text{ and } \mathbf{v}=\begin{pmatrix} 5 \\ 2 \\ 3 \end{pmatrix}.
 $$
 
 The first entry of $\mathbf{u} \cp \mathbf{v}$ is equal to

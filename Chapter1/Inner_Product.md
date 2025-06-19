@@ -555,7 +555,7 @@ Another notation for this vector is
 
 $$
 
-  \mathbf{\hat{w}} = \text{proj}_{\mathbf{v}}(\mathbf{w}).
+  \mathbf{\hat{w}} = \operatorname{proj}_{\mathbf{v}}(\mathbf{w}).
 $$
 
 :::
@@ -577,7 +577,7 @@ and it is given by
 
 $$
 
-  \text{proj}_{\mathbf{v}}(\mathbf{w}) = \mathbf{\hat{w}} = \frac{\mathbf{w}\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}} \mathbf{v}.
+  \operatorname{proj}_{\mathbf{v}}(\mathbf{w}) = \mathbf{\hat{w}} = \frac{\mathbf{w}\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}} \mathbf{v}.
 $$
 
 :::
@@ -640,7 +640,7 @@ We proceed as follows
 
 $$
 
- \mathbf{\hat{w}}  = \text{proj}_{\mathbf{v}}(\mathbf{w}) =  \frac{\mathbf{w}\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}} \mathbf{v} = \frac{-8}{4}\begin{pmatrix} 1 \\1\\1\\1\end{pmatrix} =
+ \mathbf{\hat{w}}  = \operatorname{proj}_{\mathbf{v}}(\mathbf{w}) =  \frac{\mathbf{w}\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}} \mathbf{v} = \frac{-8}{4}\begin{pmatrix} 1 \\1\\1\\1\end{pmatrix} =
  \begin{pmatrix} -2\\-2\\-2\\-2\end{pmatrix}.
 $$
 
@@ -674,7 +674,7 @@ as required.
 :::{exercise}
 :label: Exc:InnerProduct:SameProjectionThenWhat
 
-Suppose $\text{proj}_{\mathbf{v}}(\mathbf{w}_1) = \text{proj}_{\mathbf{v}}(\mathbf{w}_2) $,
+Suppose $\operatorname{proj}_{\mathbf{v}}(\mathbf{w}_1) = \operatorname{proj}_{\mathbf{v}}(\mathbf{w}_2) $,
 for three nonzero vectors $\mathbf{v}, \,\mathbf{w}_1,\,\mathbf{w}_2$ in $\mathbb{R}^n$.
 What does this say about the relative positions of the three vectors?
 
@@ -692,7 +692,7 @@ $$
 ::::{admonition} Solution to&nbsp;{numref}`Exc:InnerProduct:SameProjectionThenWhat`
 :class: solution, dropdown
 
-Suppose $\text{proj}_{\mathbf{v}}(\mathbf{w}_1) = \text{proj}_{\mathbf{v}}(\mathbf{w}_2) $.  Thus  $\dfrac{\mathbf{w}_1\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}} \mathbf{v} = \dfrac{\mathbf{w}_2\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}} \mathbf{v}$.
+Suppose $\operatorname{proj}_{\mathbf{v}}(\mathbf{w}_1) = \operatorname{proj}_{\mathbf{v}}(\mathbf{w}_2) $.  Thus  $\dfrac{\mathbf{w}_1\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}} \mathbf{v} = \dfrac{\mathbf{w}_2\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}} \mathbf{v}$.
 
 Since $\mathbf{v}$ is not the zero vector this implies that
 $\mathbf{w}_1\ip\mathbf{v} = \mathbf{w}_2\ip\mathbf{v}$. In other words,
@@ -848,7 +848,7 @@ $$
 The **distance** between two vectors in $\R^n$ is defined by
 
 $$
-  \text{dist}(\vect{u},\vect{v}) = \norm{\vect{v}-\vect{u}}.
+  \operatorname{dist}(\vect{u},\vect{v}) = \norm{\vect{v}-\vect{u}}.
 $$
 
 ::::
@@ -892,11 +892,11 @@ From the rules of the norm the following rules of the distance function can be d
 
 For any three vectors $\mathbf{u}, \mathbf{v}$ and $\mathbf{w} \in \mathbb{R}^{n}$ the following statements hold.
 
-i. $\text{dist}(\vect{u},\vect{v}) = \text{dist}(\vect{v},\vect{u})$;
+i. $\operatorname{dist}(\vect{u},\vect{v}) = \operatorname{dist}(\vect{v},\vect{u})$;
 
-ii. $\text{dist}(\vect{u},\vect{v}) = 0 \iff \vect{u}=\vect{v}$;
+ii. $\operatorname{dist}(\vect{u},\vect{v}) = 0 \iff \vect{u}=\vect{v}$;
 
-iii. $\text{dist}(\vect{u},\vect{w}) \leq \text{dist}(\vect{u},\vect{v}) + \text{dist}(\vect{v},\vect{w})$.
+iii. $\operatorname{dist}(\vect{u},\vect{w}) \leq \operatorname{dist}(\vect{u},\vect{v}) + \operatorname{dist}(\vect{v},\vect{w})$.
 
 Rule iii. is again called the _Triangle Inequality_.
 
@@ -1576,7 +1576,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 :url: https://embed.grasple.com/exercises/67334454-d109-45a2-b640-545041ff896d?id=62416
 :label: grasple_exercise_1_2_13
 :dropdown:
-:description: Find $\text{proj}_{\mathbf{v}}(\mathbf{w})$ in $\R^2$.
+:description: Find $\operatorname{proj}_{\mathbf{v}}(\mathbf{w})$ in $\R^2$.
 
 ::::
 
@@ -1585,7 +1585,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 :url: https://embed.grasple.com/exercises/9705b078-6c91-42c6-9768-8a043115b881?id=62658
 :label: grasple_exercise_1_2_14
 :dropdown:
-:description: Find $\text{proj}_{\mathbf{v}}(\mathbf{w})$ in $\R^4$.
+:description: Find $\operatorname{proj}_{\mathbf{v}}(\mathbf{w})$ in $\R^4$.
 
 ::::
 
@@ -1643,6 +1643,6 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 :url: https://embed.grasple.com/exercises/2a2423c3-0907-40b7-bd5f-7607baf7cc09?id=62668
 :label: grasple_exercise_1_2_20
 :dropdown:
-:description: What to conclude from $\text{proj}_{\mathbf{v}}(\mathbf{w}_1 ) = \text{proj}_{\mathbf{v}}(\mathbf{w}_2)$?
+:description: What to conclude from $\operatorname{proj}_{\mathbf{v}}(\mathbf{w}_1 ) = \operatorname{proj}_{\mathbf{v}}(\mathbf{w}_2)$?
 
 ::::

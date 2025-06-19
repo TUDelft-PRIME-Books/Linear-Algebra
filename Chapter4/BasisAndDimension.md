@@ -1043,7 +1043,7 @@ Show that **any** set of two independent vectors in the plane $\mathcal P$ gener
 ::::::{prf:definition}
 
 The **dimension** of a subspace $S$ is the number of elements in a
-(i.e., any) basis for $S$. &nbsp; Notation: &nbsp; dim $S$.
+(i.e., any) basis for $S$. &nbsp; Notation: &nbsp; $\operatorname{dim}S$.
 
 ::::::
 
@@ -1055,7 +1055,7 @@ Because of {prf:ref}`Thm:BasisDim:EqualDim` this is a good definition.
 For the trivial subspace $S = \lbrace\vect{0}\rbrace$ we postulated that its basis is the empty set. Thus,
 
 $$
-\text{dim}\, S = \text{dim}(\emptyset) = 0.
+\operatorname{dim}\, S = \operatorname{dim}(\emptyset) = 0.
 $$
 
 For the other trivial subspace, the whole $\R^n$, the standard basis
@@ -1067,7 +1067,7 @@ $$
 has exactly $n$ elements, So
 
 $$
-\text{dim} \,\R^n = n.
+\operatorname{dim }\R^n = n.
 $$
 
 ::::::
@@ -1218,7 +1218,7 @@ $$
 This basis contained two vectors, so
 
 $$
-\text{dim}{\mathcal P} = 2.
+\operatorname{dim}{\mathcal P} = 2.
 $$
 
 From the {prf:ref}`Prop:BasisDim:TwoOfThreeSuffice` it follows that _any_ set of two linearly independent vectors in $\mathcal{P}$ is a basis for $\mathcal{P}$.
@@ -1257,7 +1257,7 @@ the smaller will be $\Span{\vect{a}_1,  \vect{a}_2,  \ldots,  \vect{a}_n}$, i.e.
 For any $m\times n$ matrix $A$:
 
 $$
-\text{dim }\Col{A}  + \text{dim }\Nul{A} = n.
+\operatorname{dim }\Col{A}  + \operatorname{dim }\Nul{A} = n.
 $$
 
 ::::::
@@ -1281,7 +1281,7 @@ and that is exactly the number of non-pivot columns, which is $n-p$.
 We conclude:
 
 $$
-\text{dim Col }A + \text{dim Nul }A = p + (n-p) = n.
+\operatorname{dim}\operatorname{Col}A + \operatorname{dim}\operatorname{Nul}A = p + (n-p) = n.
 $$
 
 ::::::
@@ -1294,19 +1294,19 @@ If $A$ is a $3\times5$ matrix, the dimension of the null space of $A$ must be at
 Namely,
 
 $$
-\text{Col}\,A \subseteq \R^3 \quad \text{implies} \quad \text{dim Col}\, A \leq 3.
+\operatorname{Col}\,A \subseteq \R^3 \quad \text{implies} \quad \operatorname{dim}\operatorname{Col}\, A \leq 3.
 $$
 
 From
 
 $$
-\text{dim } \Col{A} +  \text{dim } \Nul{A} = 5,
+\operatorname{dim } \Col{A} +  \operatorname{dim } \Nul{A} = 5,
 $$
 
 it then follows that
 
 $$
-\text{dim }\Nul{A} = 5 - \text{dim }\Col{A}   \geq   5 - 3 = 2.
+\operatorname{dim }\Nul{A} = 5 - \operatorname{dim }\Col{A}   \geq   5 - 3 = 2.
 $$
 
 ::::::
@@ -1325,7 +1325,7 @@ Since we are used to write vectors in $\R^n$ as column vectors, we define the ro
 The **row space** of a matrix $A$ is defined as the column space of its transpose:
 
 $$
-\text{Row}\,{A} = \Col{A^T}.
+\operatorname{Row}\,{A} = \Col{A^T}.
 $$
 
 ::::::
@@ -1374,7 +1374,7 @@ thus $\Row{A}$ is a subspace of $\R^4$ of dimension 2.
 This is the same matrix $A$ as in {prf:ref}`Ex:BasisDim:TwoByFour`, where we found that the column space is the whole $\R^2$, which gives a first instance of the property
 
 $$
-\text{dim } \Row{A} = \text{dim } \Col{A},
+\operatorname{dim } \Row{A} = \operatorname{dim } \Col{A},
 $$
 
 a relation that will appear to hold for every $m \times n$ matrix ({prf:ref}`Prop:BasisDim:EqualDimRowColSpace`).
@@ -1400,7 +1400,7 @@ $$
 The matrix is in echelon form, so the three pivot columns give a basis for the column space. Thus
 
 $$
-\text{dim } \Col{M} = 3.
+\operatorname{dim } \Col{M} = 3.
 $$
 
 The nonzero columns of
@@ -1421,7 +1421,7 @@ which are in a one-one-correspondence with the first three rows of $M$,
 give a basis for the row space of $M$, whence
 
 $$
-\text{dim } \Row{M} = 3.
+\operatorname{dim } \Row{M} = 3.
 $$
 
 ::::::
@@ -1478,7 +1478,7 @@ For an echelon matrix it is very easy to find a basis of the row space. As in {p
 The nonzero rows are the rows that start with a pivot, so we find
 
 $$
-\text{dim }\Row{A} = \text{dim }\Row{E}= \text{ number of pivots } = \text{dim } \Col{A},
+\operatorname{dim }\Row{A} = \operatorname{dim }\Row{E}= \text{ number of pivots } = \operatorname{dim } \Col{A},
 $$
 
 where at the last step we used {prf:ref}`Prop:BasisDim:PivotColsBasis`.
@@ -1608,7 +1608,7 @@ For future reference this seems to be **the** place for yet another definition:
 The **rank** of a matrix is defined as the dimension of its column space (or, for that matter, its row space):
 
 $$
-\text{rank} A = \text{dim }\Col{A}.
+\operatorname{rank} A = \operatorname{dim }\Col{A}.
 $$
 
 ::::::
@@ -1628,8 +1628,8 @@ Namely, by {prf:ref}`Prop:BasisDim:PivotColsBasis` the dimension of the column s
 Prove the identity
 
 $$
-\text{rank}\left(A^T\right)
- = \text{rank}(A).
+\operatorname{rank}\left(A^T\right)
+ = \operatorname{rank}(A).
 $$
 
 ::::::
@@ -1656,7 +1656,7 @@ The last theorem contains two reformulations of old material.
 For each $m\times n$ matrix $A$:
 
 $$
-\text{rank}\,A = n -  \text{dim }\Nul{A}
+\operatorname{rank}\,A = n -  \operatorname{dim }\Nul{A}
 $$
 
 </li>
@@ -1666,7 +1666,7 @@ $$
 For each $n\times n$ matrix $A$:
 
 $$
-A \text{  is invertible  } \iff \text{ rank}\, A = n.
+A \text{  is invertible  } \iff \operatorname{ rank}\, A = n.
 $$
 
 </li>
@@ -1687,7 +1687,7 @@ The statements in {prf:ref}`Thm:BasisDim:RankThm` are both reformulations of ear
 Suppose that $A$ and $B$ are matrices for which the product $AB$ is defined. Show that
 
 $$
-\text{rank}(AB) \leq \text{rank}\,A.
+\toperatornameext{rank}(AB) \leq \operatorname{rank}\,A.
 $$
 
 ::::::
@@ -1701,7 +1701,7 @@ $$
 The statement in {numref}`Exc:Subspaces:ColABinColA` that says $\Col{AB} \subseteq \Col{A}$ immediately gives that
 
 $$
-\text{rank}(AB) = \text{dim Col}(AB) \leq \text{dim Col}(A) =\text{rank}\,A.
+\operatorname{rank}(AB) = \operatorname{dim}\operatorname{Col}(AB) \leq \operatorname{dim}\operatorname{Col}(A) =\operatorname{rank}\,A.
 $$
 
 ::::::
@@ -1712,7 +1712,7 @@ $$
 Suppose that $A$ and $B$ are matrices for which the product $AB$ is defined. Show that
 
 $$
-\text{rank}(AB) \leq \text{rank}(B).
+\operatorname{rank}(AB) \leq \operatorname{rank}(B).
 $$
 
 ::::::
@@ -1730,8 +1730,8 @@ Thus  Nul $B$  lies in Nul $AB$, which gives that  dim Nul $B \leq $  dim Nul $A
 Consequently, by the rank theorem   ({prf:ref}`Thm:BasisDim:RankThm`),
  
  $$
-    \text{rank}(AB) = \text{dim Col}(AB) = p - \text{dim Nul}(AB)  \geq
-      p - \text{dim Nul}(B) = \text{rank}(B).
+    \operatorname{rank}(AB) = \operatorname{dim}\operatorname{Col}(AB) = p - \operatorname{dim}\operatorname{Nul}(AB)  \geq
+      p - \operatorname{dim}\operatorname{Nul}(B) = \operatorname{rank}(B).
  $$
 
 ::::::
@@ -1744,7 +1744,7 @@ The following proposition combines the results of the last two exercises.
 Suppose that $A$ and $P$ are $n\times n$ matrices and $P$ is _invertible_. Then
 
 $$
-\text{rank}(AP) =   \text{rank}(A) =  \text{rank}(PA).
+\operatorname{rank}(AP) =   \operatorname{rank}(A) =  \operatorname{rank}(PA).
 $$
 
 ::::::
@@ -1755,25 +1755,25 @@ $$
 Suppose $A$ and $P$ are as stated. Then by {numref}`Exc:BasisDim:RankABLeqRankA`
 
 $$
-\text{rank}(AP) \leq \text{rank}(A) = \text{rank}(APP^{-1}) \leq \text{rank}(AP)
+\operatorname{rank}(AP) \leq \operatorname{rank}(A) = \operatorname{rank}(APP^{-1}) \leq \operatorname{rank}(AP)
 $$
 
 The first inequality is the same as the inequality in {numref}`Exc:BasisDim:RankABLeqRankA`
 and the second inequality follows from the same exercise by taking $A = AP$ and $B = P^{-1}$.
-This proves $\text{rank}(AP) =   \text{rank}(A)$. <BR>
-The identity $\text{rank}(A) =  \text{rank}(PA)$ follows by considering the transpose:
+This proves $\operatorname{rank}(AP) =   \operatorname{rank}(A)$. <BR>
+The identity $\operatorname{rank}(A) =  \operatorname{rank}(PA)$ follows by considering the transpose:
 
 $$
-\text{rank}(PA) = \text{rank}\left((PA)^T\right)
- = \text{rank}\left(A^TP^T\right).
+\operatorname{rank}(PA) = \operatorname{rank}\left((PA)^T\right)
+ = \operatorname{rank}\left(A^TP^T\right).
 $$
 
 Here we have a product $A^TP^T$ with $P^T$ invertible, so we can use use the identities that we already proved, and find
 
 $$
-\text{rank}\left(A^TP^T\right)
- = \text{rank}\left(A^T\right)
- = \text{rank}(A).
+\operatorname{rank}\left(A^TP^T\right)
+ = \operatorname{rank}\left(A^T\right)
+ = \operatorname{rank}(A).
 $$
 
 ::::::
@@ -1790,7 +1790,7 @@ $$
 Show that
 
 $$
-\text{rank}\, A + \text{rank}\, B \leq n.
+\operatorname{rank}\, A + \operatorname{rank}\, B \leq n.
 $$
 
 Does the conclusion also hold when $A$ is an $m\times n$ matrix and
