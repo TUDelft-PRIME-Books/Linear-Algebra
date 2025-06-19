@@ -59,7 +59,7 @@ And the formula also works for $2 \times 2$ matrices:
 
 $$
    \text{for}  \,\,A = \begin{pmatrix}a & b \\ c & d  \end{pmatrix}, \quad
-   \text{det}\,A = a\cdot\text{det}\,A_{11} - c\cdot\text{det}\,A_{21} = ad-cb.
+   \operatorname{det}A = a\cdot\operatorname{det}A_{11} - c\cdot\operatorname{det}A_{21} = ad-cb.
 $$
 
 Let us now look at an example first.
@@ -74,8 +74,8 @@ We will compute the determinant of the matrix $A = \left(\begin{array}{cccc} 7 &
 $$
 \begin{array}{rcl}
 \det{A} &=& 7\cdot\det{A_{11}} - 0\cdot\det{A_{21}} + 0\cdot\det{A_{31}} - 6\cdot\det{A_{41}} \\
-&=& 7\cdot\text{det}\left(\begin{array}{ccc} 2 & 5 & 2 \\  1 & 4 & 3 \\ 2 & 3 & 1  \end{array}\right)
-- 6\cdot\text{det}\left(\begin{array}{ccc} 2 & 3 &4 \\  2 & 5 & 2 \\  1 & 4 & 3   \end{array}\right)
+&=& 7\cdot\operatorname{det}\left(\begin{array}{ccc} 2 & 5 & 2 \\  1 & 4 & 3 \\ 2 & 3 & 1  \end{array}\right)
+- 6\cdot\operatorname{det}\left(\begin{array}{ccc} 2 & 3 &4 \\  2 & 5 & 2 \\  1 & 4 & 3   \end{array}\right)
 \end{array}
 $$
 
@@ -438,7 +438,7 @@ The last property that may be expected to hold as a consequence of {prf:ref}`Thm
 For any $n\times n$ matrix $A$ the determinant of $A$ is equal to the determinant of its transpose. In a formula
 
 $$
-\det{A} = \text{det}\big(A^T\big).
+\det{A} = \operatorname{det}\big(A^T\big).
 $$
 
 ::::::
@@ -478,7 +478,7 @@ Which gives the same value.
 
 In fact, by looking at the structure rather than at the numbers, we see the example illustrates that the theorem holds for
 $3 \times 3$ determinants since it holds for $2 \times 2$ determinants.
-In a similar way, the property $\text{det}\big(A^T\big) = \text{det}(A)$ for $4 \times 4$ matrices follows from the correctness for $3 \times 3$ matrices, and this can be (either formally or informally) lifted up to determinants of an arbitrary size.
+In a similar way, the property $\operatorname{det}\big(A^T\big) = \operatorname{det}(A)$ for $4 \times 4$ matrices follows from the correctness for $3 \times 3$ matrices, and this can be (either formally or informally) lifted up to determinants of an arbitrary size.
 
 
 ## Grasple exercises

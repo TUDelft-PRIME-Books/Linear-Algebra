@@ -846,11 +846,11 @@ The general case, for non-square matrices,  will be handled in {numref}`Subsecti
 ::::{prf:proposition}
 :label: Prop:SymmetricMat:Max||Ax||
 
-Suppose $A$ is a symmetric matrix.  Then the maximum value  $\norm{A\mathbf{x}}$  will attain on the set of unit vectors is equal to  $|\lambda_{\text{max}}|$, where $\lambda_{\text{max}}$ is the eigenvalue of the highest absolute value.
+Suppose $A$ is a symmetric matrix.  Then the maximum value  $\norm{A\mathbf{x}}$  will attain on the set of unit vectors is equal to  $|\lambda_{\operatorname{max}}|$, where $\lambda_{\operatorname{max}}$ is the eigenvalue of the highest absolute value.
 In formula form
 
 $$
- \text{max}\norm{A\mathbf{x}} = |\lambda_{\text{max}}| \,\, \text{on the set} \,\, \{\vect{x}: \norm{\vect{x}} = 1\}.
+ \operatorname{max}\norm{A\mathbf{x}} = |\lambda_{\operatorname{max}}| \,\, \text{on the set} \,\, \{\vect{x}: \norm{\vect{x}} = 1\}.
 $$
 
 ::::

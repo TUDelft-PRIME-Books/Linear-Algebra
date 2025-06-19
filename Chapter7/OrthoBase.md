@@ -198,7 +198,7 @@ Suppose $V$ is a subspace of $\R^{n}$ with orthogonal basis $\vect{v}_{1},...,\v
 :::{math}
 :label: Eq:OrthoBase:OrthoProj
 
-\vect{u}_{V}=\text{proj}\_V(\vect{u}) = \frac{\vect{u}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{u}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}\_{k}.
+\vect{u}_{V}=\operatorname{proj}\_V(\vect{u}) = \frac{\vect{u}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{u}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}\_{k}.
 
 :::
 
@@ -710,7 +710,7 @@ The following exercises are more conceptual than computational.
 :url: https://embed.grasple.com/exercises/e5bf92ed-3aa8-4b56-b548-1b7776deefad?id=110504
 :label: grasple_exercise_7_2_15
 :dropdown:
-:description: Which conclusion holds if  $\text{proj}_W(\vect{y}) = \vect{y}$?
+:description: Which conclusion holds if  $\operatorname{proj}_W(\vect{y}) = \vect{y}$?
 
 ::::
 

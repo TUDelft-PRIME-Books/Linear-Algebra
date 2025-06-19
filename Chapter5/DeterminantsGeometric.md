@@ -316,8 +316,8 @@ So there
 $$
 \begin{array}{lcl}
 \det{(\vect{u},\vect{v})} + \det{(\vect{u},\vect{w})} &=&
-\text{area}(OABC) + \text{area}(CBDE) \\
-&=& \text{area}(OADE) = \det{(\vect{u},\vect{v}+\vect{w})}.
+\operatorname{area}(OABC) + \operatorname{area}(CBDE) \\
+&=& \operatorname{area}(OADE) = \det{(\vect{u},\vect{v}+\vect{w})}.
 \end{array}
 $$
 
@@ -339,9 +339,9 @@ So there
 $$
 \begin{array}{lcl}
 \det{(\vect{u},\vect{v})} + \det{(\vect{u},\vect{w})} &=&
-\text{area}(OAFC) - \text{area}(OBDA) \\
-&=& \text{area}(OAFC) - \text{area}(CGEF) \\
-&=& \text{area}(OAEG) = \det{(\vect{u},\vect{v}+\vect{w})}.
+\operatorname{area}(OAFC) - \operatorname{area}(OBDA) \\
+&=& \operatorname{area}(OAFC) - \operatorname{area}(CGEF) \\
+&=& \operatorname{area}(OAEG) = \det{(\vect{u},\vect{v}+\vect{w})}.
 \end{array}
 $$
 

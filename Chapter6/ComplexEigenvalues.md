@@ -316,7 +316,7 @@ $$
 where
 
 $$
-  r = |\lambda|, \quad \varphi = \text{arg}\,\lambda.
+  r = |\lambda|, \quad \varphi = \operatorname{arg}\,\lambda.
 $$
 
 {prf:ref}`Prop:ComplexEV:Rotation` can be generalised as follows. If a real $n \times n$ matrix $A$ has a non-real eigenvalue, there is always a rotation 'hidden' in the transformation $T: \vect{x} \mapsto A\vect{x}$.

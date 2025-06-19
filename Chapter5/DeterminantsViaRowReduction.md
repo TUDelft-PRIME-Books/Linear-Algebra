@@ -158,7 +158,7 @@ a consequence of {prf:ref}`Prop:DetRowReduction:RowOps` is that Equation {eq}`Eq
 These are the basics for the general product rule we will see later, which states that
 
 $$
-\text{det}(AB) = \text{det}(A) \text{det} (B)
+\operatorname{det}(AB) = \operatorname{det}(A) \operatorname{det} (B)
 $$
 
 for _arbitrary_ $n\times n$ matrices $A$ and $B$.
@@ -204,7 +204,7 @@ $$
 Because of {prf:ref}`Prop:DetCofactors:DetTranspose` that states
 
 $$
-\det{A} = \text{det}\big(A^T\big)
+\det{A} = \operatorname{det}\big(A^T\big)
 $$
 
 every rule involving row operations may be transformed into a rule about column operations. It is here that computing a determinant differs strikingly from the reduction of a (for instance augmented) matrix to an echelon matrix. Another, more subtle difference is that
@@ -385,7 +385,7 @@ $$
 ::::::{prf:corollary}
 :label: Cor:DetRowReduction:DetOfInverse
 
-If the matrix $A$ is invertible, then $\text{det}\big(A^{-1}\big)= \dfrac{1}{\det{A}}$.
+If the matrix $A$ is invertible, then $\operatorname{det}\big(A^{-1}\big)= \dfrac{1}{\det{A}}$.
 
 ::::::
 
@@ -400,15 +400,15 @@ i. $AA^{-1} = I$, &nbsp; ii. $\det{(AA^{-1})} = \det{A}\det{\left(A^{-1}\right)}
 as follows:
 
 $$
-\text{det}(A)\text{det}(A^{-1})
- =  \text{det}(AA^{-1}) = \text{det}(I) = 1,
+\operatorname{det}(A)\operatorname{det}(A^{-1})
+ =  \operatorname{det}(AA^{-1}) = \operatorname{det}(I) = 1,
 $$
 
 so indeed
 
 $$
-\text{det}\left(A^{-1}\right)
-  = \dfrac{1}{\text{det}(A)}.
+\operatorname{det}\left(A^{-1}\right)
+  = \dfrac{1}{\operatorname{det}(A)}.
 $$
 
 ::::::
@@ -427,7 +427,7 @@ For each $n \times n$ matrix $A$ it holds that
 <BR>
 
 $$
-\text{det}\big(A^k\big)= \big(\det{A}\big)^k.
+\operatorname{det}\big(A^k\big)= \big(\det{A}\big)^k.
 $$
 
 </li>
@@ -482,7 +482,7 @@ We treat the statements one by
 
 <li>
 
-Is it true that for each $n \times n$ matrix $A$ it holds that $\text{det}\big(A^k\big)= \big(\det{A}\big)^k$? 
+Is it true that for each $n \times n$ matrix $A$ it holds that $\operatorname{det}\big(A^k\big)= \big(\det{A}\big)^k$? 
 
 This is true, and follows from repeatedly using the property $\det(AB) = \det(A)\det(B)$. Namely,
 <BR>
@@ -541,7 +541,7 @@ $$
 
 <li>
 
-Is it true that $\text{det}(-A)= -\det{(A)}$ for each $n \times n$ matrix $A$?
+Is it true that $\operatorname{det}(-A)= -\det{(A)}$ for each $n \times n$ matrix $A$?
 
 
 This is not true in general.  Taking $k = -1$ in the previous statement we see that 
@@ -554,7 +554,7 @@ $$
 A specific example:  for  $A = I$ it holds that 
 
 $$
- \text{det} (-A) = \begin{vmatrix} -1 & 0 \\ 0 & -1 \end{vmatrix} = (-1)^2 \begin{vmatrix} 1 & 0 \\ 0 & 1 \end{vmatrix} = \begin{vmatrix} 1 & 0 \\ 0 & 1 \end{vmatrix} = \text{det} (A).
+ \operatorname{det} (-A) = \begin{vmatrix} -1 & 0 \\ 0 & -1 \end{vmatrix} = (-1)^2 \begin{vmatrix} 1 & 0 \\ 0 & 1 \end{vmatrix} = \begin{vmatrix} 1 & 0 \\ 0 & 1 \end{vmatrix} = \operatorname{det} (A).
 $$
 </li>
 
@@ -630,14 +630,14 @@ Suppose $\tilde{A}$ is the result of scaling the $k$th column of $A$ with a fact
 Then expanding det$(\tilde{A})$ along its $k$th column, keeping in mind that $\tilde{a}_{ik} = c {a}_{ik}$ and $\tilde{A}_{ik} = {A}_{ik}$, yields
 
 $$
-\text{det}\big(\tilde{A}\big)= \sum_{i=1}^n   (-1)^{i+k} \tilde{a}_{ik}\det{\tilde{A}_{ik}}
+\operatorname{det}\big(\tilde{A}\big)= \sum_{i=1}^n   (-1)^{i+k} \tilde{a}_{ik}\det{\tilde{A}_{ik}}
 =\sum_{i=1}^n   (-1)^{i+k} c {a}_{ik}\det{{A}_{ik}}.
 $$
 
 If we take out the constant factor $c$ we see that
 
 $$
-\text{det}\big(\tilde{A}\big) =  c\sum_{i=1}^n   (-1)^{i+k}  {a}_{ik}\det{{A}_{ik}}
+\operatorname{det}\big(\tilde{A}\big) =  c\sum_{i=1}^n   (-1)^{i+k}  {a}_{ik}\det{{A}_{ik}}
 = c  \det{A}.
 $$
 
@@ -713,16 +713,16 @@ $$
 Expanding det$(\bar{\bar{A}})$ along its second column yields
 
 $$
-\text{det}\big(\bar{\bar{A}} \big)= \sum_{i=1}^n   (-1)^{i+2}  \bar{\bar{a}}_{i2}\text{det}\big(\bar{\bar{A}}_{i2} \big)=
-\sum_{j=1}^n   (-1)^{i+2}  {a}_{i1}\text{det}\big({A}_{i1}\big).
+\operatorname{det}\big(\bar{\bar{A}} \big)= \sum_{i=1}^n   (-1)^{i+2}  \bar{\bar{a}}_{i2}\operatorname{det}\big(\bar{\bar{A}}_{i2} \big)=
+\sum_{j=1}^n   (-1)^{i+2}  {a}_{i1}\operatorname{det}\big({A}_{i1}\big).
 $$
 
 Noting that $(-1)^{i+2} = (-1)\cdot (-1)^{i+1}$ and taking out one factor $(-1)$ from the sum yields
 
 $$
-\text{det}\big(\bar{\bar{A}}\big)=
-- \sum_{i=1}^n   (-1)^{i+1}  {a}_{i1}\text{det}\big({A}_{i1}\big)=
-- \text{det}\big({A}\big).
+\operatorname{det}\big(\bar{\bar{A}}\big)=
+- \sum_{i=1}^n   (-1)^{i+1}  {a}_{i1}\operatorname{det}\big({A}_{i1}\big)=
+- \operatorname{det}\big({A}\big).
 $$
 
 The same argument works for the interchanging of two arbitrary consecutive columns.

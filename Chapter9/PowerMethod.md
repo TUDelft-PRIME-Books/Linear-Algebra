@@ -120,7 +120,7 @@ The scaling step is necessary to avoid ending up at the zero vector or 'at infin
 
 Suppose $A$ is a matrix with dominant eigenvalue $\lambda_1$.
 Then in general the sequence constructed by the Power Method Algorithm, will converge to an eigenvector $\vect{v}_1$ for $\lambda_1$.  &nbsp; To be more specific, the sequence $\vect{x}_k$ will converge to a dominant eigenvector $\vect{v}_1$ if the initial vector $\vect{x}_0$ does not lie in
-$\text{Span}\{\vect{v}_2, \vect{v}_3, \ldots, \vect{v}_n\}$.
+$\operatorname{Span}\{\vect{v}_2, \vect{v}_3, \ldots, \vect{v}_n\}$.
 
 Moreover, suppose $\vect{x}$ is the result after a (sufficiently) large number of runs of the algorithm.  Then (an approximation of) the dominant eigenvalue is the entry with the highest absolute value of the vector $A\vect{x}$.
 

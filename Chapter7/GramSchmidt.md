@@ -22,14 +22,14 @@ As a second basis vector we can take
 :::{math}
 :label: Eq:GramSchmidt:Step2
 
-  \vect{b}_2 = \vect{a}_2 - \text{proj}_{\vect{a}_1}(\vect{a}_2) = 
+  \vect{b}_2 = \vect{a}_2 - \operatorname{proj}_{\vect{a}_1}(\vect{a}_2) = 
                \vect{a}_2 - \dfrac{\vect{a}_2\ip\vect{a}_1}{\vect{a}_1\ip\vect{a}_1}    \vect{a}_1.
 
 :::
 
-It is then clear that $\vect{b}_2$ is in span$\{\vect{a}_1, \vect{a}_2\}$, and by the property of the orthogonal projection $\text{proj}_{\vect{a}_1}(\vect{a}_2)$ it follows that $\vect{b}_2 \perp \vect{b}_1$.
+It is then clear that $\vect{b}_2$ is in span$\{\vect{a}_1, \vect{a}_2\}$, and by the property of the orthogonal projection $\operatorname{proj}_{\vect{a}_1}(\vect{a}_2)$ it follows that $\vect{b}_2 \perp \vect{b}_1$.
 
-A fortiori $\{\vect{b}_1, \vect{b}_2\}$ is linearly independent, so $\{\vect{b}_1, \vect{b}_2\}$ is an orthogonal basis for $W = \text{span}{\{\vect{a}_1, \vect{a}_2\}}$.
+A fortiori $\{\vect{b}_1, \vect{b}_2\}$ is linearly independent, so $\{\vect{b}_1, \vect{b}_2\}$ is an orthogonal basis for $W = \operatorname{Span}{\{\vect{a}_1, \vect{a}_2\}}$.
 
 The explicit vectors we find are
 
@@ -84,11 +84,11 @@ is an orthogonal basis for
 
 $$
 
-\text{span}\{\vect{a}_1, \ldots, \vect{a}_j\}.
+\operatorname{Span}\{\vect{a}_1, \ldots, \vect{a}_j\}.
 $$
 
 In particular, in the end $\{\vect{b}_1,\ldots,\vect{b}_m\}$
-will be an orthogonal basis for $\text{span}\{\vect{a}_1, \ldots, \vect{a}_m\} = W$.
+will be an orthogonal basis for $\operatorname{Span}\{\vect{a}_1, \ldots, \vect{a}_m\} = W$.
 
 ::::
 
@@ -147,7 +147,7 @@ First of all
 
 $$
 
- \text{span}\{\vect{b}_1\} = W_1 = \text{span}\{\vect{a}_1\}.
+ \operatorname{Span}\{\vect{b}_1\} = W_1 = \operatorname{Span}\{\vect{a}_1\}.
 $$
 
 In the other steps, assume that we have so far created the orthogonal basis
@@ -157,10 +157,10 @@ Then in fact
 
 $$
 
- \vect{b}_{j+1} = \vect{a}_{j+1} - \text{proj}_{W_j}(\vect{a}_{j+1}).
+ \vect{b}_{j+1} = \vect{a}_{j+1} - \operatorname{proj}_{W_j}(\vect{a}_{j+1}).
 $$
 
-Namely, the projection $\text{proj}_{W_j}(\vect{a}_{j+1})$ can be computed using the already created _orthogonal_ basis
+Namely, the projection $\operatorname{proj}_{W_j}(\vect{a}_{j+1})$ can be computed using the already created _orthogonal_ basis
 $(\vect{b}_1, \ldots, \vect{b}_j)$ of $W_j$. See {numref}`Figure %s <Fig:GramSchmidt:GS-step123>`
 
 :::{figure} Images/Fig-GramSchmidt-GS-step123.svg
@@ -174,17 +174,17 @@ That is,
 
 $$
 
-  \text{proj}_{W_j}(\vect{a}_{j+1}) =
+  \operatorname{proj}_{W_j}(\vect{a}_{j+1}) =
   \dfrac{\vect{a}_{j+1}\ip\vect{b}_1}{\vect{b}_1\ip\vect{b}_1}\vect{b}_1  + \ldots + \dfrac{\vect{a}_{j+1}\ip\vect{b}_j}{\vect{b}_j\ip\vect{b}_j}\vect{b}_j.
 $$
 
-This makes $\text{proj}_{W_j}(\vect{a}_{j+1})$    an element of $W_{j}$  and 
-$\vect{b}_{j+1} = \vect{a}_{j+1} - \text{proj}_{W_j}(\vect{a}_{j+1})$  an element of
+This makes $\operatorname{proj}_{W_j}(\vect{a}_{j+1})$    an element of $W_{j}$  and 
+$\vect{b}_{j+1} = \vect{a}_{j+1} - \operatorname{proj}_{W_j}(\vect{a}_{j+1})$  an element of
 $W_{j+1}$.    
 
 $\vect{b}_{j+1} \neq \vect{0}$ since we assumed that the vectors $\vect{a}_1, \ldots, \vect{a}_m$ are independent, so $\vect{a}_{j+1}$ is not in $W_j$.
 
-Moreover, $\vect{b}_{j+1} = \vect{a}_{j+1} - \text{proj}_{W_j}(\vect{a}_{j+1})$ is perpendicular to $W_j$ by the properties of orthogonal projection.
+Moreover, $\vect{b}_{j+1} = \vect{a}_{j+1} - \operatorname{proj}_{W_j}(\vect{a}_{j+1})$ is perpendicular to $W_j$ by the properties of orthogonal projection.
 Since all $\vect{b}_i$ with $i \leq j$ lie in $W_j$, this makes $\vect{b}_{j+1}$ orthogonal to all its predecessors $\vect{b}_1, \ldots, \vect{b}_j$.  
 Hence if the vectors $\vect{b}_1, \ldots, \vect{b}_j$ are orthogonal,
 so are the vectors $\vect{b}_1, \ldots, \vect{b}_j, \vect{b}_{j+1}$.
@@ -203,7 +203,7 @@ so are the vectors $\vect{b}_1, \ldots, \vect{b}_j, \vect{b}_{j+1}$.
 ::::
 
 The following example shows what happens if the Gram-Schmidt construction is applied to
-a subspace $W = \text{span}\{\vect{a}_1, \ldots, \vect{a}_m\}$ where the vectors $\vect{a}_i$ are not linearly independent.
+a subspace $W = \operatorname{Span}\{\vect{a}_1, \ldots, \vect{a}_m\}$ where the vectors $\vect{a}_i$ are not linearly independent.
 
 ::::{prf:example}
 :label: Ex:GramSchmidt:NonOrthog
@@ -218,14 +218,14 @@ Just following the protocol we find
 $\vect{b}_1 = \vect{a}_1 = \begin{pmatrix} 1 \\ -1   \\ 2 \\ 3    \end{pmatrix},  \quad
       \vect{b}_2 =   \vect{a}_{2} - \dfrac{\vect{a}_{2}\ip\vect{b}_1}{\vect{b}_1\ip\vect{b}_1}\vect{b}_1        = \begin{pmatrix} 0 \\ 0   \\ 0 \\ 0    \end{pmatrix}$.
 
-The explanation is that $\vect{b}_2 = \vect{a}_{2} - \text{proj}_{\vect{a}_1}(\vect{a}_2) =
+The explanation is that $\vect{b}_2 = \vect{a}_{2} - \operatorname{proj}_{\vect{a}_1}(\vect{a}_2) =
 \vect{a}_{2} - \vect{a}_{2} = \vect{0}$, since $\vect{a}_2$ lies in span$\{\vect{a}_1\}$.
 In other words, since $W_2 = W_1$.
 
 We discard the zero vector, and continu to compute the next new basis vector.
 
 $$
- \vect{b}_3 = \vect{a}_3 - \text{proj}_{W_2}(\vect{a}_3) = \vect{a}_3 - \text{proj}_{W_1}(\vect{a}_3)
+ \vect{b}_3 = \vect{a}_3 - \operatorname{proj}_{W_2}(\vect{a}_3) = \vect{a}_3 - \operatorname{proj}_{W_1}(\vect{a}_3)
  =  \begin{pmatrix} 2 \\ 0   \\ 1 \\  2    \end{pmatrix} - \dfrac{10}{15}\begin{pmatrix} 1 \\ -1   \\ 2 \\ 3    \end{pmatrix} = \dfrac13 \begin{pmatrix} 4 \\ 2   \\ -1 \\  0    \end{pmatrix}.
 $$
 
@@ -234,7 +234,7 @@ To get rid of fractions we rather continue with $\vect{b}_3 = \begin{pmatrix} 4 
 The last step:
 
 $$
-  \vect{b}_4 = \vect{b}_4 - \text{proj}_{\text{span}\{\vect{b}_1, \vect{b}_3\}}
+  \vect{b}_4 = \vect{b}_4 - \operatorname{proj}_{\operatorname{Span}\{\vect{b}_1, \vect{b}_3\}}
              = \vect{b}_4 - \dfrac{-10}{15}\vect{b}_1 -\dfrac{7}{21}\vect{b}_3 = \vect{0}.
 $$
 
@@ -256,7 +256,7 @@ is an orthogonal basis for span$\{\vect{a}_1,\ldots, \vect{a}_4\}$.
 %:label: Exc:GramSchmidt:NonBasis
 
 The idea of {prf:ref}`Ex:GramSchmidt:NonOrthog` can be generalised as follows.
-Suppose $W = \text{span}\{\vect{a}_1,\ldots,\vect{a}_m\}$, where the vectors $\vect{a}_i$ are not
+Suppose $W = \operatorname{Span}\{\vect{a}_1,\ldots,\vect{a}_m\}$, where the vectors $\vect{a}_i$ are not
 necessarily linearly independent.
 If we apply the Gram-Schmidt construction and discard the zero vector if it comes up, then we end up with an orthogonal basis $\{\vect{b}_1,\ldots,\vect{b}_k\}$ for $W$. Note that $k < m$ occurs precisely when the original generating set of vectors $\{\vect{a}_1,\ldots,\vect{a}_m\}$ is linearly dependent.
 
@@ -265,7 +265,7 @@ If we apply the Gram-Schmidt construction and discard the zero vector if it come
 ::::{prf:remark}
 :label: Rem:GramSchmidt:OrthonormalBasis
 
-By applying the Gram-Schmidt process to a linearly independent set of vectors $\{\vect{a}_1,\ldots,\vect{a}_m\}$ we get a orthogonal basis $\{\vect{b}_1,\ldots,\vect{b}_m\}$ for the subspace $W =  \text{span}\{\vect{a}_1,\ldots,\vect{a}_m\}$.
+By applying the Gram-Schmidt process to a linearly independent set of vectors $\{\vect{a}_1,\ldots,\vect{a}_m\}$ we get a orthogonal basis $\{\vect{b}_1,\ldots,\vect{b}_m\}$ for the subspace $W =  \operatorname{Span}\{\vect{a}_1,\ldots,\vect{a}_m\}$.
 
 By rescaling the vectors $\vect{b}_i$ as follows
 
@@ -284,7 +284,7 @@ For the subspace
 
 $$
 
-W = \text{span}
+W = \operatorname{Span}
 \left(
     \begin{pmatrix} 1 \\ 1   \\-1  \\1  \end{pmatrix},
     \begin{pmatrix} 3 \\ 3   \\-2  \\0  \end{pmatrix}
@@ -522,7 +522,7 @@ Let $Q$ be the matrix coming from the Gram-Schmidt process, followed by rescalin
 Since by construction
 
 $$
-  \vect{q}_i \perp \text{span}\{\vect{q}_1,\ldots,\vect{q}_{i-1}\} = \text{span}\{\vect{a}_1,\ldots,\vect{a}_{i-1}\}
+  \vect{q}_i \perp \operatorname{Span}\{\vect{q}_1,\ldots,\vect{q}_{i-1}\} = \operatorname{Span}\{\vect{a}_1,\ldots,\vect{a}_{i-1}\}
 $$
 
 it follows that the entries below the diagonal of the product $Q^TA$ are all equal to zero.
@@ -530,8 +530,8 @@ So: $Q^TA = R$ is an upper triangular matrix.
 
 Recalling the construction of $\vect{b}_i$ and $\vect{q}_i$ from $\vect{a}_1,\ldots,\vect{a}_i$, it can be shown that the diagonal entries $r_{ii}$ are equal to $\vect{q}_i^T\vect{a}_i = \norm{\vect{a}_i} > 0$.
 
-Furthermore, since the columns of $Q$ form an orthonormal basis of $\text{Col}\,{A}$, the matrix
-$QQ^T$ represents the orthogonal projection onto $\text{Col}\,A$. Use this to show that
+Furthermore, since the columns of $Q$ form an orthonormal basis of $\operatorname{Col}{A}$, the matrix
+$QQ^T$ represents the orthogonal projection onto $\operatorname{Col}A$. Use this to show that
 $QQ^TA = A$.
 
 Warning: the columns of $Q$ being orthonormal is equivalent to $Q^TQ = I$. However, in the case where $Q$ is not a square matrix, this does not imply that $QQ^T = I$.

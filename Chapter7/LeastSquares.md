@@ -488,7 +488,7 @@ then the orthogonal projection of
 $\vect{b}$ of Col $A$ is given by
 
 $$
-  \text{proj}_{\Col{A}}(\vect{b}) = c_1\vect{a}_1 + \ldots + c_n\vect{a}_n = A \vect{c}.
+  \operatorname{proj}_{\Col{A}}(\vect{b}) = c_1\vect{a}_1 + \ldots + c_n\vect{a}_n = A \vect{c}.
 $$
 
 If the columns $\vect{a}_1, \ldots, \vect{a}_n$ of $A$ are linearly independent, the coefficients $c_i$ are the coordinates with respect to the basis $\{\vect{a}_1, \ldots, \vect{a}_n\}$, hence they are unique. Thus in that case the normal equations
@@ -573,7 +573,7 @@ As stated, the least squares solution of a system $A\vect{x} = \vect{b}$ consist
 of the orthogonal projection
 
 $$
-   \text{proj}_{\Col{A}}(\vect{b}) = c_1\vect{a}_1 + c_2\vect{a}_2 + \ldots + c_n\vect{a}_n = A \vect{c}, \quad \vect{c} = \begin{pmatrix} c_1 \\ \vdots \\ c_n\end{pmatrix},
+   \operatorname{proj}_{\Col{A}}(\vect{b}) = c_1\vect{a}_1 + c_2\vect{a}_2 + \ldots + c_n\vect{a}_n = A \vect{c}, \quad \vect{c} = \begin{pmatrix} c_1 \\ \vdots \\ c_n\end{pmatrix},
 $$
 
 of $\vect{b}$ onto the column space of $A$.
@@ -589,7 +589,7 @@ So for a matrix $A$ with linearly independent columns the projection of a vector
 :::{math}
 :label: Eq:LeastSquares:ProjbColA
 
-\hat{\vect{b}} = \text{proj}_{\Col{A}}(\vect{b}) = A(A^TA)^{-1}A^T \vect{b}.
+\hat{\vect{b}} = \operatorname{proj}_{\Col{A}}(\vect{b}) = A(A^TA)^{-1}A^T \vect{b}.
 
 :::
 
@@ -679,7 +679,7 @@ Which leads to the good old expressions &nbsp; $c_i = \dfrac{\vect{a}_i\ip\vect{
 As before ({prf:ref}`Thm:OrthoBase:OrthoDecomp`) the orthogonal projection becomes
 
 $$
-   \text{proj}(\vect{b}) =  \dfrac{\vect{b}\ip\vect{a}_1}{\vect{a}_1\ip\vect{a}_1}\vect{a}_1 +
+   \operatorname{proj}(\vect{b}) =  \dfrac{\vect{b}\ip\vect{a}_1}{\vect{a}_1\ip\vect{a}_1}\vect{a}_1 +
     \dfrac{\vect{b}\ip\vect{a}_2}{\vect{a}_2\ip\vect{a}_2}\vect{a}_2 + \ldots +
      \dfrac{\vect{b}\ip\vect{a}_n}{\vect{a}_n\ip\vect{a}_n}\vect{a}_n.
 $$
@@ -690,7 +690,7 @@ $$
 Show that Formula {eq}`Eq:LeastSquares:ProjbColA` for a matrix $A$ with linearly independent columns and QR decomposition $A = QR$ (see {prf:ref}`Thm:GramSchmidt:QR-decomp`) simplifies to
 
 $$
-  \hat{\vect{b}} = \text{proj}_{\Col{A}}(\vect{b}) =  QQ^T \vect{b}.
+  \hat{\vect{b}} = \operatorname{proj}_{\Col{A}}(\vect{b}) =  QQ^T \vect{b}.
 $$
 
 Also explain this simpler formula by interpreting the $QR$ decomposition in a suitable way.
@@ -705,7 +705,7 @@ Suppose $A = QR$, where $Q^TQ = I$, and $R$ is an upper triangular matrix with a
 Substitution of $A=QR$ into {eq}`Eq:LeastSquares:ProjbColA`
 
 $$
- \hat{\vect{b}} = \text{proj}_{\Col{A}}(\vect{b}) = A(A^TA)^{-1}A^T \vect{b}
+ \hat{\vect{b}} = \operatorname{proj}_{\Col{A}}(\vect{b}) = A(A^TA)^{-1}A^T \vect{b}
 $$
 
 gives
@@ -864,7 +864,7 @@ the 'homogeneous' part $\vect{x}_H = c\left(\begin{array}{c}  2 \\  1 \end{array
 Now from {numref}`Section %s <Sec:OrthoComp>`, {prf:ref}`Prop:OrthoComp:OrthoComplementNulA`, we know that
 
 $$
-   (\text{Nul}\,A)^{\perp} = \text{Row}\,A = \Span{\begin{pmatrix} 1 \\ -2\end{pmatrix}}
+   (\operatorname{Nul}A)^{\perp} = \operatorname{Row}A = \Span{\begin{pmatrix} 1 \\ -2\end{pmatrix}}
 $$
 
 which is visualised in {numref}`Figure %s <Fig:LeastSquares:SmallestLS>`.

@@ -280,7 +280,7 @@ This can also be formulated as
 :::{math}
 :label:  Eq:SVD:||Ax||over||x||
 
-   \sigma_1 \,=\, \text{max}\left\{\dfrac{\norm{A\vect{x}}}{\norm{\vect{x}}} \quad \text{for} \quad \vect{x} \neq \vect{0}\right\}.
+   \sigma_1 \,=\, \operatorname{max}\left\{\dfrac{\norm{A\vect{x}}}{\norm{\vect{x}}} \quad \text{for} \quad \vect{x} \neq \vect{0}\right\}.
 
 :::
 
@@ -498,7 +498,7 @@ To prove the converse, one can use a similar argument.
 Now let's have a look at the multiplicities.   Since $A^TA$ is symmetric, hence diagonalisable, for each eigenvalue $\lambda$, the geometric and algebraic multiplicity are equal. And the same holds, of course, for the matrix $AA^T$.  So we are done if we can show that for each eigenvalue $\lambda_i \neq 0$,
 
 $$
-    \text{g.m.}_{A^TA}(\lambda_i) = \text{g.m.}_{AA^T}(\lambda_i) 
+    \operatorname{g.m.}_{A^TA}(\lambda_i) = \operatorname{g.m.}_{AA^T}(\lambda_i) 
 $$
 
 Suppose   $\{\mathbf{v}_1, \dots , \mathbf{v}_g\}$   is a maximal set of linearly
