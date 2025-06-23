@@ -61,7 +61,7 @@ If $\Span{S}=\Span{\mathbf{v}}$ then $\mathbf{u}$ is in $\Span{\mathbf{v}}$ so i
 As you can see from the proof of {prf:ref}`Prop:LinInd:LinIndforSmallSets`, our definition of linear dependence, while intuitive, is a bit hard to work with. In {prf:ref}`Prop:LinInd:LinIndisNonTrivSol`/{prf:ref}`Cor:LinInd:LinIndisColwithoutPivot`, we will see a more convenient way to determine whether a given set of vectors is linearly dependent or not. But let us first consider some examples.
 
 ::::::{prf:example}
-:label: Item:LinInd:LinDepExin2D
+:label: Ex:LinInd:LinDepExin2D
 
 <ol type="i">
 <li id="Item:LinInd:LinDepExin2D">
