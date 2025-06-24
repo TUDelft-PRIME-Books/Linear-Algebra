@@ -2,6 +2,10 @@
 
 # Linear combinations
 
+## Definition
+
+We directly start with the definition of a linear combination of vectors.
+
 ::::{prf:definition}
 :label: Def:LinearCombinations
 
@@ -37,14 +41,18 @@ If we want to determine whether a given vector is a linear combination of other 
 ::::{prf:example}
 :label: Ex:LinearCombinations:LinearCombination
 
+Give are the vectors
+
 $$
 \mathbf{v}_1=
 \begin{pmatrix} 1 \\ 2 \\ 1 \end{pmatrix} \quad \mathbf{v}_2=
 \begin{pmatrix} 3 \\ 1 \\ 2 \end{pmatrix} \quad \mathbf{b}=
-\begin{pmatrix} -1 \\ 3 \\ 0 \end{pmatrix}
+\begin{pmatrix} -1 \\ 3 \\ 0 \end{pmatrix}.
 $$
 
-Is the vector $\mathbf{b}$ a linear combination of $\mathbf{v}_1$ and $\mathbf{v}_2$? We can use the definition of a linear combination to solve this problem. If $\mathbf{b}$ is in fact a linear combination of the two other vectors, then it can be written as $x_1 \mathbf{v}_1+x_2 \mathbf{v}_2$. This means that we should verify whether the system of equations $x_1 \mathbf{v}_1+x_2 \mathbf{v}_2=\mathbf{b}$ has a solution.
+Is the vector $\mathbf{b}$ a linear combination of $\mathbf{v}_1$ and $\mathbf{v}_2$?
+
+We can use the definition of a linear combination to solve this problem. If $\mathbf{b}$ is in fact a linear combination of the two other vectors, then it can be written as $x_1 \mathbf{v}_1+x_2 \mathbf{v}_2$. This means that we should verify whether the system of equations $x_1 \mathbf{v}_1+x_2 \mathbf{v}_2=\mathbf{b}$ has a solution.
 
 The equation
 
@@ -58,7 +66,7 @@ $$
 is equivalent to the system
 
 $$
-\left\{\begin{array}{l} x_1+3x_2=-1 \\ 2x_1+x_2=3 \\ x_1+2x_2=0\end{array} \right.
+\left\{\begin{array}{l} x_1+3x_2=-1, \\ 2x_1+x_2=3, \\ x_1+2x_2=0.\end{array} \right.
 $$
 
 The augmented matrix of this system of equations is equal to
@@ -79,7 +87,7 @@ $$
 2
 \begin{pmatrix} 1 \\ 2 \\ 1 \end{pmatrix}-
 \begin{pmatrix} 3 \\ 1 \\ 2 \end{pmatrix}=
-\begin{pmatrix} -1 \\ 3 \\ 0 \end{pmatrix}
+\begin{pmatrix} -1 \\ 3 \\ 0 \end{pmatrix}.
 $$
 
 We have found that $\mathbf{b}$ can be written as $2\mathbf{v}_1-\mathbf{v_2}$.
@@ -89,11 +97,13 @@ We have found that $\mathbf{b}$ can be written as $2\mathbf{v}_1-\mathbf{v_2}$.
 ::::{prf:example}
 :label: Ex:LinearCombinations:LinearCombinationNoSolution
 
+Now consider the vectors
+
 $$
 \mathbf{v}_1=
 \begin{pmatrix} 1 \\ 0 \\ 2 \end{pmatrix} \quad \mathbf{v}_2=
 \begin{pmatrix} 3 \\ 0 \\ 1 \end{pmatrix} \quad \mathbf{b}=
-\begin{pmatrix} 2 \\ 1 \\ 1 \end{pmatrix}
+\begin{pmatrix} 2 \\ 1 \\ 1 \end{pmatrix}.
 $$
 
 In this case it is a lot easier to decide whether $\mathbf{b}$ is a linear combination of $\mathbf{v}_1$ and $\mathbf{v}_2$. Since the second component of both $\mathbf{v}_1$ and $\mathbf{v}_2$ is equal to zero, we know that the second component of each linear combination of those vectors will be zero. This means that $\mathbf{b}$ can never be a linear combination of $\mathbf{v}_1$ and $\mathbf{v}_2$.
@@ -125,7 +135,7 @@ In linear algebra it is often important to know whether each vector in $\mathbb{
 ::::{prf:definition}
 :label: Dfn:LinearCombinations:Span
 
-Let $S$ be a set of vectors. The set of all linear combinations $a_1\mathbf{v}_1+a_2\mathbf{v}_2+ \cdots +a_k \mathbf{v}_k$, where $\mathbf{v}_1, \ldots, \mathbf{v}_k$ are vectors in $S$, will be called the **span** of those vectors and will be denoted as $\Span{S}$.
+Let $S$ be a set of vectors. The set of all linear combinations $a_1\mathbf{v}_1+a_2\mathbf{v}_2+ \cdots +a_k \mathbf{v}_k$, where $\mathbf{v}_1, \ldots, \mathbf{v}_k$ are vectors in $S$, will be called the **span** of those vectors and will be denoted as $\operatorname{Span}S$.
 
 When $S$ is equal to a finite set $\{\mathbf{v}_1, \ldots, \mathbf{v}_k\}$, then we will simply write $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$.
 
@@ -175,7 +185,7 @@ The span of a single non-zero vector.
 Let $\mathbf{u}$ and $\mathbf{v}$ be two non-zero vectors in $\mathbb{R}^3$, as depicted in {numref}`Figure  %s <Fig:LinearCombinations:SpanTwoVectors>`. What does the span of these vectors look like? By definition, $\Span{\mathbf{u}, \mathbf{v}}$ contains all linear combinations of $\mathbf{u}$ and $\mathbf{v}$. Each of these linear combinations is of the form
 
 $$
-x_1\mathbf{u}+x_2\mathbf{v} \quad \text{$x_1$, $x_2$ in $\mathbb{R}$}.
+x_1\mathbf{u}+x_2\mathbf{v} \quad x_1, x_2~\text{in} \mathbb{R}.
 $$
 
 This looks like the parametric vector equation of a plane. Since the span must contain the zero vector we find that we obtain a plane through the origin like in {numref}`Figure  %s <Fig:LinearCombinations:SpanTwoVectors>`.
@@ -248,7 +258,7 @@ There is also a possibility where the span of three non-zero vectors in $\mathbb
 :url: https://embed.grasple.com/exercises/676d672c-74fc-4545-99ba-6b308af566ce?id=78542
 :label: grasple_exercise_2_2_C
 :dropdown:
-:description: Interpretation of $\Span\{\vect{v}_1,\vect{v}_2,\vect{v}_3\}$.
+:description: Interpretation of $\Span{\vect{v}_1,\vect{v}_2,\vect{v}_3}$.
 
 ::::
 
@@ -269,14 +279,14 @@ The following vectors form the standard basis for $\mathbb{R}^2$.
 $$
 \mathbf{e}_1=
 \begin{pmatrix} 1 \\ 0 \end{pmatrix} \quad \mathbf{e}_2=
-\begin{pmatrix} 0 \\ 1 \end{pmatrix} \nonumber
+\begin{pmatrix} 0 \\ 1 \end{pmatrix}.
 $$
 
 Each vector $\mathbf{v}$ can be written as a linear combination of the vectors $\mathbf{e}_1$ and $\mathbf{e}_2$ in a unique way. Later on we will call each collection of vectors with this property a **basis** for $\mathbb{R}^2$. If
 
 $$
 \mathbf{v}=
-\begin{pmatrix} a \\ b \end{pmatrix}, \nonumber
+\begin{pmatrix} a \\ b \end{pmatrix},
 $$
 
 then clearly we have that
@@ -284,7 +294,7 @@ then clearly we have that
 $$
 \mathbf{v}=a
 \begin{pmatrix} 1 \\ 0 \end{pmatrix}+b
-\begin{pmatrix} 0 \\ 1 \end{pmatrix}. \nonumber
+\begin{pmatrix} 0 \\ 1 \end{pmatrix}.
 $$
 
 It is easy to see that this is the only linear combination of $\mathbf{e}_1$ and $\mathbf{e}_2$ that is equal to $\mathbf{v}$.
@@ -300,7 +310,7 @@ $$
 \mathbf{e}_1=
 \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix} \quad \mathbf{e}_2=
 \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix} \quad \mathbf{e}_3=
-\begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix} \nonumber
+\begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}.
 $$
 
 Here too, it is true that each vector in $\mathbb{R}^3$ can be written as a unique linear combination of these three vectors.
@@ -321,7 +331,7 @@ Take an arbitrary vector $\mathbf{v}$ in $\mathbb{R}^n$ with
 
 $$
 \mathbf{v}=
-\begin{pmatrix} a_1 \\ \vdots \\ a_n \end{pmatrix}.\nonumber
+\begin{pmatrix} a_1 \\ \vdots \\ a_n \end{pmatrix}.
 $$
 
 The vector $\mathbf{v}$ can be written as
@@ -349,7 +359,7 @@ In {prf:ref}`Prop:LinearCombinations:SpanStandardBasis` we saw that the span of 
 :url: https://embed.grasple.com/exercises/9c780d10-9a8f-4fd6-9471-3f1a0e46c009?id=70171
 :label: grasple_exercise_2_2_1
 :dropdown:
-:description: Is $\vect{b}$ an element of $\Span\{\vect{a}_1,\vect{a}_2,\vect{a}_3\}$?
+:description: Is $\vect{b}$ an element of $\Span{\vect{a}_1,\vect{a}_2,\vect{a}_3}$?
 
 ::::
 
@@ -358,7 +368,7 @@ In {prf:ref}`Prop:LinearCombinations:SpanStandardBasis` we saw that the span of 
 :url: https://embed.grasple.com/exercises/f74168ff-a448-4420-88d9-ebe7365a00a9?id=70172
 :label: grasple_exercise_2_2_2
 :dropdown:
-:description: Is $\vect{b}$ an element of $\Span\{\vect{a}_1,\vect{a}_2,\vect{a}_3\}$?
+:description: Is $\vect{b}$ an element of $\Span{\vect{a}_1,\vect{a}_2,\vect{a}_3}$?
 
 ::::
 
@@ -396,7 +406,7 @@ In {prf:ref}`Prop:LinearCombinations:SpanStandardBasis` we saw that the span of 
 :url: https://embed.grasple.com/exercises/2167085c-2498-4694-9eac-abfeeb0ec307?id=70162
 :label: grasple_exercise_2_2_6
 :dropdown:
-:description: About the interpretation of $\Span\{\vect{a}_1,\vect{a}_2\}$.
+:description: About the interpretation of $\Span{\vect{a}_1,\vect{a}_2}$.
 
 ::::
 
@@ -416,7 +426,7 @@ In {prf:ref}`Prop:LinearCombinations:SpanStandardBasis` we saw that the span of 
 :url: https://embed.grasple.com/exercises/c008320d-9d0e-463f-8bb7-344988f10438?id=70176
 :label: grasple_exercise_2_2_8
 :dropdown:
-:description: About the difference between $\{\vect{a}_1,\vect{a}_2,\vect{a}_3\}$ and $\Span\{\vect{a}_1,\vect{a}_2,\vect{a}_3\}$.
+:description: About the difference between $\{\vect{a}_1,\vect{a}_2,\vect{a}_3\}$ and $\Span{\vect{a}_1,\vect{a}_2,\vect{a}_3}$.
 
 ::::
 

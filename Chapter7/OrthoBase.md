@@ -99,7 +99,7 @@ If $\vect{v}_{1},...,\vect{v}_{k}$ is orthonormal, then $\vect{v}_{j}\ip\vect{v}
 
 :::
 
-In this theorem, it is vital that $\vect{v}$ is known to be in $V$. If $\vect{v}$ is not in $V$, then it can definitely not be expressed as a linear combination of basis elements of $V$. However, the right hand side appearing in {prf:ref}`Thm:OrthoBase:WeightsOrthoBase` is still very important. It comes back in {prf:ref}`Thm:OrthoBase:OrthoDecomp`.
+In this theorem, it is vital that $\vect{v}$ is known to be in $V$. If $\vect{v}$ is not in $V$, then it can definitely not be expressed as a linear combination of basis elements of $V$. However, the right-hand side appearing in {prf:ref}`Thm:OrthoBase:WeightsOrthoBase` is still very important. It comes back in {prf:ref}`Thm:OrthoBase:OrthoDecomp`.
 
 ## Orthogonal projections revisited
 
@@ -479,7 +479,7 @@ A^{T}A=\begin{pmatrix}
 \end{pmatrix}.
 $$
 
-The matrix on the right hand side is $I_{n}$ if and only if all diagonal entries are $1$ and all off-diagonal entries are $0$. This happens precisely when
+The matrix on the right-hand side is $I_{n}$ if and only if all diagonal entries are $1$ and all off-diagonal entries are $0$. This happens precisely when
 
 $$
 \vect{v}_{i}\ip\vect{v}_{j}=\vect{v}_{i}^{T}\vect{v}_{j}=\begin{cases}
@@ -544,7 +544,7 @@ which establishes [i.](#It:OrthoBase:OrthoMatandInnerProd) The other points are 
 :::{prf:Remark}
 :label:      Rem:OrthoBase:OrthoMatandInnerProd
 
-Many statements about orthogonal matrices still hold for non-square matrices, as long as the columns form an orthonormal set. Both {prf:ref}`Prop:OrthoBase:OrthoMat` and {prf:ref}`Prop:OrthoBase:OrthoMatandInnerProd` remain precisely the same, with the same proof, for an $m\times n$ matrix $A$. {prf:ref}`Cor:OrthoBase:TransisInv` doesn't hold for non-square matrices, as the inverse of a non-square matrix cannot exist.
+Many statements about orthogonal matrices still hold for non-square matrices, as long as the columns form an orthonormal set. Both {prf:ref}`Prop:OrthoBase:OrthoMat` and {prf:ref}`Prop:OrthoBase:OrthoMatandInnerProd` remain precisely the same, with the same proof, for an $m\times n$-matrix $A$. {prf:ref}`Cor:OrthoBase:TransisInv` doesn't hold for non-square matrices, as the inverse of a non-square matrix cannot exist.
 
 :::
 

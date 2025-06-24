@@ -502,7 +502,7 @@ If a linear transformation $T:\mathbb{R}^{m}\to\mathbb{R}^{n}$ is bijective, the
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:InjSurj:mequaln`
 :class: tudproof
 
-Let $A$ be the standard matrix of $T$, which is an $n\times m$ matrix. By {prf:ref}`Prop:InjSurj:InjChars`, the number of pivots in $A$ is $m$. By {prf:ref}`Prop:InjSurj:SurjChars`, the number of pivots in $A$ is $n$. Hence the claim follows.
+Let $A$ be the standard matrix of $T$, which is an $n\times m$-matrix. By {prf:ref}`Prop:InjSurj:InjChars`, the number of pivots in $A$ is $m$. By {prf:ref}`Prop:InjSurj:SurjChars`, the number of pivots in $A$ is $n$. Hence the claim follows.
 
 ::::::
 

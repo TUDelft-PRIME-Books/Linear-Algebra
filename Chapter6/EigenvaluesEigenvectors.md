@@ -76,7 +76,7 @@ have this property. Note that these represent the situation where city $A$ has t
 ::::::{prf:definition}
 :label:  Def:Eigenvalues:Eigenvector
 
-Let $A$ be an $n \times n$ matrix. A real number $\lambda$ is called an **eigenvalue** of $A$ if there exists a nonzero vector $\vect{v}$ in $\R^n$ for which
+Let $A$ be an $n \times n$-matrix. A real number $\lambda$ is called an **eigenvalue** of $A$ if there exists a nonzero vector $\vect{v}$ in $\R^n$ for which
 
 $$
 A\vect{v} = \lambda\vect{v}.
@@ -313,7 +313,7 @@ Moreover, these non-trivial solutions are exactly the corresponding eigenvectors
 
 Note that the proposition handles our third question as well. If $\lambda$ has been shown to be an eigenvalue of $A$, then the corresponding eigenvectors are the (nonzero) solutions of the homogeneous linear system {eq}`Eq:Eigenvalues:EigenvalueEquation`.
 
-Let us now have a look at a $3\times3$ matrix.
+Let us now have a look at a $3\times3$-matrix.
 
 ::::::{prf:example}
 :label:  Ex:EigenValues:Eigenvector3x3
@@ -662,12 +662,12 @@ Since a set of linearly independent vectors in $\R^n$ can contain at most $n$ ve
 ::::::{prf:corollary}
 :label: Ex:EigenValues:MaxNumberEigenvalues
 
-An $n \times n$ matrix $A$ can have at most $n$ different eigenvalues.
+An $n \times n$-matrix $A$ can have at most $n$ different eigenvalues.
 
 ::::::
 
 It can be shown  (as we will see in {prf:ref}`Ex:Eigenvalues:TwodimEigenspace2`)
-that the $3\times 3$  matrix $A = \begin{pmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1  \end{pmatrix}$ of the previous example has no other eigenvalues than $-1$ and $5$. So $A$ is a $3 \times 3$ matrix with fewer than $3$ eigenvalues. <BR>
+that the $3\times 3$-matrix $A = \begin{pmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1  \end{pmatrix}$ of the previous example has no other eigenvalues than $-1$ and $5$. So $A$ is a $3 \times 3$-matrix with fewer than $3$ eigenvalues. <BR>
 Things can even be 'worse' as the following example shows. The idea behind it: if $\vect{v}$ is an eigenvector of the matrix $A$, then the vector $\vect{v}$ is mapped to the multiple $\lambda\vect{v}$ by the transformation $T(\vect{x}) = A\vect{x}$.
 A multiple $\lambda\vect{v}$ is a vector with the same direction as $\vect{v}$ or the  direction opposite to $\vect{v}$. With this in mind, can we construct a linear transformation of $\R^2$ to $\R^2$ that certainly does not have such vectors? Yes we can!
 

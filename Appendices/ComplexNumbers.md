@@ -809,9 +809,9 @@ We can now see what happens to the product of two complex numbers. Suppose we ha
 
 \begin{align*}
 zw &= (r\cos(\theta) + i r \sin(\theta)) (s\cos(\phi) + is \sin(\phi))
-\\&= rs \cos(\theta) \cos(\phi) + irs \cos(\theta) \sin(\phi) + irs \sin(\theta) \cos(\phi) + i^2 rs \sin(\theta) \sin(\phi) \nonumber
-\\&= rs( \cos(\theta) \cos(\phi) - \sin(\theta) \sin(\phi)) + irs (\cos(\theta) \sin(\phi) + \sin(\theta) \cos(\phi))\nonumber
-\\&= rs \cos(\theta + \phi) + irs \sin(\theta+\phi) \nonumber
+\\&= rs \cos(\theta) \cos(\phi) + irs \cos(\theta) \sin(\phi) + irs \sin(\theta) \cos(\phi) + i^2 rs \sin(\theta) \sin(\phi)
+\\&= rs( \cos(\theta) \cos(\phi) - \sin(\theta) \sin(\phi)) + irs (\cos(\theta) \sin(\phi) + \sin(\theta) \cos(\phi))
+\\&= rs \cos(\theta + \phi) + irs \sin(\theta+\phi)
 \end{align*}
 
 :::
@@ -1045,7 +1045,7 @@ $$
 ::::{prf:example}
 :label: Ex:ComplexNumbers:DeMoivre
 
-De Moivre's identity allows us to find an expression for $\cos(3\theta)$ in terms of $\cos(\theta)$ and $\sin(\theta)$. Indeed, expanding the right hand side of the identity we have
+De Moivre's identity allows us to find an expression for $\cos(3\theta)$ in terms of $\cos(\theta)$ and $\sin(\theta)$. Indeed, expanding the right-hand side of the identity we have
 
 \begin{align*}
 \cos(3\theta) + i\sin(3\theta) &= \cos(\theta)^3 + 3i\cos(\theta)^2 \sin(\theta) + 3i^2 \cos(\theta) \sin(\theta)^2 + i^3 \sin(\theta)^3
@@ -1089,7 +1089,7 @@ The most basic equations we want to solve are of the form $z^n=w$ for a given co
 
 Consider the equation $z^3=-16+16i$. We know it has 3 complex solutions, as it is a third degree equation. If we write $z=a+bi$ and expand (to find $a$ and $b$), we get a very large expression which is not easy to work with.
 
-If we write $z=re^{i\phi}$ in polar coordinates instead, we can easily express $z^3=r^3e^{3i\phi}$. We also have to express the right hand side in polar coordinates: $-16+16i=16\sqrt{2} e^{\frac34 \pi i}$. Comparing the modulus and argument of these two expressions, we find
+If we write $z=re^{i\phi}$ in polar coordinates instead, we can easily express $z^3=r^3e^{3i\phi}$. We also have to express the right-hand side in polar coordinates: $-16+16i=16\sqrt{2} e^{\frac34 \pi i}$. Comparing the modulus and argument of these two expressions, we find
 
 \begin{align*}
 r^3&=|z^3|= |-16+16i| = 16\sqrt{2},\\
@@ -1133,7 +1133,7 @@ We can generalise the method for solving $z^n=w$ from the example above:
 <ol>
 <li>
 
-Write $z=re^{i\phi}$ (for unknown $r$ and $\phi$) and express the right hand side $w$ in polar coordinates.
+Write $z=re^{i\phi}$ (for unknown $r$ and $\phi$) and express the right-hand side $w$ in polar coordinates.
 
 </li>
 <li>
@@ -1149,7 +1149,7 @@ Solve for $r$ (you only need the single positive real solution).
 
 <li>
 
-Solve for $\phi$, remembering to add $+2\pi k$ first to the right hand side.
+Solve for $\phi$, remembering to add $+2\pi k$ first to the right-hand side.
 
 </li>
 

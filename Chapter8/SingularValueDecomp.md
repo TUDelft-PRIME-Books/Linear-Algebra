@@ -12,7 +12,7 @@ The last two subsections  will be devoted to understanding the SVD in a geometri
 
 ## Definition of the singular value decomposition
 
-Let  $A$ be an $m\times n$ matrix, and let $p$ be the minimum of $m$ and $n$. 
+Let  $A$ be an $m\times n$-matrix, and let $p$ be the minimum of $m$ and $n$. 
 
 ::::{prf:definition}
 :label: SymmetricMat:SVD:Definition
@@ -31,7 +31,7 @@ where
 
 \item $V$ is an $n \times n$  orthogonal matrix,
 
-\item $\Sigma$ is an $m\times n$ matrix which is zero everywhere, apart from the entries  $\Sigma_{ii} = \sigma_i$, $i = 1,\ldots , p$,  which are all $\geq 0$, and in decreasing order. That is,  $\sigma_1 \geq \sigma_2 \geq \ldots \geq \sigma_p$.
+\item $\Sigma$ is an $m\times n$-matrix which is zero everywhere, apart from the entries  $\Sigma_{ii} = \sigma_i$, $i = 1,\ldots , p$,  which are all $\geq 0$, and in decreasing order. That is,  $\sigma_1 \geq \sigma_2 \geq \ldots \geq \sigma_p$.
 
 :::
 
@@ -228,10 +228,10 @@ We start with an important observation that explains the central role of the mat
 ::::{prf:proposition} Computing the sngular values
 :label: Prop:SVD:singularvalues
 
-Let $A$ be an $m\times n$ matrix.  
-The singular values of a matrix $A$ are the square roots of the (nonnegative!) eigenvalues of the $(n \times n)$  matrix $A^TA$.  Thus,  if $\lambda_1 \geq \lambda_2 \geq  \cdots \geq \lambda_n$ are the eigenvalues of $A^TA$,  then  $\sigma_i = \sqrt{\lambda_i}$ are the singular values of $A$. 
+Let $A$ be an $m\times n$-matrix.  
+The singular values of a matrix $A$ are the square roots of the (nonnegative!) eigenvalues of the $n \times n$-matrix $A^TA$.  Thus,  if $\lambda_1 \geq \lambda_2 \geq  \cdots \geq \lambda_n$ are the eigenvalues of $A^TA$,  then  $\sigma_i = \sqrt{\lambda_i}$ are the singular values of $A$. 
 
-More specific, if $A$ is an $m\times n$ matrix with the singular value decomposition $A = U\Sigma V^T$,  then the 'diagonal' elements $\Sigma_{ii}$ of $\Sigma$,  i.e., the singular values $  \sigma_i$,  are the square roots of the eigenvalues $\lambda_i$ of the matrix $A^TA$.  <BR> 
+More specific, if $A$ is an $m\times n$-matrix with the singular value decomposition $A = U\Sigma V^T$,  then the 'diagonal' elements $\Sigma_{ii}$ of $\Sigma$,  i.e., the singular values $  \sigma_i$,  are the square roots of the eigenvalues $\lambda_i$ of the matrix $A^TA$.  <BR> 
 Moreover,  the columns of $V$ are corresponding eigenvectors  (of $A^TA$).
 
 ::::
@@ -274,7 +274,7 @@ Combining {prf:ref}`Prop:QuadForms:MaximumxTAx`  and  {prf:ref}`Prop:SVD:singula
 ::::{prf:proposition}
 :label: Prop:SVD:HighestSigma
 
-Suppose  $A$ is an $m\times n$ matrix. Then the highest singular value is the maximum value that $\norm{A\vect{x}}$ can attain on the set of vectors of norm $1$. 
+Suppose  $A$ is an $m\times n$-matrix. Then the highest singular value is the maximum value that $\norm{A\vect{x}}$ can attain on the set of vectors of norm $1$. 
 This can also be formulated as 
 
 :::{math}
@@ -321,7 +321,7 @@ That is,  for symmetric matrices the maximum of $\norm{A\vect{x}}$ on the set of
 
 We are now ready to present an algorithm to construct an SVD of a matrix.
 To be followed up by examples and some (theoretical) considerations.
-Suppose $A$ is an $m\times n$ matrix of rank $r$. (The rank, as we have seen in {prf:ref}`Prop:SVD:BasicProp`, is the number of nonzero singular values.)
+Suppose $A$ is an $m\times n$-matrix of rank $r$. (The rank, as we have seen in {prf:ref}`Prop:SVD:BasicProp`, is the number of nonzero singular values.)
 
 ::::{prf:algorithm}
 :label: Alg:SVD:SVDalgorithm
@@ -331,18 +331,18 @@ Suppose $A$ is an $m\times n$ matrix of rank $r$. (The rank, as we have seen in 
 2. Find the eigenvalues $\lambda_1 \geq \lambda_2 \geq \ldots \geq \lambda_n$
  of $A^TA$.
 
-3. Construct the $m\times n$ matrix $\Sigma$,  putting zeros on every position except on  the main 'diagonal', where   $\Sigma_{ii}=\sigma_i = \sqrt{\lambda_i} $.
+3. Construct the $m\times n$-matrix $\Sigma$,  putting zeros on every position except on  the main 'diagonal', where   $\Sigma_{ii}=\sigma_i = \sqrt{\lambda_i} $.
 
 4. Compute a complete set of orthonormal eigenvectors $\mathbf{v}_1,\dots,\mathbf{v}_n$,
 corresponding to $\lambda_1, \ldots, \lambda_n$,   and take them as columns in the matrix $V$.
 
 5.  Compute $\mathbf{u}_i = \dfrac{1}{\sigma_i}A\mathbf{v}_i$,     for $i=1,\dots,r$,  where $r$ is the number of nonzero singular values. If $r < m$ extend the set $\{\mathbf{u}_1,\dots,\mathbf{u}_r\}$ to an orthonormal basis $\{\mathbf{u}_1, \dots ,\mathbf{u}_m\}$ of $\mathbb{R}^m$.
 
-6. Construct the $m\times m$ matrix $U$  with columns  $\mathbf{u}_1$, $\dots$, $\mathbf{u}_m$.
+6. Construct the $m\times m$-matrix $U$  with columns  $\mathbf{u}_1$, $\dots$, $\mathbf{u}_m$.
 
 ::::
 
-Apart from step 2., where we need the eigenvalues of an $n\times n$ matrix $A^TA$, every step can be worked out with pen and paper (though step 4. and step 5. can be  terribly error prone). <BR>
+Apart from step 2., where we need the eigenvalues of an $n\times n$-matrix $A^TA$, every step can be worked out with pen and paper (though step 4. and step 5. can be  terribly error prone). <BR>
 The step that, we think,  most needs some explaining is step 5.  Why does it lead to an *orthonormal* set of vectors $\{\mathbf{u}_1,\dots,\mathbf{u}_r\}$?  We will show that indeed it does in the proof of {prf:ref}`Thm:SVD:Existence`.  It is time for an example first  (no nice numbers though!).
 
 
@@ -417,7 +417,7 @@ Along the way we came along some explicit and implicit properties of the matrix 
 :::::{prf:proposition}  Properties of the matrix $A^TA$
 :label: Prop:SVD:propertiesATA
 
-Let $A$ be an $m\times n$ matrix with real entries. Then the following properties hold:
+Let $A$ be an $m\times n$-matrix with real entries. Then the following properties hold:
 
 :::{latexlist}
 :enumerated: true
@@ -469,7 +469,7 @@ All in all we have shown that all vectors in $\Nul{A}$ lie in $\Nul{A^TA}$ and t
 
 (Note that this was already mentioned in {prf:ref}`Prop:LeastSquares:InvertibleATA`, 
 Equation {eq}`Eq:LeastSquares:InvertibilityATA`.)
-\item Observe that since $A$ is an $m\times n$ matrix, we have that $A^TA$ has size $n\times n$. Now, using {prf:ref}`Thm:BasisDim:RankThm` we have
+\item Observe that since $A$ is an $m\times n$-matrix, we have that $A^TA$ has size $n\times n$. Now, using {prf:ref}`Thm:BasisDim:RankThm` we have
 
 $$
 \Rank{A} = n - \dim{\Nul{A}} = n - \dim{\Nul{(A^TA)}} = \Rank{(A^TA)}.
@@ -538,7 +538,7 @@ We want to stress  the importance of property {itemref}`Item:Prop:SVD:properties
 ::::{prf:theorem}  Existence of a singular value decomposition
 :label:  Thm:SVD:Existence
 
-For every $m \times n$ matrix $A$  a singular value decomposition exists
+For every $m \times n$-matrix $A$  a singular value decomposition exists
 
 ::::
 
@@ -622,11 +622,11 @@ Some concluding remarks concerning the algorithm.
 ::::{prf:remark}
 :label: Rem:SVD:PracticalHints
 
- 1. Because of the basic property that says that transposing an SVD of an $m \times n$ matrix $A$ gives an SVD  of $A^T$
+ 1. Because of the basic property that says that transposing an SVD of an $m \times n$-matrix $A$ gives an SVD  of $A^T$
  ({prf:ref}`Prop:SVD:BasicProp` {itemref}`Item:Prop:SVD:BasicProp:Transpose`)
  it may be profitable to  find an SVD for $A^T$ first, and then transpose this. <BR>
- The singular values of $A$ are the eigenvalues of $A^TA$, an $n \times n$ matrix, the singular values of $A^T$ are the eigenvalues of $AA^T$, an
- $m \times m$ matrix.  The smaller the better! <BR>
+ The singular values of $A$ are the eigenvalues of $A^TA$, an $n \times n$-matrix, the singular values of $A^T$ are the eigenvalues of $AA^T$, an
+ $m \times m$-matrix.  The smaller the better! <BR>
  In most applications the singular value decomposition will be applied to  $m\times n$ matrices $A$  with much more rows that columns,  so  $m \gg n$. For such  matrices $A$, 
  working with $A^TA$ is the best bet.
 
@@ -727,9 +727,9 @@ From  $A^T = U\Sigma V^T$  it follows swiftly that  $A = V \Sigma^TU^T$ is an SV
 
 ## Understanding the SVD geometrically
 
-In this section we will have a deeper look at the decomposition and its meaning. As we have done on earlier occasions, we can think about an $m\times n$ matrix $A$ as the standard matrix of a linear transformation from $\R^n$ to $\R^m$.
+In this section we will have a deeper look at the decomposition and its meaning. As we have done on earlier occasions, we can think about an $m\times n$-matrix $A$ as the standard matrix of a linear transformation from $\R^n$ to $\R^m$.
 
-By definition, the matrices $U$ and $V$ in the SVD of an $m\times n$ matrix $A$ 
+By definition, the matrices $U$ and $V$ in the SVD of an $m\times n$-matrix $A$ 
 are orthogonal matrices. Thus the columns of $U$ give an orthonormal basis of $\R^m$,  the columns of $V$ an orthonormal basis of $\R^n$. The decomposition $U\Sigma V^T$ then becomes a composition of transformations. We can visualise this using the graph in {numref}`Figure %s <Fig:SVD:decomposition>`:
 
 :::::{figure} Images/Fig-SVD-Decomposition.svg
@@ -741,7 +741,7 @@ Diagram showing the SVD as a composition of linear transformations.
 :::::
 
 
-Let us first consider the case where $A$ is a  $2 \times 2$ matrix, as in that case everything takes place in the plane, and we can make an exact drawing of what is going on. 
+Let us first consider the case where $A$ is a  $2 \times 2$-matrix, as in that case everything takes place in the plane, and we can make an exact drawing of what is going on. 
 Every  $2\times 2$  orthogonal matrix has one of the two forms
 
 $$
@@ -847,7 +847,7 @@ Geometric decomposition of $\tilde{A} = \dfrac{1}{\sqrt{5}}\begin{pmatrix} 5 & 2
 
 ::::
 
-In general, for an $m\times n$ matrix $A$ of say rank $r$, suppose
+In general, for an $m\times n$-matrix $A$ of say rank $r$, suppose
 
 $$
    A = U\Sigma V^T
@@ -857,7 +857,7 @@ is a singular value decomposition.
 Since $V^T$ is an orthogonal matrix, it will map the $\mathbb{R}^n$ onto itself and it will preserve the norms of all vectors. 
 More precisely, it will map the 'principal axes' corresponding to  $\vect{v}_1,\ldots,\vect{v}_n$  onto the coordinate axes generated by  $\vect{e}_1, \ldots, \vect{e}_n$. With that, the $n$-dimensional unit sphere, consisting of all vectors of norm 1, is mapped onto itself.
 
-The $m \times n$ matrix $\Sigma$ maps the first $r$ basis vectors 
+The $m \times n$-matrix $\Sigma$ maps the first $r$ basis vectors 
 $\vect{e}_1, \ldots, \vect{e}_r$ in $\R^n$ to the vectors 
 $\sigma_1\vect{e}_1, \ldots, \sigma_r\vect{e}_r$ in $\R^m$.  The remaining (if any) basis vectors $\vect{e}_{r+1}, \ldots, \vect{e}_n$
 are mapped to $\vect{0}\in \R^{m}$.  All in all, $\Sigma$ maps the unit sphere in $\R^n$ onto an $r$-dimensional 'ellipsoid' in $\R^m$.
@@ -883,7 +883,7 @@ We start with the first.  <BR>
 Numerical data can be stored in a matrix.<BR>
 For instance, a black-and-white picture/photo can be stored 'pixel by pixel', by numbers that indicate the gray scale, which may for instance be any integer from 0 (completely white) to 31 (completely black). A 4:5 photo may then be stored as, say,  a 1080x1350 matrix.
 <BR>
-As another example, think of a survey of $n$ questions that have to be answered using a 1-5 scale.  If the numbers of respondents is $N$, the data can be represented by an $N \times n$ matrix.
+As another example, think of a survey of $n$ questions that have to be answered using a 1-5 scale.  If the numbers of respondents is $N$, the data can be represented by an $N \times n$-matrix.
 
 In the first situation there will be both a high correlation between columns that are close to each other, as well as between nearby rows.  If the picture is a true photo the matrix will be far from a 'random' matrix.
 In the second context  one might expect that the columns will highly correlate:  people that agree on certain issues are more likely to agree on other issues as well.  
@@ -927,7 +927,7 @@ of the first $k$ terms gives a good approximation of the matrix $A$.
 
 The gain is the following:
 
-- If the data is put in the form of an $m \times n$ matrix $A$, then it needs $m \times n$ memory cells to store $A$. 
+- If the data is put in the form of an $m \times n$-matrix $A$, then it needs $m \times n$ memory cells to store $A$. 
 
 - If $k$  is much smaller than $r = \operatorname{rank}A$
 (which in general will be equal to the smallest of $m$ and $n$),  then $U_k$,  $V_k$  and the $k$ largest singular values only take up $m\times k + n\times k + k  = (m+n+k)k$,  memory places.
@@ -1039,7 +1039,7 @@ We expect $A_3$ to be a good approximation of $A$.
 
   As you can see,  $A_3$  closely resembles $A$. (You have to trust us with regard to the hidden columns.) The gain:
   
-  - To store  the $12\times10$  matrix $A$, we have to store  $120$ reals.
+  - To store  the $12\times10$-matrix $A$, we have to store  $120$ reals.
 
   - To store $U_3, \Sigma_{33}$ and $V_3$ , we only have to store  $12\times3 + 3 + 10\times 3 = 69$ numbers.  The middle 3 comes from first three elements (the singular values) on the diagonal of $\Sigma$.  
   

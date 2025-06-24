@@ -410,7 +410,7 @@ $$
   ad - bc = 0.
 $$
 
-If a $2 \times 2$ matrix has two linearly dependent columns, then
+If a $2 \times 2$-matrix has two linearly dependent columns, then
 one of the columns will be a multiple of the other column, e.g.
 
 $$
@@ -540,7 +540,7 @@ Before we go there we will look at some general properties of invertible matrice
 ::::::{prf:proposition}
 :label: Prop:SolutionViaInverse
 
-If the $n \times n$ matrix $A$ is invertible and $B$ is an $n \times p$ matrix, then the solution of the matrix equation
+If the $n \times n$-matrix $A$ is invertible and $B$ is an $n \times p$-matrix, then the solution of the matrix equation
 
 $$
   AX = B
@@ -921,7 +921,7 @@ $$
 
 where $k = 1,2,\ldots, n$.
 
-Let us first focus on this equation by considering a fairly general $3\times 3$ matrix $A$.
+Let us first focus on this equation by considering a fairly general $3\times 3$-matrix $A$.
 
 ::::::{prf:example}
 :label: Ex:MatrixInv:SolveAX=I
@@ -1347,7 +1347,7 @@ $$
 ::::::{prf:theorem}
 :label: Thm:MatrixInv:InvertibilityCharacterizations
 
-For an $n\times n$ matrix $A$, the following statements are equivalent.
+For an $n\times n$-matrix $A$, the following statements are equivalent.
 <br/>
 That is, each of the following properties is a characterisation of invertibility of a square matrix $A$.
 
@@ -1407,7 +1407,7 @@ The following exercise contains a few.
 ::::::{exercise}
 :label: Exc:MatrixInv:LastEquivalencesInvertibility
 
-Show that invertibility of an $n\times n$ matrix $A$ is also equivalent to
+Show that invertibility of an $n\times n$-matrix $A$ is also equivalent to
 
 <ul>
 <li>
@@ -1448,7 +1448,7 @@ The remaining exercises tend to be more theoretic.
 :url: https://embed.grasple.com/exercises/6683a2f9-7b6b-4dd1-bec1-1e8b894fa3bb?id=71086
 :label: grasple_exercise_3_4_1
 :dropdown:
-:description: To compute the inverse of a $2 \times 2$ matrix.
+:description: To compute the inverse of a $2 \times 2$-matrix.
 
 ::::::
 
@@ -1457,7 +1457,7 @@ The remaining exercises tend to be more theoretic.
 :url: https://embed.grasple.com/exercises/1bbca38b-a734-4049-b8a2-f79d4bf1b098?id=71087
 :label: grasple_exercise_3_4_2
 :dropdown:
-:description: To compute the inverse of a $2 \times 2$ matrix.
+:description: To compute the inverse of a $2 \times 2$-matrix.
 
 ::::::
 
@@ -1466,7 +1466,7 @@ The remaining exercises tend to be more theoretic.
 :url: https://embed.grasple.com/exercises/045cd183-ab19-4675-908c-26c41298bade?id=83051
 :label: grasple_exercise_3_4_3
 :dropdown:
-:description: To compute the inverse of a $2 \times 2$ matrix.
+:description: To compute the inverse of a $2 \times 2$-matrix.
 
 ::::::
 
@@ -1475,7 +1475,7 @@ The remaining exercises tend to be more theoretic.
 :url: https://embed.grasple.com/exercises/82c06a56-8ee8-4f36-8173-e5d56da1e8e3?id=71073
 :label: grasple_exercise_3_4_4  
 :dropdown:
-:description: To compute  the inverse of a $3 \times 3$ matrix step by step.
+:description: To compute  the inverse of a $3 \times 3$-matrix step by step.
 
 ::::::
 
@@ -1484,7 +1484,7 @@ The remaining exercises tend to be more theoretic.
 :url: https://embed.grasple.com/exercises/551172d9-861c-4958-9b17-dfa828acdabe?id=71088
 :label: grasple_exercise_3_4_5  
 :dropdown:
-:description: To compute the inverse of a $3 \times 3$ matrix.
+:description: To compute the inverse of a $3 \times 3$-matrix.
 
 ::::::
 ::::::{grasple}
@@ -1492,7 +1492,7 @@ The remaining exercises tend to be more theoretic.
 :url: https://embed.grasple.com/exercises/9174c68c-e2d5-4c23-af96-e3fe3dd36f42?id=71089
 :label: grasple_exercise_3_4_6
 :dropdown:
-:description: To compute the inverse of a $3 \times 3$ matrix.
+:description: To compute the inverse of a $3 \times 3$-matrix.
 
 ::::::
 
@@ -1501,7 +1501,7 @@ The remaining exercises tend to be more theoretic.
 :url: https://embed.grasple.com/exercises/800dc2f9-227e-401b-818b-093fc9647dd9?id=83083
 :label: grasple_exercise_3_4_7
 :dropdown:
-:description: To compute the inverse of a $4 \times 4$ matrix.
+:description: To compute the inverse of a $4 \times 4$-matrix.
 
 ::::::
 
@@ -1662,7 +1662,7 @@ In the last two exercises (non-)invertibility of non-square matrices is consider
 :url: https://embed.grasple.com/exercises/4e9b4ec1-f775-430f-b81f-c76c42fcbc76?id=60136
 :label: grasple_exercise_3_4_24
 :dropdown:
-:description: To explore invertibility for a $3\times 2$ matrix.
+:description: To explore invertibility for a $3\times 2$-matrix.
 ::::::
 
 ::::::{grasple}
@@ -1670,5 +1670,5 @@ In the last two exercises (non-)invertibility of non-square matrices is consider
 :url: https://embed.grasple.com/exercises/ca504661-cc62-454f-8035-04a9bef85f91?id=61170
 :label: grasple_exercise_3_4_25
 :dropdown:
-:description: To explore invertibility for a $2\times 3$ matrix.
+:description: To explore invertibility for a $2\times 3$-matrix.
 ::::::

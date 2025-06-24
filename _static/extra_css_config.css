@@ -1,6 +1,6 @@
-html[data-theme='dark'] .dark-light {
+/* html[data-theme='dark'] .dark-light {
   filter: invert(1) hue-rotate(180deg) saturate(1.5);
-}
+} */
 
 html[data-theme='dark'] .dark-light-same {
   background-color: transparent !important;

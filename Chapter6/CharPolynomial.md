@@ -12,7 +12,7 @@ In this section we will show that **the eigenvalues are exactly the zeros of a p
 ::::::{prf:proposition}
 :label: Prop:Eigenvalues:DetAminusLambdaI
 
-Suppose $A$ is an $n\times n$ matrix. Then $\lambda$ is an eigenvalue of $A$ if and only if the determinant of the matrix $A -\lambda I$ is equal to zero.
+Suppose $A$ is an $n\times n$-matrix. Then $\lambda$ is an eigenvalue of $A$ if and only if the determinant of the matrix $A -\lambda I$ is equal to zero.
 
 ::::::
 
@@ -37,7 +37,6 @@ and this, in its turn, is equivalent to
 
 $$
 \det({A - \lambda I)} = 0.
-\nonumber
 $$
 
 ::::::
@@ -78,7 +77,7 @@ In the remark immediately after that example we mentioned that it is possible to
 
 ::::::
 
-In general, to compute the characteristic polynomial of an $n \times n$ matrix when $n > 2$ becomes cumbersome. And to find its zeros is close to impossible. There is one exception, which is when the matrix is of triangular form. Recall that this means that either all entries below the diagonal are zero (in which case the matrix is upper triangular), or all entries above the diagonal are zero.
+In general, to compute the characteristic polynomial of an $n \times n$-matrix when $n > 2$ becomes cumbersome. And to find its zeros is close to impossible. There is one exception, which is when the matrix is of triangular form. Recall that this means that either all entries below the diagonal are zero (in which case the matrix is upper triangular), or all entries above the diagonal are zero.
 
 ::::::{prf:example}
 :label: Ex:EigenValues:TriangularMatrix
@@ -117,9 +116,9 @@ Note that this includes diagonal matrices $D$.
 
 ::::::
 
-For the $2\times 2$ matrix in {prf:ref}`Ex:EigenValues:FirstCharPoly` the expression $\det(A - \lambda I)$ eventually comes down to a polynomial of degree 2.
+For the $2\times 2$-matrix in {prf:ref}`Ex:EigenValues:FirstCharPoly` the expression $\det(A - \lambda I)$ eventually comes down to a polynomial of degree 2.
 
-For an arbitrary $2 \times 2$ matrix $A = \begin{pmatrix} a-\lambda & b \\ c & d-\lambda \end{pmatrix}$ we quickly see that
+For an arbitrary $2 \times 2$-matrix $A = \begin{pmatrix} a-\lambda & b \\ c & d-\lambda \end{pmatrix}$ we quickly see that
 
 $$
 \operatorname{det}(A - \lambda I) = \begin{vmatrix} a-\lambda & b \\ c & d-\lambda \end{vmatrix} =
@@ -132,16 +131,16 @@ That this can be generalised to arbitrary matrices is the content of the next pr
 ::::::{prf:proposition}
 :label: Prop:EigenValues:CharPoly
 
-For an $n\times n$ matrix $A$ the function $\det(A - \lambda I)$ is a polynomial of degree $n$.
+For an $n\times n$-matrix $A$ the function $\det(A - \lambda I)$ is a polynomial of degree $n$.
 
 ::::::
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:EigenValues:CharPoly`
 :class: tudproof
 
-We have to dive into the hardware of determinants a bit. If the determinant of an $n\times n$ matrix $M$ is computed by iteratively expanding along the first rows, i.e., doing it the hard way, we end up with a sum of $n!$ terms. Each term is the product of $n$ entries of $M$, where each row and each column of $A$ is represented exactly once.
+We have to dive into the hardware of determinants a bit. If the determinant of an $n\times n$-matrix $M$ is computed by iteratively expanding along the first rows, i.e., doing it the hard way, we end up with a sum of $n!$ terms. Each term is the product of $n$ entries of $M$, where each row and each column of $A$ is represented exactly once.
 
-Now we apply this to the matrix $M = (A  - \lambda I)$, where $A$ is the most general $n\times n$ matrix. We then can deduce that
+Now we apply this to the matrix $M = (A  - \lambda I)$, where $A$ is the most general $n\times n$-matrix. We then can deduce that
 
 $$
 \operatorname{det}(A - \lambda I) =
@@ -182,7 +181,7 @@ Let us put the important properties of the characteristic polynomial that we hav
 ::::::{prf:theorem}
 :label: Thm:CharPoly:BasicProperties
 
-The characteristic polynomial of the $n \times n$ matrix $A$
+The characteristic polynomial of the $n \times n$-matrix $A$
 
 <ul>
 <li>
@@ -204,7 +203,7 @@ its _zeros_ are the _eigenvalues_ of the matrix $A$.
 
 ::::::
 
-As a corollary we find a second argument why an $n\times n$ matrix cannot have more than $n$ different eigenvalues: a polynomial of degree $n$ can have at most $n$ zeros.
+As a corollary we find a second argument why an $n\times n$-matrix cannot have more than $n$ different eigenvalues: a polynomial of degree $n$ can have at most $n$ zeros.
 
 A note of warning: to compute the determinant of the matrix $A - \lambda I$ it may seem helpful to first row reduce the matrix $A$ to echelon form $E$, and then take the determinant of $E - \lambda I$, which is a triangular matrix. However, that procedure is incorrect. Except for very special cases, in general
 
@@ -267,7 +266,7 @@ $$
 ::::::
 
 From the examples so far it seems we have solved the question of how to find the eigenvalues. However, there is a proviso:
-if we start with a 'full' $3 \times 3$ matrix $A$, there may be nothing better to do than to compute $\det(A - \lambda I)$
+if we start with a 'full' $3 \times 3$-matrix $A$, there may be nothing better to do than to compute $\det(A - \lambda I)$
 by iteratively expanding across columns or rows. We then end up with a cubic polynomial, not in factorised form.
 In general it will be quite a hard task to compute its zeros. Obviously, things get even worse in higher dimensions.
 
@@ -318,7 +317,7 @@ A - 3I = \left(\begin{array}{ccc} 4-3 & -1 & -2 \\0 & 3-3 & 0 \\ 1 & 2 & 1-3  \e
 .
 $$
 
-This is a $3 \times 3$ matrix of rank 2, so its null space has dimension $3-2 =1$, and we conclude that the geometric multiplicity of the eigenvalue
+This is a $3 \times 3$-matrix of rank 2, so its null space has dimension $3-2 =1$, and we conclude that the geometric multiplicity of the eigenvalue
 $\lambda = 3$ is equal to 1.
 For the other eigenvalue we perform a similar computation:
 
@@ -391,13 +390,13 @@ The following exercise, which is meant to shed some more light on the concepts j
 (Subsec:EV:SpecPropCharPoly)=
 ## Some special properties of the characteristic polynomial
 
-In the proof of {prf:ref}`Prop:EigenValues:CharPoly` it was mentioned that for an $n \times n$ matrix $A$ the coefficient of the highest power $\lambda^n$  is equal to  $(-1)^n$.
+In the proof of {prf:ref}`Prop:EigenValues:CharPoly` it was mentioned that for an $n \times n$-matrix $A$ the coefficient of the highest power $\lambda^n$  is equal to  $(-1)^n$.
 In this subsection we will find expressions for two other coefficients of the characteristic polynomial. The results we mention are interesting in themselves, but they are not essential for the sequel.
 
 ::::::{prf:proposition}
 :label: Prop:EigenValues:CharPolyTrace
 
-Suppose the characteristic polynomial of the $n \times n$ matrix $A$ is given by
+Suppose the characteristic polynomial of the $n \times n$-matrix $A$ is given by
 
 :::{math}
 :label: Eq:EigenValues:CharPoly
@@ -420,7 +419,7 @@ $$
 
 ::::::
 
-For $n=2$ we have already seen that the characteristic polynomial of the most general $2 \times 2$ matrix
+For $n=2$ we have already seen that the characteristic polynomial of the most general $2 \times 2$-matrix
 $A = \left(\begin{array}{cc} a_{11} & a_{12} \\ a_{21} & a_{22} \end{array}\right)
 = \left(\begin{array}{cc} a & b \\ c & d \end{array}\right) $ is given by
 
@@ -450,7 +449,7 @@ $$
 \operatorname{det}(A)= \operatorname{det}(A - 0I) = p_A(0) = c_n0^n + c_{n-1}0^{n-1} + \ldots + c_1\cdot 0 + c_0 = c_0.
 $$
 
-For the other  coefficient we will not give the slightly technical  argument for an $n\times n$ matrix.  The idea will be pretty much clear when we consider a general $3 \times 3$ matrix
+For the other  coefficient we will not give the slightly technical  argument for an $n\times n$-matrix.  The idea will be pretty much clear when we consider a general $3 \times 3$-matrix
 
 $$
  A = \left(\begin{array}{ccc} a_{11} & a_{12} & a_{13} \\a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33}  \end{array}\right).
@@ -477,7 +476,7 @@ a_{31}  & a_{32}  \end{array}\right|.
 $$
 
 The highest power of $\lambda$ coming from the second and the third terms is $\lambda^1$, so the coefficients of $\lambda^3$ and of $\lambda^2$
-are completely determined by the first term. A closer look at that term yields that these two coefficients in fact come from the product $(a_{11}-\lambda)(a_{22}-\lambda)(a_{33}-\lambda)$. For a general $n\times n$ matrix $A$ the first two coefficients also come from the 'diagonal product' of the complete expansion of $\det{(A - \lambda I)}$.
+are completely determined by the first term. A closer look at that term yields that these two coefficients in fact come from the product $(a_{11}-\lambda)(a_{22}-\lambda)(a_{33}-\lambda)$. For a general $n\times n$-matrix $A$ the first two coefficients also come from the 'diagonal product' of the complete expansion of $\det{(A - \lambda I)}$.
 
 Expanding this product further we see that
 
@@ -496,7 +495,7 @@ $$
 ::::::{prf:definition}
 :label: Dfn:Eigenvalues:Trace
 
-The sum of the diagonal entries of an $n\times n$ matrix $A$ is called the **trace** of $A$:
+The sum of the diagonal entries of an $n\times n$-matrix $A$ is called the **trace** of $A$:
 
 $$
   \operatorname{tr}(A) = a_{11} + a_{22} + \ldots + a_{nn} = \sum_{i=1}^{n}  a_{ii}.
@@ -504,7 +503,7 @@ $$
 
 ::::::
 
-With this new terminology we can restate the second property in {prf:ref}`Prop:Eigenvalues:SumEigenvaluesAndTrace`  as follows.  For an $n\times n$ matrix $A$  the coefficient $c_{n-1}$ of $\lambda^{n-1}$ satisfies
+With this new terminology we can restate the second property in {prf:ref}`Prop:Eigenvalues:SumEigenvaluesAndTrace`  as follows.  For an $n\times n$-matrix $A$  the coefficient $c_{n-1}$ of $\lambda^{n-1}$ satisfies
 
  $$
    c_{n-1} = (-1)^{n-1} \operatorname{tr}(A).
@@ -513,7 +512,7 @@ With this new terminology we can restate the second property in {prf:ref}`Prop:E
 ::::::{prf:proposition}
 :label: Prop:Eigenvalues:SumEigenvaluesAndTrace
 
-Let   $A$ an $n\times n$ matrix with $n$ eigenvalues  $\lambda_1,\lambda_2,  \ldots , \lambda_n$, where eigenvalues/zeros of multiplicity $k$ are counted $k$ times. Then the sum of the eigenvalues is equal to the trace of $A$ and the product of the eigenvalues equals the determinant of $A$. For short:
+Let   $A$ an $n\times n$-matrix with $n$ eigenvalues  $\lambda_1,\lambda_2,  \ldots , \lambda_n$, where eigenvalues/zeros of multiplicity $k$ are counted $k$ times. Then the sum of the eigenvalues is equal to the trace of $A$ and the product of the eigenvalues equals the determinant of $A$. For short:
 
 :::{math}
 :label: Eq:Eigenvalues:SumEigenvaluesAndTrace
@@ -628,7 +627,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 :url: https://embed.grasple.com/exercises/b43cd5dc-3fff-432a-bdec-d56e38c39e89?id=91450
 :label: grasple_exercise_6_2_1
 :dropdown:
-:description:  To find the characteristic polynomial of a $2\times 2$ matrix $A$.
+:description:  To find the characteristic polynomial of a $2\times 2$-matrix $A$.
 
 
 ::::::
@@ -639,7 +638,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 :url: https://embed.grasple.com/exercises/b89efbb3-c5cc-4fab-874b-8dd285644ab2?id=91452
 :label: grasple_exercise_6_2_2 
 :dropdown:
-:description:  To find the eigenvalues of a $2\times 2$ matrix $A$.
+:description:  To find the eigenvalues of a $2\times 2$-matrix $A$.
 
 ::::::
 
@@ -649,7 +648,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 :url: https://embed.grasple.com/exercises/137aaf98-60d5-4aab-82f4-10ea40811a7b?id=91453
 :label: grasple_exercise_6_2_3 
 :dropdown:
-:description:  To find the eigenvalues of a $3\times 3$ matrix $A$.
+:description:  To find the eigenvalues of a $3\times 3$-matrix $A$.
 
 ::::::
 
@@ -660,7 +659,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 :url: https://embed.grasple.com/exercises/e3793a52-25f0-48cd-b47f-b59f872e3e1a?id=91454
 :label: grasple_exercise_6_2_4 
 :dropdown:
-:description:  To find the eigenvalues of a $3\times 3$ matrix $A$.
+:description:  To find the eigenvalues of a $3\times 3$-matrix $A$.
 
 ::::::
 
@@ -670,7 +669,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 :url: https://embed.grasple.com/exercises/3597a3e9-17b7-491c-89a7-4f33f1a4fb8c?id=91482
 :label: grasple_exercise_6_2_5
 :dropdown:
-:description:  To find the eigenvalues of a $4\times 4$ matrix $A$.
+:description:  To find the eigenvalues of a $4\times 4$-matrix $A$.
 
 ::::::
 
@@ -693,7 +692,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 :url: https://embed.grasple.com/exercises/2c30dad3-17a4-4f20-b277-fd13e0c93e9f?id=92384
 :label: grasple_exercise_6_2_7 
 :dropdown:
-:description: Finding the geometric multiplicities of the eigenvalues of a $3\times3$ matrix $A$. 
+:description: Finding the geometric multiplicities of the eigenvalues of a $3\times3$-matrix $A$. 
 
 ::::::
 
@@ -703,7 +702,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 :url: https://embed.grasple.com/exercises/e35e7cfb-2a21-4849-ae48-6c7a94e85707?id=92409
 :label: grasple_exercise_6_2_8
 :dropdown:
-:description:  Finding the geometric multiplicity of the eigenvalue of a $3\times3$ matrix $A$. 
+:description:  Finding the geometric multiplicity of the eigenvalue of a $3\times3$-matrix $A$. 
 
 ::::::
 
@@ -713,7 +712,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 :url: https://embed.grasple.com/exercises/eb3e8ea4-3a0b-4767-aa62-0d8b05e35dda?id=91484
 :label: grasple_exercise_6_2_9
 :dropdown:
-:description:  To find the eigenvalues and their multiplicities of an almost upper triangular $4 \times 4$ matrix $A$.
+:description:  To find the eigenvalues and their multiplicities of an almost upper triangular $4 \times 4$-matrix $A$.
 
 ::::::
 
@@ -743,6 +742,6 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 :url: https://embed.grasple.com/exercises/b846c6e6-f2c6-4d5b-bc40-adaed4cf6276?id=92490
 :label: grasple_exercise_6_2_12
 :dropdown:
-:description:  To find the 2nd and 3rd eigenvalue of $3\times 3$ matrix with known determinant and trace.
+:description:  To find the 2nd and 3rd eigenvalue of $3\times 3$-matrix with known determinant and trace.
 
 ::::::

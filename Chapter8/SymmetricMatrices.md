@@ -174,14 +174,12 @@ On the one hand
 
 $$
    (A\mathbf{v}_1) \ip \mathbf{v}_2 = (\lambda_1\mathbf{v}_1) \ip \mathbf{v}_2 =  \lambda_1(\mathbf{v}_1 \ip \mathbf{v}_2).
-\nonumber
 $$
 
 On the other hand
 
 $$
    (A\mathbf{v}_1) \ip \mathbf{v}_2 = (A\mathbf{v}_1)^T \mathbf{v}_2 =\mathbf{v}_1^TA^T \mathbf{v}_2.
-\nonumber
 $$
 
 Since we assumed that $A^T = A$ we can extend the chain of identities:
@@ -189,21 +187,18 @@ Since we assumed that $A^T = A$ we can extend the chain of identities:
 $$
   \mathbf{v}_1^TA^T \mathbf{v}_2 =   \mathbf{v}_1^T A \mathbf{v}_2 =\mathbf{v}_1^T (A \mathbf{v}_2) =
   \mathbf{v}_1^T (\lambda_2 \mathbf{v}_2) =  \lambda_2(\mathbf{v}_1^T  \mathbf{v}_2) =  \lambda_2(\mathbf{v}_1 \ip \mathbf{v}_2).
-\nonumber
 $$
 
 So we have shown that
 
 $$
     (A\mathbf{v}_1) \ip \mathbf{v}_2  = \lambda_1(\mathbf{v}_1 \ip \mathbf{v}_2) = \lambda_2(\mathbf{v}_1 \ip \mathbf{v}_2).
-\nonumber
 $$
 
 Since
 
 $$
 \lambda_1 \neq \lambda_2,
-\nonumber
 $$
 
 it follows that indeed
@@ -336,14 +331,12 @@ Then the characteristic polynomial is computed as
 $$
   \begin{vmatrix} a-\lambda&b\\b&d-\lambda \end{vmatrix} =
   (a-\lambda)(d-\lambda) - b^2 = \lambda^2 - (a+d)\lambda + ad - b^2.
-\nonumber
 $$
 
 The discriminant of this second order polynomial is given by
 
 $$
   D =  (a+d)^2 -4(ad -b^2) = a^2+d^2 - 2ad + 4b^2 = (a-d)^2 + 4b^2 \geq 0.
-\nonumber
 $$
 
 The discriminant is non-negative, so the characteristic polynomial has only real roots, and consequently the eigenvalues of the matrix are real.
@@ -385,7 +378,6 @@ $$
         &=&
          (1-\lambda) (\lambda^2-6\lambda) =  (1-\lambda) (\lambda-6)\lambda.
         \end{array}
-    \nonumber
 $$
 
 So $A$ has the real eigenvalues $\lambda_{1} = 1$, $\lambda_2 = 6$ and $\lambda_3 = 0$. Since all eigenvalues have algebraic multiplicity 1, the corresponding eigenvectors will give a basis of eigenvectors, and we can immediately conclude that $A$ is diagonalisable.
@@ -396,7 +388,6 @@ $$
    \mathbf{v}_1 = \begin{pmatrix} 2 \\-1 \\ 0 \end{pmatrix} \text{ for } \lambda_1 = 1, \quad
    \mathbf{v}_2 = \begin{pmatrix} 1 \\ 2 \\ 5 \end{pmatrix} \text{ for } \lambda_2, \quad
    \mathbf{v}_3 = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} \text{ for } \lambda_3.
-\nonumber
 $$
 
 We see: the three eigenvectors form an orthogonal threesome, in accordance
@@ -419,7 +410,7 @@ For $\lambda = -2$ we find via row reduction
 $$
     (A - (-2)I\,|\,\mathbf{0}) =
     \left(\begin{array}{ccc|c} 4&2&4&0\\2 & 1 & 2 &0\\ 4&2&4&0\end{array}\right)       \sim
-    \left(\begin{array}{ccc|c} 2&1&2&0\\0&0&0&0 \\0&0&0&0\end{array}\right)    \nonumber
+    \left(\begin{array}{ccc|c} 2&1&2&0\\0&0&0&0 \\0&0&0&0\end{array}\right) 
 $$
 
 the two linearly independent eigenvectors $\mathbf{v}_1 = \begin{pmatrix} 1 \\ 0 \\ -1\end{pmatrix}$ and
@@ -568,7 +559,7 @@ And now it's time for the proof of the main theorem. The proof is of the type te
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:SymmetricMat:OrthogDiag`
 :class: tudproof, dropdown
 
-Suppose that $A$ is a symmetric $n \times n$ matrix. We know there are $n$ real, possibly multiple, eigenvalues
+Suppose that $A$ is a symmetric $n \times n$-matrix. We know there are $n$ real, possibly multiple, eigenvalues
 $\lambda_1, \lambda_2, \ldots, \lambda_n$.
 Suppose $\vect{q}_1$ is an eigenvector for $\lambda_1$ with unit length.
 We can extend $\{\vect{q}_1\}$ to an orthonormal basis $\{\vect{q}_1,\vect{q}_2,\ldots,\vect{q}_n\}$.
@@ -584,7 +575,7 @@ $$
    \end{array}\right)
 $$
 
-where $B_1$ is an $(n-1)\times(n-1)$ matrix that is also symmetric.
+where $B_1$ is an $(n-1)\times(n-1)$-matrix that is also symmetric.
 
 Namely, the first column of $A_1$ can be computed as
 
@@ -826,7 +817,7 @@ The importance of the step-by-step reduction is that it shows that from the 'min
 
 ## Maximising $||A\vect{x}||$ for a symmetric matrix $A$.
 
-How much can a vector $\vect{x}$ in $\R^{n}$ 'blow up' when multiplied by an $m \times n$ matrix $A$?
+How much can a vector $\vect{x}$ in $\R^{n}$ 'blow up' when multiplied by an $m \times n$-matrix $A$?
 To answer this question we have to consider how to maximise the ratio
 
 ::::{math}
@@ -923,7 +914,7 @@ As mentioned,  {prf:ref}`Ex:SymmetricMat:Max||Ax||`  contains the main idea, but
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SymmetricMat:Max||Ax||`
 :class: tudproof, dropdown
 
-Suppose  $A$ is a symmetric $n \times n$ matrix.
+Suppose  $A$ is a symmetric $n \times n$-matrix.
 Then $A$ has an orthonormal basis $\vect{u}_1, \vect{u}_2,\ldots,\vect{u}_n$ of eigenvectors for the eigenvalues  $\lambda_1, \ldots, \lambda_n$, where we may suppose that these are ordered according to their absolute values in decreasing order
 
 $$
@@ -1102,7 +1093,7 @@ If in {prf:ref}`Thm:SymmetricMat:SpectralDecomp` the projections onto eigenvecto
 ::::{prf:corollary} Spectral Theorem, alternative version
 :label: Cor:SymmetricMat:SpectralThm-2
 
-Every symmetric $n \times n$ matrix $A$ can be written as a linear combination of the orthogonal projections onto its (orthogonal) eigenspaces.
+Every symmetric $n \times n$-matrix $A$ can be written as a linear combination of the orthogonal projections onto its (orthogonal) eigenspaces.
 
 $$
    A = \lambda_1 P_1 + \, \ldots \, + \lambda_k P_k,

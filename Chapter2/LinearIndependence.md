@@ -14,7 +14,7 @@ We will now formalise this concept of superfluous vectors.
 ::::::{prf:definition}
 :label: Def:LinInd:LinInd
 
-We will call a set $S$ of vectors **linearly dependent** if there is some $\mathbf{v}$ in $S$ such that $\Span{S}=\Span{S\setminus\left\lbrace\mathbf{v}\right\rbrace}$. In this case, we say that $\mathbf{v}$ is **linearly dependent on**  $S\setminus\left\lbrace\mathbf{v}\right\rbrace$. If $S$ is not linearly dependent, we say $S$ is **linearly independent**.
+We will call a set $S$ of vectors **linearly dependent** if there is some $\mathbf{v}$ in $S$ such that $\operatorname{Span}S=\operatorname{Span}S\setminus\left\lbrace\mathbf{v}\right\rbrace$. In this case, we say that $\mathbf{v}$ is **linearly dependent on**  $S\setminus\left\lbrace\mathbf{v}\right\rbrace$. If $S$ is not linearly dependent, we say $S$ is **linearly independent**.
 
 ::::::
 
@@ -46,12 +46,12 @@ precisely two vectors, say $\mathbf{u}$ and $\mathbf{v}$. Then $S$ is linearly i
 <ul>
 <li>
 
-Assume $S=\left\lbrace\mathbf{v}\right\rbrace$. The span of $S\setminus\left\lbrace\mathbf{v}\right\rbrace$ is the span of the empty set, which is precisely $\left\lbrace\mathbf{0}\right\rbrace$. This is equal to $\Span{S}$ if and only if $\mathbf{v}=\mathbf{0}$.
+Assume $S=\left\lbrace\mathbf{v}\right\rbrace$. The span of $S\setminus\left\lbrace\mathbf{v}\right\rbrace$ is the span of the empty set, which is precisely $\left\lbrace\mathbf{0}\right\rbrace$. This is equal to $\operatorname{Span}S$ if and only if $\mathbf{v}=\mathbf{0}$.
 
 </li>
 <li>
 
-If $\Span{S}=\Span{\mathbf{v}}$ then $\mathbf{u}$ is in $\Span{\mathbf{v}}$ so it is a multiple of $\mathbf{v}$. Similarly, if $\Span{S}=\Span{\mathbf{u}}$ then $\mathbf{v}$ is in $\Span{\mathbf{u}}$ so it is a multiple of $\mathbf{u}$.
+If $\operatorname{Span}S=\Span{\mathbf{v}}$ then $\mathbf{u}$ is in $\Span{\mathbf{v}}$ so it is a multiple of $\mathbf{v}$. Similarly, if $\operatorname{Span}S=\Span{\mathbf{u}}$ then $\mathbf{v}$ is in $\Span{\mathbf{u}}$ so it is a multiple of $\mathbf{u}$.
 
 </li>
 </ul>
@@ -99,14 +99,14 @@ which are shown on the left in {numref}`Figure %s <Fig:LinInd:Examplein2D>`. The
 
 :::
 
-Indeed, if we take an arbitrary vector $\mathbf{v}$ in $\Span{S}$, we can write it as
+Indeed, if we take an arbitrary vector $\mathbf{v}$ in $\operatorname{Span}S$, we can write it as
 
 \begin{align*}
 \mathbf{v}&=c_{1}\mathbf{v}_{1}+c_{2}\mathbf{v}_{2}+c_{3}\mathbf{v}_{3}\\
 &=(c_{2}-c_{1})\mathbf{v}_{2}+(c_{3}+c_{1})\mathbf{v}_{3}
 \end{align*}
 
-in view of Equation {eq}`Eq:LinInd:LinIndEx1`. This means that $\mathbf{v}$ is also in $\Span{S\setminus\left\lbrace\mathbf{v}_{1}\right\rbrace}$ and consequently that $\mathbf{v}_{1}$ is linearly dependent on $\mathbf{v}_{2}$ and $\mathbf{v}_{3}$.
+in view of Equation {eq}`Eq:LinInd:LinIndEx1`. This means that $\mathbf{v}$ is also in $\operatorname{Span}S\setminus\left\lbrace\mathbf{v}_{1}\right\rbrace$ and consequently that $\mathbf{v}_{1}$ is linearly dependent on $\mathbf{v}_{2}$ and $\mathbf{v}_{3}$.
 Similarly, Equation {eq}`Eq:LinInd:LinIndEx2` shows that $\mathbf{v}_{2}$ is linearly dependent on $\mathbf{v}_{1}$ and $\mathbf{v}_{3}$ and Equation {eq}`Eq:LinInd:LinIndEx3` shows that $\mathbf{v}_{3}$ is linearly dependent on $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ .
 
 However, every subset of $S$ containing precisely two vectors will be linearly independent, as $S$ contains no two vectors that are multiples of each other.
@@ -128,7 +128,7 @@ which are shown on the right in {numref}`Figure %s <Fig:LinInd:Examplein2D>`.
 The set $S=\left\lbrace\mathbf{v}_{1},\mathbf{v}_{2},\mathbf{v}_{4}\right\rbrace$ is again linearly dependent since
 
 $$
-\mathbf{v}_{4}=2\mathbf{v}_{1}+0\mathbf{v}_{2}\nonumber
+\mathbf{v}_{4}=2\mathbf{v}_{1}+0\mathbf{v}_{2}
 $$
 
 but now the subset $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{4}\right\rbrace$ is a linearly dependent subset of $S$. On the other hand, the subsets $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{2}\right\rbrace$ and $\left\lbrace\mathbf{v}_{2},\mathbf{v}_{4}\right\rbrace$ are linearly independent.
@@ -269,7 +269,7 @@ $$
 
 This means that $(c_{1},...,c_{i-1},-1,c_{i+1},...,c_{k})$ is a solution of the Equation {eq}`Eq:LinInd:VecEqisZero`. It is a non-trivial one since the $i$-th coefficient is $-1$ which is non-zero.
 
-If {eq}`Eq:LinInd:VecEqisZero` has a non-trivial solution then there are $c_{1},...,c_{k}$, not all $0$, such that $c_{1}\mathbf{v}_{1}+\cdots +c_{k}\mathbf{v}_{k}=\mathbf{0}$. Take any $i$ such that $c_{i}\neq0$. Then
+If Equation {eq}`Eq:LinInd:VecEqisZero` has a non-trivial solution then there are $c_{1},...,c_{k}$, not all $0$, such that $c_{1}\mathbf{v}_{1}+\cdots +c_{k}\mathbf{v}_{k}=\mathbf{0}$. Take any $i$ such that $c_{i}\neq0$. Then
 
 $$
 
@@ -315,7 +315,9 @@ $$
 \begin{pmatrix} 4\\1\\-3\\-4\end{pmatrix}.
 $$
 
-Do these vectors form a linearly dependent set? How do we find out? Well, we use the vectors as the columns of a matrix $A$ and compute an echelon form using standard techniques
+Do these vectors form a linearly dependent set? How do we find out?
+
+Well, we use the vectors as the columns of a matrix $A$ and compute an echelon form using standard techniques
 
 $$
 
@@ -377,7 +379,7 @@ An ordered set $S=(\mathbf{v}_{1},...,\mathbf{v}_{n})$ is linearly dependent if 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:LindInd:LinIndisVectDeponPrevious`
 :class: tudproof, dropdown
 
-Let us assume $\mathbf{v}_{k}=c_{1}\mathbf{v}_{1}+\cdots+c_{k-1}\mathbf{v}_{k-1}$ for some scalars $c_{1},...,c_{k-1}$. An arbitrary element $\mathbf{v}$ of $\Span{S}$ is a linear combination of $\mathbf{v}_{1},...,\mathbf{v}_{n}$, so it is
+Let us assume $\mathbf{v}_{k}=c_{1}\mathbf{v}_{1}+\cdots+c_{k-1}\mathbf{v}_{k-1}$ for some scalars $c_{1},...,c_{k-1}$. An arbitrary element $\mathbf{v}$ of $\operatorname{Span}S$ is a linear combination of $\mathbf{v}_{1},...,\mathbf{v}_{n}$, so it is
 
 $$
 
@@ -393,9 +395,9 @@ $$
 d_{n}\mathbf{v}_{n}
 $$
 
-so $\mathbf{v}$ is in $\Span{S\setminus\left\lbrace\mathbf{v}_{k}\right\rbrace}$.
+so $\mathbf{v}$ is in $\operatorname{Span}S\setminus\left\lbrace\mathbf{v}_{k}\right\rbrace$.
 
-Suppose now that $S$ is linearly dependent. Let $k$ be maximal such that $\Span{S}=\Span{S\setminus\left\lbrace\mathbf{v}_{k}\right\rbrace}$. Since $\mathbf{v}_{k}$ is in $S$, it is in $\Span{S\setminus\left\lbrace\mathbf{v}_{k}\right\rbrace}$. So there exist scalars $c_{1},..,c_{k-1},c_{k+1},...,c_{n}$ such that
+Suppose now that $S$ is linearly dependent. Let $k$ be maximal such that $\operatorname{Span}S=\operatorname{Span}S\setminus\left\lbrace\mathbf{v}_{k}\right\rbrace$. Since $\mathbf{v}_{k}$ is in $S$, it is in $\operatorname{Span}S\setminus\left\lbrace\mathbf{v}_{k}\right\rbrace$. So there exist scalars $c_{1},..,c_{k-1},c_{k+1},...,c_{n}$ such that
 
 :::{math}
 :label: Eq:LinInd:vkLinCombofOthers
@@ -412,7 +414,7 @@ $$
 \mathbf{v}_{j}=\frac{1}{c_{j}}(c_{1}\mathbf{v}_{1}-\cdots -c_{k-1}\mathbf{v}_{k-1}+\mathbf{v}_{k}-c_{k+1}\mathbf{v}_{k+1}-\cdots-c_{j-1}\mathbf{v}_{j-1}-c_{j+1}\mathbf{v}_{j+1}-\cdots -c_{n}\mathbf{v}_{n}).
 $$
 
-Consequently, any linear combination of $S$ can be rewritten as a linear combination of $\mathbf{v}_{1},...,\mathbf{v}_{j-1},\mathbf{v}_{j+1},...,\mathbf{v}_{n}$, i.e. $\Span{S}=\Span{S\setminus\left\lbrace\mathbf{v}_{j}\right\rbrace}$. But $j$ is larger than $k$ and we have assumed $k$ to be maximal with this property! This is impossible, so $c_{j}=0$ for all $j$ greater than $k$.
+Consequently, any linear combination of $S$ can be rewritten as a linear combination of $\mathbf{v}_{1},...,\mathbf{v}_{j-1},\mathbf{v}_{j+1},...,\mathbf{v}_{n}$, i.e. $\operatorname{Span}S=\operatorname{Span}S\setminus\left\lbrace\mathbf{v}_{j}\right\rbrace$. But $j$ is larger than $k$ and we have assumed $k$ to be maximal with this property! This is impossible, so $c_{j}=0$ for all $j$ greater than $k$.
 
 ::::::
 
@@ -522,7 +524,7 @@ $$
 \mathbf{Pts}=2\mathbf{W}+1\mathbf{D}+0\mathbf{L}
 $$
 
-since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means that $\left\lbrace\mathbf{W},\mathbf{D},\mathbf{L},\mathbf{Pts}\right\rbrace$ is a linearly dependent subset of $\mathbb{R}^{18}$. In fact, the smaller set $\left\lbrace\mathbf{W},\mathbf{D},\mathbf{Pts}\right\rbrace$ is already linearly dependent. Similarly, the column $\mathbf{GD}$, which gives the goal difference for each team, can be obtained by subtracting the column $\mathbf{GA}$, which gives the goals conceded, from $\mathbf{GF}$, which gives the goals scored.
+since a win yielded $2$ points, a draw $1$ point, and a loss $0$ points. This means that $\left\lbrace\mathbf{W},\mathbf{D},\mathbf{L},\mathbf{Pts}\right\rbrace$ is a linearly dependent subset of $\mathbb{R}^{18}$. In fact, the smaller set $\left\lbrace\mathbf{W},\mathbf{D},\mathbf{Pts}\right\rbrace$ is already linearly dependent. Similarly, the column $\mathbf{GD}$, which gives the goal difference for each team, can be obtained by subtracting the column $\mathbf{GA}$, which gives the goals conceded, from $\mathbf{GF}$, which gives the goals scored.
 
 ::::::
 
@@ -635,7 +637,7 @@ since a win yielded 2 points, a draw 1 point, and a loss 0 points. This means th
 :url: https://embed.grasple.com/exercises/4da2f0e7-eef3-4acc-baea-ac689bda49f3?id=87426
 :label: grasple_exercise_2_5_13
 :dropdown:
-:description: Can . . . . . be linearly independent?
+:description: Can . . . . . . be linearly independent?
 
 ::::::
 

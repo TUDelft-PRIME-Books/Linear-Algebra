@@ -321,12 +321,12 @@ $$
 
 ## The $QR$ decomposition
 
-The Gram-Schmidt process leads to the following interesting decomposition of an $n \times m$ matrix $A$ with linearly independent columns.
+The Gram-Schmidt process leads to the following interesting decomposition of an $n \times m$-matrix $A$ with linearly independent columns.
 
 ::::{prf:theorem} $QR$ decomposition
 :label: Thm:GramSchmidt:QR-decomp
 
-Suppose $A$ is an $n \times m$ matrix of rank $m$.
+Suppose $A$ is an $n \times m$-matrix of rank $m$.
 Then $A$ can be written as
 
 $$
@@ -334,7 +334,7 @@ $$
    A = QR,
 $$
 
-where $Q$ is an $n \times m$ matrix with _orthonormal columns_, and $R$ is an _upper triangular_ $m \times m$ matrix, with *positive* diagonal entries.
+where $Q$ is an $n \times m$-matrix with _orthonormal columns_, and $R$ is an _upper triangular_ $m \times m$-matrix, with *positive* diagonal entries.
 
 The matrix $Q$ is found by applying the Gram-Schmidt process to the (linearly independent) columns $\vect{a}_1,\ldots,\vect{a}_m$ of the matrix $A$ and then renormalising.
 
@@ -621,7 +621,7 @@ The first exercises are about applying the Gram-Schmidt (GS) algorithm
 :url: https://embed.grasple.com/exercises/319f882b-8498-492b-a97c-c1ce346a66f8?id=57189
 :label: grasple_exercise_7_3_9
 :dropdown:
-:description: Finding the QR-decomposition of a $2\times2$ matrix.
+:description: Finding the QR-decomposition of a $2\times2$-matrix.
 
 ::::
 
@@ -633,7 +633,7 @@ The following exercises are about the $QR$ decomposition
 :url: https://embed.grasple.com/exercises/98d48efb-0be6-4dee-a905-55dff061ce17?id=90209
 :label: grasple_exercise_7_3_10
 :dropdown:
-:description: Finding the QR-decomposition of a $3\times2$ matrix.
+:description: Finding the QR-decomposition of a $3\times2$-matrix.
 
 ::::
 
@@ -642,7 +642,7 @@ The following exercises are about the $QR$ decomposition
 :url: https://embed.grasple.com/exercises/d4466fcf-11be-4578-ac9e-3a570710a154?id=87629
 :label: grasple_exercise_7_3_11
 :dropdown:
-:description: Finding the QR-decomposition of a $3\times3$ matrix.
+:description: Finding the QR-decomposition of a $3\times3$-matrix.
 
 ::::
 
@@ -651,7 +651,7 @@ The following exercises are about the $QR$ decomposition
 :url: https://embed.grasple.com/exercises/b7be453d-4fd1-4c41-a3be-72e909ed0220?id=87646
 :label: grasple_exercise_7_3_12
 :dropdown:
-:description: Finding the QR-decomposition of a $3\times3$ matrix.
+:description: Finding the QR-decomposition of a $3\times3$-matrix.
 ::::
 
 ::::{grasple}
@@ -659,7 +659,7 @@ The following exercises are about the $QR$ decomposition
 :url: https://embed.grasple.com/exercises/2f957bf7-b1f1-424f-ad39-57af14cd1d86?id=87820
 :label: grasple_exercise_7_3_13
 :dropdown:
-:description: Finding the QR-decomposition of a $4\times3$ matrix.
+:description: Finding the QR-decomposition of a $4\times3$-matrix.
 
 ::::
 
@@ -728,7 +728,7 @@ The last exercises are more conceptual than computational.
 :url: https://embed.grasple.com/exercises/a8741f26-64c7-4245-839a-8c5131bea496?id=87742
 :label: grasple_exercise_7_3_20
 :dropdown:
-:description: Ponderings about the QR-decomposition (of a $4 \times 2$ matrix $A$).
+:description: Ponderings about the QR-decomposition (of a $4 \times 2$-matrix $A$).
 
 ::::
 
@@ -737,6 +737,6 @@ The last exercises are more conceptual than computational.
 :url: https://embed.grasple.com/exercises/24a2c96f-0618-4a90-8229-ce04b1dd4640?id=87747
 :label: grasple_exercise_7_3_21
 :dropdown:
-:description: How many QR-decompositions are there for an $m \times n$ matrix?
+:description: How many QR-decompositions are there for an $m \times n$-matrix?
 
 ::::

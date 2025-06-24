@@ -8,7 +8,7 @@ In Chapter 2 matrices were introduced to represent systems of linear equations. 
 
 ## Sum, scalar multiple and transpose
 
-In this section we will define the sum and the product of two matrices, and the transpose of a matrix. Recall that an $m\times n$ matrix has $m$ (horizontal) rows of size $n$ or, equivalently, $n$ (vertical) columns of size $m$.
+In this section we will define the sum and the product of two matrices, and the transpose of a matrix. Recall that an $m\times n$-matrix has $m$ (horizontal) rows of size $n$ or, equivalently, $n$ (vertical) columns of size $m$.
 
 ::::::{prf:definition} Equality of matrices
 :label: def:matrix-equality
@@ -32,7 +32,7 @@ A **zero matrix** $O$ is a matrix with all entries equal to 0. If the context re
 ::::::{prf:definition} Scalar multiplication
 :label: def:scalar-multiplication
 
-If $A$ is an $m\times n$ matrix and $c$ is a scalar, then $cA$ is the $m \times n$ matrix that is the result of multiplying each entry of $A$ by $c$:
+If $A$ is an $m\times n$-matrix and $c$ is a scalar, then $cA$ is the $m \times n$-matrix that is the result of multiplying each entry of $A$ by $c$:
 
 $$
   c \left(\begin{array}{cccc}
@@ -58,7 +58,7 @@ We then say that $cA$ is a **scalar multiple** of $A$, or simply a **multiple** 
 :label: def:matrix-sum
 
 If $A$ and $B$ are two $m\times n$ matrices then the **sum** $A+B$ is the
-$m\times n$ matrix of which the entry on the position $(i,j)$ is the sum of the corresponding entries of $A$ and $B$:
+$m\times n$-matrix of which the entry on the position $(i,j)$ is the sum of the corresponding entries of $A$ and $B$:
 
 $$
   \left(\begin{array}{cccc}
@@ -201,8 +201,8 @@ An operator of which the usefulness is not immediately clear, but which fits wel
 ::::::{prf:definition}
 :label: def:matrix-transpose
 
-The **transpose** of an $m \times n$ matrix $A$ with entries $a_{ij}$ is the
-$n \times m$ matrix $B$ with entries $b_{ij}$ defined by
+The **transpose** of an $m \times n$-matrix $A$ with entries $a_{ij}$ is the
+$n \times m$-matrix $B$ with entries $b_{ij}$ defined by
 
 $$
   b_{ij} = a_{ji}, \quad  i = 1,\ldots,n,\,\,j=1,\ldots, m
@@ -263,7 +263,7 @@ We will prove the second statement and leave the other two to the diligent reade
 {numref}`Exc:MatrixOps:CheckTransposeRules`.
 
 So, suppose $A$ and $B$ are two $m \times n$ matrices.
-Then $A+B$ is an $m \times n$ matrix too, hence $(A+B)^T$ is an $n \times m$ matrix. The matrix $A^T  + B^T$ on the right side of the equation is the sum of two $n \times m$ matrices, which is again an $n \times m$ matrix. So the matrices on both sides of the equation
+Then $A+B$ is an $m \times n$-matrix too, hence $(A+B)^T$ is an $n \times m$-matrix. The matrix $A^T  + B^T$ on the right-hand side of the equation is the sum of two $n \times m$ matrices, which is again an $n \times m$-matrix. So the matrices on both sides of the equation
 have the same size.
 
 Next we have to show that they have equal entries on the corresponding positions. If we put
@@ -362,7 +362,7 @@ Suppose $A = \left(\begin{array}{cccc}
             \vdots &  \vdots&  \cdots&  \vdots    \\
             a_{m1} & a_{m2}&  \ldots&   a_{mn}    
           \end{array}
-   \right)$ is an arbitrary $m \times n$ matrix. Then
+   \right)$ is an arbitrary $m \times n$-matrix. Then
 
 $$
   \begin{array}{rcl}
@@ -477,12 +477,12 @@ $$
   B = \mathbf{x} = \begin{pmatrix}x_1 \\ x_2 \\ \vdots \\ x_n \end{pmatrix},
 $$
 
-a vector in $\mathbb{R}^n$, which we can identify with an $n \times 1$ matrix. We want of course the definition of the general matrix product to be consistent with this.
+a vector in $\mathbb{R}^n$, which we can identify with an $n \times 1$-matrix. We want of course the definition of the general matrix product to be consistent with this.
 
 ::::::{prf:definition}
 :label: def:matrix-product
 
-The product of an $m\times n$ matrix $A$ and an $n\times p$ matrix $B = (\,{\vect{b}_1}\quad {\vect{b}_2}\quad \ldots \quad {\mathbf{b}_p})$ is defined by
+The product of an $m\times n$-matrix $A$ and an $n\times p$-matrix $B = (\,{\vect{b}_1}\quad {\vect{b}_2}\quad \ldots \quad {\mathbf{b}_p})$ is defined by
 
 $$
   AB = (\,A\mathbf{b}_1\quad A\mathbf{b}_2\quad \ldots \quad A\mathbf{b}_p).
@@ -494,7 +494,7 @@ $$
   j\text{-th column of  } AB = A\text{ times  $j$-th column of  } B, \quad  j = 1,2,\ldots,p.
 $$
 
-Note that this makes $AB$ an $m \times p$ matrix.
+Note that this makes $AB$ an $m \times p$-matrix.
 
 If the number of columns of $A$ is not equal to the number of rows of $B$ the product $AB$ is not defined.
 
@@ -522,7 +522,7 @@ $$
 ::::::{prf:proposition}
 :label: Prop:MatrixOps:RowColExpansion
 
-The product of the $m\times n$ matrix $A$ and the $n\times p$ matrix $B$ is the $m\times p$ matrix $C$ for which the entry on the position $(i,j)$ is given by
+The product of the $m\times n$-matrix $A$ and the $n\times p$-matrix $B$ is the $m\times p$-matrix $C$ for which the entry on the position $(i,j)$ is given by
 
 $$
    c_{ij} = a_{i1}b_{1j} + a_{i2}b_{2j} + \ldots + a_{in}b_{nj} =
@@ -614,7 +614,7 @@ is not defined.
 ::::::{prf:remark}
 :label: rem:MatrixOps:MatrixProduct
 
-The product of a matrix $A$ with itself is only defined if $A$ is an $n \times n$ matrix. In that case we use the obvious notation
+The product of a matrix $A$ with itself is only defined if $A$ is an $n \times n$-matrix. In that case we use the obvious notation
 
 $$
    A^2 = A\cdot A.
@@ -638,7 +638,7 @@ This example illustrates the existence of a _unit element_ with respect to the m
 ::::::{prf:definition}
 :label: Def:MatrixOps:MainDiagonal
 
-An $n\times n $ matrix $A$ is called a **square matrix**. So it is a matrix where the number of columns is equal to the number of rows.
+An $n\times n $-matrix $A$ is called a **square matrix**. So it is a matrix where the number of columns is equal to the number of rows.
 
 For a square matrix $A$ we call the elements $a_{ii}$ the **diagonal elements**. Together the diagonal elements form the **(main) diagonal** of $A$.
 
@@ -680,8 +680,8 @@ The $n \times n$ zero matrix $O_{nn}$ is a diagonal matrix.
 ::::::{exercise}
 :label: Exc:MatrixOps:InterpretATB
 
-Suppose $A = \begin{pmatrix} \mathbf{a}_1 & \mathbf{a}_2 & \ldots & \mathbf{a}_n \end{pmatrix} $ is an  $m\times n$ matrix and <br/>
-$B= \begin{pmatrix} \mathbf{b}_1 & \mathbf{b}_2 & \ldots & \mathbf{b}_p \end{pmatrix} $  an  $n\times p$ matrix. Show that
+Suppose $A = \begin{pmatrix} \mathbf{a}_1 & \mathbf{a}_2 & \ldots & \mathbf{a}_n \end{pmatrix} $ is an  $m\times n$-matrix and <br/>
+$B= \begin{pmatrix} \mathbf{b}_1 & \mathbf{b}_2 & \ldots & \mathbf{b}_p \end{pmatrix} $  an  $n\times p$-matrix. Show that
 
 $$
   A^TB = %\begin{pmatrix} \vect{a_1}^T \vect{b_1}  & \vect{a_1}^T \vect{b_2} & \ldots &  \vect{a_1}^T \vect{b_p} \\
@@ -828,7 +828,7 @@ The matrices $E$ that perform one single row operation (row replacement, row sca
 ::::::{exercise}
 :label: Exc:MatrixOps:RowOpsByElMatrices
 
-Describe in words which row operations are the effect of pre-multiplying a $4\times n$ matrix $A$ with the following elementary matrices:
+Describe in words which row operations are the effect of pre-multiplying a $4\times n$-matrix $A$ with the following elementary matrices:
 
 $$
   E_1 = \begin{pmatrix} 1 & 0 & 0 &  0\\
@@ -867,8 +867,8 @@ The column-row product in the last example is the building block for yet another
 
 Column-row expansion of the product.
 
-Denote the columns of the $m\times n$ matrix $A$ by $A_{(1)}, \ldots, A_{(n)}$, and the
-rows of the $n\times p$ matrix $B$ by $B^{(1)}, \ldots, B^{(p)}$, so
+Denote the columns of the $m\times n$-matrix $A$ by $A_{(1)}, \ldots, A_{(n)}$, and the
+rows of the $n\times p$-matrix $B$ by $B^{(1)}, \ldots, B^{(p)}$, so
 
 $$
   A_{(j)} =   \begin{pmatrix}   a_{1j} \\ \vdots \\ a_{mj}\end{pmatrix}  \quad \text{and} \quad
@@ -1076,7 +1076,7 @@ on corresponding positions are equal (which may be checked column by column or r
 ::::::{prf:remark}
 :label: Rem:MatrixOps:ProdTransformation
 
-The proof of {prf:ref}`Prop:MatrixOps:ProdProperties` iv. can be seen in another light. In the Section {ref}`Sec:LinTrafo` we saw that an $m\times n$ matrix $A$ defines a transformation $T$ from $\mathbb{R}^n$ to
+The proof of {prf:ref}`Prop:MatrixOps:ProdProperties` iv. can be seen in another light. In the Section {ref}`Sec:LinTrafo` we saw that an $m\times n$-matrix $A$ defines a transformation $T$ from $\mathbb{R}^n$ to
 $\mathbb{R}^m$, namely
 
 $$
@@ -1084,7 +1084,7 @@ $$
 $$
 
 The definition of the product of two matrices then precisely matches the composition of two of such transformations:
-if $A$ is an $m\times n$ matrix and $B$ is an $n\times p$ matrix
+if $A$ is an $m\times n$-matrix and $B$ is an $n\times p$-matrix
 
 $$
   \mathbf{x}\in\mathbb{R}^p \,\,\stackrel{B}{\longrightarrow}\,\, \vect{y}_1 = B\vect{x}\in\mathbb{R}^n \,\, \stackrel{A}{\longrightarrow} \,\,\, \vect{y}_2 = A(B\mathbf{x}) \in \mathbb{R}^m\,
@@ -1129,7 +1129,7 @@ $$
 
 $$
 
-simply because the two products are not of the same size: $AB$ is a $2\times 2$ matrix, $BA$ a $3\times3$ matrix.
+simply because the two products are not of the same size: $AB$ is a $2\times 2$-matrix, $BA$ a $3\times3$-matrix.
 
 The following example illustrates that $AB = BA$ is not even guaranteed for two $n\times n$ matrices $A$ and $B$:
 
@@ -1208,7 +1208,7 @@ $$
    E_2 =  \begin{pmatrix} 3 & 0 \\ 0 & 1  \end{pmatrix}
 $$
 
-perform row operations, when multiplied with a $2 \times n$ matrix $A$.
+perform row operations, when multiplied with a $2 \times n$-matrix $A$.
 
 <ul>
 <li>
@@ -1452,18 +1452,18 @@ $(A+I)$ or $(A-I)$ must be the zero matrix. In this case we do not get a counter
 <ol type = "i"> 
 <li>
 
-Give a $2 \times 2$ matrix $A \neq \pm\, I$ for which $A^2 = I$.
+Give a $2 \times 2$-matrix $A \neq \pm\, I$ for which $A^2 = I$.
 
 </li>
 <li>
 
-Give a $2 \times 2$ matrix $A$ not containing any zeros, for which $A^2 = I$.
+Give a $2 \times 2$-matrix $A$ not containing any zeros, for which $A^2 = I$.
 
 </li>
 <li>
 
 %And this one also shows that matrix algebra has interesting additional features: \,
-Give a $2 \times 2$ matrix $B$ for which $B^2 = -I$.
+Give a $2 \times 2$-matrix $B$ for which $B^2 = -I$.
 
 </li>
 </ol>
@@ -1475,7 +1475,7 @@ The following property connects the two operations matrix transposition and matr
 ::::::{prf:proposition}
 :label: Prop:MatrixOperations:TransposeProduct
 
-If $A$ is an $m\times n$ matrix and $B$ an $n\times p$ matrix, then
+If $A$ is an $m\times n$-matrix and $B$ an $n\times p$-matrix, then
 
 $$
    (AB)^T = B^TA^T.
@@ -1542,8 +1542,8 @@ $$
 $$
 
 we have to show that the matrices have the same size, and are equal entry by entry.
-First, we see that $AB$ is an $m \times p$ matrix, so $(AB)^T$ is a $p \times m$ matrix, and $B^TA^T$, being the product of a $p \times n$ matrix
-with an $n \times m$, is also a $p \times m$ matrix.
+First, we see that $AB$ is an $m \times p$-matrix, so $(AB)^T$ is a $p \times m$-matrix, and $B^TA^T$, being the product of a $p \times n$-matrix
+with an $n \times m$, is also a $p \times m$-matrix.
 
 Second, the $(i,j)$ entry of $(AB)^T$ is the $(j,i)$ entry of $AB$, which is the (row-column) product of the $j$-th row of $A$ and the $i$-th column of $B$:
 
@@ -1783,7 +1783,7 @@ The remaining exercises are less of a compuational character.
 :url: https://embed.grasple.com/exercises/eb4b9e6e-0436-466c-bb1f-7e596b43ec34?id=70290
 :label: grasple_exercise_3_2_24
 :dropdown:
-:description: To find the number of rows of $B$ if $BC$ is an $m\times n$ matrix.
+:description: To find the number of rows of $B$ if $BC$ is an $m\times n$-matrix.
 
 ::::::
 

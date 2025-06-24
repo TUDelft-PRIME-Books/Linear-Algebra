@@ -213,7 +213,7 @@ In the next subsection we will address the questions of whether an $LU$ decompos
 ::::::{prf:definition}
 :label: Def:LUdecomp:DefinitionLU
 
-Let $A$ be an $n\times n$ matrix. An  **$LU$ decomposition**  of $A$ is a factorisation of the type
+Let $A$ be an $n\times n$-matrix. An  **$LU$ decomposition**  of $A$ is a factorisation of the type
 
 $$
 A=LU
@@ -418,7 +418,7 @@ The following algorithm describes this 'shortcut' to find an $LU$ decomposition.
 ::::::{prf:algorithm}
 :label: Alg:LUdecomp:LUalgorithm
 
-Suppose the $n\times n$ matrix $A$ can be row reduced top-down to the echelon matrix $U$. If the numbers $m_{jk}$ denote the multiples of the $k$th row that are subtracted from the rows below it in the $k$th step (so $1 \leq k < j \leq n$), &nbsp; then 
+Suppose the $n\times n$-matrix $A$ can be row reduced top-down to the echelon matrix $U$. If the numbers $m_{jk}$ denote the multiples of the $k$th row that are subtracted from the rows below it in the $k$th step (so $1 \leq k < j \leq n$), &nbsp; then 
 
 $$
    A = LU, \quad \text{for} \,\,
@@ -545,7 +545,7 @@ We see the multipliers nicely fall into place!
 
 ::::::
 
-Here is an example where we apply the algorithm without further ado to a $4 \times 4$ matrix.
+Here is an example where we apply the algorithm without further ado to a $4 \times 4$-matrix.
 
 ::::::{prf:example} 
 :label: Ex:LUdecomp:LUviaAlgorithm
@@ -766,7 +766,7 @@ that  {prf:ref}`Alg:LUdecomp:LUalgorithm`  works can have a look at the followin
 :::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LUdecomp:Existence`
 :class: tudproof, dropdown
 
-Suppose $A$ is an $n\times n$ matrix that can be row reduced top down to an  echelon matrix $U$ (which will then be an upper triangular). We can row reduce $A$ from top to bottom, where we use the same form as in {prf:ref}`Ex:LUdecomp:SecondLUSecondLook`. 
+Suppose $A$ is an $n\times n$-matrix that can be row reduced top down to an  echelon matrix $U$ (which will then be an upper triangular). We can row reduce $A$ from top to bottom, where we use the same form as in {prf:ref}`Ex:LUdecomp:SecondLUSecondLook`. 
 For instance the first two steps are
 
 
@@ -1163,7 +1163,7 @@ The generalisation of {prf:ref}`Prop:LUdecomp:Existence` to non-square matrices 
 ::::::{prf:proposition}
 :label: Prop:LUdecomp:ExistenceNonsquare
 
-An $m\times n$ matrix $A$, with $m \leq n$ can be written as $A = LU$, with 
+An $m\times n$-matrix $A$, with $m \leq n$ can be written as $A = LU$, with 
 
 <ul>
 
@@ -1285,7 +1285,7 @@ concept and derive some of its properties.
 ::::::{prf:definition}
 :label: Def:LUdecomp:PermutationMatrix
 
-A **permutation matrix** is an $n \times n$ matrix $P$ with only entries $0$ and $1$ in such a way that each row and each column contain exactly one $1$.
+A **permutation matrix** is an $n \times n$-matrix $P$ with only entries $0$ and $1$ in such a way that each row and each column contain exactly one $1$.
 
 ::::::
 
@@ -1303,7 +1303,7 @@ Two $4\times 4$ permutation matrices are
            \end{pmatrix}
 ::::
 
-Note that for an arbitrary $4 \times 4$ matrix $A$ we have
+Note that for an arbitrary $4 \times 4$-matrix $A$ we have
 
 $$
   P_1 A = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ \class{blue}{0} & \class{blue}{0} & \class{blue}{0} & \class{blue}{1} \\ \class{red}{0} & \class{red}{0} & \class{red}{1} & \class{red}{0} 
@@ -1438,7 +1438,7 @@ the result immediately follows.
 ::::::{prf:theorem} Existence of a $PLU$ Decomposition
 :label: LUDecomp:existencePLU
 
-Suppose that $A$ is an $m\times n$ matrix with real coefficients, and let $m \leq n$. Then there exist a permutation matrix $P$, a lower triangular matrix $L$ and an echelon matrix $U$ such that
+Suppose that $A$ is an $m\times n$-matrix with real coefficients, and let $m \leq n$. Then there exist a permutation matrix $P$, a lower triangular matrix $L$ and an echelon matrix $U$ such that
 
 $$ 
   PA = LU. 
@@ -1636,7 +1636,7 @@ that are necessary for solving a problem. By arithmetic operations we will take 
 
 Let us first compute this number when we solve the (square) linear system $A\mathbf{x}=\mathbf{b}$ by taking the augmented matrix $( A | \vect{b})$, find an echelon form and then use  backward substitution. Let us suppose that the matrix $A$ is invertible and possesses an $LU$ decomposition.
 
-In the worst-case scenario, for a $3\times 3$ matrix $A$, (so a $3\times 4$ augmented matrix), we need the following number of arithmetic operations:
+In the worst-case scenario, for a $3\times 3$-matrix $A$, (so a $3\times 4$ augmented matrix), we need the following number of arithmetic operations:
 
 <ul>
 <li>
@@ -1725,13 +1725,13 @@ To solve $U\mathbf{x}=\mathbf{y}$ we use backward substitution, and we have just
 
 So when the matrix $A$ is already $LU$ factorised, the number of operations required to solve the system is significantly lower. In the situation just analysed we found $15$ versus $28$.
 
-Similar computations  for a non-singular $n\times n$ matrix $A$ leads to the following results.
+Similar computations  for a non-singular $n\times n$-matrix $A$ leads to the following results.
 
 
 ::::::{prf:proposition}
 :label: Prop:LUdecomp:CountOperationsLU
 
-Suppose $A$ is an invertible $n\times n$ matrix and $\vect{b}$ an arbitrary vector in $\R^n$.
+Suppose $A$ is an invertible $n\times n$-matrix and $\vect{b}$ an arbitrary vector in $\R^n$.
 
 :::::{latexlist}
 :enumerated: true
@@ -1837,7 +1837,7 @@ The following proposition provides the answer.
 ::::::{prf:proposition}
 :label: Prop:LUdecomp:CountOperationsInverse
 
-Suppose $A$ is an invertible $n\times n$ matrix and $\vect{b}$ an arbitrary vector in $\R^n$.
+Suppose $A$ is an invertible $n\times n$-matrix and $\vect{b}$ an arbitrary vector in $\R^n$.
 
 :::::{latexlist}
 :enumerated: true

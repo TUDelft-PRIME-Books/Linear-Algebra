@@ -44,7 +44,7 @@ $$
  q(\mathbf{x}) = \mathbf{x}^TA\mathbf{x} + \mathbf{b}^T\mathbf{x} + c,
 $$
 
-for an $n\times n$ matrix $A$, a vector $\vect{b}$ in $\R^n$, and a number $c$ in $\R$.
+for an $n\times n$-matrix $A$, a vector $\vect{b}$ in $\R^n$, and a number $c$ in $\R$.
 
 The part $\mathbf{x}^TA\mathbf{x}$ is called a **quadratic form**.
 
@@ -488,7 +488,7 @@ $$
 
 The diagonal matrices do not seem to have much in common. However, they do.
 
-It can be shown that if for a symmetric $n\times n$ matrix $A$ it holds that
+It can be shown that if for a symmetric $n\times n$-matrix $A$ it holds that
 
 $$
   P_1^TAP_1 = D_1 \quad \text{and} \quad P_2^TAP_2 = D_2,
@@ -649,7 +649,7 @@ The classification of a quadratic form follows immediately from the eigenvalues 
 ::::{prf:theorem}
 :label: Thm:QuadForms:Classification
 
-Suppose $q_A(\vect{x}) = \vect{x}^TA\vect{x}$ for the symmetric $n \times n$ matrix $A$.
+Suppose $q_A(\vect{x}) = \vect{x}^TA\vect{x}$ for the symmetric $n \times n$-matrix $A$.
 Let $\lambda_1, \ldots, \lambda_n$ be the complete set of (real) eigenvalues of $A$
 
 Then

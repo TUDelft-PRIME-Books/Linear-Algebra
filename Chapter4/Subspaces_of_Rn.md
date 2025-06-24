@@ -439,18 +439,18 @@ the story of subspaces can be closed. However, subspaces will appear in differen
 
 ## Column space and null space of a matrix
 
-We now turn our attention to two important subspaces closely related to an $m\times n$ matrix $A$.
+We now turn our attention to two important subspaces closely related to an $m\times n$-matrix $A$.
 
 ::::::{prf:definition}
 :label: Dfn:Subspaces:ColNul
 
-The **column space** of an $m\times n$ matrix $A=  \begin{pmatrix} \vect{a}_1 &  \vect{a}_2    & \ldots &    \vect{a}_n \end{pmatrix}$ is the span of the columns of $A$:
+The **column space** of an $m\times n$-matrix $A=  \begin{pmatrix} \vect{a}_1 &  \vect{a}_2    & \ldots &    \vect{a}_n \end{pmatrix}$ is the span of the columns of $A$:
 
 $$
 \Col{A} = \Span{\vect{a}_1,\vect{a}_2,\ldots,\vect{a}_n}.
 $$
 
-The **null space** of an $m\times n$ matrix $A$ is the solution set of the homogeneous equation $A\vect{x} = \vect{0}$:
+The **null space** of an $m\times n$-matrix $A$ is the solution set of the homogeneous equation $A\vect{x} = \vect{0}$:
 
 $$
 \Nul{A} = \{\vect{x} \in \mathbb{R}^n \,|\,  A\vect{x} = \vect{0}\}.
@@ -461,7 +461,7 @@ $$
 ::::::{prf:remark}
 :label: Rmrk:Subspaces:ColNul
 
-For an $m\times n$ matrix $A$, $\operatorname{Col}A$ is the set of all vectors of the form $A\vect{x}$, for $\vect{x}\in\R^n$. The column space
+For an $m\times n$-matrix $A$, $\operatorname{Col}A$ is the set of all vectors of the form $A\vect{x}$, for $\vect{x}\in\R^n$. The column space
 $\operatorname{Col}{A}$ can also be interpreted as the range of the linear transformation $T:\R^n \to \R^m$ defined via
 $T(\vect{x}) = A\vect{x}$. &nbsp; (Cf. {prf:ref}`Prop:LinTrafo:RangeTA`.)
 
@@ -470,7 +470,7 @@ $T(\vect{x}) = A\vect{x}$. &nbsp; (Cf. {prf:ref}`Prop:LinTrafo:RangeTA`.)
 ::::::{prf:remark}
 :label: Rmrk:Subspaces:ColNulSpaces
 
-Note that for an $m\times n $ matrix  $A$ the column space is a subset of $\R^m$ and the null space lives in $\R^n$. In short,
+Note that for an $m\times n $-matrix  $A$ the column space is a subset of $\R^m$ and the null space lives in $\R^n$. In short,
 
 $$
 \Col{A} \subseteq \R^m ,\quad \Nul{A} \subseteq \R^n.
@@ -483,7 +483,7 @@ The next proposition shows that the designation 'space' in the above definition 
 ::::::{prf:proposition}
 :label: Prop:Subspaces:AllSubspacesRn
 
-Let $A$ be an $m\times n$ matrix.
+Let $A$ be an $m\times n$-matrix.
 
 <ol type = "i">
 <li>
@@ -506,7 +506,7 @@ The null space of $A$ is a subspace of $\R^n$.
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Subspaces:AllSubspacesRn`
 :class: tudproof
 
-Let $A$ be an $m\times n$ matrix.<ol type = "i">
+Let $A$ be an $m\times n$-matrix.<ol type = "i">
 
 <li>
 
@@ -634,14 +634,14 @@ Can you find a similar formula relating the null space of $AB$ to the null space
 ::::::{admonition} Solution to&nbsp;{numref}`Exc:Subspaces:ColABinColA`
 :class: solution, dropdown
 
-Suppose that $A$ is an $m\times n$ and $B$ an $n \times p$ matrix.
-Thus $AB$ is an $m\times p$ matrix.
+Suppose that $A$ is an $m\times n$ and $B$ an $n \times p$-matrix.
+Thus $AB$ is an $m\times p$-matrix.
 
 <ol type = "i">
 
 <li>
 
-The column space of an $m\times n$ matrix $M$, consists of all vectors
+The column space of an $m\times n$-matrix $M$, consists of all vectors
 $\vect{w} = M\vect{v}$, where $\vect{v}$ is a vector in $\R^n$.
 
 Suppose $\vect{w}$ is a vector in $\operatorname{Col}(AB)$, so $\vect{w} = AB\vect{v}$ for some vector $\vect{v}$ in $\R^p$. <BR>
@@ -656,7 +656,7 @@ $$
 </li>
 <li>
 
-The null space of an $m\times n$ matrix $M$ consists of all vectors $\vect{v}$ in $\R^n$ for which $M\vect{v} = \vect{0}$. &nbsp;
+The null space of an $m\times n$-matrix $M$ consists of all vectors $\vect{v}$ in $\R^n$ for which $M\vect{v} = \vect{0}$. &nbsp;
 We show that
 
 $$
@@ -674,7 +674,7 @@ Then $B\vect{v}= \vect{0}$, so a fortiori $AB\vect{v}= A\vect{0} =\vect{0}$, and
 ::::::{exercise}
 :label: Exc:Subspaces:WhatIfAAeq0
 
-For an $n\times n$ matrix $A$, the null space and the column space are both subspaces of (the same) $\R^n$. Prove or disprove the following statement.
+For an $n\times n$-matrix $A$, the null space and the column space are both subspaces of (the same) $\R^n$. Prove or disprove the following statement.
 
 For a square matrix $A$:
 
@@ -788,7 +788,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 :url: https://embed.grasple.com/exercises/f880df03-c9b6-4c69-bc94-ea0c6d273b24?id=70627
 :label: grasple_exercise_4_1_9
 :dropdown:
-:description: For an $m\times n$ matrix, in which $\R^p$ lies $\operatorname{Nul}(A)$? And $\operatorname{Col}(A)$?
+:description: For an $m\times n$-matrix, in which $\R^p$ lies $\operatorname{Nul}(A)$? And $\operatorname{Col}(A)$?
 
 ::::::
 
@@ -806,7 +806,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 :url: https://embed.grasple.com/exercises/3eb1c09d-b39f-4eb8-8968-804469666617?id=83365
 :label: grasple_exercise_4_1_11
 :dropdown:
-:description: To find a parameter such that $\operatorname{Nul}(A)=\operatorname{Col}(A)$ for a $2\times2$ matrix $A$.
+:description: To find a parameter such that $\operatorname{Nul}(A)=\operatorname{Col}(A)$ for a $2\times2$-matrix $A$.
 
 ::::::
 
@@ -815,7 +815,7 @@ So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = 
 :url: https://embed.grasple.com/exercises/958bc91a-84e2-48e8-8cdf-b26514c41df0?id=83371
 :label: grasple_exercise_4_1_12
 :dropdown:
-:description: To find a parameter such that $\operatorname{Nul}(A)=\operatorname{Col}(A)$ for a $2\times2$ matrix $A$.
+:description: To find a parameter such that $\operatorname{Nul}(A)=\operatorname{Col}(A)$ for a $2\times2$-matrix $A$.
 
 ::::::
 

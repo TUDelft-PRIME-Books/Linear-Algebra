@@ -363,7 +363,7 @@ $$
    P_{\mc{B}} = (\,\vect{b}_1\,\,\vect{b}_2\,\,\ldots\,\,\vect{b}_n\,).
 $$
 
-This is an $n \times n$ matrix with $n$ linearly independent columns, so it is an invertible matrix.
+This is an $n \times n$-matrix with $n$ linearly independent columns, so it is an invertible matrix.
 
 ::::
 
@@ -503,7 +503,7 @@ Now we take the coordinate vectors with respect to basis $\mc{C}$:
 
 (See {numref}`Exc:ChangeOfBasis:LinearityOfCoords`.)
 
-Noting that the term on the right side of Equation {eq}`Eq:ChangeOfBasis:LinearityCoords` is a linear combination of $m$-vectors, we can write the identity as
+Noting that the term on the right-hand side of Equation {eq}`Eq:ChangeOfBasis:LinearityCoords` is a linear combination of $m$-vectors, we can write the identity as
 
 $$
     \begin{array}{rcl}

@@ -7,10 +7,11 @@ sphinx-proof
 sphinx-exercise
 TexSoup
 sphinx-book-theme==1.1.0
-teachbooks-sphinx-grasple
-sphinx-tudelft-theme
+teachbooks-sphinx-grasple>=1.1.2
+sphinx-tudelft-theme>=1.1.7
 jupyterbook_patches >=1.6.1
-teachbooks-sphinx-tippy>=1.0.5
+teachbooks-sphinx-tippy>=1.0.11
 sphinx-prime-applets
-sphinx-indexed-definitions
+sphinx-indexed-definitions>=1.0.4
 sphinx-ref-graph
+sphinx-image-inverter>=1.1.5

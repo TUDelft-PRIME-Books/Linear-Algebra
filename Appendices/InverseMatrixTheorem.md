@@ -5,7 +5,7 @@ Throughout this book, there are a great many different characterisations of thos
 ::::{prf:theorem}
 :label: Thm:Appendices:InverseMatrixTheorem
 
-For an $n\times n$ matrix $A$, the following are equivalent:
+For an $n\times n$-matrix $A$, the following are equivalent:
 
 :::{latexlist}
 :enumerated: true

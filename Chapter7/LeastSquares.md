@@ -79,7 +79,7 @@ We will come back to this question in {numref}`Subsection %s <SubSec:LeastSquare
 
 ## Least squares solutions
 
-Let $A$ be an $m \times n$ matrix with columns $\vect{a}_1, \ldots, \vect{a}_n$.
+Let $A$ be an $m \times n$-matrix with columns $\vect{a}_1, \ldots, \vect{a}_n$.
 <BR>
 We have seen ({numref}`Section %s <Sec:MatVecProduct>`, {prf:ref}`Rem:MatVecProd:EquivalentEquations`) that the linear system
 
@@ -105,7 +105,7 @@ $\Span{\vect{a}_1, ... , \vect{a}_n}$. This is the idea behind the following def
 ::::{prf:definition}
 :label: Def:LeastSquares:Solution
 
-Let $A$ be an $m\times n$ matrix and $\vect{b}$ a vector in $\R^{m}$.
+Let $A$ be an $m\times n$-matrix and $\vect{b}$ a vector in $\R^{m}$.
 A vector $\hat{\vect{x}}$ is called a **least squares solution** of the linear system $A\vect{x} = \vect{b}$ if for every $\vect{x}$ in $\R^n$ the inequality
 
 $$
@@ -247,7 +247,7 @@ The next proposition provides the answers to question i. and question iii.
 ::::{prf:proposition}
 :label: Prop:LeastSquares:Existence
 
-For each linear system $A\vect{x} = \vect{b}$, where $A$ is an $m \times n$ matrix and $\vect{b}$ a vector in $\R^m$, a least squares solution always exists. Moreover the least squares solution is unique if and only if the columns of $A$ are linearly independent.
+For each linear system $A\vect{x} = \vect{b}$, where $A$ is an $m \times n$-matrix and $\vect{b}$ a vector in $\R^m$, a least squares solution always exists. Moreover the least squares solution is unique if and only if the columns of $A$ are linearly independent.
 
 ::::
 
@@ -332,7 +332,7 @@ There is a direct way to find the coefficients of the orthogonal projection onto
 ::::{prf:theorem} Normal Equations
 :label: Thm:LeastSquares:NormalEquations
 
-Suppose $A$ is an $m \times n$ matrix and $\vect{b}$ is a vector in $\R^m$.
+Suppose $A$ is an $m \times n$-matrix and $\vect{b}$ is a vector in $\R^m$.
 
 Then the system of linear equations
 
@@ -417,7 +417,7 @@ In the proof properties of the orthogonal projection are combined in a clever wa
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:LeastSquares:NormalEquations`
 :class: tudproof, dropdown
 
-As usual we denote the columns of the $m \times n$ matrix $A$ by $\vect{a}_1, \ldots, \vect{a}_n$.
+As usual we denote the columns of the $m \times n$-matrix $A$ by $\vect{a}_1, \ldots, \vect{a}_n$.
 
 From the section about orthogonal projections, we know that the orthogonal projection of $\vect{b}$
 onto the column space of $A$ exists and is unique (cf. {prf:ref}`Thm:OrthoBase:OrthoDecomp`). This projection will be a vector of the form
@@ -505,7 +505,7 @@ There is another way to see this, which follows from the next proposition.
 ::::{prf:proposition}  
 :label: Prop:LeastSquares:InvertibleATA
 
-Suppose $A$ is an $m \times n$ matrix. If the columns of $A$ are linearly independent then
+Suppose $A$ is an $m \times n$-matrix. If the columns of $A$ are linearly independent then
 the matrix $A^TA$ is invertible.
 
 ::::
@@ -541,14 +541,14 @@ $\vect{x}= \vect{0}$ as only solution. This means that $A^TA$ is invertible.
 
 Prove the converse of {prf:ref}`Prop:LeastSquares:InvertibleATA`.
 
-For any $m \times n$ matrix $A$, if $A^TA$ is invertible, then the columns of $A$ must be linearly independent. (Note that the matrix $A$ is not supposed to be a square matrix.)
+For any $m \times n$-matrix $A$, if $A^TA$ is invertible, then the columns of $A$ must be linearly independent. (Note that the matrix $A$ is not supposed to be a square matrix.)
 
 ::::
 
 ::::{admonition} Solution to&nbsp;{numref}`Exc:LeastSquares:InvertibleATA`
 :class: solution, dropdown
 
-Suppose that $A$ is an $m \times n$ matrix $A$ for which $A^TA$ is invertible.
+Suppose that $A$ is an $m \times n$-matrix $A$ for which $A^TA$ is invertible.
 To prove that $A$ has linearly independent columns we have to show that the equation
 
 $$
@@ -642,7 +642,7 @@ solution $\hat{\vect{x}} =\left(\begin{array}{c} 4 \\ 1  \end{array}   \right)$.
 
 The previous example can be generalised as follows.
 
-If the columns $\{\vect{a}_1, \ldots, \vect{a}_n\}$ of an $m \times n$ matrix $A$ form a set of non-zero, _orthogonal_ vectors in $\R^m$, then the orthogonal projection
+If the columns $\{\vect{a}_1, \ldots, \vect{a}_n\}$ of an $m \times n$-matrix $A$ form a set of non-zero, _orthogonal_ vectors in $\R^m$, then the orthogonal projection
 
 $$
    c_1\vect{a}_1 + c_2\vect{a}_2 + \cdots + c_n\vect{a}_n
@@ -747,7 +747,7 @@ In fact, if the $QR$ decomposition of a matrix $A$ is known, this may also simpl
 ::::{prf:proposition}  
 :label: Prop:LeastSquares:LSviaQR
 
-Suppose the $m \times n$ matrix $A$ of rank $n$ has the $QR$ decomposition  $A = QR$.
+Suppose the $m \times n$-matrix $A$ of rank $n$ has the $QR$ decomposition  $A = QR$.
 Then the least squares solution of the linear system  $A\vect{x} = \vect{b}$ is the same as the solution of the equation
 
 

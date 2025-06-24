@@ -4,7 +4,7 @@
 
 ## Introduction
 
-The word "determinant" already appeared in {numref}`Section %s <Sec:CrossProduct>` about the cross product  (cf.{prf:ref}`Def:CrossProduct:2x2determinant`). And in {numref}`Subsection %s <Subsec:MatrixInv:DefInverse>` we saw that a $2\times2$ matrix
+The word "determinant" already appeared in {numref}`Section %s <Sec:CrossProduct>` about the cross product  (cf.{prf:ref}`Def:CrossProduct:2x2determinant`). And in {numref}`Subsection %s <Subsec:MatrixInv:DefInverse>` we saw that a $2\times2$-matrix
 $A = \left(\begin{array}{cc} a & b \\ c & d\end{array}   \right)$ is invertible if and only if
 
 :::{math}
@@ -16,7 +16,7 @@ ad-bc \neq 0.
 
 We called the expression $ad-bc$ the _determinant_ of the matrix $A$. Formula {eq}`Eq:DetGeometric:DetNonzero` is also equivalent to the statement that the columns of the matrix $A$ are linearly independent.
 
-Likewise, by row reducing a general $3 \times 3$ matrix
+Likewise, by row reducing a general $3 \times 3$-matrix
 
 $$
 A = \left(\begin{array}{ccc} a_{11} & a_{12} & a_{13} \\

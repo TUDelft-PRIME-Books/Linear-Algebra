@@ -2,7 +2,7 @@
 
 # The power method
 
-The eigenvalues of an $n\times n$ matrix $A$ to a large extent characterise the matrix. In theory they can be found as the zeros of the characteristic polynomial. Already for $n = 3$ it is not an easy matter to find the exact zeros, and for $n\geq 5$ there is no general formula for the zeros.  
+The eigenvalues of an $n\times n$-matrix $A$ to a large extent characterise the matrix. In theory they can be found as the zeros of the characteristic polynomial. Already for $n = 3$ it is not an easy matter to find the exact zeros, and for $n\geq 5$ there is no general formula for the zeros.  
 One way to resolve this is to use a numerical method to solve an equation of degree $n$. Alternatively, there are algorithms more in the vein of linear algebra to find approximations of one or more eigenvalues. The simplest of these is the *power method*. This method often provides the eigenvalue of the largest absolute value (or, modulus), and this comes with an eigenvector as well. Note that the largest eigenvalue is in fact the most important eigenvalue concerning the stability or instability of the linear dynamical system connected to $A$.
 
 (Subsec:Powermethod:Basics)=
@@ -69,7 +69,7 @@ We put a name to the situation where a matrix $A$ has a single eigenvalue of hig
 ::::{prf:definition}
 :label: Def:PowerMethod:DominantEigenvalue
 
-Suppose the $n\times n$ matrix $A$ has the eigenvalues $\lambda_1, \ldots, \lambda_n$ ordered according to
+Suppose the $n\times n$-matrix $A$ has the eigenvalues $\lambda_1, \ldots, \lambda_n$ ordered according to
 
 $$
   |\lambda_1| \geq |\lambda_2| \geq \,\,\ldots\,\,\geq |\lambda_n|.
@@ -84,7 +84,7 @@ Consider the following algorithm.
 ::::{prf:algorithm}
 :label: Alg:PowerMethod:PowMed
 
-Suppose $A$ is an $n\times n$ matrix.
+Suppose $A$ is an $n\times n$-matrix.
 
 <u>Step 1</u> &nbsp; Choose an arbitrary nonzero vector $\vect{x}$ in $\R^n$.
 
@@ -409,7 +409,7 @@ The first issue is covered by the next proposition.
 ::::{prf:proposition} Inverse Power Method
 :label: Prop:PowerMethod:SmallestEigenvalue
 
-Suppose $A$ is an $n\times n$ matrix with $n$ eigenvalues ordered via
+Suppose $A$ is an $n\times n$-matrix with $n$ eigenvalues ordered via
 
 $$
   |\lambda_1| \geq |\lambda_2| \geq  \ldots \geq |\lambda_{n-1}| > |\lambda_{n}| > 0.
@@ -520,7 +520,7 @@ This more or less proves the following proposition.
 ::::{prf:proposition} Shifted Power Method
 :label: Prop:PowerMethod:Shifted
 
-Suppose $A$ is an $n \times n$ matrix with eigenvalues  $\lambda_1, \ldots, \lambda_n$, and $\alpha$ is a real number. Furthermore, define the matrix  $B = A - \alpha{I}$.
+Suppose $A$ is an $n \times n$-matrix with eigenvalues  $\lambda_1, \ldots, \lambda_n$, and $\alpha$ is a real number. Furthermore, define the matrix  $B = A - \alpha{I}$.
 
 If the power method applied to the matrix $B$  converges to the  eigenvalue $\mu$  of the matrix $B$, with the  corresponding eigenvector $\mathbf{v}$, then 
 $\mathbf{v}$ is an eigenvector of the matrix $A$ for the eigenvalue $\lambda_i =\mu + \alpha$.
@@ -581,7 +581,7 @@ We have just given the argument for a last proposition concerning the power meth
 ::::{prf:proposition} Shifted Power Method
 :label: Prop:PowerMethod:ShiftedInverse
 
-Suppose $A$ is an $n \times n$ matrix with eigenvalues  $\lambda_1, \ldots, \lambda_n$, and $\alpha$ is a real number. Furthermore, define the matrix  $B = A - \alpha{I}$.
+Suppose $A$ is an $n \times n$-matrix with eigenvalues  $\lambda_1, \ldots, \lambda_n$, and $\alpha$ is a real number. Furthermore, define the matrix  $B = A - \alpha{I}$.
 
 If the inverse power method applied to the matrix $B$ converges to the  eigenvalue $\mu$  of the matrix $B$,  with the  corresponding eigenvector $\mathbf{v}$, then 
 $\mathbf{v}$ is an eigenvector of the matrix $A$ for the eigenvalue $\lambda_i = \mu + \alpha$ that is closest to the number $\alpha$.

@@ -92,7 +92,7 @@ All three examples lead to so-called _discrete dynamical systems_. The definitio
 ::::{prf:definition}
 :label: Def:DynSystDiscr:DiscreteDynSyst
 
-Suppose $A$ is an $n \times n$ matrix, and $\vect{s}$ a vector in $\R^n$.
+Suppose $A$ is an $n \times n$-matrix, and $\vect{s}$ a vector in $\R^n$.
 
 The **discrete dynamical system** with matrix $A$ and _initial state_ $\vect{s}$ is the process described by
 
@@ -433,7 +433,7 @@ $$
 \mathbf{x}_0 = \mathbf{s}, \quad \mathbf{x}_{k+1} = A\mathbf{x}_k, \,\, k=0,1,2,\ldots\,,
 $$
 
-where $A$ is a $2\times 2$ matrix.
+where $A$ is a $2\times 2$-matrix.
 
 ::::{prf:definition}
 :label: Defn:DynSystDiscrete:Path
@@ -645,7 +645,7 @@ Let us introduce some terminology to describe the behaviour of the dynamical sys
 ::::{prf:definition}
 :label: Dfn:DynSystDiscrete:Types
 
-Let $A$ be a $2 \times 2$ matrix with eigenvalues $\lambda_1$ and $\lambda_2$.
+Let $A$ be a $2 \times 2$-matrix with eigenvalues $\lambda_1$ and $\lambda_2$.
 
 If $0 < \lambda_1 < 1 < \lambda_2$ then the origin is called a **saddle point**.
 

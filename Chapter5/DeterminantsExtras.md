@@ -379,7 +379,7 @@ We first introduce a new notation that will help to simplify formulas later.
 ::::::{prf:definition}
 :label: Dfn:DetExtras:ReplaceColumn
 
-Let $A$ be an $n\times n$ matrix, and $\vect{v}$ a vector in $\R^n$. Then $A^{(i)}(\vect{v})$ denotes the matrix that results when the $i$th column of $A$ is replaced by the vector $\vect{v}$.
+Let $A$ be an $n\times n$-matrix, and $\vect{v}$ a vector in $\R^n$. Then $A^{(i)}(\vect{v})$ denotes the matrix that results when the $i$th column of $A$ is replaced by the vector $\vect{v}$.
 
 ::::::
 
@@ -395,14 +395,14 @@ $$
 
 ::::::
 
-Suppose that $A$ is an invertible $n \times n$ matrix. Then we know that the linear system $A\vect{x} = \vect{b}$ has a unique solution for each $\vect{b}$ in $\R^n$. And we also know that the determinant of $A$ is not equal to zero.
+Suppose that $A$ is an invertible $n \times n$-matrix. Then we know that the linear system $A\vect{x} = \vect{b}$ has a unique solution for each $\vect{b}$ in $\R^n$. And we also know that the determinant of $A$ is not equal to zero.
 <BR>
 The next proposition gives a ready-made formula for the solution.
 
 ::::::{prf:theorem} Cramer's Rule
 :label: Thm:DetExtras:Cramer
 
-Suppose $A$ is an invertible $n \times n$ matrix, and $\vect{b}$ a vector in $\R^n$.
+Suppose $A$ is an invertible $n \times n$-matrix, and $\vect{b}$ a vector in $\R^n$.
 The entries of $x_i$ of the unique solution $\vect{x}$ of the linear system
 
 $$
@@ -546,7 +546,7 @@ As an interesting corollary of Cramer's Theorem we can give a ready-made formula
 ::::::{prf:proposition}
 :label: Prop:DetExtras:ReplaceColGivesCofactor
 
-Let $A$ be an $n\times n$ matrix, and $\vect{e}_j$ the $j$th vector of the standard basis of $\R^n$. Then
+Let $A$ be an $n\times n$-matrix, and $\vect{e}_j$ the $j$th vector of the standard basis of $\R^n$. Then
 
 $$
 \det{(A^{(i)}(\vect{e}_j))} = (-1)^{j+i} \det{A_{ji}} = C_{ji},
@@ -567,7 +567,7 @@ a_{21} &a_{22} &a_{23} &a_{24}  \\
 a_{31} &a_{32} &a_{33} &a_{34}  \\ 
 a_{41} &a_{42} &a_{43} &a_{44} 
 \end{array} \right)
-$ be any $4 \times 4$ matrix.
+$ be any $4 \times 4$-matrix.
 
 Then &nbsp;
 $
@@ -598,7 +598,7 @@ $$
 ::::::{prf:proposition}
 :label: Prop:DetExtras:Inverse
 
-If $A$ is an invertible $n \times n$ matrix then the inverse of $A$ is given by
+If $A$ is an invertible $n \times n$-matrix then the inverse of $A$ is given by
 
 :::::{math}
 :label: Eq:DetExtras:Inverse
@@ -635,7 +635,7 @@ For the last step we used {prf:ref}`Prop:DetExtras:ReplaceColGivesCofactor`.
 ::::::{prf:definition}
 :label: Dfn:DetExtras:CofactorMatrix
 
-For an $n \times n$ matrix $A$ the matrix
+For an $n \times n$-matrix $A$ the matrix
 
 $$
 \left(\begin{array}{ccccc}
@@ -740,9 +740,9 @@ $A$ is replaced by the $k$th column of $A$. Since this matrix has two equal colu
 
 For $n = 2$ {prf:ref}`Prop:DetExtras:Inverse` gives us back the formula for the inverse 
 of {prf:ref}`Prop:MatrixInv:Inverse2x2`. That is, if we define the determinant of 
-a $1 \times 1$ matrix $A = (a)$ as the number $a$ .
+a $1 \times 1$-matrix $A = (a)$ as the number $a$ .
 
-For an arbitrary invertible $3 \times 3$ matrix
+For an arbitrary invertible $3 \times 3$-matrix
 $A=\left(\begin{array}{ccc} a_{11} &a_{12} &a_{13} \\ a_{21} &a_{22} &a_{23} \\ a_{31} &a_{32} &a_{33} \end{array} \right) $ the formula yields
 
 $$
@@ -769,7 +769,7 @@ $$
 :label: Rem:DetExtras:Disclaimer2
 
 Like Cramer's rule, the formula for the inverse is **highly inefficient**.
-The comparison between the efforts required to compute the inverse via the adjugate matrix versus row reduction of the augmented matrix $(\,A\,|\,I\,)$ works out rather favorably for the latter. A glimpse of this inefficiency is shown by the above formula for the inverse of a $3 \times 3$ matrix.
+The comparison between the efforts required to compute the inverse via the adjugate matrix versus row reduction of the augmented matrix $(\,A\,|\,I\,)$ works out rather favorably for the latter. A glimpse of this inefficiency is shown by the above formula for the inverse of a $3 \times 3$-matrix.
 
 ::::::
 
@@ -1042,7 +1042,7 @@ This implies that $\vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1}) $ must be the ze
 
 <BR>
 
-To prove the other implication, suppose the vectors $\{ \vect{a}_1, \,\ldots\, \, , \vect{a}_{n-1} \}$ are linearly independent. Then the $n \times (n-1)$ matrix $A = (\,\vect{a}_1 \,\,  \ldots \,\,  \vect{a}_{n-1} \,) $  has rank  $n-1$. The matrix $A$ must have $n-1$ linearly independent rows. Say, if we delete the $k$th row we have an $(n-1) \times (n-1)$ sub-matrix with independent rows.
+To prove the other implication, suppose the vectors $\{ \vect{a}_1, \,\ldots\, \, , \vect{a}_{n-1} \}$ are linearly independent. Then the $n \times (n-1)$-matrix $A = (\,\vect{a}_1 \,\,  \ldots \,\,  \vect{a}_{n-1} \,) $  has rank  $n-1$. The matrix $A$ must have $n-1$ linearly independent rows. Say, if we delete the $k$th row we have an $(n-1) \times (n-1)$ sub-matrix with independent rows.
 Then the coefficient of $\vect{e}_k$ in the expansion of
 $ \vect{N} ( \vect{a}_1, \ldots, \vect{a}_{n-1})$,
 which by the defining Equation {eq}`Eq:DetExtras:DetCrossProd-ndim` is precisely (plus or minus) the determinant of this submatrix, is nonzero.

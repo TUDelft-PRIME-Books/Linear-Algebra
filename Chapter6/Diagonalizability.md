@@ -157,7 +157,7 @@ that holds for the geometric and the algebraic multiplicity of an eigenvalue
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity` &nbsp;  (geom.mult. $\leq$ alg.mult.)
 :class: tudproof, dropdown
 
-Suppose the $n\times n$ matrix $A$ has the eigenvalue $\lambda_1$ of geometric multiplicity $k$.  We have to show that the algebraic multiplicity of $\lambda_1$ is *at least* equal to $k$. We will do so by constructing a matrix $B$ that is similar to $A$ and for which the eigenvalue $\lambda_1$ will clearly have algebraic multiplicity at least equal to $k$. <BR>
+Suppose the $n\times n$-matrix $A$ has the eigenvalue $\lambda_1$ of geometric multiplicity $k$.  We have to show that the algebraic multiplicity of $\lambda_1$ is *at least* equal to $k$. We will do so by constructing a matrix $B$ that is similar to $A$ and for which the eigenvalue $\lambda_1$ will clearly have algebraic multiplicity at least equal to $k$. <BR>
 Suppose $\vect{v}_1,\ldots,\vect{v}_k$ are $k$ linearly independent eigenvectors for $\lambda_1$.  We can extend $\{\vect{v}_1,\ldots,\vect{v}_k,\}$ to a basis $\{\vect{v}_1,\ldots,\vect{v}_k, \ldots, \mathbf{v}_n \}$   of $\mathbb{R}^n$.
 Let $P$ be the matrix with  $\vect{v}_1,\ldots,\vect{v}_n$ as columns.  $P$ is invertible, and we have that
 
@@ -337,7 +337,7 @@ An equivalent alternative characterisation of diagonalisability is given in the 
 ::::::{prf:proposition}
 :label: Prop:Eigenvalues:DiagbleVersusEigenvectors
 
-An $n \times n$  matrix $A$ is diagonalisable if and only if $A$ has $n$ linearly independent eigenvectors.
+An $n \times n$-matrix $A$ is diagonalisable if and only if $A$ has $n$ linearly independent eigenvectors.
 Such a set of eigenvectors then forms a basis for $\R^n$.
 
 ::::::
@@ -620,7 +620,7 @@ These examples show the two causes why a matrix may not be diagonalisable, as is
 ::::::{prf:theorem}
 :label: Thm:Diagonalisable:ThirdCharacterization
 
-The $n \times n$ matrix $A$ is (real) diagonalisable if and only if it satisfies the following two conditions.
+The $n \times n$-matrix $A$ is (real) diagonalisable if and only if it satisfies the following two conditions.
 
 <ol type = "i">
 
@@ -654,7 +654,7 @@ The basic idea is that, since eigenvectors for different eigenvalues are automat
 ::::::{admonition} (More detailed) Proof of&nbsp;{prf:ref}`Thm:Diagonalisable:ThirdCharacterization`
 :class: tudproof, dropdown
 
-Suppose that the $n \times n$ matrix $A$ has only real eigenvalues,  say  $\lambda_1,\ldots,\lambda_k$, and that for each eigenvalue $\lambda_i$ the geometric multiplicity $m_i$  is equal to the algebraic multiplicity, so
+Suppose that the $n \times n$-matrix $A$ has only real eigenvalues,  say  $\lambda_1,\ldots,\lambda_k$, and that for each eigenvalue $\lambda_i$ the geometric multiplicity $m_i$  is equal to the algebraic multiplicity, so
 
 $$
   \operatorname{g.m.}(\lambda_i)  = m_i= \operatorname{a.m.}(\lambda_i) , \quad i = 1, \ldots, k.
@@ -993,7 +993,7 @@ $$
 :url: https://embed.grasple.com/exercises/bd1c8f7a-917f-431f-889b-463ab7a7c6f6?id=91486
 :label: grasple_exercise_6_3_1
 :dropdown:
-:description: Given a $2\times 2$ matrix $A$ and 'diagonaliser' $P$, to find the diagonal matrix $D$ such that $A=PDP^{-1}$.  
+:description: Given a $2\times 2$-matrix $A$ and 'diagonaliser' $P$, to find the diagonal matrix $D$ such that $A=PDP^{-1}$.  
 
 ::::::
 
@@ -1002,7 +1002,7 @@ $$
 :url: https://embed.grasple.com/exercises/5bcb24df-9cfd-4e4b-bcae-b550fb0fad63?id=91488
 :label: grasple_exercise_6_3_2 
 :dropdown:
-:description:  To find a diagonalisation of a $2\times 2$ matrix (insofar it exists).
+:description:  To find a diagonalisation of a $2\times 2$-matrix (insofar it exists).
 
 ::::::
 
@@ -1011,7 +1011,7 @@ $$
 :url: https://embed.grasple.com/exercises/c0d56365-5434-45b0-9c82-805112428024?id=91489
 :label: grasple_exercise_6_3_3 
 :dropdown:
-:description:  To find a diagonalisation of a $2\times 2$ matrix (insofar it exists).
+:description:  To find a diagonalisation of a $2\times 2$-matrix (insofar it exists).
 
 ::::::
 
@@ -1117,7 +1117,7 @@ $$
 :url: https://embed.grasple.com/exercises/534ce865-0960-403a-affc-0f23f2d14110?id=91521
 :label: grasple_exercise_6_3_13
 :dropdown:
-:description: For which $\alpha$ is given (upper triangular) $4 \times 4$ matrix diagonalisable?
+:description: For which $\alpha$ is given (upper triangular) $4 \times 4$-matrix diagonalisable?
 
 ::::::
 
@@ -1126,7 +1126,7 @@ $$
 :url: https://embed.grasple.com/exercises/f3cdb060-469a-4a30-be46-1ecc7197d66a?id=91522
 :label: grasple_exercise_6_3_14 
 :dropdown:
-:description: True/False question (about a $4\times4$ matrix with $3$ distinct eigenvalues).  
+:description: True/False question (about a $4\times4$-matrix with $3$ distinct eigenvalues).  
 
 ::::::
 

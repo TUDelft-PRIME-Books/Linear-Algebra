@@ -13,7 +13,7 @@ We start with the general definition straightaway.
 ::::::{prf:definition}
 :label: Dfn:DetCofactors:SubmatrixAij
 
-Let $A$ be an $n\times n$ matrix, with $n \geq 2$. The **submatrix** $A_{ij}$ is the $(n-1) \times (n-1)$ matrix that remains when the $i$th row and the $j$th column of $A$ are deleted.
+Let $A$ be an $n\times n$-matrix, with $n \geq 2$. The **submatrix** $A_{ij}$ is the $(n-1) \times (n-1)$-matrix that remains when the $i$th row and the $j$th column of $A$ are deleted.
 
 ::::::
 
@@ -38,7 +38,7 @@ $$
 ::::::{prf:definition}
 :label: Dfn:DetCofactors:Determinant
 
-Let $A$ be an $n\times n$ matrix, with $n \geq 3$.
+Let $A$ be an $n\times n$-matrix, with $n \geq 3$.
 The **determinant** of $A$, which we denote by either $\det{A}$ or $|A|$, is defined by
 
 $$
@@ -133,7 +133,7 @@ $$
 For instance, on the diagonal all signs are $+$.
 
 For the $4\times 4$ {prf:ref}`Ex:DetCofactor:4x4Det` we could take advantage of the two zeros in the first column.
-For an $n\times n$ matrix without zeros the complete expansion will contain $n\cdot (n-1) \cdot \cdots \cdot 3 \cdot 2 \cdot 1 = n!$ products.
+For an $n\times n$-matrix without zeros the complete expansion will contain $n\cdot (n-1) \cdot \cdots \cdot 3 \cdot 2 \cdot 1 = n!$ products.
 We have already seen in the previous section
 
 $$
@@ -179,7 +179,7 @@ $$
 
 We omit the proof, which is rather long and technical.
 
-The following example illustrates the rule for the determinant of an arbitrary $3 \times 3$ matrix.
+The following example illustrates the rule for the determinant of an arbitrary $3 \times 3$-matrix.
 
 ::::::{prf:example}
 :label: Ex:DetCofactors:3x3det
@@ -437,7 +437,7 @@ The last property that may be expected to hold as a consequence of {prf:ref}`Thm
 ::::::{prf:proposition}
 :label: Prop:DetCofactors:DetTranspose
 
-For any $n\times n$ matrix $A$ the determinant of $A$ is equal to the determinant of its transpose. In a formula
+For any $n\times n$-matrix $A$ the determinant of $A$ is equal to the determinant of its transpose. In a formula
 
 $$
 \det{A} = \operatorname{det}\big(A^T\big).

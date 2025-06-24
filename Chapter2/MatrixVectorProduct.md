@@ -3,7 +3,7 @@
 # The matrix-vector product $A\vect{x}$
 
 In this section we will introduce another interpretation/representation of a system of linear equations.  
-We will define the product of an $m\times n$ matrix $A$ with a vector $\vect{x}$ in $\mathbb{R}^n$. In the next chapter this will also be the stepping stone to the general matrix-matrix product.
+We will define the product of an $m\times n$-matrix $A$ with a vector $\vect{x}$ in $\mathbb{R}^n$. In the next chapter this will also be the stepping stone to the general matrix-matrix product.
 
 (Subsec:MatVecProduct)=
 
@@ -12,7 +12,7 @@ We will define the product of an $m\times n$ matrix $A$ with a vector $\vect{x}$
 ::::{prf:definition}
 :label: Dfn:MatVectProd:ProductMatVec
 
-The product $A\mathbf{x}$ of an $m\times n$ matrix
+The product $A\mathbf{x}$ of an $m\times n$-matrix
 
 $$
  A = (\mathbf{a}_1 \,\,\mathbf{a}_2\, \ldots\, \mathbf{a}_n)
@@ -31,7 +31,7 @@ $$
   A\mathbf{x} = x_1\mathbf{a}_1 + x_2\mathbf{a}_2 + \ldots + x_n\mathbf{a}_n.
 $$
 
-So: $A\mathbf{x}$ is the linear combination of the columns of the matrix $A$ with the entries of the vector $\mathbf{x}$ as coefficients.
+So $A\mathbf{x}$ is the linear combination of the columns of the matrix $A$ with the entries of the vector $\mathbf{x}$ as coefficients.
 
 If the size $n$ of the vector $\mathbf{x}$ is not equal to the number of columns of the matrix $A$, then the product $A\mathbf{x}$ is not defined.
 
@@ -61,7 +61,7 @@ $$
 4(1) + (-2)(2) + (-1)(3) + 3(5) =  (12).
 $$
 
-It is customary to consider a 1x1 matrix as a number, and write the last product as 
+It is customary to consider a $1\times1$-matrix as a number, and write the last product as 
 
 $$
 \begin{pmatrix}1 & 2 & 3 & 5 \end{pmatrix} 
@@ -209,8 +209,8 @@ and the linear system
 
 $$
    \left\{\begin{array}{ccccccccc}
-            a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  b_1 \\
-            a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! b_2 \\
+            a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  b_1, \\
+            a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! b_2, \\
             \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\cdots\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
             a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! b_m
           \end{array}
@@ -246,9 +246,9 @@ We want to write the system of equations
 
 $$
 \left\{\begin{array}{ccccccc}
-  5x_1 & - & 3x_2 & -&2x_3 &=&  4 \\
-  3x_1 & + & 7x_2 & -&2x_3 &=&  5 \\
-  2x_1 & - &6x_2 & +&5x_3 &=& 6  \\
+  5x_1 & - & 3x_2 & -&2x_3 &=&  4, \\
+  3x_1 & + & 7x_2 & -&2x_3 &=&  5, \\
+  2x_1 & - &6x_2 & +&5x_3 &=& 6,  \\
     x_1 &   &  & +& x_3 &=& 8
 \end{array}
 \right.
@@ -290,12 +290,12 @@ $$
 ::::{prf:proposition}
 :label: Prop:MatVecProduct:Linearity
 
-For each $m\times n$ matrix $A$, for all vectors $\mathbf{x},\mathbf{y}$ in $\mathbb{R}^n$, and for all scalars $c$
+For each $m\times n$-matrix $A$, for all vectors $\mathbf{x},\mathbf{y}$ in $\mathbb{R}^n$, and for all scalars $c$
 
 <ol type ="i">
 <li>
 
-$A\,(\mathbf{x}+\mathbf{y} ) = A\mathbf{x} + A\mathbf{y}$;
+$A\,(\mathbf{x}+\mathbf{y} ) = A\mathbf{x} + A\mathbf{y}$.
 
 </li>
 <li>
@@ -480,8 +480,8 @@ Suppose the linear system
 
 $$
    \left\{\begin{array}{ccccccccc}
-            a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  p_1 \\
-            a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! p_2 \\
+            a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  p_1, \\
+            a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! p_2,\\
             \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\cdots\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
             a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! p_m \\
           \end{array}
@@ -492,8 +492,8 @@ is consistent and the linear system
 
 $$
    \left\{\begin{array}{ccccccccc}
-            a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  q_1 \\
-            a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! q_2 \\
+            a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  q_1, \\
+            a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! q_2, \\
             \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\cdots\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
             a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! q_m \\
           \end{array}
@@ -504,10 +504,10 @@ is inconsistent. Show that the system
 
 $$
    \left\{\begin{array}{ccccccccc}
-            a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  r_1 \\
-            a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! r_2 \\
+            a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  r_1, \\
+            a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! r_2, \\
             \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\cdots\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
-            a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! r_m \\
+            a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! r_m, \\
           \end{array}
    \right.
 $$
@@ -662,9 +662,9 @@ Is the span of the following three vectors equal to $\mathbb{R}^3$?
 $$
 
 \mathbf{v}_1=
-\begin{pmatrix} 1 \\ 1 \\ -1 \end{pmatrix} \quad \mathbf{v}_2=
-\begin{pmatrix} 0 \\ 1 \\ 1 \end{pmatrix} \quad \mathbf{v}_3=
-\begin{pmatrix} 3 \\5 \\-1 \end{pmatrix}
+\begin{pmatrix} 1 \\ 1 \\ -1 \end{pmatrix}, \quad \mathbf{v}_2=
+\begin{pmatrix} 0 \\ 1 \\ 1 \end{pmatrix}, \quad \mathbf{v}_3=
+\begin{pmatrix} 3 \\5 \\-1 \end{pmatrix}.
 
 
 $$
@@ -674,7 +674,7 @@ We can use {prf:ref}`Prop:LinearCombinations:PivotSpanSolution` to solve this pr
 $$
 
 A=
-\begin{pmatrix} 1 & 0 & 3 \\ 1 & 1 & 5 \\ -1 & 1 & -1 \end{pmatrix}
+\begin{pmatrix} 1 & 0 & 3 \\ 1 & 1 & 5 \\ -1 & 1 & -1 \end{pmatrix}.
 
 
 $$
@@ -702,7 +702,7 @@ If $\mathbf{v}_1, \dots ,\mathbf{v}_k$ are vectors in $\mathbb{R}^n$ and $k<n$, 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LinearCombinations:SpanNotRn`
 :class: tudproof
 
-Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix $A$. By definition, the matrix $A$ is an $n\times k$ matrix. Let $E$ be the reduced echelon form of $A$. Since $E$ has $k$ columns we know that $E$ can have at most $k$ pivots. Because $k<n$ this means that the number of pivots is less than $n$. Therefore, we find that the number of pivots is less than the number of rows in $E$. This implies that it is impossible for $E$ to have a pivot in each row. {prf:ref}`Prop:LinearCombinations:PivotSpanSolution` now tells us that the span of the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ cannot be equal to $\mathbb{R}^n$.
+Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix $A$. By definition, the matrix $A$ is an $n\times k$-matrix. Let $E$ be the reduced echelon form of $A$. Since $E$ has $k$ columns we know that $E$ can have at most $k$ pivots. Because $k<n$ this means that the number of pivots is less than $n$. Therefore, we find that the number of pivots is less than the number of rows in $E$. This implies that it is impossible for $E$ to have a pivot in each row. {prf:ref}`Prop:LinearCombinations:PivotSpanSolution` now tells us that the span of the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ cannot be equal to $\mathbb{R}^n$.
 
 ::::
 
@@ -749,7 +749,7 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 :url: https://embed.grasple.com/exercises/194dcee8-b5e7-42af-8ab0-c40c4fce47a4?id=114628
 :label: grasple_exercise_2_4_5
 :dropdown:
-:description: Between matrox-vector and vector-vector equation.
+:description: Between matrix-vector and vector-vector equation.
 
 ::::
 

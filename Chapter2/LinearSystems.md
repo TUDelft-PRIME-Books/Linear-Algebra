@@ -11,12 +11,12 @@ csp:
 
 ## Consistent and inconsistent linear systems
 
-In Chapter 1 the question whether two lines or two planes intersect or do not intersect was touched upon. In the case of two planes the question can be resolved by finding equations for the planes and checking whether there are points that simultaneously satisfy these two equations. We can write this in the form
+In {numref}`Chapter %s <Chapter:VectorsLinesPlanes>` the question whether two lines or two planes intersect or do not intersect was touched upon. In the case of two planes the question can be resolved by finding equations for the planes and checking whether there are points that simultaneously satisfy these two equations. We can write this in the form
 
 $$
   \left\{\begin{array}{ccccccc}
-       a_1x_1 &+& a_2x_2 &+& a_3x_3 &=& c_1 \\
-      b_1x_1 &+& b_2x_2 &+& b_3x_3 &=& c_2
+       a_1x_1 &+& a_2x_2 &+& a_3x_3 &=& c_1, \\
+      b_1x_1 &+& b_2x_2 &+& b_3x_3 &=& c_2,
        \end{array}
   \right.
 $$
@@ -76,10 +76,10 @@ The most general system then looks as follows:
 $$
 
    \left\{\begin{array}{ccccccccc}
-            a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \cdots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  b_1 \\
-            a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\cdots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! b_2 \\
+            a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \cdots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  b_1, \\
+            a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\cdots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! b_2, \\
             \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\cdots\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
-            a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \cdots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! b_m \\
+            a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \cdots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! b_m. \\
           \end{array}
    \right.
 $$
@@ -111,7 +111,7 @@ Two solutions for the system of equations
 $$
 
    \left\{\begin{array}{ccccccc}
-      2x_1&+&3x_2&+&  x_3&=&0\\
+      2x_1&+&3x_2&+&  x_3&=&0,\\
       3x_1&+& x_2&+& 5x_3&=&7\\
    \end{array}\right.
 $$
@@ -133,8 +133,8 @@ For instance, substitution of the second proposed solution yields
 $$
 
   \left\{\begin{array}{ccccccc}
-    2\cdot 5&+&3\cdot(-3)&+&  (-1)&=&0\\
-    3\cdot 5&+& (-3)&+& 5\cdot(-1)&=&7\\
+    2\cdot 5&+&3\cdot(-3)&+&  (-1)&=&0,\\
+    3\cdot 5&+& (-3)&+& 5\cdot(-1)&=&7,\\
   \end{array}\right.
 $$
 
@@ -161,8 +161,8 @@ The system
 $$
 
    \left\{\begin{array}{ccccccc}
-    2x_1&+&3x_2&+&  x_3&=&5\\
-    3x_1&+& x_2&+& 4x_3&=&7\\
+    2x_1&+&3x_2&+&  x_3&=&5,\\
+    3x_1&+& x_2&+& 4x_3&=&7,\\
     4x_1&+& 6x_2&+& 2x_3&=&8\\
     \end{array}\right.
 $$
@@ -203,7 +203,7 @@ The simplest inconsistent system may well be the system with the one equation
 
 $$
 
-   0x_1 + 0x_2 + \,\cdots\, + 0x_n = 1
+   0x_1 + 0x_2 + \,\cdots\, + 0x_n = 1.
 $$
 
 As we will see later, this conflicting equation in a way pops up in any inconsistent system.
@@ -217,20 +217,20 @@ and the other unknowns can be chosen freely. In words this may look more complic
 ::::{prf:example}
 :label: Ex:LinSystems:SystemOfOneEquation
 
-Find all solutions of the equation in the variables $x_1,\ldots,x_5$.
+Find all solutions of the following equation in the variables $x_1,\ldots,x_5$:
 
 $$
 
-  x_1 + 4x_2 + 5x_3 + 0x_4 - x_5 = 7
+  x_1 + 4x_2 + 5x_3 + 0x_4 - x_5 = 7.
 $$
 
-One way to denote the set of solutions:
+One way to denote the set of solutions is
 
 $$
 
  \left\{\begin{array}{l}
-        x_1 = 7 - 4x_2 -5x_3 + x_5 \\
-        x_2, x_3, x_4 \text{ and  }  x_5  \text{  are free}
+        x_1 = 7 - 4x_2 -5x_3 + x_5, \\
+        x_2, x_3, x_4 \text{ and  }  x_5  \text{  are free}.
         \end{array}
  \right.
 $$
@@ -271,7 +271,7 @@ However, this is not the only way to write down the general solution: in this ex
 $$
 
   \left\{\begin{array}{l}
-        x_5 = -7 +x_1 +4x_2 +5x_3  \\
+        x_5 = -7 +x_1 +4x_2 +5x_3,  \\
         x_1, x_2, x_3 \text{ and  } x_4  \text{  are free}
         \end{array}
  \right.
@@ -282,7 +282,7 @@ and
 $$
 
      \left\{\begin{array}{l}
-        x_2 = \frac74 - \frac14x_1 -\frac54x_3+\frac14x_5  \\
+        x_2 = \frac74 - \frac14x_1 -\frac54x_3+\frac14x_5,  \\
         x_1, x_3, x_4 \text{ and  } x_5  \text{  are free}
       \end{array}
     \right.
@@ -303,7 +303,7 @@ We solve the system
 $$
 
    \left\{\begin{array}{ccccc}
-    2x_1&-&5x_2&=&-2\\
+    2x_1&-&5x_2&=&-2,\\
     4x_1&-&7x_2&=& 2.
     \end{array}\right.
 $$
@@ -345,7 +345,7 @@ Thus we have found that there is a unique solution:
 
 $$
 
-    \left\{\begin{array}{l} x_1 = 4 \\ x_2 = 2. \end{array} \right.
+    \left\{\begin{array}{l} x_1 = 4, \\ x_2 = 2. \end{array} \right.
 $$
 
 There is nothing wrong with this method, but with more than two equations it has the tendency to become messy.
@@ -355,12 +355,12 @@ There is nothing wrong with this method, but with more than two equations it has
 $$
 
    \left\{\begin{array}{ccccc}
-        2x_1&-&5x_2&=&-2\\
+        2x_1&-&5x_2&=&-2,\\
         4x_1&-&7x_2&=& 2
     \end{array}\right.\quad\Longrightarrow\quad
      \left\{\begin{array}{ccccc}
-        2x_1&-&5x_2&=&-2\\
-            & &3x_2&=& 6
+        2x_1&-&5x_2&=&-2,\\
+            & &3x_2&=& 6.
     \end{array}\right.
 $$
 
@@ -385,8 +385,8 @@ We start with an example of three equations in three unknowns.
 $$
 
    \left\{\begin{array}{ccccccc}
-             x_1 &+&  3x_2 &-&  2x_3 &=&  4 \\
-            3x_1 &+&  7x_2 &-&  2x_3 &=&  8 \\
+             x_1 &+&  3x_2 &-&  2x_3 &=&  4, \\
+            3x_1 &+&  7x_2 &-&  2x_3 &=&  8, \\
             2x_1 &+& 10x_2 &-&  9x_3 &=& 4.
           \end{array}
    \right.
@@ -397,15 +397,15 @@ We can simplify this system by successively eliminating unknowns from equations 
 $$
 
   \left\{\begin{array}{ccccccc}
-             x_1 &+&  3x_2 &-&  2x_3 &=&  4 \\
-            3x_1 &+&  7x_2 &-&  2x_3 &=&  8 \\
+             x_1 &+&  3x_2 &-&  2x_3 &=&  4, \\
+            3x_1 &+&  7x_2 &-&  2x_3 &=&  8, \\
             2x_1 &+& 10x_2 &-&  9x_3 &=& 4
           \end{array}
    \right.   \quad \Longrightarrow \quad
    \left\{\begin{array}{ccccccccccccc}
-             x_1 &+&  3x_2 &-&  2x_3 &=&  4 \\
-                 & & -2x_2 &+&  4x_3 &=&  -4 \\
-                 & &  4x_2 &-&  5x_3 &=& -4
+             x_1 &+&  3x_2 &-&  2x_3 &=&  4, \\
+                 & & -2x_2 &+&  4x_3 &=&  -4, \\
+                 & &  4x_2 &-&  5x_3 &=& -4.
           \end{array}
    \right.
 $$
@@ -419,7 +419,7 @@ $$
  L_1 = x_1  +3x_2 -  2x_3, \quad L_2 = 3x_1 +7 x_2  -2x_3, 
 $$
 
-for the expressions on the left sides of the first two equations.
+for the expressions on the left-hand sides of the first two equations.
 Then the given equations are:
 
 $$
@@ -448,15 +448,15 @@ The crucial thing to note is that these operations can be undone.  If in the sec
 $$
 
    \left\{\begin{array}{ccccccccccccc}
-             x_1 &+&  3x_2 &-&  2x_3 &=&  4 \\
-                 & & -2x_2 &+&  4x_3 &=&  -4 \\
-                 & &  4x_2 &-&  5x_3 &=& -4
+             x_1 &+&  3x_2 &-&  2x_3 &=&  4, \\
+                 & & -2x_2 &+&  4x_3 &=&  -4, \\
+                 & &  4x_2 &-&  5x_3 &=& -4,
           \end{array}
    \right.    \quad \Longrightarrow \quad
    \left\{\begin{array}{ccccccc}
-             x_1 &+&  3x_2 &-&  2x_3 &=&  4 \\
-            3x_1 &+&  7x_2 &-&  2x_3 &=&  8 \\
-            2x_1 &+& 10x_2 &-&  9x_3 &=& 4
+             x_1 &+&  3x_2 &-&  2x_3 &=&  4, \\
+            3x_1 &+&  7x_2 &-&  2x_3 &=&  8, \\
+            2x_1 &+& 10x_2 &-&  9x_3 &=& 4.
           \end{array}
    \right.
 $$
@@ -466,15 +466,15 @@ The implication works two ways, which we can write as follows.
 $$
 
    \left\{\begin{array}{ccccccc}
-             x_1 &+&  3x_2 &-&  2x_3 &=&  4 \\
-            3x_1 &+&  7x_2 &-&  2x_3 &=&  8 \\
+             x_1 &+&  3x_2 &-&  2x_3 &=&  4, \\
+            3x_1 &+&  7x_2 &-&  2x_3 &=&  8, \\
             2x_1 &+& 10x_2 &-&  9x_3 &=& 4
           \end{array}
    \right.  \quad \Longleftrightarrow \quad
    \left\{\begin{array}{ccccccccccccc}
-             x_1 &+&  3x_2 &-&  2x_3 &=&  4 \\
-                 & & -2x_2 &+&  4x_3 &=&  -4 \\
-                 & &  4x_2 &-&  5x_3 &=& -4
+             x_1 &+&  3x_2 &-&  2x_3 &=&  4, \\
+                 & & -2x_2 &+&  4x_3 &=&  -4, \\
+                 & &  4x_2 &-&  5x_3 &=& -4.
           \end{array}
    \right.
 $$
@@ -491,7 +491,7 @@ Two systems of linear equations are called **equivalent** if they have the same 
 ::::
 
 By the same line of reasoning as in the above example we can deduce that adding an arbitrary multiple of any equation to another equation does not change the solution set of the system.
-Of course if we multiply an equation with some nonzero constant, the solution set also remains invariant. This operation is called **scaling**.
+Of course if we multiply an equation with some nonzero constant, the solution set also remains invariant. This operation is called **{index}`scaling`**.
 For the system at hand we could, as a next step, scale the second equation with a factor $-\frac12$. The following proposition summarises the suitable operations to adapt a system of equations.
 
 ::::{prf:proposition}
@@ -538,14 +538,14 @@ We scale the second equation with a factor $-\frac12$
 
 $$
  \left\{\begin{array}{cccccccccccccccccccccc}
-             x_1 &+&  3x_2 &-&  2x_3 &=&  4  & \quad[E_1]\\
-                 & & -2x_2 &+&  4x_3 &=&  -4 & \quad[-\frac12E_2]\\
+             x_1 &+&  3x_2 &-&  2x_3 &=&  4,  & \quad[E_1]\\
+                 & & -2x_2 &+&  4x_3 &=&  -4, & \quad[-\frac12E_2]\\
                  & &  4x_2 &-&  5x_3 &=& -4  &\quad[E_3]
           \end{array}
    \right.    \quad \Longleftrightarrow \quad
   \left\{\begin{array}{ccccccccccccc}
-             x_1 &+&  3x_2 &-&  2x_3 &=&  4 \\
-                 & &   x_2 &-&  2x_3 &=&  2 \\
+             x_1 &+&  3x_2 &-&  2x_3 &=&  4, \\
+                 & &   x_2 &-&  2x_3 &=&  2, \\
                  & &  4x_2 &-&  5x_3 &=& -4
           \end{array}
    \right.
@@ -556,16 +556,16 @@ and then subtract the second equation four times from the third:
 $$
 
    \left\{\begin{array}{cccccccccccccccccccccc}
-             x_1 &+&  3x_2 &-&  2x_3 &=&  4 & \quad[E_1]\\
-                 & &   x_2 &-&  2x_3 &=&  2 & \quad[E_2]\\
+             x_1 &+&  3x_2 &-&  2x_3 &=&  4, & \quad[E_1]\\
+                 & &   x_2 &-&  2x_3 &=&  2, & \quad[E_2]\\
                  & &  4x_2 &-&  5x_3 &=& -4 & \quad[E_3-4 E_2]
           \end{array}
    \right.
     \quad \Longleftrightarrow \quad
      \left\{\begin{array}{ccccccccccccc}
-             x_1 &+&  3x_2 &-&  2x_3 &=&  4 \\
-                 & &   x_2 &-&  2x_3 &=&  2 \\
-                 & &       & &  3x_3 &=& -12
+             x_1 &+&  3x_2 &-&  2x_3 &=&  4, \\
+                 & &   x_2 &-&  2x_3 &=&  2, \\
+                 & &       & &  3x_3 &=& -12.
           \end{array}
    \right.
 $$
@@ -611,45 +611,42 @@ Consider the following system of equations
 $$
 
    \left\{\begin{array}{ccccccc}
-              x_1 &+&  4x_2 &-&  5x_3 &=&  4 \\
-             2x_1 &+&  7x_2 &-&  2x_3 &=&  9 \\
-              x_1 &+&  3x_2 &+&  3x_3 &=&  6
+              x_1 &+&  4x_2 &-&  5x_3 &=&  4, \\
+             2x_1 &+&  7x_2 &-&  2x_3 &=&  9, \\
+              x_1 &+&  3x_2 &+&  3x_3 &=&  6.
           \end{array}
    \right.
 $$
 
 Making use of the notation introduced in the previous example we simplify the system:
 
-$$
 
+$$
+\begin{align*}
+&\phantom{\iff} 
   \left\{\begin{array}{cccccccc}
-              x_1 &+&  4x_2 &-&  5x_3 &=&  4 &\quad[E_1]\\
-             2x_1 &+&  7x_2 &-&  2x_3 &=&  9 &\quad[E_2-2E_1]\\
+              x_1 &+&  4x_2 &-&  5x_3 &=&  4, &\quad[E_1]\\
+             2x_1 &+&  7x_2 &-&  2x_3 &=&  9, &\quad[E_2-2E_1]\\
               x_1 &+&  3x_2 &+&  3x_3 &=&  6 &\quad[E_3-E_1]
           \end{array}
    \right.
-$$
-
-$$
-
-   \iff
+\\
+&\iff
     \left\{\begin{array}{cccccccccccccccccccccc}
-              x_1 &+&  4x_2 &-&  5x_3 &=&  4 &\quad[E_1] \\
-                  & &  -x_2 &+&  8x_3 &=&  1 &\quad[E_2]\\
+              x_1 &+&  4x_2 &-&  5x_3 &=&  4, &\quad[E_1] \\
+                  & &  -x_2 &+&  8x_3 &=&  1, &\quad[E_2]\\
                   & &  -x_2 &+&  8x_3 &=&  2 &\quad[E_3-E_2]
           \end{array}
    \right.
-$$
-
-$$
-
-   \iff
+\\
+&\iff
     \left\{\begin{array}{ccccccccccccc}
-              x_1 &+&  4x_2 &-&  5x_3 &=&  4  \\
-                  & &  -x_2 &+&  8x_3 &=&  1 \\
+              x_1 &+&  4x_2 &-&  5x_3 &=&  4,  \\
+                  & &  -x_2 &+&  8x_3 &=&  1, \\
                   & &       & &     0 &=&  1.
           \end{array}
    \right.
+\end{align*}
 $$
 
 From the last equation it immediately follows that there are no solutions, in other words, the system is *inconsistent*.
@@ -666,8 +663,8 @@ We find the general solution of the linear system
 $$
 
    \left\{\begin{array}{ccccccccc}
-     4x_1&-&2x_2&-& 3x_3&+&7x_4&=&5\\
-     3x_1&-&x_2&-& 2x_3&+&5x_4&=&7\\
+     4x_1&-&2x_2&-& 3x_3&+&7x_4&=&5,\\
+     3x_1&-&x_2&-& 2x_3&+&5x_4&=&7,\\
      x_1&-&x_2&-& 2x_3&+&3x_4&=&3.
     \end{array}\right.
 $$
@@ -679,32 +676,32 @@ $$
 \begin{array}{cl}
         &
          \left\{\begin{array}{cccccccccc}
-     4x_1&-&2x_2&-& 3x_3&+&7x_4&=&5&\quad[E_3]\\
-     3x_1&-&x_2&-& 2x_3&+&5x_4&=&7&\quad[E_2]\\
+     4x_1&-&2x_2&-& 3x_3&+&7x_4&=&5,&\quad[E_3]\\
+     3x_1&-&x_2&-& 2x_3&+&5x_4&=&7,&\quad[E_2]\\
      x_1&-&x_2&-& 2x_3&+&3x_4&=&3&\quad[E_1]
     \end{array}\right.\\\iff &
    \left\{\begin{array}{cccccccccc}
-      x_1&-&x_2&-& 2x_3&+&3x_4&=&3&\quad[E_1]\\
-     3x_1&-&x_2&-& 2x_3&+&5x_4&=&7&\quad[E_2-3E_1]\\
+      x_1&-&x_2&-& 2x_3&+&3x_4&=&3,&\quad[E_1]\\
+     3x_1&-&x_2&-& 2x_3&+&5x_4&=&7,&\quad[E_2-3E_1]\\
       4x_1&-&2x_2&-& 3x_3&+&7x_4&=&5&\quad[E_3-4E_1]
     \end{array}\right.    \\
    \iff &
    \left\{\begin{array}{cccccccccccccccccccccccccccc}
-      x_1&-&x_2&-& 2x_3&+&3x_4&=&3&\quad[E_1]\\
-      &&2x_2&+& 4x_3&-&4x_4&=&-2&\quad[\frac12E_2]\\
+      x_1&-&x_2&-& 2x_3&+&3x_4&=&3,&\quad[E_1]\\
+      &&2x_2&+& 4x_3&-&4x_4&=&-2,&\quad[\frac12E_2]\\
        &&2x_2&+& 5x_3&-&5x_4&=&-7&\quad[E_3]
     \end{array}\right.
      \\
    \iff &
    \left\{\begin{array}{cccccccccccccccccccccccccccc}
-      x_1&-&x_2&-& 2x_3&+&3x_4&=&3&\quad[E_1]\\
-      &&x_2&+& 2x_3&-&2x_4&=&-1&\quad[E_2]\\
+      x_1&-&x_2&-& 2x_3&+&3x_4&=&3,&\quad[E_1]\\
+      &&x_2&+& 2x_3&-&2x_4&=&-1,&\quad[E_2]\\
        &&2x_2&+& 5x_3&-&5x_4&=&-7&\quad[E_3-2E_2]
     \end{array}\right.    \\
    \iff &
    \left\{\begin{array}{ccccccccccccccccc}
-      x_1&-&x_2&-& 2x_3&+&3x_4&=&3\\
-      &&x_2&+& 2x_3&-&2x_4&=&-1\\
+      x_1&-&x_2&-& 2x_3&+&3x_4&=&3,\\
+      &&x_2&+& 2x_3&-&2x_4&=&-1,\\
        && && x_3&-&x_4&=&-5.
     \end{array}\right.\end{array}
 $$
@@ -723,7 +720,7 @@ Via the second equation we can express $x_2$ as a function of $x_4$
 $$
 
   x_2 + 2(-5+x_4) -2x_4 = -1 \quad \iff \quad
-  x_2 = 9
+  x_2 = 9.
 $$
 
 And then it follows from the first equation that
@@ -731,7 +728,7 @@ And then it follows from the first equation that
 $$
 
  x_1 - 9 - 2\cdot(-5+x_4) + 3x_4 = 3 \quad \iff \quad
- x_1 = 2 -x_4
+ x_1 = 2 -x_4.
 $$
 
 So the solution can be written as
@@ -739,10 +736,10 @@ So the solution can be written as
 $$
 
   \left\{\begin{array}{l}
-       x_1 = 2 -x_4 \\
-       x_2 = 9 \\
-       x_3 = -5 + x_4\\
-       x_4 \text{  is free}
+       x_1 = 2 -x_4, \\
+       x_2 = 9, \\
+       x_3 = -5 + x_4,\\
+       x_4 \text{  is free}.
     \end{array}\right.
 $$
 
@@ -761,7 +758,7 @@ Any linear system in the variables $x_1,\ldots, x_n$ can be solved as follows:
 <ul>
 <li>
 
-Using the operations of {prf:ref}`Prop:LinSystems:ElimOperations` the system can be simplified to an equivalent linear system with the following property: in each equation at least one more of the first unknowns has a coefficient 0 than in the previous equation. If an unknown has a coefficient 0 we say that the unknown has been **eliminated**.
+Using the operations of {prf:ref}`Prop:LinSystems:ElimOperations` the system can be simplified to an equivalent linear system with the following property: in each equation at least one more of the first unknowns has a coefficient $0$ than in the previous equation. If an unknown has a coefficient $0$ we say that the unknown has been **eliminated**.
 
 </li>
 <li>
@@ -798,7 +795,7 @@ Before that, we define the concept of one of the most basic building blocks in l
 ::::{prf:definition}
 :label: Dfn:LinSystems:Matrix
 
-An $m \times n$ **matrix** $A$ is a rectangular array of numbers $a_{ij}$, $1\leq i \leq m$, $1 \leq j \leq n$.
+A **matrix** $A$ is a rectangular array of numbers $a_{ij}$, $1\leq i \leq m$, $1 \leq j \leq n$:
 
 $$
    A = \left(\begin{array}{cccc}
@@ -812,10 +809,12 @@ $$
 
 It consists of $m$ horizontal **rows** of size $n$, or, equivalently, of $n$ vertical **columns** of size $m$.
 
+We call $m\times n$ the **size** of the matrix $A$ and we say $A$ is an $m \times n$-matrix.
+
 ::::
 
 In a statement about a matrix the first index always refers to the row(s), the second index to the column(s).
-E.g., $a_{ij}$ is the number in the $i$-th row and the $j$-th column and an $m \times n$ matrix has $m$ rows and $n$ columns.
+E.g., $a_{ij}$ is the number in the $i$-th row and the $j$-th column and an $m \times n$-matrix has $m$ rows and $n$ columns.
 
 A matrix is usually surrounded by parentheses or (square) brackets. We opt for parentheses.
 
@@ -832,7 +831,7 @@ B = \left(  \begin{array}{ccccc}
     \end{array}\right)
 $$
 
-is a $3\times 5$ matrix.
+is a $3\times 5$-matrix.
 
 Its second row is $\begin{pmatrix} 2 & 7 & -1 & 0 & 8  \end{pmatrix}$ and its third column is 
 $
@@ -851,15 +850,15 @@ The **augmented matrix** for a system of equations
 
 $$
    \left\{\begin{array}{ccccccccc}
-            a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  b_1 \\
-            a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! b_2 \\
+            a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  b_1, \\
+            a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! b_2, \\
             \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\cdots\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
             a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! b_m \\
           \end{array}
    \right.
 $$
 
-is the matrix
+is the $m\times(n+1)$-matrix
 
 $$
    \left(    \begin{array}{cccc|c}
@@ -887,7 +886,7 @@ is called the **coefficient matrix** of the system. The column behind the bar co
 
 ::::
 
-The augmented matrix is nothing more than an abbreviation for a system of equations. With the vertical bar we want to indicate that the last column plays a special role, namely, it contains the constants on the right  sides of the equations. If we denote these terms by the vector
+The augmented matrix is nothing more than an abbreviation for a system of equations. With the vertical bar we want to indicate that the last column plays a special role, namely, it contains the constants on the right-hand sides of the equations. If we denote these terms by the vector
 
 $$
   \mathbf{b} =  \left(\begin{array}{c}
@@ -906,23 +905,23 @@ To conclude this subsection we will reconsider the earlier example of a system o
 
 $$
     \left\{\begin{array}{ccccccc}
-             x_1 & + & 3x_2 & -&2x_3 &=&  4 \\
-            3x_1 & + & 7x_2 & -&2x_3 &=&  8 \\
+             x_1 & + & 3x_2 & -&2x_3 &=&  4, \\
+            3x_1 & + & 7x_2 & -&2x_3 &=&  8, \\
             2x_1 & + &10x_2 & -&9x_3 &=& 4.
           \end{array}
    \right.
 $$
 
-We will apply the same simplifications to the system as before. Parallel to this we adapt the augmented matrix accordingly, using a notation that speaks for itself.  $R$ stands for 'row'.
+We will apply the same simplifications to the system as before. Parallel to this we adapt the augmented matrix accordingly, using a notation that should speak for itself.  $R$ stands for 'row'.
 
 $$
  \begin{array}{lcl}
   \left\{\begin{array}{ccccccc}
-             x_1 & + & 3x_2 & -&2x_3 &=&  4 \\
-            3x_1 & + & 7x_2 & -&2x_3 &=&  8 \\
+             x_1 & + & 3x_2 & -&2x_3 &=&  4, \\
+            3x_1 & + & 7x_2 & -&2x_3 &=&  8, \\
             2x_1 & + &10x_2 & -&9x_3 &=& 4
           \end{array}
-   \right.&\qquad&
+   \right.&\iff&
 \left(\begin{array}{rrr|r}1 &  3 & -2& 4\\3 &  7 & -2&  8\\2 & 10 & -9 & 4
 \end{array}\right)\begin{array}{l}
 {[R_1]} \\
@@ -931,11 +930,11 @@ $$
 \end{array} \\
     & {\Big\Updownarrow} & \\
    \left\{\begin{array}{ccccccccccccc}
-             x_1 & + & 3x_2 & -&2x_3 &=&  4 \\
-                 & - & 2x_2 & +&4x_3 &=&  -4 \\
+             x_1 & + & 3x_2 & -&2x_3 &=&  4, \\
+                 & - & 2x_2 & +&4x_3 &=&  -4, \\
                  &   &4x_2 & -&5x_3 &=& -4
           \end{array}
-   \right.&\qquad&
+   \right.&\iff&
 \left(\begin{array}{rrr|r}1 &  3 & -2& 4\\0& -2 &  4 &  -4\\0 & 4 & -5 & -4
 \end{array}\right)\begin{array}{l}
 {[R_1]} \\
@@ -944,11 +943,11 @@ $$
 \end{array} \\
     & {\Big\Updownarrow} & \\
    \left\{\begin{array}{ccccccccccccc}
-             x_1 & + & 3x_2 & -&2x_3 &=&  4 \\
-                 &  & x_2 & -&2x_3 &=&  2 \\
+             x_1 & + & 3x_2 & -&2x_3 &=&  4, \\
+                 &  & x_2 & -&2x_3 &=&  2, \\
                  &   &4x_2 & -&5x_2 &=& -4
           \end{array}
-   \right.&\qquad& \left(\begin{array}{rrr|r}1 &  3 & -2& 4\\0& 1 &  -2 &  2\\0 & 4 & -5 & -4
+   \right.&\iff& \left(\begin{array}{rrr|r}1 &  3 & -2& 4\\0& 1 &  -2 &  2\\0 & 4 & -5 & -4
 \end{array}\right)\begin{array}{l}
 {[R_1]} \\
 {[R_2]} \\
@@ -960,21 +959,21 @@ $$
                  &  & x_2 & -&2x_3 &=&  2 \\
                  &   &  & &3x_3 &=& -12
           \end{array}
-   \right.&\qquad&
+   \right.&\iff&
 \left(\begin{array}{rrr|r}1 &  3 & -2& 4\\0& 1 &  -2 &  2\\0 & 0 & 3 & -12
-\end{array}\right)
+\end{array}\right).
 \end{array}
 $$
 
 As we have seen before, the solution can now be found by backward substitution.
 
-The right moment to start this backward substitution is when the augmented matrix has been simplified to so-called **echelon form**.
+The right moment to start this backward substitution is when the augmented matrix has been simplified to so-called **{index}`echelon form`**.
 
 (Subsec:LinSystems:RowReduction)=
 
 ## Row reduction and echelon forms
 
-In {numref}`Subsec:LinSystems:Elimination` we have solved linear systems by eliminating variables from equations. It would be nice to have a clear mark where we can stop rewriting the given system, to forestall ending up in a never ending loop. When we use the notation of an augmented matrix we can identify such a mark.
+In {numref}`Subsection %s <Subsec:LinSystems:Elimination>` we have solved linear systems by eliminating variables from equations. It would be nice to have a clear mark where we can stop rewriting the given system, to forestall ending up in a never ending loop. When we use the notation of an augmented matrix we can identify such a mark.
 We first need a few more definitions.
 
 ::::{prf:definition}
@@ -1028,13 +1027,13 @@ $$
 
 ::::
 
-In a similar manner we can define the concept of a **column echelon matrix**.
+In a similar manner we can define the concept of a **{index}`column echelon matrix`**.
 However, since we will only consider row echelon matrices we will not do this. In the sequel we will drop the epithet 'row' and simply speak of echelon form and echelon matrix.
 
 ::::{prf:definition}
 :label: Dfn:LinSystems:Pivot
 
-A **pivot** of a row in an echelon matrix is the first nonzero element (the so-called _leading entry_) of that row.
+A **pivot** of a row in an echelon matrix is the first nonzero element, the so-called **leading entry**, of that row.
 
 ::::
 
@@ -1046,13 +1045,13 @@ The following three matrices are in echelon form:
 $$
  A_1 = \left(\begin{array}{rrr}1 & 2 & 3 \\ 0 & 3 & 2 \\ 0 & 0 & 0 \end{array}  \right), \quad
  A_2 = \left(\begin{array}{rr}1 & 0 \\ 0 & 1 \\ 0 & 0 \\ 0 & 0 \end{array}  \right), \quad
- A_3 = \left(\begin{array}{rrrrr}1 & 1 & 0 &  2 &  0\\ 0 & 0 & 1 & 4 & 0\\ 0 & 0 & 0 & 0 & 1\end{array}  \right)
+ A_3 = \left(\begin{array}{rrrrr}1 & 1 & 0 &  2 &  0\\ 0 & 0 & 1 & 4 & 0\\ 0 & 0 & 0 & 0 & 1\end{array}  \right).
 $$
 
 The following two matrices are not in echelon form
 
 $$
- A_4 = \left(\begin{array}{rrr}0 & 0 & 0 \\ 0 & 1 & 2 \\ 0 & 0 & 1 \end{array}  \right) \quad
+ A_4 = \left(\begin{array}{rrr}0 & 0 & 0 \\ 0 & 1 & 2 \\ 0 & 0 & 1 \end{array}  \right), \quad
  A_5 = \left(\begin{array}{rrr}1 & 0 & 0 \\ 0 & 1 & 1  \\ 0 &1 & 0 \end{array}  \right).
 $$
 
@@ -1216,7 +1215,7 @@ $$
    1 & -1 & -1 & 2 & 3 \\
    0 & 0 & 2 & -1 & -5 \\
    0 & 0 & 0 & 0 & 8
-\end{array}\right)= E
+\end{array}\right)= E.
   \end{array}
 $$
 
@@ -1234,7 +1233,7 @@ $$
 \end{array}
     &\sim&
 \left(\begin{array}{rrrrr}1 & -1 & -1 & 2 & 3\\0 & 0 & 0 & 0 & 8\\0 & 0 & 2 & -1 & -5
-\end{array}\right)   \end{array}
+\end{array}\right).   \end{array}
 $$
 
 ::::
@@ -1253,7 +1252,7 @@ We will not give a formal proof.
 
 The idea that a matrix can be reduced to an echelon matrix is as follows: just start from the top left and work downwards.
 
-If $a_{11}$ is not 0, that will be the first pivot. We can use it to make all the other elements in the first column 0.
+If $a_{11}$ is not 0, that will be the first pivot. We can use it to make all the other elements in the first column $0$.
 
 We then get
 
@@ -1351,7 +1350,7 @@ $$
 \end{array}
     \sim
 \left(\begin{array}{rrrr}1 &0  & 0 & 2\\0 & 1 & 0 & -5\\0 & 0 & 1 & 3
-\end{array}\right)
+\end{array}\right).
 $$
 
 ::::
@@ -1361,7 +1360,7 @@ There are three important observations regarding this example.
 ::::{prf:remark}
 :label: Rem:LinSystems:CreatingZeros
 
-Apart from the second step, where two rows were scaled, in each step one pivot was used to make all elements right above and right below it equal to 0. In this way we move forward all the time to a matrix with more and more zeros **in a structured way**.
+Apart from the second step, where two rows were scaled, in each step one pivot was used to make all elements right above and right below it equal to 0. In this way we move forward all the time to a matrix with more and more zeros *in a structured way*.
 
 ::::
 
@@ -1373,7 +1372,7 @@ The last matrix can really be seen as a natural end point of the reduction proce
 <ul>
 <li>
 
-The pivots are all 1, the simplest non-zero number.
+The pivots are all $1$, the simplest non-zero number.
 
 </li>
 <li>
@@ -1409,8 +1408,8 @@ is given by
 
 $$
  \left\{    \begin{array}{ccccccccc}
-          x_1 &     &     &=& 2\\
-              & x_2 &     &=&-5\\
+          x_1 &     &     &=& 2,\\
+              & x_2 &     &=&-5,\\
               &     & x_3 &=& 3
     \end{array}
    \right.
@@ -1430,12 +1429,12 @@ A **reduced echelon matrix** or matrix **in reduced echelon form** is an echelon
 <ol type ="i">
 <li>
 
-All pivots are 1.
+All pivots are $1$.
 
 </li>
 <li>
 
-In a column with a pivot all other elements are 0.
+In a column with a pivot all other elements are $0$.
 
 </li>
 </ol>
@@ -1491,27 +1490,37 @@ In the solution as constructed according to the previous proposition the pivot v
 We find the solution of the linear system with the following augmented matrix, which is already in row reduced echelon:
 
 $$
-\left(\begin{array}{rrrrr|r}1 & 0 & 2 & 0 & 3 & 6\\0 & 1 & -3 & 0 &-4 & 7\\0 & 0 & 0 & 1 & 5 & 8\\\end{array}\right)
+\left(\begin{array}{rrrrr|r}1 & 0 & 2 & 0 & 3 & 6\\0 & 1 & -3 & 0 &-4 & 7\\0 & 0 & 0 & 1 & 5 & 8\\\end{array}\right).
 $$
 
 We go back to the corresponding system and bring the non-pivot variables $x_3$ and $x_5$ to the right:
 
 $$
   \left\{    \begin{array}{ccccccccccccccccccccc}
-          x_1 &   &    &  +& 2x_3&  &     &+&3x_5& =& 6\\
-              &   &x_2 &  -& 3x_3&  &     &-& 4x_5&=&7 \\
+          x_1 &   &    &  +& 2x_3&  &     &+&3x_5& =& 6,\\
+              &   &x_2 &  -& 3x_3&  &     &-& 4x_5&=&7, \\
               &   &    &   &     &  & x_4 &+&5x_5 &=& 8
     \end{array}
    \right.   \quad \iff \quad
    \left\{    \begin{array}{ccccccc}
-          x_1 & = &6&-&2x_3 & - &3x_5\\
-          x_2 & = &7&+&3x_3 & + &4x_5 \\
+          x_1 & = &6&-&2x_3 & - &3x_5,\\
+          x_2 & = &7&+&3x_3 & + &4x_5, \\
           x_4 & = &8& &     & - &5x_5
     \end{array}
    \right.
 $$
 
-and we add: '$x_3$ and $x_5$ are free'.
+and we add: '$x_3$ and $x_5$ are free':
+
+$$
+   \left\{    \begin{array}{ccccccc}
+          x_1 & = &6&-&2x_3 & - &3x_5,\\
+          x_2 & = &7&+&3x_3 & + &4x_5, \\
+          x_4 & = &8& &     & - &5x_5 \\
+          x_3 &\text{and}& x_5 &\text{are}&\text{free}.
+    \end{array}
+   \right.
+$$
 
 ::::
 
@@ -1528,13 +1537,13 @@ Any matrix is row equivalent to a reduced echelon matrix. Moreover, this last ma
 :label: Rem:LinSystems:RowEquivalentToRREF
 
 Again we give no formal proof.  
-In the previous subsection we showed, also informally, that any matrix can be reduced to a matrix in echelon form.  (cf. {prf:ref}`Prop:LinSystems:EchelonFormExists`) 
+In the previous subsection we showed, also informally, that any matrix can be reduced to a matrix in echelon form (cf. {prf:ref}`Prop:LinSystems:EchelonFormExists`).
 
 In this echelon matrix we may divide each row by its pivot (first nonzero element).
 
-And lastly 'working upwards' step by step we use each pivot -- which we made equal to 1 -- to create zeros in all positions above it.
+And lastly 'working upwards' step by step we use each pivot -- which we made equal to $1$ -- to create zeros in all positions above it.
 
-(The last two simplifications may be done in reversed order: first use the pivots to create zeros in the positions above them and then scale the rows.)
+The last two simplifications may be done in reversed order: first use the pivots to create zeros in the positions above them and then scale the rows.
 This reasoning supports the validity of the first statement.
 The uniqueness is harder to show in an intuitive way, and it is definitely harder to prove rigorously.
 
@@ -1550,13 +1559,13 @@ $$
    \end{pmatrix}
 $$
 
-to reduced echelon form.
+to reduced echelon form in three steps:
 
-step 1: use the pivot in the third row to create zeros above it;
+*Step 1*: use the pivot in the third row to create zeros above it.
 
-step 2: use the pivot in the second row to create a zero above it;
+*Step 2*: use the pivot in the second row to create a zero above it.
 
-step 3: scale all rows:
+*Step 3*: scale all rows.
 
 $$
 \left(\begin{array}{rrrrr}3 & 2 &1 &6&-2\\0 & 2 & -2 &-3 & 1\\0 & 0 & 0 &3 & 2
@@ -1584,7 +1593,7 @@ $$
 \end{array} \quad
  \sim   \quad
 \left(\begin{array}{rrrrr}1 & 0 &1 &0&-3\\0 & 1 & -1 &0 & 3/2\\0 & 0 & 0 &1 & 2/3
-\end{array}\right)
+\end{array}\right).
 $$
 
 ::::
@@ -1604,7 +1613,7 @@ $$
 
 via two different routes.
 
-Route 1: Use the top left entry $a_{11} = 2$ as a first pivot. An auxiliary step, to avoid fractions, is to scale the second row with a factor 2:
+*Route 1*: Use the top left entry $a_{11} = 2$ as a first pivot. An auxiliary step, to avoid fractions, is to scale the second row with a factor $2$:
 
 $$
 \left(\begin{array}{rrrr}2 & -1 & -1 & 2\\1 & 2 & 4 & 4\\4 & -2 & -4 & 6
@@ -1665,7 +1674,7 @@ $$
 \end{array}\right).
 $$
 
-Alternatively, we may start with a row swap:
+*Route 2*: Alternatively, we may start with a row swap:
 
 $$
 \left(\begin{array}{rrrr}2 & -1 & -1 & 2\\1 & 2 & 4 & 4\\4 & -2 & -4 & 6
@@ -1833,7 +1842,7 @@ $$
 {[R_3-2R_2]} \\
 \end{array} \sim
 \left(\begin{array}{rrr|r}1 & 3 & 1 &5\\0 & -5& -3 &-6\\0 & 0 & 0 &0
-\end{array}\right)
+\end{array}\right).
 
 
 $$
@@ -1936,7 +1945,7 @@ The remaining exercises tend to be a bit more theoretic.
 :url: https://embed.grasple.com/exercises/c8dee65d-a165-4534-89ee-76967d660c9c?id=69544
 :label: grasple_exercise_2_1_1
 :dropdown:
-:description: Solving a linear system of 2 equations in 2 unknowns.
+:description: Solving a linear system of $2$ equations in $2$ unknowns.
 
 ::::
 
@@ -2071,7 +2080,7 @@ The remaining exercises tend to be a bit more theoretic.
 :url: https://embed.grasple.com/exercises/1dad6770-3b71-4c80-ae78-e63d2cfd93e9?id=69563
 :label: grasple_exercise_2_1_15
 :dropdown:
-:description: Row reduced echelon form of a $3 \times 5$ matrix.
+:description: Row reduced echelon form of a $3 \times 5$-matrix.
 
 ::::
 
@@ -2109,7 +2118,7 @@ The remaining exercises are a bit more theoretical.
 :url: https://embed.grasple.com/exercises/3077fca5-9295-4634-a72d-18eca315de59?id=69743
 :label: grasple_exercise_2_1_T2
 :dropdown:
-:description: How many pivots can an $m\times n$ matrix have?
+:description: How many pivots can an $m\times n$-matrix have?
 
 ::::
 

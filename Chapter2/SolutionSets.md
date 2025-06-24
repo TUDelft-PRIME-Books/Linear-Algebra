@@ -24,8 +24,8 @@ Consider the following system of equations:
 :label: Eq:SolSet:HomSys2D
 
 \left\{\begin{array}{ccccccc}
-2x_{1}&+&3x_{2}&-&x_{3}&=&0\\
-x_{1}&+&x_{2}&+&x_{3}&=&0
+2x_{1}&+&3x_{2}&-&x_{3}&=&0,\\
+x_{1}&+&x_{2}&+&x_{3}&=&0.
 \end{array}\right.
 
 :::
@@ -38,7 +38,7 @@ $$
 \begin{pmatrix}-4\\3\\1\end{pmatrix}\mid t\in\mathbb{R}\right\}.
 $$
 
-We can see that the solution set consists of all multiples of a fixed vector $\mathbf{v}$, i.e. it is a line through the origin. This line can be seen in blue in {numref}`Figure %s <Fig:SolSet:TwoLinesinR3>`.
+We can see that the solution set consists of all multiples of a fixed vector $\mathbf{v}$, i.e. it is a line through the origin. This line can be seen in {numref}`Figure %s <Fig:SolSet:TwoLinesinR3>`.
 
 ::::
 
@@ -80,7 +80,7 @@ $$
     \end{pmatrix}
 $$
 
-to an element of the solution set from {prf:ref}`Example:SolSet:TwoLinesinR3`. The green line in {numref}`Figure %s <Fig:SolSet:TwoLinesinR3>` corresponds to the $a=4$ case.
+to an element of the solution set from {prf:ref}`Example:SolSet:TwoLinesinR3`. The line $\mathcal{L}_2$ in {numref}`Figure %s <Fig:SolSet:TwoLinesinR3>` corresponds to the $a=4$ case.
 
 ```{applet}
 :url: solution_sets/two_lines_in_r3
@@ -88,7 +88,7 @@ to an element of the solution set from {prf:ref}`Example:SolSet:TwoLinesinR3`. T
 :name: Fig:SolSet:TwoLinesinR3
 :class: dark-light
 
-The solution sets for the two systems of equations from {prf:ref}`Example:SolSet:TwoLinesinR3` and {prf:ref}`Example:SolSet:TwoLinesinR3b`. In blue we see the solution set of the original system {eq}`Eq:SolSet:HomSys2D`, in green that of the system with the non-zero right hand side {eq}`Eq:SolSet:NonHomSys2D`.
+The solution sets for the two systems of equations from {prf:ref}`Example:SolSet:TwoLinesinR3` and {prf:ref}`Example:SolSet:TwoLinesinR3b`. The line $\mathcal{L}_1$ is the solution set of the original system {eq}`Eq:SolSet:HomSys2D`, the line $\mathcal{L}_2$ that of the system with the non-zero right-hand side {eq}`Eq:SolSet:NonHomSys2D`.
 ```
 
 ::::
@@ -128,8 +128,8 @@ Consider the following linear system:
 :label: Eq:SolSet:HomSys3D
 
     \left\{\begin{array}{ccccccc}
-    x_{1}&+&3x_{2}&-&x_{3}&=&0\\
-    2x_{1}&+&6x_{2}&-&2x_{3}&=&0
+    x_{1}&+&3x_{2}&-&x_{3}&=&0,\\
+    2x_{1}&+&6x_{2}&-&2x_{3}&=&0.
     \end{array}\right.
 
 :::
@@ -144,7 +144,7 @@ $$
 \begin{pmatrix} 1\\0\\1\end{pmatrix} \mid s,t\in\mathbb{R}\right\}.
 $$
 
-What happens if we make the constant terms non-zero? Let us change the right hand side of the first equation from $0$ to $a$ and that of the second equation from $0$ to $2a$:
+What happens if we make the constant terms non-zero? Let us change the right-hand side of the first equation from $0$ to $a$ and that of the second equation from $0$ to $2a$:
 
 :::{math}
 
@@ -166,14 +166,14 @@ t
 \begin{pmatrix}1\\0\\1\end{pmatrix}\mid s,t\in\mathbb{R}\right\}.
 $$
 
-Note the similarity to {prf:ref}`Example:SolSet:TwoLinesinR3`. Making the right hand side non-zero translates the plane away from the origin by adding the vector
+Note the similarity to {prf:ref}`Example:SolSet:TwoLinesinR3`. Making the right-hand side non-zero translates the plane away from the origin by adding the vector
 
 $$
 \mathbf{r}_{0}=
 \begin{pmatrix}a\\0\\0\end{pmatrix}
 $$
 
-to elements of the solution set of the linear system {eq}`Eq:SolSet:HomSys3D`. This translated plane is parallel to the original one. You can see both these planes in {numref}`Figure %s <Fig:SolSet:TwoPlanesinR3>` for the particular case $a=7$. The yellow vector there is
+to elements of the solution set of the linear system shown in Equation {eq}`Eq:SolSet:HomSys3D`. This translated plane is parallel to the original one. You can see both these planes in {numref}`Figure %s <Fig:SolSet:TwoPlanesinR3>` for the particular case $a=7$. The yellow vector there is
 
 $$
 \mathbf{v}_{1}=
@@ -192,7 +192,7 @@ The solution set for the two systems of equations from {prf:ref}`Ex:Solset:TwoPl
 
 ```
 
-Note that, if we had changed the right hand side of our first equation to $a$, $a\neq0$, and the second one to anything but $2a$, the system would have had no solutions at all. The two equations would in that case describe two parallel planes.
+Note that, if we had changed the right-hand side of our first equation to $a$, $a\neq0$, and the second one to anything but $2a$, the system would have had no solutions at all. The two equations would in that case describe two parallel planes.
 
 ::::
 
@@ -200,7 +200,7 @@ From these examples, it seems like linear systems in which the constant terms ar
 
 ## Homogeneous linear systems
 
-Our first aim in this section is to show that the intuition from {numref}`Subsec:SolSet:WritingSolSets` holds in general. We first introduce some terminology to avoid the long and clumsy phrase **linear system with all constant terms equal to $0$**.
+Our first aim in this section is to show that the intuition from {numref}`Subsection %s <Subsec:SolSet:WritingSolSets>` holds in general. We first introduce some terminology to avoid the long and clumsy phrase **linear system with all constant terms equal to $0$**.
 
 ::::{prf:definition}
 :label: Def:SolSet:Homogeneous
@@ -209,8 +209,8 @@ We will call a linear system **homogeneous** if all constant terms are $0$. If
 
 $$
 \left\{\begin{array}{ccccccc}
-a_{11}x_{1}&+&\cdots &+&a_{1n}x_{n}&=&b_{1}\\
-a_{21}x_{1}&+&\cdots &+&a_{2n}x_{n}&=&b_{2}\\
+a_{11}x_{1}&+&\cdots &+&a_{1n}x_{n}&=&b_{1},\\
+a_{21}x_{1}&+&\cdots &+&a_{2n}x_{n}&=&b_{2},\\
 &&&\vdots&&&\\
 a_{m1}x_{1}&+&\cdots &+&a_{mn}x_{n}&=&b_{m}
 \end{array}\right.
@@ -220,16 +220,16 @@ is a system of equations, then the **associated homogeneous system** is given by
 
 $$
 \left\{\begin{array}{ccccccc}
-a_{11}x_{1}&+&\cdots &+&a_{1n}x_{n}&=&0\\
-a_{21}x_{1}&+&\cdots &+&a_{2n}x_{n}&=&0\\
+a_{11}x_{1}&+&\cdots &+&a_{1n}x_{n}&=&0,\\
+a_{21}x_{1}&+&\cdots &+&a_{2n}x_{n}&=&0,\\
 &&&\vdots&&&\\
-a_{m1}x_{1}&+&\cdots &+&a_{mn}x_{n}&=&0
+a_{m1}x_{1}&+&\cdots &+&a_{mn}x_{n}&=&0.
 \end{array}\right.
 $$
 
 ::::
 
-{prf:ref}`Prop:SolSet:SolplusHom` shows that the solution set of a non-homogeneous linear system can be obtained by adding the solutions of the associated homogeneous system to one particular solution of the original system. Which particular solution you take does not matter. Compare this to what we found in Section {numref}`Subsec:SolSet:WritingSolSets`, in particular to {numref}`Figures %s <Fig:SolSet:TwoLinesinR3>` and {numref}`Figure %s <Fig:SolSet:TwoPlanesinR3>`.
+{prf:ref}`Prop:SolSet:SolplusHom` shows that the solution set of a non-homogeneous linear system can be obtained by adding the solutions of the associated homogeneous system to one particular solution of the original system. Which particular solution you take does not matter. Compare this to what we found in {numref}`Subsection %s <Subsec:SolSet:WritingSolSets>`, in particular to {numref}`Figure %s <Fig:SolSet:TwoLinesinR3>` and {numref}`Figure %s <Fig:SolSet:TwoPlanesinR3>`.
 
 ::::{prf:proposition}
 :label: Prop:SolSet:SolplusHom
@@ -245,10 +245,10 @@ Consider the linear system
 
 $$
 \left\{\begin{array}{ccccccc}
-a_{11}x_{1}&+&\cdots &+&a_{1n}x_{n}&=&b_{1}\\
-a_{21}x_{1}&+&\cdots &+&a_{2n}x_{n}&=&b_{2}\\
+a_{11}x_{1}&+&\cdots &+&a_{1n}x_{n}&=&b_{1},\\
+a_{21}x_{1}&+&\cdots &+&a_{2n}x_{n}&=&b_{2},\\
 &&&\vdots&&&\\
-a_{m1}x_{1}&+&\cdots &+&a_{mn}x_{n}&=&b_{m}
+a_{m1}x_{1}&+&\cdots &+&a_{mn}x_{n}&=&b_{m}.
 \end{array}\right.
 $$
 
@@ -256,10 +256,10 @@ Suppose first that $(c_{1},...,c_{n})$ and $(c_{1}',...,c_{n}')$ are solutions a
 
 $$
 \left\{\begin{array}{ccccccccccccccc}
-a_{11}d_{1}&+&\cdots &+&a_{1n}d_{n}&=&a_{11}c_{1}-a_{11}c'_{1}&+&\cdots &+&a_{1n}c_{n}-a_{1n}c'_{n}&=&b_{1}-b_{1}&=&0\\
-a_{21}d_{1}&+&\cdots &+&a_{2n}d_{n}&=&a_{21}c_{1}-a_{21}c'_{1}&+&\cdots &+&a_{2n}c_{n}-a_{2n}c'_{n}&=&b_{1}-b_{1}&=&0\\
+a_{11}d_{1}&+&\cdots &+&a_{1n}d_{n}&=&a_{11}c_{1}-a_{11}c'_{1}&+&\cdots &+&a_{1n}c_{n}-a_{1n}c'_{n}&=&b_{1}-b_{1}&=&0,\\
+a_{21}d_{1}&+&\cdots &+&a_{2n}d_{n}&=&a_{21}c_{1}-a_{21}c'_{1}&+&\cdots &+&a_{2n}c_{n}-a_{2n}c'_{n}&=&b_{1}-b_{1}&=&0,\\
 &&&&&&&\vdots&&&&&&&\\
-a_{m1}d_{1}&+&\cdots &+&a_{mn}d_{n}&=&a_{m1}c_{1}-a_{m1}c'_{1}&+&\cdots &+&a_{mn}c_{n}-a_{mn}c'_{n}&=&b_{1}-b_{1}&=&0
+a_{m1}d_{1}&+&\cdots &+&a_{mn}d_{n}&=&a_{m1}c_{1}-a_{m1}c'_{1}&+&\cdots &+&a_{mn}c_{n}-a_{mn}c'_{n}&=&b_{1}-b_{1}&=&0,
 \end{array}\right.
 $$
 
@@ -269,10 +269,10 @@ Assume on the other hand that $(c_{1},...,c_{n})$ is a solution of the system an
 
 $$
 \left\{\begin{array}{ccccccccccccc}
-a_{11}c'_{1}&+&\cdots &+&a_{1n}c'_{n}&=&a_{11}(c_{1}+d_{1})&+&\cdots &+&a_{1n}(c_{n}+d_{n})&=&b_{1}+0\\
-a_{21}c'_{1}&+&\cdots &+&a_{2n}c'_{n}&=&a_{21}(c_{1}+d_{1})&+&\cdots &+&a_{2n}(c_{n}+d_{n})&=&b_{2}+0\\
+a_{11}c'_{1}&+&\cdots &+&a_{1n}c'_{n}&=&a_{11}(c_{1}+d_{1})&+&\cdots &+&a_{1n}(c_{n}+d_{n})&=&b_{1}+0,\\
+a_{21}c'_{1}&+&\cdots &+&a_{2n}c'_{n}&=&a_{21}(c_{1}+d_{1})&+&\cdots &+&a_{2n}(c_{n}+d_{n})&=&b_{2}+0,\\
 &&&&&&\vdots&&&&&&\\
-a_{m1}c'_{1}&+&\cdots &+&a_{mn}c'_{n}&=&a_{m1}(c_{1}+d_{1})&+&\cdots &+&a_{mn}(c_{n}+d_{n})&=&b_{m}+0\\
+a_{m1}c'_{1}&+&\cdots &+&a_{mn}c'_{n}&=&a_{m1}(c_{1}+d_{1})&+&\cdots &+&a_{mn}(c_{n}+d_{n})&=&b_{m}+0,\\
 \end{array}\right.
 $$
 
@@ -380,15 +380,15 @@ x_{4}
 \end{pmatrix}.
 $$
 
-If we subtract the right hand side, we can rewrite this as the homogeneous system
+If we subtract the right-hand side, we can rewrite this as the homogeneous system
 
 $$
 \left\{\begin{array}{ccccccccc}
-2x_{1}&+&0x_{2}&-&2x_{3}&-&0x_{4}&=&0\\
-1x_{1}&+&0x_{2}&-&1x_{3}&-&0x_{4}&=&0\\
-4x_{1}&+&0x_{2}&-&0x_{3}&-&2x_{4}&=&0\\
-0x_{1}&+&1x_{2}&-&0x_{3}&-&1x_{4}&=&0
-\end{array}\right..
+2x_{1}&+&0x_{2}&-&2x_{3}&-&0x_{4}&=&0,\\
+1x_{1}&+&0x_{2}&-&1x_{3}&-&0x_{4}&=&0,\\
+4x_{1}&+&0x_{2}&-&0x_{3}&-&2x_{4}&=&0,\\
+0x_{1}&+&1x_{2}&-&0x_{3}&-&1x_{4}&=&0.
+\end{array}\right.
 $$
 
 This system can be solved as follows, using the row reduction algorithm of {numref}`Section %s <Section:LinSystems>`:
@@ -406,7 +406,7 @@ $$
 {[R_3]} \\
 {[R_4\leftrightarrow R_2]}
 \end{array} \sim
-\left(\begin{array}{rrrr|r}2&0&-2&0&0\\0&1&0&-1&0\\0&0&4&-2&0\\0&0&0&0&0\\\end{array}\right)
+\left(\begin{array}{rrrr|r}2&0&-2&0&0\\0&1&0&-1&0\\0&0&4&-2&0\\0&0&0&0&0\\\end{array}\right).
 $$
 
 Now we can conclude that the solution set looks as follows:
@@ -433,7 +433,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/03d9c585-c51a-41e0-b3ac-33ad9f42cb55?id=83384
 :label: grasple_exercise_2_3_1
 :dropdown:
-:description: Solution set of a system of 2 equations in 3 unknowns.
+:description: Solution set of a system of $2$ equations in $3$ unknowns.
 
 ::::
 
@@ -442,7 +442,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/1e3c93cb-4fa7-4bf5-b46f-0c631e074d7e?id=83594
 :label: grasple_exercise_2_3_2
 :dropdown:
-:description: Solution set of a system of 3 equations in 2 unknowns.
+:description: Solution set of a system of $3$ equations in $2$ unknowns.
 
 ::::
 
@@ -451,7 +451,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/44dcb893-3beb-46a2-bddd-75f830cba5de?id=83499
 :label: grasple_exercise_2_3_3
 :dropdown:
-:description: Solution set of a system of 2 equations in 2 unknowns.
+:description: Solution set of a system of $2$ equations in $2$ unknowns.
 
 ::::
 
@@ -460,7 +460,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/ce8a45dc-f26f-45ca-a754-35512f882411?id=80874
 :label: grasple_exercise_2_3_4
 :dropdown:
-:description: Solution set of a system of 3 equations in 4 unknowns.
+:description: Solution set of a system of $3$ equations in $4$ unknowns.
 
 ::::
 
@@ -469,7 +469,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/633cfb15-272d-40c0-adc6-36f091446d7d?id=83279
 :label: grasple_exercise_2_3_5
 :dropdown:
-:description: Solution set of a system of 2 equations in 4 unknowns.
+:description: Solution set of a system of $2$ equations in $4$ unknowns.
 
 ::::
 
@@ -478,7 +478,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/611e08ab-df69-4a14-96d3-b6a9bbda316b?id=83238
 :label: grasple_exercise_2_3_6
 :dropdown:
-:description: Solution set of a system of 3 equations in 3 unknowns.
+:description: Solution set of a system of $3$ equations in $3$ unknowns.
 
 ::::
 
@@ -487,7 +487,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/9536051d-baba-4b22-94ed-94190e9e6b47?id=83246
 :label: grasple_exercise_2_3_7
 :dropdown:
-:description: Solution set of a system of 3 equations in 5 unknowns.
+:description: Solution set of a system of $3$ equations in $5$ unknowns.
 
 ::::
 
@@ -496,7 +496,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/196ac202-23e4-4c94-842b-e50410fedea0?id=83505
 :label: grasple_exercise_2_3_8
 :dropdown:
-:description: Solution set of a system of 2 equations in 4 unknowns.
+:description: Solution set of a system of $2$ equations in $4$ unknowns.
 
 ::::
 
@@ -577,7 +577,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/afd10760-7bbe-4d33-a58e-c3568aae869c?id=116765
 :label: grasple_exercise_2_3_16
 :dropdown:
-:description: To find a (3x3) matrix such that the system with augmented matrix $(A | \vect{0})$ has a given vector as a solution.
+:description: To find a $3\times3$-matrix $A$ such that the system with augmented matrix $(A | \vect{0})$ has a given vector as a solution.
 
 ::::
 
@@ -586,7 +586,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/7bb8810d-9cb5-458a-a1ab-7a9655483523?id=116547
 :label: grasple_exercise_2_3_17
 :dropdown:
-:description: To find a (3x3) matrix such that the system with augmented matrix $(A | \vect{0})$ has two given vectors as solutions.
+:description: To find a $3\times3$-matrix $A$ such that the system with augmented matrix $(A | \vect{0})$ has two given vectors as solutions.
 
 ::::
 
@@ -603,7 +603,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/021bb82e-7af3-4c84-86b8-0dcd22bf555b?id=84556
 :label: grasple_exercise_2_3_18
 :dropdown:
-:description: Combining solutions of a linear system (1).
+:description: Combining solutions of a linear system ($1$).
 
 ::::
 
@@ -612,7 +612,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/5d723e95-a4e5-4594-970e-6332e4953e73?id=84559
 :label: grasple_exercise_2_3_19
 :dropdown:
-:description: Combining solutions of a linear system (2).
+:description: Combining solutions of a linear system ($2$).
 
 ::::
 
@@ -621,6 +621,6 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/297528c4-7ea0-426b-aaa0-85dbcbfa97af?id=83227
 :label: grasple_exercise_2_3_20
 :dropdown:
-:description: Combining solutions of a linear system (3).
+:description: Combining solutions of a linear system ($3$).
 
 ::::

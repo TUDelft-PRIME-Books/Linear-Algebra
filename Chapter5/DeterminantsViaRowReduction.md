@@ -26,7 +26,7 @@ describes the effects of row operations on a determinant.
 ::::::{prf:proposition} How row operations affect a determinant
 :label: Prop:DetRowReduction:RowOps
 
-For the determinant of an $n\times n$ matrix $A$ the following rules apply.
+For the determinant of an $n\times n$-matrix $A$ the following rules apply.
 
 <ol type = "i">
 <li>
@@ -116,7 +116,7 @@ Note that these properties can be expressed using elementary matrices (cf. {numr
 ::::::{prf:example}
 :label: Ex:DetRowReduction:ElementaryMatrices
 
-Let $A$ be an arbitrary $4\times 4$ matrix, and $E_1, E_2$ and $E_3$ the elementary matrices corresponding to the row operations in {prf:ref}`Ex:DetRowReduction:RowOps`. So
+Let $A$ be an arbitrary $4\times 4$-matrix, and $E_1, E_2$ and $E_3$ the elementary matrices corresponding to the row operations in {prf:ref}`Ex:DetRowReduction:RowOps`. So
 
 $$
 E_1 = \left(\begin{array}{cccc} 1 & 0 & 0 & 0 \\ 0 & c & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1
@@ -153,7 +153,7 @@ we see that in all three cases we have that
 :::
 
 Since every row operation can be performed using the product with an elementary matrix,
-a consequence of {prf:ref}`Prop:DetRowReduction:RowOps` is that Equation {eq}`Eq:DetRowReduction:ElementaryMatrices` holds for *any* product of an elementary $n \times n$ matrix $E$ with an arbitrary $n \times n$ matrix $A$.
+a consequence of {prf:ref}`Prop:DetRowReduction:RowOps` is that Equation {eq}`Eq:DetRowReduction:ElementaryMatrices` holds for *any* product of an elementary $n \times n$-matrix $E$ with an arbitrary $n \times n$-matrix $A$.
 
 These are the basics for the general product rule we will see later, which states that
 
@@ -292,7 +292,7 @@ The proof is -- we think -- quite instructive.  (However, feel free to skip it.)
 
 In the previous section we have already seen that the statement is true for triangular matrices.
 
-Now suppose $A$ is any $n \times n$ matrix. Via row reduction $A$ can be brought to echelon form $F$,
+Now suppose $A$ is any $n \times n$-matrix. Via row reduction $A$ can be brought to echelon form $F$,
 and for a square matrix the echelon form is an upper triangular matrix (with possibly zeros on the diagonal).
 
 From {prf:ref}`Prop:DetCofactors:InvertibleTriangular` we know that for a triangular matrix $F$ we have <BR>
@@ -423,7 +423,7 @@ For each of the following statements decide whether they are true or false. In c
 
 <li>
 
-For each $n \times n$ matrix $A$ it holds that
+For each $n \times n$-matrix $A$ it holds that
 
 <BR>
 
@@ -448,7 +448,7 @@ $$
 
 <li>
 
-For each $n \times n$ matrix $A$ and each real number $k$ it holds that
+For each $n \times n$-matrix $A$ and each real number $k$ it holds that
 
 <BR>
 
@@ -460,7 +460,7 @@ $$
 
 <li>
 
-For each $n \times n$ matrix $A$ it holds that
+For each $n \times n$-matrix $A$ it holds that
 
 <BR>
 
@@ -483,7 +483,7 @@ We treat the statements one by
 
 <li>
 
-Is it true that for each $n \times n$ matrix $A$ it holds that $\operatorname{det}\big(A^k\big)= \big(\det{A}\big)^k$? 
+Is it true that for each $n \times n$-matrix $A$ it holds that $\operatorname{det}\big(A^k\big)= \big(\det{A}\big)^k$? 
 
 This is true, and follows from repeatedly using the property $\det(AB) = \det(A)\det(B)$. Namely,
 <BR>
@@ -514,7 +514,7 @@ $$
 
 <li>
 
-Is it true that for each $n \times n$ matrix $A$ and each real number $k$ it holds that
+Is it true that for each $n \times n$-matrix $A$ and each real number $k$ it holds that
 <BR>
 
 $$
@@ -542,7 +542,7 @@ $$
 
 <li>
 
-Is it true that $\operatorname{det}(-A)= -\det{(A)}$ for each $n \times n$ matrix $A$?
+Is it true that $\operatorname{det}(-A)= -\det{(A)}$ for each $n \times n$-matrix $A$?
 
 
 This is not true in general.  Taking $k = -1$ in the previous statement we see that 
@@ -570,7 +570,7 @@ In fact we will prove the column version, and we add one related rule that will 
 ::::::{prf:proposition}
 :label: Prop:DetRowReduction:SumofCols
 
-Suppose $A$ is an $n\times n$ matrix for which the $k$th column is the sum of two vectors in $\R^n$. So
+Suppose $A$ is an $n\times n$-matrix for which the $k$th column is the sum of two vectors in $\R^n$. So
 
 $$
 \vect{a}_k = \vect{b} +\vect{c}.
@@ -597,7 +597,7 @@ Click on the symbol to the right below for the proof of {prf:ref}`Prop:DetRowRed
 :class: tudproof, dropdown
 
 For typographical reasons we will prove the three rules stated as column operations.
-For an $n \times n$ matrix
+For an $n \times n$-matrix
 
 $$
 
@@ -677,7 +677,7 @@ $$
 \bar{\bar{a}}_{i2} = a_{i1} \quad \text{and} \quad  \bar{\bar{A}}_{i2}= A_{i1}.
 $$
 
-To make this explicit for a $4\times 4$ matrix:
+To make this explicit for a $4\times 4$-matrix:
 
 $$
 \begin{array}{ccc}
@@ -732,7 +732,7 @@ And the argument can even be generalised for two columns that are not necessaril
 And for an odd number $n$ we have that $(-1)^n = -1$. <BR>
 In fact, to swap columns $i$ and $j$, with $i < j$,  we need  $j-i$ neighbour swaps to move
 column $i$ to position $j$, and  $j-i-1$ swaps to move (the original) column $j$ to position $i$, which gives a total of $n = 2(j-i)+1$ swaps. 
-For instance, to interchange column $2$ and column $5$ in a $5 \times 5$ matrix the $(j-i) + (j-i-1) = 3+2 =5$ neigbour swaps can be visualised as follows
+For instance, to interchange column $2$ and column $5$ in a $5 \times 5$-matrix the $(j-i) + (j-i-1) = 3+2 =5$ neigbour swaps can be visualised as follows
 
 
 $$
@@ -1075,7 +1075,7 @@ Suppose $A$ is a matrix with two equal rows, say row $i$ and row $j$ are equal.
 
 If we subtract the $i$th row from the $j$th row, we get a matrix $A_2$ with $j$th row equal to zero, and with $\det(A_2) = \det(A)$. If we take the factor $0$ out, we see that $\det(A_2) = 0$.
 
-For instance, with a $4\times 4$ matrix with equal second and fourth row we would have
+For instance, with a $4\times 4$-matrix with equal second and fourth row we would have
 
 $$
   \begin{vmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\
