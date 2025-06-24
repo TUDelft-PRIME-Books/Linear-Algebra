@@ -23,7 +23,7 @@ in the plane, which we denote by $\norm{\mathbf{v}}$, can be computed using the 
 :::{math}
 :label: Eq:InnerProduct:length-2D
 
-\norm{\mathbf{v}} = \sqrt{a_1^2+a_2^2}
+\norm{\mathbf{v}} = \sqrt{a_1^2+a_2^2}.
 :::
 
 :::{figure} Images/Fig-InnerProduct-Length-2D.svg
@@ -71,7 +71,7 @@ we find that
 :::{math}
 :label: Eq:InnerProduct:length-3D
 
-\norm{\mathbf{v}}= OA = \sqrt{a_1^2 + a_2^2+a_3^2}
+\norm{\mathbf{v}}= OA = \sqrt{a_1^2 + a_2^2+a_3^2}.
 :::
 
 :::{figure} Images/Fig-InnerProduct-perp-non-perp.svg
@@ -107,7 +107,7 @@ There is another way to look at this, which will be useful for the definition of
 The parallelogram spanned by $\vect{v}$ and $\vect{w}$ and its diagonals. How should you choose $\vect{v}$ and $\vect{w}$ such that the diagonals have the same length?
 ```
 
-In the picture on the right the vectors are not perpendicular and
+You can change $\mathbf{v}$ and/or $\mathbf{w}$ in the picture such that these two vectors are not perpendicular and
 
 $$
 
@@ -273,7 +273,7 @@ $$
             (c\mathbf{v}_1)\ip\mathbf{v}_2 &=  \begin{pmatrix}ca_{1}\\ca_{2}\\ \vdots\\ca_{n}\end{pmatrix}\ip\begin{pmatrix}b_{1}\\b_{2}\\       \vdots\\b_{n}\end{pmatrix}  \\
             &= (ca_1)b_1 + (ca_2)b_2+ \ldots + (ca_n)b_n \\
             &= c\,(a_1b_1 +a_2b_2+ \ldots + a_nb_n) \\
-            &= c\, (\mathbf{v}_1\ip\mathbf{v}_2)
+            &= c\, (\mathbf{v}_1\ip\mathbf{v}_2).
 \end{align*}
 $$
 
@@ -363,7 +363,7 @@ $$
 and it also follows from ii. and iii. that
 
 $$
-   \mathbf{v}_1\ip(\mathbf{v}_2-\mathbf{v}_3) = \mathbf{v}_1\ip(\mathbf{v}_2+(-1)\mathbf{v}_3) =\mathbf{v}_1\ip\mathbf{v}_2+\mathbf{v}_1\ip(-1\mathbf{v}_3) = \mathbf{v}_1\ip\mathbf{v}_2-\mathbf{v}_1\ip\mathbf{v}_3
+   \mathbf{v}_1\ip(\mathbf{v}_2-\mathbf{v}_3) = \mathbf{v}_1\ip(\mathbf{v}_2+(-1)\mathbf{v}_3) =\mathbf{v}_1\ip\mathbf{v}_2+\mathbf{v}_1\ip(-1\mathbf{v}_3) = \mathbf{v}_1\ip\mathbf{v}_2-\mathbf{v}_1\ip\mathbf{v}_3.
 $$
 
 Then the statement is proved by the following chain of identities
@@ -430,8 +430,8 @@ the squares of the lengths of the diagonals.
 $$
 \begin{array}{ll}
   OA^2 + AB^2 + BC^2 + CO^2 &=& 2\norm{\vect{v}_1}^2 + 2\norm{\vect{v}_2}^2 \\
-      &=& \norm{\mathbf{v}_1+\mathbf{v}_2}^2 + \norm{\mathbf{v}_1-\mathbf{v}_2}^2    
-      =  OB^2 + CA^2
+      &=& \norm{\mathbf{v}_1+\mathbf{v}_2}^2 + \norm{\mathbf{v}_1-\mathbf{v}_2}^2    \\
+      &=&  OB^2 + CA^2.
 \end{array}
 $$
 
@@ -780,7 +780,7 @@ As we might expect the norm has many properties in common with length.
 
 For any $\mathbf{v}, \,\mathbf{w} \in \mathbb{R}^{n}$ and all $c \in \mathbb{R}$ the following holds:
 
-i. $\norm{\mathbf{v}}\geq 0$, and $\norm{\mathbf{v}} = 0$ only for $\mathbf{v}=\mathbf{0}$;
+i. $\norm{\mathbf{v}}\geq 0$, and $\norm{\mathbf{v}} = 0$ only for $\mathbf{v}=\mathbf{0}$.
 
 ii. Scaling property:
 :::{math}
@@ -894,9 +894,9 @@ From the rules of the norm the following rules of the distance function can be d
 
 For any three vectors $\mathbf{u}, \mathbf{v}$ and $\mathbf{w} \in \mathbb{R}^{n}$ the following statements hold.
 
-i. $\operatorname{dist}(\vect{u},\vect{v}) = \operatorname{dist}(\vect{v},\vect{u})$;
+i. $\operatorname{dist}(\vect{u},\vect{v}) = \operatorname{dist}(\vect{v},\vect{u})$.
 
-ii. $\operatorname{dist}(\vect{u},\vect{v}) = 0 \iff \vect{u}=\vect{v}$;
+ii. $\operatorname{dist}(\vect{u},\vect{v}) = 0 \iff \vect{u}=\vect{v}$.
 
 iii. $\operatorname{dist}(\vect{u},\vect{w}) \leq \operatorname{dist}(\vect{u},\vect{v}) + \operatorname{dist}(\vect{v},\vect{w})$.
 
@@ -1033,7 +1033,7 @@ Next we subtract $\mathbf{v}\ip\mathbf{v} + \mathbf{w}\ip\mathbf{w}$ from both s
 
 $$
 
- \mathbf{v}\ip\mathbf{w}+\mathbf{w}\ip\mathbf{v} = 0
+ \mathbf{v}\ip\mathbf{w}+\mathbf{w}\ip\mathbf{v} = 0.
 $$
 
 And then we are almost there:
@@ -1102,12 +1102,12 @@ $$
 
 :::
 
-:::{admonition} Proof of&nbsp;{prf:ref}`Thm:InnerProduct:Cauchy-Schwarz`&nbsp;({prf:ref}`Cauchy-Schwarz Inequality <Thm:InnerProduct:Cauchy-Schwarz>`)
-:class: tudproof
-
-There are many ways to prove the Cauchy-Schwarz inequality. There is even a whole book devoted to it: "Cauchy Schwarz master class" by J.M. Steele.
+There are many ways to prove the Cauchy-Schwarz inequality. There is even a whole book devoted to it: ["Cauchy Schwarz master class" by J.M. Steele.](https://doi.org/10.1017/CBO9780511817106)
 
 The following proof is based on orthogonal projection and Pythagoras' Theorem.
+
+:::{admonition} Proof of&nbsp;{prf:ref}`Thm:InnerProduct:Cauchy-Schwarz`&nbsp;({prf:ref}`Cauchy-Schwarz Inequality <Thm:InnerProduct:Cauchy-Schwarz>`)
+:class: tudproof
 
 If
 $\mathbf{v} = \mathbf{0}$, the zero vector, then the inequality obviously holds; in fact it becomes an equality:
@@ -1136,7 +1136,7 @@ $$
 $$
 
 be the projection of $\mathbf{w}$ onto $\mathbf{v}$.
-Then we can apply Pythagoras' Theorem!
+Then we can apply Pythagoras' Theorem:
 
 $$
 
@@ -1423,7 +1423,7 @@ $$
 So
 
 $$
-  \varphi = \arccos(-\tfrac13) \approx  1.9106 \approx 109.47^{o}.
+  \varphi = \arccos(-\tfrac13) \approx  1.9106 \approx 109.47^{\circ}.
 $$
 
 :::

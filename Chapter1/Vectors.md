@@ -6,7 +6,7 @@
 
 There is little need to explain the usefulness of the ordinary (real) numbers you are familiar with. Nevertheless, they have their restrictions. For example, they can only describe one aspect of an object like the height of a person, or the age of a tree, or the weight of a car. But in many cases we also want to know a person's location, or a tree's widest circumference, or a car's width.
 
-Quite often we are interested not just in size but also in direction. For example, if you are biking from Rotterdam to The Hague, you are probably less interested in how fast you are going than whether you are going in the right direction. Similarly, you don't just want to know the amount of energy needed to open a door, you also want to know whether you should pull or push. All this cannot be captured just by one number.
+Quite often we are interested not just in size but also in direction. For example, if you are biking from [Rotterdam](https://maps.app.goo.gl/Ywf7H4553KkT4Qqu6) to [The Hague](https://maps.app.goo.gl/1t2aD8HYKCqb6S3x6), you are probably less interested in how fast you are going than whether you are going in the right direction. Similarly, you don't just want to know the amount of energy needed to open a door, you also want to know whether you should pull or push. All this cannot be captured just by one number.
 
 We therefore have a need for something more general. Something which allows us to express a force and a direction at once, something which allows us to collect a lot of information about an object not in one number but in one _thing_. This _thing_ turns out to be a vector. We will define vectors properly in {numref}`Subsection %s <Subsec:Vectors:ndim>`. First, in {numref}`Subsection %s <Subsec:Vectors:Plane>`, we try to get some intuition about length and direction by looking at arrows in the plane.
 
@@ -119,7 +119,7 @@ a_{1}\\a_{2}\\\vdots\\a_{n}
 \end{pmatrix}
 $$
 
- a *vector* or sometimes a *column vector*. The number $n$ is called the *size* of the vector $\mathbf{v}$ and $a_{1},a_{2},...,a_{n}$ are called its *entries* or *components*. In particular, we call $a_{i}$ the *$i$-th entry* or *$i$-th component* of $\mathbf{v}$. The collection of all such vectors is written as $\mathbb{R}^{n}$. The vector for which all entries are $0$ will play a special role. We will denote it by $\mathbf{0}$.
+ a **vector** or sometimes a **column vector**. The number $n$ is called the **size** of the vector $\mathbf{v}$ and $a_{1},a_{2},...,a_{n}$ are called its **entries** or **components**. In particular, we call $a_{i}$ the **$i$-th entry** or **$i$-th component** of $\mathbf{v}$. The collection of all such vectors is written as $\mathbb{R}^{n}$. The vector for which all entries are $0$ will play a special role. We will denote it by $\mathbf{0}$.
 
 ```
 
@@ -147,7 +147,7 @@ $$
 a_{1}\\\vdots\\a_{n}\end{pmatrix}\quad\text{and}\quad\mathbf{v}_{2}=\begin{pmatrix} b_{1}\\\vdots \\b_{n}\end{pmatrix}
 $$
 
- of the same size. The *sum* of $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$, denoted by $\mathbf{v}_{1}+\mathbf{v}_{2}$, is the vector
+ of the same size. The **sum** of $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$, denoted by $\mathbf{v}_{1}+\mathbf{v}_{2}$, is the vector
 
 
 $$
@@ -155,7 +155,7 @@ $$
 \mathbf{v}_{1}+\mathbf{v}_{2}=\begin{pmatrix} a_{1}+b_{1}\\\vdots\\a_{n}+b_{n}\end{pmatrix}.
 $$
 
-If $c$ is a real number, then the *scalar multiple* $c\mathbf{v}_{1}$ is the vector
+If $c$ is a real number, then the **scalar multiple** $c\mathbf{v}_{1}$ is the vector
 
 
 $$
@@ -166,7 +166,7 @@ ca_{1}\\\vdots\\ca_{n}
 $$
 
 
-We will sometimes call real numbers *scalars*, because we use them to scale vectors. To lighten our notation, we will write $-\mathbf{v}_{1}$ for $(-1)\mathbf{v}_{1}$. Likewise, we will often write $\mathbf{v}_{1}-\mathbf{v}_{2}$ for $\mathbf{v}_{1}+(-\mathbf{v}_{2})$.
+We will sometimes call real numbers **scalars**, because we use them to scale vectors. To lighten our notation, we will write $-\mathbf{v}_{1}$ for $(-1)\mathbf{v}_{1}$. Likewise, we will often write $\mathbf{v}_{1}-\mathbf{v}_{2}$ for $\mathbf{v}_{1}+(-\mathbf{v}_{2})$.
 
 ```
 
@@ -208,24 +208,24 @@ Since vector addition and scalar multiplication will be used all the time in thi
 Suppose $\mathbf{v}_{1},\mathbf{v}_{2},\mathbf{v}_{3}$ are vectors in $\mathbb{R}^{n}$ for some natural number $n$ and let $c_{1},c_{2}$ be in $\mathbb{R}$. Then we have:
 
 
-1. $\mathbf{v}_{1}+\mathbf{0}=\mathbf{v}_{1}=\mathbf{0}+\mathbf{v}_{1}$
+1. $\mathbf{v}_{1}+\mathbf{0}=\mathbf{v}_{1}=\mathbf{0}+\mathbf{v}_{1}$.
 2. Associativity:
 	```{math}
 	:label: Item:Vectors:Associativity
 
-	(\mathbf{v}_{1}+\mathbf{v}_{2})+\mathbf{v}_{3}=\mathbf{v}_{1}+(\mathbf{v}_{2}+\mathbf{v}_{3})
+	(\mathbf{v}_{1}+\mathbf{v}_{2})+\mathbf{v}_{3}=\mathbf{v}_{1}+(\mathbf{v}_{2}+\mathbf{v}_{3}).
 	```
 3. Commutativity:
 	```{math}
 	:label: Item:Vectors:Commutativity
 
-	\mathbf{v}_{1}+\mathbf{v}_{2}=\mathbf{v}_{2}+\mathbf{v}_{1}
+	\mathbf{v}_{1}+\mathbf{v}_{2}=\mathbf{v}_{2}+\mathbf{v}_{1}.
 	```
-4. $\mathbf{v}_{1}+(-\mathbf{v}_{1})=\mathbf{0}$
-5. $1\mathbf{v}_{1}=\mathbf{v}_{1}$
-6. $c_{1}(\mathbf{v}_{1}+\mathbf{v}_{2})=c_{1}\mathbf{v}_{1}+c_{1}\mathbf{v}_{2}$
-7. $(c_{1}+c_{2})\mathbf{v}_{1}=c_{1}\mathbf{v}_{1}+c_{2}\mathbf{v}_{1}$
-8. $c_{1}(c_{2}\mathbf{v}_{1})=(c_{1}c_{2})\mathbf{v}_{1}$
+4. $\mathbf{v}_{1}+(-\mathbf{v}_{1})=\mathbf{0}$.
+5. $1\mathbf{v}_{1}=\mathbf{v}_{1}$.
+6. $c_{1}(\mathbf{v}_{1}+\mathbf{v}_{2})=c_{1}\mathbf{v}_{1}+c_{1}\mathbf{v}_{2}$.
+7. $(c_{1}+c_{2})\mathbf{v}_{1}=c_{1}\mathbf{v}_{1}+c_{2}\mathbf{v}_{1}$.
+8. $c_{1}(c_{2}\mathbf{v}_{1})=(c_{1}c_{2})\mathbf{v}_{1}$.
 
 
 

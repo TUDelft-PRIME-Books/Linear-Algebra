@@ -126,7 +126,8 @@ To avoid having to work with square roots we first compute $\norm{\mathbf{u}\cp 
 $$
 \begin{align*}
 \norm{\mathbf{u}\cp \mathbf{v}}^2 &= (a_2b_3-a_3b_2)^2+(a_3b_1-a_1b_3)^2+(a_1b_2-a_2b_1)^2 \\
-&= (a^2_2b^2_3-2a_2b_3a_3b_2+a^2_3b^2_2)+(a^2_3b^2_1-2a_3b_1a_1b_3+a^2_1b^2_3)+(a^2_1b^2_2-2a_1b_2a_2b_1+a^2_2b^2_1)\\
+&= (a^2_2b^2_3-2a_2b_3a_3b_2+a^2_3b^2_2)+(a^2_3b^2_1-2a_3b_1a_1b_3+a^2_1b^2_3)\\
+&~ \quad+(a^2_1b^2_2-2a_1b_2a_2b_1+a^2_2b^2_1) \\
 &= (a^2_1+a^2_2+a^2_3)(b^2_1+b^2_2+b^2_3)-(a_1b_1+a_2b_2+a_3b_3)^2 \\
 &= \norm{\mathbf{u}}^2 \norm{\mathbf{v}}^2-(\mathbf{u} \ip \mathbf{v})^2 \\
 &= \norm{\mathbf{u}}^2 \norm{\mathbf{v}}^2-( \norm{\mathbf{u}} \norm{\mathbf{v}} \cos(\theta))^2 \\
@@ -145,7 +146,7 @@ since $\sqrt{(\sin(\theta))^2}=|\sin(\theta)|$.
 
 ::::
 
-Notice some similarities between the formula for the length of the cross product and a formula that we saw in the Section [](./Inner_Product.md). There we encountered the equality $\mathbf{u}\ip\mathbf{v} = \norm{\mathbf{u}}\norm{\mathbf{v}} \cos(\theta)$, where $\theta$ was the angle between $\mathbf{u}$ and $\mathbf{v}$.
+Notice some similarities between the formula for the length of the cross product and a formula that we saw in the section on the [](./Inner_Product.md). There we encountered the equality $\mathbf{u}\ip\mathbf{v} = \norm{\mathbf{u}}\norm{\mathbf{v}} \cos(\theta)$, where $\theta$ was the angle between $\mathbf{u}$ and $\mathbf{v}$.
 
 ## Geometrical properties of the cross product
 
@@ -282,7 +283,7 @@ $$
 i. Intuitively, this follows from the right-hand rule. If we switch our index and middle finger, then our thumb points in the opposite direction. This equality is easy to prove if we use the definition of the cross product and rearrange the components a little.
 
 $$
-  \begin{array}{rcccr}
+  \begin{array}{rcrcl}
     \mathbf{v_1}\cp\mathbf{v_2} &=& \begin{pmatrix} a_2b_3-a_3b_2 \\ a_3b_1-a_1b_3 \\ a_1b_2-a_2b_1 \end{pmatrix} &=&
 \begin{pmatrix} -(a_3b_2-a_2b_3) \\ -(a_1b_3-a_3b_1) \\ -(a_2b_1-a_1b_2) \end{pmatrix} \\
 &=& -\begin{pmatrix} a_3b_2-a_2b_3 \\ a_1b_3-a_3b_1 \\ a_2b_1-a_1b_2 \end{pmatrix}
@@ -293,7 +294,7 @@ $$
 ii. Here too, we can use our intuition. We know that the length of the cross product is equal to the area of a parallelogram. If we make one side of the parallelogram $c$ times longer, then we multiply the area with a factor $c$ too. Using the definition of the cross product and factoring out the constant $c$ we find the following equalities.
 
 $$
-  \begin{array}{rcccr}
+  \begin{array}{rcrcl}
    (c\mathbf{v_1})\cp\mathbf{v_2} &=& \begin{pmatrix} (ca_2)b_3-(ca_3)b_2 \\ (ca_3)b_1-(ca_1)b_3 \\ (ca_1)b_2-(ca_2)b_1 \end{pmatrix}
 &=& \begin{pmatrix} c(a_2b_3-a_3b_2) \\ c(a_3b_1-a_1b_3) \\ c(a_1b_2-a_2b_1) \end{pmatrix} \\
 &=& c\begin{pmatrix} a_2b_3-a_3b_2 \\ a_3b_1-a_1b_3 \\ a_1b_2-a_2b_1 \end{pmatrix}
@@ -326,7 +327,7 @@ $$
 \begin{vmatrix} a & b \\ c & d  \end{vmatrix}
 $$
 
-is equal to the value $ad-bc$. Such an expression is called a _determinant_.
+is equal to the value $ad-bc$. Such an expression is called a **determinant**.
 
 ::::
 

@@ -301,12 +301,12 @@ Now let $P$ be the point with coordinates $(0, 2, 1)$ and take an arbitrary poin
 A plane through the point $P$.
 ::::
 
-What is the Cartesian equation of this plane? If the coordinates of $Q$ are $(x, y, z)$, then $\overrightarrow{PQ}$ is orthogonal to $\mathbf{n}$ if and only if $\overrightarrow{PQ}\ip \mathbf{n}=0$. If we compute this inner product we obtain the following result.
+What is the Cartesian equation of this plane? If the coordinates of $Q$ are $(x, y, z)$, then $\overrightarrow{PQ}$ is orthogonal to $\mathbf{n}$ if and only if $\overrightarrow{PQ}\ip \mathbf{n}=0$. If we compute this inner product we obtain the following result:
 
 \begin{align*}
 (\mathbf{v}-\mathbf{v_0})\ip \mathbf{n} &= \begin{pmatrix} x-0 \\ y-2 \\ z-1 \end{pmatrix} \ip \begin{pmatrix} 2 \\ 1 \\ 3 \end{pmatrix} \\
 &= 2(x-0)+(y-2)+3(z-1) \\
-&= 2x+y+3z-5
+&= 2x+y+3z-5.
 \end{align*}
 
 This means that $Q$ is on the plane $\mathcal{P}$ through $P$ and orthogonal to $\mathbf{n}$ if and only if its coordinates satisfy $2x+y+3z-5=0$ or $2x+y+3z=5$. Hence, we obtain a Cartesian equation of $\mathcal{P}$.
@@ -346,7 +346,7 @@ Let $\mathcal{P}$ be a plane in $\mathbb{R}^3$. If $\mathbf{v_0}$ is a vector on
 
 :::
 
-will be called a _normal equation_ of $\mathcal{P}$.
+will be called a **normal equation** of $\mathcal{P}$.
 
 ::::
 
@@ -390,7 +390,7 @@ $$
    \vect{n} = \begin{pmatrix} a \\ b \\ c  \end{pmatrix}
 $$
 
-is always a vector normal to (= perpendicular to) the plane $\mathcal{P}$.
+is always a vector normal to (i.e, perpendicular to) the plane $\mathcal{P}$.
 
 ::::
 
@@ -656,7 +656,7 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 :url: https://embed.grasple.com/exercises/42d254e8-e577-4bb1-b365-110f9805c1cf?id=78848
 :label: grasple_exercise_1_4_8
 :dropdown:
-:description: To show that two lines have 0, 1 or $\infty$ points in common.
+:description: To show that two lines have $0$, $1$ or $\infty$ points in common.
 
 ::::
 
