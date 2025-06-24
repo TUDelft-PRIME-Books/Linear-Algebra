@@ -874,7 +874,7 @@ The two 'orthogonal transformations' do not change norms, and the transformation
 
 There will be two applications described in this section.
 
-1.  Data compression
+1.  Data compression.
 
 2.  Linear Least Squares.
 
@@ -925,9 +925,14 @@ $$
 
 of the first $k$ terms gives a good approximation of the matrix $A$.
 
-The gain is the following.  If the data is put in the form of an $m \times n$ matrix $A$, then it needs $m \times n$ memory cells to store $A$.  If $k$  is much smaller than $r = \operatorname{rank}A$
-(which in general will be equal to the smallest of $m$ and $n$),  then $U_k$,  $V_k$  and the $k$ largest singular values only take up $m\times k + n\times k + k  = (m+n+k)k$,  memory places. <BR>
-If, for instance, a 1080x1350 ( $\approx$ 1.45 MB) image is stored using the thirty per cent highest singular values, so  $k = 0.3 \cdot 1080 = 324$,  the storage space reduces to  324x(1080+1350+320) $\approx$ 0.78 MB.  Thus the  *data* as been 'compressed' by more or less a factor $0.78/1.45 \approx 0.54$.
+The gain is the following:
+
+- If the data is put in the form of an $m \times n$ matrix $A$, then it needs $m \times n$ memory cells to store $A$. 
+
+- If $k$  is much smaller than $r = \operatorname{rank}A$
+(which in general will be equal to the smallest of $m$ and $n$),  then $U_k$,  $V_k$  and the $k$ largest singular values only take up $m\times k + n\times k + k  = (m+n+k)k$,  memory places.
+
+If, for instance, a $1080\times1350$ image, which is approximately $1.45 \operatorname{MB}$, is stored using the thirty percent highest singular values, so  $k = 0.3 \cdot 1080 = 324$,  the storage space reduces to $324\times(1080+1350+320)$, which is approximately $0.78 \operatorname{MB}$. Thus the  *data* as been 'compressed' by more or less a factor $\frac{0.78}{1.45} \approx 0.54$.
 
 In general, the higher the correlation/dependency between the columns (or, for that matter, the rows) of a matrix $A$, the fewer singular values are needed for a good approximation of $A$.
 
@@ -1032,9 +1037,11 @@ We expect $A_3$ to be a good approximation of $A$.
   $$
   
 
-  As you can see,  $A_3$  closely resembles $A$. (You have to trust us with regard to the hidden columns. <html>&#128521;</html>) <BR>
-  The gain:  to store  the $12\times10$  matrix $A$, we have to store  $120$ reals. <BR>
-  To store $U_3, \Sigma_{33}$ and $V_3$ , we only have to store  $12\times3 + 3 + 10\times 3 = 69$ numbers.  The middle 3 comes from first three   elements ($=$ singular values) on the diagonal of $\Sigma$.  
+  As you can see,  $A_3$  closely resembles $A$. (You have to trust us with regard to the hidden columns.) The gain:
+  
+  - To store  the $12\times10$  matrix $A$, we have to store  $120$ reals.
+
+  - To store $U_3, \Sigma_{33}$ and $V_3$ , we only have to store  $12\times3 + 3 + 10\times 3 = 69$ numbers.  The middle 3 comes from first three elements (the singular values) on the diagonal of $\Sigma$.  
   
   With (much) larger matrices the reduction in terms of storage capacity may be even better.
 

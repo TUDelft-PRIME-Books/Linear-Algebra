@@ -537,7 +537,7 @@ Using $A^{T}A=I_{n}$, we find:
 
 $$(A\vect{v}_{1})\ip(A\vect{v}_{2})=(A\vect{v}_{1})^{T}(A\vect{v}_{2})=\vect{v}_{1}^{T}A^{T}A\vect{v}_{2}=\vect{v}_{1}^{T}\vect{v}_{2}=\vect{v}_{1}\ip\vect{v}_{2},$$
 
-which establishes [i.](#It:OrthoBase:OrthoMatandInnerProd) The other points are direct consequences of [i.](#It:OrthoBase:OrthoMatandInnerProd); we leave their proofs to the reader.
+which establishes [i.](#It:OrthoBase:OrthoMatandInnerProd) The other points are direct consequences of [i.](#It:OrthoBase:OrthoMatandInnerProd) and we leave their proofs to the reader.
 
 :::
 

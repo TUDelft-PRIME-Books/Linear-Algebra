@@ -89,8 +89,8 @@ Suppose $A$ is an $n\times n$ matrix.
 <u>Step 1</u> &nbsp; Choose an arbitrary nonzero vector $\vect{x}$ in $\R^n$.
 
 <u>Step 2</u> &nbsp; Repeat the following steps: <BR>
-&nbsp; (i) Compute $\vect{y} = A\vect{x}$;<BR>
-&nbsp; (ii) Find the entry $\mu$ of $\vect{y}$ of the highest absolute value; <BR>
+&nbsp; (i) Compute $\vect{y} = A\vect{x}$.<BR>
+&nbsp; (ii) Find the entry $\mu$ of $\vect{y}$ of the highest absolute value. <BR>
 &nbsp; (iii) Replace $\vect{x}$ by $\dfrac{1}{\mu}\vect{y}$.
 
 Step 2 is repeated until the process more or less stabilises. For instance, until the difference between the last two computed vectors is smaller than a predetermined 'error' $\varepsilon$.
