@@ -119,7 +119,7 @@ Note that we used {prf:ref}`Thm:ComplexNumbers:roots`.
 
 ::::
 
-Going from $z^2+2z+5$ to $(z+1)^2+4$ is called _completing the square_. You can also immediately see that the minimal value of the parabola $y=z^2+2z+5$ for real values of $z$ equals 4 (as $(z+1)^2\geq 0$ for all real $z$), and the minimum is obtained when $z=-1$.
+Going from $z^2+2z+5$ to $(z+1)^2+4$ is called _completing the square_. You can also immediately see that the minimal value of the parabola $y=z^2+2z+5$ for real values of $z$ equals $4$ (as $(z+1)^2\geq 0$ for all real $z$), and the minimum is obtained when $z=-1$.
 
 In general, you can write any polynomial $az^2+bz+c$ in the form $a ((z+p)^2+q)$ by first factoring out the $a$, subsequently choosing the $p$ such that the linear term (the term involving $z$) is correct, and letting $q$ be the remainder. Using this form, you can then determine the zeros of the polynomial.
 
@@ -550,7 +550,7 @@ If $z_j$ is a zero of a polynomial $p$ of degree $n$ with $p(z)=a_n(z-z_1)^{\alp
 ::::{prf:example}
 :label: Ex:ComplexNumbers:polycomplcon2
 
-The third degree polynomial $p(z) = z^3-4z^2$ can be factored as $p(z) = z^2(z-4) = (z-0)^2(z-4)$. Therefore, it has zeros 4 and 0, where the multiplicity of 4 is equal to one and the multiplicity of 0 is equal to two. The degree of the polynomial is 3, which is equal to the sum of the multiplcities of its zeros ($1+2=3$).
+The third degree polynomial $p(z) = z^3-4z^2$ can be factored as $p(z) = z^2(z-4) = (z-0)^2(z-4)$. Therefore, it has zeros $4$ and $0$, where the multiplicity of $4$ is equal to one and the multiplicity of $0$ is equal to two. The degree of the polynomial is $3$, which is equal to the sum of the multiplcities of its zeros ($1+2=3$).
 
 ::::
 
@@ -648,7 +648,7 @@ $$
 \frac{97813}{382} = 200 + \frac{21413}{382} = 250 + \frac{2313}{382} = 256 + \frac{21}{382}.
 $$
 
-First, subtract as many multiples of $100\cdot 382$ from 97813 as possible (or multiples of $100$ from $\frac{97813}{382}$). Next, you do the same with the remainder, and one digit lower, so you subtract as many multiples of $10\cdot 382$ from the remainder $21413$. You continue until you can't subtract the numerator even once from the remainder (or until you have as many digits as you want).
+First, subtract as many multiples of $100\cdot 382$ from $97813$ as possible (or multiples of $100$ from $\frac{97813}{382}$). Next, you do the same with the remainder, and one digit lower, so you subtract as many multiples of $10\cdot 382$ from the remainder $21413$. You continue until you can't subtract the numerator even once from the remainder (or until you have as many digits as you want).
 
 ::::
 
@@ -685,7 +685,7 @@ As a consequence, we see that $z^3+3z^2+z-5=(z-1)(z^2+4z+5)$, so it equals $0$ i
 
 To consider the multiplication of complex numbers, it is best to first consider the polar coordinates of a complex number. Polar coordinates is a concept that works for points in a plane. The idea is that instead of looking at the $x$ and $y$ coordinates of a point, we describe the point by the distance to the origin and the direction from the origin.
 
-The distance from zero to the point in the complex plane, we call the _modulus_ $|z|$. By using Pythagoras theorem and with $z=a+bi$, it holds that $|z|=\sqrt{a^2+b^2}$ and equivalently $|z|=\sqrt{z\overline{z}}$. We often denote the modulus by the symbol $r$, so $r=|z|$. The direction is designated by the angle measured from the positive real axis in a counterclockwise direction towards the ray from zero through the point. This angle, we call the _argument_ or $\arg(z)$ as seen in {numref}`Figure %s <Fig:ComplexNumbers:modarg>`. We often denote the argument by the symbol $\theta$, so $\theta=\arg(z)$. The argument uses the convention similar to the unit circle: the direction straight the right corresponds to 0 radians, up corresponds to $\frac{1}{2}\pi$ radians, to the left to $\pi$ radians and down to $\frac{3}{2}\pi$ radians.
+The distance from zero to the point in the complex plane, we call the _modulus_ $|z|$. By using Pythagoras theorem and with $z=a+bi$, it holds that $|z|=\sqrt{a^2+b^2}$ and equivalently $|z|=\sqrt{z\overline{z}}$. We often denote the modulus by the symbol $r$, so $r=|z|$. The direction is designated by the angle measured from the positive real axis in a counterclockwise direction towards the ray from zero through the point. This angle, we call the _argument_ or $\arg(z)$ as seen in {numref}`Figure %s <Fig:ComplexNumbers:modarg>`. We often denote the argument by the symbol $\theta$, so $\theta=\arg(z)$. The argument uses the convention similar to the unit circle: the direction straight the right corresponds to $0$ radians, up corresponds to $\frac{1}{2}\pi$ radians, to the left to $\pi$ radians and down to $\frac{3}{2}\pi$ radians.
 
 :::{figure} Images/Fig-ComplexNumbers-modarg.svg
 :name: Fig:ComplexNumbers:modarg
@@ -695,7 +695,7 @@ The polar coordinates of a point in the complex plane $\C$ are the distance $r=|
 
 :::
 
-Notice that the argument is not uniquely defined, as you can always go a full circle extra and add $2\pi$ radians to the angle. For example, the number $1$ has argument 0 (as it is on the positive real axis), but also $2\pi$, $4\pi$, and $-2\pi$ (etc.). In order to make a uniform choice, we sometimes work with the principal value of the argument, which is by definition the unique value of the argument between $-\pi$ and $\pi$.
+Notice that the argument is not uniquely defined, as you can always go a full circle extra and add $2\pi$ radians to the angle. For example, the number $1$ has argument $0$ (as it is on the positive real axis), but also $2\pi$, $4\pi$, and $-2\pi$ (etc.). In order to make a uniform choice, we sometimes work with the principal value of the argument, which is by definition the unique value of the argument between $-\pi$ and $\pi$.
 We write the principal value using a capital A. Thus we have $-\pi < \arg{z} \leq \pi$.
 
 ::::{prf:example}
@@ -1087,7 +1087,7 @@ The most basic equations we want to solve are of the form $z^n=w$ for a given co
 ::::{prf:example}
 :label: Ex:ComplexNumbers:threesolutions2
 
-Consider the equation $z^3=-16+16i$. We know it has 3 complex solutions, as it is a third degree equation. If we write $z=a+bi$ and expand (to find $a$ and $b$), we get a very large expression which is not easy to work with.
+Consider the equation $z^3=-16+16i$. We know it has $3$ complex solutions, as it is a third degree equation. If we write $z=a+bi$ and expand (to find $a$ and $b$), we get a very large expression which is not easy to work with.
 
 If we write $z=re^{i\phi}$ in polar coordinates instead, we can easily express $z^3=r^3e^{3i\phi}$. We also have to express the right-hand side in polar coordinates: $-16+16i=16\sqrt{2} e^{\frac34 \pi i}$. Comparing the modulus and argument of these two expressions, we find
 
@@ -1284,7 +1284,7 @@ e^x &= \sum*{n=0}^\infty\frac{x^n}{n!}, \\
 
 We can use these series to derive Euler's formula.
 
-First consider the following 12 powers of the complex number $\theta i$ with $\theta\in\mathbb{R}$:
+First consider the following $12$ powers of the complex number $\theta i$ with $\theta\in\mathbb{R}$:
 
 \begin{align*}
 (\theta i)^0 &= 1 & (\theta i)^4 &= \theta^4 & (\theta i)^8 &= \theta^8 \\
@@ -1775,19 +1775,19 @@ $h(z)$ is not a polynomial.
 
 <li>
 
-The roots of $p(z)$ are $1, -2, 3$, all with multiplicity 1.
+The roots of $p(z)$ are $1, -2, 3$, all with multiplicity $1$.
 
 </li>
 
 <li>
 
-The roots of $p(z)$ are $i, -i, 1$, where $i$ an $-i$ have multiplicity 1 and $1$ has multiplicity 2.
+The roots of $p(z)$ are $i, -i, 1$, where $i$ an $-i$ have multiplicity $1$ and $1$ has multiplicity $2$.
 
 </li>
 
 <li>
 
-The roots of $p(z)$ are $3+i, 3-i, 1, -2$, all with multiplicity 1.
+The roots of $p(z)$ are $3+i, 3-i, 1, -2$, all with multiplicity $1$.
 
 </li>
 

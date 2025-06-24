@@ -607,7 +607,7 @@ The equation $A \mathbf{x}=\mathbf{b}$ has a solution for each $\mathbf{b}$ in $
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LinearCombinations:PivotInEachRow`
 :class: tudproof
 
-Suppose that $A$ does not contain a pivot position in each row. By definition of the reduced echelon form we know that the last row of $A$ does not have a pivot position. If $E$ is the reduced echelon form of $A$, then this means that the bottom row of $E$ contains only zeros. Let $\mathbf{e}_n$ be again the vector of which the last entry is equal to 1 and all other entries are equal to zero.
+Suppose that $A$ does not contain a pivot position in each row. By definition of the reduced echelon form we know that the last row of $A$ does not have a pivot position. If $E$ is the reduced echelon form of $A$, then this means that the bottom row of $E$ contains only zeros. Let $\mathbf{e}_n$ be again the vector of which the last entry is equal to $1$ and all other entries are equal to zero.
 
 Since $E$ is the reduced form of $A$ we can find a sequence of elementary row operations $R_1, \ldots , R_m$ that transform in $A$ into $E$. Now take the augmented matrix $(E \, | \, \mathbf{e}_n)$ and perform the row operations $R_m^{-1}, \ldots , R_1^{-1}$, where $R_i^{-1}$ is the inverse row operation of $R_i$. We obtain a matrix $(A \, | \, \mathbf{b})$, where $\mathbf{b}$ is a vector in $R^n$. Because $(E \, | \, \mathbf{e}_n)$ is the reduced echelon form of the augmented matrix $(A \, | \, \mathbf{b})$ and $(E \, | \, \mathbf{e}_n)$ has a pivot in the last column, we know that $(A \, | \, \mathbf{b})$ is inconsistent. This means that $A\mathbf{x}=\mathbf{b}$ does not have a solution.
 

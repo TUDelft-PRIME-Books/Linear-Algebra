@@ -88,7 +88,7 @@ to an element of the solution set from {prf:ref}`Example:SolSet:TwoLinesinR3`. T
 :name: Fig:SolSet:TwoLinesinR3
 :class: dark-light
 
-The solution sets for the two systems of equations from {prf:ref}`Example:SolSet:TwoLinesinR3` and {prf:ref}`Example:SolSet:TwoLinesinR3b`. The line $\mathcal{L}_1$ is the solution set of the original system {eq}`Eq:SolSet:HomSys2D`, the line $\mathcal{L}_2$ that of the system with the non-zero right-hand side {eq}`Eq:SolSet:NonHomSys2D`.
+The solution sets for the two systems of equations from {prf:ref}`Example:SolSet:TwoLinesinR3` and {prf:ref}`Example:SolSet:TwoLinesinR3b`. The line $\mathcal{L}_1$ is the solution set of the original system in Equation {eq}`Eq:SolSet:HomSys2D`, the line $\mathcal{L}_2$ that of the system with the non-zero right-hand side of Equation {eq}`Eq:SolSet:NonHomSys2D`.
 ```
 
 ::::
@@ -556,7 +556,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/bb5486be-f126-4be6-99a9-96dbbe95957c?id=116561
 :label: grasple_exercise_2_3_14
 :dropdown:
-:description: Unique solution for a square system? 
+:description: Unique solution for a square system?
 
 ::::
 

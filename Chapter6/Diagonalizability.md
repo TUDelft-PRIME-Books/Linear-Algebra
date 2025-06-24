@@ -9,7 +9,7 @@
 ::::::{prf:definition}
 :label: Dfn:Diagonalisable:SimalarMatrices
 
-Two $n \times n$ matrices $A$ and $B$ are called **similar** if they are related via the property
+Two $n \times n$-matrices $A$ and $B$ are called **similar** if they are related via the property
 
 $$
 B = PAP^{-1} \quad \text{for some invertible matrix  } P.
@@ -570,7 +570,7 @@ has the double eigenvalue $\lambda_1 = \lambda_2 = 2$.
 Since  
 $A - 2I = \left(\begin{array}{cc} 0 & 1 \\ 0 & 0 \end{array}
 \right)$
-has rank 1, there is only one independent eigenvector.
+has rank $1$, there is only one independent eigenvector.
 Thus there does not exist a basis of eigenvectors for $A$, and consequently the matrix $A$ is not diagonalisable.
 
 ::::::
@@ -583,7 +583,7 @@ $A = \left(\begin{array}{ccc} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{array}
 \right)$
 of {prf:ref}`Ex:EigenValues:SecondCharPoly`
 and {prf:ref}`Ex:EigenValues:SecondCharPolyContinued`
-provides another example of this phenomenon. It has the two eigenvalues, $\lambda_1=3$, of algebraic multiplicity 2, and $\lambda_2 = 2$, of algebraic multiplicity 1.
+provides another example of this phenomenon. It has the two eigenvalues, $\lambda_1=3$, of algebraic multiplicity $2$, and $\lambda_2 = 2$, of algebraic multiplicity $1$.
 There is only one independent eigenvector for $\lambda_{1}$. This, together with the single independent eigenvector for $\lambda_2$ is a maximal set of two linearly independent eigenvectors for $A$.  So, this matrix  $A$ is again not diagonalisable.
 
 ::::::
@@ -608,7 +608,7 @@ $$
 0 & 0  & 3 & 1 \\ 0 & 0 & 0 & 0 \end{array} \right)
 $$
 
-Since this matrix has three linear independent columns, it has rank 3, and its null space has dimension $4-3 = 1$. Hence the geometric multiplicity of $\lambda_1$ is equal to 1, which is smaller than its algebraic multiplicity.  This implies that the matrix $A$ is not diagonalisable.
+Since this matrix has three linear independent columns, it has rank $3$, and its null space has dimension $4-3 = 1$. Hence the geometric multiplicity of $\lambda_1$ is equal to $1$, which is smaller than its algebraic multiplicity.  This implies that the matrix $A$ is not diagonalisable.
 
 ::::::
 
@@ -714,7 +714,7 @@ $$
     c^{(i)}_1 = 0, \,\ldots\,, \, c^{(i)}_{m_i}= 0.
 $$
 
-This shows that {eq}`Eq:Diagonalisable:SumAllEigenvalues`  can only hold if all coefficients  are zero, and consequently the set
+This shows that Equation {eq}`Eq:Diagonalisable:SumAllEigenvalues`  can only hold if all coefficients  are zero, and consequently the set
 
 $$
    \{\vect{v}^{(1)}_1, \,\ldots, \,\vect{v}^{(1)}_{m_1}, \,\,.\,.\,.\,.\,.\,\,, \,\vect{v}^{(k)}_1, \,\ldots, \, \vect{v}^{(k)}_{m_k}\} 
@@ -729,7 +729,7 @@ We saw that there is a weak connection between eigenvalues and (non-)invertibili
 {prf:ref}`Prop:EigenValues:SingularMatrix` states: a matrix is singular if and only if it has the eigenvalue $0$.
 
 
-In exercise 6.3.12 below you are invited to investigate the connection (or non-connection) between diagonalisability and invertibility.
+In {ref}`grasple_exercise_6_3_16` you are invited to investigate the connection (or non-connection) between diagonalisability and invertibility.
 
 %::::::{exercise}
 %:label: Exc:Diagonalisable:Invertibility
@@ -781,7 +781,7 @@ since the internal factors $P^{-1}P$ reduce to the identity matrix $I$, and $ID 
 
 Check for yourself what happens if $k = 0$.
 
-The advantage is the following. Normally, multiplication of two $n \times n$ matrices requires $n$ multiplications per entry (or $2n-1$ operations, if additions are counted as well), and there are $n\times n$ entries to be computed. So for the $k$th power that requires about $k\times n^3$ multiplications of numbers.
+The advantage is the following. Normally, multiplication of two $n \times n$-matrices requires $n$ multiplications per entry (or $2n-1$ operations, if additions are counted as well), and there are $n\times n$ entries to be computed. So for the $k$th power that requires about $k\times n^3$ multiplications of numbers.
 To compute $PD^kP^{-1}$ we need $n$ $k$th powers to find $D^k$, and we are left with one 'simple' matrix product $PD^k$ and one 'full' matrix product.
 
 ::::::
@@ -1023,7 +1023,7 @@ $$
 :url: https://embed.grasple.com/exercises/deb8d92e-5918-40f3-bdea-3dc3511d83a1?id=91491
 :label: grasple_exercise_6_3_4
 :dropdown:
-:description: To investigate the diagonalisability of a ($3 \times 3$) matrix. 
+:description: To investigate the diagonalisability of a $3 \times 3$-matrix. 
 
 ::::::
 
@@ -1032,7 +1032,7 @@ $$
 :url: https://embed.grasple.com/exercises/537a306b-47d1-422a-bc15-c7a75b81c24b?id=91496
 :label: grasple_exercise_6_3_5 
 :dropdown:
-:description:  To investigate the diagonalisability of a ($3 \times 3$) matrix.
+:description:  To investigate the diagonalisability of a $3 \times 3$-matrix.
 
 ::::::
 
@@ -1041,7 +1041,7 @@ $$
 :url: https://embed.grasple.com/exercises/5a71e703-acd5-48b1-9b6d-8a51f4f8cf95?id=91501
 :label: grasple_exercise_6_3_6
 :dropdown:
-:description:  To investigate the diagonalisability of a ($3 \times 3$) matrix.
+:description:  To investigate the diagonalisability of a $3 \times 3$-matrix.
 
 ::::::
 
@@ -1051,7 +1051,7 @@ $$
 :url: https://embed.grasple.com/exercises/70b5964e-b6c7-4a64-a2e3-d10dc915f324?id=91503
 :label: grasple_exercise_6_3_7 
 :dropdown:
-:description:  To investigate the diagonalisability of a ($3 \times 3$) matrix. 
+:description:  To investigate the diagonalisability of a $3 \times 3$-matrix. 
 
 ::::::
 
@@ -1061,7 +1061,7 @@ $$
 :url: https://embed.grasple.com/exercises/e9bcf8d4-5b26-4f56-90df-76345c4e85e1?id=71926
 :label: grasple_exercise_6_3_8
 :dropdown:
-:description:  To investigate the diagonalisability of a ($3 \times 3$) matrix. 
+:description:  To investigate the diagonalisability of a $3 \times 3$-matrix. 
 
 
 ::::::
@@ -1071,7 +1071,7 @@ $$
 :url: https://embed.grasple.com/exercises/f61dfb8f-db65-4f17-80c7-b1702b0c2c07?id=104493
 :label: grasple_exercise_6_3_9 
 :dropdown:
-:description:  To investigate the diagonalisability of a 3x3 matrix of rank 1. 
+:description:  To investigate the diagonalisability of a $3 \times 3$-matrix of rank $1$. 
 
 ::::::
 
@@ -1082,7 +1082,7 @@ $$
 :url: https://embed.grasple.com/exercises/bc214d8e-b1a1-4b39-bedd-0ae36380b14a?id=71933
 :label: grasple_exercise_6_3_10 
 :dropdown:
-:description:  For which $\alpha$ is given  3x3  matrix $A$ diagonalisable? 
+:description:  For which $\alpha$ is given $3 \times 3$-matrix $A$ diagonalisable? 
 
 ::::::
 

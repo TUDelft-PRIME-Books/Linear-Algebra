@@ -337,7 +337,7 @@ A=
 \begin{pmatrix} 1&0&3\\0&1&-1\\0&0&0\\0&0&0\end{pmatrix}.
 $$
 
-If we put the free variable $x_{3}$ equal to 1, we find $x_{1}=-3$ and $x_{2}=1$, which gives:
+If we put the free variable $x_{3}$ equal to $1$, we find $x_{1}=-3$ and $x_{2}=1$, which gives:
 
 $$
 

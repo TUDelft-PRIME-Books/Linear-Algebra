@@ -228,7 +228,7 @@ which is the $xy$-plane in $\mathbb{R}^3$.
 
 ::::::
 
-For $2\times2$ and $3\times3$ matrices the transformations often have a geometric interpretation, as the following example illustrates.
+For $2\times2$ and $3\times3$-matrices the transformations often have a geometric interpretation, as the following example illustrates.
 
 ::::::{prf:example}
 :label: Eq:LinTrafo:SkewProjection
@@ -338,7 +338,7 @@ $$
   \end{array}
 $$
 
-For instance, if at time 0 the population in city $A$ amounts to 50 (thousand) and in city $B$ live 100 (thousand) people, then at the end of one period the population in city $A$
+For instance, if at time $0$ the population in city $A$ amounts to $50$ (thousand) and in city $B$ live $100$ (thousand) people, then at the end of one period the population in city $A$
 amounts to
 
 $$
@@ -867,7 +867,7 @@ $$
     T(c\mathbf{x}) = c T(\mathbf{x}).
 $$
 
-First apply rule (i) to split the term on the left in {eq}`Eq:LinTrafo:LinComb` into $k$ terms:
+First apply rule (i) to split the term on the left in Equation {eq}`Eq:LinTrafo:LinComb` into $k$ terms:
 
 $$
 \begin{array}{ccl}
@@ -1467,7 +1467,7 @@ $$
 :url: https://embed.grasple.com/exercises/4058e54a-74f2-414e-9693-420abbc62677?id=70391
 :label: grasple_exercise_3_1_13
 :dropdown:
-:description: 'To give a geometric description of $T: \vect{x} \mapsto A\vect{x}$.'
+:description: To give a geometric description of $T: \vect{x} \mapsto A\vect{x}$.
 ::::::
 
 ::::::{grasple}
@@ -1475,7 +1475,7 @@ $$
 :url: https://embed.grasple.com/exercises/990bf561-629e-430f-b8d0-e757c63fe15c?id=70392
 :label: grasple_exercise_3_1_14
 :dropdown:
-:description: 'To give a geometric description of $T: \vect{x} \mapsto A\vect{x}$.'
+:description: To give a geometric description of $T: \vect{x} \mapsto A\vect{x}$.
 ::::::
 
 ::::::{grasple}

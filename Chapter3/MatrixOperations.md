@@ -4,7 +4,7 @@
 
 ## Introduction
 
-In Chapter 2 matrices were introduced to represent systems of linear equations. The coefficients of a linear system were put into the coefficient matrix $A$, and a system as a whole could be squeezed into the augmented matrix. In {numref}`Sec:LinTrafo` we used matrices to construct linear transformations. In this chapter we will study matrices as entities on their own, though every now and then we will keep in mind their role in the two contexts just mentioned.
+In {numref}`Chapter %s <Chapter:Systems>` matrices were introduced to represent systems of linear equations. The coefficients of a linear system were put into the coefficient matrix $A$, and a system as a whole could be squeezed into the augmented matrix. In {numref}`Sec:LinTrafo` we used matrices to construct linear transformations. In this chapter we will study matrices as entities on their own, though every now and then we will keep in mind their role in the two contexts just mentioned.
 
 ## Sum, scalar multiple and transpose
 
@@ -57,7 +57,7 @@ We then say that $cA$ is a **scalar multiple** of $A$, or simply a **multiple** 
 ::::::{prf:definition} The sum of two matrices
 :label: def:matrix-sum
 
-If $A$ and $B$ are two $m\times n$ matrices then the **sum** $A+B$ is the
+If $A$ and $B$ are two $m\times n$-matrices then the **sum** $A+B$ is the
 $m\times n$-matrix of which the entry on the position $(i,j)$ is the sum of the corresponding entries of $A$ and $B$:
 
 $$
@@ -148,7 +148,7 @@ The two definitions of sum and scalar multiple are called **componentwise** defi
 ::::::{prf:proposition}
 :label: Prop:MatrixOps:SumRules
 
-Suppose $A, B$ and $C$ are $m\times n$ matrices and let $c_{1},c_{2}$ be two real numbers.
+Suppose $A, B$ and $C$ are $m\times n$-matrices and let $c_{1},c_{2}$ be two real numbers.
 Then we have:
 
 <ul>
@@ -232,7 +232,7 @@ The following rules involving the three operators defined so far in this section
 ::::::{prf:proposition}
 :label: Prop:MatrixOps:Transpose
 
-Let $A$ and $B$ be $m\times n$ matrices and $c$ a scalar. Then we have
+Let $A$ and $B$ be $m\times n$-matrices and $c$ a scalar. Then we have
 
 <ul>
 
@@ -262,8 +262,8 @@ $(A^T)^T = A$.
 We will prove the second statement and leave the other two to the diligent reader. See
 {numref}`Exc:MatrixOps:CheckTransposeRules`.
 
-So, suppose $A$ and $B$ are two $m \times n$ matrices.
-Then $A+B$ is an $m \times n$-matrix too, hence $(A+B)^T$ is an $n \times m$-matrix. The matrix $A^T  + B^T$ on the right-hand side of the equation is the sum of two $n \times m$ matrices, which is again an $n \times m$-matrix. So the matrices on both sides of the equation
+So, suppose $A$ and $B$ are two $m \times n$-matrices.
+Then $A+B$ is an $m \times n$-matrix too, hence $(A+B)^T$ is an $n \times m$-matrix. The matrix $A^T  + B^T$ on the right-hand side of the equation is the sum of two $n \times m$-matrices, which is again an $n \times m$-matrix. So the matrices on both sides of the equation
 have the same size.
 
 Next we have to show that they have equal entries on the corresponding positions. If we put
@@ -300,7 +300,7 @@ If you are lost in the forest of indices, have a look at {prf:ref}`Ex:MatrixOps:
 ::::::{prf:example}
 :label: Ex:MatrixOps:SumTranspose
 
-We check property (ii) for two general $3\times 4$ matrices $A$ and $B$ on the position
+We check property (ii) for two general $3\times 4$-matrices $A$ and $B$ on the position
 $(2,3)$. Let
 
 $$
@@ -642,7 +642,7 @@ An $n\times n $-matrix $A$ is called a **square matrix**. So it is a matrix wher
 
 For a square matrix $A$ we call the elements $a_{ii}$ the **diagonal elements**. Together the diagonal elements form the **(main) diagonal** of $A$.
 
-A square matrix where all non-diagonal elements are equal to 0 is called a **diagonal matrix**.
+A square matrix where all non-diagonal elements are equal to $0$ is called a **diagonal matrix**.
 
 ::::::
 
@@ -779,7 +779,7 @@ and that is precisely the entry $c_{ij}$ of the matrix $C = AB$.
 
 ::::::
 
-Interestingly this opens the way to describe the row operations of Chapter 2 via matrix multiplication. The following example illustrates this for the three basic row operations.
+Interestingly this opens the way to describe the row operations of {numref}`Chapter %s <Chapter:Systems>` via matrix multiplication. The following example illustrates this for the three basic row operations.
 
 ::::::{prf:example}
 :label: Ex:MatrixOps:ElementaryMatrices
@@ -894,8 +894,8 @@ Now let us have a look which of the rules of the products of numbers also hold f
 ::::::{prf:proposition}
 :label: Prop:MatrixOps:ProdProperties
 
-For all $m \times n$ matrices $A,A_1,A_2$, all $n \times p$ matrices $B,B_1,B_2$,
-all $p \times q$ matrices $C$ and all real numbers $c$ the following are true:
+For all $m \times n$-matrices $A,A_1,A_2$, all $n \times p$-matrices $B,B_1,B_2$,
+all $p \times q$-matrices $C$ and all real numbers $c$ the following are true:
 
 <ol type = "i">
 <li>
@@ -972,7 +972,7 @@ $$
            \end{pmatrix}.
 $$
 
-So the products are indeed equal. But it is not immediately clear how. For instance, the value 14 on position (2,2) comes about in two ways
+So the products are indeed equal. But it is not immediately clear how. For instance, the value $14$ on position $(2,2)$ comes about in two ways
 
 $$
  \text{via  } A(BC)\!:  \,14 = 2\cdot4 + 1\cdot 6, \quad \,\, \text{via  } (AB)C\!:  \,14 = 5\cdot2 + 4\cdot1.
@@ -1009,7 +1009,7 @@ The identity $\quad I_mA = A\quad$ is shown in an analogous way, working row by 
 
 <li>
 
-First we observe that both triple products yield $m \times q$ matrices.
+First we observe that both triple products yield $m \times q$-matrices.
 Then the identity can be proved 'column by column', as the previous one.
 
 We are done if we can show that
@@ -1131,7 +1131,7 @@ $$
 
 simply because the two products are not of the same size: $AB$ is a $2\times 2$-matrix, $BA$ a $3\times3$-matrix.
 
-The following example illustrates that $AB = BA$ is not even guaranteed for two $n\times n$ matrices $A$ and $B$:
+The following example illustrates that $AB = BA$ is not even guaranteed for two $n\times n$-matrices $A$ and $B$:
 
 $$
  \begin{pmatrix} 1 & 3 \\ 2 & 1  \end{pmatrix}
@@ -1335,7 +1335,7 @@ In fact, all statements can be related to one of the first two.
 <ol>
 <li>
 
-In general, $AB = BA$ **does not hold** for two $n\times n$ matrices $A$ and $B$.
+In general, $AB = BA$ **does not hold** for two $n\times n$-matrices $A$ and $B$.
 
 </li>
 <li>
@@ -1345,12 +1345,12 @@ In general, from $AB = O$ it **does not follow** that either $A =O$ or $B = O$.
 </li>
 <li>
 
-In general, $(A+B)(A+B) = A^2 + 2AB + B^2$ **does not hold** for two $n\times n$ matrices $A$ and $B$.
+In general, $(A+B)(A+B) = A^2 + 2AB + B^2$ **does not hold** for two $n\times n$-matrices $A$ and $B$.
 
 </li>
 <li>
 
-In general, $(A+B)(A-B) = A^2 - B^2$ **does not hold** for two $n\times n$ matrices $A$ and $B$.
+In general, $(A+B)(A-B) = A^2 - B^2$ **does not hold** for two $n\times n$-matrices $A$ and $B$.
 
 </li>
 <li>

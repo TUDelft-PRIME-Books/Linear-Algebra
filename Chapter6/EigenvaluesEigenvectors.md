@@ -141,7 +141,7 @@ A\vect{u} = \left(\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array}\right)
  = 3 \vect{u},
 $$
 
-so $\vect{u}$ is an eigenvector of $A$ for the eigenvalue 3.
+so $\vect{u}$ is an eigenvector of $A$ for the eigenvalue $3$.
 
 On the other hand, for the vector $\vect{v} = \begin{pmatrix} 2 \\ -2 \end{pmatrix}$ we have
 
@@ -217,11 +217,11 @@ $$
 .
 $$
 
-So the question whether 1 is an eigenvalue of the matrix $A$ is equivalent to the question whether this equation has nonzero solutions.
+So the question whether $1$ is an eigenvalue of the matrix $A$ is equivalent to the question whether this equation has nonzero solutions.
 
 As the equation is homogeneous, we don't have to work with the augmented matrix. The  matrix $A - I$ has two pivots, so the only solution of the equation is the zero vector.
 
-We may conclude that the value 1 is not an eigenvalue of the matrix $A$.
+We may conclude that the value $1$ is not an eigenvalue of the matrix $A$.
 
 For the value $-1$ we proceed likewise:
 we rewrite the equation
@@ -306,12 +306,12 @@ Moreover, these non-trivial solutions are exactly the corresponding eigenvectors
 :url: https://embed.grasple.com/exercises/0a053b62-1e2c-4994-93eb-10e8f99a88dc?id=93701
 :label: grasple_exercise_6_1_T1
 :dropdown:
-:description: To verify whether a number is an eigenvalue of a (2x2) matrix.
+:description: To verify whether a number is an eigenvalue of a $2\times2$-matrix.
 
 ::::::
 
 
-Note that the proposition handles our third question as well. If $\lambda$ has been shown to be an eigenvalue of $A$, then the corresponding eigenvectors are the (nonzero) solutions of the homogeneous linear system {eq}`Eq:Eigenvalues:EigenvalueEquation`.
+Note that the proposition handles our third question as well. If $\lambda$ has been shown to be an eigenvalue of $A$, then the corresponding eigenvectors are the (nonzero) solutions of the homogeneous linear system in Equation {eq}`Eq:Eigenvalues:EigenvalueEquation`.
 
 Let us now have a look at a $3\times3$-matrix.
 
@@ -345,7 +345,7 @@ A - 2I  =
 $$
 
 
-This last matrix has rank 3, so its null space contains only the zero vector. Thus there are no nonzero solutions for the equation $A\vect{v} - 2\vect{v} = \vect{0}$, and we conclude that 2 is _not_ an eigenvalue of $A$.
+This last matrix has rank $3$, so its null space contains only the zero vector. Thus there are no nonzero solutions for the equation $A\vect{v} - 2\vect{v} = \vect{0}$, and we conclude that $2$ is _not_ an eigenvalue of $A$.
 
 For the other candidate we proceed in the same manner. Now we have to find the null space of the matrix
 
@@ -362,7 +362,7 @@ A+2I = \begin{pmatrix} 0 & 1 & 2 \\ 0 & 1 & 2 \\ -1 & 1 & 2 \end{pmatrix}  \sim
 
 $$
 
-We conclude that $A+2I$ has rank 2, thus the null space of $A+2I$ has dimension 1. From the row reduced form we read off that the null space contains all multiples of the vector
+We conclude that $A+2I$ has rank $2$, thus the null space of $A+2I$ has dimension $1$. From the row reduced form we read off that the null space contains all multiples of the vector
 $\vect{v} = \begin{pmatrix} 0 \\ 2 \\ -1\end{pmatrix}$. These then are exactly the eigenvectors for the eigenvalue $\lambda = -2$.
 Well, strictly speaking we should exclude the multiple $0\vect{v}$, as an eigenvector by definition is not the zero vector.
 As a check:
@@ -530,7 +530,7 @@ A - 5I = \begin{pmatrix} -4 & 2 & 2 \\ 2 & -4 & 2 \\ 2 & 2 & -4 \end{pmatrix} \s
 \begin{pmatrix} 1 & 0 & -1 \\ 0 & 1 & -1 \\ 0& 0&0 \end{pmatrix}.
 $$
 
-This is a matrix of rank 2, and $\begin{pmatrix} 1  \\1\\1 \end{pmatrix}$ can be taken as a basis of its null space, and thus of the eigenspace $E_5$.
+This is a matrix of rank $2$, and $\begin{pmatrix} 1  \\1\\1 \end{pmatrix}$ can be taken as a basis of its null space, and thus of the eigenspace $E_5$.
 
 ::::::
 
@@ -539,7 +539,7 @@ This is a matrix of rank 2, and $\begin{pmatrix} 1  \\1\\1 \end{pmatrix}$ can be
 :url: https://embed.grasple.com/exercises/363143ee-08c2-4905-9801-474ed10f59e9?id=93697
 :label: grasple_exercise_6_1_T2
 :dropdown:
-:description: To give a basis for the eigenspace for a given $\lambda$  for a 3x3 matrix $A$.
+:description: To give a basis for the eigenspace for a given $\lambda$  for a $3 \times 3$-matrix $A$.
 
 ::::::
 
@@ -723,8 +723,8 @@ By definition an eigenvector cannot be the zero vector. There is not such a rest
 ::::::{prf:proposition}
 :label: Prop:EigenValues:SingularMatrix
 
-A matrix $A$ is invertible if and only if 0 is not an eigenvalue of $A$.
-Equivalently: a matrix $A$ is singular (non-invertible) if and only if 0 is an eigenvalue of $A$.
+A matrix $A$ is invertible if and only if $0$ is not an eigenvalue of $A$.
+Equivalently: a matrix $A$ is singular (non-invertible) if and only if $0$ is an eigenvalue of $A$.
 
 ::::::
 
@@ -737,10 +737,10 @@ If a matrix $A$ is singular, then the columns of $A$ are linearly dependent.
 
 So then there is a non-trivial solution $\vect{v}$ of the equation $A\vect{x} = \vect{0} = 0\vect{x}$.
 
-This non-trivial solution $\vect{v}$ is then an eigenvector for the eigenvalue 0.
+This non-trivial solution $\vect{v}$ is then an eigenvector for the eigenvalue $0$.
 
 All steps can be reversed:
-if $\vect{v}$ is an eigenvector for the eigenvalue 0, then $A\vect{v} = 0\vect{v}=\vect{0} $,  for a nonzero vector $\vect{v}$.
+if $\vect{v}$ is an eigenvector for the eigenvalue $0$, then $A\vect{v} = 0\vect{v}=\vect{0} $,  for a nonzero vector $\vect{v}$.
 <BR>
 This implies that the matrix $A$ has linearly dependent columns. And that in its turn is equivalent to the statement that the matrix $A$ is singular.
 
@@ -750,11 +750,11 @@ This implies that the matrix $A$ has linearly dependent columns. And that in its
 :label: Ex:EigenValues:SingularMatrix
 
 The matrix $A = \begin{pmatrix} 1 & 3 \\ 2 & 6 \end{pmatrix}$
-has rank 1, so according to {prf:ref}`Prop:EigenValues:SingularMatrix` it has eigenvalue 0.
+has rank $1$, so according to {prf:ref}`Prop:EigenValues:SingularMatrix` it has eigenvalue $0$.
 
 The equation $A\vect{x} = \vect{0}$ has the nonzero solution
 $\vect{x} = \begin{pmatrix} 3 \\ -1 \end{pmatrix}$,
-so this vector is an eigenvector for the eigenvalue 0.
+so this vector is an eigenvector for the eigenvalue $0$.
 
 ::::::
 
@@ -784,7 +784,7 @@ $$
 T(c_1\vect{v}_1+c_2\vect{v}_2) = c_1T(\vect{v}_1)+c_2T(\vect{v}_2) = 3c_1\vect{v}_1+(-1)c_2\vect{v}_2,
 $$
 
-i.e., the component of $\vect{w}$ in the direction of the first basis vector is multiplied by 3, the other component gets a factor
+i.e., the component of $\vect{w}$ in the direction of the first basis vector is multiplied by $3$, the other component gets a factor
 $(-1)$.
 
 In a later section we will study matrices $A$ for which such a basis of eigenvectors exists (and call them diagonalisable).

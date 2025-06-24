@@ -252,7 +252,7 @@ On the other hand
 
 :::
 
-Comparing {eq}`eq:SymmetricMat:uTAv3`  and  {eq}`eq:SymmetricMat:uTAv4`  we can conclude that $\mathbf{u}\ip\mathbf{v} = 0$,  i.e.,  $\mathbf{u}$ and $\mathbf{v}$
+Comparing Equation {eq}`eq:SymmetricMat:uTAv3`  and Equation {eq}`eq:SymmetricMat:uTAv4`  we can conclude that $\mathbf{u}\ip\mathbf{v} = 0$,  i.e.,  $\mathbf{u}$ and $\mathbf{v}$
 are indeed orthogonal.
 
 ::::
@@ -341,7 +341,7 @@ $$
 
 The discriminant is non-negative, so the characteristic polynomial has only real roots, and consequently the eigenvalues of the matrix are real.
 
-Obviously, an elementary approach like this will soon get very complicated for larger $n \times n$ matrices.
+Obviously, an elementary approach like this will soon get very complicated for larger $n \times n$-matrices.
 
 ::::
 
@@ -380,7 +380,7 @@ $$
         \end{array}
 $$
 
-So $A$ has the real eigenvalues $\lambda_{1} = 1$, $\lambda_2 = 6$ and $\lambda_3 = 0$. Since all eigenvalues have algebraic multiplicity 1, the corresponding eigenvectors will give a basis of eigenvectors, and we can immediately conclude that $A$ is diagonalisable.
+So $A$ has the real eigenvalues $\lambda_{1} = 1$, $\lambda_2 = 6$ and $\lambda_3 = 0$. Since all eigenvalues have algebraic multiplicity $1$, the corresponding eigenvectors will give a basis of eigenvectors, and we can immediately conclude that $A$ is diagonalisable.
 
 The eigenvectors are found to be
 
@@ -414,8 +414,8 @@ $$
 $$
 
 the two linearly independent eigenvectors $\mathbf{v}_1 = \begin{pmatrix} 1 \\ 0 \\ -1\end{pmatrix}$ and
-$\mathbf{v}_2 = \begin{pmatrix} 1 \\ -2 \\ 0\end{pmatrix}$. The geometric multiplicity of $\lambda_{1,2}$ is equal to 2.
-The other eigenvalue has algebraic multiplicity 1, so its geometric multiplicity has to be 1 as well. With this {prf:ref}`Prop:SymmetricMat:AlgGeomMultiplicity` is verified.
+$\mathbf{v}_2 = \begin{pmatrix} 1 \\ -2 \\ 0\end{pmatrix}$. The geometric multiplicity of $\lambda_{1,2}$ is equal to $2$.
+The other eigenvalue has algebraic multiplicity $1$, so its geometric multiplicity has to be $1$ as well. With this {prf:ref}`Prop:SymmetricMat:AlgGeomMultiplicity` is verified.
 
 Lastly we leave it to you to check that an eigenvector for $\lambda_3 = 7$ is given by $\mathbf{v}_3 = \begin{pmatrix} 2 \\ 1 \\ 2\end{pmatrix}$. And that both $\mathbf{v}_3 \perp \mathbf{v}_1$ and $\mathbf{v}_3 \perp \mathbf{v}_2$, so that {prf:ref}`Prop:SymmetricMat:OrthogonalEigenvectors` is satisfied as well.
 ::::
@@ -502,7 +502,7 @@ Once we know what the eigenvalues are, the other steps are 'routine'.
 
 It appears that $A$ has the double eigenvalues $\lambda_{1,2} = 3$ and $\lambda_{3,4} = -3$.
 
-To find the eigenvectors for the eigenvalue 3 we row reduce the matrix $(A - 3I)$.
+To find the eigenvectors for the eigenvalue $3$ we row reduce the matrix $(A - 3I)$.
 
 $$
 \left(\begin{array}{cccc}1-3 & 2 & 2 & 0\\ 2 & -1-3 & 0 & 2 \\ 2 & 0 & -1-3 & -2 \\ 0 & 2 & -2 & 1-3  \end{array} \right)  \,\,  \sim \,\,\ldots\,\, \sim  \,\,
@@ -833,7 +833,7 @@ $$
   \frac{\norm{A(c\vect{x})}}{\norm{c\vect{x}}} = \frac{|c|\norm{A\vect{x}}}{|c|\norm{\vect{x}}} =  \frac{\norm{A\vect{x}}}{\norm{\vect{x}}},
 $$
 
-we may restrict ourselves to vectors of norm 1. Then the denominator in Formula {eq}`eq:SymmetricMat:BlowUpAx`  becomes 1, so we we just have to maximise  $\norm{A\vect{x}}$.  
+we may restrict ourselves to vectors of norm $1$. Then the denominator in Equation {eq}`eq:SymmetricMat:BlowUpAx`  becomes $1$, so we we just have to maximise  $\norm{A\vect{x}}$.  
 The general case, for non-square matrices,  will be handled in {numref}`Subsection %s <Subsec:SVDGeometrically>`.  For symmetric matrices the question is answered by the next proposition.
 
 ::::{prf:proposition}
@@ -859,7 +859,7 @@ The (symmetric)  matrix $A = \begin{pmatrix}  -1 & 4  \\ 4 & -1 \end{pmatrix}$ h
 eigenvalues $\lambda_1 = -5$ and  $\lambda_2 = 3$ with corresponding unit 
 eigenvectors  $\mathbf{u}_1 = \dfrac{1}{\sqrt{2}}\begin{pmatrix}  1   \\  -1 \end{pmatrix}$   and  $\mathbf{u}_2 = \dfrac{1}{\sqrt{2}}\begin{pmatrix}  1   \\  1 \end{pmatrix}$ respectively. 
 So according to {prf:ref}`Prop:SymmetricMat:Max||Ax||`  the maximum value of $\norm{A\vect{x}}$ on 
-the set of vectors with norm 1 must be 5.
+the set of vectors with norm $1$ must be $5$.
 
 First of all, for  $\vect{x} = \vect{u}_1$ it holds that $\norm{A\vect{u}_1} = ||5\vect{u}_1|| = 5$.
 
@@ -1008,7 +1008,7 @@ $$
      \end{array}
 $$
 
-We bring in mind the column-row expansion of the matrix product. For two $2\times 2$ matrices this reads
+We bring in mind the column-row expansion of the matrix product. For two $2\times 2$-matrices this reads
 
 $$
  \begin{pmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{pmatrix}
@@ -1054,9 +1054,9 @@ Every $n \times n$ symmetric matrix $A$ is the linear combination
 
 :::
 
-of $n$ matrices $P_i$ that represent orthogonal projections onto one-dimensional subspaces that are mutually orthogonal.
+of $n$-matrices $P_i$ that represent orthogonal projections onto one-dimensional subspaces that are mutually orthogonal.
 
-Formula {eq}`Eq:SymmetricMat:SpectralDecomp` is referred to as being a **spectral decomposition** of the matrix $A$.
+Equation {eq}`Eq:SymmetricMat:SpectralDecomp` is referred to as being a **spectral decomposition** of the matrix $A$.
 ::::
 
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:SymmetricMat:SpectralDecomp`
@@ -1082,7 +1082,7 @@ where the vectors $\mathbf{q}_i$ of course are the (orthonormal) columns of the 
 
 ::::{exercise}
 
-The eigenvalues of the matrix $A=\begin{pmatrix} 2 & 1 & 0 \\ 1 & 3 &  1\\ 0 & 1& 2 \end{pmatrix}$ are 1, 2 and 4.
+The eigenvalues of the matrix $A=\begin{pmatrix} 2 & 1 & 0 \\ 1 & 3 &  1\\ 0 & 1& 2 \end{pmatrix}$ are $1$, $2$ and $4$.
 
 Find the spectral decomposition of $A$.
 
@@ -1208,7 +1208,7 @@ $$
 :url: https://embed.grasple.com/exercises/03d75a31-7e1b-4dd2-be0a-5e9a93a0ef09?id=94940  
 :label: grasple_exercise_8_1_4
 :dropdown:
-:description: To give an orthogonal diagonalisation of a (2x2) matrix.
+:description: To give an orthogonal diagonalisation of a $2\times2$-matrix.
 ::::
 
 
@@ -1217,7 +1217,7 @@ $$
 :url: https://embed.grasple.com/exercises/926933aa-a33e-40f5-8e70-84bb9ed63fc8?id=87465
 :label: grasple_exercise_8_1_5
 :dropdown:
-:description: To give an orthogonal diagonalisation of a (2x2) matrix.
+:description: To give an orthogonal diagonalisation of a $2\times2$-matrix.
 ::::
 
 
@@ -1226,7 +1226,7 @@ $$
 :url: https://embed.grasple.com/exercises/9aac9c37-aa3b-4d5a-bb92-f00c09e5f052?id=94943
 :label: grasple_exercise_8_1_6
 :dropdown:
-:description: To give an orthogonal diagonalisation of a (3x3) matrix.
+:description: To give an orthogonal diagonalisation of a $3\times3$-matrix.
 ::::
 
 
@@ -1235,7 +1235,7 @@ $$
 :url: https://embed.grasple.com/exercises/a6a95823-15e4-4354-b89d-559306a5a7fa?id=94941
 :label: grasple_exercise_8_1_7
 :dropdown:
-:description: To give an orthogonal diagonalisation of a (3x3) matrix.
+:description: To give an orthogonal diagonalisation of a $3\times3$-matrix.
 ::::
 
 
@@ -1244,7 +1244,7 @@ $$
 :url: https://embed.grasple.com/exercises/0403af25-edba-4bc6-b077-3de227253419?id=56931
 :label: grasple_exercise_8_1_8
 :dropdown:
-:description: To give an orthogonal diagonalisation of a (3x3) matrix.
+:description: To give an orthogonal diagonalisation of a $3\times3$-matrix.
 ::::
 
 
@@ -1253,7 +1253,7 @@ $$
 :url: https://embed.grasple.com/exercises/3a45e358-4898-4d1d-b6f4-ba9679dd13e0?id=87765
 :label: grasple_exercise_8_1_9
 :dropdown:
-:description: To give an orthogonal diagonalisation of a (3x3) matrix.
+:description: To give an orthogonal diagonalisation of a $3\times3$-matrix.
 ::::
 
 
@@ -1262,7 +1262,7 @@ $$
 :url: https://embed.grasple.com/exercises/eb8b0e2f-d909-47ce-8ef1-50ad67e2b0f6?id=87905
 :label: grasple_exercise_8_1_10
 :dropdown:
-:description: To give an orthogonal diagonalisation of a (4x4) matrix.
+:description: To give an orthogonal diagonalisation of a $4\times4$-matrix.
 ::::
 
 
@@ -1272,7 +1272,7 @@ $$
 :url: https://embed.grasple.com/exercises/5ce15529-61a7-43d0-9fd3-5ad5469618e8?id=89131 
 :label: grasple_exercise_8_1_11
 :dropdown:
-:description: One step in an orthogonal diagonalisation (as in the proof of the existence of an orthogonal diagonalisation)  
+:description: One step in an orthogonal diagonalisation (as in the proof of the existence of an orthogonal diagonalisation).
 ::::
 
 
@@ -1282,7 +1282,7 @@ $$
 :url: https://embed.grasple.com/exercises/5511e064-f22d-4601-9156-f00545d59f80?id=88649
 :label: grasple_exercise_8_1_12
 :dropdown: 
-:description: Sequel to previous question, now for a 4x4 matrix.
+:description: Sequel to previous question, now for a $4\times4$-matrix.
 ::::
 
 
@@ -1292,7 +1292,7 @@ $$
 :url: https://embed.grasple.com/exercises/c994fa76-f723-4700-922b-2f05ff0ef822?id=87760
 :label: grasple_exercise_8_1_13
 :dropdown:
-:description: To give an example of an symmetric 2x2 matrix with 1 eigenvalue and 1 eigenvector given.
+:description: To give an example of an symmetric $2\times2$-matrix with $1$ eigenvalue and $1$ eigenvector given.
 ::::
 
 
@@ -1301,7 +1301,7 @@ $$
 :url: https://embed.grasple.com/exercises/4fd8d027-0e63-46ec-aaf5-f2d10d8707c9?id=87038  
 :label: grasple_exercise_8_1_14
 :dropdown:
-:description: To give an example of a 3x3 symm matrix with given eigenvalues and eigenspace.
+:description: To give an example of a symmetric $3\times3$-matrix with given eigenvalues and eigenspace.
 
 ::::
 
@@ -1320,7 +1320,7 @@ $$
 :url: https://embed.grasple.com/exercises/77b08679-8974-453a-8f68-7e08e8ecfaf5?id=94944 
 :label: grasple_exercise_8_1_15
 :dropdown:
-:description: Deciding about the spectral decomposition of a 3x3 matrix (with  lot of prerequisites laid out).
+:description: Deciding about the spectral decomposition of a $3\times3$-matrix (with  lot of prerequisites laid out).
 ::::
 
 The following exercise have a more theoretical flavour.
@@ -1366,5 +1366,5 @@ The following exercise have a more theoretical flavour.
 :url: https://embed.grasple.com/exercises/59c4c327-1603-4cc1-8b92-7415c691098b?id=87873
 :label: grasple_exercise_8_1_20
 :dropdown:
-:description:  True or false.  If $A$ is symmetric, then $A^2$ has nonnegative eigenvalues.  (And what if $A$ is not symmetric?)
+:description:  True or false.  If $A$ is symmetric, then $A^2$ has nonnegative eigenvalues. (And what if $A$ is not symmetric?)
 ::::

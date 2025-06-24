@@ -11,7 +11,7 @@ If you want to know about Flat-landers:
 <a href=https://en.wikisource.org/wiki/Flatland_(second_edition)>Flatland on Wikisource</a>, (or: ISBN:9789085711971).
 
 Expressed more formally: a plane in $\R^3$ is a copy of the plane $\R^2$,
-so it makes sense to say that such a plane has dimension 2. In this section we make this idea precise, making use of another
+so it makes sense to say that such a plane has dimension $2$. In this section we make this idea precise, making use of another
 important concept related to subspaces, namely the concept of a basis.
 
 (Subsec:BasisDim:Basis)=
@@ -1063,7 +1063,7 @@ You can look upon the dimension of a subspace as a means to describe its size. T
 
 Is the following statement true or false?
 
-The dimension of the vector $\vect{u} = \begin{pmatrix} 3\\4 \end{pmatrix} $ is 2.
+The dimension of the vector $\vect{u} = \begin{pmatrix} 3\\4 \end{pmatrix} $ is $2$.
 
 ::::::
 
@@ -1073,7 +1073,7 @@ The dimension of the vector $\vect{u} = \begin{pmatrix} 3\\4 \end{pmatrix} $ is 
 The statement is _false_. The attribute dimension is only defined for _subspaces_.
 
 A correct statement would be:
-the _size_ of the vector $\vect{u} = \begin{pmatrix} 3\\4 \end{pmatrix} $ is equal to 2.
+the _size_ of the vector $\vect{u} = \begin{pmatrix} 3\\4 \end{pmatrix} $ is equal to $2$.
 
 ::::::
 
@@ -1353,7 +1353,7 @@ $$
 },
 $$
 
-thus $\Row{A}$ is a subspace of $\R^4$ of dimension 2.
+thus $\Row{A}$ is a subspace of $\R^4$ of dimension $2$.
 
 ::::::
 
@@ -1728,7 +1728,7 @@ The following proposition combines the results of the last two exercises.
 ::::::{prf:proposition}
 :label: Prop:BasisDim:RankAPEqualToRankPA
 
-Suppose that $A$ and $P$ are $n\times n$ matrices and $P$ is _invertible_. Then
+Suppose that $A$ and $P$ are $n\times n$-matrices and $P$ is _invertible_. Then
 
 $$
 \operatorname{rank}(AP) =   \operatorname{rank}(A) =  \operatorname{rank}(PA).
@@ -1768,7 +1768,7 @@ $$
 ::::::{exercise}
 :label: Exc:BasisDim:AB=0ImpliesSumRanksLeqN
 
-Suppose that $A$ and $B$ are $n\times n$ matrices for which
+Suppose that $A$ and $B$ are $n\times n$-matrices for which
 
 $$
 AB = O.

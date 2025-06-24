@@ -55,7 +55,7 @@ $$
 $$
 
 does not always have a solution, or the solution is not unique, not even in the case of two
-$n \times n$ matrices $A$ and $B$. The following two examples to illustrate this.
+$n \times n$-matrices $A$ and $B$. The following two examples to illustrate this.
 
 ::::::{prf:example}
 :label: Ex:MatrixInv:MatrixEqNoSolution
@@ -200,7 +200,7 @@ $$
    CA= I, \quad AB = I
 $$
 
-are not used. In fact it shows that for three $n \times n$ matrices $A$, $B$ and $C$
+are not used. In fact it shows that for three $n \times n$-matrices $A$, $B$ and $C$
 
 $$
   \text{if} \quad BA = I \quad \text{  and  }\quad AC = I \quad\text{  then  } \quad B = C.
@@ -833,7 +833,7 @@ The last property we mention and prove is the product rule for the matrix invers
 ::::::{prf:proposition}
 :label: Prop:MatrixInv:ProductRule
 
-If $A$ and $B$ are invertible $n \times n$ matrices then the matrix $AB$ is also invertible, and
+If $A$ and $B$ are invertible $n \times n$-matrices then the matrix $AB$ is also invertible, and
 
 $$
     (AB)^{-1} = B^{-1}A^{-1}.
@@ -1302,7 +1302,7 @@ $$
 
 Prove the following converse of {prf:ref}`Prop:MatrixInv:ProductRule`.
 
-If $A$ and $B$ are $n\times n$ matrices for which the product $AB$ is invertible, then $A$ and $B$ are both invertible.
+If $A$ and $B$ are $n\times n$-matrices for which the product $AB$ is invertible, then $A$ and $B$ are both invertible.
 
 Make sure that you do not use $A^{-1}$ or $B^{-1}$ prematurely, i.e., before you have established that they exist.
 
@@ -1311,7 +1311,7 @@ Make sure that you do not use $A^{-1}$ or $B^{-1}$ prematurely, i.e., before you
 ::::::{admonition} Solution to&nbsp;{numref}`Exc:MatrixInv:ConverseProdRule`
 :class: solution, dropdown
 
-Suppose $A$ and $B$ are two $n \times n$ matrices for which $AB$ is invertible. Let $C=(AB)^{-1}$ be the inverse of $AB$. We claim that
+Suppose $A$ and $B$ are two $n \times n$-matrices for which $AB$ is invertible. Let $C=(AB)^{-1}$ be the inverse of $AB$. We claim that
 $BC$ is the inverse of $A$.
 
 Now since
@@ -1520,7 +1520,7 @@ The remaining exercises tend to be more theoretic.
 :url: https://embed.grasple.com/exercises/4b844244-2e9d-480f-b65a-88d8a2fef781?id=70276
 :label: grasple_exercise_3_4_9new
 :dropdown:
-:description: To solve an equation  $AX = B$ &nbsp;  ($A$ and $B$  3x3 matrices).
+:description: To solve an equation  $AX = B$ &nbsp;  ($A$ and $B$ are $3\times3$-matrices).
 
 ::::::
 

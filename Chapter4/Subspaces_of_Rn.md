@@ -231,7 +231,7 @@ c_1\vect{u}+ c_2 \vect{v} \in S.
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Subspaces:SpanClosed`
 :class: tudproof
 
-To show that a subspace satisfies property {eq}`Eq:Subspaces:SpanClosed`,
+To show that a subspace satisfies the property in Equation {eq}`Eq:Subspaces:SpanClosed`,
 suppose that $S$ is a subspace, $\vect{u}$ and $\vect{v}$ are vectors in $S$ and
 $c_1,c_2$ are real numbers.
 
@@ -248,7 +248,7 @@ c_1\vect{u} +  c_2\vect{v} \in S.
 $$
 
 Conversely,
-assume $S$ is non-empty and satisfies property {eq}`Eq:Subspaces:SpanClosed`.
+assume $S$ is non-empty and satisfies the property in Equation {eq}`Eq:Subspaces:SpanClosed`.
 
 Taking $c_1 = c_2 = 1$ it follows that for $\vect{u},\vect{v} \in S$
 

@@ -73,7 +73,7 @@ U\begin{pmatrix}
 
 ::::
 
-That the singular values must be nonnegative keeps open the possibility that some of the (last) singular values may be 0.
+That the singular values must be nonnegative keeps open the possibility that some of the (last) singular values may be $0$.
 
 
 ::::{prf:example}
@@ -92,7 +92,7 @@ Let us point out a few properties of this decomposition.
 
 :::{latexlist}
 
-\item The matrix $A$  has size $3\times2$, so $\Sigma$ is of the form depicted in {eq}`Eq:SVD:secondform`.
+\item The matrix $A$  has size $3\times2$, so $\Sigma$ is of the form depicted in Equation {eq}`Eq:SVD:secondform`.
 
 
 
@@ -137,7 +137,7 @@ $$
 $$
 %%::
 
-With the spectral decomposition (see {prf:ref}`Thm:SymmetricMat:SpectralDecomp`) we found that any symmetric matrix $A$ can be written as a linear combination of rank one matrices $P_i$. Moreover, these matrices $P_i$ can be interpreted as projections onto orthogonal one-dimensional subspaces of $\R^n$. Here the least we can say is that we have written the matrix  $A$ of rank 2 as a linear combination of two rank 1 matrices.
+With the spectral decomposition (see {prf:ref}`Thm:SymmetricMat:SpectralDecomp`) we found that any symmetric matrix $A$ can be written as a linear combination of rank one matrices $P_i$. Moreover, these matrices $P_i$ can be interpreted as projections onto orthogonal one-dimensional subspaces of $\R^n$. Here the least we can say is that we have written the matrix  $A$ of rank $2$ as a linear combination of two rank $1$-matrices.
 :::
 
 ::::
@@ -300,7 +300,7 @@ $$
 That links the property to the quadratic form  $q(\vect{x}) = \vect{x}^TA^TA\vect{x}$. <BR>
  From {prf:ref}`Prop:QuadForms:MaximumxTAx` we know that the maximal value of $q(\mathbf{x})$ on the set of unit vectors is the largest eigenvalue of the matrix $A^TA$, which by  {prf:ref}`Prop:SVD:singularvalues` is given by the square of the highest singular value.
 
-The alternative formulation  {eq}`Eq:SVD:||Ax||over||x||`  follows from the observation that for each nonzero vector $\vect{x}$ 
+The alternative formulation in Equation {eq}`Eq:SVD:||Ax||over||x||`  follows from the observation that for each nonzero vector $\vect{x}$ 
 
 $$
   \dfrac{\norm{A\vect{x}}}{\norm{\vect{x}}} = \dfrac{\norm{A\hat{\vect{x}}}}{\norm{\hat{\vect{x}}}} = \norm{A\hat{\vect{x}}}, 
@@ -627,7 +627,7 @@ Some concluding remarks concerning the algorithm.
  it may be profitable to  find an SVD for $A^T$ first, and then transpose this. <BR>
  The singular values of $A$ are the eigenvalues of $A^TA$, an $n \times n$-matrix, the singular values of $A^T$ are the eigenvalues of $AA^T$, an
  $m \times m$-matrix.  The smaller the better! <BR>
- In most applications the singular value decomposition will be applied to  $m\times n$ matrices $A$  with much more rows that columns,  so  $m \gg n$. For such  matrices $A$, 
+ In most applications the singular value decomposition will be applied to  $m\times n$-matrices $A$  with much more rows that columns,  so  $m \gg n$. For such  matrices $A$, 
  working with $A^TA$ is the best bet.
 
  2. The normalisation of the vectors  $\mathbf{v}_i$ and $\mathbf{u}_j$ may be postponed till the end of step 5.  That prevents dragging along
@@ -881,7 +881,7 @@ There will be two applications described in this section.
 
 We start with the first.  <BR>
 Numerical data can be stored in a matrix.<BR>
-For instance, a black-and-white picture/photo can be stored 'pixel by pixel', by numbers that indicate the gray scale, which may for instance be any integer from 0 (completely white) to 31 (completely black). A 4:5 photo may then be stored as, say,  a 1080x1350 matrix.
+For instance, a black-and-white picture/photo can be stored 'pixel by pixel', by numbers that indicate the gray scale, which may for instance be any integer from $0$ (completely white) to $31$ (completely black). A 4:5 photo may then be stored as, say,  a $1080\times1350$-matrix.
 <BR>
 As another example, think of a survey of $n$ questions that have to be answered using a 1-5 scale.  If the numbers of respondents is $N$, the data can be represented by an $N \times n$-matrix.
 
@@ -917,7 +917,7 @@ which can be rewritten as
 
 ::::
 
-Here $A$ is written as a sum of rank 1 matrices, and because of the decreasing singular values, these rank 1 matrices get less and less 'important'.  If the $\sigma_i$ become  very small (relatively) for, say, $k < i \leq r$,  we might expect that the sum
+Here $A$ is written as a sum of rank $1$-matrices, and because of the decreasing singular values, these rank $1$-matrices get less and less 'important'.  If the $\sigma_i$ become  very small (relatively) for, say, $k < i \leq r$,  we might expect that the sum
 
 $$
 \sigma_1 \vect{u}_1\vect{v}_1^T + \ldots + \sigma_k \vect{u}_k\vect{v}_k^T 
@@ -1041,7 +1041,7 @@ We expect $A_3$ to be a good approximation of $A$.
   
   - To store  the $12\times10$-matrix $A$, we have to store  $120$ reals.
 
-  - To store $U_3, \Sigma_{33}$ and $V_3$ , we only have to store  $12\times3 + 3 + 10\times 3 = 69$ numbers.  The middle 3 comes from first three elements (the singular values) on the diagonal of $\Sigma$.  
+  - To store $U_3, \Sigma_{33}$ and $V_3$ , we only have to store  $12\times3 + 3 + 10\times 3 = 69$ numbers.  The middle $3$ comes from first three elements (the singular values) on the diagonal of $\Sigma$.  
   
   With (much) larger matrices the reduction in terms of storage capacity may be even better.
 
@@ -1059,7 +1059,7 @@ We expect $A_3$ to be a good approximation of $A$.
 :url: https://embed.grasple.com/exercises/ee443aeb-6528-4f8e-916c-7147b802dfea?id=118346
 :label: grasple_exercise_8_3_1
 :dropdown:
-:description: Finding the maximal value of $\norm{A\vect{x}}$, if $\norm{\vect{x}}=1$,  $A$ a 2x2 matrix.
+:description: Finding the maximal value of $\norm{A\vect{x}}$, if $\norm{\vect{x}}=1$,  $A$ a $2\times2$-matrix.
 ::::
 
 
@@ -1069,7 +1069,7 @@ We expect $A_3$ to be a good approximation of $A$.
 :url: https://embed.grasple.com/exercises/3fdad317-fc18-4f88-b416-87cbd1d5e708?id=93495
 :label: grasple_exercise_8_3_2
 :dropdown:
-:description: Finding the maximal value of $\norm{A\vect{x}}$, if $\norm{\vect{x}}=1$,  $A$ a 3x2 matrix.
+:description: Finding the maximal value of $\norm{A\vect{x}}$, if $\norm{\vect{x}}=1$,  $A$ a $3\times2$-matrix.
 ::::
 
 
@@ -1100,7 +1100,7 @@ We expect $A_3$ to be a good approximation of $A$.
 :url: https://embed.grasple.com/exercises/e4c651aa-a998-4e19-957b-20ddf41509bf?id=93468
 :label: grasple_exercise_8_3_5
 :dropdown:
-:description: To find the singular values of a 2x2 matrix $A$.
+:description: To find the singular values of a $2\times2$-matrix $A$.
 ::::
 
 
@@ -1109,7 +1109,7 @@ We expect $A_3$ to be a good approximation of $A$.
 :url: https://embed.grasple.com/exercises/47ebaa77-9f3c-4363-a57e-d37242c6e598?id=93471
 :label: grasple_exercise_8_3_6
 :dropdown:
-:description: To compute the singular values of a 3x2 matrix $A$.
+:description: To compute the singular values of a $3\times2$-matrix $A$.
 ::::
 
 
@@ -1118,7 +1118,7 @@ We expect $A_3$ to be a good approximation of $A$.
 :url: https://embed.grasple.com/exercises/36a64482-b217-427c-b132-13aa6d6b67df?id=118350
 :label: grasple_exercise_8_3_7
 :dropdown:
-:description: To find a singular value decomposition of a 2x2 matrix $A$.
+:description: To find a singular value decomposition of a $2\times2$-matrix $A$.
 ::::
 
 
@@ -1127,7 +1127,7 @@ We expect $A_3$ to be a good approximation of $A$.
 :url: https://embed.grasple.com/exercises/30280867-b20e-4590-aa18-868612ba8fbd?id=93476
 :label: grasple_exercise_8_3_8
 :dropdown:
-:description: To find a singular value decomposition of a 2x2 matrix $A$ of rank 1.
+:description: To find a singular value decomposition of a $2\times2$-matrix $A$ of rank $1$.
 ::::
 
 
@@ -1137,7 +1137,7 @@ We expect $A_3$ to be a good approximation of $A$.
 :url: https://embed.grasple.com/exercises/79d22478-56e3-49ee-9b19-77ab1ad06eaf?id=93470
 :label: grasple_exercise_8_3_9
 :dropdown:
-:description:  To compute an SVD for a 2x3 matrix $A$. 
+:description:  To compute an SVD for a $2\times3$-matrix $A$. 
 ::::
 
 
@@ -1146,7 +1146,7 @@ We expect $A_3$ to be a good approximation of $A$.
 :url: https://embed.grasple.com/exercises/10affbae-4221-40f8-bf0e-df626a0e64ae?id=93479
 :label: grasple_exercise_8_3_10
 :dropdown:
-:description: To compute an SVD for a 2x3 matrix $A$ (of rank 1).
+:description: To compute an SVD for a $2\times3$-matrix $A$ (of rank 1).
 ::::
 
 
@@ -1155,7 +1155,7 @@ We expect $A_3$ to be a good approximation of $A$.
 :url: https://embed.grasple.com/exercises/37ea17f1-1bfb-4a19-b9e2-1292a593dfa3?id=93480
 :label: grasple_exercise_8_3_11
 :dropdown:
-:description: To compute an SVD for a 3x2 matrix $A$ (of rank 1).
+:description: To compute an SVD for a $3\times2$-matrix $A$ (of rank 1).
 ::::
 
 

@@ -876,7 +876,7 @@ where both the parameter $f$ and at least one of the parameters $a,b,c$ are not 
 ::::{prf:example}
 :label: Ex:ConicSec:Examples
 
-The curve given by the equation $x_1^2 + x_2^2 - 25 = 0$ is a circle with radius 5.
+The curve given by the equation $x_1^2 + x_2^2 - 25 = 0$ is a circle with radius $5$.
 
 The equation $x_1^2 - x_2 - 2x_1 + 5 = 0$ gives a parabola with vertex ('top') at $(1, 4)$ and the line $x_1 = 1$ as axis of symmetry.
 
@@ -902,7 +902,7 @@ ax_1^2 + cx_2^2 + f = 0
 
 defines a central conic in **standard position**. Such a conic is symmetric with respect to both coordinate axes.
 
-If all parameters $a,c,f$ in {eq}`Eq:ConicSec:StandardConic` are nonzero the equation can be rewritten in one of the two **standard forms**
+If all parameters $a,c,f$ in Equation {eq}`Eq:ConicSec:StandardConic` are nonzero the equation can be rewritten in one of the two **standard forms**
 
 ::::{math}
 :label: Eq:QuadForms:StandardForms
@@ -972,13 +972,12 @@ Completing squares gives the equivalent equation
 We see that all depends on the sign of $\left(c - \dfrac{b^2}{a^2}\right)$  &nbsp; (i.e., to the 'definiteness' of the matrix $A$).
 
 If  $D = \left(c - \dfrac{b^2}{a^2}\right) > 0$,  <BR>
-the only solution $(x_1,x_2)$ of equation 
-{eq}`Eq:QuadForms:DegenerateForm`  is the **single point**  $(x_1,x_2) = (0,0)$.
+the only solution $(x_1,x_2)$ of Equation {eq}`Eq:QuadForms:DegenerateForm`  is the **single point**  $(x_1,x_2) = (0,0)$.
 
 If $D = 0$,  <BR>
 the solutions are given by points on the **line** with equation $ax_1 + \dfrac{b}{a}x_2 = 0$.
 
-Lastly, if  $D < 0$, say  $D = -d^2$, then {eq}`Eq:QuadForms:DegenerateForm` simplifies to
+Lastly, if  $D < 0$, say  $D = -d^2$, then Equation {eq}`Eq:QuadForms:DegenerateForm` simplifies to
 
 $$
 
@@ -1054,7 +1053,7 @@ $$
 
 ::::
 
-If in {eq}`Eq:ConicSec:CentralConic` the parameter $b$ is not equal to zero, the principal axes can be found by diagonalisation of the quadratic form
+If in Equation {eq}`Eq:ConicSec:CentralConic` the parameter $b$ is not equal to zero, the principal axes can be found by diagonalisation of the quadratic form
 
 $$
 
@@ -1280,7 +1279,7 @@ The  ellipse with its principal axes.
 :url: https://embed.grasple.com/exercises/b71d8b9f-a3e8-48f6-b236-58f85a4818a6?id=90997
 :label: grasple_exercise_8_2_4
 :dropdown:
-:description: To classify a 3x3 matrix of which the characteristic polynomial is given.
+:description: To classify a $3\times3$-matrix of which the characteristic polynomial is given.
 
 ::::
 
@@ -1361,7 +1360,7 @@ The  ellipse with its principal axes.
 :url: https://embed.grasple.com/exercises/51f56e96-3761-44c5-8d20-4cf0047a1ea4?id=93115
 :label: grasple_exercise_8_2_12
 :dropdown:
-:description: Maximising  $\vect{x}^TA\vect{x}$ under the restriction $\norm{\vect{x}}=1$, for a 2x2 matrix $A$. 
+:description: Maximising  $\vect{x}^TA\vect{x}$ under the restriction $\norm{\vect{x}}=1$, for a $2\times2$-matrix $A$. 
 
 ::::
 

@@ -95,7 +95,7 @@ $$
 \operatorname{det}(U - \lambda I) = ( u_{11}-\lambda)( u_{22}-\lambda)( u_{33}-\lambda).
 $$
 
-The last expression becomes 0 exactly for the values
+The last expression becomes $0$ exactly for the values
 
 $$
  \lambda_1 = u_{11}, \,\,\lambda_2 = u_{22},    \,\,\lambda_3 = u_{33}.
@@ -116,7 +116,7 @@ Note that this includes diagonal matrices $D$.
 
 ::::::
 
-For the $2\times 2$-matrix in {prf:ref}`Ex:EigenValues:FirstCharPoly` the expression $\det(A - \lambda I)$ eventually comes down to a polynomial of degree 2.
+For the $2\times 2$-matrix in {prf:ref}`Ex:EigenValues:FirstCharPoly` the expression $\det(A - \lambda I)$ eventually comes down to a polynomial of degree $2$.
 
 For an arbitrary $2 \times 2$-matrix $A = \begin{pmatrix} a-\lambda & b \\ c & d-\lambda \end{pmatrix}$ we quickly see that
 
@@ -276,7 +276,7 @@ $$
 p_A(\lambda) = (\lambda-3)^2(\lambda -2)
 $$
 
-contains two factors $(\lambda - 3)$ and only one factor $(\lambda - 2)$. In algebra it is then said that $\lambda = 3$ is a zero/root of multiplicity 2 of the polynomial $p_A$, and likewise the root $\lambda = 2$ has multiplicity 1.
+contains two factors $(\lambda - 3)$ and only one factor $(\lambda - 2)$. In algebra it is then said that $\lambda = 3$ is a zero/root of multiplicity $2$ of the polynomial $p_A$, and likewise the root $\lambda = 2$ has multiplicity $1$.
 
 
 Another natural question is how many linearly **independent** eigenvectors  there are for an eigenvalue $\lambda$.  This we will refer to as the geometric multiplicity.
@@ -317,8 +317,8 @@ A - 3I = \left(\begin{array}{ccc} 4-3 & -1 & -2 \\0 & 3-3 & 0 \\ 1 & 2 & 1-3  \e
 .
 $$
 
-This is a $3 \times 3$-matrix of rank 2, so its null space has dimension $3-2 =1$, and we conclude that the geometric multiplicity of the eigenvalue
-$\lambda = 3$ is equal to 1.
+This is a $3 \times 3$-matrix of rank $2$, so its null space has dimension $3-2 =1$, and we conclude that the geometric multiplicity of the eigenvalue
+$\lambda = 3$ is equal to $1$.
 For the other eigenvalue we perform a similar computation:
 
 $$
@@ -330,12 +330,12 @@ A - 2I =  \left(\begin{array}{ccc} 4-2 & -1 & -2 \\0 & 3-2 & 0 \\ 1 & 2 & 1-2  \
 ,
 $$
 
-from which we deduce that the geometric multiplicity of the eigenvalue $\lambda = 2$ is also equal to 1.
+from which we deduce that the geometric multiplicity of the eigenvalue $\lambda = 2$ is also equal to $1$.
 
 ::::::
 
 At this moment it is not so easy to prove the following proposition, of which the previous example gives an illustration. 
-(For the proof: see the section 'Similar Matrices',  right after formula {eq}`Eq:Diagonalisable:GeomMultversusAlgMult`.)
+(For the proof: see the section 'Similar Matrices',  right after Equation {eq}`Eq:Diagonalisable:GeomMultversusAlgMult`.)
 
 ::::::{prf:proposition}
 :label: Prop:EigenValues:SmallerGeomMultiplicity
@@ -355,7 +355,7 @@ A matrix $A$ that has an eigenvalue $\lambda$ for which the geometric multiplici
 
 
 As a consequence of {prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity` there is one case where the geometric multiplicity follows immediately from the algebraic multiplicity.
-Namely, if $\lambda$ is an eigenvalue of algebraic multiplicity 1, then the geometric multiplicity must be 1 too: it cannot be larger, because of {prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity`, and it cannot be smaller either, since for any eigenvalue there must be at least one eigenvector.
+Namely, if $\lambda$ is an eigenvalue of algebraic multiplicity $1$, then the geometric multiplicity must be $1$ too: it cannot be larger, because of {prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity`, and it cannot be smaller either, since for any eigenvalue there must be at least one eigenvector.
 
 ::::::{prf:example}
 :label: Ex:Eigenvalues:TwodimEigenspace2
@@ -363,15 +363,15 @@ Namely, if $\lambda$ is an eigenvalue of algebraic multiplicity 1, then the geom
 The matrix $A = \begin{pmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1  \end{pmatrix}$
 has the two independent eigenvectors
 $\vect{v}_1 = \begin{pmatrix} 1 \\ 0 \\ -1  \end{pmatrix}, \vect{v}_2 =\begin{pmatrix} 0 \\ 1 \\ -1  \end{pmatrix}$
-for the eigenvalue $\lambda = -1$, and the eigenvector $\vect{v}_3 = \begin{pmatrix} 1 \\1\\ 1  \end{pmatrix}$ for the eigenvalue 5.
+for the eigenvalue $\lambda = -1$, and the eigenvector $\vect{v}_3 = \begin{pmatrix} 1 \\1\\ 1  \end{pmatrix}$ for the eigenvalue $5$.
 (We studied this matrix in {prf:ref}`Ex:EigenValues:TwodimEigenspaceCtd`.)
-From {prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity` we can deduce that the characteristic polynomial must contain at least two factors $(\lambda - (-1))$ and one factor $(\lambda - 5)$. Since its degree is equal to 3, and the coefficient of $\lambda^3$ is equal to $(-1)^3 = -1$, we may conclude that
+From {prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity` we can deduce that the characteristic polynomial must contain at least two factors $(\lambda - (-1))$ and one factor $(\lambda - 5)$. Since its degree is equal to $3$, and the coefficient of $\lambda^3$ is equal to $(-1)^3 = -1$, we may conclude that
 
 $$
 p_A(\lambda) = -(\lambda +1)^2(\lambda - 5).
 $$
 
-The eigenvalue $\lambda = -1$ has both algebraic multiplicity and geometric multiplicity equal to 2.
+The eigenvalue $\lambda = -1$ has both algebraic multiplicity and geometric multiplicity equal to $2$.
 
 ::::::
 

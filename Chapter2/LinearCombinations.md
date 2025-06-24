@@ -267,7 +267,7 @@ We will now look at a very specific set of vectors in $\mathbb{R}^n$ of which th
 ::::{prf:definition}
 :label: Dfn:LinearCombinations:StandardBasis
 
-Suppose we are working in $\mathbb{R}^n$. Let $\mathbf{e}_k$ be the vector of which all components are equal to 0, with the exception that the entry on place $k$ is equal to 1. The vectors $(\mathbf{e}_1, \ldots, \mathbf{e}_n)$ will be called the **standard basis** of $\mathbb{R}^n$.
+Suppose we are working in $\mathbb{R}^n$. Let $\mathbf{e}_k$ be the vector of which all components are equal to $0$, with the exception that the entry on place $k$ is equal to $1$. The vectors $(\mathbf{e}_1, \ldots, \mathbf{e}_n)$ will be called the **standard basis** of $\mathbb{R}^n$.
 
 ::::
 

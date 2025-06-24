@@ -14,7 +14,7 @@ ad-bc \neq 0.
 
 :::
 
-We called the expression $ad-bc$ the _determinant_ of the matrix $A$. Formula {eq}`Eq:DetGeometric:DetNonzero` is also equivalent to the statement that the columns of the matrix $A$ are linearly independent.
+We called the expression $ad-bc$ the _determinant_ of the matrix $A$. Equation {eq}`Eq:DetGeometric:DetNonzero` is also equivalent to the statement that the columns of the matrix $A$ are linearly independent.
 
 Likewise, by row reducing a general $3 \times 3$-matrix
 
@@ -164,7 +164,7 @@ $$
 \det{(\vect{u},\vect{v})} = ad - bc.
 $$
 
-Alternatively, the determinant can be seen as an operator working on $2 \times 2$ matrices, coming with its own notation:
+Alternatively, the determinant can be seen as an operator working on $2 \times 2$-matrices, coming with its own notation:
 
 $$
 \det{\big(\, \vect{u} \,\, \vect{v}\, \big)}  = \det{\left(\left(\begin{array}{cc} a & c \\ b & d \end{array}\right)\right)}  =
@@ -349,7 +349,7 @@ There are more pairwise orientations to consider, but the idea is hopefully clea
 
 ::::::
 
-## 3x3 determinants: volume and orientation
+## $3\times3$-determinants: volume and orientation
 
 Suppose $\vect{a}, \vect{b}, \vect{c}$ are three vectors in $\R^3$. For the moment, suppose they are linearly independent. So
 $\vect{a}, \vect{b}$ are not multiples of each other, and $\vect{c}$ is not in the plane spanned by $\vect{a}, \vect{b}$.
@@ -449,7 +449,7 @@ $$
 
 Note that the determinant is a real number.
 
-Alternatively, we can define the determinant as a function working on $3 \times 3$ matrices. And that is the sole interpretation we will use from now on.
+Alternatively, we can define the determinant as a function working on $3 \times 3$-matrices. And that is the sole interpretation we will use from now on.
 
 If we put
 
@@ -515,7 +515,7 @@ $$
 
 ::::::
 
-The next proposition summarises the relevant properties of 3x3 determinants.
+The next proposition summarises the relevant properties of $3\times3$-determinants.
 
 ::::::{prf:proposition}
 :label: Prop:DetGeometric:Summary
@@ -620,7 +620,7 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 :url: https://embed.grasple.com/exercises/179cf12-fd87-41a2-8532-c1fbe97c10e2?id=121860
 :label: grasple_exercise_5_1_7
 :dropdown:
-:description: On the connection between determinant, cross product and volume
+:description: On the connection between determinant, cross product and volume.
 
 ::::::
 

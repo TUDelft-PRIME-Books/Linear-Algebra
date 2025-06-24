@@ -479,7 +479,7 @@ for some $\vect{x}_{0}$ in $\R^{n}$. If $A$ happens to be a $2\times 2$-matrix, 
 :name: Fig:DynSystContinuous:Trajectory
 :class: dark-light
 
-On the left a trajectory for the dynamical system associated to a $2x2$-matrix. This trajectory is fully determined by a single initial value, which is indicated by the blue dot. Note that any other initial value which on this trajectory determines the same trajectory. On the right, a flow map for the same dynamical system is plotted. For each trajectory, an initial value is indicated.
+On the left a trajectory for the dynamical system associated to a $2\times2$-matrix. This trajectory is fully determined by a single initial value, which is indicated by the blue dot. Note that any other initial value which on this trajectory determines the same trajectory. On the right, a flow map for the same dynamical system is plotted. For each trajectory, an initial value is indicated.
 ::::
 
 It turns out that the eigenvalues and in particular their magnitudes determine what such a flow map will look like. The following definition describes all possible cases.

@@ -670,7 +670,7 @@ $$
 $$
 
 Using the shorthand notation just introduced the system can be simplified as follows:
-we first interchange the first and the third equation to have a first equation where the coefficient of $x_1$ is equal to 1. That way we avoid fractions in at least the first elimination step.
+we first interchange the first and the third equation to have a first equation where the coefficient of $x_1$ is equal to $1$. That way we avoid fractions in at least the first elimination step.
 
 $$
 \begin{array}{cl}
@@ -1088,7 +1088,7 @@ The last row of the first matrix and the third and the fourth row of the second 
 
 In practice the pivots are the coefficients in the equations of a system that are used to eliminate variables from other equations. In the context of augmented matrices: they are the entries used to create zeros in the column below that entry.
 
-Note that from the second condition in {prf:ref}`Dfn:LinSystems:EchelonForm` it follows that automatically all entries in the column below a pivot must be 0.
+Note that from the second condition in {prf:ref}`Dfn:LinSystems:EchelonForm` it follows that automatically all entries in the column below a pivot must be $0$.
 
 ::::
 
@@ -1252,7 +1252,7 @@ We will not give a formal proof.
 
 The idea that a matrix can be reduced to an echelon matrix is as follows: just start from the top left and work downwards.
 
-If $a_{11}$ is not 0, that will be the first pivot. We can use it to make all the other elements in the first column $0$.
+If $a_{11}$ is not $0$, that will be the first pivot. We can use it to make all the other elements in the first column $0$.
 
 We then get
 
@@ -1360,7 +1360,7 @@ There are three important observations regarding this example.
 ::::{prf:remark}
 :label: Rem:LinSystems:CreatingZeros
 
-Apart from the second step, where two rows were scaled, in each step one pivot was used to make all elements right above and right below it equal to 0. In this way we move forward all the time to a matrix with more and more zeros *in a structured way*.
+Apart from the second step, where two rows were scaled, in each step one pivot was used to make all elements right above and right below it equal to $0$. In this way we move forward all the time to a matrix with more and more zeros *in a structured way*.
 
 ::::
 
@@ -1999,7 +1999,7 @@ The remaining exercises tend to be a bit more theoretic.
 :url: https://embed.grasple.com/exercises/ff8bfe99-7a87-4711-b589-7ba70a857a39?id=80876
 :label: grasple_exercise_2_1_6
 :dropdown:
-:description: Two $3\times 3$ systems with the same coefficient matrix.
+:description: Two $3\times 3$-systems with the same coefficient matrix.
 
 ::::
 

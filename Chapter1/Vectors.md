@@ -257,7 +257,7 @@ Note that for every molecule of sodium sulfate we need two molecules of carbon i
 ```{figure} Images/Fig-Vectors-ChemRec.svg
 :name: Fig:Vectors:ChemRec
 
-The chemical reaction given in {eq}`Eq:Vectors:ChemReac`.
+The chemical reaction given in Equation {eq}`Eq:Vectors:ChemReac`.
 ```
 
 There are four different chemical elements involved in this reaction: sodium ($\ce{Na}$), sulfide ($\ce{S}$), oxygen ($\ce{O}$), and carbon. Each of our molecules can be written as a vector of size four with the entries giving the number of sodium, sulfide, oxygen, and carbon atoms (in that order) in the molecule. This gives:
@@ -279,7 +279,7 @@ $$
 
 
 
-In order for the reaction given in {eq}`Eq:Vectors:ChemReac` to be balanced, we need to know that there are no atoms on the left which are not present on the right and vice versa. That is, we need to have the following vector equation:
+In order for the reaction given in Equation {eq}`Eq:Vectors:ChemReac` to be balanced, we need to know that there are no atoms on the left which are not present on the right and vice versa. That is, we need to have the following vector equation:
 
 
 $$
