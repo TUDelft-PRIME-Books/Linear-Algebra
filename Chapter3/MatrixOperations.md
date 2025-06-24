@@ -371,8 +371,8 @@ $$
             ca_{21} & ca_{22}&  \ldots& ca_{2n}   \\
             \vdots &  \vdots&  \cdots&  \vdots    \\
             ca_{m1} & ca_{m2}&  \ldots& ca_{mn}
-          \end{array}^T
-   \right) =
+          \end{array}
+   \right)^T =
    \left(\begin{array}{cccc}
             ca_{11} & ca_{21}&  \ldots& ca_{m1}   \\
             ca_{12} & ca_{22}&  \ldots& ca_{m2}   \\
@@ -580,7 +580,7 @@ $$
 ::::::{prf:example}
 :label: Ex:MatrixOps:MatrixProduct
 
-Let us consider the matrix product
+Let us again consider the matrix product
 
 $$
   \begin{pmatrix} 1 & -3 \\ -1 & 2 \\ 3& -2 \end{pmatrix}
@@ -701,6 +701,11 @@ $$
 
 where $\mathbf{a}\ip\mathbf{b}$ is the dot product of the vectors $\mathbf{a}$ and $\mathbf{b}$.
 
+Note that now we can also write the dot product of two (column) vectors in $\R^n$ as a matrix product. Namely
+
+$$
+  \mathbf{a}\ip\mathbf{b} = \mathbf{a}^T\mathbf{b}.
+$$
 ::::::
 
 ::::::{exercise}
@@ -1157,13 +1162,13 @@ $$
 and the corresponding linear transformations
 
 $$
-   T_A: \mathbb{R}^2 \to \mathbb{R}^2, \quad \mathbf{x} \mapsto T_A(\mathbf{x}) = A \mathbf{x}
+   S: \mathbb{R}^2 \to \mathbb{R}^2, \quad \mathbf{x} \mapsto S(\mathbf{x}) = A \mathbf{x}
 $$
 
 and
 
 $$
-T_B: \mathbb{R}^2 \to \mathbb{R}^2, \quad \mathbf{x} \mapsto T_B(\mathbf{x}) = B \mathbf{x}.
+T: \mathbb{R}^2 \to \mathbb{R}^2, \quad \mathbf{x} \mapsto T(\mathbf{x}) = B \mathbf{x}.
 $$
 
 We get
@@ -1176,7 +1181,7 @@ $$
 and likewise
 
 $$
-  T_B(\mathbf{x}) =  \begin{pmatrix} 0 & 1 \\ 1 & 0  \end{pmatrix} \begin{pmatrix} x_1\\ x_2  \end{pmatrix}
+  T(\mathbf{x}) =  \begin{pmatrix} 0 & 1 \\ 1 & 0  \end{pmatrix} \begin{pmatrix} x_1\\ x_2  \end{pmatrix}
    = \begin{pmatrix} x_2\\ x_1  \end{pmatrix}.
 $$
 
@@ -1187,7 +1192,7 @@ $$
 $ \begin{pmatrix} 2 & 0 \\ 0 & 1 \end{pmatrix}\begin{pmatrix} 0 & 1 \\ 1&0 \end{pmatrix} \neq \begin{pmatrix} 0 & 1 \\ 1&0 \end{pmatrix}\begin{pmatrix} 2 & 0 \\ 0 & 1 \end{pmatrix}$.
 ::::
 
-Note that $T_A$ is a transformation that 'stretches' horizontally, and $T_B$ is a reflection. {numref}`Figure %s <Fig:MatrixOps:NonCommutativity>` visualises the transformations corresponding to $AB$ and $BA$. When we apply the transformations one after another, the order in which we do this is important.
+Note that $S$ is a transformation that 'stretches' horizontally, and $T$ is a reflection. {numref}`Figure %s <Fig:MatrixOps:NonCommutativity>` visualises the transformations corresponding to $AB$ and $BA$. When we apply the transformations one after another, the order in which we do this is important.
 
 ::::::
 
@@ -1739,7 +1744,7 @@ The remaining exercises are less of a compuational character.
 
 ::::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/7f91a5d2-e1c9-422e-b0f9-ba0b22936e2a?id=  
+:url: https://embed.grasple.com/exercises/7f91a5d2-e1c9-422e-b0f9-ba0b22936e2a?id=69456 
 :label: grasple_exercise_3_2_20
 :dropdown:
 :description: To show that $(cA)^T = cA^T$.

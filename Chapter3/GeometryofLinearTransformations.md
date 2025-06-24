@@ -17,7 +17,7 @@ $$
 Geometrically, this is the linear transformation which squashes the plane flat onto the $x$-axis. In slightly less informal terms, it is the transformation which projects the plane onto the $x$-axis.
 
 Using the orthogonal projections defined
-in {prf:ref}`Dfn:InnerProduct:OrthoProjectionOntoVector`, this can be generalised as follows. If $\mathbf{v}$ if a vector in $\mathbb{R}^{n}$, then
+in {prf:ref}`Dfn:InnerProduct:OrthoProjectionOntoVector`, this can be generalised as follows. If $\mathbf{v}$ is a vector in $\mathbb{R}^{n}$, then
 
 $$
 T_{\mathbf{v}}:\mathbb{R}^{n}\to\mathbb{R}^{n},\quad\mathbf{w}\mapsto\operatorname{proj}_{\mathbf{v}}(\mathbf{w})
@@ -60,7 +60,7 @@ Similarly, for any $\mathbf{w}$ in $\mathbb{R}^{n}$ and any $c$ in $\mathbb{R}$ 
 
 $$
 \begin{align*}
-T_{\mathbf{v}}(c\mathbf{w})&=\proj_{\mathbf{v}}(c\mathbf{w})=\frac{(c\mathbf{w})\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}}=c\,\frac{\mathbf{w}\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}}\mathbf{v}\\
+T_{\mathbf{v}}(c\mathbf{w})&=\proj_{\mathbf{v}}(c\mathbf{w})=\frac{(c\mathbf{w})\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}}\mathbf{v} =c\,\frac{\mathbf{w}\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}}\mathbf{v}\\
 &=c\,\proj_{\mathbf{v}}(\mathbf{w})=c\,T_{\mathbf{v}}(\mathbf{w}),
 \end{align*}
 $$
@@ -149,7 +149,7 @@ We leave this as an exercise.
 
 ::::::
 
-It turns out that not all projections look like the ones discussed in Section {numref}`Sec:DotProduct`, not even if we restrict ourselves to a plane. Consider for example the following construction. Let $\mathbf{v}$ be any non-zero vector in $\mathbb{R}^{2}$ and let $\mathcal{L}$ be the line through $\mathbf{v}$ and the origin. Let $\mathbf{w}$ be a vector in $\mathbb{R}^{2}$ which does not lie on $\mathcal{L}$. For any vector $\mathbf{u}$, we define $\mathcal{L}_{\mathbf{u}}$ as the line through $\mathbf{u}$ in the direction $\mathbf{w}$. We now define the transformation $T$ which maps a vector $\mathbf{u}$ to the intersection of $\mathcal{L}_{\mathbf{u}}$ and $\mathcal{L}$. For
+It turns out that not all projections look like the ones discussed in {numref}`Sec:DotProduct`, not even if we restrict ourselves to a plane. Consider for example the following construction. Let $\mathbf{v}$ be any non-zero vector in $\mathbb{R}^{2}$ and let $\mathcal{L}$ be the line through $\mathbf{v}$ and the origin. Let $\mathbf{w}$ be a vector in $\mathbb{R}^{2}$ which does not lie on $\mathcal{L}$. For any vector $\mathbf{u}$, we define $\mathcal{L}_{\mathbf{u}}$ as the line through $\mathbf{u}$ in the direction $\mathbf{w}$. We now define the transformation $T$ which maps a vector $\mathbf{u}$ to the intersection of $\mathcal{L}_{\mathbf{u}}$ and $\mathcal{L}$. For
 
 $$
 \mathbf{v}=\begin{pmatrix}2\\1\end{pmatrix}\quad\text{and}\quad\mathbf{w}=\begin{pmatrix}-2\\1\end{pmatrix}
@@ -730,7 +730,7 @@ A shear transformation applied to a stack of cards.
 :url: https://embed.grasple.com/exercises/5eae3328-453b-4065-9829-be8acb10f0fa?id=70421
 :label: grasple_exercise_3_3_3
 :dropdown:
-:description: Give the standard matrix from a geometric desciption.
+:description: Give the standard matrix from a geometric description.
 
 ::::
 
@@ -739,7 +739,7 @@ A shear transformation applied to a stack of cards.
 :url: https://embed.grasple.com/exercises/cf49c839-9eee-4f7b-b459-cfe3edcf530b?id=70422
 :label: grasple_exercise_3_3_4
 :dropdown:
-:description: Give the standard matrix from a geometric desciption.
+:description: Give the standard matrix from a geometric description.
 
 ::::
 
@@ -748,7 +748,7 @@ A shear transformation applied to a stack of cards.
 :url: https://embed.grasple.com/exercises/aca8c030-4392-4e22-be38-2316f9c483c4?id=70425
 :label: grasple_exercise_3_3_5
 :dropdown:
-:description: Give the standard matrix from a geometric desciption.
+:description: Give the standard matrix from a geometric description.
 
 ::::
 

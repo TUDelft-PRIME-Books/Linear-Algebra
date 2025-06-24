@@ -342,7 +342,7 @@ For instance, if at time 0 the population in city $A$ amounts to 50 (thousand) a
 amounts to
 
 $$
-  0.9 \times 50 + 0.2 \times 100 = 55.
+  0.9 \times 50 + 0.2 \times 100 = 65.
 $$
 
 Likewise for city $B$.
@@ -423,7 +423,7 @@ $$
 ::::::{exercise}
 :label: Exc:LinTrafo:ImageofZeroVector
 
-Show that a linear transformation from $\mathbb{R}^n$ to $\mathbb{R}^m$ always sends the zero vector in $\R^n$ to the zero vector in $\R^m$.
+Show that a linear transformation from $\mathbb{R}^n$ to $\mathbb{R}^m$ always sends the zero vector $\mathbf{0}_n$ in $\R^n$ to the zero vector $\mathbf{0}_m$ in $\R^m$.
 <BR>
 Thus, if $ T:\mathbb{R}^n \to\mathbb{R}^m$ is a linear transformation, then $T(\mathbf{0}_n) = \mathbf{0}_m$.
 
@@ -1075,7 +1075,7 @@ $$
    \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}.
 $$
 
-We find that for an arbitray vector $\begin{pmatrix} x\\ y \end{pmatrix} = x\begin{pmatrix} 1\\ 0 \end{pmatrix}+y\begin{pmatrix} 0\\ 1 \end{pmatrix}$ it holds that
+We find that for an arbitrary vector $\begin{pmatrix} x\\ y \end{pmatrix} = x\begin{pmatrix} 1\\ 0 \end{pmatrix}+y\begin{pmatrix} 0\\ 1 \end{pmatrix}$ it holds that
 
 $$
   T\left(\begin{pmatrix} x\\ y \end{pmatrix}\right) =
@@ -1210,16 +1210,14 @@ $$
 \end{pmatrix}.
 $$
 
-So we find that the matrix $[T]$ of $T$ is given by
+So we find that the standard matrix $[T]$ of $T$ is given by
 
 $$
   [T] =
 \begin{pmatrix}
 1 & -1 & 0 \\   0 &2&3 \\ 1 & 1 & -1
-\end{pmatrix}
+\end{pmatrix}.
 $$
-
-is the standard matrix of $T$.
 
 ::::::
 
@@ -1228,7 +1226,7 @@ is the standard matrix of $T$.
 
 In the previous example we could have found the matrix just by inspection.
 
-For the slightly different transformation $T:\R \to \R$ given by
+For the slightly different transformation $T:\R^3 \to \R^3$ given by
 
 $$
    T:
@@ -1276,7 +1274,7 @@ $$
   S(\mathbf{y}) = B\mathbf{y} =
 \begin{pmatrix}
  1&0 &1 \\ 1 & -1 &2  \\ -1&1&-3
-\end{pmatrix} \mathbf{x}
+\end{pmatrix} \mathbf{y}.
 $$
 
 From {prf:ref}`Prop:LinTrafo:CompositionLintrafos` we know that the composition
@@ -1343,7 +1341,7 @@ So the matrix of $S\circ T$ becomes
 $$
   [S\circ T] \,= \,
 \begin{pmatrix}
-S\circ T(\mathbf{e_1})&S\circ T(\mathbf{e_2})
+S\circ T(\mathbf{e}_1)&S\circ T(\mathbf{e}_2)
 \end{pmatrix} \,\,=\,\,
 \begin{pmatrix}
  2 &2 \\ 0&-2 \\ -1&2
@@ -1397,7 +1395,7 @@ $$
 :url: https://embed.grasple.com/exercises/be6a768d-c60d-4ed6-81a7-5dea71b4a1a5?id=70375
 :label: grasple_exercise_3_1_4
 :dropdown:
-:description: To find image of two vectors under $T(\vect{x}) = A\vect{x}$.
+:description: To find the image of two vectors under $T(\vect{x}) = A\vect{x}$.
 ::::::
 
 ::::::{grasple}
@@ -1405,7 +1403,7 @@ $$
 :url: https://embed.grasple.com/exercises/c8bb24f6-d357-4571-adb3-39ea0fa9e4ee?id=70395
 :label: grasple_exercise_3_1_5
 :dropdown:
-:description: For linear map $T$, find $T(c\vect{u})$ and $T(\vect{u}+\vect{v})$ if $T(\vect{u})$ and $T(\vect{v})$ are given.
+:description: For a linear map $T$, find $T(c\vect{u})$ and $T(\vect{u}+\vect{v})$ if $T(\vect{u})$ and $T(\vect{v})$ are given.
 ::::::
 
 ::::::{grasple}
@@ -1413,7 +1411,7 @@ $$
 :url: https://embed.grasple.com/exercises/93048f7c-b755-4445-a532-949f34136096?id=70398
 :label: grasple_exercise_3_1_6
 :dropdown:
-:description: For linear map $T:\R^2 \to \R^2$, find $T((x1,x2))$ if $T(\vect{e}_1)$ and $T(\vect{e}_2)$ are given.
+:description: For a linear map $T:\R^2 \to \R^2$, find $T((x_1,x_2))$ if $T(\vect{e}_1)$ and $T(\vect{e}_2)$ are given.
 ::::::
 
 ::::::{grasple}
@@ -1536,18 +1534,18 @@ $$
 :description: If $T(\vect{0}) = \vect{0}$, is $T$ (always) linear?
 ::::::
 
-::::::{grasple}
-:iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/3f992e7a-19e3-4b83-8d90-db86e323ea94?id=69296
-:label: grasple_exercise_3_1_22
-:dropdown:
-:description: To show that $T(\vect{0}) = \vect{0}$ for a linear transformation.
-::::::
+%::::::{grasple}
+%:iframeclass: dark-light
+%%:url: https://embed.grasple.com/exercises/3f992e7a-19e3-4b83-8d90-db86e323ea94?id=69296
+%:label: grasple_exercise_3_1_21
+%:dropdown:
+%:description: To show that $T(\vect{0}) = \vect{0}$ for a linear transformation.
+%::::::
 
 ::::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/94d618e0-de21-491c-ad44-8e29974e0303?id=71098
-:label: grasple_exercise_3_1_23
+:label: grasple_exercise_3_1_22
 :dropdown:
 :description: (T/F) If $\{\vect{v}_1,\vect{v}_2,\vect{v}_3\}$ is linearly dependent, then $\{T(\vect{v}_1),T(\vect{v}_2),T(\vect{v}_3)\}$ is also linearly dependent?
 ::::::
@@ -1555,7 +1553,7 @@ $$
 ::::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/f983b627-10c2-4dd6-a273-2a33e99d0ded?id=71101
-:label: grasple_exercise_3_1_24
+:label: grasple_exercise_3_1_23
 :dropdown:
 :description: (T/F) If $\{\vect{v}_1,\vect{v}_2,\vect{v}_3\}$ is linearly independent, then $\{T(\vect{v}_1),T(\vect{v}_2),T(\vect{v}_3)\}$ is also linearly independent?
 ::::::

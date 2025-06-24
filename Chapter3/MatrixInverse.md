@@ -585,7 +585,7 @@ We illustrate the proposition by an example.
 ::::::{prf:example}
 :label: Ex:MatrixInv:SolutionViaInverse
 
-Suppose the matrix $A$ and the vectors $\mathbf{b}_1$ and $\mathbf{b}_1$ are given by
+Suppose the matrix $A$ and the vectors $\mathbf{b}_1$ and $\mathbf{b}_2$ are given by
 
 $$
  A=\begin{pmatrix}1 & 2 \\ 3 & 4 \end{pmatrix}, \quad
@@ -1001,8 +1001,8 @@ $$
 \left(\begin{array}{rrr|rrr}1 &  0 & 0  & 1/2 & -1 & 3/4\\0 & -2 & 0  & -1 & 6 & -5/2\\0 & 0  & -2  & 0 & -2 & 1
 \end{array}\right)\begin{array}{l}
 [R_1] \\
-{[(-\nicefrac12)R_1]} \\
-{[(-\nicefrac12)R_2]}
+{[(-\nicefrac12)R_2]} \\
+{[(-\nicefrac12)R_3]}
 \end{array}
 $$
 

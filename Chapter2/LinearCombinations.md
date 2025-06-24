@@ -18,7 +18,7 @@ where $x_1, \ldots, x_n$ are real numbers, is called a **linear combination** of
 ::::{prf:example}
 :label: Ex:LinearCombinations
 
-The vectors $\mathbf{v}_1$ and $\mathbf{v}_2$ are two vectors in the plane $\mathbb{R}^2$. As we can see in {numref}`Figure  %s <Fig:LinearCombinations:LinearCombinations>`, the vector $\mathbf{u}$ is a linear combination of $\mathbf{v}_1$ and $\mathbf{v}_2$ since it can be written as $\mathbf{u}=2\mathbf{v}_1+\mathbf{v}_2$. The vector $\mathbf{w}$ is a linear combination of these two vectors as well. It can be written as $\mathbf{w}=-3\mathbf{v}_1+2\mathbf{v}_2$.
+The vectors $\mathbf{v}_1$ and $\mathbf{v}_2$ are two vectors in the plane $\mathbb{R}^2$. As we can see in {numref}`Figure  %s <Fig:LinearCombinations:LinearCombinations>`, the vector $\mathbf{u}$ is a linear combination of $\mathbf{v}_1$ and $\mathbf{v}_2$ since it can be written as $\mathbf{u}=2\mathbf{v}_1+2\mathbf{v}_2$. 
 
 ```{applet}
 :url: linear_combinations/linearcombinations
