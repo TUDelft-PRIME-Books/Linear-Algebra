@@ -152,7 +152,7 @@ Likewise, for vectors $\mathbf{v}=\begin{pmatrix} a_{1}\\a_{2}\\a_{3}\end{pmatri
 
 The derivation is completely analogous to the one above, only now we have one extra term.
 So to check 'algebraically' whether two vectors are perpendicular we just have to compute $a_1b_1 +a_2b_2\, (\,+\,a_3b_3\,)$
-and see whether this is equal to 0.
+and see whether this is equal to $0$.
 
 This expression is called the _dot product_ (or _inner product_) of the vectors $\mathbf{v}$ and $\mathbf{w}$. We denote it by $\mathbf{v}\ip\mathbf{w}$.
 Note that the dot product of a general vector $\mathbf{v}=\begin{pmatrix} a_{1}\\a_{2}\\a_{3}\end{pmatrix}$ in $\mathbb{R}^3$ with itself gives
@@ -297,7 +297,7 @@ $$
   \mathbf{v}\ip\mathbf{v} =  a_1^2+a_2^2 + \ldots + a_n^2 = 0
 $$
 
-if and only if all the squares are 0, which only happens if each entry $a_i$ is equal to zero, that is, if $\mathbf{v} = \mathbf{0}$.
+if and only if all the squares are $0$, which only happens if each entry $a_i$ is equal to zero, that is, if $\mathbf{v} = \mathbf{0}$.
 :::
 
 :::{exercise}
@@ -918,7 +918,7 @@ With the tools so far we can define a notion that comes in handy later.
 :::{prf:definition}
 :label: Dfn:InnerProduct:UnitVector
 
-A **unit vector** is a vector of norm 1.
+A **unit vector** is a vector of norm $1$.
 
 Moreover, for any nonzero vector $\mathbf{v}$,
 the vector
@@ -1203,8 +1203,7 @@ $$
 
 :::
 
-With this inequality established, the Triangle Inequality
-{eq}`Item:Prop:InnerProduct:TriangleInequality` is easily proved. Let's repeat it, and prove it.
+With this inequality established, the Triangle Inequality in Equation {eq}`Item:Prop:InnerProduct:TriangleInequality` is easily proved. Let's repeat it, and prove it.
 
 :::{prf:theorem}
 :label: Thm:InnerProduct:TriangleInequality
@@ -1233,7 +1232,7 @@ $$
   \end{array}
 $$
 
-and this, apart from the factor 2, is the Cauchy-Schwarz Inequality.
+and this, apart from the factor $2$, is the Cauchy-Schwarz Inequality.
 
 :::
 
@@ -1321,7 +1320,7 @@ $$
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:InnerProduct:DotProdGeometric`
 :class: tudproof
 
-We will derive formula {eq}`Eq:InnerProduct:GeometricDefinition`.
+We will derive Equation {eq}`Eq:InnerProduct:GeometricDefinition`.
 Assume that $\mathbf{v}$ and $\mathbf{w}$ are nonzero vectors.
 Recall the formula of the orthogonal projection of $\mathbf{w}$ onto $\mathbf{v}$,
 
@@ -1460,7 +1459,7 @@ $$
 :::{prf:example}
 :label: Ex:InnerProduct:AngleInRn
 
-Let $\mathbf{e_1}$ be the vector in $\mathbb{R}^n$ with first entry equal to 1 and all other entries equal to 0, and $\mathbf{v}$ be the vector with all entries equal to 1. We find the angle between $\mathbf{e}_1$ and $\mathbf{v}$ in all cases $n = 2, 3, 4,\ldots$
+Let $\mathbf{e_1}$ be the vector in $\mathbb{R}^n$ with first entry equal to $1$ and all other entries equal to $0$, and $\mathbf{v}$ be the vector with all entries equal to $1$. We find the angle between $\mathbf{e}_1$ and $\mathbf{v}$ in all cases $n = 2, 3, 4,\ldots$
 
 For each $n\geq2$ we write $\varphi_n = \angle(\mathbf{e}_1,\mathbf{v})$. Then
 

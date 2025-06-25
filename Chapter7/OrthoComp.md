@@ -141,7 +141,7 @@ If $\vect{v}$ is both in $V$ and $V^{\bot}$, then $\vect{v}\ip\vect{v}=0$ so $\v
 
 :::
 
-As we have seen in {numref}`Sec:SubspacesRn`, the column space and null space of any $n\times m$ matrix are subspaces of $\R^{n}$ and $\R^{m}$, respectively. It turns out that the transposition ${}^{T}$ and the orthogonal complement ${}^{\bot}$ relate these two spaces to each other.
+As we have seen in {numref}`Sec:SubspacesRn`, the column space and null space of any $n\times m$-matrix are subspaces of $\R^{n}$ and $\R^{m}$, respectively. It turns out that the transposition ${}^{T}$ and the orthogonal complement ${}^{\bot}$ relate these two spaces to each other.
 
 :::{prf:proposition}
 :label: Prop:OrthoComp:OrthoComplementNulA

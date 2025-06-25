@@ -73,7 +73,7 @@ $$
 $$
 
 
-for the solution  $ \tilde{\vect{y}}$  of system {eq}`Eq:LUDecomp:Lyb`.  For this solution $ \tilde{\vect{x}}$ we then have
+for the solution  $ \tilde{\vect{y}}$  of the system in Equation {eq}`Eq:LUDecomp:Lyb`.  For this solution $ \tilde{\vect{x}}$ we then have
 
 $$
    A \tilde{\vect{x}} = L\,U\, \tilde{\vect{x}} = L(U\tilde{\vect{x}})= L\tilde{\vect{y}} = \vect{b}. 
@@ -213,7 +213,7 @@ In the next subsection we will address the questions of whether an $LU$ decompos
 ::::::{prf:definition}
 :label: Def:LUdecomp:DefinitionLU
 
-Let $A$ be an $n\times n$ matrix. An  **$LU$ decomposition**  of $A$ is a factorisation of the type
+Let $A$ be an $n\times n$-matrix. An  **$LU$ decomposition**  of $A$ is a factorisation of the type
 
 $$
 A=LU
@@ -418,7 +418,7 @@ The following algorithm describes this 'shortcut' to find an $LU$ decomposition.
 ::::::{prf:algorithm}
 :label: Alg:LUdecomp:LUalgorithm
 
-Suppose the $n\times n$ matrix $A$ can be row reduced top-down to the echelon matrix $U$. If the numbers $m_{jk}$ denote the multiples of the $k$th row that are subtracted from the rows below it in the $k$th step (so $1 \leq k < j \leq n$), &nbsp; then 
+Suppose the $n\times n$-matrix $A$ can be row reduced top-down to the echelon matrix $U$. If the numbers $m_{jk}$ denote the multiples of the $k$th row that are subtracted from the rows below it in the $k$th step (so $1 \leq k < j \leq n$), &nbsp; then 
 
 $$
    A = LU, \quad \text{for} \,\,
@@ -545,7 +545,7 @@ We see the multipliers nicely fall into place!
 
 ::::::
 
-Here is an example where we apply the algorithm without further ado to a $4 \times 4$ matrix.
+Here is an example where we apply the algorithm without further ado to a $4 \times 4$-matrix.
 
 ::::::{prf:example} 
 :label: Ex:LUdecomp:LUviaAlgorithm
@@ -660,7 +660,7 @@ Here's one to try for yourself.
 :url: https://embed.grasple.com/exercises/089f5e1e-3e96-4be3-9c9c-3422a847ec72?id=109255
 :label: grasple_exercise_3_6_T2
 :dropdown:
-:description: To compute the $LU$ decomposition of a 3x3 matrix $A$.
+:description: To compute the $LU$ decomposition of a $3\times3$-matrix $A$.
 
 ::::::
 
@@ -670,7 +670,7 @@ We collect a few properties of triangular matrices that have their value of thei
 ::::::{prf:proposition}
 :label: Prop:LUdecomp:L-properties
 
-Suppose $A$ and $B$ are lower triangular $n \times n$ matrices with $1$s on their diagonals.
+Suppose $A$ and $B$ are lower triangular $n \times n$-matrices with $1$s on their diagonals.
 Then the following properties hold.
 
 ::::{latexlist}
@@ -766,7 +766,7 @@ that  {prf:ref}`Alg:LUdecomp:LUalgorithm`  works can have a look at the followin
 :::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LUdecomp:Existence`
 :class: tudproof, dropdown
 
-Suppose $A$ is an $n\times n$ matrix that can be row reduced top down to an  echelon matrix $U$ (which will then be an upper triangular). We can row reduce $A$ from top to bottom, where we use the same form as in {prf:ref}`Ex:LUdecomp:SecondLUSecondLook`. 
+Suppose $A$ is an $n\times n$-matrix that can be row reduced top down to an  echelon matrix $U$ (which will then be an upper triangular). We can row reduce $A$ from top to bottom, where we use the same form as in {prf:ref}`Ex:LUdecomp:SecondLUSecondLook`. 
 For instance the first two steps are
 
 
@@ -873,7 +873,7 @@ The crucial thing is that in the product $L_{n-1}L_{n-2}\cdots L_2L_1$  in this 
 
 ::::
 
-The pattern is clear, we skip the technical details to prove it for $n\times n$ matrices. 
+The pattern is clear, we skip the technical details to prove it for $n\times n$-matrices. 
 
 
 To prove the converse, assume that $A$ has an $LU$ decomposition, i.e.,
@@ -911,7 +911,7 @@ L^{-1} = \left(\begin{array}{rrrrr}
         \end{array} \right).
 $$ 
 
-As in the proof of the first half of this proof (cf., {eq}`Eq:LUdecomp:multipliers`),  $L^{-1}$ can be factorised as       
+As in the proof of the first half of this proof (cf., Equation {eq}`Eq:LUdecomp:multipliers`),  $L^{-1}$ can be factorised as       
 
 $$
   L_1L_2\cdots L_{n-1} =
@@ -993,7 +993,7 @@ it follows that
 ::::
 
 From {prf:ref}`Prop:LUdecomp:L-properties` we know that $L_2^{-1}$ is a lower triangular matrix with $1$s on the diagonal,
-and that the product $L_2^{-1}L_1$ is also of this form. At the same time the product $U_2U_1^{-1}$ must be an upper triangular matrix with $1$s on its diagonal.  Then {eq}`Eq:LUdecomp:EqualityL1L2U1U2` implies that
+and that the product $L_2^{-1}L_1$ is also of this form. At the same time the product $U_2U_1^{-1}$ must be an upper triangular matrix with $1$s on its diagonal.  Then Equation {eq}`Eq:LUdecomp:EqualityL1L2U1U2` implies that
 
 $$
  L_2^{-1}L_1 = U_2U_1^{-1} = I,
@@ -1163,7 +1163,7 @@ The generalisation of {prf:ref}`Prop:LUdecomp:Existence` to non-square matrices 
 ::::::{prf:proposition}
 :label: Prop:LUdecomp:ExistenceNonsquare
 
-An $m\times n$ matrix $A$, with $m \leq n$ can be written as $A = LU$, with 
+An $m\times n$-matrix $A$, with $m \leq n$ can be written as $A = LU$, with 
 
 <ul>
 
@@ -1208,7 +1208,7 @@ Moreover, if the rows of $A$ are linearly independent the matrices $L$ and $U$ a
 
 ::::::
 
-A similar proposition holds for $m \times n$ matrices with $m > n$.  However, in this case the systems
+A similar proposition holds for $m \times n$-matrices with $m > n$.  However, in this case the systems
 $A\vect{x} = \vect{b}$ are inconsistent for most vectors $\vect{b}$, and then other techniques come into play  (e.g., see {numref}`SubSec:LeastSquares:LS-solutions`).
 
 In the remainder of this subsection we address the next best thing we can do in case a matrix does not have an $LU$ decomposition.
@@ -1239,7 +1239,7 @@ $$
 $$
 
 We need a row swap to bring the last matrix to echelon form.  The key idea is to **perform all the row exchanges first** and **then add multiples of  rows (top-down) to other rows** to obtain an echelon form.  
-Here the one row exchange, swapping row 2 and row 3,  is captured by the matrix
+Here the one row exchange, swapping row $2$ and row $3$,  is captured by the matrix
 
 $$
    P = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & 1 & 0  \end{pmatrix}.
@@ -1285,7 +1285,7 @@ concept and derive some of its properties.
 ::::::{prf:definition}
 :label: Def:LUdecomp:PermutationMatrix
 
-A **permutation matrix** is an $n \times n$ matrix $P$ with only entries $0$ and $1$ in such a way that each row and each column contain exactly one $1$.
+A **permutation matrix** is an $n \times n$-matrix $P$ with only entries $0$ and $1$ in such a way that each row and each column contain exactly one $1$.
 
 ::::::
 
@@ -1303,7 +1303,7 @@ Two $4\times 4$ permutation matrices are
            \end{pmatrix}
 ::::
 
-Note that for an arbitrary $4 \times 4$ matrix $A$ we have
+Note that for an arbitrary $4 \times 4$-matrix $A$ we have
 
 $$
   P_1 A = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ \class{blue}{0} & \class{blue}{0} & \class{blue}{0} & \class{blue}{1} \\ \class{red}{0} & \class{red}{0} & \class{red}{1} & \class{red}{0} 
@@ -1373,7 +1373,7 @@ And the interested reader may open the proof below it.
 ::::::{prf:example}
 :label: Ex:LUdecomp:PermutationMatrices
 
-For the matrices $P_1$ and $P_2$ from {eq}`Eq:LUdecomp:P1andP2`  we have
+For the matrices $P_1$ and $P_2$ from Equation {eq}`Eq:LUdecomp:P1andP2`  we have
 
 $$
   P_1P_2 = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 
@@ -1438,7 +1438,7 @@ the result immediately follows.
 ::::::{prf:theorem} Existence of a $PLU$ Decomposition
 :label: LUDecomp:existencePLU
 
-Suppose that $A$ is an $m\times n$ matrix with real coefficients, and let $m \leq n$. Then there exist a permutation matrix $P$, a lower triangular matrix $L$ and an echelon matrix $U$ such that
+Suppose that $A$ is an $m\times n$-matrix with real coefficients, and let $m \leq n$. Then there exist a permutation matrix $P$, a lower triangular matrix $L$ and an echelon matrix $U$ such that
 
 $$ 
   PA = LU. 
@@ -1548,7 +1548,7 @@ To be filled in later.
 :url: https://embed.grasple.com/exercises/4ef9b6fe-e204-44e7-9463-3e1c3537a10b?id=82913
 :label: grasple_exercise_3_6_3
 :dropdown:
-:description: To compute the $LU$ decomposition of a 2x2 matrix $A$.
+:description: To compute the $LU$ decomposition of a $2\times2$-matrix $A$.
 
 ::::::
 
@@ -1557,7 +1557,7 @@ To be filled in later.
 :url: https://embed.grasple.com/exercises/b167deea-922f-4a80-9b3e-7cbdf16f023f?id=106332
 :label: grasple_exercise_3_6_4
 :dropdown:
-:description: To compute the $LU$ decomposition of a 3x3 matrix $A$.
+:description: To compute the $LU$ decomposition of a $3\times3$-matrix $A$.
 
 ::::::
 
@@ -1567,7 +1567,7 @@ To be filled in later.
 :url: https://embed.grasple.com/exercises/9708bce4-5c01-4486-8f44-7ea3a5157950?id=82914
 :label: grasple_exercise_3_6_5
 :dropdown:
-:description: To compute the $LU$ decomposition of a 3x3 matrix $A$ and use it to solve $A\vect{x} = \vect{b}$.
+:description: To compute the $LU$ decomposition of a $3\times3$-matrix $A$ and use it to solve $A\vect{x} = \vect{b}$.
 
 ::::::
 
@@ -1577,7 +1577,7 @@ To be filled in later.
 :url: https://embed.grasple.com/exercises/d7ec03b4-32c4-4c3e-8c1e-2714878ef558?id=82917
 :label: grasple_exercise_3_6_6
 :dropdown:
-:description: To compute the $LU$ decomposition of a 3x3 matrix $A$ and use it to solve $A\vect{x} = \vect{b}$.
+:description: To compute the $LU$ decomposition of a $3\times3$-matrix $A$ and use it to solve $A\vect{x} = \vect{b}$.
 
 ::::::
 
@@ -1607,7 +1607,7 @@ To be filled in later.
 :url: https://embed.grasple.com/exercises/5bb6dcac-4575-4953-bb3a-c0e8d4594798?id=82928
 :label: grasple_exercise_3_6_10
 :dropdown:
-:description: To compute the $LU$ decomposition of 3x4 matrix $A$ and use it to solve $A\vect{x} = \vect{b}$.
+:description: To compute the $LU$ decomposition of $3\times4$-matrix $A$ and use it to solve $A\vect{x} = \vect{b}$.
 
 ::::::
 
@@ -1616,7 +1616,7 @@ To be filled in later.
 :url: https://embed.grasple.com/exercises/9a2cb913-3462-4832-8e33-9f4b878f1da7?id=106804
 :label: grasple_exercise_3_6_11
 :dropdown:
-:description: To compute a $PLU$ decomposition of a 3x3 matrix.
+:description: To compute a $PLU$ decomposition of a $3\times3$-matrix.
 
 ::::::
 
@@ -1636,7 +1636,7 @@ that are necessary for solving a problem. By arithmetic operations we will take 
 
 Let us first compute this number when we solve the (square) linear system $A\mathbf{x}=\mathbf{b}$ by taking the augmented matrix $( A | \vect{b})$, find an echelon form and then use  backward substitution. Let us suppose that the matrix $A$ is invertible and possesses an $LU$ decomposition.
 
-In the worst-case scenario, for a $3\times 3$ matrix $A$, (so a $3\times 4$ augmented matrix), we need the following number of arithmetic operations:
+In the worst-case scenario, for a $3\times 3$-matrix $A$, (so a $3\times 4$ augmented matrix), we need the following number of arithmetic operations:
 
 <ul>
 <li>
@@ -1645,7 +1645,7 @@ To convert the components $a_{21}$ and $a_{31}$ to a zero value, we need to <BR>
 compute two multipliers $m_{21}$ and $m_{31}$ (2 divisions), then we need to <BR>
 multiply each component of the first row, starting at $a_{12}$, by each $m_{i1}$ (this happens twice, so $2\times 3=6$ products) and then we need to <BR>
 subtract the resulting values to the corresponding components in each row ($2\times 3=6$ subtractions). <BR>
-Therefore, we need a total of $14$ arithmetic operations (8 products/divisions and 6 additions/subtractions).
+Therefore, we need a total of $14$ arithmetic operations ($8$ products/divisions and $6$ additions/subtractions).
 
 </li>
 </ul>
@@ -1665,14 +1665,14 @@ $$
 <li>
 
 To convert the component $a_{32}$ to a zero value, we need to compute the multiplier  $m_{32}$
-(one division), then we need to multiply each component of the second row starting at $a_{23}$ (this asks for 2 products), and then we need to subtract the resulting values to the corresponding components in the third row (2 subtractions). This gives 5 arithmetic operations.
+(one division), then we need to multiply each component of the second row starting at $a_{23}$ (this asks for $2$ products), and then we need to subtract the resulting values to the corresponding components in the third row ($2$ subtractions). This gives $5$ arithmetic operations.
 
 </li>
 </ul>
 
 
 
-So just to bring the augmented matrix to an echelon form requires 19 arithmetic operations (11 multiplications/divisions and 8 additions/subtractions).
+So just to bring the augmented matrix to an echelon form requires $19$ arithmetic operations (11 multiplications/divisions and $8$ additions/subtractions).
 
 
 
@@ -1713,25 +1713,25 @@ $$
   y_1 = b_1, \quad y_2 = b_2 - \ell_{21}y_1, \quad y_3 = b_3 - \ell_{31}y_1 - \ell_{32}y_2
 $$
 
-This totals 6 arithmetic operations.
+This totals $6$ arithmetic operations.
 
 </li>
 <li>
 
-To solve $U\mathbf{x}=\mathbf{y}$ we use backward substitution, and we have just seen that it requires 9 arithmetic operations.  (Which is 3 more than with the forward substitution because of the three divisions by the pivots $u_{ii}$.)
+To solve $U\mathbf{x}=\mathbf{y}$ we use backward substitution, and we have just seen that it requires $9$ arithmetic operations.  (Which is $3$ more than with the forward substitution because of the three divisions by the pivots $u_{ii}$.)
 
 </li>
 </ul>
 
 So when the matrix $A$ is already $LU$ factorised, the number of operations required to solve the system is significantly lower. In the situation just analysed we found $15$ versus $28$.
 
-Similar computations  for a non-singular $n\times n$ matrix $A$ leads to the following results.
+Similar computations  for a non-singular $n\times n$-matrix $A$ leads to the following results.
 
 
 ::::::{prf:proposition}
 :label: Prop:LUdecomp:CountOperationsLU
 
-Suppose $A$ is an invertible $n\times n$ matrix and $\vect{b}$ an arbitrary vector in $\R^n$.
+Suppose $A$ is an invertible $n\times n$-matrix and $\vect{b}$ an arbitrary vector in $\R^n$.
 
 :::::{latexlist}
 :enumerated: true
@@ -1837,7 +1837,7 @@ The following proposition provides the answer.
 ::::::{prf:proposition}
 :label: Prop:LUdecomp:CountOperationsInverse
 
-Suppose $A$ is an invertible $n\times n$ matrix and $\vect{b}$ an arbitrary vector in $\R^n$.
+Suppose $A$ is an invertible $n\times n$-matrix and $\vect{b}$ an arbitrary vector in $\R^n$.
 
 :::::{latexlist}
 :enumerated: true
@@ -1966,7 +1966,7 @@ Such systems $A\vect{x} = \vect{b}$ for instance appear when (partial) different
 :label: Def:LUdecomp:Tridiag
 
 A **band matrix**  of **width** $d \geq 0$ is a matrix where only the entries  within a  distance $d$ from the diagonal are nonzero. So,  $a_{ij} = 0$  if  $|i-j|>d$. 
-A **tridiagonal** matrix  $A$  is a band matrix of width 1.
+A **tridiagonal** matrix  $A$  is a band matrix of width $1$.
 
 ::::::
 
@@ -1986,7 +1986,7 @@ $$
    \end{pmatrix}.
 $$
 
-$A$ is a tridiagonal matrix, matrix $B$ is a band matrix of width 2, and the third
+$A$ is a tridiagonal matrix, matrix $B$ is a band matrix of width $2$, and the third
 matrix is both upper triangular and tridiagonal.
 
 ::::::

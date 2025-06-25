@@ -9,7 +9,7 @@ Assume we have a certain population divided into $n$ classes, say, by the brand 
 :::{prf:definition}
 :label: Def:MarkovChains:ProbVect
 
-We call a vector $\vect{v}$ in $\R^{n}$ a **probability vector** if the sum of its entries is 1 and none of the entries are negative.
+We call a vector $\vect{v}$ in $\R^{n}$ a **probability vector** if the sum of its entries is $1$ and none of the entries are negative.
 
 :::
 
@@ -150,7 +150,7 @@ Consider again the simple model of {prf:ref}`Ex:MarkovChains:MarkovChain`. What 
 :::{prf:Definition}
 :label: Def:MarkovChains:SteadyState
 
-Let $P$ be a stochastic matrix. A probability vector $\vect{x}$ is called a **steady state** for $P$ if $P\vect{x}=\vect{x}$. That is, if it is an eigenvector with eigenvalue 1.
+Let $P$ be a stochastic matrix. A probability vector $\vect{x}$ is called a **steady state** for $P$ if $P\vect{x}=\vect{x}$. That is, if it is an eigenvector with eigenvalue $1$.
 
 :::
 
@@ -190,7 +190,7 @@ P=\begin{pmatrix}
 \end{pmatrix}
 $$
 
-from {prf:ref}`Prop:MarkovChains:StoMat1EV`. With standard computations, we find that the eigenspace of eigenvalue 1 is spanned by
+from {prf:ref}`Prop:MarkovChains:StoMat1EV`. With standard computations, we find that the eigenspace of eigenvalue $1$ is spanned by
 
 $$
 \vect{v}=\begin{pmatrix}
@@ -304,7 +304,7 @@ What makes this Markov chain behave so weirdly is the fact that any two nodes ar
 :name: Fig:MarkovChains:ExtraLoop
 :class: dark-light
 
-The problem from {prf:ref}`Ex:MarkovChains:MarkovChainonNodes` with an extra loop. Note that the outgoing arrows from node 1 now have different probabilities.
+The problem from {prf:ref}`Ex:MarkovChains:MarkovChainonNodes` with an extra loop. Note that the outgoing arrows from node $1$ now have different probabilities.
 
 :::
 
@@ -409,7 +409,7 @@ so the distribution after $50$ moves is already quite close to the steady state.
 :url: https://embed.grasple.com/exercises/ae1aee60-cada-4419-b0f1-dd1f7d4b4e13?id=  
 :label: grasple_exercise_9_2_1
 :dropdown:
-:description: To find the steady state of (the Markov chain with) 3x3 probability matrix $P$.
+:description: To find the steady state of (the Markov chain with) $3\times3$ probability matrix $P$.
 
 ::::
 
@@ -418,7 +418,7 @@ so the distribution after $50$ moves is already quite close to the steady state.
 :url: https://embed.grasple.com/exercises/c5c526e8-2a6a-4714-a99f-4a956bbfe0f0?id=110857
 :label: grasple_exercise_9_2_2
 :dropdown:
-:description: To find the steady state of 3x3 probability matrix $P$.
+:description: To find the steady state of $3\times3$ probability matrix $P$.
 
 ::::
 
@@ -427,7 +427,7 @@ so the distribution after $50$ moves is already quite close to the steady state.
 :url: https://embed.grasple.com/exercises/e2a616ee-2bc6-4e2b-8e04-2161ae75e3f0?id=110321
 :label: grasple_exercise_9_2_3
 :dropdown:
-:description: To find the steady state of 3x3 probability matrix $P$.
+:description: To find the steady state of $3\times3$ probability matrix $P$.
 
 ::::
 
@@ -436,7 +436,7 @@ so the distribution after $50$ moves is already quite close to the steady state.
 :url: https://embed.grasple.com/exercises/6b2f6fe5-72d8-48c0-bc12-97afeedc04bd?id=110861
 :label: grasple_exercise_9_2_4
 :dropdown:
-:description: Steady state + high powers of 2x2 probability matrix $P$.
+:description: Steady state + high powers of $2\times2$ probability matrix $P$.
 
 ::::
 
@@ -445,7 +445,7 @@ so the distribution after $50$ moves is already quite close to the steady state.
 %:url: https://embed.grasple.com/exercises/44508dbb-5a1f-42d6-918b-fc7c464b4e0d?id=110368
 %:label: grasple_exercise_9_2_5
 %:dropdown:
-%:description: To construct a Markov Chain from a cycling story
+%:description: To construct a Markov Chain from a cycling story.
 %
 % ::::
 

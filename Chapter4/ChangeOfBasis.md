@@ -114,7 +114,7 @@ $$
 So, we have a linear combination of the vectors $\vect{b}_i$ equal to the zero vector $\vect{0}$.
 
 From the linear independence of the vectors $\vect{b}_1, \vect{b}_2,\ldots,\vect{b}_m$ it then follows that all the coefficients
-$(c_i-d_i)$ must be 0. Thus we find
+$(c_i-d_i)$ must be $0$. Thus we find
 
 $$
    (c_1-d_1) = 0, \quad \ldots\,,  \quad  (c_m-d_m) = 0,
@@ -363,7 +363,7 @@ $$
    P_{\mc{B}} = (\,\vect{b}_1\,\,\vect{b}_2\,\,\ldots\,\,\vect{b}_n\,).
 $$
 
-This is an $n \times n$ matrix with $n$ linearly independent columns, so it is an invertible matrix.
+This is an $n \times n$-matrix with $n$ linearly independent columns, so it is an invertible matrix.
 
 ::::
 
@@ -455,7 +455,7 @@ $$
 
 In this way we have expressed everything into coordinates with respect to the standard bases $\mc{E}$ and $\mc{E}'$ for $\R^n$ and $\R^m$ respectively.
 
-We will see that formula {eq}`Eq:ChangeOfBasis:StandardMatrix` can be generalised almost automatically to arbitrary bases for $\R^n$ and $\R^m$.
+We will see that Equation {eq}`Eq:ChangeOfBasis:StandardMatrix` can be generalised almost automatically to arbitrary bases for $\R^n$ and $\R^m$.
 
 ::::{prf:proposition}
 :label: Prop:ChangeOfBasis:MatrixOfTrafo
@@ -503,7 +503,7 @@ Now we take the coordinate vectors with respect to basis $\mc{C}$:
 
 (See {numref}`Exc:ChangeOfBasis:LinearityOfCoords`.)
 
-Noting that the term on the right side of Equation {eq}`Eq:ChangeOfBasis:LinearityCoords` is a linear combination of $m$-vectors, we can write the identity as
+Noting that the term on the right-hand side of Equation {eq}`Eq:ChangeOfBasis:LinearityCoords` is a linear combination of $m$-vectors, we can write the identity as
 
 $$
     \begin{array}{rcl}
@@ -680,7 +680,7 @@ $$
   \left\{\vect{b}_1, \vect{b}_2 \right\} = \left\{ \begin{pmatrix} 2 \\ 0  \end{pmatrix}, \begin{pmatrix} -1 \\ \sqrt{3}  \end{pmatrix} \right\}.
 $$
 
-Note that $\vect{b}_1$ and $ \vect{b}_2$ are two vectors of length 2 subtending an angle
+Note that $\vect{b}_1$ and $ \vect{b}_2$ are two vectors of length $2$ subtending an angle
 $\frac23\pi$. See {numref}`Figure %s <Fig:ChangeOfBasis-TriangularGrid>`.
 The vector $\vect{b}_1+\vect{b}_2 = \begin{pmatrix} 1 \\ \sqrt{3}  \end{pmatrix}$, is also indicated in the figure.
 

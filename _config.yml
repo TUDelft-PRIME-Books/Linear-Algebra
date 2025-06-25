@@ -30,6 +30,7 @@ parse:
     myst_heading_anchors : 5
 sphinx:
   config:
+    inverter_all: false
     sphinx_indexed_defs_indexed_nodes: ['strong']
     html_theme_options:
       repository_url: "https://gitlab.ewi.tudelft.nl/prime/openlabook"
@@ -104,6 +105,7 @@ sphinx:
     parentheses_list: _ext/
     latexlist: _ext/
   extra_extensions:
+    - sphinx_image_inverter
     - sphinx_proof
     - sphinx_togglebutton
     - sphinx_exercise

@@ -92,7 +92,7 @@ All three examples lead to so-called _discrete dynamical systems_. The definitio
 ::::{prf:definition}
 :label: Def:DynSystDiscr:DiscreteDynSyst
 
-Suppose $A$ is an $n \times n$ matrix, and $\vect{s}$ a vector in $\R^n$.
+Suppose $A$ is an $n \times n$-matrix, and $\vect{s}$ a vector in $\R^n$.
 
 The **discrete dynamical system** with matrix $A$ and _initial state_ $\vect{s}$ is the process described by
 
@@ -229,7 +229,7 @@ $$
 
 ::::
 
-From Equation {eq}`Eq:DynSystDiscrete:GenSolDiagble` it follows that if **all** eigenvalues have an absolute value smaller than 1, **all** solutions will approach the origin $\vect{0}$ if $k \to \infty$. So then the origin is asymptotically stable.
+From Equation {eq}`Eq:DynSystDiscrete:GenSolDiagble` it follows that if **all** eigenvalues have an absolute value smaller than $1$, **all** solutions will approach the origin $\vect{0}$ if $k \to \infty$. So then the origin is asymptotically stable.
 
 The following proposition is an almost immediate consequence of Equation {eq}`Eq:DynSystDiscrete:GenSolDiagble`.
 
@@ -299,8 +299,8 @@ $$
 
 if $k \to \infty$. This means that the system is _unstable_.
 
-If the largest eigenvalue has absolute value 1, then we can again resort to
-Equation {eq}`Eq:DynSystDiscrete:GenSolDiagble` to conclude that all sequences will remain bounded. Furthermore, starting from an eigenvector $\mathbf{v}$ for an eigenvalue of absolute value 1 it is seen that the process will not converge to the zero vector.
+If the largest eigenvalue has absolute value $1$, then we can again resort to
+Equation {eq}`Eq:DynSystDiscrete:GenSolDiagble` to conclude that all sequences will remain bounded. Furthermore, starting from an eigenvector $\mathbf{v}$ for an eigenvalue of absolute value $1$ it is seen that the process will not converge to the zero vector.
 
 ::::
 
@@ -309,10 +309,10 @@ Equation {eq}`Eq:DynSystDiscrete:GenSolDiagble` to conclude that all sequences w
 
 Statement i. and ii. in {prf:ref}`Prop:DynSystDiscrete:DiagCase2` still hold in the case of repeated eigenvalues or complex eigenvalues. For complex eigenvalues $|\lambda_i|$ denotes the modulus of the number $\lambda_i$.
 
-Thus, if the matrix has the (possibly complex) eigenvalues $\lambda_1, \ldots, \lambda_n$, the origin is an asymptotically stable point if all $|\lambda_i|$ are smaller than 1, and the origin is an unstable point if at least one of the eigenvalues has a modulus greater than 1.
+Thus, if the matrix has the (possibly complex) eigenvalues $\lambda_1, \ldots, \lambda_n$, the origin is an asymptotically stable point if all $|\lambda_i|$ are smaller than $1$, and the origin is an unstable point if at least one of the eigenvalues has a modulus greater than $1$.
 
 The argument for a matrix with a repeated eigenvalue that does not provide a complete set of eigenvectors becomes more involved, as we cannot use Equation {eq}`Eq:DynSystDiscrete:GenSolDiagble` anymore. <BR>
-Property iii. may fail if $\lambda_1$ is a double eigenvalue of modulus or absolute value 1. An example where this happens is given by the matrix
+Property iii. may fail if $\lambda_1$ is a double eigenvalue of modulus or absolute value $1$. An example where this happens is given by the matrix
 
 $$
    A = \left(\begin{array}{cc}
@@ -370,11 +370,11 @@ $$
   \lambda_1 = 0.9606, \quad \lambda_{2,3} = -0.3806\pm0.7788i, \quad \lambda_4 = -0.0997.
 $$
 
-Since $|\lambda_{2,3}| = 0.8668$ is smaller than 1 too,  the origin is a stable point.
+Since $|\lambda_{2,3}| = 0.8668$ is smaller than $1$ too,  the origin is a stable point.
 
 So, pity for the population, but it is doomed to die out.
 
-This may take quite a while, though. For instance, if at time 0 the population
+This may take quite a while, though. For instance, if at time $0$ the population
 is described by
 
 $$
@@ -387,7 +387,7 @@ $$
   \vect{x}_1 = \left(\begin{array}{cc} 14000\\300\\600\\1100 \end{array}\right) , \quad \vect{x}_{10} = \left(\begin{array}{cc} 5910 \\ 684 \\ 965 \\ 573 \end{array}\right) , \quad \vect{x}_{50} = \left(\begin{array}{cc} 910 \\ 282 \\ 179\\ 82 \end{array}\right).
 $$
 
-The trajectories in $\R^4$ are hard to plot. Instead we can plot the progressions of the four age groups. {numref}`Figure %s <Fig:DynSystDiscrete:Leslie2>` shows these for the first 70 time periods.
+The trajectories in $\R^4$ are hard to plot. Instead we can plot the progressions of the four age groups. {numref}`Figure %s <Fig:DynSystDiscrete:Leslie2>` shows these for the first $70$ time periods.
 
 :::{figure} Images/Fig-DynSystDiscrete-Leslie-2.svg
 :name: Fig:DynSystDiscrete:Leslie2
@@ -433,7 +433,7 @@ $$
 \mathbf{x}_0 = \mathbf{s}, \quad \mathbf{x}_{k+1} = A\mathbf{x}_k, \,\, k=0,1,2,\ldots\,,
 $$
 
-where $A$ is a $2\times 2$ matrix.
+where $A$ is a $2\times 2$-matrix.
 
 ::::{prf:definition}
 :label: Defn:DynSystDiscrete:Path
@@ -614,7 +614,7 @@ $$
 then $\vect{y}_{k+1}$ is found by rotating $\vect{y}_k$ over an angle $0.1808\pi$,
 and next scaling the resulting vector with a factor $|\lambda_i| \approx 1.07$.
 Figure {numref}`Fig:DynSystDiscrete:Spiral1A` shows a trajectory of this process.
-The indicated radii make equal angles with each other and show that the points make a complete loop in about 11 steps. Indeed,
+The indicated radii make equal angles with each other and show that the points make a complete loop in about $11$ steps. Indeed,
 
 $$
   11\cdot0.1808\pi = 1.9888\pi \approx 2\pi.
@@ -645,7 +645,7 @@ Let us introduce some terminology to describe the behaviour of the dynamical sys
 ::::{prf:definition}
 :label: Dfn:DynSystDiscrete:Types
 
-Let $A$ be a $2 \times 2$ matrix with eigenvalues $\lambda_1$ and $\lambda_2$.
+Let $A$ be a $2 \times 2$-matrix with eigenvalues $\lambda_1$ and $\lambda_2$.
 
 If $0 < \lambda_1 < 1 < \lambda_2$ then the origin is called a **saddle point**.
 
@@ -674,7 +674,7 @@ Classify the behaviour of the origin in {prf:ref}`Ex:DynSystDiscrete:SimplestSys
 If one of the eigenvalues of the matrix $A$ is negative, the paths of the process can be
 rather erratic, in particular if there is an eigenvalue smaller than $-1$. <BR>
 For the borderline cases where either one of the eigenvalues is equal to 1
-or where $\lambda_{1,2}$ are complex with modulus 1, see {numref}`Exc:DynSystDiscrete:Eigenvalue=1` and {numref}`Exc:DynSystDiscrete:Modulus=1`.
+or where $\lambda_{1,2}$ are complex with modulus $1$, see {numref}`Exc:DynSystDiscrete:Eigenvalue=1` and {numref}`Exc:DynSystDiscrete:Modulus=1`.
 
 Note that we just ignore the case where the matrix $A$ has a double eigenvalue.
 
@@ -838,7 +838,7 @@ f_k = \frac1{\sqrt{5}} \left(\dfrac{1+\sqrt{5}}{2}\right)^{k} -
 
 :::
 
-We call the formula surprising, since at first sight the expression on the right in Equation {eq}`Eq:DynSystDiscrete:Fibonacci` is not an integer, where from the definition {eq}`Eq:DynSystDiscrete:DfnFibo` it immediately follows that the Fibonacci numbers are _integers_.
+We call the formula surprising, since at first sight the expression on the right in Equation {eq}`Eq:DynSystDiscrete:Fibonacci` is not an integer, where from the definition in Equation {eq}`Eq:DynSystDiscrete:DfnFibo` it immediately follows that the Fibonacci numbers are _integers_.
 
 However, the computation of the complicated expression for $k = 3$
 
@@ -865,7 +865,7 @@ $$
   \left(\begin{array}{c} f_{k+1} \\  f_{k+2} \end{array}\right) = \left(\begin{array}{c} f_{k+1} \\  f_{k}+ f_{k+1} \end{array}\right) = \left(\begin{array}{cc} 0 & 1\\ 1 & 1 \end{array}\right) \left(\begin{array}{c} f_{k}\\  f_{k+1} \end{array}\right),
 $$
 
-we find as dynamical system corresponding to {eq}`Eq:DynSystDiscrete:DfnFibo` the system
+we find as dynamical system corresponding to Equation {eq}`Eq:DynSystDiscrete:DfnFibo` the system
 
 $$
   \vect{x}_{k+1} = A\vect{x}_{k} =  \left(\begin{array}{cc} 0 & 1\\ 1 & 1 \end{array}\right)\vect{x}_{k}, \quad \vect{x}_{0} =  \left(\begin{array}{c} 0 \\  1 \end{array}\right).

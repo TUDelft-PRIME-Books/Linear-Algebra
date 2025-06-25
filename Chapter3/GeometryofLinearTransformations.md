@@ -686,7 +686,7 @@ $$
 
 respectively. If we now move the top card along the $x$-axis, then, due to friction, the second card will also move. This in turn will make the third card move and so on. If we assume friction with the table is high enough, the bottom card will approximately remain in place. This situation is depicted in {numref}`Figure %s <Fig:GeomLinTrans:CardsStack>`.
 
-The movement of the cards can be described by a shear transformation. If the top card is moved 6 millimeters along the $x$-axis, then the edges parallel to the $y$-axis of the cards will make an angle of $\phi=\arctan(10.4/6)\approx \frac{\pi}{3}$ with the positive $x$-axis. A card at height $h$ will be moved a distance of about $h\frac{1}{\sqrt{3}}$ along the $x$-axis. We therefore find that the standard matrix associated to the linear transformation that describes the movement of the cards is
+The movement of the cards can be described by a shear transformation. If the top card is moved $6$ millimeters along the $x$-axis, then the edges parallel to the $y$-axis of the cards will make an angle of $\phi=\arctan(10.4/6)\approx \frac{\pi}{3}$ with the positive $x$-axis. A card at height $h$ will be moved a distance of about $h\frac{1}{\sqrt{3}}$ along the $x$-axis. We therefore find that the standard matrix associated to the linear transformation that describes the movement of the cards is
 
 $$
 \begin{pmatrix}1&0&\frac{1}{\sqrt{3}}\\0&1&0\\0&0&1\end{pmatrix}.
@@ -785,7 +785,7 @@ A shear transformation applied to a stack of cards.
 :url: https://embed.grasple.com/exercises/f1fdeb47-560d-4f90-8493-ab9124f5b9af?id=83264
 :label: grasple_exercise_3_3_9
 :dropdown:
-:description: Step by step construction of the matrix of a reflection
+:description: Step by step construction of the matrix of a reflection.
 
 ::::
 
@@ -805,7 +805,7 @@ A shear transformation applied to a stack of cards.
 :url: https://embed.grasple.com/exercises/ee24dead-8281-493e-9ced-b2f0f9cb1421?id=85263
 :label: grasple_exercise_3_3_11
 :dropdown:
-:description: Checking whether a transformation is a shear transformation
+:description: Checking whether a transformation is a shear transformation.
 
 ::::
 
@@ -815,7 +815,7 @@ A shear transformation applied to a stack of cards.
 :url: https://embed.grasple.com/exercises/3a6764ea-b1bc-43ff-9ae6-cc561166147e?id=83269
 :label: grasple_exercise_3_3_12
 :dropdown:
-:description: Geometric description of a transformation with a special property
+:description: Geometric description of a transformation with a special property.
 
 ::::
 
@@ -824,6 +824,6 @@ A shear transformation applied to a stack of cards.
 :url: https://embed.grasple.com/exercises/9d775e4d-3318-4129-95a0-ec5dfc9c0c96?id=83375
 :label: grasple_exercise_3_3_13
 :dropdown:
-:description: Geometric description of another transformation with a special property
+:description: Geometric description of another transformation with a special property.
 
 ::::

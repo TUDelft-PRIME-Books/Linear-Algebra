@@ -1,7 +1,7 @@
 # Determinants via row reduction
 
 In this section we will first consider the effect of row operations on the value of a determinant.
-This leads the way to a more efficient way to compute $n\times n$ determinants.
+This leads the way to a more efficient way to compute $n\times n$-determinants.
 
 It also leads the way to two very important properties of determinants, namely
 
@@ -20,13 +20,13 @@ The matrix $A$ is invertible if and only if $\det{A} \neq 0$ .
 
 ## How row operations affect a determinant
 
-We have seen in {numref}`Sec:DeterminantsViaCofactors` that the cofactor expansion of an $n \times n$ determinant works best using a row (or a column) with many, preferably $n-1$, zeros. When solving a linear system, or finding the inverse of a matrix, we have seen how to create zeros via row reduction. The important thing: row reducing an augmented matrix does not alter the solution(s) of the corresponding linear system. The next proposition
+We have seen in {numref}`Sec:DeterminantsViaCofactors` that the cofactor expansion of an $n \times n$-determinant works best using a row (or a column) with many, preferably $n-1$, zeros. When solving a linear system, or finding the inverse of a matrix, we have seen how to create zeros via row reduction. The important thing: row reducing an augmented matrix does not alter the solution(s) of the corresponding linear system. The next proposition
 describes the effects of row operations on a determinant.
 
 ::::::{prf:proposition} How row operations affect a determinant
 :label: Prop:DetRowReduction:RowOps
 
-For the determinant of an $n\times n$ matrix $A$ the following rules apply.
+For the determinant of an $n\times n$-matrix $A$ the following rules apply.
 
 <ol type = "i">
 <li>
@@ -53,7 +53,7 @@ We postpone the proof until the end of this section and first look at examples a
 ::::::{prf:example}
 :label: Ex:DetRowReduction:RowOps
 
-The following identities show what happens with a $3\times 3$ determinant when
+The following identities show what happens with a $3\times 3$-determinant when
 
 <ol type="i">
 <li >
@@ -116,7 +116,7 @@ Note that these properties can be expressed using elementary matrices (cf. {numr
 ::::::{prf:example}
 :label: Ex:DetRowReduction:ElementaryMatrices
 
-Let $A$ be an arbitrary $4\times 4$ matrix, and $E_1, E_2$ and $E_3$ the elementary matrices corresponding to the row operations in {prf:ref}`Ex:DetRowReduction:RowOps`. So
+Let $A$ be an arbitrary $4\times 4$-matrix, and $E_1, E_2$ and $E_3$ the elementary matrices corresponding to the row operations in {prf:ref}`Ex:DetRowReduction:RowOps`. So
 
 $$
 E_1 = \left(\begin{array}{cccc} 1 & 0 & 0 & 0 \\ 0 & c & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1
@@ -153,7 +153,7 @@ we see that in all three cases we have that
 :::
 
 Since every row operation can be performed using the product with an elementary matrix,
-a consequence of {prf:ref}`Prop:DetRowReduction:RowOps` is that Equation {eq}`Eq:DetRowReduction:ElementaryMatrices` holds for *any* product of an elementary $n \times n$ matrix $E$ with an arbitrary $n \times n$ matrix $A$.
+a consequence of {prf:ref}`Prop:DetRowReduction:RowOps` is that Equation {eq}`Eq:DetRowReduction:ElementaryMatrices` holds for *any* product of an elementary $n \times n$-matrix $E$ with an arbitrary $n \times n$-matrix $A$.
 
 These are the basics for the general product rule we will see later, which states that
 
@@ -161,7 +161,7 @@ $$
 \operatorname{det}(AB) = \operatorname{det}(A) \operatorname{det} (B)
 $$
 
-for _arbitrary_ $n\times n$ matrices $A$ and $B$.
+for _arbitrary_ $n\times n$-matrices $A$ and $B$.
 
 ::::::
 
@@ -185,7 +185,7 @@ The steps involved are:
 
 :::
 
-Evaluating the $2\times 2$ determinant at the end leads to the answer $-100$.
+Evaluating the $2\times 2$-determinant at the end leads to the answer $-100$.
 
 Can you describe the row operations and cofactor expansions in the following computation?
 
@@ -292,7 +292,7 @@ The proof is -- we think -- quite instructive.  (However, feel free to skip it.)
 
 In the previous section we have already seen that the statement is true for triangular matrices.
 
-Now suppose $A$ is any $n \times n$ matrix. Via row reduction $A$ can be brought to echelon form $F$,
+Now suppose $A$ is any $n \times n$-matrix. Via row reduction $A$ can be brought to echelon form $F$,
 and for a square matrix the echelon form is an upper triangular matrix (with possibly zeros on the diagonal).
 
 From {prf:ref}`Prop:DetCofactors:InvertibleTriangular` we know that for a triangular matrix $F$ we have <BR>
@@ -334,7 +334,7 @@ $$
 ::::::{prf:theorem}
 :label: Thm:DetRowReduction:ProductRule
 
-For two $n\times n$ matrices $A$ and $B$ it always holds that
+For two $n\times n$-matrices $A$ and $B$ it always holds that
 
 $$
 \det{(AB)} = \det{A}\cdot\det{B}.
@@ -342,7 +342,7 @@ $$
 
 ::::::
 
-The idea of the proof is to break it down to products of the form  $\det{(EA)} = \det{E}\cdot\det{A}$, where $E$ is an elementary matrix  (Equation{eq}`Eq:DetRowReduction:ElementaryMatrices`).  For more details you open the proof below.
+The idea of the proof is to break it down to products of the form  $\det{(EA)} = \det{E}\cdot\det{A}$, where $E$ is an elementary matrix  (Equation {eq}`Eq:DetRowReduction:ElementaryMatrices`).  For more details you open the proof below.
 
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:DetRowReduction:ProductRule`
 :class: tudproof, dropdown
@@ -423,7 +423,7 @@ For each of the following statements decide whether they are true or false. In c
 
 <li>
 
-For each $n \times n$ matrix $A$ it holds that
+For each $n \times n$-matrix $A$ it holds that
 
 <BR>
 
@@ -434,7 +434,7 @@ $$
 </li>
 <li>
 
-For each two $n \times n$ matrices $A$ and $B$ it holds that
+For each two $n \times n$-matrices $A$ and $B$ it holds that
 
 <BR>
 
@@ -448,7 +448,7 @@ $$
 
 <li>
 
-For each $n \times n$ matrix $A$ and each real number $k$ it holds that
+For each $n \times n$-matrix $A$ and each real number $k$ it holds that
 
 <BR>
 
@@ -460,7 +460,7 @@ $$
 
 <li>
 
-For each $n \times n$ matrix $A$ it holds that
+For each $n \times n$-matrix $A$ it holds that
 
 <BR>
 
@@ -483,7 +483,7 @@ We treat the statements one by
 
 <li>
 
-Is it true that for each $n \times n$ matrix $A$ it holds that $\operatorname{det}\big(A^k\big)= \big(\det{A}\big)^k$? 
+Is it true that for each $n \times n$-matrix $A$ it holds that $\operatorname{det}\big(A^k\big)= \big(\det{A}\big)^k$? 
 
 This is true, and follows from repeatedly using the property $\det(AB) = \det(A)\det(B)$. Namely,
 <BR>
@@ -496,7 +496,7 @@ $$
 </li>
 <li>
 
-Is it true that for each two $n \times n$ matrices $A$ and $B$ it holds that
+Is it true that for each two $n \times n$-matrices $A$ and $B$ it holds that
 <BR>
 
 $$
@@ -514,7 +514,7 @@ $$
 
 <li>
 
-Is it true that for each $n \times n$ matrix $A$ and each real number $k$ it holds that
+Is it true that for each $n \times n$-matrix $A$ and each real number $k$ it holds that
 <BR>
 
 $$
@@ -542,7 +542,7 @@ $$
 
 <li>
 
-Is it true that $\operatorname{det}(-A)= -\det{(A)}$ for each $n \times n$ matrix $A$?
+Is it true that $\operatorname{det}(-A)= -\det{(A)}$ for each $n \times n$-matrix $A$?
 
 
 This is not true in general.  Taking $k = -1$ in the previous statement we see that 
@@ -570,7 +570,7 @@ In fact we will prove the column version, and we add one related rule that will 
 ::::::{prf:proposition}
 :label: Prop:DetRowReduction:SumofCols
 
-Suppose $A$ is an $n\times n$ matrix for which the $k$th column is the sum of two vectors in $\R^n$. So
+Suppose $A$ is an $n\times n$-matrix for which the $k$th column is the sum of two vectors in $\R^n$. So
 
 $$
 \vect{a}_k = \vect{b} +\vect{c}.
@@ -597,7 +597,7 @@ Click on the symbol to the right below for the proof of {prf:ref}`Prop:DetRowRed
 :class: tudproof, dropdown
 
 For typographical reasons we will prove the three rules stated as column operations.
-For an $n \times n$ matrix
+For an $n \times n$-matrix
 
 $$
 
@@ -677,7 +677,7 @@ $$
 \bar{\bar{a}}_{i2} = a_{i1} \quad \text{and} \quad  \bar{\bar{A}}_{i2}= A_{i1}.
 $$
 
-To make this explicit for a $4\times 4$ matrix:
+To make this explicit for a $4\times 4$-matrix:
 
 $$
 \begin{array}{ccc}
@@ -732,7 +732,7 @@ And the argument can even be generalised for two columns that are not necessaril
 And for an odd number $n$ we have that $(-1)^n = -1$. <BR>
 In fact, to swap columns $i$ and $j$, with $i < j$,  we need  $j-i$ neighbour swaps to move
 column $i$ to position $j$, and  $j-i-1$ swaps to move (the original) column $j$ to position $i$, which gives a total of $n = 2(j-i)+1$ swaps. 
-For instance, to interchange column $2$ and column $5$ in a $5 \times 5$ matrix the $(j-i) + (j-i-1) = 3+2 =5$ neigbour swaps can be visualised as follows
+For instance, to interchange column $2$ and column $5$ in a $5 \times 5$-matrix the $(j-i) + (j-i-1) = 3+2 =5$ neigbour swaps can be visualised as follows
 
 
 $$
@@ -782,7 +782,7 @@ Lastly we have to prove
 
 :::
 
-First Rule (2) implies, as in {prf:ref}`Cor:DetRowReduction:EqualRows`, that a determinant with two equal columns has the value 0.
+First Rule (2) implies, as in {prf:ref}`Cor:DetRowReduction:EqualRows`, that a determinant with two equal columns has the value $0$.
 
 We then proceed as follows for Rule (3):
 
@@ -812,7 +812,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/b34a791a-3f42-4d10-9952-f6f5699a68fb?id=104164
 :label: grasple_exercise_5_3_1
 :dropdown:
-:description: Effects of row operations on a 3x3 determinant.
+:description: Effects of row operations on a $3\times3$-determinant.
 
 ::::::
 
@@ -822,7 +822,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/1d3924d9-ea34-4a89-8b7c-33e385d144ba?id=104312
 :label: grasple_exercise_5_3_2
 :dropdown:
-:description: Effects of row operations on a 3x3 determinant.
+:description: Effects of row operations on a $3\times3$-determinant.
 
 ::::::
 
@@ -831,7 +831,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/1fcb337d-f906-423a-acd5-8d8c69d4d04b?id=93158
 :label: grasple_exercise_5_3_3
 :dropdown:
-:description: Effects of row and column operations on a 3x3 determinant.
+:description: Effects of row and column operations on a $3\times3$-determinant.
 
 ::::::
 
@@ -840,7 +840,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/cabb663b-7b86-4215-81aa-0a3da91a5688?id=103719
 :label: grasple_exercise_5_3_4
 :dropdown:
-:description: Effects of several operations on a 4x4 determinant.
+:description: Effects of several operations on a $4\times4$-determinant.
 
 ::::::
 
@@ -850,7 +850,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/1354915d-4cf4-4559-8ac2-68573807199d?id=103702
 :label: grasple_exercise_5_3_5
 :dropdown:
-:description: Effects of a several operations on a 4x4 determinant.
+:description: Effects of a several operations on a $4\times4$-determinant.
 
 ::::::
 
@@ -861,7 +861,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/63ac7c7c-c195-4b76-be9b-e8764f6dde1b?id=104023
 :label: grasple_exercise_5_3_6
 :dropdown:
-:description: Effects of row and/or column operations on a 4x4 determinant.
+:description: Effects of row and/or column operations on a $4\times4$-determinant.
 
 ::::::
 
@@ -870,7 +870,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/882506bb-6a5e-479f-b095-bb5b95be2467?id=104166
 :label: grasple_exercise_5_3_7
 :dropdown:
-:description: To compute a  3x3 determinant using row reduction.
+:description: To compute a $3\times3$-determinant using row reduction.
 
 ::::::
 
@@ -881,7 +881,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/993b010f-3351-4b98-b9b7-1d04c1c959be?id=93143
 :label: grasple_exercise_5_3_8
 :dropdown:
-:description: To compute a  4x4 determinant with quite a few zeros.
+:description: To compute a  $4\times4$-determinant with quite a few zeros.
 
 ::::::
 
@@ -891,7 +891,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/2d51357d-e56d-4de5-a882-493a795fd222?id=93144
 :label: grasple_exercise_5_3_9
 :dropdown:
-:description: To compute a 4x4 determinant via reduction and expansion.
+:description: To compute a $4\times4$-determinant via reduction and expansion.
 
 ::::::
 
@@ -901,7 +901,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/9974012a-1ac9-439f-919f-2647be1ba4ba?id=92965
 :label: grasple_exercise_5_3_10
 :dropdown:
-:description: To compute a 'random' 5x5 determinant with entries in {-2,-1,0,1,2}.
+:description: To compute a 'random' $5\times5$-determinant with entries in $\{-2,-1,0,1,2\}$.
 
 ::::::
 
@@ -911,7 +911,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/4a01fc67-0acc-44aa-9ba2-18c1accae720?id=93145
 :label: grasple_exercise_5_3_11
 :dropdown:
-:description: Computing a structured 5x5 determinant in a 'smart' way.
+:description: Computing a structured $5\times5$-determinant in a 'smart' way.
 ::::::
 
 ::::::{grasple}
@@ -1075,7 +1075,7 @@ Suppose $A$ is a matrix with two equal rows, say row $i$ and row $j$ are equal.
 
 If we subtract the $i$th row from the $j$th row, we get a matrix $A_2$ with $j$th row equal to zero, and with $\det(A_2) = \det(A)$. If we take the factor $0$ out, we see that $\det(A_2) = 0$.
 
-For instance, with a $4\times 4$ matrix with equal second and fourth row we would have
+For instance, with a $4\times 4$-matrix with equal second and fourth row we would have
 
 $$
   \begin{vmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\

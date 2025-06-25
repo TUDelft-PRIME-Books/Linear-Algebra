@@ -3,7 +3,7 @@
 # Cross product
 
 In this section we will look at a specific operation on vectors in $\mathbb{R}^3$. This operation is called the _cross product_ and it allows us to construct a vector that is orthogonal to two given vectors. We will use this operation in
-{numref}`Section %s <SubSec:LinesAndPlanes:Plane>`
+{numref}`Subsection %s <SubSec:LinesAndPlanes:Plane>`
 to construct a vector that is orthogonal to a given plane in $\mathbb{R}^3$. This will allow us to describe such a plane with a very simple equation.
 
 ## Definition and basic properties
@@ -90,7 +90,6 @@ Knowing that the cross product of two vectors is orthogonal to these vectors doe
 
 ::::{figure} Images/Fig-CrossProduct-Righthandrule.svg
 :name: Fig:CrossProduct:RightHandRule
-:class: dark-light-same
 
 The right-hand rule. Adapted from Acdx, CC BY-SA 3.0 http://creativecommons.org/licenses/by-sa/3.0/, via Wikimedia Commons.
 ::::
@@ -316,7 +315,7 @@ iii. This follows from the distributivity of the real numbers.
 
 ::::
 
-In {numref}`Chapter:Determinants` we will take a look at the determinant of a matrix. For $2 \times 2$ matrices the definition is as follows.
+In {numref}`Chapter %s <Chapter:Determinants>` we will take a look at the determinant of a matrix. For $2 \times 2$-matrices the definition is as follows.
 
 ::::{prf:definition}
 :label: Def:CrossProduct:2x2determinant

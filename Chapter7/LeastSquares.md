@@ -6,7 +6,7 @@
 
 ## Introduction
 
-In Chapter 2, especially {numref}`Section %s <Section:LinSystems>`, we studied linear systems. One way to write them down was as a matrix-vector equation $A\vect{x} = \vect{b}$. We saw that a linear system could be either consistent or inconsistent. And if a system was inconsistent, that would then be the end of the story.
+In {ref}`Chapter %s <Chapter:Systems>`, especially {numref}`Section %s <Section:LinSystems>`, we studied linear systems. One way to write them down was as a matrix-vector equation $A\vect{x} = \vect{b}$. We saw that a linear system could be either consistent or inconsistent. And if a system was inconsistent, that would then be the end of the story.
 
 In this section we will reconsider the inconsistent situation and ask ourselves the question whether there is a vector $\vect{x}$ that is in a sense the 'best possible' alternative to a solution.
 
@@ -30,7 +30,7 @@ See {numref}`Figure %s <Fig:LeastSquares:BestLines>` for both interpretations of
 :name: Fig:LeastSquares:BestLines
 :class: dark-light
 
-What is the best best line? Can you get the total distance in the left picture below 6.5? Can you get the total distance in the right picture below 9.0 ?
+What is the best best line? Can you get the total distance in the left picture below $6.5$? Can you get the total distance in the right picture below $9.0$?
 ```
 
 Both are sensible ideas. However, to turn any of these two ideas into an algorithm to find the best line is not as straightforward as the computations that come up if we put the question into the realm of linear algebra.
@@ -79,7 +79,7 @@ We will come back to this question in {numref}`Subsection %s <SubSec:LeastSquare
 
 ## Least squares solutions
 
-Let $A$ be an $m \times n$ matrix with columns $\vect{a}_1, \ldots, \vect{a}_n$.
+Let $A$ be an $m \times n$-matrix with columns $\vect{a}_1, \ldots, \vect{a}_n$.
 <BR>
 We have seen ({numref}`Section %s <Sec:MatVecProduct>`, {prf:ref}`Rem:MatVecProd:EquivalentEquations`) that the linear system
 
@@ -105,7 +105,7 @@ $\Span{\vect{a}_1, ... , \vect{a}_n}$. This is the idea behind the following def
 ::::{prf:definition}
 :label: Def:LeastSquares:Solution
 
-Let $A$ be an $m\times n$ matrix and $\vect{b}$ a vector in $\R^{m}$.
+Let $A$ be an $m\times n$-matrix and $\vect{b}$ a vector in $\R^{m}$.
 A vector $\hat{\vect{x}}$ is called a **least squares solution** of the linear system $A\vect{x} = \vect{b}$ if for every $\vect{x}$ in $\R^n$ the inequality
 
 $$
@@ -182,8 +182,7 @@ will be zero.
 ::::{prf:remark}
 :label: Rem:LeastSquares:Linefit
 
-In the situation where we want to fit a line $y = ax + b$, we can take as 'best' parameters the _least squares_ solution of the linear system as in Equation
-{eq}`Eq:LeastSquares:Linefit`,
+In the situation where we want to fit a line $y = ax + b$, we can take as 'best' parameters the _least squares_ solution of the linear system as in Equation {eq}`Eq:LeastSquares:Linefit`,
 
 $$
   \left(\begin{array}{cc}
@@ -247,7 +246,7 @@ The next proposition provides the answers to question i. and question iii.
 ::::{prf:proposition}
 :label: Prop:LeastSquares:Existence
 
-For each linear system $A\vect{x} = \vect{b}$, where $A$ is an $m \times n$ matrix and $\vect{b}$ a vector in $\R^m$, a least squares solution always exists. Moreover the least squares solution is unique if and only if the columns of $A$ are linearly independent.
+For each linear system $A\vect{x} = \vect{b}$, where $A$ is an $m \times n$-matrix and $\vect{b}$ a vector in $\R^m$, a least squares solution always exists. Moreover the least squares solution is unique if and only if the columns of $A$ are linearly independent.
 
 ::::
 
@@ -321,7 +320,7 @@ $$
 ::::
 
 In {prf:ref}`Ex:LeastSquares:OrthogExample` the coefficients of the orthogonal projection were quickly found due to the fact that the vectors $\vect{a}_1$ and $\vect{a}_2$ were orthogonal.
-In {numref}`Section %s <Sec:Gram-Schmidt>` we saw how we can construct an orthogonal basis from an arbitrary basis. And then we can use the projection formula {eq}`Eq:OrthoBase:OrthoProj` to find the orthogonal projection. However, we will see that this is an unnecessary detour.
+In {numref}`Section %s <Sec:Gram-Schmidt>` we saw how we can construct an orthogonal basis from an arbitrary basis. And then we can use the projection formula in Equation {eq}`Eq:OrthoBase:OrthoProj` to find the orthogonal projection. However, we will see that this is an unnecessary detour.
 
 (SubSec:LeastSquares:NormalEquations)=
 
@@ -332,7 +331,7 @@ There is a direct way to find the coefficients of the orthogonal projection onto
 ::::{prf:theorem} Normal Equations
 :label: Thm:LeastSquares:NormalEquations
 
-Suppose $A$ is an $m \times n$ matrix and $\vect{b}$ is a vector in $\R^m$.
+Suppose $A$ is an $m \times n$-matrix and $\vect{b}$ is a vector in $\R^m$.
 
 Then the system of linear equations
 
@@ -417,7 +416,7 @@ In the proof properties of the orthogonal projection are combined in a clever wa
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:LeastSquares:NormalEquations`
 :class: tudproof, dropdown
 
-As usual we denote the columns of the $m \times n$ matrix $A$ by $\vect{a}_1, \ldots, \vect{a}_n$.
+As usual we denote the columns of the $m \times n$-matrix $A$ by $\vect{a}_1, \ldots, \vect{a}_n$.
 
 From the section about orthogonal projections, we know that the orthogonal projection of $\vect{b}$
 onto the column space of $A$ exists and is unique (cf. {prf:ref}`Thm:OrthoBase:OrthoDecomp`). This projection will be a vector of the form
@@ -505,7 +504,7 @@ There is another way to see this, which follows from the next proposition.
 ::::{prf:proposition}  
 :label: Prop:LeastSquares:InvertibleATA
 
-Suppose $A$ is an $m \times n$ matrix. If the columns of $A$ are linearly independent then
+Suppose $A$ is an $m \times n$-matrix. If the columns of $A$ are linearly independent then
 the matrix $A^TA$ is invertible.
 
 ::::
@@ -531,7 +530,7 @@ Now realise that $\vect{x}^TA^TA\vect{x} = (A\vect{x})^TA\vect{x} = \norm{A\vect
 
 So $A^TA\vect{x} = \vect{0}$ implies $\norm{A\vect{x}}^2 = 0$, and that means that $A\vect{x}$ must be the zero vector.
 
-The equivalence {eq}`Eq:LeastSquares:InvertibilityATA` implies: if $A$ has linearly independent columns,
+The equivalence in Equation {eq}`Eq:LeastSquares:InvertibilityATA` implies: if $A$ has linearly independent columns,
 then $A\vect{x} = \vect{0}$ has $\vect{x}= \vect{0}$ as only solution, so $A^TA\vect{x} = \vect{0}$ has
 $\vect{x}= \vect{0}$ as only solution. This means that $A^TA$ is invertible.
 ::::
@@ -541,14 +540,14 @@ $\vect{x}= \vect{0}$ as only solution. This means that $A^TA$ is invertible.
 
 Prove the converse of {prf:ref}`Prop:LeastSquares:InvertibleATA`.
 
-For any $m \times n$ matrix $A$, if $A^TA$ is invertible, then the columns of $A$ must be linearly independent. (Note that the matrix $A$ is not supposed to be a square matrix.)
+For any $m \times n$-matrix $A$, if $A^TA$ is invertible, then the columns of $A$ must be linearly independent. (Note that the matrix $A$ is not supposed to be a square matrix.)
 
 ::::
 
 ::::{admonition} Solution to&nbsp;{numref}`Exc:LeastSquares:InvertibleATA`
 :class: solution, dropdown
 
-Suppose that $A$ is an $m \times n$ matrix $A$ for which $A^TA$ is invertible.
+Suppose that $A$ is an $m \times n$-matrix $A$ for which $A^TA$ is invertible.
 To prove that $A$ has linearly independent columns we have to show that the equation
 
 $$
@@ -642,7 +641,7 @@ solution $\hat{\vect{x}} =\left(\begin{array}{c} 4 \\ 1  \end{array}   \right)$.
 
 The previous example can be generalised as follows.
 
-If the columns $\{\vect{a}_1, \ldots, \vect{a}_n\}$ of an $m \times n$ matrix $A$ form a set of non-zero, _orthogonal_ vectors in $\R^m$, then the orthogonal projection
+If the columns $\{\vect{a}_1, \ldots, \vect{a}_n\}$ of an $m \times n$-matrix $A$ form a set of non-zero, _orthogonal_ vectors in $\R^m$, then the orthogonal projection
 
 $$
    c_1\vect{a}_1 + c_2\vect{a}_2 + \cdots + c_n\vect{a}_n
@@ -689,7 +688,7 @@ $$
 ::::{exercise}
 :label: Exc:LeastSquares:QR
 
-Show that Formula {eq}`Eq:LeastSquares:ProjbColA` for a matrix $A$ with linearly independent columns and QR decomposition $A = QR$ (see {prf:ref}`Thm:GramSchmidt:QR-decomp`) simplifies to
+Show that Equation {eq}`Eq:LeastSquares:ProjbColA` for a matrix $A$ with linearly independent columns and QR decomposition $A = QR$ (see {prf:ref}`Thm:GramSchmidt:QR-decomp`) simplifies to
 
 $$
   \hat{\vect{b}} = \operatorname{proj}_{\Col{A}}(\vect{b}) =  QQ^T \vect{b}.
@@ -704,7 +703,7 @@ Also explain this simpler formula by interpreting the $QR$ decomposition in a su
 This involves some elementary matrix operations. <BR>
 Suppose $A = QR$, where $Q^TQ = I$, and $R$ is an upper triangular matrix with a positive diagonal. So $R$ is invertible. <BR>
 
-Substitution of $A=QR$ into {eq}`Eq:LeastSquares:ProjbColA`
+Substitution of $A=QR$ into Equation {eq}`Eq:LeastSquares:ProjbColA`
 
 $$
  \hat{\vect{b}} = \operatorname{proj}_{\Col{A}}(\vect{b}) = A(A^TA)^{-1}A^T \vect{b}
@@ -747,7 +746,7 @@ In fact, if the $QR$ decomposition of a matrix $A$ is known, this may also simpl
 ::::{prf:proposition}  
 :label: Prop:LeastSquares:LSviaQR
 
-Suppose the $m \times n$ matrix $A$ of rank $n$ has the $QR$ decomposition  $A = QR$.
+Suppose the $m \times n$-matrix $A$ of rank $n$ has the $QR$ decomposition  $A = QR$.
 Then the least squares solution of the linear system  $A\vect{x} = \vect{b}$ is the same as the solution of the equation
 
 
@@ -768,7 +767,7 @@ Note that the solution is unique, and is given by
 :::
 
 In general, it is more efficient to avoid computing the inverse of $R$, and to 
-solve  {eq}`Eq:Leastquares:LSviaQR-1` via back substitution.
+solve Equation {eq}`Eq:Leastquares:LSviaQR-1` via back substitution.
 
 ::::
 
@@ -788,7 +787,7 @@ $$
   R^TR\vect{x} = R^TQ^T\vect{b}.
 $$
 
-Since $R$ is invertible, hence $R^T$ is invertible too, we can premultiply both sides by  the inverse of $R^T$, which immediately gives {eq}`Eq:Leastquares:LSviaQR-1`.
+Since $R$ is invertible, hence $R^T$ is invertible too, we can premultiply both sides by  the inverse of $R^T$, which immediately gives Equation {eq}`Eq:Leastquares:LSviaQR-1`.
 
 ::::
 
@@ -862,7 +861,7 @@ $$
    \vect{x} = \hat{\vect{x}}_0 + c\left(\begin{array}{c}  2 \\  1 \end{array}\right),
 $$
 
-the 'homogeneous' part $\vect{x}_H = c\left(\begin{array}{c}  2 \\  1 \end{array}\right)$ is the null space of $A^TA$. Because of the equivalence {eq}`Eq:LeastSquares:InvertibilityATA` this is equal to the null space of $A$.
+the 'homogeneous' part $\vect{x}_H = c\left(\begin{array}{c}  2 \\  1 \end{array}\right)$ is the null space of $A^TA$. Because of the equivalence in Equation {eq}`Eq:LeastSquares:InvertibilityATA` this is equal to the null space of $A$.
 Now from {numref}`Section %s <Sec:OrthoComp>`, {prf:ref}`Prop:OrthoComp:OrthoComplementNulA`, we know that
 
 $$
@@ -977,7 +976,7 @@ $$
 :url: https://embed.grasple.com/exercises/316a02be-a293-4340-ac81-47a6b25b115d?id=110658
 :label: grasple_exercise_7_4_5
 :dropdown:
-:description: Finding the LS solution for 3x2 system in a geometric way.
+:description: Finding the LS solution for $3\times2$-system in a geometric way.
 
 ::::
 
@@ -987,7 +986,7 @@ $$
 :url: https://embed.grasple.com/exercises/a0878702-dcc0-4216-b2d6-0b1d7d1b046e?id=91142
 :label: grasple_exercise_7_4_6
 :dropdown:
-:description: Finding the LS solution for 3x2 systems in three steps.
+:description: Finding the LS solution for $3\times2$-systems in three steps.
 
 ::::
 
@@ -996,7 +995,7 @@ $$
 :url: https://embed.grasple.com/exercises/6a0628e8-065d-4390-b0c4-8ff131761de4?id=91161
 :label: grasple_exercise_7_4_7
 :dropdown:
-:description: LS solution + LS error for a 3x2 system.
+:description: LS solution + LS error for a $3\times2$-system.
 
 ::::
 
@@ -1005,7 +1004,7 @@ $$
 :url: https://embed.grasple.com/exercises/1d9a943a-b51f-48c9-99a9-691b80b8df60?id=91159
 :label: grasple_exercise_7_4_8
 :dropdown:
-:description: LS solution + LS error for a 4x2 system.
+:description: LS solution + LS error for a $4\times2$-system.
 
 ::::
 
@@ -1014,7 +1013,7 @@ $$
 :url: https://embed.grasple.com/exercises/d7480f19-afdb-474d-8542-299fc21a1952?id=91908
 :label: grasple_exercise_7_4_9
 :dropdown:
-:description: LS solution + LS error for a 4x3 system.
+:description: LS solution + LS error for a $4\times3$-system.
 
 ::::
 
@@ -1032,7 +1031,7 @@ $$
 :url: https://embed.grasple.com/exercises/743d744c-1bcb-460a-973e-3e693e86e20d?id=91157  
 :label: grasple_exercise_7_4_11
 :dropdown:
-:description: LS solution + LS error for a 3x2 system.
+:description: LS solution + LS error for a $3\times2$-system.
 
 ::::
 
@@ -1041,7 +1040,7 @@ $$
 :url: https://embed.grasple.com/exercises/b081f76a-0e03-48cc-b27b-afab51ac2c91?id=91155
 :label: grasple_exercise_7_4_12
 :dropdown:
-:description: LS solutions + LS error for a 4x3 system.
+:description: LS solutions + LS error for a $4\times3$-system.
 
 ::::
 
@@ -1050,7 +1049,7 @@ $$
 :url: https://embed.grasple.com/exercises/679d1581-08bc-416b-89bf-766faad9f118?id=91394
 :label: grasple_exercise_7_4_13
 :dropdown:
-:description: Finding the LS solution for a 4x3 system (involving quite some reduction work).
+:description: Finding the LS solution for a $4\times3$-system (involving quite some reduction work).
 
 ::::
 
@@ -1059,7 +1058,7 @@ $$
 :url: https://embed.grasple.com/exercises/3d0a7884-09ee-4f89-a2e5-1c1476d7e2a3?id=91448
 :label: grasple_exercise_7_4_14
 :dropdown:
-:description: Finding the LS solution for a 4x3 system (with some tricky reduction work).
+:description: Finding the LS solution for a $4\times3$-system (with some tricky reduction work).
 
 ::::
 
@@ -1070,7 +1069,7 @@ $$
 :url: https://embed.grasple.com/exercises/1760659c-9f9a-4108-9a2f-034128dc7f70?id=116973
 :label: grasple_exercise_7_4_15
 :dropdown:
-:description: Finding the LS solution for a 3x2 system, using a $QR$-decomposition 
+:description: Finding the LS solution for a $3\times2$-system, using a $QR$-decomposition.
 
 ::::
 
@@ -1080,7 +1079,7 @@ $$
 :url: https://embed.grasple.com/exercises/90846f0f-432b-4e1e-9b64-9a13032a1db9?id=116516
 :label: grasple_exercise_7_4_16
 :dropdown:
-:description: Finding the LS solution for a 4x2 system, using a $QR$-decomposition 
+:description: Finding the LS solution for a $4\times2$-system, using a $QR$-decomposition.
 
 ::::
 
@@ -1090,7 +1089,7 @@ $$
 :url: https://embed.grasple.com/exercises/41265f8f-234c-440d-b9d2-1eb462c36544?id=116662
 :label: grasple_exercise_7_4_17
 :dropdown:
-:description: Finding the LS solution for a 4x3 system, using a $QR$-decomposition 
+:description: Finding the LS solution for a $4\times3$-system, using a $QR$-decomposition.
 
 ::::
 
@@ -1328,7 +1327,7 @@ $$
          -\Sigma_x &   n  \end{array}\right),
 $$
 
-we see the expressions {eq}`Eq:Leastquares:GeneralLinefit` readily appearing.
+we see the expressions in Equation {eq}`Eq:Leastquares:GeneralLinefit` readily appearing.
 
 ::::
 
@@ -1373,7 +1372,7 @@ The epithet _linear_ refers to the fact that the parameters $c_1, \ldots, c_k$ a
 :label:  Rem:LeastSquares:LinearModel
 
 The parameters $c_1,c_2,\ldots,c_k$ that minimise the sum
-in {eq}`Eq:LeastSquares:SumResidues` coincide with the least squares solution of the linear system
+in Equation {eq}`Eq:LeastSquares:SumResidues` coincide with the least squares solution of the linear system
 
 :::{math}
 :label: Eq:LeastSquares:DesignMatrix
@@ -1439,7 +1438,7 @@ $$
   y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_k x_k
 $$
 
-that best fits the data in {eq}`Eq:LeastSquares:Data-n-dim`, we can take $f_0(x_1,\ldots,x_k) = 1$ and $f_i(x_1,\ldots,x_k) = x_i$, for $i = 1, \ldots, k$.
+that best fits the data in Equation {eq}`Eq:LeastSquares:Data-n-dim`, we can take $f_0(x_1,\ldots,x_k) = 1$ and $f_i(x_1,\ldots,x_k) = x_i$, for $i = 1, \ldots, k$.
 
 In a least squares model we then look for the parameters $\beta_1, \ldots, \beta_{\ell}$ that minimise
 
@@ -1456,7 +1455,7 @@ In a least squares model we then look for the parameters $\beta_1, \ldots, \beta
 <li>
 
 In a _weighted least squares model_ the terms in the
-sum {eq}`Eq:LeastSquares:GeneralModel`
+sum in Equation {eq}`Eq:LeastSquares:GeneralModel`
 get different weights $w_i$. When building a statistical model this may be desirable when some data give more 'information'.
 
 Then the expression we want to minimise is given by

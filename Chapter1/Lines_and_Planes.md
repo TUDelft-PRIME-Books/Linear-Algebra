@@ -24,7 +24,7 @@ where $a$ and $b$ are not both zero. This equation is called a **Cartesian equat
 
 ::::
 
-The point $(4, 1)$, for example, is a point on the line with equation $2x-3y=5$ because $2\cdot 4-3\cdot 1=5$, but $(6,-1)$ is not since $2\cdot 6-3\cdot (-1)$ is equal to 15 and not to 5. If we draw all points of a given line $\mathcal{L}$ in the plane $\mathbb{R}^2$, then we obtain a graphical representation of the line. In {numref}`Figure %s <Fig:LinesAndPlanes:LineInPlane>` we see the line with Cartesian equation $2x-3y=5$.
+The point $(4, 1)$, for example, is a point on the line with equation $2x-3y=5$ because $2\cdot 4-3\cdot 1=5$, but $(6,-1)$ is not since $2\cdot 6-3\cdot (-1)$ is equal to $15$ and not to $5$. If we draw all points of a given line $\mathcal{L}$ in the plane $\mathbb{R}^2$, then we obtain a graphical representation of the line. In {numref}`Figure %s <Fig:LinesAndPlanes:LineInPlane>` we see the line with Cartesian equation $2x-3y=5$.
 
 ::::{figure} Images/Fig-LinesAndPlanes-LineInPlane.svg
 :name: Fig:LinesAndPlanes:LineInPlane

@@ -4,16 +4,16 @@
 
 (Sec:DetCofactors:Definition)=
 
-## Definition of an $n \times n$ determinant
+## Definition of an $n \times n$-determinant
 
 
-In {numref}`Sec:DetGeometric` we have defined determinants of 2 by 2 and 3 by 3 matrices in a geometric way.
+In {numref}`Sec:DetGeometric` we have defined determinants of $2\times2$ and $3\times3$-matrices in a geometric way.
 We start with the general definition straightaway.
 
 ::::::{prf:definition}
 :label: Dfn:DetCofactors:SubmatrixAij
 
-Let $A$ be an $n\times n$ matrix, with $n \geq 2$. The **submatrix** $A_{ij}$ is the $(n-1) \times (n-1)$ matrix that remains when the $i$th row and the $j$th column of $A$ are deleted.
+Let $A$ be an $n\times n$-matrix, with $n \geq 2$. The **submatrix** $A_{ij}$ is the $(n-1) \times (n-1)$-matrix that remains when the $i$th row and the $j$th column of $A$ are deleted.
 
 ::::::
 
@@ -38,7 +38,7 @@ $$
 ::::::{prf:definition}
 :label: Dfn:DetCofactors:Determinant
 
-Let $A$ be an $n\times n$ matrix, with $n \geq 3$.
+Let $A$ be an $n\times n$-matrix, with $n \geq 3$.
 The **determinant** of $A$, which we denote by either $\det{A}$ or $|A|$, is defined by
 
 $$
@@ -55,8 +55,8 @@ is called the $(i,j)$th **cofactor** of $A$.
 
 ::::::
 
-This is an example of a so-called **recursive** definition. The evaluation of an $n$ by $n$ determinant is reduced to the evaluation of $n$ determinants 'one size smaller'. By repeating this reduction we get smaller and smaller determinants and end up with 2 by 2 determinants as defined in {prf:ref}`Def:CrossProduct:2x2determinant`. 
-And the formula also works for $2 \times 2$ matrices:
+This is an example of a so-called **recursive** definition. The evaluation of an $n$ by $n$-determinant is reduced to the evaluation of $n$-determinants 'one size smaller'. By repeating this reduction we get smaller and smaller determinants and end up with $2\times2$-$determinants as defined in {prf:ref}`Def:CrossProduct:2x2determinant`. 
+And the formula also works for $2 \times 2$-matrices:
 
 $$
    \text{for}  \,\,A = \begin{pmatrix}a & b \\ c & d  \end{pmatrix}, \quad
@@ -133,7 +133,7 @@ $$
 For instance, on the diagonal all signs are $+$.
 
 For the $4\times 4$ {prf:ref}`Ex:DetCofactor:4x4Det` we could take advantage of the two zeros in the first column.
-For an $n\times n$ matrix without zeros the complete expansion will contain $n\cdot (n-1) \cdot \cdots \cdot 3 \cdot 2 \cdot 1 = n!$ products.
+For an $n\times n$-matrix without zeros the complete expansion will contain $n\cdot (n-1) \cdot \cdots \cdot 3 \cdot 2 \cdot 1 = n!$ products.
 We have already seen in the previous section
 
 $$
@@ -179,7 +179,7 @@ $$
 
 We omit the proof, which is rather long and technical.
 
-The following example illustrates the rule for the determinant of an arbitrary $3 \times 3$ matrix.
+The following example illustrates the rule for the determinant of an arbitrary $3 \times 3$-matrix.
 
 ::::::{prf:example}
 :label: Ex:DetCofactors:3x3det
@@ -286,7 +286,7 @@ $$
 \end{array} \right|.
 $$
 
-As a next step we may choose the third column to expand along, and for the ensuing $3\times3$ determinant we single out the second row:
+As a next step we may choose the third column to expand along, and for the ensuing $3\times3$-determinant we single out the second row:
 
 $$
 -4 \left|\begin{array}{rrrr}
@@ -366,7 +366,7 @@ The matrix $A$ is an example of what is called an upper triangular matrix.
 ::::::{prf:definition}
 :label: Dfn:DetCofactors:TriangularMatrix
 
-A square matrix $A$ is called an **upper triangular matrix**, if all the elements below the diagonal are 0.
+A square matrix $A$ is called an **upper triangular matrix**, if all the elements below the diagonal are $0$.
 Formally, for an upper triangular matrix we have
 
 $$
@@ -399,7 +399,7 @@ expand along the rows from top to bottom.
 
 ::::::
 
-In {numref}`Sec:DetGeometric` we have seen that for $2 \times 2$ and $3 \times 3$ matrices $A$ it holds that $A$ is invertible if and only if $\det{A} \neq 0$.
+In {numref}`Sec:DetGeometric` we have seen that for $2 \times 2$ and $3 \times 3$-matrices $A$ it holds that $A$ is invertible if and only if $\det{A} \neq 0$.
 
 From {prf:ref}`Prop:DetCofactors:TriangularMatrices` it follows that this property still holds for **triangular** matrices.
 
@@ -437,7 +437,7 @@ The last property that may be expected to hold as a consequence of {prf:ref}`Thm
 ::::::{prf:proposition}
 :label: Prop:DetCofactors:DetTranspose
 
-For any $n\times n$ matrix $A$ the determinant of $A$ is equal to the determinant of its transpose. In a formula
+For any $n\times n$-matrix $A$ the determinant of $A$ is equal to the determinant of its transpose. In a formula
 
 $$
 \det{A} = \operatorname{det}\big(A^T\big).
@@ -480,8 +480,8 @@ Which gives the same value.
 ::::::
 
 In fact, by looking at the structure rather than at the numbers, we see the example illustrates that the theorem holds for
-$3 \times 3$ determinants since it holds for $2 \times 2$ determinants.
-In a similar way, the property $\operatorname{det}\big(A^T\big) = \operatorname{det}(A)$ for $4 \times 4$ matrices follows from the correctness for $3 \times 3$ matrices, and this can be (either formally or informally) lifted up to determinants of an arbitrary size.
+$3 \times 3$-determinants since it holds for $2 \times 2$-determinants.
+In a similar way, the property $\operatorname{det}\big(A^T\big) = \operatorname{det}(A)$ for $4 \times 4$-matrices follows from the correctness for $3 \times 3$-matrices, and this can be (either formally or informally) lifted up to determinants of an arbitrary size.
 
 
 ## Grasple exercises
@@ -491,7 +491,7 @@ In a similar way, the property $\operatorname{det}\big(A^T\big) = \operatorname{
 :url: https://embed.grasple.com/exercises/34eb983b-c7e7-40f3-a983-6bfb970f6836?id=93135
 :label: grasple_exercise_5_2_1
 :dropdown:
-:description: To compute the determinant of 2x2 matrix.
+:description: To compute the determinant of $2\times2$-matrix.
 
 ::::::
 
@@ -501,7 +501,7 @@ In a similar way, the property $\operatorname{det}\big(A^T\big) = \operatorname{
 :url: https://embed.grasple.com/exercises/b86bd320-47cd-45cb-ab88-81b20a48c427?id=93136
 :label: grasple_exercise_5_2_2
 :dropdown:
-:description: To compute the determinant of 3x3 matrix.
+:description: To compute the determinant of $3\times3$-matrix.
 
 ::::::
 
@@ -511,7 +511,7 @@ In a similar way, the property $\operatorname{det}\big(A^T\big) = \operatorname{
 :url: https://embed.grasple.com/exercises/2f993d71-6a19-435d-a449-cc0dbb8237d5?id=93137
 :label: grasple_exercise_5_2_3
 :dropdown:
-:description: To compute the determinant of 4x4 matrix (with many zeros).
+:description: To compute the determinant of $4\times4$-matrix (with many zeros).
 
 ::::::
 
@@ -520,7 +520,7 @@ In a similar way, the property $\operatorname{det}\big(A^T\big) = \operatorname{
 :url: https://embed.grasple.com/exercises/40de4737-1823-425b-b997-a07c53cb2f96?id=93138
 :label: grasple_exercise_5_2_4
 :dropdown:
-:description: To compute the determinant of 4x4 matrix.
+:description: To compute the determinant of $4\times4$-matrix.
 
 ::::::
 
@@ -530,7 +530,7 @@ In a similar way, the property $\operatorname{det}\big(A^T\big) = \operatorname{
 :url: https://embed.grasple.com/exercises/57cd522b-6096-416a-a739-fea5cbbc77c9?id=93139
 :label: grasple_exercise_5_2_5
 :dropdown:
-:description: To compute the determinant of an almost upper triangular 4x4 matrix 
+:description: To compute the determinant of an almost upper triangular $4\times4$-matrix.
 
 ::::::
 
@@ -539,7 +539,7 @@ In a similar way, the property $\operatorname{det}\big(A^T\big) = \operatorname{
 :url: https://embed.grasple.com/exercises/25c54a22-eb00-4cbf-ac0c-21b4974a48ff?id=92927
 :label: grasple_exercise_5_2_6
 :dropdown:
-:description: To compute the determinant of 5x5 'structured' matrix.
+:description: To compute the determinant of 'structured' $5\times5$-matrix.
 
 ::::::
 

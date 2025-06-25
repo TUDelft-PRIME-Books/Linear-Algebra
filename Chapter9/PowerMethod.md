@@ -2,7 +2,7 @@
 
 # The power method
 
-The eigenvalues of an $n\times n$ matrix $A$ to a large extent characterise the matrix. In theory they can be found as the zeros of the characteristic polynomial. Already for $n = 3$ it is not an easy matter to find the exact zeros, and for $n\geq 5$ there is no general formula for the zeros.  
+The eigenvalues of an $n\times n$-matrix $A$ to a large extent characterise the matrix. In theory they can be found as the zeros of the characteristic polynomial. Already for $n = 3$ it is not an easy matter to find the exact zeros, and for $n\geq 5$ there is no general formula for the zeros.  
 One way to resolve this is to use a numerical method to solve an equation of degree $n$. Alternatively, there are algorithms more in the vein of linear algebra to find approximations of one or more eigenvalues. The simplest of these is the *power method*. This method often provides the eigenvalue of the largest absolute value (or, modulus), and this comes with an eigenvector as well. Note that the largest eigenvalue is in fact the most important eigenvalue concerning the stability or instability of the linear dynamical system connected to $A$.
 
 (Subsec:Powermethod:Basics)=
@@ -69,7 +69,7 @@ We put a name to the situation where a matrix $A$ has a single eigenvalue of hig
 ::::{prf:definition}
 :label: Def:PowerMethod:DominantEigenvalue
 
-Suppose the $n\times n$ matrix $A$ has the eigenvalues $\lambda_1, \ldots, \lambda_n$ ordered according to
+Suppose the $n\times n$-matrix $A$ has the eigenvalues $\lambda_1, \ldots, \lambda_n$ ordered according to
 
 $$
   |\lambda_1| \geq |\lambda_2| \geq \,\,\ldots\,\,\geq |\lambda_n|.
@@ -84,7 +84,7 @@ Consider the following algorithm.
 ::::{prf:algorithm}
 :label: Alg:PowerMethod:PowMed
 
-Suppose $A$ is an $n\times n$ matrix.
+Suppose $A$ is an $n\times n$-matrix.
 
 <u>Step 1</u> &nbsp; Choose an arbitrary nonzero vector $\vect{x}$ in $\R^n$.
 
@@ -129,7 +129,7 @@ Moreover, suppose $\vect{x}$ is the result after a (sufficiently) large number o
 ::::{admonition} Informal proof of {prf:ref}`Prop:Powermethod:Powermed`
 :class: tudproof, dropdown
 
-For the proof we assume that the matrix is diagonalisable, to be able to use {eq}`Eq:PowerMethod:GenSol`. For an 'arbitrary' matrix the odds are very small that it has a double eigenvalue, and as long as this is not the eigenvalue with the highest modulus the conclusion of the theorem is still valid.  So we assume that  $\vect{v}_1, \ldots, \vect{v}_n$  is a set of $n$ linearly independent eigenvectors for $A$.
+For the proof we assume that the matrix is diagonalisable, to be able to use Equation {eq}`Eq:PowerMethod:GenSol`. For an 'arbitrary' matrix the odds are very small that it has a double eigenvalue, and as long as this is not the eigenvalue with the highest modulus the conclusion of the theorem is still valid.  So we assume that  $\vect{v}_1, \ldots, \vect{v}_n$  is a set of $n$ linearly independent eigenvectors for $A$.
 
 With the scalings we consider in fact the dynamical process
 
@@ -144,14 +144,14 @@ $$
   \vect{u}_0 = \vect{s}, \quad \vect{u}_{k+1} =  A\vect{u}_k.
 $$
 
-And we know (Formula {eq}`Eq:PowerMethod:GenSol`) that under the assumption of a dominant eigenvalue $\lambda_1$ and an initial vector
+And we know (Equation {eq}`Eq:PowerMethod:GenSol`) that under the assumption of a dominant eigenvalue $\lambda_1$ and an initial vector
 
 $$
    \vect{s} = c_1\vect{v}_1 + c_2\vect{v}_2 +  \ldots + c_n\vect{v}_n, \quad c_1 \neq 0,
 $$
  
 the vectors $A^k\vect{s}$ in the long run behave as $c_1\lambda_1^k\vect{v}_1$. <BR>
-The effect of the scalings is that all along the way we keep vectors with largest entry 1. Thus the scaled process will converge to the dominant eigenvector $\vect{v}$ with largest entry 1.
+The effect of the scalings is that all along the way we keep vectors with largest entry $1$. Thus the scaled process will converge to the dominant eigenvector $\vect{v}$ with largest entry $1$.
 
 ::::
 
@@ -188,7 +188,7 @@ $$
   \vect{v}_1 = \begin{pmatrix} 0.5 \\ 1 \end{pmatrix},
 $$
 
-which is the eigenvector with largest entry 1 for the dominant eigenvalue $\lambda = 9$. <BR>
+which is the eigenvector with largest entry $1$ for the dominant eigenvalue $\lambda = 9$. <BR>
 For this specific example the 'convergence to an eigenvector' goes very quickly!
 
 Two circumstances help this rapid convergence.
@@ -217,10 +217,10 @@ $$
    c_2\left(\frac49\right)^k\begin{pmatrix} 2 \\ -1 \end{pmatrix}  \right).
 $$
 
-By rescaling we get a vector in the same direction with highest entry equal to 1.
+By rescaling we get a vector in the same direction with highest entry equal to $1$.
 
 That we have such a rapid convergence in the example is due to the two circumstances mentioned: <BR>
-(1) the ratio $|\lambda_2/\lambda_2| = 4/9 = 0.4444...$ is much smaller than 1, <BR>
+(1) the ratio $|\lambda_2/\lambda_2| = 4/9 = 0.4444...$ is much smaller than $1$, <BR>
 and <BR>
 (2) the ratio $\dfrac{c_1}{c_2} = \dfrac{3/5}{1/5} = 3$ is not too close to zero.<BR>
 Thus the term with the eigenvector $\mathbf{v}_2$ in the expression within the parentheses
@@ -258,7 +258,7 @@ $$
   \norm{\vect{x}_{k+1} - \vect{x}_{k}} \leq 10^{-4}.
 $$
 
-This restriction is met after 26 iterations. 
+This restriction is met after $26$ iterations. 
 The current value of $\vect{x}_{26}$, 
 up to four decimals, is then
 
@@ -330,7 +330,7 @@ $$
    \vect{x}_{200} = \begin{pmatrix}   0.5297 \\ 0.5007 \\ 1.0000 \\ -0.4751 \end{pmatrix}.
 $$
 
-Only after 700 to 800 iterations the process starts to stabilise:
+Only after $700$ to $800$ iterations the process starts to stabilise:
 
 $$
    \vect{x}_{799} = \begin{pmatrix}   -0.2506 \\ -0.0763 \\ -0.1672 \\1.0000 \end{pmatrix} \,\, \approx \,\,
@@ -351,7 +351,7 @@ So the largest eigenvalue $\lambda_1 \approx -8.4018$, and the above equations a
 
 Now why are things going so slowly here?
 
-Well, up to four decimals, the largest and the second largest eigenvalues are given by $\lambda_1 = -8.3967$ and $\lambda_2 = 8.2974$. The ratio of the absolute values of these two is very close to 1, namely
+Well, up to four decimals, the largest and the second largest eigenvalues are given by $\lambda_1 = -8.3967$ and $\lambda_2 = 8.2974$. The ratio of the absolute values of these two is very close to $1$, namely
 
 $$
   \frac{|\lambda_2|}{|\lambda_1|} = 0.9882.
@@ -409,7 +409,7 @@ The first issue is covered by the next proposition.
 ::::{prf:proposition} Inverse Power Method
 :label: Prop:PowerMethod:SmallestEigenvalue
 
-Suppose $A$ is an $n\times n$ matrix with $n$ eigenvalues ordered via
+Suppose $A$ is an $n\times n$-matrix with $n$ eigenvalues ordered via
 
 $$
   |\lambda_1| \geq |\lambda_2| \geq  \ldots \geq |\lambda_{n-1}| > |\lambda_{n}| > 0.
@@ -520,7 +520,7 @@ This more or less proves the following proposition.
 ::::{prf:proposition} Shifted Power Method
 :label: Prop:PowerMethod:Shifted
 
-Suppose $A$ is an $n \times n$ matrix with eigenvalues  $\lambda_1, \ldots, \lambda_n$, and $\alpha$ is a real number. Furthermore, define the matrix  $B = A - \alpha{I}$.
+Suppose $A$ is an $n \times n$-matrix with eigenvalues  $\lambda_1, \ldots, \lambda_n$, and $\alpha$ is a real number. Furthermore, define the matrix  $B = A - \alpha{I}$.
 
 If the power method applied to the matrix $B$  converges to the  eigenvalue $\mu$  of the matrix $B$, with the  corresponding eigenvector $\mathbf{v}$, then 
 $\mathbf{v}$ is an eigenvector of the matrix $A$ for the eigenvalue $\lambda_i =\mu + \alpha$.
@@ -581,7 +581,7 @@ We have just given the argument for a last proposition concerning the power meth
 ::::{prf:proposition} Shifted Power Method
 :label: Prop:PowerMethod:ShiftedInverse
 
-Suppose $A$ is an $n \times n$ matrix with eigenvalues  $\lambda_1, \ldots, \lambda_n$, and $\alpha$ is a real number. Furthermore, define the matrix  $B = A - \alpha{I}$.
+Suppose $A$ is an $n \times n$-matrix with eigenvalues  $\lambda_1, \ldots, \lambda_n$, and $\alpha$ is a real number. Furthermore, define the matrix  $B = A - \alpha{I}$.
 
 If the inverse power method applied to the matrix $B$ converges to the  eigenvalue $\mu$  of the matrix $B$,  with the  corresponding eigenvector $\mathbf{v}$, then 
 $\mathbf{v}$ is an eigenvector of the matrix $A$ for the eigenvalue $\lambda_i = \mu + \alpha$ that is closest to the number $\alpha$.
@@ -632,7 +632,7 @@ In the last example the complex eigenvalues $\lambda_{1,2}$ came up.  For those 
 ## Power method and complex eigenvalues
 
 In {numref}`Subsec:Powermethod:Basics` we assumed that the matrix $A$ is diagonalisable,
-and in that case we could use {eq}`Eq:PowerMethod:GenSol` to prove that the power method in general converges, and that the speed of convergence depends on the quotient
+and in that case we could use Equation {eq}`Eq:PowerMethod:GenSol` to prove that the power method in general converges, and that the speed of convergence depends on the quotient
 
 $$
    \dfrac{|\lambda_2|}{|\lambda_1|}.
@@ -654,7 +654,7 @@ $$
 $$
 
 
-After 23 iterations we find that 
+After $23$ iterations we find that 
 
 $$
   \norm{\vect{x}_{23} - \vect{x}_{22}} \leq 10^{-4}.
@@ -831,7 +831,7 @@ Problem solved!
 :url: https://embed.grasple.com/exercises/eec3cdc7-c86d-4fc7-a7fc-46b362a0fa5f?id=109962
 :label: grasple_exercise_9_3_1
 :dropdown:
-:description: To distill an eigenvalue from the iterates of the power method
+:description: To distill an eigenvalue from the iterates of the power method.
 
 ::::
 
@@ -842,7 +842,7 @@ Problem solved!
 :url: https://embed.grasple.com/exercises/adc25718-7937-4d81-ac21-bc37ddc489ad?id=109711
 :label: grasple_exercise_9_3_2
 :dropdown:
-:description: Effect of a shift on the outcome of the power method
+:description: Effect of a shift on the outcome of the power method.
 
 ::::
 
@@ -851,6 +851,6 @@ Problem solved!
 :url: https://embed.grasple.com/exercises/866238fe-6aae-4b19-a631-f56f179abd5d?id=109767
 :label: grasple_exercise_9_3_3
 :dropdown:
-:description: Effect of a shift on the outcome of the power method
+:description: Effect of a shift on the outcome of the power method.
 
 ::::

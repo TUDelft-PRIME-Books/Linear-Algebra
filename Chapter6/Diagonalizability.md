@@ -9,7 +9,7 @@
 ::::::{prf:definition}
 :label: Dfn:Diagonalisable:SimalarMatrices
 
-Two $n \times n$ matrices $A$ and $B$ are called **similar** if they are related via the property
+Two $n \times n$-matrices $A$ and $B$ are called **similar** if they are related via the property
 
 $$
 B = PAP^{-1} \quad \text{for some invertible matrix  } P.
@@ -157,7 +157,7 @@ that holds for the geometric and the algebraic multiplicity of an eigenvalue
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity` &nbsp;  (geom.mult. $\leq$ alg.mult.)
 :class: tudproof, dropdown
 
-Suppose the $n\times n$ matrix $A$ has the eigenvalue $\lambda_1$ of geometric multiplicity $k$.  We have to show that the algebraic multiplicity of $\lambda_1$ is *at least* equal to $k$. We will do so by constructing a matrix $B$ that is similar to $A$ and for which the eigenvalue $\lambda_1$ will clearly have algebraic multiplicity at least equal to $k$. <BR>
+Suppose the $n\times n$-matrix $A$ has the eigenvalue $\lambda_1$ of geometric multiplicity $k$.  We have to show that the algebraic multiplicity of $\lambda_1$ is *at least* equal to $k$. We will do so by constructing a matrix $B$ that is similar to $A$ and for which the eigenvalue $\lambda_1$ will clearly have algebraic multiplicity at least equal to $k$. <BR>
 Suppose $\vect{v}_1,\ldots,\vect{v}_k$ are $k$ linearly independent eigenvectors for $\lambda_1$.  We can extend $\{\vect{v}_1,\ldots,\vect{v}_k,\}$ to a basis $\{\vect{v}_1,\ldots,\vect{v}_k, \ldots, \mathbf{v}_n \}$   of $\mathbb{R}^n$.
 Let $P$ be the matrix with  $\vect{v}_1,\ldots,\vect{v}_n$ as columns.  $P$ is invertible, and we have that
 
@@ -337,7 +337,7 @@ An equivalent alternative characterisation of diagonalisability is given in the 
 ::::::{prf:proposition}
 :label: Prop:Eigenvalues:DiagbleVersusEigenvectors
 
-An $n \times n$  matrix $A$ is diagonalisable if and only if $A$ has $n$ linearly independent eigenvectors.
+An $n \times n$-matrix $A$ is diagonalisable if and only if $A$ has $n$ linearly independent eigenvectors.
 Such a set of eigenvectors then forms a basis for $\R^n$.
 
 ::::::
@@ -570,7 +570,7 @@ has the double eigenvalue $\lambda_1 = \lambda_2 = 2$.
 Since  
 $A - 2I = \left(\begin{array}{cc} 0 & 1 \\ 0 & 0 \end{array}
 \right)$
-has rank 1, there is only one independent eigenvector.
+has rank $1$, there is only one independent eigenvector.
 Thus there does not exist a basis of eigenvectors for $A$, and consequently the matrix $A$ is not diagonalisable.
 
 ::::::
@@ -583,7 +583,7 @@ $A = \left(\begin{array}{ccc} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{array}
 \right)$
 of {prf:ref}`Ex:EigenValues:SecondCharPoly`
 and {prf:ref}`Ex:EigenValues:SecondCharPolyContinued`
-provides another example of this phenomenon. It has the two eigenvalues, $\lambda_1=3$, of algebraic multiplicity 2, and $\lambda_2 = 2$, of algebraic multiplicity 1.
+provides another example of this phenomenon. It has the two eigenvalues, $\lambda_1=3$, of algebraic multiplicity $2$, and $\lambda_2 = 2$, of algebraic multiplicity $1$.
 There is only one independent eigenvector for $\lambda_{1}$. This, together with the single independent eigenvector for $\lambda_2$ is a maximal set of two linearly independent eigenvectors for $A$.  So, this matrix  $A$ is again not diagonalisable.
 
 ::::::
@@ -608,7 +608,7 @@ $$
 0 & 0  & 3 & 1 \\ 0 & 0 & 0 & 0 \end{array} \right)
 $$
 
-Since this matrix has three linear independent columns, it has rank 3, and its null space has dimension $4-3 = 1$. Hence the geometric multiplicity of $\lambda_1$ is equal to 1, which is smaller than its algebraic multiplicity.  This implies that the matrix $A$ is not diagonalisable.
+Since this matrix has three linear independent columns, it has rank $3$, and its null space has dimension $4-3 = 1$. Hence the geometric multiplicity of $\lambda_1$ is equal to $1$, which is smaller than its algebraic multiplicity.  This implies that the matrix $A$ is not diagonalisable.
 
 ::::::
 
@@ -620,7 +620,7 @@ These examples show the two causes why a matrix may not be diagonalisable, as is
 ::::::{prf:theorem}
 :label: Thm:Diagonalisable:ThirdCharacterization
 
-The $n \times n$ matrix $A$ is (real) diagonalisable if and only if it satisfies the following two conditions.
+The $n \times n$-matrix $A$ is (real) diagonalisable if and only if it satisfies the following two conditions.
 
 <ol type = "i">
 
@@ -654,7 +654,7 @@ The basic idea is that, since eigenvectors for different eigenvalues are automat
 ::::::{admonition} (More detailed) Proof of&nbsp;{prf:ref}`Thm:Diagonalisable:ThirdCharacterization`
 :class: tudproof, dropdown
 
-Suppose that the $n \times n$ matrix $A$ has only real eigenvalues,  say  $\lambda_1,\ldots,\lambda_k$, and that for each eigenvalue $\lambda_i$ the geometric multiplicity $m_i$  is equal to the algebraic multiplicity, so
+Suppose that the $n \times n$-matrix $A$ has only real eigenvalues,  say  $\lambda_1,\ldots,\lambda_k$, and that for each eigenvalue $\lambda_i$ the geometric multiplicity $m_i$  is equal to the algebraic multiplicity, so
 
 $$
   \operatorname{g.m.}(\lambda_i)  = m_i= \operatorname{a.m.}(\lambda_i) , \quad i = 1, \ldots, k.
@@ -714,7 +714,7 @@ $$
     c^{(i)}_1 = 0, \,\ldots\,, \, c^{(i)}_{m_i}= 0.
 $$
 
-This shows that {eq}`Eq:Diagonalisable:SumAllEigenvalues`  can only hold if all coefficients  are zero, and consequently the set
+This shows that Equation {eq}`Eq:Diagonalisable:SumAllEigenvalues`  can only hold if all coefficients  are zero, and consequently the set
 
 $$
    \{\vect{v}^{(1)}_1, \,\ldots, \,\vect{v}^{(1)}_{m_1}, \,\,.\,.\,.\,.\,.\,\,, \,\vect{v}^{(k)}_1, \,\ldots, \, \vect{v}^{(k)}_{m_k}\} 
@@ -729,7 +729,7 @@ We saw that there is a weak connection between eigenvalues and (non-)invertibili
 {prf:ref}`Prop:EigenValues:SingularMatrix` states: a matrix is singular if and only if it has the eigenvalue $0$.
 
 
-In exercise 6.3.12 below you are invited to investigate the connection (or non-connection) between diagonalisability and invertibility.
+In {ref}`grasple_exercise_6_3_16` you are invited to investigate the connection (or non-connection) between diagonalisability and invertibility.
 
 %::::::{exercise}
 %:label: Exc:Diagonalisable:Invertibility
@@ -781,7 +781,7 @@ since the internal factors $P^{-1}P$ reduce to the identity matrix $I$, and $ID 
 
 Check for yourself what happens if $k = 0$.
 
-The advantage is the following. Normally, multiplication of two $n \times n$ matrices requires $n$ multiplications per entry (or $2n-1$ operations, if additions are counted as well), and there are $n\times n$ entries to be computed. So for the $k$th power that requires about $k\times n^3$ multiplications of numbers.
+The advantage is the following. Normally, multiplication of two $n \times n$-matrices requires $n$ multiplications per entry (or $2n-1$ operations, if additions are counted as well), and there are $n\times n$ entries to be computed. So for the $k$th power that requires about $k\times n^3$ multiplications of numbers.
 To compute $PD^kP^{-1}$ we need $n$ $k$th powers to find $D^k$, and we are left with one 'simple' matrix product $PD^k$ and one 'full' matrix product.
 
 ::::::
@@ -993,7 +993,7 @@ $$
 :url: https://embed.grasple.com/exercises/bd1c8f7a-917f-431f-889b-463ab7a7c6f6?id=91486
 :label: grasple_exercise_6_3_1
 :dropdown:
-:description: Given a $2\times 2$ matrix $A$ and 'diagonaliser' $P$, to find the diagonal matrix $D$ such that $A=PDP^{-1}$.  
+:description: Given a $2\times 2$-matrix $A$ and 'diagonaliser' $P$, to find the diagonal matrix $D$ such that $A=PDP^{-1}$.  
 
 ::::::
 
@@ -1002,7 +1002,7 @@ $$
 :url: https://embed.grasple.com/exercises/5bcb24df-9cfd-4e4b-bcae-b550fb0fad63?id=91488
 :label: grasple_exercise_6_3_2 
 :dropdown:
-:description:  To find a diagonalisation of a $2\times 2$ matrix (insofar it exists).
+:description:  To find a diagonalisation of a $2\times 2$-matrix (insofar it exists).
 
 ::::::
 
@@ -1011,7 +1011,7 @@ $$
 :url: https://embed.grasple.com/exercises/c0d56365-5434-45b0-9c82-805112428024?id=91489
 :label: grasple_exercise_6_3_3 
 :dropdown:
-:description:  To find a diagonalisation of a $2\times 2$ matrix (insofar it exists).
+:description:  To find a diagonalisation of a $2\times 2$-matrix (insofar it exists).
 
 ::::::
 
@@ -1023,7 +1023,7 @@ $$
 :url: https://embed.grasple.com/exercises/deb8d92e-5918-40f3-bdea-3dc3511d83a1?id=91491
 :label: grasple_exercise_6_3_4
 :dropdown:
-:description: To investigate the diagonalisability of a ($3 \times 3$) matrix. 
+:description: To investigate the diagonalisability of a $3 \times 3$-matrix. 
 
 ::::::
 
@@ -1032,7 +1032,7 @@ $$
 :url: https://embed.grasple.com/exercises/537a306b-47d1-422a-bc15-c7a75b81c24b?id=91496
 :label: grasple_exercise_6_3_5 
 :dropdown:
-:description:  To investigate the diagonalisability of a ($3 \times 3$) matrix.
+:description:  To investigate the diagonalisability of a $3 \times 3$-matrix.
 
 ::::::
 
@@ -1041,7 +1041,7 @@ $$
 :url: https://embed.grasple.com/exercises/5a71e703-acd5-48b1-9b6d-8a51f4f8cf95?id=91501
 :label: grasple_exercise_6_3_6
 :dropdown:
-:description:  To investigate the diagonalisability of a ($3 \times 3$) matrix.
+:description:  To investigate the diagonalisability of a $3 \times 3$-matrix.
 
 ::::::
 
@@ -1051,7 +1051,7 @@ $$
 :url: https://embed.grasple.com/exercises/70b5964e-b6c7-4a64-a2e3-d10dc915f324?id=91503
 :label: grasple_exercise_6_3_7 
 :dropdown:
-:description:  To investigate the diagonalisability of a ($3 \times 3$) matrix. 
+:description:  To investigate the diagonalisability of a $3 \times 3$-matrix. 
 
 ::::::
 
@@ -1061,7 +1061,7 @@ $$
 :url: https://embed.grasple.com/exercises/e9bcf8d4-5b26-4f56-90df-76345c4e85e1?id=71926
 :label: grasple_exercise_6_3_8
 :dropdown:
-:description:  To investigate the diagonalisability of a ($3 \times 3$) matrix. 
+:description:  To investigate the diagonalisability of a $3 \times 3$-matrix. 
 
 
 ::::::
@@ -1071,7 +1071,7 @@ $$
 :url: https://embed.grasple.com/exercises/f61dfb8f-db65-4f17-80c7-b1702b0c2c07?id=104493
 :label: grasple_exercise_6_3_9 
 :dropdown:
-:description:  To investigate the diagonalisability of a 3x3 matrix of rank 1. 
+:description:  To investigate the diagonalisability of a $3 \times 3$-matrix of rank $1$. 
 
 ::::::
 
@@ -1082,7 +1082,7 @@ $$
 :url: https://embed.grasple.com/exercises/bc214d8e-b1a1-4b39-bedd-0ae36380b14a?id=71933
 :label: grasple_exercise_6_3_10 
 :dropdown:
-:description:  For which $\alpha$ is given  3x3  matrix $A$ diagonalisable? 
+:description:  For which $\alpha$ is given $3 \times 3$-matrix $A$ diagonalisable? 
 
 ::::::
 
@@ -1117,7 +1117,7 @@ $$
 :url: https://embed.grasple.com/exercises/534ce865-0960-403a-affc-0f23f2d14110?id=91521
 :label: grasple_exercise_6_3_13
 :dropdown:
-:description: For which $\alpha$ is given (upper triangular) $4 \times 4$ matrix diagonalisable?
+:description: For which $\alpha$ is given (upper triangular) $4 \times 4$-matrix diagonalisable?
 
 ::::::
 
@@ -1126,7 +1126,7 @@ $$
 :url: https://embed.grasple.com/exercises/f3cdb060-469a-4a30-be46-1ecc7197d66a?id=91522
 :label: grasple_exercise_6_3_14 
 :dropdown:
-:description: True/False question (about a $4\times4$ matrix with $3$ distinct eigenvalues).  
+:description: True/False question (about a $4\times4$-matrix with $3$ distinct eigenvalues).  
 
 ::::::
 
