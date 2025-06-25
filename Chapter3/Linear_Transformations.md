@@ -12,7 +12,7 @@ $$
  A\mathbf{x} = \mathbf{b},
 $$
 
-where $A$ is an $m \times n$ matrix, is just a concise way to write down a system of $m$ linear equations in $n$
+where $A$ is an $m \times n$-matrix, is just a concise way to write down a system of $m$ linear equations in $n$
 unknowns.
 A different way to look at this matrix equation is to consider it as an input-output system:
 the left-hand side $A\mathbf{x}$
@@ -40,12 +40,12 @@ which makes them the protagonists of the more general linear algebra concept of 
 
 ## Matrix transformations
 
-Let $A$ be an $m\times n$ matrix. We can in a natural way associate a transformation $T_A:\mathbb{R}^n \to \mathbb{R}^m$ &nbsp; to the matrix $A$.
+Let $A$ be an $m\times n$-matrix. We can in a natural way associate a transformation $T_A:\mathbb{R}^n \to \mathbb{R}^m$ &nbsp; to the matrix $A$.
 
 ::::::{prf:definition}
 :label: Def:LinTrafo:MatrixTransformation
 
-The transformation $T_A$ corresponding to the $m\times n$ matrix $A$
+The transformation $T_A$ corresponding to the $m\times n$-matrix $A$
 is the mapping defined by
 
 $$
@@ -160,7 +160,7 @@ A = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-is an $m\times n$ matrix.
+is an $m\times n$-matrix.
 
 Then the range of the matrix transformation corresponding to $A$ is the span of the columns of $A$:
 
@@ -228,7 +228,7 @@ which is the $xy$-plane in $\mathbb{R}^3$.
 
 ::::::
 
-For $2\times2$ and $3\times3$ matrices the transformations often have a geometric interpretation, as the following example illustrates.
+For $2\times2$ and $3\times3$-matrices the transformations often have a geometric interpretation, as the following example illustrates.
 
 ::::::{prf:example}
 :label: Eq:LinTrafo:SkewProjection
@@ -878,7 +878,7 @@ $$
     T(c\mathbf{x}) = c T(\mathbf{x}).
 $$
 
-First apply rule (i) to split the term on the left in {eq}`Eq:LinTrafo:LinComb` into $k$ terms:
+First apply rule (i) to split the term on the left in Equation {eq}`Eq:LinTrafo:LinComb` into $k$ terms:
 
 $$
 \begin{array}{ccl}

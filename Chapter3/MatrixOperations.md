@@ -393,9 +393,9 @@ $$
 
 
 As regards the other statement, i.e.,  $(A^T)^T = A$,
-suppose  $A$ is an $m\times n$ matrix,  $B = A^T$,  and  $C = B^T$. We have to show that $C = A$.
+suppose  $A$ is an $m\times n$-matrix,  $B = A^T$,  and  $C = B^T$. We have to show that $C = A$.
 
-Now first of all, if  $A$ is an $m\times n$ matrix, then  $B$ is an $n\times m$ matrix, and transposiong again gives an $m \times n$ matrix  $C$, so $C$ has the same shape as $A$.
+Now first of all, if  $A$ is an $m\times n$-matrix, then  $B$ is an $n\times m$-matrix, and transposiong again gives an $m \times n$-matrix  $C$, so $C$ has the same shape as $A$.
 
 Furthermore,  transposing means 'flipping' the indices.  We quickly see that  $C_{ij} = B_{ji} = A_{ij}$,
 for $1 \leq i \leq m$, $1 \leq j \leq n$,  so entry by entry  $A$ and $C$ are equal.
