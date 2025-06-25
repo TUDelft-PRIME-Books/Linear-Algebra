@@ -281,7 +281,7 @@ In this section, we will talk about surjectivity. It is a natural complement to 
 ::::::{prf:definition}
 :label: Def:InjSurj:Surj
 
-A linear transformation $T:\mathbb{R}^{m}\to\mathbb{R}^{n}$ is called **surjective** if for any vector $\mathbf{u}$ in $\mathbb{R}^{n}$ there is some vector $\mathbf{v}$ in $\mathbb{R}^{m}$ such that $T(\mathbf{v})=\mathbf{u}$. In other words, $T$ is surjective if and only if the range of $T$ is the whole codomain.
+A linear transformation $T:\mathbb{R}^{m}\to\mathbb{R}^{n}$ is called **surjective** or **onto** if for any vector $\mathbf{u}$ in $\mathbb{R}^{n}$ there is some vector $\mathbf{v}$ in $\mathbb{R}^{m}$ such that $T(\mathbf{v})=\mathbf{u}$. In other words, $T$ is surjective if and only if the range of $T$ is the whole codomain.
 
 ::::::
 
@@ -626,5 +626,34 @@ Then $TS(\vect{v})=AB\vect{v}=\vect{v}$ for any $\vect{v}$ in $\R^{n}$. The only
 :label: grasple_exercise_3_5_4
 :dropdown:
 :description: What can we conclude if the composition of two transformations is bijective?
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/d39e2c62-fff8-432b-894c-e45a62803055?id=122294
+:label: grasple_exercise_3_5_5
+:dropdown:
+:description: Find values of $h$ for which  a transformation becomes injective and/or surjective. 
+
+::::
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/b6d5aa56-ff2d-41de-bec0-b3b4aa7269e6?id=122297
+:label: grasple_exercise_3_5_6
+:dropdown:
+:description: Statements about injectivity/surjectivity for  $T$ from $\R^n$ to $\R^m$,  $n > m$.
+
+::::
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/d0eeb679-eb6d-4d3b-92d8-5137bea72254?id=122298
+:label: grasple_exercise_3_5_7
+:dropdown:
+:description: Statements about injectivity/surjectivity for  $T$ from $\R^n$ to $\R^n$
 
 ::::
