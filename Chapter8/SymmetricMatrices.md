@@ -1184,6 +1184,15 @@ $$
 :description: To check whether a matrix $A$ is symmetric.
 ::::
 
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/4b6f8822-31ff-4962-addf-97ee2133c449?id=118446
+:label: grasple_exercise_8_1_2A
+:dropdown:
+:description: Recognising orthogonal matrices
+::::
+
+
 
 ::::{grasple}
 :iframeclass: dark-light
