@@ -1,8 +1,8 @@
 (Section:ComplexEV)=
 
-# Complex Eigenvalues and Eigenvectors
+# Complex eigenvalues and eigenvectors
 
-In the previous sections we hinted at the possibility to allow eigenvalues to be complex numbers. For an $n\times n$ matrix $A$ the eigenvalues are the zeros of the characteristic polynomial $p_A(\lambda)$ of $A$. Even if the matrix is real, these zeros may be complex. We start with an example to explore this until now unknown territory.
+In the previous sections we hinted at the possibility to allow eigenvalues to be complex numbers. For an $n\times n$-matrix $A$ the eigenvalues are the zeros of the characteristic polynomial $p_A(\lambda)$ of $A$. Even if the matrix is real, these zeros may be complex. We start with an example to explore this until now unknown territory.
 
 ::::{prf:example}
 :label: Ex:ComplexEV:FirstExample
@@ -28,7 +28,7 @@ $$
 A\vect{v} = \lambda_1\vect{v}    \quad\iff\quad  (A -  \lambda_1I)\vect{v} = \vect{0}.
 $$
 
-So we have to solve a homogeneous system of linear equations, where now the coefficient matrix contains complex numbers. This slightly complicates the computation, but for this $2 \times 2$ matrix things don't get too bad.
+So we have to solve a homogeneous system of linear equations, where now the coefficient matrix contains complex numbers. This slightly complicates the computation, but for this $2 \times 2$-matrix things don't get too bad.
 
 $$
 \left(\begin{array}{cc|c} 1 - (2+i) & -2& 0 \\ 1 & 3- (2+i) & 0 \end{array}\right)
@@ -40,7 +40,7 @@ $$
 $$
 
 where the row operation we invoke is: add the second row $(1+i)$ times to the first row.
-The blue 0 is the result of the evaluation of
+The blue $0$ is the result of the evaluation of
 
 $$
 -2 + (1+i)(1-i).
@@ -126,7 +126,7 @@ $\quad\overline{A} = \left(\begin{array}{ccc} \overline{a_{11}} & \ldots & \over
 <ol type = "i">
 <li>
 
-If $A$ and $B$ are two $m\times n$ matrices, then $\overline{A+B} = \overline{A}+\overline{B}$.
+If $A$ and $B$ are two $m\times n$-matrices, then $\overline{A+B} = \overline{A}+\overline{B}$.
 
 </li>
 <li>
@@ -224,14 +224,14 @@ $$
 
 From row reduction of the augmented matrix
 
-\begin{eqnarray*}
-(A - (a+bi)I | \vect{0}) &=&
+\begin{align*}
+(A - (a+bi)I | \vect{0}) &=
 \left(\begin{array}{cc|c} a-(a+bi) & -b &0\\ b & a-(a+bi)&0 \end{array}\right)\\
-&=&
+&=
 \left(\begin{array}{cc|c} -bi & -b&0 \\ b & -bi&0 \end{array}\right) \\
-&\sim&
+&\sim
 \left(\begin{array}{cc|c} bi & b &0\\ 0 & 0&0 \end{array}\right),
-\end{eqnarray*}
+\end{align*}
 
 we see that $\vect{v} = \left(\begin{array}{c} 1 \\ -i \end{array}\right)$
 is an eigenvector for $\lambda_1 = a+bi$. By taking conjugates
@@ -316,14 +316,14 @@ $$
 where
 
 $$
-  r = |\lambda|, \quad \varphi = \text{arg}\,\lambda.
+  r = |\lambda|, \quad \varphi = \operatorname{arg}\,\lambda.
 $$
 
-{prf:ref}`Prop:ComplexEV:Rotation` can be generalised as follows. If a real $n \times n$ matrix $A$ has a non-real eigenvalue, there is always a rotation 'hidden' in the transformation $T: \vect{x} \mapsto A\vect{x}$.
+{prf:ref}`Prop:ComplexEV:Rotation` can be generalised as follows. If a real $n \times n$-matrix $A$ has a non-real eigenvalue, there is always a rotation 'hidden' in the transformation $T: \vect{x} \mapsto A\vect{x}$.
 
 ::::::{prf:proposition}
 :label: Prop:ComplexEV:Invariant
-Suppose the real $n \times n$ matrix $A$ has a complex eigenvalue $\lambda = \alpha - \beta i$, with $\beta \neq 0$. Then there exist two linearly independent _real_ vectors $\vect{u}$ and $\vect{w}$ for which
+Suppose the real $n \times n$-matrix $A$ has a complex eigenvalue $\lambda = \alpha - \beta i$, with $\beta \neq 0$. Then there exist two linearly independent _real_ vectors $\vect{u}$ and $\vect{w}$ for which
 
 $$
 \begin{cases}
@@ -387,7 +387,7 @@ This more or less settles the following proposition.
 ::::::{prf:proposition}
 :label: Prop:ComplexEV:HiddenRotation
 
-Suppose $A$ is a $2 \times 2$ matrix with eigenvalues $\alpha \pm \beta i$, with $\beta \neq 0$. <BR>
+Suppose $A$ is a $2 \times 2$-matrix with eigenvalues $\alpha \pm \beta i$, with $\beta \neq 0$. <BR>
 Then $A$ can be written as
 
 $$
@@ -409,7 +409,7 @@ where $\vect{u} + i \vect{w}$ is an eigenvector for $\lambda = \alpha - \beta i$
 
 
 ::::::{prf:remark}
-
+:label: Rmk:ComplexEV:HiddenRotation
 
 {prf:ref}`Prop:ComplexEV:Rotation` states that $C$ can be written as
 
@@ -427,6 +427,7 @@ We can interpret \nbsp; $\left(\begin{array}{cc} \cos(\varphi) & -\sin(\varphi) 
 Let us illustrate matters with the following example.
 
 ::::::{prf:example}
+:label:  Ex:ComplexEV:FirstExampleCtd2
 
 The matrix $A = \left(\begin{array}{cc} 1 & -2 \\ 1 & 3  \end{array}\right)$
 of {prf:ref}`Ex:ComplexEV:FirstExample`
@@ -502,8 +503,9 @@ We then say that $PDP^{-1}$ is a **diagonalisation** of $A$.
 Just like in the real case diagonalisability has all to do with the existence of enough (possibly complex) eigenvectors. The derivation is the same as in {numref}`Section %s <Sec:Diagonalise>`, we only repeat the conclusion.
 
 ::::::{prf:proposition}
+:label:  Thm:Diagonalisable:ComplexCharacterization
 
-An $n\times n$ matrix is (complex) diagonalisable if and only if there exists a basis of eigenvectors for $\mathbb{C}^n$.
+An $n\times n$-matrix is (complex) diagonalisable if and only if there exists a basis of eigenvectors for $\mathbb{C}^n$.
 
 In that case, if $\vect{v}_1, \ldots, \vect{v}_n$ are $n$ linearly independent eigenvectors for the eigenvalues $\lambda_1, \ldots, \lambda_n$,
 then
@@ -584,7 +586,7 @@ A matrix $A$ is complex diagonalisable if and only if for each eigenvalue the ge
 :url: https://embed.grasple.com/exercises/366239a6-6407-4a2f-ae1b-97914a6aca23?id=116981
 :label: grasple_exercise_6_4_1
 :dropdown:
-:description:   Given a complex eigenvector of  a $2\times 2$ matrix, find the corresponding eigenvalue.  
+:description:   Given a complex eigenvector of  a $2\times 2$-matrix, find the corresponding eigenvalue.  
 
 ::::::
 
@@ -594,7 +596,7 @@ A matrix $A$ is complex diagonalisable if and only if for each eigenvalue the ge
 :url: https://embed.grasple.com/exercises/ccf018fa-df2c-446b-a8a5-532d6293a6ff?id=116982
 :label: grasple_exercise_6_4_2
 :dropdown:
-:description: Given a complex eigenvector of  a $2\times 2$ matrix, find the corresponding eigenvalue.  
+:description: Given a complex eigenvector of  a $2\times 2$-matrix, find the corresponding eigenvalue.  
 
 ::::::
 
@@ -603,7 +605,7 @@ A matrix $A$ is complex diagonalisable if and only if for each eigenvalue the ge
 :url: https://embed.grasple.com/exercises/66dcb059-1c37-477c-9f23-8bd1bb26fb44?id=92368
 :label: grasple_exercise_6_4_3
 :dropdown:
-:description:   To find the (complex) eigenvalues of a $2 \times 2$ matrix $A$.
+:description:   To find the (complex) eigenvalues of a $2 \times 2$-matrix $A$.
 
 ::::::
 
@@ -613,7 +615,7 @@ A matrix $A$ is complex diagonalisable if and only if for each eigenvalue the ge
 :url: https://embed.grasple.com/exercises/507921c2-d568-44d9-a254-536440ca613e?id=91553
 :label: grasple_exercise_6_4_4
 :dropdown:
-:description:   To find the (complex) eigenvalues of a $2 \times 2$ matrix $A$.
+:description:   To find the (complex) eigenvalues of a $2 \times 2$-matrix $A$.
 
 ::::::
 
@@ -622,7 +624,7 @@ A matrix $A$ is complex diagonalisable if and only if for each eigenvalue the ge
 :url: https://embed.grasple.com/exercises/593e9ddd-a7b8-4617-958e-95f328e28e80?id=91547
 :label: grasple_exercise_6_4_5
 :dropdown:
-:description:   To find the (complex) eigenvalues and bases of their eigenspaces of a $2 \times 2$ matrix  $A$.
+:description:   To find the (complex) eigenvalues and bases of their eigenspaces of a $2 \times 2$-matrix  $A$.
 
 ::::::
 
@@ -631,7 +633,7 @@ A matrix $A$ is complex diagonalisable if and only if for each eigenvalue the ge
 :url: https://embed.grasple.com/exercises/f60a57c2-b0b3-45de-b18c-e0da1bbef601?id=91555
 :label: grasple_exercise_6_4_6
 :dropdown:
-:description:  Given a complex  eigenvector of a real 2x2 matrix, point out other eigenvectors.
+:description:  Given a complex  eigenvector of a real $2 \times 2$-matrix, point out other eigenvectors.
 ::::::
 
 ::::::{grasple} 
@@ -639,7 +641,7 @@ A matrix $A$ is complex diagonalisable if and only if for each eigenvalue the ge
 :url: https://embed.grasple.com/exercises/6b20958e-0fb7-4324-be37-0eb4a202d34d?id=118390
 :label: grasple_exercise_6_4_6B
 :dropdown:
-:description:  Given a complex  eigenvector of a real 2x2 matrix, point out other eigenvectors.
+:description:  Given a complex  eigenvector of a real $2 \times 2$-matrix, point out other eigenvectors.
 ::::::
 
 ::::::{grasple} 
@@ -659,7 +661,7 @@ A matrix $A$ is complex diagonalisable if and only if for each eigenvalue the ge
 :url: https://embed.grasple.com/exercises/f3a6972e-f17b-4984-b0ee-38012ec542b3?id=91563
 :label: grasple_exercise_6_4_8
 :dropdown:
-:description:  To find the complex eigenvalues of a $2 \times 2$ matrix (of a special form). 
+:description:  To find the complex eigenvalues of a $2 \times 2$-matrix (of a special form). 
 
 ::::::
 
@@ -668,7 +670,7 @@ A matrix $A$ is complex diagonalisable if and only if for each eigenvalue the ge
 :url: https://embed.grasple.com/exercises/79c7c433-fbcc-41b8-85d2-b1938a26d40e?id=91566
 :label: grasple_exercise_6_4_9
 :dropdown:
-:description: T/F? Every real $5 \times 5$ matrix has at least one real eigenvalue.
+:description: T/F? Every real $5 \times 5$-matrix has at least one real eigenvalue.
   
 
 ::::::
@@ -678,7 +680,7 @@ A matrix $A$ is complex diagonalisable if and only if for each eigenvalue the ge
 :url: https://embed.grasple.com/exercises/1720d806-7602-41b3-9beb-569967e74c84?id=92543
 :label: grasple_exercise_6_4_10
 :dropdown:
-:description: To find a complex diagonalisation of a real  $2\times 2$ matrix (eigenvalues given).  
+:description: To find a complex diagonalisation of a real  $2\times 2$-matrix (eigenvalues given).  
 
 ::::::
 
@@ -687,7 +689,7 @@ A matrix $A$ is complex diagonalisable if and only if for each eigenvalue the ge
 :url: https://embed.grasple.com/exercises/510f78e6-717e-4550-8564-7bbf2c2cf673?id=55388
 :label: grasple_exercise_6_4_11
 :dropdown:
-:description: To find a complex diagonalisation of a real  $3\times 3$ matrix (one eigenvalue given).  
+:description: To find a complex diagonalisation of a real  $3\times 3$-matrix (one eigenvalue given).  
 
 ::::::
 
@@ -696,6 +698,6 @@ A matrix $A$ is complex diagonalisable if and only if for each eigenvalue the ge
 :url: https://embed.grasple.com/exercises/84112ecf-e12f-47c6-a12b-95083cfcac31?id=122340
 :label: grasple_exercise_6_4_12
 :dropdown:
-:description: To mark all correct statements about real/complex eigenvalues/eigenvectors of a  real  $2\times 2$ matrix.  
+:description: To mark all correct statements about real/complex eigenvalues/eigenvectors of a  real  $2\times 2$-matrix.  
 
 ::::::
