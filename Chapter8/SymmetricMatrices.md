@@ -1186,7 +1186,7 @@ $$
 
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/4b6f8822-31ff-4962-addf-97ee2133c449?id=118446
+:url: https://embed.grasple.com/exercises/4b6f8822-31ff-4962-addf-97ee2133c449?id=118446
 :label: grasple_exercise_8_1_2A
 :dropdown:
 :description: Recognising orthogonal matrices
@@ -1377,3 +1377,74 @@ The following exercise have a more theoretical flavour.
 :dropdown:
 :description:  True or false.  If $A$ is symmetric, then $A^2$ has nonnegative eigenvalues. (And what if $A$ is not symmetric?)
 ::::
+
+
+
+A kind of counterpart of symmetric matrices are skew-symmetric matrices.
+We give the definition, and if interested you can explore this species by working through the exercises following this definition.
+
+::::{prf:definition}
+:label: Dfn:SymmetricMat:SkewSymmetric
+
+A matrix $A$ is called  **skew-symmetric**  if $A^T = -A$
+
+::::
+
+So two examples of skew-symmetric matrices are
+
+$$
+  \begin{bmatrix}0 & -2 \\ 2 & 0\end{bmatrix} \quad \text{and} \quad
+  \begin{bmatrix}0 & 1 & -2 \\ -1 & 0 & 3 \\ 2 & -3 & 0\end{bmatrix}.
+$$
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/d64e0b70-faca-4b83-be0d-d1259c5ca0a4?id=88076
+:label: grasple_exercise_8_1_21
+:dropdown:
+:description: Basic properties of skew-symmetric matrices.
+::::
+
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/60c03024-91fe-4c7e-bf02-c1e6d02ca65f?id=88080
+:label: grasple_exercise_8_1_22
+:dropdown:
+:description: Slightly less basic properties of skew-symmetric matrices.
+::::
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/0f6e1edf-cd4c-4aed-84f9-fcfd602862cb?id=88166
+:label: grasple_exercise_8_1_23
+:dropdown:
+:description: About the eigenvalues of skew-symmetric matrices.
+::::
+
+
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/a6f1f863-aa57-479f-a4cf-e0fb42edd28a?id=88173
+:label: grasple_exercise_8_1_24
+:dropdown:
+:description: Eigenvalues and eigenvectors of skew-symmetric matrices (sequel to previous exercise) 
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/3cdc5312-1d4c-4c95-bc09-f5f90ee49955?id=122252
+:label: grasple_exercise_8_1_25
+:dropdown:
+:description: Geometric interpretation of 3x3 skew-symmetric matrices.
+::::
+
+
+
+
+
+
