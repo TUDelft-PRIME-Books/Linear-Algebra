@@ -675,12 +675,12 @@ In fact a slightly more general formula holds for **any** square matrix.
 For any square matrix $A$ the following identity holds:
 
 $$
-A\cdot\operatorname{Adj}(A) = \operatorname{Adj}(A)\cdot A = (\det{A})\cdot I.
+A\,\operatorname{Adj}(A) = \operatorname{Adj}(A)\, A = (\det{A})\,I.
 $$
 
 ::::::
 
-For clarity we used dots to indicate products. Note that the first two products are matrix products and the third product is a scalar times a matrix.
+Note that the first two products are matrix products and the third product is a scalar times a matrix.
 
 The proof we think, is short and instructive.
 

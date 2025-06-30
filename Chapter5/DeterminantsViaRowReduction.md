@@ -499,8 +499,8 @@ This is true, and follows from repeatedly using the property $\det(AB) = \det(A)
 
 
 $$
-  \det(A^k) = \det(A\cdot A \cdot A \cdots A) =
-  \det(A)\cdot\det(A)\cdot\det(A)\cdots\det(A).
+  \det(A^k) = \det(AAA \cdots A) =
+  \det(A)\det(A)\det(A)\cdots\det(A).
 $$
 
 </li>

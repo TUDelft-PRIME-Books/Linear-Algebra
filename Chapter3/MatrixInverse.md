@@ -738,10 +738,10 @@ All statements can be proved by verifying that the relevant products are equal t
 The matrix $A^{-1}$ exists, and so does $\dfrac1c A^{-1}$. We find:
 
 $$
-   (cA) \cdot \dfrac1c A^{-1} = c\cdot \dfrac1c A\cdot A^{-1} = 1 \cdot I = I,
+   (cA)\,\dfrac1c A^{-1} = c\,\dfrac1c A\,A^{-1} = 1 \, I = I,
 $$
 
-and likewise $\dfrac1c A^{-1}\cdot (cA) = I$,
+and likewise $\dfrac1c A^{-1}\,(cA) = I$,
 
 which proves that indeed $\dfrac1c A^{-1} = (cA)^{-1}$.
 
