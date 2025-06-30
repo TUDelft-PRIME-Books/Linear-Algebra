@@ -666,7 +666,7 @@ which is not a multiple of $\vect{v}$, so such a $\vect{v}$ cannot be an eigenve
 :url: https://embed.grasple.com/exercises/7627c42a-1586-4a35-a812-d83711f03f9f?id=122172
 :label: grasple_exercise_9_4_01
 :dropdown:
-:description: Solving an initial value problem step-by-step.
+:description: Solving an initial value problem step by step.
 
 ::::
 

@@ -65,7 +65,6 @@ sphinx:
             \renewcommand{\Re}[1]{\operatorname{Re}\left(#1\right)}
             \renewcommand{\Im}[1]{\operatorname{Im}\left(#1\right)}
             \renewcommand{\proj}{\operatorname{proj} }
-            \newcommand{\nicefrac}{\frac }
             \newcommand{\mc}{\mathcal}
             \newcommand{\PB}{P_{\mathcal{B}}}
             \newcommand{\CoBmatrix}[2]{P_{{\mathcal #2}\leftarrow{\mathcal #1}}}
@@ -91,12 +90,12 @@ sphinx:
           "Col": ["\\operatorname{Col} #1", 1]
           "Row": ["\\operatorname{Row} #1", 1]
           "Rank": ["\\operatorname{rank} #1", 1]
-          "nicefrac": ["\\frac "]
           "proj": ["\\operatorname{proj} "]
           "Span": ["\\operatorname{Span}\\left\\lbrace #1 \\right\\rbrace",1]
           "Det": ["\\operatorname{det}\\left(#1\\right)",1]
           "Re": ["\\operatorname{Re}\\left(#1\\right)",1]
           "Im": ["\\operatorname{Im}\\left(#1\\right)",1]
+          "nicefrac": ["\\frac{#1}{#2}", 2]
   local_extensions:
     htmltable: _ext/
     latextable: _ext/

@@ -8,13 +8,13 @@ The word "determinant" already appeared in {numref}`Section %s <Sec:CrossProduct
 $A = \left(\begin{array}{cc} a & b \\ c & d\end{array}   \right)$ is invertible if and only if
 
 :::{math}
-:label: Eq:DetGeometric:DetNonzero
+:label: Eq:DetGeometric:Detnon-zero
 
 ad-bc \neq 0.
 
 :::
 
-We called the expression $ad-bc$ the _determinant_ of the matrix $A$. Equation {eq}`Eq:DetGeometric:DetNonzero` is also equivalent to the statement that the columns of the matrix $A$ are linearly independent.
+We called the expression $ad-bc$ the _determinant_ of the matrix $A$. Equation {eq}`Eq:DetGeometric:Detnon-zero` is also equivalent to the statement that the columns of the matrix $A$ are linearly independent.
 
 Likewise, by row reducing a general $3 \times 3$-matrix
 
@@ -48,7 +48,7 @@ The parallelogram $OACB$.
 
 The area of the parallelogram $OACB$, spanned by the vectors $ \vect{u} =\left(\begin{array}{c} a \\ b \end{array}\right)$ and
 $\vect{v}=\left(\begin{array}{c} c \\ d \end{array}\right)$
-is given by $|ad-bc|$, i.e., the absolute value of &nbsp; $ad-bc$.
+is given by $|ad-bc|$, i.e., the absolute value of $ad-bc$.
 
 ::::::
 
@@ -539,9 +539,7 @@ $|D|$, the absolute value of the determinant, is equal to the volume of the para
 
 $D=0$ if and only if the matrix $A$ is singular.
 
-Equivalently,<BR>
-$D\neq 0$ if and only if the matrix $A$ is invertible, thus if  
-the vectors $\{\vect{a}, \vect{b},\vect{c}\}$ are linearly independent.
+Equivalently, $D\neq 0$ if and only if the matrix $A$ is invertible, thus if the vectors $\{\vect{a}, \vect{b},\vect{c}\}$ are linearly independent.
 
 </li>
 <li>

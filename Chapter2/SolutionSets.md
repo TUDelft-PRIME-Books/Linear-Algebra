@@ -536,7 +536,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/30d705ed-fe9f-497a-ab65-a071c18d92ee?id=116559
 :label: grasple_exercise_2_3_12
 :dropdown:
-:description: Existence of nonzero solutions for a homogeneous system?
+:description: Existence of non-zero solutions for a homogeneous system?
 
 ::::
 
@@ -546,7 +546,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 :url: https://embed.grasple.com/exercises/759d45dc-b510-4794-b28b-f7494c582cb6?id=116558
 :label: grasple_exercise_2_3_13
 :dropdown:
-:description:  Existence of nonzero solutions for a homogeneous system?
+:description:  Existence of non-zero solutions for a homogeneous system?
 
 ::::
 

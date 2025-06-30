@@ -196,17 +196,17 @@ $$
 The basis $\{\vect{b}_1,\vect{b}_2\}$ of {prf:ref}`Ex:ChangeOfBasis:BasicExampleR2`.
 ```
 
-::::::{prf:remark}
-:label: Rem:ChangeOfBasis:ConventionBasis
+::::
 
-A note of warning. Strictly speaking a basis is an _ordered_ set of vectors. By this we mean that, although the set $\mathcal{B} = \{\vect{b}_1,\vect{b}_2\}$ is equal to the set $\mathcal{B}' = \{\vect{b}_2,\vect{b}_1\}$,
+::::::{warning}
+:name: Rem:ChangeOfBasis:ConventionBasis
+
+Strictly speaking a basis is an _ordered_ set of vectors. By this we mean that, although the set $\mathcal{B} = \{\vect{b}_1,\vect{b}_2\}$ is equal to the set $\mathcal{B}' = \{\vect{b}_2,\vect{b}_1\}$,
 as bases we should consider them as different. This becomes important when we work with coordinates.
-<BR>
-$[\vect{v}]_{\mathcal{B}} = \begin{pmatrix}c_1\\c_2 \end{pmatrix}$ means that $\vect{v} = c_1\vect{b}_1+c_2\vect{b}_2$,
-<BR>
-whereas
-$[\vect{v}]_{\mathcal{B}'} = \begin{pmatrix}c_1\\c_2 \end{pmatrix}$ should be interpreted $\vect{v} = c_1\vect{b}_2+c_2\vect{b}_1$.
-<BR>
+
+$[\vect{v}]_{\mathcal{B}} = \begin{pmatrix}c_1\\c_2 \end{pmatrix}$ means that $\vect{v} = c_1\vect{b}_1+c_2\vect{b}_2$, 
+whereas $[\vect{v}]_{\mathcal{B}'} = \begin{pmatrix}c_1\\c_2 \end{pmatrix}$ should be interpreted $\vect{v} = c_1\vect{b}_2+c_2\vect{b}_1$.
+
 To avoid ambiguities like this the way out is to use the notation
 
 $$
@@ -303,7 +303,7 @@ The procedure of {prf:ref}`Ex:ChangeOfBasis:ToStandardBasis` can be generalised 
 :label: Dfn:ChangeOfBasis:CoBmatrix
 
 Let ${\mathcal B} = \{\vect{b}_1, \ldots, \vect{b}_n \}$ be a basis of $\R^n$.
-The **change-of-coordinates matrix from ${\mathcal B}$ &nbsp; to &nbsp; ${\mathcal E}$** is the matrix
+The **change-of-coordinates matrix from ${\mathcal B}$ to ${\mathcal E}$** is the matrix
 
 $$
   P_{\mc{B}} =
@@ -356,7 +356,7 @@ Show that every change-of-coordinates matrix $P_{\mc{B}}$ is invertible.
 :class: solution, dropdown
 
 Let $\mc{B} = \{\vect{b}_1,\vect{b}_2, \ldots, \vect{b}_n\}$ be any basis of $\R^n$.
-<BR>
+
 By definition
 
 $$
@@ -527,7 +527,8 @@ $$
 
 that is used to go from Equation {eq}`Eq:ChangeOfBasis:LinearityTransform` to Equation {eq}`Eq:ChangeOfBasis:LinearityCoords` in the proof of {prf:ref}`Prop:ChangeOfBasis:MatrixOfTrafo`.
 
-**Hint:** first show the correctness of the identities
+:::{hint}
+First show the correctness of the identities
 
 $$
    [\vect{v}_1 +\vect{v}_2 ]_{\mc{B}} =
@@ -535,6 +536,8 @@ $$
    \quad \text{and} \quad
    [c\vect{v} ]_{\mc{B}} = c[\vect{v}]_{\mc{B}}.
 $$
+
+:::
 
 ::::
 

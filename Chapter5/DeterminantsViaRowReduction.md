@@ -210,7 +210,7 @@ $$
 every rule involving row operations may be transformed into a rule about column operations. It is here that computing a determinant differs strikingly from the reduction of a (for instance augmented) matrix to an echelon matrix. Another, more subtle difference is that
 a row operation applied to a matrix leads to an **equivalent** matrix, which we denote by the symbol $\sim$, whereas row or column operations on a determinant give **equal values** all the time. So then we write $=$.
 
-Note that in Rule i. of {prf:ref}`Prop:DetRowReduction:RowOps` the factor $c$ may be zero. This is also a slight difference to the scaling operation we used when row reducing a matrix.  There the scaling factor must be *nonzero*.
+Note that in Rule i. of {prf:ref}`Prop:DetRowReduction:RowOps` the factor $c$ may be zero. This is also a slight difference to the scaling operation we used when row reducing a matrix.  There the scaling factor must be *non-zero*.
 
 ::::::
 
@@ -247,7 +247,7 @@ If a matrix $A$ has two equal rows (or columns), then $\det{A} = 0$.
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Cor:DetRowReduction:EqualRows`
 :class: tudproof
 
-Suppose the $i$th and the $j$th row of $A$ are equal, and let $\det{A} = d$. Let $B$ be the matrix $A$ with the $i$th and $j$th row interchanged.
+Suppose the $i$-th and the $j$-th row of $A$ are equal, and let $\det{A} = d$. Let $B$ be the matrix $A$ with the $i$-th and $j$-th row interchanged.
 
 On the one hand, $B = A$, so
 
@@ -295,8 +295,7 @@ In the previous section we have already seen that the statement is true for tria
 Now suppose $A$ is any $n \times n$-matrix. Via row reduction $A$ can be brought to echelon form $F$,
 and for a square matrix the echelon form is an upper triangular matrix (with possibly zeros on the diagonal).
 
-From {prf:ref}`Prop:DetCofactors:InvertibleTriangular` we know that for a triangular matrix $F$ we have <BR>
-'$F$ is invertible' is equivalent to '$\det{F} \neq 0$'.
+From {prf:ref}`Prop:DetCofactors:InvertibleTriangular` we know that for a triangular matrix $F$ we have '$F$ is invertible' is equivalent to '$\det{F} \neq 0$'.
 
 The row operations transforming $A$ to $F$ can be performed by multiplications with elementary matrices $E_1, \ldots E_k$.
 
@@ -307,7 +306,7 @@ $$
 \det{(E_iA)} = \det{E_i} \cdot \det{A}.
 $$
 
-Furthermore, the determinant of an elementary matrix is nonzero. Namely, for a row scaling it is equal to $c$, for a row swap it is equal to $(-1)$, and for adding a multiple of a row to another row it is equal to $1$.
+Furthermore, the determinant of an elementary matrix is non-zero. Namely, for a row scaling it is equal to $c$, for a row swap it is equal to $(-1)$, and for adding a multiple of a row to another row it is equal to $1$.
 Hence, if $m$ of the row operations are row scalings and $\ell$ of the row operations are row swaps, then
 
 $$
@@ -395,8 +394,27 @@ If the matrix $A$ is invertible, then $\operatorname{det}\big(A^{-1}\big)= \dfra
 
 We can combine the three properties
 
-i. $AA^{-1} = I$, &nbsp; ii. $\det{(AA^{-1})} = \det{A}\det{\left(A^{-1}\right)}$
-&nbsp; and &nbsp; iii. $\det{I} = 1$
+<ol type = "i">
+
+<li>
+
+$AA^{-1} = I$
+
+</li>
+
+<li>
+
+$\det{(AA^{-1})} = \det{A}\det{\left(A^{-1}\right)}$
+
+</li>
+
+<li>
+
+$\det{I} = 1$
+
+</li>
+
+</ol>
 
 as follows:
 
@@ -425,8 +443,6 @@ For each of the following statements decide whether they are true or false. In c
 
 For each $n \times n$-matrix $A$ it holds that
 
-<BR>
-
 $$
 \operatorname{det}\big(A^k\big)= \big(\det{A}\big)^k.
 $$
@@ -435,8 +451,6 @@ $$
 <li>
 
 For each two $n \times n$-matrices $A$ and $B$ it holds that
-
-<BR>
 
 $$
 \det{(A+B)} = \det{A}+\det{B}.
@@ -450,8 +464,6 @@ $$
 
 For each $n \times n$-matrix $A$ and each real number $k$ it holds that
 
-<BR>
-
 $$
 \det{(kA)} = k^n\det{A}.
 $$
@@ -461,8 +473,6 @@ $$
 <li>
 
 For each $n \times n$-matrix $A$ it holds that
-
-<BR>
 
 $$
 \det{(-A)} = -\det{A}.
@@ -486,7 +496,7 @@ We treat the statements one by
 Is it true that for each $n \times n$-matrix $A$ it holds that $\operatorname{det}\big(A^k\big)= \big(\det{A}\big)^k$? 
 
 This is true, and follows from repeatedly using the property $\det(AB) = \det(A)\det(B)$. Namely,
-<BR>
+
 
 $$
   \det(A^k) = \det(A\cdot A \cdot A \cdots A) =
@@ -497,14 +507,14 @@ $$
 <li>
 
 Is it true that for each two $n \times n$-matrices $A$ and $B$ it holds that
-<BR>
+
 
 $$
 \det{(A+B)} = \det{A}+\det{B}?
 $$
 
 This statement is false. A trivial counterexample is given by $A = B = I_n$, for $n \geq 2$. Namely, for these matrices we see that
-<BR>
+
 
 $$
   \det{A} + \det{B} = 1 + 1 = 2 \neq \det{(A+B)} = \det{(2I)} = 2^n.
@@ -515,14 +525,14 @@ $$
 <li>
 
 Is it true that for each $n \times n$-matrix $A$ and each real number $k$ it holds that
-<BR>
+
 
 $$
 \det{(kA)} = k^n\det{A}\,?
 $$
 
 This is true. One way to prove it is to write  $kA = (kI)A$, where 
-<BR>
+
 
 $$
    kI = \begin{pmatrix}k & 0 & 0 &\cdots & 0 \\
@@ -546,7 +556,7 @@ Is it true that $\operatorname{det}(-A)= -\det{(A)}$ for each $n \times n$-matri
 
 
 This is not true in general.  Taking $k = -1$ in the previous statement we see that 
-<BR>
+
 
 $$
   \det{(-A)} = \det{(-1)A} = (-1)^n\det{(A)}.
@@ -570,7 +580,7 @@ In fact we will prove the column version, and we add one related rule that will 
 ::::::{prf:proposition}
 :label: Prop:DetRowReduction:SumofCols
 
-Suppose $A$ is an $n\times n$-matrix for which the $k$th column is the sum of two vectors in $\R^n$. So
+Suppose $A$ is an $n\times n$-matrix for which the $k$-th column is the sum of two vectors in $\R^n$. So
 
 $$
 \vect{a}_k = \vect{b} +\vect{c}.
@@ -626,9 +636,9 @@ So, let us consider them one by one.
 
 :::
 
-Suppose $\tilde{A}$ is the result of scaling the $k$th column of $A$ with a factor $c$.
-<BR>
-Then expanding $\det(\tilde{A})$ along its $k$th column, keeping in mind that $\tilde{a}_{ik} = c {a}_{ik}$ and $\tilde{A}_{ik} = {A}_{ik}$, yields
+Suppose $\tilde{A}$ is the result of scaling the $k$-th column of $A$ with a factor $c$.
+
+Then expanding $\det(\tilde{A})$ along its $k$-th column, keeping in mind that $\tilde{a}_{ik} = c {a}_{ik}$ and $\tilde{A}_{ik} = {A}_{ik}$, yields
 
 $$
 \operatorname{det}\big(\tilde{A}\big)= \sum_{i=1}^n   (-1)^{i+k} \tilde{a}_{ik}\det{\tilde{A}_{ik}}
@@ -642,7 +652,7 @@ $$
 = c  \det{A}.
 $$
 
-{prf:ref}`Prop:DetRowReduction:SumofCols` is proved in much the same way as rule (1) by expansion along the $k$th column.
+{prf:ref}`Prop:DetRowReduction:SumofCols` is proved in much the same way as rule (1) by expansion along the $k$-th column.
 
 :::{paren-list}
 :start: 2
@@ -727,9 +737,10 @@ $$
 $$
 
 The same argument works for the interchanging of two arbitrary consecutive columns.
-<BR> 
+
 And the argument can even be generalised for two columns that are not necessarily neighbours.  The notation with many indices becomes hard to read though.  As stated the swapping of two arbitrary columns can be accomplished via an odd number of 'consecutive swaps', so then the determinant changes sign an odd number of times.
-And for an odd number $n$ we have that $(-1)^n = -1$. <BR>
+And for an odd number $n$ we have that $(-1)^n = -1$.
+
 In fact, to swap columns $i$ and $j$, with $i < j$,  we need  $j-i$ neighbour swaps to move
 column $i$ to position $j$, and  $j-i-1$ swaps to move (the original) column $j$ to position $i$, which gives a total of $n = 2(j-i)+1$ swaps. 
 For instance, to interchange column $2$ and column $5$ in a $5 \times 5$-matrix the $(j-i) + (j-i-1) = 3+2 =5$ neigbour swaps can be visualised as follows
@@ -1073,7 +1084,7 @@ Give an alternative proof of {prf:ref}`Cor:DetRowReduction:EqualRows` using Rule
 
 Suppose $A$ is a matrix with two equal rows, say row $i$ and row $j$ are equal.
 
-If we subtract the $i$th row from the $j$th row, we get a matrix $A_2$ with $j$th row equal to zero, and with $\det(A_2) = \det(A)$. If we take the factor $0$ out, we see that $\det(A_2) = 0$.
+If we subtract the $i$-th row from the $j$-th row, we get a matrix $A_2$ with $j$-th row equal to zero, and with $\det(A_2) = \det(A)$. If we take the factor $0$ out, we see that $\det(A_2) = 0$.
 
 For instance, with a $4\times 4$-matrix with equal second and fourth row we would have
 

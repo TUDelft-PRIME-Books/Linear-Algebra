@@ -27,9 +27,9 @@ $\lambda$ is an eigenvalue of $A$
 
 is equivalent to
 
-$(A-\lambda I)\vect{x} = \vect{0}, \quad$ for a nonzero vector $ \vect{x}$.
+$(A-\lambda I)\vect{x} = \vect{0}, \quad$ for a non-zero vector $ \vect{x}$.
 
-We also know ({prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations`) that such a nonzero solution exists only if
+We also know ({prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations`) that such a non-zero solution exists only if
 
 the matrix $A - \lambda I$ is **not** invertible,
 
@@ -205,7 +205,9 @@ its _zeros_ are the _eigenvalues_ of the matrix $A$.
 
 As a corollary we find a second argument why an $n\times n$-matrix cannot have more than $n$ different eigenvalues: a polynomial of degree $n$ can have at most $n$ zeros.
 
-A note of warning: to compute the determinant of the matrix $A - \lambda I$ it may seem helpful to first row reduce the matrix $A$ to echelon form $E$, and then take the determinant of $E - \lambda I$, which is a triangular matrix. However, that procedure is incorrect. Except for very special cases, in general
+::::{warning}
+To compute the determinant of the matrix $A - \lambda I$ it may seem helpful to first row reduce the matrix $A$ to echelon form $E$, and then take the determinant of $E - \lambda I$, which is a triangular matrix. However, that procedure is incorrect. Except for very special cases, in general
+
 
 $$
 \det{(A - \lambda I)} \neq \det{(E - \lambda I)} !
@@ -226,6 +228,8 @@ $$
 which has nothing to do with $\det{(A - \lambda I)}$.
 
 So, if you want to find the characteristic polynomial via row reduction of $\det(A - \lambda I)$ you _have to include $\lambda$ right from the beginning_.
+
+::::
 
 Let's look at one other example before we give the characteristic polynomial a closer look.
 
@@ -340,9 +344,7 @@ At this moment it is not so easy to prove the following proposition, of which th
 ::::::{prf:proposition}
 :label: Prop:EigenValues:SmallerGeomMultiplicity
 
-For every eigenvalue of a matrix $A$, the geometric multiplicity is at most equal to the algebraic multiplicity. So we always have
-
-&nbsp; &nbsp; $1$ &nbsp; $\leq$ &nbsp;  geometric multiplicity of $\lambda$  &nbsp; $\leq$ &nbsp;  algebraic multiplicity of $\lambda$.
+For every eigenvalue of a matrix $A$, the geometric multiplicity is at most equal to the algebraic multiplicity. So we always have $1 \leq$ geometric multiplicity of $\lambda \leq$ algebraic multiplicity of $\lambda$.
 
 ::::::
 
@@ -562,7 +564,7 @@ The identity involving the sum gives an easy check on the eigenvalues; with the 
 :label: Ex:Eigenvalues:SumEigenvaluesAndTrace
 
 In {prf:ref}`Ex:EigenValues:SecondCharPoly` we found that the eigenvalues of the matrix
-$A = \begin{pmatrix} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{pmatrix}$  &nbsp; are &nbsp; $\lambda_{1,3} = 3$, $\lambda_{2} = 2$.
+$A = \begin{pmatrix} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{pmatrix}$ are  $\lambda_{1,3} = 3$, $\lambda_{2} = 2$.
 
 We see that indeed
 

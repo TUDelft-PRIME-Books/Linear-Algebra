@@ -44,7 +44,8 @@ $$
   |\lambda_1| \geq |\lambda_2| \geq \,\,\ldots\,\,\geq |\lambda_n|
 $$
 
-and that in fact we have $|\lambda_1| > |\lambda_2|$, i.e. the first inequality is strict. <BR>
+and that in fact we have $|\lambda_1| > |\lambda_2|$, i.e. the first inequality is strict.
+
 We can rewrite Equation {eq}`Eq:PowerMethod:GenSol` as
 
 ::::{math}
@@ -75,7 +76,8 @@ $$
   |\lambda_1| \geq |\lambda_2| \geq \,\,\ldots\,\,\geq |\lambda_n|.
 $$
 
-If in fact $|\lambda_1| > |\lambda_2|$, then $\lambda_1$ is called the **dominant eigenvalue** of $A$.<BR>
+If in fact $|\lambda_1| > |\lambda_2|$, then $\lambda_1$ is called the **dominant eigenvalue** of $A$.
+
 An eigenvector corresponding to $\lambda_1$ is called a **dominant eigenvector**.
 ::::
 
@@ -86,12 +88,35 @@ Consider the following algorithm.
 
 Suppose $A$ is an $n\times n$-matrix.
 
-<u>Step 1</u> &nbsp; Choose an arbitrary nonzero vector $\vect{x}$ in $\R^n$.
+<ol type ="1">
+<li>
 
-<u>Step 2</u> &nbsp; Repeat the following steps: <BR>
-&nbsp; (i) Compute $\vect{y} = A\vect{x}$.<BR>
-&nbsp; (ii) Find the entry $\mu$ of $\vect{y}$ of the highest absolute value. <BR>
-&nbsp; (iii) Replace $\vect{x}$ by $\dfrac{1}{\mu}\vect{y}$.
+Choose an arbitrary non-zero vector $\vect{x}$ in $\R^n$.
+
+</li>
+
+<li>Repeat the following steps:
+
+<ol type="i">
+<li>
+
+Compute $\vect{y} = A\vect{x}$.
+
+</li>
+<li>
+
+Find the entry $\mu$ of $\vect{y}$ of the highest absolute value.
+
+</li>
+<li>
+
+Replace $\vect{x}$ by $\dfrac{1}{\mu}\vect{y}$.
+
+</li>
+
+</ol>
+</li>
+</ol>
 
 Step 2 is repeated until the process more or less stabilises. For instance, until the difference between the last two computed vectors is smaller than a predetermined 'error' $\varepsilon$.
 
@@ -108,7 +133,8 @@ $$
 
 $$
 
-the algorithm discards all intermediate iterates.<BR>  
+the algorithm discards all intermediate iterates.
+
 We are only interested in the last iterate anyway, since we expect this to be the best approximation of an eigenvector.
 
 The scaling step is necessary to avoid ending up at the zero vector or 'at infinity', where all information is lost.  There are alternative ways to scale the iterates.  A common one is to scale with the factors  $\dfrac{1}{\norm{\vect{y}}}$, that is, to normalise the vectors $\vect{y}$.
@@ -119,7 +145,7 @@ The scaling step is necessary to avoid ending up at the zero vector or 'at infin
 :label: Prop:Powermethod:Powermed
 
 Suppose $A$ is a matrix with dominant eigenvalue $\lambda_1$.
-Then in general the sequence constructed by the Power Method Algorithm, will converge to an eigenvector $\vect{v}_1$ for $\lambda_1$.  &nbsp; To be more specific, the sequence $\vect{x}_k$ will converge to a dominant eigenvector $\vect{v}_1$ if the initial vector $\vect{x}_0$ does not lie in
+Then in general the sequence constructed by the Power Method Algorithm, will converge to an eigenvector $\vect{v}_1$ for $\lambda_1$. To be more specific, the sequence $\vect{x}_k$ will converge to a dominant eigenvector $\vect{v}_1$ if the initial vector $\vect{x}_0$ does not lie in
 $\operatorname{Span}\{\vect{v}_2, \vect{v}_3, \ldots, \vect{v}_n\}$.
 
 Moreover, suppose $\vect{x}$ is the result after a (sufficiently) large number of runs of the algorithm.  Then (an approximation of) the dominant eigenvalue is the entry with the highest absolute value of the vector $A\vect{x}$.
@@ -150,7 +176,8 @@ $$
    \vect{s} = c_1\vect{v}_1 + c_2\vect{v}_2 +  \ldots + c_n\vect{v}_n, \quad c_1 \neq 0,
 $$
  
-the vectors $A^k\vect{s}$ in the long run behave as $c_1\lambda_1^k\vect{v}_1$. <BR>
+the vectors $A^k\vect{s}$ in the long run behave as $c_1\lambda_1^k\vect{v}_1$.
+
 The effect of the scalings is that all along the way we keep vectors with largest entry $1$. Thus the scaled process will converge to the dominant eigenvector $\vect{v}$ with largest entry $1$.
 
 ::::
@@ -158,7 +185,8 @@ The effect of the scalings is that all along the way we keep vectors with larges
 ::::{prf:example}
 :label: Ex:PowerMethod:FirstExample
 
-Let $A$ be the matrix &nbsp; $\begin{pmatrix}5 & 2 \\ 2 & 8 \end{pmatrix}$. <BR>
+Let $A$ be the matrix $\begin{pmatrix}5 & 2 \\ 2 & 8 \end{pmatrix}$.
+
 The matrix is symmetric, hence diagonalisable. Its eigenvalues are $\lambda_1 = 9$, $\lambda_2 = 4$.
 
 If we start the process of {prf:ref}`Alg:PowerMethod:PowMed` from the initial vector
@@ -188,7 +216,8 @@ $$
   \vect{v}_1 = \begin{pmatrix} 0.5 \\ 1 \end{pmatrix},
 $$
 
-which is the eigenvector with largest entry $1$ for the dominant eigenvalue $\lambda = 9$. <BR>
+which is the eigenvector with largest entry $1$ for the dominant eigenvalue $\lambda = 9$.
+
 For this specific example the 'convergence to an eigenvector' goes very quickly!
 
 Two circumstances help this rapid convergence.
@@ -219,10 +248,14 @@ $$
 
 By rescaling we get a vector in the same direction with highest entry equal to $1$.
 
-That we have such a rapid convergence in the example is due to the two circumstances mentioned: <BR>
-(1) the ratio $|\lambda_2/\lambda_2| = 4/9 = 0.4444...$ is much smaller than $1$, <BR>
-and <BR>
-(2) the ratio $\dfrac{c_1}{c_2} = \dfrac{3/5}{1/5} = 3$ is not too close to zero.<BR>
+That we have such a rapid convergence in the example is due to the two circumstances mentioned:
+
+1. the ratio $|\lambda_2/\lambda_2| = 4/9 = 0.4444...$ is much smaller than $1$,
+
+and
+
+2. the ratio $\dfrac{c_1}{c_2} = \dfrac{3/5}{1/5} = 3$ is not too close to zero.
+
 Thus the term with the eigenvector $\mathbf{v}_2$ in the expression within the parentheses
 
 $$
@@ -232,7 +265,8 @@ $$
    \frac15\left(\frac49\right)^k\begin{pmatrix} 2 \\ -1 \end{pmatrix}
 $$
 
-soon becomes negligibly small compared to the term with the eigenvector $\vect{v}_1$. <BR>
+soon becomes negligibly small compared to the term with the eigenvector $\vect{v}_1$.
+
 In the exceptional situation where the 'first guess' was exactly a multiple of the second eigenvector $\vect{v}_2$ all vectors $\mathbf{x}_k$ would remain on the line generated by $\vect{v}_2$. This would just be a very unfortunate first guess. In practice, even then, owing to minor round-off errors in the long long (no typo) run the process would probably end up converging to a multiple of $\vect{v}_1$.
 
 ::::
@@ -398,7 +432,7 @@ In the previous section the power method was used find the dominant (real) eigen
 
 --- To find the _smallest_ eigenvalue of a matrix $A$.
 
---- To find a second eigenvalue of $A$ by using a _shift_ of $A$. <BR>
+--- To find a second eigenvalue of $A$ by using a _shift_ of $A$.
 
 By combining the two methods we will see how
 
@@ -415,10 +449,11 @@ $$
   |\lambda_1| \geq |\lambda_2| \geq  \ldots \geq |\lambda_{n-1}| > |\lambda_{n}| > 0.
 $$
 
-Here, again,  $|\lambda|$ denotes the modulus of  $\lambda$. <BR>
+Here, again,  $|\lambda|$ denotes the modulus of  $\lambda$.
+
 Note that the last two _strict_ inequalities
 imply that $A$ has a single *smallest* eigenvalue which is not equal to $0$.
-<BR>
+
 Since $0$ is not an eigenvalue, we may conclude that $A$ is invertible.
 
 Then the power method applied to $A^{-1}$ converges (apart from the usual exceptional cases) to an eigenvector $\vect{v}_n$ for the smallest eigenvalue $\lambda_n$.
@@ -461,14 +496,15 @@ $$
 $$
 
 If the matrix $A$ is sparse, i.e., has relatively few non-zero entries, its
-inverse may very well be a dense matrix (i.e., a matrix with many nonzero entries).
+inverse may very well be a dense matrix (i.e., a matrix with many non-zero entries).
 ::::
 
 ::::{prf:example}
 :label: Ex:PowerMethod:FirstExampleContd
 
-Let $A$ be the matrix &nbsp; $\begin{pmatrix}5 & 2 \\ 2 & 8 \end{pmatrix}$
-of the earlier {prf:ref}`Ex:PowerMethod:FirstExample`. <BR>
+Let $A$ be the matrix $\begin{pmatrix}5 & 2 \\ 2 & 8 \end{pmatrix}$
+of the earlier {prf:ref}`Ex:PowerMethod:FirstExample`.
+
 We saw that $A$ has the eigenvalues $\lambda_1 = 9$ and $\lambda_2 = 4$.
 
 If we apply the Inverse Power Method, starting from
@@ -552,7 +588,7 @@ we will eventually find an eigenvalue of $A$ different from $\lambda_1$.
 If we run the algorithm with the matrix $B$ and the starting vector $\vect{x}_0 = \begin{pmatrix}
          1 \\ 1 \\ 1        \end{pmatrix}$,
 
-we find that already  $\norm{\vect{x}_{12}-\vect{x}_{11}} < 10^{-4}$, &nbsp;and that
+we find that already  $\norm{\vect{x}_{12}-\vect{x}_{11}} < 10^{-4}$, and that
 
 $$
   \vect{x}_{12} = \begin{pmatrix} 0.2238 \\ 0.2736 \\ 1.0000 \end{pmatrix}, \quad
@@ -597,7 +633,8 @@ For a not too large matrix $A$ some idea of the location(s) of the real eigenval
 Consider the matrix $A = \begin{pmatrix}  3  &  -3  &  1   &  3 \\
                       0  &  -2  &  -3  & -3 \\
                      -2  &   4  &  -2  & -3 \\
-                      0  &   4  &  -1  & -2  \end{pmatrix}$.<br>
+                      0  &   4  &  -1  & -2  \end{pmatrix}$.
+
 It can be shown that the characteristic polynomial $p_A(\lambda)$ of $A$ changes sign between $\lambda = -1$ and $\lambda = 0$, and also between $\lambda = 2$ and $\lambda = 3$.
 So we know there will be an eigenvalue close to $\alpha = 3$.
 
@@ -700,14 +737,14 @@ $$
 $$ 
 
 is also an eigenvalue of $A$. Since $|\lambda_{1}| = |\lambda_{2}|$,  the matrix $A$ does not have a dominant eigenvalue  (which by definition must be unique).   In the same proposition it was stated that we have the pair of complex eigenvectors  $\vect{v}_{1,2} = \vect{u} \pm i\vect{w}$ for $\lambda_{1,2}$.  Starting the power method from an arbitrary real vector will certainly not lead to a multiple  of one of the vectors $\vect{v}_{1,2}$, since every vector  $\vect{x}_k$ will remain real.
-<BR>
+
 This can be overcome by starting from a *complex* vector $\vect{z}_0 = \vect{x}_0 + i\vect{y}_0$.  However,  if this vector contains components in both the direction $\vect{v}_1$  and the direction $\vect{v}_2$, say
 
 $$
    \vect{z}_0 = \gamma_1\vect{v}_1 + \gamma_2\vect{v}_2 + \ldots + \gamma_n\vect{v}_n,
 $$
 
-for some basis  of $\mathbb{C}^n$ starting with $\{\vect{v}_1, \vect{v}_2\}$, and some complex numbers $\gamma_1, \ldots, \gamma_n$, where $\gamma_1$ and $\gamma_2$ are nonzero,  then none of the terms
+for some basis  of $\mathbb{C}^n$ starting with $\{\vect{v}_1, \vect{v}_2\}$, and some complex numbers $\gamma_1, \ldots, \gamma_n$, where $\gamma_1$ and $\gamma_2$ are non-zero,  then none of the terms
 
 $$
   \gamma_1\lambda_1^k\vect{v}_1 \quad \text{and} \quad \gamma_2\lambda_2^k\vect{v}_2
@@ -768,13 +805,15 @@ So what can we do?
 
 As mentioned, starting from a complex initial vector  $\vect{z}_0$  won't work either. 
 
-The best is of course to think of a way out yourself.  <BR> 
+The best is of course to think of a way out yourself.
+
 If you do not see such a way out, but your curiosity has been aroused, you can open the 'workaround' below.
 
 ::::{admonition} Workaround to get to the dominant complex eigenvalues
 :class: note, dropdown
 
-By definition, a dominant eigenvalue must be *unique* ,  i.e.,  $|\lambda_1| > |\lambda_2| \geq \ldots \, |\lambda_n|$. <BR>
+By definition, a dominant eigenvalue must be *unique* ,  i.e.,  $|\lambda_1| > |\lambda_2| \geq \ldots \, |\lambda_n|$.
+
 The question is, how can we get rid of the dominant eigenvalue *pair* ?
 
 We can use the earlier idea of a shift!
@@ -808,7 +847,8 @@ $$
   \vect{x}_{19} =   \vect{x}_{20} = \begin{pmatrix}0\\1\\0.000+0.500i \end{pmatrix},
 $$
 
-from which we may conclude that $\vect{x}_{20}$ is an eigenvector of  $B$. <BR>
+from which we may conclude that $\vect{x}_{20}$ is an eigenvector of  $B$.
+
 From 
 
 $$

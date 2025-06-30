@@ -35,7 +35,7 @@ where
 
 :::
 
-The *nonnegative* numbers $\sigma_i$ are called the **singular values** of $A$.
+The *non-negative* numbers $\sigma_i$ are called the **singular values** of $A$.
 
 ::::   
 
@@ -73,7 +73,7 @@ U\begin{pmatrix}
 
 ::::
 
-That the singular values must be nonnegative keeps open the possibility that some of the (last) singular values may be $0$.
+That the singular values must be non-negative keeps open the possibility that some of the (last) singular values may be $0$.
 
 
 ::::{prf:example}
@@ -96,10 +96,11 @@ Let us point out a few properties of this decomposition.
 
 
 
-\item The third column of $U$ does not really play a role in the product,  since its entries are multiplied by the two zeros in the last row of $\Sigma$. <BR>
+\item The third column of $U$ does not really play a role in the product,  since its entries are multiplied by the two zeros in the last row of $\Sigma$. 
+
 We can write this SVD in a more 'economic' form by leaving out the third column of $U$ and the third row of $\Sigma$: 
 
-<BR>
+
 
 $$
 
@@ -117,13 +118,13 @@ and  $\begin{pmatrix}-1\\0\\1\end{pmatrix} = \frac12\vect{a}_2 - \frac12\vect{a}
 
 \item The two columns of the matrix $V$ give an orthonormal basis of the row space of the matrix $A$. (Which  is not so striking here, since that row space is the whole of $\R^2$.)
 
-\item The number of nonzero singular values is two, which is equal to the number of independent columns (and also rows) of $A$, which is the *rank* of $A$.
+\item The number of non-zero singular values is two, which is equal to the number of independent columns (and also rows) of $A$, which is the *rank* of $A$.
 
 \item
 The decomposition can be rewritten in a way analogous to the spectral decomposition
 of {prf:ref}`Thm:SymmetricMat:SpectralDecomp`.
 
-<BR>
+
 
 %%::{math}
 %%:label: Eq:SVD:SpectralDecomp
@@ -153,7 +154,7 @@ Suppose $A = U\Sigma V^T$, with $U, \Sigma, V$ as in the definition.
 :enumerated: true
 :type: i
 
-\item The number $r$ of nonzero singular values is equal to the rank of $A$.
+\item The number $r$ of non-zero singular values is equal to the rank of $A$.
 \item The first $r$ columns of $U$ give an orthonormal basis for the column space of $A$.
 \item The first $r$ columns of $V$ give an orthonormal basis for the row space of $A$.
 \item A singular value decomposition of the matrix $A^T$  is given by $A^T = V\Sigma^TU^T$.
@@ -182,7 +183,8 @@ Now, since both the last $m-r$ rows of $\Sigma$ and the last $n-r$ columns of $\
 
 :::
 
-where only the first $r$ columns of $U$ and $V$ are used, and where $\Sigma_{rr}$ is the top left $r \times r$ submatrix of $\Sigma$. Note that $\Sigma_{rr}$ is a diagonal matrix with no zeros on the diagonal. <BR>
+where only the first $r$ columns of $U$ and $V$ are used, and where $\Sigma_{rr}$ is the top left $r \times r$ submatrix of $\Sigma$. Note that $\Sigma_{rr}$ is a diagonal matrix with no zeros on the diagonal.
+
 Since $U_r$ and $U_r\Sigma_{rr}$  (where only the columns of $U_r$ are scaled) have independent columns,  the only situation where $A\mathbf{x}  =U_r\Sigma_{rr}V_r^T\mathbf{x} = \mathbf{0}$ is when
 $V_r^T\mathbf{x} = \mathbf{0}$. So
 
@@ -200,7 +202,8 @@ $$
 
 This proves i.
 
-Implicitly we also almost proved ii. We only have to 'restrict' to the matrices $U_r, \Sigma_{rr}, V_r$, as in the previous example. <BR>
+Implicitly we also almost proved ii. We only have to 'restrict' to the matrices $U_r, \Sigma_{rr}, V_r$, as in the previous example.
+
 Namely,  since  $\Col{A} = \Col{(U_r\Sigma_{rr}V^T)}$  is contained in $\Col{U_r}$  (in an exercise in {numref}`Sec:BasisDim` it was stated that, provided  the product is defined, $\Col{AB}  \subseteq \Col{A}$),  and as both column spaces have dimension $r$, they must be equal.
 
 $$
@@ -229,9 +232,10 @@ We start with an important observation that explains the central role of the mat
 :label: Prop:SVD:singularvalues
 
 Let $A$ be an $m\times n$-matrix.  
-The singular values of a matrix $A$ are the square roots of the (nonnegative!) eigenvalues of the $n \times n$-matrix $A^TA$.  Thus,  if $\lambda_1 \geq \lambda_2 \geq  \cdots \geq \lambda_n$ are the eigenvalues of $A^TA$,  then  $\sigma_i = \sqrt{\lambda_i}$ are the singular values of $A$. 
+The singular values of a matrix $A$ are the square roots of the (non-negative!) eigenvalues of the $n \times n$-matrix $A^TA$.  Thus,  if $\lambda_1 \geq \lambda_2 \geq  \cdots \geq \lambda_n$ are the eigenvalues of $A^TA$,  then  $\sigma_i = \sqrt{\lambda_i}$ are the singular values of $A$. 
 
-More specific, if $A$ is an $m\times n$-matrix with the singular value decomposition $A = U\Sigma V^T$,  then the 'diagonal' elements $\Sigma_{ii}$ of $\Sigma$,  i.e., the singular values $  \sigma_i$,  are the square roots of the eigenvalues $\lambda_i$ of the matrix $A^TA$.  <BR> 
+More specific, if $A$ is an $m\times n$-matrix with the singular value decomposition $A = U\Sigma V^T$,  then the 'diagonal' elements $\Sigma_{ii}$ of $\Sigma$,  i.e., the singular values $  \sigma_i$,  are the square roots of the eigenvalues $\lambda_i$ of the matrix $A^TA$. 
+
 Moreover,  the columns of $V$ are corresponding eigenvectors  (of $A^TA$).
 
 ::::
@@ -254,10 +258,11 @@ $$
    A^TA \vect{v}_i = \lambda_i\mathbf{v}_i = \sigma_i^2\mathbf{v}_i,\quad  i = 1,2,\ldots,n.
 $$
 
-We can conclude that the singular values are given by  $\sigma_i = \sqrt{\lambda_i}$. <BR>
-Note that by definition the square root of a number $a$ is the *nonnegative* number $b$ for which $b^2 = a$, which makes that automatically  $\sigma_i \geq 0$.
+We can conclude that the singular values are given by  $\sigma_i = \sqrt{\lambda_i}$.
 
-You may have a tiny tinge of worry.  How would I know that the eigenvalues $\lambda_i$  of the matrix $A^TA$ are *nonnegative*?  You may try to settle this yourself, or you can have a sneak preview at {prf:ref}`Prop:SVD:propertiesATA`.
+Note that by definition the square root of a number $a$ is the *non-negative* number $b$ for which $b^2 = a$, which makes that automatically  $\sigma_i \geq 0$.
+
+You may have a tiny tinge of worry.  How would I know that the eigenvalues $\lambda_i$  of the matrix $A^TA$ are *non-negative*?  You may try to settle this yourself, or you can have a sneak preview at {prf:ref}`Prop:SVD:propertiesATA`.
 
 ::::
 
@@ -291,16 +296,17 @@ This can also be formulated as
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SVD:HighestSigma`
 :class: tudproof, dropdown
 
-To maximise  $\norm{A\vect{x}}$  we may as well maximise  $\norm{A\vect{x}}^2$. &nbsp; Note that
+To maximise  $\norm{A\vect{x}}$  we may as well maximise  $\norm{A\vect{x}}^2$. Note that
 
 $$
   \norm{A\vect{x}}^2 = (A\vect{x})\ip(A\vect{x}) = \vect{x}^TA^TA\vect{x}.
 $$
 
-That links the property to the quadratic form  $q(\vect{x}) = \vect{x}^TA^TA\vect{x}$. <BR>
+That links the property to the quadratic form  $q(\vect{x}) = \vect{x}^TA^TA\vect{x}$.
+
  From {prf:ref}`Prop:QuadForms:MaximumxTAx` we know that the maximal value of $q(\mathbf{x})$ on the set of unit vectors is the largest eigenvalue of the matrix $A^TA$, which by  {prf:ref}`Prop:SVD:singularvalues` is given by the square of the highest singular value.
 
-The alternative formulation in Equation {eq}`Eq:SVD:||Ax||over||x||`  follows from the observation that for each nonzero vector $\vect{x}$ 
+The alternative formulation in Equation {eq}`Eq:SVD:||Ax||over||x||`  follows from the observation that for each non-zero vector $\vect{x}$ 
 
 $$
   \dfrac{\norm{A\vect{x}}}{\norm{\vect{x}}} = \dfrac{\norm{A\hat{\vect{x}}}}{\norm{\hat{\vect{x}}}} = \norm{A\hat{\vect{x}}}, 
@@ -321,7 +327,7 @@ That is,  for symmetric matrices the maximum of $\norm{A\vect{x}}$ on the set of
 
 We are now ready to present an algorithm to construct an SVD of a matrix.
 To be followed up by examples and some (theoretical) considerations.
-Suppose $A$ is an $m\times n$-matrix of rank $r$. (The rank, as we have seen in {prf:ref}`Prop:SVD:BasicProp`, is the number of nonzero singular values.)
+Suppose $A$ is an $m\times n$-matrix of rank $r$. (The rank, as we have seen in {prf:ref}`Prop:SVD:BasicProp`, is the number of non-zero singular values.)
 
 ::::{prf:algorithm}
 :label: Alg:SVD:SVDalgorithm
@@ -336,13 +342,14 @@ Suppose $A$ is an $m\times n$-matrix of rank $r$. (The rank, as we have seen in 
 4. Compute a complete set of orthonormal eigenvectors $\mathbf{v}_1,\dots,\mathbf{v}_n$,
 corresponding to $\lambda_1, \ldots, \lambda_n$,   and take them as columns in the matrix $V$.
 
-5.  Compute $\mathbf{u}_i = \dfrac{1}{\sigma_i}A\mathbf{v}_i$,     for $i=1,\dots,r$,  where $r$ is the number of nonzero singular values. If $r < m$ extend the set $\{\mathbf{u}_1,\dots,\mathbf{u}_r\}$ to an orthonormal basis $\{\mathbf{u}_1, \dots ,\mathbf{u}_m\}$ of $\mathbb{R}^m$.
+5.  Compute $\mathbf{u}_i = \dfrac{1}{\sigma_i}A\mathbf{v}_i$,     for $i=1,\dots,r$,  where $r$ is the number of non-zero singular values. If $r < m$ extend the set $\{\mathbf{u}_1,\dots,\mathbf{u}_r\}$ to an orthonormal basis $\{\mathbf{u}_1, \dots ,\mathbf{u}_m\}$ of $\mathbb{R}^m$.
 
 6. Construct the $m\times m$-matrix $U$  with columns  $\mathbf{u}_1$, $\dots$, $\mathbf{u}_m$.
 
 ::::
 
-Apart from step 2., where we need the eigenvalues of an $n\times n$-matrix $A^TA$, every step can be worked out with pen and paper (though step 4. and step 5. can be  terribly error prone). <BR>
+Apart from step 2., where we need the eigenvalues of an $n\times n$-matrix $A^TA$, every step can be worked out with pen and paper (though step 4. and step 5. can be  terribly error prone).
+
 The step that, we think,  most needs some explaining is step 5.  Why does it lead to an *orthonormal* set of vectors $\{\mathbf{u}_1,\dots,\mathbf{u}_r\}$?  We will show that indeed it does in the proof of {prf:ref}`Thm:SVD:Existence`.  It is time for an example first  (no nice numbers though!).
 
 
@@ -378,22 +385,27 @@ We follow the steps of the algorithm.
 0 & 0
 \end{pmatrix}$.
 
-4.  We have to find the eigenvectors of $A^TA$ for $\lambda_1 = 42$, $\lambda_2 = 7$. <BR>
+4.  We have to find the eigenvectors of $A^TA$ for $\lambda_1 = 42$, $\lambda_2 = 7$. 
+
     Skipping the computations we find  $\mathbf{w}_1 = \begin{pmatrix} 2\\-1
 \end{pmatrix}$ and  $\mathbf{w}_2 = \begin{pmatrix} 1\\2
-\end{pmatrix}$.  <BR>
+\end{pmatrix}$.
+
   Normalising and putting them in a matrix gives  $V = \begin{pmatrix}
 \frac{2}{\sqrt{5}} & \frac{1}{\sqrt{5}} \\[.5ex]
 -\frac{1}{\sqrt{5}} & \frac{2}{\sqrt{5}}
 \end{pmatrix}$.
 
-5. We compute  <BR>
+5. We compute
+
 $\vect{u}_1 = \dfrac{1}{\sigma_1}A\vect{v}_1 = \dfrac{1}{\sqrt{42}}\times\dfrac{1}{\sqrt{5}} \begin{pmatrix}
 5 & -1 \\
 -3 & 2 \\
 -1 & 3
-\end{pmatrix} \begin{pmatrix} 2\\-1 \end{pmatrix} = \dfrac{1}{\sqrt{210}}\begin{pmatrix}11\\-8\\-5 \end{pmatrix}$ <BR>
-and <BR>
+\end{pmatrix} \begin{pmatrix} 2\\-1 \end{pmatrix} = \dfrac{1}{\sqrt{210}}\begin{pmatrix}11\\-8\\-5 \end{pmatrix}$
+
+and
+
 $\vect{u}_2 = \dfrac{1}{\sigma_2}A\vect{v}_2 = \dfrac{1}{\sqrt{7}}\times\dfrac{1}{\sqrt{5}}\begin{pmatrix}
 5 & -1 \\
 -3 & 2 \\
@@ -402,9 +414,10 @@ $\vect{u}_2 = \dfrac{1}{\sigma_2}A\vect{v}_2 = \dfrac{1}{\sqrt{7}}\times\dfrac{1
 
 Note that 'magically' $\{\mathbf{u}_1,  \mathbf{u}_2\}$ is indeed an orthonormal set!
 
-We have to extend this to an orthonormal basis of $\R^3$. For this low dimensional problem we can use the cross product!  
+We have to extend this to an orthonormal basis of $\R^3$. For this low-dimensional problem we can use the cross product!  
 First we compute the orthogonal vector 
- $\quad \vect{w}_3  = \begin{pmatrix}11\\-8\\-5 \end{pmatrix} \times  \begin{pmatrix}3\\1\\5 \end{pmatrix} = \begin{pmatrix}-35\\-70\\35 \end{pmatrix} = 35 \begin{pmatrix}-1\\-2\\1 \end{pmatrix}$. <BR>
+ $\quad \vect{w}_3  = \begin{pmatrix}11\\-8\\-5 \end{pmatrix} \times  \begin{pmatrix}3\\1\\5 \end{pmatrix} = \begin{pmatrix}-35\\-70\\35 \end{pmatrix} = 35 \begin{pmatrix}-1\\-2\\1 \end{pmatrix}$.
+
  Normalising $\vect{w}_3$ gives the third basis vector $\vect{u}_3 =  \dfrac{1}{\sqrt{6}} \begin{pmatrix}-1\\-2\\1 \end{pmatrix}$.
 
 Thus we end up with the matrix  $U = \begin{pmatrix}\frac{11}{\sqrt{210}}&\frac{3}{\sqrt{35}} &-\frac{1}{\sqrt{6}}\\ -\frac{8}{\sqrt{210}}&\frac{1}{\sqrt{35}} &-\frac{2}{\sqrt{6}}\\-\frac{5}{\sqrt{210}}&\frac{5}{\sqrt{35}} & \frac{1}{\sqrt{6}}\end{pmatrix}$.
@@ -427,8 +440,8 @@ Let $A$ be an $m\times n$-matrix with real entries. Then the following propertie
 \item $\Nul{A} = \Nul{(A^TA)}$.
 \item $\Rank{A} = \Rank{(A^TA)}$.
 \label{Item:Prop:SVD:propertiesATA:samerankAandATA}
-\item The eigenvalues of $A^TA$ are real and nonnegative.
-\label{Item:Prop:SVD:propertiesATA:nonzeroeigvals}
+\item The eigenvalues of $A^TA$ are real and non-negative.
+\label{Item:Prop:SVD:propertiesATA:non-zeroeigvals}
 \item The non-zero eigenvalues of $AA^T$ are the same as the non-zero eigenvalues of $A^TA$.  Moreover the algebraic and geometric multiplicities of these eigenvalues are the same. 
 \label{Item:Prop:SVD:propertiesATA:sameeigvals}
 :::
@@ -482,7 +495,8 @@ $$0\le \norm{A\vect{u}}^2 = \mathbf{u}^TA^TA\mathbf{u} = \mathbf{u}^T\lambda \ma
 Since $\mathbf{u}\ne \mathbf{0}$,  so $\norm{\mathbf{u}}\ne 0$  as well,  it follows that $\lambda \ge 0$.
 
 \item Let $\lambda$ be a non-zero eigenvalue of $A^TA$ with associated eigenvector $\mathbf{u}$. We have tp show that $\lambda$ is also an eigenvalue of $AA^T$. By the definition of eigenvalue we have $A^TA\mathbf{u} = \lambda\mathbf{u}$. 
-Observe that if $A\mathbf{u}=\mathbf{0}$ then $\lambda\mathbf{u} = A^TA\mathbf{u} = \mathbf{0}$, which would imply that $\lambda =0$, which contradicts the hypothesis of $\lambda \ne 0$. <BR>
+Observe that if $A\mathbf{u}=\mathbf{0}$ then $\lambda\mathbf{u} = A^TA\mathbf{u} = \mathbf{0}$, which would imply that $\lambda =0$, which contradicts the hypothesis of $\lambda \ne 0$.
+
 Next, multiplying by $A$ on both sides of the previous identity we obtain
 
 $$
@@ -532,7 +546,7 @@ Again, by the inherent symmetry the argument can be reversed, and we find that t
 
 ::::
 
-We want to stress  the importance of property {itemref}`Item:Prop:SVD:propertiesATA:nonzeroeigvals`. We know from {numref}`Sec:SymmetricMat` that the eigenvalues of a symmetric matrix are real. The previous proposition tells us that, in addition, **the eigenvalues of the symmetric matrix $A^TA$ are non-negative**. This property is the key for the singular value decomposition.
+We want to stress  the importance of property {itemref}`Item:Prop:SVD:propertiesATA:non-zeroeigvals`. We know from {numref}`Sec:SymmetricMat` that the eigenvalues of a symmetric matrix are real. The previous proposition tells us that, in addition, **the eigenvalues of the symmetric matrix $A^TA$ are non-negative**. This property is the key for the singular value decomposition.
 
 
 ::::{prf:theorem}  Existence of a singular value decomposition
@@ -548,24 +562,45 @@ singular value decomposition of $A$.
 ::::{admonition} Proof of&nbsp;{prf:ref}`Thm:SVD:Existence`
 :class: tudproof, dropdown
 
-Let us first consider the six steps of the algorithm.
+Let us first consider the six steps of the algorithm:
 
-Step 1. Offers no difficulties.
+<ol type="1">
 
-Step 2. Here we must check that the eigenvalues of the matrix $A^TA$ are *nonnegative*. This is exactly the content of  {prf:ref}`Prop:SVD:propertiesATA` {itemref}`Item:Prop:SVD:propertiesATA:nonzeroeigvals` 
+<li>
 
-Step 3. Offers no difficulties.
+Offers no difficulties.
 
-Step 4. Since $A^TA$ is symmetric, an orthonormal basis of eigenvectors exists.
+</li>
 
-Step 5. Here we have to show that the vectors  $A\vect{v}_1, \ldots, A\vect{v}_r$, corresponding to the nonzero eigenvalues of $A^TA$ are *orthogonal*.  (We called  this 'magical' in {prf:ref}`Ex:SVD:ComputeAnSVD1`). 
+<li>
+
+Here we must check that the eigenvalues of the matrix $A^TA$ are *non-negative*. This is exactly the content of  {prf:ref}`Prop:SVD:propertiesATA` {itemref}`Item:Prop:SVD:propertiesATA:non-zeroeigvals` 
+
+</li>
+
+<li>
+
+Offers no difficulties.
+
+</li>
+
+<li>
+
+Since $A^TA$ is symmetric, an orthonormal basis of eigenvectors exists.
+
+</li>
+
+<li>
+
+Here we have to show that the vectors  $A\vect{v}_1, \ldots, A\vect{v}_r$, corresponding to the non-zero eigenvalues of $A^TA$ are *orthogonal*.  (We called  this 'magical' in {prf:ref}`Ex:SVD:ComputeAnSVD1`). 
 Well,  just consider the inner products!  For  $i \neq j$ we have
 
 $$
   A\vect{v}_i\ip A\vect{v}_j = (A\vect{v}_i)^TA\vect{v}_j = \vect{v}_i^T A^TA \vect{v}_j = \vect{v}_i \ip  (\lambda_j\vect{v}_j) = \lambda_j \vect{v}_i \ip \vect{v}_j = 0,
 $$
 
-since  the vectors $\vect{v}_1, \ldots, \vect{v}_n$ are orthogonal. <BR>
+since  the vectors $\vect{v}_1, \ldots, \vect{v}_n$ are orthogonal.
+
 Thus the vectors $\vect{u}_1, \ldots, \vect{u}_r$  are orthogonal to start with.
 Finding their norms, noting that the vectors $\vect{v}_i$ already have unit length, and that $A^TA\vect{v}_i = \lambda_i \vect{v}_i$, we see that,  for $1 \leq i \leq r$,
 
@@ -579,7 +614,15 @@ $\vect{u}_1, \ldots, \vect{u}_m$  of $\R^m$ , we can use techniques from {numref
 
 This leaves us with
 
-Step 6,   which is no big deal.
+</li>
+
+<li>
+
+which is no big deal.
+
+</li>
+
+</ol>
 
 
 To conclude we have to show that for the matrices found indeed we have
@@ -624,10 +667,12 @@ Some concluding remarks concerning the algorithm.
 
  1. Because of the basic property that says that transposing an SVD of an $m \times n$-matrix $A$ gives an SVD  of $A^T$
  ({prf:ref}`Prop:SVD:BasicProp` {itemref}`Item:Prop:SVD:BasicProp:Transpose`)
- it may be profitable to  find an SVD for $A^T$ first, and then transpose this. <BR>
+ it may be profitable to  find an SVD for $A^T$ first, and then transpose this.
+ 
  The singular values of $A$ are the eigenvalues of $A^TA$, an $n \times n$-matrix, the singular values of $A^T$ are the eigenvalues of $AA^T$, an
- $m \times m$-matrix.  The smaller the better! <BR>
- In most applications the singular value decomposition will be applied to  $m\times n$-matrices $A$  with much more rows that columns,  so  $m \gg n$. For such  matrices $A$, 
+ $m \times m$-matrix.  The smaller the better! 
+ 
+  In most applications the singular value decomposition will be applied to  $m\times n$-matrices $A$  with much more rows that columns,  so  $m \gg n$. For such  matrices $A$, 
  working with $A^TA$ is the best bet.
 
  2. The normalisation of the vectors  $\mathbf{v}_i$ and $\mathbf{u}_j$ may be postponed till the end of step 5.  That prevents dragging along
@@ -659,14 +704,21 @@ $B = A^T = \begin{pmatrix}
 
 We will pass along all steps of {prf:ref}`Alg:SVD:SVDalgorithm`.
 
-Step 1.  $B^TB = AA^T = \begin{pmatrix}
+<ol type="1">
+
+<li>
+
+$B^TB = AA^T = \begin{pmatrix}
 3 & -3 & -1\\
 -3 &11 &3 \\
 -1 & 3 & 9
 \end{pmatrix}$.  This is straightforward.
 
+</li>
 
-Step 2.  Computing the characteristic polynomial is already quite a task here, but it is doable.  The result: 
+<li>
+
+Computing the characteristic polynomial is already quite a task here, but it is doable.  The result: 
 
 $$
 \det(B^TB - \lambda {I}) = \lambda^3 -23\lambda^2 +140 \lambda -196.
@@ -677,32 +729,54 @@ for which the squares of all the singular values are  *integers*. (So in that se
 computations can be much worse.)  Here, the eigenvalues of $B^TB$ are given by  $\lambda_1 = 14, \lambda_2 = 7,
 \lambda_3 = 2$.  Which finishes step 2.
 
-Step 3  is straightforward:  $\Sigma = \begin{pmatrix}
+</li>
+
+<li>
+
+is straightforward:  $\Sigma = \begin{pmatrix}
 \sqrt{14} & 0 & 0 \\
 0 & \sqrt{7} & 0 \\
 0 & 0 & \sqrt{2} \\
 0 & 0 & 0
 \end{pmatrix}$.
 
-Step 4. With some effort we can find eigenvectors: <BR>
+</li>
+
+<li>
+
+With some effort we can find eigenvectors:
+
 $\vect{v}_1 = \begin{pmatrix} 1 \\ -3 \\ -2 \end{pmatrix}$, for $\lambda_1 = 14$,
   $\vect{v}_2 = \begin{pmatrix} 1 \\ -3 \\ 5 \end{pmatrix}$, for $\lambda_2 = 7$, and
-$\vect{v}_3 = \begin{pmatrix} 3 \\ 1 \\ 0 \end{pmatrix}$, for $\lambda_3 = 2$. <BR>
+$\vect{v}_3 = \begin{pmatrix} 3 \\ 1 \\ 0 \end{pmatrix}$, for $\lambda_3 = 2$.
+
 Note that these are indeed three orthogonal vectors, which, according to {prf:ref}`Rem:SVD:PracticalHints`, are better not normalised immediately.
 
-Step 5.  Next we compute the vectors $\vect{u}_i$, again without normalising, and also for the moment not taking the (ugly!) factors
-$\frac{1}{\sigma_i} $ into account. Since the singular values are nonzero, we use all three vectors $\vect{v}_i$. <BR>
+</li>
+
+<li>
+
+Next we compute the vectors $\vect{u}_i$, again without normalising, and also for the moment not taking the (ugly!) factors
+$\frac{1}{\sigma_i} $ into account. Since the singular values are non-zero, we use all three vectors $\vect{v}_i$.
+
 This gives 
 
 $$ \mathbf{u}_1 = B\mathbf{v}_1 = \begin{pmatrix} 8 \\ -4 \\ -4 \\ -10 \end{pmatrix}, \quad \mathbf{u}_2 = B\mathbf{v}_2 =
 \begin{pmatrix}-6 \\ 3 \\ 10 \\ -10 \end{pmatrix}, \quad \mathbf{u}_3 = B\mathbf{v}_3 = \begin{pmatrix} 2 \\ 4 \\ 0 \\ 0 \end{pmatrix}. 
 $$
-It should not come as a surprise that these vectors are orthogonal! <BR>
-We have to find a fourth orthogonal vector $\vect{u}_4$.   One way is to look for a nonzero vector in the null space of the matrix $\begin{pmatrix}
-8 & -4 & -4 &-10 \\ -6 & 3 & 10 & -10 \\ 2 & 4 & 0 & 0\end{pmatrix}$. <BR>
+It should not come as a surprise that these vectors are orthogonal!
+
+We have to find a fourth orthogonal vector $\vect{u}_4$.   One way is to look for a non-zero vector in the null space of the matrix $\begin{pmatrix}
+8 & -4 & -4 &-10 \\ -6 & 3 & 10 & -10 \\ 2 & 4 & 0 & 0\end{pmatrix}$.
+
  You may check that the vector $\vect{u}_4 = \begin{pmatrix} 4 \\ -2 \\ 5 \\ 2 \end{pmatrix}$  does the trick.
 
-Step 6.  (Where we also still have to present our $V$.)  <BR>
+</li>
+
+<li>
+
+(Where we also still have to present our $V$.)
+
 We rescale all vectors to unit vectors and put them side by side, to arrive at the matrices
 
 $$
@@ -715,6 +789,10 @@ $$
             -\frac{5}{7} & -\frac{10}{\sqrt{245}}&   0        & \frac{2}{7}\\
        \end{pmatrix}.
 $$
+
+</li>
+
+</ol>
 
 And then we must not forget that we have just constructed an SVD for $A^T$ instead of $A$!
 
@@ -812,7 +890,7 @@ $$
 So,  $V$ represents a rotation about an angle  $\varphi = \arccos\left(\frac{1}{\sqrt{5}}\right) \approx 63^{o}$, and 
 $U$ represents a rotation about an angle  $\psi = \arccos\left(\frac{3}{5}\right) \approx 53^{o}$.  Between those two rotations,  $\Sigma$  'stretches' vectors with a factor $3\sqrt{5}$ in the $x$-direction and a factor $2\sqrt{5}$ in the $y$-direction.
 
-Note that  $V$ maps $\vect{e}_1,\vect{e}_2$  to  $\vect{v}_1,\vect{v}_2$, &nbsp;  so  $V^T = V^{-1}$ maps $\vect{v}_1,\vect{v}_2$  to  $\vect{e}_1,\vect{e}_2$.
+Note that  $V$ maps $\vect{e}_1,\vect{e}_2$  to  $\vect{v}_1,\vect{v}_2$, so  $V^T = V^{-1}$ maps $\vect{v}_1,\vect{v}_2$  to  $\vect{e}_1,\vect{e}_2$.
 
  
 We give the matrix an extra factor $\dfrac1{\sqrt{5}}$ to get a better picture.
@@ -867,7 +945,7 @@ in $\R^m$.
 
 
 The two 'orthogonal transformations' do not change norms, and the transformation corresponding to the diagonal matrix $\Sigma$   'stretches' the unit vectors $\vect{e}_i$  with factors $\sigma_i$.  We see again that the maximum scaling a vector $\vect{x}$  undergoes when multiplied by $A$ is the highest singular value $\sigma_1$  of $A$ (in full accordance with {prf:ref}`Prop:SVD:HighestSigma`).
-<BR>
+
 
 
 ## Applications of the SVD
@@ -879,10 +957,10 @@ There will be two applications described in this section.
 2.  Linear Least Squares.
 
 
-We start with the first.  <BR>
-Numerical data can be stored in a matrix.<BR>
-For instance, a black-and-white picture/photo can be stored 'pixel by pixel', by numbers that indicate the gray scale, which may for instance be any integer from $0$ (completely white) to $31$ (completely black). A 4:5 photo may then be stored as, say,  a $1080\times1350$-matrix.
-<BR>
+We start with the first.
+
+Numerical data can be stored in a matrix. For instance, a black-and-white picture/photo can be stored 'pixel by pixel', by numbers that indicate the gray scale, which may for instance be any integer from $0$ (completely white) to $31$ (completely black). A 4:5 photo may then be stored as, say,  a $1080\times1350$-matrix.
+
 As another example, think of a survey of $n$ questions that have to be answered using a 1-5 scale.  If the numbers of respondents is $N$, the data can be represented by an $N \times n$-matrix.
 
 In the first situation there will be both a high correlation between columns that are close to each other, as well as between nearby rows.  If the picture is a true photo the matrix will be far from a 'random' matrix.
@@ -890,7 +968,7 @@ In the second context  one might expect that the columns will highly correlate: 
 
 The main features of the data may be filtered out by analysing an SVD of the matrix at hand.
 
-The basic idea comes from the 'spectral decomposition' as in the last observation of {prf:ref}`Ex:SVD:firstSVD`.  Suppose $A$ is a matrix of  rank $r$,  with nonzero singular values  $\sigma_1 \geq \sigma_2 \geq \ldots \geq \sigma_r > 0$.  Furthermore, let  $U\Sigma V^T$  be a singular value decomposition of the matrix $A$. Let 
+The basic idea comes from the 'spectral decomposition' as in the last observation of {prf:ref}`Ex:SVD:firstSVD`.  Suppose $A$ is a matrix of  rank $r$,  with non-zero singular values  $\sigma_1 \geq \sigma_2 \geq \ldots \geq \sigma_r > 0$.  Furthermore, let  $U\Sigma V^T$  be a singular value decomposition of the matrix $A$. Let 
 
 $$
   \Delta = \begin{pmatrix} \sigma_1 &   0   &  0   & \cdots & 0 \\ 
@@ -965,7 +1043,8 @@ $$
   \sigma_1 = 839.36, \quad \sigma_2 = 58.84, \quad \sigma_3 = 45.32, \quad \sigma_4 = 2.82, \quad \sigma_5 = 2.14, \,\, \ldots
 $$
 
-Note the severe drop-off after the third singular value. <BR> 
+Note the severe drop-off after the third singular value.
+
 If we take from the singular values decomposition   $A = U\Sigma V^T$  only the first three columns of $U$ and $V$,  i.e. we put  $A_3 = U_3\Sigma_{33}V_3^T$,  we get
 
 $$

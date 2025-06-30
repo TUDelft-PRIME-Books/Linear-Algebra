@@ -13,7 +13,7 @@ We start with the general definition straightaway.
 ::::::{prf:definition}
 :label: Dfn:DetCofactors:SubmatrixAij
 
-Let $A$ be an $n\times n$-matrix, with $n \geq 2$. The **submatrix** $A_{ij}$ is the $(n-1) \times (n-1)$-matrix that remains when the $i$th row and the $j$th column of $A$ are deleted.
+Let $A$ be an $n\times n$-matrix, with $n \geq 2$. The **submatrix** $A_{ij}$ is the $(n-1) \times (n-1)$-matrix that remains when the $i$-th row and the $j$-th column of $A$ are deleted.
 
 ::::::
 
@@ -51,7 +51,7 @@ $$
 C_{ij} = (-1)^{i+j} \det{A_{ij}}
 $$
 
-is called the $(i,j)$th **cofactor** of $A$.
+is called the $(i,j)$-th **cofactor** of $A$.
 
 ::::::
 
@@ -163,13 +163,13 @@ For a larger matrix the work involved quickly runs out of hand. Luckily there ar
 ::::::{prf:theorem}
 :label: Thm:DetCofactors:RowOrColumnExpansion
 
-The determinant can be found by expansion along any column. Taking the $j$th column this gives
+The determinant can be found by expansion along any column. Taking the $j$-th column this gives
 
 $$
 \det{A} = \sum_{i=1}^n   (-1)^{i+j} a_{ij}\det{A_{ij}} = \sum_{i=1}^n   a_{ij} C_{ij}.
 $$
 
-It can also be found by expansion along any row. For the $i$th row this gives
+It can also be found by expansion along any row. For the $i$-th row this gives
 
 $$
 \det{A} = \sum_{j=1}^n   (-1)^{i+j} a_{ij}\det{A_{ij}} = \sum_{j=1}^n   a_{ij} C_{ij}.
@@ -262,7 +262,7 @@ $$
 a_{3j}C_{3j} = (-1)^{3+j}a_{3j}\det{A_{3j}}, \quad   j = 1,\ldots,5
 $$
 
-only the second gives a nonzero contribution:
+only the second gives a non-zero contribution:
 
 $$
 \left|\begin{array}{rrrrr}
@@ -413,7 +413,7 @@ A triangular matrix is invertible if and only if it has a non-zero determinant.
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DetCofactors:InvertibleTriangular`
 :class: tudproof
 
-Let us first consider the case of an $n \times n$ upper triangular matrix $U$, with entries $u_{ij}$. Such a matrix is an echelon matrix. It is invertible if and only if it has $n$ linearly independent columns, which is the case if all diagonal elements $u_{ii}$ are nonzero. And this last is equivalent to
+Let us first consider the case of an $n \times n$ upper triangular matrix $U$, with entries $u_{ij}$. Such a matrix is an echelon matrix. It is invertible if and only if it has $n$ linearly independent columns, which is the case if all diagonal elements $u_{ii}$ are non-zero. And this last is equivalent to
 
 $$
 u_{11}\cdot u_{22}  \cdot  \ldots \cdot u_{nn} = \det{U} \neq 0.

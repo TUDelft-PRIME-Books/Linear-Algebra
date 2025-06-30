@@ -210,12 +210,12 @@ Let $T:\mathbb{R}^{m}\to\mathbb{R}^{n}$ be a linear transformation with standard
 <ol type = "i">
 <li>
 
-$T$ is injective;
+$T$ is injective.
 
 </li>
 <li id="Item:InjSurj:InjisUniqueSol">
 
-$A\mathbf{x}=\mathbf{b}$ has, for every $\mathbf{b}$ in $\mathbb{R}^{n}$, **at most** one solution;
+$A\mathbf{x}=\mathbf{b}$ has, for every $\mathbf{b}$ in $\mathbb{R}^{n}$, **at most** one solution.
 
 </li>
 <li>
@@ -432,12 +432,12 @@ Let $T:\mathbb{R}^{m}\to\mathbb{R}^{n}$ be a linear transformation with standard
 <ol type = "i">
 <li>
 
-$T$ is surjective;
+$T$ is surjective.
 
 </li>
 <li>
 
-$A\mathbf{x}=\mathbf{b}$ has, for every $\mathbf{b}$ in $\mathbb{R}^{n}$, **at least** one solution;
+$A\mathbf{x}=\mathbf{b}$ has, for every $\mathbf{b}$ in $\mathbb{R}^{n}$, **at least** one solution.
 
 </li>
 <li>
@@ -517,13 +517,13 @@ Let $T:\mathbb{R}^{n}\to\mathbb{R}^{n}$ be a linear transformation. The followin
 
 <li>
 
-$T$ is injective;
+$T$ is injective.
 
 </li>
 
 <li>
 
-$T$ is surjective;
+$T$ is surjective.
 
 </li>
 
@@ -654,6 +654,6 @@ Then $TS(\vect{v})=AB\vect{v}=\vect{v}$ for any $\vect{v}$ in $\R^{n}$. The only
 :url: https://embed.grasple.com/exercises/d0eeb679-eb6d-4d3b-92d8-5137bea72254?id=122298
 :label: grasple_exercise_3_5_7
 :dropdown:
-:description: Statements about injectivity/surjectivity for  $T$ from $\R^n$ to $\R^n$
+:description: Statements about injectivity/surjectivity for  $T$ from $\R^n$ to $\R^n$.
 
 ::::

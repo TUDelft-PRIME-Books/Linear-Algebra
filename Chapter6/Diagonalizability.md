@@ -122,7 +122,7 @@ From {prf:ref}`Prop:Diagonalisable:SimilarCharpoly` it follows that similar matr
 From {prf:ref}`Prop:Diagonalisable:SimilarEigenvalues` it follows that they also have the same geometric multiplicities. That is,
 if $\vect{v}_1, \ldots, \vect{v}_m$ are linearly independent eigenvectors of $B$ for the eigenvalue $\lambda_k$, and $A = PBP^{-1}$,
 then the vectors $P\vect{v}_1, \ldots, P\vect{v}_m$ are linearly independent eigenvectors of $A$.
-<BR>
+
 And vice versa.
 
 ::::::{exercise}
@@ -157,7 +157,8 @@ that holds for the geometric and the algebraic multiplicity of an eigenvalue
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:EigenValues:SmallerGeomMultiplicity` &nbsp;  (geom.mult. $\leq$ alg.mult.)
 :class: tudproof, dropdown
 
-Suppose the $n\times n$-matrix $A$ has the eigenvalue $\lambda_1$ of geometric multiplicity $k$.  We have to show that the algebraic multiplicity of $\lambda_1$ is *at least* equal to $k$. We will do so by constructing a matrix $B$ that is similar to $A$ and for which the eigenvalue $\lambda_1$ will clearly have algebraic multiplicity at least equal to $k$. <BR>
+Suppose the $n\times n$-matrix $A$ has the eigenvalue $\lambda_1$ of geometric multiplicity $k$.  We have to show that the algebraic multiplicity of $\lambda_1$ is *at least* equal to $k$. We will do so by constructing a matrix $B$ that is similar to $A$ and for which the eigenvalue $\lambda_1$ will clearly have algebraic multiplicity at least equal to $k$.
+
 Suppose $\vect{v}_1,\ldots,\vect{v}_k$ are $k$ linearly independent eigenvectors for $\lambda_1$.  We can extend $\{\vect{v}_1,\ldots,\vect{v}_k,\}$ to a basis $\{\vect{v}_1,\ldots,\vect{v}_k, \ldots, \mathbf{v}_n \}$   of $\mathbb{R}^n$.
 Let $P$ be the matrix with  $\vect{v}_1,\ldots,\vect{v}_n$ as columns.  $P$ is invertible, and we have that
 
@@ -170,7 +171,7 @@ AP &=&  A (\vect{v}_1\,\, \ldots \,\, \vect{v}_k\,\, \vect{v}_{k+1}\,\,\ldots \,
 $$
 
 since  $\vect{v}_1, \ldots, \vect{v}_k$ were supposed to be eigenvectors for $\lambda_1$.
-<BR>
+
 Since $P$ is invertible, for each $j \geq k+1$ the equation $P\vect{x} = A\vect{v}_{j}$ has the (unique) solution,  $\vect{b}_j = P^{-1}A\vect{v}_{j}$.  So we see that
 
 $$
@@ -198,7 +199,8 @@ $$
                      \end{pmatrix},
 $$
 
-where there are $k$ entries $\lambda_1$ on the diagonal. <BR>
+where there are $k$ entries $\lambda_1$ on the diagonal.
+
 It follows that the characteristic polynomial  $\det(B - \lambda I)$  will have *at least*  $k$ factors $(\lambda - \lambda_1)$.
 Thus the algebraic multiplicity of the eigenvalue $\lambda_1$ for the matrix $B$ is greater than or equal to $k$.  From the observed similarity  $A \sim B$ it follows that this also holds for the algebraic multiplicity of $\lambda_1$ for the matrix $A$.
 So indeed the inequality
@@ -264,18 +266,18 @@ Suppose $A = PBP^{-1}$.
 
 As in the proof of the equality of the characteristic polynomials ({prf:ref}`Prop:Diagonalisable:SimilarCharpoly`) we have:
 
-<BR>
+
 
 if $A = PBP^{-1}$,
 then
-<BR>
+
 
 $$
 \det{A} = \det{(PBP^{-1})}  = \det{P}\det{B}\det{(P^{-1})},
 $$
 
 which can be rewritten as follows
-<BR>
+
 
 $$
 \det{P}\det{B}\det{(P^{-1})} = \det{P}\det{B}(\det{P})^{-1} = \det{B}.
@@ -286,13 +288,14 @@ $$
 
 Follows immediately from i.:
 
-&nbsp;  &nbsp; matrix $A$ is invertible $\quad \iff \quad \det{(A)} \neq 0$.
+matrix $A$ is invertible $\quad \iff \quad \det{(A)} \neq 0$.
 
 </li>
 <li>
 
 If $A$ has rank $n$, then $A$ is invertible, and then $B$ is also invertible, so 
-$B$  has rank $n$ too. <BR>
+$B$  has rank $n$ too.
+
 If $\operatorname{rank}$ $A < n$ then $\lambda = 0$ is an eigenvalue of both $A$ and $B$.
 In this case we can use
 
@@ -781,8 +784,8 @@ since the internal factors $P^{-1}P$ reduce to the identity matrix $I$, and $ID 
 
 Check for yourself what happens if $k = 0$.
 
-The advantage is the following. Normally, multiplication of two $n \times n$-matrices requires $n$ multiplications per entry (or $2n-1$ operations, if additions are counted as well), and there are $n\times n$ entries to be computed. So for the $k$th power that requires about $k\times n^3$ multiplications of numbers.
-To compute $PD^kP^{-1}$ we need $n$ $k$th powers to find $D^k$, and we are left with one 'simple' matrix product $PD^k$ and one 'full' matrix product.
+The advantage is the following. Normally, multiplication of two $n \times n$-matrices requires $n$ multiplications per entry (or $2n-1$ operations, if additions are counted as well), and there are $n\times n$ entries to be computed. So for the $k$-th power that requires about $k\times n^3$ multiplications of numbers.
+To compute $PD^kP^{-1}$ we need $n$ $k$-th powers to find $D^k$, and we are left with one 'simple' matrix product $PD^k$ and one 'full' matrix product.
 
 ::::::
 

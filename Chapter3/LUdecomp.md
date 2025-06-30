@@ -11,6 +11,8 @@ In this section we will learn how to solve an $m\times n$ linear system $A\mathb
 This is called an $LU$-*decomposition* of the matrix $A$. 
 % The following example illustrates the procedure.
 
+## Introduction
+
 ::::::{prf:example}
 :label: Ex:LUdecomp:FirstLU
 Consider the system $A\mathbf{x} = \mathbf{b}$ where
@@ -249,7 +251,7 @@ Note that the condition of $1$s on the diagonal implies that the matrix $L$ is i
 
 ::::::
 
-The next proposition captures the main interest of the $LU$ decomposition, as is already illustrated in 
+The next algorithm captures the main interest of the $LU$ decomposition, as is already illustrated in 
 {prf:ref}`Ex:LUdecomp:FirstLUcontinued`
 
 
@@ -262,13 +264,15 @@ Suppose that $A=LU$, so that the linear system of equations $A\mathbf{x}=\mathbf
 :enumerated: true
 :type: i
 
-\item Solve the system $L\mathbf{y}=\mathbf{b}$ and find $\mathbf{y}$. <BR>
-      Note that this system has a unique solution.
+\item Solve the system $L\mathbf{y}=\mathbf{b}$ and find $\mathbf{y}$.
+
+      *Note that this system has a unique solution.*
 \item Solve the system $U\mathbf{x}=\mathbf{y}$ to find $\mathbf{x}$.
 
 :::
 
 The solution of the second system is then a solution of the system $A\mathbf{x}=\mathbf{b}$.
+
 
 ::::::
 
@@ -278,7 +282,7 @@ The next proposition tells us which matrices do have an $LU$ decomposition.
 ::::::{prf:proposition}
 :label: Prop:LUdecomp:Existence
 
-A matrix $A$ can be written as $A = LU$, with $L$ and $U$ as described in {prf:ref}`Def:LUdecomp:DefinitionLU`   if and only if can be row reduced to an echelon matrix with only additions of multiples of rows to rows below it. We will call this a **top-down row reduction**.
+A matrix $A$ can be written as $A = LU$, with $L$ and $U$ as described in {prf:ref}`Def:LUdecomp:DefinitionLU`   if and only if $A$ can be row reduced to an echelon matrix with only additions of multiples of rows to rows below it. We will call this a **top-down row reduction**.
 ::::::
 
 Instead of a giving a formal proof, we will illustrate matters first with an example.
@@ -408,7 +412,7 @@ $$
 
 $$
 
-which is indeed a product of a lower triangular matrix $L$  (with 1's on its diagonal) and an upper triangular matrix $U$.
+which is indeed a product of a lower triangular matrix $L$  (with $1$s on its diagonal) and an upper triangular matrix $U$.
 
 ::::::
 
@@ -418,7 +422,7 @@ The following algorithm describes this 'shortcut' to find an $LU$ decomposition.
 ::::::{prf:algorithm}
 :label: Alg:LUdecomp:LUalgorithm
 
-Suppose the $n\times n$-matrix $A$ can be row reduced top-down to the echelon matrix $U$. If the numbers $m_{jk}$ denote the multiples of the $k$th row that are subtracted from the rows below it in the $k$th step (so $1 \leq k < j \leq n$), &nbsp; then 
+Suppose the $n\times n$-matrix $A$ can be row reduced top-down to the echelon matrix $U$. If the numbers $m_{jk}$ denote the multiples of the $k$-th row that are subtracted from the rows below it in the $k$-th step (so $1 \leq k < j \leq n$), then 
 
 $$
    A = LU, \quad \text{for} \,\,
@@ -704,8 +708,9 @@ The best would be to think of a proof yourself, but you can also have a peek at 
 Suppose $A$ and $B$ are lower triangular matrices with $1$s on their diagonals.
 
 One way to prove that $AB$ also has these properties is to use the column-row expansion of the product.
-(Cf. {numref}`Exc:MatrixOps:ColumnRowExpansion`.)  <br>
-Let $A_{(k)}$ be the $k$th column of $A$, and $B^{(k)}$ the $k$th row of $B$.  
+(Cf. {numref}`Exc:MatrixOps:ColumnRowExpansion`.) 
+
+Let $A_{(k)}$ be the $k$-th column of $A$, and $B^{(k)}$ the $k$-th row of $B$.  
 Then
 
 $$
@@ -714,7 +719,7 @@ $$
     B^{(k)} = \begin{pmatrix}b_{k1} & \cdots &  b_{kk} & 0 & \cdots & 0 \end{pmatrix},
 $$
 
-where moreover  $a_{kk} = b_{kk} = 1$. So  the  $k$th term in the column-row expansion of $AB$ becomes
+where moreover  $a_{kk} = b_{kk} = 1$. So  the  $k$-th term in the column-row expansion of $AB$ becomes
 
 $$
 \begin{array}{rcl}
@@ -830,7 +835,7 @@ $$
   A = L_{n-1}L_{n-2}\cdots L_2L_1\,U = L\,U,
 $$
 
-where each matrix $L_k$ is a matrix containing the multipliers of the $k$th step in the proces.
+where each matrix $L_k$ is a matrix containing the multipliers of the $k$-th step in the proces.
 
 The crucial thing is that in the product $L_{n-1}L_{n-2}\cdots L_2L_1$  in this order the multipliers do not 'interact'.   For instance, for $n = 4$, we would get 
 
@@ -939,7 +944,7 @@ $$
         \end{array} \right)           
 $$
 
-Pre-multiplication of a matrix $M$ with one of the matrices  $L_k$  amounts to adding multiples of the $k$th row of $M$ to the lower rows. So the product $L_1L_2L_3\cdots L_{n-1}$ is a series of top-down operations,
+Pre-multiplication of a matrix $M$ with one of the matrices  $L_k$  amounts to adding multiples of the $k$-th row of $M$ to the lower rows. So the product $L_1L_2L_3\cdots L_{n-1}$ is a series of top-down operations,
 and
 
 $$
@@ -977,7 +982,8 @@ $$
   L_1=L_2  \quad \text{and} \quad  U_1 = U_2.
 $$
 
-Since $A$ is invertible, the matrices $U_1, U_2$ are also invertible. (The matrices $L_1$ and $L_2$ are always invertible, c.f., {prf:ref}`Def:LUdecomp:DefinitionLU`.) <BR>
+Since $A$ is invertible, the matrices $U_1, U_2$ are also invertible. (The matrices $L_1$ and $L_2$ are always invertible, c.f., {prf:ref}`Def:LUdecomp:DefinitionLU`.)
+
 From
 
 $$
@@ -1195,7 +1201,7 @@ u_{11} & u_{12} & u_{13} & \cdots &u_{1m} & \cdots & u_{1n}  \\
       &      & u_{33} & \cdots & u_{3m} & \cdots & u_{3n} \\
       &      &        &  \ddots & \vdots \\
       &      &        &         & u_{mm} & \cdots & u_{mn} 
-\end{pmatrix}$  &nbsp;  an echelon matrix
+\end{pmatrix}$  an echelon matrix
 
 </li>
 
@@ -1218,7 +1224,7 @@ In the remainder of this subsection we address the next best thing we can do in 
 :label: Ex:LUdecomp:NoLUcontinued
 
 Let us return to {prf:ref}`Ex:LUdecomp:NoLU` where the matrix $A$  cannot be written as $LU$.
-We copy from there
+We copy from there:
 
 $$
    A \,=\, \begin{pmatrix}
@@ -1417,8 +1423,8 @@ the three defining properties a $1$ in each row, a $1$ in each column, all other
 
 \item The inverse of a permutation matrix is its transpose.  Thus,  $P^{-1} = P^T$.
 
-In a product  $A^TA$, the entry on position $(i,j)$ is the inner product of the $i$th column of $A$
-with the $j$th column of $A$.  (Cf., {numref}`Exc:MatrixOps:InterpretATB`.) 
+In a product  $A^TA$, the entry on position $(i,j)$ is the inner product of the $i$-th column of $A$
+with the $j$-th column of $A$.  (Cf., {numref}`Exc:MatrixOps:InterpretATB`.) 
  Since the $n$ columns of $P$ are the $n$ =  columns  $\vect{e}_j$  of the identity matrix (in some order),  and  
 
 $$
@@ -1444,13 +1450,13 @@ $$
   PA = LU. 
 $$
 
-As before, $L$ may be constructed in such a way that it has $1$'s on its diagonal.
+As before, $L$ may be constructed in such a way that it has $1$s on its diagonal.
 ::::::
 
 ::::::{prf:remark} 
 :label: LUDecomp:PLUremark
 
-As was mentioned before, the key idea is to perform the row exchanges first. These can be put together in the permutation matrix $P$. The algorithm to actually find the $LU$ decomposition of $PA$ without doing the whole row reduction process for $PA$ all over again is rather intricate, and in our view belongs to a course of numerical linear algebra.  There it will be explained that it may also be preferable to work towards a $PLU$ decomposition instead of an $LU$ decomposition in cases where theoretically it is not absolutely necessary.  For numerical reasons, having to do with finite accuracy when representing real numbers in computers, it may be better to choose the pivots in another order than just top-down.
+As was mentioned before, the key idea is to perform the row exchanges first. These can be put together in the permutation matrix $P$. The algorithm to actually find the $LU$ decomposition of $PA$ without doing the whole row reduction process for $PA$ all over again is rather intricate, and in our view belongs to a course on numerical linear algebra.  There it will be explained that it may also be preferable to work towards a $PLU$ decomposition instead of an $LU$ decomposition in cases where theoretically it is not absolutely necessary.  For numerical reasons, having to do with finite accuracy when representing real numbers in computers, it may be better to choose the pivots in another order than just top-down.
 
 ::::::
 
@@ -1641,11 +1647,7 @@ In the worst-case scenario, for a $3\times 3$-matrix $A$, (so a $3\times 4$ augm
 <ul>
 <li>
 
-To convert the components $a_{21}$ and $a_{31}$ to a zero value, we need to <BR>
-compute two multipliers $m_{21}$ and $m_{31}$ (2 divisions), then we need to <BR>
-multiply each component of the first row, starting at $a_{12}$, by each $m_{i1}$ (this happens twice, so $2\times 3=6$ products) and then we need to <BR>
-subtract the resulting values to the corresponding components in each row ($2\times 3=6$ subtractions). <BR>
-Therefore, we need a total of $14$ arithmetic operations ($8$ products/divisions and $6$ additions/subtractions).
+To convert the components $a_{21}$ and $a_{31}$ to a zero value, we need to compute two multipliers $m_{21}$ and $m_{31}$ (2 divisions), then we need to multiply each component of the first row, starting at $a_{12}$, by each $m_{i1}$ (this happens twice, so $2\times 3=6$ products) and then we need to subtract the resulting values to the corresponding components in each row ($2\times 3=6$ subtractions). Therefore, we need a total of $14$ arithmetic operations ($8$ products/divisions and $6$ additions/subtractions).
 
 </li>
 </ul>
@@ -1658,7 +1660,7 @@ $$
   \begin{pmatrix}a_{11} & a_{12} &a_{12} &b_{1} \\ 
   0 & a_{22}-m_{21}a_{12} &a_{23}-m_{21}a_{13} &b_{2}-m_{21}b_{1} \\ 
   0 & a_{32}-m_{31}a_{12} &a_{33}-m_{31}a_{13} &b_{3}-m_{31}a_{1} 
-  \end{pmatrix}  
+  \end{pmatrix}  .
 $$
 
 <ul>
@@ -1694,7 +1696,8 @@ To find $x_2$ requires one multiplication, one subtraction and one division.
 
 <li>
 
-To find $x_1$ requires two multiplications, two subtractions and one division.<BR>
+To find $x_1$ requires two multiplications, two subtractions and one division.
+
 Namely,  $x_1 = (b_1-a_{12}x_2-a_{13}x_3)/a_{12}$.
 </li>
 </ul>
@@ -1774,7 +1777,7 @@ arithmetic operations.
 
 Note that first row reducing the augmented matrix $(A | \mathbf{b})$ to echelon form 
 $(U | \tilde{\mathbf{b}})$ and then solve  $U\mathbf{x} = \tilde{\mathbf{b}}$  by backward substituion
-asks for the same number of arithmetic operations as first finding an $LU$-decomposition and then solve the two ensuing systems with forward and backward substition.  Specifically
+asks for the same number of arithmetic operations as first finding an $LU$ decomposition and then solve the two ensuing systems with forward and backward substition.  Specifically
 
 $$
   \frac{4n^3+9n^2-7n}{6}  = \frac23n^3-\frac12n^2-\frac16n  + 2n^2 - n.  
@@ -1866,7 +1869,7 @@ The proof of {prf:ref}`Prop:LUdecomp:CountOperationsInverse`  is quite straightf
 :class: tudproof, dropdown
 
 We count the number of arithmetic operations for computing the inverse via $(A | I)$.
-If we ignore the necessity of row swaps (as we did when analysing the $LU$-decomposition), we may work row by row from top to bottom.  In the $k$th step we use the pivot in row $k$ to reduce the $k$th column to $\mathbf{e}_k$.
+If we ignore the necessity of row swaps (as we did when analysing the $LU$ decomposition), we may work row by row from top to bottom.  In the $k$-th step we use the pivot in row $k$ to reduce the $k$-th column to $\mathbf{e}_k$.
 
 After $k-1$ steps the augmented matrix then has the form
 
@@ -1891,11 +1894,12 @@ $$
  \right].
 $$
 
-The crucial thing is that throughout the process on row $k$  there are exactly $n+1$ nonzero entries!
+The crucial thing is that throughout the process on row $k$  there are exactly $n+1$ non-zero entries!
 
 
 For the next step we first scale row $k$, which asks for  $n$ divisions  (we just put $a^*_{kk}=1$).
-Next for each other row, on position $k$ we put $0$, and for the other entries we have $n$  multiplications and $n$ subtractions, so $2n$ operations. <BR>
+Next for each other row, on position $k$ we put $0$, and for the other entries we have $n$  multiplications and $n$ subtractions, so $2n$ operations. 
+
 This gives $n + (n-1)\cdot(2n) = 2n^2 - n$. 
 Since we have to do this for all of the $n$ rows, the total number of arithmetic operations becomes $n\cdot(2n^2-n) = 2n^3 - 2n$. 
 
@@ -1910,7 +1914,7 @@ $$
 
 In many applications in engineering, it is required to solve many, say $N$, linear systems  
 $A\vect{x}=\vect{b}_i$, with the same coefficient matrix $A$,  where typically the vectors $\vect{b}_i$ are not known beforehand.
-In this situation the $LU$ decomposition comes in handy.  Instead of solving the systems one by one, we can first find an $LU$-decomposition, and then solve the systems  $LU\vect{x}=\vect{b}_i$. 
+In this situation the $LU$ decomposition comes in handy.  Instead of solving the systems one by one, we can first find an $LU$ decomposition, and then solve the systems  $LU\vect{x}=\vect{b}_i$. 
 If we compare solving $m$ linear systems with row reduction ($RR$) and 
 with $LU$ decomposition ($LU$), we get
 
@@ -1965,7 +1969,7 @@ Such systems $A\vect{x} = \vect{b}$ for instance appear when (partial) different
 ::::::{prf:definition}
 :label: Def:LUdecomp:Tridiag
 
-A **band matrix**  of **width** $d \geq 0$ is a matrix where only the entries  within a  distance $d$ from the diagonal are nonzero. So,  $a_{ij} = 0$  if  $|i-j|>d$. 
+A **band matrix**  of **width** $d \geq 0$ is a matrix where only the entries  within a  distance $d$ from the diagonal are non-zero. So,  $a_{ij} = 0$  if  $|i-j|>d$. 
 A **tridiagonal** matrix  $A$  is a band matrix of width $1$.
 
 ::::::

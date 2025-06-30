@@ -211,7 +211,7 @@ As we will see later, this conflicting equation in a way pops up in any inconsis
 ::::
 
 A consistent system of one equation in $n$ unknowns is easily solved.
-Any unknown with a nonzero coefficient can be expressed in the other unknowns,
+Any unknown with a non-zero coefficient can be expressed in the other unknowns,
 and the other unknowns can be chosen freely. In words this may look more complicated than it is, as the following example illustrates.
 
 ::::{prf:example}
@@ -491,7 +491,7 @@ Two systems of linear equations are called **equivalent** if they have the same 
 ::::
 
 By the same line of reasoning as in the above example we can deduce that adding an arbitrary multiple of any equation to another equation does not change the solution set of the system.
-Of course if we multiply an equation with some nonzero constant, the solution set also remains invariant. This operation is called **{index}`scaling`**.
+Of course if we multiply an equation with some non-zero constant, the solution set also remains invariant. This operation is called **{index}`scaling`**.
 For the system at hand we could, as a next step, scale the second equation with a factor $-\frac12$. The following proposition summarises the suitable operations to adapt a system of equations.
 
 ::::{prf:proposition}
@@ -507,7 +507,7 @@ Adding a multiple of an equation to another equation.
 </li>
 <li>
 
-Scaling an equation with a nonzero scaling factor $c$.
+Scaling an equation with a non-zero scaling factor $c$.
 
 </li>
 <li>
@@ -1002,7 +1002,7 @@ Such a matrix is also called a **row echelon matrix**.
 :label: Ex:LinSystems:EchelonForm
 
 The following three matrices are meant to visualise the structure of an echelon matrix.
-The symbol $\blacksquare$ denotes an arbitrary *nonzero* number and $\ast$ just any real number.
+The symbol $\blacksquare$ denotes an arbitrary *non-zero* number and $\ast$ just any real number.
 
 $$
   E_1 =
@@ -1033,7 +1033,7 @@ However, since we will only consider row echelon matrices we will not do this. I
 ::::{prf:definition}
 :label: Dfn:LinSystems:Pivot
 
-A **pivot** of a row in an echelon matrix is the first nonzero element, the so-called **leading entry**, of that row.
+A **pivot** of a row in an echelon matrix is the first non-zero element, the so-called **leading entry**, of that row.
 
 ::::
 
@@ -1539,7 +1539,7 @@ Any matrix is row equivalent to a reduced echelon matrix. Moreover, this last ma
 Again we give no formal proof.  
 In the previous subsection we showed, also informally, that any matrix can be reduced to a matrix in echelon form (cf. {prf:ref}`Prop:LinSystems:EchelonFormExists`).
 
-In this echelon matrix we may divide each row by its pivot (first nonzero element).
+In this echelon matrix we may divide each row by its pivot (first non-zero element).
 
 And lastly 'working upwards' step by step we use each pivot -- which we made equal to $1$ -- to create zeros in all positions above it.
 
@@ -1561,11 +1561,11 @@ $$
 
 to reduced echelon form in three steps:
 
-*Step 1*: use the pivot in the third row to create zeros above it.
+1. Use the pivot in the third row to create zeros above it.
 
-*Step 2*: use the pivot in the second row to create a zero above it.
+2. use the pivot in the second row to create a zero above it.
 
-*Step 3*: scale all rows.
+3. scale all rows.
 
 $$
 \left(\begin{array}{rrrrr}3 & 2 &1 &6&-2\\0 & 2 & -2 &-3 & 1\\0 & 0 & 0 &3 & 2
@@ -1871,7 +1871,7 @@ $$
 E_3 =   \left(\begin{array}{rrr|r}\blacksquare&\ast&\ast&\ast\\0  &\blacksquare&\ast&\ast\\0  & 0 &\blacksquare&\ast\\0  & 0 & 0 &\blacksquare\\0  & 0  &0 & 0\\\end{array}\right),
 $$
 
-where $\blacksquare$ denotes an arbitrary nonzero number, and $\ast$ just any real number.
+where $\blacksquare$ denotes an arbitrary non-zero number, and $\ast$ just any real number.
 
 Then the first system has a unique solution, the second system has infinitely many solutions, the third system is inconsistent.
 
@@ -1924,7 +1924,8 @@ If $m < n$, there must be at least one column without a pivot. This implies that
 ::::{prf:remark}
 :label: Rem:LinSystems:PlanesInSpace
 
-For geometric interpretation of the last proposition, suppose $n = 3$. <BR>
+For geometric interpretation of the last proposition, suppose $n = 3$.
+
 The solution set of a linear equation
 
 $$

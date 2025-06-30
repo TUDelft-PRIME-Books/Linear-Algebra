@@ -141,7 +141,7 @@ is not defined. This is because the matrices do not have the same size.
 ::::::{prf:remark}
 :label: rem:matrix-sum-scalar-multiple
 
-The two definitions of sum and scalar multiple are called **componentwise** definitions. They are completely analogous to the definitions of the scalar multiples of a vector and the sum of two vectors. Hence it is not surprising that they obey exactly the same rules, as is summarised in the next proposition. (cf. Section {ref}`Sec:Vectors`.)
+The two definitions of sum and scalar multiple are called **componentwise** definitions. They are completely analogous to the definitions of the scalar multiples of a vector and the sum of two vectors. Hence it is not surprising that they obey exactly the same rules, as is summarised in the next proposition (cf. Section {ref}`Sec:Vectors`).
 
 ::::::
 
@@ -154,37 +154,37 @@ Then we have:
 <ul>
 <li>
 
-$A+O_{mn}=A=O_{mn}+A$
+$A+O_{mn}=A=O_{mn}+A$.
 
 </li>
 <li>
 
-$(A+B)+C=A+(B+C)$
+$(A+B)+C=A+(B+C)$.
 
 </li>
 <li>
 
-$A+B=B+A$
+$A+B=B+A$.
 
 </li>
 <li>
 
-$A+(-A)=O$
+$A+(-A)=O$.
 
 </li>
 <li>
 
-$1A=A$
+$1A=A$.
 
 </li>
 <li>
 
-$c_{1}(A+B)=c_{1}A+c_{1}B$
+$c_{1}(A+B)=c_{1}A+c_{1}B$.
 
 </li>
 <li>
 
-$(c_{1}+c_{2})A=c_{1}A+c_{2}A$
+$(c_{1}+c_{2})A=c_{1}A+c_{2}A$.
 
 </li>
 <li>
@@ -238,13 +238,13 @@ Let $A$ and $B$ be $m\times n$-matrices and $c$ a scalar. Then we have
 
 <li>
 
-$(cA)^T = c A^T$
+$(cA)^T = c A^T$.
 
 </li>
 
 <li>
 
-$(A+B)^T = A^T  + B^T$
+$(A+B)^T = A^T  + B^T$.
 
 </li>
 <li>
@@ -395,7 +395,7 @@ $$
 As regards the other statement, i.e.,  $(A^T)^T = A$,
 suppose  $A$ is an $m\times n$-matrix,  $B = A^T$,  and  $C = B^T$. We have to show that $C = A$.
 
-Now first of all, if  $A$ is an $m\times n$-matrix, then  $B$ is an $n\times m$-matrix, and transposiong again gives an $m \times n$-matrix  $C$, so $C$ has the same shape as $A$.
+Now first of all, if  $A$ is an $m\times n$-matrix, then  $B$ is an $n\times m$-matrix, and transposing again gives an $m \times n$-matrix  $C$, so $C$ has the same shape as $A$.
 
 Furthermore,  transposing means 'flipping' the indices.  We quickly see that  $C_{ij} = B_{ji} = A_{ij}$,
 for $1 \leq i \leq m$, $1 \leq j \leq n$,  so entry by entry  $A$ and $C$ are equal.
@@ -429,7 +429,7 @@ $$
 
 ::::::
 
-## Grasple exercises
+## Grasple exercises (1)
 
 ::::::{grasple}
 :iframeclass: dark-light
@@ -480,7 +480,7 @@ $$
 
 ## The product of two matrices
 
-Next we turn our attention to the most important matrix operation, namely the product $AB$ of two matrices. In the previous chapter we have already seen the special case where $B$ is a matrix of just one column, i.e.,
+Next we turn our attention to the most important matrix operation, namely the product $AB$ of two matrices. In the previous chapter we have already seen the special case where $B$ is a matrix of just one column, i.e.
 
 $$
   B = \mathbf{x} = \begin{pmatrix}x_1 \\ x_2 \\ \vdots \\ x_n \end{pmatrix},
@@ -626,7 +626,7 @@ is not defined.
 The product of a matrix $A$ with itself is only defined if $A$ is an $n \times n$-matrix. In that case we use the obvious notation
 
 $$
-   A^2 = A\cdot A.
+   A^2 = A A.
 $$
 
 ::::::
@@ -729,7 +729,7 @@ matrix $A^TA$ is a diagonal matrix.
 ::::::{prf:definition}
 :label: Def:MatrixOps:IdentityMatrix
 
-The **identity matrix** $I_n$ is the $n \times n$ diagonal matrix with 1's on the diagonal. If the size is irrelevant or clear from the context, we denote it simply by $I$.
+The **identity matrix** $I_n$ is the $n \times n$ diagonal matrix with $1$s on the diagonal. If the size is irrelevant or clear from the context, we denote it simply by $I$.
 
 ::::::
 
@@ -807,7 +807,7 @@ $$
   = \begin{pmatrix} a_{11}& a_{12} & a_{13} \\  4a_{11}+a_{21}&4a_{12} +a_{22}& 4a_{13}+a_{23}  \\ a_{31}& a_{32} & a_{33} \\ \end{pmatrix}.
 $$
 
-Here the third row is scaled with a factor 5:
+Here the third row is scaled with a factor $5$:
 
 $$
   \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 5\end{pmatrix}
@@ -871,10 +871,8 @@ $$
 
 The column-row product in the last example is the building block for yet another way to look at the matrix product. The next exercise explains how.
 
-::::::{exercise}
+::::::{exercise} Column-row expansion of the product
 :label: Exc:MatrixOps:ColumnRowExpansion
-
-Column-row expansion of the product.
 
 Denote the columns of the $m\times n$-matrix $A$ by $A_{(1)}, \ldots, A_{(n)}$, and the
 rows of the $n\times p$-matrix $B$ by $B^{(1)}, \ldots, B^{(p)}$, so
@@ -898,7 +896,7 @@ i.e., $AB$ is the sum of $n$ column-row products (like in {prf:ref}`Ex:MatrixOps
 
 ## Properties of the matrix product
 
-Now let us have a look which of the rules of the products of numbers also hold for products of matrices. And which do not.
+Now let us have a look which of the rules of the products of numbers also hold for products of matrices. And which do not. {numref}`Subsec:ProductProps`
 
 ::::::{prf:proposition}
 :label: Prop:MatrixOps:ProdProperties
@@ -1004,8 +1002,6 @@ We saw instances of this property already in {prf:ref}`Ex:MatrixOps:AtimesI` and
 For the general case, one way to show validity of the first statement is to note that the $j$-th column of $AI_n$ is $A\mathbf{e}_j$ where $\mathbf{e}_j$ is the $j$-th column of the identity matrix $I_n$.
 This gives the linear combination
 
-<BR>
-
 $$
  A\mathbf{e}_j =  0\mathbf{a}_1 + 0\mathbf{a}_2 + \ldots + 1\mathbf{a}_j +\dots + 0\mathbf{a}_n = \mathbf{a}_j
 $$
@@ -1023,8 +1019,6 @@ Then the identity can be proved 'column by column', as the previous one.
 
 We are done if we can show that
 
-<BR>
-
 $$
  \begin{array}{rcl}
  k\text{-th column of  }A(BC) &=&  k\text{-th column of  }(AB)C \\
@@ -1036,8 +1030,6 @@ for $ k = 1,2,\ldots q $.
 
 Now recall that (by definition)
 
-<BR>
-
 $$
     k\text{-th column of  }BC = B\vect{c}_k,
 $$
@@ -1045,15 +1037,13 @@ $$
 so
 
 $$
- k\text{-th column of  }A(BC) = A\,(B\vect{c}_k)
+ k\text{-th column of  }A(BC) = A\,(B\vect{c}_k).
 $$
 
 Making extensive use of the rule
 
-<BR>
-
 $$
-  A(c_1\mathbf{x} + c_2\mathbf{y}) = c_1A\mathbf{x} + c_2A\mathbf{y}
+  A(c_1\mathbf{x} + c_2\mathbf{y}) = c_1A\mathbf{x} + c_2A\mathbf{y},
 $$
 
 we find
@@ -1262,7 +1252,7 @@ $$
       \begin{pmatrix} 0 & 0 \\ 0 & 0  \end{pmatrix}.
 $$
 
-So the product of two nonzero matrices may be the zero matrix.
+So the product of two non-zero matrices may be the zero matrix.
 
 ::::::
 
@@ -1277,11 +1267,11 @@ $$
   \begin{pmatrix} 0 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix},
 $$
 
-which shows that we cannot even conclude from $A\cdot A = O$ that $A$ itself must be the zero matrix.
+which shows that we cannot even conclude from $A A = O$ that $A$ itself must be the zero matrix.
 
 ::::::
 
-And here is another example of a nonzero matrix whose square is the zero matrix. In this case it can be seen geometrically what is going on.
+And here is another example of a non-zero matrix whose square is the zero matrix. In this case it can be seen geometrically what is going on.
 
 ::::::{prf:example}
 :label: Ex:MatrixOps:Nilpotent
@@ -1315,7 +1305,7 @@ is the clockwise rotation about an angle $\frac12\pi$.
 
 Now let us see, step by step, what is the effect of the transformation $T_2T_1T_2T_1$, corresponding to $A^2$.
 
-An arbitrary vector $\vect{x}$ is sent to a vector $T_1(\vect{x})$ on the $x_2$ axis by $T_1$.
+An arbitrary vector $\vect{x}$ is sent to a vector $T_1(\vect{x})$ on the $x_2$-axis by $T_1$.
 
 The rotation sends this to a vector $T_2(T_1(\vect{x}))$ on the $x_1$-axis. Projecting onto the $x_2$-axis again, will bring this to $T_1(T_2(T_1(\vect{x}))) = \vect{0}$.  
 Lastly, applying $T_2$ leaves the zero vector where it is.
@@ -1383,7 +1373,7 @@ For instance, the third statement is closely related to the first. Let us check 
 $$
   \begin{array}{cl}
       (A+B)(A+B)& = A(A+B) +B(A+B)\\
-                & = A^2 + AB + BA + B^2
+                & = A^2 + AB + BA + B^2.
   \end{array}
 $$
 
@@ -1396,7 +1386,7 @@ $$
 if
 
 $$
- AB + BA = 2AB
+ AB + BA = 2AB.
 $$
 
 And that is only the case if
@@ -1431,7 +1421,7 @@ $$
 $$
 
 We can create a counterexample by taking for
-$A$ and $B$ nonzero matrices for which
+$A$ and $B$ non-zero matrices for which
 
 $$
   AB = O,
@@ -1547,7 +1537,7 @@ The proof for general matrices $A$ and $B$ for which the product $AB$ is well de
 To show that
 
 $$
-(AB)^T = B^TA^T
+(AB)^T = B^TA^T,
 $$
 
 we have to show that the matrices have the same size, and are equal entry by entry.
@@ -1594,7 +1584,11 @@ $$
 A(A^2) = A(AA) = (AA)A,
 $$
 
-we can do without the parentheses.
+we can do without the parentheses:
+
+$$
+A^3 = AAA,\quad A^4 = AAAA, \,\,.\,.\,.\,.
+$$
 
 For the same reason
 
@@ -1620,7 +1614,7 @@ We will dedicate {numref}`Sec:MatrixInv` to this topic.
 
 ::::::
 
-## Grasple exercises
+## Grasple exercises (2)
 
 ::::::{grasple}
 :iframeclass: dark-light
@@ -1801,7 +1795,7 @@ The remaining exercises are less of a compuational character.
 :url: https://embed.grasple.com/exercises/deea79ca-ba41-46fc-b75b-4cd109fc0513?id=71118
 :label: grasple_exercise_3_2_25
 :dropdown:
-:description: Finding $E$ such that $EA = M$ &nbsp; (or $AE = M$).
+:description: Finding $E$ such that $EA = M$ (or $AE = M$).
 
 ::::::
 

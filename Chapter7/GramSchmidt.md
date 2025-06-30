@@ -517,7 +517,7 @@ You may check for yourself that $QR = A$.
 ::::{exercise}
 :label: Exc:GramSchmidt:AlternativeProofQR
 
-Fill in the details of the following more direct proof of the quick way to find $QR$-decomposition.
+Fill in the details of the following more direct proof of the quick way to find $QR$ decomposition.
 
 Let $Q$ be the matrix coming from the Gram-Schmidt process, followed by rescaling.
 
@@ -536,7 +536,10 @@ Furthermore, since the columns of $Q$ form an orthonormal basis of $\operatornam
 $QQ^T$ represents the orthogonal projection onto $\operatorname{Col}A$. Use this to show that
 $QQ^TA = A$.
 
-Warning: the columns of $Q$ being orthonormal is equivalent to $Q^TQ = I$. However, in the case where $Q$ is not a square matrix, this does not imply that $QQ^T = I$.
+::::
+
+::::{warning}
+The columns of $Q$ being orthonormal is equivalent to $Q^TQ = I$. However, in the case where $Q$ is not a square matrix, this does not imply that $QQ^T = I$.
 
 ::::
 
@@ -621,7 +624,7 @@ The first exercises are about applying the Gram-Schmidt (GS) algorithm
 :url: https://embed.grasple.com/exercises/319f882b-8498-492b-a97c-c1ce346a66f8?id=57189
 :label: grasple_exercise_7_3_9
 :dropdown:
-:description: Finding the QR-decomposition of a $2\times2$-matrix.
+:description: Finding the $QR$ decomposition of a $2\times2$-matrix.
 
 ::::
 
@@ -633,7 +636,7 @@ The following exercises are about the $QR$ decomposition
 :url: https://embed.grasple.com/exercises/98d48efb-0be6-4dee-a905-55dff061ce17?id=90209
 :label: grasple_exercise_7_3_10
 :dropdown:
-:description: Finding the QR-decomposition of a $3\times2$-matrix.
+:description: Finding the $QR$ decomposition of a $3\times2$-matrix.
 
 ::::
 
@@ -642,7 +645,7 @@ The following exercises are about the $QR$ decomposition
 :url: https://embed.grasple.com/exercises/d4466fcf-11be-4578-ac9e-3a570710a154?id=87629
 :label: grasple_exercise_7_3_11
 :dropdown:
-:description: Finding the QR-decomposition of a $3\times3$-matrix.
+:description: Finding the $QR$ decomposition of a $3\times3$-matrix.
 
 ::::
 
@@ -651,7 +654,7 @@ The following exercises are about the $QR$ decomposition
 :url: https://embed.grasple.com/exercises/b7be453d-4fd1-4c41-a3be-72e909ed0220?id=87646
 :label: grasple_exercise_7_3_12
 :dropdown:
-:description: Finding the QR-decomposition of a $3\times3$-matrix.
+:description: Finding the $QR$ decomposition of a $3\times3$-matrix.
 ::::
 
 ::::{grasple}
@@ -659,7 +662,7 @@ The following exercises are about the $QR$ decomposition
 :url: https://embed.grasple.com/exercises/2f957bf7-b1f1-424f-ad39-57af14cd1d86?id=87820
 :label: grasple_exercise_7_3_13
 :dropdown:
-:description: Finding the QR-decomposition of a $4\times3$-matrix.
+:description: Finding the $QR$ decomposition of a $4\times3$-matrix.
 
 ::::
 
@@ -670,7 +673,7 @@ The following exercises are about the $QR$ decomposition
 :url: https://embed.grasple.com/exercises/2d9d5c92-fb8e-45d6-be34-9846588cf560?id=116629
 :label: grasple_exercise_7_3_14
 :dropdown:
-:description: Finding the orthogonal projection onto $\operatorname{Col}(A)$ via a $QR$-decomposition.
+:description: Finding the orthogonal projection onto $\operatorname{Col}(A)$ via a $QR$ decomposition.
 
 ::::
 
@@ -728,7 +731,7 @@ The last exercises are more conceptual than computational.
 :url: https://embed.grasple.com/exercises/a8741f26-64c7-4245-839a-8c5131bea496?id=87742
 :label: grasple_exercise_7_3_20
 :dropdown:
-:description: Ponderings about the QR-decomposition (of a $4 \times 2$-matrix $A$).
+:description: Ponderings about the $QR$ decomposition (of a $4 \times 2$-matrix $A$).
 
 ::::
 
@@ -737,6 +740,6 @@ The last exercises are more conceptual than computational.
 :url: https://embed.grasple.com/exercises/24a2c96f-0618-4a90-8229-ce04b1dd4640?id=87747
 :label: grasple_exercise_7_3_21
 :dropdown:
-:description: How many QR-decompositions are there for an $m \times n$-matrix?
+:description: How many $QR$ decompositions are there for an $m \times n$-matrix?
 
 ::::

@@ -311,7 +311,8 @@ Statement i. and ii. in {prf:ref}`Prop:DynSystDiscrete:DiagCase2` still hold in 
 
 Thus, if the matrix has the (possibly complex) eigenvalues $\lambda_1, \ldots, \lambda_n$, the origin is an asymptotically stable point if all $|\lambda_i|$ are smaller than $1$, and the origin is an unstable point if at least one of the eigenvalues has a modulus greater than $1$.
 
-The argument for a matrix with a repeated eigenvalue that does not provide a complete set of eigenvectors becomes more involved, as we cannot use Equation {eq}`Eq:DynSystDiscrete:GenSolDiagble` anymore. <BR>
+The argument for a matrix with a repeated eigenvalue that does not provide a complete set of eigenvectors becomes more involved, as we cannot use Equation {eq}`Eq:DynSystDiscrete:GenSolDiagble` anymore.
+
 Property iii. may fail if $\lambda_1$ is a double eigenvalue of modulus or absolute value $1$. An example where this happens is given by the matrix
 
 $$
@@ -470,7 +471,8 @@ Starting from any vector $\vect{x}_0 = \left(\begin{array}{cc} x_0 \\ y_0 \end{a
 \left(\begin{array}{cc} (1.2)^3x_0 \\ (0.8)^3y_0 \end{array}\right) \,\,\, \ldots
 :::
 
-In each step the $x$-coordinate gets a factor $1.2$ and the $y$-coordinate is reduced by a factor $0.8$. <BR>
+In each step the $x$-coordinate gets a factor $1.2$ and the $y$-coordinate is reduced by a factor $0.8$.
+
 In {numref}`Fig:DynSystDiscrete:SimplestSystem` the paths are shown for the starting points $(0, \pm 8)$, $(\pm 1,\pm 8)$, $(\pm 2,\pm 8)$, and $(\pm 1,0)$. The paths, consisting of isolated points, are denoted by dots. The line segments are only drawn to make clear how the dynamical system moves from one point to the next.
 
 :::{figure} Images/Fig-DynSystDiscrete-SimplestSystem.svg
@@ -487,7 +489,8 @@ $$
    \vect{x}_k = A^k \vect{x}_0 = \left(\begin{array}{cc} 1.2^kx_0 \\ 0.8^k y_0 \end{array}\right)
 $$
 
-that all solutions starting on the $y$-axis will converge to the origin and all other solutions will go to $\pm \infty$ while getting closer and closer to the $x$-axis. <BR>
+that all solutions starting on the $y$-axis will converge to the origin and all other solutions will go to $\pm \infty$ while getting closer and closer to the $x$-axis.
+
 To be more precise, if $x_0 > 0$ then $\vect{x}_k \to \left(\begin{array}{c} \infty \\ 0 \end{array}\right)$, and if $x_0 < 0$ then $\vect{x}_k \to \left(\begin{array}{c} -\infty \\ 0 \end{array}\right)$.
 
 ::::
@@ -579,7 +582,8 @@ A dynamical system with a spiral point.
 
 Again the eigenvalues and eigenvectors, in this case complex, explain what is going on.
 The matrix $A$ has the eigenvalues $\lambda_{1,2} = 0.9 \pm 0.5745i$, with modulus
-$|\lambda_i| = 1.0677$. <BR>
+$|\lambda_i| = 1.0677$.
+
 An eigenvector corresponding to $\lambda = 0.9 - 0.5745i$ is given
 by
 
@@ -632,7 +636,7 @@ The trajectory in terms of the $\vect{x}$ vectors is the image of the trajectory
 
 To see why this is the case:
 
-if &nbsp; $\vect{y}_{k+1} = C\vect{y}_k$, &nbsp; and &nbsp; $\vect{x} = P\vect{y}$, &nbsp; so &nbsp; $\vect{y} = P^{-1}\vect{x}$, &nbsp; then
+if $\vect{y}_{k+1} = C\vect{y}_k$, and $\vect{x} = P\vect{y}$, so $\vect{y} = P^{-1}\vect{x}$, then
 
 $$
    \vect{x}_{k+1} = P\vect{y}_{k+1} = PC\vect{y}_k = PCP^{-1}\vect{x}_k = A\vect{x}_k.
@@ -672,7 +676,8 @@ Classify the behaviour of the origin in {prf:ref}`Ex:DynSystDiscrete:SimplestSys
 :label: Rem:DynSystDiscrete:Classification
 
 If one of the eigenvalues of the matrix $A$ is negative, the paths of the process can be
-rather erratic, in particular if there is an eigenvalue smaller than $-1$. <BR>
+rather erratic, in particular if there is an eigenvalue smaller than $-1$.
+
 For the borderline cases where either one of the eigenvalues is equal to 1
 or where $\lambda_{1,2}$ are complex with modulus $1$, see {numref}`Exc:DynSystDiscrete:Eigenvalue=1` and {numref}`Exc:DynSystDiscrete:Modulus=1`.
 
@@ -705,8 +710,8 @@ $$
 :label: Exc:DynSystDiscrete:Modulus=1
 
 The matrix $A = \left(\begin{array}{cc} 1.2 & 1 \\ -1 & 0 \end{array}\right)$
-has the eigenvalues $0.6 \pm 0.8i$. <BR>
-(Skip this exercise if you don't know about complex numbers.) <BR>
+has the eigenvalues $0.6 \pm 0.8i$.
+
 Show that all paths that start from an initial point that is not the origin will stay away from the origin but will stay within a fixed distance from the origin.
 
 Are the paths periodic? That is, will $\vect{x}_k$ return to the starting value $\vect{s}$ for a certain $k$?  If this happens, from here the process  starts anew.
@@ -718,13 +723,14 @@ Are the paths periodic? That is, will $\vect{x}_k$ return to the starting value 
 ::::{prf:definition}
 :label: Dfn:DynSystDiscrete
 
-A **linear $n$th order difference equation** is an equation of the form
+A **linear $n$-th order difference equation** is an equation of the form
 
 $$
   y(k) = a_1y(k-1) + a_2y(k-2) + \ldots + a_ny(k-n),
 $$
 
-for $k = n, n+1, \ldots$. <BR>
+for $k = n, n+1, \ldots$.
+
 The _coefficients_ $a_i, i = 1,\ldots, n$,  are real numbers.
 
 Usually the equation comes with **initial values**
@@ -807,7 +813,7 @@ $$
 
 ::::
 
-This example hopefully suffices to convince you that every linear $n$th order difference equation can be put into the form of a discrete dynamical system.
+This example hopefully suffices to convince you that every linear $n$-th order difference equation can be put into the form of a discrete dynamical system.
 
 Let us consider the probably most famous linear difference equation, by the way also a population model (something to do with rabbits; the search term "Fibonacci rabbits" will generate a long list of explanations).
 
@@ -899,7 +905,7 @@ $$
   \vect{x}_k = \left(\begin{array}{c} f_{k} \\  f_{k+1} \end{array}\right) = c_1\lambda_1^k \vect{v}_1 + c_2\lambda_2^k \vect{v}_2  = \tfrac{1}{\sqrt{5}}\lambda_1^k \vect{v}_1 - \tfrac{1}{\sqrt{5}}\lambda_2^k \vect{v}_2.
 $$
 
-For the $k$th Fibonacci number we only need the first entry, which yields that
+For the $k$-th Fibonacci number we only need the first entry, which yields that
 
 $$
   f_k = \frac{1}{\sqrt{5}} \left(\dfrac{1+\sqrt{5}}{2}\right)^k -
@@ -936,9 +942,7 @@ $$
   f_k \text{ is equal to } \dfrac{1}{\sqrt{5}} \left(\dfrac{1+\sqrt{5}}{2}\right)^k \text{ rounded to the nearest integer. }
 $$
 
-For example, for $k=6$ we find &nbsp; $\left[\dfrac{1}{\sqrt{5}}\left(\dfrac{1+\sqrt{5}}{2}\right)\right]^6 = 8.0249....$ , <BR>
-
-which rounds correctly to the sixth Fibonacci number $f_6 = 8$.
+For example, for $k=6$ we find $\left[\dfrac{1}{\sqrt{5}}\left(\dfrac{1+\sqrt{5}}{2}\right)\right]^6 = 8.0249....$, which rounds correctly to the sixth Fibonacci number $f_6 = 8$.
 ::::
 
 

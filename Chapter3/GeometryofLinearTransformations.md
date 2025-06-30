@@ -2,7 +2,7 @@
 
 # Some important classes of linear transformations
 
-We have seen in {numref}`Subsec:LinTrafo:LinTrafo` that any matrix corresponds to a linear transformation and that vice versa every linear transformation corresponds to a matrix. In this section, we will study some particularly noteworthy classes of linear transformations in more depth.
+We have seen in {numref}`Subsection %s <Subsec:LinTrafo:LinTrafo>` that any matrix corresponds to a linear transformation and that vice versa every linear transformation corresponds to a matrix. In this section, we will study some particularly noteworthy classes of linear transformations in more depth.
 
 (Subsec:GeomLinTrans:Proj)=
 
@@ -30,6 +30,15 @@ $$
 $$
 
 can be seen on the left in {numref}`Figure %s <Fig:GeomLinTrans:ProjinR2>`. Let us briefly verify that it really is a linear transformation.
+
+```{applet}
+:url: geom_lin_trans/proj_in_r2
+:fig: Images/Fig-GeomLinTrans-ProjinR2.svg
+:name: Fig:GeomLinTrans:ProjinR2
+:class: dark-light
+
+On the left an orthogonal projection $T_{1}$ acting on a few selected vectors $\mathbf{u}_{1}$, $\mathbf{u}_{2}$, and $\mathbf{u}_{3}$. On the right a non-orthogonal projection $T_{2}$ acting on some selected vectors $\mathbf{v}_{1}$, $\mathbf{v}_{2}$, and $\mathbf{v}_{3}$. In both cases, the blue line represents the line $\mathcal{L}$ in the direction of $\begin{pmatrix}2\\1\end{pmatrix}$. On the left, every vector $\mathbf{u}_{i}$ is mapped to the closest vector that lies on $\mathcal{L}$. On the right, every vector $\mathbf{v}_{i}$ is mapped to the intersection of $\mathcal{L}$ wih the line through $\mathbf{v}_{i}$ in the direction given by $\begin{pmatrix}-2\\1\end{pmatrix}$.
+```
 
 ::::::{prf:proposition}
 :label: Prop:Geometry:Projection
@@ -104,7 +113,7 @@ That the second column is as claimed, too, can be shown analogously. We leave it
 
 ::::::
 
-Often, you might have not the angle $\mathcal{L}$ makes with the positive $x$ axis, but rather a vector $\mathbf{v}$ on $\mathcal{L}$. In this case, too, you can find the standard matrix of the projection on $\mathcal{L}$ quite easily.
+Often, you might have not the angle $\mathcal{L}$ makes with the positive $x$-axis, but rather a vector $\mathbf{v}$ on $\mathcal{L}$. In this case, too, you can find the standard matrix of the projection on $\mathcal{L}$ quite easily.
 
 ::::::{prf:proposition}
 :label: Prop:GeomLinTrans:ProjMat2
@@ -149,22 +158,13 @@ We leave this as an exercise.
 
 ::::::
 
-It turns out that not all projections look like the ones discussed in {numref}`Sec:DotProduct`, not even if we restrict ourselves to a plane. Consider for example the following construction. Let $\mathbf{v}$ be any non-zero vector in $\mathbb{R}^{2}$ and let $\mathcal{L}$ be the line through $\mathbf{v}$ and the origin. Let $\mathbf{w}$ be a vector in $\mathbb{R}^{2}$ which does not lie on $\mathcal{L}$. For any vector $\mathbf{u}$, we define $\mathcal{L}_{\mathbf{u}}$ as the line through $\mathbf{u}$ in the direction $\mathbf{w}$. We now define the transformation $T$ which maps a vector $\mathbf{u}$ to the intersection of $\mathcal{L}_{\mathbf{u}}$ and $\mathcal{L}$. For
+It turns out that not all projections look like the ones discussed in {numref}`Sec:DotProduct`, not even if we restrict ourselves to a plane. Consider for example the following construction: Let $\mathbf{v}$ be any non-zero vector in $\mathbb{R}^{2}$ and let $\mathcal{L}$ be the line through $\mathbf{v}$ and the origin. Let $\mathbf{w}$ be a vector in $\mathbb{R}^{2}$ which does not lie on $\mathcal{L}$. For any vector $\mathbf{u}$, we define $\mathcal{L}_{\mathbf{u}}$ as the line through $\mathbf{u}$ in the direction $\mathbf{w}$. We now define the transformation $T$ which maps a vector $\mathbf{u}$ to the intersection of $\mathcal{L}_{\mathbf{u}}$ and $\mathcal{L}$. For
 
 $$
 \mathbf{v}=\begin{pmatrix}2\\1\end{pmatrix}\quad\text{and}\quad\mathbf{w}=\begin{pmatrix}-2\\1\end{pmatrix}
 $$
 
 this projection is depicted on the right in {numref}`Figure %s <Fig:GeomLinTrans:ProjinR2>`. It is an example of a non-orthogonal (or **oblique**) projection. Of course, we again have to check that this is really a linear transformation.
-
-```{applet}
-:url: geom_lin_trans/proj_in_r2
-:fig: Images/Fig-GeomLinTrans-ProjinR2.svg
-:name: Fig:GeomLinTrans:ProjinR2
-:class: dark-light
-
-On the left an orthogonal projection $T_{1}$ acting on a few selected vectors $\mathbf{u}_{1}$, $\mathbf{u}_{2}$, and $\mathbf{u}_{3}$. On the right a non-orthogonal projection $T_{2}$ acting on some selected vectors $\mathbf{v}_{1}$, $\mathbf{v}_{2}$, and $\mathbf{v}_{3}$. In both cases, the blue line represents the line $\mathcal{L}$ in the direction of $\begin{pmatrix}2\\1\end{pmatrix}$. On the left, every vector $\mathbf{u}_{i}$ is mapped to the closest vector that lies on $\mathcal{L}$. On the right, every vector $\mathbf{v}_{i}$ is mapped to the intersection of $\mathcal{L}$ wih the line through $\mathbf{v}_{i}$ in the direction given by $\begin{pmatrix}-2\\1\end{pmatrix}$.
-```
 
 ::::::{prf:proposition}
 :label: Prop:GeomLinTrans:MapToLine
@@ -185,7 +185,7 @@ Clearly, we also have
 
 $$
 (\mathbf{u}_{1}+\mathbf{u}_{2})+(c_{\mathbf{u}_{1}}+c_{\mathbf{u}_{2}})\mathbf{w}=(d_{\mathbf{u}_{1}}+d_{\mathbf{u}_{2}})
-\mathbf{v}
+\mathbf{v},
 $$
 
 so $T(\mathbf{u}_{1}+\mathbf{u}_{2})=(d_{\mathbf{u}_{1}}+d_{\mathbf{u}_{2}})
@@ -196,14 +196,14 @@ so $T(\mathbf{u}_{1}+\mathbf{u}_{2})=(d_{\mathbf{u}_{1}}+d_{\mathbf{u}_{2}})
 Let us try to find the standard matrix of the transformation $T$ we just defined. Its first column is the intersection of $\mathcal{L}$ with $\mathcal{L}_{e_{1}}$. This intersection is given by:
 
 $$
-\begin{pmatrix}1\\0\end{pmatrix}+t\begin{pmatrix}-2\\1\end{pmatrix}=s\begin{pmatrix}2\\1\end{pmatrix} \Longleftrightarrow \begin{cases} 1=2s+2t\\0=s-t\end{cases}\Longleftrightarrow s=t=\frac{1}{4}
+\begin{pmatrix}1\\0\end{pmatrix}+t\begin{pmatrix}-2\\1\end{pmatrix}=s\begin{pmatrix}2\\1\end{pmatrix} \Longleftrightarrow \begin{cases} 1=2s+2t\\0=s-t\end{cases}\Longleftrightarrow s=t=\frac{1}{4},
 $$
 
 so $T(e_{1})=\begin{pmatrix}\frac{1}{2}\\\frac{1}{4}\end{pmatrix}$. The second column of the standard matrix of $T$ is the intersection of $\mathcal{L}$ with $\mathcal{L}_{e_{2}}$. We find this intersection in a similar fashion:
 
 $$
 \begin{pmatrix}0\\1\end{pmatrix}+t\begin{pmatrix}-2\\1\end{pmatrix}=s\begin{pmatrix}2\\1\end{pmatrix}
-\Longleftrightarrow \begin{cases}0=2s+2t\\1=s-t\end{cases}\Longleftrightarrow \frac{1}{2}=s=-t
+\Longleftrightarrow \begin{cases}0=2s+2t\\1=s-t\end{cases}\Longleftrightarrow \frac{1}{2}=s=-t,
 $$
 
 so $T(e_{2})=\begin{pmatrix}1\\\frac{1}{2}\end{pmatrix}$ and we conclude that the standard matrix of $T$ is
@@ -214,14 +214,14 @@ P=\begin{pmatrix}
 \end{pmatrix}.
 $$
 
-We can also consider projections in three dimensional space (cf. {numref}`Figure  %s <Fig:GeomLinTrans:3DProj>`). If $\mathbf{v}$ is a vector in $\mathbb{R}^{3}$ and $\mathcal{L}$ is the line in the direction of $\mathbf{v}$, then
+We can also consider projections in three-dimensional space (cf. {numref}`Figure  %s <Fig:GeomLinTrans:3DProj>`). If $\mathbf{v}$ is a vector in $\mathbb{R}^{3}$ and $\mathcal{L}$ is the line in the direction of $\mathbf{v}$, then
 
 $$
 P:\mathbb{R}^{3}\to\mathbb{R}^{3},\quad\mathbf{w}\mapsto \proj_{\mathbf{v}}(\mathbf{w})
 $$
 
 gives the orthogonal projection of the vector $\mathbf{w}$ on $\mathcal{L}$.
-We can also consider the orthogonal projection on a plane in three dimensional space. Suppose the plane $\mathcal{P}$ is spanned by $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ and assume $\mathbf{v}_{1}\ip\mathbf{v}_{2}=0$, that is, assume $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ are orthogonal and non-zero. Then
+We can also consider the orthogonal projection on a plane in three-dimensional space. Suppose the plane $\mathcal{P}$ is spanned by $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ and assume $\mathbf{v}_{1}\ip\mathbf{v}_{2}=0$, that is, assume $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ are orthogonal and non-zero. Then
 
 $$
 P:\mathbb{R}^{3}\to\mathbb{R}^{3},\mathbf{w}\mapsto \proj_{\mathbf{v}_{1}}(\mathbf{w})+\proj_{\mathbf{v}_{2}}(\mathbf{w})
@@ -236,7 +236,7 @@ gives the projection on $\mathcal{P}$.
 :status: reviewed
 :class: dark-light
 
-Projections on a line $\mathcal{L}$ in three dimensional space. 
+Projections on a line $\mathcal{L}$ in three-dimensional space. 
 ```
 
 Let us briefly discuss what happens in higher dimensions.
@@ -277,7 +277,7 @@ $$
 The reflection along the line $\mathcal{L}$ in the direction of $\mathbf{v}=\begin{pmatrix}1\\1\end{pmatrix}$. The vectors in red are mapped to the vector in blue by this reflection.
 ```
 
-So far so good. But how do we find the reflection over an arbitrary line $\mathcal{L}$? It turns out that the projections we have seen in Section {ref}`Subsec:GeomLinTrans:Proj` will help us out. Consider a line $\mathcal{L}$ and a vector $\mathbf{v}$ not in $\mathcal{L}$, as in {numref}`Figure %s <Fig:GeomLinTrans:ReflFromDoubleProj>`. In order to reflect $\mathbf{v}$ over $\mathcal{L}$, we first move it to the closest point on $\mathcal{L}$ and then move it the same distance again in the same direction.
+So far so good. But how do we find the reflection over an arbitrary line $\mathcal{L}$? It turns out that the projections we have seen in the Subsection {ref}`Subsec:GeomLinTrans:Proj` will help us out. Consider a line $\mathcal{L}$ and a vector $\mathbf{v}$ not in $\mathcal{L}$, as in {numref}`Figure %s <Fig:GeomLinTrans:ReflFromDoubleProj>`. In order to reflect $\mathbf{v}$ over $\mathcal{L}$, we first move it to the closest point on $\mathcal{L}$ and then move it the same distance again in the same direction.
 
 The closest point to $\mathbf{v}$ on $\mathcal{L}$ is the orthogonal projection $\operatorname{proj}_{\mathcal{L}}(\mathbf{v})$. To get from $\mathbf{v}$ to the closest point on $\mathcal{L}$, we therefore have to subtract $\mathbf{v}-\operatorname{proj}_{\mathcal{L}}(\mathbf{v})$ from $\mathbf{v}$ (See {numref}`Figure %s <Fig:GeomLinTrans:ReflFromDoubleProj>`.). So in order to reflect $\mathbf{v}$ over $\mathcal{L}$, we have to subtract the vector $\mathbf{v}-\operatorname{proj}_{\mathcal{L}}(\mathbf{v})$ twice from our starting vector $\mathbf{v}$. This means that any $\mathbf{v}$ is mapped to $2\proj_{\mathcal{L}}(\mathbf{v})-\mathbf{v}$, so if we write $T$ for this transformation we find
 
@@ -409,7 +409,7 @@ which proves the claim.
 
 ## Rotations
 
-As we have seen in {prf:ref}`Prop:GeomLinTrans:ReflDotProd`, reflections preserve the dot product and therefore lengths of vectors and the angles between vectors. However, there are other transformations that do so. These other transformations are the rotations. Let us start with the definition.
+As we have seen in {prf:ref}`Prop:GeomLinTrans:ReflDotProd`, reflections preserve the dot product and therefore lengths of vectors and the angles between vectors. However, there are other transformations that do so too. These other transformations are the rotations. Let us start with the definition.
 
 ::::::{prf:definition}
 :label: Dfn:GeomLinTrans:Rotation
@@ -534,7 +534,7 @@ $$
 :name: Fig:GeomLinTrans:RotisDoubleRefl
 :class: dark-light
 
-{prf:ref}`Prop:GeomLinTrans:RotisDoubleRefl` illustrated. $\mathcal{L}_{1}$ and $\mathcal{L}_{2}$ are arbitrary lines that make an angle of $\theta/2$ with each other. Composing the reflections along $\mathcal{L}_{1}$ and $\mathcal{L}_{2}$ then gives the rotation over the angle $\theta$. This is shown for the particular vector $\mathbf{v}$. Note that the angle $\phi/2$ that $\mathcal{L}_{1}$ makes with the positive $x$ axis is irrelevant to the proof.
+{prf:ref}`Prop:GeomLinTrans:RotisDoubleRefl` illustrated. $\mathcal{L}_{1}$ and $\mathcal{L}_{2}$ are arbitrary lines that make an angle of $\theta/2$ with each other. Composing the reflections along $\mathcal{L}_{1}$ and $\mathcal{L}_{2}$ then gives the rotation over the angle $\theta$. This is shown for the particular vector $\mathbf{v}$. Note that the angle $\phi/2$ that $\mathcal{L}_{1}$ makes with the positive $x$-axis is irrelevant to the proof.
 ```
 
 In the plane, you can only rotate around the origin. Things get considerably more complicated if we move to $\mathbb{R}^{3}$, because there you can rotate around any arbitrary line. We will not get into that here.
@@ -785,7 +785,7 @@ A shear transformation applied to a stack of cards.
 :url: https://embed.grasple.com/exercises/f1fdeb47-560d-4f90-8493-ab9124f5b9af?id=83264
 :label: grasple_exercise_3_3_9
 :dropdown:
-:description: Step by step construction of the matrix of a reflection.
+:description: Step-by-step construction of the matrix of a reflection.
 
 ::::
 

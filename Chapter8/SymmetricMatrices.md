@@ -291,11 +291,11 @@ $$
   \overline{\overline{\mathbf{u}}^{T}\mathbf{v}} = \overline{\mathbf{v}}^T  \mathbf{u}.
 $$
 
-Now suppose that $\lambda$ is an eigenvalue of the symmetric matrix $A$, and $\mathbf{v}$ is a nonzero (possibly complex) eigenvector of $A$ for the eigenvalue $\lambda$. Note that, since $A$ is real and symmetric, $\overline{{A}^T} = \overline{A} = A$.
+Now suppose that $\lambda$ is an eigenvalue of the symmetric matrix $A$, and $\mathbf{v}$ is a non-zero (possibly complex) eigenvector of $A$ for the eigenvalue $\lambda$. Note that, since $A$ is real and symmetric, $\overline{{A}^T} = \overline{A} = A$.
 To prove that $\lambda$ is real, we will show that $\overline{\lambda} = \lambda$.
 
 We use kind of the same 'trick' as in {prf:ref}`Prop:SymmetricMat:OrthogonalEigenvectors` Equation {eq}`Eq:SymmetricMat:Av1v2`.
-<BR>
+
 On the one hand
 
 $$
@@ -769,7 +769,8 @@ A_2 = Q_2^TQ_1^T A Q_1Q_2 =
 \end{array} \right) = D,
 $$
 
-indeed a _diagonal_ matrix. <BR>
+indeed a _diagonal_ matrix.
+
 For this example the matrix has the second double eigenvalue $\lambda_{3,4} = 3$. Because of that, the construction takes one step less than in the general case.  
 Defining $Q = Q_1Q_2$, we can rewrite the last identity as
 
@@ -806,7 +807,8 @@ $$
 
 Note: given the eigenvalues, these eigenvectors could have been found more efficiently by solving the systems
 $(A - \lambda_iI)\vect{x} = \vect{0}$, and then orthogonalise by the Gram-Schmidt procedure. As is done in
-{prf:ref}`Ex:SymmetricMat:OrthogDiag3x3`. <BR>
+{prf:ref}`Ex:SymmetricMat:OrthogDiag3x3`.
+
 The importance of the step-by-step reduction is that it shows that from the 'minimal' assumptions of symmetry and the existence of real eigenvalues it is possible to create an orthogonal diagonalisation.
 
 :::
@@ -826,7 +828,7 @@ To answer this question we have to consider how to maximise the ratio
   \frac{\norm{A\vect{x}}}{\norm{\vect{x}}}
 ::::
 
-for nonzero vectors $\vect{x}$.  Since  
+for non-zero vectors $\vect{x}$.  Since  
 
 
 $$
@@ -875,7 +877,7 @@ $$
 $$
 
 
-so &nbsp; $c_1^2 + c_2^2 = \norm{\vect{x}}^2 = 1$.
+so $c_1^2 + c_2^2 = \norm{\vect{x}}^2 = 1$.
 
 Likewise,
 
@@ -895,7 +897,7 @@ $$
   \norm{A\vect{x}}^2 = 25c_1^2 + 9c_2^2 \leq 25c_1^2 + 25c_2^2 = 25(c_1^2 + c_2^2) = 25,
 $$
 
-which implies that  indeed  &nbsp;  $\norm{A\vect{x}} \leq 5$  for all vectors $\vect{x}$ with 
+which implies that  indeed $\norm{A\vect{x}} \leq 5$  for all vectors $\vect{x}$ with 
 $\norm{\vect{x}} = 1$.
 
 ::::
@@ -905,7 +907,7 @@ The second example shows that symmetry of the matrix is necessary for the proper
 ::::{prf:example}
 :label: Ex:SymmetricMat:NonMax||Ax|| 
 
-The  matrix $B = \begin{pmatrix}  3 & 4  \\ 0 &  3\end{pmatrix}$ has the double eigenvalue $\lambda_1 = \lambda_2 = 3$ and for the unit vector $\mathbf{x} = \begin{pmatrix}  0   \\  1 \end{pmatrix}$  it holds that &nbsp; $   \norm{A\vect{x}} = \norm{\begin{pmatrix} 4\\3 \end{pmatrix}} = 5 > 3 = |\lambda_1|$.
+The  matrix $B = \begin{pmatrix}  3 & 4  \\ 0 &  3\end{pmatrix}$ has the double eigenvalue $\lambda_1 = \lambda_2 = 3$ and for the unit vector $\mathbf{x} = \begin{pmatrix}  0   \\  1 \end{pmatrix}$  it holds that $   \norm{A\vect{x}} = \norm{\begin{pmatrix} 4\\3 \end{pmatrix}} = 5 > 3 = |\lambda_1|$.
 
 ::::
 
@@ -953,7 +955,7 @@ $$
  = c_1^2\norm{\mathbf{u}_1}^2 +   \ldots +  c_n^2\norm{\mathbf{u}_n}^2 = c_1^2 + \ldots + c_n^2,
 $$
 
-thus &nbsp; $c_1^2 + \ldots + c_n^2=1$.
+thus $c_1^2 + \ldots + c_n^2=1$.
 
 Next, invoking that each $\vect{u}_i$ is an eigenvector for $\lambda_i$ and again that the $\vect{u}_i$ form an orthonormal set, we get
 
@@ -1189,10 +1191,8 @@ $$
 :url: https://embed.grasple.com/exercises/4b6f8822-31ff-4962-addf-97ee2133c449?id=118446
 :label: grasple_exercise_8_1_2A
 :dropdown:
-:description: Recognising orthogonal matrices
+:description: Recognising orthogonal matrices.
 ::::
-
-
 
 ::::{grasple}
 :iframeclass: dark-light
@@ -1375,7 +1375,7 @@ The following exercise have a more theoretical flavour.
 :url: https://embed.grasple.com/exercises/59c4c327-1603-4cc1-8b92-7415c691098b?id=87873
 :label: grasple_exercise_8_1_20
 :dropdown:
-:description:  True or false.  If $A$ is symmetric, then $A^2$ has nonnegative eigenvalues. (And what if $A$ is not symmetric?)
+:description:  True or false.  If $A$ is symmetric, then $A^2$ has non-negative eigenvalues. (And what if $A$ is not symmetric?)
 ::::
 
 
@@ -1432,7 +1432,7 @@ $$
 :url: https://embed.grasple.com/exercises/a6f1f863-aa57-479f-a4cf-e0fb42edd28a?id=88173
 :label: grasple_exercise_8_1_24
 :dropdown:
-:description: Eigenvalues and eigenvectors of skew-symmetric matrices (sequel to previous exercise) 
+:description: Eigenvalues and eigenvectors of skew-symmetric matrices (sequel to previous exercise).
 ::::
 
 ::::{grasple}

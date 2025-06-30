@@ -76,17 +76,17 @@ have this property. Note that these represent the situation where city $A$ has t
 ::::::{prf:definition}
 :label:  Def:Eigenvalues:Eigenvector
 
-Let $A$ be an $n \times n$-matrix. A real number $\lambda$ is called an **eigenvalue** of $A$ if there exists a nonzero vector $\vect{v}$ in $\R^n$ for which
+Let $A$ be an $n \times n$-matrix. A real number $\lambda$ is called an **eigenvalue** of $A$ if there exists a non-zero vector $\vect{v}$ in $\R^n$ for which
 
 $$
 A\vect{v} = \lambda\vect{v}.
 $$
 
-Such a (nonzero) vector $\vect{v}$ is then called an **eigenvector** of $A$ for the eigenvalue $\lambda$.
+Such a (non-zero) vector $\vect{v}$ is then called an **eigenvector** of $A$ for the eigenvalue $\lambda$.
 
 ::::::
 
-The reason to require that an eigenvector has to be nonzero is that otherwise _every_ number $c$ would be an eigenvalue.
+The reason to require that an eigenvector has to be non-zero is that otherwise _every_ number $c$ would be an eigenvalue.
 Namely, $A\vect{0} = \vect{0} = c\vect{0}$ for any real number $c$.
 Thus then the concept of an eigenvalue would be a rather empty notion.
 
@@ -154,7 +154,7 @@ A\vect{v} = \left(\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array}\right)
 $$
 
 since such a $c$ should simultaneously satisfy $2c = -6$ and $(-2)c = 0$.
-<BR>
+
 So $\vect{v} = \begin{pmatrix} 2\\-2 \end{pmatrix}$ is not an eigenvector of $A$.
 See also {numref}`Figure %s <Fig:Eigenvalues:Eigenvector-no-Eigenvector>`
 
@@ -180,7 +180,7 @@ Well, again let us consider an example first.
 
 We will check whether $1$ and $-1$ are eigenvalues of the matrix $A = \left(\begin{array}{cc} 1 & 4 \\ 1 & 1  \end{array}\right)$ of the previous example.
 
-For the first candidate we have to search for nonzero solutions of the equation
+For the first candidate we have to search for non-zero solutions of the equation
 
 $$
 A\vect{v} = 1\vect{v}.
@@ -217,7 +217,7 @@ $$
 .
 $$
 
-So the question whether $1$ is an eigenvalue of the matrix $A$ is equivalent to the question whether this equation has nonzero solutions.
+So the question whether $1$ is an eigenvalue of the matrix $A$ is equivalent to the question whether this equation has non-zero solutions.
 
 As the equation is homogeneous, we don't have to work with the augmented matrix. The  matrix $A - I$ has two pivots, so the only solution of the equation is the zero vector.
 
@@ -242,7 +242,7 @@ $$
 \quad (A-(-1)I)\vect{v} = (A+I)\vect{v} = \vect{0}.
 $$
 
-So now we have to look for nonzero solutions of
+So now we have to look for non-zero solutions of
 
 $$
 (A + I)\vect{x} = \vect{0}, \quad \text{i.e.}\quad
@@ -267,7 +267,7 @@ $$
 $$
 
 So $-1$ is an eigenvalue of the matrix $\left(\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array}\right) $ and a corresponding eigenvector is the vector
-$\left(\begin{array}{c} -2 \\ 1 \end{array}\right)$.  Note that the full set of eigenvectors for the eigenvalue $\lambda = -1$ is the set of all multiples of the vector $\left(\begin{array}{c} -2  \\ 1 \end{array}\right)$. Well, to be precise, all _nonzero_ multiples.
+$\left(\begin{array}{c} -2 \\ 1 \end{array}\right)$.  Note that the full set of eigenvectors for the eigenvalue $\lambda = -1$ is the set of all multiples of the vector $\left(\begin{array}{c} -2  \\ 1 \end{array}\right)$. Well, to be precise, all _non-zero_ multiples.
 
 ::::::
 
@@ -311,7 +311,7 @@ Moreover, these non-trivial solutions are exactly the corresponding eigenvectors
 ::::::
 
 
-Note that the proposition handles our third question as well. If $\lambda$ has been shown to be an eigenvalue of $A$, then the corresponding eigenvectors are the (nonzero) solutions of the homogeneous linear system in Equation {eq}`Eq:Eigenvalues:EigenvalueEquation`.
+Note that the proposition handles our third question as well. If $\lambda$ has been shown to be an eigenvalue of $A$, then the corresponding eigenvectors are the (non-zero) solutions of the homogeneous linear system in Equation {eq}`Eq:Eigenvalues:EigenvalueEquation`.
 
 Let us now have a look at a $3\times3$-matrix.
 
@@ -322,7 +322,7 @@ Consider the matrix $A = \begin{pmatrix} -2 & 1 & 2 \\ 0 & -1 & 2 \\ -1 & 1 & 0 
 
 We will check whether $2$ and $-2$ are eigenvalues of this matrix.
 
-For the first candidate we have to search for nonzero solutions of the equation
+For the first candidate we have to search for non-zero solutions of the equation
 
 $$
 A\vect{v} = 2\vect{v}.
@@ -334,7 +334,7 @@ $$
 (A-2I)\vect{v} = \vect{0}.
 $$
 
-So we are looking for non-trivial solutions of the homogeneous system of linear equations with coefficient matrix $A - 2I$. Again, we can work with the augmented matrix $(A - 2I | \vect{0} )$, or we can use the fact that we look for nonzero vectors in the null space of $A-2I$.
+So we are looking for non-trivial solutions of the homogeneous system of linear equations with coefficient matrix $A - 2I$. Again, we can work with the augmented matrix $(A - 2I | \vect{0} )$, or we can use the fact that we look for non-zero vectors in the null space of $A-2I$.
 If we plug in the entries of $A$ and use row reduction we get
 
 $$
@@ -345,7 +345,7 @@ A - 2I  =
 $$
 
 
-This last matrix has rank $3$, so its null space contains only the zero vector. Thus there are no nonzero solutions for the equation $A\vect{v} - 2\vect{v} = \vect{0}$, and we conclude that $2$ is _not_ an eigenvalue of $A$.
+This last matrix has rank $3$, so its null space contains only the zero vector. Thus there are no non-zero solutions for the equation $A\vect{v} - 2\vect{v} = \vect{0}$, and we conclude that $2$ is _not_ an eigenvalue of $A$.
 
 For the other candidate we proceed in the same manner. Now we have to find the null space of the matrix
 
@@ -506,7 +506,8 @@ So an eigenspace is just the set of all eigenvectors for a given eigenvalue, wit
 :label: Ex:EigenValues:TwodimEigenspaceCtd
 
 The matrix $A = \begin{pmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1  \end{pmatrix}$
-has the eigenvalues $\lambda_1 = -1$ and $\lambda_2=5$. <BR>
+has the eigenvalues $\lambda_1 = -1$ and $\lambda_2=5$.
+
 We have seen ({prf:ref}`Ex:EigenValues:TwodimEigenspace`) that all
 eigenvectors for $\lambda = -1$ are linear combinations of the two linearly independent eigenvectors
 
@@ -546,7 +547,7 @@ This is a matrix of rank $2$, and $\begin{pmatrix} 1  \\1\\1 \end{pmatrix}$ can 
 ::::::{prf:proposition}
 :label: Prop:Eigenvalues:IndepEigenvectors
 
-Suppose that $\vect{v}_1,   \ldots,   \vect{v}_k$ are (nonzero) eigenvectors of the matrix $A$ for $k$ **different** eigenvalues $\lambda_1, \ldots, \lambda_k$.
+Suppose that $\vect{v}_1,   \ldots,   \vect{v}_k$ are (non-zero) eigenvectors of the matrix $A$ for $k$ **different** eigenvalues $\lambda_1, \ldots, \lambda_k$.
 Then $\{ \vect{v}_1,  \ldots,  \vect{v}_k  \}$ is a linearly independent set.
 
 ::::::
@@ -554,7 +555,7 @@ Then $\{ \vect{v}_1,  \ldots,  \vect{v}_k  \}$ is a linearly independent set.
 ::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Eigenvalues:IndepEigenvectors`
 :class: tudproof
 
-<BR>
+
 
 We will show that the set $\{ \vect{v}_1,  \ldots,  \vect{v}_k  \}$ cannot be linearly dependent.
 Namely, if it were, then one of the vectors would be a linear combination of its predecessors. Suppose $\vect{v}_{\ell}$,
@@ -612,7 +613,7 @@ c_1(\lambda_1 - \lambda_{\ell}) = 0,  \quad \ldots  \,,  \quad  c_{\ell-1}(\lamb
 $$
 
 Since all $\lambda_i$ are different, all differences $(\lambda_1 - \lambda_{\ell}), \ldots, (\lambda_{\ell-1} - \lambda_{\ell})$
-are nonzero,
+are non-zero,
 
 and we can conclude that
 
@@ -667,7 +668,8 @@ An $n \times n$-matrix $A$ can have at most $n$ different eigenvalues.
 ::::::
 
 It can be shown  (as we will see in {prf:ref}`Ex:Eigenvalues:TwodimEigenspace2`)
-that the $3\times 3$-matrix $A = \begin{pmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1  \end{pmatrix}$ of the previous example has no other eigenvalues than $-1$ and $5$. So $A$ is a $3 \times 3$-matrix with fewer than $3$ eigenvalues. <BR>
+that the $3\times 3$-matrix $A = \begin{pmatrix} 1 & 2 & 2 \\ 2 & 1 & 2 \\ 2 & 2 & 1  \end{pmatrix}$ of the previous example has no other eigenvalues than $-1$ and $5$. So $A$ is a $3 \times 3$-matrix with fewer than $3$ eigenvalues.
+
 Things can even be 'worse' as the following example shows. The idea behind it: if $\vect{v}$ is an eigenvector of the matrix $A$, then the vector $\vect{v}$ is mapped to the multiple $\lambda\vect{v}$ by the transformation $T(\vect{x}) = A\vect{x}$.
 A multiple $\lambda\vect{v}$ is a vector with the same direction as $\vect{v}$ or the  direction opposite to $\vect{v}$. With this in mind, can we construct a linear transformation of $\R^2$ to $\R^2$ that certainly does not have such vectors? Yes we can!
 
@@ -740,8 +742,8 @@ So then there is a non-trivial solution $\vect{v}$ of the equation $A\vect{x} = 
 This non-trivial solution $\vect{v}$ is then an eigenvector for the eigenvalue $0$.
 
 All steps can be reversed:
-if $\vect{v}$ is an eigenvector for the eigenvalue $0$, then $A\vect{v} = 0\vect{v}=\vect{0} $,  for a nonzero vector $\vect{v}$.
-<BR>
+if $\vect{v}$ is an eigenvector for the eigenvalue $0$, then $A\vect{v} = 0\vect{v}=\vect{0} $,  for a non-zero vector $\vect{v}$.
+
 This implies that the matrix $A$ has linearly dependent columns. And that in its turn is equivalent to the statement that the matrix $A$ is singular.
 
 ::::::
@@ -752,7 +754,7 @@ This implies that the matrix $A$ has linearly dependent columns. And that in its
 The matrix $A = \begin{pmatrix} 1 & 3 \\ 2 & 6 \end{pmatrix}$
 has rank $1$, so according to {prf:ref}`Prop:EigenValues:SingularMatrix` it has eigenvalue $0$.
 
-The equation $A\vect{x} = \vect{0}$ has the nonzero solution
+The equation $A\vect{x} = \vect{0}$ has the non-zero solution
 $\vect{x} = \begin{pmatrix} 3 \\ -1 \end{pmatrix}$,
 so this vector is an eigenvector for the eigenvalue $0$.
 
@@ -903,7 +905,7 @@ Moreover,  if  $\vect{v}$ is an eigenvector of $A$ for eigenvalue $\lambda$, the
 ::::::{admonition} Solution to&nbsp;{numref}`Exc:EigenValues:EigenvaluesInverse`
 :class: solution, dropdown
 
-Suppose the nonzero vector $\vect{v}$ is an eigenvector for the eigenvalue $\lambda$ of the invertible matrix $A$.  From {prf:ref}`Prop:EigenValues:SingularMatrix` we know that $\lambda \neq 0$. From
+Suppose the non-zero vector $\vect{v}$ is an eigenvector for the eigenvalue $\lambda$ of the invertible matrix $A$.  From {prf:ref}`Prop:EigenValues:SingularMatrix` we know that $\lambda \neq 0$. From
 
 $$
    A\vect{v} = \lambda\vect{v}

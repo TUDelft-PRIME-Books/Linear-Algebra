@@ -40,7 +40,7 @@ which makes them the protagonists of the more general linear algebra concept of 
 
 ## Matrix transformations
 
-Let $A$ be an $m\times n$-matrix. We can in a natural way associate a transformation $T_A:\mathbb{R}^n \to \mathbb{R}^m$ &nbsp; to the matrix $A$.
+Let $A$ be an $m\times n$-matrix. We can in a natural way associate a transformation $T_A:\mathbb{R}^n \to \mathbb{R}^m$ to the matrix $A$.
 
 ::::::{prf:definition}
 :label: Def:LinTrafo:MatrixTransformation
@@ -143,7 +143,8 @@ $$
 \Span{ \begin{pmatrix} 1\\ 1   \end{pmatrix}, \begin{pmatrix} 2 \\  2  \end{pmatrix}, \begin{pmatrix} 0\\  1  \end{pmatrix}}.
 $$
 
-In a later chapter ({numref}`Sec:SubspacesRn`, <FONT style="color:var(--pst-color-primary)"> Subspaces of $\R^n$</FONT>) we will call this the **column space** of the matrix $A$.
+In a later section ({numref}`Sec:SubspacesRn`) we will call this the **column space** of the matrix $A$.
+
 
 ::::::
 
@@ -283,7 +284,7 @@ $$
    x + y = c.
 $$
 
-So what the mapping does is to send all points on a line $\mathcal{L}:x + y = c$ to the point $(c,0)$, which is the intersecting of this line with the $x$-axis. <BR>
+So what the mapping does is to send all points on a line $\mathcal{L}:x + y = c$ to the point $(c,0)$, which is the intersecting of this line with the $x$-axis.
 An alternative way to describe it: it is the skew projection, in the direction $\begin{pmatrix} 1 \\ -1 \end{pmatrix}$ onto the $x$-axis.
 See {numref}`Figure %s <Fig:LinTrafo:SkewProjection>`.
 
@@ -339,11 +340,12 @@ We close this subsection with an example of a matrix transformation representing
 ::::::{prf:example}
 :label: Ex:LinTrafo:MigrationModel
 
-Consider a model with two cities between which over a fixed period of time migrations take place. Say in a period of ten years 90\% of the inhabitants in city $A$ stay in city $A$ and 10\% move to city $B$. From city $B$ 20\% of the citizens move to $A$, so 80\% stay in city $B$. <BR>  
+Consider a model with two cities between which over a fixed period of time migrations take place. Say in a period of ten years 90\% of the inhabitants in city $A$ stay in city $A$ and 10\% move to city $B$. From city $B$ 20\% of the citizens move to $A$, so 80\% stay in city $B$.
+
 The following table contains the relevant statistics:
 
 $$
-  \begin{array}{c|cc} & A & B \\ \hline
+  \begin{array}{c|cc|} & A & B \\ \hline
       A & 0.9 & 0.2 \\
       B & 0.1 & 0.8 \\ \hline
   \end{array}
@@ -409,8 +411,6 @@ A **linear transformation** is a function $T$ from $\mathbb{R}^n$ to $\mathbb{R}
 
 For all vectors $\mathbf{v}_1,\,\mathbf{v}_2$ in $\mathbb{R}^n$:
 
-<BR>
-
 $$
      T(\mathbf{v}_1+\mathbf{v}_2) = T(\mathbf{v}_1) + T(\mathbf{v}_2).
 $$
@@ -419,8 +419,6 @@ $$
 <li>
 
 For all vectors $\mathbf{v}$ in $\mathbb{R}^n$ and all scalars $c$ in $\mathbb{R}$:
-
-<BR>
 
 $$
      T(c\mathbf{v}) = c\,T(\mathbf{v}).
@@ -435,7 +433,7 @@ $$
 :label: Exc:LinTrafo:ImageofZeroVector
 
 Show that a linear transformation from $\mathbb{R}^n$ to $\mathbb{R}^m$ always sends the zero vector $\mathbf{0}_n$ in $\R^n$ to the zero vector $\mathbf{0}_m$ in $\R^m$.
-<BR>
+
 Thus, if $ T:\mathbb{R}^n \to\mathbb{R}^m$ is a linear transformation, then $T(\mathbf{0}_n) = \mathbf{0}_m$.
 
 ::::::
@@ -465,7 +463,7 @@ $\begin{pmatrix}
 Let us check that this a linear map.
 
 For that, we need to check the two properties in the definition.
-<BR>
+
 For property (i) we take two arbitrary vectors
 
 $$
@@ -628,7 +626,7 @@ $$
 ::::::{exercise}
 :label: Exc:LinTrafo:T(x)=x+p
 
-Let $\mathbf{p}$ be a nonzero vector in $\mathbb{R}^2$. &nbsp;  Is the translation
+Let $\mathbf{p}$ be a non-zero vector in $\mathbb{R}^2$. Is the translation
 
 $$
    T\!:\mathbb{R}^2 \to \mathbb{R}^2, \quad  \mathbf{x} \mapsto \mathbf{x} + \mathbf{p}
@@ -652,7 +650,7 @@ $$
 
 ::::::
 
-Note that {prf:ref}`Ex:LinTrafo:FirstLinearMap` was in fact the first example of a matrix transformation in the {ref}`Subsec:LinTrafo:MatrixTrafo`:
+Note that {prf:ref}`Ex:LinTrafo:FirstLinearMap` was in fact the first example of a matrix transformation in the Subsection {ref}`Subsec:LinTrafo:MatrixTrafo`:
 
 $$
 \begin{pmatrix}
@@ -774,7 +772,7 @@ For the sum $S$ we have
 <ol type="i">
 <li>
 
-For all vectors $\mathbf{v}_1,\,\mathbf{v}_2$ in $\R^n$ <BR>
+For all vectors $\mathbf{v}_1,\,\mathbf{v}_2$ in $\R^n$ 
 
 $$
    \begin{array}{rcl}
@@ -789,8 +787,7 @@ $$
 </li>
 <li>
 
-And likewise, for all vectors $\mathbf{v}$ in $\mathbb{R}^n$ and all scalars $c$ in $\mathbb{R}$: <BR>
-%$S(c\mathbf{v}) = T_1(c\mathbf{v})+T_2(c\mathbf{v}) = cT_1(\mathbf{v})+cT_2(\mathbf{v}) = c\big(T_1(\mathbf{v})+cT_2(\mathbf{v})\big)= cS(\mathbf{v})$.
+And likewise, for all vectors $\mathbf{v}$ in $\mathbb{R}^n$ and all scalars $c$ in $\mathbb{R}$:
 
 $$
    \begin{array}{rcl}
@@ -967,7 +964,7 @@ a linear transformation $T$ from $\mathbb{R}^n$ to $\mathbb{R}^m$ is completely 
 $ T(\mathbf{a}_1), T(\mathbf{a}_2), \ldots , T(\mathbf{a}_n)$ of a set of vectors $\{\mathbf{a}_1, \mathbf{a}_2, \ldots, \mathbf{a}_n\}$ that spans $\mathbb{R}^n$. 
 
 The simplest set of vectors that spans the whole space $\mathbb{R}^n$ is
-the standard basis for $\mathbb{R}^n$ which was introduced in the section {ref}`Sec:LinearCombinations`.
+the standard basis for $\mathbb{R}^n$ which was introduced in the Section {ref}`Sec:LinearCombinations`.
 
 Recall that this is the set of vectors
 
@@ -1077,7 +1074,7 @@ Consider the linear transformation
 $T:\mathbb{R}^2\rightarrow\mathbb{R}^3$ that sends each vector $ \begin{pmatrix}
 x \\ y
 \end{pmatrix}$
-in $\mathbb{R}^2$ to the vector $\begin{pmatrix} x \\ y \\ 0 \end{pmatrix}$. &nbsp; It holds that
+in $\mathbb{R}^2$ to the vector $\begin{pmatrix} x \\ y \\ 0 \end{pmatrix}$. It holds that
 
 $$
    T(\vect{e}_1) = T\left(\begin{pmatrix} 1\\ 0 \end{pmatrix}\right) =
@@ -1185,7 +1182,7 @@ is called the **standard matrix** of $T$.
 
 ::::::
 
-In the section {ref}`Sec:GeomLinTrans` you will learn how to build standard matrices for rotations, reflections and other geometrical mappings.
+In the Section {ref}`Sec:GeomLinTrans` you will learn how to build standard matrices for rotations, reflections and other geometrical mappings.
 For now let us look at a more "algebraic" example.
 
 ::::::{prf:example}
@@ -1359,7 +1356,7 @@ S\circ T(\mathbf{e}_1)&S\circ T(\mathbf{e}_2)
 \end{pmatrix}.
 $$
 
-In the section {ref}`Sec:MatrixOps` we will define the product of two matrices precisely in such a way that
+In the Section {ref}`Sec:MatrixOps` we will define the product of two matrices precisely in such a way that
 
 $$
 \begin{pmatrix}

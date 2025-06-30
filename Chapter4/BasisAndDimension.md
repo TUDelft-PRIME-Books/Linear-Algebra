@@ -232,7 +232,7 @@ x_1 \\x_2\\x_3\\x_4
 \end{pmatrix} = \vect{0}.
 $$
 
-The set $\{\vect{e}_1, \vect{e}_2, \vect{e}_3, \vect{e}_4\}$ also spans the whole $\R^4$, as for any vector $\vect{x} = \begin{pmatrix}x_1 \\x_2\\x_3\\x_4 \end{pmatrix}$ <br>
+The set $\{\vect{e}_1, \vect{e}_2, \vect{e}_3, \vect{e}_4\}$ also spans the whole $\R^4$, as for any vector $\vect{x} = \begin{pmatrix}x_1 \\x_2\\x_3\\x_4 \end{pmatrix}$
 it holds that
 $\vect{x} = x_1\vect{e}_1 + x_2\vect{e}_2 + x_3\vect{e}_3 + x_4\vect{e}_4$.
 
@@ -270,8 +270,6 @@ Suppose $S = \Span{\mathcal A} = \Span{\vect{a}_1, \vect{a}_2, \ldots, \vect{a}_
 
 Then the set ${\mathcal A}$ can be thinned to a basis of $S$, i.e. there is a subset
 
-<BR>
-
 $$
 
 {\mathcal B} \subseteq \mathcal{A}
@@ -280,8 +278,6 @@ $$
 $$
 
 such that
-
-<BR>
 
 $$
 
@@ -752,14 +748,15 @@ $$
 ::::::{admonition} Solution to&nbsp;{numref}`Exc:BasisDim:TF-ColA-ColE`
 :class: solution, dropdown
 
-The statement is _false_. <BR>
-For instance, look at {prf:ref}`Ex:BasisDim:FourByFour`. In that example all vectors in $\Col{(E)}$ have a zero on position four, and there are (many) vectors in $\Col{(A)}$ that have a nonzero fourth entry. So definitely $\Col{(A)} \neq \Col{(E)}$.
+The statement is _false_.
+
+For instance, look at {prf:ref}`Ex:BasisDim:FourByFour`. In that example all vectors in $\Col{(E)}$ have a zero on position four, and there are (many) vectors in $\Col{(A)}$ that have a non-zero fourth entry. So definitely $\Col{(A)} \neq \Col{(E)}$.
 
 ::::::
 
 To find a basis of the column space we only have to look at the pivot columns of _any_ (row) equivalent echelon matrix. The _corresponding_ columns of $A$ provide a basis for the column space of $A$. For a basis of the null space it is preferable to work with the equivalent _reduced_ echelon matrix.
 
-To find a basis of the column space by taking the pivot columns is more efficient than do the thinning step-by-step. By omitting the non-pivot columns the thinning is done at one stroke.
+To find a basis of the column space by taking the pivot columns is more efficient than do the thinning step by step. By omitting the non-pivot columns the thinning is done at one stroke.
 
 ::::::{prf:example}
 :label: Ex:BasisDim:BasesColAndNulSpace4by5
@@ -1027,7 +1024,7 @@ Show that **any** set of two independent vectors in the plane $\mathcal P$ gener
 :label: Def:BasisDim:Dimension
 
 The **dimension** of a subspace $S$ is the number of elements in a
-(i.e., any) basis for $S$. &nbsp; Notation: &nbsp; $\operatorname{dim}S$.
+(i.e., any) basis for $S$. Notation: $\operatorname{dim}S$.
 
 ::::::
 
@@ -1133,7 +1130,8 @@ $$
 $$
 
 i.e., each vector $\vect{s}$ in $S$ is contained in
-$\Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k }$. <BR>
+$\Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_k }$.
+
 To show this, let $\vect{s}$ be an arbitrary vector in $S$.  
 Furthermore, let
 
@@ -1389,7 +1387,7 @@ $$
 \operatorname{dim} \Col{M} = 3.
 $$
 
-The nonzero columns of
+The non-zero columns of
 
 $$
 M^T =
@@ -1460,8 +1458,8 @@ $$
 \Row{A} =  \Row{E}.
 $$
 
-For an echelon matrix it is very easy to find a basis of the row space. As in {prf:ref}`Ex:RowSpaceEchelonMatrix`, we can just take the nonzero rows (written as columns).
-The nonzero rows are the rows that start with a pivot, so we find
+For an echelon matrix it is very easy to find a basis of the row space. As in {prf:ref}`Ex:RowSpaceEchelonMatrix`, we can just take the non-zero rows (written as columns).
+The non-zero rows are the rows that start with a pivot, so we find
 
 $$
 \operatorname{dim}\Row{A} = \operatorname{dim}\Row{E}= \text{ number of pivots } = \operatorname{dim } \Col{A},
@@ -1624,9 +1622,10 @@ $$
 ::::::{admonition} Solution to&nbsp;{numref}`Exc:BasisDim:TF:RankAEqualsRankAT`
 :class: solution, dropdown
 
-The rank of $A^T$ is the dimension of the column space of $A^T$, which is the dimension of the row space of $A$. <BR>
+The rank of $A^T$ is the dimension of the column space of $A^T$, which is the dimension of the row space of $A$.
+
 The rank of $A$ is the dimension of the column space of $A$.
-<br/>
+
 By {prf:ref}`Prop:BasisDim:EqualDimRowColSpace` $\operatorname{dim} \operatorname{Row}(A) = \operatorname{dim} \operatorname{Col}(A)$.
 
 ::::::
@@ -1710,10 +1709,12 @@ $$
 :class: solution, dropdown
 
 
-Suppose  $A$ is an $m\times n$-matrix and $B$ an $n\times p$-matrix,  so $AB$ is an $m\times p$-matrix. <BR> 
-First note that if $\vect{v}$ lies in $\operatorname{Nul}B$,  thus $B\vect{v} = \vect{0}$, <BR>
-then $AB\vect{v} = A(B\vect{v}) = A\vect{0} = \vect{0}$,  so  $\vect{v} \in $ $\operatorname{Nul}AB$.  <BR>
-Thus  $\operatorname{Nul}B$  lies in $\operatorname{Nul}AB$, which gives that  $\operatorname{dim}\operatorname{Nul}B \leq   \operatorname{dim}\operatorname{Nul} AB$. <BR>
+Suppose  $A$ is an $m\times n$-matrix and $B$ an $n\times p$-matrix,  so $AB$ is an $m\times p$-matrix.
+
+First note that if $\vect{v}$ lies in $\operatorname{Nul}B$,  thus $B\vect{v} = \vect{0}$, then $AB\vect{v} = A(B\vect{v}) = A\vect{0} = \vect{0}$,  so  $\vect{v} \in $ $\operatorname{Nul}AB$.
+
+Thus  $\operatorname{Nul}B$  lies in $\operatorname{Nul}AB$, which gives that  $\operatorname{dim}\operatorname{Nul}B \leq   \operatorname{dim}\operatorname{Nul} AB$.
+
 Consequently, by the rank theorem   ({prf:ref}`Thm:BasisDim:RankThm`),
  
  $$
@@ -1747,7 +1748,8 @@ $$
 
 The first inequality is the same as the inequality in {numref}`Exc:BasisDim:RankABLeqRankA`
 and the second inequality follows from the same exercise by taking $A = AP$ and $B = P^{-1}$.
-This proves $\operatorname{rank}(AP) =   \operatorname{rank}(A)$. <BR>
+This proves $\operatorname{rank}(AP) =   \operatorname{rank}(A)$.
+
 The identity $\operatorname{rank}(A) =  \operatorname{rank}(PA)$ follows by considering the transpose:
 
 $$
@@ -1864,7 +1866,7 @@ $B$ is an $n\times m$-matrix?
 :url: https://embed.grasple.com/exercises/04d804ff-16ea-44ee-ac76-452a73a88859?id=70653
 :label: grasple_exercise_4_2_9
 :dropdown:
-:description: To find a basis and the dimension of $\operatorname{Span}\{\vect{v}_1, ... , \vect{v}_4\}$ &nbsp; (in $\R^4$).
+:description: To find a basis and the dimension of $\operatorname{Span}\{\vect{v}_1, ... , \vect{v}_4\}$ (in $\R^4$).
 
 ::::::
 

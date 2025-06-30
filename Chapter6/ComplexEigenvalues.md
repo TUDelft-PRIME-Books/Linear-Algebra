@@ -46,8 +46,7 @@ $$
 -2 + (1+i)(1-i).
 $$
 
-We can read off a solution (i.e., complex eigenvector): &nbsp; 
-$\vect{v}_1 = \left(\begin{array}{c}  -1+i \\1 \end{array}\right)$.
+We can read off a solution (i.e., complex eigenvector): $\vect{v}_1 = \left(\begin{array}{c}  -1+i \\1 \end{array}\right)$.
 
 To check that we have indeed an eigenvector is also slightly more involved than in the real case.
 
@@ -97,8 +96,7 @@ $$
 
 so the two vectors are *complex* multiples of each other, and hence are not linearly independent.
 
-For the other eigenvalue we can proceed in the same manner and find (for instance) the eigenvector
-&nbsp; $\vect{u}_2 =\left(\begin{array}{c} -2 \\ 1-i \end{array}\right) $.
+For the other eigenvalue we can proceed in the same manner and find (for instance) the eigenvector $\vect{u}_2 =\left(\begin{array}{c} -2 \\ 1-i \end{array}\right) $.
 
 :::::
 
@@ -132,7 +130,7 @@ If $A$ and $B$ are two $m\times n$-matrices, then $\overline{A+B} = \overline{A}
 <li>
 
 If $A$ and $C$ are two matrices for which the product $AC$ exists,
-<BR>
+
 then $\overline{AC} = \overline{A}$ $\overline{C}$.
 
 </li>
@@ -387,7 +385,8 @@ This more or less settles the following proposition.
 ::::::{prf:proposition}
 :label: Prop:ComplexEV:HiddenRotation
 
-Suppose $A$ is a $2 \times 2$-matrix with eigenvalues $\alpha \pm \beta i$, with $\beta \neq 0$. <BR>
+Suppose $A$ is a $2 \times 2$-matrix with eigenvalues $\alpha \pm \beta i$, with $\beta \neq 0$.
+
 Then $A$ can be written as
 
 $$

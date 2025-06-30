@@ -26,8 +26,6 @@ $S$ contains the zero vector.
 
 If two vectors $\vect{u}$ and $\vect{v}$ are in $S$, then their sum is in $S$ too:
 
-<br>
-
 $$
 \vect{u} \in S,  \vect{v} \in S \quad \Longrightarrow \quad
 \vect{u}+ \vect{v} \in S.
@@ -37,8 +35,6 @@ $$
 <li>
 
 If a vector $\vect{u}$ is in $S$, then every scalar multiple of $\vect{u}$ is in $S$ too:
-
-<br>
 
 $$
 \vect{u} \in S,  c \in \R \quad \Longrightarrow \quad
@@ -74,8 +70,6 @@ $S$ certainly contains the zero vector.
 
 If two vectors $\vect{u}$ and $\vect{v}$ are in $S$, then their sum is in $S$ too:
 
-<br>
-
 $$
 
 \vect{u} \in S,  \vect{v} \in S  \,\,
@@ -89,8 +83,6 @@ $$
 <li>
 
 If a vector $\vect{u}$ is in $S$, then every scalar multiple of $\vect{u}$ is in $S$ too:
-
-<br>
 
 $$
 \vect{u} \in S\quad
@@ -191,7 +183,8 @@ A game to test your knowledge of subspaces. On the left, $\vect{u} + \vect{v}$ i
 
 We first give an example of a subset of $\R^2$ that only has properties i. and ii.
 
-Let $S_1$ be the vectors in $\R^2$ with non-negative entries. So, $S_1$ is the first quadrant of the $x_1$-$x_2$-plane. <BR>
+Let $S_1$ be the vectors in $\R^2$ with non-negative entries. So, $S_1$ is the first quadrant of the $x_1$-$x_2$-plane.
+
 For two vectors in $S_1$ their sum still lies in $S_1$.
 However, if $\vect{v}\neq \vect{0}$ lies in $S_1$ and $c$ is negative, then $c\vect{v}$ is not in $S_1$.
 
@@ -202,8 +195,10 @@ $$
   x_1x_2 = 0 \right\}.
 $$
 
-So $S_2$ consists of the two coordinate axes. <BR>
-$S_2$ contains the origin, and is closed under taking multiples. <BR>
+So $S_2$ consists of the two coordinate axes.
+
+$S_2$ contains the origin, and is closed under taking multiples.
+
 However for the two vectors $\vect{e}_1, \vect{e}_2$ in $S_2$ the sum is not:
 
 $$
@@ -284,8 +279,9 @@ $$
 c_1\vect{u}_1+  \ldots + c_k\vect{u}_k \in S.
 $$
 
-So we can more generally say that a subspace is _closed under linear combinations_. <BR>
-This also means that if $\vect{u}_1, \ldots , \vect{u}_k $  are vectors in a subspace $S$, <BR>
+So we can more generally say that a subspace is _closed under linear combinations_.
+
+This also means that if $\vect{u}_1, \ldots , \vect{u}_k $  are vectors in a subspace $S$,
 then $\Span{\vect{u}_1, \ldots , \vect{u}_k} $ is contained in $S$.
 
 ::::::
@@ -394,7 +390,7 @@ Suppose $S$ is a subspace of $\R^3$.
 $S$ will at least contain the zero vector. This may be all, i.e., $S   = \{\vect{0}\}$.
 Then we are in case (A). Case closed.
 
-If $S \neq  \{\vect{0}\}$, then $S$ contains at least one nonzero vector $\vect{v}_1$.
+If $S \neq  \{\vect{0}\}$, then $S$ contains at least one non-zero vector $\vect{v}_1$.
 By property (iii) $S$ then contains all multiples $c\vect{v}_1$.
 If that is all, if all vectors in $S$ are multiples of $\vect{v}_1$, then $S = \Span{\vect{v}_1}$, a line through the origin,
 and we are in case (B).
@@ -463,7 +459,7 @@ $$
 
 For an $m\times n$-matrix $A$, $\operatorname{Col}A$ is the set of all vectors of the form $A\vect{x}$, for $\vect{x}\in\R^n$. The column space
 $\operatorname{Col}{A}$ can also be interpreted as the range of the linear transformation $T:\R^n \to \R^m$ defined via
-$T(\vect{x}) = A\vect{x}$. &nbsp; (Cf. {prf:ref}`Prop:LinTrafo:RangeTA`.)
+$T(\vect{x}) = A\vect{x}$. (Cf. {prf:ref}`Prop:LinTrafo:RangeTA`.)
 
 ::::::
 
@@ -491,8 +487,6 @@ Let $A$ be an $m\times n$-matrix.
 The column space of $A$ is a subspace of $\R^m$.
 
 </li>
-
-<BR>
 
 <li>
 
@@ -530,8 +524,6 @@ so $\vect{v} = \vect{0}$ is contained in the null space.
 Second, to show that $\Nul{A}$ is closed under sums, suppose that
 $\vect{u}$ and $\vect{v}$ are two vectors in $\Nul{A}$. Then from
 
-<BR>
-
 $$
 A\vect{u} = \vect{0} \quad \text{and} \quad A\vect{v} = \vect{0},
 $$
@@ -551,8 +543,6 @@ $$
 Third, to show that $\Nul{A}$ is closed under taking scalar multiples,
 suppose that
 $\vect{u}$ is a vector in $\Nul{A}$, i.e.
-
-<BR>
 
 $$
 A\vect{u} = \vect{0}
@@ -615,7 +605,6 @@ Suppose that $A$ and $B$ are matrices for which the product $AB$ is defined.
 <li>
 
 Show that the column space of $AB$ is a subset of the column space of $A$, i.e.
-<br><br>
 
 $$
 \Col{AB} \subseteq \Col{A}.
@@ -644,7 +633,8 @@ Thus $AB$ is an $m\times p$-matrix.
 The column space of an $m\times n$-matrix $M$, consists of all vectors
 $\vect{w} = M\vect{v}$, where $\vect{v}$ is a vector in $\R^n$.
 
-Suppose $\vect{w}$ is a vector in $\operatorname{Col}(AB)$, so $\vect{w} = AB\vect{v}$ for some vector $\vect{v}$ in $\R^p$. <BR>
+Suppose $\vect{w}$ is a vector in $\operatorname{Col}(AB)$, so $\vect{w} = AB\vect{v}$ for some vector $\vect{v}$ in $\R^p$.
+
 Then also $\vect{w} = A(B\vect{v})$, where $B\vect{v}$ is a vector in $\R^n$, which proves that $\vect{w} \in $ $\operatorname{Col}(A)$.
 
 With this we have shown that every vector in $\operatorname{Col}(AB)$ also lies in $\operatorname{Col}(A)$, i.e.,
@@ -656,15 +646,15 @@ $$
 </li>
 <li>
 
-The null space of an $m\times n$-matrix $M$ consists of all vectors $\vect{v}$ in $\R^n$ for which $M\vect{v} = \vect{0}$. &nbsp;
+The null space of an $m\times n$-matrix $M$ consists of all vectors $\vect{v}$ in $\R^n$ for which $M\vect{v} = \vect{0}$.
+
 We show that
 
 $$
 \Nul{(B)} \subseteq \Nul{(AB)}.
 $$
 
-Suppose $\vect{v}$ is an element of $\Nul{(B)}$. &nbsp;
-Then $B\vect{v}= \vect{0}$, so a fortiori $AB\vect{v}= A\vect{0} =\vect{0}$, and so $\vect{v}$ lies in $\Nul{(AB)}$.
+Suppose $\vect{v}$ is an element of $\Nul{(B)}$. Then $B\vect{v}= \vect{0}$, so a fortiori $AB\vect{v}= A\vect{0} =\vect{0}$, and so $\vect{v}$ lies in $\Nul{(AB)}$.
 
 </li>
 </ol>
@@ -693,8 +683,10 @@ $$
 A^2 = O \quad \Rightarrow \quad  \Col{(A)}  \subseteq \Nul{(A)}.
 $$
 
-Let $\vect{w}\in\Col{(A)}$. <BR>
-Then there is a vector $\vect{v}$ in $\R^n$ for which $\vect{w} = A\vect{v}$. <BR>
+Let $\vect{w}\in\Col{(A)}$.
+
+Then there is a vector $\vect{v}$ in $\R^n$ for which $\vect{w} = A\vect{v}$.
+
 It follows that $A\vect{w} = A^2\vect{v} = O\vect{v} = \vect{0}$. Thus $\vect{w} \in \Nul{(A)}$.
 
 Next we have to we show that
@@ -703,8 +695,10 @@ $$
 \Col{(A)}  \subseteq \Nul{(A)} \quad \Rightarrow \quad  A^2 = O.
 $$
 
-If we can show that $A^2\vect{x}= \vect{0}$ for every vector $\vect{x}$ in $\R^n$, we're done. <br>
-So let $\vect{x}$ be any vector in $\R^n$. Then $\vect{y} =A\vect{x}$ lies in the column space of $A$, which is contained in the null space of $A$. <br>
+If we can show that $A^2\vect{x}= \vect{0}$ for every vector $\vect{x}$ in $\R^n$, we're done.
+
+So let $\vect{x}$ be any vector in $\R^n$. Then $\vect{y} =A\vect{x}$ lies in the column space of $A$, which is contained in the null space of $A$.
+
 So $A\vect{y} = A^2\vect{x} = \vect{0}$, and we may conclude that indeed $A^2 = O$.
 
 ::::::

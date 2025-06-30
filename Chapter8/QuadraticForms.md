@@ -228,7 +228,7 @@ $$
   q(\vect{x}) = \vect{x}^TI_n\vect{x} = \vect{x}^T\vect{x} =x_1^2 + x_2^2 + \ldots + x_n^2 = \vect{x}\ip\vect{x}.
 $$
 
-For this quadratic form, it is clear that it will only take on nonnegative values. And that
+For this quadratic form, it is clear that it will only take on non-negative values. And that
 
 $$
    q(\vect{x}) = 0   \quad \iff \quad  \vect{x}=\vect{0}.
@@ -253,7 +253,7 @@ $$
    \begin{pmatrix}x_1 & x_2 \end{pmatrix} \begin{pmatrix}1 & 2 \\ 2 & 3 \end{pmatrix}\begin{pmatrix}x_1 \\ x_2 \end{pmatrix} = \vect{x}^TA\vect{x} .
 $$
 
-At first sight you might think that this quadratic form only takes on nonnegative values.
+At first sight you might think that this quadratic form only takes on non-negative values.
 One way to show that this is not actually true is by _completing squares_.
 
 $$
@@ -292,7 +292,7 @@ $$
   \begin{pmatrix}y_1 & y_2 \end{pmatrix} \begin{pmatrix}1  & 0 \\ 0 &-1 \end{pmatrix}\begin{pmatrix}y_1 \\ y_2 \end{pmatrix} = \vect{y}^TD\vect{y}.
 $$
 
-<BR>
+
 
 Actually, it proves slightly advantageous to express the substitution as
 $\vect{x} = P\vect{y}$ for an invertible matrix $P$. We then have the following proposition.
@@ -408,7 +408,8 @@ $$
     q(\vect{x}) = \vect{x}^TA\vect{x}.
 $$
 
-Let $Q$ be an orthogonal matrix diagonalising $A$. That is,  $A = QDQ^{-1}$. <BR>
+Let $Q$ be an orthogonal matrix diagonalising $A$. That is,  $A = QDQ^{-1}$. 
+
 Applying the substitution $\vect{x} = Q\vect{y}$ then yields the quadratic form
 
 $$
@@ -495,7 +496,9 @@ $$
 $$
 
 for two invertible matrices $P_1$, $P_2$,
-then the _signs_ of the values on the diagonals of $D_1$ and $D_2$ match in the following sense: <BR> if $p_1$, $p_2$ denote the numbers of positive diagonal elements of $D_1, D_2$, and $n_i$ are the numbers of negative diagonal elements, then
+then the _signs_ of the values on the diagonals of $D_1$ and $D_2$ match in the following sense:
+
+ if $p_1$, $p_2$ denote the numbers of positive diagonal elements of $D_1, D_2$, and $n_i$ are the numbers of negative diagonal elements, then
 
 $$
   p_1 = p_2 \quad \text{and} \quad n_1 = n_2.
@@ -664,7 +667,7 @@ $q_A$ is **positive definite** if and only if all eigenvalues are positive.
 
 <li>
 
-$q_A$ is **positive semi-definite** if and only if all eigenvalues are nonnegative.
+$q_A$ is **positive semi-definite** if and only if all eigenvalues are non-negative.
 
 </li>
 
@@ -676,7 +679,7 @@ $q_A$ is **negative definite** if and only if all eigenvalues are negative.
 
 <li>
 
-$q_A$ is **negative semi-definite** if and only if all eigenvalues are nonpositive.
+$q_A$ is **negative semi-definite** if and only if all eigenvalues are non-positive.
 
 </li>
 
@@ -719,15 +722,15 @@ $$
 Let us consider the case where all eigenvalues $\lambda_i$ are _positive_.
 Then the expression for $\tilde{q}(\vect{y})$ is positive for all $\vect{y} \neq \vect{0}$. It remains to show that then also $q(\vect{x}) > 0$ for all vectors $\vect{x}\neq \vect{0}$.
 
-Since $Q$ is an orthogonal matrix it is also an invertible matrix. So any _nonzero_ vector $\vect{x}$ can be written as
+Since $Q$ is an orthogonal matrix it is also an invertible matrix. So any _non-zero_ vector $\vect{x}$ can be written as
 
 $$
   \vect{x} = Q\vect{y}
 $$
 
-for a (unique) _nonzero_ vector $\vect{y}$.
+for a (unique) _non-zero_ vector $\vect{y}$.
 
-As a consequence, for any nonzero vector $\vect{x}$ we have
+As a consequence, for any non-zero vector $\vect{x}$ we have
 
 $$
    \vect{x}^TA\vect{x} = (Q\vect{y})^TA(Q\vect{y}) =
@@ -801,7 +804,7 @@ By inspection of $D_2$ find the classification of $q$.
 
 <li>
 
-By inspection of Equation {eq}`Eq:QuadForms:CompleteSquares2`, find a nonzero vector
+By inspection of Equation {eq}`Eq:QuadForms:CompleteSquares2`, find a non-zero vector
 $\vect{x}$ for which $q(\vect{x}) = 0$.
 
 </li>
@@ -843,9 +846,12 @@ Describe the (three) possible degenerate forms of conic sections. That is, what 
 ::::{admonition} Solution to&nbsp;{numref}`Exc:QuadForms:DegenerateConics`
 :class: solution, dropdown
 
-There are three essentially different situations.  <BR>
-A plane through the apex may have the apex as unique common point with the cone. Then the conic (inter)section is just this **one point**. <BR>
-If (as in the central image in {numref}`Figure %s <Fig:QuadForms:DegenerateConicSections>`) the plane is close to vertical, it will intersect the cone in **two lines** through the apex. <BR>
+There are three essentially different situations.
+
+A plane through the apex may have the apex as unique common point with the cone. Then the conic (inter)section is just this **one point**.
+
+If (as in the central image in {numref}`Figure %s <Fig:QuadForms:DegenerateConicSections>`) the plane is close to vertical, it will intersect the cone in **two lines** through the apex.
+
 The transition between these situations is when the plane is tangent to the cone. This yields the last possible conic section, **a line**.
 
 
@@ -891,7 +897,7 @@ ax_1^2 + bx_1x_2 + cx_2^2 + f = 0
 
 ::::
 
-is said to represent a **central conic**. &nbsp; When $b = 0$ as well,
+is said to represent a **central conic**. When $b = 0$ as well,
 
 ::::{math}
 :label: Eq:ConicSec:StandardConic
@@ -902,7 +908,7 @@ ax_1^2 + cx_2^2 + f = 0
 
 defines a central conic in **standard position**. Such a conic is symmetric with respect to both coordinate axes.
 
-If all parameters $a,c,f$ in Equation {eq}`Eq:ConicSec:StandardConic` are nonzero the equation can be rewritten in one of the two **standard forms**
+If all parameters $a,c,f$ in Equation {eq}`Eq:ConicSec:StandardConic` are non-zero the equation can be rewritten in one of the two **standard forms**
 
 ::::{math}
 :label: Eq:QuadForms:StandardForms
@@ -914,10 +920,10 @@ If all parameters $a,c,f$ in Equation {eq}`Eq:ConicSec:StandardConic` are nonzer
 where we may assume that $ r_1,r_2 > 0$.
 
 In case $(I)$ the equation describes an ellipse if $r_1 \neq r_2$ and a circle if $r_1 = r_2$.
-<BR>
+
 In case $(II)$ the resulting curve is a hyperbola, with the lines $x_2 = \pm\dfrac{r_2}{r_1}x_1$
 as asymptotes.
-<BR>
+
 Both curves have the coordinates axes as axes of symmetry. In this context they are also called the **principal axes**. See {numref}`Figure %s <Fig:QuadForms:EllipseHyperbola>`.
 
 :::{figure} Images/Fig-QuadForms-EllipseHyperbola.svg
@@ -930,7 +936,7 @@ Both curves have the coordinates axes as axes of symmetry. In this context they 
 ::::{exercise}
 :label: Exc:QuadForms:DegenerateStandardForm
 
-What happens if in Equation {eq}`Eq:ConicSec:CentralConic` the coefficient $f$ is equal to zero? <BR>
+What happens if in Equation {eq}`Eq:ConicSec:CentralConic` the coefficient $f$ is equal to zero?
 (There are actually three cases to consider!)
 
 ::::
@@ -969,13 +975,11 @@ Completing squares gives the equivalent equation
 
 :::
 
-We see that all depends on the sign of $\left(c - \dfrac{b^2}{a^2}\right)$  &nbsp; (i.e., to the 'definiteness' of the matrix $A$).
+We see that all depends on the sign of $\left(c - \dfrac{b^2}{a^2}\right)$ (i.e., to the 'definiteness' of the matrix $A$).
 
-If  $D = \left(c - \dfrac{b^2}{a^2}\right) > 0$,  <BR>
-the only solution $(x_1,x_2)$ of Equation {eq}`Eq:QuadForms:DegenerateForm`  is the **single point**  $(x_1,x_2) = (0,0)$.
+If  $D = \left(c - \dfrac{b^2}{a^2}\right) > 0$, the only solution $(x_1,x_2)$ of Equation {eq}`Eq:QuadForms:DegenerateForm`  is the **single point**  $(x_1,x_2) = (0,0)$.
 
-If $D = 0$,  <BR>
-the solutions are given by points on the **line** with equation $ax_1 + \dfrac{b}{a}x_2 = 0$.
+If $D = 0$, the solutions are given by points on the **line** with equation $ax_1 + \dfrac{b}{a}x_2 = 0$.
 
 Lastly, if  $D < 0$, say  $D = -d^2$, then Equation {eq}`Eq:QuadForms:DegenerateForm` simplifies to
 

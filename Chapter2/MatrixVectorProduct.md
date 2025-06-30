@@ -395,7 +395,7 @@ Using the above rules we can give shorter proofs of statements concerning linear
 
 The contents of that proposition: suppose $(c_{1},...,c_{n})$ is a solution of a linear system. Then $(c_{1}',...,c_{n}')$ is also a solution of the linear system if and only if there exists a solution $(d_{1},...,d_{n})$ of the associated homogeneous system such that $c'_{i}=c_{i}+d_{i}$ for all $i$.
 
-Using the matrix-vector product we can derive this property as follows: &nbsp;we can consider the solutions in vector form,
+Using the matrix-vector product we can derive this property as follows: we can consider the solutions in vector form,
 
 $$
   \mathbf{c} =
@@ -548,8 +548,8 @@ We have to show that the system $A\vect{x}=\vect{r}$ cannot be consistent.
 
 Let $\vect{x}_1$ be a solution for the (consistent) system $A\vect{x}=\vect{p}$.
 If $\vect{x}_2$ would be a solution for the system $A\vect{x}=\vect{r}$, i.e.,
-if $A\vect{x}_2=\vect{r}$, then $A(\vect{x}_1 -\vect{x}_2) = A\vect{x}_1 - A\vect{x}_2 = \vect{p} - \vect{r} = \vect{q}$, <BR>
-so then the system $A\vect{x}=\vect{q}$ would be consistent. This is in clear contradiction we the assumption that the last system is inconsistent. <BR>
+if $A\vect{x}_2=\vect{r}$, then $A(\vect{x}_1 -\vect{x}_2) = A\vect{x}_1 - A\vect{x}_2 = \vect{p} - \vect{r} = \vect{q}$,
+so then the system $A\vect{x}=\vect{q}$ would be consistent. This is in clear contradiction we the assumption that the last system is inconsistent.
 So a solution for the system $A\vect{x}=\vect{r}$ cannot exist.
 
 ::::

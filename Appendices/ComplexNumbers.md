@@ -568,7 +568,7 @@ If $p(z)=0$, then $p(\overline{z})=0$ as well, and the algebraic multiplicities 
 :class: dropdown, tudproof
 <!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:realpoly` -->
 
-Consider a polynomial $p$ of degree $n$, $\sum_{j=0}^n a_j z^j$, where the coefficients $a_n, a_{n-1}, \ldots, a_0$ are real valued numbers and $a_n\neq 0$.
+Consider a polynomial $p$ of degree $n$, $\sum_{j=0}^n a_j z^j$, where the coefficients $a_n, a_{n-1}, \ldots, a_0$ are real-valued numbers and $a_n\neq 0$.
 
 First we show that $p(\overline{z})=0$ by considering $\overline{p(z)}$ twice:
 
@@ -619,7 +619,7 @@ p(\overline{z}) &= \overline{p(z)} \\
 &= a_n(\overline{z}-\overline{z_1})^{\alpha_1}\ (\overline{z}-\overline{z_2})^{\alpha_2}\cdots(\overline{z}-\overline{z_k})^{\alpha_k}.
 \end{align*}
 
-As all terms except the first term $(\overline{z}-\overline{z_1})^{\alpha_1}$ are nonzero, and the first term is zero, we find that $\overline{z}=\overline{z_1}$, $\alpha_1$ times. In other words, the algebraic multiplicity of $\overline{z}$ is $\alpha_1$.
+As all terms except the first term $(\overline{z}-\overline{z_1})^{\alpha_1}$ are non-zero, and the first term is zero, we find that $\overline{z}=\overline{z_1}$, $\alpha_1$ times. In other words, the algebraic multiplicity of $\overline{z}$ is $\alpha_1$.
 
 ::::
 
@@ -1446,7 +1446,9 @@ $p(z)=z^4+z^3-3z^2+5z-2$ and $q(z)=z^2-z+1$
 
 Find the roots of $p(z)$ and their multiplicities. Certain roots may already be given.
 
-_(Hint: use long division and completing squares.)_
+:::{hint}
+Use long division and completing squares.
+:::
 
 <ol type="a">
 

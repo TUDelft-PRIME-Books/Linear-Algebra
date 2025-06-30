@@ -10,7 +10,8 @@ $$
    A - B = A + (-1)B,
 $$
 
-but we did not mention division of matrices. <BR>
+but we did not mention division of matrices.
+
 For two numbers $a$ and $b$, with $a \neq 0$, the equation
 
 $$
@@ -37,16 +38,9 @@ $$
 
 The bad news:
 
-<p style="text-align:center;">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mstyle displaystyle="true" scriptlevel="0">
-    <mfrac>
-      <mi>A</mi>
-      <mi>B</mi>
-    </mfrac>
-  </mstyle>
-</math> cannot be defined in any useful way!
-</p>
+$$
+\frac{A}{B}~\text{ cannot be defined in any useful way!}
+$$
 
 First of all the corresponding matrix equation
 
@@ -120,11 +114,14 @@ $$
 then
 
 $$
-    \begin{array}{rcl}
-         AX = B &\Rightarrow&  C(AX) = CB \\
-                &\Rightarrow& (CA)X \,=\, IX \,=\, \underline{\underline{X \,=}}\,\,\,\,\,  CB \,=\, \underline{\underline{A^{-1}B}}.
+    \begin{array}{rclcrcl}
+         AX &=& B &\Rightarrow&  C(AX) &=& CB \\
+                &&&\Rightarrow& (CA)X &=& A^{-1}B \\
+                &&&\Rightarrow& IX &=& A^{-1}B \\
+                &&&\Rightarrow& X &=& A^{-1}B.
    \end{array}
 $$
+
 
 So $X = A^{-1}B$.
 However,
@@ -256,7 +253,7 @@ $$
                  =
  \begin{pmatrix} 0 & 1 & -1 \\
                  1 & -1 &  1 \\
-                -1 & 1 &  0  \end{pmatrix}
+                -1 & 1 &  0  \end{pmatrix}.
 $$
 
 It will appear ({prf:ref}`Rem:MatrixInv:RightInvLeftInv`) that for square matrices, a one-sided inverse is automatically a two-sided inverse, by which we mean
@@ -572,9 +569,11 @@ $$
 by $A^{-1}$ and use the fact that the matrix product has the associative property:
 
 $$
-\begin{array}{rl}
-  AX = B \quad\Longrightarrow\quad A^{-1}(AX) = A^{-1}B & \Longrightarrow\quad (A^{-1}A)X = IX = A^{-1}B \\
-  &\Longrightarrow \quad X = A^{-1}B.
+\begin{array}{rclcrcl}
+  AX &=& B &\Longrightarrow& A^{-1}(AX) &=& A^{-1}B \\
+   &&& \Longrightarrow& (A^{-1}A)X &=& A^{-1}B \\
+    &&& \Longrightarrow& IX &=& A^{-1}B \\
+  &&&\Longrightarrow& X &=& A^{-1}B.
 \end{array}
 $$
 
@@ -626,10 +625,11 @@ $$
 
 ::::::
 
-A note of **warning**: the proof of {prf:ref}`Prop:SolutionViaInverse`
-is based on the **existence** of the inverse of the matrix $A$. Beware of this: never start using the expression $A^{-1}$ unless you have made sure first that the matrix $A$ is indeed invertible.
-If not, you may lead yourself into inconsistencies like in the following
-example.
+::::::{warning}
+The proof of {prf:ref}`Prop:SolutionViaInverse` is based on the **existence** of the inverse of the matrix $A$. Beware of this: never start using the expression $A^{-1}$ unless you have made sure first that the matrix $A$ is indeed invertible.
+
+If not, you may lead yourself into inconsistencies like in the following example.
+::::::
 
 ::::::{prf:example}
 :label: Ex:MatrixInv:FallaciousProof
@@ -641,7 +641,8 @@ $$
 A = I.
 $$
 
-'Fallacious proof':
+:::::{admonition} 'Fallacious' proof
+:class: tudproof
 
 Assume $A^2 = A$.
 
@@ -664,6 +665,8 @@ $$
 $$
 
 which 'proves' that $A=I$.
+
+:::::
 
 Somewhere something **must** have gone wrong, as the following counterexample shows.
 
@@ -882,7 +885,8 @@ In case it is true, give an argument, when false, give a counterexample.
 ::::::{admonition} Solution to&nbsp;{numref}`Exc:MatrixInv:(AB)Tinv`
 :class: solution, dropdown
 
-The statement is _true_. <BR>
+The statement is _true_.
+
 From the two properties
 
 $$
@@ -912,7 +916,7 @@ $$
 $$
 
 For the existence of a solution of this Equation {prf:ref}`Prop:MatrixInv:InvertibleIndepCols` tells us
-it is <u>necessary</u> that $A$ has linearly independent columns, and we can furthermore read off that the columns of the matrix
+it is *necessary* that $A$ has linearly independent columns, and we can furthermore read off that the columns of the matrix
 $X$ will be the (unique) solutions of the linear systems
 
 $$
@@ -961,55 +965,49 @@ we can solve the three linear systems simultaneously using a combined augmented 
 $$
 \left(\begin{array}{rrr|r|r|r}1 &  1 & 4  & 1 & 0 & 0\\1 & -1 & -1 & 0 & 1 & 0\\2 & -2 & -4 & 0 & 0 & 1\\\end{array}\right)
 \quad \text{or} \quad
-\left(\begin{array}{rrr|rrr}1 &  1 & 4  & 1 & 0 & 0\\1 & -1 & -1 & 0 & 1 & 0\\2 & -2 & -4 & 0 & 0 & 1\\\end{array}\right)= \left(\, A \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,I\,\right).
+\left(\begin{array}{rrr|rrr}1 &  1 & 4  & 1 & 0 & 0\\1 & -1 & -1 & 0 & 1 & 0\\2 & -2 & -4 & 0 & 0 & 1\\\end{array}\right)= \left(\, A \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\middle|\,\,\rule[-1.5ex]{0ex}{4ex}\,\,I\,\right).
 $$
 
 Let us first row reduce this matrix and then draw conclusions:
 
 $$
-\left(\, A \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,I\,\right)=
+\begin{array}{rcl}
+\left(\, A \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\middle|\,\,\rule[-1.5ex]{0ex}{4ex}\,\,I\,\right) &=&
 \left(\begin{array}{rrr|rrr}1 &  1 & 4  & 1 & 0 & 0\\1 & -1 & -1 & 0 & 1 & 0\\2 & -2 & -4 & 0 & 0 & 1
 \end{array}\right)\begin{array}{l}
 [R_1] \\
 {[R_2-1R_1]} \\
 {[R_3-2R_1]}
 \end{array}
-$$
-
-$$
-   \sim
+\\
+   &\sim&
 \left(\begin{array}{rrr|rrr}1 &  1 & 4  & 1 & 0 & 0\\0 & -2 & -5 & -1 & 1 & 0\\0 & -4 & -12 & -2 & 0 & 1
 \end{array}\right)\begin{array}{l}
 [R_1+\nicefrac12R_2] \\
 {[R_2]} \\
 {[R_3-2R_2]}
 \end{array}
-$$
-
-$$
-   \sim
+\\   &\sim&
 \left(\begin{array}{rrr|rrr}1 &  0 & 3/2  & 1/2 & 1/2 & 0\\0 & -2 & -5 & -1 & 1 & 0\\0 & 0 & -2 & 0 & -2 & 1
 \end{array}\right)\begin{array}{l}
 [R_1+\nicefrac34R_3] \\
 {[R_2-\nicefrac52R_3]} \\
 {[R_3]}
 \end{array}
-$$
-
-$$
- \sim
+\\
+   &\sim&
 \left(\begin{array}{rrr|rrr}1 &  0 & 0  & 1/2 & -1 & 3/4\\0 & -2 & 0  & -1 & 6 & -5/2\\0 & 0  & -2  & 0 & -2 & 1
 \end{array}\right)\begin{array}{l}
 [R_1] \\
 {[(-\nicefrac12)R_2]} \\
 {[(-\nicefrac12)R_3]}
 \end{array}
-$$
-
-$$
- \sim
+\\
+   &\sim&
 \left(\begin{array}{rrr|rrr}1 &  0 & 0  & 1/2 & -1 & 3/4\\0 & 1 & 0 & 1/2 & -3 & 5/4\\0 & 0 & 1 & 0 & 1 & -1/2
-\end{array}\right) = \left(\, I \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,B\,\right).
+\end{array}\right) \\
+&=& \left(\, I \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\middle|\,\,\rule[-1.5ex]{0ex}{4ex}\,\,B\,\right).
+\end{array}
 $$
 
 By construction we have that the matrix
@@ -1068,13 +1066,13 @@ A square matrix $A$ is invertible if and only it has linearly independent column
 In that case the inverse can be found by reducing the matrix
 
 $$
-    \left(\, A \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,I\,\right)
+    \left(\, A \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\middle|\,\,\rule[-1.5ex]{0ex}{4ex}\,\,I\,\right)
 $$
 
 to the reduced echelon form
 
 $$
-   \left(\, I \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,B\,\right),
+   \left(\, I \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\middle|\,\,\rule[-1.5ex]{0ex}{4ex}\,\,B\,\right),
 $$
 
 and then
@@ -1092,8 +1090,8 @@ We have already seen ({prf:ref}`Prop:MatrixInv:InvertibleIndepCols`) that an inv
 which implies that the reduced echelon form of $A$ is indeed the identity matrix. It is then clear that via row operations we get
 
 $$
-  \left(\, A \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,I\,\right)\sim \quad .\,.\,.\,.\,. \quad \sim
-  \left(\, I \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\rule[-1.5ex]{0ex}{4ex}\,\,B\,\right),
+  \left(\, A \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\middle|\,\,\rule[-1.5ex]{0ex}{4ex}\,\,I\,\right)\sim \quad .\,.\,.\,.\,. \quad \sim
+  \left(\, I \rule[-1.5ex]{0ex}{4ex}\,\,\,\,\middle|\,\,\rule[-1.5ex]{0ex}{4ex}\,\,B\,\right),
 $$
 
 where the matrix $B$ satisfies $AB = I$.
@@ -1117,8 +1115,8 @@ we also have
 
 $$
 
-  E\left(\, A_1 \,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\,\,A_2\,\right)=
-   \left(\, EA_1 \,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\,\,\,EA_2\,\right).
+  E\left(\, A_1 \,\, \middle|\,\,\,A_2\,\right)=
+   \left(\, EA_1 \,\, \middle|\,\,\,\,EA_2\,\right).
 
 
 
@@ -1129,13 +1127,13 @@ A series of $k$ row operations can be mimicked by $k$ multiplications with eleme
 
 $$
  \begin{array}{ccl}
-   \left(\, A \,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\, I\,\right)&\sim&
-   \left(\, E_1A \,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\, E_1I\,\right)  \sim
-   \left(\,E_2 E_1A \,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\, \,E_2E_1I\,\right)\sim
+   \left(\, A \,\, \middle|\,\, I\,\right)&\sim&
+   \left(\, E_1A \,\, \middle|\,\, E_1I\,\right)  \sim
+   \left(\,E_2 E_1A \,\, \middle|\,\, \,E_2E_1I\,\right)\sim
    \ldots  \sim \\
    &\sim&
-   \left(\,E_k\cdots E_2 E_1A \,\,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\,\, E_k\cdots E_2E_1I\,\right)   =
-    \left(\, I \,\, \rule[-.5ex]{0.1ex}{2.5ex}\,\,B\,\right).
+   \left(\,E_k\cdots E_2 E_1A \,\,\, \middle|\,\,\, E_k\cdots E_2E_1I\,\right)   =
+    \left(\, I \,\, \middle|\,\,B\,\right).
  \end{array}
 $$
 
@@ -1162,8 +1160,7 @@ $$
    \text{if} \quad AB = I \quad \text{then} \quad BA = I.
 $$
 
-For non-square matrices this statement is not correct. The interested reader is invited to take a look at the last exercises in the Grasple subsection
-({numref}`Subsec:MatrixInverse:Grasple`).
+For non-square matrices this statement is not correct. The interested reader is invited to take a look at the last exercises in the {numref}`Subsection %s <Subsec:MatrixInverse:Grasple>` containing the Grasple exercises.
 %{prf:ref}`grasple_exercise_3_4_23` and {prf:ref}`grasple_exercise_3_4_24`.
 
 ::::::
@@ -1174,7 +1171,7 @@ For non-square matrices this statement is not correct. The interested reader is 
 If $A$ is not invertible, then the outcome of the row reduction of
 
 $$
-    \left(\, A \,\,\rule[-.5ex]{0.1ex}{2.5ex}\,\,\,I\,\right)
+    \left(\, A \,\,\middle|\,\,\,I\,\right)
 $$
 
 will also lead to the correct answer: as soon as it is clear that $A$ cannot be row reduced to $I$ we can conclude that $A$ is not invertible.
@@ -1354,33 +1351,33 @@ That is, each of the following properties is a characterisation of invertibility
 <ol>
 <li>
 
-$A$ is invertible;
+$A$ is invertible.
 
 </li>
 <li>
 
-there exists a matrix $B$ for which $AB = I$;
+there exists a matrix $B$ for which $AB = I$.
 
 </li>
 <li>
 
-for each $\mathbf{b}\in\mathbb{R}^n$ the linear system $A\mathbf{x} = \mathbf{b}$ has a unique solution;
+for each $\mathbf{b}\in\mathbb{R}^n$ the linear system $A\mathbf{x} = \mathbf{b}$ has a unique solution.
 
 </li>
 <li>
 
-$A$ is row equivalent to the identity matrix $I_n$;
+$A$ is row equivalent to the identity matrix $I_n$.
 
 </li>
 <li>
 
-$A$ has linearly independent columns;
+$A$ has linearly independent columns.
 
 </li>
 
 <li>
 
-the equation $A\vect{x} = \vect{0}$ has only the trivial solution $\vect{x} = \vect{0}$;
+the equation $A\vect{x} = \vect{0}$ has only the trivial solution $\vect{x} = \vect{0}$.
 
 </li>
 
@@ -1412,17 +1409,17 @@ Show that invertibility of an $n\times n$-matrix $A$ is also equivalent to
 <ul>
 <li>
 
-there exists a matrix $B$ such that $BA = I$;
+there exists a matrix $B$ such that $BA = I$.
 
 </li>
 <li>
 
-$A$ has linearly independent rows;
+$A$ has linearly independent rows.
 
 </li>
 <li>
 
-each column of the matrix $A$ is a pivot column;
+each column of the matrix $A$ is a pivot column.
 
 </li>
 <li>
@@ -1520,7 +1517,7 @@ The remaining exercises tend to be more theoretic.
 :url: https://embed.grasple.com/exercises/4b844244-2e9d-480f-b65a-88d8a2fef781?id=70276
 :label: grasple_exercise_3_4_9new
 :dropdown:
-:description: To solve an equation  $AX = B$ &nbsp;  ($A$ and $B$ are $3\times3$-matrices).
+:description: To solve an equation  $AX = B$ ($A$ and $B$ are $3\times3$-matrices).
 
 ::::::
 
@@ -1641,7 +1638,7 @@ The remaining exercises have a more theoretic flavour.
 :url: https://embed.grasple.com/exercises/2d363522-682f-4ef1-bd9f-7e0d1de30136?id=116691
 :label: grasple_exercise_3_4_23new
 :dropdown:
-:description: Extricate X from an equation containing A,B,X  and an inverse.
+:description: Extricate $X$ from an equation containing $A$, $B$, $X$  and an inverse.
 ::::::
 
 
@@ -1650,7 +1647,7 @@ The remaining exercises have a more theoretic flavour.
 :url: https://embed.grasple.com/exercises/864d2af1-e751-46b1-88de-f205d95e493c?id=116721
 :label: grasple_exercise_3_4_23
 :dropdown:
-:description: Extricate X from an equation containing A,B,X  and a transpose.
+:description: Extricate $X$ from an equation containing $A$, $B$, $X$  and a transpose.
 ::::::
 
 

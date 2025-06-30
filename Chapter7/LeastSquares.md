@@ -80,7 +80,7 @@ We will come back to this question in {numref}`Subsection %s <SubSec:LeastSquare
 ## Least squares solutions
 
 Let $A$ be an $m \times n$-matrix with columns $\vect{a}_1, \ldots, \vect{a}_n$.
-<BR>
+
 We have seen ({numref}`Section %s <Sec:MatVecProduct>`, {prf:ref}`Rem:MatVecProd:EquivalentEquations`) that the linear system
 
 $$
@@ -524,7 +524,7 @@ First if $A\vect{x}= \vect{0}$, then clearly $A^TA\vect{x} = A^T\vect{0} = \vect
 
 To prove the converse, suppose $A^TA\vect{x} = \vect{0}$.
 
-Then &nbsp; $\vect{x}^TA^TA\vect{x} = \vect{x}^T\vect{0} = \vect{0}$ &nbsp; too.
+Then $\vect{x}^TA^TA\vect{x} = \vect{x}^T\vect{0} = \vect{0}$ too.
 
 Now realise that $\vect{x}^TA^TA\vect{x} = (A\vect{x})^TA\vect{x} = \norm{A\vect{x}}^2$.
 
@@ -675,7 +675,7 @@ $$
   \left(  \begin{array}{c}  \vect{a}_1\ip\vect{b} \\ \vect{a}_2\ip\vect{b} \\ \vdots \\ \vect{a}_n\ip\vect{b}   \end{array} \right).
 $$
 
-Which leads to the good old expressions &nbsp; $c_i = \dfrac{\vect{a}_i\ip\vect{b}}{\vect{a}_i\ip\vect{a}_i} =  \dfrac{\vect{b}\ip\vect{a}_i}{\vect{a}_i\ip\vect{a}_i}$.
+Which leads to the good old expressions $c_i = \dfrac{\vect{a}_i\ip\vect{b}}{\vect{a}_i\ip\vect{a}_i} =  \dfrac{\vect{b}\ip\vect{a}_i}{\vect{a}_i\ip\vect{a}_i}$.
 
 As before ({prf:ref}`Thm:OrthoBase:OrthoDecomp`) the orthogonal projection becomes
 
@@ -700,8 +700,9 @@ Also explain this simpler formula by interpreting the $QR$ decomposition in a su
 ::::{admonition} Solution to&nbsp;{numref}`Exc:LeastSquares:QR`
 :class: solution, dropdown
 
-This involves some elementary matrix operations. <BR>
-Suppose $A = QR$, where $Q^TQ = I$, and $R$ is an upper triangular matrix with a positive diagonal. So $R$ is invertible. <BR>
+This involves some elementary matrix operations.
+
+Suppose $A = QR$, where $Q^TQ = I$, and $R$ is an upper triangular matrix with a positive diagonal. So $R$ is invertible.
 
 Substitution of $A=QR$ into Equation {eq}`Eq:LeastSquares:ProjbColA`
 
@@ -1069,7 +1070,7 @@ $$
 :url: https://embed.grasple.com/exercises/1760659c-9f9a-4108-9a2f-034128dc7f70?id=116973
 :label: grasple_exercise_7_4_15
 :dropdown:
-:description: Finding the LS solution for a $3\times2$-system, using a $QR$-decomposition.
+:description: Finding the LS solution for a $3\times2$-system, using a $QR$ decomposition.
 
 ::::
 
@@ -1079,7 +1080,7 @@ $$
 :url: https://embed.grasple.com/exercises/90846f0f-432b-4e1e-9b64-9a13032a1db9?id=116516
 :label: grasple_exercise_7_4_16
 :dropdown:
-:description: Finding the LS solution for a $4\times2$-system, using a $QR$-decomposition.
+:description: Finding the LS solution for a $4\times2$-system, using a $QR$ decomposition.
 
 ::::
 
@@ -1089,7 +1090,7 @@ $$
 :url: https://embed.grasple.com/exercises/41265f8f-234c-440d-b9d2-1eb462c36544?id=116662
 :label: grasple_exercise_7_4_17
 :dropdown:
-:description: Finding the LS solution for a $4\times3$-system, using a $QR$-decomposition.
+:description: Finding the LS solution for a $4\times3$-system, using a $QR$ decomposition.
 
 ::::
 
@@ -1333,8 +1334,10 @@ we see the expressions in Equation {eq}`Eq:Leastquares:GeneralLinefit` readily a
 
 Fitting a line to a set of points, may be looked upon as fitting a linear combination of the functions $f_0(x) = 1$ and $f_1(x) = x$.
 Depending on the context we may also consider fitting a
-linear combination of a larger set of 'basic' functions. <BR>
-For instance, when we use $f_0(x) = 1$, $f_1(x) = x$ and $f_2(x) = x^2$, we are in fact looking for a quadratic function $y = a_0 + a_1x + a_2x^2$ that best fits the set of points. <BR>
+linear combination of a larger set of 'basic' functions.
+
+For instance, when we use $f_0(x) = 1$, $f_1(x) = x$ and $f_2(x) = x^2$, we are in fact looking for a quadratic function $y = a_0 + a_1x + a_2x^2$ that best fits the set of points. 
+
 And we may even go beyond that. Then we get a more general so-called _linear model_.
 
 ::::{prf:definition} Linear Model
@@ -1423,7 +1426,7 @@ Several generalisations are possible. We mention two.
 
 and we want to find the linear combination
 
-<BR>
+
 
 $$
     \beta_1f_1(x_1, \ldots, x_{k}) + \ldots +

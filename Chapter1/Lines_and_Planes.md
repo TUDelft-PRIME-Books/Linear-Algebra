@@ -589,7 +589,9 @@ will be called a **parametric vector equation** of $\mathcal{L}$.
 :::{prf:example}
 :label: Ex:LinesAndPlanes:ParametricVectorEquationLineR3
 
-How can we find a parametric vector equation for the line $\mathcal{L}$ that contains the points $P=(1, 2, 4)$ and $Q=(5, 3, 1)$? <BR> The vector $\overrightarrow{PQ}$ is parallel to $\mathcal{L}$ and therefore a directional vector. The components of this vector are equal to
+How can we find a parametric vector equation for the line $\mathcal{L}$ that contains the points $P=(1, 2, 4)$ and $Q=(5, 3, 1)$?
+
+The vector $\overrightarrow{PQ}$ is parallel to $\mathcal{L}$ and therefore a directional vector. The components of this vector are equal to
 
 $$
 \overrightarrow{PQ}=\begin{pmatrix} 5-1 \\ 3-2 \\ 1-4 \end{pmatrix}=\begin{pmatrix} 4 \\ 1 \\ -3 \end{pmatrix}.
