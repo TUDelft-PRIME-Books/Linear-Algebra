@@ -166,7 +166,7 @@ Suppose $A = U\Sigma V^T$, with $U, \Sigma, V$ as in the definition.
 ::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SVD:BasicProp`
 :class: tudproof, dropdown
 
-Suppose $\sigma_1>0, \ldots, \sigma_r>0$ and $\sigma_{r+1}=0 , \ldots, \sigma_p=0$, where $p=$min$\{m,n\}$.
+Suppose $\sigma_1>0, \ldots, \sigma_r>0$ and $\sigma_{r+1}=0 , \ldots, \sigma_p=0$, where $p=\min\{m,n\}$.
 
 We have to show that 
 
@@ -183,7 +183,7 @@ Now, since both the last $m-r$ rows of $\Sigma$ and the last $n-r$ columns of $\
 
 :::
 
-where only the first $r$ columns of $U$ and $V$ are used, and where $\Sigma_{rr}$ is the top left $r \times r$ submatrix of $\Sigma$. Note that $\Sigma_{rr}$ is a diagonal matrix with no zeros on the diagonal.
+where only the first $r$ columns of $U$ and $V$ are used, and where $\Sigma_{rr}$ is the top left $r \times r$-submatrix of $\Sigma$. Note that $\Sigma_{rr}$ is a diagonal matrix with no zeros on the diagonal.
 
 Since $U_r$ and $U_r\Sigma_{rr}$  (where only the columns of $U_r$ are scaled) have independent columns,  the only situation where $A\mathbf{x}  =U_r\Sigma_{rr}V_r^T\mathbf{x} = \mathbf{0}$ is when
 $V_r^T\mathbf{x} = \mathbf{0}$. So
@@ -959,7 +959,7 @@ There will be two applications described in this section.
 
 We start with the first.
 
-Numerical data can be stored in a matrix. For instance, a black-and-white picture/photo can be stored 'pixel by pixel', by numbers that indicate the gray scale, which may for instance be any integer from $0$ (completely white) to $31$ (completely black). A 4:5 photo may then be stored as, say,  a $1080\times1350$-matrix.
+Numerical data can be stored in a matrix. For instance, a black-and-white picture/photo can be stored 'pixel by pixel', by numbers that indicate the grey scale, which may for instance be any integer from $0$ (completely white) to $31$ (completely black). A 4:5 photo may then be stored as, say,  a $1080\times1350$-matrix.
 
 As another example, think of a survey of $n$ questions that have to be answered using a 1-5 scale.  If the numbers of respondents is $N$, the data can be represented by an $N \times n$-matrix.
 
@@ -1158,7 +1158,7 @@ We expect $A_3$ to be a good approximation of $A$.
 :url: https://embed.grasple.com/exercises/27adae2a-db2a-46fa-800f-49e4c0dfe4fa?id=93487
 :label: grasple_exercise_8_3_3
 :dropdown:
-:description: If $A = U\Sigma V^T$   for an  mxn matrix $A$, what are the sizes of  $U$, $Σ$ and $V$?
+:description: If $A = U\Sigma V^T$   for an $m\times n$-matrix $A$, what are the sizes of  $U$, $Σ$ and $V$?
 ::::
 
 
