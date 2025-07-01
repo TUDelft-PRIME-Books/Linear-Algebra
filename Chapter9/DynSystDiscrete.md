@@ -142,7 +142,7 @@ If the initial state is $\vect{s} = \vect{0}$, all vectors $\vect{x}_k$ will be 
 For more general (read: non-linear) dynamical systems a more subtle definition is needed. For one thing, a non-linear dynamical system may have multiple equilibrium points, each with their own behaviour.
 
 In the literature there is quite a bit of terminology to describe the behaviour of dynamical systems at equilibrium points. Apart from linear dynamical systems in the plane, where we can nicely visualise what is going on
-(cf. {numref}`Subsec:GraphicalDiscDynSyst`), we will stick to the two qualifications attractor and repellor.
+(cf. {numref}`Sujbsection %s <Subsec:GraphicalDiscDynSyst>`), we will stick to the two qualifications attractor and repellor.
 
 ::::
 

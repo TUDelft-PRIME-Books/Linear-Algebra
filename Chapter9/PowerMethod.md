@@ -668,7 +668,7 @@ In the last example the complex eigenvalues $\lambda_{1,2}$ came up.  For those 
 
 ## Power method and complex eigenvalues
 
-In {numref}`Subsec:Powermethod:Basics` we assumed that the matrix $A$ is diagonalisable,
+In {numref}`Subsection %s <Subsec:Powermethod:Basics>` we assumed that the matrix $A$ is diagonalisable,
 and in that case we could use Equation {eq}`Eq:PowerMethod:GenSol` to prove that the power method in general converges, and that the speed of convergence depends on the quotient
 
 $$

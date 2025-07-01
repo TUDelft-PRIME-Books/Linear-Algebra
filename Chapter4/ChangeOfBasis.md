@@ -573,7 +573,7 @@ $$
                           \big(\,T(\vect{e}_1)  \,\,   \ldots \,\, T(\vect{e}_n)  \,\big).
 $$
 
-This is the "good old" standard matrix as in {numref}`Subsec:LinTrafo:LinTrafoeqMatrixTrafo`.
+This is the "good old" standard matrix as in {numref}`Subsection %s <Subsec:LinTrafo:LinTrafoeqMatrixTrafo>`.
 
 ::::{prf:example}
 :label: Ex:ChangeOfBasis:Reflection
@@ -968,7 +968,7 @@ This can be evaluated to yield
 ::::{exercise}
 :label: Exc:ChangeOfBasis:CheckIdempotent
 
-As was shown in {prf:ref}`Prop:GeomLinTrans:ProjSquaredisProj` of {numref}`Subsec:GeomLinTrans:Proj` the matrix $A$ of a projection has to satisfy the identity
+As was shown in {prf:ref}`Prop:GeomLinTrans:ProjSquaredisProj` of {numref}`Subsection %s <Subsec:GeomLinTrans:Proj>` the matrix $A$ of a projection has to satisfy the identity
 $A^2=A$. Show that the matrix $[T]_{\mc{E}}$ of {prf:ref}`Ex:ChangeOfBasis:MatrixOrthProjection` indeed satisfies this identity.
 
 (To verify this you don't have to compute the matrix as given by Equation {eq}`Eq:ChangeOfBasis:ProjMatrix2`.)

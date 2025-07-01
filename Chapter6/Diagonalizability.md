@@ -215,7 +215,7 @@ is universally true.
 
 
 One way to understand the similarity of similar matrices comes from considering the linear transformations they represent.
-In {numref}`Section %s <Subsec:ChangeOfBasis:RelationTETB>` it is shown that if $T:\R^n\to\R^n$ is the linear transformation that has $A$ as its standard matrix, and $P = P_{\mathcal{B}}$ is the change-of-coordinates matrix from the basis $\mathcal{B}$ to the standard matrix, then the matrix of $T$ with respect to basis $\mathcal{B}$ is given by
+In {numref}`Subsection %s <Subsec:ChangeOfBasis:RelationTETB>` it is shown that if $T:\R^n\to\R^n$ is the linear transformation that has $A$ as its standard matrix, and $P = P_{\mathcal{B}}$ is the change-of-coordinates matrix from the basis $\mathcal{B}$ to the standard matrix, then the matrix of $T$ with respect to basis $\mathcal{B}$ is given by
 
 $$
 [T]_{\mathcal{B}} = P^{-1}AP.

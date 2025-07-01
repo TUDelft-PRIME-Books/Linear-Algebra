@@ -6,7 +6,7 @@
 
 ## Introduction
 
-In {ref}`Chapter %s <Chapter:Systems>`, especially {numref}`Section %s <Section:LinSystems>`, we studied linear systems. One way to write them down was as a matrix-vector equation $A\vect{x} = \vect{b}$. We saw that a linear system could be either consistent or inconsistent. And if a system was inconsistent, that would then be the end of the story.
+In {numref}`Chapter %s <Chapter:Systems>`, especially {numref}`Section %s <Section:LinSystems>`, we studied linear systems. One way to write them down was as a matrix-vector equation $A\vect{x} = \vect{b}$. We saw that a linear system could be either consistent or inconsistent. And if a system was inconsistent, that would then be the end of the story.
 
 In this section we will reconsider the inconsistent situation and ask ourselves the question whether there is a vector $\vect{x}$ that is in a sense the 'best possible' alternative to a solution.
 
@@ -1110,7 +1110,7 @@ $$
 
 ## Linear models
 
-In {numref}`SubSec:LeastSquares:Introduction` we looked at ways to fit a line
+In {numref}`Subsection %s <SubSec:LeastSquares:Introduction>` we looked at ways to fit a line
 $y = a + bx$ to a set of points $(x_i, y_i), i = 1, \ldots, n$ in the plane. In statistics this plays an important role in so-called _regression models_.
 
 One way to define the best fitting line $y = \hat{a}+\hat{b}x$ is to let $(\hat{a},\hat{b})$ be the least squares solution to the set of $n$ linear equations

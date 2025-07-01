@@ -488,7 +488,7 @@ The procedure followed in  {prf:ref}`Ex:SymmetricMat:OrthogDiag3x3` leads way to
 ::::
 
 One more example to illustrate matters, before we get to the proof (or you jump over to
-{numref}`SubSec:SymmetricMat:SpectralDecomp`).
+{numref}`Subsection %s <SubSec:SymmetricMat:SpectralDecomp>`).
 
 ::::{prf:example}
 :label: Ex:SymmetricMat:OrthogDiag3x3bis

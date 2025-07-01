@@ -103,7 +103,7 @@ In this theorem, it is vital that $\vect{v}$ is known to be in $V$. If $\vect{v}
 
 ## Orthogonal projections revisited
 
-In {numref}`Subsec:GeomLinTrans:Proj`, we have already briefly touched upon orthogonal projections in higher dimension. Now that we know about orthogonal bases, we can make this more concrete. Let us start with a general definition of the orthogonal projection.
+In {numref}`Subsection %s <Subsec:GeomLinTrans:Proj>`, we have already briefly touched upon orthogonal projections in higher dimension. Now that we know about orthogonal bases, we can make this more concrete. Let us start with a general definition of the orthogonal projection.
 
 :::{prf:definition}
 :label: Dfn:OrthoBase:OrthoProjection
