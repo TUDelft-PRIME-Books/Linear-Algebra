@@ -77,7 +77,7 @@ $$
 
 which is illustrated in {numref}`Figure %s <Fig:InjSurj:InjEx>`.
 
-This is an injective transformation. Indeed, if we take an arbitrary vector $\mathbf{v}=\begin{pmatrix}a_{1}\\a_{2}\end{pmatrix}$ in $\mathbb{R}^{2}$ and we try to solve $A\mathbf{x}=\mathbf{u}$, we find
+This is an injective transformation. Indeed, if we take an arbitrary vector $\mathbf{v}=\begin{pmatrix}a_{1}\\a_{2}\end{pmatrix}$ in $\mathbb{R}^{2}$ and we try to solve $A\mathbf{x}=\mathbf{v}$, we find
 
 $$
 \left(\begin{array}{cc|c}
@@ -89,7 +89,7 @@ $$
 \end{array}\right).
 $$
 
-There are no free variables, so if there is a solution to the system $A\vect{x}=\vect{v}$ (which, in this case, is true for all $\vect{v}$) it will be unique. This means that there is only one $\mathbf{x}$ with $T(\mathbf{x})=A\mathbf{x}=\mathbf{u}$, hence $T$ is injective.
+There are no free variables, so if there is a solution to the system $A\vect{x}=\vect{v}$ (which, in this case, is true for all $\vect{v}$) it will be unique. This means that there is only one $\mathbf{x}$ with $T(\mathbf{x})=A\mathbf{x}=\mathbf{v}$, hence $T$ is injective.
 
 ```{applet}
 :url: injectivity_and_surjectivity/injsurj-injex-example3
@@ -461,7 +461,7 @@ Prove {prf:ref}`Prop:InjSurj:SurjChars`.
 
 Assume $T$ is surjective and take an arbitrary $\vect{b}$ in $\R^{n}$. Then there is an $\vect{x}$ in $\mathbb{R}^{m}$ such that $T(\vect{x})=\vect{b}$, i.e. $\vect{x}$ is a solution of $A\vect{x}=\vect{b}$. Similarly, if $A\vect{x}=\vect{b}$ has a solution for any $\vect{b}$ in $\R^{n}$, then $\vect{b}=T(\vect{x})$ which establishes surjectivity of $T$.
 
-If $A$ has a row without pivot, then, for a well-chosen $\vect{b}$, a pivot can appear in the last column of the augmented matrix $(A|\vect{b})$. This means that $A\vect{x}=\vect{b}$ has no solutions. Similarly, if $A\vect{x}=\vect{b}$ always has a solution, then $(A|\vect{b})$ can never have a pivot in the lost column. Consequently, $A$ must have a pivot in every row.
+If $A$ has a row without pivot, then, for a well-chosen $\vect{b}$, a pivot can appear in the last column of the augmented matrix $(A|\vect{b})$. This means that $A\vect{x}=\vect{b}$ has no solutions. Similarly, if $A\vect{x}=\vect{b}$ always has a solution, then $(A|\vect{b})$ can never have a pivot in the last column. Consequently, $A$ must have a pivot in every row.
 
 :::
 
@@ -570,7 +570,7 @@ $A$ is invertible.
 
 There exists a transformation $S:\R^{n}\to\R^{n}$ such that
 
-$$ST(\vect{v})=\vect{v}=TS(\vect{v})$$
+$$S\circ T(\vect{v})=\vect{v}=T\circ S(\vect{v})$$
 
 for any vector $\vect{v}$ in $\R^{n}$.
 
@@ -581,13 +581,13 @@ for any vector $\vect{v}$ in $\R^{n}$.
 :::{admonition} Proof of&nbsp;{prf:ref}`Prop:InjSurj:BijIsInv`
 :class: tudproof
 
-By {prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations`, we know that $A$ is invertible if and only if the system $\vect{x}=\vect{b}$ has a unique solution for each $\vect{b}$ in $\R^{n}$. The existence of a solution is equivalent to surjectivity of $T$ and its uniqueness is equivalent to injectivity of $T$. This establishes the equivalence of [i.](#It:InjSurj:TBij) and [ii.](#It:InjSurj:AInv)
+By {prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations`, we know that $A$ is invertible if and only if the system $A\vect{x}=\vect{b}$ has a unique solution for each $\vect{b}$ in $\R^{n}$. The existence of a solution is equivalent to surjectivity of $T$ and its uniqueness is equivalent to injectivity of $T$. This establishes the equivalence of [i.](#It:InjSurj:TBij) and [ii.](#It:InjSurj:AInv)
 
 We will now show that [ii.](#It:InjSurj:AInv) and [iii.](#It:InjSurj:TInv) are equivalent, too. The invertibility of $A$ is equivalent to the existence of an $n\times n$-matrix $B$ such that $AB=I$. Define
 
 $$S:\R^{n}\to\R^{n},\vect{v}\mapsto B\vect{v}.$$
 
-Then $TS(\vect{v})=AB\vect{v}=\vect{v}$ for any $\vect{v}$ in $\R^{n}$. The only thing left to show is $ST(\vect{v})=\vect{v}$ or, in other words, $BA(\vect{v})=\vect{v}$ for any $\vect{v}$ in $\R^{n}$. For this, we argue as follows. Since $AB=I$, $ABA=A$ follows. But then $A(BA-I)=0$, hence $A((BA-I)\vect{v})=\vect{0}$ for all $\vect{v}$ in $\R^{n}.$ Since $A$ is invertible, $A\vect{x}=\vect{0}$ only has the trivial solution $\vect{x}=\vect{0}$. Therefore $(BA-I)\vect{v}=\vect{0}$ for all $\vect{v}$ which implies $BA\vect{v}=\vect{v}$ for all $\vect{v}$ in $\R^{n}$.
+Then $T\circ S(\vect{v})=AB\vect{v}=\vect{v}$ for any $\vect{v}$ in $\R^{n}$. The only thing left to show is $S\circ T(\vect{v})=\vect{v}$ or, in other words, $BA(\vect{v})=\vect{v}$ for any $\vect{v}$ in $\R^{n}$. For this, we argue as follows. Since $AB=I$, $ABA=A$ follows. But then $A(BA-I)=0$, hence $A((BA-I)\vect{v})=\vect{0}$ for all $\vect{v}$ in $\R^{n}.$ Since $A$ is invertible, $A\vect{x}=\vect{0}$ only has the trivial solution $\vect{x}=\vect{0}$. Therefore $(BA-I)\vect{v}=\vect{0}$ for all $\vect{v}$ which implies $BA\vect{v}=\vect{v}$ for all $\vect{v}$ in $\R^{n}$.
 
 :::
 

@@ -511,7 +511,7 @@ $$
 \end{pmatrix}
 $$
 
-can be can be represented as  
+can be represented as  
 
 
 $$
@@ -529,7 +529,7 @@ A_2 = F_2^{-1}A_3 = L_2U =
 
 $$
 
-Combining the two equations gives
+where we have redefined $A_{3}=U$ since it is an upper diagonal matrix. Combining the two equations gives
 
 $$
   A = L_2L_1U = LU = 
@@ -600,7 +600,7 @@ $$
 [R_1] \\
 [R_2] \\
 {[R_3]} \\
-{[R_4-\class{green}{1/3}R_2]} \\
+{[R_4-\class{green}{1/3}R_3]} \\
 \end{array} 
 \,\,\sim\,\,
     \left(\begin{array}{rrrr}
@@ -1187,7 +1187,7 @@ $L =  \begin{pmatrix} 1 &   \\
 </li>       
  </ul>       
 
-an $m\times m$ upper triangular matrix  with $1$s on its diagonal,        
+an $m\times m$ lower triangular matrix  with $1$s on its diagonal,        
 
 and  
         
@@ -1655,11 +1655,11 @@ To convert the components $a_{21}$ and $a_{31}$ to a zero value, we need to comp
 The result:
 
 $$
-  \begin{pmatrix}a_{11} & a_{12} &a_{12} &b_{1} \\ a_{21} & a_{22} &a_{23} &b_{2} \\ a_{31} & a_{32} &a_{33} &b_{3} 
+  \begin{pmatrix}a_{11} & a_{12} &a_{13} &b_{1} \\ a_{21} & a_{22} &a_{23} &b_{2} \\ a_{31} & a_{32} &a_{33} &b_{3} 
   \end{pmatrix} \sim
-  \begin{pmatrix}a_{11} & a_{12} &a_{12} &b_{1} \\ 
+  \begin{pmatrix}a_{11} & a_{12} &a_{13} &b_{1} \\ 
   0 & a_{22}-m_{21}a_{12} &a_{23}-m_{21}a_{13} &b_{2}-m_{21}b_{1} \\ 
-  0 & a_{32}-m_{31}a_{12} &a_{33}-m_{31}a_{13} &b_{3}-m_{31}a_{1} 
+  0 & a_{32}-m_{31}a_{12} &a_{33}-m_{31}a_{13} &b_{3}-m_{31}b_{1} 
   \end{pmatrix}  .
 $$
 
@@ -1832,7 +1832,7 @@ The total number of arithmetic operations needed in order to solve a linear syst
 -->
 
 
-You may wonder how this compares to solving a linear system $A\vect{x} = \vect{b}$ by first finding the inverse and then computing $A^{-1}\vect{b}$  (assuming $A$ is ivertible!).
+You may wonder how this compares to solving a linear system $A\vect{x} = \vect{b}$ by first finding the inverse and then computing $A^{-1}\vect{b}$  (assuming $A$ is invertible!).
 The following proposition provides the answer.
 
 
@@ -1849,7 +1849,7 @@ Suppose $A$ is an invertible $n\times n$-matrix and $\vect{b}$ an arbitrary vect
 \item The reduction of  the augmented matrix  $(A | I)$  to  $(I | B) = (I | A^{-1})$ requires 
 $2n^3 - 2n$ operations.
 
-\item When $A^{-1}$ is giving, the product  $A^{-1}\vect{b}$  asks for $2n^2 - n$ arithmetic operations.
+\item When $A^{-1}$ is given, the product  $A^{-1}\vect{b}$  asks for $2n^2 - n$ arithmetic operations.
 
 :::::
 
