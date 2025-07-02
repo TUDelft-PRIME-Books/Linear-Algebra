@@ -137,7 +137,7 @@ $$
 $$
 %%::
 
-With the spectral decomposition (see {prf:ref}`Thm:SymmetricMat:SpectralDecomp`) we found that any symmetric matrix $A$ can be written as a linear combination of rank one matrices $P_i$. Moreover, these matrices $P_i$ can be interpreted as projections onto orthogonal one-dimensional subspaces of $\R^n$. Here the least we can say is that we have written the matrix  $A$ of rank $2$ as a linear combination of two rank $1$-matrices.
+With the spectral decomposition (see {prf:ref}`Thm:SymmetricMat:SpectralDecomp`) we found that any symmetric matrix $A$ can be written as a linear combination of rank one matrices $P_i$. Moreover, these matrices $P_i$ can be interpreted as projections onto orthogonal one-dimensional subspaces of $\R^n$. Here the least we can say is that we have written the matrix  $A$ of rank $2$ as a linear combination of two rank-$1$ matrices.
 :::
 
 ::::
@@ -994,7 +994,7 @@ which can be rewritten as
 
 ::::
 
-Here $A$ is written as a sum of rank $1$-matrices, and because of the decreasing singular values, these rank $1$-matrices get less and less 'important'.  If the $\sigma_i$ become  very small (relatively) for, say, $k < i \leq r$,  we might expect that the sum
+Here $A$ is written as a sum of rank-$1$ matrices, and because of the decreasing singular values, these rank-$1$ matrices get less and less 'important'.  If the $\sigma_i$ become  very small (relatively) for, say, $k < i \leq r$,  we might expect that the sum
 
 $$
 \sigma_1 \vect{u}_1\vect{v}_1^T + \ldots + \sigma_k \vect{u}_k\vect{v}_k^T 
