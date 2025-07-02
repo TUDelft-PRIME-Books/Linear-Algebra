@@ -256,7 +256,7 @@ $(A^T)^T = A$.
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixOps:Transpose`
+::::::{admonition} Proof of {prf:ref}`Prop:MatrixOps:Transpose`
 :class: tudproof
 
 We will prove the second statement and leave the other two to the diligent reader. See
@@ -353,7 +353,7 @@ Prove statements (i) and (iii) of {prf:ref}`Prop:MatrixOps:Transpose`.
 
 ::::::
 
-::::::{admonition} Solution to&nbsp;{numref}`Exc:MatrixOps:CheckTransposeRules`
+::::::{admonition} Solution to {numref}`Exc:MatrixOps:CheckTransposeRules`
 :class: solution, dropdown
 
 Suppose $A = \left(\begin{array}{cccc}
@@ -542,7 +542,7 @@ This is sometimes called the **row-column expansion** of the product.
 
 ::::::
 
-:::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixOps:RowColExpansion`
+:::{admonition} Proof of {prf:ref}`Prop:MatrixOps:RowColExpansion`
 :class: tudproof
 
 We already saw this row-column expansion in {numref}`Sec:MatVecProduct`.
@@ -763,7 +763,7 @@ The $i$-th row of the product $AB$ is the linear combination of the rows of the 
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixOps:ProductRowCombinations`
+::::::{admonition} Proof of {prf:ref}`Prop:MatrixOps:ProductRowCombinations`
 :class: tudproof
 
 The indicated linear combination yields:
@@ -989,7 +989,7 @@ We need a good perspective to give a proof of the general case.
 
 ::::::
 
-:::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixOps:ProdProperties`
+:::{admonition} Proof of {prf:ref}`Prop:MatrixOps:ProdProperties`
 :class: tudproof
 
 Rules i. and ii. are checked in a straightforward way. See {numref}`Exc:MatrixOps:RulesProduct`.
@@ -1531,7 +1531,7 @@ $$
 As {prf:ref}`Ex:TransposeProduct` illustrates the rule is not restricted to square matrices $A$ and $B$.
 The proof for general matrices $A$ and $B$ for which the product $AB$ is well defined is as follows
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixOperations:TransposeProduct`
+::::::{admonition} Proof of {prf:ref}`Prop:MatrixOperations:TransposeProduct`
 :class: tudproof
 
 To show that

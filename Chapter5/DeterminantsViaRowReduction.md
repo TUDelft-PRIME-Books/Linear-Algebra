@@ -244,7 +244,7 @@ If a matrix $A$ has two equal rows (or columns), then $\det{A} = 0$.
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Cor:DetRowReduction:EqualRows`
+::::::{admonition} Proof of {prf:ref}`Cor:DetRowReduction:EqualRows`
 :class: tudproof
 
 Suppose the $i$-th and the $j$-th row of $A$ are equal, and let $\det{A} = d$. Let $B$ be the matrix $A$ with the $i$-th and $j$-th row interchanged.
@@ -287,7 +287,7 @@ $$
 
 The proof is -- we think -- quite instructive.  (However, feel free to skip it.)
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:DetRowReduction:Invertibility`
+::::::{admonition} Proof of {prf:ref}`Thm:DetRowReduction:Invertibility`
 :class: tudproof, dropdown
 
 In the previous section we have already seen that the statement is true for triangular matrices.
@@ -343,7 +343,7 @@ $$
 
 The idea of the proof is to break it down to products of the form  $\det{(EA)} = \det{E}\cdot\det{A}$, where $E$ is an elementary matrix  (Equation {eq}`Eq:DetRowReduction:ElementaryMatrices`).  For more details you open the proof below.
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:DetRowReduction:ProductRule`
+::::::{admonition} Proof of {prf:ref}`Thm:DetRowReduction:ProductRule`
 :class: tudproof, dropdown
 
 We already know that the identity holds if $A$ is an elementary matrix.
@@ -389,7 +389,7 @@ If the matrix $A$ is invertible, then $\operatorname{det}\big(A^{-1}\big)= \dfra
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Cor:DetRowReduction:DetOfInverse`
+::::::{admonition} Proof of {prf:ref}`Cor:DetRowReduction:DetOfInverse`
 :class: tudproof
 
 We can combine the three properties
@@ -484,7 +484,7 @@ $$
 
 ::::::
 
-::::::{admonition} Solution to&nbsp;{numref}`Exc:DetRowReduction:PropNonProp`
+::::::{admonition} Solution to {numref}`Exc:DetRowReduction:PropNonProp`
 :class: solution, dropdown
 
 We treat the statements one by
@@ -603,7 +603,7 @@ Then
 
 Click on the symbol to the right below for the proof of {prf:ref}`Prop:DetRowReduction:RowOps` and {prf:ref}`Prop:DetRowReduction:SumofCols`.
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DetRowReduction:RowOps`&nbsp;and&nbsp;{prf:ref}`Prop:DetRowReduction:SumofCols`
+::::::{admonition} Proof of {prf:ref}`Prop:DetRowReduction:RowOps` and {prf:ref}`Prop:DetRowReduction:SumofCols`
 :class: tudproof, dropdown
 
 For typographical reasons we will prove the three rules stated as column operations.
@@ -1079,7 +1079,7 @@ Give an alternative proof of {prf:ref}`Cor:DetRowReduction:EqualRows` using Rule
 
 ::::::
 
-::::::{admonition} Solution to&nbsp;{numref}`Exc:DetRowReduction:EqualRows`
+::::::{admonition} Solution to {numref}`Exc:DetRowReduction:EqualRows`
 :class: solution, dropdown
 
 Suppose $A$ is a matrix with two equal rows, say row $i$ and row $j$ are equal.

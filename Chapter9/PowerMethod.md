@@ -459,7 +459,7 @@ Since $0$ is not an eigenvalue, we may conclude that $A$ is invertible.
 Then the power method applied to $A^{-1}$ converges (apart from the usual exceptional cases) to an eigenvector $\vect{v}_n$ for the smallest eigenvalue $\lambda_n$.
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:PowerMethod:SmallestEigenvalue` ({prf:ref}`Inverse Power Method <Prop:PowerMethod:SmallestEigenvalue>`)
+::::{admonition} Proof of {prf:ref}`Prop:PowerMethod:SmallestEigenvalue` ({prf:ref}`Inverse Power Method <Prop:PowerMethod:SmallestEigenvalue>`)
 :class: tudproof, dropdown
 
 

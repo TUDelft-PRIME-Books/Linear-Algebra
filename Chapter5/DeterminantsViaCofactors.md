@@ -390,7 +390,7 @@ For a triangular matrix the determinant is equal to the product of the entries o
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DetCofactors:TriangularMatrices`
+::::::{admonition} Proof of {prf:ref}`Prop:DetCofactors:TriangularMatrices`
 :class: tudproof
 
 We can use the same strategy as in {prf:ref}`Ex:DetCofactors:Triangular`.
@@ -410,7 +410,7 @@ A triangular matrix is invertible if and only if it has a non-zero determinant.
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DetCofactors:InvertibleTriangular`
+::::::{admonition} Proof of {prf:ref}`Prop:DetCofactors:InvertibleTriangular`
 :class: tudproof
 
 Let us first consider the case of an $n \times n$ upper triangular matrix $U$, with entries $u_{ij}$. Such a matrix is an echelon matrix. It is invertible if and only if it has $n$ linearly independent columns, which is the case if all diagonal elements $u_{ii}$ are non-zero. And this last is equivalent to

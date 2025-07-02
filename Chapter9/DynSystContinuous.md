@@ -96,7 +96,7 @@ If $\vect{y}$ and $\vect{z}$ are solutions of $\vect{x}'=A\vect{x}$ and $c$ and 
 
 :::
 
-:::{admonition} Proof of&nbsp;{prf:ref}`Prop:DynSystContinuous:LinComb`
+:::{admonition} Proof of {prf:ref}`Prop:DynSystContinuous:LinComb`
 :class: tudproof
 
 Exercise.
@@ -274,7 +274,7 @@ where $c_{1},...,c_{n}$ are constants.
 
 :::
 
-<!-- :::{admonition} Proof of&nbsp;{prf:ref}`Prop:DynSystContinuous:SolsofDynSyst`
+<!-- :::{admonition} Proof of {prf:ref}`Prop:DynSystContinuous:SolsofDynSyst`
 :class: tudproof
 
 
@@ -600,7 +600,7 @@ If $\lambda$ is a root of the quadratic equation $ax^{2}+bx+c=0$, then the diffe
 
 :::
 
-:::{admonition} Proof of&nbsp;{prf:ref}`Prop:DynSystContinuous:2ndODE`
+:::{admonition} Proof of {prf:ref}`Prop:DynSystContinuous:2ndODE`
 :class: tudproof
 
 By putting $y=x'$, we can rewrite the differential equation $ax''+bx'+cx=0$ as

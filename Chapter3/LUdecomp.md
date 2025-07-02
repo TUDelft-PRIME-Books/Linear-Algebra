@@ -697,7 +697,7 @@ The same properties hold when each instance  of 'lower' in the above  is be repl
 There are several ways to prove  {prf:ref}`Prop:LUdecomp:L-properties`.
 The best would be to think of a proof yourself, but you can also have a peek at the exposition below.
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LUdecomp:L-properties`
+::::::{admonition} Proof of {prf:ref}`Prop:LUdecomp:L-properties`
 :class: tudproof, dropdown
 
 :::{latexlist}
@@ -768,7 +768,7 @@ that  {prf:ref}`Alg:LUdecomp:LUalgorithm`  works can have a look at the followin
 {prf:ref}`Prop:LUdecomp:Existence`.  
 
 
-:::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LUdecomp:Existence`
+:::::{admonition} Proof of {prf:ref}`Prop:LUdecomp:Existence`
 :class: tudproof, dropdown
 
 Suppose $A$ is an $n\times n$-matrix that can be row reduced top down to an  echelon matrix $U$ (which will then be an upper triangular). We can row reduce $A$ from top to bottom, where we use the same form as in {prf:ref}`Ex:LUdecomp:SecondLUSecondLook`. 
@@ -1407,7 +1407,7 @@ Note that from the second identity it follows that  $P_2^{-1} = P_2^T$.
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LUdecomp:PermutationMatrices`
+::::::{admonition} Proof of {prf:ref}`Prop:LUdecomp:PermutationMatrices`
 :class: tudproof, dropdown
 
 :::{latexlist}
@@ -1865,7 +1865,7 @@ Note that  computing $A^{-1}\vect{b}$  and solving  $LU\vect{x} = \vect{b}$ invo
 
 The proof of {prf:ref}`Prop:LUdecomp:CountOperationsInverse`  is quite straightforward  (especially the second statement), and you are cordially invited to have a look.
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LUdecomp:CountOperationsInverse`
+::::::{admonition} Proof of {prf:ref}`Prop:LUdecomp:CountOperationsInverse`
 :class: tudproof, dropdown
 
 We count the number of arithmetic operations for computing the inverse via $(A | I)$.

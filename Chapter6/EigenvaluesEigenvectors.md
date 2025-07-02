@@ -421,7 +421,7 @@ Then $S$ is a subspace of $\R^n$.
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:EigenValues:Subspace`
+::::::{admonition} Proof of {prf:ref}`Prop:EigenValues:Subspace`
 :class: tudproof
 
 We can proceed in two ways.
@@ -552,7 +552,7 @@ Then $\{ \vect{v}_1,  \ldots,  \vect{v}_k  \}$ is a linearly independent set.
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Eigenvalues:IndepEigenvectors`
+::::::{admonition} Proof of {prf:ref}`Prop:Eigenvalues:IndepEigenvectors`
 :class: tudproof
 
 
@@ -730,7 +730,7 @@ Equivalently: a matrix $A$ is singular (non-invertible) if and only if $0$ is an
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:EigenValues:SingularMatrix`
+::::::{admonition} Proof of {prf:ref}`Prop:EigenValues:SingularMatrix`
 :class: tudproof
 
 We prove the second statement.
@@ -902,7 +902,7 @@ Moreover,  if  $\vect{v}$ is an eigenvector of $A$ for eigenvalue $\lambda$, the
 
 ::::::
 
-::::::{admonition} Solution to&nbsp;{numref}`Exc:EigenValues:EigenvaluesInverse`
+::::::{admonition} Solution to {numref}`Exc:EigenValues:EigenvaluesInverse`
 :class: solution, dropdown
 
 Suppose the non-zero vector $\vect{v}$ is an eigenvector for the eigenvalue $\lambda$ of the invertible matrix $A$.  From {prf:ref}`Prop:EigenValues:SingularMatrix` we know that $\lambda \neq 0$. From

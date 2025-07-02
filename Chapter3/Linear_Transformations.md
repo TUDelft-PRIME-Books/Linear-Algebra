@@ -438,7 +438,7 @@ Thus, if $ T:\mathbb{R}^n \to\mathbb{R}^m$ is a linear transformation, then $T(\
 
 ::::::
 
-::::::{admonition} Solution to&nbsp;{numref}`Exc:LinTrafo:ImageofZeroVector`
+::::::{admonition} Solution to {numref}`Exc:LinTrafo:ImageofZeroVector`
 :class: solution, dropdown
 
 If $ T:\mathbb{R}^n \to\mathbb{R}^m$ is linear, and $\vect{v}$ is any vector in $\R^n$, then $\mathbf{0}_n = 0\vect{v}$. From the second property in {prf:ref}`Dfn:LinTrafo:LinTrafo` it follows that
@@ -636,7 +636,7 @@ a linear transformation?
 
 ::::::
 
-::::::{admonition} Solution to&nbsp;{numref}`Exc:LinTrafo:T(x)=x+p`
+::::::{admonition} Solution to {numref}`Exc:LinTrafo:T(x)=x+p`
 :class: solution, dropdown
 
 The transformation defined by $T(\vect{x}) = \vect{x} + \vect{p}$, with $\vect{p}\neq \vect{0}$ does not have any of the two properties of a linear transformation.
@@ -677,7 +677,7 @@ Each matrix transformation is a linear transformation.
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LinTrafo:MatrixTrafoIsLinear`
+::::::{admonition} Proof of {prf:ref}`Prop:LinTrafo:MatrixTrafoIsLinear`
 :class: tudproof
 
 This is a direct consequence of the two properties of the matrix-vector product ({prf:ref}`Prop:MatVecProduct:Linearity`) that say
@@ -709,7 +709,7 @@ is a linear transformation from $\mathbb{R}^n$ to $\mathbb{R}^p$.
 The transformation $S\circ T$ is called the **composition** of the two transformations $S$ and $T$. It is best read as _"$S$ after $T$"_.
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LinTrafo:CompositionLintrafos`
+::::::{admonition} Proof of {prf:ref}`Prop:LinTrafo:CompositionLintrafos`
 :class: tudproof
 
 Suppose that
@@ -761,7 +761,7 @@ Show that $S$ and $T_3$ are again linear transformations.
 
 ::::::
 
-::::::{admonition} Solution to&nbsp;{numref}`Exc:LinTrafo:CombiningLinTrafos`
+::::::{admonition} Solution to {numref}`Exc:LinTrafo:CombiningLinTrafos`
 :class: solution, dropdown
 
 The properties of the linear transformatiuon $T_1$ and $T_2$ carry over to $S$ and $T_3$ in the following way.
@@ -817,7 +817,7 @@ Suppose  $T$  is a linear transformation from $\R^2$ to $\R^2$.  Show that the i
 
 
 
-::::::{admonition} Solution to&nbsp;{numref}`Exc:LinTrafo:LineSegments`
+::::::{admonition} Solution to {numref}`Exc:LinTrafo:LineSegments`
 :class: solution, dropdown
 
 
@@ -863,7 +863,7 @@ c_1T(\mathbf{x}_1)+c_2T(\mathbf{x}_2)+\ldots +c_kT( \mathbf{x}_k).
 In words: for any linear transformation
 _the image of a linear combination of vectors is equal to the linear combination of their images_.
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LinTrafo:ExtendedLinearity`
+::::::{admonition} Proof of {prf:ref}`Prop:LinTrafo:ExtendedLinearity`
 :class: tudproof
 
 Suppose $T:\mathbb{R}^n\rightarrow\mathbb{R}^m$ is a linear transformation.
@@ -1067,7 +1067,7 @@ $$
 
 ::::::
 
-::::{admonition} Solution to&nbsp;{numref}`Exc:LinTrafo:MatrixForFirstExample`
+::::{admonition} Solution to {numref}`Exc:LinTrafo:MatrixForFirstExample`
 :class: solution, dropdown
 
 Consider the linear transformation
@@ -1115,7 +1115,7 @@ T(\mathbf{e}_1) & T(\mathbf{e}_2) & \ldots & T(\mathbf{e}_n)
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:LinTrafo:LinTrafo=MatrixTrafo`
+::::::{admonition} Proof of {prf:ref}`Thm:LinTrafo:LinTrafo=MatrixTrafo`
 :class: tudproof
 
 We can more or less copy the derivation in {prf:ref}`Ex:LinTrafo:StandardMatrixIntro`.

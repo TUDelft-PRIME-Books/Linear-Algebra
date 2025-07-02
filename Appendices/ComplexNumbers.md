@@ -65,7 +65,7 @@ Let $a$ be a _positive_ real number. Then the two numbers $x_-=-ai$ and $x_+=ai$
 
 ::::
 
-:::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:roots`
+:::{admonition} Proof of {prf:ref}`Thm:ComplexNumbers:roots`
 :class: tudproof, dropdown
 
 First we consider $x_-=-ai$ and take its square:
@@ -198,9 +198,9 @@ zw &= (ac-bd)+(ad+bc)i, \\
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:ops`
+::::{admonition} Proof of {prf:ref}`Thm:ComplexNumbers:ops`
 :class: dropdown, tudproof 
-<!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:ops` -->
+<!-- ::::{dropdown} Proof of {prf:ref}`Thm:ComplexNumbers:ops` -->
 
 We prove the four results by working each out separately. We start with the _addition_:
 
@@ -276,9 +276,9 @@ If $z$ and $w$ are a complex numbers, then the following identities hold:
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:conjops`
+::::{admonition} Proof of {prf:ref}`Thm:ComplexNumbers:conjops`
 :class: dropdown, tudproof 
-<!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:conjops` -->
+<!-- ::::{dropdown} Proof of {prf:ref}`Thm:ComplexNumbers:conjops` -->
 
 We show each of the identities, one after the other, where we assume $z=a+bi$ and $w=c+di$, $a,b,c,d\in\mathbb{R}$:
 
@@ -350,9 +350,9 @@ z\overline{z} &= \Re{z}^2+\Im{z}^2.
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:conjparts`
+::::{admonition} Proof of {prf:ref}`Thm:ComplexNumbers:conjparts`
 :class: dropdown, tudproof 
-<!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:conjparts` -->
+<!-- ::::{dropdown} Proof of {prf:ref}`Thm:ComplexNumbers:conjparts` -->
 
 We show each of the identities, one after the other, where we assume $z=a+bi$, $a,b\in\mathbb{R}$:
 
@@ -394,9 +394,9 @@ Assume $z\in\mathbb{C}$. $z\in\mathbb{R}$ if and only if $z=\overline{z}$.
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:realz`
+::::{admonition} Proof of {prf:ref}`Thm:ComplexNumbers:realz`
 :class: dropdown, tudproof
-<!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:realz` -->
+<!-- ::::{dropdown} Proof of {prf:ref}`Thm:ComplexNumbers:realz` -->
 
 Assume $z\in\mathbb{C}$.
 
@@ -503,9 +503,9 @@ $$
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:uniquezeros`
+::::{admonition} Proof of {prf:ref}`Thm:ComplexNumbers:uniquezeros`
 :class: dropdown, tudproof
-<!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:uniquezeros` -->
+<!-- ::::{dropdown} Proof of {prf:ref}`Thm:ComplexNumbers:uniquezeros` -->
 
 Assume $\{z_1,z_2,\ldots,z_k\}$ is the set of _unique_ zeros of a polynomial $p$ of degree $n$. Then following {prf:ref}`Thm:ComplexNumbers:fundamental`, we can write
 
@@ -564,9 +564,9 @@ If $p(z)=0$, then $p(\overline{z})=0$ as well, and the algebraic multiplicities 
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:realpoly`
+::::{admonition} Proof of {prf:ref}`Thm:ComplexNumbers:realpoly`
 :class: dropdown, tudproof
-<!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:realpoly` -->
+<!-- ::::{dropdown} Proof of {prf:ref}`Thm:ComplexNumbers:realpoly` -->
 
 Consider a polynomial $p$ of degree $n$, $\sum_{j=0}^n a_j z^j$, where the coefficients $a_n, a_{n-1}, \ldots, a_0$ are real-valued numbers and $a_n\neq 0$.
 
@@ -871,9 +871,9 @@ $\arg\left(\frac{z}{w}\right) = \arg(z) - \arg(w)$.
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:polarmultdiv`
+::::{admonition} Proof of {prf:ref}`Thm:ComplexNumbers:polarmultdiv`
 :class: dropdown, tudproof
-<!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:polarmultdiv` -->
+<!-- ::::{dropdown} Proof of {prf:ref}`Thm:ComplexNumbers:polarmultdiv` -->
 
 _Proof for conjugation_
 
@@ -956,9 +956,9 @@ $$
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:re`
+::::{admonition} Proof of {prf:ref}`Thm:ComplexNumbers:re`
 :class: dropdown, tudproof
-<!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:re` -->
+<!-- ::::{dropdown} Proof of {prf:ref}`Thm:ComplexNumbers:re` -->
 
 The proof is relatively straight forward:
 
@@ -981,9 +981,9 @@ $$
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:re_diff`
+::::{admonition} Proof of {prf:ref}`Thm:ComplexNumbers:re_diff`
 :class: dropdown, tudproof
-<!-- ::::{dropdown} Proof of&nbsp;{prf:ref}`Thm:ComplexNumbers:re_diff` -->
+<!-- ::::{dropdown} Proof of {prf:ref}`Thm:ComplexNumbers:re_diff` -->
 
 The proof is again straight forward:
 
@@ -1647,7 +1647,7 @@ $z^3=4\cos(\frac{\pi}{6})+4i\sin(\frac{\pi}{6})$
 
 ## Solutions
 
-::::{admonition} Solution to&nbsp;{numref}`Exc:ComplexNumbers:eval_aplusbi`
+::::{admonition} Solution to {numref}`Exc:ComplexNumbers:eval_aplusbi`
 :class: solution, dropdown
 
 <ol type="a">
@@ -1716,7 +1716,7 @@ $3 + 4i$
 
 ::::
 
-::::{admonition} Solution to&nbsp;{numref}`Exc:ComplexNumbers:complete`
+::::{admonition} Solution to {numref}`Exc:ComplexNumbers:complete`
 :class: solution, dropdown
 
 <ol type="a">
@@ -1743,7 +1743,7 @@ $2, -6$
 
 :::::
 
-:::::{admonition} Solution to&nbsp;{numref}`Exc:ComplexNumbers:division`
+:::::{admonition} Solution to {numref}`Exc:ComplexNumbers:division`
 :class: solution, dropdown
 
 <ol type="a">
@@ -1770,7 +1770,7 @@ $h(z)$ is not a polynomial.
 
 :::::
 
-:::::{admonition} Solution to&nbsp;{numref}`Exc:ComplexNumbers:roots`
+:::::{admonition} Solution to {numref}`Exc:ComplexNumbers:roots`
 :class: solution, dropdown
 
 <ol type="a">
@@ -1797,7 +1797,7 @@ The roots of $p(z)$ are $3+i, 3-i, 1, -2$, all with multiplicity $1$.
 
 :::::
 
-:::::{admonition} Solution to&nbsp;{numref}`Exc:ComplexNumbers:argmod`
+:::::{admonition} Solution to {numref}`Exc:ComplexNumbers:argmod`
 :class: solution, dropdown
 
 <ol type="a">
@@ -1818,7 +1818,7 @@ $|z|=2\sqrt{3}$ and $\arg{z}=\frac{\pi}{6}$ or $\arg(z)=\frac{\pi}{6}+2k\pi$ for
 
 :::::
 
-:::::{admonition} Solution to&nbsp;{numref}`Exc:ComplexNumbers:polarform`
+:::::{admonition} Solution to {numref}`Exc:ComplexNumbers:polarform`
 :class: solution, dropdown
 
 <ol type="a">
@@ -1839,7 +1839,7 @@ $6 \cos(\frac{-\pi}{6})+ i 6 \sin(\frac{-\pi}{6})$
 
 :::::
 
-:::::{admonition} Solution to&nbsp;{numref}`Exc:ComplexNumbers:polar_abi`
+:::::{admonition} Solution to {numref}`Exc:ComplexNumbers:polar_abi`
 :class: solution, dropdown
 
 <ol type="a">
@@ -1878,7 +1878,7 @@ $1-\sqrt{3} i$
 
 :::::
 
-:::::{admonition} Solution to&nbsp;{numref}`Exc:ComplexNumbers:polarform_calc`
+:::::{admonition} Solution to {numref}`Exc:ComplexNumbers:polarform_calc`
 :class: solution, dropdown
 
 <ol type="a">
@@ -1899,7 +1899,7 @@ $z=4e^{-\frac16\pi i}$ and $w=2\sqrt{2}e^{-\frac14\pi i}$, thus $zw=8 \sqrt{2} \
 
 :::::
 
-::::{admonition} Solution to&nbsp;{numref}`Exc:ComplexNumbers:solve_aplusbi`
+::::{admonition} Solution to {numref}`Exc:ComplexNumbers:solve_aplusbi`
 :class: solution, dropdown
 
 <ol type="a">
@@ -1920,7 +1920,7 @@ $i, -\frac{1}{2}\sqrt{3}-i\frac{1}{2}, \frac{1}{2}\sqrt{3}-i\frac{1}{2}$
 
 ::::
 
-:::::{admonition} Solution to&nbsp;{numref}`Exc:ComplexNumbers:DeMoivre`
+:::::{admonition} Solution to {numref}`Exc:ComplexNumbers:DeMoivre`
 :class: solution, dropdown
 
 $\cos(4\theta)=\cos^4(\theta)+\sin^4(\theta)-6\cos^2(\theta)\sin^2(\theta)$
@@ -1931,7 +1931,7 @@ $\sin(4\theta)=4\cos^3(\theta)\sin(\theta)-4\cos(\theta)\sin^3(\theta)$.
 
 :::::
 
-:::::{admonition} Solution to&nbsp;{numref}`Exc:ComplexNumbers:solve_euler`
+:::::{admonition} Solution to {numref}`Exc:ComplexNumbers:solve_euler`
 :class: solution, dropdown
 
 <ol type="a">

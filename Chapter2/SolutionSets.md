@@ -238,7 +238,7 @@ Suppose $(c_{1},...,c_{n})$ is a solution of a linear system. Then $(c_{1}',...,
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SolSet:SolplusHom`
+::::{admonition} Proof of {prf:ref}`Prop:SolSet:SolplusHom`
 :class: tudproof
 
 Consider the linear system
@@ -305,7 +305,7 @@ Suppose $c_{1}$ and $c_{2}$ are arbitrary scalars. If $\vect{v}_{1}$ and $\vect{
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SolSet:SolSetisVecSpa`
+::::{admonition} Proof of {prf:ref}`Prop:SolSet:SolSetisVecSpa`
 :class: tudproof
 
 This is a left as an exercise.

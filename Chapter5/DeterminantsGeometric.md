@@ -52,7 +52,7 @@ is given by $|ad-bc|$, i.e., the absolute value of $ad-bc$.
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DetGeometric:Area`
+::::::{admonition} Proof of {prf:ref}`Prop:DetGeometric:Area`
 :class: tudproof
 
 The quickest way to prove this is to translate it to the cross product ({numref}`Sec:CrossProduct`). To make use of the cross product we introduce the vectors
@@ -96,7 +96,7 @@ We will call this the **directed angle** from $\vect{u}$ to $\vect{v}$.
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DetGeometric:DirectedAngle`
+::::::{admonition} Proof of {prf:ref}`Prop:DetGeometric:DirectedAngle`
 :class: tudproof
 
 Again we can resort to properties of the cross product, but in fact it is not necessary to go up one dimension.
@@ -258,7 +258,7 @@ Verify the four properties of {prf:ref}`Prop:DetGeometric:Properties2by2Det`
 The properties have a clear geometric interpretation using the notion of signed area.
 The following alternative proof uses this geometric viewpoint.
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DetGeometric:Properties2by2Det`
+::::::{admonition} Proof of {prf:ref}`Prop:DetGeometric:Properties2by2Det`
 :class: tudproof
 
 Three of the four properties are quickly settled.
@@ -378,7 +378,7 @@ $$
 
 ::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DetGeometric:VolumeParped`
+::::::{admonition} Proof of {prf:ref}`Prop:DetGeometric:VolumeParped`
 :class: tudproof
 
 Just as the area of a parallelogram can be computed as 'base length times height', the volume of a parallelepiped can be computed as 'base area times height'. See {numref}`Figure %s <Fig:DetGeometric:Paraped>`.
@@ -427,7 +427,7 @@ $$
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DetGeometric:CyclicPerm`
+::::::{admonition} Proof of {prf:ref}`Prop:DetGeometric:CyclicPerm`
 :class: tudproof
 
 The parallelepiped spanned by the three vectors does not change under any permutation, and the orientation remains the same under a cyclic permutation.
@@ -488,7 +488,7 @@ $$
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:DetGeometric:ColExpand`
+::::::{admonition} Proof of {prf:ref}`Prop:DetGeometric:ColExpand`
 :class: tudproof
 
 The identities are verified by evaluating the triple product:

@@ -36,7 +36,7 @@ Prove {prf:ref}`Prop:OrthoComp:OrthotoSpanningSet`.
 
 ::::
 
-:::{admonition} Solution to&nbsp;{numref}`Exc:OrthoComp:OrthotoSpanningSet`
+:::{admonition} Solution to {numref}`Exc:OrthoComp:OrthotoSpanningSet`
 :class: solution, dropdown
 
 Assume the vector $\vect{u}$ is orthogonal to every $\vect{v}_{i}$. If $\vect{v}_{1},...,\vect{v}_{n}$ spans $V$, then any $\vect{v}$ in $V$ can be written as $c_{1}\vect{v}_{1}+\cdots c_{n}\vect{v}_{n}$ for certain $c_{1},...,c_{n}$ in $\R$. But then $\vect{u}\cdot\vect{v}=c_{1}\vect{u}\cdot\vect{v}_{1}+\cdots+c_{n}\vect{u}\cdot\vect{v}_{n}=0$, so $\vect{u}$ is orthogonl to $\vect{v}$.
@@ -130,7 +130,7 @@ For any subspace $V$ of $\R^{n}$, the orthogonal complement $V^{\bot}$ is a subs
 
 :::
 
-:::{admonition} Proof of&nbsp;{prf:ref}`Prop:OrthoComp:OrthoComplisSpace`
+:::{admonition} Proof of {prf:ref}`Prop:OrthoComp:OrthoComplisSpace`
 :class: tudproof
 
 Since the zero vector is orthogonal to any vector, it is in $V^{\bot}$. Suppose now that $\vect{u}_{1}$ and $\vect{u}_{2}$ are in $V^{\bot}$. Then, for arbitrary $\vect{v}$ in $V$, $(\vect{u}_{1}+\vect{u}_{2})\ip \vect{v}=\vect{u}_{1}\ip\vect{v}+\vect{u}_{2}\ip\vect{v}=0$, so $\vect{u}_{1}+\vect{u}_{2}$ is in $V^{\bot}$.
@@ -150,7 +150,7 @@ For any matrix $A$ we have $\operatorname{Col}(A^{T})^{\bot}=\operatorname{Nul}(
 
 :::
 
-:::{admonition} Proof of&nbsp;{prf:ref}`Prop:OrthoComp:OrthoComplementNulA`
+:::{admonition} Proof of {prf:ref}`Prop:OrthoComp:OrthoComplementNulA`
 :class: tudproof
 
 Note that the second claim is easily derived from the first by substituting $A^{T}$ for $A$. Let $\vect{r}_{1},...,\vect{r}_{n}$ be the rows of $A$. Then $\vect{r}_{1}^{T},...,\vect{r}_{n}^{T}$ are the columns of $A^{T}$. For any vector $\vect{x}$ in $\R^{m}$, we have
@@ -238,7 +238,7 @@ If $V$ is a subspace of $\R^{n}$, then $\dim(V)+\dim(V^{\bot})=n$.
 
 :::
 
-:::{admonition} Proof of&nbsp;{prf:ref}`Prop:OrthoComp:OrthoComplementSum`
+:::{admonition} Proof of {prf:ref}`Prop:OrthoComp:OrthoComplementSum`
 :class: tudproof
 
 Let $A$ be a matrix for which the columns are a basis of $V$. Then $n$ is the number of rows of $A$ which in turn is the number of columns of $A^{T}$. By {prf:ref}`Thm:BasisDim:DimensionTheorem`, $\dim(\operatorname{Col}(A^{T}))+\dim(\operatorname{Nul}(A^{T}))$ is the number of columns of $A^{T}$, which is the number of rows of $A$. Using {prf:ref}`Prop:OrthoComp:OrthoComplementNulA`, this yields
@@ -266,7 +266,7 @@ Let $V$ be a subspace of $\R^{n}$. For an arbitrary vector $\vect{u}$ in $\R^{n}
 
 :::
 
-:::{admonition} Proof of&nbsp;{prf:ref}`Prop:OrthoComp:OrthoDecomp`
+:::{admonition} Proof of {prf:ref}`Prop:OrthoComp:OrthoDecomp`
 :class: tudproof
 
 Let $\vect{v}_{1},...,\vect{v}_{k}$ be a basis for $V$ and let $\vect{v}_{k+1},...,\vect{v}_{n}$ be a basis for $V^{\bot}$. We claim that the vectors $\vect{v}_{1},...,\vect{v}_{k},\vect{v}_{k+1},...,\vect{v}_{n}$ are linearly independent. Indeed, if there were a linear combination
@@ -353,7 +353,7 @@ Let $V$ be a subspace of $\R^{n}$. Then $(V^{\bot})^{\bot}=V$.
 
 :::
 
-:::{admonition} Proof of&nbsp;{prf:ref}`Prop:OrthoComp:CompofCompofVisV`
+:::{admonition} Proof of {prf:ref}`Prop:OrthoComp:CompofCompofVisV`
 :class: tudproof
 
 We will first show that any element of $V$ is in $(V^{\bot})^{\bot}$. Take $\vect{v}\in V$. We need to show that $\vect{v}$ is orthogonal to any $\vect{u}$ in $V^{\bot}$. But any $\vect{u}$ in $V^{\bot}$ is by definition orthogonal to every vector in $V$, so in particular also to $\vect{v}$.

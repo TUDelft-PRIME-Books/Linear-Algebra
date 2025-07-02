@@ -157,7 +157,7 @@ If $S:\mathbb{R}^{l}\to\mathbb{R}^{m}$ and $T:\mathbb{R}^{m}\to\mathbb{R}^{n}$ a
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:InjSurj:InjafterInjisInj`
+::::::{admonition} Proof of {prf:ref}`Prop:InjSurj:InjafterInjisInj`
 :class: tudproof
 
 Take $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ in $\mathbb{R}^{l}$ such that $(T\circ S)(\mathbf{v}_{1})=(T\circ S)(\mathbf{v}_{2})$, i.e. $T(S(\mathbf{v}_{1}))=T(S(\mathbf{v}_{2}))$. Since $T$ is injective, we must have $S(\mathbf{v}_{1})=S(\mathbf{v}_{2})$. As $S$ is also injective, this in turn implies $\mathbf{v}_{1}=\mathbf{v}_{2}$ which establishes injectivity of $T\circ S$.
@@ -193,7 +193,7 @@ If $S:\mathbb{R}^{l}\to\mathbb{R}^{m}$ and $T:\mathbb{R}^{m}\to\mathbb{R}^{n}$ a
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:InjSurj:CompInjFirstInj`
+::::::{admonition} Proof of {prf:ref}`Prop:InjSurj:CompInjFirstInj`
 :class: tudproof
 
 Suppose $T\circ S$ is injective but $S$ is not. Then there are $\mathbf{v}_{1}\neq\mathbf{v}_{2}$ in $\mathbb{R}^{l}$ such that $S(\mathbf{v}_{1})=S(\mathbf{v}_{2})$. But then $T(S(\mathbf{v}_{1}))=T(S(\mathbf{v}_{2}))$ which contradicts the assumption that $T\circ S$ is injective.
@@ -234,7 +234,7 @@ Prove {prf:ref}`Prop:InjSurj:InjChars`.
 
 ::::
 
-:::{admonition} Solution to&nbsp;{numref}`Exc:InjSurj:InjChars`
+:::{admonition} Solution to {numref}`Exc:InjSurj:InjChars`
 :class: solution, dropdown
 
 Assume $T$ is injective and $A\vect{x}=\vect{b}$ has solutions $\vect{x}_{1}$ and $\vect{x}_{2}$. Then $T(\vect{x}_{1})=T(\vect{x}_{2})$, so $\vect{x}_{1}=\vect{x}_{2}$ by injectivity of $T$. Similarly, if we assume that $A\vect{x}=\vect{b}$ has at most one solution, then $T(\vect{x}_{1})=T(\vect{x}_{2})$ would imply $\vect{x}_{1}=\vect{x}_{2}$, hence $T$ is injective.
@@ -249,7 +249,7 @@ If $T:\mathbb{R}^{m}\to\mathbb{R}^{n}$ is injective, then $m\leq n$.
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Col:InjSurj:mgreatern`
+::::::{admonition} Proof of {prf:ref}`Col:InjSurj:mgreatern`
 :class: tudproof
 
 If $T$ is injective, then its standard matrix $A$ has a pivot in every column. Consequently, the number of columns of $A$, which is $m$, must be smaller than or equal to the number of rows of $A$, which is $n$.
@@ -263,7 +263,7 @@ A linear transformation $T:\mathbb{R}^{m}\to\mathbb{R}^{n}$ is injective if and 
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Col:InjSurj:viszero`
+::::::{admonition} Proof of {prf:ref}`Col:InjSurj:viszero`
 :class: tudproof
 
 Since $T(\mathbf{0})=\mathbf{0}$ for any linear transformation $T$, injectivity of $T$ implies that $T(\mathbf{v})=\mathbf{0}$ only occurs when $\mathbf{v}=\mathbf{0}$.
@@ -380,7 +380,7 @@ If $S:\mathbb{R}^{l}\to\mathbb{R}^{m}$ and $T:\mathbb{R}^{m}\to\mathbb{R}^{n}$ a
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:InjSurj:SurjafterSurjisSurj`
+::::::{admonition} Proof of {prf:ref}`Prop:InjSurj:SurjafterSurjisSurj`
 :class: tudproof
 
 Take $\mathbf{u}$ in $\mathbb{R}^{n}$. As $T$ is surjective, there is a $\mathbf{v}\in\mathbb{R}^{m}$ with $T(\mathbf{v})=\mathbf{u}$. Since $S$ is surjective, there is a $\mathbf{w}$ in $\mathbb{R}^{l}$ with $S(\mathbf{w})=\mathbf{v}$. We find $(T\circ S)(\mathbf{w})=T(\mathbf{v})=\mathbf{u}$, so $T\circ S$ is surjective, as claimed.
@@ -417,7 +417,7 @@ If $S:\mathbb{R}^{l}\to\mathbb{R}^{m}$ and $T:\mathbb{R}^{m}\to\mathbb{R}^{n}$ a
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:InjSurj:CompSurjSecondSurj`
+::::::{admonition} Proof of {prf:ref}`Prop:InjSurj:CompSurjSecondSurj`
 :class: tudproof
 
 Take $\mathbf{u}\in\mathbb{R}^{n}$. Since $T\circ S$ is surjective, there is a $\mathbf{w}$ in $\mathbb{R}^{l}$ with $\mathbf{u}=(T\circ S)(\mathbf{w})=T(S(\mathbf{w}))$. Hence $\mathbf{u}=T(\mathbf{v})$ for $\mathbf{v}=S(\mathbf{w})$, which shows $T$ to be surjective.
@@ -456,7 +456,7 @@ Prove {prf:ref}`Prop:InjSurj:SurjChars`.
 
 ::::
 
-:::{admonition} Solution to&nbsp;{numref}`Exc:InjSurj:SurjChars`
+:::{admonition} Solution to {numref}`Exc:InjSurj:SurjChars`
 :class: solution, dropdown
 
 Assume $T$ is surjective and take an arbitrary $\vect{b}$ in $\R^{n}$. Then there is an $\vect{x}$ in $\mathbb{R}^{m}$ such that $T(\vect{x})=\vect{b}$, i.e. $\vect{x}$ is a solution of $A\vect{x}=\vect{b}$. Similarly, if $A\vect{x}=\vect{b}$ has a solution for any $\vect{b}$ in $\R^{n}$, then $\vect{b}=T(\vect{x})$ which establishes surjectivity of $T$.
@@ -472,7 +472,7 @@ If $T:\mathbb{R}^{m}\to\mathbb{R}^{n}$ is surjective, then $m\geq n$.
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Col:InjSurj:mn2`
+::::::{admonition} Proof of {prf:ref}`Col:InjSurj:mn2`
 :class: tudproof
 
 If $T$ is surjective, then its standard matrix $A$ has a pivot in every row. Consequently, the number of columns of $A$, which is $m$, must be greater than or equal to the number of rows of $A$, which is $n$.
@@ -499,7 +499,7 @@ If a linear transformation $T:\mathbb{R}^{m}\to\mathbb{R}^{n}$ is bijective, the
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:InjSurj:mequaln`
+::::::{admonition} Proof of {prf:ref}`Prop:InjSurj:mequaln`
 :class: tudproof
 
 Let $A$ be the standard matrix of $T$, which is an $n\times m$-matrix. By {prf:ref}`Prop:InjSurj:InjChars`, the number of pivots in $A$ is $m$. By {prf:ref}`Prop:InjSurj:SurjChars`, the number of pivots in $A$ is $n$. Hence the claim follows.
@@ -537,7 +537,7 @@ $T$ is bijective.
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:InjSurj:Equiv`
+::::::{admonition} Proof of {prf:ref}`Prop:InjSurj:Equiv`
 :class: tudproof
 
 It suffices to show that $T$ is injective if and only if it is surjective. Assume $T$ is injective. Then the standard matrix $A$ of $T$ has a pivot in each column. But as the number of columns and the number of rows are the same, there must be a pivot in each row, showing surjectivity of $T$.
@@ -578,7 +578,7 @@ for any vector $\vect{v}$ in $\R^{n}$.
 
 :::
 
-:::{admonition} Proof of&nbsp;{prf:ref}`Prop:InjSurj:BijIsInv`
+:::{admonition} Proof of {prf:ref}`Prop:InjSurj:BijIsInv`
 :class: tudproof
 
 By {prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations`, we know that $A$ is invertible if and only if the system $A\vect{x}=\vect{b}$ has a unique solution for each $\vect{b}$ in $\R^{n}$. The existence of a solution is equivalent to surjectivity of $T$ and its uniqueness is equivalent to injectivity of $T$. This establishes the equivalence of [i.](#It:InjSurj:TBij) and [ii.](#It:InjSurj:AInv)

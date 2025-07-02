@@ -74,7 +74,7 @@ for _unique_ constants $c_1,c_2,\ldots,c_m$ in $\R$.
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:ChangeOfBasis:UniqueCoords`
+::::{admonition} Proof of {prf:ref}`Prop:ChangeOfBasis:UniqueCoords`
 :class: tudproof
 
 From the definition of a basis it follows that
@@ -323,7 +323,7 @@ $$
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:ChangeOfBasis:ToStandardBasis`
+::::{admonition} Proof of {prf:ref}`Prop:ChangeOfBasis:ToStandardBasis`
 :class: tudproof
 
 Suppose
@@ -352,7 +352,7 @@ $$
 Show that every change-of-coordinates matrix $P_{\mc{B}}$ is invertible.
 ::::
 
-::::{admonition} Solution to&nbsp;{numref}`Exc:ChangeOfBasis:InvertiblePB`
+::::{admonition} Solution to {numref}`Exc:ChangeOfBasis:InvertiblePB`
 :class: solution, dropdown
 
 Let $\mc{B} = \{\vect{b}_1,\vect{b}_2, \ldots, \vect{b}_n\}$ be any basis of $\R^n$.
@@ -379,6 +379,10 @@ $$
    [\vect{v}]_{\mc B} = P^{-1}_{\mc{B}} \vect{v}.
 $$
 
+::::
+
+::::{caution}
+Only use the formula in {prf:ref}`Prop:ChangeOfBasis:PropCoB` if you know that the basis $\mc{B}$ is a basis for $\R^n$.
 ::::
 
 ::::{prf:example}
@@ -416,16 +420,16 @@ We conclude this subsection with an example from physics.
 ::::{prf:example}
 :label: Ex:ChangeOfBasis:Lorentz
 
-Suppose $(x,y,z,t)$ and $(x',y',z',t')$ are the coordinates of an event in two frames with the origins coinciding at $t = t'= 0$ where the primed frame is seen from the unprimed frame as moving with speed $v$ along the $x$-axis.
+Suppose $(x,y,z,t)$ and $(\chi,\psi,\zeta,\tau)$ are the coordinates of an event in two frames with the origins coinciding at $t = \tau = 0$ where the greek-lettered frame is seen from the roman-lettered frame as moving with speed $v$ along the $x$-axis.
 
-The connection between two systems can be rewritten by a four-dimensional 'space-time' coordinate transformation
+The connection between two frames can be rewritten by a four-dimensional 'space-time' coordinate transformation
 
 $$
   \begin{cases}
-     x'= \gamma (x - vt) \\
-     y'= y \\
-     z'= z \\
-     t'= \gamma \left( t - \dfrac{c}{v^2} x \right)
+     \chi = \gamma (x - vt) \\
+     \psi = y \\
+     \zeta= z \\
+     \tau = \gamma \left( t - \dfrac{c}{v^2} x \right)
   \end{cases}
 $$
 
@@ -443,7 +447,7 @@ In {numref}`Sec:LinTrafo` we have seen that every linear transformation $T:\R^n 
 ::::{math}
 :label: Eq:ChangeOfBasis:StandardMatrix
 
-A = \begin{pmatrix} T(\vect{e}_1) & T(\vect{e}_2) & \ldots & T(\vect{e}_n) \end{pmatrix}.
+A = \begin{pmatrix} T(\vect{e}_1) & T(\vect{e}_2) & \cdots & T(\vect{e}_n) \end{pmatrix}.
 
 ::::
 
@@ -464,12 +468,12 @@ Suppose that $T:\R^n \to \R^m$ is a linear transformation, that $\mc{B} =\{\vect
 Then for each vector $\vect{v}$ in $\R^n$:
 
 $$
-  [T(\vect{v})]_{\mc{C}} = \left([T(\vect{b}_1)]_{\mc{C}} \,\rule[-.5ex]{0ex}{3ex}\,[T(\vect{b}_2)]_{\mc{C}}\,\,\ldots\,\,[T(\vect{b}_n)]_{\mc{C}}\right) [\vect{v}]_{\mc{B}}
+  [T(\vect{v})]_{\mc{C}} = \left([T(\vect{b}_1)]_{\mc{C}} \,\rule[-.5ex]{0ex}{3ex}\,[T(\vect{b}_2)]_{\mc{C}}\,\,\cdots\,\,[T(\vect{b}_n)]_{\mc{C}}\right) [\vect{v}]_{\mc{B}}.
 $$
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:ChangeOfBasis:MatrixOfTrafo`
+::::{admonition} Proof of {prf:ref}`Prop:ChangeOfBasis:MatrixOfTrafo`
 :class: tudproof
 
 We use the definition of the coordinate vector and the linearity of the transformation. In fact we can play copycat with the proof of
@@ -891,7 +895,7 @@ $$
 
 ::::
 
-::::{admonition} Solution to&nbsp;{numref}`Exc:ChangeOfBasis:PinvAPversusPBinvP`
+::::{admonition} Solution to {numref}`Exc:ChangeOfBasis:PinvAPversusPBinvP`
 :class: solution, dropdown
 
 Starting from $B = P^{-1}A\,P$   multiply both sides from the left by $P$ and from the right by $P^{-1}$,
@@ -975,7 +979,7 @@ $A^2=A$. Show that the matrix $[T]_{\mc{E}}$ of {prf:ref}`Ex:ChangeOfBasis:Matri
 
 ::::
 
-::::{admonition} Solution to&nbsp;{numref}`Exc:ChangeOfBasis:CheckIdempotent`
+::::{admonition} Solution to {numref}`Exc:ChangeOfBasis:CheckIdempotent`
 :class: solution, dropdown
 
 Obviously the matrix $B = [T]_{\mc{B}} =  \begin{pmatrix}1 & 0 & 0\\0& 1& 0\\0&0&0  \end{pmatrix}$ has the property $B^2 = B$.
@@ -1030,7 +1034,7 @@ $$
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:ChangeOfBasis:CoBmatrix`
+::::{admonition} Proof of {prf:ref}`Prop:ChangeOfBasis:CoBmatrix`
 :class: tudproof
 
 Again we will make use of the identity
@@ -1085,7 +1089,7 @@ P_{\mc{B}\leftarrow\mc{D}} \quad \text{and} \quad P_{\mc{C}\leftarrow\mc{D}}$?
 
 ::::
 
-::::{admonition} Solution to&nbsp;{numref}`Exc:ChangeOfBasis:RelationMatricesCoB`
+::::{admonition} Solution to {numref}`Exc:ChangeOfBasis:RelationMatricesCoB`
 :class: solution, dropdown
 
 The defining relation of  a change-of-coordinates matrix like   $P_{\mc{B}\leftarrow\mc{D}}$ is that for every vector $\vect{x}$ in $\R^n$ we have
@@ -1146,7 +1150,7 @@ $$
   \end{array}
 $$
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Thm:ChangeOfBasis:MatrixChangeGeneralBasis`
+::::{admonition} Proof of {prf:ref}`Thm:ChangeOfBasis:MatrixChangeGeneralBasis`
 :class: tudproof
 
 <!-- prettier-ignore -->
@@ -1156,7 +1160,7 @@ To find $[T(\vect{x})]_{\mc{C}'}$ when $ [\vect{x}]_{\mc{B}'}$ is given one can 
 <li>
 
 <!-- prettier-ignore -->
-Multiply by $A'= [T]_{\mc{C}'\leftarrow \mc{B}'} $
+Multiply by $A'= [T]_{\mc{C}'\leftarrow \mc{B}'} $.
 
 </li>
 </ul>
@@ -1169,7 +1173,7 @@ or else
 Find the coordinates of $\vect{x}$ with respect to basis $\mc{B}$:
 
 $$
-    [\vect{x}]_{\mc{B}} = P_{\mc{B}\leftarrow\mc{B'}}  [\vect{x}]_{\mc{B}'}
+    [\vect{x}]_{\mc{B}} = P_{\mc{B}\leftarrow\mc{B'}}  [\vect{x}]_{\mc{B}'}.
 $$
 
 </li>
@@ -1178,7 +1182,7 @@ $$
 Multiply by  $A$ to find  $ [T(\vect{x})]_{\mc{C}}$
 
 $$
-[T(\vect{x})]_{\mc{C}} = A[\vect{x}]_{\mc{B}} = AP_{\mc{B}\leftarrow\mc{B'}}  [\vect{x}]_{\mc{B}'}
+[T(\vect{x})]_{\mc{C}} = A[\vect{x}]_{\mc{B}} = AP_{\mc{B}\leftarrow\mc{B'}}  [\vect{x}]_{\mc{B}'}.
 $$
 
 </li>
@@ -1188,7 +1192,7 @@ Convert to coordinates with respect to basis $\mc{C}'$:
 
 $$
     [T(\vect{x})]_{\mc{C}'} = P_{\mc{C}'\leftarrow\mc{C}}  [T(\vect{x})]_{\mc{C}}
-    = \left( P_{\mc{C}\leftarrow\mc{C}'}\right)^{-1}AP_{\mc{B}\leftarrow\mc{B'}}  [\vect{x}]_{\mc{B}'}
+    = \left( P_{\mc{C}\leftarrow\mc{C}'}\right)^{-1}AP_{\mc{B}\leftarrow\mc{B'}}  [\vect{x}]_{\mc{B}'}.
 $$
 
 </li>
@@ -1301,7 +1305,7 @@ must be equal.
 :url: https://embed.grasple.com/exercises/784bba91-a0be-4076-9918-63b8ab2fbc49?id=90881
 :label: grasple_exercise_4_3_10
 :dropdown:
-:description: To find out how coordinates change when a basis is reordered.
+:description: To find out how coordinates change when a basis is reordered.
 ::::
 
 ::::{grasple}

@@ -16,7 +16,7 @@ Suppose $A$ is an $n\times n$-matrix. Then $\lambda$ is an eigenvalue of $A$ if 
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Eigenvalues:DetAminusLambdaI`
+::::::{admonition} Proof of {prf:ref}`Prop:Eigenvalues:DetAminusLambdaI`
 :class: tudproof
 
 There's not much new here.
@@ -135,7 +135,7 @@ For an $n\times n$-matrix $A$ the function $\det(A - \lambda I)$ is a polynomial
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:EigenValues:CharPoly`
+::::::{admonition} Proof of {prf:ref}`Prop:EigenValues:CharPoly`
 :class: tudproof
 
 We have to dive into the hardware of determinants a bit. If the determinant of an $n\times n$-matrix $M$ is computed by iteratively expanding along the first rows, i.e., doing it the hard way, we end up with a sum of $n!$ terms. Each term is the product of $n$ entries of $M$, where each row and each column of $A$ is represented exactly once.
@@ -440,7 +440,7 @@ For larger determinants, just open the proof.
 
 
 
-::::::{admonition} (Sketch of the) Proof of&nbsp;{prf:ref}`Prop:EigenValues:CharPolyTrace`
+::::::{admonition} (Sketch of the) Proof of {prf:ref}`Prop:EigenValues:CharPolyTrace`
 :class: tudproof, dropdown
 
 
@@ -527,7 +527,7 @@ Let   $A$ an $n\times n$-matrix with $n$ eigenvalues  $\lambda_1,\lambda_2,  \ld
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Eigenvalues:SumEigenvaluesAndTrace`
+::::::{admonition} Proof of {prf:ref}`Prop:Eigenvalues:SumEigenvaluesAndTrace`
 :class: tudproof, dropdown
 
 This is more a statement about algebra, in particular about polynomials, than about linear algebra.  In  {numref}`Section %s <Section:ComplexEV>`  we will see that it also holds for matrices with complex eigenvalues. 

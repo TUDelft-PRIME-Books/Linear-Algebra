@@ -155,7 +155,7 @@ Suppose $A$ is a symmetric matrix.
 If $\mathbf{v}_1$ and $\mathbf{v}_2$ are eigenvectors of $A$ for _different_ eigenvalues, then $\mathbf{v}_1\perp \mathbf{v}_2$.
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SymmetricMat:OrthogonalEigenvectors`
+::::{admonition} Proof of {prf:ref}`Prop:SymmetricMat:OrthogonalEigenvectors`
 :class: tudproof
 
 Suppose $\mathbf{v}_1$ and $\mathbf{v}_2$ are eigenvectors of the symmetric matrix $A$ for the different eigenvalues $\lambda_1,\lambda_2$.
@@ -221,7 +221,7 @@ If $\vect{u}$ is an eigenvector of $A$ for the eigenvalue $\lambda$, and $\vect{
 
 ::::
 
-::::{admonition} Solution to&nbsp;{numref}`Exc:SymmetricMat:uTAv`
+::::{admonition} Solution to {numref}`Exc:SymmetricMat:uTAv`
 :class: solution, dropdown
 
 The proof is completely analogous to the proof of {prf:ref}`Prop:SymmetricMat:OrthogonalEigenvectors`.
@@ -266,7 +266,7 @@ All eigenvalues of symmetric matrices are real.
 
 The easiest proof is via complex numbers. Feel free to skip it, in particular when you don't feel comfortable with complex numbers.
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SymmetricMat:RealEigenvalues`
+::::{admonition} Proof of {prf:ref}`Prop:SymmetricMat:RealEigenvalues`
 :class: tudproof, dropdown
 
 For two vectors $\mathbf{u},\mathbf{v}$ in $\C^n$ we consider the expression
@@ -556,7 +556,7 @@ $$
 
 And now it's time for the proof of the main theorem. The proof is of the type technical and intricate. Skip it if you like. 
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Thm:SymmetricMat:OrthogDiag`
+::::{admonition} Proof of {prf:ref}`Thm:SymmetricMat:OrthogDiag`
 :class: tudproof, dropdown
 
 Suppose that $A$ is a symmetric $n \times n$-matrix. We know there are $n$ real, possibly multiple, eigenvalues
@@ -913,7 +913,7 @@ The  matrix $B = \begin{pmatrix}  3 & 4  \\ 0 &  3\end{pmatrix}$ has the double 
 
 As mentioned,  {prf:ref}`Ex:SymmetricMat:Max||Ax||`  contains the main idea, but for  a proof of the general situation you can open the following exposition.
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SymmetricMat:Max||Ax||`
+::::{admonition} Proof of {prf:ref}`Prop:SymmetricMat:Max||Ax||`
 :class: tudproof, dropdown
 
 Suppose  $A$ is a symmetric $n \times n$-matrix.
@@ -1061,7 +1061,7 @@ of $n$-matrices $P_i$ that represent orthogonal projections onto one-dimensional
 Equation {eq}`Eq:SymmetricMat:SpectralDecomp` is referred to as being a **spectral decomposition** of the matrix $A$.
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Thm:SymmetricMat:SpectralDecomp`
+::::{admonition} Proof of {prf:ref}`Thm:SymmetricMat:SpectralDecomp`
 :class: tudproof
 
 For a general $n\times n$ symmetric matrix $A$, there exists an orthogonal diagonalisation
@@ -1104,7 +1104,7 @@ $$
 where $P_i$ denotes the orthogonal projection onto the eigenspace $E_{\lambda_i}$.
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Cor:SymmetricMat:SpectralThm-2`
+::::{admonition} Proof of {prf:ref}`Cor:SymmetricMat:SpectralThm-2`
 :class: tudproof
 
 We know that

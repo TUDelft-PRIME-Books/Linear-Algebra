@@ -250,7 +250,7 @@ For each linear system $A\vect{x} = \vect{b}$, where $A$ is an $m \times n$-matr
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LeastSquares:Existence`
+::::{admonition} Proof of {prf:ref}`Prop:LeastSquares:Existence`
 :class: tudproof
 
 In {prf:ref}`Rem:LeastSquares:BestLinComb` it was noted that a least squares solution corresponds to the vector in $\operatorname{Col}A$ that is closest to $\vect{b}$.
@@ -413,7 +413,7 @@ where the norm of the error vector was found to be $\sqrt{15}$.
 In the proof properties of the orthogonal projection are combined in a clever way.
 
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Thm:LeastSquares:NormalEquations`
+::::{admonition} Proof of {prf:ref}`Thm:LeastSquares:NormalEquations`
 :class: tudproof, dropdown
 
 As usual we denote the columns of the $m \times n$-matrix $A$ by $\vect{a}_1, \ldots, \vect{a}_n$.
@@ -509,7 +509,7 @@ the matrix $A^TA$ is invertible.
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LeastSquares:InvertibleATA`
+::::{admonition} Proof of {prf:ref}`Prop:LeastSquares:InvertibleATA`
 :class: tudproof
 
 In fact, something stronger holds:
@@ -544,7 +544,7 @@ For any $m \times n$-matrix $A$, if $A^TA$ is invertible, then the columns of $A
 
 ::::
 
-::::{admonition} Solution to&nbsp;{numref}`Exc:LeastSquares:InvertibleATA`
+::::{admonition} Solution to {numref}`Exc:LeastSquares:InvertibleATA`
 :class: solution, dropdown
 
 Suppose that $A$ is an $m \times n$-matrix $A$ for which $A^TA$ is invertible.
@@ -697,7 +697,7 @@ $$
 Also explain this simpler formula by interpreting the $QR$ decomposition in a suitable way.
 ::::
 
-::::{admonition} Solution to&nbsp;{numref}`Exc:LeastSquares:QR`
+::::{admonition} Solution to {numref}`Exc:LeastSquares:QR`
 :class: solution, dropdown
 
 This involves some elementary matrix operations.
@@ -773,7 +773,7 @@ solve Equation {eq}`Eq:Leastquares:LSviaQR-1` via back substitution.
 ::::
 
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LeastSquares:Existence`
+::::{admonition} Proof of {prf:ref}`Prop:LeastSquares:Existence`
 :class: tudproof
 
 First note that, if  $A = QR$, where $Q$ has orthonormal columns, then

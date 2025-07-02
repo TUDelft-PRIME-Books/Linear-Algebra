@@ -171,7 +171,7 @@ If an inverse of a matrix $A$ exists, then it is unique.
 
 The proof is very short, when we plug in the right idea at the right place.
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixInv:UniqueInverse`
+::::::{admonition} Proof of {prf:ref}`Prop:MatrixInv:UniqueInverse`
 :class: tudproof
 
 Suppose $B$ and $C$ are two matrices that satisfy the properties of being an inverse of $A$, i.e.
@@ -305,7 +305,7 @@ Also check that the first matrix in {prf:ref}`Ex:FirstInverse` illustrates the f
 ::::::
 
 
-::::::{admonition} Solution to&nbsp;{numref}`Exc:MatrixInv:CheckBA=I`
+::::::{admonition} Solution to {numref}`Exc:MatrixInv:CheckBA=I`
 :class: solution, dropdown
 
 $$
@@ -443,7 +443,7 @@ $$
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixInv:InvertibleIndepCols`
+::::::{admonition} Proof of {prf:ref}`Prop:MatrixInv:InvertibleIndepCols`
 :class: tudproof
 
 As in the proof in {prf:ref}`Rem:MatrixInvDetZeroDependentColumns` we have to prove two implications:
@@ -557,7 +557,7 @@ $$
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:SolutionViaInverse`
+::::::{admonition} Proof of {prf:ref}`Prop:SolutionViaInverse`
 :class: tudproof
 
 We multiply both sides of the equation
@@ -727,7 +727,7 @@ $$
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixInv:ElemProperties`
+::::::{admonition} Proof of {prf:ref}`Prop:MatrixInv:ElemProperties`
 :class: tudproof
 
 All statements can be proved by verifying that the relevant products are equal to $I$.
@@ -779,7 +779,7 @@ Prove the last statement of the previous proposition.
 
 ::::::
 
-::::::{admonition} Solution to&nbsp;{numref}`Exc:MatrixInv:Ainvinv`
+::::::{admonition} Solution to {numref}`Exc:MatrixInv:Ainvinv`
 :class: solution, dropdown
 
 For the inverse $C = (A^{-1})^{-1}$ of $A^{-1}$, it should hold that
@@ -844,7 +844,7 @@ $$
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixInv:ProductRule`
+::::::{admonition} Proof of {prf:ref}`Prop:MatrixInv:ProductRule`
 :class: tudproof
 
 Again we just check that the properties of the definition hold.
@@ -882,7 +882,7 @@ In case it is true, give an argument, when false, give a counterexample.
 
 ::::::
 
-::::::{admonition} Solution to&nbsp;{numref}`Exc:MatrixInv:(AB)Tinv`
+::::::{admonition} Solution to {numref}`Exc:MatrixInv:(AB)Tinv`
 :class: solution, dropdown
 
 The statement is _true_.
@@ -1083,7 +1083,7 @@ $$
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:MatrixInv:Algorithm`
+::::::{admonition} Proof of {prf:ref}`Prop:MatrixInv:Algorithm`
 :class: tudproof
 
 We have already seen ({prf:ref}`Prop:MatrixInv:InvertibleIndepCols`) that an invertible matrix has  linearly independent columns,
@@ -1305,7 +1305,7 @@ Make sure that you do not use $A^{-1}$ or $B^{-1}$ prematurely, i.e., before you
 
 ::::::
 
-::::::{admonition} Solution to&nbsp;{numref}`Exc:MatrixInv:ConverseProdRule`
+::::::{admonition} Solution to {numref}`Exc:MatrixInv:ConverseProdRule`
 :class: solution, dropdown
 
 Suppose $A$ and $B$ are two $n \times n$-matrices for which $AB$ is invertible. Let $C=(AB)^{-1}$ be the inverse of $AB$. We claim that
@@ -1390,7 +1390,7 @@ $A$ can be written as a product of elementary matrices: $A = E_1E_2\cdots E_k$.
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations`
+::::::{admonition} Proof of {prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations`
 :class: tudproof
 
 It is a good exercise to find out where the evidence of each characterisation is found,

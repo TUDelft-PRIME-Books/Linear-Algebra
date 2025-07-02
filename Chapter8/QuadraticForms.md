@@ -314,7 +314,7 @@ $$
 
 ::::
 
-::::{admonition} Proof of &nbsp; {prf:ref}`Prop:QuadForms:Substitution`
+::::{admonition} Proof of   {prf:ref}`Prop:QuadForms:Substitution`
 :class: tudproof
 
 If we put $\vect{x} = P\vect{y}$ we get
@@ -419,7 +419,7 @@ $$
 where $\lambda_1, \ldots, \lambda_n$ are the _eigenvalues_ of the matrix $A$.
 ::::
 
-::::{admonition} Proof of &nbsp; {prf:ref}`Prop:QuadForms:Diagonalize`
+::::{admonition} Proof of   {prf:ref}`Prop:QuadForms:Diagonalize`
 :class: tudproof
 
 If we make the substitution $\vect{x} = Q\vect{y}$ we find that
@@ -534,7 +534,7 @@ $\lambda_1 \geq \lambda_2 \geq \ldots \geq \lambda_n$.  Then the maximum and the
 
 The proof contains the same type of reasoning as the proof of {prf:ref}`Prop:SymmetricMat:Max||Ax||`.
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:QuadForms:MaximumxTAx`
+::::{admonition} Proof of {prf:ref}`Prop:QuadForms:MaximumxTAx`
 :class: tudproof, dropdown
 
 Suppose that   $\vect{u}_1, \vect{u}_2,\ldots,\vect{u}_n$  is an orthonormal basis of eigenvectors for $A$ for the eigenvalues  $\lambda_1 \geq \ldots \geq \lambda_n$.
@@ -698,7 +698,7 @@ $q_A$ is **indefinite** if at least one eigenvalue is positive and at least one 
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Thm:QuadForms:Classification`
+::::{admonition} Proof of {prf:ref}`Thm:QuadForms:Classification`
 :class: tudproof
 
 This immediately follows from {prf:ref}`Prop:QuadForms:Diagonalize`. If we make the substitution $\vect{x} = Q\vect{y}$ with the matrix $Q$ of the orthogonal diagonalisation, i.e.,
@@ -843,7 +843,7 @@ Describe the (three) possible degenerate forms of conic sections. That is, what 
 
 ::::
 
-::::{admonition} Solution to&nbsp;{numref}`Exc:QuadForms:DegenerateConics`
+::::{admonition} Solution to {numref}`Exc:QuadForms:DegenerateConics`
 :class: solution, dropdown
 
 There are three essentially different situations.
@@ -942,7 +942,7 @@ What happens if in Equation {eq}`Eq:ConicSec:CentralConic` the coefficient $f$ i
 ::::
 
 
-::::{admonition} Solution to&nbsp;{numref}`Exc:QuadForms:DegenerateStandardForm`
+::::{admonition} Solution to {numref}`Exc:QuadForms:DegenerateStandardForm`
 :class: solution, dropdown
 
 
@@ -1354,7 +1354,7 @@ The  ellipse with its principal axes.
 :url: https://embed.grasple.com/exercises/ee9c377f-5150-4264-8d3e-1150c482fd7f?id=93116
 :label: grasple_exercise_8_2_11
 :dropdown:
-:description: For which parameter $a$ is a conic section $\vect{x}^TA\vect{x} =1$  an ellipse/hyperbola/something else?
+:description: For which parameter $a$ is a conic section $\vect{x}^TA\vect{x} =1$  an ellipse/hyperbola/something else?
 
 ::::
 
@@ -1364,7 +1364,7 @@ The  ellipse with its principal axes.
 :url: https://embed.grasple.com/exercises/51f56e96-3761-44c5-8d20-4cf0047a1ea4?id=93115
 :label: grasple_exercise_8_2_12
 :dropdown:
-:description: Maximising  $\vect{x}^TA\vect{x}$ under the restriction $\norm{\vect{x}}=1$, for a $2\times2$-matrix $A$. 
+:description: Maximising  $\vect{x}^TA\vect{x}$ under the restriction $\norm{\vect{x}}=1$, for a $2\times2$-matrix $A$. 
 
 ::::
 

@@ -63,7 +63,7 @@ If $\mathbf{u}$ and $\mathbf{v}$ are vectors in $\mathbb{R}^3$, then $\mathbf{u}
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:CrossProduct:Cportho`
+::::{admonition} Proof of {prf:ref}`Prop:CrossProduct:Cportho`
 :class: tudproof
 
 Let $\mathbf{u}$ and $\mathbf{v}$ be vectors in $\mathbb{R}^3$ such that
@@ -111,7 +111,7 @@ where $\theta$ is the angle between $\mathbf{u}$ and $\mathbf{v}$.
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:CrossProduct:NormCrossProduct`
+::::{admonition} Proof of {prf:ref}`Prop:CrossProduct:NormCrossProduct`
 :class: tudproof
 
 Let $\mathbf{u}$ and $\mathbf{v}$ be vectors in $\mathbb{R}^3$ such that
@@ -158,7 +158,7 @@ Two non-zero vectors $\mathbf{u}$ and $\mathbf{v}$ are parallel if and only if $
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:CrossProduct:Parallel`
+::::{admonition} Proof of {prf:ref}`Prop:CrossProduct:Parallel`
 :class: tudproof
 
 Let $\mathbf{u}$ and $\mathbf{v}$ be two non-zero vectors. First of all, the vector $\mathbf{u}\cp \mathbf{v}$ is equal to the zero vector if and only if $\norm{\mathbf{u} \cp \mathbf{v}}=0$. Since $\norm{\mathbf{u}}$ and $\norm{\mathbf{v}}$ are both not equal to zero, it follows from {prf:ref}`Prop:CrossProduct:NormCrossProduct` that $\norm{\mathbf{u} \cp \mathbf{v}}=0$ if and only if $\sin(\theta)=0$, where $\theta$ is the angle between the vectors. This means that $\mathbf{u}\cp \mathbf{v}=\mathbf{0}$ if and only if $\theta$ is equal to either $0$ or $\pi$, which is equivalent to saying that $\mathbf{u}$ and $\mathbf{v}$ have the same direction or the opposite direction. In both cases the vectors are parallel.
@@ -180,7 +180,7 @@ Parallelogram spanned by two vectors.
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:CrossProduct:AreaParallelogram`
+::::{admonition} Proof of {prf:ref}`Prop:CrossProduct:AreaParallelogram`
 :class: tudproof
 
 The area of a parallelogram is equal to the product of the length of its base and its height. As we can see in {numref}`Figure %s <Fig:CrossProduct:AreaParallelogram>` the length of the base of the parallelogram is equal to $\norm{\mathbf{u}}$ and the height is equal to $\norm{\mathbf{h}}$. If we look at the right-angled triangle $OPP'$ we see that $\norm{\mathbf{h}}=\norm{\mathbf{v}}\sin{\theta}$. This means that the area of the parallelogram is equal to $\norm{\mathbf{u}} \norm{\mathbf{v}} \sin(\theta)$ (because we use an angle between $0$ and $\pi$ we can omit the absolute-value signs) and thus to $\norm{\mathbf{u} \cp \mathbf{v}}$.
@@ -270,7 +270,7 @@ $(\mathbf{v_1}+\mathbf{v_2})\cp\mathbf{v_3} = \mathbf{v_1}\cp\mathbf{v_3}+\mathb
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:CrossProduct:RulesCrossProduct`
+::::{admonition} Proof of {prf:ref}`Prop:CrossProduct:RulesCrossProduct`
 :class: tudproof
 
 Let $\mathbf{v_1}$, $\mathbf{v_2}$ and $\mathbf{v_3}$ be vectors in $\mathbb{R}^3$ such that
@@ -355,7 +355,7 @@ $$
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:CrossProduct:dets`
+::::{admonition} Proof of {prf:ref}`Prop:CrossProduct:dets`
 :class: tudproof
 
 This follows from the definition.

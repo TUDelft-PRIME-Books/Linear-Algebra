@@ -238,10 +238,10 @@ ii. $(c\mathbf{v}_1)\ip\mathbf{v}_2 = c(\mathbf{v}_1\ip\mathbf{v}_2) = \mathbf{v
 
 iii. $(\mathbf{v}_1+\mathbf{v}_2)\ip\mathbf{v}_3 = \mathbf{v}_1\ip\mathbf{v}_3+\mathbf{v}_2\ip\mathbf{v}_3$.
 
-iv. $\mathbf{v}\ip\mathbf{v} \geq 0$, &nbsp; and&nbsp; $\mathbf{v}\ip\mathbf{v} = 0 \iff \mathbf{v} = \mathbf{0}$.
+iv. $\mathbf{v}\ip\mathbf{v} \geq 0$,   and  $\mathbf{v}\ip\mathbf{v} = 0 \iff \mathbf{v} = \mathbf{0}$.
 :::
 
-:::{admonition} Proof of&nbsp;{prf:ref}`Prop:RulesInnerProduct`
+:::{admonition} Proof of {prf:ref}`Prop:RulesInnerProduct`
 :class: tudproof
 
 The first three properties follow from the corresponding properties of real numbers. For instance, for the first rule we simply use that $ab = ba$ holds for the product of real numbers $a$ and $b$.
@@ -266,7 +266,7 @@ $$
 \end{align*}
 $$
 
-ii. For two vectors $\vect{v}_1 = \begin{pmatrix}a_{1} \\ a_{2}\\ \vdots\\ a_{n}\end{pmatrix}$, $\vect{v}_2 = \begin{pmatrix}b_{1} \\ b_{2}\\ \vdots\\ b_{n}\end{pmatrix}$ &nbsp; and any constant $c$ we see that
+ii. For two vectors $\vect{v}_1 = \begin{pmatrix}a_{1} \\ a_{2}\\ \vdots\\ a_{n}\end{pmatrix}$, $\vect{v}_2 = \begin{pmatrix}b_{1} \\ b_{2}\\ \vdots\\ b_{n}\end{pmatrix}$   and any constant $c$ we see that
 
 $$
 \begin{align*}
@@ -306,7 +306,7 @@ if and only if all the squares are $0$, which only happens if each entry $a_i$ i
 Prove property iii.
 :::
 
-:::{admonition} Solution to&nbsp;{numref}`Exc:InnerProduct:CheckPropInnerProd`
+:::{admonition} Solution to {numref}`Exc:InnerProduct:CheckPropInnerProd`
 :class: solution, dropdown
 
 Let
@@ -350,7 +350,7 @@ $$
 
 :::
 
-:::{admonition} Solution to&nbsp;{numref}`Exc:InnerProduct:(v-w)(v+w)`
+:::{admonition} Solution to {numref}`Exc:InnerProduct:(v-w)(v+w)`
 :class: solution, dropdown
 
 First of all, because of rule i. and rule iii. of {prf:ref}`Prop:RulesInnerProduct`
@@ -397,7 +397,7 @@ and explain why it is called the _parallelogram rule_.
 
 
 
-:::{admonition} Solution to&nbsp;{numref}`Exc:InnerProduct:PargramRule`
+:::{admonition} Solution to {numref}`Exc:InnerProduct:PargramRule`
 :class: solution, dropdown
 
 Again it's a chain of identities using basic properties of the dot product.
@@ -460,7 +460,7 @@ Two vectors $\mathbf{v}$ and $\mathbf{w}$ in $\mathbb{R}^n$ are called **orthogo
 :::{prf:example}
 :label: Ex:InnerProduct:CheckVectorsOrthogonal
 
-Let &nbsp; $\mathbf{u} = \begin{pmatrix} 1\\2\\-1\\-1\end{pmatrix}$, &nbsp; $\mathbf{v} = \begin{pmatrix} 3\\-1\\2\\-1\end{pmatrix}$ &nbsp; and &nbsp;
+Let   $\mathbf{u} = \begin{pmatrix} 1\\2\\-1\\-1\end{pmatrix}$,   $\mathbf{v} = \begin{pmatrix} 3\\-1\\2\\-1\end{pmatrix}$   and  
 $\mathbf{w} = \begin{pmatrix} 2\\2\\-1\\2\end{pmatrix}$.
 
 We compute
@@ -500,11 +500,11 @@ By definition the zero vector is orthogonal to any vector, since $\mathbf{0}\ip\
 :::{prf:proposition}
 :label: Prop:InnerProduct:vDotv=0Impliesv=0
 
-Suppose $\mathbf{v} \in \mathbb{R}^n$. &nbsp; Then $\mathbf{v}\perp\mathbf{v} \iff \mathbf{v} = \mathbf{0}$.
+Suppose $\mathbf{v} \in \mathbb{R}^n$.   Then $\mathbf{v}\perp\mathbf{v} \iff \mathbf{v} = \mathbf{0}$.
 
 :::
 
-:::{admonition} Proof of&nbsp;{prf:ref}`Prop:InnerProduct:vDotv=0Impliesv=0`
+:::{admonition} Proof of {prf:ref}`Prop:InnerProduct:vDotv=0Impliesv=0`
 :class: tudproof
 
 By definition
@@ -584,7 +584,7 @@ $$
 
 :::
 
-:::{admonition} Proof of&nbsp;{prf:ref}`Prop:InnerProduct:UniqueProjection`
+:::{admonition} Proof of {prf:ref}`Prop:InnerProduct:UniqueProjection`
 :class: tudproof
 
 With the rules of the dot product the vector $\mathbf{w}$ is easily constructed.
@@ -692,7 +692,7 @@ $$
 
 :::
 
-::::{admonition} Solution to&nbsp;{numref}`Exc:InnerProduct:SameProjectionThenWhat`
+::::{admonition} Solution to {numref}`Exc:InnerProduct:SameProjectionThenWhat`
 :class: solution, dropdown
 
 Suppose $\operatorname{proj}_{\mathbf{v}}(\mathbf{w}_1) = \operatorname{proj}_{\mathbf{v}}(\mathbf{w}_2) $.  Thus  $\dfrac{\mathbf{w}_1\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}} \mathbf{v} = \dfrac{\mathbf{w}_2\ip\mathbf{v}}{\mathbf{v}\ip\mathbf{v}} \mathbf{v}$.
@@ -705,7 +705,7 @@ $$
   (\mathbf{w}_1 - \mathbf{w}_2)\ip \mathbf{v} = 0,
 $$
 
-which expresses that &nbsp; $(\mathbf{w}_1 - \mathbf{w}_2)\perp \vect{v}$.
+which expresses that   $(\mathbf{w}_1 - \mathbf{w}_2)\perp \vect{v}$.
 
 For the given vectors $\mathbf{v}, \mathbf{w}_1, \mathbf{w}_2$ we find
 
@@ -749,7 +749,7 @@ $$
   \norm{\mathbf{v}} = \sqrt{a_1^2 + a_2^2} = \sqrt{\mathbf{v}\ip\mathbf{v}}.
 $$
 
-The identity $\norm{\mathbf{v}}  = \sqrt{\mathbf{v}\ip\mathbf{v}}$ &nbsp;also holds in $\mathbb{R}^3$.
+The identity $\norm{\mathbf{v}}  = \sqrt{\mathbf{v}\ip\mathbf{v}}$  also holds in $\mathbb{R}^3$.
 
 It seems natural to extend the concept to $\mathbb{R}^n$. Again, for this more general space a new word is introduced.
 
@@ -909,7 +909,7 @@ Rule iii. is again called the _Triangle Inequality_.
 :label: Exc:InnerProduct:ProofPropDist
 
 Check the three properties of the distance function as stated in
-{prf:ref}`Prop:InnerProduct:PropertiesDistance`. &nbsp;
+{prf:ref}`Prop:InnerProduct:PropertiesDistance`.  
 For Rule iii., only show how it follows from the corresponding Rule iii. in
  {prf:ref}`Prop:InnerProduct:PropertiesNorm`. 
 ::::
@@ -953,7 +953,7 @@ $$
 
 :::
 
-:::{admonition} Proof of&nbsp;{prf:ref}`Prop:InnerProduct:UnitVectorForv`
+:::{admonition} Proof of {prf:ref}`Prop:InnerProduct:UnitVectorForv`
 :class: tudproof
 
 Assume that $\mathbf{v} \neq \mathbf{0}$.
@@ -1014,7 +1014,7 @@ $$
 
 :::
 
-:::{admonition} Proof of&nbsp;{prf:ref}`Thm:InnerProduct:PythagorasInRn`
+:::{admonition} Proof of {prf:ref}`Thm:InnerProduct:PythagorasInRn`
 :class: tudproof
 
 This follows quite straightforwardly from the properties of the dot product.
@@ -1107,7 +1107,7 @@ There are many ways to prove the Cauchy-Schwarz inequality. There is even a whol
 
 The following proof is based on orthogonal projection and Pythagoras' Theorem.
 
-:::{admonition} Proof of&nbsp;{prf:ref}`Thm:InnerProduct:Cauchy-Schwarz`&nbsp;({prf:ref}`Cauchy-Schwarz Inequality <Thm:InnerProduct:Cauchy-Schwarz>`)
+:::{admonition} Proof of {prf:ref}`Thm:InnerProduct:Cauchy-Schwarz` ({prf:ref}`Cauchy-Schwarz Inequality <Thm:InnerProduct:Cauchy-Schwarz>`)
 :class: tudproof
 
 If
@@ -1218,7 +1218,7 @@ $$
 
 :::
 
-:::{admonition} Proof of&nbsp;{prf:ref}`Thm:InnerProduct:TriangleInequality`
+:::{admonition} Proof of {prf:ref}`Thm:InnerProduct:TriangleInequality`
 :class: tudproof
 
 Since all terms involved are non-negative we may as well show that the inequality holds for the squares:
@@ -1318,7 +1318,7 @@ $$
 
 :::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:InnerProduct:DotProdGeometric`
+::::{admonition} Proof of {prf:ref}`Prop:InnerProduct:DotProdGeometric`
 :class: tudproof
 
 We will derive Equation {eq}`Eq:InnerProduct:GeometricDefinition`.
@@ -1607,7 +1607,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 :url: https://embed.grasple.com/exercises/c4d2743f-5f14-4812-9531-1a40c28c15cb?id=62413
 :label: grasple_exercise_1_2_17
 :dropdown:
-:description: To prove that &nbsp;$(\vect{v}+\vect{w})\ip\vect{x} = \vect{v}\ip\vect{x}+\vect{w}\ip\vect{x}$.
+:description: To prove that  $(\vect{v}+\vect{w})\ip\vect{x} = \vect{v}\ip\vect{x}+\vect{w}\ip\vect{x}$.
 
 ::::
 
@@ -1618,7 +1618,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 :url: https://embed.grasple.com/exercises/161ecdf6-4cfb-41ba-bc16-685fe8532471?id=62414
 :label: grasple_exercise_1_2_16
 :dropdown:
-:description: To show that &nbsp;$(\vect{v}+\vect{w})\ip(\vect{v}-\vect{w}) = \norm{\vect{v}}^2 - \norm{\vect{w}}^2$.
+:description: To show that  $(\vect{v}+\vect{w})\ip(\vect{v}-\vect{w}) = \norm{\vect{v}}^2 - \norm{\vect{w}}^2$.
 
 ::::
 
@@ -1627,7 +1627,7 @@ we may conclude that for large $n$ in $\mathbb{R}^n$ the two vectors are 'almost
 :url: https://embed.grasple.com/exercises/407cb45d-2baf-4b0d-a1eb-6e51186e19f3?id=69738
 :label: grasple_exercise_1_2_18
 :dropdown:
-:description: What to conclude from &nbsp;$\norm{\vect{v}+\vect{w}} = \norm{\vect{v}}+\norm{\vect{w}}$?
+:description: What to conclude from  $\norm{\vect{v}+\vect{w}} = \norm{\vect{v}}+\norm{\vect{w}}$?
 
 ::::
 

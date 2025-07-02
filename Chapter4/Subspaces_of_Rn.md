@@ -178,7 +178,7 @@ A game to test your knowledge of subspaces. On the left, $\vect{u} + \vect{v}$ i
 
 ::::::
 
-::::::{admonition} Solution to&nbsp;{numref}`Exc:Subspaces:NonSubspacesR2`
+::::::{admonition} Solution to {numref}`Exc:Subspaces:NonSubspacesR2`
 :class: solution, dropdown
 
 We first give an example of a subset of $\R^2$ that only has properties i. and ii.
@@ -223,7 +223,7 @@ c_1\vect{u}+ c_2 \vect{v} \in S.
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Subspaces:SpanClosed`
+::::::{admonition} Proof of {prf:ref}`Prop:Subspaces:SpanClosed`
 :class: tudproof
 
 To show that a subspace satisfies the property in Equation {eq}`Eq:Subspaces:SpanClosed`,
@@ -302,7 +302,7 @@ Recall {prf:ref}`Dfn:LinearCombinations:Span`: the span of zero vectors in $\R^n
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Subspaces:SpanIsSubspace`
+::::::{admonition} Proof of {prf:ref}`Prop:Subspaces:SpanIsSubspace`
 :class: tudproof
 
 If the number of vectors $r$ is equal to $0$, the span is equal to $\{\vect{0}\}$, the trivial subspace.
@@ -379,7 +379,7 @@ Once more we recall the convention that the span of zero vectors (i.e., when $r 
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Subspaces:AllSubspacesR3`
+::::::{admonition} Proof of {prf:ref}`Prop:Subspaces:AllSubspacesR3`
 :class: tudproof
 
 
@@ -497,7 +497,7 @@ The null space of $A$ is a subspace of $\R^n$.
 
 ::::::
 
-::::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Subspaces:AllSubspacesRn`
+::::::{admonition} Proof of {prf:ref}`Prop:Subspaces:AllSubspacesRn`
 :class: tudproof
 
 Let $A$ be an $m\times n$-matrix.<ol type = "i">
@@ -620,7 +620,7 @@ Can you find a similar formula relating the null space of $AB$ to the null space
 
 ::::::
 
-::::::{admonition} Solution to&nbsp;{numref}`Exc:Subspaces:ColABinColA`
+::::::{admonition} Solution to {numref}`Exc:Subspaces:ColABinColA`
 :class: solution, dropdown
 
 Suppose that $A$ is an $m\times n$ and $B$ an $n \times p$-matrix.
@@ -674,7 +674,7 @@ $$
 
 ::::::
 
-::::::{admonition} Solution to&nbsp;{numref}`Exc:Subspaces:WhatIfAAeq0`
+::::::{admonition} Solution to {numref}`Exc:Subspaces:WhatIfAAeq0`
 :class: solution, dropdown
 
 First we show that

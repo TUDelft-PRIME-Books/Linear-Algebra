@@ -231,7 +231,7 @@ Suppose $\mathbf{v}_{1},\mathbf{v}_{2},\mathbf{v}_{3}$ are vectors in $\mathbb{R
 
 ````
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:Vectors:BasicRules`
+::::{admonition} Proof of {prf:ref}`Prop:Vectors:BasicRules`
 :class: tudproof
 
 See {numref}`grasple_exercise_1_1_11`.

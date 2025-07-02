@@ -519,7 +519,7 @@ Changing the order of the equations.
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LinSystems:ElimOperations`
+::::{admonition} Proof of {prf:ref}`Prop:LinSystems:ElimOperations`
 :class: tudproof
 
 The correctness of the first operation is illustrated in
@@ -1799,7 +1799,7 @@ A system of linear equations has either zero, or one, or infinitely many solutio
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Thm:LinSystems:ZeroOneInfSolutions`
+::::{admonition} Proof of {prf:ref}`Thm:LinSystems:ZeroOneInfSolutions`
 :class: tudproof
 
 This just depends on the outcome of the elimination method (i.e. {prf:ref}`Alg:LinSystems:ElimMethod`).
@@ -1900,7 +1900,7 @@ A linear system of $m$ equations in $n$ unknowns can only have a unique solution
 
 ::::
 
-::::{admonition} Proof of&nbsp;{prf:ref}`Prop:LinSystems:UniqueSolutionImpliesSize`
+::::{admonition} Proof of {prf:ref}`Prop:LinSystems:UniqueSolutionImpliesSize`
 :class: tudproof
 
 Let
