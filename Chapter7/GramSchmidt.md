@@ -334,7 +334,7 @@ $$
    A = QR,
 $$
 
-where $Q$ is an $n \times m$-matrix with _orthonormal columns_, and $R$ is an _upper triangular_ $m \times m$-matrix, with *positive* diagonal entries.
+where $Q$ is an $n \times m$-matrix with _orthonormal columns_, and $R$ is an _upper-triangular_ $m \times m$-matrix, with *positive* diagonal entries.
 
 The matrix $Q$ is found by applying the Gram-Schmidt process to the (linearly independent) columns $\vect{a}_1,\ldots,\vect{a}_m$ of the matrix $A$ and then renormalising.
 
@@ -403,7 +403,7 @@ $$
   Q = BD = ACD = A(CD),
 $$
 
-where $CD$ is an upper triangular matrix with positive diagonal entries.
+where $CD$ is an upper-triangular matrix with positive diagonal entries.
 
 Multiplying both sides with the inverse of $CD$ gives
 
@@ -412,7 +412,7 @@ $$
   Q = A(CD) \iff A = Q(CD)^{-1} = QR,
 $$
 
-where $R = (CD)^{-1}$ is still an upper triangular matrix with positive diagonal entries.
+where $R = (CD)^{-1}$ is still an upper-triangular matrix with positive diagonal entries.
 
 ::::
 
@@ -423,7 +423,7 @@ There is an quicker way to find the matrix $R$ than by inverting the matrix $CD$
 
 Let $Q = (\vect{q}_1,\ldots,\vect{q}_m)$ be the matrix constructed by exactly applying the Gram-Schmidt process followed by rescaling. Define $R = Q^TA$.
 
-Then $R$ is an upper triangular matrix with a positive entries on its diagonal, and
+Then $R$ is an upper-triangular matrix with a positive entries on its diagonal, and
 
 $$
 
@@ -442,7 +442,7 @@ $$
   A = QR
 $$
 
-exists, with an upper triangular matrix $R$.
+exists, with an upper-triangular matrix $R$.
 
 The matrix $Q$ has orthonormal columns, so
 
@@ -508,7 +508,7 @@ $$
                        0 & 0 & \sqrt{14}  \end{pmatrix},
 $$
 
-and see that this is indeed an upper triangular matrix (with positive diagonal entries).
+and see that this is indeed an upper-triangular matrix (with positive diagonal entries).
 
 You may check for yourself that $QR = A$.
 
@@ -528,7 +528,7 @@ $$
 $$
 
 it follows that the entries below the diagonal of the product $Q^TA$ are all equal to zero.
-So: $Q^TA = R$ is an upper triangular matrix.
+So: $Q^TA = R$ is an upper-triangular matrix.
 
 Recalling the construction of $\vect{b}_i$ and $\vect{q}_i$ from $\vect{a}_1,\ldots,\vect{a}_i$, it can be shown that the diagonal entries $r_{ii}$ are equal to $\vect{q}_i^T\vect{a}_i = \norm{\vect{a}_i} > 0$.
 

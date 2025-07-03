@@ -702,7 +702,7 @@ Also explain this simpler formula by interpreting the $QR$ decomposition in a su
 
 This involves some elementary matrix operations.
 
-Suppose $A = QR$, where $Q^TQ = I$, and $R$ is an upper triangular matrix with a positive diagonal. So $R$ is invertible.
+Suppose $A = QR$, where $Q^TQ = I$, and $R$ is an upper-triangular matrix with a positive diagonal. So $R$ is invertible.
 
 Substitution of $A=QR$ into Equation {eq}`Eq:LeastSquares:ProjbColA`
 
@@ -788,7 +788,7 @@ $$
   R^TR\vect{x} = R^TQ^T\vect{b}.
 $$
 
-Since $R$ is invertible, hence $R^T$ is invertible too, we can premultiply both sides by  the inverse of $R^T$, which immediately gives Equation {eq}`Eq:Leastquares:LSviaQR-1`.
+Since $R$ is invertible, hence $R^T$ is invertible too, we can pre-multiply both sides by  the inverse of $R^T$, which immediately gives Equation {eq}`Eq:Leastquares:LSviaQR-1`.
 
 ::::
 

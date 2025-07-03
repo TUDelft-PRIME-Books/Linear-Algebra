@@ -1120,7 +1120,7 @@ $$
 :url: https://embed.grasple.com/exercises/534ce865-0960-403a-affc-0f23f2d14110?id=91521
 :label: grasple_exercise_6_3_13
 :dropdown:
-:description: For which $\alpha$ is given (upper triangular) $4 \times 4$-matrix diagonalisable?
+:description: For which $\alpha$ is given (upper-triangular) $4 \times 4$-matrix diagonalisable?
 
 ::::::
 

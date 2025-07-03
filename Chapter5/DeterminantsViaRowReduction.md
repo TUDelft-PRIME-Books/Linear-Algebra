@@ -13,7 +13,7 @@ The product rule: $\det{(AB)} = \det{A}\cdot\det{B}$.
 </li>
 <li>
 
-The matrix $A$ is invertible if and only if $\det{A} \neq 0$ .
+The matrix $A$ is invertible if and only if $\det{A} \neq 0$.
 
 </li>
 </ul>
@@ -69,7 +69,7 @@ ca_{21} & ca_{22} & ca_{23}  \\
 a_{11} &a_{12} &a_{13}  \\
 a_{21} &a_{22} &a_{23}  \\
 a_{31} &a_{32} &a_{33}
-\end{array} \right|,
+\end{array} \right|.
 $$
 
 </li>
@@ -86,7 +86,7 @@ a_{31}-ka_{11} &a_{32}-ka_{12} &a_{33}-ka_{13}
 a_{11} &a_{12} &a_{13}   \\
 a_{21} &a_{22} &a_{23}   \\
 a_{31} &a_{32} &a_{33}   
-\end{array} \right|,
+\end{array} \right|.
 $$
 
 </li>
@@ -176,14 +176,25 @@ $$
 
 The steps involved are:
 
-:::{paren-list}
-:start: 1
+<ol type="i">
 
-- take out a factor $5$ from the first row,
-- subtract the first row $3$ times from the second row and $2$ times from the third row (or: add it $(-3)$ times and $(-2)$ times respectively)
-- expand along the first column.
+<li>
 
-:::
+take out a factor $5$ from the first row.
+
+</li>
+<li>
+
+subtract the first row $3$ times from the second row and $2$ times from the third row (or: add it $(-3)$ times and $(-2)$ times respectively).
+
+</li>
+
+<li>
+
+expand along the first column.
+
+</li>
+</ol>
 
 Evaluating the $2\times 2$-determinant at the end leads to the answer $-100$.
 
@@ -204,7 +215,7 @@ $$
 Because of {prf:ref}`Prop:DetCofactors:DetTranspose` that states
 
 $$
-\det{A} = \operatorname{det}\big(A^T\big)
+\det{A} = \operatorname{det}\big(A^T\big),
 $$
 
 every rule involving row operations may be transformed into a rule about column operations. It is here that computing a determinant differs strikingly from the reduction of a (for instance augmented) matrix to an echelon matrix. Another, more subtle difference is that
@@ -235,7 +246,7 @@ $$
 
 ::::::
 
-An interesting consequence of rule (3) of {prf:ref}`Prop:DetRowReduction:RowOps` is the following.
+An interesting consequence of rule iii. of {prf:ref}`Prop:DetRowReduction:RowOps` is the following.
 
 ::::::{prf:corollary}
 :label: Cor:DetRowReduction:EqualRows
@@ -293,7 +304,7 @@ The proof is -- we think -- quite instructive.  (However, feel free to skip it.)
 In the previous section we have already seen that the statement is true for triangular matrices.
 
 Now suppose $A$ is any $n \times n$-matrix. Via row reduction $A$ can be brought to echelon form $F$,
-and for a square matrix the echelon form is an upper triangular matrix (with possibly zeros on the diagonal).
+and for a square matrix the echelon form is an upper-triangular matrix (with possibly zeros on the diagonal).
 
 From {prf:ref}`Prop:DetCofactors:InvertibleTriangular` we know that for a triangular matrix $F$ we have '$F$ is invertible' is equivalent to '$\det{F} \neq 0$'.
 
@@ -594,7 +605,7 @@ Then
 \begin{array}{l}
 \det{(\vect{a}_1 \,\, \ldots \,\, \vect{b}+\vect{c} \,\, \ldots \,\, \vect{a}_n)} = \\
 \qquad \qquad \qquad \det{(\vect{a}_1 \,\, \ldots \,\, \vect{b} \,\, \ldots \,\, \vect{a}_n)} +
-\det{(\vect{a}_1 \,\, \ldots \,\, \vect{c} \,\, \ldots \,\, \vect{a}_n)}
+\det{(\vect{a}_1 \,\, \ldots \,\, \vect{c} \,\, \ldots \,\, \vect{a}_n)}.
 \end{array}
 
 :::
@@ -611,7 +622,7 @@ For an $n \times n$-matrix
 
 $$
 
- A = (\vect{a}_1 \,\,\vect{a}_2  \,\,\ldots\,\,\vect{a}_j  \,\,\ldots\,\,\vect{a}_k   \,\,\ldots\,\, \vect{a}_n)
+ A = (\vect{a}_1 \,\,\vect{a}_2  \,\,\cdots\,\,\vect{a}_j  \,\,\cdots\,\,\vect{a}_k   \,\,\cdots\,\, \vect{a}_n)
 $$
 
 the rules can then be formulated as
@@ -619,9 +630,9 @@ the rules can then be formulated as
 :::{paren-list}
 :start: 1
 
-- $\det{(\vect{a}_1   \,  \vect{a}_2  \,  \ldots \, c \vect{a}_k  \,    \ldots  \,   \vect{a}_n)} = c  \det{A}$;
+- $\det{(\vect{a}_1   \,  \vect{a}_2  \,  \ldots \, c \vect{a}_k  \,    \ldots  \,   \vect{a}_n)} = c  \det{A}$.
 
-- $\det{(\vect{a}_1  \,  \ldots  \,   \vect{a}_k  \,    \ldots  \,   \vect{a}_j  \,   \ldots \,   \vect{a}_n)} = - \det{(\vect{a}_1  \,  \ldots  \,   \vect{a}_j  \,    \ldots  \,   \vect{a}_k  \,   \ldots \,   \vect{a}_n)}$;
+- $\det{(\vect{a}_1  \,  \ldots  \,   \vect{a}_k  \,    \ldots  \,   \vect{a}_j  \,   \ldots \,   \vect{a}_n)} = - \det{(\vect{a}_1  \,  \ldots  \,   \vect{a}_j  \,    \ldots  \,   \vect{a}_k  \,   \ldots \,   \vect{a}_n)}$.
 
 - $\det{(\vect{a}_1 \,  \ldots   \,  \vect{a}_j   \,   \ldots  \,   \vect{a}_k + c\vect{a}_j  \,  \ldots  \,  \vect{a}_n)} = \det{A}$.
 

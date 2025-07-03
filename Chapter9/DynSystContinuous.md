@@ -702,7 +702,7 @@ which is not a multiple of $\vect{v}$, so such a $\vect{v}$ cannot be an eigenve
 :url: https://embed.grasple.com/exercises/278f8099-f6af-4f8b-858a-8c5222866d19?id=122182
 :label: grasple_exercise_9_4_05
 :dropdown:
-:description: Classify the nature of the origin as an attractor, repeller, saddle point, spiral point or center point.
+:description: Classify the nature of the origin as an attractor, repeller, saddle point, spiral point or centre point.
 
 ::::
 

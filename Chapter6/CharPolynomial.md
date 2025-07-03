@@ -87,9 +87,9 @@ $U = \begin{pmatrix} u_{11} & u_{12} & u_{13}  \\
 0    & u_{22} & u_{23}  \\
 0   &   0    & u_{33}
 \end{pmatrix}$,
-an arbitrary $3 \times 3$ upper triangular matrix.
+an arbitrary $3 \times 3$ upper-triangular matrix.
 
-Since $U - \lambda I$ is also an upper triangular matrix, we find that
+Since $U - \lambda I$ is also an upper-triangular matrix, we find that
 
 $$
 \operatorname{det}(U - \lambda I) = ( u_{11}-\lambda)( u_{22}-\lambda)( u_{33}-\lambda).
@@ -101,7 +101,7 @@ $$
  \lambda_1 = u_{11}, \,\,\lambda_2 = u_{22},    \,\,\lambda_3 = u_{33}.
 $$
 
-So for a $3 \times 3$ upper triangular matrix the eigenvalues are the diagonal entries.
+So for a $3 \times 3$ upper-triangular matrix the eigenvalues are the diagonal entries.
 
 ::::::
 
@@ -110,7 +110,7 @@ Obviously {prf:ref}`Ex:EigenValues:TriangularMatrix` can be generalised. This le
 ::::::{prf:proposition}
 :label: Prop:EigenValues:TriangularMatrix
 
-For any upper or lower triangular matrix $A$ the eigenvalues are given by the diagonal entries.
+For any upper or lower-triangular matrix $A$ the eigenvalues are given by the diagonal entries.
 
 Note that this includes diagonal matrices $D$.
 
@@ -384,7 +384,7 @@ The following exercise, which is meant to shed some more light on the concepts j
 :url: https://embed.grasple.com/exercises/6e01d5c1-897b-44bf-bbb2-4653ff095f48?id=92498
 :label: grasple_exercise_6_1_A
 :dropdown:
-:description:  Finding eigenvalues and their multiplicities for an upper triangular matrix $A$.
+:description:  Finding eigenvalues and their multiplicities for an upper-triangular matrix $A$.
 
 ::::::
 
@@ -714,7 +714,7 @@ Every matrix $A$ is a zero of its characteristic polynomial.
 :url: https://embed.grasple.com/exercises/eb3e8ea4-3a0b-4767-aa62-0d8b05e35dda?id=91484
 :label: grasple_exercise_6_2_9
 :dropdown:
-:description:  To find the eigenvalues and their multiplicities of an almost upper triangular $4 \times 4$-matrix $A$.
+:description:  To find the eigenvalues and their multiplicities of an almost upper-triangular $4 \times 4$-matrix $A$.
 
 ::::::
 

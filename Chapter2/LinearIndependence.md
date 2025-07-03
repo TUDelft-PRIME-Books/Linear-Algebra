@@ -107,7 +107,7 @@ Indeed, if we take an arbitrary vector $\mathbf{v}$ in $\operatorname{Span}S$, w
 \end{align*}
 
 in view of Equation {eq}`Eq:LinInd:LinIndEx1`. This means that $\mathbf{v}$ is also in $\operatorname{Span}S\setminus\left\lbrace\mathbf{v}_{1}\right\rbrace$ and consequently that $\mathbf{v}_{1}$ is linearly dependent on $\mathbf{v}_{2}$ and $\mathbf{v}_{3}$.
-Similarly, Equation {eq}`Eq:LinInd:LinIndEx2` shows that $\mathbf{v}_{2}$ is linearly dependent on $\mathbf{v}_{1}$ and $\mathbf{v}_{3}$ and Equation {eq}`Eq:LinInd:LinIndEx3` shows that $\mathbf{v}_{3}$ is linearly dependent on $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ .
+Similarly, Equation {eq}`Eq:LinInd:LinIndEx2` shows that $\mathbf{v}_{2}$ is linearly dependent on $\mathbf{v}_{1}$ and $\mathbf{v}_{3}$ and Equation {eq}`Eq:LinInd:LinIndEx3` shows that $\mathbf{v}_{3}$ is linearly dependent on $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$.
 
 However, every subset of $S$ containing precisely two vectors will be linearly independent, as $S$ contains no two vectors that are multiples of each other.
 

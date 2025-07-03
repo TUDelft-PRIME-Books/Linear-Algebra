@@ -55,7 +55,7 @@ is called the $(i,j)$-th **cofactor** of $A$.
 
 ::::::
 
-This is an example of a so-called **recursive** definition. The evaluation of an $n$ by $n$-determinant is reduced to the evaluation of $n$-determinants 'one size smaller'. By repeating this reduction we get smaller and smaller determinants and end up with $2\times2$-$determinants as defined in {prf:ref}`Def:CrossProduct:2x2determinant`. 
+This is an example of a so-called **recursive** definition. The evaluation of an $n\times n$-determinant is reduced to the evaluation of $n$ determinants that are 'one size smaller'. By repeating this reduction we get smaller and smaller determinants and end up with $2\times2$-determinants as defined in {prf:ref}`Def:CrossProduct:2x2determinant`. 
 And the formula also works for $2 \times 2$-matrices:
 
 $$
@@ -89,7 +89,8 @@ $$
 1\cdot\left|\begin{array}{cc}  5 & 2 \\ 3  & 1  \end{array}\right|+
 2\cdot\left|\begin{array}{cc}  5 & 2  \\ 4 & 3  \end{array}\right|\\
 &=&
-2\cdot (4-9) -   (5-6) + 2\cdot (15-8) = 5
+2\cdot (4-9) -   (5-6) + 2\cdot (15-8) \\
+&=& 5
 \end{array}
 $$
 
@@ -102,7 +103,8 @@ $$
 2\cdot\left|\begin{array}{cc}  3&4 \\ 4&3  \end{array}\right|+
 1\cdot\left|\begin{array}{cc}  3&4 \\ 5&2 \end{array}\right|\\
 &=&
-2\cdot (15-8) -   2\cdot (9-16) +  (6-20) = 14.
+2\cdot (15-8) -   2\cdot (9-16) +  (6-20) \\
+&=& 14.
 \end{array}
 $$
 
@@ -132,7 +134,7 @@ $$
 
 For instance, on the diagonal all signs are $+$.
 
-For the $4\times 4$ {prf:ref}`Ex:DetCofactor:4x4Det` we could take advantage of the two zeros in the first column.
+For the $4\times 4$-determinant in {prf:ref}`Ex:DetCofactor:4x4Det` we could take advantage of the two zeros in the first column.
 For an $n\times n$-matrix without zeros the complete expansion will contain $n\cdot (n-1) \cdot \cdots \cdot 3 \cdot 2 \cdot 1 = n!$ products.
 We have already seen in the previous section
 
@@ -325,12 +327,17 @@ The next example is meant to illustrate a more general property.
 ::::::{prf:example}
 :label: Ex:DetCofactors:Triangular
 
-The determinant of the matrix $A = \left(\begin{array}{cccc}
+The determinant of the matrix
+
+$$
+A = \left(\begin{array}{cccc}
 2 & 3 & -1 & 2 \\
 0 & 3 & 5 & -9 \\
 0 & 0 & 4 & 2 \\
 0  & 0 & 0 & -1
-\end{array} \right)$  
+\end{array} \right)
+$$  
+
 can be quickly found by expanding along columns from left to right.
 
 $$
@@ -361,25 +368,25 @@ $$
 
 ::::::
 
-The matrix $A$ is an example of what is called an upper triangular matrix.
+The matrix $A$ is an example of what is called an upper-triangular matrix.
 
 ::::::{prf:definition}
 :label: Dfn:DetCofactors:TriangularMatrix
 
-A square matrix $A$ is called an **upper triangular matrix**, if all the elements below the diagonal are $0$.
-Formally, for an upper triangular matrix we have
+A square matrix $A$ is called an **upper-triangular matrix**, if all the elements below the diagonal are $0$.
+Formally, for an upper-triangular matrix we have
 
 $$
 a_{ij} = 0 \quad \text{if} \quad i > j.
 $$
 
-In the same manner we can define **lower triangular matrices**.
+In the same manner we can define **lower-triangular matrices**.
 
-A **triangular matrix** is a matrix that is either an upper triangular or a lower triangular matrix.
+A **triangular matrix** is a matrix that is either an upper-triangular matrix or a lower-triangular matrix.
 
 ::::::
 
-Note that a diagonal matrix is both upper and lower triangular.
+Note that a diagonal matrix is both an upper-triangular matrix and a lower-triangular matrix.
 
 The property we hinted at in {prf:ref}`Ex:DetCofactors:Triangular` is captured in the following proposition.
 
@@ -394,7 +401,7 @@ For a triangular matrix the determinant is equal to the product of the entries o
 :class: tudproof
 
 We can use the same strategy as in {prf:ref}`Ex:DetCofactors:Triangular`.
-That is, for an upper triangular matrix expand along the columns from left to right, for a lower triangular matrix
+That is, for an upper-triangular matrix expand along the columns from left to right, for a lower-triangular matrix
 expand along the rows from top to bottom.
 
 ::::::
@@ -413,15 +420,15 @@ A triangular matrix is invertible if and only if it has a non-zero determinant.
 ::::::{admonition} Proof of {prf:ref}`Prop:DetCofactors:InvertibleTriangular`
 :class: tudproof
 
-Let us first consider the case of an $n \times n$ upper triangular matrix $U$, with entries $u_{ij}$. Such a matrix is an echelon matrix. It is invertible if and only if it has $n$ linearly independent columns, which is the case if all diagonal elements $u_{ii}$ are non-zero. And this last is equivalent to
+Let us first consider the case of an $n \times n$ upper-triangular matrix $U$, with entries $u_{ij}$. Such a matrix is an echelon matrix. It is invertible if and only if it has $n$ linearly independent columns, which is the case if all diagonal elements $u_{ii}$ are non-zero. And this last is equivalent to
 
 $$
 u_{11}\cdot u_{22}  \cdot  \ldots \cdot u_{nn} = \det{U} \neq 0.
 $$
 
-For a lower triangular matrix $L$ a similar argument can be given.
+For a lower-triangular matrix $L$ a similar argument can be given.
 
-(Or we can consider $L^T$, which is an upper triangular matrix, and make use of the upcoming {prf:ref}`Prop:DetCofactors:DetTranspose`.)
+(Or we can consider $L^T$, which is an upper-triangular matrix, and make use of the upcoming {prf:ref}`Prop:DetCofactors:DetTranspose`.)
 
 ::::::
 
@@ -530,7 +537,7 @@ In a similar way, the property $\operatorname{det}\big(A^T\big) = \operatorname{
 :url: https://embed.grasple.com/exercises/57cd522b-6096-416a-a739-fea5cbbc77c9?id=93139
 :label: grasple_exercise_5_2_5
 :dropdown:
-:description: To compute the determinant of an almost upper triangular $4\times4$-matrix.
+:description: To compute the determinant of an almost upper-triangular $4\times4$-matrix.
 
 ::::::
 

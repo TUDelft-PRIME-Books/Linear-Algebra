@@ -63,7 +63,7 @@ $$
   x_1 + 2x_1x_2 - 3x_2 = 5
 $$
 
-is not linear because of the nonlinear term $2x_1x_2$.
+is not linear because of the non-linear term $2x_1x_2$.
 
 ::::
 

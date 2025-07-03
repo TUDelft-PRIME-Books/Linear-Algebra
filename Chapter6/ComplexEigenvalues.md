@@ -299,7 +299,7 @@ b/r & a/r \end{array}\right)
 $$
 
 So the 'action' of the matrix $A = \left(\begin{array}{cc} a & -b \\ b & a \end{array}\right)$
-on a vector $\vect{x}$ is a (counterclockwise) rotation over the angle $\varphi$ followed by
+on a vector $\vect{x}$ is a (anticlockwise) rotation over the angle $\varphi$ followed by
 a scaling (stretching/dilatation) with a factor $r$.
 
 ::::::

@@ -63,7 +63,7 @@ $$
 \tilde{\vect{v}} = \left(\begin{array}{c} c \\ d \\ 0 \end{array}\right).
 $$
 
-Thus we embed the plane into $\R^3$ as the $x_1$-$x_2$-plane. See {numref}`Figure %s <Fig:DetGeometric:OrientedArea1>`.
+Thus we embed the plane into $\R^3$ as the $(x_1,x_2)$-plane. See {numref}`Figure %s <Fig:DetGeometric:OrientedArea1>`.
 
 ```{applet}
 :url: det_geometric/orientedarea1
@@ -91,7 +91,7 @@ Now what about the sign here?
 ::::::{prf:proposition}
 :label: Prop:DetGeometric:DirectedAngle
 
-$ad - bc = \norm{\vect{u}}\norm{\vect{v}}\sin(\varphi)$, where $\varphi$ is the angle from $\vect{u}$ counterclockwise to $\vect{v}$.
+$ad - bc = \norm{\vect{u}}\norm{\vect{v}}\sin(\varphi)$, where $\varphi$ is the angle from $\vect{u}$ anticlockwise to $\vect{v}$.
 We will call this the **directed angle** from $\vect{u}$ to $\vect{v}$.
 
 ::::::
@@ -147,7 +147,7 @@ ad - bc &=&
 \end{array}
 $$
 
-where $\varphi$ is the angle from $\vect{u}$  counterclockwise to $\vect{v}$.
+where $\varphi$ is the angle from $\vect{u}$  anticlockwise to $\vect{v}$.
 
 We see that $ad-bc$ is equal to the area of the parallelogram if the directed angle from $\vect{u}$ to $\vect{v}$ is less then $\pi$, and minus this area if the angle is between $\pi$ and $2\pi$. We call this the _signed area_.
 
@@ -282,7 +282,7 @@ Multiplying one of the vectors by a factor $k$ changes the area with a factor $|
 </li>
 <li>
 
-$\det{(\vect{e}_1,\vect{e}_2)} $ is the area of the unit square, and the smallest angle from $\vect{e}_1$ to $\vect{e}_2$ is indeed counterclockwise.
+$\det{(\vect{e}_1,\vect{e}_2)} $ is the area of the unit square, and the smallest angle from $\vect{e}_1$ to $\vect{e}_2$ is indeed anticlockwise.
 
 </li>
 
@@ -325,7 +325,7 @@ Since the two triangles $OCE$ and $ABD$ are congruent and they have equal areas.
 
 ```{applet}
 :url: det_geometric/linearity_two
-:fig: Images/Fig-DetGeometric-SumRule.svg
+:fig: Images/Fig-DetGeometric-SumRuleNeg.svg
 :name: Fig:DetGeometric:Linearity2
 :position: 2,2
 :class: dark-light
@@ -352,7 +352,7 @@ There are more pairwise orientations to consider, but the idea is hopefully clea
 ## $3\times3$-determinants: volume and orientation
 
 Suppose $\vect{a}, \vect{b}, \vect{c}$ are three vectors in $\R^3$. For the moment, suppose they are linearly independent. So
-$\vect{a}, \vect{b}$ are not multiples of each other, and $\vect{c}$ is not in the plane spanned by $\vect{a}, \vect{b}$.
+$\vect{a}$ and $\vect{b}$ are not multiples of each other, and $\vect{c}$ is not in the plane spanned by $\vect{a}$ and $\vect{b}$.
 Then the three vectors can be interpreted as three edges of a parallelepiped.
 
 ```{applet}
@@ -421,8 +421,11 @@ $$
 and swapping two vectors gives a minus sign:
 
 $$
-\vect{c}\ip(\vect{a} \times  \vect{b})= - \vect{c}\ip(\vect{b} \times  \vect{a}), \quad
-\vect{c}\ip(\vect{a} \times  \vect{b})= - \vect{a}\ip(\vect{c} \times  \vect{b}), \,\,\ldots
+\begin{align*}
+\vect{c}\ip(\vect{a} \times  \vect{b}) &= - \vect{c}\ip(\vect{b} \times  \vect{a}) \\
+&= -\vect{a}\ip(\vect{c} \times  \vect{b}) \\
+&= -\vect{b}\ip(\vect{a} \times  \vect{c}).
+\end{align*}
 $$
 
 ::::::
@@ -465,7 +468,7 @@ $$
 
 ::::::
 
-The next proposition expresses a 3×3 determinant in terms of three 2×2 determinants. This expression will be the key to define the determinant of a general n×n matrix in the next section.
+The next proposition expresses a $3\times3$-determinant in terms of three $2\times2$-$determinants. This expression will be the key to define the determinant of a general $n\times n$-matrix in the next section.
 
 ::::::{prf:proposition}
 :label: Prop:DetGeometric:ColExpand
@@ -494,23 +497,19 @@ $$
 The identities are verified by evaluating the triple product:
 
 $$
+\begin{align*}
 \left(\begin{array}{c}  a_1 \\  a_2\\ a_3 \end{array} \right)
  \ip
 \left( \left(\begin{array}{c}  b_1 \\  b_2\\ b_3 \end{array} \right)
  \times \left(\begin{array}{c}  c_1 \\  c_2\\ c_3 \end{array} \right)
 \right)
- =
+ &=
 \left(\begin{array}{c}  a_1 \\  a_2\\ a_3 \end{array} \right)
  \ip
-\left(\begin{array}{c}  b_2c_3-b_3c_2 \\  b_3c_1-b_1c_3\\ b_1c_2-b_2c_1 \end{array} \right)
- =
-$$
-
-$$
-\begin{array}{cl}
-=& a_1(b_2c_3 - b_3c_2) - a_2(b_1c_3 -b_3c_1) + a_3(b_1c_2 - b_2c_1)\\
-=& a_1b_2c_3 - a_1b_3c_2 - a_2b_1c_3 + a_2b_3c_1 + a_3b_1c_2 - a_3b_2c_1.
-\end{array}
+\left(\begin{array}{c}  b_2c_3-b_3c_2 \\  b_3c_1-b_1c_3\\ b_1c_2-b_2c_1 \end{array} \right) \\
+&= a_1(b_2c_3 - b_3c_2) - a_2(b_1c_3 -b_3c_1) + a_3(b_1c_2 - b_2c_1)  \\
+&= a_1b_2c_3 - a_1b_3c_2 - a_2b_1c_3 + a_2b_3c_1 + a_3b_1c_2 - a_3b_2c_1.
+\end{align*}
 $$
 
 ::::::
@@ -564,7 +563,7 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 :url: https://embed.grasple.com/exercises/3126529d-db82-43e2-862d-7f013f39f619?id=93128
 :label: grasple_exercise_5_1_1
 :dropdown:
-:description: Area of parallelogram in the plane (with vertex at (0,0)).
+:description: Area of parallelogram in the plane (with vertex at $(0,0)$).
 
 ::::::
 
@@ -573,7 +572,7 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 :url: https://embed.grasple.com/exercises/13e76393-8f38-48aa-9685-2132208a0cc8?id=93131
 :label: grasple_exercise_5_1_2
 :dropdown:
-:description: Area of parallelogram in the plane (no vertex at (0,0)).
+:description: Area of parallelogram in the plane (no vertex at $(0,0)$).
 
 ::::::
 
@@ -591,7 +590,7 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 :url: https://embed.grasple.com/exercises/2d846d56-3729-468e-80d8-74ec6d348719?id=93134
 :label: grasple_exercise_5_1_4
 :dropdown:
-:description: Volume of parallelepiped (with vertex at (0,0,0)).
+:description: Volume of parallelepiped (with vertex at $(0,0,0)$).
 
 ::::::
 
@@ -600,7 +599,7 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 :url: https://embed.grasple.com/exercises/71053b23-02ab-4ffb-bcda-70f808a9910a?id=74408
 :label: grasple_exercise_5_1_5
 :dropdown:
-:description: Volume of parallelepiped (with vertex at (0,0,0)).
+:description: Volume of parallelepiped (with vertex at $(0,0,0)$).
 
 ::::::
 
@@ -615,7 +614,7 @@ $\det{I} =  \left|\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{ar
 
 ::::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/179cf12-fd87-41a2-8532-c1fbe97c10e2?id=121860
+:url: https://embed.grasple.com/exercises/6179cf12-fd87-41a2-8532-c1fbe97c10e2?id=121860
 :label: grasple_exercise_5_1_7
 :dropdown:
 :description: On the connection between determinant, cross product and volume.

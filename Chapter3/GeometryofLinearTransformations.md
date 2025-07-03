@@ -475,7 +475,7 @@ This is indeed the standard matrix of a rotation.
 ::::::{admonition} Proof of {prf:ref}`Prop:GeomLinTrans:RotMatR2`
 :class: tudproof
 
-Suppose we take the vector $\mathbf{e}_{1}$ and rotate it (counterclockwise) over an angle $\theta$. Where do we end up? By definition, the $x$-coordinate of our new location will be $\cos(\theta)$ and its $y$-coordinate will be $\sin(\theta)$. Similarly, if we start with the vector $\mathbf{e}_{2}$ and rotate that over the angle $\theta$, the $x$-coordinate of our new point will be $-\sin(\theta)$. This is illustrated in {numref}`Figure %s <Fig:GeomLinTrans:RotinPlane>`.
+Suppose we take the vector $\mathbf{e}_{1}$ and rotate it (anticlockwise) over an angle $\theta$. Where do we end up? By definition, the $x$-coordinate of our new location will be $\cos(\theta)$ and its $y$-coordinate will be $\sin(\theta)$. Similarly, if we start with the vector $\mathbf{e}_{2}$ and rotate that over the angle $\theta$, the $x$-coordinate of our new point will be $-\sin(\theta)$. This is illustrated in {numref}`Figure %s <Fig:GeomLinTrans:RotinPlane>`.
 
 ::::{figure} Images/Fig-GeomLinTrans-RotinPlane.svg
 :name: Fig:GeomLinTrans:RotinPlane

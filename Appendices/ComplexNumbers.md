@@ -685,13 +685,13 @@ As a consequence, we see that $z^3+3z^2+z-5=(z-1)(z^2+4z+5)$, so it equals $0$ i
 
 To consider the multiplication of complex numbers, it is best to first consider the polar coordinates of a complex number. Polar coordinates is a concept that works for points in a plane. The idea is that instead of looking at the $x$ and $y$ coordinates of a point, we describe the point by the distance to the origin and the direction from the origin.
 
-The distance from zero to the point in the complex plane, we call the _modulus_ $|z|$. By using Pythagoras theorem and with $z=a+bi$, it holds that $|z|=\sqrt{a^2+b^2}$ and equivalently $|z|=\sqrt{z\overline{z}}$. We often denote the modulus by the symbol $r$, so $r=|z|$. The direction is designated by the angle measured from the positive real axis in a counterclockwise direction towards the ray from zero through the point. This angle, we call the _argument_ or $\arg(z)$ as seen in {numref}`Figure %s <Fig:ComplexNumbers:modarg>`. We often denote the argument by the symbol $\theta$, so $\theta=\arg(z)$. The argument uses the convention similar to the unit circle: the direction straight the right corresponds to $0$ radians, up corresponds to $\frac{1}{2}\pi$ radians, to the left to $\pi$ radians and down to $\frac{3}{2}\pi$ radians.
+The distance from zero to the point in the complex plane, we call the _modulus_ $|z|$. By using Pythagoras theorem and with $z=a+bi$, it holds that $|z|=\sqrt{a^2+b^2}$ and equivalently $|z|=\sqrt{z\overline{z}}$. We often denote the modulus by the symbol $r$, so $r=|z|$. The direction is designated by the angle measured from the positive real axis in a anticlockwise direction towards the ray from zero through the point. This angle, we call the _argument_ or $\arg(z)$ as seen in {numref}`Figure %s <Fig:ComplexNumbers:modarg>`. We often denote the argument by the symbol $\theta$, so $\theta=\arg(z)$. The argument uses the convention similar to the unit circle: the direction straight the right corresponds to $0$ radians, up corresponds to $\frac{1}{2}\pi$ radians, to the left to $\pi$ radians and down to $\frac{3}{2}\pi$ radians.
 
 :::{figure} Images/Fig-ComplexNumbers-modarg.svg
 :name: Fig:ComplexNumbers:modarg
 :class: dark-light
 
-The polar coordinates of a point in the complex plane $\C$ are the distance $r=|z|$ from zero to the point and the angle $\theta=\arg(z)$ measured from the positive real axis in a counterclockwise direction towards the ray from zero through the point.
+The polar coordinates of a point in the complex plane $\C$ are the distance $r=|z|$ from zero to the point and the angle $\theta=\arg(z)$ measured from the positive real axis in a anticlockwise direction towards the ray from zero through the point.
 
 :::
 

@@ -221,7 +221,7 @@ $$
 A=LU
 $$
 
-where $L$ is  an $n\times n$ lower triangular matrix with $1$s on the diagonal, and  $U$ an $n\times n$ upper triangular matrix. So, 
+where $L$ is  an $n\times n$ lower-triangular matrix with $1$s on the diagonal, and  $U$ an $n\times n$ upper-triangular matrix. So, 
 
 $$
 L=
@@ -322,7 +322,7 @@ $$
 
 The numbers $2/3$ and $1/3$ are called *multipliers*.
 
-A second row reduction step, involving the multiplier $1/2$,  leads to an echelon/upper triangular matrix.
+A second row reduction step, involving the multiplier $1/2$,  leads to an echelon/upper-triangular matrix.
 
 $$
 
@@ -383,7 +383,7 @@ $$
 
 $$
 
-The echelon matrix $A_3$ can act as our upper triangular matrix $U$, and the above computations
+The echelon matrix $A_3$ can act as our upper-triangular matrix $U$, and the above computations
 can be summarised as
 
 $$
@@ -412,7 +412,7 @@ $$
 
 $$
 
-which is indeed a product of a lower triangular matrix $L$  (with $1$s on its diagonal) and an upper triangular matrix $U$.
+which is indeed a product of a lower-triangular matrix $L$  (with $1$s on its diagonal) and an upper-triangular matrix $U$.
 
 ::::::
 
@@ -653,7 +653,7 @@ $$
                     0 & 1 & 5
                   \end{pmatrix}. 
 $$
-The next logical step towards an echelon matrix would be a row swap.  But then the lower triangular structure of $L$ will be broken.  In {numref}`Subsection %s <Subsec:LUdecomp:PLUdecomp>`  we will study what we can do in such a situation.
+The next logical step towards an echelon matrix would be a row swap.  But then the lower-triangular structure of $L$ will be broken.  In {numref}`Subsection %s <Subsec:LUdecomp:PLUdecomp>`  we will study what we can do in such a situation.
 
 ::::::
 
@@ -674,16 +674,16 @@ We collect a few properties of triangular matrices that have their value of thei
 ::::::{prf:proposition}
 :label: Prop:LUdecomp:L-properties
 
-Suppose $A$ and $B$ are lower triangular $n \times n$-matrices with $1$s on their diagonals.
+Suppose $A$ and $B$ are lower-triangular $n \times n$-matrices with $1$s on their diagonals.
 Then the following properties hold.
 
 ::::{latexlist}
 :enumerated: true
 :type: i
 
-\item $AB$ is also a lower triangular matrix with $1$s on its diagonal.
+\item $AB$ is also a lower-triangular matrix with $1$s on its diagonal.
 
-\item $A^{-1}$ is also a lower triangular matrix with $1$s on its diagonal.
+\item $A^{-1}$ is also a lower-triangular matrix with $1$s on its diagonal.
 
 ::::
 
@@ -705,7 +705,7 @@ The best would be to think of a proof yourself, but you can also have a peek at 
 :type: i
 
 \item  
-Suppose $A$ and $B$ are lower triangular matrices with $1$s on their diagonals.
+Suppose $A$ and $B$ are lower-triangular matrices with $1$s on their diagonals.
 
 One way to prove that $AB$ also has these properties is to use the column-row expansion of the product.
 (Cf. {numref}`Exc:MatrixOps:ColumnRowExpansion`.) 
@@ -737,11 +737,11 @@ $$
   \end{array}.
 $$
 
-This is a lower triangular matrix with a $1$ on position $(k,k)$ and for the rest $0$s on the diagonal.
+This is a lower-triangular matrix with a $1$ on position $(k,k)$ and for the rest $0$s on the diagonal.
 Adding these $n$ column-row products gives a matrix of the required form.
 
 \item
-Next suppose that $A$ is an lower triangular matrix with $1$s on the diagonal.
+Next suppose that $A$ is an lower-triangular matrix with $1$s on the diagonal.
 If we apply the algorithm of {prf:ref}`Prop:MatrixInv:Algorithm` to find the inverse using the augmented matrix 
 
 $$
@@ -951,7 +951,7 @@ $$
    L_1L_2L_3\cdots L_{n-1}\, A =  U
 $$
 
-amounts to a top-down row reduction of $A$ to the upper triangular matrix $U$.
+amounts to a top-down row reduction of $A$ to the upper-triangular matrix $U$.
 
 ::::::
 
@@ -998,8 +998,8 @@ it follows that
   L_2^{-1}L_1 = U_2U_1^{-1}.
 ::::
 
-From {prf:ref}`Prop:LUdecomp:L-properties` we know that $L_2^{-1}$ is a lower triangular matrix with $1$s on the diagonal,
-and that the product $L_2^{-1}L_1$ is also of this form. At the same time the product $U_2U_1^{-1}$ must be an upper triangular matrix with $1$s on its diagonal.  Then Equation {eq}`Eq:LUdecomp:EqualityL1L2U1U2` implies that
+From {prf:ref}`Prop:LUdecomp:L-properties` we know that $L_2^{-1}$ is a lower-triangular matrix with $1$s on the diagonal,
+and that the product $L_2^{-1}L_1$ is also of this form. At the same time the product $U_2U_1^{-1}$ must be an upper-triangular matrix with $1$s on its diagonal.  Then Equation {eq}`Eq:LUdecomp:EqualityL1L2U1U2` implies that
 
 $$
  L_2^{-1}L_1 = U_2U_1^{-1} = I,
@@ -1187,7 +1187,7 @@ $L =  \begin{pmatrix} 1 &   \\
 </li>       
  </ul>       
 
-an $m\times m$ lower triangular matrix  with $1$s on its diagonal,        
+an $m\times m$ lower-triangular matrix  with $1$s on its diagonal,        
 
 and  
         
@@ -1444,7 +1444,7 @@ the result immediately follows.
 ::::::{prf:theorem} Existence of a $PLU$ Decomposition
 :label: LUDecomp:existencePLU
 
-Suppose that $A$ is an $m\times n$-matrix with real coefficients, and let $m \leq n$. Then there exist a permutation matrix $P$, a lower triangular matrix $L$ and an echelon matrix $U$ such that
+Suppose that $A$ is an $m\times n$-matrix with real coefficients, and let $m \leq n$. Then there exist a permutation matrix $P$, a lower-triangular matrix $L$ and an echelon matrix $U$ such that
 
 $$ 
   PA = LU. 
@@ -1743,8 +1743,8 @@ Suppose $A$ is an invertible $n\times n$-matrix and $\vect{b}$ an arbitrary vect
 \item Row reduction  of  $A$ to echelon form requires  $\frac23n^3-\frac12n^2-\frac16n$ (arithmetic) operations.
 \item  Row reduction of the augmented matrix  $(A | \vect{b})$ to echelon form 
 requires $\frac23n^3+\frac12n^2-\frac76n$  operations.
-\item  Solving a linear system  $L\vect{y} = \vect{b}$ for  an $n \times n$  lower triangular matrix $L$ with $1$s on the diagonal requires  $n(n-1)$ operations.
-\item Solving a linear system  $U\vect{x} = \vect{y}$ for  an $n \times n$  upper triangular matrix $U$  requires  $n^2$ operations.
+\item  Solving a linear system  $L\vect{y} = \vect{b}$ for  an $n \times n$  lower-triangular matrix $L$ with $1$s on the diagonal requires  $n(n-1)$ operations.
+\item Solving a linear system  $U\vect{x} = \vect{y}$ for  an $n \times n$  upper-triangular matrix $U$  requires  $n^2$ operations.
 \label{Item:Prop:LUdecomp:BasicProp:Transpose}
 :::::
 
@@ -1793,8 +1793,8 @@ $$
 
 \item Row reduction  of  $A$ to echelon form requires  $\frac23n^3-\frac12n^2\-\frac16n$ (arithmetic) operations
 \item Row reduction of the augmented matrix  $(A | \vect{b})$ to echelon form requires $\frac23n^3+\frac32n^2\-\frac76n$  operations.
-\item Solving linear system  $L\vect{y} = \vect{b}$ for  an $n \times n$  lower triangular matrix $L$ with $1$s on the diagonal requires  $n(n-1)$ operations.
-\item Solving linear system  $U\vect{y} = \vect{b}$ for  an $n \times n$  upper triangular matrix $L$ with $1$s on the diagonal requires  $n^2$ operations.
+\item Solving linear system  $L\vect{y} = \vect{b}$ for  an $n \times n$  lower-triangular matrix $L$ with $1$s on the diagonal requires  $n(n-1)$ operations.
+\item Solving linear system  $U\vect{y} = \vect{b}$ for  an $n \times n$  upper-triangular matrix $L$ with $1$s on the diagonal requires  $n^2$ operations.
      
 :::::
 
