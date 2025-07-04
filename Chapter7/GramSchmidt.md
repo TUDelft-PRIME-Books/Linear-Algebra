@@ -686,7 +686,7 @@ The last exercises are more conceptual than computational.
 :url: https://embed.grasple.com/exercises/fb9adc06-f068-4c5b-96ac-575415620c82?id=87821
 :label: grasple_exercise_7_3_15
 :dropdown:
-:description: T/F question about properties of Gram Schmidt process.
+:description: True/False question about properties of the Gram-Schmidt process.
 
 ::::
 

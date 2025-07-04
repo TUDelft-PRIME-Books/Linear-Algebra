@@ -113,6 +113,33 @@ That the second column is as claimed, too, can be shown analogously. We leave it
 
 ::::::
 
+:::{exercise}
+:label: Ex:GeomLinTrans:ProjMat1
+
+Show that the second column of the standard matrix $P$ of the projection $T_{\mathcal{L}}$ on the line $\mathcal{L}$ in the plane that makes an angle $\theta$ with the positive $x$-axis is as given in {prf:ref}`Prop:GeomLinTrans:MatofProjonLine`.
+
+:::
+
+:::::{admonition} Solution to {numref}`Ex:GeomLinTrans:ProjMat1`
+:class: solution, dropdown
+
+Consider {numref}`Figure %s <Fig:GeomLinTrans:MatofProjonLine2>`.
+
+::::{figure} Images/Fig-GeomLinTrans-MatofProjonLine2.svg
+:name: Fig:GeomLinTrans:MatofProjonLine2
+:class: dark-light
+
+The projection of $\mathbf{e}_{2}$ on the line $\mathcal{L}$ that makes an angle $\theta$ with the positive $x$-axis. Note that the length of $T_{\mathcal{L}}(\mathbf{e}_{2})$ is $\sin(\theta)$ since the length of $\mathbf{e}_{2}$ is $1$.
+::::
+
+From this we can conclude that the second column of $P$ is
+
+$$
+T_{\mathcal{L}}(\mathbf{e}_{2}) = \proj_{\mathcal{L}}(\mathbf{e}_{2}) = \sin(\theta)\begin{pmatrix}\cos(\theta)\\\sin(\theta)\end{pmatrix} = \begin{pmatrix}\sin(\theta)\cos(\theta)\\\sin^2(\theta)\end{pmatrix}.
+$$
+
+:::::
+
 Often, you might have not the angle $\mathcal{L}$ makes with the positive $x$-axis, but rather a vector $\mathbf{v}$ on $\mathcal{L}$. In this case, too, you can find the standard matrix of the projection on $\mathcal{L}$ quite easily.
 
 ::::::{prf:proposition}

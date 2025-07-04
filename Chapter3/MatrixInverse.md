@@ -1574,7 +1574,7 @@ The remaining exercises have a more theoretic flavour.
 :url: https://embed.grasple.com/exercises/ee4bb61e-6939-4074-a556-b82f3d0e8c28?id=71091
 :label: grasple_exercise_3_4_14
 :dropdown:
-:description: 'True/False: Every elementary matrix is invertible.'
+:description: 'True/False? Every elementary matrix is invertible.'
 ::::::
 
 ::::::{grasple}
@@ -1582,7 +1582,7 @@ The remaining exercises have a more theoretic flavour.
 :url: https://embed.grasple.com/exercises/1732d75b-2027-4a92-b8bb-c98bda62475d?id=71093
 :label: grasple_exercise_3_4_15
 :dropdown:
-:description: 'True/False: If $A$ and $B$ are invertible, then so is $A+B$.'
+:description: 'True/False? If $A$ and $B$ are invertible, then so is $A+B$.'
 ::::::
 
 ::::::{grasple}
@@ -1590,7 +1590,7 @@ The remaining exercises have a more theoretic flavour.
 :url: https://embed.grasple.com/exercises/f8602d4f-57b7-4752-9edc-69c83069fe36?id=71095
 :label: grasple_exercise_3_4_16
 :dropdown:
-:description: 'True/False: If $A$ and $B$ are singular, then so is $A+B$.'
+:description: 'True/False? If $A$ and $B$ are singular, then so is $A+B$.'
 ::::::
 
 ::::::{grasple}
@@ -1598,7 +1598,7 @@ The remaining exercises have a more theoretic flavour.
 :url: https://embed.grasple.com/exercises/a8ea864d-1164-4afc-9a24-c0a126ee8e54?id=71097
 :label: grasple_exercise_3_4_17
 :dropdown:
-:description: 'True/False: If $A$ is row equivalent to $I$, then so is $A^2$. '
+:description: 'True/False? If $A$ is row equivalent to $I$, then so is $A^2$. '
 ::::::
 
 ::::::{grasple}

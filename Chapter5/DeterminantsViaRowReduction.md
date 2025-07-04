@@ -1054,7 +1054,7 @@ This settles all matters.
 :url: https://embed.grasple.com/exercises/5b89a008-2e3d-48a5-a764-0b1b6a3ec4dc?id=93157
 :label: grasple_exercise_5_3_23 
 :dropdown:
-:description: (True/False) $\det(A) = 0 \iff A$  has a row that is a multiple of another row.
+:description: True or false? $\det(A) = 0 \iff A$  has a row that is a multiple of another row.
 
 ::::::
 

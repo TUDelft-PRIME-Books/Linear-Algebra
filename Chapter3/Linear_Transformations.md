@@ -1555,7 +1555,7 @@ $$
 :url: https://embed.grasple.com/exercises/94d618e0-de21-491c-ad44-8e29974e0303?id=71098
 :label: grasple_exercise_3_1_22
 :dropdown:
-:description: (T/F) If $\{\vect{v}_1,\vect{v}_2,\vect{v}_3\}$ is linearly dependent, then $\{T(\vect{v}_1),T(\vect{v}_2),T(\vect{v}_3)\}$ is also linearly dependent?
+:description: True or false? If $\{\vect{v}_1,\vect{v}_2,\vect{v}_3\}$ is linearly dependent, then $\{T(\vect{v}_1),T(\vect{v}_2),T(\vect{v}_3)\}$ is also linearly dependent.
 ::::::
 
 ::::::{grasple}
@@ -1563,5 +1563,5 @@ $$
 :url: https://embed.grasple.com/exercises/f983b627-10c2-4dd6-a273-2a33e99d0ded?id=71101
 :label: grasple_exercise_3_1_23
 :dropdown:
-:description: (T/F) If $\{\vect{v}_1,\vect{v}_2,\vect{v}_3\}$ is linearly independent, then $\{T(\vect{v}_1),T(\vect{v}_2),T(\vect{v}_3)\}$ is also linearly independent?
+:description: True or false? If $\{\vect{v}_1,\vect{v}_2,\vect{v}_3\}$ is linearly independent, then $\{T(\vect{v}_1),T(\vect{v}_2),T(\vect{v}_3)\}$ is also linearly independent.
 ::::::

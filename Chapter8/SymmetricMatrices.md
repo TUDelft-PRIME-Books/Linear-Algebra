@@ -1339,7 +1339,7 @@ The following exercise have a more theoretical flavour.
 :url: https://embed.grasple.com/exercises/6e0ebf73-fba2-46d0-aaa8-44e53ea07e53?id=88034
 :label: grasple_exercise_8_1_16 
 :dropdown:
-:description:  To think about  symmetric versus orthogonally diagonalisable. (true/false questions).
+:description:  True/False question to think about  symmetric versus orthogonally diagonalisable.
 ::::
 
 

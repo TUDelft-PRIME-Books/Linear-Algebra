@@ -933,85 +933,6 @@ Both curves have the coordinates axes as axes of symmetry. In this context they 
 (Standard) Hyperbola and Ellipse.
 :::
 
-::::{exercise}
-:label: Exc:QuadForms:DegenerateStandardForm
-
-What happens if in Equation {eq}`Eq:ConicSec:CentralConic` the coefficient $f$ is equal to zero?
-(There are actually three cases to consider!)
-
-::::
-
-
-::::{admonition} Solution to {numref}`Exc:QuadForms:DegenerateStandardForm`
-:class: solution, dropdown
-
-
-We have to look at the solutions $(x_1, x_2)$ of the equation $ax_1^2 + bx_1x_2 + cx_2^2 = 0$, where not all three coefficients $a,b,c$ are zero.
-
-
-For convenience's sake we can assume that $a \geq 0$.  First suppose that $a >0$. 
-(We leave the case where $a = 0$ to the reader.)  
-
-Then we can rewrite the equation as 
-
-$$
- ax_1^2 + 2bx_1x_2 + cx_2^2 = 0,
-$$
-
-or, equivalently, as
-
-$$
- \vect{x} ^TA\vect{x} =  \begin{pmatrix} x_1 & x_2   \end{pmatrix}\begin{pmatrix} a & b \\ b & c   \end{pmatrix}
- \begin{pmatrix} x_1 \\ x_2   \end{pmatrix}.
-$$ 
-
-Completing squares gives the equivalent equation
-
-
-:::{math}
-:label: Eq:QuadForms:DegenerateForm
-
-   \left(ax_1 + \frac{b}{a}x_2\right)^2 + \left(c - \frac{b^2}{a^2}\right)x_2^2 = 0.
-
-:::
-
-We see that all depends on the sign of $\left(c - \dfrac{b^2}{a^2}\right)$ (i.e., to the 'definiteness' of the matrix $A$).
-
-If  $D = \left(c - \dfrac{b^2}{a^2}\right) > 0$, the only solution $(x_1,x_2)$ of Equation {eq}`Eq:QuadForms:DegenerateForm`  is the **single point**  $(x_1,x_2) = (0,0)$.
-
-If $D = 0$, the solutions are given by points on the **line** with equation $ax_1 + \dfrac{b}{a}x_2 = 0$.
-
-Lastly, if  $D < 0$, say  $D = -d^2$, then Equation {eq}`Eq:QuadForms:DegenerateForm` simplifies to
-
-$$
-
-  \left(ax_1 + \frac{b}{a}x_2\right)^2 - d^2x_2^2 = 0.
-$$
-
-The term on the left can be factorised:
-
-$$
-
-  \left(ax_1 + \frac{b}{a}x_2 + dx_2\right)\left(ax_1 + \frac{b}{a}x_2 - dx_2\right) = 0
-$$
-
-The solutions then lie on one of the **two lines**  with the equations
-
-$$
-
-  \mathcal{L}_1: ax_1 + \left(\frac{b}{a} +d\right)x_2 = 0, \quad
-   \mathcal{L}_2: ax_1 + \left(\frac{b}{a} -    d\right)x_2 = 0.
-$$
-
-
-Note that these three possiblities exactly match the degenerate forms in 
-{numref}`Exc:QuadForms:DegenerateConics`.  
-
-
-
-::::
-
-
 ::::{prf:example}
 :label: Ex:QuadForms:StandardForm
 
@@ -1245,6 +1166,66 @@ The  ellipse with its principal axes.
 
 ::::
 
+::::{exercise}
+:label: Exc:QuadForms:DegenerateStandardForm
+
+What happens if in Equation {eq}`Eq:ConicSec:CentralConic` the coefficient $f$ is equal to zero?
+(There are actually three cases to consider!)
+
+::::
+
+
+::::{admonition} Solution to {numref}`Exc:QuadForms:DegenerateStandardForm`
+:class: solution, dropdown
+
+
+We have to look at the solutions $(x_1, x_2)$ of the equation $ax_1^2 + bx_1x_2 + cx_2^2 = 0$, where not all three coefficients $a,b,c$ are zero.
+
+We can rewrite the equation as
+
+$$
+\vect{x} ^TA\vect{x} =  \vect{0},\text{ with }\vect{x}=\begin{pmatrix} x_1 & x_2   \end{pmatrix}\text{ and }A=\begin{pmatrix} a & b \\ b & c   \end{pmatrix}.
+$$
+
+As $A$ is symmetric, it can be orthogonally diagonalised as $A=QDQ^T$, with $D$ a diagonal matrix with the eigenvalues $\lambda_1, \lambda_2$ of $A$ on the diagonal and $Q$ an orthogonal matrix with the corresponding eigenvectors as columns.
+
+The substitution $\vect{x} = Q\vect{y}$ transforms the equation to
+
+$$
+\vect{y}^TD\vect{y} = 0,
+$$
+
+or equivalently
+
+:::{math}
+:label: Eq:QuadForms:DegenerateStandardForm
+
+\lambda_1y_1^2 + \lambda_2y_2^2 = 0.
+:::
+
+
+We now consider three cases: $\lambda_1\lambda_2 > 0$, $\lambda_1\lambda_2 < 0$ and $\lambda_1\lambda_2 = 0$.
+
+For $\lambda_1\lambda_2 > 0$, the only solution to {eq}`Eq:QuadForms:DegenerateStandardForm` is $\vect{y} = \vect{0}$, which means that the only solution to the original equation is $\vect{x} = \vect{0}$, i.e. the conic section is the point $(x_1,x_2)=(0,0)$.
+
+If $\lambda_1\lambda_2 < 0$, the two solutions to {eq}`Eq:QuadForms:DegenerateStandardForm` are
+
+$$
+y_2 = \pm \sqrt{-\frac{\lambda_1}{\lambda_2}}y_1,
+$$
+
+which are are with respect to the $(y_1,y_2)$-coordinates two intersecting lines through the origin, with slopes $\pm \sqrt{-\frac{\lambda_1}{\lambda_2}}$. As the transformation $\vect{x} = Q\vect{y}$ is invertible, the two intersecting lines in the $(y_1,y_2)$-plane are transformed to two intersecting lines through the origin in the $(x_1,x_2)$-plane.
+
+Finally, consider the case $\lambda_1\lambda_2 = 0$. Then one of the eigenvalues is zero, say $\lambda_1 = 0$, and the other is non-zero, say $\lambda_2 \neq 0$. The equation {eq}`Eq:QuadForms:DegenerateStandardForm` then becomes
+
+$$
+\lambda_2y_2^2 = 0,
+$$
+
+which has the solution $y_2 = 0$. The other variable $y_1$ can take any value, so the solution set is the line $y_2 = 0$ in the $(y_1,y_2)$-plane. The transformation $\vect{x} = Q\vect{y}$ is still invertible, so the solution set in the $(x_1,x_2)$-plane is also a line, namely the line through the origin with direction vector $\vect{v}_1$, the eigenvector corresponding to the zero eigenvalue.
+
+::::
+
 
 ## Grasple exercises
 
@@ -1375,7 +1356,7 @@ The following exercises are a more theoretical.
 :url: https://embed.grasple.com/exercises/01a3d009-b2e0-4f2b-9d49-fcca955d6c5d?id=91048
 :label: grasple_exercise_8_2_13
 :dropdown:
-:description: (True/False?)  if $A$ is a positive definite matrix, then the diagonal of $A$ is positive (v.v.).
+:description: True or false? If $A$ is a positive definite matrix, then the diagonal of $A$ is positive (v.v.).
 
 ::::
 

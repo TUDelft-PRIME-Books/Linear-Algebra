@@ -960,7 +960,7 @@ We start with the first.
 
 Numerical data can be stored in a matrix. For instance, a black-and-white picture/photo can be stored 'pixel by pixel', by numbers that indicate the grey scale, which may for instance be any integer from $0$ (completely white) to $31$ (completely black). A 4:5 photo may then be stored as, say,  a $1080\times1350$-matrix.
 
-As another example, think of a survey of $n$ questions that have to be answered using a 1-5 scale.  If the numbers of respondents is $N$, the data can be represented by an $N \times n$-matrix.
+As another example, think of a survey of $n$ questions that have to be answered using a $1$-$5$ scale.  If the numbers of respondents is $N$, the data can be represented by an $N \times n$-matrix.
 
 In the first situation there will be both a high correlation between columns that are close to each other, as well as between nearby rows.  If the picture is a true photo the matrix will be far from a 'random' matrix.
 In the second context  one might expect that the columns will highly correlate:  people that agree on certain issues are more likely to agree on other issues as well.  
@@ -1007,9 +1007,9 @@ The gain is the following:
 - If the data is put in the form of an $m \times n$-matrix $A$, then it needs $m \times n$ memory cells to store $A$. 
 
 - If $k$  is much smaller than $r = \operatorname{rank}A$
-(which in general will be equal to the smallest of $m$ and $n$),  then $U_k$,  $V_k$  and the $k$ largest singular values only take up $m\times k + n\times k + k  = (m+n+k)k$,  memory places.
+(which in general will be equal to the smallest of $m$ and $n$),  then $U_k$,  $V_k$  and the $k$ largest singular values only take up $k\cdot m + k\cdot n + k  = k(m+n+1)$,  memory places.
 
-If, for instance, a $1080\times1350$ image, which is approximately $1.45 \operatorname{MB}$, is stored using the thirty percent highest singular values, so  $k = 0.3 \cdot 1080 = 324$,  the storage space reduces to $324\times(1080+1350+320)$, which is approximately $0.78 \operatorname{MB}$. Thus the  *data* as been 'compressed' by more or less a factor $\frac{0.78}{1.45} \approx 0.54$.
+If, for instance, a $1080\times1350$ image, which is approximately $1.45 \operatorname{MB}$, is stored using the thirty percent highest singular values, so  $k = 0.3 \cdot 1080 = 324$,  the storage space reduces to $324\cdot(1080+1350+1)$, which is approximately $0.79 \operatorname{MB}$. Thus the  *data* as been 'compressed' by more or less a factor $\frac{1.45}{0.79} \approx 1.85$, which is equivalent to a compression of about $46\%$.
 
 In general, the higher the correlation/dependency between the columns (or, for that matter, the rows) of a matrix $A$, the fewer singular values are needed for a good approximation of $A$.
 

@@ -1963,7 +1963,7 @@ $100$ & $3.4\cdot10^6$ & $7.6\cdot10^5$ & $6.8\cdot10^6$ & $8.6\cdot10^5$ & $3.4
 
 
 We will mention one other advantage the $LU$ decomposition may have, namely when the coefficient matrix $A$ is a **band matrix**. In that case it is much more efficient to work with the $LU$ decomposition than with the inverse.
-Such systems $A\vect{x} = \vect{b}$ for instance appear when (partial) differential equations are solved via discretisations. It falls outside the scope of this textbook to go into the details, but we consider the special case of  **tridiagonal** matrices to illustrate once more the usefulness of the $LU$ decomposition.
+Such systems $A\vect{x} = \vect{b}$ for instance appear when (partial) differential equations are solved via discretisations. It falls outside the scope of this textbook to go into the details (see for example [Numerical Methods for Ordinary Differential Equations](https://doi.org/10.5074/t.2023.001)), but we consider the special case of  **tridiagonal** matrices to illustrate once more the usefulness of the $LU$ decomposition. 
 
 
 ::::::{prf:definition}

@@ -1741,7 +1741,7 @@ The remaining exercises are less of a compuational character.
 :url: https://embed.grasple.com/exercises/cdb5014d-eace-489e-9616-45e03bb6e95e?id=69295
 :label: grasple_exercise_3_2_19
 :dropdown:
-:description: To find a $2\times2$ real matrix $A$ for which $A^2 = -I$.
+:description: To find a $2\times2$ matrix $A$ for which $A^2 = -I$.
 
 ::::::
 

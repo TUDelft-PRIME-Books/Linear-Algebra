@@ -2,12 +2,16 @@
 
 # Diagonalisability
 
+## Introduction
+
+Before we delve into the important topic of diagonalisability, we first introduce the concept of similar matrices.
+
 (Subsec:SimilarMatrices)=
 
 ## Similar matrices
 
 ::::::{prf:definition}
-:label: Dfn:Diagonalisable:SimalarMatrices
+:label: Dfn:Diagonalisable:SimilarMatrices
 
 Two $n \times n$-matrices $A$ and $B$ are called **similar** if they are related via the property
 
@@ -15,11 +19,10 @@ $$
 B = PAP^{-1} \quad \text{for some invertible matrix  } P.
 $$
 
-Notation: $A \sim B$.
+Notation: $A \simeq B$.
 
 ::::::
 
-It is true we already used the symbol $\sim$ earlier to denote row equivalence of (augmented) matrices. When we use it, it will always be clear from the context what  the meaning is at that instance.
 
 ::::::{prf:remark}
 :label:  Rmk:Diagonalisable:SimilarMatrices
@@ -27,7 +30,7 @@ It is true we already used the symbol $\sim$ earlier to denote row equivalence o
 In the definition it seems as if $A$ and $B$ play  different roles, but that is not the case. This can be seen as follows:
 
 $$
-A \sim B  \quad \iff \quad B = PAP^{-1}
+A \simeq B  \quad \iff \quad B = PAP^{-1}
 \quad \iff \quad  P^{-1}BP =  P^{-1}(PAP^{-1})P = A.
 $$
 
@@ -40,12 +43,12 @@ $$
 so similarity works both ways, that is,
 
 $$
-A \sim B  \quad \iff \quad   B \sim A.
+A \simeq B  \quad \iff \quad   B \simeq A.
 $$
 
 ::::::
 
-Similar matrices have similar properties. Especially as regards eigenvalues and eigenvectors.
+Similar matrices have similar properties, especially with regard to eigenvalues and eigenvectors.
 
 ::::::{prf:proposition}
 :label: Prop:Diagonalisable:SimilarEigenvalues
@@ -64,7 +67,7 @@ Suppose $\lambda$ is an eigenvalue of $B$, and $\vect{v}$ is a corresponding eig
 $$
 B\vect{v}= \lambda\vect{v}  \quad \Longrightarrow \quad
 AP\vect{v} = (PBP^{-1})P\vect{v} = PB\vect{v} =
-P(\lambda\vect{v}) =  \lambda P\vect{v}
+P(\lambda\vect{v}) =  \lambda P\vect{v}.
 $$
 
 So $AP\vect{v} = \lambda P\vect{v} $, and $P\vect{v} $  is an eigenvector, provided it is not the zero vector.
@@ -202,7 +205,7 @@ $$
 where there are $k$ entries $\lambda_1$ on the diagonal.
 
 It follows that the characteristic polynomial  $\det(B - \lambda I)$  will have *at least*  $k$ factors $(\lambda - \lambda_1)$.
-Thus the algebraic multiplicity of the eigenvalue $\lambda_1$ for the matrix $B$ is greater than or equal to $k$.  From the observed similarity  $A \sim B$ it follows that this also holds for the algebraic multiplicity of $\lambda_1$ for the matrix $A$.
+Thus the algebraic multiplicity of the eigenvalue $\lambda_1$ for the matrix $B$ is greater than or equal to $k$.  From the observed similarity  $A \simeq B$ it follows that this also holds for the algebraic multiplicity of $\lambda_1$ for the matrix $A$.
 So indeed the inequality
 
 $$
@@ -347,7 +350,7 @@ Such a set of eigenvectors then forms a basis for $\R^n$.
 
 Since this proposition is such a pillar on which much of the theory of matrices rests, and diagonalisable matrices are important because they are in many respects easy to work with, we give two proofs.
 
-::::::{admonition} Proof of {prf:ref}`Prop:Eigenvalues:DiagbleVersusEigenvectors`
+::::::{admonition} First proof of {prf:ref}`Prop:Eigenvalues:DiagbleVersusEigenvectors`
 :class: tudproof
 
 The first proof is algebraic. First we note that
@@ -391,7 +394,7 @@ The second proof has a geometric flavour. Open it if you are interested.
 
 First we show that diagonalisability implies the existence of $n$ linearly independent eigenvectors.
 
-If $A = PDP^{-1}$ then by {prf:ref}`Prop:Eigenvalues:DiagbleVersusEigenvectors` $A$ and $D$ have the same eigenvalues and the relation between the eigenvectors is:
+If $A = PDP^{-1}$ then by {prf:ref}`Prop:Diagonalisable:SimilarEigenvalues` $A$ and $D$ have the same eigenvalues and the relation between the eigenvectors is:
 
 <ul>
 <li>
@@ -527,9 +530,14 @@ $$
 
 as it should.
 
-Note that the diagonalisation is not unique: the *order* of the eigenvalues can be changed, and the eigenvectors may be *scaled*.
+::::::
+
+::::::{prf:remark}
+
+A diagonalisation is not unique: the *order* of the eigenvalues can be changed, and the eigenvectors may be *scaled*.
 However, the order of the eigenvectors in $P$ must correspond to the order of the eigenvalues on the diagonal of $D$.
-For instance, for the matrix $A$ at hand, an alternative diagonalisation is given by
+
+For instance, for the matrix $A$ from {prf:ref}`Ex:Diagonalisable:CheckPDPinv`, an alternative diagonalisation is given by
 
 $$
 A =   \left(\begin{array}{cc} 4 & 6 \\ -2 & 3  \end{array}
@@ -550,7 +558,7 @@ Are all matrices diagonalisable? Most certainly not, as the following two exampl
 ::::::{prf:example}
 :label: Ex:Diagonalisable:RotationCtd
 
-The matrix $R = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$ of {prf:ref}`Ex:EigenValues:Rotation` does not have any (real) eigenvalues, so also no eigenvectors. Hence it cannot be diagonalised.
+The matrix $R = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$ of {prf:ref}`Ex:EigenValues:Rotation` does not have any real eigenvalues, so also no eigenvectors. Hence it cannot be diagonalised.
 
 ::::::
 
@@ -561,7 +569,7 @@ Things would be different if we would allow complex eigenvalues and eigenvectors
 
 ::::::
 
-In the previous example there were not enough eigenvalues for the matrix $A$ to be real diagonalisable. In the following example there is another reason why a matrix can fail to be diagonalisable.
+In the previous example there were not enough real eigenvalues for the matrix $A$ to be diagonalisable. In the following example there is another reason why a matrix can fail to be diagonalisable.
 
 ::::::{prf:example}
 :label: Ex:Diagonalisable:SecondCharPoly
@@ -604,7 +612,7 @@ diagonalisable?
 ::::::{admonition} Solution to {numref}`Exc:Diagonalisable:CheckDiagble`
 :class: solution, dropdown
 
-Since the matrix is upper triangular, the eigenvalues are the diagonal entries. So,  $\lambda_1 = 1$, $\lambda_2 = 4$,  both with algebraic multiplicity one. The eigenspace for $\lambda_1$ is the null space of the matrix
+Since the matrix is upper triangular, the eigenvalues are the diagonal entries. So,  $\lambda_1 = 1$, $\lambda_2 = 4$,  both with algebraic multiplicity $2$. The eigenspace for $\lambda_1$ is the null space of the matrix
 
 $$
  A - \lambda_1I = A -  I =  \left(\begin{array}{cccc}0 & 1 & 0 & 1 \\ 0 & 3 & 0 & 0\\
@@ -623,7 +631,7 @@ These examples show the two causes why a matrix may not be diagonalisable, as is
 ::::::{prf:theorem}
 :label: Thm:Diagonalisable:ThirdCharacterization
 
-The $n \times n$-matrix $A$ is (real) diagonalisable if and only if it satisfies the following two conditions.
+The $n \times n$-matrix $A$ is diagonalisable if and only if it satisfies the following two conditions:
 
 <ol type = "i">
 
@@ -642,7 +650,7 @@ For each eigenvalue the geometric multiplicity is equal to the algebraic multipl
 
 ::::::
 
-::::::{admonition} Proof of {prf:ref}`Thm:Diagonalisable:ThirdCharacterization`
+::::::{admonition} Short proof of {prf:ref}`Thm:Diagonalisable:ThirdCharacterization`
 :class: tudproof
 
 First we show that a diagonalisable matrix satisfies the two conditions.
@@ -654,7 +662,7 @@ The basic idea is that, since eigenvectors for different eigenvalues are automat
 
 ::::::
 
-::::::{admonition} (More detailed) Proof of {prf:ref}`Thm:Diagonalisable:ThirdCharacterization`
+::::::{admonition} Detailed proof of {prf:ref}`Thm:Diagonalisable:ThirdCharacterization`
 :class: tudproof, dropdown
 
 Suppose that the $n \times n$-matrix $A$ has only real eigenvalues,  say  $\lambda_1,\ldots,\lambda_k$, and that for each eigenvalue $\lambda_i$ the geometric multiplicity $m_i$  is equal to the algebraic multiplicity, so
@@ -1085,7 +1093,7 @@ $$
 :url: https://embed.grasple.com/exercises/bc214d8e-b1a1-4b39-bedd-0ae36380b14a?id=71933
 :label: grasple_exercise_6_3_10 
 :dropdown:
-:description:  For which $\alpha$ is given $3 \times 3$-matrix $A$ diagonalisable? 
+:description:  For which $\alpha$ is a given $3 \times 3$-matrix $A$ diagonalisable? 
 
 ::::::
 
@@ -1120,7 +1128,7 @@ $$
 :url: https://embed.grasple.com/exercises/534ce865-0960-403a-affc-0f23f2d14110?id=91521
 :label: grasple_exercise_6_3_13
 :dropdown:
-:description: For which $\alpha$ is given (upper-triangular) $4 \times 4$-matrix diagonalisable?
+:description: For which $\alpha$ is a given (upper-triangular) $4 \times 4$-matrix diagonalisable?
 
 ::::::
 

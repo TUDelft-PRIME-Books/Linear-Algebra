@@ -205,7 +205,7 @@ The following elementary properties of linear dependence and linear independence
 
 Let $S$ be a subset of $\mathbb{R}^{n}$.
 
-<ul>
+<ol type="i">
 <li>
 
 If $S$ contains $\mathbf{0}$, then it is a linearly dependent set.
@@ -221,17 +221,77 @@ If $S$ is linearly dependent and $S\subseteq T$, then $T$ is linearly dependent.
 If $T$ is linearly independent and $S\subseteq T$, then $S$ is linearly independent.
 
 </li>
-</ul>
+</ol>
 
 ::::::
 
-We leave the verifications of these statements to the reader.
+We leave the verifications of these statements to the reader as an exercise.
 
 :::{exercise}
 :label: Ex:LinInd:LinDepSets
 
-Prove {prf:ref}`Prop:LinInd:LinDepSets`.
+Prove {prf:ref}`Prop:LinInd:LinDepSets` for finite sets.
 
+:::
+
+:::{admonition} Solution to {numref}`Ex:LinInd:LinDepSets`
+:class: solution, dropdown
+
+First assume that $S$ is a finite set of $\mathbb{R}^n$, i.e. $S=\left\lbrace\mathbf{v}_{1},\ldots,\mathbf{v}_{k}\right\rbrace$ for some $k\in\mathbb{N}$.
+
+<ol type="i">
+<li>
+
+If $S$ contains $\mathbf{0}$, then without loss of generality, we can assume $\mathbf{v}_{1}=\mathbf{0}$ and for any vector $\mathbf{v}$ in $\operatorname{Span}S$, we can write it as
+
+$$
+\begin{align*}
+\mathbf{v} &= c_{1}\mathbf{v}_{1}+c_{2}\mathbf{v}_{2}+\cdots+c_{k}\mathbf{v}_{k} \\
+&= c_1\mathbf{0}+c_{2}\mathbf{v}_{2}+\cdots+c_{k}\mathbf{v}_{k} \\
+&= \mathbf{0}+c_{2}\mathbf{v}_{2}+\cdots+c_{k}\mathbf{v}_{k} \\
+&= c_{2}\mathbf{v}_{2}+\cdots+c_{k}\mathbf{v}_{k},
+\end{align*}
+$$
+
+which is a vector from $\operatorname{Span}S\setminus\left\lbrace\mathbf{0}\right\rbrace$. This means that $\operatorname{Span}S=\operatorname{Span}S\setminus\left\lbrace\mathbf{0}\right\rbrace$ and therefore $S$ is linearly dependent.
+
+</li>
+<li>
+
+Assume $S$ is linearly dependent and $S\subseteq T$. Additionally assume, without loss of generality that $T=S\cup\left\lbrace\mathbf{w}_{1},\ldots,\mathbf{w}_{m}\right\rbrace$ for some vectors $\mathbf{w}_{1},\ldots,\mathbf{w}_{m}$.
+
+Because $S$ is linearly dependent, there is a vector $\mathbf{v}_{i}$ in $S$ such that $\operatorname{Span}S=\operatorname{Span}S\setminus\left\lbrace\mathbf{v}_{i}\right\rbrace$. This means that for any vector $\mathbf{v}$ in $\operatorname{Span}S$, we can write it as
+
+$$
+\mathbf{v}=c_{1}\mathbf{v}_{1}+\cdots+c_{i-1}\mathbf{v}_{i-1}+c_{i}\mathbf{v}_{i}+c_{i+1}\mathbf{v}_{i+1}+\cdots+c_{k}\mathbf{v}_{k},
+$$
+
+but also as
+
+$$
+\mathbf{v}=d_{1}\mathbf{v}_{1}+\cdots+d_{i-1}\mathbf{v}_{i-1}+d_{i+1}\mathbf{v}_{i+1}+\cdots+d_{k}\mathbf{v}_{k}.
+$$
+
+Now consider any vector $\mathbf{w}$ in $\operatorname{Span}T$. We can write:
+
+$$
+\begin{align*}
+\mathbf{w} &= c_1\mathbf{v}_{1}+\cdots+c_{i-1}\mathbf{v}_{i-1}+c_{i}\mathbf{v}_{i}+c_{i+1}\mathbf{v}_{i+1}+\cdots+c_{k}\mathbf{v}_{k} + q_1\mathbf{w}_{1}+\cdots+q_{m}\mathbf{w}_{m} \\
+&= d_{1}\mathbf{v}_{1}+\cdots+d_{i-1}\mathbf{v}_{i-1}+d_{i+1}\mathbf{v}_{i+1}+\cdots+d_{k}\mathbf{v}_{k} + q_1\mathbf{w}_{1}+\cdots+q_{m}\mathbf{w}_{m},
+\end{align*}
+$$
+
+which shows that $\mathbf{w}$ is in $\operatorname{Span}T\setminus\left\lbrace\mathbf{v}_{i}\right\rbrace$. This means that $\operatorname{Span}T=\operatorname{Span}T\setminus\left\lbrace\mathbf{v}_{i}\right\rbrace$ and therefore $T$ is linearly dependent.
+
+</li>
+<li>
+
+Assume $T$ is linearly independent and $S\subseteq T$. Additionally assume, without loss of generality that $T=S\cup\left\lbrace\mathbf{w}_{1},\ldots,\mathbf{w}_{m}\right\rbrace$ for some vectors $\mathbf{w}_{1},\ldots,\mathbf{w}_{m}$.
+
+If we assume $S$ is linearly dependent, then ii. above gives that $T$ should also be linearly dependent, which contradicts our assumption that $T$ is linearly indepedent. Therefore, $S$ must be linearly independent. 
+
+</li>
+</ol>
 :::
 
 But how do you determine whether a set of vectors is linearly independent or not? Like so many problems in linear algebra, it comes down to solving a system of linear equations, as {prf:ref}`Prop:LinInd:LinIndisNonTrivSol` shows.
@@ -297,9 +357,17 @@ Again we leave the verification to the diligent reader.
 ::::::{exercise}
 :label: Exc:LinInd:LinDepSets
 
-Prove {prf:ref}`Cor:LinInd:LinIndisColwithoutPivot`
+Prove {prf:ref}`Cor:LinInd:LinIndisColwithoutPivot`.
 
 ::::::
+
+:::{admonition} Solution to {numref}`Exc:LinInd:LinDepSets`
+:class: solution, dropdown
+
+
+The proof follows from the equivalence of the equations $A\mathbf{x}=\mathbf{0}$ and $c_{1}\mathbf{v}_{1}+\cdots +c_{k}\mathbf{v}_{k}=\mathbf{0}$ if we set $\mathbf{x}=(c_{1},\ldots,c_{k})^{T}$.
+
+:::
 
 ::::::{prf:example}
 :label: Ex:LinInd:LinDepExin4D

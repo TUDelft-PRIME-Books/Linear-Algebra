@@ -23,15 +23,21 @@ There's not much new here.
 
 We have seen in {prf:ref}`Prop:Eigenvalues:AminusLambdaI` that the statement
 
-$\lambda$ is an eigenvalue of $A$
+$$
+\lambda\text{ is an eigenvalue of }A
+$$
 
 is equivalent to
 
-$(A-\lambda I)\vect{x} = \vect{0}, \quad$ for a non-zero vector $ \vect{x}$.
+$$
+(A-\lambda I)\vect{x} = \vect{0},\text{ for a non-zero vector }\vect{x}.
+$$
 
 We also know ({prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations`) that such a non-zero solution exists only if
 
-the matrix $A - \lambda I$ is **not** invertible,
+$$
+\text{the matrix }A - \lambda I\text{ is not invertible},
+$$
 
 and this, in its turn, is equivalent to
 
@@ -60,7 +66,7 @@ and conclude that the eigenvalues of $A$ are $\lambda_1 =3, \lambda_2 = -1$.
 
 ::::::
 
-{prf:ref}`Prop:Eigenvalues:DetAminusLambdaI` can also be used to show that a matrix does not have any (real) eigenvalues.
+{prf:ref}`Prop:Eigenvalues:DetAminusLambdaI` can also be used to show that a matrix does not have any real eigenvalues.
 
 ::::::{prf:example}
 :label: Ex:Eigenvalues:NoEigenvalues
@@ -71,9 +77,9 @@ $$
 \begin{vmatrix} 0-\lambda & -1\\ 1 & 0-\lambda \end{vmatrix} =  \lambda^2 +1.
 $$
 
-Since this polynomial has no zeros, the matrix $A$ has no eigenvalues. We have already seen a geometric argument when we considered this matrix in {prf:ref}`Ex:EigenValues:Rotation`: $R$ is the matrix of a rotation.
+Since this polynomial has no zeros, the matrix $A$ has no real eigenvalues. We have already seen a geometric argument when we considered this matrix in {prf:ref}`Ex:EigenValues:Rotation`: $R$ is the matrix of a rotation.
 
-In the remark immediately after that example we mentioned that it is possible to treat $\lambda = \pm i$ as eigenvalues of the matrix $R$. Of course these are exactly the _complex_ zeros of the polynomial $p(\lambda) = \lambda^2 + 1$.
+In {prf:ref}`Rem:EigenValues:Rotation` immediately after that example we mentioned that it is possible to treat $\lambda = \pm i$ as eigenvalues of the matrix $R$. Of course these are exactly the _complex_ zeros of the polynomial $p(\lambda) = \lambda^2 + 1$.
 
 ::::::
 
@@ -344,14 +350,18 @@ At this moment it is not so easy to prove the following proposition, of which th
 ::::::{prf:proposition}
 :label: Prop:EigenValues:SmallerGeomMultiplicity
 
-For every eigenvalue of a matrix $A$, the geometric multiplicity is at most equal to the algebraic multiplicity. So we always have $1 \leq$ geometric multiplicity of $\lambda \leq$ algebraic multiplicity of $\lambda$.
+For every eigenvalue of a matrix $A$, the geometric multiplicity is at most equal to the algebraic multiplicity. So we always have
+
+$$
+1 \leq \operatorname{g.m.}(\lambda) \leq \operatorname{a.m.}(\lambda).
+$$
 
 ::::::
 
 ::::::{prf:definition}
 :label: Def:Eigenvalues:Defect
 
-A matrix $A$ that has an eigenvalue $\lambda$ for which the geometric multiplicity is *strictly smaller* than the algebraic multiplicity  is called a **defect** matrix.
+A matrix $A$ that has an eigenvalue $\lambda$ for which the geometric multiplicity is *strictly smaller* than the algebraic multiplicity  is called a **defect matrix**.
 ::::::
 
 
@@ -410,13 +420,11 @@ p_A(\lambda) = c_n\lambda^n + c_{n-1}\lambda^{n-1} + \ldots + c_2\lambda^2 +c_1\
 Then the following identities hold for the coefficients $c_n, c_{n-1}$ and $c_0$:
 
 $$
-c_n = (-1)^n, \quad c_{n-1} = (-1)^{n-1} (a_{11}+a_{22}+\ldots + a_{nn})
-$$
-
-and
-
-$$
-  c_0 = \operatorname{det}(A).
+\begin{array}{lcl}
+c_n &=& (-1)^n, \\
+c_{n-1} &=& (-1)^{n-1} (a_{11}+a_{22}+\ldots + a_{nn}), \\
+c_0 &=& \operatorname{det}(A).
+\end{array}
 $$
 
 ::::::
@@ -505,11 +513,17 @@ $$
 
 ::::::
 
-With this new terminology we can restate the second property in {prf:ref}`Prop:Eigenvalues:SumEigenvaluesAndTrace`  as follows.  For an $n\times n$-matrix $A$  the coefficient $c_{n-1}$ of $\lambda^{n-1}$ satisfies
+With this new terminology we can restate the second identity in {prf:ref}`Prop:EigenValues:CharPolyTrace` as follows:
+
+::::::{prf:corollary}
+:label: Cor:Eigenvalues:TraceCoefficient
+
+For an $n\times n$-matrix $A$  the coefficient $c_{n-1}$ of $\lambda^{n-1}$ satisfies
 
  $$
    c_{n-1} = (-1)^{n-1} \operatorname{tr}(A).
  $$
+ ::::::
 
 ::::::{prf:proposition}
 :label: Prop:Eigenvalues:SumEigenvaluesAndTrace
@@ -569,13 +583,25 @@ $A = \begin{pmatrix} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{pmatrix}$ are  $\
 We see that indeed
 
 $$
-\lambda_1+\lambda_2+\lambda_3 = 3 +2 + 3 = 8 = 4+3+1 = \operatorname{tr}(A),
+\begin{align*}
+\lambda_1+\lambda_2+\lambda_3 &= 3 +2 + 3 \\
+&= 8 \\
+&= 4+3+1 \\
+&= \operatorname{tr}(A),
+\end{align*}
 $$
 
 and also  
 
 $$
-  \operatorname{det}A = 3 \begin{vmatrix} 4 & -2 \\ 1 &  1 \end{vmatrix} = 3\cdot (4+2) = 18 = 3\cdot3\cdot2 =   \lambda_1\lambda_2\lambda_3.
+\begin{align*}
+  \operatorname{det}A &= \begin{pmatrix} 4 & -1 & -2 \\0 & 3 & 0 \\ 1 & 2 & 1 \end{pmatrix} \\
+  &= 3 \begin{vmatrix} 4 & -2 \\ 1 &  1 \end{vmatrix} \\
+  &= 3\cdot (4+2) \\
+  &= 18 \\
+  &= 3\cdot3\cdot2 \\
+  &= \lambda_1\lambda_2\lambda_3.
+  \end{align*}
 $$
 
 ::::::
@@ -610,7 +636,7 @@ the zero matrix.
 
 ::::::
 
-That this is not a coincidence is the content of the following theorem, the proof of which is beyond the scope of this linear algebra book. (The interested reader can of course search the internet on "Cayley-Hamilton".)
+That this is not a coincidence is the content of the following theorem, the proof of which is beyond the scope of this linear algebra book. (The interested reader can of course find a proof here: [Cayley-Hamilton theorem](https://en.wikipedia.org/wiki/Cayley%E2%80%93Hamilton_theorem).)
 
 ::::::{prf:theorem}  Cayley-Hamilton
 :label: Thm:Eigenvalues:CayleyHamilton

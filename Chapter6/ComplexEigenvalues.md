@@ -2,6 +2,14 @@
 
 # Complex eigenvalues and eigenvectors
 
+## Introduction
+
+::::{attention}
+
+In this section we will assume the reader is familiar with complex numbers and their properties. If preferred, a review of complex numbers can be found in {numref}`Chapter %s <Ch:ComplexNumbers>`.
+
+::::
+
 In the previous sections we hinted at the possibility to allow eigenvalues to be complex numbers. For an $n\times n$-matrix $A$ the eigenvalues are the zeros of the characteristic polynomial $p_A(\lambda)$ of $A$. Even if the matrix is real, these zeros may be complex. We start with an example to explore this until now unknown territory.
 
 ::::{prf:example}
@@ -31,19 +39,22 @@ $$
 So we have to solve a homogeneous system of linear equations, where now the coefficient matrix contains complex numbers. This slightly complicates the computation, but for this $2 \times 2$-matrix things don't get too bad.
 
 $$
+\begin{align*}
 \left(\begin{array}{cc|c} 1 - (2+i) & -2& 0 \\ 1 & 3- (2+i) & 0 \end{array}\right)
-=
-\left(\begin{array}{cc|c} -1 - i & -2& 0 \\ 1 & 1-i & 0 \end{array}\right)
-\sim
-\left(\begin{array}{cc|c} 0 & \class{blue}0 & 0 \\ 1 & 1-i & 0 \end{array}\right)
-,
+&=
+\left(\begin{array}{cc|c} -1 - i & -2& 0 \\ 1 & 1-i & 0 \end{array}\right) \\ 
+&\sim
+\left(\begin{array}{cc|c} 0 & \class{blue}0 & 0 \\ 1 & 1-i & 0 \end{array}\right) \\
+&\sim
+\left(\begin{array}{cc|c} 1 & 1-i & 0 \\ 0 & \class{blue}0 & 0 \end{array}\right),
+\end{align*}
 $$
 
-where the row operation we invoke is: add the second row $(1+i)$ times to the first row.
+where the first row operation we invoke is: add the second row $(1+i)$ times to the first row.
 The blue $0$ is the result of the evaluation of
 
 $$
--2 + (1+i)(1-i).
+-2 + (1+i)(1-i) = -2 + (1-i+i-i^2) = -2 + (1-(-1)) = \class{blue}{0}.
 $$
 
 We can read off a solution (i.e., complex eigenvector): $\vect{v}_1 = \left(\begin{array}{c}  -1+i \\1 \end{array}\right)$.
@@ -102,6 +113,31 @@ For the other eigenvalue we can proceed in the same manner and find (for instanc
 
 Note that the two eigenvalues are each others complex conjugate, and that the same holds for the corresponding eigenvectors,
 that is, if we define the complex conjugate of a vector component wise.
+
+:::::{prf:remark}
+:label: Rmk:ComplexEV:FirstFirstFirst
+
+Row reduction of the augmented matrix
+
+$$
+\left(\begin{array}{cc|c} -1 - i & -2& 0 \\ 1 & 1-i & 0 \end{array}\right)
+$$
+
+from {prf:ref}`Ex:ComplexEV:FirstExample` can even be performed in a third way: first multiply the first row by the complex conjugate of the pivot in the first row:
+
+$$
+\begin{align*}
+\left(\begin{array}{cc|c} -1 - i & -2& 0 \\ 1 & 1-i & 0 \end{array}\right)\begin{array}{l}
+   {[(-1+i)R_1]} \\
+   {[R_2]} \\
+\end{array}
+&\sim \left(\begin{array}{cc|c} 2 & 2-2i& 0 \\ 1 & 1-i & 0 \end{array}\right)
+\end{align*}
+$$
+
+This first row operation guarantees that the first column only contains real numbers, which makes the next row operation easier to perform, since we can now use the first row to create a zero in the second row.
+
+:::::
 
 ## Vectors and matrices with complex entries
 
@@ -257,8 +293,9 @@ can be described as a rotation followed by a "scaling".
 
 In fact, it holds that
 
-$A = \left(\begin{array}{cc} a & -b \\ b & a \end{array}\right) = r  \left(\begin{array}{cc} \cos({\varphi}) & -\sin({\varphi}) \\ \sin({\varphi}) & \cos({\varphi}) \end{array}\right)
-$, for some $r > 0$ and angle $\varphi$.
+$$
+A = \left(\begin{array}{cc} a & -b \\ b & a \end{array}\right) = r  \left(\begin{array}{cc} \cos({\varphi}) & -\sin({\varphi}) \\ \sin({\varphi}) & \cos({\varphi}) \end{array}\right),\text{ for some }r > 0\text{ and angle }\varphi.
+$$
 
 ::::::
 
@@ -417,7 +454,7 @@ C = r\left(\begin{array}{cc} \cos(\varphi) & -\sin(\varphi) \\ \sin(\varphi) & \
 $$
 
 
-We can interpret \nbsp; $\left(\begin{array}{cc} \cos(\varphi) & -\sin(\varphi) \\ \sin(\varphi) & \cos(\varphi) \end{array}\right)$ \nbsp; as a  *hidden rotation* in $A$.
+We can interpret $\left(\begin{array}{cc} \cos(\varphi) & -\sin(\varphi) \\ \sin(\varphi) & \cos(\varphi) \end{array}\right)$ as a  *hidden rotation* in $A$.
 
 ::::::
 
@@ -481,7 +518,7 @@ We conclude this section by reconsidering diagonalisability of real matrices if 
 
 ## Complex diagonalisability
 
-Let us first generalise the definition:
+Let us first generalise {prf:ref}`Dfn:Diagonalisable:Diagonalisability` to the complex case:
 
 ::::::{prf:definition}
 :label: Dfn:Eigenvalues:ComplexDiagonalisability
@@ -493,18 +530,22 @@ A = PDP^{-1}.
 $$
 
 where $D$ is a diagonal matrix, and $P$ and $D$ may contain complex entries.
-We then say that $PDP^{-1}$ is a **diagonalisation** of $A$.
+We then say that $PDP^{-1}$ is a **complex diagonalisation** of $A$.
 
 ::::::
 
+::::{prf:remark}
+:label: Rmk:ComplexEV:ComplexDiagonalisation
 
+Note that if a matrix $A$ has a diagonalisation from {prf:ref}`Dfn:Diagonalisable:Diagonalisability`, then it is automatically a complex diagonalisation, since the entries of $P$ and $D$ are real numbers, which are also complex numbers.
+::::
 
 Just like in the real case diagonalisability has all to do with the existence of enough (possibly complex) eigenvectors. The derivation is the same as in {numref}`Section %s <Sec:Diagonalise>`, we only repeat the conclusion.
 
 ::::::{prf:proposition}
 :label:  Thm:Diagonalisable:ComplexCharacterization
 
-An $n\times n$-matrix is (complex) diagonalisable if and only if there exists a basis of eigenvectors for $\mathbb{C}^n$.
+An $n\times n$-matrix is complex diagonalisable if and only if there exists a basis of eigenvectors for $\mathbb{C}^n$.
 
 In that case, if $\vect{v}_1, \ldots, \vect{v}_n$ are $n$ linearly independent eigenvectors for the eigenvalues $\lambda_1, \ldots, \lambda_n$,
 then
@@ -548,12 +589,7 @@ Which you are challenged to check by a careful calculation.
 <ul>
 <li>
 
-When the context requires it, we will specify whether we mean **real diagonalisable** or **complex diagonalisable**.
-
-</li>
-<li>
-
-Since the real numbers are contained in the complex numbers, a matrix that is real diagonalisable is automatically complex diagonalisable.
+When the context requires it, we will specify whether we mean **diagonalisable** or **complex diagonalisable**.
 
 </li>
 <li>
@@ -566,8 +602,8 @@ The definition also makes sense for matrices with complex numbers as entries. Ho
 ::::::
 
 
-For a matrix to be real diagonalisable {prf:ref}`Thm:Diagonalisable:ThirdCharacterization` states that two conditions must be satisfied. One is that the characteristic polynomial of $A$ must have $n$ real roots, counting multiplicities. The second is that for each eigenvalue the geometric multiplicity must be equal to the algebraic multiplicity.
-The Fundamental Theorem of Algebra guarantees that each polynomial of degree $n$ has $n$ roots. So if we allow complex eigenvalues, the first condition is automatically satisfied. We thus find the following criterion for complex diagonalisability of a (possibly complex) matrix $A$.
+For a matrix to be diagonalisable {prf:ref}`Thm:Diagonalisable:ThirdCharacterization` states that two conditions must be satisfied. One is that the characteristic polynomial of $A$ must have $n$ real roots, counting multiplicities. The second is that for each eigenvalue the geometric multiplicity must be equal to the algebraic multiplicity.
+The Fundamental Theorem of Algebra guarantees that each polynomial of degree $n$ has $n$ roots. So if we allow complex eigenvalues, the first condition is automatically satisfied. We thus find the following criterion for complex diagonalisability of a matrix $A$.
 
 ::::::{prf:proposition}
 :label: Prop:ComplexEV:ComplexDiagonalisable
@@ -669,7 +705,7 @@ A matrix $A$ is complex diagonalisable if and only if for each eigenvalue the ge
 :url: https://embed.grasple.com/exercises/79c7c433-fbcc-41b8-85d2-b1938a26d40e?id=91566
 :label: grasple_exercise_6_4_9
 :dropdown:
-:description: T/F? Every real $5 \times 5$-matrix has at least one real eigenvalue.
+:description: True or false? Every real $5 \times 5$-matrix has at least one real eigenvalue.
   
 
 ::::::

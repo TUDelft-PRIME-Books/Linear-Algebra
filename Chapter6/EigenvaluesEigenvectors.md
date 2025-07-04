@@ -90,8 +90,7 @@ The reason to require that an eigenvector has to be non-zero is that otherwise _
 Namely, $A\vect{0} = \vect{0} = c\vect{0}$ for any real number $c$.
 Thus then the concept of an eigenvalue would be a rather empty notion.
 
-::::::{prf:remark}
-:label:  Remark:Eigenvalues:Complex
+::::::{attention}
 
 Until now we have only been working with vectors and matrices of which all entries are real numbers. It is possible to generalise to vectors and matrices that have complex numbers as entries. If you have never seen or heard about complex numbers: don't worry,
 in this chapter we will focus on the 'real universe'. However, even for matrices with real entries complex eigenvalues and eigenvectors come up in quite a natural way, and in many senses make the theory simpler.  In one or two examples we will hint at
@@ -156,7 +155,7 @@ $$
 since such a $c$ should simultaneously satisfy $2c = -6$ and $(-2)c = 0$.
 
 So $\vect{v} = \begin{pmatrix} 2\\-2 \end{pmatrix}$ is not an eigenvector of $A$.
-See also {numref}`Figure %s <Fig:Eigenvalues:Eigenvector-no-Eigenvector>`
+See also {numref}`Figure %s <Fig:Eigenvalues:Eigenvector-no-Eigenvector>`.
 
 ```{applet}
 :url: eigenvalue_eigenvector/no_eigenvector
@@ -676,25 +675,25 @@ A multiple $\lambda\vect{v}$ is a vector with the same direction as $\vect{v}$ o
 ::::::{prf:example}
 :label: Ex:EigenValues:Rotation
 
-The matrix $R = \begin{pmatrix} 0 & -1 \\1 & 0  \end{pmatrix}$ has no (real) eigenvalues.
+The matrix $R = \begin{pmatrix} 0 & -1 \\1 & 0  \end{pmatrix}$ has no real eigenvalues.
 
-Namely, the corresponding transformation is a rotation around (0,0) over an angle $\frac12\pi$, and this 'moves around' all vectors.
+Namely, the corresponding transformation is a rotation around $(0,0)$ over an angle $\frac12\pi$, and this 'moves around' all vectors.
 
-See Figure {numref}`Figure %s <Fig:Eigenvalues:Eigenvector>`
+See Figure {numref}`Figure %s <Fig:Eigenvalues:Eigenvector>`.
 
 ::::{figure} Images/Fig-Eigenvalues-Rotation.svg
 :name: Fig:Eigenvalues:Eigenvector
 :class: dark-light
 
-A rotation has no (real) eigenvectors.
+A rotation has no real eigenvectors.
 ::::
 
 ::::::
 
-::::::{prf:remark}
+::::::{prf:remark} Only for readers who are familiar with complex numbers
 :label: Rem:EigenValues:Rotation
+:class: dropdown
 
-This is a remark only for readers who are familiar with complex numbers.
 The matrix $R = \begin{pmatrix} 0 & -1 \\1 & 0  \end{pmatrix}$ has no **real** eigenvalues. If we allow eigenvalues to be complex numbers, and vectors to have complex entries, it appears that
 
 $$
@@ -889,7 +888,7 @@ In a later section we will study matrices $A$ for which such a basis of eigenvec
 ::::::
 
 
-To conclude, one non-Grasple exercise
+To conclude, one non-Grasple exercise.
 
 ::::::{exercise}
 :label: Exc:EigenValues:EigenvaluesInverse

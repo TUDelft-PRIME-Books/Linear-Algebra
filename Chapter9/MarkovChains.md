@@ -221,11 +221,11 @@ A stochastic matrix is called **regular** if there is some natural number $k$ su
 :::{prf:definition}
 :label: Def:MarkovChains:Convergence
 
-Let $\vect{x}$ be a vector and let $\vect{x}_{0},\vect{x}_{1},\vect{x}_{2},...$ be a sequence of vectors. We say that the sequence $(\vect{x}_{n})_{n\text{ in }\mathbb{N}}$ **converges** to $\vect{x}$ if the sequence of real numbers $(\norm{\vect{x_{n}}-\vect{x}})_{n\text{ in }\mathbb{N}}$ converges to $0$.
+Let $\vect{x}$ be a vector and let $\vect{x}_{0},\vect{x}_{1},\vect{x}_{2},...$ be a sequence of vectors. We say that the sequence $(\vect{x}_{n})_{n\in\mathbb{N}}$ **converges** to $\vect{x}$ if the sequence of real numbers $(\norm{\vect{x_{n}}-\vect{x}})_{n\in\mathbb{N}}$ converges to $0$.
 
 :::
 
-Intuitively, $(\vect{x}_{n})_{n\text{ in }\mathbb{N}}$ converges to $\vect{x}$ if the distance between $\vect{x}$ and $\vect{x}_{n}$ becomes arbitrarily small for large enough $n$. In other words, if $\vect{x}_{n}$ comes arbitrarily close to $\vect{x}$.
+Intuitively, $(\vect{x}_{n})_{n\in\mathbb{N}}$ converges to $\vect{x}$ if the distance between $\vect{x}$ and $\vect{x}_{n}$ becomes arbitrarily small for large enough $n$. In other words, if $\vect{x}_{n}$ comes arbitrarily close to $\vect{x}$.
 
 :::{prf:Theorem} Perron-Frobenius
 :label: Thm:MarkovChains:PerronFrobenius
@@ -237,7 +237,7 @@ If $P$ is a regular stochastic matrix, then it has a unique steady state $\vect{
 :::{admonition} Proof of {prf:ref}`Thm:MarkovChains:PerronFrobenius`
 :class: tudproof
 
-The proof is quite complicated and falls outside the scope of this text.
+The proof is quite complicated and falls outside the scope of this text. We refer to for example [Perron–Frobenius theorem](https://en.wikipedia.org/wiki/Perron%E2%80%93Frobenius_theorem).
 
 :::
 

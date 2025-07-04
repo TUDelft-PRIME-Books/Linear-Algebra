@@ -510,13 +510,13 @@ Let $A$ be an orthogonal $n\times n$-matrix and let $\vect{v}_{1},\vect{v}_{2}$ 
 
 <li id="It:OrthoBase:OrthoMatandInnerProd">
 
-$(A\vect{v}_{1})\ip(A\vect{v}_{2})=\vect{v}_{1}\ip\vect{v}_{2}$,
+$(A\vect{v}_{1})\ip(A\vect{v}_{2})=\vect{v}_{1}\ip\vect{v}_{2}$.
 
 </li>
 
 <li>
 
-$\norm{A\vect{v}_{1}}=\norm{\vect{v}_{1}}$,
+$\norm{A\vect{v}_{1}}=\norm{\vect{v}_{1}}$.
 
 </li>
 
@@ -539,6 +539,33 @@ $$(A\vect{v}_{1})\ip(A\vect{v}_{2})=(A\vect{v}_{1})^{T}(A\vect{v}_{2})=\vect{v}_
 
 which establishes [i.](#It:OrthoBase:OrthoMatandInnerProd) The other points are direct consequences of [i.](#It:OrthoBase:OrthoMatandInnerProd) and we leave their proofs to the reader.
 
+:::
+
+:::{exercise}
+:label: Exc:OrthoBase:OrthoMatandInnerProd
+
+Proof ii. andf iii. of {prf:ref}`Prop:OrthoBase:OrthoMatandInnerProd`.
+:::
+
+:::{admonition} Solution to {numref}`Exc:OrthoBase:OrthoMatandInnerProd`
+:class: solution, dropdown
+
+
+We first prove ii. using i.:
+
+$$
+\norm{A\vect{v}_{1}} = \sqrt{(A\vect{v}_{1})\ip(A\vect{v}_{1})}=\sqrt{\vect{v}_{1}\ip\vect{v}_{1}} = \norm{\vect{v}_{1}}.
+$$
+
+Using i., ii. and {prf:ref}`Dfn:InnerProduct:AngleInRn`, we prove iii.:
+
+$$
+\begin{align*}
+\angle(A\vect{v}_{1},A\vect{v}_{2}) &= \arccos\left(\dfrac{\left(A\mathbf{v}_1\right)\ip\left(A\mathbf{v}_2\right)}{\norm{A\mathbf{v}_1} \norm{A\mathbf{v}_2}} \right) \\
+&= \arccos\left(\dfrac{\mathbf{v}_1\ip\mathbf{v}_2}{\norm{\mathbf{v}_1} \norm{\mathbf{v}_2}} \right) \\
+&= \angle(\vect{v}_{1},\vect{v}_{2}).
+\end{align*}
+$$
 :::
 
 :::{prf:Remark}

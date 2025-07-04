@@ -1084,13 +1084,13 @@ For a set of vectors $ \lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \r
 
 <li>
 
-$\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace$ is linearly independent;
+$\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace$ is linearly independent.
 
 </li>
 
 <li>
 
-$\Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell}}=S$;
+$\Span{\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell}}=S$.
 
 </li>
 
@@ -1187,6 +1187,31 @@ $$
 $$
 
 ::::::
+
+:::::{admonition} Solution to {numref}`Exc:BasisDim:ProofOf2OutOf3`
+:class: solution, dropdown
+
+Assume ii. and iii. of {prf:ref}`Prop:BasisDim:TwoOfThreeSuffice` and in addition assume that $\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace$ is linearly dependent.
+
+Then for any vector $\vect{v}$ in $S$ we have from ii. that
+
+$$
+\vect{v} = c_1\vect{b}_1 + c_2\vect{b}_2 + \ldots +c_{q-1}\vect{b}_{q-1}+c_{q}\vect{b}_{q}+c_{q+1}\vect{b}_{q+1}+\ldots+ c_{\ell}\vect{b}_{\ell},
+$$
+
+but also
+
+$$
+\vect{v} = d_1\vect{b}_1 + d_2\vect{b}_2 + \ldots +d_{q-1}\vect{b}_{q-1}+d_{q+1}\vect{b}_{q+1}+\ldots+ d_{\ell}\vect{b}_{\ell},
+$$
+
+as there must be at least one vector $\vect{v}_q$ that is a linear combination of the other vectors in the set $\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace$.
+
+This means that $S=\operatorname{Span}\lbrace\vect{b}_1, \vect{b}_2, \ldots,\vect{b}_{q-1},\vect{b}_{q+1},\ldots, \vect{b}_{\ell} \rbrace$ and $\dim S = \ell - 1$. But this contradicts iii., which states that $\ell = k = \dim S$.
+
+So we conclude that $\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace$ must be linearly independent.
+
+:::::
 
 ::::::{prf:remark}
 :label: Rem:BasisDim:TwoOfThreeSuffice
