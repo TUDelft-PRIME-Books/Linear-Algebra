@@ -1133,7 +1133,7 @@ $$
 ::::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/c630cded-e9cd-482e-a7fe-68ff75430f38?id=121803
-:label: grasple_exercise_5_4_
+:label: grasple_exercise_5_4_2
 :dropdown:
 :description: Area of a rectangle under a linear transformation.
 ::::::
