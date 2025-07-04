@@ -36,16 +36,16 @@ If $A$ is an $m\times n$-matrix and $c$ is a scalar, then $cA$ is the $m \times 
 
 $$
   c \left(\begin{array}{cccc}
-            a_{11} & a_{12}&   \ldots&  a_{1n} \\
-            a_{21} & a_{22}&  \ldots&  a_{2n} \\
-            \vdots &  \vdots&  \cdots& \vdots    \\
-            a_{m1} & a_{m2}&  \ldots& a_{mn}
+            a_{11} & a_{12}&   \cdots&  a_{1n} \\
+            a_{21} & a_{22}&  \cdots&  a_{2n} \\
+            \vdots &  \vdots&  & \vdots    \\
+            a_{m1} & a_{m2}&  \cdots& a_{mn}
           \end{array}
    \right)= \left(\begin{array}{cccc}
-            ca_{11} & ca_{12}&  \ldots&  ca_{1n} \\
-            ca_{21} & ca_{22}&   \ldots&  ca_{2n} \\
-            \vdots &  \vdots&  \cdots& \vdots    \\
-            ca_{m1} & ca_{m2}&    \ldots& ca_{mn}
+            ca_{11} & ca_{12}&  \cdots&  ca_{1n} \\
+            ca_{21} & ca_{22}&   \cdots&  ca_{2n} \\
+            \vdots &  \vdots&  & \vdots    \\
+            ca_{m1} & ca_{m2}&    \cdots& ca_{mn}
           \end{array}
    \right).
 $$
@@ -62,25 +62,25 @@ $m\times n$-matrix of which the entry on the position $(i,j)$ is the sum of the 
 
 $$
   \left(\begin{array}{cccc}
-            a_{11} & a_{12}&  \ldots& a_{1n} \\
-            a_{21} & a_{22}&  \ldots&   a_{2n} \\
-            \vdots &  \vdots&  \cdots&  \vdots    \\
-            a_{m1} & a_{m2}&  \ldots&   a_{mn}
+            a_{11} & a_{12}&  \cdots& a_{1n} \\
+            a_{21} & a_{22}&  \cdots&   a_{2n} \\
+            \vdots &  \vdots&  &  \vdots    \\
+            a_{m1} & a_{m2}&  \cdots&   a_{mn}
           \end{array} \right)    +
   \left(\begin{array}{cccc}
-            b_{11} & b_{12}&   \ldots&  b_{1n} \\
-            b_{21} & b_{22}&   \ldots&  b_{2n} \\
-            \vdots &  \vdots&   \cdots& \vdots    \\
-            b_{m1} & b_{m2}&    \ldots& b_{mn}
+            b_{11} & b_{12}&   \cdots&  b_{1n} \\
+            b_{21} & b_{22}&   \cdots&  b_{2n} \\
+            \vdots &  \vdots&   & \vdots    \\
+            b_{m1} & b_{m2}&    \cdots& b_{mn}
           \end{array} \right)=
 $$
 
 $$
     = \left(\begin{array}{cccc}
-            a_{11}+b_{11} & a_{12}+b_{12}&  \ldots&   a_{1n}+b_{1n} \\
-            a_{21}+b_{21} & a_{22}+b_{22}&  \ldots&   a_{2n}+b_{2n} \\
-            \vdots &  \vdots&  \cdots&  \vdots    \\
-            a_{m1}+b_{m1} & a_{m2}+b_{m2}&   \ldots& a_{mn}+b_{mn}
+            a_{11}+b_{11} & a_{12}+b_{12}&  \cdots&   a_{1n}+b_{1n} \\
+            a_{21}+b_{21} & a_{22}+b_{22}&  \cdots&   a_{2n}+b_{2n} \\
+            \vdots &  \vdots&  &  \vdots    \\
+            a_{m1}+b_{m1} & a_{m2}+b_{m2}&   \cdots& a_{mn}+b_{mn}
           \end{array} \right).
 $$
 
@@ -357,35 +357,35 @@ Prove statements (i) and (iii) of {prf:ref}`Prop:MatrixOps:Transpose`.
 :class: solution, dropdown
 
 Suppose $A = \left(\begin{array}{cccc}
-            a_{11} & a_{12}&  \ldots&   a_{1n}   \\
-            a_{21} & a_{22}&  \ldots&   a_{2n}   \\
-            \vdots &  \vdots&  \cdots&  \vdots    \\
-            a_{m1} & a_{m2}&  \ldots&   a_{mn}    
+            a_{11} & a_{12}&  \cdots&   a_{1n}   \\
+            a_{21} & a_{22}&  \cdots&   a_{2n}   \\
+            \vdots &  \vdots&  &  \vdots    \\
+            a_{m1} & a_{m2}&  \cdots&   a_{mn}    
           \end{array}
    \right)$ is an arbitrary $m \times n$-matrix. Then
 
 $$
   \begin{array}{rcl}
   (cA)^T &=&  \left(\begin{array}{cccc}
-            ca_{11} & ca_{12}&  \ldots& ca_{1n}   \\
-            ca_{21} & ca_{22}&  \ldots& ca_{2n}   \\
-            \vdots &  \vdots&  \cdots&  \vdots    \\
-            ca_{m1} & ca_{m2}&  \ldots& ca_{mn}
+            ca_{11} & ca_{12}&  \cdots& ca_{1n}   \\
+            ca_{21} & ca_{22}&  \cdots& ca_{2n}   \\
+            \vdots &  \vdots&  &  \vdots    \\
+            ca_{m1} & ca_{m2}&  \cdots& ca_{mn}
           \end{array}
    \right)^T =
    \left(\begin{array}{cccc}
-            ca_{11} & ca_{21}&  \ldots& ca_{m1}   \\
-            ca_{12} & ca_{22}&  \ldots& ca_{m2}   \\
-            \vdots &  \vdots&  \cdots&  \vdots    \\
-            ca_{1n} & ca_{2n}&  \ldots& ca_{mn}
+            ca_{11} & ca_{21}&  \cdots& ca_{m1}   \\
+            ca_{12} & ca_{22}&  \cdots& ca_{m2}   \\
+            \vdots &  \vdots&  &  \vdots    \\
+            ca_{1n} & ca_{2n}&  \cdots& ca_{mn}
           \end{array}
    \right) \\
    &=&
    c \left(\begin{array}{cccc}
-            a_{11} & a_{21}&  \ldots& a_{m1}   \\
-            a_{12} & a_{22}&  \ldots& a_{m2}   \\
-            \vdots &  \vdots&  \cdots&  \vdots    \\
-            a_{1n} & a_{2n}&  \ldots& a_{mn}
+            a_{11} & a_{21}&  \cdots& a_{m1}   \\
+            a_{12} & a_{22}&  \cdots& a_{m2}   \\
+            \vdots &  \vdots&  &  \vdots    \\
+            a_{1n} & a_{2n}&  \cdots& a_{mn}
           \end{array}
    \right)  = c\,A^T
    \end{array}
@@ -491,10 +491,10 @@ a vector in $\mathbb{R}^n$, which we can identify with an $n \times 1$-matrix. W
 ::::::{prf:definition}
 :label: def:matrix-product
 
-The product of an $m\times n$-matrix $A$ and an $n\times p$-matrix $B = (\,{\vect{b}_1}\quad {\vect{b}_2}\quad \ldots \quad {\mathbf{b}_p})$ is defined by
+The product of an $m\times n$-matrix $A$ and an $n\times p$-matrix $B = (\,{\vect{b}_1}\quad {\vect{b}_2}\quad \cdots \quad {\mathbf{b}_p})$ is defined by
 
 $$
-  AB = (\,A\mathbf{b}_1\quad A\mathbf{b}_2\quad \ldots \quad A\mathbf{b}_p).
+  AB = (\,A\mathbf{b}_1\quad A\mathbf{b}_2\quad \cdots \quad A\mathbf{b}_p).
 $$
 
 So we have
@@ -534,8 +534,8 @@ $$
 The product of the $m\times n$-matrix $A$ and the $n\times p$-matrix $B$ is the $m\times p$-matrix $C$ for which the entry on the position $(i,j)$ is given by
 
 $$
-   c_{ij} = a_{i1}b_{1j} + a_{i2}b_{2j} + \ldots + a_{in}b_{nj} =
-      \begin{pmatrix}a_{i1} & a_{i2} & \ldots & a_{in} \end{pmatrix} \begin{pmatrix}  b_{1j} \\ b_{2j} \\ \vdots \\ b_{nj}\end{pmatrix}.
+   c_{ij} = a_{i1}b_{1j} + a_{i2}b_{2j} + \cdots + a_{in}b_{nj} =
+      \begin{pmatrix}a_{i1} & a_{i2} & \cdots & a_{in} \end{pmatrix} \begin{pmatrix}  b_{1j} \\ b_{2j} \\ \vdots \\ b_{nj}\end{pmatrix}.
 $$
 
 This is sometimes called the **row-column expansion** of the product.
@@ -555,28 +555,27 @@ $$
    \begin{array}{ccc}
         &
         \begin{pmatrix}
-            b_{11} & b_{12}&  \ldots& \class{red}{b_{1j}} & \ldots&  b_{1p} \\
-            b_{21} & b_{22}&  \ldots&  \class{red}{b_{2j}} & \ldots&  b_{2p} \\
-            \vdots &  \vdots&  \cdots&  & \ldots& \vdots    \\
-            b_{n1} & b_{n2}&  \ldots&  \class{red}{b_{nj}} &  \ldots& b_{np}
+            b_{11} & b_{12}&  \cdots& \class{red}{b_{1j}} & \cdots&  b_{1p} \\
+            b_{21} & b_{22}&  \cdots&  \class{red}{b_{2j}} & \cdots&  b_{2p} \\
+            \vdots &  \vdots&  & \class{red}{\vdots} & & \vdots    \\
+            b_{n1} & b_{n2}&  \cdots&  \class{red}{b_{nj}} &  \cdots& b_{np}
           \end{pmatrix} \\
     \begin{pmatrix}
-            a_{11} & a_{12}&  \ldots& \ldots&  a_{1n} \\
-            a_{21} & a_{22}&  \ldots& \ldots&  a_{2n} \\
-            \cdots &  \ddots&  \cdots& \cdots& \vdots    \\
-              \class{red}{a_{i1}} &  \class{red}{a_{i2}}&   \class{red}{\ldots}&
-              \class{red}{\ldots}&   \class{red}{a_{in}} \\
-            \vdots &  \vdots&  \cdots& \cdots& \vdots    \\
-            a_{m1} & a_{m2}&  \ldots&  \ldots& a_{mn}
+            a_{11} & a_{12}&  \cdots&   a_{1n} \\
+            a_{21} & a_{22}&  \cdots&   a_{2n} \\
+            \vdots &  \vdots&  & \vdots    \\
+              \class{red}{a_{i1}} &  \class{red}{a_{i2}}& \class{red}{\cdots}&   \class{red}{a_{in}} \\
+            \vdots &  \vdots&  & \vdots    \\
+            a_{m1} & a_{m2}&  \cdots & a_{mn}
     \end{pmatrix} \!\! &  \!
     \begin{pmatrix}
-            c_{11} & c_{12}&  \ldots& c_{1j} &\ldots&  c_{1p} \\
-            c_{21} & c_{22}&  \ldots&  c_{2j} &\ldots&  c_{2p} \\
-            \vdots &  \vdots&  \cdots& & \cdots& \vdots    \\
-             c_{i1} &  c_{i2}&  \cdots&\class{red}{c_{ij}} &\ldots&   c_{ip} \\
-            \vdots &  \vdots&  \cdots& &\cdots& \vdots    \\
-            c_{m1} & c_{m2}&  \ldots&  c_{mj} &\ldots& c_{mp}
-    \end{pmatrix}
+            c_{11} & c_{12}&  \cdots& c_{1j} &\cdots&  c_{1p} \\
+            c_{21} & c_{22}&  \cdots&  c_{2j} &\cdots&  c_{2p} \\
+            \vdots &  \vdots&  & \vdots & & \vdots    \\
+             c_{i1} &  c_{i2}&  \cdots&\class{red}{c_{ij}} &\cdots&   c_{ip} \\
+            \vdots &  \vdots&  &\vdots & & \vdots    \\
+            c_{m1} & c_{m2}&  \cdots&  c_{mj} &\cdots& c_{mp}
+    \end{pmatrix}.
   \end{array}
 
 
@@ -689,20 +688,20 @@ The $n \times n$ zero matrix $O_{nn}$ is a diagonal matrix.
 ::::::{exercise}
 :label: Exc:MatrixOps:InterpretATB
 
-Suppose $A = \begin{pmatrix} \mathbf{a}_1 & \mathbf{a}_2 & \ldots & \mathbf{a}_n \end{pmatrix} $ is an  $m\times n$-matrix and <br/>
-$B= \begin{pmatrix} \mathbf{b}_1 & \mathbf{b}_2 & \ldots & \mathbf{b}_p \end{pmatrix} $  an  $n\times p$-matrix. Show that
+Suppose $A = \begin{pmatrix} \mathbf{a}_1 & \mathbf{a}_2 & \cdots & \mathbf{a}_n \end{pmatrix} $ is an  $m\times n$-matrix and <br/>
+$B= \begin{pmatrix} \mathbf{b}_1 & \mathbf{b}_2 & \cdots & \mathbf{b}_p \end{pmatrix} $  an  $n\times p$-matrix. Show that
 
 $$
-  A^TB = %\begin{pmatrix} \vect{a_1}^T \vect{b_1}  & \vect{a_1}^T \vect{b_2} & \ldots &  \vect{a_1}^T \vect{b_p} \\
-         %                \vect{a_2}^T \vect{b_1}  & \vect{a_2}^T \vect{b_2} & \ldots &  \vect{a_2}^T \vect{b_p} \\
+  A^TB = %\begin{pmatrix} \vect{a_1}^T \vect{b_1}  & \vect{a_1}^T \vect{b_2} & \cdots &  \vect{a_1}^T \vect{b_p} \\
+         %                \vect{a_2}^T \vect{b_1}  & \vect{a_2}^T \vect{b_2} & \cdots &  \vect{a_2}^T \vect{b_p} \\
          %                     \vdots              &            \vdots       &        &        \vdots \\
-         %                \vect{a_n}^T \vect{b_1}  & \vect{a_n}^T \vect{b_2} & \ldots &  \vect{a_n}^T \vect{b_p} \\
+         %                \vect{a_n}^T \vect{b_1}  & \vect{a_n}^T \vect{b_2} & \cdots &  \vect{a_n}^T \vect{b_p} \\
          %\end{pmatrix}
          %    =
-         \begin{pmatrix} \mathbf{a}_1\ip \mathbf{b}_1  & \mathbf{a}_1\ip\mathbf{b}_2 & \ldots &  \mathbf{a}_1\ip \mathbf{b}_p \\
-                         \mathbf{a}_2\ip \mathbf{b}_1  & \mathbf{a}_2\ip\mathbf{b}_2 & \ldots &  \mathbf{a}_2\ip \mathbf{b}_p \\
-                              \vdots              &            \vdots       &        &        \vdots \\
-                         \mathbf{a}_n\ip \mathbf{b}_1  & \mathbf{a}_n\ip\mathbf{b}_2 & \ldots &  \mathbf{a}_n\ip \mathbf{b}_p \\ 
+         \begin{pmatrix} \mathbf{a}_1\ip \mathbf{b}_1  & \mathbf{a}_1\ip\mathbf{b}_2 & \cdots &  \mathbf{a}_1\ip \mathbf{b}_p \\
+                         \mathbf{a}_2\ip \mathbf{b}_1  & \mathbf{a}_2\ip\mathbf{b}_2 & \cdots &  \mathbf{a}_2\ip \mathbf{b}_p \\
+                              \vdots                   &            \vdots           &        &        \vdots \\
+                         \mathbf{a}_n\ip \mathbf{b}_1  & \mathbf{a}_n\ip\mathbf{b}_2 & \cdots &  \mathbf{a}_n\ip \mathbf{b}_p \\ 
          \end{pmatrix},
 
 
@@ -769,19 +768,19 @@ The $i$-th row of the product $AB$ is the linear combination of the rows of the 
 The indicated linear combination yields:
 
 $$
-  a_{i1} \begin{pmatrix}b_{11} & b_{12} & \ldots &b_{1p}  \end{pmatrix}  +
-   a_{i2} \begin{pmatrix}b_{21} & b_{22} & \,\, \ldots \,\, &b_{2p}  \end{pmatrix} + \ldots +
-   a_{in} \begin{pmatrix}b_{n1} & b_{n2} & \ldots &b_{np}  \end{pmatrix}
+  a_{i1} \begin{pmatrix}b_{11} & b_{12} & \cdots &b_{1p}  \end{pmatrix}  +
+   a_{i2} \begin{pmatrix}b_{21} & b_{22} & \,\, \cdots \,\, &b_{2p}  \end{pmatrix} + \cdots +
+   a_{in} \begin{pmatrix}b_{n1} & b_{n2} & \cdots &b_{np}  \end{pmatrix}
 $$
 
 $$
-  =  \begin{pmatrix} (a_{i1}b_{11} + a_{i2}b_{21}+ \ldots +a_{in}b_{n1})  & \quad\ldots\quad & (a_{i1}b_{1p} + a_{i2} b_{2p} + \ldots + a_{in}b_{np})  \end{pmatrix}.
+  =  \begin{pmatrix} (a_{i1}b_{11} + a_{i2}b_{21}+ \cdots +a_{in}b_{n1})  & \quad\cdots\quad & (a_{i1}b_{1p} + a_{i2} b_{2p} + \cdots + a_{in}b_{np})  \end{pmatrix}.
 $$
 
 This is a row vector with on the $j$-th position the number
 
 $$
-  (a_{i1}b_{1j} + a_{i2} b_{2j} + \ldots + a_{in}b_{nj}),
+  (a_{i1}b_{1j} + a_{i2} b_{2j} + \cdots + a_{in}b_{nj}),
 $$
 
 and that is precisely the entry $c_{ij}$ of the matrix $C = AB$.
@@ -879,13 +878,13 @@ rows of the $n\times p$-matrix $B$ by $B^{(1)}, \ldots, B^{(p)}$, so
 
 $$
   A_{(j)} =   \begin{pmatrix}   a_{1j} \\ \vdots \\ a_{mj}\end{pmatrix}  \quad \text{and} \quad
-  B^{(i)} =   \begin{pmatrix}   b_{i1} & b_{i2} & \ldots & b_{ip}\end{pmatrix}.
+  B^{(i)} =   \begin{pmatrix}   b_{i1} & b_{i2} & \cdots & b_{ip}\end{pmatrix}.
 $$
 
 Show that
 
 $$
- AB = A_{(1)} B^{(1)}  +  A_{(2)} B^{(2)}  + \ldots + A_{(n)} B^{(n)},
+ AB = A_{(1)} B^{(1)}  +  A_{(2)} B^{(2)}  + \cdots + A_{(n)} B^{(n)},
 $$
 
 i.e., $AB$ is the sum of $n$ column-row products (like in {prf:ref}`Ex:MatrixOps:Product:ColumnRow`).
@@ -1003,7 +1002,7 @@ For the general case, one way to show validity of the first statement is to note
 This gives the linear combination
 
 $$
- A\mathbf{e}_j =  0\mathbf{a}_1 + 0\mathbf{a}_2 + \ldots + 1\mathbf{a}_j +\dots + 0\mathbf{a}_n = \mathbf{a}_j
+ A\mathbf{e}_j =  0\mathbf{a}_1 + 0\mathbf{a}_2 + \cdots + 1\mathbf{a}_j +\dots + 0\mathbf{a}_n = \mathbf{a}_j
 $$
 
 which shows that the $j$-th column of $AI_n$ is equal to the $j$-th column of $A$. And this holds for any column.
@@ -1026,7 +1025,7 @@ $$
  \end{array}
 $$
 
-for $ k = 1,2,\ldots q $.
+for $ k = 1,2,\ldots, q $.
 
 Now recall that (by definition)
 
@@ -1050,9 +1049,9 @@ we find
 
 $$
  \begin{array}{ccl}
-     A\,(B\mathbf{c_k}) & = & A \,(c_{1k}\mathbf{b}_1 +c_{2k}\mathbf{b}_2   + \ldots + c_{pk}\mathbf{b}_p)\\
-      & = & c_{1k}(A\mathbf{b}_1) +c_{2k}(A\mathbf{b}_2)   + \ldots + c_{pk}(A\mathbf{b}_p)\\
-      & = & \begin{pmatrix} A\mathbf{b}_1 & A\mathbf{b}_2 & \ldots & A\mathbf{b}_p \end{pmatrix} \begin{pmatrix} c_{1k} \\ \vdots \\ c_{pk} \end{pmatrix} \\
+     A\,(B\mathbf{c_k}) & = & A \,(c_{1k}\mathbf{b}_1 +c_{2k}\mathbf{b}_2   + \cdots + c_{pk}\mathbf{b}_p)\\
+      & = & c_{1k}(A\mathbf{b}_1) +c_{2k}(A\mathbf{b}_2)   + \cdots + c_{pk}(A\mathbf{b}_p)\\
+      & = & \begin{pmatrix} A\mathbf{b}_1 & A\mathbf{b}_2 & \cdots & A\mathbf{b}_p \end{pmatrix} \begin{pmatrix} c_{1k} \\ \vdots \\ c_{pk} \end{pmatrix} \\
       & = & (AB)\mathbf{c}_k.
  \end{array}
 $$
@@ -1547,7 +1546,7 @@ with an $n \times m$, is also a $p \times m$-matrix.
 Second, the $(i,j)$ entry of $(AB)^T$ is the $(j,i)$ entry of $AB$, which is the (row-column) product of the $j$-th row of $A$ and the $i$-th column of $B$:
 
 $$
-[(AB)^T]_{ij} = \begin{pmatrix}  a_{j1} & a_{j2} & \ldots &  a_{jn} \end{pmatrix}\begin{pmatrix}  b_{1i} \\ b_{2i} \\ \vdots \\ b_{ni} \end{pmatrix}.
+[(AB)^T]_{ij} = \begin{pmatrix}  a_{j1} & a_{j2} & \cdots &  a_{jn} \end{pmatrix}\begin{pmatrix}  b_{1i} \\ b_{2i} \\ \vdots \\ b_{ni} \end{pmatrix}.
 $$
 
 The $(i,j)$ entry of $B^TA^T$ is the product of the $i$-th row of $B^T$ and the $j$-th column of $A^T$.  
@@ -1557,13 +1556,13 @@ the $i$-th row of $B^T$ is the $i$-th column of $B$ written as a row, and the $j
 %the $i$-th row of $B^T$ ($j$-th column of $A^T$) is the $i$-th column %of $B$ ($j$-th row of $A$) written as a row (column):
 
 $$
-[B^TA^T]_{ij} = \begin{pmatrix}   b_{1i} & b_{2i} & \ldots &  b_{ni}   \end{pmatrix}\begin{pmatrix}  a_{j1} \\ a_{j2} \\ \vdots \\  a_{jn} \end{pmatrix}.
+[B^TA^T]_{ij} = \begin{pmatrix}   b_{1i} & b_{2i} & \cdots &  b_{ni}   \end{pmatrix}\begin{pmatrix}  a_{j1} \\ a_{j2} \\ \vdots \\  a_{jn} \end{pmatrix}.
 $$
 
 Both row-column products end up as the same value
 
 $$
-a_{j1}b_{1i} + a_{j2}b_{2i} + \ldots +   a_{jn}b_{ni} =  b_{1i}a_{j1} + b_{2i}a_{j2} + \ldots +   b_{ni}a_{jn}.
+a_{j1}b_{1i} + a_{j2}b_{2i} + \cdots +   a_{jn}b_{ni} =  b_{1i}a_{j1} + b_{2i}a_{j2} + \cdots +   b_{ni}a_{jn}.
 $$
 
 ::::::

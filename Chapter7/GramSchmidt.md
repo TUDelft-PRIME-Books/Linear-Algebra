@@ -69,7 +69,7 @@ and in general
 
 $$
 
-    \vect{b}_{j+1} = \vect{a}_{j+1} - \dfrac{\vect{a}_{j+1}\ip\vect{b}_1}{\vect{b}_1\ip\vect{b}_1}\vect{b}_1  - \ldots - \dfrac{\vect{a}_{j+1}\ip\vect{b}_j}{\vect{b}_j\ip\vect{b}_j}\vect{b}_j,
+    \vect{b}_{j+1} = \vect{a}_{j+1} - \dfrac{\vect{a}_{j+1}\ip\vect{b}_1}{\vect{b}_1\ip\vect{b}_1}\vect{b}_1  - \cdots - \dfrac{\vect{a}_{j+1}\ip\vect{b}_j}{\vect{b}_j\ip\vect{b}_j}\vect{b}_j,
 $$
 
 for $j = 1,2,\ldots, m-1$.
@@ -176,7 +176,7 @@ That is,
 $$
 
   \operatorname{proj}_{W_j}(\vect{a}_{j+1}) =
-  \dfrac{\vect{a}_{j+1}\ip\vect{b}_1}{\vect{b}_1\ip\vect{b}_1}\vect{b}_1  + \ldots + \dfrac{\vect{a}_{j+1}\ip\vect{b}_j}{\vect{b}_j\ip\vect{b}_j}\vect{b}_j.
+  \dfrac{\vect{a}_{j+1}\ip\vect{b}_1}{\vect{b}_1\ip\vect{b}_1}\vect{b}_1  + \cdots + \dfrac{\vect{a}_{j+1}\ip\vect{b}_j}{\vect{b}_j\ip\vect{b}_j}\vect{b}_j.
 $$
 
 This makes $\operatorname{proj}_{W_j}(\vect{a}_{j+1})$    an element of $W_{j}$  and 
@@ -350,7 +350,7 @@ The general step in the Gram-Schmidt process is of the form
 
 $$
 
- \vect{b}_{j+1} = \vect{a}_{j+1} - \dfrac{\vect{a}_{j+1}\ip\vect{b}_1}{\vect{b}_1\ip\vect{b}_1}\vect{b}_1  - \ldots - \dfrac{\vect{a}_{j+1}\ip\vect{b}_j}{\vect{b}_j\ip\vect{b}_j}\vect{b}_j.
+ \vect{b}_{j+1} = \vect{a}_{j+1} - \dfrac{\vect{a}_{j+1}\ip\vect{b}_1}{\vect{b}_1\ip\vect{b}_1}\vect{b}_1  - \cdots - \dfrac{\vect{a}_{j+1}\ip\vect{b}_j}{\vect{b}_j\ip\vect{b}_j}\vect{b}_j.
 $$
 
 Realising that each $\vect{b}_i$ is in the span
@@ -372,13 +372,13 @@ so
 
 $$
 
-  B = (\vect{b}_1\,\,\vect{b}_2\,\,\ldots\,\,\vect{b}_m)  =
-    (\vect{a}_1\,\,\vect{a}_2\,\,\ldots\,\,\vect{a}_m)
-  \begin{pmatrix} 1 & c_{12} & c_{13} & \ldots & c_{1m} \\
-  0 & 1 & c_{23} & \ldots & c_{2m} \\
-  0 & 0 & 1 & \ldots & c_{3m} \\
+  B = (\vect{b}_1\,\,\vect{b}_2\,\,\cdots\,\,\vect{b}_m)  =
+    (\vect{a}_1\,\,\vect{a}_2\,\,\cdots\,\,\vect{a}_m)
+  \begin{pmatrix} 1 & c_{12} & c_{13} & \cdots & c_{1m} \\
+  0 & 1 & c_{23} & \cdots & c_{2m} \\
+  0 & 0 & 1 & \ldcdotsots & c_{3m} \\
   \vdots & \vdots &  & \ddots &  \\
-  0 & 0 & 0 & \ldots & 1
+  0 & 0 & 0 & \cdots & 1
    \end{pmatrix} = AC.
 $$
 
@@ -386,7 +386,7 @@ Normalising the vectors $\vect{b}_i$ can be seen as multiplying the matrix $B$ w
 
 $$
 
-   Q = (\vect{q}_1\,\,\vect{q}_2\,\,\ldots\,\,\vect{q}_m)  =  BD,
+   Q = (\vect{q}_1\,\,\vect{q}_2\,\,\cdots\,\,\vect{q}_m)  =  BD,
 $$
 
 where the diagonal entries $d_{ii}$ of $D$ are given by

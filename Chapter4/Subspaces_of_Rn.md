@@ -276,7 +276,7 @@ By repeatedly applying the last proposition, we find for any subspace $S$
 $$
 \vect{u}_1, \ldots , \vect{u}_k \in S,  c_1, \ldots , c_k \in \R
 \quad \Longrightarrow \quad
-c_1\vect{u}_1+  \ldots + c_k\vect{u}_k \in S.
+c_1\vect{u}_1+ \cdots + c_k\vect{u}_k \in S.
 $$
 
 So we can more generally say that a subspace is _closed under linear combinations_.
@@ -312,21 +312,21 @@ Next let us check the three properties in {prf:ref}`Dfn:Subspaces:Subspace` in c
 Property (i):
 
 $$
-\vect{0} = 0\vect{v}_1+0\vect{v}_2+ \ldots + 0\vect{v}_r, \quad \text{so} \quad
+\vect{0} = 0\vect{v}_1+0\vect{v}_2+ \cdots + 0\vect{v}_r, \quad \text{so} \quad
 \vect{0} \in \operatorname{Span} \{ \vect{v}_1,\vect{v}_2, \ldots , \vect{v}_r \}.
 $$
 
 For property (ii) we just have to note that the sum of two linear combinations
 
 $$
-(c_1\vect{v}_1+ \ldots + c_r\vect{v}_r)\quad \text{and} \quad (d_1\vect{v}_1+ \ldots + d_r\vect{v}_r)
+(c_1\vect{v}_1+ \cdots + c_r\vect{v}_r)\quad \text{and} \quad (d_1\vect{v}_1+ \cdots + d_r\vect{v}_r)
 $$
 
 of a set of vectors $ \{ \vect{v}_1,\vect{v}_2, \ldots , \vect{v}_r \}$ is again a linear combination of these vectors. This is quite straightforward:
 
 $$
-(c_1\vect{v}_1+ \ldots + c_r\vect{v}_r) + (d_1\vect{v}_1+ \ldots + d_r\vect{v}_r) =
-(c_1+d_1)\vect{v}_1+ \ldots + (c_r+d_r)\vect{v}_r.
+(c_1\vect{v}_1+ \cdots + c_r\vect{v}_r) + (d_1\vect{v}_1+ \cdots + d_r\vect{v}_r) =
+(c_1+d_1)\vect{v}_1+ \cdots + (c_r+d_r)\vect{v}_r.
 $$
 
 Likewise you can check property (iii). This is {numref}`Exc:Subspaces:CheckPropiii`.
@@ -440,7 +440,7 @@ We now turn our attention to two important subspaces closely related to an $m\ti
 ::::::{prf:definition}
 :label: Dfn:Subspaces:ColNul
 
-The **column space** of an $m\times n$-matrix $A=  \begin{pmatrix} \vect{a}_1 &  \vect{a}_2    & \ldots &    \vect{a}_n \end{pmatrix}$ is the span of the columns of $A$:
+The **column space** of an $m\times n$-matrix $A=  \begin{pmatrix} \vect{a}_1 &  \vect{a}_2    & \cdots &    \vect{a}_n \end{pmatrix}$ is the span of the columns of $A$:
 
 $$
 \Col{A} = \Span{\vect{a}_1,\vect{a}_2,\ldots,\vect{a}_n}.
@@ -587,7 +587,7 @@ $$
 can be written in parametric vector form
 
 $$
-\vect{x} = c_1\vect{u}_1 + c_2\vect{u}_2 + \ldots +  c_k\vect{u}_k.
+\vect{x} = c_1\vect{u}_1 + c_2\vect{u}_2 + \cdots +  c_k\vect{u}_k.
 $$
 
 Thus: it is the span of a set of vectors, and as such

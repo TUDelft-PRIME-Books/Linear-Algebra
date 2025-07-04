@@ -308,7 +308,7 @@ and for a square matrix the echelon form is an upper-triangular matrix (with pos
 
 From {prf:ref}`Prop:DetCofactors:InvertibleTriangular` we know that for a triangular matrix $F$ we have '$F$ is invertible' is equivalent to '$\det{F} \neq 0$'.
 
-The row operations transforming $A$ to $F$ can be performed by multiplications with elementary matrices $E_1, \ldots E_k$.
+The row operations transforming $A$ to $F$ can be performed by multiplications with elementary matrices $E_1, \ldots, E_k$.
 
 We have seen (Equation {eq}`Eq:DetRowReduction:ElementaryMatrices` in {prf:ref}`Ex:DetRowReduction:ElementaryMatrices`)
 that
@@ -368,7 +368,7 @@ $$
 Hence suppose that the matrix $A$ is invertible. In that case (cf. {prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations`) $A$ can be written as a product of elementary matrices.
 
 $$
-A = E_1E_2\ldots E_k.
+A = E_1E_2\ldots, E_k.
 $$
 
 So then, step by step we find that
@@ -376,7 +376,7 @@ So then, step by step we find that
 $$
 \begin{array}{rl}
 \det{A}\!\!  &\!\! = \det{(E_1E_2\cdots E_k)} = \det{(E_1(E_2\cdots E_k))} =  \\
-& \!\! = \det{E_1} \det{(E_2\cdots E_k)}  = \ldots = \det{E_1} \det{E_2} \cdots \det{E_k},
+& \!\! = \det{E_1} \det{(E_2\cdots E_k)}  = \cdots = \det{E_1} \det{E_2} \cdots \det{E_k},
 \end{array}
 $$
 
@@ -385,7 +385,7 @@ and also
 $$
 \begin{array}{rl}
 \det{(AB)} \!&\!\! =  \det{(E_1E_2\cdots E_kB)} = \det{E_1} \det{(E_2\cdots E_kB)}  \\
-& = \ldots = \\
+& \vdots \\
 & = \det{E_1} \det{E_2} \cdots \det{E_k} \det{B} \\
 & = \det{A}\det{B}.
 \end{array}
@@ -603,9 +603,9 @@ Then
 :label: Eq:DetExtras:SumofCols
 
 \begin{array}{l}
-\det{(\vect{a}_1 \,\, \ldots \,\, \vect{b}+\vect{c} \,\, \ldots \,\, \vect{a}_n)} = \\
-\qquad \qquad \qquad \det{(\vect{a}_1 \,\, \ldots \,\, \vect{b} \,\, \ldots \,\, \vect{a}_n)} +
-\det{(\vect{a}_1 \,\, \ldots \,\, \vect{c} \,\, \ldots \,\, \vect{a}_n)}.
+\det{(\vect{a}_1 \,\, \cdots \,\, \vect{b}+\vect{c} \,\, \cdots \,\, \vect{a}_n)} = \\
+\qquad \qquad \qquad \det{(\vect{a}_1 \,\, \cdots \,\, \vect{b} \,\, \cdots \,\, \vect{a}_n)} +
+\det{(\vect{a}_1 \,\, \cdots \,\, \vect{c} \,\, \cdots \,\, \vect{a}_n)}.
 \end{array}
 
 :::
@@ -630,11 +630,11 @@ the rules can then be formulated as
 :::{paren-list}
 :start: 1
 
-- $\det{(\vect{a}_1   \,  \vect{a}_2  \,  \ldots \, c \vect{a}_k  \,    \ldots  \,   \vect{a}_n)} = c  \det{A}$.
+- $\det{(\vect{a}_1   \,  \vect{a}_2  \,  \cdots \, c \vect{a}_k  \,    \cdots  \,   \vect{a}_n)} = c  \det{A}$.
 
-- $\det{(\vect{a}_1  \,  \ldots  \,   \vect{a}_k  \,    \ldots  \,   \vect{a}_j  \,   \ldots \,   \vect{a}_n)} = - \det{(\vect{a}_1  \,  \ldots  \,   \vect{a}_j  \,    \ldots  \,   \vect{a}_k  \,   \ldots \,   \vect{a}_n)}$.
+- $\det{(\vect{a}_1  \,  \cdots  \,   \vect{a}_k  \,    \cdots  \,   \vect{a}_j  \,   \cdots \,   \vect{a}_n)} = - \det{(\vect{a}_1  \,  \cdots  \,   \vect{a}_j  \,    \cdots  \,   \vect{a}_k  \,   \cdots \,   \vect{a}_n)}$.
 
-- $\det{(\vect{a}_1 \,  \ldots   \,  \vect{a}_j   \,   \ldots  \,   \vect{a}_k + c\vect{a}_j  \,  \ldots  \,  \vect{a}_n)} = \det{A}$.
+- $\det{(\vect{a}_1 \,  \cdots   \,  \vect{a}_j   \,   \cdots  \,   \vect{a}_k + c\vect{a}_j  \,  \cdots  \,  \vect{a}_n)} = \det{A}$.
 
 :::
 
@@ -810,15 +810,15 @@ We then proceed as follows for Rule (3):
 
 $$
 \begin{array}{l}
-\det{(\vect{a}_1  \,  \ldots \,    \vect{a}_j  \,    \ldots  \,   \vect{a}_k + c\vect{a}_j   \, \ldots  \,  \vect{a}_n)} = \\
+\det{(\vect{a}_1  \,  \cdots \,    \vect{a}_j  \,    \cdots  \,   \vect{a}_k + c\vect{a}_j   \, \cdots  \,  \vect{a}_n)} = \\
 \quad =
-\det{(\vect{a}_1  \,  \ldots  \,  \vect{a}_j   \,  \ldots  \,   \vect{a}_k  \,  \ldots  \,  \vect{a}_n)} +
-\det{(\vect{a}_1   \, \ldots  \,   \vect{a}_j  \,    \ldots   \,   c \vect{a}_j    \,\ldots  \,  \vect{a}_n)}  \\
+\det{(\vect{a}_1  \,  \cdots  \,  \vect{a}_j   \,  \cdots  \,   \vect{a}_k  \,  \cdots  \,  \vect{a}_n)} +
+\det{(\vect{a}_1   \, \cdots  \,   \vect{a}_j  \,    \cdots   \,   c \vect{a}_j    \,\cdots  \,  \vect{a}_n)}  \\
 \quad =
-\det{(\vect{a}_1 \,   \ldots  \,   \vect{a}_j  \,   \ldots  \,   \vect{a}_k  \,  \ldots  \,  \vect{a}_n)} +
-c \det{(\vect{a}_1  \,  \ldots  \,   \vect{a}_j   \,   \ldots  \,    \vect{a}_j  \,  \ldots  \,  \vect{a}_n)}\\
+\det{(\vect{a}_1 \,   \cdots  \,   \vect{a}_j  \,   \cdots  \,   \vect{a}_k  \,  \cdots  \,  \vect{a}_n)} +
+c \det{(\vect{a}_1  \,  \cdots  \,   \vect{a}_j   \,   \cdots  \,    \vect{a}_j  \,  \cdots  \,  \vect{a}_n)}\\
 \quad =
-\det{(\vect{a}_1  \,  \ldots \,    \vect{a}_j  \,   \ldots   \,  \vect{a}_k  \,  \ldots   \, \vect{a}_n)} + 0.
+\det{(\vect{a}_1  \,  \cdots \,    \vect{a}_j  \,   \cdots   \,  \vect{a}_k  \,  \cdots   \, \vect{a}_n)} + 0.
 \end{array}
 $$
 

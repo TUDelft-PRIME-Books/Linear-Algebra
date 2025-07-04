@@ -67,7 +67,7 @@ then any vector $\vect{v}$ in $S$ can written as a linear combination of
 $\vect{b}_1, \vect{b}_2,\ldots,\vect{b}_m$ in a *unique* way, i.e.
 
 $$
-  \vect{v} = c_1\vect{b}_1 + c_2\vect{b}_2 + \ldots + c_m\vect{b}_m,
+  \vect{v} = c_1\vect{b}_1 + c_2\vect{b}_2 + \cdots + c_m\vect{b}_m,
 $$
 
 for _unique_ constants $c_1,c_2,\ldots,c_m$ in $\R$.
@@ -87,7 +87,7 @@ $$
 Let $ \vect{v}$ be an arbitrary element of $S$. As $\vect{v} \in \Span{\vect{b}_1, \ldots, \vect{b}_m}$,
 
 $$
-   \vect{v} = c_1\vect{b}_1 + c_2\vect{b}_2 + \ldots + c_m\vect{b}_m
+   \vect{v} = c_1\vect{b}_1 + c_2\vect{b}_2 + \cdots + c_m\vect{b}_m
 $$
 
 for some constants $c_1,c_2,\ldots,c_m$.
@@ -95,7 +95,7 @@ for some constants $c_1,c_2,\ldots,c_m$.
 To prove that the linear combination is unique, suppose that also
 
 $$
-    \vect{v} = d_1\vect{b}_1 + d_2\vect{b}_2 + \, \ldots \, + d_m\vect{b}_m
+    \vect{v} = d_1\vect{b}_1 + d_2\vect{b}_2 + \, \cdots \, + d_m\vect{b}_m
 $$
 
 for constants $d_1,d_2,\ldots,d_m$.
@@ -108,7 +108,7 @@ $$
 This can be done as follows: subtracting the two expressions for $\vect{v}$ gives
 
 $$
-  \vect{0} = \vect{v} - \vect{v} =  (c_1-d_1)\vect{b}_1 + (c_2-d_2)\vect{b}_2 + \ldots + (c_m-d_m)\vect{b}_m.
+  \vect{0} = \vect{v} - \vect{v} =  (c_1-d_1)\vect{b}_1 + (c_2-d_2)\vect{b}_2 + \cdots + (c_m-d_m)\vect{b}_m.
 $$
 
 So, we have a linear combination of the vectors $\vect{b}_i$ equal to the zero vector $\vect{0}$.
@@ -141,7 +141,7 @@ and $\vect{v}$ a vector in $S$.
 Then the coefficients $c_1,c_2, \ldots, c_m$ for which
 
 $$
-  \vect{v} = c_1\vect{b}_1 + c_2\vect{b}_2 + \ldots + c_m\vect{b}_m
+  \vect{v} = c_1\vect{b}_1 + c_2\vect{b}_2 + \cdots + c_m\vect{b}_m
 $$
 
 are called the **coordinates of the vector $\vect{v}$ with respect to the basis $\mc{B}$**,
@@ -307,7 +307,7 @@ The **change-of-coordinates matrix from ${\mathcal B}$ to ${\mathcal E}$** is th
 
 $$
   P_{\mc{B}} =
-      \left(\,\vect{b}_1\,\,\vect{b}_2\,\, \ldots\,\, \vect{b}_n\, \right).
+      \left(\,\vect{b}_1\,\,\vect{b}_2\,\, \cdots\,\, \vect{b}_n\, \right).
 $$
 
 ::::
@@ -335,13 +335,13 @@ $$
 This is shorthand for
 
 $$
-         \vect{v} = p_1\vect{b}_1+ p_2\vect{b}_2+\ldots + p_n\vect{b}_n,
+         \vect{v} = p_1\vect{b}_1+ p_2\vect{b}_2+ \cdots + p_n\vect{b}_n,
 $$
 
 and this linear combination of $n$ vectors in $\R^n$ can be written as a matrix-vector product:
 
 $$
-   \vect{v} = \left(\begin{matrix} \vect{b}_1 \,\,\vect{b}_2  \,\,\ldots\,\,  \vect{b}_n \end{matrix}\right)\begin{pmatrix} p_1 \\  p_2 \\ \vdots \\ p_n \end{pmatrix} = P_{\mc{B}} [\vect{v}]_{\mc B}.
+   \vect{v} = \left(\begin{matrix} \vect{b}_1 \,\,\vect{b}_2  \,\,\cdots\,\,  \vect{b}_n \end{matrix}\right)\begin{pmatrix} p_1 \\  p_2 \\ \vdots \\ p_n \end{pmatrix} = P_{\mc{B}} [\vect{v}]_{\mc B}.
 $$
 
 ::::
@@ -360,7 +360,7 @@ Let $\mc{B} = \{\vect{b}_1,\vect{b}_2, \ldots, \vect{b}_n\}$ be any basis of $\R
 By definition
 
 $$
-   P_{\mc{B}} = (\,\vect{b}_1\,\,\vect{b}_2\,\,\ldots\,\,\vect{b}_n\,).
+   P_{\mc{B}} = (\,\vect{b}_1\,\,\vect{b}_2\,\,\cdots\,\,\vect{b}_n\,).
 $$
 
 This is an $n \times n$-matrix with $n$ linearly independent columns, so it is an invertible matrix.
@@ -483,7 +483,7 @@ Indeed, suppose that $\vect{v}$ is a vector in $\R^n$, and that
 
 $$
     [\vect{v}]_{\mc{B}} = \begin{pmatrix} f_1 \\ \vdots \\ f_n \end{pmatrix}, \quad \text{so} \quad
-    \vect{v} = f_1\vect{b}_1 + f_2\vect{b}_2 + \ldots + f_n\vect{b}_n.
+    \vect{v} = f_1\vect{b}_1 + f_2\vect{b}_2 + \cdots + f_n\vect{b}_n.
 $$
 
 Because of the linearity of $T$ we then have
@@ -491,7 +491,7 @@ Because of the linearity of $T$ we then have
 :::{math}
 :label: Eq:ChangeOfBasis:LinearityTransform
 
-T(\vect{v}) = f_1T(\vect{b}_1) + f_2T(\vect{b}_2) + \ldots + f_nT(\vect{b}_n).
+T(\vect{v}) = f_1T(\vect{b}_1) + f_2T(\vect{b}_2) + \cdots + f_nT(\vect{b}_n).
 
 :::
 
@@ -500,7 +500,7 @@ Now we take the coordinate vectors with respect to basis $\mc{C}$:
 :::{math}
 :label: Eq:ChangeOfBasis:LinearityCoords
 
-[T(\vect{v})]_{\mc{C}} = f_1[T(\vect{b}_1)]_{\mc{C}} + f_2[T(\vect{b}_2)]_{\mc{C}} + \ldots + f_n[T(\vect{b}_n)]_{\mc{C}}.
+[T(\vect{v})]_{\mc{C}} = f_1[T(\vect{b}_1)]_{\mc{C}} + f_2[T(\vect{b}_2)]_{\mc{C}} + \cdots + f_n[T(\vect{b}_n)]_{\mc{C}}.
 
 
 :::
@@ -511,9 +511,9 @@ Noting that the term on the right-hand side of Equation {eq}`Eq:ChangeOfBasis:Li
 
 $$
     \begin{array}{rcl}
-    [T(\vect{v})]_{\mc{C}} &=& \left( [\,T(\vect{b}_1)]_{\mc{C}}\,\,\,\rule[-1ex]{0ex}{4ex}\,\ldots\,\,[T(\vect{b}_n)]_{\mc{C}}\,\right)
+    [T(\vect{v})]_{\mc{C}} &=& \left( [\,T(\vect{b}_1)]_{\mc{C}}\,\,\,\rule[-1ex]{0ex}{4ex}\,\cdots\,\,[T(\vect{b}_n)]_{\mc{C}}\,\right)
                                     \begin{pmatrix} f_1 \\ \vdots \\ f_n \end{pmatrix} \\
-    &=& \left(\,[T(\vect{b}_1)]_{\mc{C}}\,\,\,\rule[-0.5ex]{0ex}{3ex}\,\ldots\,\,[T(\vect{b}_n)]_{\mc{C}}\,\right)[\vect{v}]_{\mc{B}}.
+    &=& \left(\,[T(\vect{b}_1)]_{\mc{C}}\,\,\,\rule[-0.5ex]{0ex}{3ex}\,\cdots\,\,[T(\vect{b}_n)]_{\mc{C}}\,\right)[\vect{v}]_{\mc{B}}.
      \end{array}
 $$
 
@@ -525,8 +525,8 @@ $$
 Prove the identity
 
 $$
-   [c_1\vect{v}_1 +c_2\vect{v}_2+ \ldots + c_n\vect{v}_n ]_{\mc{B}} =
-   c_1[\vect{v}_1 ]_{\mc{B}} + c_2[\vect{v}_2 ]_{\mc{B}} + \ldots + c_n[\vect{v}_n ]_{\mc{B}}
+   [c_1\vect{v}_1 +c_2\vect{v}_2+ \cdots + c_n\vect{v}_n ]_{\mc{B}} =
+   c_1[\vect{v}_1 ]_{\mc{B}} + c_2[\vect{v}_2 ]_{\mc{B}} + \cdots + c_n[\vect{v}_n ]_{\mc{B}}
 $$
 
 that is used to go from Equation {eq}`Eq:ChangeOfBasis:LinearityTransform` to Equation {eq}`Eq:ChangeOfBasis:LinearityCoords` in the proof of {prf:ref}`Prop:ChangeOfBasis:MatrixOfTrafo`.
@@ -554,7 +554,7 @@ Let $T:\R^n \to \R^m$ be a linear transformation, and let $\mc{B} = \{\vect{b}_1
 
 $$
    [T]_{\mc{C}\leftarrow \mc{B}} = \big(\,[T(\vect{b}_1) ]_{\mc{C}}\,\,
-   [T(\vect{b}_2 )]_{\mc{C}}\,\,\ldots \,\,[T(\vect{b}_n) ]_{\mc{C}}\,\big).
+   [T(\vect{b}_2 )]_{\mc{C}}\,\,\cdots \,\,[T(\vect{b}_n) ]_{\mc{C}}\,\big).
 $$
 
 In the case where $n = m$ and $\mc{B} = \mc{C}$ we will use the slightly simpler notation
@@ -562,7 +562,7 @@ In the case where $n = m$ and $\mc{B} = \mc{C}$ we will use the slightly simpler
 $$
      [T]_{\mc{B}} = [T]_{\mc{B}\leftarrow \mc{B}} =\,
      \big(\,\,[T(\vect{b}_1) ]_{\mc{B}}\,\,\,
-   [T(\vect{b}_2) ]_{\mc{B}}\,\,\,\ldots \,\,\,[T(\vect{b}_n) ]_{\mc{B}}\,\,\big),
+   [T(\vect{b}_2) ]_{\mc{B}}\,\,\,\cdots \,\,\,[T(\vect{b}_n) ]_{\mc{B}}\,\,\big),
 $$
 
 and call this simply **the matrix of $T$ with respect to basis $\mathcal{B}$**.
@@ -573,8 +573,8 @@ If we let $\mc{B}$ be the standard basis $\mc{E}$ of $\R^n$ and $\mc{C}$ is the 
 
 $$
     [T]_{\mc{E}'\leftarrow \mc{E}}   \,=\,\,
-    \left(\,[T(\vect{e}_1) ]_{\mc{E}'}\,\,\ldots \,\rule[-.5ex]{0ex}{2.5ex}\,[T(\vect{e}_n) ]_{\mc{E}'}\,\right) \,\,=\,\,
-                          \big(\,T(\vect{e}_1)  \,\,   \ldots \,\, T(\vect{e}_n)  \,\big).
+    \left(\,[T(\vect{e}_1) ]_{\mc{E}'}\,\,\cdots \,\rule[-.5ex]{0ex}{2.5ex}\,[T(\vect{e}_n) ]_{\mc{E}'}\,\right) \,\,=\,\,
+                          \big(\,T(\vect{e}_1)  \,\,   \cdots \,\, T(\vect{e}_n)  \,\big).
 $$
 
 This is the "good old" standard matrix as in {numref}`Subsection %s <Subsec:LinTrafo:LinTrafoeqMatrixTrafo>`.
@@ -1010,7 +1010,7 @@ Let ${\mathcal B} = \{\vect{b}_1, \ldots, \vect{b}_n \}$ and ${\mathcal C} = \{\
 
 $$
   P_{\mc{C} \leftarrow \mc{B}} =
-      \left(\,[\vect{b}_1]_{\mc{C}} \,\, [\vect{b}_2]_{\mc{C}}  \,\, \rule[-1ex]{0ex}{3ex}\,\,\, \ldots \,\,\,[\vect{b}_n]_{\mc{C}}\right).
+      \left(\,[\vect{b}_1]_{\mc{C}} \,\, [\vect{b}_2]_{\mc{C}}  \,\, \rule[-1ex]{0ex}{3ex}\,\,\, \cdots \,\,\,[\vect{b}_n]_{\mc{C}}\right).
 $$
 
 Note that in the situation where $\mc{C}$ is the standard basis, we have that
@@ -1040,26 +1040,26 @@ $$
 Again we will make use of the identity
 
 $$
-[p_1\vect{v}_1+\ldots + p_k\vect{v_k}]_{\mc B}  =  p_1[\vect{v}_1]_{\mc B}+ \ldots +p_k[\vect{v}_k]_{\mc B}.
+[p_1\vect{v}_1+ \cdots + p_k\vect{v_k}]_{\mc B}  =  p_1[\vect{v}_1]_{\mc B}+ \cdots +p_k[\vect{v}_k]_{\mc B}.
 $$
 
 Thus, suppose that
 
 $$
    [\vect{v}]_{\mc B} = \begin{pmatrix} p_1 \\ \vdots \\ p_n \end{pmatrix} \quad \text{i.e.} \quad
-      \vect{v} = p_1\vect{b}_1+ \ldots + p_n\vect{b}_n.
+      \vect{v} = p_1\vect{b}_1+ \cdots + p_n\vect{b}_n.
 $$
 
 Then
 
 $$
-   [\vect{v}]_{\mc C} = [p_1\vect{b}_1+ \ldots + p_n\vect{b}_n]_{\mc C} = p_1[\vect{b}_1]_{\mc C}+ \ldots + p_n[\vect{b}_n]_{\mc C}.
+   [\vect{v}]_{\mc C} = [p_1\vect{b}_1+ \cdots + p_n\vect{b}_n]_{\mc C} = p_1[\vect{b}_1]_{\mc C}+ \cdots + p_n[\vect{b}_n]_{\mc C}.
 $$
 
 The last expression is a linear combination of $n$ vectors in $\R^n$ and consequently can be written as a matrix-vector product:
 
 $$
-   [\vect{v}]_{\mc C} = \big( \,[\vect{b}_1]_{\mc C}\,\, \ldots \,\, [\vect{b}_n]_{\mc C} \,\big) \begin{pmatrix} p_1 \\ \vdots \\ p_n \end{pmatrix} =
+   [\vect{v}]_{\mc C} = \big( \,[\vect{b}_1]_{\mc C}\,\, \cdots \,\, [\vect{b}_n]_{\mc C} \,\big) \begin{pmatrix} p_1 \\ \vdots \\ p_n \end{pmatrix} =
         \CoBmatrix{B}{C}[\vect{v}]_{\mc B},
 $$
 

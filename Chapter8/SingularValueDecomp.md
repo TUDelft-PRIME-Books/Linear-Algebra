@@ -30,7 +30,7 @@ where
 
 \item $V$ is an $n \times n$  orthogonal matrix,
 
-\item $\Sigma$ is an $m\times n$-matrix which is zero everywhere, apart from the entries  $\Sigma_{ii} = \sigma_i$, $i = 1,\ldots , p$,  which are all $\geq 0$, and in decreasing order. That is,  $\sigma_1 \geq \sigma_2 \geq \ldots \geq \sigma_p$.
+\item $\Sigma$ is an $m\times n$-matrix which is zero everywhere, apart from the entries  $\Sigma_{ii} = \sigma_i$, $i = 1,\ldots , p$,  which are all $\geq 0$, and in decreasing order. That is,  $\sigma_1 \geq \sigma_2 \geq \cdots \geq \sigma_p$.
 
 :::
 
@@ -333,7 +333,7 @@ Suppose $A$ is an $m\times n$-matrix of rank $r$. (The rank, as we have seen in 
 
 1. Compute $A^TA$.
 
-2. Find the eigenvalues $\lambda_1 \geq \lambda_2 \geq \ldots \geq \lambda_n$
+2. Find the eigenvalues $\lambda_1 \geq \lambda_2 \geq \cdots \geq \lambda_n$
  of $A^TA$.
 
 3. Construct the $m\times n$-matrix $\Sigma$,  putting zeros on every position except on  the main 'diagonal', where   $\Sigma_{ii}=\sigma_i = \sqrt{\lambda_i} $.
@@ -535,7 +535,7 @@ $$
 as well.  As $\lambda_i$ was supposed to be unequal to zero, and the vectors $\mathbf{v}_k$ to be linearly independent,  it follows that 
 
 $$
- c_1 = c_2   = \ldots = c_g =  0,
+ c_1 = c_2   = \cdots = c_g =  0,
 $$
 
 which shows that the vectors $A\mathbf{v}_1, \ldots, A\mathbf{v}_g$ are $g$ *linearly independent* eigenvectors  (of $AA^T$).  So the geometric multiplicity $g_2$ of $\lambda_i$ for $AA^T$
@@ -967,14 +967,14 @@ In the second context  one might expect that the columns will highly correlate: 
 
 The main features of the data may be filtered out by analysing an SVD of the matrix at hand.
 
-The basic idea comes from the 'spectral decomposition' as in the last observation of {prf:ref}`Ex:SVD:firstSVD`.  Suppose $A$ is a matrix of  rank $r$,  with non-zero singular values  $\sigma_1 \geq \sigma_2 \geq \ldots \geq \sigma_r > 0$.  Furthermore, let  $U\Sigma V^T$  be a singular value decomposition of the matrix $A$. Let 
+The basic idea comes from the 'spectral decomposition' as in the last observation of {prf:ref}`Ex:SVD:firstSVD`.  Suppose $A$ is a matrix of  rank $r$,  with non-zero singular values  $\sigma_1 \geq \sigma_2 \geq \cdots \geq \sigma_r > 0$.  Furthermore, let  $U\Sigma V^T$  be a singular value decomposition of the matrix $A$. Let 
 
 $$
   \Delta = \begin{pmatrix} \sigma_1 &   0   &  0   & \cdots & 0 \\ 
                               0 & \sigma_2  &  0   & \cdots & 0 \\
                               0 &  0  & \sigma_3 & \cdots   & 0 \\
                               \vdots & \vdots &  & \ddots &\vdots \\
-                              0  & 0  & 0 & \ldots & \sigma_r 
+                              0  & 0  & 0 & \cdots & \sigma_r 
            \end{pmatrix}.   
 $$
 
@@ -997,7 +997,7 @@ which can be rewritten as
 Here $A$ is written as a sum of rank-$1$ matrices, and because of the decreasing singular values, these rank-$1$ matrices get less and less 'important'.  If the $\sigma_i$ become  very small (relatively) for, say, $k < i \leq r$,  we might expect that the sum
 
 $$
-\sigma_1 \vect{u}_1\vect{v}_1^T + \ldots + \sigma_k \vect{u}_k\vect{v}_k^T 
+\sigma_1 \vect{u}_1\vect{v}_1^T + \cdots + \sigma_k \vect{u}_k\vect{v}_k^T 
 $$
 
 of the first $k$ terms gives a good approximation of the matrix $A$.

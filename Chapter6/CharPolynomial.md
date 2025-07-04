@@ -413,7 +413,7 @@ Suppose the characteristic polynomial of the $n \times n$-matrix $A$ is given by
 :::{math}
 :label: Eq:EigenValues:CharPoly
 
-p_A(\lambda) = c_n\lambda^n + c_{n-1}\lambda^{n-1} + \ldots + c_2\lambda^2 +c_1\lambda + c_0.
+p_A(\lambda) = c_n\lambda^n + c_{n-1}\lambda^{n-1} + \cdots + c_2\lambda^2 +c_1\lambda + c_0.
 
 :::
 
@@ -422,7 +422,7 @@ Then the following identities hold for the coefficients $c_n, c_{n-1}$ and $c_0$
 $$
 \begin{array}{lcl}
 c_n &=& (-1)^n, \\
-c_{n-1} &=& (-1)^{n-1} (a_{11}+a_{22}+\ldots + a_{nn}), \\
+c_{n-1} &=& (-1)^{n-1} (a_{11}+a_{22}+ \cdots + a_{nn}), \\
 c_0 &=& \operatorname{det}(A).
 \end{array}
 $$
@@ -456,7 +456,7 @@ The value of $c_0$ is the easiest to establish: just plug in $\lambda=0$ in
 Equation {eq}`Eq:EigenValues:CharPoly`:
 
 $$
-\operatorname{det}(A)= \operatorname{det}(A - 0I) = p_A(0) = c_n0^n + c_{n-1}0^{n-1} + \ldots + c_1\cdot 0 + c_0 = c_0.
+\operatorname{det}(A)= \operatorname{det}(A - 0I) = p_A(0) = c_n0^n + c_{n-1}0^{n-1} + \cdots + c_1\cdot 0 + c_0 = c_0.
 $$
 
 For the other  coefficient we will not give the slightly technical  argument for an $n\times n$-matrix.  The idea will be pretty much clear when we consider a general $3 \times 3$-matrix
@@ -491,7 +491,7 @@ are completely determined by the first term. A closer look at that term yields t
 Expanding this product further we see that
 
 $$
-(a_{11}-\lambda)(a_{22}-\lambda)(a_{33}-\lambda) = -\lambda^3 + (a_{11} + a_{22} + a_{33}) \lambda^2 +  \ldots \lambda + \ldots 
+(a_{11}-\lambda)(a_{22}-\lambda)(a_{33}-\lambda) = -\lambda^3 + (a_{11} + a_{22} + a_{33}) \lambda^2 + \cdots \lambda + \cdots 
 $$
 
 Thus the coefficients $c_3$  and $c_2$ of $\lambda^3$  and $\lambda^2$ are indeed as stated, i.e.
@@ -508,7 +508,7 @@ $$
 The sum of the diagonal entries of an $n\times n$-matrix $A$ is called the **trace** of $A$:
 
 $$
-  \operatorname{tr}(A) = a_{11} + a_{22} + \ldots + a_{nn} = \sum_{i=1}^{n}  a_{ii}.
+  \operatorname{tr}(A) = a_{11} + a_{22} + \cdots + a_{nn} = \sum_{i=1}^{n}  a_{ii}.
 $$
 
 ::::::
@@ -558,13 +558,13 @@ $$
 Now we focus on the coefficient of $\lambda^{n-1}$ and the constant term:
 
 $$
-p_A(\lambda)  = (-1)^n \big[\lambda^n -(\lambda_1+\lambda_2+ \cdots+\lambda_n)\lambda^{n-1} + \ldots + (-1)^n\lambda_1\cdot\lambda_2\cdots\lambda_n\big].
+p_A(\lambda)  = (-1)^n \big[\lambda^n -(\lambda_1+\lambda_2+ \cdots+\lambda_n)\lambda^{n-1} + \cdots + (-1)^n\lambda_1\cdot\lambda_2\cdots\lambda_n\big].
 $$
 
 Comparing this with the expressions for the coefficients we found in {prf:ref}`Prop:Eigenvalues:SumEigenvaluesAndTrace`
 
 $$
-p_A(\lambda) = (-1)^n \lambda^n + (-1)^{n-1}\operatorname{tr}(A) \lambda^{n-1} + \ldots + \Det{A},
+p_A(\lambda) = (-1)^n \lambda^n + (-1)^{n-1}\operatorname{tr}(A) \lambda^{n-1} + \cdots + \Det{A},
 $$
 
 we readily read off the identities put forward in 

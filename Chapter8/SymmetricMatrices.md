@@ -272,14 +272,14 @@ The easiest proof is via complex numbers. Feel free to skip it, in particular wh
 For two vectors $\mathbf{u},\mathbf{v}$ in $\C^n$ we consider the expression
 
 $$
-  \overline{\mathbf{u}}^{T}\mathbf{v} = \overline{u_1}v_1 + \ldots + \overline{u_n}v_n.
+  \overline{\mathbf{u}}^{T}\mathbf{v} = \overline{u_1}v_1 + \cdots + \overline{u_n}v_n.
 $$
 
 If we take $\mathbf{v}$ equal to $\mathbf{u}$ we get
 
 $$
-  \overline{\mathbf{u}}^{T}\mathbf{u} = \overline{u_1}u_1 + \overline{u_2}u_2 + \ldots +  \overline{u_n}u_n =
-                          |u_1|^2 + |u_2|^2 + \ldots + |u_n|^2,
+  \overline{\mathbf{u}}^{T}\mathbf{u} = \overline{u_1}u_1 + \overline{u_2}u_2 + \cdots +  \overline{u_n}u_n =
+                          |u_1|^2 + |u_2|^2 + \cdots + |u_n|^2,
 $$
 
 where $|u_i|$ denotes the modulus of the complex number $u_i$. This sum of squares (of real numbers) is a non-negative real number. We also see that
@@ -505,7 +505,7 @@ It appears that $A$ has the double eigenvalues $\lambda_{1,2} = 3$ and $\lambda_
 To find the eigenvectors for the eigenvalue $3$ we row reduce the matrix $(A - 3I)$.
 
 $$
-\left(\begin{array}{cccc}1-3 & 2 & 2 & 0\\ 2 & -1-3 & 0 & 2 \\ 2 & 0 & -1-3 & -2 \\ 0 & 2 & -2 & 1-3  \end{array} \right)  \,\,  \sim \,\,\ldots\,\, \sim  \,\,
+\left(\begin{array}{cccc}1-3 & 2 & 2 & 0\\ 2 & -1-3 & 0 & 2 \\ 2 & 0 & -1-3 & -2 \\ 0 & 2 & -2 & 1-3  \end{array} \right)  \,\,  \sim \,\,\cdots\,\, \sim  \,\,
 \left(\begin{array}{cccc}1 & 0 & -2 & -1\\ 0 & 1 & -1 & -1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0  \end{array} \right).
 $$
 
@@ -527,7 +527,7 @@ $$
 Likewise we can first find a 'natural' basis for the eigenspace $E_{-3}$ by row reducing $(A - (-3I))$:
 
 $$
-(A - (-3I)) = \left(\begin{array}{cccc}4 & 2 & 2 & 0\\ 2 & 2 & 0 & 2 \\ 2 & 0 & 2 & -2 \\ 0 & 2 & -2 & 4  \end{array} \right) \quad  \sim \ldots \sim  \quad
+(A - (-3I)) = \left(\begin{array}{cccc}4 & 2 & 2 & 0\\ 2 & 2 & 0 & 2 \\ 2 & 0 & 2 & -2 \\ 0 & 2 & -2 & 4  \end{array} \right) \quad  \sim \cdots \sim  \quad
 \left(\begin{array}{cccc}1 & 0 & 1 & -1\\ 0 & 1 & -1 & 2 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0  \end{array} \right).
 $$
 
@@ -568,7 +568,7 @@ Let $Q_1$ be the matrix with the columns $\vect{q}_1,\vect{q}_2,\ldots,\vect{q}_
 It can be shown that $A_1 = Q_1^{-1}AQ_1 = Q_1^TAQ_1$ is of the form
 
 $$
-   \left(\begin{array}{ccc} \lambda_1 & 0   & \ldots & 0  \\
+   \left(\begin{array}{ccc} \lambda_1 & 0   & \cdots & 0  \\
     0 &   \\
      \vdots   & & B_1 &  \\
     0 &
@@ -604,7 +604,7 @@ We can apply the same construction to $B_1$, yielding
 
 $$
    B_2 = (\tilde{Q}_2)^{-1}B_1\tilde{Q}_2
-   =    \left(\begin{array}{cccc} \lambda_2 & 0   & \ldots & 0  \\
+   =    \left(\begin{array}{cccc} \lambda_2 & 0   & \cdots & 0  \\
     0 &   \\
      \vdots   & & \tilde{B}_2 &  \\
     0 &
@@ -617,7 +617,7 @@ If we then define
 
 $$
    Q_2 =
-    \left(\begin{array}{cccc} 1 & 0   & \ldots & 0  \\
+    \left(\begin{array}{cccc} 1 & 0   & \cdots & 0  \\
     0 &   \\
      \vdots   & & \tilde{Q}_2 &  \\
     0 &
@@ -630,8 +630,8 @@ it follows that
 $$
   A_2 = Q_2^{-1}A_1Q_2 =
   \left(\begin{array}{cccccc}
-    \lambda_1 &      0    & 0  & \ldots & 0  \\
-       0      & \lambda_2 & 0  & \ldots & 0  \\
+    \lambda_1 &      0    & 0  & \cdots & 0  \\
+       0      & \lambda_2 & 0  & \cdots & 0  \\
        0      &  0  \\
     \vdots & \vdots & & \tilde{B_2}  \\
     0 & 0 &
@@ -643,11 +643,11 @@ Continuing in this fashion we find
 $$
   A_{n-1} = Q_{n-1}^{-1} \cdots Q_2^{-1}Q_1^{-1}A Q_1  Q_2 \cdots Q_{n-1} =
   \left(\begin{array}{ccccc}
-    \lambda_1 &      0    & 0  & \ldots &0 \\
-       0      & \lambda_2 & 0  &\ldots &0 \\
+    \lambda_1 &      0    & 0  & \cdots &0 \\
+       0      & \lambda_2 & 0  &\cdots &0 \\
      \vdots & & \ddots &  & \vdots\\
      \vdots & &  & \ddots & \vdots\\
-     0 & 0 &  \ldots & 0 &\lambda_n
+     0 & 0 &  \cdots & 0 &\lambda_n
    \end{array}\right).
 
 
@@ -920,7 +920,7 @@ Suppose  $A$ is a symmetric $n \times n$-matrix.
 Then $A$ has an orthonormal basis $\vect{u}_1, \vect{u}_2,\ldots,\vect{u}_n$ of eigenvectors for the eigenvalues  $\lambda_1, \ldots, \lambda_n$, where we may suppose that these are ordered according to their absolute values in decreasing order
 
 $$
-   |\lambda_1| \geq |\lambda_2| \geq \ldots \geq   |\lambda_n|. 
+   |\lambda_1| \geq |\lambda_2| \geq \cdots \geq   |\lambda_n|. 
 $$
 
 First of all
@@ -944,31 +944,31 @@ We will in fact show that  $\norm{A\mathbf{x}}^2 \leq
 Since $\{\vect{u}_1, \ldots, \vect{u}_n \}$  is a basis  of $\R^n$  it follows that
 
 $$
-  \vect{x} = c_1\mathbf{u}_1 +  c_2\mathbf{u}_2 + \ldots +  c_n\mathbf{u}_n, \quad
+  \vect{x} = c_1\mathbf{u}_1 +  c_2\mathbf{u}_2 + \cdots +  c_n\mathbf{u}_n, \quad
   \text{for some } \, c_1,\ldots,c_n. 
 $$
 
 From the orthonormality of the $\vect{u}_i$ it follows that
 
 $$
- 1 = \norm{\vect{x}}^2  = \norm{c_1\mathbf{u}_1 +   \ldots + c_n\mathbf{u}_n}^2
- = c_1^2\norm{\mathbf{u}_1}^2 +   \ldots +  c_n^2\norm{\mathbf{u}_n}^2 = c_1^2 + \ldots + c_n^2,
+ 1 = \norm{\vect{x}}^2  = \norm{c_1\mathbf{u}_1 + \cdots + c_n\mathbf{u}_n}^2
+ = c_1^2\norm{\mathbf{u}_1}^2 + \cdots +  c_n^2\norm{\mathbf{u}_n}^2 = c_1^2 + \cdots + c_n^2,
 $$
 
-thus $c_1^2 + \ldots + c_n^2=1$.
+thus $c_1^2 + \cdots + c_n^2=1$.
 
 Next, invoking that each $\vect{u}_i$ is an eigenvector for $\lambda_i$ and again that the $\vect{u}_i$ form an orthonormal set, we get
 
 $$
 \begin{array}{rcl}
 \norm{A\vect{x}}^2 &=& \norm{c_1\lambda_1\vect{u}_1+ c_n\lambda_n\vect{u}_n}^2 \\
-                   &=& c_1^2\lambda_1^2 \norm{\vect{u}_1}^2  + \ldots + c_n^2\lambda_n^2 \norm{\vect{u}_n}^2 \\
+                   &=& c_1^2\lambda_1^2 \norm{\vect{u}_1}^2  + \cdots + c_n^2\lambda_n^2 \norm{\vect{u}_n}^2 \\
                    &=&
-                   c_1^2\lambda_1^2   + \ldots + c_n^2\lambda_n^2 \\
+                   c_1^2\lambda_1^2   + \cdots + c_n^2\lambda_n^2 \\
                    &\leq & 
-                   c_1^2\lambda_1^2   + \ldots + c_n^2\lambda_1^2  \\
+                   c_1^2\lambda_1^2   + \cdots + c_n^2\lambda_1^2  \\
                    &=& 
-                   (c_1^2  + \ldots + c_n^2)\lambda_1^2 \\
+                   (c_1^2  + \cdots + c_n^2)\lambda_1^2 \\
                    &=& \lambda_1^2.
 \end{array}
 $$
@@ -1052,7 +1052,7 @@ Every $n \times n$ symmetric matrix $A$ is the linear combination
 :::{math}
 :label: Eq:SymmetricMat:SpectralDecomp
 
-    A = \lambda_1P_1 +  \lambda_2P_2 + \ldots +  \lambda_nP_n
+    A = \lambda_1P_1 +  \lambda_2P_2 + \cdots +  \lambda_nP_n
 
 :::
 
@@ -1075,7 +1075,7 @@ Exactly as in {prf:ref}`Ex:SymmetricMat:SpectralDecomp` we can use the column-ro
 :::{math}
 :label: Eq:SymmetricMat:SpectralDecomp2
   
-A =  \lambda_1 \mathbf{q}_1\mathbf{q}_1^T + \lambda_2\mathbf{q}_2\mathbf{q}_2^T + \ldots + \lambda_n\mathbf{q}_n\mathbf{q}_n^T,
+A =  \lambda_1 \mathbf{q}_1\mathbf{q}_1^T + \lambda_2\mathbf{q}_2\mathbf{q}_2^T + \cdots + \lambda_n\mathbf{q}_n\mathbf{q}_n^T,
 
 :::
 
@@ -1098,7 +1098,7 @@ If in {prf:ref}`Thm:SymmetricMat:SpectralDecomp` the projections onto eigenvecto
 Every symmetric $n \times n$-matrix $A$ can be written as a linear combination of the orthogonal projections onto its (orthogonal) eigenspaces.
 
 $$
-   A = \lambda_1 P_1 + \, \ldots \, + \lambda_k P_k,
+   A = \lambda_1 P_1 + \, \cdots \, + \lambda_k P_k,
 $$
 
 where $P_i$ denotes the orthogonal projection onto the eigenspace $E_{\lambda_i}$.
@@ -1110,8 +1110,8 @@ where $P_i$ denotes the orthogonal projection onto the eigenspace $E_{\lambda_i}
 We know that
 
 $$
-    A = \lambda_1P_1 +   \ldots +  \lambda_nP_n =
-        \lambda_1\vect{q}_1\vect{q}_1^T +   \ldots +  \lambda_n\vect{q}_n\vect{q}_n^T.
+    A = \lambda_1P_1 + \cdots +  \lambda_nP_n =
+        \lambda_1\vect{q}_1\vect{q}_1^T + \cdots +  \lambda_n\vect{q}_n\vect{q}_n^T.
 $$
 
 If all eigenvalues $\lambda_1, \ldots, \lambda_n$ are different that's just it.
@@ -1120,7 +1120,7 @@ If $\lambda_i$ is an eigenvalue of multiplicity $m$ with $m$ orthonormal eigenve
 $\vect{q}_1, \ldots, \vect{q}_m$, then
 
 $$
-  \lambda_i\vect{q}_1\vect{q}_1^T + \,\ldots\,+ \lambda_i\vect{q}_m\vect{q}_m^T =
+  \lambda_i\vect{q}_1\vect{q}_1^T + \,\cdots\,+ \lambda_i\vect{q}_m\vect{q}_m^T =
   \lambda_i (\,\vect{q}_1\,\,\cdots\,\,\vect{q}_m)  (\,\vect{q}_1\,\,\cdots\,\,\vect{q}_m)^T = \lambda_i Q_iQ_i^T.
 $$
 
@@ -1156,7 +1156,7 @@ The spectral decomposition according to {prf:ref}`Cor:SymmetricMat:SpectralThm-2
 
 $$
    A = (-3) \left(\vect{q}_1\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_2\,\right)\left(\vect{q}_1\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_2\,\right)^T +
-   3 \left(\vect{q}_3\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_4\,\right)\left(\vect{q}_3\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_4\,\right)^T = \,\,\ldots\,\,  =
+   3 \left(\vect{q}_3\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_4\,\right)\left(\vect{q}_3\,\rule[-2ex]{0ex}{5ex}\,\vect{q}_4\,\right)^T = \,\,\cdots\,\,  =
 $$
 
 $$

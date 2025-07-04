@@ -15,7 +15,7 @@ We will define the product of an $m\times n$-matrix $A$ with a vector $\vect{x}$
 The product $A\mathbf{x}$ of an $m\times n$-matrix
 
 $$
- A = (\mathbf{a}_1 \,\,\mathbf{a}_2\, \ldots\, \mathbf{a}_n)
+ A = (\mathbf{a}_1 \,\,\mathbf{a}_2\, \cdots\, \mathbf{a}_n)
 $$
 
 with a vector
@@ -28,7 +28,7 @@ $$
 is defined as
 
 $$
-  A\mathbf{x} = x_1\mathbf{a}_1 + x_2\mathbf{a}_2 + \ldots + x_n\mathbf{a}_n.
+  A\mathbf{x} = x_1\mathbf{a}_1 + x_2\mathbf{a}_2 + \cdots + x_n\mathbf{a}_n.
 $$
 
 So $A\mathbf{x}$ is the linear combination of the columns of the matrix $A$ with the entries of the vector $\mathbf{x}$ as coefficients.
@@ -81,19 +81,19 @@ The product of a matrix and a vector can also be computed as follows:
 
 $$
 \left(\begin{array}{ccccc}
-            a_{11} & a_{12}&  \ldots& \ldots&  a_{1n} \\
-            a_{21} & a_{22}&  \ldots& \ldots&  a_{2n} \\
-            \vdots &  \vdots&  \ldots& \ldots& \vdots    \\
-            a_{m1} & a_{m2}&  \ldots&  \ldots& a_{mn}
+            a_{11} & a_{12}&  \cdots& \cdots&  a_{1n} \\
+            a_{21} & a_{22}&  \cdots& \cdots&  a_{2n} \\
+            \vdots &  \vdots&  \cdots& \cdots& \vdots    \\
+            a_{m1} & a_{m2}&  \cdots&  \cdots& a_{mn}
           \end{array}
    \right)
 \begin{pmatrix}    x_1 \\ x_2 \\ \vdots \\ \vdots \\ x_n  \end{pmatrix}
    =
 \begin{pmatrix}
-    a_{11}x_1 + a_{12}x_2 +   \ldots+ a_{1n}x_n \\
-    a_{21}x_1 + a_{22}x_2 +   \ldots+ a_{2n}x_n \\
+    a_{11}x_1 + a_{12}x_2 + \cdots+ a_{1n}x_n \\
+    a_{21}x_1 + a_{22}x_2 + \cdots+ a_{2n}x_n \\
                 \vdots\\
-    a_{m1}x_1 + a_{m2}x_2 +   \ldots+ a_{mn}x_n
+    a_{m1}x_1 + a_{m2}x_2 + \cdots+ a_{mn}x_n
 \end{pmatrix}.
 $$
 
@@ -109,7 +109,7 @@ $$
 \begin{pmatrix}  a_{11} \\  a_{21}  \\  \vdots    \\ a_{m1}  \end{pmatrix} +
   x_2
 \begin{pmatrix}  a_{12} \\  a_{22}  \\  \vdots    \\ a_{m2}  \end{pmatrix} +
-  \,\,\ldots\,\, +
+  \,\,\cdots\,\, +
   x_n
 \begin{pmatrix}  a_{1n} \\  a_{2n}  \\  \vdots    \\ a_{mn}  \end{pmatrix}.
 $$
@@ -122,7 +122,7 @@ Note that the entry on the $i$-th position of the product, which is given by
 
 $$
 
-  a_{i1}x_1 + a_{i2}x_2 +   \,\,\ldots\,\,+ a_{in}x_n,
+  a_{i1}x_1 + a_{i2}x_2 +   \,\,\cdots\,\,+ a_{in}x_n,
 
 
 $$
@@ -132,8 +132,8 @@ is the 'row-column product'
 $$
 
 
-\begin{pmatrix}  a_{i1} & a_{i2} & \ldots & \ldots & a_{in}  \end{pmatrix}
-\begin{pmatrix}    x_1 \\ x_2 \\ \vdots \\ \vdots \\ x_n  \end{pmatrix}.
+\begin{pmatrix}  a_{i1} & a_{i2} & \cdots  & a_{in}  \end{pmatrix}
+\begin{pmatrix}    x_1 \\ x_2 \\ \vdots \\ x_n  \end{pmatrix}.
 
 
 $$
@@ -194,13 +194,13 @@ From the above it follows that the matrix-vector equation
 
 $$
  \left(\begin{array}{ccccc}
-            a_{11} & a_{12}&  \ldots& \ldots&  a_{1n} \\
-            a_{21} & a_{22}&  \ldots& \ldots&  a_{2n} \\
-            \vdots &  \vdots&  \cdots& \cdots& \vdots    \\
-            a_{m1} & a_{m2}&  \ldots&  \ldots& a_{mn}
+            a_{11} & a_{12}&  \cdots&  a_{1n} \\
+            a_{21} & a_{22}&  \cdots&   a_{2n} \\
+            \vdots &  \vdots&  & \vdots    \\
+            a_{m1} & a_{m2}&  \cdots&  a_{mn}
           \end{array}
    \right)
-\begin{pmatrix}    x_1 \\ x_2 \\ \vdots \\ \vdots \\ x_n  \end{pmatrix}
+\begin{pmatrix}    x_1 \\ x_2 \\ \vdots \\ x_n  \end{pmatrix}
    =
 \begin{pmatrix}    b_1 \\ b_2 \\ \vdots\\ b_m\end{pmatrix}
 $$
@@ -209,10 +209,10 @@ and the linear system
 
 $$
    \left\{\begin{array}{ccccccccc}
-            a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  b_1, \\
-            a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! b_2, \\
-            \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\cdots\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
-            a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! b_m
+            a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \cdots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  b_1, \\
+            a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\cdots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! b_2, \\
+            \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
+            a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \cdots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! b_m
           \end{array}
    \right.
 $$
@@ -224,7 +224,7 @@ So, we can see this linear system as
 - a vector equation:
 
 $$
-  x_1\mathbf{a}_1 + x_2\mathbf{a}_2 + \ldots + x_n\mathbf{a}_n = \mathbf{b}
+  x_1\mathbf{a}_1 + x_2\mathbf{a}_2 + \cdots + x_n\mathbf{a}_n = \mathbf{b}
 $$
 
 or
@@ -315,11 +315,11 @@ There are several ways to derive the formula. Via the linear combination idea it
 So assume
 
 $$
-  A = (\,\mathbf{a}_1\,\,\,\mathbf{a}_2\,\,\,\ldots\,\,\,\mathbf{a}_n\,), \quad \mathbf{x} =
-\begin{pmatrix}    x_1 \\ x_2 \\ \vdots \\ \vdots \\ x_n  \end{pmatrix},
+  A = (\,\mathbf{a}_1\,\,\,\mathbf{a}_2\,\,\,\cdots\,\,\,\mathbf{a}_n\,), \quad \mathbf{x} =
+\begin{pmatrix}    x_1 \\ x_2 \\ \vdots \\ x_n  \end{pmatrix},
   \quad
   \mathbf{y} =
-\begin{pmatrix}    y_1 \\ y_2 \\ \vdots \\ \vdots \\ y_n  \end{pmatrix}.
+\begin{pmatrix}    y_1 \\ y_2 \\ \vdots \\ y_n  \end{pmatrix}.
 $$
 
 Then
@@ -327,17 +327,17 @@ Then
 $$
   A\,(\mathbf{x}+\mathbf{y} ) =
   A\,
-\begin{pmatrix}    x_1+y_1 \\ x_2+y_2 \\ \vdots \\ \vdots \\ x_n+y_n  \end{pmatrix} =
-  (x_1+y_1 )\mathbf{a}_1 + (x_2+y_2 )\mathbf{a}_2 + \ldots
+\begin{pmatrix}    x_1+y_1 \\ x_2+y_2 \\ \vdots \\ x_n+y_n  \end{pmatrix} =
+  (x_1+y_1 )\mathbf{a}_1 + (x_2+y_2 )\mathbf{a}_2 + \cdots
   + (x_n+y_n )\mathbf{a}_n.
 $$
 
 Changing the order of the terms, putting the terms involving $x_i$ to the front, shows that the last expression is equal to
 
 $$
- \big(x_1\mathbf{a}_1 + x_2\mathbf{a}_2 + \ldots
+ \big(x_1\mathbf{a}_1 + x_2\mathbf{a}_2 + \cdots
   + x_n\mathbf{a}_n\big)+
-  \big(y_1\mathbf{a}_1 + y_2\mathbf{a}_2 + \ldots
+  \big(y_1\mathbf{a}_1 + y_2\mathbf{a}_2 + \cdots
   + y_n\mathbf{a}_n\big).
 $$
 
@@ -362,7 +362,7 @@ Prove statement (ii) of the previous proposition.
 Assume
 
 $$
-  A = (\,\mathbf{a}_1\,\,\,\mathbf{a}_2\,\,\,\ldots\,\,\,\mathbf{a}_n\,), \quad \mathbf{x} =
+  A = (\,\mathbf{a}_1\,\,\,\mathbf{a}_2\,\,\,\cdots\,\,\,\mathbf{a}_n\,), \quad \mathbf{x} =
 \begin{pmatrix}    x_1 \\ x_2 \\ \vdots \\ \vdots \\ x_n  \end{pmatrix},
 $$
 
@@ -374,7 +374,7 @@ $$
   A\,(c\mathbf{x}) =
   A\,
 \begin{pmatrix}    cx_1 \\ cx_2 \\ \vdots \\ \vdots \\ cx_n  \end{pmatrix} =
-  cx_1\mathbf{a}_1 + cx_2\mathbf{a}_2 + \ldots
+  cx_1\mathbf{a}_1 + cx_2\mathbf{a}_2 + \cdots
   + cx_n\mathbf{a}_n.
 $$
 
@@ -382,7 +382,7 @@ In the last expression we can take the common factor $c$ out to the front,
 and we see that it becomes equal to
 
 $$
-  c(x_1\mathbf{a}_1 + x_2\mathbf{a}_2 + \ldots
+  c(x_1\mathbf{a}_1 + x_2\mathbf{a}_2 + \cdots
   + x_n\mathbf{a}_n) = cA\mathbf{x}.
 $$
 
@@ -480,10 +480,10 @@ Suppose the linear system
 
 $$
    \left\{\begin{array}{ccccccccc}
-            a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  p_1, \\
-            a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! p_2,\\
-            \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\cdots\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
-            a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! p_m \\
+            a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \cdots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  p_1, \\
+            a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\cdots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! p_2,\\
+            \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
+            a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \cdots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! p_m \\
           \end{array}
    \right.
 $$
@@ -492,10 +492,10 @@ is consistent and the linear system
 
 $$
    \left\{\begin{array}{ccccccccc}
-            a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  q_1, \\
-            a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! q_2, \\
-            \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\cdots\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
-            a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! q_m \\
+            a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \cdots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  q_1, \\
+            a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\cdots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! q_2, \\
+            \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
+            a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \cdots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! q_m \\
           \end{array}
    \right.
 $$
@@ -504,10 +504,10 @@ is inconsistent. Show that the system
 
 $$
    \left\{\begin{array}{ccccccccc}
-            a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  r_1, \\
-            a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! r_2, \\
-            \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\cdots\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
-            a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! r_m, \\
+            a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \cdots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  r_1, \\
+            a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\cdots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! r_2, \\
+            \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
+            a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \cdots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! r_m, \\
           \end{array}
    \right.
 $$
@@ -523,10 +523,10 @@ We start with some notations.
 
 $$
  A = \left(\begin{array}{cccc}
-            a_{11} & a_{12}&  \ldots&   a_{1n}   \\
-            a_{21} & a_{22}&  \ldots&   a_{2n}   \\
-            \vdots &  \vdots&  \cdots&  \vdots    \\
-            a_{m1} & a_{m2}&  \ldots&   a_{mn}
+            a_{11} & a_{12}&  \cdots&   a_{1n}   \\
+            a_{21} & a_{22}&  \cdots&   a_{2n}   \\
+            \vdots &  \vdots&  &  \vdots    \\
+            a_{m1} & a_{m2}&  \cdots&   a_{mn}
           \end{array}   \right),
           \quad \mathbf{p} =
           \left(\begin{array}{c}
@@ -563,7 +563,7 @@ Let $\mathbf{v}_1, \ldots, \mathbf{v}_k$ be vectors in $\mathbb{R}^n$. Define th
 
 $$
 A=
-\begin{pmatrix} \mathbf{v}_1 & \mathbf{v}_2 & \ldots & \mathbf{v}_k \end{pmatrix}.
+\begin{pmatrix} \mathbf{v}_1 & \mathbf{v}_2 & \cdots & \mathbf{v}_k \end{pmatrix}.
 $$
 
 The collection $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$ is equal to $\mathbb{R}^n$ if and only if the equation $A \mathbf{x}=\mathbf{b}$ has a solution for each $\mathbf{b}$ in $\mathbb{R}^n$.
@@ -576,7 +576,7 @@ The collection $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$ is equal to $\mathbb{
 If $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$ is equal to $\mathbb{R}^n$, then each vector $\mathbf{b}$ in  $\mathbb{R}^n$  is a vector in the span of the vectors $\mathbf{v}_1, \ldots, \mathbf{v}_k$. This means that we can write $\mathbf{b}$ as a linear combination
 
 $$
-\mathbf{b}=x_1\mathbf{v}_1+ \ldots + x_k\mathbf{v}_k.
+\mathbf{b}=x_1\mathbf{v}_1+ \cdots + x_k\mathbf{v}_k.
 $$
 
 Define the vector $\mathbf{x}$ such that
@@ -589,7 +589,7 @@ $$
 By definition of the matrix-vector product we now have
 
 $$
-A\mathbf{x} = x_1\mathbf{v}_1+ \ldots + x_k\mathbf{v}_k
+A\mathbf{x} = x_1\mathbf{v}_1+ \cdots + x_k\mathbf{v}_k
  = \mathbf{b}.
 $$
 
@@ -622,7 +622,7 @@ Let $\mathbf{v}_1, \ldots, \mathbf{v}_k$ be vectors in $\mathbb{R}^n$. Define th
 
 $$
 A=
-\begin{pmatrix} \mathbf{v}_1 & \mathbf{v}_2 & \ldots & \mathbf{v}_k \end{pmatrix}.
+\begin{pmatrix} \mathbf{v}_1 & \mathbf{v}_2 & \cdots & \mathbf{v}_k \end{pmatrix}.
 $$
 
 The following statements are equivalent:

@@ -188,7 +188,7 @@ $\mathbf{w}=\begin{pmatrix}b_{1}\\b_{2}\\ \vdots\\b_{n}\end{pmatrix}$ in $\mathb
 :::{math}
 :label: Eq:InnerProduct:DotProduct
 
-\mathbf{v}\ip\mathbf{w} = a_1b_1 +a_2b_2+ \ldots + a_nb_n.
+\mathbf{v}\ip\mathbf{w} = a_1b_1 +a_2b_2+ \cdots + a_nb_n.
 :::
 
 ::::
@@ -260,8 +260,8 @@ $$
 \begin{align*}
 \mathbf{v}_1 \ip \mathbf{v}_2 &=
 \begin{pmatrix}a_{1} \\ a_{2}\\ \vdots\\a_{n}\end{pmatrix} \ip \begin{pmatrix}b_{1} \\ b_{2}\\ \vdots \\ b_{n}\end{pmatrix}
-            \\ &= a_1b_1 +a_2b_2+ \ldots + a_nb_n  \\
-      &= b_1a_1 +b_2a_2+ \ldots + b_na_n \\&=
+            \\ &= a_1b_1 +a_2b_2+ \cdots + a_nb_n  \\
+      &= b_1a_1 +b_2a_2+ \cdots + b_na_n \\&=
                \begin{pmatrix}b_{1} \\ b_{2}\\ \vdots \\ b_{n}\end{pmatrix}\ip\begin{pmatrix}a_{1} \\ a_{2}\\ \vdots\\ a_{n}\end{pmatrix} \\&= \mathbf{v}_2\ip\mathbf{v}_1.
 \end{align*}
 $$
@@ -271,8 +271,8 @@ ii. For two vectors $\vect{v}_1 = \begin{pmatrix}a_{1} \\ a_{2}\\ \vdots\\ a_{n}
 $$
 \begin{align*}
             (c\mathbf{v}_1)\ip\mathbf{v}_2 &=  \begin{pmatrix}ca_{1}\\ca_{2}\\ \vdots\\ca_{n}\end{pmatrix}\ip\begin{pmatrix}b_{1}\\b_{2}\\       \vdots\\b_{n}\end{pmatrix}  \\
-            &= (ca_1)b_1 + (ca_2)b_2+ \ldots + (ca_n)b_n \\
-            &= c\,(a_1b_1 +a_2b_2+ \ldots + a_nb_n) \\
+            &= (ca_1)b_1 + (ca_2)b_2+ \cdots + (ca_n)b_n \\
+            &= c\,(a_1b_1 +a_2b_2+ \cdots + a_nb_n) \\
             &= c\, (\mathbf{v}_1\ip\mathbf{v}_2).
 \end{align*}
 $$
@@ -282,7 +282,7 @@ iii. Is proved in the same way as (ii).
 iv. This consists of two statements. For the first, we note that
 
 $$
- \mathbf{v}\ip\mathbf{v} = a_1a_1 +a_2a_2+ \ldots + a_na_n = a_1^2+a_2^2 + \ldots + a_n^2
+ \mathbf{v}\ip\mathbf{v} = a_1a_1 +a_2a_2+ \cdots + a_na_n = a_1^2+a_2^2 + \cdots + a_n^2
 $$
 
 is the sum of squares of real numbers, so it is non-negative. That is,
@@ -294,7 +294,7 @@ $$
 To prove the second statement, we see that
 
 $$
-  \mathbf{v}\ip\mathbf{v} =  a_1^2+a_2^2 + \ldots + a_n^2 = 0
+  \mathbf{v}\ip\mathbf{v} =  a_1^2+a_2^2 + \cdots + a_n^2 = 0
 $$
 
 if and only if all the squares are $0$, which only happens if each entry $a_i$ is equal to zero, that is, if $\mathbf{v} = \mathbf{0}$.
@@ -328,9 +328,9 @@ $$
 \left(\mathbf{v}_1 + \mathbf{v}_2 \right) \ip \mathbf{v}_3 &=
 \left(\begin{pmatrix}a_{1} \\ a_{2}\\ \vdots\\a_{n}\end{pmatrix} + \begin{pmatrix}b_{1} \\ b_{2}\\ \vdots \\ b_{n}\end{pmatrix} \right) \ip \begin{pmatrix}  c_1 \\ c_2 \\ \vdots \\ c_n \end{pmatrix} \\
 &= \begin{pmatrix} a_1+b_1\\a_2+b_2\\ \vdots\\ a_n+b_n\end{pmatrix}\ip \begin{pmatrix}  c_1 \\ c_2 \\ \vdots \\ c_n \end{pmatrix} \\
-            &= (a_1+b_1)c_1 +(a_2+b_2)c_2+ \ldots + (a_n+b_n)c_n  \\
-      &= a_1c_1 +b_1c_1+a_2c_2+b_2c_2 \ldots + a_nc_n+b_nc_n \\
-      &= a_1c_1 +a_2c_2+\ldots + a_nc_n +b_1c_1+b_2c_2 \ldots +b_nc_n \\
+            &= (a_1+b_1)c_1 +(a_2+b_2)c_2+ \cdots + (a_n+b_n)c_n  \\
+      &= a_1c_1 +b_1c_1+a_2c_2+b_2c_2 \cdots + a_nc_n+b_nc_n \\
+      &= a_1c_1 +a_2c_2+\cdots + a_nc_n +b_1c_1+b_2c_2 \cdots +b_nc_n \\
       &= \begin{pmatrix}a_{1} \\ a_{2}\\ \vdots\\a_{n}\end{pmatrix}\ip\begin{pmatrix}  c_1 \\ c_2 \\ \vdots \\ c_n \end{pmatrix}+\begin{pmatrix}  b_1 \\ b_2 \\ \vdots \\ b_n \end{pmatrix}\ip\begin{pmatrix}  c_1 \\ c_2 \\ \vdots \\ c_n \end{pmatrix} \\
       &= \mathbf{v}_1\ip\mathbf{v}_3+\mathbf{v}_2\ip\mathbf{v}_3.
 \end{align*}
@@ -769,7 +769,7 @@ Expressed in the entries of $\mathbf{v}$ this yields
 
 $$
 
-  \norm{\mathbf{v}} = \sqrt{a_1^2+ a_2^2 + \ldots +a_n^2\,}\,,
+  \norm{\mathbf{v}} = \sqrt{a_1^2+ a_2^2 + \cdots +a_n^2\,}\,,
 $$
 
 so for vectors in $\mathbb{R}^2$ and $\mathbb{R}^3$ the norm of a vector is just the length of the vector.

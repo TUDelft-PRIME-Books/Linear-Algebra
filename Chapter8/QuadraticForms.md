@@ -9,7 +9,7 @@
 The simplest functions from $\R^n$ to $\R$ are linear functions
 
 $$
-   f(x_1,\ldots,x_n) = \sum_{i=1}^n a_ix_i +b \, =\, a_1x_1 + a_2x_2 + \ldots + a_nx_n + b.
+   f(x_1,\ldots,x_n) = \sum_{i=1}^n a_ix_i +b \, =\, a_1x_1 + a_2x_2 + \cdots + a_nx_n + b.
 $$
 
 In short $f(\mathbf{x}) = \mathbf{a}^T\mathbf{x} + b$, for some vector $\mathbf{a}$ in $\R^n$ and some number $b$ in $\R$.
@@ -225,7 +225,7 @@ One of the simplest quadratic forms results when we take $A = I = I_n$, the iden
 Then we have
 
 $$
-  q(\vect{x}) = \vect{x}^TI_n\vect{x} = \vect{x}^T\vect{x} =x_1^2 + x_2^2 + \ldots + x_n^2 = \vect{x}\ip\vect{x}.
+  q(\vect{x}) = \vect{x}^TI_n\vect{x} = \vect{x}^T\vect{x} =x_1^2 + x_2^2 + \cdots + x_n^2 = \vect{x}\ip\vect{x}.
 $$
 
 For this quadratic form, it is clear that it will only take on non-negative values. And that
@@ -413,7 +413,7 @@ Let $Q$ be an orthogonal matrix diagonalising $A$. That is,  $A = QDQ^{-1}$.
 Applying the substitution $\vect{x} = Q\vect{y}$ then yields the quadratic form
 
 $$
-  \vect{y}^TD\vect{y} = \lambda_1y_1^2 + \lambda_2y_2^2 + \ldots + \lambda_ny_n^2,
+  \vect{y}^TD\vect{y} = \lambda_1y_1^2 + \lambda_2y_2^2 + \cdots + \lambda_ny_n^2,
 $$
 
 where $\lambda_1, \ldots, \lambda_n$ are the _eigenvalues_ of the matrix $A$.
@@ -433,12 +433,12 @@ The last expression is indeed of the form
 
 $$
   \vect{y}^T\begin{pmatrix}
-                 \lambda_1 & 0 & \ldots & 0 \\
-                 0 & \lambda_2 & \ldots & 0 \\
+                 \lambda_1 & 0 & \cdots & 0 \\
+                 0 & \lambda_2 & \cdots & 0 \\
                  \vdots & \vdots & \ddots & \vdots \\
-                 0 & 0 & \ldots & 0
+                 0 & 0 & \cdots & 0
             \end{pmatrix}\vect{y} =
-            \lambda_1y_1^2 + \lambda_2y_2^2 + \ldots + \lambda_ny_n^2,
+            \lambda_1y_1^2 + \lambda_2y_2^2 + \cdots + \lambda_ny_n^2,
 $$
 
 where $\lambda_1,\lambda_2, \ldots, \lambda_n$ are the eigenvalues of $A$.
@@ -528,7 +528,7 @@ The following proposition is  a direct consequence of the diagonalisation  ({prf
 :label:  Prop:QuadForms:MaximumxTAx
 
 Let  $q(x) = \vect{x}^TA\vect{x}$ be the quadratic form with matrix $A$ and suppose that $A$ has the (ordered) eigenvalues
-$\lambda_1 \geq \lambda_2 \geq \ldots \geq \lambda_n$.  Then the maximum and the minimum value attained by   $q(\vect{x})$  under the constraint  $\norm{\vect{x}} = 1$  are $\lambda_1$ and $\lambda_n$.
+$\lambda_1 \geq \lambda_2 \geq \cdots \geq \lambda_n$.  Then the maximum and the minimum value attained by   $q(\vect{x})$  under the constraint  $\norm{\vect{x}} = 1$  are $\lambda_1$ and $\lambda_n$.
 
 ::::
 
@@ -537,7 +537,7 @@ The proof contains the same type of reasoning as the proof of {prf:ref}`Prop:Sym
 ::::{admonition} Proof of {prf:ref}`Prop:QuadForms:MaximumxTAx`
 :class: tudproof, dropdown
 
-Suppose that   $\vect{u}_1, \vect{u}_2,\ldots,\vect{u}_n$  is an orthonormal basis of eigenvectors for $A$ for the eigenvalues  $\lambda_1 \geq \ldots \geq \lambda_n$.
+Suppose that   $\vect{u}_1, \vect{u}_2,\ldots,\vect{u}_n$  is an orthonormal basis of eigenvectors for $A$ for the eigenvalues  $\lambda_1 \geq \cdots \geq \lambda_n$.
 
 
 First of all
@@ -552,8 +552,8 @@ Likewise $q(\vect{u}_n) =  \lambda_n$, so $q(\vect{x})$  does take on the values
 Next, for an arbitrary unit vector $\vect{x}$, which can always be written as 
 
 $$
-  c_1\vect{u}_1 +    c_2\vect{u}_2 + \ldots +  c_n\vect{u}_n, \quad \text{with} \quad 
-  c_1^2 + c_2^2 + \ldots + c_n^2 = 1 
+  c_1\vect{u}_1 +    c_2\vect{u}_2 + \cdots +  c_n\vect{u}_n, \quad \text{with} \quad 
+  c_1^2 + c_2^2 + \cdots + c_n^2 = 1 
 $$
 
 (cf. proof of {prf:ref}`Prop:SymmetricMat:Max||Ax||`), we deduce that
@@ -561,7 +561,7 @@ $$
 $$
 \begin{array}{rcl}
   \vect{x}^TA\vect{x} &=& 
-  (c_1\vect{u}_1 +  \ldots +  c_n\vect{u}_n)^T(c_1\lambda_1\vect{u}_1 +  \ldots +  c_n\lambda_n\vect{u}_n) \\
+  (c_1\vect{u}_1 + \cdots +  c_n\vect{u}_n)^T(c_1\lambda_1\vect{u}_1 + \cdots +  c_n\lambda_n\vect{u}_n) \\
   &=& 
    c_1^2\lambda_1\vect{u}_1^T\vect{u}_1 + \cdots + c_n^2\lambda_n\vect{u}_n^T\vect{u}_n \\
    &=&
@@ -571,7 +571,7 @@ $$
 
 All cross terms $\vect{u}_i^T\vect{u}_j$  with $i\neq j$ drop out since $\vect{u}_i\ip\vect{u}_j=0$, for $i\neq j$,  and $\vect{u}_i^T\vect{u}_i = 1$ by the assumption that the vectors $\mathbf{u}_i$ are unit vectors.
 
-Now, invoking  $\lambda_1 \geq \lambda_2 \geq \ldots  \geq \lambda_n$ and $c_1^2 + c_2^2 + \ldots +c_n^2 = 1$,  we see that
+Now, invoking  $\lambda_1 \geq \lambda_2 \geq \cdots  \geq \lambda_n$ and $c_1^2 + c_2^2 + \cdots +c_n^2 = 1$,  we see that
 
 $$ 
   \begin{array}{rcl}    
@@ -706,17 +706,17 @@ This immediately follows from {prf:ref}`Prop:QuadForms:Diagonalize`. If we make 
 $$
   A = QDQ^{-1} = QDQ^T, \quad
   D = \left(\begin{array}{cccc}
-  \lambda_1 & 0 & \ldots & 0  \\
-  0 & \lambda_2 & \ldots & 0 \\
+  \lambda_1 & 0 & \cdots & 0  \\
+  0 & \lambda_2 & \cdots & 0 \\
   \vdots & \vdots & \ddots &\vdots\\
-  0 & 0 & \ldots & \lambda_n
+  0 & 0 & \cdots & \lambda_n
   \end{array}\right),
 $$
 
 the quadratic form transforms to
 
 $$
-  \tilde{q}(\vect{y}) = \vect{y}^TD\vect{y} = \lambda_1y_1^2 + \ldots + \lambda_ny_n^2.
+  \tilde{q}(\vect{y}) = \vect{y}^TD\vect{y} = \lambda_1y_1^2 + \cdots + \lambda_ny_n^2.
 $$
 
 Let us consider the case where all eigenvalues $\lambda_i$ are _positive_.

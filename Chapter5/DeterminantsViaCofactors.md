@@ -121,14 +121,11 @@ Often the word 'cofactor' is omitted and we simply say expansion along the first
 The signs are determined by the position in the matrix/determinant according to the following pattern
 
 $$
-\left|\begin{array}{ccccccc} + & - & + & \ldots & \ldots & \ldots & \ldots\\[.7ex]
-                                - & + & - &  \ldots & \ldots& \ldots & \ldots \\[.7ex]
-                                + & - & + & \ldots & \ldots& \ldots & \ldots \\[.7ex]
-                                - & + & - & \ldots & \ldots& \ldots & \ldots \\[.7ex]
-  \ldots  & \ldots & \ldots & \ldots & \ldots& \ldots & \ldots \\[.7ex]
-  \ldots  & \ldots & \ldots & \ldots & \ldots& \ldots & \ldots \\[.7ex]
-  \ldots  & \ldots & \ldots & \ldots & \ldots& + & - \\[.7ex]
-  \ldots  & \ldots & \ldots & \ldots & \ldots& - & +
+\left|\begin{array}{ccccccc} + & - & + & \cdots & \\[.7ex]
+                                - & + & - &  \cdots & \\[.7ex]
+                                + & - & + & \cdots & \phantom{\cdots} \\[.7ex]
+  \vdots  & \vdots & \vdots & \ddots &  \\[.7ex]
+   \phantom{\cdots} & \phantom{\cdots} & \phantom{\cdots}  & \phantom{\cdots} & +
   \end{array} \right|
 $$
 
@@ -423,7 +420,7 @@ A triangular matrix is invertible if and only if it has a non-zero determinant.
 Let us first consider the case of an $n \times n$ upper-triangular matrix $U$, with entries $u_{ij}$. Such a matrix is an echelon matrix. It is invertible if and only if it has $n$ linearly independent columns, which is the case if all diagonal elements $u_{ii}$ are non-zero. And this last is equivalent to
 
 $$
-u_{11}\cdot u_{22}  \cdot  \ldots \cdot u_{nn} = \det{U} \neq 0.
+u_{11} u_{22}  \cdots u_{nn} = \det{U} \neq 0.
 $$
 
 For a lower-triangular matrix $L$ a similar argument can be given.

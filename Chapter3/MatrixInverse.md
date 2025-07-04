@@ -501,9 +501,9 @@ $$
 has a unique solution. If we denote this solution by $\vect{c}_j$ we have that
 
 $$
-  A(\,\vect{c}_1\,\,\vect{c}_2\,\, \ldots \,\, \vect{c}_n\,) =
-   (\,A\vect{c}_1\,\,A\vect{c}_2\,\, \ldots \,\, A\vect{c}_n\,) =
-    (\,\vect{e}_1\,\,\vect{e}_2\,\, \ldots \,\, \vect{e}_n\,) = I.
+  A(\,\vect{c}_1\,\,\vect{c}_2\,\, \cdots \,\, \vect{c}_n\,) =
+   (\,A\vect{c}_1\,\,A\vect{c}_2\,\, \cdots \,\, A\vect{c}_n\,) =
+    (\,\vect{e}_1\,\,\vect{e}_2\,\, \cdots \,\, \vect{e}_n\,) = I.
 $$
 
 Since all solutions $\vect{c}_j$ are unique, the solution of the equation
@@ -911,8 +911,8 @@ The inverse of the matrix $A$ must satisfy the equation $AX = I$.
 Written out column by column this means that
 
 $$
-  AX = I \quad  \iff \quad A(\,\mathbf{x}_1\,\,\mathbf{x}_2\, \ldots\, \mathbf{x}_n\,) = 
-  (\,\mathbf{e}_1\,\mathbf{e}_2\, \ldots\, \mathbf{e}_n\,).
+  AX = I \quad  \iff \quad A(\,\mathbf{x}_1\,\,\mathbf{x}_2\, \cdots\, \mathbf{x}_n\,) = 
+  (\,\mathbf{e}_1\,\mathbf{e}_2\, \cdots\, \mathbf{e}_n\,).
 $$
 
 For the existence of a solution of this Equation {prf:ref}`Prop:MatrixInv:InvertibleIndepCols` tells us
@@ -1107,8 +1107,8 @@ as well.
 To understand that this is indeed true, we recall ({prf:ref}`Dfn:MatrixOps:ElementaryMatrix`) that row operations can be effectuated via multiplications with elementary matrices. Furthermore, since the matrix product is defined column by column, i.e.
 
 $$
-    MX = M\left(\begin{array}{cccc}\mathbf{x_1} &\mathbf{x_2} &\ldots &\mathbf{x_p} \end{array}\right)=
-        \left(\begin{array}{cccc}M\mathbf{x_1} &M\mathbf{x_2} &\ldots &M\mathbf{x_p} \end{array}\right),
+    MX = M\left(\begin{array}{cccc}\mathbf{x_1} &\mathbf{x_2} &\cdots &\mathbf{x_p} \end{array}\right)=
+        \left(\begin{array}{cccc}M\mathbf{x_1} &M\mathbf{x_2} &\cdots &M\mathbf{x_p} \end{array}\right),
 $$
 
 we also have
@@ -1130,7 +1130,7 @@ $$
    \left(\, A \,\, \middle|\,\, I\,\right)&\sim&
    \left(\, E_1A \,\, \middle|\,\, E_1I\,\right)  \sim
    \left(\,E_2 E_1A \,\, \middle|\,\, \,E_2E_1I\,\right)\sim
-   \ldots  \sim \\
+   \cdots  \sim \\
    &\sim&
    \left(\,E_k\cdots E_2 E_1A \,\,\, \middle|\,\,\, E_k\cdots E_2E_1I\,\right)   =
     \left(\, I \,\, \middle|\,\,B\,\right).

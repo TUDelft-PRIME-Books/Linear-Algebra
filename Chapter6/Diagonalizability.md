@@ -167,9 +167,9 @@ Let $P$ be the matrix with  $\vect{v}_1,\ldots,\vect{v}_n$ as columns.  $P$ is i
 
 $$
 \begin{array}{ccl}
-AP &=&  A (\vect{v}_1\,\, \ldots \,\, \vect{v}_k\,\, \vect{v}_{k+1}\,\,\ldots \,\, \mathbf{v}_n) \\
-   &=&  (A\vect{v}_1\,\, \ldots \,\, A\vect{v}_k\,\, A\vect{v}_{k+1}\,\,\ldots \,\, A\mathbf{v}_n) \\
-   &=&  (\lambda_1\vect{v}_1\,\, \ldots \,\, \lambda_1\vect{v}_k\,\,A\vect{v}_{k+1}\,\, \ldots \,\, A\mathbf{v}_n),
+AP &=&  A (\vect{v}_1\,\, \cdots \,\, \vect{v}_k\,\, \vect{v}_{k+1}\,\,\cdots \,\, \mathbf{v}_n) \\
+   &=&  (A\vect{v}_1\,\, \cdots \,\, A\vect{v}_k\,\, A\vect{v}_{k+1}\,\,\cdots \,\, A\mathbf{v}_n) \\
+   &=&  (\lambda_1\vect{v}_1\,\, \cdots \,\, \lambda_1\vect{v}_k\,\,A\vect{v}_{k+1}\,\, \cdots \,\, A\mathbf{v}_n),
 \end{array}
 $$
 
@@ -179,9 +179,9 @@ Since $P$ is invertible, for each $j \geq k+1$ the equation $P\vect{x} = A\vect{
 
 $$
 \begin{array}{l}
-  (\lambda_1\vect{v}_1\,\, \ldots \,\, \lambda_1\vect{v}_k\,\,\,A\vect{v}_{k+1}\,\, \ldots \,\, A\mathbf{v}_n) \\
-  \quad = \quad (P(\lambda_1\vect{e}_1) ,\, \ldots \,\,P(\lambda_1\vect{e}_k)\,\,\,P\vect{b}_{k+1}\,\, \ldots \,\,P\vect{b}_{n}) \\
-  \quad = \quad P(\lambda_1\vect{e}_1 ,\, \ldots \,\,\lambda_1\vect{e}_k\,\,\,\vect{b}_{k+1}\,\, \ldots \,\,\vect{b}_{n}) = P B.
+  (\lambda_1\vect{v}_1\,\, \cdots \,\, \lambda_1\vect{v}_k\,\,\,A\vect{v}_{k+1}\,\, \cdots \,\, A\mathbf{v}_n) \\
+  \quad = \quad (P(\lambda_1\vect{e}_1) \,\, \cdots \,\,P(\lambda_1\vect{e}_k)\,\,\,P\vect{b}_{k+1}\,\, \cdots \,\,P\vect{b}_{n}) \\
+  \quad = \quad P(\lambda_1\vect{e}_1 \,\, \cdots \,\,\lambda_1\vect{e}_k\,\,\,\vect{b}_{k+1}\,\, \cdots \,\,\vect{b}_{n}) = P B.
 \end{array}  
 $$ 
 
@@ -192,13 +192,13 @@ Note that $B$ is of the form
 $$
 
   B \,=\,\, \begin{pmatrix} 
-                        \lambda_1 & 0 & \ldots & 0 & * & * & \ldots & * \\
-                        0 & \lambda_1 & \ldots & 0 & * & * & \ldots & * \\
-                        \vdots & \vdots & \ddots & \vdots &  * & * & \ldots & * \\
-                        0 & 0 & \ldots & \lambda_1 &   * & * & \ldots & * \\
-                        \vdots & \vdots &  & \vdots & \vdots &  \vdots &  \vdots &  \vdots  \\
-                        \vdots & \vdots &  & \vdots & \vdots &  \vdots &  \vdots &  \vdots  \\
-                        0 & 0 & \ldots & 0 &   * & * & \ldots & * \\
+                        \lambda_1 & 0 & \cdots & 0 & * & * & \cdots & * \\
+                        0 & \lambda_1 & \cdots & 0 & * & * & \cdots & * \\
+                        \vdots & \vdots & \ddots & \vdots &  * & * & \cdots & * \\
+                        0 & 0 & \cdots & \lambda_1 &   * & * & \cdots & * \\
+                        \vdots & \vdots &  & \vdots & \vdots &  \vdots &   &  \vdots  \\
+                        \vdots & \vdots &  & \vdots & \vdots &  \vdots &   &  \vdots  \\
+                        0 & 0 & \cdots & 0 &   * & * & \cdots & * \\
                      \end{pmatrix},
 $$
 
@@ -370,11 +370,11 @@ and
 
 $$
 PD = (\vect{p}_1 \quad  \vect{p}_2 \quad  \cdots \quad \vect{p}_n)\begin{pmatrix}
-d_1 & 0 & 0  & \ldots & 0 \\
-0 & d_2 & 0  & \ldots & 0 \\
-0 &  0 & d_3 & \ldots & 0 \\
+d_1 & 0 & 0  & \cdots & 0 \\
+0 & d_2 & 0  & \cdots & 0 \\
+0 &  0 & d_3 & \cdots & 0 \\
 \vdots & \vdots & \vdots & \ddots & \vdots \\
-0 & 0 & 0 & \ldots & d_n \end{pmatrix},
+0 & 0 & 0 & \cdots & d_n \end{pmatrix},
 $$
 
 so
@@ -409,10 +409,10 @@ The eigenvalues of $D$ are simply the diagonal entries $d_i$ with the vectors $\
 
 $$
 \left(\begin{array}{cccc}
-d_1 & 0 &  \ldots & 0 \\
-0 & d_2 &  \ldots & 0 \\
+d_1 & 0 &  \cdots & 0 \\
+0 & d_2 &  \cdots & 0 \\
 \vdots &  \vdots & \ddots & \vdots \\
-0 & 0 & \ldots & d_n
+0 & 0 & \cdots & d_n
 \end{array}
 \right)
   \left(\begin{array}{c} 1 \\ 0\\ \vdots \\ 0
@@ -423,10 +423,10 @@ d_1 & 0 &  \ldots & 0 \\
 \right)
 , \quad
 \left(\begin{array}{cccc}
-d_1 & 0 &  \ldots & 0 \\
-0 & d_2 &  \ldots & 0 \\
+d_1 & 0 &  \cdots & 0 \\
+0 & d_2 &  \cdots & 0 \\
 \vdots &  \vdots & \ddots & \vdots \\
-0 & 0 & \ldots & d_n
+0 & 0 & \cdots & d_n
 \end{array}
 \right)
   \left(\begin{array}{c} 0 \\ 1  \\ \vdots \\ 0
@@ -451,11 +451,11 @@ For the basis $\mathcal{B} = (\vect{v}_1, \ldots, \vect{v}_n)$ we then see that
 
 $$
 [T]_{\mathcal{B}} = D = \begin{pmatrix}
-\lambda_1 & 0 & 0  & \ldots & 0 \\
-0 & \lambda_2 & 0  & \ldots & 0 \\
-0 &  0 & \lambda_3 & \ldots & 0 \\
+\lambda_1 & 0 & 0  & \cdots & 0 \\
+0 & \lambda_2 & 0  & \cdots & 0 \\
+0 &  0 & \lambda_3 & \cdots & 0 \\
 \vdots & \vdots & \vdots & \ddots & \vdots \\
-0 & 0 & 0 & \ldots & \lambda_n \end{pmatrix},
+0 & 0 & 0 & \ldcdotsocdotsts & \lambda_n \end{pmatrix},
 $$
 
 and the transformation formula gives
@@ -470,7 +470,7 @@ D = [T]_{\mathcal{B}} = P^{-1}[T]_{\mathcal{E}}P = P^{-1}AP,
 where 
 
 $$
- P = P_{\mathcal{E} \leftarrow \mathcal{B}} =  ( \vect{v}_1 \,\,   \vect{v}_2\,    \ldots  \,\,  \vect{v}_n)
+ P = P_{\mathcal{E} \leftarrow \mathcal{B}} =  ( \vect{v}_1 \,\,   \vect{v}_2\,    \cdots  \,\,  \vect{v}_n)
 $$
 
 is the change-of-coordinates matrix from $\mathcal{B}$ to the standard basis.
@@ -675,7 +675,7 @@ Since the sum of the algebraic multiplicities is equal to  $n$, the
  sum of the geometric multiplicities must be equal to $n$ too,
  
 $$
-  m_1 + m_2 + \ldots + m_k = n.
+  m_1 + m_2 + \cdots + m_k = n.
 $$ 
  
 For each $i$ let $\{\vect{v}^{(i)}_1, \ldots, \vect{v}^{(i)}_{m_i}\}$  be a basis for the eigenspace  $E(\lambda_i)$. If we can show that the union of all these bases is a basis for $\R^n$, we have a basis of eigenvectors for matrix $A$, and by   {prf:ref}`Prop:Eigenvalues:DiagbleVersusEigenvectors` $A$ is diagonalisable.  To this end it is sufficient to show that the total set
@@ -704,7 +704,7 @@ $$
 we have that  
 
 $$
-   \vect{y}_1 + \vect{y}_2 +  \ldots + \vect{y}_k = \vect{0}.
+   \vect{y}_1 + \vect{y}_2 + \cdots + \vect{y}_k = \vect{0}.
 $$
 
 Since each  vector  $\vect{y}_i$ lies in the eigenspace  $E(\lambda_i)$,  and by {prf:ref}`Prop:Eigenvalues:IndepEigenvectors`  eigenvectors for different eigenvalues are linearly independent, it follows that 
@@ -780,7 +780,7 @@ We stated that diagonalisable matrices have nice properties. Here is one: for di
 ::::::{prf:example}
 :label: Ex:Diagonalisable:EasyPowers
 
-If $A = PDP^{-1}$,  then $A^k =  PD^kP^{-1}$, for $k = 0,1,2,3, \ldots$
+If $A = PDP^{-1}$,  then $A^k =  PD^kP^{-1}$, for $k = 0,1,2,3, \ldots$.
 
 For instance,
 

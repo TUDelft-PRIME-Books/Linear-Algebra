@@ -567,7 +567,7 @@ So, let
 :::{math}
 :label: Eq:v_l-in-Span_1
 
-\vect{v}_{\ell} = c_1 \vect{v}_1 +   \ldots + c_{\ell-1}  \vect{v}_{\ell-1}.
+\vect{v}_{\ell} = c_1 \vect{v}_1 + \cdots + c_{\ell-1}  \vect{v}_{\ell-1}.
 
 :::
 
@@ -576,7 +576,7 @@ Then
 :::{math}
 :label: Eq:v_l-in-Span_2
 
-\lambda_{\ell}\vect{v}_{\ell} = c_1 \lambda_{\ell}\vect{v}_1 + \ldots + c_{\ell-1} \lambda_{\ell} \vect{v}_{\ell-1}.
+\lambda_{\ell}\vect{v}_{\ell} = c_1 \lambda_{\ell}\vect{v}_1 + \cdots + c_{\ell-1} \lambda_{\ell} \vect{v}_{\ell-1}.
 
 :::
 
@@ -584,7 +584,7 @@ On the other hand, if we multiply both sides of Equation {eq}`Eq:v_l-in-Span_1` 
 
 $$
 
-A\vect{v}_{\ell} = \underline{\lambda_{\ell}\vect{v}_{\ell}}=  A(c_1 \vect{v}_1 +   \ldots + c_{\ell-1}  \vect{v}_{\ell-1}) = \underline{c_1 \lambda_1\vect{v}_1 +   \ldots + c_{\ell-1} \lambda_{\ell-1} \vect{v}_{\ell-1}}.
+A\vect{v}_{\ell} = \underline{\lambda_{\ell}\vect{v}_{\ell}}=  A(c_1 \vect{v}_1 + \cdots + c_{\ell-1}  \vect{v}_{\ell-1}) = \underline{c_1 \lambda_1\vect{v}_1 + \cdots + c_{\ell-1} \lambda_{\ell-1} \vect{v}_{\ell-1}}.
 
 
 $$
@@ -594,14 +594,14 @@ From this we extricate
 :::{math}
 :label: Eq:v_l-in-Span_3
 
-\lambda_{\ell}\vect{v}_{\ell} = c_1 \lambda_1\vect{v}_1 + \ldots + c_{\ell-1} \lambda_{\ell-1} \vect{v}_{\ell-1}.
+\lambda_{\ell}\vect{v}_{\ell} = c_1 \lambda_1\vect{v}_1 + \cdots + c_{\ell-1} \lambda_{\ell-1} \vect{v}_{\ell-1}.
 :::
 
 Subtracting Equation {eq}`Eq:v_l-in-Span_3` from Equation {eq}`Eq:v_l-in-Span_2` gives
 
 $$
 \lambda_{\ell}\vect{v}_{\ell} - \lambda_{\ell}\vect{v}_{\ell} = \vect{0} =
-c_1(\lambda_1 - \lambda_{\ell})\vect{v}_1 + \ldots + c_{\ell-1}(\lambda_{\ell-1} - \lambda_{\ell}) \vect{v}_{\ell-1}.
+c_1(\lambda_1 - \lambda_{\ell})\vect{v}_1 + \cdots + c_{\ell-1}(\lambda_{\ell-1} - \lambda_{\ell}) \vect{v}_{\ell-1}.
 $$
 
 So, a linear combination of the vectors $\vect{v}_1,  \ldots,  \vect{v}_{\ell-1}$ is equal to the zero vector.
@@ -623,7 +623,7 @@ $$
 But then
 
 $$
-\vect{v}_{\ell} = c_1 \vect{v}_1 +   \ldots + c_{\ell-1}  \vect{v}_{\ell-1} = \vect{0},
+\vect{v}_{\ell} = c_1 \vect{v}_1 + \cdots + c_{\ell-1}  \vect{v}_{\ell-1} = \vect{0},
 $$
 
 which is impossible, as the assumption was that $\vect{v}_{\ell}$ is an eigenvector.

@@ -23,7 +23,7 @@ We know from {prf:ref}`Prop:DynSystDiscrete:DiagCase` in {numref}`Sec:DynSystDis
 $\lambda_1, \ldots, \lambda_n$ and corresponding eigenvectors  $\vect{v}_1, \ldots, \vect{v}_n$, if we start from
 
 $$
-   \vect{s} = c_1\vect{v}_1 + c_2\vect{v}_2 +  \ldots + c_n\vect{v}_n.
+   \vect{s} = c_1\vect{v}_1 + c_2\vect{v}_2 + \cdots + c_n\vect{v}_n.
 $$
 
 
@@ -32,7 +32,7 @@ the $k$-th vector in the process is given by
 ::::{math}
 :label: Eq:PowerMethod:GenSol
 
- A^k\vect{s} = c_1\lambda_1^k\vect{v}_1 + c_2\lambda_2^k\vect{v}_2 +  \ldots + c_n\lambda_n^k\vect{v}_n,
+ A^k\vect{s} = c_1\lambda_1^k\vect{v}_1 + c_2\lambda_2^k\vect{v}_2 + \cdots + c_n\lambda_n^k\vect{v}_n,
 
 ::::
 
@@ -41,7 +41,7 @@ the $k$-th vector in the process is given by
 Now suppose the eigenvalues are ordered according to
 
 $$
-  |\lambda_1| \geq |\lambda_2| \geq \,\,\ldots\,\,\geq |\lambda_n|
+  |\lambda_1| \geq |\lambda_2| \geq \,\,\cdots\,\,\geq |\lambda_n|
 $$
 
 and that in fact we have $|\lambda_1| > |\lambda_2|$, i.e. the first inequality is strict.
@@ -51,7 +51,7 @@ We can rewrite Equation {eq}`Eq:PowerMethod:GenSol` as
 ::::{math}
 :label: Eq:PowerMethod:GenSol-2
 
- A^k\vect{s}  =  \lambda_1^k\left(c_1\vect{v}_1 + c_2(\lambda_2/\lambda_1)^k\vect{v}_2 +  \ldots + c_n(\lambda_n/\lambda_1)^k\vect{v}_n\right).
+ A^k\vect{s}  =  \lambda_1^k\left(c_1\vect{v}_1 + c_2(\lambda_2/\lambda_1)^k\vect{v}_2 + \cdots + c_n(\lambda_n/\lambda_1)^k\vect{v}_n\right).
 
 ::::
 
@@ -73,7 +73,7 @@ We put a name to the situation where a matrix $A$ has a single eigenvalue of hig
 Suppose the $n\times n$-matrix $A$ has the eigenvalues $\lambda_1, \ldots, \lambda_n$ ordered according to
 
 $$
-  |\lambda_1| \geq |\lambda_2| \geq \,\,\ldots\,\,\geq |\lambda_n|.
+  |\lambda_1| \geq |\lambda_2| \geq \,\,\cdots\,\,\geq |\lambda_n|.
 $$
 
 If in fact $|\lambda_1| > |\lambda_2|$, then $\lambda_1$ is called the **dominant eigenvalue** of $A$.
@@ -173,7 +173,7 @@ $$
 And we know (Equation {eq}`Eq:PowerMethod:GenSol`) that under the assumption of a dominant eigenvalue $\lambda_1$ and an initial vector
 
 $$
-   \vect{s} = c_1\vect{v}_1 + c_2\vect{v}_2 +  \ldots + c_n\vect{v}_n, \quad c_1 \neq 0,
+   \vect{s} = c_1\vect{v}_1 + c_2\vect{v}_2 + \cdots + c_n\vect{v}_n, \quad c_1 \neq 0,
 $$
  
 the vectors $A^k\vect{s}$ in the long run behave as $c_1\lambda_1^k\vect{v}_1$.
@@ -446,7 +446,7 @@ The first issue is covered by the next proposition.
 Suppose $A$ is an $n\times n$-matrix with $n$ eigenvalues ordered via
 
 $$
-  |\lambda_1| \geq |\lambda_2| \geq  \ldots \geq |\lambda_{n-1}| > |\lambda_{n}| > 0.
+  |\lambda_1| \geq |\lambda_2| \geq  \cdots \geq |\lambda_{n-1}| > |\lambda_{n}| > 0.
 $$
 
 Here, again,  $|\lambda|$ denotes the modulus of  $\lambda$.
@@ -473,7 +473,7 @@ $$
 where the order of the moduli is
 
 $$
-   \frac{1}{|\lambda_1|}\leq \frac{1}{|\lambda_{2}|} \leq \,\ldots\, \leq \,\frac{1}{|\lambda_{n-1}|} \,< \, \frac{1}{|\lambda_n|}.
+   \frac{1}{|\lambda_1|}\leq \frac{1}{|\lambda_{2}|} \leq \,\cdots\, \leq \,\frac{1}{|\lambda_{n-1}|} \,< \, \frac{1}{|\lambda_n|}.
 $$
 
 Thus, $A^{-1}$ has the dominant eigenvalue $\dfrac{1}{\lambda_n} = \lambda_n^{-1}$.
@@ -741,7 +741,7 @@ is also an eigenvalue of $A$. Since $|\lambda_{1}| = |\lambda_{2}|$,  the matrix
 This can be overcome by starting from a *complex* vector $\vect{z}_0 = \vect{x}_0 + i\vect{y}_0$.  However,  if this vector contains components in both the direction $\vect{v}_1$  and the direction $\vect{v}_2$, say
 
 $$
-   \vect{z}_0 = \gamma_1\vect{v}_1 + \gamma_2\vect{v}_2 + \ldots + \gamma_n\vect{v}_n,
+   \vect{z}_0 = \gamma_1\vect{v}_1 + \gamma_2\vect{v}_2 + \cdots + \gamma_n\vect{v}_n,
 $$
 
 for some basis  of $\mathbb{C}^n$ starting with $\{\vect{v}_1, \vect{v}_2\}$, and some complex numbers $\gamma_1, \ldots, \gamma_n$, where $\gamma_1$ and $\gamma_2$ are non-zero,  then none of the terms
@@ -812,7 +812,7 @@ If you do not see such a way out, but your curiosity has been aroused, you can o
 ::::{admonition} Workaround to get to the dominant complex eigenvalues
 :class: note, dropdown
 
-By definition, a dominant eigenvalue must be *unique* ,  i.e.,  $|\lambda_1| > |\lambda_2| \geq \ldots \, |\lambda_n|$.
+By definition, a dominant eigenvalue must be *unique* ,  i.e.,  $|\lambda_1| > |\lambda_2| \geq \cdots \,\geq |\lambda_n|$.
 
 The question is, how can we get rid of the dominant eigenvalue *pair* ?
 

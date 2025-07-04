@@ -799,10 +799,10 @@ A **matrix** $A$ is a rectangular array of numbers $a_{ij}$, $1\leq i \leq m$, $
 
 $$
    A = \left(\begin{array}{cccc}
-            a_{11} & a_{12}&  \ldots&   a_{1n}   \\
-            a_{21} & a_{22}&  \ldots&   a_{2n}   \\
-            \vdots &  \vdots&  \cdots&  \vdots    \\
-            a_{m1} & a_{m2}&  \ldots&   a_{mn}
+            a_{11} & a_{12}&  \cdots&   a_{1n}   \\
+            a_{21} & a_{22}&  \cdots&   a_{2n}   \\
+            \vdots &  \vdots&  &  \vdots    \\
+            a_{m1} & a_{m2}&  \cdots&   a_{mn}
           \end{array}
    \right).
 $$
@@ -850,10 +850,10 @@ The **augmented matrix** for a system of equations
 
 $$
    \left\{\begin{array}{ccccccccc}
-            a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  b_1, \\
-            a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\ldots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! b_2, \\
-            \vdots \! & \! \!&\!  \vdots\! & \! \!&\!\cdots\! & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
-            a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \ldots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! b_m \\
+            a_{11}x_1\! & \!+\!&\!a_{12}x_2\! & \!+\!&\! \cdots\! & \!+\!&\!a_{1n}x_n  \! & \!=\!&\!  b_1, \\
+            a_{21}x_1 \! & \!+\!&\!a_{22}x_2\! & \!+\!&\!\cdots\! & \!+\!&\!a_{2n}x_n  \! & \!=\!&\! b_2, \\
+            \vdots \! & \! \!&\!  \vdots\! & \! \!&  & \! \!&\! \vdots     \! & \! \!&\!  \vdots \\
+            a_{m1}x_1 \! & \!+\!&\!a_{m2}x_2\! & \!+\!&\! \cdots\! & \!+\!&\!a_{mn}x_n \! & \!=\!&\! b_m \\
           \end{array}
    \right.
 $$
@@ -862,10 +862,10 @@ is the $m\times(n+1)$-matrix
 
 $$
    \left(    \begin{array}{cccc|c}
-            a_{11} & a_{12}&  \ldots&   a_{1n}    &  b_1 \\
-            a_{21} & a_{22}&  \ldots&   a_{2n}   &  b_2 \\
-            \vdots &  \vdots&  \ldots&  \vdots    &  \vdots \\
-            a_{m1} & a_{m2}&  \ldots&   a_{mn}    &  b_m
+            a_{11} & a_{12}&  \cdots&   a_{1n}    &  b_1 \\
+            a_{21} & a_{22}&  \cdots&   a_{2n}   &  b_2 \\
+            \vdots &  \vdots&  &  \vdots    &  \vdots \\
+            a_{m1} & a_{m2}&  \cdots&   a_{mn}    &  b_m
           \end{array}
    \right).
 $$
@@ -874,10 +874,10 @@ The part before the vertical bar, i.e.
 
 $$
     A =  \left(      \begin{array}{cccc}
-            a_{11} & a_{12}&  \ldots&   a_{1n} \\
-            a_{21} & a_{22}&  \ldots&   a_{2n} \\
-            \vdots &  \vdots&  \ldots&  \vdots    \\
-            a_{m1} & a_{m2}&  \ldots&   a_{mn}
+            a_{11} & a_{12}&  \cdots&   a_{1n} \\
+            a_{21} & a_{22}&  \cdots&   a_{2n} \\
+            \vdots &  \vdots&  &  \vdots    \\
+            a_{m1} & a_{m2}&  \cdots&   a_{mn}
           \end{array}
    \right)
 $$
@@ -1258,16 +1258,16 @@ We then get
 
 $$
     A =  \left(\begin{array}{cccc}
-            a_{11} & a_{12}&  \ldots&   a_{1n} \\
-            a_{21} & a_{22}&  \ldots&   a_{2n} \\
-            \vdots &  \vdots&  \ldots&  \vdots    \\
-            a_{m1} & a_{m2}&  \ldots&   a_{mn}
+            a_{11} & a_{12}&  \cdots&   a_{1n} \\
+            a_{21} & a_{22}&  \cdots&   a_{2n} \\
+            \vdots &  \vdots&  &  \vdots    \\
+            a_{m1} & a_{m2}&  \cdots&   a_{mn}
           \end{array}
    \right)\sim  \left(\begin{array}{cccc}
-            a_{11} & a_{12}&  \ldots&   a_{1n} \\
-                0  & \tilde{a}_{22}&  \ldots&   \tilde{a}_{2n} \\
-            \vdots &  \vdots&  \ldots&  \vdots    \\
-            0 & \tilde{a}_{m2}&  \ldots&   \tilde{a}_{mn}
+            a_{11} & a_{12}&  \cdots&   a_{1n} \\
+                0  & \tilde{a}_{22}&  \cdots&   \tilde{a}_{2n} \\
+            \vdots &  \vdots&  &  \vdots    \\
+            0 & \tilde{a}_{m2}&  \cdots&   \tilde{a}_{mn}
           \end{array}
    \right).
 $$
@@ -1282,10 +1282,10 @@ We continue with the part of the matrix below and to the right of the first pivo
 
 $$
    \left(\begin{array}{cccc}
-             \tilde{a}_{22}&  \tilde{a}_{23}&  \ldots&   \tilde{a}_{2n} \\
-             \tilde{a}_{32}&   \tilde{a}_{33}& \ldots&   \tilde{a}_{3n} \\
-                \vdots     &  \vdots         &  \cdots&  \vdots    \\
-           \tilde{a}_{m2}&  \tilde{a}_{m3}&  \ldots&   \tilde{a}_{mn}
+             \tilde{a}_{22}&  \tilde{a}_{23}&  \cdots&   \tilde{a}_{2n} \\
+             \tilde{a}_{32}&   \tilde{a}_{33}& \cdots&   \tilde{a}_{3n} \\
+                \vdots     &  \vdots         &  &  \vdots    \\
+           \tilde{a}_{m2}&  \tilde{a}_{m3}&  \cots&   \tilde{a}_{mn}
           \end{array}
    \right).
 $$

@@ -777,11 +777,11 @@ For instance the first two steps are
 
 $$
   A  = \begin{pmatrix}
-            a_{11} & a_{12}&  a_{13} & \ldots&   a_{1n}   \\
-            a_{21} & a_{22}&   a_{23} & \ldots&   a_{2n}   \\
-            a_{31} & a_{32}&   a_{33} & \ldots&   a_{3n}   \\
-            \vdots &  \vdots&  \vdots& & \vdots    \\
-            a_{n1} & a_{n2}&  a_{n3}& \ldots&   a_{nn}
+            a_{11} & a_{12}&  a_{13} & \cdots&   a_{1n}   \\
+            a_{21} & a_{22}&   a_{23} & \cdots&   a_{2n}   \\
+            a_{31} & a_{32}&   a_{33} & \cdots&   a_{3n}   \\
+            \vdots &  \vdots&  \vdots& \ddots & \vdots    \\
+            a_{n1} & a_{n2}&  a_{n3}& \cdots&   a_{nn}
        \end{pmatrix} = L_1A_2 
    =
    \begin{pmatrix}
@@ -789,18 +789,18 @@ $$
             m_{21} &   1      \\
             m_{31} &  0   &  1     \\
             \vdots &  \vdots&   &  \ddots    \\
-            m_{n1} & 0   &  \ldots&  & 1
+            m_{n1} & 0   &  \cdots&  & 1
     \end{pmatrix}A_2,
 $$
 
 where $A_2$ will be of the form
 
 $$
-  A_2 = \begin{pmatrix} a_{11} & a_{12} & a_{13} & \ldots & a_{1n} \\
-                          0    & \tilde{a}_{22} &  \tilde{a}_{23} &  \ldots &\tilde{a}_{2n} \\
-                          0    &    \tilde{a}_{32}     &  \tilde{a}_{33} & \ldots &\tilde{a}_{3n} \\ 
-                          \vdots & \vdots &  \vdots & & \vdots \\
-                          0    &    \tilde{a}_{n2}    &  \tilde{a}_{n3} & \ldots &\tilde{a}_{nn} \\ 
+  A_2 = \begin{pmatrix} a_{11} & a_{12} & a_{13} & \cdots & a_{1n} \\
+                          0    & \tilde{a}_{22} &  \tilde{a}_{23} &  \cdots &\tilde{a}_{2n} \\
+                          0    &    \tilde{a}_{32}     &  \tilde{a}_{33} & \cdots &\tilde{a}_{3n} \\ 
+                          \vdots & \vdots &  \vdots & \ddots & \vdots \\
+                          0    &    \tilde{a}_{n2}    &  \tilde{a}_{n3} & \cdots &\tilde{a}_{nn} \\ 
         \end{pmatrix}.
 $$
 
@@ -813,7 +813,7 @@ $$
             0 & 1 &        \\ 
             0 &m_{32}   &  1     \\
             \vdots &  \vdots&  &   \ddots    \\
-            0 & m_{n2} & 0   &  \ldots&  & 1
+            0 & m_{n2} & 0   &  \cdots&  & 1
     \end{pmatrix}A_3,
 $$
 
@@ -821,11 +821,11 @@ $$
 where $A_3$ will be of the form
 
 $$
-  A_3 = \begin{pmatrix} a_{11} & a_{12} & a_{13} & \ldots & a_{1n} \\
-                          0    & \tilde{a}_{22} &  \tilde{a}_{23} &  \ldots &\tilde{a}_{2n} \\
-                          0    &    0      &  \tilde{\tilde{a}}_{33} & \ldots &\tilde{\tilde{a}}_{3n} \\ 
-                          \vdots & \vdots &  \vdots & & \vdots \\
-                          0    &    0     &  \tilde{\tilde{a}}_{n3} & \ldots &\tilde{\tilde{a}}_{nn}
+  A_3 = \begin{pmatrix} a_{11} & a_{12} & a_{13} & \cdots & a_{1n} \\
+                          0    & \tilde{a}_{22} &  \tilde{a}_{23} &  \cdots &\tilde{a}_{2n} \\
+                          0    &    0      &  \tilde{\tilde{a}}_{33} & \cdots &\tilde{\tilde{a}}_{3n} \\ 
+                          \vdots & \vdots &  \vdots & \ddots & \vdots \\
+                          0    &    0     &  \tilde{\tilde{a}}_{n3} & \cdots &\tilde{\tilde{a}}_{nn}
         \end{pmatrix}.
 $$
 

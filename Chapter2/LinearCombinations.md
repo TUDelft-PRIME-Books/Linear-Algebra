@@ -12,7 +12,7 @@ We directly start with the definition of a linear combination of vectors.
 Let $\mathbf{v}_1, \ldots, \mathbf{v}_n$ be vectors in $\mathbb{R}^m$. Any expression of the form
 
 $$
-x_1 \mathbf{v}_1+\cdots+x_n \mathbf{v}_n,
+x_1 \mathbf{v}_1+ \cdots+x_n \mathbf{v}_n,
 $$
 
 where $x_1, \ldots, x_n$ are real numbers, is called a **linear combination** of the vectors $\mathbf{v}_1, \ldots, \mathbf{v}_n$.
@@ -149,7 +149,7 @@ The span of an empty collection of vectors will be defined as the set that only 
 The collection $\Span{\mathbf{v}_1, \ldots, \mathbf{v}_k}$ always contains all of the vectors $\mathbf{v}_1, \ldots, \mathbf{v}_k$. This is true since each vector $\mathbf{v}_i$ can be written as the linear combination
 
 $$
-  0\mathbf{v}_1+\cdots+1\mathbf{v}_i+\cdots +0\mathbf{v}_k.
+  0\mathbf{v}_1+ \cdots+1\mathbf{v}_i+ \cdots +0\mathbf{v}_k.
 $$
 
 Moreover, the span of any set of vectors always contains the zero vector. Whatever set of vectors we start with, we can always write
@@ -339,9 +339,9 @@ The vector $\mathbf{v}$ can be written as
 \begin{align*}
 \mathbf{v} &= a_1
 \begin{pmatrix} 1 \\ 0 \\ \vdots \\ 0 \end{pmatrix}+a_2
-\begin{pmatrix} 0 \\ 1 \\ \vdots \\ 0 \end{pmatrix}+ \ldots a_n
+\begin{pmatrix} 0 \\ 1 \\ \vdots \\ 0 \end{pmatrix}+ \cdots a_n
 \begin{pmatrix} 0 \\ 0 \\ \vdots \\ 1 \end{pmatrix} \\
-&= a_n\mathbf{e}_1+a_2\mathbf{e}_2+\ldots +a_n\mathbf{e}_n.
+&= a_n\mathbf{e}_1+a_2\mathbf{e}_2+ \cdots +a_n\mathbf{e}_n.
 \end{align*}
 
 This means that $\mathbf{v}$ is in the span of $\mathbf{e}_1, \ldots, \mathbf{e}_n$.

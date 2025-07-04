@@ -148,9 +148,9 @@ We need a few definitions to settle matters a bit more formally. In the remainde
 
 The **complex conjugate** $\overline{A}$ of a matrix $A$ is defined component wise:
 
-if $\quad A = \left(\begin{array}{ccc} a_{11} & \ldots & a_{1n} \\ \vdots & &\vdots \\ a_{m1} & \ldots & a_{mn}  \end{array}\right) \quad$
+if $\quad A = \left(\begin{array}{ccc} a_{11} & \cdots & a_{1n} \\ \vdots & &\vdots \\ a_{m1} & \cdots & a_{mn}  \end{array}\right) \quad$
 then
-$\quad\overline{A} = \left(\begin{array}{ccc} \overline{a_{11}} & \ldots & \overline{a_{1n}} \\ \vdots & &\vdots \\ \overline{a_{m1}} & \ldots & \overline{a_{mn}} \end{array}\right) $.
+$\quad\overline{A} = \left(\begin{array}{ccc} \overline{a_{11}} & \cdots & \overline{a_{1n}} \\ \vdots & &\vdots \\ \overline{a_{m1}} & \cdots & \overline{a_{mn}} \end{array}\right) $.
 
 ::::::
 
@@ -551,12 +551,12 @@ In that case, if $\vect{v}_1, \ldots, \vect{v}_n$ are $n$ linearly independent e
 then
 
 $$
-A = PDP^{-1} \quad \text{for} \quad  D = \left(\begin{array}{cccc} \lambda_1 & 0 & \ldots & 0 \\
-0 & \lambda_2 & \ldots & 0 \\
+A = PDP^{-1} \quad \text{for} \quad  D = \left(\begin{array}{cccc} \lambda_1 & 0 & \cdots & 0 \\
+0 & \lambda_2 & \cdots & 0 \\
 \vdots & \vdots & \ddots & \vdots \\
-0 & 0 & \ldots & \lambda_n\end{array}\right),
+0 & 0 & \cdots & \lambda_n\end{array}\right),
  \quad
-P = (  \,\vect{v}_1\,\,  \vect{v}_2 \,  \ldots \,  \vect{v}_n\,).
+P = (  \,\vect{v}_1\,\,  \vect{v}_2 \,  \cdots \,  \vect{v}_n\,).
 $$
 
 ::::::

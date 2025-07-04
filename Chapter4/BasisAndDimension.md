@@ -589,7 +589,7 @@ $$
 
 A =
 \begin{pmatrix}
-\vect{a}_1&\vect{a}_2&\ldots &\vect{a}_n
+\vect{a}_1&\vect{a}_2&\cdots &\vect{a}_n
 \end{pmatrix}
 .
 
@@ -599,7 +599,7 @@ We have seen before that a non-trivial linear relation
 
 $$
 
-c_1\vect{a}_1 + c_2\vect{a}_2+ \ldots + c_n\vect{a}_n =  \vect{0}
+c_1\vect{a}_1 + c_2\vect{a}_2+ \cdots + c_n\vect{a}_n =  \vect{0}
 
 $$
 
@@ -628,7 +628,7 @@ Recall that row operations correspond to pre-multiplications with elementary mat
 
 $$
 
-A \quad \sim \quad E_1A \quad  \sim  \quad E_2E_1 A \quad  \sim \quad \ldots\quad  \sim  \quad (E_k\cdots E_1)A = E,
+A \quad \sim \quad E_1A \quad  \sim  \quad E_2E_1 A \quad  \sim \quad \cdots\quad  \sim  \quad (E_k\cdots E_1)A = E,
 
 
 $$
@@ -1196,13 +1196,13 @@ Assume ii. and iii. of {prf:ref}`Prop:BasisDim:TwoOfThreeSuffice` and in additio
 Then for any vector $\vect{v}$ in $S$ we have from ii. that
 
 $$
-\vect{v} = c_1\vect{b}_1 + c_2\vect{b}_2 + \ldots +c_{q-1}\vect{b}_{q-1}+c_{q}\vect{b}_{q}+c_{q+1}\vect{b}_{q+1}+\ldots+ c_{\ell}\vect{b}_{\ell},
+\vect{v} = c_1\vect{b}_1 + c_2\vect{b}_2 + \cdots +c_{q-1}\vect{b}_{q-1}+c_{q}\vect{b}_{q}+c_{q+1}\vect{b}_{q+1}+ \cdots+ c_{\ell}\vect{b}_{\ell},
 $$
 
 but also
 
 $$
-\vect{v} = d_1\vect{b}_1 + d_2\vect{b}_2 + \ldots +d_{q-1}\vect{b}_{q-1}+d_{q+1}\vect{b}_{q+1}+\ldots+ d_{\ell}\vect{b}_{\ell},
+\vect{v} = d_1\vect{b}_1 + d_2\vect{b}_2 + \cdots +d_{q-1}\vect{b}_{q-1}+d_{q+1}\vect{b}_{q+1}+ \cdots+ d_{\ell}\vect{b}_{\ell},
 $$
 
 as there must be at least one vector $\vect{v}_q$ that is a linear combination of the other vectors in the set $\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace$.
@@ -1252,8 +1252,8 @@ $$
 does say something about the linear relations between the columns of $A$.
 
 $$
-( \,\vect{a}_1 \,\, \vect{a}_2 \,\, \ldots \,\, \vect{a}_n\, )\vect{x} = \vect{0} \quad \iff \quad
-x_1\vect{a}_1+ x_2\vect{a}_2+  \ldots +x_n\vect{a}_n = \vect{0}.
+( \,\vect{a}_1 \,\, \vect{a}_2 \,\, \cdots \,\, \vect{a}_n\, )\vect{x} = \vect{0} \quad \iff \quad
+x_1\vect{a}_1+ x_2\vect{a}_2+ \cdots +x_n\vect{a}_n = \vect{0}.
 $$
 
 The more linear relations there are, i.e., the larger $\Nul{A}$ is,

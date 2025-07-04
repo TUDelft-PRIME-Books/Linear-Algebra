@@ -54,7 +54,7 @@ Let $\{\vect{v}_1, \ldots, \vect{v}_n\}$ be a set of $n$ vectors in $\R^n$.
 The $n$-dimensional parallelepiped $\mathcal{P}$ spanned by $\vect{v}_1, \ldots, \vect{v}_n$ is the set
 
 $$
-\mathcal{P} = \mathcal{P}(\vect{v}_1, \ldots, \vect{v}_n) = \{c_1\vect{v}_1+c_2\vect{v}_2 + \ldots + c_1\vect{v}_n \,|\, c_i \in \R,  0 \leq c_i \leq 1\}.
+\mathcal{P} = \mathcal{P}(\vect{v}_1, \ldots, \vect{v}_n) = \{c_1\vect{v}_1+c_2\vect{v}_2 + \cdots + c_1\vect{v}_n \,|\, c_i \in \R,  0 \leq c_i \leq 1\}.
 $$
 
 See {numref}`Figure %s <Fig:DetExtras:Parped>` for an illustration of such a set in $\R^2$.
@@ -263,10 +263,10 @@ Then
 
 $$
   \begin{array}{rcl}
-   \operatorname{Vol}(T(\mathcal{P})) &=& |\det{(\,T(\vect{v}_1)\, \,\ldots \,\, T(\vect{v}_n)\,)}| \\
-   &=& |\det{(\,A(\vect{v}_1)\, \,\ldots \,\, A(\vect{v}_n)\,)}| \\
-   &=& |\det{\left(A (\,\vect{v}_1\, \,\ldots \,\, \vect{v}_n\,)\right)}|\\
-   &=& |\det{A} \det{(\,\vect{v}_1\, \,\ldots \,\, \vect{v}_n\,)}|\\
+   \operatorname{Vol}(T(\mathcal{P})) &=& |\det{(\,T(\vect{v}_1)\, \,\cdots \,\, T(\vect{v}_n)\,)}| \\
+   &=& |\det{(\,A(\vect{v}_1)\, \,\cdots \,\, A(\vect{v}_n)\,)}| \\
+   &=& |\det{\left(A (\,\vect{v}_1\, \,\cdots \,\, \vect{v}_n\,)\right)}|\\
+   &=& |\det{A} \det{(\,\vect{v}_1\, \,\cdots \,\, \vect{v}_n\,)}|\\
    &=& |\det{A}| \,\operatorname{Vol}(\mathcal{P}).
  \end{array}
 $$
@@ -283,7 +283,7 @@ To conclude our interpretation of the determinant of $A$ regarding the linear tr
 
 Suppose the vectors $(\vect{v}_1, \ldots, \vect{v}_n)$ in $\R^n$ are linearly independent.
 
-Then we say that the ordered set $(\vect{v}_1, \ldots, \vect{v}_n)$ is **positively orientated** if  $ \det{(\vect{v}_1 \ldots \vect{v}_n)}>0$.
+Then we say that the ordered set $(\vect{v}_1, \ldots, \vect{v}_n)$ is **positively orientated** if  $ \det{(\vect{v}_1 \cdots \vect{v}_n)}>0$.
 
 If this determinant is negative the set is called **negatively orientated**.
 
@@ -293,7 +293,7 @@ For vectors that are linearly dependent we do not define the orientation.
 ::::{prf:proposition}
 :label: Prop:DetExtras:ScaleFactorR2
 
-Suppose $A = (\,\vect{a}_1\,\,\vect{a}_2\,\,\ldots\,\,\vect{a}_n\, )$ is the standard matrix of the linear transformation $T: \R^n \to \R^n$. So we have
+Suppose $A = (\,\vect{a}_1\,\,\vect{a}_2\,\,\cdots\,\,\vect{a}_n\, )$ is the standard matrix of the linear transformation $T: \R^n \to \R^n$. So we have
 
 $$
    T(\vect{x}) = A\vect{x}.
@@ -320,12 +320,12 @@ This too follows immediately from the product rule of determinants.
 
 $$
  \begin{array}{rcl}
- \det{\left(\,T(\vect{v}_1)\,\,T(\vect{v}_2)\,\,\ldots\,\,T(\vect{v}_n)\,  \right)} &=&
- \det{\left(\,A\vect{v}_1\,\,A\vect{v}_2\,\,\ldots\,\,A\vect{v}_n\,  \right)} \\
+ \det{\left(\,T(\vect{v}_1)\,\,T(\vect{v}_2)\,\,\cdots\,\,T(\vect{v}_n)\,  \right)} &=&
+ \det{\left(\,A\vect{v}_1\,\,A\vect{v}_2\,\,\cdots\,\,A\vect{v}_n\,  \right)} \\
  &=&
- \det{\big(A\left(\,\vect{v}_1\,\,\vect{v}_2\,\,\ldots\,\,\vect{v}_n\,  \right)\big)} \\
+ \det{\big(A\left(\,\vect{v}_1\,\,\vect{v}_2\,\,\cdots\,\,\vect{v}_n\,  \right)\big)} \\
  &=&
- \det{A}\cdot\det{\left(\,\vect{v}_1\,\,\vect{v}_2\,\,\ldots\,\,\vect{v}_n\,  \right)}.
+ \det{A}\cdot\det{\left(\,\vect{v}_1\,\,\vect{v}_2\,\,\cdots\,\,\vect{v}_n\,  \right)}.
  \end{array}
 $$
 
@@ -472,7 +472,7 @@ The following proof of Cramer's rule rests rather nicely on properties of the de
 :class: tudproof, dropdown
 
 Suppose $\vect{x} = \vect{c} = \left(\begin{array}{c}  c_1 \\ \vdots\\ c_n\end{array} \right)
-$ is the unique solution of the linear system $A\vect{x} = \vect{b}$, with the invertible matrix $A = ( \vect{a}_1 \,  \,  \vect{a}_2 \, \ldots \,\vect{a}_n )$.
+$ is the unique solution of the linear system $A\vect{x} = \vect{b}$, with the invertible matrix $A = ( \vect{a}_1 \,  \,  \vect{a}_2 \, \cdots \,\vect{a}_n )$.
 
 We show that Equation {eq}`Eq:DetExtras:Cramer` holds for $c_1$. The argument can be copied for the other $c_i$.
 
@@ -480,22 +480,22 @@ We first note that
 
 $$
 \begin{array}{ccl}
-A\vect{c} = \vect{b} &\iff \quad & c_1\vect{a}_1+c_2\vect{a}_2 + \ldots + c_n\vect{a}_n =\vect{b} \\
-&\iff \quad & c_1\vect{a}_1+c_2\vect{a}_2 + \ldots + c_n\vect{a}_n - \vect{b} = \vect{0}.
+A\vect{c} = \vect{b} &\iff \quad & c_1\vect{a}_1+c_2\vect{a}_2 + \cdots + c_n\vect{a}_n =\vect{b} \\
+&\iff \quad & c_1\vect{a}_1+c_2\vect{a}_2 + \cdots + c_n\vect{a}_n - \vect{b} = \vect{0}.
 \end{array}
 $$
 
 The smart next move is to replace the first column of $A$ by the zero column disguised as
 
 $$
-c_1\vect{a}_1+c_2\vect{a}_2 + \ldots + c_n\vect{a}_n - \vect{b}.
+c_1\vect{a}_1+c_2\vect{a}_2 + \cdots + c_n\vect{a}_n - \vect{b}.
 $$
 
 So we have
 
 $$
-\det{((c_1\vect{a}_1+ \,\ldots\, + c_n\vect{a}_n - \vect{b}) \,\,\,\vect{a}_2\,\, \ldots \,\, \vect{a}_n)}
-=\det{(\vect{0} \,\,\vect{a}_2 \,\, \ldots\,\,\vect{a}_n)}  = 0.
+\det{((c_1\vect{a}_1+ \,\cdots\, + c_n\vect{a}_n - \vect{b}) \,\,\,\vect{a}_2\,\, \cdots \,\, \vect{a}_n)}
+=\det{(\vect{0} \,\,\vect{a}_2 \,\, \cdots\,\,\vect{a}_n)}  = 0.
 $$
 
 By the linearity property (in all of the columns) of the determinant ({prf:ref}`Prop:DetRowReduction:SumofCols`) we may deduce
@@ -503,14 +503,14 @@ By the linearity property (in all of the columns) of the determinant ({prf:ref}`
 :::{math}
 :label: Eq:DetExtras:ProofCramer
 
-c_1\det{(A)} + c_2\det{(A^{(1)}(\vect{a}_2))} + \ldots + c_n\det{(A^{(1)}(\vect{a}_n))} - \det{(A^{(1)}(\vect{b}))} = 0.
+c_1\det{(A)} + c_2\det{(A^{(1)}(\vect{a}_2))} + \cdots + c_n\det{(A^{(1)}(\vect{a}_n))} - \det{(A^{(1)}(\vect{b}))} = 0.
 
 :::
 
 Now we note that
 
 $$
-\det{A^{(1)}(\vect{a}_i)} = 0, \quad  i = 2,3,\ldots n,
+\det{A^{(1)}(\vect{a}_i)} = 0, \quad  i = 2,3,\ldots, n,
 $$
 
 since in the matrix $A^{(1)}(\vect{a}_i)$ the first column and the $i$-th column are identical. Hence all but the first and last determinant in Equation {eq}`Eq:DetExtras:ProofCramer` drop out and we can conclude that indeed
@@ -598,11 +598,11 @@ If $A$ is an invertible $n \times n$-matrix then the inverse of $A$ is given by
 :label: Eq:DetExtras:Inverse
 
 A^{-1}  = \dfrac{1}{\det{A}} \left(\begin{array}{ccccc}
-C_{11} &C_{21} &C_{31} & \ldots &C_{n1} \\
-C_{12} &C_{22} &C_{32} & \ldots &C_{n2} \\
-C_{13} &C_{23} &C_{33} & \ldots &C_{n3} \\
+C_{11} &C_{21} &C_{31} & \cdots &C_{n1} \\
+C_{12} &C_{22} &C_{32} & \cdots &C_{n2} \\
+C_{13} &C_{23} &C_{33} & \cdots &C_{n3} \\
 \vdots & \vdots &\vdots & \ddots & \vdots \\
-C_{1n} &C_{2n} &C_{3n} & \ldots &C_{nn} \\
+C_{1n} &C_{2n} &C_{3n} & \cdots &C_{nn} \\
 \end{array} \right),
 
 :::::
@@ -633,11 +633,11 @@ For an $n \times n$-matrix $A$ the matrix
 
 $$
 \left(\begin{array}{ccccc}
-C_{11} &C_{12} &C_{13} & \ldots &C_{1n}  \\
-C_{21} &C_{22} &C_{23} & \ldots &C_{2n}  \\
-C_{31} &C_{32} &C_{33} & \ldots &C_{3n}  \\
+C_{11} &C_{12} &C_{13} & \cdots &C_{1n}  \\
+C_{21} &C_{22} &C_{23} & \cdots &C_{2n}  \\
+C_{31} &C_{32} &C_{33} & \cdots &C_{3n}  \\
 \vdots & \vdots &\vdots & \ddots & \vdots \\
-C_{n1} &C_{n2} &C_{n3} & \ldots &C_{nn}  \\
+C_{n1} &C_{n2} &C_{n3} & \cdots &C_{nn}  \\
 \end{array} \right)
 $$
 
@@ -647,11 +647,11 @@ The **adjugate matrix** of $A$ is defined as the transpose of the cofactor matri
 
 $$
 \operatorname{Adj}(A) =  \left(\begin{array}{ccccc}
-C_{11} &C_{21} &C_{31} & \ldots &C_{n1}  \\
-C_{12} &C_{22} &C_{32} & \ldots &C_{n2}  \\
-C_{13} &C_{23} &C_{33} & \ldots &C_{n3}  \\
+C_{11} &C_{21} &C_{31} & \cdots &C_{n1}  \\
+C_{12} &C_{22} &C_{32} & \cdots &C_{n2}  \\
+C_{13} &C_{23} &C_{33} & \cdots &C_{n3}  \\
 \vdots & \vdots &\vdots & \ddots & \vdots \\
-C_{1n} &C_{2n} &C_{3n} & \ldots &C_{nn}  \\
+C_{1n} &C_{2n} &C_{3n} & \cdots &C_{nn}  \\
 \end{array} \right)
 .
 $$
@@ -700,31 +700,31 @@ Let us consider the product $\operatorname{Adj}(A) A$ very carefully:
 
 $$
 \left(\begin{array}{ccccc}
-C_{11} &C_{21} &C_{31} & \ldots &C_{n1}  \\
-C_{12} &C_{22} &C_{32} & \ldots &C_{n2}  \\
-C_{13} &C_{23} &C_{33} & \ldots &C_{n3}  \\
+C_{11} &C_{21} &C_{31} & \cdots &C_{n1}  \\
+C_{12} &C_{22} &C_{32} & \cdots &C_{n2}  \\
+C_{13} &C_{23} &C_{33} & \cdots &C_{n3}  \\
 \vdots & \vdots &\vdots & \ddots & \vdots \\
-C_{1n} &C_{2n} &C_{3n} & \ldots &C_{nn}  \\
+C_{1n} &C_{2n} &C_{3n} & \cdots &C_{nn}  \\
 \end{array} \right)
 \left(\begin{array}{ccccc}
-a_{11} &a_{12} &a_{13} & \ldots &a_{1n}  \\
-a_{21} &a_{22} &a_{23} & \ldots &a_{2n}  \\
-a_{31} &a_{32} &a_{33} & \ldots &a_{3n}  \\
+a_{11} &a_{12} &a_{13} & \cdots &a_{1n}  \\
+a_{21} &a_{22} &a_{23} & \cdots &a_{2n}  \\
+a_{31} &a_{32} &a_{33} & \cdots &a_{3n}  \\
 \vdots & \vdots &\vdots & \ddots & \vdots \\
-a_{n1} &a_{n2} &a_{n3} & \ldots &a_{nn}  \\
+a_{n1} &a_{n2} &a_{n3} & \cdots &a_{nn}  \\
 \end{array} \right).
 $$
 
 On the diagonal we see that the $j$-th entry is equal to
 
 $$
-C_{1j}a_{1j} + C_{2j}a_{2j} + \ldots + C_{nj}a_{nj} = \sum_{i=1}^n   a_{ij} C_{ij} = \det{A}.
+C_{1j}a_{1j} + C_{2j}a_{2j} + \cdots + C_{nj}a_{nj} = \sum_{i=1}^n   a_{ij} C_{ij} = \det{A}.
 $$
 
 For the off-diagonal elements we find as product of the $j$-th row of $\operatorname{Adj}(A)$ with the $k$-th column of $A$ the sum
 
 $$
-C_{1j}a_{1k} + C_{2j}a_{2k} + \ldots + C_{nj}a_{nk} = \sum_{i=1}^n   a_{ik} C_{ij}.
+C_{1j}a_{1k} + C_{2j}a_{2k} + \cdots + C_{nj}a_{nk} = \sum_{i=1}^n   a_{ik} C_{ij}.
 $$
 
 This expression can be interpreted as the expansion along the $k$-th row of the determinant of the matrix $A^{(j)}(\vect{a}_k)$ that results if the $j$-th column of
@@ -823,10 +823,10 @@ define
 :label: Eq:DetExtras:DetCrossProd-ndim
 
 \vect{a}^{\ast}_n = \vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1}) =  \left|\begin{array}{ccccc}
-a_{11} & a_{12} & \ldots & a_{1,(n-1)} & \vect{e}_1 \\
-a_{21} & a_{22} & \ldots & a_{2,(n-1)} & \vect{e}_2 \\
+a_{11} & a_{12} & \cdots & a_{1,(n-1)} & \vect{e}_1 \\
+a_{21} & a_{22} & \cdots & a_{2,(n-1)} & \vect{e}_2 \\
 \vdots & \vdots &        &    \vdots   &  \vdots \\
-a_{n1} & a_{n2} & \ldots & a_{n,(n-1)} & \vect{e}_n
+a_{n1} & a_{n2} & \cdots & a_{n,(n-1)} & \vect{e}_n
 \end{array}\right|.
 
 :::
@@ -973,12 +973,12 @@ The properties follow from the observation that for each vector $\vect{v}$ in $\
 \begin{array}{rcl}
 \vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1})\ip\vect{v}
 &=& \left|\begin{array}{ccccc}
-a_{11} & a_{12} & \ldots & a_{1,(n-1)} & v_1 \\
-a_{21} & a_{22} & \ldots & a_{2,(n-1)} & v_2 \\
+a_{11} & a_{12} & \cdots & a_{1,(n-1)} & v_1 \\
+a_{21} & a_{22} & \cdots & a_{2,(n-1)} & v_2 \\
 \vdots & \vdots & & \vdots & \vdots \\
-a_{n1} & a_{n2} & \ldots & a_{n,(n-1)} & v_n
+a_{n1} & a_{n2} & \cdots & a_{n,(n-1)} & v_n
 \end{array}\right|\\
-&=& \det{(\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\,\vect{v}\,)}.
+&=& \det{(\,\vect{a}_1\,\, \cdots\,\, \vect{a}_{n-1}\,\,\vect{v}\,)}.
 \end{array}
 :::::
 
@@ -992,7 +992,7 @@ we write Equation {eq}`Eq:DetExtras:DetCrossProd-ndim` as in Equation {eq}`Eq:De
 Take any of the vectors $\vect{a}_j$. Then (by Equation {eq}`Eq:DetExtras:Deta1anv`)
 
 $$
-\vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1})  \ip \vect{a}_j= \det{ \left(\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\,\vect{a}_j\, \right)
+\vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1})  \ip \vect{a}_j= \det{ \left(\,\vect{a}_1\,\, \cdots\,\, \vect{a}_{n-1}\,\,\vect{a}_j\, \right)
  } = 0,
 $$
 
@@ -1010,24 +1010,24 @@ First suppose that the columns of the matrix
 
 $$
 \begin{pmatrix}
-a_{11} & a_{12} & \ldots & a_{1,(n-1)} \\
-a_{21} & a_{22} & \ldots & a_{2,(n-1)}  \\
+a_{11} & a_{12} & \cdots & a_{1,(n-1)} \\
+a_{21} & a_{22} & \cdots & a_{2,(n-1)}  \\
 \vdots & \vdots &        &      \vdots \\
-a_{n1} & a_{n2} & \ldots & a_{n,(n-1)}
+a_{n1} & a_{n2} & \cdots & a_{n,(n-1)}
 \end{pmatrix}
 $$
 
 are linearly dependent. Then for each vector $\vect{v}$ in $\R^n$
 
 $$
-\vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1})  \ip \vect{v}  =  \det{ \left(\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\,\vect{v}\, \right)
+\vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1})  \ip \vect{v}  =  \det{ \left(\,\vect{a}_1\,\, \cdots\,\, \vect{a}_{n-1}\,\,\vect{v}\, \right)
  }  =  0.
 $$
 
 Namely, the first $n-1$ columns in the determinant are already linearly dependent.
 This implies that $\vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1}) $ must be the zero vector.
 
-To prove the other implication, suppose the vectors $\{ \vect{a}_1, \,\ldots\, \, , \vect{a}_{n-1} \}$ are linearly independent. Then the $n \times (n-1)$-matrix $A = (\,\vect{a}_1 \,\,  \ldots \,\,  \vect{a}_{n-1} \,) $  has rank  $n-1$. The matrix $A$ must have $n-1$ linearly independent rows. Say, if we delete the $k$-th row we have an $(n-1) \times (n-1)$ sub-matrix with independent rows.
+To prove the other implication, suppose the vectors $\{ \vect{a}_1, \,\ldots\, \, , \vect{a}_{n-1} \}$ are linearly independent. Then the $n \times (n-1)$-matrix $A = (\,\vect{a}_1 \,\,  \cdots \,\,  \vect{a}_{n-1} \,) $  has rank  $n-1$. The matrix $A$ must have $n-1$ linearly independent rows. Say, if we delete the $k$-th row we have an $(n-1) \times (n-1)$ sub-matrix with independent rows.
 Then the coefficient of $\vect{e}_k$ in the expansion of
 $ \vect{N} ( \vect{a}_1, \ldots, \vect{a}_{n-1})$,
 which by the defining Equation {eq}`Eq:DetExtras:DetCrossProd-ndim` is precisely (plus or minus) the determinant of this submatrix, is non-zero.
@@ -1039,7 +1039,7 @@ This is a consequence of the observation (again using Equation {eq}`Eq:DetExtras
 
 $$
 \begin{array}{rcl}
-  \det{\left(\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\,\vect{N}(\vect{a}_1, \ldots,  \vect{a}_{n-1})\, \right)}
+  \det{\left(\,\vect{a}_1\,\, \cdots\,\, \vect{a}_{n-1}\,\,\vect{N}(\vect{a}_1, \ldots,  \vect{a}_{n-1})\, \right)}
   &=& \vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1}) \ip \vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1})\\
   &=& \norm{\vect{N}(\vect{a}_1, \ldots, \vect{a}_{n-1})}^2 \geq 0,
 \end{array}
@@ -1055,7 +1055,7 @@ We defined the volume of the $n$-dimensional parallelepiped $\mathcal{P} \left(\
  
 $$ 
 \operatorname{Vol}_n\!\left(\mathcal{P}(\vect{a}_1, \ldots, \vect{a}_{n}) \right)
- = |\det{\left(\,\vect{a}_1\,\, \ldots\,\, \,\vect{a}_{n}\,\right)
+ = |\det{\left(\,\vect{a}_1\,\, \cdots\,\, \,\vect{a}_{n}\,\right)
  }|. 
 $$
 
@@ -1097,7 +1097,7 @@ $$
 \begin{array}{rcl}
 \operatorname{Vol}_n\!\left(\mathcal{P}(\vect{a}_1, \ldots, \vect{a}_{n-1}, \vect{a}^{\ast}_n) \right)
  &=&
-|\det{ \left(\,\vect{a}_1\,\, \ldots\,\, \vect{a}_{n-1}\,\, \vect{a}^{\ast}_n\, \right)
+|\det{ \left(\,\vect{a}_1\,\, \cdots\,\, \vect{a}_{n-1}\,\, \vect{a}^{\ast}_n\, \right)
  }| \\
 &=&
 | \vect{a}^{\ast}_n\ip \vect{a}^{\ast}_n| = \norm{\vect{a}^{\ast}_n}^2.

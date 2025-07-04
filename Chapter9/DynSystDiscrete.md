@@ -158,7 +158,7 @@ $\lambda_1, \ldots, \lambda_n$ be the corresponding eigenvalues.
 Each initial state $\vect{s}$ can be  written (in a unique way) as
 
 $$
-  \vect{s} =  c_1\vect{v}_1 + c_2\vect{v}_2 +  \ldots + c_n\vect{v}_n,
+  \vect{s} =  c_1\vect{v}_1 + c_2\vect{v}_2 + \cdots + c_n\vect{v}_n,
 $$
 
 for some constants (coefficients) $c_1, \ldots, c_n$ in $\R$.
@@ -174,7 +174,7 @@ is then given by
 :::{math}
 :label: Eq:DynSystDiscrete:GenSolDiagble
 
-\vect{x}_k =  c_1\lambda_1^k\vect{v}_1 + c_2\lambda_2^k\vect{v}_2 +  \ldots + c_n\lambda_n^k\vect{v}_n.
+\vect{x}_k =  c_1\lambda_1^k\vect{v}_1 + c_2\lambda_2^k\vect{v}_2 + \cdots + c_n\lambda_n^k\vect{v}_n.
 
 :::
 
@@ -193,7 +193,7 @@ Since $(\vect{v}_1, \ldots, \vect{v}_n)$ is assumed to be a basis, each vector $
 :::{math}
 :label: Eq:DynSystDiscrete:InitCoords
 
-\vect{s} =  c_1\vect{v}_1 + c_2\vect{v}_2 +  \ldots + c_n\vect{v}_n,
+\vect{s} =  c_1\vect{v}_1 + c_2\vect{v}_2 + \cdots + c_n\vect{v}_n,
 :::
 
 for some constants  $c_1, \ldots, c_n$ in $\R$.
@@ -221,9 +221,9 @@ By properties of the matrix product it readily follows that
 
 $$
    \begin{array}{rcl}
-     \vect{x}_k = A^k\vect{s} &=& A^{k}(c_1\vect{v}_1 + \ldots + c_n\vect{v}_n)  \\
-     & = & c_1A^{k}\vect{v}_1 + \ldots + c_nA^{k}\vect{v}_n \\
-     & = & c_1\lambda_1^{k}\vect{v}_1 + \ldots + c_n\lambda_n^{k}\vect{v}_n.
+     \vect{x}_k = A^k\vect{s} &=& A^{k}(c_1\vect{v}_1 + \cdots + c_n\vect{v}_n)  \\
+     & = & c_1A^{k}\vect{v}_1 + \cdots + c_nA^{k}\vect{v}_n \\
+     & = & c_1\lambda_1^{k}\vect{v}_1 + \cdots + c_n\lambda_n^{k}\vect{v}_n.
      \end{array}
 $$
 
@@ -239,7 +239,7 @@ The following proposition is an almost immediate consequence of Equation {eq}`Eq
 Suppose the matrix $A$ is diagonalisable, with eigenvalues $\lambda_i$ ordered by absolute value,
 
 $$
-   |\lambda_1| \geq |\lambda_2| \geq \ldots \geq |\lambda_n|.
+   |\lambda_1| \geq |\lambda_2| \geq \cdots \geq |\lambda_n|.
 $$
 
 Then
@@ -726,7 +726,7 @@ Are the paths periodic? That is, will $\vect{x}_k$ return to the starting value 
 A **linear $n$-th order difference equation** is an equation of the form
 
 $$
-  y(k) = a_1y(k-1) + a_2y(k-2) + \ldots + a_ny(k-n),
+  y(k) = a_1y(k-1) + a_2y(k-2) + \cdots + a_ny(k-n),
 $$
 
 for $k = n, n+1, \ldots$.
@@ -787,7 +787,7 @@ $$
 $$
 
 Define $\vect{x}_k = \left(\begin{array}{c} y(k) \\ y(k+1) \\ y(k+2) \end{array}\right)$,
-for $k = 0,1,2,3,\ldots$
+for $k = 0,1,2,3,\ldots$.
 
 Then
 

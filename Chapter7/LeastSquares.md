@@ -90,7 +90,7 @@ $$
 is equivalent to the vector equation
 
 $$
-  x_1\vect{a}_1 + \ldots + x_1\vect{a}_n = \vect{b}.
+  x_1\vect{a}_1 + \cdots + x_1\vect{a}_n = \vect{b}.
 $$
 
 What we can do if the linear system is inconsistent, thus if
@@ -157,14 +157,14 @@ $$
 ::::{prf:remark}
 :label: Rem:LeastSquares:BestLinComb
 
-By definition $A\hat{\vect{x}} = \hat{x}_1\vect{a}_1  + \ldots + \hat{x}_n\vect{a}_n$ is the best approximation of $\vect{b}$ with vectors in $\Span{\vect{a}_1, ... , \vect{a}_n}$.
+By definition $A\hat{\vect{x}} = \hat{x}_1\vect{a}_1  + \cdots + \hat{x}_n\vect{a}_n$ is the best approximation of $\vect{b}$ with vectors in $\Span{\vect{a}_1, ... , \vect{a}_n}$.
 
 By minimising $\norm{A\vect{x} - \vect{b}}$ we are in fact minimising the sum of the squares of the errors. This explains the name _least squares error_.
 
 From
 
 $$
-   \norm{A\hat{\vect{x}} - \vect{b}} = \norm{\hat{x}_1\vect{a}_1 + \ldots +  \hat{x}_n\vect{a}_n - \vect{b}}
+   \norm{A\hat{\vect{x}} - \vect{b}} = \norm{\hat{x}_1\vect{a}_1 + \cdots +  \hat{x}_n\vect{a}_n - \vect{b}}
 $$
 
 we read off that a least squares solution yields a linear combination of the columns of $A$ that has a minimal distance to $\vect{b}$.
@@ -207,7 +207,7 @@ $$
 and the error $\norm{A\vect{x} - \vect{b}}$ comes down to
 
 $$
-  \sqrt{ \big(y_1 - (ax_1+b)\big)^2 + \ldots + \big(y_n - (ax_n+b)\big)^2}.
+  \sqrt{ \big(y_1 - (ax_1+b)\big)^2 + \cdots + \big(y_n - (ax_n+b)\big)^2}.
 $$
 
 The least squares solution $(\hat{a},\hat{b})$ minimises this error, so in fact it minimises the sum of the squares
@@ -422,22 +422,22 @@ From the section about orthogonal projections, we know that the orthogonal proje
 onto the column space of $A$ exists and is unique (cf. {prf:ref}`Thm:OrthoBase:OrthoDecomp`). This projection will be a vector of the form
 
 $$
-   c_1\vect{a}_1 + \ldots + c_n\vect{a}_n
+   c_1\vect{a}_1 + \cdots + c_n\vect{a}_n
 $$
 
 for certain constants $c_1, \ldots c_n$.  
 % If $A$ has independent columns, these constants are unique.
 
-By the definition of the orthogonal projection we have that $(\vect{b} - (c_1\vect{a}_1 + \ldots + c_n\vect{a}_n))$ lies in the orthogonal complement of $\operatorname{Col}A$, i.e.,
+By the definition of the orthogonal projection we have that $(\vect{b} - (c_1\vect{a}_1 + \cdots + c_n\vect{a}_n))$ lies in the orthogonal complement of $\operatorname{Col}A$, i.e.,
 
 $$
-  \vect{a}_i \ip (\vect{b} - (c_1\vect{a}_1 + \ldots + c_n\vect{a}_n))   = 0, \quad  i = 1, \ldots, n.
+  \vect{a}_i \ip (\vect{b} - (c_1\vect{a}_1 + \cdots + c_n\vect{a}_n))   = 0, \quad  i = 1, \ldots, n.
 $$
 
 This leads to $n$ linear equations
 
 $$
-   \vect{a}_i^T (\vect{b} - c_1\vect{a}_1 - \ldots - c_n\vect{a}_n) = 0
+   \vect{a}_i^T (\vect{b} - c_1\vect{a}_1 - \cdots - c_n\vect{a}_n) = 0
 $$
 
 for the unknowns $c_1, \ldots, c_n$.
@@ -445,26 +445,26 @@ for the unknowns $c_1, \ldots, c_n$.
 These equations can be rewritten as
 
 $$
-    \vect{a}_i^T\vect{b} - \vect{a}_i^T\vect{a}_1\, c_1 - \vect{a}_i^T\vect{a}_2\, c_2 -\ldots - \vect{a}_i^T\vect{a}_n\, c_n = 0,
+    \vect{a}_i^T\vect{b} - \vect{a}_i^T\vect{a}_1\, c_1 - \vect{a}_i^T\vect{a}_2\, c_2 -\cdots - \vect{a}_i^T\vect{a}_n\, c_n = 0,
 $$
 
 and further to
 
 $$
-    \vect{a}_i^T\vect{a}_1\, c_1 + \ldots + \vect{a}_i^T\vect{a}_n\, c_n = \vect{a}_i^T\vect{b}, \quad i = 1, \ldots, n.
+    \vect{a}_i^T\vect{a}_1\, c_1 + \cdots + \vect{a}_i^T\vect{a}_n\, c_n = \vect{a}_i^T\vect{b}, \quad i = 1, \ldots, n.
 $$
 
 In matrix-vector form this becomes
 
 $$
  \left(  \begin{array}{cccc}
-     \vect{a}_1^T\vect{a}_1 &  \vect{a}_1^T\vect{a}_2 & \ldots & \vect{a}_1^T\vect{a}_n \\
-     \vect{a}_2^T\vect{a}_1 &  \vect{a}_2^T\vect{a}_2 & \ldots & \vect{a}_2^T\vect{a}_n \\
-        \vdots        &  \vdots        & & \vdots      \\
-     \vect{a}_n^T\vect{a}_1 &  \vect{a}_n^T\vect{a}_2 & \ldots & \vect{a}_n^T\vect{a}_n \\
+     \vect{a}_1^T\vect{a}_1 &  \vect{a}_1^T\vect{a}_2 & \cdots & \vect{a}_1^T\vect{a}_n \\
+     \vect{a}_2^T\vect{a}_1 &  \vect{a}_2^T\vect{a}_2 & \cdots & \vect{a}_2^T\vect{a}_n \\
+        \vdots        &  \vdots        & \ddots & \vdots      \\
+     \vect{a}_n^T\vect{a}_1 &  \vect{a}_n^T\vect{a}_2 & \cdots & \vect{a}_n^T\vect{a}_n \\
   \end{array} \right)
-  \left(  \begin{array}{c}   c_1 \\ c_2 \\ \ldots \\ c_n   \end{array} \right) =
-  \left(  \begin{array}{c}  \vect{a}_1^T\vect{b} \\ \vect{a}_2^T\vect{b} \\ \ldots \\ \vect{a}_n^T\vect{b}   \end{array} \right).
+  \left(  \begin{array}{c}   c_1 \\ c_2 \\ \vdots \\ c_n   \end{array} \right) =
+  \left(  \begin{array}{c}  \vect{a}_1^T\vect{b} \\ \vect{a}_2^T\vect{b} \\ \vdots \\ \vect{a}_n^T\vect{b}   \end{array} \right).
 $$
 
 which leads to the following very concise form
@@ -488,7 +488,7 @@ then the orthogonal projection of
 $\vect{b}$ of $\operatorname{Col}A$ is given by
 
 $$
-  \operatorname{proj}_{\Col{A}}(\vect{b}) = c_1\vect{a}_1 + \ldots + c_n\vect{a}_n = A \vect{c}.
+  \operatorname{proj}_{\Col{A}}(\vect{b}) = c_1\vect{a}_1 + \cdots + c_n\vect{a}_n = A \vect{c}.
 $$
 
 If the columns $\vect{a}_1, \ldots, \vect{a}_n$ of $A$ are linearly independent, the coefficients $c_i$ are the coordinates with respect to the basis $\{\vect{a}_1, \ldots, \vect{a}_n\}$, hence they are unique. Thus in that case the normal equations
@@ -574,7 +574,7 @@ As stated, the least squares solution of a system $A\vect{x} = \vect{b}$ consist
 of the orthogonal projection
 
 $$
-   \operatorname{proj}_{\Col{A}}(\vect{b}) = c_1\vect{a}_1 + c_2\vect{a}_2 + \ldots + c_n\vect{a}_n = A \vect{c}, \quad \vect{c} = \begin{pmatrix} c_1 \\ \vdots \\ c_n\end{pmatrix},
+   \operatorname{proj}_{\Col{A}}(\vect{b}) = c_1\vect{a}_1 + c_2\vect{a}_2 + \cdots + c_n\vect{a}_n = A \vect{c}, \quad \vect{c} = \begin{pmatrix} c_1 \\ \vdots \\ c_n\end{pmatrix},
 $$
 
 of $\vect{b}$ onto the column space of $A$.
@@ -651,13 +651,13 @@ of a vector $\vect{b}$ in $\R^m$ onto $\operatorname{Col}A$ is found by solving 
 
 $$
  \left(  \begin{array}{cccc}
-     \vect{a}_1^T\vect{a}_1 &  \vect{a}_1^T\vect{a}_2 & \ldots & \vect{a}_1^T\vect{a}_n \\
-     \vect{a}_2^T\vect{a}_1 &  \vect{a}_2^T\vect{a}_2 & \ldots & \vect{a}_2^T\vect{a}_n \\
+     \vect{a}_1^T\vect{a}_1 &  \vect{a}_1^T\vect{a}_2 & \cdots & \vect{a}_1^T\vect{a}_n \\
+     \vect{a}_2^T\vect{a}_1 &  \vect{a}_2^T\vect{a}_2 & \cdots & \vect{a}_2^T\vect{a}_n \\
         \vdots        &  \vdots        & & \vdots      \\
-     \vect{a}_n^T\vect{a}_1 &  \vect{a}_n^T\vect{a}_2 & \ldots & \vect{a}_n^T\vect{a}_n \\
+     \vect{a}_n^T\vect{a}_1 &  \vect{a}_n^T\vect{a}_2 & \cdots & \vect{a}_n^T\vect{a}_n \\
   \end{array} \right)
-  \left(  \begin{array}{c}   x_1 \\ x_2 \\ \ldots \\ x_n   \end{array} \right) =
-  \left( \begin{array}{c}  \vect{a}_1^T\vect{b} \\ \vect{a}_2^T\vect{b} \\ \ldots \\ \vect{a}_n^T\vect{b}   \end{array} \right).
+  \left(  \begin{array}{c}   x_1 \\ x_2 \\ \vdots \\ x_n   \end{array} \right) =
+  \left( \begin{array}{c}  \vect{a}_1^T\vect{b} \\ \vect{a}_2^T\vect{b} \\ \vdots \\ \vect{a}_n^T\vect{b}   \end{array} \right).
 $$
 
 Since the columns are orthogonal, all products $\vect{a}_i^{T}\vect{a}_j = \vect{a}_i\ip\vect{a}_j$ with $i \neq j$ are zero.
@@ -666,10 +666,10 @@ Expressing the equation using inner products we find
 
 $$
   \left(  \begin{array}{cccc}
-     \vect{a}_1\ip\vect{a}_1 &  0 & \ldots & 0 \\
-     0 &  \vect{a}_2\ip\vect{a}_2 & \ldots & 0 \\
+     \vect{a}_1\ip\vect{a}_1 &  0 & \cdots & 0 \\
+     0 &  \vect{a}_2\ip\vect{a}_2 & \cdots & 0 \\
         \vdots        &  \vdots        &\ddots  & \vdots      \\
-     0 &  0 & \ldots & \vect{a}_n\ip\vect{a}_n \\
+     0 &  0 & \cdots & \vect{a}_n\ip\vect{a}_n \\
   \end{array} \right)
   \left(  \begin{array}{c}   x_1 \\ x_2 \\ \vdots \\ x_n   \end{array} \right) =
   \left(  \begin{array}{c}  \vect{a}_1\ip\vect{b} \\ \vect{a}_2\ip\vect{b} \\ \vdots \\ \vect{a}_n\ip\vect{b}   \end{array} \right).
@@ -681,7 +681,7 @@ As before ({prf:ref}`Thm:OrthoBase:OrthoDecomp`) the orthogonal projection becom
 
 $$
    \operatorname{proj}(\vect{b}) =  \dfrac{\vect{b}\ip\vect{a}_1}{\vect{a}_1\ip\vect{a}_1}\vect{a}_1 +
-    \dfrac{\vect{b}\ip\vect{a}_2}{\vect{a}_2\ip\vect{a}_2}\vect{a}_2 + \ldots +
+    \dfrac{\vect{b}\ip\vect{a}_2}{\vect{a}_2\ip\vect{a}_2}\vect{a}_2 + \cdots +
      \dfrac{\vect{b}\ip\vect{a}_n}{\vect{a}_n\ip\vect{a}_n}\vect{a}_n.
 $$
 
@@ -1349,7 +1349,7 @@ and $n$ points $(x_1,y_1), \ldots, (x_n,y_n)$ in the plane are given.
 The **linear model** refers to the 'best' linear combination, in the least squares sense, of the form
 
 $$
-  c_1f_1(x) + c_2f_2(x) + \ldots + c_kf_k(x).
+  c_1f_1(x) + c_2f_2(x) + \cdots + c_kf_k(x).
 $$
 
 That is, the linear combination that minimises
@@ -1357,14 +1357,14 @@ That is, the linear combination that minimises
 :::{math}
 :label: Eq:LeastSquares:SumResidues
 
-\sum_{i=1}^n \big(y_i - (c_1f_1(x_i) + c_2f_2(x_i) + \ldots + c_kf_k(x_i))\,\big)^2,
+\sum_{i=1}^n \big(y_i - (c_1f_1(x_i) + c_2f_2(x_i) + \cdots + c_kf_k(x_i))\,\big)^2,
 
 :::
 
 the sum of the squares of the errors/residues
 
 $$
-   y_i - \big(c_1f_1(x_i) + c_2f_2(x_i) + \ldots + c_kf_k(x_i)\big).
+   y_i - \big(c_1f_1(x_i) + c_2f_2(x_i) + \cdots + c_kf_k(x_i)\big).
 $$
 
 ::::
@@ -1381,11 +1381,11 @@ in Equation {eq}`Eq:LeastSquares:SumResidues` coincide with the least squares so
 :label: Eq:LeastSquares:DesignMatrix
 
 \left(\begin{array}{cccc}
-f_1(x_1) & f_2(x_1) & \ldots & f_k(x_1) \\
-f_1(x_2) & f_2(x_2) & \ldots & f_k(x_2) \\
+f_1(x_1) & f_2(x_1) & \cdots & f_k(x_1) \\
+f_1(x_2) & f_2(x_2) & \cdots & f_k(x_2) \\
 \vdots & \vdots & & \vdots \\
 \vdots & \vdots & \ddots & \vdots \\
-f_1(x_n) & f_2(x_n) & \ldots & f_k(x_n)
+f_1(x_n) & f_2(x_n) & \lcdotsdots & f_k(x_n)
 \end{array}\right)
 \left(\begin{array}{c}
 c_1 \\ c_2 \\ \vdots \\ c_k \end{array}\right) =
@@ -1429,7 +1429,7 @@ and we want to find the linear combination
 
 
 $$
-    \beta_1f_1(x_1, \ldots, x_{k}) + \ldots +
+    \beta_1f_1(x_1, \ldots, x_{k}) + \cdots +
    \beta_{\ell}f_{\ell}(x_{1},\ldots, x_{k})
 $$
 
@@ -1438,7 +1438,7 @@ that best fits these data.
 For instance, to find the linear function
 
 $$
-  y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_k x_k
+  y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_k x_k
 $$
 
 that best fits the data in Equation {eq}`Eq:LeastSquares:Data-n-dim`, we can take $f_0(x_1,\ldots,x_k) = 1$ and $f_i(x_1,\ldots,x_k) = x_i$, for $i = 1, \ldots, k$.
@@ -1448,7 +1448,7 @@ In a least squares model we then look for the parameters $\beta_1, \ldots, \beta
 :::{math}
 :label: Eq:LeastSquares:GeneralModel
 
-     \sum_{i=1}^{n}  \big(y_i - \beta_1f_1(x_{i1},\ldots, x_{ik}) \,-\, \ldots \,-\,
+     \sum_{i=1}^{n}  \big(y_i - \beta_1f_1(x_{i1},\ldots, x_{ik}) \,-\, \cdots \,-\,
      \beta_{\ell}f_{\ell}(x_{i1},\ldots, x_{ik})\big)^2.
 
 :::
@@ -1464,7 +1464,7 @@ get different weights $w_i$. When building a statistical model this may be desir
 Then the expression we want to minimise is given by
 
 $$
-  \sum_{i=1}^{n}  \class{blue}{w_i} \big(y_i - \beta_1f_1(x_{i1},\ldots, x_{ik}) \,-\, \ldots \,-\,
+  \sum_{i=1}^{n}  \class{blue}{w_i} \big(y_i - \beta_1f_1(x_{i1},\ldots, x_{ik}) \,-\, \cdots \,-\,
    \beta_{\ell}f_{\ell}(x_{i1},\ldots, x_{ik})\big)^2.
 $$
 

@@ -157,7 +157,7 @@ Suppose
 
 $$
 A = \begin{pmatrix}
- \mathbf{a}_1 & \mathbf{a}_2 & \ldots & \mathbf{a}_n
+ \mathbf{a}_1 & \mathbf{a}_2 & \cdots & \mathbf{a}_n
 \end{pmatrix}
 $$
 
@@ -853,8 +853,8 @@ each set of vectors $\mathbf{x}_1,  \ldots, \mathbf{x}_k$ in $\mathbb{R}^n$ and 
 :::::{math}
 :label: Eq:LinTrafo:LinComb
 
-T(c_1\mathbf{x}_1+c_2 \mathbf{x}_2+\ldots +c_k \mathbf{x}_k) =
-c_1T(\mathbf{x}_1)+c_2T(\mathbf{x}_2)+\ldots +c_kT( \mathbf{x}_k).
+T(c_1\mathbf{x}_1+c_2 \mathbf{x}_2+ \cdots +c_k \mathbf{x}_k) =
+c_1T(\mathbf{x}_1)+c_2T(\mathbf{x}_2)+ \cdots +c_kT( \mathbf{x}_k).
 
 :::::
 
@@ -879,10 +879,10 @@ First apply rule (i) to split the term on the left in Equation {eq}`Eq:LinTrafo:
 
 $$
 \begin{array}{ccl}
-T(c_1\mathbf{x}_1+c_2 \mathbf{x}_2+\ldots +c_k \mathbf{x}_k)  &=&
-  T(c_1\mathbf{x}_1)+T(c_2 \mathbf{x}_2+\ldots +c_k \mathbf{x}_k) \\
-  &=&  \quad  \ldots   \\
-  &=& T(c_1\mathbf{x}_1)+T(c_2 \mathbf{x}_2)+\ldots + T(c_k \mathbf{x}_k)
+T(c_1\mathbf{x}_1+c_2 \mathbf{x}_2+ \cdots +c_k \mathbf{x}_k)  &=&
+  T(c_1\mathbf{x}_1)+T(c_2 \mathbf{x}_2+ \cdots +c_k \mathbf{x}_k) \\
+  &\vdots&  \\
+  &=& T(c_1\mathbf{x}_1)+T(c_2 \mathbf{x}_2)+ \cdots + T(c_k \mathbf{x}_k)
  \end{array}
 $$
 
@@ -1108,7 +1108,7 @@ More specific, if $T: \mathbb{R}^n \to \mathbb{R}^m$ is linear, then for each $\
 T(\mathbf{x}) = A\mathbf{x}, \quad \text{where} \quad
 A =
 \begin{pmatrix}
-T(\mathbf{e}_1) & T(\mathbf{e}_2) & \ldots & T(\mathbf{e}_n)
+T(\mathbf{e}_1) & T(\mathbf{e}_2) & \cdots & T(\mathbf{e}_n)
 \end{pmatrix}.
 
 :::::
@@ -1134,7 +1134,7 @@ x_1\\x_2\\ \vdots \\ x_n
 \begin{pmatrix}
 0 \\ 1 \\ \vdots \\ 0
 \end{pmatrix} +
-              \ldots +
+              \cdots +
                x_n
 \begin{pmatrix}
 0 \\ 0 \\ \vdots \\ 1
@@ -1144,21 +1144,21 @@ $$
 i.e.,
 
 $$
-  \mathbf{x} =   x_1 \mathbf{e}_1 + x_2 \mathbf{e}_2 +  \ldots + x_n \mathbf{e}_n.
+  \mathbf{x} =   x_1 \mathbf{e}_1 + x_2 \mathbf{e}_2 + \cdots + x_n \mathbf{e}_n.
 $$
 
 From {prf:ref}`Prop:LinTrafo:ExtendedLinearity` it follows that
 
 $$
-  T( \mathbf{x}) =   x_1 T(\mathbf{e}_1) + x_2 T(\mathbf{e}_2) +  \ldots + x_n T(\mathbf{e}_n).
+  T( \mathbf{x}) =   x_1 T(\mathbf{e}_1) + x_2 T(\mathbf{e}_2) + \cdots + x_n T(\mathbf{e}_n).
 $$
 
 The last expression is a linear combination of $n$ vectors in $\mathbb{R}^m$, and thus can be written as a matrix-vector product:
 
 $$
-  x_1 T(\mathbf{e}_1) + x_2 T(\mathbf{e}_2) +  \ldots + x_n T(\mathbf{e}_n) =
+  x_1 T(\mathbf{e}_1) + x_2 T(\mathbf{e}_2) + \cdots + x_n T(\mathbf{e}_n) =
 \begin{pmatrix}
- T(\mathbf{e}_1) & T(\mathbf{e}_2) & \ldots & T(\mathbf{e}_n)
+ T(\mathbf{e}_1) & T(\mathbf{e}_2) & \cdots & T(\mathbf{e}_n)
 \end{pmatrix} \mathbf{x}.
 $$
 
@@ -1173,7 +1173,7 @@ For a linear transformation $T:\mathbb{R}^n \to \mathbb{R}^m$, the matrix
 :label: Eq:LinTrafo:StandardMatrix2
 
 \begin{pmatrix}
-T(\mathbf{e}_1) & T(\mathbf{e}_2) & \ldots & T(\mathbf{e}_n)
+T(\mathbf{e}_1) & T(\mathbf{e}_2) & \cdots & T(\mathbf{e}_n)
 \end{pmatrix}
 
 :::
