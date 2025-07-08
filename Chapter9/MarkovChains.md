@@ -1,5 +1,7 @@
 # Markov chains
 
+## Introduction
+
 Suppose we have, say, three brands competing with each other in some niche of the market. Every month, a certain percentage of customers changes brands. What percentage of the market will each brand control after a given number of months? What will be the market share of each brand in the long run? To answer these kind of questions, we need Markov chains.
 
 ## Markov chains
@@ -166,7 +168,24 @@ If $P$ is a stochastic matrix, then $1$ is an eigenvalue of $P$. Moreover, there
 :::{admonition} Proof of {prf:ref}`Prop:MarkovChains:StoMat1EV`
 :class: tudproof
 
-Showing that $1$ is an eigenvalue is a very non-trivial exercise. Showing that there is a corresponding eigenvector without negative entries would lead us too far.
+We only show that $1$ is an eigenvalue of an $n\times n$ stochastic matrix $P$.
+
+Because $P$ is a stochastic matrix, we have $\sum_{i=1}^{n} P_{ij}=1$ for every $j$. If we consider $Q=P^T$, we find directly $\sum_{j=1}^{n} Q_{ij}=1$ for every $i$.
+
+Define $\mathbf{1}$ as the vector from $\R^n$ containing only $1$s and consider the next:
+
+$$
+\begin{align*}
+Q\mathbf{1} &= \begin{pmatrix}Q_{11}&Q_{12}&\cdots&Q_{1n}\\Q_{21}&Q_{22}&\cdots&Q_{2n}\\\vdots&\vdots&\ddots&\vdots\\Q_{n1}&Q_{n2}&\cdots&Q_{nn}\end{pmatrix}\begin{pmatrix}1\\1\\\vdots\\1\end{pmatrix}\\
+&= \begin{pmatrix}\sum_{j=1}^{n} Q_{1j}\\\sum_{j=1}^{n} Q_{2j}\\\vdots\\\sum_{j=1}^{n} Q_{nj}\end{pmatrix} \\
+&= \begin{pmatrix}1\\1\\\vdots\\1\end{pmatrix} \\
+&= \mathbf{1}.
+\end{align*}
+$$
+
+This shows that $1$ is an eigenvalue of $Q=P^T$, and by {numref}`grasple_exercise_6_2_6`, $1$ is also an eigenvalue of $P$.
+
+Showing that there is a corresponding eigenvector without negative entries is outside the scope of this book, but a sketch of the proof is given at [Stochastic matrix](https://en.wikipedia.org/wiki/Stochastic_matrix).
 
 :::
 

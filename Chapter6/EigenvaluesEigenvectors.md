@@ -716,6 +716,7 @@ $$
 $$
 
 So it is natural to state that $R$ has the eigenvalues $\pm i$.
+
 (As stated before, {numref}`Section %s <Section:ComplexEV>` is devoted to complex eigenvalues.)
 ::::::
 

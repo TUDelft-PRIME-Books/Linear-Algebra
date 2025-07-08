@@ -2,6 +2,8 @@
 
 # Miscellaneous applications of determinants
 
+## Introduction
+
 In this section we will address the following matters:
 
 <ul>

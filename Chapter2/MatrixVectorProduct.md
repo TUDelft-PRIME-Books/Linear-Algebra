@@ -2,6 +2,8 @@
 
 # The matrix-vector product $A\vect{x}$
 
+## Introduction
+
 In this section we will introduce another interpretation/representation of a system of linear equations.  
 We will define the product of an $m\times n$-matrix $A$ with a vector $\vect{x}$ in $\mathbb{R}^n$. In the next chapter this will also be the stepping stone to the general matrix-matrix product.
 
@@ -160,33 +162,6 @@ $$
 
 ::::
 
-::::{grasple}
-:iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/e9b864bf-de65-4b67-92d2-7075121ae5e5?id=70222
-:label: grasple_exercise_2_4_1T
-:dropdown:
-:description: To check whether $A\vect{x}$ exists, and if so, to compute it.
-
-::::
-
-::::{grasple}
-:iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/848de922-1bd5-48a2-806d-a2b94bd40a4b?id=70223
-:label: grasple_exercise_2_4_2T
-:dropdown:
-:description: To check whether $A\vect{x}$ exists, and if so, to compute it.
-
-::::
-
-::::{grasple}
-:iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/8eb9d800-ebd8-4805-8d56-eac5150f405d?id=85094
-:label: grasple_exercise_2_4_3 T
-:dropdown:
-:description: To check whether $A\vect{x}$ exists, and if so, to compute it.
-
-::::
-
 ::::{prf:remark}
 :label: Rem:MatVecProd:EquivalentEquations
 
@@ -278,6 +253,35 @@ $$
 
 ::::
 
+## Grasple exercises (1)
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/e9b864bf-de65-4b67-92d2-7075121ae5e5?id=70222
+:label: grasple_exercise_2_4_1T
+:dropdown:
+:description: To check whether $A\vect{x}$ exists, and if so, to compute it.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/848de922-1bd5-48a2-806d-a2b94bd40a4b?id=70223
+:label: grasple_exercise_2_4_2T
+:dropdown:
+:description: To check whether $A\vect{x}$ exists, and if so, to compute it.
+
+::::
+
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/8eb9d800-ebd8-4805-8d56-eac5150f405d?id=85094
+:label: grasple_exercise_2_4_3 T
+:dropdown:
+:description: To check whether $A\vect{x}$ exists, and if so, to compute it.
+
+::::
+
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/d9a8f246-359c-4666-bb8c-2f573e192e5c?id=68857
@@ -286,6 +290,8 @@ $$
 :description: Rewriting a linear system to a matrix-vector equation.
 
 ::::
+
+## Properties of the matrix-vector product
 
 ::::{prf:proposition}
 :label: Prop:MatVecProduct:Linearity
@@ -706,7 +712,7 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 
 ::::
 
-## Grasple exercises
+## Grasple exercises (2)
 
 ::::{grasple}
 :iframeclass: dark-light

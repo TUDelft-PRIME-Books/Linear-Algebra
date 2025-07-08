@@ -1,5 +1,7 @@
 # Linear independence
 
+## Introduction
+
 As we have seen ({prf:ref}`Ex:LinearCombinations:SpanOfOneVector` and {prf:ref}`Ex:LinearCombinations:SpanOfTwoVectors`), the multiples of a non-zero vector form a line. We have also seen there that, if we consider the set of all vectors of the form $c_{1}\mathbf{v}_{1}+c_{2}\mathbf{v}_{2}$, for some vectors $\mathbf{v}_{1},\mathbf{v}_{2}$ and constants $c_{1},c_{2}$, we usually get a plane. But sometimes we don't! For example, if $d\mathbf{v}_{1}=\mathbf{v}_{2}$ for some constant $d$, then all vectors of the given form can be rewritten as $(c_{1}+c_{2}d)\mathbf{v}_{1}$, so they are all contained in the line through the origin and in the direction of $\mathbf{v}_{1}$. Every vector we can make as a linear combination of $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$ can also be made with $\mathbf{v}_{1}$ alone. The vector $\mathbf{v}_{2}$ is superfluous. This situation can be seen in {numref}`Figure %s <Fig:LinInd:Examplein1D>`.
 
 ::::{figure} Images/Fig-LinInd-Examplein1D.svg
@@ -10,6 +12,8 @@ The set $\left\lbrace\mathbf{v}_{1},\mathbf{v}_{2}\right\rbrace$ contains two ve
 ::::
 
 We will now formalise this concept of superfluous vectors.
+
+## Definitions
 
 ::::::{prf:definition}
 :label: Def:LinInd:LinInd
@@ -197,6 +201,8 @@ The four vectors from [iii.](#Item:LinInd:LinDepExin3D). Note that $\mathbf{w}_{
 :description: To verify whether a set $\{\vect{u}, \vect{v}\}$ is linearly independent.
 
 ::::::
+
+## Properties
 
 The following elementary properties of linear dependence and linear independence will be used throughout the text, often tacitly.
 

@@ -1,5 +1,7 @@
 # Determinants via row reduction
 
+## Introduction
+
 In this section we will first consider the effect of row operations on the value of a determinant.
 This leads the way to a more efficient way to compute $n\times n$-determinants.
 

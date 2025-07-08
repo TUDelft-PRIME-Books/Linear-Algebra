@@ -1,5 +1,10 @@
-(Sec:DynSystDiscrete)=
+::::{attention}
 
+In this section we will assume the reader is familiar with complex numbers and their properties. If preferred, a review of complex numbers can be found in {numref}`Chapter %s <Ch:ComplexNumbers>`.
+
+::::
+
+(Sec:DynSystDiscrete)=
 # Discrete dynamical systems
 
 ## Introduction

@@ -37,7 +37,7 @@ The explicit vectors we find are
 $$
    \vect{b}_1 = \begin{pmatrix} 2 \\ 1   \\3    \end{pmatrix}, \quad
    \vect{b}_2 =  \begin{pmatrix} 3 \\ -2   \\1    \end{pmatrix} - \dfrac{7}{14}\begin{pmatrix} 2 \\ 1   \\3    \end{pmatrix} = \begin{pmatrix} 2 \\ -5/2   \\ -1/2    \end{pmatrix} =
-   \dfrac{1}{2}\begin{pmatrix} 4 \\ -5   \\ -1    \end{pmatrix}
+   \dfrac{1}{2}\begin{pmatrix} 4 \\ -5   \\ -1    \end{pmatrix}.
 $$
 
 If we prefer vectors without fractions, we can rescale the second vector, and then find the orthogonal basis
@@ -59,8 +59,8 @@ $\vect{b}_1,\ldots,\vect{b}_m$ according to the following rules
 $$
 
   \begin{array}{lcl}
-     \vect{b}_1 &=& \vect{a}_1 \\
-     \vect{b}_2 &=& \vect{a}_2 - \dfrac{\vect{a}_2\ip\vect{b}_1}{\vect{b}_1\ip\vect{b}_1}\vect{b}_1 \\
+     \vect{b}_1 &=& \vect{a}_1, \\
+     \vect{b}_2 &=& \vect{a}_2 - \dfrac{\vect{a}_2\ip\vect{b}_1}{\vect{b}_1\ip\vect{b}_1}\vect{b}_1, \\
      \vect{b}_3 &=& \vect{a}_3 - \dfrac{\vect{a}_3\ip\vect{b}_1}{\vect{b}_1\ip\vect{b}_1}\vect{b}_1  - \dfrac{\vect{a}_3\ip\vect{b}_2}{\vect{b}_2\ip\vect{b}_2}\vect{b}_2 \\
   \end{array}
 $$
@@ -199,7 +199,7 @@ so are the vectors $\vect{b}_1, \ldots, \vect{b}_j, \vect{b}_{j+1}$.
 :url: https://embed.grasple.com/exercises/bb336bca-f300-48ba-8744-e38ad3a7bcd0?id=87814
 :label: grasple_exercise_7_3_A
 :dropdown:
-:description: Gram-Schmidt D.I.Y.
+:description: Gram-Schmidt D.I.Y..
 
 ::::
 
@@ -216,8 +216,10 @@ we use the notation $W_j$ for the span of the vectors $ \vect{a}_1, \ldots, \vec
 
 Just following the protocol we find
 
+$
 $\vect{b}_1 = \vect{a}_1 = \begin{pmatrix} 1 \\ -1   \\ 2 \\ 3    \end{pmatrix},  \quad
-      \vect{b}_2 =   \vect{a}_{2} - \dfrac{\vect{a}_{2}\ip\vect{b}_1}{\vect{b}_1\ip\vect{b}_1}\vect{b}_1        = \begin{pmatrix} 0 \\ 0   \\ 0 \\ 0    \end{pmatrix}$.
+      \vect{b}_2 =   \vect{a}_{2} - \dfrac{\vect{a}_{2}\ip\vect{b}_1}{\vect{b}_1\ip\vect{b}_1}\vect{b}_1        = \begin{pmatrix} 0 \\ 0   \\ 0 \\ 0    \end{pmatrix}.
+$$
 
 The explanation is that $\vect{b}_2 = \vect{a}_{2} - \operatorname{proj}_{\vect{a}_1}(\vect{a}_2) =
 \vect{a}_{2} - \vect{a}_{2} = \vect{0}$, since $\vect{a}_2$ lies in $\operatorname{Span}\{\vect{a}_1\}$.
@@ -286,11 +288,11 @@ For the subspace
 $$
 
 W = \operatorname{Span}
-\left(
+\left\{
     \begin{pmatrix} 1 \\ 1   \\-1  \\1  \end{pmatrix},
     \begin{pmatrix} 3 \\ 3   \\-2  \\0  \end{pmatrix}
     \begin{pmatrix} 3 \\ 1   \\4  \\-4  \end{pmatrix}
-    \right).
+    \right\}.
 $$
 
 we found, in {prf:ref}`Ex:GramSchmidt:Orthogonalize`, the orthogonal basis
@@ -361,10 +363,10 @@ it follows that
 $$
 
   \begin{array}{ccl}
-   \vect{b}_1 &=& \rule{1em}{0ex}\vect{a}_1 \\
-   \vect{b}_2 &=&   c_{12}\vect{a}_1 + \vect{a}_2 \\
+   \vect{b}_1 &=& \phantom{c_{12}}\vect{a}_1 \\
+   \vect{b}_2 &=&   c_{12}\vect{a}_1 + \phantom{c_{23}}\vect{a}_2 \\
    \vect{b}_3 &=&   c_{13}\vect{a}_1 + c_{23}\vect{a}_2 + \vect{a}_3\\
-    \vdots &=& \quad \vdots
+    & \vdots &
   \end{array}
 $$
 
@@ -376,7 +378,7 @@ $$
     (\vect{a}_1\,\,\vect{a}_2\,\,\cdots\,\,\vect{a}_m)
   \begin{pmatrix} 1 & c_{12} & c_{13} & \cdots & c_{1m} \\
   0 & 1 & c_{23} & \cdots & c_{2m} \\
-  0 & 0 & 1 & \ldcdotsots & c_{3m} \\
+  0 & 0 & 1 & \cdots & c_{3m} \\
   \vdots & \vdots &  & \ddots &  \\
   0 & 0 & 0 & \cdots & 1
    \end{pmatrix} = AC.
@@ -629,7 +631,7 @@ The first exercises are about applying the Gram-Schmidt (GS) algorithm
 ::::
 
 
-The following exercises are about the $QR$ decomposition
+The following exercises are about the $QR$ decomposition.
 
 ::::{grasple}
 :iframeclass: dark-light

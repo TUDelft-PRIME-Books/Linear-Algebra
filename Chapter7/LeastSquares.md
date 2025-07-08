@@ -1,6 +1,6 @@
 (Sec:LeastSquares)=
 
-# Least squares solutions
+# least-squares solutions
 
 (SubSec:LeastSquares:Introduction)=
 
@@ -48,8 +48,8 @@ That means that all equations
 
 $$
    \left\{\begin{array}{ccc}
-                     y_1 &=& ax_1 + b \\
-                     y_2 &=& ax_2+ b \\
+                     y_1 &=& ax_1 + b, \\
+                     y_2 &=& ax_2+ b, \\
                       \vdots & & \vdots \\
                       y_n &=& ax_n + b \\
                      \end{array}\right.
@@ -77,7 +77,7 @@ We will come back to this question in {numref}`Subsection %s <SubSec:LeastSquare
 
 (SubSec:LeastSquares:LS-solutions)=
 
-## Least squares solutions
+## least-squares solutions
 
 Let $A$ be an $m \times n$-matrix with columns $\vect{a}_1, \ldots, \vect{a}_n$.
 
@@ -106,7 +106,7 @@ $\Span{\vect{a}_1, ... , \vect{a}_n}$. This is the idea behind the following def
 :label: Def:LeastSquares:Solution
 
 Let $A$ be an $m\times n$-matrix and $\vect{b}$ a vector in $\R^{m}$.
-A vector $\hat{\vect{x}}$ is called a **least squares solution** of the linear system $A\vect{x} = \vect{b}$ if for every $\vect{x}$ in $\R^n$ the inequality
+A vector $\hat{\vect{x}}$ is called a **least-squares solution** of the linear system $A\vect{x} = \vect{b}$ if for every $\vect{x}$ in $\R^n$ the inequality
 
 $$
    \norm{A\hat{\vect{x}} - \vect{b}} \leq \norm{A\vect{x} - \vect{b}}
@@ -120,7 +120,7 @@ $$
     \norm{A\hat{\vect{x}} - \vect{b}}
 $$
 
-is called the **least squares error**.
+is called the **least-squares error**.
 
 ::::
 
@@ -159,7 +159,7 @@ $$
 
 By definition $A\hat{\vect{x}} = \hat{x}_1\vect{a}_1  + \cdots + \hat{x}_n\vect{a}_n$ is the best approximation of $\vect{b}$ with vectors in $\Span{\vect{a}_1, ... , \vect{a}_n}$.
 
-By minimising $\norm{A\vect{x} - \vect{b}}$ we are in fact minimising the sum of the squares of the errors. This explains the name _least squares error_.
+By minimising $\norm{A\vect{x} - \vect{b}}$ we are in fact minimising the sum of the squares of the errors. This explains the name _least-squares error_.
 
 From
 
@@ -167,10 +167,10 @@ $$
    \norm{A\hat{\vect{x}} - \vect{b}} = \norm{\hat{x}_1\vect{a}_1 + \cdots +  \hat{x}_n\vect{a}_n - \vect{b}}
 $$
 
-we read off that a least squares solution yields a linear combination of the columns of $A$ that has a minimal distance to $\vect{b}$.
+we read off that a least-squares solution yields a linear combination of the columns of $A$ that has a minimal distance to $\vect{b}$.
 
-For a _consistent_ linear system a least squares solution will be an actual solution,
-i.e. $A\hat{\vect{x}} - \vect{b} = \vect{0}$. In this case the least squares error
+For a _consistent_ linear system a least-squares solution will be an actual solution,
+i.e. $A\hat{\vect{x}} - \vect{b} = \vect{0}$. In this case the least-squares error
 
 $$
   \norm{A\hat{\vect{x}} - \vect{b}} =\norm{\vect{b} - \vect{b}} =\norm{\vect{0}}
@@ -182,7 +182,7 @@ will be zero.
 ::::{prf:remark}
 :label: Rem:LeastSquares:Linefit
 
-In the situation where we want to fit a line $y = ax + b$, we can take as 'best' parameters the _least squares_ solution of the linear system as in Equation {eq}`Eq:LeastSquares:Linefit`,
+In the situation where we want to fit a line $y = ax + b$, we can take as 'best' parameters the _least-squares_ solution of the linear system as in Equation {eq}`Eq:LeastSquares:Linefit`,
 
 $$
   \left(\begin{array}{cc}
@@ -210,7 +210,7 @@ $$
   \sqrt{ \big(y_1 - (ax_1+b)\big)^2 + \cdots + \big(y_n - (ax_n+b)\big)^2}.
 $$
 
-The least squares solution $(\hat{a},\hat{b})$ minimises this error, so in fact it minimises the sum of the squares
+The least-squares solution $(\hat{a},\hat{b})$ minimises this error, so in fact it minimises the sum of the squares
 
 $$
    \sum_{i=1}^{n}  \big(y_i - (ax_i+b)\big)^2.
@@ -223,19 +223,19 @@ The questions we will address are
 <ol type ="i">
 <li>
 
-Does a least squares solution always _exist_?
+Does a least-squares solution always _exist_?
 
 </li>
 
 <li>
 
-How to _compute_ the least squares solution(s)?
+How to _compute_ the least-squares solution(s)?
 
 </li>
 
 <li>
 
-If a least squares solution exists, is it _unique_?
+If a least-squares solution exists, is it _unique_?
 
 </li>
 
@@ -246,20 +246,20 @@ The next proposition provides the answers to question i. and question iii.
 ::::{prf:proposition}
 :label: Prop:LeastSquares:Existence
 
-For each linear system $A\vect{x} = \vect{b}$, where $A$ is an $m \times n$-matrix and $\vect{b}$ a vector in $\R^m$, a least squares solution always exists. Moreover the least squares solution is unique if and only if the columns of $A$ are linearly independent.
+For each linear system $A\vect{x} = \vect{b}$, where $A$ is an $m \times n$-matrix and $\vect{b}$ a vector in $\R^m$, a least-squares solution always exists. Moreover the least-squares solution is unique if and only if the columns of $A$ are linearly independent.
 
 ::::
 
 ::::{admonition} Proof of {prf:ref}`Prop:LeastSquares:Existence`
 :class: tudproof
 
-In {prf:ref}`Rem:LeastSquares:BestLinComb` it was noted that a least squares solution corresponds to the vector in $\operatorname{Col}A$ that is closest to $\vect{b}$.
+In {prf:ref}`Rem:LeastSquares:BestLinComb` it was noted that a least-squares solution corresponds to the vector in $\operatorname{Col}A$ that is closest to $\vect{b}$.
 
 The vector in $\operatorname{Col}A$ that is closest to $\vect{b}$ is precisely the orthogonal projection of $\vect{x}$ onto $\operatorname{Col}A$. (See {prf:ref}`Prop:Orthogonality:BestApprox`.)
 
 This projection, a linear combination of the colums of $A$, always exists.
 
-The coefficients of this linear combination then give a least squares solution.
+The coefficients of this linear combination then give a least-squares solution.
 
 Lastly, these coefficients are unique if and only if the columns of $A$ are linearly independent.
 
@@ -280,18 +280,18 @@ Lastly, these coefficients are unique if and only if the columns of $A$ are line
 ::::{prf:example}
 :label: Ex:LeastSquares:OrthogExample
 
-Find the least squares solution of the linear system
+Find the least-squares solution of the linear system
 
 $$
   \left\{       \begin{array}{ccccccc}
-        x_1 &+&  x_2  &=& 9 \\
-        2x_1 &-& 2x_2 &=& 7 \\
-        3x_1 &+& x_2 &=& 11
+        x_1 &+&  x_2  &=& 9, \\
+        2x_1 &-& 2x_2 &=& 7, \\
+        3x_1 &+& x_2 &=& 11.
        \end{array}
   \right.
 $$
 
-According to {prf:ref}`Prop:LeastSquares:Existence` the least squares solution consists of the coefficients of the orthogonal projection of the vector
+According to {prf:ref}`Prop:LeastSquares:Existence` the least-squares solution consists of the coefficients of the orthogonal projection of the vector
 $
   \vect{b} = \left( \begin{array}{c} 9 \\ 7 \\ 11 \end{array}   \right)
 $
@@ -307,7 +307,7 @@ $$
    \dfrac{56}{14}\vect{a}_1 + \dfrac{6}{6}\vect{a}_2 = 4\vect{a}_1 + 1\vect{a}_2.
 $$
 
-And then the least squares solution is found to be $\hat{\vect{x}} = \left( \begin{array}{c} 4 \\ 1 \end{array}   \right)$.
+And then the least-squares solution is found to be $\hat{\vect{x}} = \left( \begin{array}{c} 4 \\ 1 \end{array}   \right)$.
 
 For this vector we find
 
@@ -343,7 +343,7 @@ A^TA\vect{x} = A^T\vect{b}
 
 is always consistent. The equations in this system are called the **normal equations**.
 
-Any solution $\hat{\vect{x}}$ of the normal equations is a least squares solution.
+Any solution $\hat{\vect{x}}$ of the normal equations is a least-squares solution.
 
 ::::
 
@@ -352,13 +352,13 @@ Before having a look at the proof consider the following example.
 ::::{prf:example}
 :label: Ex:LeastSquares:NormalEqs-1
 
-We compute the least squares solution of the linear system
+We compute the least-squares solution of the linear system
 
 $$
   \left\{       \begin{array}{ccccccc}
-        x_1  &+&  2x_2  & +& x_3& =& 20 \\
-        2x_1 &+&  x_2 &+& x_3&=& 20 \\
-        3x_1 &+&2 x_2 & +& 4x_3&=& 40\\
+        x_1  &+&  2x_2  & +& x_3& =& 20, \\
+        2x_1 &+&  x_2 &+& x_3&=& 20, \\
+        3x_1 &+&2 x_2 & +& 4x_3&=& 40,\\
         2x_1 &+& x_2 & +& 3x_3&=& 30.
        \end{array}
   \right.
@@ -387,7 +387,7 @@ $$
   \right).
 $$
 
-The least squares solution can be read off from the last column in this matrix.
+The least-squares solution can be read off from the last column in this matrix.
 
 $$
   \hat{\vect{x}} =  \left(\begin{array}{c}
@@ -396,7 +396,7 @@ $$
   \right).
 $$
 
-The error vector and the least squares error are found to be
+The error vector and the least-squares error are found to be
 
 $$
  \vect{v} = A\hat{\vect{x}} - \vect{b} = \left( \begin{array}{c}
@@ -473,7 +473,7 @@ $$
    A^TA \vect{c} = A^T\vect{b}.
 $$
 
-So, to find the least squares solution(s) of the linear system $A\vect{x} = \vect{b}$, we have to solve the normal equations
+So, to find the least-squares solution(s) of the linear system $A\vect{x} = \vect{b}$, we have to solve the normal equations
 
 :::{math}
 :name: Eq:LeastSquares:NormalEquations2
@@ -483,7 +483,7 @@ A^TA \vect{x} = A^T\vect{b}.
 
 ::::
 
-If $\vect{c} =  \left(  \begin{array}{c}   c_1 \\ c_2 \\ \vdots \\ c_n   \end{array} \right)$ is the least squares solution of the linear system $A\vect{c} = \vect{b}$,
+If $\vect{c} =  \left(  \begin{array}{c}   c_1 \\ c_2 \\ \vdots \\ c_n   \end{array} \right)$ is the least-squares solution of the linear system $A\vect{c} = \vect{b}$,
 then the orthogonal projection of
 $\vect{b}$ of $\operatorname{Col}A$ is given by
 
@@ -570,7 +570,7 @@ The assumption that $A^TA$ is invertible implies that indeed $\vect{c} = \vect{0
 ::::{prf:remark}
 :label:  Rem:LeastSquares:ProjbColA
 
-As stated, the least squares solution of a system $A\vect{x} = \vect{b}$ consists of the coefficients $c_i$
+As stated, the least-squares solution of a system $A\vect{x} = \vect{b}$ consists of the coefficients $c_i$
 of the orthogonal projection
 
 $$
@@ -605,12 +605,12 @@ shows that in the case of _orthogonal_ vectors there is actually nothing new. Th
 ::::{prf:example}
 :label: Ex:LeastSquares:OrthogExample2
 
-Let us again find, but now using {prf:ref}`Thm:LeastSquares:NormalEquations`, the least squares solution of the linear system
+Let us again find, but now using {prf:ref}`Thm:LeastSquares:NormalEquations`, the least-squares solution of the linear system
 
 $$
   \left\{\begin{array}{ccccccc}
-        x_1 &+&  x_2  &=& 9 \\
-        2x_1 &-& 2x_2 &=& 7 \\
+        x_1 &+&  x_2  &=& 9, \\
+        2x_1 &-& 2x_2 &=& 7, \\
         3x_1 &+& x_2 &=& 11.
        \end{array}
   \right.
@@ -634,7 +634,7 @@ $$
 Note that the orthogonality of the columns leads to a coefficient matrix $A^TA$ that is a diagonal matrix.
 The normal equations can be solved in one stroke.
 
-This (again) yields the least squares
+This (again) yields the least-squares
 solution $\hat{\vect{x}} =\left(\begin{array}{c} 4 \\ 1  \end{array}   \right)$.
 
 ::::
@@ -680,7 +680,7 @@ Which leads to the good old expressions $c_i = \dfrac{\vect{a}_i\ip\vect{b}}{\ve
 As before ({prf:ref}`Thm:OrthoBase:OrthoDecomp`) the orthogonal projection becomes
 
 $$
-   \operatorname{proj}(\vect{b}) =  \dfrac{\vect{b}\ip\vect{a}_1}{\vect{a}_1\ip\vect{a}_1}\vect{a}_1 +
+   \operatorname{proj}_{\operatorname{Col}A}(\vect{b}) =  \dfrac{\vect{b}\ip\vect{a}_1}{\vect{a}_1\ip\vect{a}_1}\vect{a}_1 +
     \dfrac{\vect{b}\ip\vect{a}_2}{\vect{a}_2\ip\vect{a}_2}\vect{a}_2 + \cdots +
      \dfrac{\vect{b}\ip\vect{a}_n}{\vect{a}_n\ip\vect{a}_n}\vect{a}_n.
 $$
@@ -748,7 +748,7 @@ In fact, if the $QR$ decomposition of a matrix $A$ is known, this may also simpl
 :label: Prop:LeastSquares:LSviaQR
 
 Suppose the $m \times n$-matrix $A$ of rank $n$ has the $QR$ decomposition  $A = QR$.
-Then the least squares solution of the linear system  $A\vect{x} = \vect{b}$ is the same as the solution of the equation
+Then the least-squares solution of the linear system  $A\vect{x} = \vect{b}$ is the same as the solution of the equation
 
 
 :::{math}
@@ -794,25 +794,25 @@ Since $R$ is invertible, hence $R^T$ is invertible too, we can pre-multiply both
 
 
 To conclude this subsection we will consider the situation where the matrix $A$ has linearly _dependent_ columns.
-Then the least squares solution is not unique.
+Then the least-squares solution is not unique.
 
 Let us look at an example first.
 
 ::::{prf:example}
 :label: Ex:LeastSquares:NonUnique
 
-We find the least squares solutions of the linear system $A\vect{x} = \vect{b}$, where
+We find the least-squares solutions of the linear system $A\vect{x} = \vect{b}$, where
 
 $$
    A = \left(\begin{array}{cc}
                      1 & -2 \\ 2 & -4
                      \end{array}\right), \quad
-   \vect{b} =    \left(\begin{array}{c}  2\\-4 \end{array}\right)
+   \vect{b} =    \left(\begin{array}{c}  2\\-4 \end{array}\right).
 $$
 
 Note that the columns of $A$ are indeed linearly dependent.
 
-For the least squares solution we have to solve the system with the augmented matrix
+For the least-squares solution we have to solve the system with the augmented matrix
 
 $$
    \left(\,A^TA \,\middle| \,A^T \vect{b}\,\right) =
@@ -833,14 +833,14 @@ $$
   \right).
 $$
 
-From this we can read off all least squares solutions. They are given by
+From this we can read off all least-squares solutions. They are given by
 
 $$
    \hat{\vect{x}} = \hat{\vect{x}}_0 + \vect{x}_H = \left(\begin{array}{c}  2 \\ 0 \end{array}\right) +
    c\left(\begin{array}{c}  2 \\ 1 \end{array}\right), \,\, c\in \R.
 $$
 
-%We can ask the question: what is the least squares solution _of minimal length_?
+%We can ask the question: what is the least-squares solution _of minimal length_?
 
 For this low-dimensional problem we can draw a picture.
 
@@ -848,10 +848,10 @@ For this low-dimensional problem we can draw a picture.
 :name: Fig:LeastSquares:SmallestLS
 :class: dark-light
 
-Multiple least squares solutions.
+Multiple least-squares solutions.
 :::
 
-The least squares solutions are depicted as the line $\ell:  \vect{x} = \hat{\vect{x}}_0 + c\left(\begin{array}{c}  2 \\  1 \end{array}\right)$.
+The least-squares solutions are depicted as the line $\ell:  \vect{x} = \hat{\vect{x}}_0 + c\left(\begin{array}{c}  2 \\  1 \end{array}\right)$.
 
 ::::
 
@@ -876,18 +876,18 @@ Let us give one more example to illustrate matters.
 ::::{prf:example}
 :label: Ex:LeastSquares:NonUnique2
 
-We find the least squares solutions of the linear system $A\vect{x} = \vect{b}$, where
+We find the least-squares solutions of the linear system $A\vect{x} = \vect{b}$, where
 
 $$
    A = \left(\begin{array}{ccc}
                      1 & 1 & 0 \\ 1 & 1 & 0 \\ 1 & 0 & 1 \\ 1 & 0 & 1
                      \end{array}\right), \quad
-   \vect{b} =    \left(\begin{array}{c}  1 \\3\\2\\4 \end{array}\right)
+   \vect{b} =    \left(\begin{array}{c}  1 \\3\\2\\4 \end{array}\right).
 $$
 
 The first column of $A$ is the sum of the other two columns, so the columns of $A$ are linearly dependent.
 
-For the least squares solution we have to solve the system with augmented matrix
+For the least-squares solution we have to solve the system with augmented matrix
 
 $$
    \left(\,A^TA \,\middle| \,A^T \vect{b}\,\right) =
@@ -910,7 +910,7 @@ $$
   \right).
 $$
 
-From this we can read off all least squares solutions. They are given by
+From this we can read off all least-squares solutions. They are given by
 
 $$
    \hat{\vect{x}} = \hat{\vect{x}}_0 + \vect{x}_H = \left(\begin{array}{c}  3 \\ -1 \\ 0 \end{array}\right) + c\left(\begin{array}{c}  1 \\ -1 \\ -1 \end{array}\right), \,\, c \in \R.
@@ -918,13 +918,13 @@ $$
 
 As in {prf:ref}`Ex:LeastSquares:NonUnique` the 'homogeneous' part $\vect{x}_H = c\left(\begin{array}{c}  1 \\ -1 \\ -1 \end{array}\right)$ is the null space of $A^TA$, which is equal to the null space of $A$.
 
-For instance, by taking $c=0$ and $c = -1$ we find the two least squares solutions
+For instance, by taking $c=0$ and $c = -1$ we find the two least-squares solutions
 
 $$
    \hat{\vect{x}}_1 = \left(\begin{array}{c}  3 \\ -1 \\ 0 \end{array}\right), \quad \hat{\vect{x}}_2 = \left(\begin{array}{c}  2 \\ 0 \\ 1 \end{array}\right).
 $$
 
-For both we find the least squares error
+For both we find the least-squares error
 
 $$
   \norm{A\hat{\vect{x}}_i - \vect{b}} =
@@ -940,7 +940,7 @@ $$
 :url: https://embed.grasple.com/exercises/9666528f-1e81-4273-b571-8dae64a7972c?id=91139
 :label: grasple_exercise_7_4_1
 :dropdown:
-:description: About the interpretation of a least squares solution.
+:description: About the interpretation of a least-squares solution.
 
 ::::
 
@@ -949,7 +949,7 @@ $$
 :url: https://embed.grasple.com/exercises/c96c0359-9599-4fd4-b5b2-bd7f9d2da463?id=91141
 :label: grasple_exercise_7_4_2
 :dropdown:
-:description: About the uniqueness of a least squares solution.
+:description: About the uniqueness of a least-squares solution.
 
 ::::
 
@@ -958,7 +958,7 @@ $$
 :url: https://embed.grasple.com/exercises/6068f5ac-3eb3-40a1-8686-ddbf05f172b2?id=91165
 :label: grasple_exercise_7_4_3
 :dropdown:
-:description: About least squares solutions and normal equations.
+:description: About least-squares solutions and normal equations.
 
 ::::
 
@@ -1023,7 +1023,7 @@ $$
 :url: https://embed.grasple.com/exercises/c6a52270-1c43-46a2-9dda-f1ab8b366066?id=91146
 :label: grasple_exercise_7_4_10
 :dropdown:
-:description: On the connection between orthogonal projections and least squares problems.
+:description: On the connection between orthogonal projections and least-squares problems.
 
 ::::
 
@@ -1102,7 +1102,7 @@ $$
 :url: https://embed.grasple.com/exercises/396fd7a0-10cf-4b49-bb9e-fbc4acc2a06a?id=91148
 :label: grasple_exercise_7_4_18
 :dropdown:
-:description: What is the quickest way to find the least squares solution?
+:description: What is the quickest way to find the least-squares solution?
 
 ::::
 
@@ -1113,7 +1113,7 @@ $$
 In {numref}`Subsection %s <SubSec:LeastSquares:Introduction>` we looked at ways to fit a line
 $y = a + bx$ to a set of points $(x_i, y_i), i = 1, \ldots, n$ in the plane. In statistics this plays an important role in so-called _regression models_.
 
-One way to define the best fitting line $y = \hat{a}+\hat{b}x$ is to let $(\hat{a},\hat{b})$ be the least squares solution to the set of $n$ linear equations
+One way to define the best fitting line $y = \hat{a}+\hat{b}x$ is to let $(\hat{a},\hat{b})$ be the least-squares solution to the set of $n$ linear equations
 
 $$
   y_i = a+bx_i, \quad  i = 1, \ldots , n.
@@ -1121,12 +1121,12 @@ $$
 
 Note that in these equations the parameters $a$ and $b$ are the unknowns.
 
-This line is sometimes refered to as the _least squares line_.
+This line is sometimes refered to as the _least-squares line_.
 
 ::::{prf:example}
 :label: Ex:LeastSquares:LineFit1
 
-Suppose we want to find the least squares line for the set of four points
+Suppose we want to find the least-squares line for the set of four points
 
 $$
   (1,2), (2,2),  (4,3),  (5,3).
@@ -1160,7 +1160,7 @@ $$
   \sum_{i=1}^4 (y_i - (0.25x + 1.75))^2 = 0^2 + 0.25^2 + 0.25^2 + 0^2 = 0.125.
 $$
 
-To find the least squares line we consider the four equations in the form
+To find the least-squares line we consider the four equations in the form
 
 $$
    \left(\begin{array}{cc}
@@ -1191,7 +1191,7 @@ $$
   \right),
 $$
 
-give a unique least squares solution, and it is $\hat{a} = 1.6$, $\hat{b} = 0.3$.
+give a unique least-squares solution, and it is $\hat{a} = 1.6$, $\hat{b} = 0.3$.
 
 {numref}`Figure %s <Fig:LeastSquares:LSline>` shows both lines.
 
@@ -1199,7 +1199,7 @@ give a unique least squares solution, and it is $\hat{a} = 1.6$, $\hat{b} = 0.3$
 :name: Fig:LeastSquares:LSline
 :class: dark-light
 
-Least squares line.
+least-squares line.
 
 :::
 
@@ -1212,13 +1212,13 @@ $$
 This is indeed slightly better than with the line found 'at first sight', where the sum was equal to $0.125$.
 ::::
 
-We can even find a ready-made formula for the least squares line through $n$ given points
+We can even find a ready-made formula for the least-squares line through $n$ given points
 $(x_1,y_1), (x_2, y_2), \ldots, (x_n, y_n)$.
 
 ::::{prf:example}
 :label: Ex:LeastSquares:LineFit2
 
-The coefficients of the least squares line $y = \hat{a}  + \hat{b}x$ for the set of points
+The coefficients of the least-squares line $y = \hat{a}  + \hat{b}x$ for the set of points
 $(x_1,y_1), (x_2, y_2), \ldots, (x_n, y_n)$ are given by
 
 $$
@@ -1346,7 +1346,7 @@ And we may even go beyond that. Then we get a more general so-called _linear mod
 Suppose $k$ functions $f_1(x), \ldots, f_k(x)$
 and $n$ points $(x_1,y_1), \ldots, (x_n,y_n)$ in the plane are given.
 
-The **linear model** refers to the 'best' linear combination, in the least squares sense, of the form
+The **linear model** refers to the 'best' linear combination, in the least-squares sense, of the form
 
 $$
   c_1f_1(x) + c_2f_2(x) + \cdots + c_kf_k(x).
@@ -1375,7 +1375,7 @@ The epithet _linear_ refers to the fact that the parameters $c_1, \ldots, c_k$ a
 :label:  Rem:LeastSquares:LinearModel
 
 The parameters $c_1,c_2,\ldots,c_k$ that minimise the sum
-in Equation {eq}`Eq:LeastSquares:SumResidues` coincide with the least squares solution of the linear system
+in Equation {eq}`Eq:LeastSquares:SumResidues` coincide with the least-squares solution of the linear system
 
 :::{math}
 :label: Eq:LeastSquares:DesignMatrix
@@ -1443,7 +1443,7 @@ $$
 
 that best fits the data in Equation {eq}`Eq:LeastSquares:Data-n-dim`, we can take $f_0(x_1,\ldots,x_k) = 1$ and $f_i(x_1,\ldots,x_k) = x_i$, for $i = 1, \ldots, k$.
 
-In a least squares model we then look for the parameters $\beta_1, \ldots, \beta_{\ell}$ that minimise
+In a least-squares model we then look for the parameters $\beta_1, \ldots, \beta_{\ell}$ that minimise
 
 :::{math}
 :label: Eq:LeastSquares:GeneralModel
@@ -1457,7 +1457,7 @@ In a least squares model we then look for the parameters $\beta_1, \ldots, \beta
 
 <li>
 
-In a _weighted least squares model_ the terms in the
+In a _weighted least-squares model_ the terms in the
 sum in Equation {eq}`Eq:LeastSquares:GeneralModel`
 get different weights $w_i$. When building a statistical model this may be desirable when some data give more 'information'.
 
@@ -1526,7 +1526,7 @@ $$
  z = \ln(y) = \ln(a) + r \ln(x).
 $$
 
-We can find the least squares linear fit to the points $(\ln(x_i), z_i)$.
+We can find the least-squares linear fit to the points $(\ln(x_i), z_i)$.
 
 $$
     z = \alpha + \beta x
@@ -1538,7 +1538,7 @@ $$
   (\ln(x_1), \ln(y_1)), \quad  \ldots\,, \quad  (\ln(x_n), \ln(y_n)).
 $$
 
-If we have found the least squares parameters $\hat{\alpha}$ and $\hat{\beta}$ for the transformed problem, at the end we have to 'transform back' to find the 'best power fit'.
+If we have found the least-squares parameters $\hat{\alpha}$ and $\hat{\beta}$ for the transformed problem, at the end we have to 'transform back' to find the 'best power fit'.
 
 $$
   \ln(y) = \hat{\alpha} + \hat{\beta}\ln(x)
@@ -1553,7 +1553,7 @@ $(\ln(x_i), \ln(y_i))$, and the last two plots give the points with the two fits
 :name: Fig:LeastSquares:Powerfit
 :class: dark-light
 
-Least squares fitting via logarithmic scale.
+least-squares fitting via logarithmic scale.
 :::
 
 ::::
@@ -1565,7 +1565,7 @@ Least squares fitting via logarithmic scale.
 :url: https://embed.grasple.com/exercises/6a2b9aeb-3c59-4b8f-8d7c-e51f651998fd?id=91883
 :label: grasple_exercise_7_4_19
 :dropdown:
-:description: On the precise definition of the least squares line.
+:description: On the precise definition of the least-squares line.
 
 ::::
 

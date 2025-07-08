@@ -1,6 +1,13 @@
-(Sec:PowerMethod)=
+::::{attention}
 
+In this section we will assume the reader is familiar with complex numbers and their properties. If preferred, a review of complex numbers can be found in {numref}`Chapter %s <Ch:ComplexNumbers>`.
+
+::::
+
+(Sec:PowerMethod)=
 # The power method
+
+## Introduction
 
 The eigenvalues of an $n\times n$-matrix $A$ to a large extent characterise the matrix. In theory they can be found as the zeros of the characteristic polynomial. Already for $n = 3$ it is not an easy matter to find the exact zeros, and for $n\geq 5$ there is no general formula for the zeros.  
 One way to resolve this is to use a numerical method to solve an equation of degree $n$. Alternatively, there are algorithms more in the vein of linear algebra to find approximations of one or more eigenvalues. The simplest of these is the *power method*. This method often provides the eigenvalue of the largest absolute value (or, modulus), and this comes with an eigenvector as well. Note that the largest eigenvalue is in fact the most important eigenvalue concerning the stability or instability of the linear dynamical system connected to $A$.

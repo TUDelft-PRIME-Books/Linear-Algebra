@@ -2,6 +2,8 @@
 
 # Cross product
 
+## Introduction
+
 In this section we will look at a specific operation on vectors in $\mathbb{R}^3$. This operation is called the _cross product_ and it allows us to construct a vector that is orthogonal to two given vectors. We will use this operation in
 {numref}`Subsection %s <SubSec:LinesAndPlanes:Plane>`
 to construct a vector that is orthogonal to a given plane in $\mathbb{R}^3$. This will allow us to describe such a plane with a very simple equation.

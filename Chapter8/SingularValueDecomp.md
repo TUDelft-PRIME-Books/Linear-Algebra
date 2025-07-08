@@ -2,6 +2,8 @@
 
 # Singular value decomposition
 
+## Introduction
+
 We have seen already several ways to factorise matrices. In {numref}`Sec:LUdecomp`, we studied the $LU$ and the $PLU$ factorisations, and in  {numref}`Subsection %s <Sec:Gram-Schmidt:QRdecomp>` we laid the QR Decomposition on the table. In {numref}`Sec:SymmetricMat` we showed that every symmetric (square) matrix $A$ can be written as  $A = QDQ^{-1} = QDQ^T$. In this section it is in a sense this last decomposition we will generalise to non-symmetric matrices, and even to non-square matrices.
 We will introduce and study the so-called **singular value decomposition** (SVD) of a matrix.
 In the first subsection ({numref}`Subsection %s <Subsec:SVD:Definition>`) we will give the definition of the SVD, and illustrate it with a few examples.  In the second subsection ({numref}`Subsection %s <Subsec:SVD:Existence>`) an algorithm to compute the SVD is presented and illustrated. And it will be shown that this algorithm always yields a proper SVD.
@@ -953,7 +955,7 @@ There will be two applications described in this section.
 
 1.  Data compression.
 
-2.  Linear Least Squares.
+2.  Linear least-squares.
 
 
 We start with the first.

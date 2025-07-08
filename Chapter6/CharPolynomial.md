@@ -2,6 +2,8 @@
 
 # The characteristic polynomial
 
+## Introduction
+
 Until now we have seen how we can check whether a real number is an eigenvalue, but we have not come up with a method to actually find the eigenvalues (better than just trying all real numbers one by one ...).
 
 In this section we will show that **the eigenvalues are exactly the zeros of a polynomial function** intricately connected with the matrix $A$. So intricately that it is called the characteristic polynomial of $A$.

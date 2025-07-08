@@ -1,5 +1,7 @@
 # Injectivity, surjectivity, and bijectivity
 
+## Introduction
+
 Since matrices correspond to linear transformations, we can translate questions about matrices to questions about linear transformations. For example: under what conditions on $A$ is the system $A\vect{x}=\vect{b}$ consistent for all $\vect{b}$? This question, which deals with a matrix $A$, is equivalent to the following question about linear transformations: when is every element in the codomain of a linear tranformation the image of some element in the domain?
 
 Or, similarly: under what conditions on $A$ is every consistent system $A\vect{x}=\vect{b}$ uniquely solvable? In the language of linear transformations, this becomes: is every element in the range of a linear transformation the image of a unique element in the domain?
