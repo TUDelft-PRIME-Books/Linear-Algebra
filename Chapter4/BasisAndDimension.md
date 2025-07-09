@@ -1691,6 +1691,26 @@ The statements in {prf:ref}`Thm:BasisDim:RankThm` are both reformulations of ear
 
 ::::::
 
+:::{admonition} Solution to {numref}`Exc:BasisDim:FindRelevantProps`
+:class: solution, dropdown
+
+<ol type="i">
+
+<li>
+
+{prf:ref}`Thm:BasisDim:DimensionTheorem`.
+
+</li>
+
+<li>
+
+{prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations`.
+
+</li>
+
+</ol>
+:::
+
 ::::::{exercise}
 :label: Exc:BasisDim:RankABLeqRankA
 
@@ -1807,9 +1827,44 @@ $$
 $$
 
 Does the conclusion also hold when $A$ is an $m\times n$-matrix and
-$B$ is an $n\times m$-matrix?
+$B$ is an $n\times p$-matrix?
 
 ::::::
+
+:::{admonition} Solution to {numref}`Exc:BasisDim:AB=0ImpliesSumRanksLeqN`
+:class: solution, dropdown
+
+We assume that $A$ is an $\class{green}{n}\times \class{blue}{n}$-matrix and $B$ is an $\class{blue}{n}\times\class{red}{n}$-matrix.
+
+Also assume $B=\begin{pmatrix}\mathbf{b}_1&\mathbf{b}_2&\cdots&\mathbf{b}_{\class{red}{n}}\end{pmatrix}$. From $AB=O$ we then can conclude that $A\mathbf{b}_j=\mathbf{0}$ for $j=1,2,\ldots,\class{red}{n}$. This means that $\mathbf{b}_j\in\operatorname{Nul}A$ for $j=1,2,\ldots,\class{red}{n}$. As $\operatorname{Nul}A$ is a subspace, we find $\operatorname{Col}B\subseteq\operatorname{Nul}A$.
+
+Looking at the dimensions of both subspaces, we find
+
+$$
+\operatorname{rank}B\leq\operatorname{dim}\operatorname{Nul}A,
+$$
+
+which using the {prf:ref}`Rank Theorem<Thm:BasisDim:RankThm>` becomes
+
+$$
+\operatorname{rank}B\leq \class{blue}{n}-\operatorname{rank}A.
+$$
+
+Rearranging terms results in
+
+$$
+\operatorname{rank}A+\operatorname{rank}B\leq \class{blue}{n}.
+$$
+
+If we instead assume that $A$ is an $\class{green}{m}\times \class{blue}{n}$-matrix and $B$ is an $\class{blue}{n}\times\class{red}{p}$-matrix, we can replace the colored letters above by the new colored letters, without changing anything in the validity of the proof. I.e., the statement
+
+$$
+\text{``If }AB = O,\text{ then }\operatorname{rank}A+\operatorname{rank}B\leq n\text{.''}
+$$
+
+is true for all matrices $A$ and $B$ when $A$ is an $m\times n$-matrix and $B$ is an $n\times p$-matrix.
+
+:::
 
 ## Grasple exercises
 
@@ -1890,7 +1945,7 @@ $B$ is an $n\times m$-matrix?
 :url: https://embed.grasple.com/exercises/04d804ff-16ea-44ee-ac76-452a73a88859?id=70653
 :label: grasple_exercise_4_2_9
 :dropdown:
-:description: To find a basis and the dimension of $\operatorname{Span}\{\vect{v}_1, ... , \vect{v}_4\}$ (in $\R^4$).
+:description: To find a basis and the dimension of $\operatorname{Span}\{\vect{v}_1, \ldots , \vect{v}_4\}$ (in $\R^4$).
 
 ::::::
 

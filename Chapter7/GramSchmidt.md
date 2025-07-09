@@ -199,7 +199,7 @@ so are the vectors $\vect{b}_1, \ldots, \vect{b}_j, \vect{b}_{j+1}$.
 :url: https://embed.grasple.com/exercises/bb336bca-f300-48ba-8744-e38ad3a7bcd0?id=87814
 :label: grasple_exercise_7_3_A
 :dropdown:
-:description: Gram-Schmidt D.I.Y..
+:description: Gram-Schmidt D.I.Y.
 
 ::::
 
@@ -423,7 +423,7 @@ There is an quicker way to find the matrix $R$ than by inverting the matrix $CD$
 ::::{prf:proposition}
 :label: Prop:GramSchmidt:QR-quick
 
-Let $Q = (\vect{q}_1,\ldots,\vect{q}_m)$ be the matrix constructed by exactly applying the Gram-Schmidt process followed by rescaling. Define $R = Q^TA$.
+Let $Q = \begin{pmatrix}\vect{q}_1&\cdots&\vect{q}_m\end{pmatrix}$ be the matrix constructed by exactly applying the Gram-Schmidt process followed by rescaling. Define $R = Q^TA$.
 
 Then $R$ is an upper-triangular matrix with a positive entries on its diagonal, and
 
@@ -513,30 +513,6 @@ $$
 and see that this is indeed an upper-triangular matrix (with positive diagonal entries).
 
 You may check for yourself that $QR = A$.
-
-::::
-
-::::{exercise}
-:label: Exc:GramSchmidt:AlternativeProofQR
-
-Fill in the details of the following more direct proof of the quick way to find $QR$ decomposition.
-
-Let $Q$ be the matrix coming from the Gram-Schmidt process, followed by rescaling.
-
-Since by construction
-
-$$
-  \vect{q}_i \perp \operatorname{Span}\{\vect{q}_1,\ldots,\vect{q}_{i-1}\} = \operatorname{Span}\{\vect{a}_1,\ldots,\vect{a}_{i-1}\}
-$$
-
-it follows that the entries below the diagonal of the product $Q^TA$ are all equal to zero.
-So: $Q^TA = R$ is an upper-triangular matrix.
-
-Recalling the construction of $\vect{b}_i$ and $\vect{q}_i$ from $\vect{a}_1,\ldots,\vect{a}_i$, it can be shown that the diagonal entries $r_{ii}$ are equal to $\vect{q}_i^T\vect{a}_i = \norm{\vect{a}_i} > 0$.
-
-Furthermore, since the columns of $Q$ form an orthonormal basis of $\operatorname{Col}{A}$, the matrix
-$QQ^T$ represents the orthogonal projection onto $\operatorname{Col}A$. Use this to show that
-$QQ^TA = A$.
 
 ::::
 

@@ -174,8 +174,6 @@ Also give a set with only the properties i and iii.
 A game to test your knowledge of subspaces. On the left, $\vect{u} + \vect{v}$ is computed; try to find a result where the sum is not in the subspace. On the right, a scalar multiple $c \cdot \vect{u}$ is computed; try to find a result that is not in the subspace. Confetti will appear if a solution is found that falls outside the set. Different sets can be selected with the dropdown menu.
 ```
 
-<!-- You may get some inspriration from the applet below. -->
-
 ::::::
 
 ::::::{admonition} Solution to {numref}`Exc:Subspaces:NonSubspacesR2`
@@ -339,6 +337,19 @@ Likewise you can check property (iii). This is {numref}`Exc:Subspaces:CheckPropi
 Give a proof of property (iii).
 
 ::::::
+
+:::{admonition} Solution to {numref}`Exc:Subspaces:CheckPropiii`
+:class: solution, dropdown
+
+If $\mathbf{u}=c_1\vect{v}_1+ \cdots + c_r\vect{v}_r$ and $c\in\mathbb{R}$, then
+
+$$
+c\mathbf{u}=c\left(c_1\vect{v}_1+ \cdots + c_r\vect{v}_r\right) = (cc_1)\vect{v}_1+ \cdots + (cc_r)\vect{v}_r,
+$$
+
+which is an element of $\Span{\vect{v}_1,\vect{v}_2, \ldots , \vect{v}_r}$.
+
+:::
 
 ::::::{prf:remark}
 :label:  Rmrk:Subspaces:SpanIsSubspace

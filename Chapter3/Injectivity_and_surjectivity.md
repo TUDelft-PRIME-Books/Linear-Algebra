@@ -138,6 +138,9 @@ has, when it is consistent, a unique solution as there are no free variables.
 ::::::
 
 ::::{exercise}
+:label: Exc:InjSurj:ThreeTrans
+
+Find out which of the three transformations in {numref}`Fig:InjSurj:InjExExample` are injective by seeing whether you can find vectors $\vect{v}_{1}\neq \vect{v}_{2}$ that have the same image under $T$ by dragging the vectors on the left.
 
 ```{applet}
 :url: injectivity_and_surjectivity/injsurj-injex-example
@@ -145,10 +148,21 @@ has, when it is consistent, a unique solution as there are no free variables.
 :name: Fig:InjSurj:InjExExample
 :class: dark-light
 
- You can select any of three transformations using the dropdown menu on the bottom. Find out which of these are injective by seeing whether you can find vectors $\vect{v}_{1}\neq \vect{v}_{2}$ that have the same image under $T$ by dragging the vectors on the left.
+ You can select any of three transformations using the dropdown menu on the bottom.
 ```
-
 ::::
+
+
+:::::{admonition} Solution to {numref}`Exc:InjSurj:ThreeTrans`
+:class: solution, dropdown
+
+_Transformation 1_: Injective.
+
+_Transformation 2_: Not injective.
+
+_Transformation 3_: Injective.
+
+:::::
 
 If we perform two actions which can both be undone, then we should be able to undo the combination of those two actions. That this intuitive rule really does hold is essentially the content of {prf:ref}`Prop:InjSurj:InjafterInjisInj`.
 
@@ -363,6 +377,9 @@ The transformation $T$ from {prf:ref}`Ex:InjSurj:SurjEx` [ii.](#Item:InjSurj:Sur
 
 
 ::::{exercise}
+:label: Exc:InjSurj:InjExExample2
+
+Find out for which of the three transformations in {numref}`Fig:InjSurj:InjExExample` the vector $\vect{u}$ is in the range of $T$ by dragging the vector $\mathbf{v}$ on the left.
 
 ```{applet}
 :url: injectivity_and_surjectivity/injsurj-injex-example2
@@ -370,10 +387,21 @@ The transformation $T$ from {prf:ref}`Ex:InjSurj:SurjEx` [ii.](#Item:InjSurj:Sur
 :name: Fig:InjSurj:InjExExample2
 :class: dark-light
 
- You can select any of three transformations using the dropdown menu on the bottom. Find out for which of these $\vect{u}$ is in the range of $T$ by dragging the vector on the left.
+ You can select any of three transformations using the dropdown menu on the bottom.
 ```
 
 ::::
+
+:::::{admonition} Solution to {numref}`Exc:InjSurj:InjExExample2`
+:class: solution, dropdown
+
+_Transformation 1_: $\mathbf{u}$ is in the range of $T$.
+
+_Transformation 2_: $\mathbf{u}$ is not in the range of $T$.
+
+_Transformation 3_: $\mathbf{u}$ is in the range of $T$.
+
+:::::
 
 ::::::{prf:proposition}
 :label: Prop:InjSurj:SurjafterSurjisSurj

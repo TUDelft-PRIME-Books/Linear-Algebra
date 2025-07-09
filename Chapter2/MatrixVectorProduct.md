@@ -399,7 +399,7 @@ Using the above rules we can give shorter proofs of statements concerning linear
 ::::{prf:example}
 :label: Ex:MatVecProduct:SolplusHomRevisited
 
-The contents of that proposition: suppose $(c_{1},...,c_{n})$ is a solution of a linear system. Then $(c_{1}',...,c_{n}')$ is also a solution of the linear system if and only if there exists a solution $(d_{1},...,d_{n})$ of the associated homogeneous system such that $c'_{i}=c_{i}+d_{i}$ for all $i$.
+The contents of that proposition: suppose $(c_{1},\ldots,c_{n})$ is a solution of a linear system. Then $(c_{1}',\ldots,c_{n}')$ is also a solution of the linear system if and only if there exists a solution $(d_{1},\ldots,d_{n})$ of the associated homogeneous system such that $c'_{i}=c_{i}+d_{i}$ for all $i$.
 
 Using the matrix-vector product we can derive this property as follows: we can consider the solutions in vector form,
 

@@ -120,20 +120,46 @@ $$
 
 ::::::
 
+::::{prf:remark}
+:label: Rem:Diagonalisable:algebraic
+
 From {prf:ref}`Prop:Diagonalisable:SimilarCharpoly` it follows that similar matrices have the same eigenvalues with the same algebraic multiplicities.
+::::
+
+::::{prf:remark}
+:label: Rem:Diagonalisable:geometric
 
 From {prf:ref}`Prop:Diagonalisable:SimilarEigenvalues` it follows that they also have the same geometric multiplicities. That is,
 if $\vect{v}_1, \ldots, \vect{v}_m$ are linearly independent eigenvectors of $B$ for the eigenvalue $\lambda_k$, and $A = PBP^{-1}$,
-then the vectors $P\vect{v}_1, \ldots, P\vect{v}_m$ are linearly independent eigenvectors of $A$.
+then the vectors $P\vect{v}_1, \ldots, P\vect{v}_m$ are linearly independent eigenvectors of $A$, and vice versa.
 
-And vice versa.
+::::
 
 ::::::{exercise}
 :label: Exc:Diagonalisable:GeomMultForSimilarMatrices
 
-Fill in the details of the last remark.
+Prove the last sentence in {prf:ref}`Rem:Diagonalisable:geometric`.
 
 ::::::
+
+:::{admonition} Solution to {numref}`Exc:Diagonalisable:GeomMultForSimilarMatrices`
+:class: solution, dropdown
+
+Define $V=\begin{pmatrix}\vect{v}_1&\cdots&\vect{v}_m\end{pmatrix}$ and consider the next equivalence relations:
+
+$$
+\begin{array}{rclcrcl}
+PV\vect{x} &=& \vect{0} &\iff& V\vect{x} &=& P^{-1}\vect{0} \\
+&& &\iff& V\vect{x} &=& \vect{0} \\
+&& &\iff& \vect{x} &=& \vect{0}.
+\end{array}
+$$
+
+The last steps follows from $V$ having linearly independent columns (by construction). This shows even more: $PV$ has linearly indepedent columns if and only if $V$ has linearly indepedent columns.
+
+This directly concludes the proof, as the columns of $PV$ are the vectors $P\vect{v}_1, \ldots, P\vect{v}_m$.
+
+:::
 
 The above considerations are summarised in the following proposition.
 
@@ -741,39 +767,6 @@ We saw that there is a weak connection between eigenvalues and (non-)invertibili
 
 
 In {ref}`grasple_exercise_6_3_16` you are invited to investigate the connection (or non-connection) between diagonalisability and invertibility.
-
-%::::::{exercise}
-%:label: Exc:Diagonalisable:Invertibility
-%
-%Give examples of
-%
-%<ol type = "i">
-%
-%<li>
-%
-%A matrix that is diagonalisable but not invertible.
-%
-%</li>
-%
-%<li>
-%
-%A matrix that is invertible but not diagonalisable.
-%
-%</li>
-%
-%<li>
-%
-%A matrix that is not invertible and not diagonalisable.
-%
-%</li>
-%
-%<li>
-%
-%A matrix that is both invertible and diagonalisable.
-%
-%</li>
-%</ol>
-
 
 We stated that diagonalisable matrices have nice properties. Here is one: for diagonalisable matrices finding (high) powers can be done very efficiently.
 

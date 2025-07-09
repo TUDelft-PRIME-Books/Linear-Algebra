@@ -96,11 +96,11 @@ $$
 What we can do if the linear system is inconsistent, thus if
 
 $$
-  \vect{b} \notin \Span{\vect{a}_1, ... , \vect{a}_n},
+  \vect{b} \notin \Span{\vect{a}_1, \ldots , \vect{a}_n},
 $$
 
 is try to find the _best approximation_ of the vector $\vect{b}$ with a vector in
-$\Span{\vect{a}_1, ... , \vect{a}_n}$. This is the idea behind the following definition.
+$\Span{\vect{a}_1, \ldots , \vect{a}_n}$. This is the idea behind the following definition.
 
 ::::{prf:definition}
 :label: Def:LeastSquares:Solution
@@ -157,7 +157,7 @@ $$
 ::::{prf:remark}
 :label: Rem:LeastSquares:BestLinComb
 
-By definition $A\hat{\vect{x}} = \hat{x}_1\vect{a}_1  + \cdots + \hat{x}_n\vect{a}_n$ is the best approximation of $\vect{b}$ with vectors in $\Span{\vect{a}_1, ... , \vect{a}_n}$.
+By definition $A\hat{\vect{x}} = \hat{x}_1\vect{a}_1  + \cdots + \hat{x}_n\vect{a}_n$ is the best approximation of $\vect{b}$ with vectors in $\Span{\vect{a}_1, \ldots , \vect{a}_n}$.
 
 By minimising $\norm{A\vect{x} - \vect{b}}$ we are in fact minimising the sum of the squares of the errors. This explains the name _least-squares error_.
 
@@ -270,7 +270,7 @@ Lastly, these coefficients are unique if and only if the columns of $A$ are line
 %:::{admonition} {prf:ref}`Thm:OrthoBase:OrthoDecomp`.
 %:class: theorem
 %
-%Let $V$ be a subspace of $\R^{n}$ and let $\vect{v}_{1},...,\vect{v}_{k}$ be an orthogonal basis for %$V$. For any $\vect{w}$ in $\R^{n}$, the _orthogonal projection_ of $\vect{w}$ on $V$ is given by
+%Let $V$ be a subspace of $\R^{n}$ and let $\vect{v}_{1},\ldots,\vect{v}_{k}$ be an orthogonal basis for %$V$. For any $\vect{w}$ in $\R^{n}$, the _orthogonal projection_ of $\vect{w}$ on $V$ is given by
 %
 %$$\proj_{V}(\vect{w})=\frac{\vect{w}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots
 % +\frac{\vect{w}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}_{k}.$$

@@ -34,7 +34,7 @@ An orthogonal set $S$ which does not contain $\vect{0}$ is linearly independent.
 :::{admonition} Proof of {prf:ref}`Prop:OrthoBase:OrthoSetLinInd`
 :class: tudproof
 
-Assume $S$ is linearly dependent. Then there are vectors $\vect{v}_{1},...,\vect{v}_{n}$ in $S$ and scalars $c_{1},...,c_{n}$, not all zero, such that $\vect{0}=c_{1}\vect{v}_{1}+\cdots +c_{n}\vect{v}_{n}.$ But then, for any $i$:
+Assume $S$ is linearly dependent. Then there are vectors $\vect{v}_{1},\ldots,\vect{v}_{n}$ in $S$ and scalars $c_{1},\ldots,c_{n}$, not all zero, such that $\vect{0}=c_{1}\vect{v}_{1}+\cdots +c_{n}\vect{v}_{n}.$ But then, for any $i$:
 
 $$0=\vect{0}\ip \vect{v}_{i}=(c_{1}\vect{v}_{1}+\cdots +c_{n}\vect{v}_{n})\ip\vect{v}_{i}=c_{i}(\vect{v}_{i}\ip\vect{v}_{i}).$$
 
@@ -54,7 +54,7 @@ An orthogonal basis is called **orthonormal** if all elements in the basis have 
 :::{prf:remark}
 :label:  Rem:OrthoBase:OrthoBaseToOrthoNormBase
 
-If $\vect{v}_{1},...,\vect{v}_{n}$ is an orthogonal basis for a subspace $V$, then an orthonormal basis for $V$ can be obtained by dividing each $\vect{v}_{i}$ by its norm.
+If $\vect{v}_{1},\ldots,\vect{v}_{n}$ is an orthogonal basis for a subspace $V$, then an orthonormal basis for $V$ can be obtained by dividing each $\vect{v}_{i}$ by its norm.
 
 :::
 
@@ -76,11 +76,11 @@ The essence of {prf:ref}`Thm:OrthoBase:WeightsOrthoBase` is that it is easy to f
 :::{prf:theorem}
 :label: Thm:OrthoBase:WeightsOrthoBase
 
-Let $V$ be a subspace of $\R^{n}$ and assume $\vect{v}_{1},...,\vect{v}_{k}$ is an orthogonal basis for $V$. Then any vector $\vect{v}$ in $V$ can be written as:
+Let $V$ be a subspace of $\R^{n}$ and assume $\vect{v}_{1},\ldots,\vect{v}_{k}$ is an orthogonal basis for $V$. Then any vector $\vect{v}$ in $V$ can be written as:
 
 $$\vect{v}=\frac{\vect{v}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{v}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}_{k}.$$
 
-In particular, if $\vect{v}_{1},..,\vect{v}_{k}$ is an orthonormal basis, then any $\vect{v}$ in $V$ can be written as:
+In particular, if $\vect{v}_{1},\ldots,\vect{v}_{k}$ is an orthonormal basis, then any $\vect{v}$ in $V$ can be written as:
 
 $$\vect{v}=(\vect{v}\ip\vect{v}_{1})\vect{v}_{1}+\cdots +(\vect{v}\ip\vect{v}_{k})\vect{v}_{k}.$$
 
@@ -89,13 +89,13 @@ $$\vect{v}=(\vect{v}\ip\vect{v}_{1})\vect{v}_{1}+\cdots +(\vect{v}\ip\vect{v}_{k
 :::{admonition} Proof of {prf:ref}`Thm:OrthoBase:WeightsOrthoBase`
 :class: tudproof
 
-Since $\vect{v}_{1},...,\vect{v}_{k}$ is a basis for $V$ and $\vect{v}$ is in $V$, there are scalars $c_{1},...,c_{k}$ such that $\vect{v}=c_{1}\vect{v}_{1}+\cdots +c_{k}\vect{v}_{k}$. We only have to show that these scalars are as claimed. For any $j$ between $1$ and $k$,
+Since $\vect{v}_{1},\ldots,\vect{v}_{k}$ is a basis for $V$ and $\vect{v}$ is in $V$, there are scalars $c_{1},\ldots,c_{k}$ such that $\vect{v}=c_{1}\vect{v}_{1}+\cdots +c_{k}\vect{v}_{k}$. We only have to show that these scalars are as claimed. For any $j$ between $1$ and $k$,
 
 $$\vect{v}\ip\vect{v}_{j}=(c_{1}\vect{v}_{1}+\cdots +c_{k}\vect{v}_{k})\ip\vect{v}_{j}=c_{j}(\vect{v}_{j}\ip\vect{v}_{j})$$
 
-by the orthogonality of $\left\{\vect{v}_{1},...,\vect{v}_{k}\right\}$. This implies $c_{j}=\frac{\vect{v}\ip\vect{v}_{j}}{\vect{v}_{j}\ip\vect{v}_{j}}$ as claimed.
+by the orthogonality of $\left\{\vect{v}_{1},\ldots,\vect{v}_{k}\right\}$. This implies $c_{j}=\frac{\vect{v}\ip\vect{v}_{j}}{\vect{v}_{j}\ip\vect{v}_{j}}$ as claimed.
 
-If $\vect{v}_{1},...,\vect{v}_{k}$ is orthonormal, then $\vect{v}_{j}\ip\vect{v}_{j}=1$ for every $j$, so this reduces to $c_{j}=\vect{v}\ip\vect{v}_{j}$.
+If $\vect{v}_{1},\ldots,\vect{v}_{k}$ is orthonormal, then $\vect{v}_{j}\ip\vect{v}_{j}=1$ for every $j$, so this reduces to $c_{j}=\vect{v}\ip\vect{v}_{j}$.
 
 :::
 
@@ -196,7 +196,7 @@ Naturally, we want to know how to find such an orthogonal projection. If we have
 ::::{prf:Theorem}
 :label: Thm:OrthoBase:OrthoDecomp
 
-Suppose $V$ is a subspace of $\R^{n}$ with orthogonal basis $\vect{v}_{1},...,\vect{v}_{k}$ and let $\vect{u}$ be a vector in $\R^{n}$. Then
+Suppose $V$ is a subspace of $\R^{n}$ with orthogonal basis $\vect{v}_{1},\ldots,\vect{v}_{k}$ and let $\vect{u}$ be a vector in $\R^{n}$. Then
 
 :::{math}
 :label: Eq:OrthoBase:OrthoProj
@@ -227,7 +227,7 @@ $$
 
 :::
 
-It is worthwhile to compare this result to the formula for the projection of one vector on another given in {prf:ref}`Prop:InnerProduct:UniqueProjection`. What {prf:ref}`Thm:OrthoBase:OrthoDecomp` states is essentially this: if $V$ has an orthogonal basis $\vect{v}_{1},...,\vect{v}_{k}$, then the projection of any vector $\vect{u}$ onto $V$ is the sum of the projections of $\vect{u}$ on the $\vect{v}_{i}$'s. This is illustrated in {numref}`Figure %s <Fig:OrthoBase:DecompAs2Proj>`
+It is worthwhile to compare this result to the formula for the projection of one vector on another given in {prf:ref}`Prop:InnerProduct:UniqueProjection`. What {prf:ref}`Thm:OrthoBase:OrthoDecomp` states is essentially this: if $V$ has an orthogonal basis $\vect{v}_{1},\ldots,\vect{v}_{k}$, then the projection of any vector $\vect{u}$ onto $V$ is the sum of the projections of $\vect{u}$ on the $\vect{v}_{i}$'s. This is illustrated in {numref}`Figure %s <Fig:OrthoBase:DecompAs2Proj>`
 
 ```{applet}
 :url: ortho/decompas2proj
@@ -284,7 +284,7 @@ $$
 \frac{\vect{e}_{i}\ip\vect{v}_{1}}{\vect{v}_{1}\ip\vect{v}_{1}}\vect{v}_{1}+\cdots +\frac{\vect{e}_{i}\ip\vect{v}_{k}}{\vect{v}_{k}\ip\vect{v}_{k}}\vect{v}_{k}.
 $$
 
-Here the $\vect{v}_{1},...,\vect{v}_{k}$ are an arbitrary orthogonal basis for $V$.
+Here the $\vect{v}_{1},\ldots,\vect{v}_{k}$ are an arbitrary orthogonal basis for $V$.
 
 :::
 
@@ -461,7 +461,7 @@ An $n\times n$-matrix $A$ is orthogonal if and only if $A^{T}A=I_{n}$.
 :::{admonition} Proof of {prf:ref}`Prop:OrthoBase:OrthoMat`
 :class: tudproof
 
-Let $\vect{v}_{1},\vect{v}_{2}...,\vect{v}_{n}$ be the columns of $A$, so $\vect{v}_{1}^{T},\vect{v}_{2}^{T},...,\vect{v}_{n}^{T}$ are the rows of $A^{T}$. Consequently,
+Let $\vect{v}_{1},\vect{v}_{2},\ldots,\vect{v}_{n}$ be the columns of $A$, so $\vect{v}_{1}^{T},\vect{v}_{2}^{T},\ldots,\vect{v}_{n}^{T}$ are the rows of $A^{T}$. Consequently,
 
 $$
 A^{T}A=\begin{pmatrix}
@@ -488,7 +488,7 @@ $$
 \end{cases}
 $$
 
-that is, when $\left\{\vect{v}_{1},\vect{v}_{2},...,\vect{v}_{k}\right\}$ is an orthonormal set.
+that is, when $\left\{\vect{v}_{1},\vect{v}_{2},\ldots,\vect{v}_{k}\right\}$ is an orthonormal set.
 
 :::
 

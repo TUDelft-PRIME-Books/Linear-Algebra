@@ -916,6 +916,33 @@ For Rule iii., only show how it follows from the corresponding Rule iii. in
  {prf:ref}`Prop:InnerProduct:PropertiesNorm`. 
 ::::
 
+::::{admonition} Solution to {numref}`Exc:InnerProduct:ProofPropDist`
+:class: solution, dropdown
+
+<ol type="i">
+
+<li>
+
+$\operatorname{dist}(\mathbf{u},\mathbf{v})=\left\|\mathbf{v}-\mathbf{u}\right\|=\left\|(-1)\left(\mathbf{u}-\mathbf{v}\right)\right\|=\left|-1\right|\left\|\mathbf{u}-\mathbf{v}\right\|=\left\|\mathbf{u}-\mathbf{v}\right\|=\operatorname{dist}(\mathbf{u},\mathbf{v})$.
+
+</li>
+<li>
+
+$\operatorname{dist}(\mathbf{u},\mathbf{v})=0 \iff \left\|\mathbf{v}-\mathbf{u}\right\|=0 \iff \mathbf{v}-\mathbf{u}=\mathbf{0} \iff \mathbf{u}=\mathbf{v}$.
+
+</li>
+<li>
+
+We perform a few steps:
+
+$$\begin{array}{rcl}\operatorname{dist}(\mathbf{u},\mathbf{w})&=&\left\|\mathbf{w}-\mathbf{u}\right\|\\&=&\left\|\mathbf{w}-\mathbf{u}+\mathbf{v}-\mathbf{v}\right\|\\&=&\left\|\mathbf{w}-\mathbf{v}+\mathbf{v}-\mathbf{u}\right\|\\&\leq&\left\|\mathbf{w}-\mathbf{v}\left\|+\right\|\mathbf{v}-\mathbf{u}\right\|\\&=&\operatorname{dist}(\vect{u},\vect{v}) + \operatorname{dist}(\vect{v},\vect{w})\end{array}.$$
+
+</li>
+
+</ol>
+
+::::
+
 With the tools so far we can define a notion that comes in handy later.
 
 :::{prf:definition}

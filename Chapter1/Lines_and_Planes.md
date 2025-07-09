@@ -660,7 +660,7 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 :url: https://embed.grasple.com/exercises/42d254e8-e577-4bb1-b365-110f9805c1cf?id=78848
 :label: grasple_exercise_1_4_8
 :dropdown:
-:description: To show that two lines have $0$, $1$ or $\infty$ points in common.
+:description: To show that two lines have zero, one or infinitely many points in common.
 
 ::::
 

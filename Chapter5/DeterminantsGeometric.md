@@ -242,18 +242,76 @@ $\begin{vmatrix} 1 & 0 \\ 0 & 1\end{vmatrix} =  1$.
 
 ::::::
 
-These properties are verified by applying the definition
+::::::{exercise}
+:label: Exc:DetGeometric:Properties2by2Det
+
+Verify the four properties of {prf:ref}`Prop:DetGeometric:Properties2by2Det` by applying the definition
 
 $$
 \left|\begin{array}{cc} a & c \\ b & d \end{array}\right| = ad-bc.
 $$
 
-::::::{exercise}
-:label: Exc:DetGeometric:Properties2by2Det
-
-Verify the four properties of {prf:ref}`Prop:DetGeometric:Properties2by2Det`
-
 ::::::
+
+:::{admonition} Solution to {numref}`Exc:DetGeometric:Properties2by2Det`
+:class: solution, dropdown
+
+<ol type = "i">
+<li>
+
+Direct computation gives:
+
+$$ 
+\begin{align*}
+\begin{vmatrix} c & a \\ d & b \end{vmatrix} &= cb-da \\
+&= bc-ad \\
+&= -ad+bc \\
+&= -(ad-bc) \\
+&= - \begin{vmatrix} a & c \\ b & d \end{vmatrix}.
+\end{align*}
+$$
+
+</li>
+<li>
+
+Direct computation gives:
+
+$$ 
+\begin{align*}
+\begin{vmatrix} a_{1} & b_{1}+ c_1\\ a_{2} & b_{2}+ c_2 \end{vmatrix} &= a_1(b_2+c_2)-a_2(b_1+c_1) \\
+&= a_1b_2+a_1c_2-a_2b_1-a_2c_1 \\
+&= a_1b_2-a_2b_1+a_1c_2-a_2c_1 \\
+&= \begin{vmatrix} a_{1} & b_{1}\\ a_{2} & b_{2}\end{vmatrix}+ \begin{vmatrix} a_{1} & c_1\\ a_{2} &  c_2 \end{vmatrix}.
+\end{align*}
+$$
+
+</li>
+<li>
+
+Direct computation gives:
+
+$$ 
+\begin{align*}
+\begin{vmatrix} a_{1} & k b_{1}\\ a_{2} & k b_{2}\end{vmatrix}
+&= a_1(kb_2)-a_2(kb_1)\\
+&= k(a_1b_2-a_2b_1) \\
+&= k \begin{vmatrix} a_{1} & b_{1}\\ a_{2} & b_{2}\end{vmatrix}.
+\end{align*}
+$$
+
+</li>
+<li>
+
+Direct computation gives:
+
+$$ 
+\begin{vmatrix} 1 & 0 \\ 0 & 1\end{vmatrix} = 1^2-0^2 = 1.
+$$
+
+</li>
+</ol>
+
+:::
 
 The properties have a clear geometric interpretation using the notion of signed area.
 The following alternative proof uses this geometric viewpoint.

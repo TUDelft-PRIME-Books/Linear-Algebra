@@ -267,10 +267,10 @@ Projections on a line $\mathcal{L}$ in three-dimensional space.
 ```
 
 Let us briefly discuss what happens in higher dimensions.
-Suppose $\mathbf{v}_{1},...,\mathbf{v}_{k}$ are non-zero
+Suppose $\mathbf{v}_{1},\ldots,\mathbf{v}_{k}$ are non-zero
 vectors in $\mathbb{R}^{n}$ which are all orthogonal to each other,
 i.e. $\mathbf{v}_{i} \ip\mathbf{v}_{j}=0$ for all $i$ and $j$.
-Put $V=\Span{\mathbf{v}_{1},...,\mathbf{v}_{k}}$.
+Put $V=\Span{\mathbf{v}_{1},\ldots,\mathbf{v}_{k}}$.
 For any vector $\mathbf{w}$ in $\mathbb{R}^{n}$ we can define the
 **orthogonal projection** on $V$ as
 

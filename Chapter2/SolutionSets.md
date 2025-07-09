@@ -102,10 +102,10 @@ In general, the solution set of a linear system in $n$ variables, $k$ of which a
 
 $$
 
-    \left\{\mathbf{w}+t_{1}\mathbf{v}_{1}+\cdots+t_{k}\mathbf{v}_{k}\mid t_{1},...,t_{k} \text{ are in }\mathbb{R}\right\}
+    \left\{\mathbf{w}+t_{1}\mathbf{v}_{1}+\cdots+t_{k}\mathbf{v}_{k}\mid t_{1},\ldots,t_{k} \text{ are in }\mathbb{R}\right\}
 $$
 
-for some vectors $\mathbf{v}_{1},...\mathbf{v}_{k},\mathbf{w}$ in $\mathbb{R}^{n}$. The expression $\mathbf{w}+t_{1}\mathbf{v}_{1}+\cdots+t_{k}\mathbf{v}_{k}$ is a parametrised vector with parameters $t_{1},...,t_{k}$. In {prf:ref}`Example:SolSet:TwoLinesinR3b`, we have
+for some vectors $\mathbf{v}_{1},\ldots,\mathbf{v}_{k},\mathbf{w}$ in $\mathbb{R}^{n}$. The expression $\mathbf{w}+t_{1}\mathbf{v}_{1}+\cdots+t_{k}\mathbf{v}_{k}$ is a parametrised vector with parameters $t_{1},\ldots,t_{k}$. In {prf:ref}`Example:SolSet:TwoLinesinR3b`, we have
 
 $$
     n=3,\quad k=1,\quad \mathbf{v}_{1}=
@@ -236,7 +236,7 @@ $$
 ::::{prf:proposition}
 :label: Prop:SolSet:SolplusHom
 
-Suppose $(c_{1},...,c_{n})$ is a solution of a linear system. Then $(c_{1}',...,c_{n}')$ is also a solution of the linear system if and only if there exists a solution of the associated homogeneous system $(d_{1},...,d_{n})$ such that $c'_{i}=c_{i}+d_{i}$ for all $i$.
+Suppose $(c_{1},\ldots,c_{n})$ is a solution of a linear system. Then $(c_{1}',\ldots,c_{n}')$ is also a solution of the linear system if and only if there exists a solution of the associated homogeneous system $(d_{1},\ldots,d_{n})$ such that $c'_{i}=c_{i}+d_{i}$ for all $i$.
 
 ::::
 
@@ -254,7 +254,7 @@ a_{m1}x_{1}&+&\cdots &+&a_{mn}x_{n}&=&b_{m}.
 \end{array}\right.
 $$
 
-Suppose first that $(c_{1},...,c_{n})$ and $(c_{1}',...,c_{n}')$ are solutions and put $d_{i}=c_{i}'-c_{i}$. Then
+Suppose first that $(c_{1},\ldots,c_{n})$ and $(c_{1}',\ldots,c_{n}')$ are solutions and put $d_{i}=c_{i}'-c_{i}$. Then
 
 $$
 \left\{\begin{array}{ccccccccccccccc}
@@ -265,9 +265,9 @@ a_{m1}d_{1}&+&\cdots &+&a_{mn}d_{n}&=&a_{m1}c_{1}-a_{m1}c'_{1}&+&\cdots &+&a_{mn
 \end{array}\right.
 $$
 
-so $(d_{1},...,d_{n})$ is a solution of the associated homogeneous system such that $c_{i}'=c_{i}+d_{i}$ for all $i$.
+so $(d_{1},\ldots,d_{n})$ is a solution of the associated homogeneous system such that $c_{i}'=c_{i}+d_{i}$ for all $i$.
 
-Assume on the other hand that $(c_{1},...,c_{n})$ is a solution of the system and that $(d_{1},...,d_{n})$ is a solution of the associated homogeneous system such that $c'_{i}=c_{i}+d_{i}$. Then
+Assume on the other hand that $(c_{1},\ldots,c_{n})$ is a solution of the system and that $(d_{1},\ldots,d_{n})$ is a solution of the associated homogeneous system such that $c'_{i}=c_{i}+d_{i}$. Then
 
 $$
 \left\{\begin{array}{ccccccccccccc}
@@ -278,7 +278,7 @@ a_{m1}c'_{1}&+&\cdots &+&a_{mn}c'_{n}&=&a_{m1}(c_{1}+d_{1})&+&\cdots &+&a_{mn}(c
 \end{array}\right.
 $$
 
-so $(c_{1}',...,c_{n}')$ is indeed a solution of the original system.
+so $(c_{1}',\ldots,c_{n}')$ is indeed a solution of the original system.
 
 ::::
 

@@ -1393,8 +1393,11 @@ $A$ can be written as a product of elementary matrices: $A = E_1E_2\cdots E_k$.
 ::::::{admonition} Proof of {prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations`
 :class: tudproof
 
-It is a good exercise to find out where the evidence of each characterisation is found,
-and wherever necessary to fill in the missing details.
+Using {prf:ref}`Dfn:MatrixInv:DefInverse`, we directly have that 1. and 2. are equivalent.
+
+The equivalence of 1., 3. and 6. follows from {prf:ref}`Prop:SolutionViaInverse`.
+
+The equivalence of 1., 4., 5. and 7. follows from {prf:ref}`Prop:MatrixInv:Algorithm`.
 
 ::::::
 
@@ -1404,9 +1407,14 @@ The following exercise contains a few.
 ::::::{exercise}
 :label: Exc:MatrixInv:LastEquivalencesInvertibility
 
-Show that invertibility of an $n\times n$-matrix $A$ is also equivalent to
+Show that the following statements are equivalent for an $n\times n$-matrix $A$:
 
-<ul>
+<ol>
+<li>
+
+$A$ is invertible.
+
+</li>
 <li>
 
 there exists a matrix $B$ such that $BA = I$.
@@ -1427,11 +1435,22 @@ each column of the matrix $A$ is a pivot column.
 the columns of $A$ span the whole $\mathbb{R}^n$.
 
 </li>
-</ul>
-
-Again it may very well be that you have to resort to previous sections.
+</ol>
 
 ::::::
+
+:::{admonition} Solution to {numref}`Exc:MatrixInv:LastEquivalencesInvertibility`
+:class: solution, dropdown
+
+Using {prf:ref}`Dfn:MatrixInv:DefInverse`, we directly have that 1. and 2. are equivalent.
+
+Using {prf:ref}`Prop:MatrixInv:ElemProperties` and 5. from {prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations` shows that 1. and 3. are equivalent.
+
+Using 4. from {prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations` shows that 1. and 4. are equivalent.
+
+Using 3. from {prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations` shows that 1. and 5. are equivalent.
+
+:::
 
 (Subsec:MatrixInverse:Grasple)=
 

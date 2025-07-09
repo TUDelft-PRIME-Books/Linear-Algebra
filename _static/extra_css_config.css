@@ -36,7 +36,7 @@ span.math mjx-assistive-mml {
   display: none !important;
 }
 
-/* To make text and \quad work together in Chrome */
-mjx-mtext {
-  min-width: 27px;
+mjx-utext {
+  width: auto !important;
+  display: inline-block !important;
 }

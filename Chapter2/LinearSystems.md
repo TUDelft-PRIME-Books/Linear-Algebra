@@ -1726,7 +1726,7 @@ $$
 $$
     \sim
 \left(\begin{array}{rrr}1 & 0 & 0 & 2\\0 & 1 & 0 & 3\\0 & 0 & 1 & -1
-\end{array}\right),  \rule{19em}{0ex}
+\end{array}\right),
 $$
 
 the same outcome as before.
@@ -1885,13 +1885,6 @@ Then the first system has a unique solution, the second system has infinitely ma
 :description: Conclusions about the solutions from the structure of the echelon form.
 
 ::::
-
-%::::{exercise}
-%:label: Exc:LinSystems:Check(In)Consistency
-%
-%Explain why.
-%
-%::::
 
 ::::{prf:proposition}
 :label: Prop:LinSystems:UniqueSolutionImpliesSize

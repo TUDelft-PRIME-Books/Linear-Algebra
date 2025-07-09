@@ -257,7 +257,7 @@ By rescaling we get a vector in the same direction with highest entry equal to $
 
 That we have such a rapid convergence in the example is due to the two circumstances mentioned:
 
-1. the ratio $|\lambda_2/\lambda_2| = 4/9 = 0.4444...$ is much smaller than $1$,
+1. the ratio $|\lambda_2/\lambda_2| = 4/9 = 0.4444\ldots$ is much smaller than $1$,
 
 and
 

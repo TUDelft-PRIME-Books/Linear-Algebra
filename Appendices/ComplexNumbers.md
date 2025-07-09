@@ -1101,7 +1101,7 @@ Taking a cube root, we find $r=2\sqrt{2}$. Note that $r>0$ is real, so here we n
 
 Moreover, we have $3\phi = \frac34\pi$, so $\phi = \frac14\pi$. This gives the solution $z=2\sqrt{2} e^{\frac14 \pi i}$. But this is just one solution and there ought to be two more by the fundamental theorem of algebra. So what are the remaining two?
 
-As you know, the argument is only defined up to a multiple of $2\pi$. Thus, when we get the equation $3\phi = \frac34\pi$, we should actually write $3\phi = \frac34\pi + 2\pi k$ for some integer $k$. Dividing this by $3$ gives $\phi = \frac14\pi + \frac23 \pi k$. We see that different values of $k$ give different values of $\phi$. For $k=0$, we obtain $\phi=\frac14\pi$ as before. For $k=1$, we obtain $\phi = \frac14\pi + \frac23\pi = \frac{11}{12}\pi$. For $k=2$, we have $\phi = \frac14\pi + \frac43\pi = \frac{19}{12}\pi$. For $k=3$, we obtain $\phi = \frac14\pi + 2\pi$. This gives the same complex number as $\phi=\frac14\pi$, as the argument is shifted by one full period. Indeed, if we add a multiple of $3$ to $k$, the argument of $\phi$ is shifted by a multiple of $2\pi$ and thus the corresponding solution $z$ does not change. Therefore, only the cases $k=0$, $1$, and $2$ suffice to obtain all solutions.
+As you know, the argument is only defined up to a multiple of $2\pi$. Thus, when we get the equation $3\phi = \frac34\pi$, we should actually write $3\phi = \frac34\pi + 2\pi k$ for some integer $k$. Dividing this by $3$ gives $\phi = \frac14\pi + \frac23 \pi k$. We see that different values of $k$ give different values of $\phi$. For $k=0$, we obtain $\phi=\frac14\pi$ as before. For $k=1$, we obtain $\phi = \frac14\pi + \frac23\pi = \frac{11}{12}\pi$. For $k=2$, we have $\phi = \frac14\pi + \frac43\pi = \frac{19}{12}\pi$. For $k=3$, we obtain $\phi = \frac14\pi + 2\pi$. This gives the same complex number as $\phi=\frac14\pi$, as the argument is shifted by one full period. Indeed, if we add a multiple of $3$ to $k$, the argument of $\phi$ is shifted by a multiple of $2\pi$ and thus the corresponding solution $z$ does not change. Therefore, only the cases $k=0$, $k=1$, and $k=2$ suffice to obtain all solutions.
 
 The three solutions, $z_0$, $z_1$ and $z_2$, to the equation $z^3=-16+16i$ thus are
 
@@ -1280,7 +1280,7 @@ Euler's formula can also be derived using series. You may already be familiar wi
 \begin{align*}
 e^x &= \sum*{n=0}^\infty\frac{x^n}{n!}, \\
 \cos(x) &= \sum*{k=0}^\infty(-1)^k\frac{x^{2k}}{(2k)!}, \\
-\sin(x) &= \sum\_{l=0}^\infty(-1)^l\frac{x^{2l+1}}{(2l+1)!}.
+\sin(x) &= \sum_{l=0}^\infty(-1)^l\frac{x^{2l+1}}{(2l+1)!}.
 \end{align*}
 
 We can use these series to derive Euler's formula.

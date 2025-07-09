@@ -531,6 +531,9 @@ $$
 
 that is used to go from Equation {eq}`Eq:ChangeOfBasis:LinearityTransform` to Equation {eq}`Eq:ChangeOfBasis:LinearityCoords` in the proof of {prf:ref}`Prop:ChangeOfBasis:MatrixOfTrafo`.
 
+::::
+
+
 :::{hint}
 First show the correctness of the identities
 
@@ -543,7 +546,43 @@ $$
 
 :::
 
-::::
+:::{admonition} Solution to {numref}`Exc:ChangeOfBasis:LinearityOfCoords`
+:class: solution, dropdown
+
+In this solution we assume ${\mathcal B} = \{\vect{b}_1, \ldots, \vect{b}_n \}$ and $P_{\mc{B}} =\left(\,\vect{b}_1\,\,\vect{b}_2\,\, \cdots\,\, \vect{b}_n\, \right)$. Note that we are allowed to use {prf:ref}`Prop:ChangeOfBasis:PropCoB` in this case.
+
+We start with the first equality of the given hint:
+
+$$
+\begin{align*}
+[\vect{v}_1 +\vect{v}_2 ]_{\mc{B}} &= P_{\mc{B}}^{-1}\left(\vect{v}_1+\vect{v}_2\right) \\
+&= P_{\mc{B}}^{-1}\vect{v}_1+P_{\mc{B}}^{-1}\vect{v}_2 \\
+&= [\vect{v}_1 ]_{\mc{B}}+[\vect{v}_2 ]_{\mc{B}}.
+\end{align*}
+$$
+
+For the second identity in the hint we find:
+
+$$
+\begin{align*}
+[c\vect{v}  ]_{\mc{B}} &= P_{\mc{B}}^{-1}\left(c\vect{v}\right) \\
+&= c\left(P_{\mc{B}}^{-1}\vect{v}\right) \\
+&= c[\vect{v}]_{\mc{B}}.
+\end{align*}
+$$
+
+Now we turn to the identity we were asked to proof:
+
+$$
+\begin{align*}
+[c_1\vect{v}_1 +c_2\vect{v}_2+ \cdots + c_n\vect{v}_n ]_{\mc{B}} &= [c_1\vect{v}_1]_{\mc{B}} +[c_2\vect{v}_2]_{\mc{B}}+ \cdots + [c_n\vect{v}_n ]_{\mc{B}} \\
+&= c_1[\vect{v}_1 ]_{\mc{B}} + c_2[\vect{v}_2 ]_{\mc{B}} + \cdots + c_n[\vect{v}_n ]_{\mc{B}},
+\end{align*}
+$$
+
+where in the first step we used the first identity from the hint $n-1$ times and in the second step we used the second identity $n$ times.
+
+:::
 
 {prf:ref}`Prop:ChangeOfBasis:MatrixOfTrafo` is fairly general. We will mostly use it in the situation where the linear transformation goes from $\R^n$ to itself, and where we use the same basis $\mc{B}$ in the domain and the codomain. Before we do so, we introduce a new notation for the general case.
 
@@ -645,36 +684,6 @@ $$
 :description: Finding  $[T]_{\mathcal{B}}$ for a 'nice' linear transformation.
 
 ::::
-
-
-
-%::::{exercise}
-%:label: Exc:ChangeOfBasis:FindSimpleMatrix
-
-%Consider the linear transformation $T$ with the standard matrix $A$ given by
-
-%$$
-%  T:\R^3 \to \R^3, \quad T(\vect{x}) = A\vect{x} =
-%  \begin{pmatrix} -2 & 1 & 0 \\ -7 & 3 & 1 \\ 2 & 0 & -1
-%  \end{pmatrix}\vect{x}.
-%$$
-
-%It is given that
-
-%$$
-%  A\begin{pmatrix} 0 \\0\\1  \end{pmatrix} =\begin{pmatrix} 0 \\1\\-1  \end{pmatrix},
-% A\begin{pmatrix} 0\\1\\-1  \end{pmatrix} =\begin{pmatrix} 1  \\2 \\ 1  \end{pmatrix},
-%  \quad \text{and } \quad
-%  A\begin{pmatrix} 1 \\2\\1  \end{pmatrix} =\begin{pmatrix} 0\\0\\ 1  \end{pmatrix}.
-%$$
-
-%Find the matrix $[T]_{\mc{B}}$ for the basis
-
-%$$
-%  \mc{B} = \left\{ \begin{pmatrix} 0 \\0\\ 1  \end{pmatrix},\,\begin{pmatrix} 0 \\1\\ -1  \end{pmatrix}, \,\begin{pmatrix} 1 \\2\\1  \end{pmatrix} \right\}.
-%$$
-
-%::::
 
 In the next example we will find the matrix of the rotation $R$ about the origin through an angle $\frac13\pi$. In {numref}`Sec:GeomLinTrans` we have already seen the standard matrix of this linear transformation, involving sines and cosines. As the example shows a change of basis may lead to an interesting alternative.
 
@@ -1077,6 +1086,31 @@ $$
 $$
 
 ::::
+
+:::{admonition} Solution to {numref}`Exc:ChangeOfBasis:InverseOfMatrixCoB`
+:class: solution, dropdown
+
+Assume ${\mathcal B} = \{\vect{b}_1,\vect{b}_2, \ldots, \vect{b}_n \}$, ${\mathcal C} = \{\vect{c}_1,\vect{c}_2 \ldots, \vect{c}_n \}$, $P_{\mc{B}} = \begin{pmatrix}\vect{b}_1&\vect{b}_2& \cdots& \vect{b}_n\end{pmatrix}$ and $P_{\mc{C}} = \begin{pmatrix}\vect{c}_1&\vect{c}_2& \cdots& \vect{c}_n\end{pmatrix}$.
+
+Then we find
+
+$$
+\begin{align*}
+P_{\mc{C}\leftarrow\mc{B}} &= \begin{pmatrix}[\vect{b}_1]_{\mc C}&[\vect{b}_2]_{\mc C}& \cdots & [\vect{b}_n]_{\mc C} \end{pmatrix} \\
+&= \begin{pmatrix}P_{\mc{C}}^{-1}\vect{b}_1&P_{\mc{C}}^{-1}\vect{b}_2& \cdots & P_{\mc{C}}^{-1}\vect{b}_n \end{pmatrix} \\
+&= P_{\mc{C}}^{-1}P_{\mc{B}}.
+\end{align*}
+$$
+
+So $P_{\mc{C}\leftarrow\mc{B}}$ is a product of two invertibles matrices and by {prf:ref}`Prop:MatrixInv:ProductRule`, we conclude that $P_{\mc{C}\leftarrow\mc{B}}$ is invertible and
+
+$$
+\left(P_{\mc{C}\leftarrow\mc{B}}\right)^{-1} = \left(P_{\mc{C}}^{-1}P_{\mc{B}}\right)^{-1} = \left(P_{\mc{B}}\right)^{-1}\left(P_{\mc{C}}^{-1}\right)^{-1} = P_{\mc{B}}^{-1}P_{\mc{C}} = P_{\mc{B}\leftarrow\mc{C}}.
+$$
+
+The last step can be supported by switching $\mc{B}$ and $\mc{C}$ in the first part of this solution.
+
+:::
 
 ::::{exercise}
 :label: Exc:ChangeOfBasis:RelationMatricesCoB

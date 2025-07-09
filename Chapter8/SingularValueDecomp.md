@@ -28,9 +28,9 @@ where
 
 :::{latexlist}
 
-\item $U$ is an $m\times m$ orthogonal matrix,
+\item $U$ is an $m\times m$ orthogonal matrix.
 
-\item $V$ is an $n \times n$  orthogonal matrix,
+\item $V$ is an $n \times n$  orthogonal matrix.
 
 \item $\Sigma$ is an $m\times n$-matrix which is zero everywhere, apart from the entries  $\Sigma_{ii} = \sigma_i$, $i = 1,\ldots , p$,  which are all $\geq 0$, and in decreasing order. That is,  $\sigma_1 \geq \sigma_2 \geq \cdots \geq \sigma_p$.
 
@@ -369,35 +369,49 @@ $
 
 We follow the steps of the algorithm.
 
-1.  We first compute $A^TA = \begin{pmatrix}
+<ol type="1.">
+
+<li>
+
+ We first compute $A^TA = \begin{pmatrix}
        35 & -14 \\
        -14 & 14
       \end{pmatrix}
       $.
 
-2. The eigenvalues $\lambda_1 \ge \lambda_2$ of $A^TA$ are given by 
+</li>
+<li>
+
+The eigenvalues $\lambda_1 \ge \lambda_2$ of $A^TA$ are given by 
  $\lambda_1 = 42$, $\lambda_2 = 7$.  
  This gives us the singular values  $\sigma_1 = \sqrt{42}$, and $\sigma_2=\sqrt{7}$. 
   
 
-3. Our matrix $\Sigma$  becomes $\Sigma = \begin{pmatrix}
+</li>
+<li>
+
+Our matrix $\Sigma$  becomes $\Sigma = \begin{pmatrix}
 \sqrt{42} & 0 \\
 0 & \sqrt{7} \\
 0 & 0
 \end{pmatrix}$.
 
-4.  We have to find the eigenvectors of $A^TA$ for $\lambda_1 = 42$, $\lambda_2 = 7$. 
+</li>
+<li>
 
-    Skipping the computations we find  $\mathbf{w}_1 = \begin{pmatrix} 2\\-1
-\end{pmatrix}$ and  $\mathbf{w}_2 = \begin{pmatrix} 1\\2
-\end{pmatrix}$.
+We have to find the eigenvectors of $A^TA$ for $\lambda_1 = 42$, $\lambda_2 = 7$. 
+
+Skipping the computations we find  $\mathbf{w}_1 = \begin{pmatrix} 2\\-1 \end{pmatrix}$ and  $\mathbf{w}_2 = \begin{pmatrix} 1\\2\end{pmatrix}$.
 
   Normalising and putting them in a matrix gives  $V = \begin{pmatrix}
 \frac{2}{\sqrt{5}} & \frac{1}{\sqrt{5}} \\[.5ex]
 -\frac{1}{\sqrt{5}} & \frac{2}{\sqrt{5}}
 \end{pmatrix}$.
 
-5. We compute
+</li>
+<li>
+
+We compute
 
 $\vect{u}_1 = \dfrac{1}{\sigma_1}A\vect{v}_1 = \dfrac{1}{\sqrt{42}}\times\dfrac{1}{\sqrt{5}} \begin{pmatrix}
 5 & -1 \\
@@ -422,6 +436,9 @@ First we compute the orthogonal vector
  Normalising $\vect{w}_3$ gives the third basis vector $\vect{u}_3 =  \dfrac{1}{\sqrt{6}} \begin{pmatrix}-1\\-2\\1 \end{pmatrix}$.
 
 Thus we end up with the matrix  $U = \begin{pmatrix}\frac{11}{\sqrt{210}}&\frac{3}{\sqrt{35}} &-\frac{1}{\sqrt{6}}\\ -\frac{8}{\sqrt{210}}&\frac{1}{\sqrt{35}} &-\frac{2}{\sqrt{6}}\\-\frac{5}{\sqrt{210}}&\frac{5}{\sqrt{35}} & \frac{1}{\sqrt{6}}\end{pmatrix}$.
+
+</li>
+</ol>
 
 ::::
 
@@ -666,7 +683,11 @@ Some concluding remarks concerning the algorithm.
 ::::{prf:remark}
 :label: Rem:SVD:PracticalHints
 
- 1. Because of the basic property that says that transposing an SVD of an $m \times n$-matrix $A$ gives an SVD  of $A^T$
+<ul>
+
+<li>
+
+Because of the basic property that says that transposing an SVD of an $m \times n$-matrix $A$ gives an SVD  of $A^T$
  ({prf:ref}`Prop:SVD:BasicProp` {itemref}`Item:Prop:SVD:BasicProp:Transpose`)
  it may be profitable to  find an SVD for $A^T$ first, and then transpose this.
  
@@ -676,8 +697,14 @@ Some concluding remarks concerning the algorithm.
   In most applications the singular value decomposition will be applied to  $m\times n$-matrices $A$  with much more rows that columns,  so  $m \gg n$. For such  matrices $A$, 
  working with $A^TA$ is the best bet.
 
- 2. The normalisation of the vectors  $\mathbf{v}_i$ and $\mathbf{u}_j$ may be postponed till the end of step 5.  That prevents dragging along
+</li>
+<li>
+
+The normalisation of the vectors  $\mathbf{v}_i$ and $\mathbf{u}_j$ may be postponed till the end of step 5.  That prevents dragging along
  the obnoxious square root denominators.
+
+ </li>
+ </ul>
 
 ::::
 
@@ -949,7 +976,7 @@ The two 'orthogonal transformations' do not change norms, and the transformation
 
 
 
-## Applications of the SVD
+<!-- ## Applications of the SVD
 
 There will be two applications described in this section.
 
@@ -958,7 +985,9 @@ There will be two applications described in this section.
 2.  Linear least-squares.
 
 
-We start with the first.
+We start with the first. -->
+
+## An application of the SVD
 
 Numerical data can be stored in a matrix. For instance, a black-and-white picture/photo can be stored 'pixel by pixel', by numbers that indicate the grey scale, which may for instance be any integer from $0$ (completely white) to $31$ (completely black). A 4:5 photo may then be stored as, say,  a $1080\times1350$-matrix.
 
@@ -1226,7 +1255,7 @@ We expect $A_3$ to be a good approximation of $A$.
 :url: https://embed.grasple.com/exercises/10affbae-4221-40f8-bf0e-df626a0e64ae?id=93479
 :label: grasple_exercise_8_3_10
 :dropdown:
-:description: To compute an SVD for a $2\times3$-matrix $A$ (of rank 1).
+:description: To compute an SVD for a $2\times3$-matrix $A$ (of rank $1$).
 ::::
 
 
@@ -1235,7 +1264,7 @@ We expect $A_3$ to be a good approximation of $A$.
 :url: https://embed.grasple.com/exercises/37ea17f1-1bfb-4a19-b9e2-1292a593dfa3?id=93480
 :label: grasple_exercise_8_3_11
 :dropdown:
-:description: To compute an SVD for a $3\times2$-matrix $A$ (of rank 1).
+:description: To compute an SVD for a $3\times2$-matrix $A$ (of rank $1$).
 ::::
 
 

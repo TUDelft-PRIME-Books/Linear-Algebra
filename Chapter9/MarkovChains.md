@@ -104,7 +104,7 @@ Such situations are common enough to warrant dedicated terminology.
 :::{prf:definition}
 :label: Def:MarkovChains:MarkovChain
 
-Let $P$ be a stochastic matrix. A **Markov chain** is a sequence $\vect{x}_{0},\vect{x}_{1},...$ of probability vectors such that $\vect{x}_{i}=P\vect{x}_{i-1}$ for any $i>0$. The $\vect{x}_{i}$ are called the **state vectors** of the Markov chain.
+Let $P$ be a stochastic matrix. A **Markov chain** is a sequence $\vect{x}_{0},\vect{x}_{1},\ldots$ of probability vectors such that $\vect{x}_{i}=P\vect{x}_{i-1}$ for any $i>0$. The $\vect{x}_{i}$ are called the **state vectors** of the Markov chain.
 
 :::
 
@@ -240,7 +240,7 @@ A stochastic matrix is called **regular** if there is some natural number $k$ su
 :::{prf:definition}
 :label: Def:MarkovChains:Convergence
 
-Let $\vect{x}$ be a vector and let $\vect{x}_{0},\vect{x}_{1},\vect{x}_{2},...$ be a sequence of vectors. We say that the sequence $(\vect{x}_{n})_{n\in\mathbb{N}}$ **converges** to $\vect{x}$ if the sequence of real numbers $(\norm{\vect{x_{n}}-\vect{x}})_{n\in\mathbb{N}}$ converges to $0$.
+Let $\vect{x}$ be a vector and let $\vect{x}_{0},\vect{x}_{1},\vect{x}_{2},\ldots$ be a sequence of vectors. We say that the sequence $(\vect{x}_{n})_{n\in\mathbb{N}}$ **converges** to $\vect{x}$ if the sequence of real numbers $(\norm{\vect{x_{n}}-\vect{x}})_{n\in\mathbb{N}}$ converges to $0$.
 
 :::
 
@@ -405,12 +405,12 @@ $$
 \frac{5}{12}\\
 0\\
 \frac{5}{12}
-\end{pmatrix},...,\vect{x}_{50}\approx\begin{pmatrix}
+\end{pmatrix},\ldots,\vect{x}_{50}\approx\begin{pmatrix}
 0.3335\\
 0.2221\\
 0.2224\\
 0.2221
-\end{pmatrix},...
+\end{pmatrix},\ldots
 $$
 
 so the distribution after $50$ moves is already quite close to the steady state. Remark that nodes $2$ and $4$ have the exact same probability in every state.

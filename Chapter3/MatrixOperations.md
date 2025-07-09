@@ -619,6 +619,13 @@ is not defined.
 
 ::::::
 
+:::{admonition} Solution to {numref}`Exc:MatrixOps:NonDefinedProduct`
+:class: solution, dropdown
+
+The first matrix is $3\times 2$, just as the second matrix. The product is not defined, as the number of columns ($2$) of the first matrix does not match the number of rows ($3$) of the second matrix.
+
+:::
+
 ::::::{prf:remark}
 :label: rem:MatrixOps:MatrixProduct
 
@@ -685,20 +692,25 @@ The $n \times n$ zero matrix $O_{nn}$ is a diagonal matrix.
 
 ::::::
 
+:::{admonition} Solution to {numref}`Exc:MatrixOps:ZeroMatrixIsDiagonal`
+:class: solution, dropdown
+
+Recall {prf:ref}`Def:MatrixOps:MainDiagonal` and {prf:ref}`def:zero-matrix`.
+
+$O_{nn}$ is a square matrix that has $0$s everywhere, so definitely all non-diagonal elements are equal to zero.
+
+Therefore, the statement is true.
+
+:::
+
 ::::::{exercise}
 :label: Exc:MatrixOps:InterpretATB
 
 Suppose $A = \begin{pmatrix} \mathbf{a}_1 & \mathbf{a}_2 & \cdots & \mathbf{a}_n \end{pmatrix} $ is an  $m\times n$-matrix and <br/>
-$B= \begin{pmatrix} \mathbf{b}_1 & \mathbf{b}_2 & \cdots & \mathbf{b}_p \end{pmatrix} $  an  $n\times p$-matrix. Show that
+$B= \begin{pmatrix} \mathbf{b}_1 & \mathbf{b}_2 & \cdots & \mathbf{b}_p \end{pmatrix} $  an  $m\times p$-matrix. Show that
 
 $$
-  A^TB = %\begin{pmatrix} \vect{a_1}^T \vect{b_1}  & \vect{a_1}^T \vect{b_2} & \cdots &  \vect{a_1}^T \vect{b_p} \\
-         %                \vect{a_2}^T \vect{b_1}  & \vect{a_2}^T \vect{b_2} & \cdots &  \vect{a_2}^T \vect{b_p} \\
-         %                     \vdots              &            \vdots       &        &        \vdots \\
-         %                \vect{a_n}^T \vect{b_1}  & \vect{a_n}^T \vect{b_2} & \cdots &  \vect{a_n}^T \vect{b_p} \\
-         %\end{pmatrix}
-         %    =
-         \begin{pmatrix} \mathbf{a}_1\ip \mathbf{b}_1  & \mathbf{a}_1\ip\mathbf{b}_2 & \cdots &  \mathbf{a}_1\ip \mathbf{b}_p \\
+  A^TB = \begin{pmatrix} \mathbf{a}_1\ip \mathbf{b}_1  & \mathbf{a}_1\ip\mathbf{b}_2 & \cdots &  \mathbf{a}_1\ip \mathbf{b}_p \\
                          \mathbf{a}_2\ip \mathbf{b}_1  & \mathbf{a}_2\ip\mathbf{b}_2 & \cdots &  \mathbf{a}_2\ip \mathbf{b}_p \\
                               \vdots                   &            \vdots           &        &        \vdots \\
                          \mathbf{a}_n\ip \mathbf{b}_1  & \mathbf{a}_n\ip\mathbf{b}_2 & \cdots &  \mathbf{a}_n\ip \mathbf{b}_p \\ 
@@ -709,12 +721,38 @@ $$
 
 where $\mathbf{a}\ip\mathbf{b}$ is the dot product of the vectors $\mathbf{a}$ and $\mathbf{b}$.
 
+::::::
+
+:::{hint}
 Note that now we can also write the dot product of two (column) vectors in $\R^n$ as a matrix product. Namely
 
 $$
   \mathbf{a}\ip\mathbf{b} = \mathbf{a}^T\mathbf{b}.
 $$
-::::::
+
+:::
+
+:::{admonition} Solution to {numref}`Exc:MatrixOps:InterpretATB`
+:class: solution, dropdown
+
+$$
+\begin{align*}
+  A^TB &= \begin{pmatrix} \mathbf{a}_1 & \mathbf{a}_2 & \cdots & \mathbf{a}_n \end{pmatrix}^T\begin{pmatrix} \mathbf{b}_1 & \mathbf{b}_2 & \cdots & \mathbf{b}_p \end{pmatrix} \\
+  &= \begin{pmatrix} \mathbf{a}_1^T \\ \mathbf{a}_2^T \\ \vdots \\ \mathbf{a}_n^T \end{pmatrix}\begin{pmatrix} \mathbf{b}_1 & \mathbf{b}_2 & \cdots & \mathbf{b}_p \end{pmatrix} \\
+  &= \begin{pmatrix} \mathbf{a}_1^T \mathbf{b}_1  & \mathbf{a}_1^T\mathbf{b}_2 & \cdots &  \mathbf{a}_1^T \mathbf{b}_p \\
+                         \mathbf{a}_2^T \mathbf{b}_1  & \mathbf{a}_2^T\mathbf{b}_2 & \cdots &  \mathbf{a}_2^T \mathbf{b}_p \\
+                              \vdots                   &            \vdots           &        &        \vdots \\
+                         \mathbf{a}_n^T \mathbf{b}_1  & \mathbf{a}_n^T\mathbf{b}_2 & \cdots &  \mathbf{a}_n^T \mathbf{b}_p \\ 
+         \end{pmatrix} \\
+  &= \begin{pmatrix} \mathbf{a}_1\ip \mathbf{b}_1  & \mathbf{a}_1\ip\mathbf{b}_2 & \cdots &  \mathbf{a}_1\ip \mathbf{b}_p \\
+                         \mathbf{a}_2\ip \mathbf{b}_1  & \mathbf{a}_2\ip\mathbf{b}_2 & \cdots &  \mathbf{a}_2\ip \mathbf{b}_p \\
+                              \vdots                   &            \vdots           &        &        \vdots \\
+                         \mathbf{a}_n\ip \mathbf{b}_1  & \mathbf{a}_n\ip\mathbf{b}_2 & \cdots &  \mathbf{a}_n\ip \mathbf{b}_p \\ 
+         \end{pmatrix}.
+\end{align*}
+$$
+
+:::
 
 ::::::{exercise}
 :label: Exc:MatrixOps:InterpretATA
@@ -724,6 +762,36 @@ For now, show that the columns of a matrix $A$ are orthogonal if and only if the
 matrix $A^TA$ is a diagonal matrix.
 
 ::::::
+
+:::{admonition} Solution to {numref}`Exc:MatrixOps:InterpretATA`
+:class: solution, dropdown
+
+First recognise that
+
+$$
+A^TA = \begin{pmatrix} \mathbf{a}_1\ip \mathbf{a}_1  & \mathbf{a}_1\ip\mathbf{a}_2 & \cdots &  \mathbf{a}_1\ip \mathbf{a}_n \\
+                         \mathbf{a}_2\ip \mathbf{a}_1  & \mathbf{a}_2\ip\mathbf{a}_2 & \cdots &  \mathbf{a}_2\ip \mathbf{a}_n \\
+                              \vdots                   &            \vdots           &        &        \vdots \\
+                         \mathbf{a}_n\ip \mathbf{a}_1  & \mathbf{a}_n\ip\mathbf{a}_2 & \cdots &  \mathbf{a}_n\ip \mathbf{a}_n \\ 
+         \end{pmatrix}.
+$$
+
+If $A$ has orthogonal columns, then at least $\mathbf{a}_i\ip\mathbf{a}_j=0$ for $i\neq j$. This gives
+
+$$
+A^TA = \begin{pmatrix} \mathbf{a}_1\ip \mathbf{a}_1  & 0 & \cdots &  0\\
+                        0  & \mathbf{a}_2\ip\mathbf{a}_2 & \cdots &  0 \\
+                              \vdots                   &            \vdots           &        &        \vdots \\
+                         0  & 0 & \cdots &  \mathbf{a}_n\ip \mathbf{a}_n \\ 
+         \end{pmatrix}.
+$$
+
+So $A^TA$ is a diagonal matrix.
+
+The other way, if $A^T$ is a diagonal matrix, then at least $\mathbf{a}_i\ip\mathbf{a}_j=0$ for $i\neq j$, so $A$ has orthogonal columns.
+
+:::
+
 
 ::::::{prf:definition}
 :label: Def:MatrixOps:IdentityMatrix
@@ -750,6 +818,39 @@ $$
 Show that $IA = A$.
 
 ::::::
+
+:::{admonition} Solution to {numref}`Exc:MatrixOps:I4timesA`
+:class: solution, dropdown
+
+We first focus on the first column of $A=\begin{pmatrix}\mathbf{a}_1&\mathbf{a}_2&\mathbf{a}_3\end{pmatrix}=\begin{pmatrix} a_{11}& a_{12} & a_{13} \\  a_{21}& a_{22} & a_{23} \\ a_{31}& a_{32} & a_{33} \\ a_{41} & a_{42} & a_{43}   \end{pmatrix}$:
+
+$$
+\begin{align*}
+I\mathbf{a}_1 &= \begin{pmatrix}1 & 0 & 0 & 0 \\
+                            0 & 1 & 0 & 0 \\
+                            0 & 0 & 1 & 0 \\
+                            0 & 0 & 0 & 1
+            \end{pmatrix}\begin{pmatrix} a_{11} \\  a_{21}\\ a_{31} \\ a_{41} \end{pmatrix} \\
+&= a_{11}\begin{pmatrix}1 \\ 0 \\ 0 \\0 \end{pmatrix}
++ a_{21}\begin{pmatrix}0 \\ 1 \\ 0 \\0 \end{pmatrix}
++a_{31}\begin{pmatrix}0\\ 0 \\ 1 \\0 \end{pmatrix}
++a_{41}\begin{pmatrix}0 \\ 0 \\ 0 \\1 \end{pmatrix} \\
+&= \begin{pmatrix}a_{11} \\ 0 \\ 0 \\0 \end{pmatrix}
++ \begin{pmatrix}0 \\ a_{21} \\ 0 \\0 \end{pmatrix}
++\begin{pmatrix}0\\ 0 \\ a_{31} \\0 \end{pmatrix}
++\begin{pmatrix}0 \\ 0 \\ 0 \\a_{41} \end{pmatrix}.
+\end{align*}
+$$
+
+Similarly, $I\mathbf{a}_2=\mathbf{a}_2$ and $I\mathbf{a}_3=\mathbf{a}_3$.
+
+Therefore,
+
+$$
+IA = I\begin{pmatrix}\mathbf{a}_1&\mathbf{a}_2&\mathbf{a}_3\end{pmatrix} = \begin{pmatrix}I\mathbf{a}_1&I\mathbf{a}_2&I\mathbf{a}_3\end{pmatrix} = \begin{pmatrix}\mathbf{a}_1&\mathbf{a}_2&\mathbf{a}_3\end{pmatrix} = A.
+$$
+
+:::
 
 The definition of the product of two matrices and the earlier definition of the product of a matrix and a vector ({prf:ref}`Dfn:MatVectProd:ProductMatVec`) immediately imply that the columns of the product of two matrices are linear combinations of the columns of the first matrix.  
 As is often the case in linear algebra things can be looked at from a different perspective. From {prf:ref}`Prop:MatrixOps:RowColExpansion`
@@ -853,6 +954,15 @@ $$
 
 ::::::
 
+:::{admonition} Solution to {numref}`Exc:MatrixOps:RowOpsByElMatrices`
+:class: solution, dropdown
+
+$E_1$ is the elementary matrix that substracts row $4$ of $A$ from row $2$ of $A$.
+
+$E_2$ is the elementary matrix that switches row $2$ of $A$ and row $4$ of $A$.
+
+:::
+
 ::::::{prf:example}
 :label: Ex:MatrixOps:Product:ColumnRow
 
@@ -890,6 +1000,48 @@ $$
 i.e., $AB$ is the sum of $n$ column-row products (like in {prf:ref}`Ex:MatrixOps:Product:ColumnRow`).
 
 ::::::
+
+:::{admonition} Solution to {numref}`Exc:MatrixOps:ColumnRowExpansion`
+:class: solution, dropdown
+
+Using {prf:ref}`Prop:MatrixOps:RowColExpansion`, we see that with $C=AB$ and
+
+$$
+c_{ij} = a_{i1}b_{1j} + a_{i2}b_{2j} + \cdots + a_{in}b_{nj}.
+$$
+
+Now consider one column-row product:
+
+$$
+\begin{align*}
+A_{(k)}B^{(k)} &= \begin{pmatrix}   a_{1k} \\ \vdots \\ a_{mk}\end{pmatrix}\begin{pmatrix}   b_{k1} & b_{k2} & \cdots & b_{kp}\end{pmatrix} \\
+&= \begin{pmatrix} a_{1k}b_{k1} & a_{1k}b_{k2} & \cdots & a_{1k}b_{kp} \\
+a_{2k}b_{k1} & a_{2k}b_{k2} & \cdots & a_{2k}b_{kp} \\
+\vdots & \vdots &   & \vdots \\
+a_{mk}b_{k1} & a_{mk}b_{k2} & \cdots & a_{mk}b_{kp}
+\end{pmatrix}.
+\end{align*}
+$$
+
+This shows that $\left(A_{(k)}B^{(k)}\right)_{ij}=a_{ik}b_{kj}$. Now follows
+
+$$
+\begin{align*}
+\left(A_{(1)} B^{(1)}  +  A_{(2)} B^{(2)}  + \cdots + A_{(n)} B^{(n)}\right)_{ij} &= 
+\left(A_{(1)} B^{(1)}\right)_{ij}  +  \left(A_{(2)} B^{(2)}\right)_{ij}  + \cdots + \left(A_{(n)} B^{(n)}\right)_{ij} \\
+&= a_{i1}b_{1j}+a_{i2}b_{2j}+\cdots+a_{in}b_{nj} \\
+&= c_{ij}.
+\end{align*}
+$$
+
+This shows that
+
+$$
+ AB = A_{(1)} B^{(1)}  +  A_{(2)} B^{(2)}  + \cdots + A_{(n)} B^{(n)}.
+
+$$
+:::
+
 
 (Subsec:ProductProps)=
 
@@ -1071,6 +1223,53 @@ on corresponding positions are equal (which may be checked column by column or r
 
 ::::::
 
+:::{admonition} Solution to {numref}`Exc:MatrixOps:RulesProduct`
+:class: solution, dropdown
+
+<ol type="i">
+
+<li>
+
+We show the first identity, assuming $B_1=\begin{pmatrix}\mathbf{b}^1_1&\mathbf{b}^1_2&\cdots&\mathbf{b}^1_q\end{pmatrix}$ and $B_2=\begin{pmatrix}\mathbf{b}^2_1&\mathbf{b}^2_2&\cdots&\mathbf{b}^2_q\end{pmatrix}$:
+
+$$
+\begin{align*}
+A(B_1+B_2) &= A\begin{pmatrix}\mathbf{b}^1_1+\mathbf{b}^2_1&\mathbf{b}^1_2+\mathbf{b}^2_2&\cdots&\mathbf{b}^1_q+\mathbf{b}^2_q\end{pmatrix} \\
+&= \begin{pmatrix}A\left(\mathbf{b}^1_1+\mathbf{b}^2_1\right)&A\left(\mathbf{b}^1_2+\mathbf{b}^2_2\right)&\cdots&A\left(\mathbf{b}^1_q+\mathbf{b}^2_q\right)\end{pmatrix} \\
+&= \begin{pmatrix}A\mathbf{b}^1_1+A\mathbf{b}^2_1&A\mathbf{b}^1_2+A\mathbf{b}^2_2&\cdots&A\mathbf{b}^1_q+A\mathbf{b}^2_q\end{pmatrix} \\
+&= \begin{pmatrix}A\mathbf{b}^1_1&A\mathbf{b}^1_2&\cdots&A\mathbf{b}^1_q\end{pmatrix}+\begin{pmatrix}A\mathbf{b}^2_1&A\mathbf{b}^2_2&\cdots&A\mathbf{b}^2_q\end{pmatrix} \\
+&= A\begin{pmatrix}\mathbf{b}^1_1&\mathbf{b}^1_2&\cdots&\mathbf{b}^1_q\end{pmatrix}+A\begin{pmatrix}\mathbf{b}^2_1&\mathbf{b}^2_2&\cdots&\mathbf{b}^2_q\end{pmatrix} \\
+&= AB_1+AB_2.
+\end{align*}
+$$
+
+The second identity can be shown similarly.
+
+</li>
+
+<li>
+
+We only show the first equality, using $B=\begin{pmatrix}\mathbf{b}_1&\mathbf{b}_2&\cdots&\mathbf{b}_q\end{pmatrix}$:
+
+$$
+\begin{align*}
+A(cB) &= A\left(c\begin{pmatrix}\mathbf{b}_1&\mathbf{b}_2&\cdots&\mathbf{b}_q\end{pmatrix}\right) \\
+&= A\begin{pmatrix}c\mathbf{b}_1&c\mathbf{b}_2&\cdots&c\mathbf{b}_q\end{pmatrix} \\
+&= \begin{pmatrix}A\left(c\mathbf{b}_1\right)&A\left(c\mathbf{b}_2\right)&\cdots&A\left(c\mathbf{b}_q\right)\end{pmatrix} \\
+&= \begin{pmatrix}c\left(A\mathbf{b}_1\right)&c\left(A\mathbf{b}_2\right)&\cdots&c\left(A\mathbf{b}_q\right)\end{pmatrix} \\
+&= c\begin{pmatrix}A\mathbf{b}_1&A\mathbf{b}_2&\cdots&A\mathbf{b}_q\end{pmatrix} \\
+&= c\left(AB\right).
+\end{align*}
+$$
+
+The second equality can be shown similarly.
+
+</li>
+
+</ol>
+
+:::
+
 ::::::{prf:remark}
 :label: Rem:MatrixOps:ProdTransformation
 
@@ -1208,7 +1407,7 @@ $$
 
 perform row operations, when multiplied with a $2 \times n$-matrix $A$.
 
-<ul>
+<ol type="i">
 <li>
 
 Describe in words the row operations corresponding to $E_1$ and $E_2$.
@@ -1224,9 +1423,40 @@ Describe in words the combined row operations corresponding to $E_1E_2$ and $E_2
 Compute $E_1E_2$ and $E_2E_1$ to double check the last non-identity.
 
 </li>
-</ul>
+</ol>
 
 ::::::
+
+:::{admonition} Solution to {numref}`Exc:MatrixOps:NonCommutativeRowOps`
+:class: solution, dropdown
+
+<ol type="i">
+<li>
+
+$E_1$ is the elementary matrix corresponding to adding $2$ times row $1$ of $A$ to row $2$ of $A$. 
+
+$E_2$ is the elementary matrix corresponding to multiplying row $1$ of $A$ by $3$.
+
+</li>
+<li>
+
+$E_1E_2$ first multiplies row $1$ by $3$ and then adds that new row twice to row $2$. The new first row is thus $3$ times row $1$ and the new second row is thus $6$ times row $1$ plus row $2$.
+
+$E_2E_1$ first adds that row $1$ twice to row $2$ and then multiplies row $1$ by $3$ (leaving the second row the same). The new first row is thus $3$ times row $1$ and the new second row is thus $2$ times row $1$ plus row $2$.
+
+$E_1E_2$ and $E_2E_1$ have thus a different second row as a result, so $E_1E_2 \neq E_2E_1$.
+
+</li>
+<li>
+
+$E_1E_2=\begin{pmatrix}3&0\\6&1\end{pmatrix}$.
+
+$E_2E_1=\begin{pmatrix}3&0\\2&1\end{pmatrix}$.
+
+</li>
+</ol>
+
+:::
 
 The second major difference between the product of numbers and the product of matrices: for two (e.g. real) numbers $a$ and $b$ it is known that
 
@@ -1450,23 +1680,35 @@ $(A+I)$ or $(A-I)$ must be the zero matrix. In this case we do not get a counter
 <ol type = "i"> 
 <li>
 
-Give a $2 \times 2$-matrix $A \neq \pm\, I$ for which $A^2 = I$.
-
-</li>
-<li>
-
 Give a $2 \times 2$-matrix $A$ not containing any zeros, for which $A^2 = I$.
 
 </li>
 <li>
 
-%And this one also shows that matrix algebra has interesting additional features: \,
 Give a $2 \times 2$-matrix $B$ for which $B^2 = -I$.
 
 </li>
 </ol>
 
 ::::::
+
+:::{admonition} Solution to {numref}`Exc:MatrixOps:CounterExamples`
+:class: solution, dropdown
+
+<ol type = "i"> 
+<li>
+
+$A=\begin{pmatrix}\frac{1}{\sqrt{2}}&\frac{1}{\sqrt{2}}\\\frac{1}{\sqrt{2}}&-\frac{1}{\sqrt{2}}\end{pmatrix}$.
+
+</li>
+<li>
+
+$B=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$.
+
+</li>
+</ol>
+
+:::
 
 The following property connects the two operations matrix transposition and matrix multiplication.
 

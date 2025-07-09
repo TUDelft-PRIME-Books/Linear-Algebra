@@ -431,7 +431,7 @@ $$
 
 (Subsec:GraphicalDiscDynSyst)=
 
-## Graphical analysis of discrete dynamical systems in $\R^2$.
+## Graphical analysis of discrete dynamical systems in $\R^2$
 
 In this subsection we will analyse dynamical systems
 
@@ -501,10 +501,29 @@ To be more precise, if $x_0 > 0$ then $\vect{x}_k \to \left(\begin{array}{c} \in
 ::::
 
 ::::{exercise}
+:label: Exc:DynSystDiscrete:SimplestSystem
 
 Check how in {prf:ref}`Ex:DynSystDiscrete:SimplestSystem` we can use
 {prf:ref}`Prop:DynSystDiscrete:DiagCase` to arrive at the same conclusion.
 ::::
+
+:::{admonition} Solution to {numref}`Exc:DynSystDiscrete:SimplestSystem`
+:class: solution, dropdown
+
+The eigenvalues of the (diagonal) matrix $A$ are $1.2$ and $0.8$ with corresponding eigenvectors $\begin{pmatrix}1\\0\end{pmatrix}$ and $\begin{pmatrix}0\\1\end{pmatrix}$.
+
+{prf:ref}`Prop:DynSystDiscrete:DiagCase` then gives the solution
+
+$$
+\vect{x}_k = c_1(1.2)^k\begin{pmatrix}1\\0\end{pmatrix}+c_2(0.8)^k\begin{pmatrix}0\\1\end{pmatrix}.
+$$
+
+If $k\rightarrow\infty$, then $(1.2)^k\rightarrow\infty$ and $(0.8)^k\rightarrow0$.
+
+If $c_1\neq0$, i.e. we do not start on the $y$-axis, we find $\vect{x}_k\rightarrow\begin{pmatrix}\pm\infty\\0\end{pmatrix}$, where the sign of $\pm$ is the sign of $c_1$.
+
+If $c_1=0$, i.e. we start on the $y$-axis, we find $\vect{x}_k\rightarrow\begin{pmatrix}0\\0\end{pmatrix}$.
+:::
 
 ::::{prf:example}
 :label: Ex:DynSystDiscrete:NiceNode
@@ -665,7 +684,7 @@ If $1 < \lambda_1 < \lambda_2$ the origin is called an **unstable node**.
 If $\lambda_{1,2} = \alpha \pm i\beta$, with $\beta \neq 0$, then if $|\lambda_i| < 1$, the origin is called a **stable spiral point**, and if $|\lambda_i| > 1$ it is an
 **unstable spiral point**.
 
-Lastly, if $\lambda_{1,2} = \alpha \pm i\beta$, with $\beta \neq 0$ and $|\lambda_i| = 1$, the origin is called a **centre point**
+Lastly, if $\lambda_{1,2} = \alpha \pm i\beta$, with $\beta \neq 0$ and $|\lambda_i| = 1$, the origin is called a **centre point**.
 
 ::::
 
@@ -676,6 +695,18 @@ Classify the behaviour of the origin in {prf:ref}`Ex:DynSystDiscrete:SimplestSys
 {prf:ref}`Ex:DynSystDiscrete:NiceNode` and
 {prf:ref}`Ex:DynSystDiscrete:SpiralPoint` according to {prf:ref}`Dfn:DynSystDiscrete:Types`.
 ::::
+
+
+:::{admonition} Solution to {numref}`Exc:DynSystDiscrete:Classification`
+:class: solution, dropdown
+
+{prf:ref}`Ex:DynSystDiscrete:SimplestSystem`: saddle point.
+
+{prf:ref}`Ex:DynSystDiscrete:NiceNode`: stable node.
+
+{prf:ref}`Ex:DynSystDiscrete:SpiralPoint`: unstable spiral point.
+
+:::
 
 ::::{prf:remark}
 :label: Rem:DynSystDiscrete:Classification
@@ -694,7 +725,7 @@ Note that we just ignore the case where the matrix $A$ has a double eigenvalue.
 :label: Exc:DynSystDiscrete:Eigenvalue=1
 
 The matrix $A = \left(\begin{array}{cc} -1 & 2 \\ -3 & 4 \end{array}\right)$
-has the following eigenvalues and eigenvectors
+has the following eigenvalues and correpsonding eigenvectors
 
 $$
   \lambda_1 = 1,\,\,\vect{v}_1 =  \left(\begin{array}{c} 1 \\ 1 \end{array}\right),
@@ -711,6 +742,36 @@ $$
 
 ::::
 
+::::{admonition} Solution to {numref}`Exc:DynSystDiscrete:Eigenvalue=1`
+:class: solution, dropdown
+
+For $\vect{s}_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$ we find the solution
+
+$$
+\vect{x}_k= (3)(1)^k\begin{pmatrix} 1 \\ 1 \end{pmatrix}+(-1)(2)^k\begin{pmatrix} 2 \\ 3 \end{pmatrix}.
+$$
+
+This gives a trajectory away from the origin, and because $(1)^k=1$, all points lie on the line starting in $(1,0)$ and going through $(-1,-3)$.
+
+For $\vect{s}_2 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$ we find the solution
+
+$$
+\vect{x}_k= (1)(1)^k\begin{pmatrix} 1 \\ 1 \end{pmatrix}+(0)(2)^k\begin{pmatrix} 2 \\ 3 \end{pmatrix}.
+$$
+
+This gives that the trajectory remains in the same point $(1,1)$ for all $k$.
+
+A sketch can be seen in {numref}`Fig:DynSystDiscrete:Eigenvalue1`.
+
+:::{figure} Images/Fig-DynSystDiscrete-Eigenvalue1.svg
+:name: Fig:DynSystDiscrete:Eigenvalue1
+:class: dark-light
+
+A sketch for the solutions of {numref}`Exc:DynSystDiscrete:Eigenvalue=1`.
+:::
+
+::::
+
 ::::{exercise}  
 :label: Exc:DynSystDiscrete:Modulus=1
 
@@ -722,6 +783,48 @@ Show that all paths that start from an initial point that is not the origin will
 Are the paths periodic? That is, will $\vect{x}_k$ return to the starting value $\vect{s}$ for a certain $k$?  If this happens, from here the process  starts anew.
 
 ::::
+
+:::{admonition} Solution to {numref}`Exc:DynSystDiscrete:Modulus=1`
+:class: solution, dropdown
+
+The complex eigenvalues have both modulus $1$, which indicates this is a centre point. To investigate the claim that the trajectories stay within a fixed distance from the origin, we consider the general solution
+
+$$
+\vect{x}_k = c_1(0.6 + 0.8i)^k\begin{pmatrix}-3-4i\\5\end{pmatrix}+c_2(0.6 - 0.8i)^k\begin{pmatrix}-3+4i\\5\end{pmatrix},
+$$
+
+and it's norm
+
+$$
+\begin{align*}
+\left\|\vect{x}_k\right\| &= \left\|c_1(0.6 + 0.8i)^k\begin{pmatrix}-3-4i\\5\end{pmatrix}+c_2(0.6 - 0.8i)^k\begin{pmatrix}-3+4i\\5\end{pmatrix}\right\| \\
+&\leq \left\|c_1(0.6 + 0.8i)^k\begin{pmatrix}-3-4i\\5\end{pmatrix}\right\|+\left\|c_2(0.6 - 0.8i)^k\begin{pmatrix}-3+4i\\5\end{pmatrix}\right\| \\
+&= |c_1||0.6 + 0.8i|^k\left\|\begin{pmatrix}-3-4i\\5\end{pmatrix}\right\|+|c_2||0.6 - 0.8i|^k\left\|\begin{pmatrix}-3+4i\\5\end{pmatrix}\right\| \\
+&= |c_1|(1)^k\sqrt{50}+|c_2|(1)^k\sqrt{50} \\
+&= (|c_1|+|c_2|)\sqrt{50},
+\end{align*}
+$$
+
+which shows the requested.
+
+Using {prf:ref}`Prop:ComplexEV:HiddenRotation` we can also write
+
+$$
+A = \begin{pmatrix}-3&4\\5&0\end{pmatrix}\begin{pmatrix}0.6&-0.8\\0.8&0.6\end{pmatrix}\begin{pmatrix}-3&4\\5&0\end{pmatrix}^{-1},
+$$
+
+where the middle matrix is a hidden rotation. This rotation has as the angle $\arctan\left(\frac{0.8}{0.6}\right)$, which is _not_ a rational multiple of $2\pi$ (because $0.6+0,8i$ is not a [Root of unity](https://en.wikipedia.org/wiki/Root_of_unity)). Therefor the rotation will never return to any point it has visited before. The paths are thus not periodic.
+
+An image containing one typical path can be seen in {numref}`Fig:DynSystDiscrete:Modulus1`.
+
+:::{figure} Images/Fig-DynSystDiscrete-Modulus1.svg
+:name: Fig:DynSystDiscrete:Modulus1
+:class: dark-light
+
+A sketch for the solutions of {numref}`Exc:DynSystDiscrete:Modulus=1`.
+:::
+
+:::
 
 ## Application: linear difference equations
 
@@ -947,7 +1050,7 @@ $$
   f_k \text{ is equal to } \dfrac{1}{\sqrt{5}} \left(\dfrac{1+\sqrt{5}}{2}\right)^k \text{ rounded to the nearest integer. }
 $$
 
-For example, for $k=6$ we find $\left[\dfrac{1}{\sqrt{5}}\left(\dfrac{1+\sqrt{5}}{2}\right)\right]^6 = 8.0249....$, which rounds correctly to the sixth Fibonacci number $f_6 = 8$.
+For example, for $k=6$ we find $\left[\dfrac{1}{\sqrt{5}}\left(\dfrac{1+\sqrt{5}}{2}\right)\right]^6 = 8.0249\ldots$, which rounds correctly to the sixth Fibonacci number $f_6 = 8$.
 ::::
 
 

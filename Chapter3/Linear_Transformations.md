@@ -27,7 +27,7 @@ $$
 
 A "state" may be anything ranging from a set of particles at certain positions, a set of pixels describing a minion, concentrations of chemical substances in a reactor tank, to population sizes of different species.
 Thinking mathematically we would describe such an input-output interpretation as a
-transformation (or: function, map, mapping, operator, .... )
+transformation (or: function, map, mapping, operator, etc. ).
 
 $$
    T: \mathbb{R}^n \to \mathbb{R}^m.
@@ -307,33 +307,6 @@ The transformation of {prf:ref}`Eq:LinTrafo:SkewProjection`.
 :description: Finding out which vectors are in the range of a linear transformation.
 
 ::::::
-
-%::::::{exercise}
-%:label: Exc:Lintrafo:VectorInRange?
-%
-%Find out whether the vectors
-%
-%$$
-% \mathbf{y}_1 =
-%\begin{pmatrix}
-% 2 \\ 1 \\ 0
-%\end{pmatrix} \quad \text{and} \quad
-% \mathbf{y}_2 =
-%\begin{pmatrix}
-% 2 \\ 0 \\ 1
-%\end{pmatrix}
-%$$
-%
-%are in the range of the matrix transformation
-%
-%$$
-%  T(\mathbf{x}) = A\mathbf{x} =
-%\begin{pmatrix}
-% 1 &1&1 \\ 1 &-1&3 \\ -1&2&-4
-%\end{pmatrix}\mathbf{x}.
-%$$
-%
-%::::::
 
 We close this subsection with an example of a matrix transformation representing a very elementary dynamical system.
 
@@ -1253,7 +1226,7 @@ $$
 3x-z \\ y+4z \\ x-y+2z
 \end{pmatrix} =
 \begin{pmatrix}
-.. & .. & .. \\ .. & .. & .. \\ .. & .. & ..
+\ldots & \ldots & \ldots \\ \ldots & \ldots & \ldots \\ \ldots & \ldots & \ldots
 \end{pmatrix}
 \begin{pmatrix}
 x \\ y \\ z
@@ -1264,7 +1237,24 @@ If you can, you will have shown that $T$ is a matrix transformation, and as a di
 
 ::::::
 
+:::{admonition} Solution to {numref}`Exc:LinTrafo:FillBlanks`
+:class: solution, dropdown
 
+$$
+\begin{pmatrix}
+3x-z \\ y+4z \\ x-y+2z
+\end{pmatrix} =
+\begin{pmatrix}
+3 & 0 & -1\\
+0 & 1 & 4 \\
+1 & -1 & 2
+\end{pmatrix}
+\begin{pmatrix}
+x \\ y \\ z
+\end{pmatrix}.
+$$
+
+:::
 
 
 To conclude we consider an example that refers back to {prf:ref}`Prop:LinTrafo:CompositionLintrafos`, and which will to a large extent pave the road for the product of two matrices.

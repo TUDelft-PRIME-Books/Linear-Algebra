@@ -305,7 +305,7 @@ But how do you determine whether a set of vectors is linearly independent or not
 ::::::{prf:proposition}
 :label: Prop:LinInd:LinIndisNonTrivSol
 
-A set $\left\lbrace\mathbf{v}_{1},...,\mathbf{v}_{k}\right\rbrace$ of vectors in $\mathbb{R}^{n}$ is linearly dependent if and only if the vector equation
+A set $\left\lbrace\mathbf{v}_{1},\ldots,\mathbf{v}_{k}\right\rbrace$ of vectors in $\mathbb{R}^{n}$ is linearly dependent if and only if the vector equation
 
 :::{math}
 :label: Eq:LinInd:VecEqisZero
@@ -321,7 +321,7 @@ has a non-trivial solution. That is, a solution where not all $c_i$ are equal to
 ::::::{admonition} Proof of {prf:ref}`Prop:LinInd:LinIndisNonTrivSol`
 :class: tudproof
 
-If $\left\lbrace\mathbf{v}_{1},...,\mathbf{v}_{k}\right\rbrace$ is linearly dependent, one of these vectors, say $\mathbf{v}_{i}$, is linearly dependent on the others, i.e. it is in $\Span{\mathbf{v}_{1},...,\mathbf{v}_{i-1},\mathbf{v}_{i+1},...\mathbf{v}_{k}}$. Therefore, there exist some scalars $c_{1},...,c_{i-1},c_{i+1},...,c_{k}$ such that
+If $\left\lbrace\mathbf{v}_{1},\ldots,\mathbf{v}_{k}\right\rbrace$ is linearly dependent, one of these vectors, say $\mathbf{v}_{i}$, is linearly dependent on the others, i.e. it is in $\Span{\mathbf{v}_{1},\ldots,\mathbf{v}_{i-1},\mathbf{v}_{i+1},\ldots,\mathbf{v}_{k}}$. Therefore, there exist some scalars $c_{1},\ldots,c_{i-1},c_{i+1},\ldots,c_{k}$ such that
 
 $$
 \mathbf{v}_{i}=c_{1}\mathbf{v}_{1}+\cdots +c_{i-1}\mathbf{v}_{i-1}+c_{i+1}\mathbf{v}_{i+1}+\cdots +c_{k}\mathbf{v}_{k}
@@ -333,16 +333,16 @@ $$
 0=c_{1}\mathbf{v}_{1}+\cdots +c_{i-1}\mathbf{v}_{i-1}-\mathbf{v}_{i}+c_{i+1}\mathbf{v}_{i+1}+\cdots +c_{k}\mathbf{v}_{k}.
 $$
 
-This means that $(c_{1},...,c_{i-1},-1,c_{i+1},...,c_{k})$ is a solution of the Equation {eq}`Eq:LinInd:VecEqisZero`. It is a non-trivial one since the $i$-th coefficient is $-1$ which is non-zero.
+This means that $(c_{1},\ldots,c_{i-1},-1,c_{i+1},\ldots,c_{k})$ is a solution of the Equation {eq}`Eq:LinInd:VecEqisZero`. It is a non-trivial one since the $i$-th coefficient is $-1$ which is non-zero.
 
-If Equation {eq}`Eq:LinInd:VecEqisZero` has a non-trivial solution then there are $c_{1},...,c_{k}$, not all $0$, such that $c_{1}\mathbf{v}_{1}+\cdots +c_{k}\mathbf{v}_{k}=\mathbf{0}$. Take any $i$ such that $c_{i}\neq0$. Then
+If Equation {eq}`Eq:LinInd:VecEqisZero` has a non-trivial solution then there are $c_{1},\ldots,c_{k}$, not all $0$, such that $c_{1}\mathbf{v}_{1}+\cdots +c_{k}\mathbf{v}_{k}=\mathbf{0}$. Take any $i$ such that $c_{i}\neq0$. Then
 
 $$
 
 \mathbf{v}_{i}=\frac{c_{1}}{c_{i}}\mathbf{v}_{1}-\cdots -\frac{c_{i-1}}{c_{i}}\mathbf{v}_{i-1}-\frac{c_{i+1}}{c_{i}}\mathbf{v}_{i+1}-\cdots -\frac{c_{k}}{c_{i}}\mathbf{v}_{k}.
 $$
 
-This implies $\mathbf{v}_{i}$ is in $\Span{\mathbf{v}_{1},...,\mathbf{v}_{i-1},\mathbf{v}_{i+1},...,\mathbf{v}_{k}}$ so $\left\lbrace\mathbf{v}_{1},...,\mathbf{v}_{k}\right\rbrace$ is linearly dependent.
+This implies $\mathbf{v}_{i}$ is in $\Span{\mathbf{v}_{1},\ldots,\mathbf{v}_{i-1},\mathbf{v}_{i+1},\ldots,\mathbf{v}_{k}}$ so $\left\lbrace\mathbf{v}_{1},\ldots,\mathbf{v}_{k}\right\rbrace$ is linearly dependent.
 
 ::::::
 
@@ -444,7 +444,7 @@ There now follow a couple of statements which can be helpful in determining whet
 ::::::{prf:theorem}
 :label: Thm:LindInd:LinIndisVectDeponPrevious
 
-An ordered set $S=(\mathbf{v}_{1},...,\mathbf{v}_{n})$ is linearly dependent if and only if there is a $k$ such that $\mathbf{v}_{k}$ is a linear combination of $\mathbf{v}_{1},...,\mathbf{v}_{k-1}$.
+An ordered set $S=(\mathbf{v}_{1},\ldots,\mathbf{v}_{n})$ is linearly dependent if and only if there is a $k$ such that $\mathbf{v}_{k}$ is a linear combination of $\mathbf{v}_{1},\ldots,\mathbf{v}_{k-1}$.
 
 ::::::
 
@@ -453,7 +453,7 @@ An ordered set $S=(\mathbf{v}_{1},...,\mathbf{v}_{n})$ is linearly dependent if 
 ::::::{admonition} Proof of {prf:ref}`Thm:LindInd:LinIndisVectDeponPrevious`
 :class: tudproof, dropdown
 
-Let us assume $\mathbf{v}_{k}=c_{1}\mathbf{v}_{1}+\cdots+c_{k-1}\mathbf{v}_{k-1}$ for some scalars $c_{1},...,c_{k-1}$. An arbitrary element $\mathbf{v}$ of $\operatorname{Span}S$ is a linear combination of $\mathbf{v}_{1},...,\mathbf{v}_{n}$, so it is
+Let us assume $\mathbf{v}_{k}=c_{1}\mathbf{v}_{1}+\cdots+c_{k-1}\mathbf{v}_{k-1}$ for some scalars $c_{1},\ldots,c_{k-1}$. An arbitrary element $\mathbf{v}$ of $\operatorname{Span}S$ is a linear combination of $\mathbf{v}_{1},\ldots,\mathbf{v}_{n}$, so it is
 
 $$
 
@@ -461,7 +461,7 @@ $$
 d_{n}\mathbf{v}_{n}
 $$
 
-for certain scalars $d_{1},...,d_{n}$. We can now rewrite $\mathbf{v}$ as
+for certain scalars $d_{1},\ldots,d_{n}$. We can now rewrite $\mathbf{v}$ as
 
 $$
 
@@ -471,24 +471,24 @@ $$
 
 so $\mathbf{v}$ is in $\operatorname{Span}S\setminus\left\lbrace\mathbf{v}_{k}\right\rbrace$.
 
-Suppose now that $S$ is linearly dependent. Let $k$ be maximal such that $\operatorname{Span}S=\operatorname{Span}S\setminus\left\lbrace\mathbf{v}_{k}\right\rbrace$. Since $\mathbf{v}_{k}$ is in $S$, it is in $\operatorname{Span}S\setminus\left\lbrace\mathbf{v}_{k}\right\rbrace$. So there exist scalars $c_{1},..,c_{k-1},c_{k+1},...,c_{n}$ such that
+Suppose now that $S$ is linearly dependent. Let $k$ be maximal such that $\operatorname{Span}S=\operatorname{Span}S\setminus\left\lbrace\mathbf{v}_{k}\right\rbrace$. Since $\mathbf{v}_{k}$ is in $S$, it is in $\operatorname{Span}S\setminus\left\lbrace\mathbf{v}_{k}\right\rbrace$. So there exist scalars $c_{1},\ldots,c_{k-1},c_{k+1},\ldots,c_{n}$ such that
 
 :::{math}
 :label: Eq:LinInd:vkLinCombofOthers
 
 \mathbf{v}_{k}=c_{1}\mathbf{v}_{1}+\cdots+c_{k-1}\mathbf{v}_{k-1}+c_{k+1}\mathbf{v}_{k+1}+\cdots+
-c_{n}\mathbf{v}\_{n}.
+c_{n}\mathbf{v}_{n}.
 
 :::
 
-If we can show that $c_{k+1}=...=c_{n}=0$ we are done, because then we have written $\mathbf{v}_{k}$ as a linear combination of $\mathbf{v}_{1},...,\mathbf{v}_{k-1}$. We will prove this by contraposition. Assume $c_{j}\neq0$ for some $j$ greater than $k$. Then Equation {eq}`Eq:LinInd:vkLinCombofOthers` yields
+If we can show that $c_{k+1}=\cdots=c_{n}=0$ we are done, because then we have written $\mathbf{v}_{k}$ as a linear combination of $\mathbf{v}_{1},\ldots,\mathbf{v}_{k-1}$. We will prove this by contraposition. Assume $c_{j}\neq0$ for some $j$ greater than $k$. Then Equation {eq}`Eq:LinInd:vkLinCombofOthers` yields
 
 $$
 
 \mathbf{v}_{j}=\frac{1}{c_{j}}(c_{1}\mathbf{v}_{1}-\cdots -c_{k-1}\mathbf{v}_{k-1}+\mathbf{v}_{k}-c_{k+1}\mathbf{v}_{k+1}-\cdots-c_{j-1}\mathbf{v}_{j-1}-c_{j+1}\mathbf{v}_{j+1}-\cdots -c_{n}\mathbf{v}_{n}).
 $$
 
-Consequently, any linear combination of $S$ can be rewritten as a linear combination of $\mathbf{v}_{1},...,\mathbf{v}_{j-1},\mathbf{v}_{j+1},...,\mathbf{v}_{n}$, i.e. $\operatorname{Span}S=\operatorname{Span}S\setminus\left\lbrace\mathbf{v}_{j}\right\rbrace$. But $j$ is larger than $k$ and we have assumed $k$ to be maximal with this property! This is impossible, so $c_{j}=0$ for all $j$ greater than $k$.
+Consequently, any linear combination of $S$ can be rewritten as a linear combination of $\mathbf{v}_{1},\ldots,\mathbf{v}_{j-1},\mathbf{v}_{j+1},\ldots,\mathbf{v}_{n}$, i.e. $\operatorname{Span}S=\operatorname{Span}S\setminus\left\lbrace\mathbf{v}_{j}\right\rbrace$. But $j$ is larger than $k$ and we have assumed $k$ to be maximal with this property! This is impossible, so $c_{j}=0$ for all $j$ greater than $k$.
 
 ::::::
 
@@ -497,7 +497,7 @@ Consequently, any linear combination of $S$ can be rewritten as a linear combina
 ::::::{prf:theorem}
 :label: Thm:LinInd:TooManyVectsimpliesLinDep
 
-Suppose $\mathbf{u}_{1},...,\mathbf{u}_{k}$ and $\mathbf{v}_{1},...,\mathbf{v}_{l}$ are all vectors in $\mathbb{R}^{n}$. If $k<l$ and $\Span{\mathbf{u}_{1},...,\mathbf{u}_{k}}$ contains $\Span{\mathbf{v}_{1},...,\mathbf{v}_{l}}$ then the set $\left\lbrace\mathbf{v}_{1},...,\mathbf{v}_{l}\right\rbrace$ is linearly dependent.
+Suppose $\mathbf{u}_{1},\ldots,\mathbf{u}_{k}$ and $\mathbf{v}_{1},\ldots,\mathbf{v}_{l}$ are all vectors in $\mathbb{R}^{n}$. If $k<l$ and $\Span{\mathbf{u}_{1},\ldots,\mathbf{u}_{k}}$ contains $\Span{\mathbf{v}_{1},\ldots,\mathbf{v}_{l}}$ then the set $\left\lbrace\mathbf{v}_{1},\ldots,\mathbf{v}_{l}\right\rbrace$ is linearly dependent.
 
 ::::::
 
@@ -520,9 +520,9 @@ $$
 
 where $D$ is the echelon form of $C$, $E$ is an echelon form of $A$, and $F$ is equivalent to $B$.
 
-We claim that all of the pivot positions of $D$ are in $E$. Indeed, suppose that the $i$-th column of $F$, let's call it $f_{i}$, contains a pivot. Then $E\mathbf{x}=\mathbf{f}_{i}$ is inconsistent and therefore $A\mathbf{x}=\mathbf{v}_{i}$ is also inconsistent since the elementary row operations preserve linear combinations. But this implies that $\mathbf{v}_{i}$ is not a linear combination of $\mathbf{u}_{1},...,\mathbf{u}_{k}$ hence it is not in $\Span{\mathbf{u}_{1},...,\mathbf{u}_{k}}$. This is a contradiction.
+We claim that all of the pivot positions of $D$ are in $E$. Indeed, suppose that the $i$-th column of $F$, let's call it $f_{i}$, contains a pivot. Then $E\mathbf{x}=\mathbf{f}_{i}$ is inconsistent and therefore $A\mathbf{x}=\mathbf{v}_{i}$ is also inconsistent since the elementary row operations preserve linear combinations. But this implies that $\mathbf{v}_{i}$ is not a linear combination of $\mathbf{u}_{1},\ldots,\mathbf{u}_{k}$ hence it is not in $\Span{\mathbf{u}_{1},\ldots,\mathbf{u}_{k}}$. This is a contradiction.
 
-Since $F$ contains no pivot positions of $D$, it has at least as many zero rows as $E$. This implies that an echelon form $G$ of $B$, which is necessarily also an echelon form of $F$, must also have at least as many zero rows as $E$. Therefore, $G$ has no more pivots than $E$. Since $E$ has at most $k$ pivots and $k<l$, $G$ must have a column without pivot. So $B\mathbf{x}=\mathbf{0}$ has a non-trivial solution and by {prf:ref}`Cor:LinInd:LinIndisColwithoutPivot` the set $\left\lbrace\mathbf{v}_{1},...,\mathbf{v}_{l}\right\rbrace$ must be linearly dependent.
+Since $F$ contains no pivot positions of $D$, it has at least as many zero rows as $E$. This implies that an echelon form $G$ of $B$, which is necessarily also an echelon form of $F$, must also have at least as many zero rows as $E$. Therefore, $G$ has no more pivots than $E$. Since $E$ has at most $k$ pivots and $k<l$, $G$ must have a column without pivot. So $B\mathbf{x}=\mathbf{0}$ has a non-trivial solution and by {prf:ref}`Cor:LinInd:LinIndisColwithoutPivot` the set $\left\lbrace\mathbf{v}_{1},\ldots,\mathbf{v}_{l}\right\rbrace$ must be linearly dependent.
 
 ::::::
 
@@ -536,7 +536,7 @@ Let $S$ be a subset of $\mathbb{R}^{n}$. If there are more than $n$ vectors in $
 ::::::{admonition} Proof of {prf:ref}`Thm:LinInd:MoreRowthanColmeansLinDep`
 :class: tudproof
 
-Take distinct vectors $\mathbf{v}_{1},...,\mathbf{v}_{n+1}$ in $S$. $\Span{\mathbf{v}_{1},...,\mathbf{v}_{n+1}}$ is contained in $\Span{\mathbf{e}_{1},..,\mathbf{e}_{n}}$ and $n+1>n$, so $\left\lbrace\mathbf{v}_{1},..,\mathbf{v}_{n+1}\right\rbrace$ is linearly dependent by {prf:ref}`Thm:LinInd:TooManyVectsimpliesLinDep`. Since this set is contained in $S$, $S$ must be linearly dependent, too, by {prf:ref}`Prop:LinInd:LinDepSets`.
+Take distinct vectors $\mathbf{v}_{1},\ldots,\mathbf{v}_{n+1}$ in $S$. $\Span{\mathbf{v}_{1},\ldots,\mathbf{v}_{n+1}}$ is contained in $\Span{\mathbf{e}_{1},\ldots,\mathbf{e}_{n}}$ and $n+1>n$, so $\left\lbrace\mathbf{v}_{1},\ldots,\mathbf{v}_{n+1}\right\rbrace$ is linearly dependent by {prf:ref}`Thm:LinInd:TooManyVectsimpliesLinDep`. Since this set is contained in $S$, $S$ must be linearly dependent, too, by {prf:ref}`Prop:LinInd:LinDepSets`.
 
 ::::::
 

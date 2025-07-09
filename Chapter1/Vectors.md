@@ -110,7 +110,7 @@ The same game we played in the plane also works in $3$-dimensional space -- or e
 :label: Dfn:Vectors:Vectors
 
 
-Let $n$ be a positive natural number. If $a_{1},a_{2},...,a_{n}$ are real numbers, we call
+Let $n$ be a positive natural number. If $a_{1},a_{2},\ldots,a_{n}$ are real numbers, we call
 
 $$
 
@@ -119,7 +119,7 @@ a_{1}\\a_{2}\\\vdots\\a_{n}
 \end{pmatrix}
 $$
 
- a **vector** or sometimes a **column vector**. The number $n$ is called the **size** of the vector $\mathbf{v}$ and $a_{1},a_{2},...,a_{n}$ are called its **entries** or **components**. In particular, we call $a_{i}$ the **$i$-th entry** or **$i$-th component** of $\mathbf{v}$. The collection of all such vectors is written as $\mathbb{R}^{n}$. The vector for which all entries are $0$ will play a special role. We will denote it by $\mathbf{0}$.
+ a **vector** or sometimes a **column vector**. The number $n$ is called the **size** of the vector $\mathbf{v}$ and $a_{1},a_{2},\ldots,a_{n}$ are called its **entries** or **components**. In particular, we call $a_{i}$ the **$i$-th entry** or **$i$-th component** of $\mathbf{v}$. The collection of all such vectors is written as $\mathbb{R}^{n}$. The vector for which all entries are $0$ will play a special role. We will denote it by $\mathbf{0}$.
 
 ```
 

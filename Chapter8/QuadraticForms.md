@@ -143,6 +143,7 @@ The graph of a quadratic function is a curved surface.
 :::{figure} Images/Fig-QuadForms-QuadSurface1.png
 :name: Fig:QuadForms:QuadSurface1
 :class: dark-light
+:width: 50%
 
 The surface $z = -\frac13x_1^2 + \frac13x_2^2 + 2 $.
 :::
@@ -150,6 +151,7 @@ The surface $z = -\frac13x_1^2 + \frac13x_2^2 + 2 $.
 :::{figure} Images/Fig-QuadForms-QuadSurface2.png
 :name: Fig:QuadForms:QuadSurface2
 :class: dark-light
+:width: 50%
 
 The surface $z = -\frac12x_1^2 - \frac14x_2^2 + x_1 - x_2 + 2$.
 :::
@@ -508,7 +510,7 @@ It follows that the numbers of zeros on the diagonals, $n - p_i - n_i$, $i = 1,2
 
 In the two examples we see that $p_1 = p_2 = 1$ and also $n_1 = n_2 = 1$, in accordance with the statement.
 
-The property is known as _Sylvester's Law of Inertia_.
+The property is known as _[Sylvester's Law of Inertia](https://en.wikipedia.org/wiki/Sylvester%27s_law_of_inertia)_.
 
 ::::
 
@@ -748,6 +750,30 @@ Verify the validity of the second statement made in {prf:ref}`Thm:QuadForms:Clas
 
 ::::
 
+:::{admonition} Solution to {numref}`Exc:QuadForms:CheckTheorem`
+:class: solution, dropdown
+
+The transformed quadratic form is still
+
+$$
+  \tilde{q}(\vect{y}) = \vect{y}^TD\vect{y} = \lambda_1y_1^2 + \cdots + \lambda_ny_n^2,
+$$
+
+and $q_A(\vect{x})=\tilde{q}(\vect{y})$ with $\vect{x} = Q\vect{y}$.
+
+Now we can chain the following equivalent statements:
+
+$$
+\begin{align*}
+\text{$q_A$ is positive definite} &\iff \text{$q_A(\vect{x})\geq0$ for all $\vect{x}$} \\
+&\iff \text{$\tilde{q}(\vect{y})\geq0$ for all $\vect{y}$} \\
+&\iff \text{$\lambda_1y_1^2 + \cdots + \lambda_ny_n^2\geq0$ for all $\vect{y}$} \\
+&\iff \text{$\lambda_j\geq0$ for $j=1,\ldots,n$}.
+\end{align*}
+$$
+
+:::
+
 ::::{prf:example}
 :label: Ex:QuadForms:CompleteSquares2
 
@@ -778,6 +804,10 @@ With {prf:ref}`Thm:QuadForms:Classification` in mind, we can conclude that the q
 
 This exercise nicely recapitulates the ideas of the section. There is a cameo of the concept of completing the square, but that is of minor importance.
 
+<ol type = "i">
+
+<li>
+
 Show that the quadratic from in {prf:ref}`Ex:QuadForms:CompleteSquares2` can be rewritten
 as follows
 
@@ -788,7 +818,7 @@ q(x_1,x_2,x_3) = 2(x_1 - \tfrac12x_2 - \tfrac12x_3)^2 + \tfrac12(x_2 - x_3)^2.
 
 :::
 
-<ol type = "i">
+</li>
 
 <li>
 
@@ -818,6 +848,70 @@ Check that the vector you found in iii. is an eigenvector of the matrix of the q
 </ol>
 
 ::::
+
+:::{admonition} Solution to {numref}`Exc:QuadForms:CompleteSquares2`
+:class: solution, dropdown
+
+<ol type = "i">
+
+<li>
+
+We perform direct computations:
+
+$$
+\begin{align*}
+q(x_1,x_2,x_3) &= 2x_1^2 + x_2^2 +x_3^2  - 2x_1x_2 - 2x_1x_3 \\
+&= 2\left(x_1^2 - x_1x_2 - x_1x_3\right)+ x_2^2 +x_3^2  \\
+&= 2\left(\left(x_1 - \frac12x_2 - \frac12x_3\right)^2-\left(\frac12x_2+\frac12x_3\right)^2\right)+ x_2^2 +x_3^2  \\
+&= 2\left(\left(x_1 - \frac12x_2 - \frac12x_3\right)^2-\frac14x_2^2-\frac14x_2x_3-\frac14x_3^2\right)+ x_2^2 +x_3^2  \\
+&= 2\left(x_1 - \frac12x_2 - \frac12x_3\right)^2-\frac12x_2^2-\frac12x_2x_3-\frac12x_3^2+ x_2^2 +x_3^2  \\
+&= 2\left(x_1 - \frac12x_2 - \frac12x_3\right)^2+\frac12x_2^2-\frac12x_2x_3+\frac12x_3^2  \\
+&= 2\left(x_1 - \frac12x_2 - \frac12x_3\right)^2+\frac12\left(x_2^2-x_2x_3+x_3^2\right)  \\
+&= 2(x_1 - \tfrac12x_2 - \tfrac12x_3)^2 + \tfrac12(x_2 - x_3)^2.
+\end{align*}
+$$
+
+</li>
+
+<li>
+
+We only present the answer here:
+
+$$
+P=\begin{pmatrix}
+-\frac{2}{\sqrt6} & 0 & \frac{1}{\sqrt2} \\
+\frac{1}{\sqrt6} & -\frac{1}{\sqrt2} & \frac{1}{\sqrt2} \\
+\frac{1}{\sqrt6}& \frac{1}{\sqrt2} & \frac{1}{\sqrt2}
+\end{pmatrix}\text{ and }D_2=\begin{pmatrix}3&0&0\\0&1&0\\0&0&0\end{pmatrix}
+$$
+
+</li>
+
+<li>
+
+$q$ is positive semi-definite.
+
+</li>
+
+<li>
+
+The last term of Equation {eq}`Eq:QuadForms:CompleteSquares2` gives rise to chosing $x_2=x_3$. The first term then indicates $x_1=\frac12x_2+\frac12x_3=x_3$. Chosing $x_3=1$ gives $x_2=1$ and $x_1=1$. In vector form:
+
+$$
+\vect{x}=\begin{pmatrix}1\\1\\1\end{pmatrix}.
+$$
+
+</li>
+
+<li>
+
+The vector $\vect{x}=\begin{pmatrix}1\\1\\1\end{pmatrix}$ is a non-zero scalar multiple of the third column of $P$, so it is an eigenvector.
+
+</li>
+
+</ol>
+
+:::
 
 (Subsec:ConicSections)=
 

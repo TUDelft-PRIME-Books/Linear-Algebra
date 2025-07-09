@@ -228,17 +228,17 @@ The proof is completely analogous to the proof of {prf:ref}`Prop:SymmetricMat:Or
 Suppose  
 
 $$
-  A\mathbf{u} = \lambda\mathbf{u},\quad A\mathbf{v} = \mu\mathbf{v},\quad\text{  where} \,\,\,\lambda \neq \mu.
+  A\mathbf{u} = \lambda\mathbf{u},\quad A\mathbf{v} = \mu\mathbf{v},\text{ where }\lambda \neq \mu.
 $$
 
-We consider the expression  $\mathbf{u}^T\ip A \mathbf{v} = \mathbf{u}T A \mathbf{v}$.
+We consider the expression  $\mathbf{u}^T\ip A \mathbf{v} = \mathbf{u}^T A \mathbf{v}$.
 
 On the one hand  
 
 :::{math}
 :label: eq:SymmetricMat:uTAv3
 
-  \mathbf{u}\ip A \mathbf{v} = \mathbf{u}^T (A\mathbf{v}) = \mathbf{u}^T  \mu \mathbf{v} = \mu \mathbf{u}T\mathbf{v}  = \mu (\mathbf{u}\mathbf{v})
+  \mathbf{u}\ip A \mathbf{v} = \mathbf{u}^T(A\mathbf{v}) = \mathbf{u}^T\mu \mathbf{v} = \mu \mathbf{u}^T\mathbf{v}  = \mu (\mathbf{u}\ip\mathbf{v})
 
 :::
 
@@ -294,7 +294,7 @@ $$
 Now suppose that $\lambda$ is an eigenvalue of the symmetric matrix $A$, and $\mathbf{v}$ is a non-zero (possibly complex) eigenvector of $A$ for the eigenvalue $\lambda$. Note that, since $A$ is real and symmetric, $\overline{{A}^T} = \overline{A} = A$.
 To prove that $\lambda$ is real, we will show that $\overline{\lambda} = \lambda$.
 
-We use kind of the same 'trick' as in {prf:ref}`Prop:SymmetricMat:OrthogonalEigenvectors` Equation {eq}`Eq:SymmetricMat:Av1v2`.
+We use kind of the same 'trick' as in Equation {eq}`Eq:SymmetricMat:Av1v2` in thre proof of {prf:ref}`Prop:SymmetricMat:OrthogonalEigenvectors`.
 
 On the one hand
 
@@ -638,16 +638,16 @@ $$
    \end{array}\right).
 $$
 
-Continuing in this fashion we find
+Continuing like this we find
 
 $$
   A_{n-1} = Q_{n-1}^{-1} \cdots Q_2^{-1}Q_1^{-1}A Q_1  Q_2 \cdots Q_{n-1} =
   \left(\begin{array}{ccccc}
     \lambda_1 &      0    & 0  & \cdots &0 \\
        0      & \lambda_2 & 0  &\cdots &0 \\
-     \vdots & & \ddots &  & \vdots\\
-     \vdots & &  & \ddots & \vdots\\
-     0 & 0 &  \cdots & 0 &\lambda_n
+     0 & 0 & \lambda_3 & \cdots & 0 \\
+     \vdots & \vdots & \vdots & \ddots & \vdots\\
+     0 & 0 &  0 & \cdots &\lambda_n
    \end{array}\right).
 
 
@@ -657,7 +657,7 @@ This proves that $A$ is diagonalisable, with $Q = Q_1Q_2 \cdots Q_{n-1}$ as a di
 
 Moreover, since the product of orthogonal matrices is orthogonal, $A$ is in fact orthogonally diagonalisable.
 
-%::::
+::::
 
 :::{prf:example}
 :label: Ex:SymmetricMat:ConstructDiag
@@ -813,11 +813,7 @@ The importance of the step-by-step reduction is that it shows that from the 'min
 
 :::
 
-::::
-
-
-
-## Maximising $||A\vect{x}||$ for a symmetric matrix $A$.
+## Maximising $||A\vect{x}||$ for a symmetric matrix $A$
 
 How much can a vector $\vect{x}$ in $\R^{n}$ 'blow up' when multiplied by an $m \times n$-matrix $A$?
 To answer this question we have to consider how to maximise the ratio
@@ -985,7 +981,7 @@ In the last subsection we will show how the orthogonal diagonalisation can be re
 
 (SubSec:SymmetricMat:SpectralDecomp)=
 
-## The spectral decomposition of a symmetric matrix.
+## The spectral decomposition of a symmetric matrix
 
 Let's take up an earlier example ({prf:ref}`Ex:SymmetricMat:OrthDiag2x2`) to illustrate what the spectral decomposition is about.
 
@@ -1083,12 +1079,47 @@ where the vectors $\mathbf{q}_i$ of course are the (orthonormal) columns of the 
 ::::
 
 ::::{exercise}
+:label: Exc:SymmetricMat:SpectralDecomp
 
 The eigenvalues of the matrix $A=\begin{pmatrix} 2 & 1 & 0 \\ 1 & 3 &  1\\ 0 & 1& 2 \end{pmatrix}$ are $1$, $2$ and $4$.
 
 Find the spectral decomposition of $A$.
 
 ::::
+
+:::{admonition} Solution to {numref}`Exc:SymmetricMat:SpectralDecomp`
+:class: solution, dropdown
+
+We first find an orthogonal diagonalisation $QDQ^T$ of $A$, which results in
+
+$$
+Q=\begin{pmatrix}\frac{1}{\sqrt3}&-\frac{1}{\sqrt2}&\frac{1}{\sqrt6}\\-\frac{1}{\sqrt3}&0&\frac{2}{\sqrt6}\\\frac{1}{\sqrt3}&\frac{1}{\sqrt2}&\frac{1}{\sqrt6}\end{pmatrix}\text{ and }D=\begin{pmatrix}1&0&0\\0&2&0\\0&0&4\end{pmatrix}.
+$$
+
+Use the column-row expansion of the matrix product results in:
+
+$$
+A = (1)
+\begin{pmatrix}
+\frac{1}{3}&-\frac{1}{3}&\frac{1}{3}\\
+-\frac{1}{3}&\frac{1}{3}&-\frac{1}{3}\\
+\frac{1}{3}&-\frac{1}{3}&\frac{1}{3}
+\end{pmatrix}
++(2)
+\begin{pmatrix}
+\frac{1}{2}&0&-\frac{1}{2}\\
+0&0&0\\
+-\frac{1}{2}&0&\frac{1}{2}
+\end{pmatrix}
++(4)
+\begin{pmatrix}
+\frac{1}{6}&\frac{2}{6}&\frac{1}{6}\\
+\frac{2}{6}&\frac{4}{6}&\frac{2}{6}\\
+\frac{1}{6}&\frac{2}{6}&\frac{1}{6}
+\end{pmatrix}.
+$$
+
+:::
 
 If in {prf:ref}`Thm:SymmetricMat:SpectralDecomp` the projections onto eigenvectors for the same eigenvalue are grouped together, then the following alternative form of the spectral decomposition results.
 
@@ -1386,7 +1417,7 @@ We give the definition, and if interested you can explore this species by workin
 ::::{prf:definition}
 :label: Dfn:SymmetricMat:SkewSymmetric
 
-A matrix $A$ is called  **skew-symmetric**  if $A^T = -A$
+A matrix $A$ is called  **skew-symmetric**  if $A^T = -A$.
 
 ::::
 

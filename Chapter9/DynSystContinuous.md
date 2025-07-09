@@ -48,7 +48,7 @@ if $f(t)=e^{\lambda t}$, then $f'(t)=\lambda e^{\lambda t}$.
 
 This last point means that the equation $x'=\lambda x$ has solution $x=e^{\lambda t}$. In fact, for every real number $c$, $y=ce^{\lambda t}$ is solution of $x'=\lambda x$. We want to generalise this idea. But first, we need some terminology.
 
-Suppose we have differentiable functions $x_{1},...,x_{n}$ and real numbers $a_{ij}$ for $1\leq i,j\leq n$. A system of equations
+Suppose we have differentiable functions $x_{1},\ldots,x_{n}$ and real numbers $a_{ij}$ for $1\leq i,j\leq n$. A system of equations
 
 $$
 
@@ -116,7 +116,7 @@ In view of this result, it makes sense to generalise some concepts which we have
 :::{prf:definition}
 :label: Def:DynSystContinuous:LinComb
 
-We say that a vector function $\vect{x}$ is a **linear combination** of vector functions $\vect{x}_{1},...,\vect{x}_{n}$ if there are scalars $c_{1},...,c_{n}$ in $\mathbb{R}$ such that:
+We say that a vector function $\vect{x}$ is a **linear combination** of vector functions $\vect{x}_{1},\ldots,\vect{x}_{n}$ if there are scalars $c_{1},\ldots,c_{n}$ in $\mathbb{R}$ such that:
 
 $$
 
@@ -124,7 +124,7 @@ $$
 
 $$
 
-In particular, the function $\vect{0}$ can be written as a linear combination of any set of vector functions $S=\left\{\vect{x}_{1},...,\vect{x}_{n}\right\}$ by putting $c_{1}=\cdots=c_{n}=0$. If this is the only way $\vect{0}$ can be written as a linear combination of vector functions in $S$, then $S$ is called **linearly independent**.
+In particular, the function $\vect{0}$ can be written as a linear combination of any set of vector functions $S=\left\{\vect{x}_{1},\ldots,\vect{x}_{n}\right\}$ by putting $c_{1}=\cdots=c_{n}=0$. If this is the only way $\vect{0}$ can be written as a linear combination of vector functions in $S$, then $S$ is called **linearly independent**.
 
 :::
 
@@ -227,7 +227,7 @@ a_{nn}
 
 $$
 
-Of course, most matrices are not diagonal. However, most matrices are at least _diagonalisable_, and we can use this to our advantage. Suppose that the matrix $A$ can be diagonalised, so $A=PDP^{-1}$ where $D$ is the diagonal matrix with the eigenvalues $\lambda_{1},...,\lambda_{n}$ on the diagonal and $P$ is the matrix with the corresponding eigenvectors $\vect{v}_{1},...,\vect{v}_{n}$ as columns. Then we have 
+Of course, most matrices are not diagonal. However, most matrices are at least _diagonalisable_, and we can use this to our advantage. Suppose that the matrix $A$ can be diagonalised, so $A=PDP^{-1}$ where $D$ is the diagonal matrix with the eigenvalues $\lambda_{1},\ldots,\lambda_{n}$ on the diagonal and $P$ is the matrix with the corresponding eigenvectors $\vect{v}_{1},\ldots,\vect{v}_{n}$ as columns. Then we have 
 
 $$
 
@@ -270,7 +270,7 @@ The solution of the original system can now be obtained by multiplying from the 
 :::{prf:proposition}
 :label: Prop:DynSystContinuous:SolsofDynSyst
 
-If $A$ is a diagonalisable matrix with eigenvalues $\lambda_{1},...,\lambda_{n}$ and a corresponding basis of eigenvectors $\vect{v}_{1},...,\vect{v}_{n}$, then the system $\vect{x}'=A\vect{x}$ has general solution:
+If $A$ is a diagonalisable matrix with eigenvalues $\lambda_{1},\ldots,\lambda_{n}$ and a corresponding basis of eigenvectors $\vect{v}_{1},\ldots,\vect{v}_{n}$, then the system $\vect{x}'=A\vect{x}$ has general solution:
 
 $$
 
@@ -278,7 +278,7 @@ $$
 
 $$
 
-where $c_{1},...,c_{n}$ are constants.
+where $c_{1},\ldots,c_{n}$ are constants.
 
 :::
 

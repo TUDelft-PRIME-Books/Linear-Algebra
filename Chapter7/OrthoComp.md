@@ -39,7 +39,7 @@ Prove {prf:ref}`Prop:OrthoComp:OrthotoSpanningSet`.
 :::{admonition} Solution to {numref}`Exc:OrthoComp:OrthotoSpanningSet`
 :class: solution, dropdown
 
-Assume the vector $\vect{u}$ is orthogonal to every $\vect{v}_{i}$. If $\vect{v}_{1},...,\vect{v}_{n}$ spans $V$, then any $\vect{v}$ in $V$ can be written as $c_{1}\vect{v}_{1}+\cdots c_{n}\vect{v}_{n}$ for certain $c_{1},...,c_{n}$ in $\R$. But then $\vect{u}\cdot\vect{v}=c_{1}\vect{u}\cdot\vect{v}_{1}+\cdots+c_{n}\vect{u}\cdot\vect{v}_{n}=0$, so $\vect{u}$ is orthogonl to $\vect{v}$.
+Assume the vector $\vect{u}$ is orthogonal to every $\vect{v}_{i}$. If $\vect{v}_{1},\ldots,\vect{v}_{n}$ spans $V$, then any $\vect{v}$ in $V$ can be written as $c_{1}\vect{v}_{1}+\cdots c_{n}\vect{v}_{n}$ for certain $c_{1},\ldots,c_{n}$ in $\R$. But then $\vect{u}\cdot\vect{v}=c_{1}\vect{u}\cdot\vect{v}_{1}+\cdots+c_{n}\vect{u}\cdot\vect{v}_{n}=0$, so $\vect{u}$ is orthogonl to $\vect{v}$.
 
 :::
 
@@ -153,11 +153,11 @@ For any matrix $A$ we have $\operatorname{Col}(A^{T})^{\bot}=\operatorname{Nul}(
 :::{admonition} Proof of {prf:ref}`Prop:OrthoComp:OrthoComplementNulA`
 :class: tudproof
 
-Note that the second claim is easily derived from the first by substituting $A^{T}$ for $A$. Let $\vect{r}_{1},...,\vect{r}_{n}$ be the rows of $A$. Then $\vect{r}_{1}^{T},...,\vect{r}_{n}^{T}$ are the columns of $A^{T}$. For any vector $\vect{x}$ in $\R^{m}$, we have
+Note that the second claim is easily derived from the first by substituting $A^{T}$ for $A$. Let $\vect{r}_{1},\ldots,\vect{r}_{n}$ be the rows of $A$. Then $\vect{r}_{1}^{T},\ldots,\vect{r}_{n}^{T}$ are the columns of $A^{T}$. For any vector $\vect{x}$ in $\R^{m}$, we have
 
 $$A\vect{x}=\begin{pmatrix}\vect{r}_{1}\vect{x}\\\vdots\\\vect{r}_{n}\vect{x}\end{pmatrix}=\begin{pmatrix}\vect{r}_{1}^{T}\ip\vect{x}\\\vdots\\\vect{r}_{n}^{T}\ip\vect{x}\end{pmatrix}.$$
 
-Now, $\vect{x}$ is in $\operatorname{Nul}(A)$ precisely when $A\vect{x}=\vect{0}$ or, in other words, when $\vect{r}_{i}^{T}\ip\vect{x}=0$ for any $i$. Since the set $\left\{\vect{r}_{1}^{T},..,\vect{r}_{n}^{T}\right\}$ spans $\operatorname{Col}(A^{T})$, this is equivalent to $\vect{x}$ being in $\operatorname{Col}(A^{T})^{\bot}$.
+Now, $\vect{x}$ is in $\operatorname{Nul}(A)$ precisely when $A\vect{x}=\vect{0}$ or, in other words, when $\vect{r}_{i}^{T}\ip\vect{x}=0$ for any $i$. Since the set $\left\{\vect{r}_{1}^{T},\ldots,\vect{r}_{n}^{T}\right\}$ spans $\operatorname{Col}(A^{T})$, this is equivalent to $\vect{x}$ being in $\operatorname{Col}(A^{T})^{\bot}$.
 
 :::
 
@@ -269,7 +269,7 @@ Let $V$ be a subspace of $\R^{n}$. For an arbitrary vector $\vect{u}$ in $\R^{n}
 :::{admonition} Proof of {prf:ref}`Prop:OrthoComp:OrthoDecomp`
 :class: tudproof
 
-Let $\vect{v}_{1},...,\vect{v}_{k}$ be a basis for $V$ and let $\vect{v}_{k+1},...,\vect{v}_{n}$ be a basis for $V^{\bot}$. We claim that the vectors $\vect{v}_{1},...,\vect{v}_{k},\vect{v}_{k+1},...,\vect{v}_{n}$ are linearly independent. Indeed, if there were a linear combination
+Let $\vect{v}_{1},\ldots,\vect{v}_{k}$ be a basis for $V$ and let $\vect{v}_{k+1},\ldots,\vect{v}_{n}$ be a basis for $V^{\bot}$. We claim that the vectors $\vect{v}_{1},\ldots,\vect{v}_{k},\vect{v}_{k+1},\ldots,\vect{v}_{n}$ are linearly independent. Indeed, if there were a linear combination
 
 $$
 c_{1}\vect{v}_{1}+\cdots+c_{k}\vect{v}_{k}+c_{k+1}\vect{v}_{k+1}+\cdots +c_{n}\vect{v}_{n}=\vect{0}
@@ -281,9 +281,9 @@ $$
 \vect{w}=c_{1}\vect{v}_{1}+\cdots+c_{k}\vect{v}_{k}=-c_{k+1}\vect{v}_{k+1}-\cdots -c_{n}\vect{v}_{n}
 $$
 
-is in both $V$ and $V^{\bot}$. By {prf:ref}`Prop:OrthoComp:OrthoComplisSpace`, $\vect{w}=\vect{0}$. Since $\vect{v}_{1},...,\vect{v}_{k}$ and $\vect{v}_{k+1},...,\vect{v}_{n}$ are bases, it follows that all $c_{i}$ are $0$.
+is in both $V$ and $V^{\bot}$. By {prf:ref}`Prop:OrthoComp:OrthoComplisSpace`, $\vect{w}=\vect{0}$. Since $\vect{v}_{1},\ldots,\vect{v}_{k}$ and $\vect{v}_{k+1},\ldots,\vect{v}_{n}$ are bases, it follows that all $c_{i}$ are $0$.
 
-Since $\vect{v}_{1},...,\vect{v}_{k},\vect{v}_{k+1},...,\vect{v}_{n}$ is a linearly independent set of $n$ vectors in $n$-dimensional space, it must be a basis. Consequently, every vector $\vect{u}$ in $\R^{n}$ can be written in a unique way as a linear combination
+Since $\vect{v}_{1},\ldots,\vect{v}_{k},\vect{v}_{k+1},\ldots,\vect{v}_{n}$ is a linearly independent set of $n$ vectors in $n$-dimensional space, it must be a basis. Consequently, every vector $\vect{u}$ in $\R^{n}$ can be written in a unique way as a linear combination
 
 $$
 \vect{u}=c_{1}\vect{v}_{1}+\cdots+c_{k}\vect{v}_{k}+c_{k+1}\vect{v}_{k+1}+\cdots +c_{n}\vect{v}_{n}.
