@@ -8,11 +8,11 @@ sphinx-exercise
 TexSoup
 sphinx-book-theme==1.1.0
 teachbooks-sphinx-grasple>=1.1.5
-sphinx-tudelft-theme>=1.1.8
+sphinx-tudelft-theme>=1.1.9
 jupyterbook_patches >=1.6.2
 teachbooks-sphinx-tippy>=1.0.11
 sphinx-prime-applets>=1.0.5
 sphinx-indexed-definitions>=1.0.4
 sphinx-ref-graph>=1.0.1
-sphinx-image-inverter>=1.1.8
+sphinx-image-inverter>=1.1.9
 sphinx-dropdown-toggle >=1.1.0

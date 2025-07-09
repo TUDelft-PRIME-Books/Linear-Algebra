@@ -90,7 +90,7 @@ An eigenvector corresponding to $\lambda_1$ is called a **dominant eigenvector**
 
 Consider the following algorithm.
 
-::::{prf:algorithm}
+::::{prf:algorithm} Power Method Algorithm
 :label: Alg:PowerMethod:PowMed
 
 Suppose $A$ is an $n\times n$-matrix.
@@ -152,7 +152,7 @@ The scaling step is necessary to avoid ending up at the zero vector or 'at infin
 :label: Prop:Powermethod:Powermed
 
 Suppose $A$ is a matrix with dominant eigenvalue $\lambda_1$.
-Then in general the sequence constructed by the Power Method Algorithm, will converge to an eigenvector $\vect{v}_1$ for $\lambda_1$. To be more specific, the sequence $\vect{x}_k$ will converge to a dominant eigenvector $\vect{v}_1$ if the initial vector $\vect{x}_0$ does not lie in
+Then in general the sequence constructed by {prf:ref}`Alg:PowerMethod:PowMed`, will converge to an eigenvector $\vect{v}_1$ for $\lambda_1$. To be more specific, the sequence $\vect{x}_k$ will converge to a dominant eigenvector $\vect{v}_1$ if the initial vector $\vect{x}_0$ does not lie in
 $\operatorname{Span}\{\vect{v}_2, \vect{v}_3, \ldots, \vect{v}_n\}$.
 
 Moreover, suppose $\vect{x}$ is the result after a (sufficiently) large number of runs of the algorithm.  Then (an approximation of) the dominant eigenvalue is the entry with the highest absolute value of the vector $A\vect{x}$.
@@ -355,7 +355,7 @@ Consider the matrix $A = \begin{pmatrix}
      3 & 4& 2&-7 \end{pmatrix}$ and the initial vector
 $\mathbf{x}_0 = \begin{pmatrix}   2 \\ 2 \\ 4 \\ 1 \end{pmatrix}$.
 
-If we (let some computer program) run one hundred cycles of the power method algorithm, the last two iterates are
+If we (let some computer program) run one hundred cycles of {prf:ref}`Alg:PowerMethod:PowMed`, the last two iterates are
 
 $$
    \vect{x}_{99} = \begin{pmatrix}   0.3345 \\ 0.5096 \\ 1.0000 \\ 0.6336 \end{pmatrix}, \quad
@@ -581,7 +581,7 @@ In {prf:ref}`Ex:PowerMethod:SecondExample` with the matrix $A = \begin{pmatrix}
      1  &   6  &  -4\\
     -4  &   4  &  -8        \end{pmatrix} $
   the power method yielded the dominant eigenvalue  $\lambda_1 = 11.4780$.
-The eigenvalue  $\lambda_1-11$   of the matrix $A - 11 I$ lies close to zero, so with high probability it will not be the dominant eigenvalue of $A - 11 I$. Thus if we run the power method algorithm 
+The eigenvalue  $\lambda_1-11$   of the matrix $A - 11 I$ lies close to zero, so with high probability it will not be the dominant eigenvalue of $A - 11 I$. Thus if we run {prf:ref}`Alg:PowerMethod:PowMed` 
 on the matrix
 
 $$
@@ -621,7 +621,7 @@ $ \lambda - \alpha$ will presumably be the eigenvalue of $A - \alpha {I}$ that i
 We have just given the argument for a last proposition concerning the power method.
 
 
-::::{prf:proposition} Shifted Power Method
+::::{prf:proposition} Shifted Inverse Power Method
 :label: Prop:PowerMethod:ShiftedInverse
 
 Suppose $A$ is an $n \times n$-matrix with eigenvalues  $\lambda_1, \ldots, \lambda_n$, and $\alpha$ is a real number. Furthermore, define the matrix  $B = A - \alpha{I}$.
@@ -708,10 +708,10 @@ Up to four decimals  $
     \vect{x}_{23} = \begin{pmatrix}
          1.0000 \\ 0.3612 \\ 0.4456  \end{pmatrix}$.
 
-And by computing $A\vect{x}$, which yields
+And by computing $A\vect{x}_{23}$, which yields
 
 $$
-  A\vect{x} = \begin{pmatrix}
+  A\vect{x}_{23} = \begin{pmatrix}
          8.8668 \\ 3.2024 \\ 3.9512  \end{pmatrix},
 $$
 

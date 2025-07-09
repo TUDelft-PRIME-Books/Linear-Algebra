@@ -45,8 +45,8 @@ $$
    \end{array}
 $$
 
-The table has to be read column by column. For instance, the meaning of the first column is that of the age group 'young', 30% reaches the adolescent state. And from the third column it can be read off that
-individuals of the age group 'full grown' reproduce 4 offspring and with probability 40% reach 'old age'. The graph in {numref}`Figure %s <Fig:DynSystDiscrete:Leslie1>` visualises the table.
+The table has to be read column by column. For instance, the meaning of the first column is that of the age group 'young', $30\%$ reaches the adolescent state. And from the third column it can be read off that
+individuals of the age group 'full grown' reproduce $4$ offspring and with probability $40\%$ reach 'old age'. The graph in {numref}`Figure %s <Fig:DynSystDiscrete:Leslie1>` visualises the table.
 
 :::{figure} Images/Fig-DynSystDiscrete-LeslieGraph.svg
 :name: Fig:DynSystDiscrete:Leslie1
@@ -74,7 +74,7 @@ $$
                       \end{array}\right) \vect{x}_k.
 $$
 
-In the context of population dynamics, the matrix $M$ would be called a **Leslie matrix**.
+In the context of population dynamics, the matrix $M$ would be called a **[Leslie matrix](https://en.wikipedia.org/wiki/Leslie_matrix)**.
 
 We will study this model more closely in {prf:ref}`Ex:DynSystDiscrete:PopulationModel-2` later in this section.
 ::::
@@ -82,7 +82,7 @@ We will study this model more closely in {prf:ref}`Ex:DynSystDiscrete:Population
 ::::{prf:example}
 :label: ExDynSystDiscrete:PageRank
 
-A 'real' example is given by the PageRank algorithm to rank pages on the internet (and which made Google great). The whole internet is modeled as a graph, a set of 'nodes' (= sites) connected by 'edges' (= links). The basic idea is to start from an arbitrary initial situation with a large amount of 'visitors' on the sites and simulate random walks for each visitor where at each step each visitor chooses an arbitrary site that is connected to his present site. Next many cycles are run/simulated, modeled by products
+A 'real' example is given by the [PageRank](https://en.wikipedia.org/wiki/PageRank) algorithm to rank pages on the internet (and which made Google great). The whole internet is modeled as a graph, a set of 'nodes' (= sites) connected by 'edges' (= links). The basic idea is to start from an arbitrary initial situation with a large amount of 'visitors' on the sites and simulate random walks for each visitor where at each step each visitor chooses an arbitrary site that is connected to his present site. Next many cycles are run/simulated, modeled by products
 
 $$
    \vect{x}_{k+1} = M\vect{x}_k
@@ -147,7 +147,7 @@ If the initial state is $\vect{s} = \vect{0}$, all vectors $\vect{x}_k$ will be 
 For more general (read: non-linear) dynamical systems a more subtle definition is needed. For one thing, a non-linear dynamical system may have multiple equilibrium points, each with their own behaviour.
 
 In the literature there is quite a bit of terminology to describe the behaviour of dynamical systems at equilibrium points. Apart from linear dynamical systems in the plane, where we can nicely visualise what is going on
-(cf. {numref}`Sujbsection %s <Subsec:GraphicalDiscDynSyst>`), we will stick to the two qualifications attractor and repellor.
+(cf. {numref}`Subsection %s <Subsec:GraphicalDiscDynSyst>`), we will stick to the two qualifications attractor and repellor.
 
 ::::
 
@@ -784,7 +784,7 @@ Are the paths periodic? That is, will $\vect{x}_k$ return to the starting value 
 
 ::::
 
-:::{admonition} Solution to {numref}`Exc:DynSystDiscrete:Modulus=1`
+::::{admonition} Solution to {numref}`Exc:DynSystDiscrete:Modulus=1`
 :class: solution, dropdown
 
 The complex eigenvalues have both modulus $1$, which indicates this is a centre point. To investigate the claim that the trajectories stay within a fixed distance from the origin, we consider the general solution
@@ -824,7 +824,7 @@ An image containing one typical path can be seen in {numref}`Fig:DynSystDiscrete
 A sketch for the solutions of {numref}`Exc:DynSystDiscrete:Modulus=1`.
 :::
 
-:::
+::::
 
 ## Application: linear difference equations
 
@@ -890,7 +890,7 @@ Consider the difference equation
 $$
   \left\{ \begin{array}{l}
      y(k) = 2y(k-1) - 3y(k-2) + 5y(k-3),\\
-     y(0)=1, \quad y(1)=3, \quad y(2)=0
+     y(0)=1, \quad y(1)=3, \quad y(2)=0.
      \end{array} \right.
 $$
 
@@ -928,7 +928,7 @@ Let us consider the probably most famous linear difference equation, by the way 
 ::::{prf:example}
 :label: Ex:DynSystDiscrete:Fibonacci
 
-The **Fibonacci sequence** $f_0,f_1,f_2, \ldots$ is defined via
+The **[Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_sequence)** $f_0,f_1,f_2, \ldots$ is defined via
 
 :::{math}
 :label: Eq:DynSystDiscrete:DfnFibo
@@ -1023,7 +1023,7 @@ $$
 which is indeed the expression presented in Equation {eq}`Eq:DynSystDiscrete:Fibonacci`.
 
 Noting that $0 < \frac12(\sqrt{5}-1) < 1 < \frac12(\sqrt{5}+1)$ we can see that eventually
-$f_k$ more or less grows with a factor $r = \frac12(\sqrt{5}+1)$, the so-called _golden ratio_. More precisely, for large values of $k$ we find that
+$f_k$ more or less grows with a factor $r = \frac12(\sqrt{5}+1)$, the so-called _[golden ratio](https://en.wikipedia.org/wiki/Golden_ratio)_. More precisely, for large values of $k$ we find that
 
 $$
    f_{k+1} \approx  r\,f_k \quad \text{and also} \quad f_k \approx c r^k,\,\,

@@ -111,7 +111,7 @@ Let $P$ be a stochastic matrix. A **Markov chain** is a sequence $\vect{x}_{0},\
 :::{prf:Example}
 :label: Ex:MarkovChains:MarkovChain
 
-Suppose we have three brands, A, B, and C. Let us assume that 80\% of the customers of A and B will still use the same brand after a month and that the customers that switch away choose randomly between the alternatives. Finally, let us say that C retains 70\% of its customers, that 20\% of its customers leave for A, and that 10\% leave for B.
+Suppose we have three brands, A, B, and C. Let us assume that $80\%$ of the customers of A and B will still use the same brand after a month and that the customers that switch away choose randomly between the alternatives. Finally, let us say that C retains $70\%$ of its customers, that $20\%$ of its customers leave for A, and that $10\%$ leave for B.
 
 This gives us the following stochastic matrix:
 
@@ -141,7 +141,7 @@ $$
 \end{pmatrix},
 $$
 
-and so on. We can see that brand A consistently wins market share at the cost of brand C, while brand B keeps a constant customer base. Note, however, that C will never have no market share, as it will, every month, gain 10\% of both A and B's customer base.
+and so on. We can see that brand A consistently wins market share at the cost of brand C, while brand B keeps a constant customer base. Note, however, that C will never have no market share, as it will, every month, gain $10\%$ of both A and B's customer base.
 
 :::
 
@@ -216,7 +216,13 @@ $$
 5\\
 4\\
 3
-\end{pmatrix}. \quad\text{Hence, the probability vector}\quad \vect{x}=\frac{1}{3+4+5}\begin{pmatrix}
+\end{pmatrix}.
+$$
+
+Hence, the probability vector
+
+$$
+\vect{x}=\frac{1}{3+4+5}\begin{pmatrix}
 5\\
 4\\
 3
@@ -425,7 +431,7 @@ so the distribution after $50$ moves is already quite close to the steady state.
 
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/ae1aee60-cada-4419-b0f1-dd1f7d4b4e13?id=  
+:url: https://embed.grasple.com/exercises/ae1aee60-cada-4419-b0f1-dd1f7d4b4e13?id=110356
 :label: grasple_exercise_9_2_1
 :dropdown:
 :description: To find the steady state of (the Markov chain with) $3\times3$ probability matrix $P$.

@@ -10,7 +10,7 @@ In this section we will assume the reader is familiar with complex numbers and t
 
 ## Introduction
 
-In this section, we will deal with similar problems as in {numref}`Section %s <Sec:DynSystDiscrete>`. There, we were concerned with discrete time. That is, we assumed a certain initial state $\vect{x}_{0}$ at time $t=0$, then predicted the next state $\vect{x}_{1}$ on time $t=1$, $\vect{x}_{2}$ on time $t=2$ and so on. But just as often we want to deal with continuous time. That is, there is no *next* state but rather a state for every positive real number. 
+In this section, we will deal with similar problems as in {numref}`Section %s <Sec:DynSystDiscrete>`. There, we were concerned with discrete time. That is, we assumed a certain initial state $\vect{x}_{0}$ at time $k=0$, then predicted the next state $\vect{x}_{1}$ on time $k=1$, $\vect{x}_{2}$ on time $k=2$ and so on. But just as often we want to deal with continuous time. That is, there is no *next* state but rather a state for every positive real number. 
 
 
 ## Preliminaries
@@ -26,13 +26,13 @@ Let $f$ and $g$ be differentiable functions on $\R$ and let $c$ be a real number
 
 <li> 
 
-$(f+g)'=f'+g'$, 
+$(f+g)'=f'+g'$.
 
 </li>
 
 <li> 
 
-$(cf)'=cf'$, 
+$(cf)'=cf'$.
 
 </li>
 
@@ -53,8 +53,8 @@ Suppose we have differentiable functions $x_{1},\ldots,x_{n}$ and real numbers $
 $$
 
 \begin{cases}
-x_{1}'&=a_{11}x_{1}+a_{12}x_{2}+\cdots +a_{1n}x_{n}\\
-x_{2}'&=a_{21}x_{2}+a_{22}x_{2}+\cdots +a_{2n}x_{n}\\
+x_{1}'&=a_{11}x_{1}+a_{12}x_{2}+\cdots +a_{1n}x_{n},\\
+x_{2}'&=a_{21}x_{2}+a_{22}x_{2}+\cdots +a_{2n}x_{n},\\
 &\,\vdots\\
 x_{n}'&=a_{n1}x_{1}+a_{n2}x_{2}+\cdots+a_{nn}x_{n}
 \end{cases}
@@ -107,9 +107,33 @@ If $\vect{y}$ and $\vect{z}$ are solutions of $\vect{x}'=A\vect{x}$ and $c$ and 
 :::{admonition} Proof of {prf:ref}`Prop:DynSystContinuous:LinComb`
 :class: tudproof
 
-Exercise.
+See {numref}`Exc:DynSystContinuous:LinComb`.
 
 :::
+
+:::{exercise}
+:label: Exc:DynSystContinuous:LinComb
+
+Prove {prf:ref}`Prop:DynSystContinuous:LinComb`
+
+:::
+
+::::{admonition} Solution to {numref}`Exc:DynSystContinuous:LinComb`
+:class: solution, dropdown
+
+Direct compuations shows the requested:
+
+$$
+\begin{align*}
+(c\vect{y}+d\vect{z})' &= (c\vect{y})'+(d\vect{z})' \\
+ &= c\vect{y}'+d\vect{z}' \\
+ &= c(A\vect{y})+d(A\vect{z}) \\
+ &= A(c\vect{y})+A(d\vect{z}) \\
+ &= A(c\vect{y}+d\vect{z}) \\
+\end{align*}
+$$
+
+::::
 
 In view of this result, it makes sense to generalise some concepts which we have seen for vectors to the setting of vectors of functions.
 
@@ -156,8 +180,8 @@ which can be rewritten as
 $$
 
 \begin{cases}
-    x_{1}'&=3x_{1}+0x_{2}=3x_{1}\\
-    x_{2}'&=0x_{1}-1x_{2}=-x_{2}
+    x_{1}'&=3x_{1}+0x_{2}=3x_{1},\\
+    x_{2}'&=0x_{1}-1x_{2}=-x_{2}.
 \end{cases}
 
 $$
@@ -186,10 +210,10 @@ What made this example easy is the fact that $A$ was diagonal. Indeeed, for any 
 $$
 
 \begin{cases}
-x_{1}'&=a_{11}x_{1}+0_{12}x_{2}+\cdots +0_{1n}x_{n}=a_{11}x_{1}\\
-x_{2}'&=0_{21}x_{2}+a_{22}x_{2}+\cdots +0_{2n}x_{n}=a_{22}x_{2}\\
+x_{1}'&=a_{11}x_{1}+0_{12}x_{2}+\cdots +0_{1n}x_{n}=a_{11}x_{1},\\
+x_{2}'&=0_{21}x_{2}+a_{22}x_{2}+\cdots +0_{2n}x_{n}=a_{22}x_{2},\\
 &\,\vdots\\
-x_{n}'&=0_{n1}x_{1}+0_{n2}x_{2}+\cdots+a_{nn}x_{n}=a_{nn}x_{n}
+x_{n}'&=0_{n1}x_{1}+0_{n2}x_{2}+\cdots+a_{nn}x_{n}=a_{nn}x_{n}.
 \end{cases}
 
 $$
@@ -274,7 +298,7 @@ If $A$ is a diagonalisable matrix with eigenvalues $\lambda_{1},\ldots,\lambda_{
 
 $$
 
-\vect{y}(t)=c_{1}\vect{v}_{1}e^{\lambda{1}t}+c_{2}\vect{v}_{2}e^{\lambda_{2}t}+\cdots+c_{n}\vect{v}_{n}e^{\lambda_{n}t}.
+\vect{y}(t)=c_{1}\vect{v}_{1}e^{\lambda{1}t}+c_{2}\vect{v}_{2}e^{\lambda_{2}t}+\cdots+c_{n}\vect{v}_{n}e^{\lambda_{n}t},
 
 $$
 
@@ -289,10 +313,18 @@ where $c_{1},\ldots,c_{n}$ are constants.
 ::: -->
 
 
+:::{prf:definition}
+:label: Def:DynSystContinuous:Eigenfunctions
+
+ A function $\vect{y}=\vect{v}e^{\lambda t}$ is called an **eigenfunction** of the dynamical system if $\lambda$ is an eigenvalue with corresponding eigenvector $\vect{v}$.
+
+:::
+
+
 :::{prf:remark}
 :label: Rem:DynSystContinuous:Eigenfunctions
 
- A function $\vect{y}=c\vect{v}e^{\lambda t}$ is called an **eigenfunction** of the dynamical system if $\lambda$ is an eigevnalue with corresponding eigenvector $\vect{v}$.It is easy to check that such an eigenfunction is indeed a solution:
+It is easy to check that such an eigenfunction is indeed a solution:
 
 $$
 \vect{y}'=(\vect{v}e^{\lambda t})'=\vect{v}\lambda e^{\lambda t}=A\vect{v} e^{\lambda t}=A\vect{y}.
@@ -356,10 +388,10 @@ As long as the matrix $A$ is diagonalisable, we now know how to solve the system
 Suppose some airborn disease is affecting a population. That means that people get sick from the environment, not from other sick people. To keep matters simple, we will assume that the population is constant and that recovery grants full immunity. Let $S(t)$ be the number of susceptible members and $I(t)$ the number of infected members of the population at time $t$. If $\alpha>0$ is the recovery rate and $\beta>0$ is the infection rate, then we find:
 
 $$
-\begin{array}{cccc}
-S'(t)&=&-\beta S(t)&\\
-I'(t)&=&\beta S(t)&-\alpha I(t) 
-\end{array}
+\left\{\begin{array}{cccc}
+S'(t)&=&-\beta S(t),&\\
+I'(t)&=&\beta S(t)&-\alpha I(t).
+\end{array}\right.
 $$
 
 Define
@@ -379,7 +411,7 @@ $$
 Since $A$ is an upper diagonal matrix, we can conclude that its eigenvalues are $-\beta$ and $-\alpha$, which, for simplicity's sake, we will assume to be different. Therefore, a solution to the system of linear differential equations $\vect{y}'=A\vect{y}$ is given by 
 
 $$
-\vect{y}=c_{1}\vect{v}_{-\beta}e^{-\beta t}+c_{2}\vect{v}_{-\alpha}e^{-\alpha t}
+\vect{y}=c_{1}\vect{v}_{-\beta}e^{-\beta t}+c_{2}\vect{v}_{-\alpha}e^{-\alpha t},
 $$
 
 where $c_{1}$ and $c_{2}$ are some constants while $\vect{v}_{-\beta}$ and $\vect{v}_{-\alpha}$ are the eigenvectors of $A$ corresponding to $-\beta $ and $-\alpha$, respectively. In particular, if $t$ gets very large, we find very large but negative exponents on the right-hand side. That is, both $\lim_{t\to\infty}S(t)$ and $\lim_{t\to\infty} I(t)$ are $0$. This makes perfect sense intuitively, as we expect all members of the population to get infected and recover. After that, they are neither susceptible nor infected anymore.
@@ -388,7 +420,7 @@ Note that, in the long run, we will end up arbitrarily close to $\vect{0}$ regar
 
 :::
 
-For a graphic interpretation of these solutions, we refer to {numref}`Subsection %s <Subsec:DynSystContinuous:Trajectories>`.
+For a graphical interpretation of these solutions, we refer to {numref}`Subsection %s <Subsec:DynSystContinuous:Trajectories>`.
 
 ## Dealing with complex eigenvalues
 
@@ -400,8 +432,8 @@ Yes, we can! First, we can use the fact that complex eigenvalues come in conjuga
 $$
 
 \begin{align*}
-\frac{1}{2}\vect{v}e^{\lambda t}+\frac{1}{2}\overline{\vect{v}}e^{\overline{\lambda}t}&=\Re{\vect{v}e^{\lambda t}}\\
-\frac{1}{2i}\vect{v}e^{\lambda t}-\frac{1}{2i}\overline{\vect{v}}e^{\overline{\lambda}t}&=\Im{\vect{v}e^{\lambda t}}
+\frac{1}{2}\vect{v}e^{\lambda t}+\frac{1}{2}\overline{\vect{v}}e^{\overline{\lambda}t}&=\Re{\vect{v}e^{\lambda t}},\\
+\frac{1}{2i}\vect{v}e^{\lambda t}-\frac{1}{2i}\overline{\vect{v}}e^{\overline{\lambda}t}&=\Im{\vect{v}e^{\lambda t}},
 \end{align*}
 
 $$
@@ -422,7 +454,7 @@ $$
 
 \begin{align*}
 \vect{v}e^{(a+bi)t}&=(\Re{\vect{v}}+i\Im{\vect{v}})e^{at}(\cos(bt)+i\sin(bt))\\
-&=\left[(\Re{\vect{v}}\cos(bt)-\Im{\vect{v}}\sin(bt))+i(\Re{\vect{v}}\sin(bt)+\Im{\vect{v}}\cos(bt))\right]e^{at}
+&=\left[(\Re{\vect{v}}\cos(bt)-\Im{\vect{v}}\sin(bt))+i(\Re{\vect{v}}\sin(bt)+\Im{\vect{v}}\cos(bt))\right]e^{at}.
 \end{align*}
 
 $$
@@ -459,7 +491,7 @@ are linearly independent solutions to the linear system of differential equation
 :::
 
 
-For a graphic interpretation of these solutions, we refer to {numref}`Subsection %s <Subsec:DynSystContinuous:Trajectories>`.
+For a graphical interpretation of these solutions, we refer to {numref}`Subsection %s <Subsec:DynSystContinuous:Trajectories>`.
 
 
 (Subsec:DynSystContinuous:Trajectories)=
@@ -501,13 +533,13 @@ If $A$ is a $2\times 2$-matrix with real eigenvalues $\lambda_{1}$ and $\lambda_
 
 <li>
 
-an **attractor** or a **sink** if $\lambda_{1},\lambda_{2}<0$,
+an **attractor** or a **sink** if $\lambda_{1},\lambda_{2}<0$.
 
 </li>
 
 <li>
 
-a **repeller** or a **source** if $\lambda_{1},\lambda_{2}>0$,
+a **repeller** or a **source** if $\lambda_{1},\lambda_{2}>0$.
 
 </li>
 
@@ -527,13 +559,13 @@ Suppose now that $A$ is a $2\times 2$-matrix with complex eigenvalues $a\pm bi$.
 
 <li>
 
-a **centre** if $a=0$,
+a **centre** if $a=0$.
 
 </li>
 
 <li>
 
-a **stable spiral point** if $a<0$,
+a **stable spiral point** if $a<0$.
 
 </li>
 
@@ -567,8 +599,8 @@ In this section, we will see a trick for dealing with higher derivatives. It wor
 
 $$
 \begin{cases}
-x_{1}'''&=ax_{1}+bx_{2}\\
-x_{2}'&=cx_{1}+dx_{2}
+x_{1}'''&=ax_{1}+bx_{2},\\
+x_{2}'&=cx_{1}+dx_{2}.
 \end{cases}
 $$
 
@@ -576,9 +608,9 @@ How do we solve this? Our usual method fails because of the higher-order derivat
 
 $$
 \begin{cases}
-y_{2}'&=ax_{1}+bx_{2}\\
-y_{1}'&=y_{2}\\
-x_{1}'&=y_{1}\\
+y_{2}'&=ax_{1}+bx_{2},\\
+y_{1}'&=y_{2},\\
+x_{1}'&=y_{1},\\
 x_{2}'&=cx_{1}+dx_{2}
 \end{cases}
 $$
@@ -615,7 +647,7 @@ By putting $y=x'$, we can rewrite the differential equation $ax''+bx'+cx=0$ as
 
 $$
 \begin{cases}
-y'&=-\frac{b}{a}y-\frac{c}{a}x\\
+y'&=-\frac{b}{a}y-\frac{c}{a}x,\\
 x'&=y
 \end{cases}
 $$
