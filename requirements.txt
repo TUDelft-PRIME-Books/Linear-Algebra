@@ -7,7 +7,7 @@ Sphinx
 sphinx-proof
 sphinx-exercise
 TexSoup
-sphinx-book-theme==1.1.0
+sphinx-book-theme==1.1.4
 teachbooks-sphinx-grasple==1.1.5
 sphinx-tudelft-theme==1.1.9
 jupyterbook_patches ==1.6.2
