@@ -1,4 +1,4 @@
-name: call-deploy-book
+name: Deploy Book with Changed Files
 
 on:
   push:
