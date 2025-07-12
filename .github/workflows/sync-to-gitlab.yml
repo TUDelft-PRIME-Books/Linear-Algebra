@@ -14,10 +14,10 @@ jobs:
 
       - name: Set up GitLab repo (destination)
         env:
-          GITLAB_TOKEN: ${{ secrets.GL_EWI_PAT }}
+          GITLAB_TOKEN: ${{ secrets.GL_TU_PAT }}
         run: |
           # Clone GitLab repo
-          git clone https://oauth2:${GITLAB_TOKEN}@gitlab.ewi.tudelft.nl/prime/openlabook gitlab-mirror
+          git clone https://oauth2:${GITLAB_TOKEN}@gitlab.tudelft.nl/opentextbooks/linear-algebra gitlab-mirror
           
           # Set up Git config
           cd gitlab-mirror
@@ -32,7 +32,7 @@ jobs:
 
       - name: Commit and push changes
         env:
-          GITLAB_TOKEN: ${{ secrets.GL_EWI_PAT }}
+          GITLAB_TOKEN: ${{ secrets.GL_TU_PAT }}
         run: |
           cd gitlab-mirror
           git add .
@@ -40,7 +40,7 @@ jobs:
           # Only commit if there are changes
           if ! git diff --cached --quiet; then
             git commit -m "Sync changed files from GitHub"
-            git push https://oauth2:${GITLAB_TOKEN}@gitlab.ewi.tudelft.nl/prime/openlabook main
+            git push https://oauth2:${GITLAB_TOKEN}@gitlab.tudelft.nl/opentextbooks/linear-algebra publish
           else
             echo "No changes to commit"
           fi
