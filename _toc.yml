@@ -70,7 +70,10 @@ parts:
   - caption: Appendices # ref_graph: {'ignore':True}
     numbered: True
     chapters:
-      - file: 'Appendices/ComplexNumbers.md' # ref_graph: {'ignore':True}
+      - file: 'Appendices/ComplexNumbersIntro.md' # ref_graph: {'ignore':True}
+        sections:
+          - file: 'Appendices/ComplexNumbersCartesian.md' # ref_graph: {'ignore':True}
+          - file: 'Appendices/ComplexNumbersPolar.md' # ref_graph: {'ignore':True}
       - file: 'Appendices/InverseMatrixTheorem.md' # ref_graph: {'ignore':True}
   - caption: Back matter
     numbered: False
