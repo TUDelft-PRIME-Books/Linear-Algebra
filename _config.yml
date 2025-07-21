@@ -35,7 +35,6 @@ sphinx:
     html_theme_options:
       repository_url: "https://github.com/TUDelft-PRIME-Books/Linear-Algebra"
       repository_branch: "published"
-      use_repository_button: true
       use_edit_page_button: true
       use_repository_button: true
       use_issues_button : true
@@ -106,7 +105,6 @@ sphinx:
     latexlist: _ext/
     review: _ext/
     parentheses_list: _ext/
-    latexlist: _ext/
   extra_extensions:
     - sphinx_image_inverter
     - sphinx_proof
