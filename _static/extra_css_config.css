@@ -40,11 +40,3 @@ mjx-utext {
   width: auto !important;
   display: inline-block !important;
 }
-
-.title.logo__title {
-      width: 100%;
-      font-size: clamp(1rem, 4vw, 2rem);
-      text-align: center;
-      margin: 0;
-      padding: 0.5rem 0;
-    }
