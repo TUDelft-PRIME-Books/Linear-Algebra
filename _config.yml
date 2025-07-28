@@ -99,10 +99,6 @@ sphinx:
           "Re": ["\\operatorname{Re}\\left(#1\\right)",1]
           "Im": ["\\operatorname{Im}\\left(#1\\right)",1]
           "nicefrac": ["\\frac{#1}{#2}", 2]
-  local_extensions:
-    latexlist: _ext/
-    review: _ext/
-    parentheses_list: _ext/
   extra_extensions:
     - sphinx_image_inverter
     - sphinx_proof
@@ -118,6 +114,7 @@ sphinx:
     - sphinx_ref_graph
     - sphinx_dropdown_toggle
     - sphinx_table_support
+    - sphinx_list_support
 latex:
   latex_engine: pdflatex
   use_jupyterbook_latex: true
