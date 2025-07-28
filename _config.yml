@@ -100,8 +100,6 @@ sphinx:
           "Im": ["\\operatorname{Im}\\left(#1\\right)",1]
           "nicefrac": ["\\frac{#1}{#2}", 2]
   local_extensions:
-    htmltable: _ext/
-    latextable: _ext/
     latexlist: _ext/
     review: _ext/
     parentheses_list: _ext/
@@ -119,7 +117,7 @@ sphinx:
     - sphinx_indexed_definitions
     - sphinx_ref_graph
     - sphinx_dropdown_toggle
-    
+    - sphinx_table_support
 latex:
   latex_engine: pdflatex
   use_jupyterbook_latex: true

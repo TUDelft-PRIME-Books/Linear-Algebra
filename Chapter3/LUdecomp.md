@@ -1931,34 +1931,23 @@ $$
 
 In {numref}`tbl:comparison_gausselim_LU` we can see the comparison in the numbers of operations needed to solve several linear systems when using row reduction and $LU$ decomposition.
 
-:::::{latextable} Comparison between solving linear systems by row reduction  or by $LU$ decomposition.
+:::::{latextable} Comparison between solving linear systems by row reduction ($RR$)  or by $LU$ decomposition.
 :header-rows: 2
 :class: longtable table-bordered table-striped table-hover table
 :align: right
 :name: tbl:comparison_gausselim_LU
 
-
-%\begin{tabular}{crrrrrr}
-%$n$ & \multicolumn{2}{c}{$N=5$} & \multicolumn{2}{c}{$N=10$} & \multicolumn{2}{c}{$N=50$} \\
-%& $RR$ & $LU$ & $RR$ & $LU$ & $RR$ & $LU$ \\
-%$3$ & $140$ & $88$ & $280$ & $163$ & $1400$ & $763$ \\
-%$10$ & $4,025$ & $1,565$ & $8,050$ & $2,515$ & $40,250$ & $10,115$ \\
-%$100$ & $3.4\cdot10^6$ & $7.6\cdot10^5$ & $6.8\cdot10^6$ & $8.6\cdot10^5$ & $3.4\cdot10^7$ & $1.7\cdot10^6$ \\
-%\end{tabular}
-
-
 \begin{tabular}{crrrrrr}
-$n$ & \multicolumn{2}{c}{$N=5$} & \multicolumn{2}{c}{$N=10$} & \multicolumn{2}{c}{$N=50$} \\
-& $RR$ & $LU$ & $RR$ & $LU$ & $RR$ & $LU$ \\
+ & \multicolumn{2}{c}{$N=5$} & \multicolumn{2}{c}{$N=10$} & \multicolumn{2}{c}{$N=50$} \\
+$n$ & $RR$ & $LU$ & $RR$ & $LU$ & $RR$ & $LU$ \\
 $3$ & $140$ & $88$ & $280$ & $163$ & $1400$ & $763$ \\
-%$5$ & $575$ & $295$ & $1,150$ & $520$ & $5,750$ & $2,320$ \\
+$5$ & $575$ & $295$ & $1,150$ & $520$ & $5,750$ & $2,320$ \\
 $10$ & $4,025$ & $1,565$ & $8,050$ & $2,515$ & $40,250$ & $10,115$ \\
 $100$ & $3.4\cdot10^6$ & $7.6\cdot10^5$ & $6.8\cdot10^6$ & $8.6\cdot10^5$ & $3.4\cdot10^7$ & $1.7\cdot10^6$ \\
 \end{tabular}
 
 
 :::::
-
 
 We will mention one other advantage the $LU$ decomposition may have, namely when the coefficient matrix $A$ is a **band matrix**. In that case it is much more efficient to work with the $LU$ decomposition than with the inverse.
 Such systems $A\vect{x} = \vect{b}$ for instance appear when (partial) differential equations are solved via discretisations. It falls outside the scope of this textbook to go into the details (see for example [Numerical Methods for Ordinary Differential Equations](https://doi.org/10.5074/t.2023.001)), but we consider the special case of  **tridiagonal** matrices to illustrate once more the usefulness of the $LU$ decomposition. 
