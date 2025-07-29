@@ -4,11 +4,11 @@ docutils == 0.21.2
 jupyter_book == 1.0.4.post1
 roman == 5.1
 Sphinx == 7.4.7
-sphinx-proof == 0.2.1
+# sphinx-proof == 0.2.1
 sphinx-exercise == 1.0.1
 TexSoup == 0.3.1
 sphinx-book-theme==1.1.4
-teachbooks-sphinx-grasple==1.1.5
+teachbooks-sphinx-grasple==1.2.0
 sphinx-tudelft-theme==1.1.12
 jupyterbook_patches ==1.6.2
 teachbooks-sphinx-tippy==1.0.11
@@ -19,3 +19,5 @@ sphinx-image-inverter==1.1.9
 sphinx-dropdown-toggle ==1.2.0
 sphinx-table-support == 0.0.1
 sphinx-list-support == 0.0.1
+
+git+https://github.com/TeachBooks/sphinx-proof.git
