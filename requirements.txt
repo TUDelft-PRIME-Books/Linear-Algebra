@@ -16,7 +16,7 @@ sphinx-prime-applets==1.0.5
 sphinx-indexed-definitions==1.0.4
 sphinx-ref-graph==1.0.1
 sphinx-image-inverter==1.1.9
-sphinx-dropdown-toggle ==1.3.0
+sphinx-dropdown-toggle ==1.3.1
 sphinx-table-support == 0.0.1
 sphinx-list-support == 0.0.1
 sphinx-code-examples == 1.1.0
