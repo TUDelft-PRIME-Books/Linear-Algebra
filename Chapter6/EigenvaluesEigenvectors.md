@@ -631,7 +631,7 @@ which is impossible, as the assumption was that $\vect{v}_{\ell}$ is an eigenvec
 ::::::
 
 ::::::{prf:example}
-:label: Ex:EigenValues:TwodimEigenspace2
+:label: Ex:EigenValues:IndepEigenvectors
 
 For the matrix $A = \left(\begin{array}{ccc}2 & 2 & 1 \\ 0 & 1 & 2 \\ 0 & 4 & 3  \end{array}\right)$
 and the vectors

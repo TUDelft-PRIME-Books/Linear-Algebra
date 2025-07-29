@@ -791,7 +791,7 @@ To compute $PD^kP^{-1}$ we need $n$ $k$-th powers to find $D^k$, and we are left
 ::::::
 
 ::::::{prf:example}
-:label: Eq:Diagonalisable:10thPowerofA
+:label: Ex:Diagonalisable:10thPowerofA
 
 We compute $A^{10}$ for the matrix $A = \left(\begin{array}{cc} 1 & 4 \\ 1 & 1 \end{array} \right)$
 of {prf:ref}`Ex:Diagonalisable:CheckPDPinv`.
