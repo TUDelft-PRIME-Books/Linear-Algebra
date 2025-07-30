@@ -4,8 +4,7 @@ root: index.md # ref_graph: {'ignore':True}
 options:
   numbered: true
 parts:
-  - caption: Front matter
-    numbered: False
+  - numbered: False
     chapters:
       - file: Introduction.md # ref_graph: {'ignore':True}
       - file: GoC.md # ref_graph: {'ignore':True}
@@ -75,7 +74,7 @@ parts:
           - file: 'Appendices/ComplexNumbersCartesian.md' # ref_graph: {'ignore':True}
           - file: 'Appendices/ComplexNumbersPolar.md' # ref_graph: {'ignore':True}
       - file: 'Appendices/InverseMatrixTheorem.md' # ref_graph: {'ignore':True}
-  - caption: Back matter
+  - caption: Colophon
     numbered: False
     chapters:
       - file: genindex # ref_graph: {'ignore':True}

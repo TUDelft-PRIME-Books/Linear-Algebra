@@ -1,4 +1,4 @@
-teachbooks == 0.2.1
+teachbooks == 0.2.2
 beautifulsoup4 == 4.13.4
 docutils == 0.21.2
 jupyter_book == 1.0.4.post1
