@@ -465,14 +465,14 @@ so the distribution after $50$ moves is already quite close to the steady state.
 
 ::::
 
-%::::{grasple}
-%:iframeclass: dark-light
-%:url: https://embed.grasple.com/exercises/44508dbb-5a1f-42d6-918b-fc7c464b4e0d?id=110368
-%:label: grasple_exercise_9_2_5
-%:dropdown:
-%:description: To construct a Markov Chain from a cycling story.
-%
-% ::::
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/44508dbb-5a1f-42d6-918b-fc7c464b4e0d?id=110368
+:label: grasple_exercise_9_2_5
+:dropdown:
+:description: To construct a Markov Chain from a cycling story.
+
+ ::::
 
 
 

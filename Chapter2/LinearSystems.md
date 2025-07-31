@@ -2080,21 +2080,21 @@ The remaining exercises tend to be a bit more theoretic.
 
 ::::{grasple}
 :iframeclass: dark-light
-:url: https://embed.grasple.com/exercises/8d249aed-fa38-4a70-8271-8be07187dd06?id=69541
+:url: https://embed.grasple.com/exercises/9770649f-a79e-4a63-b5df-24f53deb6ca8?id=86928
 :label: grasple_exercise_2_1_16
 :dropdown:
 :description: Solving a linear system using the augmented matrix.
 
 ::::
 
-%::::{grasple}
-%:iframeclass: dark-light
-%:url: https://embed.grasple.com/exercises/8d249aed-fa38-4a70-8271-8be07187dd06?id=69541
-%:label: grasple_exercise_2_1_17
-%%:dropdown:
-%:description: Solving a linear system using the augmented matrix.
-%
-%::::
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/8d249aed-fa38-4a70-8271-8be07187dd06?id=69541
+:label: grasple_exercise_2_1_17
+:dropdown:
+:description: Solving a linear system using the augmented matrix.
+
+::::
 
 The remaining exercises are a bit more theoretical.
 

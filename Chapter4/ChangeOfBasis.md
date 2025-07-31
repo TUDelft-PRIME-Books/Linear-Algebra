@@ -1260,13 +1260,13 @@ must be equal.
 
 ::::
 
-%::::{grasple}
-%:iframeclass: dark-light
-%:url: https://embed.grasple.com/exercises/3008a6aa-58ee-4182-8fd1-9d452ac3e9f0?id=90867
-%:label: grasple_exercise_4_3_2
-%:dropdown:
-%:description: One more like the previous.
-%::::
+::::{grasple}
+:iframeclass: dark-light
+:url: https://embed.grasple.com/exercises/3008a6aa-58ee-4182-8fd1-9d452ac3e9f0?id=90867
+:label: grasple_exercise_4_3_2
+:dropdown:
+:description: One more like the previous.
+::::
 
 ::::{grasple}
 :iframeclass: dark-light
