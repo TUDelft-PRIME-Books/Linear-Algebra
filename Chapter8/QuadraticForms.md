@@ -510,7 +510,7 @@ It follows that the numbers of zeros on the diagonals, $n - p_i - n_i$, $i = 1,2
 
 In the two examples we see that $p_1 = p_2 = 1$ and also $n_1 = n_2 = 1$, in accordance with the statement.
 
-The property is known as _[Sylvester's Law of Inertia](https://en.wikipedia.org/wiki/Sylvester%27s_law_of_inertia)_.
+The property is known as _[Sylvester's Law of Inertia](https://en.wikipedia.org/wiki/Sylvester%27s_law_of_inertia){target="_blank"}_.
 
 ::::
 

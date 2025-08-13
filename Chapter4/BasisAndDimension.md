@@ -7,7 +7,7 @@
 The space $\R^n$ is sometimes called "$n$-dimensional space". What do people mean by that?
 When, for instance, we have a plane in $\R^3$, and we look at it "from the inside" (like Flat-landers so to speak),
 things just look as if we 'lived' in the plane $\R^2$.
-If you want to know about Flat-landers: [Flatland: A Romance of Many Dimensions](https://doi.org/10.4324/9781003056355-4).
+If you want to know about Flat-landers: [Flatland: A Romance of Many Dimensions](https://doi.org/10.4324/9781003056355-4){target="_blank"}.
 
 Expressed more formally: a plane in $\R^3$ is a copy of the plane $\R^2$,
 so it makes sense to say that such a plane has dimension $2$. In this section we make this idea precise, making use of another

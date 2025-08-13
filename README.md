@@ -5,7 +5,7 @@
 
 # Linear Algebra - Interactive Textbook
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/) except otherwise stated.
 
 An interactive, open-access linear algebra textbook designed for engineering students at the bachelor level. This book combines traditional mathematical rigor with modern interactive elements to create an engaging learning experience.
 
@@ -117,7 +117,7 @@ We welcome contributions to improve this textbook! Please feel free to:
 
 ## 📄 License
 
-This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/) except otherwise stated.
 
 You are free to:
 - **Share** — copy and redistribute the material in any medium or format

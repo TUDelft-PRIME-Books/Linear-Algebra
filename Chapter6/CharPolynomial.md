@@ -638,7 +638,7 @@ the zero matrix.
 
 ::::::
 
-That this is not a coincidence is the content of the following theorem, the proof of which is beyond the scope of this linear algebra book. (The interested reader can of course find a proof here: [Cayley-Hamilton theorem](https://en.wikipedia.org/wiki/Cayley%E2%80%93Hamilton_theorem).)
+That this is not a coincidence is the content of the following theorem, the proof of which is beyond the scope of this linear algebra book. (The interested reader can of course find a proof here: [Cayley-Hamilton theorem](https://en.wikipedia.org/wiki/Cayley%E2%80%93Hamilton_theorem){target="_blank"}.)
 
 ::::::{prf:theorem}  Cayley-Hamilton
 :label: Thm:Eigenvalues:CayleyHamilton

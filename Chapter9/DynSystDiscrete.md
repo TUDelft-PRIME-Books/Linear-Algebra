@@ -74,7 +74,7 @@ $$
                       \end{array}\right) \vect{x}_k.
 $$
 
-In the context of population dynamics, the matrix $M$ would be called a **[Leslie matrix](https://en.wikipedia.org/wiki/Leslie_matrix)**.
+In the context of population dynamics, the matrix $M$ would be called a **[Leslie matrix](https://en.wikipedia.org/wiki/Leslie_matrix){target="_blank"}**.
 
 We will study this model more closely in {prf:ref}`Ex:DynSystDiscrete:PopulationModel-2` later in this section.
 ::::
@@ -82,7 +82,7 @@ We will study this model more closely in {prf:ref}`Ex:DynSystDiscrete:Population
 ::::{prf:example}
 :label: ExDynSystDiscrete:PageRank
 
-A 'real' example is given by the [PageRank](https://en.wikipedia.org/wiki/PageRank) algorithm to rank pages on the internet (and which made Google great). The whole internet is modeled as a graph, a set of 'nodes' (= sites) connected by 'edges' (= links). The basic idea is to start from an arbitrary initial situation with a large amount of 'visitors' on the sites and simulate random walks for each visitor where at each step each visitor chooses an arbitrary site that is connected to his present site. Next many cycles are run/simulated, modeled by products
+A 'real' example is given by the [PageRank](https://en.wikipedia.org/wiki/PageRank){target="_blank"} algorithm to rank pages on the internet (and which made Google great). The whole internet is modeled as a graph, a set of 'nodes' (= sites) connected by 'edges' (= links). The basic idea is to start from an arbitrary initial situation with a large amount of 'visitors' on the sites and simulate random walks for each visitor where at each step each visitor chooses an arbitrary site that is connected to his present site. Next many cycles are run/simulated, modeled by products
 
 $$
    \vect{x}_{k+1} = M\vect{x}_k
@@ -813,7 +813,7 @@ $$
 A = \begin{pmatrix}-3&4\\5&0\end{pmatrix}\begin{pmatrix}0.6&-0.8\\0.8&0.6\end{pmatrix}\begin{pmatrix}-3&4\\5&0\end{pmatrix}^{-1},
 $$
 
-where the middle matrix is a hidden rotation. This rotation has as the angle $\arctan\left(\frac{0.8}{0.6}\right)$, which is _not_ a rational multiple of $2\pi$ (because $0.6+0,8i$ is not a [Root of unity](https://en.wikipedia.org/wiki/Root_of_unity)). Therefor the rotation will never return to any point it has visited before. The paths are thus not periodic.
+where the middle matrix is a hidden rotation. This rotation has as the angle $\arctan\left(\frac{0.8}{0.6}\right)$, which is _not_ a rational multiple of $2\pi$ (because $0.6+0,8i$ is not a [Root of unity](https://en.wikipedia.org/wiki/Root_of_unity){target="_blank"}). Therefor the rotation will never return to any point it has visited before. The paths are thus not periodic.
 
 An image containing one typical path can be seen in {numref}`Fig:DynSystDiscrete:Modulus1`.
 
@@ -928,7 +928,7 @@ Let us consider the probably most famous linear difference equation, by the way 
 ::::{prf:example}
 :label: Ex:DynSystDiscrete:Fibonacci
 
-The **[Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_sequence)** $f_0,f_1,f_2, \ldots$ is defined via
+The **[Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_sequence){target="_blank"}** $f_0,f_1,f_2, \ldots$ is defined via
 
 :::{math}
 :label: Eq:DynSystDiscrete:DfnFibo
@@ -1023,7 +1023,7 @@ $$
 which is indeed the expression presented in Equation {eq}`Eq:DynSystDiscrete:Fibonacci`.
 
 Noting that $0 < \frac12(\sqrt{5}-1) < 1 < \frac12(\sqrt{5}+1)$ we can see that eventually
-$f_k$ more or less grows with a factor $r = \frac12(\sqrt{5}+1)$, the so-called _[golden ratio](https://en.wikipedia.org/wiki/Golden_ratio)_. More precisely, for large values of $k$ we find that
+$f_k$ more or less grows with a factor $r = \frac12(\sqrt{5}+1)$, the so-called _[golden ratio](https://en.wikipedia.org/wiki/Golden_ratio){target="_blank"}_. More precisely, for large values of $k$ we find that
 
 $$
    f_{k+1} \approx  r\,f_k \quad \text{and also} \quad f_k \approx c r^k,\,\,

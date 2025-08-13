@@ -185,7 +185,7 @@ $$
 
 This shows that $1$ is an eigenvalue of $Q=P^T$, and by {numref}`grasple_exercise_6_2_6`, $1$ is also an eigenvalue of $P$.
 
-Showing that there is a corresponding eigenvector without negative entries is outside the scope of this book, but a sketch of the proof is given at [Stochastic matrix](https://en.wikipedia.org/wiki/Stochastic_matrix).
+Showing that there is a corresponding eigenvector without negative entries is outside the scope of this book, but a sketch of the proof is given at [Stochastic matrix](https://en.wikipedia.org/wiki/Stochastic_matrix){target="_blank"}.
 
 :::
 
@@ -262,7 +262,7 @@ If $P$ is a regular stochastic matrix, then it has a unique steady state $\vect{
 :::{admonition} Proof of {prf:ref}`Thm:MarkovChains:PerronFrobenius`
 :class: tudproof
 
-The proof is quite complicated and falls outside the scope of this text. We refer to for example [Perron–Frobenius theorem](https://en.wikipedia.org/wiki/Perron%E2%80%93Frobenius_theorem).
+The proof is quite complicated and falls outside the scope of this text. We refer to for example [Perron–Frobenius theorem](https://en.wikipedia.org/wiki/Perron%E2%80%93Frobenius_theorem){target="_blank"}.
 
 :::
 
