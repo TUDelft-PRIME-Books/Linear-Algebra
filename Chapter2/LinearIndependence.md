@@ -565,7 +565,7 @@ If we had to bring the matrix with these six vectors as columns to echelon form,
 
 Often, on news sites or in newspapers, you might see the standings of a football tournament displayed in a large table, as in {numref}`Tab:LinInd:SoccerExample`. Quite a lot of the information in such a table is redundant because some of the columns are linearly dependent.
 
-:::{csv-table} The final standings of the first season of the Eredivisie football played in 1956-57, as shown on [Wikipedia](https://en.wikipedia.org/wiki/1956%E2%80%9357_Eredivisie?oldid=1057049833) on Wednesday, March 23rd 2022.
+:::{csv-table} The final standings of the first season of the Eredivisie football played in 1956-57, as shown on [Wikipedia](https://en.wikipedia.org/wiki/1956%E2%80%9357_Eredivisie?oldid=1057049833){target="_blank"} on Wednesday, March 23rd 2022, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/){target="_blank"}.
 :class: longtable table-bordered table-striped table-hover
 :name: Tab:LinInd:SoccerExample
 :header-rows: 1

@@ -26,6 +26,7 @@ parse:
       - substitution
       - tasklist
       - amsmath
+      - attrs_inline
     myst_dmath_double_inline: true
     myst_heading_anchors : 5
 sphinx:

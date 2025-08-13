@@ -93,7 +93,7 @@ Knowing that the cross product of two vectors is orthogonal to these vectors doe
 ::::{figure} Images/Fig-CrossProduct-Righthandrule.svg
 :name: Fig:CrossProduct:RightHandRule
 
-The right-hand rule. Adapted from Acdx, CC BY-SA 3.0 http://creativecommons.org/licenses/by-sa/3.0/, via Wikimedia Commons.
+The right-hand rule. Adapted from [Acdx, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Right_hand_rule_cross_product.svg){target="_blank"}, [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/){target="_blank"}.
 ::::
 
 If we take our right hand, point our index finger in the direction of $\mathbf{u}$ and our middle finger in the direction of $\mathbf{v}$, as depicted in {numref}`Figure %s <Fig:CrossProduct:RightHandRule>`, then the cross product $\mathbf{u}\cp \mathbf{v}$ points in the direction of our thumb.
