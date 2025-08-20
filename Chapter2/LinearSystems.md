@@ -1285,7 +1285,7 @@ $$
              \tilde{a}_{22}&  \tilde{a}_{23}&  \cdots&   \tilde{a}_{2n} \\
              \tilde{a}_{32}&   \tilde{a}_{33}& \cdots&   \tilde{a}_{3n} \\
                 \vdots     &  \vdots         &  &  \vdots    \\
-           \tilde{a}_{m2}&  \tilde{a}_{m3}&  \cots&   \tilde{a}_{mn}
+           \tilde{a}_{m2}&  \tilde{a}_{m3}&  \cdots&   \tilde{a}_{mn}
           \end{array}
    \right).
 $$

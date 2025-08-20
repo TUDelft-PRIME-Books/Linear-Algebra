@@ -8,7 +8,7 @@ Sphinx == 7.4.7
 sphinx-exercise == 1.0.1
 TexSoup == 0.3.1
 sphinx-book-theme==1.1.4
-teachbooks-sphinx-grasple==1.2.2
+teachbooks-sphinx-grasple==1.2.3
 sphinx-tudelft-theme==1.1.13
 jupyterbook_patches ==1.7.0
 teachbooks-sphinx-tippy==1.0.11

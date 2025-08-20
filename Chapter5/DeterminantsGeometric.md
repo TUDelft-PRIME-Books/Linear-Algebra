@@ -526,7 +526,7 @@ $$
 
 ::::::
 
-The next proposition expresses a $3\times3$-determinant in terms of three $2\times2$-$determinants. This expression will be the key to define the determinant of a general $n\times n$-matrix in the next section.
+The next proposition expresses a $3\times3$-determinant in terms of three $2\times2$-determinants. This expression will be the key to define the determinant of a general $n\times n$-matrix in the next section.
 
 ::::::{prf:proposition}
 :label: Prop:DetGeometric:ColExpand
