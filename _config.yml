@@ -116,6 +116,7 @@ sphinx:
     - sphinx_dropdown_toggle
     - sphinx_table_support
     - sphinx_list_support
+    - sphinx_accessibility
 latex:
   latex_engine: pdflatex
   use_jupyterbook_latex: true
