@@ -145,7 +145,7 @@ Prove the last sentence in {prf:ref}`Rem:Diagonalisable:geometric`.
 :::{admonition} Solution to {numref}`Exc:Diagonalisable:GeomMultForSimilarMatrices`
 :class: solution, dropdown
 
-Define $V=\begin{pmatrix}\vect{v}_1&\cdots&\vect{v}_m\end{pmatrix}$ and consider the next equivalence relations:
+Define $V=\begin{pmatrix}\vect{v}_1&\cdots&\vect{v}_m\end{pmatrix}$ and consider the chain of equivalent statements:
 
 $$
 \begin{array}{rclcrcl}
@@ -481,7 +481,7 @@ $$
 0 & \lambda_2 & 0  & \cdots & 0 \\
 0 &  0 & \lambda_3 & \cdots & 0 \\
 \vdots & \vdots & \vdots & \ddots & \vdots \\
-0 & 0 & 0 & \ldcdotsocdotsts & \lambda_n \end{pmatrix},
+0 & 0 & 0 & \cdots & \lambda_n \end{pmatrix},
 $$
 
 and the transformation formula gives
