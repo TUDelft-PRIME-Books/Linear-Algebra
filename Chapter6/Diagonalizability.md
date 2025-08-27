@@ -155,7 +155,7 @@ PV\vect{x} &=& \vect{0} &\iff& V\vect{x} &=& P^{-1}\vect{0} \\
 \end{array}
 $$
 
-The last steps follows from $V$ having linearly independent columns (by construction). This shows even more: $PV$ has linearly indepedent columns if and only if $V$ has linearly indepedent columns.
+The last steps follows from $V$ having linearly independent columns (by construction). This shows even more: $PV$ has linearly independent columns if and only if $V$ has linearly independent columns.
 
 This directly concludes the proof, as the columns of $PV$ are the vectors $P\vect{v}_1, \ldots, P\vect{v}_m$.
 

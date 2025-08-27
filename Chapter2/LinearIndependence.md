@@ -294,7 +294,7 @@ which shows that $\mathbf{w}$ is in $\operatorname{Span}T\setminus\left\lbrace\m
 
 Assume $T$ is linearly independent and $S\subseteq T$. Additionally assume, without loss of generality that $T=S\cup\left\lbrace\mathbf{w}_{1},\ldots,\mathbf{w}_{m}\right\rbrace$ for some vectors $\mathbf{w}_{1},\ldots,\mathbf{w}_{m}$.
 
-If we assume $S$ is linearly dependent, then ii. above gives that $T$ should also be linearly dependent, which contradicts our assumption that $T$ is linearly indepedent. Therefore, $S$ must be linearly independent. 
+If we assume $S$ is linearly dependent, then ii. above gives that $T$ should also be linearly dependent, which contradicts our assumption that $T$ is linearly independent. Therefore, $S$ must be linearly independent. 
 
 </li>
 </ol>
