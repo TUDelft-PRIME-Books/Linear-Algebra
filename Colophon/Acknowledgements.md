@@ -81,11 +81,11 @@ A. (Amin) Ayman
 
 [Dr. D. (Dani) Balagué Guardia](https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/dr-d-dani-balague-guardia){target="_blank"}
 
-[Y. (Yoni) Geubbels](https://www.linkedin.com/in/yoni-geubbels-92b01915a/){target="_blank"}
+[Y. (Yoni) Geubbels](https://www.linkedin.com/in/yoni-geubbels-92b01915a/){target="_blank"} (project lead)
 
 [L.C. (Loes) van Hove MSc](https://www.linkedin.com/in/loes-van-hove-042a99109/){target="_blank"} (project lead)
 
-[C.J.A. (Carola) van der Muren](https://www.linkedin.com/in/carola-van-der-muren-742b594/){target="_blank"} (project lead)
+[C.J.A. (Carola) van der Muren](https://www.linkedin.com/in/carola-van-der-muren-742b594/){target="_blank"}
 
 [Dr.ir. D. (Dennis) den Ouden-van der Horst](https://www.linkedin.com/in/dennis-den-ouden-614b5813/){target="_blank"}  (principal support)
 
