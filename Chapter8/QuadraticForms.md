@@ -946,7 +946,7 @@ A plane through the apex may have the apex as unique common point with the cone.
 
 If (as in the central image in {numref}`Figure %s <Fig:QuadForms:DegenerateConicSections>`) the plane is close to vertical, it will intersect the cone in **two lines** through the apex.
 
-The transition between these situations is when the plane is tangent to the cone. This yields the last possible conic section, **a line**.
+T he last form of a degenerate conic section is the transition between these situations, i.e. when the plane is tangent to the cone. This yields the last possible conic section, **a line**.
 
 
 :::{figure} Images/Fig-QuadForms-DegenerateConicSections.png
@@ -1273,7 +1273,7 @@ What happens if in Equation {eq}`Eq:ConicSec:CentralConic` the coefficient $f$ i
 :class: solution, dropdown
 
 
-We have to look at the solutions $(x_1, x_2)$ of the equation $ax_1^2 + bx_1x_2 + cx_2^2 = 0$, where not all three coefficients $a,b,c$ are zero.
+We have to look at the solutions $\begin{pmatrix} x_1 \\ x_2 \end{pmatrix}$ of the equation $ax_1^2 + bx_1x_2 + cx_2^2 = 0$, where not all three coefficients $a,b,c$ are zero.
 
 We can rewrite the equation as
 

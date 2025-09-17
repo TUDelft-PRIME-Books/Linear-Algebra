@@ -751,7 +751,19 @@ $$
 \vect{x}_k= (3)(1)^k\begin{pmatrix} 1 \\ 1 \end{pmatrix}+(-1)(2)^k\begin{pmatrix} 2 \\ 3 \end{pmatrix}.
 $$
 
-This gives a trajectory away from the origin, and because $(1)^k=1$, all points lie on the line starting in $(1,0)$ and going through $(-1,-3)$.
+This gives a trajectory away from the origin, and because $(1)^k=1$, the solution can be reformulated as
+
+$$
+\vect{x}_k= \begin{pmatrix} 3 \\ 3 \end{pmatrix}+(2)^k\begin{pmatrix} -2 \\ -3 \end{pmatrix}.
+$$
+
+If we define $t(k)=(2)^k-1$ for $k\geq0$, then the trajectory can be described as
+
+$$
+\vect{x}_k= \begin{pmatrix} 1 \\ 0 \end{pmatrix}+t(k)\begin{pmatrix} -2 \\ -3 \end{pmatrix}.
+$$
+
+This  means that all points lie on the line starting in $\begin{pmatrix} 1 \\ 0 \end{pmatrix}$ and having direction vector $\begin{pmatrix} -2 \\ -3 \end{pmatrix}$.
 
 For $\vect{s}_2 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$ we find the solution
 
@@ -759,7 +771,7 @@ $$
 \vect{x}_k= (1)(1)^k\begin{pmatrix} 1 \\ 1 \end{pmatrix}+(0)(2)^k\begin{pmatrix} 2 \\ 3 \end{pmatrix}.
 $$
 
-This gives that the trajectory remains in the same point $(1,1)$ for all $k$.
+This gives that the trajectory remains in the point $(1,1)$ for all $k$.
 
 A sketch can be seen in {numref}`Fig:DynSystDiscrete:Eigenvalue1`.
 
@@ -793,7 +805,7 @@ $$
 \vect{x}_k = c_1(0.6 + 0.8i)^k\begin{pmatrix}-3-4i\\5\end{pmatrix}+c_2(0.6 - 0.8i)^k\begin{pmatrix}-3+4i\\5\end{pmatrix},
 $$
 
-and it's norm
+and its norm
 
 $$
 \begin{align*}
@@ -805,15 +817,15 @@ $$
 \end{align*}
 $$
 
-which shows the requested.
+which settles the claim.
 
-Using {prf:ref}`Prop:ComplexEV:HiddenRotation` we can also write
+Using {prf:ref}`Prop:ComplexEV:HiddenRotation` we can write
 
 $$
 A = \begin{pmatrix}-3&4\\5&0\end{pmatrix}\begin{pmatrix}0.6&-0.8\\0.8&0.6\end{pmatrix}\begin{pmatrix}-3&4\\5&0\end{pmatrix}^{-1},
 $$
 
-where the middle matrix is a hidden rotation. This rotation has as the angle $\arctan\left(\frac{0.8}{0.6}\right)$, which is _not_ a rational multiple of $2\pi$ (because $0.6+0,8i$ is not a [Root of unity](https://en.wikipedia.org/wiki/Root_of_unity){target="_blank"}). Therefor the rotation will never return to any point it has visited before. The paths are thus not periodic.
+where the middle matrix is a rotation matrix. The rotation defined by that matrix has is about the angle $\arctan\left(\frac{0.8}{0.6}\right)$, which is _not_ a rational multiple of $2\pi$ (because $0.6+0.8i$ is not a [Root of unity](https://en.wikipedia.org/wiki/Root_of_unity){target="_blank"}). Therefor the rotation will never return to any point it has visited before. The paths are thus not periodic.
 
 An image containing one typical path can be seen in {numref}`Fig:DynSystDiscrete:Modulus1`.
 

@@ -231,7 +231,7 @@ $$
   A\mathbf{u} = \lambda\mathbf{u},\quad A\mathbf{v} = \mu\mathbf{v},\text{ where }\lambda \neq \mu.
 $$
 
-We consider the expression  $\mathbf{u}^T\ip A \mathbf{v} = \mathbf{u}^T A \mathbf{v}$.
+We consider the expression $\mathbf{u}\ip A \mathbf{v}$.
 
 On the one hand  
 
@@ -247,8 +247,8 @@ On the other hand
 :::{math}
 :label: eq:SymmetricMat:uTAv4
 
-  \mathbf{u}\ip A \mathbf{v} = \mathbf{u}^T\ A^T \mathbf{v} = (A\mathbf{u})^T\mathbf{v} = 
-  \lambda \mathbf{u}^T\mathbf{v} = \lambda (\mathbf{u}\mathbf{v})
+  \mathbf{u}\ip A \mathbf{v} = \mathbf{u}^T A^T \mathbf{v} = (A\mathbf{u})^T\mathbf{v} = 
+  \lambda \mathbf{u}^T\mathbf{v} = \lambda (\mathbf{u}\ip\mathbf{v})
 
 :::
 
@@ -1096,22 +1096,22 @@ $$
 Q=\begin{pmatrix}\frac{1}{\sqrt3}&-\frac{1}{\sqrt2}&\frac{1}{\sqrt6}\\-\frac{1}{\sqrt3}&0&\frac{2}{\sqrt6}\\\frac{1}{\sqrt3}&\frac{1}{\sqrt2}&\frac{1}{\sqrt6}\end{pmatrix}\text{ and }D=\begin{pmatrix}1&0&0\\0&2&0\\0&0&4\end{pmatrix}.
 $$
 
-Use the column-row expansion of the matrix product results in:
+Using the column-row expansion of the matrix product results in:
 
 $$
-A = (1)
+A = 1
 \begin{pmatrix}
 \frac{1}{3}&-\frac{1}{3}&\frac{1}{3}\\
 -\frac{1}{3}&\frac{1}{3}&-\frac{1}{3}\\
 \frac{1}{3}&-\frac{1}{3}&\frac{1}{3}
 \end{pmatrix}
-+(2)
++2
 \begin{pmatrix}
 \frac{1}{2}&0&-\frac{1}{2}\\
 0&0&0\\
 -\frac{1}{2}&0&\frac{1}{2}
 \end{pmatrix}
-+(4)
++4
 \begin{pmatrix}
 \frac{1}{6}&\frac{2}{6}&\frac{1}{6}\\
 \frac{2}{6}&\frac{4}{6}&\frac{2}{6}\\

@@ -839,7 +839,7 @@ $$
 \end{pmatrix}.
 $$
 
-We can read off that a basis for $\Col{(E)} = \Col{(A)}$ is given by
+We can read off that a basis for $\Nul{(E)} = \Nul{(A)}$ is given by
 
 $$
   \mathcal{B} = \left\{\begin{pmatrix} -1 \\1\\0\\0\\0\end{pmatrix}, \,
@@ -998,20 +998,22 @@ which provides an alternative basis for $\mathcal{P}$.
 ::::::{exercise}
 :label: Exc:BasisDim:OtherBasesForPlane
 
-<ol type = "i">
-
-<li>
-
 Give another basis of the plane $\mathcal P$, which does not contain a vector that is a multiple of one of the vectors $\begin{pmatrix} 1   \\ -2 \\ 0 \end{pmatrix}$, $\begin{pmatrix}3   \\ 0 \\ 1\end{pmatrix}$ and $\begin{pmatrix}0 \\ 6\\1\end{pmatrix}$.
 
-</li>
+::::::
 
-<li>
+::::::{admonition} Solution to {numref}`Exc:BasisDim:OtherBasesForPlane`
+:class: solution, dropdown
 
-Show that **any** set of two independent vectors in the plane $\mathcal P$ generates the plane, hence forms a basis.
+Any linear combination of the three given vectors lies in the plane $\mathcal{P}$.
+We can take any two linear combinations that are linearly independent and that are not multiples of one of the three. For instance, taking the sum of the first two and the sum of the last two gives the basis
 
-</li>
-</ol>
+$$
+  \left\{\begin{pmatrix}4 \\ -2 \\ 1 \end{pmatrix}, \begin{pmatrix} 3\\6\\2\end{pmatrix}\right\}.
+$$
+
+Any such set spans the plane (and is independent by construction), so forms a basis.
+
 
 ::::::
 
@@ -1193,21 +1195,21 @@ $$
 
 Assume ii. and iii. of {prf:ref}`Prop:BasisDim:TwoOfThreeSuffice` and in addition assume that $\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace$ is linearly dependent.
 
+That means that there is a vector $\vect{b}_q$ in the set $\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace$ with $1\leq q\leq \ell$ that is a linear combination of the other vectors in the set.
+
 Then for any vector $\vect{v}$ in $S$ we have from ii. that
 
 $$
 \vect{v} = c_1\vect{b}_1 + c_2\vect{b}_2 + \cdots +c_{q-1}\vect{b}_{q-1}+c_{q}\vect{b}_{q}+c_{q+1}\vect{b}_{q+1}+ \cdots+ c_{\ell}\vect{b}_{\ell},
 $$
 
-but also
+but also from the linear dependence of the set
 
 $$
-\vect{v} = d_1\vect{b}_1 + d_2\vect{b}_2 + \cdots +d_{q-1}\vect{b}_{q-1}+d_{q+1}\vect{b}_{q+1}+ \cdots+ d_{\ell}\vect{b}_{\ell},
+\vect{v} = d_1\vect{b}_1 + d_2\vect{b}_2 + \cdots +d_{q-1}\vect{b}_{q-1}+d_{q+1}\vect{b}_{q+1}+ \cdots+ d_{\ell}\vect{b}_{\ell}.
 $$
 
-as there must be at least one vector $\vect{v}_q$ that is a linear combination of the other vectors in the set $\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace$.
-
-This means that $S=\operatorname{Span}\lbrace\vect{b}_1, \vect{b}_2, \ldots,\vect{b}_{q-1},\vect{b}_{q+1},\ldots, \vect{b}_{\ell} \rbrace$ and $\dim S = \ell - 1$. But this contradicts iii., which states that $\ell = k = \dim S$.
+This means that $S=\operatorname{Span}\lbrace\vect{b}_1, \vect{b}_2, \ldots,\vect{b}_{q-1},\vect{b}_{q+1},\ldots, \vect{b}_{\ell} \rbrace$ and $\dim S \leq \ell - 1$. But this contradicts iii., which states that $\ell = k = \dim S$.
 
 So we conclude that $\lbrace\vect{b}_1, \vect{b}_2, \ldots, \vect{b}_{\ell} \rbrace$ must be linearly independent.
 
@@ -1766,6 +1768,8 @@ Consequently, by the rank theorem   ({prf:ref}`Thm:BasisDim:RankThm`),
       p - \operatorname{dim}\operatorname{Nul}(B) = \operatorname{rank}(B).
  $$
 
+ The inequality $\operatorname{dim}\operatorname{Nul}(AB) \geq \operatorname{dim}\operatorname{Nul}(B)$ is a result from the second statement in the solution of {numref}`Exc:Subspaces:ColABinColA`, which states that $\operatorname{Nul}(B) \subseteq \operatorname{Nul}(AB)$.
+
 ::::::
 
 The following proposition combines the results of the last two exercises.
@@ -1859,7 +1863,7 @@ $$
 If we instead assume that $A$ is an $\class{green}{m}\times \class{blue}{n}$-matrix and $B$ is an $\class{blue}{n}\times\class{red}{p}$-matrix, we can replace the colored letters above by the new colored letters, without changing anything in the validity of the proof. I.e., the statement
 
 $$
-\text{``If }AB = O,\text{ then }\operatorname{rank}A+\operatorname{rank}B\leq n\text{.''}
+\text{If }AB = O,\text{ then }\operatorname{rank}A+\operatorname{rank}B\leq n.
 $$
 
 is true for all matrices $A$ and $B$ when $A$ is an $m\times n$-matrix and $B$ is an $n\times p$-matrix.

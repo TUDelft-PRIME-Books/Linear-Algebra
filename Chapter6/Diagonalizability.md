@@ -138,12 +138,14 @@ then the vectors $P\vect{v}_1, \ldots, P\vect{v}_m$ are linearly independent eig
 ::::::{exercise}
 :label: Exc:Diagonalisable:GeomMultForSimilarMatrices
 
-Prove the last sentence in {prf:ref}`Rem:Diagonalisable:geometric`.
+Prove {prf:ref}`Rem:Diagonalisable:geometric`.
 
 ::::::
 
 :::{admonition} Solution to {numref}`Exc:Diagonalisable:GeomMultForSimilarMatrices`
 :class: solution, dropdown
+
+If $\mathbf{v}_i$ is an eigenvector of $B$ for the eigenvalue $\lambda_i$, then $P\vect{v}_i$ is an eigenvector of $A$ for the same eigenvalue $\lambda_i$ (by {prf:ref}`Prop:Diagonalisable:SimilarEigenvalues`). Similarly, if $\mathbf{u}_i$ is an eigenvector of $A$ for the eigenvalue $\lambda_i$, then $P^{-1}\vect{u}_i$ is an eigenvector of $B$ for the same eigenvalue $\lambda_i$.
 
 Define $V=\begin{pmatrix}\vect{v}_1&\cdots&\vect{v}_m\end{pmatrix}$ and consider the chain of equivalent statements:
 
@@ -156,6 +158,8 @@ PV\vect{x} &=& \vect{0} &\iff& V\vect{x} &=& P^{-1}\vect{0} \\
 $$
 
 The last steps follows from $V$ having linearly independent columns (by construction). This shows even more: $PV$ has linearly independent columns if and only if $V$ has linearly independent columns.
+
+As the columns of $PV$ are the vectors $P\vect{v}_1, \ldots, P\vect{v}_m$, the vectors $P\vect{v}_1, \ldots, P\vect{v}_m$ are linearly independent if and only if $\vect{v}_1, \ldots, \vect{v}_m$ are linearly independent.
 
 This directly concludes the proof, as the columns of $PV$ are the vectors $P\vect{v}_1, \ldots, P\vect{v}_m$.
 

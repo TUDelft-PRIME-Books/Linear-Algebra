@@ -737,7 +737,7 @@ Show that $S$ and $T_3$ are again linear transformations.
 ::::::{admonition} Solution to {numref}`Exc:LinTrafo:CombiningLinTrafos`
 :class: solution, dropdown
 
-The properties of the linear transformatiuon $T_1$ and $T_2$ carry over to $S$ and $T_3$ in the following way.
+The properties of the linear transformation $T_1$ and $T_2$ carry over to $S$ and $T_3$ in the following way.
 We check the properties one by one.
 
 For the sum $S$ we have
@@ -760,7 +760,7 @@ $$
 </li>
 <li>
 
-And likewise, for all vectors $\mathbf{v}$ in $\mathbb{R}^n$ and all scalars $c$ in $\mathbb{R}$:
+Likewise, for all vectors $\mathbf{v}$ in $\mathbb{R}^n$ and all scalars $c$ in $\mathbb{R}$:
 
 $$
    \begin{array}{rcl}
@@ -800,8 +800,8 @@ Then the line segment between $\vect{p}$ and $\vect{q}$ consist of all vectors  
 By the linearity of $T$ it follows that the image of $\mathcal{S}$  consist of all vectors
 $T(\vect{p} + t\vect{r}) = T(\vect{p})  + tT(\vect{r})$, with $0 \leq t \leq 1$. 
 
-This describes the line segment between the points  $T(\vect{p})$ and $T(\vect{p} + \vect{r})$.  Note that 
-$T(\vect{p})  + T(\vect{r}) = T(\vect{p} + \vect{r}) = T(\vect{q})$.  If by any chance  $T(\vect{r}) = \mathbf{0}$,  the segment 'shrinks' to a point.
+This describes the line segment between the points  $T(\vect{p})$ and $T(\vect{p}) + T(\vect{r})$.  Note that 
+$T(\vect{p})  + T(\vect{r}) = T(\vect{p} + \vect{r}) = T(\vect{q})$.  If by any chance  $T(\vect{r}) = \mathbf{0}$,  the segment 'shrinks' to a single point.
 
 ::::::
 

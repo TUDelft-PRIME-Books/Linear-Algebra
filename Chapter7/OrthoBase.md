@@ -544,7 +544,7 @@ which establishes [i.](#It:OrthoBase:OrthoMatandInnerProd) The other points are 
 :::{exercise}
 :label: Exc:OrthoBase:OrthoMatandInnerProd
 
-Proof ii. andf iii. of {prf:ref}`Prop:OrthoBase:OrthoMatandInnerProd`.
+Proof ii. and iii. of {prf:ref}`Prop:OrthoBase:OrthoMatandInnerProd`.
 :::
 
 :::{admonition} Solution to {numref}`Exc:OrthoBase:OrthoMatandInnerProd`

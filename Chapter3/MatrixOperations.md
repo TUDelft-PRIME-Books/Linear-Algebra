@@ -622,7 +622,7 @@ is not defined.
 :::{admonition} Solution to {numref}`Exc:MatrixOps:NonDefinedProduct`
 :class: solution, dropdown
 
-The first matrix is $3\times 2$, just as the second matrix. The product is not defined, as the number of columns ($2$) of the first matrix does not match the number of rows ($3$) of the second matrix.
+The first matrix is a $3\times 2$-matrix, just as the second matrix. The product is not defined, as the number of columns ($2$) of the first matrix does not match the number of rows ($3$) of the second matrix.
 
 :::
 
@@ -776,7 +776,7 @@ A^TA = \begin{pmatrix} \mathbf{a}_1\ip \mathbf{a}_1  & \mathbf{a}_1\ip\mathbf{a}
          \end{pmatrix}.
 $$
 
-If $A$ has orthogonal columns, then at least $\mathbf{a}_i\ip\mathbf{a}_j=0$ for $i\neq j$. This gives
+If $A$ has orthogonal columns it holds that $\mathbf{a}_i\ip\mathbf{a}_j=0$ for $i\neq j$. This gives
 
 $$
 A^TA = \begin{pmatrix} \mathbf{a}_1\ip \mathbf{a}_1  & 0 & \cdots &  0\\
@@ -788,7 +788,7 @@ $$
 
 So $A^TA$ is a diagonal matrix.
 
-The other way, if $A^T$ is a diagonal matrix, then at least $\mathbf{a}_i\ip\mathbf{a}_j=0$ for $i\neq j$, so $A$ has orthogonal columns.
+The other way, if $A^T$ is a diagonal matrix, then $\mathbf{a}_i\ip\mathbf{a}_j=0$ for $i\neq j$, so $A$ has orthogonal columns.
 
 :::
 
@@ -838,8 +838,10 @@ I\mathbf{a}_1 &= \begin{pmatrix}1 & 0 & 0 & 0 \\
 &= \begin{pmatrix}a_{11} \\ 0 \\ 0 \\0 \end{pmatrix}
 + \begin{pmatrix}0 \\ a_{21} \\ 0 \\0 \end{pmatrix}
 +\begin{pmatrix}0\\ 0 \\ a_{31} \\0 \end{pmatrix}
-+\begin{pmatrix}0 \\ 0 \\ 0 \\a_{41} \end{pmatrix}.
-\end{align*}
++\begin{pmatrix}0 \\ 0 \\ 0 \\a_{41} \end{pmatrix}
+\\
+&= \begin{pmatrix}a_{11} \\ a_{21} \\ a_{31} \\a_{41} \end{pmatrix}= \mathbf{a}_1.
+\end{align*} 
 $$
 
 Similarly, $I\mathbf{a}_2=\mathbf{a}_2$ and $I\mathbf{a}_3=\mathbf{a}_3$.
@@ -957,9 +959,11 @@ $$
 :::{admonition} Solution to {numref}`Exc:MatrixOps:RowOpsByElMatrices`
 :class: solution, dropdown
 
-$E_1$ is the elementary matrix that substracts row $4$ of $A$ from row $2$ of $A$.
+If we combine {prf:ref}`Prop:MatrixOps:ProductRowCombinations` and {prf:ref}`Dfn:MatrixOps:ElementaryMatrix`, we see that each row of an elementary matrix $E$ tells us which linear combination of the rows of $A$ we have to take to form the corresponding row of $EA$.
 
-$E_2$ is the elementary matrix that switches row $2$ of $A$ and row $4$ of $A$.
+For $E_1$ this means that the first, third, and fourth row of $EA$ are respectively equal to the first, third, and fourth row of $A$, while the second row of $EA$ is equal to the second row of $A$ minus the fourth row of $A$. So $E_1$ is the elementary matrix that substracts row $4$ of $A$ from row $2$ of $A$.
+
+For $E_2$ this means that the first and third row of $EA$ are respectively equal to the first and third row of $A$, while the second row of $EA$ is equal to the fourth row of $A$ and the fourth row of $EA$ is equal to the second row of $A$. So $E_2$ is the elementary matrix that switches row $2$ of $A$ and row $4$ of $A$.
 
 :::
 
@@ -984,7 +988,7 @@ The column-row product in the last example is the building block for yet another
 :label: Exc:MatrixOps:ColumnRowExpansion
 
 Denote the columns of the $m\times n$-matrix $A$ by $A_{(1)}, \ldots, A_{(n)}$, and the
-rows of the $n\times p$-matrix $B$ by $B^{(1)}, \ldots, B^{(p)}$, so
+rows of the $n\times p$-matrix $B$ by $B^{(1)}, \ldots, B^{(n)}$, so
 
 $$
   A_{(j)} =   \begin{pmatrix}   a_{1j} \\ \vdots \\ a_{mj}\end{pmatrix}  \quad \text{and} \quad
@@ -1004,7 +1008,7 @@ i.e., $AB$ is the sum of $n$ column-row products (like in {prf:ref}`Ex:MatrixOps
 :::{admonition} Solution to {numref}`Exc:MatrixOps:ColumnRowExpansion`
 :class: solution, dropdown
 
-Using {prf:ref}`Prop:MatrixOps:RowColExpansion`, we see that with $C=AB$ and
+{prf:ref}`Prop:MatrixOps:RowColExpansion` tells us that the $(i,j)$-entry $c_{ij}$ of the product $C=AB$ can be computed as
 
 $$
 c_{ij} = a_{i1}b_{1j} + a_{i2}b_{2j} + \cdots + a_{in}b_{nj}.
@@ -1344,7 +1348,7 @@ $$
 The fact that $AB \neq BA$ can be understood by thinking about the composition of the two transformations corresponding to $A$ and $B$.
 (See Section {ref}`Sec:LinTrafo`.)
 
-The following two exercises shed some light on the non-commutativity.
+The following two examples shed some light on the non-commutativity.
 
 ::::::{prf:example}
 :label: Ex:MatrixOps:NonCommutativeComposition

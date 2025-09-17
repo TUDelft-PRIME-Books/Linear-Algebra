@@ -39,7 +39,7 @@ Prove {prf:ref}`Prop:OrthoComp:OrthotoSpanningSet`.
 :::{admonition} Solution to {numref}`Exc:OrthoComp:OrthotoSpanningSet`
 :class: solution, dropdown
 
-Assume the vector $\vect{u}$ is orthogonal to every $\vect{v}_{i}$. If $\vect{v}_{1},\ldots,\vect{v}_{n}$ spans $V$, then any $\vect{v}$ in $V$ can be written as $c_{1}\vect{v}_{1}+\cdots c_{n}\vect{v}_{n}$ for certain $c_{1},\ldots,c_{n}$ in $\R$. But then $\vect{u}\cdot\vect{v}=c_{1}\vect{u}\cdot\vect{v}_{1}+\cdots+c_{n}\vect{u}\cdot\vect{v}_{n}=0$, so $\vect{u}$ is orthogonl to $\vect{v}$.
+Suppose  $\{\vect{v}_1, \vect{v}_2, \ldots, \vect{v}_n\}$  spans the subspace $V$, and $\vect{u}$ is a vector that is orthogonal to all the vectors $\vect{v}_i$.  Let $\vect{v}$ be an arbitrary vector in $V$. Then $\vect{v}$ can be written as $c_{1}\vect{v}_{1}+\cdots c_{n}\vect{v}_{n}$ for certain $c_{1},\ldots,c_{n}$ in $\R$. Then $\vect{u}\cdot\vect{v}=c_{1}\vect{u}\cdot\vect{v}_{1}+\cdots+c_{n}\vect{u}\cdot\vect{v}_{n}=0$, so $\vect{u}$ is orthogonal to $\vect{v}$.
 
 :::
 
