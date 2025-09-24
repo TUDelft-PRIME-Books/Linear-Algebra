@@ -946,7 +946,7 @@ A plane through the apex may have the apex as unique common point with the cone.
 
 If (as in the central image in {numref}`Figure %s <Fig:QuadForms:DegenerateConicSections>`) the plane is close to vertical, it will intersect the cone in **two lines** through the apex.
 
-T he last form of a degenerate conic section is the transition between these situations, i.e. when the plane is tangent to the cone. This yields the last possible conic section, **a line**.
+The last form of a degenerate conic section is the transition between these situations, i.e. when the plane is tangent to the cone. This yields the last possible conic section, **a line**.
 
 
 :::{figure} Images/Fig-QuadForms-DegenerateConicSections.png
