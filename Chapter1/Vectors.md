@@ -144,7 +144,7 @@ Suppose we have two vectors
 $$
 
 \mathbf{v}_{1}=\begin{pmatrix}
-a_{1}\\\vdots\\a_{n}\end{pmatrix}\quad\text{and}\quad\mathbf{v}_{2}=\begin{pmatrix} b_{1}\\\vdots \\b_{n}\end{pmatrix}
+a_{1}\\a_{2}\\\vdots\\a_{n}\end{pmatrix}\quad\text{and}\quad\mathbf{v}_{2}=\begin{pmatrix} b_{1}\\b_{2}\\\vdots \\b_{n}\end{pmatrix}
 $$
 
  of the same size. The **sum** of $\mathbf{v}_{1}$ and $\mathbf{v}_{2}$, denoted by $\mathbf{v}_{1}+\mathbf{v}_{2}$, is the vector
@@ -152,7 +152,7 @@ $$
 
 $$
 
-\mathbf{v}_{1}+\mathbf{v}_{2}=\begin{pmatrix} a_{1}+b_{1}\\\vdots\\a_{n}+b_{n}\end{pmatrix}.
+\mathbf{v}_{1}+\mathbf{v}_{2}=\begin{pmatrix} a_{1}+b_{1}\\a_{2}+b_{2}\\\vdots\\a_{n}+b_{n}\end{pmatrix}.
 $$
 
 If $c$ is a real number, then the **scalar multiple** $c\mathbf{v}_{1}$ is the vector
@@ -161,7 +161,7 @@ If $c$ is a real number, then the **scalar multiple** $c\mathbf{v}_{1}$ is the v
 $$
 
 c\mathbf{v}_{1}=\begin{pmatrix}
-ca_{1}\\\vdots\\ca_{n}
+ca_{1}\\ca_{2}\\\vdots\\ca_{n}
 \end{pmatrix}.
 $$
 
@@ -260,7 +260,7 @@ Note that for every molecule of sodium sulfate we need two molecules of carbon i
 The chemical reaction given in Equation {eq}`Eq:Vectors:ChemReac`.
 ```
 
-There are four different chemical elements involved in this reaction: sodium ($\ce{Na}$), sulfide ($\ce{S}$), oxygen ($\ce{O}$), and carbon. Each of our molecules can be written as a vector of size four with the entries giving the number of sodium, sulfide, oxygen, and carbon atoms (in that order) in the molecule. This gives:
+There are four different chemical elements involved in this reaction: sodium ($\ce{Na}$), sulfide ($\ce{S}$), oxygen ($\ce{O}$), and carbon ($\ce{C}$). Each of our molecules can be written as a vector of size four with the entries giving the number of sodium, sulfide, oxygen, and carbon atoms (in that order) in the molecule. This gives:
 
 
 $$
@@ -324,7 +324,7 @@ $$
 
 its end point will be precisely $P$.
 
-By fixing our origin $O$, we have therefore introduced a natural correspondence between points in the plane and vectors with two components: a point $P=(a_{1},a_{2})$ corresponds to the vector pointing from $O$ to $P$, which is given by $\mathbf{v}$.
+By fixing our origin $O$, we have therefore introduced a natural correspondence between points in the plane and vectors with two components: a point $P=(a_{1},a_{2})$ corresponds to the vector pointing from $O$ to $P$, which is given by $\mathbf{v}_{P}$.
 
 In a similar vein, we can associate vectors with three components to points in three-dimensional space. We again fix an origin $O=(0,0,0)$. Any other point $P$ is given by its displacement from $O$ to the front ($a_{1}$), to the right ($a_{2}$), and upward ($a_{3}$). To this point, we can associate the vector
 
@@ -335,7 +335,7 @@ a_{1}\\a_{2}\\a_{3}
 \end{pmatrix}.
 $$
 
-If we let $\mathbf{v}$ start in $O$, its end point will be precisely $P$. This method works just as well for points on the line, which correspond to vectors with just one component. In fact, it works for any $\mathbb{R}^{n}$. We fix an origin $O=(0,\ldots,0)$. A point $P=(a_{1},\ldots,a_{n})$ then corresponds to the vector $\mathbf{v}_{p}$ pointing from $O$ to $P$, i.e. the vector
+If we let $\mathbf{v}_{P}$ start in $O$, its end point will be precisely $P$. This method works just as well for points on the line, which correspond to vectors with just one component. In fact, it works for any $\mathbb{R}^{n}$. We fix an origin $O=(0,\ldots,0)$. A point $P=(a_{1},\ldots,a_{n})$ then corresponds to the vector $\mathbf{v}_{P}$ pointing from $O$ to $P$, i.e. the vector
 
 $$
 
@@ -369,7 +369,7 @@ $$
 :url: https://embed.grasple.com/exercises/9c3a037d-7bcb-49c7-a167-baffbae14d46?id=70142
 :label: grasple_exercise_1_1_5
 :dropdown:
-:description: To solve for $\vect{x}$ an equation $a(\vect{x}-\vect{u})= b(\vect{x}-\vect{v}) + c\vect{u}+d\vect{u}$.
+:description: To solve for $\vect{x}$ an equation $a(\vect{x}+\vect{u})= b(\vect{x}-\vect{v}) + c\vect{u}+d\vect{u}$.
 
 ::::
 

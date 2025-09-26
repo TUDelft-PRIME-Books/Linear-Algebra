@@ -713,7 +713,7 @@ $$
 \right\rbrace.
 $$
 
-The solution of the equation $A\vect{x} = \vect{0}$ can also be easily read off from the reduced echelon form:
+The solution to the equation $A\vect{x} = \vect{0}$ can also be easily read off from the reduced echelon form:
 
 $$
 
@@ -949,7 +949,7 @@ $$
 .
 $$
 
-By taking $x_2$ and $x_3$ as free variables we find that the general solution of this linear system (of one equation in three unknowns) is given by
+By taking $x_2$ and $x_3$ as free variables we find that the general solution to this linear system (of one equation in three unknowns) is given by
 
 $$
 \left\lbrace
@@ -1280,7 +1280,7 @@ The proof consists of combining several properties of this section.
 
 We have seen ({prf:ref}`Prop:BasisDim:PivotColsBasis`) that the dimension of the column space is equal to the number of pivots. Say, this number is given by $p$.
 
-Likewise, the dimension of the null space is equal to the number of free variables in the solution of
+Likewise, the dimension of the null space is equal to the number of free variables in the solution to
 
 $$
 A\vect{x} = \vect{0},
@@ -1768,7 +1768,7 @@ Consequently, by the rank theorem   ({prf:ref}`Thm:BasisDim:RankThm`),
       p - \operatorname{dim}\operatorname{Nul}(B) = \operatorname{rank}(B).
  $$
 
- The inequality $\operatorname{dim}\operatorname{Nul}(AB) \geq \operatorname{dim}\operatorname{Nul}(B)$ is a result from the second statement in the solution of {numref}`Exc:Subspaces:ColABinColA`, which states that $\operatorname{Nul}(B) \subseteq \operatorname{Nul}(AB)$.
+ The inequality $\operatorname{dim}\operatorname{Nul}(AB) \geq \operatorname{dim}\operatorname{Nul}(B)$ is a result from the second statement in the solution to {numref}`Exc:Subspaces:ColABinColA`, which states that $\operatorname{Nul}(B) \subseteq \operatorname{Nul}(AB)$.
 
 ::::::
 

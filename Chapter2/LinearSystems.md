@@ -147,7 +147,7 @@ which are both true identities.
 :url: https://embed.grasple.com/exercises/8159aed6-a915-4cc1-bf75-f243702de530?id=83000
 :label: grasple_exercise_2_1_A
 :dropdown:
-:description: To check whether a vector is a solution of a linear system.
+:description: To check whether a vector is a solution to a linear system.
 
 ::::
 
@@ -182,7 +182,7 @@ $$
   4c_1 + 6c_2 + 2c_3 = 2(2c_1 + 3c_2 + c_3) = 10 \neq 8,
 $$
 
-so $(c_1,c_2,c_3)$ cannot also be a solution of the third equation.
+so $(c_1,c_2,c_3)$ cannot also be a solution to the third equation.
 
 ::::
 
@@ -264,7 +264,7 @@ $$
   (7 - 4c_1 -5c_2 + c_4, \,c_1, \,c_2,\,c_3, \,c_4)
 $$
 
-is indeed a solution of the given equation.
+is indeed a solution to the given equation.
 
 However, this is not the only way to write down the general solution: in this example almost any set of four variables can act as free variables. The descriptions
 
@@ -292,7 +292,7 @@ are just as good. You might want to avoid fractions though. The only set of four
 
 ::::
 
-The idea behind all methods to find the general solution of a linear system: rewrite the system in simpler forms, basically by eliminating variables from equations.
+The idea behind all methods to find the general solution to a linear system: rewrite the system in simpler forms, basically by eliminating variables from equations.
 We illustrate this by an example.
 
 ::::{prf:example}
@@ -410,7 +410,7 @@ $$
    \right.
 $$
 
-With the arrow we express that if we have a solution of the system on the left, this will also be a solution of the system on the right.
+With the arrow we express that if we have a solution to the system on the left, this will also be a solution to the system on the right.
 
 Now, why is this okay, why is it allowed to 'subtract equations'? Let us introduce the shorthand notation
 
@@ -658,7 +658,7 @@ Let us look at one more example. Here we will see how to find a solution that co
 ::::{prf:example}
 :label: Ex:LinSystems:SolWithBacksubst2
 
-We find the general solution of the linear system
+We find the general solution to the linear system
 
 $$
 
@@ -1140,7 +1140,7 @@ If two augmented matrices are row equivalent it means that the linear systems th
 
 ::::
 
-Above we applied row operations to an augmented matrix, to work our way to the solution of a system of equations.
+Above we applied row operations to an augmented matrix, to work our way to the solution to a system of equations.
 In fact we simplified the system and the matrix along parallel paths. From now on we will simplify a system by working almost always with the corresponding augmented matrix.
 
 In later chapters we will also apply row reduction to matrices in other contexts, i.c. for other purposes.
@@ -1473,7 +1473,7 @@ The big advantage of reduced echelon matrices, already hinted at in {prf:ref}`Re
 ::::{prf:proposition}
 :label: Prop:LinSystems:SolutionFromRREF
 
-If the augmented matrix of a linear system is in reduced echelon from, the solution of the system is found by expressing the variables corresponding to the pivots in terms of the other variables. These other variables can be assigned arbitrary values.
+If the augmented matrix of a linear system is in reduced echelon from, the solution to the system is found by expressing the variables corresponding to the pivots in terms of the other variables. These other variables can be assigned arbitrary values.
 
 ::::
 
@@ -1487,7 +1487,7 @@ In the solution as constructed according to the previous proposition the pivot v
 ::::{prf:example}
 :label: Ex:LinSystems:SolutionFromRREF
 
-We find the solution of the linear system with the following augmented matrix, which is already in row reduced echelon:
+We find the solution to the linear system with the following augmented matrix, which is already in row reduced echelon:
 
 $$
 \left(\begin{array}{rrrrr|r}1 & 0 & 2 & 0 & 3 & 6\\0 & 1 & -3 & 0 &-4 & 7\\0 & 0 & 0 & 1 & 5 & 8\\\end{array}\right).
@@ -1779,7 +1779,7 @@ The word 'elimination' refers to the fact that the zeros that are created in the
 :url: https://embed.grasple.com/exercises/c242961e-d472-49b4-88e0-80cac8c617f9?id=87134
 :label: grasple_exercise_2_1_E
 :dropdown:
-:description: Applying the algorithm to compute a solution of a linear system.
+:description: Applying the algorithm to compute a solution to a linear system.
 
 ::::
 

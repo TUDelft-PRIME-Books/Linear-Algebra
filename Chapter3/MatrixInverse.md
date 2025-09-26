@@ -30,7 +30,7 @@ $$
    a^{-1} = \frac1a
 $$
 
-is the (unique) solution of the equation
+is the (unique) solution to the equation
 
 $$
    ax = 1.
@@ -506,7 +506,7 @@ $$
     (\,\vect{e}_1\,\,\vect{e}_2\,\, \cdots \,\, \vect{e}_n\,) = I.
 $$
 
-Since all solutions $\vect{c}_j$ are unique, the solution of the equation
+Since all solutions $\vect{c}_j$ are unique, the solution to the equation
 
 $$
 
@@ -537,7 +537,7 @@ Before we go there we will look at some general properties of invertible matrice
 ::::::{prf:proposition}
 :label: Prop:SolutionViaInverse
 
-If the $n \times n$-matrix $A$ is invertible and $B$ is an $n \times p$-matrix, then the solution of the matrix equation
+If the $n \times n$-matrix $A$ is invertible and $B$ is an $n \times p$-matrix, then the solution to the matrix equation
 
 $$
   AX = B
@@ -915,7 +915,7 @@ $$
   (\,\mathbf{e}_1\,\mathbf{e}_2\, \cdots\, \mathbf{e}_n\,).
 $$
 
-For the existence of a solution of this Equation {prf:ref}`Prop:MatrixInv:InvertibleIndepCols` tells us
+For the existence of a solution to this Equation {prf:ref}`Prop:MatrixInv:InvertibleIndepCols` tells us
 it is *necessary* that $A$ has linearly independent columns, and we can furthermore read off that the columns of the matrix
 $X$ will be the (unique) solutions of the linear systems
 
@@ -1137,7 +1137,7 @@ $$
  \end{array}
 $$
 
-So the matrix $B$ that was found as the solution of the matrix equation
+So the matrix $B$ that was found as the solution to the matrix equation
 
 $$
   AX = I

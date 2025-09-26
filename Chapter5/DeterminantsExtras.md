@@ -474,7 +474,7 @@ The following proof of Cramer's rule rests rather nicely on properties of the de
 :class: tudproof, dropdown
 
 Suppose $\vect{x} = \vect{c} = \left(\begin{array}{c}  c_1 \\ \vdots\\ c_n\end{array} \right)
-$ is the unique solution of the linear system $A\vect{x} = \vect{b}$, with the invertible matrix $A = ( \vect{a}_1 \,  \,  \vect{a}_2 \, \cdots \,\vect{a}_n )$.
+$ is the unique solution to the linear system $A\vect{x} = \vect{b}$, with the invertible matrix $A = ( \vect{a}_1 \,  \,  \vect{a}_2 \, \cdots \,\vect{a}_n )$.
 
 We show that Equation {eq}`Eq:DetExtras:Cramer` holds for $c_1$. The argument can be copied for the other $c_i$.
 
@@ -616,7 +616,7 @@ where again the $C_{ij}$ are the cofactors as defined in  {prf:ref}`Dfn:DetCofac
 ::::::{admonition} Proof of {prf:ref}`Prop:DetExtras:Inverse`
 :class: tudproof
 
-The $j$-th column $\vect{b}_j$ of $B = A^{-1}$ is the solution of the linear system $A\vect{x} = \vect{e}_j$.
+The $j$-th column $\vect{b}_j$ of $B = A^{-1}$ is the solution to the linear system $A\vect{x} = \vect{e}_j$.
 
 Cramer's rule then gives that $b_{ij}$, the $i$-th entry of this column, is equal to
 

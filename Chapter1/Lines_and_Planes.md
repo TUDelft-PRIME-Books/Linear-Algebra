@@ -615,7 +615,7 @@ is thus a possible parametric vector equation of $\mathcal{L}$.
 :url: https://embed.grasple.com/exercises/d9a13ea7-786d-4935-8531-2ba3ec41c930?id=67061
 :label: grasple_exercise_1_4_3
 :dropdown:
-:description: Find a vector on a line, and a direction vector in the line.
+:description: Find a vector on a line, and a direction vector of the line.
 
 ::::
 

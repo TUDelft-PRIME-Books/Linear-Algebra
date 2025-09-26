@@ -489,7 +489,7 @@ Prove {prf:ref}`Prop:InjSurj:SurjChars`.
 :::{admonition} Solution to {numref}`Exc:InjSurj:SurjChars`
 :class: solution, dropdown
 
-Assume $T$ is surjective and take an arbitrary $\vect{b}$ in $\R^{n}$. Then there is an $\vect{x}$ in $\mathbb{R}^{m}$ such that $T(\vect{x})=\vect{b}$, i.e. $\vect{x}$ is a solution of $A\vect{x}=\vect{b}$. Similarly, if $A\vect{x}=\vect{b}$ has a solution for any $\vect{b}$ in $\R^{n}$, then $\vect{b}=T(\vect{x})$ which establishes surjectivity of $T$.
+Assume $T$ is surjective and take an arbitrary $\vect{b}$ in $\R^{n}$. Then there is an $\vect{x}$ in $\mathbb{R}^{m}$ such that $T(\vect{x})=\vect{b}$, i.e. $\vect{x}$ is a solution to $A\vect{x}=\vect{b}$. Similarly, if $A\vect{x}=\vect{b}$ has a solution for any $\vect{b}$ in $\R^{n}$, then $\vect{b}=T(\vect{x})$ which establishes surjectivity of $T$.
 
 If $A$ has a row without pivot, then, for a well-chosen $\vect{b}$, a pivot can appear in the last column of the augmented matrix $(A|\vect{b})$. This means that $A\vect{x}=\vect{b}$ has no solutions. Similarly, if $A\vect{x}=\vect{b}$ always has a solution, then $(A|\vect{b})$ can never have a pivot in the last column. Consequently, $A$ must have a pivot in every row.
 

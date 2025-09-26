@@ -218,7 +218,7 @@ $$
 
 So the question whether $1$ is an eigenvalue of the matrix $A$ is equivalent to the question whether this equation has non-zero solutions.
 
-As the equation is homogeneous, we don't have to work with the augmented matrix. The  matrix $A - I$ has two pivots, so the only solution of the equation is the zero vector.
+As the equation is homogeneous, we don't have to work with the augmented matrix. The  matrix $A - I$ has two pivots, so the only solution to the equation is the zero vector.
 
 We may conclude that the value $1$ is not an eigenvalue of the matrix $A$.
 
@@ -443,7 +443,7 @@ $$
 A(\vect{u}+\vect{v}) = A\vect{u}+A\vect{v} = \lambda\vect{u}+\lambda\vect{v} = \lambda(\vect{u}  +\vect{v}),
 $$
 
-so $\vect{u}  +\vect{v}$ is also a (trivial or non-trivial) solution of the equation $A\vect{x}=\lambda\vect{x}$, hence lies in $S$.
+so $\vect{u}  +\vect{v}$ is also a (trivial or non-trivial) solution to the equation $A\vect{x}=\lambda\vect{x}$, hence lies in $S$.
 
 </li>
 <li>

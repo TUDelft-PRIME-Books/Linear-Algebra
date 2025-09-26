@@ -269,7 +269,7 @@ Suppose that $A=LU$, so that the linear system of equations $A\mathbf{x}=\mathbf
 
 :::
 
-The solution of the second system is then a solution of the system $A\mathbf{x}=\mathbf{b}$.
+The solution to the second system is then a solution to the system $A\mathbf{x}=\mathbf{b}$.
 
 
 ::::::

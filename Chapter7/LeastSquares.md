@@ -182,7 +182,7 @@ will be zero.
 ::::{prf:remark}
 :label: Rem:LeastSquares:Linefit
 
-In the situation where we want to fit a line $y = ax + b$, we can take as 'best' parameters the _least-squares_ solution of the linear system as in Equation {eq}`Eq:LeastSquares:Linefit`,
+In the situation where we want to fit a line $y = ax + b$, we can take as 'best' parameters the _least-squares_ solution to the linear system as in Equation {eq}`Eq:LeastSquares:Linefit`,
 
 $$
   \left(\begin{array}{cc}
@@ -280,7 +280,7 @@ Lastly, these coefficients are unique if and only if the columns of $A$ are line
 ::::{prf:example}
 :label: Ex:LeastSquares:OrthogExample
 
-Find the least-squares solution of the linear system
+Find the least-squares solution to the linear system
 
 $$
   \left\{       \begin{array}{ccccccc}
@@ -352,7 +352,7 @@ Before having a look at the proof consider the following example.
 ::::{prf:example}
 :label: Ex:LeastSquares:NormalEqs-1
 
-We compute the least-squares solution of the linear system
+We compute the least-squares solution to the linear system
 
 $$
   \left\{       \begin{array}{ccccccc}
@@ -483,7 +483,7 @@ A^TA \vect{x} = A^T\vect{b}.
 
 ::::
 
-If $\vect{c} =  \left(  \begin{array}{c}   c_1 \\ c_2 \\ \vdots \\ c_n   \end{array} \right)$ is the least-squares solution of the linear system $A\vect{c} = \vect{b}$,
+If $\vect{c} =  \left(  \begin{array}{c}   c_1 \\ c_2 \\ \vdots \\ c_n   \end{array} \right)$ is the least-squares solution to the linear system $A\vect{c} = \vect{b}$,
 then the orthogonal projection of
 $\vect{b}$ of $\operatorname{Col}A$ is given by
 
@@ -570,7 +570,7 @@ The assumption that $A^TA$ is invertible implies that indeed $\vect{c} = \vect{0
 ::::{prf:remark}
 :label:  Rem:LeastSquares:ProjbColA
 
-As stated, the least-squares solution of a system $A\vect{x} = \vect{b}$ consists of the coefficients $c_i$
+As stated, the least-squares solution to a system $A\vect{x} = \vect{b}$ consists of the coefficients $c_i$
 of the orthogonal projection
 
 $$
@@ -605,7 +605,7 @@ shows that in the case of _orthogonal_ vectors there is actually nothing new. Th
 ::::{prf:example}
 :label: Ex:LeastSquares:OrthogExample2
 
-Let us again find, but now using {prf:ref}`Thm:LeastSquares:NormalEquations`, the least-squares solution of the linear system
+Let us again find, but now using {prf:ref}`Thm:LeastSquares:NormalEquations`, the least-squares solution to the linear system
 
 $$
   \left\{\begin{array}{ccccccc}
@@ -742,13 +742,13 @@ $$
 
 ::::
 
-In fact, if the $QR$ decomposition of a matrix $A$ is known, this may also simplify the computation of the least quares solution of any linear system  $A\vect{x} = \vect{b}$ considerably.
+In fact, if the $QR$ decomposition of a matrix $A$ is known, this may also simplify the computation of the least quares solution to any linear system  $A\vect{x} = \vect{b}$ considerably.
 
 ::::{prf:proposition}  
 :label: Prop:LeastSquares:LSviaQR
 
 Suppose the $m \times n$-matrix $A$ of rank $n$ has the $QR$ decomposition  $A = QR$.
-Then the least-squares solution of the linear system  $A\vect{x} = \vect{b}$ is the same as the solution of the equation
+Then the least-squares solution to the linear system  $A\vect{x} = \vect{b}$ is the same as the solution to the equation
 
 
 :::{math}
@@ -856,7 +856,7 @@ The least-squares solutions are depicted as the line $\ell:  \vect{x} = \hat{\ve
 ::::
 
 We can analyse {prf:ref}`Ex:LeastSquares:NonUnique` from a higher perspective.
-In the general solution of the normal equations
+In the general solution to the normal equations
 
 $$
    \vect{x} = \hat{\vect{x}}_0 + c\left(\begin{array}{c}  2 \\  1 \end{array}\right),
@@ -1375,7 +1375,7 @@ The epithet _linear_ refers to the fact that the parameters $c_1, \ldots, c_k$ a
 :label:  Rem:LeastSquares:LinearModel
 
 The parameters $c_1,c_2,\ldots,c_k$ that minimise the sum
-in Equation {eq}`Eq:LeastSquares:SumResidues` coincide with the least-squares solution of the linear system
+in Equation {eq}`Eq:LeastSquares:SumResidues` coincide with the least-squares solution to the linear system
 
 :::{math}
 :label: Eq:LeastSquares:DesignMatrix

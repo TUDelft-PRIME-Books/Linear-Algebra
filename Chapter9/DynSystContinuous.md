@@ -46,7 +46,7 @@ if $f(t)=e^{\lambda t}$, then $f'(t)=\lambda e^{\lambda t}$.
 
 ::::
 
-This last point means that the equation $x'=\lambda x$ has solution $x=e^{\lambda t}$. In fact, for every real number $c$, $y=ce^{\lambda t}$ is solution of $x'=\lambda x$. We want to generalise this idea. But first, we need some terminology.
+This last point means that the equation $x'=\lambda x$ has solution $x=e^{\lambda t}$. In fact, for every real number $c$, $y=ce^{\lambda t}$ is solution to $x'=\lambda x$. We want to generalise this idea. But first, we need some terminology.
 
 Suppose we have differentiable functions $x_{1},\ldots,x_{n}$ and real numbers $a_{ij}$ for $1\leq i,j\leq n$. A system of equations
 
@@ -100,7 +100,7 @@ The following proposition will be quite useful to us. It tells us that, in order
 :::{prf:proposition}
 :label: Prop:DynSystContinuous:LinComb
 
-If $\vect{y}$ and $\vect{z}$ are solutions of $\vect{x}'=A\vect{x}$ and $c$ and $d$ are arbitrary real numbers, then $c\vect{y}+d\vect{z}$ is also a solution of $\vect{x}=A\vect{x}'$.
+If $\vect{y}$ and $\vect{z}$ are solutions of $\vect{x}'=A\vect{x}$ and $c$ and $d$ are arbitrary real numbers, then $c\vect{y}+d\vect{z}$ is also a solution to $\vect{x}=A\vect{x}'$.
 
 :::
 
@@ -289,7 +289,7 @@ a_{nn}
 
 $$
 
-The solution of the original system can now be obtained by multiplying from the left with $P$. This suggests the following proposition:
+The solution to the original system can now be obtained by multiplying from the left with $P$. This suggests the following proposition:
 
 :::{prf:proposition}
 :label: Prop:DynSystContinuous:SolsofDynSyst
@@ -498,12 +498,12 @@ For a graphical interpretation of these solutions, we refer to {numref}`Subsecti
 ## Trajectories
 
 
-In this section, we will see the geometric interpretation of the several cases we have dealt with. Note that the solution of a dynamical system $\vect{x}'=A\vect{x}$ contains as many constants as there are rows in $A$. Therefore, if $A$ is an $n\times n$-matrix and $\vect{x}_{0}$ is a vector in $\R^{n}$, there will be one solution of $\vect{x}'=A\vect{x}$ that satisfies $\vect{x}(0)=\vect{x}_{0}$.
+In this section, we will see the geometric interpretation of the several cases we have dealt with. Note that the solution to a dynamical system $\vect{x}'=A\vect{x}$ contains as many constants as there are rows in $A$. Therefore, if $A$ is an $n\times n$-matrix and $\vect{x}_{0}$ is a vector in $\R^{n}$, there will be one solution to $\vect{x}'=A\vect{x}$ that satisfies $\vect{x}(0)=\vect{x}_{0}$.
 
 :::{prf:definition}
 :label: Def:DynSystContinuous:Trajectory
 
-Let $\vect{x}'=A\vect{x}$ be a dynamical system where $A$ is an $n\times n$-matrix. By a **trajectory** we mean a solution of an initial value problem
+Let $\vect{x}'=A\vect{x}$ be a dynamical system where $A$ is an $n\times n$-matrix. By a **trajectory** we mean a solution to an initial value problem
 
 $$
 
@@ -733,7 +733,7 @@ which is not a multiple of $\vect{v}$, so such a $\vect{v}$ cannot be an eigenve
 :url: https://embed.grasple.com/exercises/c3329d85-d622-4994-9e90-20d5495fd258?id=122181
 :label: grasple_exercise_9_4_04
 :dropdown:
-:description: General solution of system of first-order differential equations.
+:description: General solution to system of first-order differential equations.
 
 ::::
 

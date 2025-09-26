@@ -442,7 +442,7 @@ $$
 :url: https://embed.grasple.com/exercises/84b635e4-2278-4882-915d-6f8b253213a3?id=78749
 :label: grasple_exercise_1_3_5
 :dropdown:
-:description: Find alle values of parameter $p$ for which either $\vect{u}\ip\vect{v}= 0$ or $\vect{u}\times\vect{v} = \vect{0}$.
+:description: Find all values of parameter $p$ for which either $\vect{u}\ip\vect{v}= 0$ or $\vect{u}\times\vect{v} = \vect{0}$.
 
 ::::
 
@@ -451,7 +451,7 @@ $$
 :url: https://embed.grasple.com/exercises/6b660feb-fc36-47a0-bf86-e424d28edf6f?id=63354
 :label: grasple_exercise_1_3_6
 :dropdown:
-:description: To compute the area of a paralellogram given by four points in $\R^3$.
+:description: To compute the area of a parallellogram given by four points in $\R^3$.
 
 ::::
 

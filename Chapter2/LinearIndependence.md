@@ -333,7 +333,7 @@ $$
 0=c_{1}\mathbf{v}_{1}+\cdots +c_{i-1}\mathbf{v}_{i-1}-\mathbf{v}_{i}+c_{i+1}\mathbf{v}_{i+1}+\cdots +c_{k}\mathbf{v}_{k}.
 $$
 
-This means that $(c_{1},\ldots,c_{i-1},-1,c_{i+1},\ldots,c_{k})$ is a solution of the Equation {eq}`Eq:LinInd:VecEqisZero`. It is a non-trivial one since the $i$-th coefficient is $-1$ which is non-zero.
+This means that $(c_{1},\ldots,c_{i-1},-1,c_{i+1},\ldots,c_{k})$ is a solution to the Equation {eq}`Eq:LinInd:VecEqisZero`. It is a non-trivial one since the $i$-th coefficient is $-1$ which is non-zero.
 
 If Equation {eq}`Eq:LinInd:VecEqisZero` has a non-trivial solution then there are $c_{1},\ldots,c_{k}$, not all $0$, such that $c_{1}\mathbf{v}_{1}+\cdots +c_{k}\mathbf{v}_{k}=\mathbf{0}$. Take any $i$ such that $c_{i}\neq0$. Then
 

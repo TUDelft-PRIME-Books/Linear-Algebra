@@ -6,7 +6,7 @@
 
 As we have seen in {numref}`Sec:LinesAndPlanes`, the solutions of a single linear equation with $2$ variables form a line in the plane. Similarly, the solutions of a single linear equation in $3$ variables form a plane in three-dimensional space. If we want to know which points lie in the intersection of two planes, we therefore have to find those points that solve two equations simultaneously. This raises some very natural questions: what is the set of vectors that satisfy a number of given equations? What does this set look like geometrically?
 
-Also in {numref}`Sec:LinesAndPlanes` we have already studied the easiest case, that of two equations in $\mathbb{R}^{2}$. We have seen there that there are three possibilities. The first one is that the equations describe parallel lines. In that case, there is no point of intersection and therefore no common solution of the two equations. The solution set is therefore empty. In the second case, the lines described by the equations cross in a single point $(v_{1},v_{2})$. The solution set therefore consists of the single vector
+Also in {numref}`Sec:LinesAndPlanes` we have already studied the easiest case, that of two equations in $\mathbb{R}^{2}$. We have seen there that there are three possibilities. The first one is that the equations describe parallel lines. In that case, there is no point of intersection and therefore no common solution to the two equations. The solution set is therefore empty. In the second case, the lines described by the equations cross in a single point $(v_{1},v_{2})$. The solution set therefore consists of the single vector
 $\mathbf{v}=\begin{pmatrix}v_{1}\\v_{2}\end{pmatrix}$. In the final case, the two equations describe the same line. The solution set of the system of equations is then the infinite set of vectors which lie on the line.
 
 In this section, we will study solution sets of linear systems in higher dimensions. But first, let us get a clear idea of how we find and write down a solution set.
@@ -231,12 +231,12 @@ $$
 
 ::::
 
-{prf:ref}`Prop:SolSet:SolplusHom` shows that the solution set of a non-homogeneous linear system can be obtained by adding the solutions of the associated homogeneous system to one particular solution of the original system. Which particular solution you take does not matter. Compare this to what we found in {numref}`Subsection %s <Subsec:SolSet:WritingSolSets>`, in particular to {numref}`Figure %s <Fig:SolSet:TwoLinesinR3>` and {numref}`Figure %s <Fig:SolSet:TwoPlanesinR3>`.
+{prf:ref}`Prop:SolSet:SolplusHom` shows that the solution set of a non-homogeneous linear system can be obtained by adding the solutions of the associated homogeneous system to one particular solution to the original system. Which particular solution you take does not matter. Compare this to what we found in {numref}`Subsection %s <Subsec:SolSet:WritingSolSets>`, in particular to {numref}`Figure %s <Fig:SolSet:TwoLinesinR3>` and {numref}`Figure %s <Fig:SolSet:TwoPlanesinR3>`.
 
 ::::{prf:proposition}
 :label: Prop:SolSet:SolplusHom
 
-Suppose $(c_{1},\ldots,c_{n})$ is a solution of a linear system. Then $(c_{1}',\ldots,c_{n}')$ is also a solution of the linear system if and only if there exists a solution of the associated homogeneous system $(d_{1},\ldots,d_{n})$ such that $c'_{i}=c_{i}+d_{i}$ for all $i$.
+Suppose $(c_{1},\ldots,c_{n})$ is a solution to a linear system. Then $(c_{1}',\ldots,c_{n}')$ is also a solution to the linear system if and only if there exists a solution to the associated homogeneous system $(d_{1},\ldots,d_{n})$ such that $c'_{i}=c_{i}+d_{i}$ for all $i$.
 
 ::::
 
@@ -265,9 +265,9 @@ a_{m1}d_{1}&+&\cdots &+&a_{mn}d_{n}&=&a_{m1}c_{1}-a_{m1}c'_{1}&+&\cdots &+&a_{mn
 \end{array}\right.
 $$
 
-so $(d_{1},\ldots,d_{n})$ is a solution of the associated homogeneous system such that $c_{i}'=c_{i}+d_{i}$ for all $i$.
+so $(d_{1},\ldots,d_{n})$ is a solution to the associated homogeneous system such that $c_{i}'=c_{i}+d_{i}$ for all $i$.
 
-Assume on the other hand that $(c_{1},\ldots,c_{n})$ is a solution of the system and that $(d_{1},\ldots,d_{n})$ is a solution of the associated homogeneous system such that $c'_{i}=c_{i}+d_{i}$. Then
+Assume on the other hand that $(c_{1},\ldots,c_{n})$ is a solution to the system and that $(d_{1},\ldots,d_{n})$ is a solution to the associated homogeneous system such that $c'_{i}=c_{i}+d_{i}$. Then
 
 $$
 \left\{\begin{array}{ccccccccccccc}
@@ -278,7 +278,7 @@ a_{m1}c'_{1}&+&\cdots &+&a_{mn}c'_{n}&=&a_{m1}(c_{1}+d_{1})&+&\cdots &+&a_{mn}(c
 \end{array}\right.
 $$
 
-so $(c_{1}',\ldots,c_{n}')$ is indeed a solution of the original system.
+so $(c_{1}',\ldots,c_{n}')$ is indeed a solution to the original system.
 
 ::::
 
@@ -426,7 +426,7 @@ Hence, in order to turn one molecule of sodium sulfate into sodium sulfide, we m
 
 ::::
 
-%\todo[inline]{Suggested exercises: prove Proposition \ref{Prop:SolSet:SolSetisVecSpa} and Remark\ref{Rem:SolSet:SolSetisClosed} [it]; write solutions in parametrised vector form [it, end of section 2]; solve non-homogeneous systems by using a particular solution and the solution of the associated homogeneous system [es].}
+%\todo[inline]{Suggested exercises: prove Proposition \ref{Prop:SolSet:SolSetisVecSpa} and Remark\ref{Rem:SolSet:SolSetisClosed} [it]; write solutions in parametrised vector form [it, end of section 2]; solve non-homogeneous systems by using a particular solution and the solution to the associated homogeneous system [es].}
 
 ## Grasple exercises
 

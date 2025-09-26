@@ -399,7 +399,7 @@ Using the above rules we can give shorter proofs of statements concerning linear
 ::::{prf:example}
 :label: Ex:MatVecProduct:SolplusHomRevisited
 
-The contents of that proposition: suppose $(c_{1},\ldots,c_{n})$ is a solution of a linear system. Then $(c_{1}',\ldots,c_{n}')$ is also a solution of the linear system if and only if there exists a solution $(d_{1},\ldots,d_{n})$ of the associated homogeneous system such that $c'_{i}=c_{i}+d_{i}$ for all $i$.
+The contents of that proposition: suppose $(c_{1},\ldots,c_{n})$ is a solution to a linear system. Then $(c_{1}',\ldots,c_{n}')$ is also a solution to the linear system if and only if there exists a solution $(d_{1},\ldots,d_{n})$ of the associated homogeneous system such that $c'_{i}=c_{i}+d_{i}$ for all $i$.
 
 Using the matrix-vector product we can derive this property as follows: we can consider the solutions in vector form,
 
@@ -433,7 +433,7 @@ $$
    (\mathbf{c} -\mathbf{c'}) = \mathbf{d}
 $$
 
-is a solution of the homogeneous system.
+is a solution to the homogeneous system.
 Note that
 
 $$
@@ -443,13 +443,13 @@ $$
 
 $$
 
-On the other hand, if $\mathbf{c'}$ is a solution of the linear system
+On the other hand, if $\mathbf{c'}$ is a solution to the linear system
 
 $$
  A\mathbf{x} = \mathbf{b}
 $$
 
-and $\mathbf{d}$ is a solution of the homogeneous system
+and $\mathbf{d}$ is a solution to the homogeneous system
 
 $$
 A\mathbf{x} = \mathbf{0},
@@ -467,7 +467,7 @@ $$
   \mathbf{c} = \mathbf{c'} + \mathbf{d}
 $$
 
-is a solution of the system
+is a solution to the system
 
 $$
  A\mathbf{x} = \mathbf{b}.
@@ -746,7 +746,7 @@ Use the vectors $\mathbf{v}_1, \dots ,\mathbf{v}_k$ as the columns for a matrix 
 :url: https://embed.grasple.com/exercises/dba850cd-e353-4339-9811-656a565e7270?id=85091
 :label: grasple_exercise_2_4_4
 :dropdown:
-:description: Using a vector equation to find solution of a linear system.
+:description: Using a vector equation to find solution to a linear system.
 
 ::::
 
