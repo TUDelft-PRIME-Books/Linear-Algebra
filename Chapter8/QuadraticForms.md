@@ -1249,14 +1249,16 @@ $$
   \begin{pmatrix} x_1 \\ x_2\end{pmatrix} = c\vect{v}_1 = c\begin{pmatrix} 2 \\ -1\end{pmatrix} \quad \text{and}\quad \begin{pmatrix} x_1 \\ x_2\end{pmatrix} = c\vect{v}_2 = c\begin{pmatrix} 1 \\ 2\end{pmatrix}.
 $$
 
-See Figure {numref}`Fig:QuadForms:Ellipses`
+See Figure {numref}`Fig:QuadForms:Ellipses`.
 
-:::{figure} Images/Fig-QuadForms-Ellipses(2).svg
+```{applet}
+:url: symmetric_matrices/quadratic_forms
+:fig: Images/Fig-QuadForms-Ellipses(2).svg
 :name: Fig:QuadForms:Ellipses
 :class: dark-light
 
 The  ellipse with its principal axes.
-:::
+```
 
 ::::
 
