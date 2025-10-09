@@ -12,10 +12,10 @@ teachbooks-sphinx-grasple==1.2.4
 sphinx-tudelft-theme==1.1.15
 jupyterbook_patches ==1.9.0
 teachbooks-sphinx-tippy==1.0.13
-sphinx-prime-applets==1.0.5
+sphinx-prime-applets==1.0.6
 sphinx-indexed-definitions==1.0.4
 sphinx-ref-graph==1.0.1
-sphinx-image-inverter==1.1.9
+sphinx-image-inverter==1.1.10
 sphinx-dropdown-toggle ==1.3.1
 sphinx-table-support == 0.0.1
 sphinx-list-support == 0.0.1
