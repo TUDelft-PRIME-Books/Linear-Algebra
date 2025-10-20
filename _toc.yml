@@ -68,6 +68,7 @@ parts:
           - file: 'Chapter9/DynSystContinuous.md' # ref_graph: {'tag': '9. Dynamical systems'}
   - caption: Appendices # ref_graph: {'ignore':True}
     numbered: True
+    style: "alphaupper"
     chapters:
       - file: 'Appendices/ComplexNumbersIntro.md' # ref_graph: {'ignore':True}
         sections:
