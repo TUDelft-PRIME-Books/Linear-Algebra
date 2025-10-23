@@ -5,7 +5,7 @@ jupyter_book == 1.0.4.post1
 roman == 5.1
 Sphinx == 7.4.7
 sphinx-proof == 0.3.0
-# sphinx-exercise == 1.0.1
+sphinx-exercise == 1.1.1
 TexSoup == 0.3.1
 sphinx-book-theme==1.1.4
 teachbooks-sphinx-grasple==1.2.5
@@ -24,4 +24,3 @@ sphinx-accessibility == 1.0.1
 
 git+https://github.com/TeachBooks/sphinx-external-toc
 git+https://github.com/TeachBooks/sphinx-togglebutton
-git+https://github.com/TeachBooks/sphinx-exercise
