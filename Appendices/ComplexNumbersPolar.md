@@ -594,8 +594,8 @@ $$
 Euler's formula can also be derived using series. You may already be familiar with the following three series
 
 \begin{align*}
-e^x &= \sum*{n=0}^\infty\frac{x^n}{n!}, \\
-\cos(x) &= \sum*{k=0}^\infty(-1)^k\frac{x^{2k}}{(2k)!}, \\
+e^x &= \sum_{n=0}^\infty\frac{x^n}{n!}, \\
+\cos(x) &= \sum_{k=0}^\infty(-1)^k\frac{x^{2k}}{(2k)!}, \\
 \sin(x) &= \sum_{l=0}^\infty(-1)^l\frac{x^{2l+1}}{(2l+1)!}.
 \end{align*}
 

@@ -1385,7 +1385,7 @@ f_1(x_1) & f_2(x_1) & \cdots & f_k(x_1) \\
 f_1(x_2) & f_2(x_2) & \cdots & f_k(x_2) \\
 \vdots & \vdots & & \vdots \\
 \vdots & \vdots & \ddots & \vdots \\
-f_1(x_n) & f_2(x_n) & \lcdotsdots & f_k(x_n)
+f_1(x_n) & f_2(x_n) & \cdots & f_k(x_n)
 \end{array}\right)
 \left(\begin{array}{c}
 c_1 \\ c_2 \\ \vdots \\ c_k \end{array}\right) =

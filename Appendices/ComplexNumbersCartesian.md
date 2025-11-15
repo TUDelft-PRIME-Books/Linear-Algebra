@@ -524,7 +524,7 @@ Because $p(z_1)=0$ for $j\in\{1,\ldots,k\}$, we must have that $\alpha_1\in\{1,\
 :::{math}
 :label: Eq:ComplexNumbers:factorsb1
 
-p(z) = a_n (z-z_1)^{\alpha_1}(z-b*{\alpha_1+1}) \cdots (z-b_n).
+p(z) = a_n (z-z_1)^{\alpha_1}(z-b_{\alpha_1+1}) \cdots (z-b_n).
 
 :::
 
@@ -581,7 +581,7 @@ but also
 
 $$
 \begin{align*}
-\overline{p(z)} &= \overline{\sum*{j=0}^na_jz^j} \\
+\overline{p(z)} &= \overline{\sum_{j=0}^n a_j z^j} \\
 &= \sum_{j=0}^n\overline{a_jz^j} \\
 &= \sum_{j=0}^na_j\overline{z^j} \\
 &= \sum_{j=0}^na_j\overline{z}^j \\
