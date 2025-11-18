@@ -229,7 +229,7 @@ The main goal is to show that a singular value decomposition always exists, and,
 
 We start with an important observation that explains the central role of the matrix $A^TA$ in the algorithm to come.
 
-::::{prf:proposition} Computing the sngular values
+::::{prf:proposition} Computing the singular values
 :label: Prop:SVD:singularvalues
 
 Let $A$ be an $m\times n$-matrix.  
