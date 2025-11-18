@@ -294,7 +294,7 @@ $$
 Now suppose that $\lambda$ is an eigenvalue of the symmetric matrix $A$, and $\mathbf{v}$ is a non-zero (possibly complex) eigenvector of $A$ for the eigenvalue $\lambda$. Note that, since $A$ is real and symmetric, $\overline{{A}^T} = \overline{A} = A$.
 To prove that $\lambda$ is real, we will show that $\overline{\lambda} = \lambda$.
 
-We use kind of the same 'trick' as in Equation {eq}`Eq:SymmetricMat:Av1v2` in thre proof of {prf:ref}`Prop:SymmetricMat:OrthogonalEigenvectors`.
+We use kind of the same 'trick' as in Equation {eq}`Eq:SymmetricMat:Av1v2` in the proof of {prf:ref}`Prop:SymmetricMat:OrthogonalEigenvectors`.
 
 On the one hand
 
@@ -472,7 +472,7 @@ $$
 
 ::::
 
-The procedure followed in  {prf:ref}`Ex:SymmetricMat:OrthogDiag3x3` leads way to an algorithm for constructing an orthogonal diagonalisation.
+The procedure followed in  {prf:ref}`Ex:SymmetricMat:OrthogDiag3x3` leads the way to an algorithm for constructing an orthogonal diagonalisation.
 
 ::::{prf:algorithm}
 :label: Alg:SymmetricMat:OrthogDiagonalization
@@ -554,7 +554,7 @@ $$
 
 ::::
 
-And now it's time for the proof of the main theorem. The proof is of the type technical and intricate. Skip it if you like. 
+And now it's time for the proof of the main theorem. The proof is of the type technical and intricate.
 
 ::::{admonition} Proof of {prf:ref}`Thm:SymmetricMat:OrthogDiag`
 :class: tudproof, dropdown
