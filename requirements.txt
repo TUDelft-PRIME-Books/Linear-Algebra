@@ -8,11 +8,11 @@ sphinx-proof == 0.3.0
 sphinx-exercise == 1.1.1
 TexSoup == 0.3.1
 sphinx-book-theme==1.1.4
-teachbooks-sphinx-grasple==1.2.5
+teachbooks-sphinx-grasple==1.2.6
 sphinx-tudelft-theme==1.2.0
-jupyterbook_patches ==1.9.0
+jupyterbook_patches ==1.10.0
 teachbooks-sphinx-tippy==1.0.15
-sphinx-prime-applets==1.0.6
+sphinx-prime-applets==1.2.5
 sphinx-indexed-definitions==1.1.0
 sphinx-ref-graph==1.0.2
 sphinx-image-inverter==1.1.10
