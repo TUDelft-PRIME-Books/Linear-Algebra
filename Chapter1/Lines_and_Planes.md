@@ -536,6 +536,7 @@ In {numref}`Figure %s <Fig:LinesAndPlanes:PlanesPointIntersection>` we see three
 :name: Fig:LinesAndPlanes:PlanesPointIntersection
 :status: approved
 :class: dark-light
+:title: Three planes with one point in common.
 
 Three planes with one point in common.
 :::
