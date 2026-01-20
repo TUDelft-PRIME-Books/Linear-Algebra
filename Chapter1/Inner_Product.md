@@ -527,7 +527,7 @@ may seem counterintuitive to you. The following example illustrates a situation 
 :label: Ex:PerpendicularLine
 
 Let $\mathbf{n}$ be any non-zero vector in the plane.
-The set of vectors that are orthogonal to $\mathbf{n}$ all lie on a line $\mathcal{L}$ through the origin. (See {numref}`Figure %s <Fig:InnerProduct:PerpendicularLine>`.) If we agree that $\mathbf{0}\perp\mathbf{n}$, it will be the whole line.
+The set of vectors that are orthogonal to $\mathbf{n}$ represent a line $\mathcal{L}$ through the origin, assuming we let all vectors start at the origin. (See {numref}`Figure %s <Fig:InnerProduct:PerpendicularLine>`.) If we agree that $\mathbf{0}\perp\mathbf{n}$, it will be the whole line.
 The vector $\mathbf{n}$ is often said to be a _normal_ vector to the line.
 
 ```{applet}
