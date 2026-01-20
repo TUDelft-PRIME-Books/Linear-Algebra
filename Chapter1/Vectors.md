@@ -195,6 +195,12 @@ Note that we only define the sum of two vectors if they have the same size!
 
 This might look a bit scary, but is really just what we did in the plane, just with more numbers now. We now use the term vector instead of arrow. Adding two vectors is again just gluing the second one to the tip of the first one, and taking a scalar multiple of a vector is just stretching it again (or perhaps shrinking it).
 
+In the next exercise, you can practice computing sums and scalar multiples of vectors. To create a vector, use the button that looks like this: 
+
+$$
+\begin{pmatrix}\square & \square\\\square & \square\end{pmatrix}\ {\small \blacktriangledown}
+$$
+
 ::::{grasple}
 :iframeclass: dark-light
 :url: https://embed.grasple.com/exercises/a962fb8c-89b0-4b97-b76e-8f53335cf301?id=70140
