@@ -89,6 +89,12 @@ $$
 
 which is precisely $2\mathbf{v}_{3}$.
 
+Another common notation for a vector in the plane  starting at a points $P$ and going to a point $Q$ is $\overrightarrow{PQ}$. So for example, the vector $\mathbf{v}_{1}$ in {numref}`Figure %s <Fig:Vectors:ArrowinPlane>` can also be written as $\overrightarrow{AB}$, so we have
+
+$$
+\mathbf{v}_{1}=\overrightarrow{AB}=\begin{pmatrix}1\\2\end{pmatrix}.
+$$
+
 We have found that the geometrical notion of an arrow in the plane with a certain length pointing in a certain direction is captured perfectly by the algebraic notion of its vector. Moreover, the natural operations of stretching and combining arrows can easily be done algebraically. In fact, there is no reason why we should restrict ourselves to arrows in the plane. We can just as well take arrows in three-dimensional space and glue them together or stretch them. In {numref}`Subsection %s <Subsec:Vectors:ndim>` we will formalise this notion to $n$ dimensions -- and we will see that it is not so strange to have more than $3$ dimensions!
 
 ::::{grasple}
@@ -188,6 +194,12 @@ Note that we only define the sum of two vectors if they have the same size!
 ```
 
 This might look a bit scary, but is really just what we did in the plane, just with more numbers now. We now use the term vector instead of arrow. Adding two vectors is again just gluing the second one to the tip of the first one, and taking a scalar multiple of a vector is just stretching it again (or perhaps shrinking it).
+
+In the next exercise, you can practice computing sums and scalar multiples of vectors. To create a vector, use the button that looks like this: 
+
+$$
+\begin{pmatrix}\square & \square\\\square & \square\end{pmatrix}\ {\small \blacktriangledown}
+$$
 
 ::::{grasple}
 :iframeclass: dark-light
