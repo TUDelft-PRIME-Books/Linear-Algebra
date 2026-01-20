@@ -1,7 +1,7 @@
 > [!TIP]
-> This repository is the development version of the published book that can be found at https://doi.org/10.59490/tb.88.
+> This repository is the development version of the published book that can be found at [Linear Algebra – 2nd edition](https://books.open.tudelft.nl/home/catalog/book/241).
 >
-> Cite as: Hensbergen, A., & Verhulst, N. (2024). _Linear Algebra_. TU Delft OPEN Books. https://doi.org/10.59490/tb.88
+> Cite as: Hensbergen, A., & Verhulst, N. (2025). Linear Algebra – 2nd edition. TU Delft OPEN Books. https://books.open.tudelft.nl/home/catalog/book/241
 
 # Linear Algebra - Interactive Textbook
 
