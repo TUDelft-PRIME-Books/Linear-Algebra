@@ -355,7 +355,7 @@ The following proposition guarantees that, as you would expect, applying a refle
 ::::::{prf:proposition}
 :label: Prop:GeomLinTrans:TwoReflections
 
-If $M$ is the standard matrix of a reflection, then $R^{2}=I$.
+If $M$ is the standard matrix of a reflection, then $M^{2}=I$.
 
 ::::::
 
