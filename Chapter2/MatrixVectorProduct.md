@@ -536,15 +536,15 @@ $$
           \end{array}   \right),
           \quad \mathbf{p} =
           \left(\begin{array}{c}
-            p_1 \\ p_2 \\ \vdots \\ p_n
+            p_1 \\ p_2 \\ \vdots \\ p_m
           \end{array}\right),
           \quad \mathbf{q} =
           \left(\begin{array}{c}
-            q_1 \\ q_2 \\ \vdots \\ q_n
+            q_1 \\ q_2 \\ \vdots \\ q_m
           \end{array}\right)
           \quad \mathbf{r} =
           \left(\begin{array}{c}
-            r_1 \\ r_2 \\ \vdots \\ r_n
+            r_1 \\ r_2 \\ \vdots \\ r_m
           \end{array}\right).
 $$
 
