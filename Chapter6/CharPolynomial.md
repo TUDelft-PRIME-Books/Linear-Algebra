@@ -126,7 +126,7 @@ Note that this includes diagonal matrices $D$.
 
 For the $2\times 2$-matrix in {prf:ref}`Ex:EigenValues:FirstCharPoly` the expression $\det(A - \lambda I)$ eventually comes down to a polynomial of degree $2$.
 
-For an arbitrary $2 \times 2$-matrix $A = \begin{pmatrix} a-\lambda & b \\ c & d-\lambda \end{pmatrix}$ we quickly see that
+For an arbitrary $2 \times 2$-matrix $A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ we quickly see that
 
 $$
 \operatorname{det}(A - \lambda I) = \begin{vmatrix} a-\lambda & b \\ c & d-\lambda \end{vmatrix} =
