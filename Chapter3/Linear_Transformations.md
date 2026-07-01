@@ -724,7 +724,7 @@ $$
    S: \mathbb{R}^n \to \mathbb{R}^m, \quad S(\mathbf{x}) = T_1(\mathbf{x}) + T_2(\mathbf{x}).
 $$
 
-And the (scalar) multiple $T_3 = cT_1$ is the transformation
+The (scalar) multiple $T_3 = cT_1$ is the transformation
 
 $$
   T_3: \mathbb{R}^n \to \mathbb{R}^m, \quad T_3(\mathbf{x}) = cT_1(\mathbf{x}).

@@ -1280,7 +1280,7 @@ We have to look at the solutions $\begin{pmatrix} x_1 \\ x_2 \end{pmatrix}$ of t
 We can rewrite the equation as
 
 $$
-\vect{x} ^TA\vect{x} =  \vect{0},\text{ with }\vect{x}=\begin{pmatrix} x_1 & x_2   \end{pmatrix}\text{ and }A=\begin{pmatrix} a & b \\ b & c   \end{pmatrix}.
+\vect{x} ^TA\vect{x} =  \vect{0},\text{ with }\vect{x}=\begin{pmatrix} x_1 \\ x_2   \end{pmatrix}\text{ and }A=\begin{pmatrix} a & b \\ b & c   \end{pmatrix}.
 $$
 
 As $A$ is symmetric, it can be orthogonally diagonalised as $A=QDQ^T$, with $D$ a diagonal matrix with the eigenvalues $\lambda_1, \lambda_2$ of $A$ on the diagonal and $Q$ an orthogonal matrix with the corresponding eigenvectors as columns.

@@ -98,7 +98,7 @@ The above construction/algorithm is called the **Gram-Schmidt process**.
 ::::{prf:example}
 :label: Ex:GramSchmidt:Orthogonalize
 
-Let $W$ be the defined as the span of the set $\left\{\begin{pmatrix} 1 \\ 1   \\ -1 \\ 1    \end{pmatrix}, \begin{pmatrix} 3 \\ 3   \\ -2 \\ 0    \end{pmatrix}, \begin{pmatrix} 3 \\ 1   \\ 4 \\ -4    \end{pmatrix}  \right\}$. It can be shown that these vectors are linearly independent.
+Let $W$ be defined as the span of the set $\left\{\begin{pmatrix} 1 \\ 1   \\ -1 \\ 1    \end{pmatrix}, \begin{pmatrix} 3 \\ 3   \\ -2 \\ 0    \end{pmatrix}, \begin{pmatrix} 3 \\ 1   \\ 4 \\ -4    \end{pmatrix}  \right\}$. It can be shown that these vectors are linearly independent.
 
 We use the Gram-Schmidt algorithm to create an orthogonal basis for $W$.
 
@@ -209,15 +209,15 @@ a subspace $W = \operatorname{Span}\{\vect{a}_1, \ldots, \vect{a}_m\}$ where the
 ::::{prf:example}
 :label: Ex:GramSchmidt:NonOrthog
 
-Let $W$ be the defined as the span of the set $\left\{\begin{pmatrix} 1 \\ -1   \\ 2 \\ 3    \end{pmatrix}, \begin{pmatrix} 2 \\ -2   \\ 4 \\ 6    \end{pmatrix}, \begin{pmatrix} 2 \\ 0   \\ 1 \\  2    \end{pmatrix}, \begin{pmatrix} 0 \\ 2  \\ -3 \\  -4    \end{pmatrix} \right\}$.
+Let $W$ be defined as the span of the set $\left\{\begin{pmatrix} 1 \\ -1   \\ 2 \\ 3    \end{pmatrix}, \begin{pmatrix} 2 \\ -2   \\ 4 \\ 6    \end{pmatrix}, \begin{pmatrix} 2 \\ 0   \\ 1 \\  2    \end{pmatrix}, \begin{pmatrix} 0 \\ 2  \\ -3 \\  -4    \end{pmatrix} \right\}$.
 
 Let us denote the vectors by $\vect{a}_1, \ldots, \vect{a}_4$. As in the proof of the Gram-Schmidt process
 we use the notation $W_j$ for the span of the vectors $ \vect{a}_1, \ldots, \vect{a}_j$.
 
 Just following the protocol we find
 
-$
-$\vect{b}_1 = \vect{a}_1 = \begin{pmatrix} 1 \\ -1   \\ 2 \\ 3    \end{pmatrix},  \quad
+$$
+\vect{b}_1 = \vect{a}_1 = \begin{pmatrix} 1 \\ -1   \\ 2 \\ 3    \end{pmatrix},  \quad
       \vect{b}_2 =   \vect{a}_{2} - \dfrac{\vect{a}_{2}\ip\vect{b}_1}{\vect{b}_1\ip\vect{b}_1}\vect{b}_1        = \begin{pmatrix} 0 \\ 0   \\ 0 \\ 0    \end{pmatrix}.
 $$
 

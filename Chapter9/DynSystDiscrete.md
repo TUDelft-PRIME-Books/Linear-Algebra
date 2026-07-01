@@ -9,7 +9,7 @@ In this section we will assume the reader is familiar with complex numbers and t
 
 ## Introduction
 
-In this section we will consider linear transformations $T: \R^n \to \R^n$ from another perpective. We will follow the 'paths' of vectors under repeated application of $T$. In case $T$ is represented by the matrix $A$ this means we will study the sequence
+In this section we will consider linear transformations $T: \R^n \to \R^n$ from another perspective. We will follow the 'paths' of vectors under repeated application of $T$. In case $T$ is represented by the matrix $A$ this means we will study the sequence
 
 $$
    \vect{x}_0,\,\, \vect{x}_1=A\vect{x}_0,\,\,\vect{x}_2= A\vect{x}_1,\,\,\vect{x}_3= A\vect{x}_2,\,\,\ldots

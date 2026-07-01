@@ -298,7 +298,7 @@ If $A$ is a diagonalisable matrix with eigenvalues $\lambda_{1},\ldots,\lambda_{
 
 $$
 
-\vect{y}(t)=c_{1}\vect{v}_{1}e^{\lambda{1}t}+c_{2}\vect{v}_{2}e^{\lambda_{2}t}+\cdots+c_{n}\vect{v}_{n}e^{\lambda_{n}t},
+\vect{y}(t)=c_{1}\vect{v}_{1}e^{\lambda_{1}t}+c_{2}\vect{v}_{2}e^{\lambda_{2}t}+\cdots+c_{n}\vect{v}_{n}e^{\lambda_{n}t},
 
 $$
 

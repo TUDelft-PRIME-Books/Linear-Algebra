@@ -1141,7 +1141,7 @@ If two augmented matrices are row equivalent it means that the linear systems th
 ::::
 
 Above we applied row operations to an augmented matrix, to work our way to the solution to a system of equations.
-In fact we simplified the system and the matrix along parallel paths. From now on we will simplify a system by working almost always with the corresponding augmented matrix.
+In fact we simplified the system and the matrix along parallel paths. From now on we will simplify a system by working almost exclusively with the corresponding augmented matrix.
 
 In later chapters we will also apply row reduction to matrices in other contexts, i.c. for other purposes.
 

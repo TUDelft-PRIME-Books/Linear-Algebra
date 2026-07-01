@@ -796,7 +796,7 @@ The process will never come to a standstill.
 What we can say is that eventually all vectors $\vect{x}_k$  will be in the span of the two complex eigenvectors
 
 $$
-  \vect{v}_1 = \begin{pmatrix}0\\2\\i \end{pmatrix}, \quad \vect{v}_1 = \begin{pmatrix}0\\2\\-i \end{pmatrix}.
+  \vect{v}_1 = \begin{pmatrix}0\\2\\i \end{pmatrix}, \quad \vect{v}_2 = \begin{pmatrix}0\\2\\-i \end{pmatrix}.
 $$
 
 These vectors, being linearly independent, span the set

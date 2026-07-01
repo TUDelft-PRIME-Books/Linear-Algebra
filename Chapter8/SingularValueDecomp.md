@@ -512,10 +512,10 @@ $$0\le \norm{A\vect{u}}^2 = \mathbf{u}^TA^TA\mathbf{u} = \mathbf{u}^T\lambda \ma
 
 Since $\mathbf{u}\ne \mathbf{0}$,  so $\norm{\mathbf{u}}\ne 0$  as well,  it follows that $\lambda \ge 0$.
 
-\item Let $\lambda$ be a non-zero eigenvalue of $A^TA$ with associated eigenvector $\mathbf{u}$. We have tp show that $\lambda$ is also an eigenvalue of $AA^T$. By the definition of eigenvalue we have $A^TA\mathbf{u} = \lambda\mathbf{u}$. 
+\item Let $\lambda$ be a non-zero eigenvalue of $A^TA$ with associated eigenvector $\mathbf{u}$. We have to show that $\lambda$ is also an eigenvalue of $AA^T$. By the definition of eigenvalue we have $A^TA\mathbf{u} = \lambda\mathbf{u}$. 
 Observe that if $A\mathbf{u}=\mathbf{0}$ then $\lambda\mathbf{u} = A^TA\mathbf{u} = \mathbf{0}$, which would imply that $\lambda =0$, which contradicts the hypothesis of $\lambda \ne 0$.
 
-Next, multiplying by $A$ on both sides of the previous identity we obtain
+Next, multiplying by $A$ on both sides of the identity $A^TA\mathbf{u} = \lambda\mathbf{u}$ we obtain
 
 $$
  AA^TA\mathbf{u} = (AA^T)A\mathbf{u}  = \lambda A\mathbf{u}, \quad \text{where} \quad A\mathbf{u}\ne \mathbf{0}.
@@ -527,7 +527,7 @@ Therefore,  $A\mathbf{u}$ is an eigenvector of $AA^T$ with associated eigenvalue
 To prove the converse, one can use a similar argument.
 
 
-Now let's have a look at the multiplicities.   Since $A^TA$ is symmetric, hence diagonalisable, for each eigenvalue $\lambda$, the geometric and algebraic multiplicity are equal. And the same holds, of course, for the matrix $AA^T$.  So we are done if we can show that for each eigenvalue $\lambda_i \neq 0$,
+Now let's have a look at the multiplicities. Since $A^TA$ is symmetric, hence diagonalisable, for each eigenvalue $\lambda$, the geometric and algebraic multiplicity are equal. And the same holds, of course, for the matrix $AA^T$.  So we are done if we can show that for each eigenvalue $\lambda_i \neq 0$,
 
 $$
     \operatorname{g.m.}_{A^TA}(\lambda_i) = \operatorname{g.m.}_{AA^T}(\lambda_i) 
@@ -557,7 +557,7 @@ $$
  c_1 = c_2   = \cdots = c_g =  0,
 $$
 
-which shows that the vectors $A\mathbf{v}_1, \ldots, A\mathbf{v}_g$ are $g$ *linearly independent* eigenvectors  (of $AA^T$).  So the geometric multiplicity $g_2$ of $\lambda_i$ for $AA^T$
+which shows that the vectors $A\mathbf{v}_1, \ldots, A\mathbf{v}_g$ are *linearly independent* eigenvectors  (of $AA^T$).  So the geometric multiplicity $g_2$ of $\lambda_i$ for $AA^T$
 is at least as large as the geometric multiplicity $g$ of $\lambda_i$ for $A^TA$.
 Again, by the inherent symmetry the argument can be reversed, and we find that the geometric multiplicity of $\lambda_i$  is the same for $A^TA$ as for $AA^T$. 
 :::

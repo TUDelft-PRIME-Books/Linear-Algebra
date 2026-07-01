@@ -18,7 +18,7 @@ There are different ways to define what is the _best_ line. For instance, we may
 Or, we can take the line for which the sum of vertical distances from the points to the line, i.e.,
 
 $$
-  S = \sum_{i=1}^{n} |y_i - (a + bx_i)|
+  S = \sum_{i=1}^{n} |y_i - (ax_i + b)|
 $$
 
 is minimal. This approach makes sense in a physicial context where typically the $x$-variable may be an input variable over which a researcher has control, and $y$ is some output variable which may be liable to fluctuations and/or uncertainties.
@@ -61,7 +61,7 @@ will be satisfied simultaneously. This only happens if the matrix-vector equatio
 :label: Eq:LeastSquares:Linefit
 
 \left(\begin{array}{cc}
-1 & x_1 \\ 1 & x_2 \\ \vdots & \vdots \\ 1 & x_n
+x_1 & 1 \\ x_2 & 1 \\ \vdots & \vdots \\ x_n & 1
 \end{array}\right)
 \left(\begin{array}{c}
 a \\ b
@@ -77,7 +77,7 @@ We will come back to this question in {numref}`Subsection %s <SubSec:LeastSquare
 
 (SubSec:LeastSquares:LS-solutions)=
 
-## least-squares solutions
+## Least-squares solutions
 
 Let $A$ be an $m \times n$-matrix with columns $\vect{a}_1, \ldots, \vect{a}_n$.
 
@@ -90,7 +90,7 @@ $$
 is equivalent to the vector equation
 
 $$
-  x_1\vect{a}_1 + \cdots + x_1\vect{a}_n = \vect{b}.
+  x_1\vect{a}_1 + \cdots + x_n\vect{a}_n = \vect{b}.
 $$
 
 What we can do if the linear system is inconsistent, thus if
@@ -186,7 +186,7 @@ In the situation where we want to fit a line $y = ax + b$, we can take as 'best'
 
 $$
   \left(\begin{array}{cc}
-        1 & x_1 \\ 1 & x_2 \\ \vdots & \vdots \\ 1 & x_n
+        x_1 & 1 \\ x_2 & 1 \\ \vdots & \vdots \\ x_n & 1
        \end{array}\right)
        \left(\begin{array}{c}
         a \\ b
@@ -200,7 +200,7 @@ The interpretation of the 'error vector' $A\vect{x} - \vect{b}$ then becomes
 
 $$
    \left(\begin{array}{c}
-        a+bx_1 - y_1 \\ a+bx_2 - y_2 \\ \vdots  \\ a+bx_n - y_n
+        ax_1+b - y_1 \\ ax_2+b - y_2 \\ \vdots  \\ ax_n+b - y_n
        \end{array}\right)
 $$
 
@@ -255,7 +255,7 @@ For each linear system $A\vect{x} = \vect{b}$, where $A$ is an $m \times n$-matr
 
 In {prf:ref}`Rem:LeastSquares:BestLinComb` it was noted that a least-squares solution corresponds to the vector in $\operatorname{Col}A$ that is closest to $\vect{b}$.
 
-The vector in $\operatorname{Col}A$ that is closest to $\vect{b}$ is precisely the orthogonal projection of $\vect{x}$ onto $\operatorname{Col}A$. (See {prf:ref}`Prop:Orthogonality:BestApprox`.)
+The vector in $\operatorname{Col}A$ that is closest to $\vect{b}$ is precisely the orthogonal projection of $\vect{b}$ onto $\operatorname{Col}A$. (See {prf:ref}`Prop:Orthogonality:BestApprox`.)
 
 This projection, a linear combination of the colums of $A$, always exists.
 
@@ -1111,12 +1111,12 @@ $$
 ## Linear models
 
 In {numref}`Subsection %s <SubSec:LeastSquares:Introduction>` we looked at ways to fit a line
-$y = a + bx$ to a set of points $(x_i, y_i), i = 1, \ldots, n$ in the plane. In statistics this plays an important role in so-called _regression models_.
+$y = ax + b$ to a set of points $(x_i, y_i), i = 1, \ldots, n$ in the plane. In statistics this plays an important role in so-called _regression models_.
 
-One way to define the best fitting line $y = \hat{a}+\hat{b}x$ is to let $(\hat{a},\hat{b})$ be the least-squares solution to the set of $n$ linear equations
+One way to define the best fitting line $y = \hat{a}x+\hat{b}$ is to let $(\hat{a},\hat{b})$ be the least-squares solution to the set of $n$ linear equations
 
 $$
-  y_i = a+bx_i, \quad  i = 1, \ldots , n.
+  y_i = ax_i + b, \quad  i = 1, \ldots , n.
 $$
 
 Note that in these equations the parameters $a$ and $b$ are the unknowns.
@@ -1164,7 +1164,7 @@ To find the least-squares line we consider the four equations in the form
 
 $$
    \left(\begin{array}{cc}
-         1 & x_1  \\ 1 &  x_2 \\ 1 &  x_3 \\ 1 &  x_4
+         x_1 & 1  \\ x_2 & 1 \\ x_3 & 1 \\ x_4 & 1
        \end{array}\right)
        \left(\begin{array}{c}  a \\ b \end{array}\right)
    = \left(\begin{array}{c}
@@ -1172,7 +1172,7 @@ $$
        \end{array}\right), \quad
        \,\, \text{i.e.,} \,\,
      \left(\begin{array}{cc}
-         1 & 1  \\ 1 &  2 \\ 1 &  4 \\ 1 &  5
+         1 & 1  \\ 2 &  1 \\ 4 &  1 \\ 5 &  1
        \end{array}\right)
        \left(\begin{array}{c}  a \\ b \end{array}\right)
    = \left(\begin{array}{c}
@@ -1185,13 +1185,13 @@ Since the matrix has linearly independent columns the normal equations, with aug
 $$
   \left(\,A^TA \,\middle| \,A^T \vect{b}\,\right) =
     \left(\begin{array}{cc|c}
-        4 &   12 &   10 \\
-        12 &   46 &   33
+        46 &   12 &   33 \\
+        12 &   4 &   10
        \end{array}
   \right),
 $$
 
-give a unique least-squares solution, and it is $\hat{a} = 1.6$, $\hat{b} = 0.3$.
+give a unique least-squares solution, and it is $\hat{a} = 0.3$, $\hat{b} = 1.6$.
 
 {numref}`Figure %s <Fig:LeastSquares:LSline>` shows both lines.
 
@@ -1199,14 +1199,14 @@ give a unique least-squares solution, and it is $\hat{a} = 1.6$, $\hat{b} = 0.3$
 :name: Fig:LeastSquares:LSline
 :class: dark-light
 
-least-squares line.
+Least-squares line.
 
 :::
 
-For the line $y = \hat{a}  + \hat{b}x$ the sum of the squares of the residues becomes
+For the line $y = \hat{a}x  + \hat{b}$ the sum of the squares of the residues becomes
 
 $$
-   (2 - (1.6+0.3\cdot1))^2 + (2 - (1.6+0.3\cdot2))^2 + (3 - (1.6+0.3\cdot4))^2 + (3 - (1.6+0.3\cdot5))^2 = 0.1^2 + 0.2^2 + 0.2^2 + 0.1^2 = 0.1.
+   (2 - (0.3\cdot1 + 1.6))^2 + (2 - (0.3\cdot2 + 1.6))^2 + (3 - (0.3\cdot4 + 1.6))^2 + (3 - (0.3\cdot5 + 1.6))^2 = 0.1^2 + 0.2^2 + 0.2^2 + 0.1^2 = 0.1.
 $$
 
 This is indeed slightly better than with the line found 'at first sight', where the sum was equal to $0.125$.
@@ -1218,13 +1218,13 @@ $(x_1,y_1), (x_2, y_2), \ldots, (x_n, y_n)$.
 ::::{prf:example}
 :label: Ex:LeastSquares:LineFit2
 
-The coefficients of the least-squares line $y = \hat{a}  + \hat{b}x$ for the set of points
+The coefficients of the least-squares line $y = \hat{a}x  + \hat{b$ for the set of points
 $(x_1,y_1), (x_2, y_2), \ldots, (x_n, y_n)$ are given by
 
 $$
   \begin{array}{ccl}
-  \hat{a} &=& \dfrac{(\sum x_i^2)(\sum y_i) -(\sum x_i)(\sum x_iy_i) }{n\sum x_i^2 - (\sum x_i)^2}, \\
-  \hat{b} &=& \dfrac{n(\sum x_iy_i) -(\sum x_i)(\sum y_i) }{n\sum x_i^2 - (\sum x_i)^2}.
+  \hat{a} &=& \dfrac{n(\sum x_iy_i) -(\sum x_i)(\sum y_i) }{n\sum x_i^2 - (\sum x_i)^2}, \\
+  \hat{b} &=& \dfrac{(\sum x_i^2)(\sum y_i) -(\sum x_i)(\sum x_iy_i) }{n\sum x_i^2 - (\sum x_i)^2}.
   \end{array}
 $$
 
@@ -1242,9 +1242,9 @@ the coefficients get the following more concise form,
 :::{math}
 :label: Eq:Leastquares:GeneralLinefit
 
-\hat{a} = \dfrac{\Sigma_{xx}\Sigma_y - \Sigma_x\Sigma_{xy}}{n\Sigma_{xx} - \Sigma_x^2},
+\hat{a} = \dfrac{n\Sigma_{xy} - \Sigma_x\Sigma_{y}}{n\Sigma_{xx} - \Sigma_x^2},
 \quad
-\hat{b} = \dfrac{n\Sigma_{xy} - \Sigma_x\Sigma_{y}}{n\Sigma_{xx} - \Sigma_x^2}.
+\hat{b} = \dfrac{\Sigma_{xx}\Sigma_y - \Sigma_x\Sigma_{xy}}{n\Sigma_{xx} - \Sigma_x^2}.
 
 :::
 
@@ -1254,10 +1254,10 @@ In matrix-vector form the linear system we want to solve reads
 
 $$
   \left(\begin{array}{cccc}
-         1 & x_1 \\
-         1 & x_2 \\
+         x_1 & 1 \\
+         x_2 & 1 \\
             \vdots   & \vdots \\
-         1 & x_n     \end{array}\right)
+         x_n & 1     \end{array}\right)
         \left(\begin{array}{c}
           a \\ b   \end{array}\right) =
         \left(\begin{array}{c}
@@ -1268,64 +1268,64 @@ Noting that
 
 $$
 \left(\begin{array}{cc}
-         1 & x_1 \\
-         1 & x_2 \\
+         x_1 & 1 \\
+         x_2 & 1 \\
             \vdots   & \vdots \\
-         1 & x_n     \end{array}\right)^T
+         x_n & 1     \end{array}\right)^T
          \left(\begin{array}{cc}
-         1 & x_1 \\
-         1 & x_2 \\
+         x_1 & 1 \\
+         x_2 & 1 \\
             \vdots   & \vdots \\
-         1 & x_n     \end{array}\right)
+         x_n & 1     \end{array}\right)
 =
 \left(\begin{array}{cc}
-         n & \sum x_i \\
-         \sum x_i & \sum x_i^2     \end{array}\right)
+         \sum x_i^2 & \sum x_i \\
+         \sum x_i & n     \end{array}\right)
 =
 \left(\begin{array}{cc}
-         n & \Sigma_x \\
-         \Sigma_x & \Sigma_{xx}     \end{array}\right)
+         \Sigma_{xx} & \Sigma_x \\
+         \Sigma_x & n     \end{array}\right)
 $$
 
 and
 
 $$
    \left(\begin{array}{cc}
-         1 & x_1 \\
-         1 & x_2 \\
+         x_1 & 1 \\
+         x_2 & 1 \\
             \vdots   & \vdots \\
-         1 & x_n     \end{array}\right)^T
+         x_n & 1     \end{array}\right)^T
     \left(\begin{array}{c}
           y_1 \\ y_2 \\   \vdots   \\ y_n  \end{array}\right)
     =
     \left(\begin{array}{c}
-          \sum y_i \\ \sum x_iy_i  \end{array}\right)
+          \sum x_iy_i \\ \sum y_i  \end{array}\right)
     =
    \left(\begin{array}{c}
-          \Sigma_y \\ \Sigma_{xy}  \end{array}\right).
+          \Sigma_{xy} \\ \Sigma_y  \end{array}\right).
 $$
 
 This leads to the normal equations
 
 $$
   \left(\begin{array}{cc}
-         n & \Sigma_x \\
-         \Sigma_x & \Sigma_{xx}     \end{array}\right)
+         \Sigma_{xx} & \Sigma_x \\
+         \Sigma_x & n     \end{array}\right)
            \left(\begin{array}{c}
           a\\ b  \end{array}\right)
   =  \left(\begin{array}{c}
-          \Sigma_y \\ \Sigma_{xy}  \end{array}\right).
+          \Sigma_{xy} \\ \Sigma_y  \end{array}\right).
 $$
 
 If we multiply both sides of this equation by
 
 $$
   \left(\begin{array}{cc}
-         n & \Sigma_x \\
-         \Sigma_x & \Sigma_{xx}     \end{array}\right) ^{-1} =
+         \Sigma_{xx} & \Sigma_x \\
+         \Sigma_x & n     \end{array}\right) ^{-1} =
     \dfrac{1}{n\Sigma_{xx} - \Sigma_x^2}  \left(\begin{array}{cc}
-         \Sigma_{xx}  & -\Sigma_x \\
-         -\Sigma_x &   n  \end{array}\right),
+         n  & -\Sigma_x \\
+         -\Sigma_x &   \Sigma_{xx}  \end{array}\right),
 $$
 
 we see the expressions in Equation {eq}`Eq:Leastquares:GeneralLinefit` readily appearing.
