@@ -1037,7 +1037,7 @@ Because of {prf:ref}`Thm:BasisDim:EqualDim` this is a good definition.
 For the trivial subspace $S = \lbrace\vect{0}\rbrace$ we postulated that its basis is the empty set. Thus,
 
 $$
-\operatorname{dim} S = \operatorname{dim}(\emptyset) = 0.
+\operatorname{dim} S = \operatorname{dim}(\lbrace\vect{0}\rbrace) = 0.
 $$
 
 For the other trivial subspace, the whole $\R^n$, the standard basis
@@ -1706,7 +1706,7 @@ The statements in {prf:ref}`Thm:BasisDim:RankThm` are both reformulations of ear
 
 <li>
 
-{prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations`.
+{prf:ref}`Thm:MatrixInv:InvertibilityCharacterizations` (1. $\iff$ 5.).
 
 </li>
 
