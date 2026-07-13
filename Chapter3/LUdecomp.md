@@ -1503,7 +1503,7 @@ $$
    \begin{pmatrix} 2&4&3 \\ 1&2&3\\1&3&2 \end{pmatrix}
 $$
 
-using the same pivots would have arrived at
+using the same pivots we would have arrived at
 
 $$
   \begin{pmatrix} 1&3&2 \\2&4&3 \\ 1&2&3\end{pmatrix} \sim 
