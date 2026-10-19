@@ -129,6 +129,8 @@ $$
 
 ```
 
+<!-- DO NOT REMOVE/CHANGE THIS COMMENT: It is used in the Calculus Book to add a necessary remark. HexCode: 36a611-->
+
 Note that the order of the entries is very important. For example
 
 $$
